@@ -42,6 +42,7 @@ Combina banco de questões com resoluções comentadas, psicometria (TRI/IRT), f
 - **Definição de Pronto (Definition of Done):** `npm run lint && npm run build && npm test && npm run test:security`
 - **Rodar Teste Único:** `npx tsx tests/<arquivo>.test.ts`
 - **Tipos do Banco:** `npm run db:types`
+- **Importar Tabelas do Supabase:** `npm run db:import` (ou comando no chat: `/import-tables`)
 - **Git Seguro:** `npm run pull` e `npm run submit`. Nunca execute `git push` manual nem utilize `--no-verify`.
 
 ## Regras de Engenharia

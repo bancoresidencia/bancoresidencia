@@ -84,6 +84,13 @@ data/staging/
 data/bancos_organizados_staging/
 data/imagens_provaderesidencia/
 data/extracted_images_webp/
+data/supabase_tables/
+data/tables/
+data/imagens_*/
+data/comparacoes_*/
+data/scratch_watermark/
+data/*.webp
+*.webp
 scripts/nexmed_questions_catalog.json
 scripts/all_question_images.json
 coletor_gabaritos/
