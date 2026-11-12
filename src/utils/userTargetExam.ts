@@ -47,20 +47,30 @@ export function getAccountTargetExam(user: UserAccount | null | undefined): Acco
     }
   }
 
+  const now = new Date();
+  // Se estamos nos últimos meses do ano (a partir de outubro), a próxima edição principal de residência é no ano seguinte
+  const nextTargetYear = now.getMonth() >= 9 ? currentYear + 1 : currentYear;
+
   // Fallback inteligente caso o aluno ainda não tenha configurado prova alvo
   if (!name || !date) {
-    const gradYear = user?.graduationYear && user.graduationYear >= currentYear
+    const gradYear = user?.graduationYear && user.graduationYear >= nextTargetYear
       ? user.graduationYear
-      : currentYear;
+      : nextTargetYear;
     if (!name) name = `ENARE ${gradYear}`;
-    if (!date) date = `${gradYear}-11-01`;
+    if (!date) date = `${gradYear}-10-24`;
   }
 
   let daysLeft = 0;
   try {
-    const target = new Date(date + 'T00:00:00');
-    const now = new Date();
-    const diffMs = target.getTime() - now.getTime();
+    let target = new Date(date + 'T00:00:00');
+    let diffMs = target.getTime() - now.getTime();
+    // Se a data já expirou e for o padrão automático ENARE, avança suavemente para a próxima edição
+    if (diffMs < 0 && name.startsWith('ENARE ') && !user?.targetExamDate) {
+      name = `ENARE ${nextTargetYear}`;
+      date = `${nextTargetYear}-10-24`;
+      target = new Date(date + 'T00:00:00');
+      diffMs = target.getTime() - now.getTime();
+    }
     daysLeft = Math.max(0, Math.ceil(diffMs / (1000 * 60 * 60 * 24)));
   } catch {
     daysLeft = 0;

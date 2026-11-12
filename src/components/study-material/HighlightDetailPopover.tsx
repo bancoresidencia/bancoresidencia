@@ -8,7 +8,8 @@ import {
   StickyNote,
   Trash2,
   X,
-  Check
+  Check,
+  Brain
 } from 'lucide-react';
 import {
   HighlighterColor,
@@ -23,6 +24,7 @@ interface HighlightDetailPopoverProps {
   onUpdate: (id: string, updates: Partial<StudyHighlight>) => void;
   onRemove: (id: string) => void;
   onClose: () => void;
+  onCreateFlashcard?: (highlight: StudyHighlight) => void;
 }
 
 export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
@@ -30,11 +32,11 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
   anchorRect,
   onUpdate,
   onRemove,
-  onClose
+  onClose,
+  onCreateFlashcard
 }) => {
   const [isNoteOpen, setIsNoteOpen] = useState<boolean>(Boolean(highlight.note));
   const [noteText, setNoteText] = useState<string>(highlight.note || '');
-  const [isColorPickerOpen, setIsColorPickerOpen] = useState<boolean>(false);
   const popoverRef = useRef<HTMLDivElement>(null);
 
   const colorsList: HighlighterColor[] = ['yellow', 'green', 'pink', 'blue', 'orange', 'purple'];
@@ -52,7 +54,6 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
 
   const handleSelectColor = (color: HighlighterColor) => {
     onUpdate(highlight.id, { color });
-    setIsColorPickerOpen(false);
   };
 
   const handleToggleStyle = (style: HighlightStyle) => {
@@ -67,7 +68,7 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
 
   // Cálculo de posição centralizada e segura em relação ao elemento clicado
   const top = anchorRect.top < 110 ? anchorRect.bottom + 8 : anchorRect.top - 52;
-  const left = Math.max(160, Math.min(window.innerWidth - 160, anchorRect.left + anchorRect.width / 2));
+  const left = Math.max(180, Math.min(typeof window !== 'undefined' ? window.innerWidth - 180 : 300, anchorRect.left + anchorRect.width / 2));
 
   return (
     <div
@@ -150,6 +151,22 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
           )}
         </button>
 
+        {/* Criar Flashcard com o Destaque */}
+        {onCreateFlashcard && (
+          <button
+            type="button"
+            onClick={() => {
+              onCreateFlashcard(highlight);
+              onClose();
+            }}
+            title="Criar Flashcard deste destaque"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white transition-transform active:scale-95 cursor-pointer shadow-xs ml-0.5"
+          >
+            <Brain className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Criar Flashcard</span>
+          </button>
+        )}
+
         {/* Remover Marcação */}
         <button
           type="button"
@@ -158,7 +175,7 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
             onClose();
           }}
           title="Excluir este destaque"
-          className="p-1.5 rounded-lg text-rose-400 hover:bg-rose-500/20 transition-colors cursor-pointer"
+          className="p-1.5 rounded-lg text-rose-400 hover:bg-rose-500/20 transition-colors cursor-pointer ml-0.5"
         >
           <Trash2 className="w-4 h-4" />
         </button>
@@ -240,4 +257,3 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
     </div>
   );
 };
-

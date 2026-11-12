@@ -24,6 +24,14 @@ export interface FacetedHierarchyCountsResult {
   subfocos: Record<string, number>;
 }
 
+/**
+ * Retorna o nome da view canônica de questões conforme a modalidade (Acesso Direto vs Revalida).
+ */
+export function getTargetQuestionTable(filters?: ExtendedFilterState): string {
+  const isRevalida = Boolean(filters?.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
+  return isRevalida ? 'view_questions_revalida' : 'view_questions_acesso_direto';
+}
+
 // Fisher-Yates shuffle
 export function shuffleArray<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -147,9 +155,11 @@ export async function fetchFacetedHierarchyCounts(
         'Medicina Preventiva e Social'
       ];
 
+      const targetTable = getTargetQuestionTable(filters);
+      const isRevalidaMode = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
       const promises = specs.map((sp) => {
         let qSpec = supabase
-          .from('questions')
+          .from(targetTable)
           .select('id', { count: 'exact', head: true })
           .eq('especialidade', sp);
 
@@ -169,9 +179,10 @@ export async function fetchFacetedHierarchyCounts(
           qSpec = qSpec.eq('is_anulada', false);
         }
         if (filters.modalidades && filters.modalidades.length > 0) {
-          const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
-          if (hasRevalida) {
-            qSpec = qSpec.or(REVALIDA_POSTGREST_FILTER);
+          if (isRevalidaMode) {
+            if (targetTable !== 'view_questions_revalida') {
+              qSpec = qSpec.or(REVALIDA_POSTGREST_FILTER);
+            }
           } else if (!(filters.modalidades.length === 1 && filters.modalidades[0] === 'Residência Médica')) {
             qSpec = qSpec.in('modalidade', filters.modalidades);
           }
@@ -241,10 +252,11 @@ export async function fetchFacetedHierarchyCounts(
     const MAX_FACET_ROWS = 10000;
     const data: Array<{ id: string; especialidade?: string; tema?: string; foco?: string; subfoco?: string }> = [];
 
+    const targetTable = getTargetQuestionTable(filters);
     let currentOffset = 0;
     while (currentOffset < MAX_FACET_ROWS) {
       let q = supabase
-        .from('questions')
+        .from(targetTable)
         .select('id, especialidade, tema, foco, subfoco')
         .in('banca', resolved)
         .order('id', { ascending: true })
@@ -523,11 +535,12 @@ export async function generateStratifiedQuiz(
     ...Object.keys(bancaQuotas)
   ];
   const resolvedBancas = resolveBancaList(allBancaNames);
+  const targetTable = getTargetQuestionTable(filters);
 
   // Se não há filtros clínicos, busca diretamente as questões que atendem exatamente aos filtros contextuais (Banca, Ano, etc.)
   if (Object.keys(contentQuotas).length === 0) {
     let q = supabase
-      .from('questions')
+      .from(targetTable)
       .select('id, especialidade, tema, foco, subfoco, banca, year, difficulty');
     if (resolvedBancas.length > 0) q = q.in('banca', resolvedBancas);
     if (filters.anos && filters.anos.length > 0) q = q.in('year', filters.anos);
@@ -566,7 +579,7 @@ export async function generateStratifiedQuiz(
     quotaEntries.map(async ([item]) => {
       try {
         let q = supabase
-          .from('questions')
+          .from(targetTable)
           .select('id, especialidade, tema, foco, subfoco, banca, year, difficulty');
 
         // Conteúdo: Mapeamento de Especialidades principais com índice direto B-Tree
@@ -621,7 +634,9 @@ export async function generateStratifiedQuiz(
           const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
           const otherModalidades = filters.modalidades.filter((m) => !m.toLowerCase().includes('revalida'));
           if (hasRevalida && otherModalidades.length === 0) {
-            q = q.or(REVALIDA_POSTGREST_FILTER);
+            if (targetTable !== 'view_questions_revalida') {
+              q = q.or(REVALIDA_POSTGREST_FILTER);
+            }
           } else if (hasRevalida && otherModalidades.length > 0) {
             const otherIn = otherModalidades.join(',');
             q = q.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
@@ -787,7 +802,7 @@ export async function generateStratifiedQuiz(
     const remaining = finalMax - finalOrderedIds.length;
     try {
       let qComp = supabase
-        .from('questions')
+        .from(targetTable)
         .select('id, banca, year')
         .not('especialidade', 'is', null)
         .neq('especialidade', '')

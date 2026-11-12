@@ -44,7 +44,7 @@ interface StudentProfileSettingsProps {
 // Avatares médicos pré-configurados
 const PRESET_AVATARS = [
   'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=150&auto=format&fit=crop&q=80', // Médico 1
-  'https://images.unsplash.com/photo-1594824813633-5c249a5b4869?w=150&auto=format&fit=crop&q=80', // Médica 1
+  'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=150&auto=format&fit=crop&q=80', // Médica 1
   'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&auto=format&fit=crop&q=80', // Médica 2
   'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=150&auto=format&fit=crop&q=80', // Médico 2
   'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=150&auto=format&fit=crop&q=80'  // Médico 3
@@ -955,11 +955,11 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
               <div className="space-y-3 pt-1">
                 <div className="flex flex-wrap items-center gap-2">
                   {[
-                    { name: 'ENARE 2026', date: '2026-11-01' },
-                    { name: 'USP-SP 2026', date: '2026-11-15' },
-                    { name: 'UNICAMP 2026', date: '2026-11-20' },
-                    { name: 'SUS-SP 2026', date: '2026-12-06' },
-                    { name: 'AMRIGS 2026', date: '2026-11-29' }
+                    { name: 'ENARE 2027', date: '2027-10-24' },
+                    { name: 'USP-SP 2027', date: '2027-11-14' },
+                    { name: 'UNICAMP 2027', date: '2027-11-21' },
+                    { name: 'SUS-SP 2027', date: '2027-12-05' },
+                    { name: 'AMRIGS 2027', date: '2027-11-28' }
                   ].map((p) => (
                     <button
                       key={p.name}

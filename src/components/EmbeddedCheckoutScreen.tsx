@@ -57,7 +57,7 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
     PLANS.monthly
   ];
 
-  const firstName = user?.name?.split(' ')[0] || 'Dr(a).';
+  const firstName = user?.name ? user.name.trim().split(' ')[0] : '';
 
   return (
     <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-sans transition-colors duration-200">
@@ -130,7 +130,7 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
             <span>Conta Criada com Sucesso</span>
           </div>
           <h1 className="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Olá, Dr(a). {firstName}! Quase pronto para começar.
+            Olá{firstName ? `, ${firstName}` : ''}! Quase pronto para começar.
           </h1>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-1 max-w-2xl">
             Ative sua assinatura abaixo para ter acesso irrestrito às 133k+ questões, provas oficiais e inteligência clínica com <strong>garantia de reembolso instantâneo</strong>.

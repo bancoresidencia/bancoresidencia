@@ -48,7 +48,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
   {
     id: 'home_agenda',
     title: 'Agenda de Estudos',
-    colSpan: 8,
+    colSpan: 7,
     minColSpan: 4,
     minHeight: 65,
     maxHeight: 340,
@@ -57,9 +57,9 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     settings: { showIcons: true, showDetails: true, compactMode: false }
   },
   {
-    id: 'home_retencao',
-    title: 'Atalhos',
-    colSpan: 4,
+    id: 'home_dicas',
+    title: 'Decorebas & Critérios',
+    colSpan: 5,
     minColSpan: 3,
     minHeight: 65,
     maxHeight: 340,
@@ -68,8 +68,8 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     settings: { showIcons: true, showDetails: true, compactMode: false }
   },
   {
-    id: 'home_mnemonico',
-    title: 'Mnemônico Clínico',
+    id: 'home_caderno_erros',
+    title: 'Caderno de Erros',
     colSpan: 6,
     minColSpan: 3,
     minHeight: 65,

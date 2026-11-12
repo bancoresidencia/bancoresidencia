@@ -20,7 +20,8 @@ import {
   Layers,
   Filter,
   CheckCircle2,
-  Trash2
+  Trash2,
+  BookOpen
 } from 'lucide-react';
 import { DailyScheduleSlot, CalendarViewMode, TimelineFilter } from './scheduleTypes';
 import { MonthlyStudyCalendarView } from './MonthlyStudyCalendarView';
@@ -53,6 +54,7 @@ interface GoogleCalendarScheduleViewProps {
   isGoogleCalendarConnected: boolean;
   onOpenAddManual: () => void;
   onOpenCreateTask?: () => void;
+  onOpenAddDrawer?: () => void;
   onOpenAiCommand: () => void;
   onOpenAiDrawer: () => void;
   hasAiSuggestions: boolean;
@@ -79,6 +81,7 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
   isGoogleCalendarConnected,
   onOpenAddManual,
   onOpenCreateTask,
+  onOpenAddDrawer,
   onOpenAiCommand,
   onOpenAiDrawer,
   hasAiSuggestions,
@@ -102,6 +105,21 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
 
   // Estado do Modo de Visualização do Google Agenda (Dia, Semana, Mês, Ano)
   const [viewMode, setViewMode] = useState<CalendarViewMode>('dia');
+
+  // Estado do Drawer Central para Adicionar Bloco de Estudo ou Tarefa
+  const [isAddDrawerOpen, setIsAddDrawerOpen] = useState(false);
+
+  // Fecha o drawer central com tecla ESC
+  useEffect(() => {
+    if (!isAddDrawerOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsAddDrawerOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isAddDrawerOpen]);
 
   // Data Selecionada e Data Atual
   const [currentDate, setCurrentDate] = useState<Date>(() => new Date());
@@ -402,39 +420,16 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
               </button>
             )}
 
-            {/* Botão Criar Tarefa */}
-            {onOpenCreateTask && (
-              <button
-                type="button"
-                onClick={onOpenCreateTask}
-                className="px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700 text-xs font-bold flex items-center gap-1 shadow-2xs transition-all cursor-pointer"
-                title="Criar tarefa de calendário (plantão, aula, compromisso)"
-              >
-                <CalendarPlus className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Criar Tarefa</span>
-              </button>
-            )}
-
-            {/* Botão de Sugestão / Mentor IA */}
+            {/* Botão Quadrado "+" no Canto Direito */}
             <button
               type="button"
-              onClick={hasAiSuggestions ? onOpenAiDrawer : onOpenAiCommand}
-              className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold flex items-center gap-1.5 shadow-2xs transition-all cursor-pointer"
-              title="Otimizar horários com Mentor IA"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>{hasAiSuggestions ? 'Ver Sugestões IA' : 'Mentor IA'}</span>
-            </button>
-
-            {/* Botão + Novo Bloco */}
-            <button
-              type="button"
-              onClick={onOpenAddManual}
-              className="px-3 py-1.5 rounded-xl text-white text-xs font-bold flex items-center gap-1 shadow-2xs transition-all cursor-pointer hover:opacity-90"
+              onClick={() => setIsAddDrawerOpen(true)}
+              className="w-9 h-9 rounded-xl text-white flex items-center justify-center shadow-xs hover:shadow-md hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer shrink-0"
               style={{ backgroundColor: primaryAccentHex }}
+              title="Adicionar à Agenda"
+              aria-label="Adicionar à agenda"
             >
-              <Plus className="w-3.5 h-3.5" />
-              <span>+ Novo Bloco</span>
+              <Plus className="w-5 h-5 stroke-[2.8]" />
             </button>
           </div>
         </div>
@@ -463,6 +458,7 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
           onOpenAiCommand={onOpenAiCommand}
           onOpenAddManual={onOpenAddManual}
           onOpenCreateTask={onOpenCreateTask}
+          onOpenAddDrawer={() => setIsAddDrawerOpen(true)}
         />
       )}
 
@@ -506,12 +502,122 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
           }}
         />
       )}
+
+      {/* ── DRAWER / MODAL CENTRAL: ESCOLHER ADICIONAR BLOCO OU TAREFA ── */}
+      {isAddDrawerOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setIsAddDrawerOpen(false);
+          }}
+        >
+          <div
+            className="relative w-full max-w-md rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-2xl p-6 space-y-5 animate-in zoom-in-95 duration-200"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="add-drawer-title"
+          >
+            {/* Botão Fechar */}
+            <button
+              type="button"
+              onClick={() => setIsAddDrawerOpen(false)}
+              className="absolute top-5 right-5 p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+              aria-label="Fechar"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            {/* Cabeçalho */}
+            <div className="space-y-1 pr-6">
+              <div className="flex items-center gap-2.5">
+                <div
+                  className="w-9 h-9 rounded-xl flex items-center justify-center text-white shadow-xs"
+                  style={{ backgroundColor: primaryAccentHex }}
+                >
+                  <Plus className="w-5 h-5 stroke-[2.8]" />
+                </div>
+                <div>
+                  <h3 id="add-drawer-title" className="font-heading font-black text-base sm:text-lg text-zinc-900 dark:text-zinc-100 tracking-tight">
+                    Adicionar à Agenda
+                  </h3>
+                </div>
+              </div>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed pt-1">
+                Escolha o que você deseja registrar no seu cronograma de estudos:
+              </p>
+            </div>
+
+            {/* Opções Centrais */}
+            <div className="space-y-3">
+              {/* Opção 1: Novo Bloco de Estudo */}
+              <button
+                type="button"
+                onClick={() => {
+                  setIsAddDrawerOpen(false);
+                  onOpenAddManual();
+                }}
+                className="w-full p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-900/60 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all text-left flex items-start gap-3.5 group cursor-pointer shadow-2xs"
+              >
+                <div
+                  className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-white shadow-xs group-hover:scale-105 transition-transform"
+                  style={{ backgroundColor: primaryAccentHex }}
+                >
+                  <BookOpen className="w-5 h-5" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="font-heading font-bold text-sm text-zinc-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      Novo Bloco de Estudo
+                    </span>
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 uppercase tracking-wider">
+                      Estudo
+                    </span>
+                  </div>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-normal">
+                    Registre uma sessão de teoria, resolução de questões, revisão ou simulado com tempo e disciplina.
+                  </p>
+                </div>
+              </button>
+
+              {/* Opção 2: Criar Tarefa / Plantão */}
+              {onOpenCreateTask && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsAddDrawerOpen(false);
+                    onOpenCreateTask();
+                  }}
+                  className="w-full p-4 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-900/60 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all text-left flex items-start gap-3.5 group cursor-pointer shadow-2xs"
+                >
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 bg-emerald-500 text-white shadow-xs group-hover:scale-105 transition-transform">
+                    <CalendarPlus className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="font-heading font-bold text-sm text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                        Criar Tarefa / Plantão
+                      </span>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
+                        Compromisso
+                      </span>
+                    </div>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-normal">
+                      Adicione plantão hospitalar, reunião, aula, compromisso pessoal ou intervalo no calendário.
+                    </p>
+                  </div>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
 // ── COMPONENTE: VISUALIZAÇÃO DIA (COM LINHA DE TRANSIÇÃO DO HORÁRIO GOOGLE CALENDAR) ──
 interface DayViewProps {
+  onOpenAddDrawer?: () => void;
   filteredEvents: DailyScheduleSlot[];
   DAY_HOURS: number[];
   nowDate: Date;
@@ -554,7 +660,8 @@ const DayView: React.FC<DayViewProps> = ({
   primaryAccentHex,
   onOpenAiCommand,
   onOpenAddManual,
-  onOpenCreateTask
+  onOpenCreateTask,
+  onOpenAddDrawer
 }) => {
   // Sessões Realizadas no Cronômetro para o Dia Selecionado (respeitando o fuso local do estudante)
   const selectedDateStr = useMemo(() => {
@@ -596,29 +703,43 @@ const DayView: React.FC<DayViewProps> = ({
             Nenhum compromisso marcado para este dia
           </h5>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
-            Seu cronograma está livre! Crie uma tarefa de calendário, registre um novo bloco de estudo ou use o Mentor IA.
+            Seu cronograma está livre! Adicione uma atividade usando o botão + ou sincronize sua conta do Google Agenda.
           </p>
         </div>
         <div className="pt-2 flex items-center justify-center gap-2 flex-wrap">
-          {onOpenCreateTask && (
+          {onOpenAddDrawer ? (
             <button
               type="button"
-              onClick={onOpenCreateTask}
-              className="px-3.5 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
+              onClick={onOpenAddDrawer}
+              className="px-4 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all hover:scale-[1.02] active:scale-[0.98]"
+              style={{ backgroundColor: primaryAccentHex }}
             >
-              <CalendarPlus className="w-3.5 h-3.5 text-emerald-500" />
-              <span>Criar Tarefa</span>
+              <Plus className="w-4 h-4 stroke-[2.8]" />
+              <span>Adicionar Bloco ou Tarefa</span>
             </button>
+          ) : (
+            <>
+              {onOpenCreateTask && (
+                <button
+                  type="button"
+                  onClick={onOpenCreateTask}
+                  className="px-3.5 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
+                >
+                  <CalendarPlus className="w-3.5 h-3.5 text-emerald-500" />
+                  <span>Criar Tarefa</span>
+                </button>
+              )}
+              <button
+                type="button"
+                onClick={onOpenAddManual}
+                className="px-3.5 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
+                style={{ backgroundColor: primaryAccentHex }}
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>+ Novo Bloco</span>
+              </button>
+            </>
           )}
-          <button
-            type="button"
-            onClick={onOpenAddManual}
-            className="px-3.5 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
-            style={{ backgroundColor: primaryAccentHex }}
-          >
-            <Plus className="w-3.5 h-3.5" />
-            <span>+ Novo Bloco</span>
-          </button>
           <button
             type="button"
             onClick={onOpenAiCommand}
@@ -648,28 +769,8 @@ const DayView: React.FC<DayViewProps> = ({
                 currentMinutesNow < slot.endMinutes;
               const isPast = isSelectedDateToday && slot.endMinutes <= currentMinutesNow;
 
-              // Gap livre com relação ao bloco anterior
-              const prevSlot = idx > 0 ? filteredEvents[idx - 1] : null;
-              const gapMinutes = prevSlot ? slot.startMinutes - prevSlot.endMinutes : 0;
-              const showFreeGap = gapMinutes >= 30;
-
               return (
                 <React.Fragment key={slot.id || idx}>
-                  {/* Gap Livre entre eventos */}
-                  {showFreeGap && (
-                    <div className="px-3.5 py-2 rounded-xl border border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-700 dark:text-emerald-400 text-xs font-medium flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-2">
-                        <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                        <span>
-                          Janela Livre de <strong>{gapMinutes}m</strong> ({prevSlot?.endTime} às {slot.startTime})
-                        </span>
-                      </div>
-                      <span className="text-[10px] text-emerald-600 dark:text-emerald-400 italic hidden sm:inline">
-                        Ideal para Flashcards ou Descanso
-                      </span>
-                    </div>
-                  )}
-
                   {/* Card do Bloco estilo Google Agenda */}
                   <div
                     className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex items-center justify-between gap-3 ${style.cardBg} ${isCurrentActive
@@ -750,19 +851,6 @@ const DayView: React.FC<DayViewProps> = ({
                         <h5 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
                           {slot.title}
                         </h5>
-
-                        {(slot.location || cleanEventDescription(slot.description)) && (
-                          <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
-                            {slot.location ? `${slot.location} • ` : ''}
-                            {cleanEventDescription(slot.description)}
-                          </p>
-                        )}
-
-                        {slot.rationale && (
-                          <p className="text-[11px] text-blue-600 dark:text-blue-300 italic">
-                            💡 {slot.rationale}
-                          </p>
-                        )}
                       </div>
                     </div>
 

@@ -36,11 +36,18 @@ function getInitialStudyMaterials(): StudyMaterialItem[] {
   return _cachedInitialStudyMaterials || [];
 }
 import { createClient } from '@/lib/supabase/client';
+import {
+  itemMatchesSpecialty,
+  buildHierarchyCardsCache,
+  resolveCardsFromHierarchyKeys
+} from '@/utils/specialtyMatcher';
+import { clinicalHierarchy } from '@/data/mockQuestions';
 
 const STORAGE_KEY = 'bancoresidencia_flashcards_progress_v1';
 const LAST_SESSION_KEY = 'bancoresidencia_last_flashcard_session';
 const LAST_SUMMARY_KEY = 'bancoresidencia_last_read_summary';
 const CUSTOM_DECKS_KEY = 'bancoresidencia_custom_flashcard_decks';
+const PERSONALIZED_DECKS_KEY = 'bancoresidencia_personalized_flashcard_decks';
 const USER_FLASHCARDS_KEY = 'bancoresidencia_user_created_flashcards';
 const USER_CARD_EDITS_KEY = 'bancoresidencia_user_card_edits';
 const USER_STUDY_MATERIALS_KEY = 'bancoresidencia_user_created_study_materials';
@@ -52,6 +59,10 @@ function getProgressStorageKey(userId?: string | null): string {
 
 function getDecksStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_custom_decks_${userId}` : CUSTOM_DECKS_KEY;
+}
+
+function getPersonalizedDecksStorageKey(userId?: string | null): string {
+  return userId ? `bancoresidencia_personalized_decks_${userId}` : PERSONALIZED_DECKS_KEY;
 }
 
 function getUserCardsStorageKey(userId?: string | null): string {
@@ -1246,6 +1257,171 @@ export const flashcardsService = {
   /**
    * Sincroniza baralhos do aluno salvos no Supabase
    */
+  /**
+   * Obtém os Baralhos Personalizados (Mistos/Customizados) do estudante
+   */
+  getPersonalizedDecks(userId?: string | null): CustomFlashcardDeck[] {
+    if (typeof window === 'undefined') return [];
+    try {
+      const key = getPersonalizedDecksStorageKey(userId);
+      const data = localStorage.getItem(key);
+      let list: CustomFlashcardDeck[] = data ? JSON.parse(data) : [];
+      if (!list || list.length === 0) {
+        const fallback = localStorage.getItem(PERSONALIZED_DECKS_KEY);
+        list = fallback ? JSON.parse(fallback) : [];
+      }
+      return list || [];
+    } catch {
+      return [];
+    }
+  },
+
+  /**
+   * Salva ou atualiza um Baralho Personalizado (Misto)
+   */
+  savePersonalizedDeck(deck: CustomFlashcardDeck, userId?: string | null): CustomFlashcardDeck[] {
+    if (typeof window === 'undefined') return [];
+    try {
+      const current = this.getPersonalizedDecks(userId);
+      const existingIdx = current.findIndex((d) => d.id === deck.id);
+      let updated: CustomFlashcardDeck[];
+      if (existingIdx >= 0) {
+        updated = [...current];
+        updated[existingIdx] = deck;
+      } else {
+        updated = [deck, ...current];
+      }
+      const key = getPersonalizedDecksStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(updated));
+      localStorage.setItem(PERSONALIZED_DECKS_KEY, JSON.stringify(updated));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        client
+          .from('user_flashcard_decks')
+          .upsert(
+            {
+              id: deck.id,
+              user_id: userId,
+              title: deck.name,
+              description: deck.description || null,
+              card_ids: deck.cardIds || []
+            },
+            { onConflict: 'id' }
+          )
+          .then(() => {}, () => {});
+      }
+
+      return updated;
+    } catch (e) {
+      console.warn('Erro ao salvar baralho personalizado:', e);
+      return [];
+    }
+  },
+
+  /**
+   * Exclui um Baralho Personalizado
+   */
+  deletePersonalizedDeck(id: string, userId?: string | null): CustomFlashcardDeck[] {
+    if (typeof window === 'undefined') return [];
+    try {
+      const current = this.getPersonalizedDecks(userId);
+      const updated = current.filter((d) => d.id !== id);
+      const key = getPersonalizedDecksStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(updated));
+      localStorage.setItem(PERSONALIZED_DECKS_KEY, JSON.stringify(updated));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        client
+          .from('user_flashcard_decks')
+          .delete()
+          .eq('id', id)
+          .eq('user_id', userId)
+          .then(() => {}, () => {});
+      }
+
+      return updated;
+    } catch (e) {
+      console.warn('Erro ao excluir baralho personalizado:', e);
+      return [];
+    }
+  },
+
+  /**
+   * Resolve e consolida todos os cartões (BR + Autorais) de um Baralho Personalizado
+   */
+  resolvePersonalizedDeckCards(
+    deck: CustomFlashcardDeck,
+    allFlashcards: FlashcardItem[]
+  ): FlashcardItem[] {
+    const platformCards = allFlashcards.filter((c) => !c.id.startsWith('fc-user-'));
+    const userCards = allFlashcards.filter((c) => c.id.startsWith('fc-user-'));
+    const selectedMap = new Map<string, FlashcardItem>();
+
+    // 1. Cartões da Plataforma (BR) por Seleção Individual (cardIds), Chaves Hierárquicas ou Especialidades
+    if (deck.cardIds && deck.cardIds.length > 0) {
+      const explicitIds = new Set(deck.cardIds);
+      platformCards.forEach((c) => {
+        if (explicitIds.has(c.id)) {
+          if (deck.priorityOnly && c.priority !== 'essential') return;
+          selectedMap.set(c.id, c);
+        }
+      });
+    } else if (deck.selectedNodeKeys && deck.selectedNodeKeys.length > 0) {
+      const cache = buildHierarchyCardsCache(clinicalHierarchy, platformCards);
+      let brCards = resolveCardsFromHierarchyKeys(deck.selectedNodeKeys, cache);
+      if (deck.priorityOnly) {
+        brCards = brCards.filter((c) => c.priority === 'essential');
+      }
+      brCards.forEach((c) => selectedMap.set(c.id, c));
+    } else if (deck.specialties && deck.specialties.length > 0) {
+      platformCards.forEach((c) => {
+        const matchesSpec = deck.specialties.some((spec) => itemMatchesSpecialty(c, spec));
+        if (!matchesSpec) return;
+
+        if (deck.themes && deck.themes.length > 0) {
+          const matchesTheme = deck.themes.some((th) =>
+            (c.theme || '').toLowerCase().includes(th.toLowerCase())
+          );
+          if (!matchesTheme) return;
+        }
+
+        // Filtro de Alta Incidência (apenas essenciais)
+        if (deck.priorityOnly && c.priority !== 'essential') {
+          return;
+        }
+
+        selectedMap.set(c.id, c);
+      });
+    }
+
+    // 2. Cartões Autorais do Estudante (Originais)
+    if (deck.includeAllUserCards) {
+      userCards.forEach((c) => selectedMap.set(c.id, c));
+    } else if (deck.includeUserDeckIds && deck.includeUserDeckIds.length > 0) {
+      const includedDecks = new Set(deck.includeUserDeckIds);
+      userCards.forEach((c) => {
+        const cardDeckId = c.deckId || 'deck-padrao';
+        if (includedDecks.has(cardDeckId)) {
+          selectedMap.set(c.id, c);
+        }
+      });
+    }
+
+    // 3. Cartões explícitos por ID
+    if (deck.cardIds && deck.cardIds.length > 0) {
+      const explicitIds = new Set(deck.cardIds);
+      allFlashcards.forEach((c) => {
+        if (explicitIds.has(c.id)) {
+          selectedMap.set(c.id, c);
+        }
+      });
+    }
+
+    return Array.from(selectedMap.values());
+  },
+
   async syncRemoteDecks(userId?: string | null): Promise<CustomFlashcardDeck[]> {
     const local = this.getCustomDecks(userId);
     if (!userId || userId === 'demo-student') return local;
@@ -1359,6 +1535,55 @@ export const flashcardsService = {
   /**
    * Remove um flashcard criado pelo usuário (localmente e no Supabase)
    */
+  saveNewFlashcardsBatch(cards: FlashcardItem[], userId?: string | null): FlashcardItem[] {
+    if (typeof window === 'undefined' || !cards || cards.length === 0) return cards;
+    try {
+      const current = this.loadUserCreatedFlashcards(userId);
+      const now = new Date().toISOString();
+      const newItems: FlashcardItem[] = cards.map((c, idx) => ({
+        ...c,
+        id: c.id.startsWith('fc-user-') ? c.id : `fc-user-${Date.now()}-${idx}`,
+        deckId: c.deckId || 'deck-padrao',
+        createdAt: c.createdAt || now
+      }));
+
+      const newIds = new Set(newItems.map((c) => c.id));
+      const updated = [...newItems, ...current.filter((c) => !newIds.has(c.id))];
+
+      const key = getUserCardsStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(updated));
+      localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        const payload = newItems.map((card) => ({
+          id: card.id,
+          user_id: userId,
+          front: card.front,
+          back: card.back,
+          specialty: card.specialty,
+          theme: card.theme,
+          focus: card.focus,
+          comment: card.comment || null,
+          priority: card.priority || 'standard'
+        }));
+
+        for (let i = 0; i < payload.length; i += 50) {
+          const chunk = payload.slice(i, i + 50);
+          client
+            .from('user_created_flashcards')
+            .upsert(chunk, { onConflict: 'id' })
+            .then(() => {}, () => {});
+        }
+      }
+
+      return newItems;
+    } catch (e) {
+      console.warn('Erro ao salvar lote de flashcards:', e);
+      return cards;
+    }
+  },
+
   deleteUserFlashcard(cardId: string, userId?: string | null): boolean {
     if (typeof window === 'undefined') return false;
     try {

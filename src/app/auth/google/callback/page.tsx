@@ -2,8 +2,9 @@
 
 /**
  * Página de callback do Google OAuth — /auth/google/callback
- * Captura o access_token do hash (#access_token=...) ou da query (?access_token=...)
- * Salva no localStorage e notifica a janela principal (popup) ou redireciona (tela inteira).
+ * Suporta:
+ * 1. Fluxo Seguro Backend (PKCE / Authorization Code com Refresh Token no servidor)
+ * 2. Fluxo Legado de Token Direto no Hash/Query (Fallback)
  */
 
 import { useEffect, useState } from 'react';
@@ -12,19 +13,17 @@ import { useRouter } from 'next/navigation';
 export default function GoogleCalendarCallbackPage() {
   const router = useRouter();
   const [status, setStatus] = useState<'loading' | 'success' | 'error'>('loading');
-  const [message, setMessage] = useState('Conectando com o Google Agenda...');
+  const [message, setMessage] = useState('Conectando e protegendo sua agenda...');
   const [isPopup, setIsPopup] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    // 1. Tenta extrair do hash (#access_token=...&state=popup)
     const hash = window.location.hash.replace(/^#/, '');
     const hashParams = new URLSearchParams(hash);
-
-    // 2. Tenta extrair da query string (?access_token=...&state=popup)
     const searchParams = new URLSearchParams(window.location.search);
 
+    const code = searchParams.get('code') || hashParams.get('code');
     const accessToken =
       hashParams.get('access_token') ||
       hashParams.get('google_access_token') ||
@@ -37,52 +36,110 @@ export default function GoogleCalendarCallbackPage() {
 
     const error = hashParams.get('error') || searchParams.get('error');
 
+    // ── 1. FLUXO PADRÃO-OURO: Authorization Code via Backend com Refresh Token ──
+    if (code) {
+      const redirectUri = `${window.location.origin}${window.location.pathname}`;
+
+      fetch('/api/calendar/google/connect', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code, redirectUri })
+      })
+        .then(async (res) => {
+          const data = await res.json().catch(() => ({}));
+          if (!res.ok) {
+            throw new Error(data.error || 'Falha ao salvar integração segura.');
+          }
+          return data;
+        })
+        .then((data) => {
+          const accountEmail = data.email || 'Minha Agenda';
+          try {
+            localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
+            localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
+            localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
+            localStorage.setItem('bancoresidencia_google_popup_auth_timestamp', Date.now().toString());
+            sessionStorage.setItem('bancoresidencia_google_just_connected', 'true');
+          } catch {
+            // Ignora restrições de localStorage
+          }
+
+          if (popupDetected) {
+            try {
+              if (window.opener && !window.opener.closed) {
+                window.opener.postMessage(
+                  { type: 'GOOGLE_AUTH_SUCCESS', email: accountEmail },
+                  window.location.origin
+                );
+              }
+            } catch {
+              // ignora falhas cross-origin
+            }
+
+            setStatus('success');
+            setMessage('Google Agenda conectado com sucesso e blindado no servidor!');
+
+            setTimeout(() => {
+              try { window.close(); } catch {}
+            }, 600);
+            return;
+          }
+
+          setStatus('success');
+          setMessage('Google Agenda conectado com sucesso! Redirecionando...');
+          setTimeout(() => router.replace('/'), 700);
+        })
+        .catch((err) => {
+          const errMsg = err?.message || 'Falha ao conectar com o Google Agenda.';
+          if (popupDetected) {
+            try {
+              if (window.opener && !window.opener.closed) {
+                window.opener.postMessage({ type: 'GOOGLE_AUTH_ERROR', error: errMsg }, window.location.origin);
+              }
+            } catch {}
+          }
+          setStatus('error');
+          setMessage(errMsg);
+        });
+
+      return;
+    }
+
+    // ── 2. FLUXO LEGADO: Token Direto no Hash (Fallback) ──
     if (accessToken) {
       try {
         localStorage.setItem('bancoresidencia_google_access_token', accessToken);
         localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
         localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
         localStorage.setItem('bancoresidencia_google_popup_auth_timestamp', Date.now().toString());
-        sessionStorage.setItem('bancoresidencia_google_just_connected', 'true');
-      } catch {
-        // Ignora erros de localStorage restrito
-      }
+      } catch {}
 
-      // Se aberto em popup: notifica janela-pai e fecha a janela popup
       if (popupDetected) {
         try {
           if (window.opener && !window.opener.closed) {
             window.opener.postMessage({ type: 'GOOGLE_AUTH_SUCCESS', accessToken }, window.location.origin);
           }
-        } catch {
-          // ignora falha de cross-origin postMessage
-        }
+        } catch {}
 
         setStatus('success');
-        setMessage('Google Agenda conectado com sucesso! Esta janela fechará em instantes...');
-
+        setMessage('Google Agenda conectado!');
         setTimeout(() => {
-          try {
-            window.close();
-          } catch {
-            // Se o navegador impedir fechar via script, mantém mensagem na tela
-          }
+          try { window.close(); } catch {}
         }, 500);
         return;
       }
 
-      // Modo redirecionamento de tela inteira:
       setStatus('success');
-      setMessage('Google Agenda conectado com sucesso! Redirecionando...');
+      setTimeout(() => router.replace('/'), 600);
+      return;
+    }
 
-      setTimeout(() => {
-        router.replace('/');
-      }, 600);
-    } else if (error) {
+    // ── 3. TRATAMENTO DE ERROS OU CANCELAMENTO ──
+    if (error) {
       const messages: Record<string, string> = {
-        access_denied: 'Autorização cancelada.',
+        access_denied: 'Autorização cancelada no Google.',
         redirect_uri_mismatch: 'URI de redirecionamento divergente no Google Cloud.',
-        invalid_client: 'Client ID não reconhecido pelo Google.',
+        invalid_client: 'Client ID não reconhecido pelo Google.'
       };
       const errMsg = messages[error] || `Aviso do Google: ${error}`;
 
@@ -94,21 +151,15 @@ export default function GoogleCalendarCallbackPage() {
         } catch {}
       }
 
-      try {
-        sessionStorage.setItem('bancoresidencia_google_auth_error', errMsg);
-      } catch { /* ignora */ }
-
       setStatus('error');
       setMessage(errMsg);
 
       if (popupDetected) {
         setTimeout(() => {
           try { window.close(); } catch {}
-        }, 2000);
+        }, 2500);
       } else {
-        setTimeout(() => {
-          router.replace('/');
-        }, 2000);
+        setTimeout(() => router.replace('/'), 2500);
       }
     } else {
       if (popupDetected) {

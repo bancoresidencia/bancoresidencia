@@ -777,7 +777,7 @@ export async function fetchQuestionsFromSupabase(
     // Retry fallback com colunas públicas irrestritas para papel anon preservando os mesmos filtros
     try {
       const publicCols = 'id,code,institution,banca,year,tipo_prova,modalidade,especialidade,tema,foco,subfoco,difficulty,type,is_anulada,statement,options,images';
-      let retryQuery = supabase.from('questions').select(publicCols);
+      let retryQuery = supabase.from(targetViewTable).select(publicCols);
       if (filters.gabaritoStatus === 'sem_gabarito') {
         retryQuery = retryQuery.eq('has_gabarito', false);
       } else if (filters.gabaritoStatus !== 'todas') {
@@ -883,7 +883,7 @@ export async function fetchQuestionsFromSupabase(
     // Para filtros refinados, executa contagem indexada leve e ultrarrápida
     try {
       let countQuery = supabase
-        .from('questions')
+        .from(targetViewTable)
         .select('id', { count: 'exact', head: true });
 
       if (filters.gabaritoStatus === 'sem_gabarito') {
@@ -1122,11 +1122,21 @@ export async function searchQuestionsDirect(
 }
 
 export async function fetchQuestionById(id: string): Promise<Question | null> {
-  const { data, error } = await supabase
-    .from('questions')
+  let { data, error } = await supabase
+    .from('view_questions_acesso_direto')
     .select(SAFE_QUESTION_COLUMNS)
     .eq('id', id)
-    .single();
+    .maybeSingle();
+
+  if (!data) {
+    const resRev = await supabase
+      .from('view_questions_revalida')
+      .select(SAFE_QUESTION_COLUMNS)
+      .eq('id', id)
+      .maybeSingle();
+    data = resRev.data;
+    error = resRev.error;
+  }
 
   if (error || !data) return null;
   return mapRowToQuestion(data);

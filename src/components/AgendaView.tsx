@@ -48,7 +48,9 @@ import {
   startGoogleOAuthPopup,
   startGoogleOAuthRedirect,
   generateIcsContent,
-  downloadIcsFile
+  downloadIcsFile,
+  disconnectGoogleCalendarApi,
+  checkGoogleCalendarStatus
 } from '@/services/googleCalendarService';
 
 const GoogleIcon = ({ className = 'w-4 h-4' }: { className?: string }) => (
@@ -182,7 +184,12 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       const saved = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
       if (saved) {
         try {
-          return JSON.parse(saved);
+          const parsed: DailyScheduleSlot[] = JSON.parse(saved);
+          const cleanTasks = parsed.filter(t => !t.id.startsWith('task_sess_') && !t.id.startsWith('sess_slot_'));
+          if (cleanTasks.length !== parsed.length) {
+            localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(cleanTasks));
+          }
+          return cleanTasks;
         } catch {
           return [];
         }
@@ -285,6 +292,19 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     };
   }, [todaySessions]);
 
+  // Sincronização segura: restaura integração permanente do Google Calendar via backend
+  useEffect(() => {
+    checkGoogleCalendarStatus().then((status) => {
+      if (status.connected) {
+        setIsGoogleCalendarConnected(true);
+        setCalendarSyncMode('api');
+        if (status.email) {
+          setGoogleCalendarAccount(status.email);
+        }
+      }
+    });
+  }, []);
+
   // Sincronização e carregamento de tarefas vinculadas à conta do aluno
   useEffect(() => {
     let active = true;
@@ -371,45 +391,9 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       }
     }
 
-    // 3. Sessões de Estudo realizadas hoje (independentes e sobreponíveis)
-    for (const sess of todaySessions) {
-      const sessSlotId = `sess_slot_${sess.id}`;
-      const legacyTaskId = `task_${sess.id}`;
-      if (existingIds.has(sessSlotId) || existingIds.has(legacyTaskId)) continue;
-
-      const sDate = new Date(sess.startTime);
-      const eDate = new Date(sess.endTime);
-      const startMinutes = isNaN(sDate.getTime()) ? 0 : sDate.getHours() * 60 + sDate.getMinutes();
-      const endMinutes = isNaN(eDate.getTime()) ? startMinutes + 60 : Math.max(startMinutes + 1, eDate.getHours() * 60 + eDate.getMinutes());
-      const topicTitle =
-        sess.taxonomy.subfoco ||
-        sess.taxonomy.foco ||
-        sess.taxonomy.tema ||
-        sess.taxonomy.especialidade ||
-        'Estudo Realizado';
-
-      slots.push({
-        id: sessSlotId,
-        title: topicTitle === 'Treino Geral' ? 'Treino de Questões' : `Estudo: ${topicTitle}`,
-        category: 'estudo',
-        startTime: `${String(Math.floor(startMinutes / 60)).padStart(2, '0')}:${String(startMinutes % 60).padStart(2, '0')}`,
-        endTime: `${String(Math.floor(endMinutes / 60)).padStart(2, '0')}:${String(endMinutes % 60).padStart(2, '0')}`,
-        startMinutes,
-        endMinutes,
-        source: 'plataforma',
-        description: sess.questionsCount ? `${sess.questionsCount} questões resolvidas (${sess.correctCount || 0} acertos)` : 'Sessão de estudo realizada',
-        action: 'treinar',
-        isStudySession: true,
-        questionsCount: sess.questionsCount,
-        correctCount: sess.correctCount,
-        date: getLocalDateStr(sess.startTime)
-      });
-      existingIds.add(sessSlotId);
-    }
-
     slots.sort((a, b) => a.startMinutes - b.startMinutes);
     return slots;
-  }, [isGoogleCalendarConnected, realCalendarEvents, userScheduledTasks, todaySessions]);
+  }, [isGoogleCalendarConnected, realCalendarEvents, userScheduledTasks]);
 
   // Cálculo da Atividade Atual / Período
   const currentPeriodInfo = useMemo(() => {
@@ -720,7 +704,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   };
 
   const handleSyncNow = async () => {
-    if (calendarSyncMode === 'api' && googleAccessToken) {
+    if (calendarSyncMode === 'api' && (googleAccessToken || isGoogleCalendarConnected)) {
       setIsSyncingCalendar(true);
       setCalendarSyncError(null);
       try {
@@ -746,6 +730,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   };
 
   const handleDisconnectGoogleCalendar = () => {
+    disconnectGoogleCalendarApi();
     setIsGoogleCalendarConnected(false);
     setRealCalendarEvents([]);
     setGoogleAccessToken('');
@@ -1196,38 +1181,8 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
           </div>
         </div>
 
-        {/* Botões Rápidos de Topo */}
-        <div className="flex items-center gap-2 flex-wrap">
-          {/* Botão 1: Criar Tarefa (Obrigação do Calendário) */}
-          <button
-            type="button"
-            onClick={() => setShowCreateTaskModal(true)}
-            className="px-3.5 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-200 flex items-center gap-1.5 transition-all shadow-2xs cursor-pointer"
-          >
-            <CalendarPlus className="w-4 h-4 text-emerald-500" />
-            <span>Criar Tarefa</span>
-          </button>
-
-          {/* Botão 2: Novo Bloco (Registro Manual de Sessão de Estudo) */}
-          <button
-            type="button"
-            onClick={() => setShowManualStudyModal(true)}
-            className="px-3.5 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer hover:opacity-95"
-            style={{ backgroundColor: accentConfig.primaryHex }}
-          >
-            <Plus className="w-4 h-4" />
-            <span>Novo Bloco</span>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setShowAiCommandModal(true)}
-            className="px-3 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5 transition-all shadow-2xs cursor-pointer"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-blue-500" />
-            <span>Mentor IA</span>
-          </button>
-
+        {/* Ações no Topo Direito: Atrasei e Botão Quadrado "+" */}
+        <div className="flex items-center gap-2">
           <button
             type="button"
             onClick={() => setShowDelayModal(true)}
@@ -1236,6 +1191,17 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
           >
             <RotateCcw className="w-3.5 h-3.5 text-rose-500" />
             <span>Atrasei</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setShowManualStudyModal(true)}
+            className="w-9 h-9 rounded-xl text-white flex items-center justify-center shadow-xs hover:shadow-md hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer shrink-0"
+            style={{ backgroundColor: accentConfig.primaryHex }}
+            title="Adicionar à Agenda"
+            aria-label="Adicionar à agenda"
+          >
+            <Plus className="w-5 h-5 stroke-[2.8]" />
           </button>
         </div>
       </div>

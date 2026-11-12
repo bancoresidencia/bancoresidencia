@@ -133,10 +133,11 @@ export function startGoogleOAuthRedirect(clientId: string): void {
   const params = new URLSearchParams({
     client_id: clientId,
     redirect_uri: redirectUri,
-    response_type: 'token',
+    response_type: 'code',
+    access_type: 'offline',
     scope,
     include_granted_scopes: 'true',
-    prompt: 'select_account',
+    prompt: 'consent select_account',
   });
 
   window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
@@ -174,7 +175,8 @@ export function startGoogleOAuthPopup(
   const params = new URLSearchParams({
     client_id: clientId,
     redirect_uri: redirectUri,
-    response_type: 'token',
+    response_type: 'code',
+    access_type: 'offline',
     scope,
     include_granted_scopes: 'true',
     prompt: 'select_account',
@@ -480,7 +482,40 @@ export async function fetchGoogleCalendarAccountEmail(accessToken: string): Prom
 /**
  * OPÇÃO 2: Busca eventos de hoje direto da API do Google Calendar via access_token
  */
-export async function fetchTodayEventsFromGoogleApi(accessToken: string) {
+export async function fetchTodayEventsFromGoogleApi(accessToken?: string) {
+  // 1. Tenta buscar primeiro via API segura do Backend (onde o token auto-renova nos bastidores sem expirar)
+  try {
+    const res = await fetch('/api/calendar/google/events', {
+      method: 'GET',
+      headers: { Accept: 'application/json' }
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data.events)) {
+        return data.events;
+      }
+    } else if (res.status === 401) {
+      const errData = await res.json().catch(() => ({}));
+      if (errData.requiresReconnect) {
+        if (typeof window !== 'undefined') {
+          localStorage.removeItem('bancoresidencia_google_access_token');
+          localStorage.removeItem('bancoresidencia_google_calendar_connected');
+        }
+        throw new Error('Sua sessão do Google Agenda expirou ou foi revogada. Clique em Conectar para renovar.');
+      }
+    }
+  } catch (err: any) {
+    if (err?.message?.includes('expirou ou foi revogada')) {
+      throw err;
+    }
+  }
+
+  // 2. Fallback Legado Client-Side se houver accessToken direto
+  if (!accessToken) {
+    throw new Error('Nenhuma conexão com o Google Agenda ativa. Conecte sua conta para sincronizar.');
+  }
+
   const now = new Date();
   const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0).toISOString();
   const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).toISOString();
@@ -498,6 +533,12 @@ export async function fetchTodayEventsFromGoogleApi(accessToken: string) {
   });
 
   if (!response.ok) {
+    if (response.status === 401) {
+      if (typeof window !== 'undefined') {
+        localStorage.removeItem('bancoresidencia_google_access_token');
+      }
+      throw new Error('Sua conexão de 1h do Google expirou. Reconecte pelo botão para ativar a proteção permanente.');
+    }
     const errorJson = await response.json().catch(() => ({}));
     throw new Error(errorJson.error?.message || `Erro ${response.status} ao consultar API do Google Calendar.`);
   }
@@ -549,6 +590,21 @@ export async function createEventInGoogleCalendarApi(
   accessToken: string,
   event: GoogleCalendarEventInput
 ): Promise<any> {
+  // 1. Tenta criar primeiro via Backend Seguro
+  try {
+    const res = await fetch('/api/calendar/google/create-event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(event)
+    });
+    if (res.ok) {
+      const data = await res.json();
+      return data.event;
+    }
+  } catch {
+    // segue para fallback cliente
+  }
+
   const now = new Date();
   const [startH, startM] = event.startTime.split(':').map(Number);
   const [endH, endM] = event.endTime.split(':').map(Number);
@@ -661,4 +717,36 @@ export async function createEventsBatchInGoogleCalendarApi(
   }
 
   return { success, failed };
+}
+
+
+/**
+ * Desconecta a integração do Google Agenda tanto no servidor quanto no navegador
+ */
+export async function disconnectGoogleCalendarApi(): Promise<void> {
+  try {
+    await fetch('/api/calendar/google/disconnect', { method: 'POST' });
+  } catch {
+    // ignora erros de rede na desconexão
+  }
+}
+
+/**
+ * Consulta o status da integração no servidor
+ */
+export async function checkGoogleCalendarStatus(): Promise<{
+  connected: boolean;
+  email?: string;
+  syncMode?: 'api' | 'ical';
+  lastSyncAt?: string;
+}> {
+  try {
+    const res = await fetch('/api/calendar/google/status', { method: 'GET' });
+    if (res.ok) {
+      return await res.json();
+    }
+  } catch {
+    // ignora
+  }
+  return { connected: false };
 }

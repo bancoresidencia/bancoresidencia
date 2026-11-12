@@ -150,6 +150,8 @@ interface TextHighlight {
   text: string;
   color: HighlighterColor;
   style?: TextMarkStyle;
+  prefix?: string;
+  suffix?: string;
 }
 
 // Verifica se o texto da alternativa é uma imagem (URL ou caminho local)
@@ -162,6 +164,194 @@ const isOptionImage = (text?: string): boolean => {
       t.includes('/storage/v1/object/public/') ||
       t.includes('/alternativas/'))
   );
+};
+
+// Localiza a melhor ocorrencia de um termo baseando-se no contexto imediato (prefixo e sufixo)
+const findBestOccurrenceIndex = (
+  haystack: string,
+  needle: string,
+  prefix?: string,
+  suffix?: string
+): number => {
+  if (!haystack || !needle) return -1;
+  const lowerHaystack = haystack.toLowerCase();
+  const lowerNeedle = needle.toLowerCase();
+  let bestIdx = -1;
+  let bestScore = -1;
+
+  let pos = lowerHaystack.indexOf(lowerNeedle);
+  while (pos !== -1) {
+    let score = 1;
+
+    if (prefix) {
+      const pLen = Math.min(prefix.length, 30);
+      const expectedPrefix = prefix.slice(-pLen).toLowerCase();
+      const actualPrefix = haystack.substring(Math.max(0, pos - pLen), pos).toLowerCase();
+      if (actualPrefix === expectedPrefix) {
+        score += 20;
+      } else if (actualPrefix.endsWith(expectedPrefix) || expectedPrefix.endsWith(actualPrefix)) {
+        score += 10;
+      } else if (actualPrefix.slice(-5) === expectedPrefix.slice(-5)) {
+        score += 5;
+      }
+    }
+
+    if (suffix) {
+      const sLen = Math.min(suffix.length, 30);
+      const expectedSuffix = suffix.slice(0, sLen).toLowerCase();
+      const actualSuffix = haystack.substring(pos + needle.length, pos + needle.length + sLen).toLowerCase();
+      if (actualSuffix === expectedSuffix) {
+        score += 20;
+      } else if (actualSuffix.startsWith(expectedSuffix) || expectedSuffix.startsWith(actualSuffix)) {
+        score += 10;
+      } else if (actualSuffix.slice(0, 5) === expectedSuffix.slice(0, 5)) {
+        score += 5;
+      }
+    }
+
+    if (score > bestScore) {
+      bestScore = score;
+      bestIdx = pos;
+    }
+
+    pos = lowerHaystack.indexOf(lowerNeedle, pos + 1);
+  }
+
+  if ((prefix || suffix) && bestScore < 5) {
+    return -1;
+  }
+
+  return bestIdx;
+};
+
+// Aplica marcacoes em uma string simples, garantindo que cada destaque seja aplicado EXATAMENTE UMA VEZ
+const applyHighlightsToString = (
+  text: string,
+  activeHighlights: TextHighlight[],
+  onRemove: (id: string) => void,
+  keyPrefix: string,
+  consumedIds: Set<string>
+): React.ReactNode => {
+  interface MatchItem {
+    hl: TextHighlight;
+    start: number;
+    end: number;
+  }
+  const matches: MatchItem[] = [];
+
+  const sorted = [...activeHighlights].sort((a, b) => b.text.length - a.text.length);
+
+  for (const hl of sorted) {
+    if (consumedIds.has(hl.id) || !hl.text) continue;
+    const idx = findBestOccurrenceIndex(text, hl.text, hl.prefix, hl.suffix);
+    if (idx !== -1) {
+      const end = idx + hl.text.length;
+      const overlaps = matches.some((m) => Math.max(idx, m.start) < Math.min(end, m.end));
+      if (!overlaps) {
+        matches.push({ hl, start: idx, end });
+        consumedIds.add(hl.id);
+      }
+    }
+  }
+
+  if (matches.length === 0) {
+    return text;
+  }
+
+  matches.sort((a, b) => a.start - b.start);
+
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+
+  matches.forEach((m, i) => {
+    if (m.start > lastIndex) {
+      parts.push(text.slice(lastIndex, m.start));
+    }
+
+    const matchedText = text.slice(m.start, m.end);
+    const hl = m.hl;
+
+    if (hl.style === 'strike') {
+      parts.push(
+        <span
+          key={`${keyPrefix}-strike-${hl.id}-${i}`}
+          onClick={(e) => {
+            e.stopPropagation();
+            onRemove(hl.id);
+          }}
+          title="Clique para remover o tachado (risco)"
+          className="cursor-pointer line-through decoration-rose-500/80 dark:decoration-rose-400 decoration-[2.5px] text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 font-medium px-0.5 rounded transition-all hover:bg-rose-500/10"
+        >
+          {matchedText}
+        </span>
+      );
+    } else {
+      const colorConfig = HIGHLIGHTER_COLORS[hl.color] || HIGHLIGHTER_COLORS.yellow;
+      parts.push(
+        <mark
+          key={`${keyPrefix}-mark-${hl.id}-${i}`}
+          onClick={(e) => {
+            e.stopPropagation();
+            onRemove(hl.id);
+          }}
+          title="Clique para remover este destaque"
+          style={{
+            backgroundColor: colorConfig.hex,
+            borderBottomColor: colorConfig.borderHex
+          }}
+          className="cursor-pointer px-1 py-0.5 rounded-md transition-all hover:opacity-85 text-black font-semibold border-b-2"
+        >
+          {matchedText}
+        </mark>
+      );
+    }
+
+    lastIndex = m.end;
+  });
+
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex));
+  }
+
+  return parts;
+};
+
+// Aplica marcacoes de texto recursivamente a nos do React
+const applyHighlightsToNode = (
+  node: React.ReactNode,
+  activeHighlights: TextHighlight[],
+  onRemove: (id: string) => void,
+  keyPrefix = 'hl',
+  consumedIds: Set<string> = new Set()
+): React.ReactNode => {
+  if (activeHighlights.length === 0 || node === null || node === undefined) {
+    return node;
+  }
+
+  if (typeof node === 'string') {
+    if (!node.trim()) return node;
+    return applyHighlightsToString(node, activeHighlights, onRemove, keyPrefix, consumedIds);
+  }
+
+  if (Array.isArray(node)) {
+    return node.map((child, idx) =>
+      applyHighlightsToNode(child, activeHighlights, onRemove, `${keyPrefix}-${idx}`, consumedIds)
+    );
+  }
+
+  if (React.isValidElement(node)) {
+    const element = node as React.ReactElement<{ children?: React.ReactNode }>;
+    if (element.props && element.props.children) {
+      return React.cloneElement(
+        element,
+        { key: element.key ?? `${keyPrefix}-el` },
+        applyHighlightsToNode(element.props.children, activeHighlights, onRemove, `${keyPrefix}-c`, consumedIds)
+      );
+    }
+    return node;
+  }
+
+  return node;
 };
 
 export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
@@ -231,10 +421,59 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setOpenTopics((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  // Helper para renderizar texto com marcações em negrito/itálico e sanitização médica completa
-  const renderFormattedText = (text: string | null | undefined) => {
-    return renderFormattedMedicalText(text);
-  };
+  // Estados de Marcador de Texto (Highlight)
+  const [highlights, setHighlights] = useState<TextHighlight[]>([]);
+  const activeHighlighterColor = propHighlighterColor || 'yellow';
+  const isTextSelectionRef = useRef(false);
+
+  const removeHighlight = useCallback((id: string) => {
+    setHighlights((prev) => prev.filter((h) => h.id !== id));
+  }, []);
+
+  const clearAllHighlights = useCallback(() => {
+    setHighlights([]);
+  }, []);
+
+  const addHighlight = useCallback((
+    text: string,
+    color: HighlighterColor,
+    style: TextMarkStyle = 'highlight',
+    prefix?: string,
+    suffix?: string
+  ) => {
+    if (!text.trim()) return;
+    setHighlights((prev) => {
+      // Se ja houver marcacao exatamente no mesmo texto e posicao, substitui
+      const filtered = prev.filter((h) =>
+        !(h.text.toLowerCase() === text.toLowerCase() && h.prefix === prefix && h.suffix === suffix)
+      );
+      const newHighlight: TextHighlight = {
+        id: "hl-" + Date.now() + "-" + Math.random().toString(36).slice(2, 6),
+        text,
+        color,
+        style,
+        prefix,
+        suffix
+      };
+      return [...filtered, newHighlight];
+    });
+    window.getSelection()?.removeAllRanges();
+  }, []);
+
+  // Renderizador unificado com suporte a formatação médica (negrito/itálico) e destaques de marca-texto
+  const renderHighlightedText = useCallback((text: string | null | undefined) => {
+    if (!text) return null;
+    const formatted = renderFormattedMedicalText(text);
+    if (highlights.length === 0) {
+      return formatted;
+    }
+    return applyHighlightsToNode(formatted, highlights, removeHighlight);
+  }, [highlights, removeHighlight]);
+
+  // Helper para renderizar texto com marcações em negrito/itálico, destaques e sanitização médica completa
+  const renderFormattedText = useCallback((text: string | null | undefined) => {
+    return renderHighlightedText(text);
+  }, [renderHighlightedText]);
 
   // Detecção abrangente de gabarito sob suspeita/possível erro ou divergência médica da banca
   const isSuspectKey = useMemo(() => {
@@ -250,10 +489,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       comm.includes('ERRO DA BANCA')
     );
   }, [activeQuestion.commentary]);
-
-  // Estados de Marcador de Texto (Highlight)
-  const [highlights, setHighlights] = useState<TextHighlight[]>([]);
-  const activeHighlighterColor = propHighlighterColor || 'yellow';
 
   // Rastreamento da alternativa em hover para atalho de corte/risco (Backspace/Delete)
   const [hoveredOptionLetter, setHoveredOptionLetter] = useState<string | null>(null);
@@ -537,133 +772,168 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   // Helper que verifica se o caractere faz parte de uma palavra (suporte a acentuação e números)
   const isWordCharacter = (char: string) => /[\p{L}\p{N}_]/u.test(char);
 
-  // Expande a seleção para as bordas completas das palavras para nunca quebrar palavras ao meio
-  const expandRangeToWordBoundaries = (range: Range, statementText: string): string => {
+  // Ajusta a selecao sem jamais invadir palavras adjacentes atraves de espacos em branco
+  const cleanAndSnapRange = (range: Range): string => {
     try {
-      // 1. Expande o início se estiver no meio de uma palavra em nó de texto
       if (range.startContainer.nodeType === Node.TEXT_NODE) {
         const text = range.startContainer.textContent || '';
-        let startOffset = range.startOffset;
-        if (startOffset > 0 && isWordCharacter(text[startOffset - 1])) {
-          while (startOffset > 0 && isWordCharacter(text[startOffset - 1])) {
-            startOffset--;
-          }
-          range.setStart(range.startContainer, startOffset);
+        let start = range.startOffset;
+
+        // Se comecar sobre espaco, avanca para a primeira letra
+        while (start < text.length && /\s/.test(text[start]) && start < range.endOffset) {
+          start++;
         }
+
+        // Expande para o inicio da palavra APENAS se o corte estiver genuinamente no meio da palavra
+        if (start > 0 && start < text.length && isWordCharacter(text[start - 1]) && isWordCharacter(text[start])) {
+          while (start > 0 && isWordCharacter(text[start - 1])) {
+            start--;
+          }
+        }
+        range.setStart(range.startContainer, start);
       }
 
-      // 2. Expande o final se estiver no meio de uma palavra em nó de texto
       if (range.endContainer.nodeType === Node.TEXT_NODE) {
         const text = range.endContainer.textContent || '';
-        let endOffset = range.endOffset;
-        if (endOffset < text.length && isWordCharacter(text[endOffset])) {
-          while (endOffset < text.length && isWordCharacter(text[endOffset])) {
-            endOffset++;
-          }
-          range.setEnd(range.endContainer, endOffset);
+        let end = range.endOffset;
+
+        // Se terminar sobre espaco, recua para a ultima letra
+        while (end > 0 && /\s/.test(text[end - 1]) && end > range.startOffset) {
+          end--;
         }
+
+        // Expande para o final da palavra APENAS se o corte estiver genuinamente no meio da palavra
+        if (end < text.length && end > 0 && isWordCharacter(text[end - 1]) && isWordCharacter(text[end])) {
+          while (end < text.length && isWordCharacter(text[end])) {
+            end++;
+          }
+        }
+        range.setEnd(range.endContainer, end);
       }
     } catch {
-      // continua com seleção padrão se DOM range manipulation falhar
+      // fallback silencioso
     }
 
-    let result = range.toString().trim();
-
-    // 3. Fallback inteligente usando o enunciado completo
-    if (statementText && result.length >= 2) {
-      const idx = statementText.indexOf(result);
-      if (idx !== -1) {
-        let start = idx;
-        while (start > 0 && isWordCharacter(statementText[start - 1])) {
-          start--;
-        }
-        let end = idx + result.length;
-        while (end < statementText.length && isWordCharacter(statementText[end])) {
-          end++;
-        }
-        result = statementText.slice(start, end).trim();
-      }
-    }
-
-    return result;
+    return range.toString().trim();
   };
 
-  // Captura seleção de texto dentro do enunciado e destaca ou risca automaticamente com palavras inteiras
-  const handleStatementMouseUp = () => {
+  const extractContextAroundRange = (range: Range) => {
+    let prefix = '';
+    let suffix = '';
+    try {
+      const container = range.commonAncestorContainer.nodeType === Node.TEXT_NODE
+        ? range.commonAncestorContainer.parentElement
+        : (range.commonAncestorContainer as HTMLElement);
+
+      if (container) {
+        const preRange = document.createRange();
+        preRange.selectNodeContents(container);
+        preRange.setEnd(range.startContainer, range.startOffset);
+        prefix = preRange.toString().slice(-30);
+
+        const postRange = document.createRange();
+        postRange.selectNodeContents(container);
+        postRange.setStart(range.endContainer, range.endOffset);
+        suffix = postRange.toString().slice(0, 30);
+      }
+    } catch {
+      // fallback
+    }
+    return { prefix, suffix };
+  };
+
+  // Captura selecao de texto dentro do enunciado, alternativas, justificativas e comentarios
+  const handleTextSelectionMouseUp = () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) {
       return;
     }
 
+    const rawText = selection.toString().trim();
+    if (rawText.length < 2 || rawText.length > 500) {
+      return;
+    }
+
+    const anchorNode = selection.anchorNode;
+    const focusNode = selection.focusNode;
+    if (!anchorNode || !focusNode) return;
+
+    const anchorEl = anchorNode.nodeType === Node.ELEMENT_NODE
+      ? (anchorNode as Element)
+      : anchorNode.parentElement;
+    const focusEl = focusNode.nodeType === Node.ELEMENT_NODE
+      ? (focusNode as Element)
+      : focusNode.parentElement;
+
+    if (
+      anchorEl?.closest('button, input, textarea, [data-no-highlight="true"]') ||
+      focusEl?.closest('button, input, textarea, [data-no-highlight="true"]')
+    ) {
+      return;
+    }
+
+    const isAnchorInContent = Boolean(anchorEl?.closest('[data-highlightable="true"]'));
+    const isFocusInContent = Boolean(focusEl?.closest('[data-highlightable="true"]'));
+
+    if (!isAnchorInContent && !isFocusInContent) {
+      return;
+    }
+
+    isTextSelectionRef.current = true;
+    setTimeout(() => {
+      isTextSelectionRef.current = false;
+    }, 200);
+
+    let textToHighlight = rawText;
+    let prefix = '';
+    let suffix = '';
     try {
       const range = selection.getRangeAt(0);
-      const snappedText = expandRangeToWordBoundaries(range, question.statement);
-      if (snappedText.length >= 2) {
-        if (isStrikethroughActive) {
-          addHighlight(snappedText, 'yellow', 'strike');
-        } else {
-          addHighlight(snappedText, activeHighlighterColor, 'highlight');
-        }
+      const snapped = cleanAndSnapRange(range);
+      if (snapped && snapped.length >= 2) {
+        textToHighlight = snapped;
       }
+      const ctx = extractContextAroundRange(range);
+      prefix = ctx.prefix;
+      suffix = ctx.suffix;
     } catch {
-      const selectedText = selection.toString().trim();
-      if (selectedText.length >= 2) {
-        if (isStrikethroughActive) {
-          addHighlight(selectedText, 'yellow', 'strike');
-        } else {
-          addHighlight(selectedText, activeHighlighterColor, 'highlight');
-        }
+      // fallback com rawText
+    }
+
+    if (textToHighlight.length >= 2) {
+      if (isStrikethroughActive) {
+        addHighlight(textToHighlight, 'yellow', 'strike', prefix, suffix);
+      } else {
+        addHighlight(textToHighlight, activeHighlighterColor, 'highlight', prefix, suffix);
       }
     }
   };
 
-  const addHighlight = (text: string, color: HighlighterColor, style: TextMarkStyle = 'highlight') => {
-    if (!text.trim()) return;
-    setHighlights((prev) => {
-      // Se já houver marcação no mesmo texto, remove para sobrescrever/atualizar
-      const filtered = prev.filter((h) => h.text.toLowerCase() !== text.toLowerCase());
-      const newHighlight: TextHighlight = {
-        id: `hl-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
-        text,
-        color,
-        style
-      };
-      return [...filtered, newHighlight];
-    });
-    window.getSelection()?.removeAllRanges();
-  };
-
-  // Listener para riscar imediatamente caso o usuário tenha texto selecionado e clique na barra superior
+  // Listener para riscar imediatamente caso o usuario tenha texto selecionado e clique na barra superior
   useEffect(() => {
     const handleApplyStrike = () => {
       const selection = window.getSelection();
-      if (selection && !selection.isCollapsed) {
-        try {
-          const range = selection.getRangeAt(0);
-          const snappedText = expandRangeToWordBoundaries(range, question.statement);
-          if (snappedText.length >= 2) {
-            addHighlight(snappedText, 'yellow', 'strike');
-          }
-        } catch {
-          const raw = selection.toString().trim();
-          if (raw.length >= 2) {
-            addHighlight(raw, 'yellow', 'strike');
-          }
+      if (!selection || selection.isCollapsed) {
+        return;
+      }
+      try {
+        const range = selection.getRangeAt(0);
+        const snappedText = cleanAndSnapRange(range);
+        const ctx = extractContextAroundRange(range);
+        if (snappedText.length >= 2) {
+          addHighlight(snappedText, 'yellow', 'strike', ctx.prefix, ctx.suffix);
+        }
+      } catch {
+        const raw = selection.toString().trim();
+        if (raw.length >= 2) {
+          addHighlight(raw, 'yellow', 'strike');
         }
       }
     };
 
     window.addEventListener('apply-strikethrough-selection', handleApplyStrike);
     return () => window.removeEventListener('apply-strikethrough-selection', handleApplyStrike);
-  }, [question.statement, isStrikethroughActive]);
-
-  const removeHighlight = (id: string) => {
-    setHighlights((prev) => prev.filter((h) => h.id !== id));
-  };
-
-  const clearAllHighlights = () => {
-    setHighlights([]);
-  };
+  }, [addHighlight, isStrikethroughActive]);
 
   // Alterna o corte/risco de uma alternativa (eliminar distrator)
   const toggleEliminateOption = (letter: string, e: React.MouseEvent) => {
@@ -716,6 +986,15 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
   // Seleciona a alternativa ou expande justificativa pós-resolução
   const handleSelectOption = (letter: 'A' | 'B' | 'C' | 'D' | 'E') => {
+    // Se o usuário estava apenas selecionando/marcando texto com o mouse, não altera a opção
+    if (isTextSelectionRef.current) {
+      return;
+    }
+    const currentSel = typeof window !== 'undefined' ? window.getSelection() : null;
+    if (currentSel && !currentSel.isCollapsed && currentSel.toString().trim().length > 0) {
+      return;
+    }
+
     if (isAnswered) {
       toggleOptionExplanation(letter);
       return;
@@ -1026,62 +1305,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       ? 'text-[17px] sm:text-[17.5px] leading-relaxed'
       : 'text-[18.5px] sm:text-[19px] leading-relaxed';
 
-  // Renderizador do enunciado com suporte a destaques múltiplos do marca-texto e sanitização médica
+  // Renderizador do enunciado e textos com suporte a destaques múltiplos do marca-texto e sanitização médica
   const renderHighlightedStatement = (statement: string) => {
-    if (highlights.length === 0) {
-      return <>{renderFormattedMedicalText(statement)}</>;
-    }
-
-    // Cria regex com todas as palavras/trechos destacados
-    const sortedHighlights = [...highlights].sort((a, b) => b.text.length - a.text.length);
-    const escapedTerms = sortedHighlights.map((h) =>
-      h.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-    );
-    const regex = new RegExp(`(${escapedTerms.join('|')})`, 'gi');
-    const parts = statement.split(regex);
-
-    return (
-      <>
-        {parts.map((part, i) => {
-          const matchedHl = sortedHighlights.find(
-            (h) => h.text.toLowerCase() === part.toLowerCase()
-          );
-
-          if (matchedHl) {
-            if (matchedHl.style === 'strike') {
-              return (
-                <span
-                  key={i}
-                  onClick={() => removeHighlight(matchedHl.id)}
-                  title="Clique para remover o tachado (risco)"
-                  className="cursor-pointer line-through decoration-rose-500/80 dark:decoration-rose-400 decoration-[2.5px] text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 font-medium px-0.5 rounded transition-all hover:bg-rose-500/10"
-                >
-                  {renderFormattedMedicalText(part)}
-                </span>
-              );
-            }
-
-            const colorConfig = HIGHLIGHTER_COLORS[matchedHl.color] || HIGHLIGHTER_COLORS.yellow;
-
-            return (
-              <mark
-                key={i}
-                onClick={() => removeHighlight(matchedHl.id)}
-                title="Clique para remover este destaque"
-                style={{
-                  backgroundColor: colorConfig.hex,
-                  borderBottomColor: colorConfig.borderHex
-                }}
-                className="cursor-pointer px-1 py-0.5 rounded-md transition-all hover:opacity-85 text-black font-semibold border-b-2"
-              >
-                {renderFormattedMedicalText(part)}
-              </mark>
-            );
-          }
-          return <React.Fragment key={i}>{renderFormattedMedicalText(part)}</React.Fragment>;
-        })}
-      </>
-    );
+    return renderHighlightedText(statement);
   };
 
   const isAnuladaQuestion = Boolean(activeQuestion.isAnulada || resolvedCorrectAnswer === 'ANULADA');
@@ -1150,9 +1376,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   }, [activeQuestion.year, activeQuestion.code, question.year, question.code]);
 
   return (
-    <article className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6 relative transition-all">
+    <article
+      onMouseUp={handleTextSelectionMouseUp}
+      onTouchEnd={handleTextSelectionMouseUp}
+      className={`bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6 relative transition-all ${selectionColorClass}`}
+    >
       {/* Header Reorganizado: Origem da Questão (Esquerda) + Ações e Contador (Direita) */}
-      <div className="flex flex-col gap-3 pb-4 border-b border-zinc-100 dark:border-zinc-800/80">
+      <div
+        data-no-highlight="true"
+        className="flex flex-col gap-3 pb-4 border-b border-zinc-100 dark:border-zinc-800/80 select-none"
+      >
         {/* Linha Principal do Topo */}
         <div className="flex flex-wrap items-center justify-between gap-2.5">
           {/* Canto Superior Esquerdo: Origem da Questão (Banca • Ano) + Status Resolvida */}
@@ -1377,11 +1610,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       <div className="relative">
         <div
           ref={statementRef}
-          onMouseUp={handleStatementMouseUp}
-          onTouchEnd={handleStatementMouseUp}
-          className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-left sm:text-justify hyphens-auto break-words ${selectionColorClass}`}
+          data-highlightable="true"
+          onMouseUp={handleTextSelectionMouseUp}
+          onTouchEnd={handleTextSelectionMouseUp}
+          className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-left sm:text-justify hyphens-auto break-words`}
         >
-          {renderHighlightedStatement(question.statement)}
+          {renderHighlightedText(question.statement)}
         </div>
       </div>
 
@@ -1544,13 +1778,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                       </div>
                     ) : (
                       <span
-                        className={`${optionSizeClass} flex-1 pt-0.5 font-medium transition-all ${
+                        data-highlightable="true"
+                        className={`${optionSizeClass} flex-1 pt-0.5 font-medium transition-all select-text ${
                           isEliminated && !isAnswered
                             ? 'line-through text-slate-400 dark:text-slate-500 opacity-60 italic'
                             : ''
                         }`}
                       >
-                        {renderFormattedMedicalText(option.text)}
+                        {renderHighlightedText(option.text)}
                       </span>
                     )}
                   </div>
@@ -1657,7 +1892,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           Justificativa da Alternativa {option.letter}:
                         </span>
                       </div>
-                      <div className={`font-normal whitespace-pre-line ${justificationSizeClass} text-slate-800 dark:text-slate-200`}>
+                      <div data-highlightable="true" className={`font-normal whitespace-pre-line ${justificationSizeClass} text-slate-800 dark:text-slate-200 select-text`}>
                         {renderFormattedText(
                           explanationText ||
                             (isCorrect
@@ -1836,7 +2071,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </div>
                 </div>
                 <div
-                  className={`${justificationSizeClass} font-normal text-slate-800 dark:text-slate-200 whitespace-pre-line`}
+                  data-highlightable="true"
+                  className={`${justificationSizeClass} font-normal text-slate-800 dark:text-slate-200 whitespace-pre-line select-text`}
                 >
                   {renderFormattedText(finalCommentary)}
                 </div>
@@ -1861,7 +2097,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </button>
                   {openTopics['error'] && (
                     <div className="px-4 pb-4 pt-1 border-t border-amber-200/60 dark:border-amber-800/40 animate-in fade-in duration-150">
-                      <div className="text-xs sm:text-[13px] leading-relaxed text-amber-950 dark:text-amber-200/90 whitespace-pre-line">
+                      <div data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-amber-950 dark:text-amber-200/90 whitespace-pre-line select-text">
                         {renderFormattedText(mainErrorReason)}
                       </div>
                     </div>
@@ -1888,7 +2124,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </button>
                   {openTopics['takeHome'] && (
                     <div className="px-4 pb-4 pt-1 border-t border-blue-200/60 dark:border-blue-800/40 animate-in fade-in duration-150">
-                      <div className="text-xs sm:text-[13px] leading-relaxed text-blue-950 dark:text-blue-200/90 font-medium whitespace-pre-line">
+                      <div data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-blue-950 dark:text-blue-200/90 font-medium whitespace-pre-line select-text">
                         {renderFormattedText(takeHomeMessage)}
                       </div>
                     </div>
@@ -1915,7 +2151,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </button>
                   {openTopics['guidelines'] && (
                     <div className="px-4 pb-4 pt-1 border-t border-indigo-200/60 dark:border-indigo-800/40 animate-in fade-in duration-150">
-                      <div className="text-xs sm:text-[13px] leading-relaxed text-indigo-950 dark:text-indigo-200/90 whitespace-pre-line">
+                      <div data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-indigo-950 dark:text-indigo-200/90 whitespace-pre-line select-text">
                         {renderFormattedText(guidelineEvolution)}
                       </div>
                     </div>
@@ -1944,7 +2180,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     <div className="px-3.5 pb-3.5 pt-1 border-t border-zinc-200 dark:border-zinc-800 animate-in fade-in duration-150">
                       <ul className="list-disc list-inside space-y-1 text-[11.5px] text-slate-600 dark:text-slate-400">
                         {references.map((ref, idx) => (
-                          <li key={idx} className="leading-relaxed">
+                          <li key={idx} data-highlightable="true" className="leading-relaxed select-text">
                             {renderFormattedText(ref)}
                           </li>
                         ))}

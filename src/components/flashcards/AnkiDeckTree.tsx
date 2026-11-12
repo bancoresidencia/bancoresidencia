@@ -10,15 +10,21 @@ import {
   ChevronDown,
   Layers,
   Sparkles,
-  Check,
+
   Filter,
   CheckSquare,
-  Square
+  Square,
+  Brain,
+  BookOpen,
+  Zap
 } from 'lucide-react';
-import { FlashcardItem } from '@/types/flashcards';
+import { FlashcardItem, FlashcardStudyDepth } from '@/types/flashcards';
+import { formatSubSubfocoDisplay } from '@/components/AdvancedQuestionFilters';
+import { buildHierarchyCardsCache } from '@/utils/specialtyMatcher';
+import { getFlashcardDepth } from '@/utils/flashcardDistributionEngine';
 import { SpecialtyHierarchy } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
-import { SPECIALTY_CONFIGS } from '../FlashcardsView';
+
 
 function normalizeText(text: string): string {
   return text
@@ -59,6 +65,9 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
   const [onlyWithPending, setOnlyWithPending] = useState(false);
 
+  // Modo de Aprendizagem: Todos | Estudo (Detalhado) | Revisão (Rápido)
+  const [studyDepth, setStudyDepth] = useState<FlashcardStudyDepth>('all');
+
   // Estados de Expansão (Chaves: "spec:Nome", "tema:Spec:::Tema", "foco:Spec:::Tema:::Foco")
   const [expandedNodes, setExpandedNodes] = useState<Record<string, boolean>>({});
 
@@ -67,12 +76,34 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
 
   const normalizedQuery = useMemo(() => normalizeText(searchQuery), [searchQuery]);
 
-  // Lista base de flashcards (respeitando o filtro de essenciais)
-  const effectiveCards = useMemo(() => {
+
+
+  // Contagens prévias para os botões do seletor de profundidade
+  const baseCardsForDepth = useMemo(() => {
     return filterEssentialOnly
+
       ? allFlashcards.filter((c) => c.priority === 'essential')
       : allFlashcards;
   }, [allFlashcards, filterEssentialOnly]);
+
+  const studyCardsCount = useMemo(() => {
+    return baseCardsForDepth.filter((c) => getFlashcardDepth(c) === 'study').length;
+  }, [baseCardsForDepth]);
+
+  const reviewCardsCount = useMemo(() => {
+    return baseCardsForDepth.filter((c) => getFlashcardDepth(c) === 'review').length;
+  }, [baseCardsForDepth]);
+
+  // Lista base de flashcards (respeitando o filtro de essenciais e modo estudo vs revisão)
+  const effectiveCards = useMemo(() => {
+    if (studyDepth === 'study') {
+      return baseCardsForDepth.filter((c) => getFlashcardDepth(c) === 'study');
+    }
+    if (studyDepth === 'review') {
+      return baseCardsForDepth.filter((c) => getFlashcardDepth(c) === 'review');
+    }
+    return baseCardsForDepth;
+  }, [baseCardsForDepth, studyDepth]);
 
   // Helper para verificar se o card é de uma especialidade
   const cardMatchesSpec = useCallback((c: FlashcardItem, specName: string) => {
@@ -208,43 +239,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
     return { novo, aprender, revisar, total: cards.length };
   }, []);
 
-  // Mapas de cache para cards por nó para máxima performance
+  // Mapas de cache para cards por nó para máxima performance (incluindo subfocos e sub-subfocos)
   const cardsCache = useMemo(() => {
-    const specMap = new Map<string, FlashcardItem[]>();
-    const temaMap = new Map<string, FlashcardItem[]>();
-    const focoMap = new Map<string, FlashcardItem[]>();
-    const subfocoMap = new Map<string, FlashcardItem[]>();
-
-    hierarchy.forEach((spec) => {
-      const sCards = effectiveCards.filter((c) => cardMatchesSpec(c, spec.especialidade));
-      specMap.set(spec.especialidade, sCards);
-
-      spec.temas.forEach((tem) => {
-        const tKey = `${spec.especialidade}:::${tem.tema}`;
-        const tCards = sCards.filter((c) => cardMatchesTema(c, spec.especialidade, tem.tema));
-        temaMap.set(tKey, tCards);
-
-        tem.focos.forEach((foc) => {
-          const fKey = `${spec.especialidade}:::${tem.tema}:::${foc.foco}`;
-          const fCards = tCards.filter((c) =>
-            cardMatchesFoco(c, spec.especialidade, tem.tema, foc.foco)
-          );
-          focoMap.set(fKey, fCards);
-
-          foc.subfocos?.forEach((sub) => {
-            const subName = typeof sub === 'string' ? sub : sub.subfoco;
-            const subKey = `${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${subName}`;
-            const subCards = fCards.filter((c) =>
-              cardMatchesSubfoco(c, spec.especialidade, tem.tema, foc.foco, subName)
-            );
-            subfocoMap.set(subKey, subCards);
-          });
-        });
-      });
-    });
-
-    return { specMap, temaMap, focoMap, subfocoMap };
-  }, [hierarchy, effectiveCards, cardMatchesSpec, cardMatchesTema, cardMatchesFoco, cardMatchesSubfoco]);
+    return buildHierarchyCardsCache(hierarchy, effectiveCards);
+  }, [hierarchy, effectiveCards]);
 
   // Alterna expansão de um nó
   const toggleNodeExpand = (nodeKey: string) => {
@@ -313,6 +311,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
         const subKey = key.replace('subfoco:', '');
         const cards = cardsCache.subfocoMap.get(subKey) || [];
         cards.forEach((c) => cardSet.set(c.id, c));
+      } else if (key.startsWith('subsubfoco:') || key.startsWith('sub_subfoco:')) {
+        const ssKey = key.replace(/^(subsubfoco|sub_subfoco):/, '');
+        const cards = cardsCache.subSubfocoMap.get(ssKey) || [];
+        cards.forEach((c) => cardSet.set(c.id, c));
       }
     });
 
@@ -360,11 +362,111 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
     allCardsMode: boolean = false
   ) => {
     if (!cards || cards.length === 0) return;
-    onStartStudy(cards, title, filterEssentialOnly, allCardsMode);
+    const depthSuffix =
+      studyDepth === 'study'
+        ? ' • Estudo'
+        : studyDepth === 'review'
+        ? ' • Revisão'
+        : '';
+    onStartStudy(cards, `${title}${depthSuffix}`, filterEssentialOnly, allCardsMode);
   };
 
   return (
     <div className="space-y-3">
+      {/* SELETOR DE MODO NO TOPO DA CATEGORIA CARTÕES DO BR: ESTUDO vs REVISÃO */}
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 p-3 sm:p-3.5 rounded-2xl shadow-xs transition-all">
+        <div className="flex items-center gap-2.5">
+          <div
+            className="w-8 h-8 rounded-xl flex items-center justify-center text-white shrink-0 shadow-2xs"
+            style={{ backgroundColor: accentConfig.primaryHex }}
+          >
+            <Brain className="w-4 h-4 stroke-[2.2]" />
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 leading-tight">
+                Modo de Aprendizagem
+              </span>
+              <span className="text-[10px] font-mono font-bold px-1.5 py-0.2 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200/60 dark:border-zinc-700/60">
+                {effectiveCards.length} cards
+              </span>
+            </div>
+            <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">
+              {studyDepth === 'all'
+                ? 'Exibindo todos os cartões disponíveis no acervo oficial'
+                : studyDepth === 'study'
+                ? 'Cartões detalhados, conceituais e aprofundados para fixação teórica'
+                : 'Cartões diretos, objetivos e rápidos para revisão ágil pré-prova'}
+            </p>
+          </div>
+        </div>
+
+        {/* Pílulas de Seleção: Todos | Estudo | Revisão */}
+        <div className="flex items-center gap-1 p-1 bg-zinc-100 dark:bg-zinc-900 rounded-xl border border-zinc-200/80 dark:border-zinc-800 self-start sm:self-auto shrink-0">
+          <button
+            type="button"
+            onClick={() => setStudyDepth('all')}
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${
+              studyDepth === 'all'
+                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
+                : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
+            }`}
+          >
+            <Layers className="w-3.5 h-3.5" />
+            <span>Todos</span>
+            <span className="font-mono text-[10px] px-1 rounded bg-zinc-200/60 dark:bg-zinc-700/60">
+              {baseCardsForDepth.length}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setStudyDepth('study')}
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${
+              studyDepth === 'study'
+                ? 'bg-blue-600 text-white shadow-2xs'
+                : 'text-zinc-500 hover:text-blue-600 dark:hover:text-blue-400'
+            }`}
+            title="Cartões detalhados com raciocínio clínico completo, fisiopatologia e critérios diagnósticos"
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>Cartões para Estudo</span>
+            <span
+              className={`font-mono text-[10px] px-1 rounded ${
+                studyDepth === 'study'
+                  ? 'bg-blue-700 text-white'
+                  : 'bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300'
+              }`}
+            >
+              {studyCardsCount}
+            </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setStudyDepth('review')}
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${
+              studyDepth === 'review'
+                ? 'bg-purple-600 text-white shadow-2xs'
+                : 'text-zinc-500 hover:text-purple-600 dark:hover:text-purple-400'
+            }`}
+            title="Cartões diretos, clozes objetivos, condutas imediatas e pérolas de prova"
+          >
+            <Zap className="w-3.5 h-3.5" />
+            <span>Cartões para Revisão</span>
+            <span
+              className={`font-mono text-[10px] px-1 rounded ${
+                studyDepth === 'review'
+                  ? 'bg-purple-700 text-white'
+                  : 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300'
+              }`}
+            >
+              {reviewCardsCount}
+            </span>
+          </button>
+        </div>
+      </div>
+
       {/* 1. BARRA DE BUSCA COMPACTA & CONTROLES DA ÁRVORE */}
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 p-2 sm:p-2.5 rounded-2xl shadow-xs">
         {/* Campo de Busca Rápida */}
@@ -820,7 +922,7 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                   </div>
                                 </div>
 
-                                {/* LINHA NÍVEL 4: SUBFOCOS */}
+                                {/* LINHA NÍVEL 4: SUBFOCOS & NÍVEL 5: SUB-SUBFOCOS */}
                                 {isFocoExpanded &&
                                   hasSubfocos &&
                                   foc.subfocos?.map((sub) => {
@@ -833,6 +935,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                       cardsCache.subfocoMap.get(rawSubKey) || [];
                                     const subCounts = calculateAnkiCounts(subCards);
 
+                                    const subSubList = typeof sub === 'string' ? [] : (sub.sub_subfocos || []);
+                                    const hasSubSubfocos = subSubList.length > 0;
+                                    const isSubExpanded = normalizedQuery ? true : Boolean(expandedNodes[subKey]);
+
                                     if (
                                       onlyWithPending &&
                                       subCounts.revisar === 0 &&
@@ -843,74 +949,177 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                     }
 
                                     return (
-                                      <div
-                                        key={subName}
-                                        className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-16 sm:pl-24 ${
-                                          isSubSelected
-                                            ? 'bg-blue-50/30 dark:bg-blue-950/10'
-                                            : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
-                                        }`}
-                                      >
-                                        <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
-                                          <button
-                                            type="button"
-                                            onClick={(e) => {
-                                              e.stopPropagation();
-                                              toggleNodeSelection(subKey);
-                                            }}
-                                            className="p-0.5 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 cursor-pointer shrink-0"
-                                            title="Selecionar Subfoco"
-                                          >
-                                            {isSubSelected ? (
-                                              <CheckSquare
-                                                className="w-3 h-3 stroke-[2.5]"
-                                                style={{ color: accentConfig.primaryHex }}
-                                              />
-                                            ) : (
-                                              <Square className="w-3 h-3 text-zinc-300 dark:text-zinc-700 hover:text-zinc-400" />
-                                            )}
-                                          </button>
-
-                                          <span className="w-3 text-center text-zinc-300 dark:text-zinc-700 font-mono text-[9px]">
-                                            ↳
-                                          </span>
-
-                                          <span
-                                            className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate italic"
-                                            title={subName}
-                                          >
-                                            {subName}
-                                          </span>
-                                        </div>
-
-                                        <div className="col-span-1 text-right text-[11px]">
-                                          {renderCountNumber(subCounts.novo, 'novo')}
-                                        </div>
-                                        <div className="col-span-2 sm:col-span-1 text-right text-[11px]">
-                                          {renderCountNumber(subCounts.aprender, 'aprender')}
-                                        </div>
-                                        <div className="col-span-2 sm:col-span-1 text-right text-[11px]">
-                                          {renderCountNumber(subCounts.revisar, 'revisar')}
-                                        </div>
-
-                                        <div className="hidden sm:flex col-span-1 items-center justify-center gap-1">
-                                          {subCards.length > 0 && (
+                                      <React.Fragment key={subName}>
+                                        <div
+                                          className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-16 sm:pl-24 ${
+                                            isSubSelected
+                                              ? 'bg-blue-50/30 dark:bg-blue-950/10'
+                                              : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
+                                          }`}
+                                        >
+                                          <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
                                             <button
                                               type="button"
-                                              onClick={() =>
-                                                handleStartNodeStudy(
-                                                  subCards,
-                                                  `${sub} (${subCards.length} cards)`
-                                                )
-                                              }
-                                              className="p-1 rounded text-zinc-400 hover:text-white hover:bg-emerald-600 transition-colors cursor-pointer"
-                                              title={`Estudar ${subCards.length} cards deste subfoco`}
+                                              onClick={(e) => {
+                                                e.stopPropagation();
+                                                toggleNodeSelection(subKey);
+                                              }}
+                                              className="p-0.5 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 cursor-pointer shrink-0"
+                                              title="Selecionar Subfoco"
                                             >
-                                              <Play className="w-2.5 h-2.5 fill-current" />
+                                              {isSubSelected ? (
+                                                <CheckSquare
+                                                  className="w-3 h-3 stroke-[2.5]"
+                                                  style={{ color: accentConfig.primaryHex }}
+                                                />
+                                              ) : (
+                                                <Square className="w-3 h-3 text-zinc-300 dark:text-zinc-700 hover:text-zinc-400" />
+                                              )}
                                             </button>
-                                          )}
+
+                                            {hasSubSubfocos ? (
+                                              <button
+                                                type="button"
+                                                onClick={(e) => {
+                                                  e.stopPropagation();
+                                                  toggleNodeExpand(subKey);
+                                                }}
+                                                className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[10px] text-zinc-500 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                                title={isSubExpanded ? 'Recolher sub-subfocos' : 'Expandir sub-subfocos'}
+                                              >
+                                                {isSubExpanded ? '−' : '+'}
+                                              </button>
+                                            ) : (
+                                              <span className="w-3 text-center text-zinc-300 dark:text-zinc-700 font-mono text-[9px]">
+                                                ↳
+                                              </span>
+                                            )}
+
+                                            <span
+                                              onClick={() => hasSubSubfocos && toggleNodeExpand(subKey)}
+                                              className={`text-[11px] text-zinc-600 dark:text-zinc-400 truncate italic ${hasSubSubfocos ? 'cursor-pointer hover:underline' : ''}`}
+                                              title={subName}
+                                            >
+                                              {subName}
+                                            </span>
+                                          </div>
+
+                                          <div className="col-span-1 text-right text-[11px]">
+                                            {renderCountNumber(subCounts.novo, 'novo')}
+                                          </div>
+                                          <div className="col-span-2 sm:col-span-1 text-right text-[11px]">
+                                            {renderCountNumber(subCounts.aprender, 'aprender')}
+                                          </div>
+                                          <div className="col-span-2 sm:col-span-1 text-right text-[11px]">
+                                            {renderCountNumber(subCounts.revisar, 'revisar')}
+                                          </div>
+
+                                          <div className="hidden sm:flex col-span-1 items-center justify-center gap-1">
+                                            {subCards.length > 0 && (
+                                              <button
+                                                type="button"
+                                                onClick={() =>
+                                                  handleStartNodeStudy(
+                                                    subCards,
+                                                    `${subName} (${subCards.length} cards)`
+                                                  )
+                                                }
+                                                className="p-1 rounded text-zinc-400 hover:text-white hover:bg-emerald-600 transition-colors cursor-pointer"
+                                                title={`Estudar ${subCards.length} cards deste subfoco`}
+                                              >
+                                                <Play className="w-2.5 h-2.5 fill-current" />
+                                              </button>
+                                            )}
+                                          </div>
                                         </div>
-                                      </div>
+
+                                        {/* LINHA NÍVEL 5: SUB-SUBFOCOS (4º NÍVEL ANALÍTICO) */}
+                                        {isSubExpanded &&
+                                          hasSubSubfocos &&
+                                          subSubList.map((ss) => {
+                                            const subSubKey = `subsubfoco:${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${subName}:::${ss}`;
+                                            const rawSSKey = `${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${subName}:::${ss}`;
+                                            const isSSSelected = selectedNodeKeys.has(subSubKey);
+                                            const ssCards = cardsCache.subSubfocoMap.get(rawSSKey) || [];
+                                            const ssCounts = calculateAnkiCounts(ssCards);
+
+                                            if (
+                                              onlyWithPending &&
+                                              ssCounts.revisar === 0 &&
+                                              ssCounts.novo === 0 &&
+                                              ssCounts.aprender === 0
+                                            ) {
+                                              return null;
+                                            }
+
+                                            return (
+                                              <div
+                                                key={ss}
+                                                className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-20 sm:pl-32 ${
+                                                  isSSSelected
+                                                    ? 'bg-blue-50/40 dark:bg-blue-950/20'
+                                                    : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
+                                                }`}
+                                              >
+                                                <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
+                                                  <button
+                                                    type="button"
+                                                    onClick={(e) => {
+                                                      e.stopPropagation();
+                                                      toggleNodeSelection(subSubKey);
+                                                    }}
+                                                    className="p-0.5 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 cursor-pointer shrink-0"
+                                                    title="Selecionar Sub-subfoco"
+                                                  >
+                                                    {isSSSelected ? (
+                                                      <CheckSquare
+                                                        className="w-3 h-3 stroke-[2.5]"
+                                                        style={{ color: accentConfig.primaryHex }}
+                                                      />
+                                                    ) : (
+                                                      <Square className="w-3 h-3 text-zinc-300 dark:text-zinc-700 hover:text-zinc-400" />
+                                                    )}
+                                                  </button>
+
+                                                  <span
+                                                    className="text-[11px] text-zinc-600 dark:text-zinc-300 truncate"
+                                                    title={ss}
+                                                  >
+                                                    {formatSubSubfocoDisplay(ss)}
+                                                  </span>
+                                                </div>
+
+                                                <div className="col-span-1 text-right text-[11px]">
+                                                  {renderCountNumber(ssCounts.novo, 'novo')}
+                                                </div>
+                                                <div className="col-span-2 sm:col-span-1 text-right text-[11px]">
+                                                  {renderCountNumber(ssCounts.aprender, 'aprender')}
+                                                </div>
+                                                <div className="col-span-2 sm:col-span-1 text-right text-[11px]">
+                                                  {renderCountNumber(ssCounts.revisar, 'revisar')}
+                                                </div>
+
+                                                <div className="hidden sm:flex col-span-1 items-center justify-center gap-1">
+                                                  {ssCards.length > 0 && (
+                                                    <button
+                                                      type="button"
+                                                      onClick={() =>
+                                                        handleStartNodeStudy(
+                                                          ssCards,
+                                                          `${formatSubSubfocoDisplay(ss)} (${ssCards.length} cards)`
+                                                        )
+                                                      }
+                                                      className="p-1 rounded text-zinc-400 hover:text-white hover:bg-emerald-600 transition-colors cursor-pointer"
+                                                      title={`Estudar ${ssCards.length} cards deste sub-subfoco`}
+                                                    >
+                                                      <Play className="w-2.5 h-2.5 fill-current" />
+                                                    </button>
+                                                  )}
+                                                </div>
+                                              </div>
+                                            );
+                                          })}
+                                      </React.Fragment>
                                     );
                                   })}
                               </React.Fragment>

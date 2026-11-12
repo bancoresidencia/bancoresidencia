@@ -13,6 +13,7 @@
     "db:push": "supabase db push",
     "db:pull": "supabase db pull",
     "test": "node --experimental-strip-types scripts/test-irt.ts && node --experimental-strip-types tests/questionService.test.ts",
+    "test:calendar": "npx tsx tests/calendar_concurrency_and_security.test.ts",
     "test:dashboard": "npx tsx tests/dashboard/run_all_dashboard_tests.ts",
     "test:irt": "node --experimental-strip-types scripts/test-irt.ts",
     "test:fase1": "node scripts/test_fase1_db.mjs",

@@ -11,12 +11,14 @@ import {
   Filter,
   CheckCircle2,
   Calendar,
-  Tag
+  Tag,
+  FileSpreadsheet
 } from 'lucide-react';
 import { FlashcardItem, CustomFlashcardDeck } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
+import { CsvFlashcardImportModal } from './CsvFlashcardImportModal';
 
 interface OriginalCardsBrowserProps {
   cards: FlashcardItem[];
@@ -36,6 +38,7 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDeckFilter, setSelectedDeckFilter] = useState('all');
+  const [isCsvModalOpen, setIsCsvModalOpen] = useState(false);
 
   // Estado para Edição de Cartão
   const [editingCard, setEditingCard] = useState<FlashcardItem | null>(null);
@@ -162,6 +165,16 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
               ))}
             </select>
           </div>
+
+          <button
+            type="button"
+            onClick={() => setIsCsvModalOpen(true)}
+            className="px-3 py-1.5 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer inline-flex items-center gap-1.5 shadow-2xs"
+            title="Importar flashcards em lote a partir de arquivo CSV / TSV"
+          >
+            <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-500" />
+            <span className="hidden sm:inline">Importar CSV</span>
+          </button>
         </div>
       </div>
 
@@ -342,6 +355,15 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
           </div>
         </div>
       )}
-    </div>
+    
+      {/* Modal de Importação CSV */}
+      <CsvFlashcardImportModal
+        isOpen={isCsvModalOpen}
+        onClose={() => setIsCsvModalOpen(false)}
+        onImportSuccess={() => {
+          onRefreshCards();
+        }}
+      />
+</div>
   );
 };

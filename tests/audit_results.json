@@ -1,0 +1,483 @@
+{
+  "timestamp": "2026-11-11T20:35:24.491Z",
+  "pagesAudited": {
+    "/": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/dashboard": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/questoes": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/flashcards": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/resumos": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/caderno-de-erros": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/listas": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/provas": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/simulados": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/desempenho": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/ranking": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/agenda": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/configuracoes": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/checkout": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/privacidade": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/admin/curadoria": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/admin/medevo": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    },
+    "/admin/reportes": {
+      "errors": [],
+      "warnings": [],
+      "uncaught": [],
+      "failedRequests": [],
+      "httpStatus": 200
+    }
+  },
+  "apiSecurityAudit": {
+    "Admin Auth Barrier: /api/admin/analytics/recalculate": {
+      "endpoint": "/api/admin/analytics/recalculate",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/audit/logs": {
+      "endpoint": "/api/admin/audit/logs",
+      "method": "GET",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/curadoria/generate-commentary": {
+      "endpoint": "/api/admin/curadoria/generate-commentary",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/curadoria/provas-prioritarias": {
+      "endpoint": "/api/admin/curadoria/provas-prioritarias",
+      "method": "GET",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/curadoria/questoes-prova?banca=ENARE&ano=2024": {
+      "endpoint": "/api/admin/curadoria/questoes-prova?banca=ENARE&ano=2024",
+      "method": "GET",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/curadoria/update-gabarito": {
+      "endpoint": "/api/admin/curadoria/update-gabarito",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/medevo/inpaint?url=https://images.unsplash.com/photo-1551836022-d5d88e9218df": {
+      "endpoint": "/api/admin/medevo/inpaint?url=https://images.unsplash.com/photo-1551836022-d5d88e9218df",
+      "method": "GET",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/medevo": {
+      "endpoint": "/api/admin/medevo",
+      "method": "GET",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/medevo/upload": {
+      "endpoint": "/api/admin/medevo/upload",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Auth Barrier: /api/admin/reports": {
+      "endpoint": "/api/admin/reports",
+      "method": "GET",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Auth/Protection Barrier: /api/ai/banca-raiox": {
+      "endpoint": "/api/ai/banca-raiox",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Payload Size Cap: /api/ai/banca-raiox": {
+      "endpoint": "/api/ai/banca-raiox",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Auth/Protection Barrier: /api/ai/performance-mentor": {
+      "endpoint": "/api/ai/performance-mentor",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Payload Size Cap: /api/ai/performance-mentor": {
+      "endpoint": "/api/ai/performance-mentor",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Auth/Protection Barrier: /api/ai/schedule-optimizer": {
+      "endpoint": "/api/ai/schedule-optimizer",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Payload Size Cap: /api/ai/schedule-optimizer": {
+      "endpoint": "/api/ai/schedule-optimizer",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Auth/Protection Barrier: /api/ai/smart-filter": {
+      "endpoint": "/api/ai/smart-filter",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Payload Size Cap: /api/ai/smart-filter": {
+      "endpoint": "/api/ai/smart-filter",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Auth/Protection Barrier: /api/ai/study-generator": {
+      "endpoint": "/api/ai/study-generator",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "AI Payload Size Cap: /api/ai/study-generator": {
+      "endpoint": "/api/ai/study-generator",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Ambassador IDOR / BOLA Prevention (/api/ambassador/withdraw)": {
+      "endpoint": "/api/ambassador/withdraw",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Ambassador Negative Amount Tampering (/api/ambassador/withdraw)": {
+      "endpoint": "/api/ambassador/withdraw",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Google Calendar SSRF Prevention (/api/calendar/sync-ical)": {
+      "endpoint": "/api/calendar/sync-ical",
+      "method": "POST",
+      "status": 400,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Google Calendar Create Event Auth Barrier (/api/calendar/google/create-event)": {
+      "endpoint": "/api/calendar/google/create-event",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Webhook Signature Forgery (/api/webhooks/mercadopago)": {
+      "endpoint": "/api/webhooks/mercadopago",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Checkout BOLA in Status (/api/checkout/status)": {
+      "endpoint": "/api/checkout/status?payment_id=spoofed_victim_payment_123",
+      "method": "GET",
+      "status": 400,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Knowledge Path Traversal (../../../../etc/passwd)": {
+      "endpoint": "/api/knowledge/book?path=..%2F..%2F..%2F..%2Fetc%2Fpasswd",
+      "method": "GET",
+      "status": 403,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Knowledge Path Traversal (..\\..\\..\\windows\\win.ini)": {
+      "endpoint": "/api/knowledge/book?path=..%5C..%5C..%5Cwindows%5Cwin.ini",
+      "method": "GET",
+      "status": 403,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Knowledge Path Traversal (../../.env.local)": {
+      "endpoint": "/api/knowledge/book?path=..%2F..%2F.env.local",
+      "method": "GET",
+      "status": 403,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Knowledge Path Traversal (%2e%2e%2f%2e%2e%2fpackage.json)": {
+      "endpoint": "/api/knowledge/book?path=%252e%252e%252f%252e%252e%252fpackage.json",
+      "method": "GET",
+      "status": 403,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Questions Mass Scraping & Gabarito Leak (/api/questions)": {
+      "endpoint": "/api/questions",
+      "method": "POST",
+      "status": 200,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Admin Inpaint SSRF Prevention (/api/admin/medevo/inpaint)": {
+      "endpoint": "/api/admin/medevo/inpaint?url=http://169.254.169.254/latest/meta-data/",
+      "method": "GET",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Ranking User ID Privacy Protection (/api/ranking)": {
+      "endpoint": "/api/ranking?tab=official",
+      "method": "GET",
+      "status": 200,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Solve Batch Unauthenticated Resolution Probing": {
+      "endpoint": "/api/questions/solve-batch",
+      "method": "POST",
+      "status": 401,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Ranking PostgREST Sanity (/api/ranking)": {
+      "endpoint": "/api/ranking?tab=official",
+      "method": "GET",
+      "status": 200,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Reports XSS & Massive Payload (/api/reports)": {
+      "endpoint": "/api/reports",
+      "method": "POST",
+      "status": 400,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Tab Availability Cache & Response (/api/tab-availability)": {
+      "endpoint": "/api/tab-availability",
+      "method": "GET",
+      "status": 200,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    },
+    "Security Headers Audit (Landing Page)": {
+      "endpoint": "/",
+      "method": "GET",
+      "status": 200,
+      "passed": true,
+      "finding": null,
+      "impact": null,
+      "remediation": null
+    }
+  },
+  "summary": {
+    "totalConsoleErrors": 0,
+    "totalConsoleWarnings": 0,
+    "totalUncaughtExceptions": 0,
+    "totalFailedRequests": 0,
+    "apiVulnerabilitiesFound": 0,
+    "apiPassedChecks": 38
+  }
+}

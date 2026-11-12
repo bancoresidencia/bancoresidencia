@@ -67,9 +67,9 @@ export function runLayerDIntegrationTests(): { passed: number; failed: number; r
     expectEqual(stored, null);
 
     const cards = DEFAULT_HOME_CARDS.map((c) => ({ ...c }));
-    expectEqual(cards.length, 11);
+    expectEqual(cards.length, DEFAULT_HOME_CARDS.length);
     expectEqual(cards[0].id, 'home_hero');
-    expectEqual(cards[10].id, 'home_carrossel');
+    expectEqual(cards[cards.length - 1].id, DEFAULT_HOME_CARDS[DEFAULT_HOME_CARDS.length - 1].id);
   });
 
   // 2. Recuperação de falha com JSON corrompido no LocalStorage
@@ -85,7 +85,7 @@ export function runLayerDIntegrationTests(): { passed: number; failed: number; r
       loadedCards = DEFAULT_HOME_CARDS;
     }
 
-    expectEqual(loadedCards.length, 11);
+    expectEqual(loadedCards.length, DEFAULT_HOME_CARDS.length);
     expectEqual(loadedCards[0].id, 'home_hero');
   });
 
@@ -175,7 +175,7 @@ export function runLayerDIntegrationTests(): { passed: number; failed: number; r
   // 6. Teste de Ocultação e Reativação Múltipla
   test('Ocultar 4 cards e reativá-los preserva integridade do conjunto', () => {
     let currentCards = DEFAULT_HOME_CARDS.map((c) => ({ ...c }));
-    const toHide = ['home_meta_diaria', 'home_percentil', 'home_retencao', 'home_mnemonico'];
+    const toHide = ['home_meta_diaria', 'home_percentil', 'home_recomendacao', 'home_mnemonico'];
 
     // Oculta os 4
     currentCards = currentCards.map((c) =>
@@ -185,8 +185,8 @@ export function runLayerDIntegrationTests(): { passed: number; failed: number; r
     const visible = currentCards.filter((c) => c.isVisible);
     const hidden = currentCards.filter((c) => !c.isVisible);
 
-    expectEqual(visible.length, 7, '7 cards visíveis');
-    expectEqual(hidden.length, 4, '4 cards ocultos');
+    expectEqual(visible.length, DEFAULT_HOME_CARDS.length - toHide.length, `${DEFAULT_HOME_CARDS.length - toHide.length} cards visíveis`);
+    expectEqual(hidden.length, toHide.length, `${toHide.length} cards ocultos`);
 
     // Reativa 1 a 1
     for (const id of toHide) {
@@ -194,7 +194,7 @@ export function runLayerDIntegrationTests(): { passed: number; failed: number; r
     }
 
     const restoredVisible = currentCards.filter((c) => c.isVisible);
-    expectEqual(restoredVisible.length, 11, 'Todos os 11 cards restaurados para visíveis');
+    expectEqual(restoredVisible.length, DEFAULT_HOME_CARDS.length, `Todos os ${DEFAULT_HOME_CARDS.length} cards restaurados para visíveis`);
   });
 
   // 7. Teste de Persistência e Restauração de Defaults

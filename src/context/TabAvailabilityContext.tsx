@@ -91,11 +91,14 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
     }
 
     let inFlight = false;
+    let lastFetchTimestamp = 0;
     const safeLoadStatus = async () => {
-      if (inFlight) return;
+      const now = Date.now();
+      if (inFlight || now - lastFetchTimestamp < 15000) return;
       inFlight = true;
       try {
         await loadStatus();
+        lastFetchTimestamp = Date.now();
       } finally {
         inFlight = false;
       }

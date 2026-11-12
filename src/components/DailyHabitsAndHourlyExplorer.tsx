@@ -511,7 +511,7 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
               <span className="text-sm font-semibold text-slate-600 dark:text-zinc-400">dos dias</span>
             </div>
             <p className="text-xs text-slate-600 dark:text-zinc-400">
-              {generalHabits.activeDays} dias com resoluções no período
+              {generalHabits.activeDays} {generalHabits.activeDays === 1 ? 'dia' : 'dias'} com resoluções no período
             </p>
           </div>
           <div className="mt-4 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">

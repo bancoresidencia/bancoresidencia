@@ -5,19 +5,26 @@ import {
   Layers,
   Plus,
   Play,
-  RotateCw,
   FolderPlus,
   Table,
   Trash2,
-  Sparkles,
-  BookOpen
+  BookOpen,
+  FileSpreadsheet
 } from 'lucide-react';
-import { FlashcardItem, CustomFlashcardDeck } from '@/types/flashcards';
+import {
+  FlashcardItem,
+  CustomFlashcardDeck,
+  DynamicFilterCriterion
+} from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
+import { normalizeText } from '@/utils/specialtyMatcher';
+import { getFlashcardDepth } from '@/utils/flashcardDistributionEngine';
 import { CreateDeckModal } from './CreateDeckModal';
 import { OriginalCardsBrowser } from './OriginalCardsBrowser';
+import { CsvFlashcardImportModal } from './CsvFlashcardImportModal';
+import { OriginalCardsFilterBar } from './OriginalCardsFilterBar';
 
 interface OriginalCardsSectionProps {
   onStartStudy: (
@@ -27,17 +34,23 @@ interface OriginalCardsSectionProps {
     allCardsMode?: boolean
   ) => void;
   onOpenAddCardForDeck: (deckId: string) => void;
+  onCardsChange?: () => void;
 }
 
 export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   onStartStudy,
-  onOpenAddCardForDeck
+  onOpenAddCardForDeck,
+  onCardsChange
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
 
   const [isCreateDeckOpen, setIsCreateDeckOpen] = useState(false);
+  const [isCsvModalOpen, setIsCsvModalOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'decks' | 'browser'>('decks');
+
+  // Estado dos Filtros Dinâmicos
+  const [activeFilters, setActiveFilters] = useState<DynamicFilterCriterion[]>([]);
 
   // Carrega decks e cartões do usuário
   const [decks, setDecks] = useState<CustomFlashcardDeck[]>(() => {
@@ -51,6 +64,118 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   const refreshData = () => {
     setDecks(flashcardsService.getCustomDecks(user?.id));
     setUserCards(flashcardsService.loadUserCreatedFlashcards(user?.id));
+    onCardsChange?.();
+  };
+
+  // Extrai tags únicas disponíveis nos cartões
+  const availableTags = useMemo(() => {
+    const tagSet = new Set<string>();
+    userCards.forEach((c) => {
+      c.tags?.forEach((t) => tagSet.add(t));
+    });
+    return Array.from(tagSet);
+  }, [userCards]);
+
+  // Aplica os filtros dinâmicos aos cartões do usuário
+  const filteredCards = useMemo(() => {
+    if (activeFilters.length === 0) return userCards;
+
+    const now = new Date();
+
+    return userCards.filter((card) => {
+      return activeFilters.every((filter) => {
+        if (filter.type === 'specialty') {
+          return normalizeText(card.specialty).includes(normalizeText(filter.value));
+        }
+        if (filter.type === 'theme') {
+          return normalizeText(card.theme).includes(normalizeText(filter.value));
+        }
+        if (filter.type === 'focus') {
+          return normalizeText(card.focus).includes(normalizeText(filter.value));
+        }
+        if (filter.type === 'subfocus') {
+          return card.subfocus ? normalizeText(card.subfocus).includes(normalizeText(filter.value)) : false;
+        }
+        if (filter.type === 'subSubfocus') {
+          const ss = card.sub_subfocus || card.subSubfocus;
+          return ss ? normalizeText(ss).includes(normalizeText(filter.value)) : false;
+        }
+        if (filter.type === 'deck') {
+          const matchedDeck = decks.find((d) => d.name === filter.value);
+          const targetId = matchedDeck ? matchedDeck.id : filter.value;
+          return (card.deckId || 'deck-padrao') === targetId;
+        }
+        if (filter.type === 'status') {
+          const p = card.progress;
+          if (filter.value === 'Para Revisar') {
+            return (
+              p &&
+              p.state === 'review' &&
+              p.nextReviewDate &&
+              new Date(p.nextReviewDate) <= now
+            );
+          }
+          if (filter.value === 'Novos') {
+            return !p || p.state === 'new' || p.repetitions === 0;
+          }
+          if (filter.value === 'Em Aprendizado') {
+            return p && (p.state === 'learning' || p.state === 'relearning');
+          }
+        }
+        if (filter.type === 'depth') {
+          const depth = getFlashcardDepth(card);
+          if (filter.value === 'Estudo Detalhado') return depth === 'study';
+          if (filter.value === 'Revisão Rápida') return depth === 'review';
+        }
+        if (filter.type === 'priority') {
+          if (filter.value === 'Essenciais') return card.priority === 'essential';
+          return card.priority !== 'essential';
+        }
+        if (filter.type === 'tag') {
+          const cleanTag = filter.value.replace(/^#/, '').toLowerCase();
+          return card.tags && card.tags.some((t) => t.toLowerCase().includes(cleanTag));
+        }
+        return true;
+      });
+    });
+  }, [userCards, activeFilters, decks]);
+
+  // Manipulação de filtros
+  const handleAddFilter = (criterion: DynamicFilterCriterion) => {
+    setActiveFilters((prev) => [...prev, criterion]);
+  };
+
+  const handleRemoveFilter = (id: string) => {
+    setActiveFilters((prev) => prev.filter((f) => f.id !== id));
+  };
+
+  const handleClearFilters = () => {
+    setActiveFilters([]);
+  };
+
+  // Salvar a seleção atual como novo baralho personalizado
+  const handleSaveAsCustomDeck = () => {
+    if (filteredCards.length === 0) {
+      alert('Não há cartões que correspondam aos filtros selecionados.');
+      return;
+    }
+
+    const defaultName = `Filtro: ${activeFilters.map((f) => f.label.split(':')[0]).join(', ')} (${filteredCards.length} cards)`;
+    const deckName = prompt('Nome para o novo Baralho com estes filtros:', defaultName);
+    if (!deckName || !deckName.trim()) return;
+
+    const newDeck: CustomFlashcardDeck = {
+      id: `deck-pers-${Date.now()}`,
+      name: deckName.trim(),
+      description: `Gerado a partir dos filtros: ${activeFilters.map((f) => f.label).join(' | ')}`,
+      specialties: [],
+      cardIds: filteredCards.map((c) => c.id),
+      deckType: 'original',
+      createdAt: new Date().toISOString()
+    };
+
+    flashcardsService.savePersonalizedDeck(newDeck, user?.id);
+    alert(`Baralho "${newDeck.name}" criado com sucesso na aba Baralhos Personalizados!`);
   };
 
   // Calcula contagens Anki para um conjunto de cards
@@ -81,8 +206,11 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
       alert('O Baralho Padrão não pode ser excluído.');
       return;
     }
-    if (confirm(`Deseja excluir o baralho "${deckName}"? Os cartões serão movidos para o Baralho Padrão.`)) {
-      // Reatribui cards para o Baralho Padrão
+    if (
+      confirm(
+        `Deseja excluir o baralho "${deckName}"? Os cartões serão movidos para o Baralho Padrão.`
+      )
+    ) {
       const updatedCards = userCards.map((c) =>
         c.deckId === deckId ? { ...c, deckId: 'deck-padrao' } : c
       );
@@ -132,7 +260,7 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   if (viewMode === 'browser') {
     return (
       <OriginalCardsBrowser
-        cards={userCards}
+        cards={filteredCards}
         decks={decks}
         onBackToDecks={() => {
           refreshData();
@@ -160,7 +288,7 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
               Meus Baralhos &amp; Cartões Originais
             </h2>
             <p className="text-[11px] text-zinc-500">
-              Crie baralhos personalizados para suas anotações, estágios e erros de prova.
+              Crie baralhos personalizados, importe arquivos CSV ou estude com filtros dinâmicos.
             </p>
           </div>
         </div>
@@ -169,12 +297,22 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
         <div className="flex items-center gap-2 flex-wrap">
           <button
             type="button"
+            onClick={() => setIsCsvModalOpen(true)}
+            className="px-3 py-1.5 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer inline-flex items-center gap-1.5 shadow-2xs"
+            title="Importar flashcards em lote a partir de arquivo CSV / TSV / Anki"
+          >
+            <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-500" />
+            <span>Importar CSV</span>
+          </button>
+
+          <button
+            type="button"
             onClick={() => setViewMode('browser')}
             className="px-3 py-1.5 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer inline-flex items-center gap-1.5 shadow-2xs"
             title="Abrir gerenciador e painel de cartões feitos por você"
           >
             <Table className="w-3.5 h-3.5" />
-            <span>Painel de Cartões ({userCards.length})</span>
+            <span>Painel ({userCards.length})</span>
           </button>
 
           <button
@@ -198,6 +336,25 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
         </div>
       </div>
 
+      {/* Barra de Filtros Dinâmicos Manipuláveis pelo Estudante */}
+      <OriginalCardsFilterBar
+        activeFilters={activeFilters}
+        onAddFilter={handleAddFilter}
+        onRemoveFilter={handleRemoveFilter}
+        onClearFilters={handleClearFilters}
+        totalCards={userCards.length}
+        filteredCount={filteredCards.length}
+        onStudyFilteredCards={() => {
+          onStartStudy(
+            filteredCards,
+            `Cartões Originais Filtrados (${filteredCards.length} cards)`
+          );
+        }}
+        onSaveAsDeck={handleSaveAsCustomDeck}
+        availableDecks={decks}
+        availableTags={availableTags}
+      />
+
       {/* Tabela de Baralhos Estilo Anki */}
       <div className="bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 rounded-2xl shadow-xs overflow-hidden">
         {/* Cabeçalho Anki */}
@@ -212,7 +369,7 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
         {/* Linhas dos Baralhos */}
         <div className="divide-y divide-zinc-100 dark:divide-zinc-800/60">
           {decks.map((deck) => {
-            const deckCards = userCards.filter(
+            const deckCards = filteredCards.filter(
               (c) => (c.deckId || 'deck-padrao') === deck.id
             );
             const counts = calculateAnkiCounts(deckCards);
@@ -237,6 +394,11 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                       {isDefault && (
                         <span className="px-1.5 py-0.2 rounded text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-500">
                           Padrão
+                        </span>
+                      )}
+                      {activeFilters.length > 0 && (
+                        <span className="px-1.5 py-0.2 rounded text-[9px] font-mono bg-blue-100/70 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 font-bold">
+                          {deckCards.length} filtrados
                         </span>
                       )}
                     </div>
@@ -308,6 +470,16 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
         isOpen={isCreateDeckOpen}
         onClose={() => setIsCreateDeckOpen(false)}
         onDeckCreated={refreshData}
+      />
+
+      {/* Modal para importar flashcards de arquivo CSV */}
+      <CsvFlashcardImportModal
+        isOpen={isCsvModalOpen}
+        onClose={() => setIsCsvModalOpen(false)}
+        onImportSuccess={(count) => {
+          refreshData();
+          alert(`${count} flashcards importados com sucesso!`);
+        }}
       />
     </div>
   );

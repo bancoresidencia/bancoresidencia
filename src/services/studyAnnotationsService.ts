@@ -86,7 +86,8 @@ export const studyAnnotationsService = {
   ): StudyHighlight[] {
     const current = this.loadMaterialHighlights(materialId, userId);
     // Evita duplicatas exatas do mesmo texto com mesma cor
-    const filtered = current.filter((h) => h.id !== highlight.id && h.textQuote !== highlight.textQuote);
+    // Evita duplicatas exatas do mesmo trecho na mesma posicao
+    const filtered = current.filter((h) => h.id !== highlight.id && !(h.textQuote.toLowerCase() === highlight.textQuote.toLowerCase() && h.prefix === highlight.prefix && h.suffix === highlight.suffix));
     const updated = [highlight, ...filtered];
     this.saveMaterialHighlights(materialId, updated, userId);
     return updated;

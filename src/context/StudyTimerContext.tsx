@@ -425,6 +425,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       }
 
       // 3. Reseta contadores e cronômetro
+
       setSessionQuestionsCount(0);
       setSessionCorrectCount(0);
       setSessionIncorrectCount(0);
@@ -651,7 +652,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     []
   );
 
-  // Auto-cura de tarefas agendadas salvas com fuso UTC deslocado
+  // Limpeza de tarefas automáticas legadas de cronômetro
   useEffect(() => {
     try {
       const tasksKey = getUserScheduledTasksStorageKey(user?.id);
@@ -681,12 +682,14 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         window.dispatchEvent(new StorageEvent('storage', {
           key: tasksKey,
           newValue: JSON.stringify(fixedTasks)
+
         }));
       }
     } catch (err) {
-      console.warn('Erro na sincronização de datas de tarefas:', err);
+      console.warn('Erro na sincronização de tarefas:', err);
     }
   }, [savedSessions, user?.id]);
+
 
   // Sessões e tempo total do dia de hoje (respeitando o fuso horário local do estudante)
   const todayStr = useMemo(() => {

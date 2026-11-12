@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MessageSquare, Send, ThumbsUp, Trash2, User, Sparkles } from 'lucide-react';
 import { StudentComment } from '@/types';
 import { supabase } from '@/lib/supabase';
@@ -15,70 +15,108 @@ interface QuestionCommentsProps {
   };
 }
 
+// Circuit breaker em sessionStorage para evitar requisições repetitivas se a tabela não existir
+function isRemoteCommentsDisabled(): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    return sessionStorage.getItem('br_comments_remote_disabled') === 'true';
+  } catch {
+    return false;
+  }
+}
+
+function disableRemoteComments(): void {
+  if (typeof window === 'undefined') return;
+  try {
+    sessionStorage.setItem('br_comments_remote_disabled', 'true');
+  } catch {}
+}
+
 export const QuestionComments: React.FC<QuestionCommentsProps> = ({
   questionId,
   isAnswered,
   currentUser = { name: 'Aluno(a)' }
 }) => {
-  const [comments, setComments] = useState<StudentComment[]>([]);
+  const [comments, setComments] = useState<StudentComment[]>(() => {
+    if (typeof window === 'undefined') return [];
+    try {
+      const modernKey = `bancoresidencia_comments_${questionId}`;
+      const localData = localStorage.getItem(modernKey);
+      return localData ? JSON.parse(localData) : [];
+    } catch {
+      return [];
+    }
+  });
   const [newComment, setNewComment] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const prevQuestionIdRef = useRef(questionId);
 
-  // Carrega comentários do Supabase com fallback para localStorage
+  // 1. Sincroniza comentários locais quando o questionId mudar
   useEffect(() => {
+    if (prevQuestionIdRef.current === questionId) return;
+    prevQuestionIdRef.current = questionId;
+    if (typeof window === 'undefined') return;
+    try {
+      const modernKey = `bancoresidencia_comments_${questionId}`;
+      const localData = localStorage.getItem(modernKey);
+      setComments(localData ? JSON.parse(localData) : []);
+    } catch {
+      setComments([]);
+    }
+  }, [questionId]);
+
+  // 2. Carregamento preguiçoso (lazy) do Supabase: apenas quando a gaveta de comentários estiver aberta
+  useEffect(() => {
+    if (!isOpen || isRemoteCommentsDisabled()) return;
     let isMounted = true;
 
-    async function loadComments() {
+    async function loadRemoteComments() {
       try {
-        // Tenta buscar no Supabase
         const { data, error } = await supabase
           .from('question_comments')
           .select('*')
           .eq('question_id', questionId)
           .order('created_at', { ascending: false });
 
-        if (!error && data && data.length > 0) {
-          if (isMounted) {
-            setComments(
-              data.map((c) => ({
-                id: c.id,
-                questionId: c.question_id,
-                userId: c.user_id,
-                userName: c.user_name || 'Aluno(a)',
-                userAvatar: c.user_avatar,
-                content: c.content,
-                createdAt: c.created_at,
-                likes: c.likes || 0
-              }))
-            );
-            return;
+        if (error) {
+          if (
+            error.code === '42P01' ||
+            error.code === 'PGRST116' ||
+            error.code === 'PGRST204' ||
+            error.code === 'PGRST205' ||
+            error.message?.includes('does not exist')
+          ) {
+            disableRemoteComments();
           }
+          return;
+        }
+
+        if (data && data.length > 0 && isMounted) {
+          setComments(
+            data.map((c) => ({
+              id: c.id,
+              questionId: c.question_id,
+              userId: c.user_id,
+              userName: c.user_name || 'Aluno(a)',
+              userAvatar: c.user_avatar,
+              content: c.content,
+              createdAt: c.created_at,
+              likes: c.likes || 0
+            }))
+          );
         }
       } catch {
-        // Silencia erro se a tabela remota não existir ou estiver offline
-      }
-
-      // Fallback para localStorage
-      if (typeof window !== 'undefined') {
-        try {
-          const modernKey = `bancoresidencia_comments_${questionId}`;
-          const localData = localStorage.getItem(modernKey);
-          if (localData && isMounted) {
-            setComments(JSON.parse(localData));
-          }
-        } catch {
-          // ignore
-        }
+        disableRemoteComments();
       }
     }
 
-    loadComments();
+    loadRemoteComments();
 
     return () => {
       isMounted = false;
     };
-  }, [questionId]);
+  }, [questionId, isOpen]);
 
   // Salva no localStorage quando os comentários mudam
   const persistLocally = (updated: StudentComment[]) => {
@@ -114,23 +152,30 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
     persistLocally(updated);
     setNewComment('');
 
-    // Tenta persistir no Supabase em segundo plano
-    try {
-      await supabase.from('question_comments').insert([
-        {
-          id: commentItem.id,
-          question_id: commentItem.questionId,
-          user_id: commentItem.userId || null,
-          user_name: commentItem.userName,
-          user_avatar: commentItem.userAvatar || null,
-          content: commentItem.content,
-          created_at: commentItem.createdAt,
-          likes: 0
+    // Tenta persistir no Supabase em segundo plano se a tabela estiver disponível
+    if (!isRemoteCommentsDisabled()) {
+      try {
+        const { error } = await supabase.from('question_comments').insert([
+          {
+            id: commentItem.id,
+            question_id: commentItem.questionId,
+            user_id: commentItem.userId || null,
+            user_name: commentItem.userName,
+            user_avatar: commentItem.userAvatar || null,
+            content: commentItem.content,
+            created_at: commentItem.createdAt,
+            likes: 0
+          }
+        ]);
+        if (error) {
+          disableRemoteComments();
         }
-      ]);
-    } catch {
-      // Já está salvo no localStorage
-    } finally {
+      } catch {
+        disableRemoteComments();
+      } finally {
+        setIsSubmitting(false);
+      }
+    } else {
       setIsSubmitting(false);
     }
   };
@@ -151,17 +196,20 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
     setComments(updated);
     persistLocally(updated);
 
-    // Tenta atualizar no Supabase se houver tabela
-    try {
-      const target = updated.find((c) => c.id === commentId);
-      if (target) {
-        await supabase
-          .from('question_comments')
-          .update({ likes: target.likes })
-          .eq('id', commentId);
+    // Tenta atualizar no Supabase se houver tabela disponível
+    if (!isRemoteCommentsDisabled()) {
+      try {
+        const target = updated.find((c) => c.id === commentId);
+        if (target) {
+          const { error } = await supabase
+            .from('question_comments')
+            .update({ likes: target.likes })
+            .eq('id', commentId);
+          if (error) disableRemoteComments();
+        }
+      } catch {
+        disableRemoteComments();
       }
-    } catch {
-      // ignore
     }
   };
 
@@ -170,10 +218,13 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
     setComments(updated);
     persistLocally(updated);
 
-    try {
-      await supabase.from('question_comments').delete().eq('id', commentId);
-    } catch {
-      // ignore
+    if (!isRemoteCommentsDisabled()) {
+      try {
+        const { error } = await supabase.from('question_comments').delete().eq('id', commentId);
+        if (error) disableRemoteComments();
+      } catch {
+        disableRemoteComments();
+      }
     }
   };
 

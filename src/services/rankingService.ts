@@ -252,9 +252,11 @@ export async function computePlatformLeaderboard(
     else if (c.rankingStatus === 'provisional') provisionalCount++;
     else calibrandoCount++;
 
+    const isSelf = filters.currentUserId ? c.userId === filters.currentUserId : false;
+
     return {
       rank: index + 1,
-      userId: c.userId,
+      userId: isSelf ? c.userId : `anon_${c.userId.slice(0, 8)}`,
       name: c.name,
       college: c.college,
       specialtyTarget: c.specialtyTarget,
@@ -270,12 +272,12 @@ export async function computePlatformLeaderboard(
       formattedPercentile: perc.formattedPercentile,
       rankingStatus: c.rankingStatus,
       isOfficial: c.isOfficial,
-      isCurrentUser: filters.currentUserId ? c.userId === filters.currentUserId : false
+      isCurrentUser: isSelf
     };
   });
 
   const currentUser = filters.currentUserId
-    ? rankedStudents.find(s => s.userId === filters.currentUserId) || null
+    ? rankedStudents.find(s => s.isCurrentUser) || null
     : null;
 
   // 7. Aplicar filtros adicionais se solicitados

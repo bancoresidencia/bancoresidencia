@@ -48,6 +48,7 @@ import { AnkiDeckTree } from './flashcards/AnkiDeckTree';
 import { AnkiReviewHeatmap } from './flashcards/AnkiReviewHeatmap';
 import { OriginalCardsSection } from './flashcards/OriginalCardsSection';
 import { AddFlashcardDrawer } from './flashcards/AddFlashcardDrawer';
+import { CustomDecksSection } from './flashcards/CustomDecksSection';
 
 export interface SpecialtyConfig {
   id: string;
@@ -277,7 +278,10 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Estado do Drawer Central de Adicionar Flashcard
   const [isAddCardDrawerOpen, setIsAddCardDrawerOpen] = useState(false);
-  const [flashcardTab, setFlashcardTab] = useState<'br' | 'originais'>('br');
+  const [flashcardTab, setFlashcardTab] = useState<'br' | 'originais' | 'personalizados'>('br');
+  const [personalizedDecksCount, setPersonalizedDecksCount] = useState<number>(() => {
+    return flashcardsService.getPersonalizedDecks(user?.id).length;
+  });
   const [activeDeckIdForNewCard, setActiveDeckIdForNewCard] = useState<string>('deck-padrao');
   const [heatmapRefreshKey, setHeatmapRefreshKey] = useState(0);
   const [newCardSpecialty, setNewCardSpecialty] = useState('Clínica Médica');
@@ -913,7 +917,6 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
                   : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
               }`}
             >
-              <GraduationCap className="w-3.5 h-3.5" />
               <span>Cartões do BR</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
                 {allFlashcards.filter((c) => !c.id.startsWith('fc-user-')).length}
@@ -929,17 +932,31 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
                   : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
               }`}
             >
-              <FolderKanban className="w-3.5 h-3.5" />
               <span>Cartões Originais</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
                 {allFlashcards.filter((c) => c.id.startsWith('fc-user-')).length}
+              </span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setFlashcardTab('personalizados')}
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${
+                flashcardTab === 'personalizados'
+                  ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
+                  : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
+              }`}
+            >
+              <span>Baralhos Personalizados</span>
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
+                {personalizedDecksCount}
               </span>
             </button>
           </div>
         </div>
 
         {/* Conteúdo da Aba Selecionada (Filtros e Baralhos de Estudo) */}
-        {flashcardTab === 'br' ? (
+        {flashcardTab === 'br' && (
           <AnkiDeckTree
             allFlashcards={allFlashcards}
             hierarchy={clinicalHierarchy}
@@ -948,7 +965,9 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
               handleStartStudy(cards, title, overridePriorityOnly, allCardsMode);
             }}
           />
-        ) : (
+        )}
+
+        {flashcardTab === 'originais' && (
           <OriginalCardsSection
             onStartStudy={(cards, title, overridePriorityOnly, allCardsMode) => {
               handleStartStudy(cards, title, overridePriorityOnly, allCardsMode);
@@ -956,6 +975,24 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             onOpenAddCardForDeck={(deckId: string) => {
               setActiveDeckIdForNewCard(deckId);
               setIsAddCardDrawerOpen(true);
+            }}
+            onCardsChange={() => {
+              setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
+              setHeatmapRefreshKey((k) => k + 1);
+            }}
+          />
+        )}
+
+        {flashcardTab === 'personalizados' && (
+          <CustomDecksSection
+            allFlashcards={allFlashcards}
+            onStartStudy={(cards, title, overridePriorityOnly, allCardsMode) => {
+              handleStartStudy(cards, title, overridePriorityOnly, allCardsMode);
+            }}
+            onDeckCountChange={(count) => setPersonalizedDecksCount(count)}
+            onCardsChange={() => {
+              setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
+              setHeatmapRefreshKey((k) => k + 1);
             }}
           />
         )}

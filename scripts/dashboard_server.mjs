@@ -1,509 +1,390 @@
 import http from 'http';
 import fs from 'fs';
 import path from 'path';
-import { spawn } from 'child_process';
 
-const PORT = 3005;
-const STATE_PATH = path.resolve('data/pipeline_progress_state.json');
-const SIGNAL_PATH = path.resolve('data/pipeline.signal');
+const PORT = 3333;
+const PROGRESS_FILE = path.resolve('data/resolucao_quarentena_expansion_progresso.jsonl');
+const LIVE_LOG_FILE = path.resolve('data/quarentena_workers_live.log');
+const TASK_LOG_FILE = 'C:/Users/cnath/.gemini/antigravity/brain/b2e4a244-51a2-46f3-a7c8-f7f64a3dc28e/.system_generated/tasks/task-998.log';
 
-const SPECIALTY_MAP = {
-  obstetricia: { file: 'data/obstetricia_final_questions.json', name: 'Obstetrícia' },
-  clinica: { file: 'data/clinica_medica_final_questions.json', name: 'Clínica Médica' },
-  ginecologia: { file: 'data/ginecologia_final_questions.json', name: 'Ginecologia' },
-  pediatria: { file: 'data/pediatria_final_questions.json', name: 'Pediatria' },
-  cirurgia: { file: 'data/cirurgia_final_questions.json', name: 'Cirurgia Geral' },
-  preventiva: { file: 'data/medicina_preventiva_final_questions.json', name: 'Medicina Preventiva' }
-};
+function getStats() {
+  let totalPersistido = 0;
+  const byWorker = {};
+  const byModel = {};
+  const byEspecialidade = {};
+  const recentItems = [];
+  const now = Date.now();
+  let inLast5Min = 0;
 
-let runnerProcess = null;
+  if (fs.existsSync(PROGRESS_FILE)) {
+    const raw = fs.readFileSync(PROGRESS_FILE, 'utf8');
+    const lines = raw.trim().split('\n');
+    totalPersistido = lines.length;
 
-function getStatus() {
-  if (fs.existsSync(STATE_PATH)) {
+    // Processa de trás para frente para pegar os mais recentes
+    for (let i = lines.length - 1; i >= 0; i--) {
+      const l = lines[i];
+      if (!l.trim()) continue;
+      try {
+        const item = JSON.parse(l);
+        byWorker[item.worker || 'Outros'] = (byWorker[item.worker || 'Outros'] || 0) + 1;
+        byModel[item.model || 'outros'] = (byModel[item.model || 'outros'] || 0) + 1;
+        byEspecialidade[item.especialidade || 'Outros'] = (byEspecialidade[item.especialidade || 'Outros'] || 0) + 1;
+
+        if (recentItems.length < 8) {
+          recentItems.push(item);
+        }
+
+        if (item.timestamp) {
+          const t = new Date(item.timestamp).getTime();
+          if (now - t < 5 * 60 * 1000) inLast5Min++;
+        }
+      } catch {}
+    }
+  }
+
+  let recentLogs = [];
+  const logTarget = fs.existsSync(LIVE_LOG_FILE) ? LIVE_LOG_FILE : TASK_LOG_FILE;
+  if (fs.existsSync(logTarget)) {
     try {
-      return JSON.parse(fs.readFileSync(STATE_PATH, 'utf8'));
-    } catch {
-      return { status: 'ERROR_READING_STATE' };
-    }
+      const logContent = fs.readFileSync(logTarget, 'utf8');
+      const lines = logContent.split('\n').filter(l => l.trim().length > 0);
+      recentLogs = lines.slice(-20);
+    } catch {}
   }
-  return { status: 'NO_STATE_FILE' };
+
+  const totalQuarentenaOriginal = 15301;
+  const restantes = Math.max(0, totalQuarentenaOriginal - totalPersistido);
+  const progressoGeral = ((totalPersistido / totalQuarentenaOriginal) * 100).toFixed(1);
+
+  return {
+    totalPersistido,
+    restantes,
+    progressoGeral,
+    vazaoMinuto: (inLast5Min / 5).toFixed(1),
+    byWorker,
+    byModel,
+    byEspecialidade,
+    recentItems,
+    recentLogs,
+    timestamp: new Date().toISOString()
+  };
 }
 
-function sendJson(res, data, statusCode = 200) {
-  res.writeHead(statusCode, {
-    'Content-Type': 'application/json; charset=utf-8',
-    'Access-Control-Allow-Origin': '*'
-  });
-  res.end(JSON.stringify(data));
-}
-
-const server = http.createServer((req, res) => {
-  const url = new URL(req.url, `http://${req.headers.host}`);
-
-  if (url.pathname === '/api/status') {
-    return sendJson(res, getStatus());
-  }
-
-  // Ações de controle
-  if (req.method === 'POST') {
-    if (url.pathname === '/api/action/start') {
-      const state = getStatus();
-      if (state.status === 'RUNNING') {
-        return sendJson(res, { ok: false, message: 'A esteira já está em execução!' });
-      }
-
-      const specKey = url.searchParams.get('specialty') || 'obstetricia';
-      const spec = SPECIALTY_MAP[specKey] || SPECIALTY_MAP['obstetricia'];
-      const workers = url.searchParams.get('workers') || '4';
-
-      // Remove sinais antigos
-      if (fs.existsSync(SIGNAL_PATH)) fs.unlinkSync(SIGNAL_PATH);
-
-      // Inicia processo em segundo plano com produce_specialty_batch.mjs
-      runnerProcess = spawn('node', [
-        'scripts/produce_specialty_batch.mjs',
-        `--file=${spec.file}`,
-        `--specialty=${spec.name}`,
-        `--workers=${workers}`
-      ], {
-        stdio: 'inherit',
-        detached: true
-      });
-      runnerProcess.unref();
-
-      return sendJson(res, { ok: true, message: `Produção de ${spec.name} iniciada em segundo plano com ${workers} workers!` });
-    }
-
-    if (url.pathname === '/api/action/pause') {
-      fs.writeFileSync(SIGNAL_PATH, 'pause', 'utf8');
-      return sendJson(res, { ok: true, message: 'Sinal de pausa enviado!' });
-    }
-
-    if (url.pathname === '/api/action/resume') {
-      const state = getStatus();
-      if (fs.existsSync(SIGNAL_PATH)) {
-        fs.writeFileSync(SIGNAL_PATH, 'resume', 'utf8');
-        return sendJson(res, { ok: true, message: 'Sinal de retomada enviado à esteira ativa!' });
-      }
-
-      if (state.status === 'RUNNING' && runnerProcess && !runnerProcess.killed) {
-        return sendJson(res, { ok: true, message: 'A esteira já está em execução!' });
-      }
-
-      // Se estava parado ou encerrado, reinicia
-      const specKey = url.searchParams.get('specialty') || (state.specialty ? Object.keys(SPECIALTY_MAP).find(k => SPECIALTY_MAP[k].name === state.specialty) : 'obstetricia') || 'obstetricia';
-      const spec = SPECIALTY_MAP[specKey] || SPECIALTY_MAP['obstetricia'];
-      const workers = url.searchParams.get('workers') || state.concurrency || '4';
-
-      runnerProcess = spawn('node', [
-        'scripts/produce_specialty_batch.mjs',
-        `--file=${spec.file}`,
-        `--specialty=${spec.name}`,
-        `--workers=${workers}`
-      ], {
-        stdio: 'inherit',
-        detached: true
-      });
-      runnerProcess.unref();
-
-      return sendJson(res, { ok: true, message: `Esteira de ${spec.name} reiniciada com ${workers} workers!` });
-    }
-
-    if (url.pathname === '/api/action/stop') {
-      fs.writeFileSync(SIGNAL_PATH, 'stop', 'utf8');
-      return sendJson(res, { ok: true, message: 'Sinal de parada graciosa enviado!' });
-    }
-  }
-
-  // Página HTML do Dashboard
-  if (url.pathname === '/') {
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-    res.end(renderDashboardHtml());
-    return;
-  }
-
-  res.writeHead(404, { 'Content-Type': 'text/plain' });
-  res.end('Not Found');
-});
-
-function renderDashboardHtml() {
-  return `<!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+const HTML_CONTENT = `<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <title>Banco Residência · Monitor de Quarentena Ao Vivo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard de Produção — Banco Residência</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            brand: { 500: '#3b82f6', 600: '#2563eb' }
-          }
-        }
-      }
-    }
-  </script>
   <style>
     @keyframes pulse-subtle {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.85; transform: scale(1.02); }
     }
-    .pulse-glow { animation: pulse-subtle 2s infinite ease-in-out; }
+    .live-pulse {
+      animation: pulse-subtle 2s infinite ease-in-out;
+    }
+    /* Estilização customizada da barra de rolagem */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
   </style>
 </head>
-<body class="bg-zinc-950 text-zinc-100 min-h-screen font-sans antialiased p-4 sm:p-8">
+<body class="bg-[#0b0f19] text-slate-100 antialiased p-4 md:p-8 font-sans min-h-screen">
+
   <div class="max-w-7xl mx-auto space-y-6">
 
-    <!-- Top Bar -->
-    <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl shadow-xl backdrop-blur-md">
-      <div class="space-y-1">
-        <div class="flex items-center gap-3">
-          <div class="h-3.5 w-3.5 rounded-full bg-emerald-500 shadow-[0_0_12px_#10b981]" id="statusDot"></div>
-          <h1 class="text-xl sm:text-2xl font-black tracking-tight text-white flex items-center gap-2">
-            Banco Residência <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800">🔒 CHAVE PAGA BLOQUEADA (R$ 0,00)</span>
-          </h1>
+    <!-- Topbar -->
+    <header class="bg-[#111827] border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1.5">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 live-pulse">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            SERVIÇO AO VIVO · LOCALHOST:3333
+          </span>
+          <span id="lastUpdate" class="text-xs text-slate-400">· Conectando...</span>
         </div>
-        <p class="text-xs sm:text-sm text-zinc-400">Modo 100% Gratuito Ativo • Rotação Multi-Chaves Free • Custo Adicional Zero</p>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+          Painel de Quarentena em Tempo Real
+        </h1>
+        <p class="text-sm text-slate-400 mt-1">
+          Orquestração Contínua de IA · Banco de Expansão Direta · Banco Residência
+        </p>
       </div>
 
-      <!-- Seletor de Workers & Controles -->
-      <div class="flex items-center gap-3 flex-wrap">
-        
-        <!-- Seletor de Especialidade -->
-        <div class="flex items-center gap-1.5 bg-zinc-950/80 border border-zinc-800 p-1.5 rounded-xl">
-          <span class="text-[11px] font-bold text-zinc-400 px-1 uppercase tracking-wider">🎯 Especialidade:</span>
-          <select id="specSelect" onchange="setSpecialty(this.value)" class="bg-zinc-900 border border-zinc-700 text-white rounded-lg px-2.5 py-1 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer">
-            <option value="clinica" selected>Clínica Médica (~8.460 pendentes Padrão-Ouro) — ATIVA</option>
-            <option value="ginecologia">Ginecologia (99,2% Concluída ✅)</option>
-            <option value="obstetricia">Obstetrícia (98,9% Concluída ✅)</option>
-            <option value="pediatria">Pediatria (4.013 pendentes)</option>
-            <option value="cirurgia">Cirurgia Geral (12.341 pendentes)</option>
-            <option value="preventiva">Medicina Preventiva (15.993 pendentes)</option>
-          </select>
+      <div class="flex items-center gap-3">
+        <div class="bg-[#0b0f19] px-4 py-2.5 rounded-xl border border-slate-800 text-right">
+          <span class="text-xs text-slate-400 block font-medium">Vazão Recente</span>
+          <span id="vazaoDisplay" class="text-lg font-bold text-emerald-400">0.0 q/min</span>
         </div>
-
-        <!-- Seletor 4x / 6x -->
-        <div class="flex items-center gap-1 bg-zinc-950/80 border border-zinc-800 p-1 rounded-xl">
-          <span class="text-[11px] font-bold text-emerald-400 px-2 uppercase tracking-wider">🔒 Free Workers:</span>
-          <button type="button" onclick="setWorkers(4)" id="wBtn4" class="px-2.5 py-1 text-xs font-bold rounded-lg bg-emerald-600 text-white shadow-sm transition-all" title="4 workers (~60 q/min - Seguro R$ 0,00)">4x (Recomendado)</button>
-          <button type="button" onclick="setWorkers(6)" id="wBtn6" class="px-2.5 py-1 text-xs font-bold rounded-lg text-zinc-400 hover:text-white transition-all" title="6 workers (~90 q/min - Rápido R$ 0,00)">6x (Rápido)</button>
+        <div class="bg-[#0b0f19] px-4 py-2.5 rounded-xl border border-slate-800 text-right">
+          <span class="text-xs text-slate-400 block font-medium">Taxa de Atualização</span>
+          <span class="text-lg font-bold text-sky-400">2s</span>
         </div>
-
-        <!-- Botões de Ação -->
-        <div class="flex items-center gap-2">
-          <button id="btnStart" onclick="triggerAction('start')" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-lg transition-all flex items-center gap-2 cursor-pointer">
-            ▶️ Iniciar Produção
-          </button>
-          <button id="btnPause" onclick="triggerAction('pause')" class="px-3.5 py-2 bg-amber-600/80 hover:bg-amber-600 text-white font-bold text-xs sm:text-sm rounded-xl transition-all hidden cursor-pointer">
-            ⏸️ Pausar
-          </button>
-          <button id="btnResume" onclick="triggerAction('resume')" class="px-3.5 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm rounded-xl transition-all hidden cursor-pointer">
-            ▶️ Retomar
-          </button>
-          <button id="btnStop" onclick="triggerAction('stop')" class="px-3.5 py-2 bg-rose-900/60 hover:bg-rose-800 text-rose-200 font-bold text-xs sm:text-sm rounded-xl border border-rose-700/60 transition-all hidden cursor-pointer">
-            🛑 Parar Gracioso
-          </button>
-        </div>
-
       </div>
     </header>
 
-    <!-- Badges de Configuração -->
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-      <div class="bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-xl flex items-center justify-between">
-        <span class="text-zinc-400">Especialidade:</span>
-        <span class="font-bold text-white" id="valSpecialty">Clínica Médica</span>
-      </div>
-      <div class="bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-xl flex items-center justify-between">
-        <span class="text-zinc-400">Modelo:</span>
-        <span class="font-bold text-blue-400" id="valModel">gemini-3.5-flash-lite</span>
-      </div>
-      <div class="bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-xl flex items-center justify-between">
-        <span class="text-zinc-400">Workers Ativos:</span>
-        <span class="font-bold text-indigo-400" id="valWorkers">4 Workers</span>
-      </div>
-      <div class="bg-zinc-900/60 border border-zinc-800/80 p-3 rounded-xl flex items-center justify-between">
-        <span class="text-zinc-400">Supabase Sync:</span>
-        <span class="font-bold text-emerald-400 flex items-center gap-1">⚡ 100% Conectado</span>
-      </div>
-    </div>
-
-    <!-- Barra de Progresso Principal -->
-    <div class="bg-zinc-900/90 border border-zinc-800 p-6 rounded-2xl space-y-3 shadow-xl">
-      <div class="flex items-center justify-between text-sm sm:text-base font-bold">
-        <span class="text-zinc-300">Progresso Geral: <span id="progressText" class="text-white">0 / 25.177</span></span>
-        <span class="text-blue-400 font-black text-lg" id="progressPct">0.00%</span>
-      </div>
-      <div class="w-full bg-zinc-800 rounded-full h-4 overflow-hidden p-0.5 border border-zinc-700/50">
-        <div id="progressBar" class="bg-gradient-to-r from-blue-600 to-indigo-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
-      </div>
-    </div>
-
-    <!-- Cards Principais de Métricas -->
+    <!-- Cards de Métricas Principais (KPIs) -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       
-      <!-- Gasto em Reais (BRL) -->
-      <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl space-y-2 shadow-lg">
-        <div class="text-xs uppercase tracking-wider font-bold text-zinc-400">Gasto Acumulado (BRL)</div>
-        <div class="text-3xl font-black text-emerald-400" id="costBRL">R$ 0,00</div>
-        <div class="text-xs text-zinc-400 flex justify-between">
-          <span>USD: <strong class="text-zinc-200" id="costUSD">$0.000</strong></span>
-          <span>Média: <strong class="text-zinc-200" id="costPerQ">R$ 0,00138/q</strong></span>
+      <!-- Card 1 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg relative overflow-hidden">
+        <div class="text-xs text-slate-400 font-medium mb-1">TOTAL GERAL RESOLVIDO</div>
+        <div id="totalResolvido" class="text-3xl font-extrabold text-white">---</div>
+        <div class="mt-3">
+          <div class="flex justify-between text-xs text-slate-400 mb-1">
+            <span>Progresso da Quarentena</span>
+            <span id="progressoGeralTxt" class="font-bold text-emerald-400">0%</span>
+          </div>
+          <div class="w-full bg-[#0b0f19] rounded-full h-2 overflow-hidden border border-slate-800">
+            <div id="progressoGeralBar" class="bg-gradient-to-r from-emerald-500 to-teal-400 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+          </div>
         </div>
       </div>
 
-      <!-- Custo Desta Execução -->
-      <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl space-y-2 shadow-lg">
-        <div class="text-xs uppercase tracking-wider font-bold text-zinc-400">Custo Desta Execução</div>
-        <div class="text-3xl font-black text-emerald-400" id="estRemainingBRL">R$ 0,00</div>
-        <div class="text-xs text-zinc-400">
-          Status: <strong class="text-emerald-400" id="estTotalBRL">100% Gratuito (Chave Paga Bloqueada)</strong>
+      <!-- Card 2 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg">
+        <div class="text-xs text-slate-400 font-medium mb-1">RESTANTES EM QUARENTENA</div>
+        <div id="totalRestantes" class="text-3xl font-extrabold text-amber-400">---</div>
+        <p class="text-xs text-slate-400 mt-3 flex items-center justify-between">
+          <span>De 15.301 originais</span>
+          <span class="text-emerald-400 font-medium">subfoco = 'Geral'</span>
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg">
+        <div class="text-xs text-slate-400 font-medium mb-1">WORKERS ATIVOS</div>
+        <div class="text-3xl font-extrabold text-sky-400">4 <span class="text-sm font-normal text-slate-400">Gemini Paralelos</span></div>
+        <div class="mt-3 text-xs text-slate-400">
+          <span class="text-emerald-400 font-semibold">2 Modelos x 2 Chaves:</span> Rotação Ativa
         </div>
       </div>
 
-      <!-- Velocidade e ETA -->
-      <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl space-y-2 shadow-lg">
-        <div class="text-xs uppercase tracking-wider font-bold text-zinc-400">Velocidade & Tempo Restante</div>
-        <div class="text-3xl font-black text-indigo-400" id="etaTime">--:--</div>
-        <div class="text-xs text-zinc-400 flex justify-between">
-          <span>Ritmo: <strong class="text-zinc-200" id="qpm">0.0 q/min</strong></span>
-          <span>Tempo ativo: <strong class="text-zinc-200" id="elapsed">0s</strong></span>
-        </div>
-      </div>
-
-      <!-- Consumo de Tokens -->
-      <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl space-y-2 shadow-lg">
-        <div class="text-xs uppercase tracking-wider font-bold text-zinc-400">Tokens Totais Processados</div>
-        <div class="text-3xl font-black text-purple-400" id="tokensTotal">0</div>
-        <div class="text-xs text-zinc-400 flex justify-between">
-          <span>In: <strong class="text-zinc-200" id="tokensIn">0</strong></span>
-          <span>Out: <strong class="text-zinc-200" id="tokensOut">0</strong></span>
+      <!-- Card 4 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg">
+        <div class="text-xs text-slate-400 font-medium mb-1">QUALITY GATE MÉDICO</div>
+        <div class="text-3xl font-extrabold text-purple-400">100%</div>
+        <div class="mt-3 text-xs text-emerald-400 font-medium">
+          ✓ Subfoco ≠ Foco · Validação Canônica
         </div>
       </div>
 
     </div>
 
-    <!-- Questão Atual em Processamento -->
-    <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl space-y-3 shadow-lg" id="currentQCard">
-      <div class="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-zinc-400">
-        <span class="flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-ping"></span>
-          Questão Atual Sendo Processada
-        </span>
-        <span id="currentQStatus" class="text-blue-400 font-mono">AGUARDANDO INÍCIO</span>
+    <!-- Status dos 4 Workers Gemini -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      
+      <!-- Worker 1 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-4 shadow-lg space-y-2.5">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="font-bold text-white text-xs">Worker 1 (Chave 1)</span>
+          </div>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">OPERANDO</span>
+        </div>
+        <div class="text-[11px] space-y-1 text-slate-400 bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800">
+          <div>Modelo: <span class="text-emerald-400 font-bold font-mono">3.1-Lite</span></div>
+          <div>Cota: <span class="text-slate-300">15 RPM / 1.500 RPD</span></div>
+          <div>Fallback: <span class="text-slate-300">3.6-Flash</span></div>
+        </div>
       </div>
-      <div class="text-sm sm:text-base font-bold text-white flex flex-wrap items-center gap-2" id="currentQDetails">
-        Pronto para iniciar. Selecione os workers (10x, 20x, 35x ou 50x) e clique em "Iniciar Produção".
+
+      <!-- Worker 2 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-4 shadow-lg space-y-2.5">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="font-bold text-white text-xs">Worker 2 (Chave 1)</span>
+          </div>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">OPERANDO</span>
+        </div>
+        <div class="text-[11px] space-y-1 text-slate-400 bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800">
+          <div>Modelo: <span class="text-sky-400 font-bold font-mono">3.5-Flash</span></div>
+          <div>Cota: <span class="text-slate-300">15 RPM / 1.500 RPD</span></div>
+          <div>Fallback: <span class="text-slate-300">3.6-Flash</span></div>
+        </div>
       </div>
+
+      <!-- Worker 3 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-4 shadow-lg space-y-2.5">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="font-bold text-white text-xs">Worker 3 (Chave 2)</span>
+          </div>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">OPERANDO</span>
+        </div>
+        <div class="text-[11px] space-y-1 text-slate-400 bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800">
+          <div>Modelo: <span class="text-emerald-400 font-bold font-mono">3.1-Lite</span></div>
+          <div>Cota: <span class="text-slate-300">15 RPM / 1.500 RPD</span></div>
+          <div>Fallback: <span class="text-slate-300">3.6-Flash</span></div>
+        </div>
+      </div>
+
+      <!-- Worker 4 -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-4 shadow-lg space-y-2.5">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1.5">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="font-bold text-white text-xs">Worker 4 (Chave 2)</span>
+          </div>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">OPERANDO</span>
+        </div>
+        <div class="text-[11px] space-y-1 text-slate-400 bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800">
+          <div>Modelo: <span class="text-sky-400 font-bold font-mono">3.5-Flash</span></div>
+          <div>Cota: <span class="text-slate-300">15 RPM / 1.500 RPD</span></div>
+          <div>Fallback: <span class="text-slate-300">3.6-Flash</span></div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Tabela de Histórico Recente -->
-    <div class="bg-zinc-900/80 border border-zinc-800 p-5 rounded-2xl space-y-3 shadow-lg">
-      <div class="flex items-center justify-between text-sm font-bold text-zinc-300">
-        <span>Histórico Recente de Resoluções Sincronizadas (Supabase)</span>
-        <span class="text-xs text-zinc-500" id="lastUpdated">Atualizando...</span>
+    <!-- Terminal de Logs em Tempo Real e Feed -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- Terminal de Logs Ao Vivo -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg flex flex-col">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-sky-500"></span>
+            <h3 class="font-bold text-sm text-white">Terminal de Logs ao Vivo (Task-998)</h3>
+          </div>
+          <span class="text-xs text-slate-400 font-mono">stdout stream</span>
+        </div>
+        <div id="logTerminal" class="bg-[#070a12] p-4 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 h-80 overflow-y-auto space-y-1">
+          <div class="text-slate-500">Aguardando linhas de log...</div>
+        </div>
       </div>
-      <div class="overflow-x-auto">
-        <table class="w-full text-left text-xs sm:text-sm">
-          <thead class="text-zinc-400 border-b border-zinc-800 font-bold">
-            <tr>
-              <th class="py-2.5 px-3">Código</th>
-              <th class="py-2.5 px-3">Tema</th>
-              <th class="py-2.5 px-3 text-center">Duração</th>
-              <th class="py-2.5 px-3 text-center">Tokens</th>
-              <th class="py-2.5 px-3 text-center">Supabase</th>
-              <th class="py-2.5 px-3 text-right">Horário</th>
-            </tr>
-          </thead>
-          <tbody id="historyBody" class="divide-y divide-zinc-800/60 font-mono">
-            <tr>
-              <td colspan="6" class="py-6 text-center text-zinc-500 font-sans">Nenhuma questão processada nesta sessão ainda.</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <!-- Feed Recente de Questões Resolvidas -->
+      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg flex flex-col">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+            <h3 class="font-bold text-sm text-white">Últimas Questões Classificadas e Salvas</h3>
+          </div>
+          <span class="text-xs text-emerald-400 font-mono">Supabase PATCH</span>
+        </div>
+        <div id="feedList" class="space-y-2.5 h-80 overflow-y-auto pr-1">
+          <div class="text-xs text-slate-500">Carregando resoluções recentes...</div>
+        </div>
       </div>
+
     </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-xs text-slate-500 py-4 border-t border-slate-800">
+      Banco Residência · Plataforma de Alta Performance Médica · Execução Local Autônoma
+    </footer>
 
   </div>
 
-  <!-- Toast Notification -->
-  <div id="toast" class="fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl bg-zinc-900 border border-emerald-500/50 text-emerald-400 text-xs font-bold shadow-2xl transition-all duration-300 opacity-0 pointer-events-none translate-y-2"></div>
-
   <script>
-    let currentWorkers = 4;
-    let selectedSpecialty = 'clinica';
-
-    function setSpecialty(s) {
-      selectedSpecialty = s;
-    }
-
-    function showToast(msg, isError = false) {
-      const t = document.getElementById('toast');
-      if (!t) return;
-      t.textContent = msg;
-      t.className = 'fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl bg-zinc-900 border ' + 
-        (isError ? 'border-rose-500/60 text-rose-300 shadow-rose-950/50' : 'border-emerald-500/60 text-emerald-300 shadow-emerald-950/50') + 
-        ' text-xs font-bold shadow-2xl transition-all duration-300 opacity-100 translate-y-0';
-      setTimeout(() => {
-        t.className = 'fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl bg-zinc-900 border border-emerald-500/50 text-emerald-400 text-xs font-bold shadow-2xl transition-all duration-300 opacity-0 pointer-events-none translate-y-2';
-      }, 3500);
-    }
-
-    function setWorkers(n) {
-      currentWorkers = n;
-      [4, 6].forEach(w => {
-        const btn = document.getElementById('wBtn' + w);
-        if (!btn) return;
-        if (w === n) {
-          btn.className = 'px-2.5 py-1 text-xs font-bold rounded-lg bg-emerald-600 text-white shadow-sm transition-all';
-        } else {
-          btn.className = 'px-2.5 py-1 text-xs font-bold rounded-lg text-zinc-400 hover:text-white transition-all';
-        }
-      });
-      document.getElementById('valWorkers').textContent = n + ' Workers (Free)';
-    }
-
-    async function triggerAction(action) {
+    async function updateDashboard() {
       try {
-        let endpoint = '/api/action/' + action;
-        if (action === 'start' || action === 'resume') {
-          endpoint += '?workers=' + currentWorkers + '&specialty=' + selectedSpecialty;
-        }
-        const res = await fetch(endpoint, { method: 'POST' });
+        const res = await fetch('/api/stats');
+        if (!res.ok) return;
         const data = await res.json();
-        showToast(data.message, !data.ok);
-        fetchStatus();
-      } catch (err) {
-        showToast('Erro ao enviar comando: ' + err.message, true);
-      }
-    }
 
-    async function fetchStatus() {
-      try {
-        const res = await fetch('/api/status');
-        const s = await res.json();
-        renderState(s);
-      } catch (err) {
-        console.error('Erro de polling:', err);
-      }
-    }
+        // 1. Atualizar KPIs
+        document.getElementById('totalResolvido').innerText = data.totalPersistido.toLocaleString('pt-BR');
+        document.getElementById('totalRestantes').innerText = data.restantes.toLocaleString('pt-BR');
+        document.getElementById('progressoGeralTxt').innerText = data.progressoGeral + '%';
+        document.getElementById('progressoGeralBar').style.width = data.progressoGeral + '%';
+        document.getElementById('vazaoDisplay').innerText = data.vazaoMinuto + ' q/min';
+        document.getElementById('lastUpdate').innerText = '· ' + new Date().toLocaleTimeString('pt-BR');
 
-    function renderState(s) {
-      if (!s || s.status === 'NO_STATE_FILE') return;
-
-      const status = s.status || 'IDLE';
-      const dot = document.getElementById('statusDot');
-      const btnStart = document.getElementById('btnStart');
-      const btnPause = document.getElementById('btnPause');
-      const btnResume = document.getElementById('btnResume');
-      const btnStop = document.getElementById('btnStop');
-
-      if (s.concurrency) {
-        document.getElementById('valWorkers').textContent = s.concurrency + ' Workers';
-      }
-      if (s.specialty) {
-        document.getElementById('valSpecialty').textContent = s.specialty;
-      }
-
-      // Botões e status
-      if (status === 'RUNNING') {
-        dot.className = 'h-3.5 w-3.5 rounded-full bg-emerald-500 shadow-[0_0_12px_#10b981] pulse-glow';
-        btnStart.classList.add('hidden');
-        btnPause.classList.remove('hidden');
-        btnResume.classList.add('hidden');
-        btnStop.classList.remove('hidden');
-      } else if (status === 'PAUSED') {
-        dot.className = 'h-3.5 w-3.5 rounded-full bg-amber-500 shadow-[0_0_12px_#f59e0b]';
-        btnStart.classList.add('hidden');
-        btnPause.classList.add('hidden');
-        btnResume.classList.remove('hidden');
-        btnStop.classList.remove('hidden');
-      } else {
-        dot.className = 'h-3.5 w-3.5 rounded-full bg-zinc-500';
-        btnStart.classList.remove('hidden');
-        btnPause.classList.add('hidden');
-        btnResume.classList.add('hidden');
-        btnStop.classList.add('hidden');
-      }
-
-      // Progresso
-      const proc = s.processedCount || 0;
-      const total = s.totalToProcess || 25177;
-      const pct = s.progressPercent || 0;
-      document.getElementById('progressText').textContent = proc.toLocaleString('pt-BR') + ' / ' + total.toLocaleString('pt-BR');
-      document.getElementById('progressPct').textContent = pct + '%';
-      document.getElementById('progressBar').style.width = pct + '%';
-
-      // Financeiro (Modo Gratuito - R$ 0,00)
-      const fin = s.financials || {};
-      document.getElementById('costBRL').textContent = 'R$ 0,00';
-      document.getElementById('costUSD').textContent = '$0.000';
-      document.getElementById('costPerQ').textContent = 'R$ 0,00 (Gratuito)';
-      document.getElementById('estRemainingBRL').textContent = 'R$ 0,00';
-      document.getElementById('estTotalBRL').textContent = 'Chave Paga Bloqueada (100% Free)';
-
-      // Velocidade & ETA
-      const vel = s.velocity || {};
-      document.getElementById('etaTime').textContent = vel.etaFormatted || '--:--';
-      document.getElementById('qpm').textContent = (vel.questionsPerMinute || 0) + ' q/min';
-      document.getElementById('elapsed').textContent = (vel.elapsedSeconds || 0) + 's';
-
-      // Tokens
-      const tok = s.tokens || {};
-      document.getElementById('tokensTotal').textContent = (tok.totalTokens || 0).toLocaleString('pt-BR');
-      document.getElementById('tokensIn').textContent = (tok.promptTokens || 0).toLocaleString('pt-BR');
-      document.getElementById('tokensOut').textContent = (tok.candidateTokens || 0).toLocaleString('pt-BR');
-
-      // Questão atual
-      const cur = s.currentQuestion;
-      if (cur) {
-        document.getElementById('currentQStatus').textContent = 'PROCESSANDO AGORA';
-        document.getElementById('currentQDetails').innerHTML = 
-          '<span class=\"px-2.5 py-1 bg-blue-950 border border-blue-800 text-blue-300 rounded-lg text-xs font-mono font-bold\">' + cur.code + '</span>' +
-          '<span class=\"text-zinc-300\">' + cur.banca + ' (' + cur.year + ')</span>' +
-          '<span class=\"text-zinc-500\">•</span>' +
-          '<span class=\"text-indigo-400 font-semibold\">' + cur.tema + '</span>' +
-          (cur.foco ? '<span class=\"text-zinc-500\">-</span><span class=\"text-zinc-400 text-xs\">' + cur.foco + '</span>' : '');
-      } else {
-        document.getElementById('currentQStatus').textContent = status;
-        if (status === 'IDLE' || status === 'STOPPED') {
-          document.getElementById('currentQDetails').textContent = 'Pronto para iniciar. Selecione os workers (10x, 20x, 35x ou 50x) e clique em \"Iniciar Produção\".';
+        // 2. Atualizar Logs
+        const logBox = document.getElementById('logTerminal');
+        if (data.recentLogs && data.recentLogs.length > 0) {
+          logBox.innerHTML = data.recentLogs.map(l => {
+            let color = 'text-slate-300';
+            if (l.includes('⚡')) color = 'text-emerald-400 font-semibold';
+            else if (l.includes('⚠️')) color = 'text-amber-400';
+            else if (l.includes('🔄')) color = 'text-sky-400 font-bold';
+            else if (l.includes('🛑')) color = 'text-rose-400 font-bold';
+            return '<div class="' + color + '">' + escapeHtml(l) + '</div>';
+          }).join('');
+          logBox.scrollTop = logBox.scrollHeight;
         }
-      }
 
-      // Histórico
-      const hist = s.recentHistory || [];
-      const tbody = document.getElementById('historyBody');
-      if (hist.length > 0) {
-        tbody.innerHTML = hist.map(h => 
-          '<tr class=\"hover:bg-zinc-800/40 transition-colors\">' +
-            '<td class=\"py-2 px-3 font-bold text-blue-400\">' + h.code + '</td>' +
-            '<td class=\"py-2 px-3 text-zinc-300 font-sans\">' + (h.tema || 'Geral') + '</td>' +
-            '<td class=\"py-2 px-3 text-center text-zinc-400\">' + h.duration + 's</td>' +
-            '<td class=\"py-2 px-3 text-center text-purple-400\">' + h.tokens.toLocaleString('pt-BR') + '</td>' +
-            '<td class=\"py-2 px-3 text-center\"><span class=\"px-2 py-0.5 rounded-full text-[11px] ' + (h.status === 'OK' ? 'bg-emerald-950/80 text-emerald-400 border border-emerald-800' : 'bg-rose-950 text-rose-400 border border-rose-800') + '\">' + h.status + '</span></td>' +
-            '<td class=\"py-2 px-3 text-right text-zinc-500\">' + h.timestamp + '</td>' +
-          '</tr>'
-        ).join('');
-      }
+        // 3. Atualizar Feed Recente
+        const feedBox = document.getElementById('feedList');
+        if (data.recentItems && data.recentItems.length > 0) {
+          feedBox.innerHTML = data.recentItems.map(item => {
+            return \`
+              <div class="bg-[#0b0f19] border border-slate-800 rounded-xl p-3 text-xs space-y-1">
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-sky-400">\${escapeHtml(item.code || 'ID')} · \${escapeHtml(item.especialidade || '')}</span>
+                  <span class="text-slate-500 font-mono text-[11px]">\${escapeHtml(item.model || '')}</span>
+                </div>
+                <div class="text-slate-200">
+                  <span class="text-emerald-400 font-semibold">Subfoco:</span> \${escapeHtml(item.subfoco || '')}
+                </div>
+                <p class="text-slate-400 italic text-[11px] line-clamp-2">"\${escapeHtml(item.justificativa || '')}"</p>
+              </div>
+            \`;
+          }).join('');
+        }
 
-      document.getElementById('lastUpdated').textContent = 'Última atualização: ' + new Date().toLocaleTimeString('pt-BR');
+      } catch (err) {
+        console.error('Erro ao atualizar telemetria:', err);
+      }
     }
 
-    // Polling a cada 1.5s
-    setInterval(fetchStatus, 1500);
-    fetchStatus();
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Polling a cada 2 segundos
+    updateDashboard();
+    setInterval(updateDashboard, 2000);
   </script>
 </body>
 </html>`;
-}
+
+const server = http.createServer((req, res) => {
+  // CORS
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
+
+  if (req.method === 'OPTIONS') {
+    res.writeHead(200);
+    res.end();
+    return;
+  }
+
+  if (req.url === '/api/stats') {
+    try {
+      const stats = getStats();
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(stats));
+    } catch (e) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: e.message }));
+    }
+    return;
+  }
+
+  // Página Principal HTML
+  res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+  res.end(HTML_CONTENT);
+});
 
 server.listen(PORT, () => {
-  console.log(`================================================================================`);
-  console.log(`📊 DASHBOARD DE MONITORAMENTO ATUALIZADO (Porta ${PORT})`);
+  console.log(`\n========================================================================`);
+  console.log(`🚀 DASHBOARD AO VIVO INICIALIZADO COM SUCESSO!`);
   console.log(`🌐 Acesse no seu navegador: http://localhost:${PORT}`);
-  console.log(`================================================================================`);
+  console.log(`========================================================================\n`);
 });

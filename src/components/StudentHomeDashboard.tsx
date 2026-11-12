@@ -51,7 +51,6 @@ import {
   Plus,
   LayoutGrid,
   GraduationCap,
-  PlayCircle
 } from 'lucide-react';
 
 // Ícone Oficial do Google
@@ -101,6 +100,8 @@ import { searchDirectExams, getFeaturedInstitutions } from '@/services/officialE
 import { OfficialExamModalityKey, OfficialInstitution, OfficialExamItem } from '@/types/officialExams';
 import { useDashboardLayout } from '@/hooks/useDashboardLayout';
 import { DEFAULT_HOME_CARDS } from './dashboard/dashboardDefaults';
+import { CLINICAL_TIPS_DATABASE, ClinicalTipItem } from '@/data/clinicalTipsData';
+
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
 import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
 import { FigmaSmartGuides } from './dashboard/FigmaSmartGuides';
@@ -243,7 +244,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     toggleVisibility,
     restoreDefaults,
     autoConformLayout,
-  } = useDashboardLayout('bancoresidencia_layout_home_v5', DEFAULT_HOME_CARDS);
+  } = useDashboardLayout('bancoresidencia_layout_home_v9', DEFAULT_HOME_CARDS);
 
   // Fonte única da verdade para personalização (sincronizada globalmente com o ThemeContext)
   const isCustomizing = Boolean(isDashboardCustomizing);
@@ -283,29 +284,19 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   }, [accuracyPeriod, stats]);
 
   // Animação suave e flat do aproveitamento ao carregar ou alternar período
-  const [animatedAccuracy, setAnimatedAccuracy] = useState<number>(() => {
-    return periodStats.answered > 0 ? periodStats.rate : 0;
-  });
-  const prevRateRef = useRef<number>(periodStats.rate);
-  const isInitialMount = useRef(true);
+  // Animação suave e contínua do aproveitamento (tanto ao entrar na plataforma quanto ao alternar filtros)
+  const [animatedAccuracy, setAnimatedAccuracy] = useState<number>(0);
+  const prevRateRef = useRef<number>(0);
 
   useEffect(() => {
     const target = periodStats.answered > 0 ? periodStats.rate : 0;
-
-    // Se é a primeira montagem, inicializa diretamente com o target (sem animar de 0 até o valor)
-    if (isInitialMount.current) {
-      isInitialMount.current = false;
-      prevRateRef.current = target;
-      setAnimatedAccuracy(target);
-      return;
-    }
-
-    if (prevRateRef.current === target) return;
+    const startValue = prevRateRef.current;
+    if (startValue === target && animatedAccuracy === target) return;
     prevRateRef.current = target;
 
     let startTime: number | null = null;
     let lastUpdate = 0;
-    const duration = 400; // ms
+    const duration = 650; // ms de transição suave
     let animId: number;
 
     const animate = (currentTime: number) => {
@@ -313,11 +304,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
 
-      // Throttling de 50ms para evitar dezenas de re-renderizações por segundo na árvore do dashboard
-      if (currentTime - lastUpdate >= 50 || progress >= 1) {
+      if (currentTime - lastUpdate >= 25 || progress >= 1) {
         lastUpdate = currentTime;
+        // Cubic ease-out suave para transição orgânica
         const easeOut = 1 - Math.pow(1 - progress, 3);
-        setAnimatedAccuracy(progress >= 1 ? target : Number((target * easeOut).toFixed(1)));
+        const currentVal = startValue + (target - startValue) * easeOut;
+        setAnimatedAccuracy(progress >= 1 ? target : Number(currentVal.toFixed(1)));
       }
 
       if (progress < 1) {
@@ -493,6 +485,81 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   // Seletor de abas da Retomada de Estudos (Cadernos, Provas, Simulados)
   const [studyResumeTab, setStudyResumeTab] = useState<'cadernos' | 'provas' | 'simulados'>('provas');
+
+  // Dica do Dia: Seleciona 1 dica diária determinística baseada no que o aluno já estudou (resumos, flashcards ou questões)
+  const activeClinicalTip = React.useMemo<ClinicalTipItem>(() => {
+    const seenTopics = new Set<string>();
+
+    // 1. Especialidades e temas vistos em questões respondidas
+    if (userAnswers) {
+      Object.values(userAnswers).forEach((ans: any) => {
+        if (ans.specialty) seenTopics.add(String(ans.specialty).toLowerCase());
+        if (ans.tema) seenTopics.add(String(ans.tema).toLowerCase());
+      });
+    }
+
+    // 2. Cadernos e listas de estudo
+    if (allLists) {
+      allLists.forEach((l) => {
+        if (l.title) seenTopics.add(l.title.toLowerCase());
+      });
+    }
+
+    // 3. Flashcards do aluno
+    try {
+      if (typeof window !== 'undefined') {
+        const rawFc = localStorage.getItem('bancoresidencia_flashcards_decks') || localStorage.getItem('bancoresidencia_flashcards');
+        if (rawFc) {
+          const parsed = JSON.parse(rawFc);
+          if (Array.isArray(parsed)) {
+            parsed.forEach((fc: any) => {
+              if (fc.specialty) seenTopics.add(String(fc.specialty).toLowerCase());
+              if (fc.tema) seenTopics.add(String(fc.tema).toLowerCase());
+              if (fc.title) seenTopics.add(String(fc.title).toLowerCase());
+            });
+          }
+        }
+      }
+    } catch (_) { }
+
+    // 4. Resumos teóricos e materiais acessados
+    try {
+      if (typeof window !== 'undefined') {
+        const rawMaterials = localStorage.getItem('bancoresidencia_recent_materials') || localStorage.getItem('bancoresidencia_study_history');
+        if (rawMaterials) {
+          const parsedMat = JSON.parse(rawMaterials);
+          if (Array.isArray(parsedMat)) {
+            parsedMat.forEach((m: any) => {
+              if (m.specialty) seenTopics.add(String(m.specialty).toLowerCase());
+              if (m.title) seenTopics.add(String(m.title).toLowerCase());
+            });
+          }
+        }
+      }
+    } catch (_) { }
+
+    // Filtra prioritariamente dicas dos temas estudados
+    let pool = CLINICAL_TIPS_DATABASE;
+    if (seenTopics.size > 0) {
+      const filtered = CLINICAL_TIPS_DATABASE.filter((tip) => {
+        const spec = tip.specialty.toLowerCase();
+        const tema = tip.tema ? tip.tema.toLowerCase() : '';
+        return Array.from(seenTopics).some((seen) =>
+          spec.includes(seen) || seen.includes(spec) || (tema && (tema.includes(seen) || seen.includes(tema)))
+        );
+      });
+      if (filtered.length > 0) {
+        pool = filtered;
+      }
+    }
+
+    // Seleciona deterministamente 1 dica por dia pelo dia do calendário
+    const now = new Date();
+    const dayOfYear = Math.floor((now.getTime() - new Date(now.getFullYear(), 0, 0).getTime()) / 86400000);
+    const dayIndex = Math.abs(dayOfYear) % pool.length;
+
+    return pool[dayIndex] || CLINICAL_TIPS_DATABASE[0];
+  }, [userAnswers, allLists]);
 
   // Identificação do caderno mais recente com fallback automático para o último não terminado
   const activeCaderno = React.useMemo(() => {
@@ -1276,7 +1343,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       const saved = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
       if (saved) {
         try {
-          return JSON.parse(saved);
+          const parsed: DailyScheduleSlot[] = JSON.parse(saved);
+          const cleanTasks = parsed.filter(t => !t.id.startsWith('task_sess_') && !t.id.startsWith('sess_slot_'));
+          if (cleanTasks.length !== parsed.length) {
+            localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(cleanTasks));
+          }
+          return cleanTasks;
         } catch {
           return [];
         }
@@ -1584,7 +1656,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     const storedToken = localStorage.getItem('bancoresidencia_google_access_token') || googleAccessToken;
     const storedIcal = localStorage.getItem('bancoresidencia_google_ical_url') || googleIcalUrl;
 
-    if (mode === 'api' && storedToken) {
+    if (mode === 'api' && (storedToken || isConnected)) {
       setIsSyncingCalendar(true);
       try {
         const [events, accountEmail] = await Promise.all([
@@ -2878,7 +2950,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   return (
     <div
-      className={`space-y-4 sm:space-y-5 transition-all duration-300 ${isCustomizing ? "canvas-grid-quadriculado" : ""}`}
+      className={`space-y-4 sm:space-y-5 animate-in fade-in duration-500 ease-out transition-all ${isCustomizing ? "canvas-grid-quadriculado" : ""}`}
       onClick={(e) => {
         const target = e.target as HTMLElement;
         if (
@@ -2910,7 +2982,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       {/* Grid Principal Reorganizável Estilo Figma */}
       <div
         ref={gridContainerRef}
-        className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 auto-rows-auto grid-flow-dense relative items-stretch"
+        className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-3.5 auto-rows-auto grid-flow-dense relative items-start"
       >
         {/* Guias Inteligentes de Alinhamento e Zonas de Encaixe Estilo Canva/Figma */}
         {isCustomizing && (
@@ -2936,7 +3008,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                <section className="relative overflow-hidden bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs">
+                <section className="relative overflow-hidden bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl px-4 sm:px-5 py-3 sm:py-3.5 shadow-xs">
                   <div
                     className="absolute -right-16 -top-16 w-60 h-60 rounded-full blur-3xl opacity-10 pointer-events-none"
                     style={{ backgroundColor: accentConfig.primaryHex }}
@@ -2975,21 +3047,30 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
-                      {/* Tempo Estudado Hoje - Destaque em Verde */}
+                      {/* Tempo Estudado Hoje - Harmonizado */}
                       <div
                         onClick={() => onNavigate('stats')}
                         title="Tempo de estudo acumulado hoje no cronômetro da agenda. Clique para abrir seu desempenho detalhado."
-                        className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/80 dark:border-emerald-800/50 hover:border-emerald-300 dark:hover:border-emerald-700 transition-colors cursor-pointer shadow-2xs"
+                        className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer shadow-2xs"
                       >
-                        <div className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
+                        <div
+                          className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
+                          style={{
+                            backgroundColor: accentConfig.bgRgba,
+                            color: accentConfig.primaryHex
+                          }}
+                        >
                           <Clock className="w-3.5 h-3.5" />
                         </div>
                         <div>
                           <div className="text-xs sm:text-sm font-black font-sans tracking-tight leading-none text-zinc-900 dark:text-zinc-100 tabular-nums">
                             {formattedTodayStudy}
                           </div>
-                          <div className="text-[10px] sm:text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1 leading-none mt-1">
-                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+                          <div className="text-[10px] sm:text-[11px] font-medium text-zinc-500 dark:text-zinc-400 flex items-center gap-1 leading-none mt-1">
+                            <span
+                              className="w-1.5 h-1.5 rounded-full shrink-0"
+                              style={{ backgroundColor: accentConfig.primaryHex }}
+                            />
                             <span>Estudado hoje</span>
                           </div>
                         </div>
@@ -3019,23 +3100,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       </div>
 
-                      {/* Botão Personalizar Layout (Tela de Início) */}
-                      <Button
-                        type="button"
-                        variant={isCustomizing ? 'primary' : 'outline'}
-                        size="xs"
-                        onClick={() => {
-                          if (isCustomizing) {
-                            autoConformLayout();
-                          }
-                          setIsCustomizing((prev) => !prev);
-                        }}
-                        title={isCustomizing ? "Concluir personalização do layout" : "Personalizar layout dos cards"}
-                        leftIcon={<SlidersHorizontal className="w-3.5 h-3.5" />}
-                        className="shadow-2xs"
-                      >
-                        <span className="hidden sm:inline">{isCustomizing ? 'Concluir' : 'Layout'}</span>
-                      </Button>
                     </div>
                   </div>
 
@@ -3085,7 +3149,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 allCardsConfig={visibleCards}
               >
                 {/* Card 1: Sequência & Metas Diárias */}
-                <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-2.5">
+                <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-2">
                   <div className="space-y-2">
                     {/* Header: Título "Sequência" + Botão "Ajustar" */}
                     <div className="flex items-center justify-between">
@@ -3166,7 +3230,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </form>
                     ) : (
                       <>
-                        {/* Linha Central: Valor da Sequência à esquerda + 7 Micro-quadradinhos ao lado à direita */}
+                        {/* Linha Central: Valor da Sequência à esquerda + 7 Micro-indicadores da semana */}
                         <div className="pt-1 pb-0.5 flex items-center justify-between">
                           <div className="flex items-baseline gap-1.5">
                             <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
@@ -3174,11 +3238,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               <span>{stats.streakDays}</span>
                             </span>
                             <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium">
-                              {stats.streakDays === 1 ? 'dia' : 'dias'}
+                              {stats.streakDays === 1 ? 'dia consecutivo' : 'dias consecutivos'}
                             </span>
                           </div>
 
-                          {/* 7 Micro-quadradinhos da semana atual bem pertos */}
+                          {/* 7 Micro-quadradinhos da semana atual */}
                           <StreakTracker
                             days={currentWeekStreak}
                             accentHex={accentConfig.primaryHex}
@@ -3187,75 +3251,52 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           />
                         </div>
 
-                        {/* Metas Diárias: Questões e Tempo do Cronômetro da Agenda */}
-                        <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 grid grid-cols-2 gap-3 divide-x divide-zinc-100 dark:divide-zinc-800/80">
-                          <div className="pr-1 space-y-1">
-                            <div className="flex items-center justify-between text-xs font-bold text-zinc-500 dark:text-zinc-400">
-                              <span className="flex items-center gap-1">
-                                <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-                                Questões
-                              </span>
-                              <span className="font-sans font-bold text-zinc-800 dark:text-zinc-200 text-xs tabular-nums">
-                                {todayAnswered}/{dailyGoal}
-                              </span>
-                            </div>
-                            <ProgressBar value={todayAnswered} max={dailyGoal} variant="primary" size="xs" />
+                        {/* Barra de Progresso Principal: Meta Diária de Questões */}
+                        <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5">
+                          <div className="flex items-center justify-between text-xs">
+                            <span className="flex items-center gap-1.5 font-bold text-zinc-700 dark:text-zinc-300">
+                              <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+                              Meta de Questões
+                            </span>
+                            <span className="font-sans font-bold text-zinc-900 dark:text-zinc-100 text-xs tabular-nums">
+                              {todayAnswered} <span className="text-zinc-400 font-normal">/ {dailyGoal} Q</span>
+                            </span>
                           </div>
-
-                          <div className="pl-3 space-y-1">
-                            <div className="flex items-center justify-between text-xs font-bold text-zinc-500 dark:text-zinc-400">
-                              <span className="flex items-center gap-1">
-                                <Clock className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-                                Tempo
-                              </span>
-                              <span className="font-sans font-bold text-zinc-800 dark:text-zinc-200 text-xs tabular-nums">
-                                {todayStudyMinutes}m/{dailyTimeGoal}m
-                              </span>
-                            </div>
-                            <ProgressBar value={todayStudyMinutes} max={dailyTimeGoal} variant="time" size="xs" />
-                          </div>
+                          <ProgressBar value={todayAnswered} max={dailyGoal} variant="primary" size="sm" />
                         </div>
                       </>
                     )}
 
-                    {/* VISÃO EXPANDIDA ADAPTATIVA: Sessões Programadas do Dia */}
-                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                      <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
-                        <div className="flex items-center justify-between text-[11px]">
-                          <span className="font-bold text-zinc-700 dark:text-zinc-300">Sessões Programadas</span>
-                          <span className="text-[10px] text-zinc-400">Ciclo Diário</span>
-                        </div>
-                        <div className="grid grid-cols-2 gap-2 text-[10px]">
-                          <div className="p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800 flex items-center justify-between">
-                            <span className="text-zinc-500">Bloco Manhã</span>
-                            <span className="font-bold text-emerald-600 dark:text-emerald-400">{Math.min(todayAnswered, Math.round(dailyGoal / 2))}/{Math.round(dailyGoal / 2)} Q</span>
-                          </div>
-                          <div className="p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800 flex items-center justify-between">
-                            <span className="text-zinc-500">Bloco Tarde</span>
-                            <span className="font-bold text-amber-600 dark:text-amber-400">{Math.max(0, todayAnswered - Math.round(dailyGoal / 2))}/{Math.round(dailyGoal / 2)} Q</span>
-                          </div>
-                        </div>
+                    {/* Métricas Secundárias Clean (Tempo de Estudo & Ritmo Médio) */}
+                    <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[11px] text-zinc-500 dark:text-zinc-400">
+                      <span className="flex items-center gap-1.5">
+                        <Clock className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                        <span>Tempo: <strong className="text-zinc-800 dark:text-zinc-200 font-sans">{todayStudyMinutes}m</strong> / {dailyTimeGoal}m</span>
+                      </span>
+                      <span className="flex items-center gap-1.5">
+                        <Zap className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                        <span>Ritmo: <strong className="text-zinc-800 dark:text-zinc-200 font-sans">1m 48s</strong>/Q</span>
+                      </span>
+                    </div>
 
-                        {/* VISÃO HIPER-EXPANDIDA (Altura >= 270px): Velocímetro & Meta Semanal */}
-                        {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                          <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
-                            <span className="flex items-center gap-1 font-medium">
-                              <Clock className="w-3 h-3 text-blue-500" />
-                              Ritmo: <strong>1m 48s / questão</strong>
-                            </span>
-                            <span className="font-bold text-emerald-600 dark:text-emerald-400">
-                              Semana: 142/210 Q (68%)
-                            </span>
-                          </div>
-                        )}
-                      </div>
-                    )}
+                    {/* Turnos de Estudo Compactos e Elegantes em Linha */}
+                    <div className="flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400 px-2 py-1.5 rounded-lg bg-zinc-50/70 dark:bg-zinc-900/40 border border-zinc-100 dark:border-zinc-800/60">
+                      <span className="flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                        Manhã: <strong className="text-zinc-700 dark:text-zinc-300">{Math.min(todayAnswered, Math.round(dailyGoal / 2))}/{Math.round(dailyGoal / 2)} Q</strong>
+                      </span>
+                      <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                      <span className="flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                        Tarde: <strong className="text-zinc-700 dark:text-zinc-300">{Math.max(0, todayAnswered - Math.round(dailyGoal / 2))}/{Math.round(dailyGoal / 2)} Q</strong>
+                      </span>
+                    </div>
                   </div>
 
                   <div className="card-height-compact-hide pt-2 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
                     <span className="text-[11px] font-medium">Conclusão diária</span>
-                    <span className="font-bold text-zinc-800 dark:text-zinc-200 font-sans text-xs">
-                      {Math.round((goalPercentage + timeGoalPercentage) / 2)}%
+                    <span className="font-bold text-emerald-600 dark:text-emerald-400 font-sans text-xs">
+                      {Math.round((goalPercentage + timeGoalPercentage) / 2)}% concluído
                     </span>
                   </div>
                 </div>
@@ -3280,7 +3321,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 allCardsConfig={visibleCards}
               >
                 {/* Card 2: Aproveitamento com Seletor Interativo e Mini Sparkline com Tooltips */}
-                <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3">
+                <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-2">
                   <div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -3325,119 +3366,169 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
                     </div>
 
-                    <div className="pt-2 flex items-center justify-between">
-                      <div className="flex items-baseline gap-2">
-                        <span
-                          className="text-2xl sm:text-3xl font-black font-sans tracking-tight"
-                          style={{ color: accentConfig.primaryHex }}
-                        >
-                          {periodStats.answered > 0 ? `${animatedAccuracy.toFixed(1)}%` : '0.0%'}
-                        </span>
-                        <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium">acertos</span>
-                      </div>
+                    {/* Velocímetro Radial de Precisão (Semicírculo Gauge) */}
+                    {(() => {
+                      const pct = Math.max(0, Math.min(100, periodStats.answered > 0 ? animatedAccuracy : 0));
+                      const radius = 62;
+                      const cx = 95;
+                      const cy = 76;
+                      const arcLength = Math.PI * radius; // ~194.78
+                      const strokeDashoffset = arcLength * (1 - pct / 100);
 
-                      {/* Mini Sparkline dos últimos 5 dias com Tooltip Interativo */}
-                      {recentDailyAccuracy.length > 0 && (
-                        <div
-                          className="flex items-end gap-1.5 h-7 shrink-0 px-1 py-0.5 rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-800/40 transition-colors cursor-pointer"
-                          onClick={() => onNavigate('stats')}
-                          title="Clique para ver estatísticas detalhadas"
-                        >
-                          {recentDailyAccuracy.map((d, i) => {
-                            const dateLabel = i === recentDailyAccuracy.length - 1
-                              ? 'Hoje'
-                              : i === recentDailyAccuracy.length - 2
-                                ? 'Ontem'
-                                : d.date.split('-').slice(1).reverse().join('/');
-                            return (
-                              <div key={i} className="relative group/bar flex flex-col items-center">
-                                {/* Tooltip flutuante instantâneo */}
-                                <div className="absolute bottom-full mb-1.5 left-1/2 -translate-x-1/2 hidden group-hover/bar:flex flex-col items-center z-30 pointer-events-none">
-                                  <div className="bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 text-[10px] font-semibold py-1 px-2 rounded-md shadow-md whitespace-nowrap leading-tight text-center">
-                                    <span className="font-bold">{dateLabel}</span>
-                                    <div className="text-[9px] opacity-80 font-normal">
-                                      {d.answered > 0 ? `${d.answered} quest. • ${d.acc}%` : 'Sem questões'}
-                                    </div>
-                                  </div>
-                                  <div className="w-1.5 h-1.5 bg-zinc-900 dark:bg-zinc-100 rotate-45 -mt-0.5" />
-                                </div>
+                      // Coordenadas trigonométricas do ponteiro luminoso (de PI radianos a 0 radianos)
+                      const angle = Math.PI * (pct / 100);
+                      const dotX = cx - radius * Math.cos(angle);
+                      const dotY = cy - radius * Math.sin(angle);
 
-                                {/* Barra com altura proporcional e animação */}
-                                <div className="w-2 sm:w-2.5 bg-zinc-100 dark:bg-zinc-800/80 rounded-t-[3px] rounded-b-[1px] h-7 flex items-end overflow-hidden group-hover/bar:ring-1 group-hover/bar:ring-zinc-400 dark:group-hover/bar:ring-zinc-600 transition-all">
-                                  <div
-                                    className="w-full rounded-t-[3px] transition-all duration-300 group-hover/bar:opacity-90"
-                                    style={{
-                                      height: `${d.answered === 0 ? 10 : Math.max(18, d.acc)}%`,
-                                      backgroundColor: d.answered === 0
-                                        ? 'transparent'
-                                        : (d.acc >= 75 ? '#10b981' : d.acc >= 50 ? '#f59e0b' : accentConfig.primaryHex)
-                                    }}
+                      // Marcadores de escala (Ticks sutis do velocímetro)
+                      const ticks = [0, 0.25, 0.5, 0.75, 1];
+
+                      return (
+                        <div className="relative flex flex-col items-center justify-center pt-1 pb-1">
+                          <div className="relative w-48 sm:w-52 h-24 overflow-hidden flex items-end justify-center">
+                            <svg viewBox="0 0 190 90" className="w-full h-full overflow-visible">
+                              <defs>
+                                <linearGradient id={`gaugeGrad-${cardConfig.id}`} x1="0" y1="0" x2="1" y2="0">
+                                  <stop offset="0%" stopColor="#f43f5e" />
+                                  <stop offset="45%" stopColor="#f59e0b" />
+                                  <stop offset="85%" stopColor="#10b981" />
+                                </linearGradient>
+                              </defs>
+
+                              {/* Ticks sutis no contorno do velocímetro */}
+                              {ticks.map((t, idx) => {
+                                const a = Math.PI * t;
+                                const x1 = cx - 70 * Math.cos(a);
+                                const y1 = cy - 70 * Math.sin(a);
+                                const x2 = cx - 74 * Math.cos(a);
+                                const y2 = cy - 74 * Math.sin(a);
+                                return (
+                                  <line
+                                    key={idx}
+                                    x1={x1}
+                                    y1={y1}
+                                    x2={x2}
+                                    y2={y2}
+                                    stroke="currentColor"
+                                    strokeWidth="1.5"
+                                    strokeLinecap="round"
+                                    className="text-zinc-300 dark:text-zinc-700/80"
                                   />
-                                </div>
+                                );
+                              })}
+
+                              {/* Trilho de fundo (arco escuro) */}
+                              <path
+                                d={`M ${cx - radius} ${cy} A ${radius} ${radius} 0 0 1 ${cx + radius} ${cy}`}
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="7.5"
+                                strokeLinecap="round"
+                                className="text-zinc-100 dark:text-zinc-800/80"
+                              />
+
+                              {/* Arco ativo com gradiente suave */}
+                              <path
+                                d={`M ${cx - radius} ${cy} A ${radius} ${radius} 0 0 1 ${cx + radius} ${cy}`}
+                                fill="none"
+                                stroke={`url(#gaugeGrad-${cardConfig.id})`}
+                                strokeWidth="7.5"
+                                strokeLinecap="round"
+                                strokeDasharray={arcLength}
+                                strokeDashoffset={strokeDashoffset}
+                                className="transition-all duration-700 ease-out"
+                              />
+                            </svg>
+
+                            {/* Valor Central Dentro do Arco */}
+                            <div className="absolute inset-x-0 bottom-0.5 flex flex-col items-center text-center pointer-events-none">
+                              <div className="flex items-baseline justify-center">
+                                <span className="text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100">
+                                  {periodStats.answered > 0 ? animatedAccuracy.toFixed(1) : '0.0'}
+                                </span>
+                                <span className="text-sm font-bold font-sans text-emerald-500 dark:text-emerald-400 ml-0.5">%</span>
                               </div>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
+                              <span className="text-[9px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mt-0.5">
+                                Taxa de Acertos
+                              </span>
+                            </div>
 
-                    {/* Barra de Progresso Suave Padronizada */}
-                    <div className="mt-2.5">
-                      <ProgressBar
-                        value={animatedAccuracy}
-                        max={100}
-                        variant="accuracy"
-                        size="sm"
-                      />
-                    </div>
+                            {/* Labels de 0% e 100% */}
+                            <span className="absolute left-1 bottom-0.5 text-[8px] font-mono text-zinc-400 dark:text-zinc-600">0%</span>
+                            <span className="absolute right-1 bottom-0.5 text-[8px] font-mono text-zinc-400 dark:text-zinc-600">100%</span>
+                          </div>
 
-                    {/* VISÃO EXPANDIDA ADAPTATIVA: Taxa por Grau de Dificuldade da Banca */}
-                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                      <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
-                        <div className="flex items-center justify-between text-[11px]">
-                          <span className="font-bold text-zinc-700 dark:text-zinc-300">Desempenho por Dificuldade</span>
-                          <span className="text-[10px] text-zinc-400">Modelo TRI</span>
-                        </div>
-                        <div className="grid grid-cols-3 gap-1.5 text-[10px]">
-                          <div className="p-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400 flex flex-col">
-                            <span className="font-bold">Fáceis</span>
-                            <span className="font-extrabold text-xs mt-0.5">84.2%</span>
-                          </div>
-                          <div className="p-1.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 flex flex-col">
-                            <span className="font-bold">Médias</span>
-                            <span className="font-extrabold text-xs mt-0.5">67.5%</span>
-                          </div>
-                          <div className="p-1.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-700 dark:text-rose-400 flex flex-col">
-                            <span className="font-bold">Difíceis</span>
-                            <span className="font-extrabold text-xs mt-0.5">41.8%</span>
-                          </div>
-                        </div>
-
-                        {/* VISÃO HIPER-EXPANDIDA (Altura >= 270px): Nota TRI Estimada */}
-                        {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                          <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
-                            <span className="flex items-center gap-1 font-medium">
-                              <Sparkles className="w-3 h-3 text-amber-500" />
-                              Nota TRI Estimada: <strong className="text-zinc-800 dark:text-zinc-200">742 pts</strong>
-                            </span>
-                            <span className="font-bold text-emerald-600 dark:text-emerald-400">
-                              +48 pts vs Concorrentes
+                          {/* Pill Informativo: Questões Resolvidas */}
+                          <div className="mt-2 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200/60 dark:border-zinc-700/60 text-[11px] text-zinc-600 dark:text-zinc-400">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                            <span>
+                              <strong className="text-zinc-900 dark:text-zinc-100 font-sans">{periodStats.correct}</strong> de {periodStats.answered} questões
                             </span>
                           </div>
-                        )}
+                        </div>
+                      );
+                    })()}
+
+                    {/* Desempenho por Dificuldade (3 Subcards da Imagem) */}
+                    <div className="pt-2.5 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5">
+                      <div className="flex items-center justify-between text-[11px]">
+                        <span className="font-bold text-zinc-700 dark:text-zinc-300">Desempenho por Dificuldade</span>
+                        <span className="text-[10px] text-zinc-400 font-medium">TRI Calibrada</span>
                       </div>
-                    )}
+
+                      <div className="grid grid-cols-3 gap-1.5 text-[10px]">
+                        {/* Fáceis */}
+                        <div className="p-2 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 flex flex-col justify-between">
+                          <div className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400 text-[10px]">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
+                            <span>Fáceis</span>
+                          </div>
+                          <span className="font-sans font-extrabold text-xs text-zinc-900 dark:text-zinc-100 mt-1">
+                            84.2%
+                          </span>
+                          <div className="w-full h-1 bg-emerald-500/20 rounded-full mt-1.5 overflow-hidden">
+                            <div className="h-full bg-emerald-500 rounded-full" style={{ width: '84.2%' }} />
+                          </div>
+                        </div>
+
+                        {/* Médias */}
+                        <div className="p-2 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 flex flex-col justify-between">
+                          <div className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400 text-[10px]">
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
+                            <span>Médias</span>
+                          </div>
+                          <span className="font-sans font-extrabold text-xs text-zinc-900 dark:text-zinc-100 mt-1">
+                            67.5%
+                          </span>
+                          <div className="w-full h-1 bg-amber-500/20 rounded-full mt-1.5 overflow-hidden">
+                            <div className="h-full bg-amber-500 rounded-full" style={{ width: '67.5%' }} />
+                          </div>
+                        </div>
+
+                        {/* Difíceis */}
+                        <div className="p-2 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 flex flex-col justify-between">
+                          <div className="flex items-center gap-1.5 text-zinc-500 dark:text-zinc-400 text-[10px]">
+                            <span className="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0" />
+                            <span>Difíceis</span>
+                          </div>
+                          <span className="font-sans font-extrabold text-xs text-zinc-900 dark:text-zinc-100 mt-1">
+                            41.8%
+                          </span>
+                          <div className="w-full h-1 bg-rose-500/20 rounded-full mt-1.5 overflow-hidden">
+                            <div className="h-full bg-rose-500 rounded-full" style={{ width: '41.8%' }} />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="pt-2.5 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
+                  {/* Rodapé: Total de resolvidas e taxa do período */}
+                  <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400">
                     <span className="text-[11px]">
                       <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{periodStats.answered}</strong> {accuracyPeriod === '7d' ? 'resolvidas (7d)' : 'resolvidas'}
                     </span>
-                    <span
-                      className="font-bold font-sans text-xs"
-                      style={{ color: accentConfig.primaryHex }}
-                    >
-                      {periodStats.correct} corretas
+                    <span className="font-bold font-sans text-xs text-emerald-600 dark:text-emerald-400">
+                      {periodStats.correct} corretas ({animatedAccuracy.toFixed(1)}%)
                     </span>
                   </div>
                 </div>
@@ -3464,12 +3555,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 {/* Card 3: Percentil Oficial */}
                 <div
                   ref={percentileCardRef}
-                  className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5 relative overflow-hidden transition-all duration-300 group"
+                  className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-2.5 relative overflow-hidden transition-all duration-300 group"
                 >
                   {isMedalAnimating && (
                     <div className="absolute inset-0 bg-white/75 dark:bg-black/75 backdrop-blur-[2px] pointer-events-none rounded-2xl animate-in fade-in duration-300 z-10" />
                   )}
-                  <div>
+                  <div className="flex-1 flex flex-col justify-between min-h-0 space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div
@@ -3500,123 +3591,101 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     {!isPercentileCalibrating ? (
-                      <div className="pt-2 space-y-2.5">
-                        <div className="flex items-baseline gap-2.5">
+                      <div className="pt-1 pb-0.5 flex items-baseline justify-between">
+                        <div className="flex items-baseline gap-2">
                           <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100">
                             P{stats.percentileInfo.percentile}
                           </span>
-                          <Badge variant="outline" size="sm">
-                            Nível {percentileTier.name}
-                          </Badge>
+                          <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium">
+                            Top {Math.max(1, 100 - (stats.percentileInfo.percentile || 0))}%
+                          </span>
+                          <span className="text-xs text-zinc-300 dark:text-zinc-700">•</span>
+                          <span className="text-xs font-bold font-mono text-zinc-700 dark:text-zinc-300">
+                            {Math.round(stats.percentileInfo.adjustedScore || 742)} pts
+                          </span>
                         </div>
-                        <ProgressBar
-                          value={Math.max(5, stats.percentileInfo.percentile || 0)}
-                          max={100}
-                          variant="energy"
-                          size="sm"
-                        />
+                        <Badge variant="outline" size="sm" style={{ borderColor: `${percentileTier.color}50`, color: percentileTier.color }}>
+                          Nível {percentileTier.name}
+                        </Badge>
                       </div>
                     ) : (
-                      <div className="pt-2 space-y-2.5">
-                        <div className="flex items-baseline justify-between">
-                          <div className="flex items-baseline gap-1.5">
-                            <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100">
-                              {stats.percentileInfo.missingForApprox}
-                            </span>
-                            <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">questões restantes</span>
-                          </div>
-                          <Badge variant="warning" size="sm" className="gap-1">
-                            <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: percentileTier.color }} />
-                            Calibrando
-                          </Badge>
+                      <div className="pt-1 pb-0.5 flex items-baseline justify-between">
+                        <div className="flex items-baseline gap-1.5">
+                          <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100">
+                            {stats.percentileInfo.missingForApprox}
+                          </span>
+                          <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">questões restantes</span>
                         </div>
-                        <ProgressBar
-                          value={Math.max(
-                            5,
-                            Math.min(
-                              100,
-                              Math.round(
-                                ((150 - (stats.percentileInfo.missingForApprox || 150)) / 150) * 100
-                              )
-                            )
-                          )}
-                          max={100}
-                          variant="energy"
-                          size="sm"
-                        />
+                        <Badge variant="warning" size="sm" className="gap-1">
+                          <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: percentileTier.color }} />
+                          Calibrando
+                        </Badge>
                       </div>
                     )}
 
-                    {/* VISÃO EXPANDIDA ADAPTATIVA: Curva Normal de Distribuição TRI (Gaussiana) */}
-                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                      <div className="pt-2 pb-1 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
-                        <div className="flex items-center justify-between text-[11px]">
-                          <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
-                            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: percentileTier.color }} />
-                            Curva de Distribuição TRI (Concorrência Oficial)
-                          </span>
-                          <span className="text-[10px] text-zinc-400">Modelo Normal P1 - P99</span>
+                    {/* Curva Normal de Distribuição TRI (Gaussiana) Padrão Expandida */}
+                    <div className="pt-1 flex-1 min-h-[120px] flex flex-col border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
+                      {/* Gráfico Vetorial da Gaussiana com Ponto do Aluno e Alto Contraste */}
+                      <div className="relative w-full flex-1 min-h-[110px] bg-zinc-50/70 dark:bg-zinc-900/50 rounded-xl p-2 border border-zinc-200/60 dark:border-zinc-800/60 overflow-hidden flex flex-col justify-between">
+                        <svg viewBox="0 0 320 85" className="w-full h-full flex-1 overflow-visible">
+                          <defs>
+                            <linearGradient id={`triGradient-${cardConfig.id}`} x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor={percentileTier.color} stopOpacity="0.45" />
+                              <stop offset="100%" stopColor={percentileTier.color} stopOpacity="0.04" />
+                            </linearGradient>
+                          </defs>
+
+                          {/* Área sob a curva com gradiente suave */}
+                          <path
+                            d="M 10 75 Q 60 75 100 60 T 160 8 T 220 60 Q 260 75 310 75 Z"
+                            fill={`url(#triGradient-${cardConfig.id})`}
+                          />
+                          {/* Linha da Curva Gaussiana com alto contraste e cor do nível */}
+                          <path
+                            d="M 10 75 Q 60 75 100 60 T 160 8 T 220 60 Q 260 75 310 75"
+                            fill="none"
+                            stroke={percentileTier.color}
+                            strokeWidth="2.5"
+                            strokeLinecap="round"
+                            opacity="0.9"
+                          />
+
+                          {/* Marcações de Percentil: P25, P50, P75, P90 */}
+                          <line x1="85" y1="12" x2="85" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                          <line x1="160" y1="8" x2="160" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                          <line x1="235" y1="12" x2="235" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                          <line x1="280" y1="30" x2="280" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-emerald-500/50" />
+
+                          {/* Posição do Aluno na Curva com Indicador Luminoso e Badge */}
+                          {(() => {
+                            const pct = Math.max(1, Math.min(99, stats.percentileInfo.percentile || 1));
+                            const markerX = 15 + (pct / 100) * 290;
+                            const normDist = (markerX - 160) / 55;
+                            const markerY = Math.max(10, Math.min(73, 75 - 67 * Math.exp(-0.5 * normDist * normDist)));
+
+                            return (
+                              <g>
+                                <line x1={markerX} y1={markerY} x2={markerX} y2="75" stroke={percentileTier.color} strokeWidth="2" strokeDasharray="2,2" opacity="0.8" />
+                                <circle cx={markerX} cy={markerY} r="4" fill="#ffffff" stroke={percentileTier.color} strokeWidth="2" />
+                                <circle cx={markerX} cy={markerY} r="7.5" fill={percentileTier.color} fillOpacity="0.3" className="animate-pulse" />
+                              </g>
+                            );
+                          })()}
+                        </svg>
+
+                        {/* Labels do eixo X da curva */}
+                        <div className="relative pt-1 flex justify-between text-[9px] font-mono text-zinc-500 dark:text-zinc-400 font-medium">
+                          <span>P1</span>
+                          <span>P25</span>
+                          <span className="font-bold text-zinc-700 dark:text-zinc-300">P50 (Média)</span>
+                          <span>P75</span>
+                          <span className="font-bold text-emerald-600 dark:text-emerald-400">P90 (Corte)</span>
                         </div>
+                      </div>
 
-                        {/* Gráfico Vetorial da Gaussiana com Ponto do Aluno */}
-                        <div className="relative w-full h-24 bg-zinc-50/60 dark:bg-zinc-900/40 rounded-xl p-2 border border-zinc-200/50 dark:border-zinc-800/50 overflow-hidden">
-                          <svg viewBox="0 0 320 80" className="w-full h-full overflow-visible">
-                            <defs>
-                              <linearGradient id={`triGradient-${cardConfig.id}`} x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="0%" stopColor={percentileTier.color} stopOpacity="0.35" />
-                                <stop offset="100%" stopColor={percentileTier.color} stopOpacity="0.02" />
-                              </linearGradient>
-                            </defs>
-
-                            {/* Área sob a curva */}
-                            <path
-                              d="M 10 75 Q 60 75 100 65 T 160 10 T 220 65 Q 260 75 310 75 Z"
-                              fill={`url(#triGradient-${cardConfig.id})`}
-                            />
-                            {/* Linha da Curva Gaussiana */}
-                            <path
-                              d="M 10 75 Q 60 75 100 65 T 160 10 T 220 65 Q 260 75 310 75"
-                              fill="none"
-                              stroke="currentColor"
-                              strokeWidth="2"
-                              className="text-zinc-300 dark:text-zinc-700"
-                            />
-
-                            {/* Marcações de Percentil: P25, P50, P75, P90 */}
-                            <line x1="85" y1="15" x2="85" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                            <line x1="160" y1="10" x2="160" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                            <line x1="235" y1="15" x2="235" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                            <line x1="280" y1="35" x2="280" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-emerald-500/50" />
-
-                            {/* Posição do Aluno na Curva */}
-                            {(() => {
-                              const pct = Math.max(1, Math.min(99, stats.percentileInfo.percentile || 1));
-                              const markerX = 15 + (pct / 100) * 290;
-                              const normDist = (markerX - 160) / 55;
-                              const markerY = Math.max(12, Math.min(73, 75 - 65 * Math.exp(-0.5 * normDist * normDist)));
-
-                              return (
-                                <g>
-                                  <line x1={markerX} y1={markerY} x2={markerX} y2="75" stroke={percentileTier.color} strokeWidth="2" strokeDasharray="2,1" />
-                                  <circle cx={markerX} cy={markerY} r="5" fill={percentileTier.color} className="animate-pulse" />
-                                  <circle cx={markerX} cy={markerY} r="9" fill={percentileTier.color} fillOpacity="0.25" />
-                                </g>
-                              );
-                            })()}
-                          </svg>
-
-                          {/* Labels do eixo X da curva */}
-                          <div className="absolute bottom-1 left-2 right-2 flex justify-between text-[9px] font-mono text-zinc-400">
-                            <span>P1</span>
-                            <span>P25</span>
-                            <span className="font-bold text-zinc-600 dark:text-zinc-300">P50 (Média)</span>
-                            <span>P75</span>
-                            <span className="font-bold text-emerald-600 dark:text-emerald-400">P90 (Corte)</span>
-                          </div>
-                        </div>
-
-                        {/* Indicadores de Meta e Distância */}
-                        <div className="grid grid-cols-2 gap-2 text-[10px]">
+                      {/* Indicadores Expandidos caso o usuário estique a altura */}
+                      {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 260 : false) && (
+                        <div className="grid grid-cols-2 gap-2 text-[10px] pt-1">
                           <div className="p-2 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 flex flex-col justify-between">
                             <span className="text-zinc-400 font-medium">Zona de Corte</span>
                             <span className="font-bold text-zinc-800 dark:text-zinc-200 mt-0.5">Top 10% (P90)</span>
@@ -3626,42 +3695,18 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             <span className="font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">+14 pts p/ Próx Nível</span>
                           </div>
                         </div>
-
-                        {/* Gap para Nota de Corte nas Residências Alvo */}
-                        {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                          <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5 animate-in fade-in duration-200">
-                            <div className="flex items-center justify-between text-[11px]">
-                              <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1">
-                                <Target className="w-3 h-3 text-blue-500" />
-                                Gap de Corte das Residências Alvo
-                              </span>
-                              <span className="text-[10px] text-zinc-400">Projeção TRI</span>
-                            </div>
-                            <div className="grid grid-cols-3 gap-1.5 text-[10px]">
-                              <div className="p-1.5 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-700 dark:text-blue-300 flex flex-col">
-                                <span className="font-bold">USP-SP (P86)</span>
-                                <span className="text-[9px] opacity-80">+12 Q corretas</span>
-                              </div>
-                              <div className="p-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-300 flex flex-col">
-                                <span className="font-bold">UNICAMP (P82)</span>
-                                <span className="text-[9px] opacity-80">+8 Q corretas</span>
-                              </div>
-                              <div className="p-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-700 dark:text-purple-300 flex flex-col">
-                                <span className="font-bold">ENARE (P78)</span>
-                                <span className="text-[9px] opacity-80">+4 Q corretas</span>
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
 
                   <div className="pt-2.5 flex items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80">
                     {!isPercentileCalibrating ? (
-                      <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                        À frente de <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{stats.percentileInfo.percentile}%</strong> dos candidatos
-                      </span>
+                      <div className="flex items-center gap-2 text-[11px] text-zinc-500 dark:text-zinc-400">
+                        <span>À frente de <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{stats.percentileInfo.percentile}%</strong> dos candidatos</span>
+                        <span className="text-[10px] font-semibold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 dark:bg-emerald-500/15 border border-emerald-500/20 px-1.5 py-0.5 rounded-md">
+                          +48 pts vs concorrentes
+                        </span>
+                      </div>
                     ) : (
                       <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
                         Progresso TRI: <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{150 - (stats.percentileInfo.missingForApprox || 150)}/150</strong>
@@ -3806,67 +3851,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               </FigmaCardWrapper>
             );
           }
-          if (cardConfig.id === 'home_retencao') {
-            const targetList = activeCaderno || (allLists && allLists.length > 0 ? allLists[0] : null);
-            const SHORTCUTS = [
-              {
-                id: 'banco',
-                label: 'Banco de Questões',
-                tab: 'banco' as ActiveTab,
-                icon: Layers,
-              },
-              {
-                id: 'flashcards',
-                label: 'Flashcards',
-                tab: 'flashcards' as ActiveTab,
-                icon: Brain,
-                badge: isMounted && flashcardsStats.dueToday > 0 ? flashcardsStats.dueToday : null,
-              },
-              {
-                id: 'caderno_erros',
-                label: 'Caderno de Erros',
-                tab: 'caderno_erros' as ActiveTab,
-                icon: AlertOctagon,
-                badge: pendingErrorsCount > 0 ? pendingErrorsCount : null,
-              },
-              {
-                id: 'listas',
-                label: 'Listas de Treino',
-                tab: 'listas' as ActiveTab,
-                icon: FolderOpen,
-              },
-              {
-                id: 'simulados',
-                label: 'Simulados',
-                tab: 'simulados' as ActiveTab,
-                icon: GraduationCap,
-              },
-              {
-                id: 'stats',
-                label: 'Desempenho',
-                tab: 'stats' as ActiveTab,
-                icon: TrendingUp,
-              },
-              {
-                id: 'ranking',
-                label: 'Ranking Oficial',
-                tab: 'ranking' as ActiveTab,
-                icon: Trophy,
-              },
-              {
-                id: 'resumos',
-                label: 'Materiais Teóricos',
-                tab: 'resumos' as ActiveTab,
-                icon: BookOpen,
-              },
-              {
-                id: 'agenda',
-                label: 'Agenda de Estudos',
-                tab: 'agenda' as ActiveTab,
-                icon: Calendar,
-              }
-            ];
-
+          if (cardConfig.id === 'home_caderno_erros' || cardConfig.id === 'home_mnemonico') {
             return (
               <FigmaCardWrapper
                 key={cardConfig.id}
@@ -3883,282 +3868,121 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-3 sm:p-3.5 shadow-xs relative overflow-hidden group space-y-2.5 min-h-0 h-full flex flex-col justify-between">
-                  <div className="space-y-1.5">
-                    {/* Header do Card */}
+                {/* Card: Caderno de Erros & Revisão Ativa (Substitui o card duplicado) */}
+                <div
+                  onClick={() => {
+                    if (isCustomizing) return;
+                    setActiveCentralDrawer('caderno_erros');
+                  }}
+                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3 group cursor-pointer hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+                  title="Clique para abrir o Caderno de Erros e foco de reteste"
+                >
+                  <div className="space-y-2.5">
+                    {/* Header com Tag de Revisão Ativa & Status */}
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-1.5">
-                        <div
-                          className="w-6 h-6 rounded-lg flex items-center justify-center shadow-xs border"
-                          style={{
-                            backgroundColor: accentConfig.bgRgba,
-                            borderColor: accentConfig.borderRgba,
-                            color: accentConfig.primaryHex
-                          }}
-                        >
-                          <LayoutGrid className="w-3 h-3" />
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-xl bg-rose-500/10 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 border border-rose-500/20 shadow-2xs">
+                          <RotateCcw className="w-4 h-4" />
                         </div>
-                        <span className="text-[11px] font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
-                          Atalhos
+                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                          Caderno de Erros
                         </span>
                       </div>
-                      <span className="text-[9px] font-semibold text-zinc-400 dark:text-zinc-500">
-                        Acesso rápido
-                      </span>
-                    </div>
 
-                    {/* Grade de 9 Atalhos Fluida e Condensada (sem estilo card, ícones no tema, texto inter light) */}
-                    <div className="grid grid-cols-3 gap-x-1 gap-y-1.5 pt-0.5">
-                      {SHORTCUTS.map((item) => {
-                        const IconComp = item.icon;
-                        return (
-                          <button
-                            key={item.id}
-                            type="button"
-                            onClick={() => {
-                              if (isCustomizing) return;
-                              onNavigate(item.tab);
-                            }}
-                            className="group/btn relative flex flex-col items-center justify-start p-1 rounded-lg hover:bg-zinc-100/50 dark:hover:bg-zinc-800/40 active:scale-95 transition-all text-center cursor-pointer"
-                            title={`Navegar para ${item.label}`}
-                          >
-                            {/* Ícone no estilo do tema */}
-                            <div
-                              className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center mb-0.5 transition-transform duration-200 group-hover/btn:scale-105 border shadow-2xs"
-                              style={{
-                                backgroundColor: accentConfig.bgRgba,
-                                borderColor: accentConfig.borderRgba,
-                                color: accentConfig.primaryHex
-                              }}
-                            >
-                              <IconComp className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
-                              {/* Badge de Pendências sutil */}
-                              {Boolean(item.badge) && (
-                                <span
-                                  className="absolute -top-1 -right-1 px-1 py-0.2 min-w-[13px] h-[13px] rounded-full text-[8px] font-black text-white leading-none shadow-xs flex items-center justify-center"
-                                  style={{ backgroundColor: accentConfig.primaryHex }}
-                                >
-                                  {item.badge}
-                                </span>
-                              )}
-                            </div>
-
-                            {/* Título do Atalho: Nome Completo em Inter Light */}
-                            <span className="font-light text-[10px] text-zinc-600 dark:text-zinc-300 group-hover/btn:text-zinc-900 dark:group-hover/btn:text-white transition-colors text-center leading-tight line-clamp-2 max-w-[78px]">
-                              {item.label}
-                            </span>
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Função: Continuar Lista Condensada (destaca a última lista que o aluno estava fazendo) */}
-                  <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5">
-                    <div className="flex items-center justify-between px-0.5">
-                      <div className="flex items-center gap-1.5 min-w-0">
-                        <PlayCircle className="w-3.5 h-3.5 shrink-0" style={{ color: accentConfig.primaryHex }} />
-                        <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-zinc-600 dark:text-zinc-400 truncate">
-                          Continuar Lista
-                        </span>
-                        {targetList && (
-                          <span
-                            className="text-[8px] font-bold flex items-center gap-1 px-1.5 py-0.2 rounded-md shrink-0"
-                            style={{
-                              backgroundColor: accentConfig.bgRgba,
-                              color: accentConfig.primaryHex
-                            }}
-                          >
-                            <span
-                              className="w-1.5 h-1.5 rounded-full animate-pulse"
-                              style={{ backgroundColor: accentConfig.primaryHex }}
-                            />
-                            {targetList.progressPercentage && targetList.progressPercentage >= 100 ? 'Concluída' : 'Ativa'}
-                          </span>
-                        )}
-                      </div>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          if (isCustomizing) return;
-                          onNavigate('listas');
-                        }}
-                        className="text-[9px] font-medium text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors cursor-pointer shrink-0"
+                      <Badge
+                        variant={pendingErrorsCount > 0 ? 'destructive' : 'success'}
+                        size="sm"
+                        className="font-sans"
                       >
-                        Listas →
-                      </button>
+                        {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendentes` : 'Em dia'}
+                      </Badge>
                     </div>
 
-                    {targetList ? (
-                      <div className="p-2 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/40 space-y-1.5">
-                        <div className="flex items-center justify-between gap-2">
-                          <h4
-                            className="text-[11px] sm:text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate flex-1"
-                            title={targetList.title}
-                          >
-                            {targetList.title}
+                    {/* Conteúdo Dinâmico */}
+                    {pendingErrorsCount > 0 ? (
+                      <div className="space-y-2">
+                        <div>
+                          <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
+                            <span>Revisão Ativa de Erros</span>
                           </h4>
-                          <span className="text-[10px] font-bold text-zinc-700 dark:text-zinc-300 shrink-0">
-                            {targetList.progressPercentage || 0}%
-                          </span>
+                          <p className="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed mt-0.5">
+                            {mostCriticalArea
+                              ? `Foco prioritário: ${mostCriticalArea.name} (${mostCriticalArea.count} erros registrados).`
+                              : 'Reteste ativo das questões com erro para consolidar memória de longo prazo.'}
+                          </p>
                         </div>
 
-                        {/* Barra de progresso */}
-                        <div className="w-full bg-zinc-200 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
-                          <div
-                            className="h-full rounded-full transition-all duration-300"
-                            style={{
-                              width: `${Math.min(100, Math.max(0, targetList.progressPercentage || 0))}%`,
-                              backgroundColor: accentConfig.primaryHex
-                            }}
-                          />
-                        </div>
-
-                        <div className="flex items-center justify-between gap-1.5 pt-0.5">
-                          <span className="text-[9px] text-zinc-500 dark:text-zinc-400 font-light truncate">
-                            {targetList.completedQuestions || 0}/{targetList.totalQuestions || 0} resolvidas
-                          </span>
-                          <button
+                        {/* Botões de Ação Direta */}
+                        <div className="pt-1 flex flex-wrap items-center gap-2">
+                          <Button
                             type="button"
                             onClick={() => {
                               if (isCustomizing) return;
-                              onContinueList(targetList);
+                              setActiveCentralDrawer('caderno_erros');
                             }}
-                            className="px-2 py-0.5 rounded-md text-[10px] font-bold text-white shadow-2xs flex items-center gap-1 transition-transform active:scale-95 hover:opacity-90 cursor-pointer shrink-0"
-                            style={{ backgroundColor: accentConfig.primaryHex }}
+                            className="w-full sm:w-auto text-xs font-bold bg-rose-600 hover:bg-rose-700 text-white"
+                            leftIcon={<RotateCcw className="w-3.5 h-3.5" />}
                           >
-                            <Play className="w-2.5 h-2.5 fill-current" />
-                            <span>Continuar</span>
-                          </button>
+                            Revisar Erros ({Math.min(pendingErrorsCount, 10)}Q)
+                          </Button>
+
+                          <Button
+                            type="button"
+                            variant="secondary"
+                            onClick={() => {
+                              if (isCustomizing) return;
+                              onNavigate('caderno_erros');
+                            }}
+                            className="w-full sm:w-auto text-xs font-semibold"
+                            leftIcon={<AlertOctagon className="w-3.5 h-3.5 text-rose-500" />}
+                          >
+                            Ver Caderno Completo
+                          </Button>
                         </div>
                       </div>
                     ) : (
-                      <div className="p-2 rounded-xl border border-dashed border-zinc-200 dark:border-zinc-800 text-center flex items-center justify-between gap-2">
-                        <span className="text-[10px] font-light text-zinc-500 dark:text-zinc-400 truncate">
-                          Nenhuma lista em andamento
-                        </span>
-                        <button
-                          type="button"
-                          onClick={() => {
-                            if (isCustomizing) return;
-                            onNavigate('listas');
-                          }}
-                          className="text-[10px] font-semibold hover:underline cursor-pointer shrink-0"
-                          style={{ color: accentConfig.primaryHex }}
-                        >
-                          + Criar Lista
-                        </button>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </FigmaCardWrapper>
-            );
-          }
-          if (cardConfig.id === 'home_mnemonico') {
-            return (
-              <FigmaCardWrapper
-                key={cardConfig.id}
-                config={cardConfig}
-                isCustomizing={isCustomizing}
-                isSelected={selectedCardId === cardConfig.id}
-                onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
-                onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
-                onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
-              >
-                {/* Card 1: Mnemônico Clínico do Dia */}
-                <div
-                  onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('mnemonico_detalhado'); }}
-                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-zinc-300 dark:hover:border-zinc-700 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3"
-                  title="Abrir raciocínio mnemônico completo e desdobramentos"
-                >
-                  {/* Top Bar: Título do mnemônico e apenas a seta */}
-                  <div className="flex items-center justify-between gap-2">
-                    <div className="flex items-center gap-2 min-w-0">
-                      <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/20 shadow-2xs">
-                        <Lightbulb className="w-4 h-4" />
-                      </div>
-                      <div className="min-w-0">
-                        <span className="text-xs sm:text-sm font-bold text-slate-900 dark:text-zinc-100 truncate block">
-                          {activeDetailedMnemonic.title}
-                        </span>
-                      </div>
-                    </div>
-
-                    <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
-                  </div>
-
-                  {/* Middle: Critérios dispostos em subcards equilibrados sem sobrecarga visual */}
-                  <div className="space-y-2 flex-1 flex flex-col justify-center">
-                    <div className={`grid ${activeDetailedMnemonic.breakdown.length <= 3 ? 'grid-cols-3' : 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-5'} gap-2`}>
-                      {activeDetailedMnemonic.breakdown.slice(0, 5).map((item, idx) => (
-                        <div
-                          key={idx}
-                          className="p-2 sm:p-2.5 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 flex flex-col justify-between min-h-[52px]"
-                        >
-                          <div className="flex items-center justify-between gap-1">
-                            <span className="text-[10px] font-medium text-zinc-500 dark:text-zinc-400 truncate">
-                              {item.label}
-                            </span>
-                            <span className="w-4 h-4 rounded text-[9px] font-mono font-bold bg-zinc-200/60 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 flex items-center justify-center shrink-0">
-                              {item.letter}
-                            </span>
-                          </div>
-                          <div className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 mt-1 truncate">
-                            {item.meaning}
-                          </div>
+                      <div className="py-2 space-y-2">
+                        <div className="flex items-center gap-2 text-emerald-600 dark:text-emerald-400">
+                          <CheckCircle2 className="w-5 h-5 shrink-0" />
+                          <span className="font-bold text-sm">Nenhum erro pendente!</span>
                         </div>
-                      ))}
-                    </div>
-
-                    {/* Regra de Decisão Rápida */}
-                    <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 text-[11px] text-zinc-600 dark:text-zinc-400">
-                      <span className="font-bold text-amber-600 dark:text-amber-400 shrink-0">Regra:</span>
-                      <span className="truncate">{activeDetailedMnemonic.rule}</span>
-                    </div>
-
-                    {/* VISÃO EXPANDIDA ADAPTATIVA: Pegadinha Fatal da Banca & Treino Direto */}
-                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                      <div className="pt-2 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
-                        {activeDetailedMnemonic.bancaTrap && (
-                          <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-900 dark:text-amber-300 text-xs">
-                            <span className="font-bold flex items-center gap-1 text-[11px] mb-0.5 text-amber-700 dark:text-amber-400">
-                              <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
-                              Pegadinha Fatal da Banca:
-                            </span>
-                            <p className="text-[10px] leading-relaxed line-clamp-2">
-                              {activeDetailedMnemonic.bancaTrap}
-                            </p>
-                          </div>
-                        )}
-
-                        {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                          <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[10px]">
-                            <span className="text-zinc-600 dark:text-zinc-400 truncate max-w-[260px]">
-                              {activeDetailedMnemonic.examFrequency || 'Alta frequência nas provas'}
-                            </span>
-                            <Button
-                              type="button"
-                              size="xs"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                const q = activeDetailedMnemonic.practiceQuery;
-                                if (onStartTopicPractice && q) onStartTopicPractice(q.specialty, q.search);
-                              }}
-                              className="bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] shadow-2xs"
-                            >
-                              Treinar Tema
-                            </Button>
-                          </div>
-                        )}
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                          Você recuperou todas as questões erradas recentemente. Mantenha o ritmo resolvendo novos cadernos!
+                        </p>
+                        <div className="pt-1">
+                          <Button
+                            type="button"
+                            variant="secondary"
+                            size="xs"
+                            onClick={() => {
+                              if (isCustomizing) return;
+                              onNavigate('caderno_erros');
+                            }}
+                            className="text-xs font-semibold"
+                          >
+                            Ver Histórico de Recuperação
+                          </Button>
+                        </div>
                       </div>
                     )}
+                  </div>
+
+                  {/* Rodapé Metacognitivo Sutil */}
+                  <div className="pt-2 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
+                    <span className="text-[10px] text-zinc-400 truncate">
+                      💡 Reteste ativo de erros eleva a retenção de longo prazo em até 40%.
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (isCustomizing) return;
+                        setActiveCentralDrawer('caderno_erros');
+                      }}
+                      className="text-[11px] font-bold text-rose-600 dark:text-rose-400 hover:underline flex items-center gap-1 shrink-0 ml-2 cursor-pointer"
+                    >
+                      <span>Abrir</span>
+                      <ArrowRight className="w-3 h-3" />
+                    </button>
                   </div>
                 </div>
               </FigmaCardWrapper>
@@ -4181,194 +4005,293 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                {/* Card: Agenda de Estudos Fluida do Dia (2 Colunas: Atividades da Agenda vs Sessões do Cronômetro) */}
+                {/* Card: Agenda de Estudos - Atividade Atual Somente & Gatilho do Drawer Central */}
                 <div
-                  onClick={() => { if (isCustomizing) return; onNavigate('agenda'); }}
-                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3"
-                  title="Abrir agenda de estudos completa"
+                  onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('agenda_detalhada'); }}
+                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-3.5 sm:p-4 shadow-xs cursor-pointer hover:border-zinc-300 dark:hover:border-zinc-700 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-2.5"
+                  title="Clique para abrir o cronograma de atividades de hoje"
                 >
-                  <div className="space-y-2.5">
-                    {/* Header: Título "Agenda de Estudos" + Contadores Cruzados */}
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div
-                          className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
-                          style={{
-                            backgroundColor: accentConfig.bgRgba,
-                            color: accentConfig.primaryHex
-                          }}
-                        >
-                          <CalendarDays className="w-4 h-4" />
-                        </div>
-                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
-                          Agenda de Estudos
-                        </span>
-                      </div>
+                  {(() => {
+                    const now = new Date();
+                    const currentMinutes = now.getHours() * 60 + now.getMinutes();
 
-                      <div className="flex items-center gap-2">
-                        <span className="text-[10px] font-semibold text-zinc-400 dark:text-zinc-500">
-                          {todayAgendaActivities.length} ativ. • {todayRecordedSessions.length} sessões
-                        </span>
-                        <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-blue-500 transition-all shrink-0" />
-                      </div>
-                    </div>
+                    // 1. Atividade em andamento agora (prioriza estudo, ou slot atual do cronograma)
+                    const currentActivity = todayAgendaActivities.find(
+                      (slot) => currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes
+                    ) || (currentPeriodInfo.status === 'em_andamento' ? currentPeriodInfo.slot : null);
 
-                    {/* Grade em 2 Colunas: Atividades de Estudo da Agenda (Azul) vs Sessões do Cronômetro (Verde) */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 pt-1">
-                      {/* Coluna 1: Atividades de Estudo do Dia (Destaque Azul) */}
-                      <div className="space-y-2 flex flex-col min-w-0">
-                        <div className="flex items-center justify-between pb-1.5 border-b border-blue-500/20">
-                          <div className="flex items-center gap-1.5 min-w-0">
-                            <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" />
-                            <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 truncate">
-                              Atividades de Estudo
+                    // 2. Próxima atividade programada de hoje (a ser feita)
+                    const upcomingActivity = todayAgendaActivities.find(
+                      (slot) => slot.startMinutes > currentMinutes
+                    ) || (currentPeriodInfo.status === 'proximo' ? currentPeriodInfo.slot : null);
+
+                    // 3. Atividades concluídas hoje
+                    const completedActivities = todayAgendaActivities.filter(
+                      (slot) => slot.endMinutes <= currentMinutes
+                    );
+
+                    const isAllCompleted = todayAgendaActivities.length > 0 && !currentActivity && !upcomingActivity;
+
+                    return (
+                      <div className="space-y-3">
+                        {/* Header: Título "Agenda de Estudos" + Status Dinâmico */}
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <div
+                              className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
+                              style={{
+                                backgroundColor: accentConfig.bgRgba,
+                                color: accentConfig.primaryHex
+                              }}
+                            >
+                              <CalendarDays className="w-4 h-4" />
+                            </div>
+                            <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                              Agenda de Estudos
                             </span>
                           </div>
-                          <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 shrink-0">
-                            {todayAgendaActivities.length}
-                          </span>
+
+                          <div className="flex items-center gap-2">
+                            {currentActivity ? (
+                              <span className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                                Agora em andamento
+                              </span>
+                            ) : upcomingActivity ? (
+                              <span className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                                <Clock className="w-3 h-3 text-blue-500" />
+                                Próxima atividade
+                              </span>
+                            ) : isAllCompleted ? (
+                              <span className="flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
+                                <CheckCircle2 className="w-3 h-3 text-emerald-500" />
+                                Concluído hoje
+                              </span>
+                            ) : (
+                              <span className="text-[10px] font-semibold text-zinc-400 dark:text-zinc-500">
+                                Hoje livre
+                              </span>
+                            )}
+                            <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-200 transition-all shrink-0" />
+                          </div>
                         </div>
 
-                        {/* Lista com Barra de Rolagem Flat no Padrão do Site */}
-                        <div className="space-y-1.5 max-h-[165px] overflow-y-auto pr-1 flat-scrollbar">
-                          {todayAgendaActivities.length > 0 ? (
-                            todayAgendaActivities.map((slot, idx) => {
-                              const now = new Date();
-                              const currentMinutes = now.getHours() * 60 + now.getMinutes();
-                              const isCurrent = currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes;
-                              const isPast = currentMinutes >= slot.endMinutes;
-
-                              return (
-                                <div
-                                  key={slot.id || idx}
-                                  className={`flex items-center justify-between p-2 rounded-xl border transition-all ${
-                                    isCurrent
-                                      ? 'bg-blue-500/15 border-blue-500/35 text-blue-950 dark:text-blue-100 shadow-2xs'
-                                      : isPast
-                                      ? 'bg-zinc-50/40 dark:bg-zinc-900/40 border-zinc-200/50 dark:border-zinc-800/50 text-zinc-500 opacity-60'
-                                      : 'bg-zinc-50/70 dark:bg-zinc-900/60 border-zinc-200/70 dark:border-zinc-800/80 hover:bg-blue-500/5 hover:border-blue-500/25 text-zinc-800 dark:text-zinc-200'
-                                  }`}
-                                >
-                                  <div className="flex items-center gap-2 min-w-0 flex-1 pr-1.5">
-                                    {isCurrent ? (
-                                      <span className="relative flex h-2 w-2 shrink-0">
-                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
-                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
-                                      </span>
-                                    ) : isPast ? (
-                                      <CheckCircle2 className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
-                                    ) : (
-                                      <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" />
-                                    )}
-                                    <span className="text-[11px] font-bold truncate" title={slot.title}>
-                                      {slot.title}
+                        {/* Conteúdo: Atividade Atual Somente (ou Próxima / Concluído / Livre) */}
+                        <div className="py-0.5">
+                          {currentActivity ? (
+                            <div className="p-3.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-900/60 space-y-2.5">
+                              <div className="flex items-center justify-between gap-2 flex-wrap">
+                                <span className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                                  Bloco em Andamento
+                                </span>
+                                <span className="text-[10px] font-mono font-medium px-2 py-0.5 rounded-md bg-white dark:bg-zinc-800/90 text-zinc-600 dark:text-zinc-300 border border-zinc-200/60 dark:border-zinc-700/60">
+                                  {currentActivity.startTime} – {currentActivity.endTime}
+                                  {currentActivity.endMinutes > currentMinutes && (
+                                    <span className="ml-1 text-emerald-600 dark:text-emerald-400 font-bold">
+                                      • {currentActivity.endMinutes - currentMinutes}m restantes
                                     </span>
-                                  </div>
+                                  )}
+                                </span>
+                              </div>
 
-                                  <span
-                                    className={`text-[10px] font-mono font-bold shrink-0 px-1.5 py-0.5 rounded-md border ${
-                                      isCurrent
-                                        ? 'bg-blue-500/20 text-blue-600 dark:text-blue-300 border-blue-500/30'
-                                        : 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20'
-                                    }`}
-                                  >
-                                    {slot.startTime} - {slot.endTime}
-                                  </span>
-                                </div>
-                              );
-                            })
+                              <div className="space-y-0.5">
+                                <h4
+                                  className="text-sm font-bold text-zinc-900 dark:text-zinc-100 line-clamp-1 leading-snug"
+                                  title={currentActivity.title}
+                                >
+                                  {currentActivity.title}
+                                </h4>
+                                {currentActivity.description && (
+                                  <p className="text-[11px] text-zinc-500 dark:text-zinc-400 line-clamp-1 font-light">
+                                    {cleanEventDescription(currentActivity.description)}
+                                  </p>
+                                )}
+                              </div>
+
+                              {/* Barra de Progresso do Bloco Atual */}
+                              {(() => {
+                                const elapsed = Math.max(0, currentMinutes - currentActivity.startMinutes);
+                                const total = Math.max(1, currentActivity.endMinutes - currentActivity.startMinutes);
+                                const pct = Math.min(100, Math.max(0, Math.round((elapsed / total) * 100)));
+                                return (
+                                  <div className="space-y-1 pt-0.5">
+                                    <div className="flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400 font-medium">
+                                      <span>Progresso deste bloco</span>
+                                      <span className="font-mono font-bold text-zinc-800 dark:text-zinc-200">{pct}%</span>
+                                    </div>
+                                    <ProgressBar value={pct} max={100} variant="primary" size="xs" />
+                                  </div>
+                                );
+                              })()}
+                            </div>
+                          ) : upcomingActivity ? (
+                            <div className="p-3.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-900/60 space-y-2">
+                              <div className="flex items-center justify-between gap-2 flex-wrap">
+                                <span className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
+                                  A Seguir no Cronograma
+                                </span>
+                                <span className="text-[10px] font-mono font-medium px-2 py-0.5 rounded-md bg-white dark:bg-zinc-800/90 text-zinc-600 dark:text-zinc-300 border border-zinc-200/60 dark:border-zinc-700/60">
+                                  Inicia às {upcomingActivity.startTime} (em {Math.max(1, upcomingActivity.startMinutes - currentMinutes)}m)
+                                </span>
+                              </div>
+
+                              <div className="space-y-0.5">
+                                <h4
+                                  className="text-sm font-bold text-zinc-900 dark:text-zinc-100 line-clamp-1 leading-snug"
+                                  title={upcomingActivity.title}
+                                >
+                                  {upcomingActivity.title}
+                                </h4>
+                                <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                                  Horário programado: {upcomingActivity.startTime} até {upcomingActivity.endTime}
+                                </p>
+                              </div>
+                            </div>
+                          ) : isAllCompleted ? (
+                            <div className="p-3.5 rounded-xl bg-zinc-50/70 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 flex items-center gap-3">
+                              <div className="w-8 h-8 rounded-xl bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 flex items-center justify-center shrink-0">
+                                <CheckCircle2 className="w-4 h-4" />
+                              </div>
+                              <div className="min-w-0">
+                                <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100">
+                                  Atividades de hoje concluídas
+                                </h4>
+                                <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                                  {completedActivities.length} de {completedActivities.length} tarefas realizadas.
+                                </p>
+                              </div>
+                            </div>
                           ) : (
-                            <div className="py-7 text-center text-xs text-zinc-400 dark:text-zinc-500 space-y-1">
-                              <p className="font-light">Nenhum estudo agendado hoje.</p>
-                              <p className="text-[10px] text-blue-500/80 dark:text-blue-400/80 font-normal">Atividades de estudo da agenda aparecem aqui.</p>
+                            <div className="p-3.5 rounded-xl bg-zinc-50/70 dark:bg-zinc-900/60 border border-dashed border-zinc-200 dark:border-zinc-800 flex items-center gap-3">
+                              <div className="w-8 h-8 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-400 shrink-0">
+                                <Calendar className="w-4 h-4" />
+                              </div>
+                              <div className="min-w-0">
+                                <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
+                                  Nenhuma atividade programada agora
+                                </h4>
+                                <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                                  Toque para abrir a agenda do dia e planejar seus estudos.
+                                </p>
+                              </div>
                             </div>
                           )}
+                        </div>
+
+                        {/* Rodapé Fluido com Gatilho do Drawer Central */}
+                        <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400">
+                          <span className="text-[11px] flex items-center gap-1.5">
+                            <span>{completedActivities.length} {completedActivities.length === 1 ? 'concluída' : 'concluídas'}</span>
+                            <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                            <span>{todayAgendaActivities.length} no total</span>
+                          </span>
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (isCustomizing) return;
+                              setActiveCentralDrawer('agenda_detalhada');
+                            }}
+                            className="text-xs font-bold flex items-center gap-1 hover:underline transition-colors cursor-pointer"
+                            style={{ color: accentConfig.primaryHex }}
+                          >
+                            <span>Ver todas as atividades do dia</span>
+                            <ArrowRight className="w-3 h-3" />
+                          </button>
                         </div>
                       </div>
+                    );
+                  })()}
+                </div>
+              </FigmaCardWrapper>
+            );
+          }
 
-                      {/* Coluna 2: Sessões Salvas pelo Cronômetro no Site (Destaque Verde) */}
-                      <div className="space-y-2 flex flex-col min-w-0">
-                        <div className="flex items-center justify-between pb-1.5 border-b border-emerald-500/20">
-                          <div className="flex items-center gap-1.5 min-w-0">
-                            <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
-                            <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 truncate">
-                              Sessões no Site (Cronômetro)
-                            </span>
-                          </div>
-                          <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 shrink-0">
-                            {todayRecordedSessions.length}
-                          </span>
+          {/* Card: Dicas Rápidas & Pérolas de Decoreba Baseadas no Conteúdo Estudado */}
+          if (cardConfig.id === 'home_dicas') {
+            return (
+              <FigmaCardWrapper
+                key={cardConfig.id}
+                config={cardConfig}
+                isCustomizing={isCustomizing}
+                isSelected={selectedCardId === cardConfig.id}
+                onSelect={(id) => setSelectedCardId(id)}
+                onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
+                onUpdateSettings={updateCardSettings}
+                onMoveCard={moveCard}
+                onToggleVisibility={toggleVisibility}
+                onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
+              >
+                <div
+                  onClick={() => {
+                    if (isCustomizing) return;
+                    setActiveCentralDrawer('mnemonico_detalhado');
+                  }}
+                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-2.5 group cursor-pointer hover:border-zinc-300 dark:hover:border-zinc-700 transition-all"
+                  title="Clique para ver raciocínio detalhado e desdobramentos"
+                >
+                  <div className="space-y-2.5 flex-1 flex flex-col justify-between">
+                    {/* Header: Ícone + Título Direto da Dica + Badge Dica do Dia */}
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-2.5 min-w-0">
+                        <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/20 shadow-2xs">
+                          <Lightbulb className="w-4 h-4" />
                         </div>
+                        <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 leading-snug truncate" title={activeClinicalTip.title}>
+                          {activeClinicalTip.title}
+                        </h4>
+                      </div>
 
-                        {/* Lista com Barra de Rolagem Flat no Padrão do Site */}
-                        <div className="space-y-1.5 max-h-[165px] overflow-y-auto pr-1 flat-scrollbar">
-                          {todayRecordedSessions.length > 0 ? (
-                            todayRecordedSessions.map((sess) => {
-                              const topicTitle =
-                                sess.taxonomy?.subfoco ||
-                                sess.taxonomy?.tema ||
-                                sess.taxonomy?.especialidade ||
-                                sess.taxonomy?.rawLabel ||
-                                'Treino de Questões';
-                              const startFormatted = sess.startTime
-                                ? new Date(sess.startTime).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
-                                : '';
-                              const endFormatted = sess.endTime
-                                ? new Date(sess.endTime).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
-                                : '';
-
-                              return (
-                                <div
-                                  key={sess.id}
-                                  className="flex items-center justify-between p-2 rounded-xl border border-emerald-500/20 bg-emerald-500/5 hover:bg-emerald-500/10 transition-colors text-xs"
-                                >
-                                  <div className="flex items-center gap-2 min-w-0 flex-1 pr-1.5">
-                                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                                    <div className="min-w-0 flex-1">
-                                      <span className="text-[11px] font-bold text-zinc-900 dark:text-zinc-100 truncate block" title={topicTitle}>
-                                        {topicTitle}
-                                      </span>
-                                      {sess.questionsCount && sess.questionsCount > 0 ? (
-                                        <span className="text-[9px] text-zinc-400 font-light block">
-                                          {sess.questionsCount} questões • {sess.correctCount || 0} acertos ({sess.accuracy !== undefined ? `${sess.accuracy}%` : `${Math.round(((sess.correctCount || 0) / sess.questionsCount) * 100)}%`})
-                                        </span>
-                                      ) : (
-                                        <span className="text-[9px] text-zinc-400 font-light block">
-                                          {startFormatted && endFormatted ? `${startFormatted} – ${endFormatted}` : 'Estudo cronometrado'}
-                                        </span>
-                                      )}
-                                    </div>
-                                  </div>
-
-                                  <span className="text-[10px] font-mono font-bold shrink-0 px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                                    {sess.durationFormatted}
-                                  </span>
-                                </div>
-                              );
-                            })
-                          ) : (
-                            <div className="py-7 text-center text-xs text-zinc-400 dark:text-zinc-500 space-y-1">
-                              <p className="font-light">Nenhuma sessão salva hoje.</p>
-                              <p className="text-[10px] text-emerald-600/80 dark:text-emerald-400/80 font-medium">Inicie o cronômetro no topo para registrar!</p>
-                            </div>
-                          )}
-                        </div>
+                      {/* Badge da Dica do Dia */}
+                      <div className="flex items-center gap-1.5 shrink-0">
+                        <Badge
+                          variant="outline"
+                          size="sm"
+                          className="bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/25 font-bold text-[10px] tracking-wide"
+                        >
+                          Dica do Dia
+                        </Badge>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Rodapé Fluido */}
-                  <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400">
-                    <span className="text-[11px] flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                      <span>{todayAgendaActivities.length} na agenda</span>
-                      <span className="text-zinc-300 dark:text-zinc-700">•</span>
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                      <span>{todayRecordedSessions.length} no site</span>
-                    </span>
-                    <span className="text-xs font-bold text-blue-600 dark:text-blue-400 flex items-center gap-1 group-hover:underline">
-                      Ver agenda completa <ArrowRight className="w-3 h-3" />
-                    </span>
+                    {/* Miolo: Chips em Grade Estruturada Vertical (Zero Sobreposição de Texto) */}
+                    <div className="py-0.5">
+                      <div className={`grid ${activeClinicalTip.chips.length === 4 ? 'grid-cols-2' : activeClinicalTip.chips.length <= 2 ? 'grid-cols-1 sm:grid-cols-2' : activeClinicalTip.chips.length === 3 ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-5'} gap-2`}>
+                        {activeClinicalTip.chips.map((chip: { label: string; letter?: string; value: string }, idx: number) => (
+                          <div
+                            key={idx}
+                            className="p-2 sm:p-2.5 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 flex flex-col justify-between transition-colors hover:border-amber-500/30 min-h-[50px]"
+                          >
+                            <div className="flex items-center justify-between gap-1.5 mb-1">
+                              <span className="text-[11px] font-bold text-amber-600 dark:text-amber-400 leading-tight">
+                                {chip.label}
+                              </span>
+                              {chip.letter && (
+                                <span className="w-4 h-4 rounded text-[9px] font-mono font-bold bg-amber-500/15 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                                  {chip.letter}
+                                </span>
+                              )}
+                            </div>
+                            <div className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 leading-snug">
+                              {chip.value}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Rodapé: Regra de Decisão Clínica (Sem Pegadinha) */}
+                    <div className="pt-0.5">
+                      <div className="flex items-start gap-2 px-3 py-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-zinc-800 dark:text-zinc-200">
+                        <span className="font-bold text-amber-600 dark:text-amber-400 shrink-0 text-[11px] uppercase tracking-wider">
+                          Regra:
+                        </span>
+                        <span className="leading-snug">{activeClinicalTip.rule}</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </FigmaCardWrapper>

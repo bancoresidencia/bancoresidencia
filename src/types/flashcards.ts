@@ -35,6 +35,49 @@ export interface CardCommunityStats {
   userIntervalDays: number;
 }
 
+export type FlashcardStudyDepth = 'all' | 'study' | 'review';
+
+export type DynamicFilterCriterionType =
+  | 'specialty'
+  | 'theme'
+  | 'focus'
+  | 'subfocus'
+  | 'subSubfocus'
+  | 'deck'
+  | 'status'
+  | 'depth'
+  | 'cardType'
+  | 'tag'
+  | 'priority';
+
+export interface DynamicFilterCriterion {
+  id: string;
+  type: DynamicFilterCriterionType;
+  label: string;
+  value: string;
+}
+
+export interface CsvFlashcardPreview {
+  id: string;
+  front: string;
+  back: string;
+  comment?: string;
+  specialty: string;
+  theme: string;
+  focus: string;
+  subfocus?: string;
+  sub_subfocus?: string;
+  subSubfocus?: string;
+  deckId: string;
+  priority: 'essential' | 'standard';
+  studyDepth?: 'study' | 'review';
+  tags: string[];
+  isValid: boolean;
+  validationError?: string;
+  confidence: number;
+  distributionMode: 'auto' | 'manual';
+}
+
 export interface FlashcardItem {
   id: string;
   front: string; // Suporta cloze deletion ex: "A ingestão de {{c1::bateria de disco}}..."
@@ -46,10 +89,13 @@ export interface FlashcardItem {
   theme: string;
   focus: string;
   subfocus?: string | null;
+  sub_subfocus?: string | null;
+  subSubfocus?: string | null;
   deckId?: string | null;
   type?: string;
   sourceQuestionId?: string | null;
   priority?: 'essential' | 'standard';
+  studyDepth?: 'study' | 'review' | 'both';
   tags?: string[];
   createdAt?: string;
   progress?: FlashcardProgress;
@@ -100,9 +146,14 @@ export interface CustomFlashcardDeck {
   name: string;
   description?: string;
   specialties: string[];
+  themes?: string[];
+  selectedNodeKeys?: string[];
   priorityOnly?: boolean;
   limitCards?: number;
   cardIds?: string[];
+  includeUserDeckIds?: string[];
+  includeAllUserCards?: boolean;
+  deckType?: 'original' | 'mixed' | 'smart';
   isDefault?: boolean;
   createdAt: string;
   lastStudiedAt?: string;

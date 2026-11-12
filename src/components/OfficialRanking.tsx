@@ -228,7 +228,14 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                       </>
                     ) : (
                       <>
-                        Você resolveu <strong className="font-bold text-slate-900 dark:text-white">{userQuestions} questões</strong>. {isUserEligibleOfficial ? 'Você atingiu o requisito de questões para homologação oficial.' : `Resolva mais ${Math.max(0, (activeRankingTab === 'official' ? 500 : activeRankingTab === 'provisional' ? 150 : 30) - userQuestions)} questões para figurar nesta aba.`}
+                        {(() => {
+                          const needed = Math.max(0, (activeRankingTab === 'official' ? 500 : activeRankingTab === 'provisional' ? 150 : 30) - userQuestions);
+                          return (
+                            <>
+                              Você resolveu <strong className="font-bold text-slate-900 dark:text-white">{userQuestions} {userQuestions === 1 ? 'questão' : 'questões'}</strong>. {isUserEligibleOfficial ? 'Você atingiu o requisito de questões para homologação oficial.' : `Resolva mais ${needed} ${needed === 1 ? 'questão' : 'questões'} para figurar nesta aba.`}
+                            </>
+                          );
+                        })()}
                       </>
                     )}
                   </p>

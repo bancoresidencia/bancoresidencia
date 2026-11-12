@@ -651,7 +651,7 @@ export async function POST(req: NextRequest) {
     // 1. Identifica a tabela/view alvo conforme o modo (Acesso Direto vs Revalida)
     const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
     const targetTable = resolveTargetTable(filters);
-    const baseTotal = isRevalida ? 5499 : 173526;
+    const baseTotal = isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
 
     // 2. Paginação com ordenação dinâmica
     const isUnseenWithManySolved = Boolean(

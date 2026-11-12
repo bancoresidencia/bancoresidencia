@@ -474,30 +474,30 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
           {/* 5. RODAPÉ DE ESTATÍSTICAS CLÁSSICAS DO ANKI */}
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 pt-2 border-t border-zinc-100 dark:border-zinc-800/80 text-[11px] text-zinc-600 dark:text-zinc-400 font-medium">
             <div>
-              Daily average:{' '}
+              Média diária:{' '}
               <strong className="font-mono font-bold text-[#44a340] dark:text-[#5cae4c]">
-                {dailyAverage} reviews
+                {dailyAverage} {dailyAverage === 1 ? 'revisão' : 'revisões'}
               </strong>
             </div>
 
             <div>
-              Days learned:{' '}
+              Dias com estudo:{' '}
               <strong className="font-mono font-bold text-[#8cc665] dark:text-[#bddb7a]">
                 {daysLearnedPercent}%
               </strong>
             </div>
 
             <div>
-              Longest streak:{' '}
+              Maior sequência:{' '}
               <strong className="font-mono font-bold text-[#44a340] dark:text-[#5cae4c]">
-                {longestStreak} {longestStreak === 1 ? 'day' : 'days'}
+                {longestStreak} {longestStreak === 1 ? 'dia' : 'dias'}
               </strong>
             </div>
 
             <div>
-              Current streak:{' '}
+              Sequência atual:{' '}
               <strong className="font-mono font-bold text-[#8cc665] dark:text-[#bddb7a]">
-                {currentStreak} {currentStreak === 1 ? 'day' : 'days'}
+                {currentStreak} {currentStreak === 1 ? 'dia' : 'dias'}
               </strong>
             </div>
           </div>
@@ -516,8 +516,8 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
         >
           <div className="font-bold whitespace-nowrap">
             {hoveredDay.total > 0
-              ? `${hoveredDay.total} ${hoveredDay.total === 1 ? 'review' : 'reviews'} on`
-              : 'No reviews on'}
+              ? `${hoveredDay.total} ${hoveredDay.total === 1 ? 'revisão' : 'revisões'} em`
+              : 'Nenhuma revisão em'}
           </div>
           <div className="text-zinc-400 text-[10px] whitespace-nowrap">
             {hoveredDay.formattedDate}

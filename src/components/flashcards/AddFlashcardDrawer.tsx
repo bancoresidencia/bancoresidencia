@@ -14,6 +14,7 @@ import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
 import { clinicalHierarchy } from '@/data/mockQuestions';
+import { formatSubSubfocoDisplay } from '@/components/AdvancedQuestionFilters';
 import { SPECIALTY_CONFIGS } from '../FlashcardsView';
 
 interface AddFlashcardDrawerProps {
@@ -21,13 +22,25 @@ interface AddFlashcardDrawerProps {
   onClose: () => void;
   onCardSaved: () => void;
   initialDeckId?: string;
+  initialFront?: string;
+  initialBack?: string;
+  initialSpecialty?: string;
+  initialTema?: string;
+  initialFoco?: string;
+  initialComment?: string;
 }
 
 export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   isOpen,
   onClose,
   onCardSaved,
-  initialDeckId = 'deck-padrao'
+  initialDeckId = 'deck-padrao',
+  initialFront,
+  initialBack,
+  initialSpecialty,
+  initialTema,
+  initialFoco,
+  initialComment
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
@@ -37,24 +50,31 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   }, [user?.id, isOpen]);
 
   const [selectedDeckId, setSelectedDeckId] = useState(initialDeckId);
-
-  React.useEffect(() => {
-    if (isOpen && initialDeckId) {
-      setSelectedDeckId(initialDeckId);
-    }
-  }, [isOpen, initialDeckId]);
-
-  const [newCardSpecialty, setNewCardSpecialty] = useState('Clínica Médica');
-  const [newCardTema, setNewCardTema] = useState('');
-  const [newCardFoco, setNewCardFoco] = useState('');
-  const [newCardFront, setNewCardFront] = useState('');
-  const [newCardBack, setNewCardBack] = useState('');
-  const [newCardComment, setNewCardComment] = useState('');
+  const [newCardSpecialty, setNewCardSpecialty] = useState(initialSpecialty || 'Clínica Médica');
+  const [newCardTema, setNewCardTema] = useState(initialTema || '');
+  const [newCardFoco, setNewCardFoco] = useState(initialFoco || '');
+  const [newCardSubfoco, setNewCardSubfoco] = useState('');
+  const [newCardSubSubfoco, setNewCardSubSubfoco] = useState('');
+  const [newCardFront, setNewCardFront] = useState(initialFront || '');
+  const [newCardBack, setNewCardBack] = useState(initialBack || '');
+  const [newCardComment, setNewCardComment] = useState(initialComment || '');
   const [newCardPriority, setNewCardPriority] = useState<'essential' | 'standard'>('essential');
   const [newCardTags, setNewCardTags] = useState('');
   const [addCardSuccessToast, setAddCardSuccessToast] = useState(false);
 
   const frontTextareaRef = useRef<HTMLTextAreaElement>(null);
+
+  React.useEffect(() => {
+    if (isOpen) {
+      if (initialDeckId) setSelectedDeckId(initialDeckId);
+      if (initialSpecialty) setNewCardSpecialty(initialSpecialty);
+      if (initialTema) setNewCardTema(initialTema);
+      if (initialFoco) setNewCardFoco(initialFoco);
+      if (initialFront !== undefined) setNewCardFront(initialFront);
+      if (initialBack !== undefined) setNewCardBack(initialBack);
+      if (initialComment !== undefined) setNewCardComment(initialComment);
+    }
+  }, [isOpen, initialDeckId, initialSpecialty, initialTema, initialFoco, initialFront, initialBack, initialComment]);
 
   // Temas da especialidade selecionada no Drawer
   const drawerTemas = useMemo(() => {
@@ -72,6 +92,23 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
     const temaObj = drawerTemas.find((t) => t.tema === newCardTema);
     return temaObj?.focos.map((f) => f.foco) || [];
   }, [drawerTemas, newCardTema]);
+
+  // Subfocos do foco selecionado no Drawer
+  const drawerSubfocos = useMemo(() => {
+    const temaObj = drawerTemas.find((t) => t.tema === newCardTema);
+    const focoObj = temaObj?.focos.find((f) => f.foco === newCardFoco);
+    return focoObj?.subfocos || [];
+  }, [drawerTemas, newCardTema, newCardFoco]);
+
+  // Sub-subfocos do subfoco selecionado no Drawer
+  const drawerSubSubfocos = useMemo(() => {
+    if (!newCardSubfoco) return [];
+    const subObj = drawerSubfocos.find(
+      (s) => (typeof s === 'string' ? s : s.subfoco) === newCardSubfoco
+    );
+    if (!subObj || typeof subObj === 'string') return [];
+    return subObj.sub_subfocos || [];
+  }, [drawerSubfocos, newCardSubfoco]);
 
   // Inserir Oclusão Cloze
   const handleInsertCloze = () => {
@@ -120,6 +157,9 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       specialty: newCardSpecialty,
       theme: finalTema,
       focus: finalFoco,
+      subfocus: newCardSubfoco.trim() || undefined,
+      sub_subfocus: newCardSubSubfoco.trim() || undefined,
+      subSubfocus: newCardSubSubfoco.trim() || undefined,
       deckId: selectedDeckId,
       priority: newCardPriority,
       tags: tagsArray.length > 0 ? tagsArray : undefined
@@ -136,6 +176,8 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       setNewCardBack('');
       setNewCardComment('');
       setNewCardTags('');
+      setNewCardSubfoco('');
+      setNewCardSubSubfoco('');
       if (frontTextareaRef.current) frontTextareaRef.current.focus();
     } else {
       onClose();
@@ -143,6 +185,8 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       setNewCardBack('');
       setNewCardComment('');
       setNewCardTags('');
+      setNewCardSubfoco('');
+      setNewCardSubSubfoco('');
     }
   };
 
@@ -268,7 +312,11 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
               </label>
               <select
                 value={newCardFoco}
-                onChange={(e) => setNewCardFoco(e.target.value)}
+                onChange={(e) => {
+                  setNewCardFoco(e.target.value);
+                  setNewCardSubfoco('');
+                  setNewCardSubSubfoco('');
+                }}
                 className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
               >
                 {drawerFocos.map((foc) => (
@@ -278,6 +326,52 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
                 ))}
               </select>
             </div>
+
+            {drawerSubfocos.length > 0 && (
+              <div>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Subfoco (Opcional)
+                </label>
+                <select
+                  value={newCardSubfoco}
+                  onChange={(e) => {
+                    setNewCardSubfoco(e.target.value);
+                    setNewCardSubSubfoco('');
+                  }}
+                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                >
+                  <option value="">Nenhum subfoco específico</option>
+                  {drawerSubfocos.map((s) => {
+                    const sName = typeof s === 'string' ? s : s.subfoco;
+                    return (
+                      <option key={sName} value={sName}>
+                        {sName}
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+            )}
+
+            {drawerSubSubfocos.length > 0 && (
+              <div>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Sub-subfoco / 4º Nível (Opcional)
+                </label>
+                <select
+                  value={newCardSubSubfoco}
+                  onChange={(e) => setNewCardSubSubfoco(e.target.value)}
+                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                >
+                  <option value="">Nenhum sub-subfoco específico</option>
+                  {drawerSubSubfocos.map((ss) => (
+                    <option key={ss} value={ss}>
+                      {formatSubSubfocoDisplay(ss)}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
           </div>
 
           {/* Frente do Flashcard com Auxiliar de Cloze */}
@@ -406,4 +500,3 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
     </div>
   );
 };
-

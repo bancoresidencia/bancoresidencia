@@ -10,6 +10,8 @@ export interface StudyHighlight {
   color: HighlighterColor;
   style: HighlightStyle;
   note?: string;
+  prefix?: string;
+  suffix?: string;
   createdAt: string;
   updatedAt?: string;
 }

@@ -33,6 +33,7 @@ import {
 import { useTheme } from '@/context/ThemeContext';
 import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 import { fetchQuestionsFromSupabase } from '@/services/questionService';
+import { prefetchQuestionResolutions, getQuestionResolution, subscribeToResolutions } from '@/services/resolutionCache';
 import { CadernoErrosReviewSession } from './CadernoErrosReviewSession';
 import { ERROR_REASON_CONFIG } from '@/utils/errorReasons';
 import {
@@ -112,6 +113,14 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
   // Sessão Ativa às Cegas
   const [reviewSessionQuestionIds, setReviewSessionQuestionIds] = useState<string[] | null>(null);
 
+  // Reatividade para gabaritos e justificativas carregados em segundo plano
+  const [, setResolutionVersion] = useState(0);
+  useEffect(() => {
+    return subscribeToResolutions(() => {
+      setResolutionVersion((v) => v + 1);
+    });
+  }, []);
+
   // 1. Verifica no carregamento se há sessão ativa salva
   useEffect(() => {
     const saved = getActiveReviewSession();
@@ -178,6 +187,9 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
     setIsLoadingQuestions(true);
 
     const batch = missingIds.slice(0, 100);
+    // Pré-carrega gabaritos oficiais e comentários em lote em segundo plano
+    prefetchQuestionResolutions(batch);
+
     fetchQuestionsFromSupabase({}, 1, batch.length, batch)
       .then((res) => {
         if (!isMounted) return;
@@ -946,13 +958,37 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/60 dark:border-zinc-800/60 text-xs">
                   {/* Alternativa marcada pelo aluno */}
                   <div className="flex items-center gap-2">
-                    <span className="text-slate-500 dark:text-zinc-400">Você errou marcando:</span>
-                    <span className="w-6 h-6 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 font-mono font-bold flex items-center justify-center text-xs border border-rose-500/30">
-                      {answer.letter || '?'}
-                    </span>
-                    <span className="text-slate-400 dark:text-zinc-500 text-[11px]">
-                      (Gabarito Oficial: <strong>{q?.correctAnswer || '?'}</strong>)
-                    </span>
+                    {(() => {
+                      const isRecoveredOrCorrect = Boolean(answer.isCorrect || answer.statusRetrial === 'recuperado');
+                      const resolution = getQuestionResolution(questionId);
+                      const officialAnswer = q?.correctAnswer || resolution?.correctAnswer || (answer.isCorrect ? answer.letter : undefined);
+
+                      return (
+                        <>
+                          <span className="text-slate-500 dark:text-zinc-400">
+                            {isRecoveredOrCorrect ? 'Você acertou marcando:' : 'Você errou marcando:'}
+                          </span>
+                          <span
+                            className={`w-6 h-6 rounded-lg font-mono font-bold flex items-center justify-center text-xs border ${
+                              isRecoveredOrCorrect
+                                ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                                : 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border-rose-500/30'
+                            }`}
+                          >
+                            {answer.letter || '?'}
+                          </span>
+                          <span className="text-slate-400 dark:text-zinc-500 text-[11px]">
+                            (Gabarito Oficial:{' '}
+                            {officialAnswer ? (
+                              <strong>{officialAnswer}</strong>
+                            ) : (
+                              <span className="italic">Disponível na resolução</span>
+                            )}
+                            )
+                          </span>
+                        </>
+                      );
+                    })()}
                   </div>
 
                   {/* Seletor do Motivo do Erro */}
@@ -1051,23 +1087,28 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 )}
 
                 {/* Comentário Padrão-Ouro da Banca (Expansível) */}
-                {isCommentOpen && q?.commentary && (
-                  <div className="p-4 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 space-y-2 animate-in fade-in duration-150">
-                    <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-800 dark:text-emerald-300">
-                      <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
-                      Comentário Padrão-Ouro & Take-Home Message:
-                    </div>
-                    <p className="text-xs leading-relaxed text-slate-800 dark:text-zinc-200 whitespace-pre-line font-normal">
-                      {q.commentary}
-                    </p>
-                    {q.takeHomeMessage && (
-                      <div className="mt-2 p-2.5 rounded-xl bg-white/70 dark:bg-black/30 border border-emerald-300/60 dark:border-emerald-700/40 text-xs font-medium text-emerald-950 dark:text-emerald-200">
-                        <span className="font-bold">Take-Home Message: </span>
-                        {q.takeHomeMessage}
+                {(() => {
+                  const activeCommentary = q?.commentary || getQuestionResolution(questionId)?.commentary;
+                  if (!isCommentOpen || !activeCommentary) return null;
+
+                  return (
+                    <div className="p-4 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 space-y-2 animate-in fade-in duration-150">
+                      <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-800 dark:text-emerald-300">
+                        <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+                        Comentário Padrão-Ouro & Take-Home Message:
                       </div>
-                    )}
-                  </div>
-                )}
+                      <p className="text-xs leading-relaxed text-slate-800 dark:text-zinc-200 whitespace-pre-line font-normal">
+                        {activeCommentary}
+                      </p>
+                      {q?.takeHomeMessage && (
+                        <div className="mt-2 p-2.5 rounded-xl bg-white/70 dark:bg-black/30 border border-emerald-300/60 dark:border-emerald-700/40 text-xs font-medium text-emerald-950 dark:text-emerald-200">
+                          <span className="font-bold">Take-Home Message: </span>
+                          {q.takeHomeMessage}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })()}
 
                 {/* Bloco de Anotações Pessoais do Aluno (Expansível) */}
                 {isNotesOpen && (
@@ -1112,7 +1153,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-100 dark:border-zinc-800/80">
                   <div className="flex flex-wrap items-center gap-2">
                     {/* Botão Ver Comentário */}
-                    {q?.commentary && (
+                    {(q?.commentary || getQuestionResolution(questionId)?.commentary) && (
                       <button
                         type="button"
                         onClick={() =>
