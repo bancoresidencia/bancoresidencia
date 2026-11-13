@@ -54,7 +54,7 @@ import {
   fetchTotalQuestionsCount,
   fetchQuestionIdsForListCriteria
 } from '@/services/questionService';
-import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
+import { getHomologatedBaseline } from '@/data/homologatedFacetsBaseline';
 import { prefetchQuestionResolutions } from '@/services/resolutionCache';
 
 export const QuestoesView: React.FC = () => {
@@ -113,7 +113,7 @@ export const QuestoesView: React.FC = () => {
 
     return {
       search,
-      modalidades: ['Residência Médica'],
+      modalidades: ['Acesso Direto'],
       especialidades: espParam ? [espParam] : [],
       temas: temaParam ? [temaParam] : [],
       focos: focoParam ? [focoParam] : [],
@@ -137,7 +137,7 @@ export const QuestoesView: React.FC = () => {
   const [questionsPage, setQuestionsPage] = useState<number>(1);
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
   const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(0);
-  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(homologatedDiretoBaseline.total);
+  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(() => getHomologatedBaseline(['Acesso Direto']).total);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(true);
   // Referência estável para userAnswers: evita que responder uma questão acione refetch fantasma de 50 questões
   const userAnswersRef = useRef(userAnswers);
@@ -194,9 +194,10 @@ export const QuestoesView: React.FC = () => {
 
   // Carrega total global sincronizado com a modalidade
   useEffect(() => {
+    const baseline = getHomologatedBaseline(advancedFilters.modalidades);
+    setTotalGlobalQuestions(baseline.total);
     const isRevalida = advancedFilters.modalidades?.length === 1 && advancedFilters.modalidades[0] === 'Revalida';
-    setTotalGlobalQuestions(isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total);
-    fetchTotalQuestionsCount(false, isRevalida)
+    fetchTotalQuestionsCount(false, isRevalida, advancedFilters.modalidades)
       .then((count) => {
         if (count > 0) setTotalGlobalQuestions(count);
       })

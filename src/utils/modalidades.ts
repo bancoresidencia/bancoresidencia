@@ -20,9 +20,19 @@ export function getQuestionModalidades(q: Question): StudyModalidade[] {
   // 1. Modalidades declaradas explicitamente no objeto da questão
   if (q.modalidade) {
     set.add(q.modalidade);
+    if (q.modalidade === 'Acesso Direto' || q.modalidade === 'Residência Médica') {
+      set.add('Acesso Direto');
+      set.add('Residência Médica');
+    }
   }
   if (Array.isArray(q.modalidades)) {
-    q.modalidades.forEach((m) => set.add(m));
+    q.modalidades.forEach((m) => {
+      set.add(m);
+      if (m === 'Acesso Direto' || m === 'Residência Médica') {
+        set.add('Acesso Direto');
+        set.add('Residência Médica');
+      }
+    });
   }
 
   // 2. Provas de Residência Médica e Revalida compartilham todo o acervo clínico das grandes áreas

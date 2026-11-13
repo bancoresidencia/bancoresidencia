@@ -1,6 +1,9 @@
 export type StudyModalidade =
-  | 'Residência Médica'
+  | 'Acesso Direto'
   | 'Revalida'
+  | 'R+'
+  | 'Título de Especialista'
+  | 'Residência Médica'
   | 'Ciclo Básico'
   | 'R+ Clínica Médica'
   | 'R+ Pediatria'
@@ -20,7 +23,7 @@ export type QuestionStatus =
 
 export type QuestionDifficulty = 'Todas' | 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
 
-export type QuestionType = 'Todas' | 'Múltipla escolha' | 'Dissertativa' | 'Discursiva' | 'Certo ou errado' | 'Verdadeiro ou falso';
+export type QuestionType = 'Todas' | 'Múltipla escolha' | 'Dissertativa' | 'Discursiva' | 'Certo ou errado' | 'Verdadeiro ou falso' | 'Certo e Errado';
 
 export interface SubfocoNode {
   subfoco: string;

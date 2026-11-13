@@ -1,7 +1,11 @@
 import { supabase } from '@/lib/supabase';
 import { ExtendedFilterState, resolveBancaList, BANCA_ALIASES, buildClinicalFilterClauses, REVALIDA_POSTGREST_FILTER } from './questionService';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
-import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
+import {
+  getHomologatedBaseline,
+  homologatedDiretoBaseline,
+  homologatedRevalidaBaseline
+} from '@/data/homologatedFacetsBaseline';
 import { sanitizePostgrestTerm } from '@/utils/security';
 
 // Cache em memória para contagens facetadas (TTL 60s)
@@ -25,11 +29,20 @@ export interface FacetedHierarchyCountsResult {
 }
 
 /**
- * Retorna o nome da view canônica de questões conforme a modalidade (Acesso Direto vs Revalida).
+ * Retorna o nome da view canônica de questões conforme a modalidade.
+ * Suporta Acesso Direto, Revalida, R+, Título de Especialista e View Unificada.
  */
 export function getTargetQuestionTable(filters?: ExtendedFilterState): string {
-  const isRevalida = Boolean(filters?.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
-  return isRevalida ? 'view_questions_revalida' : 'view_questions_acesso_direto';
+  const mods = filters?.modalidades;
+  if (!mods || mods.length === 0 || mods.length > 1) {
+    return 'view_questions_all';
+  }
+  const m = mods[0];
+  if (m === 'Acesso Direto' || m === 'Residência Médica') return 'view_questions_acesso_direto';
+  if (m === 'Revalida') return 'view_questions_revalida';
+  if (m === 'R+' || (typeof m === 'string' && m.startsWith('R+'))) return 'view_questions_rplus';
+  if (m === 'Título de Especialista' || (typeof m === 'string' && m.startsWith('Título'))) return 'view_questions_titulo';
+  return 'view_questions_acesso_direto';
 }
 
 // Fisher-Yates shuffle
@@ -56,12 +69,8 @@ export function hasRightCardActiveFilters(filters: ExtendedFilterState): boolean
   const hasSearch = Boolean(filters.search && filters.search.trim());
   const hasAnuladas = Boolean(filters.ocultarAnuladasErro);
   const has5Anos = Boolean(filters.ultimos5Anos);
-  const hasRPlusOrTitulo = Boolean(
-    filters.modalidades &&
-    filters.modalidades.some(m => m.startsWith('R+') || m.startsWith('Título'))
-  );
 
-  return hasBancas || hasAnos || hasDiff || hasType || hasStatus || hasSearch || hasAnuladas || has5Anos || hasRPlusOrTitulo;
+  return hasBancas || hasAnos || hasDiff || hasType || hasStatus || hasSearch || hasAnuladas || has5Anos;
 }
 
 /**
@@ -74,10 +83,8 @@ export async function fetchFacetedHierarchyCounts(
   filters: ExtendedFilterState,
   signal?: AbortSignal
 ): Promise<FacetedHierarchyCountsResult | null> {
-  const isRevalidaMode = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
-
   if (!hasRightCardActiveFilters(filters)) {
-    const baseline = isRevalidaMode ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
+    const baseline = getHomologatedBaseline(filters.modalidades);
     return {
       totalRightCardCount: baseline.total,
       especialidades: baseline.especialidades,
@@ -173,18 +180,26 @@ export async function fetchFacetedHierarchyCounts(
           qSpec = qSpec.eq('difficulty', filters.dificuldade);
         }
         if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-          qSpec = qSpec.eq('type', filters.tipoQuestao);
+          if (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva') {
+            qSpec = qSpec.in('type', ['Dissertativa', 'Discursiva']);
+          } else if (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso') {
+            qSpec = qSpec.in('type', ['Certo ou errado', 'Verdadeiro ou falso']);
+          } else {
+            qSpec = qSpec.eq('type', filters.tipoQuestao);
+          }
         }
         if (filters.ocultarAnuladasErro) {
           qSpec = qSpec.eq('is_anulada', false);
         }
         if (filters.modalidades && filters.modalidades.length > 0) {
-          if (isRevalidaMode) {
-            if (targetTable !== 'view_questions_revalida') {
-              qSpec = qSpec.or(REVALIDA_POSTGREST_FILTER);
-            }
-          } else if (!(filters.modalidades.length === 1 && filters.modalidades[0] === 'Residência Médica')) {
-            qSpec = qSpec.in('modalidade', filters.modalidades);
+          if (targetTable === 'view_questions_all') {
+            const canonicalMods = filters.modalidades.map(m => {
+              if (m === 'Residência Médica') return 'Acesso Direto';
+              if (typeof m === 'string' && m.startsWith('R+')) return 'R+';
+              if (typeof m === 'string' && m.startsWith('Título')) return 'Título de Especialista';
+              return m;
+            });
+            qSpec = qSpec.in('modalidade', canonicalMods);
           }
         }
         if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
@@ -461,7 +476,8 @@ export async function generateStratifiedQuiz(
     'Ginecologia',
     'Obstetrícia',
     'Medicina Preventiva e Social',
-    'Medicina Preventiva'
+    'Medicina Preventiva',
+    'Outras / Em Curadoria'
   ]);
 
   for (const [key, qty] of Object.entries(quotasByItem)) {

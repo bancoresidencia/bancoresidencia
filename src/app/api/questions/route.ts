@@ -14,7 +14,11 @@ import {
 } from '@/services/questionService';
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
-import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
+import {
+  getHomologatedBaseline,
+  homologatedDiretoBaseline,
+  homologatedRevalidaBaseline
+} from '@/data/homologatedFacetsBaseline';
 import { generateSessionTicket } from '@/utils/securityTickets';
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
 
@@ -87,8 +91,16 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
 }
 
 function resolveTargetTable(filters: ExtendedFilterState): string {
-  const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
-  return isRevalida ? 'view_questions_revalida' : 'view_questions_acesso_direto';
+  const mods = filters?.modalidades;
+  if (!mods || mods.length === 0 || mods.length > 1) {
+    return 'view_questions_all';
+  }
+  const m = mods[0];
+  if (m === 'Acesso Direto' || m === 'Residência Médica') return 'view_questions_acesso_direto';
+  if (m === 'Revalida') return 'view_questions_revalida';
+  if (m === 'R+' || (typeof m === 'string' && m.startsWith('R+'))) return 'view_questions_rplus';
+  if (m === 'Título de Especialista' || (typeof m === 'string' && m.startsWith('Título'))) return 'view_questions_titulo';
+  return 'view_questions_acesso_direto';
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -97,7 +109,17 @@ async function executeResilientQuery<T = any>(
   preferredTable: string
 ): Promise<{ data: T | null; count?: number | null; error: any }> {
   const result = await queryFn(preferredTable);
-  if (result.error && (result.error.code === '42P01' || result.error.message?.includes('does not exist') || result.error.message?.includes('relation'))) {
+  if (result.error && (
+    result.error.code === '42P01' ||
+    result.error.code === 'PGRST205' ||
+    result.error.message?.includes('does not exist') ||
+    result.error.message?.includes('schema cache') ||
+    result.error.message?.includes('relation')
+  )) {
+    if (preferredTable === 'view_questions_all') {
+      console.warn(`[/api/questions] View 'view_questions_all' indisponível no Supabase. Fallback automático para 'view_questions_acesso_direto'.`);
+      return await queryFn('view_questions_acesso_direto');
+    }
     console.warn(`[/api/questions] View '${preferredTable}' indisponível no Supabase. Fallback automático para 'questions'.`);
     return await queryFn('questions');
   }
@@ -130,25 +152,25 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
   // Filtro de Status do Aluno via IDs diretos com limites seguros de PostgREST
   if (filters.status === 'Resolvidas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      query = query.in('id', filters.userSolvedIds.slice(0, 100));
+      query = query.in('id', filters.userSolvedIds.slice(0, 1000));
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Acertadas') {
     if (filters.userCorrectIds && filters.userCorrectIds.length > 0) {
-      query = query.in('id', filters.userCorrectIds.slice(0, 100));
+      query = query.in('id', filters.userCorrectIds.slice(0, 1000));
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Erradas') {
     if (filters.userWrongIds && filters.userWrongIds.length > 0) {
-      query = query.in('id', filters.userWrongIds.slice(0, 100));
+      query = query.in('id', filters.userWrongIds.slice(0, 1000));
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Não vistas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      const safePruneIds = filters.userSolvedIds.slice(0, 100);
+      const safePruneIds = filters.userSolvedIds.slice(0, 200);
       query = query.not('id', 'in', `(${safePruneIds.join(',')})`);
     }
   }
@@ -169,9 +191,19 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
   }
 
   // 2. Árvore Clínica: Refinamento Pai -> Filho e SOMA / UNIÃO entre ramos diferentes
-  const { orParts, standaloneSpecs, standaloneTemas, standaloneFocos, standaloneSubfocos } = buildClinicalFilterClauses(filters);
+  const hasOutrasSpec = Boolean(filters.especialidades?.includes('Outras / Em Curadoria'));
+  const filtersWithoutOutras = hasOutrasSpec
+    ? { ...filters, especialidades: filters.especialidades?.filter(s => s !== 'Outras / Em Curadoria') }
+    : filters;
 
-  if (orParts.length === 1) {
+  const { orParts, standaloneSpecs, standaloneTemas, standaloneFocos, standaloneSubfocos } = buildClinicalFilterClauses(filtersWithoutOutras);
+
+  if (hasOutrasSpec && orParts.length === 0) {
+    query = query.or('especialidade.is.null,especialidade.eq.""');
+  } else if (hasOutrasSpec && orParts.length > 0) {
+    const combinedOr = [...orParts, 'especialidade.is.null', 'especialidade.eq.""'];
+    query = query.or(combinedOr.join(','));
+  } else if (orParts.length === 1) {
     if (standaloneSpecs.length > 0) {
       query = query.in('especialidade', standaloneSpecs);
     } else if (standaloneTemas.length > 0) {
@@ -232,15 +264,32 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
 
   // 8. Tipo de Questão
   if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-    query = query.eq('type', filters.tipoQuestao);
+    if (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva') {
+      query = query.in('type', ['Dissertativa', 'Discursiva']);
+    } else if (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso' || filters.tipoQuestao === 'Certo e Errado') {
+      query = query.in('type', ['Certo ou errado', 'Verdadeiro ou falso', 'Certo e Errado']);
+    } else {
+      query = query.eq('type', filters.tipoQuestao);
+    }
   }
 
-  // 9. Ocultar Anuladas
+  // 9. Modalidade (quando múltiplas modalidades ou modalidade específica)
+  if (filters.modalidades && filters.modalidades.length > 0 && filters.modalidades.length < 4) {
+    const canonicalMods = filters.modalidades.map(m => {
+      if (m === 'Residência Médica') return 'Acesso Direto';
+      if (typeof m === 'string' && m.startsWith('R+')) return 'R+';
+      if (typeof m === 'string' && m.startsWith('Título')) return 'Título de Especialista';
+      return m;
+    });
+    query = query.in('modalidade', canonicalMods);
+  }
+
+  // 10. Ocultar Anuladas
   if (filters.ocultarAnuladasErro) {
     query = query.eq('is_anulada', false);
   }
 
-  // 10. Últimos 5 anos
+  // 11. Últimos 5 anos
   if (filters.ultimos5Anos) {
     const minYear = new Date().getFullYear() - 4;
     query = query.gte('year', minYear);
@@ -284,21 +333,22 @@ export async function POST(req: NextRequest) {
 
     // Se o filtro de status estiver ativo e os IDs ainda não tiverem sido fornecidos pelo client, consulta no Supabase
     if (filters.status && filters.status !== 'Todas') {
-      if (!filters.userSolvedIds && !filters.userCorrectIds && !filters.userWrongIds) {
+      const hasClientIds =
+        (filters.userSolvedIds && filters.userSolvedIds.length > 0) ||
+        (filters.userCorrectIds && filters.userCorrectIds.length > 0) ||
+        (filters.userWrongIds && filters.userWrongIds.length > 0);
+
+      if (!hasClientIds && authenticatedUserId) {
         try {
-          const supabaseServer = await createSupabaseServerClient();
-          const { data: { user } } = await supabaseServer.auth.getUser();
-          if (user?.id) {
-            const { data: userAnswersData } = await supabaseAdmin
-              .from('user_answers')
-              .select('question_id, is_correct')
-              .eq('user_id', user.id);
-            const rows = (userAnswersData || []) as unknown as Array<{ question_id: string; is_correct: boolean }>;
-            if (rows.length > 0) {
-              filters.userSolvedIds = rows.map((r) => r.question_id);
-              filters.userCorrectIds = rows.filter((r) => r.is_correct).map((r) => r.question_id);
-              filters.userWrongIds = rows.filter((r) => !r.is_correct).map((r) => r.question_id);
-            }
+          const { data: userAnswersData } = await supabaseAdmin
+            .from('user_answers')
+            .select('question_id, is_correct')
+            .eq('user_id', authenticatedUserId);
+          const rows = (userAnswersData || []) as unknown as Array<{ question_id: string; is_correct: boolean }>;
+          if (rows.length > 0) {
+            filters.userSolvedIds = rows.map((r) => r.question_id);
+            filters.userCorrectIds = rows.filter((r) => r.is_correct).map((r) => r.question_id);
+            filters.userWrongIds = rows.filter((r) => !r.is_correct).map((r) => r.question_id);
           }
         } catch {
           // prossegue normalmente
@@ -309,8 +359,8 @@ export async function POST(req: NextRequest) {
     // Se a requisição for para contagens facetadas da árvore clínica (Dynamic Hierarchy Facets)
     if (body.action === 'facets') {
       const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
-      const hasBancas = Boolean(filters.instituicoes && filters.instituicoes.length > 0);
       const isRPlusOrTitulo = Boolean(filters.modalidades?.some((m: string) => m.startsWith('R+') || m.startsWith('Título')));
+      const hasBancas = Boolean(filters.instituicoes && filters.instituicoes.length > 0);
 
       // Clona filtros removendo a árvore clínica para calcular a distribuição em todos os nós
       const filtersWithoutClinical: ExtendedFilterState = {
@@ -322,10 +372,9 @@ export async function POST(req: NextRequest) {
       };
 
       // Fast-path ultrarrápido (0ms): se não há filtros restritivos no card lateral (bancas, anos, etc.),
-      // retorna as contagens pré-computadas exatas do catálogo homologado (173.526 Acesso Direto ou 5.499 Revalida)
+      // retorna as contagens pré-computadas exatas do catálogo homologado
       const hasRightCardFilters = Boolean(
         hasBancas ||
-        isRPlusOrTitulo ||
         (filtersWithoutClinical.search && filtersWithoutClinical.search.trim()) ||
         (filtersWithoutClinical.anos && filtersWithoutClinical.anos.length > 0 && filtersWithoutClinical.anos.length < 18) ||
         (filtersWithoutClinical.dificuldade && filtersWithoutClinical.dificuldade !== 'Todas') ||
@@ -336,7 +385,7 @@ export async function POST(req: NextRequest) {
       );
 
       if (!hasRightCardFilters) {
-        const baseline = isRevalida ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
+        const baseline = getHomologatedBaseline(filters.modalidades);
         return NextResponse.json({
           facets: {
             totalRightCardCount: baseline.total,
@@ -416,8 +465,8 @@ export async function POST(req: NextRequest) {
             subfocos = typedResult.subfocos || {};
           } else {
             // Fallback proporcional se a versão anterior da RPC estiver ativa
-            const globalTotal = isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
-            const baseline = isRevalida ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
+            const baseline = getHomologatedBaseline(filters.modalidades);
+            const globalTotal = baseline.total;
             const overallRatio = globalTotal > 0 ? typedResult.totalRightCardCount / globalTotal : 1;
             if (typedResult.totalRightCardCount > 0) {
               for (const [f, count] of Object.entries((baseline.focos as Record<string, number>) || hierarchyQuestionCounts.focos || {})) {

@@ -219,8 +219,11 @@ export function buildSqlWhereClauses(filters: ExtendedFilterState = {}, question
 
   // Especialidades standalone
   const standaloneSpecs = new Set<string>();
+  let hasOutras = false;
   selectedSpecs.forEach((sp) => {
-    if (!specsWithChildren.has(sp)) {
+    if (sp === 'Outras / Em Curadoria') {
+      hasOutras = true;
+    } else if (!specsWithChildren.has(sp)) {
       if (sp === 'Cirurgia' || sp === 'Cirurgia Geral') {
         standaloneSpecs.add('Cirurgia');
         standaloneSpecs.add('Cirurgia Geral');
@@ -235,6 +238,10 @@ export function buildSqlWhereClauses(filters: ExtendedFilterState = {}, question
       }
     }
   });
+
+  if (hasOutras) {
+    clinicalOrParts.push(`(especialidade IS NULL OR especialidade = '')`);
+  }
 
   if (standaloneSpecs.size > 0) {
     const list = Array.from(standaloneSpecs);
@@ -310,19 +317,27 @@ export function buildSqlWhereClauses(filters: ExtendedFilterState = {}, question
   }
 
   // 6. Modalidades
-  if (filters.modalidades && filters.modalidades.length > 0) {
-    const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
-    const isOnlyDefault = filters.modalidades.length === 1 && filters.modalidades[0] === 'Residência Médica';
+  if (filters.modalidades && filters.modalidades.length > 0 && filters.modalidades.length < 4) {
+    const canonicalMods = filters.modalidades.map((m) => {
+      if (m === 'Residência Médica') return 'Acesso Direto';
+      if (typeof m === 'string' && m.startsWith('R+')) return 'R+';
+      if (typeof m === 'string' && m.startsWith('Título')) return 'Título de Especialista';
+      return m;
+    });
 
-    if (hasRevalida) {
+    const hasRevalida = canonicalMods.includes('Revalida');
+    const nonRevalidaMods = canonicalMods.filter((m) => m !== 'Revalida');
+
+    if (hasRevalida && nonRevalidaMods.length > 0) {
+      const placeholders = nonRevalidaMods.map(() => '?').join(',');
+      whereParts.push(`(modalidade IN (${placeholders}) OR modalidade = 'Revalida' OR banca IN ('INEP Revalida', 'UFMT Revalida', 'UEPA Revalida', 'UNIRG Revalida', 'FMRP-USP'))`);
+      params.push(...nonRevalidaMods);
+    } else if (hasRevalida) {
       whereParts.push(`(modalidade = 'Revalida' OR banca IN ('INEP Revalida', 'UFMT Revalida', 'UEPA Revalida', 'UNIRG Revalida', 'FMRP-USP'))`);
     } else {
-      whereParts.push(`(modalidade != 'Revalida' AND banca NOT IN ('INEP Revalida', 'UFMT Revalida', 'UEPA Revalida', 'UNIRG Revalida', 'FMRP-USP'))`);
-      if (!isOnlyDefault) {
-        const placeholders = filters.modalidades.map(() => '?').join(',');
-        whereParts.push(`modalidade IN (${placeholders})`);
-        params.push(...filters.modalidades);
-      }
+      const placeholders = nonRevalidaMods.map(() => '?').join(',');
+      whereParts.push(`(modalidade IN (${placeholders}) AND banca NOT IN ('INEP Revalida', 'UFMT Revalida', 'UEPA Revalida', 'UNIRG Revalida', 'FMRP-USP'))`);
+      params.push(...nonRevalidaMods);
     }
   }
 
@@ -358,8 +373,14 @@ export function buildSqlWhereClauses(filters: ExtendedFilterState = {}, question
 
   // 11. Tipo de Questão
   if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-    whereParts.push(`type = ?`);
-    params.push(filters.tipoQuestao);
+    if (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva') {
+      whereParts.push(`type IN ('Dissertativa', 'Discursiva')`);
+    } else if (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso' || filters.tipoQuestao === 'Certo e Errado') {
+      whereParts.push(`type IN ('Certo ou errado', 'Verdadeiro ou falso', 'Certo e Errado')`);
+    } else {
+      whereParts.push(`type = ?`);
+      params.push(filters.tipoQuestao);
+    }
   }
 
   // 12. Ocultar Anuladas

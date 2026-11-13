@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import { Question, QuestionOption, AdvancedFilterState, QuestionReport, ReportStatus } from '@/types';
+import { Question, QuestionOption, AdvancedFilterState, QuestionReport, ReportStatus, StudyModalidade } from '@/types';
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
 import {
   sanitizePostgrestTerm,
@@ -14,10 +14,17 @@ import {
   fetchFacetedHierarchyCounts,
   hasRightCardActiveFilters,
   shuffleArray,
+  getTargetQuestionTable,
   type FacetedHierarchyCountsResult
 } from './stratifiedQuizService';
 import { getQuestionCount } from '@/data/hierarchyCounts';
-import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
+import {
+  getHomologatedBaseline,
+  homologatedDiretoBaseline,
+  homologatedRevalidaBaseline,
+  homologatedRPlusBaseline,
+  homologatedTituloBaseline
+} from '@/data/homologatedFacetsBaseline';
 import { clinicalHierarchy } from '@/data/mockQuestions';
 
 // Projeção segura de colunas: omite estritamente correct_answer e commentary contra scraping
@@ -465,44 +472,91 @@ export function resolveBancaList(rawBancas: string[]): string[] {
 /**
  * Retorna contagem total de questões homologadas e consolidadas
  */
-export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean = true, isRevalida: boolean = false): Promise<number> {
-  const cacheKey = `total_q_count_${onlyClassifiedWithAnswer}_${isRevalida}`;
+export async function fetchTotalQuestionsCount(
+  onlyClassifiedWithAnswer: boolean = true,
+  isRevalida: boolean = false,
+  modalidades?: StudyModalidade[]
+): Promise<number> {
+  const cacheKey = `total_q_count_${onlyClassifiedWithAnswer}_${isRevalida}_${(modalidades || []).join(',')}`;
   const cached = countCache.get(cacheKey);
   if (cached && Date.now() - cached.timestamp < 180000) {
     return cached.count;
   }
 
-  // Universo oficial consolidado padrão-ouro homologado (173.526 Acesso Direto / 5.499 Revalida)
-  const count = isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
+  const count = getHomologatedBaseline(modalidades).total;
   countCache.set(cacheKey, { count, timestamp: Date.now() });
   return count;
 }
 
 export function calculateHierarchyFallback(filters: ExtendedFilterState): number {
-  const isRevalida = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
-  const baseline = isRevalida ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
+  const isRevalida = Boolean(filters.modalidades?.some(m => m.toLowerCase().includes('revalida')));
+  const baseline = getHomologatedBaseline(filters.modalidades);
+
+  let baseCount = 0;
+  let hasClinical = false;
 
   if (filters.subSubfocos && filters.subSubfocos.length > 0) {
-    const sum = filters.subSubfocos.reduce((acc, ss) => acc + (getQuestionCount('sub_subfocos', ss) || 0), 0);
-    if (sum > 0) return Math.max(1, isRevalida ? Math.round(sum * 0.031) : sum);
-  }
-  if (filters.subfocos && filters.subfocos.length > 0) {
+    baseCount = Math.max(1, isRevalida ? 5 : 20);
+    hasClinical = true;
+  } else if (filters.subfocos && filters.subfocos.length > 0) {
     const sum = filters.subfocos.reduce((acc, s) => acc + ((baseline.subfocos as Record<string, number>)?.[s] || getQuestionCount('subfocos', s) || 0), 0);
-    if (sum > 0) return Math.max(1, sum);
-  }
-  if (filters.focos && filters.focos.length > 0) {
+    if (sum > 0) {
+      baseCount = Math.max(1, sum);
+      hasClinical = true;
+    }
+  } else if (filters.focos && filters.focos.length > 0) {
     const sum = filters.focos.reduce((acc, f) => acc + ((baseline.focos as Record<string, number>)[f] || getQuestionCount('focos', f) || 0), 0);
-    if (sum > 0) return Math.max(1, sum);
-  }
-  if (filters.temas && filters.temas.length > 0) {
+    if (sum > 0) {
+      baseCount = Math.max(1, sum);
+      hasClinical = true;
+    }
+  } else if (filters.temas && filters.temas.length > 0) {
     const sum = filters.temas.reduce((acc, t) => acc + ((baseline.temas as Record<string, number>)[t] || getQuestionCount('temas', t) || 0), 0);
-    if (sum > 0) return Math.max(1, sum);
-  }
-  if (filters.especialidades && filters.especialidades.length > 0) {
+    if (sum > 0) {
+      baseCount = Math.max(1, sum);
+      hasClinical = true;
+    }
+  } else if (filters.especialidades && filters.especialidades.length > 0) {
     const sum = filters.especialidades.reduce((acc, e) => acc + ((baseline.especialidades as Record<string, number>)[e] || getQuestionCount('especialidades', e) || 0), 0);
-    if (sum > 0) return Math.max(1, sum);
+    if (sum > 0) {
+      baseCount = Math.max(1, sum);
+      hasClinical = true;
+    }
   }
-  return isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
+
+  // Se não há filtro clínico, a base inicial é o total da modalidade
+  if (!hasClinical) {
+    if (filters.dificuldade && filters.dificuldade !== 'Todas') {
+      baseCount = baseline.dificuldades?.[filters.dificuldade as 'Fácil' | 'Médio' | 'Difícil'] || baseline.total;
+    } else if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
+      if (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Certo e Errado' || filters.tipoQuestao === 'Verdadeiro ou falso') {
+        baseCount = baseline.tipos?.['Certo ou errado'] || 0;
+      } else if (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva') {
+        baseCount = (baseline.tipos?.['Dissertativa'] || 0) + (baseline.tipos?.['Discursiva'] || 0);
+      } else {
+        baseCount = baseline.tipos?.[filters.tipoQuestao] || baseline.total;
+      }
+    } else if (filters.anos && filters.anos.length > 0 && filters.anos.length < 24) {
+      const sumYears = filters.anos.reduce((acc, y) => acc + (baseline.anos?.[y] || 0), 0);
+      baseCount = sumYears > 0 ? sumYears : baseline.total;
+    } else {
+      baseCount = baseline.total;
+    }
+  } else {
+    // Se há filtro clínico E também filtro de dificuldade
+    if (filters.dificuldade && filters.dificuldade !== 'Todas' && baseline.total > 0) {
+      const diffTotal = baseline.dificuldades?.[filters.dificuldade as 'Fácil' | 'Médio' | 'Difícil'] || 0;
+      const ratio = diffTotal / baseline.total;
+      baseCount = Math.max(1, Math.round(baseCount * ratio));
+    }
+  }
+
+  // Ajuste para "Não vistas"
+  if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
+    baseCount = Math.max(0, baseCount - filters.userSolvedIds.length);
+  }
+
+  return baseCount > 0 ? baseCount : baseline.total;
 }
 
 export async function fetchQuestionsFromSupabase(
@@ -544,10 +598,19 @@ export async function fetchQuestionsFromSupabase(
   const now = Date.now();
   const hasFreshCache = cachedCountEntry && (now - cachedCountEntry.timestamp < 90000);
 
-  // Consulta segura e protegida contra raspagem com chaveamento dinâmico entre Acesso Direto e Revalida
-  const isRevalidaMode = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
-  const targetViewTable = isRevalidaMode ? 'view_questions_revalida' : 'view_questions_acesso_direto';
+  // Consulta segura e protegida contra raspagem com chaveamento dinâmico entre as 4 modalidades
+  const targetViewTable = getTargetQuestionTable(filters);
   let query = supabase.from(targetViewTable).select(SAFE_QUESTION_COLUMNS);
+
+  if (targetViewTable === 'view_questions_all' && filters.modalidades && filters.modalidades.length > 0 && filters.modalidades.length < 4) {
+    const canonicalMods = filters.modalidades.map(m => {
+      if (m === 'Residência Médica') return 'Acesso Direto';
+      if (typeof m === 'string' && m.startsWith('R+')) return 'R+';
+      if (typeof m === 'string' && m.startsWith('Título')) return 'Título de Especialista';
+      return m;
+    });
+    query = query.in('modalidade', canonicalMods);
+  }
 
   // Regra Canônica de Gabarito: Alunos só visualizam questões com gabarito homologado (A-E ou Anuladas)
   if (filters.gabaritoStatus === 'sem_gabarito') {
@@ -1186,13 +1249,12 @@ export interface ModalidadesCounts {
 }
 
 export async function fetchModalidadesCounts(): Promise<ModalidadesCounts> {
-  const total = await fetchTotalQuestionsCount();
   return {
-    residencia: total,
-    revalida: Math.round(total * 0.18),
-    rplus: Math.round(total * 0.42),
-    titulo: Math.round(total * 0.25),
-    total
+    residencia: homologatedDiretoBaseline.total, // 206.599
+    revalida: homologatedRevalidaBaseline.total, // 4.411
+    rplus: homologatedRPlusBaseline.total, // 45.413
+    titulo: homologatedTituloBaseline.total, // 688
+    total: homologatedDiretoBaseline.total + homologatedRevalidaBaseline.total + homologatedRPlusBaseline.total + homologatedTituloBaseline.total // 257.111
   };
 }
 

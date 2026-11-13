@@ -88,8 +88,9 @@ import {
   clinicalHierarchy,
   medicalInstitutionsDirectory
 } from '@/data/mockQuestions';
+import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
 import { getQuestionCount } from '@/data/hierarchyCounts';
-import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
+import { getHomologatedBaseline } from '@/data/homologatedFacetsBaseline';
 import { getInstitutionSupabaseCount } from '@/data/institutionCounts';
 import {
   fetchFacetedHierarchyCounts,
@@ -147,7 +148,7 @@ const RPLUS_BANCAS_1CLIQUE = [
 ];
 
 
-const YEARS_LIST = [2027, 2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010];
+const YEARS_LIST = [2027, 2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004];
 
 // Abas de Estado para o Catálogo de Bancas por UF (Todos os 26 Estados + DF + Nacional)
 const UF_LIST = [
@@ -164,8 +165,6 @@ export interface UfInstitutionItem {
   key: string;
 }
 
-// Catálogo formatado com contagens de questões com gabarito consolidado
-
 // Catálogo específico e exclusivo para o Exame de Revalidação de Diplomas Médicos (Revalida)
 const REVALIDA_INSTITUTIONS_CATALOG: UfInstitutionItem[] = [
   { sigla: 'INEP Revalida', uf: 'Nacional', nome: 'INEP - Exame Nacional de Revalidação de Diplomas Médicos', count: '2.040 questões', key: 'INEP Revalida' },
@@ -175,102 +174,14 @@ const REVALIDA_INSTITUTIONS_CATALOG: UfInstitutionItem[] = [
   { sigla: 'FMRP-USP Revalida', uf: 'SP', nome: 'Faculdade de Medicina de Ribeirão Preto (USP) - Revalidação', count: '203 questões', key: 'FMRP-USP' },
 ];
 
-const UF_INSTITUTIONS_CATALOG: UfInstitutionItem[] = [
-  // Nacional
-  { sigla: 'ENARE', uf: 'Nacional', nome: 'Exame Nacional de Residência (EBSERH)', count: '2.150 questões', key: 'ENARE' },
-  { sigla: 'INEP Revalida', uf: 'Nacional', nome: 'Instituto Nacional de Estudos e Pesquisas Educacionais', count: '1.980 questões', key: 'INEP Revalida' },
-  // SP
-  { sigla: 'USP-SP', uf: 'SP', nome: 'Universidade de São Paulo (FUVEST)', count: '2.850 questões', key: 'USP/HCFMUSP' },
-  { sigla: 'SUS-SP', uf: 'SP', nome: 'Secretaria de Estado da Saúde de São Paulo', count: '3.120 questões', key: 'SUS-SP' },
-  { sigla: 'UNICAMP', uf: 'SP', nome: 'Universidade Estadual de Campinas', count: '2.410 questões', key: 'UNICAMP/HC' },
-  { sigla: 'UNIFESP', uf: 'SP', nome: 'Universidade Federal de São Paulo (EPM)', count: '2.350 questões', key: 'UNIFESP/EPM' },
-  { sigla: 'USP-RP', uf: 'SP', nome: 'Faculdade de Medicina de Ribeirão Preto (USP)', count: '2.010 questões', key: 'USP-RP' },
-  { sigla: 'UNESP', uf: 'SP', nome: 'Universidade Estadual Paulista', count: '1.890 questões', key: 'UNESP' },
-  { sigla: 'IAMSPE', uf: 'SP', nome: 'Hospital do Servidor Público Estadual de SP', count: '1.840 questões', key: 'IAMSPE' },
-  { sigla: 'Santa Casa SP', uf: 'SP', nome: 'Irmandade da Santa Casa de Misericórdia de SP', count: '2.110 questões', key: 'Santa Casa de São Paulo' },
-  { sigla: 'HIAE / Einstein', uf: 'SP', nome: 'Hospital Israelita Albert Einstein', count: '1.420 questões', key: 'Einstein' },
-  { sigla: 'Sírio-Libanês', uf: 'SP', nome: 'Hospital Sírio-Libanês', count: '1.340 questões', key: 'Sírio-Libanês' },
-  { sigla: 'FAMERP', uf: 'SP', nome: 'Faculdade de Medicina de São José do Rio Preto', count: '1.200 questões', key: 'FAMERP' },
-  // RJ
-  { sigla: 'UFRJ', uf: 'RJ', nome: 'Universidade Federal do Rio de Janeiro', count: '1.770 questões', key: 'UFRJ/HUCFF' },
-  { sigla: 'UERJ', uf: 'RJ', nome: 'Universidade do Estado do Rio de Janeiro', count: '1.540 questões', key: 'UERJ/HUPE' },
-  { sigla: 'UFF', uf: 'RJ', nome: 'Universidade Federal Fluminense', count: '1.180 questões', key: 'UFF' },
-  { sigla: 'UNIRIO', uf: 'RJ', nome: 'Universidade Federal do Estado do Rio de Janeiro', count: '960 questões', key: 'UNIRIO' },
-  { sigla: 'SMS-RJ', uf: 'RJ', nome: 'Secretaria Municipal de Saúde do Rio de Janeiro', count: '1.410 questões', key: 'SMS-RJ' },
-  // MG
-  { sigla: 'PSU-MG', uf: 'MG', nome: 'Processo Seletivo Unificado de Minas Gerais (AREMG)', count: '2.510 questões', key: 'PSU-MG' },
-  { sigla: 'UFMG', uf: 'MG', nome: 'Universidade Federal de Minas Gerais', count: '1.910 questões', key: 'UFMG' },
-  { sigla: 'Santa Casa BH', uf: 'MG', nome: 'Santa Casa de Belo Horizonte', count: '1.310 questões', key: 'Santa Casa de Belo Horizonte' },
-  { sigla: 'HC-UFU', uf: 'MG', nome: 'Hospital das Clínicas de Uberlândia', count: '930 questões', key: 'UFU' },
-  // RS
-  { sigla: 'AMRIGS', uf: 'RS', nome: 'Associação Médica do Rio Grande do Sul', count: '2.430 questões', key: 'AMRIGS' },
-  { sigla: 'HCPA / UFRGS', uf: 'RS', nome: 'Hospital de Clínicas de Porto Alegre', count: '1.670 questões', key: 'HCPA' },
-  { sigla: 'UFCSPA', uf: 'RS', nome: 'Universidade Federal de Ciências da Saúde de Porto Alegre', count: '1.130 questões', key: 'UFCSPA' },
-  { sigla: 'PUCRS', uf: 'RS', nome: 'Pontifícia Universidade Católica do Rio Grande do Sul', count: '1.070 questões', key: 'PUCRS' },
-  // PR
-  { sigla: 'UFPR', uf: 'PR', nome: 'Universidade Federal do Paraná', count: '1.570 questões', key: 'UFPR' },
-  { sigla: 'PUC-PR', uf: 'PR', nome: 'Pontifícia Universidade Católica do Paraná', count: '1.390 questões', key: 'Pontifícia Universidade Católica do Paraná' },
-  { sigla: 'UEL', uf: 'PR', nome: 'Hospital Universitário de Londrina (PR)', count: '1.030 questões', key: 'UEL' },
-  { sigla: 'UEM', uf: 'PR', nome: 'Universidade Estadual de Maringá', count: '860 questões', key: 'UEM' },
-  // SC
-  { sigla: 'ACM', uf: 'SC', nome: 'Associação Catarinense de Medicina (Residência Unificada)', count: '1.670 questões', key: 'ACM' },
-  { sigla: 'UFSC', uf: 'SC', nome: 'Universidade Federal de Santa Catarina (HU)', count: '1.100 questões', key: 'UFSC' },
-  { sigla: 'UDESC', uf: 'SC', nome: 'Universidade do Estado de Santa Catarina', count: '810 questões', key: 'UDESC' },
-  // BA
-  { sigla: 'SUS-BA', uf: 'BA', nome: 'Secretaria da Saúde do Estado da Bahia', count: '1.910 questões', key: 'SUS-BA' },
-  { sigla: 'UFBA', uf: 'BA', nome: 'Universidade Federal da Bahia (HUPES)', count: '1.440 questões', key: 'UFBA' },
-  { sigla: 'EBMSP', uf: 'BA', nome: 'Escola Bahiana de Medicina e Saúde Pública', count: '1.030 questões', key: 'EBMSP' },
-  // PE
-  { sigla: 'SES-PE', uf: 'PE', nome: 'Secretaria Estadual de Saúde de Pernambuco', count: '1.530 questões', key: 'SES-PE' },
-  { sigla: 'UPE', uf: 'PE', nome: 'Universidade de Pernambuco (HUOC)', count: '1.100 questões', key: 'UPE' },
-  { sigla: 'UFPE', uf: 'PE', nome: 'Universidade Federal de Pernambuco (HC)', count: '1.070 questões', key: 'UFPE' },
-  // CE
-  { sigla: 'SURCE', uf: 'CE', nome: 'Seleção Unificada para Residência Médica do Ceará', count: '3.920 questões', key: 'SURCE' },
-  { sigla: 'UFC', uf: 'CE', nome: 'Universidade Federal do Ceará (HUWC)', count: '2.780 questões', key: 'UFC' },
-  // DF
-  { sigla: 'SES-DF', uf: 'DF', nome: 'Secretaria de Estado de Saúde do Distrito Federal', count: '3.380 questões', key: 'SES-DF' },
-  { sigla: 'HUB / UnB', uf: 'DF', nome: 'Hospital Universitário de Brasília (UnB)', count: '2.050 questões', key: 'UnB' },
-  // GO
-  { sigla: 'SES-GO', uf: 'GO', nome: 'Secretaria de Estado de Saúde de Goiás', count: '2.940 questões', key: 'SES-GO' },
-  { sigla: 'UFG', uf: 'GO', nome: 'Universidade Federal de Goiás (HC)', count: '1.980 questões', key: 'UFG' },
-  // ES
-  { sigla: 'UFES', uf: 'ES', nome: 'Universidade Federal do Espírito Santo (HUCAM)', count: '2.350 questões', key: 'UFES' },
-  { sigla: 'EMESCAM', uf: 'ES', nome: 'Escola Superior de Ciências da Santa Casa de Vitória', count: '1.820 questões', key: 'EMESCAM' },
-  // PA
-  { sigla: 'UFPA', uf: 'PA', nome: 'Universidade Federal do Pará (Hospital Bettina Ferro)', count: '2.410 questões', key: 'UFPA' },
-  { sigla: 'UEPA', uf: 'PA', nome: 'Universidade do Estado do Pará', count: '1.790 questões', key: 'UEPA' },
-  // AM
-  { sigla: 'UFAM', uf: 'AM', nome: 'Universidade Federal do Amazonas (HUGV)', count: '2.200 questões', key: 'UFAM' },
-  { sigla: 'UEA', uf: 'AM', nome: 'Universidade do Estado do Amazonas', count: '1.650 questões', key: 'UEA' },
-  // PB
-  { sigla: 'UFPB', uf: 'PB', nome: 'Universidade Federal da Paraíba (HULW)', count: '2.050 questões', key: 'UFPB' },
-  { sigla: 'UFCG', uf: 'PB', nome: 'Universidade Federal de Campina Grande', count: '1.580 questões', key: 'UFCG' },
-  // RN
-  { sigla: 'UFRN', uf: 'RN', nome: 'Universidade Federal do Rio Grande do Norte (HUOL)', count: '2.450 questões', key: 'UFRN' },
-  // AL
-  { sigla: 'UNCISAL', uf: 'AL', nome: 'Universidade Estadual de Ciências da Saúde de Alagoas', count: '1.920 questões', key: 'UNCISAL' },
-  { sigla: 'UFAL', uf: 'AL', nome: 'Universidade Federal de Alagoas (HUPAA)', count: '1.740 questões', key: 'UFAL' },
-  // SE
-  { sigla: 'UFS', uf: 'SE', nome: 'Universidade Federal de Sergipe (HU-UFS)', count: '1.890 questões', key: 'UFS' },
-  // PI
-  { sigla: 'UFPI', uf: 'PI', nome: 'Universidade Federal do Piauí (HU-UFPI)', count: '1.850 questões', key: 'UFPI' },
-  // MA
-  { sigla: 'UFMA', uf: 'MA', nome: 'Universidade Federal do Maranhão (HUUFMA)', count: '2.100 questões', key: 'UFMA' },
-  // MT
-  { sigla: 'UFMT', uf: 'MT', nome: 'Universidade Federal de Mato Grosso (HUJM)', count: '1.940 questões', key: 'UFMT' },
-  // MS
-  { sigla: 'UFMS', uf: 'MS', nome: 'Universidade Federal de Mato Grosso do Sul (HUMAP)', count: '2.150 questões', key: 'UFMS' },
-  // TO
-  { sigla: 'UFT', uf: 'TO', nome: 'Universidade Federal do Tocantins (HGP)', count: '1.680 questões', key: 'UFT' },
-  // RO
-  { sigla: 'UNIR', uf: 'RO', nome: 'Universidade Federal de Rondônia (Hospital de Base)', count: '1.520 questões', key: 'UNIR' },
-  // AC
-  { sigla: 'UFAC', uf: 'AC', nome: 'Universidade Federal do Acre (FUNDHACRE)', count: '1.430 questões', key: 'UFAC' },
-  // AP
-  { sigla: 'UNIFAP', uf: 'AP', nome: 'Universidade Federal do Amapá (HCAL)', count: '1.380 questões', key: 'UNIFAP' },
-  // RR
-  { sigla: 'UFRR', uf: 'RR', nome: 'Universidade Federal de Roraima (HGR)', count: '1.310 questões', key: 'UFRR' }
-];
+// Catálogo formatado dinâmico com todas as bancas e instituições do Supabase
+const UF_INSTITUTIONS_CATALOG: UfInstitutionItem[] = CANONICAL_BANCAS_DIRECTORY.map((b) => ({
+  sigla: b.sigla,
+  uf: b.uf,
+  nome: b.nome || b.sigla,
+  count: `${b.count.toLocaleString('pt-BR')} questões`,
+  key: b.key || b.sigla
+}));
 
 const CANONICAL_BANCA_KEY_MAP: Record<string, string> = {
   'usp-sp': 'USP/HCFMUSP',
@@ -431,7 +342,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
   const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
 
-  const isRevalidaMode = filters.modalidades?.length === 1 && filters.modalidades[0] === 'Revalida';
+  const currentBaseline = useMemo(() => getHomologatedBaseline(filters.modalidades), [filters.modalidades]);
 
   // Faceted Search: Contagens dinâmicas por linha sincronizadas com o banco (apenas filtros do card direito)
   const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
@@ -585,19 +496,66 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [showAllUfModal, setShowAllUfModal] = useState<boolean>(false);
   const [selectedUfTab, setSelectedUfTab] = useState<string>('Todas');
 
-  // Modalidade ativa
-  const currentModalidade = filters.modalidades[0] || 'Residência Médica';
+  // Modalidades ativas e helpers de multi-seleção
+  const isModalidadeActive = (mod: 'Acesso Direto' | 'Revalida' | 'R+' | 'Título de Especialista') => {
+    if (mod === 'Acesso Direto') {
+      return filters.modalidades.some(m => m === 'Acesso Direto' || m === 'Residência Médica');
+    }
+    if (mod === 'Revalida') {
+      return filters.modalidades.some(m => m === 'Revalida');
+    }
+    if (mod === 'R+') {
+      return filters.modalidades.some(m => m === 'R+' || (typeof m === 'string' && m.startsWith('R+')));
+    }
+    if (mod === 'Título de Especialista') {
+      return filters.modalidades.some(m => m === 'Título de Especialista' || (typeof m === 'string' && m.startsWith('Título')));
+    }
+    return false;
+  };
+
+  const isOnlyRevalida = useMemo(() => {
+    return isModalidadeActive('Revalida') && !isModalidadeActive('Acesso Direto') && !isModalidadeActive('R+') && !isModalidadeActive('Título de Especialista');
+  }, [filters.modalidades]);
+
+  const toggleModalidade = (mod: 'Acesso Direto' | 'Revalida' | 'R+' | 'Título de Especialista') => {
+    const isActive = isModalidadeActive(mod);
+    const currentSet = new Set<'Acesso Direto' | 'Revalida' | 'R+' | 'Título de Especialista'>();
+    if (isModalidadeActive('Acesso Direto')) currentSet.add('Acesso Direto');
+    if (isModalidadeActive('Revalida')) currentSet.add('Revalida');
+    if (isModalidadeActive('R+')) currentSet.add('R+');
+    if (isModalidadeActive('Título de Especialista')) currentSet.add('Título de Especialista');
+
+    if (isActive) {
+      if (currentSet.size <= 1) {
+        return; // Mantém no mínimo 1 ativo
+      }
+      currentSet.delete(mod);
+    } else {
+      currentSet.add(mod);
+    }
+
+    const nextModalidades = Array.from(currentSet);
+    onChange({
+      ...filters,
+      modalidades: nextModalidades
+    });
+  };
 
   // Conjunto dinâmico de bancas em destaque (1 clique) conforme a modalidade selecionada
   const activeQuickBancas = useMemo(() => {
-    if (currentModalidade === 'Revalida') {
+    const isDireto = isModalidadeActive('Acesso Direto');
+    const isRev = isModalidadeActive('Revalida');
+    const isRPlus = isModalidadeActive('R+');
+    const isTitulo = isModalidadeActive('Título de Especialista');
+
+    if (isRev && !isDireto && !isRPlus && !isTitulo) {
       return REVALIDA_BANCAS_1CLIQUE;
     }
-    if (currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')) {
+    if ((isRPlus || isTitulo) && !isDireto && !isRev) {
       return RPLUS_BANCAS_1CLIQUE;
     }
     return POPULAR_BANCAS_1CLIQUE;
-  }, [currentModalidade]);
+  }, [filters.modalidades]);
 
 
   // --- LÓGICA DE MULTI-SELEÇÃO DE ESPECIALIDADES (SOMA / UNIÃO) ---
@@ -807,22 +765,23 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const filteredBancasSearch = useMemo(() => {
     if (!deferredInstSearch.trim()) return [];
     const q = deferredInstSearch.toLowerCase().trim();
-    const sourceCatalog =
-      currentModalidade === 'Revalida'
-        ? [...REVALIDA_INSTITUTIONS_CATALOG, ...medicalInstitutionsDirectory]
-        : medicalInstitutionsDirectory;
-    return sourceCatalog
+    return UF_INSTITUTIONS_CATALOG
       .filter((inst) => inst.sigla.toLowerCase().includes(q) || inst.nome.toLowerCase().includes(q))
-      .slice(0, 8);
-  }, [deferredInstSearch, currentModalidade]);
+      .slice(0, 10);
+  }, [deferredInstSearch]);
 
   const catalogFilteredByUf = useMemo(() => {
-    const baseCatalog = currentModalidade === 'Revalida' ? REVALIDA_INSTITUTIONS_CATALOG : UF_INSTITUTIONS_CATALOG;
+    let baseCatalog = UF_INSTITUTIONS_CATALOG;
+    if (isOnlyRevalida) {
+      baseCatalog = UF_INSTITUTIONS_CATALOG.filter(inst =>
+        inst.sigla.toLowerCase().includes('revalida') || inst.key === 'FMRP-USP' || inst.uf === 'Nacional'
+      );
+    }
     if (selectedUfTab === 'Todas') return baseCatalog;
     return baseCatalog.filter(
       (inst) => inst.uf.toLowerCase() === selectedUfTab.toLowerCase()
     );
-  }, [selectedUfTab, currentModalidade]);
+  }, [selectedUfTab, isOnlyRevalida]);
 
   // --- ANOS ---
   const toggleYear = (y: number) => {
@@ -854,8 +813,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DO BANCO DE DADOS) ---
   const displayedQuestionCount = useMemo(() => {
-    const isRevalidaMode = filters.modalidades?.length === 1 && filters.modalidades[0] === 'Revalida';
-    const defaultBaseline = isRevalidaMode ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
+    const defaultBaseline = currentBaseline.total;
 
     const hasClinicalFilters = Boolean(
       (filters.especialidades && filters.especialidades.length > 0) ||
@@ -873,8 +831,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
       (filters.status && filters.status !== 'Todas') ||
       filters.ocultarAnuladasErro ||
-      filters.ultimos5Anos ||
-      (filters.modalidades && filters.modalidades.some(m => m.startsWith('R+') || m.startsWith('Título')))
+      filters.ultimos5Anos
     );
 
     const hasActiveFilters = hasClinicalFilters || hasRightCardFilters;
@@ -893,10 +850,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       return defaultBaseline;
     }
 
-    return isRevalidaMode ? homologatedRevalidaBaseline.total : (totalAvailable || homologatedDiretoBaseline.total);
+    return totalAvailable || defaultBaseline;
   }, [
     totalAvailable,
     totalFiltered,
+    facetedCounts,
+    currentBaseline.total,
     facetedCounts,
     filters.modalidades,
     filters.search,
@@ -1115,27 +1074,27 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           <div className="flex items-center gap-1 p-0.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 w-full sm:w-auto overflow-x-auto no-scrollbar">
             <button
               type="button"
-              onClick={() => onChange({ ...filters, modalidades: ['Residência Médica'], instituicoes: filters.instituicoes.filter(i => !i.toLowerCase().includes('revalida')) })}
-              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer ${currentModalidade === 'Residência Médica'
-                  ? 'text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+              onClick={() => toggleModalidade('Acesso Direto')}
+              className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Acesso Direto')
+                  ? 'text-white font-bold shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
                 }`}
               style={{
-                backgroundColor: currentModalidade === 'Residência Médica' ? accentConfig.primaryHex : undefined
+                backgroundColor: isModalidadeActive('Acesso Direto') ? accentConfig.primaryHex : undefined
               }}
             >
-              Residência Médica
+              Acesso Direto
             </button>
 
             <button
               type="button"
-              onClick={() => onChange({ ...filters, modalidades: ['Revalida'], instituicoes: filters.instituicoes.filter(i => i.toLowerCase().includes('revalida') || i.includes('FMRP') || i === 'FMRP-USP') })}
-              className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer ${currentModalidade === 'Revalida'
-                  ? 'text-white font-bold shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+              onClick={() => toggleModalidade('Revalida')}
+              className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Revalida')
+                  ? 'text-white font-bold shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
                 }`}
               style={{
-                backgroundColor: currentModalidade === 'Revalida' ? accentConfig.primaryHex : undefined
+                backgroundColor: isModalidadeActive('Revalida') ? accentConfig.primaryHex : undefined
               }}
             >
               Revalida
@@ -1143,19 +1102,30 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
             <button
               type="button"
-              onClick={() => onChange({ ...filters, modalidades: ['R+ Clínica Médica'] })}
-              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer flex items-center gap-1.5 ${currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')
-                  ? 'text-white font-bold shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+              onClick={() => toggleModalidade('R+')}
+              className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('R+')
+                  ? 'text-white font-bold shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
                 }`}
               style={{
-                backgroundColor: (currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')) ? accentConfig.primaryHex : undefined
+                backgroundColor: isModalidadeActive('R+') ? accentConfig.primaryHex : undefined
               }}
             >
-              <span>R+ / Título</span>
-              <span className="text-[10px] font-bold tracking-wider px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 uppercase">
-                BREVE
-              </span>
+              R+
+            </button>
+
+            <button
+              type="button"
+              onClick={() => toggleModalidade('Título de Especialista')}
+              className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Título de Especialista')
+                  ? 'text-white font-bold shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+                }`}
+              style={{
+                backgroundColor: isModalidadeActive('Título de Especialista') ? accentConfig.primaryHex : undefined
+              }}
+            >
+              Título de Especialista
             </button>
           </div>
 
@@ -1371,9 +1341,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             {clinicalHierarchy.map((esp) => {
               const isEspSelected = filters.especialidades.includes(esp.especialidade);
               const isEspExpanded = Boolean(expandedEspec[esp.especialidade]);
-              const baselineEspCount = isRevalidaMode
-                ? (homologatedRevalidaBaseline.especialidades[esp.especialidade] || 0)
-                : (homologatedDiretoBaseline.especialidades[esp.especialidade] || 0);
+              const baselineEspCount = currentBaseline.especialidades[esp.especialidade] || 0;
               const espCount = facetedCounts
                 ? (hasRightFilters ? (facetedCounts.especialidades?.[esp.especialidade] ?? 0) : (facetedCounts.especialidades?.[esp.especialidade] ?? baselineEspCount))
                 : baselineEspCount;
@@ -1482,9 +1450,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         const isTemaSelected =
                           filters.temas.includes(tem.tema) || isEspSelected;
                         const isTemaExpanded = Boolean(expandedTema[tem.tema]) || Boolean(qTerm);
-                        const baselineTemaCount = isRevalidaMode
-                          ? (homologatedRevalidaBaseline.temas[tem.tema] || 0)
-                          : (homologatedDiretoBaseline.temas[tem.tema] || 0);
+                        const baselineTemaCount = currentBaseline.temas[tem.tema] || 0;
                         const temaCount = facetedCounts
                           ? (hasRightFilters ? (facetedCounts.temas?.[tem.tema] ?? 0) : (facetedCounts.temas?.[tem.tema] ?? baselineTemaCount))
                           : baselineTemaCount;
@@ -1571,9 +1537,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                   const isFocoSelected =
                                     filters.focos.includes(foc.foco) || isTemaSelected;
                                   const isFocoExpanded = Boolean(expandedFoco[foc.foco]) || Boolean(qTerm);
-                                  const baselineFocoCount = isRevalidaMode
-                                    ? ((homologatedRevalidaBaseline.focos as Record<string, number>)?.[foc.foco] || 0)
-                                    : ((homologatedDiretoBaseline.focos as Record<string, number>)?.[foc.foco] || getQuestionCount('focos', foc.foco) || 0);
+                                  const baselineFocoCount = currentBaseline.focos[foc.foco] || 0;
                                   const focoCount = facetedCounts
                                     ? (hasRightFilters ? (facetedCounts.focos?.[foc.foco] ?? 0) : (facetedCounts.focos?.[foc.foco] ?? baselineFocoCount))
                                     : baselineFocoCount;
@@ -1659,9 +1623,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                               filters.subfocos.includes(sub) || isFocoSelected;
                                             const hasMatchingChild = qTerm ? subSubList.some((ss) => ss.toLowerCase().includes(qTerm)) : false;
                                             const isSubfocoExpanded = Boolean(expandedSubfoco[sub] || hasMatchingChild);
-                                            const baselineSubCount = isRevalidaMode
-                                              ? ((homologatedRevalidaBaseline.subfocos as Record<string, number>)?.[sub] || 0)
-                                              : ((homologatedDiretoBaseline.subfocos as Record<string, number>)?.[sub] || getQuestionCount('subfocos', sub) || 0);
+                                            const baselineSubCount = currentBaseline.subfocos[sub] || 0;
                                             const subCount = facetedCounts
                                               ? (hasRightFilters ? (facetedCounts.subfocos?.[sub] ?? 0) : (facetedCounts.subfocos?.[sub] ?? baselineSubCount))
                                               : baselineSubCount;
@@ -1741,7 +1703,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                     {subSubList.map((ss) => {
                                                       const isSsSelected =
                                                         (filters.subSubfocos && filters.subSubfocos.includes(ss)) || isSubSelected;
-                                                      const ssCount = getQuestionCount('sub_subfocos', ss) || 0;
+                                                      const ssCount = 0;
 
                                                       if (
                                                         qTerm &&
@@ -1838,9 +1800,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 value={instSearch}
                 onChange={(e) => setInstSearch(e.target.value)}
                 placeholder={
-                  currentModalidade === 'Revalida'
+                  isOnlyRevalida
                     ? 'Buscar banca do Revalida (ex: INEP, UFMT, UEPA, USP)...'
-                    : currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')
+                    : (isModalidadeActive('R+') || isModalidadeActive('Título de Especialista')) && !isModalidadeActive('Acesso Direto')
                       ? 'Buscar sociedade ou título (ex: TEGO, TEP, TECM, SBC)...'
                       : 'Buscar banca por sigla, nome ou estado (ex: ENARE, USP, SURCE, SP...)'
                 }
@@ -2057,7 +2019,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           const isActive =
                             filters.tipoQuestao === fmt.val ||
                             (fmt.val === 'Dissertativa' && filters.tipoQuestao === 'Discursiva') ||
-                            (fmt.val === 'Certo ou errado' && filters.tipoQuestao === 'Verdadeiro ou falso');
+                            (fmt.val === 'Certo ou errado' && (filters.tipoQuestao === 'Verdadeiro ou falso' || filters.tipoQuestao === 'Certo e Errado'));
                           return (
                             <button
                               key={fmt.label}
@@ -2224,7 +2186,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                   {/* Pílulas de Anos em Linha Única Horizontal com Rolagem Lateral */}
                   <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 custom-scrollbar scroll-smooth">
-                    {(currentModalidade === 'Revalida' ? YEARS_LIST.filter(y => y <= 2026) : YEARS_LIST).map((y) => {
+                    {(isOnlyRevalida ? YEARS_LIST.filter(y => y <= 2026) : YEARS_LIST).map((y) => {
                       const isSelected = filters.anos.includes(y);
                       return (
                         <button
