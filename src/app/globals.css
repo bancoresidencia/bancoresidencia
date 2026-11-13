@@ -572,14 +572,9 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
 .figma-card-wrapper:not(.has-custom-height)[data-card-id="home_recomendacao"] .bento-card,
 .figma-card-wrapper:not(.has-custom-height)[data-card-id="home_retencao"] .bento-card,
 .figma-card-wrapper:not(.has-custom-height)[data-card-id="home_caderno_erros"] .bento-card,
-.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_mnemonico"] .bento-card {
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_mnemonico"] .bento-card,
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_agenda"] .bento-card {
   min-height: 195px;
-}
-
-/* Card Agenda com auto-ajuste de altura: abraca o conteudo com precisao sem sobras vazias */
-.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_agenda"] {
-  height: fit-content;
-  align-self: start;
 }
 
 /* =========================================================================

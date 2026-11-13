@@ -7,3 +7,4 @@ async function checkSelectingOftal() {
   links.filter(l => l.includes('edital') || l.includes('concursos') || l.includes('pdf') || l.includes('fubog')).forEach(l => console.log(' ->', l));
 }
 checkSelectingOftal();
+

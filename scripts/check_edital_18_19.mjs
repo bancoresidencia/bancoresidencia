@@ -19,3 +19,4 @@ async function inspectEdital18And19() {
   }
 }
 inspectEdital18And19();
+

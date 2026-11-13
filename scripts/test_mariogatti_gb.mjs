@@ -11,3 +11,4 @@ async function checkMarioGattiGb() {
   console.log(text.slice(0, 1500));
 }
 checkMarioGattiGb();
+

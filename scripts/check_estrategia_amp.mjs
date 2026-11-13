@@ -11,3 +11,4 @@ async function checkEstrategiaAmp() {
   }
 }
 checkEstrategiaAmp();
+

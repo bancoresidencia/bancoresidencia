@@ -13,3 +13,4 @@ async function inspectSelectingEdital47() {
   links.filter(l => l.includes('download') || l.includes('arquivo') || l.includes('pdf') || l.includes('documento')).forEach(l => console.log(' ->', l));
 }
 inspectSelectingEdital47();
+

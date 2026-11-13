@@ -4268,7 +4268,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     const isAllCompleted = todayAgendaActivities.length > 0 && !currentActivity && !upcomingActivity;
 
                     return (
-                      <div className="space-y-3">
+                      <div className="flex-1 flex flex-col justify-between min-h-0 space-y-2">
                         {/* Header: Título "Agenda de Estudos" + Status Dinâmico */}
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-2">
@@ -4312,7 +4312,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
 
                         {/* Conteúdo: Atividade Atual Somente (ou Próxima / Concluído / Livre) */}
-                        <div className="py-0.5">
+                        <div className="py-0.5 my-auto">
                           {currentActivity ? (
                             <div className="p-3.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-900/60 space-y-2.5">
                               <div className="flex items-center justify-between gap-2 flex-wrap">

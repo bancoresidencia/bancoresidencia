@@ -5,3 +5,4 @@ async function checkBody() {
   console.log(html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 3000));
 }
 checkBody();
+

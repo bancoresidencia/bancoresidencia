@@ -11,3 +11,4 @@ async function checkAta() {
   console.log(text.slice(0, 1500));
 }
 checkAta();
+

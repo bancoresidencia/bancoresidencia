@@ -31,3 +31,4 @@ async function scanEditais() {
 }
 
 scanEditais();
+
