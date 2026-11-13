@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { LandingPage } from '@/components/LandingPage';
 import { AuthScreen } from '@/components/AuthScreen';
 import { Logo } from '@/components/Logo';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 import { PLANS, PlanId, PlanDefinition } from '@/config/plans';
 import { useAuth } from '@/context/AuthContext';
 import { useSubscription } from '@/context/SubscriptionContext';
@@ -117,31 +118,14 @@ function HomeContent() {
     setAuthModal({ isOpen: true, mode, planTitle: planIdentifier });
   }, []);
 
+  // Enquanto a autenticação estiver checando, o HippocampusGlobalSplash cobre a tela
   if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
-        <div className="flex flex-col items-center gap-3">
-          <Logo className="w-12 h-12 shrink-0 animate-pulse" glow />
-          <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
-            Carregando Banco Residência...
-          </span>
-        </div>
-      </div>
-    );
+    return null;
   }
 
-  // Se já está autenticado, exibe tela de transição rápida enquanto o router.replace('/dashboard') conclui
+  // Se já está autenticado, aguarda a conclusão da navegação para o dashboard
   if (isAuthenticated && user) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
-        <div className="flex flex-col items-center gap-3">
-          <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
-          <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
-            Acessando a plataforma médica...
-          </span>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   // Visitante não autenticado: Landing Page completa

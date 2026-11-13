@@ -53,6 +53,7 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import { AuthProvider } from "@/context/AuthContext";
 import { SubscriptionProvider } from "@/context/SubscriptionContext";
 import { ToastProvider } from "@/components/Toast";
+import { HippocampusGlobalSplash } from "@/components/HippocampusGlobalSplash";
 
 export default function RootLayout({
   children,
@@ -144,6 +145,7 @@ export default function RootLayout({
             `
           }}
         />
+        <HippocampusGlobalSplash />
         <ThemeProvider>
           <AuthProvider>
             <SubscriptionProvider>

@@ -106,18 +106,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
             href="/dashboard"
             onClick={() => onNavigate?.('home')}
             className="flex items-center gap-2.5 p-1 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer group min-w-0"
-            title={`Banco Residência • ${modalidade}`}
+            title="Hippocampus • Questões de Residência"
             aria-label="Ir para a página inicial"
           >
-            <Logo className="w-8 h-8 shrink-0 transition-transform duration-200 group-hover:scale-105" />
+            <Logo className="w-8 h-8 shrink-0 transition-transform duration-200 group-hover:scale-105" showMonogramOnly />
 
             {!isCollapsed && (
-              <div className="text-left overflow-hidden">
-                <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 tracking-tight block leading-tight truncate">
-                  Banco Residência
+              <div className="text-left overflow-hidden select-none min-w-0">
+                <span className="font-heading font-black text-sm text-zinc-900 dark:text-zinc-100 tracking-[-0.03em] block leading-tight truncate">
+                  Hippocampus
                 </span>
-                <span className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider block">
-                  {modalidade}
+                <span className="text-[7.5px] font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.14em] block whitespace-nowrap leading-none mt-0.5">
+                  QUESTÕES DE RESIDÊNCIA
                 </span>
               </div>
             )}
