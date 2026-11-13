@@ -146,13 +146,15 @@ export default function RootLayout({
           }}
         />
         <HippocampusGlobalSplash />
-        <ThemeProvider>
-          <AuthProvider>
-            <SubscriptionProvider>
-              <ToastProvider>{children}</ToastProvider>
-            </SubscriptionProvider>
-          </AuthProvider>
-        </ThemeProvider>
+        <div className="hippo-main-app-content flex-1 flex flex-col">
+          <ThemeProvider>
+            <AuthProvider>
+              <SubscriptionProvider>
+                <ToastProvider>{children}</ToastProvider>
+              </SubscriptionProvider>
+            </AuthProvider>
+          </ThemeProvider>
+        </div>
       </body>
     </html>
   );
