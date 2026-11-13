@@ -280,7 +280,7 @@ export async function POST(req: NextRequest) {
       }
 
       if (!row && !error) {
-        for (const tbl of ['questions_expansion_direto', 'questions_revalida_base', 'questions_expansion_revalida']) {
+        for (const tbl of ['questions_direto', 'questions_revalida', 'questions_rplus', 'questions_titulo', 'questions_expansion_direto', 'questions_revalida_base', 'questions_expansion_revalida']) {
           const res = await supabaseAdmin
             .from(tbl)
             .select('id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year')

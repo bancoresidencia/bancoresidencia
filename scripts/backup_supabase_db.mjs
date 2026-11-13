@@ -229,6 +229,11 @@ async function backupTables(exposedTables) {
   // Lista padrão canônica de tabelas prioritárias
   const priorityTables = [
     'questions',
+    'questions_expansion_direto',
+    'questions_expansion_r_plus',
+    'questions_expansion_revalida',
+    'questions_expansion_titulo_especialista',
+    'questions_revalida_base',
     'audit_logs',
     'profiles',
     'user_answers',

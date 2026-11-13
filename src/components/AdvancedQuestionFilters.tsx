@@ -2047,13 +2047,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     {/* Formato */}
                     <div className="space-y-1.5">
                       <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block">Formato</span>
-                      <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-[var(--bg-input)] border border-zinc-200/50 dark:border-zinc-800/80">
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-[var(--bg-input)] border border-zinc-200/50 dark:border-zinc-800/80">
                         {[
                           { label: 'Todas', val: 'Todas' },
                           { label: 'Múltipla', val: 'Múltipla escolha' },
-                          { label: 'Discursiva', val: 'Discursiva' }
+                          { label: 'Dissertativa', val: 'Dissertativa' },
+                          { label: 'Certo/Errado', val: 'Certo ou errado' }
                         ].map((fmt) => {
-                          const isActive = filters.tipoQuestao === fmt.val;
+                          const isActive =
+                            filters.tipoQuestao === fmt.val ||
+                            (fmt.val === 'Dissertativa' && filters.tipoQuestao === 'Discursiva') ||
+                            (fmt.val === 'Certo ou errado' && filters.tipoQuestao === 'Verdadeiro ou falso');
                           return (
                             <button
                               key={fmt.label}

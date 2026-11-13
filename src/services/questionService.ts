@@ -210,19 +210,30 @@ interface QuestionDbRow {
   foco?: string;
   subfoco?: string;
   difficulty?: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
-  type?: 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
+  type?: 'Múltipla escolha' | 'Dissertativa' | 'Discursiva' | 'Certo ou errado' | 'Verdadeiro ou falso';
   is_anulada?: boolean;
   statement: string;
-  options?: { letter: 'A' | 'B' | 'C' | 'D' | 'E'; text: string }[];
+  options?: { letter?: 'A' | 'B' | 'C' | 'D' | 'E'; text?: string }[];
   correct_answer?: 'A' | 'B' | 'C' | 'D' | 'E';
   commentary?: string;
   images?: string[];
 }
 
+const OPTION_LETTERS = ['A', 'B', 'C', 'D', 'E'] as const;
+
 function mapRowToQuestion(row: QuestionDbRow): Question {
-  // Higieniza as alternativas para remover explicações prévias antes da confirmação do aluno
+  // Higieniza as alternativas com fallback seguro de letra por índice posicional
   const cleanOptions = Array.isArray(row.options)
-    ? row.options.map((opt) => ({ letter: opt.letter, text: opt.text }))
+    ? row.options.map((opt: any, idx: number) => {
+        const rawLetter = opt?.letter;
+        const normalizedLetter = (typeof rawLetter === 'string' && rawLetter.trim().length === 1 && (OPTION_LETTERS as readonly string[]).includes(rawLetter.trim().toUpperCase()))
+          ? (rawLetter.trim().toUpperCase() as 'A' | 'B' | 'C' | 'D' | 'E')
+          : (OPTION_LETTERS[idx] || 'A');
+        return {
+          letter: normalizedLetter,
+          text: opt?.text || ''
+        };
+      })
     : [];
 
   const rawInst = (row.institution || '').trim();
@@ -267,7 +278,7 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
     sub_subfoco: (row as any).sub_subfoco || (row as any).subSubfoco || '',
     subSubfoco: (row as any).subSubfoco || (row as any).sub_subfoco || '',
     difficulty: row.difficulty || 'Médio',
-    type: row.type || 'Múltipla escolha',
+    type: ((row.type === 'Discursiva' ? 'Dissertativa' : (row.type === 'Verdadeiro ou falso' ? 'Certo ou errado' : (row.type || 'Múltipla escolha')))) as Question['type'],
     isAnulada: Boolean(row.is_anulada),
     statement: sanitizeMedicalText(row.statement || ''),
     options: cleanOptions.map(opt => ({ ...opt, text: sanitizeMedicalText(opt.text) })),
@@ -745,7 +756,13 @@ export async function fetchQuestionsFromSupabase(
 
     // 8. Tipo de Questão
     if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-      query = query.eq('type', filters.tipoQuestao);
+      if (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva') {
+        query = query.in('type', ['Dissertativa', 'Discursiva']);
+      } else if (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso') {
+        query = query.in('type', ['Certo ou errado', 'Verdadeiro ou falso']);
+      } else {
+        query = query.eq('type', filters.tipoQuestao);
+      }
     }
 
     // 9. Últimos 5 anos
@@ -1007,7 +1024,13 @@ export async function fetchQuestionsFromSupabase(
         countQuery = countQuery.eq('difficulty', filters.dificuldade);
       }
       if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-        countQuery = countQuery.eq('type', filters.tipoQuestao);
+        if (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva') {
+          countQuery = countQuery.in('type', ['Dissertativa', 'Discursiva']);
+        } else if (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso') {
+          countQuery = countQuery.in('type', ['Certo ou errado', 'Verdadeiro ou falso']);
+        } else {
+          countQuery = countQuery.eq('type', filters.tipoQuestao);
+        }
       }
       if (filters.ocultarAnuladasErro) {
         countQuery = countQuery.eq('is_anulada', false);

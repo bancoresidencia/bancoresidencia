@@ -1647,20 +1647,21 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
 
 
-      {/* Alternativas (Múltipla Escolha) com Riscador e Seleção Prévia */}
-      {activeQuestion.options && activeQuestion.options.length > 0 ? (
+      {/* Alternativas (Múltipla Escolha / Certo ou Errado) com Riscador e Seleção Prévia */}
+      {activeQuestion.options && activeQuestion.options.length > 0 && activeQuestion.type !== 'Dissertativa' ? (
         <div className="space-y-3 pt-2">
-          {activeQuestion.options.map((option) => {
-            const isEliminated = !isAnswered && !!eliminatedOptions[option.letter];
-            const isPending = !isEliminated && pendingSelected === option.letter;
-            const isCorrect = option.letter === resolvedCorrectAnswer;
+          {activeQuestion.options.map((option, optIdx) => {
+            const optLetter = (option.letter || (['A', 'B', 'C', 'D', 'E'][optIdx] as 'A' | 'B' | 'C' | 'D' | 'E') || 'A') as 'A' | 'B' | 'C' | 'D' | 'E';
+            const isEliminated = !isAnswered && !!eliminatedOptions[optLetter];
+            const isPending = !isEliminated && pendingSelected === optLetter;
+            const isCorrect = optLetter === resolvedCorrectAnswer;
 
             // Estilos condicionais (Antes de Responder vs Depois de Responder)
             let optionContainerStyle =
               'border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[var(--bg-card)] hover:bg-zinc-50/80 dark:hover:bg-zinc-900/60 hover:border-zinc-300 dark:hover:border-zinc-700 text-zinc-800 dark:text-zinc-200 shadow-xs';
 
-            const isExplanationExpanded = !!expandedOptions[option.letter];
-            const explanationText = optionExplanations[option.letter];
+            const isExplanationExpanded = !!expandedOptions[optLetter];
+            const explanationText = optionExplanations[optLetter];
 
             if (!isAnswered) {
               if (isEliminated) {
@@ -1715,9 +1716,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
             return (
               <div
-                key={option.letter}
-                onClick={() => handleSelectOption(option.letter)}
-                onMouseEnter={() => setHoveredOptionLetter(option.letter)}
+                key={optLetter}
+                onClick={() => handleSelectOption(optLetter)}
+                onMouseEnter={() => setHoveredOptionLetter(optLetter)}
                 onMouseLeave={() => setHoveredOptionLetter(null)}
                 className={`w-full text-left ${optionPaddingClass} border transition-all duration-200 flex flex-col group rounded-2xl cursor-pointer ${optionContainerStyle}`}
                 style={!isAnswered && isPending ? {
@@ -1730,7 +1731,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   <div className="flex items-start gap-3 flex-1">
                     {/* Letra da Alternativa */}
                     <span
-                      title={`Alternativa ${option.letter} (tecla ${['A', 'B', 'C', 'D', 'E'].indexOf(option.letter) + 1})`}
+                      title={`Alternativa ${optLetter} (tecla ${['A', 'B', 'C', 'D', 'E'].indexOf(optLetter) + 1})`}
                       className={`${badgeSizeClass} rounded-xl flex items-center justify-center font-extrabold shrink-0 mt-0.5 shadow-xs transition-colors ${
                         isAnswered && isResolutionLoading
                           ? (isPending
@@ -1758,7 +1759,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                         boxShadow: `0 0 0 2px ${accentConfig.borderRgba}`
                       } : undefined}
                     >
-                      {option.letter}
+                      {optLetter}
                     </span>
 
                     {/* Conteúdo da Alternativa: Imagem ou Texto */}
@@ -1768,7 +1769,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
                             src={option.text.trim()}
-                            alt={`Alternativa ${option.letter}`}
+                            alt={`Alternativa ${optLetter}`}
                             className={`max-h-56 max-w-full object-contain rounded-lg transition-transform ${
                               isEliminated ? 'opacity-40 grayscale' : 'hover:scale-102'
                             }`}
@@ -1798,7 +1799,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                         type="button"
                         onClick={(e) => {
                           e.stopPropagation();
-                          toggleEliminateOption(option.letter, e);
+                          toggleEliminateOption(optLetter, e);
                         }}
                         title={
                           isEliminated
@@ -1856,7 +1857,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           type="button"
                           onClick={(e) => {
                             e.stopPropagation();
-                            toggleOptionExplanation(option.letter);
+                            toggleOptionExplanation(optLetter);
                           }}
                           className={`flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors cursor-pointer border ${
                             isExplanationExpanded
@@ -1889,7 +1890,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     >
                       <div className="flex items-center gap-1.5 font-bold mb-1.5">
                         <span className={isCorrect ? 'text-emerald-700 dark:text-emerald-400' : 'text-slate-700 dark:text-slate-300'}>
-                          Justificativa da Alternativa {option.letter}:
+                          Justificativa da Alternativa {optLetter}:
                         </span>
                       </div>
                       <div data-highlightable="true" className={`font-normal whitespace-pre-line ${justificationSizeClass} text-slate-800 dark:text-slate-200 select-text`}>

@@ -1,0 +1,350 @@
+{
+  "total_questions": 254192,
+  "gabarito_summary": {
+    "SEM_GABARITO": 11764,
+    "ANULADA": 5477,
+    "OUTROS_VALORES": 168,
+    "HOMOLOGADO_VALIDO": 236783
+  },
+  "correct_answer_dist": {
+    "NULL": 11868,
+    "!": 156,
+    "10": 1,
+    "37": 1,
+    "38": 2,
+    "39": 2,
+    "40": 2,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "95": 1,
+    "A": 57102,
+    "ANULADA": 4904,
+    "B": 54544,
+    "C": 54078,
+    "D": 51092,
+    "E": 20436
+  },
+  "anulada_count": 5477,
+  "type_distribution": {
+    "Dissertativa": 143,
+    "Múltipla escolha": 254049
+  },
+  "options_format_counter": {
+    "LIST_OF_DICTS_NO_LETTER": 33746,
+    "EMPTY_OR_NULL": 1758,
+    "LIST_OF_DICTS_WITH_LETTER": 218688
+  },
+  "options_len_counter": {
+    "4": 122970,
+    "2": 5463,
+    "5": 122523,
+    "1": 1244,
+    "6": 122,
+    "3": 110,
+    "8": 2
+  },
+  "missing_letter_counter": {
+    "LIST_OF_DICTS_NO_LETTER": 33746
+  },
+  "missing_letter_by_source": {
+    "[\"questions_expansion_direto\",\"provaderesidencia_questoes\"]": 6510,
+    "[\"questions_expansion_direto\"]": 26428,
+    "[\"questions_expansion_r_plus\"]": 478,
+    "[\"provaderesidencia_questoes\"]": 158,
+    "[\"questions_expansion_revalida\"]": 95,
+    "[\"questions_expansion_r_plus\",\"provaderesidencia_questoes\"]": 71,
+    "[\"questions_expansion_direto\",\"questions_expansion_r_plus\"]": 2,
+    "[\"questions_expansion_revalida\",\"provaderesidencia_questoes\"]": 4
+  },
+  "missing_letter_with_valid_gab": {
+    "D": 7306,
+    "A": 7262,
+    "C": 7742,
+    "B": 7305,
+    "E": 4018
+  },
+  "options_keys_sample": [
+    "('id', 'index', 'text')",
+    "('letter', 'text')",
+    "('id', 'isCorrect', 'letter', 'order', 'text')",
+    "('images', 'letter', 'text', 'value')",
+    "('id', 'imageUrl', 'isCorrect', 'text')",
+    "('explanation', 'letter', 'text')",
+    "('letter', 'text', 'value')",
+    "('choiceCount', 'id', 'index', 'text')"
+  ],
+  "type_vs_options": {
+    "Múltipla escolha": {
+      "LIST_OF_DICTS_NO_LETTER": 33746,
+      "EMPTY_OR_NULL": 1615,
+      "LIST_OF_DICTS_WITH_LETTER": 218688
+    },
+    "Dissertativa": {
+      "EMPTY_OR_NULL": 143
+    }
+  },
+  "sample_missing_letters": [
+    {
+      "id": "questions_expansion_direto_e2f29202-82a7-50b2-ad2c-edcaa467fb22",
+      "code": "EXP-DIR-106102",
+      "src": "[\"questions_expansion_direto\",\"provaderesidencia_questoes\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "D",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34c838d3293cac80b68c', 'text': 'O nível  sérico de lactato tem valor",
+        "{'id': '675c34c838d3293cac80b68d', 'text': 'Culturas devem ser coletadas antes d",
+        "{'id': '675c34c838d3293cac80b68e', 'text': 'Fazer reposição volêmica agressiva e"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_213cd4f4-42c2-500f-87a5-e842ee653f30",
+      "code": "EXP-DIR-3086",
+      "src": "[\"questions_expansion_direto\",\"provaderesidencia_questoes\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "A",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34ce38d3293cac82cd0a', 'text': 'Solicitar coagulograma, tipagem sang",
+        "{'id': '675c34ce38d3293cac82cd0b', 'text': 'Repetir exame sonográfico em uma sem",
+        "{'id': '675c34ce38d3293cac82cd0c', 'text': 'Indicar esvaziamento uterino imediat"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_a7df8795-80b6-5f99-913e-8ea4aee283a6",
+      "code": "EXP-DIR-112379",
+      "src": "[\"questions_expansion_direto\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "C",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34d138d3293cac83b85a', 'text': 'Tuberculose pulmonar; pesquisa de BK",
+        "{'id': '675c34d138d3293cac83b85b', 'text': 'Abscesso pulmonar; tomografia comput",
+        "{'id': '675c34d138d3293cac83b85c', 'text': 'Neoplasia maligna do pulmão; broncos"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_74bc9b2c-cb74-5ae3-b61f-6bdcce001f62",
+      "code": "EXP-DIR-106548",
+      "src": "[\"questions_expansion_direto\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "C",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34d838d3293cac85c91e', 'text': 'Falha de tratamento deve ser suspeit",
+        "{'id': '675c34d838d3293cac85c91f', 'text': 'O esquema inicial de tratamento é ri",
+        "{'id': '675c34d838d3293cac85c920', 'text': 'A má aderência ao tratamento é o fat"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_d8a4ec34-fcdd-5fbd-9805-94b7174c2897",
+      "code": "EXP-DIR-106057",
+      "src": "[\"questions_expansion_direto\",\"provaderesidencia_questoes\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "B",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34c838d3293cac80b65c', 'text': 'Alcalose respiratória compensada;', ",
+        "{'id': '675c34c838d3293cac80b65d', 'text': 'Aumento do número de hemácias e leuc",
+        "{'id': '675c34c838d3293cac80b65e', 'text': 'Hidronefrose;', 'index': 2}"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_6a3e2b33-ec38-5f83-976e-8a65a55c9cc0",
+      "code": "EXP-DIR-95225",
+      "src": "[\"questions_expansion_direto\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "B",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34d138d3293cac83c212', 'text': 'Repouso na emergência por 24 – 72 ho",
+        "{'id': '675c34d138d3293cac83c213', 'text': 'Ambulatorial.', 'index': 1}",
+        "{'id': '675c34d138d3293cac83c214', 'text': 'Internação em unidade intensiva.', '"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_3242d7ce-ae26-5cde-9ded-8fb120eb1dda",
+      "code": "EXP-DIR-13063",
+      "src": "[\"questions_expansion_direto\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "D",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34e138d3293cac887681', 'text': 'Volumes correntes entre 10 e 12 ml/K",
+        "{'id': '675c34e138d3293cac887682', 'text': 'Ventilação com PEEP superior a 10 ml",
+        "{'id': '675c34e138d3293cac887683', 'text': 'Recrutamento pulmonar com pressões d"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_024fe038-9725-53e7-9418-83c0c6c9ac58",
+      "code": "EXP-DIR-8906",
+      "src": "[\"questions_expansion_direto\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "E",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34ca38d3293cac814b80', 'text': 'solicitar dosagem de hemoglobina de ",
+        "{'id': '675c34ca38d3293cac814b81', 'text': 'solicitar um ultrassom de abdome tot",
+        "{'id': '675c34ca38d3293cac814b82', 'text': 'solicitar uma tomografia computadori"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_dcde680f-0923-5d63-b024-464c0907f08b",
+      "code": "EXP-DIR-175074",
+      "src": "[\"questions_expansion_direto\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "C",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34dd38d3293cac873517', 'text': 'abrangente.', 'index': 0}",
+        "{'id': '675c34dd38d3293cac873518', 'text': 'orientada para a comunidade', 'index",
+        "{'id': '675c34dd38d3293cac873519', 'text': 'seletiva ', 'index': 2}"
+      ]
+    },
+    {
+      "id": "questions_expansion_direto_532d5eaa-ec4c-594c-9d07-eed661efffcb",
+      "code": "EXP-DIR-99280",
+      "src": "[\"questions_expansion_direto\"]",
+      "type": "Múltipla escolha",
+      "correct_answer": "E",
+      "keys": [
+        "id",
+        "text",
+        "index"
+      ],
+      "options_preview": [
+        "{'id': '675c34e038d3293cac87a89e', 'text': 'Endocardite infecciosa. Hemograma, h",
+        "{'id': '675c34e038d3293cac87a89f', 'text': 'Sepse de origem indeterminada. Hemog",
+        "{'id': '675c34e038d3293cac87a8a0', 'text': 'Artrite reumatoide. Hemograma, FAN e"
+      ]
+    }
+  ],
+  "sample_type_mismatch": [],
+  "commentary_stats": {
+    "total_with_commentary": 151143,
+    "total_without_commentary": 103049,
+    "gold_full": 5422,
+    "gold_take_home": 81139,
+    "gold_structured_justifications": 36551,
+    "gold_armadilha_or_erro": 4331,
+    "legacy_commentary": 111241,
+    "short_commentary": 34480
+  },
+  "commentary_by_spec": {
+    "Clínica Médica": {
+      "total": 99589,
+      "with_comm": 42652,
+      "gold": 1940,
+      "homologated": 93825
+    },
+    "Medicina Preventiva e Social": {
+      "total": 27383,
+      "with_comm": 8433,
+      "gold": 4,
+      "homologated": 24568
+    },
+    "Obstetrícia": {
+      "total": 17864,
+      "with_comm": 15698,
+      "gold": 861,
+      "homologated": 16070
+    },
+    "Não definida": {
+      "total": 30599,
+      "with_comm": 30312,
+      "gold": 0,
+      "homologated": 30312
+    },
+    "Pediatria": {
+      "total": 29918,
+      "with_comm": 23363,
+      "gold": 1448,
+      "homologated": 27109
+    },
+    "Cirurgia Geral": {
+      "total": 8815,
+      "with_comm": 7094,
+      "gold": 13,
+      "homologated": 8726
+    },
+    "Ginecologia": {
+      "total": 16053,
+      "with_comm": 15579,
+      "gold": 898,
+      "homologated": 15523
+    },
+    "Cirurgia": {
+      "total": 20173,
+      "with_comm": 7961,
+      "gold": 258,
+      "homologated": 17328
+    },
+    "Não classificada": {
+      "total": 3771,
+      "with_comm": 33,
+      "gold": 0,
+      "homologated": 3764
+    },
+    "Ginecologia e Obstetrícia": {
+      "total": 10,
+      "with_comm": 7,
+      "gold": 0,
+      "homologated": 10
+    },
+    "Obstetricia": {
+      "total": 5,
+      "with_comm": 0,
+      "gold": 0,
+      "homologated": 5
+    },
+    "Preventiva": {
+      "total": 11,
+      "with_comm": 11,
+      "gold": 0,
+      "homologated": 11
+    },
+    "ClinicaMedica": {
+      "total": 1,
+      "with_comm": 0,
+      "gold": 0,
+      "homologated": 1
+    }
+  }
+}

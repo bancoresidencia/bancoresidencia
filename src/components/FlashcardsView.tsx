@@ -38,6 +38,7 @@ import {
 } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
+import { useStudentData } from '@/context/StudentDataContext';
 import { Button, Badge } from '@/components/ui';
 import { flashcardsService } from '@/services/flashcardsService';
 import { clinicalHierarchy } from '@/data/mockQuestions';
@@ -213,15 +214,20 @@ function itemMatchesSpecialty(
 
 interface FlashcardsViewProps {
   mode?: 'flashcards' | 'resumos';
+  initialFilterErrorsOnly?: boolean;
+  initialSearchQuery?: string;
   onNavigateToBanco?: (specialty?: string, tema?: string) => void;
 }
 
 export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   mode = 'flashcards',
+  initialFilterErrorsOnly = false,
+  initialSearchQuery = '',
   onNavigateToBanco
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
+  const { userAnswers } = useStudentData();
 
   // Estados de Expansão dos Cards de Especialidade (todos colapsados por padrão)
   const [expandedSpecialties, setExpandedSpecialties] = useState<Record<string, boolean>>({});
@@ -247,10 +253,13 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const [lastReadSummary, setLastReadSummary] = useState<LastReadSummaryInfo | null>(null);
 
   // Termo de Busca Rápida (Flashcards & Resumos)
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(initialSearchQuery || '');
 
   // Filtro exclusivo para estudar apenas flashcards essenciais (alta incidência em provas)
   const [filterEssentialOnly, setFilterEssentialOnly] = useState(false);
+
+  // Filtro exclusivo para estudar flashcards de questões erradas pelo estudante
+  const [filterErrorsOnly, setFilterErrorsOnly] = useState(initialFilterErrorsOnly || false);
 
   // Opção de embaralhar flashcards (com persistência no localStorage)
   const [isShuffleEnabled, setIsShuffleEnabled] = useState<boolean>(() => {
@@ -359,6 +368,30 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     return allFlashcards.filter((c) => c.priority === 'essential').length;
   }, [allFlashcards]);
 
+  // Flashcards vinculados diretamente aos erros ativos do estudante
+  const { errorCards, errorCardIds } = useMemo(() => {
+    const pendingErrors = Object.entries(userAnswers || {})
+      .filter(([, ans]) => !ans.isCorrect && (ans.statusRetrial || 'pendente') === 'pendente')
+      .map(([qid, ans]) => ({ qid, ans }));
+
+    if (pendingErrors.length === 0) {
+      return { errorCards: [] as FlashcardItem[], errorCardIds: new Set<string>() };
+    }
+
+    const errorQids = new Set(pendingErrors.map((e) => e.qid));
+    const errorThemes = new Set(pendingErrors.map((e) => normalizeText(e.ans.tema || '')).filter(Boolean));
+    const errorFocos = new Set(pendingErrors.map((e) => normalizeText(e.ans.foco || '')).filter(Boolean));
+
+    const matched = allFlashcards.filter((card) => {
+      if (card.sourceQuestionId && errorQids.has(card.sourceQuestionId)) return true;
+      if (card.focus && errorFocos.has(normalizeText(card.focus))) return true;
+      if (card.theme && errorThemes.has(normalizeText(card.theme))) return true;
+      return false;
+    });
+
+    return { errorCards: matched, errorCardIds: new Set(matched.map((c) => c.id)) };
+  }, [userAnswers, allFlashcards]);
+
   // Iniciar sessão de estudo de flashcards e registrar como última sessão
   const handleStartStudy = (
     cardsToStudy: FlashcardItem[],
@@ -368,10 +401,15 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   ) => {
     if (!cardsToStudy || cardsToStudy.length === 0) return;
 
+    let preFiltered = cardsToStudy;
+    if (filterErrorsOnly) {
+      preFiltered = preFiltered.filter((c) => errorCardIds.has(c.id));
+    }
+
     const shouldFilterEssential = overridePriorityOnly ?? filterEssentialOnly;
     const filtered = (shouldFilterEssential && !allCardsMode)
-      ? cardsToStudy.filter((c) => c.priority === 'essential')
-      : cardsToStudy;
+      ? preFiltered.filter((c) => c.priority === 'essential')
+      : preFiltered;
 
     if (filtered.length === 0) return;
 
@@ -446,13 +484,16 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Helper para obter flashcards de uma especialidade inteira
   const getCardsForSpecialty = (specName: string) => {
-    const list = allFlashcards.filter((c) => itemMatchesSpecialty(c, specName));
+    let list = allFlashcards.filter((c) => itemMatchesSpecialty(c, specName));
+    if (filterErrorsOnly) {
+      list = list.filter((c) => errorCardIds.has(c.id));
+    }
     return filterEssentialOnly ? list.filter((c) => c.priority === 'essential') : list;
   };
 
   // Helper para obter flashcards de um tema específico
   const getCardsForTema = (specName: string, temaName: string) => {
-    const list = allFlashcards
+    let list = allFlashcards
       .filter((c) => itemMatchesSpecialty(c, specName))
       .filter((c) => {
         const normTema = normalizeText(temaName);
@@ -473,12 +514,15 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
         return matchesTh || isEndo || isCardio || isGinecoOnco || isMioma || isObstetr || isPrev;
       });
+    if (filterErrorsOnly) {
+      list = list.filter((c) => errorCardIds.has(c.id));
+    }
     return filterEssentialOnly ? list.filter((c) => c.priority === 'essential') : list;
   };
 
   // Helper para obter flashcards de um foco específico
   const getCardsForFoco = (specName: string, temaName: string, focoName: string) => {
-    const list = getCardsForTema(specName, temaName).filter((c) => {
+    let list = getCardsForTema(specName, temaName).filter((c) => {
       const normFoco = normalizeText(focoName);
       const normItemFo = normalizeText(c.focus);
       const normFront = c.front ? normalizeText(c.front) : '';
@@ -503,6 +547,9 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
       return direct || content || wordsMatch;
     });
+    if (filterErrorsOnly) {
+      list = list.filter((c) => errorCardIds.has(c.id));
+    }
     return filterEssentialOnly ? list.filter((c) => c.priority === 'essential') : list;
   };
 
@@ -880,6 +927,9 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           newCardsCount={stats.newCards}
           learningCardsCount={stats.learning}
           dueTodayCount={stats.dueToday}
+          errorCardsCount={errorCards.length}
+          filterErrorsOnly={filterErrorsOnly}
+          onToggleFilterErrorsOnly={() => setFilterErrorsOnly((prev) => !prev)}
           essentialCardsCount={essentialCardsCount}
           filterEssentialOnly={filterEssentialOnly}
           onToggleFilterEssentialOnly={() => setFilterEssentialOnly((prev) => !prev)}

@@ -616,6 +616,14 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         timestamp: answerTimestamp
       };
 
+      const hadPreviousError = previousAttempts.some((a) => !a.isCorrect) || (previousAnswer && !previousAnswer.isCorrect);
+      let statusRetrial: 'pendente' | 'recuperado' | undefined = undefined;
+      if (!isCorrect) {
+        statusRetrial = 'pendente';
+      } else if (hadPreviousError) {
+        statusRetrial = 'recuperado';
+      }
+
       const answerObj: UserAnswerItem = {
         letter: selectedLetter,
         isCorrect,
@@ -631,7 +639,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         banca: metadata?.banca || previousAnswer?.banca,
         year: metadata?.year || previousAnswer?.year,
         code: metadata?.code || previousAnswer?.code,
-        statusRetrial: isCorrect ? 'recuperado' : 'pendente',
+        statusRetrial,
         attempts: [...previousAttempts, newAttempt]
       };
 

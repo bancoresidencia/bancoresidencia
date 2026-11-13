@@ -6,7 +6,8 @@ import {
   Play,
   Shuffle,
   Star,
-  Plus
+  Plus,
+  AlertOctagon
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 
@@ -18,6 +19,9 @@ interface AnkiCompactHeaderProps {
   essentialCardsCount: number;
   filterEssentialOnly: boolean;
   onToggleFilterEssentialOnly: () => void;
+  errorCardsCount?: number;
+  filterErrorsOnly?: boolean;
+  onToggleFilterErrorsOnly?: () => void;
   isShuffleEnabled: boolean;
   onToggleShuffle: () => void;
   onOpenAddCard: () => void;
@@ -33,6 +37,9 @@ export const AnkiCompactHeader: React.FC<AnkiCompactHeaderProps> = ({
   essentialCardsCount,
   filterEssentialOnly,
   onToggleFilterEssentialOnly,
+  errorCardsCount = 0,
+  filterErrorsOnly = false,
+  onToggleFilterErrorsOnly,
   isShuffleEnabled,
   onToggleShuffle,
   onOpenAddCard,
@@ -116,6 +123,34 @@ export const AnkiCompactHeader: React.FC<AnkiCompactHeaderProps> = ({
             >
               <Play className="w-3 h-3 fill-current" />
               <span className="hidden sm:inline">Continuar</span>
+            </button>
+          )}
+
+          {/* Botão Toggle Erros (Ao lado esquerdo de Essenciais) */}
+          {onToggleFilterErrorsOnly && (
+            <button
+              type="button"
+              onClick={onToggleFilterErrorsOnly}
+              title={
+                filterErrorsOnly
+                  ? 'Filtro ativado: mostrando apenas cards vinculados aos seus erros'
+                  : 'Clique para filtrar flashcards vinculados aos seus erros'
+              }
+              className={`px-2.5 py-1.5 rounded-xl text-xs font-bold transition-all border flex items-center gap-1 cursor-pointer shadow-2xs active:scale-98 shrink-0 ${
+                filterErrorsOnly
+                  ? 'bg-rose-500/20 border-rose-500/50 text-rose-700 dark:text-rose-300 ring-2 ring-rose-500/20'
+                  : 'bg-zinc-50 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700'
+              }`}
+            >
+              <AlertOctagon
+                className={`w-3.5 h-3.5 ${
+                  filterErrorsOnly ? 'fill-rose-500 text-rose-500' : 'text-zinc-400'
+                }`}
+              />
+              <span className="hidden md:inline">Erros</span>
+              <span className="font-mono text-[10px] px-1 py-0.2 rounded bg-rose-500/20 text-rose-900 dark:text-rose-200">
+                {errorCardsCount}
+              </span>
             </button>
           )}
 

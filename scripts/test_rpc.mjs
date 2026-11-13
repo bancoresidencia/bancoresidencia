@@ -11,8 +11,8 @@ if (fs.existsSync('.env.local')) {
 const client = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
 
 async function check() {
-  const { data, error } = await client.rpc('batch_update_taxonomy', { p_rows: [] });
-  console.log('batch_update_taxonomy test:', { data, error: error?.message });
+  const { data, error, status } = await client.from('questions_direto').select('id').limit(1);
+  console.log('questions_direto check:', { status, error: error?.message });
 }
 
 check().catch(console.error);

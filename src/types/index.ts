@@ -20,7 +20,7 @@ export type QuestionStatus =
 
 export type QuestionDifficulty = 'Todas' | 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
 
-export type QuestionType = 'Todas' | 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
+export type QuestionType = 'Todas' | 'Múltipla escolha' | 'Dissertativa' | 'Discursiva' | 'Certo ou errado' | 'Verdadeiro ou falso';
 
 export interface SubfocoNode {
   subfoco: string;
@@ -100,7 +100,7 @@ export interface Question {
   subSubfoco?: string;
   subtheme?: string;
   difficulty: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
-  type: 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
+  type: 'Múltipla escolha' | 'Dissertativa' | 'Discursiva' | 'Certo ou errado' | 'Verdadeiro ou falso';
   isAnulada: boolean;
   statement: string;
   options: QuestionOption[];

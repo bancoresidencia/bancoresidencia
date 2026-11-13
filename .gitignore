@@ -125,6 +125,9 @@ data/questmed_extracted_exams.db*
 data/questoes_132k.db*
 .backup_taxonomia_local/
 *.db
+*.db-*
+*.db-shm
+*.db-wal
 *.sqlite
 *.sqlite3
 data/*.tmp

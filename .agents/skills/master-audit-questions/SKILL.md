@@ -1,6 +1,6 @@
 ---
 name: master-audit-questions
-description: Hub Mestre de Auditoria, Governança e Orquestração do Banco de Questões. Governa a tabela questions_curated_staging em supabase_tables.db como Fonte Única da Verdade (Single Source of Truth - 254.192 questões curadas e consolidadas após conclusão da Frente 1 de Deduplicação), orientando os próximos chats satélites de padronização de imagens WebP e consolidação de gabaritos faltantes.
+description: Hub Mestre de Auditoria, Governança e Orquestração do Banco de Questões. Governa a tabela questions_curated_staging em supabase_tables.db como Fonte Única da Verdade (Single Source of Truth - 254.190 questões curadas e consolidadas após conclusão das Frentes 1, 5 e 6 de Filtros, Instituições e Dificuldade), orientando os próximos chats satélites de padronização de imagens WebP e consolidação de gabaritos faltantes.
 ---
 
 # Master Question Audit Hub — Governança e Saneamento do Acervo
@@ -9,8 +9,8 @@ Este documento define a arquitetura mestre de auditoria, governança e alinhamen
 
 > [!IMPORTANT]
 > **FONTE ÚNICA DA VERDADE (SINGLE SOURCE OF TRUTH - SSOT):**
-> A tabela **`questions_curated_staging`** no banco [`data/supabase_tables/supabase_tables.db`](file:///d:/bancoresidencia/data/supabase_tables/supabase_tables.db) é, a partir de agora, a **Fonte Única da Verdade (SSOT)** de todo o acervo. 
-> Todos os próximos chats satélites de especialidade (imagens WebP, consolidação de gabaritos, comentários ouro, filtros) irão **ler, auditar e atualizar diretamente essa tabela**. As tabelas originais (`questions`, `questions_expansion_*` e `provaderesidencia_*`) permanecem preservadas como linha de base imutável para rastreabilidade histórica.
+> A tabela **`questions_curated_staging`** no banco [`data/supabase_tables/supabase_tables.db`](file:///d:/bancoresidencia/data/supabase_tables/supabase_tables.db) é, a partir de agora, a **Fonte Única da Verdade (SSOT)** de todo o acervo (254.190 questões ativas). 
+> Todos os próximos chats satélites de especialidade (imagens WebP, consolidação de gabaritos, comentários ouro) irão **ler, auditar e atualizar diretamente essa tabela**. As tabelas originais (`questions`, `questions_expansion_*` e `provaderesidencia_*`) permanecem preservadas como linha de base imutável para rastreabilidade histórica.
 
 ---
 
@@ -20,13 +20,13 @@ O **Chat Mestre** atua como a **Torre de Controle**:
 1. **Governança da SSOT (`questions_curated_staging`):** Centralizar as métricas de integridade, schemas e quality gates consolidados.
 2. **Definição de Especificações para Chats Especialistas:** Fornecer os contratos de dados, regras clínicas e diretrizes técnicas para cada chat satélite.
 3. **Orquestração Multi-Chat:** Cada frente de trabalho roda em seu próprio chat dedicado com contexto limpo e especializado:
-   * *Frente 1:* Deduplicação e Preservação de Filtros (**CONCLUÍDA**)
+   * *Frente 1:* Deduplicação e Preservação de Filtros (**CONCLUÍDA E HOMOLOGADA**)
+   * *Frente 5 (Filtros):* Normalização de Bancas, Instituições e Modalidade (**CONCLUÍDA E HOMOLOGADA**)
+   * *Frente 6 (Filtros):* Calibração de Dificuldade Vetorial/k-NN (**CONCLUÍDA E HOMOLOGADA**)
    * *Frente 2:* Padronização de Imagens em WebP (**PRÓXIMO PASSO**)
    * *Frente 3:* Consolidação de Gabaritos Faltantes (**PRÓXIMO PASSO**)
    * *Frente 4:* Comentários Padrão-Ouro via API
-   * *Frente 5:* Normalização de Bancas e Instituições
-   * *Frente 6:* Calibração de Dificuldade (TRI) e Taxonomia
-4. **Homologação e Reingestão Final:** Após a conclusão dos quality gates de todas as frentes sobre `questions_curated_staging`, este Hub Mestre coordenará a exportação e sincronização definitiva para as tabelas de produção do Supabase.
+4. **Homologação e Integração Consolidada no Supabase:** Executada com sucesso absoluto! A SSOT foi sincronizada com preservação integral dos comentários Padrão-Ouro e histórico cumulativo do Revalida, totalizando **257.111 questões ativas** nas 4 tabelas consolidadas (`questions_direto`, `questions_rplus`, `questions_revalida`, `questions_titulo`) e suas respectivas views públicas.
 
 ---
 
@@ -35,22 +35,22 @@ O **Chat Mestre** atua como a **Torre de Controle**:
 ```
                               ┌──────────────────────────────────────────────────┐
                               │     MASTER AUDIT HUB (Chat & Skill Mestre)       │
-                              │  SSOT: questions_curated_staging (254.192 q)     │
+                              │  SSOT: questions_curated_staging (254.190 q)     │
                               └────────────────────────┬─────────────────────────┘
                                                        │
          ┌─────────────────────┬───────────────────────┼─────────────────────────┬─────────────────────┐
          ▼                     ▼                       ▼                         ▼                     ▼
 ┌──────────────────┐  ┌──────────────────┐   ┌────────────────────┐    ┌──────────────────┐  ┌──────────────────┐
 │ 1. DEDUPLICAÇÃO  │  │   2. IMAGENS     │   │    3. GABARITOS    │    │  4. COMENTÁRIOS  │  │ 5. INSTITUIÇÕES  │
-│   & FILTROS      │  │      WebP        │   │    PADRÃO-OURO     │    │     API OURO     │  │ & PROVAS INCOMP. │
-│  [✅ HOMOLOGADA] │  │ [⏳ PRÓXIMO CHAT]│   │  [⏳ PRÓXIMO CHAT] │    │  [⏸️ AGUARDANDO] │  │  [⏸️ AGUARDANDO] │
+│   & FILTROS      │  │      WebP        │   │    PADRÃO-OURO     │    │     API OURO     │  │ & MODALIDADES    │
+│  [✅ HOMOLOGADA] │  │ [⏳ PRÓXIMO CHAT]│   │  [⏳ PRÓXIMO CHAT] │    │  [⏸️ AGUARDANDO] │  │  [✅ HOMOLOGADA] │
 └──────────────────┘  └──────────────────┘   └────────────────────┘    └──────────────────┘  └──────────────────┘
                                                        │
                                                        ▼
                                              ┌────────────────────┐
                                              │   6. DIFICULDADE   │
-                                             │    & TAXONOMIA     │
-                                             │   [⏸️ AGUARDANDO]  │
+                                             │    (VETORIAL/TRI)  │
+                                             │   [✅ HOMOLOGADA]  │
                                              └────────────────────┘
 ```
 
@@ -96,15 +96,25 @@ O **Chat Mestre** atua como a **Torre de Controle**:
 
 ---
 
-### 5️⃣ Frente 5: Padronização Canônica de Instituições, Bancas & Provas Incompletas
-* **Status:** **AGUARDANDO CONCLUSÃO DAS FRENTES 2 E 3**.
-* **Objetivo:** Normalizar nomes de bancas para os padrões oficiais (ex: unificar variações de USP, ENARE, UNICAMP), remover bancas genéricas ou atribuídas a cursinhos preparatórios e identificar cadernos oficiais incompletos para resgatar questões faltantes.
+### 5️⃣ Frente 5: Padronização Canônica de Instituições, Bancas & Modalidade
+* **Status:** **CONCLUÍDA E HOMOLOGADA NO ÂMBITO DE FILTROS** via script [`scripts/standardize_institutions_and_bancas.py`](file:///d:/bancoresidencia/scripts/standardize_institutions_and_bancas.py) e [`scripts/standardize_modalidades.py`](file:///d:/bancoresidencia/scripts/standardize_modalidades.py).
+* **Resultados Consolidados:**
+  * **Modalidades:** 100% canônicas (206.599 Acesso Direto, 45.413 R+, 1.490 Revalida, 688 Título de Especialista; zero nulos).
+  * **Expurgo de Testes:** 2 questões de teste ('InocencioJunior') eliminadas. Acervo ajustado para **254.190 questões ativas**.
+  * **Despoluição Institucional:** >100.000 questões limpas de sufixos prolixos `[SIGLA] - [NOME EXTENSO] ([UF])`.
+  * **Subdivisões Oficiais Preservadas:** `USP-SP` (4.773 q) e `USP-RP` (3.314 q) mantidas independentes; `SUS-SP` (2.439 q) vs `SMS-SP` (1.009 q) segregados; `UFG` (2.308 q) vs `UFGD` (687 q) preservados.
+  * **Slugs de URL e Tags Duplicadas:** 0 slugs em PascalCase e 0 tags `DUPLICADO` residuais.
 
 ---
 
-### 6️⃣ Frente 6: Calibração Taxonômica, Dificuldade TRI & Status
-* **Status:** **AGUARDANDO CONCLUSÃO DAS FRENTES 2 E 3**.
-* **Objetivo:** Calibrar a coluna `difficulty` para os níveis Fácil (~30%), Médio (~50%) e Difícil (~20%) para alimentar o motor psicométrico de TRI (`src/utils/irtModel.ts`), garantindo alinhamento fino de `especialidade`, `tema`, `foco` e `subfoco`.
+### 6️⃣ Frente 6: Calibração de Dificuldade Vetorial (TRI) & Taxonomia
+* **Status:** **CONCLUÍDA E HOMOLOGADA NO ÂMBITO DE DIFICULDADE** via script [`scripts/classify_difficulty_vector.py`](file:///d:/bancoresidencia/scripts/classify_difficulty_vector.py).
+* **Resultados Consolidados:**
+  * **Preenchimento de Nulos:** 100% das 30.599 questões `NULL` classificadas via modelo híbrido em 3 camadas:
+    1. Camada 1 (Gêmeas Exatas Homólogas): 15.780 questões (51,57%).
+    2. Camada 2 (Vector Space k-NN com Cosseno Ponderado): 4.689 questões (15,32%).
+    3. Camada 3 (Heurística Cognitiva Clínica de Complexidade): 10.130 questões (33,11%).
+  * **Distribuição Final Canônica:** `Médio` (171.410 - 67,43%), `Fácil` (57.510 - 22,62%), `Difícil` (25.270 - 9,94%), Zero Nulos.
 
 ---
 
@@ -114,3 +124,17 @@ O **Chat Mestre** atua como a **Torre de Controle**:
 2. **Atualizações com Checkpoint e Rastreabilidade:** Qualquer alteração em lote de imagens ou gabaritos deve registrar logs detalhados e manter checkpoints para reversão segura caso necessário.
 3. **Imutabilidade das Tabelas Brutas:** As tabelas de importação originais (`questions`, `questions_expansion_*`, `provaderesidencia_*`) não devem sofrer alterações diretas.
 4. **Fechamento e Reingestão:** Apenas o Chat Mestre fará o merge consolidado e a exportação final para os scripts de sincronização com o Supabase.
+
+---
+
+## 🌐 5. Estado Homologado no Supabase (Pós-Merge de Alta Precisão)
+
+A integração consolidada da SSOT com o Supabase PostgreSQL foi executada e homologada com 100% de acurácia, preservando cumulativamente os comentários Padrão-Ouro LLM e o acervo histórico pré-existente do Revalida:
+
+* **`questions_direto` (e `view_questions_acesso_direto`):** **206.599 questões** (100% auditadas com enunciado limpo, opções A–E e filtros)
+* **`questions_rplus` (e `view_questions_rplus`):** **45.413 questões**
+* **`questions_revalida` (e `view_questions_revalida`):** **4.411 questões** (1.490 da SSOT curada + 2.921 registros legados preservados)
+* **`questions_titulo` (e `view_questions_titulo`):** **688 questões**
+* **TOTAL GLOBAL NO SUPABASE:** **257.111 questões ativas**
+* **Comentários Padrão-Ouro LLM Preservados:** **86.318 comentários** intactos na nuvem.
+
