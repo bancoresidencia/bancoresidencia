@@ -57,6 +57,16 @@ export interface DynamicFilterCriterion {
   value: string;
 }
 
+export type FlashcardImportFormat =
+  | 'auto'
+  | 'apkg'
+  | 'colpkg'
+  | 'txt_notes'
+  | 'txt_cards'
+  | 'csv_tsv'
+  | 'db'
+  | 'zip';
+
 export interface CsvFlashcardPreview {
   id: string;
   front: string;
@@ -76,6 +86,8 @@ export interface CsvFlashcardPreview {
   validationError?: string;
   confidence: number;
   distributionMode: 'auto' | 'manual';
+  detectedDeckName?: string;
+  detectedFormat?: string;
 }
 
 export interface FlashcardItem {

@@ -40,11 +40,17 @@ export function decryptSecret(cipherText: string): string {
 
 // ── 2. Troca de Authorization Code por Tokens (OAuth 2.0 Backend Flow) ──
 export async function exchangeGoogleCode(code: string, redirectUri: string) {
-  const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+  const clientId =
+    process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
+    process.env.GOOGLE_CLIENT_ID ||
+    '323022146503-csbd1pq8s2g22l3mghaaea4kocl2acfn.apps.googleusercontent.com';
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
 
   if (!clientId || !clientSecret) {
-    throw new Error('Credenciais GOOGLE_CLIENT_ID e GOOGLE_CLIENT_SECRET ausentes no servidor.');
+    const missingKeys: string[] = [];
+    if (!clientId) missingKeys.push('GOOGLE_CLIENT_ID');
+    if (!clientSecret) missingKeys.push('GOOGLE_CLIENT_SECRET');
+    throw new Error(`Credenciais ${missingKeys.join(' e ')} ausentes no servidor.`);
   }
 
   const tokenUrl = 'https://oauth2.googleapis.com/token';
@@ -107,11 +113,17 @@ export async function getValidGoogleAccessToken(userId: string): Promise<string>
     throw new Error('Sessão expirada e nenhum Refresh Token disponível. Por favor, reconecte o Google Agenda.');
   }
 
-  const clientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
+  const clientId =
+    process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
+    process.env.GOOGLE_CLIENT_ID ||
+    '323022146503-csbd1pq8s2g22l3mghaaea4kocl2acfn.apps.googleusercontent.com';
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
 
   if (!clientId || !clientSecret) {
-    throw new Error('Credenciais GOOGLE_CLIENT_ID e GOOGLE_CLIENT_SECRET ausentes no servidor.');
+    const missingKeys: string[] = [];
+    if (!clientId) missingKeys.push('GOOGLE_CLIENT_ID');
+    if (!clientSecret) missingKeys.push('GOOGLE_CLIENT_SECRET');
+    throw new Error(`Credenciais ${missingKeys.join(' e ')} ausentes no servidor.`);
   }
 
   const response = await fetch('https://oauth2.googleapis.com/token', {

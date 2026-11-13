@@ -170,10 +170,10 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
             type="button"
             onClick={() => setIsCsvModalOpen(true)}
             className="px-3 py-1.5 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer inline-flex items-center gap-1.5 shadow-2xs"
-            title="Importar flashcards em lote a partir de arquivo CSV / TSV"
+            title="Importar flashcards a partir de baralhos do Anki (.apkg, .colpkg), planilhas (.csv, .tsv) ou notas (.txt)"
           >
             <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-500" />
-            <span className="hidden sm:inline">Importar CSV</span>
+            <span className="hidden sm:inline">Importar Flashcards (Anki / CSV)</span>
           </button>
         </div>
       </div>

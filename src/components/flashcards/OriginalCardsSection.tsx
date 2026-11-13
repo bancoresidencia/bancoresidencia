@@ -288,7 +288,7 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
               Meus Baralhos &amp; Cartões Originais
             </h2>
             <p className="text-[11px] text-zinc-500">
-              Crie baralhos personalizados, importe arquivos CSV ou estude com filtros dinâmicos.
+              Crie baralhos personalizados, importe pacotes do Anki (.apkg, .colpkg), planilhas (.csv, .tsv) ou notas (.txt).
             </p>
           </div>
         </div>
@@ -299,10 +299,10 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
             type="button"
             onClick={() => setIsCsvModalOpen(true)}
             className="px-3 py-1.5 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer inline-flex items-center gap-1.5 shadow-2xs"
-            title="Importar flashcards em lote a partir de arquivo CSV / TSV / Anki"
+            title="Importar flashcards em lote a partir do Anki (.apkg, .colpkg), planilhas (.csv, .tsv) ou notas (.txt)"
           >
             <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-500" />
-            <span>Importar CSV</span>
+            <span>Importar Flashcards</span>
           </button>
 
           <button

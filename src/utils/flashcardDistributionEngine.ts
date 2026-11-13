@@ -54,7 +54,10 @@ export interface RawParsedCsvRow {
 /**
  * Limpa tags HTML típicas de exports do Anki
  */
-function cleanAnkiHtml(text: string): string {
+/**
+ * Limpa tags HTML típicas de exports do Anki
+ */
+export function cleanAnkiHtml(text: string): string {
   if (!text) return '';
   return text
     .replace(/<br\s*[\/]?>/gi, '\n')
@@ -65,12 +68,28 @@ function cleanAnkiHtml(text: string): string {
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
     .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
     .replace(/<b>(.*?)<\/b>/gi, '**$1**')
     .replace(/<strong>(.*?)<\/strong>/gi, '**$1**')
     .replace(/<i>(.*?)<\/i>/gi, '*$1*')
     .replace(/<em>(.*?)<\/em>/gi, '*$1*')
+    .replace(/<u>(.*?)<\/u>/gi, '_$1_')
     .replace(/<[^>]+>/g, '') // remove tags restantes
+    .replace(/\[sound:[^\]]+\]/gi, '')
     .trim();
+}
+
+/**
+ * Extrai respostas de oclusões cloze para servir de verso automático
+ */
+export function extractClozeBack(front: string): string {
+  const matches: string[] = [];
+  const regex = /\{\{c\d+::(.*?)(?:::.*?)?\}\}/g;
+  let match: RegExpExecArray | null;
+  while ((match = regex.exec(front)) !== null) {
+    if (match[1]) matches.push(cleanAnkiHtml(match[1]));
+  }
+  return matches.join(', ') || 'Oclusão Cloze';
 }
 
 /**
@@ -79,17 +98,62 @@ function cleanAnkiHtml(text: string): string {
 export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
   if (!csvContent || !csvContent.trim()) return [];
 
-  // 1. Detecta o delimitador da primeira linha não-vazia
-  const firstLine = csvContent.split(/\r?\n/).find((l) => l.trim().length > 0) || '';
+  // 1. Processa diretivas de cabeçalho do Anki (#separator, #html, #tags column, #deck)
+  const lines = csvContent.split(/\r?\n/);
   let delimiter = ',';
-  const commaCount = (firstLine.match(/,/g) || []).length;
-  const semicolonCount = (firstLine.match(/;/g) || []).length;
-  const tabCount = (firstLine.match(/\t/g) || []).length;
+  let delimiterDetected = false;
+  let forcedTagCol = -1;
+  let defaultDeck = '';
+  const filteredLines: string[] = [];
 
-  if (tabCount > commaCount && tabCount > semicolonCount) {
-    delimiter = '\t';
-  } else if (semicolonCount > commaCount) {
-    delimiter = ';';
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith('#')) {
+      const lower = trimmed.toLowerCase();
+      if (lower.startsWith('#separator:')) {
+        const sep = lower.replace('#separator:', '').trim();
+        if (sep === 'tab') delimiter = '\t';
+        else if (sep === 'comma') delimiter = ',';
+        else if (sep === 'semicolon') delimiter = ';';
+        else if (sep === 'space') delimiter = ' ';
+        delimiterDetected = true;
+      } else if (lower.startsWith('#tags column:')) {
+        const colNum = parseInt(lower.replace('#tags column:', '').trim(), 10);
+        if (!isNaN(colNum) && colNum > 0) forcedTagCol = colNum - 1;
+      } else if (lower.startsWith('#deck:')) {
+        defaultDeck = trimmed.substring(6).trim();
+      }
+      continue;
+    }
+    filteredLines.push(line);
+  }
+
+  const cleanedContent = filteredLines.join('\n');
+  if (!cleanedContent.trim()) return [];
+
+  // Se o delimitador não foi fixado por diretiva, detecta estatisticamente da 1ª linha
+  if (!delimiterDetected) {
+    const firstLine = filteredLines.find((l) => l.trim().length > 0) || '';
+    const commaCount = (firstLine.match(/,/g) || []).length;
+    const semicolonCount = (firstLine.match(/;/g) || []).length;
+    const tabCount = (firstLine.match(/\t/g) || []).length;
+
+    if (tabCount > commaCount && tabCount > semicolonCount) {
+      delimiter = '\t';
+    } else if (semicolonCount > commaCount) {
+      delimiter = ';';
+    }
+  }
+
+  // Decomposição hierárquica do nome do baralho do Anki (ex: "Ginecologia::Oncologia")
+  let deckSpec: string | undefined;
+  let deckTema: string | undefined;
+  let deckFoco: string | undefined;
+  if (defaultDeck) {
+    const deckParts = defaultDeck.split('::').map((p) => p.trim());
+    if (deckParts.length >= 1) deckSpec = deckParts[0];
+    if (deckParts.length >= 2) deckTema = deckParts[1];
+    if (deckParts.length >= 3) deckFoco = deckParts[2];
   }
 
   // 2. Parser de fluxo com suporte a aspas e quebras de linha dentro de campos
@@ -98,9 +162,9 @@ export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
   let currentField = '';
   let insideQuotes = false;
 
-  for (let i = 0; i < csvContent.length; i++) {
-    const char = csvContent[i];
-    const nextChar = csvContent[i + 1];
+  for (let i = 0; i < cleanedContent.length; i++) {
+    const char = cleanedContent[i];
+    const nextChar = cleanedContent[i + 1];
 
     if (char === '"') {
       if (insideQuotes && nextChar === '"') {
@@ -195,6 +259,10 @@ export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
     if (rows[0].length >= 4) headerIndices.tags = 3;
   }
 
+  if (forcedTagCol >= 0) {
+    headerIndices.tags = forcedTagCol;
+  }
+
   const results: RawParsedCsvRow[] = [];
 
   for (let r = startIndex; r < rows.length; r++) {
@@ -243,15 +311,20 @@ export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
         .filter(Boolean);
     }
 
+    let resolvedBack = back;
+    if (front.includes('{{c') && !resolvedBack) {
+      resolvedBack = extractClozeBack(front);
+    }
+
     results.push({
       front,
-      back: back || (front.includes('{{c') ? 'Oclusão Cloze' : ''),
+      back: resolvedBack || (front.includes('{{c') ? 'Oclusão Cloze' : ''),
       comment: comment || undefined,
-      specialty: specialty || undefined,
-      theme: theme || undefined,
-      focus: focus || undefined,
+      specialty: specialty || deckSpec || undefined,
+      theme: theme || deckTema || undefined,
+      focus: focus || deckFoco || undefined,
       subfocus: subfocus || undefined,
-      deckId: deckId || undefined,
+      deckId: deckId || (defaultDeck ? defaultDeck : undefined),
       priority,
       studyDepth,
       tags: tags.length > 0 ? tags : undefined,

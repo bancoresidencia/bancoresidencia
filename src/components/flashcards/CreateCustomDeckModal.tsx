@@ -1007,10 +1007,10 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                   type="button"
                   onClick={() => setIsCsvModalOpen(true)}
                   className="px-2.5 py-1 rounded-xl text-[11px] font-bold text-zinc-700 dark:text-zinc-300 bg-white dark:bg-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700 transition-colors cursor-pointer inline-flex items-center gap-1 shadow-2xs"
-                  title="Importar flashcards em lote via CSV para seus cartões autorais"
+                  title="Importar flashcards em lote a partir de baralhos do Anki (.apkg, .colpkg), planilhas (.csv, .tsv) ou notas (.txt)"
                 >
                   <FileSpreadsheet className="w-3.5 h-3.5 text-emerald-500" />
-                  <span>Importar CSV</span>
+                  <span>Importar Flashcards (Anki / CSV)</span>
                 </button>
 
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-zinc-200/60 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-bold">

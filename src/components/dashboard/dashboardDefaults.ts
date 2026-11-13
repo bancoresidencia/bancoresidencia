@@ -15,10 +15,10 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
   {
     id: 'home_meta_diaria',
     title: 'Sequência',
-    colSpan: 4,
+    colSpan: 6,
     minColSpan: 3,
     minHeight: 65,
-    maxHeight: 360,
+    maxHeight: 320,
     order: 1,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -26,10 +26,10 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
   {
     id: 'home_aproveitamento',
     title: 'Aproveitamento Geral',
-    colSpan: 4,
+    colSpan: 6,
     minColSpan: 3,
     minHeight: 65,
-    maxHeight: 360,
+    maxHeight: 320,
     order: 2,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -40,7 +40,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 4,
     minColSpan: 3,
     minHeight: 65,
-    maxHeight: 360,
+    maxHeight: 320,
     order: 3,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -48,7 +48,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
   {
     id: 'home_agenda',
     title: 'Agenda de Estudos',
-    colSpan: 7,
+    colSpan: 8,
     minColSpan: 4,
     minHeight: 65,
     maxHeight: 340,
@@ -59,44 +59,11 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
   {
     id: 'home_dicas',
     title: 'Decorebas & Critérios',
-    colSpan: 5,
+    colSpan: 12,
     minColSpan: 3,
     minHeight: 65,
     maxHeight: 340,
     order: 5,
-    isVisible: true,
-    settings: { showIcons: true, showDetails: true, compactMode: false }
-  },
-  {
-    id: 'home_caderno_erros',
-    title: 'Caderno de Erros',
-    colSpan: 6,
-    minColSpan: 3,
-    minHeight: 65,
-    maxHeight: 350,
-    order: 6,
-    isVisible: true,
-    settings: { showIcons: true, showDetails: true, compactMode: false }
-  },
-  {
-    id: 'home_recomendacao',
-    title: 'Recomendação do Dia',
-    colSpan: 6,
-    minColSpan: 3,
-    minHeight: 65,
-    maxHeight: 360,
-    order: 7,
-    isVisible: true,
-    settings: { showIcons: true, showDetails: true, compactMode: false }
-  },
-  {
-    id: 'home_raiox_areas',
-    title: 'Raio-X das 6 Áreas',
-    colSpan: 12,
-    minColSpan: 4,
-    minHeight: 65,
-    maxHeight: 700,
-    order: 8,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
   },
@@ -107,8 +74,41 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     minColSpan: 4,
     minHeight: 65,
     maxHeight: 600,
-    order: 9,
+    order: 6,
     isVisible: true,
+    settings: { showIcons: true, showDetails: true, compactMode: false }
+  },
+  {
+    id: 'home_raiox_areas',
+    title: 'Raio-X das 6 Áreas',
+    colSpan: 12,
+    minColSpan: 4,
+    minHeight: 65,
+    maxHeight: 700,
+    order: 7,
+    isVisible: true,
+    settings: { showIcons: true, showDetails: true, compactMode: false }
+  },
+  {
+    id: 'home_caderno_erros',
+    title: 'Caderno de Erros',
+    colSpan: 6,
+    minColSpan: 3,
+    minHeight: 65,
+    maxHeight: 350,
+    order: 8,
+    isVisible: false,
+    settings: { showIcons: true, showDetails: true, compactMode: false }
+  },
+  {
+    id: 'home_recomendacao',
+    title: 'Recomendação do Dia',
+    colSpan: 6,
+    minColSpan: 3,
+    minHeight: 65,
+    maxHeight: 360,
+    order: 9,
+    isVisible: false,
     settings: { showIcons: true, showDetails: true, compactMode: false }
   }
 ];

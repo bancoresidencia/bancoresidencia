@@ -366,8 +366,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
       studyDepth === 'study'
         ? ' • Estudo'
         : studyDepth === 'review'
-        ? ' • Revisão'
-        : '';
+          ? ' • Revisão'
+          : '';
     onStartStudy(cards, `${title}${depthSuffix}`, filterEssentialOnly, allCardsMode);
   };
 
@@ -395,8 +395,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
               {studyDepth === 'all'
                 ? 'Exibindo todos os cartões disponíveis no acervo oficial'
                 : studyDepth === 'study'
-                ? 'Cartões detalhados, conceituais e aprofundados para fixação teórica'
-                : 'Cartões diretos, objetivos e rápidos para revisão ágil pré-prova'}
+                  ? 'Cartões detalhados, conceituais e aprofundados para fixação teórica'
+                  : 'Cartões diretos, objetivos e rápidos para revisão ágil pré-prova'}
             </p>
           </div>
         </div>
@@ -406,11 +406,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
           <button
             type="button"
             onClick={() => setStudyDepth('all')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${
-              studyDepth === 'all'
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${studyDepth === 'all'
                 ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
                 : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
-            }`}
+              }`}
           >
             <Layers className="w-3.5 h-3.5" />
             <span>Todos</span>
@@ -422,21 +421,19 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
           <button
             type="button"
             onClick={() => setStudyDepth('study')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${
-              studyDepth === 'study'
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${studyDepth === 'study'
                 ? 'bg-blue-600 text-white shadow-2xs'
                 : 'text-zinc-500 hover:text-blue-600 dark:hover:text-blue-400'
-            }`}
+              }`}
             title="Cartões detalhados com raciocínio clínico completo, fisiopatologia e critérios diagnósticos"
           >
             <BookOpen className="w-3.5 h-3.5" />
             <span>Cartões para Estudo</span>
             <span
-              className={`font-mono text-[10px] px-1 rounded ${
-                studyDepth === 'study'
+              className={`font-mono text-[10px] px-1 rounded ${studyDepth === 'study'
                   ? 'bg-blue-700 text-white'
                   : 'bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300'
-              }`}
+                }`}
             >
               {studyCardsCount}
             </span>
@@ -445,21 +442,19 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
           <button
             type="button"
             onClick={() => setStudyDepth('review')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${
-              studyDepth === 'review'
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${studyDepth === 'review'
                 ? 'bg-purple-600 text-white shadow-2xs'
                 : 'text-zinc-500 hover:text-purple-600 dark:hover:text-purple-400'
-            }`}
+              }`}
             title="Cartões diretos, clozes objetivos, condutas imediatas e pérolas de prova"
           >
             <Zap className="w-3.5 h-3.5" />
             <span>Cartões para Revisão</span>
             <span
-              className={`font-mono text-[10px] px-1 rounded ${
-                studyDepth === 'review'
+              className={`font-mono text-[10px] px-1 rounded ${studyDepth === 'review'
                   ? 'bg-purple-700 text-white'
                   : 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300'
-              }`}
+                }`}
             >
               {reviewCardsCount}
             </span>
@@ -516,11 +511,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
           <button
             type="button"
             onClick={() => setOnlyWithPending((prev) => !prev)}
-            className={`px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all cursor-pointer border shadow-2xs inline-flex items-center gap-1 ${
-              onlyWithPending
+            className={`px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all cursor-pointer border shadow-2xs inline-flex items-center gap-1 ${onlyWithPending
                 ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-700 dark:text-emerald-300'
                 : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-            }`}
+              }`}
             title="Mostrar apenas baralhos com revisões ou novos cards pendentes hoje"
           >
             <Filter className="w-3 h-3" />
@@ -576,11 +570,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
               <React.Fragment key={spec.especialidade}>
                 {/* LINHA NÍVEL 1: ESPECIALIDADE */}
                 <div
-                  className={`grid grid-cols-12 items-center px-4 py-2 transition-colors group select-none ${
-                    isSpecSelected
+                  className={`grid grid-cols-12 items-center px-4 py-2 transition-colors group select-none ${isSpecSelected
                       ? 'bg-blue-50/60 dark:bg-blue-950/20'
                       : 'hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50'
-                  }`}
+                    }`}
                 >
                   {/* Nome da Especialidade com Toggle e Checkbox */}
                   <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
@@ -701,11 +694,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                     return (
                       <React.Fragment key={tem.tema}>
                         <div
-                          className={`grid grid-cols-12 items-center px-4 py-1.5 transition-colors group select-none pl-7 sm:pl-9 ${
-                            isTemaSelected
+                          className={`grid grid-cols-12 items-center px-4 py-1.5 transition-colors group select-none pl-7 sm:pl-9 ${isTemaSelected
                               ? 'bg-blue-50/50 dark:bg-blue-950/15'
                               : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
-                          }`}
+                            }`}
                         >
                           {/* Nome do Tema com Indentação */}
                           <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
@@ -823,11 +815,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                             return (
                               <React.Fragment key={foc.foco}>
                                 <div
-                                  className={`grid grid-cols-12 items-center px-4 py-1.5 transition-colors group select-none pl-12 sm:pl-16 ${
-                                    isFocoSelected
+                                  className={`grid grid-cols-12 items-center px-4 py-1.5 transition-colors group select-none pl-12 sm:pl-16 ${isFocoSelected
                                       ? 'bg-blue-50/40 dark:bg-blue-950/10'
                                       : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/30'
-                                  }`}
+                                    }`}
                                 >
                                   <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
                                     <button
@@ -951,11 +942,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                     return (
                                       <React.Fragment key={subName}>
                                         <div
-                                          className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-16 sm:pl-24 ${
-                                            isSubSelected
+                                          className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-16 sm:pl-24 ${isSubSelected
                                               ? 'bg-blue-50/30 dark:bg-blue-950/10'
                                               : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
-                                          }`}
+                                            }`}
                                         >
                                           <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
                                             <button
@@ -1055,11 +1045,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                             return (
                                               <div
                                                 key={ss}
-                                                className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-20 sm:pl-32 ${
-                                                  isSSSelected
+                                                className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-20 sm:pl-32 ${isSSSelected
                                                     ? 'bg-blue-50/40 dark:bg-blue-950/20'
                                                     : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
-                                                }`}
+                                                  }`}
                                               >
                                                 <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
                                                   <button
@@ -1151,9 +1140,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                 </span>
                 <span className="text-[10px] text-zinc-500 dark:text-zinc-400 block truncate">
                   {selectedNodeKeys.size > 0
-                    ? `${selectedNodeKeys.size} ${
-                        selectedNodeKeys.size === 1 ? 'item selecionado' : 'itens selecionados'
-                      } • ${selectedCardsList.length} flashcards prontos`
+                    ? `${selectedNodeKeys.size} ${selectedNodeKeys.size === 1 ? 'item selecionado' : 'itens selecionados'
+                    } • ${selectedCardsList.length} flashcards prontos`
                     : 'Marque os checkboxes na tabela para compor um estudo personalizado'}
                 </span>
               </div>
