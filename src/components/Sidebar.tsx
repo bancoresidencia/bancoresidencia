@@ -125,9 +125,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </span>
               </div>
             )}
-                </span>
-              </div>
-            )}
           </Link>
 
           {!isCollapsed && onToggleCollapse && (
