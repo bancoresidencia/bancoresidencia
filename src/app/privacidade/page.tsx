@@ -8,7 +8,7 @@ export default function PoliticaPrivacidadePage() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-[#0a0a0c] text-zinc-800 dark:text-zinc-200 py-12 px-4 sm:px-6 lg:px-8 font-sans selection:bg-blue-500/20">
       <div className="max-w-4xl mx-auto space-y-8">
-        
+
         {/* Botão Voltar */}
         <div>
           <Link
@@ -37,7 +37,7 @@ export default function PoliticaPrivacidadePage() {
           </div>
           <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 leading-relaxed">
             Última atualização: {new Date().toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' })}.
-            Esta Política descreve como a plataforma <strong>Banco Residência Médica</strong> coleta, utiliza, armazena e protege suas informações pessoais e os dados da sua agenda, em estrita conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e com as Políticas de Dados de Usuários dos Serviços de API do Google.
+            Esta Política descreve como a plataforma <strong>Hippocampus</strong> (Questões de Residência Médica) coleta, utiliza, armazena e protege suas informações pessoais e os dados da sua agenda, em estrita conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018) e com as Políticas de Dados de Usuários dos Serviços de API do Google.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function PoliticaPrivacidadePage() {
               1. Identificação e Finalidade da Plataforma
             </h2>
             <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              O <strong>Banco Residência Médica</strong> é uma plataforma acadêmica e tecnológica de alta performance voltada ao estudo e preparação de estudantes de medicina e médicos para concursos de Residência Médica e Revalidação de Diplomas. A plataforma fornece simulados comentados, métricas de desempenho, flashcards de repetição espaçada e organizador de cronogramas diários de estudos adaptados à rotina de internato e plantões médicos.
+              O <strong>Hippocampus</strong> é uma plataforma acadêmica e tecnológica de alta performance voltada ao estudo e preparação de estudantes de medicina e médicos para concursos de Residência Médica e Revalidação de Diplomas. A plataforma fornece simulados comentados, métricas de desempenho, flashcards de repetição espaçada e organizador de cronogramas diários de estudos adaptados à rotina de internato e plantões médicos.
             </p>
           </section>
 
@@ -65,7 +65,7 @@ export default function PoliticaPrivacidadePage() {
                 2. Integração com a Google Calendar API (Google Agenda)
               </h2>
             </div>
-            
+
             <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
               Para auxiliar na conciliação dos horários de estudo com os horários de hospital (plantões, rounds e internato), oferecemos a opção de integração com a sua conta do <strong>Google Calendar</strong>.
             </p>
@@ -98,7 +98,7 @@ export default function PoliticaPrivacidadePage() {
                 Declaração de Uso Limitado da Google API (Limited Use Disclosure)
               </h4>
               <p className="leading-relaxed text-[11px]">
-                O uso e a transferência para qualquer outro aplicativo das informações recebidas das APIs do Google pelo <strong>Banco Residência Médica</strong> obedecerão integralmente à{' '}
+                O uso e a transferência para qualquer outro aplicativo das informações recebidas das APIs do Google pelo <strong>Hippocampus</strong> obedecerão integralmente à{' '}
                 <a
                   href="https://developers.google.com/terms/api-services-user-data-policy"
                   target="_blank"
@@ -166,7 +166,7 @@ export default function PoliticaPrivacidadePage() {
                 >
                   myaccount.google.com/permissions
                 </a>{' '}
-                e remova o acesso do aplicativo <em>Banco Residência</em>.
+                e remova o acesso do aplicativo <em>Hippocampus</em>.
               </li>
             </ol>
           </section>
@@ -186,7 +186,7 @@ export default function PoliticaPrivacidadePage() {
 
         {/* Rodapé da Política */}
         <div className="text-center pt-4 text-xs text-zinc-400 dark:text-zinc-500">
-          <p>© {new Date().getFullYear()} Banco Residência Médica. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Hippocampus — Questões de Residência. Todos os direitos reservados.</p>
         </div>
 
       </div>

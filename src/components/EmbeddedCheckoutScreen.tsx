@@ -67,19 +67,25 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
       <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/85 dark:bg-[var(--bg-page)]/85 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-colors">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-4">
           {/* Logo e Nome */}
-          <div className="flex items-center gap-3">
-            <Logo className="w-10 h-10 shrink-0 transition-transform hover:scale-105 duration-200" glow />
+          <div className="flex items-center gap-3.5">
+            <Logo className="w-11 h-11 sm:w-12 sm:h-12 shrink-0 transition-transform hover:scale-105 duration-200" glow />
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-heading text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-                  Banco Residência
+                <span
+                  className="font-bold text-xl sm:text-2xl tracking-[-0.6px] text-slate-900 dark:text-white"
+                  style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+                >
+                  Hippocampus
                 </span>
                 <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
                   2026
                 </span>
               </div>
-              <p className="hidden sm:block text-[11px] text-slate-500 dark:text-slate-400 font-medium -mt-0.5">
-                Ativação Segura & Onboarding
+              <p
+                className="hidden sm:block text-[8px] sm:text-[8.5px] font-normal text-slate-500 dark:text-slate-400 uppercase tracking-[1.56px] mt-0.5"
+                style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+              >
+                QUESTÕES DE RESIDÊNCIA
               </p>
             </div>
           </div>
@@ -162,11 +168,10 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
                       key={p.id}
                       type="button"
                       onClick={() => setSelectedPlan(p)}
-                      className={`p-3 rounded-2xl border text-left transition-all cursor-pointer relative ${
-                        isCurrent
+                      className={`p-3 rounded-2xl border text-left transition-all cursor-pointer relative ${isCurrent
                           ? 'border-2 bg-slate-50 dark:bg-zinc-800/60 shadow-sm'
                           : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-transparent'
-                      }`}
+                        }`}
                       style={isCurrent ? { borderColor: accentConfig.primaryHex } : {}}
                     >
                       {p.badge && (

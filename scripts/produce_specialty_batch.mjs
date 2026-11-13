@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import { DatabaseSync } from 'node:sqlite';
 import { createClient } from '@supabase/supabase-js';
-import { solveQuestionDeep, sanitizeText } from './solve_questions_engine.mjs';
+import { solveQuestionDeep } from './solve_questions_engine.mjs';
 
 // 1. Carrega variáveis de ambiente
 const envPath = path.resolve('.env.local');
@@ -22,14 +23,12 @@ if (fs.existsSync(envPath)) {
 }
 
 const SUPABASE_URL = env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
-const SUPABASE_KEY = env.SUPABASE_SERVICE_ROLE_KEY || env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
+const SUPABASE_KEY = env.SUPABASE_SERVICE_ROLE_KEY || env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 if (!SUPABASE_URL || !SUPABASE_KEY) {
   console.error('❌ ERRO: Supabase não configurado.');
   process.exit(1);
 }
-
-console.log('🔒 MODO 100% GRATUITO ATIVO: Chave paga bloqueada. Custo: R$ 0,00.');
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -37,14 +36,17 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 const argFile = process.argv.find(a => a.startsWith('--file='));
 const argSpec = process.argv.find(a => a.startsWith('--specialty='));
 const argWorkers = process.argv.find(a => a.startsWith('--workers='));
+const argNext = process.argv.find(a => a.startsWith('--next='));
 
-const DB_PATH = argFile ? argFile.split('=')[1] : 'data/clinica_medica_final_questions.json';
-const SPECIALTY_NAME = argSpec ? argSpec.split('=')[1] : 'Especialidade Médica';
+const DB_PATH = argFile ? argFile.split('=')[1] : 'data/ginecologia_direto_questions.json';
+const SPECIALTY_NAME = argSpec ? argSpec.split('=')[1] : 'Ginecologia';
 let CONCURRENCY = argWorkers ? parseInt(argWorkers.split('=')[1], 10) : 4;
-if (![4, 6, 7, 10, 20].includes(CONCURRENCY)) CONCURRENCY = 4;
+if (![4, 6, 7, 10].includes(CONCURRENCY)) CONCURRENCY = 4;
+const NEXT_SPECIALTY = argNext ? argNext.split('=')[1] : 'obstetricia';
 
 const STATE_PATH = 'data/pipeline_progress_state.json';
 const SIGNAL_PATH = 'data/pipeline.signal';
+const SQLITE_PATH = 'data/supabase_tables/supabase_tables.db';
 
 if (!fs.existsSync(DB_PATH)) {
   console.error(`❌ Arquivo não encontrado: ${DB_PATH}`);
@@ -73,9 +75,10 @@ function checkHasImage(q) {
 // Filtra apenas questões de texto puro com gabarito homologado sem comentários padrão-ouro
 const validAnswers = ['A', 'B', 'C', 'D', 'E', 'ANULADA'];
 const pendingQuestions = allQuestions.filter(q => {
-  const ans = (q.correctAnswer || q.correct_answer || '').toUpperCase().trim();
-  const hasValidAns = validAnswers.includes(ans);
-  const needsComm = !q.commentary || !q.commentary.includes('Take-Home Message:') || q.commentary.length < 200;
+  const ans = (q.correctAnswer || q.correct_answer || q.gabarito || '').toUpperCase().trim();
+  const hasValidAns = validAnswers.includes(ans) || q.is_anulada;
+  const comm = q.commentary || '';
+  const needsComm = !comm.includes('Take-Home Message:') && !comm.includes('Take-Home');
   const noImg = !checkHasImage(q);
   return hasValidAns && needsComm && noImg;
 });
@@ -85,17 +88,11 @@ console.log(`===================================================================
 console.log(`🚀 ESTEIRA DE PRODUÇÃO CONTÍNUA — ${SPECIALTY_NAME.toUpperCase()} (TEXTO PURO)`);
 console.log(`- Base de dados: ${DB_PATH}`);
 console.log(`- Total de questões pendentes selecionadas: ${totalToProcess}`);
-console.log(`- Modelo: gemini-3.5-flash-lite (MODO 100% GRATUITO - Pool de Chaves Free)`);
-console.log(`- Custo desta execução: R$ 0,00 (Chave paga BLOQUEADA)`);
+console.log(`- Encadeamento posterior: ${NEXT_SPECIALTY ? NEXT_SPECIALTY.toUpperCase() : 'NENHUM'}`);
+console.log(`- Modelo: gemini-3.5-flash-lite (MODO 100% GRATUITO - Custo R$ 0,00)`);
 console.log(`- Concorrência: ${CONCURRENCY} workers simultâneos`);
 console.log(`================================================================================\n`);
 
-if (totalToProcess === 0) {
-  console.log(`✅ Nenhuma questão pendente em ${SPECIALTY_NAME}. Especialidade já 100% concluída!`);
-  process.exit(0);
-}
-
-// Variáveis de controle de métricas
 let processedCount = 0;
 let successCount = 0;
 let errorCount = 0;
@@ -104,39 +101,44 @@ let totalCandidateTokens = 0;
 const startTime = Date.now();
 const recentHistory = [];
 
-// Salva o JSON local em lote
-function flushLocalDB() {
+let dbLocal = null;
+if (fs.existsSync(SQLITE_PATH)) {
   try {
-    fs.writeFileSync(DB_PATH, JSON.stringify(allQuestions, null, 2), 'utf8');
-  } catch (err) {
-    console.error('⚠️ Falha ao salvar banco local:', err.message);
+    dbLocal = new DatabaseSync(SQLITE_PATH);
+  } catch (e) {
+    console.warn('⚠️ SQLite local não pôde ser aberto:', e.message);
   }
 }
 
-// Atualiza o estado para o Dashboard
-function updateStateFile(currentQ = null, status = 'RUNNING') {
-  const elapsedSec = Math.max(1, Math.floor((Date.now() - startTime) / 1000));
-  const qpm = processedCount > 0 ? (processedCount / (elapsedSec / 60)) : 0;
-  const remainingQuestions = totalToProcess - processedCount;
-  const remainingSec = qpm > 0 ? Math.floor((remainingQuestions / qpm) * 60) : 0;
+function updateStateFile(currentQ = null, overrideStatus = null) {
+  const now = Date.now();
+  const elapsedSec = Math.max(1, Math.round((now - startTime) / 1000));
+  const qpm = processedCount > 0 ? parseFloat(((processedCount / elapsedSec) * 60).toFixed(1)) : 0;
+  const remainingQuestions = Math.max(0, totalToProcess - processedCount);
+  const estSecondsRemaining = qpm > 0 ? Math.round((remainingQuestions / qpm) * 60) : 0;
+  const etaMinutes = Math.round(estSecondsRemaining / 60);
 
-  const hours = Math.floor(remainingSec / 3600);
-  const mins = Math.floor((remainingSec % 3600) / 60);
-  const etaFormatted = `${hours}h ${mins < 10 ? '0' : ''}${mins}m`;
+  let status = overrideStatus || 'RUNNING';
+  if (fs.existsSync(SIGNAL_PATH)) {
+    const sig = fs.readFileSync(SIGNAL_PATH, 'utf8').trim().toLowerCase();
+    if (sig === 'pause') status = 'PAUSED';
+    if (sig === 'stop') status = 'STOPPED';
+  }
 
   const state = {
     status,
     startedAt: new Date(startTime).toISOString(),
     updatedAt: new Date().toISOString(),
     specialty: SPECIALTY_NAME,
-    scope: 'Questões de Texto Puro (Sem Imagens) com Gabarito Homologado',
+    nextSpecialty: NEXT_SPECIALTY,
+    scope: 'Questões de Texto Puro com Gabarito Homologado (questions_direto)',
     model: 'gemini-3.5-flash-lite (Pool Gratuito - Custo R$ 0,00)',
     concurrency: CONCURRENCY,
     totalToProcess,
     processedCount,
     successCount,
     errorCount,
-    progressPercent: totalToProcess > 0 ? Number(((processedCount / totalToProcess) * 100).toFixed(2)) : 0,
+    progressPercent: totalToProcess > 0 ? parseFloat(((processedCount / totalToProcess) * 100).toFixed(2)) : 100,
     tokens: {
       promptTokens: totalPromptTokens,
       candidateTokens: totalCandidateTokens,
@@ -144,20 +146,11 @@ function updateStateFile(currentQ = null, status = 'RUNNING') {
       avgPromptTokens: processedCount > 0 ? Math.round(totalPromptTokens / processedCount) : 0,
       avgCandidateTokens: processedCount > 0 ? Math.round(totalCandidateTokens / processedCount) : 0
     },
-    financials: {
-      costInputUSD: 0,
-      costOutputUSD: 0,
-      totalCostUSD: 0,
-      totalCostBRL: 0,
-      costPerQuestionBRL: 0,
-      estimatedRemainingCostUSD: 0,
-      estimatedRemainingCostBRL: 0
-    },
     velocity: {
-      questionsPerMinute: Number(qpm.toFixed(1)),
+      questionsPerMinute: qpm,
       elapsedSeconds: elapsedSec,
-      estimatedSecondsRemaining: remainingSec,
-      etaFormatted
+      estimatedSecondsRemaining: estSecondsRemaining,
+      etaFormatted: etaMinutes > 60 ? `${Math.floor(etaMinutes / 60)}h ${etaMinutes % 60}m` : `${etaMinutes}m`
     },
     currentQuestion: currentQ,
     recentHistory: recentHistory.slice(-15).reverse()
@@ -165,79 +158,58 @@ function updateStateFile(currentQ = null, status = 'RUNNING') {
 
   try {
     fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 2), 'utf8');
+  } catch {}
+}
+
+function flushLocalDB() {
+  try {
+    fs.writeFileSync(DB_PATH, JSON.stringify(allQuestions, null, 2), 'utf8');
   } catch (err) {
-    // Silencia erro esporádico de concorrência
+    console.error(`⚠️ Erro ao salvar arquivo local: ${err.message}`);
   }
 }
 
-// Verifica se há sinal de pause ou stop
 async function checkSignals() {
-  if (fs.existsSync(SIGNAL_PATH)) {
-    const signal = fs.readFileSync(SIGNAL_PATH, 'utf8').trim().toLowerCase();
-    if (signal === 'stop') {
-      console.log('\n🛑 Sinal de parada imediata (STOP) recebido.');
-      updateStateFile(null, 'STOPPED');
-      flushLocalDB();
-      fs.unlinkSync(SIGNAL_PATH);
-      process.exit(0);
+  if (!fs.existsSync(SIGNAL_PATH)) return;
+  const signal = fs.readFileSync(SIGNAL_PATH, 'utf8').trim().toLowerCase();
+  if (signal === 'pause') {
+    updateStateFile(null, 'PAUSED');
+    console.log(`⏸️ Pipeline pausado por sinal externo (data/pipeline.signal). Aguardando...`);
+    while (fs.existsSync(SIGNAL_PATH) && fs.readFileSync(SIGNAL_PATH, 'utf8').trim().toLowerCase() === 'pause') {
+      await new Promise(r => setTimeout(r, 2000));
     }
-    if (signal === 'pause') {
-      console.log('\n⏸️ Esteira pausada via dashboard. Aguardando retomada...');
-      updateStateFile(null, 'PAUSED');
-      while (fs.existsSync(SIGNAL_PATH)) {
-        const sig = fs.readFileSync(SIGNAL_PATH, 'utf8').trim().toLowerCase();
-        if (sig === 'resume' || sig !== 'pause') {
-          if (sig === 'resume') fs.unlinkSync(SIGNAL_PATH);
-          console.log('▶️ Retomando produção...');
-          break;
-        }
-        await new Promise(r => setTimeout(r, 1000));
-      }
-    }
+    console.log(`▶️ Retomando execução...`);
+    updateStateFile(null, 'RUNNING');
+  } else if (signal === 'stop') {
+    updateStateFile(null, 'STOPPED');
+    console.log(`⏹️ Sinal de parada detectado. Salvando dados locais e finalizando.`);
+    flushLocalDB();
+    process.exit(0);
   }
 }
 
-// Worker para processar uma única questão
-async function processOneQuestion(q, index) {
-  await checkSignals();
+function sanitizePostgres(str) {
+  if (!str) return '';
+  return String(str).replace(/\u0000/g, '').replace(/\\u0000/g, '').replace(/[\u0000-\u0008\u000B-\u000C\u000E-\u001F]/g, '');
+}
 
+async function processQuestion(q) {
   const qStart = Date.now();
-  updateStateFile({
-    code: q.code || q.id,
-    tema: q.tema || SPECIALTY_NAME,
-    foco: q.foco || '',
-    banca: q.banca || q.institution || 'Oficial',
-    year: q.year || 2024,
-    startTime: qStart
-  });
+  updateStateFile({ code: q.code, id: q.id, tema: q.tema, especialidade: q.especialidade });
 
   try {
-    // Garante que o campo especialidade esteja definido na chamada do preceptor
-    const qWithSpec = {
-      ...q,
-      especialidade: q.especialidade || q.specialty || SPECIALTY_NAME
-    };
-
-    const res = await solveQuestionDeep(qWithSpec);
-    const durationSec = Number(((Date.now() - qStart) / 1000).toFixed(2));
-
-    if (!res) {
-      throw new Error('Retorno nulo do motor');
+    const res = await solveQuestionDeep(q, SPECIALTY_NAME);
+    if (!res || !res.commentary) {
+      throw new Error('Retorno nulo ou inválido do motor de IA.');
     }
 
-    // Coleta tokens
-    const pTokens = res.usageMetadata?.promptTokenCount || 1184;
-    const cTokens = res.usageMetadata?.candidatesTokenCount || 503;
+    const durationSec = parseFloat(((Date.now() - qStart) / 1000).toFixed(2));
+    const pTokens = res.usageMetadata?.promptTokenCount || 1135;
+    const cTokens = res.usageMetadata?.candidatesTokenCount || 490;
     totalPromptTokens += pTokens;
     totalCandidateTokens += cTokens;
     processedCount++;
     successCount++;
-
-    // Sanitização de caracteres nulos/inválidos para Postgres
-    const sanitizePostgres = (str) => {
-      if (!str) return '';
-      return String(str).replace(/\u0000/g, '').replace(/\\u0000/g, '').replace(/[\u0000-\u0008\u000B-\u000C\u000E-\u001F]/g, '');
-    };
 
     const cleanedOptions = (res.options || []).map(o => ({
       ...o,
@@ -245,16 +217,38 @@ async function processOneQuestion(q, index) {
       explanation: sanitizePostgres(o.explanation)
     }));
 
-    // Sincroniza imediatamente no Supabase
-    const { error: supaErr } = await supabase
-      .from('questions')
+    const cleanCommentary = sanitizePostgres(res.commentary);
+
+    // 1. Sincroniza em questions_direto
+    const { error: errDireto } = await supabase
+      .from('questions_direto')
       .update({
-        commentary: sanitizePostgres(res.commentary),
+        commentary: cleanCommentary,
         options: cleanedOptions
       })
       .eq('id', q.id);
 
-    const supaStatus = supaErr ? `❌ Supabase: ${supaErr.message.slice(0, 40)}` : `✅ Supabase OK`;
+    // 2. Sincroniza em questions (se existir)
+    supabase
+      .from('questions')
+      .update({
+        commentary: cleanCommentary,
+        options: cleanedOptions
+      })
+      .eq('id', q.id)
+      .then(() => {})
+      .catch(() => {});
+
+    // 3. Atualiza SQLite local se aberto
+    if (dbLocal) {
+      try {
+        dbLocal.prepare(`
+          UPDATE questions_curated_staging 
+          SET commentary = ?
+          WHERE id = ? OR id = ? OR code = ?
+        `).run(cleanCommentary, `questions_${q.id}`, `questions_expansion_direto_${q.id}`, q.code);
+      } catch {}
+    }
 
     // Atualiza base em memória
     const idxInAll = allQuestions.findIndex(item => item.id === q.id);
@@ -264,28 +258,21 @@ async function processOneQuestion(q, index) {
         commentary: res.commentary,
         options: res.options,
         finalCommentary: res.finalCommentary,
-        mainErrorReason: res.mainErrorReason,
-        takeHomeMessage: res.takeHomeMessage,
-        guidelineEvolution: res.guidelineEvolution,
-        references: res.references,
-        correctAnswer: res.correctAnswer,
-        isAnulada: res.isAnulada
+        takeHomeMessage: res.takeHomeMessage
       };
     }
 
-    // Histórico recente
     recentHistory.push({
-      code: q.code,
+      code: q.code || q.id,
       tema: q.tema || SPECIALTY_NAME,
       duration: durationSec,
       tokens: pTokens + cTokens,
-      status: supaErr ? 'ERRO_SUPABASE' : 'OK',
+      status: errDireto ? 'ERRO_SUPABASE' : 'OK',
       timestamp: new Date().toLocaleTimeString('pt-BR')
     });
 
-    console.log(`[${processedCount}/${totalToProcess}] ${q.code} (${q.year}) - ${q.tema || SPECIALTY_NAME} | ⚡ ${durationSec}s | Tokens: In=${pTokens}, Out=${cTokens} | ${supaStatus}`);
+    console.log(`[${processedCount}/${totalToProcess}] ${q.code || q.id} | ⚡ ${durationSec}s | In=${pTokens}, Out=${cTokens} | ${errDireto ? '❌ ' + errDireto.message : '✅ Supabase OK'}`);
 
-    // Salva base local no disco a cada 50 questões
     if (processedCount % 50 === 0) {
       flushLocalDB();
     }
@@ -296,7 +283,7 @@ async function processOneQuestion(q, index) {
     errorCount++;
     console.error(`❌ [${processedCount}/${totalToProcess}] Falha na questão ${q.code || q.id}: ${err.message}`);
     recentHistory.push({
-      code: q.code,
+      code: q.code || q.id,
       tema: q.tema || SPECIALTY_NAME,
       duration: 0,
       tokens: 0,
@@ -307,10 +294,8 @@ async function processOneQuestion(q, index) {
   }
 }
 
-// Gerenciador de fila concorrente
-async function runContinuousPipeline() {
+async function runPipeline() {
   updateStateFile(null, 'RUNNING');
-
   let currentIndex = 0;
   const runningPromises = new Set();
 
@@ -318,12 +303,11 @@ async function runContinuousPipeline() {
     await checkSignals();
 
     while (runningPromises.size < CONCURRENCY && currentIndex < pendingQuestions.length) {
-      const q = pendingQuestions[currentIndex];
-      const p = processOneQuestion(q, currentIndex).finally(() => {
+      const q = pendingQuestions[currentIndex++];
+      const p = processQuestion(q).then(() => {
         runningPromises.delete(p);
       });
       runningPromises.add(p);
-      currentIndex++;
     }
 
     if (runningPromises.size > 0) {
@@ -331,30 +315,30 @@ async function runContinuousPipeline() {
     }
   }
 
-  // Fim do lote
   flushLocalDB();
   updateStateFile(null, 'COMPLETED');
-  console.log(`\n================================================================================`);
-  console.log(`🏁 ${SPECIALTY_NAME.toUpperCase()} CONCLUÍDA COM SUCESSO!`);
-  console.log(`- Questões Processadas: ${processedCount}`);
-  console.log(`- Sucessos: ${successCount} | Falhas: ${errorCount}`);
-  console.log(`- Custo Desta Execução: R$ 0,00 (100% Gratuito - Chaves Free / Chave Paga Bloqueada)`);
-  console.log(`================================================================================\n`);
+  console.log(`\n🎉 ESPECIALIDADE ${SPECIALTY_NAME} FINALIZADA!`);
+  console.log(`- Sucessos: ${successCount}`);
+  console.log(`- Falhas: ${errorCount}`);
+
+  // Se houver próxima especialidade encadeada, dispara automaticamente!
+  if (NEXT_SPECIALTY === 'obstetricia') {
+    console.log(`\n➡️ INICIANDO AUTOMATICAMENTE A PRÓXIMA ESPECIALIDADE: OBSTETRÍCIA...`);
+    const { spawn } = await import('child_process');
+    spawn('node', [
+      'scripts/produce_specialty_batch.mjs',
+      '--file=data/obstetricia_direto_questions.json',
+      '--specialty=Obstetrícia',
+      `--workers=${CONCURRENCY}`,
+      '--next=none'
+    ], {
+      stdio: 'inherit',
+      detached: true
+    }).unref();
+  }
 }
 
-// Tratamento de encerramento gracioso
-process.on('SIGINT', () => {
-  console.log('\n🛑 Interrupção detectada (SIGINT). Salvando progresso e finalizando...');
-  flushLocalDB();
-  updateStateFile(null, 'INTERRUPTED');
-  process.exit(0);
+runPipeline().catch(err => {
+  console.error('Erro fatal:', err);
+  updateStateFile(null, 'CRASHED');
 });
-
-process.on('SIGTERM', () => {
-  flushLocalDB();
-  updateStateFile(null, 'TERMINATED');
-  process.exit(0);
-});
-
-runContinuousPipeline();
-

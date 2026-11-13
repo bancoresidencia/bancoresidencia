@@ -8,55 +8,60 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 
-// 1. Copy original logoinicial.svg to public
-const sourceSvg = path.join(rootDir, 'docs', 'design', 'logoinicial.svg');
+// 1. Sincroniza SVG original hippotalamus
+const sourceSvg = path.join(rootDir, 'design-system', 'LOGO', 'hippotalamus.svg');
 const publicOriginalSvg = path.join(rootDir, 'public', 'logoinicial.svg');
-fs.copyFileSync(sourceSvg, publicOriginalSvg);
-console.log('Copied original SVG to public/logoinicial.svg');
+const docsOriginalSvg = path.join(rootDir, 'docs', 'design', 'logoinicial.svg');
 
-// 2. Prepare square standalone SVG for icon.svg and favicon.svg
-const squareSvgContent = `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="480 60 960 960">
+if (fs.existsSync(sourceSvg)) {
+  fs.copyFileSync(sourceSvg, publicOriginalSvg);
+  if (!fs.existsSync(path.dirname(docsOriginalSvg))) {
+    fs.mkdirSync(path.dirname(docsOriginalSvg), { recursive: true });
+  }
+  fs.copyFileSync(sourceSvg, docsOriginalSvg);
+  console.log('Copied hippotalamus.svg to public/logoinicial.svg and docs/design/logoinicial.svg');
+}
+
+// 2. Símbolo puro oficial (sem círculo, traço original 132 miterlimit 10)
+const PATH_SYMBOL_1 =
+  'M718.74 906.921 C882.704 405.986 1702.884 702.375 1543.416 1022.75 C1373.738 1363.638 1050.008 860.221 842.727 1632.282';
+const PATH_SYMBOL_2 =
+  'M854.033 1157.092 C673.215 1042.009 422.801 1191.281 298.333 1070.475 C184.287 959.785 362.047 674.876 362.047 674.876 C675.35 161.911 1357.793 222.808 1670.993 488.16 C2360.998 1072.751 1270.756 1971.842 1270.756 1336.094';
+
+const symbolSvgContent = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2160 1920">
   <defs>
     <style>
-      :root {
-        --circle-fill: #2563eb;
-        --letters-fill: #ffffff;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --circle-fill: #3b82f6;
-          --letters-fill: #ffffff;
-        }
-      }
-      .logo-circle {
-        fill: var(--circle-fill);
-        stroke: var(--circle-fill);
-        stroke-width: 32;
+      .cls-1 {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 132;
         stroke-miterlimit: 10;
       }
-      .logo-letters {
-        fill: var(--letters-fill);
+      @media (prefers-color-scheme: dark) {
+        .cls-1 {
+          stroke: #ffffff;
+        }
       }
     </style>
   </defs>
-  <circle cx="960" cy="540" r="441.163" class="logo-circle"/>
-  <g class="logo-letters">
-    <path d="M992.128 738.841 L992.128 341.159 L839.461 341.159 C810.992 341.159 787.193 345.608 768.066 354.504 C748.938 363.401 734.57 375.634 724.961 391.203 C715.353 406.772 710.549 424.521 710.549 444.45 C710.549 460.464 713.573 474.209 719.623 485.686 C725.673 497.162 733.902 506.548 744.311 513.844 C754.721 521.139 766.509 526.388 779.676 529.591 L779.676 532.794 C765.263 533.683 751.607 538.087 738.707 546.005 C725.806 553.923 715.308 564.911 707.212 578.967 C699.116 593.024 695.068 609.928 695.068 629.679 C695.068 650.675 700.095 669.402 710.148 685.861 C720.201 702.32 735.326 715.265 755.521 724.695 C775.717 734.126 801.028 738.841 831.454 738.841 Z M903.706 679.856 L841.864 679.856 C816.063 679.856 797.158 674.785 785.147 664.642 C773.137 654.5 767.131 641.244 767.131 624.874 C767.131 612.953 770.067 602.321 775.939 592.98 C781.811 583.638 790.174 576.254 801.028 570.827 C811.882 565.4 824.782 562.687 839.728 562.687 L921.133 562.687 L921.133 662.429 C921.133 672.053 913.331 679.856 903.706 679.856 Z M921.133 510.374 L847.202 510.374 C834.568 510.374 823.269 508.061 813.305 503.435 C803.341 498.808 795.512 492.269 789.818 483.817 C784.124 475.366 781.277 465.268 781.277 453.524 C781.277 437.866 786.793 425.01 797.825 414.957 C808.857 404.904 824.96 399.877 846.134 399.877 L921.133 399.877 Z"/>
-    <path d="M921.199 738.841 L921.199 341.159 L1071.464 341.159 C1101.535 341.159 1127.024 346.453 1147.931 357.04 C1168.838 367.627 1184.719 382.484 1195.573 401.612 C1206.427 420.74 1211.854 443.026 1211.854 468.471 C1211.854 493.915 1206.338 515.979 1195.306 534.662 C1184.274 553.345 1168.171 567.758 1146.997 577.9 C1125.823 588.042 1100.022 593.113 1069.596 593.113 L962.836 593.113 L962.836 534.128 L1062.389 534.128 C1080.005 534.128 1094.506 531.548 1105.894 526.388 C1117.282 521.228 1125.778 513.755 1131.383 503.968 C1136.988 494.182 1139.79 482.35 1139.79 468.471 C1139.79 454.236 1136.988 442.092 1131.383 432.039 C1125.778 421.986 1117.237 414.29 1105.761 408.952 C1094.284 403.614 1079.738 400.945 1062.122 400.945 L1062.122 400.945 C998.894 401.612 992.461 412.535 992.461 470.606 L992.461 738.841 Z M1145.662 738.841 L1050.112 558.683 L1127.513 558.683 L1224.932 738.841 Z"/>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="${PATH_SYMBOL_1}" class="cls-1"/>
+    <path d="${PATH_SYMBOL_2}" class="cls-1"/>
   </g>
 </svg>`;
 
-fs.writeFileSync(path.join(rootDir, 'public', 'favicon.svg'), squareSvgContent);
-fs.writeFileSync(path.join(rootDir, 'public', 'icon.svg'), squareSvgContent);
-fs.writeFileSync(path.join(rootDir, 'src', 'app', 'icon.svg'), squareSvgContent);
-console.log('Created public/favicon.svg, public/icon.svg, and src/app/icon.svg');
+fs.writeFileSync(path.join(rootDir, 'public', 'favicon.svg'), symbolSvgContent);
+fs.writeFileSync(path.join(rootDir, 'public', 'icon.svg'), symbolSvgContent);
+fs.writeFileSync(path.join(rootDir, 'src', 'app', 'icon.svg'), symbolSvgContent);
+console.log('Created public/favicon.svg, public/icon.svg, and src/app/icon.svg (sem círculo)');
 
-// 3. Render high-res PNGs using Playwright
+// 3. Render Master PNG via Playwright (fundo transparente, traço preto nítido)
 async function renderPngs() {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  
+  await page.setViewportSize({ width: 1024, height: 1024 });
+
   const html = `<!DOCTYPE html>
   <html>
     <head>
@@ -67,34 +72,57 @@ async function renderPngs() {
       </style>
     </head>
     <body>
-      ${squareSvgContent}
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2160 1920">
+        <g id="Layer_1" data-name="Layer 1">
+          <path d="${PATH_SYMBOL_1}" fill="none" stroke="#000000" stroke-width="132" stroke-miterlimit="10"/>
+          <path d="${PATH_SYMBOL_2}" fill="none" stroke="#000000" stroke-width="132" stroke-miterlimit="10"/>
+        </g>
+      </svg>
     </body>
   </html>`;
 
   await page.setContent(html);
 
-  const sizes = [16, 32, 48, 64, 192, 512];
   const tempDir = path.join(rootDir, 'scripts', '.temp_icons');
   if (!fs.existsSync(tempDir)) fs.mkdirSync(tempDir, { recursive: true });
 
-  for (const s of sizes) {
-    await page.setViewportSize({ width: s, height: s });
-    const targetPng = path.join(tempDir, `icon_${s}.png`);
-    await page.screenshot({ path: targetPng, omitBackground: true });
-    if (s === 192) {
-      fs.copyFileSync(targetPng, path.join(rootDir, 'public', 'apple-touch-icon.png'));
-    }
-  }
-
+  const masterPng = path.join(tempDir, 'master_1024.png');
+  await page.screenshot({ path: masterPng, omitBackground: true });
   await browser.close();
-  console.log('Rendered all PNG icon sizes via Playwright');
+  console.log('Rendered master 1024x1024 PNG via Playwright');
 
-  // 4. Run Python PIL to bundle into favicon.ico
+  // 4. Run Python PIL to produce icons with Lanczos
+  const pythonScript = `
+from PIL import Image
+import os
+
+master_path = r'${masterPng.replace(/\\/g, '/')}'
+img = Image.open(master_path).convert('RGBA')
+
+# 1. Salvar ícone Apple (192x192)
+apple_icon = img.resize((192, 192), Image.Resampling.LANCZOS)
+apple_icon.save(r'public/apple-touch-icon.png', format='PNG')
+apple_icon.save(r'public/logo-banco-residencia.png', format='PNG')
+print('Generated public/apple-touch-icon.png & public/logo-banco-residencia.png')
+
+# 2. Salvar logo 120x120
+logo_120 = img.resize((120, 120), Image.Resampling.LANCZOS)
+logo_120.save(r'public/logo-banco-residencia-120x120.png', format='PNG')
+print('Generated public/logo-banco-residencia-120x120.png')
+
+# 3. Salvar favicon.ico multi-resolução (16, 32, 48)
+ico_sizes = [(16, 16), (32, 32), (48, 48)]
+img.save(r'public/favicon.ico', format='ICO', sizes=ico_sizes)
+print('Generated public/favicon.ico with multi-sizes (16, 32, 48)')
+`;
+
+  const tempPy = path.join(rootDir, 'scripts', 'make_ico.py');
+  fs.writeFileSync(tempPy, pythonScript.trim());
   execSync(`python scripts/make_ico.py`, { stdio: 'inherit', cwd: rootDir });
 
   // Clean up temp dir & script
   fs.rmSync(tempDir, { recursive: true, force: true });
-  fs.unlinkSync(path.join(rootDir, 'scripts', 'make_ico.py'));
+  fs.unlinkSync(tempPy);
   console.log('Favicon generation completed successfully!');
 }
 

@@ -90,7 +90,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
       if (saved !== null) {
         setSidebarCollapsed(saved === 'true');
       }
-    } catch {}
+    } catch { }
   }, []);
 
   const handleToggleSidebar = () => {
@@ -98,7 +98,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
       const next = !prev;
       try {
         localStorage.setItem('bancoresidencia_sidebar_collapsed', String(next));
-      } catch {}
+      } catch { }
       return next;
     });
   };
@@ -139,7 +139,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
         if (!isCompleted && !user.college && !user.targetExamName) {
           setIsOnboardingOpen(true);
         }
-      } catch {}
+      } catch { }
     }
   }, [user]);
 
@@ -204,8 +204,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
               }}
               onSelectSpecialty={(specialty, tema) => {
                 router.push(
-                  `/questoes?especialidade=${encodeURIComponent(specialty)}${
-                    tema ? `&tema=${encodeURIComponent(tema)}` : ''
+                  `/questoes?especialidade=${encodeURIComponent(specialty)}${tema ? `&tema=${encodeURIComponent(tema)}` : ''
                   }`
                 );
               }}
@@ -405,11 +404,10 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
       >
         <Link
           href="/dashboard"
-          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${
-            pathname === '/dashboard' || pathname === '/'
+          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${pathname === '/dashboard' || pathname === '/'
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
-          }`}
+            }`}
           style={{
             color: pathname === '/dashboard' || pathname === '/' ? accentConfig.primaryHex : undefined
           }}
@@ -420,11 +418,10 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
         <Link
           href="/questoes"
-          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${
-            pathname?.startsWith('/questoes')
+          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${pathname?.startsWith('/questoes')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
-          }`}
+            }`}
           style={{
             color: pathname?.startsWith('/questoes') ? accentConfig.primaryHex : undefined
           }}
@@ -435,11 +432,10 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
         <Link
           href="/caderno-de-erros"
-          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] relative ${
-            pathname?.startsWith('/caderno-de-erros')
+          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] relative ${pathname?.startsWith('/caderno-de-erros')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
-          }`}
+            }`}
           style={{
             color: pathname?.startsWith('/caderno-de-erros') ? accentConfig.primaryHex : undefined
           }}
@@ -455,11 +451,10 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
         <Link
           href="/flashcards"
-          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${
-            pathname?.startsWith('/flashcards')
+          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${pathname?.startsWith('/flashcards')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
-          }`}
+            }`}
           style={{
             color: pathname?.startsWith('/flashcards') ? accentConfig.primaryHex : undefined
           }}
@@ -490,8 +485,11 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between pb-4 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]">
-              <span className="font-heading font-black text-sm text-zinc-900 dark:text-zinc-100">
-                Banco Residência
+              <span
+                className="font-bold text-sm text-zinc-900 dark:text-zinc-100 tracking-[-0.6px]"
+                style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+              >
+                Hippocampus
               </span>
               <button
                 type="button"

@@ -273,27 +273,13 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           ========================================================================= */}
       <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 dark:bg-[var(--bg-page)]/90 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
-          
-          {/* Lado Esquerdo: Logo do BancoResidência + Nome em 2 linhas (Inter, bold) */}
+
+          {/* Lado Esquerdo: Logo oficial Hippocampus Completa Integrada */}
           <div
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-3.5 cursor-pointer group select-none"
+            className="flex items-center cursor-pointer group select-none py-1"
           >
-            <Logo size={46} className="w-11.5 h-11.5 sm:w-12 sm:h-12 shrink-0 transition-transform group-hover:scale-105 duration-200" glow />
-            <div className="flex flex-col justify-center leading-none">
-              <span
-                className="text-[20px] sm:text-[22px] font-bold text-zinc-950 dark:text-white leading-[1.05] tracking-tight"
-                style={{ fontFamily: 'var(--font-inter), sans-serif' }}
-              >
-                Banco
-              </span>
-              <span
-                className="text-[20px] sm:text-[22px] font-bold text-zinc-950 dark:text-white leading-[1.05] tracking-tight -mt-0.5"
-                style={{ fontFamily: 'var(--font-inter), sans-serif' }}
-              >
-                Residência
-              </span>
-            </div>
+            <Logo variant="full" className="h-12 sm:h-13.5 w-auto max-w-[300px] sm:max-w-[340px] shrink-0 transition-transform group-hover:scale-102 duration-200" glow />
           </div>
 
           {/* Cards Centrais de Navegação: Banco de Questões; Material de Estudo; Flashcards; FAQ; Embaixadores */}
@@ -467,10 +453,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
         />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
-          
+
           {/* Grid Assimétrico: 2 Colunas */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
-            
+
             {/* Coluna Esquerda: +130 MIL QUESTÕES (Tipografia Bebas Neue Ampliada + Flash Beam) + Botão VER PLANOS */}
             <div className="lg:col-span-7 flex flex-col justify-center text-left">
               <div className="group/title relative cursor-default select-none overflow-hidden inline-block py-1 pr-4">
@@ -665,9 +651,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                     />
                   ) : null}
                   <span
-                    className={`font-heading font-black text-xs tracking-wider uppercase text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-950 dark:group-hover:text-white transition-colors ${
-                      banca.logoSlug ? 'hidden' : 'inline-block'
-                    }`}
+                    className={`font-heading font-black text-xs tracking-wider uppercase text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-950 dark:group-hover:text-white transition-colors ${banca.logoSlug ? 'hidden' : 'inline-block'
+                      }`}
                   >
                     {banca.logo}
                   </span>
@@ -925,7 +910,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                 Flashcards com TUDO que já caiu em provas.
               </h2>
               <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal">
-                Os flashcards do banco residência são produzidos baseados nas questões passadas de residência e reforçadas nas principais diretrizes atualizadas.
+                Os flashcards do Hippocampus são produzidos baseados nas questões passadas de residência e reforçadas nas principais diretrizes atualizadas.
               </p>
 
               <div className="space-y-2.5 pt-1 text-xs font-medium text-zinc-700 dark:text-zinc-300 text-left">
@@ -956,9 +941,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
               <div className="w-full max-w-md [perspective:1000px] min-h-[360px] sm:min-h-[380px] relative select-none">
                 <div
-                  className={`w-full h-full min-h-[360px] sm:min-h-[380px] relative transition-transform duration-500 [transform-style:preserve-3d] ${
-                    demoFlashcardFlipped ? '[transform:rotateY(180deg)]' : ''
-                  }`}
+                  className={`w-full h-full min-h-[360px] sm:min-h-[380px] relative transition-transform duration-500 [transform-style:preserve-3d] ${demoFlashcardFlipped ? '[transform:rotateY(180deg)]' : ''
+                    }`}
                 >
                   {/* FRENTE DO CARD (Pergunta) */}
                   <div
@@ -1093,7 +1077,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               className="font-bebas text-4xl sm:text-6xl md:text-7xl tracking-wide text-zinc-950 dark:text-white leading-none"
               style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
             >
-              Planos do Banco Residência
+              Planos do Hippocampus
             </h2>
             <p className="mt-3 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
               todos os planos incluem 100% das ferramentas da plataforma.
@@ -1148,13 +1132,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                   )}
 
                   <div
-                    className={`relative rounded-2xl p-6 flex flex-col justify-between flex-1 transition-all duration-300 ${
-                      isBienal
-                        ? 'bg-white dark:bg-zinc-900 border-2 shadow-2xl lg:-translate-y-4 z-10'
-                        : isAnual
+                    className={`relative rounded-2xl p-6 flex flex-col justify-between flex-1 transition-all duration-300 ${isBienal
+                      ? 'bg-white dark:bg-zinc-900 border-2 shadow-2xl lg:-translate-y-4 z-10'
+                      : isAnual
                         ? 'bg-white dark:bg-zinc-900 border-2 border-indigo-500/80 dark:border-indigo-500/80 shadow-xl lg:-translate-y-2 z-10'
                         : 'bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700'
-                    }`}
+                      }`}
                     style={isBienal ? { borderColor: accentConfig.primaryHex } : undefined}
                   >
                     {/* Selo de Destaque Superior */}
@@ -1239,13 +1222,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                       <button
                         type="button"
                         onClick={() => handleStartPlanCheckout(plan.id, 'register')}
-                        className={`w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${
-                          isBienal
-                            ? 'text-white shadow-xl hover:opacity-95'
-                            : isAnual
+                        className={`w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${isBienal
+                          ? 'text-white shadow-xl hover:opacity-95'
+                          : isAnual
                             ? 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-md'
                             : 'bg-zinc-900 dark:bg-zinc-800 hover:bg-zinc-800 dark:hover:bg-zinc-700 text-white shadow-sm'
-                        }`}
+                          }`}
                         style={isBienal ? { backgroundColor: accentConfig.primaryHex } : undefined}
                       >
                         <span>Assinar {plan.name}</span>
@@ -1280,7 +1262,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               Perguntas Frequentes (FAQ)
             </h2>
             <p className="mt-3 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
-              Tire suas dúvidas sobre o funcionamento, recursos clínicos, metodologia e planos do Banco Residência.
+              Tire suas dúvidas sobre o funcionamento, recursos clínicos, metodologia e planos do Hippocampus.
             </p>
           </div>
 
@@ -1309,7 +1291,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               {
                 id: 'faq-5',
                 q: 'Posso acessar a plataforma no celular, tablet e computador?',
-                a: 'Sim! O Banco Residência é totalmente responsivo e otimizado para navegadores mobile e desktop. Seu histórico de resoluções, cadernos e streak de estudo são sincronizados em tempo real na nuvem.'
+                a: 'Sim! O Hippocampus é totalmente responsivo e otimizado para navegadores mobile e desktop. Seu histórico de resoluções, cadernos e streak de estudo são sincronizados em tempo real na nuvem.'
               },
               {
                 id: 'faq-6',
@@ -1352,7 +1334,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
         </div>
       </section>
 
-            {/* =========================================================================
+      {/* =========================================================================
           SEÇÃO DE SUPORTE & CONTATO (LANDING PAGE)
           ========================================================================= */}
       <section id="suporte" className="py-12 sm:py-16 max-w-5xl mx-auto px-4 sm:px-6 w-full scroll-mt-24">
@@ -1419,7 +1401,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
         </div>
       </section>
 
-{/* =========================================================================
+      {/* =========================================================================
           BANNER INFERIOR: CHAMADA FINAL CIRÚRGICA
           ========================================================================= */}
       <section className="py-16 sm:py-20 max-w-5xl mx-auto px-4 sm:px-6 w-full text-center">
@@ -1526,16 +1508,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <Logo className="w-8 h-8 shrink-0" />
-            <div className="flex flex-col justify-center leading-none">
-              <span className="font-bold text-sm text-zinc-900 dark:text-zinc-100" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                Banco Residência
-              </span>
-              <span className="block text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">
-                Plataforma médica de preparação e questões para Residência e Revalida
-              </span>
-            </div>
+          <div className="flex items-center">
+            <Logo variant="full" className="h-10 sm:h-11 w-auto max-w-[280px] shrink-0" />
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs font-semibold">

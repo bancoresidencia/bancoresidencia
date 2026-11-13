@@ -34,7 +34,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Banco Residência Médica | Plataforma de Alta Performance",
+  title: "Hippocampus | Questões de Residência Médica",
   description: "Plataforma de alta performance para preparação para Residência Médica com métricas, percentil calibrado e simulados oficiais",
   verification: {
     google: "WcJXbqVmrkob5mCp0ref0IbF1ANcT76ldFjlicER4cQ",
@@ -147,8 +147,8 @@ export default function RootLayout({
         <ThemeProvider>
           <AuthProvider>
             <SubscriptionProvider>
-            <ToastProvider>{children}</ToastProvider>
-          </SubscriptionProvider>
+              <ToastProvider>{children}</ToastProvider>
+            </SubscriptionProvider>
           </AuthProvider>
         </ThemeProvider>
       </body>

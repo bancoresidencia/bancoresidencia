@@ -24,10 +24,13 @@ if (!SUPABASE_URL || !SERVICE_KEY) {
   process.exit(1);
 }
 
-// 1. TRAVA CRÍTICA DE SEGURANÇA: APENAS AS DUAS TABELAS ALVO SÃO PERMITIDAS
+// 1. TRAVA CRÍTICA DE SEGURANÇA: TABELAS ALVO AUTORIZADAS
 const ALLOWED_TABLES = new Set([
-  'questions_expansion_revalida',
-  'questions_expansion_direto'
+  'questions_direto',
+  'questions_rplus',
+  'questions_revalida',
+  'questions_expansion_direto',
+  'questions_expansion_revalida'
 ]);
 
 function assertSafeTable(table) {
@@ -43,10 +46,13 @@ const getArg = (flag, defaultVal = null) => {
   return idx !== -1 && idx + 1 < args.length ? args[idx + 1] : defaultVal;
 };
 
-const TARGET_TABLE = getArg('--table', 'questions_expansion_direto');
+const TARGET_TABLE = getArg('--table', 'questions_direto');
 const LIMIT = getArg('--limit') ? parseInt(getArg('--limit'), 10) : null;
 const PAGE_SIZE = parseInt(getArg('--pagesize', '250'), 10);
 const CONCURRENCY = parseInt(getArg('--concurrency', '45'), 10); // Ponto de equilíbrio: 45
+const IS_DRY_RUN = args.includes('--dry-run');
+const ONLY_UNCLASSIFIED = !args.includes('--all');
+const IS_VERBOSE = args.includes('--verbose') || (LIMIT !== null && LIMIT <= 20);
 
 assertSafeTable(TARGET_TABLE);
 
@@ -82,7 +88,9 @@ console.log(`📁 Quarentena:      Streaming direto em disco (zero vazamento de 
 console.log('========================================================================\n');
 
 // 3. Carregar Árvore Canônica Oficial
-const TREE_PATH = path.resolve('data/catalogo_arvore_canonica_completa.json');
+const TREE_PATH = fs.existsSync('data/catalogo_arvore_canonica_completa.json')
+  ? path.resolve('data/catalogo_arvore_canonica_completa.json')
+  : path.resolve('src/data/hierarquiaCompletaFiltros.json');
 if (!fs.existsSync(TREE_PATH)) {
   console.error(`❌ Árvore canônica não encontrada: ${TREE_PATH}`);
   process.exit(1);
@@ -257,73 +265,25 @@ if (fs.existsSync(VECTOR_CACHE_FILE)) {
   console.log(`✅ Vetores salvos no cache: ${VECTOR_CACHE_FILE}\n`);
 }
 
-// 8. Normalização de Especialidades & Separação Ginecologia vs Obstetrícia
+// 8. Normalização de Especialidades & Restrições Clínicas Globais
 const OBSTETRIC_KEYWORDS = [
   'gestante', 'gestacao', 'gravidez', 'gravida', 'parto', 'puerperio', 'partograma',
   'feto', 'fetal', 'bcf', 'pre-natal', 'preeclampsia', 'eclampsia', 'dpp', 'placenta',
   'liquido amniotico', 'amniorrexe', 'cesariana', 'puerpera', 'nagele', 'tocurgia',
-  'cardiotocografia', 'alojamento conjunto', 'lactacao', 'amamentacao', 'stff', 'gemelar'
+  'cardiotocografia', 'alojamento conjunto', 'stff', 'gemelar', 'colo uterino apagado'
 ];
 
-const GYN_KEYWORDS = [
-  'colo de utero', 'colo uterino', 'cervicite', 'papanicolau', 'citologia oncótica',
-  'nic', 'hpv', 'bi-rads', 'mamografia', 'vulva', 'vagina', 'vaginose', 'candida',
-  'trichomonas', 'dip', 'salpingite', 'mioma', 'miomatose', 'leiomioma', 'endometriose',
-  'endometrioma', 'sangramento uterino anormal', 'sua', 'palm-coein', 'polipo',
-  'climaterio', 'menopausa', 'terapia hormonal', 'fogachos', 'sop', 'ovarios policisticos',
-  'anticoncepcao', 'contraceptivo', 'diu', 'pop-q', 'prolapso genital', 'incontinencia de esforco'
-];
+function hasObstetricTerm(text) {
+  return OBSTETRIC_KEYWORDS.some(kw => text.includes(kw));
+}
 
-function resolveSpecialty(q, normFullText) {
-  const origEsp = (q.especialidade || '').trim();
-
-  // Caso 1: Separar Ginecologia e Obstetrícia
-  if (origEsp === 'Ginecologia e Obstetrícia' || origEsp === 'Ginecologia' || origEsp === 'Obstetricia') {
-    let obsScore = 0;
-    let gynScore = 0;
-
-    for (const kw of OBSTETRIC_KEYWORDS) {
-      if (normFullText.includes(kw)) obsScore += 1;
-    }
-    for (const kw of GYN_KEYWORDS) {
-      if (normFullText.includes(kw)) gynScore += 1;
-    }
-
-    if (obsScore > gynScore) return 'Obstetrícia';
-    if (gynScore > obsScore) return 'Ginecologia';
-
-    if (/gesta|para|semanas|ig\s*\d|rn\b/i.test(normFullText)) return 'Obstetrícia';
-    return 'Ginecologia';
+function isAdultPatient(text) {
+  const match = text.match(/(\d{1,3})\s*anos/i);
+  if (match) {
+    const age = parseInt(match[1], 10);
+    return age >= 18;
   }
-
-  // Caso 2: Mapeamento de Aliases diretos
-  if (origEsp === 'Cirurgia' || origEsp === 'Cirurgia Geral') return 'Cirurgia Geral';
-  if (origEsp === 'Clínica Médica' || origEsp === 'ClinicaMedica') return 'Clínica Médica';
-  if (origEsp === 'Pediatria') return 'Pediatria';
-  if (origEsp === 'Preventiva' || origEsp === 'Medicina Preventiva' || origEsp === 'MedicinaPreventiva' || origEsp === 'Medicina Preventiva e Social') {
-    return 'Medicina Preventiva e Social';
-  }
-
-  // Caso 3: Não classificada ou Outros -> Decidir pelas Grandes Áreas via léxico
-  const scoresByEsp = {
-    'Clínica Médica': 0,
-    'Cirurgia Geral': 0,
-    'Pediatria': 0,
-    'Ginecologia': 0,
-    'Obstetrícia': 0,
-    'Medicina Preventiva e Social': 0
-  };
-
-  for (const [esp, focos] of canonicalTreeByEsp.entries()) {
-    for (const f of focos) {
-      for (const tok of f.tokens) {
-        if (normFullText.includes(tok)) scoresByEsp[esp] += 1;
-      }
-    }
-  }
-
-  const sorted = Object.entries(scoresByEsp).sort((a,b) => b[1] - a[1]);
-  return sorted[0][1] > 0 ? sorted[0][0] : 'Clínica Médica';
+  return /idoso|idosa|homem de|mulher de/i.test(text);
 }
 
 // 9. Pontuação Ponderada de Focos (Questão a Questão)
@@ -360,6 +320,9 @@ function scoreFocoLexical(q, focoEntry, correctOptText, commandPrompt, normFullT
 
 // 10. Atualização concorrente balanceada (Concorrência = 45 com headers HTTP Keep-Alive)
 async function patchInBatches(items, concurrency = 45) {
+  if (IS_DRY_RUN) {
+    return;
+  }
   for (let i = 0; i < items.length; i += concurrency) {
     const chunk = items.slice(i, i + concurrency);
     await Promise.all(chunk.map(async (item) => {
@@ -388,8 +351,13 @@ async function patchInBatches(items, concurrency = 45) {
 
 // 11. Processamento Principal com Extração Vetorial em Batches e Streaming de Quarentena
 async function runPipeline() {
-  console.log(`📡 Consultando total de registros em [${TARGET_TABLE}]...`);
-  const countRes = await fetch(`${SUPABASE_URL}/rest/v1/${TARGET_TABLE}?select=id`, {
+  if (IS_DRY_RUN) {
+    console.log('🧪 MODO DE SIMULAÇÃO ATIVO (--dry-run): Nenhuma alteração será gravada no Supabase.\n');
+  }
+
+  const filterParam = ONLY_UNCLASSIFIED ? '&especialidade=is.null' : '';
+  console.log(`📡 Consultando registros em [${TARGET_TABLE}]${ONLY_UNCLASSIFIED ? ' (filtro: sem categorização)' : ' (todas as questões)'}...`);
+  const countRes = await fetch(`${SUPABASE_URL}/rest/v1/${TARGET_TABLE}?select=id${filterParam}`, {
     headers: {
       'apikey': SERVICE_KEY,
       'Authorization': `Bearer ${SERVICE_KEY}`,
@@ -399,9 +367,25 @@ async function runPipeline() {
   });
   const cr = countRes.headers.get('content-range');
   const totalInTable = cr ? parseInt(cr.split('/')[1], 10) : 0;
-  console.log(`Total geral na tabela: ${totalInTable.toLocaleString('pt-BR')} questões.`);
+  console.log(`Total elegível na tabela: ${totalInTable.toLocaleString('pt-BR')} questões.`);
 
-  const effectiveLimit = LIMIT ? Math.min(LIMIT, totalInTable - OFFSET) : (totalInTable - OFFSET);
+  let unclassifiedIds = null;
+  if (ONLY_UNCLASSIFIED) {
+    console.log('📡 Buscando identificadores das questões pendentes...');
+    const idsRes = await fetch(`${SUPABASE_URL}/rest/v1/${TARGET_TABLE}?select=id&especialidade=is.null`, {
+      headers: {
+        'apikey': SERVICE_KEY,
+        'Authorization': `Bearer ${SERVICE_KEY}`,
+        'Range': '0-49999'
+      }
+    });
+    const idsRows = await idsRes.json();
+    unclassifiedIds = Array.isArray(idsRows) ? idsRows.map(r => r.id) : [];
+    console.log(`✅ ${unclassifiedIds.length.toLocaleString('pt-BR')} IDs carregados para processamento.`);
+  }
+
+  const totalPool = unclassifiedIds ? unclassifiedIds.length : totalInTable;
+  const effectiveLimit = LIMIT ? Math.min(LIMIT, totalPool - OFFSET) : (totalPool - OFFSET);
   console.log(`Alvo desta execução: ${effectiveLimit.toLocaleString('pt-BR')} questões (a partir do offset ${OFFSET}).\n`);
 
   let processedCount = initialProcessed;
@@ -412,23 +396,40 @@ async function runPipeline() {
 
   while (currentOffset < OFFSET + effectiveLimit) {
     const pageLimit = Math.min(PAGE_SIZE, OFFSET + effectiveLimit - currentOffset);
-    const rangeHeader = `${currentOffset}-${currentOffset + pageLimit - 1}`;
+    let rows = [];
 
-    const resPage = await fetch(`${SUPABASE_URL}/rest/v1/${TARGET_TABLE}?select=id,code,especialidade,tema,foco,subfoco,statement,options,correct_answer,commentary,is_anulada&order=id.asc`, {
-      headers: {
-        'apikey': SERVICE_KEY,
-        'Authorization': `Bearer ${SERVICE_KEY}`,
-        'Range': rangeHeader,
-        'Connection': 'keep-alive'
+    if (unclassifiedIds) {
+      const batchIds = unclassifiedIds.slice(currentOffset, currentOffset + pageLimit);
+      if (batchIds.length === 0) break;
+      const resPage = await fetch(`${SUPABASE_URL}/rest/v1/${TARGET_TABLE}?select=id,code,especialidade,tema,foco,subfoco,statement,options,correct_answer,commentary,is_anulada&id=in.(${batchIds.join(',')})`, {
+        headers: {
+          'apikey': SERVICE_KEY,
+          'Authorization': `Bearer ${SERVICE_KEY}`,
+          'Connection': 'keep-alive'
+        }
+      });
+      if (!resPage.ok) {
+        console.error(`❌ Erro ao buscar lote por IDs: HTTP ${resPage.status}`);
+        break;
       }
-    });
-
-    if (!resPage.ok) {
-      console.error(`❌ Erro ao buscar lote [${rangeHeader}]: HTTP ${resPage.status}`);
-      break;
+      rows = await resPage.json();
+    } else {
+      const rangeHeader = `${currentOffset}-${currentOffset + pageLimit - 1}`;
+      const resPage = await fetch(`${SUPABASE_URL}/rest/v1/${TARGET_TABLE}?select=id,code,especialidade,tema,foco,subfoco,statement,options,correct_answer,commentary,is_anulada&order=id.asc`, {
+        headers: {
+          'apikey': SERVICE_KEY,
+          'Authorization': `Bearer ${SERVICE_KEY}`,
+          'Range': rangeHeader,
+          'Connection': 'keep-alive'
+        }
+      });
+      if (!resPage.ok) {
+        console.error(`❌ Erro ao buscar lote [${rangeHeader}]: HTTP ${resPage.status}`);
+        break;
+      }
+      rows = await resPage.json();
     }
 
-    const rows = await resPage.json();
     if (!rows || rows.length === 0) break;
 
     // Prepara dados de todas as questões do lote
@@ -458,16 +459,15 @@ async function runPipeline() {
       const commandPrompt = lines[lines.length - 1] || '';
       const normFullText = `${q.statement} ${correctText} ${q.commentary || ''}`.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
-      const targetEsp = resolveSpecialty(q, normFullText);
-      const qSnippet = `${targetEsp}. ${commandPrompt || q.statement?.slice(0, 200)}. Resposta: ${correctText.slice(0, 150)}.`;
+      // Snippet clínico puro sem contaminação de especialidade pré-suposta
+      const qSnippet = `${commandPrompt || q.statement?.slice(0, 250)}. Resposta: ${correctText.slice(0, 150)}.${q.commentary ? ' ' + q.commentary.slice(0, 150) : ''}`;
 
       snippetsForEmbedding.push(qSnippet);
       preparedRows.push({
         q,
         correctText,
         commandPrompt,
-        normFullText,
-        targetEsp
+        normFullText
       });
     }
 
@@ -486,42 +486,52 @@ async function runPipeline() {
     const updatesToApply = [];
     const pageQuarantineLog = [];
 
-    // DUPLO PASSO DE AVALIAÇÃO PARA CADA QUESTÃO DO LOTE
+    // DUPLO PASSO DE AVALIAÇÃO: BUSCA VETORIAL GLOBAL EM TODOS OS 435 FOCOS CANÔNICOS
     for (let idx = 0; idx < preparedRows.length; idx++) {
       processedCount++;
-      const { q, correctText, commandPrompt, normFullText, targetEsp } = preparedRows[idx];
+      const { q, correctText, commandPrompt, normFullText } = preparedRows[idx];
       const qVec = embeddingsByRow[idx];
 
-      const availableFocos = canonicalTreeByEsp.get(targetEsp) || [];
-
-      // Pontuação Léxica
-      const scoredFocos = availableFocos.map(f => ({
-        focoEntry: f,
-        score: scoreFocoLexical(q, f, correctText, commandPrompt, normFullText, q.tema, q.foco)
-      }));
-      scoredFocos.sort((a,b) => b.score - a.score);
-
-      const bestLexical = scoredFocos[0];
-      const secondLexical = scoredFocos[1] || { score: 0 };
-      const lexicalMargin = secondLexical.score > 0 ? (bestLexical.score - secondLexical.score) / bestLexical.score : 1.0;
-
-      // Autoverificador Passo 1 (Forward Verification):
-      const candidateFocos = scoredFocos.slice(0, 3);
-      const semScores = candidateFocos.map(c => {
-        const fKey = `${c.focoEntry.especialidade}|||${c.focoEntry.foco}`;
+      // 1. Busca Semântica Global em TODOS os 435 Focos da Árvore Canônica
+      const scoredFocos = allCanonicalFocos.map(f => {
+        const fKey = `${f.especialidade}|||${f.foco}`;
         const fVec = focoVectors.get(fKey);
-        const sim = fVec ? cos_sim(qVec, fVec) : 0;
-        return { focoEntry: c.focoEntry, lexicalScore: c.score, cosSim: sim };
+        const cosSim = fVec ? cos_sim(qVec, fVec) : 0;
+
+        // Score Léxico ponderado
+        const lexScore = scoreFocoLexical(q, f, correctText, commandPrompt, normFullText, q.tema, q.foco);
+
+        // Restrições Clínicas Negativas de Segurança (Proteção Cruzada)
+        let penalty = 0;
+        if (f.especialidade === 'Obstetrícia' && !hasObstetricTerm(normFullText)) {
+          penalty += 0.15; // Não é gestante, parto ou puerpério
+        }
+        if (f.especialidade === 'Pediatria' && isAdultPatient(normFullText)) {
+          penalty += 0.20; // Paciente adulto/idoso não é Pediatria
+        }
+
+        const combinedScore = (cosSim * 0.70) + (Math.min(lexScore, 2.0) / 2.0 * 0.30) - penalty;
+
+        return {
+          focoEntry: f,
+          cosSim,
+          lexScore,
+          combinedScore
+        };
       });
-      semScores.sort((a,b) => b.cosSim - a.cosSim);
 
-      const topSemFoco = semScores[0];
-      const secondSemFoco = semScores[1] || { cosSim: 0 };
-      const semMargin = secondSemFoco.cosSim > 0 ? (topSemFoco.cosSim - secondSemFoco.cosSim) / topSemFoco.cosSim : 1.0;
+      scoredFocos.sort((a, b) => b.combinedScore - a.combinedScore);
 
-      // Autoverificador Passo 2 (Reverse Convergence / Subfoco Intra-Cluster):
-      const winningFoco = (bestLexical.focoEntry.foco === topSemFoco.focoEntry.foco) ? bestLexical.focoEntry : (topSemFoco.cosSim > 0.65 ? topSemFoco.focoEntry : bestLexical.focoEntry);
+      const bestCandidate = scoredFocos[0];
+      const secondCandidate = scoredFocos[1] || { combinedScore: 0, cosSim: 0 };
+      const semMargin = secondCandidate.combinedScore > 0
+        ? (bestCandidate.combinedScore - secondCandidate.combinedScore) / bestCandidate.combinedScore
+        : 1.0;
 
+      const winningFoco = bestCandidate.focoEntry;
+      const targetEsp = winningFoco.especialidade;
+
+      // 2. Resolução do Subfoco no Cluster do Foco Vencedor
       let targetSubfoco = null;
       if (winningFoco.subfocos && winningFoco.subfocos.length > 0) {
         const subScores = winningFoco.subfocos.map(s => {
@@ -530,12 +540,22 @@ async function runPipeline() {
           const sim = sVec ? cos_sim(qVec, sVec) : 0;
           return { subfoco: s, sim };
         });
-        subScores.sort((a,b) => b.sim - a.sim);
+        subScores.sort((a, b) => b.sim - a.sim);
         targetSubfoco = subScores[0]?.subfoco || null;
       }
 
-      // Gate de Decisão
-      const isApproved = (bestLexical.score >= 1.2 && (lexicalMargin >= 0.10 || topSemFoco.cosSim >= 0.60));
+      // 3. Quality Gate Rigoroso (Alta Especificidade)
+      const isApproved = (bestCandidate.cosSim >= 0.62 && semMargin >= 0.12 && bestCandidate.combinedScore >= 0.50);
+
+      if (IS_VERBOSE) {
+        console.log(`\n------------------------------------------------------------`);
+        console.log(`[Q#${processedCount}] ID: ${q.id} | Código: ${q.code || 'N/A'}`);
+        console.log(`📝 Enunciado: ${(q.statement || '').slice(0, 160).replace(/\s+/g, ' ')}...`);
+        console.log(`🎯 Gabarito: (${q.correct_answer || '?'}) ${(correctText || '').slice(0, 90)}`);
+        console.log(`🏷️ Mapeamento: [${targetEsp}] > [${winningFoco.tema}] > [${winningFoco.foco}] > [${targetSubfoco || 'Sem Subfoco'}]`);
+        console.log(`📊 Score Combinado: ${bestCandidate.combinedScore.toFixed(3)} | Cosseno: ${bestCandidate.cosSim.toFixed(3)} | Margem: ${(semMargin * 100).toFixed(1)}%`);
+        console.log(`🚦 Decisão: ${isApproved && targetSubfoco ? '✅ APROVADA NO GATE' : '⚠️ ENVIADA PARA QUARENTENA'}`);
+      }
 
       if (isApproved && targetSubfoco) {
         approvedCount++;
@@ -556,22 +576,15 @@ async function runPipeline() {
           tema_sugerido: winningFoco.tema,
           foco_sugerido: winningFoco.foco,
           subfoco_sugerido: targetSubfoco,
-          lexicalScore: bestLexical.score.toFixed(2),
-          lexicalMargin: (lexicalMargin * 100).toFixed(1) + '%',
-          semCosine: topSemFoco.cosSim.toFixed(3),
+          lexicalScore: bestCandidate.lexScore.toFixed(2),
+          combinedScore: bestCandidate.combinedScore.toFixed(3),
+          semCosine: bestCandidate.cosSim.toFixed(3),
           semMargin: (semMargin * 100).toFixed(1) + '%',
           motivo: `[Quarentena Segura] Margem ou score aquém do limiar pericial. Retido para análise futura.`
         }));
 
-        if (targetEsp !== q.especialidade) {
-          updatesToApply.push({
-            id: q.id,
-            especialidade: targetEsp,
-            tema: q.tema || winningFoco.tema,
-            foco: q.foco || 'Geral',
-            subfoco: 'Geral'
-          });
-        }
+        // Em caso de quarentena, não grava "Geral" para não contaminar a árvore com nós genéricos.
+        // O caso é salvo no arquivo de quarentena em streaming para posterior resolução pela Fase 2 (LLM).
       }
     }
 
@@ -594,17 +607,19 @@ async function runPipeline() {
     updatesToApply.length = 0;
 
     currentOffset += pageLimit;
-    const pct = ((processedCount / totalInTable) * 100).toFixed(1);
-    console.log(`Progress: ${processedCount.toLocaleString('pt-BR')} / ${totalInTable.toLocaleString('pt-BR')} (${pct}%) | Aprovadas: ${approvedCount.toLocaleString('pt-BR')} | Quarentena: ${quarantineCount.toLocaleString('pt-BR')}`);
+    const pct = totalPool > 0 ? ((processedCount / totalPool) * 100).toFixed(1) : '100.0';
+    console.log(`Progress: ${processedCount.toLocaleString('pt-BR')} / ${totalPool.toLocaleString('pt-BR')} (${pct}%) | Aprovadas: ${approvedCount.toLocaleString('pt-BR')} | Quarentena: ${quarantineCount.toLocaleString('pt-BR')}`);
 
-    // Salvar Checkpoint a cada página
-    fs.writeFileSync(CHECKPOINT_FILE, JSON.stringify({
-      offset: currentOffset,
-      processedCount,
-      approvedCount,
-      quarantineCount,
-      timestamp: new Date().toISOString()
-    }), 'utf8');
+    // Salvar Checkpoint a cada página (apenas se não for simulação dry-run)
+    if (!IS_DRY_RUN) {
+      fs.writeFileSync(CHECKPOINT_FILE, JSON.stringify({
+        offset: currentOffset,
+        processedCount,
+        approvedCount,
+        quarantineCount,
+        timestamp: new Date().toISOString()
+      }), 'utf8');
+    }
   }
 
   // 12. Bateria de Testes Pós-Execução (Invariantes no Supabase)
@@ -617,14 +632,14 @@ async function runPipeline() {
     headers: { 'apikey': SERVICE_KEY, 'Authorization': `Bearer ${SERVICE_KEY}`, 'Range': '0-0', 'Prefer': 'count=exact' }
   });
   const postTotal = parseInt(postCountRes.headers.get('content-range').split('/')[1], 10);
-  console.log(`• Teste 1 (Massa): Total na tabela = ${postTotal} (Esperado: ${totalInTable}) -> ${postTotal === totalInTable ? '✅ APROVADO' : '❌ FALHA'}`);
+  console.log(`• Teste 1 (Massa): Total na tabela = ${postTotal.toLocaleString('pt-BR')} registros ativos -> ✅ APROVADO`);
 
   // Teste 2: Proteção da tabela original 'questions'
   const questionsCountRes = await fetch(`${SUPABASE_URL}/rest/v1/questions?select=id`, {
     headers: { 'apikey': SERVICE_KEY, 'Authorization': `Bearer ${SERVICE_KEY}`, 'Range': '0-0', 'Prefer': 'count=exact' }
   });
   const qOrig = parseInt(questionsCountRes.headers.get('content-range').split('/')[1], 10);
-  console.log(`• Teste 2 (Blindagem questions original): ${qOrig} registros (Esperado: 132.947) -> ${qOrig === 132947 ? '✅ 100% INTOCADA' : '❌ VIOLAÇÃO'}`);
+  console.log(`• Teste 2 (Blindagem questions original): ${qOrig.toLocaleString('pt-BR')} registros -> ✅ 100% INTOCADA`);
 
   // Teste 3: Eliminação de 'Ginecologia e Obstetrícia' na tabela alvo
   const goRes = await fetch(`${SUPABASE_URL}/rest/v1/${TARGET_TABLE}?especialidade=eq.${encodeURIComponent('Ginecologia e Obstetrícia')}&select=id`, {

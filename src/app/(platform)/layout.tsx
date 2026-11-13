@@ -17,7 +17,7 @@ export default function PlatformLayout({ children }: { children: React.ReactNode
     return (
       <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
         <div className="flex flex-col items-center gap-3 animate-in fade-in duration-200">
-          <Logo className="w-12 h-12 shrink-0 animate-pulse" glow />
+          <Logo className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 animate-pulse" glow />
           <span className="text-xs font-semibold tracking-wide text-slate-500 dark:text-zinc-400">
             Carregando sua plataforma médica...
           </span>

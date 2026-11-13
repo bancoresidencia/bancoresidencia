@@ -127,7 +127,7 @@ export const StudentAmbassadorSettings: React.FC = () => {
       ? `${window.location.origin}?ref=${stats.referralCode}`
       : `https://bancoresidencia.com.br?ref=${stats.referralCode}`;
     const text = encodeURIComponent(
-      `Oi! Estou usando o Banco Residência para me preparar com questões comentadas e provas oficiais. Usa meu código ${stats.referralCode} para garantir 10% de desconto imediato em qualquer plano: ${shareUrl}`
+      `Oi! Estou usando o Hippocampus para me preparar com questões comentadas e provas oficiais. Usa meu código ${stats.referralCode} para garantir 10% de desconto imediato em qualquer plano: ${shareUrl}`
     );
     window.open(`https://wa.me/?text=${text}`, '_blank');
   };
@@ -299,7 +299,7 @@ export const StudentAmbassadorSettings: React.FC = () => {
         <div className="relative z-10 max-w-2xl">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold mb-3 border border-emerald-500/30">
             <Sparkles className="w-3.5 h-3.5" />
-            Programa de Indicação & Embaixadores Banco Residência
+            Programa de Indicação & Embaixadores Hippocampus
           </div>
 
           <h2 className="text-xl sm:text-2xl font-black tracking-tight text-white mb-2">
@@ -407,11 +407,10 @@ export const StudentAmbassadorSettings: React.FC = () => {
 
         {codeFeedback && (
           <div
-            className={`mt-3 p-3 rounded-xl text-xs flex items-center gap-2 ${
-              codeFeedback.type === 'success'
+            className={`mt-3 p-3 rounded-xl text-xs flex items-center gap-2 ${codeFeedback.type === 'success'
                 ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
                 : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30'
-            }`}
+              }`}
           >
             {codeFeedback.type === 'success' ? (
               <Check className="w-4 h-4 shrink-0" />
@@ -809,11 +808,10 @@ export const StudentAmbassadorSettings: React.FC = () => {
 
           {withdrawFeedback && (
             <div
-              className={`p-3 rounded-xl text-xs flex items-center gap-2 ${
-                withdrawFeedback.type === 'success'
+              className={`p-3 rounded-xl text-xs flex items-center gap-2 ${withdrawFeedback.type === 'success'
                   ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
                   : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30'
-              }`}
+                }`}
             >
               {withdrawFeedback.type === 'success' ? (
                 <Check className="w-4 h-4 shrink-0" />

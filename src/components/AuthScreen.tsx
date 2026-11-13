@@ -37,9 +37,9 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
   const planDisplayName = selectedPlanTitle === 'monthly' ? 'Plano Mensal'
     : selectedPlanTitle === 'semiannual' ? 'Plano Semestral'
-    : selectedPlanTitle === 'annual' ? 'Plano Anual'
-    : selectedPlanTitle === 'biennial' ? 'Plano Bienal'
-    : selectedPlanTitle;
+      : selectedPlanTitle === 'annual' ? 'Plano Anual'
+        : selectedPlanTitle === 'biennial' ? 'Plano Bienal'
+          : selectedPlanTitle;
 
   // 'login' | 'register'
   const [mode, setMode] = useState<'login' | 'register'>(initialMode);
@@ -190,15 +190,26 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
         {/* Cabeçalho Visual da Marca */}
         <div className="relative px-5 py-4 sm:px-7 sm:py-5 border-b border-slate-100 dark:border-slate-800/80 bg-gradient-to-b from-slate-50/80 to-transparent dark:from-slate-900/40">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2.5 sm:gap-3">
-              <Logo className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 transition-transform hover:scale-105 duration-200" glow />
-              <div>
-                <h2 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
-                  <span>Banco Residência</span>
+            <div className="flex items-center gap-3 sm:gap-3.5">
+              <Logo className="w-11 h-11 sm:w-12 sm:h-12 shrink-0 transition-transform hover:scale-105 duration-200" glow />
+              <div className="flex flex-col justify-center leading-tight">
+                <div className="flex items-center gap-2">
+                  <span
+                    className="font-bold text-xl sm:text-2xl text-slate-900 dark:text-white tracking-[-0.6px]"
+                    style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+                  >
+                    Hippocampus
+                  </span>
                   <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
                     2026
                   </span>
-                </h2>
+                </div>
+                <span
+                  className="text-[8px] sm:text-[8.5px] font-normal text-slate-500 dark:text-slate-400 uppercase tracking-[1.56px] mt-0.5"
+                  style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+                >
+                  QUESTÕES DE RESIDÊNCIA
+                </span>
               </div>
             </div>
 
@@ -241,11 +252,10 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             <button
               type="button"
               onClick={() => handleToggleMode('login')}
-              className={`flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${
-                mode === 'login'
+              className={`flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${mode === 'login'
                   ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
+                }`}
             >
               <Lock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span>Entrar na Conta</span>
@@ -253,11 +263,10 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             <button
               type="button"
               onClick={() => handleToggleMode('register')}
-              className={`flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${
-                mode === 'register'
+              className={`flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${mode === 'register'
                   ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
+                }`}
             >
               <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span>Criar Nova Conta</span>
@@ -506,11 +515,10 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     </span>
                   </div>
                   <p
-                    className={`text-[10px] transition-colors ${
-                      password && !passwordValidation.isValid
+                    className={`text-[10px] transition-colors ${password && !passwordValidation.isValid
                         ? 'text-amber-600 dark:text-amber-400 font-medium'
                         : 'text-emerald-600 dark:text-emerald-400 font-medium'
-                    }`}
+                      }`}
                   >
                     {password && passwordValidation.isValid ? (
                       <span>✓ Senha forte e segura</span>

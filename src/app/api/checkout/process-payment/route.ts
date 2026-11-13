@@ -68,8 +68,8 @@ export async function POST(req: NextRequest) {
       body: {
         transaction_amount: amount,
         description: validatedCoupon
-          ? `Banco Residência Médica — ${selectedPlan.name} (Cupom: ${validatedCoupon})`
-          : `Banco Residência Médica — ${selectedPlan.name}`,
+          ? `Hippocampus — ${selectedPlan.name} (Cupom: ${validatedCoupon})`
+          : `Hippocampus — ${selectedPlan.name}`,
         payment_method_id: paymentData.payment_method_id,
         token: paymentData.token,
         installments: Number(paymentData.installments) || 1,
