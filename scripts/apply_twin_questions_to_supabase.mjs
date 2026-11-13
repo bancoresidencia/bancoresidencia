@@ -95,7 +95,7 @@ async function main() {
 
   for (let i = 0; i < pairs.length; i++) {
     const p = pairs[i];
-    
+
     // 1. Busca questão pendente no Supabase
     const { data: qPend, error: errPend } = await supabase
       .from('questions')
@@ -155,13 +155,13 @@ async function main() {
           if (targetLetter !== rawAns) {
             finalAnswer = targetLetter;
             foiRemapeado = true;
-            console.log(`   🔄 Remapeamento Anti-Permutação: ${p.pendenteCode}: de ${rawAns} -> ${finalAnswer} (${(bestSim*100).toFixed(1)}% match no texto "${winningResOpt.text.slice(0,30)}...")`);
+            console.log(`   🔄 Remapeamento Anti-Permutação: ${p.pendenteCode}: de ${rawAns} -> ${finalAnswer} (${(bestSim * 100).toFixed(1)}% match no texto "${winningResOpt.text.slice(0, 30)}...")`);
           } else {
             finalAnswer = targetLetter;
           }
         } else {
           // Se não encontrou a alternativa correspondente com certeza >= 80%, pula por segurança
-          console.log(`   ⚠️ [PULADA POR SEGURANÇA] ${p.pendenteCode}: texto da alternativa vencedora não confere (bestSim: ${(bestSim*100).toFixed(1)}%)`);
+          console.log(`   ⚠️ [PULADA POR SEGURANÇA] ${p.pendenteCode}: texto da alternativa vencedora não confere (bestSim: ${(bestSim * 100).toFixed(1)}%)`);
           report.pulados++;
           report.detalhes.push({ code: p.pendenteCode, status: 'OPTION_MISMATCH', bestSim });
           continue;
