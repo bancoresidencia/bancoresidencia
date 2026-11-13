@@ -77,10 +77,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Sliders, href: '/configuracoes' },
     ...(isAdmin
       ? [
-          { id: 'curadoria' as ActiveTab, label: 'Curadoria de Gabaritos', icon: ShieldCheck, href: '/admin/curadoria' },
-          { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag, href: '/admin/reportes' },
-          { id: 'auditoria_medevo' as ActiveTab, label: 'Higienização MedEvo', icon: ShieldAlert, href: '/admin/medevo', badge: 410 }
-        ]
+        { id: 'curadoria' as ActiveTab, label: 'Curadoria de Gabaritos', icon: ShieldCheck, href: '/admin/curadoria' },
+        { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag, href: '/admin/reportes' },
+        { id: 'auditoria_medevo' as ActiveTab, label: 'Higienização MedEvo', icon: ShieldAlert, href: '/admin/medevo', badge: 410 }
+      ]
       : [])
   ];
 
@@ -89,35 +89,42 @@ export const Sidebar: React.FC<SidebarProps> = ({
       className={
         isMobileDrawer
           ? 'w-full flex flex-col select-none'
-          : `${
-              isCollapsed ? 'w-16' : 'w-60'
-            } bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#09090b)] border-r border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] flex flex-col shrink-0 h-screen max-h-screen sticky top-0 self-start z-40 hidden md:flex transition-all duration-200 ease-in-out select-none overflow-hidden`
+          : `${isCollapsed ? 'w-16' : 'w-60'
+          } bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#09090b)] border-r border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] flex flex-col shrink-0 h-screen max-h-screen sticky top-0 self-start z-40 hidden md:flex transition-all duration-200 ease-in-out select-none overflow-hidden`
       }
       aria-label="Navegação Principal"
     >
       {/* 1. Topo: Logo Flat + Botão de Toggle */}
       {!isMobileDrawer && (
         <div
-          className={`h-16 w-full border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 flex items-center ${
-            isCollapsed ? 'justify-center' : 'justify-between px-3.5'
-          }`}
+          className={`h-16 w-full border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 flex items-center ${isCollapsed ? 'justify-center' : 'justify-between px-3.5'
+            }`}
         >
           <Link
             href="/dashboard"
             onClick={() => onNavigate?.('home')}
             className="flex items-center gap-2.5 p-1 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer group min-w-0"
-            title="Hippocampus • Questões de Residência"
+            title={`Hippocampus • ${modalidade}`}
             aria-label="Ir para a página inicial"
           >
-            <Logo className="w-8 h-8 shrink-0 transition-transform duration-200 group-hover:scale-105" showMonogramOnly />
+            <Logo className="w-8 h-8 shrink-0 transition-transform duration-200 group-hover:scale-105" variant="symbol" />
 
             {!isCollapsed && (
-              <div className="text-left overflow-hidden select-none min-w-0">
-                <span className="font-heading font-black text-sm text-zinc-900 dark:text-zinc-100 tracking-[-0.03em] block leading-tight truncate">
+              <div className="text-left overflow-hidden select-none min-w-0 leading-tight">
+                <span
+                  className="font-bold text-[15px] sm:text-[16px] text-zinc-900 dark:text-zinc-100 tracking-[-0.03em] block leading-tight truncate"
+                  style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+                >
                   Hippocampus
                 </span>
-                <span className="text-[7.5px] font-semibold text-zinc-400 dark:text-zinc-500 uppercase tracking-[0.14em] block whitespace-nowrap leading-none mt-0.5">
+                <span
+                  className="text-[7.5px] font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-[0.14em] block whitespace-nowrap leading-none mt-0.5"
+                  style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+                >
                   QUESTÕES DE RESIDÊNCIA
+                </span>
+              </div>
+            )}
                 </span>
               </div>
             )}
@@ -139,13 +146,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* 2. Navegação Principal Flat */}
       <div
-        className={`flex-1 py-3 space-y-1 w-full flex flex-col ${
-          isMobileDrawer
+        className={`flex-1 py-3 space-y-1 w-full flex flex-col ${isMobileDrawer
             ? 'px-0 overflow-visible'
             : isCollapsed
-            ? 'items-center px-2 overflow-y-auto no-scrollbar'
-            : 'px-2.5 overflow-y-auto no-scrollbar'
-        }`}
+              ? 'items-center px-2 overflow-y-auto no-scrollbar'
+              : 'px-2.5 overflow-y-auto no-scrollbar'
+          }`}
       >
         {menuItems.map((item) => {
           const Icon = item.icon;
@@ -161,17 +167,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
               aria-current={isActive ? 'page' : undefined}
               title={isCollapsed ? undefined : item.label}
               aria-label={item.label}
-              className={`rounded-xl flex items-center transition-all duration-150 cursor-pointer group relative ${
-                isCollapsed
+              className={`rounded-xl flex items-center transition-all duration-150 cursor-pointer group relative ${isCollapsed
                   ? 'w-10 h-10 justify-center'
                   : isMobileDrawer
-                  ? 'w-full px-3 py-2.5 min-h-[44px] gap-3 justify-start'
-                  : 'w-full px-2.5 py-2 gap-2.5 justify-start'
-              } ${
-                isActive
+                    ? 'w-full px-3 py-2.5 min-h-[44px] gap-3 justify-start'
+                    : 'w-full px-2.5 py-2 gap-2.5 justify-start'
+                } ${isActive
                   ? 'shadow-xs font-semibold'
                   : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/60'
-              }`}
+                }`}
               style={{
                 backgroundColor: isActive ? accentConfig.primaryHex : undefined,
                 color: isActive ? accentConfig.primaryContrastHex : undefined
@@ -179,11 +183,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
             >
               <div className="relative">
                 <Icon
-                  className={`w-4.5 h-4.5 shrink-0 stroke-[1.8] ${
-                    isActive
+                  className={`w-4.5 h-4.5 shrink-0 stroke-[1.8] ${isActive
                       ? ''
                       : 'text-zinc-500 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-200'
-                  }`}
+                    }`}
                 />
                 {isCollapsed && item.badge !== undefined && (
                   <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-rose-500 ring-2 ring-white dark:ring-[#09090b]" />
@@ -193,11 +196,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
               {!isCollapsed && (
                 <>
                   <span
-                    className={`text-xs font-medium tracking-tight truncate ${
-                      isActive
+                    className={`text-xs font-medium tracking-tight truncate ${isActive
                         ? 'font-bold'
                         : 'text-zinc-700 dark:text-zinc-300 group-hover:text-zinc-900 dark:group-hover:text-zinc-100'
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </span>
@@ -212,9 +214,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     <Badge
                       variant={isActive ? 'default' : 'destructive'}
                       size="sm"
-                      className={`ml-auto font-mono text-[10px] px-1.5 py-0.2 ${
-                        isActive ? 'bg-white/20 text-white border-transparent' : ''
-                      }`}
+                      className={`ml-auto font-mono text-[10px] px-1.5 py-0.2 ${isActive ? 'bg-white/20 text-white border-transparent' : ''
+                        }`}
                     >
                       {item.badge}
                     </Badge>
@@ -239,16 +240,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* 3. Rodapé com Botão Flat de Expandir/Recolher */}
       {!isMobileDrawer && onToggleCollapse && (
         <div
-          className={`p-2.5 border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 w-full flex ${
-            isCollapsed ? 'justify-center' : 'justify-between items-center'
-          }`}
+          className={`p-2.5 border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 w-full flex ${isCollapsed ? 'justify-center' : 'justify-between items-center'
+            }`}
         >
           <button
             type="button"
             onClick={onToggleCollapse}
-            className={`flex items-center gap-2 rounded-xl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer ${
-              isCollapsed ? 'p-2' : 'px-2.5 py-1.5 w-full text-xs font-semibold'
-            }`}
+            className={`flex items-center gap-2 rounded-xl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer ${isCollapsed ? 'p-2' : 'px-2.5 py-1.5 w-full text-xs font-semibold'
+              }`}
             title={isCollapsed ? 'Expandir barra lateral' : 'Recolher barra lateral'}
             aria-label={isCollapsed ? 'Expandir barra lateral' : 'Recolher barra lateral'}
           >

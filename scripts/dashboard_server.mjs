@@ -1,390 +1,404 @@
 import http from 'http';
 import fs from 'fs';
 import path from 'path';
+import { spawn } from 'child_process';
 
-const PORT = 3333;
-const PROGRESS_FILE = path.resolve('data/resolucao_quarentena_expansion_progresso.jsonl');
-const LIVE_LOG_FILE = path.resolve('data/quarentena_workers_live.log');
-const TASK_LOG_FILE = 'C:/Users/cnath/.gemini/antigravity/brain/b2e4a244-51a2-46f3-a7c8-f7f64a3dc28e/.system_generated/tasks/task-998.log';
+const PORT = 3005;
+const STATE_PATH = path.resolve('data/pipeline_progress_state.json');
+const SIGNAL_PATH = path.resolve('data/pipeline.signal');
 
-function getStats() {
-  let totalPersistido = 0;
-  const byWorker = {};
-  const byModel = {};
-  const byEspecialidade = {};
-  const recentItems = [];
-  const now = Date.now();
-  let inLast5Min = 0;
+const SPECIALTY_MAP = {
+  ginecologia: { file: 'data/ginecologia_direto_questions.json', name: 'Ginecologia', next: 'obstetricia' },
+  obstetricia: { file: 'data/obstetricia_direto_questions.json', name: 'Obstetrícia', next: 'pediatria' },
+  pediatria: { file: 'data/pediatria_direto_questions.json', name: 'Pediatria', next: 'clinica' },
+  clinica: { file: 'data/clinica_medica_direto_questions.json', name: 'Clínica Médica', next: 'cirurgia' },
+  cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia', next: 'preventiva' },
+  preventiva: { file: 'data/medicina_preventiva_direto_questions.json', name: 'Medicina Preventiva', next: 'none' }
+};
 
-  if (fs.existsSync(PROGRESS_FILE)) {
-    const raw = fs.readFileSync(PROGRESS_FILE, 'utf8');
-    const lines = raw.trim().split('\n');
-    totalPersistido = lines.length;
+let runnerProcess = null;
 
-    // Processa de trás para frente para pegar os mais recentes
-    for (let i = lines.length - 1; i >= 0; i--) {
-      const l = lines[i];
-      if (!l.trim()) continue;
-      try {
-        const item = JSON.parse(l);
-        byWorker[item.worker || 'Outros'] = (byWorker[item.worker || 'Outros'] || 0) + 1;
-        byModel[item.model || 'outros'] = (byModel[item.model || 'outros'] || 0) + 1;
-        byEspecialidade[item.especialidade || 'Outros'] = (byEspecialidade[item.especialidade || 'Outros'] || 0) + 1;
+function getStatus() {
+  if (fs.existsSync(STATE_PATH)) {
+    try {
+      return JSON.parse(fs.readFileSync(STATE_PATH, 'utf8'));
+    } catch {
+      return { status: 'ERROR_READING_STATE' };
+    }
+  }
+  return { status: 'IDLE' };
+}
 
-        if (recentItems.length < 8) {
-          recentItems.push(item);
-        }
+function sendJson(res, data, statusCode = 200) {
+  res.writeHead(statusCode, {
+    'Content-Type': 'application/json; charset=utf-8',
+    'Access-Control-Allow-Origin': '*'
+  });
+  res.end(JSON.stringify(data));
+}
 
-        if (item.timestamp) {
-          const t = new Date(item.timestamp).getTime();
-          if (now - t < 5 * 60 * 1000) inLast5Min++;
-        }
-      } catch {}
+const server = http.createServer((req, res) => {
+  const url = new URL(req.url, `http://${req.headers.host}`);
+
+  if (url.pathname === '/api/status') {
+    return sendJson(res, getStatus());
+  }
+
+  // Ações de controle
+  if (req.method === 'POST') {
+    if (url.pathname === '/api/action/start') {
+      const state = getStatus();
+      if (state.status === 'RUNNING') {
+        return sendJson(res, { ok: false, message: 'A esteira já está em execução!' });
+      }
+
+      const specKey = url.searchParams.get('specialty') || 'ginecologia';
+      const spec = SPECIALTY_MAP[specKey] || SPECIALTY_MAP['ginecologia'];
+      const workers = url.searchParams.get('workers') || '4';
+      const nextSpec = url.searchParams.get('next') || spec.next;
+
+      if (fs.existsSync(SIGNAL_PATH)) fs.unlinkSync(SIGNAL_PATH);
+
+      runnerProcess = spawn('node', [
+        'scripts/produce_specialty_batch.mjs',
+        `--file=${spec.file}`,
+        `--specialty=${spec.name}`,
+        `--workers=${workers}`,
+        `--next=${nextSpec}`
+      ], {
+        stdio: 'inherit',
+        detached: true
+      });
+      runnerProcess.unref();
+
+      return sendJson(res, { ok: true, message: `Produção de ${spec.name} iniciada com ${workers} workers! Próxima: ${nextSpec.toUpperCase()}` });
+    }
+
+    if (url.pathname === '/api/action/pause') {
+      fs.writeFileSync(SIGNAL_PATH, 'pause', 'utf8');
+      return sendJson(res, { ok: true, message: 'Sinal de pausa enviado.' });
+    }
+
+    if (url.pathname === '/api/action/resume') {
+      if (fs.existsSync(SIGNAL_PATH)) fs.unlinkSync(SIGNAL_PATH);
+      return sendJson(res, { ok: true, message: 'Execução retomada.' });
+    }
+
+    if (url.pathname === '/api/action/stop') {
+      fs.writeFileSync(SIGNAL_PATH, 'stop', 'utf8');
+      return sendJson(res, { ok: true, message: 'Sinal de parada enviado.' });
     }
   }
 
-  let recentLogs = [];
-  const logTarget = fs.existsSync(LIVE_LOG_FILE) ? LIVE_LOG_FILE : TASK_LOG_FILE;
-  if (fs.existsSync(logTarget)) {
-    try {
-      const logContent = fs.readFileSync(logTarget, 'utf8');
-      const lines = logContent.split('\n').filter(l => l.trim().length > 0);
-      recentLogs = lines.slice(-20);
-    } catch {}
+  // Frontend HTML do Dashboard
+  if (url.pathname === '/' || url.pathname === '/index.html') {
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.end(renderDashboardHtml());
+    return;
   }
 
-  const totalQuarentenaOriginal = 15301;
-  const restantes = Math.max(0, totalQuarentenaOriginal - totalPersistido);
-  const progressoGeral = ((totalPersistido / totalQuarentenaOriginal) * 100).toFixed(1);
+  res.writeHead(404, { 'Content-Type': 'text/plain' });
+  res.end('Not Found');
+});
 
-  return {
-    totalPersistido,
-    restantes,
-    progressoGeral,
-    vazaoMinuto: (inLast5Min / 5).toFixed(1),
-    byWorker,
-    byModel,
-    byEspecialidade,
-    recentItems,
-    recentLogs,
-    timestamp: new Date().toISOString()
-  };
-}
-
-const HTML_CONTENT = `<!DOCTYPE html>
+function renderDashboardHtml() {
+  return `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Banco Residência · Monitor de Quarentena Ao Vivo</title>
+  <title>Banco Residência · Esteira Padrão-Ouro Ao Vivo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @keyframes pulse-subtle {
+    @keyframes pulse-slow {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.85; transform: scale(1.02); }
+      50% { opacity: 0.8; transform: scale(1.03); }
     }
-    .live-pulse {
-      animation: pulse-subtle 2s infinite ease-in-out;
-    }
-    /* Estilização customizada da barra de rolagem */
+    .pulse-live { animation: pulse-slow 2s infinite ease-in-out; }
     ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: #0f172a; }
-    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    ::-webkit-scrollbar-track { background: #0B0F17; }
+    ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #334155; }
   </style>
 </head>
-<body class="bg-[#0b0f19] text-slate-100 antialiased p-4 md:p-8 font-sans min-h-screen">
+<body class="bg-[#0B0F17] text-slate-100 font-sans antialiased min-h-screen p-4 md:p-8">
 
   <div class="max-w-7xl mx-auto space-y-6">
 
     <!-- Topbar -->
-    <header class="bg-[#111827] border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+    <header class="bg-[#121826] border border-slate-800 rounded-2xl p-6 shadow-2xl flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div>
-        <div class="flex items-center gap-2 mb-1.5">
-          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 live-pulse">
+        <div class="flex items-center gap-3 mb-2">
+          <span id="badgeStatus" class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 pulse-live">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-            SERVIÇO AO VIVO · LOCALHOST:3333
+            <span id="txtStatus">ESTEIRA ATIVA</span>
           </span>
-          <span id="lastUpdate" class="text-xs text-slate-400">· Conectando...</span>
+          <span class="text-xs text-slate-400 font-mono">MODELO: GEMINI 2.5 FLASH LITE</span>
+          <span class="text-xs px-2.5 py-0.5 rounded-full font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">CUSTO: R$ 0,00</span>
         </div>
-        <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
-          Painel de Quarentena em Tempo Real
+        <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight flex items-center gap-3">
+          <span>Banco Residência</span>
+          <span class="text-xs font-bold px-2.5 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-lg uppercase tracking-wider">Padrão-Ouro</span>
         </h1>
         <p class="text-sm text-slate-400 mt-1">
-          Orquestração Contínua de IA · Banco de Expansão Direta · Banco Residência
+          Orquestração Contínua de Resoluções Médicas com Âncora de Ouro · Tabela <span class="text-amber-400 font-mono">questions_direto</span>
         </p>
       </div>
 
-      <div class="flex items-center gap-3">
-        <div class="bg-[#0b0f19] px-4 py-2.5 rounded-xl border border-slate-800 text-right">
-          <span class="text-xs text-slate-400 block font-medium">Vazão Recente</span>
-          <span id="vazaoDisplay" class="text-lg font-bold text-emerald-400">0.0 q/min</span>
-        </div>
-        <div class="bg-[#0b0f19] px-4 py-2.5 rounded-xl border border-slate-800 text-right">
-          <span class="text-xs text-slate-400 block font-medium">Taxa de Atualização</span>
-          <span class="text-lg font-bold text-sky-400">2s</span>
-        </div>
+      <!-- Controles Rápidos -->
+      <div class="flex flex-wrap items-center gap-3">
+        <select id="selSpecialty" class="bg-[#1A2234] border border-slate-700 text-xs rounded-xl px-3 py-2.5 font-medium text-slate-200 focus:outline-none focus:border-indigo-500">
+          <option value="ginecologia" selected>Ginecologia ➔ Obstetrícia</option>
+          <option value="obstetricia">Obstetrícia</option>
+          <option value="pediatria">Pediatria</option>
+          <option value="clinica">Clínica Médica</option>
+          <option value="cirurgia">Cirurgia Geral</option>
+          <option value="preventiva">Medicina Preventiva</option>
+        </select>
+
+        <select id="selWorkers" class="bg-[#1A2234] border border-slate-700 text-xs rounded-xl px-3 py-2.5 font-medium text-slate-200 focus:outline-none focus:border-indigo-500">
+          <option value="4" selected>4 Workers</option>
+          <option value="6">6 Workers</option>
+        </select>
+
+        <button onclick="triggerAction('start')" class="bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-lg shadow-indigo-600/20">
+          <i class="fa-solid fa-play"></i> Iniciar
+        </button>
+        <button onclick="triggerAction('pause')" class="bg-amber-600/80 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5">
+          <i class="fa-solid fa-pause"></i> Pausar
+        </button>
+        <button onclick="triggerAction('resume')" class="bg-emerald-600/80 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5">
+          <i class="fa-solid fa-rotate-right"></i> Retomar
+        </button>
+        <button onclick="triggerAction('stop')" class="bg-rose-600/80 hover:bg-rose-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5">
+          <i class="fa-solid fa-stop"></i> Parar
+        </button>
       </div>
     </header>
 
-    <!-- Cards de Métricas Principais (KPIs) -->
+    <!-- Cards Principais de Métricas -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       
-      <!-- Card 1 -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg relative overflow-hidden">
-        <div class="text-xs text-slate-400 font-medium mb-1">TOTAL GERAL RESOLVIDO</div>
-        <div id="totalResolvido" class="text-3xl font-extrabold text-white">---</div>
-        <div class="mt-3">
-          <div class="flex justify-between text-xs text-slate-400 mb-1">
-            <span>Progresso da Quarentena</span>
-            <span id="progressoGeralTxt" class="font-bold text-emerald-400">0%</span>
-          </div>
-          <div class="w-full bg-[#0b0f19] rounded-full h-2 overflow-hidden border border-slate-800">
-            <div id="progressoGeralBar" class="bg-gradient-to-r from-emerald-500 to-teal-400 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
-          </div>
+      <!-- Especialidade Atual -->
+      <div class="bg-[#121826] border border-slate-800 p-5 rounded-2xl shadow-xl">
+        <span class="text-xs font-semibold text-slate-400 block mb-1">Especialidade em Execução</span>
+        <div class="flex items-baseline justify-between">
+          <h2 id="cardSpecialty" class="text-xl font-extrabold text-white">Carregando...</h2>
+        </div>
+        <div class="mt-2 text-xs text-amber-400 flex items-center gap-1">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <span>Próxima: <strong id="cardNextSpecialty">Obstetrícia</strong></span>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg">
-        <div class="text-xs text-slate-400 font-medium mb-1">RESTANTES EM QUARENTENA</div>
-        <div id="totalRestantes" class="text-3xl font-extrabold text-amber-400">---</div>
-        <p class="text-xs text-slate-400 mt-3 flex items-center justify-between">
-          <span>De 15.301 originais</span>
-          <span class="text-emerald-400 font-medium">subfoco = 'Geral'</span>
-        </p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg">
-        <div class="text-xs text-slate-400 font-medium mb-1">WORKERS ATIVOS</div>
-        <div class="text-3xl font-extrabold text-sky-400">4 <span class="text-sm font-normal text-slate-400">Gemini Paralelos</span></div>
-        <div class="mt-3 text-xs text-slate-400">
-          <span class="text-emerald-400 font-semibold">2 Modelos x 2 Chaves:</span> Rotação Ativa
+      <!-- Progresso de Conclusão -->
+      <div class="bg-[#121826] border border-slate-800 p-5 rounded-2xl shadow-xl">
+        <span class="text-xs font-semibold text-slate-400 block mb-1">Progresso do Lote</span>
+        <div class="flex items-baseline justify-between">
+          <span id="cardProgressCount" class="text-2xl font-black text-white">0 / 0</span>
+          <span id="cardProgressPct" class="text-sm font-bold text-indigo-400">0%</span>
+        </div>
+        <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden mt-3">
+          <div id="barProgress" class="bg-gradient-to-r from-indigo-500 to-emerald-400 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
         </div>
       </div>
 
-      <!-- Card 4 -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg">
-        <div class="text-xs text-slate-400 font-medium mb-1">QUALITY GATE MÉDICO</div>
-        <div class="text-3xl font-extrabold text-purple-400">100%</div>
-        <div class="mt-3 text-xs text-emerald-400 font-medium">
-          ✓ Subfoco ≠ Foco · Validação Canônica
+      <!-- Velocidade e ETA -->
+      <div class="bg-[#121826] border border-slate-800 p-5 rounded-2xl shadow-xl">
+        <span class="text-xs font-semibold text-slate-400 block mb-1">Velocidade & Estimativa</span>
+        <div class="flex items-baseline justify-between">
+          <span id="cardVelocity" class="text-2xl font-black text-white">0.0 <span class="text-xs font-normal text-slate-400">q/min</span></span>
+          <span id="cardElapsed" class="text-xs font-mono text-slate-400">00:00</span>
+        </div>
+        <div class="mt-2 text-xs text-slate-400 flex items-center gap-1.5">
+          <i class="fa-regular fa-clock text-indigo-400"></i>
+          <span>Tempo Restante: <strong id="cardETA" class="text-white">--</strong></span>
+        </div>
+      </div>
+
+      <!-- Sucessos e Tokens -->
+      <div class="bg-[#121826] border border-slate-800 p-5 rounded-2xl shadow-xl">
+        <span class="text-xs font-semibold text-slate-400 block mb-1">Estatísticas de Geração</span>
+        <div class="flex items-baseline justify-between">
+          <span id="cardSuccess" class="text-2xl font-black text-emerald-400">0 <span class="text-xs font-normal text-slate-400">sucessos</span></span>
+          <span id="cardErrors" class="text-xs font-bold text-rose-400">0 falhas</span>
+        </div>
+        <div class="mt-2 text-xs text-slate-400 flex items-center justify-between">
+          <span>Tokens Totais:</span>
+          <strong id="cardTokens" class="text-slate-200 font-mono">0</strong>
         </div>
       </div>
 
     </div>
 
-    <!-- Status dos 4 Workers Gemini -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <!-- Feed Ao Vivo e Histórico -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       
-      <!-- Worker 1 -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-4 shadow-lg space-y-2.5">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-1.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span class="font-bold text-white text-xs">Worker 1 (Chave 1)</span>
-          </div>
-          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">OPERANDO</span>
+      <!-- Lista das Últimas Questões -->
+      <div class="lg:col-span-2 bg-[#121826] border border-slate-800 rounded-2xl p-6 shadow-xl">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-list-check text-indigo-400"></i>
+            <span>Últimas Questões Comentadas Padrão-Ouro</span>
+          </h3>
+          <span class="text-xs text-slate-400">Atualização em tempo real (2s)</span>
         </div>
-        <div class="text-[11px] space-y-1 text-slate-400 bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800">
-          <div>Modelo: <span class="text-emerald-400 font-bold font-mono">3.1-Lite</span></div>
-          <div>Cota: <span class="text-slate-300">15 RPM / 1.500 RPD</span></div>
-          <div>Fallback: <span class="text-slate-300">3.6-Flash</span></div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs text-slate-300">
+            <thead class="text-slate-400 bg-slate-800/40 border-b border-slate-800 uppercase font-semibold">
+              <tr>
+                <th class="py-3 px-3">Código</th>
+                <th class="py-3 px-3">Tema</th>
+                <th class="py-3 px-3">Tempo</th>
+                <th class="py-3 px-3">Tokens</th>
+                <th class="py-3 px-3">Status</th>
+                <th class="py-3 px-3">Hora</th>
+              </tr>
+            </thead>
+            <tbody id="tblRecentBody" class="divide-y divide-slate-800 font-mono">
+              <tr>
+                <td colspan="6" class="text-center py-8 text-slate-500 font-sans">Aguardando primeiras questões...</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
-      <!-- Worker 2 -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-4 shadow-lg space-y-2.5">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-1.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span class="font-bold text-white text-xs">Worker 2 (Chave 1)</span>
+      <!-- Resumo Estratégico & Destaques Pedagógicos -->
+      <div class="bg-[#121826] border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
+        <div>
+          <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-shield-halved text-amber-400"></i>
+            <span>Protocolo Padrão-Ouro Ativo</span>
+          </h3>
+
+          <ul class="space-y-3 text-xs text-slate-300">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+              <span><strong>Âncora de Ouro:</strong> Respeito inegociável ao gabarito homologado da banca.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+              <span><strong>Negrito no Erro:</strong> Trecho incorreto destacado em negrito + correção médica.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+              <span><strong>Take-Home Message:</strong> Síntese de alto rendimento memorável.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
+              <span><strong>Sincronização Dupla:</strong> Atualização imediata em <code class="text-amber-400">questions_direto</code> e SQLite local.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 space-y-2">
+          <div class="flex justify-between">
+            <span>Pool de Chaves:</span>
+            <span class="text-emerald-400 font-bold">7 Chaves Free Ativas</span>
           </div>
-          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">OPERANDO</span>
-        </div>
-        <div class="text-[11px] space-y-1 text-slate-400 bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800">
-          <div>Modelo: <span class="text-sky-400 font-bold font-mono">3.5-Flash</span></div>
-          <div>Cota: <span class="text-slate-300">15 RPM / 1.500 RPD</span></div>
-          <div>Fallback: <span class="text-slate-300">3.6-Flash</span></div>
-        </div>
-      </div>
-
-      <!-- Worker 3 -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-4 shadow-lg space-y-2.5">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-1.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span class="font-bold text-white text-xs">Worker 3 (Chave 2)</span>
+          <div class="flex justify-between">
+            <span>Fallback Automático:</span>
+            <span class="text-slate-200">Ativado (12 retries)</span>
           </div>
-          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">OPERANDO</span>
-        </div>
-        <div class="text-[11px] space-y-1 text-slate-400 bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800">
-          <div>Modelo: <span class="text-emerald-400 font-bold font-mono">3.1-Lite</span></div>
-          <div>Cota: <span class="text-slate-300">15 RPM / 1.500 RPD</span></div>
-          <div>Fallback: <span class="text-slate-300">3.6-Flash</span></div>
-        </div>
-      </div>
-
-      <!-- Worker 4 -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-4 shadow-lg space-y-2.5">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center gap-1.5">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span class="font-bold text-white text-xs">Worker 4 (Chave 2)</span>
-          </div>
-          <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-mono">OPERANDO</span>
-        </div>
-        <div class="text-[11px] space-y-1 text-slate-400 bg-[#0b0f19] p-2.5 rounded-xl border border-slate-800">
-          <div>Modelo: <span class="text-sky-400 font-bold font-mono">3.5-Flash</span></div>
-          <div>Cota: <span class="text-slate-300">15 RPM / 1.500 RPD</span></div>
-          <div>Fallback: <span class="text-slate-300">3.6-Flash</span></div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Terminal de Logs em Tempo Real e Feed -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-
-      <!-- Terminal de Logs Ao Vivo -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg flex flex-col">
-        <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-3">
-          <div class="flex items-center gap-2">
-            <span class="w-3 h-3 rounded-full bg-sky-500"></span>
-            <h3 class="font-bold text-sm text-white">Terminal de Logs ao Vivo (Task-998)</h3>
-          </div>
-          <span class="text-xs text-slate-400 font-mono">stdout stream</span>
-        </div>
-        <div id="logTerminal" class="bg-[#070a12] p-4 rounded-xl border border-slate-800 font-mono text-xs text-slate-300 h-80 overflow-y-auto space-y-1">
-          <div class="text-slate-500">Aguardando linhas de log...</div>
-        </div>
-      </div>
-
-      <!-- Feed Recente de Questões Resolvidas -->
-      <div class="bg-[#111827] border border-slate-800 rounded-2xl p-5 shadow-lg flex flex-col">
-        <div class="flex items-center justify-between pb-3 border-b border-slate-800 mb-3">
-          <div class="flex items-center gap-2">
-            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-            <h3 class="font-bold text-sm text-white">Últimas Questões Classificadas e Salvas</h3>
-          </div>
-          <span class="text-xs text-emerald-400 font-mono">Supabase PATCH</span>
-        </div>
-        <div id="feedList" class="space-y-2.5 h-80 overflow-y-auto pr-1">
-          <div class="text-xs text-slate-500">Carregando resoluções recentes...</div>
         </div>
       </div>
 
     </div>
-
-    <!-- Rodapé -->
-    <footer class="text-center text-xs text-slate-500 py-4 border-t border-slate-800">
-      Banco Residência · Plataforma de Alta Performance Médica · Execução Local Autônoma
-    </footer>
 
   </div>
 
   <script>
     async function updateDashboard() {
       try {
-        const res = await fetch('/api/stats');
-        if (!res.ok) return;
-        const data = await res.json();
+        const res = await fetch('/api/status');
+        const d = await res.json();
 
-        // 1. Atualizar KPIs
-        document.getElementById('totalResolvido').innerText = data.totalPersistido.toLocaleString('pt-BR');
-        document.getElementById('totalRestantes').innerText = data.restantes.toLocaleString('pt-BR');
-        document.getElementById('progressoGeralTxt').innerText = data.progressoGeral + '%';
-        document.getElementById('progressoGeralBar').style.width = data.progressoGeral + '%';
-        document.getElementById('vazaoDisplay').innerText = data.vazaoMinuto + ' q/min';
-        document.getElementById('lastUpdate').innerText = '· ' + new Date().toLocaleTimeString('pt-BR');
-
-        // 2. Atualizar Logs
-        const logBox = document.getElementById('logTerminal');
-        if (data.recentLogs && data.recentLogs.length > 0) {
-          logBox.innerHTML = data.recentLogs.map(l => {
-            let color = 'text-slate-300';
-            if (l.includes('⚡')) color = 'text-emerald-400 font-semibold';
-            else if (l.includes('⚠️')) color = 'text-amber-400';
-            else if (l.includes('🔄')) color = 'text-sky-400 font-bold';
-            else if (l.includes('🛑')) color = 'text-rose-400 font-bold';
-            return '<div class="' + color + '">' + escapeHtml(l) + '</div>';
-          }).join('');
-          logBox.scrollTop = logBox.scrollHeight;
+        // Status Badge
+        const bStatus = document.getElementById('badgeStatus');
+        const tStatus = document.getElementById('txtStatus');
+        if (d.status === 'RUNNING') {
+          bStatus.className = 'inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 pulse-live';
+          tStatus.textContent = 'ESTEIRA ATIVA';
+        } else if (d.status === 'PAUSED') {
+          bStatus.className = 'inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20';
+          tStatus.textContent = 'PAUSADA';
+        } else if (d.status === 'COMPLETED') {
+          bStatus.className = 'inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20';
+          tStatus.textContent = 'LOTE FINALIZADO';
+        } else {
+          bStatus.className = 'inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-slate-500/10 text-slate-400 border border-slate-500/20';
+          tStatus.textContent = d.status || 'PARADA';
         }
 
-        // 3. Atualizar Feed Recente
-        const feedBox = document.getElementById('feedList');
-        if (data.recentItems && data.recentItems.length > 0) {
-          feedBox.innerHTML = data.recentItems.map(item => {
-            return \`
-              <div class="bg-[#0b0f19] border border-slate-800 rounded-xl p-3 text-xs space-y-1">
-                <div class="flex items-center justify-between">
-                  <span class="font-bold text-sky-400">\${escapeHtml(item.code || 'ID')} · \${escapeHtml(item.especialidade || '')}</span>
-                  <span class="text-slate-500 font-mono text-[11px]">\${escapeHtml(item.model || '')}</span>
-                </div>
-                <div class="text-slate-200">
-                  <span class="text-emerald-400 font-semibold">Subfoco:</span> \${escapeHtml(item.subfoco || '')}
-                </div>
-                <p class="text-slate-400 italic text-[11px] line-clamp-2">"\${escapeHtml(item.justificativa || '')}"</p>
-              </div>
-            \`;
-          }).join('');
+        // Métricas
+        document.getElementById('cardSpecialty').textContent = d.specialty || '--';
+        document.getElementById('cardNextSpecialty').textContent = d.nextSpecialty ? d.nextSpecialty.toUpperCase() : 'NENHUM';
+        document.getElementById('cardProgressCount').textContent = (d.processedCount || 0) + ' / ' + (d.totalToProcess || 0);
+        document.getElementById('cardProgressPct').textContent = (d.progressPercent || 0) + '%';
+        document.getElementById('barProgress').style.width = (d.progressPercent || 0) + '%';
+
+        if (d.velocity) {
+          document.getElementById('cardVelocity').innerHTML = (d.velocity.questionsPerMinute || 0) + ' <span class="text-xs font-normal text-slate-400">q/min</span>';
+          document.getElementById('cardETA').textContent = d.velocity.etaFormatted || '--';
+          const el = d.velocity.elapsedSeconds || 0;
+          const mins = Math.floor(el / 60);
+          const secs = el % 60;
+          document.getElementById('cardElapsed').textContent = String(mins).padStart(2, '0') + ':' + String(secs).padStart(2, '0');
         }
 
-      } catch (err) {
-        console.error('Erro ao atualizar telemetria:', err);
+        document.getElementById('cardSuccess').innerHTML = (d.successCount || 0) + ' <span class="text-xs font-normal text-slate-400">sucessos</span>';
+        document.getElementById('cardErrors').textContent = (d.errorCount || 0) + ' falhas';
+        document.getElementById('cardTokens').textContent = (d.tokens ? (d.tokens.totalTokens || 0).toLocaleString('pt-BR') : '0');
+
+        // Tabela recente
+        const tbody = document.getElementById('tblRecentBody');
+        if (d.recentHistory && d.recentHistory.length > 0) {
+          tbody.innerHTML = d.recentHistory.map(item => {
+            const isOk = item.status === 'OK';
+            const badge = isOk 
+              ? '<span class="text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">OK</span>'
+              : '<span class="text-rose-400 font-bold bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20">' + item.status + '</span>';
+            return '<tr class="hover:bg-slate-800/30 transition">' +
+              '<td class="py-2.5 px-3 font-semibold text-white">' + item.code + '</td>' +
+              '<td class="py-2.5 px-3 text-slate-300 font-sans truncate max-w-[200px]">' + (item.tema || '--') + '</td>' +
+              '<td class="py-2.5 px-3 text-indigo-300">' + (item.duration || 0) + 's</td>' +
+              '<td class="py-2.5 px-3 text-slate-400">' + (item.tokens || 0) + '</td>' +
+              '<td class="py-2.5 px-3">' + badge + '</td>' +
+              '<td class="py-2.5 px-3 text-slate-400">' + item.timestamp + '</td>' +
+            '</tr>';
+          }).join('');
+        }
+      } catch (e) {
+        console.error('Erro ao atualizar dashboard:', e);
       }
     }
 
-    function escapeHtml(str) {
-      if (!str) return '';
-      return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&#039;');
+    async function triggerAction(action) {
+      const spec = document.getElementById('selSpecialty').value;
+      const workers = document.getElementById('selWorkers').value;
+      try {
+        const res = await fetch('/api/action/' + action + '?specialty=' + spec + '&workers=' + workers, { method: 'POST' });
+        const d = await res.json();
+        alert(d.message);
+        updateDashboard();
+      } catch (err) {
+        alert('Erro ao enviar ação: ' + err.message);
+      }
     }
 
-    // Polling a cada 2 segundos
-    updateDashboard();
     setInterval(updateDashboard, 2000);
+    updateDashboard();
   </script>
 </body>
 </html>`;
-
-const server = http.createServer((req, res) => {
-  // CORS
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
-
-  if (req.method === 'OPTIONS') {
-    res.writeHead(200);
-    res.end();
-    return;
-  }
-
-  if (req.url === '/api/stats') {
-    try {
-      const stats = getStats();
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify(stats));
-    } catch (e) {
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: e.message }));
-    }
-    return;
-  }
-
-  // Página Principal HTML
-  res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-  res.end(HTML_CONTENT);
-});
+}
 
 server.listen(PORT, () => {
-  console.log(`\n========================================================================`);
-  console.log(`🚀 DASHBOARD AO VIVO INICIALIZADO COM SUCESSO!`);
+  console.log('='.repeat(80));
+  console.log(`📊 DASHBOARD DE MONITORAMENTO APERFEIÇOADO (Porta ${PORT})`);
   console.log(`🌐 Acesse no seu navegador: http://localhost:${PORT}`);
-  console.log(`========================================================================\n`);
+  console.log('='.repeat(80));
 });

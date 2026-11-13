@@ -4,155 +4,177 @@ import React from 'react';
 import { useTheme } from '@/context/ThemeContext';
 
 export interface LogoProps extends React.SVGProps<SVGSVGElement> {
+  variant?: 'symbol' | 'full';
   size?: number | string;
+  color?: string;
+  glow?: boolean;
+  // Props de retrocompatibilidade
   circleColor?: string;
   letterColor?: string;
   showMonogramOnly?: boolean;
-  glow?: boolean;
 }
 
+// 1. Vetores exatos do símbolo isolado (hippotalamus.svg) — coordenadas e distâncias originais
+const PATH_SYMBOL_1 =
+  'M718.74 906.921 C882.704 405.986 1702.884 702.375 1543.416 1022.75 C1373.738 1363.638 1050.008 860.221 842.727 1632.282';
+const PATH_SYMBOL_2 =
+  'M854.033 1157.092 C673.215 1042.009 422.801 1191.281 298.333 1070.475 C184.287 959.785 362.047 674.876 362.047 674.876 C675.35 161.911 1357.793 222.808 1670.993 488.16 C2360.998 1072.751 1270.756 1971.842 1270.756 1336.094';
+
+// 2. Vetores exatos da logo completa (hippocampus_completo.svg) — distâncias originais em relação ao texto
+const PATH_FULL_1 =
+  'M807.546 906.921 C971.51 405.986 1791.69 702.375 1632.222 1022.75 C1462.544 1363.638 1138.814 860.221 931.533 1632.282';
+const PATH_FULL_2 =
+  'M942.839 1157.092 C762.021 1042.009 511.607 1191.281 387.139 1070.475 C273.093 959.785 450.853 674.876 450.853 674.876 C764.156 161.911 1446.599 222.808 1759.799 488.16 C2449.803 1072.751 1359.562 1971.842 1359.562 1336.094';
+
 /**
- * Componente oficial de Logo em SVG do Hippocampus • Questões de Residência
+ * Componente oficial da identidade visual Hippocampus • Questões de Residência
  * Fiel 100% ao arquivo SVG original:
  * - Bordas retas perpendiculares (stroke-linecap="butt", sem arredondamento).
  * - Espessura canônica stroke-width="132" com stroke-miterlimit="10".
  * - Tipografia e espaçamentos exatos em linha única de hippocampus_completo.svg.
+ * - variant='symbol': Símbolo isolado (viewBox 0 0 2160 1920)
+ * - variant='full': Lockup completo horizontal (viewBox 0 0 7150 1920)
  */
 export const Logo: React.FC<LogoProps> = ({
+  variant = 'symbol',
   size,
-  className = 'w-8 h-8',
+  className = 'w-9 h-9',
+  color,
   circleColor,
   letterColor,
-  showMonogramOnly = true,
+  showMonogramOnly,
   glow = false,
   style,
   ...props
 }) => {
-  const { accentConfig, accent, mode } = useTheme();
+  const { accentConfig } = useTheme();
 
-  const isDark = mode === 'dark';
-  const isNeutral = accent === 'neutral';
+  // Compatibilidade com prop legada showMonogramOnly
+  const effectiveVariant =
+    showMonogramOnly !== undefined
+      ? showMonogramOnly
+        ? 'symbol'
+        : 'full'
+      : variant;
 
-  // Resolução dinâmica de cores: branco no modo escuro, chumbo no claro, ou acento
-  const resolvedColor =
-    letterColor ||
-    circleColor ||
-    (isNeutral
-      ? isDark
-        ? '#ffffff'
-        : '#09090b'
-      : accentConfig?.primaryHex || (isDark ? '#ffffff' : '#09090b'));
+  // Resolução de cor preservando fidelidade e adaptação instantânea ao tema via currentColor
+  const strokeColor = color || letterColor || circleColor || 'currentColor';
+  const fillColor = color || letterColor || circleColor || 'currentColor';
 
   const sizeStyle: React.CSSProperties = size
     ? {
-        width: typeof size === 'number' ? `${size}px` : size,
-        height: typeof size === 'number' ? `${size}px` : size,
-        minWidth: typeof size === 'number' ? `${size}px` : size,
-        minHeight: typeof size === 'number' ? `${size}px` : size
-      }
+      width: typeof size === 'number' ? `${size}px` : size,
+      height: typeof size === 'number' ? `${size}px` : size,
+      minWidth: typeof size === 'number' ? `${size}px` : size,
+      minHeight: typeof size === 'number' ? `${size}px` : size
+    }
     : {};
 
   const glowStyle: React.CSSProperties = glow
     ? {
-        filter: `drop-shadow(0 4px 16px ${accentConfig?.bgRgba || 'rgba(255, 255, 255, 0.25)'})`
-      }
+      filter: `drop-shadow(0 6px 18px ${accentConfig?.bgRgba || 'rgba(37, 99, 235, 0.28)'})`
+    }
     : {};
 
-  if (showMonogramOnly) {
+  if (effectiveVariant === 'full') {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 2160 1920"
-        className={`shrink-0 select-none ${className}`}
+        viewBox="0 0 7150 1920"
+        className={`shrink-0 select-none text-zinc-950 dark:text-white ${className}`}
         style={{ ...sizeStyle, ...glowStyle, ...style }}
-        aria-label="Hippocampus"
+        aria-label="Hippocampus — Questões de Residência"
         role="img"
         {...props}
       >
-        <g id="Hippocampus_Symbol">
-          {/* Linha 2: Externa (Calota craniana) - Bordas retas originais */}
+        <g id="Layer_1" data-name="Layer 1">
           <path
-            d="M854.033 1157.092 C673.215 1042.009 422.801 1191.281 298.333 1070.475 C184.287 959.785 362.047 674.876 362.047 674.876 C675.35 161.911 1357.793 222.808 1670.993 488.16 C2360.998 1072.751 1270.756 1971.842 1270.756 1336.094"
+            d={PATH_FULL_1}
             fill="none"
-            stroke={resolvedColor}
+            stroke={strokeColor}
             strokeWidth="132"
             strokeMiterlimit="10"
             strokeLinecap="butt"
             className="transition-colors duration-200"
           />
-          {/* Linha 1: Interna (Giro do hipocampo) - Bordas retas originais */}
           <path
-            d="M718.74 906.921 C882.704 405.986 1702.884 702.375 1543.416 1022.75 C1373.738 1363.638 1050.008 860.221 842.727 1632.282"
+            d={PATH_FULL_2}
             fill="none"
-            stroke={resolvedColor}
+            stroke={strokeColor}
             strokeWidth="132"
             strokeMiterlimit="10"
             strokeLinecap="butt"
             className="transition-colors duration-200"
           />
+          {/* Nome Hippocampus aumentado e calibrado para maior presença e força visual */}
+          <text
+            transform="matrix(63 0 0 63 2263.296 1050)"
+            x="0"
+            y="0"
+            xmlSpace="preserve"
+            style={{
+              fontFamily: 'var(--font-inter), Inter, sans-serif',
+              fontSize: '12px',
+              fontWeight: 'bold',
+              fill: fillColor,
+              letterSpacing: '-0.6px'
+            }}
+            className="transition-colors duration-200"
+          >
+            <tspan x="0" y="0">Hippocampus</tspan>
+          </text>
+          {/* Subtítulo Questões de Residência em linha única */}
+          <text
+            transform="matrix(17.5 0 0 17.5 2293.201 1385)"
+            x="0"
+            y="0"
+            xmlSpace="preserve"
+            style={{
+              fontFamily: 'var(--font-inter), Inter, sans-serif',
+              fontSize: '12px',
+              fontWeight: 400,
+              fill: fillColor,
+              letterSpacing: '1.56px'
+            }}
+            className="transition-colors duration-200"
+          >
+            <tspan x="0" y="0">QUESTÕES DE RESIDÊNCIA</tspan>
+          </text>
         </g>
       </svg>
     );
   }
 
-  // Modo Completo: Símbolo + Nome em Linha Única (Fiel ao SVG oficial)
+  // Símbolo isolado (viewBox 0 0 2160 1920)
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 7034.06 1920"
-      className={`shrink-0 select-none ${className}`}
+      viewBox="0 0 2160 1920"
+      className={`shrink-0 select-none text-zinc-950 dark:text-white ${className}`}
       style={{ ...sizeStyle, ...glowStyle, ...style }}
-      aria-label="Hippocampus • Questões de Residência"
+      aria-label="Hippocampus"
       role="img"
       {...props}
     >
-      <g id="Hippocampus_Full">
-        {/* Linha 1: Interna - Bordas retas originais */}
+      <g id="Layer_1" data-name="Layer 1">
         <path
-          d="M807.546 906.921 C971.51 405.986 1791.69 702.375 1632.222 1022.75 C1462.544 1363.638 1138.814 860.221 931.533 1632.282"
+          d={PATH_SYMBOL_1}
           fill="none"
-          stroke={resolvedColor}
+          stroke={strokeColor}
           strokeWidth="132"
           strokeMiterlimit="10"
           strokeLinecap="butt"
           className="transition-colors duration-200"
         />
-        {/* Linha 2: Externa - Bordas retas originais */}
         <path
-          d="M942.839 1157.092 C762.021 1042.009 511.607 1191.281 387.139 1070.475 C273.093 959.785 450.853 674.876 450.853 674.876 C764.156 161.911 1446.599 222.808 1759.799 488.16 C2449.803 1072.751 1359.562 1971.842 1359.562 1336.094"
+          d={PATH_SYMBOL_2}
           fill="none"
-          stroke={resolvedColor}
+          stroke={strokeColor}
           strokeWidth="132"
           strokeMiterlimit="10"
           strokeLinecap="butt"
           className="transition-colors duration-200"
         />
-        {/* Nome da Marca - Matriz exata do SVG */}
-        <text
-          transform="matrix(58.865 0 0 58.865 2263.296 1058.395)"
-          x="0"
-          y="0"
-          fontFamily="Inter, system-ui, -apple-system, sans-serif"
-          fontSize="12px"
-          fontWeight="bold"
-          letterSpacing="-0.6px"
-          fill={resolvedColor}
-        >
-          Hippocampus
-        </text>
-        {/* Subtítulo em Linha Única - Matriz exata do SVG */}
-        <text
-          transform="matrix(17.244 0 0 17.244 2293.201 1417.919)"
-          x="0"
-          y="0"
-          fontFamily="Inter, system-ui, -apple-system, sans-serif"
-          fontSize="12px"
-          fontWeight="200"
-          letterSpacing="1.56px"
-          fill={isDark ? '#d4d4d8' : '#52525b'}
-        >
-          QUESTÕES DE RESIDÊNCIA
-        </text>
       </g>
     </svg>
   );

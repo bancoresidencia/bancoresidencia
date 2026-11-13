@@ -1622,7 +1622,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       });
 
       updated.forEach((t) => {
-        saveUserScheduledTask(t, user?.id).catch(() => {});
+        saveUserScheduledTask(t, user?.id).catch(() => { });
       });
       return updated;
     });
@@ -2044,7 +2044,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         setIsSyncingCalendar(false);
         const rawMsg = oauthErr?.message || oauthErr?.error || '';
         if (rawMsg.includes('popup_closed')) {
-          setCalendarSyncError('A janela de autenticação foi fechada antes da confirmação. Ao reabrir, se ver a tela vermelha de aviso, clique em "Avançado" → "Acessar Banco Residência" para autorizar.');
+          setCalendarSyncError('A janela de autenticação foi fechada antes da confirmação. Ao reabrir, se ver a tela vermelha de aviso, clique em "Avançado" → "Acessar Hippocampus" para autorizar.');
         } else if (rawMsg.includes('Popup bloqueado')) {
           setCalendarSyncError(rawMsg + ' Clique em "Abrir por redirecionamento" abaixo.');
         } else {
@@ -2342,7 +2342,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       if (prev.some(t => t.id === task.id)) return prev;
       return [...prev, item];
     });
-    saveUserScheduledTask(item, user?.id).catch(() => {});
+    saveUserScheduledTask(item, user?.id).catch(() => { });
     setCalendarSyncSuccessMsg(`Bloco "${task.title}" adicionado ao seu cronograma!`);
   };
 
@@ -2354,7 +2354,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         .filter(s => !prevIds.has(s.id))
         .map(s => ({ ...s, isAiSuggested: true }));
       newItems.forEach((item) => {
-        saveUserScheduledTask(item, user?.id).catch(() => {});
+        saveUserScheduledTask(item, user?.id).catch(() => { });
       });
       return [...prev, ...newItems];
     });
@@ -2404,7 +2404,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           const prevIds = new Set(prev.map(p => p.id));
           const newItems = suggestionsToAdd.filter(s => !prevIds.has(s.id)).map(s => ({ ...s, isAiSuggested: true }));
           newItems.forEach((item) => {
-            saveUserScheduledTask(item, user?.id).catch(() => {});
+            saveUserScheduledTask(item, user?.id).catch(() => { });
           });
           return [...prev, ...newItems];
         });
@@ -3470,37 +3470,35 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                   {/* Barra pura sem números gigantes */}
                                   <div className="w-full max-w-[16px] sm:max-w-[18px] bg-zinc-100 dark:bg-zinc-800/60 rounded-full overflow-hidden flex flex-col justify-end h-full p-0.5">
                                     <div
-                                      className={`w-full rounded-full transition-all duration-500 ease-out ${
-                                        day.isToday
+                                      className={`w-full rounded-full transition-all duration-500 ease-out ${day.isToday
                                           ? 'shadow-xs'
                                           : isComplete
-                                          ? 'bg-emerald-500'
-                                          : day.answered > 0
-                                          ? 'bg-zinc-400 dark:bg-zinc-600'
-                                          : 'bg-transparent'
-                                      }`}
+                                            ? 'bg-emerald-500'
+                                            : day.answered > 0
+                                              ? 'bg-zinc-400 dark:bg-zinc-600'
+                                              : 'bg-transparent'
+                                        }`}
                                       style={{
                                         height: `${heightPercent}%`,
                                         backgroundColor: day.isToday
                                           ? accentConfig.primaryHex
                                           : isComplete
-                                          ? '#10b981'
-                                          : day.answered > 0
-                                          ? (accentConfig.primaryHex ? `${accentConfig.primaryHex}cc` : undefined)
-                                          : undefined
+                                            ? '#10b981'
+                                            : day.answered > 0
+                                              ? (accentConfig.primaryHex ? `${accentConfig.primaryHex}cc` : undefined)
+                                              : undefined
                                       }}
                                     />
                                   </div>
 
                                   {/* Label do Dia da Semana */}
                                   <span
-                                    className={`text-[10px] mt-1.5 font-sans leading-none ${
-                                      day.isToday
+                                    className={`text-[10px] mt-1.5 font-sans leading-none ${day.isToday
                                         ? 'font-bold font-sans'
                                         : day.answered > 0
-                                        ? 'text-zinc-700 dark:text-zinc-300 font-semibold'
-                                        : 'text-zinc-400 dark:text-zinc-500 font-medium'
-                                    }`}
+                                          ? 'text-zinc-700 dark:text-zinc-300 font-semibold'
+                                          : 'text-zinc-400 dark:text-zinc-500 font-medium'
+                                      }`}
                                     style={day.isToday ? { color: accentConfig.primaryHex } : undefined}
                                   >
                                     {day.isToday ? 'Hoje' : day.label}
@@ -3508,11 +3506,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                                   {/* Indicador de Frequência / Sequência Mesclada */}
                                   <span
-                                    className={`w-1 h-1 rounded-full mt-1 transition-colors ${
-                                      day.answered > 0
+                                    className={`w-1 h-1 rounded-full mt-1 transition-colors ${day.answered > 0
                                         ? 'bg-amber-500'
                                         : 'bg-zinc-200 dark:bg-zinc-800'
-                                    }`}
+                                      }`}
                                   />
                                 </div>
                               );
@@ -4458,7 +4455,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             );
           }
 
-          {/* Card: Dicas Rápidas & Pérolas de Decoreba Baseadas no Conteúdo Estudado */}
+          {/* Card: Dicas Rápidas & Pérolas de Decoreba Baseadas no Conteúdo Estudado */ }
           if (cardConfig.id === 'home_dicas') {
             return (
               <FigmaCardWrapper
@@ -6453,45 +6450,45 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                     {/* Cronograma Visual: Atividades em Sequência (Coluna Única e Sem Distrações) */}
                     <div className="w-full space-y-4">
-                        <GoogleCalendarScheduleView
-                          events={daySchedule}
-                          timelineFilter={timelineFilter}
-                          setTimelineFilter={setTimelineFilter}
-                          isGoogleCalendarConnected={isGoogleCalendarConnected}
-                          onOpenAddManual={() => setShowAddManualModal(true)}
-                          onOpenAiCommand={() => setShowAiCommandModal(true)}
-                          onOpenAiDrawer={() => setShowAiScheduleDrawer(true)}
-                          hasAiSuggestions={Boolean(scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0)}
-                          onSyncGoogle={handleSyncNow}
-                          isSyncingGoogle={isSyncingCalendar}
-                          onExportSlotToGoogle={handleExportSlotToGoogle}
-                          exportingSlotId={exportingSlotId}
-                          exportedSlotIds={exportedSlotIds}
-                          onRemoveTask={handleRemoveScheduledTask}
-                          onAction={(action, slot) => {
-                            if (action === 'treinar') {
-                              setActiveCentralDrawer(null);
-                              handlePracticeArea(recommendedArea.filterName);
-                            } else if (action === 'caderno_erros') {
-                              setActiveCentralDrawer('caderno_erros');
-                            } else if (action === 'flashcards') {
-                              setActiveCentralDrawer('flashcards');
-                            } else if (action === 'mnemonico') {
-                              if (isCustomizing) return;
-                              setActiveCentralDrawer('mnemonico_detalhado');
-                            } else if (action === 'simulado') {
-                              setActiveCentralDrawer(null);
-                              if (onStartSimuladoExpress) onStartSimuladoExpress(10);
-                            }
-                          }}
-                          cleanEventDescription={cleanEventDescription}
-                          isHospitalOrDutyEvent={isHospitalOrDutyEvent}
-                          primaryAccentHex={accentConfig.primaryHex}
-                          userScheduledTasks={userScheduledTasks}
-                          onSyncAllTasksToGoogle={handleSyncAllTasksToGoogle}
-                          onClearUserScheduledTasks={handleClearUserScheduledTasks}
-                          isBatchSyncing={isBatchSyncing}
-                        />
+                      <GoogleCalendarScheduleView
+                        events={daySchedule}
+                        timelineFilter={timelineFilter}
+                        setTimelineFilter={setTimelineFilter}
+                        isGoogleCalendarConnected={isGoogleCalendarConnected}
+                        onOpenAddManual={() => setShowAddManualModal(true)}
+                        onOpenAiCommand={() => setShowAiCommandModal(true)}
+                        onOpenAiDrawer={() => setShowAiScheduleDrawer(true)}
+                        hasAiSuggestions={Boolean(scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0)}
+                        onSyncGoogle={handleSyncNow}
+                        isSyncingGoogle={isSyncingCalendar}
+                        onExportSlotToGoogle={handleExportSlotToGoogle}
+                        exportingSlotId={exportingSlotId}
+                        exportedSlotIds={exportedSlotIds}
+                        onRemoveTask={handleRemoveScheduledTask}
+                        onAction={(action, slot) => {
+                          if (action === 'treinar') {
+                            setActiveCentralDrawer(null);
+                            handlePracticeArea(recommendedArea.filterName);
+                          } else if (action === 'caderno_erros') {
+                            setActiveCentralDrawer('caderno_erros');
+                          } else if (action === 'flashcards') {
+                            setActiveCentralDrawer('flashcards');
+                          } else if (action === 'mnemonico') {
+                            if (isCustomizing) return;
+                            setActiveCentralDrawer('mnemonico_detalhado');
+                          } else if (action === 'simulado') {
+                            setActiveCentralDrawer(null);
+                            if (onStartSimuladoExpress) onStartSimuladoExpress(10);
+                          }
+                        }}
+                        cleanEventDescription={cleanEventDescription}
+                        isHospitalOrDutyEvent={isHospitalOrDutyEvent}
+                        primaryAccentHex={accentConfig.primaryHex}
+                        userScheduledTasks={userScheduledTasks}
+                        onSyncAllTasksToGoogle={handleSyncAllTasksToGoogle}
+                        onClearUserScheduledTasks={handleClearUserScheduledTasks}
+                        isBatchSyncing={isBatchSyncing}
+                      />
                     </div>
                   </div>
                 );
@@ -6914,7 +6911,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <span>Passo ao abrir a janela do Google:</span>
                       </div>
                       <p className="leading-relaxed text-zinc-600 dark:text-zinc-400">
-                        Se aparecer a tela <em>"O Google não verificou este app"</em>, clique em <strong>"Avançado"</strong> (canto inferior esquerdo) e depois em <strong>"Acessar Banco Residência (não seguro)"</strong> para autorizar a sincronização.
+                        Se aparecer a tela <em>"O Google não verificou este app"</em>, clique em <strong>"Avançado"</strong> (canto inferior esquerdo) e depois em <strong>"Acessar Hippocampus (não seguro)"</strong> para autorizar a sincronização.
                       </p>
                     </div>
 
@@ -7418,7 +7415,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               .filter(s => !prevIds.has(s.id))
               .map(s => ({ ...s, isAiSuggested: true }));
             newItems.forEach((item) => {
-              saveUserScheduledTask(item, user?.id).catch(() => {});
+              saveUserScheduledTask(item, user?.id).catch(() => { });
             });
             return [...prev, ...newItems];
           });

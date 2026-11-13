@@ -78,8 +78,8 @@ function HomeContent() {
         planParam && PLANS[planParam]
           ? planParam
           : storedPlan && PLANS[storedPlan]
-          ? storedPlan
-          : null;
+            ? storedPlan
+            : null;
 
       if (targetPlanId && PLANS[targetPlanId]) {
         const planDef = PLANS[targetPlanId];
@@ -91,7 +91,7 @@ function HomeContent() {
           }
         }
       }
-    } catch {}
+    } catch { }
   }, [isAuthenticated, user, searchParams]);
 
   // 3. Encaminha usuários autenticados para o Dashboard ou Checkout
@@ -172,9 +172,9 @@ export default function RootHomePage() {
       fallback={
         <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
           <div className="flex flex-col items-center gap-3">
-            <Logo className="w-12 h-12 shrink-0 animate-pulse" glow />
+            <Logo className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 animate-pulse" glow />
             <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
-              Carregando Banco Residência...
+              Carregando Hippocampus...
             </span>
           </div>
         </div>

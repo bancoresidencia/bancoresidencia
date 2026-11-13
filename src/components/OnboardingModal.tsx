@@ -289,16 +289,19 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
       <div className="relative w-full max-w-2xl bg-white dark:bg-[#16171a] border border-slate-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
-        
+
         {/* Barra Superior com Progresso */}
         <div className="p-4 sm:p-6 border-b border-slate-100 dark:border-zinc-800/80 bg-slate-50/70 dark:bg-zinc-900/40 shrink-0">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <Logo className="w-9 h-9 shrink-0" />
+              <Logo className="w-10 h-10 shrink-0" />
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-extrabold text-slate-900 dark:text-white">
-                    Banco Residência
+                  <span
+                    className="text-sm sm:text-[15px] font-bold text-slate-900 dark:text-white tracking-[-0.6px]"
+                    style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
+                  >
+                    Hippocampus
                   </span>
                   <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
                     Onboarding
@@ -316,13 +319,12 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                 {[1, 2, 3, 4, 5, 6, 7].map((s) => (
                   <div
                     key={s}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${
-                      s === currentStep
+                    className={`h-1.5 rounded-full transition-all duration-300 ${s === currentStep
                         ? 'w-6 shadow-xs'
                         : s < currentStep
-                        ? 'w-2 bg-emerald-500'
-                        : 'w-2 bg-slate-200 dark:bg-zinc-800'
-                    }`}
+                          ? 'w-2 bg-emerald-500'
+                          : 'w-2 bg-slate-200 dark:bg-zinc-800'
+                      }`}
                     style={s === currentStep ? { backgroundColor: accentConfig.primaryHex } : {}}
                   />
                 ))}
@@ -342,7 +344,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
 
         {/* Corpo do Passo com Scroll */}
         <div className="p-6 sm:p-8 overflow-y-auto flex-1">
-          
+
           {/* ======================================================== */}
           {/* PASSO 1: Quem te indicou (Código de Indicação)           */}
           {/* ======================================================== */}
@@ -353,7 +355,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   <Gift className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white tracking-tight">
-                  Alguém te indicou o Banco Residência?
+                  Alguém te indicou o Hippocampus?
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1.5">
                   Se um amigo, colega ou embaixador te recomendou a plataforma, registre o código para garantir{' '}
@@ -367,11 +369,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   <button
                     type="button"
                     onClick={() => setHasReferralCode(true)}
-                    className={`p-4 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
-                      hasReferralCode === true
+                    className={`p-4 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${hasReferralCode === true
                         ? 'border-2 bg-amber-50/50 dark:bg-amber-950/20 shadow-sm'
                         : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/40 dark:bg-zinc-900/30'
-                    }`}
+                      }`}
                     style={hasReferralCode === true ? { borderColor: accentConfig.primaryHex } : {}}
                   >
                     <div className="flex items-center justify-between mb-1">
@@ -391,11 +392,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       setHasReferralCode(false);
                       handleSkipReferral();
                     }}
-                    className={`p-4 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
-                      hasReferralCode === false
+                    className={`p-4 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${hasReferralCode === false
                         ? 'border-2 bg-slate-100 dark:bg-zinc-800 shadow-sm'
                         : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/40 dark:bg-zinc-900/30'
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-extrabold text-sm text-slate-900 dark:text-white">
@@ -404,7 +404,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       {hasReferralCode === false && <Check className="w-4 h-4 text-slate-500" />}
                     </div>
                     <p className="text-[11px] text-slate-500 dark:text-slate-400">
-                      Conheci o Banco Residência de outra forma.
+                      Conheci o Hippocampus de outra forma.
                     </p>
                   </button>
                 </div>
@@ -513,11 +513,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       key={item.id}
                       type="button"
                       onClick={() => setObjective(item.id as typeof objective)}
-                      className={`p-4 rounded-2xl border text-left transition-all relative flex flex-col justify-between cursor-pointer ${
-                        isSelected
+                      className={`p-4 rounded-2xl border text-left transition-all relative flex flex-col justify-between cursor-pointer ${isSelected
                           ? 'border-2 bg-blue-50/50 dark:bg-blue-950/20 shadow-md'
                           : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/30 dark:bg-zinc-900/30'
-                      }`}
+                        }`}
                       style={isSelected ? { borderColor: accentConfig.primaryHex } : {}}
                     >
                       <div>
@@ -587,11 +586,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         key={c}
                         type="button"
                         onClick={() => setCollegeInput(c)}
-                        className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs transition-colors flex items-center justify-between cursor-pointer ${
-                          isSelected
+                        className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs transition-colors flex items-center justify-between cursor-pointer ${isSelected
                             ? 'bg-blue-50 dark:bg-blue-950/30 font-bold text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900'
                             : 'hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-slate-300'
-                        }`}
+                          }`}
                       >
                         <span className="truncate">{c}</span>
                         {isSelected && <Check className="w-3.5 h-3.5 shrink-0 ml-2" />}
@@ -667,11 +665,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       key={item.id}
                       type="button"
                       onClick={() => setDeadline(item.id)}
-                      className={`p-4 rounded-2xl border text-left transition-all flex flex-col justify-between cursor-pointer ${
-                        isSelected
+                      className={`p-4 rounded-2xl border text-left transition-all flex flex-col justify-between cursor-pointer ${isSelected
                           ? 'border-2 bg-amber-50/40 dark:bg-amber-950/20 shadow-md'
                           : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/30 dark:bg-zinc-900/30'
-                      }`}
+                        }`}
                       style={isSelected ? { borderColor: accentConfig.primaryHex } : {}}
                     >
                       <div>
@@ -724,11 +721,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         key={inst}
                         type="button"
                         onClick={() => setSelectedExamInst(inst)}
-                        className={`text-xs px-3 py-1.5 rounded-full font-bold transition-all cursor-pointer ${
-                          isSelected
+                        className={`text-xs px-3 py-1.5 rounded-full font-bold transition-all cursor-pointer ${isSelected
                             ? 'bg-emerald-600 text-white shadow-xs'
                             : 'bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-zinc-700'
-                        }`}
+                          }`}
                       >
                         {inst}
                       </button>
@@ -755,11 +751,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         key={inst.id}
                         type="button"
                         onClick={() => setSelectedExamInst(inst.shortName)}
-                        className={`w-full text-left p-3 rounded-xl text-xs transition-all flex items-center justify-between cursor-pointer ${
-                          isSelected
+                        className={`w-full text-left p-3 rounded-xl text-xs transition-all flex items-center justify-between cursor-pointer ${isSelected
                             ? 'bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/80'
                             : 'hover:bg-slate-100 dark:hover:bg-zinc-800/60'
-                        }`}
+                          }`}
                       >
                         <div className="min-w-0 pr-2">
                           <div className="flex items-center gap-2">
@@ -817,11 +812,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                 <button
                   type="button"
                   onClick={() => setSpecialty('Ainda não sei / vou decidir depois')}
-                  className={`w-full p-3 rounded-xl border text-xs font-bold transition-all cursor-pointer flex items-center justify-between ${
-                    specialty === 'Ainda não sei / vou decidir depois'
+                  className={`w-full p-3 rounded-xl border text-xs font-bold transition-all cursor-pointer flex items-center justify-between ${specialty === 'Ainda não sei / vou decidir depois'
                       ? 'border-2 border-rose-500 bg-rose-50/50 dark:bg-rose-950/20 text-rose-700 dark:text-rose-300'
                       : 'border-slate-200 dark:border-zinc-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-zinc-800'
-                  }`}
+                    }`}
                 >
                   <span>Ainda não sei / vou decidir depois</span>
                   {specialty === 'Ainda não sei / vou decidir depois' && <Check className="w-4 h-4 text-rose-500" />}
@@ -846,11 +840,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         key={spec}
                         type="button"
                         onClick={() => setSpecialty(spec)}
-                        className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs transition-colors flex items-center justify-between cursor-pointer ${
-                          isSelected
+                        className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs transition-colors flex items-center justify-between cursor-pointer ${isSelected
                             ? 'bg-rose-50 dark:bg-rose-950/30 font-bold text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900'
                             : 'hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-slate-300'
-                        }`}
+                          }`}
                       >
                         <span>{spec}</span>
                         {isSelected && <Check className="w-3.5 h-3.5 shrink-0 ml-2" />}
@@ -880,7 +873,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               </div>
 
               <div className="max-w-lg mx-auto bg-slate-50 dark:bg-zinc-900/60 border border-slate-200 dark:border-zinc-800 rounded-2xl p-5 space-y-3.5">
-                
+
                 {/* 1. Indicação */}
                 <div className="flex items-center justify-between gap-3 pb-2.5 border-b border-slate-200 dark:border-zinc-800">
                   <div className="flex items-center gap-2.5 text-xs text-slate-500 dark:text-slate-400">

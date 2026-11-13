@@ -205,11 +205,13 @@ export function getSpecialtyGuideline(specialty, tema) {
   return 'Você é um Preceptor Médico de elite especialista em provas de Residência Médica e Revalida no Brasil. Fundamente com a literatura médica de referência e diretrizes das sociedades oficiais de especialidade.';
 }
 
-// Modelos prioritários em rotação gratuita
+// Modelos prioritários em rotação gratuita com fallback automático
 export const AVAILABLE_MODELS = [
   'gemini-3.5-flash-lite',
   'gemini-3.1-flash-lite',
-  'gemini-flash-lite-latest'
+  'gemini-flash-lite-latest',
+  'gemini-3.5-flash',
+  'gemini-3.6-flash'
 ];
 
 const exhaustedPairs = new Set();
