@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${plusJakartaSans.variable} ${inter.variable} ${bebasNeue.variable} font-sans h-full antialiased dark`}
+      className={`${plusJakartaSans.variable} ${inter.variable} ${bebasNeue.variable} font-sans h-full antialiased dark hippo-splash-active`}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans transition-colors duration-200">

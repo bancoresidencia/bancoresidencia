@@ -1169,39 +1169,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             Total:
           </span>
 
-          <div className="relative inline-flex items-center gap-2 py-0.5 px-1 rounded-xl">
-            {/* Micro-indicador de atividade dinâmico (zero layout shift) */}
-            <div
-              className="relative flex items-center justify-center w-2 h-2 shrink-0"
-              title={isFilterActive ? "Calculando intersecção dinâmica..." : "Filtro sincronizado"}
-            >
-              <span
-                className={`absolute inset-0 rounded-full transition-all duration-300 ${isFilterActive ? 'animate-ping opacity-75 scale-125' : 'opacity-0 scale-50'
-                  }`}
-                style={{ backgroundColor: accentConfig.primaryHex }}
-              />
-              <span
-                className={`relative rounded-full transition-all duration-300 ${isFilterActive
-                    ? 'w-2 h-2 scale-100'
-                    : 'w-1.5 h-1.5 opacity-30 hover:opacity-60 scale-90'
-                  }`}
-                style={{
-                  backgroundColor: isFilterActive ? accentConfig.primaryHex : 'currentColor',
-                  boxShadow: isFilterActive ? `0 0 10px ${accentConfig.primaryHex}` : undefined
-                }}
-              />
-            </div>
-
+          <div
+            className="relative inline-flex items-center py-0.5 px-1 rounded-xl"
+            title={isFilterActive ? "Calculando intersecção dinâmica..." : "Filtro sincronizado"}
+          >
             {/* Número Dinâmico com Interpolação Suave */}
             <div className="relative flex flex-col items-end">
               <span
                 className={`text-2xl sm:text-3xl font-black tracking-tight font-sans tabular-nums transition-all duration-300 ease-out select-none ${isFilterActive
-                    ? 'text-zinc-800 dark:text-zinc-100 opacity-90 scale-[0.99]'
-                    : 'text-zinc-900 dark:text-white opacity-100 scale-100'
+                    ? 'text-zinc-700 dark:text-zinc-200 opacity-80'
+                    : 'text-zinc-900 dark:text-white opacity-100'
                   }`}
-                style={{
-                  filter: isFilterActive ? `drop-shadow(0 0 12px ${accentConfig.bgRgba})` : 'none'
-                }}
               >
                 {animatedCount.toLocaleString('pt-BR')}
               </span>
@@ -1209,12 +1187,16 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               {/* Shimmer ultra-fino dinâmico na base (zero layout shift) */}
               <div className="absolute -bottom-1 left-0 right-0 h-[2px] rounded-full overflow-hidden pointer-events-none">
                 <div
-                  className={`h-full w-full transition-opacity duration-300 ${isFilterActive ? 'opacity-100 animate-pulse' : 'opacity-0'
+                  className={`h-full w-full transition-opacity duration-300 ${isFilterActive ? 'opacity-100' : 'opacity-0'
                     }`}
-                  style={{
-                    background: `linear-gradient(90deg, transparent 0%, ${accentConfig.primaryHex} 50%, transparent 100%)`
-                  }}
-                />
+                >
+                  <div
+                    className="h-full w-3/5 rounded-full animate-beam-slide"
+                    style={{
+                      background: `linear-gradient(90deg, transparent 0%, ${accentConfig.primaryHex} 50%, transparent 100%)`
+                    }}
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -43,8 +43,28 @@
   animation: flash-sweep 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+@keyframes beam-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-beam-slide {
+  animation: beam-slide 1.3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
 html {
   -webkit-tap-highlight-color: transparent;
+}
+
+/* Isolamento do layout da aplicação durante a Splash Screen do Hippocampus (zero jank na GPU/CPU) */
+html.hippo-splash-active .hippo-main-app-content {
+  content-visibility: hidden !important;
+  contain-intrinsic-size: 1px 5000px;
+  pointer-events: none;
 }
 
 :root {
