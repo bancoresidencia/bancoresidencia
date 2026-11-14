@@ -78,6 +78,39 @@ async function getStats() {
     } catch (e) {}
   }
 
+  // 4.2 Pipeline Status & Staging Fases
+  let pipelineStatus = {
+    workers: [
+      { id: 1, name: 'Worker 1 (Fase 1: Provas Oficiais)', status: 'ativo', loteAtual: 'FUBOG (Edital 43)', vazao: '100 Qs/bloco' },
+      { id: 2, name: 'Worker 2 (Fase 2: Sanar & Estratégia)', status: 'ativo', loteAtual: 'Enunciado + Alternativa', vazao: '25 req/min' },
+      { id: 3, name: 'Worker 3 (Fase 2: QConcursos & Web)', status: 'ativo', loteAtual: 'Fallback: Enunciado Inteiro', vazao: '25 req/min' },
+      { id: 4, name: 'Worker 4 (Auditoria Dupla Trava)', status: 'ativo', loteAtual: 'Cálculo Dual-Gate >= 85%', vazao: 'Tempo Real' }
+    ],
+    stats: {
+      fase1Homologadas: 0,
+      fase2Homologadas: 0,
+      errosHttp429: 0,
+      taxaSaudavel: '100% OK (Zero 429)',
+      modoBuscaFase2: '1º Enunciado Inteiro + Alternativa -> 2º Só Enunciado Inteiro (Fallback)'
+    }
+  };
+  const pipePath = path.resolve('data/pipeline_status.json');
+  if (fs.existsSync(pipePath)) {
+    try { pipelineStatus = JSON.parse(fs.readFileSync(pipePath, 'utf8')); } catch (e) {}
+  }
+
+  let stagingFase1 = [];
+  const f1Path = path.resolve('data/staging_fase1_oficiais.json');
+  if (fs.existsSync(f1Path)) {
+    try { stagingFase1 = JSON.parse(fs.readFileSync(f1Path, 'utf8')); } catch (e) {}
+  }
+
+  let stagingFase2 = [];
+  const f2Path = path.resolve('data/staging_fase2_web.json');
+  if (fs.existsSync(f2Path)) {
+    try { stagingFase2 = JSON.parse(fs.readFileSync(f2Path, 'utf8')); } catch (e) {}
+  }
+
   // 5. Diagnóstico de pendências
   let topInst = [
     { name: 'HMMSJP (São José dos Pinhais - PR)', pend: 271, total: 583 },
@@ -108,6 +141,11 @@ async function getStats() {
     twinsCount,
     twinsPreview: twinsPreview.slice(0, 15),
     topInst,
+    pipelineStatus,
+    stagingFase1Count: stagingFase1.length,
+    stagingFase2Count: stagingFase2.length,
+    stagingFase1Sample: stagingFase1.slice(-10),
+    stagingFase2Sample: stagingFase2.slice(-10),
     byYear: {
       '2026': 2416,
       '2025': 1480,
@@ -370,6 +408,83 @@ const server = http.createServer(async (req, res) => {
       </div>
     </div>
 
+    <!-- SISTEMA CONTÍNUO DE RESOLUÇÃO (DUPLA FASE) COM 4 WORKERS -->
+    <div class="card-glass rounded-2xl p-6 border border-emerald-500/30 glow-green">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800 pb-4">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <h3 class="text-base font-bold text-white flex items-center gap-2">
+              <i data-lucide="zap" class="w-5 h-5 text-emerald-400"></i>
+              Sistema Contínuo de Resolução (Dupla Fase) & 4 Workers Ativos
+            </h3>
+          </div>
+          <p class="text-xs text-gray-400 mt-1">
+            <strong>Fase 1:</strong> Provas Oficiais em Bloco | <strong>Fase 2:</strong> Busca Web Granular (Sanar / Estratégia / QConcursos) com Anti-429
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold" id="anti-429-badge">
+            🛡️ Anti-429: 0 Erros (Jitter 2.0s-3.5s)
+          </span>
+          <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold">
+            Modo: 1º Enunciado+Alt &rarr; 2º Enunciado
+          </span>
+        </div>
+      </div>
+
+      <!-- Grid dos 4 Workers -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
+        <div class="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-white flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> Worker 1</span>
+            <span class="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">Fase 1 Oficiais</span>
+          </div>
+          <p class="text-xs text-gray-300 mt-2 font-medium">Cadernos e Gabaritos em Bloco</p>
+          <div class="mt-3 text-[11px] text-gray-400 flex justify-between border-t border-gray-800/60 pt-2">
+            <span>Homologadas:</span>
+            <span class="text-emerald-400 font-bold font-mono" id="worker1-count">0</span>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-white flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-cyan-400"></span> Worker 2</span>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-500/10 px-1.5 py-0.5 rounded">Sanar & Estratégia</span>
+          </div>
+          <p class="text-xs text-gray-300 mt-2 font-medium">1º Enunciado Inteiro + Alternativa</p>
+          <div class="mt-3 text-[11px] text-gray-400 flex justify-between border-t border-gray-800/60 pt-2">
+            <span>Homologadas:</span>
+            <span class="text-cyan-400 font-bold font-mono" id="worker2-count">0</span>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-white flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-indigo-400"></span> Worker 3</span>
+            <span class="text-[10px] font-mono text-indigo-400 bg-indigo-500/10 px-1.5 py-0.5 rounded">QConcursos & Web</span>
+          </div>
+          <p class="text-xs text-gray-300 mt-2 font-medium">2º Fallback: Enunciado Inteiro</p>
+          <div class="mt-3 text-[11px] text-gray-400 flex justify-between border-t border-gray-800/60 pt-2">
+            <span>Homologadas:</span>
+            <span class="text-indigo-400 font-bold font-mono" id="worker3-count">0</span>
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-xl bg-gray-900/60 border border-gray-800">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-white flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-purple-400"></span> Worker 4</span>
+            <span class="text-[10px] font-mono text-purple-400 bg-purple-500/10 px-1.5 py-0.5 rounded">Dupla Trava</span>
+          </div>
+          <p class="text-xs text-gray-300 mt-2 font-medium">Dual-Gate ≥ 85% + Quarentena</p>
+          <div class="mt-3 text-[11px] text-gray-400 flex justify-between border-t border-gray-800/60 pt-2">
+            <span>Total em Staging:</span>
+            <span class="text-purple-400 font-bold font-mono" id="total-staging-count">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Table Section -->
     <div class="card-glass rounded-2xl overflow-hidden border border-gray-800">
       <div class="p-6 border-b border-gray-800 flex flex-wrap items-center justify-between gap-4">
@@ -430,6 +545,22 @@ const server = http.createServer(async (req, res) => {
       }
       if (document.getElementById('twins-count')) {
         document.getElementById('twins-count').innerText = data.twinsCount || 188;
+      }
+      if (document.getElementById('worker1-count')) {
+        document.getElementById('worker1-count').innerText = data.stagingFase1Count || 0;
+      }
+      if (document.getElementById('worker2-count')) {
+        document.getElementById('worker2-count').innerText = data.stagingFase2Count || 0;
+      }
+      if (document.getElementById('worker3-count')) {
+        document.getElementById('worker3-count').innerText = data.staging85Count || 0;
+      }
+      if (document.getElementById('total-staging-count')) {
+        document.getElementById('total-staging-count').innerText = (data.stagingFase1Count || 0) + (data.stagingFase2Count || 0) + (data.staging85Count || 0);
+      }
+      if (document.getElementById('anti-429-badge')) {
+        var errs = (data.pipelineStatus && data.pipelineStatus.stats && data.pipelineStatus.stats.errosHttp429) || 0;
+        document.getElementById('anti-429-badge').innerText = '🛡️ Anti-429: ' + errs + ' Erros (Jitter 2.0s-3.5s)';
       }
 
       renderCharts(data);

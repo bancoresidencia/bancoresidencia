@@ -4,11 +4,12 @@ import React, { useEffect, useState } from 'react';
 
 /**
  * Splash Screen Global Oficial do Hippocampus • Questões de Residência
- * 1. Simbologia nasce perfeitamente no centro absoluto da tela e se desenha em crescente da DIREITA para a ESQUERDA (0.0s a 0.85s).
- * 2. Transição orgânica (0.70s a 1.25s): a logo desliza suavemente para a esquerda enquanto o texto emerge para a direita.
- * 3. Máscara gradiente alfa de esvaecimento (zero corte reto, zero quadrado rígido).
- * 4. Repouso relâmpago de 150ms (1.25s a 1.40s).
- * 5. Fade-out ultra-suave (300ms) liberando a plataforma instantaneamente aos ~1.70s.
+ * 1. Simbologia nasce perfeitamente no centro absoluto da tela e se desenha em crescente da DIREITA para a ESQUERDA (0.0s a 2.8s) de forma majestosa, suave e lenta.
+ * 2. Transição orgânica (2.2s a 3.3s): a logo desliza suavemente para a esquerda enquanto o texto emerge de trás dela para a direita com opacidade gradual e zero quinas rígidas.
+ * 3. Caixa ao redor da logo com menor largura cirúrgica (viewBox 185 210 1790 1500 sem espaços vazios laterais).
+ * 4. Distância e gap milimétricos alinhados rigorosamente à referência oficial do Hippocampus (gap 10px / 12px).
+ * 5. Repouso estático encurtado (apenas 200ms de repouso entre 3.30s e 3.50s).
+ * 6. Fade-out ultra-suave (350ms) liberando a aplicação aos 3.85s e desmontando aos 3.90s.
  */
 export const HippocampusGlobalSplash: React.FC = () => {
   const [isFadingOut, setIsFadingOut] = useState(false);
@@ -18,20 +19,20 @@ export const HippocampusGlobalSplash: React.FC = () => {
     // Garante isolamento da aplicação de fundo durante o traçado inicial
     document.documentElement.classList.add('hippo-splash-active');
 
-    // Libera a renderização da aplicação aos 1.30s para transição 100% suave
+    // Libera a renderização da aplicação aos 3.30s quando a logo e o texto terminam de se montar
     const prepareBgTimer = setTimeout(() => {
       document.documentElement.classList.remove('hippo-splash-active');
-    }, 1300);
+    }, 3300);
 
-    // Dispara o fade-out rápido aos 1.40s
+    // Dispara o fade-out rápido aos 3.50s (após repouso estático ágil de 200ms)
     const fadeTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 1400);
+    }, 3500);
 
-    // Desmonta aos 1.70s
+    // Desmonta aos 3.90s
     const destroyTimer = setTimeout(() => {
       setIsDestroyed(true);
-    }, 1700);
+    }, 3900);
 
     return () => {
       document.documentElement.classList.remove('hippo-splash-active');
@@ -47,14 +48,24 @@ export const HippocampusGlobalSplash: React.FC = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#09090b] text-white select-none transition-opacity duration-300 ease-in-out ${
+      className={`fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#09090b] text-white select-none transition-opacity duration-350 ease-in-out ${
         isFadingOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       role="status"
       aria-label="Carregando Hippocampus"
     >
       <style>{`
-        /* 1. Traçado da Linha Externa (0.0s a 0.85s) */
+        :root {
+          --hippo-shift: 105px;
+        }
+
+        @media (max-width: 640px) {
+          :root {
+            --hippo-shift: 85px;
+          }
+        }
+
+        /* 1. Traçado da Linha Externa (0.0s a 2.8s) suave e calmo */
         @keyframes splashOuterDraw {
           0% {
             stroke-dashoffset: 4157;
@@ -64,7 +75,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* 2. Traçado da Linha Interna (0.05s a 0.80s) */
+        /* 2. Traçado da Linha Interna (0.12s a 2.72s) suave e sincronizado */
         @keyframes splashInnerDraw {
           0% {
             stroke-dashoffset: -2217;
@@ -74,44 +85,28 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* 3. Deslocamento suave do bloco do centro da tela para a esquerda (0.70s a 1.25s) */
+        /* 3. Deslocamento suave do bloco do centro da tela para a esquerda (2.2s a 3.3s) */
         @keyframes splashShiftLeft {
           0% {
-            transform: translate3d(130px, 0, 0);
+            transform: translate3d(var(--hippo-shift), 0, 0);
           }
           100% {
             transform: translate3d(0, 0, 0);
           }
         }
 
-        /* 4. Deslizamento do texto saindo de trás da logo para a direita (0.70s a 1.25s) */
+        /* 4. Deslizamento e revelação orgânica do texto saindo de trás da logo (2.2s a 3.3s) */
         @keyframes splashTextReveal {
           0% {
-            transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-60px, 0, 0);
             opacity: 0;
           }
-          20% {
-            opacity: 0.8;
+          35% {
+            opacity: 0.6;
           }
           100% {
             transform: translate3d(0, 0, 0);
             opacity: 1;
-          }
-        }
-
-        /* 5. Máscara gradiente com fade suave na saída (elimina corte reto e quinas duras) */
-        @keyframes splashMaskTransition {
-          0% {
-            mask-image: linear-gradient(to right, transparent 0px, transparent 15px, rgba(0,0,0,1) 50px, rgba(0,0,0,1) 100%);
-            -webkit-mask-image: linear-gradient(to right, transparent 0px, transparent 15px, rgba(0,0,0,1) 50px, rgba(0,0,0,1) 100%);
-          }
-          85% {
-            mask-image: linear-gradient(to right, transparent 0px, rgba(0,0,0,1) 20px, rgba(0,0,0,1) 100%);
-            -webkit-mask-image: linear-gradient(to right, transparent 0px, rgba(0,0,0,1) 20px, rgba(0,0,0,1) 100%);
-          }
-          100% {
-            mask-image: none;
-            -webkit-mask-image: none;
           }
         }
 
@@ -120,7 +115,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           stroke-dashoffset: 4157;
           will-change: stroke-dashoffset;
           shape-rendering: geometricPrecision;
-          animation: splashOuterDraw 0.85s cubic-bezier(0.35, 0.0, 0.15, 1.0) forwards;
+          animation: splashOuterDraw 2.8s cubic-bezier(0.35, 0.0, 0.15, 1.0) forwards;
         }
 
         .hippo-splash-path-inner {
@@ -128,47 +123,37 @@ export const HippocampusGlobalSplash: React.FC = () => {
           stroke-dashoffset: -2217;
           will-change: stroke-dashoffset;
           shape-rendering: geometricPrecision;
-          animation: splashInnerDraw 0.80s cubic-bezier(0.35, 0.0, 0.15, 1.0) 0.05s forwards;
+          animation: splashInnerDraw 2.6s cubic-bezier(0.35, 0.0, 0.15, 1.0) 0.12s forwards;
         }
 
         .hippo-splash-container {
           display: flex;
           align-items: center;
-          gap: 18px;
           position: relative;
           will-change: transform;
-          animation: splashShiftLeft 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.70s forwards;
-          transform: translate3d(130px, 0, 0); /* Inicia com a logo no centro exato da tela */
+          animation: splashShiftLeft 1.1s cubic-bezier(0.16, 1, 0.3, 1) 2.2s forwards;
+          transform: translate3d(var(--hippo-shift), 0, 0);
         }
 
-        .hippo-splash-mask {
-          overflow: hidden;
-          padding: 4px 6px;
-          animation: splashMaskTransition 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.70s forwards;
-        }
-
-        .hippo-splash-slider {
-          transform: translate3d(-100%, 0, 0);
+        .hippo-splash-text-anim {
+          transform: translate3d(-60px, 0, 0);
           opacity: 0;
           will-change: transform, opacity;
-          animation: splashTextReveal 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.70s forwards;
+          animation: splashTextReveal 1.1s cubic-bezier(0.16, 1, 0.3, 1) 2.2s forwards;
         }
       `}</style>
 
       {/* Container Principal da Marca com Translação Inicial no Centro */}
-      <div className="hippo-splash-container">
-        {/* Simbologia (2 Linhas com bordas retas originais stroke-linecap="butt", em z-index superior ao texto) */}
-        <div style={{ position: 'relative', zIndex: 10 }}>
+      <div className="hippo-splash-container gap-[10px] sm:gap-[12px]">
+        {/* Simbologia (2 Linhas com bordas retas originais stroke-linecap="butt", viewBox justo sem caixa larga) */}
+        <div style={{ position: 'relative', zIndex: 10, display: 'flex', alignItems: 'center' }}>
           <svg
-            viewBox="0 0 2160 1920"
+            viewBox="185 210 1790 1500"
             style={{
-              width: '84px',
-              height: '74px',
-              minWidth: '84px',
               transform: 'translate3d(0, 0, 0)',
               backfaceVisibility: 'hidden'
             }}
-            className="shrink-0 overflow-visible"
+            className="w-[64px] h-[54px] sm:w-[76px] sm:h-[63px] shrink-0"
             shapeRendering="geometricPrecision"
             aria-hidden="true"
           >
@@ -198,17 +183,17 @@ export const HippocampusGlobalSplash: React.FC = () => {
           </svg>
         </div>
 
-        {/* Máscara de revelação do texto: desliza saindo de trás do símbolo com esvaecimento gradiente suave */}
-        <div className="hippo-splash-mask" style={{ position: 'relative', zIndex: 1 }}>
-          <div className="hippo-splash-slider flex flex-col">
+        {/* Revelação suave do texto saindo de trás da logo com gap preciso */}
+        <div style={{ position: 'relative', zIndex: 1 }}>
+          <div className="hippo-splash-text-anim flex flex-col">
             <span
-              className="font-black text-3xl sm:text-4xl text-white tracking-[-0.035em] leading-none"
+              className="font-black text-2xl sm:text-4xl text-white tracking-[-0.035em] leading-none"
               style={{ fontFamily: 'var(--font-inter), Inter, system-ui, -apple-system, sans-serif' }}
             >
               Hippocampus
             </span>
             <span
-              className="text-[9px] sm:text-[11px] uppercase text-zinc-300 whitespace-nowrap leading-none mt-2"
+              className="text-[7.5px] sm:text-[10px] uppercase text-zinc-300 whitespace-nowrap leading-none mt-1.5 sm:mt-2"
               style={{
                 fontFamily: 'var(--font-inter), Inter, system-ui, -apple-system, sans-serif',
                 fontWeight: 200,

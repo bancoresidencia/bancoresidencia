@@ -716,8 +716,10 @@ export const QuestoesView: React.FC = () => {
 
   return (
     <div
-      className={`max-w-7xl mx-auto space-y-4 animate-in fade-in duration-200 px-3 sm:px-6 lg:px-8 ${
-        bancoMode === 'filtros' ? 'pt-2 sm:pt-3 lg:pt-3 pb-24 md:pb-20' : 'p-4 sm:p-6 lg:p-8'
+      className={`max-w-7xl mx-auto animate-in fade-in duration-200 px-3 sm:px-6 lg:px-8 ${
+        bancoMode === 'filtros'
+          ? 'pt-3 pb-24 lg:pb-[74px] lg:h-[calc(100dvh-4rem)] lg:overflow-hidden flex flex-col'
+          : 'p-4 sm:p-6 lg:p-8 space-y-4'
       }`}
     >
       {/* Caderno Ativo (se houver) */}
@@ -744,7 +746,7 @@ export const QuestoesView: React.FC = () => {
 
       {/* MODO 1: FILTROS SEPARADOS DAS QUESTÕES */}
       {bancoMode === 'filtros' ? (
-        <div className="space-y-4">
+        <div className="flex-1 min-h-0 flex flex-col">
           <AdvancedQuestionFilters
             filters={advancedFilters}
             onChange={(newFilters) => {

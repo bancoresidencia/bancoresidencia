@@ -31,8 +31,10 @@ export async function GET(req: NextRequest) {
       );
     }
 
-    // 2. Busca eventos do Google Calendar
-    const events = await fetchTodayGoogleEvents(accessToken);
+    // 2. Busca eventos do Google Calendar em janela ampla de datas
+    const timeMin = req.nextUrl.searchParams.get('timeMin') || undefined;
+    const timeMax = req.nextUrl.searchParams.get('timeMax') || undefined;
+    const events = await fetchTodayGoogleEvents(accessToken, timeMin, timeMax);
 
     // 3. Atualiza timestamp de última sincronização
     await supabase

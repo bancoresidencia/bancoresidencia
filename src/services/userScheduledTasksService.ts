@@ -54,6 +54,7 @@ export async function loadUserScheduledTasks(userId?: string | null): Promise<Da
     } catch {
       localTasks = [];
     }
+    localTasks = localTasks.filter((t) => !t.isAiSuggested && !t.id.startsWith('ai_sug_'));
   }
 
   // Sincronização remota quando autenticado
@@ -86,7 +87,7 @@ export async function loadUserScheduledTasks(userId?: string | null): Promise<Da
 
         const remoteIds = new Set(remoteTasks.map((t) => t.id));
         const missingOnRemote = localTasks.filter((t) => !remoteIds.has(t.id));
-        const merged = [...remoteTasks, ...missingOnRemote];
+        const merged = [...remoteTasks.filter((t) => !t.isAiSuggested && !t.id.startsWith('ai_sug_')), ...missingOnRemote];
 
         if (typeof window !== 'undefined') {
           localStorage.setItem(key, JSON.stringify(merged));

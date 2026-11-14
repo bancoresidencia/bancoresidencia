@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { title, startTime, endTime, description, location } = body;
+    const { title, startTime, endTime, description, location, date } = body;
 
     if (!title || !startTime || !endTime) {
       return NextResponse.json(
@@ -36,7 +36,8 @@ export async function POST(req: NextRequest) {
       startTime,
       endTime,
       description: description || '',
-      location
+      location,
+      date
     });
 
     return NextResponse.json({

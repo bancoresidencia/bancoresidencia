@@ -187,21 +187,30 @@ export async function fetchGoogleAccountEmail(accessToken: string): Promise<stri
 }
 
 // ── 5. Busca Eventos de Hoje no Google Calendar ──
-export async function fetchTodayGoogleEvents(accessToken: string): Promise<DailyScheduleSlot[]> {
+// ── 5. Busca Eventos do Google Calendar (Abrangência Completa de Calendário) ──
+export async function fetchGoogleCalendarEvents(
+  accessToken: string,
+  timeMinParam?: string,
+  timeMaxParam?: string
+): Promise<DailyScheduleSlot[]> {
   const now = new Date();
-  const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0).toISOString();
-  const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).toISOString();
+  // Janela padrão ampla: 30 dias atrás até 120 dias à frente (cobre múltiplos meses e visão anual/semanal)
+  const defaultMin = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString();
+  const defaultMax = new Date(now.getTime() + 120 * 24 * 60 * 60 * 1000).toISOString();
+
+  const timeMin = timeMinParam || defaultMin;
+  const timeMax = timeMaxParam || defaultMax;
 
   const url = `https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=${encodeURIComponent(
-    startOfDay
-  )}&timeMax=${encodeURIComponent(endOfDay)}&singleEvents=true&orderBy=startTime`;
+    timeMin
+  )}&timeMax=${encodeURIComponent(timeMax)}&singleEvents=true&orderBy=startTime&maxResults=2500`;
 
   const response = await fetch(url, {
     headers: {
       Authorization: `Bearer ${accessToken}`,
       Accept: 'application/json'
     },
-    signal: AbortSignal.timeout(10000)
+    signal: AbortSignal.timeout(12000)
   });
 
   if (!response.ok) {
@@ -218,6 +227,11 @@ export async function fetchTodayGoogleEvents(accessToken: string): Promise<Daily
 
     const startDate = startStr ? new Date(startStr) : new Date();
     const endDate = endStr ? new Date(endStr) : new Date(startDate.getTime() + 3600000);
+
+    const year = startDate.getFullYear();
+    const month = String(startDate.getMonth() + 1).padStart(2, '0');
+    const day = String(startDate.getDate()).padStart(2, '0');
+    const date = `${year}-${month}-${day}`;
 
     const startMinutes = startDate.getHours() * 60 + startDate.getMinutes();
     const endMinutes = endDate.getHours() * 60 + endDate.getMinutes();
@@ -238,6 +252,7 @@ export async function fetchTodayGoogleEvents(accessToken: string): Promise<Daily
       id: item.id || `google_api_${idx}`,
       title: summary,
       category,
+      date,
       startTime,
       endTime,
       startMinutes,
@@ -249,17 +264,35 @@ export async function fetchTodayGoogleEvents(accessToken: string): Promise<Daily
   });
 }
 
-// ── 6. Cria um Evento no Google Calendar Server-Side ──
+// Alias para compatibilidade
+export const fetchTodayGoogleEvents = fetchGoogleCalendarEvents;
+
+// ── 6. Cria um Evento no Google Calendar Server-Side (com suporte à data) ──
 export async function createGoogleCalendarEvent(
   accessToken: string,
-  event: { title: string; startTime: string; endTime: string; description: string; location?: string }
+  event: { title: string; startTime: string; endTime: string; description: string; location?: string; date?: string }
 ) {
-  const now = new Date();
   const [startH, startM] = event.startTime.split(':').map(Number);
   const [endH, endM] = event.endTime.split(':').map(Number);
 
-  const startDateTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), startH || 0, startM || 0, 0);
-  const endDateTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), endH || 0, endM || 0, 0);
+  let baseYear: number;
+  let baseMonth: number;
+  let baseDay: number;
+
+  if (event.date && event.date.includes('-')) {
+    const [y, m, d] = event.date.split('-').map(Number);
+    baseYear = y;
+    baseMonth = m - 1;
+    baseDay = d;
+  } else {
+    const now = new Date();
+    baseYear = now.getFullYear();
+    baseMonth = now.getMonth();
+    baseDay = now.getDate();
+  }
+
+  const startDateTime = new Date(baseYear, baseMonth, baseDay, startH || 0, startM || 0, 0);
+  const endDateTime = new Date(baseYear, baseMonth, baseDay, endH || 0, endM || 0, 0);
 
   const payload = {
     summary: event.title,
@@ -284,4 +317,22 @@ export async function createGoogleCalendarEvent(
   }
 
   return await response.json();
+}
+
+// ── 7. Exclui um Evento no Google Calendar Server-Side ──
+export async function deleteGoogleCalendarEvent(accessToken: string, eventId: string) {
+  const url = `https://www.googleapis.com/calendar/v3/calendars/primary/events/${encodeURIComponent(eventId)}`;
+  const response = await fetch(url, {
+    method: 'DELETE',
+    headers: {
+      Authorization: `Bearer ${accessToken}`
+    }
+  });
+
+  if (!response.ok && response.status !== 404 && response.status !== 410) {
+    const errorJson = await response.json().catch(() => ({}));
+    throw new Error(errorJson.error?.message || `Erro ${response.status} ao excluir evento no Google Calendar.`);
+  }
+
+  return { success: true };
 }

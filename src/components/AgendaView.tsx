@@ -51,7 +51,8 @@ import {
   generateIcsContent,
   downloadIcsFile,
   disconnectGoogleCalendarApi,
-  checkGoogleCalendarStatus
+  checkGoogleCalendarStatus,
+  deleteEventInGoogleCalendarApi
 } from '@/services/googleCalendarService';
 
 const GoogleIcon = ({ className = 'w-4 h-4' }: { className?: string }) => (
@@ -196,7 +197,12 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       if (saved) {
         try {
           const parsed: DailyScheduleSlot[] = JSON.parse(saved);
-          const cleanTasks = parsed.filter(t => !t.id.startsWith('task_sess_') && !t.id.startsWith('sess_slot_'));
+          const cleanTasks = parsed.filter(t => 
+            !t.id.startsWith('task_sess_') && 
+            !t.id.startsWith('sess_slot_') && 
+            !t.isAiSuggested && 
+            !t.id.startsWith('ai_sug_')
+          );
           if (cleanTasks.length !== parsed.length) {
             localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(cleanTasks));
           }
@@ -443,25 +449,32 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     );
   }, []);
 
-  // União ordenada dos eventos (Tarefas de Calendário + Sessões de Estudo sobreponíveis)
+  // União ordenada dos eventos (apenas o que está no Google Agenda ou o que o aluno adicionou/alterou)
   const daySchedule = useMemo<DailyScheduleSlot[]>(() => {
     const slots: DailyScheduleSlot[] = [];
-    const existingIds = new Set<string>();
+    const seen = new Set<string>();
 
-    // 1. Eventos do Google Agenda (Obrigações)
+    // 1. Eventos do Google Agenda (Obrigações e compromissos reais do aluno)
     if (isGoogleCalendarConnected) {
       for (const ev of realCalendarEvents) {
         slots.push({ ...ev, isCalendarTask: true });
-        existingIds.add(ev.id);
+        seen.add(ev.id);
+        const key = `${ev.title.trim().toLowerCase()}_${ev.startMinutes}_${ev.endMinutes}`;
+        seen.add(key);
       }
     }
 
-    // 2. Tarefas e compromissos criados na plataforma
+    // 2. Tarefas adicionadas ou alteradas manualmente na plataforma
     if (userScheduledTasks.length > 0) {
       for (const task of userScheduledTasks) {
-        if (!existingIds.has(task.id)) {
+        // Ignora sugestões automáticas não criadas manualmente pelo aluno
+        if (task.isAiSuggested || task.id.startsWith('ai_sug_')) continue;
+
+        const key = `${task.title.trim().toLowerCase()}_${task.startMinutes}_${task.endMinutes}`;
+        if (!seen.has(task.id) && !seen.has(key)) {
           slots.push(task);
-          existingIds.add(task.id);
+          seen.add(task.id);
+          seen.add(key);
         }
       }
     }
@@ -1020,28 +1033,14 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     }
   };
 
-  // Sincronizar todos os blocos com o Google Agenda
+  // Sincronizar blocos adicionados pelo aluno com o Google Agenda
   const handleSyncAllTasksToGoogle = async () => {
-    let tasksToSync = [...userScheduledTasks.filter(t => t.source === 'plataforma')];
-
-    if (scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0) {
-      const existingIds = new Set(tasksToSync.map(t => t.id));
-      const suggestionsToAdd = scheduleAiAnalysis.suggestions.filter(s => !existingIds.has(s.id));
-      if (suggestionsToAdd.length > 0) {
-        tasksToSync = [...tasksToSync, ...suggestionsToAdd];
-        setUserScheduledTasks(prev => {
-          const prevIds = new Set(prev.map(p => p.id));
-          const newItems = suggestionsToAdd.filter(s => !prevIds.has(s.id)).map(s => ({ ...s, isAiSuggested: true }));
-          newItems.forEach((item) => {
-            saveUserScheduledTask(item, user?.id).catch(() => {});
-          });
-          return [...prev, ...newItems];
-        });
-      }
-    }
+    const tasksToSync = [
+      ...userScheduledTasks.filter(t => t.source === 'plataforma' && !t.isAiSuggested && !t.id.startsWith('ai_sug_'))
+    ];
 
     if (tasksToSync.length === 0) {
-      setCalendarSyncError('Nenhuma tarefa ou sugestão de estudo disponível para sincronizar.');
+      setCalendarSyncError('Nenhuma tarefa criada por você pendente de sincronização.');
       return;
     }
 
@@ -1088,7 +1087,25 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     }
   };
 
-  const handleRemoveScheduledTask = (taskId: string) => {
+  const handleRemoveScheduledTask = async (taskId: string) => {
+    // 1. Se for um evento que veio do Google Agenda, remove da visualização e deleta da API do Google
+    const isGoogleEvent = realCalendarEvents.some(e => e.id === taskId);
+    if (isGoogleEvent) {
+      setRealCalendarEvents(prev => prev.filter(e => e.id !== taskId));
+      if (typeof window !== 'undefined') {
+        const remaining = realCalendarEvents.filter(e => e.id !== taskId);
+        localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(remaining));
+      }
+      try {
+        await deleteEventInGoogleCalendarApi(taskId);
+        setCalendarSyncSuccessMsg('Evento excluído do Google Agenda.');
+      } catch (err) {
+        console.warn('Erro ao excluir evento do Google Agenda:', err);
+      }
+      return;
+    }
+
+    // 2. Se for tarefa da plataforma, remove do estado e do Supabase
     setUserScheduledTasks((prev) => prev.filter(t => t.id !== taskId));
     deleteUserScheduledTask(taskId, user?.id).catch((err) => {
       console.warn('Erro ao remover tarefa remota:', err);
@@ -1113,8 +1130,12 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     if (typeof window !== 'undefined') {
       localStorage.removeItem('bancoresidencia_exported_slots');
       localStorage.removeItem('bancoresidencia_batch_sync_completed');
+      localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
+      if (user?.id) {
+        localStorage.removeItem(getUserScheduledTasksStorageKey(user.id));
+      }
     }
-    setCalendarSyncSuccessMsg('Cronograma redefinido para os eventos oficiais do Google Agenda.');
+    setCalendarSyncSuccessMsg('Cronograma redefinido: exibindo apenas sua agenda oficial.');
   };
 
   // Análise com IA

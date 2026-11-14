@@ -13,7 +13,8 @@ interface HippocampusLoadingProps {
  * Loader Oficial Central do Hippocampus • Questões de Residência
  * 1. Exclusivamente a simbologia vetorial fiel ao SVG (duas linhas com ponta reta butt e espessura 132).
  * 2. Sequência cíclica contínua (loop infinito) de desenho e redesenho a 60 FPS cravados.
- * 3. Substitui spinners circulares genéricos por um indicador biomédico de alta identidade visual.
+ * 3. ViewBox justo (185 210 1790 1500) eliminando caixas vazias ou bordas fantasmas.
+ * 4. Substitui spinners circulares genéricos por um indicador biomédico de alta identidade visual.
  */
 export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
   className = '',
@@ -22,9 +23,9 @@ export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
   fullScreen = true
 }) => {
   const sizeMap = {
-    sm: { width: '48px', height: '42px', minWidth: '48px' },
-    md: { width: '72px', height: '64px', minWidth: '72px' },
-    lg: { width: '96px', height: '85px', minWidth: '96px' }
+    sm: { width: '44px', height: '37px', minWidth: '44px' },
+    md: { width: '72px', height: '60px', minWidth: '72px' },
+    lg: { width: '96px', height: '80px', minWidth: '96px' }
   };
 
   const currentSize = sizeMap[size];
@@ -98,7 +99,7 @@ export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
       {/* Simbologia Centralizada em Loop Cíclico */}
       <div className="hippo-cyclic-container flex items-center justify-center">
         <svg
-          viewBox="0 0 2160 1920"
+          viewBox="185 210 1790 1500"
           style={{
             width: currentSize.width,
             height: currentSize.height,

@@ -676,6 +676,14 @@ const DayView: React.FC<DayViewProps> = ({
     return dayRealizedSessions.reduce((acc, s) => acc + (s.durationSeconds || 0), 0);
   }, [dayRealizedSessions]);
 
+  // Filtra os eventos da agenda estritamente para o dia atualmente selecionado
+  const dayFilteredEvents = useMemo(() => {
+    return filteredEvents.filter((s) => {
+      const slotDate = s.date || (s.startTime && s.startTime.includes('-') ? s.startTime.split('T')[0] : getLocalDateStr(new Date()));
+      return slotDate === selectedDateStr;
+    });
+  }, [filteredEvents, selectedDateStr]);
+
   // Cálculo da posição da Linha de Transição do Horário (Current Time Indicator)
   // Grade vai de 06:00 (360m) a 24:00 (1440m)
   const startDayMinutes = 6 * 60; // 360
@@ -691,8 +699,8 @@ const DayView: React.FC<DayViewProps> = ({
     return `${h}:${m}`;
   }, [nowDate]);
 
-  // Se não houver eventos ou sessões na grade
-  if (filteredEvents.length === 0) {
+  // Se não houver eventos ou sessões na grade para o dia selecionado
+  if (dayFilteredEvents.length === 0) {
     return (
       <div className="p-8 rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 text-center space-y-3">
         <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-500 flex items-center justify-center mx-auto shadow-2xs">
@@ -756,10 +764,10 @@ const DayView: React.FC<DayViewProps> = ({
   return (
     <div className="space-y-4">
       {/* Grade de Horários com a Linha de Transição */}
-      {filteredEvents.length > 0 ? (
+      {dayFilteredEvents.length > 0 ? (
         <div className="relative rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c1017] p-3 sm:p-5 overflow-hidden">
           <div className="space-y-3">
-            {filteredEvents.map((slot, idx) => {
+            {dayFilteredEvents.map((slot, idx) => {
               const style = getEventStyle(slot);
               const isHospital = isHospitalOrDutyEvent(slot);
               const isUserAdded = slot.source === 'plataforma';
@@ -890,12 +898,12 @@ const DayView: React.FC<DayViewProps> = ({
                         )
                       )}
 
-                      {isUserAdded && (
+                      {onRemoveTask && (
                         <button
                           type="button"
                           onClick={() => onRemoveTask(slot.id)}
                           className="p-1.5 rounded-lg text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 transition-colors cursor-pointer"
-                          title="Remover do cronograma"
+                          title={slot.source === 'google' ? "Excluir do Google Agenda" : "Remover do cronograma"}
                         >
                           <X className="w-3.5 h-3.5" />
                         </button>

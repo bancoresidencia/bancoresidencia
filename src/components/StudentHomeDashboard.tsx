@@ -525,6 +525,54 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const todayStudyMinutes = Math.floor(currentTodayStudySeconds / 60);
   const timeGoalPercentage = Math.min(100, Math.round((todayStudyMinutes / (dailyTimeGoal || 1)) * 100));
 
+  // Animação fluida e orgânica dos anéis de progresso das metas diárias (Questões e Tempo)
+  const [animatedGoalPercentages, setAnimatedGoalPercentages] = useState<{ questions: number; time: number }>({
+    questions: 0,
+    time: 0
+  });
+  const prevGoalPercentagesRef = useRef<{ questions: number; time: number }>({ questions: 0, time: 0 });
+
+  useEffect(() => {
+    const targetQ = Math.max(0, Math.min(100, goalPercentage));
+    const targetT = Math.max(0, Math.min(100, timeGoalPercentage));
+    const startQ = prevGoalPercentagesRef.current.questions;
+    const startT = prevGoalPercentagesRef.current.time;
+
+    if (startQ === targetQ && startT === targetT && animatedGoalPercentages.questions === targetQ && animatedGoalPercentages.time === targetT) {
+      return;
+    }
+    prevGoalPercentagesRef.current = { questions: targetQ, time: targetT };
+
+    let startTime: number | null = null;
+    let lastUpdate = 0;
+    const duration = 750; // ms de transição suave
+    let animId: number;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      if (currentTime - lastUpdate >= 20 || progress >= 1) {
+        lastUpdate = currentTime;
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const currentQ = startQ + (targetQ - startQ) * easeOut;
+        const currentT = startT + (targetT - startT) * easeOut;
+        setAnimatedGoalPercentages({
+          questions: progress >= 1 ? targetQ : Math.round(currentQ),
+          time: progress >= 1 ? targetT : Math.round(currentT)
+        });
+      }
+
+      if (progress < 1) {
+        animId = requestAnimationFrame(animate);
+      }
+    };
+
+    animId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(animId);
+  }, [goalPercentage, timeGoalPercentage]);
+
   // Tier cromático do percentil independente com suporte a modo claro/escuro
   const percentileTier = getPercentileColor(stats.percentileInfo.percentile);
   const isPercentileCalibrating = stats.percentileInfo.status === 'locked' || stats.percentileInfo.status === 'unranked';
@@ -3336,10 +3384,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       </form>
                     ) : (
-                      /* Linha Unificada: Sequência à Esquerda + Metas em Círculos Separados à Direita */
-                      <div className="pt-1.5 pb-1 flex items-center justify-between gap-3">
-                        {/* Bloco Sequência (apenas número e texto, sem segundo foguinho) */}
-                        <div className="flex flex-col justify-center">
+                      <div className="pt-2 pb-1 flex items-center gap-4 sm:gap-6">
+                        {/* Bloco Sequência à Esquerda */}
+                        <div className="flex flex-col justify-center shrink-0 min-w-[70px] sm:min-w-[85px]">
                           <span className="text-3xl sm:text-4xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100 leading-none">
                             {stats.streakDays}
                           </span>
@@ -3348,85 +3395,56 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </span>
                         </div>
 
-                        {/* Dois Círculos de Meta Separados com Valores Embaixo */}
-                        <div className="flex items-center gap-4 sm:gap-6">
-                          {/* Círculo 1: Questões */}
-                          <div className="flex flex-col items-center text-center">
-                            <div className="relative w-11 h-11 flex items-center justify-center">
-                              <svg className="w-full h-full -rotate-90 transform" viewBox="0 0 36 36">
-                                <circle
-                                  cx="18"
-                                  cy="18"
-                                  r="15"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  strokeWidth="3"
-                                  className="text-zinc-100 dark:text-zinc-800/80"
-                                />
-                                <circle
-                                  cx="18"
-                                  cy="18"
-                                  r="15"
-                                  fill="none"
-                                  stroke={accentConfig.primaryHex || '#10b981'}
-                                  strokeWidth="3"
-                                  strokeDasharray={94.25}
-                                  strokeDashoffset={94.25 * (1 - Math.min(100, goalPercentage) / 100)}
-                                  strokeLinecap="round"
-                                  className="transition-all duration-700 ease-out"
-                                />
-                              </svg>
+                        {/* Metas Diárias em Barras Horizontais Fluídas à Direita */}
+                        <div className="flex-1 space-y-2.5 min-w-0">
+                          {/* Barra 1: Meta de Questões */}
+                          <div
+                            className="space-y-1 group/bar cursor-default"
+                            title={`Meta de Questões: ${todayAnswered} de ${dailyGoal} resolvidas hoje (${goalPercentage}%)`}
+                          >
+                            <div className="flex items-center justify-between text-xs leading-none">
+                              <span className="font-bold text-zinc-900 dark:text-zinc-100 font-sans tabular-nums">
+                                {todayAnswered} <span className="text-zinc-400 font-normal text-[11px]">/ {dailyGoal} Q</span>
+                              </span>
                               <span
-                                className="absolute text-[9.5px] sm:text-[10px] font-black font-mono"
+                                className="font-mono font-bold text-[11px] tabular-nums"
                                 style={{ color: accentConfig.primaryHex }}
                               >
-                                {goalPercentage}%
+                                {animatedGoalPercentages.questions}%
                               </span>
                             </div>
-                            <span className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500 mt-1">
-                              Questões
-                            </span>
-                            <span className="text-[11px] font-bold text-zinc-900 dark:text-zinc-100 font-sans tabular-nums leading-tight">
-                              {todayAnswered} <span className="text-zinc-400 font-normal">/ {dailyGoal} Q</span>
-                            </span>
+                            <div className="w-full h-2 sm:h-2.5 bg-zinc-100 dark:bg-zinc-800/80 rounded-full overflow-hidden p-0.5">
+                              <div
+                                className="h-full rounded-full transition-all duration-700 ease-out"
+                                style={{
+                                  width: `${Math.min(100, animatedGoalPercentages.questions)}%`,
+                                  backgroundColor: accentConfig.primaryHex || '#10b981'
+                                }}
+                              />
+                            </div>
                           </div>
 
-                          {/* Círculo 2: Tempo */}
-                          <div className="flex flex-col items-center text-center">
-                            <div className="relative w-11 h-11 flex items-center justify-center">
-                              <svg className="w-full h-full -rotate-90 transform" viewBox="0 0 36 36">
-                                <circle
-                                  cx="18"
-                                  cy="18"
-                                  r="15"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  strokeWidth="3"
-                                  className="text-zinc-100 dark:text-zinc-800/80"
-                                />
-                                <circle
-                                  cx="18"
-                                  cy="18"
-                                  r="15"
-                                  fill="none"
-                                  stroke="#3b82f6"
-                                  strokeWidth="3"
-                                  strokeDasharray={94.25}
-                                  strokeDashoffset={94.25 * (1 - Math.min(100, timeGoalPercentage) / 100)}
-                                  strokeLinecap="round"
-                                  className="transition-all duration-700 ease-out"
-                                />
-                              </svg>
-                              <span className="absolute text-[9.5px] sm:text-[10px] font-black font-mono text-blue-500 dark:text-blue-400">
-                                {timeGoalPercentage}%
+                          {/* Barra 2: Meta de Tempo */}
+                          <div
+                            className="space-y-1 group/bar cursor-default"
+                            title={`Meta de Tempo: ${todayStudyMinutes}m de ${dailyTimeGoal}m estudados hoje (${timeGoalPercentage}%)`}
+                          >
+                            <div className="flex items-center justify-between text-xs leading-none">
+                              <span className="font-bold text-zinc-900 dark:text-zinc-100 font-sans tabular-nums">
+                                {todayStudyMinutes}m <span className="text-zinc-400 font-normal text-[11px]">/ {dailyTimeGoal}m</span>
+                              </span>
+                              <span className="font-mono font-bold text-[11px] tabular-nums text-blue-500 dark:text-blue-400">
+                                {animatedGoalPercentages.time}%
                               </span>
                             </div>
-                            <span className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500 mt-1">
-                              Tempo
-                            </span>
-                            <span className="text-[11px] font-bold text-zinc-900 dark:text-zinc-100 font-sans tabular-nums leading-tight">
-                              {todayStudyMinutes}m <span className="text-zinc-400 font-normal">/ {dailyTimeGoal}m</span>
-                            </span>
+                            <div className="w-full h-2 sm:h-2.5 bg-zinc-100 dark:bg-zinc-800/80 rounded-full overflow-hidden p-0.5">
+                              <div
+                                className="h-full rounded-full bg-blue-500 transition-all duration-700 ease-out"
+                                style={{
+                                  width: `${Math.min(100, animatedGoalPercentages.time)}%`
+                                }}
+                              />
+                            </div>
                           </div>
                         </div>
                       </div>

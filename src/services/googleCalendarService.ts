@@ -517,12 +517,12 @@ export async function fetchTodayEventsFromGoogleApi(accessToken?: string) {
   }
 
   const now = new Date();
-  const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0).toISOString();
-  const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999).toISOString();
+  const startRange = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000).toISOString();
+  const endRange = new Date(now.getTime() + 120 * 24 * 60 * 60 * 1000).toISOString();
 
   const url = `https://www.googleapis.com/calendar/v3/calendars/primary/events?timeMin=${encodeURIComponent(
-    startOfDay
-  )}&timeMax=${encodeURIComponent(endOfDay)}&singleEvents=true&orderBy=startTime`;
+    startRange
+  )}&timeMax=${encodeURIComponent(endRange)}&singleEvents=true&orderBy=startTime&maxResults=2500`;
 
   const response = await fetch(url, {
     headers: {
@@ -553,6 +553,11 @@ export async function fetchTodayEventsFromGoogleApi(accessToken?: string) {
     const startDate = startStr ? new Date(startStr) : new Date();
     const endDate = endStr ? new Date(endStr) : new Date(startDate.getTime() + 3600000);
 
+    const year = startDate.getFullYear();
+    const month = String(startDate.getMonth() + 1).padStart(2, '0');
+    const day = String(startDate.getDate()).padStart(2, '0');
+    const date = `${year}-${month}-${day}`;
+
     const startMinutes = startDate.getHours() * 60 + startDate.getMinutes();
     const endMinutes = endDate.getHours() * 60 + endDate.getMinutes();
 
@@ -572,6 +577,7 @@ export async function fetchTodayEventsFromGoogleApi(accessToken?: string) {
       id: item.id || `google_api_${idx}`,
       title: summary,
       category,
+      date,
       startTime,
       endTime,
       startMinutes,
@@ -749,4 +755,21 @@ export async function checkGoogleCalendarStatus(): Promise<{
     // ignora
   }
   return { connected: false };
+}
+
+
+/**
+ * Exclui um evento direto no Google Agenda via API
+ */
+export async function deleteEventInGoogleCalendarApi(eventId: string): Promise<boolean> {
+  try {
+    const res = await fetch('/api/calendar/google/delete-event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ eventId })
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
 }
