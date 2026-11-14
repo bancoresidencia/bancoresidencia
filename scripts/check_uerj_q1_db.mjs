@@ -8,13 +8,13 @@ fs.readFileSync('.env.local', 'utf8').split('\n').forEach(l => {
 });
 const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
 
-async function checkQ1InDb() {
-  const { data } = await supabase
+async function checkQ1() {
+  const { data, error } = await supabase
     .from('questions')
-    .select('id, code, year, institution, statement, correct_answer')
-    .ilike('statement', '%Mulher de 42 anos, sem comorbidades, comparece à unidade básica de saúde%');
+    .select('id, code, year, institution, correct_answer, statement')
+    .ilike('statement', '%Mulher de 42 anos, sem comorbidades, comparece à unidade básica%');
 
-  console.log('Q1 UERJ no banco:', data);
+  console.log('Result for Q1 statement:', data);
 }
 
-checkQ1InDb().catch(console.error);
+checkQ1().catch(console.error);

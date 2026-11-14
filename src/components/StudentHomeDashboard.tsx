@@ -3705,8 +3705,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       );
                     })()}
 
-                    {/* Desempenho por Dificuldade (Adaptável a Geral / 7 Dias) */}
-                    <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5">
+                  {/* Desempenho por Dificuldade (Adaptável a Geral / 7 Dias) */}
+                  <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5">
                       <div className="text-[11px]">
                         <span className="font-bold text-zinc-700 dark:text-zinc-300">Desempenho por Dificuldade</span>
                       </div>

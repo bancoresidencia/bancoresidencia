@@ -3,14 +3,16 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const { PDFParse } = require('pdf-parse');
 
-async function testQ1Details() {
-  const buf = new Uint8Array(fs.readFileSync('data/official_exams/UERJ/UERJ_2023_PROVA_ACESSO_DIRETO.pdf'));
+async function test2024All() {
+  const buf = new Uint8Array(fs.readFileSync('data/official_exams/UERJ/UERJ_2024_PROVA_ACESSO_DIRETO.pdf'));
   const p = new PDFParse({ data: buf });
   await p.load();
   const text = (await p.getText()).text || await p.getText();
   
-  const idx = text.indexOf('1) Mulher de 57 anos');
-  console.log(text.slice(idx, idx + 1200));
+  // Find all matches of `\n(\d{1,3})\)`
+  const matches = [...text.matchAll(/\n(\d{1,3})\)\s+([^\n]+)/g)];
+  console.log(`Encontradas ${matches.length} ocorrências de N)`);
+  matches.slice(0, 15).forEach(m => console.log(`${m[1]}: ${m[2].slice(0, 70)}`));
 }
 
-testQ1Details().catch(console.error);
+test2024All().catch(console.error);

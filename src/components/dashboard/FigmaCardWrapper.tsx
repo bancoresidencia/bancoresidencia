@@ -395,7 +395,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           ? 'none'
           : 'transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s',
       }}
-      className={`figma-card-wrapper ${activeHeight ? 'has-custom-height' : ''} h-full flex flex-col ${isResizing ? 'is-resizing select-none' : ''} ${isCompactHeight ? 'figma-compact-height' : ''} ${isUltraCompactHeight ? 'figma-ultracompact-height' : ''} ${getColSpanClass(activeSpan)} @container relative ${
+      className={`figma-card-wrapper ${activeHeight ? 'has-custom-height' : ''} h-full self-stretch flex flex-col ${isResizing ? 'is-resizing select-none' : ''} ${isCompactHeight ? 'figma-compact-height' : ''} ${isUltraCompactHeight ? 'figma-ultracompact-height' : ''} ${getColSpanClass(activeSpan)} @container relative ${
         isCustomizing
           ? isSelected
             ? 'ring-2 ring-blue-500 dark:ring-blue-400 rounded-2xl select-none group/figma shadow-xl'

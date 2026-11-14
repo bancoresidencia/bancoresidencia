@@ -1,11 +1,10 @@
 import fs from 'fs';
-import path from 'path';
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const { PDFParse } = require('pdf-parse');
 import { createClient } from '@supabase/supabase-js';
 
-const WRITE_TO_SUPABASE = false; // MODO SEGURO: STAGING PURO
+const WRITE_TO_SUPABASE = false; // MODO SEGURO: RIGOROSAMENTE ZERO GRAVAÇÃO AUTOMÁTICA
 const SIMILARITY_THRESHOLD = 0.85;
 
 const env = {};
@@ -67,29 +66,32 @@ async function parsePdf(pdfPath) {
 
 function parseUerjGabarito(text) {
   const map = new Map();
-  // Padrão UERJ: 1 A ou 01 A ou Questão 1 A
-  const regex = /(?:^|\n|\s)(\d{1,3})\s*[\-\.\)]?\s*([A-Ea-eX\-\*])/g;
-  let m;
-  while ((m = regex.exec(text)) !== null) {
-    const num = parseInt(m[1], 10);
-    const ans = m[2].toUpperCase();
-    if (num >= 1 && num <= 100 && !map.has(num)) {
-      map.set(num, (ans === 'X' || ans === '-' || ans === '*') ? 'ANULADA' : ans);
+  const lines = text.split('\n').map(l => l.trim()).filter(Boolean);
+  for (let i = 0; i < lines.length - 1; i++) {
+    const qMatches = [...lines[i].matchAll(/\bR(\d{1,3})\b/g)];
+    if (qMatches.length >= 5) {
+      const letters = lines[i+1].split(/\s+/).filter(t => /^[A-Ea-eX\-\*]$/.test(t));
+      if (letters.length === qMatches.length) {
+        for (let j = 0; j < qMatches.length; j++) {
+          const num = parseInt(qMatches[j][1], 10);
+          const ans = letters[j].toUpperCase();
+          map.set(num, (ans === 'X' || ans === '-' || ans === '*') ? 'ANULADA' : ans);
+        }
+      }
     }
   }
   return map;
 }
 
 function parseUerjExam(text) {
-  // Encontra questões numeradas de 1 a 100
-  const qRegex = /(?:^|\n)\s*(?:QUEST[ÃA]O\s+|Q\.\s*)?(\d{1,3})[\.\-\)\s]+([\s\S]*?)(?=(?:\n\s*(?:QUEST[ÃA]O\s+|Q\.\s*)?\d{1,3}[\.\-\)\s]+)|$)/gi;
+  const qRegex = /(?:^|\n)(\d{1,3})\)\s+([\s\S]*?)(?=(?:\n\d{1,3}\)\s+)|$)/g;
   const questions = [];
   let match;
   while ((match = qRegex.exec(text)) !== null) {
     const qNum = parseInt(match[1], 10);
     const body = match[2].trim();
     if (qNum >= 1 && qNum <= 100 && body.length > 30) {
-      const optRegex = /(?:^|\n)\s*([A-D])[\.\)\-\s]\s*([\s\S]*?)(?=(?:\n\s*[A-D][\.\)\-\s])|$)/g;
+      const optRegex = /(?:^|\n)\s*([a-d])\)\s*([\s\S]*?)(?=(?:\n\s*[a-d]\))|$)/gi;
       let optMatch;
       const options = [];
       let firstOptIdx = body.length;
@@ -100,23 +102,31 @@ function parseUerjExam(text) {
           text: optMatch[2].replace(/\s+/g, ' ').trim()
         });
       }
-      const statement = body.slice(0, firstOptIdx).replace(/\s+/g, ' ').trim();
-      questions.push({ num: qNum, statement, options });
+      if (options.length >= 3) {
+        const statement = body.slice(0, firstOptIdx).replace(/\s+/g, ' ').trim();
+        questions.push({ num: qNum, statement, options });
+      }
     }
   }
   return questions;
 }
 
 async function homologateUerj() {
-  console.log('=== HOMOLOGAÇÃO OFICIAL UERJ (DUPLA TRAVA >= 85%) ===\n');
+  console.log('=== INICIANDO HOMOLOGAÇÃO OFICIAL UERJ (DUPLA TRAVA >= 85%) ===\n');
 
-  const { data: dbUerj } = await supabase
+  // Busca no Supabase todas as pendentes da UERJ
+  const { data: dbUerj, error } = await supabase
     .from('questions')
     .select('id, code, year, institution, statement, options, correct_answer')
-    .ilike('institution', '%UERJ%')
+    .or('institution.ilike.%UERJ%,institution.ilike.%Pedro Ernesto%,code.ilike.%UERJ%')
     .or('correct_answer.is.null,correct_answer.eq.');
 
-  console.log(`Total UERJ pendentes no banco: ${dbUerj.length}`);
+  if (error) {
+    console.error('Erro ao buscar do Supabase:', error);
+    return;
+  }
+
+  console.log(`Total de questões UERJ pendentes no banco: ${dbUerj.length}`);
 
   const homologadas = [];
   const years = ['2022', '2023', '2024', '2025', '2026'];
@@ -124,7 +134,10 @@ async function homologateUerj() {
   for (const yr of years) {
     const pvPath = `data/official_exams/UERJ/UERJ_${yr}_PROVA_ACESSO_DIRETO.pdf`;
     const gbPath = `data/official_exams/UERJ/UERJ_${yr}_GABARITO_DEFINITIVO.pdf`;
-    if (!fs.existsSync(pvPath) || !fs.existsSync(gbPath)) continue;
+    if (!fs.existsSync(pvPath) || !fs.existsSync(gbPath)) {
+      console.log(`[Pular] UERJ ${yr} - arquivos não encontrados.`);
+      continue;
+    }
 
     console.log(`\nProcessando UERJ ${yr}...`);
     const pvText = await parsePdf(pvPath);
@@ -132,76 +145,106 @@ async function homologateUerj() {
     
     const gbMap = parseUerjGabarito(gbText);
     const pvQuestions = parseUerjExam(pvText);
-    console.log(`  -> Questões extraídas do caderno: ${pvQuestions.length} | Gabaritos: ${gbMap.size}`);
+    console.log(`  -> Questões extraídas do caderno: ${pvQuestions.length} | Gabaritos no mapa: ${gbMap.size}`);
 
+    // Filtra questões do banco do mesmo ano (ou sem ano preenchido)
     const dbYr = dbUerj.filter(q => String(q.year) === yr || !q.year);
+    console.log(`  -> Candidatas no banco para ${yr}: ${dbYr.length}`);
 
+    let matchesInYear = 0;
     for (const dbQ of dbYr) {
+      let bestMatch = null;
+      let highestStmtSim = 0;
+
       for (const exQ of pvQuestions) {
         const stmtSim = calculateSimilarity(dbQ.statement, exQ.statement);
-        if (stmtSim < SIMILARITY_THRESHOLD) continue;
-
-        const officialAns = gbMap.get(exQ.num);
-        if (!officialAns) continue;
-
-        if (officialAns === 'ANULADA') {
-          homologadas.push({
-            id: dbQ.id,
-            code: dbQ.code,
-            year: dbQ.year,
-            num: exQ.num,
-            isAnulada: true,
-            gabaritoOficial: 'ANULADA',
-            gabaritoDb: 'ANULADA',
-            simEnunciado: parseFloat(stmtSim.toFixed(4)),
-            simAlternativa: 1.0,
-            origem: `UERJ_${yr}_OFICIAL`
-          });
-          break;
-        }
-
-        const winOpt = exQ.options.find(o => o.letter === officialAns);
-        const winText = winOpt ? winOpt.text : '';
-
-        let bestOptSim = 0;
-        let matchedDbLetter = null;
-        if (Array.isArray(dbQ.options) && winText) {
-          for (const opt of dbQ.options) {
-            const oText = opt.text || opt.descricao || '';
-            const oSim = calculateSimilarity(winText, oText);
-            if (oSim > bestOptSim) {
-              bestOptSim = oSim;
-              matchedDbLetter = opt.letter;
-            }
+        if (stmtSim > highestStmtSim) {
+          highestStmtSim = stmtSim;
+          if (stmtSim >= SIMILARITY_THRESHOLD) {
+            bestMatch = exQ;
           }
         }
+      }
 
-        if (bestOptSim >= SIMILARITY_THRESHOLD && matchedDbLetter) {
-          homologadas.push({
-            id: dbQ.id,
-            code: dbQ.code,
-            year: dbQ.year,
-            num: exQ.num,
-            isAnulada: false,
-            gabaritoOficial: officialAns,
-            gabaritoDb: matchedDbLetter,
-            simEnunciado: parseFloat(stmtSim.toFixed(4)),
-            simAlternativa: parseFloat(bestOptSim.toFixed(4)),
-            origem: `UERJ_${yr}_OFICIAL`
-          });
-          break;
+      if (!bestMatch) continue;
+
+      const officialAns = gbMap.get(bestMatch.num);
+      if (!officialAns) {
+        console.log(`  [Aviso] Questão ${bestMatch.num} sem gabarito mapeado.`);
+        continue;
+      }
+
+      if (officialAns === 'ANULADA') {
+        homologadas.push({
+          id: dbQ.id,
+          code: dbQ.code,
+          year: dbQ.year || yr,
+          num: bestMatch.num,
+          statementSnippet: cleanText(dbQ.statement).slice(0, 120),
+          isAnulada: true,
+          gabaritoOficial: 'ANULADA',
+          gabaritoDb: 'ANULADA',
+          simEnunciado: parseFloat(highestStmtSim.toFixed(4)),
+          simAlternativa: 1.0,
+          origem: `UERJ_${yr}_PROVA_ACESSO_DIRETO_Q${bestMatch.num}`
+        });
+        matchesInYear++;
+        continue;
+      }
+
+      // Localiza a opção correta oficial na prova impressa
+      const winOpt = bestMatch.options.find(o => o.letter === officialAns);
+      const winText = winOpt ? winOpt.text : '';
+
+      let bestOptSim = 0;
+      let matchedDbLetter = null;
+      let matchedDbOptionText = '';
+
+      if (Array.isArray(dbQ.options) && winText) {
+        for (const opt of dbQ.options) {
+          const oText = opt.text || opt.descricao || opt.statement || '';
+          const oSim = calculateSimilarity(winText, oText);
+          if (oSim > bestOptSim) {
+            bestOptSim = oSim;
+            matchedDbLetter = opt.letter;
+            matchedDbOptionText = oText;
+          }
         }
       }
+
+      // Validação da Segunda Trava (Opção >= 85%)
+      if (bestOptSim >= SIMILARITY_THRESHOLD && matchedDbLetter) {
+        homologadas.push({
+          id: dbQ.id,
+          code: dbQ.code,
+          year: dbQ.year || yr,
+          num: bestMatch.num,
+          statementSnippet: cleanText(dbQ.statement).slice(0, 120),
+          isAnulada: false,
+          gabaritoOficial: officialAns,
+          gabaritoDb: matchedDbLetter,
+          optionSnippet: winText.slice(0, 80),
+          simEnunciado: parseFloat(highestStmtSim.toFixed(4)),
+          simAlternativa: parseFloat(bestOptSim.toFixed(4)),
+          origem: `UERJ_${yr}_PROVA_ACESSO_DIRETO_Q${bestMatch.num}`
+        });
+        matchesInYear++;
+      } else {
+        console.log(`  [Trava 2 Reprovou] ${dbQ.code}: Stmt=${(highestStmtSim*100).toFixed(1)}%, mas Opt=${(bestOptSim*100).toFixed(1)}%`);
+      }
     }
+
+    console.log(`  -> Homologadas com Dupla Trava em ${yr}: ${matchesInYear}`);
   }
 
   console.log(`\n======================================================`);
-  console.log(`RESULTADO UERJ:`);
+  console.log(`RESULTADO UERJ TOTAL:`);
   console.log(`Homologadas com Dupla Trava >= 85%: ${homologadas.length}`);
   console.log(`Gravação no Supabase executada: ${WRITE_TO_SUPABASE} (RIGOROSAMENTE ZERO)`);
-  console.log(`======================================================`);
+  console.log(`======================================================\n`);
 
   fs.writeFileSync('data/staging_uerj_homologados.json', JSON.stringify(homologadas, null, 2), 'utf8');
+  console.log('Salvo em: data/staging_uerj_homologados.json');
 }
 
 homologateUerj().catch(console.error);
