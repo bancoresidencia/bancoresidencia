@@ -190,27 +190,11 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
         {/* Cabeçalho Visual da Marca */}
         <div className="relative px-5 py-4 sm:px-7 sm:py-5 border-b border-slate-100 dark:border-slate-800/80 bg-gradient-to-b from-slate-50/80 to-transparent dark:from-slate-900/40">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3 sm:gap-3.5">
-              <Logo className="w-11 h-11 sm:w-12 sm:h-12 shrink-0 transition-transform hover:scale-105 duration-200" glow />
-              <div className="flex flex-col justify-center leading-tight">
-                <div className="flex items-center gap-2">
-                  <span
-                    className="font-bold text-xl sm:text-2xl text-slate-900 dark:text-white tracking-[-0.6px]"
-                    style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
-                  >
-                    Hippocampus
-                  </span>
-                  <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
-                    2026
-                  </span>
-                </div>
-                <span
-                  className="text-[8px] sm:text-[8.5px] font-normal text-slate-500 dark:text-slate-400 uppercase tracking-[1.56px] mt-0.5"
-                  style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
-                >
-                  QUESTÕES DE RESIDÊNCIA
-                </span>
-              </div>
+            <div className="flex items-center gap-3">
+              <Logo variant="full" className="h-10 sm:h-11 w-auto max-w-[240px] sm:max-w-[270px] shrink-0 transition-transform hover:scale-102 duration-200" glow />
+              <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800 self-center">
+                2026
+              </span>
             </div>
 
             {/* Ações da Direita: Fechar */}

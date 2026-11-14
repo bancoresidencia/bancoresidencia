@@ -80,7 +80,7 @@ export const Logo: React.FC<LogoProps> = ({
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 7150 1920"
+        viewBox="0 0 7034.06 1920"
         className={`shrink-0 select-none text-zinc-950 dark:text-white ${className}`}
         style={{ ...sizeStyle, ...glowStyle, ...style }}
         aria-label="Hippocampus — Questões de Residência"
@@ -106,16 +106,16 @@ export const Logo: React.FC<LogoProps> = ({
             strokeLinecap="butt"
             className="transition-colors duration-200"
           />
-          {/* Nome Hippocampus aumentado e calibrado para maior presença e força visual */}
+          {/* Nome Hippocampus: Inter Bold com tamanho e coordenadas canônicas (hippocampus_completo.svg) */}
           <text
-            transform="matrix(63 0 0 63 2263.296 1050)"
+            transform="matrix(58.865 0 0 58.865 2263.296 1058.395)"
             x="0"
             y="0"
             xmlSpace="preserve"
             style={{
-              fontFamily: 'var(--font-inter), Inter, sans-serif',
+              fontFamily: 'var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
               fontSize: '12px',
-              fontWeight: 'bold',
+              fontWeight: 700,
               fill: fillColor,
               letterSpacing: '-0.6px'
             }}
@@ -123,16 +123,16 @@ export const Logo: React.FC<LogoProps> = ({
           >
             <tspan x="0" y="0">Hippocampus</tspan>
           </text>
-          {/* Subtítulo Questões de Residência em linha única */}
+          {/* Subtítulo QUESTÕES DE RESIDÊNCIA: coordenadas, espessura e espaçamento canônicos (hippocampus_completo.svg) */}
           <text
-            transform="matrix(17.5 0 0 17.5 2293.201 1385)"
+            transform="matrix(17.244 0 0 17.244 2293.201 1417.919)"
             x="0"
             y="0"
             xmlSpace="preserve"
             style={{
-              fontFamily: 'var(--font-inter), Inter, sans-serif',
+              fontFamily: 'var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
               fontSize: '12px',
-              fontWeight: 400,
+              fontWeight: 300,
               fill: fillColor,
               letterSpacing: '1.56px'
             }}

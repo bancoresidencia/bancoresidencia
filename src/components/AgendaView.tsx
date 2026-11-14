@@ -459,7 +459,8 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       for (const ev of realCalendarEvents) {
         slots.push({ ...ev, isCalendarTask: true });
         seen.add(ev.id);
-        const key = `${ev.title.trim().toLowerCase()}_${ev.startMinutes}_${ev.endMinutes}`;
+        const evDate = ev.date || (ev.startTime && ev.startTime.includes('-') ? ev.startTime.split('T')[0] : '');
+        const key = `${evDate}_${ev.title.trim().toLowerCase()}_${ev.startMinutes}_${ev.endMinutes}`;
         seen.add(key);
       }
     }
@@ -470,7 +471,8 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         // Ignora sugestões automáticas não criadas manualmente pelo aluno
         if (task.isAiSuggested || task.id.startsWith('ai_sug_')) continue;
 
-        const key = `${task.title.trim().toLowerCase()}_${task.startMinutes}_${task.endMinutes}`;
+        const taskDate = task.date || (task.startTime && task.startTime.includes('-') ? task.startTime.split('T')[0] : '');
+        const key = `${taskDate}_${task.title.trim().toLowerCase()}_${task.startMinutes}_${task.endMinutes}`;
         if (!seen.has(task.id) && !seen.has(key)) {
           slots.push(task);
           seen.add(task.id);
@@ -483,12 +485,16 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     return slots;
   }, [isGoogleCalendarConnected, realCalendarEvents, userScheduledTasks]);
 
-  // Cálculo da Atividade Atual / Período
+  // Cálculo da Atividade Atual / Período (calculado estritamente para o dia de hoje)
   const currentPeriodInfo = useMemo(() => {
     const now = new Date();
     const currentMinutes = now.getHours() * 60 + now.getMinutes();
+    const todayStr = getLocalDateStr(now);
+    const todaySlots = daySchedule.filter(
+      (slot) => !slot.date || slot.date === todayStr
+    );
 
-    if (daySchedule.length === 0) {
+    if (todaySlots.length === 0) {
       return {
         status: 'livre' as const,
         currentMinutes,
@@ -515,7 +521,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       };
     }
 
-    const activeSlot = daySchedule.find(
+    const activeSlot = todaySlots.find(
       (slot) => currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes
     );
 
@@ -524,7 +530,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       const total = activeSlot.endMinutes - activeSlot.startMinutes;
       const progressPercent = Math.min(100, Math.max(0, Math.round((elapsed / total) * 100)));
       const minutesRemaining = activeSlot.endMinutes - currentMinutes;
-      const nextUpcoming = daySchedule.find((s) => s.startMinutes >= activeSlot.endMinutes);
+      const nextUpcoming = todaySlots.find((s) => s.startMinutes >= activeSlot.endMinutes);
 
       return {
         status: 'em_andamento' as const,
@@ -537,7 +543,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       };
     }
 
-    const upcomingSlot = daySchedule.find((s) => s.startMinutes > currentMinutes);
+    const upcomingSlot = todaySlots.find((s) => s.startMinutes > currentMinutes);
     if (upcomingSlot) {
       const minutesUntil = upcomingSlot.startMinutes - currentMinutes;
       return {
@@ -567,7 +573,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         location: 'Repouso'
       },
       progressPercent: 100,
-      nextSlot: daySchedule[0] || null,
+      nextSlot: todaySlots[0] || null,
       label: 'Período Noturno (Descanso)'
     };
   }, [daySchedule, isGoogleCalendarConnected]);

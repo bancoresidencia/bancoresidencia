@@ -573,9 +573,69 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return () => cancelAnimationFrame(animId);
   }, [goalPercentage, timeGoalPercentage]);
 
+  // Sincronização em tempo real do percentil oficial homologado pelo ranking
+  const [rankingPercentile, setRankingPercentile] = useState<number | null>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('bancoresidencia_official_ranking_percentile');
+        if (saved !== null && saved !== '') {
+          const num = Number(saved);
+          if (!Number.isNaN(num)) return num;
+        }
+      } catch { }
+    }
+    return null;
+  });
+
+  useEffect(() => {
+    let isMounted = true;
+    const fetchOfficialRankingPercentile = async () => {
+      try {
+        const res = await fetch('/api/ranking');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data?.success && data?.currentUser?.percentile !== undefined && data?.currentUser?.percentile !== null) {
+          if (isMounted) {
+            setRankingPercentile(data.currentUser.percentile);
+            try {
+              localStorage.setItem('bancoresidencia_official_ranking_percentile', String(data.currentUser.percentile));
+            } catch { }
+          }
+        }
+      } catch { }
+    };
+
+    fetchOfficialRankingPercentile();
+
+    const handleRankingUpdate = () => {
+      try {
+        const saved = localStorage.getItem('bancoresidencia_official_ranking_percentile');
+        if (saved !== null && saved !== '') {
+          const num = Number(saved);
+          if (!Number.isNaN(num) && isMounted) {
+            setRankingPercentile(num);
+          }
+        }
+      } catch { }
+    };
+
+    window.addEventListener('bancoresidencia_ranking_updated', handleRankingUpdate);
+    window.addEventListener('storage', handleRankingUpdate);
+
+    return () => {
+      isMounted = false;
+      window.removeEventListener('bancoresidencia_ranking_updated', handleRankingUpdate);
+      window.removeEventListener('storage', handleRankingUpdate);
+    };
+  }, []);
+
+  const effectivePercentile = (rankingPercentile !== null && rankingPercentile !== undefined)
+    ? rankingPercentile
+    : stats.percentileInfo.percentile;
+
   // Tier cromático do percentil independente com suporte a modo claro/escuro
-  const percentileTier = getPercentileColor(stats.percentileInfo.percentile);
-  const isPercentileCalibrating = stats.percentileInfo.status === 'locked' || stats.percentileInfo.status === 'unranked';
+  const percentileTier = getPercentileColor(effectivePercentile);
+  const isPercentileCalibrating = (rankingPercentile === null && (stats.percentileInfo.status === 'locked' || stats.percentileInfo.status === 'unranked'));
   const percentileCardBg = mode === 'light' ? percentileTier.cardBgLight : percentileTier.cardBgDark;
   const percentileCardBorder = mode === 'light' ? percentileTier.cardBorderLight : percentileTier.cardBorderDark;
   const percentileTextColor = mode === 'light' ? percentileTier.textLight : percentileTier.textDark;
@@ -837,8 +897,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return { label: 'Reforçar', color: 'text-amber-600 dark:text-amber-400 bg-amber-500/10 border-amber-500/20' };
   };
 
-  // Animação Hero da Medalha do Percentil Oficial (destacada no centro do card na primeira abertura do site)
+  // Animação Hero da Medalha e Curva do Percentil Oficial
   const [isMedalAnimating, setIsMedalAnimating] = useState(false);
+  const [curveAnimKey, setCurveAnimKey] = useState<number>(0);
   const percentileCardRef = useRef<HTMLDivElement>(null);
   const percentileMedalRef = useRef<HTMLDivElement>(null);
 
@@ -876,6 +937,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   const triggerMedalAnimation = () => {
     setIsMedalAnimating(false);
+    setCurveAnimKey(k => k + 1);
     setTimeout(() => {
       if (percentileCardRef.current && percentileMedalRef.current) {
         const cardRect = percentileCardRef.current.getBoundingClientRect();
@@ -3384,16 +3446,24 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       </form>
                     ) : (
-                      <div className="pt-2 pb-1 flex items-center gap-4 sm:gap-6">
-                        {/* Bloco Sequência à Esquerda */}
-                        <div className="flex flex-col justify-center shrink-0 min-w-[70px] sm:min-w-[85px]">
+                      <div className="pt-2 pb-1 flex items-center gap-3.5 sm:gap-5">
+                        {/* Bloco Sequência à Esquerda: Número ao lado de Dia / Consecutivo empilhados */}
+                        <div className="flex items-center gap-2.5 shrink-0">
                           <span className="text-3xl sm:text-4xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100 leading-none">
                             {stats.streakDays}
                           </span>
-                          <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium mt-1.5 leading-tight">
-                            {stats.streakDays === 1 ? 'dia consecutivo' : 'dias consecutivos'}
-                          </span>
+                          <div className="flex flex-col justify-center leading-none">
+                            <span className="text-xs sm:text-[13px] font-bold text-zinc-800 dark:text-zinc-200 tracking-tight">
+                              {stats.streakDays === 1 ? 'dia' : 'dias'}
+                            </span>
+                            <span className="text-[10px] sm:text-[11px] font-medium text-zinc-400 dark:text-zinc-500 mt-0.5 tracking-normal">
+                              {stats.streakDays === 1 ? 'consecutivo' : 'consecutivos'}
+                            </span>
+                          </div>
                         </div>
+
+                        {/* Divisória vertical sutil */}
+                        <div className="w-px h-8 bg-zinc-200/70 dark:bg-zinc-800/80 shrink-0" />
 
                         {/* Metas Diárias em Barras Horizontais Fluídas à Direita */}
                         <div className="flex-1 space-y-2.5 min-w-0">
@@ -3845,7 +3915,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
                       {!isPercentileCalibrating ? (
                         <Badge variant="default" size="sm" className="font-sans">
-                          Top {Math.max(1, 100 - (stats.percentileInfo.percentile || 0))}%
+                          Top {Math.max(1, 100 - (effectivePercentile || 0))}%
                         </Badge>
                       ) : (
                         <Badge variant="outline" size="sm" className="font-sans text-zinc-500">
@@ -3858,7 +3928,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       <div className="pt-1 pb-0.5 flex items-baseline justify-between">
                         <div className="flex items-baseline gap-2">
                           <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100">
-                            P{stats.percentileInfo.percentile}
+                            P{effectivePercentile}
                           </span>
                         </div>
                         <Badge variant="outline" size="sm" style={{ borderColor: `${percentileTier.color}50`, color: percentileTier.color }}>
@@ -3880,11 +3950,15 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
                     )}
 
-                    {/* Curva Normal de Distribuição TRI (Gaussiana) Padrão Compacta */}
+                    {/* Curva Normal de Distribuição TRI (Gaussiana) Padrão Compacta com Animação Fluida */}
                     <div className="pt-1 flex-1 flex flex-col border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                       {/* Gráfico Vetorial da Gaussiana com Ponto do Aluno e Alto Contraste */}
                       <div className="relative w-full flex-1 h-[78px] min-h-[68px] bg-zinc-50/70 dark:bg-zinc-900/50 rounded-xl p-1.5 px-2 border border-zinc-200/60 dark:border-zinc-800/60 overflow-hidden flex flex-col justify-between">
-                        <svg viewBox="0 0 320 85" className="w-full h-full flex-1 overflow-visible">
+                        <svg
+                          key={`tri-curve-${cardConfig.id}-${curveAnimKey}`}
+                          viewBox="0 0 320 85"
+                          className="w-full h-full flex-1 overflow-visible"
+                        >
                           <defs>
                             <linearGradient id={`triGradient-${cardConfig.id}`} x1="0" y1="0" x2="0" y2="1">
                               <stop offset="0%" stopColor={percentileTier.color} stopOpacity="0.45" />
@@ -3896,8 +3970,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           <path
                             d="M 10 75 Q 60 75 100 60 T 160 8 T 220 60 Q 260 75 310 75 Z"
                             fill={`url(#triGradient-${cardConfig.id})`}
+                            className="animate-curve-fill"
                           />
-                          {/* Linha da Curva Gaussiana com alto contraste e cor do nível */}
+                          {/* Linha da Curva Gaussiana com alto contraste, cor do nível e animação de traçado */}
                           <path
                             d="M 10 75 Q 60 75 100 60 T 160 8 T 220 60 Q 260 75 310 75"
                             fill="none"
@@ -3905,26 +3980,41 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             strokeWidth="2.5"
                             strokeLinecap="round"
                             opacity="0.9"
+                            className="animate-curve-draw"
                           />
 
                           {/* Marcações de Percentil: P25, P50, P75, P90 */}
-                          <line x1="85" y1="12" x2="85" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                          <line x1="160" y1="8" x2="160" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                          <line x1="235" y1="12" x2="235" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                          <line x1="280" y1="30" x2="280" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-emerald-500/50" />
+                          <g className="animate-curve-guides">
+                            <line x1="85" y1="12" x2="85" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1="160" y1="8" x2="160" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1="235" y1="12" x2="235" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1="280" y1="30" x2="280" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-emerald-500/50" />
+                          </g>
 
                           {/* Posição do Aluno na Curva com Indicador Luminoso e Badge */}
                           {(() => {
-                            const pct = Math.max(1, Math.min(99, stats.percentileInfo.percentile || 1));
+                            const pct = Math.max(1, Math.min(99, effectivePercentile || 1));
                             const markerX = 15 + (pct / 100) * 290;
                             const normDist = (markerX - 160) / 55;
                             const markerY = Math.max(10, Math.min(73, 75 - 67 * Math.exp(-0.5 * normDist * normDist)));
 
                             return (
-                              <g>
-                                <line x1={markerX} y1={markerY} x2={markerX} y2="75" stroke={percentileTier.color} strokeWidth="2" strokeDasharray="2,2" opacity="0.8" />
-                                <circle cx={markerX} cy={markerY} r="4" fill="#ffffff" stroke={percentileTier.color} strokeWidth="2" />
-                                <circle cx={markerX} cy={markerY} r="7.5" fill={percentileTier.color} fillOpacity="0.3" className="animate-pulse" />
+                              <g className="animate-marker-group">
+                                <line
+                                  x1={markerX}
+                                  y1={markerY}
+                                  x2={markerX}
+                                  y2="75"
+                                  stroke={percentileTier.color}
+                                  strokeWidth="2"
+                                  strokeDasharray="2,2"
+                                  opacity="0.8"
+                                  className="animate-marker-line"
+                                />
+                                <g className="animate-marker-pop" style={{ transformOrigin: `${markerX}px ${markerY}px` }}>
+                                  <circle cx={markerX} cy={markerY} r="4" fill="#ffffff" stroke={percentileTier.color} strokeWidth="2" />
+                                  <circle cx={markerX} cy={markerY} r="7.5" fill={percentileTier.color} fillOpacity="0.3" className="animate-pulse" />
+                                </g>
                               </g>
                             );
                           })()}
@@ -3959,7 +4049,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   <div className="pt-2 flex items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80 gap-2">
                     {!isPercentileCalibrating ? (
                       <div className="flex items-center gap-2 text-[11px] text-zinc-500 dark:text-zinc-400 min-w-0">
-                        <span className="truncate">À frente de <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{stats.percentileInfo.percentile}%</strong> dos candidatos</span>
+                        <span className="truncate">À frente de <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{effectivePercentile}%</strong> dos candidatos</span>
                       </div>
                     ) : (
                       <span className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">

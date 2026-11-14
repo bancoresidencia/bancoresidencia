@@ -4,12 +4,13 @@ import React, { useEffect, useState } from 'react';
 
 /**
  * Splash Screen Global Oficial do Hippocampus • Questões de Residência
- * 1. Simbologia nasce perfeitamente no centro absoluto da tela e se desenha em crescente da DIREITA para a ESQUERDA (0.0s a 2.8s) de forma majestosa, suave e lenta.
- * 2. Transição orgânica (2.2s a 3.3s): a logo desliza suavemente para a esquerda enquanto o texto emerge de trás dela para a direita com opacidade gradual e zero quinas rígidas.
- * 3. Caixa ao redor da logo com menor largura cirúrgica (viewBox 185 210 1790 1500 sem espaços vazios laterais).
- * 4. Distância e gap milimétricos alinhados rigorosamente à referência oficial do Hippocampus (gap 10px / 12px).
- * 5. Repouso estático encurtado (apenas 200ms de repouso entre 3.30s e 3.50s).
- * 6. Fade-out ultra-suave (350ms) liberando a aplicação aos 3.85s e desmontando aos 3.90s.
+ * 1. Simbologia nasce perfeitamente no centro absoluto da tela e se desenha em crescente da DIREITA para a ESQUERDA (0.0s a 2.8s).
+ * 2. Transição cinematográfica e orgânica (2.0s a 3.2s):
+ *    - A logo desliza suavemente para a esquerda.
+ *    - A palavra emerge suavemente de trás da logo, DO COMEÇO AO SEU FIM ('H' -> 'i' -> 'p' -> 'p' -> 'o' -> 'c' -> 'a' -> 'm' -> 'p' -> 'u' -> 's').
+ *    - Borda de emergência com gradiente esvaecido suave de 35px (zero linhas retas, zero caixas duras).
+ * 3. Repouso estático encurtado (apenas 200ms entre 3.20s e 3.40s).
+ * 4. Fade-out ultra-suave (350ms) liberando a aplicação aos 3.75s e desmontando aos 3.80s.
  */
 export const HippocampusGlobalSplash: React.FC = () => {
   const [isFadingOut, setIsFadingOut] = useState(false);
@@ -19,20 +20,20 @@ export const HippocampusGlobalSplash: React.FC = () => {
     // Garante isolamento da aplicação de fundo durante o traçado inicial
     document.documentElement.classList.add('hippo-splash-active');
 
-    // Libera a renderização da aplicação aos 3.30s quando a logo e o texto terminam de se montar
+    // Libera a renderização da aplicação aos 3.20s quando a logo e o texto terminam de se montar
     const prepareBgTimer = setTimeout(() => {
       document.documentElement.classList.remove('hippo-splash-active');
-    }, 3300);
+    }, 3200);
 
-    // Dispara o fade-out rápido aos 3.50s (após repouso estático ágil de 200ms)
+    // Dispara o fade-out rápido aos 3.40s (após repouso estático ágil de 200ms)
     const fadeTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 3500);
+    }, 3400);
 
-    // Desmonta aos 3.90s
+    // Desmonta aos 3.80s
     const destroyTimer = setTimeout(() => {
       setIsDestroyed(true);
-    }, 3900);
+    }, 3800);
 
     return () => {
       document.documentElement.classList.remove('hippo-splash-active');
@@ -85,7 +86,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* 3. Deslocamento suave do bloco do centro da tela para a esquerda (2.2s a 3.3s) */
+        /* 3. Deslocamento suave do bloco do centro da tela para a esquerda (2.0s a 3.2s) */
         @keyframes splashShiftLeft {
           0% {
             transform: translate3d(var(--hippo-shift), 0, 0);
@@ -95,18 +96,25 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* 4. Deslizamento e revelação orgânica do texto saindo de trás da logo (2.2s a 3.3s) */
-        @keyframes splashTextReveal {
+        /* 4. A palavra emerge suavemente de trás da logo do começo ao seu fim ('H' -> 'i' -> 'p'...) */
+        @keyframes splashWipeAcross {
           0% {
-            transform: translate3d(-60px, 0, 0);
-            opacity: 0;
+            -webkit-mask-position: -360px 0;
+            mask-position: -360px 0;
           }
-          35% {
-            opacity: 0.6;
+          100% {
+            -webkit-mask-position: 0px 0;
+            mask-position: 0px 0;
+          }
+        }
+
+        /* Leve deslizamento conjunto de -18px para sensação de saída contínua */
+        @keyframes splashTextSlip {
+          0% {
+            transform: translate3d(-18px, 0, 0);
           }
           100% {
             transform: translate3d(0, 0, 0);
-            opacity: 1;
           }
         }
 
@@ -131,15 +139,27 @@ export const HippocampusGlobalSplash: React.FC = () => {
           align-items: center;
           position: relative;
           will-change: transform;
-          animation: splashShiftLeft 1.1s cubic-bezier(0.16, 1, 0.3, 1) 2.2s forwards;
+          animation: splashShiftLeft 1.2s cubic-bezier(0.35, 0.0, 0.25, 1.0) 2.0s forwards;
           transform: translate3d(var(--hippo-shift), 0, 0);
         }
 
-        .hippo-splash-text-anim {
-          transform: translate3d(-60px, 0, 0);
-          opacity: 0;
-          will-change: transform, opacity;
-          animation: splashTextReveal 1.1s cubic-bezier(0.16, 1, 0.3, 1) 2.2s forwards;
+        .hippo-splash-mask-wipe {
+          -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 320px, rgba(0,0,0,0) 360px);
+          mask-image: linear-gradient(to right, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 320px, rgba(0,0,0,0) 360px);
+          -webkit-mask-size: 800px 100%;
+          mask-size: 800px 100%;
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+          -webkit-mask-position: -360px 0;
+          mask-position: -360px 0;
+          will-change: mask-position, -webkit-mask-position;
+          animation: splashWipeAcross 1.2s cubic-bezier(0.35, 0.0, 0.25, 1.0) 2.0s forwards;
+        }
+
+        .hippo-splash-text-slip {
+          will-change: transform;
+          animation: splashTextSlip 1.2s cubic-bezier(0.35, 0.0, 0.25, 1.0) 2.0s forwards;
+          transform: translate3d(-18px, 0, 0);
         }
       `}</style>
 
@@ -183,9 +203,9 @@ export const HippocampusGlobalSplash: React.FC = () => {
           </svg>
         </div>
 
-        {/* Revelação suave do texto saindo de trás da logo com gap preciso */}
-        <div style={{ position: 'relative', zIndex: 1 }}>
-          <div className="hippo-splash-text-anim flex flex-col">
+        {/* Revelação orgânica da palavra saindo suavemente de trás da logo do começo ao fim */}
+        <div className="hippo-splash-mask-wipe" style={{ position: 'relative', zIndex: 1 }}>
+          <div className="hippo-splash-text-slip flex flex-col">
             <span
               className="font-black text-2xl sm:text-4xl text-white tracking-[-0.035em] leading-none"
               style={{ fontFamily: 'var(--font-inter), Inter, system-ui, -apple-system, sans-serif' }}

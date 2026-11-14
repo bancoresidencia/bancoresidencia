@@ -38,6 +38,7 @@ import {
   UserAnswerItem
 } from '@/types';
 import { AdvancedQuestionFilters } from '@/components/AdvancedQuestionFilters';
+import { QuestionSessionTransition } from '@/components/QuestionSessionTransition';
 import { QuestionCard, HighlighterColor, HIGHLIGHTER_COLORS } from '@/components/QuestionCard';
 import { SessionPerformanceView } from '@/components/SessionPerformanceView';
 import { CreateCadernoModal } from '@/components/CreateCadernoModal';
@@ -359,12 +360,35 @@ export const QuestoesView: React.FC = () => {
   const [isCreateCadernoModalOpen, setIsCreateCadernoModalOpen] = useState(false);
   const [isCreatingListLoading, setIsCreatingListLoading] = useState(false);
 
+  // Transição com Tela de Carregamento para Iniciar Sessão de Questões
+  const [sessionTransition, setSessionTransition] = useState<{
+    isActive: boolean;
+    isFadingOut: boolean;
+    questionCount: number;
+    filterBadges: string[];
+    stepMessage: string;
+    progress: number;
+    error: string | null;
+  }>({
+    isActive: false,
+    isFadingOut: false,
+    questionCount: 0,
+    filterBadges: [],
+    stepMessage: 'Preparando caderno de questões...',
+    progress: 10,
+    error: null
+  });
+  const skipNextQuestionsFetchRef = useRef<boolean>(false);
 
   // Busca questões do Supabase com base nos filtros
   useEffect(() => {
     let isCancelled = false;
 
     const load = async () => {
+      if (skipNextQuestionsFetchRef.current) {
+        skipNextQuestionsFetchRef.current = false;
+        return;
+      }
       setIsLoadingSupabase(true);
       try {
         let questionIds: string[] | undefined;
@@ -714,6 +738,139 @@ export const QuestoesView: React.FC = () => {
     toggleBookmark
   ]);
 
+  // Transição de Alta Performance com Tela de Carregamento para Iniciar Questões
+  const handleStartSequentialSolving = async (
+    limit?: number,
+    quotas?: Record<string, number>,
+    explicitFilters?: AdvancedFilterState
+  ) => {
+    const finalLimit = limit ? Math.min(200, Math.max(1, limit)) : 200;
+    const activeFilters = explicitFilters || advancedFilters;
+    setAdvancedFilters(activeFilters);
+    advancedFiltersRef.current = activeFilters;
+    setActiveListId(null);
+    setSessionQuestionLimit(finalLimit);
+    setCurrentQuestionIndex(0);
+    setQuestionTimer(0);
+    handleStartStudySession(activeFilters);
+
+    // Constrói badges de contexto para a tela de transição
+    const badges: string[] = [];
+    if (activeFilters.modalidades?.length) badges.push(...activeFilters.modalidades);
+    if (activeFilters.especialidades?.length) badges.push(...activeFilters.especialidades);
+    if (activeFilters.temas?.length) badges.push(...activeFilters.temas);
+    if (activeFilters.instituicoes?.length) badges.push(...activeFilters.instituicoes);
+    if (badges.length === 0) badges.push('Geral');
+
+    // Abre imediatamente a tela de carregamento de transição
+    setSessionTransition({
+      isActive: true,
+      isFadingOut: false,
+      questionCount: finalLimit,
+      filterBadges: badges.slice(0, 4),
+      stepMessage: 'Selecionando questões e aplicando cotas...',
+      progress: 25,
+      error: null
+    });
+
+    const startTime = Date.now();
+    const MIN_TRANSITION_MS = 850;
+
+    try {
+      setIsLoadingSupabase(true);
+      const answeredIds = Object.keys(userAnswersRef.current);
+      const correctIds = Object.entries(userAnswersRef.current)
+        .filter(([, a]) => a.isCorrect)
+        .map(([id]) => id);
+      const wrongIds = Object.entries(userAnswersRef.current)
+        .filter(([, a]) => !a.isCorrect)
+        .map(([id]) => id);
+
+      // Passo 1: Busca balanceamento pedagógico por cotas ou critérios
+      const balancedIds = await fetchQuestionIdsForListCriteria(
+        quotas || {},
+        activeFilters,
+        finalLimit,
+        answeredIds,
+        correctIds,
+        wrongIds
+      );
+
+      setSessionTransition((prev) => ({
+        ...prev,
+        stepMessage: 'Carregando enunciados e alternativas...',
+        progress: 65
+      }));
+
+      // Passo 2: Busca lote de questões completas
+      const targetIds = balancedIds && balancedIds.length > 0 ? balancedIds : undefined;
+      const fullRes = await fetchQuestionsFromSupabase(
+        activeFilters,
+        1,
+        finalLimit,
+        targetIds
+      );
+
+      if (!fullRes.questions || fullRes.questions.length === 0) {
+        setSessionTransition((prev) => ({
+          ...prev,
+          stepMessage: 'Nenhuma questão encontrada.',
+          progress: 100,
+          error: 'Não encontramos questões para a combinação de filtros selecionada. Tente ampliar as bancas ou temas.'
+        }));
+        setIsLoadingSupabase(false);
+        return;
+      }
+
+      // Atualiza o estado das questões
+      skipNextQuestionsFetchRef.current = true;
+      if (balancedIds && balancedIds.length > 0) {
+        setSessionQuestionIds(balancedIds);
+      }
+      setSupabaseQuestions(fullRes.questions);
+      setTotalSupabaseCount(fullRes.total || fullRes.questions.length);
+
+      setSessionTransition((prev) => ({
+        ...prev,
+        stepMessage: 'Tudo pronto! Iniciando...',
+        progress: 100
+      }));
+
+      // Mantém tempo de exibição mínimo para transição fluida e perceptível
+      const elapsed = Date.now() - startTime;
+      if (elapsed < MIN_TRANSITION_MS) {
+        await new Promise((resolve) => setTimeout(resolve, MIN_TRANSITION_MS - elapsed));
+      }
+
+      // Entra no modo de resolução em background
+      setBancoMode('resolucao');
+
+      // Dispara fade-out da tela de transição
+      setSessionTransition((prev) => ({
+        ...prev,
+        isFadingOut: true
+      }));
+
+      await new Promise((resolve) => setTimeout(resolve, 320));
+
+      setSessionTransition((prev) => ({
+        ...prev,
+        isActive: false,
+        isFadingOut: false
+      }));
+    } catch (err) {
+      console.error('[QuestoesView] Erro na transição de questões:', err);
+      setSessionTransition((prev) => ({
+        ...prev,
+        stepMessage: 'Erro ao carregar.',
+        progress: 100,
+        error: 'Ocorreu uma falha ao conectar com o banco de questões. Verifique sua conexão e tente novamente.'
+      }));
+    } finally {
+      setIsLoadingSupabase(false);
+    }
+  };
+
   return (
     <div
       className={`max-w-7xl mx-auto animate-in fade-in duration-200 px-3 sm:px-6 lg:px-8 ${
@@ -722,6 +879,20 @@ export const QuestoesView: React.FC = () => {
           : 'p-4 sm:p-6 lg:p-8 space-y-4'
       }`}
     >
+      {/* Transição Elegante com Tela de Carregamento para Sessão de Questões */}
+      <QuestionSessionTransition
+        isOpen={sessionTransition.isActive}
+        isFadingOut={sessionTransition.isFadingOut}
+        questionCount={sessionTransition.questionCount}
+        stepMessage={sessionTransition.stepMessage}
+        progress={sessionTransition.progress}
+        filterBadges={sessionTransition.filterBadges}
+        error={sessionTransition.error}
+        onCancel={() => {
+          setSessionTransition((prev) => ({ ...prev, isActive: false, isFadingOut: false, error: null }));
+          handleReturnToFilters();
+        }}
+      />
       {/* Caderno Ativo (se houver) */}
       {activeListId && (
         <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-500/40 p-4 sm:p-5 rounded-3xl flex items-center justify-between gap-3 text-xs text-blue-900 dark:text-blue-300 shadow-sm shrink-0">
@@ -768,46 +939,7 @@ export const QuestoesView: React.FC = () => {
               handleStartStudySession(advancedFilters);
               setBancoMode('resolucao');
             }}
-            onStartSequentialSolving={async (limit, quotas, explicitFilters) => {
-              const finalLimit = limit ? Math.min(200, Math.max(1, limit)) : 200;
-              const activeFilters = explicitFilters || advancedFilters;
-              setAdvancedFilters(activeFilters);
-              advancedFiltersRef.current = activeFilters;
-              setActiveListId(null);
-              setSessionQuestionLimit(finalLimit);
-              setCurrentQuestionIndex(0);
-              setQuestionTimer(0);
-              handleStartStudySession(activeFilters);
-
-              try {
-                setIsLoadingSupabase(true);
-                const answeredIds = Object.keys(userAnswers);
-                const balancedIds = await fetchQuestionIdsForListCriteria(
-                  quotas || {},
-                  activeFilters,
-                  finalLimit,
-                  answeredIds
-                );
-                if (balancedIds && balancedIds.length > 0) {
-                  setSessionQuestionIds(balancedIds);
-                  const fullRes = await fetchQuestionsFromSupabase(
-                    activeFilters,
-                    1,
-                    finalLimit,
-                    balancedIds
-                  );
-                  if (fullRes.questions?.length > 0) {
-                    setSupabaseQuestions(fullRes.questions);
-                  }
-                }
-              } catch (e) {
-                console.error(e);
-              } finally {
-                setIsLoadingSupabase(false);
-              }
-
-              setBancoMode('resolucao');
-            }}
+            onStartSequentialSolving={handleStartSequentialSolving}
           />
         </div>
       ) : bancoMode === 'resultado' ? (

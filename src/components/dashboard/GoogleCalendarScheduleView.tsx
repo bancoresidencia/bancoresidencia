@@ -159,10 +159,47 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
     return [...list].sort((a, b) => a.startMinutes - b.startMinutes);
   }, [events, timelineFilter, isHospitalOrDutyEvent]);
 
-  // Contadores para o filtro
-  const studyCount = useMemo(() => events.filter(s => s.isStudySession || s.category === 'estudo' || s.category === 'flashcard' || s.category === 'revisao' || s.category === 'simulado').length, [events]);
-  const taskCount = useMemo(() => events.filter(s => s.isCalendarTask || s.source === 'google' || isHospitalOrDutyEvent(s)).length, [events, isHospitalOrDutyEvent]);
-  const googleCount = useMemo(() => events.filter(s => s.source === 'google').length, [events]);
+  // Eventos relevantes para o período visível (Dia / Semana / Mês / Ano)
+  const currentViewEvents = useMemo(() => {
+    if (viewMode === 'dia') {
+      const selectedStr = getLocalDateStr(currentDate);
+      return events.filter(s => {
+        const slotDate = s.date || (s.startTime && s.startTime.includes('-') ? s.startTime.split('T')[0] : getLocalDateStr(nowDate));
+        return slotDate === selectedStr;
+      });
+    }
+    if (viewMode === 'semana') {
+      const startOfWeek = new Date(currentDate);
+      const dayOfWeek = (startOfWeek.getDay() + 6) % 7;
+      startOfWeek.setDate(startOfWeek.getDate() - dayOfWeek);
+      startOfWeek.setHours(0, 0, 0, 0);
+      const endOfWeek = new Date(startOfWeek);
+      endOfWeek.setDate(endOfWeek.getDate() + 7);
+      return events.filter(s => {
+        const slotDate = s.date || (s.startTime && s.startTime.includes('-') ? s.startTime.split('T')[0] : getLocalDateStr(nowDate));
+        if (!slotDate || !slotDate.includes('-')) return false;
+        const [y, m, d] = slotDate.split('-').map(Number);
+        const eventDate = new Date(y, m - 1, d);
+        return eventDate >= startOfWeek && eventDate < endOfWeek;
+      });
+    }
+    if (viewMode === 'mes') {
+      const curYear = currentDate.getFullYear();
+      const curMonth = currentDate.getMonth() + 1;
+      const monthPrefix = `${curYear}-${String(curMonth).padStart(2, '0')}`;
+      return events.filter(s => {
+        const slotDate = s.date || (s.startTime && s.startTime.includes('-') ? s.startTime.split('T')[0] : getLocalDateStr(nowDate));
+        return slotDate.startsWith(monthPrefix);
+      });
+    }
+    return events;
+  }, [events, viewMode, currentDate, nowDate]);
+
+  // Contadores para o filtro baseado na visão ativa
+  const currentViewEventCount = currentViewEvents.length;
+  const studyCount = useMemo(() => currentViewEvents.filter(s => s.isStudySession || s.category === 'estudo' || s.category === 'flashcard' || s.category === 'revisao' || s.category === 'simulado').length, [currentViewEvents]);
+  const taskCount = useMemo(() => currentViewEvents.filter(s => s.isCalendarTask || s.source === 'google' || isHospitalOrDutyEvent(s)).length, [currentViewEvents, isHospitalOrDutyEvent]);
+  const googleCount = useMemo(() => currentViewEvents.filter(s => s.source === 'google').length, [currentViewEvents]);
 
   // Navegação de datas: Hoje, Anterior, Próximo
   const handleGoToday = () => {
@@ -372,7 +409,7 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
               Filtrar:
             </span>
             {[
-              { id: 'todos', label: `Todos (${events.length})` },
+              { id: 'todos', label: `Todos (${currentViewEventCount})` },
               { id: 'tarefas', label: `Tarefas (${taskCount})` },
               { id: 'estudos', label: `Sessões de Estudo (${studyCount})` },
               { id: 'google', label: `Google (${googleCount})` }
@@ -1006,8 +1043,11 @@ const WeekView: React.FC<WeekViewProps> = ({
             d.getMonth() === nowDate.getMonth() &&
             d.getFullYear() === nowDate.getFullYear();
 
-          // Atividades de hoje são mostradas na coluna correspondente
-          const dayEvents = isToday ? events : [];
+          const colDateStr = getLocalDateStr(d);
+          const dayEvents = events.filter((s) => {
+            const slotDate = s.date || (s.startTime && s.startTime.includes('-') ? s.startTime.split('T')[0] : (isToday ? colDateStr : ''));
+            return slotDate === colDateStr;
+          });
 
           return (
             <div
@@ -1109,15 +1149,31 @@ const YearView: React.FC<YearViewProps> = ({
                     nowDate.getMonth() === mIdx &&
                     nowDate.getDate() === dayNum;
 
+                  const dayDateStr = `${currentYear}-${String(mIdx + 1).padStart(2, '0')}-${String(dayNum).padStart(2, '0')}`;
+                  const hasEvents = events.some(e => {
+                    const eDate = e.date || (e.startTime && e.startTime.includes('-') ? e.startTime.split('T')[0] : '');
+                    return eDate === dayDateStr;
+                  });
+
                   return (
                     <span
                       key={dayNum}
-                      className={`py-0.5 rounded ${isToday
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        onSelectDate(new Date(currentYear, mIdx, dayNum));
+                      }}
+                      className={`py-0.5 rounded relative cursor-pointer ${isToday
                         ? 'bg-blue-600 text-white font-bold'
-                        : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                        : hasEvents
+                          ? 'font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 hover:bg-blue-500/20'
+                          : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
                         }`}
+                      title={`${dayNum} de ${mName}${hasEvents ? ' (Possui compromissos)' : ''}`}
                     >
                       {dayNum}
+                      {hasEvents && !isToday && (
+                        <span className="w-1 h-1 rounded-full bg-blue-500 absolute bottom-0.5 left-1/2 -translate-x-1/2" />
+                      )}
                     </span>
                   );
                 })}

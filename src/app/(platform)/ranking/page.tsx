@@ -63,6 +63,12 @@ export default function RankingPage() {
       const data: LeaderboardResponse = await res.json();
       if (data && data.success) {
         setLeaderboardData(data);
+        if (data.currentUser?.percentile !== undefined && data.currentUser?.percentile !== null) {
+          try {
+            localStorage.setItem('bancoresidencia_official_ranking_percentile', String(data.currentUser.percentile));
+            window.dispatchEvent(new Event('bancoresidencia_ranking_updated'));
+          } catch { }
+        }
       }
     } catch (err) {
       console.warn('[RankingPage] Usando ranking local devido a instabilidade:', err);

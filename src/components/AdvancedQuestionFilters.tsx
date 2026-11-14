@@ -1081,17 +1081,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       {/* =========================================================================
           1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1)
          ========================================================================= */}
-      <div className="w-full bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 px-3 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-3 transition-colors">
+      <div className="w-full bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] px-3 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-3 transition-colors">
         {/* Lado Esquerdo: Modalidades no topo e Botões de Ação Rápida logo abaixo */}
         <div className="flex flex-col gap-2 items-start w-full md:w-auto">
           {/* Grupo de Modalidades */}
-          <div className="flex items-center gap-1 p-0.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 w-full sm:w-auto overflow-x-auto no-scrollbar">
+          <div className="flex items-center gap-1 p-0.5 rounded-xl bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800/80 w-full sm:w-auto overflow-x-auto no-scrollbar">
             <button
               type="button"
               onClick={() => toggleModalidade('Acesso Direto')}
               className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Acesso Direto')
                   ? 'text-white font-bold shadow-xs'
-                  : 'text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+                  : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
                 }`}
               style={{
                 backgroundColor: isModalidadeActive('Acesso Direto') ? accentConfig.primaryHex : undefined
@@ -1105,7 +1105,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={() => toggleModalidade('Revalida')}
               className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Revalida')
                   ? 'text-white font-bold shadow-xs'
-                  : 'text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+                  : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
                 }`}
               style={{
                 backgroundColor: isModalidadeActive('Revalida') ? accentConfig.primaryHex : undefined
@@ -1119,7 +1119,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={() => toggleModalidade('R+')}
               className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('R+')
                   ? 'text-white font-bold shadow-xs'
-                  : 'text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+                  : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
                 }`}
               style={{
                 backgroundColor: isModalidadeActive('R+') ? accentConfig.primaryHex : undefined
@@ -1133,7 +1133,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               onClick={() => toggleModalidade('Título de Especialista')}
               className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Título de Especialista')
                   ? 'text-white font-bold shadow-xs'
-                  : 'text-slate-600 dark:text-slate-400 font-medium hover:text-slate-900 dark:hover:text-white hover:bg-slate-200/50 dark:hover:bg-slate-800/50'
+                  : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
                 }`}
               style={{
                 backgroundColor: isModalidadeActive('Título de Especialista') ? accentConfig.primaryHex : undefined
@@ -1274,7 +1274,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA ESQUERDA (57%): ESPECIALIDADES, TEMAS E SUBFOCOS
            ----------------------------------------------------------------------- */}
         <div
-          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-[calc(100dvh-275px)] min-h-[440px] lg:h-full lg:min-h-0 ${mobileTab === 'conteudo' ? 'flex' : 'hidden lg:flex'
+          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] overflow-hidden h-[calc(100dvh-275px)] min-h-[440px] lg:h-full lg:min-h-0 ${mobileTab === 'conteudo' ? 'flex' : 'hidden lg:flex'
             }`}
         >
           {/* Topo do Card de Conteúdo */}
@@ -1769,7 +1769,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA DIREITA (43%): BANCO, STATUS, DIFICULDADE, ANOS (ESTILO IMAGEM 1 & 2)
            ----------------------------------------------------------------------- */}
         <div
-          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-[calc(100dvh-275px)] min-h-[440px] lg:h-full lg:min-h-0 ${mobileTab === 'bancas' ? 'flex' : 'hidden lg:flex'
+          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] overflow-hidden h-[calc(100dvh-275px)] min-h-[440px] lg:h-full lg:min-h-0 ${mobileTab === 'bancas' ? 'flex' : 'hidden lg:flex'
             }`}
         >
           {/* Topo do Card da Direita */}
@@ -2212,7 +2212,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       {!embedded && (
         <div
           className={`fixed bottom-14 md:bottom-0 right-0 z-30 transition-all duration-300 ${isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
-            } bg-white/95 dark:bg-[#09090b]/95 backdrop-blur-md border-t border-zinc-200 dark:border-zinc-800 px-3 sm:px-6 py-2 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
+            } bg-[var(--bg-card,#ffffff)]/95 dark:bg-[var(--card,#121215)]/95 backdrop-blur-md border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] px-3 sm:px-6 py-2 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
           style={{ paddingBottom: 'max(10px, env(safe-area-inset-bottom, 10px))' }}
         >
           <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-2 sm:gap-3 w-full">

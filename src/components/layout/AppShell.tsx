@@ -20,6 +20,7 @@ import {
   Brain
 } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
+import { Logo } from '@/components/Logo';
 import { GlobalSearchBar } from '@/components/GlobalSearchBar';
 import { HeaderStudyTimer } from '@/components/HeaderStudyTimer';
 import { ThemeSelector } from '@/components/ThemeSelector';
@@ -485,12 +486,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between pb-4 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]">
-              <span
-                className="font-bold text-sm text-zinc-900 dark:text-zinc-100 tracking-[-0.6px]"
-                style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
-              >
-                Hippocampus
-              </span>
+              <Logo variant="full" className="h-7 w-auto max-w-[160px] shrink-0" />
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}

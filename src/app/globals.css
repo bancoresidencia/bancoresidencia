@@ -535,6 +535,83 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
   background-color: #18181b !important;
 }
 
+/* =========================================================================
+   ANIMAÇÃO DE ENTRADA DA CURVA GAUSSIANA DO PERCENTIL OFICIAL
+   Traçado vetorial progressivo, fade do gradiente e pop do marcador do aluno
+========================================================================= */
+@keyframes curveDrawIn {
+  from {
+    stroke-dashoffset: 420;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes curveFillIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes markerPop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.35);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes markerLineRise {
+  from {
+    stroke-dashoffset: 75;
+    opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    opacity: 0.8;
+  }
+}
+
+.animate-curve-draw {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  animation: curveDrawIn 1.2s cubic-bezier(0.2, 0.8, 0.25, 1) forwards;
+  will-change: stroke-dashoffset;
+}
+
+.animate-curve-fill {
+  opacity: 0;
+  animation: curveFillIn 0.8s ease-out 0.35s forwards;
+  will-change: opacity;
+}
+
+.animate-curve-guides {
+  animation: curveFillIn 0.6s ease-out 0.2s forwards;
+}
+
+.animate-marker-line {
+  stroke-dasharray: 75;
+  stroke-dashoffset: 75;
+  animation: markerLineRise 0.5s cubic-bezier(0.2, 0.8, 0.25, 1) 0.75s forwards;
+}
+
+.animate-marker-pop {
+  opacity: 0;
+  animation: markerPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.9s forwards;
+  will-change: transform, opacity;
+}
+
 
 /* =========================================================================
    DASHBOARD FIGMA FLUID CONTAINER QUERIES & ADAPTIVE CONTENT

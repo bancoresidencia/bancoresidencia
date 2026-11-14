@@ -293,21 +293,13 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
         {/* Barra Superior com Progresso */}
         <div className="p-4 sm:p-6 border-b border-slate-100 dark:border-zinc-800/80 bg-slate-50/70 dark:bg-zinc-900/40 shrink-0">
           <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <Logo className="w-10 h-10 shrink-0" />
-              <div>
-                <div className="flex items-center gap-2">
-                  <span
-                    className="text-sm sm:text-[15px] font-bold text-slate-900 dark:text-white tracking-[-0.6px]"
-                    style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
-                  >
-                    Hippocampus
-                  </span>
-                  <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
-                    Onboarding
-                  </span>
-                </div>
-                <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5">
+            <div className="flex items-center gap-3.5 min-w-0">
+              <Logo variant="full" className="h-8.5 sm:h-9 w-auto max-w-[180px] shrink-0" />
+              <div className="min-w-0 border-l border-slate-200 dark:border-zinc-800 pl-3">
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800 inline-block">
+                  Onboarding
+                </span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5 truncate">
                   {currentStep <= 7 ? `Passo ${currentStep} de 7 · ${stepTitles[currentStep]}` : 'Tudo pronto · Como você quer começar?'}
                 </span>
               </div>

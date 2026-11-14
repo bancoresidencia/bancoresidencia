@@ -92,7 +92,11 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
   const googleEventsByDate = useMemo(() => {
     const map: Record<string, DailyScheduleSlot[]> = {};
     for (const evt of googleEvents) {
-      const dateKey = getLocalDateStr(evt.date || evt.startTime || nowDate);
+      const dateKey = evt.date
+        ? getLocalDateStr(evt.date)
+        : (evt.startTime && evt.startTime.includes('-')
+          ? getLocalDateStr(evt.startTime)
+          : getLocalDateStr(nowDate));
       if (!dateKey) continue;
       if (!map[dateKey]) map[dateKey] = [];
       map[dateKey].push(evt);

@@ -107,23 +107,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
             title={`Hippocampus • ${modalidade}`}
             aria-label="Ir para a página inicial"
           >
-            <Logo className="w-8 h-8 shrink-0 transition-transform duration-200 group-hover:scale-105" variant="symbol" />
-
-            {!isCollapsed && (
-              <div className="text-left overflow-hidden select-none min-w-0 leading-tight">
-                <span
-                  className="font-bold text-[15px] sm:text-[16px] text-zinc-900 dark:text-zinc-100 tracking-[-0.03em] block leading-tight truncate"
-                  style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
-                >
-                  Hippocampus
-                </span>
-                <span
-                  className="text-[7.5px] font-medium text-zinc-500 dark:text-zinc-400 uppercase tracking-[0.14em] block whitespace-nowrap leading-none mt-0.5"
-                  style={{ fontFamily: 'var(--font-inter), Inter, sans-serif' }}
-                >
-                  QUESTÕES DE RESIDÊNCIA
-                </span>
-              </div>
+            {isCollapsed ? (
+              <Logo className="w-8 h-8 shrink-0 transition-transform duration-200 group-hover:scale-105" variant="symbol" />
+            ) : (
+              <Logo className="h-8.5 w-auto max-w-[170px] shrink-0 transition-transform duration-200 group-hover:scale-102" variant="full" />
             )}
           </Link>
 
