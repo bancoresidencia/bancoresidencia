@@ -17,7 +17,8 @@ import {
   Lightbulb,
   Trash2,
   BookOpen,
-  Search
+  Search,
+  LogOut
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
@@ -165,6 +166,16 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     return '';
   });
 
+  const displayEmail = useMemo(() => {
+    if (googleCalendarAccount && googleCalendarAccount !== 'Minha Agenda' && googleCalendarAccount.includes('@')) {
+      return googleCalendarAccount;
+    }
+    if (user?.email && user.email.includes('@')) {
+      return user.email;
+    }
+    return googleCalendarAccount && googleCalendarAccount !== 'Minha Agenda' ? googleCalendarAccount : (user?.email || 'Google Agenda');
+  }, [googleCalendarAccount, user?.email]);
+
   const [realCalendarEvents, setRealCalendarEvents] = useState<DailyScheduleSlot[]>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('bancoresidencia_real_calendar_events');
@@ -292,18 +303,82 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     };
   }, [todaySessions]);
 
-  // Sincronização segura: restaura integração permanente do Google Calendar via backend
+  // Sincronização segura: restaura integração permanente do Google Calendar via backend e busca eventos
   useEffect(() => {
-    checkGoogleCalendarStatus().then((status) => {
+    let isCancelled = false;
+
+    checkGoogleCalendarStatus().then(async (status) => {
+      if (isCancelled) return;
       if (status.connected) {
         setIsGoogleCalendarConnected(true);
         setCalendarSyncMode('api');
         if (status.email) {
           setGoogleCalendarAccount(status.email);
         }
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
+          localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
+          if (status.email) {
+            localStorage.setItem('bancoresidencia_google_calendar_account', status.email);
+          }
+        }
+
+        // Auto-fetch automático de eventos do Google Calendar ao abrir a página em qualquer aparelho
+        try {
+          const events = await fetchTodayEventsFromGoogleApi();
+          if (!isCancelled && Array.isArray(events)) {
+            setRealCalendarEvents(events as any);
+            const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+            setLastCalendarSyncTime(nowStr);
+            if (typeof window !== 'undefined') {
+              localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+              localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+            }
+          }
+        } catch (fetchErr) {
+          console.warn('[AgendaView] Auto-fetch do Google Agenda:', fetchErr);
+        }
       }
     });
-  }, []);
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [user?.id]);
+
+  // Sincronização periódica contínua e ao voltar para a aba do navegador
+  useEffect(() => {
+    if (!isGoogleCalendarConnected || calendarSyncMode !== 'api') return;
+
+    const autoSync = async () => {
+      try {
+        const events = await fetchTodayEventsFromGoogleApi();
+        if (Array.isArray(events)) {
+          setRealCalendarEvents(events as any);
+          const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+          setLastCalendarSyncTime(nowStr);
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+            localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+          }
+        }
+      } catch {
+        // Silencioso em background
+      }
+    };
+
+    const handleFocus = () => {
+      autoSync();
+    };
+
+    window.addEventListener('focus', handleFocus);
+    const intervalTimer = setInterval(autoSync, 5 * 60 * 1000); // A cada 5 minutos
+
+    return () => {
+      window.removeEventListener('focus', handleFocus);
+      clearInterval(intervalTimer);
+    };
+  }, [isGoogleCalendarConnected, calendarSyncMode]);
 
   // Sincronização e carregamento de tarefas vinculadas à conta do aluno
   useEffect(() => {
@@ -729,8 +804,8 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     }
   };
 
-  const handleDisconnectGoogleCalendar = () => {
-    disconnectGoogleCalendarApi();
+  const handleDisconnectGoogleCalendar = async () => {
+    await disconnectGoogleCalendarApi();
     setIsGoogleCalendarConnected(false);
     setRealCalendarEvents([]);
     setGoogleAccessToken('');
@@ -822,6 +897,27 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       console.warn('Erro ao salvar tarefa na conta do aluno:', err);
     });
 
+    // Se o Google Agenda estiver conectado, grava automaticamente no Google
+    if (calendarSyncMode === 'api' && (googleAccessToken || isGoogleCalendarConnected)) {
+      createEventInGoogleCalendarApi(googleAccessToken, {
+        title: newTask.title,
+        startTime: newTask.startTime,
+        endTime: newTask.endTime,
+        description: cleanEventDescription(newTask.description),
+        location: newTask.location
+      }).then(() => {
+        setExportedSlotIds(prev => {
+          const next = { ...prev, [newTask.id]: true };
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+          }
+          return next;
+        });
+      }).catch((err) => {
+        console.warn('[AgendaView] Erro ao sincronizar automaticamente nova tarefa com Google:', err);
+      });
+    }
+
     setTaskTitle('');
     setTaskDescription('');
     setShowCreateTaskModal(false);
@@ -850,6 +946,19 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         date: getLocalDateStr(new Date())
       });
 
+      // Se o Google Agenda estiver conectado, grava automaticamente no Google
+      if (calendarSyncMode === 'api' && (googleAccessToken || isGoogleCalendarConnected)) {
+        createEventInGoogleCalendarApi(googleAccessToken, {
+          title: `Estudo: ${topicLabel}`,
+          startTime: manualStudyStart,
+          endTime: manualStudyEnd,
+          description: `Sessão de estudo registrada no Banco Residência.\nAssunto: ${topicLabel}`,
+          location: 'Plataforma Banco Residência'
+        }).catch((err) => {
+          console.warn('[AgendaView] Erro ao sincronizar sessão de estudo com Google:', err);
+        });
+      }
+
       setManualStudyTaxonomy({});
       setTaxonomyQuery('');
       setShowManualStudyModal(false);
@@ -864,7 +973,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   const handleExportSlotToGoogle = async (slot: DailyScheduleSlot) => {
     setExportingSlotId(slot.id);
     try {
-      if (calendarSyncMode === 'api' && googleAccessToken) {
+      if (calendarSyncMode === 'api' && (googleAccessToken || isGoogleCalendarConnected)) {
         await createEventInGoogleCalendarApi(googleAccessToken, {
           title: slot.title,
           startTime: slot.startTime,
@@ -940,7 +1049,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     setCalendarSyncError(null);
 
     try {
-      if (calendarSyncMode === 'api' && googleAccessToken) {
+      if (calendarSyncMode === 'api' && (googleAccessToken || isGoogleCalendarConnected)) {
         const batchInputs = tasksToSync.map(t => ({
           title: t.title,
           startTime: t.startTime,
@@ -1245,20 +1354,62 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         {/* ── COLUNA ESQUERDA: CONTROLE E SESSÕES REALIZADAS DO DIA (lg:col-span-5) ── */}
         <div className="lg:col-span-5 space-y-4">
 
-          {/* Botão Sincronizar Google Agenda */}
-          <button
-            type="button"
-            onClick={isGoogleCalendarConnected ? handleSyncNow : () => setIsGoogleModalOpen(true)}
-            disabled={isSyncingCalendar}
-            className="w-full px-4 py-2.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-800 dark:text-zinc-200 flex items-center justify-center gap-2 shadow-2xs transition-all cursor-pointer disabled:opacity-50"
-            title={isGoogleCalendarConnected ? "Sincronizar Google Agenda agora" : "Conectar e Sincronizar Google Agenda"}
-          >
-            <GoogleIcon className="w-4 h-4 shrink-0" />
-            <span>{isSyncingCalendar ? 'Sincronizando...' : 'Sincronizar Google Agenda'}</span>
-            {isGoogleCalendarConnected && (
-              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" title="Google Agenda Conectada" />
-            )}
-          </button>
+          {/* Card de Status da Integração Google Agenda (Auto-sync, Email, Sync Manual e Sair) */}
+          {isGoogleCalendarConnected ? (
+            <div className="w-full px-3.5 py-2.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] text-xs text-zinc-800 dark:text-zinc-200 flex items-center justify-between gap-2 shadow-2xs transition-all">
+              <div className="flex items-center gap-2.5 min-w-0 flex-1">
+                <GoogleIcon className="w-4 h-4 shrink-0" />
+                <div className="flex flex-col min-w-0">
+                  <div className="flex items-center gap-1.5 min-w-0">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 animate-pulse" title="Sincronização automática ativa" />
+                    <span
+                      className="truncate text-xs font-bold text-zinc-900 dark:text-zinc-100"
+                      title={displayEmail}
+                    >
+                      {displayEmail}
+                    </span>
+                  </div>
+                  <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium truncate">
+                    {isSyncingCalendar ? 'Sincronizando...' : 'Sincronização automática ativa'}
+                  </span>
+                </div>
+              </div>
+
+              {/* Botões de Ação: Sincronização Manual e Sair da Conta */}
+              <div className="flex items-center gap-1 shrink-0">
+                <button
+                  type="button"
+                  onClick={handleSyncNow}
+                  disabled={isSyncingCalendar}
+                  className="p-1.5 rounded-xl text-zinc-400 hover:text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-colors cursor-pointer disabled:opacity-40"
+                  title="Sincronizar manualmente agora"
+                  aria-label="Sincronizar manualmente agora"
+                >
+                  <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin text-blue-500' : ''}`} />
+                </button>
+                <button
+                  type="button"
+                  onClick={handleDisconnectGoogleCalendar}
+                  className="p-1.5 rounded-xl text-zinc-400 hover:text-rose-500 hover:bg-rose-50 dark:hover:bg-rose-950/30 transition-colors cursor-pointer"
+                  title={`Sair da conta (${displayEmail})`}
+                  aria-label="Sair desta conta do Google Agenda"
+                >
+                  <LogOut className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            </div>
+          ) : (
+            <button
+              type="button"
+              onClick={() => setIsGoogleModalOpen(true)}
+              disabled={isSyncingCalendar}
+              className="w-full px-4 py-2.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-800 dark:text-zinc-200 flex items-center justify-center gap-2 shadow-2xs transition-all cursor-pointer disabled:opacity-50"
+              title="Conectar sua conta do Google Agenda"
+            >
+              <GoogleIcon className="w-4 h-4 shrink-0" />
+              <span>Conectar Google Agenda</span>
+            </button>
+          )}
 
           {/* ── SESSÕES DE ESTUDO REALIZADAS HOJE (A MAIS RECENTE NO TOPO) ── */}
           <div className="p-4 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-xs space-y-3">

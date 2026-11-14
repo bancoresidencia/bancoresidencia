@@ -4,38 +4,34 @@ import React, { useEffect, useState } from 'react';
 
 /**
  * Splash Screen Global Oficial do Hippocampus • Questões de Residência
- * Arquitetura de Alto Rendimento com Aceleração de Hardware:
- * 1. Isolamento prévio de CPU/GPU via content-visibility: hidden na aplicação de fundo.
- * 2. Simbologia com 2 linhas vetoriais fiéis ao SVG (borda reta stroke-linecap="butt", espessura 132).
- * 3. Movimento harmônico em crescente da DIREITA para a ESQUERDA seguindo a curvatura anatômica dos traçados.
- *    - Linha externa: 4157px (3.2s, cubic-bezier(0.35, 0.0, 0.15, 1.0))
- *    - Linha interna: 2217px (3.0s, cubic-bezier(0.35, 0.0, 0.15, 1.0), sincronizada da direita para esquerda)
- * 4. Traçado ultra-fluido a 60/120 FPS via CSS Keyframes puros acelerados na GPU e shape-rendering="geometricPrecision".
- * 5. Ao concluir o traçado, o nome em linha única desliza suavemente saindo de trás do símbolo da ESQUERDA para a DIREITA (1.3s).
- * 6. A marca repousa na tela completa antes de realizar um fade-out suave de transição (800ms).
+ * 1. Simbologia nasce perfeitamente no centro absoluto da tela e se desenha em crescente da DIREITA para a ESQUERDA (0.0s a 0.85s).
+ * 2. Transição orgânica (0.70s a 1.25s): a logo desliza suavemente para a esquerda enquanto o texto emerge para a direita.
+ * 3. Máscara gradiente alfa de esvaecimento (zero corte reto, zero quadrado rígido).
+ * 4. Repouso relâmpago de 150ms (1.25s a 1.40s).
+ * 5. Fade-out ultra-suave (300ms) liberando a plataforma instantaneamente aos ~1.70s.
  */
 export const HippocampusGlobalSplash: React.FC = () => {
   const [isFadingOut, setIsFadingOut] = useState(false);
   const [isDestroyed, setIsDestroyed] = useState(false);
 
   useEffect(() => {
-    // Garante classe ativa durante a animação
+    // Garante isolamento da aplicação de fundo durante o traçado inicial
     document.documentElement.classList.add('hippo-splash-active');
 
-    // Libera a renderização da aplicação de fundo um pouco antes do fade-out para evitar stutter
+    // Libera a renderização da aplicação aos 1.30s para transição 100% suave
     const prepareBgTimer = setTimeout(() => {
       document.documentElement.classList.remove('hippo-splash-active');
-    }, 5000);
+    }, 1300);
 
-    // Inicia o fade-out suave
+    // Dispara o fade-out rápido aos 1.40s
     const fadeTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 5200);
+    }, 1400);
 
-    // Desmonta o componente após o fade-out
+    // Desmonta aos 1.70s
     const destroyTimer = setTimeout(() => {
       setIsDestroyed(true);
-    }, 6000);
+    }, 1700);
 
     return () => {
       document.documentElement.classList.remove('hippo-splash-active');
@@ -51,15 +47,15 @@ export const HippocampusGlobalSplash: React.FC = () => {
 
   return (
     <div
-      className={`fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#09090b] text-white select-none transition-opacity duration-800 ease-in-out ${
+      className={`fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#09090b] text-white select-none transition-opacity duration-300 ease-in-out ${
         isFadingOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       role="status"
       aria-label="Carregando Hippocampus"
     >
       <style>{`
-        /* Traçado Ultra-Fluido da Linha Externa (da Direita para a Esquerda) */
-        @keyframes drawOuterSilky {
+        /* 1. Traçado da Linha Externa (0.0s a 0.85s) */
+        @keyframes splashOuterDraw {
           0% {
             stroke-dashoffset: 4157;
           }
@@ -68,8 +64,8 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* Traçado Ultra-Fluido da Linha Interna (da Direita para a Esquerda sincronizado) */
-        @keyframes drawInnerSilky {
+        /* 2. Traçado da Linha Interna (0.05s a 0.80s) */
+        @keyframes splashInnerDraw {
           0% {
             stroke-dashoffset: -2217;
           }
@@ -78,14 +74,24 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* Deslizamento do texto saindo de trás do símbolo da Esquerda para a Direita */
-        @keyframes slideTextSilky {
+        /* 3. Deslocamento suave do bloco do centro da tela para a esquerda (0.70s a 1.25s) */
+        @keyframes splashShiftLeft {
           0% {
-            transform: translate3d(-105%, 0, 0);
+            transform: translate3d(130px, 0, 0);
+          }
+          100% {
+            transform: translate3d(0, 0, 0);
+          }
+        }
+
+        /* 4. Deslizamento do texto saindo de trás da logo para a direita (0.70s a 1.25s) */
+        @keyframes splashTextReveal {
+          0% {
+            transform: translate3d(-100%, 0, 0);
             opacity: 0;
           }
-          30% {
-            opacity: 0.7;
+          20% {
+            opacity: 0.8;
           }
           100% {
             transform: translate3d(0, 0, 0);
@@ -93,90 +99,108 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* Iluminação sutil e respiração pós-revelação da marca completa */
-        @keyframes brandGlowSilky {
+        /* 5. Máscara gradiente com fade suave na saída (elimina corte reto e quinas duras) */
+        @keyframes splashMaskTransition {
           0% {
-            filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+            mask-image: linear-gradient(to right, transparent 0px, transparent 15px, rgba(0,0,0,1) 50px, rgba(0,0,0,1) 100%);
+            -webkit-mask-image: linear-gradient(to right, transparent 0px, transparent 15px, rgba(0,0,0,1) 50px, rgba(0,0,0,1) 100%);
+          }
+          85% {
+            mask-image: linear-gradient(to right, transparent 0px, rgba(0,0,0,1) 20px, rgba(0,0,0,1) 100%);
+            -webkit-mask-image: linear-gradient(to right, transparent 0px, rgba(0,0,0,1) 20px, rgba(0,0,0,1) 100%);
           }
           100% {
-            filter: drop-shadow(0 2px 24px rgba(255, 255, 255, 0.20));
+            mask-image: none;
+            -webkit-mask-image: none;
           }
         }
 
-        .hippo-path-outer-silky {
+        .hippo-splash-path-outer {
           stroke-dasharray: 4157;
           stroke-dashoffset: 4157;
           will-change: stroke-dashoffset;
           shape-rendering: geometricPrecision;
-          animation: drawOuterSilky 3.2s cubic-bezier(0.35, 0.0, 0.15, 1.0) 0.1s forwards;
+          animation: splashOuterDraw 0.85s cubic-bezier(0.35, 0.0, 0.15, 1.0) forwards;
         }
 
-        .hippo-path-inner-silky {
+        .hippo-splash-path-inner {
           stroke-dasharray: 2217;
           stroke-dashoffset: -2217;
           will-change: stroke-dashoffset;
           shape-rendering: geometricPrecision;
-          animation: drawInnerSilky 3.0s cubic-bezier(0.35, 0.0, 0.15, 1.0) 0.18s forwards;
+          animation: splashInnerDraw 0.80s cubic-bezier(0.35, 0.0, 0.15, 1.0) 0.05s forwards;
         }
 
-        .hippo-text-slider-silky {
-          transform: translate3d(-105%, 0, 0);
+        .hippo-splash-container {
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          position: relative;
+          will-change: transform;
+          animation: splashShiftLeft 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.70s forwards;
+          transform: translate3d(130px, 0, 0); /* Inicia com a logo no centro exato da tela */
+        }
+
+        .hippo-splash-mask {
+          overflow: hidden;
+          padding: 4px 6px;
+          animation: splashMaskTransition 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.70s forwards;
+        }
+
+        .hippo-splash-slider {
+          transform: translate3d(-100%, 0, 0);
           opacity: 0;
           will-change: transform, opacity;
-          animation: slideTextSilky 1.3s cubic-bezier(0.16, 1, 0.3, 1) 3.0s forwards;
-        }
-
-        .hippo-container-glow {
-          animation: brandGlowSilky 2.0s ease-out 3.5s forwards;
-          transform: translate3d(0, 0, 0);
-          backface-visibility: hidden;
+          animation: splashTextReveal 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.70s forwards;
         }
       `}</style>
 
-      {/* Container Principal da Marca com Promoção na GPU */}
-      <div className="flex items-center gap-4 sm:gap-5 relative hippo-container-glow">
-        {/* Simbologia (2 Linhas com bordas retas originais stroke-linecap="butt", traçado em crescente da direita para esquerda) */}
-        <svg
-          viewBox="0 0 2160 1920"
-          style={{
-            width: '84px',
-            height: '74px',
-            minWidth: '84px',
-            transform: 'translate3d(0, 0, 0)',
-            backfaceVisibility: 'hidden'
-          }}
-          className="shrink-0 overflow-visible relative z-10"
-          shapeRendering="geometricPrecision"
-          aria-hidden="true"
-        >
-          {/* Linha 1 Externa (4157px, desenha da DIREITA para a ESQUERDA com ponta RETA) */}
-          <path
-            className="hippo-path-outer-silky"
-            fill="none"
-            stroke="#ffffff"
-            strokeWidth={132}
-            strokeMiterlimit={10}
-            strokeLinecap="butt"
+      {/* Container Principal da Marca com Translação Inicial no Centro */}
+      <div className="hippo-splash-container">
+        {/* Simbologia (2 Linhas com bordas retas originais stroke-linecap="butt", em z-index superior ao texto) */}
+        <div style={{ position: 'relative', zIndex: 10 }}>
+          <svg
+            viewBox="0 0 2160 1920"
+            style={{
+              width: '84px',
+              height: '74px',
+              minWidth: '84px',
+              transform: 'translate3d(0, 0, 0)',
+              backfaceVisibility: 'hidden'
+            }}
+            className="shrink-0 overflow-visible"
             shapeRendering="geometricPrecision"
-            d="M 1270.756 1336.094 C 1270.756 1971.842 2360.998 1072.751 1670.993 488.16 C 1357.793 222.808 675.35 161.911 362.047 674.876 C 362.047 674.876 184.287 959.785 298.333 1070.475 C 422.801 1191.281 673.215 1042.009 854.033 1157.092"
-          />
+            aria-hidden="true"
+          >
+            {/* Linha Externa (4157px, desenha da DIREITA para a ESQUERDA) */}
+            <path
+              className="hippo-splash-path-outer"
+              fill="none"
+              stroke="#ffffff"
+              strokeWidth={132}
+              strokeMiterlimit={10}
+              strokeLinecap="butt"
+              shapeRendering="geometricPrecision"
+              d="M 1270.756 1336.094 C 1270.756 1971.842 2360.998 1072.751 1670.993 488.16 C 1357.793 222.808 675.35 161.911 362.047 674.876 C 362.047 674.876 184.287 959.785 298.333 1070.475 C 422.801 1191.281 673.215 1042.009 854.033 1157.092"
+            />
 
-          {/* Linha 2 Interna (2217px, desenha da DIREITA para a ESQUERDA sincronizada em crescente com ponta RETA) */}
-          <path
-            className="hippo-path-inner-silky"
-            fill="none"
-            stroke="#ffffff"
-            strokeWidth={132}
-            strokeMiterlimit={10}
-            strokeLinecap="butt"
-            shapeRendering="geometricPrecision"
-            d="M 718.74 906.921 C 882.704 405.986 1702.884 702.375 1543.416 1022.75 C 1373.738 1363.638 1050.008 860.221 842.727 1632.282"
-          />
-        </svg>
+            {/* Linha Interna (2217px, desenha da DIREITA para a ESQUERDA sincronizada) */}
+            <path
+              className="hippo-splash-path-inner"
+              fill="none"
+              stroke="#ffffff"
+              strokeWidth={132}
+              strokeMiterlimit={10}
+              strokeLinecap="butt"
+              shapeRendering="geometricPrecision"
+              d="M 718.74 906.921 C 882.704 405.986 1702.884 702.375 1543.416 1022.75 C 1373.738 1363.638 1050.008 860.221 842.727 1632.282"
+            />
+          </svg>
+        </div>
 
-        {/* Máscara de revelação do texto: desliza suavemente saindo de trás do símbolo da esquerda para a direita */}
-        <div className="overflow-hidden flex flex-col justify-center pl-1 py-1">
-          <div className="hippo-text-slider-silky flex flex-col">
+        {/* Máscara de revelação do texto: desliza saindo de trás do símbolo com esvaecimento gradiente suave */}
+        <div className="hippo-splash-mask" style={{ position: 'relative', zIndex: 1 }}>
+          <div className="hippo-splash-slider flex flex-col">
             <span
               className="font-black text-3xl sm:text-4xl text-white tracking-[-0.035em] leading-none"
               style={{ fontFamily: 'var(--font-inter), Inter, system-ui, -apple-system, sans-serif' }}

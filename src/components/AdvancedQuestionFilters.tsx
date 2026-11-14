@@ -298,7 +298,14 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       parts.push(filters.dificuldade);
     }
     if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-      parts.push(filters.tipoQuestao === 'Múltipla escolha' ? 'Múltipla' : filters.tipoQuestao);
+      const label = filters.tipoQuestao === 'Múltipla escolha'
+        ? 'Múltipla'
+        : (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva')
+          ? 'Discursiva'
+          : (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso' || filters.tipoQuestao === 'Certo e Errado')
+            ? 'Certo/Errado'
+            : filters.tipoQuestao;
+      parts.push(label);
     }
     if (filters.ocultarAnuladasErro) {
       parts.push('Sem anuladas');
@@ -1034,9 +1041,16 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
     // Formato
     if (filters.tipoQuestao !== 'Todas') {
+      const formatLabel = filters.tipoQuestao === 'Múltipla escolha'
+        ? 'Múltipla'
+        : (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva')
+          ? 'Discursiva'
+          : (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso' || filters.tipoQuestao === 'Certo e Errado')
+            ? 'Certo/Errado'
+            : filters.tipoQuestao;
       tags.push({
         id: 'tipoQ',
-        label: `Formato: ${filters.tipoQuestao === 'Múltipla escolha' ? 'Múltipla' : filters.tipoQuestao}`,
+        label: `Formato: ${formatLabel}`,
         onRemove: () => onChange({ ...filters, tipoQuestao: 'Todas' })
       });
     }
@@ -1063,11 +1077,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   }, [filters]);
 
   return (
-    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2.5 font-sans select-none pb-[calc(env(safe-area-inset-bottom,0px)+128px)] sm:pb-32 lg:pb-16">
+    <div className="text-slate-900 dark:text-slate-100 flex flex-col justify-between min-h-0 space-y-2.5 font-sans select-none">
       {/* =========================================================================
-          1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1)
+          1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1) - BARRA FIXA SUPERIOR
          ========================================================================= */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 px-3 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-3">
+      <div className="sticky top-16 z-20 bg-white/95 dark:bg-[var(--bg-card)]/95 backdrop-blur-md border border-zinc-200 dark:border-zinc-800/80 px-3 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-3 transition-colors">
         {/* Lado Esquerdo: Modalidades no topo e Botões de Ação Rápida logo abaixo */}
         <div className="flex flex-col gap-2 items-start w-full md:w-auto">
           {/* Grupo de Modalidades */}
@@ -1260,7 +1274,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA ESQUERDA (57%): ESPECIALIDADES, TEMAS E SUBFOCOS
            ----------------------------------------------------------------------- */}
         <div
-          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0 max-h-[65vh] lg:max-h-none ${mobileTab === 'conteudo' ? 'flex' : 'hidden lg:flex'
+          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-[calc(100dvh-290px)] min-h-[460px] lg:h-[calc(100dvh-235px)] lg:min-h-[520px] ${mobileTab === 'conteudo' ? 'flex' : 'hidden lg:flex'
             }`}
         >
           {/* Topo do Card de Conteúdo */}
@@ -1752,171 +1766,170 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         </div>
 
         {/* -----------------------------------------------------------------------
-            COLUNA DA DIREITA (43%): BANCO, STATUS, DIFICULDADE, ANOS (ESTILO IMAGEM 1)
+            COLUNA DA DIREITA (43%): BANCO, STATUS, DIFICULDADE, ANOS (ESTILO IMAGEM 1 & 2)
            ----------------------------------------------------------------------- */}
         <div
-          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0 space-y-3 ${mobileTab === 'bancas' ? 'flex' : 'hidden lg:flex'
+          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-[calc(100dvh-290px)] min-h-[460px] lg:h-[calc(100dvh-235px)] lg:min-h-[520px] ${mobileTab === 'bancas' ? 'flex' : 'hidden lg:flex'
             }`}
         >
-          {/* 1. Instituições e Bancas */}
-          <div className="space-y-1.5 shrink-0">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
-                <Building2 className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
-                <span>Instituições e Bancas</span>
-              </div>
-              <button
-                type="button"
-                onClick={() => setShowAllUfModal(true)}
-                className="text-[11px] font-semibold cursor-pointer hover:underline transition-colors"
-                style={{ color: accentConfig.primaryHex }}
-              >
-                Ver todas por UF &gt;
-              </button>
+          {/* Topo do Card da Direita */}
+          <div className="flex items-center justify-between pb-2.5 border-b border-zinc-100 dark:border-zinc-800/80 mb-2 shrink-0">
+            <div className="flex items-center gap-2 text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
+              <Building2 className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
+              <span>Instituições e Bancas</span>
             </div>
-
-            <div className="relative">
-              <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
-              <input
-                type="text"
-                value={instSearch}
-                onChange={(e) => setInstSearch(e.target.value)}
-                placeholder={
-                  isOnlyRevalida
-                    ? 'Buscar banca do Revalida (ex: INEP, UFMT, UEPA, USP)...'
-                    : (isModalidadeActive('R+') || isModalidadeActive('Título de Especialista')) && !isModalidadeActive('Acesso Direto')
-                      ? 'Buscar sociedade ou título (ex: TEGO, TEP, TECM, SBC)...'
-                      : 'Buscar banca por sigla, nome ou estado (ex: ENARE, USP, SURCE, SP...)'
-                }
-                className="w-full rounded-xl pl-9 pr-8 py-2 sm:py-1.5 text-base sm:text-xs min-h-[44px] sm:min-h-0 text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] font-sans"
-              />
-              {instSearch && (
-                <button
-                  type="button"
-                  onClick={() => setInstSearch('')}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200"
-                >
-                  <X className="w-3 h-3" />
-                </button>
-              )}
-            </div>
-
-            {/* Sugestões de Busca se digitou */}
-            {filteredBancasSearch.length > 0 && (
-              <div
-                className="p-2 rounded-xl space-y-1 text-xs bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-md"
-              >
-                {filteredBancasSearch.map((b) => (
-                  <button
-                    key={b.sigla}
-                    type="button"
-                    onClick={() => {
-                      toggleInstituicao(getCanonicalBancaKey(b.sigla));
-                      setInstSearch('');
-                    }}
-                    className="w-full text-left px-2 py-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white flex items-center justify-between"
-                  >
-                    <span>{b.sigla} - {b.nome}</span>
-                    <span className="text-[10px] font-semibold" style={{ color: accentConfig.primaryHex }}>+ Adicionar</span>
-                  </button>
-                ))}
-              </div>
-            )}
-
-            {/* Tags de Bancas Selecionadas com 'x' */}
-            {filters.instituicoes.length > 0 && (
-              <div className="flex flex-wrap gap-1.5 pt-1">
-                {filters.instituicoes.map((inst) => (
-                  <span
-                    key={inst}
-                    className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg text-[11px] font-semibold border shadow-xs"
-                    style={{
-                      backgroundColor: accentConfig.bgRgba,
-                      borderColor: accentConfig.borderRgba,
-                      color: accentConfig.primaryHex
-                    }}
-                  >
-                    <span>{inst}</span>
-                    <button
-                      type="button"
-                      onClick={() => toggleInstituicao(inst)}
-                      className="hover:opacity-75 cursor-pointer text-[10px] ml-0.5"
-                    >
-                      ✕
-                    </button>
-                  </span>
-                ))}
-              </div>
-            )}
-
-            {/* Chips das Mais Concorridas */}
-            <div className="flex flex-wrap gap-1.5 pt-1">
-              {activeQuickBancas.map((banca) => {
-                const canonicalTarget = getCanonicalBancaKey(banca.key);
-                const isSelected = filters.instituicoes.some(
-                  (inst) => getCanonicalBancaKey(inst).toLowerCase() === canonicalTarget.toLowerCase()
-                );
-                return (
-                  <button
-                    key={banca.key}
-                    type="button"
-                    onClick={() => toggleInstituicao(banca.key)}
-                    className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all cursor-pointer flex items-center gap-1 border ${isSelected
-                        ? 'text-white shadow-xs'
-                        : 'bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/70 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-zinc-100'
-                      }`}
-                    style={{
-                      backgroundColor: isSelected ? accentConfig.primaryHex : undefined,
-                      borderColor: isSelected ? accentConfig.primaryHex : undefined,
-                      color: isSelected ? '#ffffff' : undefined
-                    }}
-                  >
-                    <span>{isSelected ? '✓' : '+'}</span>
-                    <span>{banca.label}</span>
-                  </button>
-                );
-              })}
-            </div>
+            <button
+              type="button"
+              onClick={() => setShowAllUfModal(true)}
+              className="text-[11px] font-semibold cursor-pointer hover:underline transition-colors"
+              style={{ color: accentConfig.primaryHex }}
+            >
+              Ver todas por UF &gt;
+            </button>
           </div>
 
-          {/* 2. Status da Questão (Integrado ao Histórico do Aluno no Supabase) */}
-          <div className="space-y-2 pt-2 border-t border-zinc-100 dark:border-zinc-800/80 shrink-0">
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100">Status da Questão</span>
-            </div>
-            <div className="flex sm:grid sm:grid-cols-5 gap-1.5 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto no-scrollbar">
-              {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
-                (st) => {
-                  const isActive = filters.status === st;
+          {/* ROLAGEM INTERNA CONJUNTA DOS FILTROS DA DIREITA (IMAGEM 2) */}
+          <div className="flex-1 min-h-0 overflow-y-auto pr-1.5 custom-scrollbar space-y-3">
+            {/* 1. Busca e Chips de Bancas */}
+            <div className="space-y-1.5">
+              <div className="relative">
+                <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
+                <input
+                  type="text"
+                  value={instSearch}
+                  onChange={(e) => setInstSearch(e.target.value)}
+                  placeholder={
+                    isOnlyRevalida
+                      ? 'Buscar banca do Revalida (ex: INEP, UFMT, UEPA, USP)...'
+                      : (isModalidadeActive('R+') || isModalidadeActive('Título de Especialista')) && !isModalidadeActive('Acesso Direto')
+                        ? 'Buscar sociedade ou título (ex: TEGO, TEP, TECM, SBC)...'
+                        : 'Buscar banca por sigla, nome ou estado (ex: ENARE, USP, SURCE, SP...)'
+                  }
+                  className="w-full rounded-xl pl-9 pr-8 py-2 sm:py-1.5 text-base sm:text-xs min-h-[44px] sm:min-h-0 text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] font-sans"
+                />
+                {instSearch && (
+                  <button
+                    type="button"
+                    onClick={() => setInstSearch('')}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200"
+                  >
+                    <X className="w-3 h-3" />
+                  </button>
+                )}
+              </div>
 
+              {/* Sugestões de Busca se digitou */}
+              {filteredBancasSearch.length > 0 && (
+                <div
+                  className="p-2 rounded-xl space-y-1 text-xs bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-md"
+                >
+                  {filteredBancasSearch.map((b) => (
+                    <button
+                      key={b.sigla}
+                      type="button"
+                      onClick={() => {
+                        toggleInstituicao(getCanonicalBancaKey(b.sigla));
+                        setInstSearch('');
+                      }}
+                      className="w-full text-left px-2 py-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white flex items-center justify-between"
+                    >
+                      <span>{b.sigla} - {b.nome}</span>
+                      <span className="text-[10px] font-semibold" style={{ color: accentConfig.primaryHex }}>+ Adicionar</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Tags de Bancas Selecionadas com 'x' */}
+              {filters.instituicoes.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 pt-1">
+                  {filters.instituicoes.map((inst) => (
+                    <span
+                      key={inst}
+                      className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg text-[11px] font-semibold border shadow-xs"
+                      style={{
+                        backgroundColor: accentConfig.bgRgba,
+                        borderColor: accentConfig.borderRgba,
+                        color: accentConfig.primaryHex
+                      }}
+                    >
+                      <span>{inst}</span>
+                      <button
+                        type="button"
+                        onClick={() => toggleInstituicao(inst)}
+                        className="hover:opacity-75 cursor-pointer text-[10px] ml-0.5"
+                      >
+                        ✕
+                      </button>
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              {/* Chips das Mais Concorridas */}
+              <div className="flex flex-wrap gap-1.5 pt-1">
+                {activeQuickBancas.map((banca) => {
+                  const canonicalTarget = getCanonicalBancaKey(banca.key);
+                  const isSelected = filters.instituicoes.some(
+                    (inst) => getCanonicalBancaKey(inst).toLowerCase() === canonicalTarget.toLowerCase()
+                  );
                   return (
                     <button
-                      key={st}
+                      key={banca.key}
                       type="button"
-                      onClick={() => onChange({ ...filters, status: st })}
-                      className={`py-2 px-3 sm:py-1.5 sm:px-1 min-h-[40px] text-center rounded-lg text-xs transition-all cursor-pointer whitespace-nowrap sm:truncate shrink-0 sm:shrink flex items-center justify-center font-medium ${isActive
-                          ? 'text-white shadow-sm font-bold'
-                          : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/50'
+                      onClick={() => toggleInstituicao(banca.key)}
+                      className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all cursor-pointer flex items-center gap-1 border ${isSelected
+                          ? 'text-white shadow-xs'
+                          : 'bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/70 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-zinc-100'
                         }`}
                       style={{
-                        backgroundColor: isActive
-                          ? (st === 'Erradas' ? '#dc2626' : accentConfig.primaryHex)
-                          : undefined
+                        backgroundColor: isSelected ? accentConfig.primaryHex : undefined,
+                        borderColor: isSelected ? accentConfig.primaryHex : undefined,
+                        color: isSelected ? '#ffffff' : undefined
                       }}
-                      title={st}
                     >
-                      <span className="truncate">{st}</span>
+                      <span>{isSelected ? '✓' : '+'}</span>
+                      <span>{banca.label}</span>
                     </button>
                   );
-                }
-              )}
+                })}
+              </div>
             </div>
-          </div>
 
-          {/* =========================================================================
-              ROLAGEM CONJUNTA: Dificuldade/Formato/Opções + Anos da Prova (IMAGEM 3)
-             ========================================================================= */}
-          <div className="min-h-0 flex-1 overflow-y-auto pr-1.5 custom-scrollbar space-y-2.5">
+            {/* 2. Status da Questão (Integrado ao Histórico do Aluno no Supabase) */}
+            <div className="space-y-2 pt-2 border-t border-zinc-100 dark:border-zinc-800/80">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100">Status da Questão</span>
+              </div>
+              <div className="flex sm:grid sm:grid-cols-5 gap-1.5 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto no-scrollbar">
+                {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
+                  (st) => {
+                    const isActive = filters.status === st;
+
+                    return (
+                      <button
+                        key={st}
+                        type="button"
+                        onClick={() => onChange({ ...filters, status: st })}
+                        className={`py-2 px-3 sm:py-1.5 sm:px-1 min-h-[40px] text-center rounded-lg text-xs transition-all cursor-pointer whitespace-nowrap sm:truncate shrink-0 sm:shrink flex items-center justify-center font-medium ${isActive
+                            ? 'text-white shadow-sm font-bold'
+                            : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/50'
+                          }`}
+                        style={{
+                          backgroundColor: isActive
+                            ? (st === 'Erradas' ? '#dc2626' : accentConfig.primaryHex)
+                            : undefined
+                        }}
+                        title={st}
+                      >
+                        <span className="truncate">{st}</span>
+                      </button>
+                    );
+                  }
+                )}
+              </div>
+            </div>
+
             {/* 3. CARD COLAPSÁVEL: Dificuldade, Formato e Opções */}
             <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50 dark:bg-zinc-900/40 overflow-hidden transition-all">
               {/* Header com Toggle Mostrar/Ocultar */}
@@ -1991,16 +2004,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     {/* Formato */}
                     <div className="space-y-1.5">
                       <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block">Formato</span>
-                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-[var(--bg-input)] border border-zinc-200/50 dark:border-zinc-800/80">
+                      <div className="grid grid-cols-3 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-[var(--bg-input)] border border-zinc-200/50 dark:border-zinc-800/80">
                         {[
-                          { label: 'Todas', val: 'Todas' },
                           { label: 'Múltipla', val: 'Múltipla escolha' },
-                          { label: 'Dissertativa', val: 'Dissertativa' },
+                          { label: 'Discursiva', val: 'Discursiva' },
                           { label: 'Certo/Errado', val: 'Certo ou errado' }
                         ].map((fmt) => {
                           const isActive =
                             filters.tipoQuestao === fmt.val ||
-                            (fmt.val === 'Dissertativa' && filters.tipoQuestao === 'Discursiva') ||
+                            (fmt.val === 'Discursiva' && filters.tipoQuestao === 'Dissertativa') ||
                             (fmt.val === 'Certo ou errado' && (filters.tipoQuestao === 'Verdadeiro ou falso' || filters.tipoQuestao === 'Certo e Errado'));
                           return (
                             <button
@@ -2009,16 +2021,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                               onClick={() =>
                                 onChange({
                                   ...filters,
-                                  tipoQuestao: fmt.val as QuestionType
+                                  tipoQuestao: isActive ? 'Todas' : (fmt.val as QuestionType)
                                 })
                               }
-                              className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${isActive
+                              className={`py-1.5 px-1 text-center rounded-lg text-xs font-bold transition-all cursor-pointer truncate ${isActive
                                   ? 'text-white shadow-sm'
                                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                                 }`}
                               style={{
                                 backgroundColor: isActive ? accentConfig.primaryHex : undefined
                               }}
+                              title={fmt.label}
                             >
                               {fmt.label}
                             </button>

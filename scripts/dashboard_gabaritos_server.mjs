@@ -314,16 +314,22 @@ const server = http.createServer(async (req, res) => {
             <i data-lucide="folder-input" class="w-5 h-5"></i>
           </div>
           <div>
-            <h4 class="text-sm font-bold text-white">Fila de Drop (Caixa de Entrada)</h4>
+            <h4 class="text-sm font-bold text-white">Caixa de Entrada (Drop Zone)</h4>
             <p class="text-xs text-gray-400 font-mono mt-0.5">data/incoming_exams/</p>
           </div>
         </div>
         <p class="text-xs text-gray-300 mt-3 leading-relaxed">
-          Fila para novos downloads. Ao salvar qualquer PDF aqui, o Watcher cruza as 100 questões em menos de 3s.
+          Fila temporária de ingestão. Ao salvar qualquer PDF aqui, o Watcher cruza as 100 questões em &lt; 3s.
         </p>
-        <div class="mt-4 pt-3 border-t border-gray-800 flex items-center justify-between text-xs text-emerald-400">
-          <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Watcher escutando</span>
-          <span id="incoming-file-count" class="text-gray-400">0 arquivos na fila de drop</span>
+        <div class="mt-4 pt-3 border-t border-gray-800 space-y-1.5 text-xs">
+          <div class="flex items-center justify-between text-emerald-400">
+            <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Watcher ativo</span>
+            <span id="incoming-file-count" class="text-gray-400 font-medium">0 na fila (pronto para novos PDFs)</span>
+          </div>
+          <div class="flex items-center justify-between text-gray-400 pt-1 border-t border-gray-800/60">
+            <span>Acervo oficial permanente:</span>
+            <span class="text-emerald-400 font-bold font-mono" id="official-pdfs-count">204 arquivos catalogados</span>
+          </div>
         </div>
       </div>
 
@@ -418,9 +424,9 @@ const server = http.createServer(async (req, res) => {
       document.getElementById('kpi-percent').innerText = data.supabase.percent + '%';
       document.getElementById('kpi-missing').innerText = Number(data.supabase.missing).toLocaleString('pt-BR');
       document.getElementById('kpi-applied').innerText = data.relatorio176.sucesso;
-      document.getElementById('incoming-file-count').innerText = data.incomingCount + ' arquivos na fila de drop';
+      document.getElementById('incoming-file-count').innerText = data.incomingCount + ' na fila (pronto para novos PDFs)';
       if (document.getElementById('official-pdfs-count')) {
-        document.getElementById('official-pdfs-count').innerText = data.officialPdfsCount || 172;
+        document.getElementById('official-pdfs-count').innerText = (data.officialPdfsCount || 204) + ' arquivos catalogados';
       }
       if (document.getElementById('twins-count')) {
         document.getElementById('twins-count').innerText = data.twinsCount || 188;

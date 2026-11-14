@@ -168,18 +168,7 @@ function HomeContent() {
 
 export default function RootHomePage() {
   return (
-    <Suspense
-      fallback={
-        <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
-          <div className="flex flex-col items-center gap-3">
-            <Logo className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 animate-pulse" glow />
-            <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
-              Carregando Hippocampus...
-            </span>
-          </div>
-        </div>
-      }
-    >
+    <Suspense fallback={<HippocampusLoading size="md" />}>
       <HomeContent />
     </Suspense>
   );

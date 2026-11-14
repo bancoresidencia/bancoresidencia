@@ -715,7 +715,11 @@ export const QuestoesView: React.FC = () => {
   ]);
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 animate-in fade-in duration-200">
+    <div
+      className={`max-w-7xl mx-auto space-y-4 animate-in fade-in duration-200 px-3 sm:px-6 lg:px-8 ${
+        bancoMode === 'filtros' ? 'pt-2 sm:pt-3 lg:pt-3 pb-24 md:pb-20' : 'p-4 sm:p-6 lg:p-8'
+      }`}
+    >
       {/* Caderno Ativo (se houver) */}
       {activeListId && (
         <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-500/40 p-4 sm:p-5 rounded-3xl flex items-center justify-between gap-3 text-xs text-blue-900 dark:text-blue-300 shadow-sm shrink-0">
@@ -740,7 +744,7 @@ export const QuestoesView: React.FC = () => {
 
       {/* MODO 1: FILTROS SEPARADOS DAS QUESTÕES */}
       {bancoMode === 'filtros' ? (
-        <div className="space-y-6">
+        <div className="space-y-4">
           <AdvancedQuestionFilters
             filters={advancedFilters}
             onChange={(newFilters) => {

@@ -28,10 +28,9 @@ async function applyAbem() {
   for (let i = 0; i < homologadas.length; i++) {
     const item = homologadas[i];
     
-    // Payload estrito: nunca passar updated_at
+    // Payload estrito: nunca passar updated_at nem colunas geradas como has_gabarito
     const updatePayload = {
-      correct_answer: item.gabaritoDb,
-      has_gabarito: true
+      correct_answer: item.gabaritoDb
     };
     if (item.comentarioOficial && item.comentarioOficial.trim() !== '') {
       updatePayload.commentary = item.comentarioOficial;
