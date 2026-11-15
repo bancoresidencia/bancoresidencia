@@ -157,7 +157,7 @@ async function matchAbem() {
   const { data: dbQuestions, error } = await supabase
     .from('questions')
     .select('id, code, institution, banca, year, statement, options, correct_answer')
-    .ilike('institution', '%ABEM%')
+    .ilike('institution', '%Progresso Nacional%')
     .or('correct_answer.is.null,correct_answer.eq.');
 
   if (error) {

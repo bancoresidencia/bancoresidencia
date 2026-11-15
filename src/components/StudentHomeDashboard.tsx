@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
   Flame,
   Target,
@@ -51,6 +51,9 @@ import {
   Plus,
   LayoutGrid,
   GraduationCap,
+  Eye,
+  EyeOff,
+  ZoomIn,
 } from 'lucide-react';
 
 // Ícone Oficial do Google
@@ -79,6 +82,7 @@ import {
 import { UserStats, QuestionList, ActiveTab, Modalidade, UserAnswerItem, PeriodFilter } from '@/types';
 import { UterusIcon, PregnantWomanIcon } from './StatsDashboard';
 import { getPercentileColor } from '@/utils/percentile';
+import { computeAdaptiveDistribution, getBaselinePlatformScores } from '@/utils/distributionCurve';
 import { useTheme } from '@/context/ThemeContext';
 import { Button, Card, Badge, ProgressBar, StreakTracker } from '@/components/ui';
 import { useAuth } from '@/context/AuthContext';
@@ -175,7 +179,7 @@ const AreaEvolutionTooltip: React.FC<AreaEvolutionTooltipProps> = ({
   if (!data) return null;
 
   return (
-    <div className="bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-slate-200 dark:border-zinc-800 p-2.5 rounded-xl shadow-xl text-xs space-y-1 z-50">
+    <div className="bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-slate-200 dark:border-zinc-800 p-2.5 rounded-xl shadow-xl text-xs space-y-1 z-50 pointer-events-none select-none">
       <p className="font-bold text-slate-800 dark:text-zinc-200 text-[11px] pb-1 border-b border-slate-100 dark:border-zinc-800 flex items-center gap-1.5">
         <span className="w-2 h-2 rounded-full" style={{ backgroundColor: colorHex }} />
         <span>{data.date} • {areaLabel}</span>
@@ -266,7 +270,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   // Cálculo das métricas dinâmicas por período (Geral vs 7 Dias)
   const periodStats = React.useMemo(() => {
     if (accuracyPeriod === '7d' && stats.historyByDay && stats.historyByDay.length > 0) {
-      const last7 = stats.historyByDay.slice(-7);
+      const cutoff7d = Date.now() - 7 * 24 * 60 * 60 * 1000;
+      const last7 = stats.historyByDay.filter((d) => {
+        const t = new Date(d.date + 'T12:00:00').getTime();
+        return t >= cutoff7d;
+      });
       const answered = last7.reduce((sum, d) => sum + (d.answered || 0), 0);
       const correct = last7.reduce((sum, d) => sum + (d.correct || 0), 0);
       const rate = answered > 0 ? (correct / answered) * 100 : 0;
@@ -397,7 +405,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const greeting = getGreeting();
   const GreetingIcon = greeting.icon;
 
-  const todayAnswered = stats.historyByDay[stats.historyByDay.length - 1]?.answered || 0;
+  const todayStr = getLocalDateStr(new Date());
+  const todayHistory = (stats.historyByDay || []).find((h) => h.date === todayStr);
+  const todayAnswered = todayHistory?.answered || 0;
   const goalPercentage = Math.min(100, Math.round((todayAnswered / (dailyGoal || 1)) * 100));
 
   // Meta Diária de Tempo de Estudo personalizada (em minutos) com restauração síncrona
@@ -419,9 +429,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [targetExamName, setTargetExamName] = useState<string>(examInfo.examName);
   const [targetDaysLeft, setTargetDaysLeft] = useState<number>(examInfo.daysLeft);
 
-  // Tempo de estudo realizado hoje (vinculado ao cronômetro da agenda)
-  const { todayTotalSeconds, status: timerStatus, elapsedSeconds, allSessions } = useStudyTimer();
-  const currentTodayStudySeconds = todayTotalSeconds + ((timerStatus === 'running' || timerStatus === 'paused') ? elapsedSeconds : 0);
+  // Tempo de estudo realizado hoje (vinculado ao tempo ativo na plataforma e cronômetro da agenda)
+  const { todayTotalSeconds, status: timerStatus, elapsedSeconds, allSessions, platformActiveSeconds } = useStudyTimer();
+  const currentTodayStudySeconds = Math.max(
+    todayTotalSeconds,
+    platformActiveSeconds || 0
+  ) + ((timerStatus === 'running' || timerStatus === 'paused') ? elapsedSeconds : 0);
   const formattedTodayStudy = formatSecondsToDetailed(currentTodayStudySeconds);
 
   // Sessões salvas pelo cronômetro no site para hoje
@@ -573,6 +586,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return () => cancelAnimationFrame(animId);
   }, [goalPercentage, timeGoalPercentage]);
 
+  // Scores de todos os alunos da plataforma para calibrar a curva adaptável
+  const [platformScores, setPlatformScores] = useState<number[]>(() => getBaselinePlatformScores());
+
   // Sincronização em tempo real do percentil oficial homologado pelo ranking
   const [rankingPercentile, setRankingPercentile] = useState<number | null>(() => {
     if (typeof window !== 'undefined') {
@@ -594,8 +610,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         const res = await fetch('/api/ranking');
         if (!res.ok) return;
         const data = await res.json();
-        if (data?.success && data?.currentUser?.percentile !== undefined && data?.currentUser?.percentile !== null) {
-          if (isMounted) {
+        if (data?.success) {
+          if (Array.isArray(data.platformScores) && data.platformScores.length > 0 && isMounted) {
+            setPlatformScores(data.platformScores);
+          }
+          if (data?.currentUser?.percentile !== undefined && data?.currentUser?.percentile !== null && isMounted) {
             setRankingPercentile(data.currentUser.percentile);
             try {
               localStorage.setItem('bancoresidencia_official_ranking_percentile', String(data.currentUser.percentile));
@@ -633,6 +652,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     ? rankingPercentile
     : stats.percentileInfo.percentile;
 
+  // Curva de distribuição calibrada empiricamente com base no desempenho conjunto de todos os alunos da plataforma
+  const adaptiveCurve = useMemo(() => {
+    return computeAdaptiveDistribution(platformScores, effectivePercentile);
+  }, [platformScores, effectivePercentile]);
+
   // Tier cromático do percentil independente com suporte a modo claro/escuro
   const percentileTier = getPercentileColor(effectivePercentile);
   const isPercentileCalibrating = (rankingPercentile === null && (stats.percentileInfo.status === 'locked' || stats.percentileInfo.status === 'unranked'));
@@ -659,11 +683,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const activeClinicalTip = React.useMemo<ClinicalTipItem>(() => {
     const seenTopics = new Set<string>();
 
-    // 1. Especialidades e temas vistos em questões respondidas
+    // 1. Especialidades, temas, focos e subfocos vistos em questões respondidas
     if (userAnswers) {
       Object.values(userAnswers).forEach((ans: any) => {
         if (ans.specialty) seenTopics.add(String(ans.specialty).toLowerCase());
         if (ans.tema) seenTopics.add(String(ans.tema).toLowerCase());
+        if (ans.foco) seenTopics.add(String(ans.foco).toLowerCase());
+        if (ans.subfoco) seenTopics.add(String(ans.subfoco).toLowerCase());
       });
     }
 
@@ -684,6 +710,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             parsed.forEach((fc: any) => {
               if (fc.specialty) seenTopics.add(String(fc.specialty).toLowerCase());
               if (fc.tema) seenTopics.add(String(fc.tema).toLowerCase());
+              if (fc.foco) seenTopics.add(String(fc.foco).toLowerCase());
+              if (fc.subfoco) seenTopics.add(String(fc.subfoco).toLowerCase());
               if (fc.title) seenTopics.add(String(fc.title).toLowerCase());
             });
           }
@@ -700,6 +728,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (Array.isArray(parsedMat)) {
             parsedMat.forEach((m: any) => {
               if (m.specialty) seenTopics.add(String(m.specialty).toLowerCase());
+              if (m.tema) seenTopics.add(String(m.tema).toLowerCase());
+              if (m.foco) seenTopics.add(String(m.foco).toLowerCase());
               if (m.title) seenTopics.add(String(m.title).toLowerCase());
             });
           }
@@ -707,15 +737,22 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       }
     } catch (_) { }
 
-    // Filtra prioritariamente dicas dos temas estudados
+    // Filtra prioritariamente dicas dos subfocos, focos e temas estudados (com fallback suave)
     let pool = CLINICAL_TIPS_DATABASE;
     if (seenTopics.size > 0) {
       const filtered = CLINICAL_TIPS_DATABASE.filter((tip) => {
         const spec = tip.specialty.toLowerCase();
         const tema = tip.tema ? tip.tema.toLowerCase() : '';
-        return Array.from(seenTopics).some((seen) =>
-          spec.includes(seen) || seen.includes(spec) || (tema && (tema.includes(seen) || seen.includes(tema)))
-        );
+        const foco = tip.foco ? tip.foco.toLowerCase() : '';
+        const hasSubfocoMatch = tip.subfocos && tip.subfocos.some((sf) => {
+          const sfl = sf.toLowerCase();
+          return Array.from(seenTopics).some((seen) => seen.includes(sfl) || sfl.includes(seen));
+        });
+        const hasFocoMatch = foco && Array.from(seenTopics).some((seen) => seen.includes(foco) || foco.includes(seen));
+        const hasTemaMatch = tema && Array.from(seenTopics).some((seen) => seen.includes(tema) || tema.includes(seen));
+        const hasSpecMatch = Array.from(seenTopics).some((seen) => seen.includes(spec) || spec.includes(seen));
+
+        return Boolean(hasSubfocoMatch || hasFocoMatch || hasTemaMatch || hasSpecMatch);
       });
       if (filtered.length > 0) {
         pool = filtered;
@@ -1453,12 +1490,26 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     });
   };
 
-  // 3.0. Estado de favoritar Dica do Dia no FSRS (persistido no localStorage)
+  // 3.0. Modo Desenvolvedor: Visualizar e inspecionar qualquer um dos 385 cards na tela de início
+  const [devCardIndex, setDevCardIndex] = useState<number | null>(null);
+  const [showDevTipModal, setShowDevTipModal] = useState<boolean>(false);
+  const [devSearchQuery, setDevSearchQuery] = useState<string>('');
+  const [devSpecialtyFilter, setDevSpecialtyFilter] = useState<string>('Todas');
+
+  const displayedClinicalTip = (devCardIndex !== null && CLINICAL_TIPS_DATABASE[devCardIndex])
+    ? CLINICAL_TIPS_DATABASE[devCardIndex]
+    : activeClinicalTip;
+
+  const currentTipIndex = devCardIndex !== null 
+    ? devCardIndex 
+    : CLINICAL_TIPS_DATABASE.findIndex(t => t.id === activeClinicalTip?.id);
+
+  // 3.1. Estado de favoritar Dica do Dia no FSRS (persistido no localStorage)
   const [savedTipState, setSavedTipState] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       try {
         const savedList: string[] = JSON.parse(localStorage.getItem('bancoresidencia_saved_tips') || '[]');
-        return Boolean(activeClinicalTip?.id && savedList.includes(activeClinicalTip.id));
+        return Boolean(displayedClinicalTip?.id && savedList.includes(displayedClinicalTip.id));
       } catch {
         return false;
       }
@@ -1467,19 +1518,19 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   });
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && activeClinicalTip?.id) {
+    if (typeof window !== 'undefined' && displayedClinicalTip?.id) {
       try {
         const savedList: string[] = JSON.parse(localStorage.getItem('bancoresidencia_saved_tips') || '[]');
-        setSavedTipState(savedList.includes(activeClinicalTip.id));
+        setSavedTipState(savedList.includes(displayedClinicalTip.id));
       } catch {
         setSavedTipState(false);
       }
     }
-  }, [activeClinicalTip?.id]);
+  }, [displayedClinicalTip?.id]);
 
   const toggleSaveTip = () => {
-    if (!activeClinicalTip?.id) return;
-    const tipId = activeClinicalTip.id;
+    if (!displayedClinicalTip?.id) return;
+    const tipId = displayedClinicalTip.id;
     setSavedTipState((prev) => {
       const next = !prev;
       if (typeof window !== 'undefined') {
@@ -1489,6 +1540,35 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           localStorage.setItem('bancoresidencia_saved_tips', JSON.stringify(updated));
         } catch { }
       }
+      return next;
+    });
+  };
+
+  // 3.2. Estado de Active Recall (Revelação 1 a 1 e Revelar Todos) na Dica do Dia
+  const [revealedTipItems, setRevealedTipItems] = useState<Record<number, boolean>>({});
+  const [revealAllTipItems, setRevealAllTipItems] = useState<boolean>(false);
+  const [activeZoomImage, setActiveZoomImage] = useState<{ url: string; caption?: string } | null>(null);
+
+  // Reseta estado ao mudar a dica
+  useEffect(() => {
+    setRevealedTipItems({});
+    setRevealAllTipItems(false);
+  }, [displayedClinicalTip?.id]);
+
+  const toggleRevealTipItem = (idx: number, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setRevealedTipItems((prev) => ({ ...prev, [idx]: !prev[idx] }));
+  };
+
+  const toggleRevealAllTipItems = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setRevealAllTipItems((prev) => {
+      const next = !prev;
+      const updated: Record<number, boolean> = {};
+      displayedClinicalTip?.chips?.forEach((_, i) => {
+        updated[i] = next;
+      });
+      setRevealedTipItems(updated);
       return next;
     });
   };
@@ -2847,12 +2927,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       const label = dayNames[dayIndex];
       const isToday = i === 0;
 
-      const dateKey = targetDate.toISOString().slice(0, 10);
-      const matchHistory = (stats.historyByDay || []).find((h) => h.date && h.date.startsWith(dateKey));
+      const dateKey = getLocalDateStr(targetDate);
+      const matchHistory = (stats.historyByDay || []).find((h) => h.date === dateKey);
 
-      const answered = isToday
-        ? todayAnswered
-        : (matchHistory ? matchHistory.answered : 0);
+      const answered = matchHistory ? matchHistory.answered : 0;
 
       const targetGoal = dailyGoal || 30;
       const isComplete = answered >= targetGoal;
@@ -2867,7 +2945,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       });
     }
     return result;
-  }, [stats.historyByDay, todayAnswered, dailyGoal]);
+  }, [stats.historyByDay, dailyGoal]);
 
   const [selectedAreaId, setSelectedAreaId] = useState<string>('geral');
   const [hoveredPieIndex, setHoveredPieIndex] = useState<number | null>(null);
@@ -3966,15 +4044,15 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             </linearGradient>
                           </defs>
 
-                          {/* Área sob a curva com gradiente suave */}
+                          {/* Área sob a curva real adaptada aos alunos com gradiente suave */}
                           <path
-                            d="M 10 75 Q 60 75 100 60 T 160 8 T 220 60 Q 260 75 310 75 Z"
+                            d={adaptiveCurve.areaPath}
                             fill={`url(#triGradient-${cardConfig.id})`}
                             className="animate-curve-fill"
                           />
-                          {/* Linha da Curva Gaussiana com alto contraste, cor do nível e animação de traçado */}
+                          {/* Linha da Curva Gaussiana Adaptável calibrada com todos os alunos da plataforma */}
                           <path
-                            d="M 10 75 Q 60 75 100 60 T 160 8 T 220 60 Q 260 75 310 75"
+                            d={adaptiveCurve.curvePath}
                             fill="none"
                             stroke={percentileTier.color}
                             strokeWidth="2.5"
@@ -3983,41 +4061,32 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             className="animate-curve-draw"
                           />
 
-                          {/* Marcações de Percentil: P25, P50, P75, P90 */}
+                          {/* Marcações de Percentil: P25, P50, P75, P90 adaptadas dinamicamente à curva */}
                           <g className="animate-curve-guides">
-                            <line x1="85" y1="12" x2="85" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                            <line x1="160" y1="8" x2="160" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                            <line x1="235" y1="12" x2="235" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
-                            <line x1="280" y1="30" x2="280" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-emerald-500/50" />
+                            <line x1={adaptiveCurve.p25.x} y1={adaptiveCurve.p25.y} x2={adaptiveCurve.p25.x} y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1={adaptiveCurve.p50.x} y1={adaptiveCurve.p50.y} x2={adaptiveCurve.p50.x} y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1={adaptiveCurve.p75.x} y1={adaptiveCurve.p75.y} x2={adaptiveCurve.p75.x} y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1={adaptiveCurve.p90.x} y1={adaptiveCurve.p90.y} x2={adaptiveCurve.p90.x} y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-emerald-500/50" />
                           </g>
 
                           {/* Posição do Aluno na Curva com Indicador Luminoso e Badge */}
-                          {(() => {
-                            const pct = Math.max(1, Math.min(99, effectivePercentile || 1));
-                            const markerX = 15 + (pct / 100) * 290;
-                            const normDist = (markerX - 160) / 55;
-                            const markerY = Math.max(10, Math.min(73, 75 - 67 * Math.exp(-0.5 * normDist * normDist)));
-
-                            return (
-                              <g className="animate-marker-group">
-                                <line
-                                  x1={markerX}
-                                  y1={markerY}
-                                  x2={markerX}
-                                  y2="75"
-                                  stroke={percentileTier.color}
-                                  strokeWidth="2"
-                                  strokeDasharray="2,2"
-                                  opacity="0.8"
-                                  className="animate-marker-line"
-                                />
-                                <g className="animate-marker-pop" style={{ transformOrigin: `${markerX}px ${markerY}px` }}>
-                                  <circle cx={markerX} cy={markerY} r="4" fill="#ffffff" stroke={percentileTier.color} strokeWidth="2" />
-                                  <circle cx={markerX} cy={markerY} r="7.5" fill={percentileTier.color} fillOpacity="0.3" className="animate-pulse" />
-                                </g>
-                              </g>
-                            );
-                          })()}
+                          <g className="animate-marker-group">
+                            <line
+                              x1={adaptiveCurve.markerX}
+                              y1={adaptiveCurve.markerY}
+                              x2={adaptiveCurve.markerX}
+                              y2="75"
+                              stroke={percentileTier.color}
+                              strokeWidth="1.5"
+                              strokeDasharray="2,3"
+                              opacity="0.85"
+                              className="animate-marker-line"
+                            />
+                            <g className="animate-marker-pop" style={{ transformOrigin: `${adaptiveCurve.markerX}px ${adaptiveCurve.markerY}px` }}>
+                              <circle cx={adaptiveCurve.markerX} cy={adaptiveCurve.markerY} r="4" fill="#ffffff" stroke={percentileTier.color} strokeWidth="2" />
+                              <circle cx={adaptiveCurve.markerX} cy={adaptiveCurve.markerY} r="7.5" fill={percentileTier.color} fillOpacity="0.3" className="animate-pulse" />
+                            </g>
+                          </g>
                         </svg>
 
                         {/* Labels do eixo X da curva */}
@@ -4590,28 +4659,146 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     if (isCustomizing) return;
                     setActiveCentralDrawer('dica_dia_detalhada');
                   }}
-                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-3 sm:p-3.5 shadow-xs flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-2 group cursor-pointer hover:border-amber-500/40 dark:hover:border-amber-500/30 transition-all"
+                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-[160px] h-auto relative space-y-3 group cursor-pointer hover:border-amber-500/40 dark:hover:border-amber-500/30 transition-all"
                   title="Clique para ver raciocínio detalhado, conduta e pegadinhas"
                 >
-                  <div className="space-y-2 flex-1 flex flex-col justify-between">
-                    {/* Header: Ícone + Título Direto e Sucinto + Badge Dica do Dia */}
+                  {/* BARRA SUPERIOR DE MODO DESENVOLVEDOR (INSPEÇÃO DOS 385 CARDS NA TELA INICIAL) */}
+                  <div
+                    onClick={(e) => e.stopPropagation()}
+                    className="p-2 rounded-xl bg-amber-500/10 dark:bg-amber-500/5 border border-amber-500/25 flex flex-wrap items-center justify-between gap-2 select-none"
+                  >
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <span className="px-2 py-0.5 rounded-md font-mono text-[10px] font-black uppercase tracking-wider bg-amber-500 text-black flex items-center gap-1 shadow-2xs">
+                        <Brain className="w-3 h-3" />
+                        DEV PREVIEW
+                      </span>
+                      <span className="text-[11px] font-bold text-zinc-800 dark:text-zinc-200">
+                        Card <span className="text-amber-600 dark:text-amber-400 font-mono">#{currentTipIndex + 1}</span> de {CLINICAL_TIPS_DATABASE.length}
+                      </span>
+                      {devCardIndex !== null && (
+                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 font-semibold border border-amber-500/30">
+                          Fixado
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      {/* Botão Anterior */}
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          const nextIdx = (currentTipIndex - 1 + CLINICAL_TIPS_DATABASE.length) % CLINICAL_TIPS_DATABASE.length;
+                          setDevCardIndex(nextIdx);
+                        }}
+                        className="px-2 py-1 rounded-lg text-xs font-bold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:border-amber-500 hover:text-amber-500 transition-colors flex items-center gap-0.5 cursor-pointer shadow-2xs"
+                        title="Card Anterior"
+                      >
+                        <ChevronLeft className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">Ant</span>
+                      </button>
+
+                      {/* Dropdown Seletor de Qualquer um dos 385 Cards */}
+                      <select
+                        value={currentTipIndex}
+                        onChange={(e) => {
+                          e.stopPropagation();
+                          setDevCardIndex(Number(e.target.value));
+                        }}
+                        className="text-xs font-semibold bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 rounded-lg px-2 py-1 max-w-[190px] sm:max-w-[260px] truncate focus:outline-none focus:ring-1 focus:ring-amber-500 cursor-pointer shadow-2xs"
+                        title="Selecione qualquer um dos 385 cards para inspecionar"
+                      >
+                        {CLINICAL_TIPS_DATABASE.map((tip, idx) => (
+                          <option key={tip.id} value={idx}>
+                            #{idx + 1} [{tip.specialty.slice(0, 4)}] {tip.title}
+                          </option>
+                        ))}
+                      </select>
+
+                      {/* Botão Próximo */}
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          const nextIdx = (currentTipIndex + 1) % CLINICAL_TIPS_DATABASE.length;
+                          setDevCardIndex(nextIdx);
+                        }}
+                        className="px-2 py-1 rounded-lg text-xs font-bold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:border-amber-500 hover:text-amber-500 transition-colors flex items-center gap-0.5 cursor-pointer shadow-2xs"
+                        title="Próximo Card"
+                      >
+                        <span className="hidden sm:inline">Próx</span>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </button>
+
+                      {/* Botão Catálogo Completo (Modal) */}
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setShowDevTipModal(true);
+                        }}
+                        className="px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-500 text-black hover:bg-amber-400 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
+                        title="Abrir Catálogo Completo com Busca de todos os 385 cards"
+                      >
+                        <LayoutGrid className="w-3.5 h-3.5" />
+                        <span className="font-extrabold">Ver Todos ({CLINICAL_TIPS_DATABASE.length})</span>
+                      </button>
+
+                      {/* Botão Resetar para a Dica do Dia do Estudante */}
+                      {devCardIndex !== null && (
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setDevCardIndex(null);
+                          }}
+                          className="px-2 py-1 rounded-lg text-[11px] font-semibold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:text-amber-500 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
+                          title="Voltar para a dica do dia recomendada ao aluno"
+                        >
+                          <RotateCcw className="w-3 h-3 text-amber-500" />
+                          <span>Hoje</span>
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="space-y-3 flex-1 flex flex-col justify-between">
+                    {/* Header: Ícone + Título Direto e Sucinto + Active Recall Toggle + Badge */}
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2 min-w-0">
                         <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 border border-amber-500/20 shadow-2xs">
                           <Lightbulb className="w-4 h-4" />
                         </div>
                         <div className="min-w-0">
-                          <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 leading-snug truncate" title={activeClinicalTip.fullTitle || activeClinicalTip.title}>
-                            {activeClinicalTip.title}
+                          <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 leading-snug break-words" title={displayedClinicalTip.fullTitle || displayedClinicalTip.title}>
+                            {displayedClinicalTip.title}
                           </h4>
                           <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium block truncate">
-                            {activeClinicalTip.specialty} • {activeClinicalTip.tema}
+                            {displayedClinicalTip.specialty} • {displayedClinicalTip.tema}{displayedClinicalTip.foco ? ` • ${displayedClinicalTip.foco}` : ''}
                           </span>
                         </div>
                       </div>
 
-                      {/* Badge da Dica do Dia */}
+                      {/* Ações do Header: Toggle de Active Recall e Badge */}
                       <div className="flex items-center gap-1.5 shrink-0">
+                        <button
+                          type="button"
+                          onClick={toggleRevealAllTipItems}
+                          className="px-2 py-1 rounded-lg text-[10px] font-bold border border-zinc-200/90 dark:border-zinc-800 bg-zinc-100/90 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-300 hover:text-amber-600 dark:hover:text-amber-400 hover:border-amber-500/40 transition-all flex items-center gap-1 cursor-pointer select-none shadow-2xs"
+                          title={revealAllTipItems ? "Ocultar respostas para testar memória" : "Revelar todas as respostas"}
+                        >
+                          {revealAllTipItems ? (
+                            <>
+                              <EyeOff className="w-3 h-3 text-amber-500" />
+                              <span className="hidden xs:inline">Ocultar</span>
+                            </>
+                          ) : (
+                            <>
+                              <Eye className="w-3 h-3 text-amber-500" />
+                              <span className="hidden xs:inline">Revelar Tudo</span>
+                            </>
+                          )}
+                        </button>
                         <Badge
                           variant="outline"
                           size="sm"
@@ -4622,41 +4809,145 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
                     </div>
 
-                    {/* Miolo: Critérios Sem Cards Dentro de Cards (Minimalista, Limpo e Respirado) */}
-                    <div className="py-1 flex-1 flex flex-col justify-center">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2">
-                        {activeClinicalTip.chips.slice(0, 4).map((chip: { label: string; letter?: string; value: string }, idx: number) => (
+                    {/* Miolo Didático: Exibição Condicional de Imagem Médica + Chips Adaptativos sem Truncamento */}
+                    <div className="py-1 flex-1 flex flex-col justify-center min-h-0">
+                      {displayedClinicalTip.requiresImage && displayedClinicalTip.imageUrl ? (
+                        <div className="flex flex-col md:flex-row items-stretch gap-3">
+                          {/* Thumbnail Médico com Zoom */}
                           <div
-                            key={idx}
-                            className="flex items-start gap-2 py-0.5 min-w-0"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setActiveZoomImage({
+                                url: displayedClinicalTip.imageUrl!,
+                                caption: displayedClinicalTip.imageCaption || displayedClinicalTip.title
+                              });
+                            }}
+                            className="relative group/img shrink-0 w-full md:w-44 h-32 md:h-auto rounded-xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800 bg-zinc-950 flex items-center justify-center cursor-zoom-in shadow-xs"
+                            title="Clique para ampliar a imagem clínica"
                           >
-                            {chip.letter ? (
-                              <span className="w-5 h-5 rounded-md font-mono text-[10px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0 mt-0.5">
-                                {chip.letter}
-                              </span>
-                            ) : (
-                              <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80 shrink-0 mt-1.5" />
-                            )}
-                            <div className="min-w-0 flex-1">
-                              <span className="text-[11px] font-bold text-amber-600 dark:text-amber-400 leading-tight block truncate">
-                                {chip.label}
-                              </span>
-                              <span className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 leading-snug line-clamp-2">
-                                {chip.value}
-                              </span>
+                            <img
+                              src={displayedClinicalTip.imageUrl}
+                              alt={displayedClinicalTip.imageCaption || displayedClinicalTip.title}
+                              className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-300"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-black/45 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center gap-1 text-[11px] font-bold text-white">
+                              <ZoomIn className="w-3.5 h-3.5" />
+                              <span>Ampliar</span>
                             </div>
+                            {displayedClinicalTip.imageModality && (
+                              <span className="absolute bottom-1 left-1 px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-black/80 text-amber-400 uppercase tracking-wider backdrop-blur-xs">
+                                {displayedClinicalTip.imageModality}
+                              </span>
+                            )}
                           </div>
-                        ))}
-                      </div>
+
+                          {/* Chips Adaptativos ao lado da imagem (Sem corte de texto) */}
+                          <div className="flex-1 grid grid-cols-1 gap-2 min-w-0">
+                            {displayedClinicalTip.chips.slice(0, 4).map((chip, idx) => {
+                              const isRevealed = Boolean(revealedTipItems[idx] || revealAllTipItems);
+                              return (
+                                <div
+                                  key={idx}
+                                  onClick={(e) => toggleRevealTipItem(idx, e)}
+                                  className="p-2 sm:p-2.5 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 min-w-0 cursor-pointer select-none"
+                                  title="Clique para revelar / ocultar este item"
+                                >
+                                  <div className="flex items-center gap-2 min-w-0">
+                                    {chip.letter ? (
+                                      <span className="w-5 h-5 rounded-md font-mono text-[10px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0">
+                                        {chip.letter}
+                                      </span>
+                                    ) : (
+                                      <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80 shrink-0" />
+                                    )}
+                                    <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-snug break-words">
+                                      {chip.label}
+                                    </span>
+                                  </div>
+
+                                  <div className="sm:self-center shrink-0">
+                                    {isRevealed ? (
+                                      <span className="inline-block text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1 rounded-md border border-amber-500/25 leading-relaxed break-words whitespace-normal animate-in fade-in duration-150">
+                                        {chip.value}
+                                      </span>
+                                    ) : (
+                                      <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 bg-zinc-200/60 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-500 px-2 py-0.5 rounded-md transition-colors">
+                                        <span>Revelar</span>
+                                        <Eye className="w-3 h-3 text-zinc-400" />
+                                      </span>
+                                    )}
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      ) : (
+                        /* Quando NÃO tem imagem: Bento Grid Responsivo com Altura Adaptativa e Sem Truncamento */
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-2.5">
+                          {displayedClinicalTip.chips.slice(0, 4).map((chip, idx) => {
+                            const isRevealed = Boolean(revealedTipItems[idx] || revealAllTipItems);
+                            return (
+                              <div
+                                key={idx}
+                                onClick={(e) => toggleRevealTipItem(idx, e)}
+                                className="p-2.5 sm:p-3 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 min-w-0 cursor-pointer select-none"
+                                title="Clique para revelar / ocultar este item"
+                              >
+                                <div className="flex items-center gap-2 min-w-0">
+                                  {chip.letter ? (
+                                    <span className="w-5 h-5 rounded-md font-mono text-[10px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0">
+                                      {chip.letter}
+                                    </span>
+                                  ) : (
+                                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80 shrink-0" />
+                                  )}
+                                  <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-snug break-words">
+                                    {chip.label}
+                                  </span>
+                                </div>
+
+                                <div className="sm:self-center shrink-0">
+                                  {isRevealed ? (
+                                    <span className="inline-block text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1 rounded-md border border-amber-500/25 leading-relaxed break-words whitespace-normal animate-in fade-in duration-150">
+                                      {chip.value}
+                                    </span>
+                                  ) : (
+                                    <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 bg-zinc-200/60 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-500 px-2.5 py-0.5 rounded-md transition-colors">
+                                      <span>Revelar</span>
+                                      <Eye className="w-3 h-3 text-zinc-400" />
+                                    </span>
+                                  )}
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      )}
                     </div>
 
-                    {/* Rodapé Interativo: Substitui a caixa de REGRA pesada e convida a abrir o Drawer */}
-                    <div className="pt-2 flex items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80 text-amber-600 dark:text-amber-400 group-hover:text-amber-700 dark:group-hover:text-amber-300 font-semibold transition-colors">
-                      <span className="flex items-center gap-1.5 text-[11px]">
-                        <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                        <span>Ver conduta & pegadinha da banca</span>
+                    {/* Rodapé: Pegadinha de Banca sem corte + CTA de Abertura do Drawer */}
+                    <div className="pt-2 flex items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80 gap-2">
+                      {displayedClinicalTip.bancaTrap ? (
+                        <div className="flex items-center gap-1.5 min-w-0 flex-1">
+                          <span className="px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-600 dark:text-rose-400 text-[10px] font-bold shrink-0 border border-rose-500/20">
+                            ⚠️ Pegadinha
+                          </span>
+                          <span className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-snug break-words font-medium">
+                            {displayedClinicalTip.bancaTrap}
+                          </span>
+                        </div>
+                      ) : (
+                        <span className="flex items-center gap-1.5 text-[11px] text-amber-600 dark:text-amber-400 font-semibold">
+                          <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                          <span>Ver conduta & detalhes</span>
+                        </span>
+                      )}
+                      <span className="text-[11px] font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1 shrink-0 group-hover:translate-x-0.5 transition-transform">
+                        <span>Ver tudo</span>
+                        <ArrowRight className="w-3 h-3" />
                       </span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                     </div>
                   </div>
                 </div>
@@ -4937,6 +5228,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             />
                             <Tooltip
                               content={<AreaEvolutionTooltip colorHex={selectedArea.colorHex} areaLabel={selectedArea.label} />}
+                              wrapperStyle={{ pointerEvents: 'none' }}
                             />
 
                             {/* Barra Vermelha Abaixo (Erros) */}
@@ -4945,6 +5237,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               name="Erros (base)"
                               stackId="specialtyEvolution"
                               fill="#F43F5E"
+                              isAnimationActive={false}
                               maxBarSize={specialtyPeriod === '6m' ? 8 : specialtyPeriod === '3m' ? 12 : 20}
                             />
 
@@ -4955,6 +5248,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               stackId="specialtyEvolution"
                               fill="#10B981"
                               radius={[2.5, 2.5, 0, 0]}
+                              isAnimationActive={false}
                               maxBarSize={specialtyPeriod === '6m' ? 8 : specialtyPeriod === '3m' ? 12 : 20}
                             />
 
@@ -4967,6 +5261,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               strokeWidth={2}
                               strokeOpacity={0.5}
                               dot={false}
+                              isAnimationActive={false}
                               activeDot={{
                                 r: 3,
                                 stroke: mode === 'dark' ? '#94A3B8' : '#64748B',
@@ -5559,7 +5854,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {activeCentralDrawer === 'caderno_erros' && 'Caderno de Erros • Foco de Reteste'}
                     {activeCentralDrawer === 'flashcards' && 'Flashcards Mnemônicos • Revisão do Dia'}
                     {activeCentralDrawer === 'treinar_recomendacao' && `Centro de Treino • ${recommendedArea.label}`}
-                    {activeCentralDrawer === 'dica_dia_detalhada' && (activeClinicalTip.fullTitle || activeClinicalTip.title)}
+                    {activeCentralDrawer === 'dica_dia_detalhada' && (displayedClinicalTip.fullTitle || displayedClinicalTip.title)}
                     {activeCentralDrawer === 'mnemonico_detalhado' && (activeDetailedMnemonic.theme || 'Mnemônico Clínico')}
                     {activeCentralDrawer === 'agenda_detalhada' && (
                       <>
@@ -5577,7 +5872,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {activeCentralDrawer === 'caderno_erros' && 'Diagnóstico metacognitivo e questões erradas pendentes de reteste'}
                     {activeCentralDrawer === 'flashcards' && 'Fixação rápida de alto rendimento com algoritmo espaçado FSRS'}
                     {activeCentralDrawer === 'treinar_recomendacao' && 'Subtemas prioritários, radar da banca e modos de execução'}
-                    {activeCentralDrawer === 'dica_dia_detalhada' && `${activeClinicalTip.specialty} • ${activeClinicalTip.tema} • Alta Recorrência`}
+                    {activeCentralDrawer === 'dica_dia_detalhada' && `${displayedClinicalTip.specialty} • ${displayedClinicalTip.tema} • Alta Recorrência`}
                     {activeCentralDrawer === 'mnemonico_detalhado' && 'Critérios objetivos de decomposição e armadilhas de prova'}
                     {activeCentralDrawer === 'agenda_detalhada' && 'Planejamento dinâmico integrado a plantões hospitalares e blocos de estudo'}
                   </p>
@@ -6301,10 +6596,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     <div className="flex items-center gap-2">
                       <span className="text-[11px] font-mono px-2.5 py-1 rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/25 font-bold flex items-center gap-1.5">
                         <Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
-                        {activeClinicalTip.categoryLabel || 'Alta Recorrência'}
+                        {displayedClinicalTip.categoryLabel || 'Alta Recorrência'}
                       </span>
                       <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium hidden xs:inline-block">
-                        {activeClinicalTip.specialty} • {activeClinicalTip.tema}
+                        {displayedClinicalTip.specialty} • {displayedClinicalTip.tema}{displayedClinicalTip.foco ? ` • ${displayedClinicalTip.foco}` : ''}
                       </span>
                     </div>
 
@@ -6334,7 +6629,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       Regra de Ouro da Decisão Clínica
                     </span>
                     <p className="text-xs sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100 leading-relaxed">
-                      {activeClinicalTip.rule}
+                      {displayedClinicalTip.rule}
                     </p>
                   </div>
 
@@ -6346,12 +6641,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         Critérios Objetivos & Parâmetros
                       </span>
                       <span className="text-[11px] text-zinc-400 font-normal">
-                        {activeClinicalTip.chips.length} parâmetros
+                        {displayedClinicalTip.chips.length} parâmetros
                       </span>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {activeClinicalTip.chips.map((item, idx) => (
+                      {displayedClinicalTip.chips.map((item, idx) => (
                         <div
                           key={idx}
                           className="p-3 rounded-xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex items-start gap-3 hover:border-amber-500/30 transition-colors"
@@ -6367,7 +6662,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 block">
                               {item.label}
                             </span>
-                            <span className="text-xs text-zinc-600 dark:text-zinc-400 mt-0.5 block font-medium">
+                            <span className="text-xs text-zinc-600 dark:text-zinc-400 mt-0.5 block font-medium leading-relaxed break-words">
                               {item.value}
                             </span>
                           </div>
@@ -6377,14 +6672,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
 
                   {/* 3. Pegadinha Clássica da Banca */}
-                  {activeClinicalTip.bancaTrap && (
+                  {displayedClinicalTip.bancaTrap && (
                     <div className="p-3.5 rounded-xl border border-rose-500/30 bg-rose-500/5 space-y-1">
                       <span className="text-[10px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400 flex items-center gap-1.5">
                         <AlertTriangle className="w-3.5 h-3.5 text-rose-500" />
                         Pegadinha Clássica de Prova ({targetExamName || 'Bancas Oficiais'})
                       </span>
                       <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">
-                        {activeClinicalTip.bancaTrap}
+                        {displayedClinicalTip.bancaTrap}
                       </p>
                     </div>
                   )}
@@ -6392,23 +6687,23 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   {/* Botões de Ação Final */}
                   <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between gap-3 flex-wrap">
                     <span className="text-xs text-zinc-500 dark:text-zinc-400">
-                      Fonte Oficial: {activeClinicalTip.provenanceDefault}
+                      Fonte Oficial: {displayedClinicalTip.provenanceDefault}
                     </span>
                     <button
                       type="button"
                       onClick={() => {
                         setActiveCentralDrawer(null);
                         if (onStartTopicPractice) {
-                          onStartTopicPractice(activeClinicalTip.specialty, activeClinicalTip.tema, activeClinicalTip.title, 5);
+                          onStartTopicPractice(displayedClinicalTip.specialty, displayedClinicalTip.tema, displayedClinicalTip.title, 5);
                         } else {
-                          handlePracticeArea(activeClinicalTip.specialty);
+                          handlePracticeArea(displayedClinicalTip.specialty);
                         }
                       }}
                       className="px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 flex items-center gap-2 ml-auto"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
                       <Play className="w-3.5 h-3.5 fill-current" />
-                      <span>Treinar Questões de {activeClinicalTip.tema || activeClinicalTip.specialty}</span>
+                      <span>Treinar Questões de {displayedClinicalTip.tema || displayedClinicalTip.specialty}</span>
                     </button>
                   </div>
                 </div>
@@ -7538,6 +7833,264 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         exportingSlotId={exportingSlotId}
         exportedSlotIds={exportedSlotIds}
       />
+
+      {/* 10. MODAL LIGHTBOX DE ZOOM PARA IMAGENS DA DICA DO DIA */}
+      {activeZoomImage && (
+        <div
+          onClick={() => setActiveZoomImage(null)}
+          className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-200 cursor-zoom-out"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative max-w-3xl max-h-[90vh] bg-[#121215] border border-zinc-800 rounded-2xl overflow-hidden shadow-2xl flex flex-col cursor-default"
+          >
+            <div className="p-3 border-b border-zinc-800 flex items-center justify-between gap-3 bg-zinc-900/60">
+              <span className="text-xs font-bold text-zinc-200 truncate">
+                {activeZoomImage.caption || 'Exame de Imagem Clínica'}
+              </span>
+              <button
+                type="button"
+                onClick={() => setActiveZoomImage(null)}
+                className="p-1 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-white transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+            <div className="p-3 flex items-center justify-center bg-black/60 overflow-auto max-h-[75vh]">
+              <img
+                src={activeZoomImage.url}
+                alt={activeZoomImage.caption || 'Exame Clínico Ampliado'}
+                className="max-h-[70vh] w-auto object-contain rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 11. MODAL DE CATÁLOGO COMPLETO DE CARDS CLÍNICOS (MODO DESENVOLVEDOR - 385 CARDS) */}
+      {showDevTipModal && (
+        <div
+          onClick={() => setShowDevTipModal(false)}
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-5 animate-in fade-in duration-200"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="relative w-full max-w-5xl max-h-[92vh] bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-2xl overflow-hidden shadow-2xl flex flex-col cursor-default"
+          >
+            {/* Header do Catálogo */}
+            <div className="p-4 sm:p-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between gap-3 bg-zinc-50/70 dark:bg-zinc-900/60 shrink-0">
+              <div className="min-w-0">
+                <div className="flex items-center gap-2">
+                  <span className="px-2 py-0.5 rounded font-mono text-[10px] font-black uppercase tracking-wider bg-amber-500 text-black flex items-center gap-1 shadow-2xs">
+                    <Brain className="w-3 h-3" />
+                    DEV PREVIEW
+                  </span>
+                  <h3 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                    Catálogo de Dicas & Decorebas ({CLINICAL_TIPS_DATABASE.length} Cards Mapeados)
+                  </h3>
+                </div>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">
+                  Clique em qualquer card para carregá-lo instantaneamente na tela inicial com todos os recursos e active recall.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setShowDevTipModal(false)}
+                className="p-1.5 rounded-lg hover:bg-zinc-200 dark:hover:bg-zinc-800 text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors cursor-pointer shrink-0"
+                title="Fechar"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Barra de Busca e Filtros Rápidos de Especialidade */}
+            <div className="p-3 sm:p-4 border-b border-zinc-200 dark:border-zinc-800 space-y-2.5 bg-white dark:bg-[#121215] shrink-0">
+              <div className="relative">
+                <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400" />
+                <input
+                  type="text"
+                  value={devSearchQuery}
+                  onChange={(e) => setDevSearchQuery(e.target.value)}
+                  placeholder="Buscar card por título, tema, foco, subfoco, regra ou pegadinha..."
+                  className="w-full pl-10 pr-9 py-2 rounded-xl text-xs sm:text-sm bg-zinc-50 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-1 focus:ring-amber-500 transition-all"
+                />
+                {devSearchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setDevSearchQuery('')}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 cursor-pointer"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
+
+              {/* Filtro por Especialidade com Contadores */}
+              <div className="flex items-center gap-1.5 overflow-x-auto pb-1 custom-scrollbar text-xs">
+                {[
+                  { label: 'Todas', count: CLINICAL_TIPS_DATABASE.length },
+                  { label: 'Clínica Médica', count: CLINICAL_TIPS_DATABASE.filter(c => c.specialty === 'Clínica Médica').length },
+                  { label: 'Cirurgia Geral', count: CLINICAL_TIPS_DATABASE.filter(c => c.specialty === 'Cirurgia Geral').length },
+                  { label: 'Pediatria', count: CLINICAL_TIPS_DATABASE.filter(c => c.specialty === 'Pediatria').length },
+                  { label: 'Ginecologia', count: CLINICAL_TIPS_DATABASE.filter(c => c.specialty === 'Ginecologia').length },
+                  { label: 'Obstetrícia', count: CLINICAL_TIPS_DATABASE.filter(c => c.specialty === 'Obstetrícia').length },
+                  { label: 'Medicina Preventiva e Social', count: CLINICAL_TIPS_DATABASE.filter(c => c.specialty.includes('Preventiva')).length },
+                ].map((spec) => {
+                  const isSelected = devSpecialtyFilter === spec.label;
+                  return (
+                    <button
+                      key={spec.label}
+                      type="button"
+                      onClick={() => setDevSpecialtyFilter(spec.label)}
+                      className={`px-2.5 py-1 rounded-lg font-bold text-xs shrink-0 transition-all cursor-pointer flex items-center gap-1.5 ${
+                        isSelected
+                          ? 'bg-amber-500 text-black shadow-xs'
+                          : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-amber-600 dark:hover:text-amber-400 border border-zinc-200/80 dark:border-zinc-700/60'
+                      }`}
+                    >
+                      <span>{spec.label === 'Medicina Preventiva e Social' ? 'Preventiva' : spec.label}</span>
+                      <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
+                        isSelected ? 'bg-black/20 text-black' : 'bg-zinc-200 dark:bg-zinc-700 text-zinc-700 dark:text-zinc-300'
+                      }`}>
+                        {spec.count}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Grid Scrollável com Todos os Cards Filtrados */}
+            <div className="p-3 sm:p-5 overflow-y-auto custom-scrollbar flex-1 space-y-3 bg-zinc-50/40 dark:bg-[#0c0c0e]">
+              {(() => {
+                const q = devSearchQuery.toLowerCase().trim();
+                const filtered = CLINICAL_TIPS_DATABASE.map((card, originalIdx) => ({ card, originalIdx })).filter(({ card }) => {
+                  // Filtro por especialidade
+                  if (devSpecialtyFilter !== 'Todas') {
+                    if (devSpecialtyFilter === 'Medicina Preventiva e Social') {
+                      if (!card.specialty.includes('Preventiva')) return false;
+                    } else if (card.specialty !== devSpecialtyFilter) {
+                      return false;
+                    }
+                  }
+                  // Filtro por texto
+                  if (!q) return true;
+                  const inTitle = card.title.toLowerCase().includes(q) || (card.fullTitle && card.fullTitle.toLowerCase().includes(q));
+                  const inTema = card.tema && card.tema.toLowerCase().includes(q);
+                  const inFoco = card.foco && card.foco.toLowerCase().includes(q);
+                  const inSubfocos = card.subfocos && card.subfocos.some(sf => sf.toLowerCase().includes(q));
+                  const inRule = card.rule && card.rule.toLowerCase().includes(q);
+                  const inBancaTrap = card.bancaTrap && card.bancaTrap.toLowerCase().includes(q);
+                  const inChips = card.chips && card.chips.some(ch => ch.label.toLowerCase().includes(q) || ch.value.toLowerCase().includes(q));
+                  return inTitle || inTema || inFoco || inSubfocos || inRule || inBancaTrap || inChips;
+                });
+
+                if (filtered.length === 0) {
+                  return (
+                    <div className="p-12 text-center text-zinc-400 dark:text-zinc-500">
+                      <p className="text-sm font-semibold">Nenhum card encontrado para os filtros selecionados.</p>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setDevSearchQuery('');
+                          setDevSpecialtyFilter('Todas');
+                        }}
+                        className="mt-3 text-xs text-amber-500 underline font-bold"
+                      >
+                        Limpar filtros de busca
+                      </button>
+                    </div>
+                  );
+                }
+
+                return (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {filtered.map(({ card, originalIdx }) => {
+                      const isCurrent = currentTipIndex === originalIdx;
+                      return (
+                        <div
+                          key={card.id}
+                          onClick={() => {
+                            setDevCardIndex(originalIdx);
+                            setShowDevTipModal(false);
+                          }}
+                          className={`p-3.5 rounded-xl border transition-all cursor-pointer flex flex-col justify-between space-y-2.5 group ${
+                            isCurrent
+                              ? 'bg-amber-500/10 border-amber-500 ring-1 ring-amber-500'
+                              : 'bg-white dark:bg-[#121215] border-zinc-200/90 dark:border-zinc-800/90 hover:border-amber-500/40 hover:shadow-md'
+                          }`}
+                        >
+                          <div className="space-y-1.5">
+                            {/* Linha Superior: #ID + Especialidade + Badge de Imagem */}
+                            <div className="flex items-center justify-between gap-1.5 flex-wrap">
+                              <span className="font-mono text-[10px] font-bold px-1.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">
+                                #{originalIdx + 1}
+                              </span>
+                              <div className="flex items-center gap-1">
+                                {card.requiresImage && (
+                                  <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded bg-purple-500/15 text-purple-700 dark:text-purple-300 border border-purple-500/25">
+                                    📷 {card.imageModality?.toUpperCase() || 'IMG'}
+                                  </span>
+                                )}
+                                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20">
+                                  {card.categoryLabel || 'Critérios'}
+                                </span>
+                              </div>
+                            </div>
+
+                            {/* Título & Subtítulo */}
+                            <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 leading-snug group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                              {card.title}
+                            </h4>
+                            <p className="text-[10px] text-zinc-500 dark:text-zinc-400 font-medium truncate">
+                              {card.specialty} • {card.tema}{card.foco ? ` • ${card.foco}` : ''}
+                            </p>
+                          </div>
+
+                          {/* Preview das Chips */}
+                          <div className="space-y-1">
+                            {card.chips.slice(0, 3).map((ch, i) => (
+                              <div key={i} className="text-[10px] flex items-center justify-between gap-2 p-1 rounded bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/60">
+                                <span className="text-zinc-700 dark:text-zinc-300 font-semibold truncate">
+                                  {ch.label}
+                                </span>
+                                <span className="text-amber-600 dark:text-amber-400 font-bold truncate max-w-[50%]">
+                                  {ch.value}
+                                </span>
+                              </div>
+                            ))}
+                            {card.chips.length > 3 && (
+                              <span className="text-[9px] text-zinc-400 dark:text-zinc-500 block text-right font-medium">
+                                +{card.chips.length - 3} itens adicionais
+                              </span>
+                            )}
+                          </div>
+
+                          {/* Rodapé do Mini-Card */}
+                          <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/70 flex items-center justify-between text-[10px]">
+                            {isCurrent ? (
+                              <span className="text-amber-600 dark:text-amber-400 font-bold flex items-center gap-1">
+                                <Check className="w-3 h-3 text-amber-500" />
+                                <span>Ativo na Tela Inicial</span>
+                              </span>
+                            ) : (
+                              <span className="text-zinc-500 dark:text-zinc-400 group-hover:text-amber-500 font-semibold flex items-center gap-1 transition-colors">
+                                <span>Inspecionar na Tela Inicial</span>
+                                <ArrowRight className="w-3 h-3" />
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })()}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

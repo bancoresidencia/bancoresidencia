@@ -68,6 +68,7 @@ export interface StudyTimerContextType {
   todayTotalFormatted: string;
   allSessions: StudySession[];
   deleteSession: (id: string) => void;
+  platformActiveSeconds: number;
   addManualSession: (data: {
     taxonomy: SelectedTaxonomy;
     startTime: string; // "HH:mm" ou ISO

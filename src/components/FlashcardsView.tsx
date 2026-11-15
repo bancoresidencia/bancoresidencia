@@ -216,6 +216,7 @@ interface FlashcardsViewProps {
   mode?: 'flashcards' | 'resumos';
   initialFilterErrorsOnly?: boolean;
   initialSearchQuery?: string;
+  initialSpecialty?: string;
   onNavigateToBanco?: (specialty?: string, tema?: string) => void;
 }
 
@@ -223,14 +224,33 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   mode = 'flashcards',
   initialFilterErrorsOnly = false,
   initialSearchQuery = '',
+  initialSpecialty,
   onNavigateToBanco
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
   const { userAnswers } = useStudentData();
 
-  // Estados de Expansão dos Cards de Especialidade (todos colapsados por padrão)
-  const [expandedSpecialties, setExpandedSpecialties] = useState<Record<string, boolean>>({});
+  // Estados de Expansão dos Cards de Especialidade
+  const [expandedSpecialties, setExpandedSpecialties] = useState<Record<string, boolean>>(() => {
+    if (initialSpecialty) {
+      return { [initialSpecialty]: true };
+    }
+    return {};
+  });
+
+  // Termo de Busca Rápida (Flashcards & Resumos)
+  const [searchQuery, setSearchQuery] = useState(initialSearchQuery || '');
+
+  // Reage se initialSpecialty mudar externamente
+  useEffect(() => {
+    if (initialSpecialty) {
+      setExpandedSpecialties((prev) => ({ ...prev, [initialSpecialty]: true }));
+    }
+    if (initialSearchQuery) {
+      setSearchQuery(initialSearchQuery);
+    }
+  }, [initialSpecialty, initialSearchQuery]);
 
   // Estados de Expansão dos Temas (todos colapsados por padrão)
   const [expandedTemas, setExpandedTemas] = useState<Record<string, boolean>>({});
@@ -251,9 +271,6 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   // Histórico de Última Sessão e Resumo Lido
   const [lastFlashcardSession, setLastFlashcardSession] = useState<LastFlashcardSessionInfo | null>(null);
   const [lastReadSummary, setLastReadSummary] = useState<LastReadSummaryInfo | null>(null);
-
-  // Termo de Busca Rápida (Flashcards & Resumos)
-  const [searchQuery, setSearchQuery] = useState(initialSearchQuery || '');
 
   // Filtro exclusivo para estudar apenas flashcards essenciais (alta incidência em provas)
   const [filterEssentialOnly, setFilterEssentialOnly] = useState(false);

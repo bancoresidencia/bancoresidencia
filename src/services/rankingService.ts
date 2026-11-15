@@ -39,6 +39,7 @@ export interface LeaderboardResponse {
   calibrandoCount: number;
   currentUser?: LeaderboardStudent | null;
   candidates: LeaderboardStudent[];
+  platformScores?: number[];
   generatedAt: string;
 }
 
@@ -303,6 +304,7 @@ export async function computePlatformLeaderboard(
     calibrandoCount,
     currentUser,
     candidates: paginatedCandidates,
+    platformScores: candidateList.map(c => c.accuracy),
     generatedAt: new Date().toISOString()
   };
 

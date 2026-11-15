@@ -92,7 +92,7 @@ const HourlyTooltip: React.FC<HourlyTooltipProps> = ({ active, payload }) => {
     const data = payload[0].payload;
     if (data.resolvidas === 0) {
       return (
-        <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3 shadow-xl text-xs">
+        <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3 shadow-xl text-xs pointer-events-none select-none">
           <p className="font-bold text-slate-800 dark:text-zinc-200">
             {data.label} às {String(data.hour + 1).padStart(2, '0')}h
           </p>
@@ -102,7 +102,7 @@ const HourlyTooltip: React.FC<HourlyTooltipProps> = ({ active, payload }) => {
     }
     const isGood = data.taxa >= 75;
     return (
-      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[190px] text-xs space-y-2">
+      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[190px] text-xs space-y-2 pointer-events-none select-none">
         <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2">
           <span className="font-bold text-slate-900 dark:text-white font-heading">
             {data.label} - {String(data.hour + 1).padStart(2, '0')}h
@@ -910,9 +910,9 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
                   allowDecimals={false}
                   tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 10 }}
                 />
-                <Tooltip content={<HourlyTooltip />} />
-                <Bar dataKey="acertos" name="Acertos" stackId="a" fill="#10B981" radius={[0, 0, 0, 0]} />
-                <Bar dataKey="erros" name="Erros" stackId="a" fill="#F43F5E" radius={[3, 3, 0, 0]} />
+                <Tooltip content={<HourlyTooltip />} wrapperStyle={{ pointerEvents: 'none' }} />
+                <Bar dataKey="acertos" name="Acertos" stackId="a" fill="#10B981" radius={[0, 0, 0, 0]} isAnimationActive={false} />
+                <Bar dataKey="erros" name="Erros" stackId="a" fill="#F43F5E" radius={[3, 3, 0, 0]} isAnimationActive={false} />
               </BarChart>
             </ResponsiveContainer>
           )}

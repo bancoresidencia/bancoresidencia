@@ -578,7 +578,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       }
     } catch { }
 
-    const calculatedStreak = Math.max(streakDays, 1);
+    const calculatedStreak = streakDays;
 
     return {
       totalAnswered,

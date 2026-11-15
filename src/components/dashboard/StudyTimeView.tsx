@@ -12,8 +12,7 @@ import {
   Tooltip as RechartsTooltip,
   PieChart,
   Pie,
-  Cell,
-  LabelList
+  Cell
 } from 'recharts';
 import {
   Clock,
@@ -144,7 +143,7 @@ const CustomTimeBarTooltip: React.FC<CustomTooltipProps> = ({ active, payload, l
     const trendHours = data.trendStudyHours || 0;
 
     return (
-      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[200px] text-xs">
+      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[200px] text-xs pointer-events-none select-none">
         <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2 mb-2.5">
           <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider font-heading">{displayTitle}</span>
           <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full border text-indigo-700 dark:text-indigo-400 bg-indigo-500/10 border-indigo-500/25">
@@ -592,42 +591,22 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
                 tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 11 }}
                 tickFormatter={(v) => `${v}h`}
               />
-              <RechartsTooltip content={<CustomTimeBarTooltip />} />
+              <RechartsTooltip content={<CustomTimeBarTooltip />} wrapperStyle={{ pointerEvents: 'none' }} />
               <Bar
                 dataKey="studyHours"
                 name="Horas de Estudo"
                 fill="#6366F1"
                 radius={[4, 4, 0, 0]}
+                isAnimationActive={false}
                 maxBarSize={filters.period === '6m' ? 10 : filters.period === '3m' ? 14 : 26}
-              >
-                <LabelList
-                  dataKey="studyHours"
-                  position="top"
-                  content={(props: any) => {
-                    const { x, y, width, value } = props;
-                    if (!value || value <= 0) return null;
-                    return (
-                      <text
-                        x={x + width / 2}
-                        y={y - 6}
-                        fill={mode === 'dark' ? '#A1A1AA' : '#64748B'}
-                        textAnchor="middle"
-                        fontSize={10}
-                        fontWeight={700}
-                        className="font-[var(--font-inter)] tabular-nums"
-                      >
-                        {value >= 1 ? `${value}h` : `${Math.round(value * 60)}m`}
-                      </text>
-                    );
-                  }}
-                />
-              </Bar>
+              />
               <Line
                 type="monotone"
                 dataKey="trendStudyHours"
                 stroke="#818CF8"
                 strokeWidth={2}
                 dot={false}
+                isAnimationActive={false}
                 name="Média Móvel"
               />
             </ComposedChart>

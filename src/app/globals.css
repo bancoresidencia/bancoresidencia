@@ -574,12 +574,12 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
 
 @keyframes markerLineRise {
   from {
-    stroke-dashoffset: 75;
     opacity: 0;
+    transform: scaleY(0);
   }
   to {
-    stroke-dashoffset: 0;
-    opacity: 0.8;
+    opacity: 0.75;
+    transform: scaleY(1);
   }
 }
 
@@ -601,8 +601,8 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
 }
 
 .animate-marker-line {
-  stroke-dasharray: 75;
-  stroke-dashoffset: 75;
+  opacity: 0;
+  transform-origin: bottom;
   animation: markerLineRise 0.5s cubic-bezier(0.2, 0.8, 0.25, 1) 0.75s forwards;
 }
 

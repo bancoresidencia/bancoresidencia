@@ -129,6 +129,85 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const activeStudyTypeRef = useRef<StudyType>('questoes');
   const sessionSourceRef = useRef<'manual' | 'questoes' | 'simulado' | 'flashcards'>('manual');
 
+  // Rastreamento Contínuo e Inteligente de Tempo Ativo na Plataforma (Zero-Touch)
+  const [platformActiveSeconds, setPlatformActiveSeconds] = useState<number>(0);
+  const platformActiveRef = useRef<number>(0);
+  useEffect(() => {
+    platformActiveRef.current = platformActiveSeconds;
+  }, [platformActiveSeconds]);
+
+  const getPlatformActiveKey = useCallback((uid?: string | null) => {
+    const d = getLocalDateStr(new Date());
+    return `bancoresidencia_platform_active_time_${uid || 'guest'}_${d}`;
+  }, []);
+
+  // Recupera tempo ativo do dia atual ao inicializar
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const key = getPlatformActiveKey(user?.id);
+      const saved = localStorage.getItem(key);
+      if (saved) {
+        const val = Number(saved);
+        if (!isNaN(val) && val >= 0) {
+          setPlatformActiveSeconds(val);
+          platformActiveRef.current = val;
+        }
+      }
+    } catch { }
+  }, [user?.id, getPlatformActiveKey]);
+
+  // Heartbeat do tempo ativo na plataforma: conta cada segundo de presença ativa e interação
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    let lastInteraction = Date.now();
+    const IDLE_THRESHOLD_MS = 3 * 60 * 1000; // 3 minutos sem interação pausa a contagem
+
+    const markInteraction = () => {
+      lastInteraction = Date.now();
+    };
+
+    window.addEventListener('mousemove', markInteraction, { passive: true });
+    window.addEventListener('keydown', markInteraction, { passive: true });
+    window.addEventListener('scroll', markInteraction, { passive: true });
+    window.addEventListener('touchstart', markInteraction, { passive: true });
+    window.addEventListener('click', markInteraction, { passive: true });
+
+    let saveCounter = 0;
+
+    const interval = setInterval(() => {
+      if (typeof document !== 'undefined' && document.hidden) return;
+      if (Date.now() - lastInteraction > IDLE_THRESHOLD_MS) return;
+
+      const updated = platformActiveRef.current + 1;
+      platformActiveRef.current = updated;
+      setPlatformActiveSeconds(updated);
+
+      saveCounter++;
+      if (saveCounter >= 5) {
+        saveCounter = 0;
+        try {
+          const key = getPlatformActiveKey(userRef.current?.id);
+          localStorage.setItem(key, String(updated));
+        } catch { }
+      }
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('mousemove', markInteraction);
+      window.removeEventListener('keydown', markInteraction);
+      window.removeEventListener('scroll', markInteraction);
+      window.removeEventListener('touchstart', markInteraction);
+      window.removeEventListener('click', markInteraction);
+      try {
+        const key = getPlatformActiveKey(userRef.current?.id);
+        localStorage.setItem(key, String(platformActiveRef.current));
+      } catch { }
+    };
+  }, [getPlatformActiveKey]);
+
   // Carrega e sincroniza sessões vinculadas à conta do aluno
   useEffect(() => {
     let active = true;
@@ -703,9 +782,13 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     });
   }, [savedSessions, todayStr]);
 
-  const todayTotalSeconds = useMemo(() => {
+  const sessionsTotalSeconds = useMemo(() => {
     return todaySessions.reduce((acc, curr) => acc + (curr.durationSeconds || 0), 0);
   }, [todaySessions]);
+
+  const todayTotalSeconds = useMemo(() => {
+    return Math.max(sessionsTotalSeconds, platformActiveSeconds);
+  }, [sessionsTotalSeconds, platformActiveSeconds]);
 
   const todayTotalFormatted = useMemo(() => {
     return formatSecondsToShort(todayTotalSeconds);
@@ -739,6 +822,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     todayTotalFormatted,
     allSessions: savedSessions,
     deleteSession,
+    platformActiveSeconds,
     addManualSession
   };
 

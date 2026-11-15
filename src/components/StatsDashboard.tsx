@@ -14,8 +14,7 @@ import {
 
   ComposedChart,
   Bar,
-  Line,
-  LabelList
+  Line
 } from 'recharts';
 import {
   Calendar,
@@ -223,13 +222,6 @@ const quickPeriodConfig: Record<string, { factor: number; label: string; trendVo
 
 type StatsSubTab = 'overview' | 'specialties' | 'weaknesses' | 'time';
 
-interface CustomEvolutionLabelProps {
-  x?: number | string;
-  y?: number | string;
-  width?: number | string;
-  index?: number;
-}
-
 interface CustomBarTooltipProps {
   active?: boolean;
   payload?: Array<{
@@ -255,7 +247,7 @@ const CustomBarTooltip: React.FC<CustomBarTooltipProps> = ({ active, payload, la
     const isGood = Number(taxa) >= 70;
     const displayTitle = data.dateFull || (data.date && data.date !== data.label ? `${data.label} (${data.date})` : (data.date || label));
     return (
-      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[185px] text-xs">
+      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[185px] text-xs pointer-events-none select-none">
         <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2 mb-2.5">
           <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider font-heading">{displayTitle}</span>
           <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-full border ${
@@ -308,7 +300,7 @@ const CustomTimeBarTooltip: React.FC<any> = ({ active, payload, label }) => {
     const trendHours = data.trendStudyHours || 0;
 
     return (
-      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[190px] text-xs">
+      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[190px] text-xs pointer-events-none select-none">
         <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2 mb-2.5">
           <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider font-heading">{displayTitle}</span>
           <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full border text-indigo-700 dark:text-indigo-400 bg-indigo-500/10 border-indigo-500/25">
@@ -1922,7 +1914,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     tickLine={false}
                     tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 11 }}
                   />
-                  <Tooltip content={<CustomBarTooltip />} />
+                  <Tooltip content={<CustomBarTooltip />} wrapperStyle={{ pointerEvents: 'none' }} />
 
                   {/* Barra Vermelha Abaixo (Erros) */}
                   <Bar
@@ -1930,31 +1922,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     name="Erros"
                     stackId="evolution"
                     fill="#F43F5E"
+                    isAnimationActive={false}
                     maxBarSize={filters.period === '6m' ? 10 : filters.period === '3m' ? 14 : 26}
-                  >
-                    <LabelList
-                      dataKey="resolvidas"
-                      position="top"
-                      content={(props: CustomEvolutionLabelProps) => {
-                        const { x, y, width, index } = props;
-                        const item = index !== undefined ? activeMetrics.chartData[index] : undefined;
-                        // Exibe total acima da barra se só houver erros naquele dia
-                        if (!item || item.resolvidas === 0 || item.acertos > 0) return null;
-                        return (
-                          <text
-                            x={Number(x) + Number(width) / 2}
-                            y={Number(y) - 6}
-                            fill={mode === 'dark' ? '#A1A1AA' : '#64748B'}
-                            textAnchor="middle"
-                            fontSize={10}
-                            fontWeight={700}
-                          >
-                            {item.resolvidas}
-                          </text>
-                        );
-                      }}
-                    />
-                  </Bar>
+                  />
 
                   {/* Barra Verde Acima (Acertos) */}
                   <Bar
@@ -1963,31 +1933,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     stackId="evolution"
                     fill="#10B981"
                     radius={[3, 3, 0, 0]}
+                    isAnimationActive={false}
                     maxBarSize={filters.period === '6m' ? 10 : filters.period === '3m' ? 14 : 26}
-                  >
-                    <LabelList
-                      dataKey="resolvidas"
-                      position="top"
-                      content={(props: CustomEvolutionLabelProps) => {
-                        const { x, y, width, index } = props;
-                        const item = index !== undefined ? activeMetrics.chartData[index] : undefined;
-                        // Exibe total acima da barra no topo da pilha
-                        if (!item || item.resolvidas === 0 || item.acertos === 0) return null;
-                        return (
-                          <text
-                            x={Number(x) + Number(width) / 2}
-                            y={Number(y) - 6}
-                            fill={mode === 'dark' ? '#A1A1AA' : '#64748B'}
-                            textAnchor="middle"
-                            fontSize={10}
-                            fontWeight={700}
-                          >
-                            {item.resolvidas}
-                          </text>
-                        );
-                      }}
-                    />
-                  </Bar>
+                  />
 
                   {/* Linha de Tendência de Questões Totais (Opacidade reduzida) */}
                   <Line
@@ -1998,6 +1946,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     strokeWidth={2}
                     strokeOpacity={0.4}
                     dot={false}
+                    isAnimationActive={false}
                     activeDot={{
                       r: 3.5,
                       stroke: mode === 'dark' ? '#94A3B8' : '#64748B',
@@ -2015,6 +1964,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     strokeWidth={2}
                     strokeOpacity={0.55}
                     dot={false}
+                    isAnimationActive={false}
                     activeDot={{
                       r: 3.5,
                       stroke: '#10B981',
