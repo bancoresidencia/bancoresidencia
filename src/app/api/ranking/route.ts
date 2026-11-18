@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { computePlatformLeaderboard } from '@/services/rankingService';
 import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 import { isPrivilegedRole } from '@/utils/security';
+import { getRankingModality } from '@/utils/leaderboard';
+import { RANKING_TABS } from '@/types/ranking';
 
 export const dynamic = 'force-dynamic';
 
@@ -19,16 +21,22 @@ export async function GET(req: NextRequest) {
     const authenticatedUserId = auth.user.id;
     const isAdmin = isPrivilegedRole(auth.user.app_metadata?.role as string | undefined);
 
-    // 2. Parâmetros de consulta com limites estritos contra DoS
-    const { searchParams } = new URL(req.url);
-    const banca = searchParams.get('banca') || undefined;
-    const institution = searchParams.get('institution') || undefined;
-    const modalidade = searchParams.get('modalidade') || undefined;
+    const { searchParams } = req.nextUrl;
+    const banca = searchParams.get('banca')?.trim().slice(0, 150);
+    const institutions = searchParams.getAll('institution').slice(0, 15)
+      .map((institution) => institution.trim().slice(0, 150)).filter(Boolean);
+    const rawModality = searchParams.get('modalidade');
+    const modalidade = getRankingModality(rawModality);
+    const rawTab = searchParams.get('tab') ?? 'all';
+    const tab = RANKING_TABS.find((value) => value === rawTab);
+    if (!tab || (rawModality && !modalidade)) {
+      return NextResponse.json({ success: false, error: 'Recorte de ranking inválido.' }, { status: 400 });
+    }
 
-    const rawLimit = searchParams.get('limit') ? parseInt(searchParams.get('limit')!, 10) : 50;
-    const rawOffset = searchParams.get('offset') ? parseInt(searchParams.get('offset')!, 10) : 0;
-    const limit = Number.isFinite(rawLimit) ? Math.min(100, Math.max(1, rawLimit)) : 50;
-    const offset = Number.isFinite(rawOffset) ? Math.max(0, Math.min(10000, rawOffset)) : 0;
+    const rawLimit = Number.parseInt(searchParams.get('limit') ?? '50', 10);
+    const rawOffset = Number.parseInt(searchParams.get('offset') ?? '0', 10);
+    const limit = Number.isSafeInteger(rawLimit) ? Math.min(100, Math.max(1, rawLimit)) : 50;
+    const offset = Number.isSafeInteger(rawOffset) ? Math.max(0, rawOffset) : 0;
 
     // Invalidação forçada de cache restrita a administradores/curadores
     const forceRefresh = isAdmin && searchParams.get('refresh') === 'true';
@@ -36,22 +44,23 @@ export async function GET(req: NextRequest) {
     const result = await computePlatformLeaderboard(
       {
         banca,
-        institution,
+        institutions,
         modalidade,
+        tab,
         currentUserId: authenticatedUserId,
         limit,
-        offset
+        offset,
+        includePlatformScores: searchParams.get('platformScores') !== 'false',
       },
       forceRefresh
     );
 
-    return NextResponse.json(result);
+    return NextResponse.json(result, { headers: { 'Cache-Control': 'private, no-store' } });
   } catch (err: unknown) {
-    const errorMsg = err instanceof Error ? err.message : 'Falha interna ao processar ranking.';
-    console.error('[API Ranking] Erro:', err);
+    console.error('[API Ranking]', err instanceof Error ? err.message : 'Falha interna.');
     return NextResponse.json(
-      { success: false, error: errorMsg },
-      { status: 500 }
+      { success: false, error: 'O ranking está temporariamente indisponível.' },
+      { status: 503 },
     );
   }
 }

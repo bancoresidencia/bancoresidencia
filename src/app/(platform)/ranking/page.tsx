@@ -1,101 +1,129 @@
 'use client';
 
-import React, { useEffect, useState, useCallback, useMemo } from 'react';
+import { useEffect, useState } from 'react';
 import { OfficialRanking } from '@/components/OfficialRanking';
 import { useAuth } from '@/context/AuthContext';
 import { useStudentData } from '@/context/StudentDataContext';
-import { getOfficialRanking } from '@/utils/percentile';
-import { LeaderboardResponse } from '@/services/rankingService';
+import type { LeaderboardResponse, RankingModality, RankingTab } from '@/types/ranking';
+import { RANKING_PERCENTILE_EVENT, rankingPercentileStorageKey } from '@/utils/rankingPercentileCache';
 
-export default function RankingPage() {
-  const { user } = useAuth();
-  const { stats, performanceFilters, userAnswers } = useStudentData();
-  const [leaderboardData, setLeaderboardData] = useState<LeaderboardResponse | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [, setError] = useState<string | null>(null);
+const PAGE_SIZE = 25;
+const MAX_CACHED_SCOPES = 8;
+const PAGE_CLASS = 'mx-auto w-full min-w-0 max-w-6xl p-4 pb-24 sm:p-6 lg:p-8';
 
-  // Lista de tentativas reais do aluno logado
-  const userAttempts = useMemo(() => {
-    return Object.entries(userAnswers).map(([qid, a]) => ({
-      question_id: qid,
-      difficulty: a.difficulty,
-      correct: a.isCorrect,
-      user_id: user?.id || 'current-user',
-      timestamp: a.timestamp || 0,
-      banca: a.banca,
-      year: a.year
-    }));
-  }, [userAnswers, user?.id]);
+interface Selection {
+  tab: RankingTab;
+  modalidade: RankingModality | '';
+  offset: number;
+  revision: number;
+  refresh: boolean;
+}
 
-  // Ranking local de contingência imediata (0ms)
-  const localFallbackRanking = useMemo(() => {
-    return getOfficialRanking(performanceFilters, {
-      answered: stats.totalAnswered,
-      correct: stats.totalCorrect,
-      name: user?.name || 'Você',
-      attempts: userAttempts
-    });
-  }, [performanceFilters, stats.totalAnswered, stats.totalCorrect, user?.name, userAttempts]);
+interface RankingState {
+  scopes: Map<string, LeaderboardResponse>;
+  latest: { data: LeaderboardResponse; filterKey: string } | null;
+  completedRequest: string | null;
+  error: boolean;
+}
 
-  // Busca o ranking consolidado em tempo real da base de dados do Supabase
-  const fetchLeaderboard = useCallback(async (refresh = false) => {
-    try {
-      setIsLoading(true);
-      setError(null);
-      const params = new URLSearchParams();
-      if (performanceFilters.banca && performanceFilters.banca !== 'Todas') {
-        params.set('banca', performanceFilters.banca);
-      }
-      if (performanceFilters.institutions && performanceFilters.institutions.length > 0) {
-        params.set('institution', performanceFilters.institutions[0]);
-      }
-      if (performanceFilters.modalidade) {
-        params.set('modalidade', performanceFilters.modalidade);
-      }
-      if (refresh) {
-        params.set('refresh', 'true');
-      }
+function StudentRanking({ userId }: { userId: string }) {
+  const { performanceFilters } = useStudentData();
+  const [selection, setSelection] = useState<Selection>({
+    tab: 'all', modalidade: '', offset: 0, revision: 0, refresh: false,
+  });
+  const [state, setState] = useState<RankingState>(() => ({
+    scopes: new Map(), latest: null, completedRequest: null, error: false,
+  }));
 
-      const res = await fetch(`/api/ranking?${params.toString()}`);
-      if (!res.ok) {
-        throw new Error('Falha ao sincronizar dados do ranking.');
-      }
-      const data: LeaderboardResponse = await res.json();
-      if (data && data.success) {
-        setLeaderboardData(data);
-        if (data.currentUser?.percentile !== undefined && data.currentUser?.percentile !== null) {
-          try {
-            localStorage.setItem('bancoresidencia_official_ranking_percentile', String(data.currentUser.percentile));
-            window.dispatchEvent(new Event('bancoresidencia_ranking_updated'));
-          } catch { }
-        }
-      }
-    } catch (err) {
-      console.warn('[RankingPage] Usando ranking local devido a instabilidade:', err);
-      setError(err instanceof Error ? err.message : 'Erro ao buscar ranking.');
-    } finally {
-      setIsLoading(false);
-    }
-  }, [performanceFilters.banca, performanceFilters.institutions, performanceFilters.modalidade]);
+  const filters = new URLSearchParams({ limit: String(PAGE_SIZE), platformScores: 'false' });
+  const banca = performanceFilters.banca === 'Todas' ? '' : performanceFilters.banca;
+  const institutions = performanceFilters.institutions.slice(0, 15);
+  if (banca) filters.set('banca', banca);
+  for (const institution of institutions) filters.append('institution', institution);
+  if (selection.modalidade) filters.set('modalidade', selection.modalidade);
+  const filterKey = filters.toString();
+  filters.set('tab', selection.tab);
+  const scopeKey = filters.toString();
+  filters.set('offset', String(selection.offset));
+  if (selection.refresh) filters.set('refresh', 'true');
+  const query = filters.toString();
+  const requestKey = `${query}:${selection.revision}`;
 
   useEffect(() => {
-    fetchLeaderboard();
-  }, [fetchLeaderboard]);
+    const controller = new AbortController();
+    async function loadRanking() {
+      try {
+        const response = await fetch(`/api/ranking?${query}`, { signal: controller.signal, cache: 'no-store' });
+        if (!response.ok) throw new Error('Ranking indisponível.');
+        const data: LeaderboardResponse = await response.json();
+        if (controller.signal.aborted) return;
+        if (!data.success) throw new Error('Ranking indisponível.');
+        setState((previous) => {
+          const scopes = new Map(previous.scopes);
+          scopes.delete(scopeKey);
+          scopes.set(scopeKey, data);
+          const oldestScope = scopes.keys().next().value;
+          if (scopes.size > MAX_CACHED_SCOPES && oldestScope) scopes.delete(oldestScope);
+          return { scopes, latest: { data, filterKey }, completedRequest: requestKey, error: false };
+        });
+
+        try {
+          const key = rankingPercentileStorageKey(userId);
+          if (data.currentUser) localStorage.setItem(key, String(data.currentUser.percentile));
+          else localStorage.removeItem(key);
+          window.dispatchEvent(new Event(RANKING_PERCENTILE_EVENT));
+        } catch { /* Ranking data is still available without local storage. */ }
+      } catch {
+        if (controller.signal.aborted) return;
+        setState((previous) => ({ ...previous, completedRequest: requestKey, error: true }));
+      }
+    }
+    void loadRanking();
+    return () => controller.abort();
+  }, [query, requestKey, scopeKey, filterKey, userId]);
+
+  function changeSelection(changes: Partial<Omit<Selection, 'revision'>>) {
+    setSelection((previous) => ({ ...previous, refresh: false, ...changes, revision: previous.revision + 1 }));
+  }
+
+  const loading = state.completedRequest !== requestKey;
+  const activeData = state.scopes.get(scopeKey);
+  const counts = activeData ?? (state.latest?.filterKey === filterKey ? state.latest.data : undefined);
 
   return (
-    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 animate-in fade-in duration-200">
-      <OfficialRanking
-        ranking={localFallbackRanking}
-        candidates={leaderboardData?.candidates}
-        currentUserLeaderboard={leaderboardData?.currentUser}
-        filters={performanceFilters}
-        userQuestions={stats.totalAnswered}
-        userPercentile={leaderboardData?.currentUser?.percentile ?? stats.percentileInfo.percentile ?? undefined}
-        userCorrect={stats.totalCorrect}
-        userName={user?.name || 'Você'}
-        isLoading={isLoading}
-        onRefresh={() => fetchLeaderboard(true)}
-      />
+    <OfficialRanking
+      data={activeData}
+      summary={state.latest?.data}
+      counts={counts}
+      tab={selection.tab}
+      modalidade={selection.modalidade}
+      banca={banca}
+      institutions={institutions}
+      loading={loading}
+      error={!loading && state.error}
+      onTabChange={(tab) => changeSelection({ tab, offset: 0 })}
+      onModalityChange={(modalidade) => changeSelection({ modalidade, offset: 0 })}
+      onPageChange={(offset) => changeSelection({ offset })}
+      onRefresh={() => changeSelection({ refresh: true })}
+    />
+  );
+}
+
+export default function RankingPage() {
+  const { user, isLoading } = useAuth();
+
+  return (
+    <div className={PAGE_CLASS}>
+      {user ? (
+        <StudentRanking key={user.id} userId={user.id} />
+      ) : (
+        <>
+          <h1 className="font-heading text-2xl font-bold tracking-tight">Ranking de candidatos</h1>
+          <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400" role="status">
+            {isLoading ? 'Carregando ranking…' : 'Faça login para consultar o ranking.'}
+          </p>
+        </>
+      )}
     </div>
   );
 }

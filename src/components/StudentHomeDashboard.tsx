@@ -69,6 +69,8 @@ import dynamic from 'next/dynamic';
 import { UserStats, QuestionList, ActiveTab, Modalidade, UserAnswerItem, PeriodFilter } from '@/types';
 import { UterusIcon, PregnantWomanIcon } from './StatsDashboard';
 import { getPercentileColor, UNRANKED_THRESHOLD } from '@/utils/percentile';
+import { RANKING_PERCENTILE_EVENT, rankingPercentileStorageKey } from '@/utils/rankingPercentileCache';
+import type { LeaderboardResponse } from '@/types/ranking';
 import { computeAdaptiveDistribution, getBaselinePlatformScores } from '@/utils/distributionCurve';
 import { useTheme } from '@/context/ThemeContext';
 import { Button, Badge, ProgressBar } from '@/components/ui';
@@ -540,63 +542,52 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   // Scores de todos os alunos da plataforma para calibrar a curva adaptável
   const [platformScores, setPlatformScores] = useState<number[]>(() => getBaselinePlatformScores());
 
-  // Sincronização em tempo real do percentil oficial homologado pelo ranking
-  const [rankingPercentile, setRankingPercentile] = useState<number | null>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem('bancoresidencia_official_ranking_percentile');
-        if (saved !== null && saved !== '') {
-          const num = Number(saved);
-          if (!Number.isNaN(num)) return num;
-        }
-      } catch { }
-    }
-    return null;
-  });
+  const [ranking, setRanking] = useState<{ userId: string; percentile: number | null } | null>(null);
+  const rankingPercentile = ranking && ranking.userId === user?.id ? ranking.percentile : null;
 
   useEffect(() => {
-    if (!user?.id || user.id === 'demo-student') return;
-    let isMounted = true;
+    const userId = user?.id;
+    if (!userId || userId === 'demo-student') return;
+    const key = rankingPercentileStorageKey(userId);
+    const controller = new AbortController();
     const fetchOfficialRankingPercentile = async () => {
       try {
-        const res = await fetch('/api/ranking');
+        const res = await fetch('/api/ranking?limit=1', { signal: controller.signal, cache: 'no-store' });
         if (!res.ok) return;
-        const data = await res.json();
-        if (data?.success) {
-          if (Array.isArray(data.platformScores) && data.platformScores.length > 0 && isMounted) {
-            setPlatformScores(data.platformScores);
-          }
-          if (data?.currentUser?.percentile !== undefined && data?.currentUser?.percentile !== null && isMounted) {
-            setRankingPercentile(data.currentUser.percentile);
-            try {
-              localStorage.setItem('bancoresidencia_official_ranking_percentile', String(data.currentUser.percentile));
-            } catch { }
-          }
+        const data: LeaderboardResponse = await res.json();
+        if (!data.success || controller.signal.aborted) return;
+        setPlatformScores(data.platformScores?.length ? data.platformScores : getBaselinePlatformScores());
+        const percentile = data.currentUser?.percentile ?? null;
+        setRanking({ userId, percentile });
+        try {
+          if (percentile !== null) localStorage.setItem(key, String(percentile));
+          else localStorage.removeItem(key);
+        } catch {
+          // The in-memory percentile is still available.
         }
       } catch { }
     };
-
-    fetchOfficialRankingPercentile();
 
     const handleRankingUpdate = () => {
       try {
-        const saved = localStorage.getItem('bancoresidencia_official_ranking_percentile');
-        if (saved !== null && saved !== '') {
-          const num = Number(saved);
-          if (!Number.isNaN(num) && isMounted) {
-            setRankingPercentile(num);
-          }
-        }
+        const saved = localStorage.getItem(key);
+        const percentile = saved ? Number(saved) : null;
+        setRanking({ userId, percentile: percentile !== null && Number.isFinite(percentile) ? percentile : null });
       } catch { }
     };
+    const handleStorage = (event: StorageEvent) => {
+      if (event.key === key || event.key === null) handleRankingUpdate();
+    };
 
-    window.addEventListener('bancoresidencia_ranking_updated', handleRankingUpdate);
-    window.addEventListener('storage', handleRankingUpdate);
+    queueMicrotask(() => { if (!controller.signal.aborted) handleRankingUpdate(); });
+    void fetchOfficialRankingPercentile();
+    window.addEventListener(RANKING_PERCENTILE_EVENT, handleRankingUpdate);
+    window.addEventListener('storage', handleStorage);
 
     return () => {
-      isMounted = false;
-      window.removeEventListener('bancoresidencia_ranking_updated', handleRankingUpdate);
-      window.removeEventListener('storage', handleRankingUpdate);
+      controller.abort();
+      window.removeEventListener(RANKING_PERCENTILE_EVENT, handleRankingUpdate);
+      window.removeEventListener('storage', handleStorage);
     };
   }, [user?.id]);
 

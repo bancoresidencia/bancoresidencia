@@ -1,500 +1,263 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
-import { Trophy, Medal, ShieldAlert, Sparkles, HelpCircle, RefreshCw, Users } from 'lucide-react';
-import { RankedStudent, getPercentileColor } from '@/utils/percentile';
-import { PerformanceFilterState } from '@/types';
-import { useTheme } from '@/context/ThemeContext';
-import { LeaderboardStudent } from '@/services/rankingService';
+import { useRef, useState } from 'react';
+import type { KeyboardEvent } from 'react';
+import { ArrowLeft, ArrowRight, ChevronDown, RefreshCw, Trophy } from 'lucide-react';
+import { Badge } from '@/components/ui/Badge';
+import { Button } from '@/components/ui/Button';
+import { Card } from '@/components/ui/Card';
+import { Skeleton } from '@/components/ui/Skeleton';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/Tabs';
+import { RankingCandidateList, RankingPodium } from '@/components/ranking/RankingStandings';
+import { RANKING_MODALITIES, RANKING_TABS } from '@/types/ranking';
+import type { LeaderboardResponse, RankingModality, RankingTab } from '@/types/ranking';
+import { getRankingStatus } from '@/utils/irtModel';
+
+const integer = new Intl.NumberFormat('pt-BR');
+const dateTime = new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short' });
+const tabLabels: Record<RankingTab, string> = { all: 'Geral', official: 'Oficial', provisional: 'Provisório' };
+const scopeNotes: Partial<Record<RankingTab, string>> = {
+  official: 'A partir de 500 questões válidas.',
+  provisional: 'De 150 a 499 questões válidas.',
+};
 
 interface OfficialRankingProps {
-  ranking?: RankedStudent[];
-  candidates?: LeaderboardStudent[];
-  filters: PerformanceFilterState;
-  userQuestions: number;
-  userPercentile?: number;
-  userCorrect?: number;
-  userName?: string;
-  currentUserLeaderboard?: LeaderboardStudent | null;
-  isLoading?: boolean;
-  onRefresh?: () => void;
+  data?: LeaderboardResponse;
+  summary?: LeaderboardResponse;
+  counts?: LeaderboardResponse;
+  tab: RankingTab;
+  modalidade: RankingModality | '';
+  banca: string;
+  institutions: string[];
+  loading: boolean;
+  error: boolean;
+  onTabChange: (tab: RankingTab) => void;
+  onModalityChange: (modality: RankingModality | '') => void;
+  onPageChange: (offset: number) => void;
+  onRefresh: () => void;
 }
 
-export const OfficialRanking: React.FC<OfficialRankingProps> = ({
-  ranking = [],
-  candidates,
-  filters,
-  userQuestions,
-  userPercentile,
-  userCorrect = 0,
-  userName = 'Você',
-  currentUserLeaderboard,
-  isLoading = false,
-  onRefresh
-}) => {
-  const { accentConfig, mode } = useTheme();
-  const [activeRankingTab, setActiveRankingTab] = useState<'all' | 'official' | 'provisional'>('all');
-
-  const isUserEligibleOfficial = userQuestions >= 500;
-  const isUserEligibleProvisional = userQuestions >= 150;
-  const isUserEligibleCalibrating = userQuestions >= 30;
-
-  // Normaliza candidatos da API ou do ranking local
-  const allCandidates: RankedStudent[] = useMemo(() => {
-    if (candidates && candidates.length > 0) {
-      return candidates.map((c, index) => ({
-        rank: index + 1,
-        name: c.isCurrentUser ? `${c.name} (Você)` : c.name,
-        institution: c.college || 'Geral',
-        banca: c.bancaFoco || 'Todas',
-        answered: c.totalAnswered,
-        correct: c.totalCorrect,
-        rawAccuracy: c.accuracy,
-        adjustedScore: c.adjustedScore,
-        percentile: c.percentile,
-        formattedPercentile: c.formattedPercentile,
-        theta: c.theta,
-        standard_error: c.standardError,
-        isOfficial: c.isOfficial
-      }));
-    }
-    return ranking;
-  }, [candidates, ranking]);
-
-  // Filtra pela aba selecionada
-  const displayedList = useMemo(() => {
-    if (activeRankingTab === 'official') {
-      const filtered = allCandidates.filter(s => s.answered >= 500);
-      return filtered.map((item, idx) => ({ ...item, rank: idx + 1 }));
-    }
-    if (activeRankingTab === 'provisional') {
-      const filtered = allCandidates.filter(s => s.answered >= 150 && s.answered < 500);
-      return filtered.map((item, idx) => ({ ...item, rank: idx + 1 }));
-    }
-    // Aba 'all': Todos os candidatos da plataforma (incluindo em calibração)
-    return allCandidates;
-  }, [activeRankingTab, allCandidates]);
-
-  // Contadores para as abas
-  const officialCount = useMemo(() => allCandidates.filter(s => s.answered >= 500).length, [allCandidates]);
-  const provisionalCount = useMemo(() => allCandidates.filter(s => s.answered >= 150 && s.answered < 500).length, [allCandidates]);
-  const totalCount = allCandidates.length;
+function PositionSummary({ summary, data, tab, filtered }: {
+  summary: LeaderboardResponse;
+  data?: LeaderboardResponse;
+  tab: RankingTab;
+  filtered: boolean;
+}) {
+  const student = summary.currentUser;
+  const validCount = summary.currentUserProgress.totalAnswered;
+  const status = getRankingStatus(validCount);
+  const scopeRank = data?.currentScopeRank;
+  const missing = status.missingForNextTier;
+  const showScopePosition = scopeRank != null && (tab !== 'all' || filtered);
+  const scopeLabel = tab === 'all' ? 'no recorte' : `no ${tabLabels[tab]}`;
 
   return (
-    <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
-      {/* Cabeçalho do Ranking */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800/80 pb-5">
-        <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-500 shadow-md">
-            <Trophy className="w-6 h-6" />
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <h3 className="font-heading text-lg sm:text-xl font-bold text-slate-900 dark:text-white tracking-tight">
-                Ranking de Candidatos
-              </h3>
-              <span
-                className="text-[10px] uppercase font-black px-2.5 py-0.5 rounded-full border"
-                style={activeRankingTab === 'official' ? {
-                  backgroundColor: 'rgba(245, 158, 11, 0.12)',
-                  color: '#f59e0b',
-                  borderColor: 'rgba(245, 158, 11, 0.35)'
-                } : activeRankingTab === 'provisional' ? {
-                  backgroundColor: 'rgba(59, 130, 246, 0.12)',
-                  color: '#3b82f6',
-                  borderColor: 'rgba(59, 130, 246, 0.35)'
-                } : {
-                  backgroundColor: accentConfig.bgRgba,
-                  color: accentConfig.primaryHex,
-                  borderColor: accentConfig.borderRgba
-                }}
-              >
-                {activeRankingTab === 'official'
-                  ? `Oficial (≥500 Q) • ${officialCount}`
-                  : activeRankingTab === 'provisional'
-                  ? `Provisório (150–499 Q) • ${provisionalCount}`
-                  : `Geral da Plataforma • ${totalCount}`}
-              </span>
-            </div>
-            <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-0.5">
-              Classificação contínua por Modelo IRT Bayesiano 2PL com P-valor empírico
+    <Card className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-l-[3px] border-l-[var(--primary-color)] px-3.5 py-3.5 motion-reduce:transition-none sm:p-5" aria-labelledby="ranking-position-heading">
+      <div className="min-w-0 space-y-1">
+        <div className="flex flex-wrap items-center gap-2">
+          <h2 id="ranking-position-heading" className="text-sm font-medium text-zinc-600 dark:text-zinc-400">Sua posição geral</h2>
+          {student && <Badge variant="outline" size="sm" className="motion-reduce:transition-none">{status.badgeLabel}</Badge>}
+        </div>
+        {student ? (
+          <p className="flex flex-wrap items-baseline gap-x-2">
+            <strong className="font-heading text-3xl leading-none font-bold tracking-tight tabular-nums sm:text-4xl">{integer.format(student.rank)}º</strong>
+            <span className="text-sm font-medium text-zinc-600 dark:text-zinc-400">de {integer.format(summary.globalTotalCandidates)} no geral</span>
+          </p>
+        ) : (
+          <>
+            <p className="font-heading text-xl font-semibold tracking-tight">Em progresso</p>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              {missing === 1 ? 'Falta 1 questão válida' : `Faltam ${integer.format(missing)} questões válidas`} para entrar no Geral.
             </p>
-          </div>
-        </div>
-
-        {/* Abas Alternativas: Geral vs Oficial vs Provisório + Botão Atualizar */}
-        <div className="flex items-center gap-2 flex-wrap self-start sm:self-auto">
-          <div className="flex items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800">
-            <button
-              type="button"
-              onClick={() => setActiveRankingTab('all')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                activeRankingTab === 'all'
-                  ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-            >
-              👥 Geral ({totalCount})
-            </button>
-            <button
-              type="button"
-              onClick={() => setActiveRankingTab('official')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                activeRankingTab === 'official'
-                  ? 'bg-white dark:bg-slate-800 text-amber-700 dark:text-amber-400 shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-            >
-              🏆 Oficial ({officialCount})
-            </button>
-            <button
-              type="button"
-              onClick={() => setActiveRankingTab('provisional')}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                activeRankingTab === 'provisional'
-                  ? 'bg-white dark:bg-slate-800 shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
-                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-              }`}
-              style={activeRankingTab === 'provisional' ? { color: accentConfig.primaryHex } : undefined}
-            >
-              ⚡ Provisório ({provisionalCount})
-            </button>
-          </div>
-
-          {onRefresh && (
-            <button
-              type="button"
-              onClick={onRefresh}
-              disabled={isLoading}
-              title="Atualizar dados do ranking em tempo real"
-              className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-all cursor-pointer disabled:opacity-50"
-            >
-              <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin text-amber-500' : ''}`} />
-            </button>
-          )}
-        </div>
+          </>
+        )}
+        {showScopePosition && <p className="text-sm font-medium tabular-nums">{integer.format(scopeRank)}º {scopeLabel}</p>}
       </div>
 
-      {/* CARD: SEU PERCENTIL E DESEMPENHO NO RANKING */}
-      {(() => {
-        const pValue = currentUserLeaderboard?.percentile ?? userPercentile ?? 50;
-        const tier = getPercentileColor(pValue);
-        const userInList = displayedList.find((s) => s.name.includes('(Você)'));
-        const userRank = userInList ? `#${userInList.rank}` : (isUserEligibleOfficial ? 'Homologado' : 'Sem ranking');
-        const badgeTextColor = mode === 'light' ? tier.textLight : tier.textDark;
+      <dl className="flex flex-wrap gap-x-5 gap-y-2 sm:gap-x-8">
+        <div>
+          <dt className="text-xs text-zinc-600 dark:text-zinc-400">Questões válidas</dt>
+          <dd className="mt-0.5 text-sm font-semibold tabular-nums sm:text-base">{integer.format(validCount)}</dd>
+        </div>
+        {student && (
+          <div>
+            <dt className="text-xs text-zinc-600 dark:text-zinc-400">Percentil geral</dt>
+            <dd className="mt-0.5 text-sm font-semibold tabular-nums sm:text-base">{student.formattedPercentile.replace('.', ',')}</dd>
+          </div>
+        )}
+      </dl>
+    </Card>
+  );
+}
 
-        return (
-          <div
-            className="p-5 sm:p-6 rounded-3xl border transition-all shadow-xs space-y-4"
-            style={{
-              backgroundColor: tier.bgRgba,
-              borderColor: tier.borderRgba
+function moveTabFocus(event: KeyboardEvent<HTMLDivElement>) {
+  if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+  const tabs = Array.from(event.currentTarget.querySelectorAll<HTMLButtonElement>('[role="tab"]'));
+  const index = tabs.findIndex((button) => button === document.activeElement);
+  if (index < 0) return;
+  event.preventDefault();
+
+  let next = index;
+  if (event.key === 'Home') next = 0;
+  if (event.key === 'End') next = tabs.length - 1;
+  if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+  if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+  tabs[next]?.focus();
+}
+
+function RankingPagination({ data, loading, onPageChange }: {
+  data: LeaderboardResponse;
+  loading: boolean;
+  onPageChange: (offset: number) => void;
+}) {
+  if (data.scopeTotal <= data.limit && data.offset === 0) return null;
+  const end = Math.min(data.offset + data.limit, data.scopeTotal);
+  const start = Math.max(4, data.offset + 1);
+  const previousOffset = Math.max(0, Math.min(data.offset - data.limit, Math.floor((data.scopeTotal - 1) / data.limit) * data.limit));
+  const range = start === end ? `Posição ${integer.format(start)}` : `Posições ${integer.format(start)}–${integer.format(end)}`;
+
+  return (
+    <nav aria-label="Páginas do ranking" className="flex flex-wrap items-center justify-between gap-3">
+      <p aria-live="polite" className="text-xs tabular-nums text-zinc-600 dark:text-zinc-400">
+        {start <= end
+          ? `${range} de ${integer.format(data.scopeTotal)}`
+          : `${integer.format(data.scopeTotal)} candidatos`}
+      </p>
+      <div className="flex gap-2">
+        <Button variant="outline" size="icon" className="min-h-11 min-w-11 motion-reduce:transition-none" aria-label="Página anterior" aria-disabled={loading || data.offset === 0} onClick={() => {
+          if (!loading && data.offset > 0) onPageChange(previousOffset);
+        }}>
+          <ArrowLeft className="size-4" aria-hidden="true" />
+        </Button>
+        <Button variant="outline" size="icon" className="min-h-11 min-w-11 motion-reduce:transition-none" aria-label="Próxima página" aria-disabled={loading || end >= data.scopeTotal} onClick={() => {
+          if (!loading && end < data.scopeTotal) onPageChange(data.offset + data.limit);
+        }}>
+          <ArrowRight className="size-4" aria-hidden="true" />
+        </Button>
+      </div>
+    </nav>
+  );
+}
+
+export function OfficialRanking({
+  data, summary, counts, tab, modalidade, banca, institutions, loading, error,
+  onTabChange, onModalityChange, onPageChange, onRefresh,
+}: OfficialRankingProps) {
+  const [focusedTab, setFocusedTab] = useState<RankingTab | null>(null);
+  const refreshButton = useRef<HTMLButtonElement>(null);
+  const totals = counts ? { all: counts.totalCandidates, official: counts.officialCount, provisional: counts.provisionalCount } : undefined;
+  const filtered = Boolean(modalidade || banca || institutions.length);
+  const rows = data?.candidates.filter((candidate) => candidate.rank > 3) ?? [];
+
+  return (
+    <div className="space-y-4 sm:space-y-5">
+      <header className="flex items-center justify-between gap-3">
+        <h1 className="font-heading text-2xl leading-tight font-bold tracking-tight sm:text-3xl">Ranking de candidatos</h1>
+        <Button
+          ref={refreshButton}
+          variant="outline"
+          className="min-h-11 min-w-11 shrink-0 px-2.5 motion-reduce:transition-none sm:px-3.5"
+          aria-label="Atualizar ranking"
+          aria-disabled={loading}
+          onClick={() => { if (!loading) onRefresh(); }}
+          leftIcon={<RefreshCw className={`size-4 ${loading ? 'motion-safe:animate-spin' : ''}`} aria-hidden="true" />}
+        >
+          <span className="hidden sm:inline">Atualizar</span>
+        </Button>
+      </header>
+
+      {summary ? <PositionSummary summary={summary} data={data} tab={tab} filtered={filtered} /> : (
+        loading && <Skeleton variant="card" className="h-28 motion-reduce:animate-none" />
+      )}
+
+      {error && (
+        <Card variant="flat" className="text-sm text-zinc-700 motion-reduce:transition-none dark:text-zinc-200" role="status">
+          <p className="font-semibold">Não foi possível atualizar o ranking.</p>
+          {data ? <p>Último resultado deste recorte em {dateTime.format(new Date(data.generatedAt))}.</p> : (
+            summary && <p>Posição geral consultada em {dateTime.format(new Date(summary.generatedAt))}.</p>
+          )}
+          <Button variant="outline" className="mt-2.5 min-h-11 motion-reduce:transition-none" onClick={() => {
+            refreshButton.current?.focus();
+            onRefresh();
+          }}>Tentar novamente</Button>
+        </Card>
+      )}
+
+      <Tabs value={tab} onValueChange={(value) => {
+        const next = RANKING_TABS.find((option) => option === value);
+        if (next && next !== tab) onTabChange(next);
+      }}>
+        <div className="flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <TabsList
+            aria-label="Classificação"
+            className="grid min-w-0 grid-cols-3 sm:inline-flex"
+            onKeyDown={moveTabFocus}
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget)) setFocusedTab(null);
             }}
           >
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-              <div className="flex items-center gap-3.5">
-                <div
-                  className="w-12 h-12 rounded-2xl flex items-center justify-center font-mono font-black text-base shadow-sm shrink-0"
-                  style={{
-                    backgroundColor: tier.color,
-                    color: '#ffffff'
-                  }}
-                >
-                  P{pValue}
-                </div>
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span
-                      className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full border shadow-xs"
-                      style={{
-                        backgroundColor: tier.bgRgba,
-                        borderColor: tier.borderRgba,
-                        color: badgeTextColor
-                      }}
-                    >
-                      {tier.name}
-                    </span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400">
-                      Faixa {tier.rangeLabel}
-                    </span>
-                  </div>
-                  <h4 className="font-heading text-lg sm:text-xl font-black text-slate-900 dark:text-white mt-0.5">
-                    Nível {tier.name} — {userInList ? `Posição ${userRank}` : userRank}
-                  </h4>
-                  <p className="text-xs text-slate-600 dark:text-slate-300">
-                    {userInList ? (
-                      <>
-                        Você está na posição <strong className="font-bold text-slate-900 dark:text-white">#{userInList.rank}</strong> no ranking com base no modelo TRI Bayesiano oficial da plataforma.
-                      </>
-                    ) : (
-                      <>
-                        {(() => {
-                          const needed = Math.max(0, (activeRankingTab === 'official' ? 500 : activeRankingTab === 'provisional' ? 150 : 30) - userQuestions);
-                          return (
-                            <>
-                              Você resolveu <strong className="font-bold text-slate-900 dark:text-white">{userQuestions} {userQuestions === 1 ? 'questão' : 'questões'}</strong>. {isUserEligibleOfficial ? 'Você atingiu o requisito de questões para homologação oficial.' : `Resolva mais ${needed} ${needed === 1 ? 'questão' : 'questões'} para figurar nesta aba.`}
-                            </>
-                          );
-                        })()}
-                      </>
-                    )}
-                  </p>
-                </div>
-              </div>
+            {RANKING_TABS.map((option) => (
+              <TabsTrigger
+                key={option}
+                id={`ranking-tab-${option}`}
+                value={option}
+                className="min-h-11 min-w-0 flex-wrap gap-x-1 gap-y-0 px-1.5 tabular-nums motion-reduce:transition-none sm:px-3"
+                aria-controls="ranking-results"
+                tabIndex={(focusedTab ?? tab) === option ? 0 : -1}
+                onFocus={() => setFocusedTab(option)}
+              >
+                {tabLabels[option]}
+                {totals && <span className="font-normal text-zinc-600 dark:text-zinc-400">{integer.format(totals[option])}</span>}
+              </TabsTrigger>
+            ))}
+          </TabsList>
 
-              {/* Métricas rápidas */}
-              <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-                <div className="px-3.5 py-2 rounded-2xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 text-center">
-                  <span className="text-[10px] font-bold text-slate-400 block uppercase">Questões</span>
-                  <span className="text-sm font-mono font-black text-slate-900 dark:text-white">
-                    {userQuestions}
-                  </span>
-                </div>
-                <div className="px-3.5 py-2 rounded-2xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 text-center">
-                  <span className="text-[10px] font-bold text-slate-400 block uppercase">Status</span>
-                  <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                    {isUserEligibleOfficial ? 'Homologado' : (isUserEligibleProvisional ? 'Provisório' : isUserEligibleCalibrating ? 'Calibrando' : 'Em Progresso')}
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        );
-      })()}
-
-      {/* Alerta Informativo de Elegibilidade */}
-      {activeRankingTab === 'official' && !isUserEligibleOfficial && (
-        <div className="p-4 sm:p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/50 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="flex items-start gap-3.5">
-            <ShieldAlert className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
-            <div className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
-              <span className="font-bold text-amber-800 dark:text-amber-300">Homologação Oficial (≥500 questões):</span> Para figurar oficialmente no ranking consolidado, é exigido um mínimo de <strong>500 questões válidas</strong>. Você resolveu <strong>{userQuestions}</strong> (faltam <strong>{Math.max(0, 500 - userQuestions)}</strong>).
-              {isUserEligibleProvisional ? (
-                <span className="block mt-1 text-blue-700 dark:text-blue-400 font-medium">
-                  👉 Seu percentil atual é provisório e você já participa da aba <strong>Ranking Provisório</strong>!
-                </span>
-              ) : (
-                <span className="block mt-1 text-slate-600 dark:text-slate-400">
-                  Consulte a aba <strong>Geral</strong> para acompanhar sua posição entre os candidatos ativos da plataforma!
-                </span>
-              )}
-            </div>
-          </div>
+          <label className="relative inline-flex min-w-0 items-center sm:max-w-56">
+            <span className="sr-only">Modalidade</span>
+            <select
+              value={modalidade}
+              onChange={(event) => onModalityChange(RANKING_MODALITIES.find((option) => option === event.target.value) ?? '')}
+              className="min-h-11 w-full appearance-none rounded-xl border border-[var(--card-border)] bg-[var(--bg-card)] py-2 pr-9 pl-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-color)]"
+            >
+              <option value="">Todas as modalidades</option>
+              {RANKING_MODALITIES.map((option) => <option value={option} key={option}>{option}</option>)}
+            </select>
+            <ChevronDown className="pointer-events-none absolute right-3 size-4 text-zinc-600 dark:text-zinc-400" aria-hidden="true" />
+          </label>
         </div>
-      )}
 
-      {activeRankingTab === 'provisional' && (
-        <div className="p-4 rounded-2xl bg-blue-50/80 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/50 flex items-start gap-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
-          <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
-          <div>
-            <strong>Ranking Provisório (150 a 499 questões):</strong> Estimativa antecipada da sua faixa de percentil com regularização Bayesiana. Não substitui a classificação oficial.
-          </div>
-        </div>
-      )}
-
-      {/* Tabela do Ranking com Foco Central no P-valor e Destaque no Top 3 */}
-      <div className="overflow-x-auto rounded-2xl border border-slate-200/90 dark:border-slate-800/80 bg-white dark:bg-slate-950/40 shadow-xs">
-        <table className="w-full text-left text-sm text-slate-800 dark:text-slate-200">
-          <thead>
-            <tr className="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/80 text-slate-700 dark:text-slate-400 uppercase tracking-wider font-extrabold text-[11px]">
-              <th className="py-3.5 px-4">Posição</th>
-              <th className="py-3.5 px-4">Identificador</th>
-              <th className="py-3.5 px-4 text-center">
-                <div className="inline-flex items-center gap-1">
-                  <span>P-valor</span>
-                  <HelpCircle className="w-3.5 h-3.5 text-slate-400" />
-                </div>
-              </th>
-              <th className="py-3.5 px-4">Instituição de Origem</th>
-              <th className="py-3.5 px-4">Banca Foco</th>
-              <th className="py-3.5 px-4 text-center">Questões</th>
-              <th className="py-3.5 px-4 text-right">Taxa de Acertos</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
-            {isLoading ? (
-              <tr>
-                <td colSpan={7} className="py-12 px-4 text-center">
-                  <div className="flex flex-col items-center justify-center gap-3">
-                    <RefreshCw className="w-6 h-6 animate-spin text-amber-500" />
-                    <span className="text-sm font-semibold text-slate-600 dark:text-slate-300">
-                      Calculando posições por modelo IRT...
-                    </span>
-                  </div>
-                </td>
-              </tr>
-            ) : displayedList.length === 0 ? (
-              <tr>
-                <td colSpan={7} className="py-12 px-4 text-center">
-                  <div className="flex flex-col items-center justify-center gap-3 max-w-md mx-auto">
-                    <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-500">
-                      <Trophy className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-slate-800 dark:text-slate-100 text-sm">
-                        {activeRankingTab === 'official'
-                          ? 'Nenhum candidato no Ranking Oficial ainda'
-                          : activeRankingTab === 'provisional'
-                          ? 'Nenhum candidato no Ranking Provisório ainda'
-                          : 'Nenhum candidato cadastrado'}
-                      </h4>
-                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                        {activeRankingTab === 'official'
-                          ? 'São necessárias pelo menos 500 questões válidas para figurar no ranking consolidado. Resolva questões e dispute o Top 3!'
-                          : activeRankingTab === 'provisional'
-                          ? 'São necessárias pelo menos 150 questões válidas para figurar no ranking provisório. Continue praticando para estrear no ranking!'
-                          : 'Resolva questões para ingressar no ranking da plataforma!'}
-                      </p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
+        <p className="sr-only" role="status">{loading ? 'Carregando classificação…' : ''}</p>
+        <TabsContent
+          value={tab}
+          id="ranking-results"
+          aria-labelledby={`ranking-tab-${tab}`}
+          aria-busy={loading}
+          tabIndex={0}
+          className="mt-4 space-y-4 rounded-lg focus-visible:ring-2 focus-visible:ring-[var(--primary-color)] motion-reduce:animate-none sm:mt-5 sm:space-y-5"
+        >
+          {(scopeNotes[tab] || banca || institutions.length > 0) && (
+            <div className="space-y-1 text-xs text-zinc-600 [overflow-wrap:anywhere] dark:text-zinc-400">
+              {scopeNotes[tab] && <p>{scopeNotes[tab]}</p>}
+              {banca && <p>Banca foco: {banca}</p>}
+              {institutions.length > 0 && <p>Instituições: {institutions.join(', ')}</p>}
+            </div>
+          )}
+          {data ? (
+            data.scopeTotal > 0 ? (
+              <>
+                <RankingPodium leaders={data.leaders} />
+                <RankingCandidateList key={data.offset} candidates={rows} />
+                <RankingPagination data={data} loading={loading} onPageChange={onPageChange} />
+              </>
             ) : (
-              displayedList.map((student) => {
-                const isCurrentUser = student.name.includes('(Você)');
-                const tier = getPercentileColor(student.percentile);
-
-                // Destaque Nobre para os 3 Primeiros Colocados (Top 3)
-                const isTop1 = student.rank === 1;
-                const isTop2 = student.rank === 2;
-                const isTop3 = student.rank === 3;
-                const isTopThree = isTop1 || isTop2 || isTop3;
-
-                let rowBgClass = '';
-                let borderLeftClass = 'border-l-4 border-transparent';
-                let rankBadge = null;
-                let topTag = null;
-
-                if (isTop1) {
-                  rowBgClass = 'bg-amber-500/[0.08] dark:bg-amber-500/[0.14]';
-                  borderLeftClass = 'border-l-4 border-l-amber-500';
-                  rankBadge = (
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-amber-500/20 text-amber-800 dark:text-amber-200 border border-amber-500/40 font-mono font-black text-xs shadow-xs">
-                      <Trophy className="w-4 h-4 text-amber-500 shrink-0" />
-                      #1
-                    </span>
-                  );
-                  topTag = (
-                    <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-800 dark:text-amber-300 border border-amber-500/40">
-                      1º Lugar 🥇
-                    </span>
-                  );
-                } else if (isTop2) {
-                  rowBgClass = 'bg-slate-300/[0.18] dark:bg-slate-500/[0.14]';
-                  borderLeftClass = 'border-l-4 border-l-slate-400 dark:border-l-slate-400';
-                  rankBadge = (
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-300 dark:border-slate-600 font-mono font-black text-xs shadow-xs">
-                      <Medal className="w-4 h-4 text-slate-400 shrink-0" />
-                      #2
-                    </span>
-                  );
-                  topTag = (
-                    <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-slate-500/15 text-slate-700 dark:text-slate-300 border border-slate-500/30">
-                      2º Lugar 🥈
-                    </span>
-                  );
-                } else if (isTop3) {
-                  rowBgClass = 'bg-amber-700/[0.08] dark:bg-amber-700/[0.14]';
-                  borderLeftClass = 'border-l-4 border-l-amber-700 dark:border-l-amber-600';
-                  rankBadge = (
-                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-amber-800/15 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 border border-amber-700/40 font-mono font-black text-xs shadow-xs">
-                      <Medal className="w-4 h-4 text-amber-700 dark:text-amber-500 shrink-0" />
-                      #3
-                    </span>
-                  );
-                  topTag = (
-                    <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full bg-amber-700/15 text-amber-800 dark:text-amber-300 border border-amber-700/30">
-                      3º Lugar 🥉
-                    </span>
-                  );
-                } else {
-                  rankBadge = (
-                    <span className="flex items-center text-sm font-mono font-bold text-slate-700 dark:text-slate-300 pl-1">
-                      #{student.rank}
-                    </span>
-                  );
-                }
-
-                if (isCurrentUser && !isTopThree) {
-                  rowBgClass = 'bg-blue-50/80 dark:bg-blue-950/40 font-semibold';
-                  borderLeftClass = 'border-l-4 border-blue-600';
-                }
-
-                const displayName = student.name;
-                const badgeTextColor = mode === 'light' ? tier.textLight : tier.textDark;
-
-                return (
-                  <tr
-                    key={`${activeRankingTab}-${student.name}-${student.rank}`}
-                    className={`hover:bg-slate-50/90 dark:hover:bg-slate-900/70 transition-colors ${rowBgClass} ${borderLeftClass}`}
-                  >
-                    <td className="py-4 px-4 font-mono">
-                      {rankBadge}
-                    </td>
-                    <td className="py-4 px-4">
-                      <div className="font-bold text-slate-900 dark:text-white flex items-center gap-2 flex-wrap">
-                        <span className={isCurrentUser ? 'text-blue-700 dark:text-blue-300 font-extrabold' : 'text-slate-800 dark:text-slate-200 font-semibold'}>
-                          {displayName}
-                        </span>
-                        {topTag}
-                        {isCurrentUser && (
-                          <span
-                            className="text-[10px] uppercase font-black px-2 py-0.5 rounded-full border shadow-xs"
-                            style={{
-                              backgroundColor: accentConfig.bgRgba,
-                              color: accentConfig.primaryHex,
-                              borderColor: accentConfig.borderRgba
-                            }}
-                          >
-                            Você
-                          </span>
-                        )}
-                      </div>
-                    </td>
-
-                    {/* P-valor Limpo e Destacado */}
-                    <td className="py-4 px-4 text-center">
-                      <span
-                        className="px-3.5 py-1.5 rounded-xl font-extrabold font-mono text-xs tracking-wider border shadow-xs inline-flex items-center gap-2 transition-all"
-                        style={{
-                          backgroundColor: tier.bgRgba,
-                          borderColor: tier.borderRgba,
-                          color: badgeTextColor
-                        }}
-                        title={`Percentil P${student.percentile} (${tier.name}) - Score IRT Ajustado: ${student.adjustedScore.toFixed(2)}`}
-                      >
-                        <span
-                          className="w-2.5 h-2.5 rounded-full shrink-0 shadow-xs"
-                          style={{ backgroundColor: tier.color }}
-                        />
-                        P{student.percentile}
-                      </span>
-                    </td>
-
-                    <td className="py-4 px-4 text-slate-600 dark:text-slate-400 text-xs sm:text-sm font-medium">
-                      {student.institution}
-                    </td>
-                    <td className="py-4 px-4 text-slate-600 dark:text-slate-400 text-xs sm:text-sm font-medium">
-                      {student.banca}
-                    </td>
-                    <td className="py-4 px-4 text-center font-mono font-bold text-slate-900 dark:text-slate-200">
-                      {student.answered}
-                    </td>
-                    <td className="py-4 px-4 text-right">
-                      <span className="text-emerald-700 dark:text-emerald-400 font-extrabold font-mono text-sm">
-                        {student.rawAccuracy.toFixed(1)}%
-                      </span>
-                      <span className="text-[11px] text-slate-500 dark:text-slate-400 block font-normal">
-                        ({student.correct}/{student.answered})
-                      </span>
-                    </td>
-                  </tr>
-                );
-              })
-            )}
-          </tbody>
-        </table>
-      </div>
+              <Card className="flex items-center gap-3 text-sm text-zinc-700 motion-reduce:transition-none dark:text-zinc-300">
+                <Trophy className="size-5 shrink-0 text-zinc-600 dark:text-zinc-400" aria-hidden="true" />
+                Nenhum candidato neste recorte.
+              </Card>
+            )
+          ) : loading && <Skeleton variant="card" className="h-36 motion-reduce:animate-none" />}
+        </TabsContent>
+      </Tabs>
     </div>
   );
-};
+}

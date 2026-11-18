@@ -3,7 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .font-bebas {
-  font-family: var(--font-bebas), "Bebas Neue", sans-serif;
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.035em;
 }
 
 .font-inter {
@@ -450,8 +451,8 @@ html.theme-monochrome.dark a[style*="background-color:#ffffff"] svg[class*="fill
   --color-study-green: var(--study-green);
   --color-study-green-subtle: var(--study-green-subtle);
   --color-ring: var(--ring);
-  --font-heading: var(--font-sans), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-sans: var(--font-sans), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-heading: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
@@ -464,7 +465,8 @@ html {
 body {
   background-color: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   line-height: 1.6;
   letter-spacing: -0.011em;
   transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
@@ -476,8 +478,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
-  letter-spacing: -0.025em;
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: -0.028em;
 }
 
 html.dark,
