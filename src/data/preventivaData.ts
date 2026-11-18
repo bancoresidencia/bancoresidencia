@@ -4,103 +4,141 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
   "especialidade": "Medicina Preventiva e Social",
   "temas": [
     {
-      "tema": "Sistema Único de Saúde (SUS): Princípios e Legislação",
+      "tema": "História e Modelos Assistenciais",
       "focos": [
         {
-          "foco": "Princípios Doutrinários e Organizativos do SUS (Universalidade, Integralidade, Equidade, Descentralização)",
+          "foco": "História da Saúde Brasileira",
           "subfocos": [
             {
-              "subfoco": "Princípios Doutrinários / Éticos do SUS",
+              "subfoco": "Período Colonial ao Campanhismo",
               "sub_subfocos": [
-                "Universalidade: Acesso Garantido a Todos os Cidadãos em Todos os Níveis de Assistência à Saúde sem Discriminação",
-                "Integralidade: Visão Holística Biopsicossocial que Engloba Ações de Promoção, Prevenção, Cura e Reabilitação Articuladas",
-                "Equidade: Tratar Desigualmente os Desiguais para Reduzir Disparidades Sociais e Focar Mais Recursos Onde Há Maior Necessidade"
+                "Práticas Sanitárias Coloniais e Imperiais",
+                "Oswaldo Cruz e Sanitarismo Campanhista",
+                "Revolta da Vacina e Reforma Chagas"
               ]
             },
             {
-              "subfoco": "Princípios Organizativos / Operacionais do SUS",
+              "subfoco": "Era Vargas e Previdência Inicial",
               "sub_subfocos": [
-                "Descentralização Político-Administrativa com Direção Única em Cada Esfera de Governo (Ênfase na Municipalização)",
-                "Regionalização e Hierarquização dos Serviços em Redes de Atenção à Saúde com Níveis Crescentes de Complexidade",
-                "Participação da Comunidade / Controle Social e Resolubilidade dos Serviços de Saúde"
+                "Lei Eloy Chaves e Caixas Previdenciárias",
+                "Institutos de Aposentadorias por Categoria",
+                "Dualidade Saúde Pública e Previdenciária"
+              ]
+            },
+            {
+              "subfoco": "Regime Militar e Modelo Privatista",
+              "sub_subfocos": [
+                "Unificação Previdenciária Estatal no INPS",
+                "Criação do INAMPS e Privatização Hospitalar",
+                "Crise Financeira da Medicina Previdenciária"
+              ]
+            },
+            {
+              "subfoco": "Estratégias de Transição Pré-SUS",
+              "sub_subfocos": [
+                "Interiorização Sanitária pelo Programa PIASS",
+                "Convênios das Ações Integradas AIS",
+                "Estadualização e Transição pelo SUDS"
               ]
             }
           ]
         },
         {
-          "foco": "Lei Orgânica da Saúde 8.080/1990",
+          "foco": "Reforma Sanitária Brasileira",
           "subfocos": [
             {
-              "subfoco": "Competências das Esferas de Governo e Campo de Atuação",
+              "subfoco": "Movimento Sanitário e Bases Teóricas",
               "sub_subfocos": [
-                "Atribuições Exclusivas da União (Nacional), Estados (Coordenação Regional) e Municípios (Executores Primários das Ações de Saúde)",
-                "Campo de Atuação do SUS: Vigilância Sanitária, Vigilância Epidemiológica, Saúde do Trabalhador e Assistência Terapêutica Integral (Inclusive Farmacêutica)"
+                "Departamentos Acadêmicos de Medicina Preventiva",
+                "Protagonismo Político do CEBES e ABRASCO",
+                "Crítica ao Modelo Biomédico Hegemônico"
               ]
             },
             {
-              "subfoco": "Participação Complementar do Setor Privado",
+              "subfoco": "Oitava Conferência Nacional de Saúde",
               "sub_subfocos": [
-                "Critérios de Contratação: Apenas quando as Disponibilidades do SUS Forem Insuficientes, Mediante Contrato de Direito Público ou Convênio",
-                "Preferência Constitucional Obrigatória por Entidades Filantrópicas e Sem Fins Lucrativos",
-                "Proibição Absoluta de Destinação de Recursos Públicos para Auxílios ou Subvenções a Entidades Privadas com Fins Lucrativos"
+                "Participação Popular Inédita na Conferência",
+                "Conceito Ampliado de Saúde Social",
+                "Relatório Final e Proposta SUS"
+              ]
+            },
+            {
+              "subfoco": "Processo Constituinte e Conquista Legal",
+              "sub_subfocos": [
+                "Emenda Popular da Reforma Sanitária",
+                "Superação Histórica da Cidadania Regulada",
+                "Embate Político e Setor Privado Complementar"
               ]
             }
           ]
         },
         {
-          "foco": "Lei 8.142/1990 e Participação da Comunidade",
+          "foco": "Sistemas Comparados de Saúde",
           "subfocos": [
             {
-              "subfoco": "Conselhos e Conferências de Saúde",
+              "subfoco": "Modelo Beveridgeano de Seguridade",
               "sub_subfocos": [
-                "Conselhos de Saúde: Órgão Colegiado, Permanente e Deliberativo, Reuniões Mensais, Fiscalização Financeira e Aprovação dos Gastos em Saúde",
-                "Conferências de Saúde: Reuniões Obrigatórias a Cada 4 Anos com Representação de Vários Segmentos Sociais para Avaliar a Situação de Saúde e Propor Diretrizes",
-                "Paridade Representativa Obrigatória: 50% Usuários, 25% Trabalhadores de Saúde e 25% Gestores e Prestadores de Serviços"
+                "Financiamento Tributário e Universalidade Beveridgeana",
+                "Serviço Britânico NHS e Gatekeeping",
+                "Influência Beveridgeana na Arquitetura SUS"
               ]
             },
             {
-              "subfoco": "Transferência Intergovernamental de Recursos e Condicionantes",
+              "subfoco": "Modelo Bismarckiano de Seguro Social",
               "sub_subfocos": [
-                "Repasse Fundo a Fundo Regular e Automático entre as Esferas de Governo",
-                "Requisitos Mandatórios para o Município/Estado Receber Recursos: Existência do Fundo de Saúde, Conselho de Saúde, Plano de Saúde e Relatório de Gestão"
+                "Contribuição Compulsória Patronal e Laboral",
+                "Caixas de Doença e Pluralismo Regulado",
+                "Herança Bismarckiana nas Caixas Brasileiras"
+              ]
+            },
+            {
+              "subfoco": "Modelo Liberal Residual de Mercado",
+              "sub_subfocos": [
+                "Seguros Privados e Saúde Mercadoria",
+                "Programas Públicos Focalizados Medicare Medicaid"
+              ]
+            },
+            {
+              "subfoco": "Tipologias Internacionais e Cobertura Universal",
+              "sub_subfocos": [
+                "Modelo Estatal Centralizado de Semashko",
+                "Sistema Universal e Cobertura Universal"
               ]
             }
           ]
         },
         {
-          "foco": "Decreto Presidencial 7.508/2011 e Regiões de Saúde",
+          "foco": "História Natural e Prevenção",
           "subfocos": [
             {
-              "subfoco": "Regiões de Saúde e Requisitos Mínimos",
+              "subfoco": "Paradigma de Leavell e Clark",
               "sub_subfocos": [
-                "Conceito de Região de Saúde: Espaço Geográfico Contínuo Constituído por Agrupamentos de Municípios Limítrofes para Integrar Organização, Planejamento e Ações de Saúde",
-                "Os 5 Serviços Obrigatórios Mínimos da Região de Saúde: 1. Atenção Primária; 2. Urgência e Emergência; 3. Atenção Psicossocial (CAPS); 4. Atenção Ambulatorial Especializada e Hospitalar; 5. Vigilância em Saúde"
+                "Tríade Ecológica no Período Pré-Patogênico",
+                "Período Patogênico e Horizonte Clínico",
+                "Críticas Contemporâneas à Linearidade Biológica"
               ]
             },
             {
-              "subfoco": "Portas de Entrada e Contrato Organizativo (COAP)",
+              "subfoco": "Níveis Primário e Secundário Preventivos",
               "sub_subfocos": [
-                "Portas de Entrada Oficiais do SUS: Atenção Primária à Saúde, Atenção de Urgência e Emergência, Atenção Psicossocial e Serviços Especiais de Acesso Aberto",
-                "Contrato Organizativo da Ação Pública da Saúde (COAP) para Acordo Bipartite/Tripartite e Renases / Rename"
-              ]
-            }
-          ]
-        },
-        {
-          "foco": "Financiamento do SUS e Emendas Constitucionais",
-          "subfocos": [
-            {
-              "subfoco": "Emenda Constitucional 29/2000 e Lei Complementar 141/2012",
-              "sub_subfocos": [
-                "Percentuais Mínimos Obrigatórios de Aplicação de Receitas em Saúde: Municípios (Mínimo de 15%), Estados (Mínimo de 12%) e União (Regras Progressivas e EC 95/Teto de Gastos)",
-                "Despesas que NÃO Podem Ser Consideradas Ações e Serviços Públicos de Saúde (Merenda Escolar, Saneamento Básico Amplo, Aposentadorias e Pensões)"
+                "Promoção Geral e Proteção Específica",
+                "Diagnóstico Precoce e Tratamento Imediato",
+                "Limitação da Incapacidade na Doença Sintomática"
               ]
             },
             {
-              "subfoco": "Blocos de Financiamento e Programa Previne Brasil",
+              "subfoco": "Prevenção Terciária Quaternária e Quinquenária",
               "sub_subfocos": [
-                "Transição dos Antigos 5 Blocos para os 2 Grandes Blocos de Financiamento (Custeio e Investimento - Portaria de Consolidação nº 6/2017)",
-                "Modelo do Previne Brasil para a APS: Capitação Ponderada, Pagamento por Desempenho (Indicadores de Saúde) e Incentivo para Ações Estratégicas"
+                "Reabilitação Funcional e Reinserção Social",
+                "Prevenção Quaternária e Controle Iatrogênico",
+                "Prevenção Quinquenária e Saúde Profissional"
+              ]
+            },
+            {
+              "subfoco": "Estratégias Preventivas de Geoffrey Rose",
+              "sub_subfocos": [
+                "Abordagem Clínica de Alto Risco Individual",
+                "Estratégia Populacional e Paradoxo Preventivo"
               ]
             }
           ]
@@ -108,82 +146,260 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "História das Políticas de Saúde e Gestão do SUS",
+      "tema": "Legislação Sanitária e SUS",
       "focos": [
         {
-          "foco": "Evolução Histórica das Políticas de Saúde no Brasil (INAMPS, Reforma Sanitária e 8ª CNS)",
+          "foco": "Constituição Federal na Saúde",
           "subfocos": [
             {
-              "subfoco": "Da Previdência Social Excludente ao SUS (1923-1988)",
+              "subfoco": "Seguridade Social e Direito Universal",
               "sub_subfocos": [
-                "Lei Eloy Chaves (1923): Criação das Caixas de Aposentadoria e Pensões (CAPs por Empresa - Marco Inicial da Previdência Social no Brasil)",
-                "Era Vargas: Criação dos Institutos de Aposentadoria e Pensões (IAPs por Categoria Profissional - Bancários, Marítimos, Comerciários)",
-                "Ditadura Militar: Unificação no INPS (1966) e Criação do INAMPS (1977 - Medicina Previdenciária Curativista, Hospitalocêntrica e Excludente aos Trabalhadores Formais)"
+                "Tripé Constitucional da Seguridade Social",
+                "Direito Fundamental e Relevância Pública",
+                "Princípios Constitucionais da Seguridade Social"
               ]
             },
             {
-              "subfoco": "Movimento da Reforma Sanitária e 8ª CNS (1986)",
+              "subfoco": "Diretrizes Constitucionais do Artigo 198",
               "sub_subfocos": [
-                "8ª Conferência Nacional de Saúde (1986) presidida por Sergio Arouca: Marco Histórico que Concebeu a \"Saúde como Direito de Todos e Dever do Estado\"",
-                "Criação do Sistema Unificado e Descentralizado de Saúde (SUDS em 1987) como Transição Direta para a Constituição Cidadã de 1988"
+                "Rede Regionalizada Hierarquizada e Direção Única",
+                "Integralidade Preventiva e Participação Comunitária",
+                "Regime Constitucional dos Agentes Comunitários"
+              ]
+            },
+            {
+              "subfoco": "Participação Complementar Setor Privado",
+              "sub_subfocos": [
+                "Contrato Público e Preferência às Filantrópicas",
+                "Vedações a Subvenções e Capital Estrangeiro",
+                "Diretrizes SUS Aplicáveis aos Contratados"
+              ]
+            },
+            {
+              "subfoco": "Atribuições Constitucionais do Artigo 200",
+              "sub_subfocos": [
+                "Ordenação de Pessoal e Inovação Científica",
+                "Vigilâncias Saneamento e Ambiente do Trabalho"
               ]
             }
           ]
         },
         {
-          "foco": "Normas Operacionais Básicas (NOB 91, 93, 96) e NOAS 2001/2002",
+          "foco": "Princípios Fundamentais do SUS",
           "subfocos": [
             {
-              "subfoco": "O Processo de Descentralização pelas NOBs dos Anos 90",
+              "subfoco": "Princípios Doutrinários Éticos",
               "sub_subfocos": [
-                "NOB 91 e NOB 93: Municipalização Incipiente, Criação das Comissões Intergestores Bipartite (CIB) e Tripartite (CIT) e Habilitação em Condições de Gestão (Incipiente, Parcial e Semi-Plena)",
-                "NOB 96: Marco da Descentralização - Criação do Piso da Atenção Básica (PAB Fixo e Variável), Gestão Plena da Atenção Básica e Gestão Plena do Sistema Municipal com Repasse Regular Fundo a Fundo"
+                "Universalidade de Acesso sem Barreira Contributiva",
+                "Integralidade Individual e Coletiva do Cuidado",
+                "Equidade e Redução de Iniquidades Sociais"
               ]
             },
             {
-              "subfoco": "Normas Operacionais de Assistência à Saúde (NOAS 2001/2002)",
+              "subfoco": "Princípios Organizativos Operacionais",
               "sub_subfocos": [
-                "Ênfase na Regionalização e Acesso com Equidade: Criação do Plano Diretor de Regionalização (PDR) e Plano Diretor de Investimentos (PDI)",
-                "Definição da Média Complexidade como Responsabilidade Compartilhada e Módulos Assistenciais"
+                "Descentralização Federativa e Municipalização",
+                "Regionalização Solidária e Hierarquização Assistencial",
+                "Resolubilidade e Racionalidade de Recursos"
+              ]
+            },
+            {
+              "subfoco": "Diretrizes Legais do Artigo Sétimo",
+              "sub_subfocos": [
+                "Autonomia Direito à Informação e Igualdade",
+                "Critério Epidemiológico e Proteção às Mulheres",
+                "Integração Saúde Meio Ambiente e Saneamento"
               ]
             }
           ]
         },
         {
-          "foco": "Pacto pela Saúde (2006) e Contrato Organizativo de Ação Pública (COAP)",
+          "foco": "Lei Orgânica 8.080/1990",
           "subfocos": [
             {
-              "subfoco": "As Três Dimensões do Pacto pela Saúde",
+              "subfoco": "Determinantes Objetivos e Campo SUS",
               "sub_subfocos": [
-                "Pacto pela Vida: Definição de 6 Prioridades Sanitárias Nacionais de Impacto (Saúde do Idoso, Câncer de Colo e Mama, Mortalidade Materno-Infantil, Doenças Emergentes como Dengue, Promoção da Saúde e APS)",
-                "Pacto em Defesa do SUS: Fortalecimento da Cidadania, Movimento Social e Defesa do Financiamento Estável",
-                "Pacto de Gestão: Descentralização, Fim do Processo de Habilitação das NOBs e Instituição do Termo de Compromisso de Gestão"
+                "Fatores Determinantes e Condicionantes Legais",
+                "Objetivos e Campo de Atuação Sanitária",
+                "Saúde Bucal Farmacêutica e Saúde Ocupacional"
               ]
             },
             {
-              "subfoco": "Contrato Organizativo e Colegiados Regionais",
+              "subfoco": "Competências Federais Estaduais e Municipais",
               "sub_subfocos": [
-                "Criação dos Colegiados de Gestão Regional (CGR), Atuais Comissões Intergestores Regionais (CIR)",
-                "Consolidação do Planejamento Regional Integrado"
+                "Competências da Direção Nacional Federal",
+                "Coordenação Estadual e Execução Pública Municipal",
+                "Consórcios Municipais e Comissões Intersetoriais"
+              ]
+            },
+            {
+              "subfoco": "Subsistemas Específicos da Lei Orgânica",
+              "sub_subfocos": [
+                "Subsistema de Atenção à Saúde Indígena",
+                "Atendimento Domiciliar Parto Acompanhado e Telessaúde",
+                "Acompanhante para Mulheres em Consultas"
+              ]
+            },
+            {
+              "subfoco": "Assistência Terapêutica e Incorporação CONITEC",
+              "sub_subfocos": [
+                "Protocolos Clínicos e Dispensação Terapêutica",
+                "Fluxo Prazos e Critérios da CONITEC",
+                "Composição Plenária e Comitês da CONITEC"
               ]
             }
           ]
         },
         {
-          "foco": "Planejamento, Programação e Regulação no SUS",
+          "foco": "Participação e Lei 8.142/1990",
           "subfocos": [
             {
-              "subfoco": "Instrumentos de Planejamento Governamental e Gestão (PPA, LDO, LOA, PMS, PAS e RAG)",
+              "subfoco": "Conselhos de Saúde e Paridade",
               "sub_subfocos": [
-                "Ciclo de Planejamento em Saúde: Plano Municipal de Saúde (4 anos), Programação Anual de Saúde e Relatório Anual de Gestão",
-                "Planejamento Regional Integrado (PRI) e Compatibilização Orçamentária no SUS"
+                "Caráter Permanente Deliberativo e Homologação",
+                "Regra de Paridade dos Segmentos Sociais",
+                "Autonomia Orçamentária e Fiscalização dos Fundos"
               ]
             },
             {
-              "subfoco": "Complexos Reguladores, Central de Vagas e Acesso do Usuário",
+              "subfoco": "Conferências de Saúde e Convocação",
               "sub_subfocos": [
-                "Regulação do Acesso: Protocolos de Acesso, Central de Leitos e Sistema de Regulação (SISREG)",
-                "Garantia de Fluxos de Referência e Contrarreferência nas Redes de Atenção à Saúde (RAS)"
+                "Periodicidade Legal e Papel Propositivo",
+                "Convocação Ordinária e Extraordinária Legal",
+                "Etapas Ascendentes Municipal Estadual e Nacional"
+              ]
+            },
+            {
+              "subfoco": "Requisitos Legais para Repasse Financeiro",
+              "sub_subfocos": [
+                "Condições Legais para Transferências Regulares",
+                "Representação Institucional CONASS CONASEMS e Ouvidorias",
+                "Bloqueio e Redirecionamento por Descumprimento Legal"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Decreto 7.508/2011 e Regionalização",
+          "subfocos": [
+            {
+              "subfoco": "Regiões de Saúde e Mapa",
+              "sub_subfocos": [
+                "Conceito de Espaço Geográfico Contínuo Limítrofe",
+                "Rol Mínimo Obrigatório da Região Sanitária",
+                "Mapa da Saúde Público e Privado"
+              ]
+            },
+            {
+              "subfoco": "Portas de Entrada das Redes",
+              "sub_subfocos": [
+                "Serviços Reconhecidos como Portas de Entrada",
+                "Ordenamento do Fluxo e Referenciamento",
+                "Continuidade Assistencial após Atendimento Urgência"
+              ]
+            },
+            {
+              "subfoco": "Contrato Organizativo da Ação Pública",
+              "sub_subfocos": [
+                "Acordo Plurilateral Interfederativo no COAP",
+                "Metas Indicadores e Controle do COAP",
+                "Responsabilidades Solidárias e Financiamento Regional"
+              ]
+            },
+            {
+              "subfoco": "Relações Nacionais RENASES e RENAME",
+              "sub_subfocos": [
+                "Abrangência e Atualização Periódica RENASES",
+                "Requisitos Legais de Acesso à RENAME"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Gestão Descentralizada e Pactos",
+          "subfocos": [
+            {
+              "subfoco": "Normas Operacionais Básicas e NOAS",
+              "sub_subfocos": [
+                "Normas Operacionais do Início da Década",
+                "Municipalização Plena e Regionalização nas NOAS"
+              ]
+            },
+            {
+              "subfoco": "Dimensões do Pacto pela Saúde",
+              "sub_subfocos": [
+                "Prioridades Sanitárias no Pacto pela Vida",
+                "Pacto em Defesa e Pacto Gestão"
+              ]
+            },
+            {
+              "subfoco": "Comissões Intergestores e Governança Federativa",
+              "sub_subfocos": [
+                "Pactuação por Consenso CIT e CIB",
+                "Governança Regional pela Comissão Intergestores CIR"
+              ]
+            },
+            {
+              "subfoco": "Instrumentos do Planejamento Ascendente",
+              "sub_subfocos": [
+                "Plano Plurianual e Programação Anual",
+                "Relatório Anual de Gestão e Contas"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Financiamento Público do SUS",
+          "subfocos": [
+            {
+              "subfoco": "Lei Complementar 141 e Mínimos",
+              "sub_subfocos": [
+                "Mínimos Constitucionais para Estados e Municípios",
+                "Regra Constitucional Federal e Evolução Fiscal",
+                "Critérios de Rateio Interfederativo na Lei"
+              ]
+            },
+            {
+              "subfoco": "Gastos Computáveis e Despesas Vedadas",
+              "sub_subfocos": [
+                "Despesas Reconhecidas como Gasto Sanitário Público",
+                "Despesas Excluídas da Apuração do Mínimo",
+                "Movimentação Exclusiva pelo Fundo de Saúde"
+              ]
+            },
+            {
+              "subfoco": "Fundos de Saúde e Blocos",
+              "sub_subfocos": [
+                "Blocos de Manutenção e de Estruturação",
+                "Movimentação pelos Fundos e Sistema SIOPS"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Financiamento Federal da APS",
+          "subfocos": [
+            {
+              "subfoco": "Modelo Histórico Previne Brasil",
+              "sub_subfocos": [
+                "Cálculo Histórico da Capitação Ponderada",
+                "Indicadores Sintéticos de Desempenho e Estratégicos",
+                "Críticas à Desvinculação Territorial Universal"
+              ]
+            },
+            {
+              "subfoco": "Novo Cofinanciamento Federal da APS",
+              "sub_subfocos": [
+                "Componente Fixo e Índice de Equidade",
+                "Componente Vínculo e Acompanhamento Territorial",
+                "Componente Qualidade e Boas Práticas"
+              ]
+            },
+            {
+              "subfoco": "Incentivos para Equipes e Programas",
+              "sub_subfocos": [
+                "Custeio Federal das Equipes Multiprofissionais eMulti",
+                "Componente Saúde Bucal e Equipes Específicas"
               ]
             }
           ]
@@ -191,109 +407,286 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "Atenção Primária à Saúde e Medicina de Família",
+      "tema": "Atenção Primária à Saúde",
       "focos": [
         {
-          "foco": "Princípios da Atenção Primária (Starfield: Atributos Essenciais e Derivados)",
+          "foco": "Fundamentos da Atenção Primária",
           "subfocos": [
             {
               "subfoco": "Atributos Essenciais de Barbara Starfield",
               "sub_subfocos": [
-                "Acesso de Primeiro Contato: Porta de Entrada Preferencial, Acessibilidade Geográfica, Funcional e Financeira",
-                "Longitudinalidade: Acompanhamento Clínico Contínuo e Relação Pessoal Duradoura ao Longo do Tempo Independentemente da Presença de Doença",
-                "Integralidade: Reconhecimento Amplo de Todas as Necessidades Biopsicossociais de Saúde da População com Encaminhamentos Apropriados",
-                "Coordenação do Cuidado: Integração de Todas as Informações e Serviços Recebidos pelo Paciente nos Diferentes Pontos da Rede"
+                "Acesso de Primeiro Contato e Acessibilidade",
+                "Longitudinalidade e Vínculo Terapêutico Contínuo",
+                "Integralidade e Coordenação do Cuidado"
               ]
             },
             {
-              "subfoco": "Atributos Derivados de Barbara Starfield",
+              "subfoco": "Atributos Derivados e Avaliação PCATool",
               "sub_subfocos": [
-                "Orientação Familiar: Consideração do Contexto Familiar, Dinâmicas e Ciclos de Vida nas Decisões Clínicas",
-                "Orientação Comunitária: Reconhecimento das Necessidades Epidemiológicas Coletivas e Sociais da Comunidade Adscrita",
-                "Competência Cultural: Adaptação da Linguagem, Respeito a Crenças, Hábitos e Valores Locais"
+                "Orientação Familiar e Orientação Comunitária",
+                "Competência Cultural e Instrumento PCATool"
+              ]
+            },
+            {
+              "subfoco": "Agenda e Acesso Avançado",
+              "sub_subfocos": [
+                "Modelo de Acesso Avançado na Agenda",
+                "Acolhimento à Demanda Espontânea com Estratificação",
+                "Equilíbrio entre Demanda Espontânea e Programada"
               ]
             }
           ]
         },
         {
-          "foco": "Estratégia Saúde da Família (ESF) e Equipe Multiprofissional (eMulti)",
+          "foco": "Equipes e Normas PNAB",
           "subfocos": [
             {
-              "subfoco": "Diretrizes Operacionais e Composição da Equipe ESF",
+              "subfoco": "Composição das Equipes na PNAB",
               "sub_subfocos": [
-                "Composição Mínima Obrigatória: Médico (Preferencialmente de Família e Comunidade), Enfermeiro, Técnico de Enfermagem e Agentes Comunitários de Saúde (ACS)",
-                "Carga Horária de 40 Horas Semanais para Todos os Membros da Equipe",
-                "População Adscrita Recomendada: Entre 2.000 e 3.500 Pessoas por Equipe de Saúde da Família"
+                "Equipe de Saúde da Família Prioritária",
+                "Equipes de Atenção Primária Flexibilizadas",
+                "Teto de População Adscrita e Microáreas"
               ]
             },
             {
-              "subfoco": "Atribuições do ACS e Equipes Multiprofissionais (eMulti)",
+              "subfoco": "Atribuições dos Profissionais e Agentes",
               "sub_subfocos": [
-                "Agente Comunitário de Saúde (ACS): Elo entre a Comunidade e a Equipe, Cadastramento Familiar e Visita Domiciliar Periódica (Máximo de 750 Pessoas por ACS)",
-                "Equipes Multiprofissionais na APS (eMulti / Antigo NASF): Apoio Matricial Técnico-Pedagógico e Clínico às Equipes de Referência"
+                "Atribuições Clínicas Médicas e de Enfermagem",
+                "Integração Territorial entre ACS e ACE",
+                "Atividades Compartilhadas da Equipe Multiprofissional"
+              ]
+            },
+            {
+              "subfoco": "Equipes eMulti e Populações Específicas",
+              "sub_subfocos": [
+                "Evolução do NASF para Equipes eMulti",
+                "Consultório na Rua Ribeirinhas e Fluviais"
               ]
             }
           ]
         },
         {
-          "foco": "Política Nacional de Atenção Básica (PNAB)",
+          "foco": "Territorialização e Adscrição",
           "subfocos": [
             {
-              "subfoco": "Diretrizes Operacionais, Carga Horária e Composição da ESF e eAP",
+              "subfoco": "Território Vivo e Divisão Operacional",
               "sub_subfocos": [
-                "Equipe de Saúde da Família (Médico, Enfermeiro, Técnico e ACS): 40h Semanais e Adstrição de População (2.000 a 3.500 pessoas)",
-                "Equipe de Atenção Primária (eAP: Modalidades I e II com Carga Horária Flexível) e Equipes de Saúde Bucal"
+                "Conceito Dinâmico de Território-Processo Sanitário",
+                "Área de Abrangência e Microáreas",
+                "Barreiras Geográficas Culturais e Organizacionais"
               ]
             },
             {
-              "subfoco": "Atribuições dos Profissionais e Financiamento da Atenção Primária",
+              "subfoco": "Diagnóstico Comunitário e Risco Familiar",
               "sub_subfocos": [
-                "Atribuições do Agente Comunitário de Saúde (ACS) e Visitas Domiciliares Regulares",
-                "Modelo de Financiamento da Atenção Primária (Capitação Ponderada, Pagamento por Desempenho e Ações Estratégicas)",
-                "1. Explorando a Saúde, a Doença e a Experiência da Doença pelo Mnemônico SIFE (Sentimentos, Ideias, Funcionamento e Expectativas)"
+                "Estimativa Rápida Participativa e Informantes-Chave",
+                "Escala de Risco Familiar Coelho-Savassi",
+                "Mapa Inteligente e Equipamentos Sociais Locais"
+              ]
+            },
+            {
+              "subfoco": "Cadastramento e Sistema e-SUS APS",
+              "sub_subfocos": [
+                "Cadastro Domiciliar Territorial e Individual",
+                "Prontuário Eletrônico do Cidadão e SISAB"
               ]
             }
           ]
         },
         {
-          "foco": "Método Clínico Centrado na Pessoa e Genograma/Ecomapa",
+          "foco": "Comunicação Clínica e MCCP",
           "subfocos": [
             {
-              "subfoco": "Os 4 Componentes do MCCP (Stewart)",
+              "subfoco": "Componentes do Método Clínico Centrado",
               "sub_subfocos": [
-                "2. Entendendo a Pessoa como um Todo (Indivíduo, Família, Ambiente e Contexto Cultural)",
-                "3. Elaborando um Projeto Comum de Manejo (Definição Conjunta de Prioridades e Metas Compartilhadas)",
-                "4. Intensificando a Relação Médico-Pessoa (Empatia, Autonomia e Cuidado Compartilhado)",
-                "Genograma / Familiograma: Representação Gráfica Estruturada de Pelo Menos 3 Gerações Familiares com Símbolos Padronizados (Homem Quadrado, Mulher Círculo, Laços e Conflitos)"
+                "Explorando Doença e Experiência do Adoecer",
+                "Compreendendo Pessoa Integral e Contexto",
+                "Elaborando Plano Conjunto e Relação Terapêutica"
               ]
             },
             {
-              "subfoco": "Ferramentas de Abordagem Familiar: Genograma e Ecomapa",
+              "subfoco": "Registro Clínico Orientado por Problemas",
               "sub_subfocos": [
-                "Ecomapa: Diagrama das Relações da Família com o Meio Social Externo (Trabalho, Escola, Igreja, Amigos, Unidade de Saúde)",
-                "Escala de Apgar Familiar e Ciclo de Vida Familiar de Duvall",
-                "Prevenção Primária (Período Pré-Patogênico): Promoção da Saúde e Proteção Específica (Vacinas, Uso de Preservativo, Fluoretação da Água)",
-                "Prevenção Secundária (Período Patogênico Inicial): Diagnóstico Precoce e Tratamento Imediato / Rastreamento de Indivíduos Assintomáticos"
+                "Estrutura do SOAP na Consulta Ambulatorial",
+                "Lista de Problemas e Classificação CIAP-2",
+                "Folha de Rosto e Problemas Ativos"
+              ]
+            },
+            {
+              "subfoco": "Comunicação de Más Notícias",
+              "sub_subfocos": [
+                "Etapas Estruturadas do Protocolo SPIKES",
+                "Escuta Ativa Empática e Entrevista Motivacional",
+                "Conspiração do Silêncio e Cerco Familiar"
               ]
             }
           ]
         },
         {
-          "foco": "Prevenção Quaternária e Segurança do Paciente na APS",
+          "foco": "Abordagem Familiar e Comunitária",
           "subfocos": [
             {
-              "subfoco": "Os Níveis de Prevenção de Leavell & Clark e Jamoulle",
+              "subfoco": "Tipologia e Ciclo Vital Familiar",
               "sub_subfocos": [
-                "Prevenção Terciária (Período Patogênico Avançado): Reabilitação e Prevenção de Incapacidades em Doenças Estabelecidas",
-                "Prevenção Quaternária (Marc Jamoulle): Identificação de Indivíduos em Risco de Sobrediagnóstico / Sobretratamento e Proteção contra Iatrogenias Médicas e Intervenções Excessivas",
-                "Prevenção Quinquenária: Prevenção do Dano ao Próprio Profissional de Saúde (Burnout e Esgotamento)"
+                "Arranjos Contemporâneos e Estrutura Familiar",
+                "Estágios e Crises do Ciclo Vital"
               ]
             },
             {
-              "subfoco": "Princípios do *Choosing Wisely* e Medicina Baseada em Evidências",
+              "subfoco": "Genograma e Ecomapa na Prática",
               "sub_subfocos": [
-                "Campanha *Choosing Wisely*: Recomendações contra Práticas Médicas Inúteis ou Potencialmente Nocivas",
-                "Comunicação Efetiva de Riscos e Benefícios com o Paciente"
+                "Simbologia Gráfica e Leitura do Genograma",
+                "Construção do Ecomapa e Rede Externa",
+                "Padrões Relacionais Conflito Fusão e Distanciamento"
+              ]
+            },
+            {
+              "subfoco": "Instrumentos Funcionais e Grupos Comunitários",
+              "sub_subfocos": [
+                "Escalas APGAR Familiar FIRO e PRACTICE",
+                "Conferência Familiar e Grupos Operativos"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Atenção Domiciliar e PTS",
+          "subfocos": [
+            {
+              "subfoco": "Modalidades da Atenção Domiciliar",
+              "sub_subfocos": [
+                "Estratificação Assistencial AD1 AD2 e AD3",
+                "Equipes EMAD EMAP e Sobrecarga Cuidador"
+              ]
+            },
+            {
+              "subfoco": "Visita Domiciliar Longitudinal na APS",
+              "sub_subfocos": [
+                "Critérios de Priorização e Planejamento Domiciliar",
+                "Cuidados Paliativos Domiciliares na Atenção Primária",
+                "Abordagem Domiciliar no Puerpério Primeira Semana"
+              ]
+            },
+            {
+              "subfoco": "Projeto Terapêutico Singular e Matriciamento",
+              "sub_subfocos": [
+                "Etapas Estruturantes do Projeto Terapêutico Singular",
+                "Apoio Matricial Técnico-Pedagógico e Clínico-Assistencial",
+                "Protagonismo do Usuário na Pactuação Metas"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Segurança do Paciente",
+          "subfocos": [
+            {
+              "subfoco": "Programa Nacional e Cultura Justa",
+              "sub_subfocos": [
+                "Taxonomia de Incidentes e Eventos Adversos",
+                "Modelo Queijo Suíço e Cultura Justa"
+              ]
+            },
+            {
+              "subfoco": "Metas Internacionais de Segurança",
+              "sub_subfocos": [
+                "Identificação Comunicação Efetiva e Medicamentos Seguros",
+                "Cirurgia Segura Quedas e Lesão Pressão",
+                "Notificação de Eventos Adversos no NOTIVISA"
+              ]
+            },
+            {
+              "subfoco": "Prevenção de IRAS e Precauções",
+              "sub_subfocos": [
+                "Momentos Obrigatórios da Higienização das Mãos",
+                "Precauções Padrão Contato Gotículas e Aerossóis"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Cuidado às Condições Crônicas",
+          "subfocos": [
+            {
+              "subfoco": "Modelo de Atenção Condições Crônicas",
+              "sub_subfocos": [
+                "Níveis de Estratificação no Modelo MACC",
+                "Autocuidado Apoiado e Letramento em Saúde"
+              ]
+            },
+            {
+              "subfoco": "Estratificação Cardiovascular Global na APS",
+              "sub_subfocos": [
+                "Rastreamento Lipídico e Escores Cardiovasculares",
+                "Metas Terapêuticas e Prescrição de Estatinas"
+              ]
+            },
+            {
+              "subfoco": "Linha de Cuidado Hipertensão Diabetes",
+              "sub_subfocos": [
+                "Rastreamento Oportuno e Confirmação Pressórica",
+                "Avaliação Periódica do Pé Diabético"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Cessação do Tabagismo",
+          "subfocos": [
+            {
+              "subfoco": "Estágios Motivacionais e Teste Fagerström",
+              "sub_subfocos": [
+                "Modelo Transteórico de Mudança de Prochaska",
+                "Avaliação da Dependência Física pelo Fagerström"
+              ]
+            },
+            {
+              "subfoco": "Abordagem Cognitivo-Comportamental Intensiva",
+              "sub_subfocos": [
+                "Estratégia Breve PAAPA na Consulta Clínica",
+                "Sessões Estruturadas em Grupo no SUS",
+                "Manejo Clínico da Abstinência e Fissura"
+              ]
+            },
+            {
+              "subfoco": "Terapia de Reposição de Nicotina",
+              "sub_subfocos": [
+                "Associação de Forma Lenta e Rápida",
+                "Precauções Cardiovasculares na Reposição Nicotínica"
+              ]
+            },
+            {
+              "subfoco": "Farmacoterapia Não Nicotínica Antitabágica",
+              "sub_subfocos": [
+                "Cloridrato de Bupropiona e Contraindicações",
+                "Vareniclina e Opções de Segunda Linha"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Saúde Mental na APS",
+          "subfocos": [
+            {
+              "subfoco": "Rastreamento e Sofrimento Mental Comum",
+              "sub_subfocos": [
+                "Queixas Somáticas Difusas e Escalas Breves",
+                "Intervenções Psicossociais Comunitárias na UBS",
+                "Prevenção da Medicalização do Sofrimento Social"
+              ]
+            },
+            {
+              "subfoco": "Psicofarmacologia Racional e Desprescrição",
+              "sub_subfocos": [
+                "Manejo de Depressão e Ansiedade Leves",
+                "Desprescrição Gradual de Benzodiazepínicos Crônicos"
+              ]
+            },
+            {
+              "subfoco": "Risco Suicida e Uso Álcool",
+              "sub_subfocos": [
+                "Estratificação do Risco Suicida e Conduta",
+                "Triagem AUDIT e Intervenção Breve Alcoólica"
               ]
             }
           ]
@@ -301,107 +694,296 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "Medidas de Frequência e Associação Epidemiológica",
+      "tema": "Políticas e Redes Assistenciais",
       "focos": [
         {
-          "foco": "Incidência, Prevalência e Taxa de Ataque",
+          "foco": "Redes Assistenciais do SUS",
           "subfocos": [
             {
-              "subfoco": "Conceito e Cálculo de Incidência vs Prevalência",
+              "subfoco": "Fundamentos e Estrutura das Redes",
               "sub_subfocos": [
-                "Incidência: Número de Casos Novos em uma População sob Risco em Determinado Período de Tempo (Mede Risco e Dinâmica de Ocorrência)",
-                "Prevalência: Número Total de Casos Existentes (Novos e Antigos) em um Ponto Específico do Tempo (Mede a Carga Estática da Doença)",
-                "Relação Fisiomatemática: Prevalência ~ Incidência x Duração Média da Doença",
-                "Fatores que Aumentam a Prevalência sem Aumentar a Incidência: Maior Sobrevida da Doença, Tratamento que Prolonga a Vida sem Curar e Imigração de Casos"
+                "Superação da Fragmentação em Redes Poliárquicas",
+                "Elementos Constitutivos População Estrutura e Modelos",
+                "Sistemas Logísticos Apoio e Governança Regional"
               ]
             },
             {
-              "subfoco": "Taxa de Ataque e Taxa de Ataque Secundária",
+              "subfoco": "Redes Temáticas Prioritárias do SUS",
               "sub_subfocos": [
-                "Taxa de Ataque: Medida Especial de Incidência Cumulativa Utilizada em Populações Bem Definidas Durante Surtos Epidêmicos Curtos",
-                "Taxa de Ataque Secundária: Casos Surgidos a Partir de um Caso-Índice entre Contatos Suscetíveis (Mede a Infectividade do Patógeno)"
+                "Rede de Atenção às Urgências RUE",
+                "Rede Materno-Infantil Alyne e Pessoa Deficiência"
+              ]
+            },
+            {
+              "subfoco": "Complexos Reguladores e Linhas Cuidado",
+              "sub_subfocos": [
+                "Regulação do Acesso Ambulatorial e Hospitalar",
+                "Itinerário Terapêutico nas Linhas de Cuidado"
               ]
             }
           ]
         },
         {
-          "foco": "Risco Relativo (RR) e Razão de Prevalência (RP)",
+          "foco": "Política Nacional de Humanização",
           "subfocos": [
             {
-              "subfoco": "Cálculo e Interpretação do Risco Relativo (RR)",
+              "subfoco": "Tríade de Princípios do HumanizaSUS",
               "sub_subfocos": [
-                "Medida de Associação Típica de Estudos Prospectivos com Acompanhamento (Estudo de Coorte e Ensaio Clínico Randomizado)",
-                "Fórmula: RR = Incidência nos Expostos (Ie) / Incidência nos Não Expostos (Ine)",
-                "Interpretação: RR > 1 (Fator de Risco); RR = 1 (Ausência de Associação / Nulo); RR < 1 (Fator de Proteção)"
+                "Transversalidade e Indissociabilidade Atenção Gestão",
+                "Protagonismo Corresponsabilidade e Autonomia Coletiva"
               ]
             },
             {
-              "subfoco": "Razão de Prevalência (RP) em Estudos Transversais",
+              "subfoco": "Diretrizes e Dispositivos Operacionais PNH",
               "sub_subfocos": [
-                "Interpretação do Intervalo de Confiança de 95%: Se o IC95% Não Conter o Valor 1,0, a Associação é Estatisticamente Significante",
-                "Fórmula: RP = Prevalência nos Expostos (Pe) / Prevalência nos Não Expostos (Pne)"
+                "Clínica Ampliada Compartilhada e Cogestão Participativa",
+                "Ambiência Visita Aberta e Valorização Laboral",
+                "Acolhimento com Classificação de Risco Humanizada"
+              ]
+            },
+            {
+              "subfoco": "Educação Permanente em Saúde",
+              "sub_subfocos": [
+                "Educação Permanente e Educação Continuada",
+                "Quadrilátero Ensino Serviço Gestão e Comunidade"
               ]
             }
           ]
         },
         {
-          "foco": "Odds Ratio (OR)",
+          "foco": "Promoção da Saúde",
           "subfocos": [
             {
-              "subfoco": "Cálculo do Odds Ratio (Razão de Chances) na Tabela 2x2",
+              "subfoco": "Conferências Internacionais e Carta Ottawa",
               "sub_subfocos": [
-                "Medida de Associação Exclusiva dos Estudos Transversais / Seccionais (Não Mede Incidência)",
-                "Medida de Associação Exclusiva dos Estudos de Caso-Controle",
-                "Fórmula do Produto Cruzado: OR = (a x d) / (b x c)"
+                "Campos de Ação da Carta Ottawa",
+                "Relatório Lalonde e Saúde nas Políticas"
               ]
             },
             {
-              "subfoco": "Regressão Logística e Odds Ratio Ajustado",
+              "subfoco": "Diretrizes Brasileiras de Promoção Sanitária",
               "sub_subfocos": [
-                "Interpretação: Chance de Exposição entre os Casos comparada à Chance de Exposição entre os Controles",
-                "Condição de Raras Doenças: O Odds Ratio Aproxima-se Fidedignamente do Risco Relativo quando a Incidência da Doença na População é Muito Baixa (< 5-10%)"
+                "Valores Princípios e Intersetorialidade na PNPS",
+                "Temas Prioritários da Promoção no Brasil"
+              ]
+            },
+            {
+              "subfoco": "Programas Intersetoriais Academia e Escola",
+              "sub_subfocos": [
+                "Articulação Saúde e Educação no PSE",
+                "Academia da Saúde e Práticas Integrativas"
               ]
             }
           ]
         },
         {
-          "foco": "Risco Atribuível e Fração Atribuível",
+          "foco": "Vigilância e Guia Alimentar",
           "subfocos": [
             {
-              "subfoco": "Risco Atribuível no Grupo Exposto (RA / Risco Excessivo)",
+              "subfoco": "Guia Alimentar e Classificação NOVA",
               "sub_subfocos": [
-                "Uso de Modelos Multivariados para Ajustar o OR por Fatores de Confundimento Múltiplos Concomitantes",
-                "Interpretação do OR Bruto vs Ajustado para Identificação de Variáveis de Confundimento e Modificadores de Efeito",
-                "Cálculo da Diferença de Incidências (RA = Ie - Ino) e Impacto da Remoção do Fator de Risco nos Expostos"
+                "Categorias de Processamento da Classificação NOVA",
+                "Regra de Ouro e Comensalidade Alimentar",
+                "Obstáculos Contemporâneos à Alimentação Saudável"
               ]
             },
             {
-              "subfoco": "Risco Atribuível Populacional (RAP) e Fração Atribuível Populacional (FAP)",
+              "subfoco": "Vigilância Nutricional pelo Sistema SISVAN",
               "sub_subfocos": [
-                "Fração Atribuível no Exposto (FAe = [Ie - Ino] / Ie): Percentual de Casos Preveníveis entre os Expostos",
-                "Cálculo do RAP (Itotal - Ino) e da FAP (Fração de Levin): Impacto de Medidas Preventivas na População Geral",
-                "Aplicação Prática em Políticas Públicas de Saúde e Priorização de Intervenções Populacionais"
+                "Monitoramento Antropométrico e Marcadores Alimentares",
+                "Política Nacional de Alimentação e Rotulagem"
+              ]
+            },
+            {
+              "subfoco": "Segurança Alimentar e Escala EBIA",
+              "sub_subfocos": [
+                "Segurança Alimentar e Graus na EBIA",
+                "Condicionalidades Sanitárias dos Programas Sociais"
               ]
             }
           ]
         },
         {
-          "foco": "Medidas de Impacto Potencial (NNT e NNH)",
+          "foco": "Reforma Psiquiátrica e RAPS",
           "subfocos": [
             {
-              "subfoco": "Redução Absoluta do Risco (RAR) e Cálculo do NNT",
+              "subfoco": "Desinstitucionalização e Lei Paulo Delgado",
               "sub_subfocos": [
-                "Redução Absoluta do Risco: RAR = Incidência no Grupo Controle (Ic) - Incidência no Grupo Intervenção (It)",
-                "Redução Relativa do Risco: RRR = RAR / Ic = 1 - RR",
-                "Número Necessário para Tratar: NNT = 1 / RAR (Sempre Arredondar para Cima para o Próximo Número Inteiro)",
-                "Quanto Menor o NNT, Mais Eficaz e Clinicamente Significativa é a Intervenção Terapêutica"
+                "Psiquiatria Democrática de Basaglia",
+                "Modalidades Legais de Internação Psiquiátrica",
+                "Direitos das Pessoas com Transtorno Mental"
               ]
             },
             {
-              "subfoco": "Número Necessário para Prejudicar (NNH)",
+              "subfoco": "Modalidades e Porte dos CAPS",
               "sub_subfocos": [
-                "Aumento Absoluto do Risco (AAR) de Evento Adverso e Cálculo: NNH = 1 / AAR",
-                "Avaliação do Equilíbrio Clínico entre Eficácia (NNT) e Toxicidade (NNH)"
+                "Porte Populacional e Funcionamento dos CAPS",
+                "CAPS Infantojuvenil e Álcool e Drogas"
+              ]
+            },
+            {
+              "subfoco": "Residências Terapêuticas e Reabilitação",
+              "sub_subfocos": [
+                "Residências Terapêuticas e Programa Volta Casa",
+                "Unidades de Acolhimento e Hospital Geral"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Políticas de Equidade Populacional",
+          "subfocos": [
+            {
+              "subfoco": "População Negra e Saúde Indígena",
+              "sub_subfocos": [
+                "Saúde da População Negra e Racismo",
+                "Distritos Sanitários Indígenas Polos-Base e CASAI"
+              ]
+            },
+            {
+              "subfoco": "Saúde LGBTQIA e Nome Social",
+              "sub_subfocos": [
+                "Direito ao Nome Social no SUS",
+                "Atenção Integral e Processo Transexualizador"
+              ]
+            },
+            {
+              "subfoco": "População Rua Prisional e Tradicionais",
+              "sub_subfocos": [
+                "Acesso Irrestrito da População em Rua",
+                "Política Prisional PNAISP e Povos Tradicionais"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Política da Pessoa Idosa",
+          "subfocos": [
+            {
+              "subfoco": "Paradigma Funcional na Política Nacional",
+              "sub_subfocos": [
+                "Autonomia Decisória e Independência Funcional",
+                "Caderneta da Pessoa Idosa na APS"
+              ]
+            },
+            {
+              "subfoco": "Estatuto da Pessoa Idosa",
+              "sub_subfocos": [
+                "Garantias Sanitárias e Superprioridade Octogenária",
+                "Comunicação Obrigatória de Violência contra Idoso"
+              ]
+            },
+            {
+              "subfoco": "Envelhecimento Saudável e Rede Sociossanitária",
+              "sub_subfocos": [
+                "Articulação Sociossanitária Centro-Dia e ILPI",
+                "Promoção do Envelhecimento Ativo Territorial"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Avaliação Tecnológica e Farmacêutica",
+          "subfocos": [
+            {
+              "subfoco": "Estudos Farmacoeconômicos em Saúde",
+              "sub_subfocos": [
+                "Análises de Custo-Minimização e Custo-Efetividade",
+                "Custo-Utilidade por QALY e Custo-Benefício"
+              ]
+            },
+            {
+              "subfoco": "Avaliação Tecnológica e Judicialização",
+              "sub_subfocos": [
+                "Eficácia Efetividade Eficiência e Impacto Orçamentário",
+                "Judicialização da Saúde e Teses STF"
+              ]
+            },
+            {
+              "subfoco": "Componentes da Assistência Farmacêutica",
+              "sub_subfocos": [
+                "Componente Básico e Componente Estratégico",
+                "Componente Especializado e Programa Farmácia Popular"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Saúde Suplementar no Brasil",
+          "subfocos": [
+            {
+              "subfoco": "Regulação Estatal e Agência ANS",
+              "sub_subfocos": [
+                "Modalidades de Operadoras Privadas e ANS",
+                "Segmentação Assistencial e Plano Referência"
+              ]
+            },
+            {
+              "subfoco": "Rol de Procedimentos e Carências",
+              "sub_subfocos": [
+                "Natureza Jurídica do Rol da ANS",
+                "Limites Legais de Carência e Cobertura"
+              ]
+            },
+            {
+              "subfoco": "Interface Público-Privada e Ressarcimento",
+              "sub_subfocos": [
+                "Mecanismo Legal de Ressarcimento ao SUS",
+                "Renúncia Fiscal e Vedação Dupla Porta"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Prevenção Combinada às ISTs",
+          "subfocos": [
+            {
+              "subfoco": "Mandala da Prevenção Combinada",
+              "sub_subfocos": [
+                "Dimensões Biomédica Comportamental e Estrutural",
+                "Tratamento como Prevenção e Carga Indetectável"
+              ]
+            },
+            {
+              "subfoco": "Profilaxia Pré-Exposição ao HIV",
+              "sub_subfocos": [
+                "Indicações Clínicas e Seguimento da PrEP",
+                "Esquema Diário e Esquema Sob Demanda",
+                "Contraindicações e Manejo da Soroconversão"
+              ]
+            },
+            {
+              "subfoco": "Profilaxia Pós-Exposição de Risco",
+              "sub_subfocos": [
+                "Avaliação de Risco Janela e Esquema",
+                "Testagem da Pessoa-Fonte e Seguimento Sorológico"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Linhas Programáticas de Endemias",
+          "subfocos": [
+            {
+              "subfoco": "Linha Programática da Tuberculose",
+              "sub_subfocos": [
+                "Busca Ativa de Sintomáticos Respiratórios",
+                "Tratamento Diretamente Observado e Infecção Latente",
+                "Investigação de Contatos Adultos e Crianças"
+              ]
+            },
+            {
+              "subfoco": "Linha Programática da Hanseníase",
+              "sub_subfocos": [
+                "Classificação Operacional e Poliquimioterapia Única",
+                "Vigilância de Contatos e Imunoprofilaxia BCG"
+              ]
+            },
+            {
+              "subfoco": "Eliminação da Sífilis e Hepatites",
+              "sub_subfocos": [
+                "Administração Oportuna de Penicilina na UBS",
+                "Testagem Rápida e Microeliminação das Hepatites"
               ]
             }
           ]
@@ -409,143 +991,227 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "Desenhos de Estudos Epidemiológicos",
+      "tema": "Demografia e Indicadores Sanitários",
       "focos": [
         {
-          "foco": "Estudo de Coorte",
+          "foco": "Dinâmica e Transição Demográfica",
           "subfocos": [
             {
-              "subfoco": "Metodologia, Direcionalidade e Tipos de Coorte",
+              "subfoco": "Fases da Transição Demográfica",
               "sub_subfocos": [
-                "Direcionalidade Causal Canônica: Parte da Exposição para Buscar o Aparecimento do Desfecho (Expostos vs Não Expostos)",
-                "Características: Observacional, Longitudinal, Prospectivo (ou Histórico / Retrospectivo se Exposições Passadas Foram Documentadas no Prontuário)",
-                "Ideal para Avaliar Exposições Raras, Descrever a História Natural da Doença e Investigar Múltiplos Desfechos Concomitantes a Partir de uma Mesma Exposição",
-                "Permite o Cálculo Direto da Incidência e do Risco Relativo"
+                "Queda da Mortalidade e da Fecundidade",
+                "Janela Demográfica e Pressão Previdenciária",
+                "Queda da Fecundidade e Novos Arranjos"
               ]
             },
             {
-              "subfoco": "Limitações e Vieses Críticos em Estudos de Coorte",
+              "subfoco": "Pirâmides Etárias e Razões Demográficas",
               "sub_subfocos": [
-                "Desvantagens: Alto Custo Financeiro, Longo Tempo de Seguimento, Inadequado para Doenças Raras",
-                "Principal Ameaça Metodológica: Viés de Perda de Seguimento / Atrito (Se > 20% das Perdas Ocorrerem de Forma Diferencial, o Estudo é Invalidado)"
+                "Morfologia Evolutiva das Pirâmides Populacionais",
+                "Razão de Dependência e Índice Envelhecimento"
+              ]
+            },
+            {
+              "subfoco": "Fecundidade Natalidade e Dinâmica Migratória",
+              "sub_subfocos": [
+                "Diferença entre Natalidade e Fecundidade",
+                "Migrações Internas Urbanização e Crescimento"
               ]
             }
           ]
         },
         {
-          "foco": "Estudo de Caso-Controle",
+          "foco": "Transição Epidemiológica Brasileira",
           "subfocos": [
             {
-              "subfoco": "Metodologia e Seleção Adequada de Controles",
+              "subfoco": "Teoria Clássica e Modelo Brasileiro",
               "sub_subfocos": [
-                "Direcionalidade Metodológica: Parte do Desfecho (Casos Doentes vs Controles Sãos) para Investigar Retrospectivamente a História Passada de Exposição",
-                "Características: Observacional, Longitudinal Retrospectivo, Rápido, de Baixo Custo Financeiro",
-                "Medida de Associação Própria: Odds Ratio (Não Permite o Cálculo Direto de Taxas de Incidência)"
+                "Modelo Clássico Linear de Abdel Omran",
+                "Superposição Polarização e Contratransição no Brasil",
+                "Polarização Epidemiológica Inter-Regional e Intraurbana"
               ]
             },
             {
-              "subfoco": "Vieses Típicos do Estudo de Caso-Controle",
+              "subfoco": "Tripla Carga de Doenças",
               "sub_subfocos": [
-                "Viés de Memória (Recall Bias: Indivíduos com a Doença Tendem a Lembrar de Exposições Passadas com Muito Mais Detalhes do que Controles Sãos)",
-                "Dificuldade Metodológica na Seleção do Grupo Controle (Viés de Seleção / Efeito de Berkson em Controles Hospitalares)"
+                "Doenças Crônicas e Agenda Infecciosa Inconclusa",
+                "Morbimortalidade por Causas Externas em Jovens"
+              ]
+            },
+            {
+              "subfoco": "Transição Nutricional e Carga Global",
+              "sub_subfocos": [
+                "Declínio da Desnutrição e Ascensão Obesidade",
+                "Anos Ajustados por Incapacidade DALY"
               ]
             }
           ]
         },
         {
-          "foco": "Estudo Transversal (Seccional)",
+          "foco": "Epidemiologia Descritiva",
           "subfocos": [
             {
-              "subfoco": "Inquéritos Populacionais e Avaliação Simultânea",
+              "subfoco": "Variáveis Relativas ao Tempo",
               "sub_subfocos": [
-                "Avaliação Simultânea da Exposição e do Desfecho no Mesmo Exato Momento do Tempo (\"Fotografia Instantânea\")",
-                "Características: Observacional, Individual, Transversal, Rápido e de Baixo Custo",
-                "Excelente para Planejamento de Políticas de Saúde, Dimensionamento de Serviços e Formulação Inicial de Hipóteses Etiológicas"
+                "Tendência Secular e Variações Cíclicas",
+                "Sazonalidade Climática e Flutuações Irregulares"
               ]
             },
             {
-              "subfoco": "Limitação Metodológica: Ausência de Temporalidade",
+              "subfoco": "Variáveis Relativas à Pessoa",
               "sub_subfocos": [
-                "Incapacidade Intrínseca de Estabelecer Relação Causal Direta pela Falta de Sequência Temporal (Não Permite Saber se a Exposição Ocorreu Antes do Desfecho ou Vice-Versa / Causalidade Reversa)",
-                "Medida de Associação Própria: Razão de Prevalência (RP)"
+                "Idade Sexo e Efeito Coorte Geracional",
+                "Escolaridade Ocupação e Raça em Saúde"
+              ]
+            },
+            {
+              "subfoco": "Variáveis Relativas ao Espaço",
+              "sub_subfocos": [
+                "Investigação Espacial Clássica de John Snow",
+                "Focos Naturais de Pavlovsky e Geoprocessamento"
               ]
             }
           ]
         },
         {
-          "foco": "Ensaio Clínico Randomizado",
+          "foco": "Determinantes Sociais da Saúde",
           "subfocos": [
             {
-              "subfoco": "Metodologia Experimental e Randomização",
+              "subfoco": "Modelo em Camadas Dahlgren-Whitehead",
               "sub_subfocos": [
-                "Estudo Experimental, Intervencionista, Longitudinal, Prospectivo e de Alto Nível de Evidência para Avaliação de Tratamentos e Vacinas",
-                "Randomização / Alocação Aleatória: Mecanismo que Garante Distribuição Homogênea de Fatores de Confundimento Conhecidos e Desconhecidos entre os Grupos"
+                "Núcleo Biológico Estilo e Redes Comunitárias",
+                "Condições Intermediárias e Macrodeterminantes Estruturais"
               ]
             },
             {
-              "subfoco": "Análise por Intenção de Tratar e Fases do Ensaio Clínico",
+              "subfoco": "Determinação Social e Iniquidades Sanitárias",
               "sub_subfocos": [
-                "Mascaramento / Cegamento (Aberto, Simples-Cego, Duplo-Cego, Triplo-Cego) para Eliminar Efeito Placebo, Efeito Hawthorne e Viés do Aferidor",
-                "Análise por Intenção de Tratar (ITT: Todos os Pacientes São Analisados no Grupo para o qual Foram Sorteados, Preservando o Benefício da Randomização) vs Análise por Protocolo"
+                "Desigualdade Biológica e Iniquidade Social Injusta",
+                "Determinantes Estruturais e Intermediários da OMS"
+              ]
+            },
+            {
+              "subfoco": "Indicadores Socioeconômicos Sintéticos",
+              "sub_subfocos": [
+                "Concentração de Renda pelo Coeficiente Gini",
+                "Dimensões do Índice Desenvolvimento Humano"
               ]
             }
           ]
         },
         {
-          "foco": "Estudo Ecológico",
+          "foco": "Indicadores de Morbidade",
           "subfocos": [
             {
-              "subfoco": "Estudos com Dados Agregados Espaciais e Temporais",
+              "subfoco": "Medidas de Incidência e Risco",
               "sub_subfocos": [
-                "Unidade de Observação e Análise: População / Agregado Espacial ou Geográfico (Países, Estados, Cidades, Bairros) e NÃO o Indivíduo",
-                "Utiliza Bancos de Dados Secundários Oficiais (SIM, SINASC, IBGE)",
-                "Excelente para Gerar Hipóteses Iniciais com Baixo Custo e Rapidez"
+                "Incidência Acumulada em Coortes Fechadas",
+                "Densidade de Incidência por Pessoa-Tempo",
+                "Relação entre Incidência e Etiologia Causal"
               ]
             },
             {
-              "subfoco": "Falácia Ecológica (Viés de Agregação)",
+              "subfoco": "Prevalência Pontual e Lápsica",
               "sub_subfocos": [
-                "Erro Metodológico de Inferir Relações Causais para o Nível Individual a Partir de Correlações Observadas Apenas no Nível Populacional Agregado (A Associação Observada no Grupo Pode Não Ocorrer no Indivíduo)",
-                "Inadequação Metodológica para Testar Hipóteses Causais Individuais Diretas"
+                "Prevalência Pontual Lápsica e Uso Gerencial",
+                "Fatores que Elevam ou Reduzem Prevalência",
+                "Prevalência em Doenças Crônicas e Planejamento"
+              ]
+            },
+            {
+              "subfoco": "Taxas de Ataque e Nomenclatura",
+              "sub_subfocos": [
+                "Taxa de Ataque Primária e Secundária",
+                "Diferença entre Proporção Taxa e Razão"
               ]
             }
           ]
         },
         {
-          "foco": "Revisões Sistemáticas e Metanálises",
+          "foco": "Mortalidade Geral e Infantil",
           "subfocos": [
             {
-              "subfoco": "Metodologia da Revisão Sistemática e Prisma",
+              "subfoco": "Mortalidade Geral e Padronização Etária",
               "sub_subfocos": [
-                "Busca Abrangente, Sistemática, Reprodutível e com Critérios Transparentes de Inclusão e Exclusão em Múltiplas Bases (PubMed, Embase, Cochrane)",
-                "Avaliação Crítica do Risco de Viés dos Estudos Incluídos (Ferramenta RoB da Cochrane)"
+                "Limitações do Coeficiente Bruto Mortalidade Geral",
+                "Padronização Direta e Indireta de Taxas",
+                "Mortalidade Específica por Idade e Causa"
               ]
             },
             {
-              "subfoco": "Interpretação do Forest Plot e Heterogeneidade (I2)",
+              "subfoco": "Mortalidade Proporcional Letalidade e APVP",
               "sub_subfocos": [
-                "Gráfico de Floresta (Forest Plot): Quadrados Representam a Estimativa Pontual de Cada Estudo com Área Proporcional ao Seu Peso Amostral; Barras Horizontais Representam o IC95%; Losango / Diamante Inferior Representa a Estimativa Combinada Sumarizada",
-                "Avaliação da Heterogeneidade pelo I2 (< 25% Baixa, 25-50% Moderada, > 50% Alta Heterogeneidade)",
-                "Gráfico de Funil (Funnel Plot) para Detecção Visual de Viés de Publicação"
+                "Índice Swaroop-Uemura e Curvas Nelson Moraes",
+                "Letalidade Clínica e Anos Potenciais Perdidos"
+              ]
+            },
+            {
+              "subfoco": "Componentes do Coeficiente Mortalidade Infantil",
+              "sub_subfocos": [
+                "Mortalidade Neonatal Precoce e Neonatal Tardia",
+                "Mortalidade Pós-Neonatal e Determinantes Ambientais",
+                "Diferença Denominador Nascidos Vivos e Censo"
+              ]
+            },
+            {
+              "subfoco": "Evitabilidade de Óbitos Infantis",
+              "sub_subfocos": [
+                "Lista Brasileira de Mortes Infantis Evitáveis",
+                "Comitês e Vigilância do Óbito Infantil"
               ]
             }
           ]
         },
         {
-          "foco": "Validade Interna, Vieses (Confundimento, Seleção, Aferição) e Causalidade (Hill)",
+          "foco": "Mortalidade Materna e Perinatal",
           "subfocos": [
             {
-              "subfoco": "Vieses Epidemiológicos Clássicos (Seleção, Informação e Confundimento)",
+              "subfoco": "Conceito e Razão Mortalidade Materna",
               "sub_subfocos": [
-                "Viés de Seleção (Viés de Berkson em Hospitais e Viés do Trabalhador Sadio) e Viés de Memória/Recordatório",
-                "Fator de Confundimento: Definição (Associado à Exposição, Causa do Desfecho e Não Intermediário) e Controle (Pareamento, Estratificação, Regressão)"
+                "Definição Temporal e Denominador Nascidos Vivos",
+                "Morte Materna Tardia e Investigação MIF",
+                "Causas Acidentais e Incidentais Não Maternas"
               ]
             },
             {
-              "subfoco": "Critérios de Causalidade de Sir Austin Bradford Hill",
+              "subfoco": "Causas Obstétricas e Near Miss",
               "sub_subfocos": [
-                "Critério Mandatório Essencial: Temporalidade (A Causa Precede o Efeito Obrigatoriamente)",
-                "Critérios de Força de Associação, Gradiente Biológico (Dose-Resposta), Plausibilidade, Coerência e Consistência"
+                "Causas Obstétricas Diretas e Causas Indiretas",
+                "Critérios de Near Miss e Comitês"
+              ]
+            },
+            {
+              "subfoco": "Indicadores Fetais e Perinatais",
+              "sub_subfocos": [
+                "Óbito Fetal e Taxa de Natimortalidade",
+                "Composição e Interpretação da Mortalidade Perinatal"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Sistemas Nacionais de Informação",
+          "subfocos": [
+            {
+              "subfoco": "Estatísticas Vitais SIM e SINASC",
+              "sub_subfocos": [
+                "Sistema sobre Mortalidade SIM e Codificação",
+                "Sistema de Nascidos Vivos e DNV",
+                "Causas Mal Definidas e Códigos Garbage"
+              ]
+            },
+            {
+              "subfoco": "Notificação Epidemiológica pelo SINAN",
+              "sub_subfocos": [
+                "Instrumentos Operacionais e Notificação Negativa SINAN",
+                "Sistemas SIVEP GAL e Rede RNDS"
+              ]
+            },
+            {
+              "subfoco": "Sistemas Assistenciais e Cadastro CNES",
+              "sub_subfocos": [
+                "Produção Hospitalar SIH e Ambulatorial SIA",
+                "Cadastro Nacional de Estabelecimentos CNES"
               ]
             }
           ]
@@ -553,102 +1219,630 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "Acurácia de Testes Diagnósticos e Rastreamento",
+      "tema": "Vigilância em Saúde",
+      "focos": [
+        {
+          "foco": "Sistema de Vigilância Epidemiológica",
+          "subfocos": [
+            {
+              "subfoco": "Ciclo Operacional e Modalidades Vigilância",
+              "sub_subfocos": [
+                "Tríade Informação-Decisão-Ação e Funções Legais",
+                "Vigilância Passiva Ativa Sentinela e Sindrômica",
+                "Vigilância Laboratorial Ambiental e Genômica"
+              ]
+            },
+            {
+              "subfoco": "Emergências Sanitárias CIEVS e RSI",
+              "sub_subfocos": [
+                "Rede CIEVS e Vigilância Baseada Eventos",
+                "Regulamento Sanitário Internacional e Emergência ESPII"
+              ]
+            },
+            {
+              "subfoco": "Atributos de Avaliação dos Sistemas",
+              "sub_subfocos": [
+                "Atributos Quantitativos Sensibilidade VPP e Oportunidade",
+                "Atributos Qualitativos Simplicidade e Flexibilidade"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Notificação Compulsória de Agravos",
+          "subfocos": [
+            {
+              "subfoco": "Regras Gerais Prazos e Legitimidade",
+              "sub_subfocos": [
+                "Obrigatoriedade na Simples Suspeita e Sigilo",
+                "Prazos da Notificação Imediata e Semanal",
+                "Notificação Negativa Semanal de Ausência"
+              ]
+            },
+            {
+              "subfoco": "Doenças Infecciosas de Notificação Imediata",
+              "sub_subfocos": [
+                "Exantemáticas Paralisias Flácidas e Zoonoses Graves",
+                "Toxinfecções Bioterrorismo Eventos Vacinais e Óbitos",
+                "Síndrome Respiratória Aguda Grave e Influenza"
+              ]
+            },
+            {
+              "subfoco": "Doenças Semanais e Atualizações Recentes",
+              "sub_subfocos": [
+                "Endemias Crônicas ISTs e Casos Semanais",
+                "Inclusões Recentes Falciforme HTLV e Laborais"
+              ]
+            },
+            {
+              "subfoco": "Violências Intoxicações e Animais Peçonhentos",
+              "sub_subfocos": [
+                "Violência Imediata e Violência Semanal",
+                "Intoxicações Exógenas e Acidentes por Peçonhentos"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Processo Epidêmico e Transmissibilidade",
+          "subfocos": [
+            {
+              "subfoco": "Propriedades dos Agentes e Cadeia",
+              "sub_subfocos": [
+                "Infectividade Patogenicidade Virulência e Imunogenicidade",
+                "Reservatório Portador Veículos e Vetores Biológicos"
+              ]
+            },
+            {
+              "subfoco": "Períodos Clínicos Reprodução e Rebanho",
+              "sub_subfocos": [
+                "Incubação Latência Janela Imunológica e Transmissibilidade",
+                "Taxa Básica Reprodutiva e Imunidade Coletiva",
+                "Variação do Limiar Vacinal conforme Transmissibilidade"
+              ]
+            },
+            {
+              "subfoco": "Isolamento Quarentena e Bloqueio Sanitário",
+              "sub_subfocos": [
+                "Diferença Operacional entre Isolamento e Quarentena",
+                "Bloqueio Vacinal Seletivo e Quimioprofilaxia"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Investigação de Surtos Epidêmicos",
+          "subfocos": [
+            {
+              "subfoco": "Endemia Epidemia Surto e Pandemia",
+              "sub_subfocos": [
+                "Distinção Endemia Surto Epidemia e Pandemia",
+                "Construção e Interpretação do Diagrama Controle"
+              ]
+            },
+            {
+              "subfoco": "Curvas Epidêmicas e Modos Propagação",
+              "sub_subfocos": [
+                "Epidemia Explosiva por Fonte Comum",
+                "Epidemia Progressiva Propagada Pessoa a Pessoa",
+                "Estimativa da Exposição pela Curva Epidêmica"
+              ]
+            },
+            {
+              "subfoco": "Etapas da Investigação de Campo",
+              "sub_subfocos": [
+                "Confirmação do Surto e Caso Índice",
+                "Estudo Analítico de Surto e Controle"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Sistema de Vigilância Sanitária",
+          "subfocos": [
+            {
+              "subfoco": "Conceito Legal e Sistema SNVS",
+              "sub_subfocos": [
+                "Definição Legal na Lei Orgânica",
+                "Autarquia Especial ANVISA Portos e Laboratórios"
+              ]
+            },
+            {
+              "subfoco": "Poder de Polícia e Regulação",
+              "sub_subfocos": [
+                "Poder de Polícia Administrativa e Infrações",
+                "Referência Genéricos Similares e Biossimilares"
+              ]
+            },
+            {
+              "subfoco": "Vigilância Pós-Comercialização VIGIPÓS",
+              "sub_subfocos": [
+                "Farmacovigilância Reações Adversas e Queixas Técnicas",
+                "Tecnovigilância Hemovigilância e Biovigilância"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Vigilância em Saúde Ambiental",
+          "subfocos": [
+            {
+              "subfoco": "Qualidade da Água e VIGIAGUA",
+              "sub_subfocos": [
+                "Potabilidade Cloro Residual e Coliformes",
+                "Saneamento Básico e Veiculação Hídrica",
+                "Vetores Biológicos com Fase Aquática"
+              ]
+            },
+            {
+              "subfoco": "Poluentes Atmosféricos Solo e Químicos",
+              "sub_subfocos": [
+                "Qualidade do Ar e Poluição VIGIAR",
+                "Solo Contaminado VIGISOLO e Químicos VIGIPEQ"
+              ]
+            },
+            {
+              "subfoco": "Desastres Naturais e Tecnológicos VIGIDESASTRES",
+              "sub_subfocos": [
+                "Gestão de Risco nos Desastres Ambientais",
+                "Agravos Pós-Enchentes Secas e Barragens"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Controle Vetorial e Zoonoses",
+          "subfocos": [
+            {
+              "subfoco": "Vigilância Entomológica do Aedes aegypti",
+              "sub_subfocos": [
+                "Índices Larvários LIRAa Predial e Breteau",
+                "Controle Mecânico Biológico Wolbachia e UBV"
+              ]
+            },
+            {
+              "subfoco": "Epizootias e Vigilância Febre Amarela",
+              "sub_subfocos": [
+                "Ciclo Silvestre e Risco de Reurbanização",
+                "Vigilância de Epizootias em Primatas Sentinela"
+              ]
+            },
+            {
+              "subfoco": "Vigilância e Profilaxia Raiva Humana",
+              "sub_subfocos": [
+                "Acidentes Leves e Graves por Cães",
+                "Conduta em Quirópteros Silvestres e Herbívoros",
+                "Profilaxia Pré-Exposição em Profissionais Expostos"
+              ]
+            },
+            {
+              "subfoco": "Controle Territorial de Leishmanioses",
+              "sub_subfocos": [
+                "Vetor Flebotomíneo e Reservatório Canino Urbano",
+                "Vigilância Acarológica de Febre Maculosa"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Estudos Epidemiológicos e Causalidade",
+      "focos": [
+        {
+          "foco": "Classificação dos Estudos Epidemiológicos",
+          "subfocos": [
+            {
+              "subfoco": "Eixos Taxonômicos dos Delineamentos",
+              "sub_subfocos": [
+                "Unidade de Análise Individuada ou Agregada",
+                "Intervenção do Pesquisador e Seguimento Temporal",
+                "Quase-Experimentos e Estudos Antes e Depois"
+              ]
+            },
+            {
+              "subfoco": "Estudos Descritivos Relatos e Séries",
+              "sub_subfocos": [
+                "Aplicações do Relato e Série Casos",
+                "Limitações Analíticas sem Grupo Comparador"
+              ]
+            },
+            {
+              "subfoco": "Seleção Prática do Desenho Adequado",
+              "sub_subfocos": [
+                "Escolha entre Doença ou Exposição Rara",
+                "Limites Éticos Custo e Antecedência Temporal"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Estudos Ecológicos",
+          "subfocos": [
+            {
+              "subfoco": "Características e Tipos Estudos Ecológicos",
+              "sub_subfocos": [
+                "Comparação Espacial e Série Temporal Agregada",
+                "Vantagens Operacionais e Efeitos Contextuais"
+              ]
+            },
+            {
+              "subfoco": "Falácia Ecológica e Limitações",
+              "sub_subfocos": [
+                "Conceito Clássico de Falácia Ecológica",
+                "Qualidade de Dados Secundários e Colinearidade",
+                "Variáveis Globais Ambientais sem Equivalente Individual"
+              ]
+            },
+            {
+              "subfoco": "Ensaios Comunitários de Intervenção",
+              "sub_subfocos": [
+                "Delineamento Experimental Agregado Comunitário",
+                "Limitações de Contaminação em Ensaios Comunitários"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Estudos Transversais",
+          "subfocos": [
+            {
+              "subfoco": "Delineamento Seccional e Inquéritos",
+              "sub_subfocos": [
+                "Mensuração Simultânea Individual sem Seguimento",
+                "Inquéritos Populacionais Brasileiros PNS e VIGITEL",
+                "Vantagens e Limitações dos Estudos Transversais"
+              ]
+            },
+            {
+              "subfoco": "Causalidade Reversa e Viés Sobrevivência",
+              "sub_subfocos": [
+                "Ambiguidade Temporal e Causalidade Reversa",
+                "Sobrerrepresentação de Casos Longos Neyman"
+              ]
+            },
+            {
+              "subfoco": "Análise Estatística em Estudos Seccionais",
+              "sub_subfocos": [
+                "Cálculo e Interpretação da Razão Prevalências",
+                "Regressão de Poisson em Desfechos Comuns"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Estudos de Coorte",
+          "subfocos": [
+            {
+              "subfoco": "Delineamento e Tipologia de Coortes",
+              "sub_subfocos": [
+                "Seleção por Exposição em Indivíduos Sadios",
+                "Coorte Concorrente Prospectiva e Coorte Histórica",
+                "Exposições Raras e Múltiplos Desfechos"
+              ]
+            },
+            {
+              "subfoco": "Seguimento Longitudinal e Perdas Amostrais",
+              "sub_subfocos": [
+                "Impacto das Perdas Diferenciais de Seguimento",
+                "Mudança de Exposição e Limitações Práticas"
+              ]
+            },
+            {
+              "subfoco": "Incidência Risco e Análise Sobrevida",
+              "sub_subfocos": [
+                "Incidência Direta e Risco Relativo",
+                "Curvas Kaplan-Meier Log-Rank e Regressão Cox"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Estudos de Caso-Controle",
+          "subfocos": [
+            {
+              "subfoco": "Delineamento Casos e Grupo Controle",
+              "sub_subfocos": [
+                "Partida pelo Desfecho e Casos Incidentes",
+                "Princípios na Seleção do Grupo Controle",
+                "Doenças Raras e Longa Latência"
+              ]
+            },
+            {
+              "subfoco": "Pareamento e Variantes Híbridas",
+              "sub_subfocos": [
+                "Pareamento Controle Confusão e Superpareamento",
+                "Caso-Controle Aninhado e Estudo Caso-Cruzado"
+              ]
+            },
+            {
+              "subfoco": "Vieses Clássicos e Razão Chances",
+              "sub_subfocos": [
+                "Viés de Memória e de Seleção",
+                "Produtos Cruzados e Premissa Doença Rara"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Ensaios Clínicos Randomizados",
+          "subfocos": [
+            {
+              "subfoco": "Fases da Pesquisa Clínica Farmacológica",
+              "sub_subfocos": [
+                "Estudos Pré-Clínicos Fase Um e Dois",
+                "Fase Três Confirmatória e Fase Quatro"
+              ]
+            },
+            {
+              "subfoco": "Randomização Alocação Oculta e Cegamento",
+              "sub_subfocos": [
+                "Randomização e Sigilo da Sequência Alocação",
+                "Mascaramento Simples Duplo e Triplo-Cego",
+                "Tabela Um Basal e Equilíbrio Prognóstico"
+              ]
+            },
+            {
+              "subfoco": "Análise Estatística e Desenhos Especiais",
+              "sub_subfocos": [
+                "Intenção de Tratar e Por Protocolo",
+                "Ensaios Crossover Fatoriais e Não Inferioridade",
+                "Interrupção Precoce por Benefício ou Toxicidade"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Medidas de Associação",
+          "subfocos": [
+            {
+              "subfoco": "Risco Relativo e Interpretação Clínica",
+              "sub_subfocos": [
+                "Cálculo na Tabela e Direção Associação",
+                "Tradução Percentual de Risco e Proteção",
+                "Inadequação do Risco Relativo em Caso-Controle"
+              ]
+            },
+            {
+              "subfoco": "Razão de Chances Odds Ratio",
+              "sub_subfocos": [
+                "Diferença entre Probabilidade Risco e Chance",
+                "Convergência e Divergência com Risco Relativo"
+              ]
+            },
+            {
+              "subfoco": "Hazard Ratio e Razão Taxas",
+              "sub_subfocos": [
+                "Interpretação Temporal do Hazard Ratio",
+                "Razão de Densidades de Incidência"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Medidas de Impacto Epidemiológico",
+          "subfocos": [
+            {
+              "subfoco": "Risco Atribuível e Fração Etiológica",
+              "sub_subfocos": [
+                "Diferença Absoluta de Risco nos Expostos",
+                "Fração Atribuível nos Expostos e Populacional"
+              ]
+            },
+            {
+              "subfoco": "Redução Absoluta e Relativa Risco",
+              "sub_subfocos": [
+                "Contraste entre Redução Relativa e Absoluta",
+                "Cálculo da Eficácia e Efetividade Vacinal"
+              ]
+            },
+            {
+              "subfoco": "Número Necessário Tratar e Prejudicar",
+              "sub_subfocos": [
+                "Cálculo e Interpretação Clínica do NNT",
+                "Número Necessário para Causar Dano NNH",
+                "Variação do NNT conforme Risco Basal"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Erros Sistemáticos e Vieses",
+          "subfocos": [
+            {
+              "subfoco": "Validade Interna Externa e Precisão",
+              "sub_subfocos": [
+                "Erro Sistemático Viés e Erro Aleatório",
+                "Validade Interna e Extrapolação Externa"
+              ]
+            },
+            {
+              "subfoco": "Vieses de Seleção Clássicos",
+              "sub_subfocos": [
+                "Viés Hospitalar Berkson e Sobrevivência Neyman",
+                "Trabalhador Sadio Voluntariado e Perda Seguimento",
+                "Prevenção de Viés no Planejamento Amostral"
+              ]
+            },
+            {
+              "subfoco": "Vieses de Informação e Aferição",
+              "sub_subfocos": [
+                "Memória Suspeição Diagnóstica Entrevistador e Hawthorne",
+                "Classificação Diferencial e Não Diferencial"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Confundimento e Causalidade",
+          "subfocos": [
+            {
+              "subfoco": "Identificação e Controle do Confundimento",
+              "sub_subfocos": [
+                "Critérios Definidores da Variável de Confusão",
+                "Controle no Delineamento e na Análise",
+                "Confundimento Residual e Variáveis Não Mensuradas"
+              ]
+            },
+            {
+              "subfoco": "Modificação de Efeito e Interação",
+              "sub_subfocos": [
+                "Medidas Bruta Ajustada e por Estratos",
+                "Interação Aditiva Sinergismo e Antagonismo Biológico"
+              ]
+            },
+            {
+              "subfoco": "Critérios Bradford Hill e Rothman",
+              "sub_subfocos": [
+                "Critérios de Bradford Hill e Temporalidade",
+                "Causas Suficientes Componentes e Necessárias Rothman"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Epidemiologia Clínica e Rastreamento",
       "focos": [
         {
           "foco": "Sensibilidade e Especificidade",
           "subfocos": [
             {
-              "subfoco": "Propriedades Intrínsecas do Teste Diagnóstico",
+              "subfoco": "Propriedades Intrínsecas e Tabela Contingência",
               "sub_subfocos": [
-                "Sensibilidade: Proporção de Indivíduos Doentes que Testam Positivo [VP / (VP + FN)]; Teste com Alta Sensibilidade Apresenta Poucos Falsos-Negativos (Ideal para Rastreamento / Triagem - Regra SnNOut)",
-                "Especificidade: Proporção de Indivíduos Sãos que Testam Negativo [VN / (VN + FP)]; Teste com Alta Especificidade Apresenta Poucos Falsos-Positivos (Ideal para Confirmação Diagnóstica - Regra SpPIn)",
-                "Independência Absoluta da Prevalência: A Sensibilidade e a Especificidade São Propriedades Intrínsecas do Teste e NÃO se Modificam Conforme a Prevalência da População"
+                "Cálculo de Sensibilidade Especificidade e Acurácia",
+                "Priorização Clínica de Sensibilidade ou Especificidade",
+                "Estruturação da Matriz Diagnóstica de Contingência"
               ]
             },
             {
-              "subfoco": "Testes em Série vs Testes em Paralelo",
+              "subfoco": "Ponto de Corte Diagnóstico",
               "sub_subfocos": [
-                "Testes em Série (Realizados Sequencialmente Apenas se o Anterior For Positivo): Aumenta a Especificidade Global e o Valor Preditivo Positivo (Reduz Falsos-Positivos)",
-                "Testes em Paralelo (Realizados Concomitantemente, Positivo se Qualquer um For Positivo): Aumenta a Sensibilidade Global e o Valor Preditivo Negativo (Reduz Falsos-Negativos)"
+                "Deslocamento do Ponto de Corte Contínuo",
+                "Impacto Clínico de Falsos-Positivos e Falsos-Negativos"
+              ]
+            },
+            {
+              "subfoco": "Associação em Série e Paralelo",
+              "sub_subfocos": [
+                "Testes Sequenciais em Série e Especificidade",
+                "Testes Simultâneos em Paralelo e Sensibilidade",
+                "Fluxogramas Diagnósticos de Triagem e Confirmação"
               ]
             }
           ]
         },
         {
-          "foco": "Valores Preditivos (Positivo e Negativo) e Efeito da Prevalência",
+          "foco": "Valores Preditivos e Prevalência",
           "subfocos": [
             {
-              "subfoco": "Cálculo de VPP e VPN e a Influência da Prevalência",
+              "subfoco": "Cálculo de VPP e VPN",
               "sub_subfocos": [
-                "Valor Preditivo Positivo (VPP): Probabilidade de Ter a Doença quando o Teste For Positivo [VP / (VP + FP)]",
-                "Valor Preditivo Negativo (VPN): Probabilidade de Não Ter a Doença quando o Teste For Negativo [VN / (VN + FN)]",
-                "Regra de Ouro da Dependência da Prevalência: Quanto Maior a Prevalência da Doença na População, MAIOR o VPP e MENOR o VPN; Quanto Menor a Prevalência, MENOR o VPP e MAIOR o VPN"
+                "Probabilidade Pós-Teste Positiva e Negativa",
+                "Teorema de Bayes no Raciocínio Clínico",
+                "Exclusão Clínica pelo Valor Preditivo Negativo"
               ]
             },
             {
-              "subfoco": "Acurácia Global do Teste Diagnóstico",
+              "subfoco": "Prevalência e Variação Preditiva",
               "sub_subfocos": [
-                "Acurácia: Proporção Total de Acertos do Teste entre Doentes e Sãos [(VP + VN) / Total de Testados]",
-                "Diferença entre Acurácia e Valores Preditivos em Cenários de Alta vs Baixa Prevalência"
+                "Variação Preditiva entre UBS e Hospital",
+                "Estabilidade da Sensibilidade e Especificidade"
+              ]
+            },
+            {
+              "subfoco": "Raciocínio Probabilístico e Choosing Wisely",
+              "sub_subfocos": [
+                "Anamnese Dirigida Elevando Probabilidade Pré-Teste",
+                "Choosing Wisely e Prevenção de Incidentalomas"
               ]
             }
           ]
         },
         {
-          "foco": "Razões de Verossimilhança (Likelihood Ratios)",
+          "foco": "Verossimilhança e Curva ROC",
           "subfocos": [
             {
-              "subfoco": "Cálculo e Significado Clínico da RV+ e RV-",
+              "subfoco": "Razões de Verossimilhança e Fagan",
               "sub_subfocos": [
-                "Razão de Verossimilhança Positiva (RV+): Sensibilidade / (1 - Especificidade); Indica Quanto Mais Provável é um Teste Positivo em Doentes do que em Sãos (Valores > 10 Geram Grande Mudança Diagnóstica)",
-                "Razão de Verossimilhança Negativa (RV-): (1 - Sensibilidade) / Especificidade (Valores < 0,1 Quase Excluem a Doença)",
-                "Independência da Prevalência"
+                "Fórmulas e Força das Razões Verossimilhança",
+                "Conversão de Chances e Nomograma Fagan"
               ]
             },
             {
-              "subfoco": "Nomograma de Fagan e Teorema de Bayes",
+              "subfoco": "Construção e Eixos Curva ROC",
               "sub_subfocos": [
-                "Aplicação Prática no Nomograma de Fagan: Conversão da Probabilidade Pré-Teste na Probabilidade Pós-Teste Utilizando a Razão de Verossimilhança",
-                "Interpretação da Inclinação da Reta Diagnóstica entre Probabilidade Pré e Pós-Teste"
+                "Eixo Vertical Sensibilidade e Horizontal Falsos-Positivos",
+                "Limiar Ótimo pelo Índice de Youden"
+              ]
+            },
+            {
+              "subfoco": "Área Sob Curva e Comparação",
+              "sub_subfocos": [
+                "Interpretação Discriminativa da Área AUC",
+                "Comparação entre Curvas ROC de Testes"
               ]
             }
           ]
         },
         {
-          "foco": "Curva ROC e Ponto de Corte",
+          "foco": "Rastreamento Populacional e Vieses",
           "subfocos": [
             {
-              "subfoco": "Construção da Curva ROC e Área sob a Curva (AUC)",
+              "subfoco": "Critérios Wilson-Jungner e Modalidades",
               "sub_subfocos": [
-                "Eixos Gráficos: Eixo Y (Sensibilidade / Taxa de Verdadeiros-Positivos) vs Eixo X (1 - Especificidade / Taxa de Falsos- Positivos)",
-                "Área sob a Curva (AUC): Medida Global de Acurácia Diagnóstica (AUC = 0,5 Indica Teste Nulo / Semelhante à Moeda ao Ar; AUC = 1,0 Indica Teste Perfeito sem Erros; AUC >= 0,8 Indica Bom Poder Discriminatório)"
+                "Requisitos de Wilson e Jungner OMS",
+                "Rastreamento Populacional Organizado e Oportunístico"
               ]
             },
             {
-              "subfoco": "Escolha do Ponto de Corte Ideal",
+              "subfoco": "Viés de Antecipação e Duração",
               "sub_subfocos": [
-                "Trade-off Inevitável: Deslocar o Ponto de Corte para Aumentar a Sensibilidade Inevitavelmente Reduz a Especificidade e Aumenta os Falsos-Positivos",
-                "Critério de Youden para o Ponto de Equilíbrio Ótimo"
+                "Viés de Tempo de Antecipação Lead-Time",
+                "Viés de Duração ou Velocidade Length-Time",
+                "Cânceres de Intervalo Agressivos entre Rastreios"
+              ]
+            },
+            {
+              "subfoco": "Sobrediagnóstico Adesão e Desfecho Real",
+              "sub_subfocos": [
+                "Sobrediagnóstico e Viés do Voluntário Saudável",
+                "Mortalidade Específica em Ensaios de Rastreamento"
               ]
             }
           ]
         },
         {
-          "foco": "Princípios de Rastreamento e Critérios de Frame & Carlson",
+          "foco": "Medicina Baseada em Evidências",
           "subfocos": [
             {
-              "subfoco": "Critérios Clássicos de Rastreamento Populacional (Wilson & Jungner)",
+              "subfoco": "Tríade MBE e Pergunta PICO",
               "sub_subfocos": [
-                "Condição de Importância em Saúde Pública, História Natural Conhecida e Fase Latente/Pré-Clínica Detectável",
-                "Disponibilidade de Teste Aceitável, Seguro, Custo-Efetivo e com Tratamento Eficaz na Fase Inicial"
+                "Tríade de Sackett e Estrutura PICO",
+                "Desfechos Relevantes ao Paciente e Substitutos"
               ]
             },
             {
-              "subfoco": "Vieses em Rastreamento e Danos do Sobrediagnóstico (Overdiagnosis)",
+              "subfoco": "Pirâmide Evidências e Revisão Sistemática",
               "sub_subfocos": [
-                "Viés de Tempo de Antecipação (Lead-Time Bias) e Viés de Duração da Doença (Length-Time Bias)",
-                "Conceito de Sobrediagnóstico (Diagnóstico de Doença que Jamais Causaria Sintomas ou Morte) e Sobretatamento"
+                "Hierarquia de Evidências conforme Pergunta Clínica",
+                "Revisão Sistemática Reprodutível e Revisão Narrativa"
+              ]
+            },
+            {
+              "subfoco": "Metanálise Forest Plot e Heterogeneidade",
+              "sub_subfocos": [
+                "Leitura Gráfica do Forest Plot",
+                "Heterogeneidade Modelos Estatísticos e Funnel Plot",
+                "Análise de Sensibilidade e Metarregressão"
+              ]
+            },
+            {
+              "subfoco": "Sistema GRADE e Diretrizes Clínicas",
+              "sub_subfocos": [
+                "Domínios que Rebaixam ou Elevam Evidência",
+                "Força da Recomendação Forte ou Condicional"
               ]
             }
           ]
@@ -656,101 +1850,172 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "Vigilância em Saúde e Notificação Compulsória",
+      "tema": "Bioestatística",
       "focos": [
         {
-          "foco": "Lista Nacional de Notificação Compulsória (Portaria de Notificação e Prazos)",
+          "foco": "Variáveis e Estatística Descritiva",
           "subfocos": [
             {
-              "subfoco": "Notificação Imediata (em até 24 Horas)",
+              "subfoco": "Classificação e Escalas de Variáveis",
               "sub_subfocos": [
-                "Doenças de Notificação Imediata Obrigatória Simultânea ao MS, SES e SMS: Botulismo, Cólera, Febre Amarela, Peste, Raiva Humana, Sarampo, Varíola, Doença Meningocócica, Hantavirose, Síndrome Respiratória Aguda Grave por Vírus Novo, Evento Adverso Grave Pós-Vacinação",
-                "Notificação Imediata Apenas ao Município e Estado: Acidente por Animal Peçonhento, Violência Sexual, Tentativa de Suicídio"
+                "Variáveis Qualitativas Nominais e Ordinais",
+                "Variáveis Quantitativas Discretas e Contínuas"
               ]
             },
             {
-              "subfoco": "Notificação Semanal e Regras Gerais de Notificação",
+              "subfoco": "Medidas de Tendência Central",
               "sub_subfocos": [
-                "Doenças de Notificação Semanal no SINAN: Tuberculose, Hanseníase, Leishmaniose, Dengue sem Sinais de Alarme, Sífilis, Hepatites Virais, HIV/Aids",
-                "Dever Legal e Universal de Notificação de Todo Profissional de Saúde (Mesmo Diante de MERA SUSPEITA CLÍNICA, sem Necessidade de Confirmação Laboratorial)",
-                "Sigilo das Informações e Infração Ética em Caso de Omissão"
+                "Cálculo da Média Mediana e Moda",
+                "Sensibilidade a Valores Extremos Outliers",
+                "Posição de Média Mediana e Moda"
+              ]
+            },
+            {
+              "subfoco": "Medidas de Dispersão e Posição",
+              "sub_subfocos": [
+                "Variância Desvio-Padrão e Amplitude Interquartil",
+                "Coeficiente de Variação Relativa Adimensional"
+              ]
+            },
+            {
+              "subfoco": "Representações Gráficas em Bioestatística",
+              "sub_subfocos": [
+                "Histograma Contínuo e Diagrama Box-Plot",
+                "Gráficos de Barras Setores e Dispersão"
               ]
             }
           ]
         },
         {
-          "foco": "Investigação de Surtos e Epidemias",
+          "foco": "Distribuição Normal e Amostragem",
           "subfocos": [
             {
-              "subfoco": "Etapas Metodológicas de Investigação de Surto",
+              "subfoco": "Curva Gaussiana e Assimetrias",
               "sub_subfocos": [
-                "Passo 1: Confirmação da Existência Real da Epidemia / Surto (Número de Casos Observados Acima do Limite Superior do Diagrama de Controle Endêmico)",
-                "Passo 2: Confirmação do Diagnóstico Clínico-Laboratorial e Definição Padronizada de Caso",
-                "Passo 3: Caracterização Epidemiológica por Tempo, Lugar e Pessoa"
+                "Propriedades da Curva Normal e Desvios",
+                "Assimetria Positiva Direita e Negativa Esquerda"
               ]
             },
             {
-              "subfoco": "Curvas Epidêmicas (Fonte Pontual vs Propagada)",
+              "subfoco": "Teorema Central e Erro Padrão",
               "sub_subfocos": [
-                "Epidemia de Fonte Comum / Pontual (Ex.: Intoxicação Alimentar em Festa): Pico Único Abrupto com Queda Rápida, Casos Concentrados em Período Menor que um Tempo de Incubação",
-                "Epidemia Propagada / Pessoa a Pessoa (Ex.: Gripe, Sarampo): Vários Picos Sucessivos e Ondas Progressivas com Duração Maior que Vários Tempos de Incubação"
+                "Teorema Central do Limite Amostral",
+                "Diferença entre Desvio-Padrão e Erro-Padrão"
+              ]
+            },
+            {
+              "subfoco": "Amostragem Probabilística e Não Probabilística",
+              "sub_subfocos": [
+                "Simples Sistemática Estratificada e Conglomerados",
+                "Amostragem por Conveniência Cotas e Bola-de-Neve"
               ]
             }
           ]
         },
         {
-          "foco": "Vigilância Epidemiológica de Doenças Transmissíveis",
+          "foco": "Valor-P e Estimativa Intervalar",
           "subfocos": [
             {
-              "subfoco": "Lista Nacional de Notificação Compulsória e Prazos",
+              "subfoco": "Conceito e Leitura do Valor-P",
               "sub_subfocos": [
-                "Notificação Imediata (em até 24h para Município, Estado e MS): Cólera, Febre Amarela, Peste, Raiva, Sarampo, Botulismo",
-                "Notificação Semanal: Tuberculose, Hanseníase, Tétano Acidental, Hepatites Virais e Toxoplasmose Gestacional"
+                "Significado Probabilístico sob Hipótese Nula",
+                "Falácias Interpretativas Comuns do Valor-P",
+                "Influência do Tamanho Amostral sobre Valor-P"
               ]
             },
             {
-              "subfoco": "Investigação de Surtos e Epidemias em Saúde Pública",
+              "subfoco": "Construção e Precisão do Intervalo",
               "sub_subfocos": [
-                "Definição Operacional de Caso (Suspeito, Provável e Confirmado) e Construção da Curva Epidêmica (Fonte Pontual vs Propagada)",
-                "Cálculo da Taxa de Ataque (Incidência em População Definida Durante Surto) e Coeficiente de Letalidade"
+                "Determinantes da Amplitude do Intervalo Confiança",
+                "Interpretação Frequentista da Estimativa Intervalar"
+              ]
+            },
+            {
+              "subfoco": "Relação Valor-P Intervalo e Clínica",
+              "sub_subfocos": [
+                "Elemento Neutro nas Razões e Diferenças",
+                "Significância Estatística e Relevância Clínica",
+                "Sobreposição Intervalar na Comparação entre Grupos"
               ]
             }
           ]
         },
         {
-          "foco": "Vigilância Sanitária e Vigilância Ambiental",
+          "foco": "Erros Estatísticos e Poder",
           "subfocos": [
             {
-              "subfoco": "Atuação e Competências da Vigilância Sanitária (VISA / ANVISA)",
+              "subfoco": "Formulação de Hipóteses e Erros",
               "sub_subfocos": [
-                "Poder de Polícia Administrativa e Fiscalização de Bens de Consumo, Alimentos, Medicamentos e Serviços de Saúde",
-                "Farmacovigilância, Tecnovigilância e Investigação de Eventos Adversos e Queixas Técnicas (NOTIVISA)"
+                "Hipótese Nula e Alternativa Bicaudal",
+                "Erro Alfa Falso-Positivo e Beta Falso-Negativo",
+                "Tabela Verdade da Decisão Estatística Inferencial"
               ]
             },
             {
-              "subfoco": "Vigilância em Saúde Ambiental (VIGIAMBIENTE)",
+              "subfoco": "Poder Estatístico e Tamanho Amostral",
               "sub_subfocos": [
-                "Vigilância da Qualidade da Água para Consumo Humano (VIGIAGUA: Parâmetros Físico-Químicos e Bacteriológicos)",
-                "Vigilância de Populações Expostas a Agrotóxicos (VIGIPEQ) e Desastres Naturais/Antrópicos (VIGIDESASTRES)"
+                "Determinantes do Poder Estatístico do Estudo",
+                "Componentes do Cálculo de Tamanho Amostral"
+              ]
+            },
+            {
+              "subfoco": "Testes Múltiplos e Ajuste Bonferroni",
+              "sub_subfocos": [
+                "Inflação do Erro Alfa em Subgrupos",
+                "Correção de Bonferroni e Hierarquia Desfechos"
               ]
             }
           ]
         },
         {
-          "foco": "Vigilância das Doenças e Agravos Não Transmissíveis (DANT)",
+          "foco": "Testes Estatísticos Paramétricos",
           "subfocos": [
             {
-              "subfoco": "Inquéritos Populacionais e Monitoramento de Fatores de Risco (VIGITEL)",
+              "subfoco": "Teste t Student e ANOVA",
               "sub_subfocos": [
-                "Sistema VIGITEL (Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico)",
-                "Principais Fatores Modificáveis: Tabagismo, Sedentarismo, Consumo Nocivo de Álcool e Padrões Alimentares Inadequados"
+                "Teste t Independente e Teste Pareado",
+                "Análise de Variância ANOVA e Post-Hoc"
               ]
             },
             {
-              "subfoco": "Vigilância de Violências e Acidentes (VIVA)",
+              "subfoco": "Correlação Linear de Pearson",
               "sub_subfocos": [
-                "Sistema VIVA Contínuo (Notificação de Violência Interpessoal e Autoprovocada no SINAN)",
-                "Notificação Obrigatória de Maus-Tratos contra Crianças, Adolescentes, Mulheres e Idosos (Conselho Tutelar e Autoridades)"
+                "Direção e Magnitude do Coeficiente Pearson",
+                "Coeficiente de Determinação e Correlação Espúria"
+              ]
+            },
+            {
+              "subfoco": "Modelos de Regressão Multivariada",
+              "sub_subfocos": [
+                "Regressão Linear Logística e Proporcional Cox",
+                "Ajuste Multivariado e Controle de Confundidores"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Testes Não Paramétricos",
+          "subfocos": [
+            {
+              "subfoco": "Alternativas Não Paramétricas por Postos",
+              "sub_subfocos": [
+                "Mann-Whitney Independente e Wilcoxon Pareado",
+                "Kruskal-Wallis Friedman e Correlação Spearman"
+              ]
+            },
+            {
+              "subfoco": "Qui-Quadrado Fisher e McNemar",
+              "sub_subfocos": [
+                "Qui-Quadrado de Pearson e Exato Fisher",
+                "Teste de McNemar para Proporções Pareadas",
+                "Escolha Rápida do Teste conforme Variáveis"
+              ]
+            },
+            {
+              "subfoco": "Concordância Kappa e Confiabilidade",
+              "sub_subfocos": [
+                "Coeficiente Kappa Descontando Concordância Aleatória",
+                "Correlação Intraclasse Bland-Altman e Alfa Cronbach"
               ]
             }
           ]
@@ -758,101 +2023,243 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "Saúde do Trabalhador e Riscos Ocupacionais",
+      "tema": "Saúde do Trabalhador",
       "focos": [
         {
-          "foco": "Acidentes de Trabalho e Emissão de CAT",
+          "foco": "Política Nacional e RENAST",
           "subfocos": [
             {
-              "subfoco": "Definição Legal de Acidente de Trabalho e Doenças Equiparadas",
+              "subfoco": "Evolução Histórica e Política PNSTT",
               "sub_subfocos": [
-                "Acidente Típico: Ocorre no Exercício do Trabalho a Serviço da Empresa Provocando Lesão Corporal ou Perturbação Funcional",
-                "Acidente de Trajeto: Ocorre no Percurso da Residência para o Local de Trabalho ou Vice-Versa",
-                "Doença Profissional (Ergopatia / Típica de Determinada Profissão) e Doença do Trabalho (Mesopatia / Resultante das Condições Especiais em que o Trabalho é Realizado)"
+                "Paradigmas Históricos de Ramazzini ao SUS",
+                "Abrangência Universal Formais Informais e Desempregados"
               ]
             },
             {
-              "subfoco": "Emissão da Comunicação de Acidente de Trabalho (CAT)",
+              "subfoco": "Estrutura da RENAST e CEREST",
               "sub_subfocos": [
-                "Prazo Obrigatório do Empregador para Emissão da CAT: Até o 1º Dia Útil Seguinte ao da Ocorrência e, em Caso de Morte, de Forma IMEDIATA",
-                "Em Caso de Recusa do Empregador, Podem Emitir a CAT: O Próprio Trabalhador, Seus Dependentes, o Sindicato, o Médico que Atendeu ou Autoridade Pública",
-                "Notificação Compulsória no SINAN para Acidentes Graves e com Material Biológico Independentemente do Vínculo Empregatício (Formal ou Informal)"
+                "Suporte Matricial e Retaguarda Técnica CEREST",
+                "Articulação Territorial e Controle Social CIST"
+              ]
+            },
+            {
+              "subfoco": "Vigilância VISAT e Notificação Laboral",
+              "sub_subfocos": [
+                "Inspeção Sanitária de Ambientes na VISAT",
+                "Notificação SINAN de Agravos Relacionados"
               ]
             }
           ]
         },
         {
-          "foco": "Pneumoconioses (Silicose e Asbestose)",
+          "foco": "Acidentes Laborais e CAT",
           "subfocos": [
             {
-              "subfoco": "Silicose: Fisiopatologia, Exposição Ocupacional e Quadro Clínico",
+              "subfoco": "Conceito Legal Típico e Equiparados",
               "sub_subfocos": [
-                "Exposição a Sílica Livre Cristalina (Mineração, Jateamento de Areia, Cerâmica e Marmorarias)",
-                "Padrão Radiológico (Opacidades Nodulares em Campos Pulmonares Superiores e Calcificação em Casca de Ovo) e Associação com Tuberculose (Silicotuberculose)"
+                "Acidente Típico Lesão e Redução Funcional",
+                "Acidente de Trajeto e Concausas Legais"
               ]
             },
             {
-              "subfoco": "Asbestose / Amianto e Neoplasias Ocupacionais",
+              "subfoco": "Emissão Prazos e Legitimados CAT",
               "sub_subfocos": [
-                "Exposição ao Asbesto/Amianto (Construção Civil, Telhas, Caixas d'Água e Freios Automotivos)",
-                "Espessamento Pleural, Placas Pleurais e Risco Elevado de Mesotelioma Maligno de Pleura e Câncer de Pulmão"
+                "Prazos de Emissão e Dispensa Afastamento",
+                "Emitentes Legitimados e Vínculo Previdenciário RGPS",
+                "Distinção entre CAT Previdenciária e SINAN"
+              ]
+            },
+            {
+              "subfoco": "Efeitos Previdenciários e Acidente Biológico",
+              "sub_subfocos": [
+                "Benefício Acidentário FGTS e Estabilidade Provisória",
+                "Manejo Imediato do Acidente Material Biológico"
               ]
             }
           ]
         },
         {
-          "foco": "Doenças Relacionadas ao Trabalho (LER/DORT e PAIR)",
+          "foco": "Doenças Relacionadas ao Trabalho",
           "subfocos": [
             {
-              "subfoco": "Distúrbios Osteomusculares Relacionados ao Trabalho (LER/DORT)",
+              "subfoco": "Tecnopatias Mesopatias e Excludentes Legais",
               "sub_subfocos": [
-                "Fatores Ergonômicos: Movimentos Repetitivos, Sobrecarga Estática, Força Excessiva e Ausência de Pausas",
-                "Principais Entidades: Tendinite de De Quervain, Epicondilite Lateral, Síndrome do Túnel do Carpo e Bursites"
+                "Tecnopatia Nexo Presumido e Mesopatia Condicional",
+                "Excludentes Legais Degenerativas Etárias e Endêmicas"
               ]
             },
             {
-              "subfoco": "Perda Auditiva Induzida por Ruído (PAIR)",
+              "subfoco": "Classificação de Schilling e LDRT",
               "sub_subfocos": [
-                "Características Semiológicas da PAIR: Neurossensorial, Bilateral, Simétrica, Irreversível e com Gota Audiométrica (3.000 a 6.000 Hz)",
-                "Programa de Conservação Auditiva (PCA), Uso de EPI Auditivo e Notificação com Emissão de CAT"
+                "Grupos Etiológicos da Classificação de Schilling",
+                "Lista Brasileira de Doenças Relacionadas LDRT",
+                "Concausalidade Ocupacional na Classificação Schilling"
+              ]
+            },
+            {
+              "subfoco": "Nexo Técnico Previdenciário e Neoplasias",
+              "sub_subfocos": [
+                "Nexo Técnico Epidemiológico e Inversão Probatória",
+                "Dermatoses Ocupacionais e Câncer Relacionado"
               ]
             }
           ]
         },
         {
-          "foco": "Intoxicações Ocupacionais (Metais Pesados, Benzeno e Agrotóxicos)",
+          "foco": "Pneumoconioses",
           "subfocos": [
             {
-              "subfoco": "Saturnismo (Chumbo) e Mercurialismo (Mercúrio)",
+              "subfoco": "Silicose e Risco de Tuberculose",
               "sub_subfocos": [
-                "Intoxicação Crônica por Chumbo (Linha Gengival de Burton, Cólica Satúrnica, Anemia com Pontilhado Basófilo e Neuropatia Periférica)",
-                "Intoxicação por Mercúrio Metálico e Vapores (Tremor Intencional, Eretismo Mercurial e Gengivite)"
+                "Exposição à Sílica e Padrão Radiológico",
+                "Silicotuberculose e Indicação de Tratamento Latente",
+                "Prevenção Primária Umidificação e Proibição Jateamento"
               ]
             },
             {
-              "subfoco": "Benzenismo e Intoxicação por Agrotóxicos no Meio Rural",
+              "subfoco": "Asbestose Placas Pleurais e Neoplasias",
               "sub_subfocos": [
-                "Exposição ao Benzeno em Frentistas e Siderúrgicas: Mielotoxicidade, Pancitopenia e Risco de Leucemia Mieloide Aguda",
-                "Agrotóxicos Organofosforados e Carbamatos: Síndrome Colinérgica e Dosagem de Colinesterase Plasmática/Eritrocitária"
+                "Amianto Fibrose Basal e Placas Pleurais",
+                "Câncer Pulmonar Sinérgico e Mesotelioma Maligno"
+              ]
+            },
+            {
+              "subfoco": "Outras Pneumopatias Ocupacionais e OIT",
+              "sub_subfocos": [
+                "Carvão Mineral Beriliose Bissinose e Bagaçose",
+                "Asma Ocupacional Espirometria e Padrão OIT"
               ]
             }
           ]
         },
         {
-          "foco": "Saúde Mental do Trabalhador e Síndrome de Burnout",
+          "foco": "Perda Auditiva por Ruído",
           "subfocos": [
             {
-              "subfoco": "Síndrome de Burnout (Esgotamento Profissional)",
+              "subfoco": "Fisiopatologia e Quadro Clínico PAIR",
               "sub_subfocos": [
-                "Tríade Dimensional Canônica: Exaustão Emocional, Despersonalização/Cinismo e Baixa Realização Profissional",
-                "Classificação de Schilling II (Trabalho como Fator Contributivo/Desencadeante) e Manejo Clínico/Organizacional"
+                "Lesão Neurossensorial Coclear Irreversível e Simétrica",
+                "Zumbido Recrutamento e Efeitos Extra-Auditivos"
               ]
             },
             {
-              "subfoco": "Assédio Moral no Trabalho e Transtornos Mentais Comuns",
+              "subfoco": "Padrão Audiométrico e Diagnóstico Diferencial",
               "sub_subfocos": [
-                "Definição Jurídica e Médica de Assédio Moral Organizacional vs Interpessoal e Repercussões Clínicas",
-                "Transtorno de Estresse Pós-Traumático Ocupacional, Depressão e Ansiedade Relacionadas ao Trabalho"
+                "Entalhe Audiométrico em Gota Acústica",
+                "Diferencial com Trauma Acústico e Presbiacusia"
+              ]
+            },
+            {
+              "subfoco": "Conservação Auditiva e Repercussão Legal",
+              "sub_subfocos": [
+                "Programa de Conservação Auditiva e Proteção",
+                "Capacidade Laborativa Notificação e Indenização"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Distúrbios Osteomusculares Ocupacionais",
+          "subfocos": [
+            {
+              "subfoco": "Fatores Biomecânicos e Organizacionais LER",
+              "sub_subfocos": [
+                "Sobrecarga Biomecânica Repetitividade Postura e Vibração",
+                "Organização do Trabalho Ritmo e Metas"
+              ]
+            },
+            {
+              "subfoco": "Síndromes Clínicas de Membros Superiores",
+              "sub_subfocos": [
+                "Túnel do Carpo e Tenossinovite Quervain",
+                "Impacto do Ombro Epicondilites e Dorsolombalgia"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico Clínico e Prevenção Ergonômica",
+              "sub_subfocos": [
+                "Primazia da Clínica e História Ocupacional",
+                "Análise Ergonômica Pausas e Retorno Gradual"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Intoxicações Ocupacionais e Agrotóxicos",
+          "subfocos": [
+            {
+              "subfoco": "Agrotóxicos Anticolinesterásicos e Herbicidas",
+              "sub_subfocos": [
+                "Síndrome Colinérgica por Organofosforados e Carbamatos",
+                "Dosagem de Colinesterase Paraquat e Piretroides",
+                "Descontaminação Cutânea EPI Rural e Notificação"
+              ]
+            },
+            {
+              "subfoco": "Saturnismo Hidrargirismo e Cromo",
+              "sub_subfocos": [
+                "Saturnismo Linha Burton e Neuropatia Radial",
+                "Hidrargirismo por Mercúrio e Lesões Cromo"
+              ]
+            },
+            {
+              "subfoco": "Benzenismo e Solventes Orgânicos",
+              "sub_subfocos": [
+                "Mielotoxicidade pelo Benzeno e Leucemia Aguda",
+                "Solventes Tolueno Xileno e N-Hexano"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Saúde Mental Ocupacional",
+          "subfocos": [
+            {
+              "subfoco": "Síndrome de Burnout Ocupacional",
+              "sub_subfocos": [
+                "Dimensões de Maslach no Esgotamento Laboral",
+                "Classificação CID-11 Equiparação Acidentária e Manejo"
+              ]
+            },
+            {
+              "subfoco": "Estresse Pós-Traumático e Violência Laboral",
+              "sub_subfocos": [
+                "Estresse Pós-Traumático após Eventos Críticos",
+                "Depressão Psicodinâmica de Dejours e Suicídio"
+              ]
+            },
+            {
+              "subfoco": "Fatores Psicossociais e Assédio Organizacional",
+              "sub_subfocos": [
+                "Assédio Moral Interpessoal e Assédio Institucional",
+                "Riscos Psicossociais na NR-1 e CIPA"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Normas Regulamentadoras Trabalhistas",
+          "subfocos": [
+            {
+              "subfoco": "Gerenciamento Riscos SESMT e CIPA",
+              "sub_subfocos": [
+                "Inventário de Riscos SESMT e CIPA",
+                "Hierarquia de Proteção Coletiva e EPI"
+              ]
+            },
+            {
+              "subfoco": "Controle Médico PCMSO e ASO",
+              "sub_subfocos": [
+                "Modalidades Obrigatórias de Exame e ASO",
+                "Guarda Documental Ocupacional e Exames Vedados",
+                "Conduta Médica Ocupacional Diante de Adoecimento"
+              ]
+            },
+            {
+              "subfoco": "Insalubridade Periculosidade e NR-32",
+              "sub_subfocos": [
+                "Insalubridade NR-15 e Periculosidade NR-16",
+                "Segurança em Serviços de Saúde NR-32"
               ]
             }
           ]
@@ -860,99 +2267,217 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "Bioética e Código de Ética Médica",
+      "tema": "Ética Médica e Bioética",
       "focos": [
         {
-          "foco": "Princípios da Bioética (Beneficência, Não-Maleficência, Autonomia e Justiça)",
+          "foco": "Princípios Bioéticos",
           "subfocos": [
             {
-              "subfoco": "Bioética Principialista de Beauchamp e Childress",
+              "subfoco": "Principialismo de Beauchamp e Childress",
               "sub_subfocos": [
-                "Autonomia: Respeito à Capacidade de Decisão Informada e Livre do Paciente sobre seu Próprio Corpo",
-                "Não-Maleficência (Primum Non Nocere: Obrigação de Não Causar Dano Intencional) e Beneficência (Agir pelo Bem do Paciente)"
+                "Beneficência Positiva e Não Maleficência",
+                "Respeito à Autonomia e Princípio Justiça",
+                "Conflito entre Beneficência Médica e Autonomia"
               ]
             },
             {
-              "subfoco": "Princípio da Justiça e Alocação de Recursos Escassos",
+              "subfoco": "Correntes Bioéticas e Deliberação Moral",
               "sub_subfocos": [
-                "Justiça Distributiva: Equidade no Acesso e Distribuição Justa de Riscos, Benefícios e Recursos em Saúde",
-                "Critérios Éticos de Triagem em Situações de Calamidade e Pandemias (Sobrevida e Benefício Terapêutico)"
+                "Bioética de Proteção e de Intervenção",
+                "Deliberação Moral de Diego Gracia"
+              ]
+            },
+            {
+              "subfoco": "Justiça Alocativa e Recursos Escassos",
+              "sub_subfocos": [
+                "Critérios Éticos na Priorização de Leitos",
+                "Assistência Proporcional Diante de Escassez"
               ]
             }
           ]
         },
         {
-          "foco": "Sigilo Profissional e Quebra Justificada",
+          "foco": "Autonomia e Consentimento Livre",
           "subfocos": [
             {
-              "subfoco": "Regra Deontológica Geral do Sigilo Médico (Código de Ética Médica)",
+              "subfoco": "Processo de Consentimento Esclarecido",
               "sub_subfocos": [
-                "Dever Absoluto de Manutenção de Segredo sobre Fatos Conhecidos no Exercício da Profissão, Inclusive após a Morte do Paciente",
-                "Proibição de Revelação em Depoimentos Judiciais como Testemunha sem Autorização Expressa do Paciente"
+                "Informação Compreensível Voluntariedade e Capacidade",
+                "Comunicação Diagnóstica e Direito Não Saber"
               ]
             },
             {
-              "subfoco": "Exceções Canônicas de Quebra Justificada do Sigilo",
+              "subfoco": "Recusa Terapêutica e Convicções Religiosas",
               "sub_subfocos": [
-                "Justa Causa: Proteção à Vida de Terceiros e Ameaça Grave e Iminente Não Evitável",
-                "Dever Legal: Doenças de Notificação Compulsória e Notificação de Violência contra Vulneráveis (Crianças, Idosos)"
+                "Recusa Eletiva Capaz e Risco Iminente",
+                "Recusa de Hemotransfusão e Jurisprudência Atual",
+                "Hemotransfusão Pediátrica Diante de Recusa Parental"
+              ]
+            },
+            {
+              "subfoco": "Objeção de Consciência Médica",
+              "sub_subfocos": [
+                "Exercício Ético da Objeção de Consciência",
+                "Situações de Vedação da Objeção Médica"
               ]
             }
           ]
         },
         {
-          "foco": "Consentimento Livre e Esclarecido e Recusa Terapêutica",
+          "foco": "Sigilo Profissional Médico",
           "subfocos": [
             {
-              "subfoco": "Termo de Consentimento Livre e Esclarecido (TCLE)",
+              "subfoco": "Regra Geral e Exceções Éticas",
               "sub_subfocos": [
-                "Elementos Essenciais: Capacidade Cognitiva, Informação Adequada e Clara, Voluntariedade e Ausência de Coação",
-                "Dever de Informar Riscos Previsíveis, Benefícios e Alternativas Terapêuticas antes de Procedimentos Médicos"
+                "Permanência Pós-Morte Fato Público e Juízo",
+                "Motivo Justo Dever Legal e Consentimento",
+                "Comunicação de Risco Infectocontagioso ao Parceiro"
               ]
             },
             {
-              "subfoco": "Direito de Recusa Terapêutica e Testemunhas de Jeová",
+              "subfoco": "Sigilo no Atendimento de Adolescentes",
               "sub_subfocos": [
-                "Paciente Adulto Lúcido e Capaz: Validade da Recusa de Tratamentos, Inclusive Hemotransfusão, se Não Houver Risco Iminente de Morte",
-                "Situação de Urgência com Risco Iminente de Morte: Dever Médico de Preservar a Vida Sobrepondo-se à Recusa Religiosa"
+                "Confidencialidade ao Adolescente Capaz de Discernimento",
+                "Quebra Ética por Risco ou Violência"
+              ]
+            },
+            {
+              "subfoco": "Sigilo Judicial Trabalhista e Securitário",
+              "sub_subfocos": [
+                "Requisição Policial ou Judicial de Prontuário",
+                "Vedações perante Empregadores Seguradoras e Cobranças"
               ]
             }
           ]
         },
         {
-          "foco": "Terminalidade da Vida, Diretivas Antecipadas e Ortotanásia",
+          "foco": "Código de Ética Médica",
           "subfocos": [
             {
-              "subfoco": "Conceitos Deontológicos: Ortotanásia vs Distanásia vs Eutanásia",
+              "subfoco": "Estrutura Direitos e Renúncia Atendimento",
               "sub_subfocos": [
-                "Ortotanásia: Não Prolongamento Artificial da Vida em Doença Terminal Incurável (Permitida e Recomendada pelo CFM)",
-                "Distanásia (Obstinação Terapêutica Fútil que Prolonga o Sofrimento) vs Eutanásia (Ilegal no Brasil: Homicídio Privilegiado)"
+                "Princípios Fundamentais e Direitos Profissionais",
+                "Renúncia Justificada e Vedação de Abandono",
+                "Greve Médica e Garantia de Urgências"
               ]
             },
             {
-              "subfoco": "Diretivas Antecipadas de Vontade e Testamento Vital (Resolução CFM 1.995/2012)",
+              "subfoco": "Plantão Médico e Relação Interpares",
               "sub_subfocos": [
-                "Documento Válido Formal ou Oral com Desejos Prévios do Paciente para Situações em que Não Possa se Manifestar",
-                "Prevalência da Vontade do Paciente sobre a Decisão dos Familiares e Designação de Procurador de Saúde"
+                "Obrigações Éticas no Plantão e Passagem",
+                "Relação entre Colegas e Vedação Acobertamento"
+              ]
+            },
+            {
+              "subfoco": "Processo Ético-Profissional e Sanções Legais",
+              "sub_subfocos": [
+                "Sindicância Processo Ético e Interdição Cautelar",
+                "Gradação das Penas Disciplinares e Cassação"
               ]
             }
           ]
         },
         {
-          "foco": "Relação Médico-Paciente e Responsabilidade Profissional",
+          "foco": "Publicidade e Remuneração Médica",
           "subfocos": [
             {
-              "subfoco": "Responsabilidade Civil e Penal do Médico (Culpa Médica)",
+              "subfoco": "Normas Vigentes de Publicidade Médica",
               "sub_subfocos": [
-                "Tríade da Culpa: Imprudência (Ação Apressada/Sem Cautela), Negligência (Omissão/Descuido) e Imperícia (Falta de Conhecimento Técnico)",
-                "Obrigação de Meio (Dever de Empregar a Melhor Técnica Disponível) vs Obrigação de Resultado (Cirurgia Estética e Laudos)"
+                "Identificação Obrigatória RQE e Permissões Atuais",
+                "Critérios para Imagens e Vedações Sensacionalistas"
               ]
             },
             {
-              "subfoco": "Publicidade Médica e Relações Interprofissionais (Resolução CFM 2.336/2023)",
+              "subfoco": "Remuneração Honorários e Conflito Interesses",
               "sub_subfocos": [
-                "Regras de Divulgação em Mídias Sociais, Proibição de Garantia de Resultados e Uso de Imagens de Pacientes (Antes e Depois)",
-                "Direito de Recusa do Médico a Atender Paciente (Salvo Urgência/Emergência ou Ausência de Outro Médico)"
+                "Vedação de Vantagem Comercial e Farmácias",
+                "Dicotomia Honorária e Vedação Cobrança SUS"
+              ]
+            },
+            {
+              "subfoco": "Ética na Auditoria e Direção",
+              "sub_subfocos": [
+                "Atribuições e Vedações do Médico Auditor",
+                "Responsabilidades de Diretor Técnico e Clínico"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Ética em Pesquisa Humana",
+          "subfocos": [
+            {
+              "subfoco": "Marcos Históricos Nuremberg a Belmont",
+              "sub_subfocos": [
+                "Código de Nuremberg e Declaração Helsinque",
+                "Caso Tuskegee e Relatório Belmont"
+              ]
+            },
+            {
+              "subfoco": "Governança Ética e Lei Brasileira",
+              "sub_subfocos": [
+                "Comitês de Ética e Marco Legal",
+                "Termo de Consentimento e Termo Assentimento"
+              ]
+            },
+            {
+              "subfoco": "Placebo Acesso Pós-Estudo e Ensino",
+              "sub_subfocos": [
+                "Limites ao Placebo e Fornecimento Pós-Estudo",
+                "Ética no Ensino Médico e Publicação"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Terminalidade e Diretivas Antecipadas",
+          "subfocos": [
+            {
+              "subfoco": "Ortotanásia Distanásia Eutanásia e Mistanásia",
+              "sub_subfocos": [
+                "Ortotanásia Ética Distanásia e Eutanásia Ilícita",
+                "Cuidados Paliativos e Sedação Paliativa",
+                "Limitação de Suporte Invasivo e Registro"
+              ]
+            },
+            {
+              "subfoco": "Testamento Vital e Mandato Duradouro",
+              "sub_subfocos": [
+                "Registro em Prontuário e Procurador Saúde",
+                "Prevalência das Diretivas sobre Desejo Familiar"
+              ]
+            },
+            {
+              "subfoco": "Ética em Doação e Transplante",
+              "sub_subfocos": [
+                "Autorização Familiar Pós-Morte no Brasil",
+                "Independência das Equipes e Doador Vivo"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Telessaúde e Ética Digital",
+          "subfocos": [
+            {
+              "subfoco": "Modalidades da Telemedicina e Telessaúde",
+              "sub_subfocos": [
+                "Teleconsulta Teleinterconsulta e Telediagnóstico",
+                "Autonomia Médica Consentimento e Registro CRM"
+              ]
+            },
+            {
+              "subfoco": "Documentos Digitais e Assinatura Qualificada",
+              "sub_subfocos": [
+                "Assinatura ICP-Brasil em Receitas e Atestados",
+                "Segurança e Guarda do Prontuário Eletrônico"
+              ]
+            },
+            {
+              "subfoco": "Proteção de Dados e Aplicativos",
+              "sub_subfocos": [
+                "Dados Sensíveis de Saúde na LGPD",
+                "Discussão em Aplicativos e Inteligência Artificial"
               ]
             }
           ]
@@ -960,149 +2485,165 @@ export const preventivaHierarchy: SpecialtyHierarchy = {
       ]
     },
     {
-      "tema": "Declaração de Óbito e Atestados Médicos",
+      "tema": "Medicina Legal e Documentação",
       "focos": [
         {
-          "foco": "Preenchimento da Declaração de Óbito (Causa Básica, Imediata e Intermediária)",
+          "foco": "Declaração de Óbito",
           "subfocos": [
             {
-              "subfoco": "Estrutura da Declaração de Óbito (Causa Básica vs Imediata)",
+              "subfoco": "Competência Legal Assistente SVO IML",
               "sub_subfocos": [
-                "Parte I da DO (Cadeia Causal Direta): Linha A (Causa Terminal / Imediata), Linhas B e C (Causas Intermediárias), Linha D / Última Linha Preenchida (CAUSA BÁSICA da Morte que Desencadeou Toda a Sucessão Mórbida)",
-                "A Causa Básica é a Informação Mais Relevante para as Estatísticas Oficiais de Mortalidade",
-                "Parte II da DO: Causas Contribuintes (Estados Mórbidos Significativos que Favoreceram a Morte mas Não Entram na Cadeia Causal Direta)",
-                "Termos Proibidos como Causa Básica: Parada Cardiorrespiratória (PCR), Falência de Múltiplos Órgãos, Morte Encefálica"
+                "Morte Natural com e sem Assistência",
+                "Encaminhamento Obrigatório ao IML nas Violentas",
+                "Morte Hospitalar Precocíssima ou em Pronto-Socorro"
               ]
             },
             {
-              "subfoco": "Competência Legal para Emissão da DO (SVO vs IML vs Assistente)",
+              "subfoco": "Cadeia Causal Parte I II",
               "sub_subfocos": [
-                "Morte Natural COM Assistência Médica: Dever do Médico Assistente (ou Médico Plantonista / Substituto na Sua Ausência se Morte no Hospital)",
-                "Morte Natural SEM Assistência Médica: Dever do Serviço de Verificação de Óbito (SVO); na Ausência de SVO, Médico da Rede Pública de Saúde",
-                "Morte Não Natural, Violenta ou Suspeita (Homicídio, Suicídio, Acidente de Trânsito, Queda da Própria Altura em Idoso): DEVER EXCLUSIVO DO INSTITUTO MÉDICO LEGAL (IML) em Qualquer Circunstância, Jamais pelo Médico Assistente ou SVO",
-                "Óbito Fetal: Emissão Obrigatória se Gestação >= 20 Semanas, Peso >= 500 g ou Estatura >= 25 cm"
+                "Sequência da Causa Terminal à Básica",
+                "Condições Contribuintes e Termos Vagos Vedados",
+                "Exemplos Clássicos de Sequência Fisiopatológica Correta"
+              ]
+            },
+            {
+              "subfoco": "Óbito Fetal Neonatal e Vedações",
+              "sub_subfocos": [
+                "Parâmetros Legais para Óbito Fetal",
+                "Óbito Neonatal Imediato e Vedações Éticas"
               ]
             }
           ]
         },
         {
-          "foco": "Competência para Emissão de DO (SVO vs. IML vs. Médico Assistente)",
+          "foco": "Prontuário e Atestados Médicos",
           "subfocos": [
             {
-              "subfoco": "Morte por Causa Natural em Município com e sem SVO",
+              "subfoco": "Prontuário Médico Guarda e Acesso",
               "sub_subfocos": [
-                "Com Assistência Médica: Obrigação do Médico Assistente ou Substituto do Serviço de Saúde que Acompanhava o Paciente",
-                "Sem Assistência Médica: Serviço de Verificação de Óbito (SVO); Na Ausência de SVO, Médico do SUS / PSF ou Qualquer Médico da Localidade"
+                "Titularidade do Paciente e Dever Guarda",
+                "Acesso Pós-Óbito por Cônjuge e Sucessores"
               ]
             },
             {
-              "subfoco": "Morte por Causa Não-Natural (Violenta ou Suspeita)",
+              "subfoco": "Atestado Médico Finalidades e Ética",
               "sub_subfocos": [
-                "Competência Exclusiva e Obrigatória dos Médicos Legistas do Instituto Médico Legal (IML), Independentemente do Tempo de Sobrevida Hospitalar",
-                "Proibição Formal do Médico Assistente Emitir DO em Óbito por Trauma, Homicídio, Suicídio ou Queda da Própria Altura"
+                "Gratuidade Veracidade e Autorização para CID",
+                "Atestado Complacente ou Falso e Crime",
+                "Exigência de Exame Prévio para Atestar"
+              ]
+            },
+            {
+              "subfoco": "Prescrição Médica e Portaria 344",
+              "sub_subfocos": [
+                "Notificação Amarela Entorpecentes e Azul Psicotrópicos",
+                "Controle Especial Retinoides e Antimicrobianos"
               ]
             }
           ]
         },
         {
-          "foco": "Atestados Médicos, Prontuário e Guarda de Documentos",
+          "foco": "Responsabilidade Profissional Médica",
           "subfocos": [
             {
-              "subfoco": "Regras Deontológicas para Emissão de Atestados Médicos",
+              "subfoco": "Modalidades da Culpa Médica",
               "sub_subfocos": [
-                "Direito Inalienável do Paciente e Ato Médico Privativo Decorrente de Exame Clínico Realizado Pessoalmente",
-                "Inclusão do CID no Atestado: Exigência Mandatória de Autorização Expressa do Paciente (Preservação de Sigilo)"
+                "Imprudência Afoita Negligência Omissiva e Imperícia",
+                "Erro Médico Culposo e Acidente Imprevisível",
+                "Dever Informacional e Valor Probatório Prontuário"
               ]
             },
             {
-              "subfoco": "Prontuário Médico e Guarda de Documentos (Resolução CFM 1.821/2007)",
+              "subfoco": "Responsabilidade Civil Meio e Resultado",
               "sub_subfocos": [
-                "Prontuário como Documento Legal Pertencente ao Paciente e Sob Guarda e Sigilo da Instituição de Saúde",
-                "Prazo Mínimo de Guarda de Prontuários em Papel: 20 Anos a Contar do Último Registro (Guarda Indefinida se Prontuário Eletrônico Certificado)"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Demografia Médica e Indicadores de Saúde",
-      "focos": [
-        {
-          "foco": "Coeficientes de Mortalidade (Infantil, Materna e Geral)",
-          "subfocos": [
-            {
-              "subfoco": "Coeficiente de Mortalidade Infantil (CMI) e Seus Componentes",
-              "sub_subfocos": [
-                "Fórmula: (Óbitos em Menores de 1 Ano / Nascidos Vivos no Mesmo Período) x 1.000 (Sensível Indicador de Desenvolvimento Socioeconômico)",
-                "Componente Neonatal Precoce (< 7 Dias de Vida): Maior Fração no Brasil Atual, Relacionado à Qualidade do Pré-Natal e Assistência ao Parto",
-                "Componente Neonatal Tardio (7 a 27 Dias de Vida)",
-                "Componente Pós-Neonatal (28 a 364 Dias de Vida): Mais Sensível às Condições de Saneamento Básico, Nutrição e Acesso à Atenção Primária"
+                "Obrigação de Meio e Cirurgia Estética",
+                "Responsabilidade Subjetiva Médica e Objetiva Hospitalar"
               ]
             },
             {
-              "subfoco": "Razão de Mortalidade Materna e Curvas de Nelson de Moraes",
+              "subfoco": "Esferas Jurídicas e Crimes Próprios",
               "sub_subfocos": [
-                "Razão de Mortalidade Materna: (Óbitos por Causas Maternas / Nascidos Vivos) x 100.000 (Principais Causas no Brasil: Síndromes Hipertensivas e Hemorragia Pós-Parto)",
-                "Curvas de Nelson de Moraes (Mortalidade Proporcional por Idade): Tipo I (Muito Baixo Nível / Formato em N); Tipo II (Baixo Nível / Formato em L); Tipo III (Regular Nível / Formato em V); Tipo IV (Elevado Nível / Formato em J Invertido - Predomínio de Óbitos >= 50 Anos)",
-                "Índice de Swaroop-Uemura (Razão de Mortalidade Proporcional de Indivíduos >= 50 Anos: > 75% em Países de Primeiro Nível)"
+                "Independência das Esferas Civil Penal Ética",
+                "Omissão de Socorro Caução e Charlatanismo"
               ]
             }
           ]
         },
         {
-          "foco": "Transição Demográfica e Transição Epidemiológica no Brasil",
+          "foco": "Tanatologia e Morte Encefálica",
           "subfocos": [
             {
-              "subfoco": "Fases da Transição Demográfica Brasileira",
+              "subfoco": "Pré-Requisitos do Protocolo Morte Encefálica",
               "sub_subfocos": [
-                "Queda Histórica Precoce da Mortalidade Geral seguida por Queda Acentuada da Taxa de Fecundidade e Natalidade",
-                "Envelhecimento Populacional Acelerado, Estreitamento da Base da Pirâmide Etária e Aumento da Razão de Dependência dos Idosos"
+                "Lesão Conhecida Observação Hospitalar e Estabilidade",
+                "Exclusão de Sedativos e Notificação Compulsória"
               ]
             },
             {
-              "subfoco": "Padrão da Transição Epidemiológica Brasileira (Tripla Carga de Doenças)",
+              "subfoco": "Exames Clínicos Apneia e Complementar",
               "sub_subfocos": [
-                "Substituição de Doenças Infecciosas por Doenças Crônicas Não Transmissíveis (Cardiovasculares, Cânceres) e Causas Externas",
-                "Superposição Epidemiológica Incompleta: Coexistência de DCNT, Violência/Trauma e Persistência de Doenças Infecciosas Endêmicas"
+                "Exame Neurológico de Tronco e Apneia",
+                "Exame Complementar Obrigatório e Hora Legal",
+                "Desligamento de Suporte em Não Doador"
+              ]
+            },
+            {
+              "subfoco": "Fenômenos Cadavéricos e Cronotanatognose",
+              "sub_subfocos": [
+                "Fenômenos Abióticos Consecutivos Algor Livor Rigor",
+                "Fenômenos Transformativos Destrutivos e Conservadores"
               ]
             }
           ]
         },
         {
-          "foco": "Indicadores de Morbidade, Letalidade e Anos de Vida Perdidos (DALY)",
+          "foco": "Traumatologia e Sexologia Forense",
           "subfocos": [
             {
-              "subfoco": "Taxas de Mortalidade e Letalidade",
+              "subfoco": "Energias Mecânicas e Feridas Balísticas",
               "sub_subfocos": [
-                "Taxa de Mortalidade Geral e Específica por Causa/Faixa Etária (Denominador: População Geral Total em Risco)",
-                "Taxa de Letalidade: Gravidade da Doença (Denominador: Número Total de Casos Diagnosticados da Doença)"
+                "Lesões Punctórias Incisas Contusas e Perfurocortantes",
+                "Orifícios Balísticos de Entrada e Saída"
               ]
             },
             {
-              "subfoco": "Anos de Vida Ajustados por Incapacidade (DALY / APVP)",
+              "subfoco": "Asfixias Mecânicas e Agentes Físicos",
               "sub_subfocos": [
-                "Anos Potenciais de Vida Perdidos (APVP): Impacto de Mortes Prematuras abaixo da Expectativa de Vida Teórica (70-75 anos)",
-                "DALY (Disability-Adjusted Life Years): Soma dos Anos de Vida Perdidos por Morte Prematura (YLL) com Anos Vividos com Incapacidade (YLD)"
+                "Enforcamento Sulco Oblíquo Estrangulamento e Esganadura",
+                "Afogamento Termonoses Fulguração e Eletroplessão"
+              ]
+            },
+            {
+              "subfoco": "Lesões Corporais e Violência Sexual",
+              "sub_subfocos": [
+                "Classificação Penal Leve Grave e Gravíssima",
+                "Atendimento e Perícia na Violência Sexual"
               ]
             }
           ]
         },
         {
-          "foco": "Sistemas de Informação em Saúde (SIM, SINASC, SINAN, SIH, SIA)",
+          "foco": "Perícias Médicas e Previdenciárias",
           "subfocos": [
             {
-              "subfoco": "Sistemas Censitários Vitais: SIM e SINASC",
+              "subfoco": "Ética Pericial e Documentos Médico-Legais",
               "sub_subfocos": [
-                "Sistema de Informações sobre Mortalidade (SIM): Documento-Padrão Único é a Declaração de Óbito (DO)",
-                "Sistema de Informações sobre Nascidos Vivos (SINASC): Documento-Padrão é a Declaração de Nascido Vivo (DNV)"
+                "Impedimento Pericial em Próprio Paciente",
+                "Estrutura de Auto Laudo e Parecer"
               ]
             },
             {
-              "subfoco": "Sistemas Epidemiológicos e Assistenciais: SINAN, SIH e SIA",
+              "subfoco": "Benefícios por Incapacidade no RGPS",
               "sub_subfocos": [
-                "Sistema de Informação de Agravos de Notificação (SINAN): Alimentado pela Ficha de Notificação Compulsória",
-                "SIH (Autorização de Internação Hospitalar - AIH) e SIA (Boletim de Produção Ambulatorial - BPA)"
+                "Incapacidade Temporária Permanente e Regras Carência",
+                "Auxílio-Acidente Indenizatório e Benefício BPC-LOAS"
+              ]
+            },
+            {
+              "subfoco": "Avaliação Funcional e Reabilitação INSS",
+              "sub_subfocos": [
+                "Avaliação Biopsicossocial da Deficiência e CIF",
+                "Reabilitação Profissional e Cotas de Inclusão"
               ]
             }
           ]

@@ -4,9 +4,10 @@ export interface TaxonomyItem {
   tema?: string;
   foco?: string;
   subfoco?: string;
+  sub_subfoco?: string;
   label: string;
   breadcrumb: string;
-  level: 'especialidade' | 'tema' | 'foco' | 'subfoco';
+  level: 'especialidade' | 'tema' | 'foco' | 'subfoco' | 'sub_subfoco';
 }
 
 let cachedIndex: TaxonomyItem[] | null = null;
@@ -71,18 +72,37 @@ export async function getTaxonomyIndex(): Promise<TaxonomyItem[]> {
             level: 'foco'
           });
 
-          for (const sf of f.subfocos || []) {
-            if (sf !== focoNome) {
+          for (const sfItem of f.subfocos || []) {
+            const sfNome = typeof sfItem === 'string' ? sfItem : sfItem.subfoco;
+            const subSubList = typeof sfItem === 'string' ? [] : sfItem.sub_subfocos || [];
+
+            if (sfNome !== focoNome) {
               items.push({
-                id: `subfoco_${espNome}_${temaNome}_${focoNome}_${sf}`,
+                id: `subfoco_${espNome}_${temaNome}_${focoNome}_${sfNome}`,
                 especialidade: espNome,
                 tema: temaNome,
                 foco: focoNome,
-                subfoco: sf,
-                label: sf,
-                breadcrumb: `${espNome} › ${temaNome} › ${focoNome} › ${sf}`,
+                subfoco: sfNome,
+                label: sfNome,
+                breadcrumb: `${espNome} › ${temaNome} › ${focoNome} › ${sfNome}`,
                 level: 'subfoco'
               });
+            }
+
+            for (const ssNome of subSubList) {
+              if (ssNome && ssNome !== sfNome) {
+                items.push({
+                  id: `sub_subfoco_${espNome}_${temaNome}_${focoNome}_${sfNome}_${ssNome}`,
+                  especialidade: espNome,
+                  tema: temaNome,
+                  foco: focoNome,
+                  subfoco: sfNome,
+                  sub_subfoco: ssNome,
+                  label: ssNome,
+                  breadcrumb: `${espNome} › ${temaNome} › ${focoNome} › ${sfNome} › ${ssNome}`,
+                  level: 'sub_subfoco'
+                });
+              }
             }
           }
         }

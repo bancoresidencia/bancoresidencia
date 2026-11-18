@@ -247,6 +247,7 @@ def main():
     # Index canonical tree structures
     focos_list = []  # list of dicts with index, esp, tema, foco, subfocos_objs, keywords_tokens
     foco_by_esp_name = {}  # (esp, foco) -> foco_idx
+    foco_by_global_name = {}  # foco -> foco_idx
     subfoco_lookup = {}  # (esp, foco, subfoco) -> sf_obj
 
     for esp_obj in tax_v3["hierarquia"]:
@@ -295,6 +296,7 @@ def main():
                     "subfocos": sf_entries,
                 })
                 foco_by_esp_name[(esp, foco)] = f_idx
+                foco_by_global_name[foco] = f_idx
 
     print(f"Indexed {len(focos_list)} canonical focos across 6 specialties in {time.time()-t0:.1f}s.")
 
@@ -480,10 +482,10 @@ def main():
                 else:
                     t_esp = rule["target_especialidade"]
                     cand_focos = rule["candidate_focos"]
-                    best_f_idx = foco_by_esp_name[(t_esp, cand_focos[0])]
+                    best_f_idx = foco_by_esp_name.get((t_esp, cand_focos[0]), foco_by_global_name[cand_focos[0]])
                     best_f_sc = -1.0
                     for cf in cand_focos:
-                        fi = foco_by_esp_name[(t_esp, cf)]
+                        fi = foco_by_esp_name.get((t_esp, cf), foco_by_global_name[cf])
                         fe = focos_list[fi]
                         sc = sum(w * min(fe["tokens"][tok], 4) for tok, w in q_toks.items() if tok in fe["tokens"])
                         for ph in fe["phrases"]:

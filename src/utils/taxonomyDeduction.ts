@@ -6,10 +6,12 @@ interface HierarchyNodePath {
   tema: string;
   foco: string;
   subfoco?: string;
+  sub_subfoco?: string;
 }
 
 // Caches em memória indexados para consultas O(1) de alta performance
 let isIndexBuilt = false;
+const subSubfocoMap = new Map<string, HierarchyNodePath[]>();
 const subfocoMap = new Map<string, HierarchyNodePath[]>();
 const focoMap = new Map<string, HierarchyNodePath[]>();
 const temaMap = new Map<string, HierarchyNodePath[]>();
@@ -56,16 +58,29 @@ function buildHierarchyIndex() {
         existingTema.push(nodePath);
         temaMap.set(temaKey, existingTema);
 
-        // Indexa subfocos
-        for (const sf of f.subfocos || []) {
-          const sfKey = normalizeTaxonomyTerm(sf);
+        // Indexa subfocos e sub_subfocos
+        for (const sfItem of f.subfocos || []) {
+          const sfName = typeof sfItem === 'string' ? sfItem : sfItem.subfoco;
+          const subSubList = typeof sfItem === 'string' ? [] : sfItem.sub_subfocos || [];
+          const sfKey = normalizeTaxonomyTerm(sfName);
           const sfPath: HierarchyNodePath = {
             ...nodePath,
-            subfoco: sf
+            subfoco: sfName
           };
           const existingSf = subfocoMap.get(sfKey) || [];
           existingSf.push(sfPath);
           subfocoMap.set(sfKey, existingSf);
+
+          for (const ssName of subSubList) {
+            const ssKey = normalizeTaxonomyTerm(ssName);
+            const ssPath: HierarchyNodePath = {
+              ...sfPath,
+              sub_subfoco: ssName
+            };
+            const existingSs = subSubfocoMap.get(ssKey) || [];
+            existingSs.push(ssPath);
+            subSubfocoMap.set(ssKey, existingSs);
+          }
         }
       }
     }
@@ -79,6 +94,7 @@ export interface FilterTaxonomyInputs {
   temas?: string[];
   focos?: string[];
   subfocos?: string[];
+  subSubfocos?: string[];
 }
 
 /**
@@ -93,6 +109,7 @@ export interface FilterTaxonomyInputs {
 export function deduceStudyTaxonomy(filters: FilterTaxonomyInputs): SelectedTaxonomy {
   buildHierarchyIndex();
 
+  const activeSubSubfocos = filters.subSubfocos || [];
   const activeSubfocos = filters.subfocos || [];
   const activeFocos = filters.focos || [];
   const activeTemas = filters.temas || [];
@@ -106,6 +123,15 @@ export function deduceStudyTaxonomy(filters: FilterTaxonomyInputs): SelectedTaxo
   }
 
   const matchedPaths: HierarchyNodePath[] = [];
+
+  // 0. Mapeia sub_subfocos selecionados
+  for (const ss of activeSubSubfocos) {
+    const key = normalizeTaxonomyTerm(ss);
+    const paths = subSubfocoMap.get(key);
+    if (paths && paths.length > 0) {
+      matchedPaths.push(...paths);
+    }
+  }
 
   // 1. Mapeia subfocos selecionados
   for (const sf of activeSubfocos) {

@@ -616,52 +616,79 @@ export async function POST(req: NextRequest) {
             temas: Record<string, number>;
             focos?: Record<string, number>;
             subfocos?: Record<string, number>;
+            subSubfocos?: Record<string, number>;
           };
 
-          // Normalizações canônicas de especialidades
-          const especialidades = { ...typedResult.especialidades };
-          if (especialidades['Cirurgia Geral'] && !especialidades['Cirurgia']) {
-            especialidades['Cirurgia'] = especialidades['Cirurgia Geral'];
-          }
-          if (especialidades['Ginecologia'] || especialidades['Obstetrícia']) {
-            especialidades['Ginecologia e Obstetrícia'] =
-              (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
+          const hasV3MaterializedSubSubfocos = Boolean(
+            typedResult.subSubfocos && Object.keys(typedResult.subSubfocos).length > 0
+          );
+
+          if (hasV3MaterializedSubSubfocos) {
+            const especialidades = { ...typedResult.especialidades };
+            if (especialidades['Cirurgia Geral'] && !especialidades['Cirurgia']) {
+              especialidades['Cirurgia'] = especialidades['Cirurgia Geral'];
+            }
+            if (especialidades['Ginecologia'] || especialidades['Obstetrícia']) {
+              especialidades['Ginecologia e Obstetrícia'] =
+                (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
+            }
+
+            const resultPayload = {
+              facets: {
+                totalRightCardCount: typedResult.totalRightCardCount,
+                especialidades,
+                temas: typedResult.temas || {},
+                focos: typedResult.focos || {},
+                subfocos: typedResult.subfocos || {},
+                subSubfocos: typedResult.subSubfocos || {}
+              }
+            };
+
+            facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
+            return NextResponse.json(resultPayload);
           }
 
-          let focos: Record<string, number> = {};
-          let subfocos: Record<string, number> = {};
-
-          // Se a RPC da Materialized View retornar contagens reais de focos e subfocos, usa diretamente
-          if (typedResult.focos && Object.keys(typedResult.focos).length > 0) {
-            focos = typedResult.focos;
-            subfocos = typedResult.subfocos || {};
-          } else {
-            // Fallback proporcional se a versão anterior da RPC estiver ativa
+          if (typedResult.totalRightCardCount > 4000) {
             const baseline = getHomologatedBaseline(filters.modalidades);
             const globalTotal = baseline.total;
             const overallRatio = globalTotal > 0 ? typedResult.totalRightCardCount / globalTotal : 1;
-            if (typedResult.totalRightCardCount > 0) {
-              for (const [f, count] of Object.entries((baseline.focos as Record<string, number>) || hierarchyQuestionCounts.focos || {})) {
-                focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
-              }
-              for (const [s, count] of Object.entries((baseline.subfocos as Record<string, number>) || hierarchyQuestionCounts.subfocos || {})) {
-                subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
-              }
+
+            const especialidades: Record<string, number> = {};
+            const temas: Record<string, number> = {};
+            const focos: Record<string, number> = {};
+            const subfocos: Record<string, number> = {};
+            const subSubfocos: Record<string, number> = {};
+
+            for (const [e, count] of Object.entries(baseline.especialidades || {})) {
+              especialidades[e] = Math.max(0, Math.round(count * overallRatio));
             }
+            for (const [t, count] of Object.entries(baseline.temas || {})) {
+              temas[t] = Math.max(0, Math.round(count * overallRatio));
+            }
+            for (const [f, count] of Object.entries(baseline.focos || hierarchyQuestionCounts.focos || {})) {
+              focos[f] = Math.max(0, Math.round(count * overallRatio));
+            }
+            for (const [s, count] of Object.entries(baseline.subfocos || hierarchyQuestionCounts.subfocos || {})) {
+              subfocos[s] = Math.max(0, Math.round(count * overallRatio));
+            }
+            for (const [ss, count] of Object.entries(baseline.subSubfocos || hierarchyQuestionCounts.subSubfocos || {})) {
+              subSubfocos[ss] = Math.max(0, Math.round(count * overallRatio));
+            }
+
+            const resultPayload = {
+              facets: {
+                totalRightCardCount: typedResult.totalRightCardCount,
+                especialidades,
+                temas,
+                focos,
+                subfocos,
+                subSubfocos
+              }
+            };
+
+            facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
+            return NextResponse.json(resultPayload);
           }
-
-          const resultPayload = {
-            facets: {
-              totalRightCardCount: typedResult.totalRightCardCount,
-              especialidades,
-              temas: typedResult.temas || {},
-              focos,
-              subfocos
-            }
-          };
-
-          facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
-          return NextResponse.json(resultPayload);
         }
       } catch (errRpc) {
         console.warn('[/api/questions] RPC get_faceted_question_counts indisponível, usando fallback seguro:', errRpc);
@@ -674,7 +701,7 @@ export async function POST(req: NextRequest) {
       const { data: facetRows, count: exactFacetCount, error: facetErr } = await executeResilientQuery(async (tbl) => {
         let facetQuery = publicFacetClient
           .from(tbl)
-          .select('especialidade, tema, foco, subfoco', { count: 'exact' });
+          .select('especialidade, tema, foco, subfoco, sub_subfoco', { count: 'exact' });
         facetQuery = applyQuestionFilters(facetQuery, filtersWithoutClinical, undefined, false);
         return await facetQuery.limit(4000);
       }, targetTable, filters.modalidades);
@@ -682,11 +709,18 @@ export async function POST(req: NextRequest) {
         console.warn('[/api/questions] Aviso ao buscar facetas atômicas:', facetErr.message || facetErr);
       }
 
-      const rows = (facetRows || []) as Array<{ especialidade?: string; tema?: string; foco?: string; subfoco?: string }>;
+      const rows = (facetRows || []) as Array<{
+        especialidade?: string;
+        tema?: string;
+        foco?: string;
+        subfoco?: string;
+        sub_subfoco?: string;
+      }>;
       const especialidades: Record<string, number> = {};
       const temas: Record<string, number> = {};
       const focos: Record<string, number> = {};
       const subfocos: Record<string, number> = {};
+      const subSubfocos: Record<string, number> = {};
       const totalRightCardCount = typeof exactFacetCount === 'number' ? exactFacetCount : rows.length;
 
       for (const row of rows) {
@@ -694,6 +728,7 @@ export async function POST(req: NextRequest) {
         const tem = row.tema;
         const foc = row.foco;
         const sub = row.subfoco;
+        const subSub = row.sub_subfoco;
 
         if (esp) {
           const normalizedEsp = (esp === 'Cirurgia Geral' ? 'Cirurgia' : esp);
@@ -708,6 +743,7 @@ export async function POST(req: NextRequest) {
         if (tem) temas[tem] = (temas[tem] || 0) + 1;
         if (foc) focos[foc] = (focos[foc] || 0) + 1;
         if (sub) subfocos[sub] = (subfocos[sub] || 0) + 1;
+        if (subSub) subSubfocos[subSub] = (subSubfocos[subSub] || 0) + 1;
       }
 
       const resultPayload = {
@@ -716,7 +752,8 @@ export async function POST(req: NextRequest) {
           especialidades,
           temas,
           focos,
-          subfocos
+          subfocos,
+          subSubfocos
         }
       };
 
@@ -919,7 +956,12 @@ export async function POST(req: NextRequest) {
       (filters.temas && filters.temas.length > 0) ||
       (filters.focos && filters.focos.length > 0) ||
       (filters.subfocos && filters.subfocos.length > 0) ||
+      (filters.subSubfocos && filters.subSubfocos.length > 0) ||
       (filters.instituicoes && filters.instituicoes.length > 0) ||
+      (filters.bancaOrganizadora && filters.bancaOrganizadora.length > 0) ||
+      (filters.macrorregioes && filters.macrorregioes.length > 0) ||
+      (filters.programaRplus && filters.programaRplus.length > 0) ||
+      filters.apenasComImagem ||
       (filters.anos && filters.anos.length > 0 && filters.anos.length < 18) ||
       (filters.dificuldade && filters.dificuldade !== 'Todas') ||
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
@@ -931,6 +973,10 @@ export async function POST(req: NextRequest) {
     const hasRightCardFilters = Boolean(
       (filters.search && filters.search.trim()) ||
       (filters.instituicoes && filters.instituicoes.length > 0) ||
+      (filters.bancaOrganizadora && filters.bancaOrganizadora.length > 0) ||
+      (filters.macrorregioes && filters.macrorregioes.length > 0) ||
+      (filters.programaRplus && filters.programaRplus.length > 0) ||
+      filters.apenasComImagem ||
       (filters.anos && filters.anos.length > 0 && filters.anos.length < 18) ||
       (filters.dificuldade && filters.dificuldade !== 'Todas') ||
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||

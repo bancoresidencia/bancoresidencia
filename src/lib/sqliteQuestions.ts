@@ -96,7 +96,7 @@ export function mapSqliteRowToQuestion(row: Record<string, unknown>, includeGaba
     tema: String(row.novo_tema || row.tema || ''),
     foco: String(row.novo_foco || row.foco || ''),
     subfoco: String(row.novo_subfoco || row.subfoco || ''),
-    sub_subfoco: row.novo_sub_subfoco ? String(row.novo_sub_subfoco) : undefined,
+    sub_subfoco: (row.novo_sub_subfoco || row.sub_subfoco) ? String(row.novo_sub_subfoco || row.sub_subfoco) : undefined,
     difficulty: (row.difficulty as Question['difficulty']) || 'Médio',
     type: (row.type as Question['type']) || 'Múltipla escolha',
     isAnulada: Boolean(row.is_anulada),

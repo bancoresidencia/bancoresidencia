@@ -297,6 +297,25 @@ CREATE INDEX idx_qfacets_v3_year ON public.question_facets (modalidade_target, y
 
 GRANT SELECT ON public.question_facets TO anon, authenticated, service_role;
 
+CREATE OR REPLACE FUNCTION public.refresh_question_facets()
+RETURNS void
+LANGUAGE plpgsql
+SECURITY DEFINER
+SET search_path = public
+SET statement_timeout = '120s'
+AS $$
+BEGIN
+  IF COALESCE(current_setting('request.jwt.claim.role', true), '') <> 'service_role'
+     AND current_user NOT IN ('postgres', 'supabase_admin') THEN
+    RAISE EXCEPTION 'Acesso restrito ao service_role.';
+  END IF;
+  REFRESH MATERIALIZED VIEW CONCURRENTLY public.question_facets;
+END;
+$$;
+
+REVOKE ALL ON FUNCTION public.refresh_question_facets() FROM PUBLIC, anon, authenticated;
+GRANT EXECUTE ON FUNCTION public.refresh_question_facets() TO service_role;
+
 CREATE OR REPLACE FUNCTION public.get_faceted_question_counts(
   p_bancas text[] DEFAULT NULL,
   p_years int[] DEFAULT NULL,

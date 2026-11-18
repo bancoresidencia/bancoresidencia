@@ -96,6 +96,7 @@ def main():
     total_subsubs = 0
 
     valid_focos_by_esp = collections.defaultdict(dict)  # esp -> {foco: tema}
+    valid_foco_global = {}  # foco -> esp
     valid_subfocos = {}  # (esp, tema, foco) -> set(subfocos)
 
     for slug, t_data in trees:
@@ -107,6 +108,7 @@ def main():
                 total_focos += 1
                 f_name = foco_obj["foco"]
                 valid_focos_by_esp[esp][f_name] = t_name
+                valid_foco_global[f_name] = esp
                 sf_set = set()
                 for sf_obj in foco_obj["subfocos"]:
                     total_subfocos += 1
@@ -177,7 +179,7 @@ def main():
                 cf_clean = clean_label(cf)
                 if (t_esp, cf_clean) in renamed_focos:
                     cf_clean = renamed_focos[(t_esp, cf_clean)]
-                if cf_clean in valid_focos_by_esp[t_esp]:
+                if cf_clean in valid_focos_by_esp[t_esp] or cf_clean in valid_foco_global:
                     cands.append(cf_clean)
             if not cands:
                 # Match across all focos of t_esp

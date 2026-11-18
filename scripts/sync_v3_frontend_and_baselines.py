@@ -113,7 +113,7 @@ def main():
         "hierarquia_enriquecida": hierarquia_padrao,
     }
     with open("src/data/hierarquiaCompletaFiltros.json", "w", encoding="utf-8") as fp:
-        json.dump(hcf_payload, fp, ensure_ascii=False, indent=2)
+        json.dump(hcf_payload, fp, ensure_ascii=False, separators=(',', ':'))
     print("Wrote src/data/hierarquiaCompletaFiltros.json")
 
     # 2. Compute exact counts per modality table AND globally across all 257,090 live questions!

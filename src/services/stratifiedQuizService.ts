@@ -248,6 +248,7 @@ export async function fetchFacetedHierarchyCounts(
       const temas: Record<string, number> = {};
       const focos: Record<string, number> = {};
       const subfocos: Record<string, number> = {};
+      const subSubfocos: Record<string, number> = {};
 
       for (const [t, count] of Object.entries(baseline.temas || {})) {
         temas[t] = Math.max(0, Math.round((count as number) * overallRatio));
@@ -255,8 +256,11 @@ export async function fetchFacetedHierarchyCounts(
       for (const [f, count] of Object.entries((baseline.focos as Record<string, number>) || hierarchyQuestionCounts.focos || {})) {
         focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
       }
-      for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {
+      for (const [s, count] of Object.entries(baseline.subfocos || hierarchyQuestionCounts.subfocos || {})) {
         subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
+      }
+      for (const [ss, count] of Object.entries(baseline.subSubfocos || hierarchyQuestionCounts.subSubfocos || {})) {
+        subSubfocos[ss] = Math.max(0, Math.round((count as number) * overallRatio));
       }
 
       const result: FacetedHierarchyCountsResult = {
@@ -264,7 +268,8 @@ export async function fetchFacetedHierarchyCounts(
         especialidades,
         temas,
         focos,
-        subfocos
+        subfocos,
+        subSubfocos
       };
 
       facetedCountsCache.set(cacheKey, { timestamp: now, data: result });
@@ -275,14 +280,21 @@ export async function fetchFacetedHierarchyCounts(
     const resolved = resolveBancaList(filters.instituicoes || []);
     const PAGE_CHUNK = 1000;
     const MAX_FACET_ROWS = 10000;
-    const data: Array<{ id: string; especialidade?: string; tema?: string; foco?: string; subfoco?: string }> = [];
+    const data: Array<{
+      id: string;
+      especialidade?: string;
+      tema?: string;
+      foco?: string;
+      subfoco?: string;
+      sub_subfoco?: string;
+    }> = [];
 
     const targetTable = getTargetQuestionTable(filters);
     let currentOffset = 0;
     while (currentOffset < MAX_FACET_ROWS) {
       let q = supabase
         .from(targetTable)
-        .select('id, especialidade, tema, foco, subfoco')
+        .select('id, especialidade, tema, foco, subfoco, sub_subfoco')
         .in('banca', resolved)
         .order('id', { ascending: true })
         .range(currentOffset, currentOffset + PAGE_CHUNK - 1);
@@ -364,11 +376,13 @@ export async function fetchFacetedHierarchyCounts(
     const temas: Record<string, number> = {};
     const focos: Record<string, number> = {};
     const subfocos: Record<string, number> = {};
+    const subSubfocos: Record<string, number> = {};
 
     const seenEsp = new Set<string>();
     const seenTema = new Set<string>();
     const seenFoco = new Set<string>();
     const seenSubfoco = new Set<string>();
+    const seenSubSubfoco = new Set<string>();
     const distinctQuestionIds = new Set<string>();
 
     for (const row of data) {
@@ -378,6 +392,7 @@ export async function fetchFacetedHierarchyCounts(
       const tem = row.tema;
       const foc = row.foco;
       const sub = row.subfoco;
+      const subSub = row.sub_subfoco;
 
       if (esp) {
         const espKeys: string[] = [esp];
@@ -421,6 +436,14 @@ export async function fetchFacetedHierarchyCounts(
           subfocos[sub] = (subfocos[sub] || 0) + 1;
         }
       }
+
+      if (subSub) {
+        const distinctKey = `${row.id}_${subSub}`;
+        if (!seenSubSubfoco.has(distinctKey)) {
+          seenSubSubfoco.add(distinctKey);
+          subSubfocos[subSub] = (subSubfocos[subSub] || 0) + 1;
+        }
+      }
     }
 
     const result: FacetedHierarchyCountsResult = {
@@ -428,7 +451,8 @@ export async function fetchFacetedHierarchyCounts(
       especialidades,
       temas,
       focos,
-      subfocos
+      subfocos,
+      subSubfocos
     };
 
     facetedCountsCache.set(cacheKey, { timestamp: now, data: result });

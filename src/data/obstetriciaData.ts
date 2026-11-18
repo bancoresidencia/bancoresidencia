@@ -4,1117 +4,2515 @@ export const obstetriciaHierarchy: SpecialtyHierarchy = {
   "especialidade": "Obstetrícia",
   "temas": [
     {
-        "tema": "Assistência Pré-Natal e Fisiologia Gestacional",
-        "focos": [
+      "tema": "Embriologia e Fisiologia Obstétrica",
+      "focos": [
+        {
+          "foco": "Embriologia e Placentação",
+          "subfocos": [
             {
-                "foco": "Modificações Fisiológicas da Gravidez (Cardiovasculares, Renais, Hematológicas)",
-                "subfocos": [
-                    {
-                        "subfoco": "Modificações Cardiovasculares e Hematológicas",
-                        "sub_subfocos": [
-                            "Aumento do Débito Cardíaco em 30-50%, Queda da RVP e Queda Pressórica Fisiológica no 2º Trimestre",
-                            "Hipervolemia Fisiológica e Anemia Dilucional (Ponto de Corte de Anemia: Hb < 11 g/dL)",
-                            "Estado Pró-Trombótico Fisiológico e Edema em MMII por Compressão da Veia Cava Inferior"
-                        ]
-                    },
-                    {
-                        "subfoco": "Modificações Renais, Digestivas e Respiratórias",
-                        "sub_subfocos": [
-                            "Aumento da TFG em 50% com Redução dos Níveis Normais de Ureia e Creatinina e Glicosúria Fisiológica",
-                            "Ação da Progesterona: Relaxamento do Esfíncter Esofágico Inferior (Pirose) e Hipomotilidade Biliar",
-                            "Alcalose Respiratória Compensada por Aumento do Volume Corrente"
-                        ]
-                    }
-                ]
+              "subfoco": "Fecundação Clivagem e Implantação Embrionária",
+              "sub_subfocos": [
+                "Capacitação Espermática e Formação Zigótica",
+                "Clivagem Embrionária e Nidação Endometrial"
+              ]
             },
             {
-                "foco": "Rotina do Pré-Natal de Baixo Risco (Consultas, Exames e Calendário)",
-                "subfocos": [
-                    {
-                        "subfoco": "Cronograma e Consultas de Rotina (MS/Febrasgo)",
-                        "sub_subfocos": [
-                            "Periodicidade Mínima Recomendada: Mensal até 28 Semanas, Quinzenal de 28 a 36 Semanas e Semanal até o Parto",
-                            "Exames Laboratoriais Obrigatórios do 1º Trimestre (Tipagem/Rh, Coombs Indireto, Hemograma, Glicemia, EAS/Urocultura, Sorologias)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Exames Complementares do 2º e 3º Trimestres",
-                        "sub_subfocos": [
-                            "Repetição Obrigatória no 3º Trimestre (VDRL, HIV, Hepatite B, Hemograma e Urocultura)",
-                            "Rastreamento de Diabetes Gestacional com TOTG 75g entre 24 e 28 Semanas"
-                        ]
-                    }
-                ]
+              "subfoco": "Ondas de Invasão Trofoblástica Placentária",
+              "sub_subfocos": [
+                "Diferenciação do Trofoblasto e Vilosidades",
+                "Remodelamento Vascular das Artérias Espiraladas"
+              ]
             },
             {
-                "foco": "Vacinação e Suplementação na Gestação (Ácido Fólico, Ferro)",
-                "subfocos": [
-                    {
-                        "subfoco": "Calendário Vacinal da Gestante",
-                        "sub_subfocos": [
-                            "dTpa (Tríplice Bacteriana Acelular) Obrigatória a Partir da 20ª Semana a Cada Gestação (Proteção do Recém-Nascido contra Coqueluche)",
-                            "Vacinas Recomendadas: Hepatite B, Influenza e COVID-19",
-                            "Contraindicação Absoluta de Vacinas de Vírus Vivos Atenuados (Tríplice Viral, Varicela, Febre Amarela)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Suplementação de Ácido Fólico e Ferro",
-                        "sub_subfocos": [
-                            "Ácido Fólico Pré-Concepcional: 0,4 mg/dia habitual vs 4-5 mg/dia se Alto Risco de DTN ou Anticonvulsivantes",
-                            "Suplementação Universal de Ferro Elementar (40 mg/dia de Ferro a Partir da 20ª Semana até o Final da Lactação)"
-                        ]
-                    }
-                ]
+              "subfoco": "Organogênese Período Embrionário e Anexos",
+              "sub_subfocos": [
+                "Folhetos Germinativos e Fechamento Neural",
+                "Anatomia Funcional do Cordão Umbilical"
+              ]
             },
             {
-                "foco": "Cálculo da Idade Gestacional e Data Provável do Parto",
-                "subfocos": [
-                    {
-                        "subfoco": "Regra de Nägele e Estimativa Clínica",
-                        "sub_subfocos": [
-                            "Cálculo da Data Provável do Parto (DPP): Somar 7 Dias ao Primeiro Dia da DUM e Somar 9 Meses (ou Subtrair 3 Meses)",
-                            "Altura do Fundo Uterino (AFU): Correlação Centimétrica entre 20 e 32 Semanas"
-                        ]
-                    },
-                    {
-                        "subfoco": "Datação Ultrassonográfica da Gestação",
-                        "sub_subfocos": [
-                            "Comprimento Cabeça-Nádega (CCN) no 1º Trimestre (6 a 12 Semanas) como Parâmetro Mais Preciso (Margem de Erro de 3 a 5 Dias)",
-                            "Diâmetro Biparietal (DBP) e Comprimento do Fêmur no 2º Trimestre"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Estática Fetal e Diagnóstico da Gravidez",
-                "subfocos": [
-                    {
-                        "subfoco": "Manobras de Leopold e Relações Útero-Fetais",
-                        "sub_subfocos": [
-                            "Os 4 Tempos de Leopold: 1º Fundo Uterino; 2º Situação e Dorso Fetal; 3º Apresentação e Mobilidade; 4º Insinuação e Atitude",
-                            "Conceitos de Situação (Longitudinal, Transversa), Apresentação (Cefálica, Pélvica, Córmica) e Posição (Dorso Direita/Esquerda)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Diagnóstico Clínico e Imunológico da Gravidez",
-                        "sub_subfocos": [
-                            "Sinais de Presunção (Náuseas, Aumento Mamário, Atraso Menstrual), Probabilidade (Amolecimento do Colo / Sinal de Hegar, Coloração Violácea da Vulva / Sinal de Jacquemier-Chadwick) e Certeza (BCF ao Sonar > 10-12s, Percepção de Movimentos Fetais pelo Examinador > 18-20s)",
-                            "Fração Beta do hCG no Sangue e Zona Discriminatória Ultrassonográfica"
-                        ]
-                    }
-                ]
+              "subfoco": "Endocrinologia e Transporte Placentário",
+              "sub_subfocos": [
+                "Síntese Hormonal Lútea e Placentária",
+                "Mecanismos de Troca Transplacentária"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Fisiologia dos Sistemas Fetais",
+          "subfocos": [
+            {
+              "subfoco": "Circulação Fetal e Transição Neonatal",
+              "sub_subfocos": [
+                "Shunts Vasculares e Oxigenação Intrauterina",
+                "Adaptação Cardiocirculatória Após Clampeamento Umbilical"
+              ]
+            },
+            {
+              "subfoco": "Maturação Pulmonar e Surfactante Fetal",
+              "sub_subfocos": [
+                "Fases Histológicas do Desenvolvimento Pulmonar",
+                "Biossíntese Lipídica do Surfactante Alveolar"
+              ]
+            },
+            {
+              "subfoco": "Hematopoiese Função Renal e Programação",
+              "sub_subfocos": [
+                "Sítios de Hematopoiese e Hemoglobina Fetal",
+                "Função Renal Digestiva e Programação Fetal"
+              ]
+            },
+            {
+              "subfoco": "Imunologia Gestacional e Transferência Passiva",
+              "sub_subfocos": [
+                "Tolerância Imunológica Materno-Fetal",
+                "Passagem Transplacentária de Anticorpos"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Modificações Fisiológicas Maternas",
+          "subfocos": [
+            {
+              "subfoco": "Adaptações Cardiovasculares e Hemodinâmicas",
+              "sub_subfocos": [
+                "Débito Cardíaco e Resistência Vascular Sistêmica",
+                "Compressão Aortocava e Achados Auscultatórios",
+                "Eletrocardiograma e Silhueta Cardíaca na Gestante"
+              ]
+            },
+            {
+              "subfoco": "Adaptações Hematológicas e Sistema Hemostático",
+              "sub_subfocos": [
+                "Expansão Plasmática e Hemodiluição Gestacional",
+                "Hipercoagulabilidade Fisiológica e Fibrinólise"
+              ]
+            },
+            {
+              "subfoco": "Adaptações Respiratórias e Equilíbrio Ácido-Base",
+              "sub_subfocos": [
+                "Volumes e Capacidades Pulmonares na Gravidez",
+                "Alcalose Respiratória Crônica Compensada"
+              ]
+            },
+            {
+              "subfoco": "Adaptações Renais Urinárias e Metabólicas",
+              "sub_subfocos": [
+                "Hiperfiltração Glomerular e Dilatação Pielocalicial",
+                "Metabolismo Glicídico Lipídico e Diabetogênico"
+              ]
+            },
+            {
+              "subfoco": "Adaptações Digestivas Cutâneas e Posturais",
+              "sub_subfocos": [
+                "Motilidade Gastrointestinal e Perfil Hepatobiliar",
+                "Alterações Dermatológicas Posturais e Endócrinas"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Hemorragias da Primeira Metade da Gravidez",
-        "focos": [
+      "tema": "Assistência Pré-Natal",
+      "focos": [
+        {
+          "foco": "Diagnóstico e Datação Gestacional",
+          "subfocos": [
             {
-                "foco": "Abortamento Espontâneo e suas Formas Clínicas (Ameaça, Inevitável, Incompleto, Retido, Infectado)",
-                "subfocos": [
-                    {
-                        "subfoco": "Diagnóstico Diferencial das Formas Clínicas de Abortamento",
-                        "sub_subfocos": [
-                            "Ameaça de Abortamento: Colo Fechado, Sangramento Moderado, BCF Presente, Vitalidade Mantida (Repouso e Abstinência Sexual)",
-                            "Abortamento Inevitável: Colo Aberto com Sangramento Intenso e Cólica, Feto em Expulsão",
-                            "Abortamento Incompleto: Colo Aberto com Restos Ovulares em Cavidade à USG (Endométrio Heterogêneo > 15 mm)",
-                            "Abortamento Completo: Colo Fechado, Sangramento Cessado e Cavidade Uterina Vazia",
-                            "Abortamento Retido: Embrião >= 7 mm sem Batimentos Cardíacos ou Saco Gestacional >= 25 mm sem Embrião com Colo Fechado",
-                            "Abortamento Infectado / Séptico: Febre, Odor Fétido, Secreção Purulenta, Dor Pélvica Intensa (Internação, Antibioticoterapia EV Tripla e Esvaziamento Uterino Imediato)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Métodos de Esvaziamento Uterino e Imunoprofilaxia Rh",
-                        "sub_subfocos": [
-                            "Aspiração Manual Intrauterina (AMIU) até 12 Semanas (Menor Risco de Perfuração e Sinéquias em Relação à Curetagem)",
-                            "Curetagem Uterina Instrumental (Indicações após 12 Semanas ou Ausência de AMIU)",
-                            "Manejo Farmacológico com Misoprostol e Profilaxia Obrigatória com Imunoglobulina Anti-D em Mulheres Rh Negativo Não Sensibilizadas"
-                        ]
-                    }
-                ]
+              "subfoco": "Sinais Clínicos Diagnósticos da Gravidez",
+              "sub_subfocos": [
+                "Manifestações Maternas de Presunção e Probabilidade",
+                "Sinais Clínicos de Certeza da Gravidez"
+              ]
             },
             {
-                "foco": "Abortamento Recorrente e Incompetência Istmocervical",
-                "subfocos": [
-                    {
-                        "subfoco": "Incompetência Istmocervical (IIC)",
-                        "sub_subfocos": [
-                            "História de Perdas Fetais Tardias Repetitivas (2º Trimestre) Habitualmente Indolores, Rápidas, com Feto Vivo e Dilatação Precoce",
-                            "Tratamento Eletivo de Escolha: Cerclagem Uterina pela Técnica de McDonald entre 12 e 16 Semanas de Gestação",
-                            "Cerclagem de Emergência / Resgate com Colo Dilatado e Bolsa Amniótica Prolabada"
-                        ]
-                    },
-                    {
-                        "subfoco": "Investigação do Abortamento de Repetição",
-                        "sub_subfocos": [
-                            "Definição: >= 2 a 3 Perdas Espontâneas Consecutivas",
-                            "Rastreamento de Síndrome do Anticorpo Antifosfolípide (SAF), Cariótipo do Casal e Malformações Uterinas (Útero Septado)"
-                        ]
-                    }
-                ]
+              "subfoco": "Diagnóstico Hormonal e Ecográfico Inicial",
+              "sub_subfocos": [
+                "Cinética da Subunidade Beta do hCG",
+                "Sequência Cronológica dos Achados Ecográficos Iniciais"
+              ]
             },
             {
-                "foco": "Gravidez Ectópica",
-                "subfocos": [
-                    {
-                        "subfoco": "Diagnóstico Clínico e Ultrassonográfico da Ectópica",
-                        "sub_subfocos": [
-                            "Tríade Clássica: Atraso Menstrual, Sangramento Vaginal de Primeiro Trimestre e Dor Pélvica Unilateral",
-                            "Fatores de Risco Maiores: História de Gravidez Ectópica Prévia, Doença Inflamatória Pélvica (DIP) e Cirurgia Tubária Prévia",
-                            "Zona Discriminatória do Beta-hCG (>= 1.500 a 2.000 mUI/mL sem Saco Gestacional Tópico Intrauterino à USG Transvaginal)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Manejo Clínico com Metotrexato vs Cirúrgico",
-                        "sub_subfocos": [
-                            "Critérios Rígidos para Uso de Metotrexato (MTX 50 mg/m2 IM): Estabilidade Hemodinâmica, Massa Anexial Íntegra < 3,5 cm, Ausência de BCF e Beta-hCG < 5.000 mUI/mL",
-                            "Acompanhamento do MTX com Dosagem nos Dias 4 e 7 (Queda esperada >= 15%)",
-                            "Tratamento Cirúrgico: Salpingectomia Videolaparoscópica (Instabilidade Hemodinâmica ou Rotura Tubária com Choque) vs Salpingostomia Linear (Desejo de Preservação Tubária)"
-                        ]
-                    }
-                ]
+              "subfoco": "Regra de Naegele e Datação",
+              "sub_subfocos": [
+                "Estimativa da Data Provável do Parto",
+                "Cálculo da Idade Gestacional em Semanas"
+              ]
             },
             {
-                "foco": "Doença Trofoblástica Gestacional (Mola Hidatiforme e Neoplasias)",
-                "subfocos": [
-                    {
-                        "subfoco": "Mola Hidatiforme Completa vs Incompleta (Parcial)",
-                        "sub_subfocos": [
-                            "Mola Completa: Fecundação de Óvulo Vazio por Espermatozoide Diploide (46,XX), Ausência de Embrião, Vilosidades Edemaciadas Difusas (\"Cachos de Uva\"), Níveis Altíssimos de Beta-hCG e Risco de Malignização de 15-20%",
-                            "Mola Incompleta: Fecundação de Óvulo Normal por 2 Espermatozoides (Triploidia 69,XXY), Presença de Tecido Fetal / Embrião e Risco Menor de Malignização (2-5%)",
-                            "Imagem Ultrassonográfica em \"Tempestade de Neve\" ou \"Flocos de Neve"
-                        ]
-                    },
-                    {
-                        "subfoco": "Esvaziamento Uterino e Seguimento Pós-Molar",
-                        "sub_subfocos": [
-                            "Esvaziamento Uterino de Escolha por Vácuo-Aspiração Elétrica ou AMIU com Envio para Histopatológico",
-                            "Seguimento Ambulatorial Obrigatório: Dosagem Semanal de Beta-hCG até 3 Valores Negativos Consecutivos, seguido de Mensal por 6 Meses com Anticoncepção Rigorosa",
-                            "Critérios de Neoplasia Trofoblástica Gestacional (NTG / Mola Invasora / Coriocarcinoma): Platô em 4 Dosagens ou Elevação em 3 Dosagens de Beta-hCG"
-                        ]
-                    }
-                ]
+              "subfoco": "Datação Ecográfica e Redatação Gestacional",
+              "sub_subfocos": [
+                "Biometria de Maior Acurácia por Trimestre",
+                "Critérios de Discrepância para Redatação"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Consulta e Estratificação Pré-Natal",
+          "subfocos": [
+            {
+              "subfoco": "Cronograma de Consultas e Documentação",
+              "sub_subfocos": [
+                "Calendário Mínimo e Frequência das Consultas",
+                "Cartão da Gestante e Acolhimento Pré-Natal"
+              ]
+            },
+            {
+              "subfoco": "Estratificação Dinâmica de Risco Gestacional",
+              "sub_subfocos": [
+                "Fatores Clínicos de Alto Risco Obstétrico",
+                "Sinais de Alarme para Urgência Obstétrica",
+                "Reavaliação Contínua e Referência Especializada"
+              ]
+            },
+            {
+              "subfoco": "Exame Obstétrico e Ganho Ponderal",
+              "sub_subfocos": [
+                "Medida da Altura Uterina e Peso",
+                "Sistematização Palpatória e Ausculta Obstétrica"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Rotina Laboratorial do Pré-Natal",
+          "subfocos": [
+            {
+              "subfoco": "Exames Obrigatórios da Primeira Consulta",
+              "sub_subfocos": [
+                "Avaliação Hematológica Imuno-Hematológica e Glicêmica",
+                "Triagem Urinária e Parasitológica Inicial"
+              ]
+            },
+            {
+              "subfoco": "Painel Sorológico e Repetição Trimestral",
+              "sub_subfocos": [
+                "Painel Sorológico Infeccioso do Primeiro Trimestre",
+                "Repetição Sorológica no Terceiro Trimestre"
+              ]
+            },
+            {
+              "subfoco": "Exames Complementares da Segunda Metade",
+              "sub_subfocos": [
+                "Curva Glicêmica Oral de Segundo Trimestre",
+                "Cultura Perineal e Monitoramento de Suscetíveis"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Suplementação e Vacinação Gestacional",
+          "subfocos": [
+            {
+              "subfoco": "Suplementação Periconcepcional de Ácido Fólico",
+              "sub_subfocos": [
+                "Profilaxia Periconcepcional Habitual de Tubo Neural",
+                "Indicações de Alta Dose de Folato"
+              ]
+            },
+            {
+              "subfoco": "Reposição Profilática de Ferro",
+              "sub_subfocos": [
+                "Suplementação Universal de Ferro na Gravidez",
+                "Suplementação de Cálcio e Micronutrientes"
+              ]
+            },
+            {
+              "subfoco": "Calendário Vacinal Recomendado na Gestante",
+              "sub_subfocos": [
+                "Esquema de Dupla Adulto e dTpa",
+                "Imunizantes Inativados contra Viroses e Hepatite",
+                "Vacinação Materna contra Vírus Sincicial Respiratório"
+              ]
+            },
+            {
+              "subfoco": "Vacinas Contraindicadas e Situações Especiais",
+              "sub_subfocos": [
+                "Contraindicação de Imunizantes Vivos Atenuados",
+                "Exceções Epidemiológicas e Imunoprofilaxia Passiva"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Queixas Habituais na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Sintomas Digestivos e Manejo Conservador",
+              "sub_subfocos": [
+                "Náuseas Vômitos Leves e Pirose Gestacional",
+                "Constipação Intestinal Sialorreia e Hemorroidas"
+              ]
+            },
+            {
+              "subfoco": "Queixas Osteomusculares e Vasculares",
+              "sub_subfocos": [
+                "Lombalgia Dor Ligamentar e Cãibras Musculares",
+                "Edema Postural Varizes e Tontura Ortostática"
+              ]
+            },
+            {
+              "subfoco": "Queixas Geniturinárias e Mamárias Fisiológicas",
+              "sub_subfocos": [
+                "Polaciúria Sem Disúria e Fluxo Vaginal",
+                "Sensibilidade Mamária Cefaleia Tensional e Sono"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Direitos e Legislação Obstétrica",
+          "subfocos": [
+            {
+              "subfoco": "Interrupção Legal da Gestação",
+              "sub_subfocos": [
+                "Hipóteses Legais e Requisitos Documentais",
+                "Diagnóstico Legal da Anencefalia e Objeção"
+              ]
+            },
+            {
+              "subfoco": "Atendimento na Violência Sexual Gestacional",
+              "sub_subfocos": [
+                "Profilaxias Farmacológicas e Notificação Sanitária",
+                "Sigilo Profissional e Autonomia de Adolescentes"
+              ]
+            },
+            {
+              "subfoco": "Direitos Trabalhistas Acompanhante e Laqueadura",
+              "sub_subfocos": [
+                "Proteção Trabalhista e Direito a Acompanhante",
+                "Regras Legais Vigentes para Laqueadura Obstétrica"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Hemorragias da Segunda Metade da Gravidez",
-        "focos": [
+      "tema": "Hemorragias da Primeira Metade",
+      "focos": [
+        {
+          "foco": "Abortamento Espontâneo",
+          "subfocos": [
             {
-                "foco": "Descolamento Prematuro de Placenta (DPP)",
-                "subfocos": [
-                    {
-                        "subfoco": "Quadro Clínico e Fatores de Risco do DPP",
-                        "sub_subfocos": [
-                            "Principal Fator de Risco Associado: Doença Hipertensiva Específica da Gravidez (DHEG / Pré-Eclâmpsia)",
-                            "Tétrade Clássica: Dor Abdominal Súbita Intensa, Hipertonia Uterina (\"Útero Lenhoso\" que Não Relaxa), Sangramento Vaginal Escuro com Coágulos e Sofrimento Fetal Agudo Grave",
-                            "Hematoma Retroplacentário e Apoplexia Útero-Placentária (Útero de Couvelaire)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Conduta Obstétrica Imediata e Complicações",
-                        "sub_subfocos": [
-                            "Conduta com Feto Vivo: Cesariana Imediata de Urgência (Exceto se Parto Vaginal Iminente)",
-                            "Conduta com Feto Morto: Amniotomia Imediata (Reduz a Pressão Intrauterina e Passagem de Tromboplastina para a Circulação) e Priorização de Parto Vaginal se Estabilidade Materna",
-                            "Complicações Graves: Coagulação Intravascular Disseminada (CIVD) e Síndrome de Sheehan"
-                        ]
-                    }
-                ]
+              "subfoco": "Ameaça Abortiva e Forma Completa",
+              "sub_subfocos": [
+                "Quadro Clínico e Manejo da Ameaça",
+                "Hematoma Subcoriônico e Prognóstico Evolutivo",
+                "Critérios Clínicos e Ecográficos do Completo"
+              ]
             },
             {
-                "foco": "Placenta Prévia",
-                "subfocos": [
-                    {
-                        "subfoco": "Classificação e Quadro Clínico da Placenta Prévia",
-                        "sub_subfocos": [
-                            "Implantação Placentária no Segmento Inferior do Útero após 28 Semanas de Gestação",
-                            "Quadro Clínico Típico: Sangramento Vaginal Vermelho Rutilante / Vivo, Espontâneo, Repetitivo, Progressivo e INDOLOR, com Tônus Uterino Normal e Ausência de Sofrimento Fetal Inicial",
-                            "Contraindicação Absoluta de Toque Vaginal (Realizar Especuloscopia Delicada e USG Transvaginal)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Conduta e Via de Parto na Placenta Prévia",
-                        "sub_subfocos": [
-                            "Manejo Conservador se Prematuridade e Sangramento Controlado com Estabilidade Materno-Fetal",
-                            "Placenta Prévia Total / Oclusiva Total: Indicação Absoluta de Cesariana",
-                            "Placenta Marginal ou Baixa (Borda Placentária > 2 cm do Orifício Interno): Tentativa de Parto Vaginal Permitida"
-                        ]
-                    }
-                ]
+              "subfoco": "Abortamento Inevitável Incompleto e Retido",
+              "sub_subfocos": [
+                "Diferenciação entre Formas Inevitável e Incompleta",
+                "Critérios Ecográficos de Perda Gestacional Precoce"
+              ]
             },
             {
-                "foco": "Acretismo Placentário (Accreta, Increta, Percreta)",
-                "subfocos": [
-                    {
-                        "subfoco": "Graus de Invasão Miometrial (Accreta, Increta e Percreta)",
-                        "sub_subfocos": [
-                            "Fatores de Risco Maiores: Placenta Prévia Concomitante a Cicatrizes Uterinas / Cesarianas Prévias (Risco Escalonado)",
-                            "Placenta Accreta (Adesão Direta ao Miométrio sem Ultrapassá-lo - 75-80% dos Casos)",
-                            "Placenta Increta (Invasão Profunda no Miométrio - 15%)",
-                            "Placenta Percreta (Ultrapassa a Serosa Uterina com Invasão de Órgãos Vizinhos, Notadamente a Bexiga - 5%)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Diagnóstico Pré-Natal e Manejo Cirúrgico",
-                        "sub_subfocos": [
-                            "Doppler Colorido Obstétrico e Ressonância Magnética da Pelve para Mapeamento de Invasão Vascular",
-                            "Planejamento Cirúrgico Multidisciplinar: Cesariana com Feto Entregue por Incisão Alta sem Tocar na Placenta seguida de Histerectomia Puerperal sem Tentativa de Descolamento Manual da Placenta"
-                        ]
-                    }
-                ]
+              "subfoco": "Abortamento Infectado e Sepse Ginecológica",
+              "sub_subfocos": [
+                "Estadiamento Clínico e Cobertura Polimicrobiana",
+                "Esvaziamento Precoce e Síndrome de Mondor"
+              ]
             },
             {
-                "foco": "Rotura Uterina",
-                "subfocos": [
-                    {
-                        "subfoco": "Sinais Iminentes de Rotura (Síndrome de Bandl-Frommel)",
-                        "sub_subfocos": [
-                            "Sinal de Bandl (Anel de Constrição que Separa o Corpo do Segmento Inferior Uterino)",
-                            "Sinal de Frommel (Estiramento e Tensão Dolorosa dos Ligamentos Redondos)",
-                            "Causas Principais: Hiperdinamia Uterina, Uso Inadequado de Ocitocina/Misoprostol e Parto Obstruído"
-                        ]
-                    },
-                    {
-                        "subfoco": "Rotura Consumada e Conduta Cirúrgica",
-                        "sub_subfocos": [
-                            "Dor Lancinante Súbita que Cede Subitamente com Parada das Contrações Uterinas",
-                            "Subida / Recuo da Apresentação Fetal, Palpação Fácil de Partes Fetais no Abdome Materno e Choque Hemorrágico Grave",
-                            "Laparotomia Exploradora Imediata: Histerorrafia ou Histerectomia Subtotal/Total"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Rotura de Vasa Prévia e Rotura de Seio Marginal",
-                "subfocos": [
-                    {
-                        "subfoco": "Vasa Prévia e Inserção Velamentosa do Cordão",
-                        "sub_subfocos": [
-                            "Vasos Fetais Desprotegidos que Cruzam o Orifício Interno do Colo Uterino sob as Membranas Amnióticas",
-                            "Quadro Patognomônico: Sangramento Vaginal Imediato após a Amniorrexe (Rotura de Bolsa) associado a Bradicardia Fetal Súbita / Sofrimento Fetal Agudo Grave (O Sangue Perdido é Fetal!)",
-                            "Cesariana de Emergência Absoluta"
-                        ]
-                    },
-                    {
-                        "subfoco": "Rotura de Seio Marginal Placentário",
-                        "sub_subfocos": [
-                            "Sangramento de Sangue Materno no Periparto com Tônus Uterino Normal e Ausência de Sofrimento Fetal, Diagnóstico de Exclusão",
-                            "Conduta Obstétrica Habitualmente Conservadora com Monitorização e Bom Prognóstico Perinatal"
-                        ]
-                    }
-                ]
+              "subfoco": "Esvaziamento Uterino Farmacológico e Cirúrgico",
+              "sub_subfocos": [
+                "Aspiração Manual Intrauterina e Curetagem",
+                "Manejo Farmacológico e Imunoprofilaxia Rh"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Abortamento de Repetição",
+          "subfocos": [
+            {
+              "subfoco": "Conceito Epidemiologia e Propedêutica Etiológica",
+              "sub_subfocos": [
+                "Definição Atualizada e Fatores Prognósticos",
+                "Roteiro de Investigação Diagnóstica do Casal"
+              ]
+            },
+            {
+              "subfoco": "Incompetência Istmocervical e Cerclagem Uterina",
+              "sub_subfocos": [
+                "Quadro Clínico Clássico de Insuficiência Cervical",
+                "Indicações e Modalidades de Cerclagem Cervical"
+              ]
+            },
+            {
+              "subfoco": "Causas Genéticas Anatômicas e Endócrinas",
+              "sub_subfocos": [
+                "Rearranjos Cromossômicos Parentais e Aconselhamento",
+                "Malformações Müllerianas Sinéquias e Fatores Endócrinos"
+              ]
+            },
+            {
+              "subfoco": "Causas Imunotrombóticas e Manejo Terapêutico",
+              "sub_subfocos": [
+                "Manejo da Síndrome Antifosfolípide Recorrente",
+                "Abordagem no Abortamento Recorrente Idiopático"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Gravidez Ectópica",
+          "subfocos": [
+            {
+              "subfoco": "Fatores Predisponentes e Quadro Clínico",
+              "sub_subfocos": [
+                "Localizações Anatômicas e Fatores Predisponentes",
+                "Apresentação Íntegra e Rotura com Hemoperitônio",
+                "Reação Endometrial Decidual de Arias-Stella"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico Hormonal Seriado e Ultrassonográfico",
+              "sub_subfocos": [
+                "Zona Discriminatória e Cinética Hormonal",
+                "Achados Ecográficos Anexiais e Peritoneais"
+              ]
+            },
+            {
+              "subfoco": "Tratamento Medicamentoso com Metotrexato",
+              "sub_subfocos": [
+                "Elegibilidade e Contraindicações ao Metotrexato",
+                "Monitoramento Seriado Pós-Metotrexato e Falha Terapêutica"
+              ]
+            },
+            {
+              "subfoco": "Tratamento Cirúrgico e Formas Atípicas",
+              "sub_subfocos": [
+                "Indicações de Salpingectomia e Cirurgia Conservadora",
+                "Gestação Heterotópica Intersticial e em Cicatriz"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Doença Trofoblástica Gestacional",
+          "subfocos": [
+            {
+              "subfoco": "Genética e Clínica das Molas",
+              "sub_subfocos": [
+                "Diferenças Genéticas e Histológicas das Molas",
+                "Manifestações Clínicas Clássicas e Complicações Sistêmicas",
+                "Extremos Reprodutivos e Mola Anterior"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico e Esvaziamento Uterino Molar",
+              "sub_subfocos": [
+                "Achados Ultrassonográficos e Laboratoriais da Mola",
+                "Técnica de Vácuo-Aspiração e Cuidados Peroperatórios"
+              ]
+            },
+            {
+              "subfoco": "Seguimento Pós-Molar e Anticoncepção Obrigatória",
+              "sub_subfocos": [
+                "Protocolo de Vigilância Hormonal até Remissão",
+                "Contracepção Segura Durante o Controle Pós-Molar"
+              ]
+            },
+            {
+              "subfoco": "Neoplasia Trofoblástica Gestacional e Tratamento",
+              "sub_subfocos": [
+                "Critérios Diagnósticos de Malignização Pós-Molar",
+                "Estadiamento de Risco e Esquemas Quimioterápicos"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Síndromes Hipertensivas na Gravidez",
-        "focos": [
+      "tema": "Hemorragias da Segunda Metade",
+      "focos": [
+        {
+          "foco": "Descolamento Prematuro de Placenta",
+          "subfocos": [
             {
-                "foco": "Pré-Eclâmpsia (com e sem Sinais de Gravidade)",
-                "subfocos": [
-                    {
-                        "subfoco": "Diagnóstico e Critérios da Pré-Eclâmpsia",
-                        "sub_subfocos": [
-                            "Definição Clássica: Hipertensão Arterial (PAS >= 140 ou PAD >= 90 mmHg) que Surge após a 20ª Semana associada a Proteinúria Significativa (>= 300 mg/24h ou Relação P/C Urinária >= 0,3)",
-                            "Critérios de Pré-Eclâmpsia SEM Proteinúria: Hipertensão associada a Disfunção de Órgão-Alvo (Plaquetopenia < 100.000, Transaminases Dobradas, Creatinina > 1,1 mg/dL, Edema Agudo de Pulmão ou Sintomas Visuais/Cefaleia)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Pré-Eclâmpsia com Sinais de Gravidade e Manejo",
-                        "sub_subfocos": [
-                            "Sinais de Gravidade: PA >= 160x110 mmHg, Cefaleia Intensa Refratária, Escotomas Cintilantes, Epigastralgia / Dor em HCD (Distensão da Cápsula de Glisson)",
-                            "Sulfatação Imediata para Prevenção de Convulsão com Sulfato de Magnésio (Esquema de Pritchard ou Zuspan)",
-                            "Anti-hipertensivos de Ação Rápida para Crise Pressórica: Hidralazina EV ou Nifedipino Oral de Ação Rápida (Meta de PA entre 140-150 / 90-100 mmHg)"
-                        ]
-                    }
-                ]
+              "subfoco": "Fatores de Risco e Fisiopatologia",
+              "sub_subfocos": [
+                "Etiologias Hipertensivas Traumáticas e Tóxicas",
+                "Coágulo Retroplacentário e Hemorragia Oculta"
+              ]
             },
             {
-                "foco": "Eclâmpsia (Manejo da Crise e Sulfato de Magnésio)",
-                "subfocos": [
-                    {
-                        "subfoco": "Manejo da Crise Convulsiva Eclâmptica",
-                        "sub_subfocos": [
-                            "Aparecimento de Convulsões Tônico-Clônicas Generalizadas em Gestante com Pré-Eclâmpsia Não Explicadas por Outras Causas Neurológicas",
-                            "Droga de Escolha Absoluta para Controle e Prevenção de Recorrência: Sulfato de Magnésio (Jamais Benzodiazepínicos ou Fenitoína de 1ª Linha)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Monitorização da Intoxicação por Magnésio e Antídoto",
-                        "sub_subfocos": [
-                            "Os 3 Parâmetros Clínicos Obrigatórios de Vigilância: Reflexo Patelar Presente, Frequência Respiratória >= 16 rpm e Débito Urinário >= 25-30 mL/hora",
-                            "Sinal Mais Precoce de Intoxicação: Abolição do Reflexo Patelar",
-                            "Conduta na Intoxicação / Parada Respiratória: Suspender o Sulfato e Administrar Gluconato de Cálcio a 10% EV Lentamente"
-                        ]
-                    }
-                ]
+              "subfoco": "Quadro Clínico Diagnóstico e Classificação",
+              "sub_subfocos": [
+                "Tríade Clínica e Diagnóstico Eminentemente Clínico",
+                "Estadiamento Clínico de Sher"
+              ]
             },
             {
-                "foco": "Síndrome HELLP",
-                "subfocos": [
-                    {
-                        "subfoco": "Critérios Laboratoriais Diagnósticos de Tennessee / Mississippi",
-                        "sub_subfocos": [
-                            "H (Hemólise): Esquizócitos no Sangue Periférico, Bilirrubina Indireta >= 1,2 mg/dL, Desidrogenase Láctica (LDH) >= 600 U/L",
-                            "EL (Elevated Liver Enzymes): TGO/AST >= 70 U/L ou Dobro do LSN",
-                            "LP (Low Platelets): Plaquetopenia < 100.000/mm3 (Classe 1 < 50.000, Classe 2 50.000-100.000, Classe 3 100.000-150.000)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Conduta Obstétrica e Interrupção da Gravidez",
-                        "sub_subfocos": [
-                            "Indicação de Interrupção Imediata da Gestação Independentemente da Idade Gestacional após Estabilização Materna e Sulfatação",
-                            "Via de Parto Obstétrica (Cesariana ou Parto Vaginal se Indução Rápida Viável)"
-                        ]
-                    }
-                ]
+              "subfoco": "Conduta Obstétrica Segundo Vitalidade Fetal",
+              "sub_subfocos": [
+                "Abordagem Imediata no Feto Vivo Viável",
+                "Manejo Obstétrico no Óbito Fetal Confirmado",
+                "Papel Hemostático da Amniotomia Precoce"
+              ]
             },
             {
-                "foco": "Hipertensão Arterial Crônica na Gravidez",
-                "subfocos": [
-                    {
-                        "subfoco": "Diagnóstico Diferencial e Drogas de Uso Permitido",
-                        "sub_subfocos": [
-                            "Hipertensão Diagnosticada Antes da Gravidez ou Antes da 20ª Semana, ou que Persiste após 12 Semanas Pós-Parto",
-                            "Anti-hipertensivos Orais Seguros de 1ª Linha: Metildopa, Nifedipino Retard e Hidralazina"
-                        ]
-                    },
-                    {
-                        "subfoco": "Pré-Eclâmpsia Sobreposta à Hipertensão Crônica",
-                        "sub_subfocos": [
-                            "Contraindicação Formal e Absoluta: Inibidores da ECA e Bloqueadores dos Receptores de Angiotensina (Teratogenia e Disgenesia Renal Fetal)",
-                            "Piora Súbita dos Níveis Pressóricos, Surgimento ou Aumento Abrupto de Proteinúria ou Disfunção Orgânica após a 20ª Semana"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Hipertensão Gestacional",
-                "subfocos": [
-                    {
-                        "subfoco": "Definição, Fisiopatologia e Diagnóstico Diferencial com Pré-Eclâmpsia",
-                        "sub_subfocos": [
-                            "Profilaxia com AAS em Baixas Doses (100-150 mg/dia) e Carbonato de Cálcio Iniciados entre 12 e 16 Semanas",
-                            "Níveis Pressóricos >= 140x90 mmHg após 20 Semanas sem Proteinúria ou Lesão de Órgão-Alvo"
-                        ]
-                    },
-                    {
-                        "subfoco": "Conduta Clínica, Metas Pressóricas e Risco de Evolução para Pré-Eclâmpsia",
-                        "sub_subfocos": [
-                            "Diferenciação com Hipertensão Arterial Crônica Preexistente e Monitorização Ambulatorial"
-                        ]
-                    }
-                ]
+              "subfoco": "Útero de Couvelaire e Coagulopatia",
+              "sub_subfocos": [
+                "Apoplexia Uteroplacentária de Couvelaire",
+                "Coagulação Intravascular Disseminada e Hemoterapia"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Placenta Prévia",
+          "subfocos": [
+            {
+              "subfoco": "Classificação Anatômica e Fatores Predisponentes",
+              "sub_subfocos": [
+                "Nomenclatura Atual de Placenta Prévia",
+                "Cicatrizes Uterinas e Fatores Epidemiológicos"
+              ]
+            },
+            {
+              "subfoco": "Manifestações Clínicas e Diagnóstico Ecográfico",
+              "sub_subfocos": [
+                "Padrão Hemorrágico Indolor e Exame Especular",
+                "Ultrassonografia Transvaginal Confirmatória"
+              ]
+            },
+            {
+              "subfoco": "Manejo Conservador e Resolução Obstétrica",
+              "sub_subfocos": [
+                "Conduta Expectante Hospitalar no Pré-Termo Estável",
+                "Momento da Interrupção e Via Obstétrica"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Acretismo Placentário",
+          "subfocos": [
+            {
+              "subfoco": "Graus Histológicos e Fatores Predisponentes",
+              "sub_subfocos": [
+                "Classificação Histopatológica do Espectro do Acretismo",
+                "Associação entre Placenta Prévia e Cesáreas"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico Pré-Natal por Imagem",
+              "sub_subfocos": [
+                "Sinais Ultrassonográficos e Dopplervelocimétricos",
+                "Papel Complementar da Ressonância Magnética"
+              ]
+            },
+            {
+              "subfoco": "Planejamento Cirúrgico e Histerectomia Cesariana",
+              "sub_subfocos": [
+                "Extração Fetal Eletiva Sem Tentativa Dequitativa",
+                "Histerectomia Cesariana Total e Controle Hemostático"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Rotura Uterina",
+          "subfocos": [
+            {
+              "subfoco": "Fatores Predisponentes e Cicatrizes Prévias",
+              "sub_subfocos": [
+                "Tipos de Histerotomia e Cirurgias Uterinas",
+                "Causas Intraparto Iatrogênicas e Obstrutivas"
+              ]
+            },
+            {
+              "subfoco": "Síndrome de Iminência de Rotura",
+              "sub_subfocos": [
+                "Sinais Clássicos de Bandl e Frommel",
+                "Conduta Imediata na Iminência de Rotura"
+              ]
+            },
+            {
+              "subfoco": "Rotura Consumada e Abordagem Cirúrgica",
+              "sub_subfocos": [
+                "Clínica da Rotura Completa e Deiscência",
+                "Laparotomia Emergencial Histerorrafia e Histerectomia"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Vasa Prévia",
+          "subfocos": [
+            {
+              "subfoco": "Variantes Anatômicas e Fatores Associados",
+              "sub_subfocos": [
+                "Tipos Anatômicos de Vasa Prévia",
+                "Fatores Clínicos para Rastreamento Dirigido"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico Pré-Natal com Doppler Colorido",
+              "sub_subfocos": [
+                "Identificação Ecográfica Transvaginal dos Vasos",
+                "Programação de Internação e Cesariana Antecipada"
+              ]
+            },
+            {
+              "subfoco": "Hemorragia Fetal Aguda e Interrupção",
+              "sub_subfocos": [
+                "Tríade Clínica da Rotura Vascular Fetal",
+                "Cesariana Emergencial e Suporte Neonatal"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Diabetes Gestacional e Endocrinopatias",
-        "focos": [
+      "tema": "Síndromes Hipertensivas na Gestação",
+      "focos": [
+        {
+          "foco": "Pré-Eclâmpsia",
+          "subfocos": [
             {
-                "foco": "Diabetes Mellitus Gestacional (DMG: Rastreamento, Diagnóstico e Metas)",
-                "subfocos": [
-                    {
-                        "subfoco": "Rastreamento e Critérios Diagnósticos do DMG (IADPSG/SBD/Febrasgo)",
-                        "sub_subfocos": [
-                            "Vigilância Materno-Fetal Estrita (Pesquisa Periódica de Proteinúria, Plaquetas e Enzimas Hepáticas)",
-                            "Manejo Anti-hipertensivo (Metildopa, Hidralazina e Anlodipino) e Momento do Parto a Termo (37-39 semanas)",
-                            "1ª Consulta de Pré-Natal (1º Trimestre): Glicemia de Jejum entre 92 e 125 mg/dL = Diagnóstico Imediato de DMG (Sem Necessidade de Teste Adicional)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Metas Glicêmicas, Dieta e Terapia com Insulina",
-                        "sub_subfocos": [
-                            "Glicemia de Jejum >= 126 mg/dL ou HbA1c >= 6,5% no 1º Trimestre = Diabetes Mellitus Pré-Gestacional / Overt Diabetes",
-                            "Se Glicemia < 92 mg/dL no 1º Trimestre: Realizar TOTG 75g entre 24 e 28 Semanas (Valores de Corte: Jejum >= 92, 1h >= 180, 2h >= 153 mg/dL - Apenas 1 Valor Alterado Confirma DMG)",
-                            "Metas de Controle: Glicemia de Jejum < 95 mg/dL, 1h Pós-Prandial < 140 mg/dL e 2h Pós-Prandial < 120 mg/dL"
-                        ]
-                    }
-                ]
+              "subfoco": "Fisiopatologia Placentária e Predição Clínica",
+              "sub_subfocos": [
+                "Invasão Trofoblástica Deficiente e Lesão Endotelial",
+                "Fatores de Risco e Rastreamento Combinado"
+              ]
             },
             {
-                "foco": "Diabetes Mellitus Pré-Gestacional (Manejo e Riscos Malformativos)",
-                "subfocos": [
-                    {
-                        "subfoco": "Planejamento Pré-Concepcional e Riscos de Malformações Fetais",
-                        "sub_subfocos": [
-                            "Terapêutica Inicial: Dieta Fracionada e Atividade Física por 1 a 2 Semanas",
-                            "Indicação de Insulinoterapia se > 30% dos Valores Glicêmicos Acima da Meta",
-                            "Complicações Fetais: Macrossomia Fetal (> 4.000 g), Polidrâmnio, Distócia de Ombro e Hipoglicemia Neonatal Precoce"
-                        ]
-                    },
-                    {
-                        "subfoco": "Ajuste da Insulinoterapia nos Três Trimestres e Vitalidade Fetal",
-                        "sub_subfocos": [
-                            "Otimização da Hemoglobina Glicada (HbA1c < 6,5%) Pré-Concepção e Suplementação de Ácido Fólico 5mg/dia",
-                            "Risco de Regressão Caudal, Cardiopatias Congênitas (Transposição de Grandes Artérias) e Abortamento"
-                        ]
-                    }
-                ]
+              "subfoco": "Prevenção Farmacológica e Nutricional",
+              "sub_subfocos": [
+                "Profilaxia com Aspirina em Baixa Dose",
+                "Suplementação Universal ou Seletiva de Cálcio"
+              ]
             },
             {
-                "foco": "Tireoidopatias na Gestação (Hipotireoidismo e Hipertireoidismo)",
-                "subfocos": [
-                    {
-                        "subfoco": "Hipotireoidismo Gestacional e Metas de TSH por Trimestre",
-                        "sub_subfocos": [
-                            "Ajuste Dinâmico de Doses: Queda de Demanda no 1º Trimestre vs Resistência Severa no 2º e 3º Trimestres",
-                            "Avaliação de Complicações Microvasculares (Retinopatia, Nefropatia) e Vigilância Fetal Rigorosa",
-                            "Valores de Referência do TSH Gestacional e Aumento Precoce da Dose de Levotiroxina (30-50%)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Hipertireoidismo na Gestação (Doença de Graves vs Tireotoxicose Gestacional Transitória)",
-                        "sub_subfocos": [
-                            "Hipotireoidismo Subclínico: Critérios de Tratamento (Anticorpo Anti-TPO Positivo)",
-                            "Diferenciação: Tireotoxicose Transitória Mediada por hCG vs Doença de Graves (Anticorpo TRAB Positivo)",
-                            "Tratamento Farmacológico: Propiltiouracil no 1º Trimestre vs Metimazol no 2º e 3º Trimestres"
-                        ]
-                    }
-                ]
+              "subfoco": "Critérios Diagnósticos e Lesão Orgânica",
+              "sub_subfocos": [
+                "Hipertensão Associada a Proteinúria Significativa",
+                "Diagnóstico Sem Proteinúria por Disfunção Sistêmica"
+              ]
+            },
+            {
+              "subfoco": "Manifestações Clínicas e Laboratoriais Graves",
+              "sub_subfocos": [
+                "Tríade de Iminência de Eclâmpsia",
+                "Critérios Pressóricos e Sistêmicos de Gravidade",
+                "Edema Agudo Pulmonar e Lesão Hepatorrenal"
+              ]
+            },
+            {
+              "subfoco": "Crise Hipertensiva Sulfatação e Interrupção",
+              "sub_subfocos": [
+                "Fármacos para Controle da Emergência Hipertensiva",
+                "Sulfatação Profilática na Gravidade Hipertensiva",
+                "Conduta Expectante e Interrupção na Pré-Eclâmpsia"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Eclâmpsia",
+          "subfocos": [
+            {
+              "subfoco": "Apresentação Clínica e Suporte Inicial",
+              "sub_subfocos": [
+                "Cronologia das Crises e Diagnóstico Diferencial",
+                "Suporte Clínico Imediato Durante a Convulsão",
+                "Alterações Cardiotocográficas Transitórias Pós-Ictais"
+              ]
+            },
+            {
+              "subfoco": "Esquemas de Sulfato de Magnésio",
+              "sub_subfocos": [
+                "Esquemas de Pritchard Zuspan e Sibai",
+                "Ajuste na Insuficiência Renal Oligúrica"
+              ]
+            },
+            {
+              "subfoco": "Monitorização de Intoxicação e Antídoto",
+              "sub_subfocos": [
+                "Tríade Clínica de Monitorização Beira-Leito",
+                "Conduta Imediata na Intoxicação pelo Magnésio"
+              ]
+            },
+            {
+              "subfoco": "Estabilização Materna e Resolução Obstétrica",
+              "sub_subfocos": [
+                "Momento Oportuno da Interrupção Após Estabilização",
+                "Escolha da Via Obstétrica na Eclâmptica"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Síndrome HELLP",
+          "subfocos": [
+            {
+              "subfoco": "Critérios Laboratoriais e Classificações",
+              "sub_subfocos": [
+                "Hemólise Elevação Enzimática e Plaquetopenia",
+                "Classificações de Sibai e Mississippi"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico Diferencial das Microangiopatias",
+              "sub_subfocos": [
+                "Diferenciação com Esteatose Hepática Aguda",
+                "Diferenciação com PTT e Síndrome Hemolítico-Urêmica"
+              ]
+            },
+            {
+              "subfoco": "Suporte Hemoterápico e Estabilização Materna",
+              "sub_subfocos": [
+                "Transfusão de Plaquetas e Técnica Anestésica",
+                "Neuroprofilaxia Controle Pressórico e Corticoterapia"
+              ]
+            },
+            {
+              "subfoco": "Complicações Hepáticas e Resolução Obstétrica",
+              "sub_subfocos": [
+                "Hematoma Subcapsular e Rotura Hepática Espontânea",
+                "Indicação de Parto após Estabilização Clínica"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Hipertensão Gestacional",
+          "subfocos": [
+            {
+              "subfoco": "Critérios Diagnósticos e Aferição Pressórica",
+              "sub_subfocos": [
+                "Critérios Temporais e Exclusão Sistêmica",
+                "Padronização da Medida Pressórica na Gestante"
+              ]
+            },
+            {
+              "subfoco": "Vigilância Materno-Fetal de Conversão",
+              "sub_subfocos": [
+                "Rastreamento Seriado de Surgimento de Pré-Eclâmpsia",
+                "Avaliação Ultrassonográfica e de Vitalidade Fetal"
+              ]
+            },
+            {
+              "subfoco": "Manejo Clínico e Momento Resolutivo",
+              "sub_subfocos": [
+                "Terapia Anti-Hipertensiva Ambulatorial",
+                "Momento Ideal e Via de Parto"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Hipertensão Crônica na Gravidez",
+          "subfocos": [
+            {
+              "subfoco": "Diagnóstico Diferencial e Lesão Basal",
+              "sub_subfocos": [
+                "Critérios Cronológicos e Mascaramento Fisiológico",
+                "Avaliação Basal Renal e Cardiovascular"
+              ]
+            },
+            {
+              "subfoco": "Adequação Terapêutica e Drogas Teratogênicas",
+              "sub_subfocos": [
+                "Teratogenicidade dos Bloqueadores Renina-Angiotensina",
+                "Anti-Hipertensivos Seguros para Manutenção Gestacional"
+              ]
+            },
+            {
+              "subfoco": "Pré-Eclâmpsia Sobreposta e Complicações",
+              "sub_subfocos": [
+                "Critérios Diagnósticos da Pré-Eclâmpsia Sobreposta",
+                "Profilaxia com Aspirina e Vigilância Fetal"
+              ]
+            },
+            {
+              "subfoco": "Resolução Obstétrica e Manejo Puerperal",
+              "sub_subfocos": [
+                "Idade Gestacional para Resolução Conforme Controle",
+                "Transição Anti-Hipertensiva Segura na Lactação"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Infecções Congênitas e Perinatais",
-        "focos": [
+      "tema": "Intercorrências Clínicas na Gestação",
+      "focos": [
+        {
+          "foco": "Diabetes Mellitus na Gestação",
+          "subfocos": [
             {
-                "foco": "Sífilis Gestacional e Congênita",
-                "subfocos": [
-                    {
-                        "subfoco": "Diagnóstico e Critérios de Tratamento Adequado Materno",
-                        "sub_subfocos": [
-                            "Rastreamento Obrigatório no 1º e 3º Trimestres e no Momento do Parto com Teste Rápido / VDRL",
-                            "Critérios de Tratamento Materno Adequado para Considerar o Recém-Nascido Tratado: Uso Exclusivo de Penicilina Benzatina, Esquema Completo para o Estágio Clínico, Iniciado até 30 Dias Antes do Parto e Queda Comprovada dos Títulos de VDRL",
-                            "Doses: Sífilis Recente (< 1 Ano) - 2,4 Milhões UI em Dose Única; Sífilis Tardia / Indeterminada - 7,2 Milhões UI (3 Doses Semanais de 2,4 Milhões)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Abordagem Diagnóstica e Conduta no Recém-Nascido",
-                        "sub_subfocos": [
-                            "VDRL do Sangue Periférico do RN (Não Usar Sangue de Cordão)",
-                            "RN Sintomático ou com VDRL do RN Maior que o Materno em pelo menos 2 Titulações (ex.: 1:16 vs 1:4) = Investigação Completa (Líquor, Rx de Ossos Longos, Hemograma) e Tratamento com Penicilina Cristalina EV por 10 Dias"
-                        ]
-                    }
-                ]
+              "subfoco": "Rastreamento Universal e Critérios Diagnósticos",
+              "sub_subfocos": [
+                "Investigação Glicêmica na Primeira Consulta Pré-Natal",
+                "Curva Glicêmica Oral no Segundo Trimestre",
+                "Conduta no Início Tardio do Pré-Natal"
+              ]
             },
             {
-                "foco": "Toxoplasmose Gestacional e Congênita",
-                "subfocos": [
-                    {
-                        "subfoco": "Interpretação Sorológica e Teste de Avidez",
-                        "sub_subfocos": [
-                            "IgG Negativo e IgM Negativo: Gestante Suscetível (Orientação Profilática Higienodietética e Repetição Trimestral da Sorologia)",
-                            "IgG Positivo e IgM Negativo: Infecção Passada / Imune (Sem Risco de Transmissão Fetal)",
-                            "IgG Positivo e IgM Positivo no 1º Trimestre: Realização Imediata do Teste de Avidez de IgG (< 16 semanas: Alta Avidez Exclui Infecção Recente; Baixa Avidez Confirma Infecção Recente)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Tratamento com Espiramicina vs Esquema Tríplice",
-                        "sub_subfocos": [
-                            "Espiramicina Oral Imediata Diante de Infecção Aguda Materna para Prevenção da Transmissão Vertical",
-                            "Amniocentese com PCR para *T. gondii* no Líquido Amniótico a Partir de 18 Semanas para Investigação de Infecção Fetal",
-                            "Confirmação de Feto Infectado: Transição para Esquema Tríplice (Sulfadiazina + Pirimetamina + Ácido Folínico)",
-                            "Tétrada de Sabin no Neonato: Coriorretinite, Hidrocefalia, Calcificações Intracranianas Difusas e Retardo Mental"
-                        ]
-                    }
-                ]
+              "subfoco": "Diabetes Pré-Gestacional e Overt Diabetes",
+              "sub_subfocos": [
+                "Diabetes Franco Diagnosticado na Gravidez",
+                "Embriopatia Diabética e Aconselhamento Pré-Concepcional"
+              ]
             },
             {
-                "foco": "HIV na Gestação e Profilaxia da Transmissão Vertical",
-                "subfocos": [
-                    {
-                        "subfoco": "Terapia Antirretroviral e Rastreamento na Gravidez",
-                        "sub_subfocos": [
-                            "Rastreamento Sorológico Obrigatório na 1ª Consulta, no 3º Trimestre e no Parto",
-                            "Início Imediato de TARV para Todas as Gestantes: Tenofovir + Lamivudina + Dolutegravir (TDF/3TC/DTG) com Meta de Carga Viral Indetectável",
-                            "Carga Viral com 34 Semanas: CV < 1.000 cópias/mL = Parto Vaginal Permitido sem Necessidade de Zidovudina (AZT) EV se CV Indetectável; CV >= 1.000 cópias/mL = Indicação de Cesariana Eletiva com 38 Semanas associada a AZT EV Intraparto"
-                        ]
-                    },
-                    {
-                        "subfoco": "Via de Parto e Profilaxias Intra e Pós-Parto",
-                        "sub_subfocos": [
-                            "Contraindicação Absoluta de Amamentação no Brasil (Inibição com Cabergolina Oral e Fórmula Infantil)",
-                            "Profilaxia Neonatal com AZT Oral por 4 Semanas associado a Nevirapina se Alto Risco"
-                        ]
-                    }
-                ]
+              "subfoco": "Dieta Exercício e Metas Glicêmicas",
+              "sub_subfocos": [
+                "Automonitorização Capilar e Alvos Terapêuticos",
+                "Planejamento Dietético Individualizado e Exercício"
+              ]
             },
             {
-                "foco": "Infecção Urinária e Pielonefrite na Gravidez",
-                "subfocos": [
-                    {
-                        "subfoco": "Bacteriúria Assintomática e Cistite Aguda na Gestação",
-                        "sub_subfocos": [
-                            "Rastreamento Obrigatório na 1ª Consulta e Tratamento Sistemático da Bacteriúria Assintomática (Urocultura >= 10^5 UFC/mL)",
-                            "Opções Antimicrobianas Seguras: Fosfomicina, Cefalexina, Amoxicilina-Clavulanato e Nitrofurantoína"
-                        ]
-                    },
-                    {
-                        "subfoco": "Pielonefrite Aguda Gestacional e Complicações",
-                        "sub_subfocos": [
-                            "Quadro Clínico (Febre, Calafrios, Sinal de Giordano Positivo) e Internação Hospitalar Mandatória",
-                            "Antibioticoterapia Venosa (Ceftriaxona), Risco de Sepse e Profilaxia Antimicrobiana Contínua até o Parto"
-                        ]
-                    }
-                ]
+              "subfoco": "Insulinoterapia e Hipoglicemiantes na Gestação",
+              "sub_subfocos": [
+                "Esquemas Basal-Bolus e Ajuste por Trimestre",
+                "Metformina Seletiva e Contraindicação às Sulfonilureias"
+              ]
             },
             {
-                "foco": "Rastreamento e Profilaxia do Estreptococo do Grupo B (EGB)",
-                "subfocos": [
-                    {
-                        "subfoco": "Cultura Anovaginal Universal entre 35 e 37 Semanas",
-                        "sub_subfocos": [
-                            "Indicações de Swab Anovaginal sem Espéculo e Pacientes que Dispensam Rastreamento (Bacteriúria por EGB ou Filho Anterior com Sepse)",
-                            "Critérios Baseados em Fatores de Risco Intraparto se Cultura Desconhecida (Prematuridade, Bolsa Rota >= 18h, Tax >= 38°C)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Esquema de Profilaxia Intraparto com Antibiótico",
-                        "sub_subfocos": [
-                            "Penicilina Cristalina EV ou Ampicilina EV Iniciadas no Mínimo 4 Horas Antes do Parto",
-                            "Manejo em Alérgicas à Penicilina: Cefazolina (Baixo Risco) vs Clindamicina/Vancomicina (Alto Risco)"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Hepatites Virais e Infecções por CMV, Herpes e Arboviroses na Gravidez",
-                "subfocos": [
-                    {
-                        "subfoco": "Hepatite B e C no Ciclo Gravídico-Puerperal",
-                        "sub_subfocos": [
-                            "Rastreamento com HBsAg e Prevenção de Transmissão Vertical: Vacina + Imunoglobulina (HBIG) no RN nas Primeiras 12h",
-                            "Uso de Tenofovir na Gestante com Carga Viral Alta (> 200.000 UI/mL) a partir da 28ª Semana"
-                        ]
-                    },
-                    {
-                        "subfoco": "Citomegalovírus, Herpes Genital e Vírus Zika",
-                        "sub_subfocos": [
-                            "Herpes Genital Ativo no Trabalho de Parto (Lesões Visíveis ou Pródromos) como Indicação Absoluta de Cesariana",
-                            "Síndrome da Zika Congênita (Microcefalia, Calcificações Subcorticais) e Infecção por CMV"
-                        ]
-                    }
-                ]
+              "subfoco": "Complicações Fetais e Resolução Obstétrica",
+              "sub_subfocos": [
+                "Hipótese de Pedersen e Morbidade Neonatal",
+                "Idade Gestacional e Indicação de Cesariana"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Tireoidopatias na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Adaptações Fisiológicas da Função Tireoidiana",
+              "sub_subfocos": [
+                "Estímulo pelo hCG e Globulina Transportadora",
+                "Metabolismo do Iodo e Transferência Hormonal"
+              ]
+            },
+            {
+              "subfoco": "Hipotireoidismo Clínico e Subclínico Gestacional",
+              "sub_subfocos": [
+                "Diagnóstico e Rastreamento Seletivo de Hipotireoidismo",
+                "Reposição e Ajuste de Levotiroxina"
+              ]
+            },
+            {
+              "subfoco": "Hipertireoidismo e Doença de Graves",
+              "sub_subfocos": [
+                "Diferenciação entre Tireotoxicose Transitória e Graves",
+                "Escolha de Tionamidas por Trimestre"
+              ]
+            },
+            {
+              "subfoco": "Crise Tireotóxica e Tireoidite Pós-Parto",
+              "sub_subfocos": [
+                "Reconhecimento e Manejo da Tempestade Tireoidiana",
+                "Curso Bifásico da Tireoidite Autoimune Pós-Parto"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Cardiopatias na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Estratificação Cardiovascular e Sobrecarga",
+              "sub_subfocos": [
+                "Períodos de Maior Sobrecarga Hemodinâmica",
+                "Classificação de Risco Materno da OMS"
+              ]
+            },
+            {
+              "subfoco": "Valvopatias Reumáticas e Estenose Mitral",
+              "sub_subfocos": [
+                "Fisiopatologia da Descompensação na Estenose Mitral",
+                "Controle Clínico e Valvoplastia Percutânea"
+              ]
+            },
+            {
+              "subfoco": "Cardiopatias Graves e Cardiomiopatia Periparto",
+              "sub_subfocos": [
+                "Cardiopatias Classe Quatro Contraindicadas",
+                "Cardiomiopatia Periparto Diagnóstico e Tratamento"
+              ]
+            },
+            {
+              "subfoco": "Prótese Valvar Arritmias e Parto",
+              "sub_subfocos": [
+                "Anticoagulação em Prótese Mecânica e Arritmias",
+                "Via de Parto e Cuidados Intraparto"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Tromboembolismo na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Fisiopatologia e Estratificação de Risco",
+              "sub_subfocos": [
+                "Predomínio Iliofemoral Esquerdo e Virchow",
+                "Fatores de Risco no Ciclo Gravídico"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico Venoso e Embolia Pulmonar",
+              "sub_subfocos": [
+                "Investigação de Trombose Venosa Profunda",
+                "Fluxograma Diagnóstico na Embolia Pulmonar"
+              ]
+            },
+            {
+              "subfoco": "Anticoagulação Terapêutica e Manejo Periparto",
+              "sub_subfocos": [
+                "Fármacos Anticoagulantes Seguros e Proscritos",
+                "Intervalo de Suspensão para Raquianestesia"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Trombofilias na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Classificação das Trombofilias Hereditárias",
+              "sub_subfocos": [
+                "Trombofilias Hereditárias de Alto Risco Trombogênico",
+                "Baixo Risco Trombogênico e Gene MTHFR"
+              ]
+            },
+            {
+              "subfoco": "Indicações Seletivas de Rastreamento",
+              "sub_subfocos": [
+                "Critérios de Investigação e Interferentes Gestacionais",
+                "Distinção entre Trombofilia Hereditária e Adquirida"
+              ]
+            },
+            {
+              "subfoco": "Tromboprofilaxia Anteparto e Puerperal",
+              "sub_subfocos": [
+                "Indicações de Heparina Anteparto e Vigilância",
+                "Extensão Obrigatória da Tromboprofilaxia no Puerpério"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Lúpus na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Planejamento Reprodutivo e Atividade Lúpica",
+              "sub_subfocos": [
+                "Remissão Sustentada Prévia à Concepção",
+                "Monitoramento Imunológico de Atividade na Gestante"
+              ]
+            },
+            {
+              "subfoco": "Nefrite Lúpica e Diagnóstico Diferencial",
+              "sub_subfocos": [
+                "Marcadores Distintivos entre Nefrite e Pré-Eclâmpsia",
+                "Conduta Imunossupressora e Profilaxia Hipertensiva"
+              ]
+            },
+            {
+              "subfoco": "Autoanticorpos Anti-Ro e Lúpus Neonatal",
+              "sub_subfocos": [
+                "Manifestações Cutâneas Reversíveis e Cardíacas Permanentes",
+                "Ecocardiograma Seriado e Conduta no Bloqueio"
+              ]
+            },
+            {
+              "subfoco": "Imunossupressores Seguros e Contraindicados",
+              "sub_subfocos": [
+                "Manutenção da Hidroxicloroquina e Fármacos Permitidos",
+                "Substituição Pré-Concepcional de Drogas Teratogênicas"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Síndrome Antifosfolípide Obstétrica",
+          "subfocos": [
+            {
+              "subfoco": "Critérios Clínicos Obstétricos e Vasculares",
+              "sub_subfocos": [
+                "Eventos Obstétricos Definidores da Síndrome",
+                "Trombose Vascular Prévia e Forma Catastrófica"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico Laboratorial dos Antifosfolípides",
+              "sub_subfocos": [
+                "Testes Laboratoriais e Persistência Temporal",
+                "Perfil de Positividade e Risco Trombótico"
+              ]
+            },
+            {
+              "subfoco": "Manejo Antitrombótico Obstétrico e Puerperal",
+              "sub_subfocos": [
+                "Aspirina e Heparina Conforme Fenótipo Clínico",
+                "Refratariedade Vigilância Placentária e Conduta Puerperal"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Anemias na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Critérios Diagnósticos por Trimestre",
+              "sub_subfocos": [
+                "Hemodiluição Fisiológica e Anemia Verdadeira",
+                "Repercussões Maternas e Perinatais da Anemia"
+              ]
+            },
+            {
+              "subfoco": "Anemia Ferropriva Diagnóstico e Ferroterapia",
+              "sub_subfocos": [
+                "Cinética do Ferro e Ferritina Sérica",
+                "Ferroterapia Oral e Ferro Parenteral"
+              ]
+            },
+            {
+              "subfoco": "Anemia Megaloblástica na Gravidez",
+              "sub_subfocos": [
+                "Achados Hematológicos de Folato e Cobalamina",
+                "Reposição Específica Pós-Bariátrica e Gemelaridade"
+              ]
+            },
+            {
+              "subfoco": "Doença Falciforme e Hemoglobinopatias Maternas",
+              "sub_subfocos": [
+                "Complicações Materno-Fetais na Gestante Falciforme",
+                "Manejo Multidisciplinar Hidratação e Hemoterapia"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Hepatopatias da Gravidez",
+          "subfocos": [
+            {
+              "subfoco": "Colestase Intra-Hepática da Gestação",
+              "sub_subfocos": [
+                "Prurido Palmoplantar e Ácidos Biliares",
+                "Tratamento com Ácido Ursodesoxicólico e Interrupção"
+              ]
+            },
+            {
+              "subfoco": "Esteatose Hepática Aguda da Gravidez",
+              "sub_subfocos": [
+                "Fisiopatologia Mitocondrial e Critérios de Swansea",
+                "Emergência Obstétrica Estabilização e Parto Imediato"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico Diferencial das Hepatopatias",
+              "sub_subfocos": [
+                "Distinção Cronológica e Laboratorial das Icterícias",
+                "Doença Biliar Calculosa na Gestante"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Hiperêmese Gravídica",
+          "subfocos": [
+            {
+              "subfoco": "Etiopatogenia Fatores Associados e Diagnóstico",
+              "sub_subfocos": [
+                "Estímulo Gonadotrófico e Critérios Clínicos",
+                "Alterações Laboratoriais Renais Eletrolíticas e Hepáticas"
+              ]
+            },
+            {
+              "subfoco": "Distúrbios Eletrolíticos e Lesão Neurológica",
+              "sub_subfocos": [
+                "Tiamina Pré-Glicose e Encefalopatia de Wernicke",
+                "Mielinólise Pontina Central e Coagulopatia"
+              ]
+            },
+            {
+              "subfoco": "Suporte Volêmico e Escalonamento Antiemético",
+              "sub_subfocos": [
+                "Ressuscitação Volêmica Reposição Vitamínica e Dieta",
+                "Terapia Farmacológica Escalonada na Refratariedade"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Mecanismo de Parto, Partograma e Distócias",
-        "focos": [
+      "tema": "Infecções na Gestação",
+      "focos": [
+        {
+          "foco": "Infecção Urinária na Gestação",
+          "subfocos": [
             {
-                "foco": "Trabalho de Parto (Fases Clínicas e Assistência Humanizada)",
-                "subfocos": [
-                    {
-                        "subfoco": "Os 4 Períodos Clínicos do Parto",
-                        "sub_subfocos": [
-                            "1º Período (Dilatação): Fase Latente vs Fase Ativa (Dilatação >= 4-5 cm com Contrações Efetivas)",
-                            "2º Período (Expulsivo): Dilatação Cervical Total (10 cm) até a Saída Completa do Feto",
-                            "3º Período (Dequitadura / Secundamento): Descolamento e Expulsão da Placenta (Manejo Ativo Obrigatório com 10 UI de Ocitocina IM)",
-                            "4º Período (Greenberg): Primeira Hora Pós-Parto (Hemostasia Mecânica por Ligaduras de Pinard e Trombotamponamento)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Assistência Humanizada e Boas Práticas da OMS",
-                        "sub_subfocos": [
-                            "Presença Livre de Acompanhante de Escolha da Mulher, Dieta Líquida Permitida, Liberdade de Posição e Métodos Não Farmacológicos de Alívio da Dor",
-                            "Contraindicação do Uso Rotineiro de Episiotomia, Enema, Tricotomia e Manobra de Kristeller"
-                        ]
-                    }
-                ]
+              "subfoco": "Bacteriúria Assintomática Rastreio e Tratamento",
+              "sub_subfocos": [
+                "Estase Urinária e Critério Microbiológico",
+                "Tratamento Obrigatório e Controle de Cura"
+              ]
             },
             {
-                "foco": "Mecanismo do Parto em Cefálica Fletida e Apresentações Defletidas/Pélvicas",
-                "subfocos": [
-                    {
-                        "subfoco": "Os Tempos do Mecanismo do Parto",
-                        "sub_subfocos": [
-                            "1º Tempo: Insinuação (Passagem do Maior Diâmetro Transverso pelo Estreito Superior / Plano 0 de De Lee) e Flexão da Cabeça (Diâmetro Suboccipitobregmático 9,5 cm)",
-                            "2º Tempo: Descida e Rotação Interna da Cabeça (Variedades Anteriores como OEA viram para Púbis / OP)",
-                            "3º Tempo: Desprendimento da Cabeça por Deflexão / Extensão",
-                            "4º Tempo: Restituição / Rotação Externa da Cabeça e Desprendimento dos Ombros (Ombro Anterior sob a Sínfise Púbica seguido do Posterior)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Apresentações Anômalas (Defletidas e Pélvicas)",
-                        "sub_subfocos": [
-                            "Apresentações Defletidas: 1º Grau / Bregma (Linha Sagital, Brequegmática), 2º Grau / Fronte (Pior Prognóstico, Diâmetro Occipitomentoniano 13,5 cm - Cesariana Mandatória), 3º Grau / Face (Ponto de Referência Mento - Parto Vaginal Apenas se Mento-Anterior)",
-                            "Apresentação Pélvica: Manobras de Auxílio ao Parto Vaginal (Bracht, Mauriceau, Pajot)"
-                        ]
-                    }
-                ]
+              "subfoco": "Cistite Aguda e Segurança Antimicrobiana",
+              "sub_subfocos": [
+                "Clínica de Cistite e Terapia Empírica",
+                "Antimicrobianos Contraindicados ou Restritos na Gestação"
+              ]
             },
             {
-                "foco": "Interpretação do Partograma e Linhas de Ação/Alerta",
-                "subfocos": [
-                    {
-                        "subfoco": "Linhas de Alerta e Ação e Distócias Funcionais",
-                        "sub_subfocos": [
-                            "Abertura do Partograma na Fase Ativa (Dilatação >= 4-5 cm); Linha de Alerta e Linha de Ação (Traçada 4 Horas à Direita da Linha de Alerta)",
-                            "Fase Ativa Prolongada: Dilatação Cervical Lenta (< 1 cm/hora) Ultrapassando a Linha de Alerta (Causa: Hipocinesia Uterina; Conduta: Ocitocina e Amniotomia)",
-                            "Parada Secundária da Dilatação: Dilatação Cervical Estagnada na Mesma Medida por 2 Horas Consecutivas na Fase Ativa (Desproporção Cefalopélvica - Indicação de Cesariana)",
-                            "Período Expulsivo Prolongado: Dilatação Total com Descida Fetal Parada por > 1-2 Horas",
-                            "Parto Precipitado / Taquitócico: Trabalho de Parto e Parto Concluídos em Menos de 4 Horas"
-                        ]
-                    },
-                    {
-                        "subfoco": "Planos de De Lee e Avaliação da Descida",
-                        "sub_subfocos": [
-                            "Espinhas Isquiáticas / Ciáticas como Ponto de Referência Zero (Plano 0 de De Lee = Insinuação Comprovada)",
-                            "Variação de -3 a +3 cm no Canal de Parto"
-                        ]
-                    }
-                ]
+              "subfoco": "Pielonefrite Aguda e Complicações Sistêmicas",
+              "sub_subfocos": [
+                "Internação Hidratação e Antibioticoterapia Parenteral",
+                "Complicações Pulmonares Sépticas e Obstétricas"
+              ]
             },
             {
-                "foco": "Distócias de Trajeto, Motoras e de Ombro",
-                "subfocos": [
-                    {
-                        "subfoco": "Distócias Ósseas e de Partes Moles",
-                        "sub_subfocos": [
-                            "Avaliação da Bacia Obstétrica (Pelvimetria Clínica e Diâmetro Conjugata Vera vs Diagonal)",
-                            "Distócias de Partes Moles: Miomas Cervicais Prévios, Septos Vaginais e Edema de Colo"
-                        ]
-                    },
-                    {
-                        "subfoco": "Distócia de Ombro: Fatores de Risco e Manobras Sequenciais",
-                        "sub_subfocos": [
-                            "Fatores Predisponentes: Macrossomia Fetal e Diabetes Gestacional, e Sinal da Tartaruga",
-                            "Algoritmo Canônico de Manobras: McRoberts + Pressão Suprapúbica (Rubin I), Manobra de Rubin II, Woods e Gaskin"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Fórcipe e Vácuo-Extrator (Indicações e Condições de Aplicabilidade)",
-                "subfocos": [
-                    {
-                        "subfoco": "Condições de Aplicabilidade do Fórcipe",
-                        "sub_subfocos": [
-                            "Condições Mandatórias: Dilatação Cervical Total (10 cm), Bolsa Rota, Feto Vivo, Apresentação Cefálica Fletida, Proporção Cefalopélvica Adequada, Pelve Materna Conhecida e Bacia Esvaziada",
-                            "Insinuação Mínima: Cabeça Fetal em Plano >= +2 de De Lee (Fórcipe Baixo / de Alívio)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Tipos de Fórcipe e Complicações",
-                        "sub_subfocos": [
-                            "Fórcipe de Simpson (Ideal para Cabeça Fletida sem Rotação Complexa)",
-                            "Fórcipe de Piper (Exclusivo para Cabeça Derradeira em Parto Pélvico)",
-                            "Fórcipe de Kielland (Para Correção de Assinclitismo e Grandes Rotações)",
-                            "Vácuo-Extrator: Menor Risco de Lacerações Maternas, Contraindicado em Prematuros (< 34 semanas)"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Cesariana (Indicações, Técnica e Parto Vaginal após Cesárea)",
-                "subfocos": [
-                    {
-                        "subfoco": "Indicações Absolutas vs Relativas de Cesariana",
-                        "sub_subfocos": [
-                            "Indicações Absolutas Canônicas: Desproporção Cefalopélvica Absoluta, Placenta Prévia Oclusiva Total, Vasa Prévia e Herpes Ativo",
-                            "Classificação de Robson (Grupos 1 a 10) para Auditoria e Redução de Cesarianas Desnecessárias"
-                        ]
-                    },
-                    {
-                        "subfoco": "Parto Vaginal após Cesárea Prévia (VBAC) e Riscos de Rotura",
-                        "sub_subfocos": [
-                            "Critérios de Segurança para Prova de Trabalho de Parto: Uma Cesárea Transversal Prévia e Ausência de Distócia Prévia",
-                            "Contraindicação Absoluta ao Uso de Misoprostol pelo Risco Catastrófico de Rotura Uterina"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Indução do Parto e Escore de Bishop",
-                "subfocos": [
-                    {
-                        "subfoco": "Avaliação do Colo Uterino e Escore de Bishop",
-                        "sub_subfocos": [
-                            "5 Parâmetros do Escore de Bishop: Dilatação, Apagamento, Consistência, Posição e Altura da Apresentação",
-                            "Interpretação: Bishop >= 9 (Colo Favorável) vs Bishop <= 6 (Colo Desfavorável)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Métodos de Maturação Cervical e Indução",
-                        "sub_subfocos": [
-                            "Preparo de Colo Desfavorável: Métodos Mecânicos (Balão de Foley/Krause) e Prostaglandinas (Misoprostol)",
-                            "Condução com Ocitocina EV em Bomba de Infusão Contínua e Amniotomia Artificial"
-                        ]
-                    }
-                ]
+              "subfoco": "Profilaxia Supressiva na Infecção Recorrente",
+              "sub_subfocos": [
+                "Indicações Formais de Quimioprofilaxia Urinária Contínua",
+                "Esquemas Profiláticos e Seguimento Microbiológico Mensal"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Sífilis na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Diagnóstico Sorológico e Estadiamento Clínico",
+              "sub_subfocos": [
+                "Testagem Rápida e Teste Não Treponêmico",
+                "Classificação em Recente Tardia e Indeterminada"
+              ]
+            },
+            {
+              "subfoco": "Penicilina Benzatina e Dessensibilização",
+              "sub_subfocos": [
+                "Esquemas de Penicilina e Intervalo Semanal",
+                "Alergia Penicilínica e Reação de Jarisch-Herxheimer",
+                "Neurossífilis Materna e Penicilina Cristalina"
+              ]
+            },
+            {
+              "subfoco": "Parcerias Sexuais e Monitoramento Sorológico",
+              "sub_subfocos": [
+                "Requisitos Atuais de Tratamento Materno Adequado",
+                "Controle Mensal com VDRL e Retratamento"
+              ]
+            },
+            {
+              "subfoco": "Transmissão Vertical e Sífilis Intrauterina",
+              "sub_subfocos": [
+                "Sinais Ultrassonográficos de Sífilis Intrauterina",
+                "Manejo Inicial do Binômio na Maternidade"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "HIV na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Rastreamento Diagnóstico e Avaliação Inicial",
+              "sub_subfocos": [
+                "Momentos Obrigatórios de Testagem e Confirmação",
+                "Genotipagem Prévia e Profilaxia de Oportunistas"
+              ]
+            },
+            {
+              "subfoco": "Terapia Antirretroviral Combinada na Gestação",
+              "sub_subfocos": [
+                "Esquema Preferencial Inicial na Gestante",
+                "Carga Viral Decisória no Terceiro Trimestre"
+              ]
+            },
+            {
+              "subfoco": "Via de Parto e Zidovudina",
+              "sub_subfocos": [
+                "Via de Parto Conforme Carga Viral",
+                "Zidovudina Venosa e Proteção das Membranas"
+              ]
+            },
+            {
+              "subfoco": "Profilaxia Neonatal e Inibição Láctea",
+              "sub_subfocos": [
+                "Estratificação de Exposição e Antirretroviral Neonatal",
+                "Contraindicação Absoluta à Amamentação e Cabergolina"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Toxoplasmose na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Diagnóstico Sorológico e Avidez",
+              "sub_subfocos": [
+                "Interpretação dos Perfis Sorológicos Iniciais",
+                "Teste de Avidez no Primeiro Trimestre"
+              ]
+            },
+            {
+              "subfoco": "Investigação de Infecção Fetal Intrauterina",
+              "sub_subfocos": [
+                "Relação entre Transmissão Vertical e Gravidade",
+                "Amniocentese Molecular e Seguimento Ecográfico"
+              ]
+            },
+            {
+              "subfoco": "Bloqueio Placentário e Esquema Tríplice",
+              "sub_subfocos": [
+                "Quimioprofilaxia Placentária com Espiramicina",
+                "Esquema Tríplice no Acometimento Fetal"
+              ]
+            },
+            {
+              "subfoco": "Prevenção Primária Alimentar e Ambiental",
+              "sub_subfocos": [
+                "Medidas Higiênico-Dietéticas para Gestantes Suscetíveis",
+                "Prevenção do Contato com Oocistos Esporulados"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Hepatites Virais na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Sorologia e Vacinação Materna",
+              "sub_subfocos": [
+                "Interpretação Sorológica e Vacinação Gestacional",
+                "Marcadores de Replicação e Transmissão Vertical"
+              ]
+            },
+            {
+              "subfoco": "Profilaxia Antiviral Materna com Tenofovir",
+              "sub_subfocos": [
+                "Indicação de Tenofovir no Terceiro Trimestre",
+                "Segurança Materno-Fetal do Tenofovir"
+              ]
+            },
+            {
+              "subfoco": "Imunoprofilaxia Neonatal e Amamentação",
+              "sub_subfocos": [
+                "Vacina e Imunoglobulina nas Primeiras Horas",
+                "Liberação da Amamentação na Hepatite B"
+              ]
+            },
+            {
+              "subfoco": "Manejo Obstétrico da Hepatite C",
+              "sub_subfocos": [
+                "Triagem Universal e Adiamento dos Antivirais",
+                "Cuidados Intraparto e Conduta na Amamentação"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Estreptococo do Grupo B",
+          "subfocos": [
+            {
+              "subfoco": "Rastreamento Universal por Cultura Vagino-Retal",
+              "sub_subfocos": [
+                "Janela Gestacional e Técnica do Swab",
+                "Condições que Dispensam Coleta do Swab"
+              ]
+            },
+            {
+              "subfoco": "Indicações de Antibioticoprofilaxia Intraparto",
+              "sub_subfocos": [
+                "Indicações Microbiológicas e Antecedente Neonatal",
+                "Fatores de Risco sem Cultura Disponível"
+              ]
+            },
+            {
+              "subfoco": "Condições de Dispensa Profilática",
+              "sub_subfocos": [
+                "Cesariana Eletiva com Bolsa Íntegra",
+                "Colonização Isolada em Gestação Anterior"
+              ]
+            },
+            {
+              "subfoco": "Esquemas Antibióticos e Alergia Penicilínica",
+              "sub_subfocos": [
+                "Penicilina Cristalina e Ampicilina Intraparto",
+                "Escolha Antimicrobiana Segundo Risco de Anafilaxia"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Citomegalovírus na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Primoinfecção Materna e Diagnóstico Sorológico",
+              "sub_subfocos": [
+                "Transmissão Materna e Teste de Avidez",
+                "Prevenção Comportamental de Higiene na Gestante"
+              ]
+            },
+            {
+              "subfoco": "Confirmação Fetal e Achados Ultrassonográficos",
+              "sub_subfocos": [
+                "Momento Oportuno da Amniocentese para PCR",
+                "Estigmas Ultrassonográficos e Neuroimagem Fetal"
+              ]
+            },
+            {
+              "subfoco": "Terapia Antiviral e Sequelas Neurossensoriais",
+              "sub_subfocos": [
+                "Prevenção Secundária Materna e Tratamento Pós-Natal",
+                "Surdez Neurossensorial Progressiva e Seguimento Auditivo"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Rubéola na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Transmissão Vertical Conforme Idade Gestacional",
+              "sub_subfocos": [
+                "Malformações Graves na Infecção Precoce",
+                "Quadro Clínico Materno Exantemático e Linfadenopático"
+              ]
+            },
+            {
+              "subfoco": "Diagnóstico e Síndrome de Gregg",
+              "sub_subfocos": [
+                "Diagnóstico Materno Agudo e Notificação Compulsória",
+                "Tríade de Gregg e Manifestações Sistêmicas"
+              ]
+            },
+            {
+              "subfoco": "Prevenção Vacinal Pré-Concepcional e Puerperal",
+              "sub_subfocos": [
+                "Imunização Pré-Concepcional e no Puerpério",
+                "Conduta na Vacinação Inadvertida de Gestante"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Síndrome Congênita do Zika",
+          "subfocos": [
+            {
+              "subfoco": "Quadro Materno e Diagnóstico Laboratorial",
+              "sub_subfocos": [
+                "Clínica Materna e Vias de Transmissão",
+                "Janela Molecular no Sangue e Urina"
+              ]
+            },
+            {
+              "subfoco": "Neurotropismo e Estigmas da Síndrome",
+              "sub_subfocos": [
+                "Neuroimagem Distintiva da Infecção por Zika",
+                "Comprometimento Ocular Auditivo e Osteoarticular"
+              ]
+            },
+            {
+              "subfoco": "Prevenção Seguimento Ecográfico e Notificação",
+              "sub_subfocos": [
+                "Repelentes Seguros e Barreira Sexual",
+                "Vigilância Ecográfica e Cuidado Multiprofissional"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Herpes Simples na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Primoinfecção Recorrência e Risco Perinatal",
+              "sub_subfocos": [
+                "Risco Neonatal na Primoinfecção e Recorrência",
+                "Apresentação Clínica Genital e Formas Neonatais"
+              ]
+            },
+            {
+              "subfoco": "Terapia Antiviral e Profilaxia Supressiva",
+              "sub_subfocos": [
+                "Tratamento Medicamentoso do Episódio Agudo",
+                "Supressão Antiviral no Final da Gestação"
+              ]
+            },
+            {
+              "subfoco": "Via de Parto e Lactação",
+              "sub_subfocos": [
+                "Cesariana nas Lesões Ativas ou Pródromos",
+                "Parto Vaginal Sem Lesões e Amamentação"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Dengue na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Diagnóstico e Sinais de Alarme",
+              "sub_subfocos": [
+                "Diagnóstico Direto e Indireto por Fase",
+                "Sinais de Alarme e Diagnóstico Diferencial"
+              ]
+            },
+            {
+              "subfoco": "Estadiamento Clínico e Hidratação Guiada",
+              "sub_subfocos": [
+                "Classificação de Risco Materno e Analgesia",
+                "Ressuscitação Volêmica com Cristaloide e Reavaliação"
+              ]
+            },
+            {
+              "subfoco": "Complicações Hemorrágicas e Conduta Obstétrica",
+              "sub_subfocos": [
+                "Adiamento de Interrupções Eletivas na Viremia",
+                "Dengue Neonatal por Transmissão Periparto"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "COVID-19 na Gestação",
+          "subfocos": [
+            {
+              "subfoco": "Estratificação Clínica e Suporte Respiratório",
+              "sub_subfocos": [
+                "Fisiologia Respiratória Materna e Meta Oximétrica",
+                "Suporte Ventilatório Pronação e Imagem Torácica"
+              ]
+            },
+            {
+              "subfoco": "Terapia Farmacológica e Tromboprofilaxia",
+              "sub_subfocos": [
+                "Corticosteroides Maternos e Maturação Fetal",
+                "Anticoagulação Profilática em Gestantes Internadas"
+              ]
+            },
+            {
+              "subfoco": "Resolução Obstétrica Vacinação e Amamentação",
+              "sub_subfocos": [
+                "Indicações de Parto e Diagnóstico Diferencial",
+                "Vacinação Gestacional e Manutenção do Aleitamento"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Puerpério e Hemorragia Pós-Parto",
-        "focos": [
+      "tema": "Medicina Fetal e Gemelaridade",
+      "focos": [
+        {
+          "foco": "Ultrassonografia Obstétrica e Morfológica",
+          "subfocos": [
             {
-                "foco": "Puerpério Fisiológico e Aleitamento Materno",
-                "subfocos": [
-                    {
-                        "subfoco": "Modificações Locais e Sistêmicas do Puerpério Imediato e Tardio",
-                        "sub_subfocos": [
-                            "Involução Uterina Fisiológica (Fundo Uterino na Cicatriz Umbilical no Pós-Parto Imediato) e Loquiação (Rubra, Serosa, Alba)",
-                            "Puerpério Imediato (1º ao 10º dia), Tardio (11º ao 42º dia) e Remoto (> 42 dias)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Fisiologia da Lactação e Manejo de Dificuldades Iniciais",
-                        "sub_subfocos": [
-                            "Apojadura (Descida do Leite: 48-72h Pós-Parto) Mediada pela Queda de Progesterona e Ação da Prolactina",
-                            "Ingurgitamento Mamário Fisiológico vs Patológico: Ordenha de Alívio, Massagem e Compressas Frias"
-                        ]
-                    }
-                ]
+              "subfoco": "Ultrassonografia Inicial e Biometria Fetal",
+              "sub_subfocos": [
+                "Avaliação Ecográfica de Primeiro Trimestre",
+                "Parâmetros da Biometria e Peso Fetal"
+              ]
             },
             {
-                "foco": "Hemorragia Pós-Parto (HPP: 4 Ts - Tônus, Trauma, Tecido, Trombina)",
-                "subfocos": [
-                    {
-                        "subfoco": "Definição, Fatores de Risco e Manejo Ativo do 3º Período",
-                        "sub_subfocos": [
-                            "Definição Canônica de HPP: Perda Sanguínea > 500 mL (Parto Vaginal) ou > 1000 mL (Cesariana) em 24h",
-                            "Profilaxia Obrigatória: Administração de 10 UI de Ocitocina IM Imediatamente após a Saída do Ombro Anterior"
-                        ]
-                    },
-                    {
-                        "subfoco": "Algoritmo Terapêutico Sequencial da Atonia Uterina",
-                        "sub_subfocos": [
-                            "Massagem Uterina Bimanual (Manobra de Hamilton) e Uterotônicos em Cascata (Ocitocina EV, Metilergonovina, Misoprostol)",
-                            "Uso Precoce de Ácido Tranexâmico 1g EV nos Primeiros 30 Minutos e Balão de Tamponamento Intrauterino (Bakri)"
-                        ]
-                    }
-                ]
+              "subfoco": "Exame Morfológico de Primeiro Trimestre",
+              "sub_subfocos": [
+                "Janela Ideal e Medida da Translucência",
+                "Avaliação Anatômica Precoce e Doppler Uterino"
+              ]
             },
             {
-                "foco": "Infecção Puerperal e Endometrite Pós-Parto",
-                "subfocos": [
-                    {
-                        "subfoco": "Fisiopatologia, Critérios Diagnósticos e Fatores de Risco",
-                        "sub_subfocos": [
-                            "Critérios Clínicos de Morbidade Febril Puerperal: Febre >= 38°C em 2 Dias Consecutivos (Excluindo as Primeiras 24h)",
-                            "Tríade da Endometrite: Febre, Subinvolução Uterina Dolorosa e Lóquios Fétidos (Acentuada Pós-Cesariana)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Esquemas Antimicrobianos Venosos e Complicações",
-                        "sub_subfocos": [
-                            "Investigação de Febre Persistente: Abscesso Pélvico, Hematoma Infectado e Tromboflebite Pélvica Séptica",
-                            "Quadro Clínico da Mastite (Sinais Flogísticos Unilaterais em Quadrante Mamário, Febre Alta, Calafrios e Queda do EG)"
-                        ]
-                    }
-                ]
+              "subfoco": "Exame Morfológico de Segundo Trimestre",
+              "sub_subfocos": [
+                "Rastreamento Estrutural Sistêmico dos Órgãos Fetais",
+                "Cervicometria Transvaginal Universal Associada"
+              ]
             },
             {
-                "foco": "Mastite Puerperal e Abscesso Mamário",
-                "subfocos": [
-                    {
-                        "subfoco": "Diagnóstico Diferencial: Ingurgitamento vs Mastite Puerperal",
-                        "sub_subfocos": [
-                            "Principal Agente Etiológico: Staphylococcus aureus e Manutenção Obrigatória da Amamentação na Mama Afetada",
-                            "Tratamento Antimicrobiano com Cefalexina ou Amoxicilina-Clavulanato por 10 a 14 Dias"
-                        ]
-                    },
-                    {
-                        "subfoco": "Antibioticoterapia e Manejo de Abscessos Mamários",
-                        "sub_subfocos": [
-                            "Abscesso Mamário Fluctuante: Diagnóstico Ultrassonográfico e Drenagem por Aspiração com Agulha ou Incisão",
-                            "Estado de Hipercoagulabilidade Puerperal e Alto Risco de Trombose Venosa Profunda em Membros Inferiores"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Tromboflebite Pélvica Séptica e TVP no Puerpério",
-                "subfocos": [
-                    {
-                        "subfoco": "Tromboembolismo Venoso no Puerpério",
-                        "sub_subfocos": [
-                            "Anticoagulação Terapêutica Segura no Puerpério e Lactação com Heparina de Baixo Peso Molecular (Enoxaparina)",
-                            "Suspeita em Paciente com Endometrite que Mantém Febre em Picos (Febre em Agulha) apesar de Antibioticoterapia Ampla"
-                        ]
-                    },
-                    {
-                        "subfoco": "Tromboflebite Pélvica Séptica (Diagnóstico de Exclusão)",
-                        "sub_subfocos": [
-                            "Teste Terapêutico Diagnóstico com Heparinização Plena EV (Resolução Rápida da Febre em 48-72h)",
-                            "Blues Puerperal: Transitório, Início Precoce (3º ao 5º dia), Autolimitado (até 2 semanas), sem Prejuízo do Vínculo"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Depressão e Psicose Puerperal",
-                "subfocos": [
-                    {
-                        "subfoco": "Blues Puerperal (Disforia Pós-Parto) vs Depressão Pós-Parto",
-                        "sub_subfocos": [
-                            "Depressão Pós-Parto: Sintomas Persistentes (> 2 semanas), Anedonia, Sentimento de Culpa e Incapacidade de Cuidar do Bebê",
-                            "Quadro Clínico Severo: Alucinações, Delírios de Conteúdo Místico/Persecutório e Alto Risco de Infanticídio e Suicídio"
-                        ]
-                    },
-                    {
-                        "subfoco": "Psicose Puerperal: Emergência Psiquiátrica",
-                        "sub_subfocos": [
-                            "Manejo Imediato com Internação Psiquiátrica, Separação Supervisionada do Bebê e Antipsicóticos"
-                        ]
-                    }
-                ]
+              "subfoco": "Ecocardiografia Fetal e Biossegurança Acústica",
+              "sub_subfocos": [
+                "Indicações Maternas e Fetais de Ecocardiografia",
+                "Biossegurança Acústica e Princípio ALARA"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Rastreamento Pré-Natal de Aneuploidias",
+          "subfocos": [
+            {
+              "subfoco": "Marcadores Ultrassonográficos de Aneuploidias",
+              "sub_subfocos": [
+                "Marcadores Maiores do Primeiro Trimestre",
+                "Marcadores Menores no Segundo Trimestre"
+              ]
+            },
+            {
+              "subfoco": "Rastreamento Bioquímico Materno Combinado",
+              "sub_subfocos": [
+                "Teste Combinado de Primeiro Trimestre",
+                "Marcadores Sérico-Maternos de Segundo Trimestre"
+              ]
+            },
+            {
+              "subfoco": "Pesquisa de DNA Fetal Circulante",
+              "sub_subfocos": [
+                "Fundamentos Biológicos e Fração Fetal Mínima",
+                "Limitações Clínicas e Necessidade de Confirmação"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Procedimentos Fetais Invasivos",
+          "subfocos": [
+            {
+              "subfoco": "Biópsia de Vilo Corial",
+              "sub_subfocos": [
+                "Janela Gestacional e Vantagem Precoce",
+                "Riscos de Perda e Mosaicismo Placentário"
+              ]
+            },
+            {
+              "subfoco": "Amniocentese Genética e Infecciosa",
+              "sub_subfocos": [
+                "Técnica Guiada e Janela Segura",
+                "Métodos Citogenéticos e Moleculares no Líquido"
+              ]
+            },
+            {
+              "subfoco": "Cordocentese e Terapia Fetal Intrauterina",
+              "sub_subfocos": [
+                "Indicações Diagnósticas e Terapêuticas da Cordocentese",
+                "Intervenções Fetais e Cirurgia Intrauterina"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Malformações Congênitas Fetais",
+          "subfocos": [
+            {
+              "subfoco": "Defeitos Abertos do Tubo Neural",
+              "sub_subfocos": [
+                "Anencefalia e Sequência Acrania-Exencefalia",
+                "Mielomeningocele Sinais Cranianos e Correção Intrauterina"
+              ]
+            },
+            {
+              "subfoco": "Hérnia Diafragmática e Defeitos Abdominais",
+              "sub_subfocos": [
+                "Diferenciação entre Onfalocele e Gastrosquise",
+                "Hérnia Diafragmática Congênita e Prognóstico Pulmonar"
+              ]
+            },
+            {
+              "subfoco": "Uropatias Obstrutivas e Agenesia Renal",
+              "sub_subfocos": [
+                "Válvula de Uretra Posterior e Megabexiga",
+                "Agenesia Renal Bilateral e Sequência Potter"
+              ]
+            },
+            {
+              "subfoco": "Teratogênese Farmacológica e Ambiental",
+              "sub_subfocos": [
+                "Fármacos Clássicos de Alto Potencial Teratogênico",
+                "Síndrome Alcoólica Fetal e Radiação Ionizante"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Restrição de Crescimento Fetal",
+          "subfocos": [
+            {
+              "subfoco": "Classificação Constitucional Precoce e Tardia",
+              "sub_subfocos": [
+                "Feto Pequeno Constitucional e Feto Restrito",
+                "Fenótipos da Restrição Precoce e Tardia"
+              ]
+            },
+            {
+              "subfoco": "Etiologias Maternas Fetais e Placentárias",
+              "sub_subfocos": [
+                "Causas Intrínsecas de Restrição Simétrica",
+                "Causas Uteroplacentárias de Restrição Assimétrica"
+              ]
+            },
+            {
+              "subfoco": "Deterioração Hemodinâmica ao Doppler Fetal",
+              "sub_subfocos": [
+                "Alterações Arteriais Umbilical e Cerebral Média",
+                "Descompensação Venosa de Acidemia Fetal"
+              ]
+            },
+            {
+              "subfoco": "Vigilância Seriada e Momento Resolutivo",
+              "sub_subfocos": [
+                "Idade Gestacional de Interrupção Segundo Gravidade",
+                "Via de Parto e Cuidados Perinatais"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Distúrbios do Líquido Amniótico",
+          "subfocos": [
+            {
+              "subfoco": "Fisiologia e Mensuração Ultrassonográfica",
+              "sub_subfocos": [
+                "Fontes Produtoras e Vias de Reabsorção",
+                "Índice dos Quatro Quadrantes e Bolsão"
+              ]
+            },
+            {
+              "subfoco": "Oligodrâmnio Etiologias e Conduta Obstétrica",
+              "sub_subfocos": [
+                "Investigação Diferencial das Causas de Oligodrâmnio",
+                "Hidratação Materna e Resolução no Termo"
+              ]
+            },
+            {
+              "subfoco": "Polidrâmnio Investigação e Manejo Clínico",
+              "sub_subfocos": [
+                "Causas Maternas Placentárias e Obstrutivas Fetais",
+                "Complicações Obstétricas e Amniocentese Descompressiva"
+              ]
+            },
+            {
+              "subfoco": "Líquido Amniótico Meconial e Repercussões",
+              "sub_subfocos": [
+                "Significado Fisiológico e Patológico do Mecônio",
+                "Conduta Intraparto na Presença de Mecônio"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Aloimunização Materno-Fetal",
+          "subfocos": [
+            {
+              "subfoco": "Fisiopatologia da Sensibilização Eritrocitária",
+              "sub_subfocos": [
+                "Resposta Imune Primária e Secundária Transplacentária",
+                "Anticorpos Irregulares Não-D e Anti-Kell"
+              ]
+            },
+            {
+              "subfoco": "Imunoprofilaxia com Imunoglobulina Anti-D",
+              "sub_subfocos": [
+                "Indicações Anteparto Pós-Parto e Eventos Sensibilizantes",
+                "Teste de Kleihauer e Coombs Pós-Imunoglobulina"
+              ]
+            },
+            {
+              "subfoco": "Velocimetria Doppler da Cerebral Média",
+              "sub_subfocos": [
+                "Título Crítico de Coombs e Genotipagem",
+                "Pico Sistólico na Artéria Cerebral Média"
+              ]
+            },
+            {
+              "subfoco": "Hidropsia Imune e Transfusão Intrauterina",
+              "sub_subfocos": [
+                "Fisiopatologia e Ecografia da Hidropsia Fetal",
+                "Transfusão Intrauterina e Momento Resolutivo"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Gestação Gemelar e Corionicidade",
+          "subfocos": [
+            {
+              "subfoco": "Zigotia Clivagem Embrionária e Placentação",
+              "sub_subfocos": [
+                "Gestação Dizigótica e Gestação Monozigótica",
+                "Dia da Clivagem e Tipo Placentário"
+              ]
+            },
+            {
+              "subfoco": "Determinação Ultrassonográfica da Corionicidade",
+              "sub_subfocos": [
+                "Sinal do Lambda e Sinal T",
+                "Corionicidade como Determinante do Prognóstico"
+              ]
+            },
+            {
+              "subfoco": "Seguimento Específico e Complicações Maternas",
+              "sub_subfocos": [
+                "Periodicidade Ecográfica Diferenciada pela Placentação",
+                "Sobrecarga Materna e Prevenção na Gemelaridade"
+              ]
+            },
+            {
+              "subfoco": "Conduta no Parto de Gemelares",
+              "sub_subfocos": [
+                "Idade Gestacional Conforme Corionicidade",
+                "Parto Vaginal e Indicação de Cesariana"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Complicações da Monocorionicidade",
+          "subfocos": [
+            {
+              "subfoco": "Síndrome de Transfusão Feto-Fetal",
+              "sub_subfocos": [
+                "Critério Diagnóstico de Bolsões Doador-Receptor",
+                "Estadiamento de Quintero e Coagulação Laser"
+              ]
+            },
+            {
+              "subfoco": "Sequência TAPS e Perfusão Reversa",
+              "sub_subfocos": [
+                "Sequência de Anemia-Policitemia Gemelar",
+                "Perfusão Arterial Reversa e Feto Acárdico"
+              ]
+            },
+            {
+              "subfoco": "Restrição Seletiva e Gestação Monoamniótica",
+              "sub_subfocos": [
+                "Restrição de Crescimento Seletiva na Monocorionicidade",
+                "Entrelaçamento Funicular na Gestação Monoamniótica"
+              ]
+            },
+            {
+              "subfoco": "Óbito Intrauterino de Um Gemelar",
+              "sub_subfocos": [
+                "Lesão Neurológica Aguda no Sobrevivente Monocoriônico",
+                "Conduta Expectante Pós-Evento e Neuroimagem"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Avaliação da Vitalidade Fetal",
-        "focos": [
+      "tema": "Vitalidade e Sofrimento Fetal",
+      "focos": [
+        {
+          "foco": "Cardiotocografia",
+          "subfocos": [
             {
-                "foco": "Cardiotocografia Basal e Intraparto (Categorias I, II e III)",
-                "subfocos": [
-                    {
-                        "subfoco": "Parâmetros Normais da Cardiotocografia",
-                        "sub_subfocos": [
-                            "Linha de Base Normal: FC Fetal entre 110 e 160 bpm",
-                            "Variabilidade Normal: Moderada (Flutuações entre 6 e 25 bpm - Marcador Mais Fidedigno de Boa Oxigenação do SNC Fetal)",
-                            "Acelerações Transitórias (Aumento >= 15 bpm por >= 15 segundos)",
-                            "Contrações Uterinas Normais: Até 4 a 5 Contrações em 10 Minutos (Sem Taquissistolia)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Desacelerações e Categorias I, II e III do FIGO/ACOG",
-                        "sub_subfocos": [
-                            "DIP I / Desaceleração Precoce: Espelhada com a Contração por Compressão Cefálica Fetal Vagal (Fisiológica)",
-                            "DIP II / Desaceleração Tardia: Ocorre após o Pico da Contração por Hipóxia e Asfixia Útero-Placentária (Patológica)",
-                            "DIP III / Desaceleração Variável: Desacelerações Abruptas em \"V\" por Compressão de Cordão Umbilical",
-                            "Categoria I (Normal / Feto Hígido); Categoria II (Indeterminada / Reavaliação); Categoria III (Anormal / Sofrimento Fetal Agudo Grave com Variabilidade Ausente + DIP II/DIP III Recorrentes ou Padrão Sinusoidal - Indicação de Parto Imediato)"
-                        ]
-                    }
-                ]
+              "subfoco": "Parâmetros Basais da Cardiotocografia",
+              "sub_subfocos": [
+                "Linha de Base Taquicardia e Bradicardia",
+                "Variabilidade Autonômica e Reatividade pelas Acelerações",
+                "Critérios de Reatividade na Cardiotocografia Anteparto"
+              ]
             },
             {
-                "foco": "Perfil Biofísico Fetal (PBF)",
-                "subfocos": [
-                    {
-                        "subfoco": "Parâmetros Agudos e Crônicos do PBF",
-                        "sub_subfocos": [
-                            "Parâmetro Crônico (Líquido Amniótico - ILA) vs Parâmetros Agudos (Reatividade Cardíaca, Movimentos Respiratórios, Movimentos Corpóreos, Tônus Fetal)",
-                            "Pontuação do PBF (Total de 10 Pontos: 2 Pontos por Parâmetro Normal e 0 se Anormal)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Interpretação e Conduta Obstétrica",
-                        "sub_subfocos": [
-                            "Escore 8/10 ou 10/10 com ILA Normal: Feto Hígido e Bem-Estar Confirmado",
-                            "Escore <= 4/10: Forte Indício de Asfixia Fetal Aguda Grave e Indicação de Interrupção da Gestação"
-                        ]
-                    }
-                ]
+              "subfoco": "Classificação Fisiopatológica das Desacelerações",
+              "sub_subfocos": [
+                "Desacelerações Precoce Cefálica e Tardia Placentária",
+                "Desaceleração Variável Umbilical e Sinais Desfavoráveis"
+              ]
             },
             {
-                "foco": "Dopplervelocimetria Obstétrica (Artérias Uterinas, Umbilical e Cerebral Média, Ducto Venoso)",
-                "subfocos": [
-                    {
-                        "subfoco": "Artérias Uterinas, Umbilical e Cerebral Média",
-                        "sub_subfocos": [
-                            "Doppler de Artérias Uterinas no 2º Trimestre: Presença de Incisura Protodiastólica Bilateral Persistente após 24-26 Semanas Indica Falha na 2ª Onda de Invasão Trofoblástica e Risco Aumentado de Pré-Eclâmpsia e RCIU",
-                            "Doppler de Artéria Umbilical: Avalia a Resistência Placentária (Aumento da Relação S/D, Diástole Zero e Diástole Reversa como Indicador Crítico de Insuficiência Placentária)",
-                            "Doppler de Artéria Cerebral Média (ACM): Vasodilatação com Queda do Índice de Pulsatilidade (Centralização Fetal - Priorização de Fluxo para Cérebro, Coração e Adrenais)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Ducto Venoso e Avaliação da Acidemia Fetal",
-                        "sub_subfocos": [
-                            "Avaliação Hemodinâmica Cardíaca Direita Fetal: Onda A Normal (Anterógrada na Contração Atrial)",
-                            "Onda A Zero ou Reversa no Ducto Venoso em Feto com RCIU Centralizado Indica Acidose Grave e Risco Iminente de Morte Fetal (Indicação de Parto Imediato)"
-                        ]
-                    }
-                ]
+              "subfoco": "Categorização Intraparto e Padrão Sinusoidal",
+              "sub_subfocos": [
+                "Sistema de Três Categorias Intraparto",
+                "Categoria Três e Padrão Sinusoidal"
+              ]
             },
             {
-                "foco": "Restrição de Crescimento Intrauterino (RCIU)",
-                "subfocos": [
-                    {
-                        "subfoco": "Classificação e Diagnóstico Ultrassonográfico da RCF",
-                        "sub_subfocos": [
-                            "Definição Canônica (Peso Fetal Estimado < P10 com Doppler Alterado ou < P3 Isolado)",
-                            "RCIU Precoce (< 32 semanas, Insuficiência Placentária Grave, Alta Resistência) vs Tardio (>= 32 semanas, Hipóxia Crônica Sutil)",
-                            "Centralização Fetal: Vasodilatação da Artéria Cerebral Média com Aumento da Relação Cérebro-Placentária (RCP < 1)",
-                            "Alterações Críticas do Ducto Venoso (Onda A Negativa/Reversa) como Marcador Máximo de Acidemia e Indicação de Cesárea"
-                        ]
-                    },
-                    {
-                        "subfoco": "Seguimento Dopplerfluorimétrico e Momento do Parto",
-                        "sub_subfocos": [
-                            "Índice de Líquido Amniótico (ILA normal: 8 a 18 cm; Oligoidrâmnio < 5 cm; Polidrâmnio > 24 cm)"
-                        ]
-                    }
-                ]
-            },
-            {
-                "foco": "Oligoidrâmnio e Polidrâmnio",
-                "subfocos": [
-                    {
-                        "subfoco": "Avaliação Semiológica do Volume de Líquido Amniótico (ILA e Maior Bolsão)",
-                        "sub_subfocos": [
-                            "Maior Bolsão Vertical Único (MBV normal: 2 a 8 cm; Oligo < 2 cm; Poli > 8 cm)",
-                            "Oligoidrâmnio: Relação com Insuficiência Placentária, RPMO e Malformações Renais (Agenesia Renal / Sequência de Potter)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Etiologia e Repercussões Materno-Fetais",
-                        "sub_subfocos": [
-                            "Polidrâmnio: Relação com Diabetes Gestacional Descompensado, Malformações Digestivas (Atresia Esofágica) e Gemelaridade"
-                        ]
-                    }
-                ]
+              "subfoco": "Conduta Clínica nos Traçados Cardiotocográficos",
+              "sub_subfocos": [
+                "Ausculta Intermitente e Monitorização Contínua",
+                "Conduta nas Categorias Dois e Três"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Perfil Biofísico e Dopplerfluxometria",
+          "subfocos": [
+            {
+              "subfoco": "Mobilograma e Perfil de Manning",
+              "sub_subfocos": [
+                "Componentes Agudos Neurológicos e Componente Crônico",
+                "Sequência de Perda das Variáveis Biofísicas"
+              ]
+            },
+            {
+              "subfoco": "Doppler Uteroplacentário e Arterial Umbilical",
+              "sub_subfocos": [
+                "Artérias Uterinas e Incisura Protodiastólica",
+                "Resistência Placentária pela Artéria Umbilical"
+              ]
+            },
+            {
+              "subfoco": "Centralização Hemodinâmica e Doppler Venoso",
+              "sub_subfocos": [
+                "Mecanismo de Redistribuição Arterial de Fluxo",
+                "Ducto Venoso e Descompensação Cardíaca"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Sofrimento Fetal Agudo",
+          "subfocos": [
+            {
+              "subfoco": "Fisiopatologia e Causas Intraparto",
+              "sub_subfocos": [
+                "Evolução da Hipoxemia para Acidose Metabólica",
+                "Eventos Agudos Desencadeantes Intraparto"
+              ]
+            },
+            {
+              "subfoco": "Manobras de Ressuscitação Intrauterina",
+              "sub_subfocos": [
+                "Posicionamento Expansão Volêmica e Suspensão Ocitócica",
+                "Tocólise de Emergência e Prolapso Funicular"
+              ]
+            },
+            {
+              "subfoco": "Extração Imediata e Gasometria Umbilical",
+              "sub_subfocos": [
+                "Via Mais Rápida de Extração Fetal",
+                "Confirmação pela Gasometria do Cordão Umbilical"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Óbito Fetal",
+          "subfocos": [
+            {
+              "subfoco": "Diagnóstico Clínico Ecográfico e Etiologias",
+              "sub_subfocos": [
+                "Ultrassom Confirmatório e Sinais Radiológicos",
+                "Principais Grupos Etiológicos de Mortalidade Fetal"
+              ]
+            },
+            {
+              "subfoco": "Protocolo de Investigação Etiológica Perinatal",
+              "sub_subfocos": [
+                "Exames de Maior Rendimento Diagnóstico Pós-Óbito",
+                "Declaração de Óbito Fetal e Luto"
+              ]
+            },
+            {
+              "subfoco": "Coagulopatia e Indução do Parto",
+              "sub_subfocos": [
+                "Risco Tardio de Coagulação Intravascular Disseminada",
+                "Indução Preferencial do Parto Vaginal"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Prematuridade e Amniorrexe Prematura",
-        "focos": [
+      "tema": "Prematuridade e Amniorrexe",
+      "focos": [
+        {
+          "foco": "Trabalho de Parto Prematuro",
+          "subfocos": [
             {
-                "foco": "Rotura Prematura de Membranas Ovulares (RPMO / Amniorrexe Prematura)",
-                "subfocos": [
-                    {
-                        "subfoco": "Diagnóstico Clínico da Amniorrexe Prematura",
-                        "sub_subfocos": [
-                            "História de Perda Súbita de Líquido Claro com Odor de Água Sanitária em Volume Abundante",
-                            "Confirmação ao Exame Especular Estéril: Saída de Líquido Amniótico pelo Orifício Externo do Colo às Manobras de Valsalva",
-                            "Testes Complementares: Teste do pH com Papel de Nitrazina (Vira Azul com pH Alcalino > 6,5) e Teste de Cristalização do Muco em \"Folha de Samambaia"
-                        ]
-                    },
-                    {
-                        "subfoco": "Conduta na RPMO Pré-Termo (24 a 34 Semanas)",
-                        "sub_subfocos": [
-                            "Manejo Conservador na Ausência de Corioamnionite ou Sofrimento Fetal",
-                            "Corticoterapia Antenatal (Betametasona 12 mg IM 2 Doses com Intervalo de 24h para Aceleração da Maturidade Pulmonar Fetal)",
-                            "Antibioticoterapia de Latência (Ampicilina + Azitromicina) para Aumentar o Tempo de Permanência Intrauterina e Prevenir Infecção",
-                            "Contraindicação Formal de Tocólise Prolongada se Bolsa Rota"
-                        ]
-                    }
-                ]
+              "subfoco": "Predição Cervical e Prevenção Farmacológica",
+              "sub_subfocos": [
+                "Fatores de Risco para Prematuridade Espontânea",
+                "Colo Curto Progesterona Vaginal e Cerclagem"
+              ]
             },
             {
-                "foco": "Trabalho de Parto Prematuro (Corticoterapia, Tocólise e Neuroproteção)",
-                "subfocos": [
-                    {
-                        "subfoco": "Diagnóstico e Predição do TPP",
-                        "sub_subfocos": [
-                            "Presença de Contrações Uterinas Regulares (Pelo Menos 4 em 20 Minutos) associadas a Modificação Cervical (Dilatação >= 2-3 cm ou Apagamento > 50%) entre 20 e 37 Semanas",
-                            "Marcadores Preditivos em Pacientes com Risco: Medida do Comprimento do Colo Uterino pela USG Transvaginal (< 25 mm entre 20-24s Indica Alto Risco) e Fibronectina Fetal"
-                        ]
-                    },
-                    {
-                        "subfoco": "Manejo Farmacológico: Tocólise, Corticoide e Neuroproteção",
-                        "sub_subfocos": [
-                            "Tocólise de Curto Prazo (por 48 Horas Apenas para Permitir Ação do Corticoide): Bloqueador de Canal de Cálcio (Nifedipino Oral de 1ª Escolha) ou Antagonista de Ocitocina (Atosibana)",
-                            "Corticoterapia com Betametasona entre 24 e 34 Semanas (Reduz Risco de Membrana Hialina, Hemorragia Peri- Intraventricular e Enterocolite Necrosante)",
-                            "Neuroproteção Fetal com Sulfato de Magnésio EV se Parto Iminente < 32 Semanas (Prevenção de Paralisia Cerebral)"
-                        ]
-                    }
-                ]
+              "subfoco": "Diagnóstico do Trabalho Prematuro Verdadeiro",
+              "sub_subfocos": [
+                "Dinâmica Uterina Associada a Modificação Cervical",
+                "Estratificação com Cervicometria e Fibronectina"
+              ]
             },
             {
-                "foco": "Corioamnionite Aguda",
-                "subfocos": [
-                    {
-                        "subfoco": "Critérios Clínicos de Gibbs e Fatores de Risco",
-                        "sub_subfocos": [
-                            "Critérios de Gibbs: Febre Materna (>= 37,8°C) associada a >= 2 sinais (Taquicardia Materna, Taquicardia Fetal, Líquido Amniótico Fétido, Dor Uterina)",
-                            "Fatores Predisponentes: Amniorrexe Prematura Prolongada e Toques Vaginais Múltiplos e Repetidos"
-                        ]
-                    },
-                    {
-                        "subfoco": "Conduta Obstétrica Ativa Imediata e Terapia Antimicrobiana",
-                        "sub_subfocos": [
-                            "Indicação Absoluta de Interrupção Imediata da Gravidez (Não Importa a Idade Gestacional; Corioamnionite Não se Tocólisa)",
-                            "Antibioticoterapia Venosa Imediata de Amplo Espectro com Ampicilina + Gentamicina EV"
-                        ]
-                    }
-                ]
+              "subfoco": "Tocólise Farmacológica e Contraindicações",
+              "sub_subfocos": [
+                "Finalidade da Tocólise e Contraindicações",
+                "Escolha do Agente Tocolítico e Segurança",
+                "Ausência de Indicação para Tocólise Crônica"
+              ]
             },
             {
-                "foco": "Gravidez Prolongada (Pós-Datismo)",
-                "subfocos": [
-                    {
-                        "subfoco": "Definição, Fisiopatologia e Riscos Perinatais",
-                        "sub_subfocos": [
-                            "Definições: Gravidez a Termo Tardio (41 semanas a 41 semanas e 6 dias) vs Pós-Termo (>= 42 semanas completas)",
-                            "Riscos de Insuficiência Placentária Senescente, Oligoidrâmnio, Síndrome de Aspiração Meconial (SAM) e Macrossomia"
-                        ]
-                    },
-                    {
-                        "subfoco": "Monitorização da Vitalidade e Protocolos de Indução",
-                        "sub_subfocos": [
-                            "Avaliação Fetal Intensiva a partir de 40 Semanas (Cardiotocografia e Medida do ILA a cada 48-72h)",
-                            "Recomendação Canônica de Indução Eletiva do Parto entre 41 e 42 Semanas para Prevenção de Óbito Fetal"
-                        ]
-                    }
-                ]
+              "subfoco": "Corticoterapia Antenatal para Maturação Pulmonar",
+              "sub_subfocos": [
+                "Benefícios Neonatais e Esquemas de Corticoide",
+                "Janela Gestacional e Ciclo de Resgate"
+              ]
+            },
+            {
+              "subfoco": "Neuroproteção e Assistência ao Prematuro",
+              "sub_subfocos": [
+                "Sulfato de Magnésio para Neuroproteção Fetal",
+                "Profilaxia Estreptocócica e Via de Parto"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Rotura Prematura de Membranas",
+          "subfocos": [
+            {
+              "subfoco": "Diagnóstico Clínico e Testes Auxiliares",
+              "sub_subfocos": [
+                "Exame Especular Estéril e Evitação Digital",
+                "Métodos Complementares na Dúvida Diagnóstica"
+              ]
+            },
+            {
+              "subfoco": "Manejo da Amniorrexe no Termo",
+              "sub_subfocos": [
+                "Indução Imediata na Amniorrexe a Termo",
+                "Transição de Conduta no Pré-Termo Tardio"
+              ]
+            },
+            {
+              "subfoco": "Conduta Expectante na Amniorrexe Pré-Termo",
+              "sub_subfocos": [
+                "Elegibilidade para Manejo Conservador Hospitalar",
+                "Complicações da Anidrâmnio Precoce Pré-Viabilidade"
+              ]
+            },
+            {
+              "subfoco": "Antibióticos de Latência e Corticoterapia",
+              "sub_subfocos": [
+                "Antibioticoterapia para Ampliar Período de Latência",
+                "Corticoterapia Antenatal e Neuroproteção Associadas"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Corioamnionite",
+          "subfocos": [
+            {
+              "subfoco": "Diagnóstico Clínico da Infecção Intra-Amniótica",
+              "sub_subfocos": [
+                "Critérios Clínicos de Gibbs e Fisometria",
+                "Microbiologia Polimicrobiana e Fatores de Risco"
+              ]
+            },
+            {
+              "subfoco": "Antibioticoterapia Parenteral Imediata",
+              "sub_subfocos": [
+                "Ampicilina e Gentamicina Iniciadas Intraparto",
+                "Cobertura Anaeróbia Adicional na Cesariana"
+              ]
+            },
+            {
+              "subfoco": "Resolução Obstétrica e Via Preferencial",
+              "sub_subfocos": [
+                "Resolução Imediata e Preferência Vaginal",
+                "Condução Ocitócica e Risco Hemorrágico"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Gestação Prolongada",
+          "subfocos": [
+            {
+              "subfoco": "Classificação Cronológica e Datação",
+              "sub_subfocos": [
+                "Termo Tardio e Gestação Pós-Termo",
+                "Erro de Datação e Etiologias Verdadeiras"
+              ]
+            },
+            {
+              "subfoco": "Senescência Placentária e Pós-Maturidade",
+              "sub_subfocos": [
+                "Síndrome de Clifford e Aspiração Meconial",
+                "Macrossomia Contínua quando Função Placentária Preservada"
+              ]
+            },
+            {
+              "subfoco": "Vigilância Fetal e Indução Oportuna",
+              "sub_subfocos": [
+                "Vigilância Bisemanal de Vitalidade e Líquido",
+                "Indução Eletiva no Termo Tardio"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-        "tema": "Gestação Múltipla",
-        "focos": [
+      "tema": "Parto e Assistência Obstétrica",
+      "focos": [
+        {
+          "foco": "Pelvimetria Obstétrica",
+          "subfocos": [
             {
-                "foco": "Gemelaridade (Diagnóstico, Corionicidade e Amnionicidade)",
-                "subfocos": [
-                    {
-                        "subfoco": "Determinação da Corionicidade e Amnionicidade",
-                        "sub_subfocos": [
-                            "Diagnóstico Ultrassonográfico Precoce no 1º Trimestre: Sinal do Lambda ou \"Bico Duplo\" (Gestação Dicoriônica e Diamniótica)",
-                            "Sinal do \"T Invertido\" (Gestação Monocoriônica e Diamniótica - Alto Risco de Complicações Vasculares Vasculares Placentárias)",
-                            "Monocoriônica e Monoamniótica (Maior Risco de Entrelaçamento de Cordão)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Síndrome de Transfusão Feto-Fetal (STFF)",
-                        "sub_subfocos": [
-                            "Exclusiva de Gestações Monocoriônicas por Anastomoses Vasculares Arteriovenosas Profundas Desbalanceadas na Placenta",
-                            "Feto Doador: Hipovolemia, Oligúria, Oligoidrâmnio Severo (\"Feto Preso\" / Stuck Twin) e RCIU",
-                            "Feto Receptor: Hipervolemia, Poliúria, Polidrâmnio Marcado, Cardiomegalia, Insuficiência Cardíaca e Hidropsia Fetal"
-                        ]
-                    }
-                ]
+              "subfoco": "Classificação Morfológica de Caldwell-Moloy",
+              "sub_subfocos": [
+                "Bacias Ginecoide e Antropoide",
+                "Bacias Androide e Platipeloide"
+              ]
             },
             {
-                "foco": "Síndrome de Transfusão Feto-Fetal (STFF)",
-                "subfocos": [
-                    {
-                        "subfoco": "Fisiopatologia e Critérios Diagnósticos em Gestações Monocoriônicas",
-                        "sub_subfocos": [
-                            "Exclusividade de Gestações Monocoriônicas decorrente de Anastomoses Vasculares Arteriovenosas Profundas na Placenta Única",
-                            "Critérios Canônicos: Sequência Oligoidrâmnio (Bolsão < 2 cm no Doador) e Polidrâmnio (Bolsão > 8 cm no Receptor)"
-                        ]
-                    },
-                    {
-                        "subfoco": "Estadiamento de Quintero e Terapia Cirúrgica Fetal",
-                        "sub_subfocos": [
-                            "Estadiamento de Quintero (Estágio I: Oligo/Poli; Estágio II: Bexiga Não Visível; Estágio III: Doppler Alterado; Estágio IV: Hidropisia; Estágio V: Óbito)"
-                        ]
-                    }
-                ]
+              "subfoco": "Estreitos Pélvicos e Conjugatas Obstétricas",
+              "sub_subfocos": [
+                "Conjugata Diagonalis e Vera Obstétrica",
+                "Estreito Médio Bi-Isquiático e Estreito Inferior"
+              ]
             },
             {
-                "foco": "Complicações e Vias de Parto em Gestações Múltiplas",
-                "subfocos": [
-                    {
-                        "subfoco": "Determinação da Corionicidade e Amnionicidade no 1º Trimestre",
-                        "sub_subfocos": [
-                            "Complicações Graves Específicas de Monocoriônicas Monoamnióticas: Entrelaçamento de Cordões e Gêmeos Unidos"
-                        ]
-                    },
-                    {
-                        "subfoco": "Seleção da Via de Parto e Momento da Interrupção",
-                        "sub_subfocos": [
-                            "Critérios para Parto Vaginal: Gêmeo 1 Cefálico, Peso Estimado Semelhante e Ausência de Desproporção Cefalopélvica",
-                            "Indicação de Cesariana: Gêmeo 1 Não-Cefálico, Gestações Monoamnióticas (Parto Eletivo com 32-34 semanas) ou Mais de 2 Fetos"
-                        ]
-                    }
-                ]
+              "subfoco": "Planos Pélvicos de Avaliação",
+              "sub_subfocos": [
+                "Plano Zero das Espinhas Isquiáticas",
+                "Quatro Planos Clássicos de Hodge"
+              ]
             }
-        ]
+          ]
+        },
+        {
+          "foco": "Estática Fetal",
+          "subfocos": [
+            {
+              "subfoco": "Relações Útero-Fetais e Manobras Palpatórias",
+              "sub_subfocos": [
+                "Conceitos de Situação Atitude e Posição",
+                "Tempos Semiológicos das Manobras de Leopold"
+              ]
+            },
+            {
+              "subfoco": "Apresentações Cefálicas Fletidas e Defletidas",
+              "sub_subfocos": [
+                "Vértice Fletido e Deflexão Bregmática",
+                "Deflexões de Fronte e de Face"
+              ]
+            },
+            {
+              "subfoco": "Variedades de Posição e Assinclitismos",
+              "sub_subfocos": [
+                "Identificação da Variedade pelo Toque Vaginal",
+                "Sinclitismo e Inclinações Parietais Cefálicas"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Mecanismo de Parto",
+          "subfocos": [
+            {
+              "subfoco": "Insinuação e Flexão Cefálica",
+              "sub_subfocos": [
+                "Conceito de Insinuação e Diagnóstico Clínico",
+                "Mecanismo de Flexão Redutora de Diâmetros"
+              ]
+            },
+            {
+              "subfoco": "Descida Progressiva e Rotação Interna",
+              "sub_subfocos": [
+                "Goteira Muscular Perineal e Rotação Interna",
+                "Arco de Rotação Conforme Variedade Inicial"
+              ]
+            },
+            {
+              "subfoco": "Desprendimento Cefálico e das Espáduas",
+              "sub_subfocos": [
+                "Deflexão Cefálica no Hipomóclio Subpúbico",
+                "Rotação Externa e Liberação Biacromial"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Assistência ao Parto Normal",
+          "subfocos": [
+            {
+              "subfoco": "Condução da Dilatação Intraparto",
+              "sub_subfocos": [
+                "Admissão Oportuna na Fase Ativa",
+                "Boas Práticas Humanizadas e Práticas Proscritas",
+                "Distinção entre Pródromos e Trabalho Verdadeiro"
+              ]
+            },
+            {
+              "subfoco": "Assistência Clínica ao Período Expulsivo",
+              "sub_subfocos": [
+                "Puxos Espontâneos e Posições Maternas",
+                "Proteção Perineal e Proscrição de Kristeller"
+              ]
+            },
+            {
+              "subfoco": "Manejo Ativo do Secundamento Placentário",
+              "sub_subfocos": [
+                "Dequitação Central Schultze e Marginal Duncan",
+                "Componentes do Manejo Ativo Prevenindo Hemorragia"
+              ]
+            },
+            {
+              "subfoco": "Quarto Período e Clampeamento Oportuno",
+              "sub_subfocos": [
+                "Mecanismos Fisiológicos de Hemostasia Uterina",
+                "Clampeamento Tardio e Hora Dourada"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Partograma e Distocias",
+          "subfocos": [
+            {
+              "subfoco": "Construção Gráfica das Linhas Orientadoras",
+              "sub_subfocos": [
+                "Registro Gráfico de Dilatação e Descida",
+                "Linhas Orientadoras de Alerta e Ação"
+              ]
+            },
+            {
+              "subfoco": "Distocias Funcionais da Contratilidade Uterina",
+              "sub_subfocos": [
+                "Tríplice Gradiente Descendente e Hipossistolia",
+                "Hiperatividade Incoordenação e Parto Taquitócico"
+              ]
+            },
+            {
+              "subfoco": "Distocias da Fase de Dilatação",
+              "sub_subfocos": [
+                "Fase Ativa Prolongada ou Distocia Funcional",
+                "Parada Secundária da Dilatação"
+              ]
+            },
+            {
+              "subfoco": "Distocias do Período Expulsivo",
+              "sub_subfocos": [
+                "Período Pélvico Prolongado",
+                "Parada Secundária da Descida"
+              ]
+            },
+            {
+              "subfoco": "Desproporção Cefalopélvica e Parto Obstruído",
+              "sub_subfocos": [
+                "Desproporção Cefalopélvica Absoluta e Relativa",
+                "Conduta no Parto Obstruído"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Distocia de Ombros",
+          "subfocos": [
+            {
+              "subfoco": "Fatores Predisponentes e Reconhecimento Clínico",
+              "sub_subfocos": [
+                "Fatores de Risco e Imprevisibilidade Clínica",
+                "Sinal da Tartaruga e Condutas Proibidas"
+              ]
+            },
+            {
+              "subfoco": "Manobras Externas Iniciais de Resolução",
+              "sub_subfocos": [
+                "Manobra de McRoberts de Retificação Lombossacra",
+                "Pressão Suprapúbica Externa de Rubin I"
+              ]
+            },
+            {
+              "subfoco": "Manobras Internas Posicionais e Complicações",
+              "sub_subfocos": [
+                "Gaskin Braço Posterior e Manobras Rotacionais",
+                "Manobras de Resgate e Lesão Braquial"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Indução do Parto",
+          "subfocos": [
+            {
+              "subfoco": "Indicações e Contraindicações Absolutas",
+              "sub_subfocos": [
+                "Indicações Maternas e Fetais de Antecipação",
+                "Contraindicações Formais à Indução do Parto"
+              ]
+            },
+            {
+              "subfoco": "Maturação Cervical pelo Índice Bishop",
+              "sub_subfocos": [
+                "Cinco Parâmetros do Índice de Bishop",
+                "Decisão Terapêutica Conforme Pontuação de Bishop"
+              ]
+            },
+            {
+              "subfoco": "Preparo Cervical Farmacológico e Mecânico",
+              "sub_subfocos": [
+                "Prostaglandinas e Proscrição na Cesárea Prévia",
+                "Métodos Mecânicos Seguros em Cicatriz Uterina"
+              ]
+            },
+            {
+              "subfoco": "Infusão Ocitócica e Taquissistolia",
+              "sub_subfocos": [
+                "Protocolo de Titulação e Intervalo Pós-Misoprostol",
+                "Complicações da Ocitocina e Efeito Antidiurético"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Parto Vaginal Operatório",
+          "subfocos": [
+            {
+              "subfoco": "Indicações e Pré-Requisitos Obrigatórios",
+              "sub_subfocos": [
+                "Indicações no Segundo Período do Parto",
+                "Condições Inegociáveis de Aplicabilidade Segura"
+              ]
+            },
+            {
+              "subfoco": "Modalidades de Fórcipe e Técnica",
+              "sub_subfocos": [
+                "Seleção entre Simpson Kielland e Piper",
+                "Pegada Biparietomalomentoniana e Eixo de Tração"
+              ]
+            },
+            {
+              "subfoco": "Vácuo-Extrator e Comparativo com Fórcipe",
+              "sub_subfocos": [
+                "Aplicação e Contraindicações do Vácuo-Extrator",
+                "Morbidade Materna e Neonatal Comparada"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Parto Pélvico",
+          "subfocos": [
+            {
+              "subfoco": "Modalidades Pélvicas e Via Obstétrica",
+              "sub_subfocos": [
+                "Modalidades Completa Franca e Incompleta Podálica",
+                "Critérios para Assistência Vaginal Pélvica"
+              ]
+            },
+            {
+              "subfoco": "Versão Cefálica Externa no Termo",
+              "sub_subfocos": [
+                "Indicação Momento Ideal e Técnica Guiada",
+                "Contraindicações à Versão Cefálica Externa"
+              ]
+            },
+            {
+              "subfoco": "Manobras para Espáduas e Cabeça",
+              "sub_subfocos": [
+                "Alça Funicular Bracht e Desprendimento Escapular",
+                "Mauriceau e Piper na Cabeça Derradeira"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Operação Cesariana",
+          "subfocos": [
+            {
+              "subfoco": "Indicações Absolutas e Solicitação Materna",
+              "sub_subfocos": [
+                "Indicações Obstétricas Absolutas de Via Abdominal",
+                "Normativa para Cesariana a Pedido Materno"
+              ]
+            },
+            {
+              "subfoco": "Tempos Cirúrgicos e Planos Anatômicos",
+              "sub_subfocos": [
+                "Camadas Anatômicas da Parede Abdominal",
+                "Histerotomia Segmentar de Kerr e Corporal"
+              ]
+            },
+            {
+              "subfoco": "Antibioticoprofilaxia e Complicações Cirúrgicas",
+              "sub_subfocos": [
+                "Momento Oportuno da Profilaxia Antimicrobiana",
+                "Complicações Intraoperatórias e Reprodutivas Futuras"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Parto Vaginal Após Cesárea",
+          "subfocos": [
+            {
+              "subfoco": "Elegibilidade Clínica e Fatores Prognósticos",
+              "sub_subfocos": [
+                "Candidatas à Prova de Trabalho",
+                "Preditores de Sucesso e Falha"
+              ]
+            },
+            {
+              "subfoco": "Contraindicações à Prova de Trabalho",
+              "sub_subfocos": [
+                "Cicatrizes Corporais e Cirurgias Miometriais Prévias",
+                "Planejamento de Cesariana Eletiva de Repetição"
+              ]
+            },
+            {
+              "subfoco": "Condução Intraparto e Vigilância",
+              "sub_subfocos": [
+                "Métodos Permitidos de Indução e Analgesia",
+                "Sinal Cardiotocográfico Precoce de Rotura"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Lacerações Perineais e Episiotomia",
+          "subfocos": [
+            {
+              "subfoco": "Classificação Anatômica das Lacerações Perineais",
+              "sub_subfocos": [
+                "Lacerações de Primeiro e Segundo Graus",
+                "Lesões Obstétricas do Complexo Esfincteriano Anal"
+              ]
+            },
+            {
+              "subfoco": "Perineorrafia e Cuidados Esfincterianos",
+              "sub_subfocos": [
+                "Princípios de Perineorrafia e Esfincteroplastia",
+                "Antibioticoprofilaxia e Cuidados Pós-Operatórios"
+              ]
+            },
+            {
+              "subfoco": "Indicações e Modalidades de Episiotomia",
+              "sub_subfocos": [
+                "Evidência Contra Episiotomia Rotineira",
+                "Comparação entre Incisões Mediolateral e Mediana"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Analgesia Obstétrica",
+          "subfocos": [
+            {
+              "subfoco": "Recursos Não Farmacológicos e Pudendo",
+              "sub_subfocos": [
+                "Métodos Não Farmacológicos de Alívio",
+                "Bloqueio Bilateral do Nervo Pudendo"
+              ]
+            },
+            {
+              "subfoco": "Bloqueios Neuroaxiais no Parto",
+              "sub_subfocos": [
+                "Indicação por Solicitação Materna",
+                "Técnica Peridural Contínua e Combinada Raqui-Peridural"
+              ]
+            },
+            {
+              "subfoco": "Contraindicações e Complicações Anestésicas",
+              "sub_subfocos": [
+                "Contraindicações Absolutas ao Bloqueio Neuroaxial",
+                "Hipotensão Simpática e Cefaleia Pós-Punção"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tema": "Puerpério e Lactação",
+      "focos": [
+        {
+          "foco": "Puerpério Fisiológico",
+          "subfocos": [
+            {
+              "subfoco": "Involução Uterina Lóquios e Adaptações",
+              "sub_subfocos": [
+                "Divisão Cronológica e Regressão Anatômica Uterina",
+                "Evolução da Loquiação e Achados Sistêmicos"
+              ]
+            },
+            {
+              "subfoco": "Fertilidade e Anticoncepção Pós-Parto",
+              "sub_subfocos": [
+                "Amenorreia Lactacional e Retorno da Ovulação",
+                "Critérios de Elegibilidade Contraceptiva na Lactante"
+              ]
+            },
+            {
+              "subfoco": "Cuidados Clínicos e Revisão Puerperal",
+              "sub_subfocos": [
+                "Internação Deambulação e Atualização Vacinal",
+                "Consulta da Primeira Semana e Revisão"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Hemorragia Pós-Parto",
+          "subfocos": [
+            {
+              "subfoco": "Diagnóstico Índice Choque e Etiologias",
+              "sub_subfocos": [
+                "Definição Hemodinâmica e Índice de Choque",
+                "Mnemônico Etiológico dos Quatro Ts"
+              ]
+            },
+            {
+              "subfoco": "Manejo Farmacológico da Atonia Uterina",
+              "sub_subfocos": [
+                "Massagem de Hamilton e Escalonamento Uterotônico",
+                "Antifibrinolítico Precoce com Ácido Tranexâmico",
+                "Ressuscitação Hemostática e Tríade Letal"
+              ]
+            },
+            {
+              "subfoco": "Tamponamento Intrauterino e Abordagem Cirúrgica",
+              "sub_subfocos": [
+                "Balão Intrauterino e Traje Anti-Choque",
+                "Suturas Hemostáticas Desvascularização e Histerectomia"
+              ]
+            },
+            {
+              "subfoco": "Retenção Placentária Trauma e Inversão",
+              "sub_subfocos": [
+                "Retenção Placentária e Hematomas de Canal",
+                "Redução Manual da Inversão Uterina Aguda"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Infecção Puerperal",
+          "subfocos": [
+            {
+              "subfoco": "Conceito Epidemiologia e Fatores Predisponentes",
+              "sub_subfocos": [
+                "Definição de Morbidade Febril Puerperal",
+                "Fatores Obstétricos Predisponentes à Infecção"
+              ]
+            },
+            {
+              "subfoco": "Endometrite Puerperal Diagnóstico e Tratamento",
+              "sub_subfocos": [
+                "Tríade de Bumm e Microbiologia Polimicrobiana",
+                "Terapia Parenteral com Clindamicina e Gentamicina"
+              ]
+            },
+            {
+              "subfoco": "Infecção de Ferida Obstétrica",
+              "sub_subfocos": [
+                "Abscesso Incisional e Deiscência Perineal",
+                "Reconhecimento Precoce da Fasciíte Necrosante"
+              ]
+            },
+            {
+              "subfoco": "Abscesso Pélvico e Sepse Puerperal",
+              "sub_subfocos": [
+                "Investigação da Falha Terapêutica na Endometrite",
+                "Abscesso Pélvico Parametrite e Sepse Materna"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Tromboembolismo Puerperal",
+          "subfocos": [
+            {
+              "subfoco": "Tromboprofilaxia Pós-Parto e Estratificação",
+              "sub_subfocos": [
+                "Estratificação Sistemática de Risco Puerperal",
+                "Profilaxia Mecânica Farmacológica e Lactação"
+              ]
+            },
+            {
+              "subfoco": "Doença Tromboembólica Venosa no Puerpério",
+              "sub_subfocos": [
+                "Apresentação Clínica Periférica e Pulmonar Puerperal",
+                "Diagnóstico por Imagem e Anticoagulação"
+              ]
+            },
+            {
+              "subfoco": "Tromboflebite Pélvica Séptica",
+              "sub_subfocos": [
+                "Febre Refratária em Picos Oligossintomática",
+                "Trombose da Veia Ovariana e Terapia"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Transtornos Psíquicos Puerperais",
+          "subfocos": [
+            {
+              "subfoco": "Disforia Puerperal Transitória",
+              "sub_subfocos": [
+                "Curso Temporal Autolimitado e Características Clínicas",
+                "Suporte Familiar sem Uso Farmacológico"
+              ]
+            },
+            {
+              "subfoco": "Depressão Pós-Parto Rastreamento e Tratamento",
+              "sub_subfocos": [
+                "Quadro Clínico e Escala de Edimburgo",
+                "Psicoterapia e Antidepressivos Seguros na Amamentação"
+              ]
+            },
+            {
+              "subfoco": "Psicose Puerperal e Emergência Psiquiátrica",
+              "sub_subfocos": [
+                "Quadro Agudo Delirante e Transtorno Bipolar",
+                "Risco de Infanticídio e Internação Imediata"
+              ]
+            }
+          ]
+        },
+        {
+          "foco": "Lactação e Intercorrências Mamárias",
+          "subfocos": [
+            {
+              "subfoco": "Fisiologia da Lactação e Técnica",
+              "sub_subfocos": [
+                "Controle Neuroendócrino de Prolactina e Ocitocina",
+                "Fases do Leite e Pega Correta"
+              ]
+            },
+            {
+              "subfoco": "Contraindicações à Amamentação e Fármacos",
+              "sub_subfocos": [
+                "Contraindicações Maternas e Metabólicas Definitivas",
+                "Condições Temporárias e Medicamentos Proscritos"
+              ]
+            },
+            {
+              "subfoco": "Armazenamento Lácteo e Supressão Farmacológica",
+              "sub_subfocos": [
+                "Prazos Sanitários de Armazenamento Domiciliar",
+                "Indicações e Inibição Farmacológica com Cabergolina"
+              ]
+            },
+            {
+              "subfoco": "Fissuras Mamilares Ingurgitamento e Galactocele",
+              "sub_subfocos": [
+                "Manejo das Fissuras Mamilares e Candidíase",
+                "Manejo do Ingurgitamento Mamário"
+              ]
+            },
+            {
+              "subfoco": "Mastite Puerperal e Abscesso Mamário",
+              "sub_subfocos": [
+                "Mastite Aguda Antibióticos e Manutenção Láctea",
+                "Diagnóstico e Drenagem do Abscesso Mamário"
+              ]
+            }
+          ]
+        }
+      ]
     }
-]
+  ]
 };
