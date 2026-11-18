@@ -10,9 +10,13 @@ export function getHighlightsStorageKey(materialId: string, userId?: string | nu
 
 export const studyAnnotationsService = {
   /**
-   * Carrega os grifos e notas salvos do material (cache local instantâneo + sincronização Supabase)
+   * Carrega os grifos e notas salvos do material (cache local instantâneo + reconciliação reativa Supabase)
    */
-  loadMaterialHighlights(materialId: string, userId?: string | null): StudyHighlight[] {
+  loadMaterialHighlights(
+    materialId: string,
+    userId?: string | null,
+    onRemoteSynced?: (highlights: StudyHighlight[]) => void
+  ): StudyHighlight[] {
     if (typeof window === 'undefined') return [];
 
     try {
@@ -20,11 +24,16 @@ export const studyAnnotationsService = {
       const data = localStorage.getItem(key);
       const localHighlights: StudyHighlight[] = data ? JSON.parse(data) : [];
 
-      // Sincronização assíncrona em background se o usuário estiver autenticado
       if (userId && userId !== 'demo-student') {
-        this.syncRemoteHighlights(materialId, userId, localHighlights).catch((err) => {
-          console.warn('[studyAnnotationsService] Falha na sincronização remota:', err);
-        });
+        this.syncRemoteHighlights(materialId, userId, localHighlights)
+          .then((merged) => {
+            if (onRemoteSynced) {
+              onRemoteSynced(merged);
+            }
+          })
+          .catch((err) => {
+            console.warn('[studyAnnotationsService] Falha na sincronização remota:', err);
+          });
       }
 
       return localHighlights;
@@ -35,7 +44,7 @@ export const studyAnnotationsService = {
   },
 
   /**
-   * Salva os grifos no localStorage e sincroniza no Supabase
+   * Salva os grifos no localStorage e sincroniza em lote no Supabase
    */
   async saveMaterialHighlights(
     materialId: string,
@@ -48,54 +57,50 @@ export const studyAnnotationsService = {
       const key = getHighlightsStorageKey(materialId, userId);
       localStorage.setItem(key, JSON.stringify(highlights));
 
-      if (userId && userId !== 'demo-student') {
+      if (userId && userId !== 'demo-student' && highlights.length > 0) {
         const client = createClient();
-        // Tenta sincronizar com o Supabase sem bloquear a UI do estudante
-        for (const hl of highlights) {
-          client
-            .from('user_study_highlights')
-            .upsert(
-              {
-                id: hl.id,
-                user_id: userId,
-                material_id: materialId,
-                text_quote: hl.textQuote,
-                color: hl.color,
-                style: hl.style,
-                note: hl.note || null,
-                created_at: hl.createdAt,
-                updated_at: hl.updatedAt || new Date().toISOString()
-              },
-              { onConflict: 'id' }
-            )
-            .then(() => {}, () => {});
-        }
+        const payload = highlights.map((hl) => ({
+          id: hl.id,
+          user_id: userId,
+          material_id: materialId,
+          text_quote: hl.textQuote,
+          color: hl.color,
+          style: hl.style,
+          note: hl.note || null,
+          created_at: hl.createdAt,
+          updated_at: hl.updatedAt || new Date().toISOString()
+        }));
+
+        client
+          .from('user_study_highlights')
+          .upsert(payload, { onConflict: 'id' })
+          .then(() => {}, () => {});
       }
     } catch (e) {
       console.warn('[studyAnnotationsService] Erro ao salvar grifos:', e);
     }
   },
 
-  /**
-   * Adiciona um novo grifo
-   */
   addHighlight(
     materialId: string,
     highlight: StudyHighlight,
     userId?: string | null
   ): StudyHighlight[] {
     const current = this.loadMaterialHighlights(materialId, userId);
-    // Evita duplicatas exatas do mesmo texto com mesma cor
-    // Evita duplicatas exatas do mesmo trecho na mesma posicao
-    const filtered = current.filter((h) => h.id !== highlight.id && !(h.textQuote.toLowerCase() === highlight.textQuote.toLowerCase() && h.prefix === highlight.prefix && h.suffix === highlight.suffix));
+    const filtered = current.filter(
+      (h) =>
+        h.id !== highlight.id &&
+        !(
+          h.textQuote.toLowerCase() === highlight.textQuote.toLowerCase() &&
+          h.prefix === highlight.prefix &&
+          h.suffix === highlight.suffix
+        )
+    );
     const updated = [highlight, ...filtered];
     this.saveMaterialHighlights(materialId, updated, userId);
     return updated;
   },
 
-  /**
-   * Remove um grifo pelo ID
-   */
   removeHighlight(
     materialId: string,
     highlightId: string,
@@ -118,9 +123,6 @@ export const studyAnnotationsService = {
     return updated;
   },
 
-  /**
-   * Atualiza cor, estilo ou nota de um grifo
-   */
   updateHighlight(
     materialId: string,
     highlightId: string,
@@ -144,7 +146,7 @@ export const studyAnnotationsService = {
   },
 
   /**
-   * Sincronização remota em background com reconciliação não-bloqueante
+   * Sincronização remota bidirecional: compara updatedAt e envia grifos locais faltantes
    */
   async syncRemoteHighlights(
     materialId: string,
@@ -161,8 +163,20 @@ export const studyAnnotationsService = {
 
       if (error || !data) return localHighlights;
 
+      interface DbHighlightRow {
+        id: string;
+        material_id: string;
+        user_id: string;
+        text_quote: string;
+        color: StudyHighlight['color'];
+        style: StudyHighlight['style'];
+        note?: string | null;
+        created_at: string;
+        updated_at?: string;
+      }
+
       const remoteMap = new Map<string, StudyHighlight>();
-      data.forEach((row: any) => {
+      for (const row of data as unknown as DbHighlightRow[]) {
         remoteMap.set(row.id, {
           id: row.id,
           materialId: row.material_id,
@@ -174,24 +188,64 @@ export const studyAnnotationsService = {
           createdAt: row.created_at,
           updatedAt: row.updated_at
         });
-      });
+      }
 
-      // Mescla priorizando a versão mais recente
       const mergedMap = new Map<string, StudyHighlight>();
-      localHighlights.forEach((h) => mergedMap.set(h.id, h));
-      remoteMap.forEach((h, id) => {
+      const toUpload: StudyHighlight[] = [];
+
+      for (const localHl of localHighlights) {
+        const remoteHl = remoteMap.get(localHl.id);
+        if (!remoteHl) {
+          mergedMap.set(localHl.id, localHl);
+          toUpload.push(localHl);
+        } else {
+          const localTs = localHl.updatedAt ? new Date(localHl.updatedAt).getTime() : 0;
+          const remoteTs = remoteHl.updatedAt ? new Date(remoteHl.updatedAt).getTime() : 0;
+          if (remoteTs >= localTs) {
+            mergedMap.set(remoteHl.id, {
+              ...localHl,
+              ...remoteHl,
+              prefix: localHl.prefix,
+              suffix: localHl.suffix
+            });
+          } else {
+            mergedMap.set(localHl.id, localHl);
+            toUpload.push(localHl);
+          }
+        }
+      }
+
+      remoteMap.forEach((remoteHl, id) => {
         if (!mergedMap.has(id)) {
-          mergedMap.set(id, h);
+          mergedMap.set(id, remoteHl);
         }
       });
 
       const merged = Array.from(mergedMap.values());
       const key = getHighlightsStorageKey(materialId, userId);
       localStorage.setItem(key, JSON.stringify(merged));
+
+      if (toUpload.length > 0) {
+        const payload = toUpload.map((hl) => ({
+          id: hl.id,
+          user_id: userId,
+          material_id: materialId,
+          text_quote: hl.textQuote,
+          color: hl.color,
+          style: hl.style,
+          note: hl.note || null,
+          created_at: hl.createdAt,
+          updated_at: hl.updatedAt || new Date().toISOString()
+        }));
+        client
+          .from('user_study_highlights')
+          .upsert(payload, { onConflict: 'id' })
+          .then(() => {}, () => {});
+      }
+
       return merged;
     } catch {
       return localHighlights;
     }
   }
 };
-

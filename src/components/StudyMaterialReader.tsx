@@ -118,12 +118,24 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   const [revealAllCloze, setRevealAllCloze] = useState<boolean>(false);
   const [revealedClozeIds, setRevealedClozeIds] = useState<Set<string>>(new Set());
 
-  // Carregamento inicial de grifos do material
+  // Carregamento inicial e reconciliação em nuvem de grifos do material (multi-dispositivo)
   useEffect(() => {
+    let active = true;
     if (material?.id) {
-      const loaded = studyAnnotationsService.loadMaterialHighlights(material.id, user?.id);
+      const loaded = studyAnnotationsService.loadMaterialHighlights(
+        material.id,
+        user?.id,
+        (syncedHighlights) => {
+          if (active) {
+            setHighlights(syncedHighlights);
+          }
+        }
+      );
       setHighlights(loaded);
     }
+    return () => {
+      active = false;
+    };
   }, [material?.id, user?.id]);
 
   const showToast = (msg: string) => {

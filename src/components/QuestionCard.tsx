@@ -913,6 +913,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     }
   };
 
+  const handleTextSelectionTouchEnd = () => {
+    // Aguarda 60ms no mobile para que as alças nativas de seleção do iOS/Android estabilizem o Range
+    window.setTimeout(() => {
+      handleTextSelectionMouseUp();
+    }, 60);
+  };
+
   // Listener para riscar imediatamente caso o usuario tenha texto selecionado e clique na barra superior
   useEffect(() => {
     const handleApplyStrike = () => {
@@ -1382,8 +1389,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   return (
     <article
       onMouseUp={handleTextSelectionMouseUp}
-      onTouchEnd={handleTextSelectionMouseUp}
-      className={`bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6 relative transition-all ${selectionColorClass}`}
+      onTouchEnd={handleTextSelectionTouchEnd}
+      className={`bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm space-y-5 sm:space-y-6 relative transition-all ${selectionColorClass}`}
     >
       {/* Header Reorganizado: Origem da Questão (Esquerda) + Ações e Contador (Direita) */}
       <div
@@ -1615,8 +1622,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
         <div
           ref={statementRef}
           data-highlightable="true"
-          onMouseUp={handleTextSelectionMouseUp}
-          onTouchEnd={handleTextSelectionMouseUp}
           className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-left sm:text-justify hyphens-auto break-words`}
         >
           {renderHighlightedText(question.statement)}
@@ -1722,9 +1727,17 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               <div
                 key={optLetter}
                 onClick={() => handleSelectOption(optLetter)}
-                onMouseEnter={() => setHoveredOptionLetter(optLetter)}
-                onMouseLeave={() => setHoveredOptionLetter(null)}
-                className={`w-full text-left ${optionPaddingClass} border transition-all duration-200 flex flex-col group rounded-2xl cursor-pointer ${optionContainerStyle}`}
+                onPointerEnter={(e) => {
+                  if (e.pointerType === 'mouse') {
+                    setHoveredOptionLetter(optLetter);
+                  }
+                }}
+                onPointerLeave={(e) => {
+                  if (e.pointerType === 'mouse') {
+                    setHoveredOptionLetter(null);
+                  }
+                }}
+                className={`w-full text-left ${optionPaddingClass} border transition-all duration-200 flex flex-col group rounded-2xl cursor-pointer touch-manipulation ${optionContainerStyle}`}
                 style={!isAnswered && isPending ? {
                   borderColor: accentConfig.selectionAccent.borderHex,
                   backgroundColor: accentConfig.selectionAccent.bgRgba,
@@ -1810,10 +1823,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                             ? 'Restaurar alternativa descartada'
                             : 'Riscar alternativa (descartar distrator)'
                         }
-                        className={`w-9 h-9 sm:w-7 sm:h-7 flex items-center justify-center rounded-lg text-xs transition-all cursor-pointer ${
+                        className={`w-10 h-10 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg text-xs transition-all cursor-pointer touch-manipulation ${
                           isEliminated
                             ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 font-bold border border-rose-300 dark:border-rose-800'
-                            : 'text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 opacity-60 hover:opacity-100'
+                            : 'text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 opacity-70 sm:opacity-60 hover:opacity-100'
                         }`}
                       >
                         <Strikethrough className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
@@ -1924,7 +1937,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   disabled={!pendingSelected || isSubmittingAnswer}
                   isLoading={isSubmittingAnswer}
                   title={pendingSelected ? 'Resolver questão' : 'Selecione uma alternativa'}
-                  className={`w-full sm:w-auto text-xs font-extrabold ${
+                  className={`w-full sm:w-auto min-h-[44px] text-xs font-extrabold touch-manipulation ${
                     pendingSelected && !isSubmittingAnswer
                       ? 'shadow-md'
                       : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 cursor-not-allowed'
@@ -1956,7 +1969,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               <Button
                 type="button"
                 onClick={onNextQuestion}
-                className="w-full text-xs font-black text-white shadow-md min-h-[44px]"
+                className="w-full text-xs font-black text-white shadow-md min-h-[44px] touch-manipulation"
                 style={{ backgroundColor: accentConfig.primaryHex }}
                 rightIcon={<ChevronRight className="w-4 h-4" />}
               >
@@ -1968,13 +1981,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       ) : activeQuestion.type === 'Dissertativa' || activeQuestion.type === 'Discursiva' ? (
         /* Questão Dissertativa / Discursiva */
         <div className="pt-2 space-y-3">
-          <div className="p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 space-y-3">
+          <div className="p-4 sm:p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 block">
               Questão Dissertativa
             </span>
             <textarea
               placeholder="Digite seu raciocínio clínico, hipótese diagnóstica e condutas aqui..."
-              className="w-full h-32 p-4 rounded-xl bg-white dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] resize-none font-sans"
+              className="w-full h-32 p-4 rounded-xl bg-white dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-base sm:text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] resize-none font-sans"
             />
             {!isAnswered ? (
               <Button

@@ -103,23 +103,23 @@ export const HeaderStudyTimer: React.FC = () => {
       <div ref={containerRef} className="relative flex items-center shrink-0">
         {/* ── ESTADO 1: INATIVO (SELEÇÃO + BOTÃO INICIAR) ── */}
         {status === 'idle' && (
-          <div className="flex items-center gap-1.5 bg-slate-100/80 dark:bg-zinc-900/90 border border-slate-200 dark:border-zinc-800 rounded-2xl p-1 shadow-2xs">
+          <div className="flex items-center gap-1 sm:gap-1.5 bg-slate-100/80 dark:bg-zinc-900/90 border border-slate-200 dark:border-zinc-800 rounded-2xl p-1 shadow-2xs touch-manipulation">
             {/* Seletor com Busca por Digitação */}
             <button
               type="button"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="px-2.5 py-1.5 text-xs font-semibold rounded-xl text-slate-700 dark:text-zinc-300 hover:bg-white dark:hover:bg-zinc-800 transition-colors flex items-center gap-1.5 max-w-[130px] sm:max-w-[200px] truncate cursor-pointer"
+              className="px-2 sm:px-2.5 py-1.5 min-h-[34px] text-xs font-semibold rounded-xl text-slate-700 dark:text-zinc-300 hover:bg-white dark:hover:bg-zinc-800 transition-colors flex items-center gap-1 sm:gap-1.5 max-w-[92px] sm:max-w-[200px] truncate cursor-pointer touch-manipulation"
               title={currentTopicDisplay ? `Matéria selecionada: ${selectedTaxonomy.rawLabel || currentTopicDisplay}` : 'Escolha o que vai estudar'}
             >
               <BookOpen className="w-3.5 h-3.5 text-blue-500 shrink-0" />
-              <span className="truncate">
+              <span className={`truncate ${currentTopicDisplay ? 'inline' : 'hidden sm:inline'}`}>
                 {currentTopicDisplay || 'O que vai estudar?'}
               </span>
               <ChevronDown className="w-3 h-3 text-slate-400 shrink-0" />
             </button>
 
             {/* Display Estático "00:00:00" na Fonte Inter */}
-            <span className="hidden sm:inline-block font-[var(--font-inter)] text-xs font-bold tabular-nums tracking-tight text-slate-400 dark:text-zinc-500 px-1">
+            <span className="hidden md:inline-block font-[var(--font-inter)] text-xs font-bold tabular-nums tracking-tight text-slate-400 dark:text-zinc-500 px-1">
               00:00:00
             </span>
 
@@ -127,8 +127,9 @@ export const HeaderStudyTimer: React.FC = () => {
             <button
               type="button"
               onClick={() => startTimer()}
-              className="px-2.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-1 transition-all shadow-xs cursor-pointer active:scale-95"
+              className="px-2.5 py-1.5 min-h-[34px] rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center justify-center gap-1 transition-all shadow-xs cursor-pointer active:scale-95 touch-manipulation"
               title="Iniciar contagem de estudo"
+              aria-label="Iniciar contagem de estudo"
             >
               <Play className="w-3.5 h-3.5 fill-current" />
               <span className="hidden sm:inline">Iniciar</span>
@@ -218,21 +219,36 @@ export const HeaderStudyTimer: React.FC = () => {
           </div>
         )}
 
-        {/* ── DROPDOWN POPUP: CAIXA DE SELEÇÃO E BUSCA DE TAXONOMIA ── */}
+        {/* ── DROPDOWN POPUP: CAIXA DE SELEÇÃO E BUSCA DE TAXONOMIA (RESPONSIVO SEM OVERFLOW NO MOBILE) ── */}
         {isDropdownOpen && (
-          <div className="absolute left-0 top-full mt-2 w-80 sm:w-96 bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
-            {/* Input de Busca com Digitação */}
-            <div className="relative mb-2.5">
-              <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-              <input
-                ref={inputRef}
-                type="text"
-                value={searchQuery}
-                onChange={handleSearchChange}
-                placeholder="Digite a matéria, tema, foco ou subfoco..."
-                className="w-full text-xs pl-9 pr-3 py-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 focus:outline-hidden focus:border-blue-500 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400"
-              />
-            </div>
+          <>
+            <div
+              className="fixed inset-0 z-40 bg-black/35 backdrop-blur-2xs sm:hidden"
+              onClick={() => setIsDropdownOpen(false)}
+            />
+            <div className="fixed inset-x-3 top-[calc(4.25rem+env(safe-area-inset-top,0px))] sm:absolute sm:inset-x-auto sm:left-0 sm:top-full sm:mt-2 w-auto sm:w-96 max-h-[78dvh] flex flex-col bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
+              {/* Input de Busca com Digitação (text-base no mobile previne auto-zoom no iOS Safari) */}
+              <div className="relative mb-2.5 flex items-center gap-2">
+                <div className="relative flex-1">
+                  <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+                  <input
+                    ref={inputRef}
+                    type="text"
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                    placeholder="Matéria, tema, foco ou subfoco..."
+                    className="w-full text-base sm:text-xs pl-9 pr-3 py-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 focus:outline-hidden focus:border-blue-500 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400"
+                  />
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setIsDropdownOpen(false)}
+                  className="sm:hidden p-2 rounded-xl bg-slate-100 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400 cursor-pointer"
+                  aria-label="Fechar seletor de matéria"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
 
             {/* Especialidades Principais (Atalhos de 1 Clique) */}
             {!searchQuery && (
@@ -299,7 +315,8 @@ export const HeaderStudyTimer: React.FC = () => {
                 ))
               )}
             </div>
-          </div>
+            </div>
+          </>
         )}
       </div>
 

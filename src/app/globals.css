@@ -797,10 +797,22 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
   user-select: none !important;
 }
 
-/* 0. Modo Hiper-Compacto (< 220px / 2 colunas estreitas) */
+/* 0. Modo Hiper-Compacto e Spans Responsivos (Mobile, Tablet e Desktop) */
 @media (max-width: 767px) {
   .figma-card-wrapper {
     grid-column: span 1 / span 1 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .figma-card-wrapper {
+    grid-column: var(--figma-tablet-span, span 6 / span 6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .figma-card-wrapper {
+    grid-column: var(--figma-col-span, span 4 / span 4);
   }
 }
 
@@ -811,7 +823,7 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
   .card-ultra-compact-hide {
     display: none !important;
   }
-  .card-actions-wrapper, .flex-wrap {
+  .card-actions-wrapper {
     flex-direction: column !important;
     gap: 0.25rem !important;
   }
@@ -839,7 +851,7 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
   .text-xs {
     font-size: 0.65rem !important;
   }
-  .card-actions-wrapper, .flex-wrap {
+  .card-actions-wrapper {
     flex-direction: column !important;
     align-items: stretch !important;
     gap: 0.35rem !important;

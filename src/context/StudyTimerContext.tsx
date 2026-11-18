@@ -75,6 +75,15 @@ interface StoredTimerState {
   runningSince: number | null; // timestamp ms
   sessionStartTime: string;
   selectedTaxonomy: SelectedTaxonomy;
+  questionsCount?: number;
+  correctCount?: number;
+  incorrectCount?: number;
+  studyType?: StudyType;
+  sessionSource?: 'manual' | 'questoes' | 'simulado' | 'flashcards';
+}
+
+function getTimerStorageKey(userId?: string | null): string {
+  return userId ? `${TIMER_STORAGE_KEY}_${userId}` : TIMER_STORAGE_KEY;
 }
 
 const StudyTimerContext = createContext<StudyTimerContextType | undefined>(undefined);
@@ -208,14 +217,18 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     };
   }, [getPlatformActiveKey]);
 
-  // Carrega e sincroniza sessões vinculadas à conta do aluno
+  // Carrega e sincroniza sessões vinculadas à conta do aluno (com revalidação em mudança de aba/online)
   useEffect(() => {
     let active = true;
-    loadUserStudySessions(user?.id).then((sessions) => {
-      if (active) {
-        setSavedSessions(sessions);
-      }
-    });
+    const syncSessions = () => {
+      loadUserStudySessions(user?.id).then((sessions) => {
+        if (active) {
+          setSavedSessions(sessions);
+        }
+      });
+    };
+
+    syncSessions();
 
     const handleStorageChange = (e: StorageEvent) => {
       const currentKey = getUserStudySessionsStorageKey(user?.id);
@@ -226,17 +239,28 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       }
     };
 
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible' && user?.id) {
+        syncSessions();
+      }
+    };
+
     window.addEventListener('storage', handleStorageChange);
+    window.addEventListener('online', syncSessions);
+    document.addEventListener('visibilitychange', handleVisibility);
     return () => {
       active = false;
       window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener('online', syncSessions);
+      document.removeEventListener('visibilitychange', handleVisibility);
     };
   }, [user?.id]);
 
-  // Recupera estado salvo do timer ao montar (resiliência a F5)
+  // Recupera estado salvo do timer ao montar (resiliência a F5 e suspensão de memória no Safari/Android)
   useEffect(() => {
     try {
-      const raw = localStorage.getItem(TIMER_STORAGE_KEY);
+      const key = getTimerStorageKey(user?.id);
+      const raw = localStorage.getItem(key) || (!user?.id ? localStorage.getItem(TIMER_STORAGE_KEY) : null);
       if (!raw) return;
 
       const saved: StoredTimerState = JSON.parse(raw);
@@ -244,6 +268,26 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       setSelectedTaxonomy(saved.selectedTaxonomy || {});
       setSessionStartTime(saved.sessionStartTime || new Date().toISOString());
+
+      // Restaura contadores de questões da sessão em andamento caso o mobile tenha recarregado a aba
+      if (typeof saved.questionsCount === 'number') {
+        setSessionQuestionsCount(saved.questionsCount);
+        sessionQuestionsCountRef.current = saved.questionsCount;
+      }
+      if (typeof saved.correctCount === 'number') {
+        setSessionCorrectCount(saved.correctCount);
+        sessionCorrectCountRef.current = saved.correctCount;
+      }
+      if (typeof saved.incorrectCount === 'number') {
+        setSessionIncorrectCount(saved.incorrectCount);
+        sessionIncorrectCountRef.current = saved.incorrectCount;
+      }
+      if (saved.studyType) {
+        activeStudyTypeRef.current = saved.studyType;
+      }
+      if (saved.sessionSource) {
+        sessionSourceRef.current = saved.sessionSource;
+      }
 
       if (saved.status === 'running' && saved.runningSince) {
         const deltaSec = Math.max(0, Math.floor((Date.now() - saved.runningSince) / 1000));
@@ -261,7 +305,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     } catch (err) {
       console.warn('Erro ao restaurar estado do cronômetro:', err);
     }
-  }, []);
+  }, [user?.id]);
 
   // Tique-taque contínuo do cronômetro
   useEffect(() => {
@@ -290,25 +334,58 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     };
   }, [status]);
 
-  // Persistência contínua do estado no localStorage
-  useEffect(() => {
-    if (status === 'running' || status === 'paused') {
+  // Persistência contínua do estado no localStorage (incluindo contadores de questões e suporte a pagehide no mobile)
+  const persistTimerSnapshot = useCallback(() => {
+    const key = getTimerStorageKey(userRef.current?.id);
+    const curStatus = statusRef.current;
+    if (curStatus === 'running' || curStatus === 'paused') {
       const stateToSave: StoredTimerState = {
-        status: status === 'running' ? 'running' : 'paused',
+        status: curStatus === 'running' ? 'running' : 'paused',
         accumulatedSeconds: accumulatedSecondsRef.current,
         runningSince: runningSinceRef.current,
-        sessionStartTime: sessionStartTime || new Date().toISOString(),
-        selectedTaxonomy
+        sessionStartTime: sessionStartTimeRef.current || new Date().toISOString(),
+        selectedTaxonomy: selectedTaxonomyRef.current,
+        questionsCount: sessionQuestionsCountRef.current,
+        correctCount: sessionCorrectCountRef.current,
+        incorrectCount: sessionIncorrectCountRef.current,
+        studyType: activeStudyTypeRef.current,
+        sessionSource: sessionSourceRef.current
       };
       try {
-        localStorage.setItem(TIMER_STORAGE_KEY, JSON.stringify(stateToSave));
+        localStorage.setItem(key, JSON.stringify(stateToSave));
       } catch { }
-    } else if (status === 'idle') {
+    } else if (curStatus === 'idle') {
       try {
+        localStorage.removeItem(key);
         localStorage.removeItem(TIMER_STORAGE_KEY);
       } catch { }
     }
-  }, [status, selectedTaxonomy, sessionStartTime]);
+  }, []);
+
+  useEffect(() => {
+    persistTimerSnapshot();
+  }, [status, selectedTaxonomy, sessionStartTime, sessionQuestionsCount, sessionCorrectCount, sessionIncorrectCount, persistTimerSnapshot]);
+
+  // Salva snapshot imediatamente em pagehide / visibilitychange para resiliência total no iOS Safari e Android
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const flushOnHide = () => {
+      persistTimerSnapshot();
+      try {
+        const activeKey = getPlatformActiveKey(userRef.current?.id);
+        localStorage.setItem(activeKey, String(platformActiveRef.current));
+      } catch { }
+    };
+    const handleVis = () => {
+      if (document.visibilityState === 'hidden') flushOnHide();
+    };
+    window.addEventListener('pagehide', flushOnHide);
+    document.addEventListener('visibilitychange', handleVis);
+    return () => {
+      window.removeEventListener('pagehide', flushOnHide);
+      document.removeEventListener('visibilitychange', handleVis);
+    };
+  }, [persistTimerSnapshot, getPlatformActiveKey]);
 
   // Sincronização em tempo real do título da aba (document.title - padrão Aprovado)
   useEffect(() => {
@@ -376,6 +453,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     setElapsedSeconds(0);
     setStatus('idle');
     try {
+      localStorage.removeItem(getTimerStorageKey(userRef.current?.id));
       localStorage.removeItem(TIMER_STORAGE_KEY);
     } catch { }
   }, []);
@@ -545,13 +623,18 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       try {
         localStorage.setItem(
-          TIMER_STORAGE_KEY,
+          getTimerStorageKey(userRef.current?.id),
           JSON.stringify({
             status: 'running',
             accumulatedSeconds: 0,
             runningSince: Date.now(),
             sessionStartTime: nowIso,
-            selectedTaxonomy: taxonomy
+            selectedTaxonomy: taxonomy,
+            questionsCount: 0,
+            correctCount: 0,
+            incorrectCount: 0,
+            studyType,
+            sessionSource: 'questoes'
           })
         );
       } catch {}

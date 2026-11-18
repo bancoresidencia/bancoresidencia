@@ -1,85 +1,168 @@
 import { createClient } from '@/lib/supabase/client';
+import {
+  readMutationJournal,
+  markPendingUpsert,
+  markPendingDelete,
+  clearSyncedUpserts,
+  clearSyncedDeletes
+} from '@/utils/crossDeviceSync';
 
 export function getBookmarksStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_bookmarks_${userId}` : 'bancoresidencia_bookmarks_guest';
 }
 
-/**
- * Carrega as questões favoritadas do aluno a partir do cache local (0ms)
- * e realiza reconciliação em segundo plano com a tabela 'user_bookmarks' do Supabase.
- */
-export async function loadUserBookmarks(userId?: string | null): Promise<Record<string, boolean>> {
-  const key = getBookmarksStorageKey(userId);
-  let localBookmarks: Record<string, boolean> = {};
+function getBookmarksJournalInitKey(userId: string): string {
+  return `bancoresidencia_bookmarks_journal_init_${userId}`;
+}
 
-  if (typeof window !== 'undefined') {
-    try {
-      const saved = localStorage.getItem(key);
-      if (saved) {
-        localBookmarks = JSON.parse(saved) || {};
-      } else {
-        // Migração suave da chave legada 'br_bookmarked_questions'
-        const legacy = localStorage.getItem('br_bookmarked_questions');
-        if (legacy) {
-          try {
-            const parsed = JSON.parse(legacy);
-            if (parsed && typeof parsed === 'object') {
-              localBookmarks = parsed;
-              localStorage.setItem(key, JSON.stringify(localBookmarks));
-            }
-          } catch {}
+export function readLocalBookmarks(userId?: string | null): Record<string, boolean> {
+  if (typeof window === 'undefined') return {};
+  const key = getBookmarksStorageKey(userId);
+  try {
+    const saved = localStorage.getItem(key);
+    if (saved) {
+      return (JSON.parse(saved) as Record<string, boolean>) || {};
+    }
+    if (!userId) {
+      const legacy = localStorage.getItem('br_bookmarked_questions');
+      if (legacy) {
+        const parsed = JSON.parse(legacy) as Record<string, boolean>;
+        if (parsed && typeof parsed === 'object') {
+          localStorage.setItem(key, JSON.stringify(parsed));
+          return parsed;
         }
       }
+    }
+  } catch {
+    // ignore
+  }
+  return {};
+}
+
+/**
+ * Reconcilia favoritos remotos com o diário local de mutações offline,
+ * impedindo ressurreição de favoritos excluídos em outro dispositivo.
+ */
+export async function reconcileUserBookmarksWithRemote(
+  userId: string,
+  remoteIds: string[]
+): Promise<Record<string, boolean>> {
+  const key = getBookmarksStorageKey(userId);
+  const localBookmarks = readLocalBookmarks(userId);
+  const journal = readMutationJournal('bookmarks', userId);
+  const remoteSet = new Set(remoteIds.filter(Boolean));
+
+  const initKey = getBookmarksJournalInitKey(userId);
+  const isFirstJournalSync = typeof window !== 'undefined' && !localStorage.getItem(initKey);
+  if (typeof window !== 'undefined' && isFirstJournalSync) {
+    try {
+      localStorage.setItem(initKey, '1');
     } catch {
-      localBookmarks = {};
+      // ignore
     }
   }
 
-  // Se o aluno está autenticado, busca e reconcilia com o Supabase
+  const pendingDeleteIds = Object.keys(journal.deletes);
+  const pendingUpsertIds = Object.keys(journal.upserts);
+
+  const merged: Record<string, boolean> = {};
+
+  // 1. Mantém favoritos remotos que não foram excluídos offline neste dispositivo
+  for (const id of remoteSet) {
+    if (!journal.deletes[id]) {
+      merged[id] = true;
+    }
+  }
+
+  // 2. Preserva adições pendentes offline (ou da primeira migração)
+  const toUpload: string[] = [];
+  for (const id of Object.keys(localBookmarks)) {
+    if (!localBookmarks[id] || journal.deletes[id]) continue;
+    if (journal.upserts[id] || isFirstJournalSync) {
+      merged[id] = true;
+      if (!remoteSet.has(id)) {
+        toUpload.push(id);
+      }
+    }
+  }
+
+  // Também garante upload de upserts registrados no journal mesmo que o cache tenha sido recarregado
+  for (const id of pendingUpsertIds) {
+    if (!journal.deletes[id]) {
+      merged[id] = true;
+      if (!remoteSet.has(id) && !toUpload.includes(id)) {
+        toUpload.push(id);
+      }
+    }
+  }
+
+  if (typeof window !== 'undefined') {
+    try {
+      localStorage.setItem(key, JSON.stringify(merged));
+    } catch {
+      // ignore
+    }
+  }
+
+  const supabase = createClient();
+
+  // 3. Propaga exclusões pendentes offline para o Supabase
+  if (pendingDeleteIds.length > 0) {
+    const stillOnRemote = pendingDeleteIds.filter((id) => remoteSet.has(id));
+    if (stillOnRemote.length > 0) {
+      const { error: delErr } = await supabase
+        .from('user_bookmarks')
+        .delete()
+        .eq('user_id', userId)
+        .in('question_id', stillOnRemote);
+      if (!delErr) {
+        clearSyncedDeletes('bookmarks', pendingDeleteIds, userId);
+      }
+    } else {
+      clearSyncedDeletes('bookmarks', pendingDeleteIds, userId);
+    }
+  }
+
+  // 4. Propaga adições pendentes offline para o Supabase
+  if (toUpload.length > 0) {
+    const payload = toUpload.map((qid) => ({
+      user_id: userId,
+      question_id: qid
+    }));
+    const { error: upErr } = await supabase
+      .from('user_bookmarks')
+      .upsert(payload, { onConflict: 'user_id,question_id' });
+    if (!upErr) {
+      clearSyncedUpserts('bookmarks', [...toUpload, ...pendingUpsertIds], userId);
+    }
+  } else if (pendingUpsertIds.length > 0) {
+    clearSyncedUpserts('bookmarks', pendingUpsertIds, userId);
+  }
+
+  return merged;
+}
+
+/**
+ * Carrega as questões favoritadas do aluno a partir do cache local (0ms)
+ * e realiza reconciliação com a tabela 'user_bookmarks' do Supabase.
+ */
+export async function loadUserBookmarks(userId?: string | null): Promise<Record<string, boolean>> {
+  const localBookmarks = readLocalBookmarks(userId);
+
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
       const { data, error } = await supabase
         .from('user_bookmarks')
         .select('question_id')
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .range(0, 4999);
 
       if (!error && data) {
-        const remoteMap: Record<string, boolean> = {};
-        for (const row of data as { question_id: string }[]) {
-          if (row.question_id) remoteMap[row.question_id] = true;
-        }
-
-        // Merge: preserva favoritos remotos e locais
-        const merged: Record<string, boolean> = { ...localBookmarks, ...remoteMap };
-
-        if (typeof window !== 'undefined') {
-          try {
-            localStorage.setItem(key, JSON.stringify(merged));
-            localStorage.setItem('br_bookmarked_questions', JSON.stringify(merged));
-          } catch {}
-        }
-
-        // Detecta favoritos locais que ainda não estão no banco remoto (ex: marcados offline)
-        const missingOnRemote = Object.keys(localBookmarks).filter(
-          (qid) => localBookmarks[qid] && !remoteMap[qid]
-        );
-
-        if (missingOnRemote.length > 0) {
-          const payload = missingOnRemote.map((qid) => ({
-            user_id: userId,
-            question_id: qid
-          }));
-
-          supabase
-            .from('user_bookmarks')
-            .upsert(payload, { onConflict: 'user_id,question_id' })
-            .then(({ error: upErr }) => {
-              if (upErr) console.warn('[userBookmarksService] Erro ao sincronizar favoritos locais no Supabase:', upErr);
-            }, () => {});
-        }
-
-        return merged;
+        const remoteIds = (data as Array<{ question_id: string }>)
+          .map((row) => row.question_id)
+          .filter(Boolean);
+        return await reconcileUserBookmarksWithRemote(userId, remoteIds);
       }
     } catch (e) {
       console.warn('[userBookmarksService] Falha na reconciliação remota de favoritos:', e);
@@ -90,8 +173,8 @@ export async function loadUserBookmarks(userId?: string | null): Promise<Record<
 }
 
 /**
- * Alterna o estado de favorito de uma questão, salvando instantaneamente no localStorage
- * e sincronizando com a tabela 'user_bookmarks' do Supabase se autenticado.
+ * Alterna o estado de favorito de uma questão, salvando instantaneamente no localStorage,
+ * registrando no journal offline e sincronizando com 'user_bookmarks' no Supabase.
  */
 export async function toggleUserBookmark(
   questionId: string,
@@ -99,35 +182,33 @@ export async function toggleUserBookmark(
   userId?: string | null
 ): Promise<Record<string, boolean>> {
   const key = getBookmarksStorageKey(userId);
-  let current: Record<string, boolean> = {};
-
-  if (typeof window !== 'undefined') {
-    try {
-      const saved = localStorage.getItem(key);
-      if (saved) current = JSON.parse(saved) || {};
-    } catch {}
-  }
+  const current = readLocalBookmarks(userId);
 
   const next = { ...current };
   if (isBookmarked) {
     next[questionId] = true;
+    markPendingUpsert('bookmarks', questionId, userId);
   } else {
     delete next[questionId];
+    markPendingDelete('bookmarks', questionId, userId);
   }
 
   if (typeof window !== 'undefined') {
     try {
       localStorage.setItem(key, JSON.stringify(next));
-      localStorage.setItem('br_bookmarked_questions', JSON.stringify(next));
-    } catch {}
+      if (!userId) {
+        localStorage.setItem('br_bookmarked_questions', JSON.stringify(next));
+      }
+    } catch {
+      // ignore
+    }
   }
 
-  // Sincronização remota atômica com o Supabase
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
       if (isBookmarked) {
-        await supabase
+        const { error } = await supabase
           .from('user_bookmarks')
           .upsert(
             {
@@ -136,18 +217,23 @@ export async function toggleUserBookmark(
             },
             { onConflict: 'user_id,question_id' }
           );
+        if (!error) {
+          clearSyncedUpserts('bookmarks', questionId, userId);
+        }
       } else {
-        await supabase
+        const { error } = await supabase
           .from('user_bookmarks')
           .delete()
           .eq('user_id', userId)
           .eq('question_id', questionId);
+        if (!error) {
+          clearSyncedDeletes('bookmarks', questionId, userId);
+        }
       }
     } catch (err) {
-      console.warn('[userBookmarksService] Erro ao persistir favorito no Supabase:', err);
+      console.warn('[userBookmarksService] Erro ao persistir favorito no Supabase (mantido na fila offline):', err);
     }
   }
 
   return next;
 }
-

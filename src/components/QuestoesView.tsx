@@ -308,6 +308,8 @@ export const QuestoesView: React.FC = () => {
   // Fecha o dropdown de cores do marca-texto da barra superior ao clicar fora
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (target?.closest('[data-highlighter-menu="true"]')) return;
       if (topHighlighterMenuRef.current && !topHighlighterMenuRef.current.contains(e.target as Node)) {
         setIsTopHighlighterMenuOpen(false);
       }
@@ -323,6 +325,8 @@ export const QuestoesView: React.FC = () => {
   // Fecha o dropdown de tamanho de fonte da barra superior ao clicar fora
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (target?.closest('[data-fontsize-menu="true"]')) return;
       if (topFontSizeMenuRef.current && !topFontSizeMenuRef.current.contains(e.target as Node)) {
         setIsTopFontSizeMenuOpen(false);
       }
@@ -873,10 +877,10 @@ export const QuestoesView: React.FC = () => {
 
   return (
     <div
-      className={`max-w-7xl mx-auto animate-in fade-in duration-200 px-3 sm:px-6 lg:px-8 ${
+      className={`max-w-7xl mx-auto animate-in fade-in duration-200 px-2.5 sm:px-6 lg:px-8 ${
         bancoMode === 'filtros'
-          ? 'pt-3 pb-24 lg:pb-[74px] lg:h-[calc(100dvh-4rem)] lg:overflow-hidden flex flex-col'
-          : 'p-4 sm:p-6 lg:p-8 space-y-4'
+          ? 'pt-2.5 sm:pt-3 pb-28 lg:pb-[74px] lg:h-[calc(100dvh-4rem)] lg:overflow-hidden flex flex-col'
+          : 'py-3 sm:py-6 lg:py-8 space-y-3.5 sm:space-y-4'
       }`}
     >
       {/* Transição Elegante com Tela de Carregamento para Sessão de Questões */}
@@ -967,88 +971,102 @@ export const QuestoesView: React.FC = () => {
         <div className="space-y-5 animate-in fade-in duration-200">
           {visibleQuestions.length > 0 ? (
             <>
-              {/* BARRA SUPERIOR SEQUENCIAL */}
-              <div className="sticky top-[4.5rem] z-20 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-sm flex flex-col gap-2.5 transition-colors">
-                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-                  {/* Esquerda: Botão Voltar para Filtros + Widget de Progresso Circular Retrátil */}
-                  <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap sm:flex-nowrap">
-                    {/* Botão de Retorno à Página Anterior */}
+              {/* BARRA SUPERIOR SEQUENCIAL (ERGONÔMICA MOBILE & SEM CLIPPING DE POPOVERS) */}
+              <div className="relative sticky top-[calc(4.1rem+env(safe-area-inset-top,0px))] z-20 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl px-2.5 sm:px-4 py-2 sm:py-2.5 shadow-sm flex flex-col gap-2 transition-colors touch-manipulation">
+                <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-3">
+                  {/* Esquerda: Botão Voltar + Progresso Circular Retrátil + Botão Finalizar rápido no Mobile */}
+                  <div className="flex items-center justify-between lg:justify-start gap-2 sm:gap-3">
+                    <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                      {/* Botão de Retorno à Página Anterior */}
+                      <button
+                        type="button"
+                        onClick={handleReturnToFilters}
+                        className="w-9 h-9 flex items-center justify-center rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700/80 border border-zinc-200/80 dark:border-zinc-700/60 text-zinc-700 dark:text-zinc-200 transition-all cursor-pointer shadow-xs group shrink-0 active:scale-95 touch-manipulation"
+                        title="Voltar aos Filtros (Esc)"
+                        aria-label="Voltar"
+                      >
+                        <ArrowLeft className="w-4 h-4 text-zinc-600 dark:text-zinc-300 group-hover:-translate-x-0.5 transition-transform" />
+                      </button>
+
+                      {(() => {
+                        const answeredCount = visibleQuestions.filter((q) => !!sessionAnswers[q.id]).length;
+                        const progressPercent = visibleQuestions.length > 0
+                          ? Math.round((answeredCount / visibleQuestions.length) * 100)
+                          : 0;
+
+                        return (
+                          <button
+                            type="button"
+                            onClick={() => setIsQuestionSequenceOpen((prev) => !prev)}
+                            className="flex items-center gap-2.5 sm:gap-3 p-0.5 sm:px-2.5 sm:py-1 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-900 border border-transparent hover:border-slate-200 dark:hover:border-slate-800 transition-all cursor-pointer group text-left touch-manipulation"
+                            title={
+                              isQuestionSequenceOpen
+                                ? 'Ocultar régua de questões (Q)'
+                                : 'Ver régua de questões na íntegra (Q)'
+                            }
+                          >
+                            {/* Círculo de Progresso com Porcentagem */}
+                            <div className="relative w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center shrink-0">
+                              <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
+                                <path
+                                  className="text-slate-200 dark:text-slate-800"
+                                  strokeWidth="3.2"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                                <path
+                                  strokeDasharray={`${progressPercent}, 100`}
+                                  strokeWidth="3.2"
+                                  strokeLinecap="round"
+                                  stroke="currentColor"
+                                  fill="none"
+                                  style={{ color: accentConfig.primaryHex }}
+                                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                />
+                              </svg>
+                              <span className="absolute text-[10px] sm:text-[11px] font-black font-sans tabular-nums text-slate-800 dark:text-slate-100 tracking-tighter">
+                                {progressPercent}%
+                              </span>
+                            </div>
+
+                            {/* Posição e Rótulo Progresso */}
+                            <div className="flex flex-col">
+                              <div className="flex items-center gap-1">
+                                <span className="text-xs sm:text-base font-black font-sans tabular-nums text-[#0f274a] dark:text-white leading-tight tracking-tight">
+                                  {answeredCount}/{visibleQuestions.length}
+                                </span>
+                                <ChevronDown
+                                  className={`w-3.5 h-3.5 text-slate-400 group-hover:text-blue-500 transition-transform duration-200 ${isQuestionSequenceOpen ? 'rotate-180 text-blue-500' : ''
+                                    }`}
+                                />
+                              </div>
+                              <span className="text-[10px] sm:text-[11px] font-medium text-slate-400 dark:text-slate-500">
+                                Progresso
+                              </span>
+                            </div>
+                          </button>
+                        );
+                      })()}
+                    </div>
+
+                    {/* Botão Finalizar visível na linha superior em telas mobile/tablet para acesso de 1 toque */}
                     <button
                       type="button"
-                      onClick={handleReturnToFilters}
-                      className="w-9 h-9 flex items-center justify-center rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700/80 border border-zinc-200/80 dark:border-zinc-700/60 text-zinc-700 dark:text-zinc-200 transition-all cursor-pointer shadow-xs group shrink-0 active:scale-95"
-                      title="Voltar aos Filtros (Esc)"
-                      aria-label="Voltar"
+                      onClick={handleFinishToResults}
+                      className="lg:hidden flex items-center gap-1.5 px-3 py-1.5 min-h-[36px] rounded-xl text-xs font-extrabold text-white shadow-xs active:scale-95 transition-transform cursor-pointer touch-manipulation shrink-0"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
+                      title="Finalizar treino e ver resultado"
                     >
-                      <ArrowLeft className="w-4 h-4 text-zinc-600 dark:text-zinc-300 group-hover:-translate-x-0.5 transition-transform" />
+                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      <span>Finalizar</span>
                     </button>
-
-                    {(() => {
-                      const answeredCount = visibleQuestions.filter((q) => !!sessionAnswers[q.id]).length;
-                      const progressPercent = visibleQuestions.length > 0
-                        ? Math.round((answeredCount / visibleQuestions.length) * 100)
-                        : 0;
-
-                      return (
-                        <button
-                          type="button"
-                          onClick={() => setIsQuestionSequenceOpen((prev) => !prev)}
-                          className="flex items-center gap-3 p-1 sm:px-3 sm:py-1.5 rounded-2xl hover:bg-slate-50 dark:hover:bg-slate-900 border border-transparent hover:border-slate-200 dark:hover:border-slate-800 transition-all cursor-pointer group text-left"
-                          title={
-                            isQuestionSequenceOpen
-                              ? 'Ocultar régua de questões (Q)'
-                              : 'Ver régua de questões na íntegra (Q)'
-                          }
-                        >
-                          {/* Círculo de Progresso com Porcentagem */}
-                          <div className="relative w-10 h-10 flex items-center justify-center shrink-0">
-                            <svg className="w-10 h-10 -rotate-90" viewBox="0 0 36 36">
-                              <path
-                                className="text-slate-200 dark:text-slate-800"
-                                strokeWidth="3.2"
-                                stroke="currentColor"
-                                fill="none"
-                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                              />
-                              <path
-                                strokeDasharray={`${progressPercent}, 100`}
-                                strokeWidth="3.2"
-                                strokeLinecap="round"
-                                stroke="currentColor"
-                                fill="none"
-                                style={{ color: accentConfig.primaryHex }}
-                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
-                              />
-                            </svg>
-                            <span className="absolute text-[11px] font-black font-sans text-slate-800 dark:text-slate-100 tracking-tighter">
-                              {progressPercent}%
-                            </span>
-                          </div>
-
-                          {/* Posição e Rótulo Progresso */}
-                          <div className="flex flex-col">
-                            <div className="flex items-center gap-1.5">
-                              <span className="text-sm sm:text-base font-black font-sans text-[#0f274a] dark:text-white leading-tight tracking-tight">
-                                {answeredCount}/{visibleQuestions.length}
-                              </span>
-                              <ChevronDown
-                                className={`w-3.5 h-3.5 text-slate-400 group-hover:text-blue-500 transition-transform duration-200 ${isQuestionSequenceOpen ? 'rotate-180 text-blue-500' : ''
-                                  }`}
-                              />
-                            </div>
-                            <span className="text-[11px] font-medium text-slate-400 dark:text-slate-500 capitalize">
-                              Progresso
-                            </span>
-                          </div>
-                        </button>
-                      );
-                    })()}
                   </div>
 
-                  {/* Direita: Ferramentas de Estudo (Tempo Duplo, Marca-Texto 6 cores, Riscar, Fonte, Favoritar, Reportar, Atalhos, Filtros, Finalizar) */}
-                  <div className="flex items-center justify-start sm:justify-end gap-2 sm:gap-2.5 shrink-0 border-t lg:border-t-0 pt-2 lg:pt-0 border-slate-100 dark:border-slate-800 overflow-x-auto max-w-full no-scrollbar pb-1">
+                  {/* Direita: Ferramentas de Estudo (Scroll horizontal limpo sem cortar popovers flutuantes) */}
+                  <div className="flex items-center justify-between sm:justify-end gap-1.5 sm:gap-2 shrink-0 border-t lg:border-t-0 pt-1.5 lg:pt-0 border-slate-100 dark:border-slate-800 overflow-x-auto max-w-full no-scrollbar">
                     {/* Relógios de Performance: Tempo na Questão e Tempo Total */}
-                    <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xs">
+                    <div className="flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xs shrink-0">
                       {isTimerVisible ? (
                         <>
                           {/* Tempo na Questão Atual */}
@@ -1070,7 +1088,7 @@ export const QuestoesView: React.FC = () => {
                           >
                             <Clock className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                             <span className="font-mono tabular-nums">{formatTimer(elapsedSeconds)}</span>
-                            <span className="text-[9px] uppercase font-semibold text-slate-400 dark:text-zinc-500">Total</span>
+                            <span className="hidden xs:inline text-[9px] uppercase font-semibold text-slate-400 dark:text-zinc-500">Total</span>
                           </div>
 
                           {/* Botão Pausar / Retomar (Sincronizado com a Navbar) */}
@@ -1115,13 +1133,16 @@ export const QuestoesView: React.FC = () => {
                       )}
                     </div>
 
-                    {/* Marca-texto compacto com 6 cores retrátil */}
-                    <div ref={topHighlighterMenuRef} className="relative inline-flex items-center">
+                    {/* Botão Marca-texto compacto (abre paleta sem clipping fora do overflow-x-auto) */}
+                    <div ref={topHighlighterMenuRef} className="inline-flex items-center shrink-0">
                       <button
                         type="button"
-                        onClick={() => setIsTopHighlighterMenuOpen((prev) => !prev)}
+                        onClick={() => {
+                          setIsTopFontSizeMenuOpen(false);
+                          setIsTopHighlighterMenuOpen((prev) => !prev);
+                        }}
                         title={`Marca-texto ativo: ${HIGHLIGHTER_COLORS[activeHighlighterColor].name}. Clique para alternar cor (M).`}
-                        className="flex items-center gap-1.5 px-2.5 py-1.5 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 rounded-xl transition-all cursor-pointer shadow-xs group"
+                        className="flex items-center gap-1.5 px-2.5 py-1.5 min-h-[34px] bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 rounded-xl transition-all cursor-pointer shadow-xs group touch-manipulation"
                       >
                         <Highlighter className="w-3.5 h-3.5 text-slate-700 dark:text-slate-300 group-hover:scale-110 transition-transform" />
                         <span
@@ -1133,38 +1154,6 @@ export const QuestoesView: React.FC = () => {
                             }`}
                         />
                       </button>
-
-                      {/* Pílula Flutuante Horizontal Centralizada com as 6 Cores */}
-                      {isTopHighlighterMenuOpen && (
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 w-max min-w-max flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 rounded-full shadow-xl animate-in fade-in zoom-in-95 duration-150">
-                          {(['yellow', 'green', 'pink', 'blue', 'orange', 'purple'] as HighlighterColor[]).map((colorKey) => {
-                            const c = HIGHLIGHTER_COLORS[colorKey];
-                            const isSelected = activeHighlighterColor === colorKey && !isStrikethroughActive;
-                            return (
-                              <button
-                                key={colorKey}
-                                type="button"
-                                onClick={() => {
-                                  setActiveHighlighterColor(colorKey);
-                                  setIsStrikethroughActive(false);
-                                  setIsTopHighlighterMenuOpen(false);
-                                }}
-                                title={`Marca-texto ${c.name}`}
-                                style={{
-                                  backgroundColor: c.hex,
-                                  borderColor: isSelected ? c.borderHex : 'transparent'
-                                }}
-                                className={`w-6 h-6 rounded-full transition-all cursor-pointer flex items-center justify-center border shrink-0 ${isSelected
-                                    ? 'ring-2 ring-blue-500/60 shadow-xs scale-105'
-                                    : 'opacity-90 hover:opacity-100 hover:scale-110'
-                                  }`}
-                              >
-                                {isSelected && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      )}
                     </div>
 
                     {/* Botão de Riscar / Tachado de Texto Selecionado */}
@@ -1182,7 +1171,7 @@ export const QuestoesView: React.FC = () => {
                           ? 'Modo Riscar Texto (Tachado) ATIVO [S]. Clique para desativar ou selecione texto para riscar.'
                           : 'Riscar texto selecionado (Tachado) [S]. Clique para ativar modo risco.'
                       }
-                      className={`flex items-center gap-1.5 px-2.5 py-1.5 border rounded-xl transition-all cursor-pointer shadow-xs group ${isStrikethroughActive
+                      className={`flex items-center gap-1.5 px-2.5 py-1.5 min-h-[34px] border rounded-xl transition-all cursor-pointer shadow-xs group shrink-0 touch-manipulation ${isStrikethroughActive
                           ? 'bg-rose-50 dark:bg-rose-950/40 border-rose-300 dark:border-rose-700/60 text-rose-600 dark:text-rose-400 font-bold ring-2 ring-rose-400/40'
                           : 'bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300'
                         }`}
@@ -1194,10 +1183,13 @@ export const QuestoesView: React.FC = () => {
                     </button>
 
                     {/* Seletor de Tamanho de Fonte Retrátil */}
-                    <div ref={topFontSizeMenuRef} className="relative inline-flex items-center">
+                    <div ref={topFontSizeMenuRef} className="inline-flex items-center shrink-0">
                       <button
                         type="button"
-                        onClick={() => setIsTopFontSizeMenuOpen((prev) => !prev)}
+                        onClick={() => {
+                          setIsTopHighlighterMenuOpen(false);
+                          setIsTopFontSizeMenuOpen((prev) => !prev);
+                        }}
                         title={`Tamanho da fonte: ${fontSize === 'xs'
                             ? 'Muito Compacta (A--)'
                             : fontSize === 'sm'
@@ -1208,7 +1200,7 @@ export const QuestoesView: React.FC = () => {
                                   ? 'Grande (A+)'
                                   : 'Muito Grande (A++)'
                           }. Clique para alternar.`}
-                        className="flex items-center gap-1 px-2.5 py-1.5 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 rounded-xl transition-all cursor-pointer shadow-xs group"
+                        className="flex items-center gap-1 px-2.5 py-1.5 min-h-[34px] bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 rounded-xl transition-all cursor-pointer shadow-xs group touch-manipulation"
                       >
                         <Type className="w-3.5 h-3.5 text-slate-700 dark:text-slate-300 group-hover:scale-110 transition-transform" />
                         <span className="text-[11px] font-black text-blue-600 dark:text-blue-400">
@@ -1219,42 +1211,10 @@ export const QuestoesView: React.FC = () => {
                             }`}
                         />
                       </button>
-
-                      {/* Pílula Flutuante com os 5 Níveis de Fonte */}
-                      {isTopFontSizeMenuOpen && (
-                        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 w-max min-w-max flex items-center gap-1 p-1 bg-white dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 rounded-full shadow-xl animate-in fade-in zoom-in-95 duration-150">
-                          {[
-                            { id: 'xs' as const, label: 'A--', title: 'Muito Compacta (--)' },
-                            { id: 'sm' as const, label: 'A-', title: 'Compacta (-)' },
-                            { id: 'base' as const, label: 'A', title: 'Padrão' },
-                            { id: 'lg' as const, label: 'A+', title: 'Grande (+)' },
-                            { id: 'xl' as const, label: 'A++', title: 'Muito Grande (++)' },
-                          ].map((f) => {
-                            const isSelected = fontSize === f.id;
-                            return (
-                              <button
-                                key={f.id}
-                                type="button"
-                                onClick={() => {
-                                  setFontSize(f.id);
-                                  setIsTopFontSizeMenuOpen(false);
-                                }}
-                                title={f.title}
-                                className={`px-2.5 py-1 rounded-full text-xs font-black transition-all cursor-pointer shrink-0 ${isSelected
-                                    ? 'bg-blue-600 text-white shadow-xs scale-105'
-                                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800'
-                                  }`}
-                              >
-                                {f.label}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      )}
                     </div>
 
                     {/* Ações de Questão: Favoritar e Reportar */}
-                    <div className="flex items-center gap-1 text-slate-500 dark:text-slate-400">
+                    <div className="flex items-center gap-0.5 sm:gap-1 text-slate-500 dark:text-slate-400 shrink-0">
                       {/* Favoritar */}
                       {currentQuestion && (
                         <button
@@ -1262,7 +1222,7 @@ export const QuestoesView: React.FC = () => {
                           onClick={() => {
                             toggleBookmark(currentQuestion.id);
                           }}
-                          className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${bookmarkedQuestionIds[currentQuestion.id]
+                          className={`p-2 sm:p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer touch-manipulation ${bookmarkedQuestionIds[currentQuestion.id]
                               ? 'text-amber-500'
                               : 'text-slate-400 hover:text-amber-500'
                             }`}
@@ -1289,7 +1249,7 @@ export const QuestoesView: React.FC = () => {
                             setQuestionToReport(currentQuestion);
                             setIsReportDrawerOpen(true);
                           }}
-                          className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${reportedQuestionIds[currentQuestion.id]
+                          className={`p-2 sm:p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer touch-manipulation ${reportedQuestionIds[currentQuestion.id]
                               ? 'text-amber-500 fill-amber-500'
                               : 'text-slate-400 hover:text-amber-500'
                             }`}
@@ -1305,25 +1265,24 @@ export const QuestoesView: React.FC = () => {
                       )}
                     </div>
 
-                    {/* Botão de Atalhos do Teclado */}
+                    {/* Botão de Atalhos do Teclado (Oculto em smartphones touch) */}
                     <button
                       type="button"
                       onClick={() => setIsShortcutsModalOpen(true)}
-                      className="flex items-center gap-1.5 p-2 sm:px-2.5 sm:py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs group"
+                      className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs group shrink-0"
                       title="Atalhos do Teclado (?)"
                     >
                       <Keyboard className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
-                      <span className="hidden sm:inline text-xs font-bold">Atalhos</span>
+                      <span className="hidden md:inline text-xs font-bold">Atalhos</span>
                     </button>
 
                     {/* Botão de Filtros */}
                     <button
                       type="button"
                       onClick={handleReturnToFilters}
-                      className="flex items-center gap-1.5 p-2 sm:px-2.5 sm:py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs"
+                      className="flex items-center gap-1 px-2.5 py-1.5 min-h-[34px] rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs shrink-0 touch-manipulation"
                       title="Filtros de questões"
                     >
-                      <Plus className="w-3.5 h-3.5 text-blue-500" />
                       <SlidersHorizontal className="w-3.5 h-3.5" />
                       {activeFiltersCount > 0 && (
                         <span
@@ -1335,11 +1294,11 @@ export const QuestoesView: React.FC = () => {
                       )}
                     </button>
 
-                    {/* Botão Finalizar Treino */}
+                    {/* Botão Finalizar Treino (Desktop >= lg) */}
                     <button
                       type="button"
                       onClick={handleFinishToResults}
-                      className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-xs transition-transform hover:scale-105 cursor-pointer"
+                      className="hidden lg:flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-xs transition-transform hover:scale-105 cursor-pointer shrink-0"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                       title="Finalizar treino e ver resultado"
                     >
@@ -1348,6 +1307,76 @@ export const QuestoesView: React.FC = () => {
                     </button>
                   </div>
                 </div>
+
+                {/* Pílula Flutuante Horizontal com as 6 Cores do Marca-Texto (Fora do overflow-x-auto: zero clipping!) */}
+                {isTopHighlighterMenuOpen && (
+                  <div
+                    data-highlighter-menu="true"
+                    className="absolute top-full right-2 sm:right-24 mt-2 z-50 flex items-center gap-2.5 px-3.5 py-2 bg-white dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 rounded-full shadow-2xl animate-in fade-in zoom-in-95 duration-150"
+                  >
+                    {(['yellow', 'green', 'pink', 'blue', 'orange', 'purple'] as HighlighterColor[]).map((colorKey) => {
+                      const c = HIGHLIGHTER_COLORS[colorKey];
+                      const isSelected = activeHighlighterColor === colorKey && !isStrikethroughActive;
+                      return (
+                        <button
+                          key={colorKey}
+                          type="button"
+                          onClick={() => {
+                            setActiveHighlighterColor(colorKey);
+                            setIsStrikethroughActive(false);
+                            setIsTopHighlighterMenuOpen(false);
+                          }}
+                          title={`Marca-texto ${c.name}`}
+                          style={{
+                            backgroundColor: c.hex,
+                            borderColor: isSelected ? c.borderHex : 'transparent'
+                          }}
+                          className={`w-7 h-7 sm:w-6 sm:h-6 rounded-full transition-all cursor-pointer flex items-center justify-center border shrink-0 touch-manipulation ${isSelected
+                              ? 'ring-2 ring-blue-500/60 shadow-xs scale-105'
+                              : 'opacity-90 hover:opacity-100 hover:scale-110 active:scale-95'
+                            }`}
+                        >
+                          {isSelected && <Check className="w-3.5 h-3.5 text-black stroke-[3]" />}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {/* Pílula Flutuante com os 5 Níveis de Fonte (Fora do overflow-x-auto: zero clipping!) */}
+                {isTopFontSizeMenuOpen && (
+                  <div
+                    data-fontsize-menu="true"
+                    className="absolute top-full right-2 sm:right-12 mt-2 z-50 flex items-center gap-1 p-1.5 bg-white dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 rounded-full shadow-2xl animate-in fade-in zoom-in-95 duration-150"
+                  >
+                    {[
+                      { id: 'xs' as const, label: 'A--', title: 'Muito Compacta (--)' },
+                      { id: 'sm' as const, label: 'A-', title: 'Compacta (-)' },
+                      { id: 'base' as const, label: 'A', title: 'Padrão' },
+                      { id: 'lg' as const, label: 'A+', title: 'Grande (+)' },
+                      { id: 'xl' as const, label: 'A++', title: 'Muito Grande (++)' }
+                    ].map((f) => {
+                      const isSelected = fontSize === f.id;
+                      return (
+                        <button
+                          key={f.id}
+                          type="button"
+                          onClick={() => {
+                            setFontSize(f.id);
+                            setIsTopFontSizeMenuOpen(false);
+                          }}
+                          title={f.title}
+                          className={`px-3 py-1.5 rounded-full text-xs font-black transition-all cursor-pointer shrink-0 touch-manipulation ${isSelected
+                              ? 'bg-blue-600 text-white shadow-xs scale-105'
+                              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800'
+                            }`}
+                        >
+                          {f.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
 
                 {/* Régua Sequencial Retrátil de Questões na Íntegra */}
                 {isQuestionSequenceOpen && (
@@ -1496,30 +1525,34 @@ export const QuestoesView: React.FC = () => {
                 />
               )}
 
-              {/* BARRA INFERIOR DE NAVEGAÇÃO ENTRE QUESTÕES */}
-              <div className="flex items-center justify-between gap-3 pt-2">
+              {/* BARRA INFERIOR DE NAVEGAÇÃO ENTRE QUESTÕES (THUMB-FRIENDLY 44PX NO MOBILE) */}
+              <div className="flex items-center justify-between gap-2.5 sm:gap-3 pt-1 sm:pt-2 touch-manipulation">
                 <button
                   type="button"
                   disabled={currentQuestionIndex === 0}
                   onClick={() => {
                     setCurrentQuestionIndex((prev) => Math.max(0, prev - 1));
                     setQuestionTimer(0);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-all cursor-pointer shadow-xs"
+                  className="flex items-center justify-center gap-1.5 px-4 py-2.5 min-h-[44px] rounded-2xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed transition-all cursor-pointer shadow-xs touch-manipulation"
                 >
                   <ChevronLeft className="w-4 h-4" />
                   <span>Anterior</span>
                 </button>
 
-                <div className="text-xs text-slate-500 dark:text-slate-400 font-semibold text-center">
-                  Questão <strong className="text-slate-900 dark:text-white font-black text-sm">{currentQuestionIndex + 1}</strong> de <strong className="text-slate-900 dark:text-white font-black text-sm">{visibleQuestions.length}</strong>
+                <div className="text-xs text-slate-500 dark:text-slate-400 font-semibold text-center tabular-nums">
+                  <span className="hidden xs:inline">Questão </span>
+                  <strong className="text-slate-900 dark:text-white font-black text-sm">{currentQuestionIndex + 1}</strong>
+                  <span> / </span>
+                  <strong className="text-slate-900 dark:text-white font-black text-sm">{visibleQuestions.length}</strong>
                 </div>
 
                 {currentQuestionIndex >= visibleQuestions.length - 1 ? (
                   <button
                     type="button"
                     onClick={handleFinishToResults}
-                    className="flex items-center gap-2 px-5 py-2.5 rounded-2xl text-xs font-black text-white shadow-md hover:scale-102 transition-transform cursor-pointer"
+                    className="flex items-center justify-center gap-1.5 px-5 py-2.5 min-h-[44px] rounded-2xl text-xs font-black text-white shadow-md hover:scale-102 active:scale-[0.98] transition-transform cursor-pointer touch-manipulation"
                     style={{ backgroundColor: accentConfig.primaryHex }}
                   >
                     <span>Ver Resultado</span>
@@ -1531,8 +1564,9 @@ export const QuestoesView: React.FC = () => {
                     onClick={() => {
                       setCurrentQuestionIndex((prev) => Math.min(visibleQuestions.length - 1, prev + 1));
                       setQuestionTimer(0);
+                      window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
-                    className="flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-black text-white shadow-md hover:scale-102 transition-transform cursor-pointer"
+                    className="flex items-center justify-center gap-1.5 px-4 py-2.5 min-h-[44px] rounded-2xl text-xs font-black text-white shadow-md hover:scale-102 active:scale-[0.98] transition-transform cursor-pointer touch-manipulation"
                     style={{ backgroundColor: accentConfig.primaryHex }}
                   >
                     <span>Próxima</span>

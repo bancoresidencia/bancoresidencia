@@ -74,17 +74,30 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
   const [isUpgradeModalOpen, setIsUpgradeModalOpenState] = useState(false);
   const [selectedPlanForCheckout, setSelectedPlanForCheckout] = useState<PlanDefinition | null>(null);
   const [isLimitReached, setIsLimitReached] = useState(false);
-  const [currentTimestamp] = useState(() => Date.now());
+  const getDailyQuotaStorageKey = useCallback((uid?: string | null) => {
+    const todayUtc = new Date().toISOString().slice(0, 10);
+    return `bancoresidencia_daily_q_${uid || 'guest'}_${todayUtc}`;
+  }, []);
 
-  const [dailyResolvedCount, setDailyResolvedCount] = useState<number>(() => {
-    if (typeof window === 'undefined') return 0;
+  const [dailyResolvedCount, setDailyResolvedCount] = useState<number>(0);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
     try {
-      const todayKey = `bancoresidencia_daily_q_${new Date().toISOString().slice(0, 10)}`;
-      return parseInt(localStorage.getItem(todayKey) || '0', 10);
+      const key = getDailyQuotaStorageKey(user?.id);
+      const saved = localStorage.getItem(key);
+      if (saved !== null) {
+        setDailyResolvedCount(parseInt(saved, 10) || 0);
+      } else if (!user?.id) {
+        const legacyKey = `bancoresidencia_daily_q_${new Date().toISOString().slice(0, 10)}`;
+        setDailyResolvedCount(parseInt(localStorage.getItem(legacyKey) || '0', 10) || 0);
+      } else {
+        setDailyResolvedCount(0);
+      }
     } catch {
-      return 0;
+      setDailyResolvedCount(0);
     }
-  });
+  }, [user?.id, getDailyQuotaStorageKey]);
 
   // Checagem de Administrador / Curador
   const isAdmin = Boolean(
@@ -96,10 +109,16 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
     )
   );
 
-  // Checagem de Expiração da Assinatura
+  // Checagem dinâmica de Expiração da Assinatura (atualiza caso atravesse meia-noite)
+  const [nowTimestamp, setNowTimestamp] = useState(() => Date.now());
+  useEffect(() => {
+    const interval = setInterval(() => setNowTimestamp(Date.now()), 60000);
+    return () => clearInterval(interval);
+  }, []);
+
   const isSubscriptionExpired = Boolean(
     user?.subscriptionExpiresAt &&
-    new Date(user.subscriptionExpiresAt).getTime() <= currentTimestamp
+    new Date(user.subscriptionExpiresAt).getTime() <= nowTimestamp
   );
 
   // Plano Efetivo
@@ -135,7 +154,7 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
         setDailyResolvedCount((prevLocal) => {
           const synced = Math.max(prevLocal, count);
           try {
-            const todayKey = `bancoresidencia_daily_q_${new Date().toISOString().slice(0, 10)}`;
+            const todayKey = getDailyQuotaStorageKey(user.id);
             localStorage.setItem(todayKey, String(synced));
           } catch {}
           return synced;
@@ -144,16 +163,37 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
     } catch (err) {
       console.warn('[SubscriptionContext] Erro ao sincronizar contagem diária:', err);
     }
-  }, [user?.id]);
+  }, [user?.id, getDailyQuotaStorageKey]);
 
   useEffect(() => {
     syncDailyCountFromRemote();
-  }, [syncDailyCountFromRemote]);
+
+    if (typeof window === 'undefined') return;
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible') {
+        syncDailyCountFromRemote();
+      }
+    };
+    const handleStorage = (e: StorageEvent) => {
+      if (e.key === getDailyQuotaStorageKey(user?.id) && e.newValue) {
+        setDailyResolvedCount(parseInt(e.newValue, 10) || 0);
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibility);
+    window.addEventListener('online', syncDailyCountFromRemote);
+    window.addEventListener('storage', handleStorage);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility);
+      window.removeEventListener('online', syncDailyCountFromRemote);
+      window.removeEventListener('storage', handleStorage);
+    };
+  }, [syncDailyCountFromRemote, getDailyQuotaStorageKey, user?.id]);
 
   const incrementDailyCount = useCallback(() => {
     if (typeof window === 'undefined') return;
     try {
-      const todayKey = `bancoresidencia_daily_q_${new Date().toISOString().slice(0, 10)}`;
+      const todayKey = getDailyQuotaStorageKey(user?.id);
       const current = parseInt(localStorage.getItem(todayKey) || '0', 10);
       const next = current + 1;
       localStorage.setItem(todayKey, String(next));
@@ -161,7 +201,7 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
     } catch {
       // ignore
     }
-  }, []);
+  }, [user?.id, getDailyQuotaStorageKey]);
 
   const canSolveQuestion = useCallback(() => {
     if (isAdmin) return true;

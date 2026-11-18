@@ -73,6 +73,59 @@ function getDailyLogsStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_daily_review_logs_${userId}` : DAILY_LOGS_KEY;
 }
 
+function getCardEditsStorageKey(userId?: string | null): string {
+  return userId ? `${USER_CARD_EDITS_KEY}_${userId}` : USER_CARD_EDITS_KEY;
+}
+
+const DECK_META_PREFIX = '__BR_DECK_META__:';
+
+interface SerializedDeckMeta {
+  deckKind: 'custom' | 'personalized';
+  description?: string;
+  specialties?: string[];
+  themes?: string[];
+  selectedNodeKeys?: string[];
+  priorityOnly?: boolean;
+  includeAllUserCards?: boolean;
+  includeUserDeckIds?: string[];
+}
+
+function encodeDeckDescriptionWithMeta(deck: CustomFlashcardDeck, deckKind: 'custom' | 'personalized'): string {
+  const payload: SerializedDeckMeta = {
+    deckKind,
+    description: deck.description || '',
+    specialties: deck.specialties || [],
+    themes: deck.themes,
+    selectedNodeKeys: deck.selectedNodeKeys,
+    priorityOnly: deck.priorityOnly,
+    includeAllUserCards: deck.includeAllUserCards,
+    includeUserDeckIds: deck.includeUserDeckIds
+  };
+  return `${DECK_META_PREFIX}${JSON.stringify(payload)}`;
+}
+
+function decodeDeckDescriptionMeta(rawDescription?: string | null): SerializedDeckMeta {
+  if (!rawDescription) return { deckKind: 'custom', description: '' };
+  if (rawDescription.startsWith(DECK_META_PREFIX)) {
+    try {
+      const parsed = JSON.parse(rawDescription.slice(DECK_META_PREFIX.length)) as Partial<SerializedDeckMeta>;
+      return {
+        deckKind: parsed.deckKind === 'personalized' ? 'personalized' : 'custom',
+        description: parsed.description || '',
+        specialties: Array.isArray(parsed.specialties) ? parsed.specialties : [],
+        themes: Array.isArray(parsed.themes) ? parsed.themes : undefined,
+        selectedNodeKeys: Array.isArray(parsed.selectedNodeKeys) ? parsed.selectedNodeKeys : undefined,
+        priorityOnly: parsed.priorityOnly,
+        includeAllUserCards: parsed.includeAllUserCards,
+        includeUserDeckIds: Array.isArray(parsed.includeUserDeckIds) ? parsed.includeUserDeckIds : undefined
+      };
+    } catch {
+      return { deckKind: 'custom', description: rawDescription };
+    }
+  }
+  return { deckKind: 'custom', description: rawDescription };
+}
+
 // Fila de Sincronização em Lote (Batching & Debounce) de Flashcards
 interface PendingFlashcardSyncItem {
   userId: string;
@@ -210,9 +263,23 @@ export async function flushPendingFlashcards(): Promise<void> {
 }
 
 if (typeof window !== 'undefined') {
-  window.addEventListener('beforeunload', () => {
-    if (pendingFlashcardsQueue.size > 0 || pendingDailyLogsQueue.size > 0 || pendingReviewEventsQueue.length > 0) {
+  const flushQueueIfPending = () => {
+    if (
+      pendingFlashcardsQueue.size > 0 ||
+      pendingDailyLogsQueue.size > 0 ||
+      pendingReviewEventsQueue.length > 0
+    ) {
       flushPendingFlashcards();
+    }
+  };
+
+  window.addEventListener('beforeunload', flushQueueIfPending);
+  // Crítico para iOS Safari, Chrome Android e modo PWA (onde beforeunload não dispara ao alternar app ou bloquear tela)
+  window.addEventListener('pagehide', flushQueueIfPending);
+  window.addEventListener('online', flushQueueIfPending);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') {
+      flushQueueIfPending();
     }
   });
 }
@@ -231,7 +298,7 @@ export const flashcardsService = {
     state?: 'all' | 'due' | 'new' | 'learning' | 'review';
   }): FlashcardItem[] {
     const savedProgress = this.loadSavedProgress(filter?.userId);
-    const userEdits = this.loadUserCardEdits();
+    const userEdits = this.loadUserCardEdits(filter?.userId);
     const now = new Date().toISOString();
     const userCreated = this.loadUserCreatedFlashcards(filter?.userId);
     const combined = [...userCreated, ...getInitialFlashcards()];
@@ -737,15 +804,18 @@ export const flashcardsService = {
     }
   },
 
-  // Helpers de storage
+  // Helpers de storage com isolamento estrito por conta (evita contaminação entre usuários no mesmo dispositivo)
   loadSavedProgress(userId?: string | null): Record<string, FlashcardProgress> {
     if (typeof window === 'undefined') return {};
     try {
       const key = getProgressStorageKey(userId);
       const data = localStorage.getItem(key);
       if (data) return JSON.parse(data);
-      const fallback = localStorage.getItem(STORAGE_KEY);
-      return fallback ? JSON.parse(fallback) : {};
+      if (!userId) {
+        const fallback = localStorage.getItem(STORAGE_KEY);
+        return fallback ? JSON.parse(fallback) : {};
+      }
+      return {};
     } catch {
       return {};
     }
@@ -756,14 +826,16 @@ export const flashcardsService = {
     try {
       const key = getProgressStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(saved));
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+      if (!userId) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+      }
     } catch (e) {
       console.warn('Erro ao salvar progresso de flashcards no storage:', e);
     }
   },
 
   /**
-   * Sincronização SWR do progresso FSRS de flashcards com o Supabase
+   * Sincronização SWR do progresso FSRS de flashcards com o Supabase (paginada para acervos grandes)
    */
   async syncRemoteProgress(userId?: string | null): Promise<Record<string, FlashcardProgress>> {
     const local = this.loadSavedProgress(userId);
@@ -774,7 +846,8 @@ export const flashcardsService = {
       const { data, error } = await client
         .from('user_flashcard_progress')
         .select('*')
-        .eq('user_id', userId);
+        .eq('user_id', userId)
+        .range(0, 4999);
 
       if (!error && data) {
         const merged: Record<string, FlashcardProgress> = { ...local };
@@ -1150,7 +1223,7 @@ export const flashcardsService = {
       const key = getDecksStorageKey(userId);
       const data = localStorage.getItem(key);
       let list: CustomFlashcardDeck[] = data ? JSON.parse(data) : [];
-      if (!list || list.length === 0) {
+      if ((!list || list.length === 0) && !userId) {
         const fallback = localStorage.getItem(CUSTOM_DECKS_KEY);
         list = fallback ? JSON.parse(fallback) : [];
       }
@@ -1183,7 +1256,7 @@ export const flashcardsService = {
   },
 
   /**
-   * Salva ou atualiza um baralho personalizado
+   * Salva ou atualiza um baralho personalizado (Autoral)
    */
   saveCustomDeck(deck: CustomFlashcardDeck, userId?: string | null): CustomFlashcardDeck[] {
     if (typeof window === 'undefined') return [];
@@ -1199,7 +1272,9 @@ export const flashcardsService = {
       }
       const key = getDecksStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      localStorage.setItem(CUSTOM_DECKS_KEY, JSON.stringify(updated));
+      if (!userId) {
+        localStorage.setItem(CUSTOM_DECKS_KEY, JSON.stringify(updated));
+      }
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1210,7 +1285,7 @@ export const flashcardsService = {
               id: deck.id,
               user_id: userId,
               title: deck.name,
-              description: deck.description || null,
+              description: encodeDeckDescriptionWithMeta(deck, 'custom'),
               card_ids: deck.cardIds || []
             },
             { onConflict: 'id' }
@@ -1235,7 +1310,9 @@ export const flashcardsService = {
       const updated = current.filter((d) => d.id !== id);
       const key = getDecksStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      localStorage.setItem(CUSTOM_DECKS_KEY, JSON.stringify(updated));
+      if (!userId) {
+        localStorage.setItem(CUSTOM_DECKS_KEY, JSON.stringify(updated));
+      }
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1255,9 +1332,6 @@ export const flashcardsService = {
   },
 
   /**
-   * Sincroniza baralhos do aluno salvos no Supabase
-   */
-  /**
    * Obtém os Baralhos Personalizados (Mistos/Customizados) do estudante
    */
   getPersonalizedDecks(userId?: string | null): CustomFlashcardDeck[] {
@@ -1266,7 +1340,7 @@ export const flashcardsService = {
       const key = getPersonalizedDecksStorageKey(userId);
       const data = localStorage.getItem(key);
       let list: CustomFlashcardDeck[] = data ? JSON.parse(data) : [];
-      if (!list || list.length === 0) {
+      if ((!list || list.length === 0) && !userId) {
         const fallback = localStorage.getItem(PERSONALIZED_DECKS_KEY);
         list = fallback ? JSON.parse(fallback) : [];
       }
@@ -1277,7 +1351,7 @@ export const flashcardsService = {
   },
 
   /**
-   * Salva ou atualiza um Baralho Personalizado (Misto)
+   * Salva ou atualiza um Baralho Personalizado (Misto) com todos os metadados preservados em nuvem
    */
   savePersonalizedDeck(deck: CustomFlashcardDeck, userId?: string | null): CustomFlashcardDeck[] {
     if (typeof window === 'undefined') return [];
@@ -1293,7 +1367,9 @@ export const flashcardsService = {
       }
       const key = getPersonalizedDecksStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      localStorage.setItem(PERSONALIZED_DECKS_KEY, JSON.stringify(updated));
+      if (!userId) {
+        localStorage.setItem(PERSONALIZED_DECKS_KEY, JSON.stringify(updated));
+      }
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1304,7 +1380,7 @@ export const flashcardsService = {
               id: deck.id,
               user_id: userId,
               title: deck.name,
-              description: deck.description || null,
+              description: encodeDeckDescriptionWithMeta(deck, 'personalized'),
               card_ids: deck.cardIds || []
             },
             { onConflict: 'id' }
@@ -1329,7 +1405,9 @@ export const flashcardsService = {
       const updated = current.filter((d) => d.id !== id);
       const key = getPersonalizedDecksStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      localStorage.setItem(PERSONALIZED_DECKS_KEY, JSON.stringify(updated));
+      if (!userId) {
+        localStorage.setItem(PERSONALIZED_DECKS_KEY, JSON.stringify(updated));
+      }
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1423,8 +1501,9 @@ export const flashcardsService = {
   },
 
   async syncRemoteDecks(userId?: string | null): Promise<CustomFlashcardDeck[]> {
-    const local = this.getCustomDecks(userId);
-    if (!userId || userId === 'demo-student') return local;
+    const localCustom = this.getCustomDecks(userId);
+    const localPersonalized = this.getPersonalizedDecks(userId);
+    if (!userId || userId === 'demo-student') return localCustom;
 
     try {
       const client = createClient();
@@ -1434,45 +1513,80 @@ export const flashcardsService = {
         .eq('user_id', userId);
 
       if (!error && data) {
-        const remoteDecks: CustomFlashcardDeck[] = data.map((d: any) => ({
-          id: d.id,
-          name: d.title || 'Baralho',
-          description: d.description || '',
-          specialties: [],
-          cardIds: d.card_ids || [],
-          createdAt: d.created_at || new Date().toISOString()
-        }));
+        const remoteCustom: CustomFlashcardDeck[] = [];
+        const remotePersonalized: CustomFlashcardDeck[] = [];
 
-        const remoteIds = new Set(remoteDecks.map((d) => d.id));
-        const missingOnRemote = local.filter((d) => !remoteIds.has(d.id));
-        const merged = [...remoteDecks, ...missingOnRemote];
-
-        const key = getDecksStorageKey(userId);
-        if (typeof window !== 'undefined') {
-          localStorage.setItem(key, JSON.stringify(merged));
+        for (const d of data as Array<{
+          id: string;
+          title?: string;
+          description?: string | null;
+          card_ids?: string[];
+          created_at?: string;
+        }>) {
+          const meta = decodeDeckDescriptionMeta(d.description);
+          const mapped: CustomFlashcardDeck = {
+            id: d.id,
+            name: d.title || 'Baralho',
+            description: meta.description || '',
+            specialties: meta.specialties || [],
+            themes: meta.themes,
+            selectedNodeKeys: meta.selectedNodeKeys,
+            priorityOnly: meta.priorityOnly,
+            includeAllUserCards: meta.includeAllUserCards,
+            includeUserDeckIds: meta.includeUserDeckIds,
+            cardIds: d.card_ids || [],
+            createdAt: d.created_at || new Date().toISOString()
+          };
+          if (meta.deckKind === 'personalized') {
+            remotePersonalized.push(mapped);
+          } else {
+            remoteCustom.push(mapped);
+          }
         }
 
-        if (missingOnRemote.length > 0) {
-          const payload = missingOnRemote.map((d) => ({
+        const remoteIds = new Set([...remoteCustom, ...remotePersonalized].map((d) => d.id));
+        const missingCustom = localCustom.filter((d) => !remoteIds.has(d.id));
+        const missingPersonalized = localPersonalized.filter((d) => !remoteIds.has(d.id));
+
+        const mergedCustom = [...remoteCustom, ...missingCustom];
+        const mergedPersonalized = [...remotePersonalized, ...missingPersonalized];
+
+        if (typeof window !== 'undefined') {
+          localStorage.setItem(getDecksStorageKey(userId), JSON.stringify(mergedCustom));
+          localStorage.setItem(getPersonalizedDecksStorageKey(userId), JSON.stringify(mergedPersonalized));
+        }
+
+        const uploadPayloads = [
+          ...missingCustom.map((d) => ({
             id: d.id,
             user_id: userId,
             title: d.name,
-            description: d.description || null,
+            description: encodeDeckDescriptionWithMeta(d, 'custom'),
             card_ids: d.cardIds || []
-          }));
-          client.from('user_flashcard_decks').upsert(payload, { onConflict: 'id' }).then(() => {});
+          })),
+          ...missingPersonalized.map((d) => ({
+            id: d.id,
+            user_id: userId,
+            title: d.name,
+            description: encodeDeckDescriptionWithMeta(d, 'personalized'),
+            card_ids: d.cardIds || []
+          }))
+        ];
+
+        if (uploadPayloads.length > 0) {
+          client.from('user_flashcard_decks').upsert(uploadPayloads, { onConflict: 'id' }).then(() => {}, () => {});
         }
 
-        return merged;
+        return mergedCustom;
       }
     } catch (e) {
       console.warn('[flashcardsService] Erro ao sincronizar baralhos:', e);
     }
-    return local;
+    return localCustom;
   },
 
   /**
-   * Carrega os flashcards criados pelo usuário
+   * Carrega os flashcards criados pelo usuário (isolados por conta)
    */
   loadUserCreatedFlashcards(userId?: string | null): FlashcardItem[] {
     if (typeof window === 'undefined') return [];
@@ -1480,8 +1594,11 @@ export const flashcardsService = {
       const key = getUserCardsStorageKey(userId);
       const data = localStorage.getItem(key);
       if (data) return JSON.parse(data);
-      const fallback = localStorage.getItem(USER_FLASHCARDS_KEY);
-      return fallback ? JSON.parse(fallback) : [];
+      if (!userId) {
+        const fallback = localStorage.getItem(USER_FLASHCARDS_KEY);
+        return fallback ? JSON.parse(fallback) : [];
+      }
+      return [];
     } catch {
       return [];
     }
@@ -1502,7 +1619,9 @@ export const flashcardsService = {
       const updated = [cardToSave, ...current.filter((c) => c.id !== card.id)];
       const key = getUserCardsStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+      if (!userId) {
+        localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+      }
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1552,7 +1671,9 @@ export const flashcardsService = {
 
       const key = getUserCardsStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+      if (!userId) {
+        localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+      }
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1591,7 +1712,9 @@ export const flashcardsService = {
       const updated = current.filter((c) => c.id !== cardId);
       const key = getUserCardsStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+      if (!userId) {
+        localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+      }
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1711,32 +1834,66 @@ export const flashcardsService = {
   },
 
   /**
-   * Carrega as edições personalizadas de flashcards salvas localmente pelo usuário
+   * Carrega as edições personalizadas de flashcards salvas pelo usuário
    */
-  loadUserCardEdits(): Record<string, Partial<FlashcardItem>> {
+  loadUserCardEdits(userId?: string | null): Record<string, Partial<FlashcardItem>> {
     if (typeof window === 'undefined') return {};
     try {
-      const data = localStorage.getItem(USER_CARD_EDITS_KEY);
-      return data ? JSON.parse(data) : {};
+      const key = getCardEditsStorageKey(userId);
+      const data = localStorage.getItem(key);
+      if (data) return JSON.parse(data);
+      if (!userId) {
+        const fallback = localStorage.getItem(USER_CARD_EDITS_KEY);
+        return fallback ? JSON.parse(fallback) : {};
+      }
+      return {};
     } catch {
       return {};
     }
   },
 
   /**
-   * Salva a edição de um flashcard apenas localmente para a pessoa que editou
+   * Salva a edição de um flashcard no cache da conta e sincroniza em preferences no Supabase
    */
-  saveCardEdit(cardId: string, edits: Partial<FlashcardItem>): void {
+  saveCardEdit(cardId: string, edits: Partial<FlashcardItem>, userId?: string | null): void {
     if (typeof window === 'undefined') return;
     try {
-      const allEdits = this.loadUserCardEdits();
+      const key = getCardEditsStorageKey(userId);
+      const allEdits = this.loadUserCardEdits(userId);
       allEdits[cardId] = {
         ...(allEdits[cardId] || {}),
         ...edits
       };
-      localStorage.setItem(USER_CARD_EDITS_KEY, JSON.stringify(allEdits));
+      localStorage.setItem(key, JSON.stringify(allEdits));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        client
+          .from('profiles')
+          .select('preferences')
+          .eq('id', userId)
+          .maybeSingle()
+          .then(({ data: profile }) => {
+            const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
+            const remoteEdits = (currentPrefs.flashcardEdits as Record<string, Partial<FlashcardItem>>) || {};
+            return client
+              .from('profiles')
+              .update({
+                preferences: {
+                  ...currentPrefs,
+                  flashcardEdits: {
+                    ...remoteEdits,
+                    [cardId]: allEdits[cardId]
+                  },
+                  updatedAt: new Date().toISOString()
+                }
+              })
+              .eq('id', userId);
+          })
+          .then(() => {}, () => {});
+      }
     } catch (e) {
-      console.warn('Erro ao salvar edição local do flashcard:', e);
+      console.warn('Erro ao salvar edição do flashcard:', e);
     }
   }
 };

@@ -466,8 +466,6 @@ export async function POST(req: NextRequest) {
     if (authenticatedUser) {
       const targetUserId = authenticatedUser.id;
       const targetQuestionId = row.id;
-      const finalStatusRetrial =
-        typeof statusRetrial === 'string' ? statusRetrial.slice(0, 32) : (isCorrect ? 'recuperado' : 'pendente');
 
       try {
         let finalAttempts = Array.isArray(attempts) && attempts.length > 0
@@ -486,7 +484,7 @@ export async function POST(req: NextRequest) {
 
         const { data: existingRow } = await supabaseAdmin
           .from('user_answers')
-          .select('attempts')
+          .select('attempts, student_notes, error_reason, is_correct, status_retrial')
           .eq('user_id', targetUserId)
           .eq('question_id', targetQuestionId)
           .maybeSingle();
@@ -508,6 +506,30 @@ export async function POST(req: NextRequest) {
           finalAttempts = Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp).slice(-30);
         }
 
+        // Preserva notas e classificação de erro anteriores do aluno quando não enviadas explicitamente na requisição
+        const preservedNotes =
+          typeof studentNotes === 'string'
+            ? studentNotes.slice(0, 4000)
+            : (existingRow?.student_notes ?? null);
+
+        const preservedErrorReason =
+          typeof errorReason === 'string'
+            ? errorReason.slice(0, 120)
+            : (existingRow?.error_reason ?? null);
+
+        const hadPreviousError =
+          Boolean(existingRow && existingRow.is_correct === false) ||
+          finalAttempts.slice(0, -1).some((att) => !att.isCorrect);
+
+        const finalStatusRetrial =
+          typeof statusRetrial === 'string'
+            ? statusRetrial.slice(0, 32)
+            : !isCorrect
+            ? 'pendente'
+            : hadPreviousError
+            ? 'recuperado'
+            : (existingRow?.status_retrial ?? null);
+
         await supabaseAdmin.from('user_answers').upsert(
           {
             user_id: targetUserId,
@@ -523,8 +545,8 @@ export async function POST(req: NextRequest) {
             banca: row.banca || 'Geral',
             year: row.year ? Number(row.year) : 2024,
             attempts: finalAttempts,
-            student_notes: typeof studentNotes === 'string' ? studentNotes.slice(0, 4000) : null,
-            error_reason: typeof errorReason === 'string' ? errorReason.slice(0, 120) : null,
+            student_notes: preservedNotes,
+            error_reason: preservedErrorReason,
             status_retrial: finalStatusRetrial
           },
           { onConflict: 'user_id,question_id' }

@@ -380,21 +380,24 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           }
         }
       }}
-      style={{
-        height: activeHeight ? `${activeHeight}px` : undefined,
-        minHeight: activeHeight ? `${activeHeight}px` : undefined,
-        maxHeight: activeHeight ? `${activeHeight}px` : undefined,
-        alignSelf: activeHeight ? 'start' : 'stretch',
-        gridColumn: `span ${activeSpan} / span ${activeSpan}`,
-        transform: isFreeDragging
-          ? `translate3d(${dragOffset.x}px, ${dragOffset.y}px, 0)`
-          : undefined,
-        pointerEvents: isFreeDragging ? 'none' : undefined,
-        zIndex: isFreeDragging ? 90 : isSelected ? 40 : 1,
-        transition: isFreeDragging || isResizing
-          ? 'none'
-          : 'transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s',
-      }}
+      style={
+        {
+          height: activeHeight ? `${activeHeight}px` : undefined,
+          minHeight: activeHeight ? `${activeHeight}px` : undefined,
+          maxHeight: activeHeight ? `${activeHeight}px` : undefined,
+          alignSelf: activeHeight ? 'start' : 'stretch',
+          '--figma-col-span': `span ${activeSpan} / span ${activeSpan}`,
+          '--figma-tablet-span': activeSpan <= 6 ? 'span 6 / span 6' : 'span 12 / span 12',
+          transform: isFreeDragging
+            ? `translate3d(${dragOffset.x}px, ${dragOffset.y}px, 0)`
+            : undefined,
+          pointerEvents: isFreeDragging ? 'none' : undefined,
+          zIndex: isFreeDragging ? 90 : isSelected ? 40 : 1,
+          transition: isFreeDragging || isResizing
+            ? 'none'
+            : 'transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s',
+        } as React.CSSProperties
+      }
       className={`figma-card-wrapper ${activeHeight ? 'has-custom-height' : ''} h-full self-stretch flex flex-col ${isResizing ? 'is-resizing select-none' : ''} ${isCompactHeight ? 'figma-compact-height' : ''} ${isUltraCompactHeight ? 'figma-ultracompact-height' : ''} ${getColSpanClass(activeSpan)} @container relative ${
         isCustomizing
           ? isSelected

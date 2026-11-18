@@ -32,7 +32,18 @@ export const metadata: Metadata = {
       { url: "/icon.svg", type: "image/svg+xml" },
       { url: "/favicon.ico", sizes: "any" }
     ],
-    apple: "/apple-touch-icon.png",
+    apple: [
+      { url: "/logo-banco-residencia.png", sizes: "512x512", type: "image/png" },
+      { url: "/logo-banco-residencia-120x120.png", sizes: "120x120", type: "image/png" }
+    ]
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Hippocampus"
+  },
+  formatDetection: {
+    telephone: false
   }
 };
 

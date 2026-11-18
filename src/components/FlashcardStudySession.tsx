@@ -142,7 +142,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
       priority: editPriority
     };
 
-    flashcardsService.saveCardEdit(currentCard.id, updatedFields);
+    flashcardsService.saveCardEdit(currentCard.id, updatedFields, user?.id);
 
     // Atualiza imediatamente o card na sessão ativa
     setSessionCards((prev) =>
@@ -535,13 +535,13 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <BarChart3 className="w-4 h-4" />
           </button>
 
-          {/* Atalhos de Teclado (Apenas ícone) */}
+          {/* Atalhos de Teclado (Apenas ícone no desktop/tablet) */}
           <button
             type="button"
             onClick={() => setShowShortcuts((prev) => !prev)}
             title="Consultar atalhos de teclado"
             aria-label="Atalhos de teclado"
-            className="p-2 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+            className="hidden sm:inline-flex p-2 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
           >
             <Keyboard className="w-4 h-4" />
           </button>
@@ -612,7 +612,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             setIsFlipped((prev) => !prev);
           }
         }}
-        className="w-full min-h-[340px] sm:min-h-[400px] p-6 sm:p-8 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs cursor-pointer flex flex-col justify-between transition-all duration-200 select-none group relative overflow-hidden"
+        className="w-full min-h-[300px] sm:min-h-[400px] p-5 sm:p-8 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs cursor-pointer flex flex-col justify-between transition-all duration-200 select-none touch-manipulation group relative overflow-hidden"
       >
         {/* Topo do Card */}
         <div className="flex items-center justify-between gap-2 border-b border-zinc-100 dark:border-zinc-800/80 pb-3">
@@ -794,13 +794,15 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
       {/* 4. Ações & Botões de Avaliação FSRS */}
       {isFlipped ? (
         <div className="space-y-3 animate-in fade-in-50 duration-150">
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
             <button
               type="button"
               onClick={() => handleRate('again')}
-              className="p-3 rounded-xl border border-rose-500/30 bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 flex flex-col items-center justify-center transition-all cursor-pointer active:scale-95 shadow-2xs"
+              className="min-h-[52px] px-1.5 py-2.5 sm:p-3 rounded-xl border border-rose-500/30 bg-rose-500/10 hover:bg-rose-500/20 text-rose-600 dark:text-rose-400 flex flex-col items-center justify-center transition-all cursor-pointer touch-manipulation active:scale-95 shadow-2xs"
             >
-              <span className="text-xs sm:text-sm font-bold">De novo (1)</span>
+              <span className="text-[11px] sm:text-sm font-bold whitespace-nowrap">
+                De novo<span className="hidden sm:inline"> (1)</span>
+              </span>
               <span className="text-[10px] font-medium opacity-80">
                 {getProjectedIntervalLabel(currentCard, 'again')}
               </span>
@@ -809,9 +811,11 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <button
               type="button"
               onClick={() => handleRate('hard')}
-              className="p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 flex flex-col items-center justify-center transition-all cursor-pointer active:scale-95 shadow-2xs"
+              className="min-h-[52px] px-1.5 py-2.5 sm:p-3 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 flex flex-col items-center justify-center transition-all cursor-pointer touch-manipulation active:scale-95 shadow-2xs"
             >
-              <span className="text-xs sm:text-sm font-bold">Difícil (2)</span>
+              <span className="text-[11px] sm:text-sm font-bold whitespace-nowrap">
+                Difícil<span className="hidden sm:inline"> (2)</span>
+              </span>
               <span className="text-[10px] font-medium opacity-80">
                 {getProjectedIntervalLabel(currentCard, 'hard')}
               </span>
@@ -820,9 +824,11 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <button
               type="button"
               onClick={() => handleRate('good')}
-              className="p-3 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex flex-col items-center justify-center transition-all cursor-pointer active:scale-95 shadow-2xs"
+              className="min-h-[52px] px-1.5 py-2.5 sm:p-3 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex flex-col items-center justify-center transition-all cursor-pointer touch-manipulation active:scale-95 shadow-2xs"
             >
-              <span className="text-xs sm:text-sm font-bold">Bom (3)</span>
+              <span className="text-[11px] sm:text-sm font-bold whitespace-nowrap">
+                Bom<span className="hidden sm:inline"> (3)</span>
+              </span>
               <span className="text-[10px] font-medium opacity-80">
                 {getProjectedIntervalLabel(currentCard, 'good')}
               </span>
@@ -831,9 +837,11 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <button
               type="button"
               onClick={() => handleRate('easy')}
-              className="p-3 rounded-xl border border-sky-500/30 bg-sky-500/10 hover:bg-sky-500/20 text-sky-600 dark:text-sky-400 flex flex-col items-center justify-center transition-all cursor-pointer active:scale-95 shadow-2xs"
+              className="min-h-[52px] px-1.5 py-2.5 sm:p-3 rounded-xl border border-sky-500/30 bg-sky-500/10 hover:bg-sky-500/20 text-sky-600 dark:text-sky-400 flex flex-col items-center justify-center transition-all cursor-pointer touch-manipulation active:scale-95 shadow-2xs"
             >
-              <span className="text-xs sm:text-sm font-bold">Fácil (4)</span>
+              <span className="text-[11px] sm:text-sm font-bold whitespace-nowrap">
+                Fácil<span className="hidden sm:inline"> (4)</span>
+              </span>
               <span className="text-[10px] font-medium opacity-80">
                 {getProjectedIntervalLabel(currentCard, 'easy')}
               </span>
@@ -846,7 +854,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <button
               type="button"
               onClick={handlePrevCard}
-              className="p-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all flex items-center justify-center cursor-pointer active:scale-95 shadow-2xs"
+              className="min-w-[46px] min-h-[46px] p-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all flex items-center justify-center cursor-pointer touch-manipulation active:scale-95 shadow-2xs"
               title="Card anterior"
               aria-label="Card anterior"
             >
@@ -857,7 +865,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
           <button
             type="button"
             onClick={() => setIsFlipped(true)}
-            className="w-full sm:w-auto px-8 sm:px-10 py-3 rounded-xl text-xs sm:text-sm font-bold text-white shadow-xs cursor-pointer hover:opacity-95 transition-all flex items-center justify-center active:scale-95"
+            className="w-full sm:w-auto min-h-[46px] px-8 sm:px-10 py-3 rounded-xl text-xs sm:text-sm font-bold text-white shadow-xs cursor-pointer touch-manipulation hover:opacity-95 transition-all flex items-center justify-center active:scale-95"
             style={{ backgroundColor: accentConfig.primaryHex }}
           >
             <span>Mostrar Resposta</span>
@@ -866,7 +874,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
           <button
             type="button"
             onClick={handleNextCard}
-            className="p-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all flex items-center justify-center cursor-pointer active:scale-95 shadow-2xs"
+            className="min-w-[46px] min-h-[46px] p-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all flex items-center justify-center cursor-pointer touch-manipulation active:scale-95 shadow-2xs"
             title="Próximo card"
             aria-label="Próximo card"
           >

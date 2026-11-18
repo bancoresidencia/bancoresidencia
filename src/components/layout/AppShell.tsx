@@ -17,7 +17,10 @@ import {
   LayoutDashboard,
   FileQuestion,
   AlertOctagon,
-  Brain
+  Brain,
+  Cloud,
+  CloudOff,
+  RefreshCw
 } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
 import { Logo } from '@/components/Logo';
@@ -46,6 +49,12 @@ import { useStudentData } from '@/context/StudentDataContext';
 import { ActiveTab } from '@/types';
 import { AdminTabToggle } from '@/components/layout/AdminTabToggle';
 import { TabFeatureGuard } from '@/components/layout/TabFeatureGuard';
+import {
+  getCloudSyncSnapshot,
+  subscribeCloudSync,
+  requestImmediateCloudSync,
+  CloudSyncSnapshot
+} from '@/utils/crossDeviceSync';
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -104,9 +113,15 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
     });
   };
 
-  // Dropdown de perfil
+  // Dropdown de perfil e status de sincronização multi-dispositivo
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
   const profileRef = useRef<HTMLDivElement>(null);
+  const [syncSnapshot, setSyncSnapshot] = useState<CloudSyncSnapshot>(() => getCloudSyncSnapshot());
+
+  useEffect(() => {
+    setSyncSnapshot(getCloudSyncSnapshot());
+    return subscribeCloudSync((next) => setSyncSnapshot(next));
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -225,17 +240,19 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
               <ThemeSelector compact={true} />
 
-              {/* Botão PRO: Sóbrio, Elegante e com Alto Destaque */}
+              {/* Botão PRO: Sóbrio, Elegante e Compacto em telas estreitas */}
               {isUserFree && !isAdmin ? (
                 <Link href="/checkout">
                   <Button
                     variant="primary"
                     size="sm"
-                    className="gap-1.5 shadow-sm font-bold"
+                    className="gap-1 sm:gap-1.5 px-2.5 sm:px-3 shadow-sm font-bold touch-manipulation"
                     leftIcon={<Sparkles className="w-3.5 h-3.5 text-amber-300 fill-amber-300/30" />}
                     title="Conhecer Planos e Desbloquear Acesso Completo"
                   >
-                    <span className="tracking-tight whitespace-nowrap">Seja PRO</span>
+                    <span className="tracking-tight whitespace-nowrap">
+                      <span className="hidden sm:inline">Seja </span>PRO
+                    </span>
                   </Button>
                 </Link>
               ) : !isUserFree && !isAdmin ? (
@@ -261,13 +278,13 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
               {/* Controle de Ativação de Aba no Canto Superior para Administrador */}
               <AdminTabToggle />
 
-              {/* Perfil do Aluno com Dropdown */}
+              {/* Perfil do Aluno com Dropdown e Indicador de Sincronização */}
               {user && (
                 <div ref={profileRef} className="relative">
                   <button
                     type="button"
                     onClick={() => setProfileDropdownOpen(!profileDropdownOpen)}
-                    className="flex items-center justify-center p-0.5 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-800 transition-all cursor-pointer group"
+                    className="relative flex items-center justify-center p-0.5 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-800 transition-all cursor-pointer group touch-manipulation"
                     title={`${user.name} • ${stats.streakDays} dias seguidos`}
                   >
                     {user.avatarUrl ? (
@@ -286,11 +303,23 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                         {(user.name || 'LR').slice(0, 2).toUpperCase()}
                       </div>
                     )}
+                    {syncSnapshot.state === 'offline' && (
+                      <span
+                        title="Modo offline: dados salvos neste aparelho"
+                        className="absolute -bottom-1 -right-1 w-2.5 h-2.5 rounded-full bg-amber-500 ring-2 ring-white dark:ring-[#121215]"
+                      />
+                    )}
+                    {syncSnapshot.state === 'syncing' && (
+                      <span
+                        title="Sincronizando dados em nuvem..."
+                        className="absolute -bottom-1 -right-1 w-2.5 h-2.5 rounded-full bg-sky-500 animate-pulse ring-2 ring-white dark:ring-[#121215]"
+                      />
+                    )}
                   </button>
 
                   {/* Menu Dropdown Padronizado */}
                   {profileDropdownOpen && (
-                    <div className="absolute right-0 top-full mt-2 w-64 bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] rounded-2xl border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
+                    <div className="absolute right-0 top-full mt-2 w-68 max-w-[calc(100vw-24px)] bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] rounded-2xl border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
                       <div className="flex items-center gap-3 p-2 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80">
                         {user.avatarUrl ? (
                           // eslint-disable-next-line @next/next/no-img-element
@@ -317,6 +346,45 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                             <span>{stats.streakDays} dias seguidos</span>
                           </div>
                         </div>
+                      </div>
+
+                      {/* Status de Sincronização Multi-Dispositivo */}
+                      <div className="my-2 px-2.5 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900/80 border border-zinc-200/70 dark:border-zinc-800 flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-2 min-w-0">
+                          {syncSnapshot.state === 'offline' ? (
+                            <CloudOff className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                          ) : (
+                            <Cloud
+                              className={`w-3.5 h-3.5 shrink-0 ${
+                                syncSnapshot.state === 'error'
+                                  ? 'text-rose-500'
+                                  : syncSnapshot.state === 'syncing'
+                                  ? 'text-sky-500'
+                                  : 'text-emerald-500'
+                              }`}
+                            />
+                          )}
+                          <span className="text-[11px] font-semibold text-zinc-600 dark:text-zinc-300 truncate">
+                            {syncSnapshot.state === 'offline'
+                              ? 'Offline (salvo local)'
+                              : syncSnapshot.state === 'syncing'
+                              ? 'Sincronizando...'
+                              : syncSnapshot.state === 'error'
+                              ? 'Pendente de envio'
+                              : 'Sincronizado na nuvem'}
+                          </span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => requestImmediateCloudSync()}
+                          disabled={syncSnapshot.state === 'syncing'}
+                          title="Sincronizar dados com todos os seus dispositivos agora"
+                          className="p-1.5 rounded-lg hover:bg-zinc-200/70 dark:hover:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors cursor-pointer disabled:opacity-50"
+                        >
+                          <RefreshCw
+                            className={`w-3.5 h-3.5 ${syncSnapshot.state === 'syncing' ? 'animate-spin text-sky-500' : ''}`}
+                          />
+                        </button>
                       </div>
 
                       <div className="pt-2 space-y-1">
@@ -393,7 +461,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
         </header>
 
         {/* 3. Conteúdo da Página da Rota Ativa */}
-        <main className="flex-1 min-w-0 pb-20 md:pb-0">
+        <main className="flex-1 min-w-0 pb-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:pb-0">
           <TabFeatureGuard>{children}</TabFeatureGuard>
         </main>
       </div>
@@ -401,102 +469,106 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
       {/* Barra de Navegação Inferior Fixa para Dispositivos Móveis */}
       <nav
         aria-label="Navegação inferior mobile"
-        className="fixed bottom-0 left-0 right-0 z-40 bg-[var(--bg-card,#ffffff)]/95 dark:bg-[var(--card,#121215)]/95 backdrop-blur-lg border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 px-2 pt-1.5 pb-[max(env(safe-area-inset-bottom,0px),0.5rem)] flex items-center justify-around md:hidden shadow-lg transition-colors select-none"
+        className="fixed bottom-0 left-0 right-0 z-40 bg-[var(--bg-card,#ffffff)]/95 dark:bg-[var(--card,#121215)]/95 backdrop-blur-xl border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 px-1.5 pt-1 pb-[max(env(safe-area-inset-bottom,0px),0.45rem)] flex items-center justify-around md:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_-4px_24px_rgba(0,0,0,0.55)] transition-colors select-none touch-manipulation"
       >
         <Link
           href="/dashboard"
-          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${pathname === '/dashboard' || pathname === '/'
+          className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] active:scale-95 touch-manipulation ${pathname === '/dashboard' || pathname === '/'
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
             }`}
           style={{
-            color: pathname === '/dashboard' || pathname === '/' ? accentConfig.primaryHex : undefined
+            color: pathname === '/dashboard' || pathname === '/' ? accentConfig.primaryHex : undefined,
+            backgroundColor: pathname === '/dashboard' || pathname === '/' ? accentConfig.bgRgba : undefined
           }}
         >
-          <LayoutDashboard className="w-5 h-5 stroke-[1.8]" />
-          <span className="text-[10px] tracking-tight">Início</span>
+          <LayoutDashboard className="w-5 h-5 stroke-[1.9]" />
+          <span className="text-[10px] tracking-tight leading-none">Início</span>
         </Link>
 
         <Link
           href="/questoes"
-          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${pathname?.startsWith('/questoes')
+          className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] active:scale-95 touch-manipulation ${pathname?.startsWith('/questoes')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
             }`}
           style={{
-            color: pathname?.startsWith('/questoes') ? accentConfig.primaryHex : undefined
+            color: pathname?.startsWith('/questoes') ? accentConfig.primaryHex : undefined,
+            backgroundColor: pathname?.startsWith('/questoes') ? accentConfig.bgRgba : undefined
           }}
         >
-          <FileQuestion className="w-5 h-5 stroke-[1.8]" />
-          <span className="text-[10px] tracking-tight">Questões</span>
+          <FileQuestion className="w-5 h-5 stroke-[1.9]" />
+          <span className="text-[10px] tracking-tight leading-none">Questões</span>
         </Link>
 
         <Link
           href="/caderno-de-erros"
-          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] relative ${pathname?.startsWith('/caderno-de-erros')
+          className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] relative active:scale-95 touch-manipulation ${pathname?.startsWith('/caderno-de-erros')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
             }`}
           style={{
-            color: pathname?.startsWith('/caderno-de-erros') ? accentConfig.primaryHex : undefined
+            color: pathname?.startsWith('/caderno-de-erros') ? accentConfig.primaryHex : undefined,
+            backgroundColor: pathname?.startsWith('/caderno-de-erros') ? accentConfig.bgRgba : undefined
           }}
         >
           <div className="relative">
-            <AlertOctagon className="w-5 h-5 stroke-[1.8]" />
+            <AlertOctagon className="w-5 h-5 stroke-[1.9]" />
             {pendingErrorsCount > 0 && (
               <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-rose-500 ring-2 ring-white dark:ring-[#09090b]" />
             )}
           </div>
-          <span className="text-[10px] tracking-tight">Erros</span>
+          <span className="text-[10px] tracking-tight leading-none">Erros</span>
         </Link>
 
         <Link
           href="/flashcards"
-          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${pathname?.startsWith('/flashcards')
+          className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] active:scale-95 touch-manipulation ${pathname?.startsWith('/flashcards')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
             }`}
           style={{
-            color: pathname?.startsWith('/flashcards') ? accentConfig.primaryHex : undefined
+            color: pathname?.startsWith('/flashcards') ? accentConfig.primaryHex : undefined,
+            backgroundColor: pathname?.startsWith('/flashcards') ? accentConfig.bgRgba : undefined
           }}
         >
-          <Brain className="w-5 h-5 stroke-[1.8]" />
-          <span className="text-[10px] tracking-tight">Flashcards</span>
+          <Brain className="w-5 h-5 stroke-[1.9]" />
+          <span className="text-[10px] tracking-tight leading-none">Flashcards</span>
         </Link>
 
         <button
           type="button"
           onClick={() => setMobileMenuOpen(true)}
-          className="flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white"
+          className="flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white active:scale-95 touch-manipulation"
           aria-label="Abrir menu completo"
         >
-          <Menu className="w-5 h-5 stroke-[1.8]" />
-          <span className="text-[10px] tracking-tight">Mais</span>
+          <Menu className="w-5 h-5 stroke-[1.9]" />
+          <span className="text-[10px] tracking-tight leading-none">Mais</span>
         </button>
       </nav>
 
-      {/* 4. Menu Lateral Retrátil para Telas Mobile */}
+      {/* 4. Menu Lateral Retrátil para Telas Mobile (com Safe-Area superior e inferior) */}
       {mobileMenuOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs md:hidden animate-in fade-in"
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs md:hidden animate-in fade-in duration-150"
           onClick={() => setMobileMenuOpen(false)}
         >
           <div
-            className="w-72 max-w-[80vw] h-full bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] p-4 shadow-2xl overflow-y-auto"
+            className="w-76 max-w-[84vw] h-full bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] px-4 pt-[max(1rem,env(safe-area-inset-top,0px))] pb-[max(1.5rem,env(safe-area-inset-bottom,0px))] shadow-2xl overflow-y-auto overscroll-contain"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between pb-4 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]">
+            <div className="flex items-center justify-between pb-3.5 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]">
               <Logo variant="full" className="h-7 w-auto max-w-[160px] shrink-0" />
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-8 h-8 flex items-center justify-center rounded-lg text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 active:scale-95 cursor-pointer"
+                className="w-9 h-9 flex items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800/80 text-zinc-500 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white active:scale-95 cursor-pointer touch-manipulation"
                 aria-label="Fechar menu"
               >
                 <X className="w-4 h-4" />
               </button>
             </div>
-            <div className="pt-4">
+            <div className="pt-3">
               <Sidebar
                 isCollapsed={false}
                 isMobileDrawer={true}

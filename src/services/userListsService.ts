@@ -1,5 +1,12 @@
 import { createClient } from '@/lib/supabase/client';
 import { Folder, QuestionList } from '@/types';
+import {
+  readMutationJournal,
+  markPendingUpsert,
+  markPendingDelete,
+  clearSyncedUpserts,
+  clearSyncedDeletes
+} from '@/utils/crossDeviceSync';
 
 interface DbFolderRow {
   id: string;
@@ -26,7 +33,6 @@ interface DbListRow {
   updated_at?: string;
 }
 
-// Chaves locais com namespace por usuário
 export function getFolderStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_folders_${userId}` : 'bancoresidencia_folders_guest';
 }
@@ -35,7 +41,6 @@ export function getListStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_lists_${userId}` : 'bancoresidencia_lists_guest';
 }
 
-// IDs de pastas e listas de demonstração/mock legadas que devem ser expurgadas de todas as contas
 const MOCK_FOLDER_IDS = new Set([
   'f-clinica',
   'f-cardio',
@@ -56,46 +61,263 @@ export const MOCK_LIST_IDS = new Set([
   'list-5'
 ]);
 
-// Todo aluno novo começa com 0 pastas e 0 listas pré-criadas
 export const defaultStudentFolders: Folder[] = [];
 
-/**
- * Carrega as pastas do aluno a partir do cache local e sincroniza com o Supabase.
- * Expulsa pastas de mock legadas e garante que novas contas comecem limpas.
- */
-export async function loadUserFolders(userId?: string | null): Promise<Folder[]> {
+function normalizeFolderObject(raw: Folder | DbFolderRow): Folder {
+  const r = raw as Folder & DbFolderRow;
+  return {
+    id: r.id,
+    userId: r.userId || r.user_id,
+    name: r.name || 'Pasta',
+    parentId: r.parentId !== undefined ? r.parentId : (r.parent_id || null),
+    color: r.color || '#3b82f6',
+    createdAt: r.createdAt || r.created_at,
+    updatedAt: r.updatedAt || r.updated_at
+  };
+}
+
+function normalizeListObject(raw: QuestionList | DbListRow): QuestionList | null {
+  const r = raw as QuestionList & DbListRow & { name?: string };
+  if (!r || !r.id) return null;
+  const resolvedTitle = r.title || r.name || '';
+  if (!resolvedTitle) return null;
+  const qIds = Array.isArray(r.questionIds)
+    ? r.questionIds
+    : Array.isArray(r.question_ids)
+    ? r.question_ids
+    : [];
+  return {
+    id: r.id,
+    userId: r.userId || r.user_id,
+    folderId: r.folderId !== undefined ? r.folderId : (r.folder_id || undefined),
+    title: resolvedTitle,
+    questionIds: qIds,
+    totalQuestions: r.totalQuestions ?? r.total_questions ?? qIds.length,
+    completedQuestions: r.completedQuestions ?? r.completed_questions ?? 0,
+    lastStudiedAt: r.lastStudiedAt || r.last_studied_at || 'Nunca estudada',
+    inProgress: r.inProgress ?? r.in_progress ?? false,
+    progressPercentage: r.progressPercentage ?? r.progress_percentage ?? 0,
+    createdAt: r.createdAt || r.created_at,
+    updatedAt: r.updatedAt || r.updated_at
+  };
+}
+
+export function readLocalFolders(userId?: string | null): Folder[] {
+  if (typeof window === 'undefined') return [];
   const key = getFolderStorageKey(userId);
-  let localFolders: Folder[] = [];
+  try {
+    const saved = localStorage.getItem(key);
+    if (!saved) return [];
+    const parsed = JSON.parse(saved) as Array<Folder | DbFolderRow>;
+    if (!Array.isArray(parsed)) return [];
+    return parsed
+      .filter((f) => f && f.id && !MOCK_FOLDER_IDS.has(f.id))
+      .map(normalizeFolderObject);
+  } catch {
+    return [];
+  }
+}
 
-  if (typeof window !== 'undefined') {
-    try {
-      const saved = localStorage.getItem(key);
-      if (saved) {
-        const parsed = JSON.parse(saved) as Folder[];
-        localFolders = Array.isArray(parsed) ? parsed.filter((f) => !MOCK_FOLDER_IDS.has(f.id)) : [];
-        if (localFolders.length !== parsed.length) {
-          localStorage.setItem(key, JSON.stringify(localFolders));
-        }
-      } else {
-        localFolders = [];
-        localStorage.setItem(key, JSON.stringify([]));
-      }
+export function readLocalLists(userId?: string | null): QuestionList[] {
+  if (typeof window === 'undefined') return [];
+  const key = getListStorageKey(userId);
+  try {
+    const saved = localStorage.getItem(key);
+    if (!saved) return [];
+    const parsed = JSON.parse(saved) as Array<QuestionList | DbListRow>;
+    if (!Array.isArray(parsed)) return [];
+    const valid: QuestionList[] = [];
+    for (const item of parsed) {
+      if (!item || !item.id || MOCK_LIST_IDS.has(item.id)) continue;
+      const norm = normalizeListObject(item);
+      if (norm) valid.push(norm);
+    }
+    return valid;
+  } catch {
+    return [];
+  }
+}
 
-      // Limpeza de chave legada se contiver mocks
-      const legacy = localStorage.getItem('bancoresidencia_folders');
-      if (legacy) {
-        try {
-          const parsedLegacy = JSON.parse(legacy) as Folder[];
-          const cleanedLegacy = Array.isArray(parsedLegacy) ? parsedLegacy.filter((f) => !MOCK_FOLDER_IDS.has(f.id)) : [];
-          localStorage.setItem('bancoresidencia_folders', JSON.stringify(cleanedLegacy));
-        } catch {}
+/**
+ * Reconcilia pastas remotas (via bootstrap ou query direta) com o journal local,
+ * preservando pastas criadas offline e respeitando exclusões feitas em outros dispositivos.
+ */
+export async function reconcileUserFoldersWithRemote(
+  userId: string,
+  rawRemoteFolders: Array<Folder | DbFolderRow>
+): Promise<Folder[]> {
+  const key = getFolderStorageKey(userId);
+  const localFolders = readLocalFolders(userId);
+  const journal = readMutationJournal('folders', userId);
+  const initKey = `bancoresidencia_folders_journal_init_${userId}`;
+  const isFirstJournalSync = typeof window !== 'undefined' && !localStorage.getItem(initKey);
+  if (typeof window !== 'undefined' && isFirstJournalSync) {
+    try { localStorage.setItem(initKey, '1'); } catch { /* ignore */ }
+  }
+
+  const remoteFolders = rawRemoteFolders
+    .filter((r) => r && r.id && !MOCK_FOLDER_IDS.has(r.id) && !journal.deletes[r.id])
+    .map(normalizeFolderObject);
+
+  const localMap = new Map(localFolders.map((f) => [f.id, f]));
+  const mergedMap = new Map<string, Folder>();
+  const toUpload: Folder[] = [];
+
+  for (const rf of remoteFolders) {
+    const lf = localMap.get(rf.id);
+    if (lf && journal.upserts[rf.id]) {
+      const localTs = lf.updatedAt ? new Date(lf.updatedAt).getTime() : 0;
+      const remoteTs = rf.updatedAt ? new Date(rf.updatedAt).getTime() : 0;
+      if (localTs >= remoteTs) {
+        mergedMap.set(lf.id, lf);
+        toUpload.push(lf);
+        continue;
       }
-    } catch {
-      localFolders = [];
+    }
+    mergedMap.set(rf.id, rf);
+  }
+
+  for (const lf of localFolders) {
+    if (journal.deletes[lf.id]) continue;
+    if (!mergedMap.has(lf.id) && (journal.upserts[lf.id] || isFirstJournalSync)) {
+      mergedMap.set(lf.id, lf);
+      toUpload.push(lf);
     }
   }
 
-  // Se o aluno está autenticado, tenta buscar do Supabase
+  const merged = Array.from(mergedMap.values());
+  if (typeof window !== 'undefined') {
+    try { localStorage.setItem(key, JSON.stringify(merged)); } catch { /* ignore */ }
+  }
+
+  const supabase = createClient();
+  const pendingDeleteIds = Object.keys(journal.deletes);
+  if (pendingDeleteIds.length > 0) {
+    const { error: delErr } = await supabase
+      .from('user_folders')
+      .delete()
+      .eq('user_id', userId)
+      .in('id', pendingDeleteIds);
+    if (!delErr) {
+      clearSyncedDeletes('folders', pendingDeleteIds, userId);
+    }
+  }
+
+  if (toUpload.length > 0) {
+    const payload = toUpload.map((f) => ({
+      id: f.id,
+      user_id: userId,
+      name: f.name,
+      parent_id: f.parentId || null,
+      color: f.color || '#3b82f6',
+      updated_at: f.updatedAt || new Date().toISOString()
+    }));
+    const { error: upErr } = await supabase.from('user_folders').upsert(payload, { onConflict: 'id' });
+    if (!upErr) {
+      clearSyncedUpserts('folders', Object.keys(journal.upserts), userId);
+    }
+  } else if (Object.keys(journal.upserts).length > 0) {
+    clearSyncedUpserts('folders', Object.keys(journal.upserts), userId);
+  }
+
+  return merged;
+}
+
+/**
+ * Reconcilia listas/cadernos remotos com o journal local (offline-first + multi-dispositivo).
+ */
+export async function reconcileUserListsWithRemote(
+  userId: string,
+  rawRemoteLists: Array<QuestionList | DbListRow>
+): Promise<QuestionList[]> {
+  const key = getListStorageKey(userId);
+  const localLists = readLocalLists(userId);
+  const journal = readMutationJournal('lists', userId);
+  const initKey = `bancoresidencia_lists_journal_init_${userId}`;
+  const isFirstJournalSync = typeof window !== 'undefined' && !localStorage.getItem(initKey);
+  if (typeof window !== 'undefined' && isFirstJournalSync) {
+    try { localStorage.setItem(initKey, '1'); } catch { /* ignore */ }
+  }
+
+  const remoteLists: QuestionList[] = [];
+  for (const r of rawRemoteLists) {
+    if (!r || !r.id || MOCK_LIST_IDS.has(r.id) || journal.deletes[r.id]) continue;
+    const norm = normalizeListObject(r);
+    if (norm) remoteLists.push(norm);
+  }
+
+  const localMap = new Map(localLists.map((l) => [l.id, l]));
+  const mergedMap = new Map<string, QuestionList>();
+  const toUpload: QuestionList[] = [];
+
+  for (const rl of remoteLists) {
+    const ll = localMap.get(rl.id);
+    if (ll && journal.upserts[rl.id]) {
+      const localTs = ll.updatedAt ? new Date(ll.updatedAt).getTime() : 0;
+      const remoteTs = rl.updatedAt ? new Date(rl.updatedAt).getTime() : 0;
+      if (localTs >= remoteTs || ll.completedQuestions > rl.completedQuestions) {
+        mergedMap.set(ll.id, ll);
+        toUpload.push(ll);
+        continue;
+      }
+    }
+    mergedMap.set(rl.id, rl);
+  }
+
+  for (const ll of localLists) {
+    if (journal.deletes[ll.id]) continue;
+    if (!mergedMap.has(ll.id) && (journal.upserts[ll.id] || isFirstJournalSync)) {
+      mergedMap.set(ll.id, ll);
+      toUpload.push(ll);
+    }
+  }
+
+  const merged = Array.from(mergedMap.values());
+  if (typeof window !== 'undefined') {
+    try { localStorage.setItem(key, JSON.stringify(merged)); } catch { /* ignore */ }
+  }
+
+  const supabase = createClient();
+  const pendingDeleteIds = Object.keys(journal.deletes);
+  if (pendingDeleteIds.length > 0) {
+    const { error: delErr } = await supabase
+      .from('user_lists')
+      .delete()
+      .eq('user_id', userId)
+      .in('id', pendingDeleteIds);
+    if (!delErr) {
+      clearSyncedDeletes('lists', pendingDeleteIds, userId);
+    }
+  }
+
+  if (toUpload.length > 0) {
+    const payload = toUpload.map((l) => ({
+      id: l.id,
+      user_id: userId,
+      folder_id: l.folderId || null,
+      title: l.title,
+      question_ids: l.questionIds,
+      total_questions: l.totalQuestions,
+      completed_questions: l.completedQuestions,
+      last_studied_at: l.lastStudiedAt,
+      in_progress: Boolean(l.inProgress),
+      progress_percentage: l.progressPercentage,
+      updated_at: l.updatedAt || new Date().toISOString()
+    }));
+    const { error: upErr } = await supabase.from('user_lists').upsert(payload, { onConflict: 'id' });
+    if (!upErr) {
+      clearSyncedUpserts('lists', Object.keys(journal.upserts), userId);
+    }
+  } else if (Object.keys(journal.upserts).length > 0) {
+    clearSyncedUpserts('lists', Object.keys(journal.upserts), userId);
+  }
+
+  return merged;
+}
+
+export async function loadUserFolders(userId?: string | null): Promise<Folder[]> {
+  const localFolders = readLocalFolders(userId);
+
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
@@ -106,66 +328,38 @@ export async function loadUserFolders(userId?: string | null): Promise<Folder[]>
         .order('created_at', { ascending: true });
 
       if (!error && data) {
-        const rows = data as unknown as DbFolderRow[];
-        const remoteFolders: Folder[] = rows
-          .filter((row) => !MOCK_FOLDER_IDS.has(row.id))
-          .map((row) => ({
-            id: row.id,
-            userId: row.user_id,
-            name: row.name,
-            parentId: row.parent_id || null,
-            color: row.color || '#3b82f6',
-            createdAt: row.created_at,
-            updatedAt: row.updated_at
-          }));
-
-        const remoteIds = new Set(remoteFolders.map((f) => f.id));
-        const missingOnRemote = localFolders.filter((f) => !remoteIds.has(f.id));
-        const merged = [...remoteFolders, ...missingOnRemote];
-
-        if (typeof window !== 'undefined') {
-          localStorage.setItem(key, JSON.stringify(merged));
-        }
-
-        if (missingOnRemote.length > 0) {
-          const payload = missingOnRemote.map((f) => ({
-            id: f.id,
-            user_id: userId,
-            name: f.name,
-            parent_id: f.parentId || null,
-            color: f.color || '#3b82f6',
-            updated_at: new Date().toISOString()
-          }));
-          supabase.from('user_folders').upsert(payload, { onConflict: 'id' }).then(() => {});
-        }
-
-        return merged;
+        return await reconcileUserFoldersWithRemote(userId, data as unknown as DbFolderRow[]);
       }
     } catch {
-      // Ignora erro de rede / 404 e preserva o cache local
+      // Preserva cache local caso esteja offline
     }
   }
 
   return localFolders;
 }
 
-/**
- * Salva as pastas do aluno no cache e no Supabase
- */
 export async function saveUserFolders(folders: Folder[], userId?: string | null): Promise<void> {
   const key = getFolderStorageKey(userId);
+  const stamped = folders.map((f) => ({
+    ...f,
+    updatedAt: f.updatedAt || new Date().toISOString()
+  }));
+
   if (typeof window !== 'undefined') {
     try {
-      localStorage.setItem(key, JSON.stringify(folders));
+      localStorage.setItem(key, JSON.stringify(stamped));
     } catch (e) {
       console.error('Erro ao gravar pastas localmente:', e);
     }
   }
 
+  const folderIds = stamped.map((f) => f.id);
+  markPendingUpsert('folders', folderIds, userId);
+
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
-      const payload = folders.map((f) => ({
+      const payload = stamped.map((f) => ({
         id: f.id,
         user_id: userId,
         name: f.name,
@@ -174,50 +368,19 @@ export async function saveUserFolders(folders: Folder[], userId?: string | null)
         updated_at: new Date().toISOString()
       }));
 
-      await supabase.from('user_folders').upsert(payload, { onConflict: 'id' });
+      const { error } = await supabase.from('user_folders').upsert(payload, { onConflict: 'id' });
+      if (!error) {
+        clearSyncedUpserts('folders', folderIds, userId);
+      }
     } catch {
-      // Falha silenciosa remota sem travar a interface
+      // Mantém na fila offline para reenvio automático
     }
   }
 }
 
-/**
- * Carrega as listas de questões do aluno a partir do cache local e sincroniza com o Supabase
- */
 export async function loadUserLists(userId?: string | null): Promise<QuestionList[]> {
-  const key = getListStorageKey(userId);
-  let localLists: QuestionList[] = [];
+  const localLists = readLocalLists(userId);
 
-  if (typeof window !== 'undefined') {
-    try {
-      const saved = localStorage.getItem(key);
-      if (saved) {
-        const parsed = JSON.parse(saved) as QuestionList[];
-        localLists = Array.isArray(parsed) ? parsed.filter((l) => !MOCK_LIST_IDS.has(l.id)) : [];
-        if (localLists.length !== parsed.length) {
-          localStorage.setItem(key, JSON.stringify(localLists));
-        }
-      } else {
-        localLists = [];
-        localStorage.setItem(key, JSON.stringify([]));
-      }
-
-      // Limpeza de chave legada se contiver mocks
-      const legacy = localStorage.getItem('bancoresidencia_lists');
-      if (legacy) {
-        try {
-          const parsedLegacy = JSON.parse(legacy) as QuestionList[];
-          const cleanedLegacy = Array.isArray(parsedLegacy) ? parsedLegacy.filter((l) => !MOCK_LIST_IDS.has(l.id)) : [];
-          localStorage.setItem('bancoresidencia_lists', JSON.stringify(cleanedLegacy));
-        } catch {}
-      }
-    } catch (e) {
-      console.error('Erro ao ler listas locais:', e);
-      localLists = [];
-    }
-  }
-
-  // Se o aluno está autenticado, tenta buscar do Supabase
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
@@ -228,76 +391,39 @@ export async function loadUserLists(userId?: string | null): Promise<QuestionLis
         .order('created_at', { ascending: false });
 
       if (!error && data) {
-        const rows = data as unknown as DbListRow[];
-        const remoteLists: QuestionList[] = rows
-          .filter((row) => !MOCK_LIST_IDS.has(row.id))
-          .map((row) => ({
-            id: row.id,
-            userId: row.user_id,
-            folderId: row.folder_id || undefined,
-            title: row.title,
-            questionIds: row.question_ids || [],
-            totalQuestions: row.total_questions || (row.question_ids ? row.question_ids.length : 0),
-            completedQuestions: row.completed_questions || 0,
-            lastStudiedAt: row.last_studied_at || 'Nunca estudada',
-            inProgress: row.in_progress ?? false,
-            progressPercentage: row.progress_percentage || 0,
-            createdAt: row.created_at,
-            updatedAt: row.updated_at
-          }));
-
-        const remoteIds = new Set(remoteLists.map((l) => l.id));
-        const missingOnRemote = localLists.filter((l) => !remoteIds.has(l.id));
-        const merged = [...remoteLists, ...missingOnRemote];
-
-        if (typeof window !== 'undefined') {
-          localStorage.setItem(key, JSON.stringify(merged));
-        }
-
-        if (missingOnRemote.length > 0) {
-          const payload = missingOnRemote.map((l) => ({
-            id: l.id,
-            user_id: userId,
-            folder_id: l.folderId || null,
-            title: l.title,
-            question_ids: l.questionIds,
-            total_questions: l.totalQuestions,
-            completed_questions: l.completedQuestions,
-            last_studied_at: l.lastStudiedAt,
-            in_progress: l.inProgress,
-            progress_percentage: l.progressPercentage,
-            updated_at: new Date().toISOString()
-          }));
-          supabase.from('user_lists').upsert(payload, { onConflict: 'id' }).then(() => {});
-        }
-
-        return merged;
+        return await reconcileUserListsWithRemote(userId, data as unknown as DbListRow[]);
       }
     } catch {
-      // Ignora erro de rede / 404 e preserva o cache local
+      // Preserva cache local caso esteja offline
     }
   }
 
   return localLists;
 }
 
-/**
- * Salva as listas de questões do aluno no cache e no Supabase
- */
 export async function saveUserLists(lists: QuestionList[], userId?: string | null): Promise<void> {
   const key = getListStorageKey(userId);
+  const nowIso = new Date().toISOString();
+  const stamped = lists.map((l) => ({
+    ...l,
+    updatedAt: l.updatedAt || nowIso
+  }));
+
   if (typeof window !== 'undefined') {
     try {
-      localStorage.setItem(key, JSON.stringify(lists));
+      localStorage.setItem(key, JSON.stringify(stamped));
     } catch (e) {
       console.error('Erro ao gravar listas localmente:', e);
     }
   }
 
+  const listIds = stamped.map((l) => l.id);
+  markPendingUpsert('lists', listIds, userId);
+
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
-      const payload = lists.map((l) => ({
+      const payload = stamped.map((l) => ({
         id: l.id,
         user_id: userId,
         folder_id: l.folderId || null,
@@ -306,42 +432,47 @@ export async function saveUserLists(lists: QuestionList[], userId?: string | nul
         total_questions: l.totalQuestions,
         completed_questions: l.completedQuestions,
         last_studied_at: l.lastStudiedAt,
-        in_progress: l.inProgress,
+        in_progress: Boolean(l.inProgress),
         progress_percentage: l.progressPercentage,
-        updated_at: new Date().toISOString()
+        updated_at: nowIso
       }));
 
-      await supabase.from('user_lists').upsert(payload, { onConflict: 'id' });
+      const { error } = await supabase.from('user_lists').upsert(payload, { onConflict: 'id' });
+      if (!error) {
+        clearSyncedUpserts('lists', listIds, userId);
+      }
     } catch {
-      // Falha silenciosa remota sem travar a interface
+      // Mantém na fila offline para reenvio automático
     }
   }
 }
 
-/**
- * Deleta uma lista no Supabase e no cache local
- */
 export async function deleteUserListFromDb(listId: string, userId?: string | null): Promise<void> {
+  markPendingDelete('lists', listId, userId);
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
-      await supabase.from('user_lists').delete().eq('id', listId).eq('user_id', userId);
+      const { error } = await supabase.from('user_lists').delete().eq('id', listId).eq('user_id', userId);
+      if (!error) {
+        clearSyncedDeletes('lists', listId, userId);
+      }
     } catch {
-      // ignore
+      // Mantém tombstone para sincronizar quando voltar a ficar online
     }
   }
 }
 
-/**
- * Deleta uma pasta no Supabase e no cache local
- */
 export async function deleteUserFolderFromDb(folderId: string, userId?: string | null): Promise<void> {
+  markPendingDelete('folders', folderId, userId);
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
-      await supabase.from('user_folders').delete().eq('id', folderId).eq('user_id', userId);
+      const { error } = await supabase.from('user_folders').delete().eq('id', folderId).eq('user_id', userId);
+      if (!error) {
+        clearSyncedDeletes('folders', folderId, userId);
+      }
     } catch {
-      // ignore
+      // Mantém tombstone para sincronizar quando voltar a ficar online
     }
   }
 }

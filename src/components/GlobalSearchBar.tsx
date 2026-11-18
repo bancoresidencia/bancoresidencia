@@ -209,12 +209,23 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
   ];
 
   return (
-    <div ref={containerRef} className="relative flex-1 max-w-2xl mx-1 sm:mx-4">
-      {/* Barra de Pesquisa */}
+    <div ref={containerRef} className="relative flex-1 min-w-0 max-w-2xl mx-0.5 sm:mx-4">
+      {/* Backdrop mobile quando a busca está expandida */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/45 backdrop-blur-2xs sm:hidden"
+          onClick={() => {
+            setIsOpen(false);
+            inputRef.current?.blur();
+          }}
+        />
+      )}
+
+      {/* Barra de Pesquisa (expande para largura total no topo em telas mobile ao focar) */}
       <div
-        className={`flex items-center gap-2.5 px-3 sm:px-4 py-2 rounded-2xl border transition-all duration-200 ${
+        className={`flex items-center gap-2 sm:gap-2.5 px-2.5 sm:px-4 py-2 rounded-2xl border transition-all duration-200 touch-manipulation ${
           isOpen
-            ? 'bg-white dark:bg-[var(--bg-card)] ring-2 shadow-lg'
+            ? 'fixed inset-x-2.5 top-[calc(0.5rem+env(safe-area-inset-top,0px))] z-50 sm:static sm:inset-auto sm:z-auto bg-white dark:bg-[var(--bg-card)] ring-2 shadow-xl sm:shadow-lg'
             : 'bg-zinc-100/90 dark:bg-zinc-900/90 hover:bg-zinc-100 dark:hover:bg-zinc-900 border-zinc-200/90 dark:border-zinc-800'
         }`}
         style={{
@@ -240,7 +251,9 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
           onFocus={() => setIsOpen(true)}
           onKeyDown={handleKeyDown}
           placeholder={placeholder}
-          className="w-full bg-transparent text-xs sm:text-sm font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none"
+          className={`w-full min-w-0 bg-transparent font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none truncate ${
+            isOpen ? 'text-base sm:text-sm' : 'text-xs sm:text-sm'
+          }`}
         />
 
         {query ? (
@@ -250,23 +263,36 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
               setQuery('');
               inputRef.current?.focus();
             }}
-            className="p-1 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-200/60 dark:hover:bg-slate-800 cursor-pointer transition-colors"
+            className="p-1 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-200/60 dark:hover:bg-slate-800 cursor-pointer transition-colors shrink-0"
             title="Limpar pesquisa"
           >
-            <X className="w-3.5 h-3.5" />
+            <X className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
           </button>
         ) : (
-          <div className="hidden sm:flex items-center gap-1 shrink-0">
+          <div className="hidden md:flex items-center gap-1 shrink-0">
             <kbd className="px-2 py-0.5 text-[10px] font-mono font-bold text-slate-500 dark:text-slate-400 bg-slate-200/80 dark:bg-slate-800/80 border border-slate-300/80 dark:border-slate-700/80 rounded-md">
               Ctrl K
             </kbd>
           </div>
         )}
+
+        {isOpen && (
+          <button
+            type="button"
+            onClick={() => {
+              setIsOpen(false);
+              inputRef.current?.blur();
+            }}
+            className="sm:hidden text-xs font-bold px-2 py-1 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 shrink-0 cursor-pointer"
+          >
+            Fechar
+          </button>
+        )}
       </div>
 
-      {/* Dropdown Flutuante de Resultados e Sugestões */}
+      {/* Dropdown Flutuante de Resultados e Sugestões (Largura integral no mobile, ancorado no desktop) */}
       {isOpen && (
-        <div className="absolute top-full left-0 right-0 mt-2 z-50 bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/90 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150 max-h-[80vh] flex flex-col">
+        <div className="fixed inset-x-2.5 top-[calc(3.6rem+env(safe-area-inset-top,0px))] sm:absolute sm:inset-x-0 sm:top-full sm:mt-2 z-50 bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/90 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150 max-h-[75dvh] sm:max-h-[80vh] flex flex-col">
           {/* Header do dropdown */}
           <div className="px-4 py-2.5 bg-zinc-50/80 dark:bg-zinc-900/60 border-b border-zinc-100 dark:border-zinc-800/70 flex items-center justify-between text-[11px] font-bold text-slate-500 dark:text-slate-400">
             <span className="flex items-center gap-1.5">

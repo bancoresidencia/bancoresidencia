@@ -35,7 +35,7 @@ export const FigmaCustomizerBar: React.FC<FigmaCustomizerBarProps> = ({
   }
 
   return (
-    <div className="fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-2xl px-3 sm:px-4 animate-in slide-in-from-bottom-5 duration-300 pb-[env(safe-area-inset-bottom)] pointer-events-none">
+    <div className="fixed bottom-[calc(4.5rem+env(safe-area-inset-bottom,0px))] md:bottom-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-2xl px-3 sm:px-4 animate-in slide-in-from-bottom-5 duration-300 pointer-events-none">
       <div className="bg-slate-950/94 dark:bg-zinc-950/96 backdrop-blur-xl border border-blue-500/50 dark:border-blue-400/50 text-white rounded-2xl p-2.5 sm:p-3.5 shadow-2xl flex items-center justify-between gap-2 sm:gap-3 ring-4 ring-blue-500/10 pointer-events-auto">
         {/* Info & Status */}
         <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">

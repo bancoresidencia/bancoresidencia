@@ -329,21 +329,48 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
   }, [activeSessionCards]);
 
-  // SWR: Sincroniza progresso remoto, baralhos, cards criados pelo usuário e logs do Heatmap
+  // SWR: Sincroniza progresso remoto, baralhos, cards criados pelo usuário e logs do Heatmap (com revalidação multi-dispositivo)
   useEffect(() => {
-    if (user?.id) {
+    if (!user?.id) return;
+    let active = true;
+
+    const syncAllFlashcardData = () => {
       flashcardsService.syncRemoteProgress(user.id).then(() => {
-        setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
+        if (active) setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
       });
-      flashcardsService.syncRemoteDecks(user.id);
+      flashcardsService.syncRemoteDecks(user.id).then(() => {
+        if (active) {
+          setPersonalizedDecksCount(flashcardsService.getPersonalizedDecks(user.id).length);
+        }
+      });
       flashcardsService.syncRemoteUserCreatedCards(user.id).then(() => {
-        setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
+        if (active) setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
       });
-      flashcardsService.syncRemoteDailyLogs(user.id);
+      flashcardsService.syncRemoteDailyLogs(user.id).then(() => {
+        if (active) setHeatmapRefreshKey((k) => k + 1);
+      });
       flashcardsService.syncRemoteStudyProgress(user.id).then((lastSumm) => {
-        if (lastSumm) setLastReadSummary(lastSumm);
+        if (active && lastSumm) setLastReadSummary(lastSumm);
       });
-    }
+    };
+
+    syncAllFlashcardData();
+
+    let lastVisSync = Date.now();
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible' && Date.now() - lastVisSync >= 25000) {
+        lastVisSync = Date.now();
+        syncAllFlashcardData();
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibility);
+    window.addEventListener('online', syncAllFlashcardData);
+    return () => {
+      active = false;
+      document.removeEventListener('visibilitychange', handleVisibility);
+      window.removeEventListener('online', syncAllFlashcardData);
+    };
   }, [user?.id]);
 
   const [allStudyMaterials, setAllStudyMaterials] = useState<StudyMaterialItem[]>(() => {

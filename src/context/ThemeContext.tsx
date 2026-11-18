@@ -615,25 +615,48 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }, 600);
   }, []);
 
-  // Ouve evento disparado pelo AuthContext ao carregar perfil remoto do Supabase
+  // Ouve evento disparado pelo AuthContext/StudentDataContext ao carregar perfil remoto e sincroniza abas
   useEffect(() => {
     const handlePreferencesSynced = (e: Event) => {
       const customEvent = e as CustomEvent;
       if (customEvent.detail) {
-        const detail = customEvent.detail;
-        if (detail.themeMode && (detail.themeMode === 'dark' || detail.themeMode === 'light') && detail.themeMode !== mode) {
-          setModeState(detail.themeMode);
-          applyThemeToDOM(detail.themeMode, accent);
+        const detail = customEvent.detail as { themeMode?: string; accentColor?: string };
+        const nextMode: ThemeMode =
+          detail.themeMode === 'dark' || detail.themeMode === 'light' ? detail.themeMode : mode;
+        const nextAccent: AccentColor =
+          detail.accentColor && ACCENT_CONFIGS[detail.accentColor as AccentColor]
+            ? (detail.accentColor as AccentColor)
+            : accent;
+
+        if (nextMode !== mode) {
+          setModeState(nextMode);
         }
-        if (detail.accentColor && ACCENT_CONFIGS[detail.accentColor as AccentColor] && detail.accentColor !== accent) {
-          setAccentState(detail.accentColor as AccentColor);
-          applyThemeToDOM(mode, detail.accentColor as AccentColor);
+        if (nextAccent !== accent) {
+          setAccentState(nextAccent);
+        }
+        if (nextMode !== mode || nextAccent !== accent) {
+          applyThemeToDOM(nextMode, nextAccent);
         }
       }
     };
 
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'banco_theme_mode' && (e.newValue === 'dark' || e.newValue === 'light')) {
+        setModeState(e.newValue);
+        applyThemeToDOM(e.newValue, accent);
+      } else if (e.key === 'banco_accent_color' && e.newValue && ACCENT_CONFIGS[e.newValue as AccentColor]) {
+        const nextAcc = e.newValue as AccentColor;
+        setAccentState(nextAcc);
+        applyThemeToDOM(mode, nextAcc);
+      }
+    };
+
     window.addEventListener('bancoresidencia_preferences_synced', handlePreferencesSynced);
-    return () => window.removeEventListener('bancoresidencia_preferences_synced', handlePreferencesSynced);
+    window.addEventListener('storage', handleStorageChange);
+    return () => {
+      window.removeEventListener('bancoresidencia_preferences_synced', handlePreferencesSynced);
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, [mode, accent]);
 
   const toggleMode = () => {

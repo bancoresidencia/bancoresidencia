@@ -2211,9 +2211,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
          ========================================================================= */}
       {!embedded && (
         <div
-          className={`fixed bottom-14 md:bottom-0 right-0 z-30 transition-all duration-300 ${isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
-            } bg-[var(--bg-card,#ffffff)]/95 dark:bg-[var(--card,#121215)]/95 backdrop-blur-md border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] px-3 sm:px-6 py-2 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
-          style={{ paddingBottom: 'max(10px, env(safe-area-inset-bottom, 10px))' }}
+          className={`fixed bottom-[calc(3.85rem+env(safe-area-inset-bottom,0px))] md:bottom-0 right-0 z-30 transition-all duration-300 ${isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
+            } bg-[var(--bg-card,#ffffff)]/95 dark:bg-[var(--card,#121215)]/95 backdrop-blur-md border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] px-3 sm:px-6 py-2 sm:py-3 md:pb-[max(0.75rem,env(safe-area-inset-bottom,0.75rem))] shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
         >
           <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-2 sm:gap-3 w-full">
             {/* Linha 1 no Mobile / Lado Esquerdo no Desktop: Filtros Ativos + Tags em Múltiplas Fileiras + Limpar */}
@@ -2443,7 +2442,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
          ========================================================================= */}
       {isCotasDrawerOpen && itemsToConfigure.length > 1 && (
         <div
-          className="fixed bottom-16 right-4 sm:right-6 w-[calc(100vw-32px)] sm:w-[480px] max-h-[75vh] z-50 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-4 flex flex-col text-zinc-900 dark:text-zinc-100 animate-in slide-in-from-bottom-3 duration-200"
+          className="fixed bottom-[calc(8.5rem+env(safe-area-inset-bottom,0px))] md:bottom-16 right-4 sm:right-6 w-[calc(100vw-32px)] sm:w-[480px] max-h-[70vh] sm:max-h-[75vh] z-50 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-4 flex flex-col text-zinc-900 dark:text-zinc-100 animate-in slide-in-from-bottom-3 duration-200"
           style={{ boxShadow: '0 20px 50px rgba(0,0,0,0.6)' }}
         >
           {/* Header */}

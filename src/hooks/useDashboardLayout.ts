@@ -1,7 +1,41 @@
 'use client';
 
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { DashboardCardConfig, DashboardColSpan, CardInternalSettings } from '@/types/dashboardLayout';
+import { createClient } from '@/lib/supabase/client';
+
+function mergeCardsWithDefaults(
+  storedCards: DashboardCardConfig[],
+  defaultCards: DashboardCardConfig[]
+): DashboardCardConfig[] {
+  const merged: DashboardCardConfig[] = defaultCards.map((def) => {
+    const found = storedCards.find((p: DashboardCardConfig) => p.id === def.id);
+    if (found) {
+      const safeColSpan = Math.max(
+        def.minColSpan || 2,
+        Math.min(12, found.colSpan ?? def.colSpan)
+      ) as DashboardColSpan;
+      const safeHeight = found.customHeight
+        ? Math.max(def.minHeight || 65, Math.min(def.maxHeight || 800, found.customHeight))
+        : def.customHeight;
+
+      return {
+        ...def,
+        colSpan: safeColSpan,
+        customHeight: safeHeight,
+        order: found.order ?? def.order,
+        isVisible: found.isVisible ?? def.isVisible,
+        settings: {
+          ...def.settings,
+          ...(found.settings || {})
+        }
+      };
+    }
+    return def;
+  });
+  merged.sort((a, b) => a.order - b.order);
+  return merged;
+}
 
 export function useDashboardLayout(
   storageKey: string,
@@ -11,54 +45,47 @@ export function useDashboardLayout(
   const [selectedCardId, setSelectedCardId] = useState<string | null>(null);
   const [cards, setCards] = useState<DashboardCardConfig[]>(defaultCards);
   const [isLoaded, setIsLoaded] = useState(false);
+  const cloudSyncDebounceRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Carrega do LocalStorage na montagem
+  // Carrega do LocalStorage na montagem e ouve sincronização de preferências em nuvem
   useEffect(() => {
     try {
       const stored = localStorage.getItem(storageKey + '_v2');
       if (stored) {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          const merged: DashboardCardConfig[] = defaultCards.map((def) => {
-            const found = parsed.find((p: DashboardCardConfig) => p.id === def.id);
-            if (found) {
-              const safeColSpan = Math.max(
-                def.minColSpan || 2,
-                Math.min(12, found.colSpan ?? def.colSpan)
-              ) as DashboardColSpan;
-              const safeHeight = found.customHeight
-                ? Math.max(def.minHeight || 65, Math.min(def.maxHeight || 800, found.customHeight))
-                : def.customHeight;
-
-              return {
-                ...def,
-                colSpan: safeColSpan,
-                customHeight: safeHeight,
-                order: found.order ?? def.order,
-                isVisible: found.isVisible ?? def.isVisible,
-                settings: {
-                  ...def.settings,
-                  ...(found.settings || {})
-                }
-              };
-            }
-            return def;
-          });
-
-          merged.sort((a, b) => a.order - b.order);
-          setCards(merged);
+          setCards(mergeCardsWithDefaults(parsed, defaultCards));
           setIsLoaded(true);
-          return;
         }
+      } else {
+        setCards(defaultCards);
+        setIsLoaded(true);
       }
     } catch (e) {
       console.warn('Erro ao carregar layout customizado:', e);
+      setCards(defaultCards);
+      setIsLoaded(true);
     }
-    setCards(defaultCards);
-    setIsLoaded(true);
+
+    const handlePreferencesSynced = (e: Event) => {
+      const detail = (e as CustomEvent).detail as { dashboardLayouts?: Record<string, DashboardCardConfig[]> } | undefined;
+      const remoteLayout = detail?.dashboardLayouts?.[storageKey + '_v2'];
+      if (Array.isArray(remoteLayout) && remoteLayout.length > 0) {
+        const merged = mergeCardsWithDefaults(remoteLayout, defaultCards);
+        setCards(merged);
+        try {
+          localStorage.setItem(storageKey + '_v2', JSON.stringify(merged));
+        } catch {
+          // ignore
+        }
+      }
+    };
+
+    window.addEventListener('bancoresidencia_preferences_synced', handlePreferencesSynced);
+    return () => window.removeEventListener('bancoresidencia_preferences_synced', handlePreferencesSynced);
   }, [storageKey, defaultCards]);
 
-  // Salva no LocalStorage
+  // Salva no LocalStorage e sincroniza com preferences no Supabase (multi-dispositivo)
   const saveToStorage = useCallback(
     (newCards: DashboardCardConfig[]) => {
       try {
@@ -66,6 +93,50 @@ export function useDashboardLayout(
       } catch (e) {
         console.warn('Erro ao salvar layout:', e);
       }
+
+      if (cloudSyncDebounceRef.current) {
+        clearTimeout(cloudSyncDebounceRef.current);
+      }
+      cloudSyncDebounceRef.current = setTimeout(async () => {
+        try {
+          const supabase = createClient();
+          const { data: { session } } = await supabase.auth.getSession();
+          if (session?.user?.id) {
+            const { data: profile } = await supabase
+              .from('profiles')
+              .select('preferences')
+              .eq('id', session.user.id)
+              .maybeSingle();
+
+            const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
+            const currentLayouts = (currentPrefs.dashboardLayouts as Record<string, unknown>) || {};
+            const compactPayload = newCards.map((c) => ({
+              id: c.id,
+              colSpan: c.colSpan,
+              customHeight: c.customHeight,
+              order: c.order,
+              isVisible: c.isVisible,
+              settings: c.settings
+            }));
+
+            await supabase
+              .from('profiles')
+              .update({
+                preferences: {
+                  ...currentPrefs,
+                  dashboardLayouts: {
+                    ...currentLayouts,
+                    [storageKey + '_v2']: compactPayload
+                  },
+                  updatedAt: new Date().toISOString()
+                }
+              })
+              .eq('id', session.user.id);
+          }
+        } catch {
+          // Ignora falha de rede temporária
+        }
+      }, 900);
     },
     [storageKey]
   );

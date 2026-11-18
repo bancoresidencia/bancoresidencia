@@ -4,6 +4,7 @@ import React, { createContext, useContext, useState, useEffect, useCallback } fr
 import { UserAccount, UpdateProfileData } from '@/types/auth';
 import { createClient } from '@/lib/supabase/client';
 import { validatePasswordRequirements } from '@/utils/security';
+import { clearAllSyncJournalsForUser } from '@/utils/crossDeviceSync';
 
 const STORAGE_CURRENT_USER_KEY = 'bancoresidencia_current_user';
 
@@ -695,28 +696,49 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.removeItem(STORAGE_CACHED_USER_KEY);
     setPersistedUser(null);
 
-    // Higienização completa de dados sensíveis da conta no navegador
-    if (currentUserId && typeof window !== 'undefined') {
+    // Higienização completa de dados sensíveis da conta no navegador (evita vazamento entre contas no mesmo dispositivo)
+    if (typeof window !== 'undefined') {
       try {
-        localStorage.removeItem(`bancoresidencia_user_answers_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_folders_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_lists_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_bookmarks_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_custom_decks_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_user_cards_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_flashcards_progress_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_study_sessions_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_user_scheduled_tasks_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_google_events_${currentUserId}`);
-        localStorage.removeItem(`bancoresidencia_exported_slots_${currentUserId}`);
+        if (currentUserId) {
+          clearAllSyncJournalsForUser(currentUserId);
+          localStorage.removeItem(`bancoresidencia_user_answers_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_folders_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_lists_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_bookmarks_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_bookmarks_journal_init_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_folders_journal_init_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_lists_journal_init_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_custom_decks_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_personalized_decks_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_user_cards_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_user_card_edits_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_flashcards_progress_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_daily_review_logs_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_study_sessions_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_user_scheduled_tasks_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_google_events_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_exported_slots_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_custom_daily_goal_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_study_timer_state_${currentUserId}`);
+          localStorage.removeItem(`user_target_exam_name_${currentUserId}`);
+          localStorage.removeItem(`user_target_exam_date_${currentUserId}`);
+        }
+        localStorage.removeItem('bancoresidencia_user_answers');
+        localStorage.removeItem('br_bookmarked_questions');
+        localStorage.removeItem('bancoresidencia_flashcards_progress_v1');
+        localStorage.removeItem('bancoresidencia_custom_flashcard_decks');
+        localStorage.removeItem('bancoresidencia_personalized_flashcard_decks');
+        localStorage.removeItem('bancoresidencia_user_created_flashcards');
+        localStorage.removeItem('bancoresidencia_user_card_edits');
+        localStorage.removeItem('bancoresidencia_daily_review_logs');
         localStorage.removeItem('bancoresidencia_real_calendar_events');
         localStorage.removeItem('bancoresidencia_google_calendar_connected');
         localStorage.removeItem('bancoresidencia_google_access_token');
         localStorage.removeItem('bancoresidencia_google_last_sync');
         localStorage.removeItem('bancoresidencia_google_calendar_account');
         localStorage.removeItem('bancoresidencia_study_timer_state');
-        localStorage.removeItem(`user_target_exam_name_${currentUserId}`);
-        localStorage.removeItem(`user_target_exam_date_${currentUserId}`);
+        localStorage.removeItem('user_target_exam_name');
+        localStorage.removeItem('user_target_exam_date');
       } catch {}
     }
 
@@ -827,7 +849,32 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     } catch (err) {
       console.error('Erro ao recarregar usuário:', err);
     }
-  }, [supabase, mapSupabaseUserToAccount]);
+  }, [supabase, mapSupabaseUserToAccount, setPersistedUser]);
+
+  // Revalida perfil/plano entre dispositivos ao retornar à aba ou reconectar rede
+  useEffect(() => {
+    if (typeof window === 'undefined' || !user?.id) return;
+    let lastProfileRefresh = Date.now();
+
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible' && Date.now() - lastProfileRefresh >= 60000) {
+        lastProfileRefresh = Date.now();
+        refreshUser();
+      }
+    };
+
+    const handleOnline = () => {
+      lastProfileRefresh = Date.now();
+      refreshUser();
+    };
+
+    document.addEventListener('visibilitychange', handleVisibility);
+    window.addEventListener('online', handleOnline);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility);
+      window.removeEventListener('online', handleOnline);
+    };
+  }, [user?.id, refreshUser]);
 
   const isAdmin = Boolean(
     user &&

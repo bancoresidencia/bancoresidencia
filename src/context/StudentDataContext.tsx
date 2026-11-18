@@ -20,12 +20,26 @@ import {
   deleteUserListFromDb,
   deleteUserFolderFromDb,
   getFolderStorageKey,
-  getListStorageKey
+  getListStorageKey,
+  readLocalFolders,
+  readLocalLists,
+  reconcileUserFoldersWithRemote,
+  reconcileUserListsWithRemote
 } from '@/services/userListsService';
 import { calculatePercentile } from '@/utils/percentile';
-import { loadUserBookmarks, toggleUserBookmark, getBookmarksStorageKey } from '@/services/userBookmarksService';
+import {
+  loadUserBookmarks,
+  toggleUserBookmark,
+  getBookmarksStorageKey,
+  readLocalBookmarks,
+  reconcileUserBookmarksWithRemote
+} from '@/services/userBookmarksService';
 import { createClient } from '@/lib/supabase/client';
 import { getLocalDateStr } from '@/context/StudyTimerContext';
+import {
+  setCloudSyncState,
+  onImmediateCloudSyncRequest
+} from '@/utils/crossDeviceSync';
 
 interface StudentDataContextType {
   userAnswers: Record<string, UserAnswerItem>;
@@ -97,21 +111,40 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     Record<string, { letter: 'A' | 'B' | 'C' | 'D' | 'E'; isCorrect: boolean }>
   >({});
 
-  // Sincronização e Reconciliação SWR com o Supabase
-  const syncUserAnswersFromSupabase = useCallback(async (userId?: string | null, preloadedRows?: any[]) => {
+  // Sincronização e Reconciliação SWR com o Supabase (com paginação de 1.000 em 1.000 registros)
+  const syncUserAnswersFromSupabase = useCallback(async (userId?: string | null, preloadedRows?: Record<string, unknown>[]) => {
     if (!userId || userId === 'demo-student' || typeof window === 'undefined') return;
 
     try {
       const supabase = createClient();
       let remoteRows = preloadedRows;
       if (!remoteRows) {
-        const { data, error } = await supabase
-          .from('user_answers')
-          .select('question_id, selected_option, is_correct, answered_at, specialty, tema, foco, subfoco, difficulty, banca, year, status_retrial, error_reason, student_notes')
-          .eq('user_id', userId);
+        const PAGE_SIZE = 1000;
+        const MAX_PAGES = 50;
+        const collected: Record<string, unknown>[] = [];
+        let page = 0;
 
-        if (error || !data) return;
-        remoteRows = data;
+        while (page < MAX_PAGES) {
+          const from = page * PAGE_SIZE;
+          const to = from + PAGE_SIZE - 1;
+          const { data, error } = await supabase
+            .from('user_answers')
+            .select(
+              'question_id, selected_option, is_correct, answered_at, specialty, tema, foco, subfoco, difficulty, banca, year, status_retrial, error_reason, student_notes, attempts'
+            )
+            .eq('user_id', userId)
+            .order('answered_at', { ascending: true })
+            .range(from, to);
+
+          if (error || !data) {
+            if (page === 0) return;
+            break;
+          }
+          collected.push(...(data as Record<string, unknown>[]));
+          if (data.length < PAGE_SIZE) break;
+          page += 1;
+        }
+        remoteRows = collected;
       }
 
       setUserAnswers((currentLocal) => {
@@ -119,22 +152,40 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         let hasChanges = false;
         const missingOnRemote: Array<UserAnswerItem & { questionId: string }> = [];
 
-        for (const row of remoteRows as any[]) {
+        for (const rawRow of remoteRows) {
+          const row = rawRow as {
+            question_id?: string;
+            selected_option?: string;
+            is_correct?: boolean;
+            answered_at?: string;
+            specialty?: string | null;
+            tema?: string | null;
+            foco?: string | null;
+            subfoco?: string | null;
+            difficulty?: UserAnswerItem['difficulty'] | null;
+            banca?: string | null;
+            year?: number | null;
+            error_reason?: ErrorReasonType | null;
+            student_notes?: string | null;
+            status_retrial?: 'pendente' | 'recuperado' | null;
+            attempts?: Array<{ letter: 'A' | 'B' | 'C' | 'D' | 'E'; isCorrect: boolean; timestamp: number }>;
+          };
           const qid = row.question_id;
           if (!qid) continue;
 
           const local = merged[qid];
           const remoteTime = row.answered_at ? new Date(row.answered_at).getTime() : Date.now();
+          const remoteLetter = (row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E') || 'A';
           const remoteAttempts = Array.isArray(row.attempts) && row.attempts.length > 0
             ? row.attempts
-            : [{ letter: row.selected_option, isCorrect: Boolean(row.is_correct), timestamp: remoteTime }];
+            : [{ letter: remoteLetter, isCorrect: Boolean(row.is_correct), timestamp: remoteTime }];
 
           if (!local) {
             merged[qid] = {
-              letter: (row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E') || 'A',
+              letter: remoteLetter,
               isCorrect: Boolean(row.is_correct),
               timestamp: remoteTime,
-              difficulty: (row.difficulty as any) || 'Médio',
+              difficulty: row.difficulty || 'Médio',
               isAnulada: false,
               specialty: row.specialty || undefined,
               tema: row.tema || undefined,
@@ -142,50 +193,69 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
               subfoco: row.subfoco || undefined,
               banca: row.banca || undefined,
               year: row.year || undefined,
-              errorReason: (row.error_reason as any) || undefined,
+              errorReason: row.error_reason || undefined,
               studentNotes: row.student_notes || undefined,
-              statusRetrial: row.status_retrial || (row.is_correct ? 'recuperado' : 'pendente'),
+              statusRetrial: row.status_retrial || (!row.is_correct ? 'pendente' : undefined),
               attempts: remoteAttempts
             };
             hasChanges = true;
           } else {
             const localTime = local.timestamp || 0;
+            const mergedAttempts = (() => {
+              const combinedMap = new Map<string, { letter: 'A' | 'B' | 'C' | 'D' | 'E'; isCorrect: boolean; timestamp: number }>();
+              for (const a of (local.attempts || [])) {
+                if (a && a.timestamp) combinedMap.set(`${a.timestamp}_${a.letter}`, a);
+              }
+              for (const a of remoteAttempts) {
+                if (a && a.timestamp) combinedMap.set(`${a.timestamp}_${a.letter}`, a);
+              }
+              return Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp);
+            })();
+
             if (remoteTime >= localTime) {
+              const nextErrorReason = row.error_reason || local.errorReason;
+              const nextNotes = row.student_notes || local.studentNotes;
               merged[qid] = {
                 ...local,
-                letter: (row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E') || local.letter,
+                letter: remoteLetter || local.letter,
                 isCorrect: row.is_correct !== undefined ? Boolean(row.is_correct) : local.isCorrect,
                 timestamp: Math.max(remoteTime, localTime),
-                difficulty: (row.difficulty as any) || local.difficulty || 'Médio',
+                difficulty: row.difficulty || local.difficulty || 'Médio',
                 specialty: row.specialty || local.specialty,
                 tema: row.tema || local.tema,
                 foco: row.foco || local.foco,
                 subfoco: row.subfoco || local.subfoco,
                 banca: row.banca || local.banca,
                 year: row.year || local.year,
-                errorReason: (row.error_reason as any) || local.errorReason,
-                studentNotes: row.student_notes || local.studentNotes,
+                errorReason: nextErrorReason,
+                studentNotes: nextNotes,
                 statusRetrial: row.status_retrial || local.statusRetrial,
-                attempts: (() => {
-                  const combinedMap = new Map<string, any>();
-                  for (const a of (local.attempts || [])) {
-                    if (a && a.timestamp) combinedMap.set(`${a.timestamp}_${a.letter}`, a);
-                  }
-                  for (const a of remoteAttempts) {
-                    if (a && a.timestamp) combinedMap.set(`${a.timestamp}_${a.letter}`, a);
-                  }
-                  return Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp);
-                })()
+                attempts: mergedAttempts
               };
               hasChanges = true;
+
+              // Se o dispositivo local tinha notas ou motivo de erro que ainda não subiram, envia ao banco
+              if ((local.studentNotes && !row.student_notes) || (local.errorReason && !row.error_reason)) {
+                missingOnRemote.push({ ...merged[qid], questionId: qid });
+              }
             } else {
-              missingOnRemote.push({ ...local, questionId: qid });
+              const updatedLocal: UserAnswerItem = {
+                ...local,
+                errorReason: local.errorReason || row.error_reason || undefined,
+                studentNotes: local.studentNotes || row.student_notes || undefined,
+                attempts: mergedAttempts
+              };
+              merged[qid] = updatedLocal;
+              hasChanges = true;
+              missingOnRemote.push({ ...updatedLocal, questionId: qid });
             }
           }
         }
 
-        // Detecta respostas locais que faltam no banco remoto (ex: resolvidas offline)
-        const remoteIds = new Set(remoteRows.map((r: any) => r.question_id));
+        // Detecta respostas locais que faltam no banco remoto (ex: resolvidas offline no celular)
+        const remoteIds = new Set(
+          remoteRows.map((r) => (r as { question_id?: string }).question_id).filter(Boolean)
+        );
         for (const [qid, ans] of Object.entries(merged)) {
           if (!remoteIds.has(qid)) {
             missingOnRemote.push({ ...ans, questionId: qid });
@@ -199,7 +269,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
           } catch { }
         }
 
-        // Upload das respostas locais pendentes para o Supabase
+        // Upload em lotes de até 500 respostas locais pendentes para o Supabase
         if (missingOnRemote.length > 0) {
           const payload = missingOnRemote.map((a) => ({
             user_id: userId,
@@ -216,16 +286,19 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
             year: a.year ? Number(a.year) : 2024,
             error_reason: a.errorReason || null,
             student_notes: a.studentNotes || null,
-            status_retrial: a.statusRetrial || (a.isCorrect ? 'recuperado' : 'pendente'),
+            status_retrial: a.statusRetrial || (!a.isCorrect ? 'pendente' : null),
             attempts: a.attempts || []
           }));
 
-          supabase
-            .from('user_answers')
-            .upsert(payload, { onConflict: 'user_id,question_id' })
-            .then(({ error: upErr }: any) => {
-              if (upErr) console.warn('[StudentDataContext] Aviso ao sincronizar respostas pendentes no Supabase:', upErr);
-            }, () => { });
+          for (let i = 0; i < payload.length; i += 500) {
+            const chunk = payload.slice(i, i + 500);
+            supabase
+              .from('user_answers')
+              .upsert(chunk, { onConflict: 'user_id,question_id' })
+              .then(({ error: upErr }) => {
+                if (upErr) console.warn('[StudentDataContext] Aviso ao sincronizar respostas pendentes no Supabase:', upErr);
+              }, () => { });
+          }
         }
 
         return hasChanges ? merged : currentLocal;
@@ -235,41 +308,63 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     }
   }, [getUserAnswersStorageKey]);
 
-  // Carrega respostas do cache local (0ms) e reconcilia com o Supabase em background
+  // Pastas, Listas e Favoritos
+  const [folders, setFolders] = useState<Folder[]>([]);
+  const [lists, setLists] = useState<QuestionList[]>([]);
+  const [activeListId, setActiveListId] = useState<string | null>(null);
+  const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
+
+  // Metas diárias com namespace por usuário e sincronização em nuvem
+  const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(null);
+  const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
+
+  const getDailyGoalStorageKey = useCallback((uid?: string | null) => {
+    return uid ? `bancoresidencia_custom_daily_goal_${uid}` : 'bancoresidencia_custom_daily_goal_guest';
+  }, []);
+
+  // Hidratação instantânea do cache local (0ms, funciona 100% offline) isolada por conta
   useEffect(() => {
     if (typeof window === 'undefined') return;
     try {
       const storageKey = getUserAnswersStorageKey(user?.id);
       const raw = localStorage.getItem(storageKey);
       if (raw) {
-        const parsed = JSON.parse(raw);
+        const parsed = JSON.parse(raw) as Record<string, UserAnswerItem>;
         if (parsed && typeof parsed === 'object') {
           setUserAnswers(parsed);
         }
-      } else {
+      } else if (!user?.id) {
         const fallbackRaw = localStorage.getItem('bancoresidencia_user_answers');
         if (fallbackRaw) {
-          const parsed = JSON.parse(fallbackRaw);
+          const parsed = JSON.parse(fallbackRaw) as Record<string, UserAnswerItem>;
           if (parsed && typeof parsed === 'object') {
             setUserAnswers(parsed);
           }
+        } else {
+          setUserAnswers({});
         }
+      } else {
+        setUserAnswers({});
+      }
+
+      // Hidrata pastas, listas, favoritos e meta diária imediatamente do cache local
+      setFolders(readLocalFolders(user?.id));
+      setLists(readLocalLists(user?.id));
+      setBookmarkedQuestionIds(readLocalBookmarks(user?.id));
+
+      const savedGoal = localStorage.getItem(getDailyGoalStorageKey(user?.id));
+      if (savedGoal && !Number.isNaN(Number(savedGoal))) {
+        setCustomDailyGoal(Number(savedGoal));
+      } else {
+        setCustomDailyGoal(null);
       }
     } catch (e) {
-      console.warn('Erro ao carregar respostas locais:', e);
+      console.warn('Erro ao hidratar cache local do estudante:', e);
     }
+  }, [user?.id, getUserAnswersStorageKey, getDailyGoalStorageKey]);
 
-    // Reconciliação SWR em background com o Supabase
-    if (user?.id) {
-      syncUserAnswersFromSupabase(user.id);
-    }
-  }, [user?.id, getUserAnswersStorageKey, syncUserAnswersFromSupabase]);
-
-  // Pastas, Listas e Favoritos
-  const [folders, setFolders] = useState<Folder[]>([]);
-  const [lists, setLists] = useState<QuestionList[]>([]);
-  const [activeListId, setActiveListId] = useState<string | null>(null);
-  const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
+  const isSyncingRef = useRef(false);
+  const lastSyncTimestampRef = useRef<number>(0);
 
   const refreshUserData = useCallback(async () => {
     if (!user?.id) {
@@ -286,25 +381,41 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       return;
     }
 
+    if (typeof navigator !== 'undefined' && !navigator.onLine) {
+      setCloudSyncState('offline');
+      return;
+    }
+
+    if (isSyncingRef.current) return;
+    isSyncingRef.current = true;
+    setCloudSyncState('syncing');
+
     try {
-      // 1. Otimização de Carga: Inicialização via endpoint de bootstrap unificado (1 único roundtrip HTTP)
-      const res = await fetch('/api/student/bootstrap');
+      // 1. Inicialização e Reconciliação via endpoint de bootstrap unificado (1 único roundtrip HTTP)
+      const res = await fetch('/api/student/bootstrap', { cache: 'no-store' });
       if (res.ok) {
         const data = await res.json();
         if (data.success && data.authenticated) {
           if (Array.isArray(data.folders)) {
-            setFolders(data.folders);
-            try { localStorage.setItem(getFolderStorageKey(user.id), JSON.stringify(data.folders)); } catch { }
+            const reconciledFolders = await reconcileUserFoldersWithRemote(user.id, data.folders);
+            setFolders(reconciledFolders);
           }
           if (Array.isArray(data.lists)) {
-            setLists(data.lists);
-            try { localStorage.setItem(getListStorageKey(user.id), JSON.stringify(data.lists)); } catch { }
+            const reconciledLists = await reconcileUserListsWithRemote(user.id, data.lists);
+            setLists(reconciledLists);
           }
           if (Array.isArray(data.bookmarks)) {
-            const bmMap: Record<string, boolean> = {};
-            for (const id of data.bookmarks) bmMap[id] = true;
-            setBookmarkedQuestionIds(bmMap);
-            try { localStorage.setItem(getBookmarksStorageKey(user.id), JSON.stringify(bmMap)); } catch { }
+            const reconciledBookmarks = await reconcileUserBookmarksWithRemote(user.id, data.bookmarks);
+            setBookmarkedQuestionIds(reconciledBookmarks);
+          }
+          if (typeof data.profile?.daily_goal === 'number' && data.profile.daily_goal > 0) {
+            setCustomDailyGoal((prev) => {
+              const nextGoal = data.profile.daily_goal as number;
+              try {
+                localStorage.setItem(getDailyGoalStorageKey(user.id), String(nextGoal));
+              } catch { }
+              return prev !== nextGoal ? nextGoal : prev;
+            });
           }
           if (data.profile?.preferences && typeof window !== 'undefined') {
             window.dispatchEvent(new CustomEvent('bancoresidencia_preferences_synced', {
@@ -312,13 +423,17 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
             }));
           }
           if (Array.isArray(data.answers)) {
-            syncUserAnswersFromSupabase(user.id, data.answers);
+            await syncUserAnswersFromSupabase(user.id, data.answers);
           }
+          lastSyncTimestampRef.current = Date.now();
+          setCloudSyncState('synced');
           return;
         }
       }
     } catch {
-      // Fallback gracioso para carregamento individual se houver falha de rede
+      // Fallback gracioso para carregamento individual se o bootstrap falhar
+    } finally {
+      isSyncingRef.current = false;
     }
 
     try {
@@ -331,37 +446,109 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       setFolders(userFolds);
       setLists(userLst);
       if (userBms) setBookmarkedQuestionIds(userBms);
+      lastSyncTimestampRef.current = Date.now();
+      setCloudSyncState('synced');
     } catch (err) {
       console.error('Erro ao sincronizar listas e pastas do aluno:', err);
+      setCloudSyncState('error');
     }
-  }, [user, syncUserAnswersFromSupabase]);
+  }, [user?.id, syncUserAnswersFromSupabase, getDailyGoalStorageKey]);
 
   useEffect(() => {
     refreshUserData();
   }, [refreshUserData]);
 
-  // Metas diárias
-  const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(null);
-  const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
+  // Tamanho de Fonte (declarado antes do listener multi-abas)
+  const [fontSize, setFontSizeState] = useState<'xs' | 'sm' | 'base' | 'lg' | 'xl'>('sm');
 
+  // Revalidação automática multi-dispositivo (celular <-> tablet <-> computador) e sincronização entre abas
   useEffect(() => {
-    try {
-      const savedGoal = localStorage.getItem('bancoresidencia_custom_daily_goal');
-      if (savedGoal) {
-        setCustomDailyGoal(Number(savedGoal));
+    if (typeof window === 'undefined') return;
+
+    const VISIBILITY_COOLDOWN_MS = 20000;
+
+    const handleVisibilityOrFocus = () => {
+      if (document.visibilityState === 'visible' && user?.id) {
+        if (Date.now() - lastSyncTimestampRef.current >= VISIBILITY_COOLDOWN_MS) {
+          refreshUserData();
+        }
       }
-    } catch { }
-  }, []);
+    };
+
+    const handleOnline = () => {
+      if (user?.id) {
+        refreshUserData();
+      } else {
+        setCloudSyncState('synced');
+      }
+    };
+
+    const handleStorage = (e: StorageEvent) => {
+      if (!e.key || !e.newValue) return;
+      try {
+        if (e.key === getUserAnswersStorageKey(user?.id)) {
+          setUserAnswers(JSON.parse(e.newValue));
+        } else if (e.key === getListStorageKey(user?.id)) {
+          setLists(JSON.parse(e.newValue));
+        } else if (e.key === getFolderStorageKey(user?.id)) {
+          setFolders(JSON.parse(e.newValue));
+        } else if (e.key === getBookmarksStorageKey(user?.id)) {
+          setBookmarkedQuestionIds(JSON.parse(e.newValue));
+        } else if (e.key === getDailyGoalStorageKey(user?.id)) {
+          const val = Number(e.newValue);
+          if (!Number.isNaN(val) && val > 0) setCustomDailyGoal(val);
+        } else if (e.key === 'bancoresidencia_question_font_size') {
+          setFontSizeState(e.newValue as 'xs' | 'sm' | 'base' | 'lg' | 'xl');
+        }
+      } catch { }
+    };
+
+    const unsubscribeForceSync = onImmediateCloudSyncRequest(() => {
+      refreshUserData();
+    });
+
+    document.addEventListener('visibilitychange', handleVisibilityOrFocus);
+    window.addEventListener('focus', handleVisibilityOrFocus);
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('storage', handleStorage);
+
+    return () => {
+      unsubscribeForceSync();
+      document.removeEventListener('visibilitychange', handleVisibilityOrFocus);
+      window.removeEventListener('focus', handleVisibilityOrFocus);
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('storage', handleStorage);
+    };
+  }, [user?.id, refreshUserData, getUserAnswersStorageKey, getDailyGoalStorageKey]);
+
+  const dailyGoalDebounceRef = useRef<NodeJS.Timeout | null>(null);
 
   const updateDailyGoal = useCallback((newGoal: number) => {
-    setCustomDailyGoal(newGoal);
+    const safeGoal = Math.max(1, Math.min(500, Math.round(newGoal)));
+    setCustomDailyGoal(safeGoal);
     try {
-      localStorage.setItem('bancoresidencia_custom_daily_goal', String(newGoal));
+      localStorage.setItem(getDailyGoalStorageKey(user?.id), String(safeGoal));
     } catch { }
-  }, []);
 
-  // Tamanho de Fonte
-  const [fontSize, setFontSizeState] = useState<'xs' | 'sm' | 'base' | 'lg' | 'xl'>('sm');
+    if (user?.id && user.id !== 'demo-student') {
+      if (dailyGoalDebounceRef.current) {
+        clearTimeout(dailyGoalDebounceRef.current);
+      }
+      dailyGoalDebounceRef.current = setTimeout(async () => {
+        try {
+          const supabase = createClient();
+          await supabase
+            .from('profiles')
+            .update({ daily_goal: safeGoal })
+            .eq('id', user.id);
+        } catch (err) {
+          console.warn('[StudentDataContext] Erro ao sincronizar meta diária no Supabase:', err);
+        }
+      }, 500);
+    }
+  }, [user?.id, getDailyGoalStorageKey]);
+
+  // Sincronização inicial e reativa de Tamanho de Fonte
   useEffect(() => {
     try {
       const savedFontSize = localStorage.getItem('bancoresidencia_question_font_size') as
@@ -628,7 +815,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         letter: selectedLetter,
         isCorrect,
         timestamp: answerTimestamp,
-        difficulty: (metadata?.difficulty as any) || (previousAnswer?.difficulty as any) || 'Médio',
+        difficulty: metadata?.difficulty || previousAnswer?.difficulty || 'Médio',
         isAnulada: Boolean(metadata?.isAnulada || previousAnswer?.isAnulada),
         specialty: metadata?.specialty || previousAnswer?.specialty,
         tema: metadata?.tema || previousAnswer?.tema,
@@ -639,6 +826,8 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         banca: metadata?.banca || previousAnswer?.banca,
         year: metadata?.year || previousAnswer?.year,
         code: metadata?.code || previousAnswer?.code,
+        errorReason: metadata?.errorReason ?? previousAnswer?.errorReason,
+        studentNotes: metadata?.studentNotes ?? previousAnswer?.studentNotes,
         statusRetrial,
         attempts: [...previousAttempts, newAttempt]
       };
