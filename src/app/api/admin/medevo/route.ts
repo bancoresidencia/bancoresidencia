@@ -1,23 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { validateExternalImageUrl, safeFetchBufferWithLimit } from '@/utils/urlSecurity';
 import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 import { sanitizeMedicalWatermark } from './inpaint/route';
 
 export const dynamic = 'force-dynamic';
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
 
 interface VisionHit {
   url: string;
@@ -317,6 +307,9 @@ export async function GET(req: NextRequest) {
 }
 
 function updateManifestQuestionClean(questionId: string, updatedUrlPair?: { oldUrl: string; newUrl: string }) {
+  if (process.env.VERCEL || process.env.NODE_ENV === 'production') {
+    return;
+  }
   try {
     const manifestPath = path.join(process.cwd(), 'src', 'data', 'medevoAuditManifest.json');
     if (!fs.existsSync(manifestPath)) return;
@@ -362,10 +355,18 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: false, error: 'Nenhum arquivo enviado.' }, { status: 400 });
     }
 
-    const rawBuffer = Buffer.from(await file.arrayBuffer());
+    const MAX_UPLOAD_BYTES = 10 * 1024 * 1024;
+    if (file.size > MAX_UPLOAD_BYTES) {
+      return NextResponse.json({ success: false, error: 'Arquivo excede o limite máximo permitido de 10MB.' }, { status: 413 });
+    }
 
-    // Higienização obrigatória via Sharp: descarta metadados EXIF e converte para WebP 85%
-    const cleanBuffer = await sharp(rawBuffer)
+    const rawBuffer = Buffer.from(await file.arrayBuffer());
+    if (rawBuffer.byteLength > MAX_UPLOAD_BYTES) {
+      return NextResponse.json({ success: false, error: 'Arquivo excede o limite máximo permitido de 10MB.' }, { status: 413 });
+    }
+
+    // Higienização obrigatória via Sharp (com limite anti-decompression-bomb): descarta metadados EXIF e converte para WebP 85%
+    const cleanBuffer = await sharp(rawBuffer, { limitInputPixels: 40_000_000 })
       .webp({ quality: 85, effort: 4 })
       .toBuffer();
 
@@ -447,14 +448,20 @@ export async function PATCH(req: NextRequest) {
 
       let finalTargetUrl = newUrl;
 
-      // Se for inpainting e a URL fornecida for temporária ou inexistente, gera o WebP limpo permanente
+      // Se for inpainting e a URL fornecida for temporária ou inexistente, gera o WebP limpo permanente (com blindagem SSRF)
       if (action === 'apply_inpainting') {
         try {
           const fetchTarget = (!oldUrl.includes('medevo.com.br')) ? oldUrl : (newUrl || oldUrl);
-          const res = await fetch(fetchTarget);
-          if (res.ok) {
-            const rawBuf = Buffer.from(await res.arrayBuffer());
-            const cleanBuf = await sanitizeMedicalWatermark(rawBuf, 'centro');
+          const urlValidation = await validateExternalImageUrl(fetchTarget);
+          if (!urlValidation.allowed || !urlValidation.normalizedUrl) {
+            return NextResponse.json(
+              { success: false, error: urlValidation.reason || 'URL da imagem bloqueada por segurança.' },
+              { status: 403 }
+            );
+          }
+          const fetched = await safeFetchBufferWithLimit(urlValidation.normalizedUrl, 15 * 1024 * 1024, 10000);
+          if (fetched.ok && fetched.buffer.length > 0) {
+            const cleanBuf = await sanitizeMedicalWatermark(fetched.buffer, 'centro');
 
             const safeCode = (currentQ.code || questionId).replace(/[^a-zA-Z0-9_-]/g, '_');
             const storagePath = `sanitized/${safeCode}_inpainted_${Date.now()}.webp`;
@@ -473,20 +480,42 @@ export async function PATCH(req: NextRequest) {
         }
       }
 
-      // Se for adoção de imagem oficial local (/images/oficiais/...)
-      if (action === 'apply_official' && newUrl && newUrl.startsWith('/images/oficiais/')) {
+      // Se for adoção de imagem oficial local (/images/oficiais/...) — Blindagem estrita contra Path Traversal (CWE-22)
+      if (action === 'apply_official' && typeof newUrl === 'string' && newUrl.startsWith('/images/oficiais/')) {
         try {
-          const localRel = newUrl.startsWith('/') ? newUrl.slice(1) : newUrl;
-          const localPath = path.join(process.cwd(), 'public', localRel);
+          const officialBaseDir = path.resolve(process.cwd(), 'public', 'images', 'oficiais');
+          const safeFileName = path.basename(newUrl);
+
+          if (!/^[a-zA-Z0-9._-]+\.(webp|png|jpg|jpeg)$/i.test(safeFileName) || safeFileName.includes('..')) {
+            return NextResponse.json(
+              { success: false, error: 'Nome de imagem oficial inválido.' },
+              { status: 400 }
+            );
+          }
+
+          const localPath = path.resolve(officialBaseDir, safeFileName);
+          if (!localPath.startsWith(officialBaseDir + path.sep)) {
+            return NextResponse.json(
+              { success: false, error: 'Acesso negado fora do diretório permitido.' },
+              { status: 403 }
+            );
+          }
+
           if (fs.existsSync(localPath)) {
             const fileBuf = fs.readFileSync(localPath);
             const safeCode = (currentQ.code || questionId).replace(/[^a-zA-Z0-9_-]/g, '_');
-            const ext = path.extname(localPath).replace('.', '') || 'webp';
+            const ext = path.extname(localPath).replace('.', '').toLowerCase() || 'webp';
             const storagePath = `oficiais/${safeCode}_official_${Date.now()}.${ext}`;
+            const mimeMap: Record<string, string> = {
+              png: 'image/png',
+              jpg: 'image/jpeg',
+              jpeg: 'image/jpeg',
+              webp: 'image/webp'
+            };
 
             const { error: uploadErr } = await supabaseAdmin.storage
               .from('questoes')
-              .upload(storagePath, fileBuf, { contentType: ext === 'png' ? 'image/png' : 'image/webp', upsert: true });
+              .upload(storagePath, fileBuf, { contentType: mimeMap[ext] || 'image/webp', upsert: true });
 
             if (!uploadErr) {
               const { data: pUrl } = supabaseAdmin.storage.from('questoes').getPublicUrl(storagePath);

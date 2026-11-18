@@ -38,7 +38,7 @@ import { useSubscription } from '@/hooks/useSubscription';
 import { QuestionComments } from './QuestionComments';
 import { SendQuestionToFolderModal } from './SendQuestionToFolderModal';
 import { Folder } from '@/types';
-import { renderFormattedMedicalText, sanitizeMedicalText } from '@/utils/textSanitizer';
+import { renderFormattedMedicalText, sanitizeMedicalText, unpackStructuredCommentary } from '@/utils/textSanitizer';
 import { Button, Badge } from '@/components/ui';
 import {
   getQuestionResolution,
@@ -399,13 +399,17 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   );
 
   const activeQuestion = useMemo<Question>(() => {
+    const baseOptions =
+      resolvedOverrides.options && resolvedOverrides.options.length > 0
+        ? resolvedOverrides.options
+        : question.options;
+    const rawComm = resolvedOverrides.commentary ?? question.commentary;
+    const unpacked = unpackStructuredCommentary(rawComm, baseOptions);
     return {
       ...question,
       ...resolvedOverrides,
-      options:
-        resolvedOverrides.options && resolvedOverrides.options.length > 0
-          ? resolvedOverrides.options
-          : question.options
+      commentary: unpacked.commentary || rawComm,
+      options: unpacked.options as Question['options']
     };
   }, [question, resolvedOverrides]);
 
@@ -651,7 +655,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
     // Extração de Evolução de Diretrizes
     if (!extractedGuideline) {
-      const gRegex = /(?:^|\n)\s*(?:Evolução de Diretrizes(?:\s*(?:&|e)\s*Contexto Histórico)?|Contexto Histórico(?:\s*da Banca)?|Mudança de Diretriz(?:es)?|Diretrizes Anteriores vs Atuais|Atualização de Conduta):\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Motivo de Erro|Referências|Fontes|Gabarito)|$))/i;
+      const gRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2})?(?:Evolução de Diretrizes(?:\s*(?:&|e)\s*Contexto Histórico)?|Contexto Histórico(?:\s*da Banca)?|Mudança de Diretriz(?:es)?|Diretrizes Anteriores vs Atuais|Atualização de Conduta)\*{0,2}:?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2})?(?:Take-Home Message|Pérola Prática|Principal Motivo|Motivo de Erro|Referências|Base Teórica|Fontes|Gabarito)|$))/i;
       const gMatch = cleanedFinal.match(gRegex);
       if (gMatch) {
         extractedGuideline = gMatch[1].trim();
@@ -661,7 +665,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
     // Extração de Take-Home Message / Pérola Prática do comentário
     if (!extractedTakeHome) {
-      const thRegex = /(?:^|\n)\s*(?:Take-Home Message|Mensagem-Chave|Pérola Prática(?: para Prova)?|Pérola Clínica|Clinical Pearl|Pérola de Prova):\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Principal Motivo|Motivo de Erro|Armadilha|Evolução de Diretrizes|Referências|Fontes|Gabarito)|$))/i;
+      const thRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2})?(?:Take-Home Message(?:\s*\([^)]+\))?|Mensagem-Chave|Pérola Prática(?: para Prova)?|Pérola Clínica|Clinical Pearl|Pérola de Prova)\*{0,2}:?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2})?(?:Principal Motivo|Motivo de Erro|Armadilha|Evolução de Diretrizes|Referências|Base Teórica|Fontes|Gabarito)|$))/i;
       const thMatch = cleanedFinal.match(thRegex);
       if (thMatch) {
         extractedTakeHome = thMatch[1].trim();
@@ -671,7 +675,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
     // Extração do Principal Motivo de Erro / Armadilha da Questão
     if (!extractedError) {
-      const errRegex = /(?:^|\n)\s*(?:Principal Motivo (?:de Erro|que Leva ao Erro)|Motivo de Erro|Armadilha da Questão|Pegadinha de Prova|Onde o Aluno Costuma Errar):\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Evolução de Diretrizes|Referências|Fontes|Gabarito)|$))/i;
+      const errRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2})?(?:Principal Motivo (?:de Erro|que Leva ao Erro)(?:\s*\([^)]+\))?|Motivo de Erro|Armadilha da Questão|Pegadinha de Prova|Onde o Aluno Costuma Errar)\*{0,2}:?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2})?(?:Take-Home Message|Pérola Prática|Evolução de Diretrizes|Referências|Base Teórica|Fontes|Gabarito)|$))/i;
       const errMatch = cleanedFinal.match(errRegex);
       if (errMatch) {
         extractedError = errMatch[1].trim();
@@ -681,7 +685,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
     // Extração de Referências Teóricas
     if (extractedRefs.length === 0) {
-      const refRegex = /(?:^|\n)\s*(?:Referências(?:\s+Bibliográficas)?|Fontes Bibliográficas|Base Teórica(?: Consultada)?):\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:Take-Home Message|Pérola Prática|Principal Motivo|Evolução de Diretrizes)|$))/i;
+      const refRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2})?(?:Referências(?:\s+(?:Bibliográficas|Teóricas))?|Fontes Bibliográficas|Base Teórica(?:\s*(?:Consultada|(?:&|e)\s*Diretrizes(?:\s+Médicas)?|(?:&|e)\s*Referências(?:\s+Bibliográficas)?))?)\*{0,2}:?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2})?(?:Take-Home Message|Pérola Prática|Principal Motivo|Evolução de Diretrizes)|$))/i;
       const refMatch = cleanedFinal.match(refRegex);
       if (refMatch) {
         const lines = refMatch[1]
@@ -694,7 +698,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     }
 
     // Detecta bloco "Análise das Alternativas"
-    const altBlockRegex = /(?:^|\n)\s*(?:Análise das Alternativas|Comentário das Alternativas|Justificativa das Alternativas|Alternativas):([\s\S]*?)(?=(?:\n\s*\n\s*(?:Resumo Clínico|Pérola Prática|Clinical Pearl|Take-Home|Principal Motivo|Evolução|Referências|Gabarito Oficial)|$))/i;
+    const altBlockRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2})?(?:Análise das Alternativas|Comentário das Alternativas|Justificativa das Alternativas|Alternativas)\*{0,2}:?([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2})?(?:Comentário Final|Resumo Clínico|Pérola Prática|Clinical Pearl|Take-Home|Principal Motivo|Evolução|Referências|Base Teórica|Gabarito Oficial)|$))/i;
     const match = cleanedFinal.match(altBlockRegex);
 
     if (match) {
@@ -1648,7 +1652,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
 
       {/* Alternativas (Múltipla Escolha / Certo ou Errado) com Riscador e Seleção Prévia */}
-      {activeQuestion.options && activeQuestion.options.length > 0 && activeQuestion.type !== 'Dissertativa' ? (
+      {activeQuestion.options && activeQuestion.options.length > 0 && activeQuestion.type !== 'Dissertativa' && activeQuestion.type !== 'Discursiva' ? (
         <div className="space-y-3 pt-2">
           {activeQuestion.options.map((option, optIdx) => {
             const optLetter = (option.letter || (['A', 'B', 'C', 'D', 'E'][optIdx] as 'A' | 'B' | 'C' | 'D' | 'E') || 'A') as 'A' | 'B' | 'C' | 'D' | 'E';
@@ -1961,8 +1965,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
             </div>
           ) : null}
         </div>
-      ) : (
-        /* Questão Dissertativa */
+      ) : activeQuestion.type === 'Dissertativa' || activeQuestion.type === 'Discursiva' ? (
+        /* Questão Dissertativa / Discursiva */
         <div className="pt-2 space-y-3">
           <div className="p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 block">
@@ -1975,13 +1979,47 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
             {!isAnswered ? (
               <Button
                 type="button"
-                onClick={() => {
+                isLoading={isSubmittingAnswer}
+                onClick={async () => {
+                  if (!activeQuestion.commentary) {
+                    const cached = getQuestionResolution(question.id);
+                    if (cached) {
+                      setResolvedOverrides({
+                        correctAnswer: cached.correctAnswer,
+                        commentary: cached.commentary,
+                        options: cached.options && cached.options.length > 0 ? cached.options : question.options,
+                        isAnulada: cached.isAnulada
+                      });
+                    } else {
+                      try {
+                        setIsSubmittingAnswer(true);
+                        const res = await fetch('/api/questions/solve', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ questionId: question.id, selectedOption: 'A', isPrefetch: false })
+                        });
+                        const data = await res.json();
+                        if (data.success) {
+                          setResolvedOverrides({
+                            correctAnswer: data.correctAnswer,
+                            commentary: data.commentary,
+                            options: data.options && data.options.length > 0 ? data.options : question.options,
+                            isAnulada: data.isAnulada
+                          });
+                        }
+                      } catch (err) {
+                        console.warn('[QuestionCard] Falha ao carregar espelho dissertativo:', err);
+                      } finally {
+                        setIsSubmittingAnswer(false);
+                      }
+                    }
+                  }
                   setShowCommentary(true);
                   setIsAnswered(true);
                 }}
                 className="text-white text-xs font-bold shadow-md"
                 style={{ backgroundColor: accentConfig.primaryHex }}
-                leftIcon={<Send className="w-3.5 h-3.5" />}
+                leftIcon={!isSubmittingAnswer ? <Send className="w-3.5 h-3.5" /> : undefined}
               >
                 Ver Padrão de Resposta & Espelho
               </Button>
@@ -2010,6 +2048,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                 </Button>
               </div>
             )}
+          </div>
+        </div>
+      ) : (
+        <div className="pt-2">
+          <div className="p-4 rounded-2xl border border-amber-500/30 bg-amber-500/10 text-amber-900 dark:text-amber-300 text-xs sm:text-sm font-medium flex items-center gap-2.5">
+            <AlertTriangle className="w-4 h-4 shrink-0 text-amber-600 dark:text-amber-400" />
+            <span>Alternativas indisponíveis no acervo original — questão encaminhada para revisão da curadoria médica.</span>
           </div>
         </div>
       )}

@@ -1,3 +1,5 @@
+import crypto from 'node:crypto';
+
 /**
  * Utilitários de Segurança e Sanitização de Input
  * Banco Residência Médica
@@ -7,19 +9,35 @@ export const UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9
 export const VALID_ANSWERS = new Set(['A', 'B', 'C', 'D', 'E', 'ANULADA', '']);
 
 /**
+ * Comparação criptográfica em tempo constante resistente a ataques de temporização (Timing Attacks).
+ */
+export function timingSafeEqualStrings(a: string, b: string): boolean {
+  if (typeof a !== 'string' || typeof b !== 'string') return false;
+  const bufA = Buffer.from(a, 'utf8');
+  const bufB = Buffer.from(b, 'utf8');
+  if (bufA.byteLength !== bufB.byteLength) {
+    // Executa comparação dummy de mesmo tamanho para não vazar latência prematura
+    crypto.timingSafeEqual(bufA, bufA);
+    return false;
+  }
+  return crypto.timingSafeEqual(bufA, bufB);
+}
+
+/**
  * Sanitiza termos de busca enviados para filtros PostgREST do Supabase,
- * prevenindo injeções de filtros lógicos, colchetes, ponto-e-vírgula e subqueries.
+ * prevenindo injeções de filtros lógicos, wildcards excessivos (*, %, _), colchetes e subqueries.
  */
 export function sanitizePostgrestTerm(term: string): string {
   if (!term || typeof term !== 'string') return '';
   return term
-    .replace(/[\u200B-\u200D\uFEFF\u2060]/g, '')
+    .replace(/[\u200B-\u200D\uFEFF\u2060\u0000-\u001F]/g, '')
     .replace(/\u00A0|&nbsp;/gi, ' ')
     .replace(/--/g, ' ')
-    .replace(/[,();\\"%_]/g, ' ')
-    .replace(/\.or\.|\.and\.|\.not\.|\.eq\.|\.neq\./gi, ' ')
+    .replace(/[,();\\"%_*]/g, ' ')
+    .replace(/\.(?:or|and|not|eq|neq|gt|gte|lt|lte|like|ilike|is|in|cs|cd|ov|fts|plfts|phfts|wfts)\./gi, ' ')
     .replace(/\s+/g, ' ')
-    .trim();
+    .trim()
+    .slice(0, 120);
 }
 
 /**

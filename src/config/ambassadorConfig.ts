@@ -3,8 +3,8 @@
  * Todos os parâmetros comerciais e psicométricos são centralizados aqui.
  */
 
-import { UserAccount } from '@/types/auth';
-import { PlanDefinition } from '@/config/plans';
+import type { UserAccount } from '@/types/auth';
+import type { PlanDefinition } from '@/config/plans';
 
 export interface AmbassadorConfig {
   discountPercent: number; // Desconto dado ao aluno indicado (ex: 10%)
@@ -87,7 +87,7 @@ const STORAGE_PREFIX = 'bancoresidencia_ambassador_';
 const APPLIED_REFERRAL_KEY = 'bancoresidencia_applied_referral';
 
 // Códigos pré-cadastrados para validação do sistema
-const DEFAULT_PRESET_REFERRALS: Record<string, string> = {
+export const DEFAULT_PRESET_REFERRALS: Record<string, string> = {
   'MED-LUCAS-10': 'Dr. Lucas Silva (Clínica Médica)',
   'RESIDENCIA10': 'Prof. Dr. Marcos Arcuri',
   'MED-MARIANNA': 'Dra. Mariana Costa (Pediatria)',
@@ -273,8 +273,9 @@ export function validateReferralCode(
     };
   }
 
-  // Verifica se é um código no formato MED-XXX, DR-XXX, DRA-XXX ou alfanumérico
-  if (clean.startsWith('MED-') || clean.startsWith('DR-') || clean.startsWith('DRA-') || clean.length >= 4) {
+  // Verifica se segue estritamente o padrão estruturado de código de embaixador (MED-XXX, DR-XXX, DRA-XXX)
+  // Nota: no checkout servidor (/api/checkout/process-payment), a existência real em public.profiles é validada no banco.
+  if (/^(MED|DR|DRA)-[A-Z0-9]{2,}(?:-[A-Z0-9]{1,})?$/.test(clean)) {
     const parsedName = clean.replace(/^(MED-|DR-|DRA-)/, '').split('-')[0];
     const friendlyName = parsedName ? `Colega ${parsedName}` : 'Estudante Embaixador';
     return {

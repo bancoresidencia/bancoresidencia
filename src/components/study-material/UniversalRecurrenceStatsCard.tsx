@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { FocusExamAnalytics, RecurrenceSliceItem, BancaPatternDetail } from '@/types/analytics';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 
 interface UniversalRecurrenceStatsCardProps {
   analytics?: FocusExamAnalytics | null;
@@ -508,15 +509,11 @@ export function UniversalRecurrenceStatsCard({
                 </div>
 
                 {/* Camada 1: O Que Você Deve Saber (Explicação Clínica Canônica - Estilo Imagem 3) */}
-                <div
-                  className="text-xs sm:text-[13px] text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans"
-                  dangerouslySetInnerHTML={{
-                    __html: (activeSlice.focusExplanation || activeSlice.takeaway).replace(
-                      /\*\*(.*?)\*\*/g,
-                      '<strong class="font-bold text-zinc-900 dark:text-zinc-100">$1</strong>'
-                    )
-                  }}
-                />
+                <div className="text-xs sm:text-[13px] text-zinc-700 dark:text-zinc-300 leading-relaxed font-sans">
+                  {renderFormattedMedicalText(activeSlice.focusExplanation || activeSlice.takeaway, {
+                    boldColorClass: 'font-bold text-zinc-900 dark:text-zinc-100'
+                  })}
+                </div>
               </div>
             </div>
 
@@ -540,15 +537,11 @@ export function UniversalRecurrenceStatsCard({
               </div>
 
               {/* Texto de Cobrança da Banca */}
-              <div
-                className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed pl-5 font-sans"
-                dangerouslySetInnerHTML={{
-                  __html: currentBancaPattern.howItCharges.replace(
-                    /\*\*(.*?)\*\*/g,
-                    '<strong class="font-bold text-zinc-900 dark:text-zinc-100">$1</strong>'
-                  )
-                }}
-              />
+              <div className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed pl-5 font-sans">
+                {renderFormattedMedicalText(currentBancaPattern.howItCharges, {
+                  boldColorClass: 'font-bold text-zinc-900 dark:text-zinc-100'
+                })}
+              </div>
 
               {/* Alerta de Pegadinha da Banca */}
               {currentBancaPattern.trapAlert && (
@@ -556,14 +549,11 @@ export function UniversalRecurrenceStatsCard({
                   <span className="shrink-0 font-bold text-amber-600 dark:text-amber-400">
                     ⚠️ Armadilha clássica desta banca:
                   </span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: currentBancaPattern.trapAlert.replace(
-                        /\*\*(.*?)\*\*/g,
-                        '<strong class="font-bold text-amber-900 dark:text-amber-100">$1</strong>'
-                      )
-                    }}
-                  />
+                  <span>
+                    {renderFormattedMedicalText(currentBancaPattern.trapAlert, {
+                      boldColorClass: 'font-bold text-amber-900 dark:text-amber-100'
+                    })}
+                  </span>
                 </div>
               )}
             </div>

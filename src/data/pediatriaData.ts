@@ -315,14 +315,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Avaliação Imediata e Passos Iniciais da Reanimação (SBP)",
                         "sub_subfocos": [
-                            "Icterícia do Aleitamento Materno (Precoce - Má Ingesta) vs do Leite Materno (Tardia - Enzimas Inibitórias)",
-                            "Incompatibilidade Rh (Coombs Direto Positivo, Gravidade Elevada) vs Incompatibilidade ABO (Mais Frequente, Menos Grave)"
+                            "Três Perguntas Obrigatórias ao Nascer: Gestação a Termo? Respirando ou Chorando? Tônus Muscular em Flexão?",
+                            "Passos Iniciais (em até 30s sob calor radiante): Prover Calor, Posicionar Cabeça em Leve Extensão, Aspirar se Necessário e Secar"
                         ]
                     },
                     {
                         "subfoco": "Ventilação com Pressão Positiva (VPP) e Manobras Avançadas",
                         "sub_subfocos": [
-                            "Indicações de Fototerapia Intensiva e Exsanguinotransfusão segundo Gráficos de Bhutani e AAP"
+                            "Indicação de VPP: FC < 100 bpm, Apneia ou Respiração Irregular (Iniciar com FiO2 21% se >= 34 sem ou 30% se < 34 sem)",
+                            "Massagem Cardíaca: Indicada se FC < 60 bpm após 30s de VPP Efetiva (Relação 3:1 com Técnica dos Dois Polegares)"
                         ]
                     }
                 ]
@@ -333,13 +334,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Doença da Membrana Hialina (DMH / SDR Tipo 1)",
                         "sub_subfocos": [
-                            "Prevenção de Kernicterus / Encefalopatia Bilirrubínica"
+                            "Fisiopatologia Central: Deficiência Quantitativa de Surfactante Pulmonar por Imaturidade de Pneumócitos Tipo II em Prematuros",
+                            "Radiografia de Tórax Típica: Infiltrado Reticulogranular Difuso ('Vidro Moído') com Broncogramas Aéreos e Volume Pulmonar Reduzido"
                         ]
                     },
                     {
                         "subfoco": "Complicações da Prematuridade Extrema",
                         "sub_subfocos": [
-                            "Transmissão Vertical: Fatores de Risco Maternos (RPMO > 18h, Febre Materna, Corioamnionite, EGB Positivo)"
+                            "Manejo na Sala de Parto: CPAP Nasal Precoce (5-6 cmH2O) e Surfactante Exógeno Intratraqueal sob Técnica LISA/INSURE",
+                            "Prevenção Primária: Corticoterapia Antenatal (Betametasona IM 12 mg, 2 doses) entre 24 e 34 Semanas"
                         ]
                     }
                 ]
@@ -350,14 +353,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Fisiopatologia e Quadro Clínico da TTRN",
                         "sub_subfocos": [
-                            "Agentes Principais: *Streptococcus agalactiae* (EGB) e *Escherichia coli*",
-                            "Esquema Empírico de 1ª Linha: Ampicilina + Gentamicina EV"
+                            "Mecanismo Fisiopatológico: Retardo na Reabsorção do Líquido Pulmonar Fetal por Inadequação dos Canais Epiteliais de Sódio (ENaC)",
+                            "Fator de Risco Clássico: Cesariana Eletiva a Termo sem Trabalho de Parto Prévio"
                         ]
                     },
                     {
-                        "subfoco": "Diagnóstico Diferencial com Outras Taquipneias",
+                        "subfoco": "Diagnóstico Diferencial e Conduta na TTRN",
                         "sub_subfocos": [
-                            "Infecção Hospitalar / Comunitária: *Staphylococcus epidermidis* (Coagulase-Negativo), *S. aureus*, Gram-Negativos e *Candida*"
+                            "Achados Radiológicos: Congestão Peri-Hilar, Trama Vascular Aumentada, Líquido na Cisura Interlobar ('Cisurite') e Hiperinsuflação",
+                            "Conduta Terapêutica: Oxigenoterapia de Baixo Fluxo (FiO2 < 40%) por Halo/Óculos; Resolução Espontânea e Autolimitada em 24-72h sem Antibióticos"
                         ]
                     }
                 ]
@@ -368,13 +372,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Diagnóstico e Manejo Clínico da SAM",
                         "sub_subfocos": [
-                            "Uso Racional de Vancomicina e Cefepima / Meropenem"
+                            "Fisiopatologia: Sofrimento Fetal Intrauterino com Eliminação de Mecônio Espesso e Gasping em RN a Termo ou Pós-Termo",
+                            "Radiografia de Tórax: Infiltrado Grosseiro Nodular em 'Flocos de Algodão' com Áreas de Hiperinsuflação e Atelectasias Lamelares"
                         ]
                     },
                     {
                         "subfoco": "Conduta na Sala de Parto com Líquido Meconial",
                         "sub_subfocos": [
-                            "Tríade Típica em Prematuro sob Dieta Enteral: Distensão Abdominal, Sangramento Gastrointestinal e Resíduos Gástricos Biliosos"
+                            "Conduta Atual (Diretriz SBP): Não Intubar de Rotina para Aspiração Traqueal; Iniciar Passos Iniciais e VPP se Não Vigoroso",
+                            "Complicação Temida: Hipertensão Pulmonar Persistente Neonatal (HPPN) e Pneumotórax por Mecanismo de Válvula"
                         ]
                     }
                 ]
@@ -385,14 +391,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Icterícia Fisiológica vs Patológica",
                         "sub_subfocos": [
-                            "Sinal Radiológico Patognomônico: Pneumatose Intestinal (Gás na Parede do Intestino) e Gás no Sistema Porta",
-                            "Indicações Cirúrgicas de Urgência: Pneumoperitônio (Perfuração Intestinal) - Estágio IIIb de Bell"
+                            "Icterícia Patológica: Início Precoce (< 24h de Vida), Elevação > 5 mg/dL/dia ou Fração Direta > 1-2 mg/dL",
+                            "Icterícia do Aleitamento (Precoce por Baixa Ingesta/Desidratação) vs do Leite Materno (Tardia por Componentes Inibitórios do Leite)"
                         ]
                     },
                     {
                         "subfoco": "Doença Hemolítica Perinatal e Tratamento",
                         "sub_subfocos": [
-                            "Jejum Absoluto, Descompressão Gástrica por Sonda e Nutrição Parenteral"
+                            "Incompatibilidade Rh (Coombs Direto Positivo, Anemia Grave) vs Incompatibilidade ABO (Mais Comum, Menos Severa)",
+                            "Indicações de Fototerapia Intensiva e Exsanguinotransfusão segundo Gráficos de Bhutani e Nomogramas da AAP"
                         ]
                     }
                 ]
@@ -403,13 +410,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Sepse Neonatal Precoce (< 48-72h)",
                         "sub_subfocos": [
-                            "Antibioticoterapia de Amplo Espectro com Cobertura para Gram-Negativos e Anaeróbios"
+                            "Transmissão Vertical: Fatores de Risco Maternos (RPMO > 18h, Febre Materna Intraparto, Corioamnionite, EGB Positivo sem Profilaxia)",
+                            "Agentes Principais e Terapia Empírica: *Streptococcus agalactiae* (EGB) e *E. coli*; Esquema: Ampicilina + Gentamicina EV"
                         ]
                     },
                     {
                         "subfoco": "Sepse Neonatal Tardia (> 72h)",
                         "sub_subfocos": [
-                            "Populações de Risco: Filhos de Mães Diabéticas, PIG, GIG e Prematuros"
+                            "Origem Nosocomial em UTIN: *Staphylococcus epidermidis* (Coagulase-Negativo), *S. aureus*, Gram-Negativos Multirresistentes e *Candida*",
+                            "Esquema Empírico Hospitalar: Oxacilina/Vancomicina + Amicacina ou Cefepima"
                         ]
                     }
                 ]
@@ -420,13 +429,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Diagnóstico e Classificação de Bell",
                         "sub_subfocos": [
-                            "Ponto de Corte Geral de Glicemia (< 40-45 mg/dL)"
+                            "Tríade Típica em Prematuro sob Dieta Enteral: Distensão Abdominal, Sangramento Gastrointestinal e Resíduos Gástricos Biliosos",
+                            "Sinal Radiológico Patognomônico: Pneumatose Intestinal (Gás na Parede das Alças) e Gás no Sistema Porta"
                         ]
                     },
                     {
                         "subfoco": "Manejo Clínico Inicial da ECN",
                         "sub_subfocos": [
-                            "Tratamento: Aleitamento/Fórmula se Assintomático vs Bolus de Glicose 10% (2 mL/kg) + Taxa de Infusão de Glicose (TIG) se Sintomático ou Grave"
+                            "Manejo Clínico (Bell I-II): Jejum Absoluto, Descompressão Gástrica Contínua e Antibioticoterapia de Amplo Espectro",
+                            "Indicação Cirúrgica de Emergência: Pneumoperitônio (Perfuração Intestinal - Bell Estágio IIIb)"
                         ]
                     }
                 ]
@@ -437,15 +448,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Hipoglicemia Neonatal (Definição e Conduta)",
                         "sub_subfocos": [
-                            "Tremores, Irritabilidade e Convulsões Neonatais",
-                            "Gluconato de Cálcio 10% EV com Monitorização Cardíaca"
+                            "Critério Diagnóstico: Glicemia < 40-45 mg/dL em RN de Risco (Filho de Mãe Diabética, PIG, GIG, Prematuro)",
+                            "Tratamento da Crise Sintomática: Bolus de Glicose 10% (2 mL/kg EV) seguido de Taxa de Infusão de Glicose (TIG 4-8 mg/kg/min)"
                         ]
                     },
                     {
                         "subfoco": "Hipocalcemia e Hipomagnesemia Neonatais",
                         "sub_subfocos": [
-                            "Acidose Metabólica Grave no Cordão Umbilical (pH < 7,00 e Déficit de Base >= 12 mmol/L)",
-                            "Escore de Apgar de 0-3 no 5º Minuto e Manifestações Neurológicas Imediatas"
+                            "Quadro Clínico: Tremores Finos aos Estímulos, Irritabilidade, Hiper-reflexia e Convulsões Neonatais",
+                            "Conduta na Hipocalcemia Sintomática (Cálcio Iônico < 4 mg/dL): Gluconato de Cálcio 10% EV com Monitorização Eletrocardiográfica"
                         ]
                     }
                 ]
@@ -456,13 +467,15 @@ export const pediatriaHierarchy: SpecialtyHierarchy = {
                     {
                         "subfoco": "Critérios Diagnósticos de Asfixia Perinatal",
                         "sub_subfocos": [
-                            "Estadiamento de Sarnat (Estágios I, II e III)"
+                            "Critérios Diagnósticos: Acidose Metabólica Grave no Cordão (pH < 7,00 e BE >= 12 mmol/L), Apgar <= 3 no 5º min e Falência Multiorgânica",
+                            "Estadiamento de Sarnat: Estágio I (Hiperalerta/Midríase), Estágio II (Letargia/Convulsões) e Estágio III (Coma/Hipotonia Flácida)"
                         ]
                     },
                     {
                         "subfoco": "Encefalopatia Hipóxico-Isquêmica e Hipotermia Terapêutica",
                         "sub_subfocos": [
-                            "Hipotermia Terapêutica Corpórea Total (Alvo 33,5°C por 72 Horas) Iniciada em até 6 Horas de Vida como Padrão Neuroprotetor"
+                            "Hipotermia Terapêutica Corpórea Total: Alvo 33,5°C a 34,5°C por 72 Horas Iniciada nas Primeiras 6 Horas de Vida",
+                            "Efeito Neuroprotetor Comprovado: Redução Significativa de Morte e Sequelas Graves de Paralisia Cerebral"
                         ]
                     }
                 ]

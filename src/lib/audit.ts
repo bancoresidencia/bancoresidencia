@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 
 export interface AuditEventParams {
   userId?: string | null;
@@ -20,20 +20,6 @@ export interface AuditEventParams {
   reason?: string | null;
   ipAddress?: string | null;
   userAgent?: string | null;
-}
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey =
-    process.env.SUPABASE_SERVICE_ROLE_KEY ||
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-    'placeholder-key';
-  return createClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
 }
 
 /**

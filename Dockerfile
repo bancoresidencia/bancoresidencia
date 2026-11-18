@@ -17,4 +17,7 @@ ENV NODE_ENV=production
 ENV TARGET_SPECIALTY=cirurgia
 ENV CONCURRENCY=6
 
+RUN chown -R node:node /app
+USER node
+
 CMD ["node", "scripts/cloud_batch_solve.mjs"]

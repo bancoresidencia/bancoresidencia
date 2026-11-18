@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 import {
@@ -15,28 +14,17 @@ import {
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
 import {
-  getHomologatedBaseline,
-  homologatedDiretoBaseline,
-  homologatedRevalidaBaseline
+  getHomologatedBaseline
 } from '@/data/homologatedFacetsBaseline';
 import { generateSessionTicket } from '@/utils/securityTickets';
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
+import { resolveCanonicalViewsForModalidades } from '@/services/canonicalQuestionStore';
 
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { isSqliteAvailable, queryQuestionsFromSqlite, queryFacetsFromSqlite } from '@/lib/sqliteQuestions';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
-  return createClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
 
 const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, difficulty, type, is_anulada, statement, options, images';
 
@@ -62,7 +50,24 @@ interface QuestionDbRow {
   images?: string[];
 }
 
-function mapRowToQuestion(row: QuestionDbRow): Question {
+function mapRowToQuestion(row: QuestionDbRow, includeExplanations = false): Question {
+  const sanitizedOptions = Array.isArray(row.options)
+    ? row.options.map((opt) => {
+        const rawOpt = opt as { letter: 'A' | 'B' | 'C' | 'D' | 'E'; text: string; explanation?: string };
+        if (includeExplanations && typeof rawOpt.explanation === 'string') {
+          return {
+            letter: rawOpt.letter,
+            text: sanitizeMedicalText(rawOpt.text),
+            explanation: sanitizeMedicalText(rawOpt.explanation)
+          };
+        }
+        return {
+          letter: rawOpt.letter,
+          text: sanitizeMedicalText(rawOpt.text)
+        };
+      })
+    : [];
+
   return {
     id: row.id,
     code: row.code || '',
@@ -77,48 +82,95 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
     tema: row.tema || '',
     foco: row.foco || '',
     subfoco: row.subfoco || '',
-    sub_subfoco: (row as any).sub_subfoco || (row as any).subSubfoco || '',
-    subSubfoco: (row as any).subSubfoco || (row as any).sub_subfoco || '',
+    sub_subfoco: (row as { sub_subfoco?: string }).sub_subfoco || (row as { subSubfoco?: string }).subSubfoco || '',
+    subSubfoco: (row as { subSubfoco?: string }).subSubfoco || (row as { sub_subfoco?: string }).sub_subfoco || '',
     difficulty: row.difficulty || 'Médio',
     type: row.type || 'Múltipla escolha',
     isAnulada: Boolean(row.is_anulada),
     statement: sanitizeMedicalText(row.statement || ''),
-    options: Array.isArray(row.options) ? row.options.map(opt => ({ ...opt, text: sanitizeMedicalText(opt.text) })) : [],
-    correctAnswer: (row.correct_answer as Question['correctAnswer']) || '',
-    commentary: sanitizeMedicalText(row.commentary || ''),
+    options: sanitizedOptions,
+    correctAnswer: includeExplanations ? ((row.correct_answer as Question['correctAnswer']) || '') : '',
+    commentary: includeExplanations ? sanitizeMedicalText(row.commentary || '') : '',
     images: Array.isArray(row.images) ? row.images : []
   };
 }
 
-function resolveTargetTable(filters: ExtendedFilterState): string {
+function resolveTargetTable(filters: ExtendedFilterState, privilegedDirect = false): string {
   const mods = filters?.modalidades;
   if (!mods || mods.length === 0 || mods.length > 1) {
-    return 'view_questions_all';
+    return privilegedDirect ? 'questions_direto' : 'view_questions_all';
   }
   const m = mods[0];
-  if (m === 'Acesso Direto' || m === 'Residência Médica') return 'view_questions_acesso_direto';
-  if (m === 'Revalida') return 'view_questions_revalida';
-  if (m === 'R+' || (typeof m === 'string' && m.startsWith('R+'))) return 'view_questions_rplus';
-  if (m === 'Título de Especialista' || (typeof m === 'string' && m.startsWith('Título'))) return 'view_questions_titulo';
-  return 'view_questions_acesso_direto';
+  if (m === 'Acesso Direto' || m === 'Residência Médica') {
+    return privilegedDirect ? 'questions_direto' : 'view_questions_acesso_direto';
+  }
+  if (m === 'Revalida') return privilegedDirect ? 'questions_revalida' : 'view_questions_revalida';
+  if (m === 'R+' || (typeof m === 'string' && m.startsWith('R+'))) {
+    return privilegedDirect ? 'questions_rplus' : 'view_questions_rplus';
+  }
+  if (m === 'Título de Especialista' || (typeof m === 'string' && m.startsWith('Título'))) {
+    return privilegedDirect ? 'questions_titulo' : 'view_questions_titulo';
+  }
+  return privilegedDirect ? 'questions_direto' : 'view_questions_acesso_direto';
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-async function executeResilientQuery<T = any>(
-  queryFn: (tableName: string) => Promise<{ data: T | null; count?: number | null; error: any }>,
-  preferredTable: string
-): Promise<{ data: T | null; count?: number | null; error: any }> {
+let viewQuestionsAllMissingUntil = 0;
+const VIEW_MISSING_CACHE_TTL_MS = 5 * 60 * 1000;
+
+function isRelationMissingError(error: { code?: string; message?: string } | null | undefined): boolean {
+  if (!error) return false;
+  return Boolean(
+    error.code === '42P01' ||
+    error.code === 'PGRST205' ||
+    error.message?.includes('does not exist') ||
+    error.message?.includes('schema cache') ||
+    error.message?.includes('relation')
+  );
+}
+
+interface PostgrestErrorShape {
+  code?: string;
+  message?: string;
+}
+
+async function executeResilientQuery<T = unknown>(
+  queryFn: (tableName: string) => PromiseLike<{ data: T | null; count?: number | null; error: PostgrestErrorShape | null }>,
+  preferredTable: string,
+  modalidades?: string[]
+): Promise<{ data: T | null; count?: number | null; error: PostgrestErrorShape | null }> {
+  const fanOutacrossViews = async (): Promise<{ data: T | null; count?: number | null; error: PostgrestErrorShape | null }> => {
+    const targetViews = resolveCanonicalViewsForModalidades(modalidades);
+    const results = await Promise.all(targetViews.map((v) => queryFn(v)));
+    const validResults = results.filter((r) => !r.error);
+    if (validResults.length === 0) {
+      return results[0] || { data: null, count: 0, error: null };
+    }
+
+    const hasArrayData = validResults.some((r) => Array.isArray(r.data));
+    let mergedData: T | null = null;
+    if (hasArrayData) {
+      const combined = validResults.flatMap((r) => (Array.isArray(r.data) ? r.data : []));
+      mergedData = combined as unknown as T;
+    }
+
+    const hasCounts = validResults.some((r) => typeof r.count === 'number');
+    const summedCount = hasCounts
+      ? validResults.reduce((acc, r) => acc + (typeof r.count === 'number' ? r.count : 0), 0)
+      : null;
+
+    return { data: mergedData, count: summedCount, error: null };
+  };
+
+  if (preferredTable === 'view_questions_all' && Date.now() < viewQuestionsAllMissingUntil) {
+    return await fanOutacrossViews();
+  }
+
   const result = await queryFn(preferredTable);
-  if (result.error && (
-    result.error.code === '42P01' ||
-    result.error.code === 'PGRST205' ||
-    result.error.message?.includes('does not exist') ||
-    result.error.message?.includes('schema cache') ||
-    result.error.message?.includes('relation')
-  )) {
+  if (result.error && isRelationMissingError(result.error)) {
     if (preferredTable === 'view_questions_all') {
-      console.warn(`[/api/questions] View 'view_questions_all' indisponível no Supabase. Fallback automático para 'view_questions_acesso_direto'.`);
-      return await queryFn('view_questions_acesso_direto');
+      viewQuestionsAllMissingUntil = Date.now() + VIEW_MISSING_CACHE_TTL_MS;
+      console.warn(`[/api/questions] View 'view_questions_all' indisponível no Supabase. Executando consulta paralela nas views canônicas.`);
+      return await fanOutacrossViews();
     }
     console.warn(`[/api/questions] View '${preferredTable}' indisponível no Supabase. Fallback automático para 'questions'.`);
     return await queryFn('questions');
@@ -304,10 +356,17 @@ export async function POST(req: NextRequest) {
     const body = await req.json().catch(() => ({}));
     const {
       filters = {} as ExtendedFilterState,
-      page = 1,
-      pageSize = 20,
-      questionIds
+      page: rawPage = 1,
+      pageSize: rawPageSize = 20,
+      questionIds: rawQuestionIds
     } = body;
+
+    // Blindagem Anti-Scraping: teto estrito de paginação (máx 50 questões/página e máx 100 IDs explícitos)
+    const page = Math.max(1, Math.floor(Number(rawPage) || 1));
+    const pageSize = Math.min(50, Math.max(1, Math.floor(Number(rawPageSize) || 20)));
+    const questionIds = Array.isArray(rawQuestionIds)
+      ? rawQuestionIds.filter((id): id is string => typeof id === 'string').slice(0, 100)
+      : undefined;
 
     // Identificação de usuário para amarração segura de sessão (Session Binding)
     let authenticatedUserId: string | undefined;
@@ -437,7 +496,13 @@ export async function POST(req: NextRequest) {
           p_is_revalida: isRevalida
         });
 
-        if (!rpcErr && rpcResult && typeof rpcResult === 'object' && typeof (rpcResult as Record<string, unknown>).totalRightCardCount === 'number') {
+        if (
+          !rpcErr &&
+          rpcResult &&
+          typeof rpcResult === 'object' &&
+          typeof (rpcResult as Record<string, unknown>).totalRightCardCount === 'number' &&
+          !(isRPlusOrTitulo && (rpcResult as { totalRightCardCount: number }).totalRightCardCount === 0 && !hasBancas)
+        ) {
           const typedResult = rpcResult as {
             totalRightCardCount: number;
             especialidades: Record<string, number>;
@@ -498,12 +563,13 @@ export async function POST(req: NextRequest) {
       // 3. Fallback Resiliente (Pilar 2 da Arquitetura Híbrida):
       // Projeta apenas colunas mínimas de hierarquia (sem texto de enunciado/opções/imagens)
       const targetTable = resolveTargetTable(filters);
-      let facetQuery = supabaseAdmin
-        .from(targetTable)
-        .select('especialidade, tema, foco, subfoco', { count: 'exact' });
-      facetQuery = applyQuestionFilters(facetQuery, filtersWithoutClinical);
-
-      const { data: facetRows, count: exactFacetCount, error: facetErr } = await facetQuery.limit(4000);
+      const { data: facetRows, count: exactFacetCount, error: facetErr } = await executeResilientQuery(async (tbl) => {
+        let facetQuery = supabaseAdmin
+          .from(tbl)
+          .select('especialidade, tema, foco, subfoco', { count: 'exact' });
+        facetQuery = applyQuestionFilters(facetQuery, filtersWithoutClinical);
+        return await facetQuery.limit(4000);
+      }, targetTable, filters.modalidades);
       if (facetErr) {
         console.warn('[/api/questions] Aviso ao buscar facetas atômicas:', facetErr.message || facetErr);
       }
@@ -556,10 +622,12 @@ export async function POST(req: NextRequest) {
     }
 
     let selectCols = SAFE_QUESTION_COLUMNS;
+    let isPrivilegedIncludeGabarito = false;
     if (body.includeGabarito) {
       const auth = await verifyAdminSession(req);
       if (auth.authorized) {
         selectCols = '*';
+        isPrivilegedIncludeGabarito = true;
       }
     }
     if (isSqliteAvailable()) {
@@ -623,20 +691,20 @@ export async function POST(req: NextRequest) {
       );
 
       if (hasOtherFilters) {
-        const targetTable = resolveTargetTable(filters);
+        const targetTable = resolveTargetTable(filters, isPrivilegedIncludeGabarito);
         const { data, count, error } = await executeResilientQuery(async (tbl) => {
           let q = supabaseAdmin.from(tbl).select(selectCols, { count: 'exact' });
           const safeTargetIds = targetStatusIds.slice(0, 1000);
           q = applyQuestionFilters(q, filters, safeTargetIds);
           return await q.range(from, to);
-        }, targetTable);
+        }, targetTable, filters.modalidades);
         if (error) {
           console.error('[/api/questions] Erro ao buscar questões com status e filtros cruzados:', error.message || error);
           return NextResponse.json({ questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message }, { status: 500 });
         }
 
         const realTotal = typeof count === 'number' ? count : (data || []).length;
-        const questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow));
+        const questions = (data || []).slice(0, pageSize).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow, isPrivilegedIncludeGabarito));
         const pageQuestionIds = questions.map((q) => q.id).filter(Boolean);
         const sessionTicket = generateSessionTicket(authenticatedUserId || 'anonymous', pageQuestionIds);
 
@@ -662,18 +730,18 @@ export async function POST(req: NextRequest) {
         });
       }
 
-      const targetTable = resolveTargetTable(filters);
+      const targetTable = resolveTargetTable(filters, isPrivilegedIncludeGabarito);
       const { data, error } = await executeResilientQuery(async (tbl) => {
         let q = supabaseAdmin.from(tbl).select(selectCols);
         q = applyQuestionFilters(q, filters, pageTargetIds);
         return await q;
-      }, targetTable);
+      }, targetTable, filters.modalidades);
       if (error) {
         console.error('[/api/questions] Erro ao buscar questões paginadas por status:', error.message || error);
         return NextResponse.json({ questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message }, { status: 500 });
       }
 
-      let questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow));
+      let questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow, isPrivilegedIncludeGabarito));
 
       // Preserva a ordenação original dos IDs paginados
       const idMap = new Map(questions.map((q) => [q.id, q]));
@@ -697,10 +765,10 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    // 1. Identifica a tabela/view alvo conforme o modo (Acesso Direto vs Revalida)
+    // 1. Identifica a tabela/view alvo conforme as modalidades selecionadas
     const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
-    const targetTable = resolveTargetTable(filters);
-    const baseTotal = isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
+    const targetTable = resolveTargetTable(filters, isPrivilegedIncludeGabarito);
+    const baseTotal = getHomologatedBaseline(filters.modalidades).total;
 
     // 2. Paginação com ordenação dinâmica
     const isUnseenWithManySolved = Boolean(
@@ -711,7 +779,7 @@ export async function POST(req: NextRequest) {
 
     const queryTo = isUnseenWithManySolved ? to + Math.min(filters.userSolvedIds!.length, 100) : to;
 
-    // Constrói a busca principal com fallback resiliente
+    // Constrói a busca principal com fallback resiliente multi-modalidade
     const dataQueryPromise = executeResilientQuery(async (tbl) => {
       let q = supabaseAdmin.from(tbl).select(selectCols);
       q = applyQuestionFilters(q, filters, questionIds);
@@ -726,7 +794,7 @@ export async function POST(req: NextRequest) {
         q = q.order('year', { ascending: false }).order('id', { ascending: true }).range(from, queryTo);
       }
       return await q;
-    }, targetTable);
+    }, targetTable, filters.modalidades);
 
     // 3. Cálculo preciso do total filtrado de questões
     const hasActiveFilters = Boolean(
@@ -782,7 +850,7 @@ export async function POST(req: NextRequest) {
               let q = supabaseAdmin.from(tbl).select('id', { count: 'exact', head: true });
               q = applyQuestionFilters(q, filters, questionIds);
               return await q;
-            }, targetTable).then(({ count, error: countErr }) => {
+            }, targetTable, filters.modalidades).then(({ count, error: countErr }) => {
               if (!countErr && typeof count === 'number') return count;
               return calculateHierarchyFallback(filters);
             }),
@@ -813,7 +881,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    let questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow));
+    const rawRows = (data || []) as unknown as QuestionDbRow[];
+    if (!filters.aleatorizar && (!questionIds || questionIds.length === 0) && rawRows.length > pageSize) {
+      rawRows.sort((a, b) => (b.year || 0) - (a.year || 0) || String(a.id).localeCompare(String(b.id)));
+    }
+    let questions = rawRows.map((row) => mapRowToQuestion(row, isPrivilegedIncludeGabarito));
+    if ((!filters.status || filters.status !== 'Não vistas') && (!questionIds || questionIds.length === 0) && questions.length > pageSize) {
+      questions = questions.slice(0, pageSize);
+    }
 
     // Para 'Não vistas', garante imunidade absoluta contra reaparecimento de qualquer questão resolvida
     if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {

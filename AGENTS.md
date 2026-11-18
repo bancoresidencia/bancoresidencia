@@ -56,6 +56,7 @@ Combina banco de questões com resoluções comentadas, psicometria (TRI/IRT), f
   - Código novo (funções, componentes, tipos, variáveis genéricas e commits): `inglês`.
   - Exceção de domínio: termos médicos e colunas de banco permanecem em português para preservar fidelidade às bancas (`especialidade`, `tema`, `foco`, `subfoco`, `banca`, `gabarito`, `anulada`, `simulado`, `caderno`).
 - **Preservação de Blocos:** O cabeçalho `<!-- BEGIN:nextjs-agent-rules --> ... <!-- END:nextjs-agent-rules -->` é mandatório e nunca deve ser removido.
+- **Imagens Médicas:** Busca restrita a repositórios de Domínio Público e CC-0/CC-BY (Wikimedia Commons, CDC PHIL, MedPix e ISIC Archive) via `scripts/fetch_medical_image.py`. Toda imagem médica inserida na plataforma deve ser convertida para WebP e conter citação canônica obrigatória (fonte, autor, licença e link original).
 
 ## Stack Tecnológico
 

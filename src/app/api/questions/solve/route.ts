@@ -1,25 +1,17 @@
 import crypto from 'crypto';
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
-import { validateQuestionId, validateAnswerOption } from '@/utils/security';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { validateQuestionId, isPrivilegedRole } from '@/utils/security';
 import { injectZeroWidthWatermark } from '@/utils/watermark';
-import { sanitizeMedicalText } from '@/utils/textSanitizer';
+import { sanitizeMedicalText, unpackStructuredCommentary } from '@/utils/textSanitizer';
+import { findCanonicalQuestionByIdOrCode } from '@/services/canonicalQuestionStore';
 
 export const dynamic = 'force-dynamic';
 
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createSupabaseAdminClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
+const VALID_STUDENT_CHOICES = new Set(['A', 'B', 'C', 'D', 'E']);
 
-// In-Memory Rate Limiter contra raspagem acelerada (Max 60 requisições por minuto por IP)
+// In-Memory Rate Limiter com teto FIFO contra raspagem acelerada e OOM (Max 60 req/min por IP)
 interface RateLimitEntry {
   count: number;
   resetAt: number;
@@ -27,35 +19,49 @@ interface RateLimitEntry {
 const rateLimitMap = new Map<string, RateLimitEntry>();
 const RATE_LIMIT_WINDOW_MS = 60 * 1000;
 const MAX_REQUESTS_PER_WINDOW = 60;
+const MAX_MAP_ENTRIES = 5000;
 
-function isRateLimited(ip: string): boolean {
+function extractClientIp(req: NextRequest): string {
+  const vercelIp = req.headers.get('x-vercel-forwarded-for')?.split(',')[0]?.trim();
+  if (vercelIp) return vercelIp;
+  const realIp = req.headers.get('x-real-ip')?.trim();
+  if (realIp) return realIp;
+  const xff = req.headers.get('x-forwarded-for');
+  if (xff) {
+    const parts = xff.split(',').map((s) => s.trim()).filter(Boolean);
+    if (parts.length > 0) return parts[parts.length - 1];
+  }
+  return 'unknown-ip';
+}
+
+function isRateLimited(key: string): boolean {
   const now = Date.now();
-  const entry = rateLimitMap.get(ip);
+  const entry = rateLimitMap.get(key);
 
-  // Limpeza de entradas expiradas periodicamente
-  if (rateLimitMap.size > 5000) {
-    for (const [key, val] of rateLimitMap.entries()) {
-      if (val.resetAt < now) {
-        rateLimitMap.delete(key);
+  if (entry && entry.resetAt >= now) {
+    if (entry.count >= MAX_REQUESTS_PER_WINDOW) return true;
+    entry.count++;
+    return false;
+  }
+
+  if (entry) rateLimitMap.delete(key);
+
+  if (rateLimitMap.size >= MAX_MAP_ENTRIES) {
+    let evicted = 0;
+    for (const [k, val] of rateLimitMap.entries()) {
+      if (val.resetAt < now || evicted < 250) {
+        rateLimitMap.delete(k);
+        evicted++;
+        if (rateLimitMap.size < MAX_MAP_ENTRIES - 250) break;
       }
     }
   }
 
-  if (!entry || entry.resetAt < now) {
-    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
-    return false;
-  }
-
-  if (entry.count >= MAX_REQUESTS_PER_WINDOW) {
-    return true;
-  }
-
-  entry.count++;
+  rateLimitMap.set(key, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
   return false;
 }
 
-
-// Cota de Visitante Stateless com Cookie Assinado HMAC-SHA256 (Imune a reinicialização de lambdas Vercel)
+// Cota de Visitante Stateless com Cookie Assinado HMAC-SHA256 (validação constant-time)
 interface GuestQuotaPayload {
   date: string;
   ids: string[];
@@ -90,7 +96,9 @@ function parseAndVerifyGuestQuotaCookie(cookieValue?: string | null): { date: st
       .update(payloadB64)
       .digest('base64url');
 
-    if (signature !== expectedSignature) {
+    const sigBuf = Buffer.from(signature, 'utf8');
+    const expBuf = Buffer.from(expectedSignature, 'utf8');
+    if (sigBuf.byteLength !== expBuf.byteLength || !crypto.timingSafeEqual(sigBuf, expBuf)) {
       return { date: todayStr, questionIds: new Set<string>() };
     }
 
@@ -101,7 +109,7 @@ function parseAndVerifyGuestQuotaCookie(cookieValue?: string | null): { date: st
       return { date: todayStr, questionIds: new Set<string>() };
     }
 
-    return { date: todayStr, questionIds: new Set(parsed.ids) };
+    return { date: todayStr, questionIds: new Set(parsed.ids.slice(0, 50)) };
   } catch {
     return { date: todayStr, questionIds: new Set<string>() };
   }
@@ -111,7 +119,7 @@ function createSignedGuestQuotaCookie(questionIds: Set<string>): string {
   const todayStr = new Date().toISOString().slice(0, 10);
   const payload: GuestQuotaPayload = {
     date: todayStr,
-    ids: Array.from(questionIds)
+    ids: Array.from(questionIds).slice(0, 50)
   };
   const payloadB64 = Buffer.from(JSON.stringify(payload)).toString('base64url');
   const signature = crypto
@@ -121,7 +129,6 @@ function createSignedGuestQuotaCookie(questionIds: Set<string>): string {
   return `${payloadB64}.${signature}`;
 }
 
-// Rastreamento de cota diária de visitantes por IP contra evasão de login em aba anônima
 interface GuestDailyQuota {
   date: string;
   questionIds: Set<string>;
@@ -133,18 +140,14 @@ function checkGuestQuota(clientIp: string, questionId: string): { limitReached: 
   let entry = guestDailyQuotaMap.get(clientIp);
 
   if (!entry || entry.date !== todayStr) {
+    if (guestDailyQuotaMap.size >= MAX_MAP_ENTRIES) {
+      const oldestKey = guestDailyQuotaMap.keys().next().value;
+      if (oldestKey) guestDailyQuotaMap.delete(oldestKey);
+    }
     entry = { date: todayStr, questionIds: new Set<string>() };
     guestDailyQuotaMap.set(clientIp, entry);
   }
 
-  // Limpeza preventiva de IPs antigos se mapa crescer
-  if (guestDailyQuotaMap.size > 10000) {
-    for (const [k, v] of guestDailyQuotaMap.entries()) {
-      if (v.date !== todayStr) guestDailyQuotaMap.delete(k);
-    }
-  }
-
-  // Se já respondeu esta questão hoje, permite rever/re-tentar
   if (entry.questionIds.has(questionId)) {
     return { limitReached: false, count: entry.questionIds.size };
   }
@@ -166,7 +169,6 @@ function recordGuestSolve(clientIp: string, questionId: string) {
   entry.questionIds.add(questionId);
 }
 
-// Cache em memória no Serverless Edge com TTL de 30 minutos para gabaritos
 interface CachedQuestionData {
   id: string;
   code: string;
@@ -188,13 +190,9 @@ const CACHE_TTL_MS = 30 * 60 * 1000;
 
 export async function POST(req: NextRequest) {
   try {
-    // 1. Verificação de Rate Limit por IP contra raspagem
-    const clientIp =
-      req.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
-      req.headers.get('x-real-ip') ||
-      'unknown-ip';
+    const clientIp = extractClientIp(req);
 
-    if (isRateLimited(clientIp)) {
+    if (isRateLimited(`ip_${clientIp}`)) {
       return NextResponse.json(
         {
           success: false,
@@ -218,7 +216,7 @@ export async function POST(req: NextRequest) {
       statusRetrial
     } = body;
 
-    // 2. Validação estrita do ID
+    // 1. Validação estrita do ID da questão
     if (!questionId || !validateQuestionId(questionId)) {
       return NextResponse.json(
         { success: false, error: 'ID de questão inválido ou ausente.' },
@@ -226,99 +224,140 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 3. Validação da alternativa se informada
-    if (selectedOption !== undefined && selectedOption !== null && selectedOption !== '') {
-      if (!validateAnswerOption(selectedOption)) {
-        return NextResponse.json(
-          { success: false, error: 'Alternativa informada inválida.' },
-          { status: 400 }
-        );
+    // 2. Validação obrigatória de alternativa A-E em confirmações reais (impede bypass de débito na cota!)
+    const studentChoice = typeof selectedOption === 'string' ? selectedOption.trim().toUpperCase() : '';
+    if (!VALID_STUDENT_CHOICES.has(studentChoice)) {
+      return NextResponse.json(
+        { success: false, error: 'Selecione uma alternativa válida (A a E) para resolver a questão.' },
+        { status: 400 }
+      );
+    }
+
+    // 3. Verificação de Identidade (Bearer Token ou Cookies SSR) ANTES de qualquer acesso a gabaritos
+    let authenticatedUser: { id: string; appRole?: string } | null = null;
+    const supabaseAdmin = getSupabaseAdmin();
+
+    const authHeader = req.headers.get('authorization');
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      const token = authHeader.substring(7).trim();
+      if (token.length > 20) {
+        const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
+        if (authUser) {
+          authenticatedUser = { id: authUser.id, appRole: authUser.app_metadata?.role as string | undefined };
+        }
       }
     }
 
-    const now = Date.now();
-    let row: CachedQuestionData | {
-      id: string;
-      code?: string;
-      correct_answer?: string;
-      is_anulada?: boolean;
-      commentary?: string;
-      options?: unknown[];
-      especialidade?: string | null;
-      tema?: string | null;
-      foco?: string | null;
-      subfoco?: string | null;
-      difficulty?: string | null;
-      banca?: string | null;
-      year?: number | null;
-    } | null = null;
+    if (!authenticatedUser) {
+      try {
+        const supabaseServer = await createSupabaseServerClient();
+        const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
+        if (cookieUser) {
+          authenticatedUser = { id: cookieUser.id, appRole: cookieUser.app_metadata?.role as string | undefined };
+        }
+      } catch {
+        // visitante não autenticado
+      }
+    }
 
-    // 4. Cache em memória ultra-rápido (0ms)
+    if (authenticatedUser && isRateLimited(`user_${authenticatedUser.id}`)) {
+      return NextResponse.json(
+        { success: false, error: 'Cadência de resolução acima do limite permitido. Aguarde alguns segundos.' },
+        { status: 429, headers: { 'Retry-After': '15' } }
+      );
+    }
+
+    const now = Date.now();
+
+    // 4. Verificação de Plano e Elegibilidade (CRÍTICO: executado ANTES do fast-path isPrefetch!)
+    let isUnlimitedPlan = false;
+    if (authenticatedUser) {
+      if (isPrivilegedRole(authenticatedUser.appRole)) {
+        isUnlimitedPlan = true;
+      } else {
+        const { data: profile } = await supabaseAdmin
+          .from('profiles')
+          .select('role, subscription_plan, subscription_status, subscription_expires_at')
+          .eq('id', authenticatedUser.id)
+          .maybeSingle();
+
+        const isAdminOrCurator = isPrivilegedRole(profile?.role);
+        const plan = (profile?.subscription_plan || 'free').toLowerCase();
+        const status = profile?.subscription_status || 'inactive';
+        const expiresAt = profile?.subscription_expires_at ? new Date(profile.subscription_expires_at).getTime() : null;
+        // Exige data de expiração válida no futuro para planos pagos (ou admin/curador isento)
+        const isNotExpired = expiresAt !== null ? expiresAt > now : false;
+        const isProOrPremium = Boolean((plan === 'pro' || plan === 'premium') && status === 'active' && isNotExpired);
+
+        isUnlimitedPlan = isAdminOrCurator || isProOrPremium;
+      }
+    }
+
+    // 4.1 Blindagem Anti-Scraping & Paywall: isPrefetch é exclusivo para assinantes Pro/Premium ativos!
+    // Visitantes e contas Gratuitas resolvem normalmente ao clicar em "Resolver" (com contabilização na cota diária).
+    if (isPrefetch && !isUnlimitedPlan) {
+      return NextResponse.json(
+        {
+          success: false,
+          requiresConfirmation: true,
+          error: 'Confirme a resposta no botão Resolver para liberar o gabarito.'
+        },
+        { status: 200 }
+      );
+    }
+
+    // 5. Carrega questão (cache em memória com limite FIFO)
+    let row: CachedQuestionData | null = null;
     const cached = questionCache.get(questionId);
     if (cached && now - cached.cachedAt < CACHE_TTL_MS) {
       row = cached;
     } else {
-      const supabaseAdmin = getSupabaseAdmin();
-      const { data, error } = await supabaseAdmin
-        .from('questions')
-        .select('id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year')
-        .eq('id', questionId)
-        .maybeSingle();
+      const found = await findCanonicalQuestionByIdOrCode<{
+        id: string;
+        code?: string;
+        correct_answer?: string;
+        is_anulada?: boolean;
+        commentary?: string;
+        options?: unknown[];
+        especialidade?: string | null;
+        tema?: string | null;
+        foco?: string | null;
+        subfoco?: string | null;
+        difficulty?: string | null;
+        banca?: string | null;
+        year?: number | null;
+      }>(
+        supabaseAdmin,
+        questionId,
+        'id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year'
+      );
 
-      if (!data && !error) {
-        const byCodeRes = await supabaseAdmin
-          .from('questions')
-          .select('id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year')
-          .eq('code', questionId)
-          .maybeSingle();
-        if (byCodeRes.error) {
-          console.error('[API Solve] Erro ao consultar questão por código:', byCodeRes.error);
+      if (found.row) {
+        if (questionCache.size >= MAX_MAP_ENTRIES) {
+          const oldestKey = questionCache.keys().next().value;
+          if (oldestKey) questionCache.delete(oldestKey);
         }
-        row = byCodeRes.data;
-      } else {
-        row = data;
-      }
-
-      if (!row && !error) {
-        for (const tbl of ['questions_direto', 'questions_revalida', 'questions_rplus', 'questions_titulo', 'questions_expansion_direto', 'questions_revalida_base', 'questions_expansion_revalida']) {
-          const res = await supabaseAdmin
-            .from(tbl)
-            .select('id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year')
-            .or(`id.eq.${questionId},code.eq.${questionId}`)
-            .maybeSingle();
-          if (res.data) {
-            row = res.data;
-            break;
-          }
-        }
-      }
-
-      if (error) {
-        console.error('[API Solve] Erro ao consultar questão:', error);
-        return NextResponse.json({ success: false, error: 'Erro no banco de dados.' }, { status: 500 });
-      }
-
-      if (row) {
         const cacheEntry: CachedQuestionData = {
-          id: row.id,
-          code: row.code || '',
-          correct_answer: row.correct_answer || '',
-          is_anulada: Boolean(row.is_anulada),
-          commentary: row.commentary || '',
-          options: Array.isArray(row.options) ? row.options : [],
-          especialidade: row.especialidade || null,
-          tema: row.tema || null,
-          foco: row.foco || null,
-          subfoco: row.subfoco || null,
-          difficulty: row.difficulty || null,
-          banca: row.banca || null,
-          year: row.year ? Number(row.year) : null,
+          id: found.row.id,
+          code: found.row.code || '',
+          correct_answer: found.row.correct_answer || '',
+          is_anulada: Boolean(found.row.is_anulada),
+          commentary: found.row.commentary || '',
+          options: Array.isArray(found.row.options) ? found.row.options : [],
+          especialidade: found.row.especialidade || null,
+          tema: found.row.tema || null,
+          foco: found.row.foco || null,
+          subfoco: found.row.subfoco || null,
+          difficulty: found.row.difficulty || null,
+          banca: found.row.banca || null,
+          year: found.row.year ? Number(found.row.year) : null,
           cachedAt: now
         };
-        questionCache.set(row.id, cacheEntry);
-        if (row.code) {
-          questionCache.set(row.code, cacheEntry);
+        questionCache.set(found.row.id, cacheEntry);
+        if (found.row.code) {
+          questionCache.set(found.row.code, cacheEntry);
         }
+        row = cacheEntry;
       }
     }
 
@@ -331,37 +370,9 @@ export async function POST(req: NextRequest) {
 
     const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
     const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
-    const isCorrect = isAnulada ? true : (goldAnswer ? selectedOption.toUpperCase() === goldAnswer : false);
+    const isCorrect = isAnulada ? true : (goldAnswer ? studentChoice === goldAnswer : false);
 
-    // 5. Verificação de Identidade (Bearer Token ou Cookies SSR)
-    let authenticatedUser: { id: string } | null = null;
-    const supabaseAdmin = getSupabaseAdmin();
-
-    // 5.1 Identificar usuário autenticado via Bearer Token (Header)
-    const authHeader = req.headers.get('authorization');
-    if (authHeader && authHeader.startsWith('Bearer ')) {
-      const token = authHeader.substring(7);
-      const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
-      if (authUser) {
-        authenticatedUser = { id: authUser.id };
-      }
-    }
-
-    // 5.2 Se não encontrou no header, verifica cookies de sessão
-    if (!authenticatedUser) {
-      try {
-        const supabaseServer = await createSupabaseServerClient();
-        const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
-        if (cookieUser) {
-          authenticatedUser = { id: cookieUser.id };
-        }
-      } catch {
-        // Sem cookies de sessão
-      }
-    }
-
-    // 5.3 Para visitantes anônimos (sem login): aplica a cota estrita de 10 questões/dia
-    // Bloqueia qualquer raspagem acelerada disfarçada de prefetch
+    // 6. Cota diária estrita de 10 questões/dia para visitantes e plano Gratuito
     if (!authenticatedUser) {
       const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
       const guestCheck = checkGuestQuota(clientIp, row.id);
@@ -379,20 +390,59 @@ export async function POST(req: NextRequest) {
           { status: 403 }
         );
       }
+    } else if (!isUnlimitedPlan) {
+      const startOfDay = new Date();
+      startOfDay.setUTCHours(0, 0, 0, 0);
+      const startIso = startOfDay.toISOString();
+
+      const { count } = await supabaseAdmin
+        .from('user_answers')
+        .select('question_id', { count: 'exact', head: true })
+        .eq('user_id', authenticatedUser.id)
+        .gte('answered_at', startIso);
+
+      const dailyCount = count || 0;
+
+      if (dailyCount >= 10) {
+        const { data: alreadySolvedToday } = await supabaseAdmin
+          .from('user_answers')
+          .select('question_id')
+          .eq('user_id', authenticatedUser.id)
+          .eq('question_id', row.id)
+          .gte('answered_at', startIso)
+          .maybeSingle();
+
+        if (!alreadySolvedToday) {
+          return NextResponse.json(
+            {
+              success: false,
+              limitReached: true,
+              error: 'Limite diário de 10 questões atingido no plano Gratuito. Faça upgrade para o Pro para continuar resolvendo sem limites.',
+              dailyResolvedCount: dailyCount
+            },
+            { status: 403 }
+          );
+        }
+      }
     }
 
-    // Fast-Path Instantâneo para Prefetch (< 25ms):
-    // Entrega o gabarito instantaneamente aos alunos legítimos (0ms na UI) e visitantes dentro da cota
-    if (isPrefetch) {
-      const watermarkId = authenticatedUser?.id || clientIp || 'prefetch';
-      const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(row.commentary || ''), watermarkId);
-      const rawOpts = Array.isArray(row.options) ? row.options : [];
+    // 7. Fast-Path Instantâneo de Prefetch (exclusivo para assinantes Pro/Premium/Admin já validados acima)
+    if (isPrefetch && authenticatedUser) {
+      const watermarkId = authenticatedUser.id;
+      const unpacked = unpackStructuredCommentary(row.commentary || '', Array.isArray(row.options) ? row.options : []);
+      const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(unpacked.commentary), watermarkId);
+      const rawOpts = unpacked.options;
       const watermarkedOpts = rawOpts.map((opt: unknown) => {
-        if (opt && typeof opt === 'object' && 'justification' in opt) {
-          const optObj = opt as { justification?: string; [key: string]: unknown };
+        if (opt && typeof opt === 'object' && ('justification' in opt || 'explanation' in opt)) {
+          const optObj = opt as { justification?: string; explanation?: string; [key: string]: unknown };
+          const wmJust = injectZeroWidthWatermark(
+            sanitizeMedicalText(optObj.justification || optObj.explanation || ''),
+            watermarkId
+          );
           return {
             ...optObj,
-            justification: injectZeroWidthWatermark(sanitizeMedicalText(optObj.justification || (optObj as any).explanation || ''), watermarkId)
+            explanation: wmJust,
+            justification: wmJust
           };
         }
         return opt;
@@ -410,147 +460,96 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    // 5.3 Validação de plano e contagem diária no Supabase (apenas em confirmação oficial, prefetch não bloqueia nem debita)
-    if (!isPrefetch && authenticatedUser) {
-      const { data: profile } = await supabaseAdmin
-        .from('profiles')
-        .select('role, subscription_plan, subscription_status, subscription_expires_at')
-        .eq('id', authenticatedUser.id)
-        .maybeSingle();
-
-      const userRole = (profile?.role || '').toLowerCase();
-      const isAdminOrCurator = Boolean(
-        userRole === 'admin' ||
-        userRole === 'curator' ||
-        userRole === 'curador' ||
-        userRole === 'superadmin'
-      );
-
-      const plan = (profile?.subscription_plan || 'free').toLowerCase();
-      const status = profile?.subscription_status || 'inactive';
-      const expiresAt = profile?.subscription_expires_at ? new Date(profile.subscription_expires_at).getTime() : null;
-      const isNotExpired = expiresAt === null || expiresAt > now;
-      const isProOrPremium = Boolean((plan === 'pro' || plan === 'premium') && status === 'active' && isNotExpired);
-
-      const isUnlimitedPlan = isAdminOrCurator || isProOrPremium;
-
-      // Se for plano gratuito, verifica o limite estrito de 10 questões/dia
-      if (!isUnlimitedPlan) {
-        const startOfDay = new Date();
-        startOfDay.setUTCHours(0, 0, 0, 0);
-        const startIso = startOfDay.toISOString();
-
-        const { count, error: countErr } = await supabaseAdmin
-          .from('user_answers')
-          .select('question_id', { count: 'exact', head: true })
-          .eq('user_id', authenticatedUser.id)
-          .gte('answered_at', startIso);
-
-        const dailyCount = count || 0;
-
-        if (dailyCount >= 10) {
-          // Checa se esta questão específica já foi respondida hoje pelo usuário (permite rever/re-tentar)
-          const { data: alreadySolvedToday } = await supabaseAdmin
-            .from('user_answers')
-            .select('question_id')
-            .eq('user_id', authenticatedUser.id)
-            .eq('question_id', row.id)
-            .gte('answered_at', startIso)
-            .maybeSingle();
-
-          if (!alreadySolvedToday) {
-            return NextResponse.json(
-              {
-                success: false,
-                limitReached: true,
-                error: 'Limite diário de 10 questões atingido no plano Gratuito. Faça upgrade para o Pro para continuar resolvendo sem limites.',
-                dailyResolvedCount: dailyCount
-              },
-              { status: 403 }
-            );
-          }
-        }
-      }
-    }
-
-    // 6. Confirmação da escolha do aluno
-    const studentChoice = typeof selectedOption === 'string' ? selectedOption.trim().toUpperCase() : '';
-
     const serverNow = new Date().toISOString();
 
-    // 7. Sincronização em background com metadados clínicos completos (apenas em confirmação oficial, NUNCA no prefetch)
-    if (!isPrefetch && studentChoice && row.id) {
-      if (authenticatedUser) {
-        const targetUserId = authenticatedUser.id;
-        const targetQuestionId = row.id;
-        const targetChoice = studentChoice;
-        const targetIsCorrect = isCorrect;
-        const finalStatusRetrial = statusRetrial || (targetIsCorrect ? 'recuperado' : 'pendente');
+    // 8. Persistência obrigatória na confirmação oficial (garante contabilização da cota e métricas TRI)
+    if (authenticatedUser) {
+      const targetUserId = authenticatedUser.id;
+      const targetQuestionId = row.id;
+      const finalStatusRetrial =
+        typeof statusRetrial === 'string' ? statusRetrial.slice(0, 32) : (isCorrect ? 'recuperado' : 'pendente');
 
-        // Persistência com await garantido: previne congelamento prematuro de lambdas na Vercel
-        try {
-          // Reconciliação Monotônica de Tentativas: busca tentativas anteriores para não apagar histórico
-          let finalAttempts = Array.isArray(attempts) && attempts.length > 0
-            ? attempts
-            : [{ letter: targetChoice, isCorrect: targetIsCorrect, timestamp: Date.now() }];
+      try {
+        let finalAttempts = Array.isArray(attempts) && attempts.length > 0
+          ? attempts.slice(-20).map((att: unknown) => {
+              const a = (att && typeof att === 'object' ? att : {}) as { letter?: string; timestamp?: number };
+              const l = typeof a.letter === 'string' && VALID_STUDENT_CHOICES.has(a.letter.toUpperCase())
+                ? a.letter.toUpperCase()
+                : studentChoice;
+              return {
+                letter: l,
+                isCorrect: isAnulada ? true : (goldAnswer ? l === goldAnswer : false),
+                timestamp: typeof a.timestamp === 'number' ? a.timestamp : Date.now()
+              };
+            })
+          : [{ letter: studentChoice, isCorrect, timestamp: Date.now() }];
 
-          const { data: existingRow } = await supabaseAdmin
-            .from('user_answers')
-            .select('attempts')
-            .eq('user_id', targetUserId)
-            .eq('question_id', targetQuestionId)
-            .maybeSingle();
+        const { data: existingRow } = await supabaseAdmin
+          .from('user_answers')
+          .select('attempts')
+          .eq('user_id', targetUserId)
+          .eq('question_id', targetQuestionId)
+          .maybeSingle();
 
-          if (existingRow && Array.isArray(existingRow.attempts) && existingRow.attempts.length > 0) {
-            const combinedMap = new Map<string, any>();
-            for (const att of existingRow.attempts) {
-              if (att && att.timestamp) combinedMap.set(`${att.timestamp}_${att.letter}`, att);
+        if (existingRow && Array.isArray(existingRow.attempts) && existingRow.attempts.length > 0) {
+          const combinedMap = new Map<string, { letter: string; isCorrect: boolean; timestamp: number }>();
+          for (const att of existingRow.attempts as Array<{ letter?: string; isCorrect?: boolean; timestamp?: number }>) {
+            if (att && att.timestamp && att.letter) {
+              combinedMap.set(`${att.timestamp}_${att.letter}`, {
+                letter: att.letter,
+                isCorrect: Boolean(att.isCorrect),
+                timestamp: att.timestamp
+              });
             }
-            for (const att of finalAttempts) {
-              if (att && att.timestamp) combinedMap.set(`${att.timestamp}_${att.letter}`, att);
-            }
-            finalAttempts = Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp);
           }
-
-          await supabaseAdmin.from('user_answers').upsert(
-            {
-              user_id: targetUserId,
-              question_id: targetQuestionId,
-              selected_option: targetChoice,
-              is_correct: targetIsCorrect,
-              answered_at: serverNow,
-              specialty: row.especialidade || 'Clínica Médica',
-              tema: row.tema || 'Geral',
-              foco: row.foco || null,
-              subfoco: row.subfoco || null,
-              difficulty: row.difficulty || 'Médio',
-              banca: row.banca || 'Geral',
-              year: row.year ? Number(row.year) : 2024,
-              attempts: finalAttempts,
-              student_notes: studentNotes || null,
-              error_reason: errorReason || null,
-              status_retrial: finalStatusRetrial
-            },
-            { onConflict: 'user_id,question_id' }
-          );
-        } catch (authSyncErr) {
-          console.warn('[API Solve] Erro ao persistir resposta no banco:', authSyncErr);
+          for (const att of finalAttempts) {
+            combinedMap.set(`${att.timestamp}_${att.letter}`, att);
+          }
+          finalAttempts = Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp).slice(-30);
         }
-      } else {
-        recordGuestSolve(clientIp, row.id);
+
+        await supabaseAdmin.from('user_answers').upsert(
+          {
+            user_id: targetUserId,
+            question_id: targetQuestionId,
+            selected_option: studentChoice,
+            is_correct: isCorrect,
+            answered_at: serverNow,
+            specialty: row.especialidade || 'Clínica Médica',
+            tema: row.tema || 'Geral',
+            foco: row.foco || null,
+            subfoco: row.subfoco || null,
+            difficulty: row.difficulty || 'Médio',
+            banca: row.banca || 'Geral',
+            year: row.year ? Number(row.year) : 2024,
+            attempts: finalAttempts,
+            student_notes: typeof studentNotes === 'string' ? studentNotes.slice(0, 4000) : null,
+            error_reason: typeof errorReason === 'string' ? errorReason.slice(0, 120) : null,
+            status_retrial: finalStatusRetrial
+          },
+          { onConflict: 'user_id,question_id' }
+        );
+      } catch (authSyncErr) {
+        console.warn('[API Solve] Erro ao persistir resposta no banco:', authSyncErr);
       }
+    } else {
+      recordGuestSolve(clientIp, row.id);
     }
 
-    // Resposta imediata em poucos milissegundos com marca d'água forense invisível (Fase 3)
+    // 9. Resposta com marca d'água esteganográfica forense preservada
     const watermarkId = authenticatedUser?.id || clientIp;
-    const watermarkedCommentary = injectZeroWidthWatermark(row.commentary || '', watermarkId);
-    const rawOpts = Array.isArray(row.options) ? row.options : [];
+    const unpacked = unpackStructuredCommentary(row.commentary || '', Array.isArray(row.options) ? row.options : []);
+    const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(unpacked.commentary), watermarkId);
+    const rawOpts = unpacked.options;
     const watermarkedOpts = rawOpts.map((opt: unknown) => {
-      if (opt && typeof opt === 'object' && 'justification' in opt) {
-        const optObj = opt as { justification?: string; [key: string]: unknown };
+      if (opt && typeof opt === 'object' && ('justification' in opt || 'explanation' in opt)) {
+        const optObj = opt as { justification?: string; explanation?: string; [key: string]: unknown };
+        const cleanJustification = sanitizeMedicalText(optObj.justification || optObj.explanation || '');
+        const wmJust = injectZeroWidthWatermark(cleanJustification, watermarkId);
         return {
           ...optObj,
-          justification: injectZeroWidthWatermark(optObj.justification || '', watermarkId)
+          explanation: wmJust,
+          justification: wmJust
         };
       }
       return opt;
@@ -558,7 +557,7 @@ export async function POST(req: NextRequest) {
 
     const responseObj = NextResponse.json({
       success: true,
-      isPrefetch: Boolean(isPrefetch),
+      isPrefetch: false,
       answeredAt: serverNow,
       limitReached: false,
       questionId: row.id,
@@ -569,8 +568,7 @@ export async function POST(req: NextRequest) {
       options: watermarkedOpts
     });
 
-    // Se for confirmação oficial de visitante, atualiza o cookie assinado inviolável
-    if (!authenticatedUser && !isPrefetch && row.id) {
+    if (!authenticatedUser && row.id) {
       const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
       guestQuota.questionIds.add(row.id);
       const signedCookie = createSignedGuestQuotaCookie(guestQuota.questionIds);

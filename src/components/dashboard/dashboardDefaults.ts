@@ -62,7 +62,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 12,
     minColSpan: 3,
     minHeight: 65,
-    maxHeight: 340,
+    maxHeight: 1200,
     order: 5,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }

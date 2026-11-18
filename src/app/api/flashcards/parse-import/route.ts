@@ -1,12 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { parseUniversalFlashcardFile } from '@/lib/flashcards/ankiPackageParser';
 import { FlashcardImportFormat } from '@/types/flashcards';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
   try {
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { success: false, error: 'Faça login na plataforma para importar baralhos de flashcards.' },
+        { status: 401 }
+      );
+    }
+
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
     const format = ((formData.get('format') as string) || 'auto') as FlashcardImportFormat;

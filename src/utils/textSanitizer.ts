@@ -12,12 +12,97 @@ import React from 'react';
  * - Operadores de digitação informais (>=, <=, ->, +/-)
  * - Unidades físicas e gases arteriais sem sub/sobrescrito (kg/m2, cm3, PaO2)
  */
+const FORENSIC_WATERMARK_REGEX = /\u200D\uFEFF[\u200B\u200C]+\uFEFF\u200D/;
+
+export interface UnpackedCommentaryOption {
+  letter?: string;
+  text?: string;
+  explanation?: string;
+  justification?: string;
+  [key: string]: unknown;
+}
+
+/**
+ * Desempacota comentários legados armazenados como JSON bruto
+ * (`{"_id": "...", "statementComment": "...", "alternativesComments": [...]}`)
+ * em comentário limpo do enunciado + justificativas individuais por alternativa.
+ */
+export function unpackStructuredCommentary(
+  rawCommentary: string | null | undefined,
+  rawOptions?: unknown[] | null
+): { commentary: string; options: unknown[] } {
+  const safeOptions = Array.isArray(rawOptions) ? rawOptions : [];
+  if (!rawCommentary || typeof rawCommentary !== 'string') {
+    return { commentary: '', options: safeOptions };
+  }
+
+  const trimmed = rawCommentary.trim();
+  if (trimmed.startsWith('{') && trimmed.includes('"statementComment"')) {
+    try {
+      const parsed = JSON.parse(trimmed) as {
+        statementComment?: unknown;
+        alternativesComments?: unknown;
+      };
+      const stmtComment =
+        typeof parsed.statementComment === 'string' ? parsed.statementComment : '';
+      const altComments = Array.isArray(parsed.alternativesComments)
+        ? parsed.alternativesComments
+        : [];
+
+      const enrichedOptions = safeOptions.map((opt, idx) => {
+        if (!opt || typeof opt !== 'object') return opt;
+        const optObj = opt as UnpackedCommentaryOption;
+        const existingExpl =
+          (typeof optObj.explanation === 'string' && optObj.explanation.trim()) ||
+          (typeof optObj.justification === 'string' && optObj.justification.trim());
+        if (existingExpl) return optObj;
+
+        const rawAltComm = altComments[idx];
+        if (typeof rawAltComm === 'string' && rawAltComm.trim()) {
+          const strippedPrefix = rawAltComm
+            .trim()
+            .replace(/^[A-Ea-e]\s*\)\s*/, '');
+          return {
+            ...optObj,
+            explanation: strippedPrefix
+          };
+        }
+        return optObj;
+      });
+
+      return {
+        commentary: stmtComment,
+        options: enrichedOptions
+      };
+    } catch {
+      // Se JSON estiver truncado, segue fluxo normal de sanitização
+    }
+  }
+
+  return { commentary: rawCommentary, options: safeOptions };
+}
+
 export function sanitizeMedicalText(rawText: string | null | undefined): string {
   if (!rawText || typeof rawText !== 'string') return '';
 
-  let text = rawText;
+  // Preserva marca d'água forense invisível (\u200D\uFEFF...\uFEFF\u200D) contra remoção acidental no cliente
+  const existingWatermark = rawText.match(FORENSIC_WATERMARK_REGEX)?.[0] || '';
+  let text = existingWatermark ? rawText.replace(FORENSIC_WATERMARK_REGEX, '') : rawText;
 
-  // 1. Eliminação cirúrgica imediata de caracteres invisíveis e controle zero-width
+  // 0. Desempacotar JSON legado {"_id":..., "statementComment":...} caso invocado diretamente
+  const trimmedCandidate = text.trim();
+  if (trimmedCandidate.startsWith('{') && trimmedCandidate.includes('"statementComment"')) {
+    try {
+      const parsed = JSON.parse(trimmedCandidate) as { statementComment?: unknown };
+      if (typeof parsed.statementComment === 'string') {
+        text = parsed.statementComment;
+      }
+    } catch {
+      // Fallback seguro
+    }
+  }
+
+  // 1. Eliminação cirúrgica imediata de caracteres invisíveis e controle zero-width avulsos
   // (\u200B ZWSP, \u200C ZWNJ, \u200D ZWJ, \uFEFF BOM, \u2060 Word Joiner)
   text = text.replace(/[\u200B-\u200D\uFEFF\u2060]/g, '');
 
@@ -78,10 +163,13 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
     .replace(/\d+\.\s*[A-Za-zÀ-ÿ\s]+-\s*Parte\s+[IVX]+/gi, '')
     .replace(/Fala,\s*Estrategista!?\s*/gi, '')
     .replace(/Caro\s*estrategista,?\s*/gi, '')
-    .replace(/Estrategista,?\s*/gi, '')
-    .replace(/estrat[ée]gia\s*med/gi, 'Base Médica Teórica')
-    .replace(/estrat[ée]gia\s*vestibulares/gi, 'Base Teórica')
-    .replace(/estrat[ée]gia/gi, 'Literatura Oficial');
+    .replace(/Olá,?\s*estrategista!?\s*/gi, '')
+    .replace(/\bEstrategista,?\s*/gi, '')
+    .replace(/^Olá,?\s*estudante!?\s*/i, '')
+    .replace(/\bestrat[ée]gia\s*med\b|\bestrategiamed\b/gi, 'Base Médica Teórica')
+    .replace(/\bestrat[ée]gia\s*(?:vestibulares|concursos|militares)\b/gi, 'Base Teórica')
+    .replace(/\(\s*ProvaDeResidencia\s*\)|\bProvaDeResidencia\b/gi, '')
+    .replace(/\bnão\s+houveram\s+(atualizações|mudanças|alterações)\b/gi, 'Não houve $1');
 
   // 7. Remover Resíduos de IA / Prompts / Templates
   text = text
@@ -97,7 +185,7 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<(?:strong|b)\b[^>]*>([\s\S]*?)<\/(?:strong|b)>/gi, '**$1**')
     .replace(/<(?:em|i)\b[^>]*>([\s\S]*?)<\/(?:em|i)>/gi, '*$1*')
-    .replace(/<[^>]+>/g, ''); // Expurga todas as outras tags HTML (<span...>, <font...>, etc.)
+    .replace(/<\/?[a-zA-Z!][^>]*>/g, ''); // Expurga todas as outras tags HTML (<span...>, <font...>, etc.) sem comer operadores <= / ->
 
   // 9. Converter Códigos LaTeX e Delimitadores Matemáticos Comuns
   text = text
@@ -121,9 +209,10 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
     .replace(/\$Fe\^\{3\+\}\$|Fe\^\{3\+\}/g, 'Fe³⁺')
     .replace(/\$Fe\^\{2\+\}\$|Fe\^\{2\+\}/g, 'Fe²⁺')
     .replace(/\$I_f\$|I_f\b/g, 'If')
+    .replace(/\^\s*\{\s*\\circ\s*\}|\^\s*\\circ/g, '°')
     .replace(/\\text\{([^}]+)\}/g, '$1')
-    // Cifrões isolados ao redor de valores simples ($20$, $4 mm$)
-    .replace(/\$([a-zA-Z0-9_\-±≤≥%°/,.\s]+)\$/g, '$1');
+    // Cifrões isolados ao redor de valores simples ($20$, $4 mm$, $≥ 38°C$)
+    .replace(/\$([a-zA-ZÀ-ÿ0-9_\-±≤≥×≈%°/,.\s]+)\$/g, '$1');
 
   // 6. Converter Operadores de Digitação Informais
   text = text
@@ -178,6 +267,10 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
     .replace(/\n{3,}/g, '\n\n')
     .trim();
 
+  if (existingWatermark && text.length > 0) {
+    return text.length > 2 ? text.slice(0, 2) + existingWatermark + text.slice(2) : existingWatermark + text;
+  }
+
   return text;
 }
 
@@ -198,10 +291,15 @@ export function renderFormattedMedicalText(
   let processedText = shouldSanitize ? sanitizeMedicalText(text) : text;
   // Blindagem defensiva: mesmo se desativado o sanitizador geral, nunca expor \u00A0 ou \u200B ao layout
   if (!shouldSanitize) {
-    processedText = processedText
+    const wm = processedText.match(FORENSIC_WATERMARK_REGEX)?.[0] || '';
+    const base = wm ? processedText.replace(FORENSIC_WATERMARK_REGEX, '') : processedText;
+    const cleanedBase = base
       .replace(/\u00A0/g, ' ')
       .replace(/[\u200B-\u200D\uFEFF\u2060]/g, '')
       .replace(/[ \t]{2,}/g, ' ');
+    processedText = wm && cleanedBase.length > 0
+      ? (cleanedBase.length > 2 ? cleanedBase.slice(0, 2) + wm + cleanedBase.slice(2) : wm + cleanedBase)
+      : cleanedBase;
   }
   const boldClass = options?.boldColorClass || 'font-bold text-slate-900 dark:text-white';
 

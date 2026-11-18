@@ -1,12 +1,15 @@
-import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { getSupabaseAdmin, isSupabaseAdminConfigured } from '@/lib/supabase/adminClient';
 import {
   AMBASSADOR_CONFIG,
+  DEFAULT_PRESET_REFERRALS,
   AmbassadorStats,
   ReferralSale,
   AmbassadorWithdrawalRecord,
   normalizeReferralCode,
   computeSaleMaturity
 } from '@/config/ambassadorConfig';
+
+const IS_PROD = process.env.NODE_ENV === 'production';
 
 // Store em memória para fallback caso o banco Postgres não tenha a migration 013 executada ainda
 interface FallbackStore {
@@ -269,9 +272,100 @@ export async function getBackendAmbassadorStats(userId: string, userName?: strin
 }
 
 /**
- * Solicitação de Saque PIX validada pelo backend
+ * Valida no servidor se um cupom de indicação realmente pertence a um embaixador ativo ou campanha oficial,
+ * impedindo cupons inventados e bloqueando auto-indicação (inclusive com códigos customizados).
  */
-// Trava em memória contra race conditions de saque (TOCTOU)
+export async function validateBackendReferralCoupon(
+  couponCode: string,
+  buyerUserId: string,
+  buyerName?: string
+): Promise<{ valid: boolean; discountPercent: number; referrerName?: string; message: string }> {
+  const clean = normalizeReferralCode(couponCode || '');
+  if (!clean || clean.length < 3 || clean.length > 20) {
+    return { valid: false, discountPercent: 0, message: 'Código de indicação inválido.' };
+  }
+
+  // 1. Checa código inicial determinístico e código customizado do próprio comprador (bloqueia auto-indicação)
+  const buyerEffectiveCode = await getOrGenerateUserReferralCode(buyerUserId, buyerName);
+  if (normalizeReferralCode(buyerEffectiveCode) === clean) {
+    return {
+      valid: false,
+      discountPercent: 0,
+      message: 'Você não pode utilizar seu próprio código de indicação na sua própria conta.'
+    };
+  }
+
+  // 2. Verifica nos códigos oficiais de campanha pré-homologados
+  if (DEFAULT_PRESET_REFERRALS[clean]) {
+    return {
+      valid: true,
+      discountPercent: AMBASSADOR_CONFIG.discountPercent,
+      referrerName: DEFAULT_PRESET_REFERRALS[clean],
+      message: `Código válido! ${AMBASSADOR_CONFIG.discountPercent}% de desconto concedido.`
+    };
+  }
+
+  // 3. Verifica na tabela public.profiles se o código pertence a outro estudante real
+  if (isSupabaseAdminConfigured()) {
+    try {
+      const supabase = getSupabaseAdmin();
+      const { data: referrerProfile } = await supabase
+        .from('profiles')
+        .select('id, name, referral_code')
+        .eq('referral_code', clean)
+        .maybeSingle();
+
+      if (referrerProfile) {
+        if (referrerProfile.id === buyerUserId) {
+          return {
+            valid: false,
+            discountPercent: 0,
+            message: 'Você não pode utilizar seu próprio código de indicação na sua própria conta.'
+          };
+        }
+        return {
+          valid: true,
+          discountPercent: AMBASSADOR_CONFIG.discountPercent,
+          referrerName: referrerProfile.name || 'Estudante Embaixador',
+          message: `Código ${clean} validado com sucesso!`
+        };
+      }
+    } catch (err) {
+      console.warn('[AmbassadorService] Erro ao validar cupom no banco:', err);
+    }
+  }
+
+  // 4. Em ambiente local de testes (sem banco), consulta memoryFallback
+  if (!IS_PROD) {
+    for (const [uid, storedCode] of Object.entries(memoryFallback.codes)) {
+      if (normalizeReferralCode(storedCode) === clean) {
+        if (uid === buyerUserId) {
+          return {
+            valid: false,
+            discountPercent: 0,
+            message: 'Você não pode utilizar seu próprio código de indicação na sua própria conta.'
+          };
+        }
+        return {
+          valid: true,
+          discountPercent: AMBASSADOR_CONFIG.discountPercent,
+          referrerName: 'Estudante Embaixador',
+          message: `Código ${clean} validado em ambiente de teste.`
+        };
+      }
+    }
+  }
+
+  return {
+    valid: false,
+    discountPercent: 0,
+    message: 'Código de indicação não localizado ou inexistente.'
+  };
+}
+
+/**
+ * Solicitação de Saque PIX validada pelo backend (com serialização local + lock transacional PostgreSQL)
+ */
 const activeWithdrawalLocks = new Set<string>();
 
 export async function requestBackendAmbassadorWithdrawal(
@@ -289,6 +383,66 @@ export async function requestBackendAmbassadorWithdrawal(
   activeWithdrawalLocks.add(userId);
 
   try {
+    const cleanPix = (pixKey || '').trim();
+    if (!cleanPix || cleanPix.length > 140) {
+      return { success: false, message: 'Chave PIX inválida.' };
+    }
+
+    // 1. Caminho Padrão-Ouro Transacional no PostgreSQL (pg_advisory_xact_lock imune a Serverless TOCTOU)
+    if (isSupabaseAdminConfigured()) {
+      try {
+        const supabase = getSupabaseAdmin();
+        const { data: rpcRes, error: rpcErr } = await supabase.rpc('request_ambassador_withdrawal_atomic', {
+          p_user_id: userId,
+          p_amount: amount,
+          p_pix_key: cleanPix,
+          p_pix_key_type: pixKeyType,
+          p_min_sales: AMBASSADOR_CONFIG.minSalesForPixWithdrawal
+        });
+
+        if (!rpcErr && rpcRes && typeof rpcRes === 'object') {
+          const parsed = rpcRes as {
+            success: boolean;
+            message?: string;
+            withdrawal?: AmbassadorWithdrawalRecord;
+          };
+          if (!parsed.success) {
+            return {
+              success: false,
+              message: parsed.message || 'Não foi possível concluir a solicitação de saque.'
+            };
+          }
+          return {
+            success: true,
+            message: `Saque de R$ ${amount.toFixed(2).replace('.', ',')} solicitado com sucesso via PIX (${cleanPix})! O valor será processado e enviado para sua conta bancária.`,
+            withdrawal: parsed.withdrawal
+          };
+        }
+
+        if (IS_PROD) {
+          console.error('[AmbassadorService] Falha na RPC atômica de saque em produção:', rpcErr);
+          return {
+            success: false,
+            message: 'Serviço financeiro temporariamente indisponível. Tente novamente em instantes.'
+          };
+        }
+      } catch (dbErr) {
+        if (IS_PROD) {
+          console.error('[AmbassadorService] Exceção ao processar saque em produção:', dbErr);
+          return {
+            success: false,
+            message: 'Falha ao registrar saque seguro no banco de dados.'
+          };
+        }
+      }
+    } else if (IS_PROD) {
+      return {
+        success: false,
+        message: 'Configuração de banco indisponível para processamento de saques.'
+      };
+    }
+
+    // 2. Caminho exclusivo de desenvolvimento/testes locais offline (memoryFallback serializado por activeWithdrawalLocks)
     const stats = await getBackendAmbassadorStats(userId);
 
     if (stats.validSalesCount < AMBASSADOR_CONFIG.minSalesForPixWithdrawal) {
@@ -308,61 +462,19 @@ export async function requestBackendAmbassadorWithdrawal(
     const withdrawalRecord: AmbassadorWithdrawalRecord = {
       id: 'pix_' + Math.random().toString(36).substring(2, 9),
       amount,
-      pixKey: pixKey.trim(),
+      pixKey: cleanPix,
       pixKeyType,
       requestedAt: new Date().toISOString(),
       status: 'pending'
     };
 
-    try {
-      const supabase = getSupabaseAdmin();
-
-      // Blindagem distribuída contra Race Conditions e Double Spending entre instâncias Serverless
-      const fifteenSecAgo = new Date(Date.now() - 15000).toISOString();
-      const { data: recentPending } = await supabase
-        .from('ambassador_withdrawals')
-        .select('id')
-        .eq('user_id', userId)
-        .eq('status', 'pending')
-        .gte('requested_at', fifteenSecAgo)
-        .limit(1);
-
-      if (recentPending && recentPending.length > 0) {
-        return {
-          success: false,
-          message: 'Uma solicitação de saque já está em processamento para esta conta. Aguarde alguns instantes.'
-        };
-      }
-
-      const { data: inserted, error } = await supabase
-        .from('ambassador_withdrawals')
-        .insert({
-          user_id: userId,
-          amount,
-          pix_key: pixKey.trim(),
-          pix_key_type: pixKeyType,
-          valid_referrals_count: stats.validSalesCount,
-          status: 'pending'
-        })
-        .select()
-        .maybeSingle();
-
-      if (!error && inserted) {
-        withdrawalRecord.id = inserted.id;
-      } else {
-        if (!memoryFallback.withdrawals[userId]) memoryFallback.withdrawals[userId] = [];
-        memoryFallback.withdrawals[userId].unshift(withdrawalRecord);
-      }
-    } catch {
-      if (!memoryFallback.withdrawals[userId]) memoryFallback.withdrawals[userId] = [];
-      memoryFallback.withdrawals[userId].unshift(withdrawalRecord);
-    }
-
-    memoryFallback.pixKeys[userId] = { key: pixKey.trim(), type: pixKeyType };
+    if (!memoryFallback.withdrawals[userId]) memoryFallback.withdrawals[userId] = [];
+    memoryFallback.withdrawals[userId].unshift(withdrawalRecord);
+    memoryFallback.pixKeys[userId] = { key: cleanPix, type: pixKeyType };
 
     return {
       success: true,
-      message: `Saque de R$ ${amount.toFixed(2).replace('.', ',')} solicitado com sucesso via PIX (${pixKey})! O valor será processado e enviado para sua conta bancária.`,
+      message: `Saque de R$ ${amount.toFixed(2).replace('.', ',')} solicitado com sucesso via PIX (${cleanPix})! O valor será processado e enviado para sua conta bancária.`,
       withdrawal: withdrawalRecord
     };
   } finally {
@@ -378,6 +490,13 @@ export async function requestBackendPlanRefund(
 ): Promise<{ success: boolean; message: string }> {
   const stats = await getBackendAmbassadorStats(userId);
 
+  if (stats.planRefundRequested) {
+    return {
+      success: false,
+      message: 'Você já possui uma solicitação de reembolso de embaixador em análise ou aprovada.'
+    };
+  }
+
   if (stats.validSalesCount < AMBASSADOR_CONFIG.minSalesForPlanRefund) {
     return {
       success: false,
@@ -385,18 +504,27 @@ export async function requestBackendPlanRefund(
     };
   }
 
-  try {
-    const supabase = getSupabaseAdmin();
-    await supabase.from('ambassador_refund_requests').insert({
-      user_id: userId,
-      valid_referrals_count: stats.validSalesCount,
-      status: 'pending'
-    });
-  } catch {
-    // ignore
+  if (isSupabaseAdminConfigured()) {
+    try {
+      const supabase = getSupabaseAdmin();
+      const { error } = await supabase.from('ambassador_refund_requests').insert({
+        user_id: userId,
+        valid_referrals_count: stats.validSalesCount,
+        status: 'pending'
+      });
+      if (error && IS_PROD) {
+        return { success: false, message: 'Não foi possível registrar a solicitação de reembolso no momento.' };
+      }
+    } catch {
+      if (IS_PROD) {
+        return { success: false, message: 'Erro ao salvar solicitação de reembolso.' };
+      }
+    }
   }
 
-  memoryFallback.refunds[userId] = true;
+  if (!IS_PROD) {
+    memoryFallback.refunds[userId] = true;
+  }
 
   return {
     success: true,
@@ -409,6 +537,7 @@ export async function requestBackendPlanRefund(
  */
 export async function recordReferralSale(params: {
   couponCode: string;
+  referredUserId?: string;
   orderId?: string;
   studentName: string;
   studentEmail?: string;
@@ -425,37 +554,39 @@ export async function recordReferralSale(params: {
 
   let referrerId: string | null = null;
 
-  try {
-    const supabase = getSupabaseAdmin();
+  if (isSupabaseAdminConfigured()) {
+    try {
+      const supabase = getSupabaseAdmin();
 
-    // Idempotência: Se orderId foi informado, checa se a indicação já foi computada
-    if (params.orderId) {
-      const { data: existingReferral } = await supabase
-        .from('ambassador_referrals')
+      // Idempotência: Se orderId foi informado, checa se a indicação já foi computada
+      if (params.orderId) {
+        const { data: existingReferral } = await supabase
+          .from('ambassador_referrals')
+          .select('id')
+          .eq('order_id', params.orderId)
+          .maybeSingle();
+
+        if (existingReferral) {
+          return { success: true, referralId: existingReferral.id };
+        }
+      }
+
+      const { data: profile } = await supabase
+        .from('profiles')
         .select('id')
-        .eq('order_id', params.orderId)
+        .eq('referral_code', cleanCode)
         .maybeSingle();
 
-      if (existingReferral) {
-        return { success: true, referralId: existingReferral.id };
+      if (profile) {
+        referrerId = profile.id;
       }
+    } catch {
+      // ignore
     }
-
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('id')
-      .eq('referral_code', cleanCode)
-      .maybeSingle();
-
-    if (profile) {
-      referrerId = profile.id;
-    }
-  } catch {
-    // ignore
   }
 
-  // Se não localizou o dono no banco, verifica se algum usuário no memoryFallback tem esse código
-  if (!referrerId) {
+  // Se não localizou o dono no banco e estiver fora de produção, verifica memoryFallback
+  if (!referrerId && !IS_PROD) {
     for (const [uid, c] of Object.entries(memoryFallback.codes)) {
       if (normalizeReferralCode(c) === cleanCode) {
         referrerId = uid;
@@ -465,12 +596,17 @@ export async function recordReferralSale(params: {
   }
 
   if (!referrerId) {
-    // Cupom geral de campanha ou preset sem titular direto
+    return { success: false };
+  }
+
+  // Bloqueio absoluto de auto-indicação no servidor
+  if (params.referredUserId && referrerId === params.referredUserId) {
+    console.warn('[AmbassadorService] Tentativa de auto-indicação bloqueada para userId:', referrerId);
     return { success: false };
   }
 
   // Idempotência no fallback em memória
-  if (params.orderId && memoryFallback.sales[referrerId]) {
+  if (!IS_PROD && params.orderId && memoryFallback.sales[referrerId]) {
     const existingMemory = memoryFallback.sales[referrerId].find((s) => s.orderId === params.orderId);
     if (existingMemory) {
       return { success: true, referralId: existingMemory.id };
@@ -502,43 +638,50 @@ export async function recordReferralSale(params: {
     status: 'confirmed'
   };
 
-  try {
-    const supabase = getSupabaseAdmin();
-    const { data: inserted, error } = await supabase
-      .from('ambassador_referrals')
-      .insert({
-        referrer_id: referrerId,
-        order_id: params.orderId || null,
-        referral_code: cleanCode,
-        student_name: params.studentName,
-        student_email_masked: maskedEmail,
-        plan_name: params.planName,
-        plan_id: params.planId,
-        plan_amount: params.planAmount,
-        discount_applied: params.discountApplied,
-        net_amount: params.netAmount,
-        commission_percent: commissionPercent,
-        commission_amount: commissionAmount,
-        status: 'confirmed',
-        retention_days: AMBASSADOR_CONFIG.retentionDays,
-        confirmed_at: now.toISOString(),
-        matures_at: maturesAt.toISOString()
-      })
-      .select('id')
-      .maybeSingle();
+  if (isSupabaseAdminConfigured()) {
+    try {
+      const supabase = getSupabaseAdmin();
+      const { data: inserted, error } = await supabase
+        .from('ambassador_referrals')
+        .insert({
+          referrer_id: referrerId,
+          referred_user_id: params.referredUserId || null,
+          order_id: params.orderId || null,
+          referral_code: cleanCode,
+          student_name: params.studentName,
+          student_email_masked: maskedEmail,
+          plan_name: params.planName,
+          plan_id: params.planId,
+          plan_amount: params.planAmount,
+          discount_applied: params.discountApplied,
+          net_amount: params.netAmount,
+          commission_percent: commissionPercent,
+          commission_amount: commissionAmount,
+          status: 'confirmed',
+          retention_days: AMBASSADOR_CONFIG.retentionDays,
+          confirmed_at: now.toISOString(),
+          matures_at: maturesAt.toISOString()
+        })
+        .select('id')
+        .maybeSingle();
 
-    if (!error && inserted) {
-      return { success: true, referralId: inserted.id };
+      if (!error && inserted) {
+        return { success: true, referralId: inserted.id };
+      }
+      if (IS_PROD) {
+        return { success: false };
+      }
+    } catch {
+      if (IS_PROD) return { success: false };
     }
-  } catch {
-    // ignore
   }
 
-  // Fallback
-  if (!memoryFallback.sales[referrerId]) {
-    memoryFallback.sales[referrerId] = [];
+  if (!IS_PROD) {
+    if (!memoryFallback.sales[referrerId]) {
+      memoryFallback.sales[referrerId] = [];
+    }
+    memoryFallback.sales[referrerId].unshift(referralItem);
   }
-  memoryFallback.sales[referrerId].unshift(referralItem);
 
   return { success: true, referralId: referralItem.id };
 }

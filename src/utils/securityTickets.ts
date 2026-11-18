@@ -81,7 +81,9 @@ export function verifySessionTicket(
       .update(payloadB64)
       .digest('base64url');
 
-    if (signature !== expectedSignature) {
+    const sigBuf = Buffer.from(signature, 'utf8');
+    const expBuf = Buffer.from(expectedSignature, 'utf8');
+    if (sigBuf.byteLength !== expBuf.byteLength || !crypto.timingSafeEqual(sigBuf, expBuf)) {
       return { isValid: false, error: 'Assinatura do ticket inválida ou forjada.' };
     }
 
@@ -92,7 +94,7 @@ export function verifySessionTicket(
       return { isValid: false, error: 'Ticket de sessão expirado.' };
     }
 
-    if (expectedUserId && payload.userId !== 'anonymous' && payload.userId !== expectedUserId) {
+    if (expectedUserId && payload.userId !== expectedUserId) {
       return { isValid: false, error: 'Ticket não pertence ao usuário autenticado.' };
     }
 

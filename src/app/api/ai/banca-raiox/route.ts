@@ -1,30 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { resolveBancaList } from '@/services/questionService';
 import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
-import { verifyStudentSession } from '@/lib/supabase/studentAuth';
+import { authenticateAiRequest } from '@/lib/aiProtection';
 
 export const dynamic = 'force-dynamic';
 
 const raioxCache = new Map<string, { data: Record<string, unknown>; timestamp: number }>();
 const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutos
+const MAX_RAIOX_CACHE_ENTRIES = 100;
 
 export async function POST(req: NextRequest) {
   try {
-    // Blindagem de segurança: Acesso restrito a estudantes autenticados
-    const auth = await verifyStudentSession(req);
-    if (!auth.authorized || !auth.user) {
-      return NextResponse.json(
-        { success: false, error: auth.error || 'Acesso não autorizado: faça login para acessar o Raio-X da banca.' },
-        { status: auth.status }
-      );
+    // Blindagem de segurança: Autenticação obrigatória + Rate Limit estrito por usuário (máx 10/min)
+    const auth = await authenticateAiRequest(req, 10);
+    if (auth.errorResponse) {
+      return auth.errorResponse;
     }
 
     const body = await req.json();
-    const bancaRaw = (body.banca || 'ENARE').trim();
+    const bancaRaw = typeof body.banca === 'string' ? body.banca.replace(/[\u0000-\u001F<>`]/g, '').trim() : 'ENARE';
 
-    if (!bancaRaw) {
-      return NextResponse.json({ success: false, error: 'Banca não especificada.' }, { status: 400 });
+    if (!bancaRaw || bancaRaw.length > 80) {
+      return NextResponse.json({ success: false, error: 'Banca inválida ou excede o limite de 80 caracteres.' }, { status: 400 });
     }
 
     const cacheKey = bancaRaw.toUpperCase();
@@ -36,7 +34,8 @@ export async function POST(req: NextRequest) {
     const resolved = resolveBancaList([bancaRaw]);
     const bancaFilters = resolved.length > 0 ? resolved : [bancaRaw];
 
-    // 1. Estatísticas reais do banco Supabase
+    // 1. Estatísticas reais do banco Supabase (projeção mínima segura)
+    const supabase = getSupabaseAdmin();
     const { data: rows, count: totalCount, error } = await supabase
       .from('questions')
       .select('especialidade, tema, difficulty', { count: 'exact' })
@@ -126,6 +125,10 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
       analysis: aiAnalysis
     };
 
+    if (raioxCache.size >= MAX_RAIOX_CACHE_ENTRIES) {
+      const oldestKey = raioxCache.keys().next().value;
+      if (oldestKey) raioxCache.delete(oldestKey);
+    }
     raioxCache.set(cacheKey, { data: payload, timestamp: Date.now() });
 
     return NextResponse.json({

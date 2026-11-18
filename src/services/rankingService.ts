@@ -1,4 +1,5 @@
-import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
+import crypto from 'crypto';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import {
   calculateIRTAbility,
   calculateStandardError,
@@ -52,21 +53,120 @@ export interface RankingFilterOptions {
   offset?: number;
 }
 
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createSupabaseAdminClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
+interface CachedCandidateEntry {
+  rank: number;
+  rawUserId: string;
+  anonId: string;
+  fullName: string;
+  maskedName: string;
+  college: string;
+  specialtyTarget: string;
+  bancaFoco: string;
+  totalAnswered: number;
+  totalCorrect: number;
+  accuracy: number;
+  theta: number;
+  standardError: number;
+  reliability: number;
+  adjustedScore: number;
+  percentile: number;
+  formattedPercentile: string;
+  rankingStatus: 'official' | 'provisional' | 'calibrando';
+  isOfficial: boolean;
 }
 
-// Cache em memória de curta duração (30 segundos) para performance de alta velocidade
-let cachedLeaderboard: LeaderboardResponse | null = null;
+interface CachedLeaderboardSnapshot {
+  totalCandidates: number;
+  officialCount: number;
+  provisionalCount: number;
+  calibrandoCount: number;
+  entries: CachedCandidateEntry[];
+  platformScores: number[];
+  generatedAt: string;
+}
+
+/**
+ * Minimização LGPD para exibição pública no ranking:
+ * Exibe primeiro nome + inicial do último sobrenome (ex.: "Mariana Ribeiro" -> "Mariana R.").
+ */
+export function maskLeaderboardName(rawName: string): string {
+  const trimmed = (rawName || '').trim().replace(/\s+/g, ' ');
+  if (!trimmed) return 'Estudante';
+  const parts = trimmed.split(' ').filter(Boolean);
+  if (parts.length <= 1) return parts[0];
+  const firstName = parts[0];
+  const lastInitial = parts[parts.length - 1].charAt(0).toUpperCase();
+  return `${firstName} ${lastInitial}.`;
+}
+
+function buildAnonCandidateId(userId: string): string {
+  return `anon_${crypto.createHash('sha256').update(userId).digest('hex').slice(0, 10)}`;
+}
+
+// Cache em memória neutro de sessão (30 segundos) — evita vazamento de userId entre usuários distintos
+let cachedSnapshot: CachedLeaderboardSnapshot | null = null;
 let lastCacheTime = 0;
 const CACHE_TTL_MS = 30 * 1000;
+
+function buildResponseFromSnapshot(
+  snapshot: CachedLeaderboardSnapshot,
+  filters: RankingFilterOptions
+): LeaderboardResponse {
+  const toStudentView = (entry: CachedCandidateEntry): LeaderboardStudent => {
+    const isSelf = Boolean(filters.currentUserId && entry.rawUserId === filters.currentUserId);
+    return {
+      rank: entry.rank,
+      userId: isSelf ? entry.rawUserId : entry.anonId,
+      name: isSelf ? entry.fullName : entry.maskedName,
+      college: entry.college,
+      specialtyTarget: entry.specialtyTarget,
+      bancaFoco: entry.bancaFoco,
+      totalAnswered: entry.totalAnswered,
+      totalCorrect: entry.totalCorrect,
+      accuracy: entry.accuracy,
+      theta: entry.theta,
+      standardError: entry.standardError,
+      reliability: entry.reliability,
+      adjustedScore: entry.adjustedScore,
+      percentile: entry.percentile,
+      formattedPercentile: entry.formattedPercentile,
+      rankingStatus: entry.rankingStatus,
+      isOfficial: entry.isOfficial,
+      isCurrentUser: isSelf
+    };
+  };
+
+  const currentUserEntry = filters.currentUserId
+    ? snapshot.entries.find((e) => e.rawUserId === filters.currentUserId)
+    : undefined;
+
+  let filteredEntries = snapshot.entries;
+  if (filters.banca && filters.banca !== 'Todas') {
+    filteredEntries = filteredEntries.filter((c) => c.bancaFoco === filters.banca);
+  }
+  if (filters.institution) {
+    const instLower = filters.institution.toLowerCase();
+    filteredEntries = filteredEntries.filter((c) => c.college.toLowerCase().includes(instLower));
+  }
+
+  const safeOffset = Math.max(0, filters.offset || 0);
+  const safeLimit = Math.min(100, Math.max(1, filters.limit || 50));
+  const paginatedCandidates = filteredEntries
+    .slice(safeOffset, safeOffset + safeLimit)
+    .map(toStudentView);
+
+  return {
+    success: true,
+    totalCandidates: snapshot.totalCandidates,
+    officialCount: snapshot.officialCount,
+    provisionalCount: snapshot.provisionalCount,
+    calibrandoCount: snapshot.calibrandoCount,
+    currentUser: currentUserEntry ? toStudentView(currentUserEntry) : null,
+    candidates: paginatedCandidates,
+    platformScores: snapshot.platformScores,
+    generatedAt: snapshot.generatedAt
+  };
+}
 
 export async function computePlatformLeaderboard(
   filters: RankingFilterOptions = {},
@@ -74,20 +174,8 @@ export async function computePlatformLeaderboard(
 ): Promise<LeaderboardResponse> {
   const now = Date.now();
 
-  // Retorna cache se válido e sem filtros específicos de paginação/banca
-  if (!forceRefresh && cachedLeaderboard && now - lastCacheTime < CACHE_TTL_MS && !filters.banca && !filters.institution) {
-    if (filters.currentUserId) {
-      const userInCache = cachedLeaderboard.candidates.find(c => c.userId === filters.currentUserId);
-      return {
-        ...cachedLeaderboard,
-        currentUser: userInCache ? { ...userInCache, isCurrentUser: true } : null,
-        candidates: cachedLeaderboard.candidates.map(c => ({
-          ...c,
-          isCurrentUser: c.userId === filters.currentUserId
-        }))
-      };
-    }
-    return cachedLeaderboard;
+  if (!forceRefresh && cachedSnapshot && now - lastCacheTime < CACHE_TTL_MS) {
+    return buildResponseFromSnapshot(cachedSnapshot, filters);
   }
 
   const supabaseAdmin = getSupabaseAdmin();
@@ -246,19 +334,19 @@ export async function computePlatformLeaderboard(
   let provisionalCount = 0;
   let calibrandoCount = 0;
 
-  const rankedStudents: LeaderboardStudent[] = candidateList.map((c, index) => {
+  const snapshotEntries: CachedCandidateEntry[] = candidateList.map((c, index) => {
     const perc = calculateEmpiricalPercentile(c.adjustedScore, populationScores);
 
     if (c.rankingStatus === 'official') officialCount++;
     else if (c.rankingStatus === 'provisional') provisionalCount++;
     else calibrandoCount++;
 
-    const isSelf = filters.currentUserId ? c.userId === filters.currentUserId : false;
-
     return {
       rank: index + 1,
-      userId: isSelf ? c.userId : `anon_${c.userId.slice(0, 8)}`,
-      name: c.name,
+      rawUserId: c.userId,
+      anonId: buildAnonCandidateId(c.userId),
+      fullName: c.name,
+      maskedName: maskLeaderboardName(c.name),
       college: c.college,
       specialtyTarget: c.specialtyTarget,
       bancaFoco: c.bancaFoco,
@@ -272,47 +360,22 @@ export async function computePlatformLeaderboard(
       percentile: perc.roundedPercentile,
       formattedPercentile: perc.formattedPercentile,
       rankingStatus: c.rankingStatus,
-      isOfficial: c.isOfficial,
-      isCurrentUser: isSelf
+      isOfficial: c.isOfficial
     };
   });
 
-  const currentUser = filters.currentUserId
-    ? rankedStudents.find(s => s.isCurrentUser) || null
-    : null;
-
-  // 7. Aplicar filtros adicionais se solicitados
-  let filteredCandidates = rankedStudents;
-  if (filters.banca && filters.banca !== 'Todas') {
-    filteredCandidates = filteredCandidates.filter(c => c.bancaFoco === filters.banca);
-  }
-  if (filters.institution) {
-    filteredCandidates = filteredCandidates.filter(c => 
-      c.college.toLowerCase().includes(filters.institution!.toLowerCase())
-    );
-  }
-
-  const offset = filters.offset || 0;
-  const limit = filters.limit || 50;
-  const paginatedCandidates = filteredCandidates.slice(offset, offset + limit);
-
-  const response: LeaderboardResponse = {
-    success: true,
-    totalCandidates: rankedStudents.length,
+  const snapshot: CachedLeaderboardSnapshot = {
+    totalCandidates: snapshotEntries.length,
     officialCount,
     provisionalCount,
     calibrandoCount,
-    currentUser,
-    candidates: paginatedCandidates,
-    platformScores: candidateList.map(c => c.accuracy),
+    entries: snapshotEntries,
+    platformScores: candidateList.map((c) => c.accuracy),
     generatedAt: new Date().toISOString()
   };
 
-  // Salvar no cache em memória
-  if (!filters.banca && !filters.institution) {
-    cachedLeaderboard = response;
-    lastCacheTime = now;
-  }
+  cachedSnapshot = snapshot;
+  lastCacheTime = now;
 
-  return response;
+  return buildResponseFromSnapshot(snapshot, filters);
 }

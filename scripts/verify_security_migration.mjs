@@ -42,25 +42,38 @@ async function runDiagnostics() {
   console.log(`[1] Supabase Host: ${supabaseUrl}`);
   console.log(`    Service Role Key configurada: ${serviceKey ? 'SIM (ativo)' : 'NÃO (atenção)'}\n`);
 
-  // 1. Teste de Exposição Pública de Gabaritos via Anon Key (PostgREST)
-  console.log('[2] Testando proteção de gabarito contra anon key...');
-  try {
-    const { data, error } = await clientAnon
-      .from('questions')
-      .select('id, correct_answer')
-      .limit(1);
+  // 1. Teste de Exposição Pública de Gabaritos via Anon Key (PostgREST) em TODAS as tabelas e views canônicas
+  console.log('[2] Testando proteção de gabarito e comentário contra anon key...');
+  const relationsToTest = [
+    'questions',
+    'questions_direto',
+    'questions_rplus',
+    'questions_revalida',
+    'questions_titulo',
+    'view_questions_acesso_direto',
+    'view_questions_rplus',
+    'view_questions_revalida',
+    'view_questions_titulo',
+    'view_questions_all'
+  ];
+  for (const rel of relationsToTest) {
+    try {
+      const { data, error } = await clientAnon
+        .from(rel)
+        .select('id, correct_answer, commentary')
+        .not('correct_answer', 'is', null)
+        .limit(1);
 
-    if (error) {
-      console.log('    🛡️  SUCESSO: Anon key foi bloqueada de ler correct_answer no PostgreSQL.');
-      console.log(`       Código retornado pelo banco: ${error.code} (${error.message})`);
-    } else if (data && data.length > 0 && data[0].correct_answer) {
-      console.log('    ⚠️  AVISO PENDENTE: A role anon ainda consegue projetar correct_answer diretamente.');
-      console.log('       Ação recomendada: Execute o arquivo "migrations/005_anti_scraping_and_storage_protection.sql" no SQL Editor do Supabase.');
-    } else {
-      console.log('    ✓ Coluna correct_answer protegida ou sem valores expostos para anon.');
+      if (error) {
+        console.log(`    🛡️  [${rel}] BLOQUEADA (${error.code}: ${error.message})`);
+      } else if (data && data.length > 0 && (data[0].correct_answer || data[0].commentary)) {
+        console.log(`    ⚠️  [${rel}] PENDENTE: anon ainda lê correct_answer/commentary. Aplique supabase/migrations/20261118003802_security_hardening_views_and_facets_257k.sql no SQL Editor.`);
+      } else {
+        console.log(`    ✓  [${rel}] Protegida.`);
+      }
+    } catch (err) {
+      console.log(`    🛡️  [${rel}] Exceção bloqueada:`, err.message);
     }
-  } catch (err) {
-    console.log('    🛡️  Exceção ao tentar consulta direta:', err.message);
   }
 
   // 2. Teste de Acesso Público ao Storage medical-knowledge

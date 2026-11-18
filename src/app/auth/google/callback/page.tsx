@@ -2,9 +2,9 @@
 
 /**
  * Página de callback do Google OAuth — /auth/google/callback
- * Suporta:
- * 1. Fluxo Seguro Backend (PKCE / Authorization Code com Refresh Token no servidor)
- * 2. Fluxo Legado de Token Direto no Hash/Query (Fallback)
+ * Opera exclusivamente via Authorization Code + validação de state anti-CSRF no servidor,
+ * mantendo access_token e refresh_token criptografados (AES-256-GCM) no banco de dados
+ * e NUNCA persistindo tokens OAuth no localStorage.
  */
 
 import { useEffect, useState } from 'react';
@@ -24,26 +24,27 @@ export default function GoogleCalendarCallbackPage() {
     const searchParams = new URLSearchParams(window.location.search);
 
     const code = searchParams.get('code') || hashParams.get('code');
-    const accessToken =
-      hashParams.get('access_token') ||
-      hashParams.get('google_access_token') ||
-      searchParams.get('access_token') ||
-      searchParams.get('google_access_token');
-
-    const stateParam = hashParams.get('state') || searchParams.get('state');
-    const popupDetected = stateParam === 'popup' || Boolean(window.opener && !window.opener.closed);
+    const stateParam = searchParams.get('state') || hashParams.get('state') || '';
+    const popupDetected =
+      stateParam === 'popup' ||
+      stateParam.startsWith('popup:') ||
+      Boolean(window.opener && !window.opener.closed);
     setIsPopup(popupDetected);
 
     const error = hashParams.get('error') || searchParams.get('error');
 
-    // ── 1. FLUXO PADRÃO-OURO: Authorization Code via Backend com Refresh Token ──
+    // Remove qualquer resquício histórico de token legado no localStorage
+    try {
+      localStorage.removeItem('bancoresidencia_google_access_token');
+    } catch {}
+
     if (code) {
       const redirectUri = `${window.location.origin}${window.location.pathname}`;
 
       fetch('/api/calendar/google/connect', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ code, redirectUri })
+        body: JSON.stringify({ code, redirectUri, state: stateParam })
       })
         .then(async (res) => {
           const data = await res.json().catch(() => ({}));
@@ -60,9 +61,7 @@ export default function GoogleCalendarCallbackPage() {
             localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
             localStorage.setItem('bancoresidencia_google_popup_auth_timestamp', Date.now().toString());
             sessionStorage.setItem('bancoresidencia_google_just_connected', 'true');
-          } catch {
-            // Ignora restrições de localStorage
-          }
+          } catch {}
 
           if (popupDetected) {
             try {
@@ -72,9 +71,7 @@ export default function GoogleCalendarCallbackPage() {
                   window.location.origin
                 );
               }
-            } catch {
-              // ignora falhas cross-origin
-            }
+            } catch {}
 
             setStatus('success');
             setMessage('Google Agenda conectado com sucesso e blindado no servidor!');
@@ -105,36 +102,6 @@ export default function GoogleCalendarCallbackPage() {
       return;
     }
 
-    // ── 2. FLUXO LEGADO: Token Direto no Hash (Fallback) ──
-    if (accessToken) {
-      try {
-        localStorage.setItem('bancoresidencia_google_access_token', accessToken);
-        localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
-        localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
-        localStorage.setItem('bancoresidencia_google_popup_auth_timestamp', Date.now().toString());
-      } catch {}
-
-      if (popupDetected) {
-        try {
-          if (window.opener && !window.opener.closed) {
-            window.opener.postMessage({ type: 'GOOGLE_AUTH_SUCCESS', accessToken }, window.location.origin);
-          }
-        } catch {}
-
-        setStatus('success');
-        setMessage('Google Agenda conectado!');
-        setTimeout(() => {
-          try { window.close(); } catch {}
-        }, 500);
-        return;
-      }
-
-      setStatus('success');
-      setTimeout(() => router.replace('/'), 600);
-      return;
-    }
-
-    // ── 3. TRATAMENTO DE ERROS OU CANCELAMENTO ──
     if (error) {
       const messages: Record<string, string> = {
         access_denied: 'Autorização cancelada no Google.',

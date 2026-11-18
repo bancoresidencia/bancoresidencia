@@ -1,22 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { sanitizePostgrestTerm } from '@/utils/security';
 
 export const dynamic = 'force-dynamic';
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey =
-    process.env.SUPABASE_SERVICE_ROLE_KEY ||
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-    'placeholder-key';
-  return createClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
 
 export async function GET(req: NextRequest) {
   try {
@@ -55,7 +42,10 @@ export async function GET(req: NextRequest) {
       query = query.eq('action', action);
     }
     if (userEmail) {
-      query = query.ilike('user_email', `%${userEmail.trim()}%`);
+      const safeEmail = sanitizePostgrestTerm(userEmail);
+      if (safeEmail) {
+        query = query.ilike('user_email', `%${safeEmail}%`);
+      }
     }
 
     query = query.range(offset, offset + limit - 1);

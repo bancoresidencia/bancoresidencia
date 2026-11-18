@@ -7,6 +7,9 @@ on:
       - 'supabase/migrations/**'
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   deploy-migrations:
     name: Sincronizar Migrações no Supabase Pro

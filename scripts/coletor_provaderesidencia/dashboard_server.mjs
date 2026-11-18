@@ -707,7 +707,7 @@ const server = http.createServer((req, res) => {
   res.end('Not found');
 });
 
-server.listen(PORT, '0.0.0.0', () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log(`\n================================================================`);
   console.log(`🌐 PAINEL VISUAL DO COLETOR (SSR + PRE-RENDERIZADO) NO AR!`);
   console.log(`👉 Acesse no seu navegador: http://localhost:${PORT}`);

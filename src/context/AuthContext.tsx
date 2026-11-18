@@ -415,31 +415,31 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         (supabaseUser.user_metadata?.picture as string) ||
         '';
 
+      // Segurança crítica: NUNCA ler plano/status/vencimento de user_metadata (editável pelo cliente).
+      // Confia exclusivamente na tabela public.profiles (protegida por trigger) ou app_metadata (server-only).
       const subscriptionPlan =
         (profile as Record<string, unknown>)?.subscription_plan as 'free' | 'pro' | 'premium' ||
         (supabaseUser.app_metadata?.subscription_plan as 'free' | 'pro' | 'premium') ||
-        (supabaseUser.user_metadata?.subscription_plan as 'free' | 'pro' | 'premium') ||
         'free';
 
       const subscriptionStatus =
         (profile as Record<string, unknown>)?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded' ||
         (supabaseUser.app_metadata?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded') ||
-        (supabaseUser.user_metadata?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded') ||
         'inactive';
 
       const subscriptionDuration =
         (profile as Record<string, unknown>)?.subscription_duration as 'monthly' | 'semiannual' | 'annual' | 'biennial' ||
-        (supabaseUser.user_metadata?.subscription_duration as 'monthly' | 'semiannual' | 'annual' | 'biennial') ||
+        (supabaseUser.app_metadata?.subscription_duration as 'monthly' | 'semiannual' | 'annual' | 'biennial') ||
         undefined;
 
       const subscriptionExpiresAt =
         ((profile as Record<string, unknown>)?.subscription_expires_at as string) ||
-        (supabaseUser.user_metadata?.subscription_expires_at as string) ||
+        (supabaseUser.app_metadata?.subscription_expires_at as string) ||
         undefined;
 
       const guaranteeExpiresAt =
         ((profile as Record<string, unknown>)?.guarantee_expires_at as string) ||
-        (supabaseUser.user_metadata?.guarantee_expires_at as string) ||
+        (supabaseUser.app_metadata?.guarantee_expires_at as string) ||
         undefined;
 
       return {

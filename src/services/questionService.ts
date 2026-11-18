@@ -1161,17 +1161,28 @@ export async function searchQuestionsDirect(
   const q = sanitizePostgrestTerm(queryText);
   if (!q || q.length < 2) return [];
 
+  const CANONICAL_PUBLIC_VIEWS = [
+    'view_questions_acesso_direto',
+    'view_questions_revalida',
+    'view_questions_rplus',
+    'view_questions_titulo'
+  ] as const;
+
   try {
     // 1. Se for código ou ano específico (ex: HSLPUCRS, INEP, 2024)
     if (/^[A-Za-z0-9_-]{3,}$/.test(q)) {
-      const { data, error } = await supabase
-        .from('questions')
-        .select(SAFE_QUESTION_COLUMNS)
-        .or(`code.ilike.%${q}%,banca.ilike.%${q}%,foco.ilike.%${q}%`)
-        .limit(limit);
-
-      if (!error && data && data.length > 0) {
-        return (data as unknown as QuestionDbRow[]).map(mapRowToQuestion);
+      const codeResults = await Promise.all(
+        CANONICAL_PUBLIC_VIEWS.map((v) =>
+          supabase
+            .from(v)
+            .select(SAFE_QUESTION_COLUMNS)
+            .or(`code.ilike.%${q}%,banca.ilike.%${q}%,foco.ilike.%${q}%`)
+            .limit(limit)
+        )
+      );
+      const mergedCodeRows = codeResults.flatMap((r) => (!r.error && r.data ? (r.data as unknown as QuestionDbRow[]) : []));
+      if (mergedCodeRows.length > 0) {
+        return mergedCodeRows.slice(0, limit).map(mapRowToQuestion);
       }
     }
 
@@ -1183,24 +1194,34 @@ export async function searchQuestionsDirect(
 
     const primaryTerm = keywords[0] || q.slice(0, 30);
 
-    const { data, error } = await supabase
-      .from('questions')
-      .select(SAFE_QUESTION_COLUMNS)
-      .or(`foco.ilike.%${primaryTerm}%,subfoco.ilike.%${primaryTerm}%,tema.ilike.%${primaryTerm}%,banca.ilike.%${primaryTerm}%`)
-      .limit(limit);
-
-    if (!error && data && data.length > 0) {
-      return (data as unknown as QuestionDbRow[]).map(mapRowToQuestion);
+    const termResults = await Promise.all(
+      CANONICAL_PUBLIC_VIEWS.map((v) =>
+        supabase
+          .from(v)
+          .select(SAFE_QUESTION_COLUMNS)
+          .or(`foco.ilike.%${primaryTerm}%,subfoco.ilike.%${primaryTerm}%,tema.ilike.%${primaryTerm}%,banca.ilike.%${primaryTerm}%`)
+          .limit(limit)
+      )
+    );
+    const mergedTermRows = termResults.flatMap((r) => (!r.error && r.data ? (r.data as unknown as QuestionDbRow[]) : []));
+    if (mergedTermRows.length > 0) {
+      return mergedTermRows.slice(0, limit).map(mapRowToQuestion);
     }
 
     // Fallback por código aproximado
-    const { data: codeData } = await supabase
-      .from('questions')
-      .select(SAFE_QUESTION_COLUMNS)
-      .ilike('code', `%${primaryTerm}%`)
-      .limit(limit);
-
-    return (codeData as unknown as QuestionDbRow[] || []).map(mapRowToQuestion);
+    const fallbackResults = await Promise.all(
+      CANONICAL_PUBLIC_VIEWS.map((v) =>
+        supabase
+          .from(v)
+          .select(SAFE_QUESTION_COLUMNS)
+          .ilike('code', `%${primaryTerm}%`)
+          .limit(limit)
+      )
+    );
+    return fallbackResults
+      .flatMap((r) => (!r.error && r.data ? (r.data as unknown as QuestionDbRow[]) : []))
+      .slice(0, limit)
+      .map(mapRowToQuestion);
   } catch (err) {
     console.error('Erro na busca direta de questões:', err);
     return [];
@@ -1208,36 +1229,60 @@ export async function searchQuestionsDirect(
 }
 
 export async function fetchQuestionById(id: string): Promise<Question | null> {
-  let { data, error } = await supabase
-    .from('view_questions_acesso_direto')
-    .select(SAFE_QUESTION_COLUMNS)
-    .eq('id', id)
-    .maybeSingle();
+  const views = [
+    'view_questions_acesso_direto',
+    'view_questions_revalida',
+    'view_questions_rplus',
+    'view_questions_titulo'
+  ];
 
-  if (!data) {
-    const resRev = await supabase
-      .from('view_questions_revalida')
-      .select(SAFE_QUESTION_COLUMNS)
-      .eq('id', id)
-      .maybeSingle();
-    data = resRev.data;
-    error = resRev.error;
-  }
+  const results = await Promise.all(
+    views.map((v) =>
+      supabase
+        .from(v)
+        .select(SAFE_QUESTION_COLUMNS)
+        .eq('id', id)
+        .maybeSingle()
+    )
+  );
 
-  if (error || !data) return null;
-  return mapRowToQuestion(data);
+  const hit = results.find((r) => !r.error && r.data);
+  if (!hit || !hit.data) return null;
+  return mapRowToQuestion(hit.data as unknown as QuestionDbRow);
 }
 
 export async function fetchQuestionsByIds(ids: string[]): Promise<Question[]> {
   if (!ids || ids.length === 0) return [];
 
-  const { data, error } = await supabase
-    .from('questions')
-    .select('*')
-    .in('id', ids);
+  const views = [
+    'view_questions_acesso_direto',
+    'view_questions_revalida',
+    'view_questions_rplus',
+    'view_questions_titulo'
+  ];
 
-  if (error || !data) return [];
-  return data.map(mapRowToQuestion);
+  const results = await Promise.all(
+    views.map((v) =>
+      supabase
+        .from(v)
+        .select(SAFE_QUESTION_COLUMNS)
+        .in('id', ids)
+    )
+  );
+
+  const seen = new Set<string>();
+  const rows: QuestionDbRow[] = [];
+  for (const res of results) {
+    if (!res.error && Array.isArray(res.data)) {
+      for (const item of res.data as unknown as QuestionDbRow[]) {
+        if (item.id && !seen.has(item.id)) {
+          seen.add(item.id);
+          rows.push(item);
+        }
+      }
+    }
+  }
+  return rows.map(mapRowToQuestion);
 }
 
 export interface ModalidadesCounts {

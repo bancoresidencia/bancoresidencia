@@ -1,50 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
-import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 export const dynamic = 'force-dynamic';
 
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createSupabaseAdminClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
-
 export async function GET(req: NextRequest) {
   try {
-    const supabaseAdmin = getSupabaseAdmin();
-    let authenticatedUser: { id: string } | null = null;
+    const auth = await verifyStudentSession(req);
 
-    // 1. Identificar usuário via Bearer Token no header
-    const authHeader = req.headers.get('authorization');
-    if (authHeader && authHeader.startsWith('Bearer ')) {
-      const token = authHeader.substring(7);
-      const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
-      if (authUser) {
-        authenticatedUser = { id: authUser.id };
-      }
-    }
-
-    // 2. Se não encontrou no header, verifica cookies de sessão
-    if (!authenticatedUser) {
-      try {
-        const supabaseServer = await createSupabaseServerClient();
-        const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
-        if (cookieUser) {
-          authenticatedUser = { id: cookieUser.id };
-        }
-      } catch {
-        // Sem cookies de sessão
-      }
-    }
-
-    // 3. Se for visitante não logado
-    if (!authenticatedUser) {
+    // Se for visitante não logado
+    if (!auth.authorized || !auth.user) {
       return NextResponse.json({
         success: true,
         authenticated: false,
@@ -58,7 +23,8 @@ export async function GET(req: NextRequest) {
       });
     }
 
-    const userId = authenticatedUser.id;
+    const supabaseAdmin = getSupabaseAdmin();
+    const userId = auth.user.id;
     const startOfDay = new Date();
     startOfDay.setUTCHours(0, 0, 0, 0);
     const startIso = startOfDay.toISOString();

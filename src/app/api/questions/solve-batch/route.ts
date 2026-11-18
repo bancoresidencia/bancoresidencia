@@ -1,62 +1,45 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
-import { validateQuestionId } from '@/utils/security';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { validateQuestionId, isPrivilegedRole } from '@/utils/security';
 import { verifySessionTicket } from '@/utils/securityTickets';
 import { injectZeroWidthWatermark } from '@/utils/watermark';
-import { sanitizeMedicalText } from '@/utils/textSanitizer';
+import { sanitizeMedicalText, unpackStructuredCommentary } from '@/utils/textSanitizer';
+import { findCanonicalQuestionsByIdsOrCodes } from '@/services/canonicalQuestionStore';
 
 export const dynamic = 'force-dynamic';
 
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createSupabaseAdminClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
-
-// In-Memory Rate Limiter contra abuso de lotes (Max 40 requisições de batch por minuto por IP)
 interface RateLimitEntry {
   count: number;
   resetAt: number;
 }
 const batchRateLimitMap = new Map<string, RateLimitEntry>();
 const BATCH_RATE_LIMIT_WINDOW_MS = 60 * 1000;
-const MAX_BATCH_REQUESTS_PER_WINDOW = 40;
-const MAX_BATCH_SIZE = 60;
+const MAX_BATCH_REQUESTS_PER_WINDOW = 30;
+const MAX_BATCH_SIZE = 50;
+const MAX_MAP_SIZE = 3000;
 
-function isBatchRateLimited(ip: string): boolean {
+function isBatchRateLimited(key: string): boolean {
   const now = Date.now();
-  const entry = batchRateLimitMap.get(ip);
+  const entry = batchRateLimitMap.get(key);
 
-  if (batchRateLimitMap.size > 5000) {
-    for (const [key, val] of batchRateLimitMap.entries()) {
-      if (val.resetAt < now) {
-        batchRateLimitMap.delete(key);
-      }
-    }
-  }
-
-  if (!entry || entry.resetAt < now) {
-    batchRateLimitMap.set(ip, { count: 1, resetAt: now + BATCH_RATE_LIMIT_WINDOW_MS });
+  if (entry && entry.resetAt >= now) {
+    if (entry.count >= MAX_BATCH_REQUESTS_PER_WINDOW) return true;
+    entry.count++;
     return false;
   }
 
-  if (entry.count >= MAX_BATCH_REQUESTS_PER_WINDOW) {
-    return true;
+  if (entry) batchRateLimitMap.delete(key);
+
+  if (batchRateLimitMap.size >= MAX_MAP_SIZE) {
+    const oldest = batchRateLimitMap.keys().next().value;
+    if (oldest) batchRateLimitMap.delete(oldest);
   }
 
-  entry.count++;
+  batchRateLimitMap.set(key, { count: 1, resetAt: now + BATCH_RATE_LIMIT_WINDOW_MS });
   return false;
 }
 
-// Telemetria de Cadência Humana (Behavioral Rate Limiter)
-// Um médico/estudante leva no mínimo 30 a 90 segundos por questão.
-// Solicitar mais de 5 lotes de 20 questões em 20 segundos é inumano (100 questões em 20s = 0,2s/questão).
 interface UserCadenceEntry {
   batchCount: number;
   firstRequestAt: number;
@@ -67,29 +50,35 @@ function checkUserCadence(userId: string): boolean {
   const now = Date.now();
   const entry = userCadenceMap.get(userId);
 
-  // Janela calibrada para navegação rápida de estudantes (até 10 trocas de página em 30s)
-  // Bloqueia apenas robôs de raspagem que disparam centenas de requisições por segundo
   if (!entry || now - entry.firstRequestAt > 30000) {
+    if (userCadenceMap.size >= MAX_MAP_SIZE) {
+      const oldest = userCadenceMap.keys().next().value;
+      if (oldest) userCadenceMap.delete(oldest);
+    }
     userCadenceMap.set(userId, { batchCount: 1, firstRequestAt: now });
     return true;
   }
 
   entry.batchCount++;
-  if (entry.batchCount > 10) {
-    return false;
-  }
-
-  return true;
+  return entry.batchCount <= 10;
 }
+
+interface CachedPlanCheck {
+  allowed: boolean;
+  expiresAt: number;
+}
+const planEligibilityCache = new Map<string, CachedPlanCheck>();
+const PLAN_CACHE_TTL_MS = 60 * 1000;
 
 export async function POST(req: NextRequest) {
   try {
     const clientIp =
-      req.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
-      req.headers.get('x-real-ip') ||
+      req.headers.get('x-vercel-forwarded-for')?.split(',')[0]?.trim() ||
+      req.headers.get('x-real-ip')?.trim() ||
+      req.headers.get('x-forwarded-for')?.split(',').pop()?.trim() ||
       'unknown-ip';
 
-    if (isBatchRateLimited(clientIp)) {
+    if (isBatchRateLimited(`ip_${clientIp}`)) {
       return NextResponse.json(
         {
           success: false,
@@ -110,7 +99,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: true, resolutions: {}, count: 0 });
     }
 
-    // Validação estrita de cada ID e limite por requisição
     const validIds = rawIds
       .filter((id): id is string => typeof id === 'string' && validateQuestionId(id))
       .slice(0, MAX_BATCH_SIZE);
@@ -119,16 +107,18 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: true, resolutions: {}, count: 0 });
     }
 
-    // 1. Identificar usuário autenticado (Fase 1.2: Rota em lote é exclusiva para alunos logados)
-    let authenticatedUser: { id: string } | null = null;
+    // 1. Identificar usuário autenticado
+    let authenticatedUser: { id: string; appRole?: string } | null = null;
     const supabaseAdmin = getSupabaseAdmin();
 
     const authHeader = req.headers.get('authorization');
     if (authHeader && authHeader.startsWith('Bearer ')) {
-      const token = authHeader.substring(7);
-      const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
-      if (authUser) {
-        authenticatedUser = { id: authUser.id };
+      const token = authHeader.substring(7).trim();
+      if (token.length > 20) {
+        const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
+        if (authUser) {
+          authenticatedUser = { id: authUser.id, appRole: authUser.app_metadata?.role as string | undefined };
+        }
       }
     }
 
@@ -137,7 +127,7 @@ export async function POST(req: NextRequest) {
         const supabaseServer = await createSupabaseServerClient();
         const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
         if (cookieUser) {
-          authenticatedUser = { id: cookieUser.id };
+          authenticatedUser = { id: cookieUser.id, appRole: cookieUser.app_metadata?.role as string | undefined };
         }
       } catch {
         // visitante não autenticado
@@ -155,7 +145,51 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 2. Validação do Ticket de Sessão Criptografado (Fase 2: Session Binding)
+    // 2. Blindagem de Paywall & Anti-Scraping: solve-batch é estritamente exclusivo para assinantes Pro/Premium ativos ou Admins
+    const now = Date.now();
+    let isEligibleForBatch = isPrivilegedRole(authenticatedUser.appRole);
+
+    if (!isEligibleForBatch) {
+      const cachedPlan = planEligibilityCache.get(authenticatedUser.id);
+      if (cachedPlan && cachedPlan.expiresAt > now) {
+        isEligibleForBatch = cachedPlan.allowed;
+      } else {
+        const { data: profile } = await supabaseAdmin
+          .from('profiles')
+          .select('role, subscription_plan, subscription_status, subscription_expires_at')
+          .eq('id', authenticatedUser.id)
+          .maybeSingle();
+
+        const isAdminOrCurator = isPrivilegedRole(profile?.role);
+        const plan = (profile?.subscription_plan || 'free').toLowerCase();
+        const status = profile?.subscription_status || 'inactive';
+        const subExp = profile?.subscription_expires_at ? new Date(profile.subscription_expires_at).getTime() : null;
+        const isProActive = Boolean((plan === 'pro' || plan === 'premium') && status === 'active' && subExp !== null && subExp > now);
+
+        isEligibleForBatch = isAdminOrCurator || isProActive;
+
+        if (planEligibilityCache.size >= MAX_MAP_SIZE) {
+          const oldest = planEligibilityCache.keys().next().value;
+          if (oldest) planEligibilityCache.delete(oldest);
+        }
+        planEligibilityCache.set(authenticatedUser.id, {
+          allowed: isEligibleForBatch,
+          expiresAt: now + PLAN_CACHE_TTL_MS
+        });
+      }
+    }
+
+    if (!isEligibleForBatch) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: 'Pré-carregamento em lote disponível exclusivamente para assinantes Pro ou Premium.'
+        },
+        { status: 403 }
+      );
+    }
+
+    // 3. Validação do Ticket de Sessão Criptografado (Session Binding estrito ao userId autenticado)
     const ticketVerification = verifySessionTicket(sessionTicket, validIds, authenticatedUser.id);
     if (!ticketVerification.isValid) {
       return NextResponse.json(
@@ -167,8 +201,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 3. Telemetria de Cadência de Leitura Humana (Fase 4: Behavioral Limiter)
-    if (!checkUserCadence(authenticatedUser.id)) {
+    // 4. Telemetria de Cadência Humana
+    if (!checkUserCadence(authenticatedUser.id) || isBatchRateLimited(`user_${authenticatedUser.id}`)) {
       return NextResponse.json(
         {
           success: false,
@@ -181,20 +215,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 4. Consulta em lote no PostgreSQL via Primary Key (WHERE id = ANY(validIds))
-    const { data, error } = await supabaseAdmin
-      .from('questions')
-      .select('id, code, correct_answer, is_anulada, commentary, options')
-      .in('id', validIds);
-
-    if (error) {
-      console.error('[/api/questions/solve-batch] Erro no Supabase:', error.message || error);
-      return NextResponse.json(
-        { success: false, error: 'Erro ao carregar lote de resoluções.' },
-        { status: 500 }
-      );
-    }
-
     interface QuestionBatchRow {
       id: string;
       code?: string;
@@ -203,6 +223,12 @@ export async function POST(req: NextRequest) {
       commentary?: string;
       options?: unknown[];
     }
+
+    const rows = await findCanonicalQuestionsByIdsOrCodes<QuestionBatchRow>(
+      supabaseAdmin,
+      validIds,
+      'id, code, correct_answer, is_anulada, commentary, options'
+    );
 
     const resolutions: Record<
       string,
@@ -218,7 +244,7 @@ export async function POST(req: NextRequest) {
 
     const userIdForWatermark = authenticatedUser.id;
 
-    ((data || []) as QuestionBatchRow[]).forEach((row) => {
+    rows.forEach((row) => {
       const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
       const rawAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
       const validLetters = new Set(['A', 'B', 'C', 'D', 'E', 'ANULADA']);
@@ -226,16 +252,34 @@ export async function POST(req: NextRequest) {
         ? (rawAnswer as 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA')
         : (isAnulada ? 'ANULADA' : '');
 
-      // Injeção de Marca d'Água Esteganográfica Forense (Fase 3: Zero-Width Watermarking)
-      const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(row.commentary || ''), userIdForWatermark);
-      const rawOptions = Array.isArray(row.options) ? row.options : [];
+      const unpacked = unpackStructuredCommentary(row.commentary || '', Array.isArray(row.options) ? row.options : []);
+      const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(unpacked.commentary), userIdForWatermark);
+      const rawOptions = unpacked.options;
       const watermarkedOptions = rawOptions.map((opt: unknown) => {
-        if (opt && typeof opt === 'object' && 'justification' in opt) {
-          const optObj = opt as { justification?: string; [key: string]: unknown };
-          return {
-            ...optObj,
-            justification: injectZeroWidthWatermark(sanitizeMedicalText(optObj.justification || (optObj as any).explanation || ''), userIdForWatermark)
+        if (opt && typeof opt === 'object') {
+          const optObj = opt as {
+            text?: string;
+            explanation?: string;
+            justification?: string;
+            [key: string]: unknown;
           };
+          const nextOpt: Record<string, unknown> = { ...optObj };
+          if (typeof optObj.text === 'string') {
+            nextOpt.text = sanitizeMedicalText(optObj.text);
+          }
+          if (typeof optObj.explanation === 'string' && optObj.explanation.trim()) {
+            nextOpt.explanation = injectZeroWidthWatermark(
+              sanitizeMedicalText(optObj.explanation),
+              userIdForWatermark
+            );
+          }
+          if (typeof optObj.justification === 'string' && optObj.justification.trim()) {
+            nextOpt.justification = injectZeroWidthWatermark(
+              sanitizeMedicalText(optObj.justification),
+              userIdForWatermark
+            );
+          }
+          return nextOpt;
         }
         return opt;
       });

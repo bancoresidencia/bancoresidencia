@@ -32,11 +32,12 @@ interface GenerateCommentaryBody {
 function sanitizeText(txt: string): string {
   if (!txt) return '';
   return txt
-    .replace(/estrat[ée]gia\s*med/gi, 'Base Médica Teórica')
-    .replace(/estrat[ée]gia\s*vestibulares/gi, 'Base Teórica')
-    .replace(/estrat[ée]gia/gi, 'Literatura Oficial')
-    .replace(/medcurso/gi, 'Diretrizes Oficiais')
-    .replace(/sanar/gi, 'Consenso Clínico')
+    .replace(/\bestrat[ée]gia\s*med\b|\bestrategiamed\b/gi, 'Base Médica Teórica')
+    .replace(/\bestrat[ée]gia\s*(?:vestibulares|concursos|militares)\b/gi, 'Base Teórica')
+    .replace(/\bmedcurso\b/gi, 'Diretrizes Oficiais')
+    .replace(/\bsanar(?:\s*med|\s*flix)?\b/gi, 'Consenso Clínico')
+    .replace(/\(\s*ProvaDeResidencia\s*\)|\bProvaDeResidencia\b/gi, '')
+    .replace(/\bnão\s+houveram\s+(atualizações|mudanças|alterações)\b/gi, 'Não houve $1')
     .trim();
 }
 

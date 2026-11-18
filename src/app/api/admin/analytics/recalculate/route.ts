@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 
 export const dynamic = 'force-dynamic';
@@ -13,6 +13,7 @@ export async function POST(req: NextRequest) {
         { status: auth.status }
       );
     }
+    const supabase = getSupabaseAdmin();
     const body = await req.json().catch(() => ({}));
     const { focusSlug, all = false } = body;
 

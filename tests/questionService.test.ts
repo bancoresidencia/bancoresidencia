@@ -5,7 +5,7 @@ import {
   validateAnswerOption,
   isPrivilegedRole
 } from '../src/utils/security.ts';
-import { sanitizeMedicalText } from '../src/utils/textSanitizer.ts';
+import { sanitizeMedicalText, unpackStructuredCommentary } from '../src/utils/textSanitizer.ts';
 
 console.log('=== INICIANDO TESTES UNITÁRIOS DE SEGURANÇA E VALIDAÇÃO ===\n');
 
@@ -165,6 +165,54 @@ const searchWithResidue = 'Pressão\u00A0Arterial\u200B';
 const sanitizedSearch = sanitizePostgrestTerm(searchWithResidue);
 assert.strictEqual(sanitizedSearch, 'Pressão Arterial');
 console.log('    ✓ Termos de busca com resíduos invisíveis ou insecáveis foram higienizados.');
+
+// 12. Teste de Preservação do Termo Médico "Estratégia" vs. Sanitização de Marca Concorrente
+console.log('[12] Teste de preservação da palavra médica "estratégia" (ESF / conduta clínica)...');
+const esfStatement = 'Um homem de 27 anos busca atendimento na Unidade de Estratégia de Saúde da Família (ESF). Qual é a melhor estratégia diagnóstica?';
+const sanitizedEsf = sanitizeMedicalText(esfStatement);
+assert.strictEqual(
+  sanitizedEsf,
+  esfStatement,
+  'O termo médico "Estratégia" não pode ser adulterado para "Literatura Oficial"'
+);
+const competitorText = 'Fala, Estrategista! Segundo o Estratégia MED e Opinião do Estrategiamed, a conduta é cirúrgica.';
+const sanitizedCompetitor = sanitizeMedicalText(competitorText);
+assert(!/estrategista/i.test(sanitizedCompetitor), 'Vocativo "Estrategista" deve ser removido');
+assert(!/estrat[ée]gia\s*med/i.test(sanitizedCompetitor), 'Marca concorrente "Estratégia MED" deve ser sanitizada');
+assert(sanitizedCompetitor.includes('Base Médica Teórica'), 'Marca concorrente deve ser convertida em termo neutro');
+console.log('    ✓ Palavra médica "estratégia" 100% preservada e menções comerciais neutralizadas.');
+
+// 13. Teste de Correção Gramatical ("Não houveram" -> "Não houve"), LaTeX e Marca Concorrente
+console.log('[13] Teste de normalização gramatical, LaTeX inline e marca (ProvaDeResidencia)...');
+const rawGoldDefect = 'Febre $\\ge 38^\\circ\\text{C}$ e potássio $6\\text{ mEq/L}$. Não houveram atualizações recentes nas diretrizes (ProvaDeResidencia).';
+const cleanedGold = sanitizeMedicalText(rawGoldDefect);
+assert(cleanedGold.includes('≥ 38°C'), `Deve converter LaTeX de temperatura para ≥ 38°C, obteve: ${cleanedGold}`);
+assert(cleanedGold.includes('6 mEq/L'), `Deve converter $6\\text{ mEq/L}$ para 6 mEq/L, obteve: ${cleanedGold}`);
+assert(cleanedGold.includes('Não houve atualizações recentes'), 'Deve corrigir verbo haver impessoal');
+assert(!/ProvaDeResidencia/i.test(cleanedGold), 'Deve remover marca ProvaDeResidencia');
+console.log('    ✓ Gramática, LaTeX clínico inline e marca d\'água concorrente higienizados.');
+
+// 14. Teste de Desempacotamento de Comentários JSON Legados (19.336 questões)
+console.log('[14] Teste de desempacotamento de JSON legado {"statementComment", "alternativesComments"}...');
+const rawJsonComm = JSON.stringify({
+  _id: '67dd601b806bcf474ce97f65',
+  statementComment: 'Olá, estudante! A Reação de Jarisch-Herxheimer ocorre após lise espiroquetal.<br>Conduta de suporte.',
+  alternativesComments: [
+    'A) Alternativa incorreta: Leishmania é protozoário.',
+    'B) Alternativa correta: Sífilis desencadeia RJH.'
+  ]
+});
+const unpacked = unpackStructuredCommentary(rawJsonComm, [
+  { letter: 'A', text: 'Leishmania.' },
+  { letter: 'B', text: 'Sífilis.' }
+]);
+const cleanStmtComm = sanitizeMedicalText(unpacked.commentary);
+assert(!cleanStmtComm.includes('"_id"'), 'Não deve expor JSON bruto');
+assert(cleanStmtComm.includes('Jarisch-Herxheimer'), 'Deve extrair statementComment');
+const unpackedOpts = unpacked.options as Array<{ letter: string; explanation?: string }>;
+assert.strictEqual(unpackedOpts[0].explanation, 'Alternativa incorreta: Leishmania é protozoário.');
+assert.strictEqual(unpackedOpts[1].explanation, 'Alternativa correta: Sífilis desencadeia RJH.');
+console.log('    ✓ Comentário JSON legado desempacotado em síntese limpa + justificativas A-E.');
 
 console.log('\n✅ TODOS OS TESTES DE SEGURANÇA E AUDITORIA FORAM APROVADOS COM SUCESSO!\n');
 

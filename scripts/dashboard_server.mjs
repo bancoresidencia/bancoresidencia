@@ -266,10 +266,14 @@ function getQuestionDetail(code) {
   return null;
 }
 
+const ALLOWED_LOCAL_ORIGINS = new Set([
+  `http://localhost:${PORT}`,
+  `http://127.0.0.1:${PORT}`
+]);
+
 function sendJson(res, data, statusCode = 200) {
   res.writeHead(statusCode, {
     'Content-Type': 'application/json; charset=utf-8',
-    'Access-Control-Allow-Origin': '*',
     'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
     'Pragma': 'no-cache',
     'Expires': '0'
@@ -278,7 +282,12 @@ function sendJson(res, data, statusCode = 200) {
 }
 
 const server = http.createServer((req, res) => {
-  const url = new URL(req.url, `http://${req.headers.host}`);
+  const url = new URL(req.url, `http://localhost:${PORT}`);
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_LOCAL_ORIGINS.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
 
   if (url.pathname === '/api/status') {
     return sendJson(res, getStatus());
@@ -297,8 +306,12 @@ const server = http.createServer((req, res) => {
     return sendJson(res, detail);
   }
 
-  // Ações de controle da esteira
+  // Ações de controle da esteira (bloqueia origens externas contra CSRF local)
   if (req.method === 'POST') {
+    if (origin && !ALLOWED_LOCAL_ORIGINS.has(origin)) {
+      return sendJson(res, { ok: false, message: 'Origem externa bloqueada.' }, 403);
+    }
+
     if (url.pathname === '/api/action/start') {
       const state = getStatus();
       if (state.status === 'RUNNING') {
@@ -307,8 +320,12 @@ const server = http.createServer((req, res) => {
 
       const specKey = url.searchParams.get('specialty') || 'preventiva';
       const spec = SPECIALTY_MAP[specKey] || SPECIALTY_MAP['preventiva'];
-      const workers = url.searchParams.get('workers') || '20';
-      const nextSpec = url.searchParams.get('next') || spec.next;
+      const parsedWorkers = parseInt(url.searchParams.get('workers') || '20', 10);
+      const safeWorkers = Number.isFinite(parsedWorkers) ? Math.min(32, Math.max(1, parsedWorkers)) : 20;
+      const rawNext = url.searchParams.get('next') || spec.next;
+      const safeNextSpec = (rawNext === 'none' || Object.prototype.hasOwnProperty.call(SPECIALTY_MAP, rawNext))
+        ? rawNext
+        : spec.next;
 
       if (fs.existsSync(SIGNAL_PATH)) fs.unlinkSync(SIGNAL_PATH);
 
@@ -318,8 +335,8 @@ const server = http.createServer((req, res) => {
         `--specialty=${spec.name}`,
         '--model=gemini-3.1-flash-lite',
         '--paid',
-        `--workers=${workers}`,
-        `--next=${nextSpec}`
+        `--workers=${safeWorkers}`,
+        `--next=${safeNextSpec}`
       ], {
         stdio: 'inherit',
         detached: false
@@ -327,7 +344,7 @@ const server = http.createServer((req, res) => {
 
       return sendJson(res, {
         ok: true,
-        message: `Esteira iniciada para ${spec.name} com ${workers} workers em gemini-3.1-flash-lite!`
+        message: `Esteira iniciada para ${spec.name} com ${safeWorkers} workers em gemini-3.1-flash-lite!`
       });
     }
 
@@ -1240,7 +1257,7 @@ function renderDashboardHtml() {
 </html>`;
 }
 
-server.listen(PORT, () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log('='.repeat(80));
   console.log(`📊 DASHBOARD DE MONITORAMENTO APERFEIÇOADO (Porta ${PORT})`);
   console.log(`🌐 Acesse no seu navegador: http://localhost:${PORT}`);

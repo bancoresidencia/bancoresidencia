@@ -69,6 +69,30 @@ function saveStaged(records) {
   fs.writeFileSync(STAGING_FILE, JSON.stringify(records, null, 2), 'utf8');
 }
 
+const MASTER_LIVE_FILE = path.resolve('data/relatorio_gabaritos_sessao_live.json');
+function logToMasterLive(record) {
+  try {
+    let master = { totalGravadas: 0, questoes: [] };
+    if (fs.existsSync(MASTER_LIVE_FILE)) {
+      master = JSON.parse(fs.readFileSync(MASTER_LIVE_FILE, 'utf8'));
+    }
+    const codes = new Set((master.questoes || []).map(q => q.code).filter(Boolean));
+    if (!codes.has(record.code)) {
+      master.questoes = master.questoes || [];
+      master.questoes.push({
+        code: record.code,
+        gabarito: record.correct_answer,
+        origem: `Fase 2 Web (${record.institution ? record.institution.slice(0, 30) : 'Web'})`,
+        status: 'Gravado no Supabase',
+        timestamp: new Date().toISOString()
+      });
+      master.totalGravadas = master.questoes.length;
+      master.ultimaAtualizacao = new Date().toISOString();
+      fs.writeFileSync(MASTER_LIVE_FILE, JSON.stringify(master, null, 2));
+    }
+  } catch (e) {}
+}
+
 function updatePipelineStatus(fase2Stats) {
   try {
     let status = {};
@@ -306,12 +330,11 @@ export async function runFase2(targetInstitutions = [
       console.log(`   ✅ HOMOLOGADA DUAL-GATE (Stmt: ${(matchedPage.simStmt * 100).toFixed(0)}% | Opt: ${(matchedPage.simOpt * 100).toFixed(0)}%)!`);
       console.log(`      Gabarito: [${matchedPage.correctLetter}] | Fonte: ${matchedPage.url}`);
       
-      // INGESTÃO DIRETA IMEDIATA NO SUPABASE (AUTORIZADA PELO USUÁRIO)
+      // INGESTÃO DIRETA IMEDIATA NO SUPABASE (APENAS O GABARITO, SEM COMENTÁRIO)
       try {
         const { error: upErr } = await supabase.from('questions')
           .update({
-            correct_answer: matchedPage.correctLetter,
-            commentary: matchedPage.commentary || null
+            correct_answer: matchedPage.correctLetter
           })
           .eq('id', q.id);
         if (!upErr) {
@@ -340,6 +363,7 @@ export async function runFase2(targetInstitutions = [
       
       staged.push(record);
       saveStaged(staged);
+      logToMasterLive(record);
       stats.homologadas = staged.length;
     } else {
       console.log(`   ❌ Não homologada nesta rodada (mantida na quarentena/sem match).`);

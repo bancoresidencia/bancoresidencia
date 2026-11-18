@@ -66,14 +66,14 @@ export async function POST() {
       .eq('id', user.id);
 
     await supabaseAdmin.auth.admin.updateUserById(user.id, {
-      user_metadata: {
-        ...user.user_metadata,
+      app_metadata: {
+        ...user.app_metadata,
         subscription_plan: 'free',
         subscription_status: 'refunded'
       }
     });
 
-    // 6. Atualizar a ordem no banco
+    // 6. Atualizar a ordem no banco e cancelar eventual comissão de indicação vinculada
     await supabaseAdmin
       .from('orders')
       .update({
@@ -83,6 +83,15 @@ export async function POST() {
         updated_at: nowIso
       })
       .eq('id', order.id);
+
+    try {
+      await supabaseAdmin
+        .from('ambassador_referrals')
+        .update({ status: 'refunded' })
+        .eq('order_id', order.id);
+    } catch {
+      // ignore
+    }
 
     return NextResponse.json({
       success: true,

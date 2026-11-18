@@ -87,16 +87,7 @@ export function loadGoogleGsiScript(): Promise<void> {
 }
 
 /**
- * Detecta se o ambiente atual é localhost ou dev
- */
-function isLocalhost(): boolean {
-  if (typeof window === 'undefined') return false;
-  const host = window.location.hostname;
-  return host === 'localhost' || host === '127.0.0.1' || host.startsWith('192.168.') || host === '';
-}
-
-/**
- * Constrói o redirect_uri para o fluxo OAuth implícito (página client-side)
+ * Constrói o redirect_uri para o fluxo OAuth (callback client-side/servidor)
  */
 export function getGoogleOAuthRedirectUri(): string {
   if (typeof window === 'undefined') return '';
@@ -119,6 +110,20 @@ export function getGoogleOAuthRedirectUri(): string {
  *   - https://bancoresidencia-kappa.vercel.app/auth/google/callback
  *   - http://localhost:3000/auth/google/callback
  */
+function generateAndStoreOAuthState(mode: 'redirect' | 'popup'): string {
+  const bytes = new Uint8Array(16);
+  if (typeof window !== 'undefined' && window.crypto?.getRandomValues) {
+    window.crypto.getRandomValues(bytes);
+  }
+  const nonce = Array.from(bytes, (b) => b.toString(16).padStart(2, '0')).join('');
+  const stateValue = `${mode}:${nonce}`;
+  if (typeof document !== 'undefined') {
+    const secureAttr = window.location.protocol === 'https:' ? '; Secure' : '';
+    document.cookie = `br_gcal_oauth_state=${encodeURIComponent(stateValue)}; Path=/; Max-Age=600; SameSite=Lax${secureAttr}`;
+  }
+  return stateValue;
+}
+
 export function startGoogleOAuthRedirect(clientId: string): void {
   if (typeof window === 'undefined') return;
 
@@ -128,8 +133,8 @@ export function startGoogleOAuthRedirect(clientId: string): void {
     'https://www.googleapis.com/auth/calendar.readonly',
   ].join(' ');
 
-  // Fluxo implícito: response_type=token → Google retorna access_token direto no hash
-  // Não precisa de client_secret para trocar código
+  const oauthState = generateAndStoreOAuthState('redirect');
+
   const params = new URLSearchParams({
     client_id: clientId,
     redirect_uri: redirectUri,
@@ -138,6 +143,7 @@ export function startGoogleOAuthRedirect(clientId: string): void {
     scope,
     include_granted_scopes: 'true',
     prompt: 'consent select_account',
+    state: oauthState,
   });
 
   window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
@@ -172,6 +178,8 @@ export function startGoogleOAuthPopup(
     'https://www.googleapis.com/auth/calendar.readonly',
   ].join(' ');
 
+  const oauthState = generateAndStoreOAuthState('popup');
+
   const params = new URLSearchParams({
     client_id: clientId,
     redirect_uri: redirectUri,
@@ -180,7 +188,7 @@ export function startGoogleOAuthPopup(
     scope,
     include_granted_scopes: 'true',
     prompt: 'select_account',
-    state: 'popup',
+    state: oauthState,
   });
 
   const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
@@ -219,14 +227,14 @@ export function startGoogleOAuthPopup(
     clearInterval(pollTimer);
   };
 
-  // 1. Escuta via postMessage da janela-filha (graças a same-origin-allow-popups)
+  // 1. Escuta via postMessage da janela-filha (sem trafegar access_token cru)
   const onMessage = (e: MessageEvent) => {
     if (resolved) return;
     if (e.origin !== window.location.origin) return;
-    if (e.data?.type === 'GOOGLE_AUTH_SUCCESS' && e.data?.accessToken) {
+    if (e.data?.type === 'GOOGLE_AUTH_SUCCESS') {
       cleanup();
       try { popup.close(); } catch { /* ignore */ }
-      onSuccess(e.data.accessToken);
+      onSuccess(e.data.email || 'connected_server');
     } else if (e.data?.type === 'GOOGLE_AUTH_ERROR') {
       cleanup();
       try { popup.close(); } catch { /* ignore */ }

@@ -3,7 +3,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import zlib from 'node:zlib';
 import { DatabaseSync } from 'node:sqlite';
-import { FlashcardImportFormat } from '@/types/flashcards';
+import type { FlashcardImportFormat } from '@/types/flashcards';
 
 export interface ParsedImportCard {
   front: string;
@@ -66,6 +66,12 @@ export function extractClozeBack(front: string): string {
   return matches.join(', ') || 'Oclusão Cloze';
 }
 
+const MAX_ZIP_ENTRIES = 250;
+const MAX_SINGLE_ENTRY_BYTES = 50 * 1024 * 1024; // 50MB
+const MAX_TOTAL_UNCOMPRESSED_BYTES = 64 * 1024 * 1024; // 64MB
+const MAX_SQLITE_CARDS = 25000;
+const MAX_ARCHIVE_DEPTH = 1;
+
 /**
  * Extrator leve de ZIP em memória puro Node.js sem dependências externas
  */
@@ -85,7 +91,14 @@ export function parseZipEntries(buffer: Buffer): Record<string, Buffer> {
 
   const cdOffset = buffer.readUInt32LE(eocdOffset + 16);
   const totalEntries = buffer.readUInt16LE(eocdOffset + 10);
+  if (totalEntries > MAX_ZIP_ENTRIES) {
+    throw new Error(
+      `Pacote compactado excede o limite máximo seguro de entradas (${MAX_ZIP_ENTRIES}).`
+    );
+  }
+
   const files: Record<string, Buffer> = {};
+  let totalUncompressedBytes = 0;
 
   let cur = cdOffset;
   for (let e = 0; e < totalEntries && cur < buffer.length - 46; e++) {
@@ -93,14 +106,22 @@ export function parseZipEntries(buffer: Buffer): Record<string, Buffer> {
 
     const method = buffer.readUInt16LE(cur + 10);
     const compSize = buffer.readUInt32LE(cur + 20);
+    const uncompSize = buffer.readUInt32LE(cur + 24);
     const fnLen = buffer.readUInt16LE(cur + 28);
     const extraLen = buffer.readUInt16LE(cur + 30);
     const commentLen = buffer.readUInt16LE(cur + 32);
     const localHeaderOffset = buffer.readUInt32LE(cur + 42);
 
+    if (uncompSize > MAX_SINGLE_ENTRY_BYTES) {
+      throw new Error('Entrada compactada excede o limite máximo permitido de 50MB.');
+    }
+
     let rawName = buffer.toString('utf8', cur + 46, cur + 46 + fnLen);
-    // Sanitização de caminho contra zip-slip
-    rawName = path.normalize(rawName).replace(/^(\.\.[\/\\])+/, '');
+    // Sanitização estrita de caminho contra Zip-Slip
+    rawName = path.posix
+      .normalize(rawName.replace(/\\/g, '/'))
+      .replace(/^(\.\.\/)+/, '')
+      .replace(/^\/+/, '');
 
     if (localHeaderOffset + 30 <= buffer.length) {
       const localFnLen = buffer.readUInt16LE(localHeaderOffset + 26);
@@ -111,11 +132,26 @@ export function parseZipEntries(buffer: Buffer): Record<string, Buffer> {
         const rawData = buffer.subarray(dataOffset, dataOffset + compSize);
         let content: Buffer | null = null;
         if (method === 0) {
+          if (rawData.length > MAX_SINGLE_ENTRY_BYTES) {
+            throw new Error('Entrada do pacote excede o limite máximo permitido de 50MB.');
+          }
           content = rawData;
         } else if (method === 8) {
-          content = zlib.inflateRawSync(rawData);
+          try {
+            content = zlib.inflateRawSync(rawData, { maxOutputLength: MAX_SINGLE_ENTRY_BYTES });
+          } catch {
+            throw new Error(
+              'Entrada compactada inválida ou excede o limite seguro de descompressão (proteção contra ZIP bomb).'
+            );
+          }
         }
         if (content) {
+          totalUncompressedBytes += content.length;
+          if (totalUncompressedBytes > MAX_TOTAL_UNCOMPRESSED_BYTES) {
+            throw new Error(
+              'Volume total descompactado excede o limite máximo seguro de 64MB (proteção contra ZIP bomb).'
+            );
+          }
           files[rawName] = content;
         }
       }
@@ -134,6 +170,10 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
   cards: ParsedImportCard[];
   deckMap: Record<string, string>;
 } {
+  if (dbBuffer.length > MAX_SINGLE_ENTRY_BYTES) {
+    throw new Error('Banco de dados SQLite excede o limite máximo permitido de 50MB.');
+  }
+
   const tempPath = path.join(
     os.tmpdir(),
     `anki_${Date.now()}_${Math.random().toString(36).substring(2)}.db`
@@ -157,7 +197,7 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
       }
     } catch {
       try {
-        const deckRows = (db.prepare('SELECT id, name FROM decks').all() || []) as unknown as Array<{ id: number | string; name: string }>;
+        const deckRows = (db.prepare('SELECT id, name FROM decks LIMIT 500').all() || []) as unknown as Array<{ id: number | string; name: string }>;
         for (const d of deckRows) {
           deckMap[String(d.id)] = d.name;
         }
@@ -179,14 +219,15 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
         FROM notes n
         LEFT JOIN cards c ON n.id = c.nid
         GROUP BY n.id
+        LIMIT ${MAX_SQLITE_CARDS}
       `).all() as unknown as NoteCardRow[];
     } catch {
       try {
-        noteRows = db.prepare('SELECT id, tags, flds FROM notes').all() as unknown as NoteCardRow[];
+        noteRows = db.prepare(`SELECT id, tags, flds FROM notes LIMIT ${MAX_SQLITE_CARDS}`).all() as unknown as NoteCardRow[];
       } catch {
         // Tenta tabela genérica caso seja um .db de outro aplicativo de flashcards
         try {
-          const generic = db.prepare('SELECT front, back, comment, tags FROM flashcards').all() as unknown as Array<{
+          const generic = db.prepare(`SELECT front, back, comment, tags FROM flashcards LIMIT ${MAX_SQLITE_CARDS}`).all() as unknown as Array<{
             front: string;
             back: string;
             comment?: string;
@@ -374,8 +415,13 @@ export function parseAnkiText(
 export function parseUniversalFlashcardFile(
   buffer: Buffer,
   filename: string,
-  requestedFormat: FlashcardImportFormat = 'auto'
+  requestedFormat: FlashcardImportFormat = 'auto',
+  depth = 0
 ): ParsedImportResult {
+  if (depth > MAX_ARCHIVE_DEPTH) {
+    throw new Error('Profundidade máxima de pacotes aninhados excedida (proteção contra recursão).');
+  }
+
   const ext = (path.extname(filename) || '').toLowerCase();
 
   // 1. Arquivos ZIP / APKG / COLPKG
@@ -404,7 +450,7 @@ export function parseUniversalFlashcardFile(
       (k) => k.endsWith('.apkg') || k.endsWith('.colpkg')
     );
     if (nestedApkg && unzipped[nestedApkg]) {
-      return parseUniversalFlashcardFile(unzipped[nestedApkg], nestedApkg, 'apkg');
+      return parseUniversalFlashcardFile(unzipped[nestedApkg], nestedApkg, 'apkg', depth + 1);
     }
 
     // Se houver banco sqlite genérico dentro do zip

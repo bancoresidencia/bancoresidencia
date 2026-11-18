@@ -1,23 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
 import catalogData from '@/data/medicalKnowledgeCatalog.json';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 
 export const dynamic = 'force-dynamic';
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey =
-    process.env.SUPABASE_SERVICE_ROLE_KEY ||
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
-    'placeholder-key';
-  return createSupabaseAdminClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
 
 // Conjunto com todos os storagePaths permitidos no catálogo oficial
 const allowedStoragePaths = new Set<string>();
@@ -39,16 +25,22 @@ interface RateLimitEntry {
 const rateLimitMap = new Map<string, RateLimitEntry>();
 const RATE_LIMIT_WINDOW_MS = 60 * 1000;
 const MAX_REQUESTS_PER_WINDOW = 30;
+const MAX_RATE_LIMIT_ENTRIES = 5000;
 
 function isRateLimited(ip: string): boolean {
   const now = Date.now();
   const entry = rateLimitMap.get(ip);
 
-  if (rateLimitMap.size > 2000) {
+  if (rateLimitMap.size >= MAX_RATE_LIMIT_ENTRIES) {
     for (const [key, val] of rateLimitMap.entries()) {
       if (val.resetAt < now) {
         rateLimitMap.delete(key);
       }
+    }
+    while (rateLimitMap.size >= MAX_RATE_LIMIT_ENTRIES) {
+      const oldestKey = rateLimitMap.keys().next().value;
+      if (oldestKey === undefined) break;
+      rateLimitMap.delete(oldestKey);
     }
   }
 

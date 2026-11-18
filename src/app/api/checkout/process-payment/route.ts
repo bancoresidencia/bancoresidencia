@@ -3,8 +3,8 @@ import { createClient } from '@/lib/supabase/server';
 import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { PLANS, PlanId } from '@/config/plans';
-import { validateReferralCode, normalizeReferralCode } from '@/config/ambassadorConfig';
-import { recordReferralSale } from '@/services/ambassadorService';
+import { normalizeReferralCode } from '@/config/ambassadorConfig';
+import { recordReferralSale, validateBackendReferralCoupon } from '@/services/ambassadorService';
 
 export async function POST(req: NextRequest) {
   try {
@@ -29,32 +29,42 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (!paymentData || typeof paymentData !== 'object' || !paymentData.payment_method_id) {
+      return NextResponse.json(
+        { error: 'Dados de pagamento inválidos.' },
+        { status: 400 }
+      );
+    }
+
     const selectedPlan = PLANS[planId as PlanId];
     const paymentService = getPaymentService();
     const supabaseAdmin = getSupabaseAdmin();
 
     const isPix = paymentData.payment_method_id === 'pix';
 
-    // Validação de Cupom de Desconto / Código de Indicação
+    // Validação estrita server-side de Cupom de Desconto / Código de Indicação (bloqueia cupons falsos e auto-indicação)
     let discountPercent = 0;
     let validatedCoupon: string | null = null;
     let referrerName: string | null = null;
 
     if (couponCode && typeof couponCode === 'string' && couponCode.trim()) {
       const cleanCoupon = normalizeReferralCode(couponCode);
-      const validation = validateReferralCode(cleanCoupon, undefined, user.id, {
-        id: user.id,
-        email: user.email || '',
-        name: (user.user_metadata?.name as string) || '',
-        dailyGoal: 20,
-        createdAt: new Date().toISOString()
-      });
+      const validation = await validateBackendReferralCoupon(
+        cleanCoupon,
+        user.id,
+        (user.user_metadata?.name as string) || undefined
+      );
 
-      if (validation.valid) {
-        discountPercent = validation.discountPercent || 10;
-        validatedCoupon = cleanCoupon;
-        referrerName = validation.referrerName || null;
+      if (!validation.valid) {
+        return NextResponse.json(
+          { error: validation.message || 'Cupom de indicação inválido ou não elegível.' },
+          { status: 400 }
+        );
       }
+
+      discountPercent = validation.discountPercent;
+      validatedCoupon = cleanCoupon;
+      referrerName = validation.referrerName || null;
     }
 
     const discountFactor = discountPercent > 0 ? (1 - discountPercent / 100) : 1;
@@ -72,12 +82,12 @@ export async function POST(req: NextRequest) {
           : `Hippocampus — ${selectedPlan.name}`,
         payment_method_id: paymentData.payment_method_id,
         token: paymentData.token,
-        installments: Number(paymentData.installments) || 1,
+        installments: Math.max(1, Math.min(selectedPlan.maxInstallments, Number(paymentData.installments) || 1)),
         issuer_id: paymentData.issuer_id ? Number(paymentData.issuer_id) : undefined,
         payer: {
           email: payerEmail,
-          first_name: paymentData.payer?.first_name || user.user_metadata?.name?.split(' ')[0] || 'Dr(a).',
-          last_name: paymentData.payer?.last_name || user.user_metadata?.name?.split(' ').slice(1).join(' ') || 'Residente',
+          first_name: paymentData.payer?.first_name || (user.user_metadata?.name as string | undefined)?.split(' ')[0] || 'Dr(a).',
+          last_name: paymentData.payer?.last_name || (user.user_metadata?.name as string | undefined)?.split(' ').slice(1).join(' ') || 'Residente',
           identification: paymentData.payer?.identification ? {
             type: paymentData.payer.identification.type || 'CPF',
             number: String(paymentData.payer.identification.number).replace(/\D/g, '')
@@ -92,6 +102,7 @@ export async function POST(req: NextRequest) {
           coupon_code: validatedCoupon,
           discount_percent: discountPercent,
           original_amount: selectedPlan.totalPrice,
+          expected_amount: amount,
           referrer_name: referrerName
         }
       },
@@ -105,9 +116,10 @@ export async function POST(req: NextRequest) {
 
     const paymentId = String(mpResponse.id || '');
     const status = mpResponse.status || 'pending';
-    const now = new Date();
-    const expiresAt = new Date(now.getTime() + selectedPlan.durationDays * 24 * 60 * 60 * 1000);
-    const guaranteeUntil = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const approvalBase = mpResponse.date_approved ? new Date(mpResponse.date_approved) : new Date();
+    const expiresAt = new Date(approvalBase.getTime() + selectedPlan.durationDays * 24 * 60 * 60 * 1000);
+    const guaranteeUntil = new Date(approvalBase.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const nowIso = new Date().toISOString();
 
     // 4. Se o pagamento foi aprovado imediatamente (ex: Cartão de Crédito)
     if (status === 'approved') {
@@ -118,17 +130,17 @@ export async function POST(req: NextRequest) {
             subscription_plan: 'pro',
             subscription_status: 'active',
             subscription_duration: selectedPlan.id,
-            subscription_started_at: now.toISOString(),
+            subscription_started_at: approvalBase.toISOString(),
             subscription_expires_at: expiresAt.toISOString(),
             guarantee_expires_at: guaranteeUntil.toISOString(),
-            updated_at: now.toISOString()
+            updated_at: nowIso
           })
           .eq('id', user.id);
 
-        // Atualizar também nos user_metadata do Supabase Auth para consistência imediata
+        // Grava exclusivamente em app_metadata (imutável pelo cliente no navegador)
         await supabaseAdmin.auth.admin.updateUserById(user.id, {
-          user_metadata: {
-            ...user.user_metadata,
+          app_metadata: {
+            ...user.app_metadata,
             subscription_plan: 'pro',
             subscription_status: 'active',
             subscription_duration: selectedPlan.id,
@@ -141,19 +153,19 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 5. Salvar na tabela de orders (com fallback tolerante a falhas)
+    // 5. Salvar na tabela de orders
     let orderRecord: { id?: string } | null = null;
     try {
       const pixData = mpResponse.point_of_interaction?.transaction_data;
       const { data: insertedOrder } = await supabaseAdmin
         .from('orders')
-        .insert({
+        .upsert({
           user_id: user.id,
           mp_payment_id: paymentId,
           plan_id: selectedPlan.id,
           plan_name: selectedPlan.name,
           amount: amount,
-          installments: Number(paymentData.installments) || 1,
+          installments: Math.max(1, Number(paymentData.installments) || 1),
           payment_method: paymentData.payment_method_id,
           status: status === 'approved' ? 'approved' : 'pending',
           qr_code: pixData?.qr_code || null,
@@ -170,13 +182,13 @@ export async function POST(req: NextRequest) {
               final_amount: amount
             } : null
           }
-        })
+        }, { onConflict: 'mp_payment_id' })
         .select()
         .maybeSingle();
 
       orderRecord = insertedOrder;
     } catch (orderErr) {
-      console.warn('Aviso: Tabela public.orders pode estar aguardando execução da migration 012.', orderErr);
+      console.warn('Aviso ao gravar pedido na tabela public.orders:', orderErr);
     }
 
     // Registrar indicação de embaixador se pagamento aprovado com cupom válido
@@ -184,6 +196,7 @@ export async function POST(req: NextRequest) {
       try {
         await recordReferralSale({
           couponCode: validatedCoupon,
+          referredUserId: user.id,
           orderId: orderRecord?.id,
           studentName: (user.user_metadata?.name as string) || (user.email ? user.email.split('@')[0] : 'Estudante'),
           studentEmail: user.email || '',
@@ -198,7 +211,6 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 6. Extrair dados para resposta ao Frontend
     const pointOfInteraction = mpResponse.point_of_interaction;
     const pixData = pointOfInteraction?.transaction_data;
 

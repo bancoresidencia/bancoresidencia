@@ -4,10 +4,11 @@ import { DailyScheduleSlot } from '@/components/dashboard/scheduleTypes';
 
 // ── 1. Criptografia AES-256-GCM para Tokens em Repouso ──
 function getEncryptionKey(): Buffer {
-  const secret =
-    process.env.CALENDAR_ENCRYPTION_KEY ||
-    process.env.GOOGLE_CLIENT_SECRET ||
-    'bancoresidencia_secure_calendar_token_vault_2026';
+  const configuredSecret = process.env.CALENDAR_ENCRYPTION_KEY || process.env.GOOGLE_CLIENT_SECRET;
+  if (!configuredSecret && process.env.NODE_ENV === 'production') {
+    throw new Error('CALENDAR_ENCRYPTION_KEY ou GOOGLE_CLIENT_SECRET obrigatório em produção.');
+  }
+  const secret = configuredSecret || 'bancoresidencia_secure_calendar_token_vault_2026';
   return crypto.createHash('sha256').update(secret).digest();
 }
 
@@ -24,7 +25,7 @@ export function encryptSecret(plainText: string): string {
 export function decryptSecret(cipherText: string): string {
   if (!cipherText) return '';
   const parts = cipherText.split(':');
-  if (parts.length !== 3) return cipherText; // Formato legado/texto simples fallback
+  if (parts.length !== 3) return ''; // Rejeita formatos não autenticados
   try {
     const [ivHex, authTagHex, encryptedHex] = parts;
     const decipher = crypto.createDecipheriv('aes-256-gcm', getEncryptionKey(), Buffer.from(ivHex, 'hex'));
@@ -33,8 +34,8 @@ export function decryptSecret(cipherText: string): string {
     decrypted += decipher.final('utf8');
     return decrypted;
   } catch (err) {
-    console.error('[GoogleCalendarServer] Falha ao descriptografar token:', err);
-    return cipherText;
+    console.error('[GoogleCalendarServer] Falha de integridade AES-GCM ao descriptografar token:', err);
+    return '';
   }
 }
 
@@ -102,9 +103,10 @@ export async function getValidGoogleAccessToken(userId: string): Promise<string>
   const now = new Date();
   const expiresAt = integration.token_expires_at ? new Date(integration.token_expires_at) : new Date(0);
 
-  // Se o token ainda tem mais de 5 minutos de validade, reutiliza
+  // Se o token ainda tem mais de 5 minutos de validade e íntegro, reutiliza
   if (expiresAt.getTime() - now.getTime() > 5 * 60 * 1000 && integration.access_token) {
-    return decryptSecret(integration.access_token);
+    const decryptedAccess = decryptSecret(integration.access_token);
+    if (decryptedAccess) return decryptedAccess;
   }
 
   // Se expirou ou está perto de expirar, usa o refresh_token para renovar nos bastidores

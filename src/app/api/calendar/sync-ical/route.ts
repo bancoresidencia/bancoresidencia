@@ -1,5 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
+import dns from 'node:dns/promises';
 import ical from 'node-ical';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
+import {
+  validateIcalUrlFormat,
+  isPrivateOrReservedIp,
+  safeFetchBufferWithLimit
+} from '@/utils/urlSecurity';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -19,23 +26,26 @@ interface CalendarEventResult {
 
 export async function POST(req: NextRequest) {
   try {
-    const body = await req.json();
-    let url = (body?.url || body?.icalUrl || '').trim();
+    // 0. Autenticação obrigatória de estudante (impede uso como proxy público)
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { error: 'Faça login na plataforma para sincronizar sua agenda.' },
+        { status: 401 }
+      );
+    }
 
-    if (!url) {
+    const body = await req.json();
+    const rawUrl = (body?.url || body?.icalUrl || '').trim();
+
+    if (!rawUrl) {
       return NextResponse.json(
         { error: 'Por favor, cole o link secreto (.ics) da sua agenda.' },
         { status: 400 }
       );
     }
 
-    // Normaliza links webcal:// para https://
-    if (url.startsWith('webcal://')) {
-      url = url.replace('webcal://', 'https://');
-    }
-
-    // Validação preventiva de links comuns errados
-    if (url.includes('/calendar/u/') || url.includes('/r/month') || url.includes('/r/week') || url.includes('/embed?src=')) {
+    if (rawUrl.includes('/calendar/u/') || rawUrl.includes('/r/month') || rawUrl.includes('/r/week') || rawUrl.includes('/embed?src=')) {
       return NextResponse.json(
         {
           error: 'Você colou o link do navegador ou de incorporação. Você precisa colar o "Endereço secreto no formato iCal" (termina com .ics), disponível em Configurações da sua agenda > Integrar agenda.'
@@ -44,93 +54,71 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    let parsedUrl: URL;
+    // 1. Validação estrita contra SSRF (apenas calendar.google.com, Outlook e iCloud; sem 'google.com' aberto)
+    const urlCheck = validateIcalUrlFormat(rawUrl);
+    if (!urlCheck.allowed || !urlCheck.normalizedUrl) {
+      return NextResponse.json(
+        { error: urlCheck.reason || 'URL de calendário não permitida.' },
+        { status: 400 }
+      );
+    }
+
+    // 2. Validação DNS contra DNS Rebinding / IPs internos
+    const parsedHost = new URL(urlCheck.normalizedUrl).hostname;
     try {
-      parsedUrl = new URL(url);
+      const resolvedIps = await dns.lookup(parsedHost, { all: true });
+      if (!resolvedIps.length || resolvedIps.some((r) => isPrivateOrReservedIp(r.address))) {
+        return NextResponse.json(
+          { error: 'Endereço de destino inválido por política de segurança.' },
+          { status: 400 }
+        );
+      }
     } catch {
       return NextResponse.json(
-        { error: 'Formato de link inválido. Certifique-se de que a URL é válida.' },
+        { error: 'Não foi possível resolver o servidor da agenda informada.' },
         { status: 400 }
       );
     }
 
-    if (parsedUrl.protocol !== 'https:') {
-      return NextResponse.json(
-        { error: 'Por motivos de segurança, o link deve usar obrigatoriamente HTTPS seguro (https://).' },
-        { status: 400 }
-      );
-    }
-
-    const hostname = parsedUrl.hostname.toLowerCase();
-
-    // Bloqueia IPs diretos (IPv4 e IPv6), localhost e redes internas contra SSRF
-    const ipV4Regex = /^(\d{1,3}\.){3}\d{1,3}$/;
-    const isIpV4 = ipV4Regex.test(hostname);
-    const isIpV6 = hostname.startsWith('[') || hostname.includes(':');
-    const isLocalhost = hostname === 'localhost' || hostname.endsWith('.local') || hostname.endsWith('.internal');
-
-    if (isIpV4 || isIpV6 || isLocalhost) {
-      return NextResponse.json(
-        { error: 'Endereços IP diretos ou locais não são permitidos por segurança.' },
-        { status: 400 }
-      );
-    }
-
-    // Whitelist estrita de provedores de calendário homologados (Google, Microsoft, Apple)
-    const allowedDomains = [
-      'calendar.google.com',
-      'google.com',
-      'outlook.live.com',
-      'outlook.office.com',
-      'outlook.office365.com',
-      'icloud.com'
-    ];
-
-    const isAllowedDomain = allowedDomains.some(
-      (domain) => hostname === domain || hostname.endsWith('.' + domain)
-    );
-
-    if (!isAllowedDomain) {
-      return NextResponse.json(
-        {
-          error:
-            'Por motivos de segurança, são aceitos apenas endereços de agenda oficiais do Google Agenda (calendar.google.com), Microsoft Outlook ou Apple iCloud.'
-        },
-        { status: 400 }
-      );
-    }
-
-    // Busca o arquivo .ics no servidor com timeout de 8 segundos para evitar travamentos
+    // 3. Busca o arquivo .ics bloqueando redirecionamentos HTTP (redirect: 'error') e limitando a 2MB
     let icsRawText = '';
     try {
-      const response = await fetch(url, {
-        headers: {
+      const fetched = await safeFetchBufferWithLimit(
+        urlCheck.normalizedUrl,
+        2 * 1024 * 1024,
+        8000,
+        {
           'User-Agent': 'BancoResidencia-CalendarSync/1.0',
-          'Accept': 'text/calendar, text/plain, */*'
-        },
-        signal: AbortSignal.timeout(8000),
-        next: { revalidate: 0 }
-      });
+          'Accept': 'text/calendar, text/plain'
+        }
+      );
 
-      if (!response.ok) {
+      if (!fetched.ok) {
         return NextResponse.json(
           {
-            error: `Erro ao acessar o link (Código ${response.status}). Verifique se o endereço secreto foi copiado por completo.`
+            error: `Erro ao acessar o link (Código ${fetched.status}). Verifique se o endereço secreto foi copiado por completo.`
           },
           { status: 400 }
         );
       }
 
-      icsRawText = await response.text();
-    } catch (fetchErr: any) {
-      if (fetchErr?.name === 'TimeoutError' || fetchErr?.message?.includes('timeout')) {
+      icsRawText = fetched.buffer.toString('utf8');
+    } catch (fetchErr: unknown) {
+      const errMsg = fetchErr instanceof Error ? fetchErr.message : '';
+      if (errMsg.includes('timeout') || (fetchErr as { name?: string })?.name === 'TimeoutError') {
         return NextResponse.json(
           { error: 'Tempo limite esgotado ao tentar acessar o link do Google Agenda. Verifique sua conexão e o link.' },
           { status: 408 }
         );
       }
+      if (errMsg.includes('limite máximo')) {
+        return NextResponse.json(
+          { error: 'O arquivo da agenda excede o limite máximo seguro de 2MB.' },
+          { status: 413 }
+        );
+      }
       return NextResponse.json(
-        { error: 'Não foi possível conectar ao endereço fornecido. Certifique-se de que a URL está correta.' },
+        { error: 'Não foi possível conectar ao endereço fornecido (redirecionamentos externos são bloqueados por segurança).' },
         { status: 400 }
       );
     }

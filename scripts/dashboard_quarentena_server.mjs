@@ -17,11 +17,22 @@ if (!fs.existsSync(DB_PATH)) {
 
 const db = new DatabaseSync(DB_PATH);
 
-// Helper para ler body JSON
+const ALLOWED_LOCAL_ORIGINS = new Set([
+  `http://localhost:${PORT}`,
+  `http://127.0.0.1:${PORT}`
+]);
+
+// Helper para ler body JSON com limite de 1MB
 function parseJsonBody(req) {
   return new Promise((resolve, reject) => {
     let body = '';
-    req.on('data', chunk => { body += chunk; });
+    req.on('data', chunk => {
+      body += chunk;
+      if (body.length > 1024 * 1024) {
+        req.destroy();
+        reject(new Error('Payload excede 1MB'));
+      }
+    });
     req.on('end', () => {
       try {
         resolve(body ? JSON.parse(body) : {});
@@ -37,14 +48,24 @@ const server = http.createServer(async (req, res) => {
   const urlObj = new URL(req.url, `http://localhost:${PORT}`);
   const pathname = urlObj.pathname;
 
-  // CORS headers
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  // CORS restrito ao localhost
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_LOCAL_ORIGINS.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') {
     res.writeHead(204);
     res.end();
+    return;
+  }
+
+  if (req.method === 'POST' && origin && !ALLOWED_LOCAL_ORIGINS.has(origin)) {
+    res.writeHead(403, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ error: 'Origem externa bloqueada.' }));
     return;
   }
 
@@ -821,7 +842,7 @@ function getDashboardHtml() {
 </html>`;
 }
 
-server.listen(PORT, () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log(`\n======================================================`);
   console.log(`🚀 DASHBOARD DE CURADORIA DE IMAGENS ATIVO NO LOCALHOST`);
   console.log(`======================================================`);

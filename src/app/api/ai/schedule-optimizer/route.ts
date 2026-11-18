@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
 import { AiDecisionBadge, AiDecisionDetails } from '@/components/dashboard/scheduleTypes';
-import { verifyStudentSession } from '@/lib/supabase/studentAuth';
+import { authenticateAiRequest } from '@/lib/aiProtection';
 
 export const dynamic = 'force-dynamic';
 
@@ -280,19 +280,29 @@ function generateHeuristicSuggestions(
 
 export async function POST(req: NextRequest) {
   try {
-    // Blindagem de segurança: Acesso restrito a estudantes autenticados
-    const auth = await verifyStudentSession(req);
-    if (!auth.authorized || !auth.user) {
-      return NextResponse.json(
-        { success: false, error: auth.error || 'Acesso não autorizado: faça login para otimizar sua agenda.' },
-        { status: auth.status }
-      );
+    // Blindagem de segurança: Autenticação obrigatória + Rate Limit estrito por usuário (máx 10/min)
+    const auth = await authenticateAiRequest(req, 10);
+    if (auth.errorResponse) {
+      return auth.errorResponse;
     }
 
     const body = await req.json();
-    const events: CalendarSlotInput[] = body.events || [];
-    const userContext = body.userContext || {};
-    const userCommand: string = (body.userCommand || body.prompt || '').trim();
+    const rawEvents: CalendarSlotInput[] = Array.isArray(body.events) ? body.events.slice(0, 50) : [];
+    const events: CalendarSlotInput[] = rawEvents.map((ev, i) => ({
+      ...ev,
+      id: typeof ev?.id === 'string' ? ev.id.slice(0, 64) : `ev_${i}`,
+      title: typeof ev?.title === 'string' ? ev.title.slice(0, 140) : 'Compromisso',
+      startTime: typeof ev?.startTime === 'string' ? ev.startTime.slice(0, 8) : '08:00',
+      endTime: typeof ev?.endTime === 'string' ? ev.endTime.slice(0, 8) : '09:00',
+      startMinutes: Math.max(0, Math.min(1440, Number(ev?.startMinutes) || 0)),
+      endMinutes: Math.max(0, Math.min(1440, Number(ev?.endMinutes) || 0)),
+      description: typeof ev?.description === 'string' ? ev.description.slice(0, 200) : undefined
+    }));
+    const userContext = (body.userContext && typeof body.userContext === 'object') ? body.userContext : {};
+    const rawCommand = typeof body.userCommand === 'string'
+      ? body.userCommand
+      : (typeof body.prompt === 'string' ? body.prompt : '');
+    const userCommand: string = rawCommand.trim().slice(0, 500);
     const currentMinutes: number = typeof body.currentMinutes === 'number'
       ? body.currentMinutes
       : (typeof userContext.currentMinutes === 'number' ? userContext.currentMinutes : -1);
@@ -328,10 +338,10 @@ PERFIL COGNITIVO & DESEMPENHO REAL DO ESTUDANTE:
 - Exame de Residência Alvo: ${targetExam}
 - Meta Diária de Questões: ${dailyGoal} (Já respondeu: ${userContext.todayAnswered || 0}Q)
 - Área Prioritária de Foco: ${areaName}
-- Subtemas Críticos com Menor Acurácia: ${JSON.stringify(userContext.criticalWeaknesses || [])}
+- Subtemas Críticos com Menor Acurácia: ${JSON.stringify(userContext.criticalWeaknesses || []).slice(0, 1200)}
 - Caderno de Erros (Pendentes de Reteste): ${pendingErrors} questões erradas
 - Revisão Espaçada FSRS: ${dueTodayFsrs} flashcards vencendo HOJE na curva de esquecimento
-- Cronobiologia & Energia Cognitiva Real: ${JSON.stringify(userContext.cognitiveEnergy || {})}
+- Cronobiologia & Energia Cognitiva Real: ${JSON.stringify(userContext.cognitiveEnergy || {}).slice(0, 800)}
 
 TEMPO & HORÁRIOS:
 - Hora Atual do Aluno: ${userContext.currentTime || 'Agora'} (${currentMinutes} minutos do dia)

@@ -179,8 +179,8 @@ const AreaEvolutionTooltip: React.FC<AreaEvolutionTooltipProps> = ({
   if (!data) return null;
 
   return (
-    <div className="bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-slate-200 dark:border-zinc-800 p-2.5 rounded-xl shadow-xl text-xs space-y-1 z-50 pointer-events-none select-none">
-      <p className="font-bold text-slate-800 dark:text-zinc-200 text-[11px] pb-1 border-b border-slate-100 dark:border-zinc-800 flex items-center gap-1.5">
+    <div className="bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-xl shadow-xl text-xs space-y-1 z-50 pointer-events-none select-none">
+      <p className="font-bold text-zinc-800 dark:text-zinc-200 text-[11px] pb-1 border-b border-zinc-100 dark:border-zinc-800 flex items-center gap-1.5">
         <span className="w-2 h-2 rounded-full" style={{ backgroundColor: colorHex }} />
         <span>{data.date} • {areaLabel}</span>
       </p>
@@ -198,9 +198,9 @@ const AreaEvolutionTooltip: React.FC<AreaEvolutionTooltipProps> = ({
         </span>
         <span className="font-mono font-bold">{data.erros}</span>
       </div>
-      <div className="flex items-center justify-between gap-4 text-slate-500 dark:text-zinc-400 font-medium pt-1 border-t border-slate-100 dark:border-zinc-800">
+      <div className="flex items-center justify-between gap-4 text-zinc-500 dark:text-zinc-400 font-medium pt-1 border-t border-zinc-100 dark:border-zinc-800">
         <span>Total no dia:</span>
-        <span className="font-mono font-bold text-slate-800 dark:text-zinc-200">{data.resolvidas}</span>
+        <span className="font-mono font-bold text-zinc-800 dark:text-zinc-200">{data.resolvidas}</span>
       </div>
 
     </div>
@@ -421,8 +421,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return 120;
   });
 
-  const { user } = useAuth();
+  const { user, isAdmin } = useAuth();
   const { plan, openUpgradeModal } = useSubscription();
+  const [showDevBar, setShowDevBar] = useState(false);
 
   // Prova alvo e contagem regressiva
   const examInfo = React.useMemo(() => getAccountTargetExam(user), [user]);
@@ -928,7 +929,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   // Helper de status inteligente (elimina fadiga de alerta e evita "Atenção" em amostras pequenas)
   const getAreaStatus = (total: number, accuracy: number) => {
     if (total === 0) return { label: 'Sem dados', color: 'text-zinc-400 dark:text-zinc-500 bg-zinc-500/10 border-zinc-500/20' };
-    if (total < 10) return { label: 'Calibrando', color: 'text-slate-500 dark:text-zinc-400 bg-slate-100 dark:bg-zinc-800/80 border-slate-200 dark:border-zinc-700/60' };
+    if (total < 10) return { label: 'Calibrando', color: 'text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800/80 border-zinc-200 dark:border-zinc-700/60' };
     if (accuracy >= 75) return { label: 'Forte', color: 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/20' };
     if (accuracy >= 60) return { label: 'Regular', color: 'text-blue-600 dark:text-blue-400 bg-blue-500/10 border-blue-500/20' };
     return { label: 'Reforçar', color: 'text-amber-600 dark:text-amber-400 bg-amber-500/10 border-amber-500/20' };
@@ -1547,7 +1548,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   // 3.2. Estado de Active Recall (Revelação 1 a 1 e Revelar Todos) na Dica do Dia
   const [revealedTipItems, setRevealedTipItems] = useState<Record<number, boolean>>({});
   const [revealAllTipItems, setRevealAllTipItems] = useState<boolean>(false);
-  const [activeZoomImage, setActiveZoomImage] = useState<{ url: string; caption?: string } | null>(null);
+  const [activeZoomImage, setActiveZoomImage] = useState<{
+    url: string;
+    caption?: string;
+    source?: string;
+    author?: string;
+    license?: string;
+    originUrl?: string;
+  } | null>(null);
 
   // Reseta estado ao mudar a dica
   useEffect(() => {
@@ -2997,9 +3005,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         filterName: 'Geral',
         icon: BarChart2,
         colorHex: accentConfig.primaryHex,
-        bgLight: 'bg-slate-500/10',
-        textClass: 'text-slate-600 dark:text-zinc-400',
-        borderClass: 'border-slate-500/20',
+        bgLight: 'bg-zinc-500/10',
+        textClass: 'text-zinc-600 dark:text-zinc-400',
+        borderClass: 'border-zinc-500/20',
         total: totalCoreVolume,
         correct: totalCoreCorrect,
         accuracy: totalCoreVolume > 0 ? Math.round((totalCoreCorrect / totalCoreVolume) * 100) : 0,
@@ -3392,23 +3400,23 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Calendário Oficial de Provas & Ofensiva Semanal */}
                   {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 140 : false) && (
-                    <div className="pt-2.5 border-t border-slate-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs animate-in fade-in duration-200">
+                    <div className="pt-2.5 border-t border-zinc-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs animate-in fade-in duration-200">
                       <div className="flex items-center gap-2">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Prazos Oficiais:</span>
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Prazos Oficiais:</span>
                         <div className="flex items-center gap-1.5 flex-wrap">
-                          <span className="px-2 py-0.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 text-[11px] font-medium text-slate-700 dark:text-zinc-300">
+                          <span className="px-2 py-0.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                             <strong>UNICAMP:</strong> 18 dias
                           </span>
-                          <span className="px-2 py-0.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 text-[11px] font-medium text-slate-700 dark:text-zinc-300">
+                          <span className="px-2 py-0.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                             <strong>USP-SP:</strong> 32 dias
                           </span>
-                          <span className="px-2 py-0.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 text-[11px] font-medium text-slate-700 dark:text-zinc-300">
+                          <span className="px-2 py-0.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
                             <strong>ENARE:</strong> 45 dias
                           </span>
                         </div>
                       </div>
 
-                      <div className="text-[11px] text-slate-500 dark:text-zinc-400 flex items-center gap-1.5">
+                      <div className="text-[11px] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
                         <Sparkles className="w-3 h-3 text-amber-500" />
                         <span>Ritmo Semanal: <strong>180 Questões / sem</strong> (88% concluído)</span>
                       </div>
@@ -3581,15 +3589,19 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               <span className="font-bold text-zinc-900 dark:text-zinc-100 font-sans tabular-nums">
                                 {todayStudyMinutes}m <span className="text-zinc-400 font-normal text-[11px]">/ {dailyTimeGoal}m</span>
                               </span>
-                              <span className="font-mono font-bold text-[11px] tabular-nums text-blue-500 dark:text-blue-400">
+                              <span
+                                className="font-mono font-bold text-[11px] tabular-nums"
+                                style={{ color: accentConfig.timeAccent?.hex || accentConfig.primaryHex }}
+                              >
                                 {animatedGoalPercentages.time}%
                               </span>
                             </div>
                             <div className="w-full h-2 sm:h-2.5 bg-zinc-100 dark:bg-zinc-800/80 rounded-full overflow-hidden p-0.5">
                               <div
-                                className="h-full rounded-full bg-blue-500 transition-all duration-700 ease-out"
+                                className="h-full rounded-full transition-all duration-700 ease-out"
                                 style={{
-                                  width: `${Math.min(100, animatedGoalPercentages.time)}%`
+                                  width: `${Math.min(100, animatedGoalPercentages.time)}%`,
+                                  backgroundColor: accentConfig.timeAccent?.hex || accentConfig.primaryHex
                                 }}
                               />
                             </div>
@@ -3704,7 +3716,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         >
                           <Award className="w-4 h-4" />
                         </div>
-                        <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 uppercase tracking-wider">
+                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
                           Aproveitamento
                         </span>
                       </div>
@@ -4177,10 +4189,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     <div>
-                      <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
+                      <h4 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
                         <span>Praticar {recommendedArea.label}</span>
                       </h4>
-                      <p className="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed mt-0.5 card-height-compact-hide">
+                      <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mt-0.5 card-height-compact-hide">
                         {recommendedArea.hasData
                           ? 'Foco prioritário de alavancagem para elevar seu percentil.'
                           : 'Área essencial com alta incidência nas provas.'}
@@ -4315,10 +4327,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {pendingErrorsCount > 0 ? (
                       <div className="space-y-2">
                         <div>
-                          <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
+                          <h4 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
                             <span>Revisão Ativa de Erros</span>
                           </h4>
-                          <p className="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed mt-0.5">
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed mt-0.5">
                             {mostCriticalArea
                               ? `Foco prioritário: ${mostCriticalArea.name} (${mostCriticalArea.count} erros registrados).`
                               : 'Reteste ativo das questões com erro para consolidar memória de longo prazo.'}
@@ -4638,10 +4650,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
           {/* Card: Dicas Rápidas & Pérolas de Decoreba Baseadas no Conteúdo Estudado */ }
           if (cardConfig.id === 'home_dicas') {
+            const dynamicTipConfig = isCustomizing
+              ? cardConfig
+              : { ...cardConfig, customHeight: undefined, maxHeight: undefined };
             return (
               <FigmaCardWrapper
                 key={cardConfig.id}
-                config={cardConfig}
+                config={dynamicTipConfig}
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
@@ -4662,105 +4677,107 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-[160px] h-auto relative space-y-3 group cursor-pointer hover:border-amber-500/40 dark:hover:border-amber-500/30 transition-all"
                   title="Clique para ver raciocínio detalhado, conduta e pegadinhas"
                 >
-                  {/* BARRA SUPERIOR DE MODO DESENVOLVEDOR (INSPEÇÃO DOS 385 CARDS NA TELA INICIAL) */}
-                  <div
-                    onClick={(e) => e.stopPropagation()}
-                    className="p-2 rounded-xl bg-amber-500/10 dark:bg-amber-500/5 border border-amber-500/25 flex flex-wrap items-center justify-between gap-2 select-none"
-                  >
-                    <div className="flex items-center gap-1.5 flex-wrap">
-                      <span className="px-2 py-0.5 rounded-md font-mono text-[10px] font-black uppercase tracking-wider bg-amber-500 text-black flex items-center gap-1 shadow-2xs">
-                        <Brain className="w-3 h-3" />
-                        DEV PREVIEW
-                      </span>
-                      <span className="text-[11px] font-bold text-zinc-800 dark:text-zinc-200">
-                        Card <span className="text-amber-600 dark:text-amber-400 font-mono">#{currentTipIndex + 1}</span> de {CLINICAL_TIPS_DATABASE.length}
-                      </span>
-                      {devCardIndex !== null && (
-                        <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 font-semibold border border-amber-500/30">
-                          Fixado
+                  {/* BARRA SUPERIOR DE MODO DESENVOLVEDOR (INSPEÇÃO DOS 385 CARDS NA TELA INICIAL - RESTRITA A ADMIN/DEV) */}
+                  {(isAdmin || process.env.NODE_ENV === 'development') && showDevBar && (
+                    <div
+                      onClick={(e) => e.stopPropagation()}
+                      className="p-2 rounded-xl bg-amber-500/10 dark:bg-amber-500/5 border border-amber-500/25 flex flex-wrap items-center justify-between gap-2 select-none animate-in fade-in duration-200"
+                    >
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className="px-2 py-0.5 rounded-md font-mono text-[10px] font-black uppercase tracking-wider bg-amber-500 text-black flex items-center gap-1 shadow-2xs">
+                          <Brain className="w-3 h-3" />
+                          DEV PREVIEW
                         </span>
-                      )}
-                    </div>
+                        <span className="text-[11px] font-bold text-zinc-800 dark:text-zinc-200">
+                          Card <span className="text-amber-600 dark:text-amber-400 font-mono">#{currentTipIndex + 1}</span> de {CLINICAL_TIPS_DATABASE.length}
+                        </span>
+                        {devCardIndex !== null && (
+                          <span className="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-700 dark:text-amber-300 font-semibold border border-amber-500/30">
+                            Fixado
+                          </span>
+                        )}
+                      </div>
 
-                    <div className="flex items-center gap-1.5 flex-wrap">
-                      {/* Botão Anterior */}
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          const nextIdx = (currentTipIndex - 1 + CLINICAL_TIPS_DATABASE.length) % CLINICAL_TIPS_DATABASE.length;
-                          setDevCardIndex(nextIdx);
-                        }}
-                        className="px-2 py-1 rounded-lg text-xs font-bold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:border-amber-500 hover:text-amber-500 transition-colors flex items-center gap-0.5 cursor-pointer shadow-2xs"
-                        title="Card Anterior"
-                      >
-                        <ChevronLeft className="w-3.5 h-3.5" />
-                        <span className="hidden sm:inline">Ant</span>
-                      </button>
-
-                      {/* Dropdown Seletor de Qualquer um dos 385 Cards */}
-                      <select
-                        value={currentTipIndex}
-                        onChange={(e) => {
-                          e.stopPropagation();
-                          setDevCardIndex(Number(e.target.value));
-                        }}
-                        className="text-xs font-semibold bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 rounded-lg px-2 py-1 max-w-[190px] sm:max-w-[260px] truncate focus:outline-none focus:ring-1 focus:ring-amber-500 cursor-pointer shadow-2xs"
-                        title="Selecione qualquer um dos 385 cards para inspecionar"
-                      >
-                        {CLINICAL_TIPS_DATABASE.map((tip, idx) => (
-                          <option key={tip.id} value={idx}>
-                            #{idx + 1} [{tip.specialty.slice(0, 4)}] {tip.title}
-                          </option>
-                        ))}
-                      </select>
-
-                      {/* Botão Próximo */}
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          const nextIdx = (currentTipIndex + 1) % CLINICAL_TIPS_DATABASE.length;
-                          setDevCardIndex(nextIdx);
-                        }}
-                        className="px-2 py-1 rounded-lg text-xs font-bold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:border-amber-500 hover:text-amber-500 transition-colors flex items-center gap-0.5 cursor-pointer shadow-2xs"
-                        title="Próximo Card"
-                      >
-                        <span className="hidden sm:inline">Próx</span>
-                        <ChevronRight className="w-3.5 h-3.5" />
-                      </button>
-
-                      {/* Botão Catálogo Completo (Modal) */}
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setShowDevTipModal(true);
-                        }}
-                        className="px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-500 text-black hover:bg-amber-400 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
-                        title="Abrir Catálogo Completo com Busca de todos os 385 cards"
-                      >
-                        <LayoutGrid className="w-3.5 h-3.5" />
-                        <span className="font-extrabold">Ver Todos ({CLINICAL_TIPS_DATABASE.length})</span>
-                      </button>
-
-                      {/* Botão Resetar para a Dica do Dia do Estudante */}
-                      {devCardIndex !== null && (
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        {/* Botão Anterior */}
                         <button
                           type="button"
                           onClick={(e) => {
                             e.stopPropagation();
-                            setDevCardIndex(null);
+                            const nextIdx = (currentTipIndex - 1 + CLINICAL_TIPS_DATABASE.length) % CLINICAL_TIPS_DATABASE.length;
+                            setDevCardIndex(nextIdx);
                           }}
-                          className="px-2 py-1 rounded-lg text-[11px] font-semibold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:text-amber-500 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
-                          title="Voltar para a dica do dia recomendada ao aluno"
+                          className="px-2 py-1 rounded-lg text-xs font-bold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:border-amber-500 hover:text-amber-500 transition-colors flex items-center gap-0.5 cursor-pointer shadow-2xs"
+                          title="Card Anterior"
                         >
-                          <RotateCcw className="w-3 h-3 text-amber-500" />
-                          <span>Hoje</span>
+                          <ChevronLeft className="w-3.5 h-3.5" />
+                          <span className="hidden sm:inline">Ant</span>
                         </button>
-                      )}
+
+                        {/* Dropdown Seletor de Qualquer um dos 385 Cards */}
+                        <select
+                          value={currentTipIndex}
+                          onChange={(e) => {
+                            e.stopPropagation();
+                            setDevCardIndex(Number(e.target.value));
+                          }}
+                          className="text-xs font-semibold bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 rounded-lg px-2 py-1 max-w-[190px] sm:max-w-[260px] truncate focus:outline-none focus:ring-1 focus:ring-amber-500 cursor-pointer shadow-2xs"
+                          title="Selecione qualquer um dos 385 cards para inspecionar"
+                        >
+                          {CLINICAL_TIPS_DATABASE.map((tip, idx) => (
+                            <option key={tip.id} value={idx}>
+                              #{idx + 1} [{tip.specialty.slice(0, 4)}] {tip.title}
+                            </option>
+                          ))}
+                        </select>
+
+                        {/* Botão Próximo */}
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            const nextIdx = (currentTipIndex + 1) % CLINICAL_TIPS_DATABASE.length;
+                            setDevCardIndex(nextIdx);
+                          }}
+                          className="px-2 py-1 rounded-lg text-xs font-bold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:border-amber-500 hover:text-amber-500 transition-colors flex items-center gap-0.5 cursor-pointer shadow-2xs"
+                          title="Próximo Card"
+                        >
+                          <span className="hidden sm:inline">Próx</span>
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </button>
+
+                        {/* Botão Catálogo Completo (Modal) */}
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setShowDevTipModal(true);
+                          }}
+                          className="px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-500 text-black hover:bg-amber-400 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
+                          title="Abrir Catálogo Completo com Busca de todos os 385 cards"
+                        >
+                          <LayoutGrid className="w-3.5 h-3.5" />
+                          <span className="font-extrabold">Ver Todos ({CLINICAL_TIPS_DATABASE.length})</span>
+                        </button>
+
+                        {/* Botão Resetar para a Dica do Dia do Estudante */}
+                        {devCardIndex !== null && (
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setDevCardIndex(null);
+                            }}
+                            className="px-2 py-1 rounded-lg text-[11px] font-semibold border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:text-amber-500 transition-colors flex items-center gap-1 cursor-pointer shadow-2xs"
+                            title="Voltar para a dica do dia recomendada ao aluno"
+                          >
+                            <RotateCcw className="w-3 h-3 text-amber-500" />
+                            <span>Hoje</span>
+                          </button>
+                        )}
+                      </div>
                     </div>
-                  </div>
+                  )}
 
                   <div className="space-y-3 flex-1 flex flex-col justify-between">
                     {/* Header: Ícone + Título Direto e Sucinto + Active Recall Toggle + Badge */}
@@ -4773,7 +4790,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 leading-snug break-words" title={displayedClinicalTip.fullTitle || displayedClinicalTip.title}>
                             {displayedClinicalTip.title}
                           </h4>
-                          <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium block truncate">
+                          <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium block break-words leading-tight">
                             {displayedClinicalTip.specialty} • {displayedClinicalTip.tema}{displayedClinicalTip.foco ? ` • ${displayedClinicalTip.foco}` : ''}
                           </span>
                         </div>
@@ -4781,6 +4798,24 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                       {/* Ações do Header: Toggle de Active Recall e Badge */}
                       <div className="flex items-center gap-1.5 shrink-0">
+                        {(isAdmin || process.env.NODE_ENV === 'development') && (
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setShowDevBar((prev) => !prev);
+                            }}
+                            className={`px-2 py-1 rounded-lg text-[10px] font-bold border transition-all cursor-pointer flex items-center gap-1 shadow-2xs ${
+                              showDevBar
+                                ? 'bg-amber-500 text-black border-amber-500'
+                                : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:text-amber-500 border-zinc-200 dark:border-zinc-700'
+                            }`}
+                            title={showDevBar ? "Ocultar ferramentas de DEV" : "Modo DEV: Inspecionar 385 cards"}
+                          >
+                            <Brain className="w-3 h-3" />
+                            <span className="hidden sm:inline">DEV</span>
+                          </button>
+                        )}
                         <button
                           type="button"
                           onClick={toggleRevealAllTipItems}
@@ -4819,7 +4854,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               e.stopPropagation();
                               setActiveZoomImage({
                                 url: displayedClinicalTip.imageUrl!,
-                                caption: displayedClinicalTip.imageCaption || displayedClinicalTip.title
+                                caption: displayedClinicalTip.imageCaption || displayedClinicalTip.title,
+                                source: displayedClinicalTip.imageSource,
+                                author: displayedClinicalTip.imageAuthor,
+                                license: displayedClinicalTip.imageLicense,
+                                originUrl: displayedClinicalTip.imageOriginUrl,
                               });
                             }}
                             className="relative group/img shrink-0 w-full md:w-44 h-32 md:h-auto rounded-xl overflow-hidden border border-zinc-200/90 dark:border-zinc-800 bg-zinc-950 flex items-center justify-center cursor-zoom-in shadow-xs"
@@ -4850,34 +4889,37 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 <div
                                   key={idx}
                                   onClick={(e) => toggleRevealTipItem(idx, e)}
-                                  className="p-2 sm:p-2.5 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 min-w-0 cursor-pointer select-none"
+                                  className="p-2 sm:p-2.5 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all flex flex-col gap-2 min-w-0 cursor-pointer select-none"
                                   title="Clique para revelar / ocultar este item"
                                 >
-                                  <div className="flex items-center gap-2 min-w-0">
-                                    {chip.letter ? (
-                                      <span className="w-5 h-5 rounded-md font-mono text-[10px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0">
-                                        {chip.letter}
+                                  <div className="flex items-center justify-between gap-2 min-w-0">
+                                    <div className="flex items-center gap-2 min-w-0 flex-1">
+                                      {chip.letter ? (
+                                        <span className="w-5 h-5 rounded-md font-mono text-[10px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0">
+                                          {chip.letter}
+                                        </span>
+                                      ) : (
+                                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80 shrink-0" />
+                                      )}
+                                      <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-snug break-words">
+                                        {chip.label}
                                       </span>
-                                    ) : (
-                                      <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80 shrink-0" />
-                                    )}
-                                    <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-snug break-words">
-                                      {chip.label}
-                                    </span>
-                                  </div>
-
-                                  <div className="sm:self-center shrink-0">
-                                    {isRevealed ? (
-                                      <span className="inline-block text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1 rounded-md border border-amber-500/25 leading-relaxed break-words whitespace-normal animate-in fade-in duration-150">
-                                        {chip.value}
-                                      </span>
-                                    ) : (
-                                      <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 bg-zinc-200/60 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-500 px-2 py-0.5 rounded-md transition-colors">
+                                    </div>
+                                    {!isRevealed && (
+                                      <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 bg-zinc-200/60 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-500 px-2 py-0.5 rounded-md transition-colors shrink-0">
                                         <span>Revelar</span>
                                         <Eye className="w-3 h-3 text-zinc-400" />
                                       </span>
                                     )}
                                   </div>
+
+                                  {isRevealed && (
+                                    <div className="w-full">
+                                      <span className="block w-full text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1.5 rounded-lg border border-amber-500/25 leading-relaxed break-words whitespace-normal text-left animate-in fade-in duration-150">
+                                        {chip.value}
+                                      </span>
+                                    </div>
+                                  )}
                                 </div>
                               );
                             })}
@@ -4892,34 +4934,37 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               <div
                                 key={idx}
                                 onClick={(e) => toggleRevealTipItem(idx, e)}
-                                className="p-2.5 sm:p-3 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 min-w-0 cursor-pointer select-none"
+                                className="p-2.5 sm:p-3 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all flex flex-col gap-2 min-w-0 cursor-pointer select-none"
                                 title="Clique para revelar / ocultar este item"
                               >
-                                <div className="flex items-center gap-2 min-w-0">
-                                  {chip.letter ? (
-                                    <span className="w-5 h-5 rounded-md font-mono text-[10px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0">
-                                      {chip.letter}
+                                <div className="flex items-center justify-between gap-2 min-w-0">
+                                  <div className="flex items-center gap-2 min-w-0 flex-1">
+                                    {chip.letter ? (
+                                      <span className="w-5 h-5 rounded-md font-mono text-[10px] font-bold bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/25 flex items-center justify-center shrink-0">
+                                        {chip.letter}
+                                      </span>
+                                    ) : (
+                                      <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80 shrink-0" />
+                                    )}
+                                    <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-snug break-words">
+                                      {chip.label}
                                     </span>
-                                  ) : (
-                                    <span className="w-1.5 h-1.5 rounded-full bg-amber-500/80 shrink-0" />
-                                  )}
-                                  <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-snug break-words">
-                                    {chip.label}
-                                  </span>
-                                </div>
-
-                                <div className="sm:self-center shrink-0">
-                                  {isRevealed ? (
-                                    <span className="inline-block text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1 rounded-md border border-amber-500/25 leading-relaxed break-words whitespace-normal animate-in fade-in duration-150">
-                                      {chip.value}
-                                    </span>
-                                  ) : (
-                                    <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 bg-zinc-200/60 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-500 px-2.5 py-0.5 rounded-md transition-colors">
+                                  </div>
+                                  {!isRevealed && (
+                                    <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 bg-zinc-200/60 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-500 px-2 py-0.5 rounded-md transition-colors shrink-0">
                                       <span>Revelar</span>
                                       <Eye className="w-3 h-3 text-zinc-400" />
                                     </span>
                                   )}
                                 </div>
+
+                                {isRevealed && (
+                                  <div className="w-full">
+                                    <span className="block w-full text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1.5 rounded-lg border border-amber-500/25 leading-relaxed break-words whitespace-normal text-left animate-in fade-in duration-150">
+                                      {chip.value}
+                                    </span>
+                                  </div>
+                                )}
                               </div>
                             );
                           })}
@@ -4973,24 +5018,23 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               >
                 {/* 4. RAIO-X DAS 6 GRANDES ÁREAS */}
                 <section className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4 min-h-0 h-full overflow-hidden flex flex-col justify-between">
-                  <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-100 dark:border-zinc-800/80">
+                  <div className="flex items-center justify-between gap-2 pb-2 border-b border-zinc-100 dark:border-zinc-800/80">
                     <div className="flex items-center gap-2">
                       <div
-                        className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 border"
+                        className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 border border-zinc-200/60 dark:border-zinc-800/80 shadow-xs"
                         style={{
                           backgroundColor: accentConfig.bgRgba,
-                          borderColor: accentConfig.borderRgba,
                           color: accentConfig.primaryHex
                         }}
                       >
-                        <BarChart2 className="w-3.5 h-3.5" />
+                        <BarChart2 className="w-4 h-4" />
                       </div>
                       <div>
-                        <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 leading-tight">
+                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider block">
                           Raio-X das 6 Grandes Áreas
-                        </h4>
-                        <p className="text-[11px] text-slate-500 dark:text-zinc-400">
-                          Clique em qualquer cor do gráfico para ver a área
+                        </span>
+                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                          Desempenho por especialidade clínica
                         </p>
                       </div>
                     </div>
@@ -5083,10 +5127,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               if (activeData) {
                                 return (
                                   <>
-                                    <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-400 line-clamp-1 max-w-[100px]">
+                                    <span className="text-[9px] uppercase tracking-wider font-bold text-zinc-500 dark:text-zinc-400 line-clamp-1 max-w-[100px]">
                                       {activeData.name}
                                     </span>
-                                    <span className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-sans tabular-nums mt-0.5">
+                                    <span className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white font-sans tabular-nums mt-0.5">
                                       {activeData.realValue}
                                     </span>
                                     <span
@@ -5103,13 +5147,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                               return (
                                 <>
-                                  <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-400">
+                                  <span className="text-[9px] uppercase tracking-wider font-bold text-zinc-500 dark:text-zinc-400">
                                     VOLUME TOTAL
                                   </span>
-                                  <span className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-sans tabular-nums mt-0.5">
+                                  <span className="text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white font-sans tabular-nums mt-0.5">
                                     {totalCoreVolume}
                                   </span>
-                                  <span className="text-[10px] font-medium text-slate-600 dark:text-zinc-400 group-hover:text-emerald-500 transition-colors">
+                                  <span className="text-[10px] font-medium text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-500 transition-colors">
                                     6 Grandes Áreas
                                   </span>
                                 </>
@@ -5125,8 +5169,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           type="button"
                           onClick={() => setSelectedAreaId('geral')}
                           className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1 border ${selectedAreaId === 'geral'
-                            ? 'shadow-xs scale-105 border-slate-400 dark:border-zinc-500 bg-slate-200/60 dark:bg-zinc-800 text-slate-900 dark:text-white'
-                            : 'opacity-70 hover:opacity-100 hover:scale-102 border-transparent text-slate-600 dark:text-zinc-400'
+                            ? 'shadow-xs scale-105 border-zinc-400 dark:border-zinc-500 bg-zinc-200/60 dark:bg-zinc-800 text-zinc-900 dark:text-white'
+                            : 'opacity-70 hover:opacity-100 hover:scale-102 border-transparent text-zinc-600 dark:text-zinc-400'
                             }`}
                           title="Visualizar evolução geral (todas as áreas)"
                         >
@@ -5156,7 +5200,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 className="w-2 h-2 rounded-full shrink-0"
                                 style={{ backgroundColor: area.colorHex }}
                               />
-                              <span className="text-slate-700 dark:text-zinc-300">
+                              <span className="text-zinc-700 dark:text-zinc-300">
                                 {shortLabel}
                               </span>
                             </button>
@@ -5168,7 +5212,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {/* Gráfico de Evolução da Especialidade Selecionada ou Geral */}
                     <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-7' : 'col-span-1'} flex flex-col justify-between space-y-3`}>
                       {/* Cabeçalho do Gráfico: Filtro de Período (Esquerda) + Legenda Horizontal Inline (Direita - Imagem 3) */}
-                      <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-100 dark:border-zinc-850">
+                      <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-zinc-100 dark:border-zinc-850">
                         <div className="flex items-center gap-2">
                           {/* Botão no canto superior esquerdo para abrir o Modal de Período */}
                           <button
@@ -5185,16 +5229,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                         {/* Legenda Horizontal Inline (Imagem 3: um do lado do outro) */}
                         <div className="flex items-center gap-4 text-xs whitespace-nowrap">
-                          <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
+                          <span className="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-300 font-medium text-[11px]">
                             <span className="w-2.5 h-2.5 rounded-xs bg-[#10B981] shrink-0" />
                             Acertos (topo)
                           </span>
-                          <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
+                          <span className="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-300 font-medium text-[11px]">
                             <span className="w-2.5 h-2.5 rounded-xs bg-[#F43F5E] shrink-0" />
                             Erros (base)
                           </span>
-                          <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
-                            <span className="w-3.5 h-0.5 bg-slate-400 dark:bg-zinc-400 opacity-60 shrink-0" />
+                          <span className="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-300 font-medium text-[11px]">
+                            <span className="w-3.5 h-0.5 bg-zinc-400 dark:bg-zinc-400 opacity-60 shrink-0" />
                             Tendência
                           </span>
                         </div>
@@ -5274,9 +5318,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
 
                       {/* Rodapé do Gráfico: Resumo de Acertos e Questões Resolvidas + Botão de Treino */}
-                      <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-2.5 border-t border-slate-100 dark:border-zinc-850">
-                        <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-zinc-400">
-                          <span className="font-semibold text-slate-800 dark:text-zinc-200">
+                      <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-2.5 border-t border-zinc-100 dark:border-zinc-850">
+                        <div className="flex items-center gap-2 text-xs text-zinc-600 dark:text-zinc-400">
+                          <span className="font-semibold text-zinc-800 dark:text-zinc-200">
                             {selectedArea.correct} acertos de {selectedArea.total} questões resolvidas
                           </span>
                         </div>
@@ -5299,13 +5343,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Benchmark Comparativo das 6 Grandes Áreas */}
                   {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 550) && (
-                    <div className="pt-3 border-t border-slate-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
+                    <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
                       <div className="flex items-center justify-between text-xs">
-                        <span className="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+                        <span className="font-bold text-zinc-800 dark:text-zinc-200 flex items-center gap-1.5">
                           <Sparkles className="w-3.5 h-3.5 text-amber-500" />
                           Desempenho Detalhado por Grande Área
                         </span>
-                        <span className="text-[10px] text-slate-400">Taxa de Acertos vs Meta (75%)</span>
+                        <span className="text-[10px] text-zinc-400">Taxa de Acertos vs Meta (75%)</span>
                       </div>
 
                       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-1.5 text-[10px]">
@@ -5319,20 +5363,20 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         ].map((item, idx) => (
                           <div
                             key={idx}
-                            className="p-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 flex flex-col justify-between"
+                            className="p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 flex flex-col justify-between"
                           >
                             <div className="flex items-center justify-between">
-                              <span className="font-bold text-slate-700 dark:text-zinc-300">{item.name}</span>
+                              <span className="font-bold text-zinc-700 dark:text-zinc-300">{item.name}</span>
                               <span
                                 className="w-1.5 h-1.5 rounded-full"
                                 style={{ backgroundColor: item.color }}
                               />
                             </div>
                             <div className="flex items-baseline justify-between mt-1">
-                              <span className="font-extrabold text-slate-900 dark:text-zinc-100 text-xs">
+                              <span className="font-extrabold text-zinc-900 dark:text-zinc-100 text-xs">
                                 {item.acertos}
                               </span>
-                              <span className={`text-[9px] font-medium ${item.status === 'Atenção' ? 'text-rose-500' : 'text-slate-400'}`}>
+                              <span className={`text-[9px] font-medium ${item.status === 'Atenção' ? 'text-rose-500' : 'text-zinc-400'}`}>
                                 {item.status}
                               </span>
                             </div>
@@ -5366,13 +5410,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 <section className="w-full min-h-0 h-full flex flex-col justify-between space-y-3">
                   <div className="flex items-center px-1 min-w-0 max-w-full overflow-x-auto">
                     {/* Seletor em formato retangular em pílula (Estilo Imagem 3) */}
-                    <div className="inline-flex p-1 bg-slate-100/90 dark:bg-[#0f1115] border border-slate-200/90 dark:border-zinc-800/90 rounded-xl items-center gap-1 shadow-xs overflow-x-auto max-w-full">
+                    <div className="inline-flex p-1 bg-zinc-100/90 dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800/90 rounded-xl items-center gap-1 shadow-xs overflow-x-auto max-w-full">
                       <button
                         type="button"
                         onClick={() => setStudyResumeTab('cadernos')}
                         className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'cadernos'
                           ? 'text-white shadow-xs'
-                          : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                           }`}
                         style={{
                           backgroundColor: studyResumeTab === 'cadernos' ? accentConfig.primaryHex : 'transparent'
@@ -5387,7 +5431,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         onClick={() => setStudyResumeTab('provas')}
                         className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'provas'
                           ? 'text-white shadow-xs'
-                          : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                           }`}
                         style={{
                           backgroundColor: studyResumeTab === 'provas' ? accentConfig.primaryHex : 'transparent'
@@ -5397,7 +5441,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <span>Provas na Íntegra</span>
                         <span
                           className="w-1.5 h-1.5 rounded-full ml-0.5"
-                          style={{ backgroundColor: '#f97316' }}
+                          style={{ backgroundColor: accentConfig.primaryHex }}
                         />
                       </button>
 
@@ -5406,7 +5450,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         onClick={() => setStudyResumeTab('simulados')}
                         className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'simulados'
                           ? 'text-white shadow-xs'
-                          : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                           }`}
                         style={{
                           backgroundColor: studyResumeTab === 'simulados' ? accentConfig.primaryHex : 'transparent'
@@ -5416,7 +5460,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <span>Simulados Oficiais</span>
                         <span
                           className="w-1.5 h-1.5 rounded-full ml-0.5"
-                          style={{ backgroundColor: '#f97316' }}
+                          style={{ backgroundColor: accentConfig.primaryHex }}
                         />
                       </button>
                     </div>
@@ -5544,9 +5588,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                   {/* PAINEL 2: PROVAS NA ÍNTEGRA OFICIAIS */}
                   {studyResumeTab === 'provas' && (
-                    <div className="bento-card bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-in fade-in duration-200">
+                    <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-in fade-in duration-200">
                       {/* Cabeçalho do Card */}
-                      <div className="flex items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-zinc-800/80">
+                      <div className="flex items-center justify-between gap-2 pb-3 border-b border-zinc-100 dark:border-zinc-800/80">
                         <div className="flex items-center gap-2">
                           <span
                             className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-md border"
@@ -5600,24 +5644,24 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                             <div className="space-y-1">
                               <div className="flex items-center gap-2">
-                                <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100">
+                                <h4 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100">
                                   {currentOfficialExam.institution} {currentOfficialExam.year}
                                 </h4>
-                                <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700">
+                                <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700">
                                   {currentOfficialExam.modality || 'Acesso Direto'}
                                 </span>
                               </div>
-                              <p className="text-xs text-slate-500 dark:text-zinc-400">
+                              <p className="text-xs text-zinc-500 dark:text-zinc-400">
                                 {currentOfficialExam.institutionName || currentOfficialExam.institution} • {currentOfficialExam.answeredCount || 0} de {currentOfficialExam.totalQuestions || 100} questões resolvidas
                               </p>
                             </div>
 
                             <div className="flex items-center gap-3">
                               <div className="text-right">
-                                <div className="text-xl sm:text-2xl font-black font-sans text-slate-900 dark:text-zinc-100">
+                                <div className="text-xl sm:text-2xl font-black font-sans text-zinc-900 dark:text-zinc-100">
                                   {Math.round(((currentOfficialExam.answeredCount || 0) / (currentOfficialExam.totalQuestions || 100)) * 100)}%
                                 </div>
-                                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-zinc-500">
+                                <div className="text-[10px] uppercase font-bold text-zinc-400 dark:text-zinc-500">
                                   Progresso
                                 </div>
                               </div>
@@ -5644,7 +5688,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
 
                           {/* Barra de Progresso Larga */}
-                          <div className="w-full bg-slate-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-slate-200/60 dark:border-zinc-800">
+                          <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
                             <div
                               className="h-2 rounded-full transition-all duration-500"
                               style={{
@@ -5656,8 +5700,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       ) : (
                         <div className="py-6 text-center space-y-2">
-                          <p className="text-sm font-semibold text-slate-700 dark:text-zinc-300">Nenhuma prova oficial recente</p>
-                          <p className="text-xs text-slate-500 dark:text-zinc-400 max-w-md mx-auto">
+                          <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Nenhuma prova oficial recente</p>
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-md mx-auto">
                             Pratique com as provas oficiais na íntegra de ENARE, SUS-SP, AMRIGS, PSU-MG e USP.
                           </p>
                           <div className="pt-2">
@@ -5679,9 +5723,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                   {/* PAINEL 3: SIMULADOS OFICIAIS */}
                   {studyResumeTab === 'simulados' && (
-                    <div className="bento-card bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-in fade-in duration-200">
+                    <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-in fade-in duration-200">
                       {/* Cabeçalho do Card */}
-                      <div className="flex items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-zinc-800/80">
+                      <div className="flex items-center justify-between gap-2 pb-3 border-b border-zinc-100 dark:border-zinc-800/80">
                         <div className="flex items-center gap-2">
                           <span
                             className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-md border"
@@ -5734,20 +5778,20 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <div className="space-y-4">
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                             <div className="space-y-1">
-                              <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 truncate" title={currentMockExam.title}>
+                              <h4 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 truncate" title={currentMockExam.title}>
                                 {currentMockExam.title}
                               </h4>
-                              <p className="text-xs text-slate-500 dark:text-zinc-400">
+                              <p className="text-xs text-zinc-500 dark:text-zinc-400">
                                 {currentMockExam.banca} • {currentMockExam.duration} • {currentMockExam.answeredCount || 0} de {currentMockExam.totalQuestions || 100} resolvidas
                               </p>
                             </div>
 
                             <div className="flex items-center gap-3">
                               <div className="text-right">
-                                <div className="text-xl sm:text-2xl font-black font-sans text-slate-900 dark:text-zinc-100">
+                                <div className="text-xl sm:text-2xl font-black font-sans text-zinc-900 dark:text-zinc-100">
                                   {Math.round(((currentMockExam.answeredCount || 0) / (currentMockExam.totalQuestions || 100)) * 100)}%
                                 </div>
-                                <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-zinc-500">
+                                <div className="text-[10px] uppercase font-bold text-zinc-400 dark:text-zinc-500">
                                   Progresso
                                 </div>
                               </div>
@@ -5774,7 +5818,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
 
                           {/* Barra de Progresso Larga */}
-                          <div className="w-full bg-slate-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-slate-200/60 dark:border-zinc-800">
+                          <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
                             <div
                               className="h-2 rounded-full transition-all duration-500"
                               style={{
@@ -5786,8 +5830,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       ) : (
                         <div className="py-6 text-center space-y-2">
-                          <p className="text-sm font-semibold text-slate-700 dark:text-zinc-300">Simulado Nacional ENARE 2025</p>
-                          <p className="text-xs text-slate-500 dark:text-zinc-400 max-w-md mx-auto">
+                          <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Simulado Nacional ENARE 2025</p>
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-md mx-auto">
                             Simulado cronometrado com ranking e TRI em tempo real.
                           </p>
                           <div className="pt-2">
@@ -5825,11 +5869,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           />
 
           {/* Card Modal Centralizado */}
-          <div className={`relative w-full ${activeCentralDrawer === 'agenda_detalhada' ? 'max-w-3xl xl:max-w-4xl max-h-[90vh]' : 'max-w-2xl max-h-[85vh]'} bg-white dark:bg-[#0c1017] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl flex flex-col z-10 animate-in zoom-in-95 duration-200 overflow-hidden`}>
+          <div className={`relative w-full ${activeCentralDrawer === 'agenda_detalhada' ? 'max-w-3xl xl:max-w-4xl max-h-[90vh]' : 'max-w-2xl max-h-[85vh]'} bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col z-10 animate-in zoom-in-95 duration-200 overflow-hidden`}>
 
             {/* 1. CABEÇALHO DO DRAWER CENTRAL */}
-            <div className="p-4 sm:p-5 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between shrink-0 bg-slate-50/60 dark:bg-zinc-900/40">
-              <div className="flex items-center gap-3">
+            <div className="p-4 sm:p-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between shrink-0 bg-zinc-50/60 dark:bg-zinc-900/40">
+              <div className="flex items-center gap-3 min-w-0 flex-1 pr-3">
                 <div
                   className="w-10 h-10 rounded-2xl flex items-center justify-center shadow-xs shrink-0"
                   style={{
@@ -5846,15 +5890,19 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   {(activeCentralDrawer === 'mnemonico_detalhado' || activeCentralDrawer === 'dica_dia_detalhada') && <Lightbulb className="w-5 h-5 text-amber-500" />}
                   {activeCentralDrawer === 'agenda_detalhada' && <CalendarDays className="w-5 h-5 text-blue-500" />}
                 </div>
-                <div>
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <div className="min-w-0 flex-1">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-white flex items-center gap-2">
                     {activeCentralDrawer === 'cadernos' && 'Histórico de Cadernos de Questões'}
                     {activeCentralDrawer === 'provas' && 'Histórico e Catálogo de Provas Oficiais'}
                     {activeCentralDrawer === 'simulados' && 'Histórico de Simulados Oficiais'}
                     {activeCentralDrawer === 'caderno_erros' && 'Caderno de Erros • Foco de Reteste'}
                     {activeCentralDrawer === 'flashcards' && 'Flashcards Mnemônicos • Revisão do Dia'}
                     {activeCentralDrawer === 'treinar_recomendacao' && `Centro de Treino • ${recommendedArea.label}`}
-                    {activeCentralDrawer === 'dica_dia_detalhada' && (displayedClinicalTip.fullTitle || displayedClinicalTip.title)}
+                    {activeCentralDrawer === 'dica_dia_detalhada' && (
+                      <span className="break-words line-clamp-2 leading-snug">
+                        {displayedClinicalTip.fullTitle || displayedClinicalTip.title}
+                      </span>
+                    )}
                     {activeCentralDrawer === 'mnemonico_detalhado' && (activeDetailedMnemonic.theme || 'Mnemônico Clínico')}
                     {activeCentralDrawer === 'agenda_detalhada' && (
                       <>
@@ -5865,7 +5913,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </>
                     )}
                   </h3>
-                  <p className="text-xs text-slate-500 dark:text-zinc-400">
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
                     {activeCentralDrawer === 'cadernos' && 'Acesse todos os seus cadernos personalizados e continue seus estudos'}
                     {activeCentralDrawer === 'provas' && 'Provas oficiais na íntegra de Residência Médica e Revalida'}
                     {activeCentralDrawer === 'simulados' && 'Simulados cronometrados com pontuação TRI e percentil'}
@@ -5889,7 +5937,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 <button
                   type="button"
                   onClick={() => setActiveCentralDrawer(null)}
-                  className="p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800 border border-slate-200 dark:border-slate-800 cursor-pointer transition-colors"
+                  className="p-2 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 cursor-pointer transition-colors"
                   title="Fechar (Esc)"
                 >
                   <X className="w-4 h-4" />
@@ -5902,9 +5950,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               activeCentralDrawer !== 'mnemonico_detalhado' &&
               activeCentralDrawer !== 'dica_dia_detalhada' &&
               activeCentralDrawer !== 'agenda_detalhada' && (
-                <div className="p-4 border-b border-slate-100 dark:border-slate-800/80 space-y-3 shrink-0 bg-white dark:bg-[#0c1017]">
+                <div className="p-4 border-b border-zinc-100 dark:border-zinc-800/80 space-y-3 shrink-0 bg-white dark:bg-[#121215]">
                   <div className="relative">
-                    <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+                    <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400" />
                     <input
                       type="text"
                       value={drawerSearch}
@@ -5920,13 +5968,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 ? 'Buscar erro por tema, foco, banca ou motivo...'
                                 : 'Buscar flashcards do dia por conceito ou tema...'
                       }
-                      className="w-full pl-10 pr-9 py-2.5 rounded-xl text-xs sm:text-sm bg-slate-50 dark:bg-zinc-900/90 border border-slate-200 dark:border-zinc-800 text-slate-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] transition-all"
+                      className="w-full pl-10 pr-9 py-2.5 rounded-xl text-xs sm:text-sm bg-zinc-50 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] transition-all"
                     />
                     {drawerSearch && (
                       <button
                         type="button"
                         onClick={() => setDrawerSearch('')}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 dark:hover:text-white"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-700 dark:hover:text-white"
                       >
                         <X className="w-4 h-4" />
                       </button>
@@ -5950,7 +5998,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             onClick={() => setDrawerModality(mod.id as OfficialExamModalityKey)}
                             className={`text-[11px] px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer shrink-0 ${isModActive
                               ? 'text-white shadow-xs'
-                              : 'bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-zinc-800'
+                              : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-800'
                               }`}
                             style={{
                               backgroundColor: isModActive ? accentConfig.primaryHex : undefined
@@ -5982,7 +6030,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             onClick={() => setDrawerErrorSpecialty(spec)}
                             className={`text-[11px] px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer shrink-0 ${isSpecActive
                               ? 'text-white shadow-xs'
-                              : 'bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-zinc-800'
+                              : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-800'
                               }`}
                             style={{
                               backgroundColor: isSpecActive ? accentConfig.primaryHex : undefined
@@ -6014,7 +6062,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             onClick={() => setDrawerFlashcardSpecialty(spec)}
                             className={`text-[11px] px-3 py-1.5 rounded-lg font-bold transition-all cursor-pointer shrink-0 ${isSpecActive
                               ? 'text-white shadow-xs'
-                              : 'bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-zinc-800'
+                              : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-800'
                               }`}
                             style={{
                               backgroundColor: isSpecActive ? accentConfig.primaryHex : undefined
@@ -6045,11 +6093,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           {filteredCadernos.map((item) => (
                             <div
                               key={item.id}
-                              className="p-4 rounded-2xl border border-slate-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-slate-300 dark:hover:border-zinc-700 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group shadow-2xs"
+                              className="p-4 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group shadow-2xs"
                             >
                               <div className="min-w-0 flex-1">
                                 <div className="flex items-center gap-2">
-                                  <h4 className="font-heading font-bold text-sm text-slate-900 dark:text-white truncate">
+                                  <h4 className="font-heading font-bold text-sm text-zinc-900 dark:text-white truncate">
                                     {item.title}
                                   </h4>
                                   <span
@@ -6061,10 +6109,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                     {item.progressPercentage >= 100 ? 'Concluído' : 'Em andamento'}
                                   </span>
                                 </div>
-                                <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-zinc-400 mt-1">
+                                <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 mt-1">
                                   <span>{item.completedQuestions}/{item.totalQuestions} questões</span>
                                   <span>•</span>
-                                  <span className="font-semibold text-slate-700 dark:text-zinc-300">{item.progressPercentage}%</span>
+                                  <span className="font-semibold text-zinc-700 dark:text-zinc-300">{item.progressPercentage}%</span>
                                   {item.lastStudiedAt && (
                                     <>
                                       <span>•</span>
@@ -6072,7 +6120,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                     </>
                                   )}
                                 </div>
-                                <div className="w-full bg-slate-100 dark:bg-zinc-800 rounded-full h-1.5 overflow-hidden mt-2">
+                                <div className="w-full bg-zinc-100 dark:bg-zinc-800 rounded-full h-1.5 overflow-hidden mt-2">
                                   <div
                                     className="h-1.5 rounded-full transition-all duration-300"
                                     style={{
@@ -6114,7 +6162,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
                         </>
                       ) : (
-                        <div className="py-12 text-center text-xs text-slate-400 dark:text-zinc-500 space-y-3">
+                        <div className="py-12 text-center text-xs text-zinc-400 dark:text-zinc-500 space-y-3">
                           <p>
                             {allLists.length === 0
                               ? 'Você ainda não possui cadernos criados.'
@@ -6146,7 +6194,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   {/* Seção 1: Provas do Histórico do Aluno */}
                   {officialExamsHistory.length > 0 && (
                     <div className="space-y-2">
-                      <div className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 px-1">
+                      <div className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 px-1">
                         Minhas Provas no Histórico ({officialExamsHistory.length})
                       </div>
                       <div className="space-y-2">
@@ -6155,11 +6203,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           .map((exam) => (
                             <div
                               key={exam.id}
-                              className="p-3.5 rounded-2xl border border-slate-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex items-center justify-between gap-3 shadow-2xs"
+                              className="p-3.5 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex items-center justify-between gap-3 shadow-2xs"
                             >
                               <div className="min-w-0 flex-1">
                                 <div className="flex items-center gap-2">
-                                  <span className="font-heading font-bold text-xs sm:text-sm text-slate-900 dark:text-white">
+                                  <span className="font-heading font-bold text-xs sm:text-sm text-zinc-900 dark:text-white">
                                     {exam.institution} {exam.year}
                                   </span>
                                   <span
@@ -6171,7 +6219,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                     {exam.status === 'concluida' ? 'Concluída' : 'Em andamento'}
                                   </span>
                                 </div>
-                                <div className="text-[11px] text-slate-500 dark:text-zinc-400 mt-0.5">
+                                <div className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">
                                   {exam.answeredCount}/{exam.totalQuestions} questões • {Math.round(((exam.answeredCount || 0) / (exam.totalQuestions || 100)) * 100)}%
                                 </div>
                               </div>
@@ -6193,8 +6241,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   )}
 
                   {/* Seção 2: Catálogo de Todas as Provas Oficiais */}
-                  <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-zinc-800">
-                    <div className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 px-1">
+                  <div className="space-y-2 pt-2 border-t border-zinc-100 dark:border-zinc-800">
+                    <div className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 px-1">
                       Catálogo Completo de Provas
                     </div>
                     {drawerSearchResults.length > 0 ? (
@@ -6205,18 +6253,18 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         return (
                           <div
                             key={`${item.institution.id}-${item.exam.year}-${idx}`}
-                            className="p-3.5 rounded-2xl border border-slate-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-slate-300 dark:hover:border-zinc-700 transition-all flex items-center justify-between gap-3 shadow-2xs"
+                            className="p-3.5 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex items-center justify-between gap-3 shadow-2xs"
                           >
                             <div className="min-w-0 flex-1">
                               <div className="flex items-center gap-2">
-                                <span className="font-heading font-bold text-xs sm:text-sm text-slate-900 dark:text-white">
+                                <span className="font-heading font-bold text-xs sm:text-sm text-zinc-900 dark:text-white">
                                   {item.institution.shortName} {item.exam.year}
                                 </span>
-                                <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400">
+                                <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
                                   {nominalQ}q
                                 </span>
                               </div>
-                              <p className="text-[11px] text-slate-500 dark:text-zinc-400 truncate mt-0.5">
+                              <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate mt-0.5">
                                 {item.institution.name}
                               </p>
                             </div>
@@ -6236,7 +6284,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         );
                       })
                     ) : (
-                      <div className="py-8 text-center text-xs text-slate-400 dark:text-zinc-500">
+                      <div className="py-8 text-center text-xs text-zinc-400 dark:text-zinc-500">
                         Nenhuma prova encontrada com este filtro.
                       </div>
                     )}
@@ -6254,11 +6302,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     filteredMocks.map((mock) => (
                       <div
                         key={mock.id}
-                        className="p-4 rounded-2xl border border-slate-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-slate-300 dark:hover:border-zinc-700 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group shadow-2xs"
+                        className="p-4 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group shadow-2xs"
                       >
                         <div className="min-w-0 flex-1">
                           <div className="flex items-center gap-2">
-                            <h4 className="font-heading font-bold text-xs sm:text-sm text-slate-900 dark:text-white truncate">
+                            <h4 className="font-heading font-bold text-xs sm:text-sm text-zinc-900 dark:text-white truncate">
                               {mock.title}
                             </h4>
                             <span
@@ -6270,10 +6318,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               {mock.status === 'concluida' ? 'Concluído' : 'Em andamento'}
                             </span>
                           </div>
-                          <p className="text-xs text-slate-500 dark:text-zinc-400 mt-1">
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
                             {mock.banca} • {mock.duration} • {mock.answeredCount || 0} de {mock.totalQuestions} questões resolvidas
                           </p>
-                          <div className="w-full bg-slate-100 dark:bg-zinc-800 rounded-full h-1.5 overflow-hidden mt-2">
+                          <div className="w-full bg-zinc-100 dark:bg-zinc-800 rounded-full h-1.5 overflow-hidden mt-2">
                             <div
                               className="h-1.5 rounded-full transition-all duration-300"
                               style={{
@@ -6299,7 +6347,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
                     ))
                   ) : (
-                    <div className="py-12 text-center text-xs text-slate-400 dark:text-zinc-500">
+                    <div className="py-12 text-center text-xs text-zinc-400 dark:text-zinc-500">
                       Nenhum simulado encontrado com este termo.
                     </div>
                   );
@@ -6347,26 +6395,26 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </span>
                         </div>
 
-                        <div className="p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 flex flex-col justify-between">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+                        <div className="p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block">
                             Área Mais Crítica
                           </span>
-                          <span className="text-xs sm:text-sm font-bold text-slate-800 dark:text-zinc-200 mt-1 truncate">
+                          <span className="text-xs sm:text-sm font-bold text-zinc-800 dark:text-zinc-200 mt-1 truncate">
                             {mostCriticalArea ? mostCriticalArea.name : 'Nenhuma pendência'}
                           </span>
-                          <span className="text-[10px] text-slate-400 dark:text-zinc-500">
+                          <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
                             {mostCriticalArea ? `${mostCriticalArea.count} erros registrados` : 'desempenho 100%'}
                           </span>
                         </div>
 
-                        <div className="p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 flex flex-col justify-between">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+                        <div className="p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block">
                             Ação Imediata
                           </span>
                           <span className="text-xs sm:text-sm font-bold text-emerald-600 dark:text-emerald-400 mt-1">
                             Reteste Focado
                           </span>
-                          <span className="text-[10px] text-slate-400 dark:text-zinc-500">
+                          <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
                             ciclo anti-esquecimento
                           </span>
                         </div>
@@ -6374,7 +6422,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                       {/* Lista de Questões com Erros */}
                       <div className="space-y-2.5">
-                        <div className="flex items-center justify-between text-xs text-slate-500 dark:text-zinc-400 font-semibold px-1">
+                        <div className="flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 font-semibold px-1">
                           <span>Questões para Focar no Momento ({filteredErrors.length})</span>
                           {pendingErrorsList.length > 0 && (
                             <button
@@ -6394,7 +6442,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           filteredErrors.map((errItem) => (
                             <div
                               key={errItem.questionId}
-                              className="p-3.5 rounded-2xl border border-slate-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-slate-300 dark:hover:border-zinc-700 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group shadow-2xs"
+                              className="p-3.5 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group shadow-2xs"
                             >
                               <div className="min-w-0 flex-1 space-y-1.5">
                                 <div className="flex flex-wrap items-center gap-1.5">
@@ -6404,12 +6452,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                     </span>
                                   )}
                                   {errItem.banca && (
-                                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700">
+                                    <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700">
                                       {errItem.banca} {errItem.year ? `• ${errItem.year}` : ''}
                                     </span>
                                   )}
                                   {errItem.difficulty && (
-                                    <span className="text-[10px] px-1.5 py-0.5 rounded-sm bg-slate-100 dark:bg-zinc-800/60 text-slate-500 dark:text-zinc-400">
+                                    <span className="text-[10px] px-1.5 py-0.5 rounded-sm bg-zinc-100 dark:bg-zinc-800/60 text-zinc-500 dark:text-zinc-400">
                                       {errItem.difficulty}
                                     </span>
                                   )}
@@ -6420,7 +6468,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                   )}
                                 </div>
 
-                                <div className="text-xs sm:text-sm font-bold text-slate-800 dark:text-zinc-200 line-clamp-2">
+                                <div className="text-xs sm:text-sm font-bold text-zinc-800 dark:text-zinc-200 line-clamp-2">
                                   {errItem.tema ? `${errItem.tema}${errItem.foco ? ` • ${errItem.foco}` : ''}` : `Questão #${errItem.code || errItem.questionId.slice(0, 8)}`}
                                 </div>
 
@@ -6447,12 +6495,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         ) : (
                           <div className="py-10 text-center space-y-2">
                             <CheckCircle2 className="w-8 h-8 text-emerald-500 mx-auto" />
-                            <p className="text-xs font-bold text-slate-800 dark:text-zinc-200">
+                            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">
                               {pendingErrorsList.length === 0
                                 ? 'Nenhum erro pendente! Sua retenção está excelente.'
                                 : 'Nenhum erro encontrado com os filtros selecionados.'}
                             </p>
-                            <p className="text-[11px] text-slate-400 dark:text-zinc-500">
+                            <p className="text-[11px] text-zinc-400 dark:text-zinc-500">
                               Continue resolvendo questões para calibrar suas lacunas de aprendizado.
                             </p>
                           </div>
@@ -6461,8 +6509,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                       {/* Botão de Rodapé Fixo do Drawer */}
                       {pendingErrorsList.length > 0 && (
-                        <div className="pt-3 border-t border-slate-100 dark:border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-2.5">
-                          <span className="text-xs text-slate-500 dark:text-zinc-400 font-medium">
+                        <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-2.5">
+                          <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">
                             {pendingErrorsList.length} questões aguardando reteste no ciclo de metacognição
                           </span>
                           <button
@@ -6622,54 +6670,116 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </button>
                   </div>
 
-                  {/* 1. Regra de Ouro da Banca (Tirada da frente do card e detalhada aqui) */}
-                  <div className="p-4 rounded-xl border border-amber-500/30 bg-amber-500/10 space-y-1.5">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300 flex items-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                      Regra de Ouro da Decisão Clínica
-                    </span>
-                    <p className="text-xs sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100 leading-relaxed">
-                      {displayedClinicalTip.rule}
-                    </p>
-                  </div>
-
-                  {/* 2. Decomposição Completa dos Critérios */}
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between text-xs font-bold text-zinc-700 dark:text-zinc-300 px-0.5">
-                      <span className="flex items-center gap-1.5 font-bold text-slate-800 dark:text-zinc-200">
-                        <Layers className="w-3.5 h-3.5 text-amber-500" />
-                        Critérios Objetivos & Parâmetros
-                      </span>
-                      <span className="text-[11px] text-zinc-400 font-normal">
-                        {displayedClinicalTip.chips.length} parâmetros
-                      </span>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {displayedClinicalTip.chips.map((item, idx) => (
-                        <div
-                          key={idx}
-                          className="p-3 rounded-xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex items-start gap-3 hover:border-amber-500/30 transition-colors"
-                        >
-                          {item.letter ? (
-                            <div className="w-7 h-7 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30 flex items-center justify-center font-mono font-black text-xs shrink-0 mt-0.5">
-                              {item.letter}
-                            </div>
-                          ) : (
-                            <div className="w-2 h-2 rounded-full bg-amber-500 shrink-0 mt-2" />
-                          )}
-                          <div className="min-w-0 flex-1">
-                            <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 block">
-                              {item.label}
+                    {/* 0. Vitrine de Imagem Médica (se aplicável ao tema) */}
+                    {displayedClinicalTip.requiresImage && displayedClinicalTip.imageUrl && (
+                      <div className="rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-900/60 p-3.5 space-y-2.5 overflow-hidden">
+                        <div className="flex items-center justify-between text-xs font-bold text-zinc-700 dark:text-zinc-300">
+                          <span className="flex items-center gap-1.5 text-zinc-800 dark:text-zinc-200">
+                            <Eye className="w-3.5 h-3.5 text-amber-500" />
+                            <span>Exame de Imagem & Achados Patognomônicos</span>
+                          </span>
+                          {displayedClinicalTip.imageModality && (
+                            <span className="px-2 py-0.5 rounded-md font-mono text-[10px] font-bold uppercase tracking-wider bg-purple-500/15 text-purple-700 dark:text-purple-300 border border-purple-500/25">
+                              {displayedClinicalTip.imageModality.toUpperCase()}
                             </span>
-                            <span className="text-xs text-zinc-600 dark:text-zinc-400 mt-0.5 block font-medium leading-relaxed break-words">
-                              {item.value}
+                          )}
+                        </div>
+
+                        <div
+                          onClick={() => setActiveZoomImage({
+                            url: displayedClinicalTip.imageUrl!,
+                            caption: displayedClinicalTip.imageCaption || displayedClinicalTip.title,
+                            source: displayedClinicalTip.imageSource,
+                            author: displayedClinicalTip.imageAuthor,
+                            license: displayedClinicalTip.imageLicense,
+                            originUrl: displayedClinicalTip.imageOriginUrl,
+                          })}
+                          className="relative max-h-72 w-full rounded-xl overflow-hidden bg-black/60 cursor-zoom-in group/img flex items-center justify-center border border-zinc-200 dark:border-zinc-800"
+                          title="Clique para ampliar o exame em tela cheia"
+                        >
+                          <img
+                            src={displayedClinicalTip.imageUrl}
+                            alt={displayedClinicalTip.imageCaption || displayedClinicalTip.title}
+                            className="max-h-72 w-auto object-contain group-hover/img:scale-102 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-black/25 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                            <span className="bg-black/85 text-white text-xs font-bold px-3 py-1.5 rounded-xl border border-white/20 flex items-center gap-1.5 shadow-xl">
+                              <ZoomIn className="w-3.5 h-3.5" />
+                              Clique para ampliar
                             </span>
                           </div>
                         </div>
-                      ))}
+
+                        {displayedClinicalTip.imageCaption && (
+                          <p className="text-xs text-zinc-700 dark:text-zinc-300 font-medium leading-relaxed">
+                            {displayedClinicalTip.imageCaption}
+                          </p>
+                        )}
+
+                        <div className="flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400 flex-wrap gap-2 pt-1 border-t border-zinc-200/60 dark:border-zinc-800/60">
+                          <span>Fonte: <strong className="text-zinc-700 dark:text-zinc-300">{displayedClinicalTip.imageSource || 'Domínio Público / CC'}</strong></span>
+                          {displayedClinicalTip.imageLicense && (
+                            <span className="px-1.5 py-0.5 rounded bg-zinc-200/60 dark:bg-zinc-800/80 font-mono text-[9px] text-zinc-700 dark:text-zinc-300">
+                              Licença: {displayedClinicalTip.imageLicense}
+                            </span>
+                          )}
+                          {displayedClinicalTip.imageAuthor && (
+                            <span>Autor: {displayedClinicalTip.imageAuthor}</span>
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* 1. Regra de Ouro da Banca (Tirada da frente do card e detalhada aqui) */}
+                    <div className="p-4 rounded-xl border border-amber-500/30 bg-amber-500/10 space-y-1.5">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300 flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                        Regra de Ouro da Decisão Clínica
+                      </span>
+                      <p className="text-xs sm:text-sm font-semibold text-zinc-900 dark:text-zinc-100 leading-relaxed">
+                        {displayedClinicalTip.rule}
+                      </p>
                     </div>
-                  </div>
+
+                    {/* 2. Decomposição Completa dos Critérios */}
+                    <div className="space-y-2">
+                      <div className="flex items-center justify-between text-xs font-bold text-zinc-700 dark:text-zinc-300 px-0.5">
+                        <span className="flex items-center gap-1.5 font-bold text-zinc-800 dark:text-zinc-200">
+                          <Layers className="w-3.5 h-3.5 text-amber-500" />
+                          Critérios Objetivos & Parâmetros
+                        </span>
+                        <span className="text-[11px] text-zinc-400 font-normal">
+                          {displayedClinicalTip.chips.length} parâmetros
+                        </span>
+                      </div>
+
+                      <div className="space-y-2">
+                        {displayedClinicalTip.chips.map((item, idx) => (
+                          <div
+                            key={idx}
+                            className="p-3 sm:p-3.5 rounded-xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex flex-col gap-2 hover:border-amber-500/30 transition-colors"
+                          >
+                            <div className="flex items-center gap-2.5 min-w-0">
+                              {item.letter ? (
+                                <div className="w-6 h-6 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30 flex items-center justify-center font-mono font-black text-xs shrink-0">
+                                  {item.letter}
+                                </div>
+                              ) : (
+                                <div className="w-2 h-2 rounded-full bg-amber-500 shrink-0" />
+                              )}
+                              <span className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 leading-snug break-words">
+                                {item.label}
+                              </span>
+                            </div>
+                            <div className="w-full">
+                              <span className="block w-full text-xs font-semibold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/15 px-3 py-2 rounded-lg border border-amber-500/25 leading-relaxed break-words whitespace-normal text-left">
+                                {item.value}
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
 
                   {/* 3. Pegadinha Clássica da Banca */}
                   {displayedClinicalTip.bancaTrap && (
@@ -6741,7 +6851,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   {/* 1. Decomposição Direta dos Critérios */}
                   <div className="space-y-2">
                     <div className="flex items-center justify-between text-xs font-bold text-zinc-700 dark:text-zinc-300 px-0.5">
-                      <span className="flex items-center gap-1.5 font-bold text-slate-800 dark:text-zinc-200">
+                      <span className="flex items-center gap-1.5 font-bold text-zinc-800 dark:text-zinc-200">
                         <Layers className="w-3.5 h-3.5 text-amber-500" />
                         Critérios Objetivos de Decomposição
                       </span>
@@ -6929,14 +7039,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     <div className="space-y-4">
                       {/* Mini-Cockpit FSRS (KPIs rápidos) */}
                       <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                        <div className="p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 flex flex-col justify-between">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+                        <div className="p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block">
                             Para Hoje
                           </span>
-                          <span className="text-xl sm:text-2xl font-black font-mono text-slate-900 dark:text-zinc-100 mt-1">
+                          <span className="text-xl sm:text-2xl font-black font-mono text-zinc-900 dark:text-zinc-100 mt-1">
                             {flashcardsStats.dueToday}
                           </span>
-                          <span className="text-[10px] text-slate-400 dark:text-zinc-500">
+                          <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
                             revisões pendentes
                           </span>
                         </div>
@@ -6965,8 +7075,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </span>
                         </div>
 
-                        <div className="p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 flex flex-col justify-between">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+                        <div className="p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 flex flex-col justify-between">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block">
                             Meta Retenção
                           </span>
                           <span
@@ -6975,7 +7085,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           >
                             {flashcardsStats.desiredRetention}%
                           </span>
-                          <span className="text-[10px] text-slate-400 dark:text-zinc-500">
+                          <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
                             precisão esperada
                           </span>
                         </div>
@@ -6983,7 +7093,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                       {/* Lista de Flashcards do Dia */}
                       <div className="space-y-2.5">
-                        <div className="flex items-center justify-between text-xs text-slate-500 dark:text-zinc-400 font-semibold px-1">
+                        <div className="flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 font-semibold px-1">
                           <span>Cartões de Alto Rendimento para Focar ({filteredCards.length})</span>
                           <button
                             type="button"
@@ -7002,14 +7112,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           filteredCards.slice(0, 20).map((card) => (
                             <div
                               key={card.id}
-                              className="p-3.5 rounded-2xl border border-slate-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-slate-300 dark:hover:border-zinc-700 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group shadow-2xs"
+                              className="p-3.5 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3 group shadow-2xs"
                             >
                               <div className="min-w-0 flex-1 space-y-1.5">
                                 <div className="flex flex-wrap items-center gap-1.5">
                                   <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
                                     {card.specialty}
                                   </span>
-                                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400">
+                                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400">
                                     {card.theme}
                                   </span>
                                   {card.priority === 'essential' && (
@@ -7019,7 +7129,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                   )}
                                 </div>
 
-                                <div className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-zinc-200 leading-snug">
+                                <div className="text-xs sm:text-sm font-semibold text-zinc-800 dark:text-zinc-200 leading-snug">
                                   {card.front}
                                 </div>
 
@@ -7046,11 +7156,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           ))
                         ) : (
                           <div className="py-10 text-center space-y-2">
-                            <Brain className="w-8 h-8 text-slate-400 mx-auto" />
-                            <p className="text-xs font-bold text-slate-800 dark:text-zinc-200">
+                            <Brain className="w-8 h-8 text-zinc-400 mx-auto" />
+                            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">
                               Nenhum flashcard encontrado com os filtros atuais.
                             </p>
-                            <p className="text-[11px] text-slate-400 dark:text-zinc-500">
+                            <p className="text-[11px] text-zinc-400 dark:text-zinc-500">
                               Você está em dia com seus cartões para este filtro.
                             </p>
                           </div>
@@ -7058,8 +7168,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
 
                       {/* Botão de Rodapé Fixo do Drawer */}
-                      <div className="pt-3 border-t border-slate-100 dark:border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-2.5">
-                        <span className="text-xs text-slate-500 dark:text-zinc-400 font-medium">
+                      <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex flex-col sm:flex-row items-center justify-between gap-2.5">
+                        <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">
                           Repetição espaçada com algoritmo FSRS
                         </span>
                         <button
@@ -7097,18 +7207,18 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           />
 
           {/* Modal Central */}
-          <div className="relative z-50 w-full max-w-sm sm:max-w-md bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-5 sm:p-6 flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
+          <div className="relative z-50 w-full max-w-sm sm:max-w-md bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-5 sm:p-6 flex flex-col overflow-hidden animate-in zoom-in-95 duration-200">
             <div className="space-y-4">
               {/* Cabeçalho do Modal */}
-              <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-zinc-800/80">
-                <span className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2 font-heading">
+              <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800/80">
+                <span className="text-sm font-bold text-zinc-900 dark:text-white flex items-center gap-2 font-heading">
                   <Calendar className="w-4 h-4 text-emerald-500" />
                   Filtrar por Período
                 </span>
                 <button
                   type="button"
                   onClick={() => setIsPeriodDrawerOpen(false)}
-                  className="text-slate-400 hover:text-slate-600 dark:hover:text-white p-1 rounded-lg transition-colors cursor-pointer"
+                  className="text-zinc-400 hover:text-zinc-600 dark:hover:text-white p-1 rounded-lg transition-colors cursor-pointer"
                 >
                   <X className="w-4 h-4" />
                 </button>
@@ -7116,7 +7226,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
               {/* Atalhos de Estudo */}
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block mb-2">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block mb-2">
                   Atalhos de Estudo
                 </span>
                 <div className="grid grid-cols-2 gap-2 text-xs">
@@ -7140,7 +7250,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         }}
                         className={`px-3 py-2 rounded-xl text-left text-xs font-semibold transition-all cursor-pointer border ${isSel
                           ? 'bg-emerald-500/15 border-emerald-500 text-emerald-700 dark:text-emerald-400 font-bold shadow-2xs'
-                          : 'bg-slate-50 dark:bg-zinc-900/70 border-slate-200/80 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-100 dark:hover:bg-zinc-800'
+                          : 'bg-zinc-50 dark:bg-zinc-900/70 border-zinc-200/80 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800'
                           }`}
                       >
                         {preset.label}
@@ -7151,31 +7261,31 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               </div>
 
               {/* Intervalo no Calendário */}
-              <div className="pt-3 border-t border-slate-100 dark:border-zinc-800/80 space-y-2.5">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+              <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/80 space-y-2.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block">
                   Intervalo Personalizado no Calendário
                 </span>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <div>
-                    <label className="text-[10px] font-medium text-slate-500 dark:text-zinc-400 block mb-1">
+                    <label className="text-[10px] font-medium text-zinc-500 dark:text-zinc-400 block mb-1">
                       De:
                     </label>
                     <input
                       type="date"
                       value={customStartDate}
                       onChange={(e) => setCustomStartDate(e.target.value)}
-                      className="w-full px-2.5 py-1.5 text-xs rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200 focus:outline-none focus:border-emerald-500"
+                      className="w-full px-2.5 py-1.5 text-xs rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-emerald-500"
                     />
                   </div>
                   <div>
-                    <label className="text-[10px] font-medium text-slate-500 dark:text-zinc-400 block mb-1">
+                    <label className="text-[10px] font-medium text-zinc-500 dark:text-zinc-400 block mb-1">
                       Até:
                     </label>
                     <input
                       type="date"
                       value={customEndDate}
                       onChange={(e) => setCustomEndDate(e.target.value)}
-                      className="w-full px-2.5 py-1.5 text-xs rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200 focus:outline-none focus:border-emerald-500"
+                      className="w-full px-2.5 py-1.5 text-xs rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 focus:outline-none focus:border-emerald-500"
                     />
                   </div>
                 </div>
@@ -7856,13 +7966,40 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 <X className="w-4 h-4" />
               </button>
             </div>
-            <div className="p-3 flex items-center justify-center bg-black/60 overflow-auto max-h-[75vh]">
+            <div className="p-3 flex items-center justify-center bg-black/60 overflow-auto max-h-[70vh]">
               <img
                 src={activeZoomImage.url}
                 alt={activeZoomImage.caption || 'Exame Clínico Ampliado'}
-                className="max-h-[70vh] w-auto object-contain rounded-lg shadow-lg"
+                className="max-h-[65vh] w-auto object-contain rounded-lg shadow-lg"
               />
             </div>
+            {(activeZoomImage.source || activeZoomImage.license) && (
+              <div className="p-2.5 border-t border-zinc-800 bg-zinc-900/80 flex items-center justify-between text-[11px] text-zinc-400 gap-2 flex-wrap">
+                <span className="flex items-center gap-1.5">
+                  <span>Fonte Oficial:</span>
+                  <strong className="text-zinc-200">{activeZoomImage.source}</strong>
+                  {activeZoomImage.author && <span className="text-zinc-400">• Autor: {activeZoomImage.author}</span>}
+                </span>
+                <div className="flex items-center gap-2">
+                  {activeZoomImage.license && (
+                    <span className="px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-300 font-mono text-[9px] border border-zinc-700/60">
+                      Licença: {activeZoomImage.license}
+                    </span>
+                  )}
+                  {activeZoomImage.originUrl && (
+                    <a
+                      href={activeZoomImage.originUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-amber-500 hover:underline flex items-center gap-1"
+                    >
+                      <span>Registro Oficial</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -8040,29 +8177,29 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             </div>
 
                             {/* Título & Subtítulo */}
-                            <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 leading-snug group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                            <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 leading-snug group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors break-words">
                               {card.title}
                             </h4>
-                            <p className="text-[10px] text-zinc-500 dark:text-zinc-400 font-medium truncate">
+                            <p className="text-[10px] text-zinc-500 dark:text-zinc-400 font-medium break-words leading-tight">
                               {card.specialty} • {card.tema}{card.foco ? ` • ${card.foco}` : ''}
                             </p>
                           </div>
 
-                          {/* Preview das Chips */}
-                          <div className="space-y-1">
-                            {card.chips.slice(0, 3).map((ch, i) => (
-                              <div key={i} className="text-[10px] flex items-center justify-between gap-2 p-1 rounded bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/60">
-                                <span className="text-zinc-700 dark:text-zinc-300 font-semibold truncate">
+                          {/* Preview das Chips sem truncamento */}
+                          <div className="space-y-1.5">
+                            {card.chips.slice(0, 4).map((ch, i) => (
+                              <div key={i} className="text-[10px] flex flex-col gap-1 p-1.5 rounded-lg bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/60">
+                                <span className="text-zinc-700 dark:text-zinc-300 font-semibold leading-tight break-words">
                                   {ch.label}
                                 </span>
-                                <span className="text-amber-600 dark:text-amber-400 font-bold truncate max-w-[50%]">
+                                <span className="text-amber-700 dark:text-amber-300 font-bold leading-snug break-words whitespace-normal text-left bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
                                   {ch.value}
                                 </span>
                               </div>
                             ))}
-                            {card.chips.length > 3 && (
+                            {card.chips.length > 4 && (
                               <span className="text-[9px] text-zinc-400 dark:text-zinc-500 block text-right font-medium">
-                                +{card.chips.length - 3} itens adicionais
+                                +{card.chips.length - 4} itens adicionais
                               </span>
                             )}
                           </div>

@@ -160,9 +160,18 @@ function getStats() {
   };
 }
 
+const ALLOWED_LOCAL_ORIGINS = new Set([
+  `http://localhost:${PORT}`,
+  `http://127.0.0.1:${PORT}`
+]);
+
 const server = http.createServer((req, res) => {
-  // CORS headers
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  // CORS restrito ao localhost
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_LOCAL_ORIGINS.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
   res.setHeader('Access-Control-Allow-Methods', 'GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
@@ -583,7 +592,7 @@ const server = http.createServer((req, res) => {
   res.end(html);
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log(`\n========================================================================`);
   console.log(`🌐 DASHBOARD DINÂMICO LIVE INICIADO COM SUCESSO!`);
   console.log(`👉 Acesse no seu navegador: http://localhost:${PORT}`);

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { timingSafeEqualStrings } from '@/utils/security';
 import {
   exchangeGoogleCode,
   fetchGoogleAccountEmail,
@@ -8,6 +9,14 @@ import {
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
+
+const ALLOWED_REDIRECT_HOSTS = new Set([
+  'bancoresidencia.com.br',
+  'www.bancoresidencia.com.br',
+  'bancoresidencia-kappa.vercel.app',
+  'localhost:3000',
+  '127.0.0.1:3000'
+]);
 
 export async function POST(req: NextRequest) {
   try {
@@ -22,25 +31,48 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { code, redirectUri } = body;
+    const { code, redirectUri, state } = body;
 
-    if (!code || !redirectUri) {
+    if (!code || typeof code !== 'string' || !redirectUri || typeof redirectUri !== 'string') {
       return NextResponse.json(
         { error: 'Parâmetros "code" e "redirectUri" são obrigatórios.' },
         { status: 400 }
       );
     }
 
-    // 1. Troca o código pelo par access_token + refresh_token
+    // 1. Validação estrita do redirectUri contra domínios autorizados
+    try {
+      const parsedRedirect = new URL(redirectUri);
+      const configuredHost = process.env.NEXT_PUBLIC_APP_URL ? new URL(process.env.NEXT_PUBLIC_APP_URL).host : '';
+      if (
+        !ALLOWED_REDIRECT_HOSTS.has(parsedRedirect.host.toLowerCase()) &&
+        (!configuredHost || parsedRedirect.host.toLowerCase() !== configuredHost.toLowerCase())
+      ) {
+        return NextResponse.json({ error: 'redirectUri não autorizado.' }, { status: 400 });
+      }
+    } catch {
+      return NextResponse.json({ error: 'redirectUri inválido.' }, { status: 400 });
+    }
+
+    // 2. Proteção OAuth CSRF: exige coincidência criptográfica entre o parâmetro state e o cookie br_gcal_oauth_state
+    const rawStateCookie = req.cookies.get('br_gcal_oauth_state')?.value;
+    const expectedState = rawStateCookie ? decodeURIComponent(rawStateCookie) : '';
+    if (!expectedState || typeof state !== 'string' || !timingSafeEqualStrings(state, expectedState)) {
+      return NextResponse.json(
+        { error: 'Validação de segurança OAuth (state anti-CSRF) falhou ou expirou. Inicie a conexão novamente.' },
+        { status: 403 }
+      );
+    }
+
+    // 3. Troca o código pelo par access_token + refresh_token
     const tokens = await exchangeGoogleCode(code, redirectUri);
 
-    // 2. Busca o email da conta conectada
+    // 4. Busca o email da conta conectada
     const accountEmail = await fetchGoogleAccountEmail(tokens.accessToken);
-
     const tokenExpiresAt = new Date(Date.now() + tokens.expiresIn * 1000).toISOString();
 
-    // 3. Salva no banco de dados com criptografia AES-256
-    const payloadToUpsert: any = {
+    // 5. Salva no banco de dados com criptografia AES-256-GCM
+    const payloadToUpsert: Record<string, unknown> = {
       user_id: user.id,
       provider: 'google',
       account_email: accountEmail || user.email,
@@ -52,7 +84,6 @@ export async function POST(req: NextRequest) {
       updated_at: new Date().toISOString()
     };
 
-    // Só atualiza o refresh_token se o Google tiver enviado um novo (no consent inicial)
     if (tokens.refreshToken) {
       payloadToUpsert.refresh_token = encryptSecret(tokens.refreshToken);
     }
@@ -69,15 +100,17 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    return NextResponse.json({
+    const res = NextResponse.json({
       success: true,
       email: accountEmail || user.email,
       message: 'Google Agenda conectado com sucesso e protegido no servidor.'
     });
-  } catch (err: any) {
+    res.cookies.delete('br_gcal_oauth_state');
+    return res;
+  } catch (err: unknown) {
     console.error('[GoogleCalendarConnect] Erro:', err);
     return NextResponse.json(
-      { error: err?.message || 'Falha ao processar autorização do Google.' },
+      { error: err instanceof Error ? err.message : 'Falha ao processar autorização do Google.' },
       { status: 500 }
     );
   }

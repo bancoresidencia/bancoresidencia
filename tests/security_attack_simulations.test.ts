@@ -3,17 +3,34 @@ import crypto from 'node:crypto';
 import {
   sanitizePostgrestTerm,
   isPrivilegedRole,
-  validateQuestionId,
-  validateAnswerOption,
-  validatePasswordRequirements
+  validatePasswordRequirements,
+  timingSafeEqualStrings
 } from '../src/utils/security.ts';
+import {
+  generateSessionTicket,
+  verifySessionTicket
+} from '../src/utils/securityTickets.ts';
+import {
+  isPrivateOrReservedIp,
+  validateIcalUrlFormat
+} from '../src/utils/urlSecurity.ts';
+import {
+  injectZeroWidthWatermark,
+  decodeZeroWidthWatermark
+} from '../src/utils/watermark.ts';
+import { sanitizeMedicalText } from '../src/utils/textSanitizer.ts';
+import { validateReferralCode } from '../src/config/ambassadorConfig.ts';
+import {
+  parseZipEntries,
+  parseUniversalFlashcardFile
+} from '../src/lib/flashcards/ankiPackageParser.ts';
 
 console.log('================================================================');
 console.log('🛡️  SUÍTE DE TESTES DE SEGURANÇA — SIMULAÇÃO REAL DE ATAQUES');
 console.log('================================================================\n');
 
 let passedTests = 0;
-let totalTests = 10;
+const totalTests = 16;
 
 // ------------------------------------------------------------------------------
 // ATAQUE 1: Scraping e Forja de Parâmetro includeGabarito=true por Anônimo
@@ -365,6 +382,188 @@ console.log('[ATAQUE 10] Simulação de Rajada / DoS em APIs (Rate Limiting de B
   assert.strictEqual(blockedCount, 10, 'As 10 requisições excedentes devem ser bloqueadas com HTTP 429');
 
   console.log('   ✓ ATAQUE NEUTRALIZADO: As primeiras 120 requisições foram aceitas; a 121ª até a 130ª foram bloqueadas com HTTP 429.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 11: Session Ticket Binding, Escalação Anônima e Forja HMAC (Módulo Real)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 11] Validação Real de Session Tickets (securityTickets.ts + timingSafeEqual)');
+{
+  const anonTicket = generateSessionTicket('anonymous', ['q_1', 'q_2']);
+  const userATicket = generateSessionTicket('usr_student_A', ['q_1', 'q_2']);
+
+  // 1. Ticket anônimo apresentado por usuário autenticado deve falhar estritamente
+  const anonAsAuth = verifySessionTicket(anonTicket, ['q_1'], 'usr_student_A');
+  assert.strictEqual(anonAsAuth.isValid, false, 'Ticket anônimo NÃO pode ser reutilizado por sessão autenticada');
+
+  // 2. Ticket do Aluno A apresentado pelo Aluno B deve falhar
+  const crossUser = verifySessionTicket(userATicket, ['q_1'], 'usr_student_B');
+  assert.strictEqual(crossUser.isValid, false, 'Ticket de outro usuário deve ser rejeitado');
+
+  // 3. Solicitação de ID de questão fora do escopo do ticket deve falhar
+  const outOfScope = verifySessionTicket(userATicket, ['q_1', 'q_secret_999'], 'usr_student_A');
+  assert.strictEqual(outOfScope.isValid, false, 'IDs fora do ticket devem ser bloqueados');
+
+  // 4. Adulteração de assinatura HMAC deve falhar em tempo constante
+  const tamperedTicket = userATicket.slice(0, -3) + 'xyz';
+  const tamperedRes = verifySessionTicket(tamperedTicket, ['q_1'], 'usr_student_A');
+  assert.strictEqual(tamperedRes.isValid, false, 'Ticket adulterado deve ser rejeitado');
+
+  // 5. Uso legítimo pelo titular dentro da validade deve passar
+  const validRes = verifySessionTicket(userATicket, ['q_1', 'q_2'], 'usr_student_A');
+  assert.strictEqual(validRes.isValid, true, 'Ticket legítimo do titular deve ser aprovado');
+
+  assert.strictEqual(timingSafeEqualStrings('segredo_123', 'segredo_123'), true);
+  assert.strictEqual(timingSafeEqualStrings('segredo_123', 'segredo_124'), false);
+  assert.strictEqual(timingSafeEqualStrings('curto', 'muito_mais_longo'), false);
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Session Tickets vinculados estritamente ao userId e IDs autorizados com HMAC constant-time.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 12: SSRF via Subdomínios Abertos (script.google.com), IPv6 e Cloud Metadata
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 12] Validação Real Anti-SSRF IPv4/IPv6/Cloud Metadata (urlSecurity.ts)');
+{
+  assert.strictEqual(validateIcalUrlFormat('https://script.google.com/macros/s/evil/exec').allowed, false);
+  assert.strictEqual(validateIcalUrlFormat('https://www.google.com/calendar.ics').allowed, false);
+  assert.strictEqual(validateIcalUrlFormat('https://169.254.169.254/latest/meta-data/').allowed, false);
+  assert.strictEqual(validateIcalUrlFormat('https://[::1]:8080/internal').allowed, false);
+  assert.strictEqual(validateIcalUrlFormat('https://user:pass@calendar.google.com/basic.ics').allowed, false);
+  assert.strictEqual(validateIcalUrlFormat('https://calendar.google.com/calendar/ical/test/basic.ics').allowed, true);
+
+  assert.strictEqual(isPrivateOrReservedIp('127.0.0.1'), true);
+  assert.strictEqual(isPrivateOrReservedIp('10.0.0.5'), true);
+  assert.strictEqual(isPrivateOrReservedIp('172.16.10.1'), true);
+  assert.strictEqual(isPrivateOrReservedIp('192.168.1.1'), true);
+  assert.strictEqual(isPrivateOrReservedIp('169.254.169.254'), true);
+  assert.strictEqual(isPrivateOrReservedIp('100.64.1.1'), true);
+  assert.strictEqual(isPrivateOrReservedIp('::1'), true);
+  assert.strictEqual(isPrivateOrReservedIp('::ffff:169.254.169.254'), true);
+  assert.strictEqual(isPrivateOrReservedIp('fe80::1'), true);
+  assert.strictEqual(isPrivateOrReservedIp('fc00::1'), true);
+  assert.strictEqual(isPrivateOrReservedIp('8.8.8.8'), false);
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: SSRF via script.google.com, IPv6 ::1, IPv4-mapped IPv6 e Cloud Metadata bloqueados.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 13: Injeção de Wildcard PostgREST (*) e Truncamento Anti-ReDoS
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 13] Sanitização Real de Wildcard PostgREST e Limite de Comprimento');
+{
+  const wildcardPayload = 'Cardio*.or(is_anulada.eq.true)';
+  const cleaned = sanitizePostgrestTerm(wildcardPayload);
+  assert(!cleaned.includes('*'), 'Caractere curinga * do PostgREST deve ser removido');
+  assert(!cleaned.includes('(') && !cleaned.includes(')'), 'Parênteses devem ser removidos');
+
+  const hugeTerm = 'A'.repeat(500);
+  assert(sanitizePostgrestTerm(hugeTerm).length <= 120, 'Termo de busca deve ser truncado em <= 120 chars');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Curingas PostgREST (*) e termos superdimensionados neutralizados.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 14: Forja de Cupom Arbitrário de 4 Letras e Autoindicação (ambassadorConfig.ts)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 14] Bloqueio Real de Cupons Arbitrários e Autoindicação');
+{
+  assert.strictEqual(validateReferralCode('AAAA').valid, false, 'String arbitrária de 4 letras NÃO pode conceder desconto');
+  assert.strictEqual(validateReferralCode('TESTE123').valid, false, 'Cupom inexistente deve ser rejeitado');
+  assert.strictEqual(validateReferralCode('HACK99').valid, false, 'Cupom inventado deve ser rejeitado');
+  assert.strictEqual(
+    validateReferralCode('MED-LUCAS-10', 'MED-LUCAS-10').valid,
+    false,
+    'Autoindicação (usar o próprio código) deve ser bloqueada'
+  );
+  assert.strictEqual(validateReferralCode('RESIDENCIA10').valid, true, 'Cupom oficial homologado deve permanecer válido');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Cupons arbitrários e autoindicações rejeitados com precisão.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 15: Preservação de Marca d'Água Forense Zero-Width após Sanitização
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 15] Sobrevivência da Esteganografia Forense (watermark.ts + textSanitizer.ts)');
+{
+  const rawCommentary = 'A conduta imediata na HPP é **ocitocina intramuscular**.\u200B';
+  const suspectUserId = 'usr_scraper_suspect_42';
+  const watermarked = injectZeroWidthWatermark(rawCommentary, suspectUserId);
+  const sanitizedForRender = sanitizeMedicalText(watermarked);
+  const decoded = decodeZeroWidthWatermark(sanitizedForRender);
+
+  assert(decoded !== null, 'Marca forense invisível NÃO pode ser destruída pelo sanitizeMedicalText');
+  assert.strictEqual(decoded?.userId, suspectUserId, 'Identidade exata do extrator deve ser recuperada');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Marca forense invisível permanece 100% íntegra e rastreável após sanitização médica.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 16: Proteção Real contra ZIP Bomb e Recursão Infinita de Pacotes Anki
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 16] Defesa Real contra ZIP Bomb e Recursão Infinita (ankiPackageParser.ts)');
+{
+  // Constrói um contêiner ZIP mínimo em memória
+  function buildMinimalStoreZip(entryName: string, data: Buffer, declaredUncompressedSize?: number): Buffer {
+    const nameBuf = Buffer.from(entryName, 'utf8');
+    const uncomp = declaredUncompressedSize ?? data.length;
+
+    const localHeader = Buffer.alloc(30 + nameBuf.length);
+    localHeader.writeUInt32LE(0x04034b50, 0);
+    localHeader.writeUInt16LE(20, 4);
+    localHeader.writeUInt16LE(0, 8); // method 0 (store)
+    localHeader.writeUInt32LE(data.length, 18);
+    localHeader.writeUInt32LE(uncomp, 22);
+    localHeader.writeUInt16LE(nameBuf.length, 26);
+    nameBuf.copy(localHeader, 30);
+
+    const cdHeader = Buffer.alloc(46 + nameBuf.length);
+    cdHeader.writeUInt32LE(0x02014b50, 0);
+    cdHeader.writeUInt16LE(20, 4);
+    cdHeader.writeUInt16LE(20, 6);
+    cdHeader.writeUInt16LE(0, 10); // method 0
+    cdHeader.writeUInt32LE(data.length, 20);
+    cdHeader.writeUInt32LE(uncomp, 24);
+    cdHeader.writeUInt16LE(nameBuf.length, 28);
+    cdHeader.writeUInt32LE(0, 42); // localHeaderOffset = 0
+    nameBuf.copy(cdHeader, 46);
+
+    const cdOffset = localHeader.length + data.length;
+    const eocd = Buffer.alloc(22);
+    eocd.writeUInt32LE(0x06054b50, 0);
+    eocd.writeUInt16LE(1, 8);
+    eocd.writeUInt16LE(1, 10); // totalEntries = 1
+    eocd.writeUInt32LE(cdHeader.length, 12);
+    eocd.writeUInt32LE(cdOffset, 16);
+
+    return Buffer.concat([localHeader, data, cdHeader, eocd]);
+  }
+
+  // 1. Entrada declarando 200MB descompactados -> bloqueada imediatamente
+  const fakeBombZip = buildMinimalStoreZip('collection.anki2', Buffer.from('tiny'), 200 * 1024 * 1024);
+  assert.throws(
+    () => parseZipEntries(fakeBombZip),
+    /limite máximo/i,
+    'ZIP declarando >50MB descompactados deve ser bloqueado'
+  );
+
+  // 2. Pacote .apkg aninhado em 3 níveis (zip -> apkg -> apkg) -> bloqueia recursão infinita
+  const innerMost = buildMinimalStoreZip('cards.txt', Buffer.from('Pergunta\tResposta\n'));
+  const level2 = buildMinimalStoreZip('nested2.apkg', innerMost);
+  const level1 = buildMinimalStoreZip('nested1.apkg', level2);
+  assert.throws(
+    () => parseUniversalFlashcardFile(level1, 'outer.zip'),
+    /Profundidade máxima/i,
+    'Aninhamento recursivo profundo de pacotes .apkg deve ser bloqueado'
+  );
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: ZIP Bombs e pacotes .apkg recursivos foram interceptados e rejeitados.\n');
   passedTests++;
 }
 

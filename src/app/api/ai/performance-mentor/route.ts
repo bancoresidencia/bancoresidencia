@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
-import { verifyStudentSession } from '@/lib/supabase/studentAuth';
+import { authenticateAiRequest } from '@/lib/aiProtection';
 
 interface CachedDiagnosis {
   timestamp: number;
@@ -9,36 +9,47 @@ interface CachedDiagnosis {
 
 const diagnosisCache = new Map<string, CachedDiagnosis>();
 const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutos
+const MAX_DIAGNOSIS_CACHE = 500;
+
+function setBoundedDiagnosisCache(key: string, value: CachedDiagnosis) {
+  if (diagnosisCache.size >= MAX_DIAGNOSIS_CACHE) {
+    const oldest = diagnosisCache.keys().next().value;
+    if (oldest) diagnosisCache.delete(oldest);
+  }
+  diagnosisCache.set(key, value);
+}
 
 export async function POST(req: Request) {
   try {
-    // Blindagem de segurança: Acesso restrito a estudantes autenticados
-    const auth = await verifyStudentSession(req);
-    if (!auth.authorized || !auth.user) {
-      return NextResponse.json(
-        { success: false, error: auth.error || 'Acesso não autorizado: faça login para usar o mentor de IA.' },
-        { status: auth.status }
-      );
+    // Blindagem de segurança: Autenticação obrigatória + Rate Limit por usuário (máx 10/min)
+    const auth = await authenticateAiRequest(req, 10);
+    if (auth.errorResponse) {
+      return auth.errorResponse;
     }
 
     const body = await req.json();
-    const {
-      targetExam = 'ENARE 2026',
-      totalAnswered = 0,
-      totalCorrect = 0,
-      accuracyRate = 0,
-      percentil = 'P75.0',
-      theta = 1.0,
-      bySpecialty = [],
-      criticalSubfocos = [],
-      recentMistakesSample = [],
-      refresh = false
-    } = body;
+    const rawTargetExam = typeof body.targetExam === 'string' ? body.targetExam.trim().slice(0, 80) : 'ENARE 2026';
+    const targetExam = rawTargetExam || 'ENARE 2026';
+    const totalAnswered = Math.max(0, Math.floor(Number(body.totalAnswered) || 0));
+    const totalCorrect = Math.max(0, Math.floor(Number(body.totalCorrect) || 0));
+    const accuracyRate = Number.isFinite(Number(body.accuracyRate)) ? Math.min(100, Math.max(0, Number(body.accuracyRate))) : 0;
+    const percentil = typeof body.percentil === 'string' ? body.percentil.slice(0, 20) : 'P75.0';
+    const theta = Number.isFinite(Number(body.theta)) ? Number(body.theta) : 1.0;
+    const bySpecialty = Array.isArray(body.bySpecialty) ? body.bySpecialty.slice(0, 6) : [];
+    const criticalSubfocos = Array.isArray(body.criticalSubfocos) ? body.criticalSubfocos.slice(0, 5) : [];
+    const recentMistakesSample = Array.isArray(body.recentMistakesSample) ? body.recentMistakesSample.slice(0, 8) : [];
+    const refresh = Boolean(body.refresh);
 
-    const subfocoKeys = Array.isArray(criticalSubfocos)
-      ? criticalSubfocos.slice(0, 3).map((c: { subfoco?: string }) => c.subfoco || '').join(',')
-      : '';
-    const cacheKey = `v3-${totalAnswered}-${totalCorrect}-${Math.round(accuracyRate)}-${targetExam}-${subfocoKeys}`;
+    // Limita tamanho máximo serializado de cada bloco para impedir Denial of Wallet por payloads gigantes
+    const safeSpecialtyJson = JSON.stringify(bySpecialty).slice(0, 1200);
+    const safeSubfocosJson = JSON.stringify(criticalSubfocos).slice(0, 1200);
+    const safeMistakesJson = JSON.stringify(recentMistakesSample).slice(0, 1800);
+
+    const subfocoKeys = criticalSubfocos
+      .slice(0, 3)
+      .map((c: { subfoco?: string }) => (typeof c?.subfoco === 'string' ? c.subfoco.slice(0, 40) : ''))
+      .join(',');
+    const cacheKey = `v3-${auth.user?.id || 'u'}-${totalAnswered}-${totalCorrect}-${Math.round(accuracyRate)}-${targetExam}-${subfocoKeys}`;
 
     if (!refresh) {
       const cached = diagnosisCache.get(cacheKey);
@@ -61,9 +72,9 @@ DADOS DO ALUNO:
 - Total Resolvido: ${totalAnswered} (Acertos: ${totalCorrect}, Aproveitamento: ${accuracyRate.toFixed(1)}%)
 - Percentil: ${percentil}
 - Escore Theta (TRI): ${typeof theta === 'number' ? theta.toFixed(2) : theta}
-- Desempenho por Área: ${JSON.stringify(bySpecialty.slice(0, 6))}
-- Subfocos com Mais Erros: ${JSON.stringify(criticalSubfocos.slice(0, 5))}
-- Amostra de Erros Recentes: ${JSON.stringify(recentMistakesSample.slice(0, 8))}
+- Desempenho por Área: ${safeSpecialtyJson}
+- Subfocos com Mais Erros: ${safeSubfocosJson}
+- Amostra de Erros Recentes: ${safeMistakesJson}
 
 ESTRUTURA REQUISITADA:
 1. "diagnosticoPontos": 2 a 3 pontos diretos em tópicos (cada um iniciando com **Tópico:** e no máximo 1 a 2 frases curtas) sobre a situação real para ser aprovado em ${targetExam}.
@@ -111,7 +122,7 @@ Responda OBRIGATORIAMENTE em JSON válido:
       const rawResponse = await callGeminiAi(prompt, { temperature: 0.2, responseMimeType: 'application/json' });
       const parsed = parseCleanJson<Record<string, unknown>>(rawResponse);
 
-      diagnosisCache.set(cacheKey, { timestamp: Date.now(), data: parsed });
+      setBoundedDiagnosisCache(cacheKey, { timestamp: Date.now(), data: parsed });
 
       return NextResponse.json({
         success: true,
@@ -156,7 +167,7 @@ Responda OBRIGATORIAMENTE em JSON válido:
         }
       };
 
-      diagnosisCache.set(cacheKey, { timestamp: Date.now(), data: fallbackData });
+      setBoundedDiagnosisCache(cacheKey, { timestamp: Date.now(), data: fallbackData });
 
       return NextResponse.json({
         success: true,

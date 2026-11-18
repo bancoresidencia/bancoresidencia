@@ -12,6 +12,7 @@ import {
   TrendingUp
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 
 export interface HppStatItem {
   id: number;
@@ -275,15 +276,11 @@ export const HppRecurrenceStatsCard: React.FC = () => {
               {activeItem.title}
             </h4>
 
-            <p
-              className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed"
-              dangerouslySetInnerHTML={{
-                __html: activeItem.focusExplanation.replace(
-                  /\*\*(.*?)\*\*/g,
-                  '<strong class="font-bold text-zinc-800 dark:text-zinc-200">$1</strong>'
-                )
-              }}
-            />
+            <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+              {renderFormattedMedicalText(activeItem.focusExplanation, {
+                boldColorClass: 'font-bold text-zinc-800 dark:text-zinc-200'
+              })}
+            </p>
           </div>
         </div>
       </div>

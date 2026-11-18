@@ -10,6 +10,14 @@ interface MermaidDiagramProps {
   className?: string;
 }
 
+function sanitizeMermaidSvg(rawSvg: string): string {
+  return rawSvg
+    .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, '')
+    .replace(/<(?:iframe|object|embed)[\s\S]*?>[\s\S]*?<\/(?:iframe|object|embed)>/gi, '')
+    .replace(/\son[a-z]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, '')
+    .replace(/(?:href|xlink:href)\s*=\s*(?:"\s*(?:javascript|vbscript|data:text\/html)[^"]*"|'\s*(?:javascript|vbscript|data:text\/html)[^']*')/gi, '');
+}
+
 export const MermaidDiagram: React.FC<MermaidDiagramProps> = ({
   code,
   title,
@@ -34,7 +42,7 @@ export const MermaidDiagram: React.FC<MermaidDiagramProps> = ({
 
         mermaid.initialize({
           startOnLoad: false,
-          securityLevel: 'loose',
+          securityLevel: 'strict',
           fontFamily: 'inherit',
           theme: isDark ? 'dark' : 'default',
           themeVariables: isDark
@@ -82,7 +90,7 @@ export const MermaidDiagram: React.FC<MermaidDiagramProps> = ({
         const { svg } = await mermaid.render(cleanId, code.trim());
 
         if (isMounted) {
-          setSvgHtml(svg);
+          setSvgHtml(sanitizeMermaidSvg(svg));
           setError(null);
           setIsLoading(false);
         }

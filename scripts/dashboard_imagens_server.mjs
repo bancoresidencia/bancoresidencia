@@ -41,7 +41,7 @@ function getGate6Catalog() {
   if (fs.existsSync(MISSING_CATALOG_PATH)) {
     try {
       return JSON.parse(fs.readFileSync(MISSING_CATALOG_PATH, 'utf-8')).catalog || [];
-    } catch {}
+    } catch { }
   }
   return [];
 }
@@ -50,7 +50,7 @@ function getMedQCatalog() {
   if (fs.existsSync(MEDQ_CATALOG_PATH)) {
     try {
       return JSON.parse(fs.readFileSync(MEDQ_CATALOG_PATH, 'utf-8')).catalog || [];
-    } catch {}
+    } catch { }
   }
   return [];
 }
@@ -71,10 +71,44 @@ function saveDecisions(data) {
   fs.writeFileSync(DECISIONS_PATH, JSON.stringify(data, null, 2), 'utf8');
 }
 
+const ALLOWED_LOCAL_ORIGINS = new Set([
+  `http://localhost:${PORT}`,
+  `http://127.0.0.1:${PORT}`
+]);
+
+function isSafeExternalUrl(rawUrl) {
+  try {
+    const u = new URL(rawUrl);
+    if (u.protocol !== 'http:' && u.protocol !== 'https:') return false;
+    const h = u.hostname.toLowerCase();
+    if (
+      h === 'localhost' ||
+      h === '127.0.0.1' ||
+      h === '::1' ||
+      h === '[::1]' ||
+      h.startsWith('10.') ||
+      h.startsWith('192.168.') ||
+      h.startsWith('169.254.') ||
+      /^172\.(1[6-9]|2\d|3[01])\./.test(h)
+    ) {
+      return false;
+    }
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function parseJsonBody(req) {
   return new Promise((resolve, reject) => {
     let body = '';
-    req.on('data', chunk => { body += chunk; });
+    req.on('data', chunk => {
+      body += chunk;
+      if (body.length > 1024 * 1024) {
+        req.destroy();
+        reject(new Error('Payload excede 1MB'));
+      }
+    });
     req.on('end', () => {
       try {
         resolve(body ? JSON.parse(body) : {});
@@ -118,6 +152,16 @@ const server = http.createServer(async (req, res) => {
   const parsedUrl = new URL(req.url, `http://localhost:${PORT}`);
   const pathname = parsedUrl.pathname;
 
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_LOCAL_ORIGINS.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
+  if (req.method === 'POST' && origin && !ALLOWED_LOCAL_ORIGINS.has(origin)) {
+    res.writeHead(403, { 'Content-Type': 'application/json' });
+    return res.end(JSON.stringify({ error: 'Origem externa bloqueada.' }));
+  }
+
   // ROTA: Proxy / Serviço de Imagem Local e Segura
   if (pathname === '/api/proxy-image') {
     const rawUrl = parsedUrl.searchParams.get('url');
@@ -131,8 +175,7 @@ const server = http.createServer(async (req, res) => {
     if (localMatch && fs.existsSync(localMatch)) {
       res.writeHead(200, {
         'Content-Type': 'image/webp',
-        'Cache-Control': 'public, max-age=31536000, immutable',
-        'Access-Control-Allow-Origin': '*'
+        'Cache-Control': 'public, max-age=31536000, immutable'
       });
       return fs.createReadStream(localMatch).pipe(res);
     }
@@ -144,19 +187,19 @@ const server = http.createServer(async (req, res) => {
         if (pdrMatch && fs.existsSync(path.resolve(pdrMatch.local_path))) {
           res.writeHead(200, {
             'Content-Type': 'image/webp',
-            'Cache-Control': 'public, max-age=31536000, immutable',
-            'Access-Control-Allow-Origin': '*'
+            'Cache-Control': 'public, max-age=31536000, immutable'
           });
           return fs.createReadStream(path.resolve(pdrMatch.local_path)).pipe(res);
         }
-      } catch {}
+      } catch { }
     }
 
-    // 3. Imagem Externa HTTP/HTTPS com Timeout de 2.5s
-    if (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) {
+    // 3. Imagem Externa HTTP/HTTPS com bloqueio SSRF e Timeout de 2.5s
+    if ((rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) && isSafeExternalUrl(rawUrl)) {
       try {
         const fetchRes = await fetch(rawUrl, {
           headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
+          redirect: 'error',
           signal: AbortSignal.timeout(2500)
         });
         if (!fetchRes.ok) {
@@ -166,8 +209,7 @@ const server = http.createServer(async (req, res) => {
         const contentType = fetchRes.headers.get('content-type') || 'image/webp';
         res.writeHead(200, {
           'Content-Type': contentType,
-          'Cache-Control': 'public, max-age=86400',
-          'Access-Control-Allow-Origin': '*'
+          'Cache-Control': 'public, max-age=86400'
         });
         const arrayBuf = await fetchRes.arrayBuffer();
         return res.end(Buffer.from(arrayBuf));
@@ -205,7 +247,7 @@ const server = http.createServer(async (req, res) => {
       if (d.action === 'inpainted' || d.action === 'approve') medqInpaintedCount++;
     }
 
-    res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+    res.writeHead(200, { 'Content-Type': 'application/json' });
     return res.end(JSON.stringify({
       totalQuestionsWithImg: TOTAL_QUESTIONS_WITH_IMG,
       auditedCount: Object.keys(decisions).length,
@@ -264,13 +306,13 @@ const server = http.createServer(async (req, res) => {
         let fullQ = null;
         try {
           fullQ = db.prepare('SELECT statement, options, correct_answer, images FROM questions_curated_staging WHERE id = ?').get(item.id);
-        } catch {}
+        } catch { }
 
         let parsedOpts = [];
-        try { parsedOpts = JSON.parse(fullQ?.options || '[]'); } catch {}
+        try { parsedOpts = JSON.parse(fullQ?.options || '[]'); } catch { }
 
         let imgs = [];
-        try { imgs = JSON.parse(fullQ?.images || '[]'); } catch {}
+        try { imgs = JSON.parse(fullQ?.images || '[]'); } catch { }
         if (!imgs || imgs.length === 0) imgs = [item.image_url];
 
         const medqAct = medqActions[item.id] || null;
@@ -302,7 +344,7 @@ const server = http.createServer(async (req, res) => {
         };
       });
 
-      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.writeHead(200, { 'Content-Type': 'application/json' });
       return res.end(JSON.stringify({
         total: totalMatching,
         page,
@@ -333,10 +375,10 @@ const server = http.createServer(async (req, res) => {
         let fullQ = null;
         try {
           fullQ = db.prepare('SELECT statement, options, correct_answer FROM questions_curated_staging WHERE id = ?').get(item.id);
-        } catch {}
+        } catch { }
 
         let parsedOpts = [];
-        try { parsedOpts = JSON.parse(fullQ?.options || '[]'); } catch {}
+        try { parsedOpts = JSON.parse(fullQ?.options || '[]'); } catch { }
 
         return {
           id: item.id,
@@ -354,7 +396,7 @@ const server = http.createServer(async (req, res) => {
         };
       });
 
-      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.writeHead(200, { 'Content-Type': 'application/json' });
       return res.end(JSON.stringify({
         total: totalMatching,
         page,
@@ -366,13 +408,15 @@ const server = http.createServer(async (req, res) => {
 
     // 3. FILTRO: Alternativas Visuais
     if (filter === 'options_images') {
+      const safeLimit = Math.min(100, Math.max(1, Number(limit) || 15));
+      const safeOffset = Math.max(0, Number(offset) || 0);
       const rows = db.prepare(`
         SELECT id, code, institution, banca, year, statement, options, images, correct_answer, commentary
         FROM questions_curated_staging
         WHERE options LIKE '%http%'
         ORDER BY year DESC, id ASC
-        LIMIT ${limit} OFFSET ${offset}
-      `).all();
+        LIMIT ? OFFSET ?
+      `).all(safeLimit, safeOffset);
 
       const questions = rows.map(r => ({
         id: r.id,
@@ -388,30 +432,32 @@ const server = http.createServer(async (req, res) => {
         decision: decisions[r.id] || null
       }));
 
-      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.writeHead(200, { 'Content-Type': 'application/json' });
       return res.end(JSON.stringify({
         total: 92,
         page,
-        limit,
-        totalPages: Math.ceil(92 / limit),
+        limit: safeLimit,
+        totalPages: Math.ceil(92 / safeLimit),
         questions
       }));
     }
 
     // 4. FILTRO PADRÃO: Triagem Geral com Index Otimizado (<1ms)
+    const safeLimit = Math.min(100, Math.max(1, Number(limit) || 15));
+    const safeOffset = Math.max(0, Number(offset) || 0);
     const rows = db.prepare(`
       SELECT id, code, institution, banca, year, statement, options, images, correct_answer, commentary
       FROM questions_curated_staging
       WHERE images IS NOT NULL AND images != '[]' AND images != ''
       ORDER BY year DESC, id ASC
-      LIMIT ${limit} OFFSET ${offset}
-    `).all();
+      LIMIT ? OFFSET ?
+    `).all(safeLimit, safeOffset);
 
     const questions = rows.map(r => {
       let imgs = [];
       try { imgs = JSON.parse(r.images || '[]'); } catch { imgs = [r.images]; }
       let parsedOpts = [];
-      try { parsedOpts = JSON.parse(r.options || '[]'); } catch {}
+      try { parsedOpts = JSON.parse(r.options || '[]'); } catch { }
 
       return {
         id: r.id,
@@ -428,7 +474,7 @@ const server = http.createServer(async (req, res) => {
       };
     });
 
-    res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+    res.writeHead(200, { 'Content-Type': 'application/json' });
     return res.end(JSON.stringify({
       total: TOTAL_QUESTIONS_WITH_IMG,
       page,
@@ -451,7 +497,7 @@ const server = http.createServer(async (req, res) => {
         const fullQ = db.prepare('SELECT images FROM questions_curated_staging WHERE id = ?').get(question_id);
         let imgs = JSON.parse(fullQ?.images || '[]');
         if (!imgs || imgs.length === 0) imgs = [image_url];
-        
+
         const targetImgUrl = image_url || imgs[0];
         let localInputPath = resolveLocalFilePath(targetImgUrl);
 
@@ -459,7 +505,11 @@ const server = http.createServer(async (req, res) => {
           throw new Error(`Arquivo não localizado para inpainting: ${targetImgUrl}`);
         }
 
-        const outFileName = `clean_${question_id}_${path.basename(localInputPath)}`;
+        const safeQId = String(question_id || '').replace(/[^a-zA-Z0-9_-]/g, '');
+        if (!safeQId) {
+          throw new Error('Identificador de questão inválido.');
+        }
+        const outFileName = `clean_${safeQId}_${path.basename(localInputPath)}`;
         const localOutputPath = path.join(HIGIENIZADAS_DIR, outFileName);
 
         await execFileAsync('python', ['scripts/inpaint_medq_watermark.py', localInputPath, localOutputPath]);
@@ -477,10 +527,10 @@ const server = http.createServer(async (req, res) => {
         };
         saveDecisions(decisionsData);
 
-        res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+        res.writeHead(200, { 'Content-Type': 'application/json' });
         return res.end(JSON.stringify({ success: true, question_id, action: 'inpainted', new_url: newStoragePath }));
       } catch (err) {
-        res.writeHead(500, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+        res.writeHead(500, { 'Content-Type': 'application/json' });
         return res.end(JSON.stringify({ success: false, error: err.message }));
       }
     } else {
@@ -491,7 +541,7 @@ const server = http.createServer(async (req, res) => {
       };
       saveDecisions(decisionsData);
 
-      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.writeHead(200, { 'Content-Type': 'application/json' });
       return res.end(JSON.stringify({ success: true, question_id, action }));
     }
   }
@@ -884,7 +934,7 @@ function renderDashboardHtml() {
 </html>`;
 }
 
-server.listen(PORT, '0.0.0.0', () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log(`================================================================================`);
   console.log(`🌐 HUB VISUAL ULTRA-RÁPIDO & ANTES/DEPOIS: http://localhost:${PORT}`);
   console.log(`================================================================================`);

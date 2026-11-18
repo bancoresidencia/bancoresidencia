@@ -1,20 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { recordAuditEvent } from '@/lib/audit';
+import {
+  findCanonicalQuestionByIdOrCode,
+  updateCanonicalQuestion
+} from '@/services/canonicalQuestionStore';
 
 export const dynamic = 'force-dynamic';
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
 
 const VALID_LETTERS = new Set(['A', 'B', 'C', 'D', 'E', 'ANULADA', '']);
 
@@ -58,25 +51,16 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 2. Captura do snapshot anterior para rastreabilidade e integridade da auditoria
+    // 2. Captura do snapshot anterior nas tabelas canônicas para rastreabilidade e auditoria
     let previousRow: { id: string; correct_answer?: string; is_anulada?: boolean; commentary?: string } | null = null;
     try {
-      const prevRes = await supabaseAdmin
-        .from('questions')
-        .select('id, correct_answer, is_anulada, commentary')
-        .eq('id', questionId)
-        .maybeSingle();
-
-      if (prevRes.data) {
-        previousRow = prevRes.data;
-      } else {
-        const byCodePrev = await supabaseAdmin
-          .from('questions')
-          .select('id, correct_answer, is_anulada, commentary')
-          .eq('code', questionId)
-          .maybeSingle();
-        previousRow = byCodePrev.data || null;
-      }
+      const prevRes = await findCanonicalQuestionByIdOrCode<{
+        id: string;
+        correct_answer?: string;
+        is_anulada?: boolean;
+        commentary?: string;
+      }>(supabaseAdmin, questionId, 'id, correct_answer, is_anulada, commentary');
+      previousRow = prevRes.row;
     } catch (prevErr) {
       console.warn('[API Curadoria] Aviso ao ler estado anterior da questão:', prevErr);
     }
@@ -102,26 +86,20 @@ export async function POST(req: NextRequest) {
       updatePayload.options = options;
     }
 
-    // Gravação direta com service role (bypassa RLS de forma segura)
-    const { data: initialData, error } = await supabaseAdmin
-      .from('questions')
-      .update(updatePayload)
-      .eq('id', questionId)
-      .select('id, code, correct_answer, is_anulada, commentary, options');
-
-    let data = initialData;
-
-    // Fallback: se não encontrou por ID, tentar por código
-    if (!error && (!data || data.length === 0)) {
-      const byCodeRes = await supabaseAdmin
-        .from('questions')
-        .update(updatePayload)
-        .eq('code', questionId)
-        .select('id, code, correct_answer, is_anulada, commentary, options');
-      if (byCodeRes.data && byCodeRes.data.length > 0) {
-        data = byCodeRes.data;
-      }
-    }
+    // Gravação direta nas tabelas canônicas (com espelhamento automático e ajuste de has_gabarito)
+    const { updatedRows: data, error } = await updateCanonicalQuestion<{
+      id: string;
+      code?: string;
+      correct_answer?: string;
+      is_anulada?: boolean;
+      commentary?: string;
+      options?: unknown[];
+    }>(
+      supabaseAdmin,
+      questionId,
+      updatePayload,
+      'id, code, correct_answer, is_anulada, commentary, options'
+    );
 
     if (error) {
       console.error('[API Curadoria] Erro no Supabase update:', error);

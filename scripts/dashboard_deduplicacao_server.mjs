@@ -31,11 +31,32 @@ function saveDecisions(data) {
   fs.writeFileSync(DECISIONS_PATH, JSON.stringify(data, null, 2), 'utf8');
 }
 
-// Parse body JSON
+const ALLOWED_SOURCE_TABLES = new Set([
+  'questions',
+  'questions_expansion_direto',
+  'questions_expansion_r_plus',
+  'questions_expansion_revalida',
+  'questions_expansion_titulo_especialista',
+  'questions_curated_staging',
+  'provaderesidencia_questoes'
+]);
+
+const ALLOWED_LOCAL_ORIGINS = new Set([
+  `http://localhost:${PORT}`,
+  `http://127.0.0.1:${PORT}`
+]);
+
+// Parse body JSON com limite de 1MB
 function parseJsonBody(req) {
   return new Promise((resolve, reject) => {
     let body = '';
-    req.on('data', chunk => { body += chunk; });
+    req.on('data', chunk => {
+      body += chunk;
+      if (body.length > 1024 * 1024) {
+        req.destroy();
+        reject(new Error('Payload excede 1MB'));
+      }
+    });
     req.on('end', () => {
       try {
         resolve(body ? JSON.parse(body) : {});
@@ -50,6 +71,10 @@ function parseJsonBody(req) {
 // Helper para buscar dados completos de uma questão
 function fetchFullQuestion(sourceTable, originalId) {
   try {
+    if (!ALLOWED_SOURCE_TABLES.has(sourceTable)) {
+      console.warn('Tabela não autorizada ignorada:', sourceTable);
+      return null;
+    }
     if (sourceTable === 'provaderesidencia_questoes') {
       const q = db.prepare(`
         SELECT q.id, q.numero, q.enunciado as statement, q.opcoes_json as options,
@@ -125,14 +150,24 @@ const server = http.createServer(async (req, res) => {
   const urlObj = new URL(req.url, `http://localhost:${PORT}`);
   const pathname = urlObj.pathname;
 
-  // CORS
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  // CORS restrito a localhost (anti-CSRF local)
+  const origin = req.headers.origin;
+  if (origin && ALLOWED_LOCAL_ORIGINS.has(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Vary', 'Origin');
+  }
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
   if (req.method === 'OPTIONS') {
     res.writeHead(204);
     res.end();
+    return;
+  }
+
+  if (req.method === 'POST' && origin && !ALLOWED_LOCAL_ORIGINS.has(origin)) {
+    res.writeHead(403, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ error: 'Origem externa bloqueada.' }));
     return;
   }
 
@@ -915,7 +950,7 @@ function getHtmlContent() {
 </html>`;
 }
 
-server.listen(PORT, '0.0.0.0', () => {
+server.listen(PORT, '127.0.0.1', () => {
   console.log(`\n🚀 SERVIDOR DE AUDITORIA & QUARENTENA DE DEDUPLICAÇÃO ATIVO!`);
   console.log(`🌐 Rota Visual: http://localhost:${PORT}/admin/auditoria/deduplicacao`);
   console.log(`🌐 Acesso Direto: http://localhost:${PORT}`);

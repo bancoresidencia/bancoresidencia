@@ -1,12 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { supabase } from '@/lib/supabase';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { callVertexAi } from '@/lib/vertexAi';
 import { callGeminiAi } from '@/lib/gemini';
 import { medicalKnowledgeService, KnowledgeChunk } from '@/services/medicalKnowledgeService';
 import { guidelinesKnowledgeService } from '@/services/guidelinesKnowledgeService';
-import { verifyStudentSession } from '@/lib/supabase/studentAuth';
-import { sanitizePostgrestTerm, isPrivilegedRole } from '@/utils/security';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { sanitizePostgrestTerm, timingSafeEqualStrings } from '@/utils/security';
 import { isAiRateLimited } from '@/lib/aiProtection';
 import { FocusExamAnalytics } from '@/types/analytics';
 import { StudyMaterialItem } from '@/types/flashcards';
@@ -36,48 +35,48 @@ const PALETTE = ['#3B82F6', '#10B981', '#EC4899', '#8B5CF6', '#F59E0B', '#06B6D4
 
 export async function POST(req: NextRequest) {
   try {
-    // Blindagem de segurança: Acesso restrito a estudantes autenticados ou chave de administração/curadoria
+    // Blindagem Crítica: A geração de resumos permanentes via Vertex AI Pro é estritamente restrita a Administradores/Curadores ANTES de disparar a LLM!
     const adminKey = req.headers.get('x-admin-key');
     const validAdminKey = process.env.ADMIN_API_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
-    const isAdminBypass = Boolean(adminKey && validAdminKey && adminKey === validAdminKey);
+    const isAdminBypass = Boolean(adminKey && validAdminKey && timingSafeEqualStrings(adminKey, validAdminKey));
 
-    let isPrivilegedUser = isAdminBypass;
+    let actorId = 'm2m_admin';
     if (!isAdminBypass) {
-      const auth = await verifyStudentSession(req);
-      if (!auth.authorized || !auth.user) {
+      const auth = await verifyAdminSession(req);
+      if (!auth.authorized) {
         return NextResponse.json(
           {
             success: false,
-            error: auth.error || 'Acesso não autorizado: faça login ou utilize a chave administrativa para gerar resumos permanentes.'
+            error: auth.error || 'Acesso restrito exclusivamente a administradores e curadores médicos.'
           },
-          { status: auth.status }
+          { status: auth.status || 403 }
         );
       }
+      actorId = auth.user?.id || 'admin_session';
 
-      const appRole = auth.user.app_metadata?.role;
-      if (isPrivilegedRole(appRole)) {
-        isPrivilegedUser = true;
-      }
-
-      // Rate limit estrito para requisições de geração de estudo (máx 5/min)
-      const clientIp = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'unknown-ip';
-      const rateLimitId = `study_gen_${auth.user.id}_${clientIp}`;
-      if (isAiRateLimited(rateLimitId, 5)) {
+      // Rate limit estrito por administrador/curador autenticado (máx 5/min, imune a X-Forwarded-For)
+      if (isAiRateLimited(`study_gen_${actorId}`, 5)) {
         return NextResponse.json(
           { success: false, error: 'Limite de geração de resumos atingido. Aguarde 1 minuto antes de solicitar novamente.' },
           { status: 429 }
         );
       }
     }
+    const isPrivilegedUser = true;
 
     const body: StudyGeneratorRequest = await req.json();
     const {
-      especialidade,
-      tema,
-      foco,
+      especialidade: rawEsp,
+      tema: rawTema,
+      foco: rawFoco,
       mode = 'hybrid',
-      customGuidelineText
+      customGuidelineText: rawGuideline
     } = body;
+
+    const especialidade = typeof rawEsp === 'string' ? rawEsp.trim().slice(0, 120) : '';
+    const tema = typeof rawTema === 'string' ? rawTema.trim().slice(0, 120) : '';
+    const foco = typeof rawFoco === 'string' ? rawFoco.trim().slice(0, 120) : '';
+    const customGuidelineText = typeof rawGuideline === 'string' ? rawGuideline.slice(0, 30000) : undefined;
 
     if (!especialidade || !tema || !foco) {
       return NextResponse.json(
@@ -93,6 +92,7 @@ export async function POST(req: NextRequest) {
     let totalQuestions = 0;
     const subfocoMap = new Map<string, number>();
     let hasCensusError = false;
+    const supabase = getSupabaseAdmin();
 
     try {
       const { data: questions, count } = await supabase

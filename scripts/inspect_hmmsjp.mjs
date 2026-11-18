@@ -14,17 +14,15 @@ const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE
 async function inspectHMMSJP() {
   const { data } = await supabase
     .from('questions')
-    .select('*')
-    .eq('code', 'HMMSJP-2026-PED-22795')
-    .single();
+    .select('id, code, year, institution, statement, options')
+    .ilike('institution', '%São José dos Pinhais%')
+    .range(10, 16);
 
-  console.log('ID:', data.id);
-  console.log('Code:', data.code);
-  console.log('Institution:', data.institution);
-  console.log('Banca:', data.banca);
-  console.log('Caderno:', data.caderno);
-  console.log('Statement:', data.statement);
-  console.log('Options:', data.options);
+  for (const q of data) {
+    console.log('----------------------------------------');
+    console.log(`${q.code} (${q.year}) - ${q.institution}`);
+    console.log(`ENUNCIADO: ${q.statement.slice(0, 140)}`);
+  }
 }
 
 inspectHMMSJP();

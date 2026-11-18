@@ -1,19 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
+import sharp from 'sharp';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 
 export const dynamic = 'force-dynamic';
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
 
 export async function POST(req: NextRequest) {
   try {
@@ -55,22 +45,35 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const buffer = Buffer.from(await file.arrayBuffer());
-    if (buffer.length > MAX_FILE_SIZE) {
+    const rawBuffer = Buffer.from(await file.arrayBuffer());
+    if (rawBuffer.length > MAX_FILE_SIZE) {
       return NextResponse.json(
         { success: false, error: 'Arquivo excede o limite máximo permitido de 5MB.' },
         { status: 400 }
       );
     }
 
-    const safeQId = (questionId || 'question').replace(/[^a-zA-Z0-9_-]/g, '_');
-    const storagePath = `remedied/${safeQId}_${Date.now()}.${ext}`;
+    // Validação binária real (magic bytes) e recodificação WebP estrita via Sharp (elimina polyglots HTML/EXIF)
+    let cleanWebpBuffer: Buffer;
+    try {
+      cleanWebpBuffer = await sharp(rawBuffer, { limitInputPixels: 40_000_000 })
+        .webp({ quality: 88, effort: 4 })
+        .toBuffer();
+    } catch {
+      return NextResponse.json(
+        { success: false, error: 'Arquivo corrompido ou não corresponde a uma imagem válida.' },
+        { status: 400 }
+      );
+    }
+
+    const safeQId = (questionId || 'question').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 80);
+    const storagePath = `remedied/${safeQId}_${Date.now()}.webp`;
 
     const supabaseAdmin = getSupabaseAdmin();
     const { error } = await supabaseAdmin.storage
       .from('questoes')
-      .upload(storagePath, buffer, {
-        contentType: file.type || 'image/png',
+      .upload(storagePath, cleanWebpBuffer, {
+        contentType: 'image/webp',
         upsert: true
       });
 

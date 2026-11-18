@@ -26,6 +26,9 @@ function readFromFile(): TabStatusMap | null {
 }
 
 function writeToFile(statusMap: TabStatusMap): void {
+  if (process.env.VERCEL || process.env.NODE_ENV === 'production') {
+    return;
+  }
   try {
     const dir = path.dirname(BACKUP_FILE_PATH);
     if (!fs.existsSync(dir)) {

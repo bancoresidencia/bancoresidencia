@@ -14,6 +14,7 @@ import {
   Info
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 
 export interface GemStatItem {
   id: number;
@@ -515,15 +516,11 @@ export const GemelaridadeRecurrenceStatsCard: React.FC<Props> = ({ topic = 'cori
                 ({activeItem.questionCount} questões oficiais analisadas)
               </span>
             </div>
-            <p
-              className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed"
-              dangerouslySetInnerHTML={{
-                __html: activeItem.focusExplanation.replace(
-                  /\*\*(.*?)\*\*/g,
-                  '<strong class="font-bold text-zinc-900 dark:text-zinc-100">$1</strong>'
-                )
-              }}
-            />
+            <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
+              {renderFormattedMedicalText(activeItem.focusExplanation, {
+                boldColorClass: 'font-bold text-zinc-900 dark:text-zinc-100'
+              })}
+            </p>
           </div>
         </div>
       </div>

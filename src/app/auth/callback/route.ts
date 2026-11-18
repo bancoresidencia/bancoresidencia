@@ -6,20 +6,63 @@ export const dynamic = 'force-dynamic';
 const ALLOWED_HOSTS = new Set([
   'bancoresidencia.com.br',
   'www.bancoresidencia.com.br',
-  'bancoresidencia-kappa.vercel.app',
-  'localhost:3000',
-  '127.0.0.1:3000'
+  'bancoresidencia-kappa.vercel.app'
 ]);
+
+function getCanonicalOrigin(request: NextRequest): string {
+  const requestUrl = new URL(request.url);
+  const isDev = process.env.NODE_ENV !== 'production';
+
+  if (isDev && (requestUrl.hostname === 'localhost' || requestUrl.hostname === '127.0.0.1')) {
+    return requestUrl.origin;
+  }
+
+  const configuredAppUrl = process.env.NEXT_PUBLIC_APP_URL;
+  let configuredHost: string | null = null;
+  if (configuredAppUrl) {
+    try {
+      configuredHost = new URL(configuredAppUrl).host.toLowerCase();
+    } catch {
+      configuredHost = null;
+    }
+  }
+
+  const forwardedHost = (request.headers.get('x-forwarded-host') || '').toLowerCase().trim();
+  if (forwardedHost && (ALLOWED_HOSTS.has(forwardedHost) || (configuredHost && forwardedHost === configuredHost))) {
+    return `https://${forwardedHost}`;
+  }
+
+  const reqHost = requestUrl.host.toLowerCase();
+  if (ALLOWED_HOSTS.has(reqHost) || (configuredHost && reqHost === configuredHost)) {
+    return `https://${reqHost}`;
+  }
+
+  return configuredAppUrl && configuredHost ? `https://${configuredHost}` : 'https://bancoresidencia-kappa.vercel.app';
+}
 
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get('code');
   const rawNext = requestUrl.searchParams.get('next') ?? '/';
+  const canonicalOrigin = getCanonicalOrigin(request);
 
-  // Sanitização estrita contra Open Redirect (permite apenas caminhos relativos internos)
-  let safeNext = '/';
-  if (rawNext && rawNext.startsWith('/') && !rawNext.startsWith('//') && !rawNext.includes('\\')) {
-    safeNext = rawNext;
+  // Sanitização estrita contra Open Redirect: garante mesma origem exata após normalização WHATWG URL
+  let safeRedirectUrl = new URL('/', canonicalOrigin);
+  if (
+    rawNext &&
+    rawNext.startsWith('/') &&
+    !rawNext.startsWith('//') &&
+    !rawNext.includes('\\') &&
+    !/[\u0000-\u001F]/.test(rawNext)
+  ) {
+    try {
+      const candidate = new URL(rawNext, canonicalOrigin);
+      if (candidate.origin === canonicalOrigin) {
+        safeRedirectUrl = candidate;
+      }
+    } catch {
+      safeRedirectUrl = new URL('/', canonicalOrigin);
+    }
   }
 
   if (code) {
@@ -27,17 +70,7 @@ export async function GET(request: NextRequest) {
       const supabase = await createClient();
       const { error } = await supabase.auth.exchangeCodeForSession(code);
       if (!error) {
-        const forwardedHost = (request.headers.get('x-forwarded-host') || '').toLowerCase().trim();
-        const isLocalEnv = process.env.NODE_ENV === 'development';
-
-        // Blindagem contra Host Header Injection: valida contra whitelist estrita
-        let targetHost = requestUrl.host;
-        if (forwardedHost && (ALLOWED_HOSTS.has(forwardedHost) || forwardedHost.endsWith('.vercel.app'))) {
-          targetHost = forwardedHost;
-        }
-
-        const protocol = isLocalEnv ? requestUrl.protocol : 'https:';
-        return NextResponse.redirect(`${protocol}//${targetHost}${safeNext}`);
+        return NextResponse.redirect(safeRedirectUrl.toString());
       } else {
         console.error('[Auth Callback] Erro ao trocar código por sessão:', error.message);
       }
@@ -46,6 +79,5 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // Se houver falha na troca ou ausência de código, redireciona para a home com indicação de erro
-  return NextResponse.redirect(new URL('/?error=oauth_error', requestUrl.origin));
+  return NextResponse.redirect(new URL('/?error=oauth_error', canonicalOrigin).toString());
 }

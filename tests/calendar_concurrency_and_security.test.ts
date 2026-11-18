@@ -3,6 +3,10 @@ import {
   encryptSecret,
   decryptSecret
 } from '../src/services/googleCalendarServerService.ts';
+import {
+  validateIcalUrlFormat,
+  isPrivateOrReservedIp
+} from '../src/utils/urlSecurity.ts';
 
 console.log('========================================================================');
 console.log('🛡️  SUÍTE DE TESTES: CONCORRÊNCIA E SEGURANÇA DO GOOGLE CALENDAR');
@@ -75,67 +79,33 @@ async function runAll() {
     const tamperedCipher = parts[2].slice(0, -2) + (parts[2].slice(-2) === 'aa' ? 'bb' : 'aa');
     const tamperedPayload = `${parts[0]}:${parts[1]}:${tamperedCipher}`;
 
-    // O GCM verifica o AuthTag: ao falhar, deve retornar seguro sem estourar crash fatal
+    // O GCM verifica o AuthTag: ao falhar, deve retornar string vazia (jamais o ciphertext cru ou o token original)
     const result = decryptSecret(tamperedPayload);
-    assert.notStrictEqual(result, token, 'Ciphertext adulterado nunca pode retornar o token original');
+    assert.strictEqual(result, '', 'Ciphertext adulterado deve retornar string vazia de forma segura');
+    assert.notStrictEqual(result, tamperedPayload, 'Nunca deve retornar o ciphertext bruto como Bearer token');
   });
 
   console.log('\n────────────────────────────────────────────────────────────────────────');
-  console.log('2. TESTES DE SEGURANÇA CONTRA ATAQUES SSRF (IMPORTAÇÃO iCAL)');
+  console.log('2. TESTES DE SEGURANÇA CONTRA ATAQUES SSRF (MÓDULO REAL urlSecurity.ts)');
   console.log('────────────────────────────────────────────────────────────────────────');
 
-  // Validador SSRF Canônico (Espelhando a rota /api/calendar/sync-ical)
-  function validateIcalUrlSecurity(rawUrl: string): { allowed: boolean; reason?: string } {
-    let url = rawUrl.trim();
-    if (!url) return { allowed: false, reason: 'URL vazia' };
-    if (url.startsWith('webcal://')) url = url.replace('webcal://', 'https://');
-
-    let parsed: URL;
-    try {
-      parsed = new URL(url);
-    } catch {
-      return { allowed: false, reason: 'URL inválida' };
-    }
-
-    if (parsed.protocol !== 'https:') {
-      return { allowed: false, reason: 'Protocolo inseguro (exige HTTPS)' };
-    }
-
-    const host = parsed.hostname.toLowerCase();
-    const ipV4Regex = /^(\d{1,3}\.){3}\d{1,3}$/;
-    if (ipV4Regex.test(host) || host.startsWith('[') || host.includes(':') || host === 'localhost' || host.endsWith('.local') || host.endsWith('.internal')) {
-      return { allowed: false, reason: 'IP direto ou localhost bloqueado contra SSRF' };
-    }
-
-    const allowedDomains = [
-      'calendar.google.com',
-      'google.com',
-      'outlook.live.com',
-      'outlook.office.com',
-      'outlook.office365.com',
-      'icloud.com'
-    ];
-
-    const isAllowed = allowedDomains.some(d => host === d || host.endsWith('.' + d));
-    if (!isAllowed) {
-      return { allowed: false, reason: 'Domínio não homologado' };
-    }
-
-    return { allowed: true };
-  }
-
-  // Teste 4: Bloqueio de IP Local e Portas Internas
-  await runTest('Bloqueio SSRF: Tentativa de acessar 127.0.0.1 (PostgreSQL / Redis / Serviços Locais)', () => {
+  // Teste 4: Bloqueio de IP Local, IPv6 e Portas Internas
+  await runTest('Bloqueio SSRF: Tentativa de acessar 127.0.0.1, ::1 e serviços locais', () => {
     const malicious = [
       'http://127.0.0.1:54322/secret',
       'https://127.0.0.1/admin',
+      'https://[::1]:3000/api/admin',
       'https://localhost:3000/api/admin',
       'http://localhost/calendar.ics'
     ];
     for (const url of malicious) {
-      const check = validateIcalUrlSecurity(url);
+      const check = validateIcalUrlFormat(url);
       assert.strictEqual(check.allowed, false, `URL local ${url} deveria ser bloqueada`);
     }
+    assert.strictEqual(isPrivateOrReservedIp('::1'), true);
+    assert.strictEqual(isPrivateOrReservedIp('::ffff:127.0.0.1'), true);
+    assert.strictEqual(isPrivateOrReservedIp('::ffff:169.254.169.254'), true);
+    assert.strictEqual(isPrivateOrReservedIp('100.64.0.1'), true);
   });
 
   // Teste 5: Bloqueio de Metadados de Cloud (GCP/AWS Metadata 169.254.169.254)
@@ -145,33 +115,36 @@ async function runAll() {
       'http://169.254.169.254/latest/meta-data/'
     ];
     for (const url of cloudMetadata) {
-      const check = validateIcalUrlSecurity(url);
+      const check = validateIcalUrlFormat(url);
       assert.strictEqual(check.allowed, false, `Metadado de nuvem ${url} deve ser bloqueado`);
     }
   });
 
-  // Teste 6: Bloqueio de Domínio Malicioso e Domain Spoofing
-  await runTest('Bloqueio SSRF: Tentativa de Domain Suffix Spoofing (ex: calendar.google.com.evil.com)', () => {
+  // Teste 6: Bloqueio de Domínio Malicioso, Domain Spoofing e Subdomínios Abertos do Google (script.google.com)
+  await runTest('Bloqueio SSRF: Rejeição de Domain Spoofing e script.google.com / www.google.com', () => {
     const spoofed = [
       'https://calendar.google.com.evil-hacker.com/agenda.ics',
+      'https://script.google.com/macros/s/AKfycbz_ssrf_redirect/exec',
+      'https://www.google.com/url?q=http://169.254.169.254',
       'https://evil-server.org/calendar.ics',
       'https://icloud.com.malware.ru/feed.ics'
     ];
     for (const url of spoofed) {
-      const check = validateIcalUrlSecurity(url);
-      assert.strictEqual(check.allowed, false, `Spoofing de domínio ${url} deve ser categoricamente rejeitado`);
+      const check = validateIcalUrlFormat(url);
+      assert.strictEqual(check.allowed, false, `Spoofing/subdomínio inseguro ${url} deve ser rejeitado`);
     }
   });
 
   // Teste 7: Links Legítimos Homologados
-  await runTest('Validação Positiva: Endereços legítimos do Google Agenda e iCloud são aceitos', () => {
+  await runTest('Validação Positiva: Endereços legítimos do Google Agenda, Outlook e iCloud são aceitos', () => {
     const legitimate = [
       'https://calendar.google.com/calendar/ical/usuario%40gmail.com/private-123456/basic.ics',
       'webcal://calendar.google.com/calendar/ical/usuario%40gmail.com/private-123456/basic.ics',
-      'https://outlook.live.com/owa/calendar/feed.ics'
+      'https://outlook.live.com/owa/calendar/feed.ics',
+      'https://p42-caldav.icloud.com/published/2/agenda.ics'
     ];
     for (const url of legitimate) {
-      const check = validateIcalUrlSecurity(url);
+      const check = validateIcalUrlFormat(url);
       assert.strictEqual(check.allowed, true, `URL legítima ${url} deveria ser aprovada`);
     }
   });

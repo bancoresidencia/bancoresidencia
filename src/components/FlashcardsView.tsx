@@ -329,7 +329,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
   }, [activeSessionCards]);
 
-// SWR: Sincroniza progresso remoto, baralhos, cards criados pelo usuário e logs do Heatmap
+  // SWR: Sincroniza progresso remoto, baralhos, cards criados pelo usuário e logs do Heatmap
   useEffect(() => {
     if (user?.id) {
       flashcardsService.syncRemoteProgress(user.id).then(() => {
@@ -956,7 +956,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             setIsShuffleEnabled(next);
             try {
               localStorage.setItem('bancoresidencia_flashcards_shuffle', String(next));
-            } catch {}
+            } catch { }
           }}
           onOpenAddCard={() => {
             setActiveDeckIdForNewCard('deck-padrao');
@@ -978,11 +978,10 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             <button
               type="button"
               onClick={() => setFlashcardTab('br')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${
-                flashcardTab === 'br'
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${flashcardTab === 'br'
                   ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
                   : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
-              }`}
+                }`}
             >
               <span>Cartões do BR</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
@@ -993,11 +992,10 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             <button
               type="button"
               onClick={() => setFlashcardTab('originais')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${
-                flashcardTab === 'originais'
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${flashcardTab === 'originais'
                   ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
                   : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
-              }`}
+                }`}
             >
               <span>Cartões Originais</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
@@ -1008,11 +1006,10 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             <button
               type="button"
               onClick={() => setFlashcardTab('personalizados')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${
-                flashcardTab === 'personalizados'
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${flashcardTab === 'personalizados'
                   ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
                   : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
-              }`}
+                }`}
             >
               <span>Baralhos Personalizados</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
@@ -1380,8 +1377,8 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             type="button"
             onClick={() => setFilterEssentialOnly((prev) => !prev)}
             className={`px-4 py-3 rounded-2xl text-xs font-bold transition-all border flex items-center justify-center gap-2 cursor-pointer shadow-xs whitespace-nowrap shrink-0 active:scale-98 ${filterEssentialOnly
-                ? 'bg-amber-500/15 border-amber-500/40 text-amber-700 dark:text-amber-300 ring-2 ring-amber-500/20'
-                : 'bg-white dark:bg-[#121215] border-slate-200 dark:border-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:border-slate-300 dark:hover:border-zinc-700'
+              ? 'bg-amber-500/15 border-amber-500/40 text-amber-700 dark:text-amber-300 ring-2 ring-amber-500/20'
+              : 'bg-white dark:bg-[#121215] border-slate-200 dark:border-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:border-slate-300 dark:hover:border-zinc-700'
               }`}
             title="Alternar entre ver todos os flashcards ou apenas os essenciais de alta incidência"
           >

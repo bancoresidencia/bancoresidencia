@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { Logo } from '@/components/Logo';
@@ -43,6 +43,13 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
   // 'login' | 'register'
   const [mode, setMode] = useState<'login' | 'register'>(initialMode);
+
+  // Sincroniza dinamicamente se a prop initialMode mudar
+  useEffect(() => {
+    if (initialMode) {
+      setMode(initialMode);
+    }
+  }, [initialMode]);
 
   // Form States
   const [email, setEmail] = useState('');

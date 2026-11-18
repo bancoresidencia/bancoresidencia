@@ -132,10 +132,13 @@ export async function callGeminiAi(prompt: string, options: CallGeminiOptions = 
 
     for (const model of CANDIDATE_GEMINI_MODELS) {
       try {
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${geminiKey}`;
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
         const res = await fetch(url, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            'x-goog-api-key': geminiKey
+          },
           body: JSON.stringify({
             contents: [{ parts: [{ text: prompt }] }],
             ...(options.systemInstruction

@@ -1,22 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
 import fs from 'fs';
 import path from 'path';
 import { Question, StudyModalidade } from '@/types';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import {
+  CANONICAL_QUESTION_TABLES,
+  findCanonicalQuestionsByIdsOrCodes
+} from '@/services/canonicalQuestionStore';
 
 export const dynamic = 'force-dynamic';
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
-}
 
 interface QuestionDbRow {
   id: string;
@@ -83,19 +76,14 @@ export async function GET(req: NextRequest) {
     let rows: QuestionDbRow[] = [];
 
     if (ids && ids.length > 0) {
-      // 1. Busca ultrarrápida indexada por IDs primários
-      const { data, error } = await supabaseAdmin
-        .from('questions')
-        .select('*')
-        .in('id', ids.slice(0, 250));
-
-      if (error) {
-        console.error('[API Curadoria questoes-prova] Erro Supabase por IDs:', error);
-        return NextResponse.json({ success: false, error: error.message }, { status: 500 });
-      }
-      rows = (data as unknown as QuestionDbRow[]) || [];
+      // 1. Busca ultrarrápida indexada por IDs primários nas 4 tabelas canônicas
+      rows = await findCanonicalQuestionsByIdsOrCodes<QuestionDbRow>(
+        supabaseAdmin,
+        ids.slice(0, 250),
+        '*'
+      );
     } else {
-      // 2. Fallback direto por instituição e ano
+      // 2. Fallback direto por instituição e ano nas 4 tabelas canônicas
       const parts = examKey.split(' | ');
       const inst = parts[0]?.trim();
       const ano = Number(parts[2]) || 0;
@@ -107,15 +95,15 @@ export async function GET(req: NextRequest) {
         );
       }
 
-      let q = supabaseAdmin.from('questions').select('*').eq('institution', inst);
-      if (ano > 0) q = q.eq('year', ano);
-
-      const { data, error } = await q.limit(200);
-      if (error) {
-        console.error('[API Curadoria questoes-prova] Erro Supabase fallback:', error);
-        return NextResponse.json({ success: false, error: error.message }, { status: 500 });
-      }
-      rows = (data as unknown as QuestionDbRow[]) || [];
+      const tableQueries = await Promise.all(
+        CANONICAL_QUESTION_TABLES.map(async (table) => {
+          let q = supabaseAdmin.from(table).select('*').eq('institution', inst);
+          if (ano > 0) q = q.eq('year', ano);
+          const { data, error } = await q.limit(200);
+          return error ? [] : ((data as unknown as QuestionDbRow[]) || []);
+        })
+      );
+      rows = tableQueries.flat().slice(0, 250);
     }
 
     // Mapear para o formato Question

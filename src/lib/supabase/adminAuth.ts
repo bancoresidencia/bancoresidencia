@@ -1,8 +1,9 @@
 import { NextRequest } from 'next/server';
-import { User, createClient as createSupabaseClient } from '@supabase/supabase-js';
+import { User } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/server';
 
-import { isPrivilegedRole } from '@/utils/security';
+import { isPrivilegedRole, timingSafeEqualStrings } from '@/utils/security';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 
 export interface AdminAuthResult {
   authorized: boolean;
@@ -11,17 +12,6 @@ export interface AdminAuthResult {
   error?: string;
   status: number;
   isM2M?: boolean;
-}
-
-function getSupabaseAdmin() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
-  return createSupabaseClient(supabaseUrl, supabaseKey, {
-    auth: {
-      persistSession: false,
-      autoRefreshToken: false
-    }
-  });
 }
 
 /**
@@ -46,8 +36,8 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
         const token = authHeader.replace(/^Bearer\s+/i, '').trim();
         const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-        // 1.1 Machine-to-Machine com Service Role Key
-        if (serviceRoleKey && token === serviceRoleKey) {
+        // 1.1 Machine-to-Machine com Service Role Key (comparação em tempo constante)
+        if (serviceRoleKey && timingSafeEqualStrings(token, serviceRoleKey)) {
           return {
             authorized: true,
             role: 'service_role',

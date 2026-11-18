@@ -10,6 +10,7 @@ import {
   Target
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 
 interface AlgorithmStep {
   stepNumber: number;
@@ -227,14 +228,11 @@ export const HppGoldenHourAlgorithmCard: React.FC = () => {
             <strong className="font-bold text-blue-700 dark:text-blue-300 mr-1.5 uppercase text-[10px] tracking-wider">
               Ponto Principal:
             </strong>
-            <span
-              dangerouslySetInnerHTML={{
-                __html: currentStep.mainPoint.replace(
-                  /\*\*(.*?)\*\*/g,
-                  '<strong class="font-bold text-zinc-900 dark:text-zinc-100">$1</strong>'
-                )
-              }}
-            />
+            <span>
+              {renderFormattedMedicalText(currentStep.mainPoint, {
+                boldColorClass: 'font-bold text-zinc-900 dark:text-zinc-100'
+              })}
+            </span>
           </div>
         </div>
 
@@ -250,15 +248,11 @@ export const HppGoldenHourAlgorithmCard: React.FC = () => {
               {currentStep.actions.map((act, i) => (
                 <li key={i} className="flex items-start gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-1.5 shrink-0" />
-                  <span
-                    className="leading-snug"
-                    dangerouslySetInnerHTML={{
-                      __html: act.replace(
-                        /\*\*(.*?)\*\*/g,
-                        '<strong class="font-bold text-zinc-900 dark:text-zinc-100">$1</strong>'
-                      )
-                    }}
-                  />
+                  <span className="leading-snug">
+                    {renderFormattedMedicalText(act, {
+                      boldColorClass: 'font-bold text-zinc-900 dark:text-zinc-100'
+                    })}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -298,14 +292,11 @@ export const HppGoldenHourAlgorithmCard: React.FC = () => {
             <strong className="font-bold text-amber-950 dark:text-amber-200 mr-1.5">
               Pegadinha de Prova do Passo {currentStep.stepNumber}:
             </strong>
-            <span
-              dangerouslySetInnerHTML={{
-                __html: currentStep.pearl.replace(
-                  /\*\*(.*?)\*\*/g,
-                  '<strong class="font-bold text-amber-950 dark:text-amber-100">$1</strong>'
-                )
-              }}
-            />
+            <span>
+              {renderFormattedMedicalText(currentStep.pearl, {
+                boldColorClass: 'font-bold text-amber-950 dark:text-amber-100'
+              })}
+            </span>
           </div>
         </div>
       </div>

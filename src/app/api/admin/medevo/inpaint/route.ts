@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import sharp from 'sharp';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { validateExternalImageUrl, safeFetchBufferWithLimit } from '@/utils/urlSecurity';
 
 export const dynamic = 'force-dynamic';
 
@@ -11,7 +12,7 @@ export const dynamic = 'force-dynamic';
  * - Restaura a textura de fundo e gradiente anatômico sem introduzir artefatos
  */
 export async function sanitizeMedicalWatermark(rawBuffer: Buffer, location: string = 'centro'): Promise<Buffer> {
-  const image = sharp(rawBuffer);
+  const image = sharp(rawBuffer, { limitInputPixels: 40_000_000 });
   const meta = await image.metadata();
   const width = meta.width || 600;
   const height = meta.height || 400;
@@ -125,57 +126,23 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ success: false, error: 'URL da imagem ausente' }, { status: 400 });
     }
 
-    // 2. Validação estrita de URL e mitigação de SSRF
-    let parsedUrl: URL;
-    try {
-      parsedUrl = new URL(imageUrl);
-    } catch {
-      return NextResponse.json({ success: false, error: 'URL inválida.' }, { status: 400 });
+    // 2. Validação estrita de URL, resolução DNS (IPv4/IPv6) e bloqueio de redirect contra SSRF
+    const urlCheck = await validateExternalImageUrl(imageUrl);
+    if (!urlCheck.allowed || !urlCheck.normalizedUrl) {
+      return NextResponse.json(
+        { success: false, error: urlCheck.reason || 'Destino de URL proibido por política de segurança.' },
+        { status: 403 }
+      );
     }
 
-    if (parsedUrl.protocol !== 'http:' && parsedUrl.protocol !== 'https:') {
-      return NextResponse.json({ success: false, error: 'Protocolo de URL não permitido.' }, { status: 400 });
+    // 3. Baixa o buffer da imagem com bloqueio de redirect e teto de stream de 15MB
+    const MAX_IMAGE_BYTES = 15 * 1024 * 1024;
+    const fetched = await safeFetchBufferWithLimit(urlCheck.normalizedUrl, MAX_IMAGE_BYTES, 10000);
+    if (!fetched.ok) {
+      return NextResponse.json({ success: false, error: `Falha ao carregar imagem: HTTP ${fetched.status}` }, { status: 404 });
     }
 
-    const host = parsedUrl.hostname.toLowerCase();
-    if (
-      host === 'localhost' ||
-      host === '127.0.0.1' ||
-      host === '0.0.0.0' ||
-      host === '169.254.169.254' ||
-      host.startsWith('10.') ||
-      host.startsWith('192.168.') ||
-      host.endsWith('.local') ||
-      host.endsWith('.internal') ||
-      /^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(host)
-    ) {
-      return NextResponse.json({ success: false, error: 'Destino de URL proibido por política de segurança.' }, { status: 403 });
-    }
-
-    // Se for URL da MedEvo direta, não fazemos requisição para proteger privacidade
-    if (/medevo\.com\.br/i.test(imageUrl)) {
-      return NextResponse.json({ success: false, error: 'URL protegida pelo escudo anti-vazamento' }, { status: 403 });
-    }
-
-    // 3. Baixa o buffer da imagem com proteção contra DoS / Decompression Bomb
-    const res = await fetch(imageUrl);
-    if (!res.ok) {
-      return NextResponse.json({ success: false, error: `Falha ao carregar imagem: HTTP ${res.status}` }, { status: 404 });
-    }
-
-    const contentLength = parseInt(res.headers.get('content-length') || '0', 10);
-    const MAX_IMAGE_BYTES = 15 * 1024 * 1024; // 15MB
-    if (contentLength > MAX_IMAGE_BYTES) {
-      return NextResponse.json({ success: false, error: 'Imagem excede o limite máximo permitido de 15MB.' }, { status: 413 });
-    }
-
-    const arrayBuf = await res.arrayBuffer();
-    if (arrayBuf.byteLength > MAX_IMAGE_BYTES) {
-      return NextResponse.json({ success: false, error: 'Imagem excede o limite máximo permitido de 15MB.' }, { status: 413 });
-    }
-
-    const rawBuffer = Buffer.from(arrayBuf);
-    const cleanBuffer = await sanitizeMedicalWatermark(rawBuffer, location);
+    const cleanBuffer = await sanitizeMedicalWatermark(fetched.buffer, location);
 
     return new NextResponse(new Uint8Array(cleanBuffer), {
       status: 200,

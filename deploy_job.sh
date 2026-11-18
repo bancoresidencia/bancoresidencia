@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
-set -e
+set -euo pipefail
+
+cleanup() {
+  rm -f .env.cloud.yaml .env.cloud.json .env.cloud
+}
+trap cleanup EXIT
 
 echo "=========================================================="
 echo "🚀 DEPLOY DO MOTOR DE GABARITOS NO GOOGLE CLOUD RUN JOBS"
 echo "=========================================================="
 
-# 1. Gera arquivo de variáveis seguras (.env.cloud) sem chave paga
+# 1. Gera arquivo de variáveis seguras (.env.cloud.yaml) sem chave paga
 node scripts/prepare_cloud_run_env.mjs
 
 REGION=${GCP_REGION:-"us-central1"}
@@ -23,7 +28,7 @@ gcloud run jobs deploy "$JOB_NAME" \
   --task-timeout 86400s \
   --cpu 1 \
   --memory 1Gi \
-  --env-vars-file .env.cloud
+  --env-vars-file .env.cloud.yaml
 
 echo ""
 echo "✅ Job implantado com sucesso!"

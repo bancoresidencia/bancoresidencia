@@ -17,14 +17,13 @@ async function inspectColumns() {
   const { data, error } = await supabase
     .from('questions')
     .select('*')
-    .eq('id', '17004dcf-f0b1-4106-8196-56a2b471ca7a')
-    .single();
+    .limit(1);
 
   if (error) {
     console.error('Erro:', error);
   } else {
-    console.log('Columns in questions table:', Object.keys(data));
-    console.log('Current sample record:', JSON.stringify(data, null, 2));
+    console.log('Columns in questions table:', Object.keys(data[0]));
+    console.log('Sample record (first 5 keys):', Object.entries(data[0]).slice(0, 10));
   }
 }
 

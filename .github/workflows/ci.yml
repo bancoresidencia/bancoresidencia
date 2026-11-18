@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
   validate-and-test:
     name: Lint, Testes IRT/Segurança e Build
@@ -36,7 +39,7 @@ jobs:
 
       - name: 🏗️ Validação de Compilação do Next.js (Build Check)
         env:
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL || 'https://ezluharxlmlqhdkqrjbz.supabase.co' }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.dummy_anon_key_for_ci_build' }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || 'dummy_service_role_key_for_ci' }}
+          NEXT_PUBLIC_SUPABASE_URL: 'https://ezluharxlmlqhdkqrjbz.supabase.co'
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.dummy_anon_key_for_ci_build'
+          SUPABASE_SERVICE_ROLE_KEY: 'dummy_service_role_key_for_ci_build_only'
         run: npm run build
