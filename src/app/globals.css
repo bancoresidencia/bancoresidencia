@@ -522,6 +522,57 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
   animation-play-state: paused;
 }
 
+/* Hero: Flutuação 3D fluida e suave para o logo SVG e deriva contínua dos cards empilhados */
+@keyframes hippoHero3dFloat {
+  0%, 100% {
+    transform: rotateX(7deg) rotateY(-10deg) rotateZ(-1.5deg) translate3d(0, 0px, 0);
+  }
+  33% {
+    transform: rotateX(-5deg) rotateY(9deg) rotateZ(1.2deg) translate3d(0, -7px, 0);
+  }
+  66% {
+    transform: rotateX(4deg) rotateY(12deg) rotateZ(-0.6deg) translate3d(0, -3px, 0);
+  }
+}
+
+.animate-hippo-3d-float {
+  transform-style: preserve-3d;
+  will-change: transform;
+  animation: hippoHero3dFloat 9.5s ease-in-out infinite;
+}
+
+@keyframes hippoCardDrift {
+  0%, 100% {
+    transform: translate3d(0, 0px, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(var(--drift-x, 0px), var(--drift-y, -5px), 0) rotate(var(--drift-rot, 0.8deg));
+  }
+}
+
+.animate-hippo-card-drift {
+  will-change: transform;
+  animation: hippoCardDrift 6.5s ease-in-out infinite;
+}
+
+@keyframes hippoTextColorSweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-hippo-text-sweep {
+  background-size: 260% 100%;
+  will-change: background-position;
+  animation: hippoTextColorSweep 8s ease-in-out infinite;
+}
+
 /* Animação Hero da Medalha do Percentil Oficial (entra no centro do card e volta ao normal) */
 @keyframes medalTakeover {
   0% {

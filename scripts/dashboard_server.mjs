@@ -39,26 +39,55 @@ function loadPreventivaQuestions() {
       arr.forEach(q => {
         if (q.code) preventivaMap.set(q.code, q);
       });
-    } catch {}
+    } catch { }
   }
 }
 loadPreventivaQuestions();
 
+const LEDGER_PATH = path.resolve('data/paid_key_cumulative_ledger.json');
+
 function getStatus() {
+  let state = { status: 'IDLE' };
   if (fs.existsSync(STATE_PATH)) {
     try {
-      return JSON.parse(fs.readFileSync(STATE_PATH, 'utf8'));
+      state = JSON.parse(fs.readFileSync(STATE_PATH, 'utf8'));
     } catch {
-      return { status: 'ERROR_READING_STATE' };
+      state = { status: 'ERROR_READING_STATE' };
     }
   }
-  return { status: 'IDLE' };
+
+  let priorUSD = 0.2733;
+  let priorBRL = 1.58;
+  let priorTokens = 449319;
+  if (fs.existsSync(LEDGER_PATH)) {
+    try {
+      const ledger = JSON.parse(fs.readFileSync(LEDGER_PATH, 'utf8'));
+      priorUSD = ledger.priorSessionsCostUSD || 0;
+      priorBRL = ledger.priorSessionsCostBRL || 0;
+      priorTokens = ledger.priorSessionsTokens || 0;
+    } catch {}
+  }
+
+  const sessUSD = (state.tokens && state.tokens.pricing && state.tokens.pricing.totalCostUSD) ? state.tokens.pricing.totalCostUSD : 0;
+  const sessBRL = (state.tokens && state.tokens.pricing && state.tokens.pricing.totalCostBRL) ? state.tokens.pricing.totalCostBRL : 0;
+  const sessTokens = (state.tokens && state.tokens.totalTokens) ? state.tokens.totalTokens : 0;
+
+  state.cumulativeKeySpend = {
+    totalCostUSD: parseFloat((priorUSD + sessUSD).toFixed(4)),
+    totalCostBRL: parseFloat((priorBRL + sessBRL).toFixed(2)),
+    totalTokens: priorTokens + sessTokens,
+    sessionCostUSD: sessUSD,
+    sessionCostBRL: sessBRL,
+    sessionTokens: sessTokens
+  };
+
+  return state;
 }
 
 function getMacroStats() {
   const state = getStatus();
   const sessionProcessed = (state.status === 'RUNNING' || state.status === 'PAUSED' || state.status === 'COMPLETED' || state.status === 'STOPPED') ? (state.processedCount || 0) : 0;
-  
+
   // Base Padrão-Ouro antes da sessão atual
   const baseGold = 112277;
   const liveTotalGold = baseGold + sessionProcessed;
@@ -204,7 +233,7 @@ function getQuestionDetail(code) {
       if (row) {
         let options = row.options;
         if (typeof options === 'string') {
-          try { options = JSON.parse(options); } catch {}
+          try { options = JSON.parse(options); } catch { }
         }
 
         const hasAnyExplanation = Array.isArray(options) && options.some(o => o.explanation);
@@ -296,9 +325,9 @@ const server = http.createServer((req, res) => {
         detached: false
       });
 
-      return sendJson(res, { 
-        ok: true, 
-        message: `Esteira iniciada para ${spec.name} com ${workers} workers em gemini-3.1-flash-lite!` 
+      return sendJson(res, {
+        ok: true,
+        message: `Esteira iniciada para ${spec.name} com ${workers} workers em gemini-3.1-flash-lite!`
       });
     }
 
@@ -320,7 +349,7 @@ const server = http.createServer((req, res) => {
 
   // Frontend HTML do Dashboard
   if (url.pathname === '/' || url.pathname === '/index.html') {
-    res.writeHead(200, { 
+    res.writeHead(200, {
       'Content-Type': 'text/html; charset=utf-8',
       'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0'
     });
@@ -351,8 +380,8 @@ function renderDashboardHtml() {
 
   const macroListHtml = macro.specialties.map(s => {
     const isPreventiva = s.key === 'preventiva';
-    const badgeBg = isPreventiva 
-      ? 'bg-indigo-500/20 text-indigo-300 border-indigo-500/30' 
+    const badgeBg = isPreventiva
+      ? 'bg-indigo-500/20 text-indigo-300 border-indigo-500/30'
       : (s.coveragePct >= 90 ? 'bg-emerald-500/20 text-emerald-300 border-emerald-500/30' : 'bg-amber-500/20 text-amber-300 border-amber-500/30');
     const barBg = isPreventiva ? 'bg-indigo-500' : (s.coveragePct >= 90 ? 'bg-emerald-500' : 'bg-amber-500');
 
@@ -569,19 +598,25 @@ function renderDashboardHtml() {
         </div>
       </div>
 
-      <!-- Card 4: Economia & Consumo -->
+      <!-- Card 4: Economia & Consumo Cumulativo da Chave Paga -->
       <div class="card-glass p-5 rounded-2xl shadow-xl flex flex-col justify-between border-indigo-500/20">
         <div>
-          <span class="text-xs font-semibold text-slate-400 block mb-1">Custo Estimado da Sessão</span>
+          <span class="text-xs font-semibold text-slate-400 block mb-1">Gasto Cumulativo da Chave (...hnAb7A)</span>
           <div class="flex items-baseline justify-between">
-            <span id="cardCostVal" class="text-2xl font-black text-indigo-400">$${initialCostUSD}</span>
-            <span id="cardCostTier" class="text-xs font-bold px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">R$ ${initialCostBRL}</span>
+            <span id="cardCostVal" class="text-2xl font-black text-indigo-400">$${state.cumulativeKeySpend ? state.cumulativeKeySpend.totalCostUSD.toFixed(2) : initialCostUSD}</span>
+            <span id="cardCostTier" class="text-xs font-bold px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">R$ ${state.cumulativeKeySpend ? state.cumulativeKeySpend.totalCostBRL.toFixed(2) : initialCostBRL}</span>
           </div>
         </div>
 
-        <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
-          <span>Tokens Totais:</span>
-          <strong id="cardTokens" class="text-slate-200 font-mono">${initialTokens}</strong>
+        <div class="mt-3 pt-3 border-t border-slate-800/80 space-y-1 text-xs text-slate-400">
+          <div class="flex items-center justify-between">
+            <span>Sessão Atual:</span>
+            <strong id="cardSessionCost" class="text-slate-300 font-mono">$${initialCostUSD} (R$ ${initialCostBRL})</strong>
+          </div>
+          <div class="flex items-center justify-between">
+            <span>Tokens Acumulados:</span>
+            <strong id="cardTokens" class="text-slate-200 font-mono">${state.cumulativeKeySpend ? state.cumulativeKeySpend.totalTokens.toLocaleString('pt-BR') : initialTokens}</strong>
+          </div>
         </div>
       </div>
 
@@ -960,8 +995,16 @@ function renderDashboardHtml() {
           document.getElementById('cardSuccessRate').textContent = rate + '% OK';
         }
 
-        // Tokens e Custo
-        if (d.tokens) {
+        // Tokens e Custo Cumulativo
+        if (d.cumulativeKeySpend) {
+          document.getElementById('cardCostVal').textContent = '$' + d.cumulativeKeySpend.totalCostUSD.toFixed(2);
+          document.getElementById('cardCostTier').textContent = 'R$ ' + d.cumulativeKeySpend.totalCostBRL.toFixed(2);
+          document.getElementById('cardTokens').textContent = (d.cumulativeKeySpend.totalTokens || 0).toLocaleString('pt-BR');
+          const sUSD = (d.cumulativeKeySpend.sessionCostUSD || 0).toFixed(2);
+          const sBRL = (d.cumulativeKeySpend.sessionCostBRL || 0).toFixed(2);
+          const elSess = document.getElementById('cardSessionCost');
+          if (elSess) elSess.textContent = '$' + sUSD + ' (R$ ' + sBRL + ')';
+        } else if (d.tokens) {
           document.getElementById('cardTokens').textContent = (d.tokens.totalTokens || 0).toLocaleString('pt-BR');
           if (d.tokens.pricing && d.tokens.pricing.totalCostUSD !== undefined) {
             document.getElementById('cardCostVal').textContent = '$' + d.tokens.pricing.totalCostUSD.toFixed(2);
@@ -1114,9 +1157,11 @@ function renderDashboardHtml() {
           htmlCommentary = currentModalCommentary.replace(/\\n/g, '<br>');
         }
 
+        const rxErro = new RegExp('<p>Principal Motivo de Erro:<\\\\/p>\\\\s*<p>(.*?)<\\\\/p>', 'gis');
+        const rxTake = new RegExp('<p>Take-Home Message:<\\\\/p>\\\\s*<p>(.*?)<\\\\/p>', 'gis');
         htmlCommentary = htmlCommentary
-          .replace(/<p>Principal Motivo de Erro:<\/p>\s*<p>(.*?)<\/p>/gis, '<div class="p-4 rounded-xl bg-amber-950/20 border border-amber-500/30 text-amber-200 text-xs my-3"><div class="font-extrabold uppercase text-[11px] tracking-wider text-amber-400 mb-1 flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation"></i> Principal Motivo de Erro (Pegadinha)</div><p class="text-slate-200 leading-relaxed">$1</p></div>')
-          .replace(/<p>Take-Home Message:<\/p>\s*<p>(.*?)<\/p>/gis, '<div class="p-4 rounded-xl bg-gradient-to-r from-amber-500/10 to-amber-600/10 border border-amber-500/30 text-xs my-3"><div class="font-black uppercase text-[11px] tracking-wider text-amber-300 mb-1 flex items-center gap-1.5"><i class="fa-solid fa-lightbulb text-amber-400"></i> Take-Home Message</div><p class="text-amber-100 font-semibold leading-relaxed">$1</p></div>');
+          .replace(rxErro, '<div class="p-4 rounded-xl bg-amber-950/20 border border-amber-500/30 text-amber-200 text-xs my-3"><div class="font-extrabold uppercase text-[11px] tracking-wider text-amber-400 mb-1 flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation"></i> Principal Motivo de Erro (Pegadinha)</div><p class="text-slate-200 leading-relaxed">$1</p></div>')
+          .replace(rxTake, '<div class="p-4 rounded-xl bg-gradient-to-r from-amber-500/10 to-amber-600/10 border border-amber-500/30 text-xs my-3"><div class="font-black uppercase text-[11px] tracking-wider text-amber-300 mb-1 flex items-center gap-1.5"><i class="fa-solid fa-lightbulb text-amber-400"></i> Take-Home Message</div><p class="text-amber-100 font-semibold leading-relaxed">$1</p></div>');
 
         if (d.mainErrorReason && !htmlCommentary.includes('Principal Motivo de Erro')) {
           htmlCommentary += '<div class="p-4 rounded-xl bg-amber-950/20 border border-amber-500/30 text-amber-200 text-xs my-3"><div class="font-extrabold uppercase text-[11px] tracking-wider text-amber-400 mb-1 flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation"></i> Principal Motivo de Erro (Pegadinha)</div><p class="text-slate-200 leading-relaxed">' + formatMarkdown(d.mainErrorReason) + '</p></div>';

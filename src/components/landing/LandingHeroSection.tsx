@@ -1,21 +1,20 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import {
   ArrowRight,
-  Sparkles,
+  ChevronRight,
   ShieldCheck,
-  CheckCircle2,
-  XCircle,
-  Brain,
-  TrendingUp,
-  RotateCcw,
   GraduationCap,
-  Play
+  Layers,
+  BookOpenCheck,
+  TrendingUp,
+  LucideIcon
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { TOP_FEATURED_BANCAS, DemoTabKey, FeaturedBancaItem } from './landingData';
 import { useHeroParallaxOffset } from './useScrollReveal';
+import { HeroLogo3D } from './HeroLogo3D';
 
 interface LandingHeroSectionProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;
@@ -23,10 +22,68 @@ interface LandingHeroSectionProps {
   onSelectBancaDemo: (tab: DemoTabKey, questionIdx: number, bancaLabel: string) => void;
 }
 
-const HERO_MINI_OPTIONS: { letter: string; text: string; isCorrect?: boolean }[] = [
-  { letter: 'A', text: 'Iniciar Digoxina 0,25 mg/dia isolada.' },
-  { letter: 'B', text: 'Associar Espironolactona + Dapagliflozina (iSGLT2).', isCorrect: true },
-  { letter: 'C', text: 'Adicionar Furosemida 40 mg sem bloqueio mineralocorticoide.' }
+interface HeroPillarCard {
+  id: string;
+  text: string;
+  icon: LucideIcon;
+  baseX: number;
+  baseRotate: number;
+  scrollXFactor: number;
+  scrollYFactor: number;
+  scrollRotateFactor: number;
+  driftX: string;
+  driftY: string;
+  driftRot: string;
+  delay: string;
+  zIndexClass: string;
+}
+
+const HERO_PILLAR_CARDS: HeroPillarCard[] = [
+  {
+    id: 'flashcards',
+    text: 'Flashcards que estarão na sua prova',
+    icon: Layers,
+    baseX: -20,
+    baseRotate: -1.8,
+    scrollXFactor: -0.095,
+    scrollYFactor: -0.075,
+    scrollRotateFactor: -0.008,
+    driftX: '-3px',
+    driftY: '-4px',
+    driftRot: '-0.6deg',
+    delay: '0s',
+    zIndexClass: 'z-10'
+  },
+  {
+    id: 'materiais',
+    text: 'Materiais com base nas diretrizes e nas questões de residência',
+    icon: BookOpenCheck,
+    baseX: 22,
+    baseRotate: 1.4,
+    scrollXFactor: 0.105,
+    scrollYFactor: -0.01,
+    scrollRotateFactor: 0.007,
+    driftX: '3px',
+    driftY: '-4px',
+    driftRot: '0.6deg',
+    delay: '-2.1s',
+    zIndexClass: 'z-20'
+  },
+  {
+    id: 'evolucao',
+    text: 'Evolução completa do seu desempenho',
+    icon: TrendingUp,
+    baseX: -12,
+    baseRotate: -1.1,
+    scrollXFactor: -0.07,
+    scrollYFactor: 0.06,
+    scrollRotateFactor: -0.006,
+    driftX: '-2px',
+    driftY: '-4px',
+    driftRot: '-0.5deg',
+    delay: '-4.2s',
+    zIndexClass: 'z-30'
+  }
 ];
 
 export const LandingHeroSection: React.FC<LandingHeroSectionProps> = ({
@@ -36,15 +93,31 @@ export const LandingHeroSection: React.FC<LandingHeroSectionProps> = ({
 }) => {
   const { accent, mode, accentConfig } = useTheme();
   const scrollOffset = useHeroParallaxOffset();
-  const [heroAnswer, setHeroAnswer] = useState<string>('B');
 
   const isMonochrome = accent === 'neutral';
-  const parallaxTop = Math.round(scrollOffset * -0.06);
-  const parallaxBottom = Math.round(scrollOffset * 0.05);
 
   const handleBancaClick = (banca: FeaturedBancaItem) => {
     onSelectBancaDemo(banca.targetTab, banca.targetQuestionIdx, banca.shortLabel);
   };
+
+  const highlightTextStyle: React.CSSProperties = isMonochrome
+    ? {
+        backgroundImage:
+          mode === 'dark'
+            ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
+            : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
+      }
+    : {
+        backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${
+          accentConfig.chartPalette[1] ?? accentConfig.hoverHex
+        } 26%, ${
+          mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
+        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${
+          accentConfig.primaryHex
+        } 100%)`
+      };
+
+  const scrollEmergenceScale = Math.min(1 + scrollOffset * 0.00018, 1.09).toFixed(4);
 
   return (
     <section className="relative overflow-hidden pt-10 pb-14 sm:pt-14 sm:pb-18 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-gradient-to-b from-white via-zinc-50/90 to-zinc-100/70 dark:from-[var(--bg-page)] dark:via-[var(--bg-page)] dark:to-[#070709]">
@@ -57,235 +130,150 @@ export const LandingHeroSection: React.FC<LandingHeroSectionProps> = ({
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-          {/* COLUNA ESQUERDA: Posicionamento Cirúrgico + +200 Mil Questões + Dupla de CTAs */}
+          {/* COLUNA ESQUERDA: +200 MIL QUESTÕES + Dupla de CTAs */}
           <div className="lg:col-span-6 flex flex-col items-start text-left">
-            {/* Badge Elegante de Lançamento (substitui o letreiro barulhento do topo) */}
-            <button
-              type="button"
-              onClick={() => onScrollToSection('planos')}
-              className="group inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 shadow-2xs hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer mb-5"
-            >
+            {/* Título Principal em 3 linhas equilibradas com transparência e animação de cor suave */}
+            <h1 className="text-[32px] sm:text-[42px] md:text-[46px] xl:text-[52px] font-black tracking-[-0.035em] leading-[1.1] text-zinc-950 dark:text-white">
               <span
-                className="w-2 h-2 rounded-full shrink-0"
-                style={{ backgroundColor: isMonochrome ? '#10b981' : accentConfig.primaryHex }}
-              />
-              <span className="text-[11px] sm:text-xs font-bold tracking-tight text-zinc-700 dark:text-zinc-200">
-                Lote de Lançamento • Até 60% OFF nos planos anuais
-              </span>
-              <ArrowRight className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 group-hover:translate-x-0.5 transition-transform" />
-            </button>
-
-            {/* Título Principal em Inter Display com Tracking Negativo */}
-            <h1 className="text-4xl sm:text-5xl md:text-[56px] xl:text-[62px] font-black tracking-[-0.04em] leading-[1.03] text-zinc-950 dark:text-white">
-              <span
-                className={
-                  isMonochrome
-                    ? 'text-zinc-950 dark:text-white underline decoration-zinc-400/50 decoration-4 underline-offset-8'
-                    : 'bg-clip-text text-transparent bg-gradient-to-r'
-                }
-                style={
-                  isMonochrome
-                    ? undefined
-                    : {
-                        backgroundImage: `linear-gradient(135deg, ${accentConfig.primaryHex} 0%, ${
-                          mode === 'dark' ? '#93c5fd' : accentConfig.hoverHex
-                        } 100%)`
-                      }
-                }
+                className="block sm:whitespace-nowrap bg-clip-text text-transparent animate-hippo-text-sweep opacity-95"
+                style={highlightTextStyle}
               >
-                +200 mil questões
-              </span>{' '}
-              <span className="block mt-1">para sua aprovação na Residência.</span>
+                +200 MIL QUESTÕES
+              </span>
+              <span className="block mt-1">
+                <span className="font-bold text-zinc-900/55 dark:text-white/55">para a sua </span>
+                <span
+                  className="bg-clip-text text-transparent animate-hippo-text-sweep opacity-95"
+                  style={highlightTextStyle}
+                >
+                  APROVAÇÃO
+                </span>
+              </span>
+              <span className="block mt-0.5">
+                <span className="font-bold text-zinc-900/55 dark:text-white/55">na </span>
+                <span
+                  className="bg-clip-text text-transparent animate-hippo-text-sweep opacity-95"
+                  style={highlightTextStyle}
+                >
+                  RESIDÊNCIA.
+                </span>
+              </span>
             </h1>
 
-            {/* Subtítulo Científico Conectando Hippocampus à Retenção */}
-            <p className="mt-4 sm:mt-5 text-sm sm:text-base md:text-[17px] text-zinc-600 dark:text-zinc-300 leading-relaxed max-w-xl font-normal">
-              Engenharia de retenção clínica com resoluções comentadas alternativa por alternativa, repetição espaçada{' '}
-              <strong className="font-semibold text-zinc-900 dark:text-white">FSRS</strong>, resumos ancorados em diretrizes e psicometria{' '}
-              <strong className="font-semibold text-zinc-900 dark:text-white">TRI calibrada</strong>.
-            </p>
-
-            {/* Dupla Hierárquica de CTAs (Lei de Hick-Hyman: 1 Primário + 1 Secundário Discreto) */}
-            <div className="mt-7 sm:mt-8 flex flex-wrap items-center gap-3 w-full sm:w-auto">
+            {/* Dupla Hierárquica de CTAs com animações suaves ao passar por cima */}
+            <div className="mt-8 sm:mt-9 flex flex-wrap items-center gap-3.5 w-full sm:w-auto">
               <button
                 type="button"
                 onClick={() => onOpenAuth('register')}
-                className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm sm:text-[15px] font-bold transition-all duration-200 hover:opacity-95 hover:-translate-y-0.5 active:scale-[0.98] cursor-pointer overflow-hidden shadow-lg"
+                className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm sm:text-[15px] font-bold transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] cursor-pointer overflow-hidden shadow-lg"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
                   color: accentConfig.primaryContrastHex,
-                  boxShadow: `0 12px 30px -8px ${accentConfig.bgRgba}`
+                  boxShadow: `0 14px 34px -8px ${accentConfig.bgRgba}`
                 }}
               >
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 -translate-x-full group-hover:translate-x-[220%] transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/25 to-transparent skew-x-[-20deg] pointer-events-none"
+                  className="absolute inset-0 -translate-x-full group-hover:translate-x-[220%] transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg] pointer-events-none"
                 />
                 <span className="relative z-10">Testar Grátis Agora</span>
-                <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-200 group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-1.5" />
               </button>
 
               <button
                 type="button"
                 onClick={() => onScrollToSection('planos')}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm sm:text-[15px] font-semibold text-zinc-800 dark:text-zinc-200 bg-white/90 dark:bg-zinc-900/90 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-300/90 dark:border-zinc-700/90 transition-all cursor-pointer"
+                className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm sm:text-[15px] font-semibold text-zinc-800 dark:text-zinc-200 bg-white/80 dark:bg-zinc-900/75 hover:bg-white dark:hover:bg-zinc-800/95 border border-zinc-300/90 dark:border-zinc-700/80 hover:border-zinc-400 dark:hover:border-zinc-500 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-lg hover:shadow-zinc-900/10 dark:hover:shadow-black/40 active:scale-[0.98] transition-all duration-300 ease-out overflow-hidden cursor-pointer backdrop-blur-sm"
               >
-                <span>Ver Planos</span>
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 -translate-x-full group-hover:translate-x-[220%] transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-zinc-400/15 dark:via-white/15 to-transparent skew-x-[-20deg] pointer-events-none"
+                />
+                <span className="relative z-10">Ver Planos</span>
+                <ChevronRight className="w-4 h-4 relative z-10 text-zinc-500 dark:text-zinc-400 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:text-zinc-900 dark:group-hover:text-white" />
               </button>
             </div>
 
-            {/* Sinais Rápidos de Confiança Científica e Garantia */}
-            <div className="mt-6 pt-5 border-t border-zinc-200/80 dark:border-zinc-800/80 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+            {/* Sinal Rápido de Garantia */}
+            <div className="mt-6 pt-5 border-t border-zinc-200/80 dark:border-zinc-800/80 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-zinc-600/85 dark:text-zinc-400/85">
               <span className="inline-flex items-center gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 <span>Garantia incondicional de 7 dias</span>
               </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Sparkles className="w-4 h-4 text-amber-500 shrink-0" />
-                <span>Diretrizes SBC, FEBRASGO, SBP e ATLS</span>
-              </span>
             </div>
           </div>
 
-          {/* COLUNA DIREITA: Mockup Vivo em Camadas + Micro-Badges em Paralaxe (Inspiração SquadEasy) */}
-          <div className="lg:col-span-6 relative">
-            {/* Micro-Badge Flutuante Superior Direito: Percentil TRI */}
-            <div
-              style={{ transform: `translate3d(0, ${parallaxTop}px, 0)` }}
-              className="hidden sm:flex items-center gap-3 px-3.5 py-2.5 rounded-2xl bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-700/80 shadow-xl absolute -top-5 right-2 xl:-right-3 z-20 transition-transform duration-150 will-change-transform"
-            >
-              <div className="w-9 h-9 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shrink-0">
-                <TrendingUp className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 leading-none">
-                  Psicometria TRI Oficial
-                </div>
-                <div className="text-xs font-extrabold text-zinc-950 dark:text-white tabular-nums mt-1">
-                  Percentil P88 • Acima do corte USP
-                </div>
-              </div>
+          {/* COLUNA DIREITA: Logo de vidro ampliada ao fundo + 3 Cards translúcidos mais espaçados saindo de dentro dela */}
+          <div className="lg:col-span-6 relative flex items-center justify-center min-h-[350px] sm:min-h-[415px] lg:min-h-[450px]">
+            {/* Logo hippotalamus.svg de vidro 3D ao centro */}
+            <div className="relative z-10 w-full flex items-center justify-center">
+              <HeroLogo3D
+                accentConfig={accentConfig}
+                mode={mode}
+                isMonochrome={isMonochrome}
+                scrollOffset={scrollOffset}
+              />
             </div>
 
-            {/* Janela Interativa Principal da Plataforma Hippocampus */}
-            <div className="rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 shadow-2xl shadow-zinc-300/40 dark:shadow-black/70 overflow-hidden relative z-10">
-              {/* Barra de Título do App */}
-              <div className="px-4 py-3 border-b border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/90 dark:bg-zinc-900/70 flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <div className="flex items-center gap-1.5" aria-hidden="true">
-                    <span className="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-                    <span className="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-                  </div>
-                  <span className="ml-1.5 text-[11px] font-bold text-zinc-700 dark:text-zinc-300">
-                    Simulado ENARE / HCFMUSP • Cardiologia
-                  </span>
-                </div>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
-                  Interativo • Clique abaixo
-                </span>
-              </div>
+            {/* Pilha de 3 Cards translúcidos com respiro natural entre eles sobrepondo a logo */}
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-3 sm:px-6 pointer-events-none">
+              <div className="w-full max-w-[355px] sm:max-w-[385px] flex flex-col items-center gap-6 sm:gap-7">
+                {HERO_PILLAR_CARDS.map((card) => {
+                  const Icon = card.icon;
+                  const translateX = (card.baseX + scrollOffset * card.scrollXFactor).toFixed(2);
+                  const translateY = (scrollOffset * card.scrollYFactor).toFixed(2);
+                  const rotateDeg = (card.baseRotate + scrollOffset * card.scrollRotateFactor).toFixed(2);
 
-              {/* Corpo Clínico Interativo */}
-              <div className="p-4 sm:p-5 space-y-3.5">
-                <div className="flex flex-wrap items-center gap-1.5 text-[11px]">
-                  <span className="px-2 py-0.5 rounded-md font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700">
-                    Clínica Médica
-                  </span>
-                  <span className="px-2 py-0.5 rounded-md font-semibold text-zinc-600 dark:text-zinc-400">
-                    • IC de Fração de Ejeção Reduzida (FEVE 32%)
-                  </span>
-                </div>
+                  const driftVars: React.CSSProperties & {
+                    '--drift-x': string;
+                    '--drift-y': string;
+                    '--drift-rot': string;
+                  } = {
+                    animationDelay: card.delay,
+                    '--drift-x': card.driftX,
+                    '--drift-y': card.driftY,
+                    '--drift-rot': card.driftRot
+                  };
 
-                <p className="text-xs sm:text-[13px] text-zinc-800 dark:text-zinc-200 leading-relaxed">
-                  Paciente 64 anos, ICFEr NYHA II em uso otimizado de IECA e Carvedilol (PA 118x74 mmHg, K⁺ 4,3 mEq/L, Cr 1,1 mg/dL). Qual associação completa a <strong>quádrupla terapia modificadora de mortalidade</strong>?
-                </p>
-
-                {/* Opções Clicáveis no Próprio Hero */}
-                <div className="space-y-2">
-                  {HERO_MINI_OPTIONS.map((opt) => {
-                    const isSelected = heroAnswer === opt.letter;
-                    const showCorrect = Boolean(heroAnswer) && opt.isCorrect;
-                    const showWrong = isSelected && !opt.isCorrect;
-
-                    return (
-                      <button
-                        key={opt.letter}
-                        type="button"
-                        onClick={() => setHeroAnswer(opt.letter)}
-                        className={`w-full p-2.5 sm:p-3 rounded-xl border text-left flex items-center gap-2.5 transition-all cursor-pointer text-xs ${
-                          showCorrect
-                            ? 'bg-emerald-50/90 dark:bg-emerald-950/35 border-emerald-500/80 text-emerald-950 dark:text-emerald-100'
-                            : showWrong
-                              ? 'bg-rose-50/90 dark:bg-rose-950/35 border-rose-500/80 text-rose-950 dark:text-rose-100'
-                              : 'bg-zinc-50/80 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-700'
-                        }`}
+                  return (
+                    <div
+                      key={card.id}
+                      className={`w-full ${card.zIndexClass} pointer-events-auto will-change-transform transition-transform duration-150 ease-out hover:z-40`}
+                      style={{
+                        transform: `translate3d(${translateX}px, ${translateY}px, 0) rotate(${rotateDeg}deg) scale(${scrollEmergenceScale})`
+                      }}
+                    >
+                      <div
+                        style={driftVars}
+                        className="animate-hippo-card-drift flex items-center gap-3 px-4 py-2.5 sm:px-4.5 sm:py-3 rounded-2xl bg-white/32 dark:bg-zinc-950/28 backdrop-blur-md border border-white/45 dark:border-white/12 opacity-80 hover:opacity-100 hover:bg-white/65 dark:hover:bg-zinc-900/65 shadow-lg shadow-zinc-900/10 dark:shadow-black/40 hover:scale-[1.02] transition-all duration-200"
                       >
-                        <span
-                          className={`w-6 h-6 rounded-lg flex items-center justify-center font-bold text-[11px] shrink-0 ${
-                            showCorrect
-                              ? 'bg-emerald-600 text-white'
-                              : showWrong
-                                ? 'bg-rose-600 text-white'
-                                : 'bg-white dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300'
-                          }`}
+                        <div
+                          className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 border"
+                          style={
+                            isMonochrome
+                              ? {
+                                  backgroundColor:
+                                    mode === 'dark' ? 'rgba(255,255,255,0.12)' : 'rgba(24,24,27,0.08)',
+                                  borderColor:
+                                    mode === 'dark' ? 'rgba(255,255,255,0.25)' : 'rgba(24,24,27,0.18)',
+                                  color: mode === 'dark' ? '#ffffff' : '#18181b'
+                                }
+                              : {
+                                  backgroundColor: accentConfig.bgRgba,
+                                  borderColor: accentConfig.borderRgba,
+                                  color: accentConfig.primaryHex
+                                }
+                          }
                         >
-                          {showCorrect ? (
-                            <CheckCircle2 className="w-3.5 h-3.5" />
-                          ) : showWrong ? (
-                            <XCircle className="w-3.5 h-3.5" />
-                          ) : (
-                            opt.letter
-                          )}
+                          <Icon className="w-4 h-4" />
+                        </div>
+                        <span className="text-xs sm:text-[13px] font-semibold text-zinc-900/90 dark:text-white/90 leading-snug">
+                          {card.text}
                         </span>
-                        <span className="font-medium leading-snug">{opt.text}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-
-                {/* Mini Feedback Padrão-Ouro da Diretriz SBC */}
-                <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900/80 border border-zinc-200/80 dark:border-zinc-800 flex items-start justify-between gap-3">
-                  <div className="text-[11px] text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                    <strong className="text-emerald-700 dark:text-emerald-400 font-bold">
-                      Diretriz SBC IC:
-                    </strong>{' '}
-                    IECA/INRA + Betabloqueador + Espironolactona + iSGLT2 reduzem mortalidade e hospitalização.
-                  </div>
-                  <button
-                    type="button"
-                    onClick={() => onScrollToSection('questoes')}
-                    className="shrink-0 inline-flex items-center gap-1 text-[11px] font-bold text-zinc-900 dark:text-white hover:underline cursor-pointer"
-                  >
-                    <Play className="w-3 h-3" />
-                    <span>+20 questões</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            {/* Micro-Badge Flutuante Inferior Esquerdo: Retenção FSRS & Caderno de Erros */}
-            <div
-              style={{ transform: `translate3d(0, ${parallaxBottom}px, 0)` }}
-              className="mt-3 sm:mt-0 sm:absolute sm:-bottom-5 sm:-left-4 z-20 flex items-center justify-between sm:justify-start gap-3 px-3.5 py-2.5 rounded-2xl bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-700/80 shadow-xl transition-transform duration-150 will-change-transform"
-            >
-              <div
-                className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0"
-                style={{
-                  backgroundColor: accentConfig.primaryHex,
-                  color: accentConfig.primaryContrastHex
-                }}
-              >
-                <Brain className="w-4 h-4" />
-              </div>
-              <div>
-                <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 leading-none">
-                  Repetição Espaçada FSRS
-                </div>
-                <div className="text-xs font-extrabold text-zinc-950 dark:text-white tabular-nums mt-1 flex items-center gap-1.5">
-                  <span>94,2% de retenção ativa</span>
-                  <RotateCcw className="w-3 h-3 text-emerald-500" />
-                </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
