@@ -3,6 +3,7 @@ import { Question, QuestionOption, AdvancedFilterState, QuestionReport, ReportSt
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
 import {
   sanitizePostgrestTerm,
+  sanitizePostgrestQuotedValue,
   validateQuestionId,
   validateAnswerOption,
   VALID_ANSWERS,
@@ -163,20 +164,36 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
 
   const orParts: string[] = [];
   if (standaloneSpecs.size > 0) {
-    const specList = Array.from(standaloneSpecs).map((s) => `"${s}"`).join(',');
-    orParts.push(`especialidade.in.(${specList})`);
+    const specList = Array.from(standaloneSpecs)
+      .map((s) => sanitizePostgrestQuotedValue(s))
+      .filter(Boolean)
+      .map((s) => `"${s}"`)
+      .join(',');
+    if (specList) orParts.push(`especialidade.in.(${specList})`);
   }
   if (standaloneTemas.size > 0) {
-    const temaList = Array.from(standaloneTemas).map((t) => `"${t}"`).join(',');
-    orParts.push(`tema.in.(${temaList})`);
+    const temaList = Array.from(standaloneTemas)
+      .map((t) => sanitizePostgrestQuotedValue(t))
+      .filter(Boolean)
+      .map((t) => `"${t}"`)
+      .join(',');
+    if (temaList) orParts.push(`tema.in.(${temaList})`);
   }
   if (standaloneFocos.size > 0) {
-    const focoList = Array.from(standaloneFocos).map((f) => `"${f}"`).join(',');
-    orParts.push(`foco.in.(${focoList})`);
+    const focoList = Array.from(standaloneFocos)
+      .map((f) => sanitizePostgrestQuotedValue(f))
+      .filter(Boolean)
+      .map((f) => `"${f}"`)
+      .join(',');
+    if (focoList) orParts.push(`foco.in.(${focoList})`);
   }
   if (selectedSubfocos.size > 0) {
-    const subList = Array.from(selectedSubfocos).map((s) => `"${s}"`).join(',');
-    orParts.push(`subfoco.in.(${subList})`);
+    const subList = Array.from(selectedSubfocos)
+      .map((s) => sanitizePostgrestQuotedValue(s))
+      .filter(Boolean)
+      .map((s) => `"${s}"`)
+      .join(',');
+    if (subList) orParts.push(`subfoco.in.(${subList})`);
   }
 
   return {
@@ -676,8 +693,10 @@ export async function fetchQuestionsFromSupabase(
     }
   } else if (filters.status === 'Não vistas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      const safePrune = filters.userSolvedIds.slice(0, 100);
-      query = query.not('id', 'in', `(${safePrune.join(',')})`);
+      const safePrune = filters.userSolvedIds.filter(validateQuestionId).slice(0, 100);
+      if (safePrune.length > 0) {
+        query = query.not('id', 'in', `(${safePrune.join(',')})`);
+      }
     }
   }
 
@@ -725,16 +744,28 @@ export async function fetchQuestionsFromSupabase(
 
     const contentOrParts: string[] = [];
     if (specs.size > 0) {
-      const specList = Array.from(specs).map((s) => `"${s}"`).join(',');
-      contentOrParts.push(`especialidade.in.(${specList})`);
+      const specList = Array.from(specs)
+        .map((s) => sanitizePostgrestQuotedValue(s))
+        .filter(Boolean)
+        .map((s) => `"${s}"`)
+        .join(',');
+      if (specList) contentOrParts.push(`especialidade.in.(${specList})`);
     }
     if (filters.temas && filters.temas.length > 0) {
-      const temaList = filters.temas.map((t) => `"${t}"`).join(',');
-      contentOrParts.push(`tema.in.(${temaList})`);
+      const temaList = filters.temas
+        .map((t) => sanitizePostgrestQuotedValue(t))
+        .filter(Boolean)
+        .map((t) => `"${t}"`)
+        .join(',');
+      if (temaList) contentOrParts.push(`tema.in.(${temaList})`);
     }
     if (filters.focos && filters.focos.length > 0) {
-      const focoList = filters.focos.map((f) => `"${f}"`).join(',');
-      contentOrParts.push(`foco.in.(${focoList})`);
+      const focoList = filters.focos
+        .map((f) => sanitizePostgrestQuotedValue(f))
+        .filter(Boolean)
+        .map((f) => `"${f}"`)
+        .join(',');
+      if (focoList) contentOrParts.push(`foco.in.(${focoList})`);
     }
     const effectiveSubfocos = new Set(filters.subfocos || []);
     if (filters.subSubfocos && filters.subSubfocos.length > 0) {
@@ -756,8 +787,12 @@ export async function fetchQuestionsFromSupabase(
 
     if (effectiveSubfocos.size > 0) {
       const allSubs = Array.from(effectiveSubfocos);
-      const subfocoList = allSubs.map((s) => `"${s}"`).join(',');
-      contentOrParts.push(`subfoco.in.(${subfocoList})`);
+      const subfocoList = allSubs
+        .map((s) => sanitizePostgrestQuotedValue(s))
+        .filter(Boolean)
+        .map((s) => `"${s}"`)
+        .join(',');
+      if (subfocoList) contentOrParts.push(`subfoco.in.(${subfocoList})`);
     }
 
     if (contentOrParts.length === 1) {
@@ -777,12 +812,15 @@ export async function fetchQuestionsFromSupabase(
     // 3. Modalidade (com suporte refinado a Revalida e Residência)
     if (filters.modalidades && filters.modalidades.length > 0) {
       const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
-      const otherModalidades = filters.modalidades.filter((m) => !m.toLowerCase().includes('revalida'));
+      const otherModalidades = filters.modalidades
+        .filter((m) => !m.toLowerCase().includes('revalida'))
+        .map((m) => sanitizePostgrestQuotedValue(m))
+        .filter(Boolean);
 
       if (hasRevalida && otherModalidades.length === 0) {
         query = query.or(REVALIDA_POSTGREST_FILTER);
       } else if (hasRevalida && otherModalidades.length > 0) {
-        const otherIn = otherModalidades.join(',');
+        const otherIn = otherModalidades.map((m) => `"${m}"`).join(',');
         query = query.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
       } else {
         const isOnlyDefaultResidencia =
@@ -1031,28 +1069,54 @@ export async function fetchQuestionsFromSupabase(
 
       const countContentOrParts: string[] = [];
       if (countSpecs.size > 0) {
-        const specList = Array.from(countSpecs).map((s) => `"${s}"`).join(',');
-        countContentOrParts.push(`especialidade.in.(${specList})`);
+        const specList = Array.from(countSpecs)
+          .map((s) => sanitizePostgrestQuotedValue(s))
+          .filter(Boolean)
+          .map((s) => `"${s}"`)
+          .join(',');
+        if (specList) countContentOrParts.push(`especialidade.in.(${specList})`);
       }
       if (filters.temas && filters.temas.length > 0) {
-        const temaList = filters.temas.map((t) => `"${t}"`).join(',');
-        countContentOrParts.push(`tema.in.(${temaList})`);
+        const temaList = filters.temas
+          .map((t) => sanitizePostgrestQuotedValue(t))
+          .filter(Boolean)
+          .map((t) => `"${t}"`)
+          .join(',');
+        if (temaList) countContentOrParts.push(`tema.in.(${temaList})`);
       }
       if (filters.focos && filters.focos.length > 0) {
-        const focoList = filters.focos.map((f) => `"${f}"`).join(',');
-        countContentOrParts.push(`foco.in.(${focoList})`);
+        const focoList = filters.focos
+          .map((f) => sanitizePostgrestQuotedValue(f))
+          .filter(Boolean)
+          .map((f) => `"${f}"`)
+          .join(',');
+        if (focoList) countContentOrParts.push(`foco.in.(${focoList})`);
       }
       const countParentFocos = (filters.subfocos && filters.subfocos.length > 0)
         ? getParentFocosForSubfocoList(filters.subfocos)
         : [];
 
       if (filters.subfocos && filters.subfocos.length > 0) {
-        const subfocoList = filters.subfocos.map((s) => `"${s}"`).join(',');
-        if (countParentFocos.length > 0) {
-          const parentFocoList = countParentFocos.map((f: string) => `"${f}"`).join(',');
-          countContentOrParts.push(`and(foco.in.(${parentFocoList}),subfoco.in.(${subfocoList}))`);
-        } else {
-          countContentOrParts.push(`subfoco.in.(${subfocoList})`);
+        const subfocoList = filters.subfocos
+          .map((s) => sanitizePostgrestQuotedValue(s))
+          .filter(Boolean)
+          .map((s) => `"${s}"`)
+          .join(',');
+        if (subfocoList) {
+          if (countParentFocos.length > 0) {
+            const parentFocoList = countParentFocos
+              .map((f: string) => sanitizePostgrestQuotedValue(f))
+              .filter(Boolean)
+              .map((f: string) => `"${f}"`)
+              .join(',');
+            if (parentFocoList) {
+              countContentOrParts.push(`and(foco.in.(${parentFocoList}),subfoco.in.(${subfocoList}))`);
+            } else {
+              countContentOrParts.push(`subfoco.in.(${subfocoList})`);
+            }
+          } else {
+            countContentOrParts.push(`subfoco.in.(${subfocoList})`);
+          }
         }
       }
 
@@ -1100,11 +1164,14 @@ export async function fetchQuestionsFromSupabase(
       }
       if (filters.modalidades && filters.modalidades.length > 0) {
         const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
-        const otherModalidades = filters.modalidades.filter((m) => !m.toLowerCase().includes('revalida'));
+        const otherModalidades = filters.modalidades
+          .filter((m) => !m.toLowerCase().includes('revalida'))
+          .map((m) => sanitizePostgrestQuotedValue(m))
+          .filter(Boolean);
         if (hasRevalida && otherModalidades.length === 0) {
           countQuery = countQuery.or(REVALIDA_POSTGREST_FILTER);
         } else if (hasRevalida && otherModalidades.length > 0) {
-          const otherIn = otherModalidades.join(',');
+          const otherIn = otherModalidades.map((m) => `"${m}"`).join(',');
           countQuery = countQuery.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
         } else {
           const isOnlyDefault =

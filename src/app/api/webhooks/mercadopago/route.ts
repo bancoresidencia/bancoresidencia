@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
-import { PLANS, PlanId } from '@/config/plans';
-import { AMBASSADOR_CONFIG } from '@/config/ambassadorConfig';
-import { recordReferralSale } from '@/services/ambassadorService';
+import {
+  fulfillApprovedMercadoPagoPayment,
+  syncUserSubscriptionAfterRefund,
+  MercadoPagoPaymentLike
+} from '@/services/paymentFulfillmentService';
 import crypto from 'crypto';
 
 const MAX_WEBHOOK_TOLERANCE_MS = 5 * 60 * 1000; // 5 minutos contra Replay Attack
@@ -111,155 +113,44 @@ export async function POST(req: NextRequest) {
           const status = payment.status;
           const metadata = payment.metadata || {};
           const userId = (metadata.user_id as string) || '';
-          const planId = (metadata.plan_id as PlanId) || 'annual';
-          const planConfig = PLANS[planId] || PLANS.annual;
-
           const nowIso = new Date().toISOString();
 
           if (status === 'approved') {
-            // Valida o valor efetivamente cobrado no Mercado Pago contra o plano esperado (AGENTS.md)
-            const minExpectedAmount = parseFloat(
-              (planConfig.totalPrice * (1 - AMBASSADOR_CONFIG.discountPercent / 100) - 0.05).toFixed(2)
+            const fulfillment = await fulfillApprovedMercadoPagoPayment(
+              payment as unknown as MercadoPagoPaymentLike
             );
-            const paidAmount = Number(payment.transaction_amount || 0);
-            if (paidAmount < minExpectedAmount || (payment.currency_id && payment.currency_id !== 'BRL')) {
-              console.error('[MercadoPago Webhook] Valor pago abaixo do esperado para o plano:', {
-                mpPaymentId,
-                paidAmount,
-                minExpectedAmount,
-                planId
-              });
-              return NextResponse.json({ received: true, ignored: 'amount_mismatch' }, { status: 200 });
-            }
-
-            // Verifica estado atual da ordem para garantir idempotência estrita em retentativas do webhook
-            const { data: existingOrder } = await supabaseAdmin
-              .from('orders')
-              .select('id, status')
-              .eq('mp_payment_id', mpPaymentId)
-              .maybeSingle();
-
-            if (existingOrder?.status === 'approved') {
-              return NextResponse.json({ received: true, idempotent: true }, { status: 200 });
-            }
-
-            const approvalDate = payment.date_approved ? new Date(payment.date_approved) : new Date();
-            const expiresAt = new Date(approvalDate.getTime() + planConfig.durationDays * 24 * 60 * 60 * 1000);
-            const guaranteeUntil = new Date(approvalDate.getTime() + 7 * 24 * 60 * 60 * 1000);
-
-            let orderId = existingOrder?.id;
-            if (existingOrder) {
-              await supabaseAdmin
-                .from('orders')
-                .update({ status: 'approved', updated_at: nowIso })
-                .eq('id', existingOrder.id);
-            } else if (userId) {
-              const { data: createdOrder } = await supabaseAdmin
-                .from('orders')
-                .upsert({
-                  user_id: userId,
-                  mp_payment_id: mpPaymentId,
-                  plan_id: planConfig.id,
-                  plan_name: planConfig.name,
-                  amount: paidAmount,
-                  payment_method: payment.payment_method_id || 'pix',
-                  status: 'approved',
-                  guarantee_expires_at: guaranteeUntil.toISOString(),
-                  updated_at: nowIso
-                }, { onConflict: 'mp_payment_id' })
-                .select('id')
-                .maybeSingle();
-              orderId = createdOrder?.id;
-            }
-
-            if (userId) {
-              await supabaseAdmin
-                .from('profiles')
-                .update({
-                  subscription_plan: 'pro',
-                  subscription_status: 'active',
-                  subscription_duration: planId,
-                  subscription_started_at: approvalDate.toISOString(),
-                  subscription_expires_at: expiresAt.toISOString(),
-                  guarantee_expires_at: guaranteeUntil.toISOString(),
-                  updated_at: nowIso
-                })
-                .eq('id', userId);
-
-              await supabaseAdmin.auth.admin.updateUserById(userId, {
-                app_metadata: {
-                  subscription_plan: 'pro',
-                  subscription_status: 'active',
-                  subscription_duration: planId,
-                  subscription_expires_at: expiresAt.toISOString(),
-                  guarantee_expires_at: guaranteeUntil.toISOString()
-                }
-              });
-            }
-
-            if (metadata.coupon_code) {
-              try {
-                const payer = payment.payer as { first_name?: string; last_name?: string; email?: string } | undefined;
-                const studentName = payer?.first_name ? `${payer.first_name} ${payer.last_name || ''}`.trim() : 'Estudante';
-                await recordReferralSale({
-                  orderId: orderId || (metadata.order_id as string) || undefined,
-                  referredUserId: userId || undefined,
-                  couponCode: String(metadata.coupon_code),
-                  studentName,
-                  studentEmail: payer?.email || (metadata.user_email as string) || '',
-                  planId: planId,
-                  planName: planConfig.name,
-                  planAmount: planConfig.totalPrice,
-                  discountApplied: parseFloat(Math.max(0, planConfig.totalPrice - paidAmount).toFixed(2)),
-                  netAmount: paidAmount
-                });
-              } catch (refErr) {
-                console.warn('Aviso ao registrar indicação no webhook:', refErr);
-              }
+            if (!fulfillment.ok) {
+              return NextResponse.json({ received: true, ignored: fulfillment.reason || 'skipped' }, { status: 200 });
             }
           } else if (status === 'refunded' || status === 'charged_back') {
-            if (userId) {
-              await supabaseAdmin
-                .from('profiles')
-                .update({
-                  subscription_plan: 'free',
-                  subscription_status: 'refunded',
-                  updated_at: nowIso
-                })
-                .eq('id', userId);
-
-              await supabaseAdmin.auth.admin.updateUserById(userId, {
-                app_metadata: {
-                  subscription_plan: 'free',
-                  subscription_status: 'refunded'
-                }
-              });
-            }
-
-            await supabaseAdmin
+            // 1. Marca primeiramente a ordem específica como estornada
+            const { data: refundedOrder } = await supabaseAdmin
               .from('orders')
               .update({
                 status: 'refunded',
                 refunded_at: nowIso,
                 updated_at: nowIso
               })
-              .eq('mp_payment_id', mpPaymentId);
+              .eq('mp_payment_id', mpPaymentId)
+              .select('id, user_id')
+              .maybeSingle();
 
-            try {
-              const { data: ord } = await supabaseAdmin
-                .from('orders')
-                .select('id')
-                .eq('mp_payment_id', mpPaymentId)
-                .maybeSingle();
-
-              if (ord?.id) {
+            // 2. Cancela eventual comissão vinculada a este pedido específico
+            if (refundedOrder?.id) {
+              try {
                 await supabaseAdmin
                   .from('ambassador_referrals')
                   .update({ status: 'refunded' })
-                  .eq('order_id', ord.id);
+                  .eq('order_id', refundedOrder.id);
+              } catch (refCancelErr) {
+                console.warn('Aviso ao cancelar indicação por estorno no webhook:', refCancelErr);
               }
-            } catch (refCancelErr) {
-              console.warn('Aviso ao cancelar indicação por estorno no webhook:', refCancelErr);
+            }
+
+            // 3. Reconcilia assinatura do aluno preservando outros pedidos ativos/vigentes
+            const effectiveUserId = userId || (refundedOrder?.user_id as string) || '';
+            if (effectiveUserId) {
+              await syncUserSubscriptionAfterRefund(effectiveUserId);
             }
           }
         }

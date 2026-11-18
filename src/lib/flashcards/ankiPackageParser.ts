@@ -67,8 +67,8 @@ export function extractClozeBack(front: string): string {
 }
 
 const MAX_ZIP_ENTRIES = 250;
-const MAX_SINGLE_ENTRY_BYTES = 50 * 1024 * 1024; // 50MB
-const MAX_TOTAL_UNCOMPRESSED_BYTES = 64 * 1024 * 1024; // 64MB
+const MAX_SINGLE_ENTRY_BYTES = 25 * 1024 * 1024; // 25MB
+const MAX_TOTAL_UNCOMPRESSED_BYTES = 32 * 1024 * 1024; // 32MB
 const MAX_SQLITE_CARDS = 25000;
 const MAX_ARCHIVE_DEPTH = 1;
 
@@ -113,7 +113,7 @@ export function parseZipEntries(buffer: Buffer): Record<string, Buffer> {
     const localHeaderOffset = buffer.readUInt32LE(cur + 42);
 
     if (uncompSize > MAX_SINGLE_ENTRY_BYTES) {
-      throw new Error('Entrada compactada excede o limite máximo permitido de 50MB.');
+      throw new Error('Entrada compactada excede o limite máximo permitido de 25MB.');
     }
 
     let rawName = buffer.toString('utf8', cur + 46, cur + 46 + fnLen);
@@ -133,7 +133,7 @@ export function parseZipEntries(buffer: Buffer): Record<string, Buffer> {
         let content: Buffer | null = null;
         if (method === 0) {
           if (rawData.length > MAX_SINGLE_ENTRY_BYTES) {
-            throw new Error('Entrada do pacote excede o limite máximo permitido de 50MB.');
+            throw new Error('Entrada do pacote excede o limite máximo permitido de 25MB.');
           }
           content = rawData;
         } else if (method === 8) {
@@ -149,7 +149,7 @@ export function parseZipEntries(buffer: Buffer): Record<string, Buffer> {
           totalUncompressedBytes += content.length;
           if (totalUncompressedBytes > MAX_TOTAL_UNCOMPRESSED_BYTES) {
             throw new Error(
-              'Volume total descompactado excede o limite máximo seguro de 64MB (proteção contra ZIP bomb).'
+              'Volume total descompactado excede o limite máximo seguro de 32MB (proteção contra ZIP bomb).'
             );
           }
           files[rawName] = content;
@@ -171,7 +171,10 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
   deckMap: Record<string, string>;
 } {
   if (dbBuffer.length > MAX_SINGLE_ENTRY_BYTES) {
-    throw new Error('Banco de dados SQLite excede o limite máximo permitido de 50MB.');
+    throw new Error('Banco de dados SQLite excede o limite máximo permitido de 25MB.');
+  }
+  if (dbBuffer.length < 16 || dbBuffer.subarray(0, 15).toString('ascii') !== 'SQLite format 3') {
+    throw new Error('Arquivo SQLite inválido ou corrompido.');
   }
 
   const tempPath = path.join(
@@ -179,32 +182,61 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
     `anki_${Date.now()}_${Math.random().toString(36).substring(2)}.db`
   );
 
+  let db: DatabaseSync | null = null;
   try {
     fs.writeFileSync(tempPath, dbBuffer);
-    const db = new DatabaseSync(tempPath, { readOnly: true });
+    db = new DatabaseSync(tempPath, { readOnly: true });
+
+    // Blindagem anti-View/CTE/Trigger/Corrupted-Cell Bomb no motor SQLite
+    db.exec('PRAGMA trusted_schema = OFF; PRAGMA cell_size_check = ON; PRAGMA query_only = ON;');
+
+    const schemaEntries = (db
+      .prepare('SELECT name, type, sql FROM sqlite_master')
+      .all() || []) as unknown as Array<{ name?: string; type?: string; sql?: string | null }>;
+
+    const tableNames = new Set<string>();
+    for (const entry of schemaEntries) {
+      const objType = String(entry.type || '').toLowerCase();
+      const objName = String(entry.name || '').toLowerCase();
+      const objSql = String(entry.sql || '');
+
+      if (objType === 'view' || objType === 'trigger' || /\bvirtual\s+table\b/i.test(objSql)) {
+        throw new Error(
+          'Pacote SQLite bloqueado por segurança: views, triggers ou tabelas virtuais não são permitidos.'
+        );
+      }
+      if (objType === 'table') {
+        tableNames.add(objName);
+      }
+    }
 
     // 1. Mapeamento de Baralhos
     const deckMap: Record<string, string> = {};
-    try {
-      const colRow = (db.prepare('SELECT decks FROM col LIMIT 1').get() || {}) as { decks?: string };
-      if (colRow?.decks) {
-        const parsed = JSON.parse(colRow.decks);
-        for (const [id, val] of Object.entries(parsed)) {
-          if (val && typeof val === 'object' && 'name' in val) {
-            deckMap[id] = (val as { name: string }).name;
+    if (tableNames.has('col')) {
+      try {
+        const colRow = (db.prepare('SELECT substr(decks, 1, 524288) AS decks FROM col LIMIT 1').get() || {}) as { decks?: string };
+        if (colRow?.decks) {
+          const parsed = JSON.parse(colRow.decks);
+          for (const [id, val] of Object.entries(parsed)) {
+            if (val && typeof val === 'object' && 'name' in val) {
+              deckMap[id] = String((val as { name: unknown }).name);
+            }
           }
         }
+      } catch {
+        // segue para tabela decks se existir
       }
-    } catch {
+    }
+    if (Object.keys(deckMap).length === 0 && tableNames.has('decks')) {
       try {
-        const deckRows = (db.prepare('SELECT id, name FROM decks LIMIT 500').all() || []) as unknown as Array<{ id: number | string; name: string }>;
+        const deckRows = (db.prepare('SELECT id, substr(name, 1, 512) AS name FROM decks LIMIT 500').all() || []) as unknown as Array<{ id: number | string; name: string }>;
         for (const d of deckRows) {
           deckMap[String(d.id)] = d.name;
         }
       } catch {}
     }
 
-    // 2. Extração de Notas e Cartões
+    // 2. Extração O(N) em duas consultas lineares separadas (elimina Join Bomb O(N*M) sem índice)
     interface NoteCardRow {
       id: number;
       tags: string;
@@ -213,39 +245,55 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
     }
 
     let noteRows: NoteCardRow[] = [];
-    try {
-      noteRows = db.prepare(`
-        SELECT n.id, n.tags, n.flds, c.did
-        FROM notes n
-        LEFT JOIN cards c ON n.id = c.nid
-        GROUP BY n.id
-        LIMIT ${MAX_SQLITE_CARDS}
-      `).all() as unknown as NoteCardRow[];
-    } catch {
-      try {
-        noteRows = db.prepare(`SELECT id, tags, flds FROM notes LIMIT ${MAX_SQLITE_CARDS}`).all() as unknown as NoteCardRow[];
-      } catch {
-        // Tenta tabela genérica caso seja um .db de outro aplicativo de flashcards
+    if (tableNames.has('notes')) {
+      noteRows = (db
+        .prepare(
+          `SELECT id, substr(tags, 1, 2048) AS tags, substr(flds, 1, 32768) AS flds FROM notes LIMIT ${MAX_SQLITE_CARDS}`
+        )
+        .all() || []) as unknown as NoteCardRow[];
+
+      if (noteRows.length > 0 && tableNames.has('cards')) {
         try {
-          const generic = db.prepare(`SELECT front, back, comment, tags FROM flashcards LIMIT ${MAX_SQLITE_CARDS}`).all() as unknown as Array<{
-            front: string;
-            back: string;
-            comment?: string;
-            tags?: string;
-          }>;
-          db.close();
-          return {
-            cards: generic.map((g, idx) => ({
-              front: cleanAnkiHtml(g.front),
-              back: cleanAnkiHtml(g.back) || (g.front.includes('{{c') ? extractClozeBack(g.front) : 'Oclusão Cloze'),
-              comment: g.comment ? cleanAnkiHtml(g.comment) : undefined,
-              tags: g.tags ? g.tags.split(/[\s,]+/).filter(Boolean) : undefined,
-              rawLineIndex: idx + 1
-            })),
-            deckMap
-          };
-        } catch {}
+          const cardLinks = (db
+            .prepare(`SELECT nid, did FROM cards LIMIT ${MAX_SQLITE_CARDS * 2}`)
+            .all() || []) as unknown as Array<{ nid: number; did: number }>;
+          const nidToDid = new Map<number, number>();
+          for (const link of cardLinks) {
+            if (!nidToDid.has(link.nid) && link.did !== undefined && link.did !== null) {
+              nidToDid.set(link.nid, link.did);
+            }
+          }
+          for (const n of noteRows) {
+            const did = nidToDid.get(n.id);
+            if (did !== undefined) n.did = did;
+          }
+        } catch {
+          // did permanece opcional
+        }
       }
+    } else if (tableNames.has('flashcards')) {
+      try {
+        const generic = (db
+          .prepare(
+            `SELECT substr(front, 1, 16384) AS front, substr(back, 1, 16384) AS back, substr(comment, 1, 16384) AS comment, substr(tags, 1, 2048) AS tags FROM flashcards LIMIT ${MAX_SQLITE_CARDS}`
+          )
+          .all() || []) as unknown as Array<{
+          front: string;
+          back: string;
+          comment?: string;
+          tags?: string;
+        }>;
+        return {
+          cards: generic.map((g, idx) => ({
+            front: cleanAnkiHtml(g.front),
+            back: cleanAnkiHtml(g.back) || (g.front.includes('{{c') ? extractClozeBack(g.front) : 'Oclusão Cloze'),
+            comment: g.comment ? cleanAnkiHtml(g.comment) : undefined,
+            tags: g.tags ? g.tags.split(/[\s,]+/).filter(Boolean) : undefined,
+            rawLineIndex: idx + 1
+          })),
+          deckMap
+        };
+      } catch {}
     }
 
     const cards: ParsedImportCard[] = [];
@@ -299,9 +347,11 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
       });
     }
 
-    db.close();
     return { cards, deckMap };
   } finally {
+    try {
+      if (db) db.close();
+    } catch {}
     try {
       if (fs.existsSync(tempPath)) fs.unlinkSync(tempPath);
     } catch {}

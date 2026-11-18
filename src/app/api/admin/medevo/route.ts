@@ -2,6 +2,13 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { validateExternalImageUrl, safeFetchBufferWithLimit } from '@/utils/urlSecurity';
+import { extractTrustedClientIpFromHeaders, safeErrorMessage } from '@/utils/security';
+import { recordAuditEvent } from '@/lib/audit';
+import {
+  findCanonicalQuestionByIdOrCode,
+  findCanonicalQuestionsByIdsOrCodes,
+  updateCanonicalQuestion
+} from '@/services/canonicalQuestionStore';
 import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
@@ -187,20 +194,15 @@ export async function GET(req: NextRequest) {
     const startIndex = (page - 1) * pageSize;
     const paginatedIds = filtered.slice(startIndex, startIndex + pageSize).map(q => q.id);
 
-    // 2. Busca o estado ATUAL e REAL de cada questão no Supabase
+    // 2. Busca o estado ATUAL e REAL de cada questão nas 4 tabelas canônicas (+ fallback legado)
     const supabaseAdmin = getSupabaseAdmin();
     let liveQuestions: LiveQuestionRow[] = [];
     if (paginatedIds.length > 0) {
-      const { data, error } = await supabaseAdmin
-        .from('questions')
-        .select('id, code, banca, institution, year, especialidade, tema, statement, commentary, options, images, is_anulada, correct_answer')
-        .in('id', paginatedIds);
-
-      if (error) {
-        console.error('Erro ao buscar questoes no Supabase:', error);
-      } else {
-        liveQuestions = (data as unknown as LiveQuestionRow[]) || [];
-      }
+      liveQuestions = await findCanonicalQuestionsByIdsOrCodes<LiveQuestionRow>(
+        supabaseAdmin,
+        paginatedIds,
+        'id, code, banca, institution, year, especialidade, tema, statement, commentary, options, images, is_anulada, correct_answer'
+      );
     }
 
     // Indexa live data por ID
@@ -436,14 +438,25 @@ export async function PATCH(req: NextRequest) {
 
     // Se a ação for substituição cirúrgica de URL (Inpainting, Oficial da Banca ou Manual)
     if ((action === 'replace_image' || action === 'apply_inpainting' || action === 'apply_official') && oldUrl) {
-      const { data: currentQ, error: fetchErr } = await supabaseAdmin
-        .from('questions')
-        .select('id, code, statement, commentary, options, images')
-        .eq('id', questionId)
-        .single();
+      const foundCurrent = await findCanonicalQuestionByIdOrCode<{
+        id: string;
+        code?: string;
+        statement?: string;
+        commentary?: string;
+        options?: Array<{ letter: string; text: string; justification?: string }>;
+        images?: string[];
+      }>(
+        supabaseAdmin,
+        questionId,
+        'id, code, statement, commentary, options, images'
+      );
+      const currentQ = foundCurrent.row;
 
-      if (fetchErr || !currentQ) {
-        throw new Error(`Questão não encontrada no Supabase: ${fetchErr?.message}`);
+      if (!currentQ) {
+        return NextResponse.json(
+          { success: false, error: 'Questão não encontrada nas tabelas canônicas do Supabase.' },
+          { status: 404 }
+        );
       }
 
       let finalTargetUrl = newUrl;
@@ -554,23 +567,46 @@ export async function PATCH(req: NextRequest) {
         });
       }
 
-      const { data: updatedQ, error: updateErr } = await supabaseAdmin
-        .from('questions')
-        .update(updates)
-        .eq('id', questionId)
-        .select('id, code, statement, commentary, options, images')
-        .single();
+      const { updatedRows, error: updateErr } = await updateCanonicalQuestion<{
+        id: string;
+        code?: string;
+        statement?: string;
+        commentary?: string;
+        options?: unknown[];
+        images?: string[];
+      }>(
+        supabaseAdmin,
+        questionId,
+        updates,
+        'id, code, statement, commentary, options, images'
+      );
 
-      if (updateErr) {
-        throw new Error(`Falha ao atualizar questão: ${updateErr.message}`);
+      if (updateErr && updatedRows.length === 0) {
+        throw new Error(`Falha ao atualizar questão nas tabelas canônicas: ${updateErr.message}`);
       }
+
+      const updatedQ = updatedRows[0] || { id: questionId, ...updates };
+
+      recordAuditEvent({
+        userId: auth.user?.id || null,
+        userEmail: auth.user?.email || (auth.isM2M ? 'm2m-service-role' : null),
+        userRole: auth.role || 'admin',
+        action: 'MANUAL_OVERRIDE',
+        entityType: 'question',
+        entityId: questionId,
+        oldValues: { oldUrl },
+        newValues: { newUrl: finalTargetUrl, medevoAction: String(action) },
+        reason: 'Substituição de imagem auditada no módulo MedEvo',
+        ipAddress: extractTrustedClientIpFromHeaders(req.headers),
+        userAgent: req.headers.get('user-agent')
+      }).catch((e) => console.warn('[MedEvo PATCH] Aviso ao gravar log de auditoria:', e));
 
       // Sincroniza também no manifesto
       updateManifestQuestionClean(questionId, { oldUrl, newUrl });
 
       return NextResponse.json({
         success: true,
-        message: 'Imagem atualizada com sucesso no Supabase!',
+        message: 'Imagem atualizada com sucesso nas tabelas canônicas!',
         action,
         updatedQuestion: updatedQ
       });
@@ -591,32 +627,54 @@ export async function PATCH(req: NextRequest) {
       );
     }
 
-    const { data, error } = await supabaseAdmin
-      .from('questions')
-      .update(updateData)
-      .eq('id', questionId)
-      .select('id, code, statement, commentary, options, images')
-      .single();
+    const { updatedRows, error } = await updateCanonicalQuestion<{
+      id: string;
+      code?: string;
+      statement?: string;
+      commentary?: string;
+      options?: unknown[];
+      images?: string[];
+    }>(
+      supabaseAdmin,
+      questionId,
+      updateData,
+      'id, code, statement, commentary, options, images'
+    );
 
-    if (error) {
-      console.error('Erro ao atualizar questão no Supabase:', error);
+    if (error && updatedRows.length === 0) {
+      console.error('Erro ao atualizar questão nas tabelas canônicas:', error);
       return NextResponse.json(
-        { success: false, error: `Falha no Supabase: ${error.message}` },
+        { success: false, error: safeErrorMessage(error, 'Falha ao atualizar questão nas tabelas canônicas.') },
         { status: 500 }
       );
     }
 
+    recordAuditEvent({
+      userId: auth.user?.id || null,
+      userEmail: auth.user?.email || (auth.isM2M ? 'm2m-service-role' : null),
+      userRole: auth.role || 'admin',
+      action: 'MANUAL_OVERRIDE',
+      entityType: 'question',
+      entityId: questionId,
+      newValues: {
+        medevoAction: 'update_fields',
+        updatedFields: Object.keys(updateData)
+      },
+      reason: 'Atualização de campos textuais/imagens no módulo MedEvo',
+      ipAddress: extractTrustedClientIpFromHeaders(req.headers),
+      userAgent: req.headers.get('user-agent')
+    }).catch((e) => console.warn('[MedEvo PATCH] Aviso ao gravar log de auditoria:', e));
+
     return NextResponse.json({
       success: true,
-      message: 'Questão atualizada com sucesso no Supabase!',
+      message: 'Questão atualizada com sucesso nas tabelas canônicas!',
       action,
-      updatedQuestion: data
+      updatedQuestion: updatedRows[0] || { id: questionId, ...updateData }
     });
   } catch (err: unknown) {
-    const errorMsg = err instanceof Error ? err.message : 'Erro interno ao atualizar questão.';
     console.error('Erro no PATCH /api/admin/medevo:', err);
     return NextResponse.json(
-      { success: false, error: errorMsg },
+      { success: false, error: safeErrorMessage(err, 'Erro interno ao atualizar questão.') },
       { status: 500 }
     );
   }

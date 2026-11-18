@@ -110,18 +110,20 @@ export function getGoogleOAuthRedirectUri(): string {
  *   - https://bancoresidencia-kappa.vercel.app/auth/google/callback
  *   - http://localhost:3000/auth/google/callback
  */
-function generateAndStoreOAuthState(mode: 'redirect' | 'popup'): string {
-  const bytes = new Uint8Array(16);
-  if (typeof window !== 'undefined' && window.crypto?.getRandomValues) {
-    window.crypto.getRandomValues(bytes);
+async function requestServerOAuthState(mode: 'redirect' | 'popup'): Promise<string> {
+  const res = await fetch('/api/calendar/google/oauth-state', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ mode })
+  });
+  if (!res.ok) {
+    throw new Error('Faça login na plataforma antes de conectar sua Conta Google.');
   }
-  const nonce = Array.from(bytes, (b) => b.toString(16).padStart(2, '0')).join('');
-  const stateValue = `${mode}:${nonce}`;
-  if (typeof document !== 'undefined') {
-    const secureAttr = window.location.protocol === 'https:' ? '; Secure' : '';
-    document.cookie = `br_gcal_oauth_state=${encodeURIComponent(stateValue)}; Path=/; Max-Age=600; SameSite=Lax${secureAttr}`;
+  const data = (await res.json()) as { state?: string };
+  if (!data?.state) {
+    throw new Error('Falha ao inicializar estado de segurança OAuth.');
   }
-  return stateValue;
+  return data.state;
 }
 
 export function startGoogleOAuthRedirect(clientId: string): void {
@@ -133,20 +135,23 @@ export function startGoogleOAuthRedirect(clientId: string): void {
     'https://www.googleapis.com/auth/calendar.readonly',
   ].join(' ');
 
-  const oauthState = generateAndStoreOAuthState('redirect');
-
-  const params = new URLSearchParams({
-    client_id: clientId,
-    redirect_uri: redirectUri,
-    response_type: 'code',
-    access_type: 'offline',
-    scope,
-    include_granted_scopes: 'true',
-    prompt: 'consent select_account',
-    state: oauthState,
-  });
-
-  window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
+  requestServerOAuthState('redirect')
+    .then((oauthState) => {
+      const params = new URLSearchParams({
+        client_id: clientId,
+        redirect_uri: redirectUri,
+        response_type: 'code',
+        access_type: 'offline',
+        scope,
+        include_granted_scopes: 'true',
+        prompt: 'consent select_account',
+        state: oauthState,
+      });
+      window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
+    })
+    .catch((err) => {
+      console.error('[GoogleCalendarService] Erro ao iniciar estado OAuth:', err);
+    });
 }
 
 /**
@@ -178,21 +183,6 @@ export function startGoogleOAuthPopup(
     'https://www.googleapis.com/auth/calendar.readonly',
   ].join(' ');
 
-  const oauthState = generateAndStoreOAuthState('popup');
-
-  const params = new URLSearchParams({
-    client_id: clientId,
-    redirect_uri: redirectUri,
-    response_type: 'code',
-    access_type: 'offline',
-    scope,
-    include_granted_scopes: 'true',
-    prompt: 'select_account',
-    state: oauthState,
-  });
-
-  const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
-
   // Limpa timestamp anterior para garantir que apenas novas autenticações sejam consideradas
   try {
     localStorage.removeItem('bancoresidencia_google_popup_auth_timestamp');
@@ -200,14 +190,14 @@ export function startGoogleOAuthPopup(
     // ignora
   }
 
-  // Abre popup centralizado na tela
+  // Abre popup centralizado sincronamente no gesto do clique (evita bloqueador de popups)
   const width = 500;
   const height = 640;
   const left = Math.round(window.screenX + (window.outerWidth - width) / 2);
   const top = Math.round(window.screenY + (window.outerHeight - height) / 2);
 
   const popup = window.open(
-    authUrl,
+    'about:blank',
     'bancoresidencia_google_oauth',
     `width=${width},height=${height},left=${left},top=${top},scrollbars=yes,resizable=yes`
   );
@@ -216,6 +206,27 @@ export function startGoogleOAuthPopup(
     onError(new Error('Popup bloqueado pelo navegador. Use o link "Abrir por redirecionamento".'));
     return () => {};
   }
+
+  requestServerOAuthState('popup')
+    .then((oauthState) => {
+      const params = new URLSearchParams({
+        client_id: clientId,
+        redirect_uri: redirectUri,
+        response_type: 'code',
+        access_type: 'offline',
+        scope,
+        include_granted_scopes: 'true',
+        prompt: 'select_account',
+        state: oauthState,
+      });
+      popup.location.href = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
+    })
+    .catch((err) => {
+      try {
+        popup.close();
+      } catch {}
+      onError(err);
+    });
 
   let resolved = false;
 

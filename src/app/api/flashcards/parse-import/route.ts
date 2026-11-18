@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { parseUniversalFlashcardFile } from '@/lib/flashcards/ankiPackageParser';
 import { FlashcardImportFormat } from '@/types/flashcards';
 import { verifyStudentSession } from '@/lib/supabase/studentAuth';
+import { isAiRateLimited } from '@/lib/aiProtection';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -16,6 +17,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Rate limiting estrito por usuário autenticado contra DoS síncrono no Event Loop (máx 6 uploads/min)
+    if (isAiRateLimited(`anki_import_${auth.user.id}`, 6)) {
+      return NextResponse.json(
+        { success: false, error: 'Limite de importações atingido temporariamente (máx. 6/min). Aguarde um instante.' },
+        { status: 429, headers: { 'Retry-After': '30' } }
+      );
+    }
+
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
     const format = ((formData.get('format') as string) || 'auto') as FlashcardImportFormat;
@@ -27,16 +36,22 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Limite de segurança: 50MB
-    const MAX_FILE_SIZE = 50 * 1024 * 1024;
+    // Limite estrito de segurança: 25MB
+    const MAX_FILE_SIZE = 25 * 1024 * 1024;
     if (file.size > MAX_FILE_SIZE) {
       return NextResponse.json(
-        { success: false, error: 'O arquivo excede o limite máximo permitido de 50MB.' },
+        { success: false, error: 'O arquivo excede o limite máximo permitido de 25MB.' },
         { status: 413 }
       );
     }
 
     const arrayBuffer = await file.arrayBuffer();
+    if (arrayBuffer.byteLength > MAX_FILE_SIZE) {
+      return NextResponse.json(
+        { success: false, error: 'O arquivo excede o limite máximo permitido de 25MB.' },
+        { status: 413 }
+      );
+    }
     const buffer = Buffer.from(arrayBuffer);
 
     const result = parseUniversalFlashcardFile(buffer, file.name, format);

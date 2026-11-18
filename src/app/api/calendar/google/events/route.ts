@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { safeErrorMessage } from '@/utils/security';
 import {
   getValidGoogleAccessToken,
   fetchTodayGoogleEvents
@@ -36,8 +38,9 @@ export async function GET(req: NextRequest) {
     const timeMax = req.nextUrl.searchParams.get('timeMax') || undefined;
     const events = await fetchTodayGoogleEvents(accessToken, timeMin, timeMax);
 
-    // 3. Atualiza timestamp de última sincronização
-    await supabase
+    // 3. Atualiza timestamp de última sincronização via cliente administrativo escopado ao user.id
+    const supabaseAdmin = getSupabaseAdmin();
+    await supabaseAdmin
       .from('user_calendar_integrations')
       .update({ last_sync_at: new Date().toISOString() })
       .eq('user_id', user.id)
@@ -48,10 +51,10 @@ export async function GET(req: NextRequest) {
       events,
       count: events.length
     });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error('[GoogleCalendarEventsAPI] Erro:', err);
     return NextResponse.json(
-      { error: err?.message || 'Falha ao sincronizar eventos do Google Agenda.' },
+      { error: safeErrorMessage(err, 'Falha ao sincronizar eventos do Google Agenda.') },
       { status: 500 }
     );
   }

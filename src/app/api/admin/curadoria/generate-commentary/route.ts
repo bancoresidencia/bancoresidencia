@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { callGeminiAi, parseCleanJson, getAllGeminiKeys } from '@/lib/gemini';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 import { recordAuditEvent } from '@/lib/audit';
+import { isAiRateLimited } from '@/lib/aiProtection';
+import { extractTrustedClientIpFromHeaders } from '@/utils/security';
 
 export const dynamic = 'force-dynamic';
 
@@ -50,6 +52,17 @@ export async function POST(req: NextRequest) {
         { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },
         { status: auth.status }
       );
+    }
+
+    // 1.1 Rate limiting por curador autenticado contra abuso / Denial of Wallet de Gemini
+    if (!auth.isM2M) {
+      const rateKey = `curadoria_ai_${auth.user?.id || extractTrustedClientIpFromHeaders(req.headers)}`;
+      if (isAiRateLimited(rateKey, 12)) {
+        return NextResponse.json(
+          { success: false, error: 'Limite de gerações de comentário por minuto atingido (12/min). Aguarde um instante.' },
+          { status: 429, headers: { 'Retry-After': '30' } }
+        );
+      }
     }
 
     const body: GenerateCommentaryBody = await req.json();
@@ -193,10 +206,7 @@ ${optionsSchemaExample}
                 .join('')
                 .trim();
 
-              const clientIp =
-                req.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
-                req.headers.get('x-real-ip') ||
-                'unknown-ip';
+              const clientIp = extractTrustedClientIpFromHeaders(req.headers);
 
               if (body.questionId) {
                 recordAuditEvent({

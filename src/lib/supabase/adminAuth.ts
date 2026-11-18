@@ -2,7 +2,7 @@ import { NextRequest } from 'next/server';
 import { User } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/server';
 
-import { isPrivilegedRole, timingSafeEqualStrings } from '@/utils/security';
+import { isPrivilegedRole, isStrictAdminRole, timingSafeEqualStrings } from '@/utils/security';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 
 export interface AdminAuthResult {
@@ -12,6 +12,11 @@ export interface AdminAuthResult {
   error?: string;
   status: number;
   isM2M?: boolean;
+}
+
+export interface VerifyAdminOptions {
+  /** Quando true, exige estritamente role 'admin' ou 'superadmin' (bloqueia 'curador'). */
+  requireStrictAdmin?: boolean;
 }
 
 /**
@@ -25,9 +30,16 @@ export interface AdminAuthResult {
  * 4. Valida se o usuário possui role privilegiada em app_metadata ou na tabela profiles.
  * 5. NUNCA confia em user_metadata (para evitar privilege escalation).
  */
-export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthResult> {
+export async function verifyAdminSession(
+  req?: NextRequest,
+  options?: VerifyAdminOptions
+): Promise<AdminAuthResult> {
   try {
     const supabaseAdmin = getSupabaseAdmin();
+    const checkRole = options?.requireStrictAdmin ? isStrictAdminRole : isPrivilegedRole;
+    const forbiddenMessage = options?.requireStrictAdmin
+      ? 'Acesso negado: esta operação é restrita exclusivamente a superadministradores.'
+      : 'Acesso negado: sua conta não possui privilégios de administrador ou curador.';
 
     // 1. Verificação via Cabeçalho Authorization
     if (req) {
@@ -47,12 +59,12 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
         }
 
         // 1.2 Usuário autenticado enviando token JWT Bearer (fallback resiliente para falhas de cookies)
-        if (token && token.length > 20) {
+        if (token && token.length > 20 && token.split('.').length === 3) {
           try {
             const { data: { user: tokenUser }, error: tokenErr } = await supabaseAdmin.auth.getUser(token);
             if (!tokenErr && tokenUser) {
               const appRole = tokenUser.app_metadata?.role as string | undefined;
-              if (isPrivilegedRole(appRole)) {
+              if (checkRole(appRole)) {
                 return {
                   authorized: true,
                   user: tokenUser,
@@ -67,7 +79,7 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
                 .eq('id', tokenUser.id)
                 .maybeSingle();
 
-              if (profile && isPrivilegedRole(profile.role)) {
+              if (profile && checkRole(profile.role)) {
                 return {
                   authorized: true,
                   user: tokenUser,
@@ -78,7 +90,7 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
 
               return {
                 authorized: false,
-                error: 'Acesso negado: sua conta não possui privilégios de administrador ou curador.',
+                error: forbiddenMessage,
                 status: 403
               };
             }
@@ -115,7 +127,7 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
 
     // 3. Checagem em app_metadata (imutável pelo usuário comum)
     const appRole = user.app_metadata?.role as string | undefined;
-    if (isPrivilegedRole(appRole)) {
+    if (checkRole(appRole)) {
       return {
         authorized: true,
         user,
@@ -131,7 +143,7 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
       .eq('id', user.id)
       .maybeSingle();
 
-    if (!profileError && profile && isPrivilegedRole(profile.role)) {
+    if (!profileError && profile && checkRole(profile.role)) {
       return {
         authorized: true,
         user,
@@ -142,7 +154,7 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
 
     return {
       authorized: false,
-      error: 'Acesso negado: sua conta não possui privilégios de administrador ou curador.',
+      error: forbiddenMessage,
       status: 403
     };
   } catch (err) {

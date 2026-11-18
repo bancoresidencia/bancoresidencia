@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { safeErrorMessage } from '@/utils/security';
 
 export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
   try {
-    const auth = await verifyAdminSession(req);
+    const auth = await verifyAdminSession(req, { requireStrictAdmin: true });
     if (!auth.authorized) {
       return NextResponse.json(
         { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },
@@ -27,7 +28,7 @@ export async function POST(req: NextRequest) {
 
     const { data: pendingFocos, error } = await query;
     if (error) {
-      return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+      return NextResponse.json({ success: false, error: safeErrorMessage(error, 'Erro ao consultar focos pendentes.') }, { status: 500 });
     }
 
     if (!pendingFocos || pendingFocos.length === 0) {
@@ -73,7 +74,6 @@ export async function POST(req: NextRequest) {
       updatedSlugs
     });
   } catch (err: unknown) {
-    const msg = err instanceof Error ? err.message : String(err);
-    return NextResponse.json({ success: false, error: msg }, { status: 500 });
+    return NextResponse.json({ success: false, error: safeErrorMessage(err, 'Erro interno no recálculo analítico.') }, { status: 500 });
   }
 }

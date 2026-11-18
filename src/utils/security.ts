@@ -1,7 +1,7 @@
 import crypto from 'node:crypto';
 
 /**
- * Utilitários de Segurança e Sanitização de Input
+ * Utilitários de Segurança, RBAC, Criptografia HKDF e Sanitização de Input
  * Banco Residência Médica
  */
 
@@ -16,7 +16,6 @@ export function timingSafeEqualStrings(a: string, b: string): boolean {
   const bufA = Buffer.from(a, 'utf8');
   const bufB = Buffer.from(b, 'utf8');
   if (bufA.byteLength !== bufB.byteLength) {
-    // Executa comparação dummy de mesmo tamanho para não vazar latência prematura
     crypto.timingSafeEqual(bufA, bufA);
     return false;
   }
@@ -24,7 +23,25 @@ export function timingSafeEqualStrings(a: string, b: string): boolean {
 }
 
 /**
- * Sanitiza termos de busca enviados para filtros PostgREST do Supabase,
+ * Deriva uma subchave criptográfica isolada de 256 bits via HKDF-SHA256 (RFC 5869),
+ * impedindo reutilização direta de segredos mestres (como SUPABASE_SERVICE_ROLE_KEY) em múltiplos contextos.
+ */
+export function deriveDomainSecret(masterSecret: string, domainInfo: string): Buffer {
+  if (!masterSecret || !domainInfo) {
+    throw new Error('Segredo mestre e identificador de domínio são obrigatórios para derivação HKDF.');
+  }
+  const derived = crypto.hkdfSync(
+    'sha256',
+    Buffer.from(masterSecret, 'utf8'),
+    Buffer.from('bancoresidencia-hkdf-domain-salt-v1', 'utf8'),
+    Buffer.from(domainInfo, 'utf8'),
+    32
+  );
+  return Buffer.from(derived);
+}
+
+/**
+ * Sanitiza termos de busca livres enviados para filtros PostgREST do Supabase,
  * prevenindo injeções de filtros lógicos, wildcards excessivos (*, %, _), colchetes e subqueries.
  */
 export function sanitizePostgrestTerm(term: string): string {
@@ -34,10 +51,108 @@ export function sanitizePostgrestTerm(term: string): string {
     .replace(/\u00A0|&nbsp;/gi, ' ')
     .replace(/--/g, ' ')
     .replace(/[,();\\"%_*]/g, ' ')
-    .replace(/\.(?:or|and|not|eq|neq|gt|gte|lt|lte|like|ilike|is|in|cs|cd|ov|fts|plfts|phfts|wfts)\./gi, ' ')
+    .replace(/\.(?:or|and|not|eq|neq|gt|gte|lt|lte|like|ilike|is|in|cs|cd|ov|fts|plfts|phfts|wfts|imatch|match)\./gi, ' ')
     .replace(/\s+/g, ' ')
     .trim()
     .slice(0, 120);
+}
+
+/**
+ * Sanitiza valores exatos inseridos entre aspas duplas dentro de listas .or(col.in.("...")) do PostgREST,
+ * eliminando caracteres capazes de fechar aspas/parênteses ou injetar operadores lógicos,
+ * mas preservando nomes clínicos legítimos da árvore taxonômica.
+ */
+export function sanitizePostgrestQuotedValue(value: unknown): string {
+  if (typeof value !== 'string') return '';
+  return value
+    .replace(/[\u200B-\u200D\uFEFF\u2060\u0000-\u001F]/g, '')
+    .replace(/\u00A0|&nbsp;/gi, ' ')
+    .replace(/["\\();*%\r\n]/g, '')
+    .replace(/--/g, ' ')
+    .replace(/\.(?:or|and|not|eq|neq|gt|gte|lt|lte|like|ilike|is|in|cs|cd|ov|fts|plfts|phfts|wfts|imatch|match)\./gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 140);
+}
+
+function isValidIpAddress(ip: string): boolean {
+  // IPv4 estrito (0-255 por octeto, sem zeros à esquerda ambíguos)
+  if (/^\d{1,3}(?:\.\d{1,3}){3}$/.test(ip)) {
+    const octets = ip.split('.');
+    return octets.every((o) => {
+      if (o.length > 1 && o.startsWith('0')) return false;
+      const n = Number(o);
+      return Number.isInteger(n) && n >= 0 && n <= 255;
+    });
+  }
+  // IPv6 (completo ou comprimido com ::, incluindo IPv4-mapped)
+  if (ip.includes(':')) {
+    try {
+      const parsed = new URL(`http://[${ip}]/`);
+      return parsed.hostname === `[${ip.toLowerCase()}]` || parsed.hostname.startsWith('[');
+    } catch {
+      return false;
+    }
+  }
+  return false;
+}
+
+/**
+ * Extrai o IP confiável do cliente sem permitir falsificação de X-Vercel-Forwarded-For ou X-Real-IP
+ * quando executado fora da infraestrutura gerenciada da Vercel.
+ */
+export function extractTrustedClientIpFromHeaders(
+  headers: { get(name: string): string | null },
+  options?: { isVercelRuntime?: boolean; trustRealIpHeader?: boolean }
+): string {
+  const isVercel = options?.isVercelRuntime ?? process.env.VERCEL === '1';
+  const trustRealIp = options?.trustRealIpHeader ?? (isVercel || process.env.TRUST_X_REAL_IP === 'true');
+
+  const sanitizeIpCandidate = (raw?: string | null): string | null => {
+    if (!raw) return null;
+    let candidate = raw.trim();
+    if (!candidate) return null;
+    // Remove porta em IPv4 (ex: 203.0.113.10:54321)
+    if (/^\d{1,3}(?:\.\d{1,3}){3}:\d+$/.test(candidate)) {
+      candidate = candidate.split(':')[0];
+    }
+    candidate = candidate.replace(/^\[|\]$/g, '');
+    return isValidIpAddress(candidate) ? candidate : null;
+  };
+
+  if (isVercel) {
+    const vercelIp = sanitizeIpCandidate(headers.get('x-vercel-forwarded-for')?.split(',')[0]);
+    if (vercelIp) return vercelIp;
+  }
+
+  if (trustRealIp) {
+    const realIp = sanitizeIpCandidate(headers.get('x-real-ip'));
+    if (realIp) return realIp;
+  }
+
+  const xff = headers.get('x-forwarded-for');
+  if (xff) {
+    const parts = xff
+      .split(',')
+      .map((s) => sanitizeIpCandidate(s))
+      .filter((ip): ip is string => Boolean(ip));
+    if (parts.length > 0) {
+      // Usa o último IP válido anexado pelo reverse proxy da borda
+      return parts[parts.length - 1];
+    }
+  }
+
+  return 'unknown-ip';
+}
+
+/**
+ * Oculta mensagens internas de infraestrutura/SQL em ambiente de produção (CWE-209).
+ */
+export function safeErrorMessage(err: unknown, fallbackMessage: string): string {
+  if (process.env.NODE_ENV === 'production') {
+    return fallbackMessage;
+  }
+  return err instanceof Error && err.message ? err.message : fallbackMessage;
 }
 
 /**
@@ -47,8 +162,7 @@ export function validateQuestionId(id: unknown): boolean {
   if (typeof id !== 'string') return false;
   const trimmed = id.trim();
   if (trimmed.length === 0 || trimmed.length > 128) return false;
-  // Permite alfanuméricos, hífens e underscores típicos de IDs de questão
-  return /^[a-zA-Z0-9_\-]+$/.test(trimmed);
+  return /^[a-zA-Z0-9_-]+$/.test(trimmed);
 }
 
 /**
@@ -60,13 +174,22 @@ export function validateAnswerOption(answer: unknown): boolean {
 }
 
 export const VALID_ADMIN_ROLES = new Set(['admin', 'curador', 'curator', 'superadmin']);
+export const STRICT_ADMIN_ROLES = new Set(['admin', 'superadmin']);
 
 /**
- * Valida se uma role possui privilégios de administração ou curadoria
+ * Valida se uma role possui privilégios de administração ou curadoria médica
  */
 export function isPrivilegedRole(role: unknown): boolean {
   if (!role || typeof role !== 'string') return false;
   return VALID_ADMIN_ROLES.has(role.toLowerCase().trim());
+}
+
+/**
+ * Valida se uma role é estritamente Administrador Geral (exclui curadores terceirizados)
+ */
+export function isStrictAdminRole(role: unknown): boolean {
+  if (!role || typeof role !== 'string') return false;
+  return STRICT_ADMIN_ROLES.has(role.toLowerCase().trim());
 }
 
 export interface PasswordValidationResult {

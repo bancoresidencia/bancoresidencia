@@ -358,11 +358,17 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
       {/* Tabela de Baralhos Estilo Anki */}
       <div className="bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 rounded-2xl shadow-xs overflow-hidden">
         {/* Cabeçalho Anki */}
-        <div className="grid grid-cols-12 items-center px-4 py-2.5 bg-zinc-50/90 dark:bg-zinc-900/80 border-b border-zinc-200 dark:border-zinc-800 text-[11px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 select-none">
-          <div className="col-span-7 sm:col-span-8">Baralho Autoral</div>
-          <div className="col-span-1 text-right text-blue-600 dark:text-blue-400">Novo</div>
-          <div className="col-span-2 sm:col-span-1 text-right text-rose-600 dark:text-rose-400">Aprender</div>
-          <div className="col-span-2 sm:col-span-1 text-right text-emerald-600 dark:text-emerald-400">Revisar</div>
+        <div className="grid grid-cols-12 items-center px-3.5 sm:px-4 py-2.5 bg-zinc-50/90 dark:bg-zinc-900/80 border-b border-zinc-200 dark:border-zinc-800 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 select-none">
+          <div className="col-span-6 sm:col-span-8 truncate">Baralho Autoral</div>
+          <div className="col-span-2 sm:col-span-1 text-right text-blue-600 dark:text-blue-400">Novo</div>
+          <div className="col-span-2 sm:col-span-1 text-right text-rose-600 dark:text-rose-400">
+            <span className="sm:hidden">Apr.</span>
+            <span className="hidden sm:inline">Aprender</span>
+          </div>
+          <div className="col-span-2 sm:col-span-1 text-right text-emerald-600 dark:text-emerald-400">
+            <span className="sm:hidden">Rev.</span>
+            <span className="hidden sm:inline">Revisar</span>
+          </div>
           <div className="hidden sm:block col-span-1 text-center text-zinc-400">Ações</div>
         </div>
 
@@ -378,26 +384,35 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
             return (
               <div
                 key={deck.id}
-                className="grid grid-cols-12 items-center px-4 py-3 hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50 transition-colors select-none group"
+                className="grid grid-cols-12 items-center px-3.5 sm:px-4 py-3 hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50 transition-colors select-none group"
               >
-                {/* Nome do Baralho */}
-                <div className="col-span-7 sm:col-span-8 flex items-center gap-2.5 min-w-0 pr-2">
+                {/* Nome do Baralho (clicável para estudar ou criar card) */}
+                <div
+                  onClick={() => {
+                    if (deckCards.length > 0) {
+                      onStartStudy(deckCards, `${deck.name} (${deckCards.length} cards)`);
+                    } else {
+                      onOpenAddCardForDeck(deck.id);
+                    }
+                  }}
+                  className="col-span-6 sm:col-span-8 flex items-center gap-2.5 min-w-0 pr-2 cursor-pointer touch-manipulation"
+                >
                   <div className="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
                     <BookOpen className="w-4 h-4" />
                   </div>
 
                   <div className="min-w-0">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
                       <span className="font-heading font-black text-xs sm:text-[13px] text-zinc-900 dark:text-zinc-100 truncate">
                         {deck.name}
                       </span>
                       {isDefault && (
-                        <span className="px-1.5 py-0.2 rounded text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-500">
+                        <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-500">
                           Padrão
                         </span>
                       )}
                       {activeFilters.length > 0 && (
-                        <span className="px-1.5 py-0.2 rounded text-[9px] font-mono bg-blue-100/70 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 font-bold">
+                        <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-blue-100/70 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 font-bold">
                           {deckCards.length} filtrados
                         </span>
                       )}
@@ -411,7 +426,7 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                 </div>
 
                 {/* Colunas Anki */}
-                <div className="col-span-1 text-right text-xs">
+                <div className="col-span-2 sm:col-span-1 text-right text-xs">
                   {renderCountNumber(counts.novo, 'novo')}
                 </div>
                 <div className="col-span-2 sm:col-span-1 text-right text-xs">
@@ -421,8 +436,8 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                   {renderCountNumber(counts.revisar, 'revisar')}
                 </div>
 
-                {/* Ações */}
-                <div className="hidden sm:flex col-span-1 items-center justify-center gap-1.5">
+                {/* Ações Desktop e Mobile */}
+                <div className="col-span-12 sm:col-span-1 flex items-center justify-end sm:justify-center gap-1.5 pt-2.5 mt-2 sm:pt-0 sm:mt-0 border-t border-zinc-100 dark:border-zinc-800/60 sm:border-0">
                   {deckCards.length > 0 ? (
                     <button
                       type="button"
@@ -432,19 +447,21 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                           `${deck.name} (${deckCards.length} cards)`
                         )
                       }
-                      className="p-1 rounded-lg text-zinc-400 hover:text-white hover:bg-emerald-600 transition-colors cursor-pointer"
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:p-1 min-h-[34px] sm:min-h-0 rounded-lg text-[11px] font-bold bg-emerald-600 text-white sm:bg-transparent sm:text-zinc-400 sm:hover:text-white sm:hover:bg-emerald-600 transition-colors cursor-pointer touch-manipulation"
                       title="Estudar este baralho"
                     >
                       <Play className="w-3.5 h-3.5 fill-current" />
+                      <span className="sm:hidden">Estudar</span>
                     </button>
                   ) : (
                     <button
                       type="button"
                       onClick={() => onOpenAddCardForDeck(deck.id)}
-                      className="p-1 rounded-lg text-zinc-400 hover:text-blue-500 transition-colors cursor-pointer"
+                      className="inline-flex items-center gap-1 px-2.5 py-1.5 sm:p-1 min-h-[34px] sm:min-h-0 rounded-lg text-[11px] font-semibold bg-zinc-100 dark:bg-zinc-800/80 sm:bg-transparent text-zinc-600 dark:text-zinc-300 sm:text-zinc-400 hover:text-blue-500 transition-colors cursor-pointer touch-manipulation"
                       title="Adicionar cartão neste baralho"
                     >
                       <Plus className="w-3.5 h-3.5" />
+                      <span className="sm:hidden">Adicionar</span>
                     </button>
                   )}
 
@@ -452,7 +469,7 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                     <button
                       type="button"
                       onClick={() => handleDeleteDeck(deck.id, deck.name)}
-                      className="p-1 rounded-lg text-zinc-400 hover:text-rose-500 transition-colors cursor-pointer"
+                      className="inline-flex items-center justify-center p-2 sm:p-1 min-w-[34px] min-h-[34px] sm:min-w-0 sm:min-h-0 rounded-lg text-zinc-400 hover:text-rose-500 transition-colors cursor-pointer touch-manipulation"
                       title="Excluir baralho"
                     >
                       <Trash2 className="w-3.5 h-3.5" />

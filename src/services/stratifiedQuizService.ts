@@ -6,7 +6,7 @@ import {
   homologatedDiretoBaseline,
   homologatedRevalidaBaseline
 } from '@/data/homologatedFacetsBaseline';
-import { sanitizePostgrestTerm } from '@/utils/security';
+import { sanitizePostgrestTerm, sanitizePostgrestQuotedValue, validateQuestionId } from '@/utils/security';
 
 // Cache em memória para contagens facetadas (TTL 60s)
 const facetedCountsCache = new Map<string, {
@@ -203,7 +203,10 @@ export async function fetchFacetedHierarchyCounts(
           }
         }
         if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-          qSpec = qSpec.not('id', 'in', `(${filters.userSolvedIds.slice(0, 120).join(',')})`);
+          const safePrune = filters.userSolvedIds.filter(validateQuestionId).slice(0, 120);
+          if (safePrune.length > 0) {
+            qSpec = qSpec.not('id', 'in', `(${safePrune.join(',')})`);
+          }
         } else if (filters.status === 'Resolvidas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
           qSpec = qSpec.in('id', filters.userSolvedIds.slice(0, 150));
         } else if (filters.status === 'Acertadas' && filters.userCorrectIds && filters.userCorrectIds.length > 0) {
@@ -312,8 +315,10 @@ export async function fetchFacetedHierarchyCounts(
 
       // Status
       if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-        const safePrune = filters.userSolvedIds.slice(0, 100);
-        q = q.not('id', 'in', `(${safePrune.join(',')})`);
+        const safePrune = filters.userSolvedIds.filter(validateQuestionId).slice(0, 100);
+        if (safePrune.length > 0) {
+          q = q.not('id', 'in', `(${safePrune.join(',')})`);
+        }
       } else if (filters.status === 'Resolvidas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
         const chunkIds = filters.userSolvedIds.slice(currentOffset, currentOffset + PAGE_CHUNK);
         q = q.in('id', chunkIds.length > 0 ? chunkIds : ['00000000-0000-0000-0000-000000000000']);
@@ -614,7 +619,10 @@ export async function generateStratifiedQuiz(
         } else if (item === 'Medicina Preventiva' || item === 'Medicina Preventiva e Social') {
           q = q.in('especialidade', ['Medicina Preventiva e Social', 'Medicina Preventiva']);
         } else {
-          q = q.or(`especialidade.eq."${item}",tema.eq."${item}",foco.eq."${item}",subfoco.eq."${item}"`);
+          const safeItem = sanitizePostgrestQuotedValue(item);
+          if (safeItem) {
+            q = q.or(`especialidade.eq."${safeItem}",tema.eq."${safeItem}",foco.eq."${safeItem}",subfoco.eq."${safeItem}"`);
+          }
         }
 
         // Interseção AND com Card Direito:
@@ -648,13 +656,16 @@ export async function generateStratifiedQuiz(
         // Modalidade
         if (filters.modalidades && filters.modalidades.length > 0) {
           const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
-          const otherModalidades = filters.modalidades.filter((m) => !m.toLowerCase().includes('revalida'));
+          const otherModalidades = filters.modalidades
+            .filter((m) => !m.toLowerCase().includes('revalida'))
+            .map((m) => sanitizePostgrestQuotedValue(m))
+            .filter(Boolean);
           if (hasRevalida && otherModalidades.length === 0) {
             if (targetTable !== 'view_questions_revalida') {
               q = q.or(REVALIDA_POSTGREST_FILTER);
             }
           } else if (hasRevalida && otherModalidades.length > 0) {
-            const otherIn = otherModalidades.join(',');
+            const otherIn = otherModalidades.map((m) => `"${m}"`).join(',');
             q = q.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
           } else {
             const isOnlyDefault =

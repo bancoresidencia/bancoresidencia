@@ -77,6 +77,27 @@ function getCardEditsStorageKey(userId?: string | null): string {
   return userId ? `${USER_CARD_EDITS_KEY}_${userId}` : USER_CARD_EDITS_KEY;
 }
 
+function generateUuidSuffix(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return `${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+}
+
+function toRemoteDeckId(localDeckId: string, userId: string): string {
+  if (localDeckId === 'deck-padrao') {
+    return `deck-padrao_${userId}`;
+  }
+  return localDeckId;
+}
+
+function fromRemoteDeckId(remoteDeckId: string, userId: string): string {
+  if (remoteDeckId === `deck-padrao_${userId}`) {
+    return 'deck-padrao';
+  }
+  return remoteDeckId;
+}
+
 const DECK_META_PREFIX = '__BR_DECK_META__:';
 
 interface SerializedDeckMeta {
@@ -1282,7 +1303,7 @@ export const flashcardsService = {
           .from('user_flashcard_decks')
           .upsert(
             {
-              id: deck.id,
+              id: toRemoteDeckId(deck.id, userId),
               user_id: userId,
               title: deck.name,
               description: encodeDeckDescriptionWithMeta(deck, 'custom'),
@@ -1319,7 +1340,7 @@ export const flashcardsService = {
         client
           .from('user_flashcard_decks')
           .delete()
-          .eq('id', id)
+          .eq('id', toRemoteDeckId(id, userId))
           .eq('user_id', userId)
           .then(() => {}, () => {});
       }
@@ -1377,7 +1398,7 @@ export const flashcardsService = {
           .from('user_flashcard_decks')
           .upsert(
             {
-              id: deck.id,
+              id: toRemoteDeckId(deck.id, userId),
               user_id: userId,
               title: deck.name,
               description: encodeDeckDescriptionWithMeta(deck, 'personalized'),
@@ -1414,7 +1435,7 @@ export const flashcardsService = {
         client
           .from('user_flashcard_decks')
           .delete()
-          .eq('id', id)
+          .eq('id', toRemoteDeckId(id, userId))
           .eq('user_id', userId)
           .then(() => {}, () => {});
       }
@@ -1525,7 +1546,7 @@ export const flashcardsService = {
         }>) {
           const meta = decodeDeckDescriptionMeta(d.description);
           const mapped: CustomFlashcardDeck = {
-            id: d.id,
+            id: fromRemoteDeckId(d.id, userId),
             name: d.title || 'Baralho',
             description: meta.description || '',
             specialties: meta.specialties || [],
@@ -1558,14 +1579,14 @@ export const flashcardsService = {
 
         const uploadPayloads = [
           ...missingCustom.map((d) => ({
-            id: d.id,
+            id: toRemoteDeckId(d.id, userId),
             user_id: userId,
             title: d.name,
             description: encodeDeckDescriptionWithMeta(d, 'custom'),
             card_ids: d.cardIds || []
           })),
           ...missingPersonalized.map((d) => ({
-            id: d.id,
+            id: toRemoteDeckId(d.id, userId),
             user_id: userId,
             title: d.name,
             description: encodeDeckDescriptionWithMeta(d, 'personalized'),
@@ -1611,12 +1632,17 @@ export const flashcardsService = {
     if (typeof window === 'undefined') return card;
     try {
       const current = this.loadUserCreatedFlashcards(userId);
+      const safeCardId =
+        card.id && card.id.startsWith('fc-user-') && card.id.length > 24
+          ? card.id
+          : `fc-user-${generateUuidSuffix()}`;
       const cardToSave: FlashcardItem = {
         ...card,
+        id: safeCardId,
         deckId: card.deckId || 'deck-padrao',
         createdAt: card.createdAt || new Date().toISOString()
       };
-      const updated = [cardToSave, ...current.filter((c) => c.id !== card.id)];
+      const updated = [cardToSave, ...current.filter((c) => c.id !== safeCardId)];
       const key = getUserCardsStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
       if (!userId) {
@@ -1629,22 +1655,22 @@ export const flashcardsService = {
           .from('user_created_flashcards')
           .upsert(
             {
-              id: card.id,
+              id: cardToSave.id,
               user_id: userId,
-              front: card.front,
-              back: card.back,
-              specialty: card.specialty,
-              theme: card.theme,
-              focus: card.focus,
-              comment: card.comment || null,
-              priority: card.priority || 'standard'
+              front: cardToSave.front,
+              back: cardToSave.back,
+              specialty: cardToSave.specialty,
+              theme: cardToSave.theme,
+              focus: cardToSave.focus,
+              comment: cardToSave.comment || null,
+              priority: cardToSave.priority || 'standard'
             },
             { onConflict: 'id' }
           )
           .then(() => {}, () => {});
       }
 
-      return card;
+      return cardToSave;
     } catch (e) {
       console.warn('Erro ao salvar novo flashcard:', e);
       return card;
@@ -1659,9 +1685,9 @@ export const flashcardsService = {
     try {
       const current = this.loadUserCreatedFlashcards(userId);
       const now = new Date().toISOString();
-      const newItems: FlashcardItem[] = cards.map((c, idx) => ({
+      const newItems: FlashcardItem[] = cards.map((c) => ({
         ...c,
-        id: c.id.startsWith('fc-user-') ? c.id : `fc-user-${Date.now()}-${idx}`,
+        id: c.id && c.id.startsWith('fc-user-') && c.id.length > 24 ? c.id : `fc-user-${generateUuidSuffix()}`,
         deckId: c.deckId || 'deck-padrao',
         createdAt: c.createdAt || now
       }));

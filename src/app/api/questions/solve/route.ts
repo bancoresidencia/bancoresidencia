@@ -2,7 +2,13 @@ import crypto from 'crypto';
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
-import { validateQuestionId, isPrivilegedRole } from '@/utils/security';
+import {
+  validateQuestionId,
+  isPrivilegedRole,
+  deriveDomainSecret,
+  extractTrustedClientIpFromHeaders,
+  safeErrorMessage
+} from '@/utils/security';
 import { injectZeroWidthWatermark } from '@/utils/watermark';
 import { sanitizeMedicalText, unpackStructuredCommentary } from '@/utils/textSanitizer';
 import { findCanonicalQuestionByIdOrCode } from '@/services/canonicalQuestionStore';
@@ -22,16 +28,7 @@ const MAX_REQUESTS_PER_WINDOW = 60;
 const MAX_MAP_ENTRIES = 5000;
 
 function extractClientIp(req: NextRequest): string {
-  const vercelIp = req.headers.get('x-vercel-forwarded-for')?.split(',')[0]?.trim();
-  if (vercelIp) return vercelIp;
-  const realIp = req.headers.get('x-real-ip')?.trim();
-  if (realIp) return realIp;
-  const xff = req.headers.get('x-forwarded-for');
-  if (xff) {
-    const parts = xff.split(',').map((s) => s.trim()).filter(Boolean);
-    if (parts.length > 0) return parts[parts.length - 1];
-  }
-  return 'unknown-ip';
+  return extractTrustedClientIpFromHeaders(req.headers);
 }
 
 function isRateLimited(key: string): boolean {
@@ -67,15 +64,15 @@ interface GuestQuotaPayload {
   ids: string[];
 }
 
-function getQuotaSecret(): string {
+function getQuotaSecret(): Buffer {
   const secret = process.env.GUEST_QUOTA_SECRET || process.env.SUPABASE_SERVICE_ROLE_KEY;
   if (!secret) {
     if (process.env.NODE_ENV === 'production') {
       throw new Error('GUEST_QUOTA_SECRET ou SUPABASE_SERVICE_ROLE_KEY obrigatório em produção.');
     }
-    return 'bancoresidencia-dev-guest-quota-secret-key-32b';
+    return deriveDomainSecret('bancoresidencia-dev-guest-quota-secret-key-32b', 'guest-quota-cookie-hmac-v1');
   }
-  return secret;
+  return deriveDomainSecret(secret, 'guest-quota-cookie-hmac-v1');
 }
 
 function parseAndVerifyGuestQuotaCookie(cookieValue?: string | null): { date: string; questionIds: Set<string> } {
@@ -605,8 +602,10 @@ export async function POST(req: NextRequest) {
 
     return responseObj;
   } catch (err: unknown) {
-    const msg = err instanceof Error ? err.message : 'Erro interno do servidor';
     console.error('[API Solve] Exceção:', err);
-    return NextResponse.json({ success: false, error: msg }, { status: 500 });
+    return NextResponse.json(
+      { success: false, error: safeErrorMessage(err, 'Erro interno ao processar resposta.') },
+      { status: 500 }
+    );
   }
 }

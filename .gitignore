@@ -231,9 +231,12 @@ skills/
 skills-lock.json
 data/skills/
 
-# Arquivo histórico de dados legados
+# Arquivo histórico de dados legados e bloqueio de relatórios internos em public/
 data/archive/
 public/teste_animacao.html
+public/teste_*.html
+public/**/*.pdf
+docs/interno/
 data/temp_*
 data/amp_*
 .cache_spl_vtk/

@@ -8,8 +8,8 @@ RUN apk add --no-cache curl
 COPY package*.json ./
 RUN npm ci --omit=dev --ignore-scripts
 
-# Código dos scripts do motor e catálogo de referência médica
-COPY scripts/ ./scripts/
+# Código estritamente necessário do motor (evita incluir scripts locais/artefatos na imagem)
+COPY scripts/cloud_batch_solve.mjs scripts/solve_questions_engine.mjs ./scripts/
 COPY src/data/medicalKnowledgeCatalog.json ./src/data/medicalKnowledgeCatalog.json
 
 # Variáveis padrão de execução

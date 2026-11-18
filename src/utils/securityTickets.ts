@@ -3,21 +3,33 @@ import crypto from 'crypto';
 /**
  * Utilitário de Bilhetagem de Sessão Efêmera (Session Binding)
  * Banco Residência Médica
- * 
+ *
  * Garante que apenas questões legitimamente entregues ao aluno naquela página
  * possam ter seus gabaritos e comentários pré-carregados pelo /api/questions/solve-batch.
- * Qualquer tentativa externa de solicitar IDs arbitrários ou sem ticket é sumariamente rejeitada.
+ * Utiliza derivação de chave HKDF-SHA256 com separação criptográfica de domínio.
  */
 
-function getTicketSecret(): string {
+function deriveTicketDomainSecret(masterSecret: string): Buffer {
+  return Buffer.from(
+    crypto.hkdfSync(
+      'sha256',
+      Buffer.from(masterSecret, 'utf8'),
+      Buffer.from('bancoresidencia-hkdf-domain-salt-v1', 'utf8'),
+      Buffer.from('session-ticket-hmac-v1', 'utf8'),
+      32
+    )
+  );
+}
+
+function getTicketHmacKey(): Buffer {
   const secret = process.env.GUEST_QUOTA_SECRET || process.env.SUPABASE_SERVICE_ROLE_KEY;
   if (!secret) {
     if (process.env.NODE_ENV === 'production') {
       throw new Error('GUEST_QUOTA_SECRET ou SUPABASE_SERVICE_ROLE_KEY obrigatório em produção.');
     }
-    return 'bancoresidencia-session-ticket-secret-key-32b';
+    return deriveTicketDomainSecret('bancoresidencia-session-ticket-secret-key-32b');
   }
-  return secret;
+  return deriveTicketDomainSecret(secret);
 }
 
 export interface SessionTicketPayload {
@@ -27,7 +39,7 @@ export interface SessionTicketPayload {
 }
 
 /**
- * Gera um ticket assinado (HMAC-SHA256) com validade curta (padrão: 3 minutos)
+ * Gera um ticket assinado (HMAC-SHA256 c/ HKDF) com validade curta (padrão: 3 minutos)
  */
 export function generateSessionTicket(
   userId: string,
@@ -42,7 +54,7 @@ export function generateSessionTicket(
 
   const payloadB64 = Buffer.from(JSON.stringify(payload)).toString('base64url');
   const signature = crypto
-    .createHmac('sha256', getTicketSecret())
+    .createHmac('sha256', getTicketHmacKey())
     .update(payloadB64)
     .digest('base64url');
 
@@ -77,7 +89,7 @@ export function verifySessionTicket(
 
   try {
     const expectedSignature = crypto
-      .createHmac('sha256', getTicketSecret())
+      .createHmac('sha256', getTicketHmacKey())
       .update(payloadB64)
       .digest('base64url');
 

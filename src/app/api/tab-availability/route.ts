@@ -98,11 +98,11 @@ export async function GET() {
 /**
  * POST /api/tab-availability
  * Atualiza o status de bloqueio das abas.
- * Restrito estritamente a administradores e curadores.
+ * Restrito estritamente a superadministradores (curadores não podem desligar abas da plataforma).
  */
 export async function POST(req: NextRequest) {
   try {
-    const auth = await verifyAdminSession(req);
+    const auth = await verifyAdminSession(req, { requireStrictAdmin: true });
     if (!auth.authorized) {
       return NextResponse.json(
         { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },

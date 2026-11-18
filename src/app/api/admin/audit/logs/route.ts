@@ -1,14 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
-import { sanitizePostgrestTerm } from '@/utils/security';
+import { sanitizePostgrestTerm, safeErrorMessage } from '@/utils/security';
 
 export const dynamic = 'force-dynamic';
 
 export async function GET(req: NextRequest) {
   try {
-    // 1. Verificação de sessão administrativa estrita
-    const auth = await verifyAdminSession(req);
+    // 1. Verificação de sessão administrativa estrita (somente admin/superadmin acessam logs forenses e PII)
+    const auth = await verifyAdminSession(req, { requireStrictAdmin: true });
     if (!auth.authorized) {
       return NextResponse.json(
         { success: false, error: auth.error || 'Acesso restrito a administradores.' },
@@ -78,8 +78,7 @@ export async function GET(req: NextRequest) {
       totalPages
     });
   } catch (err: unknown) {
-    const msg = err instanceof Error ? err.message : 'Erro interno do servidor';
     console.error('[API Audit Logs] Exceção:', err);
-    return NextResponse.json({ success: false, error: msg }, { status: 500 });
+    return NextResponse.json({ success: false, error: safeErrorMessage(err, 'Erro interno ao consultar auditoria.') }, { status: 500 });
   }
 }

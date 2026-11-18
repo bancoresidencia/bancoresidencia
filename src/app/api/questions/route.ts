@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { createClient as createPublicSupabaseClient } from '@supabase/supabase-js';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 import {
@@ -11,6 +12,11 @@ import {
   getClinicalSearchTerms,
   REVALIDA_POSTGREST_FILTER
 } from '@/services/questionService';
+import {
+  sanitizePostgrestQuotedValue,
+  validateQuestionId,
+  safeErrorMessage
+} from '@/utils/security';
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
 import {
@@ -25,6 +31,21 @@ import { isSqliteAvailable, queryQuestionsFromSqlite, queryFacetsFromSqlite } fr
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
+
+let cachedPublicSupabaseClient: ReturnType<typeof createPublicSupabaseClient> | null = null;
+
+function getQuestionsReadClient(isPrivileged: boolean, supabaseAdmin: ReturnType<typeof getSupabaseAdmin>) {
+  if (isPrivileged) return supabaseAdmin;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!url || !anonKey) return supabaseAdmin;
+  if (!cachedPublicSupabaseClient) {
+    cachedPublicSupabaseClient = createPublicSupabaseClient(url, anonKey, {
+      auth: { autoRefreshToken: false, persistSession: false }
+    });
+  }
+  return cachedPublicSupabaseClient;
+}
 
 const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, difficulty, type, is_anulada, statement, options, images';
 
@@ -187,43 +208,57 @@ const facetsCache = new Map<string, FacetsCacheEntry>();
 const FACETS_CACHE_TTL_MS = 5 * 60 * 1000;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function applyQuestionFilters(query: any, filters: ExtendedFilterState, questionIds?: string[]) {
-  // Regra de Gabarito: Todas as 132.965 questões presentes por padrão
+function applyQuestionFilters(query: any, filters: ExtendedFilterState, questionIds?: string[], isPrivileged = false) {
+  // Regra de Gabarito: views públicas expõem has_gabarito/is_anulada (sem correct_answer bruto)
   if (filters.gabaritoStatus === 'sem_gabarito') {
-    query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
+    if (isPrivileged) {
+      query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
+    } else {
+      query = query.eq('has_gabarito', false).eq('is_anulada', false);
+    }
   } else if (filters.gabaritoStatus === 'com_gabarito') {
-    query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+    if (isPrivileged) {
+      query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+    } else {
+      query = query.or('has_gabarito.eq.true,is_anulada.eq.true');
+    }
   }
 
   // Se IDs específicos foram solicitados (ex: página paginada de Resolvidas/Acertadas/Erradas ou caderno)
   if (questionIds && questionIds.length > 0) {
-    query = query.in('id', questionIds);
+    const safeIds = questionIds.filter(validateQuestionId);
+    query = query.in('id', safeIds.length > 0 ? safeIds : ['00000000-0000-0000-0000-000000000000']);
     return query;
   }
 
   // Filtro de Status do Aluno via IDs diretos com limites seguros de PostgREST
   if (filters.status === 'Resolvidas') {
-    if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      query = query.in('id', filters.userSolvedIds.slice(0, 1000));
+    const safeSolved = (filters.userSolvedIds || []).filter(validateQuestionId).slice(0, 1000);
+    if (safeSolved.length > 0) {
+      query = query.in('id', safeSolved);
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Acertadas') {
-    if (filters.userCorrectIds && filters.userCorrectIds.length > 0) {
-      query = query.in('id', filters.userCorrectIds.slice(0, 1000));
+    const safeCorrect = (filters.userCorrectIds || []).filter(validateQuestionId).slice(0, 1000);
+    if (safeCorrect.length > 0) {
+      query = query.in('id', safeCorrect);
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Erradas') {
-    if (filters.userWrongIds && filters.userWrongIds.length > 0) {
-      query = query.in('id', filters.userWrongIds.slice(0, 1000));
+    const safeWrong = (filters.userWrongIds || []).filter(validateQuestionId).slice(0, 1000);
+    if (safeWrong.length > 0) {
+      query = query.in('id', safeWrong);
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Não vistas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      const safePruneIds = filters.userSolvedIds.slice(0, 200);
-      query = query.not('id', 'in', `(${safePruneIds.join(',')})`);
+      const safePruneIds = filters.userSolvedIds.filter(validateQuestionId).slice(0, 200);
+      if (safePruneIds.length > 0) {
+        query = query.not('id', 'in', `(${safePruneIds.join(',')})`);
+      }
     }
   }
 
@@ -274,12 +309,15 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
   // 3. Modalidade (com suporte refinado a Revalida e Residência)
   if (filters.modalidades && filters.modalidades.length > 0) {
     const hasRevalida = filters.modalidades.some((m: string) => m.toLowerCase().includes('revalida'));
-    const otherModalidades = filters.modalidades.filter((m: string) => !m.toLowerCase().includes('revalida'));
+    const otherModalidades = filters.modalidades
+      .filter((m: string) => !m.toLowerCase().includes('revalida'))
+      .map((m: string) => sanitizePostgrestQuotedValue(m))
+      .filter(Boolean);
 
     if (hasRevalida && otherModalidades.length === 0) {
       query = query.or(REVALIDA_POSTGREST_FILTER);
     } else if (hasRevalida && otherModalidades.length > 0) {
-      const otherIn = otherModalidades.join(',');
+      const otherIn = otherModalidades.map((m: string) => `"${m}"`).join(',');
       query = query.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
     } else {
       const isOnlyDefaultResidencia =
@@ -361,12 +399,21 @@ export async function POST(req: NextRequest) {
       questionIds: rawQuestionIds
     } = body;
 
-    // Blindagem Anti-Scraping: teto estrito de paginação (máx 50 questões/página e máx 100 IDs explícitos)
+    // Blindagem Anti-Scraping: teto estrito de paginação (máx 50 questões/página e máx 100 IDs explícitos validados)
     const page = Math.max(1, Math.floor(Number(rawPage) || 1));
     const pageSize = Math.min(50, Math.max(1, Math.floor(Number(rawPageSize) || 20)));
     const questionIds = Array.isArray(rawQuestionIds)
-      ? rawQuestionIds.filter((id): id is string => typeof id === 'string').slice(0, 100)
+      ? rawQuestionIds.filter((id: unknown): id is string => typeof id === 'string' && validateQuestionId(id)).slice(0, 100)
       : undefined;
+    if (Array.isArray(filters.userSolvedIds)) {
+      filters.userSolvedIds = filters.userSolvedIds.filter((id: unknown): id is string => typeof id === 'string' && validateQuestionId(id));
+    }
+    if (Array.isArray(filters.userCorrectIds)) {
+      filters.userCorrectIds = filters.userCorrectIds.filter((id: unknown): id is string => typeof id === 'string' && validateQuestionId(id));
+    }
+    if (Array.isArray(filters.userWrongIds)) {
+      filters.userWrongIds = filters.userWrongIds.filter((id: unknown): id is string => typeof id === 'string' && validateQuestionId(id));
+    }
 
     // Identificação de usuário para amarração segura de sessão (Session Binding)
     let authenticatedUserId: string | undefined;
@@ -561,13 +608,14 @@ export async function POST(req: NextRequest) {
       }
 
       // 3. Fallback Resiliente (Pilar 2 da Arquitetura Híbrida):
-      // Projeta apenas colunas mínimas de hierarquia (sem texto de enunciado/opções/imagens)
+      // Projeta apenas colunas mínimas de hierarquia (sem texto de enunciado/opções/imagens) via cliente público
+      const publicFacetClient = getQuestionsReadClient(false, supabaseAdmin);
       const targetTable = resolveTargetTable(filters);
       const { data: facetRows, count: exactFacetCount, error: facetErr } = await executeResilientQuery(async (tbl) => {
-        let facetQuery = supabaseAdmin
+        let facetQuery = publicFacetClient
           .from(tbl)
           .select('especialidade, tema, foco, subfoco', { count: 'exact' });
-        facetQuery = applyQuestionFilters(facetQuery, filtersWithoutClinical);
+        facetQuery = applyQuestionFilters(facetQuery, filtersWithoutClinical, undefined, false);
         return await facetQuery.limit(4000);
       }, targetTable, filters.modalidades);
       if (facetErr) {
@@ -630,6 +678,7 @@ export async function POST(req: NextRequest) {
         isPrivilegedIncludeGabarito = true;
       }
     }
+    const questionsReadClient = getQuestionsReadClient(isPrivilegedIncludeGabarito, supabaseAdmin);
     if (isSqliteAvailable()) {
       try {
         const localResult = queryQuestionsFromSqlite({
@@ -693,14 +742,17 @@ export async function POST(req: NextRequest) {
       if (hasOtherFilters) {
         const targetTable = resolveTargetTable(filters, isPrivilegedIncludeGabarito);
         const { data, count, error } = await executeResilientQuery(async (tbl) => {
-          let q = supabaseAdmin.from(tbl).select(selectCols, { count: 'exact' });
+          let q = questionsReadClient.from(tbl).select(selectCols, { count: 'exact' });
           const safeTargetIds = targetStatusIds.slice(0, 1000);
-          q = applyQuestionFilters(q, filters, safeTargetIds);
+          q = applyQuestionFilters(q, filters, safeTargetIds, isPrivilegedIncludeGabarito);
           return await q.range(from, to);
         }, targetTable, filters.modalidades);
         if (error) {
           console.error('[/api/questions] Erro ao buscar questões com status e filtros cruzados:', error.message || error);
-          return NextResponse.json({ questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message }, { status: 500 });
+          return NextResponse.json(
+            { questions: [], total: 0, page, pageSize, totalPages: 0, error: safeErrorMessage(error, 'Erro interno ao consultar questões.') },
+            { status: 500 }
+          );
         }
 
         const realTotal = typeof count === 'number' ? count : (data || []).length;
@@ -732,13 +784,16 @@ export async function POST(req: NextRequest) {
 
       const targetTable = resolveTargetTable(filters, isPrivilegedIncludeGabarito);
       const { data, error } = await executeResilientQuery(async (tbl) => {
-        let q = supabaseAdmin.from(tbl).select(selectCols);
-        q = applyQuestionFilters(q, filters, pageTargetIds);
+        let q = questionsReadClient.from(tbl).select(selectCols);
+        q = applyQuestionFilters(q, filters, pageTargetIds, isPrivilegedIncludeGabarito);
         return await q;
       }, targetTable, filters.modalidades);
       if (error) {
         console.error('[/api/questions] Erro ao buscar questões paginadas por status:', error.message || error);
-        return NextResponse.json({ questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message }, { status: 500 });
+        return NextResponse.json(
+          { questions: [], total: 0, page, pageSize, totalPages: 0, error: safeErrorMessage(error, 'Erro interno ao consultar questões.') },
+          { status: 500 }
+        );
       }
 
       let questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow, isPrivilegedIncludeGabarito));
@@ -781,8 +836,8 @@ export async function POST(req: NextRequest) {
 
     // Constrói a busca principal com fallback resiliente multi-modalidade
     const dataQueryPromise = executeResilientQuery(async (tbl) => {
-      let q = supabaseAdmin.from(tbl).select(selectCols);
-      q = applyQuestionFilters(q, filters, questionIds);
+      let q = questionsReadClient.from(tbl).select(selectCols);
+      q = applyQuestionFilters(q, filters, questionIds, isPrivilegedIncludeGabarito);
       if (filters.aleatorizar) {
         if (questionIds && questionIds.length > 0) {
           q = q.range(from, queryTo);
@@ -847,8 +902,8 @@ export async function POST(req: NextRequest) {
           // Executa contagem com fallback resiliente e timeout de segurança de 1.200ms
           const countWithTimeout = Promise.race([
             executeResilientQuery(async (tbl) => {
-              let q = supabaseAdmin.from(tbl).select('id', { count: 'exact', head: true });
-              q = applyQuestionFilters(q, filters, questionIds);
+              let q = questionsReadClient.from(tbl).select('id', { count: 'exact', head: true });
+              q = applyQuestionFilters(q, filters, questionIds, isPrivilegedIncludeGabarito);
               return await q;
             }, targetTable, filters.modalidades).then(({ count, error: countErr }) => {
               if (!countErr && typeof count === 'number') return count;
@@ -874,9 +929,9 @@ export async function POST(req: NextRequest) {
     total = calculatedTotal;
 
     if (error) {
-      console.error('[/api/questions] Erro no Supabase Admin:', error.message || error);
+      console.error('[/api/questions] Erro ao consultar questões:', error.message || error);
       return NextResponse.json(
-        { questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message },
+        { questions: [], total: 0, page, pageSize, totalPages: 0, error: safeErrorMessage(error, 'Erro interno ao consultar banco de questões.') },
         { status: 500 }
       );
     }
@@ -926,8 +981,10 @@ export async function POST(req: NextRequest) {
       sessionTicket
     });
   } catch (err: unknown) {
-    const msg = err instanceof Error ? err.message : 'Erro interno do servidor';
     console.error('[/api/questions] Exceção:', err);
-    return NextResponse.json({ questions: [], total: 0, page: 1, pageSize: 50, totalPages: 0, error: msg }, { status: 500 });
+    return NextResponse.json(
+      { questions: [], total: 0, page: 1, pageSize: 50, totalPages: 0, error: safeErrorMessage(err, 'Erro interno do servidor.') },
+      { status: 500 }
+    );
   }
 }

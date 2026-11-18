@@ -1,8 +1,16 @@
 import assert from 'node:assert';
 import crypto from 'node:crypto';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import { DatabaseSync } from 'node:sqlite';
 import {
   sanitizePostgrestTerm,
+  sanitizePostgrestQuotedValue,
   isPrivilegedRole,
+  isStrictAdminRole,
+  extractTrustedClientIpFromHeaders,
+  deriveDomainSecret,
   validatePasswordRequirements,
   timingSafeEqualStrings
 } from '../src/utils/security.ts';
@@ -12,16 +20,19 @@ import {
 } from '../src/utils/securityTickets.ts';
 import {
   isPrivateOrReservedIp,
-  validateIcalUrlFormat
+  validateIcalUrlFormat,
+  validateExternalImageUrl
 } from '../src/utils/urlSecurity.ts';
 import {
   injectZeroWidthWatermark,
   decodeZeroWidthWatermark
 } from '../src/utils/watermark.ts';
 import { sanitizeMedicalText } from '../src/utils/textSanitizer.ts';
+import { sanitizeMermaidSvg } from '../src/utils/svgSanitizer.ts';
 import { validateReferralCode } from '../src/config/ambassadorConfig.ts';
 import {
   parseZipEntries,
+  parseAnkiSqliteBuffer,
   parseUniversalFlashcardFile
 } from '../src/lib/flashcards/ankiPackageParser.ts';
 
@@ -30,7 +41,7 @@ console.log('🛡️  SUÍTE DE TESTES DE SEGURANÇA — SIMULAÇÃO REAL DE ATA
 console.log('================================================================\n');
 
 let passedTests = 0;
-const totalTests = 16;
+const totalTests = 23;
 
 // ------------------------------------------------------------------------------
 // ATAQUE 1: Scraping e Forja de Parâmetro includeGabarito=true por Anônimo
@@ -566,6 +577,176 @@ console.log('[ATAQUE 16] Defesa Real contra ZIP Bomb e Recursão Infinita (ankiP
   console.log('   ✓ ATAQUE NEUTRALIZADO: ZIP Bombs e pacotes .apkg recursivos foram interceptados e rejeitados.\n');
   passedTests++;
 }
+
+// ------------------------------------------------------------------------------
+// ATAQUE 17: Escalação Horizontal/Vertical de Curador para Superadmin (CRIT-04)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 17] Segregação Estrita de RBAC: Curador vs Superadmin (isStrictAdminRole)');
+{
+  assert.strictEqual(isPrivilegedRole('curador'), true, 'Curador deve acessar rotas de curadoria médica');
+  assert.strictEqual(isPrivilegedRole('curator'), true, 'Curator deve acessar rotas de curadoria médica');
+  assert.strictEqual(isStrictAdminRole('curador'), false, 'Curador NÃO pode possuir privilégio de superadmin');
+  assert.strictEqual(isStrictAdminRole('curator'), false, 'Curator NÃO pode possuir privilégio de superadmin');
+  assert.strictEqual(isStrictAdminRole('student'), false, 'Estudante NÃO pode possuir privilégio de superadmin');
+  assert.strictEqual(isStrictAdminRole('admin'), true, 'Admin deve ser aceito em rotas estritas');
+  assert.strictEqual(isStrictAdminRole('superadmin'), true, 'Superadmin deve ser aceito em rotas estritas');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Contas de curador estão impedidas de desligar abas, ler PII de auditoria ou simular comissões.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 18: PostgREST .or() Quote Breakout em Árvore Clínica (CRIT-03)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 18] Bloqueio Real de Escape de Aspas/Parênteses em .or() (sanitizePostgrestQuotedValue)');
+{
+  const maliciousSpec = 'Cirurgia\\" ),correct_answer.eq.A,especialidade.in.("Pediatria';
+  const safeVal = sanitizePostgrestQuotedValue(maliciousSpec);
+  assert(!safeVal.includes('"'), 'Aspas duplas devem ser eliminadas do item interpolado em .or()');
+  assert(!safeVal.includes('\\'), 'Barras invertidas de escape devem ser eliminadas');
+  assert(!safeVal.includes('(') && !safeVal.includes(')'), 'Parênteses devem ser eliminados');
+  assert(!safeVal.includes('.eq.') && !safeVal.includes('.in.'), 'Operadores PostgREST (.eq., .in.) devem ser eliminados');
+
+  // Termo médico legítimo com vírgula, hífen, barra e acentuação deve permanecer intacto dentro das aspas
+  const legitimateFoco = 'Fígado, Vias Biliares e Pâncreas / Pré-Eclâmpsia';
+  assert.strictEqual(sanitizePostgrestQuotedValue(legitimateFoco), legitimateFoco);
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Escape de sintaxe PostgREST em filtros compostos .or() desarmado sem afetar termos médicos.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 19: Falsificação de X-Vercel-Forwarded-For / X-Real-IP fora da Vercel (MED-05)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 19] Anti-Spoofing de Cabeçalhos de IP em Runtime Docker/VPS (extractTrustedClientIpFromHeaders)');
+{
+  const spoofedHeaders = new Headers({
+    'x-vercel-forwarded-for': '1.2.3.4',
+    'x-real-ip': '5.6.7.8',
+    'x-forwarded-for': '9.9.9.9, 203.0.113.77'
+  });
+
+  // Fora da Vercel (Docker/Cloud Run/VPS), cabeçalhos falsificados pelo cliente são ignorados
+  const ipOutsideVercel = extractTrustedClientIpFromHeaders(spoofedHeaders, { isVercelRuntime: false });
+  assert.strictEqual(
+    ipOutsideVercel,
+    '203.0.113.77',
+    'Fora da Vercel, deve ignorar x-vercel-forwarded-for/x-real-ip e usar apenas o último salto confiável de XFF'
+  );
+
+  // Na Vercel (onde a borda sobrescreve x-vercel-forwarded-for), prioriza o cabeçalho da plataforma
+  const ipOnVercel = extractTrustedClientIpFromHeaders(spoofedHeaders, { isVercelRuntime: true });
+  assert.strictEqual(ipOnVercel, '1.2.3.4');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Rotação de X-Vercel-Forwarded-For e X-Real-IP neutralizada fora da borda Vercel.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 20: Bypass SSRF via Normalização Hexadecimal WHATWG URL de IPv6 (HIGH-03)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 20] Bloqueio Real de IPv6 Hex-Normalized, NAT64, Teredo e 6to4 (urlSecurity.ts)');
+{
+  // Quando new URL('http://[::ffff:169.254.169.254]') é executado, o Node converte para '::ffff:a9fe:a9fe'
+  assert.strictEqual(isPrivateOrReservedIp('::ffff:a9fe:a9fe'), true, 'AWS IMDS via hex IPv4-mapped IPv6 deve ser bloqueado');
+  assert.strictEqual(isPrivateOrReservedIp('::ffff:7f00:1'), true, 'Loopback via hex IPv4-mapped IPv6 deve ser bloqueado');
+  assert.strictEqual(isPrivateOrReservedIp('0:0:0:0:0:0:0:1'), true, 'Loopback IPv6 expandido deve ser bloqueado');
+  assert.strictEqual(isPrivateOrReservedIp('::7f00:1'), true, 'IPv4-compatible IPv6 loopback deve ser bloqueado');
+  assert.strictEqual(isPrivateOrReservedIp('64:ff9b::a9fe:a9fe'), true, 'NAT64 apontando para metadata deve ser bloqueado');
+  assert.strictEqual(isPrivateOrReservedIp('2001::1'), true, 'Túnel Teredo 2001::/32 deve ser bloqueado');
+  assert.strictEqual(isPrivateOrReservedIp('2002:7f00:1::1'), true, 'Túnel 6to4 embutindo 127.0.0.1 deve ser bloqueado');
+  assert.strictEqual(isPrivateOrReservedIp('2606:4700:4700::1111'), false, 'IPv6 público legítimo (Cloudflare DNS) deve ser permitido');
+
+  const hexMappedUrlCheck = await validateExternalImageUrl('https://[::ffff:169.254.169.254]/latest/meta-data/');
+  assert.strictEqual(hexMappedUrlCheck.allowed, false, 'validateExternalImageUrl deve bloquear [::ffff:169.254.169.254]');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Todas as variantes IPv6 (hex-mapped, NAT64, Teredo, 6to4 e expandida) foram barradas.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 21: Bomba de View / CTE Recursiva em SQLite Anki .apkg (HIGH-04)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 21] Defesa Real contra SQLite View / Trigger / CTE Bomb (ankiPackageParser.ts)');
+{
+  const maliciousDbPath = path.join(os.tmpdir(), `malicious_anki_test_${Date.now()}.db`);
+  try {
+    const db = new DatabaseSync(maliciousDbPath);
+    db.exec(`
+      CREATE VIEW notes AS
+      WITH RECURSIVE bomb(x) AS (
+        SELECT 1
+        UNION ALL
+        SELECT x + 1 FROM bomb WHERE x < 10000000
+      )
+      SELECT x AS id, '' AS tags, 'front\x1fback' AS flds FROM bomb;
+    `);
+    db.close();
+
+    const maliciousBuffer = fs.readFileSync(maliciousDbPath);
+    assert.throws(
+      () => parseAnkiSqliteBuffer(maliciousBuffer),
+      /views, triggers ou tabelas virtuais não são permitidos/i,
+      'Banco SQLite contendo VIEW maliciosa deve ser rejeitado antes de qualquer SELECT em notes'
+    );
+  } finally {
+    if (fs.existsSync(maliciousDbPath)) fs.unlinkSync(maliciousDbPath);
+  }
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: SQLite malicioso com VIEW/CTE recursiva bloqueado via inspeção de sqlite_master e trusted_schema=OFF.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 22: Bypass de Sanitizador SVG via <svg/onload>, SMIL <animate> e Entidades HTML (MED-03)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 22] Sanitização Estrita de Diagramas SVG contra Vetores DOM XSS (svgSanitizer.ts)');
+{
+  const maliciousSvg = `
+    <svg/onload="alert(1)" viewBox="0 0 100 100">
+      <animate onbegin="alert(2)" attributeName="x" dur="1s" />
+      <set attributeName="onload" to="alert(3)" />
+      <foreignObject><iframe srcdoc="<script>alert(4)</script>"></iframe></foreignObject>
+      <a href="&#106;&#97;vascript:alert(5)" xlink:href="data:text/html;base64,PHNjcmlwdD5hbGVydCg2KTwvc2NyaXB0Pg==">
+        <g class="node"><rect width="80" height="40"/><text>Conduta Clínica</text></g>
+      </a>
+    </svg>
+  `;
+
+  const cleanSvg = sanitizeMermaidSvg(maliciousSvg);
+  assert(!/onload/i.test(cleanSvg), 'Atributo onload (mesmo colado com barra <svg/onload>) deve ser removido');
+  assert(!/<animate/i.test(cleanSvg), 'Tag SMIL <animate> deve ser removida');
+  assert(!/<set\b/i.test(cleanSvg), 'Tag SMIL <set> deve ser removida');
+  assert(!/<iframe/i.test(cleanSvg), 'Tag <iframe> deve ser removida');
+  assert(!/javascript:/i.test(cleanSvg) && !/&#106;/i.test(cleanSvg), 'URI javascript: ofuscada com entidades HTML deve ser removida');
+  assert(!/data:text\/html/i.test(cleanSvg), 'URI data:text/html deve ser removida');
+  assert(cleanSvg.includes('Conduta Clínica'), 'Conteúdo legítimo do diagrama deve ser preservado');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Todos os vetores de bypass SVG (<svg/onload>, SMIL e entidades HTML) foram neutralizados.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 23: Isolamento Criptográfico de Chaves por Domínio via HKDF-SHA256 (LOW-01)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 23] Isolamento Criptográfico de Subchaves HKDF-SHA256 (deriveDomainSecret)');
+{
+  const master = 'master-secret-shared-fallback-test-2026';
+  const kTicket = deriveDomainSecret(master, 'session-ticket-hmac-v1');
+  const kQuota = deriveDomainSecret(master, 'guest-quota-cookie-hmac-v1');
+  const kCalendarEnc = deriveDomainSecret(master, 'google-calendar-aes256gcm-v1');
+  const kCalendarState = deriveDomainSecret(master, 'google-calendar-oauth-state-v1');
+
+  assert.strictEqual(kTicket.byteLength, 32);
+  assert.notStrictEqual(kTicket.toString('hex'), kQuota.toString('hex'));
+  assert.notStrictEqual(kTicket.toString('hex'), kCalendarEnc.toString('hex'));
+  assert.notStrictEqual(kCalendarEnc.toString('hex'), kCalendarState.toString('hex'));
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Subchaves HKDF-SHA256 são criptograficamente independentes entre domínios.\n');
+  passedTests++;
+}
+
+assert.strictEqual(passedTests, totalTests, `Esperados ${totalTests} testes aprovados, obtidos ${passedTests}`);
 
 // ------------------------------------------------------------------------------
 // RESULTADO FINAL CONSOLIDADO

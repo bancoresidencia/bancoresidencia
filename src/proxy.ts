@@ -1,6 +1,10 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { updateSession } from '@/lib/supabase/middleware';
-import { isPrivilegedRole, timingSafeEqualStrings } from '@/utils/security';
+import {
+  isPrivilegedRole,
+  timingSafeEqualStrings,
+  extractTrustedClientIpFromHeaders
+} from '@/utils/security';
 
 // In-Memory Rate Limiter de borda com teto rígido de memória (FIFO) contra OOM / CPU DoS
 interface IpRateLimit {
@@ -13,22 +17,7 @@ const MAX_API_REQ_PER_MIN = 120;
 const MAX_RATE_LIMIT_ENTRIES = 5000;
 
 function extractTrustedClientIp(request: NextRequest): string {
-  // Prioriza cabeçalhos injetados pela plataforma (Vercel / Reverse Proxy confiável)
-  const vercelIp = request.headers.get('x-vercel-forwarded-for')?.split(',')[0]?.trim();
-  if (vercelIp) return vercelIp;
-
-  const realIp = request.headers.get('x-real-ip')?.trim();
-  if (realIp) return realIp;
-
-  const xff = request.headers.get('x-forwarded-for');
-  if (xff) {
-    const parts = xff.split(',').map((s) => s.trim()).filter(Boolean);
-    if (parts.length > 0) {
-      // Usa o último IP adicionado pelo proxy reverso quando há cadeia
-      return parts[parts.length - 1];
-    }
-  }
-  return 'unknown-ip';
+  return extractTrustedClientIpFromHeaders(request.headers);
 }
 
 function checkGlobalApiRateLimit(ip: string): boolean {
@@ -89,8 +78,8 @@ export async function proxy(request: NextRequest) {
       if (serviceRoleKey && timingSafeEqualStrings(token, serviceRoleKey)) {
         return supabaseResponse;
       }
-      // Se um Bearer JWT explícito foi fornecido sem cookies, delega validação criptográfica ao verifyAdminSession na rota
-      if (!user && token.length > 20) {
+      // Se um Bearer JWT explícito (3 segmentos) foi fornecido sem cookies, delega validação criptográfica ao verifyAdminSession na rota
+      if (!user && token.length > 20 && token.split('.').length === 3) {
         return supabaseResponse;
       }
     }

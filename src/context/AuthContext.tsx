@@ -176,7 +176,7 @@ function migrateGuestFlashcardsToUser(userId: string, supabaseClient: any) {
           localStorage.setItem(userKey, JSON.stringify(merged));
 
           const payload = guestDecks.map((d: any) => ({
-            id: d.id,
+            id: d.id === 'deck-padrao' ? `deck-padrao_${userId}` : `${d.id}_${userId.slice(0, 8)}`,
             user_id: userId,
             title: d.name || d.title,
             description: d.description || '',
@@ -208,7 +208,7 @@ function migrateGuestFlashcardsToUser(userId: string, supabaseClient: any) {
           localStorage.setItem(userKey, JSON.stringify(merged));
 
           const payload = guestCards.map((c: any) => ({
-            id: c.id,
+            id: String(c.id || '').includes(userId.slice(0, 8)) ? c.id : `${c.id}_${userId.slice(0, 8)}`,
             user_id: userId,
             front: c.front,
             back: c.back,
@@ -279,6 +279,7 @@ function migrateGuestAgendaToUser(userId: string, supabaseClient: any) {
               .then(() => {}, () => {});
           }
           localStorage.removeItem('bancoresidencia_study_sessions_guest');
+          localStorage.removeItem('bancoresidencia_study_sessions');
         }
       } catch {}
     }
@@ -321,6 +322,7 @@ function migrateGuestAgendaToUser(userId: string, supabaseClient: any) {
               .then(() => {}, () => {});
           }
           localStorage.removeItem('bancoresidencia_user_scheduled_tasks_guest');
+          localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
         }
       } catch {}
     }
@@ -724,13 +726,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           localStorage.removeItem(`user_target_exam_date_${currentUserId}`);
         }
         localStorage.removeItem('bancoresidencia_user_answers');
+        localStorage.removeItem('bancoresidencia_user_answers_guest');
         localStorage.removeItem('br_bookmarked_questions');
+        localStorage.removeItem('bancoresidencia_bookmarks_guest');
+        localStorage.removeItem('bancoresidencia_folders_guest');
+        localStorage.removeItem('bancoresidencia_lists_guest');
         localStorage.removeItem('bancoresidencia_flashcards_progress_v1');
         localStorage.removeItem('bancoresidencia_custom_flashcard_decks');
         localStorage.removeItem('bancoresidencia_personalized_flashcard_decks');
         localStorage.removeItem('bancoresidencia_user_created_flashcards');
+        localStorage.removeItem('bancoresidencia_user_created_cards');
         localStorage.removeItem('bancoresidencia_user_card_edits');
+        localStorage.removeItem('bancoresidencia_user_created_study_materials');
         localStorage.removeItem('bancoresidencia_daily_review_logs');
+        localStorage.removeItem('bancoresidencia_daily_review_logs_v1');
+        localStorage.removeItem('bancoresidencia_last_flashcard_session');
+        localStorage.removeItem('bancoresidencia_last_read_summary');
+        localStorage.removeItem('bancoresidencia_study_sessions');
+        localStorage.removeItem('bancoresidencia_study_sessions_guest');
+        localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
+        localStorage.removeItem('bancoresidencia_user_scheduled_tasks_guest');
         localStorage.removeItem('bancoresidencia_real_calendar_events');
         localStorage.removeItem('bancoresidencia_google_calendar_connected');
         localStorage.removeItem('bancoresidencia_google_access_token');
@@ -739,6 +754,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         localStorage.removeItem('bancoresidencia_study_timer_state');
         localStorage.removeItem('user_target_exam_name');
         localStorage.removeItem('user_target_exam_date');
+
+        // Remove grifos de materiais de estudo vinculados à conta desconectada
+        if (currentUserId) {
+          const highlightPrefix = `bancoresidencia_study_highlights_user_${currentUserId}_`;
+          const keysToRemove: string[] = [];
+          for (let i = 0; i < localStorage.length; i++) {
+            const k = localStorage.key(i);
+            if (k && k.startsWith(highlightPrefix)) {
+              keysToRemove.push(k);
+            }
+          }
+          keysToRemove.forEach((k) => localStorage.removeItem(k));
+        }
+        sessionStorage.removeItem('bancoresidencia_gcal_oauth_state');
       } catch {}
     }
 

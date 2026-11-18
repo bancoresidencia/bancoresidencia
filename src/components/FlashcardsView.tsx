@@ -999,13 +999,13 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           onContinueLastSession={lastFlashcardSession ? handleContinueLastSession : undefined}
         />
 
-        {/* Seletor de Modo: Cartões do BR vs. Cartões Originais */}
-        <div className="flex items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 pb-2 pt-1">
-          <div className="flex items-center gap-1.5">
+        {/* Seletor de Modo: Cartões do BR vs. Cartões Originais vs. Personalizados */}
+        <div className="flex items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 pb-2 pt-1 max-w-full overflow-x-auto scrollbar-none">
+          <div className="flex items-center gap-1.5 min-w-max">
             <button
               type="button"
               onClick={() => setFlashcardTab('br')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${flashcardTab === 'br'
+              className={`shrink-0 whitespace-nowrap px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer touch-manipulation inline-flex items-center gap-1.5 sm:gap-2 ${flashcardTab === 'br'
                   ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
                   : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
                 }`}
@@ -1019,7 +1019,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             <button
               type="button"
               onClick={() => setFlashcardTab('originais')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${flashcardTab === 'originais'
+              className={`shrink-0 whitespace-nowrap px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer touch-manipulation inline-flex items-center gap-1.5 sm:gap-2 ${flashcardTab === 'originais'
                   ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
                   : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
                 }`}
@@ -1033,7 +1033,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             <button
               type="button"
               onClick={() => setFlashcardTab('personalizados')}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${flashcardTab === 'personalizados'
+              className={`shrink-0 whitespace-nowrap px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer touch-manipulation inline-flex items-center gap-1.5 sm:gap-2 ${flashcardTab === 'personalizados'
                   ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
                   : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
                 }`}
@@ -1816,7 +1816,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
 
       {/* 4. BARRA FLUTUANTE DE ESTUDO MULTI-SELEÇÃO (QUANDO ITENS SÃO SELECIONADOS) */}
       {mode === 'flashcards' && totalSelectionCount > 0 && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 bg-zinc-900/95 dark:bg-zinc-800/95 text-white backdrop-blur-md px-5 py-3 rounded-2xl shadow-2xl border border-zinc-700/60 flex items-center gap-4 animate-in slide-in-from-bottom-5 duration-200 max-w-[90vw]">
+        <div className="fixed bottom-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:bottom-6 left-1/2 -translate-x-1/2 z-45 bg-zinc-900/95 dark:bg-zinc-800/95 text-white backdrop-blur-md px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-2xl border border-zinc-700/60 flex flex-wrap items-center justify-between sm:justify-center gap-2.5 sm:gap-4 animate-in slide-in-from-bottom-5 duration-200 w-[calc(100vw-24px)] sm:w-auto max-w-xl">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-xs sm:text-sm font-bold whitespace-nowrap">

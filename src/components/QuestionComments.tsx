@@ -136,8 +136,13 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
 
     setIsSubmitting(true);
 
+    const uniqueCommentId =
+      typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+        ? `comm_${crypto.randomUUID()}`
+        : `comm_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+
     const commentItem: StudentComment = {
-      id: `comm_${Date.now()}_${Math.random().toString(36).slice(2, 7)}`,
+      id: uniqueCommentId,
       questionId,
       userId: currentUser.id,
       userName: currentUser.name || 'Aluno(a)',
@@ -168,7 +173,9 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
           }
         ]);
         if (error) {
-          disableRemoteComments();
+          if (error.code === '42P01' || error.message?.includes('does not exist')) {
+            disableRemoteComments();
+          }
         }
       } catch {
         disableRemoteComments();
@@ -196,19 +203,28 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
     setComments(updated);
     persistLocally(updated);
 
-    // Tenta atualizar no Supabase se houver tabela disponível
+    // Atualiza curtida de forma atômica via RPC (impede manipulação de contador por qualquer usuário)
     if (!isRemoteCommentsDisabled()) {
       try {
-        const target = updated.find((c) => c.id === commentId);
-        if (target) {
-          const { error } = await supabase
-            .from('question_comments')
-            .update({ likes: target.likes })
-            .eq('id', commentId);
-          if (error) disableRemoteComments();
+        const { data: rpcRes, error } = await supabase.rpc('toggle_question_comment_like', {
+          p_comment_id: commentId
+        });
+        if (!error && rpcRes && typeof rpcRes === 'object') {
+          const typed = rpcRes as { success?: boolean; likes?: number; liked?: boolean };
+          if (typed.success && typeof typed.likes === 'number') {
+            setComments((prev) => {
+              const synced = prev.map((c) =>
+                c.id === commentId ? { ...c, likes: typed.likes!, isLiked: Boolean(typed.liked) } : c
+              );
+              persistLocally(synced);
+              return synced;
+            });
+          }
+        } else if (error && (error.code === '42P01' || error.message?.includes('question_comments'))) {
+          disableRemoteComments();
         }
       } catch {
-        disableRemoteComments();
+        // mantém atualização otimista local
       }
     }
   };
@@ -221,9 +237,9 @@ export const QuestionComments: React.FC<QuestionCommentsProps> = ({
     if (!isRemoteCommentsDisabled()) {
       try {
         const { error } = await supabase.from('question_comments').delete().eq('id', commentId);
-        if (error) disableRemoteComments();
+        if (error && error.code === '42P01') disableRemoteComments();
       } catch {
-        disableRemoteComments();
+        // mantém exclusão local
       }
     }
   };

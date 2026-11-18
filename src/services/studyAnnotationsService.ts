@@ -86,17 +86,26 @@ export const studyAnnotationsService = {
     highlight: StudyHighlight,
     userId?: string | null
   ): StudyHighlight[] {
+    const safeHighlight: StudyHighlight = {
+      ...highlight,
+      id:
+        highlight.id && highlight.id.length > 24
+          ? highlight.id
+          : typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+          ? `hl-${crypto.randomUUID()}`
+          : `hl-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`
+    };
     const current = this.loadMaterialHighlights(materialId, userId);
     const filtered = current.filter(
       (h) =>
-        h.id !== highlight.id &&
+        h.id !== safeHighlight.id &&
         !(
-          h.textQuote.toLowerCase() === highlight.textQuote.toLowerCase() &&
-          h.prefix === highlight.prefix &&
-          h.suffix === highlight.suffix
+          h.textQuote.toLowerCase() === safeHighlight.textQuote.toLowerCase() &&
+          h.prefix === safeHighlight.prefix &&
+          h.suffix === safeHighlight.suffix
         )
     );
-    const updated = [highlight, ...filtered];
+    const updated = [safeHighlight, ...filtered];
     this.saveMaterialHighlights(materialId, updated, userId);
     return updated;
   },

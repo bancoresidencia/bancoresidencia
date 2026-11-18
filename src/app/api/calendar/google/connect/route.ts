@@ -1,10 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
-import { timingSafeEqualStrings } from '@/utils/security';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { safeErrorMessage } from '@/utils/security';
 import {
   exchangeGoogleCode,
   fetchGoogleAccountEmail,
-  encryptSecret
+  encryptSecret,
+  verifyCalendarOAuthStateCookie
 } from '@/services/googleCalendarServerService';
 
 export const runtime = 'nodejs';
@@ -54,10 +56,12 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'redirectUri inválido.' }, { status: 400 });
     }
 
-    // 2. Proteção OAuth CSRF: exige coincidência criptográfica entre o parâmetro state e o cookie br_gcal_oauth_state
+    // 2. Proteção OAuth CSRF: exige coincidência criptográfica entre o parâmetro state e o cookie HttpOnly assinado vinculado ao user.id
     const rawStateCookie = req.cookies.get('br_gcal_oauth_state')?.value;
-    const expectedState = rawStateCookie ? decodeURIComponent(rawStateCookie) : '';
-    if (!expectedState || typeof state !== 'string' || !timingSafeEqualStrings(state, expectedState)) {
+    if (
+      typeof state !== 'string' ||
+      !verifyCalendarOAuthStateCookie(user.id, rawStateCookie, state)
+    ) {
       return NextResponse.json(
         { error: 'Validação de segurança OAuth (state anti-CSRF) falhou ou expirou. Inicie a conexão novamente.' },
         { status: 403 }
@@ -71,7 +75,7 @@ export async function POST(req: NextRequest) {
     const accountEmail = await fetchGoogleAccountEmail(tokens.accessToken);
     const tokenExpiresAt = new Date(Date.now() + tokens.expiresIn * 1000).toISOString();
 
-    // 5. Salva no banco de dados com criptografia AES-256-GCM
+    // 5. Salva no banco de dados com criptografia AES-256-GCM (via service_role restrito ao user.id autenticado)
     const payloadToUpsert: Record<string, unknown> = {
       user_id: user.id,
       provider: 'google',
@@ -88,7 +92,8 @@ export async function POST(req: NextRequest) {
       payloadToUpsert.refresh_token = encryptSecret(tokens.refreshToken);
     }
 
-    const { error: upsertErr } = await supabase
+    const supabaseAdmin = getSupabaseAdmin();
+    const { error: upsertErr } = await supabaseAdmin
       .from('user_calendar_integrations')
       .upsert(payloadToUpsert, { onConflict: 'user_id,provider' });
 
@@ -110,7 +115,7 @@ export async function POST(req: NextRequest) {
   } catch (err: unknown) {
     console.error('[GoogleCalendarConnect] Erro:', err);
     return NextResponse.json(
-      { error: err instanceof Error ? err.message : 'Falha ao processar autorização do Google.' },
+      { error: safeErrorMessage(err, 'Falha ao processar autorização do Google.') },
       { status: 500 }
     );
   }

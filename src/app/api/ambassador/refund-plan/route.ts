@@ -1,21 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/server';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 import { requestBackendPlanRefund } from '@/services/ambassadorService';
+import { safeErrorMessage } from '@/utils/security';
 
 export async function POST(req: NextRequest) {
   try {
-    let authUser = null;
-    try {
-      const supabase = await createClient();
-      const { data: { user }, error: authError } = await supabase.auth.getUser();
-      if (!authError && user) {
-        authUser = user;
-      }
-    } catch {
-      // Falha esperada fora de escopo de cookies ou em chamadas diretas
-    }
+    const auth = await verifyStudentSession(req);
+    const authUser = auth.user;
 
-    if (!authUser) {
+    if (!auth.authorized || !authUser) {
       return NextResponse.json(
         { error: 'Acesso não autorizado: faça login para solicitar o reembolso.', success: false },
         { status: 401 }
@@ -33,7 +26,7 @@ export async function POST(req: NextRequest) {
   } catch (err: unknown) {
     console.error('Erro ao solicitar reembolso do plano de embaixador:', err);
     return NextResponse.json(
-      { error: err instanceof Error ? err.message : 'Falha ao solicitar reembolso.', success: false },
+      { error: safeErrorMessage(err, 'Falha ao solicitar reembolso.'), success: false },
       { status: 500 }
     );
   }

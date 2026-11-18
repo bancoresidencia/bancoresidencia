@@ -14,6 +14,8 @@
 /tests/
 /scripts/
 /supabase/
+public/**/*.pdf
+public/teste_*.html
 *.log
 *.sqlite
 *.db

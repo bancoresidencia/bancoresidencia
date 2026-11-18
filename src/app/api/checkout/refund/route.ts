@@ -1,15 +1,17 @@
-import { NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/server';
+import { NextRequest, NextResponse } from 'next/server';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 import { getRefundService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { syncUserSubscriptionAfterRefund } from '@/services/paymentFulfillmentService';
+import { safeErrorMessage } from '@/utils/security';
 
-export async function POST() {
+export async function POST(req: NextRequest) {
   try {
-    // 1. Validar autenticação do usuário
-    const supabase = await createClient();
-    const { data: { user }, error: authError } = await supabase.auth.getUser();
+    // 1. Validar autenticação do usuário (Bearer ou Cookie SSR)
+    const auth = await verifyStudentSession(req);
+    const user = auth.user;
 
-    if (authError || !user) {
+    if (!auth.authorized || !user) {
       return NextResponse.json(
         { error: 'Você precisa estar conectado para solicitar o reembolso.' },
         { status: 401 }
@@ -47,33 +49,46 @@ export async function POST() {
       );
     }
 
-    // 4. Executar reembolso via SDK do Mercado Pago
+    // 4. Trava atômica anti-TOCTOU (marca 'cancelled' enquanto estorno externo está em voo)
+    const lockIso = new Date().toISOString();
+    const { data: lockedOrder } = await supabaseAdmin
+      .from('orders')
+      .update({ status: 'cancelled', updated_at: lockIso })
+      .eq('id', order.id)
+      .eq('status', 'approved')
+      .select('id')
+      .maybeSingle();
+
+    if (!lockedOrder?.id) {
+      return NextResponse.json(
+        { error: 'Uma solicitação de reembolso já está em andamento para este pedido.' },
+        { status: 409 }
+      );
+    }
+
+    // 5. Executar reembolso via SDK do Mercado Pago com chave de idempotência determinística
     const refundService = getRefundService();
-    const refundResult = await refundService.create({
-      payment_id: Number(order.mp_payment_id)
-    });
+    let refundResult: { id?: string | number };
+    try {
+      refundResult = await refundService.create({
+        payment_id: Number(order.mp_payment_id),
+        requestOptions: {
+          idempotencyKey: `BR-REFUND-${order.id}`
+        }
+      });
+    } catch (mpErr) {
+      // Desfaz trava para permitir nova tentativa legítima em caso de falha transitória na API externa
+      await supabaseAdmin
+        .from('orders')
+        .update({ status: 'approved', updated_at: new Date().toISOString() })
+        .eq('id', order.id)
+        .eq('status', 'cancelled');
+      throw mpErr;
+    }
 
     const nowIso = new Date().toISOString();
 
-    // 5. Atualizar perfil do aluno para Free
-    await supabaseAdmin
-      .from('profiles')
-      .update({
-        subscription_plan: 'free',
-        subscription_status: 'refunded',
-        updated_at: nowIso
-      })
-      .eq('id', user.id);
-
-    await supabaseAdmin.auth.admin.updateUserById(user.id, {
-      app_metadata: {
-        ...user.app_metadata,
-        subscription_plan: 'free',
-        subscription_status: 'refunded'
-      }
-    });
-
-    // 6. Atualizar a ordem no banco e cancelar eventual comissão de indicação vinculada
+    // 6. Atualizar a ordem no banco como 'refunded' e cancelar eventual comissão vinculada
     await supabaseAdmin
       .from('orders')
       .update({
@@ -93,17 +108,19 @@ export async function POST() {
       // ignore
     }
 
+    // 7. Reconciliar assinatura preservando eventual pedido mais novo/ativo
+    await syncUserSubscriptionAfterRefund(user.id);
+
     return NextResponse.json({
       success: true,
-      message: 'Reembolso realizado com sucesso! O valor foi estornado e sua conta retornou ao plano gratuito.',
+      message: 'Reembolso realizado com sucesso! O valor foi estornado.',
       refundId: refundResult.id
     });
 
   } catch (error: unknown) {
     console.error('Erro ao processar reembolso:', error);
-    const errMessage = error instanceof Error ? error.message : 'Falha ao processar estorno.';
     return NextResponse.json(
-      { error: errMessage, success: false },
+      { error: safeErrorMessage(error, 'Falha ao processar estorno junto ao gateway de pagamento.'), success: false },
       { status: 500 }
     );
   }

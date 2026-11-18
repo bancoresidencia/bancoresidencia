@@ -3,19 +3,12 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 import { Maximize2, Minimize2, AlertCircle, RefreshCw, Sparkles } from 'lucide-react';
+import { sanitizeMermaidSvg } from '@/utils/svgSanitizer';
 
 interface MermaidDiagramProps {
   code: string;
   title?: string;
   className?: string;
-}
-
-function sanitizeMermaidSvg(rawSvg: string): string {
-  return rawSvg
-    .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, '')
-    .replace(/<(?:iframe|object|embed)[\s\S]*?>[\s\S]*?<\/(?:iframe|object|embed)>/gi, '')
-    .replace(/\son[a-z]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, '')
-    .replace(/(?:href|xlink:href)\s*=\s*(?:"\s*(?:javascript|vbscript|data:text\/html)[^"]*"|'\s*(?:javascript|vbscript|data:text\/html)[^']*')/gi, '');
 }
 
 export const MermaidDiagram: React.FC<MermaidDiagramProps> = ({

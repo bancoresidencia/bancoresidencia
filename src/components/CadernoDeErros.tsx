@@ -661,7 +661,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
             </button>
 
             {isFilterOpen && (
-              <div className="absolute right-0 top-full mt-2 w-64 py-1.5 bg-white dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-xl z-30 font-inter animate-in fade-in zoom-in-95 duration-100">
+              <div className="absolute left-0 md:left-auto md:right-0 top-full mt-2 w-64 max-w-[calc(100vw-32px)] py-1.5 bg-white dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-xl z-30 font-inter animate-in fade-in zoom-in-95 duration-100">
                 <div className="px-3 py-1.5 border-b border-zinc-100 dark:border-zinc-800 text-[10px] font-bold uppercase tracking-wider text-zinc-400">
                   Critério de Ordenação
                 </div>

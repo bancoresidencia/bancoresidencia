@@ -179,18 +179,29 @@ export async function computePlatformLeaderboard(
   }
 
   const supabaseAdmin = getSupabaseAdmin();
+  const PAGE_SIZE = 1000;
+  const MAX_RANKING_ROWS = 500_000;
 
-  // 1. Buscar todos os perfis de alunos
-  const { data: profiles, error: profErr } = await supabaseAdmin
-    .from('profiles')
-    .select('id, name, college, specialty_target, role');
+  // 1. Buscar todos os perfis de alunos em lotes paginados (evita truncamento em 1.000 linhas do PostgREST)
+  const profiles: Array<{ id: string; name?: string | null; college?: string | null; specialty_target?: string | null }> = [];
+  for (let offset = 0; offset < MAX_RANKING_ROWS; offset += PAGE_SIZE) {
+    const { data: profPage, error: profErr } = await supabaseAdmin
+      .from('profiles')
+      .select('id, name, college, specialty_target')
+      .order('id', { ascending: true })
+      .range(offset, offset + PAGE_SIZE - 1);
 
-  if (profErr) {
-    console.error('[RankingService] Erro ao buscar profiles:', profErr);
+    if (profErr) {
+      console.error('[RankingService] Erro ao buscar profiles:', profErr);
+      break;
+    }
+    if (!profPage || profPage.length === 0) break;
+    profiles.push(...profPage);
+    if (profPage.length < PAGE_SIZE) break;
   }
 
   const profilesMap = new Map<string, { name: string; college: string; specialtyTarget: string }>();
-  for (const p of profiles || []) {
+  for (const p of profiles) {
     // Sanitização de nome para exibição pública
     const displayName = p.name ? p.name.trim() : 'Estudante';
     profilesMap.set(p.id, {
@@ -200,14 +211,30 @@ export async function computePlatformLeaderboard(
     });
   }
 
-  // 2. Buscar todas as respostas válidas do banco
-  const { data: answers, error: ansErr } = await supabaseAdmin
-    .from('user_answers')
-    .select('user_id, question_id, is_correct, difficulty, specialty, banca, year, answered_at');
+  // 2. Buscar todas as respostas válidas do banco em lotes paginados determinísticos
+  interface RawUserAnswerRow {
+    user_id: string;
+    question_id: string;
+    is_correct: boolean;
+    difficulty?: string | null;
+    banca?: string | null;
+    answered_at?: string | null;
+  }
+  const answers: RawUserAnswerRow[] = [];
+  for (let offset = 0; offset < MAX_RANKING_ROWS; offset += PAGE_SIZE) {
+    const { data: ansPage, error: ansErr } = await supabaseAdmin
+      .from('user_answers')
+      .select('user_id, question_id, is_correct, difficulty, banca, answered_at')
+      .order('answered_at', { ascending: true })
+      .range(offset, offset + PAGE_SIZE - 1);
 
-  if (ansErr) {
-    console.error('[RankingService] Erro ao buscar user_answers:', ansErr);
-    throw new Error('Falha ao consultar banco de dados para cálculo de ranking.');
+    if (ansErr) {
+      console.error('[RankingService] Erro ao buscar user_answers:', ansErr);
+      throw new Error('Falha ao consultar banco de dados para cálculo de ranking.');
+    }
+    if (!ansPage || ansPage.length === 0) break;
+    answers.push(...(ansPage as RawUserAnswerRow[]));
+    if (ansPage.length < PAGE_SIZE) break;
   }
 
   // 3. Agrupar tentativas por usuário

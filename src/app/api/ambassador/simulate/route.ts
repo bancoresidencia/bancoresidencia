@@ -14,8 +14,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 2. Em ambiente de desenvolvimento/teste, exige estritamente credenciais administrativas
-    const auth = await verifyAdminSession(req);
+    // 2. Em ambiente de desenvolvimento/teste, exige estritamente credenciais de superadministrador (bloqueia curadores)
+    const auth = await verifyAdminSession(req, { requireStrictAdmin: true });
     if (!auth.authorized || !auth.user) {
       return NextResponse.json(
         { success: false, error: auth.error || 'Acesso restrito exclusivamente a administradores em ambiente de teste.' },

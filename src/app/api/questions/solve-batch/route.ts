@@ -1,7 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
-import { validateQuestionId, isPrivilegedRole } from '@/utils/security';
+import {
+  validateQuestionId,
+  isPrivilegedRole,
+  extractTrustedClientIpFromHeaders,
+  safeErrorMessage
+} from '@/utils/security';
 import { verifySessionTicket } from '@/utils/securityTickets';
 import { injectZeroWidthWatermark } from '@/utils/watermark';
 import { sanitizeMedicalText, unpackStructuredCommentary } from '@/utils/textSanitizer';
@@ -72,11 +77,7 @@ const PLAN_CACHE_TTL_MS = 60 * 1000;
 
 export async function POST(req: NextRequest) {
   try {
-    const clientIp =
-      req.headers.get('x-vercel-forwarded-for')?.split(',')[0]?.trim() ||
-      req.headers.get('x-real-ip')?.trim() ||
-      req.headers.get('x-forwarded-for')?.split(',').pop()?.trim() ||
-      'unknown-ip';
+    const clientIp = extractTrustedClientIpFromHeaders(req.headers);
 
     if (isBatchRateLimited(`ip_${clientIp}`)) {
       return NextResponse.json(
@@ -300,8 +301,10 @@ export async function POST(req: NextRequest) {
       count: Object.keys(resolutions).length
     });
   } catch (err: unknown) {
-    const msg = err instanceof Error ? err.message : 'Erro interno';
     console.error('[/api/questions/solve-batch] Exceção:', err);
-    return NextResponse.json({ success: false, error: msg }, { status: 500 });
+    return NextResponse.json(
+      { success: false, error: safeErrorMessage(err, 'Erro interno no pré-carregamento.') },
+      { status: 500 }
+    );
   }
 }

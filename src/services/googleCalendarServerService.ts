@@ -1,15 +1,64 @@
 import crypto from 'crypto';
-import { createClient } from '@/lib/supabase/server';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { deriveDomainSecret } from '@/utils/security';
 import { DailyScheduleSlot } from '@/components/dashboard/scheduleTypes';
 
-// ── 1. Criptografia AES-256-GCM para Tokens em Repouso ──
-function getEncryptionKey(): Buffer {
+// ── 1. Criptografia AES-256-GCM para Tokens em Repouso (HKDF-SHA256 com fallback legado) ──
+function getRawCalendarMasterSecret(): string {
   const configuredSecret = process.env.CALENDAR_ENCRYPTION_KEY || process.env.GOOGLE_CLIENT_SECRET;
   if (!configuredSecret && process.env.NODE_ENV === 'production') {
     throw new Error('CALENDAR_ENCRYPTION_KEY ou GOOGLE_CLIENT_SECRET obrigatório em produção.');
   }
-  const secret = configuredSecret || 'bancoresidencia_secure_calendar_token_vault_2026';
-  return crypto.createHash('sha256').update(secret).digest();
+  return configuredSecret || 'bancoresidencia_secure_calendar_token_vault_2026';
+}
+
+function getEncryptionKey(): Buffer {
+  return deriveDomainSecret(getRawCalendarMasterSecret(), 'google-calendar-aes256gcm-v1');
+}
+
+function getLegacyEncryptionKey(): Buffer {
+  return crypto.createHash('sha256').update(getRawCalendarMasterSecret()).digest();
+}
+
+function getOAuthStateSecret(): Buffer {
+  const raw =
+    process.env.CALENDAR_ENCRYPTION_KEY ||
+    process.env.GOOGLE_CLIENT_SECRET ||
+    process.env.SUPABASE_SERVICE_ROLE_KEY ||
+    'bancoresidencia_dev_oauth_state_secret';
+  return deriveDomainSecret(raw, 'google-calendar-oauth-state-v1');
+}
+
+export function signCalendarOAuthState(userId: string, stateNonce: string): string {
+  const mac = crypto
+    .createHmac('sha256', getOAuthStateSecret())
+    .update(`${userId}:${stateNonce}`)
+    .digest('base64url');
+  return `${stateNonce}.${mac}`;
+}
+
+export function verifyCalendarOAuthStateCookie(
+  userId: string,
+  cookieValue: string | undefined,
+  submittedState: string
+): boolean {
+  if (!cookieValue || !submittedState) return false;
+  const dotIdx = cookieValue.lastIndexOf('.');
+  if (dotIdx <= 0) return false;
+
+  const cookieState = cookieValue.slice(0, dotIdx);
+  const cookieMac = cookieValue.slice(dotIdx + 1);
+  if (cookieState !== submittedState) return false;
+
+  const expectedMac = crypto
+    .createHmac('sha256', getOAuthStateSecret())
+    .update(`${userId}:${cookieState}`)
+    .digest('base64url');
+
+  const bufA = Buffer.from(cookieMac, 'utf8');
+  const bufB = Buffer.from(expectedMac, 'utf8');
+  if (bufA.byteLength !== bufB.byteLength) return false;
+  return crypto.timingSafeEqual(bufA, bufB);
 }
 
 export function encryptSecret(plainText: string): string {
@@ -26,17 +75,23 @@ export function decryptSecret(cipherText: string): string {
   if (!cipherText) return '';
   const parts = cipherText.split(':');
   if (parts.length !== 3) return ''; // Rejeita formatos não autenticados
-  try {
-    const [ivHex, authTagHex, encryptedHex] = parts;
-    const decipher = crypto.createDecipheriv('aes-256-gcm', getEncryptionKey(), Buffer.from(ivHex, 'hex'));
-    decipher.setAuthTag(Buffer.from(authTagHex, 'hex'));
-    let decrypted = decipher.update(encryptedHex, 'hex', 'utf8');
-    decrypted += decipher.final('utf8');
-    return decrypted;
-  } catch (err) {
-    console.error('[GoogleCalendarServer] Falha de integridade AES-GCM ao descriptografar token:', err);
-    return '';
+  const [ivHex, authTagHex, encryptedHex] = parts;
+  const iv = Buffer.from(ivHex, 'hex');
+  const authTag = Buffer.from(authTagHex, 'hex');
+
+  for (const key of [getEncryptionKey(), getLegacyEncryptionKey()]) {
+    try {
+      const decipher = crypto.createDecipheriv('aes-256-gcm', key, iv);
+      decipher.setAuthTag(authTag);
+      let decrypted = decipher.update(encryptedHex, 'hex', 'utf8');
+      decrypted += decipher.final('utf8');
+      return decrypted;
+    } catch {
+      // Tenta chave legada caso o token tenha sido gravado antes da rotação HKDF
+    }
   }
+  console.error('[GoogleCalendarServer] Falha de integridade AES-GCM ao descriptografar token.');
+  return '';
 }
 
 // ── 2. Troca de Authorization Code por Tokens (OAuth 2.0 Backend Flow) ──
@@ -85,9 +140,9 @@ export async function exchangeGoogleCode(code: string, redirectUri: string) {
   };
 }
 
-// ── 3. Renovação Silenciosa Server-Side (Garante token sempre válido) ──
+// ── 3. Renovação Silenciosa Server-Side (Garante token sempre válido — via service_role pois colunas de token foram revogadas de authenticated) ──
 export async function getValidGoogleAccessToken(userId: string): Promise<string> {
-  const supabase = await createClient();
+  const supabase = getSupabaseAdmin();
 
   const { data: integration, error: fetchErr } = await supabase
     .from('user_calendar_integrations')

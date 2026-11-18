@@ -951,11 +951,15 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     [user, getUserAnswersStorageKey]
   );
 
-  // Manipulação de Pastas
+  // Manipulação de Pastas (UUIDv4 elimina colisão de PK global entre alunos concorrentes)
   const createFolder = useCallback(
     async (name: string, parentId: string | null) => {
+      const uniqueId =
+        typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+          ? `f-${crypto.randomUUID()}`
+          : `f-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
       const newFolder: Folder = {
-        id: `f-${Date.now()}`,
+        id: uniqueId,
         userId: user?.id,
         name,
         parentId,
@@ -1015,8 +1019,12 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       appliedFilters: AdvancedFilterState,
       questionIds: string[] = []
     ): Promise<QuestionList | null> => {
+      const uniqueListId =
+        typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+          ? `list-${crypto.randomUUID()}`
+          : `list-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
       const newList: QuestionList = {
-        id: `list-${Date.now()}`,
+        id: uniqueListId,
         userId: user?.id,
         title,
         folderId: folderId || undefined,
@@ -1099,8 +1107,12 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         nextLists = [...lists];
         nextLists[existingIdx] = updated;
       } else {
+        const uniqueFolderListId =
+          typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
+            ? `list-folder-${crypto.randomUUID()}`
+            : `list-folder-${folderId}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
         const newList: QuestionList = {
-          id: `list-folder-${folderId}-${Date.now()}`,
+          id: uniqueFolderListId,
           userId: user?.id,
           title: `Questões Salvas - ${folderName}`,
           folderId,
