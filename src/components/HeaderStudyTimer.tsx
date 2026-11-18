@@ -4,14 +4,11 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Play,
   Pause,
-  RotateCcw,
   Check,
   X,
   Search,
   BookOpen,
-  ChevronDown,
-  Sparkles,
-  Clock
+  ChevronDown
 } from 'lucide-react';
 import { useStudyTimer } from '@/context/StudyTimerContext';
 import {
@@ -109,11 +106,11 @@ export const HeaderStudyTimer: React.FC = () => {
               type="button"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className="px-2 sm:px-2.5 py-1.5 min-h-[34px] text-xs font-semibold rounded-xl text-slate-700 dark:text-zinc-300 hover:bg-white dark:hover:bg-zinc-800 transition-colors flex items-center gap-1 sm:gap-1.5 max-w-[92px] sm:max-w-[200px] truncate cursor-pointer touch-manipulation"
-              title={currentTopicDisplay ? `Matéria selecionada: ${selectedTaxonomy.rawLabel || currentTopicDisplay}` : 'Escolha o que vai estudar'}
+              title={currentTopicDisplay ? `Matéria selecionada: ${selectedTaxonomy.rawLabel || currentTopicDisplay}` : 'Escolha o assunto'}
             >
               <BookOpen className="w-3.5 h-3.5 text-blue-500 shrink-0" />
               <span className={`truncate ${currentTopicDisplay ? 'inline' : 'hidden sm:inline'}`}>
-                {currentTopicDisplay || 'O que vai estudar?'}
+                {currentTopicDisplay || 'Assunto'}
               </span>
               <ChevronDown className="w-3 h-3 text-slate-400 shrink-0" />
             </button>
@@ -123,16 +120,15 @@ export const HeaderStudyTimer: React.FC = () => {
               00:00:00
             </span>
 
-            {/* Botão Iniciar (Verde Play com Contraste WCAG AA) */}
+            {/* Botão Iniciar (Apenas ícone Play em um círculo) */}
             <button
               type="button"
               onClick={() => startTimer()}
-              className="px-2.5 py-1.5 min-h-[34px] rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold flex items-center justify-center gap-1 transition-all shadow-xs cursor-pointer active:scale-95 touch-manipulation"
+              className="w-8 h-8 rounded-full bg-emerald-700 hover:bg-emerald-600 text-white flex items-center justify-center transition-all shadow-xs cursor-pointer active:scale-95 touch-manipulation shrink-0"
               title="Iniciar contagem de estudo"
               aria-label="Iniciar contagem de estudo"
             >
-              <Play className="w-3.5 h-3.5 fill-current" />
-              <span className="hidden sm:inline">Iniciar</span>
+              <Play className="w-3.5 h-3.5 fill-current translate-x-[0.5px]" />
             </button>
           </div>
         )}

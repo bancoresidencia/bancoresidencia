@@ -11,7 +11,11 @@ import {
   Sparkles, 
   AlertCircle, 
   ArrowLeft,
-  Clock
+  Clock,
+  Tag,
+  Gift,
+  ArrowRight,
+  Lock
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
@@ -24,8 +28,9 @@ import {
   computeDiscountedPlan,
   AppliedReferral
 } from '@/config/ambassadorConfig';
-import { Tag, Gift, ArrowRight } from 'lucide-react';
-import { initMercadoPago } from '@mercadopago/sdk-react';
+import { CardPayment, initMercadoPago } from '@mercadopago/sdk-react';
+import type { ICardPaymentFormData, ICardPaymentBrickPayer } from '@mercadopago/sdk-react/esm/bricks/cardPayment/type';
+import type { IBrickError } from '@mercadopago/sdk-react/esm/bricks/util/types/common';
 
 interface MercadoPagoCheckoutProps {
   plan: PlanDefinition;
@@ -35,6 +40,9 @@ interface MercadoPagoCheckoutProps {
   onCouponChange?: (referral: AppliedReferral | null) => void;
 }
 
+type CardPaymentSubmitData = ICardPaymentFormData<ICardPaymentBrickPayer>;
+type CardPaymentBrickError = IBrickError;
+
 export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
   plan,
   onBack,
@@ -43,7 +51,7 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
   onCouponChange
 }) => {
   const { user, refreshUser } = useAuth();
-  const { accentConfig } = useTheme();
+  const { mode, accentConfig } = useTheme();
 
   const currentUserCode = getUserReferralCode(user);
   const [uncontrolledReferral, setUncontrolledReferral] = useState<AppliedReferral | null>(() => {
@@ -123,24 +131,18 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
   const [isPaidSuccess, setIsPaidSuccess] = useState(false);
   const pollingIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Estados do formulário de Cartão de Crédito
-  const [cardNumber, setCardNumber] = useState('');
-  const [cardHolder, setCardHolder] = useState('');
-  const [cardExpiry, setCardExpiry] = useState('');
-  const [cardCvv, setCardCvv] = useState('');
-  const [installments, setInstallments] = useState<number>(plan.maxInstallments);
+  const mpPublicKey = process.env.NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY;
 
   // Inicializa o Mercado Pago SDK no cliente
   useEffect(() => {
-    const pk = process.env.NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY;
-    if (pk && typeof window !== 'undefined') {
+    if (mpPublicKey && typeof window !== 'undefined') {
       try {
-        initMercadoPago(pk, { locale: 'pt-BR' });
+        initMercadoPago(mpPublicKey, { locale: 'pt-BR' });
       } catch (e) {
         console.warn('Erro ao inicializar SDK Mercado Pago:', e);
       }
     }
-  }, []);
+  }, [mpPublicKey]);
 
   // Polling para checagem automática do PIX
   useEffect(() => {
@@ -165,7 +167,7 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
     };
   }, [pixData?.paymentId, isPaidSuccess, refreshUser]);
 
-  // Formatação de CPF
+  // Formatação de CPF para PIX
   const handleCpfChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     let val = e.target.value.replace(/\D/g, '');
     if (val.length > 11) val = val.slice(0, 11);
@@ -173,21 +175,6 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
     val = val.replace(/(\d{3})(\d)/, '$1.$2');
     val = val.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
     setCpf(val);
-  };
-
-  // Formatação de Cartão
-  const handleCardNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let val = e.target.value.replace(/\D/g, '').slice(0, 16);
-    val = val.replace(/(\d{4})(?=\d)/g, '$1 ');
-    setCardNumber(val);
-  };
-
-  const handleExpiryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let val = e.target.value.replace(/\D/g, '').slice(0, 4);
-    if (val.length >= 2) {
-      val = `${val.slice(0, 2)}/${val.slice(2)}`;
-    }
-    setCardExpiry(val);
   };
 
   // Gerar PIX
@@ -202,12 +189,17 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
     setErrorMessage(null);
 
     try {
+      const clientRequestId = typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID()
+        : `pix-${Date.now()}`;
+
       const response = await fetch('/api/checkout/process-payment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           planId: plan.id,
           couponCode: appliedReferral?.code || undefined,
+          clientRequestId,
           paymentData: {
             payment_method_id: 'pix',
             payer: {
@@ -257,61 +249,12 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
     }
   };
 
-  // Processar Cartão de Crédito
-  const handleCardPayment = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const rawCpf = cpf.replace(/\D/g, '');
-    const cleanCard = cardNumber.replace(/\D/g, '');
-
-    if (cleanCard.length < 15) {
-      setErrorMessage('Informe um número de cartão de crédito válido.');
-      return;
-    }
-    if (!cardHolder.trim()) {
-      setErrorMessage('Informe o nome impresso no cartão.');
-      return;
-    }
-    if (cardExpiry.length < 5) {
-      setErrorMessage('Informe a data de validade (MM/AA).');
-      return;
-    }
-    if (cardCvv.length < 3) {
-      setErrorMessage('Informe o código de segurança (CVV).');
-      return;
-    }
-    if (rawCpf.length !== 11) {
-      setErrorMessage('Informe um CPF válido para o titular.');
-      return;
-    }
-
+  // Processar Pagamento Seguro com Cartão de Crédito via CardPayment Brick
+  const handleCardSubmit = async (cardFormData: CardPaymentSubmitData) => {
     setIsSubmitting(true);
     setErrorMessage(null);
 
     try {
-      const [expMonth, expYear] = cardExpiry.split('/');
-      const fullYear = expYear.length === 2 ? `20${expYear}` : expYear;
-
-      // Criação de token transparente via Mercado Pago JS SDK
-      let cardToken = '';
-      if (typeof window !== 'undefined' && (window as unknown as { MercadoPago: unknown }).MercadoPago) {
-        const mpInstance = new ((window as unknown as { MercadoPago: new (key: string) => {
-          createCardToken: (params: Record<string, unknown>) => Promise<{ id: string }>
-        } }).MercadoPago)(process.env.NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY || '');
-
-        const tokenResult = await mpInstance.createCardToken({
-          cardNumber: cleanCard,
-          cardholderName: cardHolder,
-          cardExpirationMonth: expMonth,
-          cardExpirationYear: fullYear,
-          securityCode: cardCvv,
-          identificationType: 'CPF',
-          identificationNumber: rawCpf
-        });
-
-        cardToken = tokenResult.id;
-      }
-
-      // Envia cobrança para o backend
       const response = await fetch('/api/checkout/process-payment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -319,17 +262,15 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
           planId: plan.id,
           couponCode: appliedReferral?.code || undefined,
           paymentData: {
-            payment_method_id: 'credit_card',
-            token: cardToken || 'token_sandbox_direct',
-            installments: Number(installments),
+            payment_method_id: cardFormData.payment_method_id,
+            token: cardFormData.token,
+            installments: cardFormData.installments,
+            issuer_id: cardFormData.issuer_id,
             payer: {
-              email: user?.email,
-              first_name: cardHolder.split(' ')[0],
-              last_name: cardHolder.split(' ').slice(1).join(' ') || 'Titular',
-              identification: {
-                type: 'CPF',
-                number: rawCpf
-              }
+              email: cardFormData.payer?.email || user?.email,
+              first_name: (user?.name as string | undefined)?.split(' ')[0] || 'Dr(a).',
+              last_name: (user?.name as string | undefined)?.split(' ').slice(1).join(' ') || 'Titular',
+              identification: cardFormData.payer?.identification
             }
           }
         })
@@ -344,12 +285,26 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
       if (data.status === 'approved') {
         setIsPaidSuccess(true);
         await refreshUser();
+      } else if (data.status === 'in_process' || data.status === 'pending') {
+        setErrorMessage(`Pagamento em análise (${data.statusDetail || 'Aguardando compensação'}).`);
       } else {
-        setErrorMessage(`Pagamento pendente de análise (${data.statusDetail || data.status}).`);
+        const rejectReason =
+          data.statusDetail === 'cc_rejected_bad_filled_security_code'
+            ? 'Código de segurança (CVV) inválido.'
+            : data.statusDetail === 'cc_rejected_bad_filled_date'
+            ? 'Data de validade incorreta.'
+            : data.statusDetail === 'cc_rejected_insufficient_amount'
+            ? 'Saldo ou limite insuficiente no cartão.'
+            : data.statusDetail === 'cc_rejected_call_for_authorize'
+            ? 'Transação não autorizada. Ligue para a operadora do seu cartão.'
+            : data.statusDetail === 'cc_rejected_card_disabled'
+            ? 'Cartão desabilitado. Entre em contato com seu banco.'
+            : (data.statusDetail || data.status || 'Cartão recusado pelo banco emissor.');
+        setErrorMessage(`Não foi possível aprovar a transação: ${rejectReason}`);
       }
-
     } catch (err: unknown) {
       setErrorMessage(err instanceof Error ? err.message : 'Falha ao processar pagamento com cartão.');
+      throw err;
     } finally {
       setIsSubmitting(false);
     }
@@ -542,7 +497,7 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
             setPaymentMethod('pix');
             setErrorMessage(null);
           }}
-          className={`py-3 px-4 rounded-2xl border text-sm font-bold flex items-center justify-center gap-2.5 transition-all ${
+          className={`py-3 px-4 rounded-2xl border text-sm font-bold flex items-center justify-center gap-2.5 transition-all cursor-pointer ${
             paymentMethod === 'pix'
               ? 'border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 shadow-sm'
               : 'border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/40'
@@ -558,7 +513,7 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
             setPaymentMethod('card');
             setErrorMessage(null);
           }}
-          className={`py-3 px-4 rounded-2xl border text-sm font-bold flex items-center justify-center gap-2.5 transition-all ${
+          className={`py-3 px-4 rounded-2xl border text-sm font-bold flex items-center justify-center gap-2.5 transition-all cursor-pointer ${
             paymentMethod === 'card'
               ? 'border-indigo-500 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 shadow-sm'
               : 'border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/40'
@@ -603,7 +558,7 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
                 type="button"
                 onClick={handleGeneratePix}
                 disabled={isSubmitting}
-                className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20"
+                className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 cursor-pointer"
               >
                 {isSubmitting ? (
                   <>
@@ -652,7 +607,7 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
                     <button
                       type="button"
                       onClick={handleCopyPix}
-                      className="px-4 py-2 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-xs font-bold flex items-center gap-1.5 shrink-0 hover:opacity-90"
+                      className="px-4 py-2 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 text-xs font-bold flex items-center gap-1.5 shrink-0 hover:opacity-90 cursor-pointer"
                     >
                       {copiedPix ? (
                         <>
@@ -679,120 +634,54 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
         </div>
       )}
 
-      {/* FLUXO CARTÃO DE CRÉDITO */}
+      {/* FLUXO CARTÃO DE CRÉDITO COM CARDPAYMENT BRICK OFICIAL (PCI-DSS COMPLIANT) */}
       {paymentMethod === 'card' && (
-        <form onSubmit={handleCardPayment} className="space-y-4">
-          <div>
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-              Número do Cartão
-            </label>
-            <input
-              type="text"
-              placeholder="0000 0000 0000 0000"
-              value={cardNumber}
-              onChange={handleCardNumberChange}
-              className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono"
-            />
-          </div>
+        <div className="space-y-4">
+          {mpPublicKey ? (
+            <div className="bg-slate-50/70 dark:bg-slate-950/60 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+              <div className="flex items-center gap-2 mb-3 text-xs font-bold text-slate-700 dark:text-slate-300">
+                <Lock className="w-3.5 h-3.5 text-emerald-500" />
+                <span>Dados do Cartão Criptografados de Ponta a Ponta (PCI-DSS Nível 1)</span>
+              </div>
 
-          <div>
-            <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-              Nome Impresso no Cartão
-            </label>
-            <input
-              type="text"
-              placeholder="Ex: LUCAS ROCHA"
-              value={cardHolder}
-              onChange={(e) => setCardHolder(e.target.value.toUpperCase())}
-              className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            />
-          </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                Validade (MM/AA)
-              </label>
-              <input
-                type="text"
-                placeholder="12/28"
-                value={cardExpiry}
-                onChange={handleExpiryChange}
-                className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono"
+              <CardPayment
+                key={`card-brick-${effectivePlan.id}-${effectivePlan.totalPrice}-${mode}`}
+                initialization={{
+                  amount: effectivePlan.totalPrice,
+                  payer: {
+                    email: user?.email || undefined
+                  }
+                }}
+                customization={{
+                  paymentMethods: {
+                    maxInstallments: effectivePlan.maxInstallments
+                  },
+                  visual: {
+                    hideFormTitle: true,
+                    style: {
+                      theme: mode === 'dark' ? 'dark' : 'default',
+                      customVariables: {
+                        baseColor: accentConfig.primaryHex
+                      }
+                    }
+                  }
+                }}
+                locale="pt-BR"
+                onSubmit={handleCardSubmit}
+                onError={(err: CardPaymentBrickError) => {
+                  console.warn('[MercadoPago Card Brick] Erro:', err);
+                  setErrorMessage(err?.message || 'Falha ao carregar o formulário seguro de pagamento.');
+                }}
               />
             </div>
-
-            <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                CVV
-              </label>
-              <input
-                type="password"
-                maxLength={4}
-                placeholder="123"
-                value={cardCvv}
-                onChange={(e) => setCardCvv(e.target.value.replace(/\D/g, ''))}
-                className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 font-mono"
-              />
+          ) : (
+            <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-400 text-xs flex items-center gap-2">
+              <AlertCircle className="w-4 h-4 shrink-0" />
+              <span>Chave pública do Mercado Pago não configurada no ambiente.</span>
             </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                CPF do Titular
-              </label>
-              <input
-                type="text"
-                placeholder="000.000.000-00"
-                value={cpf}
-                onChange={handleCpfChange}
-                className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                Parcelamento
-              </label>
-              <select
-                value={installments}
-                onChange={(e) => setInstallments(Number(e.target.value))}
-                className="w-full px-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              >
-                {Array.from({ length: effectivePlan.maxInstallments }, (_, i) => i + 1).map((qty) => {
-                  const val = effectivePlan.totalPrice / qty;
-                  return (
-                    <option key={qty} value={qty}>
-                      {qty}x de R$ {val.toFixed(2).replace('.', ',')}
-                    </option>
-                  );
-                })}
-              </select>
-            </div>
-          </div>
-
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full py-3.5 rounded-xl font-bold text-sm text-white shadow-lg transition-transform hover:scale-[1.01] flex items-center justify-center gap-2"
-            style={{ backgroundColor: accentConfig.primaryHex }}
-          >
-            {isSubmitting ? (
-              <>
-                <Loader2 className="w-4 h-4 animate-spin" />
-                Processando Transação Segura...
-              </>
-            ) : (
-              <>
-                <CreditCard className="w-4 h-4" />
-                Confirmar Assinatura (R$ {plan.totalPrice.toFixed(2).replace('.', ',')})
-              </>
-            )}
-          </button>
-        </form>
+          )}
+        </div>
       )}
     </div>
   );
 };
-

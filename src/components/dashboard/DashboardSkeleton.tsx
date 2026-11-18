@@ -8,19 +8,22 @@ export const DashboardSkeleton: React.FC = () => {
       aria-label="Carregando painel de estudos"
       className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-3.5"
     >
-      {/* 1. Hero Skeleton (12 cols) */}
-      <div className="col-span-12 rounded-2xl bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] px-4 sm:px-5 py-3.5 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3.5">
-        <div className="space-y-2">
-          <Skeleton variant="text" className="w-24 h-3.5" />
-          <div className="flex items-center gap-2.5">
-            <Skeleton variant="text" className="w-48 sm:w-56 h-7 rounded-lg" />
-            <Skeleton variant="rectangular" className="w-12 h-5 rounded-md" />
-            <Skeleton variant="rectangular" className="w-32 h-7 rounded-xl hidden sm:block" />
+      {/* 1. Hero Skeleton (12 cols - Taller and matching new layout) */}
+      <div className="col-span-12 rounded-2xl bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] p-5 sm:p-7 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-4 min-h-[148px] sm:min-h-[164px]">
+        <div className="space-y-3 flex-1">
+          <div className="flex items-center gap-2">
+            <Skeleton variant="rectangular" className="w-8 h-8 rounded-full" />
+            <Skeleton variant="rectangular" className="w-14 h-5 rounded-full" />
+          </div>
+          <Skeleton variant="text" className="w-64 sm:w-80 h-9 rounded-xl" />
+          <div className="flex items-center gap-2.5 pt-1">
+            <Skeleton variant="rectangular" className="w-36 h-9 rounded-xl" />
+            <Skeleton variant="rectangular" className="w-32 h-9 rounded-xl hidden sm:block" />
           </div>
         </div>
-        <div className="flex items-center gap-2.5">
-          <Skeleton variant="rectangular" className="w-32 h-11 rounded-xl" />
-          <Skeleton variant="rectangular" className="w-32 h-11 rounded-xl" />
+        <div className="flex flex-row sm:flex-col lg:flex-row items-center gap-2.5 shrink-0">
+          <Skeleton variant="rectangular" className="w-36 h-14 rounded-xl" />
+          <Skeleton variant="rectangular" className="w-36 h-14 rounded-xl" />
         </div>
       </div>
 

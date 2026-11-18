@@ -176,7 +176,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
       <div className="flex-1 flex flex-col min-w-0 overflow-x-clip">
         {/* Cabeçalho Fixo Superior com Glassmorphism */}
         <header className="sticky top-0 z-30 bg-[var(--bg-card,#ffffff)]/85 dark:bg-[var(--card,#121215)]/85 backdrop-blur-md border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 transition-colors duration-200 pt-[env(safe-area-inset-top,0px)]">
-          <div className="max-w-6xl mx-auto px-3 sm:px-6 h-16 flex items-center justify-between gap-2 sm:gap-3">
+          <div className="max-w-7xl mx-auto px-3 sm:px-6 h-16 flex items-center justify-between gap-2 sm:gap-3">
             {/* Botão Mobile para abrir navegação */}
             <div className="md:hidden flex items-center shrink-0">
               <Button

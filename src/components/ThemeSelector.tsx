@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { Sun, Moon, Palette, Check, ChevronDown, SlidersHorizontal } from 'lucide-react';
+import { Sun, Moon, Palette, Check, SlidersHorizontal } from 'lucide-react';
 import { useTheme, AccentColor, ACCENT_CONFIGS } from '@/context/ThemeContext';
 
 export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false }) => {
@@ -41,25 +41,19 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
   if (compact) {
     return (
       <div ref={dropdownRef} className="relative select-none">
-        {/* Botão Único Compacto de Tema */}
+        {/* Botão Único Compacto de Tema (Apenas a bolinha de cor, sem ícone de aquarela) */}
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
           aria-haspopup="true"
-          title="Personalizar Tema e Cores da Plataforma"
-          className="flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700"
+          title={`Personalizar tema e cores (Tema ativo: ${currentAccent.label})`}
+          aria-label={`Personalizar tema e cores (Tema ativo: ${currentAccent.label})`}
+          className="w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer shadow-xs hover:scale-105 active:scale-95 shrink-0"
         >
-          <Palette className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
           <span
-            className="w-3.5 h-3.5 rounded-full shadow-xs border border-white/20 dark:border-black/20"
+            className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full shadow-xs border border-black/10 dark:border-white/20 transition-transform"
             style={{ backgroundColor: currentAccent.hex }}
-            title={`Tema ativo: ${currentAccent.label}`}
-          />
-          <ChevronDown
-            className={`w-3 h-3 text-zinc-400 transition-transform duration-200 ${
-              isOpen ? 'rotate-180' : ''
-            }`}
           />
         </button>
 

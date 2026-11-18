@@ -271,13 +271,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
           >
             <X className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
           </button>
-        ) : (
-          <div className="hidden md:flex items-center gap-1 shrink-0">
-            <kbd className="px-2 py-0.5 text-[10px] font-mono font-bold text-slate-500 dark:text-slate-400 bg-slate-200/80 dark:bg-slate-800/80 border border-slate-300/80 dark:border-slate-700/80 rounded-md">
-              Ctrl K
-            </kbd>
-          </div>
-        )}
+        ) : null}
 
         {isOpen && (
           <button

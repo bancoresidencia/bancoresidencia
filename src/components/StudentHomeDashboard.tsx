@@ -3008,44 +3008,63 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               >
                 <section
                   style={staggerStyle}
-                  className="relative overflow-hidden bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl px-4 sm:px-5 py-3 sm:py-3.5 shadow-xs"
+                  className="relative overflow-hidden bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-5 sm:p-7 shadow-xs min-h-[154px] sm:min-h-[172px] flex flex-col justify-between"
                 >
                   <div
-                    className="absolute -right-16 -top-16 w-60 h-60 rounded-full blur-3xl opacity-10 pointer-events-none"
+                    className="absolute -right-16 -top-16 w-80 h-80 rounded-full blur-3xl opacity-12 pointer-events-none"
                     style={{ backgroundColor: accentConfig.primaryHex }}
                   />
+                  <div
+                    className="absolute -left-12 -bottom-12 w-64 h-64 rounded-full blur-3xl opacity-8 pointer-events-none"
+                    style={{ backgroundColor: accentConfig.timeAccent?.hex || accentConfig.primaryHex }}
+                  />
 
-                  <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-3.5">
-                    <div className="space-y-1">
-                      <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 font-medium">
-                        <GreetingIcon className={`w-3.5 h-3.5 ${greeting.color}`} />
-                        <span>{greeting.text}</span>
-                      </div>
-
-                      <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 pt-0.5">
-                        <h1 className="font-heading text-xl sm:text-2xl font-black text-zinc-900 dark:text-zinc-100 tracking-tight">
-                          {studentName}
-                        </h1>
+                  <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-5 sm:gap-6">
+                    <div className="space-y-2 flex-1 min-w-0">
+                      {/* Ícone de Período (Manhã, Tarde ou Noite) & Plano */}
+                      <div className="flex items-center gap-2">
+                        <div
+                          className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center bg-zinc-100/90 dark:bg-zinc-900/90 border border-zinc-200/80 dark:border-zinc-800 shadow-2xs shrink-0"
+                          title={greeting.text}
+                          aria-label={greeting.text}
+                        >
+                          <GreetingIcon className={`w-4 h-4 ${greeting.color}`} />
+                        </div>
 
                         {plan === 'free' ? (
                           <button
                             type="button"
                             onClick={() => openUpgradeModal()}
                             title="Plano Gratuito • Clique para conhecer o acesso ilimitado PRO"
-                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-zinc-100 dark:bg-zinc-800/90 text-zinc-600 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-700/80 hover:border-amber-500/40 hover:text-amber-600 dark:hover:text-amber-400 transition-colors cursor-pointer"
+                            className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-zinc-100 dark:bg-zinc-800/90 text-zinc-600 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-700/80 hover:border-amber-500/40 hover:text-amber-600 dark:hover:text-amber-400 transition-colors cursor-pointer"
                           >
                             <span>FREE</span>
                           </button>
                         ) : (
-                          <Badge variant="warning" size="sm">
+                          <Badge variant="warning" size="sm" className="rounded-full px-2.5">
                             PRO
                           </Badge>
                         )}
+                      </div>
 
-                        {/* Ação Primária de Estudo na Primeira Dobra (Regra dos 3 Segundos / Hick-Hyman) */}
+                      {/* Título Conversacional Direto com o Nome do Aluno */}
+                      <h1 className="font-heading text-2xl sm:text-3xl lg:text-[32px] font-black tracking-[-0.035em] text-zinc-950 dark:text-white leading-tight">
+                        <span>{greeting.text}, </span>
+                        <span
+                          className="inline-block"
+                          style={{
+                            color: mode === 'dark' ? 'color-mix(in srgb, var(--primary-color, #2563eb) 85%, #ffffff)' : accentConfig.primaryHex
+                          }}
+                        >
+                          {studentName}!
+                        </span>
+                      </h1>
+
+                      {/* Ações Primárias de Estudo no Padrão da Landing Page */}
+                      <div className="pt-2 flex flex-wrap items-center gap-2.5">
                         <Button
                           variant="primary"
-                          size="xs"
+                          size="sm"
                           onClick={() => {
                             if (activeCaderno) {
                               onContinueList(activeCaderno);
@@ -3059,7 +3078,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               onNavigate('banco');
                             }
                           }}
-                          leftIcon={<Play className="w-3 h-3 fill-current" />}
+                          leftIcon={<Play className="w-3.5 h-3.5 fill-current" />}
+                          className="font-bold text-xs sm:text-sm px-4 py-2 shadow-xs hover:opacity-95 active:scale-[0.98] transition-all"
                           title={
                             activeCaderno
                               ? `Continuar caderno: ${activeCaderno.title}`
@@ -3074,27 +3094,38 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               ? `Continuar ${currentOfficialExam.institution}`
                               : 'Resolver Questões'}
                         </Button>
+
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => onNavigate('resumos')}
+                          className="font-semibold text-xs px-3.5 py-2 hidden sm:inline-flex"
+                          title="Acessar materiais de apoio e resumos teóricos"
+                        >
+                          Materiais de Apoio
+                        </Button>
                       </div>
                     </div>
 
-                    <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
-                      {/* Tempo Estudado Hoje - Harmonizado */}
+                    {/* KPIs Laterais com Superfície Padrão Landing Page */}
+                    <div className="flex flex-row sm:flex-col lg:flex-row items-center gap-2.5 shrink-0">
+                      {/* Tempo Estudado Hoje */}
                       <div
                         onClick={() => onNavigate('stats')}
                         title="Tempo de estudo acumulado hoje no cronômetro da agenda. Clique para abrir seu desempenho detalhado."
-                        className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer shadow-2xs"
+                        className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl bg-zinc-50/90 dark:bg-zinc-900/70 border border-zinc-200/90 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer shadow-xs min-w-[140px]"
                       >
                         <div
-                          className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
+                          className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 shadow-2xs"
                           style={{
                             backgroundColor: accentConfig.bgRgba,
                             color: accentConfig.primaryHex
                           }}
                         >
-                          <Clock className="w-3.5 h-3.5" />
+                          <Clock className="w-4 h-4" />
                         </div>
                         <div>
-                          <div className="text-xs sm:text-sm font-black font-sans tracking-tight leading-none text-zinc-900 dark:text-zinc-100 tabular-nums">
+                          <div className="text-sm sm:text-base font-black font-sans tracking-tight leading-none text-zinc-900 dark:text-zinc-100 tabular-nums">
                             {formattedTodayStudy}
                           </div>
                           <div className="text-[10px] sm:text-[11px] font-medium text-zinc-500 dark:text-zinc-400 flex items-center gap-1 leading-none mt-1">
@@ -3108,29 +3139,28 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
 
                       {/* Prova Alvo */}
-                      <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]">
+                      <div className="flex items-center gap-3 px-3.5 py-2.5 rounded-xl bg-zinc-50/90 dark:bg-zinc-900/70 border border-zinc-200/90 dark:border-zinc-800 min-w-[140px] shadow-xs">
                         <div
-                          className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
+                          className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 shadow-2xs"
                           style={{
-                            backgroundColor: accentConfig.timeAccent.bgRgba,
-                            color: accentConfig.timeAccent.hex
+                            backgroundColor: accentConfig.timeAccent?.bgRgba || accentConfig.bgRgba,
+                            color: accentConfig.timeAccent?.hex || accentConfig.primaryHex
                           }}
                         >
-                          <CalendarDays className="w-3.5 h-3.5" />
+                          <CalendarDays className="w-4 h-4" />
                         </div>
                         <div>
                           <div
-                            className="text-xs sm:text-sm font-bold font-sans tracking-tight leading-none"
-                            style={{ color: accentConfig.timeAccent.hex }}
+                            className="text-sm sm:text-base font-black font-sans tracking-tight leading-none"
+                            style={{ color: accentConfig.timeAccent?.hex || accentConfig.primaryHex }}
                           >
                             {targetDaysLeft === 1 ? '1 dia' : `${targetDaysLeft} dias`}
                           </div>
-                          <div className="text-[10px] text-zinc-500 dark:text-zinc-400 font-medium truncate max-w-[120px]" title={targetExamName}>
+                          <div className="text-[10px] sm:text-[11px] text-zinc-500 dark:text-zinc-400 font-medium truncate max-w-[120px] mt-1" title={targetExamName}>
                             p/ {targetExamName}
                           </div>
                         </div>
                       </div>
-
                     </div>
                   </div>
 

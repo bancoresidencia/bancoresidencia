@@ -4,7 +4,8 @@ import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { PLANS, PlanId } from '@/config/plans';
 import { normalizeReferralCode } from '@/config/ambassadorConfig';
-import { recordReferralSale, validateBackendReferralCoupon } from '@/services/ambassadorService';
+import { validateBackendReferralCoupon } from '@/services/ambassadorService';
+import { fulfillApprovedMercadoPagoPayment, MercadoPagoPaymentLike } from '@/services/paymentFulfillmentService';
 
 export async function POST(req: NextRequest) {
   try {
@@ -70,8 +71,10 @@ export async function POST(req: NextRequest) {
     const discountFactor = discountPercent > 0 ? (1 - discountPercent / 100) : 1;
     const amount = parseFloat((selectedPlan.totalPrice * discountFactor).toFixed(2));
 
-    // 2. Montar objeto para o Mercado Pago
-    const idempotencyKey = `BR-${user.id}-${planId}-${Date.now()}`;
+    // 2. Montar objeto para o Mercado Pago com Idempotência Determinística
+    const idempotencyKey = paymentData.token
+      ? `BR-CARD-${paymentData.token}`
+      : (body.clientRequestId ? `BR-PIX-${body.clientRequestId}` : `BR-${user.id}-${planId}-${Date.now()}`);
     const payerEmail = paymentData.payer?.email || user.email || 'estudante@bancoresidencia.com.br';
 
     const paymentPayload: Parameters<typeof paymentService.create>[0] = {
@@ -117,43 +120,10 @@ export async function POST(req: NextRequest) {
     const paymentId = String(mpResponse.id || '');
     const status = mpResponse.status || 'pending';
     const approvalBase = mpResponse.date_approved ? new Date(mpResponse.date_approved) : new Date();
-    const expiresAt = new Date(approvalBase.getTime() + selectedPlan.durationDays * 24 * 60 * 60 * 1000);
     const guaranteeUntil = new Date(approvalBase.getTime() + 7 * 24 * 60 * 60 * 1000);
     const nowIso = new Date().toISOString();
 
-    // 4. Se o pagamento foi aprovado imediatamente (ex: Cartão de Crédito)
-    if (status === 'approved') {
-      try {
-        await supabaseAdmin
-          .from('profiles')
-          .update({
-            subscription_plan: 'pro',
-            subscription_status: 'active',
-            subscription_duration: selectedPlan.id,
-            subscription_started_at: approvalBase.toISOString(),
-            subscription_expires_at: expiresAt.toISOString(),
-            guarantee_expires_at: guaranteeUntil.toISOString(),
-            updated_at: nowIso
-          })
-          .eq('id', user.id);
-
-        // Grava exclusivamente em app_metadata (imutável pelo cliente no navegador)
-        await supabaseAdmin.auth.admin.updateUserById(user.id, {
-          app_metadata: {
-            ...user.app_metadata,
-            subscription_plan: 'pro',
-            subscription_status: 'active',
-            subscription_duration: selectedPlan.id,
-            subscription_expires_at: expiresAt.toISOString(),
-            guarantee_expires_at: guaranteeUntil.toISOString()
-          }
-        });
-      } catch (profileErr) {
-        console.error('Erro ao atualizar profile do aluno pós-aprovação:', profileErr);
-      }
-    }
-
-    // 5. Salvar na tabela de orders
+    // 4. Salvar na tabela de orders como 'pending' para transição atômica
     let orderRecord: { id?: string } | null = null;
     try {
       const pixData = mpResponse.point_of_interaction?.transaction_data;
@@ -167,7 +137,7 @@ export async function POST(req: NextRequest) {
           amount: amount,
           installments: Math.max(1, Number(paymentData.installments) || 1),
           payment_method: paymentData.payment_method_id,
-          status: status === 'approved' ? 'approved' : 'pending',
+          status: 'pending',
           qr_code: pixData?.qr_code || null,
           qr_code_base64: pixData?.qr_code_base64 || null,
           ticket_url: pixData?.ticket_url || null,
@@ -191,23 +161,21 @@ export async function POST(req: NextRequest) {
       console.warn('Aviso ao gravar pedido na tabela public.orders:', orderErr);
     }
 
-    // Registrar indicação de embaixador se pagamento aprovado com cupom válido
-    if (status === 'approved' && validatedCoupon) {
+    // 5. Se o pagamento foi aprovado imediatamente (ex: Cartão de Crédito), ativar atomicamente e idempotente
+    if (status === 'approved') {
       try {
-        await recordReferralSale({
-          couponCode: validatedCoupon,
-          referredUserId: user.id,
-          orderId: orderRecord?.id,
-          studentName: (user.user_metadata?.name as string) || (user.email ? user.email.split('@')[0] : 'Estudante'),
-          studentEmail: user.email || '',
-          planId: selectedPlan.id as 'monthly' | 'semiannual' | 'annual' | 'biennial',
-          planName: selectedPlan.name,
-          planAmount: selectedPlan.totalPrice,
-          discountApplied: parseFloat((selectedPlan.totalPrice - amount).toFixed(2)),
-          netAmount: amount
-        });
-      } catch (refErr) {
-        console.warn('Aviso ao registrar indicação de embaixador:', refErr);
+        await fulfillApprovedMercadoPagoPayment(mpResponse as unknown as MercadoPagoPaymentLike);
+      } catch (profileErr) {
+        console.error('Erro ao cumprir pagamento aprovado no Mercado Pago:', profileErr);
+      }
+    } else if (status === 'rejected') {
+      try {
+        await supabaseAdmin
+          .from('orders')
+          .update({ status: 'rejected', updated_at: nowIso })
+          .eq('mp_payment_id', paymentId);
+      } catch {
+        // ignore
       }
     }
 
