@@ -13,8 +13,8 @@ import {
 import { useTheme } from '@/context/ThemeContext';
 import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 import questionsData from '@/data/landingDemoQuestions.json';
-
-type TabKey = 'internato' | 'residencia' | 'revalida' | 'rplus';
+import { DemoTabKey } from '@/components/landing/landingData';
+import { useScrollReveal } from '@/components/landing/useScrollReveal';
 
 interface QuestionOption {
   letter: string;
@@ -35,42 +35,66 @@ interface DemoQuestion {
   commentary: string;
 }
 
+export interface ExternalDemoSelection {
+  tab: DemoTabKey;
+  questionIndex: number;
+  bancaLabel?: string;
+  nonce: number;
+}
+
 interface LandingDemoQuestionsSectionProps {
   onLoginDemo?: () => void;
   onOpenAuth: (mode?: 'login' | 'register') => void;
+  externalSelection?: ExternalDemoSelection | null;
 }
 
-const TABS: { id: TabKey; label: string }[] = [
-  { id: 'internato', label: 'Internato' },
+const TABS: { id: DemoTabKey; label: string }[] = [
   { id: 'residencia', label: 'Residência' },
   { id: 'revalida', label: 'Revalida' },
+  { id: 'internato', label: 'Internato' },
   { id: 'rplus', label: 'R+' }
 ];
 
 export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionProps> = ({
-  onLoginDemo,
-  onOpenAuth
+  onOpenAuth,
+  externalSelection
 }) => {
   const { accentConfig } = useTheme();
-  const [activeTab, setActiveTab] = useState<TabKey>('revalida');
+  const { ref, isVisible } = useScrollReveal<HTMLDivElement>(0.08);
+
+  const [activeTab, setActiveTab] = useState<DemoTabKey>('residencia');
   const [questionIndex, setQuestionIndex] = useState<number>(0);
-  
-  // Respostas selecionadas por chave única (tab-index)
+  const [highlightedBanca, setHighlightedBanca] = useState<string | null>(null);
+  const [lastAppliedNonce, setLastAppliedNonce] = useState<number | null>(null);
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
+
+  if (externalSelection && externalSelection.nonce !== lastAppliedNonce) {
+    const list = (questionsData[externalSelection.tab] || []) as DemoQuestion[];
+    const safeIdx =
+      externalSelection.questionIndex >= 0 && externalSelection.questionIndex < list.length
+        ? externalSelection.questionIndex
+        : 0;
+    setLastAppliedNonce(externalSelection.nonce);
+    setActiveTab(externalSelection.tab);
+    setQuestionIndex(safeIdx);
+    setHighlightedBanca(externalSelection.bancaLabel || null);
+  }
 
   const tabQuestions = (questionsData[activeTab] || []) as DemoQuestion[];
   const currentQuestion: DemoQuestion | undefined = tabQuestions[questionIndex] || tabQuestions[0];
 
   const currentKey = `${activeTab}-${questionIndex}`;
   const selectedAnswer = userAnswers[currentKey];
+  const hasAnsweredAny = Object.keys(userAnswers).length > 0;
 
-  const handleSelectTab = (tab: TabKey) => {
+  const handleSelectTab = (tab: DemoTabKey) => {
     setActiveTab(tab);
     setQuestionIndex(0);
+    setHighlightedBanca(null);
   };
 
   const handleSelectOption = (letter: string) => {
-    if (selectedAnswer) return; // Não troca resposta se já respondeu
+    if (selectedAnswer) return;
     setUserAnswers((prev) => ({
       ...prev,
       [currentKey]: letter
@@ -80,12 +104,14 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
   const handleNext = () => {
     if (questionIndex < tabQuestions.length - 1) {
       setQuestionIndex((prev) => prev + 1);
+      setHighlightedBanca(null);
     }
   };
 
   const handlePrev = () => {
     if (questionIndex > 0) {
       setQuestionIndex((prev) => prev - 1);
+      setHighlightedBanca(null);
     }
   };
 
@@ -95,305 +121,311 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
   const isCorrect = selectedAnswer === currentQuestion.correct_answer;
 
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto w-full">
-      {/* =========================================================================
-          CABEÇALHO DA SEÇÃO COM TÍTULO E ABAS DE CATEGORIA
-          ========================================================================= */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
-        <div>
-          <h2
-            className="font-bebas text-4xl sm:text-6xl md:text-7xl tracking-wide text-zinc-950 dark:text-white leading-none"
-            style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
-          >
-            Resolução Comentada na Prática
-          </h2>
-          <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base font-normal mt-2 max-w-xl">
-            Teste uma questão real do acervo com comentários detalhados e justificativa por alternativa.
-          </p>
-        </div>
-
-        {/* Abas Superiores (Internato, Residência, Revalida, R+) */}
-        <div className="flex items-center gap-1.5 p-1 rounded-full bg-slate-200/80 dark:bg-slate-900/90 border border-slate-300/80 dark:border-slate-800 shadow-inner overflow-x-auto no-scrollbar shrink-0">
-          {TABS.map((tab) => {
-            const isActive = activeTab === tab.id;
-            return (
-              <button
-                key={tab.id}
-                type="button"
-                onClick={() => handleSelectTab(tab.id)}
-                className={`px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-extrabold transition-all duration-200 cursor-pointer whitespace-nowrap ${
-                  isActive
-                    ? 'text-white shadow-md'
-                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-white/40 dark:hover:bg-slate-800/50'
-                }`}
-                style={
-                  isActive
-                    ? {
-                        backgroundColor: accentConfig.primaryHex,
-                        color: accentConfig.primaryContrastHex || '#ffffff',
-                        boxShadow: `0 4px 14px ${accentConfig.borderRgba || 'rgba(0,0,0,0.2)'}`
-                      }
-                    : undefined
-                }
-              >
-                {tab.label}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* =========================================================================
-          CARD INTERATIVO DA QUESTÃO (ESTILO EXATO DA PLATAFORMA)
-          ========================================================================= */}
-      <div className="rounded-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 shadow-xl shadow-zinc-200/50 dark:shadow-black/70 overflow-hidden transition-all duration-200">
-        {/* Barra Superior do Card */}
-        <div className="flex flex-wrap items-center justify-between gap-4 p-5 sm:p-6 border-b border-zinc-100 dark:border-zinc-800/70 bg-zinc-50/60 dark:bg-zinc-900/60">
-          <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 font-mono">
-            <span
-              className="font-black"
-              style={{ color: accentConfig.primaryHex }}
-            >
-              {TABS.find((t) => t.id === activeTab)?.label}
-            </span>
-            <span>•</span>
-            <span>
-              Questão {questionIndex + 1} de {tabQuestions.length}
-            </span>
+    <section className="py-18 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto w-full">
+      <div ref={ref} className={`reveal-up ${isVisible ? 'is-visible' : ''}`}>
+        {/* Cabeçalho da Seção com Abas Neutras Zinc */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 mb-3">
+              <BookOpenCheck className="w-3.5 h-3.5 shrink-0" />
+              <span>Experimente Agora sem Cadastro</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-[42px] font-black tracking-[-0.035em] text-zinc-950 dark:text-white leading-tight">
+              Resolução comentada na prática.
+            </h2>
+            <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base font-normal mt-2 max-w-xl">
+              Selecione uma alternativa abaixo para inspecionar o padrão de fundamentação clínica alternativa por alternativa.
+            </p>
           </div>
 
-          {/* Pílulas de Navegação por Número (1, 2, 3, 4, 5) */}
-          <div className="flex items-center gap-1.5">
-            {tabQuestions.map((_, idx) => {
-              const isCurrent = idx === questionIndex;
-              const answeredKey = `${activeTab}-${idx}`;
-              const hasAnswered = Boolean(userAnswers[answeredKey]);
-              const answerIsCorrect =
-                userAnswers[answeredKey] === tabQuestions[idx].correct_answer;
-
+          {/* Seletor de Modalidade (Residência por padrão) */}
+          <div
+            role="tablist"
+            aria-label="Modalidades de prova"
+            className="flex items-center gap-1 p-1 rounded-2xl bg-zinc-200/70 dark:bg-zinc-900 border border-zinc-300/70 dark:border-zinc-800 overflow-x-auto no-scrollbar shrink-0"
+          >
+            {TABS.map((tab) => {
+              const isActive = activeTab === tab.id;
               return (
                 <button
-                  key={idx}
+                  key={tab.id}
                   type="button"
-                  onClick={() => setQuestionIndex(idx)}
-                  className={`w-7 h-7 rounded-full text-xs font-black flex items-center justify-center transition-all cursor-pointer ${
-                    isCurrent
-                      ? 'text-white shadow-xs'
-                      : hasAnswered
-                      ? answerIsCorrect
-                        ? 'bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/40'
-                        : 'bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-500/40'
-                      : 'bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => handleSelectTab(tab.id)}
+                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all duration-150 cursor-pointer whitespace-nowrap ${
+                    isActive
+                      ? 'shadow-xs'
+                      : 'text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-white/60 dark:hover:bg-zinc-800/60'
                   }`}
                   style={
-                    isCurrent
+                    isActive
                       ? {
                           backgroundColor: accentConfig.primaryHex,
-                          color: accentConfig.primaryContrastHex || '#ffffff'
+                          color: accentConfig.primaryContrastHex
                         }
                       : undefined
                   }
                 >
-                  {idx + 1}
+                  {tab.label}
                 </button>
               );
             })}
           </div>
         </div>
 
-        {/* Corpo da Questão */}
-        <div className="p-5 sm:p-8 space-y-6">
-          {/* Tags de Identificação Médica */}
-          <div className="flex flex-wrap items-center gap-2">
-            <span
-              className="px-2.5 py-1 rounded-md text-[11px] font-extrabold uppercase tracking-wide border"
-              style={{
-                backgroundColor: accentConfig.bgRgba,
-                color: accentConfig.primaryHex,
-                borderColor: accentConfig.borderRgba
-              }}
-            >
-              {currentQuestion.banca}
-            </span>
-            <span className="px-2.5 py-1 rounded-md text-[11px] font-mono font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-              {currentQuestion.year}
-            </span>
-            <span className="px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-100 dark:bg-slate-800/60 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-800">
-              {currentQuestion.especialidade}
-            </span>
-            {currentQuestion.tema && (
-              <span className="hidden sm:inline-block px-2.5 py-1 rounded-md text-[11px] font-medium text-slate-500 dark:text-slate-400">
-                • {currentQuestion.tema}
+        {/* Card Interativo da Questão */}
+        <div className="rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 shadow-xl shadow-zinc-200/40 dark:shadow-black/60 overflow-hidden">
+          {/* Barra Superior do Card */}
+          <div className="flex flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-7 border-b border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/80 dark:bg-zinc-900/60">
+            <div className="flex flex-wrap items-center gap-2 text-xs font-bold uppercase tracking-wider text-zinc-700 dark:text-zinc-300 tabular-nums">
+              <span
+                className="px-2.5 py-0.5 rounded-md font-extrabold"
+                style={{
+                  backgroundColor: accentConfig.primaryHex,
+                  color: accentConfig.primaryContrastHex
+                }}
+              >
+                {TABS.find((t) => t.id === activeTab)?.label}
               </span>
-            )}
-          </div>
-
-          {/* Enunciado Clínico */}
-          <div className="text-slate-800 dark:text-slate-100 text-sm sm:text-base leading-relaxed font-normal">
-            {renderFormattedMedicalText(currentQuestion.statement)}
-          </div>
-
-          {/* Alternativas de Resposta */}
-          <div className="space-y-3 pt-2">
-            {currentQuestion.options.map((option) => {
-              const isSelected = selectedAnswer === option.letter;
-              const isOptionCorrect = option.letter === currentQuestion.correct_answer;
-
-              let optionStyle =
-                'bg-zinc-50/70 dark:bg-[var(--bg-input)] border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:border-[var(--primary-color)]/60 hover:bg-zinc-100 dark:hover:bg-zinc-800/40';
-              let badgeStyle =
-                'bg-white dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300';
-
-              if (isAnswered) {
-                if (isOptionCorrect) {
-                  optionStyle =
-                    'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-500 text-emerald-950 dark:text-emerald-100 ring-1 ring-emerald-500/80';
-                  badgeStyle = 'bg-emerald-600 text-white border-emerald-600';
-                } else if (isSelected) {
-                  optionStyle =
-                    'bg-rose-50 dark:bg-rose-950/30 border-rose-500 text-rose-950 dark:text-rose-100 ring-1 ring-rose-500/80';
-                  badgeStyle = 'bg-rose-600 text-white border-rose-600';
-                } else {
-                  optionStyle =
-                    'opacity-60 bg-zinc-50/40 dark:bg-[var(--bg-page)] border-zinc-200 dark:border-zinc-800/60 text-zinc-500 dark:text-zinc-400';
-                }
-              }
-
-              return (
-                <button
-                  key={option.letter}
-                  type="button"
-                  onClick={() => handleSelectOption(option.letter)}
-                  disabled={isAnswered}
-                  className={`w-full p-3.5 sm:p-4 rounded-2xl border text-left flex items-start gap-3.5 transition-all duration-200 cursor-pointer ${optionStyle} ${
-                    !isAnswered ? 'hover:scale-[1.008]' : ''
-                  }`}
-                >
-                  <div
-                    className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl border flex items-center justify-center font-heading font-black text-xs shrink-0 transition-colors shadow-xs ${badgeStyle}`}
-                  >
-                    {isAnswered && isOptionCorrect ? (
-                      <CheckCircle2 className="w-4 h-4 text-white" />
-                    ) : isAnswered && isSelected ? (
-                      <XCircle className="w-4 h-4 text-white" />
-                    ) : (
-                      option.letter
-                    )}
-                  </div>
-                  <div className="text-xs sm:text-sm font-medium leading-relaxed pt-0.5">
-                    {renderFormattedMedicalText(option.text)}
-                  </div>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* =========================================================================
-              PAINEL DE RESOLUÇÃO COMENTADA PADRÃO-OURO (REVELADO AO RESPONDER)
-              ========================================================================= */}
-          {isAnswered && (
-            <div className="mt-6 p-5 sm:p-6 rounded-2xl bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 space-y-4 animate-fadeIn">
-              <div className="flex items-center justify-between gap-3">
-                <div className="flex items-center gap-2">
-                  {isCorrect ? (
-                    <span className="flex items-center gap-1.5 text-xs font-black uppercase text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/70 px-2.5 py-1 rounded-md border border-emerald-300 dark:border-emerald-800">
-                      <CheckCircle2 className="w-3.5 h-3.5" />
-                      <span>Resposta Correta!</span>
-                    </span>
-                  ) : (
-                    <span className="flex items-center gap-1.5 text-xs font-black uppercase text-rose-600 dark:text-rose-400 bg-rose-100 dark:bg-rose-950/70 px-2.5 py-1 rounded-md border border-rose-300 dark:border-rose-800">
-                      <XCircle className="w-3.5 h-3.5" />
-                      <span>Resposta Incorreta</span>
-                    </span>
-                  )}
-                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
-                    Gabarito Oficial: <strong className="text-emerald-600 dark:text-emerald-400">{currentQuestion.correct_answer}</strong>
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1 text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
-                  <BookOpenCheck className="w-3.5 h-3.5" />
-                  <span>Resolução Comentada</span>
-                </div>
-              </div>
-
-              {/* Texto explicativo clínico */}
-              <div className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-line bg-white/70 dark:bg-slate-900/60 p-4 rounded-xl border border-slate-200/80 dark:border-slate-800/80">
-                {renderFormattedMedicalText(currentQuestion.commentary)}
-              </div>
-
-              {/* Botão para próxima questão */}
-              <div className="flex items-center justify-end pt-2">
-                {questionIndex < tabQuestions.length - 1 ? (
-                  <button
-                    type="button"
-                    onClick={handleNext}
-                    className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-extrabold transition-all cursor-pointer shadow-md hover:opacity-95"
-                    style={{
-                      backgroundColor: accentConfig.primaryHex,
-                      color: accentConfig.primaryContrastHex || '#ffffff',
-                      boxShadow: `0 4px 14px ${accentConfig.borderRgba || 'rgba(0,0,0,0.2)'}`
-                    }}
-                  >
-                    <span>Próxima Questão</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={() => onOpenAuth('register')}
-                    className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-extrabold hover:bg-emerald-700 transition-all cursor-pointer shadow-md shadow-emerald-600/30"
-                  >
-                    <Sparkles className="w-3.5 h-3.5" />
-                    <span>Acessar Todas as Questões (+130.000)</span>
-                  </button>
-                )}
-              </div>
+              <span className="text-zinc-400">•</span>
+              <span>
+                Questão {questionIndex + 1} de {tabQuestions.length}
+              </span>
+              {highlightedBanca && (
+                <span className="normal-case font-semibold text-emerald-700 dark:text-emerald-300 bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 rounded-md">
+                  Filtro ativo: {highlightedBanca}
+                </span>
+              )}
             </div>
-          )}
 
-          {/* Navegação Inferior (Anterior / Próxima) */}
-          <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800/60">
-            <button
-              type="button"
-              onClick={handlePrev}
-              disabled={questionIndex === 0}
-              className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
-            >
-              <ChevronLeft className="w-4 h-4" />
-              <span>Anterior</span>
-            </button>
+            {/* Navegação Rápida por Número (1..5) */}
+            <div className="flex items-center gap-1.5">
+              {tabQuestions.map((_, idx) => {
+                const isCurrent = idx === questionIndex;
+                const answeredKey = `${activeTab}-${idx}`;
+                const hasAnswered = Boolean(userAnswers[answeredKey]);
+                const answerIsCorrect =
+                  userAnswers[answeredKey] === tabQuestions[idx].correct_answer;
 
-            <span className="text-xs font-bold text-slate-400 font-mono">
-              {questionIndex + 1} / {tabQuestions.length}
-            </span>
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    aria-label={`Ir para questão ${idx + 1}`}
+                    onClick={() => {
+                      setQuestionIndex(idx);
+                      setHighlightedBanca(null);
+                    }}
+                    className={`w-7 h-7 rounded-lg text-xs font-extrabold flex items-center justify-center transition-all cursor-pointer tabular-nums ${
+                      isCurrent
+                        ? 'shadow-xs'
+                        : hasAnswered
+                          ? answerIsCorrect
+                            ? 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 border border-emerald-500/40'
+                            : 'bg-rose-500/20 text-rose-700 dark:text-rose-300 border border-rose-500/40'
+                          : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                    }`}
+                    style={
+                      isCurrent
+                        ? {
+                            backgroundColor: accentConfig.primaryHex,
+                            color: accentConfig.primaryContrastHex
+                          }
+                        : undefined
+                    }
+                  >
+                    {idx + 1}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
 
-            <button
-              type="button"
-              onClick={handleNext}
-              disabled={questionIndex === tabQuestions.length - 1}
-              className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
-            >
-              <span>Próxima</span>
-              <ChevronRight className="w-4 h-4" />
-            </button>
+          {/* Corpo da Questão */}
+          <div key={currentKey} className="p-5 sm:p-8 space-y-6 animate-in fade-in duration-200">
+            {/* Metadados da Banca com Alto Contraste WCAG AA */}
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="px-2.5 py-1 rounded-lg text-[11px] font-extrabold uppercase tracking-wide bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950">
+                {currentQuestion.banca}
+              </span>
+              <span className="px-2.5 py-1 rounded-lg text-[11px] font-mono font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200 border border-zinc-200 dark:border-zinc-700 tabular-nums">
+                {currentQuestion.year}
+              </span>
+              <span className="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700">
+                {currentQuestion.especialidade}
+              </span>
+              {currentQuestion.tema && (
+                <span className="hidden sm:inline-block px-2 py-1 text-xs font-medium text-zinc-600 dark:text-zinc-400">
+                  • {currentQuestion.tema}
+                </span>
+              )}
+            </div>
+
+            {/* Enunciado Clínico */}
+            <div className="text-zinc-900 dark:text-zinc-100 text-sm sm:text-[15px] leading-relaxed font-normal">
+              {renderFormattedMedicalText(currentQuestion.statement)}
+            </div>
+
+            {/* Alternativas */}
+            <div className="space-y-2.5 pt-1">
+              {currentQuestion.options.map((option) => {
+                const isSelected = selectedAnswer === option.letter;
+                const isOptionCorrect = option.letter === currentQuestion.correct_answer;
+
+                let optionStyle =
+                  'bg-zinc-50/80 dark:bg-[#18181b] border-zinc-200/90 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 hover:border-zinc-400 dark:hover:border-zinc-600 hover:bg-zinc-100/80 dark:hover:bg-zinc-800/60';
+                let badgeStyle =
+                  'bg-white dark:bg-zinc-800 border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200';
+
+                if (isAnswered) {
+                  if (isOptionCorrect) {
+                    optionStyle =
+                      'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-500 text-emerald-950 dark:text-emerald-100 ring-1 ring-emerald-500/70';
+                    badgeStyle = 'bg-emerald-600 text-white border-emerald-600';
+                  } else if (isSelected) {
+                    optionStyle =
+                      'bg-rose-50 dark:bg-rose-950/30 border-rose-500 text-rose-950 dark:text-rose-100 ring-1 ring-rose-500/70';
+                    badgeStyle = 'bg-rose-600 text-white border-rose-600';
+                  } else {
+                    optionStyle =
+                      'opacity-60 bg-zinc-50/40 dark:bg-[#121215] border-zinc-200 dark:border-zinc-800/60 text-zinc-600 dark:text-zinc-400';
+                  }
+                }
+
+                return (
+                  <button
+                    key={option.letter}
+                    type="button"
+                    onClick={() => handleSelectOption(option.letter)}
+                    disabled={isAnswered}
+                    className={`w-full p-3.5 sm:p-4 rounded-xl border text-left flex items-start gap-3.5 transition-all duration-150 cursor-pointer ${optionStyle}`}
+                  >
+                    <div
+                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg border flex items-center justify-center font-extrabold text-xs shrink-0 transition-colors ${badgeStyle}`}
+                    >
+                      {isAnswered && isOptionCorrect ? (
+                        <CheckCircle2 className="w-4 h-4 text-white" />
+                      ) : isAnswered && isSelected ? (
+                        <XCircle className="w-4 h-4 text-white" />
+                      ) : (
+                        option.letter
+                      )}
+                    </div>
+                    <div className="text-xs sm:text-sm font-medium leading-relaxed pt-0.5">
+                      {renderFormattedMedicalText(option.text)}
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Painel de Resolução Comentada (Revelado ao Responder) */}
+            {isAnswered && (
+              <div className="mt-6 p-5 sm:p-6 rounded-2xl bg-zinc-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-4 animate-in fade-in duration-200">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex items-center gap-2.5">
+                    {isCorrect ? (
+                      <span className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase text-emerald-800 dark:text-emerald-300 bg-emerald-500/15 px-2.5 py-1 rounded-lg border border-emerald-500/30">
+                        <CheckCircle2 className="w-3.5 h-3.5" />
+                        <span>Resposta Correta</span>
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase text-rose-800 dark:text-rose-300 bg-rose-500/15 px-2.5 py-1 rounded-lg border border-rose-500/30">
+                        <XCircle className="w-3.5 h-3.5" />
+                        <span>Resposta Incorreta</span>
+                      </span>
+                    )}
+                    <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300">
+                      Gabarito Oficial:{' '}
+                      <strong className="text-emerald-700 dark:text-emerald-400">
+                        {currentQuestion.correct_answer}
+                      </strong>
+                    </span>
+                  </div>
+
+                  <div className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 dark:text-emerald-400">
+                    <BookOpenCheck className="w-4 h-4" />
+                    <span>Fundamentação Padrão-Ouro</span>
+                  </div>
+                </div>
+
+                <div className="text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed whitespace-pre-line bg-white dark:bg-[#121215] p-4 rounded-xl border border-zinc-200/80 dark:border-zinc-800">
+                  {renderFormattedMedicalText(currentQuestion.commentary)}
+                </div>
+
+                <div className="flex items-center justify-end pt-1">
+                  {questionIndex < tabQuestions.length - 1 ? (
+                    <button
+                      type="button"
+                      onClick={handleNext}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95"
+                      style={{
+                        backgroundColor: accentConfig.primaryHex,
+                        color: accentConfig.primaryContrastHex
+                      }}
+                    >
+                      <span>Próxima Questão</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => onOpenAuth('register')}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all cursor-pointer shadow-sm"
+                    >
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>Desbloquear +200 Mil Questões</span>
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Barra Inferior Anterior / Próxima */}
+            <div className="flex items-center justify-between pt-4 border-t border-zinc-200/70 dark:border-zinc-800/70">
+              <button
+                type="button"
+                onClick={handlePrev}
+                disabled={questionIndex === 0}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                <span>Anterior</span>
+              </button>
+
+              <span className="text-xs font-bold text-zinc-600 dark:text-zinc-400 font-mono tabular-nums">
+                {questionIndex + 1} / {tabQuestions.length}
+              </span>
+
+              <button
+                type="button"
+                onClick={handleNext}
+                disabled={questionIndex === tabQuestions.length - 1}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                <span>Próxima</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Faixa Inferior de Conversão */}
-      <div className="mt-8 text-center">
-        <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-          Gostou da resolução comentada alternativa por alternativa?{' '}
-          <button
-            type="button"
-            onClick={() => onOpenAuth('register')}
-            className="font-extrabold hover:underline cursor-pointer"
-            style={{ color: accentConfig.primaryHex }}
-          >
-            Crie sua conta e acesse o banco completo agora →
-          </button>
-        </p>
+        {/* Chamada Contextual com Contraste WCAG AA Garantido */}
+        <div className="mt-7 text-center">
+          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+            {hasAnsweredAny
+              ? 'Gostou da profundidade clínica dos comentários?'
+              : 'Quer filtrar questões por banca, ano, especialidade e subfoco?'}{' '}
+            <button
+              type="button"
+              onClick={() => onOpenAuth('register')}
+              className="font-bold text-zinc-950 dark:text-white underline underline-offset-4 hover:opacity-80 cursor-pointer ml-1"
+            >
+              Crie sua conta gratuita e acesse +200 mil questões →
+            </button>
+          </p>
+        </div>
       </div>
     </section>
   );

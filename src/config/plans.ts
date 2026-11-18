@@ -26,7 +26,7 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
     installmentValue: 49.90,
     savingsPercentage: 0,
     features: [
-      'Acesso completo a 133k+ questões comentadas',
+      'Acesso completo a +200 mil questões comentadas',
       'Filtros avançados (ENARE, USP, AMRIGS, PSU-MG e mais)',
       'Métricas psicométricas TRI e cálculo de percentil',
       'Provas oficiais na íntegra com cronômetro real',

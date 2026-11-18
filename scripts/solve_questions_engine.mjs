@@ -10,15 +10,15 @@ if (fs.existsSync('.env.local')) {
   });
 }
 
-// CHAVE PAGA BLOQUEADA POR SEGURANÇA CONFORME SOLICITAÇÃO DO USUÁRIO (CUSTO R$ 0,00)
-export const PAID_KEY = ''; 
+// CHAVE PAGA HOMOLOGADA PELO USUÁRIO (Gemini 3.1 Flash Lite)
+export const PAID_KEY = env.GEMINI_API_KEY_PAID || '';
 
 const paidValues = new Set([
   env.GEMINI_API_KEY_PAID,
   env.GEMINI_API_KEY_ON_DEMAND
 ].filter(Boolean));
 
-// Carrega ESTRITAMENTE as chaves GRATUITAS (bloqueia 100% a chave paga)
+// Carrega ESTRITAMENTE as chaves GRATUITAS para o pool rotativo geral
 const rawKeys = Object.keys(env)
   .filter(k => k.startsWith('GEMINI_API_KEY'))
   .filter(k => !k.includes('PAID') && !k.includes('DEMAND') && !k.includes('BILLING'))
@@ -30,9 +30,18 @@ const rawKeys = Object.keys(env)
   .map(k => env[k])
   .filter(k => k && !paidValues.has(k) && !k.endsWith('Ukug') && !k.endsWith('rO9A') && !k.endsWith('Myxw'));
 
-export const API_KEYS = rawKeys.filter((k, idx, self) => self.indexOf(k) === idx);
+const argSingleKey = process.argv.find(a => a.startsWith('--key='));
+const useOnlySingleKey = process.argv.includes('--single-key') || Boolean(argSingleKey);
 
-console.log(`🔒 MODO 100% GRATUITO ATIVO: Chave paga BLOQUEADA. ${API_KEYS.length} chaves gratuitas em rotação.`);
+export const API_KEYS = useOnlySingleKey
+  ? [argSingleKey ? argSingleKey.split('=')[1] : (env.GEMINI_API_KEY || rawKeys[0] || '')].filter(Boolean)
+  : rawKeys.filter((k, idx, self) => self.indexOf(k) === idx);
+
+if (useOnlySingleKey) {
+  console.log(`🔒 MODO CHAVE ÚNICA ATIVO: Usando EXCLUSIVAMENTE a chave (...${API_KEYS[0].slice(-6)}) no plano gratuito (Custo R$ 0,00).`);
+} else {
+  console.log(`🔒 MODO 100% GRATUITO ATIVO: Chave paga BLOQUEADA. ${API_KEYS.length} chaves gratuitas em rotação (Custo R$ 0,00).`);
+}
 
 let keyIndex = 0;
 export function getNextApiKey() {
@@ -56,7 +65,7 @@ let catalog = null;
 if (fs.existsSync(CATALOG_PATH)) {
   try {
     catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
-  } catch {}
+  } catch { }
 }
 
 /**
@@ -254,7 +263,8 @@ export function markPairExhausted(keyIdx, model, reason = '') {
  * garantindo o PRINCÍPIO DO GABARITO IMUTÁVEL (ÂNCORA DE OURO)
  * com suporte multimodal nativo, teto de 650 caracteres e estruturação de assertivas.
  */
-export async function solveQuestionDeep(question) {
+export async function solveQuestionDeep(question, specialtyOverride = null, modelOverride = null, forcePaid = false) {
+  const shouldUsePaid = Boolean(forcePaid || process.argv.includes('--paid'));
   const formattedOptions = (question.options || [])
     .map(opt => `${opt.letter}) ${opt.text}`)
     .join('\n');
@@ -273,8 +283,8 @@ export async function solveQuestionDeep(question) {
 
   const optLetters = (question.options || []).map(o => o.letter).join(', ');
   const optionsSchemaExample = (question.options || [])
-    .map(o => o.letter === goldAnswer 
-      ? `    "${o.letter}": "Conceito padrão-ouro em **negrito**"` 
+    .map(o => o.letter === goldAnswer
+      ? `    "${o.letter}": "Conceito padrão-ouro em **negrito**"`
       : `    "${o.letter}": "Erro em **negrito** e correção (máx 120 carac)"`)
     .join(',\n');
 
@@ -301,7 +311,7 @@ export async function solveQuestionDeep(question) {
     if (part) imageParts.push(part);
   }
 
-  const hasRoman = /\b(I|II|III|IV)\b/.test(statement) && 
+  const hasRoman = /\b(I|II|III|IV)\b/.test(statement) &&
     (statement.includes('I.') || statement.includes('I -') || statement.includes('I –') || statement.includes('I)') || statement.includes('I :') || statement.includes('I, ') || statement.includes('I e '));
 
   const roleInstruction = getSpecialtyGuideline(question.especialidade || question.specialty, question.tema);
@@ -382,12 +392,25 @@ ${optionsSchemaExample}
     }
   ];
 
-  for (let attempt = 1; attempt <= 15; attempt++) {
-    const pair = getNextPair();
-    if (!pair) {
-      throw new Error('Todas as chaves esgotaram suas cotas disponíveis.');
+  for (let attempt = 1; attempt <= 25; attempt++) {
+    let activeKey;
+    let keyIdx;
+    let activeModel;
+
+    if (shouldUsePaid) {
+      activeKey = PAID_KEY;
+      keyIdx = 'PAGA';
+      activeModel = modelOverride || 'gemini-3.1-flash-lite';
+    } else {
+      const pair = getNextPair();
+      if (!pair) {
+        throw new Error('Todas as chaves gratuitas esgotaram suas cotas disponíveis.');
+      }
+      activeKey = pair.key;
+      keyIdx = pair.keyIdx;
+      activeModel = modelOverride || pair.model;
     }
-    const { key: activeKey, keyIdx, model: activeModel } = pair;
+
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${activeModel}:generateContent?key=${activeKey}`;
 
     const controller = new AbortController();
@@ -412,14 +435,26 @@ ${optionsSchemaExample}
       if (!res.ok) {
         const errText = await res.text();
         if (res.status === 401) {
-          console.warn(`⚠️ Chave [${keyIdx + 1}/${API_KEYS.length}] não autorizada (401).`);
-          markPairExhausted(keyIdx, activeModel, '401 não autorizada');
+          console.warn(`⚠️ Chave [${keyIdx}/${API_KEYS.length}] não autorizada (401).`);
+          if (!shouldUsePaid) markPairExhausted(keyIdx, activeModel, '401 não autorizada');
           continue;
         }
         if (res.status === 429) {
+          if (shouldUsePaid) {
+            console.warn(`⏳ Rate limit temporário na chave paga (${activeModel}). Aguardando 5s...`);
+            await new Promise(r => setTimeout(r, 5000));
+            continue;
+          }
           markPairExhausted(keyIdx, activeModel, 'rate limit 429');
-          const waitTime = Math.min(attempt * 800, 3500);
-          await new Promise(r => setTimeout(r, waitTime));
+          const totalSlots = API_KEYS.length * AVAILABLE_MODELS.length;
+          if (exhaustedPairs.size >= totalSlots) {
+            console.log(`⏳ Todos os ${totalSlots} pares atingiram limite por minuto. Aguardando 15s para renovação da janela RPM...`);
+            await new Promise(r => setTimeout(r, 15000));
+            exhaustedPairs.clear();
+          } else {
+            const waitTime = Math.min(attempt * 800, 3000);
+            await new Promise(r => setTimeout(r, waitTime));
+          }
           continue;
         }
         if (res.status >= 500) {

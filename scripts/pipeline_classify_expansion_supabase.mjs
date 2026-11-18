@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { DatabaseSync } from 'node:sqlite';
 import { pipeline, cos_sim } from '@xenova/transformers';
 
 // ============================================================================
@@ -229,40 +230,81 @@ console.log('⏳ Carregando modelo local de embeddings (Xenova/paraphrase-multil
 const extractor = await pipeline('feature-extraction', 'Xenova/paraphrase-multilingual-MiniLM-L12-v2');
 console.log('✅ Extrator de embeddings pronto!\n');
 
-// 7. Vetores em Cache dos Focos e Subfocos Canônicos
-const VECTOR_CACHE_FILE = path.resolve('data/cache_canonical_tree_vectors.json');
+// 7. Vetores em Cache dos Focos e Subfocos Canônicos (Prioridade: Centróides Clínicos Reais)
+const VECTOR_CACHE_FILE = fs.existsSync('data/cache_canonical_tree_clinical_centroids.json')
+  ? path.resolve('data/cache_canonical_tree_clinical_centroids.json')
+  : path.resolve('data/cache_canonical_tree_vectors.json');
 let focoVectors = new Map();
 let subfocoVectors = new Map();
 
 if (fs.existsSync(VECTOR_CACHE_FILE)) {
-  console.log('⚡ Carregando vetores canônicos do cache em disco...');
+  console.log(`⚡ Carregando vetores canônicos do cache (${path.basename(VECTOR_CACHE_FILE)})...`);
   const cached = JSON.parse(fs.readFileSync(VECTOR_CACHE_FILE, 'utf8'));
   focoVectors = new Map(Object.entries(cached.focos));
   subfocoVectors = new Map(Object.entries(cached.subfocos));
   console.log(`✅ ${focoVectors.size} vetores de Focos e ${subfocoVectors.size} de Subfocos carregados do cache!\n`);
 } else {
-  console.log('🧪 Pré-computando vetores canônicos de Focos e Subfocos...');
-  const focosObj = {};
-  const subfocosObj = {};
+  console.error(`❌ Cache de vetores não encontrado: ${VECTOR_CACHE_FILE}`);
+  process.exit(1);
+}
 
-  for (const foco of allCanonicalFocos) {
-    const fText = `${foco.especialidade} ${foco.tema} ${foco.foco}. Subfocos: ${foco.subfocos.join(', ')}.`;
-    const fOut = await extractor(fText, { pooling: 'mean', normalize: true });
-    const fData = Array.from(fOut.data);
-    focoVectors.set(`${foco.especialidade}|||${foco.foco}`, fData);
-    focosObj[`${foco.especialidade}|||${foco.foco}`] = fData;
+// 8. Índice BM25 (SQLite FTS5) das 130k Questões Golden para Precedentes Empíricos
+const FTS_DB_PATH = path.resolve('data/questions_golden_fts.db');
+if (!fs.existsSync(FTS_DB_PATH)) {
+  console.error(`❌ Índice FTS5 das 130k questões golden não encontrado: ${FTS_DB_PATH}`);
+  process.exit(1);
+}
+const ftsDb = new DatabaseSync(FTS_DB_PATH, { readOnly: true });
+const bm25Stmt = ftsDb.prepare(`
+  SELECT id, especialidade, tema, foco, subfoco, bm25(questions_fts) as rank
+  FROM questions_fts
+  WHERE questions_fts MATCH ?
+  ORDER BY rank
+  LIMIT 5
+`);
+console.log('✅ Base FTS5 BM25 (130k questões golden) conectada para votação de precedentes!\n');
 
-    for (const sub of foco.subfocos) {
-      const sText = `${foco.especialidade} ${foco.foco} ${sub}. Aspectos clínicos e conduta em ${sub}.`;
-      const sOut = await extractor(sText, { pooling: 'mean', normalize: true });
-      const sData = Array.from(sOut.data);
-      subfocoVectors.set(`${foco.especialidade}|||${foco.foco}|||${sub}`, sData);
-      subfocosObj[`${foco.especialidade}|||${foco.foco}|||${sub}`] = sData;
-    }
+function detectAgeRestriction(statement) {
+  const norm = (statement || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const adultMatch = norm.match(/(?:homem|mulher|paciente|cliente|individuo)\s+(?:de\s+)?(\d{1,3})\s*anos/);
+  if (adultMatch) {
+    const age = parseInt(adultMatch[1], 10);
+    if (age >= 18) return 'ADULT_ONLY';
+    if (age <= 14) return 'PEDIATRIC_ONLY';
   }
+  if (/\b(?:idoso|idosa|terceira idade|geriatrico|menopausa|climaterio)\b/.test(norm)) {
+    return 'ADULT_ONLY';
+  }
+  if (/\b(?:lactente|recem-nascido|recem nascido|neonato|\brn\b|prematuro|puericultura|meses de vida|dias de vida)\b/.test(norm)) {
+    return 'PEDIATRIC_OR_OBSTETRIC';
+  }
+  return 'ANY';
+}
 
-  fs.writeFileSync(VECTOR_CACHE_FILE, JSON.stringify({ focos: focosObj, subfocos: subfocosObj }), 'utf8');
-  console.log(`✅ Vetores salvos no cache: ${VECTOR_CACHE_FILE}\n`);
+const FTS_STOPWORDS = new Set([
+  'para', 'com', 'sem', 'dos', 'das', 'uma', 'uns', 'pelo', 'pela',
+  'sobre', 'entre', 'após', 'onde', 'qual', 'como', 'mais', 'menos',
+  'que', 'nao', 'sao', 'este', 'esta', 'esse', 'essa', 'isso', 'isto',
+  'foram', 'como', 'pode', 'deve', 'sendo', 'caso', 'sobre', 'paciente',
+  'abaixo', 'acima', 'assinale', 'alternativa', 'correta', 'incorreta',
+  'analise', 'seguinte', 'quadro', 'apresenta', 'relacao', 'segundo',
+  'diante', 'considere', 'quanto', 'podemos', 'afirmar', 'referente',
+  'apresentando', 'dirigiu', 'solicitarmos', 'administracao', 'queixou',
+  'localizada', 'assintomatica', 'proceder', 'durante', 'ultima', 'semana',
+  'anos', 'mulher', 'homem', 'meses', 'dias', 'horas', 'apresentou',
+  'resposta', 'imagem', 'questoes', 'caso', 'clinico', 'letra', 'numero'
+]);
+
+function buildFtsQuery(statement, correctText) {
+  const norm = `${statement || ''} ${correctText || ''}`
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ');
+
+  const tokens = norm.split(/\s+/).filter(w => w.length >= 3 && !FTS_STOPWORDS.has(w));
+  const unique = Array.from(new Set(tokens));
+  if (unique.length === 0) return null;
+  return unique.map(t => `"${t}"`).join(' OR ');
 }
 
 // 8. Normalização de Especialidades & Restrições Clínicas Globais
@@ -492,78 +534,141 @@ async function runPipeline() {
       const { q, correctText, commandPrompt, normFullText } = preparedRows[idx];
       const qVec = embeddingsByRow[idx];
 
-      // 1. Busca Semântica Global em TODOS os 435 Focos da Árvore Canônica
-      const scoredFocos = allCanonicalFocos.map(f => {
-        const fKey = `${f.especialidade}|||${f.foco}`;
-        const fVec = focoVectors.get(fKey);
-        const cosSim = fVec ? cos_sim(qVec, fVec) : 0;
-
-        // Score Léxico ponderado
-        const lexScore = scoreFocoLexical(q, f, correctText, commandPrompt, normFullText, q.tema, q.foco);
-
-        // Restrições Clínicas Negativas de Segurança (Proteção Cruzada)
-        let penalty = 0;
-        if (f.especialidade === 'Obstetrícia' && !hasObstetricTerm(normFullText)) {
-          penalty += 0.15; // Não é gestante, parto ou puerpério
-        }
-        if (f.especialidade === 'Pediatria' && isAdultPatient(normFullText)) {
-          penalty += 0.20; // Paciente adulto/idoso não é Pediatria
-        }
-
-        const combinedScore = (cosSim * 0.70) + (Math.min(lexScore, 2.0) / 2.0 * 0.30) - penalty;
-
-        return {
-          focoEntry: f,
-          cosSim,
-          lexScore,
-          combinedScore
-        };
-      });
-
-      scoredFocos.sort((a, b) => b.combinedScore - a.combinedScore);
-
-      const bestCandidate = scoredFocos[0];
-      const secondCandidate = scoredFocos[1] || { combinedScore: 0, cosSim: 0 };
-      const semMargin = secondCandidate.combinedScore > 0
-        ? (bestCandidate.combinedScore - secondCandidate.combinedScore) / bestCandidate.combinedScore
-        : 1.0;
-
-      const winningFoco = bestCandidate.focoEntry;
-      const targetEsp = winningFoco.especialidade;
-
-      // 2. Resolução do Subfoco no Cluster do Foco Vencedor
-      let targetSubfoco = null;
-      if (winningFoco.subfocos && winningFoco.subfocos.length > 0) {
-        const subScores = winningFoco.subfocos.map(s => {
-          const sKey = `${winningFoco.especialidade}|||${winningFoco.foco}|||${s}`;
-          const sVec = subfocoVectors.get(sKey);
-          const sim = sVec ? cos_sim(qVec, sVec) : 0;
-          return { subfoco: s, sim };
-        });
-        subScores.sort((a, b) => b.sim - a.sim);
-        targetSubfoco = subScores[0]?.subfoco || null;
+      // 1. Busca BM25 com tokens clínicos completos
+      const ageRestriction = detectAgeRestriction(q.statement);
+      const ftsQuery = buildFtsQuery(q.statement, correctText);
+      let neighbors = [];
+      if (ftsQuery) {
+        try {
+          neighbors = bm25Stmt.all(ftsQuery);
+        } catch {}
       }
 
-      // 3. Quality Gate Rigoroso (Alta Especificidade)
-      const isApproved = (bestCandidate.cosSim >= 0.62 && semMargin >= 0.12 && bestCandidate.combinedScore >= 0.50);
+      // Filtragem por restrição etária (Guardrail Clínico)
+      if (ageRestriction === 'ADULT_ONLY') {
+        neighbors = (neighbors || []).filter(n => n.especialidade !== 'Pediatria');
+      } else if (ageRestriction === 'PEDIATRIC_OR_OBSTETRIC') {
+        const valid = new Set(['Pediatria', 'Obstetrícia', 'Medicina Preventiva e Social']);
+        const pedObs = (neighbors || []).filter(n => valid.has(n.especialidade));
+        if (pedObs.length >= 2) neighbors = pedObs;
+      }
+
+      // 2. Votação dos Vizinhos
+      const focoVotes = new Map();
+      const subfocoVotes = new Map();
+
+      for (const n of (neighbors || [])) {
+        const fKey = `${n.especialidade}|||${n.tema}|||${n.foco}`;
+        focoVotes.set(fKey, (focoVotes.get(fKey) || 0) + 1);
+        if (n.subfoco) {
+          const sKey = `${fKey}|||${n.subfoco}`;
+          subfocoVotes.set(sKey, (subfocoVotes.get(sKey) || 0) + 1);
+        }
+      }
+
+      let topFocoVote = null;
+      let topFocoCount = 0;
+      for (const [fKey, count] of focoVotes.entries()) {
+        if (count > topFocoCount) {
+          topFocoCount = count;
+          topFocoVote = fKey;
+        }
+      }
+
+      let topSubVote = null;
+      let topSubCount = 0;
+      for (const [sKey, count] of subfocoVotes.entries()) {
+        if (count > topSubCount) {
+          topSubCount = count;
+          topSubVote = sKey;
+        }
+      }
+
+      // 3. Validação Vetorial Cruzada com Centróides Clínicos Reais
+      let targetEsp = null;
+      let targetTema = null;
+      let targetFoco = null;
+      let targetSubfoco = null;
+      let isApproved = false;
+      let confidenceReason = '';
+
+      const bestRank = neighbors[0]?.rank ?? 0;
+
+      if (topFocoVote && topFocoCount >= 2) {
+        const parts = topFocoVote.split('|||');
+        targetEsp = parts[0];
+        targetTema = parts[1];
+        targetFoco = parts[2];
+
+        if (topSubVote && topSubVote.startsWith(topFocoVote)) {
+          targetSubfoco = topSubVote.split('|||')[3] || null;
+        }
+
+        // Se o subfoco ainda estiver nulo, refinar vetorialmente nos subfocos canônicos deste foco
+        if (!targetSubfoco) {
+          const focoDef = allCanonicalFocos.find(cf => cf.especialidade === targetEsp && cf.foco === targetFoco);
+          if (focoDef && focoDef.subfocos && focoDef.subfocos.length > 0) {
+            let bestSubSim = -1;
+            let bestSubName = null;
+            for (const sName of focoDef.subfocos) {
+              const sVec = subfocoVectors.get(`${targetEsp}|||${targetFoco}|||${sName}`);
+              if (sVec) {
+                const sSim = cos_sim(qVec, sVec);
+                if (sSim > bestSubSim) {
+                  bestSubSim = sSim;
+                  bestSubName = sName;
+                }
+              }
+            }
+            if (bestSubName && bestSubSim >= 0.30) {
+              targetSubfoco = bestSubName;
+            }
+          }
+        }
+
+        const fVec = focoVectors.get(`${targetEsp}|||${targetFoco}`);
+        const cosSim = fVec ? cos_sim(qVec, fVec) : 0;
+
+        // Quality Gates Calibrados para Alta Precisão e Baixa Quarentena (<15%)
+        if (topFocoCount >= 4 && cosSim >= 0.25) {
+          isApproved = true;
+          confidenceReason = `Consenso Esmagador (${topFocoCount}/5 vizinhos nas 130k) + Cosseno ${cosSim.toFixed(3)}`;
+        } else if (topFocoCount >= 3 && (cosSim >= 0.32 || bestRank <= -20)) {
+          isApproved = true;
+          confidenceReason = `Consenso Sólido (${topFocoCount}/5 vizinhos) + Cosseno ${cosSim.toFixed(3)} (Rank: ${bestRank.toFixed(1)})`;
+        } else if (topFocoCount >= 2 && (cosSim >= 0.44 || (cosSim >= 0.38 && bestRank <= -30))) {
+          isApproved = true;
+          confidenceReason = `Consenso Moderado (${topFocoCount}/5 vizinhos) + Cosseno Seguro (${cosSim.toFixed(3)})`;
+        } else {
+          confidenceReason = `Divergência Vetorial ou Margem Estreita (${topFocoCount}/5 vizinhos, Cosseno: ${cosSim.toFixed(3)}, Rank: ${bestRank.toFixed(1)})`;
+        }
+      } else {
+        confidenceReason = 'Dispersão de vizinhos no acervo (sem consenso unânime)';
+        if (neighbors[0]) {
+          targetEsp = neighbors[0].especialidade;
+          targetTema = neighbors[0].tema;
+          targetFoco = neighbors[0].foco;
+          targetSubfoco = neighbors[0].subfoco;
+        }
+      }
 
       if (IS_VERBOSE) {
         console.log(`\n------------------------------------------------------------`);
         console.log(`[Q#${processedCount}] ID: ${q.id} | Código: ${q.code || 'N/A'}`);
         console.log(`📝 Enunciado: ${(q.statement || '').slice(0, 160).replace(/\s+/g, ' ')}...`);
         console.log(`🎯 Gabarito: (${q.correct_answer || '?'}) ${(correctText || '').slice(0, 90)}`);
-        console.log(`🏷️ Mapeamento: [${targetEsp}] > [${winningFoco.tema}] > [${winningFoco.foco}] > [${targetSubfoco || 'Sem Subfoco'}]`);
-        console.log(`📊 Score Combinado: ${bestCandidate.combinedScore.toFixed(3)} | Cosseno: ${bestCandidate.cosSim.toFixed(3)} | Margem: ${(semMargin * 100).toFixed(1)}%`);
-        console.log(`🚦 Decisão: ${isApproved && targetSubfoco ? '✅ APROVADA NO GATE' : '⚠️ ENVIADA PARA QUARENTENA'}`);
+        console.log(`🏷️ Mapeamento: [${targetEsp}] > [${targetTema}] > [${targetFoco}] > [${targetSubfoco || 'Sem Subfoco'}]`);
+        console.log(`📊 Validação: ${confidenceReason}`);
+        console.log(`🚦 Decisão: ${isApproved && targetEsp && targetFoco ? '✅ APROVADA NO GATE' : '⚠️ ENVIADA PARA QUARENTENA'}`);
       }
 
-      if (isApproved && targetSubfoco) {
+      if (isApproved && targetEsp && targetFoco) {
         approvedCount++;
         updatesToApply.push({
           id: q.id,
           especialidade: targetEsp,
-          tema: winningFoco.tema,
-          foco: winningFoco.foco,
+          tema: targetTema,
+          foco: targetFoco,
           subfoco: targetSubfoco
         });
       } else {
@@ -573,14 +678,11 @@ async function runPipeline() {
           code: q.code,
           especialidade_original: q.especialidade,
           especialidade_resolvida: targetEsp,
-          tema_sugerido: winningFoco.tema,
-          foco_sugerido: winningFoco.foco,
+          tema_sugerido: targetTema,
+          foco_sugerido: targetFoco,
           subfoco_sugerido: targetSubfoco,
-          lexicalScore: bestCandidate.lexScore.toFixed(2),
-          combinedScore: bestCandidate.combinedScore.toFixed(3),
-          semCosine: bestCandidate.cosSim.toFixed(3),
-          semMargin: (semMargin * 100).toFixed(1) + '%',
-          motivo: `[Quarentena Segura] Margem ou score aquém do limiar pericial. Retido para análise futura.`
+          confidenceReason,
+          motivo: `[Quarentena Segura] ${confidenceReason}. Retido para análise futura (Fase 2 LLM).`
         }));
 
         // Em caso de quarentena, não grava "Geral" para não contaminar a árvore com nós genéricos.

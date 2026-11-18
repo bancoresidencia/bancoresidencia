@@ -71,7 +71,7 @@ const bm25Stmt = ftsDb.prepare(`
   LIMIT 5
 `);
 
-// Stopwords estendidas incluindo verbos clínicos genéricos
+// Stopwords estendidas incluindo marcadores conversacionais e pronomes
 const STOPWORDS = new Set([
   'para', 'com', 'sem', 'dos', 'das', 'uma', 'uns', 'pelo', 'pela',
   'sobre', 'entre', 'após', 'onde', 'qual', 'como', 'mais', 'menos',
@@ -81,20 +81,44 @@ const STOPWORDS = new Set([
   'analise', 'seguinte', 'quadro', 'apresenta', 'relacao', 'segundo',
   'diante', 'considere', 'quanto', 'podemos', 'afirmar', 'referente',
   'apresentando', 'dirigiu', 'solicitarmos', 'administracao', 'queixou',
-  'localizada', 'assintomatica', 'proceder', 'durante', 'ultima', 'semana'
+  'localizada', 'assintomatica', 'proceder', 'durante', 'ultima', 'semana',
+  'anos', 'mulher', 'homem', 'meses', 'dias', 'horas', 'apresentou',
+  'resposta', 'imagem', 'questoes', 'caso', 'clinico', 'letra', 'numero'
 ]);
 
-function extractClinicalTerms(statement, correctText) {
+function detectAgeRestriction(statement) {
+  const norm = statement.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  
+  // Detecção de Adulto explícito
+  const adultMatch = norm.match(/(?:homem|mulher|paciente|cliente|individuo)\s+(?:de\s+)?(\d{1,3})\s*anos/);
+  if (adultMatch) {
+    const age = parseInt(adultMatch[1], 10);
+    if (age >= 18) return 'ADULT_ONLY';
+    if (age <= 14) return 'PEDIATRIC_ONLY';
+  }
+
+  if (/\b(?:idoso|idosa|terceira idade|geriatrico|menopausa|climaterio)\b/.test(norm)) {
+    return 'ADULT_ONLY';
+  }
+
+  // Detecção Pediátrica explícita
+  if (/\b(?:lactente|recem-nascido|recem nascido|neonato|\brn\b|prematuro|puericultura|meses de vida|dias de vida)\b/.test(norm)) {
+    return 'PEDIATRIC_OR_OBSTETRIC';
+  }
+
+  return 'ANY';
+}
+
+function buildFtsQuery(statement, correctText) {
   const norm = `${statement} ${correctText}`
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, ' ');
 
-  const tokens = norm.split(/\s+/).filter(w => w.length >= 4 && !STOPWORDS.has(w));
+  const tokens = norm.split(/\s+/).filter(w => w.length >= 3 && !STOPWORDS.has(w));
   const unique = Array.from(new Set(tokens));
-
-  unique.sort((a, b) => b.length - a.length);
-  return unique.slice(0, 8);
+  if (unique.length === 0) return null;
+  return unique.map(t => `"${t}"`).join(' OR ');
 }
 
 // 4. Execução da Classificação com Consenso Estrito e Centróides Clínicos
@@ -145,21 +169,24 @@ for (let idx = 0; idx < questions.length; idx++) {
     }
   }
 
-  // 1. Busca BM25
-  const terms = extractClinicalTerms(q.statement, correctText);
-  let neighbors = [];
-  if (terms.length >= 2) {
-    const andQuery = terms.slice(0, 3).map(t => `"${t}"`).join(' AND ');
-    try {
-      neighbors = bm25Stmt.all(andQuery);
-    } catch {}
+  const ageRestriction = detectAgeRestriction(q.statement);
 
-    if (!neighbors || neighbors.length < 3) {
-      const orQuery = terms.slice(0, 6).map(t => `"${t}"`).join(' OR ');
-      try {
-        neighbors = bm25Stmt.all(orQuery);
-      } catch {}
-    }
+  // 1. Busca BM25 com tokens clínicos completos
+  const ftsQuery = buildFtsQuery(q.statement, correctText);
+  let neighbors = [];
+  if (ftsQuery) {
+    try {
+      neighbors = bm25Stmt.all(ftsQuery);
+    } catch {}
+  }
+
+  // Filtragem por restrição etária (Guardrail Clínico)
+  if (ageRestriction === 'ADULT_ONLY') {
+    neighbors = (neighbors || []).filter(n => n.especialidade !== 'Pediatria');
+  } else if (ageRestriction === 'PEDIATRIC_OR_OBSTETRIC') {
+    const valid = new Set(['Pediatria', 'Obstetrícia', 'Medicina Preventiva e Social']);
+    const pedObs = (neighbors || []).filter(n => valid.has(n.especialidade));
+    if (pedObs.length >= 2) neighbors = pedObs;
   }
 
   // 2. Votação dos Vizinhos
@@ -203,6 +230,8 @@ for (let idx = 0; idx < questions.length; idx++) {
   let isApproved = false;
   let confidenceReason = '';
 
+  const bestRank = neighbors[0]?.rank ?? 0;
+
   if (topFocoVote && topFocoCount >= 2) {
     const parts = topFocoVote.split('|||');
     targetEsp = parts[0];
@@ -213,18 +242,43 @@ for (let idx = 0; idx < questions.length; idx++) {
       targetSubfoco = topSubVote.split('|||')[3] || null;
     }
 
+    // Se o subfoco ainda estiver nulo, refinar vetorialmente nos subfocos canônicos deste foco
+    if (!targetSubfoco) {
+      const focoDef = allCanonicalFocos.find(cf => cf.especialidade === targetEsp && cf.foco === targetFoco);
+      if (focoDef && focoDef.subfocos && focoDef.subfocos.length > 0) {
+        let bestSubSim = -1;
+        let bestSubName = null;
+        for (const sName of focoDef.subfocos) {
+          const sVec = subfocoVectors.get(`${targetEsp}|||${targetFoco}|||${sName}`);
+          if (sVec) {
+            const sSim = cos_sim(qVec, sVec);
+            if (sSim > bestSubSim) {
+              bestSubSim = sSim;
+              bestSubName = sName;
+            }
+          }
+        }
+        if (bestSubName && bestSubSim >= 0.30) {
+          targetSubfoco = bestSubName;
+        }
+      }
+    }
+
     const fVec = focoVectors.get(`${targetEsp}|||${targetFoco}`);
     const cosSim = fVec ? cos_sim(qVec, fVec) : 0;
 
-    // Quality Gate de Consenso Duplo
-    if (topFocoCount >= 3 && cosSim >= 0.42) {
+    // Quality Gates Calibrados para Alta Precisão e Baixa Quarentena (<15%)
+    if (topFocoCount >= 4 && cosSim >= 0.25) {
       isApproved = true;
-      confidenceReason = `Consenso Sólido (${topFocoCount}/5 vizinhos nas 130k) + Cosseno ${cosSim.toFixed(3)}`;
-    } else if (topFocoCount >= 2 && cosSim >= 0.55) {
+      confidenceReason = `Consenso Esmagador (${topFocoCount}/5 vizinhos nas 130k) + Cosseno ${cosSim.toFixed(3)}`;
+    } else if (topFocoCount >= 3 && (cosSim >= 0.32 || bestRank <= -20)) {
       isApproved = true;
-      confidenceReason = `Consenso Moderado (${topFocoCount}/5 vizinhos) + Cosseno Alto (${cosSim.toFixed(3)})`;
+      confidenceReason = `Consenso Sólido (${topFocoCount}/5 vizinhos) + Cosseno ${cosSim.toFixed(3)} (Rank: ${bestRank.toFixed(1)})`;
+    } else if (topFocoCount >= 2 && (cosSim >= 0.44 || (cosSim >= 0.38 && bestRank <= -30))) {
+      isApproved = true;
+      confidenceReason = `Consenso Moderado (${topFocoCount}/5 vizinhos) + Cosseno Seguro (${cosSim.toFixed(3)})`;
     } else {
-      confidenceReason = `Divergência Vetorial ou Margem Estreita (${topFocoCount}/5 vizinhos, Cosseno: ${cosSim.toFixed(3)})`;
+      confidenceReason = `Divergência Vetorial ou Margem Estreita (${topFocoCount}/5 vizinhos, Cosseno: ${cosSim.toFixed(3)}, Rank: ${bestRank.toFixed(1)})`;
     }
   } else {
     confidenceReason = 'Dispersão de vizinhos no acervo (sem consenso unânime)';

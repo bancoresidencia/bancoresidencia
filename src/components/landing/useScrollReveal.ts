@@ -1,0 +1,99 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+
+export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(threshold = 0.14) {
+  const ref = useRef<T | null>(null);
+  const [isVisible, setIsVisible] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
+    return (
+      typeof IntersectionObserver === 'undefined' ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    );
+  });
+
+  useEffect(() => {
+    if (isVisible) return;
+    const el = ref.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        }
+      },
+      { threshold, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [isVisible, threshold]);
+
+  return { ref, isVisible };
+}
+
+export function useAnimatedCounter(target: number, isActive: boolean, durationMs = 1300): number {
+  const [value, setValue] = useState<number>(target);
+  const hasAnimatedRef = useRef(false);
+
+  useEffect(() => {
+    if (!isActive || hasAnimatedRef.current) return;
+    hasAnimatedRef.current = true;
+
+    const reducedMotion =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reducedMotion) return;
+
+    let rafId = 0;
+    const startTime = performance.now();
+
+    const tick = (now: number) => {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / durationMs, 1);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      setValue(Math.round(eased * target));
+      if (progress < 1) {
+        rafId = requestAnimationFrame(tick);
+      } else {
+        setValue(target);
+      }
+    };
+
+    rafId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafId);
+  }, [target, isActive, durationMs]);
+
+  return value;
+}
+
+export function useHeroParallaxOffset(): number {
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const y = Math.min(window.scrollY, 600);
+          setOffsetY(y);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return offsetY;
+}

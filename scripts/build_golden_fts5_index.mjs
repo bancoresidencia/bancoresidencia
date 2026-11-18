@@ -92,9 +92,11 @@ for (const r of rows) {
     .replace(/\s+/g, ' ')
     .trim();
 
+  const espNorm = r.especialidade === 'Cirurgia' ? 'Cirurgia Geral' : r.especialidade;
+
   insertStmt.run(
     r.id,
-    r.especialidade,
+    espNorm,
     r.tema,
     r.foco,
     r.subfoco,

@@ -37,12 +37,18 @@ const argFile = process.argv.find(a => a.startsWith('--file='));
 const argSpec = process.argv.find(a => a.startsWith('--specialty='));
 const argWorkers = process.argv.find(a => a.startsWith('--workers='));
 const argNext = process.argv.find(a => a.startsWith('--next='));
+const argModel = process.argv.find(a => a.startsWith('--model='));
+const argPaid = process.argv.includes('--paid');
 
 const DB_PATH = argFile ? argFile.split('=')[1] : 'data/ginecologia_direto_questions.json';
 const SPECIALTY_NAME = argSpec ? argSpec.split('=')[1] : 'Ginecologia';
 let CONCURRENCY = argWorkers ? parseInt(argWorkers.split('=')[1], 10) : 4;
-if (![4, 6, 7, 10].includes(CONCURRENCY)) CONCURRENCY = 4;
+if (![1, 2, 3, 4, 6, 8, 10, 15, 20, 30, 40].includes(CONCURRENCY)) CONCURRENCY = 4;
 const NEXT_SPECIALTY = argNext ? argNext.split('=')[1] : 'obstetricia';
+
+const isPreventiva = SPECIALTY_NAME.toLowerCase().includes('preventiva');
+const MODEL_NAME = argModel ? argModel.split('=')[1] : 'gemini-3.1-flash-lite';
+const USE_PAID = Boolean(argPaid || process.argv.includes('--paid'));
 
 const STATE_PATH = 'data/pipeline_progress_state.json';
 const SIGNAL_PATH = 'data/pipeline.signal';
@@ -55,6 +61,21 @@ if (!fs.existsSync(DB_PATH)) {
 
 // Carrega base local
 const allQuestions = JSON.parse(fs.readFileSync(DB_PATH, 'utf8'));
+
+// Normalização defensiva de options e ID
+allQuestions.forEach(q => {
+  if (typeof q.options === 'string') {
+    try {
+      q.options = JSON.parse(q.options);
+    } catch {
+      q.options = [];
+    }
+  }
+  if (!Array.isArray(q.options)) q.options = [];
+  if (q.id && typeof q.id === 'string') {
+    q.id = q.id.replace(/^(questions_|questions_expansion_direto_|expansion_direto_|questions_expansion_r_plus_|expansion_r_plus_|questions_expansion_revalida_|expansion_revalida_|questions_expansion_titulo_especialista_|expansion_titulo_especialista_)/, '');
+  }
+});
 
 // Filtro de verificação de imagem
 function checkHasImage(q) {
@@ -89,7 +110,7 @@ console.log(`🚀 ESTEIRA DE PRODUÇÃO CONTÍNUA — ${SPECIALTY_NAME.toUpperCa
 console.log(`- Base de dados: ${DB_PATH}`);
 console.log(`- Total de questões pendentes selecionadas: ${totalToProcess}`);
 console.log(`- Encadeamento posterior: ${NEXT_SPECIALTY ? NEXT_SPECIALTY.toUpperCase() : 'NENHUM'}`);
-console.log(`- Modelo: gemini-3.5-flash-lite (MODO 100% GRATUITO - Custo R$ 0,00)`);
+console.log(`- Modelo: ${MODEL_NAME} (${USE_PAID ? 'CHAVE API PAGA DEDICADA' : 'MODO 100% GRATUITO - Custo R$ 0,00'})`);
 console.log(`- Concorrência: ${CONCURRENCY} workers simultâneos`);
 console.log(`================================================================================\n`);
 
@@ -132,7 +153,7 @@ function updateStateFile(currentQ = null, overrideStatus = null) {
     specialty: SPECIALTY_NAME,
     nextSpecialty: NEXT_SPECIALTY,
     scope: 'Questões de Texto Puro com Gabarito Homologado (questions_direto)',
-    model: 'gemini-3.5-flash-lite (Pool Gratuito - Custo R$ 0,00)',
+    model: `${MODEL_NAME} (${USE_PAID ? 'Chave API Paga - Exclusiva Preventiva' : 'Pool Gratuito - Custo R$ 0,00'})`,
     concurrency: CONCURRENCY,
     totalToProcess,
     processedCount,
@@ -144,7 +165,19 @@ function updateStateFile(currentQ = null, overrideStatus = null) {
       candidateTokens: totalCandidateTokens,
       totalTokens: totalPromptTokens + totalCandidateTokens,
       avgPromptTokens: processedCount > 0 ? Math.round(totalPromptTokens / processedCount) : 0,
-      avgCandidateTokens: processedCount > 0 ? Math.round(totalCandidateTokens / processedCount) : 0
+      avgCandidateTokens: processedCount > 0 ? Math.round(totalCandidateTokens / processedCount) : 0,
+      pricing: USE_PAID ? {
+        inputPerMillion: 0.25,
+        outputPerMillion: 1.50,
+        costInputUSD: parseFloat(((totalPromptTokens / 1000000) * 0.25).toFixed(4)),
+        costOutputUSD: parseFloat(((totalCandidateTokens / 1000000) * 1.50).toFixed(4)),
+        totalCostUSD: parseFloat((((totalPromptTokens / 1000000) * 0.25) + ((totalCandidateTokens / 1000000) * 1.50)).toFixed(4)),
+        totalCostBRL: parseFloat(((((totalPromptTokens / 1000000) * 0.25) + ((totalCandidateTokens / 1000000) * 1.50)) * 5.78).toFixed(2))
+      } : {
+        costUSD: 0,
+        costBRL: 0,
+        tier: 'Gratuito'
+      }
     },
     velocity: {
       questionsPerMinute: qpm,
@@ -158,7 +191,7 @@ function updateStateFile(currentQ = null, overrideStatus = null) {
 
   try {
     fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 2), 'utf8');
-  } catch {}
+  } catch { }
 }
 
 function flushLocalDB() {
@@ -198,7 +231,7 @@ async function processQuestion(q) {
   updateStateFile({ code: q.code, id: q.id, tema: q.tema, especialidade: q.especialidade });
 
   try {
-    const res = await solveQuestionDeep(q, SPECIALTY_NAME);
+    const res = await solveQuestionDeep(q, SPECIALTY_NAME, MODEL_NAME, USE_PAID);
     if (!res || !res.commentary) {
       throw new Error('Retorno nulo ou inválido do motor de IA.');
     }
@@ -236,8 +269,8 @@ async function processQuestion(q) {
         options: cleanedOptions
       })
       .eq('id', q.id)
-      .then(() => {})
-      .catch(() => {});
+      .then(() => { })
+      .catch(() => { });
 
     // 3. Atualiza SQLite local se aberto
     if (dbLocal) {
@@ -247,7 +280,7 @@ async function processQuestion(q) {
           SET commentary = ?
           WHERE id = ? OR id = ? OR code = ?
         `).run(cleanCommentary, `questions_${q.id}`, `questions_expansion_direto_${q.id}`, q.code);
-      } catch {}
+      } catch { }
     }
 
     // Atualiza base em memória
@@ -322,15 +355,24 @@ async function runPipeline() {
   console.log(`- Falhas: ${errorCount}`);
 
   // Se houver próxima especialidade encadeada, dispara automaticamente!
-  if (NEXT_SPECIALTY === 'obstetricia') {
-    console.log(`\n➡️ INICIANDO AUTOMATICAMENTE A PRÓXIMA ESPECIALIDADE: OBSTETRÍCIA...`);
+  const NEXT_CHAIN = {
+    obstetricia: { file: 'data/obstetricia_direto_questions.json', name: 'Obstetrícia', next: 'pediatria' },
+    pediatria: { file: 'data/pediatria_direto_questions.json', name: 'Pediatria', next: 'cirurgia' },
+    cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia', next: 'clinica' },
+    clinica: { file: 'data/clinica_medica_final_questions.json', name: 'Clínica Médica', next: 'preventiva' },
+    preventiva: { file: 'data/medicina_preventiva_final_questions.json', name: 'Medicina Preventiva', next: 'none' }
+  };
+
+  if (NEXT_SPECIALTY && NEXT_CHAIN[NEXT_SPECIALTY.toLowerCase()]) {
+    const nextCfg = NEXT_CHAIN[NEXT_SPECIALTY.toLowerCase()];
+    console.log(`\n➡️ INICIANDO AUTOMATICAMENTE A PRÓXIMA ESPECIALIDADE: ${nextCfg.name.toUpperCase()}...`);
     const { spawn } = await import('child_process');
     spawn('node', [
       'scripts/produce_specialty_batch.mjs',
-      '--file=data/obstetricia_direto_questions.json',
-      '--specialty=Obstetrícia',
+      `--file=${nextCfg.file}`,
+      `--specialty=${nextCfg.name}`,
       `--workers=${CONCURRENCY}`,
-      '--next=none'
+      `--next=${nextCfg.next}`
     ], {
       stdio: 'inherit',
       detached: true
