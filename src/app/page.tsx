@@ -7,26 +7,27 @@ import { AuthScreen } from '@/components/AuthScreen';
 import { PLANS, PlanId, PlanDefinition } from '@/config/plans';
 import { useAuth } from '@/context/AuthContext';
 import { useSubscription } from '@/context/SubscriptionContext';
-import { HippocampusLoading } from '@/components/HippocampusLoading';
 
-interface LandingQueryEffectsProps {
-  isAuthenticated: boolean;
-  hasUser: boolean;
-  onPendingPlanDetected: (plan: PlanDefinition, openRegisterModal: boolean, planId: PlanId) => void;
-  onOpenLoginFromQuery: () => void;
-}
-
-function LandingQueryEffects({
-  isAuthenticated,
-  hasUser,
-  onPendingPlanDetected,
-  onOpenLoginFromQuery
-}: LandingQueryEffectsProps) {
+function HomeContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const { user, isAuthenticated, isAdmin, isLoading } = useAuth();
+  const { isSubscriptionExpired } = useSubscription();
 
-  // 1. Compatibilidade para links legados ?tab=...
+  const [authModal, setAuthModal] = useState<{
+    isOpen: boolean;
+    mode: 'login' | 'register';
+    planTitle?: string;
+  }>({
+    isOpen: false,
+    mode: 'login'
+  });
+
+  const [pendingCheckoutPlan, setPendingCheckoutPlan] = useState<PlanDefinition | null>(null);
+
+  // 1. Redirecionamento de compatibilidade para links legados com ?tab=...
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const tabParam = searchParams.get('tab');
     if (!tabParam) return;
 
@@ -61,12 +62,18 @@ function LandingQueryEffects({
     }
   }, [searchParams, router]);
 
-  // 2. Intenção de plano pendente ou redirecionamento ?auth=login
+  // 2. Detecta intenção de compra pendente na URL ou Storage
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     try {
-      const authParam = searchParams.get('auth');
-      if (authParam === 'login' && (!isAuthenticated || !hasUser)) {
-        onOpenLoginFromQuery();
+      const authParam = searchParams.get('auth') || searchParams.get('mode');
+      const isLoginParam = searchParams.get('login') === '1' || authParam === 'login';
+      if (isLoginParam && (!isAuthenticated || !user)) {
+        setAuthModal({ isOpen: true, mode: 'login' });
+        return;
+      }
+      if (authParam === 'register' && (!isAuthenticated || !user)) {
+        setAuthModal({ isOpen: true, mode: 'register' });
         return;
       }
 
@@ -83,37 +90,20 @@ function LandingQueryEffects({
             : null;
 
       if (targetPlanId && PLANS[targetPlanId]) {
-        const shouldOpenModal = (!isAuthenticated || !hasUser) && Boolean(isCheckoutParam || planParam);
-        onPendingPlanDetected(PLANS[targetPlanId], shouldOpenModal, targetPlanId);
+        const planDef = PLANS[targetPlanId];
+        setPendingCheckoutPlan(planDef);
+
+        if (!isAuthenticated || !user) {
+          if (isCheckoutParam || planParam) {
+            setAuthModal({ isOpen: true, mode: 'register', planTitle: targetPlanId });
+          }
+        }
       }
-    } catch {
-      // ignore storage errors
-    }
-  }, [isAuthenticated, hasUser, searchParams, onPendingPlanDetected, onOpenLoginFromQuery]);
+    } catch { }
+  }, [isAuthenticated, user, searchParams]);
 
-  return null;
-}
-
-export default function RootHomePage() {
-  const router = useRouter();
-  const { user, isAuthenticated, isAdmin, isLoading } = useAuth();
-  const { isSubscriptionExpired } = useSubscription();
-
-  const [authModal, setAuthModal] = useState<{
-    isOpen: boolean;
-    mode: 'login' | 'register';
-    planTitle?: string;
-  }>({
-    isOpen: false,
-    mode: 'login'
-  });
-
-  const [pendingCheckoutPlan, setPendingCheckoutPlan] = useState<PlanDefinition | null>(null);
-
-  const isUserFree =
-    !user?.subscriptionPlan || user?.subscriptionPlan === 'free' || isSubscriptionExpired;
-
-  // Redirecionamento não-bloqueante: visitantes frios veem o HTML SSR imediato da LandingPage (< 0.6s LCP)
+  // 3. Encaminha usuários autenticados para o Dashboard ou Checkout
+  const isUserFree = !user?.subscriptionPlan || user?.subscriptionPlan === 'free' || isSubscriptionExpired;
   useEffect(() => {
     if (!isLoading && isAuthenticated && user) {
       if (pendingCheckoutPlan && isUserFree && !isAdmin) {
@@ -124,50 +114,33 @@ export default function RootHomePage() {
     }
   }, [isLoading, isAuthenticated, user, pendingCheckoutPlan, isUserFree, isAdmin, router]);
 
-  const handlePendingPlanDetected = useCallback(
-    (plan: PlanDefinition, openRegisterModal: boolean, planId: PlanId) => {
-      setPendingCheckoutPlan(plan);
-      if (openRegisterModal) {
-        setAuthModal({ isOpen: true, mode: 'register', planTitle: planId });
+  const handleOpenAuth = useCallback((mode: 'login' | 'register' = 'login', planIdentifier?: string) => {
+    if (planIdentifier) {
+      const found = Object.values(PLANS).find(
+        (p) => p.id === planIdentifier || p.name.toLowerCase() === planIdentifier.toLowerCase()
+      );
+      if (found) {
+        setPendingCheckoutPlan(found);
       }
-    },
-    []
-  );
-
-  const handleOpenLoginFromQuery = useCallback(() => {
-    setAuthModal({ isOpen: true, mode: 'login' });
+    } else if (mode === 'login') {
+      setPendingCheckoutPlan(null);
+    }
+    setAuthModal({ isOpen: true, mode, planTitle: planIdentifier });
   }, []);
 
-  const handleOpenAuth = useCallback(
-    (mode: 'login' | 'register' = 'login', planIdentifier?: string) => {
-      if (planIdentifier) {
-        const found = Object.values(PLANS).find(
-          (p) => p.id === planIdentifier || p.name.toLowerCase() === planIdentifier.toLowerCase()
-        );
-        if (found) {
-          setPendingCheckoutPlan(found);
-        }
-      }
-      setAuthModal({ isOpen: true, mode, planTitle: planIdentifier });
-    },
-    []
-  );
-
-  if (!isLoading && isAuthenticated && user) {
-    return <HippocampusLoading fullScreen message="Acessando painel..." />;
+  // Enquanto a autenticação estiver checando, o HippocampusGlobalSplash cobre a tela
+  if (isLoading) {
+    return null;
   }
 
+  // Se já está autenticado, aguarda a conclusão da navegação para o dashboard
+  if (isAuthenticated && user) {
+    return null;
+  }
+
+  // Visitante não autenticado: Landing Page completa
   return (
     <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-sans">
-      <Suspense fallback={null}>
-        <LandingQueryEffects
-          isAuthenticated={isAuthenticated}
-          hasUser={Boolean(user)}
-          onPendingPlanDetected={handlePendingPlanDetected}
-          onOpenLoginFromQuery={handleOpenLoginFromQuery}
-        />
-      </Suspense>
-
       <LandingPage
         onOpenAuth={(mode = 'login', planTitle) => {
           handleOpenAuth(mode, planTitle);
@@ -177,10 +150,12 @@ export default function RootHomePage() {
         }}
       />
 
+      {/* Modal de Autenticação (Login / Cadastro) */}
       {authModal.isOpen && (
-        <div className="fixed inset-0 z-50 flex justify-center items-start sm:items-center p-3 sm:p-5 bg-black/70 backdrop-blur-xs overflow-y-auto animate-in fade-in duration-150">
+        <div className="fixed inset-0 z-50 flex justify-center items-start sm:items-center p-3 sm:p-5 bg-slate-950/70 backdrop-blur-xs overflow-y-auto animate-fadeIn">
           <div className="w-full max-w-xl sm:max-w-[620px] my-auto py-3 sm:py-6">
             <AuthScreen
+              key={`${authModal.mode}-${authModal.planTitle || 'default'}`}
               initialMode={authModal.mode}
               selectedPlanTitle={authModal.planTitle}
               onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
@@ -199,5 +174,13 @@ export default function RootHomePage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function RootHomePage() {
+  return (
+    <Suspense fallback={null}>
+      <HomeContent />
+    </Suspense>
   );
 }

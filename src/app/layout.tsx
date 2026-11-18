@@ -72,6 +72,7 @@ export default function RootLayout({
             __html: `
               (function() {
                 try {
+                  document.documentElement.classList.add('hippo-splash-active');
                   var m = localStorage.getItem('banco_theme_mode');
                   if (m === 'light') {
                     document.documentElement.classList.remove('dark');

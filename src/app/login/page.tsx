@@ -20,12 +20,16 @@ function LoginContent() {
   }, [isLoading, isAuthenticated, user, nextRoute, router]);
 
   if (isLoading) {
-    return <HippocampusLoading fullScreen message="Verificando sessão..." />;
+    return (
+      <div className="min-h-dvh flex items-center justify-center bg-[#09090b]">
+        <HippocampusLoading size="md" message="Verificando acesso..." fullScreen={false} />
+      </div>
+    );
   }
 
   return (
-    <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex items-center justify-center p-3 sm:p-6">
-      <div className="w-full max-w-xl sm:max-w-[620px] my-auto">
+    <div className="min-h-dvh bg-[var(--bg-page)] text-[var(--foreground)] flex items-start sm:items-center justify-center px-3 pt-[max(0.875rem,env(safe-area-inset-top,0px))] pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] sm:p-6 overflow-y-auto">
+      <div className="w-full max-w-xl sm:max-w-[540px] my-auto">
         <AuthScreen
           initialMode="login"
           onClose={() => router.push('/')}
@@ -40,7 +44,13 @@ function LoginContent() {
 
 export default function LoginPage() {
   return (
-    <Suspense fallback={<HippocampusLoading fullScreen message="Preparando acesso..." />}>
+    <Suspense
+      fallback={
+        <div className="min-h-dvh flex items-center justify-center bg-[#09090b]">
+          <HippocampusLoading size="md" message="Verificando acesso..." fullScreen={false} />
+        </div>
+      }
+    >
       <LoginContent />
     </Suspense>
   );

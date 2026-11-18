@@ -3,15 +3,15 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 
 const StatsDashboard = dynamic(
   () => import('@/components/StatsDashboard').then((mod) => mod.StatsDashboard),
   {
     ssr: false,
     loading: () => (
-      <div className="min-h-[70vh] flex flex-col items-center justify-center gap-3">
-        <div className="w-9 h-9 rounded-full border-2 border-primary border-t-transparent animate-spin" />
-        <span className="text-xs text-slate-400 font-medium">Carregando métricas psicométricas...</span>
+      <div className="min-h-[70vh] flex items-center justify-center p-8">
+        <HippocampusLoading size="md" message="Carregando métricas psicométricas..." fullScreen={false} />
       </div>
     )
   }

@@ -14,12 +14,13 @@ interface HippocampusLoadingProps {
  * - Superfície em Glassmorphism translúcido (efeito vidro jateado) quando fullScreen.
  * - Ciclo vetorial infinito a 60 FPS com pathLength="1" (precisão exata sem delay inicial).
  * - Adaptado dinamicamente a Light/Dark Mode e aos 7 acentos cromáticos da plataforma.
+ * - Indicador exclusivo para transições internas da aplicação (navegação entre abas, lazy loading de módulos).
  */
 export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
   className = '',
   size = 'md',
-  message,
-  fullScreen = true
+  message = 'Carregando...',
+  fullScreen = false
 }) => {
   const sizeMap = {
     sm: { width: '40px', height: '34px', minWidth: '40px' },
@@ -121,7 +122,7 @@ export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
       </div>
 
       {message && (
-        <span className="mt-4 text-[11px] font-semibold text-zinc-600 dark:text-zinc-300 tracking-wide">
+        <span className="mt-4 text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 tracking-wider uppercase animate-pulse">
           {message}
         </span>
       )}
@@ -161,12 +162,13 @@ export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
       aria-label={message || 'Carregando Hippocampus'}
     >
       <div
-        className="pointer-events-none absolute w-64 h-64 sm:w-80 sm:h-80 rounded-full blur-[100px] opacity-20 dark:opacity-25"
+        className="pointer-events-none absolute w-64 h-64 sm:w-80 sm:h-80 rounded-full blur-[100px] opacity-25"
         style={{ backgroundColor: 'var(--primary-color, #2563eb)' }}
         aria-hidden="true"
       />
+
       <div
-        className="hippo-glass-capsule backdrop-blur-2xl backdrop-saturate-150 relative overflow-hidden rounded-3xl px-9 py-7 flex flex-col items-center justify-center"
+        className="hippo-glass-capsule backdrop-blur-2xl backdrop-saturate-150 relative overflow-hidden rounded-3xl px-8 py-7 sm:px-11 sm:py-8 flex flex-col items-center justify-center max-w-[320px] w-full"
         style={{
           WebkitBackdropFilter: 'blur(28px) saturate(190%)',
           backdropFilter: 'blur(28px) saturate(190%)'
@@ -176,6 +178,7 @@ export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
           className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/80 dark:via-white/35 to-transparent"
           aria-hidden="true"
         />
+
         {vectorBlock}
       </div>
     </div>

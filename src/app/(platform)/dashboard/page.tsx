@@ -3,14 +3,17 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import dynamic from 'next/dynamic';
-
-import { DashboardSkeleton } from '@/components/dashboard/DashboardSkeleton';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 
 const StudentHomeDashboard = dynamic(
   () => import('@/components/StudentHomeDashboard').then((mod) => mod.StudentHomeDashboard),
   {
     ssr: false,
-    loading: () => <DashboardSkeleton />
+    loading: () => (
+      <div className="min-h-[70vh] flex items-center justify-center p-8">
+        <HippocampusLoading size="md" message="Carregando painel de estudos..." fullScreen={false} />
+      </div>
+    )
   }
 );
 import { useAuth } from '@/context/AuthContext';

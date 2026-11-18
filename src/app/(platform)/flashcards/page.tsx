@@ -3,6 +3,7 @@
 import React, { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { FlashcardsView } from '@/components/FlashcardsView';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 
 function FlashcardsContent() {
   const router = useRouter();
@@ -31,7 +32,13 @@ function FlashcardsContent() {
 export default function FlashcardsPage() {
   return (
     <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 animate-in fade-in duration-200">
-      <Suspense fallback={<div className="p-8 text-center text-xs text-slate-400">Carregando flashcards...</div>}>
+      <Suspense
+        fallback={
+          <div className="min-h-[50vh] flex items-center justify-center p-8">
+            <HippocampusLoading size="md" message="Carregando flashcards..." fullScreen={false} />
+          </div>
+        }
+      >
         <FlashcardsContent />
       </Suspense>
     </div>

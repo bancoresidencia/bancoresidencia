@@ -4,7 +4,7 @@ import React, { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { EmbeddedCheckoutScreen } from '@/components/EmbeddedCheckoutScreen';
 import { PLANS, PlanId, PlanDefinition } from '@/config/plans';
-import { Loader2 } from 'lucide-react';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 
 function CheckoutContent() {
   const router = useRouter();
@@ -35,7 +35,7 @@ export default function CheckoutPage() {
     <Suspense
       fallback={
         <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
-          <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
+          <HippocampusLoading size="md" message="Carregando checkout seguro..." fullScreen={false} />
         </div>
       }
     >
