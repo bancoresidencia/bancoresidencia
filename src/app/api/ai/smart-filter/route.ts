@@ -73,8 +73,10 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
   "filters": {
     "especialidades": ["Nome da Especialidade se identificada"],
     "temas": ["Nome do Tema médico se identificado"],
-    "focos": ["Foco clínico mais específico se houver"],
+    "focos": ["Foco clínico mais específico se houver (ex: Endometriose, Adenomiose, Pré-Eclâmpsia, Dengue)"],
     "subfocos": ["Subfoco específico se houver"],
+    "subSubfocos": ["Subsubfoco de 5º nível se houver"],
+    "apenasComImagem": false,
     "instituicoes": ["Sigla da banca se citada"],
     "modalidades": ["Residência Médica"],
     "anos": [2024, 2023],

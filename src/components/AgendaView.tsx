@@ -177,9 +177,16 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     return googleCalendarAccount && googleCalendarAccount !== 'Minha Agenda' ? googleCalendarAccount : (user?.email || 'Google Agenda');
   }, [googleCalendarAccount, user?.email]);
 
+  const realCalendarEventsKey = user?.id
+    ? `bancoresidencia_real_calendar_events_${user.id}`
+    : 'bancoresidencia_real_calendar_events_guest';
+  const exportedSlotsKey = user?.id
+    ? `bancoresidencia_exported_slots_${user.id}`
+    : 'bancoresidencia_exported_slots_guest';
+
   const [realCalendarEvents, setRealCalendarEvents] = useState<DailyScheduleSlot[]>(() => {
     if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_real_calendar_events');
+      const saved = localStorage.getItem(realCalendarEventsKey);
       if (saved) {
         try {
           return JSON.parse(saved);
@@ -193,7 +200,8 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
 
   const [userScheduledTasks, setUserScheduledTasks] = useState<DailyScheduleSlot[]>(() => {
     if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
+      const scopedKey = getUserScheduledTasksStorageKey(user?.id);
+      const saved = localStorage.getItem(scopedKey);
       if (saved) {
         try {
           const parsed: DailyScheduleSlot[] = JSON.parse(saved);
@@ -204,7 +212,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             !t.id.startsWith('ai_sug_')
           );
           if (cleanTasks.length !== parsed.length) {
-            localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(cleanTasks));
+            localStorage.setItem(scopedKey, JSON.stringify(cleanTasks));
           }
           return cleanTasks;
         } catch {
@@ -219,12 +227,28 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   const [exportedSlotIds, setExportedSlotIds] = useState<Record<string, boolean>>(() => {
     if (typeof window !== 'undefined') {
       try {
-        const saved = localStorage.getItem('bancoresidencia_exported_slots');
+        const saved = localStorage.getItem(exportedSlotsKey);
         if (saved) return JSON.parse(saved);
       } catch { }
     }
     return {};
   });
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const savedEvents = localStorage.getItem(realCalendarEventsKey);
+      setRealCalendarEvents(savedEvents ? JSON.parse(savedEvents) : []);
+    } catch {
+      setRealCalendarEvents([]);
+    }
+    try {
+      const savedExported = localStorage.getItem(exportedSlotsKey);
+      setExportedSlotIds(savedExported ? JSON.parse(savedExported) : {});
+    } catch {
+      setExportedSlotIds({});
+    }
+  }, [realCalendarEventsKey, exportedSlotsKey]);
 
   const { todaySessions, deleteSession, addManualSession } = useStudyTimer();
 
@@ -337,7 +361,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
             setLastCalendarSyncTime(nowStr);
             if (typeof window !== 'undefined') {
-              localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+              localStorage.setItem(realCalendarEventsKey, JSON.stringify(events));
               localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
             }
           }
@@ -364,7 +388,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
           const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
           setLastCalendarSyncTime(nowStr);
           if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+            localStorage.setItem(realCalendarEventsKey, JSON.stringify(events));
             localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
           }
         }
@@ -400,7 +424,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       if ((e.key === userTasksKey || e.key === 'bancoresidencia_user_scheduled_tasks') && e.newValue) {
         try { setUserScheduledTasks(JSON.parse(e.newValue)); } catch { }
       }
-      if (e.key === 'bancoresidencia_real_calendar_events' && e.newValue) {
+      if (e.key === realCalendarEventsKey && e.newValue) {
         try { setRealCalendarEvents(JSON.parse(e.newValue)); } catch { }
       }
       if (e.key === 'bancoresidencia_google_calendar_connected') {
@@ -701,7 +725,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
         localStorage.setItem('bancoresidencia_google_calendar_mode', 'ical');
         localStorage.setItem('bancoresidencia_google_ical_url', targetUrl);
-        localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+        localStorage.setItem(realCalendarEventsKey, JSON.stringify(events));
         localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
         if (data.calendarName) {
           localStorage.setItem('bancoresidencia_google_calendar_account', data.calendarName);
@@ -766,7 +790,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
           }
 
           if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+            localStorage.setItem(realCalendarEventsKey, JSON.stringify(events));
             localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
             if (accountEmail) {
               localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
@@ -807,7 +831,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
         setLastCalendarSyncTime(nowStr);
         if (typeof window !== 'undefined') {
-          localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+          localStorage.setItem(realCalendarEventsKey, JSON.stringify(events));
           localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
         }
         setCalendarSyncSuccessMsg(`Sincronizado! ${events.length} eventos atualizados.`);
@@ -836,7 +860,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       localStorage.removeItem('bancoresidencia_google_calendar_mode');
       localStorage.removeItem('bancoresidencia_google_access_token');
       localStorage.removeItem('bancoresidencia_google_ical_url');
-      localStorage.removeItem('bancoresidencia_real_calendar_events');
+      localStorage.removeItem(realCalendarEventsKey);
       localStorage.removeItem('bancoresidencia_google_last_sync');
       localStorage.removeItem('bancoresidencia_google_calendar_account');
     }
@@ -928,7 +952,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         setExportedSlotIds(prev => {
           const next = { ...prev, [newTask.id]: true };
           if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+            localStorage.setItem(exportedSlotsKey, JSON.stringify(next));
           }
           return next;
         });
@@ -1003,7 +1027,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         setExportedSlotIds(prev => {
           const next = { ...prev, [slot.id]: true };
           if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+            localStorage.setItem(exportedSlotsKey, JSON.stringify(next));
           }
           return next;
         });
@@ -1019,7 +1043,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         setExportedSlotIds(prev => {
           const next = { ...prev, [slot.id]: true };
           if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+            localStorage.setItem(exportedSlotsKey, JSON.stringify(next));
           }
           return next;
         });
@@ -1082,7 +1106,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       setExportedSlotIds(prev => {
         const next = { ...prev, ...newlyExported };
         if (typeof window !== 'undefined') {
-          localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+          localStorage.setItem(exportedSlotsKey, JSON.stringify(next));
         }
         return next;
       });
@@ -1100,7 +1124,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       setRealCalendarEvents(prev => prev.filter(e => e.id !== taskId));
       if (typeof window !== 'undefined') {
         const remaining = realCalendarEvents.filter(e => e.id !== taskId);
-        localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(remaining));
+        localStorage.setItem(realCalendarEventsKey, JSON.stringify(remaining));
       }
       try {
         await deleteEventInGoogleCalendarApi(taskId);
@@ -1121,7 +1145,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       const next = { ...prev };
       delete next[taskId];
       if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+        localStorage.setItem(exportedSlotsKey, JSON.stringify(next));
       }
       return next;
     });
@@ -1134,7 +1158,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       console.warn('Erro ao limpar tarefas remotas:', err);
     });
     if (typeof window !== 'undefined') {
-      localStorage.removeItem('bancoresidencia_exported_slots');
+      localStorage.removeItem(exportedSlotsKey);
       localStorage.removeItem('bancoresidencia_batch_sync_completed');
       localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
       if (user?.id) {

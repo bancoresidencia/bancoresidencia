@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   Layers,
   Plus,
@@ -60,6 +60,19 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   const [userCards, setUserCards] = useState<FlashcardItem[]>(() => {
     return flashcardsService.loadUserCreatedFlashcards(user?.id);
   });
+
+  useEffect(() => {
+    setDecks(flashcardsService.getCustomDecks(user?.id));
+    setUserCards(flashcardsService.loadUserCreatedFlashcards(user?.id));
+    if (user?.id) {
+      flashcardsService.syncRemoteDecks(user.id).then((syncedDecks) => {
+        setDecks(syncedDecks);
+      });
+      flashcardsService.syncRemoteUserCreatedCards(user.id).then((syncedCards) => {
+        setUserCards(syncedCards);
+      });
+    }
+  }, [user?.id]);
 
   const refreshData = () => {
     setDecks(flashcardsService.getCustomDecks(user?.id));

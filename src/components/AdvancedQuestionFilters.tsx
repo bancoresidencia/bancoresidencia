@@ -263,6 +263,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     filters.temas,
     filters.focos,
     filters.subfocos,
+    filters.subSubfocos,
+    filters.programaRplus,
+    filters.bancaOrganizadora,
+    filters.macrorregioes,
+    filters.apenasComImagem,
     filters.instituicoes,
     filters.anos,
     filters.dificuldade,
@@ -1010,14 +1015,64 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       });
     });
 
-    // Sub-subfocos (4º Nível)
+    // Subsubfocos (5º Nível)
     if (filters.subSubfocos) {
       filters.subSubfocos.forEach((ss) => {
         tags.push({
           id: `ss-${ss}`,
-          label: `4º Nível: ${formatSubSubfocoDisplay(ss)}`,
+          label: `Subsubfoco: ${formatSubSubfocoDisplay(ss)}`,
           onRemove: () => toggleSubSubfoco(ss)
         });
+      });
+    }
+
+    if (filters.programaRplus) {
+      filters.programaRplus.forEach((pr) => {
+        tags.push({
+          id: `pr-${pr}`,
+          label: pr,
+          onRemove: () =>
+            onChange({
+              ...filters,
+              programaRplus: (filters.programaRplus || []).filter((x) => x !== pr)
+            })
+        });
+      });
+    }
+
+    if (filters.bancaOrganizadora) {
+      filters.bancaOrganizadora.forEach((bo) => {
+        tags.push({
+          id: `bo-${bo}`,
+          label: `Banca: ${bo}`,
+          onRemove: () =>
+            onChange({
+              ...filters,
+              bancaOrganizadora: (filters.bancaOrganizadora || []).filter((x) => x !== bo)
+            })
+        });
+      });
+    }
+
+    if (filters.macrorregioes) {
+      filters.macrorregioes.forEach((mr) => {
+        tags.push({
+          id: `mr-${mr}`,
+          label: `Região: ${mr}`,
+          onRemove: () =>
+            onChange({
+              ...filters,
+              macrorregioes: (filters.macrorregioes || []).filter((x) => x !== mr)
+            })
+        });
+      });
+    }
+
+    if (filters.apenasComImagem) {
+      tags.push({
+        id: 'apenas-img',
+        label: 'Com Imagem / Exame',
+        onRemove: () => onChange({ ...filters, apenasComImagem: false })
       });
     }
 
@@ -1090,8 +1145,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               type="button"
               onClick={() => toggleModalidade('Acesso Direto')}
               className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Acesso Direto')
-                  ? 'text-white font-bold shadow-xs'
-                  : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
+                ? 'text-white font-bold shadow-xs'
+                : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
                 }`}
               style={{
                 backgroundColor: isModalidadeActive('Acesso Direto') ? accentConfig.primaryHex : undefined
@@ -1104,8 +1159,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               type="button"
               onClick={() => toggleModalidade('Revalida')}
               className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Revalida')
-                  ? 'text-white font-bold shadow-xs'
-                  : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
+                ? 'text-white font-bold shadow-xs'
+                : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
                 }`}
               style={{
                 backgroundColor: isModalidadeActive('Revalida') ? accentConfig.primaryHex : undefined
@@ -1118,8 +1173,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               type="button"
               onClick={() => toggleModalidade('R+')}
               className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('R+')
-                  ? 'text-white font-bold shadow-xs'
-                  : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
+                ? 'text-white font-bold shadow-xs'
+                : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
                 }`}
               style={{
                 backgroundColor: isModalidadeActive('R+') ? accentConfig.primaryHex : undefined
@@ -1132,8 +1187,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               type="button"
               onClick={() => toggleModalidade('Título de Especialista')}
               className={`px-3 sm:px-3.5 py-1.5 rounded-lg text-xs sm:text-sm transition-all cursor-pointer ${isModalidadeActive('Título de Especialista')
-                  ? 'text-white font-bold shadow-xs'
-                  : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
+                ? 'text-white font-bold shadow-xs'
+                : 'text-zinc-600 dark:text-zinc-400 font-medium hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-200/50 dark:hover:bg-zinc-800/50'
                 }`}
               style={{
                 backgroundColor: isModalidadeActive('Título de Especialista') ? accentConfig.primaryHex : undefined
@@ -1191,8 +1246,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <div className="relative flex flex-col items-end">
               <span
                 className={`text-2xl sm:text-3xl font-black tracking-tight font-sans tabular-nums transition-all duration-300 ease-out select-none ${isFilterActive
-                    ? 'text-zinc-700 dark:text-zinc-200 opacity-80'
-                    : 'text-zinc-900 dark:text-white opacity-100'
+                  ? 'text-zinc-700 dark:text-zinc-200 opacity-80'
+                  : 'text-zinc-900 dark:text-white opacity-100'
                   }`}
               >
                 {animatedCount.toLocaleString('pt-BR')}
@@ -1225,8 +1280,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           type="button"
           onClick={() => setMobileTab('conteudo')}
           className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-xl text-xs font-bold transition-all cursor-pointer ${mobileTab === 'conteudo'
-              ? 'text-white shadow-sm'
-              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+            ? 'text-white shadow-sm'
+            : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
             }`}
           style={{
             backgroundColor: mobileTab === 'conteudo' ? accentConfig.primaryHex : undefined
@@ -1246,8 +1301,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           type="button"
           onClick={() => setMobileTab('bancas')}
           className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-xl text-xs font-bold transition-all cursor-pointer ${mobileTab === 'bancas'
-              ? 'text-white shadow-sm'
-              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+            ? 'text-white shadow-sm'
+            : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
             }`}
           style={{
             backgroundColor: mobileTab === 'bancas' ? accentConfig.primaryHex : undefined
@@ -1383,8 +1438,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   {/* Linha 1: Nível Especialidade (Estilo Imagens 3 & 4) */}
                   <div
                     className={`flex items-center justify-between py-2.5 px-2 border-b border-zinc-100/40 dark:border-zinc-800/50 transition-colors cursor-pointer rounded-lg hover:bg-zinc-50 dark:hover:bg-zinc-900/40 ${isEspSelected
-                        ? 'text-zinc-900 dark:text-zinc-50 bg-zinc-100/60 dark:bg-zinc-900/40'
-                        : 'text-zinc-800 dark:text-zinc-200'
+                      ? 'text-zinc-900 dark:text-zinc-50 bg-zinc-100/60 dark:bg-zinc-900/40'
+                      : 'text-zinc-800 dark:text-zinc-200'
                       }`}
                   >
                     <div className="flex items-center gap-2.5 flex-1 min-w-0">
@@ -1396,8 +1451,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           toggleEspecialidade(esp.especialidade);
                         }}
                         className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${isEspSelected
-                            ? 'text-white shadow-xs'
-                            : 'border-zinc-300 dark:border-zinc-700 bg-transparent hover:border-zinc-400 dark:hover:border-zinc-500'
+                          ? 'text-white shadow-xs'
+                          : 'border-zinc-300 dark:border-zinc-700 bg-transparent hover:border-zinc-400 dark:hover:border-zinc-500'
                           }`}
                         style={{
                           backgroundColor: isEspSelected ? accentConfig.primaryHex : undefined,
@@ -1468,8 +1523,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             {/* Linha do Tema */}
                             <div
                               className={`flex items-center justify-between p-1.5 rounded-lg transition-colors cursor-pointer ${isTemaSelected
-                                  ? 'text-zinc-900 dark:text-white font-medium'
-                                  : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/60 text-zinc-700 dark:text-zinc-300'
+                                ? 'text-zinc-900 dark:text-white font-medium'
+                                : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/60 text-zinc-700 dark:text-zinc-300'
                                 }`}
                               style={{
                                 backgroundColor: isTemaSelected ? accentConfig.bgRgba : undefined
@@ -1483,8 +1538,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                     toggleTema(tem.tema);
                                   }}
                                   className={`w-4 h-4 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${isTemaSelected
-                                      ? 'text-white'
-                                      : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-500'
+                                    ? 'text-white'
+                                    : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-500'
                                     }`}
                                   style={{
                                     backgroundColor: isTemaSelected ? accentConfig.primaryHex : undefined,
@@ -1551,8 +1606,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                       {/* Linha do Foco */}
                                       <div
                                         className={`flex items-center justify-between p-1 rounded-md text-xs cursor-pointer transition-colors ${isFocoSelected
-                                            ? 'text-zinc-900 dark:text-white font-medium'
-                                            : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/60 text-zinc-700 dark:text-zinc-300'
+                                          ? 'text-zinc-900 dark:text-white font-medium'
+                                          : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/60 text-zinc-700 dark:text-zinc-300'
                                           }`}
                                         style={{
                                           backgroundColor: isFocoSelected ? accentConfig.bgRgba : undefined
@@ -1566,8 +1621,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                               toggleFoco(foc.foco);
                                             }}
                                             className={`w-4 h-4 rounded-md border flex items-center justify-center shrink-0 transition-all ${isFocoSelected
-                                                ? 'text-white'
-                                                : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-500'
+                                              ? 'text-white'
+                                              : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400 dark:hover:border-zinc-500'
                                               }`}
                                             style={{
                                               backgroundColor: isFocoSelected ? accentConfig.primaryHex : undefined,
@@ -1637,8 +1692,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                               <div key={sub} className="space-y-0.5">
                                                 <div
                                                   className={`flex items-center justify-between py-1 px-2 rounded-lg text-xs transition-colors ${isSubSelected
-                                                      ? 'font-semibold text-zinc-900 dark:text-white'
-                                                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/60'
+                                                    ? 'font-semibold text-zinc-900 dark:text-white'
+                                                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/60'
                                                     }`}
                                                 >
                                                   <div className="flex items-center gap-1.5 truncate min-w-0 flex-1">
@@ -1646,8 +1701,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                       type="button"
                                                       onClick={() => toggleSubfoco(sub)}
                                                       className={`w-3.5 h-3.5 rounded-md border flex items-center justify-center shrink-0 cursor-pointer ${isSubSelected
-                                                          ? 'text-white'
-                                                          : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
+                                                        ? 'text-white'
+                                                        : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
                                                         }`}
                                                       style={{
                                                         backgroundColor: isSubSelected ? accentConfig.primaryHex : undefined,
@@ -1699,7 +1754,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                     {subSubList.map((ss) => {
                                                       const isSsSelected =
                                                         (filters.subSubfocos && filters.subSubfocos.includes(ss)) || isSubSelected;
-                                                      const ssCount = 0;
+                                                      const baselineSsCount = currentBaseline.subSubfocos?.[ss] || 0;
+                                                      const ssCount = facetedCounts?.subSubfocos
+                                                        ? (hasRightFilters ? (facetedCounts.subSubfocos[ss] ?? 0) : (facetedCounts.subSubfocos[ss] ?? baselineSsCount))
+                                                        : baselineSsCount;
 
                                                       if (
                                                         qTerm &&
@@ -1715,15 +1773,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                           key={ss}
                                                           onClick={() => toggleSubSubfoco(ss)}
                                                           className={`flex items-center justify-between py-1 px-2 rounded-lg text-[11px] cursor-pointer transition-colors ${isSsSelected
-                                                              ? 'font-medium text-zinc-900 dark:text-white bg-zinc-100/70 dark:bg-zinc-800/50'
-                                                              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
+                                                            ? 'font-medium text-zinc-900 dark:text-white bg-zinc-100/70 dark:bg-zinc-800/50'
+                                                            : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
                                                             }`}
                                                         >
                                                           <div className="flex items-center gap-1.5 min-w-0 flex-1" title={ss}>
                                                             <div
                                                               className={`w-3 h-3 rounded border flex items-center justify-center shrink-0 ${isSsSelected
-                                                                  ? 'text-white'
-                                                                  : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
+                                                                ? 'text-white'
+                                                                : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
                                                                 }`}
                                                               style={{
                                                                 backgroundColor: isSsSelected ? accentConfig.primaryHex : undefined,
@@ -1851,8 +1909,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     type="button"
                     onClick={() => toggleInstituicao(banca.key)}
                     className={`px-2 py-0.5 rounded-lg text-[10.5px] font-semibold transition-all cursor-pointer flex items-center gap-1 shrink-0 border ${isSelected
-                        ? 'text-white shadow-xs'
-                        : 'bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/70 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-zinc-100'
+                      ? 'text-white shadow-xs'
+                      : 'bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200/70 dark:hover:bg-zinc-800 hover:text-zinc-900 dark:hover:text-zinc-100'
                       }`}
                     style={{
                       backgroundColor: isSelected ? accentConfig.primaryHex : undefined,
@@ -1910,8 +1968,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         type="button"
                         onClick={() => onChange({ ...filters, status: st })}
                         className={`py-2 px-3 sm:py-1.5 sm:px-1 min-h-[40px] text-center rounded-lg text-xs transition-all cursor-pointer whitespace-nowrap sm:truncate shrink-0 sm:shrink flex items-center justify-center font-medium ${isActive
-                            ? 'text-white shadow-sm font-bold'
-                            : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/50'
+                          ? 'text-white shadow-sm font-bold'
+                          : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/50'
                           }`}
                         style={{
                           backgroundColor: isActive
@@ -1985,8 +2043,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                 })
                               }
                               className={`py-1.5 text-center rounded-lg text-xs font-bold transition-all cursor-pointer ${isActive
-                                  ? 'text-white shadow-sm'
-                                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                                ? 'text-white shadow-sm'
+                                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                                 }`}
                               style={{
                                 backgroundColor: isActive ? accentConfig.primaryHex : undefined
@@ -2023,8 +2081,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                 })
                               }
                               className={`py-1.5 px-0.5 text-center rounded-lg text-[10px] sm:text-[11px] xl:text-xs font-bold transition-all cursor-pointer whitespace-nowrap tracking-tight ${isActive
-                                  ? 'text-white shadow-sm'
-                                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                                ? 'text-white shadow-sm'
+                                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                                 }`}
                               style={{
                                 backgroundColor: isActive ? accentConfig.primaryHex : undefined
@@ -2039,9 +2097,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     </div>
                   </div>
 
-                  {/* Linha 2: Ocultar anuladas / Ocultar revisadas */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3.5 flex items-center justify-between shadow-xs">
+                  {/* Linha 2: Ocultar anuladas / Ocultar revisadas / Com Imagem */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                    <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3 flex items-center justify-between shadow-xs">
                       <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">Ocultar anuladas</span>
                       <button
                         type="button"
@@ -2053,9 +2111,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             ocultarAnuladasErro: !filters.ocultarAnuladasErro
                           })
                         }
-                        className={`w-11 h-6 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${filters.ocultarAnuladasErro
-                            ? ''
-                            : 'bg-zinc-300 dark:bg-zinc-700 border-zinc-400/60 dark:border-zinc-600'
+                        className={`w-10 h-5.5 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${filters.ocultarAnuladasErro
+                          ? ''
+                          : 'bg-zinc-300 dark:bg-zinc-700 border-zinc-400/60 dark:border-zinc-600'
                           }`}
                         style={{
                           backgroundColor: filters.ocultarAnuladasErro ? accentConfig.primaryHex : undefined,
@@ -2063,13 +2121,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         }}
                       >
                         <span
-                          className={`w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${filters.ocultarAnuladasErro ? 'translate-x-5' : 'translate-x-0'
+                          className={`w-4 h-4 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${filters.ocultarAnuladasErro ? 'translate-x-4.5' : 'translate-x-0'
                             }`}
                         />
                       </button>
                     </div>
 
-                    <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3.5 flex items-center justify-between shadow-xs">
+                    <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3 flex items-center justify-between shadow-xs">
                       <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">Ocultar revisadas</span>
                       <button
                         type="button"
@@ -2081,9 +2139,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             ocultarRevisadas: !filters.ocultarRevisadas
                           })
                         }
-                        className={`w-11 h-6 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${filters.ocultarRevisadas
-                            ? ''
-                            : 'bg-zinc-300 dark:bg-zinc-700 border-zinc-400/60 dark:border-zinc-600'
+                        className={`w-10 h-5.5 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${filters.ocultarRevisadas
+                          ? ''
+                          : 'bg-zinc-300 dark:bg-zinc-700 border-zinc-400/60 dark:border-zinc-600'
                           }`}
                         style={{
                           backgroundColor: filters.ocultarRevisadas ? accentConfig.primaryHex : undefined,
@@ -2091,11 +2149,147 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         }}
                       >
                         <span
-                          className={`w-5 h-5 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${filters.ocultarRevisadas ? 'translate-x-5' : 'translate-x-0'
+                          className={`w-4 h-4 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${filters.ocultarRevisadas ? 'translate-x-4.5' : 'translate-x-0'
                             }`}
                         />
                       </button>
                     </div>
+
+                    <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3 flex items-center justify-between shadow-xs">
+                      <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">Com imagem</span>
+                      <button
+                        type="button"
+                        role="switch"
+                        aria-checked={Boolean(filters.apenasComImagem)}
+                        onClick={() =>
+                          onChange({
+                            ...filters,
+                            apenasComImagem: !filters.apenasComImagem
+                          })
+                        }
+                        className={`w-10 h-5.5 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${filters.apenasComImagem
+                          ? ''
+                          : 'bg-zinc-300 dark:bg-zinc-700 border-zinc-400/60 dark:border-zinc-600'
+                          }`}
+                        style={{
+                          backgroundColor: filters.apenasComImagem ? accentConfig.primaryHex : undefined,
+                          borderColor: filters.apenasComImagem ? accentConfig.primaryHex : undefined
+                        }}
+                      >
+                        <span
+                          className={`w-4 h-4 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${filters.apenasComImagem ? 'translate-x-4.5' : 'translate-x-0'
+                            }`}
+                        />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Linha 3: Banca Organizadora Pura & Macrorregião */}
+                  <div className="space-y-2 pt-1">
+                    <div className="space-y-1">
+                      <span className="text-[11px] font-bold text-zinc-700 dark:text-zinc-300 block">Banca Organizadora</span>
+                      <div className="flex flex-wrap gap-1">
+                        {['FGV / AOCP', 'FUVEST', 'VUNESP / FCC', 'Quadrix / IADES', 'FUNDATEC / AMRIGS', 'AREMG', 'COMVEST', 'SURCE', 'IAUPE / UPE'].map((org) => {
+                          const isOrgActive = Boolean(filters.bancaOrganizadora?.includes(org));
+                          return (
+                            <button
+                              key={org}
+                              type="button"
+                              onClick={() => {
+                                const cur = filters.bancaOrganizadora || [];
+                                const next = isOrgActive ? cur.filter((x) => x !== org) : [...cur, org];
+                                onChange({ ...filters, bancaOrganizadora: next });
+                              }}
+                              className={`px-2 py-1 rounded-lg text-[10.5px] font-semibold border transition-all cursor-pointer ${isOrgActive
+                                ? 'text-white shadow-xs'
+                                : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                                }`}
+                              style={{
+                                backgroundColor: isOrgActive ? accentConfig.primaryHex : undefined,
+                                borderColor: isOrgActive ? accentConfig.primaryHex : undefined
+                              }}
+                            >
+                              {org}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    <div className="space-y-1">
+                      <span className="text-[11px] font-bold text-zinc-700 dark:text-zinc-300 block">Macrorregião</span>
+                      <div className="flex flex-wrap gap-1">
+                        {['Sudeste', 'Sul', 'Nordeste', 'Centro-Oeste', 'Norte', 'Nacional'].map((reg) => {
+                          const isRegActive = Boolean(filters.macrorregioes?.includes(reg));
+                          return (
+                            <button
+                              key={reg}
+                              type="button"
+                              onClick={() => {
+                                const cur = filters.macrorregioes || [];
+                                const next = isRegActive ? cur.filter((x) => x !== reg) : [...cur, reg];
+                                onChange({ ...filters, macrorregioes: next });
+                              }}
+                              className={`px-2.5 py-1 rounded-lg text-[10.5px] font-semibold border transition-all cursor-pointer ${isRegActive
+                                ? 'text-white shadow-xs'
+                                : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                                }`}
+                              style={{
+                                backgroundColor: isRegActive ? accentConfig.primaryHex : undefined,
+                                borderColor: isRegActive ? accentConfig.primaryHex : undefined
+                              }}
+                            >
+                              {reg}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {(isModalidadeActive('R+') || isModalidadeActive('Título de Especialista')) && (
+                      <div className="space-y-1">
+                        <span className="text-[11px] font-bold text-zinc-700 dark:text-zinc-300 block">Programa R+ e Sociedade</span>
+                        <div className="flex flex-wrap gap-1">
+                          {[
+                            'R+ Clínica Médica',
+                            'R+ Cirurgia Geral',
+                            'R+ Pediatria',
+                            'R+ Ginecologia e Obstetrícia',
+                            'R+ Mastologia',
+                            'R+ Medicina Intensiva',
+                            'R+ Geriatria',
+                            'R+ Neonatologia',
+                            'R+ Urologia',
+                            'TEGO',
+                            'TECM',
+                            'SBOT'
+                          ].map((pr) => {
+                            const isPrActive = Boolean(filters.programaRplus?.includes(pr));
+                            return (
+                              <button
+                                key={pr}
+                                type="button"
+                                onClick={() => {
+                                  const cur = filters.programaRplus || [];
+                                  const next = isPrActive ? cur.filter((x) => x !== pr) : [...cur, pr];
+                                  onChange({ ...filters, programaRplus: next });
+                                }}
+                                className={`px-2 py-1 rounded-lg text-[10.5px] font-semibold border transition-all cursor-pointer ${isPrActive
+                                  ? 'text-white shadow-xs'
+                                  : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                                  }`}
+                                style={{
+                                  backgroundColor: isPrActive ? accentConfig.primaryHex : undefined,
+                                  borderColor: isPrActive ? accentConfig.primaryHex : undefined
+                                }}
+                              >
+                                {pr}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
@@ -2156,8 +2350,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             type="button"
                             onClick={() => handleSelectUltimosAnos(count)}
                             className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${isQuickActive
-                                ? 'text-white shadow-xs'
-                                : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800'
+                              ? 'text-white shadow-xs'
+                              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800'
                               }`}
                             style={{
                               backgroundColor: isQuickActive ? accentConfig.primaryHex : undefined
@@ -2187,8 +2381,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           type="button"
                           onClick={() => toggleYear(y)}
                           className={`shrink-0 px-3 py-1.5 text-center rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${isSelected
-                              ? 'text-white shadow-xs'
-                              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-white dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800'
+                            ? 'text-white shadow-xs'
+                            : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-white dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800'
                             }`}
                           style={{
                             backgroundColor: isSelected ? accentConfig.primaryHex : undefined
@@ -2295,8 +2489,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       setShowCustomQtd(false);
                     }}
                     className={`px-2 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${resolveCount === num && !showCustomQtd
-                        ? 'text-white shadow-xs'
-                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 sm:bg-transparent'
+                      ? 'text-white shadow-xs'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 sm:bg-transparent'
                       }`}
                     style={{
                       backgroundColor: resolveCount === num && !showCustomQtd ? accentConfig.primaryHex : undefined
@@ -2310,8 +2504,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   type="button"
                   onClick={() => setShowCustomQtd(!showCustomQtd)}
                   className={`px-1.5 py-1 rounded-md text-[11px] font-medium border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 transition-all cursor-pointer ${showCustomQtd || ![20, 50, 100].includes(resolveCount)
-                      ? 'text-white font-bold'
-                      : ''
+                    ? 'text-white font-bold'
+                    : ''
                     }`}
                   style={{
                     backgroundColor: (showCustomQtd || ![20, 50, 100].includes(resolveCount)) ? accentConfig.primaryHex : undefined,
@@ -2347,8 +2541,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     }
                   }}
                   className={`p-1.5 sm:px-2.5 sm:py-1 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 ${!filters.aleatorizar
-                      ? 'text-white shadow-xs'
-                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                    ? 'text-white shadow-xs'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                     }`}
                   style={{
                     backgroundColor: !filters.aleatorizar ? accentConfig.primaryHex : undefined
@@ -2367,8 +2561,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     }
                   }}
                   className={`p-1.5 sm:px-2.5 sm:py-1 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 ${filters.aleatorizar
-                      ? 'text-white shadow-xs'
-                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                    ? 'text-white shadow-xs'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                     }`}
                   style={{
                     backgroundColor: filters.aleatorizar ? accentConfig.primaryHex : undefined
@@ -2409,8 +2603,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   }
                 }}
                 className={`flex-1 sm:flex-initial text-xs sm:text-sm font-bold shadow-md shrink-0 ${displayedQuestionCount === 0
-                    ? 'opacity-50 cursor-not-allowed bg-zinc-400 dark:bg-zinc-700'
-                    : ''
+                  ? 'opacity-50 cursor-not-allowed bg-zinc-400 dark:bg-zinc-700'
+                  : ''
                   }`}
                 style={{
                   backgroundColor: displayedQuestionCount === 0 ? undefined : accentConfig.primaryHex,
@@ -2641,8 +2835,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     type="button"
                     onClick={() => setSelectedUfTab(uf)}
                     className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer shrink-0 ${isUfActive
-                        ? 'text-white shadow-md'
-                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/40 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800'
+                      ? 'text-white shadow-md'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/40 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800'
                       }`}
                     style={{
                       backgroundColor: isUfActive ? accentConfig.primaryHex : undefined,
@@ -2670,8 +2864,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       key={item.sigla}
                       onClick={() => toggleInstituicao(item.key)}
                       className={`rounded-2xl p-3.5 flex flex-col justify-between transition-all cursor-pointer border ${isChecked
-                          ? 'shadow-xs'
-                          : 'bg-zinc-50 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
+                        ? 'shadow-xs'
+                        : 'bg-zinc-50 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
                         }`}
                       style={{
                         backgroundColor: isChecked ? accentConfig.bgRgba : undefined,
@@ -2694,8 +2888,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         {/* Checkbox Quadrado no canto superior direito */}
                         <div
                           className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all shrink-0 ${isChecked
-                              ? 'text-white'
-                              : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950'
+                            ? 'text-white'
+                            : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950'
                             }`}
                           style={{
                             backgroundColor: isChecked ? accentConfig.primaryHex : undefined,

@@ -65,26 +65,13 @@ const GoogleIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
     <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
   </svg>
 );
-import {
-  ResponsiveContainer,
-  PieChart,
-  Pie,
-  Cell,
-  ComposedChart,
-  Bar,
-  Line,
-  XAxis,
-  YAxis,
-  Tooltip,
-  CartesianGrid,
-  type PieSectorDataItem
-} from 'recharts';
+import dynamic from 'next/dynamic';
 import { UserStats, QuestionList, ActiveTab, Modalidade, UserAnswerItem, PeriodFilter } from '@/types';
 import { UterusIcon, PregnantWomanIcon } from './StatsDashboard';
-import { getPercentileColor } from '@/utils/percentile';
+import { getPercentileColor, UNRANKED_THRESHOLD } from '@/utils/percentile';
 import { computeAdaptiveDistribution, getBaselinePlatformScores } from '@/utils/distributionCurve';
 import { useTheme } from '@/context/ThemeContext';
-import { Button, Card, Badge, ProgressBar, StreakTracker } from '@/components/ui';
+import { Button, Badge, ProgressBar } from '@/components/ui';
 import { useAuth } from '@/context/AuthContext';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { getAccountTargetExam } from '@/utils/userTargetExam';
@@ -105,14 +92,32 @@ import { OfficialExamModalityKey, OfficialInstitution, OfficialExamItem } from '
 import { useDashboardLayout } from '@/hooks/useDashboardLayout';
 import { DEFAULT_HOME_CARDS } from './dashboard/dashboardDefaults';
 import { CLINICAL_TIPS_DATABASE, ClinicalTipItem } from '@/data/clinicalTipsData';
+import { CRITICAL_SUBTOPICS_MAP, DETAILED_MNEMONICS_MAP } from '@/data/dashboardMnemonicsData';
 
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
-import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
-import { FigmaSmartGuides } from './dashboard/FigmaSmartGuides';
 import { SmartGuidesState } from './dashboard/smartGuidesEngine';
-import { GoogleCalendarScheduleView } from './dashboard/GoogleCalendarScheduleView';
-import { AiScheduleDrawer } from './dashboard/AiScheduleDrawer';
-import { DailyScheduleSlot, AiScheduleAnalysis, TimelineFilter } from './dashboard/scheduleTypes';
+import { DailyScheduleSlot, TimelineFilter } from './dashboard/scheduleTypes';
+
+const FigmaCustomizerBar = dynamic(
+  () => import('./dashboard/FigmaCustomizerBar').then((mod) => mod.FigmaCustomizerBar),
+  { ssr: false }
+);
+const FigmaSmartGuides = dynamic(
+  () => import('./dashboard/FigmaSmartGuides').then((mod) => mod.FigmaSmartGuides),
+  { ssr: false }
+);
+const GoogleCalendarScheduleView = dynamic(
+  () => import('./dashboard/GoogleCalendarScheduleView').then((mod) => mod.GoogleCalendarScheduleView),
+  { ssr: false }
+);
+const AiScheduleDrawer = dynamic(
+  () => import('./dashboard/AiScheduleDrawer').then((mod) => mod.AiScheduleDrawer),
+  { ssr: false }
+);
+const SpecialtyXRayChart = dynamic(
+  () => import('./dashboard/SpecialtyXRayChart').then((mod) => mod.SpecialtyXRayChart),
+  { ssr: false }
+);
 import {
   loadUserScheduledTasks,
   saveUserScheduledTask,
@@ -153,59 +158,6 @@ interface StudentHomeDashboardProps {
   onNavigateToBancoWithSubfoco?: (specialty: string, tema: string, subfoco: string, subSubfoco?: string) => void;
   userAnswers?: Record<string, UserAnswerItem>;
 }
-
-interface AreaEvolutionTooltipProps {
-  active?: boolean;
-  payload?: ReadonlyArray<{
-    payload?: {
-      date?: string;
-      acertos?: number;
-      erros?: number;
-      resolvidas?: number;
-    };
-  }>;
-  colorHex?: string;
-  areaLabel?: string;
-}
-
-const AreaEvolutionTooltip: React.FC<AreaEvolutionTooltipProps> = ({
-  active,
-  payload,
-  colorHex,
-  areaLabel,
-}) => {
-  if (!active || !payload || !payload.length) return null;
-  const data = payload[0]?.payload;
-  if (!data) return null;
-
-  return (
-    <div className="bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-zinc-200 dark:border-zinc-800 p-2.5 rounded-xl shadow-xl text-xs space-y-1 z-50 pointer-events-none select-none">
-      <p className="font-bold text-zinc-800 dark:text-zinc-200 text-[11px] pb-1 border-b border-zinc-100 dark:border-zinc-800 flex items-center gap-1.5">
-        <span className="w-2 h-2 rounded-full" style={{ backgroundColor: colorHex }} />
-        <span>{data.date} • {areaLabel}</span>
-      </p>
-      <div className="flex items-center justify-between gap-4 text-emerald-600 dark:text-emerald-400 font-medium">
-        <span className="flex items-center gap-1.5">
-          <span className="w-2 h-2 rounded-full bg-emerald-500" />
-          Acertos:
-        </span>
-        <span className="font-mono font-bold">{data.acertos}</span>
-      </div>
-      <div className="flex items-center justify-between gap-4 text-rose-600 dark:text-rose-400 font-medium">
-        <span className="flex items-center gap-1.5">
-          <span className="w-2 h-2 rounded-full bg-rose-500" />
-          Erros:
-        </span>
-        <span className="font-mono font-bold">{data.erros}</span>
-      </div>
-      <div className="flex items-center justify-between gap-4 text-zinc-500 dark:text-zinc-400 font-medium pt-1 border-t border-zinc-100 dark:border-zinc-800">
-        <span>Total no dia:</span>
-        <span className="font-mono font-bold text-zinc-800 dark:text-zinc-200">{data.resolvidas}</span>
-      </div>
-
-    </div>
-  );
-};
 
 export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   studentName,
@@ -336,17 +288,17 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       facil: {
         total: counts.facil.total,
         correct: counts.facil.correct,
-        rate: hasAnyAnswers ? calcRate(counts.facil.correct, counts.facil.total) : 84.2
+        rate: hasAnyAnswers ? calcRate(counts.facil.correct, counts.facil.total) : 0
       },
       medio: {
         total: counts.medio.total,
         correct: counts.medio.correct,
-        rate: hasAnyAnswers ? calcRate(counts.medio.correct, counts.medio.total) : 67.5
+        rate: hasAnyAnswers ? calcRate(counts.medio.correct, counts.medio.total) : 0
       },
       dificil: {
         total: counts.dificil.total,
         correct: counts.dificil.correct,
-        rate: hasAnyAnswers ? calcRate(counts.dificil.correct, counts.dificil.total) : 41.8
+        rate: hasAnyAnswers ? calcRate(counts.dificil.correct, counts.dificil.total) : 0
       },
       hasAnswers: hasAnyAnswers
     };
@@ -430,12 +382,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [targetExamName, setTargetExamName] = useState<string>(examInfo.examName);
   const [targetDaysLeft, setTargetDaysLeft] = useState<number>(examInfo.daysLeft);
 
-  // Tempo de estudo realizado hoje (vinculado ao tempo ativo na plataforma e cronômetro da agenda)
-  const { todayTotalSeconds, status: timerStatus, elapsedSeconds, allSessions, platformActiveSeconds } = useStudyTimer();
-  const currentTodayStudySeconds = Math.max(
-    todayTotalSeconds,
-    platformActiveSeconds || 0
-  ) + ((timerStatus === 'running' || timerStatus === 'paused') ? elapsedSeconds : 0);
+  // Tempo de estudo realizado hoje (vinculado estritamente às sessões reais e cronômetro ativo)
+  const { todayTotalSeconds, status: timerStatus, elapsedSeconds, allSessions } = useStudyTimer();
+  const currentTodayStudySeconds =
+    todayTotalSeconds + ((timerStatus === 'running' || timerStatus === 'paused') ? elapsedSeconds : 0);
   const formattedTodayStudy = formatSecondsToDetailed(currentTodayStudySeconds);
 
   // Sessões salvas pelo cronômetro no site para hoje
@@ -605,6 +555,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   });
 
   useEffect(() => {
+    if (!user?.id || user.id === 'demo-student') return;
     let isMounted = true;
     const fetchOfficialRankingPercentile = async () => {
       try {
@@ -647,7 +598,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       window.removeEventListener('bancoresidencia_ranking_updated', handleRankingUpdate);
       window.removeEventListener('storage', handleRankingUpdate);
     };
-  }, []);
+  }, [user?.id]);
 
   const effectivePercentile = (rankingPercentile !== null && rankingPercentile !== undefined)
     ? rankingPercentile
@@ -1152,255 +1103,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return areasResumo[0];
   }, [areasResumo]);
 
-  // Seleção e hover para o gráfico de Donut do Raio-X das 6 Grandes Áreas (com suporte a Geral)
-  // --- ESTRUTURAS AUXILIARES PARA ENQUADRAMENTO DA PRIMEIRA DOBRA ---
-
-  // Mapeamento de subtemas críticos de alta incidência em Residência Médica
-  const CRITICAL_SUBTOPICS_MAP: Record<string, Array<{ name: string; defaultAccuracy: number }>> = {
-    cirurgia: [
-      { name: 'Abdome Agudo', defaultAccuracy: 0 },
-      { name: 'Trauma Abdominal (ATLS)', defaultAccuracy: 25 },
-      { name: 'Hérnias da Parede', defaultAccuracy: 33 }
-    ],
-    clinica: [
-      { name: 'Insuficiência Cardíaca', defaultAccuracy: 20 },
-      { name: 'Sepse e Choque', defaultAccuracy: 30 },
-      { name: 'Diabetes e Complicações', defaultAccuracy: 40 }
-    ],
-    pediatria: [
-      { name: 'Aleitamento Materno', defaultAccuracy: 25 },
-      { name: 'Infecções Respiratórias (IVAS)', defaultAccuracy: 35 },
-      { name: 'Triagens Neonatais', defaultAccuracy: 40 }
-    ],
-    ginecologia: [
-      { name: 'Sangramento Uterino Anormal', defaultAccuracy: 15 },
-      { name: 'Rastreamento CA Colo', defaultAccuracy: 30 },
-      { name: 'Climatério e TH', defaultAccuracy: 35 }
-    ],
-    obstetricia: [
-      { name: 'Hemorragias da Gestação', defaultAccuracy: 20 },
-      { name: 'Pré-Eclâmpsia e Eclâmpsia', defaultAccuracy: 28 },
-      { name: 'Vitalidade Fetal e Parto', defaultAccuracy: 40 }
-    ],
-    preventiva: [
-      { name: 'Estudos Epidemiológicos', defaultAccuracy: 18 },
-      { name: 'Princípios e Diretrizes SUS', defaultAccuracy: 30 },
-      { name: 'Testes Diagnósticos (Sens/Espec)', defaultAccuracy: 38 }
-    ]
-  };
-
-  // Interface rica para Pílulas Clínicas e Mnemônicos Padrão-Ouro
-  interface DetailedMnemonicData {
-    title: string;
-    theme: string;
-    acronym: string;
-    letters: string[];
-    content: string;
-    rule: string;
-    clinicalApplication: string;
-    bancaTrap: string;
-    examFrequency: string;
-    breakdown: Array<{
-      letter: string;
-      label: string;
-      meaning: string;
-      detail: string;
-      badge?: string;
-    }>;
-    clinicalCase?: {
-      vignette: string;
-      answer: string;
-      explanation: string;
-    };
-    practiceQuery?: {
-      specialty: string;
-      tema?: string;
-      search?: string;
-    };
-  }
-
-  // Mapeamento ampliado de pílulas clínicas e mnemônicos padrão-ouro
-  const DETAILED_MNEMONICS_MAP: Record<string, DetailedMnemonicData> = {
-    cirurgia: {
-      title: 'Critérios de Ranson na Admissão (Pancreatite Aguda)',
-      theme: 'Pancreatite Aguda • Doenças Biliares & Pâncreas',
-      acronym: 'L-A-G-A-R',
-      letters: ['L', 'A', 'G', 'A', 'R'],
-      content: 'L-A-G-A-R na admissão: Leucócitos (>16k) • Age/Idade (>55) • Glicose (>200) • AST (>250) • LDH (>350)',
-      rule: '≥3 critérios na admissão prediz pancreatite aguda grave (indicação formal de UTI e vigilância de falência orgânica)',
-      clinicalApplication: 'Aplicado nas primeiras 48h de evolução. Pacientes com 0-2 critérios apresentam mortalidade < 1%; ≥3 critérios elevam o risco para 15-40%, exigindo ressuscitação volêmica vigorosa com Ringer Lactato e monitorização hemodinâmica contínua.',
-      bancaTrap: 'Pegadinha Clássica: Amilase e lipase NÃO avaliam gravidade nem entram em Ranson (servem exclusivamente para o diagnóstico). Outra pegadinha frequente é confundir os critérios da admissão com os de 48h (C-H-A-B-O-S: Cálcio, Hematócrito, Gaso/pO2, BUN/Ureia, Déficit de Base, Sequestro Líquido).',
-      examFrequency: 'Altíssima relevância • Cobrado em ~91% das bancas de Residência (ENARE, USP, SURCE, SUS-SP)',
-      practiceQuery: {
-        specialty: 'Cirurgia Geral',
-        tema: 'Pancreatite Aguda',
-        search: 'Pancreatite'
-      },
-      breakdown: [
-        { letter: 'L', label: 'Leucócitos', meaning: '> 16.000 /mm³', detail: 'Expressa a intensidade da resposta inflamatória sistêmica inicial (SIRS)' },
-        { letter: 'A', label: 'Age / Idade', meaning: '> 55 anos', detail: 'Fator prognóstico independente associado a menor reserva fisiológica' },
-        { letter: 'G', label: 'Glicose', meaning: '> 200 mg/dL', detail: 'Reflete estresse adrenérgico e disfunção endócrina das ilhotas pancreáticas' },
-        { letter: 'A', label: 'AST / TGO', meaning: '> 250 U/L', detail: 'Marcador de lesão hepatocelular e sofrimento parenquimatoso secundário' },
-        { letter: 'R', label: 'LDH / DHL', meaning: '> 350 U/L', detail: 'Indicador direto de necrose tecidual e lise celular acelerada' }
-      ],
-      clinicalCase: {
-        vignette: 'Homem de 58 anos dá entrada com dor epigástrica em barra há 12h, lipase 1400 U/L. Exames admissionais: Leucócitos 17.800/mm³, Glicose 245 mg/dL, AST 290 U/L, LDH 420 U/L. Qual a conduta imediata quanto à estratificação?',
-        answer: 'Pancreatite Aguda Grave (Ranson = 5 critérios na admissão). Indicação mandatória de leito em UTI e hidratação guiada por metas.',
-        explanation: 'O paciente pontuou nos 5 critérios de admissão (Idade > 55, Leucócitos > 16k, Glicose > 200, AST > 250, LDH > 350). Com escore ≥ 3, o quadro é categorizado como grave com alta probabilidade de necrose e falência de múltiplos órgãos.'
-      }
-    },
-    clinica: {
-      title: 'Critérios de Light (Derrame Pleural: Exsudato vs Transudato)',
-      theme: 'Pneumologia • Análise do Líquido Pleural',
-      acronym: 'LIGHT',
-      letters: ['1', '2', '3'],
-      content: 'Prot Pleural/Sérica > 0,5 OU LDH Pleural/Sérica > 0,6 OU LDH Pleural > 2/3 do LSN sérico',
-      rule: 'Apenas 1 critério positivo já classifica o líquido como EXSUDATO (processo inflamatório, infeccioso ou neoplásico)',
-      clinicalApplication: 'Etapa diagnóstica obrigatória após toracocentese. Se for Exsudato, impõe-se a busca por etiologias inflamatórias (derrame parapneumônico, empiema, tuberculose, neoplasia, TEP). Se nenhum dos 3 critérios estiver presente, confirma-se Transudato (insuficiência cardíaca descompensada, cirrose, síndrome nefrótica).',
-      bancaTrap: 'Pegadinha Clássica: A regra é baseada em "OU", nunca em "E". Uma relação de Proteína Pleural/Sérica de 0,51, isoladamente, já sacramenta o diagnóstico de exsudato! Fique atento ao falso-exsudato em cardiopatas em uso de furosemida (neste caso, o gradiente de albumina soro-líquido pleural > 1,2 g/dL reclassifica como transudato).',
-      examFrequency: 'Tema indispensável • Cobrado em 89% das provas de Clínica Médica',
-      practiceQuery: {
-        specialty: 'Clínica Médica',
-        tema: 'Pneumologia',
-        search: 'Derrame Pleural'
-      },
-      breakdown: [
-        { letter: '1', label: 'Proteína', meaning: 'Prot Pleural / Sérica > 0,5', detail: 'Aumento da permeabilidade capilar pleural decorrente de inflamação local' },
-        { letter: '2', label: 'LDH Razão', meaning: 'LDH Pleural / Sérico > 0,6', detail: 'Reflete alta celularidade e inflamação exuberante no espaço pleural' },
-        { letter: '3', label: 'LDH Absoluto', meaning: 'LDH Pleural > 2/3 do LSN sérico', detail: 'Geralmente > 200 U/L quando o valor sérico de referência é 300 U/L' }
-      ],
-      clinicalCase: {
-        vignette: 'Mulher de 62 anos com tosse seca e derrame pleural à direita. Punção: Proteína pleural 3,2 g/dL (sérica 6,0 g/dL), LDH pleural 180 U/L (sérico 320 U/L, LSN = 250 U/L). Como classificar o líquido?',
-        answer: 'Exsudato Pleural (Razão Prot Pleural/Sérica = 3,2 / 6,0 = 0,53, que é > 0,5).',
-        explanation: 'Embora o LDH isolado esteja abaixo dos cortes de exsudato, a presença de um único critério positivo (relação de proteína > 0,5) é suficiente para selar o diagnóstico de exsudato segundo a sensibilidade de 98% dos Critérios de Light.'
-      }
-    },
-    pediatria: {
-      title: 'Escore de Apgar Neonatal (1º e 5º Minuto)',
-      theme: 'Neonatologia • Recepção e Vitalidade do Recém-Nascido',
-      acronym: 'A-P-G-A-R',
-      letters: ['A', 'P', 'G', 'A', 'R'],
-      content: 'A-P-G-A-R: Aparência (cor) • Pulso (FC) • Gesticulação • Atividade (tônus) • Respiração',
-      rule: 'Nota de 0 a 10 • Avalia vitalidade ao nascer e resposta à reanimação (0-3: asfixia grave, 4-6: moderada, 7-10: boa vitalidade)',
-      clinicalApplication: 'O Apgar é pontuado no 1º e no 5º minuto (persistindo a cada 5 min se < 7). O escore de 5º minuto é o parâmetro de maior valor prognóstico neurológico e de morbimortalidade no período neonatal imediato.',
-      bancaTrap: 'Pegadinha Número 1 de Sala de Parto: NUNCA se atrasa ou aguarda a contagem do Apgar para iniciar manobras de reanimação! A indicação de reanimação (aquecer, secar, posicionar, aspirar se necessário e ventilar com pressão positiva) depende da avaliação tríplice imediata: Termo? Respirando ou chorando? Tônus em flexão?',
-      examFrequency: 'Tema obrigatório • Presente em mais de 92% das provas de Pediatria',
-      practiceQuery: {
-        specialty: 'Pediatria',
-        tema: 'Neonatologia',
-        search: 'Neonatologia'
-      },
-      breakdown: [
-        { letter: 'A', label: 'Aparência (Cor)', meaning: '0: Pálido/Cianose Central | 1: Acrocianose | 2: Completamente Rosado', detail: 'Acrocianose isolada é fisiológica nos primeiros minutos de vida extrauterina' },
-        { letter: 'P', label: 'Pulso (FC)', meaning: '0: Ausente | 1: < 100 bpm | 2: ≥ 100 bpm', detail: 'FC < 100 bpm é a principal indicação para Ventilação com Pressão Positiva (VPP)' },
-        { letter: 'G', label: 'Gesticulação', meaning: '0: Sem resposta | 1: Caretas | 2: Espirro, tosse, choro vigoroso', detail: 'Avalia a irritabilidade reflexa à estimulação tátil e desobstrução de vias aéreas' },
-        { letter: 'A', label: 'Atividade', meaning: '0: Flácido | 1: Alguma flexão | 2: Movimentos ativos e tônus forte', detail: 'Reflete a oxigenação e integridade do tronco encefálico e medula espinhal' },
-        { letter: 'R', label: 'Respiração', meaning: '0: Ausente (apneia) | 1: Lenta/irregular | 2: Regular e choro forte', detail: 'Esforço respiratório espontâneo eficaz na transição cardiopulmonar' }
-      ],
-      clinicalCase: {
-        vignette: 'Recém-nascido a termo no 1º minuto apresenta FC = 120 bpm, choro vigoroso, extremidades arroxeadas com tronco rosado, espirra à aspiração e movimenta membros ativamente. Qual seu escore?',
-        answer: 'Apgar 9 (A=1 [acrocianose], P=2 [FC > 100], G=2 [espirro/tosse], A=2 [movimento ativo], R=2 [choro vigoroso]).',
-        explanation: 'A única dedução de 1 ponto ocorre na Aparência/Cor decorrente de acrocianose (extremidades periféricas cianóticas com tronco rosado), o que é achado frequente e esperado no 1º minuto.'
-      }
-    },
-    ginecologia: {
-      title: 'Classificação FIGO de SUA (PALM-COEIN)',
-      theme: 'Ginecologia Geral • Sangramento Uterino Anormal',
-      acronym: 'PALM-COEIN',
-      letters: ['P', 'A', 'L', 'M', 'C', 'O', 'E', 'I', 'N'],
-      content: 'PALM (Estruturais) / COEIN (Não Estruturais): Pólipo, Adenomiose, Leiomioma, Malignidade / Coagulopatia, Ovulatória, Endometrial, Iatrogênica, Não especificada',
-      rule: 'PALM = Causas anatômicas e estruturais (visíveis a exames de imagem e histopatologia) • COEIN = Causas não estruturais / funcionais',
-      clinicalApplication: 'Sistematização obrigatória na condução do Sangramento Uterino Anormal em mulheres não gestantes no menacme. Permite separar pacientes candidatas a procedimentos intervencionistas/cirúrgicos (PALM) daquelas com indicação de manejo clínico, hormonal ou hematológico (COEIN).',
-      bancaTrap: 'Pegadinhas Clássicas: (1) Onde entra o sangramento por DIU de cobre ou anticoagulante oral? Resposta: COEIN (I = Iatrogênica ou C = Coagulopatia). (2) A banca adora cobrar as subclasses de Leiomioma (Lsm = submucoso, com maior sangramento; Lo = outros intramural/subseroso).',
-      examFrequency: 'Altíssima frequência • Questão certa em Ginecologia e Obstetrícia',
-      practiceQuery: {
-        specialty: 'Ginecologia',
-        tema: 'Ginecologia Geral',
-        search: 'Sangramento Uterino'
-      },
-      breakdown: [
-        { letter: 'P', label: 'Pólipo', meaning: 'Endometrial ou Endocervical', detail: 'Diagnóstico por ultrassonografia com histerossonografia ou histeroscopia' },
-        { letter: 'A', label: 'Adenomiose', meaning: 'Infiltração de glândulas no miométrio', detail: 'Causa clássica de útero globoso, aumentado e dismenorreia secundária intensa' },
-        { letter: 'L', label: 'Leiomioma', meaning: 'Submucoso (Lsm) vs Outros (Lo)', detail: 'Submucosos causam sangramento abundante por distorção endometrial direta' },
-        { letter: 'M', label: 'Malignidade', meaning: 'Câncer de endométrio e hiperplasias', detail: 'Principal suspeita em SUA no climatério e pós-menopausa tardia' },
-        { letter: 'C', label: 'Coagulopatia', meaning: 'Doença de von Willebrand, plaquetopenias', detail: 'Suspeitar em sangramentos intensos desde a menarca' },
-        { letter: 'O', label: 'Disfunção Ovulatória', meaning: 'SOP, hiperprolactinemia, hipotireoidismo', detail: 'Ciclos anovulatórios com sangramento irregular por quebra estrogênica' },
-        { letter: 'E', label: 'Endometrial', meaning: 'Deficiência na vasoconstrição local', detail: 'Desequilíbrio de prostaglandinas (PGF2a/PGE2) em ciclos regulares' },
-        { letter: 'I', label: 'Iatrogênica', meaning: 'DIU, implantes, anticoagulantes, psicotrópicos', detail: 'Efeito colateral farmacológico documentado em anamnese dirigida' },
-        { letter: 'N', label: 'Não Especificada', meaning: 'Malformações arteriovenosas, nichos', detail: 'Condições raras não catalogadas nos outros grupos FIGO' }
-      ],
-      clinicalCase: {
-        vignette: 'Mulher de 34 anos com ciclos menstruais a cada 45 a 60 dias, sangramento em grande volume e hirsutismo. Exame pélvico e USG transvaginal anatômica normais. Qual o grupo FIGO?',
-        answer: 'COEIN - Letra "O" (Disfunção Ovulatória secundária à Síndrome dos Ovários Policísticos).',
-        explanation: 'A ausência de alterações estruturais na imagem descarta o grupo PALM. A oligomenorreia associada a hirsutismo confirma anovulação crônica, pertencente à categoria "O" (Ovulatory dysfunction) do sistema FIGO.'
-      }
-    },
-    obstetricia: {
-      title: 'Descolamento Prematuro de Placenta (DPP)',
-      theme: 'Obstetrícia de Alto Risco • Hemorragias da 2ª Metade',
-      acronym: 'D-P-P',
-      letters: ['D', 'O', 'R', 'H', 'I', 'P'],
-      content: 'Tríade clássica: Dor abdominal súbita + Hipertonia uterina ("útero em tábua") + Sangramento escuro com sofrimento fetal agudo',
-      rule: 'Conduta imediata: Amniotomia precoce imediata + Parto pela via mais rápida (geralmente cesariana de emergência)',
-      clinicalApplication: 'Emergência obstétrica de alto risco materno-fetal associada a hipertensão prévia/pré-eclâmpsia e trauma. A amniotomia descompressiva reduz a pressão intramiócica, alivia a hipertonia e diminui a liberação de tromboplastina na circulação materna.',
-      bancaTrap: 'Diferencial Fatal em Prova: DPP vs Placenta Prévia (PP). No DPP a dor é INTENSA e súbita, o sangramento é ESCURO e tem HIPERTONIA uterina sustentada. Na Placenta Prévia, o sangramento é ROUBO (vermelho vivo), INDOLOR, INSIDIOSO e o útero é normotônico e indolor. Nunca realize toque vaginal em sangramento de 2ª metade sem antes excluir placenta prévia!',
-      examFrequency: 'Top 3 em todas as provas de Obstetrícia do Brasil',
-      practiceQuery: {
-        specialty: 'Obstetrícia',
-        tema: 'Obstetrícia de Alto Risco',
-        search: 'Placenta'
-      },
-      breakdown: [
-        { letter: 'D', label: 'Dor Abdominal', meaning: 'Súbita, intensa e contínua', detail: 'Decorrente do extravasamento de sangue na espessura do miométrio' },
-        { letter: 'H', label: 'Hipertonia', meaning: 'Útero lenhoso ("útero em tábua")', detail: 'Elevação do tônus basal e taquissistolia refratária ao relaxamento' },
-        { letter: 'S', label: 'Sangramento', meaning: 'Escuro e com coágulos', detail: 'Pode ser oculto em 20% dos casos quando há hematoma retroplacentário' },
-        { letter: 'F', label: 'Sofrimento Fetal', meaning: 'Desacelerações DIP 2 / Bradicardia', detail: 'Redução abrupta da área de trocas gasosas materno-fetais' },
-        { letter: 'C', label: 'CIVD / Coagulação', meaning: 'Consumo maciço de fibrinogênio', detail: 'Risco de síndrome de Couvelaire (apoplexia uteroplacentária)' }
-      ],
-      clinicalCase: {
-        vignette: 'Gestante de 36 semanas hipertensa dá entrada com dor em baixo ventre de início abrupto há 40 min, útero espasmódico doloroso e sangramento escuro moderado. BCF = 95 bpm. Qual a conduta?',
-        answer: 'Amniotomia imediata e cesariana de emergência por Descolamento Prematuro de Placenta com feto vivo em sofrimento.',
-        explanation: 'A tríade de dor intensa, hipertonia uterina e sangramento escuro confirma DPP. Havendo feto vivo e bradicardia fetal sustentada (< 110 bpm), a conduta prioritária é interromper a gestação pela via mais rápida (cesariana imediata com amniotomia de alívio).'
-      }
-    },
-    preventiva: {
-      title: 'Princípios do SUS: Doutrinários vs Organizativos',
-      theme: 'Legislação e História do SUS • Lei 8.080/90 e CF/88',
-      acronym: 'U-I-E',
-      letters: ['U', 'I', 'E'],
-      content: 'Doutrinários (U-I-E): Universalidade • Integralidade • Equidade / Organizativos: Descentralização • Regionalização • Hierarquização • Participação Popular',
-      rule: 'Doutrinários refletem a filosofia e os valores éticos constitucionais (U-I-E) • Organizativos definem a operação e arquitetura prática do sistema',
-      clinicalApplication: 'Pilar estruturante de todas as políticas públicas de saúde no Brasil, norteando a Rede de Atenção à Saúde (RAS) e a formulação de linhas de cuidado prioritárias na Atenção Primária.',
-      bancaTrap: 'Pegadinha Número 1 de Medicina Preventiva: A banca troca "Equidade" por "Igualdade". No SUS, o princípio é EQUIDADE (tratar de forma desigual os desiguais, direcionando mais recursos aos mais vulneráveis). Tratar todos igualmente perpetua as disparidades sociais. Segunda pegadinha: confundir princípio doutrinário com organizativo.',
-      examFrequency: 'Tema mais cobrado em toda a Medicina Preventiva (~94% das provas)',
-      practiceQuery: {
-        specialty: 'Medicina Preventiva e Social',
-        tema: 'Atenção Primária à Saúde',
-        search: 'Saúde da Família'
-      },
-      breakdown: [
-        { letter: 'U', label: 'Universalidade', meaning: 'Acesso à saúde como direito de todos e dever do Estado', detail: 'Sem exigência de contribuição previdenciária, nacionalidade ou vínculo empregatício formal' },
-        { letter: 'I', label: 'Integralidade', meaning: 'Cuidado contínuo, biopsicossocial e em todos os níveis', detail: 'Articulação simultânea de ações promocionais, preventivas, curativas e reabilitadoras' },
-        { letter: 'E', label: 'Equidade', meaning: 'Justiça distributiva: atender mais a quem mais necessita', detail: 'Redução de disparidades mediante alocação diferencial de serviços às populações de maior risco' }
-      ],
-      clinicalCase: {
-        vignette: 'Em um município, a gestão de saúde implementou um programa de visitas domiciliares semanais exclusivo para comunidades ribeirinhas isoladas com alta taxa de mortalidade infantil. Qual princípio fundamenta a medida?',
-        answer: 'Princípio Doutrinário da Equidade.',
-        explanation: 'A concessão de mais atenção e recursos específicos para a população em condição de maior vulnerabilidade e desvantagem exemplifica com perfeição a Equidade em saúde ("tratar desigualmente os desiguais").'
-      }
-    }
-  };
-
-  // Mapeamento retrocompatível padrão-ouro
-  const MNEMONICS_MAP: Record<string, { title: string; content: string; rule: string }> = Object.entries(DETAILED_MNEMONICS_MAP).reduce(
-    (acc, [key, val]) => {
-      acc[key] = { title: val.title, content: val.content, rule: val.rule };
-      return acc;
-    },
-    {} as Record<string, { title: string; content: string; rule: string }>
-  );
-
-  // 1. Subtemas críticos da especialidade recomendada
+  // 1. Subtemas críticos da especialidade recomendada (dados estáticos movidos para src/data/dashboardMnemonicsData.ts)
   const criticalSubtopics = React.useMemo(() => {
     const areaKey = recommendedArea?.id || 'cirurgia';
     const fallbackList = CRITICAL_SUBTOPICS_MAP[areaKey] || CRITICAL_SUBTOPICS_MAP['cirurgia'];
@@ -1639,13 +1342,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   // Tarefas de estudo adicionadas pelo usuário ou aceitas a partir das sugestões da IA
   const [userScheduledTasks, setUserScheduledTasks] = useState<DailyScheduleSlot[]>(() => {
     if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
+      const scopedKey = getUserScheduledTasksStorageKey(user?.id);
+      const saved = localStorage.getItem(scopedKey);
       if (saved) {
         try {
           const parsed: DailyScheduleSlot[] = JSON.parse(saved);
           const cleanTasks = parsed.filter(t => !t.id.startsWith('task_sess_') && !t.id.startsWith('sess_slot_'));
           if (cleanTasks.length !== parsed.length) {
-            localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(cleanTasks));
+            localStorage.setItem(scopedKey, JSON.stringify(cleanTasks));
           }
           return cleanTasks;
         } catch {
@@ -2956,15 +2660,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   }, [stats.historyByDay, dailyGoal]);
 
   const [selectedAreaId, setSelectedAreaId] = useState<string>('geral');
-  const [hoveredPieIndex, setHoveredPieIndex] = useState<number | null>(null);
-  const [isPieAnimationDone, setIsPieAnimationDone] = useState<boolean>(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsPieAnimationDone(true);
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, []);
   const lastPieClickRef = useRef<{ id: string; time: number }>({ id: '', time: 0 });
 
   const handlePieSectorClick = React.useCallback((areaId: string) => {
@@ -3048,7 +2743,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       startDateTs = todayStart - 6 * 86400000;
     }
 
-    const totalDays = Math.max(1, Math.min(185, Math.round((endDateTs - startDateTs) / 86400000) + 1));
+    const totalDays = Math.max(1, Math.min(185, Math.floor((endDateTs - startDateTs) / 86400000) + 1));
     const allAnswers = userAnswers ? Object.values(userAnswers) : [];
 
     const isGeral = selectedAreaId === 'geral';
@@ -3260,21 +2955,23 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         }
       }}
     >
-      {/* Barra Flutuante de Personalização Estilo Figma */}
-      <FigmaCustomizerBar
-        isCustomizing={isCustomizing}
-        selectedCardTitle={visibleCards.find((c) => c.id === selectedCardId)?.title}
-        onToggleCustomizing={() => {
-          if (isCustomizing) {
-            autoConformLayout();
-          }
-          setIsCustomizing((prev) => !prev);
-        }}
-        onRestoreDefaults={restoreDefaults}
-        hiddenCards={hiddenCards}
-        onRestoreCard={toggleVisibility}
-        onDeselect={() => setSelectedCardId(null)}
-      />
+      {/* Barra Flutuante de Personalização Estilo Figma (montada apenas quando ativa) */}
+      {isCustomizing && (
+        <FigmaCustomizerBar
+          isCustomizing={isCustomizing}
+          selectedCardTitle={visibleCards.find((c) => c.id === selectedCardId)?.title}
+          onToggleCustomizing={() => {
+            if (isCustomizing) {
+              autoConformLayout();
+            }
+            setIsCustomizing((prev) => !prev);
+          }}
+          onRestoreDefaults={restoreDefaults}
+          hiddenCards={hiddenCards}
+          onRestoreCard={toggleVisibility}
+          onDeselect={() => setSelectedCardId(null)}
+        />
+      )}
 
       {/* Grid Principal Reorganizável Estilo Figma */}
       <div
@@ -3287,12 +2984,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             guides={smartGuidesState.guides}
           />
         )}
-        {visibleCards.map((cardConfig) => {
+        {visibleCards.map((cardConfig, cardIndex) => {
+          const staggerStyle = !isCustomizing
+            ? ({ '--stagger-idx': Math.min(cardIndex, 7) } as React.CSSProperties)
+            : undefined;
           if (cardConfig.id === 'home_hero') {
             return (
               <FigmaCardWrapper
                 key={cardConfig.id}
                 config={cardConfig}
+                className={!isCustomizing ? 'bento-stagger-item' : ''}
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
@@ -3305,7 +3006,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                <section className="relative overflow-hidden bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl px-4 sm:px-5 py-3 sm:py-3.5 shadow-xs">
+                <section
+                  style={staggerStyle}
+                  className="relative overflow-hidden bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl px-4 sm:px-5 py-3 sm:py-3.5 shadow-xs"
+                >
                   <div
                     className="absolute -right-16 -top-16 w-60 h-60 rounded-full blur-3xl opacity-10 pointer-events-none"
                     style={{ backgroundColor: accentConfig.primaryHex }}
@@ -3318,26 +3022,58 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <span>{greeting.text}</span>
                       </div>
 
-                      <div className="flex flex-wrap items-center gap-2.5 pt-0.5">
+                      <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 pt-0.5">
                         <h1 className="font-heading text-xl sm:text-2xl font-black text-zinc-900 dark:text-zinc-100 tracking-tight">
                           {studentName}
                         </h1>
 
-                        <Badge variant={plan !== 'free' ? 'warning' : 'default'} size="sm">
-                          {plan !== 'free' ? 'PRO' : 'FREE'}
-                        </Badge>
-
-                        {plan === 'free' && (
-                          <Button
-                            variant="primary"
-                            size="xs"
+                        {plan === 'free' ? (
+                          <button
+                            type="button"
                             onClick={() => openUpgradeModal()}
-                            leftIcon={<Zap className="w-3.5 h-3.5 fill-current" />}
-                            title="Liberar questões ilimitadas, métricas TRI e gabaritos completos"
+                            title="Plano Gratuito • Clique para conhecer o acesso ilimitado PRO"
+                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-zinc-100 dark:bg-zinc-800/90 text-zinc-600 dark:text-zinc-300 border border-zinc-200/80 dark:border-zinc-700/80 hover:border-amber-500/40 hover:text-amber-600 dark:hover:text-amber-400 transition-colors cursor-pointer"
                           >
-                            Liberar Ilimitado
-                          </Button>
+                            <span>FREE</span>
+                          </button>
+                        ) : (
+                          <Badge variant="warning" size="sm">
+                            PRO
+                          </Badge>
                         )}
+
+                        {/* Ação Primária de Estudo na Primeira Dobra (Regra dos 3 Segundos / Hick-Hyman) */}
+                        <Button
+                          variant="primary"
+                          size="xs"
+                          onClick={() => {
+                            if (activeCaderno) {
+                              onContinueList(activeCaderno);
+                            } else if (currentOfficialExam?.status === 'em_andamento') {
+                              handleLaunchOfficialExam(
+                                currentOfficialExam.institution,
+                                currentOfficialExam.year,
+                                currentOfficialExam.totalQuestions
+                              );
+                            } else {
+                              onNavigate('banco');
+                            }
+                          }}
+                          leftIcon={<Play className="w-3 h-3 fill-current" />}
+                          title={
+                            activeCaderno
+                              ? `Continuar caderno: ${activeCaderno.title}`
+                              : currentOfficialExam?.status === 'em_andamento'
+                                ? `Continuar prova: ${currentOfficialExam.institution} ${currentOfficialExam.year}`
+                                : 'Ir direto para o Banco de Questões'
+                          }
+                        >
+                          {activeCaderno
+                            ? 'Continuar Caderno'
+                            : currentOfficialExam?.status === 'em_andamento'
+                              ? `Continuar ${currentOfficialExam.institution}`
+                              : 'Resolver Questões'}
+                        </Button>
                       </div>
                     </div>
 
@@ -3427,11 +3163,21 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             );
           }
           if (cardConfig.id === 'home_meta_diaria') {
+            const isDailyGoalMet = goalPercentage >= 100 || timeGoalPercentage >= 100;
+            const primaryTextSafe =
+              mode === 'dark'
+                ? 'color-mix(in srgb, var(--primary-color, #2563eb) 65%, #ffffff)'
+                : accentConfig.primaryHex;
+            const timeTextSafe =
+              mode === 'dark'
+                ? 'color-mix(in srgb, var(--time-accent-color, #0ea5e9) 72%, #ffffff)'
+                : accentConfig.timeAccent?.hex || accentConfig.primaryHex;
+
             return (
               <FigmaCardWrapper
                 key={cardConfig.id}
                 config={cardConfig}
-                className="self-stretch"
+                className={`self-stretch ${!isCustomizing ? 'bento-stagger-item' : ''}`}
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
@@ -3445,13 +3191,18 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 allCardsConfig={visibleCards}
               >
                 {/* Card 1: Sequência & Metas Diárias */}
-                <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full">
+                <div
+                  style={staggerStyle}
+                  className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full"
+                >
                   <div className="space-y-2">
                     {/* Header: Título "Sequência" + Botão "Ajustar" */}
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div
-                          className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
+                          className={`w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80 transition-transform ${
+                            isDailyGoalMet ? 'ring-2 ring-emerald-500/30 scale-105' : ''
+                          }`}
                           style={{
                             backgroundColor: accentConfig.bgRgba,
                             color: accentConfig.primaryHex
@@ -3459,9 +3210,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         >
                           <Flame className="w-4 h-4 fill-current" />
                         </div>
-                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                        <h2 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
                           Sequência
-                        </span>
+                        </h2>
                       </div>
 
                       <Button
@@ -3535,14 +3286,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       <div className="pt-2 pb-1 flex items-center gap-3.5 sm:gap-5">
                         {/* Bloco Sequência à Esquerda: Número ao lado de Dia / Consecutivo empilhados */}
                         <div className="flex items-center gap-2.5 shrink-0">
-                          <span className="text-3xl sm:text-4xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100 leading-none">
+                          <span className="text-3xl sm:text-4xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100 leading-none tabular-nums">
                             {stats.streakDays}
                           </span>
                           <div className="flex flex-col justify-center leading-none">
                             <span className="text-xs sm:text-[13px] font-bold text-zinc-800 dark:text-zinc-200 tracking-tight">
                               {stats.streakDays === 1 ? 'dia' : 'dias'}
                             </span>
-                            <span className="text-[10px] sm:text-[11px] font-medium text-zinc-400 dark:text-zinc-500 mt-0.5 tracking-normal">
+                            <span className="text-[10px] sm:text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mt-0.5 tracking-normal">
                               {stats.streakDays === 1 ? 'consecutivo' : 'consecutivos'}
                             </span>
                           </div>
@@ -3560,11 +3311,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           >
                             <div className="flex items-center justify-between text-xs leading-none">
                               <span className="font-bold text-zinc-900 dark:text-zinc-100 font-sans tabular-nums">
-                                {todayAnswered} <span className="text-zinc-400 font-normal text-[11px]">/ {dailyGoal} Q</span>
+                                {todayAnswered} <span className="text-zinc-500 dark:text-zinc-400 font-normal text-[11px]">/ {dailyGoal} Q</span>
                               </span>
                               <span
-                                className="font-mono font-bold text-[11px] tabular-nums"
-                                style={{ color: accentConfig.primaryHex }}
+                                className="font-sans font-bold text-[11px] tabular-nums"
+                                style={{ color: primaryTextSafe }}
                               >
                                 {animatedGoalPercentages.questions}%
                               </span>
@@ -3587,11 +3338,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           >
                             <div className="flex items-center justify-between text-xs leading-none">
                               <span className="font-bold text-zinc-900 dark:text-zinc-100 font-sans tabular-nums">
-                                {todayStudyMinutes}m <span className="text-zinc-400 font-normal text-[11px]">/ {dailyTimeGoal}m</span>
+                                {todayStudyMinutes}m <span className="text-zinc-500 dark:text-zinc-400 font-normal text-[11px]">/ {dailyTimeGoal}m</span>
                               </span>
                               <span
-                                className="font-mono font-bold text-[11px] tabular-nums"
-                                style={{ color: accentConfig.timeAccent?.hex || accentConfig.primaryHex }}
+                                className="font-sans font-bold text-[11px] tabular-nums"
+                                style={{ color: timeTextSafe }}
                               >
                                 {animatedGoalPercentages.time}%
                               </span>
@@ -3618,8 +3369,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <BarChart2 className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                         <span>Volume de Questões (7 dias)</span>
                       </span>
-                      <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium">
-                        Total: <strong className="text-zinc-800 dark:text-zinc-200 font-sans font-bold">{weeklyDays.reduce((sum, d) => sum + d.answered, 0)} Q</strong>
+                      <span className="text-[10px] text-zinc-500 dark:text-zinc-400 font-medium">
+                        Total: <strong className="text-zinc-800 dark:text-zinc-200 font-sans font-bold tabular-nums">{weeklyDays.reduce((sum, d) => sum + d.answered, 0)} Q</strong>
                       </span>
                     </div>
 
@@ -3631,47 +3382,52 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         return (
                           <div key={idx} className="flex-1 flex flex-col items-center h-full justify-end group relative cursor-default">
                             {/* Tooltip com quantidade e data ao passar o mouse */}
-                            <div className="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 text-[10px] font-bold font-mono px-2 py-0.5 rounded-md shadow-md z-20 whitespace-nowrap">
-                              {day.answered} Q • {day.dateFormatted} {day.answered > 0 ? '🔥' : ''}
+                            <div className="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 text-[10px] font-bold font-sans tabular-nums px-2 py-0.5 rounded-md shadow-md z-20 whitespace-nowrap">
+                              {day.answered} Q • {day.dateFormatted}
                             </div>
 
                             {/* Micro-contagem minimalista acima da barra */}
                             <span
-                              className={`text-[10px] font-mono tabular-nums leading-none mb-1.5 ${day.answered > 0
+                              className={`text-[10px] font-sans tabular-nums leading-none mb-1 ${day.answered > 0
                                 ? day.isToday
                                   ? 'font-bold'
                                   : 'font-semibold text-zinc-700 dark:text-zinc-300'
-                                : 'text-zinc-400/60 dark:text-zinc-600'
+                                : 'text-zinc-400 dark:text-zinc-600 select-none'
                                 }`}
-                              style={day.isToday && day.answered > 0 ? { color: accentConfig.primaryHex } : undefined}
+                              style={day.isToday && day.answered > 0 ? { color: primaryTextSafe } : undefined}
                             >
-                              {day.answered > 0 ? day.answered : '·'}
+                              {day.answered > 0 ? day.answered : ''}
                             </span>
 
-                            {/* Barra com largura equilibrada (22px-26px) e acabamento clean */}
-                            <div className="w-full max-w-[22px] sm:max-w-[26px] bg-zinc-100 dark:bg-zinc-800/50 rounded-full overflow-hidden flex flex-col justify-end flex-1 p-0.5">
-                              <div
-                                className={`w-full rounded-full transition-all duration-500 ease-out ${day.isToday ? 'shadow-xs' : ''}`}
-                                style={{
-                                  height: `${heightPercent}%`,
-                                  backgroundColor: day.isToday
-                                    ? accentConfig.primaryHex
-                                    : day.answered > 0
-                                      ? (accentConfig.primaryHex ? `${accentConfig.primaryHex}cc` : undefined)
-                                      : 'transparent'
-                                }}
-                              />
+                            {/* Barra com acabamento limpo e linha base sutil nos dias sem questões */}
+                            <div className="w-full max-w-[22px] sm:max-w-[26px] bg-zinc-100/80 dark:bg-zinc-800/35 rounded-xl overflow-hidden flex flex-col justify-end flex-1 p-0.5 border border-zinc-200/40 dark:border-zinc-800/60 group-hover:border-zinc-300/70 dark:group-hover:border-zinc-700/70 transition-colors">
+                              {day.answered > 0 ? (
+                                <div
+                                  className={`w-full rounded-lg transition-all duration-500 ease-out ${day.isToday ? 'shadow-xs' : ''}`}
+                                  style={{
+                                    height: `${heightPercent}%`,
+                                    backgroundColor: day.isToday
+                                      ? accentConfig.primaryHex
+                                      : (accentConfig.primaryHex ? `${accentConfig.primaryHex}cc` : undefined)
+                                  }}
+                                />
+                              ) : (
+                                <div
+                                  className="w-full h-[3px] rounded-full bg-zinc-300/80 dark:bg-zinc-700/70"
+                                  style={day.isToday ? { backgroundColor: accentConfig.primaryHex, opacity: 0.65 } : undefined}
+                                />
+                              )}
                             </div>
 
-                            {/* Label do Dia da Semana */}
+                            {/* Label do Dia da Semana (Contraste WCAG AA) */}
                             <span
                               className={`text-[10px] mt-1.5 font-sans leading-none ${day.isToday
                                 ? 'font-bold'
                                 : day.answered > 0
                                   ? 'text-zinc-700 dark:text-zinc-300 font-semibold'
-                                  : 'text-zinc-400 dark:text-zinc-500 font-medium'
+                                  : 'text-zinc-500 dark:text-zinc-400 font-medium'
                                 }`}
-                              style={day.isToday ? { color: accentConfig.primaryHex } : undefined}
+                              style={day.isToday ? { color: primaryTextSafe } : undefined}
                             >
                               {day.isToday ? 'Hoje' : day.label}
                             </span>
@@ -3685,11 +3441,15 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             );
           }
           if (cardConfig.id === 'home_aproveitamento') {
+            const activePillColor =
+              mode === 'dark'
+                ? 'color-mix(in srgb, var(--primary-color, #2563eb) 65%, #ffffff)'
+                : accentConfig.primaryHex;
             return (
               <FigmaCardWrapper
                 key={cardConfig.id}
                 config={cardConfig}
-                className="self-stretch"
+                className={`self-stretch ${!isCustomizing ? 'bento-stagger-item' : ''}`}
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
@@ -3702,8 +3462,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                {/* Card 2: Aproveitamento com Seletor Interativo e Mini Sparkline com Tooltips */}
-                <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full">
+                {/* Card 2: Aproveitamento com Seletor Deslizante e Estado Zero Fiel */}
+                <div
+                  style={staggerStyle}
+                  className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full"
+                >
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -3716,32 +3479,40 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         >
                           <Award className="w-4 h-4" />
                         </div>
-                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                        <h2 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
                           Aproveitamento
-                        </span>
+                        </h2>
                       </div>
 
-                      {/* Seletor Interativo de Período (Pill Control) */}
-                      <div className="flex items-center bg-zinc-100 dark:bg-zinc-800/90 p-0.5 rounded-lg border border-zinc-200/60 dark:border-zinc-700/60">
+                      {/* Seletor Interativo de Período com Sliding Pill 60fps */}
+                      <div className="relative grid grid-cols-2 bg-zinc-100 dark:bg-zinc-800/90 p-0.5 rounded-lg border border-zinc-200/70 dark:border-zinc-700/60 min-w-[104px]">
+                        <span
+                          aria-hidden="true"
+                          className={`pointer-events-none absolute inset-y-0.5 left-0.5 w-[calc(50%-2px)] rounded-md bg-white dark:bg-zinc-700 shadow-2xs transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                            accuracyPeriod === '7d' ? 'translate-x-full' : 'translate-x-0'
+                          }`}
+                        />
                         <button
                           type="button"
                           onClick={() => setAccuracyPeriod('geral')}
-                          className={`text-[10px] px-2 py-0.5 rounded-md font-bold transition-all cursor-pointer ${accuracyPeriod === 'geral'
-                            ? 'bg-white dark:bg-zinc-700 shadow-2xs'
-                            : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
-                            }`}
-                          style={accuracyPeriod === 'geral' ? { color: accentConfig.primaryHex } : undefined}
+                          className={`relative z-10 text-[10px] px-2 py-0.5 rounded-md font-bold transition-colors cursor-pointer text-center ${
+                            accuracyPeriod === 'geral'
+                              ? ''
+                              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200'
+                          }`}
+                          style={accuracyPeriod === 'geral' ? { color: activePillColor } : undefined}
                         >
                           Geral
                         </button>
                         <button
                           type="button"
                           onClick={() => setAccuracyPeriod('7d')}
-                          className={`text-[10px] px-2 py-0.5 rounded-md font-bold transition-all cursor-pointer ${accuracyPeriod === '7d'
-                            ? 'bg-white dark:bg-zinc-700 shadow-2xs'
-                            : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
-                            }`}
-                          style={accuracyPeriod === '7d' ? { color: accentConfig.primaryHex } : undefined}
+                          className={`relative z-10 text-[10px] px-2 py-0.5 rounded-md font-bold transition-colors cursor-pointer text-center ${
+                            accuracyPeriod === '7d'
+                              ? ''
+                              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200'
+                          }`}
+                          style={accuracyPeriod === '7d' ? { color: activePillColor } : undefined}
                         >
                           7 Dias
                         </button>
@@ -3883,72 +3654,77 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       );
                     })()}
 
-                  {/* Desempenho por Dificuldade (Adaptável a Geral / 7 Dias) */}
+                  {/* Desempenho por Dificuldade (Sem números fictícios quando 0 questões) */}
                   <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5">
-                      <div className="text-[11px]">
+                      <div className="flex items-center justify-between text-[11px]">
                         <span className="font-bold text-zinc-700 dark:text-zinc-300">Desempenho por Dificuldade</span>
+                        {!difficultyStats.hasAnswers && (
+                          <span className="text-[10px] text-zinc-500 dark:text-zinc-400 font-medium">
+                            Sem respostas
+                          </span>
+                        )}
                       </div>
 
                       <div className="grid grid-cols-3 gap-1.5 text-[10px]">
                         {/* Fáceis */}
-                        <div className="p-1.5 px-2 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 flex flex-col justify-between">
+                        <div className="p-1.5 px-2 rounded-xl bg-zinc-50/90 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 flex flex-col justify-between">
                           <div className="flex items-center justify-between text-zinc-500 dark:text-zinc-400 text-[10px]">
                             <span className="font-medium">Fáceis</span>
                             {difficultyStats.hasAnswers && difficultyStats.facil.total > 0 && (
-                              <span className="text-[9px] text-zinc-400 font-mono">
+                              <span className="text-[9px] text-zinc-500 dark:text-zinc-400 font-mono">
                                 {difficultyStats.facil.correct}/{difficultyStats.facil.total}
                               </span>
                             )}
                           </div>
-                          <span className="font-sans font-extrabold text-xs text-zinc-900 dark:text-zinc-100 mt-0.5">
-                            {difficultyStats.facil.rate.toFixed(1)}%
+                          <span className={`font-sans font-extrabold text-xs mt-0.5 tabular-nums ${difficultyStats.hasAnswers ? 'text-zinc-900 dark:text-zinc-100' : 'text-zinc-400 dark:text-zinc-500'}`}>
+                            {difficultyStats.hasAnswers ? `${difficultyStats.facil.rate.toFixed(1)}%` : '—'}
                           </span>
-                          <div className="w-full h-1 bg-emerald-500/20 rounded-full mt-1 overflow-hidden">
+                          <div className="w-full h-1 bg-zinc-200/70 dark:bg-zinc-800 rounded-full mt-1 overflow-hidden">
                             <div
                               className="h-full bg-emerald-500 rounded-full transition-all duration-500 ease-out"
-                              style={{ width: `${Math.min(100, difficultyStats.facil.rate)}%` }}
+                              style={{ width: `${difficultyStats.hasAnswers ? Math.min(100, difficultyStats.facil.rate) : 0}%` }}
                             />
                           </div>
                         </div>
 
                         {/* Médias */}
-                        <div className="p-1.5 px-2 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 flex flex-col justify-between">
+                        <div className="p-1.5 px-2 rounded-xl bg-zinc-50/90 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 flex flex-col justify-between">
                           <div className="flex items-center justify-between text-zinc-500 dark:text-zinc-400 text-[10px]">
                             <span className="font-medium">Médias</span>
                             {difficultyStats.hasAnswers && difficultyStats.medio.total > 0 && (
-                              <span className="text-[9px] text-zinc-400 font-mono">
+                              <span className="text-[9px] text-zinc-500 dark:text-zinc-400 font-mono">
                                 {difficultyStats.medio.correct}/{difficultyStats.medio.total}
                               </span>
                             )}
                           </div>
-                          <span className="font-sans font-extrabold text-xs text-zinc-900 dark:text-zinc-100 mt-0.5">
-                            {difficultyStats.medio.rate.toFixed(1)}%
+                          <span className={`font-sans font-extrabold text-xs mt-0.5 tabular-nums ${difficultyStats.hasAnswers ? 'text-zinc-900 dark:text-zinc-100' : 'text-zinc-400 dark:text-zinc-500'}`}>
+                            {difficultyStats.hasAnswers ? `${difficultyStats.medio.rate.toFixed(1)}%` : '—'}
                           </span>
-                          <div className="w-full h-1 bg-amber-500/20 rounded-full mt-1 overflow-hidden">
+                          <div className="w-full h-1 bg-zinc-200/70 dark:bg-zinc-800 rounded-full mt-1 overflow-hidden">
                             <div
                               className="h-full bg-amber-500 rounded-full transition-all duration-500 ease-out"
-                              style={{ width: `${Math.min(100, difficultyStats.medio.rate)}%` }}
+                              style={{ width: `${difficultyStats.hasAnswers ? Math.min(100, difficultyStats.medio.rate) : 0}%` }}
                             />
                           </div>
                         </div>
 
                         {/* Difíceis */}
-                        <div className="p-1.5 px-2 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800/80 flex flex-col justify-between">
+                        <div className="p-1.5 px-2 rounded-xl bg-zinc-50/90 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 flex flex-col justify-between">
                           <div className="flex items-center justify-between text-zinc-500 dark:text-zinc-400 text-[10px]">
                             <span className="font-medium">Difíceis</span>
                             {difficultyStats.hasAnswers && difficultyStats.dificil.total > 0 && (
-                              <span className="text-[9px] text-zinc-400 font-mono">
+                              <span className="text-[9px] text-zinc-500 dark:text-zinc-400 font-mono">
                                 {difficultyStats.dificil.correct}/{difficultyStats.dificil.total}
                               </span>
                             )}
                           </div>
-                          <span className="font-sans font-extrabold text-xs text-zinc-900 dark:text-zinc-100 mt-0.5">
-                            {difficultyStats.dificil.rate.toFixed(1)}%
+                          <span className={`font-sans font-extrabold text-xs mt-0.5 tabular-nums ${difficultyStats.hasAnswers ? 'text-zinc-900 dark:text-zinc-100' : 'text-zinc-400 dark:text-zinc-500'}`}>
+                            {difficultyStats.hasAnswers ? `${difficultyStats.dificil.rate.toFixed(1)}%` : '—'}
                           </span>
-                          <div className="w-full h-1 bg-rose-500/20 rounded-full mt-1 overflow-hidden">
+                          <div className="w-full h-1 bg-zinc-200/70 dark:bg-zinc-800 rounded-full mt-1 overflow-hidden">
                             <div
                               className="h-full bg-rose-500 rounded-full transition-all duration-500 ease-out"
-                              style={{ width: `${Math.min(100, difficultyStats.dificil.rate)}%` }}
+                              style={{ width: `${difficultyStats.hasAnswers ? Math.min(100, difficultyStats.dificil.rate) : 0}%` }}
                             />
                           </div>
                         </div>
@@ -3999,9 +3775,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         >
                           <Medal className={`w-4 h-4 transition-transform duration-300 ${isMedalAnimating ? 'scale-125' : ''}`} />
                         </div>
-                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                        <h2 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
                           Percentil Oficial
-                        </span>
+                        </h2>
                       </div>
                       {!isPercentileCalibrating ? (
                         <Badge variant="default" size="sm" className="font-sans">
@@ -4134,7 +3910,15 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
                     ) : (
                       <span className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
-                        Progresso TRI: <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{150 - (stats.percentileInfo.missingForApprox || 150)}/150</strong>
+                        Progresso TRI:{' '}
+                        <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200 tabular-nums">
+                          {Math.min(
+                            UNRANKED_THRESHOLD,
+                            stats.percentileInfo.validQuestionsCount ??
+                              Math.max(0, UNRANKED_THRESHOLD - (stats.percentileInfo.missingForApprox ?? UNRANKED_THRESHOLD))
+                          )}
+                          /{UNRANKED_THRESHOLD}
+                        </strong>
                       </span>
                     )}
 
@@ -4471,9 +4255,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             >
                               <CalendarDays className="w-4 h-4" />
                             </div>
-                            <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                            <h2 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
                               Agenda de Estudos
-                            </span>
+                            </h2>
                           </div>
 
                           <div className="flex items-center gap-2">
@@ -4520,12 +4304,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               </div>
 
                               <div className="space-y-0.5">
-                                <h4
+                                <h3
                                   className="text-sm font-bold text-zinc-900 dark:text-zinc-100 line-clamp-1 leading-snug"
                                   title={currentActivity.title}
                                 >
                                   {currentActivity.title}
-                                </h4>
+                                </h3>
                                 {currentActivity.description && (
                                   <p className="text-[11px] text-zinc-500 dark:text-zinc-400 line-clamp-1 font-light">
                                     {cleanEventDescription(currentActivity.description)}
@@ -4561,12 +4345,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               </div>
 
                               <div className="space-y-0.5">
-                                <h4
+                                <h3
                                   className="text-sm font-bold text-zinc-900 dark:text-zinc-100 line-clamp-1 leading-snug"
                                   title={upcomingActivity.title}
                                 >
                                   {upcomingActivity.title}
-                                </h4>
+                                </h3>
                                 <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
                                   Horário programado: {upcomingActivity.startTime} até {upcomingActivity.endTime}
                                 </p>
@@ -4579,9 +4363,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                   <CheckCircle2 className="w-4 h-4" />
                                 </div>
                                 <div className="min-w-0">
-                                  <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100">
+                                  <h3 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100">
                                     Atividades de hoje concluídas
-                                  </h4>
+                                  </h3>
                                   <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
                                     {completedActivities.length} de {completedActivities.length} tarefas realizadas com sucesso.
                                   </p>
@@ -4616,9 +4400,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 <Calendar className="w-4 h-4" />
                               </div>
                               <div className="min-w-0">
-                                <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
+                                <h3 className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
                                   Nenhuma atividade programada agora
-                                </h4>
+                                </h3>
                                 <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
                                   Toque para abrir a agenda do dia e planejar seus estudos.
                                 </p>
@@ -4787,10 +4571,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           <Lightbulb className="w-4 h-4" />
                         </div>
                         <div className="min-w-0">
-                          <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 leading-snug break-words" title={displayedClinicalTip.fullTitle || displayedClinicalTip.title}>
+                          <h2 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 leading-snug break-words" title={displayedClinicalTip.fullTitle || displayedClinicalTip.title}>
                             {displayedClinicalTip.title}
-                          </h4>
-                          <span className="text-[10px] text-zinc-400 dark:text-zinc-500 font-medium block break-words leading-tight">
+                          </h2>
+                          <span className="text-[10px] text-zinc-500 dark:text-zinc-400 font-medium block break-words leading-tight">
                             {displayedClinicalTip.specialty} • {displayedClinicalTip.tema}{displayedClinicalTip.foco ? ` • ${displayedClinicalTip.foco}` : ''}
                           </span>
                         </div>
@@ -4881,7 +4665,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             )}
                           </div>
 
-                          {/* Chips Adaptativos ao lado da imagem (Sem corte de texto) */}
+                          {/* Chips Adaptativos ao lado da imagem (Sem corte de texto e com transição suave Active Recall) */}
                           <div className="flex-1 grid grid-cols-1 gap-2 min-w-0">
                             {displayedClinicalTip.chips.slice(0, 4).map((chip, idx) => {
                               const isRevealed = Boolean(revealedTipItems[idx] || revealAllTipItems);
@@ -4889,7 +4673,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 <div
                                   key={idx}
                                   onClick={(e) => toggleRevealTipItem(idx, e)}
-                                  className="p-2 sm:p-2.5 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all flex flex-col gap-2 min-w-0 cursor-pointer select-none"
+                                  className="p-2 sm:p-2.5 rounded-xl bg-zinc-50/90 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all active:scale-[0.99] flex flex-col min-w-0 cursor-pointer select-none"
                                   title="Clique para revelar / ocultar este item"
                                 >
                                   <div className="flex items-center justify-between gap-2 min-w-0">
@@ -4905,36 +4689,46 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                         {chip.label}
                                       </span>
                                     </div>
-                                    {!isRevealed && (
-                                      <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 bg-zinc-200/60 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-500 px-2 py-0.5 rounded-md transition-colors shrink-0">
-                                        <span>Revelar</span>
+                                    <span
+                                      className={`inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md transition-all shrink-0 ${
+                                        isRevealed
+                                          ? 'text-amber-600 dark:text-amber-400 bg-amber-500/10'
+                                          : 'text-zinc-500 dark:text-zinc-400 bg-zinc-200/70 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-600 dark:hover:text-amber-400'
+                                      }`}
+                                    >
+                                      <span>{isRevealed ? 'Ocultar' : 'Revelar'}</span>
+                                      {isRevealed ? (
+                                        <EyeOff className="w-3 h-3 text-amber-500" />
+                                      ) : (
                                         <Eye className="w-3 h-3 text-zinc-400" />
-                                      </span>
-                                    )}
+                                      )}
+                                    </span>
                                   </div>
 
-                                  {isRevealed && (
-                                    <div className="w-full">
-                                      <span className="block w-full text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1.5 rounded-lg border border-amber-500/25 leading-relaxed break-words whitespace-normal text-left animate-in fade-in duration-150">
-                                        {chip.value}
-                                      </span>
+                                  <div className="active-recall-collapse" data-open={isRevealed ? 'true' : 'false'}>
+                                    <div className="active-recall-inner">
+                                      <div className="pt-2 active-recall-content">
+                                        <span className="block w-full text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1.5 rounded-lg border border-amber-500/25 leading-relaxed break-words whitespace-normal text-left">
+                                          {chip.value}
+                                        </span>
+                                      </div>
                                     </div>
-                                  )}
+                                  </div>
                                 </div>
                               );
                             })}
                           </div>
                         </div>
                       ) : (
-                        /* Quando NÃO tem imagem: Bento Grid Responsivo com Altura Adaptativa e Sem Truncamento */
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-2.5">
+                        /* Quando NÃO tem imagem: Bento Grid Responsivo com Revelação Suave 60fps */
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-2.5 items-start">
                           {displayedClinicalTip.chips.slice(0, 4).map((chip, idx) => {
                             const isRevealed = Boolean(revealedTipItems[idx] || revealAllTipItems);
                             return (
                               <div
                                 key={idx}
                                 onClick={(e) => toggleRevealTipItem(idx, e)}
-                                className="p-2.5 sm:p-3 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all flex flex-col gap-2 min-w-0 cursor-pointer select-none"
+                                className="p-2.5 sm:p-3 rounded-xl bg-zinc-50/90 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-amber-500/40 transition-all active:scale-[0.99] flex flex-col min-w-0 cursor-pointer select-none"
                                 title="Clique para revelar / ocultar este item"
                               >
                                 <div className="flex items-center justify-between gap-2 min-w-0">
@@ -4950,21 +4744,31 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                       {chip.label}
                                     </span>
                                   </div>
-                                  {!isRevealed && (
-                                    <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-zinc-400 dark:text-zinc-500 bg-zinc-200/60 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-500 px-2 py-0.5 rounded-md transition-colors shrink-0">
-                                      <span>Revelar</span>
+                                  <span
+                                    className={`inline-flex items-center gap-1 text-[11px] font-medium px-2 py-0.5 rounded-md transition-all shrink-0 ${
+                                      isRevealed
+                                        ? 'text-amber-600 dark:text-amber-400 bg-amber-500/10'
+                                        : 'text-zinc-500 dark:text-zinc-400 bg-zinc-200/70 dark:bg-zinc-800/80 hover:bg-amber-500/15 hover:text-amber-600 dark:hover:text-amber-400'
+                                    }`}
+                                  >
+                                    <span>{isRevealed ? 'Ocultar' : 'Revelar'}</span>
+                                    {isRevealed ? (
+                                      <EyeOff className="w-3 h-3 text-amber-500" />
+                                    ) : (
                                       <Eye className="w-3 h-3 text-zinc-400" />
-                                    </span>
-                                  )}
+                                    )}
+                                  </span>
                                 </div>
 
-                                {isRevealed && (
-                                  <div className="w-full">
-                                    <span className="block w-full text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1.5 rounded-lg border border-amber-500/25 leading-relaxed break-words whitespace-normal text-left animate-in fade-in duration-150">
-                                      {chip.value}
-                                    </span>
+                                <div className="active-recall-collapse" data-open={isRevealed ? 'true' : 'false'}>
+                                  <div className="active-recall-inner">
+                                    <div className="pt-2 active-recall-content">
+                                      <span className="block w-full text-xs font-bold text-amber-700 dark:text-amber-300 bg-amber-500/10 dark:bg-amber-500/20 px-2.5 py-1.5 rounded-lg border border-amber-500/25 leading-relaxed break-words whitespace-normal text-left">
+                                        {chip.value}
+                                      </span>
+                                    </div>
                                   </div>
-                                )}
+                                </div>
                               </div>
                             );
                           })}
@@ -4972,14 +4776,20 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       )}
                     </div>
 
-                    {/* Rodapé: Pegadinha de Banca sem corte + CTA de Abertura do Drawer */}
-                    <div className="pt-2 flex items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80 gap-2">
+                    {/* Rodapé: Pegadinha Responsiva Mobile (sem espremer coluna central) + CTA */}
+                    <div className="pt-2.5 flex flex-col sm:flex-row sm:items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80 gap-2">
                       {displayedClinicalTip.bancaTrap ? (
-                        <div className="flex items-center gap-1.5 min-w-0 flex-1">
-                          <span className="px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-600 dark:text-rose-400 text-[10px] font-bold shrink-0 border border-rose-500/20">
-                            ⚠️ Pegadinha
-                          </span>
-                          <span className="text-[11px] text-zinc-500 dark:text-zinc-400 leading-snug break-words font-medium">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 min-w-0 flex-1">
+                          <div className="flex items-center justify-between sm:justify-start gap-2 shrink-0">
+                            <span className="px-1.5 py-0.5 rounded bg-rose-500/10 text-rose-600 dark:text-rose-400 text-[10px] font-bold shrink-0 border border-rose-500/20">
+                              ⚠️ Pegadinha
+                            </span>
+                            <span className="sm:hidden text-[11px] font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1 shrink-0">
+                              <span>Ver tudo</span>
+                              <ArrowRight className="w-3 h-3" />
+                            </span>
+                          </div>
+                          <span className="text-[11px] text-zinc-600 dark:text-zinc-400 leading-relaxed break-words font-medium">
                             {displayedClinicalTip.bancaTrap}
                           </span>
                         </div>
@@ -4989,7 +4799,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           <span>Ver conduta & detalhes</span>
                         </span>
                       )}
-                      <span className="text-[11px] font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1 shrink-0 group-hover:translate-x-0.5 transition-transform">
+                      <span className={`${displayedClinicalTip.bancaTrap ? 'hidden sm:flex' : 'flex'} text-[11px] font-bold text-amber-600 dark:text-amber-400 items-center gap-1 shrink-0 group-hover:translate-x-0.5 transition-transform self-end sm:self-auto`}>
                         <span>Ver tudo</span>
                         <ArrowRight className="w-3 h-3" />
                       </span>
@@ -5016,7 +4826,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                {/* 4. RAIO-X DAS 6 GRANDES ÁREAS */}
+                {/* 4. RAIO-X DAS 6 GRANDES ÁREAS (Lazy-loaded + IntersectionObserver para zero Forced Reflow inicial) */}
                 <section className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4 min-h-0 h-full overflow-hidden flex flex-col justify-between">
                   <div className="flex items-center justify-between gap-2 pb-2 border-b border-zinc-100 dark:border-zinc-800/80">
                     <div className="flex items-center gap-2">
@@ -5030,9 +4840,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <BarChart2 className="w-4 h-4" />
                       </div>
                       <div>
-                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider block">
+                        <h2 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider block">
                           Raio-X das 6 Grandes Áreas
-                        </span>
+                        </h2>
                         <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
                           Desempenho por especialidade clínica
                         </p>
@@ -5040,306 +4850,22 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
                   </div>
 
-                  {/* Gráfico Donut + Gráfico de Evolução */}
-                  <div className={`grid grid-cols-1 ${cardConfig.colSpan >= 8 ? 'md:grid-cols-12' : 'grid-cols-1'} gap-5 sm:gap-8 items-center pt-1`}>
-                    {/* Donut Chart (Esquerda - 5 cols quando largo, coluna única quando compacto) */}
-                    <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-5' : 'col-span-1'} flex flex-col items-center justify-center space-y-2`}>
-                      <div className={`h-48 w-full max-w-[220px] relative flex items-center justify-center mx-auto ${!isPieAnimationDone ? 'pointer-events-none' : ''}`}>
-                        <ResponsiveContainer width="100%" height="100%">
-                          <PieChart>
-                            <Pie
-                              data={donutData}
-                              dataKey="value"
-                              nameKey="name"
-                              cx="50%"
-                              cy="50%"
-                              innerRadius={55}
-                              outerRadius={80}
-                              paddingAngle={4}
-                              isAnimationActive={!isPieAnimationDone}
-                              animationBegin={0}
-                              animationDuration={1400}
-                              animationEasing="ease-out"
-                              onAnimationEnd={() => setIsPieAnimationDone(true)}
-                              onMouseEnter={(_, index) => {
-                                if (!isPieAnimationDone) return;
-                                setHoveredPieIndex(index);
-                              }}
-                              onMouseLeave={() => {
-                                if (!isPieAnimationDone) return;
-                                setHoveredPieIndex(null);
-                              }}
-                              onClick={(entry: { id?: string; payload?: { id?: string } } | undefined, index: number) => {
-                                if (!isPieAnimationDone) return;
-                                const targetId = entry?.id || entry?.payload?.id || (typeof index === 'number' && donutData[index]?.id);
-                                if (targetId) {
-                                  handlePieSectorClick(targetId);
-                                }
-                              }}
-                              stroke="none"
-                              className="cursor-pointer"
-                            >
-                              {donutData.map((entry, index) => {
-                                const isSelected = selectedAreaId === entry.id;
-                                const isHovered = hoveredPieIndex === index;
-
-                                let opacity = 1;
-                                if (hoveredPieIndex !== null) {
-                                  opacity = isHovered ? 1 : 0.28;
-                                } else if (selectedAreaId !== 'geral') {
-                                  opacity = isSelected ? 1 : 0.28;
-                                } else {
-                                  opacity = 1;
-                                }
-
-                                return (
-                                  <Cell
-                                    key={`cell-core-${index}`}
-                                    fill={entry.cor}
-                                    opacity={opacity}
-                                    className="transition-opacity duration-200 cursor-pointer outline-none focus:outline-none"
-                                    onClick={(e) => {
-                                      e?.stopPropagation?.();
-                                      if (!isPieAnimationDone) return;
-                                      handlePieSectorClick(entry.id);
-                                    }}
-                                  />
-                                );
-                              })}
-                            </Pie>
-                          </PieChart>
-                        </ResponsiveContainer>
-
-                        {/* Centro do Gráfico Donut (Clique para alternar para o panorama Geral) */}
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-                          <div
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              setSelectedAreaId('geral');
-                            }}
-                            className="w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center text-center px-1 pointer-events-auto cursor-pointer group transition-transform hover:scale-105 active:scale-95 z-10"
-                            title="Clique para ver o panorama Geral"
-                          >
-                            {(() => {
-                              const currentHovered = hoveredPieIndex !== null ? donutData[hoveredPieIndex] : null;
-                              const activeData = currentHovered || (selectedAreaId !== 'geral' ? donutData.find((d) => d.id === selectedAreaId) : null);
-
-                              if (activeData) {
-                                return (
-                                  <>
-                                    <span className="text-[9px] uppercase tracking-wider font-bold text-zinc-500 dark:text-zinc-400 line-clamp-1 max-w-[100px]">
-                                      {activeData.name}
-                                    </span>
-                                    <span className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white font-sans tabular-nums mt-0.5">
-                                      {activeData.realValue}
-                                    </span>
-                                    <span
-                                      className="text-[9px] font-bold"
-                                      style={{ color: activeData.cor }}
-                                    >
-                                      {activeData.hasData
-                                        ? `${activeData.accuracy}% acerto`
-                                        : '0 resolvidas'}
-                                    </span>
-                                  </>
-                                );
-                              }
-
-                              return (
-                                <>
-                                  <span className="text-[9px] uppercase tracking-wider font-bold text-zinc-500 dark:text-zinc-400">
-                                    VOLUME TOTAL
-                                  </span>
-                                  <span className="text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white font-sans tabular-nums mt-0.5">
-                                    {totalCoreVolume}
-                                  </span>
-                                  <span className="text-[10px] font-medium text-zinc-600 dark:text-zinc-400 group-hover:text-emerald-500 transition-colors">
-                                    6 Grandes Áreas
-                                  </span>
-                                </>
-                              );
-                            })()}
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Seletor Rápido por Cor (Legenda Interativa: Geral + 6 Grandes Áreas) */}
-                      <div className="flex items-center justify-center gap-1.5 flex-wrap pt-1 w-full">
-                        <button
-                          type="button"
-                          onClick={() => setSelectedAreaId('geral')}
-                          className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1 border ${selectedAreaId === 'geral'
-                            ? 'shadow-xs scale-105 border-zinc-400 dark:border-zinc-500 bg-zinc-200/60 dark:bg-zinc-800 text-zinc-900 dark:text-white'
-                            : 'opacity-70 hover:opacity-100 hover:scale-102 border-transparent text-zinc-600 dark:text-zinc-400'
-                            }`}
-                          title="Visualizar evolução geral (todas as áreas)"
-                        >
-                          <BarChart2 className="w-2.5 h-2.5" />
-                          <span>Geral</span>
-                        </button>
-                        {areasResumo.map((area) => {
-                          const isSelected = selectedAreaId === area.id;
-                          const shortLabel = area.id === 'clinica' ? 'Clínica' : area.id === 'cirurgia' ? 'Cirurgia' : area.label;
-                          return (
-                            <button
-                              key={area.id}
-                              type="button"
-                              onClick={() => setSelectedAreaId((prev) => (prev === area.id ? 'geral' : area.id))}
-                              className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1.5 border ${isSelected
-                                ? 'shadow-xs scale-105'
-                                : 'opacity-70 hover:opacity-100 hover:scale-102'
-                                }`}
-                              style={{
-                                backgroundColor: isSelected ? `${area.colorHex}22` : 'transparent',
-                                borderColor: isSelected ? area.colorHex : 'transparent',
-                                color: isSelected ? area.colorHex : undefined
-                              }}
-                              title={`Clique para selecionar ${area.label}`}
-                            >
-                              <span
-                                className="w-2 h-2 rounded-full shrink-0"
-                                style={{ backgroundColor: area.colorHex }}
-                              />
-                              <span className="text-zinc-700 dark:text-zinc-300">
-                                {shortLabel}
-                              </span>
-                            </button>
-                          );
-                        })}
-                      </div>
-                    </div>
-
-                    {/* Gráfico de Evolução da Especialidade Selecionada ou Geral */}
-                    <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-7' : 'col-span-1'} flex flex-col justify-between space-y-3`}>
-                      {/* Cabeçalho do Gráfico: Filtro de Período (Esquerda) + Legenda Horizontal Inline (Direita - Imagem 3) */}
-                      <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-zinc-100 dark:border-zinc-850">
-                        <div className="flex items-center gap-2">
-                          {/* Botão no canto superior esquerdo para abrir o Modal de Período */}
-                          <button
-                            type="button"
-                            onClick={() => setIsPeriodDrawerOpen(true)}
-                            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-all cursor-pointer shadow-2xs group"
-                            title="Filtrar período do gráfico"
-                          >
-                            <Calendar className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform" />
-                            <span>{getSpecialtyPeriodLabel()}</span>
-                            <SlidersHorizontal className="w-3 h-3 opacity-60 ml-0.5" />
-                          </button>
-                        </div>
-
-                        {/* Legenda Horizontal Inline (Imagem 3: um do lado do outro) */}
-                        <div className="flex items-center gap-4 text-xs whitespace-nowrap">
-                          <span className="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-300 font-medium text-[11px]">
-                            <span className="w-2.5 h-2.5 rounded-xs bg-[#10B981] shrink-0" />
-                            Acertos (topo)
-                          </span>
-                          <span className="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-300 font-medium text-[11px]">
-                            <span className="w-2.5 h-2.5 rounded-xs bg-[#F43F5E] shrink-0" />
-                            Erros (base)
-                          </span>
-                          <span className="inline-flex items-center gap-1.5 text-zinc-600 dark:text-zinc-300 font-medium text-[11px]">
-                            <span className="w-3.5 h-0.5 bg-zinc-400 dark:bg-zinc-400 opacity-60 shrink-0" />
-                            Tendência
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Gráfico Composto: Barras Empilhadas (Erros base + Acertos topo) + Linha de Tendência */}
-                      <div className="h-52 sm:h-56 w-full pt-1">
-                        <ResponsiveContainer width="100%" height="100%">
-                          <ComposedChart
-                            data={specialtyEvolutionData}
-                            margin={{ top: 10, right: 8, left: -24, bottom: 0 }}
-                          >
-                            <CartesianGrid
-                              strokeDasharray="3 3"
-                              vertical={false}
-                              stroke={mode === 'dark' ? '#27272A' : '#E2E8F0'}
-                              strokeOpacity={0.6}
-                            />
-                            <XAxis
-                              dataKey="label"
-                              minTickGap={16}
-                              axisLine={{ stroke: mode === 'dark' ? '#27272A' : '#CBD5E1' }}
-                              tickLine={false}
-                              tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 10, fontWeight: 500 }}
-                              dy={6}
-                            />
-                            <YAxis
-                              axisLine={false}
-                              tickLine={false}
-                              tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 10 }}
-                            />
-                            <Tooltip
-                              content={<AreaEvolutionTooltip colorHex={selectedArea.colorHex} areaLabel={selectedArea.label} />}
-                              wrapperStyle={{ pointerEvents: 'none' }}
-                            />
-
-                            {/* Barra Vermelha Abaixo (Erros) */}
-                            <Bar
-                              dataKey="erros"
-                              name="Erros (base)"
-                              stackId="specialtyEvolution"
-                              fill="#F43F5E"
-                              isAnimationActive={false}
-                              maxBarSize={specialtyPeriod === '6m' ? 8 : specialtyPeriod === '3m' ? 12 : 20}
-                            />
-
-                            {/* Barra Verde Acima (Acertos) */}
-                            <Bar
-                              dataKey="acertos"
-                              name="Acertos (topo)"
-                              stackId="specialtyEvolution"
-                              fill="#10B981"
-                              radius={[2.5, 2.5, 0, 0]}
-                              isAnimationActive={false}
-                              maxBarSize={specialtyPeriod === '6m' ? 8 : specialtyPeriod === '3m' ? 12 : 20}
-                            />
-
-                            {/* Linha Suave de Tendência */}
-                            <Line
-                              type="monotone"
-                              dataKey="trendTotal"
-                              name="Tendência"
-                              stroke={mode === 'dark' ? '#94A3B8' : '#64748B'}
-                              strokeWidth={2}
-                              strokeOpacity={0.5}
-                              dot={false}
-                              isAnimationActive={false}
-                              activeDot={{
-                                r: 3,
-                                stroke: mode === 'dark' ? '#94A3B8' : '#64748B',
-                                strokeWidth: 1.5,
-                                fill: mode === 'dark' ? '#18181b' : '#ffffff'
-                              }}
-                            />
-                          </ComposedChart>
-                        </ResponsiveContainer>
-                      </div>
-
-                      {/* Rodapé do Gráfico: Resumo de Acertos e Questões Resolvidas + Botão de Treino */}
-                      <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-2.5 border-t border-zinc-100 dark:border-zinc-850">
-                        <div className="flex items-center gap-2 text-xs text-zinc-600 dark:text-zinc-400">
-                          <span className="font-semibold text-zinc-800 dark:text-zinc-200">
-                            {selectedArea.correct} acertos de {selectedArea.total} questões resolvidas
-                          </span>
-                        </div>
-
-                        <button
-                          type="button"
-                          onClick={() => handlePracticeArea(selectedArea.filterName)}
-                          className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95 active:scale-98 shrink-0"
-                          style={{
-                            backgroundColor: selectedArea.colorHex,
-                            boxShadow: `0 2px 8px ${selectedArea.colorHex}33`
-                          }}
-                        >
-                          <Play className="w-3.5 h-3.5 fill-current" />
-                          <span>{selectedAreaId === 'geral' ? 'Treinar Questões Gerais' : `Treinar ${selectedArea.label}`}</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                  <SpecialtyXRayChart
+                    colSpan={cardConfig.colSpan}
+                    mode={mode}
+                    donutData={donutData}
+                    areasResumo={areasResumo}
+                    selectedAreaId={selectedAreaId}
+                    selectedArea={selectedArea}
+                    totalCoreVolume={totalCoreVolume}
+                    specialtyPeriod={specialtyPeriod}
+                    specialtyPeriodLabel={getSpecialtyPeriodLabel()}
+                    specialtyEvolutionData={specialtyEvolutionData}
+                    onSelectArea={(id) => setSelectedAreaId(id)}
+                    onToggleArea={handlePieSectorClick}
+                    onOpenPeriodDrawer={() => setIsPeriodDrawerOpen(true)}
+                    onPracticeArea={handlePracticeArea}
+                  />
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Benchmark Comparativo das 6 Grandes Áreas */}
                   {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 550) && (
@@ -5406,69 +4932,77 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                {/* 3. RETOMADA DE ESTUDOS INTELIGENTE - SELETOR PRINCIPAL (IMAGEM 3 NO LUGAR DA IMAGEM 2) */}
+                {/* 3. RETOMADA DE ESTUDOS INTELIGENTE - SELETOR COM SLIDING PILL & SEM CORTE NO MOBILE */}
                 <section className="w-full min-h-0 h-full flex flex-col justify-between space-y-3">
-                  <div className="flex items-center px-1 min-w-0 max-w-full overflow-x-auto">
-                    {/* Seletor em formato retangular em pílula (Estilo Imagem 3) */}
-                    <div className="inline-flex p-1 bg-zinc-100/90 dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800/90 rounded-xl items-center gap-1 shadow-xs overflow-x-auto max-w-full">
+                  <div className="flex items-center min-w-0 max-w-full">
+                    <div
+                      role="tablist"
+                      aria-label="Modo de retomada de estudos"
+                      className="relative grid grid-cols-3 w-full sm:w-auto p-1 bg-zinc-100/90 dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800/90 rounded-xl items-center shadow-xs"
+                    >
+                      <span
+                        aria-hidden="true"
+                        className={`pointer-events-none absolute inset-y-1 left-1 w-[calc((100%-8px)/3)] rounded-lg shadow-xs transition-transform duration-220 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                          studyResumeTab === 'cadernos'
+                            ? 'translate-x-0'
+                            : studyResumeTab === 'provas'
+                              ? 'translate-x-full'
+                              : 'translate-x-[200%]'
+                        }`}
+                        style={{ backgroundColor: accentConfig.primaryHex }}
+                      />
                       <button
                         type="button"
+                        role="tab"
+                        aria-selected={studyResumeTab === 'cadernos'}
                         onClick={() => setStudyResumeTab('cadernos')}
-                        className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'cadernos'
-                          ? 'text-white shadow-xs'
-                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                          }`}
-                        style={{
-                          backgroundColor: studyResumeTab === 'cadernos' ? accentConfig.primaryHex : 'transparent'
-                        }}
+                        className={`relative z-10 rounded-lg px-2.5 sm:px-4 py-1.5 text-[11px] sm:text-xs font-bold transition-colors flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap ${
+                          studyResumeTab === 'cadernos'
+                            ? 'text-[var(--primary-contrast,#ffffff)]'
+                            : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                        }`}
                       >
-                        <FolderOpen className="w-3.5 h-3.5" />
+                        <FolderOpen className="w-3.5 h-3.5 shrink-0" />
                         <span>Cadernos</span>
                       </button>
 
                       <button
                         type="button"
+                        role="tab"
+                        aria-selected={studyResumeTab === 'provas'}
                         onClick={() => setStudyResumeTab('provas')}
-                        className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'provas'
-                          ? 'text-white shadow-xs'
-                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                          }`}
-                        style={{
-                          backgroundColor: studyResumeTab === 'provas' ? accentConfig.primaryHex : 'transparent'
-                        }}
+                        className={`relative z-10 rounded-lg px-2.5 sm:px-4 py-1.5 text-[11px] sm:text-xs font-bold transition-colors flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap ${
+                          studyResumeTab === 'provas'
+                            ? 'text-[var(--primary-contrast,#ffffff)]'
+                            : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                        }`}
                       >
-                        <FileCheck2 className="w-3.5 h-3.5" />
-                        <span>Provas na Íntegra</span>
-                        <span
-                          className="w-1.5 h-1.5 rounded-full ml-0.5"
-                          style={{ backgroundColor: accentConfig.primaryHex }}
-                        />
+                        <FileCheck2 className="w-3.5 h-3.5 shrink-0" />
+                        <span className="sm:hidden">Provas</span>
+                        <span className="hidden sm:inline">Provas na Íntegra</span>
                       </button>
 
                       <button
                         type="button"
+                        role="tab"
+                        aria-selected={studyResumeTab === 'simulados'}
                         onClick={() => setStudyResumeTab('simulados')}
-                        className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'simulados'
-                          ? 'text-white shadow-xs'
-                          : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                          }`}
-                        style={{
-                          backgroundColor: studyResumeTab === 'simulados' ? accentConfig.primaryHex : 'transparent'
-                        }}
+                        className={`relative z-10 rounded-lg px-2.5 sm:px-4 py-1.5 text-[11px] sm:text-xs font-bold transition-colors flex items-center justify-center gap-1.5 cursor-pointer whitespace-nowrap ${
+                          studyResumeTab === 'simulados'
+                            ? 'text-[var(--primary-contrast,#ffffff)]'
+                            : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                        }`}
                       >
-                        <Target className="w-3.5 h-3.5" />
-                        <span>Simulados Oficiais</span>
-                        <span
-                          className="w-1.5 h-1.5 rounded-full ml-0.5"
-                          style={{ backgroundColor: accentConfig.primaryHex }}
-                        />
+                        <Target className="w-3.5 h-3.5 shrink-0" />
+                        <span className="sm:hidden">Simulados</span>
+                        <span className="hidden sm:inline">Simulados Oficiais</span>
                       </button>
                     </div>
                   </div>
 
                   {/* PAINEL 1: CADERNOS DE QUESTÕES */}
                   {studyResumeTab === 'cadernos' && (
-                    <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs space-y-4 animate-in fade-in duration-200">
+                    <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs space-y-4 animate-panel-swap">
                       {/* Cabeçalho do Card */}
                       <div className="flex items-center justify-between gap-2 pb-3 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80">
                         <div className="flex items-center gap-2">
@@ -5511,9 +5045,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             <div className="space-y-4">
                               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                                 <div className="space-y-1">
-                                  <h4 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100" title={item.title}>
+                                  <h3 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100" title={item.title}>
                                     {item.title}
-                                  </h4>
+                                  </h3>
                                   <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 flex-wrap">
                                     <span>{item.completedQuestions} de {item.totalQuestions} questões resolvidas</span>
                                     {item.lastQuestionIndex !== undefined && item.lastQuestionIndex > 0 && (
@@ -5588,7 +5122,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                   {/* PAINEL 2: PROVAS NA ÍNTEGRA OFICIAIS */}
                   {studyResumeTab === 'provas' && (
-                    <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-in fade-in duration-200">
+                    <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-panel-swap">
                       {/* Cabeçalho do Card */}
                       <div className="flex items-center justify-between gap-2 pb-3 border-b border-zinc-100 dark:border-zinc-800/80">
                         <div className="flex items-center gap-2">
@@ -5644,9 +5178,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                             <div className="space-y-1">
                               <div className="flex items-center gap-2">
-                                <h4 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100">
+                                <h3 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100">
                                   {currentOfficialExam.institution} {currentOfficialExam.year}
-                                </h4>
+                                </h3>
                                 <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700">
                                   {currentOfficialExam.modality || 'Acesso Direto'}
                                 </span>
@@ -5723,7 +5257,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                   {/* PAINEL 3: SIMULADOS OFICIAIS */}
                   {studyResumeTab === 'simulados' && (
-                    <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-in fade-in duration-200">
+                    <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-panel-swap">
                       {/* Cabeçalho do Card */}
                       <div className="flex items-center justify-between gap-2 pb-3 border-b border-zinc-100 dark:border-zinc-800/80">
                         <div className="flex items-center gap-2">
@@ -5778,9 +5312,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <div className="space-y-4">
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                             <div className="space-y-1">
-                              <h4 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 truncate" title={currentMockExam.title}>
+                              <h3 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100 truncate" title={currentMockExam.title}>
                                 {currentMockExam.title}
-                              </h4>
+                              </h3>
                               <p className="text-xs text-zinc-500 dark:text-zinc-400">
                                 {currentMockExam.banca} • {currentMockExam.duration} • {currentMockExam.answeredCount || 0} de {currentMockExam.totalQuestions || 100} resolvidas
                               </p>
@@ -7919,30 +7453,32 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           </div>
         </div>
       )}
-      {/* 9. DRAWER CENTRAL SECUNDÁRIO: PRÉ-VISUALIZAÇÃO DE SUGESTÕES DE IA COM ADIÇÃO AO CRONOGRAMA */}
-      <AiScheduleDrawer
-        isOpen={showAiScheduleDrawer}
-        onClose={() => setShowAiScheduleDrawer(false)}
-        analysis={scheduleAiAnalysis}
-        userScheduledTasks={userScheduledTasks}
-        onAddTasks={(tasks) => {
-          setUserScheduledTasks(prev => {
-            const prevIds = new Set(prev.map(p => p.id));
-            const newItems = tasks
-              .filter(s => !prevIds.has(s.id))
-              .map(s => ({ ...s, isAiSuggested: true }));
-            newItems.forEach((item) => {
-              saveUserScheduledTask(item, user?.id).catch(() => { });
+      {/* 9. DRAWER CENTRAL SECUNDÁRIO: PRÉ-VISUALIZAÇÃO DE SUGESTÕES DE IA (Lazy) */}
+      {showAiScheduleDrawer && (
+        <AiScheduleDrawer
+          isOpen={showAiScheduleDrawer}
+          onClose={() => setShowAiScheduleDrawer(false)}
+          analysis={scheduleAiAnalysis}
+          userScheduledTasks={userScheduledTasks}
+          onAddTasks={(tasks) => {
+            setUserScheduledTasks(prev => {
+              const prevIds = new Set(prev.map(p => p.id));
+              const newItems = tasks
+                .filter(s => !prevIds.has(s.id))
+                .map(s => ({ ...s, isAiSuggested: true }));
+              newItems.forEach((item) => {
+                saveUserScheduledTask(item, user?.id).catch(() => { });
+              });
+              return [...prev, ...newItems];
             });
-            return [...prev, ...newItems];
-          });
-          setCalendarSyncSuccessMsg(`${tasks.length} atividade(s) adicionada(s) ao cronograma oficial!`);
-        }}
-        onRemoveTask={handleRemoveScheduledTask}
-        onExportToGoogle={handleExportSlotToGoogle}
-        exportingSlotId={exportingSlotId}
-        exportedSlotIds={exportedSlotIds}
-      />
+            setCalendarSyncSuccessMsg(`${tasks.length} atividade(s) adicionada(s) ao cronograma oficial!`);
+          }}
+          onRemoveTask={handleRemoveScheduledTask}
+          onExportToGoogle={handleExportSlotToGoogle}
+          exportingSlotId={exportingSlotId}
+          exportedSlotIds={exportedSlotIds}
+        />
+      )}
 
       {/* 10. MODAL LIGHTBOX DE ZOOM PARA IMAGENS DA DICA DO DIA */}
       {activeZoomImage && (

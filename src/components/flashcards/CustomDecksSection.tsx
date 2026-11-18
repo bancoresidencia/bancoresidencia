@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Sparkles,
   Plus,
@@ -45,6 +45,19 @@ export const CustomDecksSection: React.FC<CustomDecksSectionProps> = ({
   const [decks, setDecks] = useState<CustomFlashcardDeck[]>(() => {
     return flashcardsService.getPersonalizedDecks(user?.id);
   });
+
+  useEffect(() => {
+    const localDecks = flashcardsService.getPersonalizedDecks(user?.id);
+    setDecks(localDecks);
+    if (user?.id) {
+      flashcardsService.syncRemotePersonalizedDecks(user.id).then((synced) => {
+        setDecks(synced);
+        if (onDeckCountChange) {
+          onDeckCountChange(synced.length);
+        }
+      });
+    }
+  }, [user?.id, onDeckCountChange]);
 
   const refreshDecks = () => {
     const updated = flashcardsService.getPersonalizedDecks(user?.id);

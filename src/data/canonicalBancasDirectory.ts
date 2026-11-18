@@ -1,10 +1,12 @@
 // Catálogo Oficial de Bancas e Instituições Consolidadas
-// Censo Real extraído diretamente das tabelas do banco
+// Higienizado com Região Geográfica e Banca Organizadora
 export interface CanonicalBancaItem {
   sigla: string;
   nome: string;
   count: number;
   uf: string;
+  macrorregiao?: string;
+  bancaOrganizadora?: string;
   key: string;
   modalidades: string[];
 }
@@ -12,18 +14,20 @@ export interface CanonicalBancaItem {
 export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
   {
     "sigla": "SES-PE",
-    "nome": "FAMERP",
+    "nome": "Secretaria Estadual de Saúde de Pernambuco",
     "count": 4005,
     "uf": "PE",
     "key": "SES-PE",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "IAUPE / UPE"
   },
   {
     "sigla": "USP-SP",
-    "nome": "FAMERP",
+    "nome": "Hospital das Clínicas da FMUSP (USP-SP)",
     "count": 3614,
     "uf": "SP",
     "key": "USP-SP",
@@ -31,7 +35,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
       "Acesso Direto",
       "Revalida",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "FUVEST"
   },
   {
     "sigla": "AMP",
@@ -42,18 +48,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FMABC",
-    "nome": "FAMERP",
+    "nome": "Centro Universitário Saúde ABC (FMABC)",
     "count": 3145,
     "uf": "SP",
     "key": "FMABC",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "AMRIGS",
@@ -64,7 +74,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "FUNDATEC / AMRIGS"
   },
   {
     "sigla": "UNICAMP",
@@ -75,18 +87,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "R+",
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "COMVEST"
   },
   {
     "sigla": "SES-RJ",
-    "nome": "FAMERP",
+    "nome": "Secretaria de Estado de Saúde do Rio de Janeiro",
     "count": 2674,
     "uf": "RJ",
     "key": "SES-RJ",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPR",
@@ -97,7 +113,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "R+",
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SURCE",
@@ -108,18 +126,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "SURCE"
   },
   {
     "sigla": "PUC-PR",
-    "nome": "FAMERP",
+    "nome": "Pontifícia Universidade Católica do Paraná",
     "count": 2535,
     "uf": "PR",
     "key": "PUC-PR",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FAMERP",
@@ -130,18 +152,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "SUS-SP",
-    "nome": "FAMERP",
+    "nome": "Sistema Único de Saúde de São Paulo",
     "count": 2464,
     "uf": "SP",
     "key": "SUS-SP",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Quadrix / IADES"
   },
   {
     "sigla": "CERMAM",
@@ -152,7 +178,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PSU-MG",
@@ -163,7 +191,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "R+",
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "AREMG"
   },
   {
     "sigla": "UNIFESP",
@@ -174,40 +204,48 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "R+",
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "USP-RP",
-    "nome": "FAMERP",
+    "nome": "Hospital das Clínicas da FMRP-USP (Ribeirão Preto)",
     "count": 2124,
     "uf": "SP",
     "key": "USP-RP",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNESP",
-    "nome": "FAMERP",
+    "nome": "Universidade Estadual Paulista Júlio de Mesquita Filho",
     "count": 2090,
     "uf": "SP",
     "key": "UNESP",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "IAMSPE",
-    "nome": "FAMERP",
+    "nome": "Instituto de Assistência Médica ao Servidor Público Estadual (SP)",
     "count": 1988,
     "uf": "SP",
     "key": "IAMSPE",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "SES-DF",
@@ -218,7 +256,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Quadrix / IADES"
   },
   {
     "sigla": "UNICAMP/HC",
@@ -228,7 +268,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNICAMP/HC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "COMVEST"
   },
   {
     "sigla": "UFG",
@@ -239,7 +281,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ENARE",
@@ -250,7 +294,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "FGV / AOCP"
   },
   {
     "sigla": "FGV",
@@ -261,29 +307,35 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "FGV / AOCP"
   },
   {
     "sigla": "UEL",
-    "nome": "FAMERP",
+    "nome": "Universidade Estadual de Londrina",
     "count": 1813,
     "uf": "SP",
     "key": "UEL",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FJG",
-    "nome": "FAMERP",
+    "nome": "Fundação João Goulart - SMS Rio de Janeiro",
     "count": 1807,
     "uf": "SP",
     "key": "FJG",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMBH",
@@ -294,7 +346,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade do Estado do Pará",
@@ -304,7 +358,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade do Estado do Pará",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOA",
@@ -314,7 +370,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UERJ",
@@ -325,7 +383,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SUS-BA",
@@ -335,7 +395,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SUS-BA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SES-GO",
@@ -346,7 +408,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UnB",
@@ -357,7 +421,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IOG",
@@ -367,17 +433,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IOG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FUBOG",
-    "nome": "FAMERP",
+    "nome": "Fundação Banco de Olhos de Goiás",
     "count": 1344,
     "uf": "SP",
     "key": "FUBOG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IPSEMG",
@@ -388,7 +458,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "R+",
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HU-FMJ",
@@ -398,7 +470,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HU-FMJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "SEMUSA (SMS) Macaé",
@@ -408,7 +482,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SEMUSA (SMS) Macaé",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFRJ/HUCFF",
@@ -418,7 +494,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFRJ/HUCFF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Taubaté",
@@ -428,7 +506,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Taubaté",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Universidade de Ribeirão Preto",
@@ -438,7 +518,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Ribeirão Preto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CMC",
@@ -449,18 +531,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SANTA CASA - SP",
-    "nome": "FAMERP",
+    "nome": "Irmandade da Santa Casa de Misericórdia de São Paulo",
     "count": 1235,
     "uf": "SP",
     "key": "SANTA CASA - SP",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UERJ/HUPE",
@@ -470,7 +556,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UERJ/HUPE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "IAUPE / UPE"
   },
   {
     "sigla": "Universidade Estadual do Piauí",
@@ -480,7 +568,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual do Piauí",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "USP/HCRP",
@@ -490,7 +580,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "USP/HCRP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de São Paulo",
@@ -500,7 +592,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UNIFESP/EPM",
@@ -510,7 +604,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIFESP/EPM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFRGS/HCPA",
@@ -520,7 +616,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFRGS/HCPA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade de Medicina de Petrópolis",
@@ -530,7 +628,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade de Medicina de Petrópolis",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "USP/HCFMUSP",
@@ -540,7 +640,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "USP/HCFMUSP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "FUVEST"
   },
   {
     "sigla": "HAC",
@@ -550,7 +652,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HAC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade do Estado do Rio Grande do Norte",
@@ -560,7 +664,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade do Estado do Rio Grande do Norte",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFRN",
@@ -571,18 +677,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFT",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal do Tocantins",
     "count": 1132,
     "uf": "SP",
     "key": "UFT",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SES - DF",
@@ -593,7 +703,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Quadrix / IADES"
   },
   {
     "sigla": "IAMSPE/HSPE",
@@ -603,7 +715,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IAMSPE/HSPE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HMG",
@@ -613,7 +727,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFSC/HU",
@@ -624,18 +740,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HEVV",
-    "nome": "FAMERP",
+    "nome": "Hospital Evangélico de Vila Velha",
     "count": 1077,
     "uf": "SP",
     "key": "HEVV",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPA/HUJBB",
@@ -645,7 +765,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFPA/HUJBB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNESP/HCFMB",
@@ -655,7 +777,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNESP/HCFMB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HEAA-FMC",
@@ -665,18 +789,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HEAA-FMC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HNMD",
-    "nome": "FAMERP",
+    "nome": "Hospital Naval Marcílio Dias - Marinha do Brasil",
     "count": 1050,
     "uf": "SP",
     "key": "HNMD",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Pontifícia Universidade Católica de São Paulo",
@@ -686,7 +814,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Pontifícia Universidade Católica de São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-SP",
@@ -697,7 +827,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HFA",
@@ -708,7 +840,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFES/HUCAM",
@@ -718,7 +852,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFES/HUCAM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HUSE",
@@ -728,18 +864,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HUSE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPE",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal de Pernambuco",
     "count": 951,
     "uf": "SP",
     "key": "UFPE",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "AMB / Sociedades"
   },
   {
     "sigla": "HUGG/UNIRIO",
@@ -750,18 +890,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFRJ",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal do Rio de Janeiro (HUCFF)",
     "count": 934,
     "uf": "SP",
     "key": "UFRJ",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Ribeirão Preto (SP)",
@@ -771,18 +915,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Ribeirão Preto (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HMASP",
-    "nome": "FAMERP",
+    "nome": "Hospital Militar de Área de São Paulo",
     "count": 928,
     "uf": "SP",
     "key": "HMASP",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Maceió (AL)",
@@ -792,28 +940,34 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Maceió (AL)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "SUPREMA",
-    "nome": "FAMERP",
+    "nome": "Faculdade de Ciências Médicas e da Saúde de Juiz de Fora",
     "count": 918,
     "uf": "SP",
     "key": "SUPREMA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "INCA",
-    "nome": "FAMERP",
+    "nome": "Instituto Nacional de Câncer",
     "count": 910,
     "uf": "SP",
     "key": "INCA",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HIAE/Einstein",
@@ -823,7 +977,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HIAE/Einstein",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HOB",
@@ -833,7 +989,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFMA/HU-UFMA",
@@ -844,17 +1002,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "INTO",
-    "nome": "FAMERP",
+    "nome": "Instituto Nacional de Traumatologia e Ortopedia",
     "count": 894,
     "uf": "SP",
     "key": "INTO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOS/BOS",
@@ -864,7 +1026,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOS/BOS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Volta Redonda",
@@ -874,18 +1038,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Volta Redonda",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HPP",
-    "nome": "FAMERP",
+    "nome": "Hospital Pequeno Príncipe (Curitiba)",
     "count": 850,
     "uf": "SP",
     "key": "HPP",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UniEVANGÉLICA / Hospital Evangélico Goiano - HEG (GO)",
@@ -895,7 +1063,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UniEVANGÉLICA / Hospital Evangélico Goiano - HEG (GO)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFCG/HUAC",
@@ -905,7 +1075,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFCG/HUAC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "SURCE"
   },
   {
     "sigla": "FAMEMA",
@@ -916,7 +1088,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Limeira (SP)",
@@ -926,18 +1100,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Limeira (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UESPI",
-    "nome": "FAMERP",
+    "nome": "Universidade Estadual do Piauí",
     "count": 829,
     "uf": "SP",
     "key": "UESPI",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PSU-GO",
@@ -948,7 +1126,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Universidade Federal do Tocantins",
@@ -958,7 +1138,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Universidade Federal do Tocantins",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFMT",
@@ -970,7 +1152,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
       "Acesso Direto",
       "R+",
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade de Medicina de Marília",
@@ -980,27 +1164,33 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade de Medicina de Marília",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FBHC",
-    "nome": "FAMERP",
+    "nome": "Fundação Beneficente Hospital de Cirurgia (SE)",
     "count": 804,
     "uf": "SP",
     "key": "FBHC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FAMERP/HB",
-    "nome": "FAMERP",
+    "nome": "Faculdade de Medicina de São José do Rio Preto (Hospital de Base)",
     "count": 799,
     "uf": "SP",
     "key": "FAMERP/HB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UNIFESO/HCTCO",
@@ -1010,7 +1200,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIFESO/HCTCO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HPEV",
@@ -1020,7 +1212,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HPEV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFMA",
@@ -1031,7 +1225,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSL PUCRS",
@@ -1041,7 +1237,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSL PUCRS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Alfenas",
@@ -1051,7 +1249,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Alfenas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UDI Hospital",
@@ -1061,7 +1261,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UDI Hospital",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFRN/HUOL",
@@ -1071,7 +1273,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFRN/HUOL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFF/HUAP",
@@ -1082,7 +1286,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNAERP",
@@ -1093,7 +1299,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IHOA",
@@ -1103,7 +1311,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IHOA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HM São José",
@@ -1113,7 +1323,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HM São José",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Campo Grande (MS)",
@@ -1123,7 +1335,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Campo Grande (MS)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Universidade Evangélica de Goiás",
@@ -1133,18 +1347,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Evangélica de Goiás",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HEDA",
-    "nome": "FAMERP",
+    "nome": "Hospital Estadual Dirceu Arcoverde (PI)",
     "count": 730,
     "uf": "SP",
     "key": "HEDA",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de São Carlos (SP)",
@@ -1154,7 +1372,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de São Carlos (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "IFF/Fiocruz",
@@ -1164,7 +1384,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IFF/Fiocruz",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFS",
@@ -1175,7 +1397,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HE Jayme Neves",
@@ -1185,17 +1409,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HE Jayme Neves",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UEM",
-    "nome": "FAMERP",
+    "nome": "Universidade Estadual de Maringá",
     "count": 717,
     "uf": "SP",
     "key": "UEM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFMT/HUJM",
@@ -1206,7 +1434,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMU/HMMG",
@@ -1216,7 +1446,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMU/HMMG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPI/HU-UFPI",
@@ -1227,7 +1459,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFGD/HU",
@@ -1237,7 +1471,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFGD/HU",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Barra Mansa (RJ)",
@@ -1247,7 +1483,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Barra Mansa (RJ)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UFPR/HC",
@@ -1257,7 +1495,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFPR/HC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SUS-RR",
@@ -1267,7 +1507,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SUS-RR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UnB/HUB",
@@ -1277,7 +1519,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UnB/HUB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HAS",
@@ -1287,18 +1531,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HAS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCPA",
-    "nome": "FAMERP",
+    "nome": "Hospital de Clínicas de Porto Alegre (UFRGS)",
     "count": 657,
     "uf": "SP",
     "key": "HCPA",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFU/HC",
@@ -1309,7 +1557,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PMFI",
@@ -1319,7 +1569,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PMFI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SUS - BA",
@@ -1330,7 +1582,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "EINSTEIN",
@@ -1341,7 +1595,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "TEGO",
@@ -1351,7 +1607,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "TEGO",
     "modalidades": [
       "Título de Especialista"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "AMB / Sociedades"
   },
   {
     "sigla": "AMS",
@@ -1361,7 +1619,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AMS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCV",
@@ -1371,7 +1631,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Goiânia (GO)",
@@ -1381,17 +1643,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Goiânia (GO)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HCE",
-    "nome": "FAMERP",
+    "nome": "Hospital Central do Exército",
     "count": 602,
     "uf": "SP",
     "key": "HCE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMDI",
@@ -1401,7 +1667,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMDI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria de Estado da Saúde de Santa Catarina",
@@ -1411,7 +1679,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria de Estado da Saúde de Santa Catarina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMSJ",
@@ -1421,7 +1691,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMSJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SES-MA",
@@ -1431,7 +1703,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SES-MA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSL/Sírio",
@@ -1441,7 +1715,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSL/Sírio",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Hospital Sírio-Libanês",
@@ -1452,7 +1728,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UFS/HU",
@@ -1462,7 +1740,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFS/HU",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SES - GO",
@@ -1473,7 +1753,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMMSJP",
@@ -1483,7 +1765,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMMSJP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ESP CE - Escola de Saúde Pública do Ceará",
@@ -1493,7 +1777,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ESP CE - Escola de Saúde Pública do Ceará",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMAR",
@@ -1503,7 +1789,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMAR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Marília (SP)",
@@ -1513,7 +1801,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Marília (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HMTJ",
@@ -1523,7 +1813,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMTJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS João Pessoa",
@@ -1533,7 +1825,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS João Pessoa",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundhacre",
@@ -1543,7 +1837,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundhacre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Ourinhos (SP)",
@@ -1553,7 +1849,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Ourinhos (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "SMS Curitiba",
@@ -1563,18 +1861,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Curitiba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCG",
-    "nome": "FAMERP",
+    "nome": "Hospital das Clínicas da UFG (Goiás)",
     "count": 555,
     "uf": "SP",
     "key": "HCG",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Piracicaba",
@@ -1585,7 +1887,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PSU-AL",
@@ -1596,7 +1900,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Gurupi",
@@ -1606,7 +1912,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Gurupi",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IC-FUC",
@@ -1617,7 +1925,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSJC-SP",
@@ -1627,7 +1937,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSJC-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMM",
@@ -1638,7 +1950,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São José de Joinville",
@@ -1649,18 +1963,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFSC",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal de Santa Catarina",
     "count": 506,
     "uf": "SP",
     "key": "UFSC",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Rio Verde",
@@ -1670,7 +1988,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Rio Verde",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HE Cachoeiro",
@@ -1680,7 +2000,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HE Cachoeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unimed-Rio",
@@ -1690,7 +2012,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unimed-Rio",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário do Espírito Santo",
@@ -1700,7 +2024,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário do Espírito Santo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HFCF",
@@ -1710,7 +2036,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HFCF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Veredas",
@@ -1720,7 +2048,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Veredas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário do Estado do Pará",
@@ -1730,7 +2060,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário do Estado do Pará",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFAM/HUGV",
@@ -1740,7 +2072,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFAM/HUGV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Estadual de Ciências da Saúde de Alagoas",
@@ -1750,7 +2084,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual de Ciências da Saúde de Alagoas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Votuporanga (SP)",
@@ -1760,7 +2096,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Votuporanga (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de São José dos Campos (SP)",
@@ -1770,7 +2108,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de São José dos Campos (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HSA Guarujá",
@@ -1780,7 +2120,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSA Guarujá",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CSNSC",
@@ -1790,7 +2132,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CSNSC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "AFAMCI",
@@ -1800,7 +2144,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AFAMCI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Araçatuba (SP)",
@@ -1810,7 +2156,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Araçatuba (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UERN",
@@ -1820,7 +2168,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UERN",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Albert Einstein",
@@ -1830,7 +2180,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Albert Einstein",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UFAL/HUPAA",
@@ -1840,7 +2192,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFAL/HUPAA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HIS",
@@ -1851,7 +2205,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCML",
@@ -1861,7 +2217,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCML",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SES-PB",
@@ -1871,7 +2229,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SES-PB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Angelina Caron",
@@ -1881,7 +2241,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Angelina Caron",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFRGS",
@@ -1891,7 +2253,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFRGS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSJ",
@@ -1901,7 +2265,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSM",
@@ -1911,7 +2277,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SISE-SUS",
@@ -1921,7 +2289,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SISE-SUS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HFASP",
@@ -1931,18 +2301,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HFASP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFES",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal do Espírito Santo",
     "count": 421,
     "uf": "SP",
     "key": "UFES",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal do Estado do Rio de Janeiro",
@@ -1952,7 +2326,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal do Estado do Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas de Goiás",
@@ -1962,7 +2338,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas de Goiás",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CEOQ",
@@ -1972,7 +2350,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CEOQ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CEPOA",
@@ -1982,7 +2362,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CEPOA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Municipal de São Caetano do Sul",
@@ -1992,7 +2374,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Municipal de São Caetano do Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPB/HULW",
@@ -2002,18 +2386,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFPB/HULW",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPI",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal do Piauí",
     "count": 394,
     "uf": "SP",
     "key": "UFPI",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HR Presidente Prudente",
@@ -2023,7 +2411,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HR Presidente Prudente",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HA",
@@ -2033,7 +2423,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Universidade Federal de Ciências da Saúde de Porto Alegre",
@@ -2043,7 +2435,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Universidade Federal de Ciências da Saúde de Porto Alegre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unioeste/HUOP",
@@ -2053,7 +2447,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unioeste/HUOP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PSU-CE",
@@ -2064,7 +2460,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-RJ",
@@ -2074,7 +2472,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-RJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Regional de Mato Grosso do Sul - Rosa Pedrossian",
@@ -2084,18 +2484,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Regional de Mato Grosso do Sul - Rosa Pedrossian",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PUC-RS",
-    "nome": "FAMERP",
+    "nome": "Pontifícia Universidade Católica do Rio Grande do Sul",
     "count": 361,
     "uf": "RS",
     "key": "PUC-RS",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CCANSPS",
@@ -2105,7 +2509,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CCANSPS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Pasteur - Rio de Janeiro (RJ)",
@@ -2115,7 +2521,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Pasteur - Rio de Janeiro (RJ)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOC",
@@ -2125,7 +2533,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FMP",
@@ -2136,7 +2546,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital da Cruz Vermelha do Paraná",
@@ -2146,7 +2558,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital da Cruz Vermelha do Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Afya Universidade Unigranrio",
@@ -2156,7 +2570,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Afya Universidade Unigranrio",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Clínica Campo Grande",
@@ -2166,7 +2582,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Clínica Campo Grande",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HAOC",
@@ -2176,7 +2594,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HAOC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "EMESCAM",
@@ -2187,7 +2607,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Central da Polícia Militar - Rio de Janeiro",
@@ -2197,7 +2619,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Central da Polícia Militar - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFG/HC",
@@ -2207,7 +2631,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFG/HC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFMS/HUMAP",
@@ -2218,7 +2644,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SGCH",
@@ -2228,7 +2656,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SGCH",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ABEM — Teste de Progresso Nacional",
@@ -2238,17 +2668,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ABEM — Teste de Progresso Nacional",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMA-SP",
-    "nome": "FAMERP",
+    "nome": "Santa Casa de Misericórdia de Araçatuba",
     "count": 321,
     "uf": "SP",
     "key": "SCMA-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "INEP",
@@ -2259,7 +2693,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "FGV / AOCP"
   },
   {
     "sigla": "SANTA CASA - BH",
@@ -2270,7 +2706,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "SCM-GO",
@@ -2281,7 +2719,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Campo Grande",
@@ -2291,7 +2731,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Campo Grande",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOG",
@@ -2301,7 +2743,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade de Medicina Nova Esperança",
@@ -2311,7 +2755,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade de Medicina Nova Esperança",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HTLF",
@@ -2321,7 +2767,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HTLF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IJF",
@@ -2331,7 +2779,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IJF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PROVA UNIFICADA",
@@ -2341,7 +2791,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PROVA UNIFICADA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade de Ciências Médicas de Minas Gerais",
@@ -2351,7 +2803,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade de Ciências Médicas de Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPB",
@@ -2362,18 +2816,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa - LIMEIRA",
-    "nome": "FAMERP",
+    "nome": "Santa Casa de Misericórdia de Limeira",
     "count": 291,
     "uf": "SP",
     "key": "Santa Casa - LIMEIRA",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HA Barretos",
@@ -2383,29 +2841,35 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HA Barretos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PUC-SP",
-    "nome": "FAMERP",
+    "nome": "Pontifícia Universidade Católica de São Paulo",
     "count": 288,
     "uf": "SP",
     "key": "PUC-SP",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFF",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal Fluminense (HUAP)",
     "count": 285,
     "uf": "SP",
     "key": "UFF",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HGNI",
@@ -2415,7 +2879,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HGNI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PMSO",
@@ -2425,17 +2891,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PMSO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HST",
-    "nome": "FAMERP",
+    "nome": "Hospital Santa Teresa (Petrópolis)",
     "count": 274,
     "uf": "SP",
     "key": "HST",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Municipal Dr. Mário Gatti",
@@ -2445,7 +2915,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Municipal Dr. Mário Gatti",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS São José dos Pinhais",
@@ -2455,7 +2927,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS São José dos Pinhais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-PATOS",
@@ -2465,7 +2939,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-PATOS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HC-ICC",
@@ -2476,7 +2952,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HAC-PR",
@@ -2487,7 +2965,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação João Goulart",
@@ -2497,7 +2977,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação João Goulart",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Florianópolis",
@@ -2507,7 +2989,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Florianópolis",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Fernandes Figueira",
@@ -2517,7 +3001,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Fernandes Figueira",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CEREM",
@@ -2527,7 +3013,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CEREM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário Multivix Vitória",
@@ -2537,7 +3025,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário Multivix Vitória",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCPM",
@@ -2547,7 +3037,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCPM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Santa Catarina",
@@ -2557,7 +3049,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Santa Catarina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNCISAL",
@@ -2567,7 +3061,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNCISAL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "COC",
@@ -2577,7 +3073,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "COC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMRP",
@@ -2587,7 +3085,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMRP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HVV",
@@ -2597,7 +3097,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HVV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCMT",
@@ -2607,7 +3109,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCMT",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HDG",
@@ -2617,7 +3121,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HDG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal Fluminense",
@@ -2627,7 +3133,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal Fluminense",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IDOR",
@@ -2637,7 +3145,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IDOR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ISCMSC",
@@ -2647,7 +3157,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ISCMSC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Católica de Pelotas",
@@ -2657,7 +3169,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Católica de Pelotas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Pernambuco",
@@ -2667,7 +3181,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Pernambuco",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "AMB / Sociedades"
   },
   {
     "sigla": "HABM",
@@ -2677,7 +3193,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HABM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário Atenas",
@@ -2687,7 +3205,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário Atenas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UCPel/HUSFP",
@@ -2697,7 +3217,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UCPel/HUSFP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFMS",
@@ -2708,7 +3230,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSD",
@@ -2718,7 +3242,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSD",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PSU PRMMT",
@@ -2728,7 +3254,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PSU PRMMT",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNESC - ES",
@@ -2739,7 +3267,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santa Genoveva",
@@ -2749,7 +3279,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Santa Genoveva",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HPM",
@@ -2759,7 +3291,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HPM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Ortopédico de Goiânia",
@@ -2769,7 +3303,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Ortopédico de Goiânia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HP-SP",
@@ -2779,7 +3315,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HP-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Urgência de Goiânia",
@@ -2789,18 +3327,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Urgência de Goiânia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HUOL",
-    "nome": "FAMERP",
+    "nome": "Hospital Universitário Onofre Lopes (UFRN)",
     "count": 216,
     "uf": "SP",
     "key": "HUOL",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HEA",
@@ -2810,7 +3352,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HEA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNOCHAPECO",
@@ -2820,7 +3364,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNOCHAPECO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IGESP",
@@ -2830,7 +3376,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IGESP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIRV",
@@ -2840,7 +3388,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIRV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Médico de Campinas",
@@ -2850,7 +3400,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Médico de Campinas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Unimed Ferj",
@@ -2860,7 +3412,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Unimed Ferj",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Escola de Saúde Pública de Porto Alegre",
@@ -2870,7 +3424,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Escola de Saúde Pública de Porto Alegre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UAM",
@@ -2880,7 +3436,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UAM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "COREME-AP - Comissão Estadual de Residência Médica do Amapá (AP)",
@@ -2890,18 +3448,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "COREME-AP - Comissão Estadual de Residência Médica do Amapá (AP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMRP SANTA CASA DE MISERICÓRDIA DE RIBEIRÃO PRETO",
-    "nome": "FAMERP",
+    "nome": "Santa Casa de Misericórdia de Ribeirão Preto",
     "count": 204,
     "uf": "SP",
     "key": "SCMRP SANTA CASA DE MISERICÓRDIA DE RIBEIRÃO PRETO",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UFGD",
@@ -2912,7 +3474,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HRMS",
@@ -2922,18 +3486,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HRMS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FESO",
-    "nome": "FAMERP",
+    "nome": "Centro Universitário Serra dos Órgãos (UNIFESO)",
     "count": 200,
     "uf": "SP",
     "key": "FESO",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HJAF",
@@ -2943,7 +3511,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HJAF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HNSG",
@@ -2953,7 +3523,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HNSG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSC",
@@ -2963,7 +3535,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HIVS",
@@ -2973,7 +3547,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HIVS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMCG",
@@ -2983,7 +3559,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMCG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSL Brasília",
@@ -2993,7 +3571,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSL Brasília",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HSRC",
@@ -3003,7 +3583,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSRC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCanMT",
@@ -3013,7 +3595,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCanMT",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IBC",
@@ -3023,7 +3607,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IBC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ICEPI",
@@ -3033,7 +3619,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ICEPI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Sinop",
@@ -3043,7 +3631,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Sinop",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Visão Laser",
@@ -3053,7 +3643,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Visão Laser",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CRER",
@@ -3063,7 +3655,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CRER",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FAMECA",
@@ -3073,7 +3667,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FAMECA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSM-DF",
@@ -3084,7 +3680,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSLRP",
@@ -3094,7 +3692,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSLRP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Taubaté - UNITAU",
@@ -3105,7 +3705,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UEPA",
@@ -3116,7 +3718,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Estadual do Acre",
@@ -3126,7 +3730,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Estadual do Acre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Associação Médica do Paraná",
@@ -3136,7 +3742,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Associação Médica do Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Claretiano",
@@ -3146,7 +3754,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Claretiano",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade São Leopoldo Mandic de Araras",
@@ -3156,7 +3766,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade São Leopoldo Mandic de Araras",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PMC",
@@ -3166,7 +3778,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PMC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Comissão Estadual de Residência Médica do Mato Grosso do Sul",
@@ -3177,7 +3791,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HRAC-USP",
@@ -3187,7 +3803,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HRAC-USP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMV",
@@ -3197,7 +3815,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HAA",
@@ -3207,7 +3827,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HAA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Grupo OPTY",
@@ -3217,7 +3839,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Grupo OPTY",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Alcides Carneiro",
@@ -3227,7 +3851,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Alcides Carneiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Foz do Iguaçu",
@@ -3237,7 +3863,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Foz do Iguaçu",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia do Rio de Janeiro",
@@ -3247,7 +3875,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia do Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Vitória",
@@ -3257,7 +3887,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Vitória",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Universidade Federal de Uberlândia",
@@ -3267,7 +3899,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Uberlândia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São João Batista de Volta Redonda",
@@ -3278,7 +3912,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IC-FUC/RS",
@@ -3288,7 +3924,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IC-FUC/RS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMSP",
@@ -3299,18 +3937,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FMJ",
-    "nome": "FAMERP",
+    "nome": "Faculdade de Medicina de Jundiaí",
     "count": 180,
     "uf": "SP",
     "key": "FMJ",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Associação Catarinense de Medicina - Santa Catarina",
@@ -3320,7 +3962,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Associação Catarinense de Medicina - Santa Catarina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "DASA",
@@ -3330,7 +3974,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "DASA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HPM-MG",
@@ -3341,7 +3987,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Estadual de Saúde - Rio de Janeiro",
@@ -3351,7 +3999,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Estadual de Saúde - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HGG GO",
@@ -3361,7 +4011,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HGG GO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Vassouras",
@@ -3371,7 +4023,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Vassouras",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Pontifícia Universidade Católica do Rio Grande do Sul",
@@ -3381,7 +4035,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Pontifícia Universidade Católica do Rio Grande do Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Campina Grande - Hospital Universitário Alcides Carneiro",
@@ -3391,7 +4047,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Campina Grande - Hospital Universitário Alcides Carneiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIEVANGÉLICA - Universidade Evangélica de Goiás",
@@ -3402,7 +4060,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HRPP",
@@ -3413,7 +4073,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Maternidade Therezinha de Jesus",
@@ -3423,18 +4085,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Maternidade Therezinha de Jesus",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FHEMIG",
-    "nome": "FAMERP",
+    "nome": "Fundação Hospitalar do Estado de Minas Gerais",
     "count": 171,
     "uf": "SP",
     "key": "FHEMIG",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "AREMG"
   },
   {
     "sigla": "Hospital Escola Luiz Gioseffi Jannuzzi",
@@ -3445,7 +4111,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Estadual do Oeste do Paraná",
@@ -3455,7 +4123,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual do Oeste do Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "RMEAP - Residência Médica do Estado do Amapá",
@@ -3466,7 +4136,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Revalida",
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Estadual de Londrina",
@@ -3476,7 +4148,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual de Londrina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Ciências da Saúde de Porto Alegre",
@@ -3486,7 +4160,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Ciências da Saúde de Porto Alegre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FESF-SUS",
@@ -3496,18 +4172,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FESF-SUS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IFF",
-    "nome": "FAMERP",
+    "nome": "Instituto Nacional de Saúde da Mulher, da Criança e do Adolescente Fernandes Figueira (Fiocruz)",
     "count": 168,
     "uf": "SP",
     "key": "IFF",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCM-BM",
@@ -3518,7 +4198,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Estadual de Maringá",
@@ -3529,7 +4211,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UEPA-BELÉM",
@@ -3540,7 +4224,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-CE",
@@ -3550,7 +4236,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-CE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Clínicas de Porto Alegre",
@@ -3560,7 +4248,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Clínicas de Porto Alegre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UEMA",
@@ -3570,18 +4260,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UEMA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFU",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal de Uberlândia",
     "count": 154,
     "uf": "SP",
     "key": "UFU",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Banca Oficial",
@@ -3591,7 +4285,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Banca Oficial",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOSP",
@@ -3601,7 +4297,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOSP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "INEP ENADE",
@@ -3611,7 +4309,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "INEP ENADE",
     "modalidades": [
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "INEP"
   },
   {
     "sigla": "IOVALE",
@@ -3622,7 +4322,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "FUNDATEC / AMRIGS"
   },
   {
     "sigla": "HCB-SP",
@@ -3632,7 +4334,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCB-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HELGJ",
@@ -3642,7 +4346,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HELGJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UE-RJ",
@@ -3652,7 +4358,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UE-RJ",
     "modalidades": [
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Mato Grosso do Sul",
@@ -3662,7 +4370,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Mato Grosso do Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HASP",
@@ -3672,7 +4382,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HASP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFSM/HUSM",
@@ -3682,7 +4394,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFSM/HUSM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Policlin",
@@ -3692,7 +4406,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Policlin",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário de Jundiaí",
@@ -3702,7 +4418,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário de Jundiaí",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ISCMS-SP",
@@ -3712,7 +4430,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ISCMS-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal do Rio de Janeiro",
@@ -3722,7 +4442,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal do Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOB-DF",
@@ -3732,7 +4454,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOB-DF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HVC-SP",
@@ -3742,7 +4466,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HVC-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSL Copacabana",
@@ -3752,7 +4478,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSL Copacabana",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Evangélica de Anápolis",
@@ -3762,7 +4490,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Evangélica de Anápolis",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Estadual Santa Casa",
@@ -3772,7 +4502,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Estadual Santa Casa",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "PMF",
@@ -3782,29 +4514,35 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PMF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-PR",
-    "nome": "FAMERP",
+    "nome": "Secretaria Municipal da Saúde de Curitiba (FEAES)",
     "count": 141,
     "uf": "PR",
     "key": "SMS-PR",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIRIO -",
-    "nome": "FAMERP",
+    "nome": "Universidade Federal do Estado do Rio de Janeiro (HUGG)",
     "count": 141,
     "uf": "SP",
     "key": "UNIRIO -",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSI",
@@ -3814,7 +4552,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HUBFS-HUJBB",
@@ -3825,7 +4565,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFSCar",
@@ -3835,7 +4577,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFSCar",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Naval Marcílio Dias",
@@ -3845,7 +4589,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Naval Marcílio Dias",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFCSPA",
@@ -3855,7 +4601,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFCSPA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "SURCE"
   },
   {
     "sigla": "Sistema Único de Saúde - Roraima",
@@ -3866,7 +4614,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFAL",
@@ -3877,7 +4627,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Desconhecida",
@@ -3887,17 +4639,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Desconhecida",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMSJRP",
-    "nome": "FAMERP",
+    "nome": "Santa Casa de Misericórdia de São José do Rio Preto",
     "count": 135,
     "uf": "SP",
     "key": "SCMSJRP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UNIMED",
@@ -3907,7 +4663,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIMED",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOG-SP",
@@ -3917,7 +4675,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOG-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-JP",
@@ -3928,17 +4688,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SES-SC",
-    "nome": "FAMERP",
+    "nome": "Secretaria de Estado da Saúde de Santa Catarina",
     "count": 128,
     "uf": "SC",
     "key": "SES-SC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Luterana do Brasil",
@@ -3948,7 +4712,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Luterana do Brasil",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Associação Fluminense de Assistência à Mulher, à Criança e ao Idoso",
@@ -3958,7 +4724,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Associação Fluminense de Assistência à Mulher, à Criança e ao Idoso",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "BOS",
@@ -3968,7 +4736,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "BOS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas de Teresópolis Costantino Ottaviano",
@@ -3978,7 +4748,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas de Teresópolis Costantino Ottaviano",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de São José do Rio Preto (SP)",
@@ -3988,7 +4760,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de São José do Rio Preto (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "HSJBVR",
@@ -3998,7 +4772,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSJBVR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HNSL-PR",
@@ -4008,7 +4784,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HNSL-PR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Bettina Ferro de Souza / João Barros Barreto",
@@ -4018,7 +4796,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Bettina Ferro de Souza / João Barros Barreto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FHSTE",
@@ -4028,7 +4808,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FHSTE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPA",
@@ -4039,18 +4821,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNITAU",
-    "nome": "FAMERP",
+    "nome": "Universidade de Taubaté",
     "count": 119,
     "uf": "SP",
     "key": "UNITAU",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Universidade Federal do Amapá",
@@ -4060,7 +4846,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal do Amapá",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Municipal de São José dos Campos",
@@ -4070,18 +4858,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Municipal de São José dos Campos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ICRS",
-    "nome": "FAMERP",
+    "nome": "Instituto de Cardiologia do Rio Grande do Sul",
     "count": 116,
     "uf": "SP",
     "key": "ICRS",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IDPC/Dante Pazzanese",
@@ -4091,7 +4883,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IDPC/Dante Pazzanese",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ESPPA",
@@ -4101,7 +4895,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ESPPA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FESP",
@@ -4111,7 +4907,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FESP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HA-AL",
@@ -4121,7 +4919,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HA-AL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FundMed",
@@ -4131,7 +4931,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FundMed",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "SURCE"
   },
   {
     "sigla": "HOA-AC",
@@ -4141,7 +4943,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOA-AC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IBAP",
@@ -4152,17 +4956,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSJC",
-    "nome": "FAMERP",
+    "nome": "Hospital Municipal Dr. José de Carvalho Florence (São José dos Campos)",
     "count": 109,
     "uf": "SP",
     "key": "HSJC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Processo Seletivo Unificado - Minas Gerais",
@@ -4172,7 +4980,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Processo Seletivo Unificado - Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ULBRA",
@@ -4182,7 +4992,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ULBRA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital da Polícia Militar de Minas Gerais",
@@ -4192,7 +5004,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital da Polícia Militar de Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UDI - UDI Hospital",
@@ -4203,7 +5017,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade de Medicina de Campos",
@@ -4213,7 +5029,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade de Medicina de Campos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HVL",
@@ -4223,7 +5041,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HVL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas do Paraná",
@@ -4233,7 +5053,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas do Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de São José dos Pinhais",
@@ -4243,17 +5065,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de São José dos Pinhais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HEL",
-    "nome": "FAMERP",
+    "nome": "Hospital Estadual de Luziânia",
     "count": 101,
     "uf": "SP",
     "key": "HEL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSJA",
@@ -4263,7 +5089,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSJA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "APCC",
@@ -4273,7 +5101,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "APCC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CEPS/UFPA",
@@ -4283,7 +5113,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CEPS/UFPA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Complexo Américas",
@@ -4293,7 +5125,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Complexo Américas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FUNDHACRE/HEA",
@@ -4303,7 +5137,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FUNDHACRE/HEA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade Evangélica Mackenzie do Paraná",
@@ -4313,7 +5149,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade Evangélica Mackenzie do Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade São Leopoldo Mandic",
@@ -4323,7 +5161,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade São Leopoldo Mandic",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMMG",
@@ -4334,7 +5174,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HRAV",
@@ -4344,7 +5186,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HRAV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HRD",
@@ -4354,7 +5198,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HRD",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HUAB",
@@ -4364,7 +5210,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HUAB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HUEC",
@@ -4374,7 +5222,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HUEC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMC-MT",
@@ -4384,7 +5234,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMC-MT",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMPA-PA",
@@ -4394,7 +5246,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMPA-PA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS São José dos Pinhais - Secretaria Municipal de Saúde (PR)",
@@ -4404,7 +5258,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS São José dos Pinhais - Secretaria Municipal de Saúde (PR)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Selecting",
@@ -4414,7 +5270,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Selecting",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIPLAC",
@@ -4424,7 +5282,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIPLAC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNISA",
@@ -4434,7 +5294,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNISA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Paulista",
@@ -4444,7 +5306,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Paulista",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade do Oeste Paulista",
@@ -4454,7 +5318,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade do Oeste Paulista",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "EFCE",
@@ -4464,7 +5330,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "EFCE",
     "modalidades": [
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HHJ-ICC",
@@ -4474,7 +5342,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HHJ-ICC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMMKB",
@@ -4484,7 +5354,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMMKB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSC-SP",
@@ -4494,7 +5366,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSC-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PSU-ES/SUL",
@@ -4504,7 +5378,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PSU-ES/SUL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SESAPI",
@@ -4514,7 +5390,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SESAPI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal do Maranhão",
@@ -4524,7 +5402,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal do Maranhão",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HEV-UNIFAA",
@@ -4534,7 +5414,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HEV-UNIFAA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São Marcos",
@@ -4544,7 +5426,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital São Marcos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Oftalmoclínica",
@@ -4554,7 +5438,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Oftalmoclínica",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFCG R1 2021",
@@ -4564,7 +5450,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFCG R1 2021",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "SURCE"
   },
   {
     "sigla": "Ultra",
@@ -4574,7 +5462,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ultra",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "AUSTA",
@@ -4584,18 +5474,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AUSTA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSJ - PR - Hospital São José",
-    "nome": "FAMERP",
+    "nome": "Hospital Municipal São José (Joinville/PR)",
     "count": 97,
     "uf": "PR",
     "key": "HSJ - PR - Hospital São José",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SPBC",
@@ -4605,7 +5499,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SPBC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSP/UNIFESP",
@@ -4615,7 +5511,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSP/UNIFESP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Uberaba",
@@ -4625,7 +5523,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Uberaba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CESUPA",
@@ -4636,7 +5536,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMV/Moinhos",
@@ -4646,7 +5548,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMV/Moinhos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Benjamin Constant",
@@ -4656,7 +5560,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Benjamin Constant",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HGG-GO",
@@ -4666,7 +5572,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HGG-GO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Barra Mansa",
@@ -4676,7 +5584,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Barra Mansa",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Caxias",
@@ -4686,7 +5596,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de Caxias",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UDI 24 Horas",
@@ -4696,7 +5608,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UDI 24 Horas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória",
@@ -4706,7 +5620,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "SMS Goiânia",
@@ -4716,7 +5632,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Goiânia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMSCG",
@@ -4726,7 +5644,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMSCG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "AOCP",
@@ -4736,7 +5656,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AOCP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Limeira",
@@ -4746,7 +5668,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Limeira",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Afya Centro Universitário de Araguaína",
@@ -4756,7 +5680,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Afya Centro Universitário de Araguaína",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Naval Marcilio Dias",
@@ -4766,7 +5692,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Naval Marcilio Dias",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSL-DF",
@@ -4777,7 +5705,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Pequeno Príncipe",
@@ -4787,7 +5717,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Pequeno Príncipe",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HACC",
@@ -4797,7 +5729,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HACC",
     "modalidades": [
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Ernesto Dornelles",
@@ -4807,7 +5741,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Ernesto Dornelles",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Evangélico Mackenzie (Curitiba)",
@@ -4817,7 +5753,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Evangélico Mackenzie (Curitiba)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto de Previdência dos Servidores do Estado de Minas Gerais",
@@ -4827,7 +5765,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto de Previdência dos Servidores do Estado de Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Materno Infantil Dr. Jeser Amarante Faria",
@@ -4837,18 +5777,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Materno Infantil Dr. Jeser Amarante Faria",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ISCMA",
-    "nome": "FAMERP",
+    "nome": "Irmandade da Santa Casa de Misericórdia de Araraquara",
     "count": 86,
     "uf": "SP",
     "key": "ISCMA",
     "modalidades": [
       "Acesso Direto",
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Universidade Santo Amaro",
@@ -4858,7 +5802,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Santo Amaro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Associação Médica de Santa Catarina - Santa Catarina",
@@ -4868,7 +5814,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Associação Médica de Santa Catarina - Santa Catarina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santa Isabel",
@@ -4878,7 +5826,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Santa Isabel",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Lucas do Rio Verde",
@@ -4888,7 +5838,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Lucas do Rio Verde",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFFS",
@@ -4898,7 +5850,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFFS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Nossa Senhora da Conceição",
@@ -4908,7 +5862,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Nossa Senhora da Conceição",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Bettina Ferro de Souza / Hospital João Barros Barreto",
@@ -4918,7 +5874,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Bettina Ferro de Souza / Hospital João Barros Barreto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Católica de Pelotas - Hospital Universitário São Francisco de Paula",
@@ -4928,7 +5886,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Católica de Pelotas - Hospital Universitário São Francisco de Paula",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Escola de Saúde de Teresópolis",
@@ -4938,7 +5898,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Escola de Saúde de Teresópolis",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Escola Luiz Gioseffi Jannuzi",
@@ -4948,7 +5910,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Escola Luiz Gioseffi Jannuzi",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Moinhos de Vento",
@@ -4958,7 +5922,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Moinhos de Vento",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universidade da Integração de Direitos",
@@ -4968,7 +5934,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universidade da Integração de Direitos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "OftalmoClínica São Gonçalo",
@@ -4978,7 +5946,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "OftalmoClínica São Gonçalo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal do Espírito Santo",
@@ -4988,7 +5958,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal do Espírito Santo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Cajuru",
@@ -4998,7 +5970,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Cajuru",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Pelotas",
@@ -5008,7 +5982,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Pelotas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS São José do Rio Preto",
@@ -5018,7 +5994,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS São José do Rio Preto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CHN",
@@ -5028,7 +6006,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CHN",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HEJSN",
@@ -5038,7 +6018,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HEJSN",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Comunitária da Região de Chapecó",
@@ -5048,7 +6030,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Comunitária da Região de Chapecó",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CVV",
@@ -5058,7 +6042,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CVV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Regional de Maringá",
@@ -5068,7 +6054,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Regional de Maringá",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Emergência e Traumas Senador Humberto Lucena",
@@ -5078,17 +6066,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Emergência e Traumas Senador Humberto Lucena",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SUS - RR",
-    "nome": "FAMERP",
+    "nome": "Sistema Único de Saúde de Roraima",
     "count": 76,
     "uf": "RR",
     "key": "SUS - RR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Araras (SP)",
@@ -5098,7 +6090,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Araras (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "FMIT",
@@ -5108,7 +6102,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FMIT",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HFR",
@@ -5118,7 +6114,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HFR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMJLF",
@@ -5128,7 +6126,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMJLF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Dante Pazzanese",
@@ -5138,7 +6138,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Dante Pazzanese",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Beneficência Portuguesa de Ribeirão Preto",
@@ -5148,7 +6150,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Beneficência Portuguesa de Ribeirão Preto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Hospitalar do Estado de Minas Gerais",
@@ -5158,7 +6162,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Hospitalar do Estado de Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Nossa Senhora das Graças - Apucarana",
@@ -5168,7 +6174,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Nossa Senhora das Graças - Apucarana",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFPEL",
@@ -5178,7 +6186,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFPEL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto de Doenças Osteoarticulares e Reumatologia - Rede DOR",
@@ -5188,7 +6198,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto de Doenças Osteoarticulares e Reumatologia - Rede DOR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-SANTOS",
@@ -5198,7 +6210,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-SANTOS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HECI",
@@ -5209,7 +6223,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Pelotas - Hospital Escola da UFPEL",
@@ -5219,7 +6235,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Pelotas - Hospital Escola da UFPEL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação de Ensino e Pesquisa em Medicina de Itajubá",
@@ -5229,7 +6247,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação de Ensino e Pesquisa em Medicina de Itajubá",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São José de Criciúma",
@@ -5239,7 +6259,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital São José de Criciúma",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto do Ombro e do Joelho - Rede D'Or",
@@ -5249,7 +6271,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto do Ombro e do Joelho - Rede D'Or",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SES - MA.",
@@ -5260,7 +6284,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação de Beneficência Hospital de Cirurgia",
@@ -5270,7 +6296,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação de Beneficência Hospital de Cirurgia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Luterana do Brasil - Hospital Universitário da ULBRA",
@@ -5280,7 +6308,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Luterana do Brasil - Hospital Universitário da ULBRA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Alvorada",
@@ -5290,7 +6320,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Alvorada",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HC-MT",
@@ -5300,7 +6332,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HC-MT",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Campina Grande",
@@ -5310,7 +6344,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Campina Grande",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCOR",
@@ -5320,7 +6356,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCOR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOL-PA",
@@ -5330,7 +6368,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOL-PA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Rondonópolis (MT)",
@@ -5340,7 +6380,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Rondonópolis (MT)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Hospital Vida",
@@ -5350,7 +6392,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Vida",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital do Coração de Londrina",
@@ -5360,7 +6404,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital do Coração de Londrina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário da Universidade Luterana do Brasil",
@@ -5370,7 +6416,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário da Universidade Luterana do Brasil",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto de Olhos de Goiânia",
@@ -5380,7 +6428,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto de Olhos de Goiânia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Prontobaby",
@@ -5390,7 +6440,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Prontobaby",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Alvorada - São Paulo",
@@ -5400,7 +6452,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Alvorada - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Sul Fluminense",
@@ -5410,18 +6464,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Sul Fluminense",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIGRANRIO",
-    "nome": "FAMERP",
+    "nome": "Universidade do Grande Rio",
     "count": 55,
     "uf": "SP",
     "key": "UNIGRANRIO",
     "modalidades": [
       "Revalida",
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIRG",
@@ -5431,7 +6489,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIRG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CCG",
@@ -5442,7 +6502,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "EMCM - Escola Municipal de Ciências Médicas",
@@ -5453,7 +6515,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Câncer de Mato Grosso",
@@ -5463,7 +6527,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Câncer de Mato Grosso",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "AMS-LONDRINA",
@@ -5473,17 +6539,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AMS-LONDRINA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSL - RP - Hospital São Lucas de Ribeirão Preto",
-    "nome": "FAMERP",
+    "nome": "Hospital São Lucas de Ribeirão Preto",
     "count": 51,
     "uf": "SP",
     "key": "HSL - RP - Hospital São Lucas de Ribeirão Preto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "OASE",
@@ -5493,7 +6563,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "OASE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CRAZ",
@@ -5503,7 +6575,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CRAZ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário de Várzea Grande",
@@ -5513,7 +6587,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário de Várzea Grande",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCB-RO",
@@ -5523,7 +6599,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCB-RO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HEETSHL",
@@ -5533,7 +6611,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HEETSHL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMSC",
@@ -5543,7 +6623,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMSC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HO Tocantins",
@@ -5553,7 +6635,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HO Tocantins",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSR-MT",
@@ -5563,7 +6647,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSR-MT",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "INGOH",
@@ -5573,7 +6659,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "INGOH",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IPUB",
@@ -5583,7 +6671,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IPUB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ISMEP",
@@ -5593,7 +6683,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ISMEP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Nova Bene",
@@ -5603,7 +6695,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Nova Bene",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "REVALIDA UFMT",
@@ -5613,7 +6707,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "REVALIDA UFMT",
     "modalidades": [
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "INEP"
   },
   {
     "sigla": "Escola Multicampi de Ciências Médicas",
@@ -5623,7 +6719,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Escola Multicampi de Ciências Médicas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HBD",
@@ -5633,7 +6731,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HBD",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCP",
@@ -5644,7 +6744,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ISCMB",
@@ -5654,7 +6756,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ISCMB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Nacional de Câncer",
@@ -5664,7 +6768,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Nacional de Câncer",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unimontes/HUCF",
@@ -5674,7 +6780,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unimontes/HUCF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santo Antônio de Blumenau",
@@ -5684,7 +6792,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Santo Antônio de Blumenau",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Consulplan",
@@ -5694,7 +6804,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Consulplan",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SESAP Praia Grande",
@@ -5704,7 +6816,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SESAP Praia Grande",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UEPA-SANTARÉM",
@@ -5714,7 +6828,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UEPA-SANTARÉM",
     "modalidades": [
       "R+"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIMED-JP",
@@ -5725,7 +6841,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Cesumar",
@@ -5735,7 +6853,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Cesumar",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ESP CE",
@@ -5745,7 +6865,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ESP CE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSL",
@@ -5755,7 +6877,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Mãe de Deus",
@@ -5765,7 +6889,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Mãe de Deus",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-CG",
@@ -5775,7 +6901,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-CG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCAL",
@@ -5785,7 +6913,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCAL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Ofir Loyola",
@@ -5795,7 +6925,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Ofir Loyola",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "TECM - Título de Especialista em Clínica Médica",
@@ -5805,7 +6937,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "TECM - Título de Especialista em Clínica Médica",
     "modalidades": [
       "Título de Especialista"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "AMB / Sociedades"
   },
   {
     "sigla": "UOPCCAN",
@@ -5815,18 +6949,22 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UOPCCAN",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMM - Santa Casa de Misericórdia de Maceió",
-    "nome": "FAMERP",
+    "nome": "Santa Casa de Misericórdia de Maceió",
     "count": 45,
     "uf": "SP",
     "key": "SCMM - Santa Casa de Misericórdia de Maceió",
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Campo Grande",
@@ -5837,7 +6975,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unimed Rio",
@@ -5847,7 +6987,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unimed Rio",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCLPM",
@@ -5857,7 +6999,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCLPM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Alemão Oswaldo Cruz",
@@ -5867,7 +7011,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Alemão Oswaldo Cruz",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santa Rosa - Mato Grosso",
@@ -5877,7 +7023,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Santa Rosa - Mato Grosso",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMMA",
@@ -5887,7 +7035,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMMA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa casa de Assis",
@@ -5897,7 +7047,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa casa de Assis",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Centro Universitário UNIRG",
@@ -5907,7 +7059,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário UNIRG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital do Servidor Público Municipal",
@@ -5917,7 +7071,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital do Servidor Público Municipal",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UHG - UnitedHealth Group Brasil (Amil)",
@@ -5927,7 +7083,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UHG - UnitedHealth Group Brasil (Amil)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade do Planalto Catarinense",
@@ -5937,7 +7095,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade do Planalto Catarinense",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HIFA",
@@ -5947,7 +7107,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HIFA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Emergência e Trauma Senador Humberto Lucena",
@@ -5957,7 +7119,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Emergência e Trauma Senador Humberto Lucena",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital e Maternidade Marieta Konder Bornhausen",
@@ -5967,7 +7131,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital e Maternidade Marieta Konder Bornhausen",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Estadual de Saúde de Teresópolis - Hospital das Clínicas de Teresópolis Costantino Ottaviano",
@@ -5977,7 +7143,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Estadual de Saúde de Teresópolis - Hospital das Clínicas de Teresópolis Costantino Ottaviano",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santa Teresa",
@@ -5988,7 +7156,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto de Doenças do Tórax",
@@ -5999,7 +7169,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Santos",
@@ -6009,7 +7181,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Santos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SPMIP",
@@ -6019,7 +7193,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SPMIP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal da Saúde do Paraná",
@@ -6029,7 +7205,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal da Saúde do Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFCG",
@@ -6039,7 +7217,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFCG",
     "modalidades": [
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "SURCE"
   },
   {
     "sigla": "HLR",
@@ -6049,7 +7229,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HLR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Juiz de Fora",
@@ -6059,7 +7241,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Juiz de Fora",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FESF",
@@ -6069,7 +7253,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FESF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Complexo Hospitalar de Niterói",
@@ -6079,7 +7265,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Complexo Hospitalar de Niterói",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FSNH",
@@ -6089,7 +7277,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FSNH",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HUGO",
@@ -6099,7 +7289,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HUGO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Cruz Azul",
@@ -6109,7 +7301,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Cruz Azul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São José do Avaí",
@@ -6119,7 +7313,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital São José do Avaí",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital da Polícia Militar - Minas Gerais",
@@ -6129,7 +7325,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital da Polícia Militar - Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital e Maternidade Marieta Konder Bornhausense",
@@ -6139,7 +7337,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital e Maternidade Marieta Konder Bornhausense",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFRB",
@@ -6149,7 +7349,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFRB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal da Fronteira Sul",
@@ -6159,7 +7361,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal da Fronteira Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HECNG",
@@ -6170,7 +7374,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "ESP RS",
@@ -6180,7 +7386,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ESP RS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PRO-CARDIACO",
@@ -6190,7 +7398,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PRO-CARDIACO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSG",
@@ -6200,7 +7410,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Goiânia",
@@ -6210,7 +7422,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Goiânia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "CEPUERJ",
@@ -6220,7 +7434,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CEPUERJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Evangélico de Vila Velha",
@@ -6230,7 +7446,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Evangélico de Vila Velha",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "NUCLEOS",
@@ -6240,7 +7458,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "NUCLEOS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HRPG",
@@ -6250,7 +7470,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HRPG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UEPG",
@@ -6260,7 +7482,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UEPG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HOSPITAL UNIVERSITÁRIO JÚLIO MÜLLER - UFMT",
@@ -6270,7 +7494,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HOSPITAL UNIVERSITÁRIO JÚLIO MÜLLER - UFMT",
     "modalidades": [
       "R+"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UEPASANTAREM",
@@ -6280,7 +7506,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UEPASANTAREM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SES - PB",
@@ -6291,7 +7519,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Pernambuco - Hospital das Clínicas da UFPE",
@@ -6301,17 +7531,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Pernambuco - Hospital das Clínicas da UFPE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "AMB / Sociedades"
   },
   {
     "sigla": "HA-SP",
-    "nome": "FAMERP",
+    "nome": "Hospital de Amor de Barretos (Fundação Pio XII)",
     "count": 25,
     "uf": "SP",
     "key": "HA-SP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ISA",
@@ -6321,7 +7555,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ISA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Pró-Cardíaco",
@@ -6331,7 +7567,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Pró-Cardíaco",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Genoveva Complexo Hospitalar",
@@ -6341,7 +7579,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Genoveva Complexo Hospitalar",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "OFTALMOCLINICA",
@@ -6351,7 +7591,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "OFTALMOCLINICA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS Olímpia",
@@ -6361,7 +7603,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS Olímpia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Strix",
@@ -6371,7 +7615,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Strix",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Udi",
@@ -6381,7 +7627,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Udi",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital do Açúcar - Alagoas",
@@ -6392,7 +7640,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Suel Abujamra - São Paulo",
@@ -6402,7 +7652,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Suel Abujamra - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Estadual de Saúde - SES - Rio de Janeiro",
@@ -6412,7 +7664,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Estadual de Saúde - SES - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Pró-Cardíaco",
@@ -6422,7 +7676,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Pró-Cardíaco",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMRJ",
@@ -6432,7 +7688,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMRJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Uema",
@@ -6442,7 +7700,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Uema",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "AMS-APUCARANA",
@@ -6452,7 +7712,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AMS-APUCARANA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CSPSL",
@@ -6462,17 +7724,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CSPSL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SISE",
-    "nome": "FAMERP",
+    "nome": "Sistema Integrado de Saúde",
     "count": 19,
     "uf": "SP",
     "key": "SISE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Sistema Único de Saúde - Bahia",
@@ -6482,7 +7748,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sistema Único de Saúde - Bahia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HNSC",
@@ -6492,7 +7760,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HNSC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSPM",
@@ -6502,7 +7772,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSPM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Pmg-guaruja",
@@ -6512,7 +7784,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Pmg-guaruja",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "EMCM",
@@ -6522,7 +7796,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "EMCM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HAS-RJ",
@@ -6533,7 +7809,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Sinop",
@@ -6543,7 +7821,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de Sinop",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Clínicas da Universidade Federal do Paraná",
@@ -6553,7 +7833,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Clínicas da Universidade Federal do Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCO - Santa Casa de Ouro Preto",
@@ -6563,7 +7845,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCO - Santa Casa de Ouro Preto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "SCMMA - Santa Casa de Misericórdia de Marília",
@@ -6573,17 +7857,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMMA - Santa Casa de Misericórdia de Marília",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "FMC",
-    "nome": "FAMERP",
+    "nome": "Faculdade de Medicina de Campos",
     "count": 14,
     "uf": "SP",
     "key": "FMC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Inep-Revalida",
@@ -6593,7 +7881,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Inep-Revalida",
     "modalidades": [
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "INEP"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Florianópolis",
@@ -6603,7 +7893,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de Florianópolis",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal do Piauí - UFPI",
@@ -6613,7 +7905,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal do Piauí - UFPI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FUVEST",
@@ -6623,7 +7917,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FUVEST",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "FUVEST"
   },
   {
     "sigla": "HEPV",
@@ -6633,7 +7929,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HEPV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSD-MA - Hospital São Domingos",
@@ -6643,7 +7941,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSD-MA - Hospital São Domingos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Lúcio Rebelo",
@@ -6653,7 +7953,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Lúcio Rebelo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Sms-patos",
@@ -6663,7 +7965,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sms-patos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMV - Santa Casa de Misericórdia de Votuporanga",
@@ -6673,7 +7977,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMV - Santa Casa de Misericórdia de Votuporanga",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UFJF",
@@ -6683,7 +7989,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFJF",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação João Goulart - Hospitais Municipais - FJG - Rio de Janeiro",
@@ -6693,17 +8001,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação João Goulart - Hospitais Municipais - FJG - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSI-SE",
-    "nome": "FAMERP",
+    "nome": "Hospital Santa Isabel (Aracaju)",
     "count": 11,
     "uf": "SE",
     "key": "HSI-SE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto de Cardiologia do Rio Grande do Sul",
@@ -6713,7 +8025,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto de Cardiologia do Rio Grande do Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto de Psiquiatria da Universidade Federal do Rio de Janeiro",
@@ -6723,7 +8037,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto de Psiquiatria da Universidade Federal do Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMSJC",
@@ -6733,7 +8049,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMSJC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UEPA Revalida",
@@ -6743,7 +8061,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UEPA Revalida",
     "modalidades": [
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "INEP"
   },
   {
     "sigla": "UNIOESTE",
@@ -6753,7 +8073,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIOESTE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Casa de Caridade de Alfaces NSP Socorro",
@@ -6763,7 +8085,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Casa de Caridade de Alfaces NSP Socorro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Votuporanga",
@@ -6773,7 +8097,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Votuporanga",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Universidade do Estado do Pará - UEPA",
@@ -6783,7 +8109,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade do Estado do Pará - UEPA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "AGRM",
@@ -6793,17 +8121,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AGRM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCB",
-    "nome": "FAMERP",
+    "nome": "Hospital da Criança de Brasília José Alencar",
     "count": 9,
     "uf": "SP",
     "key": "HCB",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSA - GUARUJÁ - Hospital Santo Amaro de Guarujá",
@@ -6813,7 +8145,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSA - GUARUJÁ - Hospital Santo Amaro de Guarujá",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Evangélico de Cachoeiro de Itapemirim",
@@ -6823,7 +8157,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Evangélico de Cachoeiro de Itapemirim",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Nacional de Traumatologia e Ortopedia",
@@ -6833,17 +8169,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Nacional de Traumatologia e Ortopedia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIMED-RJ",
-    "nome": "FAMERP",
+    "nome": "Instituto Unimed Rio de Janeiro",
     "count": 9,
     "uf": "RJ",
     "key": "UNIMED-RJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Sergipe - UFS",
@@ -6853,7 +8193,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Sergipe - UFS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FEAS",
@@ -6863,7 +8205,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FEAS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Casa de Portugal",
@@ -6873,7 +8217,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Casa de Portugal",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São Julião - Ministério da Saúde",
@@ -6883,7 +8229,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital São Julião - Ministério da Saúde",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira",
@@ -6894,7 +8242,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Puc-sp",
@@ -6904,7 +8254,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Puc-sp",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SGCH - Santa Genoveva Complexo Hospitalar",
@@ -6914,7 +8266,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SGCH - Santa Genoveva Complexo Hospitalar",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-SINOP - Secretaria Municipal de Saúde de Sinop",
@@ -6924,7 +8278,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-SINOP - Secretaria Municipal de Saúde de Sinop",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria de Estado de Saúde de Goiás",
@@ -6934,7 +8290,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria de Estado de Saúde de Goiás",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCB RO",
@@ -6944,7 +8302,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCB RO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Câncer de Barretos - HCB - Rondônia",
@@ -6954,7 +8314,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Câncer de Barretos - HCB - Rondônia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCM-CG",
@@ -6964,7 +8326,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCM-CG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Sco",
@@ -6974,7 +8338,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sco",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Goiânia",
@@ -6984,7 +8350,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de Goiânia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de João Pessoa",
@@ -6994,7 +8362,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de João Pessoa",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Uepa-Revalida",
@@ -7004,7 +8374,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Uepa-Revalida",
     "modalidades": [
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "INEP"
   },
   {
     "sigla": "Universidade Estadual do Espírito Santo",
@@ -7014,7 +8386,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual do Espírito Santo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade do Grande Rio",
@@ -7024,7 +8398,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade do Grande Rio",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Casa de Caridade de Alfenas NSP Socorro",
@@ -7034,7 +8410,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Casa de Caridade de Alfenas NSP Socorro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Iff",
@@ -7044,7 +8422,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Iff",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Psu-go",
@@ -7054,7 +8434,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Psu-go",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Maceió",
@@ -7064,7 +8446,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Maceió",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Secretaria Municipal da Saúde de Curitiba",
@@ -7074,7 +8458,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal da Saúde de Curitiba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Administração de Macaé",
@@ -7084,7 +8470,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Administração de Macaé",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Administração de Volta Redonda",
@@ -7094,7 +8482,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Administração de Volta Redonda",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Sistema Integrado de Saúde - Sistema Único de Saúde",
@@ -7104,7 +8494,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sistema Integrado de Saúde - Sistema Único de Saúde",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Tego",
@@ -7114,7 +8506,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Tego",
     "modalidades": [
       "Título de Especialista"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "AMB / Sociedades"
   },
   {
     "sigla": "Universidade Federal de Mato Grosso",
@@ -7125,7 +8519,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Casa de Saúde Nossa Senhora do Carmo",
@@ -7135,7 +8531,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Casa de Saúde Nossa Senhora do Carmo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Exame Nacional de Residência",
@@ -7145,7 +8543,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Exame Nacional de Residência",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FELUMA",
@@ -7155,7 +8555,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "FELUMA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hcpa",
@@ -7165,7 +8567,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hcpa",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Tarquínio Lopes Filho",
@@ -7175,7 +8579,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Tarquínio Lopes Filho",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Presidente Dutra - UFMA - Maranhão",
@@ -7185,7 +8591,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Presidente Dutra - UFMA - Maranhão",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas Luzia de Pinho Melo",
@@ -7195,7 +8603,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas Luzia de Pinho Melo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-PIRACICABA",
@@ -7205,7 +8615,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-PIRACICABA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Araçatuba",
@@ -7215,7 +8627,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Araçatuba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Uepa",
@@ -7225,7 +8639,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Uepa",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ufpb",
@@ -7235,7 +8651,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ufpb",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "AEBES",
@@ -7245,7 +8663,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AEBES",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Associação Piauiense de Combate ao Câncer - APCC - Piauí",
@@ -7255,7 +8675,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Associação Piauiense de Combate ao Câncer - APCC - Piauí",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Casa de Caridade de Alfenás NSP Socorro",
@@ -7265,7 +8687,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Casa de Caridade de Alfenás NSP Socorro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação de Saúde Pública de Novo Hamburgo",
@@ -7275,7 +8699,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação de Saúde Pública de Novo Hamburgo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "AMB / Sociedades"
   },
   {
     "sigla": "HDG - Hospital Dilson Godinho",
@@ -7285,7 +8711,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HDG - Hospital Dilson Godinho",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSP-SP",
@@ -7296,7 +8724,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "modalidades": [
       "Acesso Direto",
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Estadual Dr. Jayme dos Santos Neves - HEJSN - Espírito Santo",
@@ -7306,7 +8736,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Estadual Dr. Jayme dos Santos Neves - HEJSN - Espírito Santo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santa Catarina (SP)",
@@ -7316,7 +8748,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Santa Catarina (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São Lucas Copacabana",
@@ -7326,7 +8760,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital São Lucas Copacabana",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Cassiano Antônio de Moraes - UFES - Espírito Santo",
@@ -7336,7 +8772,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Cassiano Antônio de Moraes - UFES - Espírito Santo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Júlio Müller - UFMT - Mato Grosso",
@@ -7346,7 +8784,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Júlio Müller - UFMT - Mato Grosso",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital adventista Silvestre",
@@ -7356,7 +8796,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital adventista Silvestre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IAUPE",
@@ -7366,7 +8808,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IAUPE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "IAUPE / UPE"
   },
   {
     "sigla": "MULTIVIX - Centro Universitário Multivix",
@@ -7376,7 +8820,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "MULTIVIX - Centro Universitário Multivix",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PRONTOBABY",
@@ -7386,7 +8832,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PRONTOBABY",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-FLORIPA",
@@ -7396,7 +8844,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-FLORIPA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-SG",
@@ -7406,7 +8856,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-SG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Estadual de Saúde - SES - Distrito Federal",
@@ -7416,7 +8868,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Estadual de Saúde - SES - Distrito Federal",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Estadual de Saúde do Estado de Pernambuco - SES_",
@@ -7426,7 +8880,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Estadual de Saúde do Estado de Pernambuco - SES_",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "AMB / Sociedades"
   },
   {
     "sigla": "Secretaria de Estado da Saúde da Paraíba",
@@ -7436,7 +8892,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria de Estado da Saúde da Paraíba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Sms-rj",
@@ -7446,7 +8904,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sms-rj",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Sms-santos",
@@ -7456,7 +8916,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sms-santos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFRR",
@@ -7466,7 +8928,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFRR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFSCAR",
@@ -7476,7 +8940,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFSCAR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIUBE",
@@ -7486,7 +8952,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIUBE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ufma",
@@ -7496,7 +8964,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ufma",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Vunesp",
@@ -7506,7 +8976,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Vunesp",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "ACCESS",
@@ -7516,7 +8988,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ACCESS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Afamci",
@@ -7526,7 +9000,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Afamci",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Oftalmológico de Cáceres",
@@ -7536,7 +9012,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Oftalmológico de Cáceres",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Comissão Estadual de Residência Médica do Amazonas",
@@ -7546,7 +9024,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Comissão Estadual de Residência Médica do Amazonas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ESPCE - Escola de Saúde Pública do Ceará",
@@ -7556,7 +9036,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ESPCE - Escola de Saúde Pública do Ceará",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade de Medicina de Petrópolis - FMP - Rio de Janeiro",
@@ -7566,7 +9048,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade de Medicina de Petrópolis - FMP - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Feso",
@@ -7576,7 +9060,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Feso",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Escola Superior de Otorrinolaringologia",
@@ -7586,7 +9072,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Escola Superior de Otorrinolaringologia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "IAUPE / UPE"
   },
   {
     "sigla": "Fundação Estatal de Saúde da Família - FESF - SUS - Bahia",
@@ -7596,7 +9084,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Estatal de Saúde da Família - FESF - SUS - Bahia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação João Goulart - Hospitais Municipais",
@@ -7606,7 +9096,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação João Goulart - Hospitais Municipais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Universitária de Ciências da Saúde de Alagoas - UNCISAL",
@@ -7616,7 +9108,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Universitária de Ciências da Saúde de Alagoas - UNCISAL",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HCP - 2021 - R1",
@@ -7626,7 +9120,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HCP - 2021 - R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMD-RS",
@@ -7636,7 +9132,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMD-RS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSJ-MS",
@@ -7646,7 +9144,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSJ-MS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Estadual Dr Jayme dos Santos Neves",
@@ -7656,7 +9156,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Estadual Dr Jayme dos Santos Neves",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Estadual Dr. Jayme dos Santos Neves",
@@ -7666,7 +9168,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Estadual Dr. Jayme dos Santos Neves",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Oftalmológico de Brasília",
@@ -7676,7 +9180,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Oftalmológico de Brasília",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Pequeno Príncipe (PR)",
@@ -7686,7 +9192,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Pequeno Príncipe (PR)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Professor Edmundo Vasconcelos",
@@ -7696,7 +9204,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Professor Edmundo Vasconcelos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São Julião",
@@ -7706,7 +9216,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital São Julião",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Onofre Lopes - HUOL - UFRN - Rio Grande do Norte",
@@ -7716,7 +9228,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Onofre Lopes - HUOL - UFRN - Rio Grande do Norte",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas da UFU - Minas Gerais",
@@ -7726,7 +9240,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas da UFU - Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Câncer de Barretos - Ribeirão Preto",
@@ -7736,7 +9252,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Câncer de Barretos - Ribeirão Preto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Olhos de Aparecida",
@@ -7746,7 +9264,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Olhos de Aparecida",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hsl-df",
@@ -7756,7 +9276,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hsl-df",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Igesp",
@@ -7766,7 +9288,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Igesp",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto de Previdência dos Servidores do Estado de Minas Gerais - IPSEMG",
@@ -7776,7 +9300,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto de Previdência dos Servidores do Estado de Minas Gerais - IPSEMG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto e Hospital Oftalmológico de Anápolis",
@@ -7786,7 +9312,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto e Hospital Oftalmológico de Anápolis",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Irmandade da Santa Casa de Misericórdia de Santos",
@@ -7796,7 +9324,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Irmandade da Santa Casa de Misericórdia de Santos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Processo Seletivo Unificado - Alagoas",
@@ -7806,7 +9336,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Processo Seletivo Unificado - Alagoas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-LRV",
@@ -7816,7 +9348,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-LRV",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia da Campanha",
@@ -7826,7 +9360,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia da Campanha",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Scmm",
@@ -7836,7 +9372,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Scmm",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Estadual de Saúde - Distrito Federal",
@@ -7846,7 +9384,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Estadual de Saúde - Distrito Federal",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal da Saúde do Rio de Janeiro",
@@ -7856,7 +9396,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal da Saúde do Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UEPABELEM",
@@ -7866,17 +9408,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UEPABELEM",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIMED RJ",
-    "nome": "FAMERP",
+    "nome": "Instituto Unimed Rio de Janeiro",
     "count": 3,
     "uf": "RJ",
     "key": "UNIMED RJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "USS - Universidade de Vassouras",
@@ -7886,7 +9432,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "USS - Universidade de Vassouras",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Uern",
@@ -7896,7 +9444,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Uern",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Estadual do Pará - Santarém",
@@ -7906,7 +9456,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual do Pará - Santarém",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Estadual do Piauí - UESPI",
@@ -7916,7 +9468,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual do Piauí - UESPI",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal da Paraíba",
@@ -7926,7 +9480,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal da Paraíba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade da Integração da Lusofonia Afro-Boaneense",
@@ -7936,7 +9492,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade da Integração da Lusofonia Afro-Boaneense",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Uberada - Uniube - Minas Gerais",
@@ -7946,7 +9504,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Uberada - Uniube - Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "AUSTA - AUSTA Hospital",
@@ -7956,7 +9516,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "AUSTA - AUSTA Hospital",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Autarquia Municipal de Saúde de Apucarana",
@@ -7966,7 +9528,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Autarquia Municipal de Saúde de Apucarana",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Autarquia Municipal de Saúde de Apucarana - AMS - Paraná",
@@ -7976,7 +9540,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Autarquia Municipal de Saúde de Apucarana - AMS - Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário de Juiz de Fora",
@@ -7986,7 +9552,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário de Juiz de Fora",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Clínica de Campo Grande - CCG - Mato Grosso do Sul",
@@ -7996,7 +9564,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Clínica de Campo Grande - CCG - Mato Grosso do Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade Brasileira - Multivix Vitória",
@@ -8006,7 +9576,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade Brasileira - Multivix Vitória",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fmp",
@@ -8016,7 +9588,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fmp",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Universidade Federal do Tocantins - UFT",
@@ -8026,7 +9600,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Universidade Federal do Tocantins - UFT",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Funda��o de Benefic�ncia Hospital de Cirurgia",
@@ -8036,7 +9612,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Funda��o de Benefic�ncia Hospital de Cirurgia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSJC- SC",
@@ -8046,7 +9624,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSJC- SC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Adventista Silvestre",
@@ -8056,7 +9636,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Adventista Silvestre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Dilson Godinho",
@@ -8066,7 +9648,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Dilson Godinho",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Pasteur",
@@ -8076,7 +9660,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Pasteur",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santa Isabel - HSI - Sergipe",
@@ -8086,7 +9672,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Santa Isabel - HSI - Sergipe",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santa Marta - Distrito Federal",
@@ -8096,7 +9684,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Santa Marta - Distrito Federal",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São Lucas (Ribeirão Preto)",
@@ -8106,7 +9696,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital São Lucas (Ribeirão Preto)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Bettina Ferro de Souza-João Barros Barreto - HUBFS-HUJBB - Pará",
@@ -8116,7 +9708,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Bettina Ferro de Souza-João Barros Barreto - HUBFS-HUJBB - Pará",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário de Brasília - UNB - Distrito Federal",
@@ -8126,7 +9720,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário de Brasília - UNB - Distrito Federal",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Olhos Aparecida",
@@ -8136,7 +9732,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Olhos Aparecida",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Olhos Grottone - HOG - São Paulo",
@@ -8146,7 +9744,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Olhos Grottone - HOG - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Huse",
@@ -8156,7 +9756,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Huse",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IADES",
@@ -8166,7 +9768,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IADES",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Quadrix / IADES"
   },
   {
     "sigla": "Instituto Capixaba de Ensino, Pesquisa e Inovação em Saúde",
@@ -8176,7 +9780,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Capixaba de Ensino, Pesquisa e Inovação em Saúde",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Nacional de Estudos e Pesquisas Educacionais",
@@ -8186,7 +9792,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Nacional de Estudos e Pesquisas Educacionais",
     "modalidades": [
       "Revalida"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Verbena",
@@ -8196,7 +9804,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Verbena",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto de Cardiologia do Rio Grande do Sul - ICRS",
@@ -8206,7 +9816,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto de Cardiologia do Rio Grande do Sul - ICRS",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Irmandade da Santa Casa de Misericórdia de São Carlos - ISCMSC - São Paulo",
@@ -8216,7 +9828,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Irmandade da Santa Casa de Misericórdia de São Carlos - ISCMSC - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Ma",
@@ -8226,7 +9840,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ma",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "NucVest",
@@ -8236,17 +9852,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "NucVest",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "POLICLIN",
-    "nome": "FAMERP",
+    "nome": "Hospital Policlin (São José dos Campos)",
     "count": 2,
     "uf": "SP",
     "key": "POLICLIN",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Psu-al",
@@ -8256,7 +9876,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Psu-al",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SMS-SJP",
@@ -8266,7 +9888,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SMS-SJP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Araçatuba - SCMA - São Paulo",
@@ -8276,7 +9900,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Araçatuba - SCMA - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Cuiabá",
@@ -8286,7 +9912,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Cuiabá",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de São José dos Campos",
@@ -8296,7 +9924,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de São José dos Campos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Scm-bm",
@@ -8306,7 +9936,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Scm-bm",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Scmrp",
@@ -8316,7 +9948,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Scmrp",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Lucas do Rio Verde",
@@ -8326,7 +9960,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de Lucas do Rio Verde",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Piracicaba",
@@ -8336,7 +9972,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de Piracicaba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Piracicaba - SMS - Piracicaba",
@@ -8346,7 +9984,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de Piracicaba - SMS - Piracicaba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria de Estado da Saúde do Maranhão",
@@ -8356,7 +9996,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria de Estado da Saúde do Maranhão",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria de Saúde do Estado do Ceará",
@@ -8366,7 +10008,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria de Saúde do Estado do Ceará",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria do Estado da Saúde - SES - Maranhão",
@@ -8376,7 +10020,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria do Estado da Saúde - SES - Maranhão",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Sistema Único de Saúde - SUS - Roraima",
@@ -8386,7 +10032,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sistema Único de Saúde - SUS - Roraima",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Sms-cg",
@@ -8396,7 +10044,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sms-cg",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UCPEL - Universidade Católica de Pelotas",
@@ -8406,7 +10056,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UCPEL - Universidade Católica de Pelotas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIMONTES",
@@ -8416,7 +10068,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIMONTES",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ufal",
@@ -8426,7 +10080,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ufal",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ufpi",
@@ -8436,7 +10092,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ufpi",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ufsc",
@@ -8446,7 +10104,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ufsc",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unievangélica de Anápolis - UEVA - Goiás",
@@ -8456,7 +10116,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unievangélica de Anápolis - UEVA - Goiás",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unitau",
@@ -8466,7 +10128,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unitau",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Universidade Federal da Grande Dourados",
@@ -8476,7 +10140,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal da Grande Dourados",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de Campina Grande - UFCG - Paraíba",
@@ -8486,7 +10152,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de Campina Grande - UFCG - Paraíba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "SURCE"
   },
   {
     "sigla": "Universidade Federal do Piauí",
@@ -8496,7 +10164,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal do Piauí",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Rio Verde - UNIRV - Goiás",
@@ -8506,7 +10176,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Rio Verde - UNIRV - Goiás",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Associação Médica do Paraná - AMP - Paraná",
@@ -8516,7 +10188,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Associação Médica do Paraná - AMP - Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Associação da Santa Casa de Misericórdia de Ourinhos",
@@ -8526,7 +10200,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Associação da Santa Casa de Misericórdia de Ourinhos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Autarquia Municipal de Saúde do Município de Londrina",
@@ -8536,7 +10212,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Autarquia Municipal de Saúde do Município de Londrina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "CEREM - Comissão Estadual de Residência Médica do Mato Grosso do Sul",
@@ -8546,7 +10224,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "CEREM - Comissão Estadual de Residência Médica do Mato Grosso do Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Casa de Caridade de Alfenas NSP Socorro - CCANSPS - Minas Gerais",
@@ -8556,7 +10236,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Casa de Caridade de Alfenas NSP Socorro - CCANSPS - Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Casa de Caridade de Alfenes NSP Socorro",
@@ -8566,7 +10248,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Casa de Caridade de Alfenes NSP Socorro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário Cesumar",
@@ -8576,7 +10260,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário Cesumar",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário UnirG",
@@ -8586,7 +10272,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário UnirG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Centro Universitário de Ariquemes - UNIRG",
@@ -8596,7 +10284,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Centro Universitário de Ariquemes - UNIRG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Cvvfj",
@@ -8606,7 +10296,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Cvvfj",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Faculdade Brasileira - MULTIVIX Vitória",
@@ -8616,7 +10308,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Faculdade Brasileira - MULTIVIX Vitória",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundaçao Estatal Saúde da Família - Sistema Único de Saúde - Bahia",
@@ -8626,7 +10320,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundaçao Estatal Saúde da Família - Sistema Único de Saúde - Bahia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Banco de Olhos de Goiás",
@@ -8636,7 +10332,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Banco de Olhos de Goiás",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Estatal Saúde da Família",
@@ -8646,7 +10344,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Estatal Saúde da Família",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação Universitária de Ciências da Saúde de Alagoas",
@@ -8656,7 +10356,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação Universitária de Ciências da Saúde de Alagoas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Fundação de Beneficência Hospital de Cirurgia - FBHC - Sergipe",
@@ -8666,7 +10368,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Fundação de Beneficência Hospital de Cirurgia - FBHC - Sergipe",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HMMKB - Hospital e Maternidade Marieta Konder Born",
@@ -8676,7 +10380,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HMMKB - Hospital e Maternidade Marieta Konder Born",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HNJ",
@@ -8686,7 +10392,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HNJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HPM-MG - 2021 - R1",
@@ -8696,7 +10404,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HPM-MG - 2021 - R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSA-GUARUJA 2021 R1",
@@ -8706,7 +10416,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSA-GUARUJA 2021 R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HSL - RJ - Hospital São Lucas - RJ",
@@ -8716,7 +10428,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HSL - RJ - Hospital São Lucas - RJ",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "HUOL - 2021 - R1",
@@ -8726,7 +10440,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "HUOL - 2021 - R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hoa-ac",
@@ -8736,7 +10452,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hoa-ac",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospitaal Adventista Silvestre",
@@ -8746,7 +10464,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospitaal Adventista Silvestre",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Dr Adolfo Bezerra de Menezes",
@@ -8756,7 +10476,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Dr Adolfo Bezerra de Menezes",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Evangélico de Cachoeiro do Itapemerim - HECI - Espírito Santo",
@@ -8766,7 +10488,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Evangélico de Cachoeiro do Itapemerim - HECI - Espírito Santo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Geral de Goiânia",
@@ -8776,7 +10500,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Geral de Goiânia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Infantil Sabará",
@@ -8786,7 +10512,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Infantil Sabará",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Maternidade Therezinha de Jesus - Suprema - Minas Gerais",
@@ -8796,7 +10524,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Maternidade Therezinha de Jesus - Suprema - Minas Gerais",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Memorial Arthur Ramos",
@@ -8806,7 +10536,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Memorial Arthur Ramos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Memorial Arthur Ramos - Alagoas",
@@ -8816,7 +10548,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Memorial Arthur Ramos - Alagoas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Nacional do Câncer - INCA - Rio de Janeiro",
@@ -8826,7 +10560,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Nacional do Câncer - INCA - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Naval Marcílio Dias - HNMD - Rio de Janeiro",
@@ -8836,7 +10572,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Naval Marcílio Dias - HNMD - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Oftalmológico de Brasília - HOB - Distrito Federal",
@@ -8846,7 +10584,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Oftalmológico de Brasília - HOB - Distrito Federal",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Oftalmológico de Sorocaba",
@@ -8856,7 +10596,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Oftalmológico de Sorocaba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Ortopédico de Goiânia",
@@ -8866,7 +10608,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Ortopédico de Goiânia",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Ortopédico de Goiânia - HOG - Goiás",
@@ -8876,7 +10620,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Ortopédico de Goiânia - HOG - Goiás",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Pequeno Príncipe - HPP - Paraná",
@@ -8886,7 +10632,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Pequeno Príncipe - HPP - Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Professor Edmundo Vasconcelos - HPEV - São Paulo",
@@ -8896,7 +10644,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Professor Edmundo Vasconcelos - HPEV - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Regional de Ponta Grossa Wallace Thadeu de Mello e Silva",
@@ -8906,7 +10656,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Regional de Ponta Grossa Wallace Thadeu de Mello e Silva",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Regional de Ponta Grossa Wallace Thadeu de Mello e Silva - HRPG - Paraná",
@@ -8916,7 +10668,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Regional de Ponta Grossa Wallace Thadeu de Mello e Silva - HRPG - Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Santo Amaro",
@@ -8926,7 +10680,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Santo Amaro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital São Domingos - Maranhão",
@@ -8936,7 +10692,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital São Domingos - Maranhão",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Alberto Antunes - UFAL - Alagoas",
@@ -8946,7 +10704,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Alberto Antunes - UFAL - Alagoas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Antônio Pedro - UFF - Rio de Janeiro",
@@ -8956,7 +10716,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Antônio Pedro - UFF - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Bettina Ferro de Souza / Hospital João de Barros Barreto",
@@ -8966,7 +10728,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Bettina Ferro de Souza / Hospital João de Barros Barreto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário Lauro Wanderley - UFPB - Paraíba",
@@ -8976,7 +10740,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário Lauro Wanderley - UFPB - Paraíba",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário da UFSC - Santa Catarina",
@@ -8986,7 +10752,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário da UFSC - Santa Catarina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital Universitário de Taubaté - UNITAU - São Paulo",
@@ -8996,7 +10764,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital Universitário de Taubaté - UNITAU - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Hospital da Polícia Militar de Minas Gerais - HPM MG",
@@ -9006,7 +10776,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital da Polícia Militar de Minas Gerais - HPM MG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas de Goiás - HCG",
@@ -9016,7 +10788,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas de Goiás - HCG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas de Porto Alegre - HCPA - Rio Grande do Sul",
@@ -9026,7 +10800,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas de Porto Alegre - HCPA - Rio Grande do Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas de Teresópolis Constantino Ottaviano - FESO - Rio de Janeiro",
@@ -9036,7 +10812,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas de Teresópolis Constantino Ottaviano - FESO - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital das Clínicas do Paraná - UFPR",
@@ -9046,7 +10824,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital das Clínicas do Paraná - UFPR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Urgência de Sergipe",
@@ -9056,7 +10836,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Urgência de Sergipe",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital de Urgência de Sergipe - HUSE",
@@ -9066,7 +10848,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital de Urgência de Sergipe - HUSE",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital do Câncer de Goiás",
@@ -9076,7 +10860,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital do Câncer de Goiás",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hospital e Maternidade Marieta Konder Bornhausen - HMMKB - Santa Catarina",
@@ -9086,7 +10872,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hospital e Maternidade Marieta Konder Bornhausen - HMMKB - Santa Catarina",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hsa-guaruja",
@@ -9096,7 +10884,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hsa-guaruja",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hsjc",
@@ -9106,7 +10896,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hsjc",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Hsm-df",
@@ -9116,7 +10908,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Hsm-df",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "IBR",
@@ -9126,7 +10920,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "IBR",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "ISCMSP",
@@ -9136,7 +10932,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "ISCMSP",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ibap",
@@ -9146,7 +10944,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ibap",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ibest",
@@ -9156,7 +10956,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ibest",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Idor",
@@ -9166,7 +10968,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Idor",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituição Oficial",
@@ -9176,7 +10980,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituição Oficial",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Instituto Nacional de Traumatologia e Ortopedia - INTO - Rio de Janeiro",
@@ -9186,7 +10992,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Instituto Nacional de Traumatologia e Ortopedia - INTO - Rio de Janeiro",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Into",
@@ -9196,7 +11004,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Into",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Irmandade da Santa Casa de Misericórdia das Araras - ISCMA",
@@ -9206,17 +11016,21 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Irmandade da Santa Casa de Misericórdia das Araras - ISCMA",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "PMF - Prefeitura Municipal de Franca",
-    "nome": "FAMERP",
+    "nome": "Prefeitura Municipal de Franca",
     "count": 1,
     "uf": "SP",
     "key": "PMF - Prefeitura Municipal de Franca",
     "modalidades": [
       "R+"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PSU Alagoas",
@@ -9226,7 +11040,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PSU Alagoas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PUC - Sorocaba - São Paulo",
@@ -9236,7 +11052,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "PUC - Sorocaba - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Residência Médica do Estado do Amapá",
@@ -9246,7 +11064,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Residência Médica do Estado do Amapá",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SCMBH - 2021 - R1",
@@ -9256,7 +11076,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SCMBH - 2021 - R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SLMANDIC",
@@ -9266,7 +11088,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SLMANDIC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SPBC - Sociedade Portuguesa de Beneficência de Campos (RJ)",
@@ -9276,7 +11100,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SPBC - Sociedade Portuguesa de Beneficência de Campos (RJ)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "SSPPG",
@@ -9286,7 +11112,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "SSPPG",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Santa Casa de Limeira",
@@ -9296,7 +11124,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Limeira",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Campo Grande",
@@ -9306,7 +11136,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Campo Grande",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Campo Grande - SCMCG - Mato Grosso do Sul",
@@ -9316,7 +11148,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Campo Grande - SCMCG - Mato Grosso do Sul",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Maceió - Alagoas",
@@ -9326,7 +11160,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Maceió - Alagoas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Marília - SCMMA - São Paulo",
@@ -9336,7 +11172,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Marília - SCMMA - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Ribeirão Preto",
@@ -9346,7 +11184,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Ribeirão Preto",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Santa Casa de Misericórdia de Ribeirão Preto - SCMRR - São Paulo",
@@ -9356,7 +11196,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Santa Casa de Misericórdia de Ribeirão Preto - SCMRR - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "Scm-go",
@@ -9366,7 +11208,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Scm-go",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Scma-sp",
@@ -9376,7 +11220,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Scma-sp",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Scmsjc",
@@ -9386,7 +11232,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Scmsjc",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de Sinop - SMS - Mato Grosso",
@@ -9396,7 +11244,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de Sinop - SMS - Mato Grosso",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria Municipal de Saúde de São José dos Pinhais - SMS - SJP - Paraná",
@@ -9406,7 +11256,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria Municipal de Saúde de São José dos Pinhais - SMS - SJP - Paraná",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Secretaria do Estado de Saúde de Goiás - SES",
@@ -9416,7 +11268,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Secretaria do Estado de Saúde de Goiás - SES",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Sirio-libanes",
@@ -9426,7 +11280,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Sirio-libanes",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "VUNESP / FCC"
   },
   {
     "sigla": "UDI Hospital - Maranhão",
@@ -9436,7 +11292,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UDI Hospital - Maranhão",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nordeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UESPI - 2021 - R1",
@@ -9446,7 +11304,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UESPI - 2021 - R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UFSM - Universidade Federal de Santa Maria",
@@ -9456,7 +11316,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UFSM - Universidade Federal de Santa Maria",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNESC",
@@ -9466,7 +11328,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNESC",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIATENAS - Centro Universitário Atenas",
@@ -9476,7 +11340,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIATENAS - Centro Universitário Atenas",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIFAN",
@@ -9486,7 +11352,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIFAN",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "UNIMED-RJ - 2021 - R1",
@@ -9496,7 +11364,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "UNIMED-RJ - 2021 - R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "USPRP2012R1",
@@ -9506,7 +11376,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "USPRP2012R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "USPRP2013R1",
@@ -9516,7 +11388,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "USPRP2013R1",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ufmt",
@@ -9526,7 +11400,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ufmt",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Centro-Oeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ufrb",
@@ -9536,7 +11412,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ufrb",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Ultra-X Medicina Diagnóstica (SP)",
@@ -9546,7 +11424,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Ultra-X Medicina Diagnóstica (SP)",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unesc",
@@ -9556,7 +11436,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unesc",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sul",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unievangelica",
@@ -9566,7 +11448,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unievangelica",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Unirv",
@@ -9576,7 +11460,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Unirv",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Estadual do Pará",
@@ -9586,7 +11472,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual do Pará",
     "modalidades": [
       "R+"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Estadual do Pará - UEPA - Santarém",
@@ -9596,7 +11484,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Estadual do Pará - UEPA - Santarém",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Norte",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal de São Carlos",
@@ -9606,7 +11496,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal de São Carlos",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade Federal do Estado do Rio de Janeiro - UNIRIO",
@@ -9616,7 +11508,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade Federal do Estado do Rio de Janeiro - UNIRIO",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Desenvolvimento Institucional",
@@ -9626,7 +11520,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Desenvolvimento Institucional",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Universidade de Ribeirão Preto - UNAERP - São Paulo",
@@ -9636,7 +11532,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Universidade de Ribeirão Preto - UNAERP - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Visão Laser Hospital Oftalmológico",
@@ -9646,7 +11544,9 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Visão Laser Hospital Oftalmológico",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Nacional",
+    "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "Visão Laser Hospital Oftalmológico - HVL - São Paulo",
@@ -9656,6 +11556,8 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "key": "Visão Laser Hospital Oftalmológico - HVL - São Paulo",
     "modalidades": [
       "Acesso Direto"
-    ]
+    ],
+    "macrorregiao": "Sudeste",
+    "bancaOrganizadora": "Comissão Própria"
   }
 ];

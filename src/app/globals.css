@@ -61,11 +61,75 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Isolamento do layout da aplicação durante a Splash Screen do Hippocampus (zero jank na GPU/CPU) */
-html.hippo-splash-active .hippo-main-app-content {
-  content-visibility: hidden !important;
-  contain-intrinsic-size: 1px 5000px;
-  pointer-events: none;
+/* =========================================================================
+   SUPERFÍCIES DE VIDRO ÓPTICO (GLASSMORPHISM) — TELAS DE CARREGAMENTO
+   Transparência real com refração da interface viva ao fundo (Zero Layout Freeze)
+========================================================================= */
+.hippo-glass-overlay {
+  background: radial-gradient(
+    circle at 50% 44%,
+    var(--glow-color, rgba(37, 99, 235, 0.12)) 0%,
+    rgba(250, 250, 250, 0.44) 50%,
+    rgba(244, 244, 245, 0.64) 100%
+  );
+  -webkit-backdrop-filter: blur(18px) saturate(170%);
+  backdrop-filter: blur(18px) saturate(170%);
+}
+
+html.dark .hippo-glass-overlay {
+  background: radial-gradient(
+    circle at 50% 44%,
+    var(--glow-color, rgba(37, 99, 235, 0.18)) 0%,
+    rgba(9, 9, 11, 0.42) 50%,
+    rgba(9, 9, 11, 0.64) 100%
+  );
+  -webkit-backdrop-filter: blur(20px) saturate(175%);
+  backdrop-filter: blur(20px) saturate(175%);
+}
+
+.hippo-glass-capsule {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.74) 0%,
+    rgba(255, 255, 255, 0.44) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  box-shadow:
+    0 24px 64px -16px rgba(24, 24, 27, 0.14),
+    0 6px 20px -6px rgba(24, 24, 27, 0.06),
+    0 0 42px -14px var(--glow-color, rgba(37, 99, 235, 0.18)),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.96),
+    0 0 0 1px rgba(24, 24, 27, 0.06);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  backdrop-filter: blur(28px) saturate(190%);
+}
+
+html.dark .hippo-glass-capsule {
+  background: linear-gradient(
+    145deg,
+    rgba(32, 32, 38, 0.56) 0%,
+    rgba(16, 16, 20, 0.36) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 28px 72px -16px rgba(0, 0, 0, 0.65),
+    0 0 56px -14px var(--glow-color, rgba(37, 99, 235, 0.24)),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.24),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  backdrop-filter: blur(28px) saturate(190%);
+}
+
+.hippo-glass-subcard {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(24, 24, 27, 0.07);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.75);
+}
+
+html.dark .hippo-glass-subcard {
+  background: rgba(24, 24, 27, 0.48);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
 }
 
 :root {
@@ -464,11 +528,78 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
 }
 
 .bento-card {
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+  transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.22s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s ease;
 }
 
 .bento-card:hover {
+  transform: translateY(-1.5px);
+  border-color: color-mix(in srgb, var(--primary-color, #2563eb) 26%, var(--card-border, #e4e4e7));
+  box-shadow: 0 8px 22px -10px rgba(0, 0, 0, 0.08);
+}
+
+html.dark .bento-card:hover {
+  border-color: color-mix(in srgb, var(--primary-color, #2563eb) 32%, var(--card-border, #27272a));
+  box-shadow: 0 10px 26px -12px rgba(0, 0, 0, 0.55);
+}
+
+/* Entrada escalonada suave 60fps para os cards do Dashboard */
+@keyframes bentoFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bento-stagger-item {
+  animation: bentoFadeUp 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--stagger-idx, 0) * 32ms);
+}
+
+/* Revelação suave estilo flashcard (Active Recall sem salto brusco) */
+.active-recall-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.24s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+}
+
+.active-recall-collapse[data-open="true"] {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.active-recall-inner {
+  overflow: hidden;
+}
+
+.active-recall-collapse[data-open="false"] .active-recall-content {
+  filter: blur(4px);
   transform: translateY(-2px);
+}
+
+.active-recall-content {
+  filter: blur(0);
+  transform: translateY(0);
+  transition: filter 0.22s ease, transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes panelSubtleSwap {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 4px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-panel-swap {
+  animation: panelSubtleSwap 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 /* Suporte a preferência de movimento reduzido */
@@ -844,7 +975,7 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
     font-size: 0.8rem !important;
     line-height: 1.15 !important;
   }
-  .tabular-nums, .text-3xl, .text-4xl, .text-2xl {
+  .text-3xl, .text-4xl, .text-2xl {
     font-size: 1.25rem !important;
     line-height: 1.2 !important;
   }
@@ -871,7 +1002,7 @@ html.light .flat-scrollbar::-webkit-scrollbar-thumb:hover {
   .bento-card {
     padding: 1rem !important;
   }
-  .tabular-nums, .text-3xl, .text-4xl {
+  .text-3xl, .text-4xl {
     font-size: 1.65rem !important;
   }
   .text-xs {

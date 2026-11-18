@@ -8,6 +8,54 @@ export function getHighlightsStorageKey(materialId: string, userId?: string | nu
   return `${HIGHLIGHTS_STORAGE_PREFIX}${userSegment}_${materialId}`;
 }
 
+async function upsertHighlightsBatchResilient(
+  materialId: string,
+  highlights: StudyHighlight[],
+  userId: string
+): Promise<void> {
+  if (!highlights.length || !userId || userId === 'demo-student') return;
+  try {
+    const client = createClient();
+    const { data: sessionData } = await client.auth.getSession();
+    if (!sessionData?.session) return;
+
+    const extendedPayload = highlights.map((hl) => ({
+      id: hl.id,
+      user_id: userId,
+      material_id: materialId,
+      text_quote: hl.textQuote,
+      prefix: hl.prefix || null,
+      suffix: hl.suffix || null,
+      color: hl.color,
+      style: hl.style,
+      note: hl.note || null,
+      created_at: hl.createdAt,
+      updated_at: hl.updatedAt || new Date().toISOString()
+    }));
+
+    const { error } = await client
+      .from('user_study_highlights')
+      .upsert(extendedPayload, { onConflict: 'id' });
+
+    if (error && error.code !== 'PGRST205' && error.code !== '42P01') {
+      const basePayload = highlights.map((hl) => ({
+        id: hl.id,
+        user_id: userId,
+        material_id: materialId,
+        text_quote: hl.textQuote,
+        color: hl.color,
+        style: hl.style,
+        note: hl.note || null,
+        created_at: hl.createdAt,
+        updated_at: hl.updatedAt || new Date().toISOString()
+      }));
+      await client.from('user_study_highlights').upsert(basePayload, { onConflict: 'id' });
+    }
+  } catch (err) {
+    console.warn('[studyAnnotationsService] Erro ao persistir grifos no Supabase:', err);
+  }
+}
+
 export const studyAnnotationsService = {
   /**
    * Carrega os grifos e notas salvos do material (cache local instantâneo + reconciliação reativa Supabase)
@@ -58,23 +106,7 @@ export const studyAnnotationsService = {
       localStorage.setItem(key, JSON.stringify(highlights));
 
       if (userId && userId !== 'demo-student' && highlights.length > 0) {
-        const client = createClient();
-        const payload = highlights.map((hl) => ({
-          id: hl.id,
-          user_id: userId,
-          material_id: materialId,
-          text_quote: hl.textQuote,
-          color: hl.color,
-          style: hl.style,
-          note: hl.note || null,
-          created_at: hl.createdAt,
-          updated_at: hl.updatedAt || new Date().toISOString()
-        }));
-
-        client
-          .from('user_study_highlights')
-          .upsert(payload, { onConflict: 'id' })
-          .then(() => {}, () => {});
+        await upsertHighlightsBatchResilient(materialId, highlights, userId);
       }
     } catch (e) {
       console.warn('[studyAnnotationsService] Erro ao salvar grifos:', e);
@@ -117,7 +149,7 @@ export const studyAnnotationsService = {
   ): StudyHighlight[] {
     const current = this.loadMaterialHighlights(materialId, userId);
     const updated = current.filter((h) => h.id !== highlightId);
-    this.saveMaterialHighlights(materialId, updated, userId);
+    void this.saveMaterialHighlights(materialId, updated, userId);
 
     if (userId && userId !== 'demo-student' && typeof window !== 'undefined') {
       const client = createClient();
@@ -150,12 +182,12 @@ export const studyAnnotationsService = {
       return h;
     });
 
-    this.saveMaterialHighlights(materialId, updated, userId);
+    void this.saveMaterialHighlights(materialId, updated, userId);
     return updated;
   },
 
   /**
-   * Sincronização remota bidirecional: compara updatedAt e envia grifos locais faltantes
+   * Sincronização remota bidirecional: compara updatedAt, preserva âncoras prefix/suffix e envia grifos locais faltantes
    */
   async syncRemoteHighlights(
     materialId: string,
@@ -164,6 +196,9 @@ export const studyAnnotationsService = {
   ): Promise<StudyHighlight[]> {
     try {
       const client = createClient();
+      const { data: sessionData } = await client.auth.getSession();
+      if (!sessionData?.session) return localHighlights;
+
       const { data, error } = await client
         .from('user_study_highlights')
         .select('*')
@@ -172,30 +207,21 @@ export const studyAnnotationsService = {
 
       if (error || !data) return localHighlights;
 
-      interface DbHighlightRow {
-        id: string;
-        material_id: string;
-        user_id: string;
-        text_quote: string;
-        color: StudyHighlight['color'];
-        style: StudyHighlight['style'];
-        note?: string | null;
-        created_at: string;
-        updated_at?: string;
-      }
-
       const remoteMap = new Map<string, StudyHighlight>();
-      for (const row of data as unknown as DbHighlightRow[]) {
-        remoteMap.set(row.id, {
-          id: row.id,
-          materialId: row.material_id,
-          userId: row.user_id,
-          textQuote: row.text_quote,
-          color: row.color,
-          style: row.style,
-          note: row.note || undefined,
-          createdAt: row.created_at,
-          updatedAt: row.updated_at
+      for (const row of data as Record<string, unknown>[]) {
+        const id = String(row.id);
+        remoteMap.set(id, {
+          id,
+          materialId: String(row.material_id || materialId),
+          userId: String(row.user_id || userId),
+          textQuote: String(row.text_quote || ''),
+          prefix: typeof row.prefix === 'string' ? row.prefix : undefined,
+          suffix: typeof row.suffix === 'string' ? row.suffix : undefined,
+          color: row.color as StudyHighlight['color'],
+          style: row.style as StudyHighlight['style'],
+          note: typeof row.note === 'string' ? row.note : undefined,
+          createdAt: typeof row.created_at === 'string' ? row.created_at : new Date().toISOString(),
+          updatedAt: typeof row.updated_at === 'string' ? row.updated_at : undefined
         });
       }
 
@@ -214,8 +240,8 @@ export const studyAnnotationsService = {
             mergedMap.set(remoteHl.id, {
               ...localHl,
               ...remoteHl,
-              prefix: localHl.prefix,
-              suffix: localHl.suffix
+              prefix: remoteHl.prefix || localHl.prefix,
+              suffix: remoteHl.suffix || localHl.suffix
             });
           } else {
             mergedMap.set(localHl.id, localHl);
@@ -235,21 +261,7 @@ export const studyAnnotationsService = {
       localStorage.setItem(key, JSON.stringify(merged));
 
       if (toUpload.length > 0) {
-        const payload = toUpload.map((hl) => ({
-          id: hl.id,
-          user_id: userId,
-          material_id: materialId,
-          text_quote: hl.textQuote,
-          color: hl.color,
-          style: hl.style,
-          note: hl.note || null,
-          created_at: hl.createdAt,
-          updated_at: hl.updatedAt || new Date().toISOString()
-        }));
-        client
-          .from('user_study_highlights')
-          .upsert(payload, { onConflict: 'id' })
-          .then(() => {}, () => {});
+        await upsertHighlightsBatchResilient(materialId, toUpload, userId);
       }
 
       return merged;

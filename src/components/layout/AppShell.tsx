@@ -242,7 +242,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
               {/* Botão PRO: Sóbrio, Elegante e Compacto em telas estreitas */}
               {isUserFree && !isAdmin ? (
-                <Link href="/checkout">
+                <Link href="/checkout" prefetch={false}>
                   <Button
                     variant="primary"
                     size="sm"
@@ -503,6 +503,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
         <Link
           href="/caderno-de-erros"
+          prefetch={false}
           className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] relative active:scale-95 touch-manipulation ${pathname?.startsWith('/caderno-de-erros')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
@@ -523,6 +524,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
 
         <Link
           href="/flashcards"
+          prefetch={false}
           className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] active:scale-95 touch-manipulation ${pathname?.startsWith('/flashcards')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'

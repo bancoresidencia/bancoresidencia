@@ -451,26 +451,10 @@ export function getEffectiveAccentConfig(accent: AccentColor, mode: ThemeMode): 
 }
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Inicialização síncrona do tema a partir do localStorage para evitar flash de modo escuro/claro
-  const [mode, setModeState] = useState<ThemeMode>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const savedMode = localStorage.getItem('banco_theme_mode') as ThemeMode | null;
-        if (savedMode === 'dark' || savedMode === 'light') return savedMode;
-      } catch {}
-    }
-    return 'dark';
-  });
-
-  const [accent, setAccentState] = useState<AccentColor>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const savedAccent = localStorage.getItem('banco_accent_color') as AccentColor | null;
-        if (savedAccent && ACCENT_CONFIGS[savedAccent]) return savedAccent;
-      } catch {}
-    }
-    return 'blue';
-  });
+  // Inicializa idêntico ao SSR para evitar erro de hidratação e regeneração completa da árvore React;
+  // as variáveis CSS e classes html.dark/light já foram injetadas pelo script beforeInteractive do layout.tsx.
+  const [mode, setModeState] = useState<ThemeMode>('dark');
+  const [accent, setAccentState] = useState<AccentColor>('blue');
 
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const [isDashboardCustomizing, setIsDashboardCustomizing] = useState<boolean>(false);
@@ -494,7 +478,26 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const isInitialMount = useRef(true);
 
   useEffect(() => {
-    setIsMounted(true);
+    let initialMode: ThemeMode = 'dark';
+    let initialAccent: AccentColor = 'blue';
+    try {
+      const savedMode = localStorage.getItem('banco_theme_mode') as ThemeMode | null;
+      if (savedMode === 'dark' || savedMode === 'light') {
+        initialMode = savedMode;
+      }
+      const savedAccent = localStorage.getItem('banco_accent_color') as AccentColor | null;
+      if (savedAccent && ACCENT_CONFIGS[savedAccent]) {
+        initialAccent = savedAccent;
+      }
+    } catch {
+      // ignore storage access errors
+    }
+
+    queueMicrotask(() => {
+      setModeState(initialMode);
+      setAccentState(initialAccent);
+      setIsMounted(true);
+    });
   }, []);
 
   const applyThemeToDOM = (themeMode: ThemeMode, themeAccent: AccentColor) => {
@@ -565,6 +568,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   useEffect(() => {
+    if (!isMounted) return;
     applyThemeToDOM(mode, accent);
     if (isInitialMount.current) {
       isInitialMount.current = false;
@@ -576,7 +580,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     } catch {
       // ignore
     }
-  }, [mode, accent]);
+  }, [mode, accent, isMounted]);
 
 // Sincronização em background com as preferências no perfil do Supabase com debounce de 600ms
   const themeDebounceRef = useRef<NodeJS.Timeout | null>(null);

@@ -34,6 +34,7 @@ import {
   readLocalBookmarks,
   reconcileUserBookmarksWithRemote
 } from '@/services/userBookmarksService';
+import { fetchQuestionsFromSupabase } from '@/services/questionService';
 import { createClient } from '@/lib/supabase/client';
 import { getLocalDateStr } from '@/context/StudyTimerContext';
 import {
@@ -119,14 +120,16 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       const supabase = createClient();
       let remoteRows = preloadedRows;
       if (!remoteRows) {
-        const PAGE_SIZE = 1000;
-        const MAX_PAGES = 50;
-        const collected: Record<string, unknown>[] = [];
-        let page = 0;
+        const {
+          data: { session: authSession }
+        } = await supabase.auth.getSession();
+        if (!authSession?.user || authSession.user.id !== userId) return;
 
-        while (page < MAX_PAGES) {
-          const from = page * PAGE_SIZE;
-          const to = from + PAGE_SIZE - 1;
+        const allFetched: Record<string, unknown>[] = [];
+        const PAGE_SIZE = 1000;
+        let fromOffset = 0;
+
+        while (true) {
           const { data, error } = await supabase
             .from('user_answers')
             .select(
@@ -134,17 +137,15 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
             )
             .eq('user_id', userId)
             .order('answered_at', { ascending: true })
-            .range(from, to);
+            .range(fromOffset, fromOffset + PAGE_SIZE - 1);
 
-          if (error || !data) {
-            if (page === 0) return;
-            break;
-          }
-          collected.push(...(data as Record<string, unknown>[]));
+          if (error) return;
+          if (!data || data.length === 0) break;
+          allFetched.push(...(data as Record<string, unknown>[]));
           if (data.length < PAGE_SIZE) break;
-          page += 1;
+          fromOffset += PAGE_SIZE;
         }
-        remoteRows = collected;
+        remoteRows = allFetched;
       }
 
       setUserAnswers((currentLocal) => {
@@ -336,9 +337,11 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       } else if (!user?.id) {
         const fallbackRaw = localStorage.getItem('bancoresidencia_user_answers');
         if (fallbackRaw) {
+          localStorage.removeItem('bancoresidencia_user_answers');
           const parsed = JSON.parse(fallbackRaw) as Record<string, UserAnswerItem>;
           if (parsed && typeof parsed === 'object') {
             setUserAnswers(parsed);
+            localStorage.setItem(storageKey, JSON.stringify(parsed));
           }
         } else {
           setUserAnswers({});
@@ -365,6 +368,9 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
 
   const isSyncingRef = useRef(false);
   const lastSyncTimestampRef = useRef<number>(0);
+
+  // Tamanho de Fonte (declarado antes dos listeners multi-abas)
+  const [fontSize, setFontSizeState] = useState<'xs' | 'sm' | 'base' | 'lg' | 'xl'>('sm');
 
   const refreshUserData = useCallback(async () => {
     if (!user?.id) {
@@ -409,13 +415,10 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
             setBookmarkedQuestionIds(reconciledBookmarks);
           }
           if (typeof data.profile?.daily_goal === 'number' && data.profile.daily_goal > 0) {
-            setCustomDailyGoal((prev) => {
-              const nextGoal = data.profile.daily_goal as number;
-              try {
-                localStorage.setItem(getDailyGoalStorageKey(user.id), String(nextGoal));
-              } catch { }
-              return prev !== nextGoal ? nextGoal : prev;
-            });
+            setCustomDailyGoal(data.profile.daily_goal);
+            try {
+              localStorage.setItem(getDailyGoalStorageKey(user.id), String(data.profile.daily_goal));
+            } catch { }
           }
           if (data.profile?.preferences && typeof window !== 'undefined') {
             window.dispatchEvent(new CustomEvent('bancoresidencia_preferences_synced', {
@@ -456,10 +459,26 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
 
   useEffect(() => {
     refreshUserData();
-  }, [refreshUserData]);
 
-  // Tamanho de Fonte (declarado antes do listener multi-abas)
-  const [fontSize, setFontSizeState] = useState<'xs' | 'sm' | 'base' | 'lg' | 'xl'>('sm');
+    const supabase = createClient();
+    const {
+      data: { subscription }
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      if ((event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') && session?.user?.id === user?.id) {
+        refreshUserData();
+      } else if (event === 'SIGNED_OUT') {
+        setUserAnswers({});
+        setFolders([]);
+        setLists([]);
+        setBookmarkedQuestionIds({});
+        setCustomDailyGoal(null);
+      }
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, [refreshUserData, user?.id]);
 
   // Revalidação automática multi-dispositivo (celular <-> tablet <-> computador) e sincronização entre abas
   useEffect(() => {
@@ -884,17 +903,24 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
           });
       }
 
-      // Atualiza progresso da lista se houver lista ativa
+      // Atualiza progresso da lista se houver lista ativa (calculado por IDs únicos respondidos, sem duplicar re-tentativas)
       if (activeListId) {
+        const updatedAnswersSnapshot = { ...userAnswersRef.current, [questionId]: answerObj };
         setLists((prev) => {
           const next = prev.map((l) => {
             if (l.id === activeListId) {
-              const nextCompleted = Math.min(l.totalQuestions, l.completedQuestions + 1);
+              const total = Math.max(1, l.totalQuestions || l.questionIds.length);
+              const nextCompleted =
+                l.questionIds.length > 0
+                  ? Math.min(total, l.questionIds.filter((qid) => Boolean(updatedAnswersSnapshot[qid])).length)
+                  : Math.min(total, (previousAnswer ? l.completedQuestions : l.completedQuestions + 1));
               return {
                 ...l,
                 completedQuestions: nextCompleted,
-                progressPercentage: Math.round((nextCompleted / l.totalQuestions) * 100),
-                lastStudiedAt: 'Agora mesmo'
+                inProgress: nextCompleted > 0 && nextCompleted < total,
+                progressPercentage: Math.min(100, Math.round((nextCompleted / total) * 100)),
+                lastStudiedAt: 'Agora mesmo',
+                updatedAt: new Date().toISOString()
               };
             }
             return l;
@@ -1023,17 +1049,58 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function'
           ? `list-${crypto.randomUUID()}`
           : `list-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
+
+      let resolvedQuestionIds = questionIds;
+
+      // Quando criada pela aba /listas sem IDs pré-carregados, busca os IDs reais do acervo respeitando os filtros
+      if (!resolvedQuestionIds || resolvedQuestionIds.length === 0) {
+        try {
+          const currentAnswers = userAnswersRef.current;
+          const answeredIds = Object.keys(currentAnswers);
+          const correctIds = Object.entries(currentAnswers)
+            .filter(([, a]) => a.isCorrect)
+            .map(([id]) => id);
+          const wrongIds = Object.entries(currentAnswers)
+            .filter(([, a]) => !a.isCorrect)
+            .map(([id]) => id);
+
+          const desiredSize = Math.min(200, Math.max(1, totalQuestions || 20));
+          const fetched = await fetchQuestionsFromSupabase(
+            {
+              ...appliedFilters,
+              userSolvedIds: answeredIds,
+              userCorrectIds: correctIds,
+              userWrongIds: wrongIds
+            },
+            1,
+            desiredSize
+          );
+          if (fetched.questions && fetched.questions.length > 0) {
+            resolvedQuestionIds = fetched.questions.map((q) => q.id);
+          }
+        } catch (err) {
+          console.warn('[StudentDataContext] Erro ao buscar questões para nova lista:', err);
+        }
+      }
+
+      const finalTotal =
+        resolvedQuestionIds.length > 0 ? resolvedQuestionIds.length : Math.max(1, totalQuestions || 20);
+      const alreadyDone =
+        resolvedQuestionIds.length > 0
+          ? resolvedQuestionIds.filter((qid) => Boolean(userAnswersRef.current[qid])).length
+          : 0;
       const newList: QuestionList = {
         id: uniqueListId,
         userId: user?.id,
         title,
         folderId: folderId || undefined,
-        questionIds,
-        totalQuestions: totalQuestions || questionIds.length,
-        completedQuestions: 0,
+        questionIds: resolvedQuestionIds,
+        totalQuestions: finalTotal,
+        completedQuestions: alreadyDone,
         lastStudiedAt: 'Criada recentemente',
-        inProgress: false,
-        progressPercentage: 0,
+        inProgress: alreadyDone > 0 && alreadyDone < finalTotal,
+        progressPercentage: Math.min(100, Math.round((alreadyDone / finalTotal) * 100)),
+        filters: appliedFilters,
         createdAt: new Date().toISOString()
       };
       const next = [newList, ...lists];

@@ -76,9 +76,9 @@ export function sanitizeText(text) {
   return text
     .replace(/estrat[ée]gia\s*med/gi, 'Base Médica Teórica')
     .replace(/estrat[ée]gia\s*vestibulares/gi, 'Base Teórica')
-    .replace(/estrat[ée]gia/gi, 'Literatura Médica Oficial')
     .replace(/medcurso/gi, 'Diretrizes Oficiais')
-    .replace(/sanar/gi, 'Consenso Clínico')
+    .replace(/\bsanar\s*(med|flix|sa[úu]de|resid[êe]ncia)\b/gi, 'Consenso Clínico')
+    .replace(/\bsanarmed\b|\bsanarflix\b/gi, 'Consenso Clínico')
     .replace(/medevo/gi, 'Banca de Residência');
 }
 
@@ -157,61 +157,61 @@ export function getSpecialtyGuideline(specialty, tema) {
   const t = (tema || '').toLowerCase();
 
   if (spec.includes('urolog') || t.includes('urolog')) {
-    return 'Você é um Urologista e Cirurgião Geral, preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Urologia (SBU), American Urological Association (AUA) e Campbell-Walsh Urologia.';
+    return 'Você é um Urologista e Cirurgião Geral, preceptor de residência médica (SBU/AUA/Campbell-Walsh). Micro-diretrizes: nefrolitíase (TC sem contraste padrão-ouro; alfa-bloqueador para cálculos ureterais distais ≤10mm; nefrostomia/duplo-J urgente se obstrução + infecção); HPB (alfa-bloqueador alívio rápido, inibidor 5-alfa-redutase se próstata >30-40g); CA próstata (biópsia/RMmp conforme PSA/toque); torção testicular (exploração cirúrgica imediata ≤6h sem atrasar por USG).';
   }
   if (spec.includes('cirurg')) {
-    return 'Você é um Cirurgião Geral e preceptor de residência médica. Fundamente com as diretrizes do Colégio Brasileiro de Cirurgiões (CBC), ATLS 10ª/11ª edição e Sabiston Tratado de Cirurgia.';
+    return 'Você é um Cirurgião Geral e Preceptor (CBC / ATLS 10ª-11ª ed. / Sabiston). Micro-diretrizes: trauma (ABCDE/XABCDE; choque hemorrágico: cristalóide restrito 1L, hemotransfusão maciça 1:1:1 e ácido tranexâmico ≤3h; e-FAST; pneumotórax hipertensivo descompressão imediata; TNO esplênico/hepático apenas se estabilidade hemodinâmica); abdome agudo (apendicite: TC/USG + ATB/apendicectomia; diverticulite: Hinchey I-II ATB/drenagem, III-IV cirurgia; colecistite: Tokyo + colecistectomia precoce); pré/pós-op (ERAS/ACERTO jejum abreviado, profilaxia TEV Caprini).';
   }
   if (spec.includes('pediat')) {
-    return 'Você é um Pediatra e preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Pediatria (SBP), Ministério da Saúde e Nelson Tratado de Pediatria.';
+    return 'Você é um Pediatra e Preceptor (SBP / MS / Nelson). Micro-diretrizes: reanimação neonatal SBP (minuto de ouro, clampeamento ≥60s se vigoroso; VPP ar ambiente ≥34s e O2 30% <34s; MCE 3:1 se FC<60); PNI vigente (HPV dose única 9-14 anos; Pentavalente, VIP, Rotavírus, Pneumo-10, Meningo C/ACWY); bronquiolite (suporte/O2, sem corticoide/BD rotina); desidratação OMS (Planos A/B/C); pneumonia (amoxicilina ambulatorial; oxacilina/ceftriaxona internado); nefro (GNPE vs síndrome nefrótica corticoide-sensível).';
   }
   if (spec.includes('gineco')) {
-    return 'Você é um Ginecologista e preceptor de residência médica. Fundamente com os consensos da FEBRASGO, Berek & Novak e diretrizes do Ministério da Saúde / INCA.';
+    return 'Você é um Ginecologista e Preceptor (FEBRASGO / Berek & Novak / INCA-MS). Micro-diretrizes: CA colo uterino (citologia 25-64 anos, colposcopia/CAF conforme Bethesda); CA mama (mamografia bienal 50-69 MS/INCA vs anual 40-74 SBM/FEBRASGO — contextualize conforme enunciado); SUA (classificação PALM-COEIN); amenorreia (compartimentos 1-4, teste progesterona/estrogênio); DIP (ceftriaxona + doxiciclina + metronidazol); SOP (Rotterdam); climatério (TH na janela de oportunidade <60a ou <10a pós-menopausa).';
   }
   if (spec.includes('obstet')) {
-    return 'Você é um Obstetra e preceptor de residência médica. Fundamente com os manuais de Gestação de Alto Risco do Ministério da Saúde, FEBRASGO e Williams Obstetrícia.';
+    return 'Você é um Obstetra e Preceptor (FEBRASGO / MS Alto Risco / Williams). Micro-diretrizes: DMG (TOTG 75g 24-28s: jejum ≥92, 1h ≥180, 2h ≥153); pré-eclâmpsia (PAS≥140/PAD≥90 + proteinúria ou disfunção orgânica; sulfato de magnésio Pritchard/Zuspan na iminência/eclâmpsia; parto ≥37s sem gravidade ou ≥34s/estabilização com gravidade); hemorragias 2ª metade (DPP vs PP; toque vaginal proibido na placenta prévia); HPP (atonia uterina 1ª causa: ocitocina + massagem + ácido tranexâmico); sífilis (penicilina benzatina imediata).';
   }
   if (spec.includes('preventiv')) {
-    return 'Você é um Especialista em Medicina Preventiva e Social / Saúde Coletiva. Fundamente com as Leis Orgânicas do SUS (8.080/90 e 8.142/90), Cadernos de Atenção Básica e Rouquayrol Epidemiologia & Saúde.';
+    return 'Você é um Especialista em Medicina Preventiva e Saúde Coletiva (SUS / PNAB / Rouquayrol / MS). Micro-diretrizes: Leis 8.080/90 e 8.142/90 (Conselhos permanentes/deliberativos com paridade 50% usuários, 25% trabalhadores, 25% gestores; Conferências 4/4 anos); Decreto 7.508/11; APS/Starfield (acesso, longitudinalidade, integralidade, coordenação); Leavell & Clark + prevenção quaternária (evitar iatrogenia/sobrediagnóstico); estudos (transversal=prevalência/causalidade reversa; caso-controle=OR; coorte=RR/incidência; ecológico=falácia ecológica); testes (SnNOut/SpPIn; VPP/VPN dependem da prevalência); notificação compulsória (imediata ≤24h vs semanal); PNI HPV dose única 9-14a.';
   }
   if (t.includes('cardio')) {
-    return 'Você é um Cardiologista e preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Cardiologia (SBC), AHA/ACC e ESC.';
+    return 'Você é um Cardiologista e Preceptor (SBC / AHA-ACC / ESC). Micro-diretrizes: IAMCSST (reperfusão imediata: porta-balão ≤90min ou fibrinolítico ≤30min); ICFEr (quádrupla terapia: IECA/BRA/ARNI + betabloqueador + ARM + iSGLT2); FA (CHA2DS2-VASc, preferir DOACs exceto estenose mitral moderada/grave ou prótese mecânica); HAS (metas e combinação precoce).';
   }
   if (t.includes('gastro') || t.includes('hepato')) {
-    return 'Você é um Gastroenterologista e preceptor de residência médica. Fundamente com as diretrizes da Federação Brasileira de Gastroenterologia (FBG) e Sociedade Brasileira de Hepatologia (SBH).';
+    return 'Você é um Gastroenterologista/Hepatologista e Preceptor (FBG / SBH). Micro-diretrizes: HDA varicosa (ressuscitação volêmica cautelosa Hb alvo 7-8, terlipressina/octreotide + ceftriaxona + EDA ≤12h); PBE (PMN ≥250 no LA -> cefotaxima/ceftriaxona + albumina D1 e D3); pancreatite aguda (hidratação com Ringer Lactato moderada + nutrição precoce).';
   }
   if (t.includes('nefro')) {
-    return 'Você é um Nefrologista e preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Nefrologia (SBN) e consensos KDIGO.';
+    return 'Você é um Nefrologista e Preceptor (SBN / KDIGO). Micro-diretrizes: LRA e DRC (estadiamento TFG e albuminúria; iSGLT2 e IECA/BRA/finerenona nefroproteção); distúrbios hidroeletrolíticos (hipercalemia grave: gluconato de cálcio estabiliza membrana, insulina+glicose/beta-2 redistribui; hiponatremia crônica corrigir ≤8-10 mEq/L/24h evitar mielinólise pontina).';
   }
   if (t.includes('pneumo')) {
-    return 'Você é um Pneumologista e preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Pneumologia e Tisiologia (SBPT), GOLD e GINA.';
+    return 'Você é um Pneumologista e Preceptor (SBPT / GOLD / GINA). Micro-diretrizes: Asma GINA (ICS-formoterol como resgate/manutenção, evitar SABA isolado); DPOC GOLD (grupos A/B/E; LAMA/LABA base, ICS se eosinófilos ≥300 ou exacerbações frequentes; O2 domiciliar se PaO2 ≤55 ou ≤59 com cor pulmonale/policitemia).';
   }
   if (t.includes('infecto')) {
-    return 'Você é um Infectologista e preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Infectologia (SBI) e PCDTs do Ministério da Saúde.';
+    return 'Você é um Infectologista e Preceptor (SBI / PCDT-MS). Micro-diretrizes: HIV (TARV imediata TDF+3TC+DTG para todos, profilaxia OI conforme CD4); TB (RIPE 2m + RI 4m); Arboviroses/Dengue (estadiamento A/B/C/D, hidratação vigorosa precoce no grupo C/D, evitar AINEs/AAS); PEP HIV em até 72h por 28 dias.';
   }
   if (t.includes('endocrin')) {
-    return 'Você é um Endocrinologista e preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Diabetes (SBD), SBEM e ATA.';
+    return 'Você é um Endocrinologista e Preceptor (SBD / SBEM / ATA). Micro-diretrizes: DM2 (HbA1c <7%; iSGLT2/aGLP-1 prioritários se doença CV/renal/IC); CAD/EHH (SF 0,9% inicial; dosar/repor K+ antes da insulina regular IV se K+<3,3; bicarbonato só se pH<6,9); nódulo tireoide (USG TIRADS + PAAF Bethesda).';
   }
   if (t.includes('neuro') || t.includes('otorrino')) {
-    return 'Você é um Neurologista e preceptor de residência médica. Fundamente com as diretrizes da Academia Brasileira de Neurologia (ABN).';
+    return 'Você é um Neurologista e Preceptor (ABN). Micro-diretrizes: AVCi (TC crânio imediata exclui hemorragia; alteplase ≤4,5h com PA <185x110mmHg; trombectomia mecânica se oclusão grande vaso); estado de mal epiléptico (benzodiazepínico 1ª linha -> fenitoína/valproato/levetiracetam 2ª linha).';
   }
   if (t.includes('reumat')) {
-    return 'Você é um Reumatologista e preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Reumatologia (SBR) e ACR/EULAR.';
+    return 'Você é um Reumatologista e Preceptor (SBR / ACR-EULAR). Micro-diretrizes: AR (metotrexato 1ª linha precoce; anti-CCP alta especificidade); LES (FAN triagem, anti-dsDNA/anti-Sm específicos; hidroxicloroquina para todos sem contraindicação); artrite séptica (artrocentese obrigatória + drenagem + ATB IV).';
   }
   if (t.includes('hemat')) {
-    return 'Você é um Hematologista e preceptor de residência médica. Fundamente com as diretrizes da Associação Brasileira de Hematologia, Hemoterapia e Terapia Celular (ABHH).';
+    return 'Você é um Hematologista e Preceptor (ABHH). Micro-diretrizes: anemias (microcítica: ferropriva vs talassemia Mentzer; megaloblástica: B12/folato, nunca dar folato isolado sem descartar B12); PTT (esquizócitos + plaquetopenia + febre/neuro/renal -> plasmaférese imediata, evitar transfusão de plaquetas).';
   }
   if (t.includes('dermat')) {
-    return 'Você é um Dermatologista e preceptor de residência médica. Fundamente com as diretrizes da Sociedade Brasileira de Dermatologia (SBD).';
+    return 'Você é um Dermatologista e Preceptor (SBD). Micro-diretrizes: melanoma (biópsia excisional margem 1-2mm, Breslow define margem definitiva e linfonodo sentinela); hanseníase (PQT única Paucibacilar 6m / Multibacilar 12m); farmacodermias graves (SSJ/NET Nikolsky+, suspender droga suspeita + suporte tipo queimado).';
   }
   if (t.includes('emerg') || t.includes('uti') || t.includes('intensiv')) {
-    return 'Você é um Médico Emergencista e Intensivista. Fundamente com as diretrizes da ABRAMURGEM, AMIB e Surviving Sepsis Campaign.';
+    return 'Você é um Emergencista/Intensivista (ABRAMURGEM / AMIB / Surviving Sepsis). Micro-diretrizes: sepse (lactato, 2 hemoculturas, ATB amplo espectro ≤1h, 30mL/kg cristalóide se hipoperfusão/hipotensão, noradrenalina 1ª escolha); PCR (RCP alta qualidade 100-120/min, choque imediato em FV/TVSP, adrenalina a cada 3-5min).';
   }
   if (t.includes('onco')) {
-    return 'Você é um Oncologista Clínico. Fundamente com as diretrizes da SBOC, ANCP e NCCN.';
+    return 'Você é um Oncologista Clínico (SBOC / NCCN). Micro-diretrizes: neutropenia febril (cefepime/piperacilina-tazobactam imediato ≤1h após culturas); síndrome de lise tumoral (hidratação vigorosa + alopurinol/rasburicase); compressão medular maligna (dexametasona imediata + RM coluna + RT/cirurgia).';
   }
 
-  return 'Você é um Preceptor Médico de elite especialista em provas de Residência Médica e Revalida no Brasil. Fundamente com a literatura médica de referência e diretrizes das sociedades oficiais de especialidade.';
+  return 'Você é um Preceptor Médico de elite (Residência Médica / Revalida Brasil). Micro-diretrizes: priorize os achados clínicos do enunciado para definir diagnóstico e conduta segundo diretrizes brasileiras vigentes (MS, SBC, SBP, FEBRASGO, CBC, ATLS) sem depender apenas de etiquetas genéricas.';
 }
 
 // Modelos prioritários em rotação gratuita com fallback automático
@@ -343,7 +343,7 @@ Fundamente com rigor acadêmico, concisão e exatidão clínica o gabarito ofici
 
 Dados da Questão:
 - Instituição/Banca: ${question.institution || question.banca || 'Oficial'} (${question.year || 2024})
-- Especialidade: ${question.especialidade || 'Clínica'} - ${question.tema || 'Geral'}
+- Referência de Catalogação (se genérica/imprecisa, priorize o conteúdo clínico do enunciado): ${question.especialidade || 'Clínica'} - ${question.tema || 'Geral'}
 
 Enunciado:
 ${statement}

@@ -242,6 +242,9 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
 
         <input
           ref={inputRef}
+          id="global-platform-search"
+          name="search"
+          aria-label="Buscar questões, temas ou bancas"
           type="text"
           value={query}
           onChange={(e) => {

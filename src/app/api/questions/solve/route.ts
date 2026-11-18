@@ -481,10 +481,19 @@ export async function POST(req: NextRequest) {
 
         const { data: existingRow } = await supabaseAdmin
           .from('user_answers')
-          .select('attempts, student_notes, error_reason, is_correct, status_retrial')
+          .select('attempts, is_correct, student_notes, error_reason, status_retrial')
           .eq('user_id', targetUserId)
           .eq('question_id', targetQuestionId)
           .maybeSingle();
+
+        const hadPriorError = Boolean(
+          existingRow &&
+            (existingRow.is_correct === false ||
+              (Array.isArray(existingRow.attempts) &&
+                existingRow.attempts.some(
+                  (att: { isCorrect?: boolean }) => att && att.isCorrect === false
+                )))
+        );
 
         if (existingRow && Array.isArray(existingRow.attempts) && existingRow.attempts.length > 0) {
           const combinedMap = new Map<string, { letter: string; isCorrect: boolean; timestamp: number }>();
@@ -515,8 +524,7 @@ export async function POST(req: NextRequest) {
             : (existingRow?.error_reason ?? null);
 
         const hadPreviousError =
-          Boolean(existingRow && existingRow.is_correct === false) ||
-          finalAttempts.slice(0, -1).some((att) => !att.isCorrect);
+          hadPriorError || finalAttempts.slice(0, -1).some((att) => !att.isCorrect);
 
         const finalStatusRetrial =
           typeof statusRetrial === 'string'
@@ -525,7 +533,7 @@ export async function POST(req: NextRequest) {
             ? 'pendente'
             : hadPreviousError
             ? 'recuperado'
-            : (existingRow?.status_retrial ?? null);
+            : null;
 
         await supabaseAdmin.from('user_answers').upsert(
           {

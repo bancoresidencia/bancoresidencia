@@ -7,7 +7,7 @@ import { AuthScreen } from '@/components/AuthScreen';
 import { PLANS, PlanId, PlanDefinition } from '@/config/plans';
 import { useAuth } from '@/context/AuthContext';
 import { useSubscription } from '@/context/SubscriptionContext';
-import { Loader2 } from 'lucide-react';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 
 interface LandingQueryEffectsProps {
   isAuthenticated: boolean;
@@ -154,16 +154,7 @@ export default function RootHomePage() {
   );
 
   if (!isLoading && isAuthenticated && user) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
-        <div className="flex flex-col items-center gap-3">
-          <Loader2 className="w-8 h-8 animate-spin text-zinc-500" />
-          <span className="text-xs font-bold text-zinc-500 dark:text-zinc-400">
-            Acessando seu painel no Hippocampus...
-          </span>
-        </div>
-      </div>
-    );
+    return <HippocampusLoading fullScreen message="Acessando painel..." />;
   }
 
   return (

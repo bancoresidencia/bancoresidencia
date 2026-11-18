@@ -121,48 +121,37 @@ export function calculateSimilarity(query: string, candidate: string): number {
 
 export interface TaxonomyMatchResult {
   matchedName: string;
-  type: 'especialidades' | 'temas' | 'focos' | 'subfocos';
+  type: 'especialidades' | 'temas' | 'focos' | 'subfocos' | 'subSubfocos';
   count: number;
   score: number;
 }
 
 /**
- * Mapeamento clínico de siglas, jargões e abreviações médicas comuns para a taxonomia padrão.
+ * Mapeamento clínico de siglas, jargões e abreviações médicas comuns para a taxonomia canônica v3.
  */
-const CLINICAL_ABBREVIATIONS: Record<string, { name: string; type: 'especialidades' | 'temas' | 'focos' | 'subfocos' }> = {
-  'sus': { name: 'Sistema Único de Saúde', type: 'temas' },
-  'dheg': { name: 'Doenças Hipertensivas na Gestação', type: 'temas' },
+const CLINICAL_ABBREVIATIONS: Record<string, { name: string; type: 'especialidades' | 'temas' | 'focos' | 'subfocos' | 'subSubfocos' }> = {
+  'sus': { name: 'Legislação e Gestão do SUS', type: 'temas' },
+  'dheg': { name: 'Pré-Eclâmpsia', type: 'focos' },
   'has': { name: 'Hipertensão Arterial Sistêmica', type: 'focos' },
-  'iam': { name: 'Síndrome Coronariana Aguda', type: 'focos' },
-  'sca': { name: 'Síndrome Coronariana Aguda', type: 'focos' },
-  'atls': { name: 'Trauma e Emergência', type: 'temas' },
-  'pals': { name: 'Urgências Pediátricas', type: 'temas' },
-  'acls': { name: 'Trauma e Emergência', type: 'temas' },
+  'iam': { name: 'Infarto com Supra de ST', type: 'focos' },
+  'sca': { name: 'Síndrome Coronariana sem Supra', type: 'focos' },
+  'atls': { name: 'Avaliação Inicial no Trauma', type: 'focos' },
+  'pals': { name: 'Suporte de Vida e PCR Pediátrica', type: 'focos' },
+  'acls': { name: 'Suporte Básico e Avançado de Vida', type: 'focos' },
   'dpp': { name: 'Descolamento Prematuro de Placenta', type: 'focos' },
-  'itu': { name: 'Infecção do Trato Urinário', type: 'focos' },
+  'itu': { name: 'Infecção Urinária no Adulto', type: 'focos' },
   'dpoc': { name: 'Doença Pulmonar Obstrutiva Crônica', type: 'focos' },
-  'ave': { name: 'Acidente Vascular Encefálico', type: 'focos' },
-  'avc': { name: 'Acidente Vascular Cerebral', type: 'focos' },
-  'pcr': { name: 'Parada Cardiorrespiratória', type: 'focos' },
-  'tce': { name: 'Traumatismo Cranioencefálico', type: 'focos' },
-  'cad': { name: 'Cetoacidose Diabética', type: 'focos' },
-  'dm': { name: 'Diabetes Mellitus', type: 'focos' },
-  'dm1': { name: 'Diabetes Mellitus', type: 'focos' },
-  'dm2': { name: 'Diabetes Mellitus', type: 'focos' },
-  'hiv': { name: 'HIV e AIDS', type: 'temas' },
-  'aids': { name: 'HIV e AIDS', type: 'temas' },
-  'ist': { name: 'Infecções Ginecológicas', type: 'temas' },
-  'dst': { name: 'Infecções Ginecológicas', type: 'temas' },
-  'puericultura': { name: 'Puericultura e Crescimento', type: 'temas' },
-  'parto': { name: 'Trabalho de Parto e Parto', type: 'temas' },
-  'aborto': { name: 'Abortamento', type: 'temas' },
-  'pre eclampsia': { name: 'Pré-eclâmpsia e Eclâmpsia', type: 'focos' },
-  'preeclampsia': { name: 'Pré-eclâmpsia e Eclâmpsia', type: 'focos' },
-  'eclampsia': { name: 'Pré-eclâmpsia e Eclâmpsia', type: 'focos' },
-  'choque hipovolemico': { name: 'Choque no Trauma', type: 'focos' },
-  'choque septico': { name: 'Sepse e Choque Séptico: Bundles de 1 e 3 Horas, Fonte e Metas', type: 'focos' },
-  'sepse': { name: 'Sepse e Choque Séptico: Bundles de 1 e 3 Horas, Fonte e Metas', type: 'focos' },
-  'trauma': { name: 'Trauma e Emergência', type: 'temas' }
+  'ave': { name: 'Acidente Vascular Cerebral Isquêmico', type: 'focos' },
+  'avc': { name: 'Acidente Vascular Cerebral Isquêmico', type: 'focos' },
+  'tce': { name: 'Trauma Cranioencefálico', type: 'focos' },
+  'cad': { name: 'Emergências Hiperglicêmicas e Hipoglicemia', type: 'focos' },
+  'pre eclampsia': { name: 'Pré-Eclâmpsia', type: 'focos' },
+  'preeclampsia': { name: 'Pré-Eclâmpsia', type: 'focos' },
+  'eclampsia': { name: 'Eclâmpsia', type: 'focos' },
+  'hellp': { name: 'Síndrome HELLP', type: 'focos' },
+  'endometriose': { name: 'Endometriose', type: 'focos' },
+  'adenomiose': { name: 'Adenomiose', type: 'focos' },
+  'sepse': { name: 'Sepse e Choque Séptico', type: 'focos' }
 };
 
 /**
@@ -171,30 +160,32 @@ const CLINICAL_ABBREVIATIONS: Record<string, { name: string; type: 'especialidad
  */
 export function findBestTaxonomyMatch(
   queryTerm: string,
-  preferredType?: 'especialidades' | 'temas' | 'focos' | 'subfocos',
+  preferredType?: 'especialidades' | 'temas' | 'focos' | 'subfocos' | 'subSubfocos',
   minThreshold = 0.50
 ): TaxonomyMatchResult | null {
   const normQuery = normalizeText(queryTerm);
   if (!normQuery || normQuery.length < 2) return null;
 
+  const countsRoot = hierarchyQuestionCounts as Record<string, Record<string, number>>;
+
   // 0. Siglas e abreviações clínicas mapeadas
   if (CLINICAL_ABBREVIATIONS[normQuery]) {
     const abbrev = CLINICAL_ABBREVIATIONS[normQuery];
-    const count = (hierarchyQuestionCounts[abbrev.type] as Record<string, number>)?.[abbrev.name] || 0;
+    const count = countsRoot[abbrev.type]?.[abbrev.name] || 0;
     if (count > 0 && (!preferredType || preferredType === abbrev.type)) {
       return { matchedName: abbrev.name, type: abbrev.type, count, score: 1.0 };
     }
   }
 
-  const typesToSearch: ('especialidades' | 'temas' | 'focos' | 'subfocos')[] = preferredType
+  const typesToSearch: ('especialidades' | 'temas' | 'focos' | 'subfocos' | 'subSubfocos')[] = preferredType
     ? [preferredType]
-    : ['focos', 'temas', 'subfocos', 'especialidades'];
+    : ['focos', 'subfocos', 'subSubfocos', 'temas', 'especialidades'];
 
   let bestResult: TaxonomyMatchResult | null = null;
 
   for (const type of typesToSearch) {
-    const map = (hierarchyQuestionCounts[type] || {}) as Record<string, number>;
-    
+    const map = countsRoot[type] || {};
+
     // 1. Verificação direta exata ou normalizada
     for (const [name, count] of Object.entries(map)) {
       if (count <= 0) continue;
@@ -377,11 +368,21 @@ export function reconcileAIFilters(
     }
   }
 
-  // 3. Reconciliação Taxonômica (Subfoco -> Foco -> Tema -> Especialidade)
+  // 3. Reconciliação Taxonômica de 5 níveis (Subsubfoco -> Subfoco -> Foco -> Tema -> Especialidade)
+  const reconciledSubSubfocos: string[] = [];
   const reconciledSubfocos: string[] = [];
   const reconciledFocos: string[] = [];
   const reconciledTemas: string[] = [];
   const reconciledEspecialidades: string[] = [];
+
+  if (rawFilters.subSubfocos && Array.isArray(rawFilters.subSubfocos)) {
+    for (const ss of rawFilters.subSubfocos) {
+      const match = findBestTaxonomyMatch(ss, 'subSubfocos', 0.58);
+      if (match && !reconciledSubSubfocos.includes(match.matchedName)) {
+        reconciledSubSubfocos.push(match.matchedName);
+      }
+    }
+  }
 
   // Subfocos
   if (rawFilters.subfocos && Array.isArray(rawFilters.subfocos)) {
@@ -448,21 +449,19 @@ export function reconcileAIFilters(
     }
   }
 
-  // REGRA DE NÃO-DILUIÇÃO HIERÁRQUICA:
-  // Se focos ou subfocos foram especificados, NÃO enviamos especialidades ou temas genéricos,
-  // pois a consulta ao PostgreSQL combina os ramos com OR (especialidade OR foco),
-  // o que faria retornar quaisquer questões da especialidade em vez das solicitadas!
+  // REGRA DE NÃO-DILUIÇÃO HIERÁRQUICA (5 NÍVEIS):
+  const finalSubSubfocos = [...reconciledSubSubfocos];
   const finalSubfocos = [...reconciledSubfocos];
   const finalFocos = [...reconciledFocos];
-  const finalTemas = finalFocos.length > 0 || finalSubfocos.length > 0 ? [] : [...reconciledTemas];
-  const finalEspecialidades = (finalFocos.length > 0 || finalSubfocos.length > 0 || finalTemas.length > 0)
+  const hasSpecificLeaf = finalFocos.length > 0 || finalSubfocos.length > 0 || finalSubSubfocos.length > 0;
+  const finalTemas = hasSpecificLeaf ? [] : [...reconciledTemas];
+  const finalEspecialidades = (hasSpecificLeaf || finalTemas.length > 0)
     ? []
     : [...reconciledEspecialidades];
 
   // 4. Termo de Busca Textual (search)
   let finalSearch = (rawFilters.search || '').trim();
-  // Se o usuário digitou algum detalhe clínico que não casou em foco/tema/subfoco, garante busca textual
-  if (!finalSearch && finalFocos.length === 0 && finalSubfocos.length === 0 && finalTemas.length === 0) {
+  if (!finalSearch && !hasSpecificLeaf && finalTemas.length === 0) {
     const rawTokens = getTokens(promptText).filter(
       (t) => !['questoes', 'questao', 'simulado', 'quero', 'fazer', 'anos', 'ultimos', 'dificeis', 'faceis'].includes(t)
     );
@@ -478,11 +477,13 @@ export function reconcileAIFilters(
       temas: finalTemas,
       focos: finalFocos,
       subfocos: finalSubfocos,
+      subSubfocos: finalSubSubfocos,
       instituicoes: reconciledInstituicoes,
       modalidades: rawFilters.modalidades && rawFilters.modalidades.length > 0 ? rawFilters.modalidades : ['Residência Médica'],
       anos: rawFilters.anos || [],
       dificuldade: rawFilters.dificuldade || 'Todas',
       tipoQuestao: rawFilters.tipoQuestao || 'Todas',
+      apenasComImagem: Boolean(rawFilters.apenasComImagem),
       search: finalSearch
     }
   };

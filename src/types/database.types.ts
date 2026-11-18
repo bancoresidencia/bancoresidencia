@@ -208,6 +208,7 @@ export interface Database {
           last_studied_at: string | null;
           in_progress: boolean;
           progress_percentage: number;
+          filters: Json | null;
           created_at: string;
           updated_at: string;
         };
@@ -222,6 +223,7 @@ export interface Database {
           last_studied_at?: string | null;
           in_progress?: boolean;
           progress_percentage?: number;
+          filters?: Json | null;
           created_at?: string;
           updated_at?: string;
         };
@@ -236,6 +238,7 @@ export interface Database {
           last_studied_at?: string | null;
           in_progress?: boolean;
           progress_percentage?: number;
+          filters?: Json | null;
           created_at?: string;
           updated_at?: string;
         };
@@ -370,6 +373,8 @@ export interface Database {
           title: string;
           description: string | null;
           card_ids: string[];
+          deck_type: string;
+          config: Json;
           created_at: string;
           updated_at: string;
         };
@@ -379,6 +384,8 @@ export interface Database {
           title: string;
           description?: string | null;
           card_ids?: string[];
+          deck_type?: string;
+          config?: Json;
           created_at?: string;
           updated_at?: string;
         };
@@ -388,6 +395,8 @@ export interface Database {
           title?: string;
           description?: string | null;
           card_ids?: string[];
+          deck_type?: string;
+          config?: Json;
           created_at?: string;
           updated_at?: string;
         };
@@ -401,6 +410,10 @@ export interface Database {
           specialty: string | null;
           theme: string | null;
           focus: string | null;
+          subfocus: string | null;
+          sub_subfocus: string | null;
+          deck_id: string | null;
+          source_question_id: string | null;
           comment: string | null;
           priority: string;
           created_at: string;
@@ -414,6 +427,10 @@ export interface Database {
           specialty?: string | null;
           theme?: string | null;
           focus?: string | null;
+          subfocus?: string | null;
+          sub_subfocus?: string | null;
+          deck_id?: string | null;
+          source_question_id?: string | null;
           comment?: string | null;
           priority?: string;
           created_at?: string;
@@ -427,6 +444,10 @@ export interface Database {
           specialty?: string | null;
           theme?: string | null;
           focus?: string | null;
+          subfocus?: string | null;
+          sub_subfocus?: string | null;
+          deck_id?: string | null;
+          source_question_id?: string | null;
           comment?: string | null;
           priority?: string;
           created_at?: string;
@@ -718,6 +739,111 @@ export interface Database {
           description?: string | null;
           is_calendar_task?: boolean;
           is_completed?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+      };
+      user_flashcard_daily_logs: {
+        Row: {
+          user_id: string;
+          date: string;
+          total: number;
+          feitos: number;
+          revisao: number;
+          duration_seconds: number;
+          updated_at: string;
+        };
+        Insert: {
+          user_id: string;
+          date: string;
+          total?: number;
+          feitos?: number;
+          revisao?: number;
+          duration_seconds?: number;
+          updated_at?: string;
+        };
+        Update: {
+          user_id?: string;
+          date?: string;
+          total?: number;
+          feitos?: number;
+          revisao?: number;
+          duration_seconds?: number;
+          updated_at?: string;
+        };
+      };
+      user_flashcard_reviews: {
+        Row: {
+          id: string;
+          user_id: string;
+          card_id: string;
+          rating: 'again' | 'hard' | 'good' | 'easy';
+          state_before: string | null;
+          state_after: string | null;
+          interval_days: number;
+          duration_seconds: number;
+          reviewed_at: string;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          card_id: string;
+          rating: 'again' | 'hard' | 'good' | 'easy';
+          state_before?: string | null;
+          state_after?: string | null;
+          interval_days?: number;
+          duration_seconds?: number;
+          reviewed_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          card_id?: string;
+          rating?: 'again' | 'hard' | 'good' | 'easy';
+          state_before?: string | null;
+          state_after?: string | null;
+          interval_days?: number;
+          duration_seconds?: number;
+          reviewed_at?: string;
+        };
+      };
+      user_study_highlights: {
+        Row: {
+          id: string;
+          user_id: string;
+          material_id: string;
+          text_quote: string;
+          prefix: string | null;
+          suffix: string | null;
+          color: string;
+          style: string;
+          note: string | null;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id: string;
+          user_id: string;
+          material_id: string;
+          text_quote: string;
+          prefix?: string | null;
+          suffix?: string | null;
+          color?: string;
+          style?: string;
+          note?: string | null;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          material_id?: string;
+          text_quote?: string;
+          prefix?: string | null;
+          suffix?: string | null;
+          color?: string;
+          style?: string;
+          note?: string | null;
           created_at?: string;
           updated_at?: string;
         };

@@ -17,6 +17,7 @@ const facetedCountsCache = new Map<string, {
     temas: Record<string, number>;
     focos: Record<string, number>;
     subfocos: Record<string, number>;
+    subSubfocos?: Record<string, number>;
   };
 }>();
 
@@ -26,6 +27,7 @@ export interface FacetedHierarchyCountsResult {
   temas: Record<string, number>;
   focos: Record<string, number>;
   subfocos: Record<string, number>;
+  subSubfocos?: Record<string, number>;
 }
 
 /**
@@ -69,8 +71,12 @@ export function hasRightCardActiveFilters(filters: ExtendedFilterState): boolean
   const hasSearch = Boolean(filters.search && filters.search.trim());
   const hasAnuladas = Boolean(filters.ocultarAnuladasErro);
   const has5Anos = Boolean(filters.ultimos5Anos);
+  const hasImg = Boolean(filters.apenasComImagem);
+  const hasOrg = Boolean(filters.bancaOrganizadora && filters.bancaOrganizadora.length > 0);
+  const hasReg = Boolean(filters.macrorregioes && filters.macrorregioes.length > 0);
+  const hasProg = Boolean(filters.programaRplus && filters.programaRplus.length > 0);
 
-  return hasBancas || hasAnos || hasDiff || hasType || hasStatus || hasSearch || hasAnuladas || has5Anos;
+  return hasBancas || hasAnos || hasDiff || hasType || hasStatus || hasSearch || hasAnuladas || has5Anos || hasImg || hasOrg || hasReg || hasProg;
 }
 
 /**
@@ -90,7 +96,8 @@ export async function fetchFacetedHierarchyCounts(
       especialidades: baseline.especialidades,
       temas: baseline.temas,
       focos: (baseline.focos as Record<string, number>) || {},
-      subfocos: (baseline.subfocos as Record<string, number>) || {}
+      subfocos: (baseline.subfocos as Record<string, number>) || {},
+      subSubfocos: (baseline.subSubfocos as Record<string, number>) || {}
     };
   }
 

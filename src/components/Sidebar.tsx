@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
@@ -56,6 +56,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const { isAdmin } = useAuth();
   const { isTabActive } = useTabAvailability();
 
+  const [hoveredHref, setHoveredHref] = useState<string | null>(null);
+
   const menuItems = [
     { id: 'home', label: 'Início', icon: LayoutDashboard, href: '/dashboard' },
     { id: 'agenda', label: 'Agenda', icon: CalendarDays, href: '/agenda' },
@@ -85,23 +87,40 @@ export const Sidebar: React.FC<SidebarProps> = ({
   ];
 
   return (
-    <aside
-      className={
-        isMobileDrawer
-          ? 'w-full flex flex-col select-none'
-          : `${isCollapsed ? 'w-16' : 'w-60'
-          } bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#09090b)] border-r border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] flex flex-col shrink-0 h-screen max-h-screen sticky top-0 self-start z-40 hidden md:flex transition-all duration-200 ease-in-out select-none overflow-hidden`
-      }
-      aria-label="Navegação Principal"
-    >
-      {/* 1. Topo: Logo Flat + Botão de Toggle */}
+    <>
+      {!isMobileDrawer && (
+        <>
+          {/* Trilho fixo de 64px no fluxo para impedir reflow global de layout/Recharts ao expandir */}
+          <div className="hidden md:block w-16 shrink-0" aria-hidden="true" />
+          {!isCollapsed && onToggleCollapse && (
+            <div
+              aria-hidden="true"
+              onClick={onToggleCollapse}
+              className="fixed inset-0 z-35 bg-black/15 dark:bg-black/35 backdrop-blur-[1px] hidden md:block animate-in fade-in duration-150 cursor-pointer"
+            />
+          )}
+        </>
+      )}
+      <aside
+        className={
+          isMobileDrawer
+            ? 'w-full flex flex-col select-none'
+            : `${
+                isCollapsed ? 'w-16' : 'w-60 shadow-2xl'
+              } bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#09090b)] border-r border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] flex flex-col shrink-0 h-screen max-h-screen fixed inset-y-0 left-0 z-40 hidden md:flex transition-[width,box-shadow] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] select-none overflow-hidden`
+        }
+        aria-label="Navegação Principal"
+      >
+      {/* 1. Topo: Logo Flat */}
       {!isMobileDrawer && (
         <div
-          className={`h-16 w-full border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 flex items-center ${isCollapsed ? 'justify-center' : 'justify-between px-3.5'
-            }`}
+          className={`h-16 w-full border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 flex items-center ${
+            isCollapsed ? 'justify-center' : 'justify-start px-3.5'
+          }`}
         >
           <Link
             href="/dashboard"
+            prefetch={false}
             onClick={() => onNavigate?.('home')}
             className="flex items-center gap-2.5 p-1 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer group min-w-0"
             title={`Hippocampus • ${modalidade}`}
@@ -110,21 +129,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
             {isCollapsed ? (
               <Logo className="w-8 h-8 shrink-0 transition-transform duration-200 group-hover:scale-105" variant="symbol" />
             ) : (
-              <Logo className="h-8.5 w-auto max-w-[170px] shrink-0 transition-transform duration-200 group-hover:scale-102" variant="full" />
+              <Logo className="h-8.5 w-auto max-w-[175px] shrink-0 transition-transform duration-200 group-hover:scale-102" variant="full" />
             )}
           </Link>
-
-          {!isCollapsed && onToggleCollapse && (
-            <button
-              type="button"
-              onClick={onToggleCollapse}
-              className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-              title="Recolher barra lateral"
-              aria-label="Recolher barra lateral"
-            >
-              <PanelLeftClose className="w-4 h-4 stroke-[1.8]" />
-            </button>
-          )}
         </div>
       )}
 
@@ -143,10 +150,16 @@ export const Sidebar: React.FC<SidebarProps> = ({
             ? pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href))
             : activeTab === item.id;
 
+          const isEagerRoute = item.href === '/dashboard' || item.href === '/questoes';
+          const shouldPrefetch = isEagerRoute || hoveredHref === item.href;
+
           const linkContent = (
             <Link
               key={item.id}
               href={item.href}
+              prefetch={shouldPrefetch ? null : false}
+              onMouseEnter={() => setHoveredHref(item.href)}
+              onFocus={() => setHoveredHref(item.href)}
               onClick={() => onNavigate?.(item.id as ActiveTab)}
               aria-current={isActive ? 'page' : undefined}
               title={isCollapsed ? undefined : item.label}
@@ -230,7 +243,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <button
             type="button"
             onClick={onToggleCollapse}
-            className={`flex items-center gap-2 rounded-xl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer ${isCollapsed ? 'p-2' : 'px-2.5 py-1.5 w-full text-xs font-semibold'
+            className={`flex items-center gap-2 rounded-xl text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer active:scale-95 ${isCollapsed ? 'p-2' : 'px-2.5 py-1.5 w-full text-xs font-semibold'
               }`}
             title={isCollapsed ? 'Expandir barra lateral' : 'Recolher barra lateral'}
             aria-label={isCollapsed ? 'Expandir barra lateral' : 'Recolher barra lateral'}
@@ -246,6 +259,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </button>
         </div>
       )}
-    </aside>
+      </aside>
+    </>
   );
 };

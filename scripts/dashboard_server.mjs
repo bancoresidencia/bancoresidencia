@@ -21,7 +21,7 @@ try {
 }
 
 const SPECIALTY_MAP = {
-  preventiva: { file: 'data/medicina_preventiva_final_questions.json', name: 'Medicina Preventiva', next: 'none' },
+  preventiva: { file: 'data/medicina_preventiva_all_pending.json', name: 'Medicina Preventiva', next: 'none' },
   cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia', next: 'clinica' },
   clinica: { file: 'data/clinica_medica_final_questions.json', name: 'Clínica Médica', next: 'cirurgia' },
   pediatria: { file: 'data/pediatria_direto_questions.json', name: 'Pediatria', next: 'clinica' },
@@ -65,7 +65,7 @@ function getStatus() {
       priorUSD = ledger.priorSessionsCostUSD || 0;
       priorBRL = ledger.priorSessionsCostBRL || 0;
       priorTokens = ledger.priorSessionsTokens || 0;
-    } catch {}
+    } catch { }
   }
 
   const sessUSD = (state.tokens && state.tokens.pricing && state.tokens.pricing.totalCostUSD) ? state.tokens.pricing.totalCostUSD : 0;
@@ -84,80 +84,132 @@ function getStatus() {
   return state;
 }
 
-function getMacroStats() {
-  const state = getStatus();
-  const sessionProcessed = (state.status === 'RUNNING' || state.status === 'PAUSED' || state.status === 'COMPLETED' || state.status === 'STOPPED') ? (state.processedCount || 0) : 0;
+let macroCache = null;
+let macroCacheTs = 0;
 
-  // Base Padrão-Ouro antes da sessão atual
-  const baseGold = 112277;
-  const liveTotalGold = baseGold + sessionProcessed;
-  const basePreventivaGold = 612;
-  const livePreventivaGold = basePreventivaGold + sessionProcessed;
-  const totalPreventiva = 27383;
-  const preventivaPct = ((livePreventivaGold / totalPreventiva) * 100).toFixed(1);
-  const globalPct = ((liveTotalGold / 254167) * 100).toFixed(1);
+function getMacroStats() {
+  const now = Date.now();
+  if (macroCache && (now - macroCacheTs < 10000)) {
+    return macroCache;
+  }
+
+  let specsMap = {
+    'Ginecologia': { done: 15824, total: 16278 },
+    'Obstetrícia': { done: 16795, total: 17901 },
+    'Pediatria': { done: 28435, total: 30211 },
+    'Medicina Preventiva e Social': { done: 25716, total: 27383 },
+    'Cirurgia': { done: 17505, total: 29324 },
+    'Clínica Médica': { done: 33106, total: 98690 }
+  };
+  let totalPlatform = 254167;
+  let totalGold = 137381;
+
+  if (sqliteDb) {
+    try {
+      const rows = sqliteDb.prepare(`
+        SELECT 
+          COALESCE(NULLIF(trim(especialidade), ''), 'Sem Especialidade') as esp,
+          count(1) as total,
+          count(case when commentary like '%Take-Home%' or commentary like '%Principal Motivo de Erro%' then 1 end) as padrao_ouro
+        FROM questions_curated_staging
+        GROUP BY esp
+      `).all();
+
+      let sumTotal = 0;
+      let sumGold = 0;
+      const freshMap = {};
+      rows.forEach(r => {
+        sumTotal += r.total;
+        sumGold += r.padrao_ouro;
+        freshMap[r.esp] = { done: r.padrao_ouro, total: r.total };
+      });
+      if (sumTotal > 0) {
+        totalPlatform = sumTotal;
+        totalGold = sumGold;
+        specsMap = freshMap;
+      }
+    } catch (e) {
+      console.warn('Erro ao consultar macro-stats no SQLite:', e.message);
+    }
+  }
+
+  const getSpec = (name) => specsMap[name] || { done: 0, total: 1 };
+  const gin = getSpec('Ginecologia');
+  const obs = getSpec('Obstetrícia');
+  const ped = getSpec('Pediatria');
+  const prev = getSpec('Medicina Preventiva e Social');
+  const cir = getSpec('Cirurgia');
+  const clm = getSpec('Clínica Médica');
+
+  const pct = (d, t) => t > 0 ? parseFloat(((d / t) * 100).toFixed(1)) : 0;
+  const liveTotalGold = totalGold;
+  const livePreventivaGold = prev.done;
+  const totalPreventiva = prev.total;
+  const preventivaPct = pct(prev.done, prev.total).toFixed(1);
+  const globalPct = pct(totalGold, totalPlatform).toFixed(1);
 
   const specialties = [
     {
       name: 'Ginecologia',
       key: 'ginecologia',
-      status: '98,8% CONCLUÍDA',
-      doneCount: 15857,
-      totalCount: 16052,
-      coveragePct: 98.8,
-    },
-    {
-      name: 'Obstetrícia',
-      key: 'obstetricia',
-      status: '93,8% CONCLUÍDA',
-      doneCount: 16762,
-      totalCount: 17863,
-      coveragePct: 93.8,
+      status: `${pct(gin.done, gin.total).toFixed(1).replace('.', ',')}% OURO`,
+      doneCount: gin.done,
+      totalCount: gin.total,
+      coveragePct: pct(gin.done, gin.total),
     },
     {
       name: 'Pediatria',
       key: 'pediatria',
-      status: '95,0% CONCLUÍDA',
-      doneCount: 28435,
-      totalCount: 29918,
-      coveragePct: 95.0,
-    },
-    {
-      name: 'Cirurgia Geral / Espec.',
-      key: 'cirurgia',
-      status: '60,4% CONCLUÍDA',
-      doneCount: 17505,
-      totalCount: 28987,
-      coveragePct: 60.4,
-    },
-    {
-      name: 'Clínica Médica',
-      key: 'clinica',
-      status: '57,3% DO DIRETO',
-      doneCount: 33106,
-      totalCount: 57764,
-      coveragePct: 57.3,
+      status: `${pct(ped.done, ped.total).toFixed(1).replace('.', ',')}% OURO`,
+      doneCount: ped.done,
+      totalCount: ped.total,
+      coveragePct: pct(ped.done, ped.total),
     },
     {
       name: 'Medicina Preventiva',
       key: 'preventiva',
-      status: 'EM PRODUÇÃO ATIVA',
-      doneCount: livePreventivaGold,
-      totalCount: totalPreventiva,
-      coveragePct: parseFloat(preventivaPct),
+      status: `${pct(prev.done, prev.total).toFixed(1).replace('.', ',')}% CONCLUÍDA`,
+      doneCount: prev.done,
+      totalCount: prev.total,
+      coveragePct: pct(prev.done, prev.total),
+    },
+    {
+      name: 'Obstetrícia',
+      key: 'obstetricia',
+      status: `${pct(obs.done, obs.total).toFixed(1).replace('.', ',')}% OURO`,
+      doneCount: obs.done,
+      totalCount: obs.total,
+      coveragePct: pct(obs.done, obs.total),
+    },
+    {
+      name: 'Cirurgia',
+      key: 'cirurgia',
+      status: `${pct(cir.done, cir.total).toFixed(1).replace('.', ',')}% OURO`,
+      doneCount: cir.done,
+      totalCount: cir.total,
+      coveragePct: pct(cir.done, cir.total),
+    },
+    {
+      name: 'Clínica Médica',
+      key: 'clinica',
+      status: `${pct(clm.done, clm.total).toFixed(1).replace('.', ',')}% GLOBAL`,
+      doneCount: clm.done,
+      totalCount: clm.total,
+      coveragePct: pct(clm.done, clm.total),
     }
   ];
 
-  return {
-    totalPlatformQuestions: 254167,
+  macroCache = {
+    totalPlatformQuestions: totalPlatform,
     totalGoldCommentaries: liveTotalGold,
     livePreventivaGold,
     totalPreventiva,
     preventivaPct,
     globalCoveragePct: globalPct,
-    sessionProcessed,
     specialties
   };
+  macroCacheTs = now;
+  return macroCache;
 }
 
 function parseExplanationsFromCommentary(commentary) {
@@ -982,15 +1034,7 @@ function renderDashboardHtml() {
         document.getElementById('barProgress').style.width = pct + '%';
         document.getElementById('cardRemaining').textContent = (total - processed > 0 ? (total - processed).toLocaleString('pt-BR') : '0');
 
-        // Cumulativo total da Preventiva
-        const cumPrev = 612 + processed;
-        const cumPct = ((cumPrev / 27383) * 100).toFixed(1);
-        document.getElementById('cardCumulativeCount').textContent = cumPrev.toLocaleString('pt-BR') + ' / 27.383 (' + cumPct + '%)';
-
-        // Cumulativo global no badge
-        const cumGlob = 112277 + processed;
-        const cumGlobPct = ((cumGlob / 254167) * 100).toFixed(1);
-        document.getElementById('macroGlobalBadge').textContent = cumGlob.toLocaleString('pt-BR') + ' / 254.167 (' + cumGlobPct + '%)';
+        // Cumulativo total é atualizado diretamente por loadMacroStats() via SQLite real-time
 
         // Ritmo & Estimativa
         if (d.velocity) {

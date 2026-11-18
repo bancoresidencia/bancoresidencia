@@ -54,27 +54,181 @@ const USER_STUDY_MATERIALS_KEY = 'bancoresidencia_user_created_study_materials';
 const DAILY_LOGS_KEY = 'bancoresidencia_daily_review_logs';
 
 function getProgressStorageKey(userId?: string | null): string {
-  return userId ? `bancoresidencia_flashcards_progress_${userId}` : STORAGE_KEY;
+  return userId ? `bancoresidencia_flashcards_progress_${userId}` : `${STORAGE_KEY}_guest`;
 }
 
 function getDecksStorageKey(userId?: string | null): string {
-  return userId ? `bancoresidencia_custom_decks_${userId}` : CUSTOM_DECKS_KEY;
+  return userId ? `bancoresidencia_custom_decks_${userId}` : `${CUSTOM_DECKS_KEY}_guest`;
 }
 
 function getPersonalizedDecksStorageKey(userId?: string | null): string {
-  return userId ? `bancoresidencia_personalized_decks_${userId}` : PERSONALIZED_DECKS_KEY;
+  return userId ? `bancoresidencia_personalized_decks_${userId}` : `${PERSONALIZED_DECKS_KEY}_guest`;
 }
 
 function getUserCardsStorageKey(userId?: string | null): string {
-  return userId ? `bancoresidencia_user_cards_${userId}` : USER_FLASHCARDS_KEY;
+  return userId ? `bancoresidencia_user_cards_${userId}` : `${USER_FLASHCARDS_KEY}_guest`;
 }
 
 function getDailyLogsStorageKey(userId?: string | null): string {
-  return userId ? `bancoresidencia_daily_review_logs_${userId}` : DAILY_LOGS_KEY;
+  return userId ? `bancoresidencia_daily_review_logs_${userId}` : `${DAILY_LOGS_KEY}_guest`;
+}
+
+function getLastSessionStorageKey(userId?: string | null): string {
+  return userId ? `${LAST_SESSION_KEY}_${userId}` : `${LAST_SESSION_KEY}_guest`;
+}
+
+function getLastSummaryStorageKey(userId?: string | null): string {
+  return userId ? `${LAST_SUMMARY_KEY}_${userId}` : `${LAST_SUMMARY_KEY}_guest`;
 }
 
 function getCardEditsStorageKey(userId?: string | null): string {
-  return userId ? `${USER_CARD_EDITS_KEY}_${userId}` : USER_CARD_EDITS_KEY;
+  return userId ? `${USER_CARD_EDITS_KEY}_${userId}` : `${USER_CARD_EDITS_KEY}_guest`;
+}
+
+function isPersonalizedDeckRow(row: Record<string, unknown>): boolean {
+  if (row.deck_type === 'personalized') return true;
+  if (row.deck_type === 'custom') return false;
+  const id = String(row.id || '');
+  return id.startsWith('custom-deck-') || id.startsWith('deck-pers-');
+}
+
+function mapDeckRowToModel(row: Record<string, unknown>): CustomFlashcardDeck {
+  const cfg =
+    row.config && typeof row.config === 'object' && !Array.isArray(row.config)
+      ? (row.config as Record<string, unknown>)
+      : {};
+  const specialties = Array.isArray(cfg.specialties)
+    ? cfg.specialties.map((s) => String(s))
+    : [];
+  const themes = Array.isArray(cfg.themes) ? cfg.themes.map((t) => String(t)) : undefined;
+  const selectedNodeKeys = Array.isArray(cfg.selectedNodeKeys)
+    ? cfg.selectedNodeKeys.map((k) => String(k))
+    : undefined;
+  const includeUserDeckIds = Array.isArray(cfg.includeUserDeckIds)
+    ? cfg.includeUserDeckIds.map((d) => String(d))
+    : undefined;
+  const cardIds = Array.isArray(row.card_ids) ? row.card_ids.map((c) => String(c)) : [];
+  const rawDeckType = cfg.deckType;
+  const deckType: CustomFlashcardDeck['deckType'] =
+    rawDeckType === 'original' || rawDeckType === 'mixed' || rawDeckType === 'smart'
+      ? rawDeckType
+      : undefined;
+
+  return {
+    id: String(row.id),
+    name: typeof row.title === 'string' && row.title.trim() ? row.title : 'Baralho',
+    description: typeof row.description === 'string' ? row.description : '',
+    specialties,
+    themes,
+    selectedNodeKeys,
+    priorityOnly: Boolean(cfg.priorityOnly),
+    limitCards: typeof cfg.limitCards === 'number' ? cfg.limitCards : undefined,
+    cardIds,
+    includeUserDeckIds,
+    includeAllUserCards: Boolean(cfg.includeAllUserCards),
+    deckType,
+    createdAt: typeof row.created_at === 'string' ? row.created_at : new Date().toISOString(),
+    lastStudiedAt: typeof cfg.lastStudiedAt === 'string' ? cfg.lastStudiedAt : undefined
+  };
+}
+
+async function upsertDecksResilient(
+  decks: CustomFlashcardDeck[],
+  userId: string,
+  kind: 'custom' | 'personalized'
+): Promise<void> {
+  if (!decks.length || !userId || userId === 'demo-student') return;
+  try {
+    const client = createClient();
+    const { data: sessionData } = await client.auth.getSession();
+    if (!sessionData?.session) return;
+
+    const extendedPayload = decks.map((deck) => ({
+      id: deck.id,
+      user_id: userId,
+      title: deck.name,
+      description: deck.description || null,
+      card_ids: deck.cardIds || [],
+      deck_type: kind,
+      config: {
+        specialties: deck.specialties || [],
+        themes: deck.themes || [],
+        selectedNodeKeys: deck.selectedNodeKeys || [],
+        priorityOnly: Boolean(deck.priorityOnly),
+        limitCards: deck.limitCards ?? null,
+        includeUserDeckIds: deck.includeUserDeckIds || [],
+        includeAllUserCards: Boolean(deck.includeAllUserCards),
+        deckType: deck.deckType || (kind === 'personalized' ? 'mixed' : 'original'),
+        lastStudiedAt: deck.lastStudiedAt || null
+      }
+    }));
+
+    const { error } = await client
+      .from('user_flashcard_decks')
+      .upsert(extendedPayload, { onConflict: 'id' });
+
+    if (error) {
+      const basePayload = decks.map((deck) => ({
+        id: deck.id,
+        user_id: userId,
+        title: deck.name,
+        description: deck.description || null,
+        card_ids: deck.cardIds || []
+      }));
+      await client.from('user_flashcard_decks').upsert(basePayload, { onConflict: 'id' });
+    }
+  } catch (err) {
+    console.warn('[flashcardsService] Erro ao persistir baralhos no Supabase:', err);
+  }
+}
+
+async function upsertUserCardsResilient(cards: FlashcardItem[], userId: string): Promise<void> {
+  if (!cards.length || !userId || userId === 'demo-student') return;
+  try {
+    const client = createClient();
+    const { data: sessionData } = await client.auth.getSession();
+    if (!sessionData?.session) return;
+
+    for (let i = 0; i < cards.length; i += 50) {
+      const slice = cards.slice(i, i + 50);
+      const extendedChunk = slice.map((card) => ({
+        id: card.id,
+        user_id: userId,
+        front: card.front,
+        back: card.back,
+        specialty: card.specialty,
+        theme: card.theme,
+        focus: card.focus,
+        comment: card.comment || null,
+        priority: card.priority || 'standard',
+        deck_id: card.deckId || 'deck-padrao',
+        subfocus: card.subfocus || null,
+        sub_subfocus: card.subSubfocus || card.sub_subfocus || null,
+        source_question_id: card.sourceQuestionId || null
+      }));
+
+      const { error } = await client
+        .from('user_created_flashcards')
+        .upsert(extendedChunk, { onConflict: 'id' });
+
+      if (error) {
+        const baseChunk = slice.map((card) => ({
+          id: card.id,
+          user_id: userId,
+          front: card.front,
+          back: card.back,
+          specialty: card.specialty,
+          theme: card.theme,
+          focus: card.focus,
+          comment: card.comment || null,
+          priority: card.priority || 'standard'
+        }));
+        await client.from('user_created_flashcards').upsert(baseChunk, { onConflict: 'id' });
+      }
+    }
+  } catch (err) {
+    console.warn('[flashcardsService] Erro ao persistir flashcards autorais:', err);
+  }
 }
 
 function generateUuidSuffix(): string {
@@ -250,11 +404,20 @@ export async function flushPendingFlashcards(): Promise<void> {
             .upsert(logItems, { onConflict: 'user_id,date' });
 
           if (error) {
-            console.warn('[flashcardsService] Erro ao sincronizar logs diários no Supabase:', error);
-            for (const item of logItems) {
-              const key = `${item.user_id}_${item.date}`;
-              if (!pendingDailyLogsQueue.has(key)) {
-                pendingDailyLogsQueue.set(key, item);
+            const errCode = (error as { code?: string }).code || '';
+            const isTableMissing =
+              errCode === 'PGRST205' ||
+              errCode === '42P01' ||
+              String(error.message || '').includes('Could not find the table');
+
+            // Não reenfileira em memória se a tabela ainda não existir (o log já está salvo no localStorage e sobe no próximo syncRemoteDailyLogs)
+            if (!isTableMissing) {
+              console.warn('[flashcardsService] Erro transitório ao sincronizar logs diários:', error.message);
+              for (const item of logItems) {
+                const key = `${item.user_id}_${item.date}`;
+                if (!pendingDailyLogsQueue.has(key)) {
+                  pendingDailyLogsQueue.set(key, item);
+                }
               }
             }
           }
@@ -271,7 +434,10 @@ export async function flushPendingFlashcards(): Promise<void> {
             .insert(reviewItems);
 
           if (error) {
-            console.warn('[flashcardsService] Erro ao registrar eventos de revisão no Supabase:', error);
+            const errCode = (error as { code?: string }).code || '';
+            if (errCode !== 'PGRST205' && errCode !== '42P01') {
+              console.warn('[flashcardsService] Erro ao registrar eventos de revisão no Supabase:', error.message);
+            }
           }
         })()
       );
@@ -386,9 +552,9 @@ export const flashcardsService = {
   /**
    * Busca um flashcard específico pelo ID
    */
-  getFlashcardById(cardId: string): FlashcardItem | undefined {
-    const userCreated = this.loadUserCreatedFlashcards();
-    const userEdits = this.loadUserCardEdits();
+  getFlashcardById(cardId: string, userId?: string | null): FlashcardItem | undefined {
+    const userCreated = this.loadUserCreatedFlashcards(userId);
+    const userEdits = this.loadUserCardEdits(userId);
     const combined = [...userCreated, ...getInitialFlashcards()];
     const card = combined.find((c) => c.id === cardId);
     if (!card) return undefined;
@@ -422,7 +588,7 @@ export const flashcardsService = {
     };
 
     const stateBefore = current.state;
-    const card = this.getFlashcardById(cardId);
+    const card = this.getFlashcardById(cardId, userId);
     const isEssential = card?.priority === 'essential';
     const now = new Date();
     let { state, repetitions, intervalDays, easeFactor, lapses } = current;
@@ -825,16 +991,19 @@ export const flashcardsService = {
     }
   },
 
-  // Helpers de storage com isolamento estrito por conta (evita contaminação entre usuários no mesmo dispositivo)
+  // Helpers de storage isolados por userId
   loadSavedProgress(userId?: string | null): Record<string, FlashcardProgress> {
     if (typeof window === 'undefined') return {};
     try {
       const key = getProgressStorageKey(userId);
       const data = localStorage.getItem(key);
       if (data) return JSON.parse(data);
-      if (!userId) {
-        const fallback = localStorage.getItem(STORAGE_KEY);
-        return fallback ? JSON.parse(fallback) : {};
+      const fallback = localStorage.getItem(STORAGE_KEY);
+      if (fallback) {
+        localStorage.removeItem(STORAGE_KEY);
+        const parsed = JSON.parse(fallback);
+        localStorage.setItem(key, JSON.stringify(parsed));
+        return parsed;
       }
       return {};
     } catch {
@@ -847,16 +1016,14 @@ export const flashcardsService = {
     try {
       const key = getProgressStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(saved));
-      if (!userId) {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
-      }
+      localStorage.removeItem(STORAGE_KEY);
     } catch (e) {
       console.warn('Erro ao salvar progresso de flashcards no storage:', e);
     }
   },
 
   /**
-   * Sincronização SWR do progresso FSRS de flashcards com o Supabase (paginada para acervos grandes)
+   * Sincronização SWR do progresso FSRS de flashcards com o Supabase (paginado e tipado)
    */
   async syncRemoteProgress(userId?: string | null): Promise<Record<string, FlashcardProgress>> {
     const local = this.loadSavedProgress(userId);
@@ -864,81 +1031,106 @@ export const flashcardsService = {
 
     try {
       const client = createClient();
-      const { data, error } = await client
-        .from('user_flashcard_progress')
-        .select('*')
-        .eq('user_id', userId)
-        .range(0, 4999);
+      const {
+        data: { session }
+      } = await client.auth.getSession();
+      if (!session?.user || session.user.id !== userId) return local;
 
-      if (!error && data) {
-        const merged: Record<string, FlashcardProgress> = { ...local };
-        const missingOnRemote: Array<{ cardId: string; progress: FlashcardProgress }> = [];
+      const allRows: Record<string, unknown>[] = [];
+      const PAGE_SIZE = 1000;
+      let fromOffset = 0;
 
-        for (const row of data as any[]) {
-          const cid = row.card_id;
-          if (!cid) continue;
+      while (true) {
+        const { data, error } = await client
+          .from('user_flashcard_progress')
+          .select('*')
+          .eq('user_id', userId)
+          .range(fromOffset, fromOffset + PAGE_SIZE - 1);
 
-          const remoteProgress: FlashcardProgress = {
-            state: row.state || 'new',
-            repetitions: row.repetitions || 0,
-            intervalDays: Number(row.interval_days) || 0,
-            easeFactor: Number(row.ease_factor) || 2.5,
-            stability: Number(row.stability) || 1.0,
-            difficulty: Number(row.difficulty) || 5.0,
-            retrievability: Number(row.retrievability) || 1.0,
-            lastReviewDate: row.last_reviewed_at || undefined,
-            nextReviewDate: row.next_review_date || new Date().toISOString(),
-            lapses: row.lapses || 0,
-            history: []
-          };
+        if (error) {
+          console.warn('[flashcardsService] Erro ao consultar user_flashcard_progress:', error.message);
+          return local;
+        }
+        if (!data || data.length === 0) break;
+        allRows.push(...(data as Record<string, unknown>[]));
+        if (data.length < PAGE_SIZE) break;
+        fromOffset += PAGE_SIZE;
+      }
 
-          const localCard = merged[cid];
-          if (!localCard) {
+      const merged: Record<string, FlashcardProgress> = { ...local };
+      const missingOnRemote: Array<{ cardId: string; progress: FlashcardProgress }> = [];
+
+      for (const row of allRows) {
+        const cid = typeof row.card_id === 'string' ? row.card_id : '';
+        if (!cid) continue;
+
+        const remoteProgress: FlashcardProgress = {
+          state: (row.state as FlashcardProgress['state']) || 'new',
+          repetitions: Number(row.repetitions) || 0,
+          intervalDays: Number(row.interval_days) || 0,
+          easeFactor: Number(row.ease_factor) || 2.5,
+          stability: Number(row.stability) || 1.0,
+          difficulty: Number(row.difficulty) || 5.0,
+          retrievability: Number(row.retrievability) || 1.0,
+          lastReviewDate: typeof row.last_reviewed_at === 'string' ? row.last_reviewed_at : undefined,
+          nextReviewDate:
+            typeof row.next_review_date === 'string' ? row.next_review_date : new Date().toISOString(),
+          lapses: Number(row.lapses) || 0,
+          history: []
+        };
+
+        const localCard = merged[cid];
+        if (!localCard) {
+          merged[cid] = remoteProgress;
+        } else {
+          const remoteTime = remoteProgress.lastReviewDate ? new Date(remoteProgress.lastReviewDate).getTime() : 0;
+          const localTime = localCard.lastReviewDate ? new Date(localCard.lastReviewDate).getTime() : 0;
+          if (remoteTime >= localTime) {
             merged[cid] = remoteProgress;
           } else {
-            const remoteTime = remoteProgress.lastReviewDate ? new Date(remoteProgress.lastReviewDate).getTime() : 0;
-            const localTime = localCard.lastReviewDate ? new Date(localCard.lastReviewDate).getTime() : 0;
-            if (remoteTime >= localTime) {
-              merged[cid] = remoteProgress;
-            } else {
-              missingOnRemote.push({ cardId: cid, progress: localCard });
-            }
+            missingOnRemote.push({ cardId: cid, progress: localCard });
           }
         }
-
-        const remoteIds = new Set((data as any[]).map((r) => r.card_id));
-        for (const [cid, p] of Object.entries(local)) {
-          if (!remoteIds.has(cid)) {
-            missingOnRemote.push({ cardId: cid, progress: p });
-          }
-        }
-
-        this.saveProgressToStorage(merged, userId);
-
-        if (missingOnRemote.length > 0) {
-          const payload = missingOnRemote.map(({ cardId, progress }) => ({
-            user_id: userId,
-            card_id: cardId,
-            state: progress.state,
-            repetitions: progress.repetitions,
-            interval_days: progress.intervalDays,
-            ease_factor: progress.easeFactor,
-            stability: progress.stability,
-            difficulty: progress.difficulty,
-            retrievability: progress.retrievability,
-            lapses: progress.lapses,
-            last_reviewed_at: progress.lastReviewDate || null,
-            next_review_date: progress.nextReviewDate
-          }));
-
-          client
-            .from('user_flashcard_progress')
-            .upsert(payload, { onConflict: 'user_id,card_id' })
-            .then(() => {}, () => {});
-        }
-
-        return merged;
       }
+
+      const remoteIds = new Set(allRows.map((r) => String(r.card_id || '')));
+      for (const [cid, p] of Object.entries(local)) {
+        if (!remoteIds.has(cid)) {
+          missingOnRemote.push({ cardId: cid, progress: p });
+        }
+      }
+
+      this.saveProgressToStorage(merged, userId);
+
+      if (missingOnRemote.length > 0) {
+        const payload = missingOnRemote.map(({ cardId, progress }) => ({
+          user_id: userId,
+          card_id: cardId,
+          state: progress.state,
+          repetitions: Math.max(0, Math.round(Number(progress.repetitions) || 0)),
+          // Garante inteiro estrito para coluna int32 interval_days (evita erro de sintaxe com minutos fracionários)
+          interval_days: Math.max(0, Math.round(Number(progress.intervalDays) || 0)),
+          ease_factor: Number(progress.easeFactor) || 2.5,
+          stability: Number(progress.stability) || 1.0,
+          difficulty: Number(progress.difficulty) || 5.0,
+          retrievability: Number(progress.retrievability) || 1.0,
+          lapses: Math.max(0, Math.round(Number(progress.lapses) || 0)),
+          last_reviewed_at: progress.lastReviewDate || null,
+          next_review_date: progress.nextReviewDate || new Date().toISOString()
+        }));
+
+        for (let i = 0; i < payload.length; i += 200) {
+          const chunk = payload.slice(i, i + 200);
+          const { error: upErr } = await client
+            .from('user_flashcard_progress')
+            .upsert(chunk, { onConflict: 'user_id,card_id' });
+          if (upErr) {
+            console.warn('[flashcardsService] Erro ao enviar lote pendente FSRS:', upErr.message);
+          }
+        }
+      }
+
+      return merged;
     } catch (e) {
       console.warn('[flashcardsService] Erro ao sincronizar progresso remoto:', e);
     }
@@ -947,50 +1139,68 @@ export const flashcardsService = {
   },
 
   /**
-   * Recupera o último conjunto de flashcards estudado
+   * Recupera o último conjunto de flashcards estudado (isolado por userId)
    */
-  getLastFlashcardSession(): LastFlashcardSessionInfo | null {
+  getLastFlashcardSession(userId?: string | null): LastFlashcardSessionInfo | null {
     if (typeof window === 'undefined') return null;
     try {
-      const data = localStorage.getItem(LAST_SESSION_KEY);
-      return data ? JSON.parse(data) : null;
+      const key = getLastSessionStorageKey(userId);
+      const data = localStorage.getItem(key);
+      if (data) return JSON.parse(data);
+      const legacy = localStorage.getItem(LAST_SESSION_KEY);
+      if (legacy) {
+        localStorage.removeItem(LAST_SESSION_KEY);
+        localStorage.setItem(key, legacy);
+        return JSON.parse(legacy);
+      }
+      return null;
     } catch {
       return null;
     }
   },
 
   /**
-   * Salva o último conjunto de flashcards estudado
+   * Salva o último conjunto de flashcards estudado (isolado por userId)
    */
-  saveLastFlashcardSession(info: LastFlashcardSessionInfo): void {
+  saveLastFlashcardSession(info: LastFlashcardSessionInfo, userId?: string | null): void {
     if (typeof window === 'undefined') return;
     try {
-      localStorage.setItem(LAST_SESSION_KEY, JSON.stringify(info));
+      localStorage.setItem(getLastSessionStorageKey(userId), JSON.stringify(info));
+      localStorage.removeItem(LAST_SESSION_KEY);
     } catch (e) {
       console.warn('Erro ao salvar última sessão de flashcards:', e);
     }
   },
 
   /**
-   * Recupera o último resumo clínico lido
+   * Recupera o último resumo clínico lido (isolado por userId)
    */
-  getLastReadSummary(): LastReadSummaryInfo | null {
+  getLastReadSummary(userId?: string | null): LastReadSummaryInfo | null {
     if (typeof window === 'undefined') return null;
     try {
-      const data = localStorage.getItem(LAST_SUMMARY_KEY);
-      return data ? JSON.parse(data) : null;
+      const key = getLastSummaryStorageKey(userId);
+      const data = localStorage.getItem(key);
+      if (data) return JSON.parse(data);
+      const legacy = localStorage.getItem(LAST_SUMMARY_KEY);
+      if (legacy) {
+        localStorage.removeItem(LAST_SUMMARY_KEY);
+        localStorage.setItem(key, legacy);
+        return JSON.parse(legacy);
+      }
+      return null;
     } catch {
       return null;
     }
   },
 
   /**
-   * Salva o último resumo clínico lido
+   * Salva o último resumo clínico lido (local por userId + Supabase user_study_progress)
    */
   saveLastReadSummary(info: LastReadSummaryInfo, userId?: string | null): void {
     if (typeof window === 'undefined') return;
     try {
-      localStorage.setItem(LAST_SUMMARY_KEY, JSON.stringify(info));
+      localStorage.setItem(getLastSummaryStorageKey(userId), JSON.stringify(info));
+      localStorage.removeItem(LAST_SUMMARY_KEY);
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1020,9 +1230,12 @@ export const flashcardsService = {
    * Sincroniza progresso de estudo de materiais clínicos com o Supabase
    */
   async syncRemoteStudyProgress(userId?: string | null): Promise<LastReadSummaryInfo | null> {
-    if (!userId || userId === 'demo-student') return this.getLastReadSummary();
+    if (!userId || userId === 'demo-student') return this.getLastReadSummary(userId);
     try {
       const client = createClient();
+      const { data: sessionData } = await client.auth.getSession();
+      if (!sessionData?.session) return this.getLastReadSummary(userId);
+
       const { data, error } = await client
         .from('user_study_progress')
         .select('*')
@@ -1031,24 +1244,27 @@ export const flashcardsService = {
         .limit(1);
 
       if (!error && data && data.length > 0) {
-        const row = data[0] as any;
-        const current = this.getLastReadSummary();
-        const remoteTime = row.last_read_at ? new Date(row.last_read_at).getTime() : 0;
+        const row = data[0] as Record<string, unknown>;
+        const current = this.getLastReadSummary(userId);
+        const lastReadAtStr = typeof row.last_read_at === 'string' ? row.last_read_at : '';
+        const remoteTime = lastReadAtStr ? new Date(lastReadAtStr).getTime() : 0;
         const localTime = current?.lastReadAt ? new Date(current.lastReadAt).getTime() : 0;
         if (remoteTime > localTime) {
-          const mat = this.getStudyMaterialById(row.material_id);
+          const materialId = String(row.material_id || '');
+          const mat = this.getStudyMaterialById(materialId);
           const info: LastReadSummaryInfo = {
-            materialId: row.material_id,
+            materialId,
             title: mat?.title || 'Resumo Clínico',
             specialty: mat?.specialty || 'Geral',
             theme: mat?.theme || 'Geral',
             focus: mat?.focus || 'Geral',
-            readTimeMinutes: row.read_time_minutes || mat?.readTimeMinutes || 5,
+            readTimeMinutes: Number(row.read_time_minutes) || mat?.readTimeMinutes || 5,
             guidelineBadge: mat?.guidelineBadge,
-            lastReadAt: row.last_read_at || new Date().toISOString()
+            lastReadAt: lastReadAtStr || new Date().toISOString()
           };
           if (typeof window !== 'undefined') {
-            localStorage.setItem(LAST_SUMMARY_KEY, JSON.stringify(info));
+            localStorage.setItem(getLastSummaryStorageKey(userId), JSON.stringify(info));
+            localStorage.removeItem(LAST_SUMMARY_KEY);
           }
           return info;
         }
@@ -1056,7 +1272,7 @@ export const flashcardsService = {
     } catch (e) {
       console.warn('[flashcardsService] Erro ao sincronizar resumo remoto:', e);
     }
-    return this.getLastReadSummary();
+    return this.getLastReadSummary(userId);
   },
 
   /**
@@ -1092,9 +1308,7 @@ export const flashcardsService = {
 
       logs[dateKey] = current;
       localStorage.setItem(storageKey, JSON.stringify(logs));
-      if (!userId) {
-        localStorage.setItem(DAILY_LOGS_KEY, JSON.stringify(logs));
-      }
+      localStorage.removeItem(DAILY_LOGS_KEY);
 
       // Enfileira sincronização com Supabase se usuário autenticado
       if (userId && userId !== 'demo-student') {
@@ -1154,6 +1368,9 @@ export const flashcardsService = {
       const endDate = `${targetYear}-12-31`;
 
       const client = createClient();
+      const { data: sessionData } = await client.auth.getSession();
+      if (!sessionData?.session) return local;
+
       const { data, error } = await client
         .from('user_flashcard_daily_logs')
         .select('*')
@@ -1165,43 +1382,41 @@ export const flashcardsService = {
         const merged: Record<string, DailyReviewLog> = { ...local };
         const missingOnRemote: Array<PendingDailyLogItem> = [];
 
-        for (const row of data as any[]) {
-          const dateStr = typeof row.date === 'string' ? row.date.split('T')[0] : String(row.date);
+        for (const rawRow of data as Record<string, unknown>[]) {
+          const dateStr =
+            typeof rawRow.date === 'string' ? rawRow.date.split('T')[0] : String(rawRow.date || '');
           if (!dateStr) continue;
 
           const remoteLog: DailyReviewLog = {
             date: dateStr,
-            feitos: Number(row.feitos) || 0,
-            revisao: Number(row.revisao) || 0,
-            total: Number(row.total) || 0,
-            durationSeconds: Number(row.duration_seconds) || 0
+            feitos: Number(rawRow.feitos) || 0,
+            revisao: Number(rawRow.revisao) || 0,
+            total: Number(rawRow.total) || 0,
+            durationSeconds: Number(rawRow.duration_seconds) || 0
           };
 
           const localLog = merged[dateStr];
           if (!localLog) {
             merged[dateStr] = remoteLog;
+          } else if (remoteLog.total >= localLog.total) {
+            merged[dateStr] = remoteLog;
           } else {
-            // Se o remoto tiver mais ou igual quantidade de revisões, atualiza o local
-            if (remoteLog.total >= localLog.total) {
-              merged[dateStr] = remoteLog;
-            } else {
-              // Local possui mais revisões (estudo offline recente), enfileira para atualizar o remoto
-              missingOnRemote.push({
-                user_id: userId,
-                date: dateStr,
-                total: localLog.total,
-                feitos: localLog.feitos,
-                revisao: localLog.revisao,
-                duration_seconds: localLog.durationSeconds,
-                updated_at: new Date().toISOString()
-              });
-            }
+            missingOnRemote.push({
+              user_id: userId,
+              date: dateStr,
+              total: localLog.total,
+              feitos: localLog.feitos,
+              revisao: localLog.revisao,
+              duration_seconds: localLog.durationSeconds,
+              updated_at: new Date().toISOString()
+            });
           }
         }
 
-        // Verifica se há dias locais que sequer constam no banco
         const remoteDates = new Set(
-          (data as any[]).map((r) => (typeof r.date === 'string' ? r.date.split('T')[0] : String(r.date)))
+          (data as Record<string, unknown>[]).map((r) =>
+            typeof r.date === 'string' ? r.date.split('T')[0] : String(r.date || '')
+          )
         );
         for (const [dateStr, log] of Object.entries(local)) {
           if (!remoteDates.has(dateStr) && log.total > 0) {
@@ -1217,11 +1432,9 @@ export const flashcardsService = {
           }
         }
 
-        // Salva mesclado localmente
         const storageKey = getDailyLogsStorageKey(userId);
         localStorage.setItem(storageKey, JSON.stringify(merged));
 
-        // Envia dados faltantes para o Supabase
         if (missingOnRemote.length > 0) {
           client
             .from('user_flashcard_daily_logs')
@@ -1246,7 +1459,13 @@ export const flashcardsService = {
       let list: CustomFlashcardDeck[] = data ? JSON.parse(data) : [];
       if ((!list || list.length === 0) && !userId) {
         const fallback = localStorage.getItem(CUSTOM_DECKS_KEY);
-        list = fallback ? JSON.parse(fallback) : [];
+        if (fallback) {
+          list = JSON.parse(fallback);
+          localStorage.removeItem(CUSTOM_DECKS_KEY);
+          if (list && list.length > 0) {
+            localStorage.setItem(key, JSON.stringify(list));
+          }
+        }
       }
 
       // Garante sempre ao menos o "Baralho Padrão"
@@ -1277,7 +1496,7 @@ export const flashcardsService = {
   },
 
   /**
-   * Salva ou atualiza um baralho personalizado (Autoral)
+   * Salva ou atualiza um baralho autoral (Cartões Originais)
    */
   saveCustomDeck(deck: CustomFlashcardDeck, userId?: string | null): CustomFlashcardDeck[] {
     if (typeof window === 'undefined') return [];
@@ -1293,25 +1512,10 @@ export const flashcardsService = {
       }
       const key = getDecksStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      if (!userId) {
-        localStorage.setItem(CUSTOM_DECKS_KEY, JSON.stringify(updated));
-      }
+      localStorage.removeItem(CUSTOM_DECKS_KEY);
 
       if (userId && userId !== 'demo-student') {
-        const client = createClient();
-        client
-          .from('user_flashcard_decks')
-          .upsert(
-            {
-              id: toRemoteDeckId(deck.id, userId),
-              user_id: userId,
-              title: deck.name,
-              description: encodeDeckDescriptionWithMeta(deck, 'custom'),
-              card_ids: deck.cardIds || []
-            },
-            { onConflict: 'id' }
-          )
-          .then(() => {}, () => {});
+        void upsertDecksResilient([deck], userId, 'custom');
       }
 
       return updated;
@@ -1322,7 +1526,7 @@ export const flashcardsService = {
   },
 
   /**
-   * Remove um baralho personalizado
+   * Remove um baralho autoral
    */
   deleteCustomDeck(id: string, userId?: string | null): CustomFlashcardDeck[] {
     if (typeof window === 'undefined') return [];
@@ -1331,9 +1535,7 @@ export const flashcardsService = {
       const updated = current.filter((d) => d.id !== id);
       const key = getDecksStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      if (!userId) {
-        localStorage.setItem(CUSTOM_DECKS_KEY, JSON.stringify(updated));
-      }
+      localStorage.removeItem(CUSTOM_DECKS_KEY);
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1363,7 +1565,13 @@ export const flashcardsService = {
       let list: CustomFlashcardDeck[] = data ? JSON.parse(data) : [];
       if ((!list || list.length === 0) && !userId) {
         const fallback = localStorage.getItem(PERSONALIZED_DECKS_KEY);
-        list = fallback ? JSON.parse(fallback) : [];
+        if (fallback) {
+          list = JSON.parse(fallback);
+          localStorage.removeItem(PERSONALIZED_DECKS_KEY);
+          if (list && list.length > 0) {
+            localStorage.setItem(key, JSON.stringify(list));
+          }
+        }
       }
       return list || [];
     } catch {
@@ -1388,25 +1596,10 @@ export const flashcardsService = {
       }
       const key = getPersonalizedDecksStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      if (!userId) {
-        localStorage.setItem(PERSONALIZED_DECKS_KEY, JSON.stringify(updated));
-      }
+      localStorage.removeItem(PERSONALIZED_DECKS_KEY);
 
       if (userId && userId !== 'demo-student') {
-        const client = createClient();
-        client
-          .from('user_flashcard_decks')
-          .upsert(
-            {
-              id: toRemoteDeckId(deck.id, userId),
-              user_id: userId,
-              title: deck.name,
-              description: encodeDeckDescriptionWithMeta(deck, 'personalized'),
-              card_ids: deck.cardIds || []
-            },
-            { onConflict: 'id' }
-          )
-          .then(() => {}, () => {});
+        void upsertDecksResilient([deck], userId, 'personalized');
       }
 
       return updated;
@@ -1426,9 +1619,7 @@ export const flashcardsService = {
       const updated = current.filter((d) => d.id !== id);
       const key = getPersonalizedDecksStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      if (!userId) {
-        localStorage.setItem(PERSONALIZED_DECKS_KEY, JSON.stringify(updated));
-      }
+      localStorage.removeItem(PERSONALIZED_DECKS_KEY);
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1528,82 +1719,119 @@ export const flashcardsService = {
 
     try {
       const client = createClient();
+      const { data: sessionData } = await client.auth.getSession();
+      if (!sessionData?.session) return localCustom;
+
       const { data, error } = await client
         .from('user_flashcard_decks')
         .select('*')
         .eq('user_id', userId);
 
       if (!error && data) {
-        const remoteCustom: CustomFlashcardDeck[] = [];
-        const remotePersonalized: CustomFlashcardDeck[] = [];
+        const localById = new Map(localCustom.map((d) => [d.id, d]));
+        const remoteDecks: CustomFlashcardDeck[] = (data as Record<string, unknown>[])
+          .filter((row) => !isPersonalizedDeckRow(row))
+          .map((row) => {
+            const mapped = mapDeckRowToModel(row);
+            const prev = localById.get(mapped.id);
+            if (!prev) return mapped;
+            return {
+              ...prev,
+              ...mapped,
+              specialties: mapped.specialties.length > 0 ? mapped.specialties : prev.specialties
+            };
+          });
 
-        for (const d of data as Array<{
-          id: string;
-          title?: string;
-          description?: string | null;
-          card_ids?: string[];
-          created_at?: string;
-        }>) {
-          const meta = decodeDeckDescriptionMeta(d.description);
-          const mapped: CustomFlashcardDeck = {
-            id: fromRemoteDeckId(d.id, userId),
-            name: d.title || 'Baralho',
-            description: meta.description || '',
-            specialties: meta.specialties || [],
-            themes: meta.themes,
-            selectedNodeKeys: meta.selectedNodeKeys,
-            priorityOnly: meta.priorityOnly,
-            includeAllUserCards: meta.includeAllUserCards,
-            includeUserDeckIds: meta.includeUserDeckIds,
-            cardIds: d.card_ids || [],
-            createdAt: d.created_at || new Date().toISOString()
-          };
-          if (meta.deckKind === 'personalized') {
-            remotePersonalized.push(mapped);
-          } else {
-            remoteCustom.push(mapped);
-          }
+        const remoteIds = new Set(remoteDecks.map((d) => d.id));
+        const missingOnRemote = localCustom.filter((d) => !remoteIds.has(d.id));
+        let merged = [...remoteDecks, ...missingOnRemote];
+
+        if (!merged.some((d) => d.id === 'deck-padrao')) {
+          merged = [
+            {
+              id: 'deck-padrao',
+              name: 'Baralho Padrão',
+              description: 'Baralho principal para seus cartões autorais e anotações clínicas.',
+              specialties: [],
+              createdAt: new Date().toISOString()
+            },
+            ...merged
+          ];
         }
 
-        const remoteIds = new Set([...remoteCustom, ...remotePersonalized].map((d) => d.id));
-        const missingCustom = localCustom.filter((d) => !remoteIds.has(d.id));
-        const missingPersonalized = localPersonalized.filter((d) => !remoteIds.has(d.id));
-
-        const mergedCustom = [...remoteCustom, ...missingCustom];
-        const mergedPersonalized = [...remotePersonalized, ...missingPersonalized];
-
+        const key = getDecksStorageKey(userId);
         if (typeof window !== 'undefined') {
-          localStorage.setItem(getDecksStorageKey(userId), JSON.stringify(mergedCustom));
-          localStorage.setItem(getPersonalizedDecksStorageKey(userId), JSON.stringify(mergedPersonalized));
+          localStorage.setItem(key, JSON.stringify(merged));
+          localStorage.removeItem(CUSTOM_DECKS_KEY);
         }
 
-        const uploadPayloads = [
-          ...missingCustom.map((d) => ({
-            id: toRemoteDeckId(d.id, userId),
-            user_id: userId,
-            title: d.name,
-            description: encodeDeckDescriptionWithMeta(d, 'custom'),
-            card_ids: d.cardIds || []
-          })),
-          ...missingPersonalized.map((d) => ({
-            id: toRemoteDeckId(d.id, userId),
-            user_id: userId,
-            title: d.name,
-            description: encodeDeckDescriptionWithMeta(d, 'personalized'),
-            card_ids: d.cardIds || []
-          }))
-        ];
-
-        if (uploadPayloads.length > 0) {
-          client.from('user_flashcard_decks').upsert(uploadPayloads, { onConflict: 'id' }).then(() => {}, () => {});
+        if (missingOnRemote.length > 0) {
+          void upsertDecksResilient(missingOnRemote, userId, 'custom');
         }
 
-        return mergedCustom;
+        return merged;
       }
     } catch (e) {
       console.warn('[flashcardsService] Erro ao sincronizar baralhos:', e);
     }
     return localCustom;
+  },
+
+  async syncRemotePersonalizedDecks(userId?: string | null): Promise<CustomFlashcardDeck[]> {
+    const local = this.getPersonalizedDecks(userId);
+    if (!userId || userId === 'demo-student') return local;
+
+    try {
+      const client = createClient();
+      const { data: sessionData } = await client.auth.getSession();
+      if (!sessionData?.session) return local;
+
+      const { data, error } = await client
+        .from('user_flashcard_decks')
+        .select('*')
+        .eq('user_id', userId);
+
+      if (!error && data) {
+        const localById = new Map(local.map((d) => [d.id, d]));
+        const remoteDecks: CustomFlashcardDeck[] = (data as Record<string, unknown>[])
+          .filter((row) => isPersonalizedDeckRow(row))
+          .map((row) => {
+            const mapped = mapDeckRowToModel(row);
+            const prev = localById.get(mapped.id);
+            if (!prev) return mapped;
+            const hasRemoteConfig =
+              row.config &&
+              typeof row.config === 'object' &&
+              Object.keys(row.config as Record<string, unknown>).length > 0;
+            if (hasRemoteConfig) return mapped;
+            return {
+              ...prev,
+              name: mapped.name || prev.name,
+              description: mapped.description || prev.description,
+              cardIds: mapped.cardIds && mapped.cardIds.length > 0 ? mapped.cardIds : prev.cardIds
+            };
+          });
+
+        const remoteIds = new Set(remoteDecks.map((d) => d.id));
+        const missingOnRemote = local.filter((d) => !remoteIds.has(d.id));
+        const merged = [...remoteDecks, ...missingOnRemote];
+
+        const key = getPersonalizedDecksStorageKey(userId);
+        if (typeof window !== 'undefined') {
+          localStorage.setItem(key, JSON.stringify(merged));
+          localStorage.removeItem(PERSONALIZED_DECKS_KEY);
+        }
+
+        if (missingOnRemote.length > 0) {
+          void upsertDecksResilient(missingOnRemote, userId, 'personalized');
+        }
+
+        return merged;
+      }
+    } catch (e) {
+      console.warn('[flashcardsService] Erro ao sincronizar baralhos personalizados:', e);
+    }
+    return local;
   },
 
   /**
@@ -1615,9 +1843,14 @@ export const flashcardsService = {
       const key = getUserCardsStorageKey(userId);
       const data = localStorage.getItem(key);
       if (data) return JSON.parse(data);
-      if (!userId) {
-        const fallback = localStorage.getItem(USER_FLASHCARDS_KEY);
-        return fallback ? JSON.parse(fallback) : [];
+      const fallback = localStorage.getItem(USER_FLASHCARDS_KEY);
+      if (fallback) {
+        const parsed: FlashcardItem[] = JSON.parse(fallback);
+        localStorage.removeItem(USER_FLASHCARDS_KEY);
+        if (parsed && parsed.length > 0) {
+          localStorage.setItem(key, JSON.stringify(parsed));
+        }
+        return parsed || [];
       }
       return [];
     } catch {
@@ -1645,29 +1878,10 @@ export const flashcardsService = {
       const updated = [cardToSave, ...current.filter((c) => c.id !== safeCardId)];
       const key = getUserCardsStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      if (!userId) {
-        localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
-      }
+      localStorage.removeItem(USER_FLASHCARDS_KEY);
 
       if (userId && userId !== 'demo-student') {
-        const client = createClient();
-        client
-          .from('user_created_flashcards')
-          .upsert(
-            {
-              id: cardToSave.id,
-              user_id: userId,
-              front: cardToSave.front,
-              back: cardToSave.back,
-              specialty: cardToSave.specialty,
-              theme: cardToSave.theme,
-              focus: cardToSave.focus,
-              comment: cardToSave.comment || null,
-              priority: cardToSave.priority || 'standard'
-            },
-            { onConflict: 'id' }
-          )
-          .then(() => {}, () => {});
+        void upsertUserCardsResilient([cardToSave], userId);
       }
 
       return cardToSave;
@@ -1678,7 +1892,7 @@ export const flashcardsService = {
   },
 
   /**
-   * Remove um flashcard criado pelo usuário (localmente e no Supabase)
+   * Salva um lote de flashcards criados ou importados pelo usuário
    */
   saveNewFlashcardsBatch(cards: FlashcardItem[], userId?: string | null): FlashcardItem[] {
     if (typeof window === 'undefined' || !cards || cards.length === 0) return cards;
@@ -1697,31 +1911,10 @@ export const flashcardsService = {
 
       const key = getUserCardsStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      if (!userId) {
-        localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
-      }
+      localStorage.removeItem(USER_FLASHCARDS_KEY);
 
       if (userId && userId !== 'demo-student') {
-        const client = createClient();
-        const payload = newItems.map((card) => ({
-          id: card.id,
-          user_id: userId,
-          front: card.front,
-          back: card.back,
-          specialty: card.specialty,
-          theme: card.theme,
-          focus: card.focus,
-          comment: card.comment || null,
-          priority: card.priority || 'standard'
-        }));
-
-        for (let i = 0; i < payload.length; i += 50) {
-          const chunk = payload.slice(i, i + 50);
-          client
-            .from('user_created_flashcards')
-            .upsert(chunk, { onConflict: 'id' })
-            .then(() => {}, () => {});
-        }
+        void upsertUserCardsResilient(newItems, userId);
       }
 
       return newItems;
@@ -1738,9 +1931,7 @@ export const flashcardsService = {
       const updated = current.filter((c) => c.id !== cardId);
       const key = getUserCardsStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
-      if (!userId) {
-        localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
-      }
+      localStorage.removeItem(USER_FLASHCARDS_KEY);
 
       if (userId && userId !== 'demo-student') {
         const client = createClient();
@@ -1771,20 +1962,25 @@ export const flashcardsService = {
         .eq('status', 'published');
 
       if (!error && data && data.length > 0) {
-        const mapped: StudyMaterialItem[] = data.map((row: any) => ({
-          id: row.id,
-          focusId: row.focus_id || undefined,
-          title: row.title,
-          specialty: row.specialty,
-          theme: row.theme,
-          focus: row.focus,
-          readTimeMinutes: row.read_time_minutes || 8,
-          lastUpdatedYear: row.last_updated_year || 2026,
-          guidelineBadge: row.guideline_badge || 'Consenso Oficial & Evidência Padrão-Ouro',
-          summarySnippet: row.summary_snippet || '',
-          markdownContent: row.markdown_content,
-          keyPoints: Array.isArray(row.key_points) ? row.key_points : [],
-          recurrenceStats: row.recurrence_stats || undefined
+        const mapped: StudyMaterialItem[] = (data as Record<string, unknown>[]).map((row) => ({
+          id: String(row.id),
+          focusId: typeof row.focus_id === 'string' ? row.focus_id : undefined,
+          title: String(row.title || ''),
+          specialty: String(row.specialty || ''),
+          theme: String(row.theme || ''),
+          focus: String(row.focus || ''),
+          readTimeMinutes: Number(row.read_time_minutes) || 8,
+          lastUpdatedYear: Number(row.last_updated_year) || 2026,
+          guidelineBadge:
+            typeof row.guideline_badge === 'string'
+              ? row.guideline_badge
+              : 'Consenso Oficial & Evidência Padrão-Ouro',
+          summarySnippet: typeof row.summary_snippet === 'string' ? row.summary_snippet : '',
+          markdownContent: String(row.markdown_content || ''),
+          keyPoints: Array.isArray(row.key_points) ? row.key_points.map((k) => String(k)) : [],
+          recurrenceStats: row.recurrence_stats
+            ? (row.recurrence_stats as StudyMaterialItem['recurrenceStats'])
+            : undefined
         }));
 
         const local = this.loadUserCreatedStudyMaterials();
@@ -1802,7 +1998,7 @@ export const flashcardsService = {
   },
 
   /**
-   * Sincroniza cartões criados pelo aluno no Supabase
+   * Sincroniza cartões criados pelo aluno no Supabase (paginado sem truncar em 1000)
    */
   async syncRemoteUserCreatedCards(userId?: string | null): Promise<FlashcardItem[]> {
     const local = this.loadUserCreatedFlashcards(userId);
@@ -1810,49 +2006,80 @@ export const flashcardsService = {
 
     try {
       const client = createClient();
-      const { data, error } = await client
-        .from('user_created_flashcards')
-        .select('*')
-        .eq('user_id', userId);
+      const { data: sessionData } = await client.auth.getSession();
+      if (!sessionData?.session) return local;
 
-      if (!error && data) {
-        const remoteCards: FlashcardItem[] = data.map((c: any) => ({
-          id: c.id,
-          front: c.front,
-          back: c.back,
-          specialty: c.specialty,
-          theme: c.theme,
-          focus: c.focus,
-          comment: c.comment || '',
-          priority: c.priority || 'standard'
-        }));
+      const allRows: Record<string, unknown>[] = [];
+      const pageSize = 1000;
+      let from = 0;
 
-        const remoteIds = new Set(remoteCards.map((c) => c.id));
-        const missingOnRemote = local.filter((c) => !remoteIds.has(c.id));
-        const merged = [...remoteCards, ...missingOnRemote];
+      while (true) {
+        const { data, error } = await client
+          .from('user_created_flashcards')
+          .select('*')
+          .eq('user_id', userId)
+          .range(from, from + pageSize - 1);
 
-        const key = getUserCardsStorageKey(userId);
-        if (typeof window !== 'undefined') {
-          localStorage.setItem(key, JSON.stringify(merged));
+        if (error) {
+          console.warn('[flashcardsService] Erro ao buscar cartões do usuário:', error.message);
+          return local;
         }
-
-        if (missingOnRemote.length > 0) {
-          const payload = missingOnRemote.map((c) => ({
-            id: c.id,
-            user_id: userId,
-            front: c.front,
-            back: c.back,
-            specialty: c.specialty,
-            theme: c.theme,
-            focus: c.focus,
-            comment: c.comment || null,
-            priority: c.priority || 'standard'
-          }));
-          client.from('user_created_flashcards').upsert(payload, { onConflict: 'id' }).then(() => {});
-        }
-
-        return merged;
+        if (!data || data.length === 0) break;
+        allRows.push(...(data as Record<string, unknown>[]));
+        if (data.length < pageSize) break;
+        from += pageSize;
       }
+
+      const localById = new Map(local.map((c) => [c.id, c]));
+      const remoteCards: FlashcardItem[] = allRows.map((c) => {
+        const id = String(c.id);
+        const prev = localById.get(id);
+        const rawPriority = c.priority;
+        const priority: FlashcardItem['priority'] =
+          rawPriority === 'essential' ? 'essential' : 'standard';
+
+        return {
+          id,
+          front: String(c.front || ''),
+          back: String(c.back || ''),
+          specialty: String(c.specialty || ''),
+          theme: String(c.theme || ''),
+          focus: String(c.focus || ''),
+          subfocus:
+            typeof c.subfocus === 'string' ? c.subfocus : prev?.subfocus || undefined,
+          subSubfocus:
+            typeof c.sub_subfocus === 'string'
+              ? c.sub_subfocus
+              : prev?.subSubfocus || prev?.sub_subfocus || undefined,
+          deckId:
+            typeof c.deck_id === 'string' && c.deck_id
+              ? c.deck_id
+              : prev?.deckId || 'deck-padrao',
+          sourceQuestionId:
+            typeof c.source_question_id === 'string'
+              ? c.source_question_id
+              : prev?.sourceQuestionId || undefined,
+          comment: typeof c.comment === 'string' ? c.comment : '',
+          priority,
+          createdAt: typeof c.created_at === 'string' ? c.created_at : prev?.createdAt
+        };
+      });
+
+      const remoteIds = new Set(remoteCards.map((c) => c.id));
+      const missingOnRemote = local.filter((c) => !remoteIds.has(c.id));
+      const merged = [...remoteCards, ...missingOnRemote];
+
+      const key = getUserCardsStorageKey(userId);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(key, JSON.stringify(merged));
+        localStorage.removeItem(USER_FLASHCARDS_KEY);
+      }
+
+      if (missingOnRemote.length > 0) {
+        void upsertUserCardsResilient(missingOnRemote, userId);
+      }
+
+      return merged;
     } catch (e) {
       console.warn('[flashcardsService] Erro ao sincronizar cartões do usuário:', e);
     }
@@ -1860,7 +2087,7 @@ export const flashcardsService = {
   },
 
   /**
-   * Carrega as edições personalizadas de flashcards salvas pelo usuário
+   * Carrega as edições personalizadas de flashcards salvas pelo usuário (escopado por conta)
    */
   loadUserCardEdits(userId?: string | null): Record<string, Partial<FlashcardItem>> {
     if (typeof window === 'undefined') return {};
@@ -1868,9 +2095,11 @@ export const flashcardsService = {
       const key = getCardEditsStorageKey(userId);
       const data = localStorage.getItem(key);
       if (data) return JSON.parse(data);
-      if (!userId) {
-        const fallback = localStorage.getItem(USER_CARD_EDITS_KEY);
-        return fallback ? JSON.parse(fallback) : {};
+      const legacy = localStorage.getItem(USER_CARD_EDITS_KEY);
+      if (legacy) {
+        localStorage.removeItem(USER_CARD_EDITS_KEY);
+        localStorage.setItem(key, legacy);
+        return JSON.parse(legacy);
       }
       return {};
     } catch {
@@ -1879,47 +2108,127 @@ export const flashcardsService = {
   },
 
   /**
-   * Salva a edição de um flashcard no cache da conta e sincroniza em preferences no Supabase
+   * Salva a edição de um flashcard por conta e sincroniza em profiles.preferences.flashcardEdits
    */
   saveCardEdit(cardId: string, edits: Partial<FlashcardItem>, userId?: string | null): void {
     if (typeof window === 'undefined') return;
     try {
-      const key = getCardEditsStorageKey(userId);
       const allEdits = this.loadUserCardEdits(userId);
       allEdits[cardId] = {
         ...(allEdits[cardId] || {}),
         ...edits
       };
-      localStorage.setItem(key, JSON.stringify(allEdits));
+      localStorage.setItem(getCardEditsStorageKey(userId), JSON.stringify(allEdits));
+      localStorage.removeItem(USER_CARD_EDITS_KEY);
 
       if (userId && userId !== 'demo-student') {
-        const client = createClient();
-        client
-          .from('profiles')
-          .select('preferences')
-          .eq('id', userId)
-          .maybeSingle()
-          .then(({ data: profile }) => {
-            const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
-            const remoteEdits = (currentPrefs.flashcardEdits as Record<string, Partial<FlashcardItem>>) || {};
-            return client
+        void (async () => {
+          try {
+            const client = createClient();
+            const { data: sessionData } = await client.auth.getSession();
+            if (!sessionData?.session) return;
+            const { data: profileRow } = await client
+              .from('profiles')
+              .select('preferences')
+              .eq('id', userId)
+              .maybeSingle();
+
+            const existingPrefs =
+              profileRow?.preferences &&
+              typeof profileRow.preferences === 'object' &&
+              !Array.isArray(profileRow.preferences)
+                ? (profileRow.preferences as Record<string, unknown>)
+                : {};
+
+            const remoteEdits =
+              existingPrefs.flashcardEdits &&
+              typeof existingPrefs.flashcardEdits === 'object' &&
+              !Array.isArray(existingPrefs.flashcardEdits)
+                ? (existingPrefs.flashcardEdits as Record<string, Partial<FlashcardItem>>)
+                : {};
+
+            await client
               .from('profiles')
               .update({
                 preferences: {
-                  ...currentPrefs,
+                  ...existingPrefs,
                   flashcardEdits: {
                     ...remoteEdits,
-                    [cardId]: allEdits[cardId]
-                  },
-                  updatedAt: new Date().toISOString()
+                    ...allEdits
+                  }
                 }
               })
               .eq('id', userId);
-          })
-          .then(() => {}, () => {});
+          } catch (err) {
+            console.warn('[flashcardsService] Erro ao sincronizar edição de flashcard na nuvem:', err);
+          }
+        })();
       }
     } catch (e) {
       console.warn('Erro ao salvar edição do flashcard:', e);
+    }
+  },
+
+  /**
+   * Sincroniza edições personalizadas de flashcards armazenadas em profiles.preferences.flashcardEdits
+   */
+  async syncRemoteCardEdits(userId?: string | null): Promise<Record<string, Partial<FlashcardItem>>> {
+    const local = this.loadUserCardEdits(userId);
+    if (!userId || userId === 'demo-student') return local;
+    try {
+      const client = createClient();
+      const { data: sessionData } = await client.auth.getSession();
+      if (!sessionData?.session) return local;
+
+      const { data: profileRow, error } = await client
+        .from('profiles')
+        .select('preferences')
+        .eq('id', userId)
+        .maybeSingle();
+
+      if (error || !profileRow) return local;
+
+      const prefs =
+        profileRow.preferences &&
+        typeof profileRow.preferences === 'object' &&
+        !Array.isArray(profileRow.preferences)
+          ? (profileRow.preferences as Record<string, unknown>)
+          : {};
+
+      const remoteEdits =
+        prefs.flashcardEdits &&
+        typeof prefs.flashcardEdits === 'object' &&
+        !Array.isArray(prefs.flashcardEdits)
+          ? (prefs.flashcardEdits as Record<string, Partial<FlashcardItem>>)
+          : {};
+
+      const merged: Record<string, Partial<FlashcardItem>> = {
+        ...remoteEdits,
+        ...local
+      };
+
+      if (typeof window !== 'undefined') {
+        localStorage.setItem(getCardEditsStorageKey(userId), JSON.stringify(merged));
+        localStorage.removeItem(USER_CARD_EDITS_KEY);
+      }
+
+      const missingKeys = Object.keys(local).filter((k) => !remoteEdits[k]);
+      if (missingKeys.length > 0) {
+        await client
+          .from('profiles')
+          .update({
+            preferences: {
+              ...prefs,
+              flashcardEdits: merged
+            }
+          })
+          .eq('id', userId);
+      }
+
+      return merged;
+    } catch (err) {
+      console.warn('[flashcardsService] Erro ao sincronizar edições de flashcards:', err);
+      return local;
     }
   }
 };

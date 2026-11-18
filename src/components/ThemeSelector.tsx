@@ -6,7 +6,7 @@ import { Sun, Moon, Palette, Check, ChevronDown, SlidersHorizontal } from 'lucid
 import { useTheme, AccentColor, ACCENT_CONFIGS } from '@/context/ThemeContext';
 
 export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false }) => {
-  const { mode, accent, toggleMode, setAccent, isDashboardCustomizing, toggleDashboardCustomizing, canCustomizeLayout } = useTheme();
+  const { mode, accent, setMode, setAccent, isDashboardCustomizing, toggleDashboardCustomizing, canCustomizeLayout } = useTheme();
   const pathname = usePathname();
   const isAllowedRoute = pathname ? (pathname === '/dashboard' || pathname === '/desempenho') : false;
   const isCustomizationAvailable = Boolean(canCustomizeLayout && isAllowedRoute);
@@ -65,37 +65,58 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
 
         {/* Dropdown Expandido com as Opções de Modo, Cores e Personalizar Layout */}
         {isOpen && (
-          <div className="absolute right-0 top-full mt-2 w-64 p-3 bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl shadow-xl z-50 space-y-3 animate-in fade-in zoom-in-95 duration-150">
-            {/* Modo Claro / Escuro */}
-            <div className="flex items-center justify-between pb-2.5 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+          <div className="absolute right-0 top-full mt-2 w-68 p-3.5 bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl shadow-xl z-50 space-y-3.5 animate-in fade-in zoom-in-95 duration-150">
+            {/* Modo Claro / Escuro (Segmented Control sem ambiguidade) */}
+            <div className="space-y-2 pb-3 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block">
                 Aparência
               </span>
-              <button
-                type="button"
-                onClick={toggleMode}
-                className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200/80 dark:border-zinc-700/60 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all cursor-pointer"
+              <div
+                role="group"
+                aria-label="Selecionar aparência clara ou escura"
+                className="relative grid grid-cols-2 p-0.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800"
               >
-                {mode === 'dark' ? (
-                  <>
-                    <Sun className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Claro</span>
-                  </>
-                ) : (
-                  <>
-                    <Moon className="w-3.5 h-3.5 text-indigo-600" />
-                    <span>Escuro</span>
-                  </>
-                )}
-              </button>
+                <span
+                  aria-hidden="true"
+                  className={`pointer-events-none absolute inset-y-0.5 left-0.5 w-[calc(50%-2px)] rounded-lg bg-white dark:bg-zinc-800 shadow-xs border border-zinc-200/70 dark:border-zinc-700/70 transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                    mode === 'dark' ? 'translate-x-full' : 'translate-x-0'
+                  }`}
+                />
+                <button
+                  type="button"
+                  onClick={() => setMode('light')}
+                  aria-pressed={mode === 'light'}
+                  className={`relative z-10 flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
+                    mode === 'light'
+                      ? 'text-zinc-900'
+                      : 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200'
+                  }`}
+                >
+                  <Sun className="w-3.5 h-3.5 text-amber-500" />
+                  <span>Claro</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setMode('dark')}
+                  aria-pressed={mode === 'dark'}
+                  className={`relative z-10 flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
+                    mode === 'dark'
+                      ? 'text-zinc-100'
+                      : 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200'
+                  }`}
+                >
+                  <Moon className="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400" />
+                  <span>Escuro</span>
+                </button>
+              </div>
             </div>
 
             {/* Cores de Destaque */}
             <div>
-              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block mb-2">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block mb-2">
                 Cor de Destaque
               </span>
-              <div className="grid grid-cols-7 gap-1">
+              <div className="grid grid-cols-7 gap-1.5">
                 {accentList.map((item) => {
                   const isSelected = accent === item.id;
                   return (
@@ -107,10 +128,10 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
                       }}
                       title={`Cor ${item.label}`}
                       aria-label={`Selecionar cor ${item.label}`}
-                      className={`h-7 rounded-lg transition-all cursor-pointer flex items-center justify-center relative ${
+                      className={`h-7 rounded-lg transition-all duration-150 cursor-pointer flex items-center justify-center relative active:scale-95 ${
                         isSelected
-                          ? 'ring-2 ring-slate-900 dark:ring-white scale-110 shadow-md'
-                          : 'opacity-70 hover:opacity-100 hover:scale-105'
+                          ? 'ring-2 ring-zinc-900 dark:ring-white ring-offset-1 ring-offset-white dark:ring-offset-[#121215] scale-105 shadow-xs'
+                          : 'opacity-80 hover:opacity-100 hover:scale-105 border border-black/5 dark:border-white/10'
                       }`}
                       style={{ backgroundColor: item.hex }}
                     >
@@ -166,23 +187,38 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
         </div>
 
         {/* Botão Modo Claro / Escuro Segmentado */}
-        <button
-          type="button"
-          onClick={toggleMode}
-          className="flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-xl border transition-all cursor-pointer bg-white dark:bg-[#121215] border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:border-slate-300 dark:hover:border-zinc-700 shadow-sm"
+        <div
+          role="group"
+          aria-label="Selecionar aparência clara ou escura"
+          className="inline-flex items-center p-0.5 rounded-xl border bg-zinc-100 dark:bg-zinc-900 border-slate-200 dark:border-zinc-800"
         >
-          {mode === 'dark' ? (
-            <>
-              <Sun className="w-3.5 h-3.5 text-amber-400" />
-              <span>Claro</span>
-            </>
-          ) : (
-            <>
-              <Moon className="w-3.5 h-3.5 text-indigo-600" />
-              <span>Escuro</span>
-            </>
-          )}
-        </button>
+          <button
+            type="button"
+            onClick={() => setMode('light')}
+            aria-pressed={mode === 'light'}
+            className={`flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg transition-all cursor-pointer ${
+              mode === 'light'
+                ? 'bg-white text-slate-900 shadow-2xs'
+                : 'text-slate-500 dark:text-zinc-400 hover:text-slate-800 dark:hover:text-zinc-200'
+            }`}
+          >
+            <Sun className="w-3.5 h-3.5 text-amber-500" />
+            <span>Claro</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setMode('dark')}
+            aria-pressed={mode === 'dark'}
+            className={`flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg transition-all cursor-pointer ${
+              mode === 'dark'
+                ? 'bg-zinc-800 text-zinc-100 shadow-2xs'
+                : 'text-slate-500 dark:text-zinc-400 hover:text-slate-800 dark:hover:text-zinc-200'
+            }`}
+          >
+            <Moon className="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400" />
+            <span>Escuro</span>
+          </button>
+        </div>
       </div>
 
       <div>

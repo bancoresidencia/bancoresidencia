@@ -19,15 +19,17 @@ interface DbScheduledTaskRow {
   updated_at?: string;
 }
 
+const LEGACY_SCHEDULED_TASKS_KEY = 'bancoresidencia_user_scheduled_tasks';
+
 export function getUserScheduledTasksStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_user_scheduled_tasks_${userId}` : 'bancoresidencia_user_scheduled_tasks_guest';
 }
 
 /**
  * Carrega as tarefas agendadas do aluno:
- * 1. Leitura imediata do cache local do usuário (0ms de latência)
- * 2. Migração automática da chave legada sem perda de dados
- * 3. Sincronização em nuvem com Supabase (user_scheduled_tasks)
+ * 1. Leitura imediata do cache local isolado por userId
+ * 2. Migração única e limpeza definitiva da chave legada global
+ * 3. Sincronização em nuvem com Supabase (user_scheduled_tasks) após validar sessão JWT
  */
 export async function loadUserScheduledTasks(userId?: string | null): Promise<DailyScheduleSlot[]> {
   const key = getUserScheduledTasksStorageKey(userId);
@@ -37,19 +39,25 @@ export async function loadUserScheduledTasks(userId?: string | null): Promise<Da
     try {
       const saved = localStorage.getItem(key);
       if (saved) {
-        localTasks = JSON.parse(saved) as DailyScheduleSlot[];
-      } else {
-        // Tenta migrar da chave legada global se existir
-        const legacy = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
-        if (legacy) {
-          try {
-            const parsedLegacy = JSON.parse(legacy) as DailyScheduleSlot[];
-            if (Array.isArray(parsedLegacy) && parsedLegacy.length > 0) {
-              localTasks = parsedLegacy;
+        const parsed = JSON.parse(saved) as DailyScheduleSlot[];
+        localTasks = Array.isArray(parsed) ? parsed : [];
+      }
+
+      // Migra chave legada global uma única vez e remove imediatamente
+      const legacy = localStorage.getItem(LEGACY_SCHEDULED_TASKS_KEY);
+      if (legacy) {
+        localStorage.removeItem(LEGACY_SCHEDULED_TASKS_KEY);
+        try {
+          const parsedLegacy = JSON.parse(legacy) as DailyScheduleSlot[];
+          if (Array.isArray(parsedLegacy) && parsedLegacy.length > 0) {
+            const existingIds = new Set(localTasks.map((t) => t.id));
+            const migrated = parsedLegacy.filter((t) => !existingIds.has(t.id));
+            if (migrated.length > 0) {
+              localTasks = [...localTasks, ...migrated];
               localStorage.setItem(key, JSON.stringify(localTasks));
             }
-          } catch {}
-        }
+          }
+        } catch {}
       }
     } catch {
       localTasks = [];
@@ -57,10 +65,18 @@ export async function loadUserScheduledTasks(userId?: string | null): Promise<Da
     localTasks = localTasks.filter((t) => !t.isAiSuggested && !t.id.startsWith('ai_sug_'));
   }
 
-  // Sincronização remota quando autenticado
+  // Sincronização remota quando autenticado com JWT válido
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
+      const {
+        data: { session: authSession }
+      } = await supabase.auth.getSession();
+
+      if (!authSession?.user || authSession.user.id !== userId) {
+        return localTasks;
+      }
+
       const { data, error } = await supabase
         .from('user_scheduled_tasks')
         .select('*')
@@ -68,7 +84,12 @@ export async function loadUserScheduledTasks(userId?: string | null): Promise<Da
         .order('date', { ascending: true })
         .order('start_minutes', { ascending: true });
 
-      if (!error && data) {
+      if (error) {
+        console.warn('[userScheduledTasksService] Erro ao consultar tarefas no Supabase:', error.message);
+        return localTasks;
+      }
+
+      if (data) {
         const rows = data as unknown as DbScheduledTaskRow[];
         const remoteTasks: DailyScheduleSlot[] = rows.map((r) => ({
           id: r.id,
@@ -82,15 +103,21 @@ export async function loadUserScheduledTasks(userId?: string | null): Promise<Da
           source: r.source || 'plataforma',
           description: r.description || '',
           isCalendarTask: r.is_calendar_task,
+          isCompleted: Boolean(r.is_completed),
           action: 'treinar'
         }));
 
         const remoteIds = new Set(remoteTasks.map((t) => t.id));
         const missingOnRemote = localTasks.filter((t) => !remoteIds.has(t.id));
-        const merged = [...remoteTasks.filter((t) => !t.isAiSuggested && !t.id.startsWith('ai_sug_')), ...missingOnRemote];
+        const merged = [
+          ...remoteTasks.filter((t) => !t.isAiSuggested && !t.id.startsWith('ai_sug_')),
+          ...missingOnRemote
+        ];
 
         if (typeof window !== 'undefined') {
-          localStorage.setItem(key, JSON.stringify(merged));
+          try {
+            localStorage.setItem(key, JSON.stringify(merged));
+          } catch {}
         }
 
         // Envia para o Supabase tarefas locais que ainda não estavam na nuvem
@@ -108,10 +135,17 @@ export async function loadUserScheduledTasks(userId?: string | null): Promise<Da
             source: t.source || 'plataforma',
             description: t.description || '',
             is_calendar_task: t.isCalendarTask ?? true,
-            is_completed: false,
+            is_completed: Boolean(t.isCompleted),
             updated_at: new Date().toISOString()
           }));
-          supabase.from('user_scheduled_tasks').upsert(payload, { onConflict: 'id' }).then(() => {});
+
+          const { error: syncErr } = await supabase
+            .from('user_scheduled_tasks')
+            .upsert(payload, { onConflict: 'id' });
+
+          if (syncErr) {
+            console.warn('[userScheduledTasksService] Falha ao enviar tarefas pendentes:', syncErr.message);
+          }
         }
 
         return merged;
@@ -126,7 +160,7 @@ export async function loadUserScheduledTasks(userId?: string | null): Promise<Da
 
 /**
  * Salva ou atualiza uma tarefa agendada:
- * Atualiza o storage local imediatamente e sincroniza em background no Supabase.
+ * Atualiza o storage local imediatamente e sincroniza no Supabase com fallback keepalive.
  */
 export async function saveUserScheduledTask(task: DailyScheduleSlot, userId?: string | null): Promise<void> {
   const key = getUserScheduledTasksStorageKey(userId);
@@ -141,6 +175,7 @@ export async function saveUserScheduledTask(task: DailyScheduleSlot, userId?: st
   }
 
   if (userId && userId !== 'demo-student') {
+    let savedDirect = false;
     try {
       const supabase = createClient();
       const payload = {
@@ -156,13 +191,32 @@ export async function saveUserScheduledTask(task: DailyScheduleSlot, userId?: st
         source: task.source || 'plataforma',
         description: task.description || '',
         is_calendar_task: task.isCalendarTask ?? true,
-        is_completed: false,
+        is_completed: Boolean(task.isCompleted),
         updated_at: new Date().toISOString()
       };
 
-      await supabase.from('user_scheduled_tasks').upsert(payload, { onConflict: 'id' });
+      const { error } = await supabase
+        .from('user_scheduled_tasks')
+        .upsert(payload, { onConflict: 'id' });
+
+      if (!error) {
+        savedDirect = true;
+      } else {
+        console.warn('[userScheduledTasksService] Erro no upsert direto de tarefa:', error.message);
+      }
     } catch (err) {
-      console.warn('[userScheduledTasksService] Falha no upsert remoto da tarefa:', err);
+      console.warn('[userScheduledTasksService] Exceção no upsert remoto da tarefa:', err);
+    }
+
+    if (!savedDirect && typeof window !== 'undefined') {
+      try {
+        await fetch('/api/student/timer-state', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ scheduledTask: task }),
+          keepalive: true
+        });
+      } catch {}
     }
   }
 }
@@ -187,11 +241,15 @@ export async function deleteUserScheduledTask(taskId: string, userId?: string | 
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
-      await supabase
+      const { error } = await supabase
         .from('user_scheduled_tasks')
         .delete()
         .eq('id', taskId)
         .eq('user_id', userId);
+
+      if (error) {
+        console.warn('[userScheduledTasksService] Erro ao excluir tarefa remota:', error.message);
+      }
     } catch (err) {
       console.warn('[userScheduledTasksService] Falha ao excluir tarefa remota:', err);
     }
@@ -207,19 +265,23 @@ export async function clearAllUserScheduledTasks(userId?: string | null): Promis
   if (typeof window !== 'undefined') {
     try {
       localStorage.removeItem(key);
+      localStorage.removeItem(LEGACY_SCHEDULED_TASKS_KEY);
     } catch {}
   }
 
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
-      await supabase
+      const { error } = await supabase
         .from('user_scheduled_tasks')
         .delete()
         .eq('user_id', userId);
+
+      if (error) {
+        console.warn('[userScheduledTasksService] Erro ao limpar tarefas remotas:', error.message);
+      }
     } catch (err) {
       console.warn('[userScheduledTasksService] Falha ao limpar tarefas remotas:', err);
     }
   }
 }
-

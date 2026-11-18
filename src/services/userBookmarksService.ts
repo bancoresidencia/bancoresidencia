@@ -7,6 +7,8 @@ import {
   clearSyncedDeletes
 } from '@/utils/crossDeviceSync';
 
+const LEGACY_BOOKMARKS_KEY = 'br_bookmarked_questions';
+
 export function getBookmarksStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_bookmarks_${userId}` : 'bancoresidencia_bookmarks_guest';
 }
@@ -20,23 +22,28 @@ export function readLocalBookmarks(userId?: string | null): Record<string, boole
   const key = getBookmarksStorageKey(userId);
   try {
     const saved = localStorage.getItem(key);
-    if (saved) {
-      return (JSON.parse(saved) as Record<string, boolean>) || {};
-    }
-    if (!userId) {
-      const legacy = localStorage.getItem('br_bookmarked_questions');
-      if (legacy) {
+    let localBookmarks: Record<string, boolean> = saved
+      ? (JSON.parse(saved) as Record<string, boolean>) || {}
+      : {};
+
+    const legacy = localStorage.getItem(LEGACY_BOOKMARKS_KEY);
+    if (legacy) {
+      localStorage.removeItem(LEGACY_BOOKMARKS_KEY);
+      try {
         const parsed = JSON.parse(legacy) as Record<string, boolean>;
         if (parsed && typeof parsed === 'object') {
-          localStorage.setItem(key, JSON.stringify(parsed));
-          return parsed;
+          localBookmarks = { ...parsed, ...localBookmarks };
+          localStorage.setItem(key, JSON.stringify(localBookmarks));
         }
+      } catch {
+        // ignore
       }
     }
+
+    return localBookmarks;
   } catch {
-    // ignore
+    return {};
   }
-  return {};
 }
 
 /**
@@ -67,14 +74,12 @@ export async function reconcileUserBookmarksWithRemote(
 
   const merged: Record<string, boolean> = {};
 
-  // 1. Mantém favoritos remotos que não foram excluídos offline neste dispositivo
   for (const id of remoteSet) {
     if (!journal.deletes[id]) {
       merged[id] = true;
     }
   }
 
-  // 2. Preserva adições pendentes offline (ou da primeira migração)
   const toUpload: string[] = [];
   for (const id of Object.keys(localBookmarks)) {
     if (!localBookmarks[id] || journal.deletes[id]) continue;
@@ -86,7 +91,6 @@ export async function reconcileUserBookmarksWithRemote(
     }
   }
 
-  // Também garante upload de upserts registrados no journal mesmo que o cache tenha sido recarregado
   for (const id of pendingUpsertIds) {
     if (!journal.deletes[id]) {
       merged[id] = true;
@@ -99,6 +103,7 @@ export async function reconcileUserBookmarksWithRemote(
   if (typeof window !== 'undefined') {
     try {
       localStorage.setItem(key, JSON.stringify(merged));
+      localStorage.removeItem(LEGACY_BOOKMARKS_KEY);
     } catch {
       // ignore
     }
@@ -106,7 +111,6 @@ export async function reconcileUserBookmarksWithRemote(
 
   const supabase = createClient();
 
-  // 3. Propaga exclusões pendentes offline para o Supabase
   if (pendingDeleteIds.length > 0) {
     const stillOnRemote = pendingDeleteIds.filter((id) => remoteSet.has(id));
     if (stillOnRemote.length > 0) {
@@ -123,7 +127,6 @@ export async function reconcileUserBookmarksWithRemote(
     }
   }
 
-  // 4. Propaga adições pendentes offline para o Supabase
   if (toUpload.length > 0) {
     const payload = toUpload.map((qid) => ({
       user_id: userId,
@@ -152,6 +155,13 @@ export async function loadUserBookmarks(userId?: string | null): Promise<Record<
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
+      const {
+        data: { session }
+      } = await supabase.auth.getSession();
+      if (!session?.user || session.user.id !== userId) {
+        return localBookmarks;
+      }
+
       const { data, error } = await supabase
         .from('user_bookmarks')
         .select('question_id')
@@ -196,9 +206,7 @@ export async function toggleUserBookmark(
   if (typeof window !== 'undefined') {
     try {
       localStorage.setItem(key, JSON.stringify(next));
-      if (!userId) {
-        localStorage.setItem('br_bookmarked_questions', JSON.stringify(next));
-      }
+      localStorage.removeItem(LEGACY_BOOKMARKS_KEY);
     } catch {
       // ignore
     }

@@ -119,15 +119,15 @@ export const HeaderStudyTimer: React.FC = () => {
             </button>
 
             {/* Display Estático "00:00:00" na Fonte Inter */}
-            <span className="hidden md:inline-block font-[var(--font-inter)] text-xs font-bold tabular-nums tracking-tight text-slate-400 dark:text-zinc-500 px-1">
+            <span className="hidden md:inline-block font-[var(--font-inter)] text-xs font-bold tabular-nums tracking-tight text-slate-500 dark:text-zinc-400 px-1">
               00:00:00
             </span>
 
-            {/* Botão Iniciar (Verde Play) */}
+            {/* Botão Iniciar (Verde Play com Contraste WCAG AA) */}
             <button
               type="button"
               onClick={() => startTimer()}
-              className="px-2.5 py-1.5 min-h-[34px] rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center justify-center gap-1 transition-all shadow-xs cursor-pointer active:scale-95 touch-manipulation"
+              className="px-2.5 py-1.5 min-h-[34px] rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold flex items-center justify-center gap-1 transition-all shadow-xs cursor-pointer active:scale-95 touch-manipulation"
               title="Iniciar contagem de estudo"
               aria-label="Iniciar contagem de estudo"
             >
@@ -250,71 +250,71 @@ export const HeaderStudyTimer: React.FC = () => {
                 </button>
               </div>
 
-            {/* Especialidades Principais (Atalhos de 1 Clique) */}
-            {!searchQuery && (
-              <div className="mb-3 space-y-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block px-1">
-                  Grandes Áreas
-                </span>
-                <div className="grid grid-cols-2 gap-1.5">
-                  {CORE_SPECIALTIES.map((esp) => (
-                    <button
-                      key={esp.name}
-                      type="button"
-                      onClick={() =>
-                        handleSelectTaxonomyItem({
-                          id: esp.name,
-                          especialidade: esp.name,
-                          label: esp.name,
-                          breadcrumb: esp.name,
-                          level: 'especialidade'
-                        })
-                      }
-                      className="px-2 py-1.5 rounded-lg text-left text-xs font-bold transition-colors bg-slate-50 dark:bg-zinc-900 hover:bg-blue-50 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-200 flex items-center gap-2 cursor-pointer border border-slate-100 dark:border-zinc-800/60 truncate"
-                    >
-                      <span
-                        className="w-2 h-2 rounded-full shrink-0"
-                        style={{ backgroundColor: esp.color }}
-                      />
-                      <span className="truncate">{esp.name}</span>
-                    </button>
-                  ))}
+              {/* Especialidades Principais (Atalhos de 1 Clique) */}
+              {!searchQuery && (
+                <div className="mb-3 space-y-1">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block px-1">
+                    Grandes Áreas
+                  </span>
+                  <div className="grid grid-cols-2 gap-1.5">
+                    {CORE_SPECIALTIES.map((esp) => (
+                      <button
+                        key={esp.name}
+                        type="button"
+                        onClick={() =>
+                          handleSelectTaxonomyItem({
+                            id: esp.name,
+                            especialidade: esp.name,
+                            label: esp.name,
+                            breadcrumb: esp.name,
+                            level: 'especialidade'
+                          })
+                        }
+                        className="px-2 py-1.5 rounded-lg text-left text-xs font-bold transition-colors bg-slate-50 dark:bg-zinc-900 hover:bg-blue-50 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-200 flex items-center gap-2 cursor-pointer border border-slate-100 dark:border-zinc-800/60 truncate"
+                      >
+                        <span
+                          className="w-2 h-2 rounded-full shrink-0"
+                          style={{ backgroundColor: esp.color }}
+                        />
+                        <span className="truncate">{esp.name}</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
-
-            {/* Resultados Pesquisados */}
-            <div className="space-y-1 max-h-56 overflow-y-auto">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block px-1">
-                {searchQuery ? 'Resultados Encontrados' : 'Sugestões de Temas'}
-              </span>
-
-              {isLoadingTaxonomy ? (
-                <div className="p-4 text-center text-xs text-slate-400">
-                  Pesquisando na taxonomia clínica...
-                </div>
-              ) : searchResults.length === 0 ? (
-                <div className="p-4 text-center text-xs text-slate-400">
-                  Nenhum tema encontrado para &quot;{searchQuery}&quot;.
-                </div>
-              ) : (
-                searchResults.map((item) => (
-                  <button
-                    key={item.id}
-                    type="button"
-                    onClick={() => handleSelectTaxonomyItem(item)}
-                    className="w-full text-left p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer group"
-                  >
-                    <div className="text-xs font-bold text-slate-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 truncate">
-                      {item.label}
-                    </div>
-                    <div className="text-[10px] text-slate-400 dark:text-zinc-500 truncate mt-0.5">
-                      {item.breadcrumb}
-                    </div>
-                  </button>
-                ))
               )}
-            </div>
+
+              {/* Resultados Pesquisados */}
+              <div className="space-y-1 max-h-56 overflow-y-auto">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block px-1">
+                  {searchQuery ? 'Resultados Encontrados' : 'Sugestões de Temas'}
+                </span>
+
+                {isLoadingTaxonomy ? (
+                  <div className="p-4 text-center text-xs text-slate-400">
+                    Pesquisando na taxonomia clínica...
+                  </div>
+                ) : searchResults.length === 0 ? (
+                  <div className="p-4 text-center text-xs text-slate-400">
+                    Nenhum tema encontrado para &quot;{searchQuery}&quot;.
+                  </div>
+                ) : (
+                  searchResults.map((item) => (
+                    <button
+                      key={item.id}
+                      type="button"
+                      onClick={() => handleSelectTaxonomyItem(item)}
+                      className="w-full text-left p-2 rounded-xl hover:bg-blue-50 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer group"
+                    >
+                      <div className="text-xs font-bold text-slate-900 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 truncate">
+                        {item.label}
+                      </div>
+                      <div className="text-[10px] text-slate-400 dark:text-zinc-500 truncate mt-0.5">
+                        {item.breadcrumb}
+                      </div>
+                    </button>
+                  ))
+                )}
+              </div>
             </div>
           </>
         )}

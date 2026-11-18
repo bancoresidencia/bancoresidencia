@@ -5,7 +5,8 @@ import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 import { StudentDataProvider } from '@/context/StudentDataContext';
 import { AppShell } from '@/components/layout/AppShell';
-import { ShieldAlert, Loader2 } from 'lucide-react';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { ShieldAlert } from 'lucide-react';
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
@@ -18,11 +19,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   }, [user, isAdmin, isLoading, router]);
 
   if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
-        <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
-      </div>
-    );
+    return <HippocampusLoading fullScreen message="Validando permissões..." />;
   }
 
   if (!user || !isAdmin) {

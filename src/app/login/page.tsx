@@ -4,7 +4,7 @@ import React, { Suspense, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { AuthScreen } from '@/components/AuthScreen';
 import { useAuth } from '@/context/AuthContext';
-import { Loader2 } from 'lucide-react';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 
 function LoginContent() {
   const router = useRouter();
@@ -20,11 +20,7 @@ function LoginContent() {
   }, [isLoading, isAuthenticated, user, nextRoute, router]);
 
   if (isLoading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)]">
-        <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
-      </div>
-    );
+    return <HippocampusLoading fullScreen message="Verificando sessão..." />;
   }
 
   return (
@@ -44,13 +40,7 @@ function LoginContent() {
 
 export default function LoginPage() {
   return (
-    <Suspense
-      fallback={
-        <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)]">
-          <Loader2 className="w-8 h-8 animate-spin text-blue-600" />
-        </div>
-      }
-    >
+    <Suspense fallback={<HippocampusLoading fullScreen message="Preparando acesso..." />}>
       <LoginContent />
     </Suspense>
   );

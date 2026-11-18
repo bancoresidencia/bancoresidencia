@@ -29,6 +29,7 @@ export interface DailyScheduleSlot {
   aiDecision?: AiDecisionDetails;
   date?: string; // Formato 'YYYY-MM-DD'
   isCalendarTask?: boolean;
+  isCompleted?: boolean;
   isStudySession?: boolean;
   questionsCount?: number;
   correctCount?: number;

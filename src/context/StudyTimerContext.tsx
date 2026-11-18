@@ -17,6 +17,7 @@ import {
   StudyTimerContextType
 } from '@/types/studyTimer';
 import { useAuth } from '@/context/AuthContext';
+import { createClient } from '@/lib/supabase/client';
 import { DailyScheduleSlot } from '@/components/dashboard/scheduleTypes';
 import {
   loadUserStudySessions,
@@ -29,8 +30,17 @@ import {
   deleteUserScheduledTask,
   getUserScheduledTasksStorageKey
 } from '@/services/userScheduledTasksService';
-
-const TIMER_STORAGE_KEY = 'bancoresidencia_study_timer_state';
+import {
+  PersistedTimerState,
+  getUserTimerStateStorageKey,
+  readLocalTimerState,
+  writeLocalTimerState,
+  clearLocalTimerState,
+  readLocalPlatformActiveSeconds,
+  writeLocalPlatformActiveSeconds,
+  loadUserTimerRuntime,
+  syncTimerRuntimeToCloud
+} from '@/services/userTimerRuntimeService';
 
 export function formatSecondsToHms(totalSec: number): string {
   if (isNaN(totalSec) || totalSec < 0) return '00:00:00';
@@ -54,7 +64,6 @@ export function formatSecondsToShort(totalSec: number): string {
 /**
  * Converte qualquer entrada de data (Date, timestamp ms, string ISO ou YYYY-MM-DD)
  * em uma string "YYYY-MM-DD" estritamente alinhada ao FUSO HORÁRIO LOCAL do usuário (ex: América/São Paulo, UTC-3).
- * Evita o clássico bug de deslocamento de dia ao usar .toISOString().split('T')[0] à noite (21h-23h59).
  */
 export function getLocalDateStr(dateInput?: string | Date | number | null): string {
   if (!dateInput) return '';
@@ -67,23 +76,6 @@ export function getLocalDateStr(dateInput?: string | Date | number | null): stri
   const m = String(d.getMonth() + 1).padStart(2, '0');
   const day = String(d.getDate()).padStart(2, '0');
   return `${y}-${m}-${day}`;
-}
-
-interface StoredTimerState {
-  status: 'running' | 'paused';
-  accumulatedSeconds: number;
-  runningSince: number | null; // timestamp ms
-  sessionStartTime: string;
-  selectedTaxonomy: SelectedTaxonomy;
-  questionsCount?: number;
-  correctCount?: number;
-  incorrectCount?: number;
-  studyType?: StudyType;
-  sessionSource?: 'manual' | 'questoes' | 'simulado' | 'flashcards';
-}
-
-function getTimerStorageKey(userId?: string | null): string {
-  return userId ? `${TIMER_STORAGE_KEY}_${userId}` : TIMER_STORAGE_KEY;
 }
 
 const StudyTimerContext = createContext<StudyTimerContextType | undefined>(undefined);
@@ -119,6 +111,8 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   }, [sessionStartTime]);
 
   const isSavingRef = useRef<boolean>(false);
+  const lastLocalMutationMsRef = useRef<number>(0);
+  const cloudTimerDebounceRef = useRef<NodeJS.Timeout | null>(null);
 
   // Refs de controle temporal preciso (resiliente contra throttling de background)
   const accumulatedSecondsRef = useRef<number>(0);
@@ -128,7 +122,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   // Lista de sessões salvas
   const [savedSessions, setSavedSessions] = useState<StudySession[]>([]);
 
-  // Contadores dinâmicos de questões da sessão em andamento (Zero-Touch)
+  // Contadores dinâmicos de questões da sessão em andamento (Zero-Touch + Resiliente a F5)
   const [sessionQuestionsCount, setSessionQuestionsCount] = useState<number>(0);
   const [sessionCorrectCount, setSessionCorrectCount] = useState<number>(0);
   const [sessionIncorrectCount, setSessionIncorrectCount] = useState<number>(0);
@@ -138,35 +132,215 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const activeStudyTypeRef = useRef<StudyType>('questoes');
   const sessionSourceRef = useRef<'manual' | 'questoes' | 'simulado' | 'flashcards'>('manual');
 
-  // Rastreamento Contínuo e Inteligente de Tempo Ativo na Plataforma (Zero-Touch)
+  // Rastreamento Contínuo e Sincronizado em Nuvem de Tempo Ativo na Plataforma
   const [platformActiveSeconds, setPlatformActiveSeconds] = useState<number>(0);
   const platformActiveRef = useRef<number>(0);
   useEffect(() => {
     platformActiveRef.current = platformActiveSeconds;
   }, [platformActiveSeconds]);
 
-  const getPlatformActiveKey = useCallback((uid?: string | null) => {
-    const d = getLocalDateStr(new Date());
-    return `bancoresidencia_platform_active_time_${uid || 'guest'}_${d}`;
+  // Aplica um estado persistido (local ou nuvem) ao cronômetro em memória
+  const applyRestoredTimerState = useCallback((saved: PersistedTimerState) => {
+    setSelectedTaxonomy(saved.selectedTaxonomy || {});
+    selectedTaxonomyRef.current = saved.selectedTaxonomy || {};
+
+    const startIso = saved.sessionStartTime || new Date().toISOString();
+    setSessionStartTime(startIso);
+    sessionStartTimeRef.current = startIso;
+
+    activeStudyTypeRef.current = saved.studyType || 'questoes';
+    sessionSourceRef.current = saved.sessionSource || 'manual';
+
+    const qCount = saved.questionsCount || 0;
+    const cCount = saved.correctCount || 0;
+    const iCount = saved.incorrectCount || 0;
+    setSessionQuestionsCount(qCount);
+    setSessionCorrectCount(cCount);
+    setSessionIncorrectCount(iCount);
+    sessionQuestionsCountRef.current = qCount;
+    sessionCorrectCountRef.current = cCount;
+    sessionIncorrectCountRef.current = iCount;
+
+    if (saved.status === 'running' && saved.runningSince) {
+      const deltaSec = Math.max(0, Math.floor((Date.now() - saved.runningSince) / 1000));
+      const total = (saved.accumulatedSeconds || 0) + deltaSec;
+      accumulatedSecondsRef.current = total;
+      runningSinceRef.current = Date.now();
+      setElapsedSeconds(total);
+      setStatus('running');
+      statusRef.current = 'running';
+    } else if (saved.status === 'paused') {
+      const pausedTotal = saved.accumulatedSeconds || 0;
+      accumulatedSecondsRef.current = pausedTotal;
+      runningSinceRef.current = null;
+      setElapsedSeconds(pausedTotal);
+      setStatus('paused');
+      statusRef.current = 'paused';
+    }
   }, []);
 
-  // Recupera tempo ativo do dia atual ao inicializar
+  // Persiste estado completo do cronômetro em andamento (local por userId + Supabase)
+  const persistCurrentTimerState = useCallback(
+    (nextStatus: 'running' | 'paused', syncMode: 'immediate' | 'debounced' | 'local_only' = 'immediate') => {
+      const uid = userRef.current?.id;
+      const nowMs = Date.now();
+      lastLocalMutationMsRef.current = nowMs;
+
+      const snapshot: PersistedTimerState = {
+        userId: uid || 'guest',
+        status: nextStatus,
+        accumulatedSeconds: accumulatedSecondsRef.current,
+        runningSince: nextStatus === 'running' ? runningSinceRef.current : null,
+        sessionStartTime: sessionStartTimeRef.current || new Date().toISOString(),
+        selectedTaxonomy: selectedTaxonomyRef.current,
+        studyType: activeStudyTypeRef.current || 'questoes',
+        sessionSource: sessionSourceRef.current || 'manual',
+        questionsCount: sessionQuestionsCountRef.current,
+        correctCount: sessionCorrectCountRef.current,
+        incorrectCount: sessionIncorrectCountRef.current,
+        updatedAtMs: nowMs
+      };
+
+      writeLocalTimerState(snapshot, uid);
+
+      if (syncMode === 'local_only' || !uid || uid === 'demo-student') return;
+
+      if (cloudTimerDebounceRef.current) {
+        clearTimeout(cloudTimerDebounceRef.current);
+        cloudTimerDebounceRef.current = null;
+      }
+
+      if (syncMode === 'immediate') {
+        syncTimerRuntimeToCloud({ activeTimerState: snapshot }, uid).catch(() => {});
+      } else {
+        cloudTimerDebounceRef.current = setTimeout(() => {
+          syncTimerRuntimeToCloud({ activeTimerState: snapshot }, userRef.current?.id).catch(() => {});
+        }, 2000);
+      }
+    },
+    []
+  );
+
+  // Reseta estado apenas em memória (usado na troca de conta/logout sem apagar nuvem da outra conta)
+  const resetInMemoryTimerOnly = useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+    accumulatedSecondsRef.current = 0;
+    runningSinceRef.current = null;
+    setElapsedSeconds(0);
+    setStatus('idle');
+    statusRef.current = 'idle';
+    setSessionQuestionsCount(0);
+    setSessionCorrectCount(0);
+    setSessionIncorrectCount(0);
+    sessionQuestionsCountRef.current = 0;
+    sessionCorrectCountRef.current = 0;
+    sessionIncorrectCountRef.current = 0;
+    sessionSourceRef.current = 'manual';
+  }, []);
+
+  // Sincronização unificada de Sessões + Tempo Ativo Diário + Timer em Andamento por Conta (Local + Supabase)
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    try {
-      const key = getPlatformActiveKey(user?.id);
-      const saved = localStorage.getItem(key);
-      if (saved) {
-        const val = Number(saved);
-        if (!isNaN(val) && val >= 0) {
-          setPlatformActiveSeconds(val);
-          platformActiveRef.current = val;
+    let active = true;
+    const uid = user?.id;
+    const currentTodayStr = getLocalDateStr(new Date());
+
+    // 1. Isola imediatamente os contadores para o usuário atual (evita vazamento entre contas)
+    const initialLocalActive = readLocalPlatformActiveSeconds(uid, currentTodayStr);
+    platformActiveRef.current = initialLocalActive;
+    setPlatformActiveSeconds(initialLocalActive);
+
+    const localTimer = readLocalTimerState(uid);
+    if (localTimer) {
+      applyRestoredTimerState(localTimer);
+    } else {
+      resetInMemoryTimerOnly();
+    }
+
+    const syncAllFromAccount = async (targetUid?: string | null) => {
+      const [sessions, runtime] = await Promise.all([
+        loadUserStudySessions(targetUid),
+        loadUserTimerRuntime(targetUid, getLocalDateStr(new Date()))
+      ]);
+
+      if (!active) return;
+
+      setSavedSessions(sessions);
+
+      const mergedActive = Math.max(platformActiveRef.current, runtime.todayActiveSeconds);
+      if (mergedActive !== platformActiveRef.current) {
+        platformActiveRef.current = mergedActive;
+        setPlatformActiveSeconds(mergedActive);
+      }
+
+      if (
+        runtime.activeTimerState &&
+        !isSavingRef.current &&
+        (statusRef.current === 'idle' ||
+          runtime.activeTimerState.updatedAtMs > lastLocalMutationMsRef.current)
+      ) {
+        applyRestoredTimerState(runtime.activeTimerState);
+      }
+    };
+
+    syncAllFromAccount(uid);
+
+    // 2. Escuta eventos de autenticação do Supabase (resolve corrida quando token OAuth/refresh hidrata depois do cache)
+    const supabase = createClient();
+    const {
+      data: { subscription }
+    } = supabase.auth.onAuthStateChange((event, session) => {
+      if (!active) return;
+      if (
+        (event === 'INITIAL_SESSION' || event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') &&
+        session?.user?.id
+      ) {
+        if (!uid || session.user.id === uid) {
+          syncAllFromAccount(session.user.id);
+        }
+      } else if (event === 'SIGNED_OUT') {
+        setSavedSessions([]);
+        platformActiveRef.current = 0;
+        setPlatformActiveSeconds(0);
+        resetInMemoryTimerOnly();
+      }
+    });
+
+    // 3. Sincronia instantânea entre múltiplas abas do mesmo navegador
+    const handleStorageChange = (e: StorageEvent) => {
+      const currentSessionsKey = getUserStudySessionsStorageKey(uid);
+      if (e.key === currentSessionsKey && e.newValue) {
+        try {
+          setSavedSessions(JSON.parse(e.newValue));
+        } catch {}
+      }
+      const currentTimerKey = getUserTimerStateStorageKey(uid);
+      if (e.key === currentTimerKey) {
+        if (!e.newValue) {
+          resetInMemoryTimerOnly();
+        } else {
+          try {
+            const parsed = JSON.parse(e.newValue) as PersistedTimerState;
+            if (parsed && (parsed.status === 'running' || parsed.status === 'paused')) {
+              applyRestoredTimerState(parsed);
+            }
+          } catch {}
         }
       }
-    } catch { }
-  }, [user?.id, getPlatformActiveKey]);
+    };
 
-  // Heartbeat do tempo ativo na plataforma: conta cada segundo de presença ativa e interação
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      active = false;
+      subscription.unsubscribe();
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, [user?.id, applyRestoredTimerState, resetInMemoryTimerOnly]);
+
+  // Heartbeat do tempo ativo na plataforma: salva localmente a cada 5s e no Supabase a cada 30s + ao ocultar/fechar aba
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
@@ -183,23 +357,62 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     window.addEventListener('touchstart', markInteraction, { passive: true });
     window.addEventListener('click', markInteraction, { passive: true });
 
-    let saveCounter = 0;
+    let localSaveCounter = 0;
+    let cloudSyncCounter = 0;
+
+    const flushActiveTime = (keepalive = false) => {
+      const uid = userRef.current?.id;
+      const dateStr = getLocalDateStr(new Date());
+      const currentSecs = platformActiveRef.current;
+      writeLocalPlatformActiveSeconds(uid, dateStr, currentSecs);
+      if (uid && uid !== 'demo-student' && currentSecs > 0) {
+        syncTimerRuntimeToCloud(
+          { dateStr, activeSeconds: currentSecs },
+          uid,
+          keepalive
+        ).catch(() => {});
+      }
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        flushActiveTime(true);
+      }
+    };
+
+    const handlePageHide = () => {
+      flushActiveTime(true);
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('pagehide', handlePageHide);
 
     const interval = setInterval(() => {
       if (typeof document !== 'undefined' && document.hidden) return;
       if (Date.now() - lastInteraction > IDLE_THRESHOLD_MS) return;
 
-      const updated = platformActiveRef.current + 1;
+      const prev = platformActiveRef.current;
+      const updated = prev + 1;
       platformActiveRef.current = updated;
-      setPlatformActiveSeconds(updated);
+      if (Math.floor(updated / 60) !== Math.floor(prev / 60)) {
+        setPlatformActiveSeconds(updated);
+      }
 
-      saveCounter++;
-      if (saveCounter >= 5) {
-        saveCounter = 0;
-        try {
-          const key = getPlatformActiveKey(userRef.current?.id);
-          localStorage.setItem(key, String(updated));
-        } catch { }
+      localSaveCounter++;
+      cloudSyncCounter++;
+
+      if (localSaveCounter >= 5) {
+        localSaveCounter = 0;
+        writeLocalPlatformActiveSeconds(
+          userRef.current?.id,
+          getLocalDateStr(new Date()),
+          updated
+        );
+      }
+
+      if (cloudSyncCounter >= 30) {
+        cloudSyncCounter = 0;
+        flushActiveTime(false);
       }
     }, 1000);
 
@@ -210,102 +423,11 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       window.removeEventListener('scroll', markInteraction);
       window.removeEventListener('touchstart', markInteraction);
       window.removeEventListener('click', markInteraction);
-      try {
-        const key = getPlatformActiveKey(userRef.current?.id);
-        localStorage.setItem(key, String(platformActiveRef.current));
-      } catch { }
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('pagehide', handlePageHide);
+      flushActiveTime(true);
     };
-  }, [getPlatformActiveKey]);
-
-  // Carrega e sincroniza sessões vinculadas à conta do aluno (com revalidação em mudança de aba/online)
-  useEffect(() => {
-    let active = true;
-    const syncSessions = () => {
-      loadUserStudySessions(user?.id).then((sessions) => {
-        if (active) {
-          setSavedSessions(sessions);
-        }
-      });
-    };
-
-    syncSessions();
-
-    const handleStorageChange = (e: StorageEvent) => {
-      const currentKey = getUserStudySessionsStorageKey(user?.id);
-      if (e.key === currentKey && e.newValue) {
-        try {
-          setSavedSessions(JSON.parse(e.newValue));
-        } catch {}
-      }
-    };
-
-    const handleVisibility = () => {
-      if (document.visibilityState === 'visible' && user?.id) {
-        syncSessions();
-      }
-    };
-
-    window.addEventListener('storage', handleStorageChange);
-    window.addEventListener('online', syncSessions);
-    document.addEventListener('visibilitychange', handleVisibility);
-    return () => {
-      active = false;
-      window.removeEventListener('storage', handleStorageChange);
-      window.removeEventListener('online', syncSessions);
-      document.removeEventListener('visibilitychange', handleVisibility);
-    };
-  }, [user?.id]);
-
-  // Recupera estado salvo do timer ao montar (resiliência a F5 e suspensão de memória no Safari/Android)
-  useEffect(() => {
-    try {
-      const key = getTimerStorageKey(user?.id);
-      const raw = localStorage.getItem(key) || (!user?.id ? localStorage.getItem(TIMER_STORAGE_KEY) : null);
-      if (!raw) return;
-
-      const saved: StoredTimerState = JSON.parse(raw);
-      if (!saved) return;
-
-      setSelectedTaxonomy(saved.selectedTaxonomy || {});
-      setSessionStartTime(saved.sessionStartTime || new Date().toISOString());
-
-      // Restaura contadores de questões da sessão em andamento caso o mobile tenha recarregado a aba
-      if (typeof saved.questionsCount === 'number') {
-        setSessionQuestionsCount(saved.questionsCount);
-        sessionQuestionsCountRef.current = saved.questionsCount;
-      }
-      if (typeof saved.correctCount === 'number') {
-        setSessionCorrectCount(saved.correctCount);
-        sessionCorrectCountRef.current = saved.correctCount;
-      }
-      if (typeof saved.incorrectCount === 'number') {
-        setSessionIncorrectCount(saved.incorrectCount);
-        sessionIncorrectCountRef.current = saved.incorrectCount;
-      }
-      if (saved.studyType) {
-        activeStudyTypeRef.current = saved.studyType;
-      }
-      if (saved.sessionSource) {
-        sessionSourceRef.current = saved.sessionSource;
-      }
-
-      if (saved.status === 'running' && saved.runningSince) {
-        const deltaSec = Math.max(0, Math.floor((Date.now() - saved.runningSince) / 1000));
-        const total = (saved.accumulatedSeconds || 0) + deltaSec;
-        accumulatedSecondsRef.current = total;
-        runningSinceRef.current = Date.now();
-        setElapsedSeconds(total);
-        setStatus('running');
-      } else if (saved.status === 'paused') {
-        accumulatedSecondsRef.current = saved.accumulatedSeconds || 0;
-        runningSinceRef.current = null;
-        setElapsedSeconds(saved.accumulatedSeconds || 0);
-        setStatus('paused');
-      }
-    } catch (err) {
-      console.warn('Erro ao restaurar estado do cronômetro:', err);
-    }
-  }, [user?.id]);
+  }, []);
 
   // Tique-taque contínuo do cronômetro
   useEffect(() => {
@@ -334,60 +456,19 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     };
   }, [status]);
 
-  // Persistência contínua do estado no localStorage (incluindo contadores de questões e suporte a pagehide no mobile)
-  const persistTimerSnapshot = useCallback(() => {
-    const key = getTimerStorageKey(userRef.current?.id);
-    const curStatus = statusRef.current;
-    if (curStatus === 'running' || curStatus === 'paused') {
-      const stateToSave: StoredTimerState = {
-        status: curStatus === 'running' ? 'running' : 'paused',
-        accumulatedSeconds: accumulatedSecondsRef.current,
-        runningSince: runningSinceRef.current,
-        sessionStartTime: sessionStartTimeRef.current || new Date().toISOString(),
-        selectedTaxonomy: selectedTaxonomyRef.current,
-        questionsCount: sessionQuestionsCountRef.current,
-        correctCount: sessionCorrectCountRef.current,
-        incorrectCount: sessionIncorrectCountRef.current,
-        studyType: activeStudyTypeRef.current,
-        sessionSource: sessionSourceRef.current
-      };
-      try {
-        localStorage.setItem(key, JSON.stringify(stateToSave));
-      } catch { }
-    } else if (curStatus === 'idle') {
-      try {
-        localStorage.removeItem(key);
-        localStorage.removeItem(TIMER_STORAGE_KEY);
-      } catch { }
-    }
-  }, []);
+  // Atualiza taxonomia e sincroniza caso o cronômetro já esteja ativo
+  const handleSetSelectedTaxonomy = useCallback(
+    (tax: SelectedTaxonomy) => {
+      setSelectedTaxonomy(tax);
+      selectedTaxonomyRef.current = tax;
+      if (statusRef.current === 'running' || statusRef.current === 'paused') {
+        persistCurrentTimerState(statusRef.current, 'debounced');
+      }
+    },
+    [persistCurrentTimerState]
+  );
 
-  useEffect(() => {
-    persistTimerSnapshot();
-  }, [status, selectedTaxonomy, sessionStartTime, sessionQuestionsCount, sessionCorrectCount, sessionIncorrectCount, persistTimerSnapshot]);
-
-  // Salva snapshot imediatamente em pagehide / visibilitychange para resiliência total no iOS Safari e Android
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const flushOnHide = () => {
-      persistTimerSnapshot();
-      try {
-        const activeKey = getPlatformActiveKey(userRef.current?.id);
-        localStorage.setItem(activeKey, String(platformActiveRef.current));
-      } catch { }
-    };
-    const handleVis = () => {
-      if (document.visibilityState === 'hidden') flushOnHide();
-    };
-    window.addEventListener('pagehide', flushOnHide);
-    document.addEventListener('visibilitychange', handleVis);
-    return () => {
-      window.removeEventListener('pagehide', flushOnHide);
-      document.removeEventListener('visibilitychange', handleVis);
-    };
-  }, [persistTimerSnapshot, getPlatformActiveKey]);
-
-  // Sincronização em tempo real do título da aba (document.title - padrão Aprovado)
+  // Sincronização em tempo real do título da aba (document.title)
   useEffect(() => {
     const originalTitle = 'Banco Residência — Questões & Residência Médica';
     const activeLabel =
@@ -411,19 +492,36 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   }, [status, elapsedSeconds, selectedTaxonomy]);
 
   // Iniciar Cronômetro (sempre do zero a cada sessão)
-  const startTimer = useCallback((taxonomyOverride?: SelectedTaxonomy) => {
-    const nowIso = new Date().toISOString();
-    accumulatedSecondsRef.current = 0;
-    runningSinceRef.current = Date.now();
+  const startTimer = useCallback(
+    (taxonomyOverride?: SelectedTaxonomy) => {
+      const nowIso = new Date().toISOString();
+      accumulatedSecondsRef.current = 0;
+      runningSinceRef.current = Date.now();
+      sessionSourceRef.current = 'manual';
+      activeStudyTypeRef.current = 'questoes';
 
-    setElapsedSeconds(0);
-    setSessionStartTime(nowIso);
+      setSessionQuestionsCount(0);
+      setSessionCorrectCount(0);
+      setSessionIncorrectCount(0);
+      sessionQuestionsCountRef.current = 0;
+      sessionCorrectCountRef.current = 0;
+      sessionIncorrectCountRef.current = 0;
 
-    if (taxonomyOverride) {
-      setSelectedTaxonomy(taxonomyOverride);
-    }
-    setStatus('running');
-  }, []);
+      setElapsedSeconds(0);
+      setSessionStartTime(nowIso);
+      sessionStartTimeRef.current = nowIso;
+
+      if (taxonomyOverride) {
+        setSelectedTaxonomy(taxonomyOverride);
+        selectedTaxonomyRef.current = taxonomyOverride;
+      }
+      setStatus('running');
+      statusRef.current = 'running';
+
+      persistCurrentTimerState('running', 'immediate');
+    },
+    [persistCurrentTimerState]
+  );
 
   // Pausar Cronômetro (congela tempo líquido)
   const pauseTimer = useCallback(() => {
@@ -434,50 +532,54 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     }
     setElapsedSeconds(accumulatedSecondsRef.current);
     setStatus('paused');
-  }, []);
+    statusRef.current = 'paused';
+
+    persistCurrentTimerState('paused', 'immediate');
+  }, [persistCurrentTimerState]);
 
   // Continuar / Retomar Cronômetro
   const resumeTimer = useCallback(() => {
     runningSinceRef.current = Date.now();
     setStatus('running');
-  }, []);
+    statusRef.current = 'running';
 
-  // Cancelar e resetar para o zero sem salvar
+    persistCurrentTimerState('running', 'immediate');
+  }, [persistCurrentTimerState]);
+
+  // Cancelar e resetar para o zero sem salvar (limpa local + nuvem)
   const cancelTimer = useCallback(() => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
+    if (cloudTimerDebounceRef.current) {
+      clearTimeout(cloudTimerDebounceRef.current);
+      cloudTimerDebounceRef.current = null;
     }
-    accumulatedSecondsRef.current = 0;
-    runningSinceRef.current = null;
-    setElapsedSeconds(0);
-    setStatus('idle');
-    try {
-      localStorage.removeItem(getTimerStorageKey(userRef.current?.id));
-      localStorage.removeItem(TIMER_STORAGE_KEY);
-    } catch { }
-  }, []);
+    lastLocalMutationMsRef.current = Date.now();
+    resetInMemoryTimerOnly();
+    const uid = userRef.current?.id;
+    clearLocalTimerState(uid);
+    syncTimerRuntimeToCloud({ activeTimerState: null }, uid, true).catch(() => {});
+  }, [resetInMemoryTimerOnly]);
 
   // Modal de Salvar
   const openSaveModal = useCallback(() => {
-    // Garante pausa no tempo antes de abrir
-    if (status === 'running') {
+    if (statusRef.current === 'running') {
       if (runningSinceRef.current) {
         const deltaSec = Math.max(0, Math.floor((Date.now() - runningSinceRef.current) / 1000));
         accumulatedSecondsRef.current += deltaSec;
         runningSinceRef.current = null;
       }
       setElapsedSeconds(accumulatedSecondsRef.current);
+      persistCurrentTimerState('paused', 'immediate');
     }
     setStatus('modal_saving');
-  }, [status]);
+    statusRef.current = 'modal_saving';
+  }, [persistCurrentTimerState]);
 
   const closeSaveModal = useCallback(() => {
-    // Retorna ao estado pausado caso o modal seja cancelado/fechado sem salvar
     setStatus('paused');
+    statusRef.current = 'paused';
   }, []);
 
-  // Salvar sessão e integrar com Agenda / Storage
+  // Salvar sessão e integrar com Agenda / Supabase
   const saveSession = useCallback(
     async (data: {
       studyType?: StudyType;
@@ -488,6 +590,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       sessionSource?: 'manual' | 'questoes' | 'simulado' | 'flashcards';
       notes?: string;
     }): Promise<StudySession> => {
+      const uid = userRef.current?.id;
       const endTimeIso = new Date().toISOString();
       const finalDuration = accumulatedSecondsRef.current;
       const formatted = formatSecondsToHms(finalDuration);
@@ -518,7 +621,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       const newSession: StudySession = {
         id: `sess_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
-        userId: userRef.current?.id,
+        userId: uid,
         startTime: sessionStartTimeRef.current || endTimeIso,
         endTime: endTimeIso,
         durationSeconds: finalDuration,
@@ -535,8 +638,8 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       };
 
       // 1. Atualiza lista de sessões no estado e persiste na conta do aluno (local + Supabase)
-      setSavedSessions((prev) => [newSession, ...prev]);
-      saveUserStudySession(newSession, userRef.current?.id).catch((err) => {
+      setSavedSessions((prev) => [newSession, ...prev.filter((s) => s.id !== newSession.id)]);
+      saveUserStudySession(newSession, uid).catch((err) => {
         console.warn('Erro ao salvar sessão na conta do aluno:', err);
       });
 
@@ -566,12 +669,11 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           date: getLocalDateStr(startDate)
         };
 
-        saveUserScheduledTask(scheduleSlot, userRef.current?.id).catch((err) => {
+        saveUserScheduledTask(scheduleSlot, uid).catch((err) => {
           console.warn('Erro ao salvar tarefa na conta do aluno:', err);
         });
 
-        // Dispara evento de storage para sincronizar abas e telas da Agenda instantaneamente
-        const tasksKey = getUserScheduledTasksStorageKey(userRef.current?.id);
+        const tasksKey = getUserScheduledTasksStorageKey(uid);
         window.dispatchEvent(
           new StorageEvent('storage', {
             key: tasksKey
@@ -581,15 +683,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         console.warn('Erro ao integrar sessão na Agenda:', agendaErr);
       }
 
-      // 3. Reseta contadores e cronômetro
-
-      setSessionQuestionsCount(0);
-      setSessionCorrectCount(0);
-      setSessionIncorrectCount(0);
-      sessionQuestionsCountRef.current = 0;
-      sessionCorrectCountRef.current = 0;
-      sessionIncorrectCountRef.current = 0;
-      sessionSourceRef.current = 'manual';
+      // 3. Reseta contadores e limpa cronômetro em andamento (local + nuvem)
       cancelTimer();
 
       return newSession;
@@ -611,7 +705,6 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       sessionCorrectCountRef.current = 0;
       sessionIncorrectCountRef.current = 0;
 
-      // Inicia a contagem do tempo imediatamente
       accumulatedSecondsRef.current = 0;
       runningSinceRef.current = Date.now();
       setElapsedSeconds(0);
@@ -621,55 +714,39 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       setStatus('running');
       statusRef.current = 'running';
 
-      try {
-        localStorage.setItem(
-          getTimerStorageKey(userRef.current?.id),
-          JSON.stringify({
-            status: 'running',
-            accumulatedSeconds: 0,
-            runningSince: Date.now(),
-            sessionStartTime: nowIso,
-            selectedTaxonomy: taxonomy,
-            questionsCount: 0,
-            correctCount: 0,
-            incorrectCount: 0,
-            studyType,
-            sessionSource: 'questoes'
-          })
-        );
-      } catch {}
+      persistCurrentTimerState('running', 'immediate');
     },
-    []
+    [persistCurrentTimerState]
   );
 
-  // Registrar resposta de questão na sessão ativa
-  const recordQuestionAnswer = useCallback((isCorrect: boolean) => {
-    setSessionQuestionsCount((prev) => {
-      const next = prev + 1;
-      sessionQuestionsCountRef.current = next;
-      return next;
-    });
+  // Registrar resposta de questão na sessão ativa (persiste imediatamente contra F5)
+  const recordQuestionAnswer = useCallback(
+    (isCorrect: boolean) => {
+      const nextTotal = sessionQuestionsCountRef.current + 1;
+      sessionQuestionsCountRef.current = nextTotal;
+      setSessionQuestionsCount(nextTotal);
 
-    if (isCorrect) {
-      setSessionCorrectCount((prev) => {
-        const next = prev + 1;
-        sessionCorrectCountRef.current = next;
-        return next;
-      });
-    } else {
-      setSessionIncorrectCount((prev) => {
-        const next = prev + 1;
-        sessionIncorrectCountRef.current = next;
-        return next;
-      });
-    }
-  }, []);
+      if (isCorrect) {
+        const nextCorrect = sessionCorrectCountRef.current + 1;
+        sessionCorrectCountRef.current = nextCorrect;
+        setSessionCorrectCount(nextCorrect);
+      } else {
+        const nextIncorrect = sessionIncorrectCountRef.current + 1;
+        sessionIncorrectCountRef.current = nextIncorrect;
+        setSessionIncorrectCount(nextIncorrect);
+      }
+
+      if (statusRef.current === 'running' || statusRef.current === 'paused') {
+        persistCurrentTimerState(statusRef.current, 'debounced');
+      }
+    },
+    [persistCurrentTimerState]
+  );
 
   // Encerramento silencioso ao sair da tela de resolução (Zero-Touch)
   const autoFinishQuestionSession = useCallback(
     async (customNotes?: string): Promise<StudySession | null> => {
       const curStatus = statusRef.current;
-      // Se não estava rodando ou em contagem, ou se já está em processo de salvamento, não faz nada
       if ((curStatus !== 'running' && curStatus !== 'paused') || isSavingRef.current) {
         return null;
       }
@@ -677,7 +754,6 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       isSavingRef.current = true;
 
       try {
-        // Calcula tempo total cronometrado até o momento
         let finalSecs = accumulatedSecondsRef.current;
         if (curStatus === 'running' && runningSinceRef.current) {
           finalSecs += Math.max(0, Math.floor((Date.now() - runningSinceRef.current) / 1000));
@@ -691,23 +767,14 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         // Regra do Usuário: Descarta se nenhuma questão foi respondida (qTotal === 0)
         if (qTotal === 0) {
           cancelTimer();
-          setSessionQuestionsCount(0);
-          setSessionCorrectCount(0);
-          setSessionIncorrectCount(0);
-          sessionQuestionsCountRef.current = 0;
-          sessionCorrectCountRef.current = 0;
-          sessionIncorrectCountRef.current = 0;
-          sessionSourceRef.current = 'manual';
           return null;
         }
 
-        // Garante ao menos 1 segundo se respondeu questões para não zerar tempo líquido
         if (finalSecs <= 0) {
           finalSecs = Math.max(1, qTotal * 5);
           accumulatedSecondsRef.current = finalSecs;
         }
 
-        // Salva silenciosamente com os dados da sessão
         return await saveSession({
           studyType: activeStudyTypeRef.current || 'questoes',
           questionsCount: qTotal,
@@ -730,7 +797,6 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       console.warn('Erro ao excluir sessão do aluno:', err);
     });
 
-    // Remove também da linha do tempo da agenda se estiver lá
     deleteUserScheduledTask(`task_${sessionId}`, userRef.current?.id).catch((err) => {
       console.warn('Erro ao excluir tarefa associada à sessão:', err);
     });
@@ -740,9 +806,9 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const addManualSession = useCallback(
     async (data: {
       taxonomy: SelectedTaxonomy;
-      startTime: string; // "HH:mm" ou ISO
-      endTime: string;   // "HH:mm" ou ISO
-      date?: string;     // "YYYY-MM-DD"
+      startTime: string;
+      endTime: string;
+      date?: string;
       studyType?: StudyType;
       questionsCount?: number;
       correctCount?: number;
@@ -766,7 +832,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       const sDate = new Date(startIso);
       let eDate = new Date(endIso);
       if (eDate.getTime() <= sDate.getTime()) {
-        eDate = new Date(sDate.getTime() + 60 * 60 * 1000); // 1 hora de fallback
+        eDate = new Date(sDate.getTime() + 60 * 60 * 1000);
         endIso = eDate.toISOString();
       }
 
@@ -779,9 +845,10 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       const incorrectQ = Math.max(0, totalQ - correctQ);
       const acc = totalQ > 0 ? Math.round((correctQ / totalQ) * 100) : undefined;
 
+      const uid = userRef.current?.id;
       const newSession: StudySession = {
         id: `sess_manual_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
-        userId: userRef.current?.id,
+        userId: uid,
         startTime: startIso,
         endTime: endIso,
         durationSeconds: diffSec,
@@ -798,23 +865,23 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       };
 
       setSavedSessions((prev) => [newSession, ...prev]);
-      await saveUserStudySession(newSession, userRef.current?.id);
+      await saveUserStudySession(newSession, uid);
 
       try {
-        const sessionsKey = getUserStudySessionsStorageKey(userRef.current?.id);
+        const sessionsKey = getUserStudySessionsStorageKey(uid);
         window.dispatchEvent(
           new StorageEvent('storage', {
             key: sessionsKey
           })
         );
-      } catch { }
+      } catch {}
 
       return newSession;
     },
     []
   );
 
-  // Limpeza de tarefas automáticas legadas de cronômetro
+  // Auto-cura de tarefas automáticas com fuso UTC deslocado
   useEffect(() => {
     try {
       const tasksKey = getUserScheduledTasksStorageKey(user?.id);
@@ -841,22 +908,20 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
       if (modified) {
         localStorage.setItem(tasksKey, JSON.stringify(fixedTasks));
-        window.dispatchEvent(new StorageEvent('storage', {
-          key: tasksKey,
-          newValue: JSON.stringify(fixedTasks)
-
-        }));
+        window.dispatchEvent(
+          new StorageEvent('storage', {
+            key: tasksKey,
+            newValue: JSON.stringify(fixedTasks)
+          })
+        );
       }
     } catch (err) {
       console.warn('Erro na sincronização de tarefas:', err);
     }
   }, [savedSessions, user?.id]);
 
-
   // Sessões e tempo total do dia de hoje (respeitando o fuso horário local do estudante)
-  const todayStr = useMemo(() => {
-    return getLocalDateStr(new Date());
-  }, []);
+  const todayStr = getLocalDateStr(new Date());
 
   const todaySessions = useMemo(() => {
     return savedSessions.filter((s) => {
@@ -870,8 +935,8 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   }, [todaySessions]);
 
   const todayTotalSeconds = useMemo(() => {
-    return Math.max(sessionsTotalSeconds, platformActiveSeconds);
-  }, [sessionsTotalSeconds, platformActiveSeconds]);
+    return sessionsTotalSeconds;
+  }, [sessionsTotalSeconds]);
 
   const todayTotalFormatted = useMemo(() => {
     return formatSecondsToShort(todayTotalSeconds);
@@ -886,7 +951,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     elapsedSeconds,
     formattedTime,
     selectedTaxonomy,
-    setSelectedTaxonomy,
+    setSelectedTaxonomy: handleSetSelectedTaxonomy,
     startTimer,
     pauseTimer,
     resumeTimer,

@@ -26,6 +26,7 @@ import { generateSessionTicket } from '@/utils/securityTickets';
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
 import { resolveCanonicalViewsForModalidades } from '@/services/canonicalQuestionStore';
 
+import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { isSqliteAvailable, queryQuestionsFromSqlite, queryFacetsFromSqlite } from '@/lib/sqliteQuestions';
 
@@ -47,7 +48,7 @@ function getQuestionsReadClient(isPrivileged: boolean, supabaseAdmin: ReturnType
   return cachedPublicSupabaseClient;
 }
 
-const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, difficulty, type, is_anulada, statement, options, images';
+const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, sub_subfoco, difficulty, type, is_anulada, statement, options, images';
 
 interface QuestionDbRow {
   id: string;
@@ -74,19 +75,19 @@ interface QuestionDbRow {
 function mapRowToQuestion(row: QuestionDbRow, includeExplanations = false): Question {
   const sanitizedOptions = Array.isArray(row.options)
     ? row.options.map((opt) => {
-        const rawOpt = opt as { letter: 'A' | 'B' | 'C' | 'D' | 'E'; text: string; explanation?: string };
-        if (includeExplanations && typeof rawOpt.explanation === 'string') {
-          return {
-            letter: rawOpt.letter,
-            text: sanitizeMedicalText(rawOpt.text),
-            explanation: sanitizeMedicalText(rawOpt.explanation)
-          };
-        }
+      const rawOpt = opt as { letter: 'A' | 'B' | 'C' | 'D' | 'E'; text: string; explanation?: string };
+      if (includeExplanations && typeof rawOpt.explanation === 'string') {
         return {
           letter: rawOpt.letter,
-          text: sanitizeMedicalText(rawOpt.text)
+          text: sanitizeMedicalText(rawOpt.text),
+          explanation: sanitizeMedicalText(rawOpt.explanation)
         };
-      })
+      }
+      return {
+        letter: rawOpt.letter,
+        text: sanitizeMedicalText(rawOpt.text)
+      };
+    })
     : [];
 
   return {
@@ -270,6 +271,7 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
       const searchClauses = variants.flatMap((term) => [
         `foco.ilike.%${term}%`,
         `subfoco.ilike.%${term}%`,
+        `sub_subfoco.ilike.%${term}%`,
         `tema.ilike.%${term}%`,
         `code.ilike.%${term}%`
       ]);
@@ -277,13 +279,20 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
     }
   }
 
-  // 2. Árvore Clínica: Refinamento Pai -> Filho e SOMA / UNIÃO entre ramos diferentes
+  // 2. Árvore Clínica (5 níveis): Refinamento Pai -> Filho e SOMA / UNIÃO entre ramos diferentes
   const hasOutrasSpec = Boolean(filters.especialidades?.includes('Outras / Em Curadoria'));
   const filtersWithoutOutras = hasOutrasSpec
     ? { ...filters, especialidades: filters.especialidades?.filter(s => s !== 'Outras / Em Curadoria') }
     : filters;
 
-  const { orParts, standaloneSpecs, standaloneTemas, standaloneFocos, standaloneSubfocos } = buildClinicalFilterClauses(filtersWithoutOutras);
+  const {
+    orParts,
+    standaloneSpecs,
+    standaloneTemas,
+    standaloneFocos,
+    standaloneSubfocos,
+    standaloneSubSubfocos
+  } = buildClinicalFilterClauses(filtersWithoutOutras);
 
   if (hasOutrasSpec && orParts.length === 0) {
     query = query.or('especialidade.is.null,especialidade.eq.""');
@@ -299,6 +308,8 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
       query = query.in('foco', standaloneFocos);
     } else if (standaloneSubfocos && standaloneSubfocos.length > 0) {
       query = query.in('subfoco', standaloneSubfocos);
+    } else if (standaloneSubSubfocos && standaloneSubSubfocos.length > 0) {
+      query = query.in('sub_subfoco', standaloneSubSubfocos);
     } else {
       query = query.or(orParts[0]);
     }
@@ -329,11 +340,54 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
     }
   }
 
-  // 4. Instituições / Bancas
+  // 4. Instituições / Bancas / Banca Organizadora / Macrorregião
+  const bancaBuckets: string[] = [];
   if (filters.instituicoes && filters.instituicoes.length > 0) {
-    const resolved = resolveBancaList(filters.instituicoes);
-    if (resolved.length > 0) {
-      query = query.in('banca', resolved);
+    bancaBuckets.push(...resolveBancaList(filters.instituicoes));
+  }
+  if (filters.bancaOrganizadora && filters.bancaOrganizadora.length > 0) {
+    const orgSet = new Set(filters.bancaOrganizadora.map((o) => o.toLowerCase()));
+    const fromOrg = CANONICAL_BANCAS_DIRECTORY
+      .filter((b) => b.bancaOrganizadora && orgSet.has(b.bancaOrganizadora.toLowerCase()))
+      .map((b) => b.sigla);
+    bancaBuckets.push(...resolveBancaList(fromOrg));
+  }
+  if (filters.macrorregioes && filters.macrorregioes.length > 0) {
+    const regSet = new Set(filters.macrorregioes.map((r) => r.toLowerCase()));
+    const fromReg = CANONICAL_BANCAS_DIRECTORY
+      .filter((b) => b.macrorregiao && regSet.has(b.macrorregiao.toLowerCase()))
+      .map((b) => b.sigla);
+    bancaBuckets.push(...resolveBancaList(fromReg));
+  }
+  if (bancaBuckets.length > 0) {
+    query = query.in('banca', Array.from(new Set(bancaBuckets)));
+  }
+
+  // 4b. Apenas com Imagem / Exame Visual
+  if (filters.apenasComImagem) {
+    query = query.not('images', 'is', null).neq('images', '[]');
+  }
+
+  // 4c. Programa R+ / Sociedade de Título
+  if (filters.programaRplus && filters.programaRplus.length > 0) {
+    const pClauses: string[] = [];
+    for (const p of filters.programaRplus) {
+      const pUp = p.toUpperCase();
+      if (pUp.includes('TEGO')) pClauses.push('banca.ilike.%TEGO%');
+      else if (pUp.includes('TECM')) pClauses.push('banca.ilike.%TECM%');
+      else if (pUp.includes('SBOT')) pClauses.push('banca.ilike.%SBOT%,tema.eq.Ortopedia e Traumatologia');
+      else if (pUp.includes('MASTOLOGIA')) pClauses.push('tipo_prova.ilike.%MASTOLOGIA%,tema.ilike.%Mastologia%');
+      else if (pUp.includes('NEONATOLOGIA')) pClauses.push('tipo_prova.ilike.%NEONATOLOGIA%,tema.eq.Neonatologia');
+      else if (pUp.includes('GERIATRIA')) pClauses.push('tipo_prova.ilike.%GERIATRIA%,tema.eq.Geriatria');
+      else if (pUp.includes('INTENSIVA')) pClauses.push('tipo_prova.ilike.%INTENSIVA%,tema.ilike.%Intensiva%');
+      else if (pUp.includes('UROLOGIA')) pClauses.push('tipo_prova.ilike.%UROLOGIA%,tema.eq.Urologia');
+      else if (pUp.includes('PEDIATRIA')) pClauses.push('especialidade.eq.Pediatria');
+      else if (pUp.includes('GINECOLOGIA')) pClauses.push('especialidade.in.(Ginecologia,Obstetrícia)');
+      else if (pUp.includes('CIRURGIA')) pClauses.push('especialidade.eq.Cirurgia Geral');
+      else if (pUp.includes('CLÍNICA') || pUp.includes('CLINICA')) pClauses.push('especialidade.eq.Clínica Médica');
+    }
+    if (pClauses.length > 0) {
+      query = query.or(pClauses.join(','));
     }
   }
 
@@ -474,13 +528,18 @@ export async function POST(req: NextRequest) {
         especialidades: [],
         temas: [],
         focos: [],
-        subfocos: []
+        subfocos: [],
+        subSubfocos: []
       };
 
       // Fast-path ultrarrápido (0ms): se não há filtros restritivos no card lateral (bancas, anos, etc.),
       // retorna as contagens pré-computadas exatas do catálogo homologado
       const hasRightCardFilters = Boolean(
         hasBancas ||
+        (filtersWithoutClinical.bancaOrganizadora && filtersWithoutClinical.bancaOrganizadora.length > 0) ||
+        (filtersWithoutClinical.macrorregioes && filtersWithoutClinical.macrorregioes.length > 0) ||
+        (filtersWithoutClinical.programaRplus && filtersWithoutClinical.programaRplus.length > 0) ||
+        filtersWithoutClinical.apenasComImagem ||
         (filtersWithoutClinical.search && filtersWithoutClinical.search.trim()) ||
         (filtersWithoutClinical.anos && filtersWithoutClinical.anos.length > 0 && filtersWithoutClinical.anos.length < 18) ||
         (filtersWithoutClinical.dificuldade && filtersWithoutClinical.dificuldade !== 'Todas') ||
@@ -498,7 +557,8 @@ export async function POST(req: NextRequest) {
             especialidades: baseline.especialidades,
             temas: baseline.temas,
             focos: (baseline.focos as Record<string, number>) || {},
-            subfocos: (baseline.subfocos as Record<string, number>) || {}
+            subfocos: (baseline.subfocos as Record<string, number>) || {},
+            subSubfocos: (baseline.subSubfocos as Record<string, number>) || {}
           }
         });
       }

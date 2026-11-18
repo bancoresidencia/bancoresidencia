@@ -19,6 +19,8 @@ interface DbStudySessionRow {
   updated_at?: string;
 }
 
+const LEGACY_SESSIONS_KEY = 'bancoresidencia_study_sessions';
+
 export function getUserStudySessionsStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_study_sessions_${userId}` : 'bancoresidencia_study_sessions_guest';
 }
@@ -31,11 +33,17 @@ function formatSecondsToHms(totalSec: number): string {
   return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 }
 
+function sortSessionsDesc(list: StudySession[]): StudySession[] {
+  return [...list].sort(
+    (a, b) => new Date(b.startTime).getTime() - new Date(a.startTime).getTime()
+  );
+}
+
 /**
  * Carrega as sessões de estudo do aluno:
- * 1. Leitura imediata do cache local (0ms de latência)
- * 2. Migração automática da chave legada sem perder histórico
- * 3. Sincronização em nuvem com Supabase (user_study_sessions) para multi-dispositivo
+ * 1. Leitura imediata do cache local isolado por userId
+ * 2. Migração segura e remoção definitiva da chave legada global
+ * 3. Sincronização bidirecional com Supabase (user_study_sessions) após validar sessão JWT ativa
  */
 export async function loadUserStudySessions(userId?: string | null): Promise<StudySession[]> {
   const key = getUserStudySessionsStorageKey(userId);
@@ -45,39 +53,61 @@ export async function loadUserStudySessions(userId?: string | null): Promise<Stu
     try {
       const saved = localStorage.getItem(key);
       if (saved) {
-        localSessions = JSON.parse(saved) as StudySession[];
-      } else {
-        // Tenta migrar da chave legada global se existir
-        const legacy = localStorage.getItem('bancoresidencia_study_sessions');
-        if (legacy) {
-          try {
-            const parsedLegacy = JSON.parse(legacy) as StudySession[];
-            if (Array.isArray(parsedLegacy) && parsedLegacy.length > 0) {
-              localSessions = parsedLegacy.map(s => ({
-                ...s,
-                userId: userId || s.userId
-              }));
+        const parsed = JSON.parse(saved) as StudySession[];
+        localSessions = Array.isArray(parsed) ? parsed : [];
+      }
+
+      // Migra chave legada global uma única vez e a remove para evitar vazamento entre contas
+      const legacy = localStorage.getItem(LEGACY_SESSIONS_KEY);
+      if (legacy) {
+        localStorage.removeItem(LEGACY_SESSIONS_KEY);
+        try {
+          const parsedLegacy = JSON.parse(legacy) as StudySession[];
+          if (Array.isArray(parsedLegacy) && parsedLegacy.length > 0) {
+            const compatible = parsedLegacy.filter(
+              (s) => !s.userId || s.userId === userId
+            );
+            if (compatible.length > 0) {
+              const existingIds = new Set(localSessions.map((s) => s.id));
+              const migrated = compatible
+                .filter((s) => !existingIds.has(s.id))
+                .map((s) => ({ ...s, userId: userId || s.userId }));
+              localSessions = sortSessionsDesc([...localSessions, ...migrated]);
               localStorage.setItem(key, JSON.stringify(localSessions));
             }
-          } catch {}
-        }
+          }
+        } catch {}
       }
     } catch {
       localSessions = [];
     }
   }
 
-  // Sincronização remota quando autenticado
+  // Sincronização remota quando autenticado com sessão JWT ativa no Supabase
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
+      const {
+        data: { session: authSession }
+      } = await supabase.auth.getSession();
+
+      // Evita condição de corrida durante hidratação inicial do token OAuth/refresh
+      if (!authSession?.user || authSession.user.id !== userId) {
+        return localSessions;
+      }
+
       const { data, error } = await supabase
         .from('user_study_sessions')
         .select('*')
         .eq('user_id', userId)
         .order('start_time', { ascending: false });
 
-      if (!error && data) {
+      if (error) {
+        console.warn('[userStudySessionsService] Erro ao consultar sessões no Supabase:', error.message);
+        return localSessions;
+      }
+
+      if (data) {
         const rows = data as unknown as DbStudySessionRow[];
         const remoteSessions: StudySession[] = rows.map((r) => ({
           id: r.id,
@@ -91,18 +121,22 @@ export async function loadUserStudySessions(userId?: string | null): Promise<Stu
           questionsCount: r.questions_count || 0,
           correctCount: r.correct_count || 0,
           incorrectCount: r.incorrect_count || 0,
-          accuracy: r.accuracy,
+          accuracy: r.accuracy !== null && r.accuracy !== undefined ? Number(r.accuracy) : undefined,
           sessionSource: r.session_source || 'manual',
           notes: r.notes || '',
           createdAt: r.created_at || r.end_time
         }));
 
         const remoteIds = new Set(remoteSessions.map((s) => s.id));
-        const missingOnRemote = localSessions.filter((s) => !remoteIds.has(s.id));
-        const merged = [...remoteSessions, ...missingOnRemote];
+        const missingOnRemote = localSessions.filter(
+          (s) => !remoteIds.has(s.id) && (!s.userId || s.userId === userId)
+        );
+        const merged = sortSessionsDesc([...remoteSessions, ...missingOnRemote]);
 
         if (typeof window !== 'undefined') {
-          localStorage.setItem(key, JSON.stringify(merged));
+          try {
+            localStorage.setItem(key, JSON.stringify(merged));
+          } catch {}
         }
 
         // Envia para o Supabase as sessões locais que ainda não estavam na nuvem
@@ -112,18 +146,26 @@ export async function loadUserStudySessions(userId?: string | null): Promise<Stu
             user_id: userId,
             start_time: s.startTime,
             end_time: s.endTime,
-            duration_seconds: s.durationSeconds,
+            duration_seconds: Math.max(0, Math.floor(s.durationSeconds || 0)),
             taxonomy: s.taxonomy || {},
             study_type: s.studyType || 'questoes',
             questions_count: s.questionsCount || 0,
             correct_count: s.correctCount || 0,
             incorrect_count: s.incorrectCount || 0,
-            accuracy: s.accuracy || null,
+            accuracy: s.accuracy ?? null,
             session_source: s.sessionSource || 'manual',
             notes: s.notes || null,
-            created_at: s.createdAt || new Date().toISOString()
+            created_at: s.createdAt || new Date().toISOString(),
+            updated_at: new Date().toISOString()
           }));
-          supabase.from('user_study_sessions').upsert(payload, { onConflict: 'id' }).then(() => {});
+
+          const { error: syncErr } = await supabase
+            .from('user_study_sessions')
+            .upsert(payload, { onConflict: 'id' });
+
+          if (syncErr) {
+            console.warn('[userStudySessionsService] Falha ao sincronizar sessões pendentes:', syncErr.message);
+          }
         }
 
         return merged;
@@ -138,43 +180,75 @@ export async function loadUserStudySessions(userId?: string | null): Promise<Stu
 
 /**
  * Salva ou atualiza uma sessão de estudo:
- * Atualiza o storage local imediatamente e sincroniza em background no Supabase.
+ * Atualiza o storage local imediatamente e persiste no Supabase com fallback keepalive.
  */
-export async function saveUserStudySession(session: StudySession, userId?: string | null): Promise<void> {
+export async function saveUserStudySession(
+  session: StudySession,
+  userId?: string | null
+): Promise<void> {
   const key = getUserStudySessionsStorageKey(userId);
+  const stampedSession: StudySession = {
+    ...session,
+    userId: userId || session.userId
+  };
 
   if (typeof window !== 'undefined') {
     try {
       const saved = localStorage.getItem(key);
       const list: StudySession[] = saved ? JSON.parse(saved) : [];
-      const updated = [session, ...list.filter((s) => s.id !== session.id)];
+      const updated = sortSessionsDesc([
+        stampedSession,
+        ...list.filter((s) => s.id !== stampedSession.id)
+      ]);
       localStorage.setItem(key, JSON.stringify(updated));
     } catch {}
   }
 
   if (userId && userId !== 'demo-student') {
+    let savedDirect = false;
     try {
       const supabase = createClient();
       const payload = {
-        id: session.id,
+        id: stampedSession.id,
         user_id: userId,
-        start_time: session.startTime,
-        end_time: session.endTime,
-        duration_seconds: session.durationSeconds,
-        taxonomy: session.taxonomy || {},
-        study_type: session.studyType || 'questoes',
-        questions_count: session.questionsCount || 0,
-        correct_count: session.correctCount || 0,
-        incorrect_count: session.incorrectCount || 0,
-        accuracy: session.accuracy ?? null,
-        session_source: session.sessionSource || 'manual',
-        notes: session.notes || null,
-        created_at: session.createdAt || new Date().toISOString()
+        start_time: stampedSession.startTime,
+        end_time: stampedSession.endTime,
+        duration_seconds: Math.max(0, Math.floor(stampedSession.durationSeconds || 0)),
+        taxonomy: stampedSession.taxonomy || {},
+        study_type: stampedSession.studyType || 'questoes',
+        questions_count: stampedSession.questionsCount || 0,
+        correct_count: stampedSession.correctCount || 0,
+        incorrect_count: stampedSession.incorrectCount || 0,
+        accuracy: stampedSession.accuracy ?? null,
+        session_source: stampedSession.sessionSource || 'manual',
+        notes: stampedSession.notes || null,
+        created_at: stampedSession.createdAt || new Date().toISOString(),
+        updated_at: new Date().toISOString()
       };
 
-      await supabase.from('user_study_sessions').upsert(payload, { onConflict: 'id' });
+      const { error } = await supabase
+        .from('user_study_sessions')
+        .upsert(payload, { onConflict: 'id' });
+
+      if (!error) {
+        savedDirect = true;
+      } else {
+        console.warn('[userStudySessionsService] Erro no upsert direto, acionando fallback keepalive:', error.message);
+      }
     } catch (err) {
-      console.warn('[userStudySessionsService] Falha no upsert remoto da sessão:', err);
+      console.warn('[userStudySessionsService] Exceção no upsert remoto da sessão:', err);
+    }
+
+    // Fallback resiliente via Route Handler keepalive (sobrevive a fechamento de aba / navegação)
+    if (!savedDirect && typeof window !== 'undefined') {
+      try {
+        await fetch('/api/student/timer-state', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ finishedSession: stampedSession }),
+          keepalive: true
+        });
+      } catch {}
     }
   }
 }
@@ -199,14 +273,17 @@ export async function deleteUserStudySession(sessionId: string, userId?: string 
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
-      await supabase
+      const { error } = await supabase
         .from('user_study_sessions')
         .delete()
         .eq('id', sessionId)
         .eq('user_id', userId);
+
+      if (error) {
+        console.warn('[userStudySessionsService] Erro ao excluir sessão remota:', error.message);
+      }
     } catch (err) {
       console.warn('[userStudySessionsService] Falha ao excluir sessão remota:', err);
     }
   }
 }
-

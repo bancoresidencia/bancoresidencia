@@ -211,30 +211,37 @@ export async function computePlatformLeaderboard(
     });
   }
 
-  // 2. Buscar todas as respostas válidas do banco em lotes paginados determinísticos
-  interface RawUserAnswerRow {
+  // 2. Buscar todas as respostas válidas do banco (paginado em blocos de 1.000 para superar o teto padrão do PostgREST)
+  interface RankingAnswerRow {
     user_id: string;
     question_id: string;
     is_correct: boolean;
-    difficulty?: string | null;
-    banca?: string | null;
-    answered_at?: string | null;
+    difficulty: string | null;
+    specialty: string | null;
+    banca: string | null;
+    year: number | null;
+    answered_at: string | null;
   }
-  const answers: RawUserAnswerRow[] = [];
-  for (let offset = 0; offset < MAX_RANKING_ROWS; offset += PAGE_SIZE) {
-    const { data: ansPage, error: ansErr } = await supabaseAdmin
+
+  const answers: RankingAnswerRow[] = [];
+  let fromOffset = 0;
+
+  while (true) {
+    const { data: chunk, error: ansErr } = await supabaseAdmin
       .from('user_answers')
-      .select('user_id, question_id, is_correct, difficulty, banca, answered_at')
+      .select('user_id, question_id, is_correct, difficulty, specialty, banca, year, answered_at')
       .order('answered_at', { ascending: true })
-      .range(offset, offset + PAGE_SIZE - 1);
+      .range(fromOffset, fromOffset + PAGE_SIZE - 1);
 
     if (ansErr) {
       console.error('[RankingService] Erro ao buscar user_answers:', ansErr);
       throw new Error('Falha ao consultar banco de dados para cálculo de ranking.');
     }
-    if (!ansPage || ansPage.length === 0) break;
-    answers.push(...(ansPage as RawUserAnswerRow[]));
-    if (ansPage.length < PAGE_SIZE) break;
+
+    if (!chunk || chunk.length === 0) break;
+    answers.push(...(chunk as RankingAnswerRow[]));
+    if (chunk.length < PAGE_SIZE) break;
+    fromOffset += PAGE_SIZE;
   }
 
   // 3. Agrupar tentativas por usuário

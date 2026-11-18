@@ -33,6 +33,7 @@ import {
   ReviewSessionAnswerRecord
 } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { useAuth } from '@/context/AuthContext';
 import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 import { ERROR_REASON_CONFIG } from '@/utils/errorReasons';
 import {
@@ -85,6 +86,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
   onClose
 }) => {
   const { accentConfig } = useTheme();
+  const { user } = useAuth();
 
   const [sessionId] = useState<string>(() => initialState?.sessionId || `rev_${Date.now()}`);
   const [startedAt] = useState<number>(() => initialState?.startedAt || Date.now());
@@ -116,9 +118,16 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
   const [isSessionFinished, setIsSessionFinished] = useState<boolean>(false);
   const [questionTimer, setQuestionTimer] = useState<number>(0);
   const [saveIndicator, setSaveIndicator] = useState<boolean>(false);
+  const [isSubmittingSolve, setIsSubmittingSolve] = useState<boolean>(false);
+  const [resolvedOverrides, setResolvedOverrides] = useState<Record<string, Partial<Question>>>({});
 
   const currentQId = questionIds[currentIndex];
-  const currentQuestion = questionsMap[currentQId];
+  const baseQuestion = questionsMap[currentQId];
+  const currentQuestion = useMemo(() => {
+    if (!baseQuestion) return undefined;
+    const ov = resolvedOverrides[currentQId];
+    return ov ? { ...baseQuestion, ...ov } : baseQuestion;
+  }, [baseQuestion, resolvedOverrides, currentQId]);
   const originalAnswer = userAnswers[currentQId];
   const currentSessionAnswer = sessionAnswers[currentQId];
 
@@ -143,21 +152,24 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
   const effectiveCorrectAnswer = processedOptions?.newCorrectAnswer || currentQuestion?.correctAnswer || '';
   const effectivePreviousMistakeLetter = processedOptions?.remappedPreviousLetter || previousMistakeLetter;
 
-  // Persistência contínua e automática no LocalStorage
+  // Persistência contínua e automática no LocalStorage escopada por usuário
   useEffect(() => {
     if (isSessionFinished) return;
-    saveActiveReviewSession({
-      sessionId,
-      startedAt,
-      lastUpdatedAt: Date.now(),
-      questionIds,
-      currentIndex,
-      shuffleAlternatives,
-      sessionMode,
-      sessionAnswers,
-      eliminatedOptions,
-      filterSummary
-    });
+    saveActiveReviewSession(
+      {
+        sessionId,
+        startedAt,
+        lastUpdatedAt: Date.now(),
+        questionIds,
+        currentIndex,
+        shuffleAlternatives,
+        sessionMode,
+        sessionAnswers,
+        eliminatedOptions,
+        filterSummary
+      },
+      user?.id
+    );
   }, [
     sessionId,
     startedAt,
@@ -168,7 +180,8 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
     sessionAnswers,
     eliminatedOptions,
     filterSummary,
-    isSessionFinished
+    isSessionFinished,
+    user?.id
   ]);
 
   // Temporizador da questão
@@ -192,18 +205,21 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
   // Salvar e fechar com tranquilidade
   const handleSaveAndExit = () => {
-    saveActiveReviewSession({
-      sessionId,
-      startedAt,
-      lastUpdatedAt: Date.now(),
-      questionIds,
-      currentIndex,
-      shuffleAlternatives,
-      sessionMode,
-      sessionAnswers,
-      eliminatedOptions,
-      filterSummary
-    });
+    saveActiveReviewSession(
+      {
+        sessionId,
+        startedAt,
+        lastUpdatedAt: Date.now(),
+        questionIds,
+        currentIndex,
+        shuffleAlternatives,
+        sessionMode,
+        sessionAnswers,
+        eliminatedOptions,
+        filterSummary
+      },
+      user?.id
+    );
     setSaveIndicator(true);
     setTimeout(() => {
       onClose();
@@ -236,36 +252,81 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
     });
   };
 
-  // Submissão da resposta da questão atual
-  const handleConfirmAnswer = () => {
-    if (!selectedOption || !currentQuestion || currentSessionAnswer) return;
+  // Submissão da resposta da questão atual validada no servidor (/api/questions/solve)
+  const handleConfirmAnswer = async () => {
+    if (!selectedOption || !currentQuestion || currentSessionAnswer || isSubmittingSolve) return;
 
-    const isAnulada = Boolean(
+    const originalLetterToStore = (
+      processedOptions?.newToOriginalMapping[selectedOption] || selectedOption
+    ) as 'A' | 'B' | 'C' | 'D' | 'E';
+
+    let finalCorrectOriginal = currentQuestion.correctAnswer;
+    let finalIsAnulada = Boolean(
       currentQuestion.isAnulada || currentQuestion.correctAnswer === 'ANULADA'
     );
-    const isCorrect = isAnulada || selectedOption === effectiveCorrectAnswer;
+    let finalIsCorrect = false;
 
-    // Registra na sessão atual
+    if (!finalCorrectOriginal) {
+      setIsSubmittingSolve(true);
+      try {
+        const res = await fetch('/api/questions/solve', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            questionId: currentQId,
+            selectedOption: originalLetterToStore,
+            isPrefetch: false
+          })
+        });
+        const data = await res.json();
+        if (data?.success) {
+          finalCorrectOriginal = data.correctAnswer || '';
+          finalIsAnulada = Boolean(data.isAnulada || data.correctAnswer === 'ANULADA');
+          finalIsCorrect = Boolean(data.isCorrect);
+          setResolvedOverrides((prev) => ({
+            ...prev,
+            [currentQId]: {
+              correctAnswer: data.correctAnswer,
+              isAnulada: Boolean(data.isAnulada),
+              commentary: data.commentary || currentQuestion.commentary,
+              options:
+                Array.isArray(data.options) && data.options.length > 0
+                  ? data.options
+                  : currentQuestion.options
+            }
+          }));
+        }
+      } catch (err) {
+        console.warn('[CadernoErrosReviewSession] Erro ao validar no /api/questions/solve:', err);
+      } finally {
+        setIsSubmittingSolve(false);
+      }
+    } else {
+      finalIsCorrect = finalIsAnulada || selectedOption === effectiveCorrectAnswer;
+      fetch('/api/questions/solve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          questionId: currentQId,
+          selectedOption: originalLetterToStore,
+          isPrefetch: false
+        })
+      }).catch(() => {});
+    }
+
     setSessionAnswers((prev) => ({
       ...prev,
       [currentQId]: {
         letter: selectedOption,
-        isCorrect,
+        isCorrect: finalIsCorrect,
         timestamp: Date.now(),
         timeSpent: questionTimer
       }
     }));
 
-    // Converte a letra exibida (embaralhada) para a letra original da prova para não corromper o banco
-    const originalLetterToStore = (
-      processedOptions?.newToOriginalMapping[selectedOption] || selectedOption
-    ) as 'A' | 'B' | 'C' | 'D' | 'E';
+    onAnswerQuestion(currentQId, originalLetterToStore, finalIsCorrect);
 
-    // Dispara atualização global no sistema com a letra oficial
-    onAnswerQuestion(currentQId, originalLetterToStore, isCorrect);
-
-    // Se acertou, promove o status para recuperado
-    if (isCorrect) {
+    if (finalIsCorrect) {
       onUpdateAnswerMeta(currentQId, { statusRetrial: 'recuperado' });
     }
   };
@@ -324,7 +385,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
           if (currentIndex < questionIds.length - 1) {
             setCurrentIndex((prev) => prev + 1);
           } else {
-            clearActiveReviewSession();
+            clearActiveReviewSession(user?.id);
             setIsSessionFinished(true);
           }
         }
@@ -507,7 +568,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
             <button
               type="button"
               onClick={() => {
-                clearActiveReviewSession();
+                clearActiveReviewSession(user?.id);
                 onClose();
               }}
               className="px-5 py-2.5 rounded-xl text-xs font-bold bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-200 hover:bg-slate-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer"
@@ -1100,7 +1161,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                   <button
                     type="button"
                     onClick={() => {
-                      clearActiveReviewSession();
+                      clearActiveReviewSession(user?.id);
                       setIsSessionFinished(true);
                     }}
                     className="px-6 py-2.5 rounded-xl text-xs font-extrabold text-white transition-all cursor-pointer shadow-md flex items-center gap-2 hover:scale-102"

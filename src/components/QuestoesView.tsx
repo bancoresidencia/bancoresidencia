@@ -151,12 +151,31 @@ export const QuestoesView: React.FC = () => {
   }, [userAnswers]);
 
 
-  // Lê lista ativa dos parâmetros se houver
+  // Índice da questão atual
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
+
+  // Lê lista ativa ou IDs explícitos (ex.: Caderno de Erros ?ids=...) dos parâmetros da URL
   useEffect(() => {
     const listIdParam = searchParams.get('listId');
+    const idsParam = searchParams.get('ids');
+
     if (listIdParam) {
+      setSessionQuestionIds(null);
       setActiveListId(listIdParam);
+      setCurrentQuestionIndex(0);
       setBancoMode('resolucao');
+    } else if (idsParam) {
+      const parsedIds = idsParam
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean);
+      if (parsedIds.length > 0) {
+        setActiveListId(null);
+        setSessionQuestionIds(parsedIds);
+        setSessionQuestionLimit(parsedIds.length);
+        setCurrentQuestionIndex(0);
+        setBancoMode('resolucao');
+      }
     }
   }, [searchParams, setActiveListId]);
 
@@ -204,9 +223,6 @@ export const QuestoesView: React.FC = () => {
       })
       .catch(() => { });
   }, [advancedFilters.modalidades]);
-
-  // Índice da questão atual
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
 
   // Temporizador individual da questão ativa
   const [questionTimer, setQuestionTimer] = useState<number>(0);
@@ -398,11 +414,17 @@ export const QuestoesView: React.FC = () => {
         let questionIds: string[] | undefined;
         let effectivePageSize = sessionQuestionLimit ? Math.min(200, sessionQuestionLimit) : 20;
 
+        let activeListFilters: Partial<AdvancedFilterState> | undefined;
         if (activeListId) {
           const currentList = lists.find((l) => l.id === activeListId);
-          if (currentList && currentList.questionIds.length > 0) {
-            questionIds = currentList.questionIds;
-            effectivePageSize = Math.min(200, currentList.questionIds.length);
+          if (currentList) {
+            if (currentList.questionIds.length > 0) {
+              questionIds = currentList.questionIds;
+              effectivePageSize = Math.min(200, currentList.questionIds.length);
+            } else {
+              effectivePageSize = Math.min(200, Math.max(1, currentList.totalQuestions || 20));
+              activeListFilters = currentList.filters;
+            }
           }
         } else if (sessionQuestionIds && sessionQuestionIds.length > 0) {
           questionIds = sessionQuestionIds;
@@ -419,10 +441,11 @@ export const QuestoesView: React.FC = () => {
           .map(([id]) => id);
 
         const res = await fetchQuestionsFromSupabase(
-          activeListId
+          activeListId && questionIds
             ? {}
             : {
               ...advancedFilters,
+              ...(activeListFilters || {}),
               userSolvedIds: answeredIds,
               userCorrectIds: correctIds,
               userWrongIds: wrongIds
@@ -778,7 +801,7 @@ export const QuestoesView: React.FC = () => {
     });
 
     const startTime = Date.now();
-    const MIN_TRANSITION_MS = 850;
+    const MIN_TRANSITION_MS = 280;
 
     try {
       setIsLoadingSupabase(true);
@@ -855,7 +878,7 @@ export const QuestoesView: React.FC = () => {
         isFadingOut: true
       }));
 
-      await new Promise((resolve) => setTimeout(resolve, 320));
+      await new Promise((resolve) => setTimeout(resolve, 240));
 
       setSessionTransition((prev) => ({
         ...prev,

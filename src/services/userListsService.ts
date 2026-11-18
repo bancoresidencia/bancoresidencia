@@ -1,5 +1,5 @@
 import { createClient } from '@/lib/supabase/client';
-import { Folder, QuestionList } from '@/types';
+import { AdvancedFilterState, Folder, QuestionList } from '@/types';
 import {
   readMutationJournal,
   markPendingUpsert,
@@ -29,6 +29,7 @@ interface DbListRow {
   last_studied_at?: string;
   in_progress?: boolean;
   progress_percentage?: number;
+  filters?: Partial<AdvancedFilterState> | null;
   created_at?: string;
   updated_at?: string;
 }
@@ -321,6 +322,13 @@ export async function loadUserFolders(userId?: string | null): Promise<Folder[]>
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
+      const {
+        data: { session }
+      } = await supabase.auth.getSession();
+      if (!session?.user || session.user.id !== userId) {
+        return localFolders;
+      }
+
       const { data, error } = await supabase
         .from('user_folders')
         .select('*')
@@ -384,6 +392,13 @@ export async function loadUserLists(userId?: string | null): Promise<QuestionLis
   if (userId && userId !== 'demo-student') {
     try {
       const supabase = createClient();
+      const {
+        data: { session }
+      } = await supabase.auth.getSession();
+      if (!session?.user || session.user.id !== userId) {
+        return localLists;
+      }
+
       const { data, error } = await supabase
         .from('user_lists')
         .select('*')

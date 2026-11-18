@@ -52,6 +52,11 @@ export interface AdvancedFilterState {
   focos: string[];
   subfocos: string[];
   subSubfocos?: string[];
+  programaRplus?: string[];
+  bancaOrganizadora?: string[];
+  macrorregioes?: string[];
+  apenasComImagem?: boolean;
+  eixoClinico?: string[];
   instituicoes: string[];
   anos: number[];
   tipoProva: string[];
@@ -351,6 +356,7 @@ export interface QuestionList {
   lastStudiedAt: string;
   inProgress: boolean;
   progressPercentage: number;
+  filters?: Partial<AdvancedFilterState>;
   lastQuestionIndex?: number;
   lastQuestionId?: string;
   createdAt?: string;

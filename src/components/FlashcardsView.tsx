@@ -338,12 +338,14 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
       flashcardsService.syncRemoteProgress(user.id).then(() => {
         if (active) setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
       });
-      flashcardsService.syncRemoteDecks(user.id).then(() => {
-        if (active) {
-          setPersonalizedDecksCount(flashcardsService.getPersonalizedDecks(user.id).length);
-        }
+      flashcardsService.syncRemoteDecks(user.id);
+      flashcardsService.syncRemotePersonalizedDecks(user.id).then((decks) => {
+        if (active) setPersonalizedDecksCount(decks.length);
       });
       flashcardsService.syncRemoteUserCreatedCards(user.id).then(() => {
+        if (active) setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
+      });
+      flashcardsService.syncRemoteCardEdits(user.id).then(() => {
         if (active) setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
       });
       flashcardsService.syncRemoteDailyLogs(user.id).then(() => {
@@ -401,11 +403,12 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     }, 0);
   }, []);
 
-  // Carrega histórico salvo no localStorage
+  // Carrega histórico salvo no localStorage por conta
   useEffect(() => {
-    setLastFlashcardSession(flashcardsService.getLastFlashcardSession());
-    setLastReadSummary(flashcardsService.getLastReadSummary());
-  }, []);
+    setLastFlashcardSession(flashcardsService.getLastFlashcardSession(user?.id));
+    setLastReadSummary(flashcardsService.getLastReadSummary(user?.id));
+    setPersonalizedDecksCount(flashcardsService.getPersonalizedDecks(user?.id).length);
+  }, [user?.id]);
 
   // Quantidade total de flashcards essenciais
   const essentialCardsCount = useMemo(() => {
@@ -475,7 +478,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
       lastStudiedAt: new Date().toISOString()
     };
 
-    flashcardsService.saveLastFlashcardSession(sessionInfo);
+    flashcardsService.saveLastFlashcardSession(sessionInfo, user?.id);
     setLastFlashcardSession(sessionInfo);
     setActiveSessionCards(listToLaunch);
   };

@@ -29,7 +29,7 @@ import {
 import { clinicalHierarchy } from '@/data/mockQuestions';
 
 // Projeção segura de colunas: omite estritamente correct_answer e commentary contra scraping
-export const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, difficulty, type, is_anulada, statement, options, images';
+export const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, sub_subfoco, difficulty, type, is_anulada, statement, options, images';
 
 // Mapeamento em memória de Subfocos para Focos ancestrais indexados no PostgreSQL
 const subfocoToParentFocos = new Map<string, string[]>();
@@ -68,25 +68,27 @@ export interface ClinicalFilterClausesResult {
   standaloneTemas: string[];
   standaloneFocos: string[];
   standaloneSubfocos: string[];
+  standaloneSubSubfocos: string[];
   subfocosByParentFoco: [string, string[]][];
 }
 
 /**
- * Constrói as cláusulas da árvore clínica aplicando:
- * 1. Refinamento Pai -> Filho (se o estudante selecionou um Tema/Foco dentro de Pediatria,
- *    Pediatria não puxa a especialidade inteira, evitando explosão OR).
- * 2. Soma / União entre ramos diferentes (se o estudante selecionou Cirurgia inteira E
- *    um tema de Pediatria, Cirurgia e o tema de Pediatria SOMAM com OR).
+ * Constrói as cláusulas da árvore clínica de 5 níveis aplicando:
+ * 1. Refinamento Pai -> Filho até sub_subfoco (se o estudante selecionou um sub_subfoco,
+ *    o subfoco/foco/tema/especialidade pai refina para o nó mais específico selecionado).
+ * 2. Soma / União entre ramos diferentes.
  */
 export function buildClinicalFilterClauses(filters: ExtendedFilterState): ClinicalFilterClausesResult {
   const selectedSpecs = new Set(filters.especialidades || []);
   const selectedTemas = new Set(filters.temas || []);
   const selectedFocos = new Set(filters.focos || []);
   const selectedSubfocos = new Set(filters.subfocos || []);
+  const selectedSubSubfocos = new Set(filters.subSubfocos || []);
 
   const specsWithChildren = new Set<string>();
   const temasWithChildren = new Set<string>();
   const focosWithChildren = new Set<string>();
+  const subfocosWithChildren = new Set<string>();
 
   clinicalHierarchy.forEach((esp) => {
     esp.temas.forEach((tem) => {
@@ -100,10 +102,17 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
         }
         foc.subfocos.forEach((subItem) => {
           const sub = typeof subItem === 'string' ? subItem : subItem.subfoco;
+          const subSubs = typeof subItem === 'string' ? [] : (subItem.sub_subfocos || []);
           if (selectedSubfocos.has(sub)) {
             specsWithChildren.add(esp.especialidade);
             temasWithChildren.add(tem.tema);
             focosWithChildren.add(foc.foco);
+          }
+          if (subSubs.some((ss) => selectedSubSubfocos.has(ss))) {
+            specsWithChildren.add(esp.especialidade);
+            temasWithChildren.add(tem.tema);
+            focosWithChildren.add(foc.foco);
+            subfocosWithChildren.add(sub);
           }
         });
       });
@@ -144,14 +153,21 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
     }
   });
 
+  const standaloneSubfocos = new Set<string>();
+  selectedSubfocos.forEach((sub) => {
+    if (!subfocosWithChildren.has(sub)) {
+      standaloneSubfocos.add(sub);
+    }
+  });
+
   const subfocosByParentFoco = new Map<string, string[]>();
-  if (selectedSubfocos.size > 0) {
+  if (standaloneSubfocos.size > 0) {
     clinicalHierarchy.forEach((esp) => {
       esp.temas.forEach((tem) => {
         tem.focos.forEach((foc) => {
           foc.subfocos.forEach((subItem) => {
             const sub = typeof subItem === 'string' ? subItem : subItem.subfoco;
-            if (selectedSubfocos.has(sub)) {
+            if (standaloneSubfocos.has(sub)) {
               const list = subfocosByParentFoco.get(foc.foco) || [];
               if (!list.includes(sub)) list.push(sub);
               subfocosByParentFoco.set(foc.foco, list);
@@ -187,13 +203,13 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
       .join(',');
     if (focoList) orParts.push(`foco.in.(${focoList})`);
   }
-  if (selectedSubfocos.size > 0) {
-    const subList = Array.from(selectedSubfocos)
-      .map((s) => sanitizePostgrestQuotedValue(s))
-      .filter(Boolean)
-      .map((s) => `"${s}"`)
-      .join(',');
-    if (subList) orParts.push(`subfoco.in.(${subList})`);
+  if (standaloneSubfocos.size > 0) {
+    const subList = Array.from(standaloneSubfocos).map((s) => `"${s}"`).join(',');
+    orParts.push(`subfoco.in.(${subList})`);
+  }
+  if (selectedSubSubfocos.size > 0) {
+    const ssList = Array.from(selectedSubSubfocos).map((ss) => `"${ss}"`).join(',');
+    orParts.push(`sub_subfoco.in.(${ssList})`);
   }
 
   return {
@@ -201,7 +217,8 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
     standaloneSpecs: Array.from(standaloneSpecs),
     standaloneTemas: Array.from(standaloneTemas),
     standaloneFocos: Array.from(standaloneFocos),
-    standaloneSubfocos: Array.from(selectedSubfocos),
+    standaloneSubfocos: Array.from(standaloneSubfocos),
+    standaloneSubSubfocos: Array.from(selectedSubSubfocos),
     subfocosByParentFoco: Array.from(subfocosByParentFoco.entries())
   };
 }
@@ -249,15 +266,15 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
   // Higieniza as alternativas com fallback seguro de letra por índice posicional
   const cleanOptions = Array.isArray(row.options)
     ? row.options.map((opt: any, idx: number) => {
-        const rawLetter = opt?.letter;
-        const normalizedLetter = (typeof rawLetter === 'string' && rawLetter.trim().length === 1 && (OPTION_LETTERS as readonly string[]).includes(rawLetter.trim().toUpperCase()))
-          ? (rawLetter.trim().toUpperCase() as 'A' | 'B' | 'C' | 'D' | 'E')
-          : (OPTION_LETTERS[idx] || 'A');
-        return {
-          letter: normalizedLetter,
-          text: opt?.text || ''
-        };
-      })
+      const rawLetter = opt?.letter;
+      const normalizedLetter = (typeof rawLetter === 'string' && rawLetter.trim().length === 1 && (OPTION_LETTERS as readonly string[]).includes(rawLetter.trim().toUpperCase()))
+        ? (rawLetter.trim().toUpperCase() as 'A' | 'B' | 'C' | 'D' | 'E')
+        : (OPTION_LETTERS[idx] || 'A');
+      return {
+        letter: normalizedLetter,
+        text: opt?.text || ''
+      };
+    })
     : [];
 
   const rawInst = (row.institution || '').trim();
@@ -894,7 +911,7 @@ export async function fetchQuestionsFromSupabase(
   if (error && (error.code === '42501' || String(error.message).includes('permission denied'))) {
     // Retry fallback com colunas públicas irrestritas para papel anon preservando os mesmos filtros
     try {
-      const publicCols = 'id,code,institution,banca,year,tipo_prova,modalidade,especialidade,tema,foco,subfoco,difficulty,type,is_anulada,statement,options,images';
+      const publicCols = 'id,code,institution,banca,year,tipo_prova,modalidade,especialidade,tema,foco,subfoco,sub_subfoco,difficulty,type,is_anulada,statement,options,images';
       let retryQuery = supabase.from(targetViewTable).select(publicCols);
       if (filters.gabaritoStatus === 'sem_gabarito') {
         retryQuery = retryQuery.eq('has_gabarito', false);

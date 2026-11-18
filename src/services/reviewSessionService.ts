@@ -1,43 +1,54 @@
 import { ActiveReviewSessionState, UserAnswerItem } from '@/types';
 
-const STORAGE_KEY = 'banco_active_review_session';
+const LEGACY_REVIEW_STORAGE_KEY = 'banco_active_review_session';
 
-/**
- * Salva a sessão ativa de revisão de forma persistente e resiliente.
- */
-export function saveActiveReviewSession(session: ActiveReviewSessionState): void {
+export function getActiveReviewStorageKey(userId?: string | null): string {
+  return userId
+    ? `banco_active_review_session_${userId}`
+    : 'banco_active_review_session_guest';
+}
+
+export function saveActiveReviewSession(
+  session: ActiveReviewSessionState,
+  userId?: string | null
+): void {
   if (typeof window === 'undefined') return;
   try {
     const updated: ActiveReviewSessionState = {
       ...session,
       lastUpdatedAt: Date.now()
     };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+    localStorage.setItem(getActiveReviewStorageKey(userId), JSON.stringify(updated));
+    localStorage.removeItem(LEGACY_REVIEW_STORAGE_KEY);
   } catch (error) {
     console.warn('Falha ao persistir sessão ativa de revisão:', error);
   }
 }
 
-/**
- * Recupera a sessão ativa de revisão se houver questões ainda não finalizadas.
- */
-export function getActiveReviewSession(): ActiveReviewSessionState | null {
+export function getActiveReviewSession(userId?: string | null): ActiveReviewSessionState | null {
   if (typeof window === 'undefined') return null;
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const key = getActiveReviewStorageKey(userId);
+    let raw = localStorage.getItem(key);
+    if (!raw) {
+      const legacy = localStorage.getItem(LEGACY_REVIEW_STORAGE_KEY);
+      if (legacy) {
+        localStorage.removeItem(LEGACY_REVIEW_STORAGE_KEY);
+        raw = legacy;
+        localStorage.setItem(key, legacy);
+      }
+    }
     if (!raw) return null;
     const session: ActiveReviewSessionState = JSON.parse(raw);
 
-    // Valida integridade básica
     if (!session || !Array.isArray(session.questionIds) || session.questionIds.length === 0) {
-      clearActiveReviewSession();
+      clearActiveReviewSession(userId);
       return null;
     }
 
-    // Se já respondeu todas as questões da sessão, ela é considerada concluída
     const answeredCount = Object.keys(session.sessionAnswers || {}).length;
     if (answeredCount >= session.questionIds.length) {
-      clearActiveReviewSession();
+      clearActiveReviewSession(userId);
       return null;
     }
 
@@ -48,13 +59,11 @@ export function getActiveReviewSession(): ActiveReviewSessionState | null {
   }
 }
 
-/**
- * Remove a sessão ativa quando ela é concluída ou explicitamente descartada pelo estudante.
- */
-export function clearActiveReviewSession(): void {
+export function clearActiveReviewSession(userId?: string | null): void {
   if (typeof window === 'undefined') return;
   try {
-    localStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(getActiveReviewStorageKey(userId));
+    localStorage.removeItem(LEGACY_REVIEW_STORAGE_KEY);
   } catch (error) {
     console.warn('Falha ao limpar sessão de revisão:', error);
   }
@@ -70,9 +79,6 @@ export interface ReviewCycleMetrics {
   topEspecialidades: Array<{ especialidade: string; count: number }>;
 }
 
-/**
- * Calcula a tríade do ciclo de aprendizagem e a topografia clínica de vulnerabilidades.
- */
 export function calculateReviewCycleMetrics(
   userAnswers: Record<string, UserAnswerItem>,
   questionsMap: Record<string, { especialidade?: string; tema?: string }> = {}
@@ -97,7 +103,6 @@ export function calculateReviewCycleMetrics(
       paraRevisar++;
     }
 
-    // Identifica especialidade e tema
     let spec = ans.specialty || questionsMap[qid]?.especialidade || 'Outros';
     if (spec === 'Cirurgia') spec = 'Cirurgia Geral';
     if (spec === 'Ginecologia e Obstetrícia') spec = 'Ginecologia';
@@ -114,13 +119,11 @@ export function calculateReviewCycleMetrics(
 
   const taxaSuperacao = totalNoCaderno > 0 ? (foraDoCiclo / totalNoCaderno) * 100 : 0;
 
-  // Ordena os Top 5 Temas mais frequentes
   const topTemas = Object.entries(temasCount)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 5)
     .map(([tema, count]) => ({ tema, count }));
 
-  // Ordena as Especialidades com mais erros
   const topEspecialidades = Object.entries(especialidadesCount)
     .sort((a, b) => b[1] - a[1])
     .map(([especialidade, count]) => ({ especialidade, count }));

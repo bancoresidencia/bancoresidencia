@@ -14,6 +14,7 @@ export interface HomologatedBaseline {
   temas: Record<string, number>;
   focos: Record<string, number>;
   subfocos: Record<string, number>;
+  subSubfocos?: Record<string, number>;
   dificuldades: Record<'Fácil' | 'Médio' | 'Difícil', number>;
   tipos: Record<string, number>;
   anos: Record<number, number>;

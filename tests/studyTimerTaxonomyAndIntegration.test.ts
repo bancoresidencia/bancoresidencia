@@ -17,48 +17,48 @@ console.log('✓ 2. Múltiplas especialidades -> Treino Geral');
 
 // 3. Especialidade única isolada -> Nível Especialidade
 const t3 = deduceStudyTaxonomy({
-  especialidades: ['Cirurgia']
+  especialidades: ['Cirurgia Geral']
 });
-assert.strictEqual(t3.especialidade, 'Cirurgia', 'Teste 3 falhou: Esperava Cirurgia');
-assert.strictEqual(t3.rawLabel, 'Cirurgia', 'Teste 3 falhou: Esperava Cirurgia');
+assert.strictEqual(t3.especialidade, 'Cirurgia Geral', 'Teste 3 falhou: Esperava Cirurgia Geral');
+assert.strictEqual(t3.rawLabel, 'Cirurgia Geral', 'Teste 3 falhou: Esperava Cirurgia Geral');
 console.log('✓ 3. Especialidade única isolada -> Nível Especialidade');
 
 // 4. Foco único -> Nível FOCO
 const t4 = deduceStudyTaxonomy({
-  focos: ['Apendicite Aguda: Diagnóstico, Escore de Alvarado, Tratamento']
+  focos: ['Abdome Agudo Inflamatório']
 });
-assert.ok(t4.foco?.includes('Apendicite Aguda'), 'Teste 4 falhou: Esperava Apendicite Aguda como foco');
-assert.strictEqual(t4.especialidade, 'Cirurgia', 'Teste 4 falhou: Esperava Cirurgia');
-assert.strictEqual(t4.tema, 'Cirurgia Geral e Digestiva', 'Teste 4 falhou: Esperava Cirurgia Geral e Digestiva');
+assert.strictEqual(t4.foco, 'Abdome Agudo Inflamatório', 'Teste 4 falhou: Esperava Abdome Agudo Inflamatório como foco');
+assert.strictEqual(t4.especialidade, 'Cirurgia Geral', 'Teste 4 falhou: Esperava Cirurgia Geral');
+assert.strictEqual(t4.tema, 'Abdome Agudo Cirúrgico', 'Teste 4 falhou: Esperava Abdome Agudo Cirúrgico');
 console.log('✓ 4. Foco único -> Nível FOCO com tema e especialidade deduzidos');
 
 // 5. Múltiplos subfocos do mesmo foco -> Nível FOCO
 const t5 = deduceStudyTaxonomy({
-  subfocos: ['Apendicite Aguda: Complicações e Manejo', 'Apendicite Complicada: Plastão, Abscesso e Diagnóstico Diferencial']
+  subfocos: ['Apendicite Aguda', 'Diverticulite Aguda dos Cólons']
 });
-assert.ok(t5.foco?.includes('Apendicite Aguda'), 'Teste 5 falhou: Esperava foco Apendicite Aguda');
-assert.strictEqual(t5.especialidade, 'Cirurgia', 'Teste 5 falhou: Esperava Cirurgia');
+assert.strictEqual(t5.foco, 'Abdome Agudo Inflamatório', 'Teste 5 falhou: Esperava foco Abdome Agudo Inflamatório');
+assert.strictEqual(t5.especialidade, 'Cirurgia Geral', 'Teste 5 falhou: Esperava Cirurgia Geral');
 console.log('✓ 5. Múltiplos subfocos do mesmo foco -> Nível FOCO');
 
 // 6. Múltiplos focos do mesmo tema -> Nível TEMA
 const t6 = deduceStudyTaxonomy({
-  focos: ['Apendicite Aguda: Diagnóstico, Escore de Alvarado, Tratamento', 'Colecistite Aguda e Crônica']
+  focos: ['Abdome Agudo Inflamatório', 'Abdome Agudo Obstrutivo']
 });
-assert.strictEqual(t6.tema, 'Cirurgia Geral e Digestiva', 'Teste 6 falhou: Esperava Cirurgia Geral e Digestiva');
-assert.strictEqual(t6.especialidade, 'Cirurgia', 'Teste 6 falhou: Esperava Cirurgia');
+assert.strictEqual(t6.tema, 'Abdome Agudo Cirúrgico', 'Teste 6 falhou: Esperava Abdome Agudo Cirúrgico');
+assert.strictEqual(t6.especialidade, 'Cirurgia Geral', 'Teste 6 falhou: Esperava Cirurgia Geral');
 console.log('✓ 6. Múltiplos focos do mesmo tema -> Nível TEMA');
 
 // 7. Múltiplos temas da mesma especialidade -> Nível ESPECIALIDADE
 const t7 = deduceStudyTaxonomy({
-  especialidades: ['Cirurgia'],
-  temas: ['Cirurgia Geral e Digestiva', 'Trauma']
+  especialidades: ['Cirurgia Geral'],
+  temas: ['Abdome Agudo Cirúrgico', 'Trauma e Atendimento Inicial']
 });
-assert.strictEqual(t7.especialidade, 'Cirurgia', 'Teste 7 falhou: Esperava Cirurgia');
+assert.strictEqual(t7.especialidade, 'Cirurgia Geral', 'Teste 7 falhou: Esperava Cirurgia Geral');
 console.log('✓ 7. Múltiplos temas da mesma especialidade -> Nível ESPECIALIDADE');
 
 // 8. Subfocos de especialidades distintas -> Treino Geral
 const t8 = deduceStudyTaxonomy({
-  subfocos: ['Apendicite Aguda: Complicações e Manejo', 'Marcos do Desenvolvimento']
+  subfocos: ['Apendicite Aguda', 'IAM com Supradesnivelamento do Segmento ST (IAMCSST)']
 });
 assert.strictEqual(t8.rawLabel, 'Treino Geral', 'Teste 8 falhou: Esperava Treino Geral para subfocos de especialidades distintas');
 console.log('✓ 8. Subfocos de especialidades distintas -> Treino Geral');

@@ -562,11 +562,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       if (session?.user) {
-        const account = await mapSupabaseUserToAccount(session.user);
-        if (isMounted) setPersistedUser(account);
-        migrateGuestAnswersToUser(session.user.id, supabase);
-        migrateGuestFlashcardsToUser(session.user.id, supabase);
-        migrateGuestAgendaToUser(session.user.id, supabase);
+        if (event !== 'INITIAL_SESSION') {
+          const account = await mapSupabaseUserToAccount(session.user);
+          if (isMounted) setPersistedUser(account);
+        }
+        const uid = session.user.id;
+        setTimeout(() => {
+          migrateGuestAnswersToUser(uid, supabase);
+          migrateGuestFlashcardsToUser(uid, supabase);
+          migrateGuestAgendaToUser(uid, supabase);
+        }, 0);
       } else if (event === 'SIGNED_OUT') {
         if (isMounted) setPersistedUser(null);
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
@@ -716,14 +721,24 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           localStorage.removeItem(`bancoresidencia_user_card_edits_${currentUserId}`);
           localStorage.removeItem(`bancoresidencia_flashcards_progress_${currentUserId}`);
           localStorage.removeItem(`bancoresidencia_daily_review_logs_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_last_flashcard_session_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_last_read_summary_${currentUserId}`);
+          localStorage.removeItem(`banco_active_review_session_${currentUserId}`);
           localStorage.removeItem(`bancoresidencia_study_sessions_${currentUserId}`);
           localStorage.removeItem(`bancoresidencia_user_scheduled_tasks_${currentUserId}`);
           localStorage.removeItem(`bancoresidencia_google_events_${currentUserId}`);
           localStorage.removeItem(`bancoresidencia_exported_slots_${currentUserId}`);
+          localStorage.removeItem(`bancoresidencia_real_calendar_events_${currentUserId}`);
           localStorage.removeItem(`bancoresidencia_custom_daily_goal_${currentUserId}`);
           localStorage.removeItem(`bancoresidencia_study_timer_state_${currentUserId}`);
           localStorage.removeItem(`user_target_exam_name_${currentUserId}`);
           localStorage.removeItem(`user_target_exam_date_${currentUserId}`);
+          for (let i = localStorage.length - 1; i >= 0; i--) {
+            const k = localStorage.key(i);
+            if (k && k.startsWith(`bancoresidencia_platform_active_time_${currentUserId}_`)) {
+              localStorage.removeItem(k);
+            }
+          }
         }
         localStorage.removeItem('bancoresidencia_user_answers');
         localStorage.removeItem('bancoresidencia_user_answers_guest');
@@ -747,11 +762,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
         localStorage.removeItem('bancoresidencia_user_scheduled_tasks_guest');
         localStorage.removeItem('bancoresidencia_real_calendar_events');
+        localStorage.removeItem('bancoresidencia_exported_slots');
         localStorage.removeItem('bancoresidencia_google_calendar_connected');
         localStorage.removeItem('bancoresidencia_google_access_token');
         localStorage.removeItem('bancoresidencia_google_last_sync');
         localStorage.removeItem('bancoresidencia_google_calendar_account');
         localStorage.removeItem('bancoresidencia_study_timer_state');
+        localStorage.removeItem('bancoresidencia_study_sessions');
+        localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
         localStorage.removeItem('user_target_exam_name');
         localStorage.removeItem('user_target_exam_date');
 
