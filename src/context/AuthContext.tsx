@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { UserAccount, UpdateProfileData } from '@/types/auth';
 import { createClient } from '@/lib/supabase/client';
+import { isPlanId } from '@/config/plans';
 import { validatePasswordRequirements } from '@/utils/security';
 import { clearAllSyncJournalsForUser } from '@/utils/crossDeviceSync';
 
@@ -10,21 +11,27 @@ const STORAGE_CURRENT_USER_KEY = 'bancoresidencia_current_user';
 
 const STORAGE_CACHED_USER_KEY = 'bancoresidencia_cached_user_session';
 
+type PasswordAuthResult =
+  | { status: 'authenticated' }
+  | { status: 'confirmation-required'; email: string }
+  | { status: 'error'; message: string };
+
 interface AuthContextType {
   user: UserAccount | null;
   isAuthenticated: boolean;
   isAdmin: boolean;
   isLoading: boolean;
-  login: (email: string, password: string) => Promise<{ success: boolean; message?: string }>;
+  login: (email: string, password: string) => Promise<PasswordAuthResult>;
   loginWithGoogle: () => Promise<{ success: boolean; message?: string }>;
   register: (data: {
     name: string;
     email: string;
     password: string;
+    checkoutPlan?: string;
     specialtyTarget?: string;
     college?: string;
     graduationYear?: number;
-  }) => Promise<{ success: boolean; message?: string }>;
+  }) => Promise<PasswordAuthResult>;
   logout: () => Promise<void>;
   updateProfile: (data: UpdateProfileData) => Promise<{ success: boolean; message?: string }>;
   updatePassword: (currentPassword: string, newPassword: string) => Promise<{ success: boolean; message?: string }>;
@@ -585,7 +592,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     };
   }, [supabase, mapSupabaseUserToAccount]);
 
-  const login = async (email: string, password: string): Promise<{ success: boolean; message?: string }> => {
+  const login = async (email: string, password: string): Promise<PasswordAuthResult> => {
     const normalizedEmail = email.trim().toLowerCase();
 
     try {
@@ -595,21 +602,31 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       });
 
       if (error) {
-        return { success: false, message: error.message };
+        if (error.code === 'email_not_confirmed') {
+          return { status: 'confirmation-required', email: normalizedEmail };
+        }
+        return {
+          status: 'error',
+          message: error.code === 'invalid_credentials'
+            ? 'E-mail ou senha inválidos.'
+            : 'Não foi possível entrar. Tente novamente em instantes.'
+        };
       }
 
-      if (data.user) {
-        const account = await mapSupabaseUserToAccount(data.user);
-        setPersistedUser(account);
-        localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
-        migrateGuestAnswersToUser(data.user.id, supabase);
-        migrateGuestFlashcardsToUser(data.user.id, supabase);
-        migrateGuestAgendaToUser(data.user.id, supabase);
+      const sessionUser = data.session?.user;
+      if (!sessionUser) {
+        return { status: 'error', message: 'Não foi possível iniciar a sessão.' };
       }
 
-      return { success: true };
+      const account = await mapSupabaseUserToAccount(sessionUser);
+      setPersistedUser(account);
+      localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+      migrateGuestAnswersToUser(sessionUser.id, supabase);
+      migrateGuestFlashcardsToUser(sessionUser.id, supabase);
+      migrateGuestAgendaToUser(sessionUser.id, supabase);
+      return { status: 'authenticated' };
     } catch {
-      return { success: false, message: 'Erro de conexão com o servidor de autenticação.' };
+      return { status: 'error', message: 'Erro de conexão com o servidor de autenticação.' };
     }
   };
 
@@ -657,15 +674,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     name: string;
     email: string;
     password: string;
+    checkoutPlan?: string;
     specialtyTarget?: string;
     college?: string;
     graduationYear?: number;
-  }): Promise<{ success: boolean; message?: string }> => {
+  }): Promise<PasswordAuthResult> => {
     const normalizedEmail = data.email.trim().toLowerCase();
 
     const validation = validatePasswordRequirements(data.password);
     if (!validation.isValid) {
-      return { success: false, message: validation.errorMessage || 'A senha não atende aos requisitos de segurança.' };
+      return { status: 'error', message: validation.errorMessage || 'A senha não atende aos requisitos de segurança.' };
     }
 
     try {
@@ -677,23 +695,33 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
             name: data.name.trim(),
             specialty_target: data.specialtyTarget || 'Clínica Médica',
             college: data.college || '',
-            graduation_year: data.graduationYear || new Date().getFullYear()
+            graduation_year: data.graduationYear || new Date().getFullYear(),
+            ...(isPlanId(data.checkoutPlan) && { signup_checkout_plan: data.checkoutPlan })
           }
         }
       });
 
       if (error) {
-        return { success: false, message: error.message };
+        if (error.code === 'user_already_exists' || error.code === 'email_exists') {
+          return { status: 'confirmation-required', email: normalizedEmail };
+        }
+        return {
+          status: 'error',
+          message: error.status === 429
+            ? 'Aguarde alguns instantes antes de tentar novamente.'
+            : 'Não foi possível concluir o cadastro. Revise seus dados e tente novamente.'
+        };
       }
 
-      if (res.user) {
-        const account = await mapSupabaseUserToAccount(res.user);
-        setPersistedUser(account);
+      if (!res.session) {
+        return { status: 'confirmation-required', email: normalizedEmail };
       }
 
-      return { success: true };
+      const account = await mapSupabaseUserToAccount(res.session.user);
+      setPersistedUser(account);
+      return { status: 'authenticated' };
     } catch {
-      return { success: false, message: 'Falha ao conectar com o serviço de cadastro.' };
+      return { status: 'error', message: 'Falha ao conectar com o serviço de cadastro.' };
     }
   };
 

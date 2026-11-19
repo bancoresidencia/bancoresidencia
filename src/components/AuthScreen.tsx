@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { Logo } from '@/components/Logo';
+import { EmailConfirmationPending } from '@/components/EmailConfirmationPending';
 import { validatePasswordRequirements } from '@/utils/security';
 import {
   Mail,
@@ -68,10 +69,17 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   const [googleLoading, setGoogleLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
+  const [confirmationEmail, setConfirmationEmail] = useState<string | null>(null);
 
   const resetMessages = () => {
     setErrorMsg(null);
     setSuccessMsg(null);
+  };
+
+  const requestEmailConfirmation = (address: string) => {
+    setPassword('');
+    setConfirmPassword('');
+    setConfirmationEmail(address);
   };
 
   const handleToggleMode = (newMode: 'login' | 'register') => {
@@ -111,11 +119,13 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
     setLoading(true);
     try {
       const res = await login(email, password);
-      if (res.success) {
+      if (res.status === 'authenticated') {
         setSuccessMsg('Login realizado com sucesso! Redirecionando...');
         if (onSuccess) setTimeout(() => onSuccess(selectedPlanTitle), 500);
+      } else if (res.status === 'confirmation-required') {
+        requestEmailConfirmation(res.email);
       } else {
-        setErrorMsg(res.message || 'Falha ao realizar login.');
+        setErrorMsg(res.message);
       }
     } catch {
       setErrorMsg('Ocorreu um erro inesperado ao autenticar.');
@@ -159,14 +169,17 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
       const res = await register({
         name: name.trim(),
         email,
-        password
+        password,
+        checkoutPlan: selectedPlanTitle
       });
 
-      if (res.success) {
+      if (res.status === 'authenticated') {
         setSuccessMsg('Conta criada com sucesso! Redirecionando para a configuração do seu perfil...');
         if (onSuccess) setTimeout(() => onSuccess(selectedPlanTitle, true), 600);
+      } else if (res.status === 'confirmation-required') {
+        requestEmailConfirmation(res.email);
       } else {
-        setErrorMsg(res.message || 'Não foi possível cadastrar.');
+        setErrorMsg(res.message);
       }
     } catch {
       setErrorMsg('Erro inesperado ao registrar nova conta.');
@@ -190,6 +203,21 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
     }
   };
 
+
+  if (confirmationEmail) {
+    return (
+      <EmailConfirmationPending
+        email={confirmationEmail}
+        justRegistered={mode === 'register'}
+        onEdit={() => setConfirmationEmail(null)}
+        onLogin={() => {
+          setConfirmationEmail(null);
+          handleToggleMode('login');
+        }}
+        onClose={onClose}
+      />
+    );
+  }
 
   return (
     <div className="w-full flex items-center justify-center">

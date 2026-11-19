@@ -90,6 +90,13 @@ const nextConfig: NextConfig = {
             ].join('; ')
           }
         ]
+      },
+      {
+        source: '/auth/confirm',
+        headers: [
+          { key: 'Cache-Control', value: 'private, no-store' },
+          { key: 'Referrer-Policy', value: 'strict-origin' }
+        ]
       }
     ];
   }

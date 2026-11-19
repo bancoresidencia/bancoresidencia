@@ -91,3 +91,7 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
   }
 };
 
+export function isPlanId(value: unknown): value is PlanId {
+  return typeof value === 'string' && Object.hasOwn(PLANS, value);
+}
+
