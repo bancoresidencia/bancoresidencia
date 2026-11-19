@@ -13,9 +13,15 @@ interface StudyRequest {
 }
 
 export async function requestStudyQuestions<Result>(request: StudyRequest, signal?: AbortSignal): Promise<Result> {
-  const { data: { session } } = await supabase.auth.getSession();
+  const isCount = request.action === 'catalog' || request.action === 'facets';
+  const isPersonalized = Boolean(request.filters?.ocultarRevisadas
+    || (request.filters?.status && request.filters.status !== 'Todas'));
+  const isPublicCount = request.action === 'catalog' || (request.action === 'facets' && !isPersonalized);
   const headers: Record<string, string> = { 'Content-Type': 'application/json' };
-  if (session?.access_token) headers.Authorization = `Bearer ${session.access_token}`;
+  if (!isPublicCount) {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session?.access_token) headers.Authorization = `Bearer ${session.access_token}`;
+  }
   // Student criteria are resolved using the JWT. Local answer maps never leave the browser.
   const filters = request.filters ? { ...request.filters } : undefined;
   if (filters) {
@@ -23,11 +29,20 @@ export async function requestStudyQuestions<Result>(request: StudyRequest, signa
     delete filters.userWrongIds;
     delete filters.userCorrectIds;
   }
-  const response = await fetch('/api/questions', {
-    method: 'POST', headers, signal, body: JSON.stringify({ ...request, filters })
+  const body = JSON.stringify({ ...request, filters });
+  const load = () => fetch('/api/questions', {
+    method: 'POST', headers, signal, body,
+    credentials: isPublicCount ? 'omit' : 'same-origin'
   });
-  if (!response.ok) throw new Error('Não foi possível carregar o catálogo de questões.');
-  return await response.json() as Result;
+  const response = await load().catch((error: unknown) => {
+    if (!isCount || signal?.aborted) throw error;
+    return null;
+  });
+  const result = isCount && (!response || response.status >= 500) && !signal?.aborted
+    ? await load()
+    : response;
+  if (!result?.ok) throw new Error('Não foi possível carregar o catálogo de questões.');
+  return await result.json() as Result;
 }
 
 export function fetchStudyCatalog(filters: ExtendedFilterState, signal?: AbortSignal) {

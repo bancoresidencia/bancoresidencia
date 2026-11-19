@@ -357,6 +357,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   const [catalog, setCatalog] = useState<StudyCatalogCounts | null>(null);
   const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
+  const [catalogError, setCatalogError] = useState(false);
+  const [facetsError, setFacetsError] = useState(false);
+  const [catalogRetry, setCatalogRetry] = useState(0);
+  const [facetsRetry, setFacetsRetry] = useState(0);
   const modalityKey = JSON.stringify(filters.modalidades);
   const facetKey = JSON.stringify({
     modalidades: filters.modalidades, instituicoes: filters.instituicoes,
@@ -372,25 +376,27 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   useEffect(() => {
     const controller = new AbortController();
     setCatalog(null);
+    setCatalogError(false);
     fetchStudyCatalog({ modalidades: JSON.parse(modalityKey) }, controller.signal)
       .then((result) => { if (!controller.signal.aborted) setCatalog(result); })
-      .catch(() => { if (!controller.signal.aborted) setCatalog(null); });
+      .catch(() => { if (!controller.signal.aborted) setCatalogError(true); });
     return () => controller.abort();
-  }, [modalityKey]);
+  }, [modalityKey, catalogRetry]);
 
   useEffect(() => {
     const controller = new AbortController();
     setFacetedCounts(null);
+    setFacetsError(false);
     const timer = setTimeout(() => {
       fetchFacetedHierarchyCounts(JSON.parse(facetKey), controller.signal)
         .then((result) => { if (!controller.signal.aborted) setFacetedCounts(result); })
-        .catch(() => { if (!controller.signal.aborted) setFacetedCounts(null); });
+        .catch(() => { if (!controller.signal.aborted) setFacetsError(true); });
     }, 120);
     return () => {
       clearTimeout(timer);
       controller.abort();
     };
-  }, [facetKey, answerRevision]);
+  }, [facetKey, answerRevision, facetsRetry]);
 
   const yearsList = catalog?.years ?? [];
   const countForPath = (path: string[]): number | null => {
@@ -400,7 +406,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       ? count(path) + count(['Ginecologia', ...path.slice(1)]) + count(['Obstetrícia', ...path.slice(1)])
       : count(path);
   };
-  const formatCount = (count: number | null) => count === null ? '—' : count.toLocaleString('pt-BR');
+  const formatCount = (count: number | null, failed = facetsError) => count === null
+    ? (failed ? null : '…')
+    : count.toLocaleString('pt-BR');
 
   // Identificação dinâmica de filtros selecionados para cotas (evitando duplicar pai e filho)
   const itemsToConfigure = useMemo(() => {
@@ -1220,6 +1228,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             )}
           </div>
 
+          {facetsError && (
+            <button type="button" className="self-start text-xs underline" onClick={() => setFacetsRetry((n) => n + 1)}>
+              Recarregar contagens
+            </button>
+          )}
           {/* Árvore Clínica com Scroll Dedicado */}
           <div className="flex-1 min-h-0 overflow-y-auto pr-1.5 space-y-1 custom-scrollbar text-xs">
             {clinicalHierarchy.map((esp) => {
@@ -1611,11 +1624,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                             </div>
                                                             <span className="truncate leading-tight text-zinc-700 dark:text-zinc-300">{formatSubSubfocoDisplay(ss)}</span>
                                                           </div>
-                                                          {(ssCount === null || ssCount > 0) && (
-                                                            <span className="px-1.5 py-0.2 rounded bg-transparent border border-zinc-200/40 dark:border-zinc-800/50 text-[9px] font-mono text-zinc-400 dark:text-zinc-500 ml-2 shrink-0">
-                                                              {formatCount(ssCount)}
-                                                            </span>
-                                                          )}
+                                                          <span className="px-1.5 py-0.2 rounded bg-transparent border border-zinc-200/40 dark:border-zinc-800/50 text-[9px] font-mono text-zinc-400 dark:text-zinc-500 ml-2 shrink-0">
+                                                            {formatCount(ssCount)}
+                                                          </span>
                                                         </div>
                                                       );
                                                     })}
@@ -2679,6 +2690,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
             {/* Grade de 3 Colunas com os Cards de Instituições */}
             <div className="flex-1 overflow-y-auto py-3.5 pr-1.5 custom-scrollbar">
+              {catalogError && (
+                <button type="button" className="mb-2 text-xs underline" onClick={() => setCatalogRetry((n) => n + 1)}>
+                  Recarregar contagens
+                </button>
+              )}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {catalogFilteredByUf.map((item) => {
                   const targetCanonical = getCanonicalBancaKey(item.key);
@@ -2738,8 +2754,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         className="text-xs font-semibold mt-2 font-mono"
                         style={{ color: accentConfig.primaryHex }}
                       >
-                        {formatCount(catalog ? resolveBancaList([getCanonicalBancaKey(item.key)])
-                          .reduce((total, alias) => total + (catalog.bancas[alias] ?? 0), 0) : null)} questões
+                        {!catalogError && (
+                          <>{formatCount(catalog ? resolveBancaList([getCanonicalBancaKey(item.key)])
+                            .reduce((total, alias) => total + (catalog.bancas[alias] ?? 0), 0) : null, false)} questões</>
+                        )}
                       </span>
                     </div>
                   );

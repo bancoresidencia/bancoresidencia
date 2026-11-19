@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 
-async function query(body) {
+async function query(body, headers = {}) {
   const response = await fetch('http://localhost:3000/api/questions', {
-    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body),
+    method: 'POST', headers: { 'Content-Type': 'application/json', ...headers }, body: JSON.stringify(body),
     signal: AbortSignal.timeout(15000)
   });
   assert.equal(response.status, 200);
@@ -17,4 +17,9 @@ assert.equal(facets.totalRightCardCount, list.total);
 const specialty = 'Pediatria';
 const narrowed = await query({ filters: { ...filters, clinicalPaths: [[specialty]] }, pageSize: 1 });
 assert.equal(facets.paths[specialty], narrowed.total);
+const expiredSession = { Authorization: 'Bearer expired-test-session' };
+const result = await query({ action: 'facets', filters }, expiredSession);
+assert.deepEqual(result.facets, facets);
+const catalog = await query({ action: 'catalog', filters }, expiredSession);
+assert(catalog.bancas.ENARE > 0);
 console.log('Facetas, lista e recorte clínico têm as mesmas contagens.');

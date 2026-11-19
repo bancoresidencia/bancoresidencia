@@ -99,7 +99,13 @@ async function queryStudyQuestions(req: NextRequest, body: StudyQuestionRequest)
   const token = authHeader?.startsWith('Bearer ') ? authHeader.slice(7).trim() : undefined;
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const publicKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  const supabase = token && url && publicKey
+  const publicCount = mode === 'catalog' || (mode === 'facets' && !filters.ocultarRevisadas
+    && (!filters.status || filters.status === 'Todas'));
+  const supabase = publicCount && url && publicKey
+    ? createPublicSupabaseClient(url, publicKey, {
+      auth: { persistSession: false, autoRefreshToken: false }
+    })
+    : token && url && publicKey
     ? createPublicSupabaseClient(url, publicKey, {
       global: { headers: { Authorization: `Bearer ${token}` } },
       auth: { persistSession: false, autoRefreshToken: false }
