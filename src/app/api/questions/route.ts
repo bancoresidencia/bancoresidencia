@@ -29,6 +29,8 @@ import { resolveCanonicalViewsForModalidades } from '@/services/canonicalQuestio
 import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { isSqliteAvailable, queryQuestionsFromSqlite, queryFacetsFromSqlite } from '@/lib/sqliteQuestions';
+import { normalizeStudyQuery } from '@/services/studyQuestionCatalog';
+import { normalizeStudyFormats } from '@/utils/studyQuestionFilters';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'nodejs';
@@ -62,8 +64,9 @@ interface QuestionDbRow {
   tema?: string;
   foco?: string;
   subfoco?: string;
+  sub_subfoco?: string;
   difficulty?: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
-  type?: 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
+  type?: string;
   is_anulada?: boolean;
   statement: string;
   options?: { letter: 'A' | 'B' | 'C' | 'D' | 'E'; text: string }[];
@@ -72,7 +75,62 @@ interface QuestionDbRow {
   images?: string[];
 }
 
+interface StudyQuestionRequest {
+  action?: string;
+  filters?: ExtendedFilterState;
+  page?: number;
+  pageSize?: number;
+  questionIds?: unknown;
+  quota?: string;
+  excludeIds?: string[];
+  includeGabarito?: boolean;
+}
+
+async function queryStudyQuestions(req: NextRequest, body: StudyQuestionRequest) {
+  const filters = body.filters && typeof body.filters === 'object' ? body.filters : {};
+  if (filters.gabaritoStatus === 'sem_gabarito') {
+    return NextResponse.json({ error: 'Filtro restrito à curadoria.' }, { status: 403 });
+  }
+  const action = body.action;
+  const mode = action === 'facets' || action === 'catalog' || action === 'ids' ? action : 'list';
+  const page = Math.max(1, Math.min(100000, Math.trunc(Number(body.page) || 1)));
+  const size = Math.max(1, Math.min(mode === 'ids' ? 200 : 50, Math.trunc(Number(body.pageSize) || 20)));
+  const authHeader = req.headers.get('authorization');
+  const token = authHeader?.startsWith('Bearer ') ? authHeader.slice(7).trim() : undefined;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const publicKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const supabase = token && url && publicKey
+    ? createPublicSupabaseClient(url, publicKey, {
+      global: { headers: { Authorization: `Bearer ${token}` } },
+      auth: { persistSession: false, autoRefreshToken: false }
+    })
+    : await createSupabaseServerClient();
+  const normalized = normalizeStudyQuery(filters, body.questionIds, {
+    quota: body.quota,
+    excludeIds: body.excludeIds,
+    randomize: mode === 'ids' && filters.aleatorizar === true
+  });
+  const [{ data, error }, student] = await Promise.all([
+    supabase.rpc('query_study_questions', { p_filters: normalized, p_mode: mode, p_page: page, p_size: size }),
+    mode === 'list' ? supabase.auth.getUser(token) : Promise.resolve(null)
+  ]);
+  if (error || !data) {
+    console.error('[/api/questions] Erro na consulta do catálogo:', error?.code);
+    return NextResponse.json({ error: 'Não foi possível carregar o catálogo de questões.' }, { status: 503 });
+  }
+  if (mode === 'facets') return NextResponse.json({ facets: data });
+  if (mode !== 'list') return NextResponse.json(data);
+
+  const { total, rows } = data as { total: number; rows: QuestionDbRow[] };
+  const questions = rows.map((row) => mapRowToQuestion(row));
+  return NextResponse.json({
+    questions, total, page, pageSize: size, totalPages: Math.ceil(total / size),
+    sessionTicket: generateSessionTicket(student?.data.user?.id || 'anonymous', questions.map((question) => question.id))
+  });
+}
+
 function mapRowToQuestion(row: QuestionDbRow, includeExplanations = false): Question {
+  const storedType = normalizeStudyFormats(row.type)?.[0];
   const sanitizedOptions = Array.isArray(row.options)
     ? row.options.map((opt) => {
       const rawOpt = opt as { letter: 'A' | 'B' | 'C' | 'D' | 'E'; text: string; explanation?: string };
@@ -106,8 +164,9 @@ function mapRowToQuestion(row: QuestionDbRow, includeExplanations = false): Ques
     subfoco: row.subfoco || '',
     sub_subfoco: (row as { sub_subfoco?: string }).sub_subfoco || (row as { subSubfoco?: string }).subSubfoco || '',
     subSubfoco: (row as { subSubfoco?: string }).subSubfoco || (row as { sub_subfoco?: string }).sub_subfoco || '',
-    difficulty: row.difficulty || 'Médio',
-    type: row.type || 'Múltipla escolha',
+    difficulty: row.difficulty || 'Desconhecido',
+    type: storedType === 'discursiva' ? 'Discursiva'
+      : storedType === 'certo ou errado' ? 'Certo ou errado' : 'Múltipla escolha',
     isAnulada: Boolean(row.is_anulada),
     statement: sanitizeMedicalText(row.statement || ''),
     options: sanitizedOptions,
@@ -444,8 +503,16 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
 
 export async function POST(req: NextRequest) {
   try {
+    const body = await req.json().catch(() => ({})) as StudyQuestionRequest;
+    if (!body || typeof body !== 'object') {
+      return NextResponse.json({ error: 'Requisição inválida.' }, { status: 400 });
+    }
+    if (body.includeGabarito !== true) return await queryStudyQuestions(req, body);
+    const adminAuth = await verifyAdminSession(req);
+    if (!adminAuth.authorized) {
+      return NextResponse.json({ error: 'Acesso restrito à curadoria.' }, { status: 403 });
+    }
     const supabaseAdmin = getSupabaseAdmin();
-    const body = await req.json().catch(() => ({}));
     const {
       filters = {} as ExtendedFilterState,
       page: rawPage = 1,

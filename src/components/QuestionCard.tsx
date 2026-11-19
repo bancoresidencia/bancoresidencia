@@ -43,7 +43,6 @@ import { Button, Badge } from '@/components/ui';
 import {
   getQuestionResolution,
   subscribeToResolutions,
-  waitForQuestionResolution,
   hasQuestionResolution
 } from '@/services/resolutionCache';
 
@@ -376,7 +375,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   onNextQuestion
 }) => {
   const { accentConfig } = useTheme();
-  const { plan: userPlan, dailyResolvedCount, isFreeLimitReached, openUpgradeModal } = useSubscription();
+  const { plan: userPlan, dailyResolvedCount, openUpgradeModal } = useSubscription();
 
   // Modal para salvar em pastas de 3 níveis
   const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
@@ -392,6 +391,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const [resolvedOverrides, setResolvedOverrides] = useState<Partial<Question>>({});
   const [isSubmittingAnswer, setIsSubmittingAnswer] = useState<boolean>(false);
   const [solveError, setSolveError] = useState<string | null>(null);
+  const [writtenAnswer, setWrittenAnswer] = useState('');
+  const attemptRef = useRef<{ key: string; id: string } | null>(null);
+  const isWrittenQuestion = question.type === 'Discursiva' || question.type === 'Dissertativa';
 
   // Rastreia se a resolução de uma questão previamente respondida ainda está sendo carregada via API
   const [isLoadingResolution, setIsLoadingResolution] = useState<boolean>(
@@ -539,6 +541,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     }
     setIsSubmittingAnswer(false);
     setSolveError(null);
+    setWrittenAnswer('');
+    attemptRef.current = null;
     setPendingSelected(userAnswer || null);
     setIsAnswered(!!userAnswer);
     setShowCommentary(!!userAnswer);
@@ -571,7 +575,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   // Carrega sob demanda gabarito e comentários caso a questão tenha sido respondida previamente
   useEffect(() => {
     const hasCorrectAnswer = Boolean(activeQuestion.correctAnswer || question.correctAnswer);
-    if (userAnswer && !hasCorrectAnswer) {
+    if ((userAnswer && !hasCorrectAnswer) || isWrittenQuestion) {
       let isMounted = true;
       setIsLoadingResolution(true);
       fetch('/api/questions/solve', {
@@ -579,7 +583,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           questionId: question.id,
-          selectedOption: userAnswer
+          readResolution: true
         })
       })
         .then((res) => res.json())
@@ -587,6 +591,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           if (isMounted) {
             setIsLoadingResolution(false);
             if (data.success) {
+              if (isWrittenQuestion && typeof data.writtenAnswer === 'string') {
+                setWrittenAnswer(data.writtenAnswer);
+                setIsAnswered(true);
+                setShowCommentary(true);
+              }
               setResolvedOverrides({
                 correctAnswer: data.correctAnswer,
                 commentary: data.commentary,
@@ -609,7 +618,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     } else {
       setIsLoadingResolution(false);
     }
-  }, [userAnswer, question.id, activeQuestion.correctAnswer, question.correctAnswer, question.options]);
+  }, [userAnswer, question.id, isWrittenQuestion, activeQuestion.correctAnswer, question.correctAnswer, question.options]);
 
   // Alterna expansão da justificativa de uma alternativa específica
   const toggleOptionExplanation = (letter: string) => {
@@ -960,41 +969,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     }));
   };
 
-  // Cache de pré-carregamento em memória por alternativa (percepção de 0ms ao clicar em Resolver)
-  const prefetchPromisesRef = useRef<Record<string, Promise<{
-    success: boolean;
-    correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E' | '' | 'ANULADA';
-    commentary: string;
-    options: Question['options'];
-    isAnulada: boolean;
-    isCorrect: boolean;
-    error?: string;
-    limitReached?: boolean;
-    dailyResolvedCount?: number;
-  }> | undefined>>({});
-
-  const prefetchSolve = useCallback((letter: 'A' | 'B' | 'C' | 'D' | 'E') => {
-    const key = `${question.id}_${letter}`;
-    if (key in prefetchPromisesRef.current && prefetchPromisesRef.current[key]) return;
-
-    const promise = fetch('/api/questions/solve', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        questionId: question.id,
-        selectedOption: letter,
-        isPrefetch: true
-      })
-    })
-      .then((res) => res.json())
-      .catch((err) => {
-        delete prefetchPromisesRef.current[key];
-        throw err;
-      });
-
-    prefetchPromisesRef.current[key] = promise;
-  }, [question.id]);
-
   // Seleciona a alternativa ou expande justificativa pós-resolução
   const handleSelectOption = (letter: 'A' | 'B' | 'C' | 'D' | 'E') => {
     // Se o usuário estava apenas selecionando/marcando texto com o mouse, não altera a opção
@@ -1017,9 +991,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setPendingSelected(letter);
 
     // Pré-carregamento instantâneo em background (enquanto o aluno lê/revisa antes de clicar em Resolver)
-    if (!activeQuestion.correctAnswer && !hasQuestionResolution(question.id)) {
-      prefetchSolve(letter);
-    }
   };
 
   // Permite ao aluno re-resolver a questão já respondida
@@ -1027,124 +998,52 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setIsAnswered(false);
     setPendingSelected(null);
     setShowCommentary(false);
-    prefetchPromisesRef.current = {};
+    attemptRef.current = null;
   };
 
-  // Envio final ao apertar o botão "Resolver"
-  const handleConfirmAnswer = async () => {
-    if (isAnswered || !pendingSelected || isSubmittingAnswer) return;
-
-    if (isFreeLimitReached) {
-      openUpgradeModal(null, true);
-      return;
-    }
-
-    // Se o gabarito oficial já estiver carregado no objeto da questão ou deduzido via fallback:
-    // Se ainda não tiver resolvedCorrectAnswer, verifica o cache em lote (Abordagem A)
-    let batchResolution = resolvedCorrectAnswer ? null : getQuestionResolution(question.id);
-    if (!resolvedCorrectAnswer && !batchResolution) {
-      batchResolution = await waitForQuestionResolution(question.id, 600);
-    }
-
-    if (batchResolution && !resolvedCorrectAnswer) {
-      setResolvedOverrides({
-        correctAnswer: batchResolution.correctAnswer,
-        commentary: batchResolution.commentary,
-        options: batchResolution.options && batchResolution.options.length > 0 ? batchResolution.options : question.options,
-        isAnulada: batchResolution.isAnulada
-      });
-    }
-
-    const effectiveGoldAnswer = resolvedCorrectAnswer || batchResolution?.correctAnswer;
-    if (effectiveGoldAnswer) {
-      setIsAnswered(true);
-      const isAnulada = Boolean(activeQuestion.isAnulada || batchResolution?.isAnulada || effectiveGoldAnswer === 'ANULADA');
-      const isCorrect = isAnulada ? true : pendingSelected === effectiveGoldAnswer;
-      fetch('/api/questions/solve', {
+  const submitAnswer = async (answer: { selectedOption: 'A' | 'B' | 'C' | 'D' | 'E' } | { writtenAnswer: string }) => {
+    if (isAnswered || isSubmittingAnswer) return;
+    setIsSubmittingAnswer(true);
+    setSolveError(null);
+    const key = JSON.stringify([question.id, answer]);
+    if (attemptRef.current?.key !== key) attemptRef.current = { key, id: crypto.randomUUID() };
+    try {
+      const response = await fetch('/api/questions/solve', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          questionId: question.id,
-          selectedOption: pendingSelected,
-          isPrefetch: false
-        })
-      }).catch((e) => console.warn('[QuestionCard] Erro ao sincronizar resposta no backend:', e));
-
-      onAnswer(question.id, pendingSelected, isCorrect, { syncedRemotely: true });
-      setShowCommentary(true);
-      return;
-    }
-
-
-    // Confirmação com aproveitamento do Prefetch em memória e persistência otimizada
-    try {
-      setIsSubmittingAnswer(true);
-      setSolveError(null);
-
-      const prefetchKey = `${question.id}_${pendingSelected}`;
-      const existingPrefetchPromise = prefetchPromisesRef.current[prefetchKey];
-
-      let data: any = null;
-      if (existingPrefetchPromise) {
-        try {
-          data = await existingPrefetchPromise;
-        } catch {
-          data = null;
-        }
-      }
-
-      if (!data || !data.success) {
-        const confirmPromise = fetch('/api/questions/solve', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            questionId: question.id,
-            selectedOption: pendingSelected,
-            isPrefetch: false
-          })
-        }).then((res) => res.json());
-
-        data = await confirmPromise;
-      } else {
-        // Gabarito obtido instantaneamente via prefetch: confirma persistência em background
-        fetch('/api/questions/solve', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            questionId: question.id,
-            selectedOption: pendingSelected,
-            isPrefetch: false
-          })
-        }).catch((e) => console.warn('[QuestionCard] Erro ao sincronizar resposta em background:', e));
-      }
-
-      if (!data || !data.success) {
-        if (data?.limitReached) {
+        body: JSON.stringify({ questionId: question.id, ...answer, attemptId: attemptRef.current.id })
+      });
+      const data = await response.json();
+      if (!data.success) {
+        if (data.limitReached) {
           openUpgradeModal(null, true);
           return;
         }
-        throw new Error(data?.error || 'Erro ao validar resolução da questão.');
+        throw new Error(data.error || 'Não foi possível salvar a resposta.');
       }
 
       setResolvedOverrides({
         correctAnswer: data.correctAnswer,
         commentary: data.commentary,
-        options: data.options && data.options.length > 0 ? data.options : question.options,
+        options: data.options?.length ? data.options : question.options,
         isAnulada: data.isAnulada
       });
-
       setIsAnswered(true);
-      onAnswer(question.id, pendingSelected, data.isCorrect, { syncedRemotely: true, serverAnsweredAt: data.answeredAt });
       setShowCommentary(true);
-    } catch (err) {
-      console.error('[QuestionCard] Falha ao resolver questão:', err);
-      setSolveError(err instanceof Error ? err.message : 'Falha na comunicação com o servidor.');
+      if ('selectedOption' in answer) {
+        onAnswer(question.id, answer.selectedOption, data.isCorrect, { syncedRemotely: true, serverAnsweredAt: data.answeredAt });
+      }
+    } catch (error) {
+      setSolveError(error instanceof Error ? error.message : 'Falha na comunicação com o servidor.');
     } finally {
       setIsSubmittingAnswer(false);
     }
   };
 
-  // Atalhos de teclado: 1 a 5 ou A a E, Enter para finalizar, Backspace/Del para riscar e C para gabarito
+  const handleConfirmAnswer = () => {
+    if (pendingSelected) return submitAnswer({ selectedOption: pendingSelected });
+  };
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Ignora digitação em campos de texto ou elementos editáveis
@@ -2005,54 +1904,23 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
             </span>
             <textarea
               placeholder="Digite seu raciocínio clínico, hipótese diagnóstica e condutas aqui..."
+              value={writtenAnswer}
+              maxLength={12000}
+              readOnly={isAnswered || isSubmittingAnswer}
+              onChange={(event) => setWrittenAnswer(event.target.value)}
               className="w-full h-32 p-4 rounded-xl bg-white dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-base sm:text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] resize-none font-sans"
             />
             {!isAnswered ? (
               <Button
                 type="button"
                 isLoading={isSubmittingAnswer}
-                onClick={async () => {
-                  if (!activeQuestion.commentary) {
-                    const cached = getQuestionResolution(question.id);
-                    if (cached) {
-                      setResolvedOverrides({
-                        correctAnswer: cached.correctAnswer,
-                        commentary: cached.commentary,
-                        options: cached.options && cached.options.length > 0 ? cached.options : question.options,
-                        isAnulada: cached.isAnulada
-                      });
-                    } else {
-                      try {
-                        setIsSubmittingAnswer(true);
-                        const res = await fetch('/api/questions/solve', {
-                          method: 'POST',
-                          headers: { 'Content-Type': 'application/json' },
-                          body: JSON.stringify({ questionId: question.id, selectedOption: 'A', isPrefetch: false })
-                        });
-                        const data = await res.json();
-                        if (data.success) {
-                          setResolvedOverrides({
-                            correctAnswer: data.correctAnswer,
-                            commentary: data.commentary,
-                            options: data.options && data.options.length > 0 ? data.options : question.options,
-                            isAnulada: data.isAnulada
-                          });
-                        }
-                      } catch (err) {
-                        console.warn('[QuestionCard] Falha ao carregar espelho dissertativo:', err);
-                      } finally {
-                        setIsSubmittingAnswer(false);
-                      }
-                    }
-                  }
-                  setShowCommentary(true);
-                  setIsAnswered(true);
-                }}
+                disabled={!writtenAnswer.trim()}
+                onClick={() => submitAnswer({ writtenAnswer: writtenAnswer.trim() })}
                 className="text-white text-xs font-bold shadow-md"
                 style={{ backgroundColor: accentConfig.primaryHex }}
                 leftIcon={!isSubmittingAnswer ? <Send className="w-3.5 h-3.5" /> : undefined}
               >
-                Ver Padrão de Resposta & Espelho
+                Enviar resposta e ver espelho
               </Button>
             ) : (
               <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 flex flex-wrap items-center gap-2">
@@ -2079,6 +1947,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                 </Button>
               </div>
             )}
+            {solveError && <p role="alert" className="text-xs text-rose-600 dark:text-rose-400">{solveError}</p>}
           </div>
         </div>
       ) : (

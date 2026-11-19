@@ -89,12 +89,12 @@ import {
   medicalInstitutionsDirectory
 } from '@/data/mockQuestions';
 import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
-import { getQuestionCount } from '@/data/hierarchyCounts';
-import { getHomologatedBaseline } from '@/data/homologatedFacetsBaseline';
-import { getInstitutionSupabaseCount } from '@/data/institutionCounts';
+import { fetchStudyCatalog } from '@/services/studyQuestionClient';
+import type { StudyCatalogCounts } from '@/services/studyQuestionCatalog';
+import { clinicalFields, clinicalPathKey, hasSelectedClinicalPath, isClinicalPathPrefix, recentExamYears } from '@/utils/studyQuestionFilters';
+import { resolveBancaList } from '@/services/questionService';
 import {
   fetchFacetedHierarchyCounts,
-  hasRightCardActiveFilters,
   type FacetedHierarchyCountsResult
 } from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
@@ -107,7 +107,8 @@ interface AdvancedQuestionFiltersProps {
   userAnswers?: Record<string, UserAnswerItem>;
   onChange: (filters: AdvancedFilterState) => void;
   onReset: () => void;
-  totalAvailable: number;
+  loadError?: boolean;
+  onRetry?: () => void;
   totalFiltered: number;
   isLoading?: boolean;
   onCreateListFromFilter: () => void;
@@ -120,7 +121,7 @@ interface AdvancedQuestionFiltersProps {
 // Bancas mais concorridas para acesso rápido em 1 clique (Residência Médica)
 const POPULAR_BANCAS_1CLIQUE = [
   { label: 'ENARE', key: 'ENARE' },
-  { label: 'USP-SP', key: 'USP/HCFMUSP' },
+  { label: 'USP-SP', key: 'USP-SP' },
   { label: 'SUS-SP', key: 'SUS-SP' },
   { label: 'UNICAMP', key: 'UNICAMP/HC' },
   { label: 'SURCE', key: 'SURCE' },
@@ -148,7 +149,6 @@ const RPLUS_BANCAS_1CLIQUE = [
 ];
 
 
-const YEARS_LIST = [2027, 2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004];
 
 // Abas de Estado para o Catálogo de Bancas por UF (Todos os 26 Estados + DF + Nacional)
 const UF_LIST = [
@@ -184,9 +184,9 @@ const UF_INSTITUTIONS_CATALOG: UfInstitutionItem[] = CANONICAL_BANCAS_DIRECTORY.
 }));
 
 const CANONICAL_BANCA_KEY_MAP: Record<string, string> = {
-  'usp-sp': 'USP/HCFMUSP',
-  'usp/hcfmusp': 'USP/HCFMUSP',
-  'fuvest - usp': 'USP/HCFMUSP',
+  'usp-sp': 'USP-SP',
+  'usp/hcfmusp': 'USP-SP',
+  'fuvest - usp': 'USP-SP',
   'unicamp': 'UNICAMP/HC',
   'unicamp/hc': 'UNICAMP/HC',
   'unifesp': 'UNIFESP/EPM',
@@ -219,10 +219,11 @@ export function getCanonicalBancaKey(raw: string): string {
 
 export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = ({
   filters,
-  userAnswers = {},
+  userAnswers,
   onChange,
   onReset,
-  totalAvailable,
+  loadError = false,
+  onRetry,
   totalFiltered,
   isLoading = false,
   onCreateListFromFilter,
@@ -354,57 +355,52 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
   const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
 
-  const currentBaseline = useMemo(() => getHomologatedBaseline(filters.modalidades), [filters.modalidades]);
-
-  // Faceted Search: Contagens dinâmicas por linha sincronizadas com o banco (apenas filtros do card direito)
+  const [catalog, setCatalog] = useState<StudyCatalogCounts | null>(null);
   const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
-  const hasRightFilters = useMemo(() => hasRightCardActiveFilters(filters), [filters]);
+  const modalityKey = JSON.stringify(filters.modalidades);
+  const facetKey = JSON.stringify({
+    modalidades: filters.modalidades, instituicoes: filters.instituicoes,
+    tipoProva: filters.tipoProva, anos: filters.anos, dificuldade: filters.dificuldade,
+    tipoQuestao: filters.tipoQuestao, status: filters.status, search: filters.search,
+    ocultarAnuladasErro: filters.ocultarAnuladasErro, ocultarRevisadas: filters.ocultarRevisadas,
+    ultimos5Anos: filters.ultimos5Anos, apenasComImagem: filters.apenasComImagem,
+    bancaOrganizadora: filters.bancaOrganizadora, macrorregioes: filters.macrorregioes,
+    programaRplus: filters.programaRplus
+  });
+  const answerRevision = filters.status !== 'Todas' || filters.ocultarRevisadas ? userAnswers : undefined;
 
   useEffect(() => {
-    let isMounted = true;
-    const abortController = new AbortController();
+    const controller = new AbortController();
+    setCatalog(null);
+    fetchStudyCatalog({ modalidades: JSON.parse(modalityKey) }, controller.signal)
+      .then((result) => { if (!controller.signal.aborted) setCatalog(result); })
+      .catch(() => { if (!controller.signal.aborted) setCatalog(null); });
+    return () => controller.abort();
+  }, [modalityKey]);
 
-    const timer = setTimeout(async () => {
-      try {
-        const answeredIds = Object.keys(userAnswers || {});
-        const correctIds = Object.entries(userAnswers || {}).filter(([_, a]) => a.isCorrect).map(([id]) => id);
-        const wrongIds = Object.entries(userAnswers || {}).filter(([_, a]) => !a.isCorrect).map(([id]) => id);
-
-        const enrichedFilters: AdvancedFilterState = {
-          ...filters,
-          userSolvedIds: answeredIds,
-          userCorrectIds: correctIds,
-          userWrongIds: wrongIds
-        };
-
-        const res = await fetchFacetedHierarchyCounts(enrichedFilters, abortController.signal);
-        if (isMounted && res) {
-          setFacetedCounts(res);
-        }
-      } catch (err: any) {
-        if (err?.name !== 'AbortError' && isMounted) {
-          setFacetedCounts(null);
-        }
-      }
+  useEffect(() => {
+    const controller = new AbortController();
+    setFacetedCounts(null);
+    const timer = setTimeout(() => {
+      fetchFacetedHierarchyCounts(JSON.parse(facetKey), controller.signal)
+        .then((result) => { if (!controller.signal.aborted) setFacetedCounts(result); })
+        .catch(() => { if (!controller.signal.aborted) setFacetedCounts(null); });
     }, 120);
-
     return () => {
-      isMounted = false;
-      abortController.abort();
       clearTimeout(timer);
+      controller.abort();
     };
-  }, [
-    filters.instituicoes,
-    filters.anos,
-    filters.dificuldade,
-    filters.tipoQuestao,
-    filters.ocultarAnuladasErro,
-    filters.ultimos5Anos,
-    filters.modalidades,
-    filters.status,
-    filters.search,
-    userAnswers
-  ]);
+  }, [facetKey, answerRevision]);
+
+  const yearsList = catalog?.years ?? [];
+  const countForPath = (path: string[]): number | null => {
+    if (!facetedCounts) return null;
+    const count = (parts: string[]) => facetedCounts.paths[clinicalPathKey(parts)] ?? 0;
+    return path[0] === 'Ginecologia e Obstetrícia'
+      ? count(path) + count(['Ginecologia', ...path.slice(1)]) + count(['Obstetrícia', ...path.slice(1)])
+      : count(path);
+  };
+  const formatCount = (count: number | null) => count === null ? '—' : count.toLocaleString('pt-BR');
 
   // Identificação dinâmica de filtros selecionados para cotas (evitando duplicar pai e filho)
   const itemsToConfigure = useMemo(() => {
@@ -571,148 +567,33 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
 
   // --- LÓGICA DE MULTI-SELEÇÃO DE ESPECIALIDADES (SOMA / UNIÃO) ---
-  const toggleEspecialidade = (espName: string) => {
-    const isSelected = filters.especialidades.includes(espName);
-    let nextSpecs: string[];
-    let nextTemas = [...filters.temas];
-    let nextFocos = [...filters.focos];
-    let nextSubfocos = [...filters.subfocos];
-    let nextSubSubfocos = filters.subSubfocos ? [...filters.subSubfocos] : [];
+  const applyClinicalPaths = (paths: string[][], removed?: { depth: number; label: string }) => {
+    const currentPaths = filters.clinicalPaths ?? [];
+    const next = { ...filters, clinicalPaths: paths };
 
-    if (isSelected) {
-      nextSpecs = filters.especialidades.filter((e) => e !== espName);
-      // Remove temas, focos, subfocos e sub-subfocos filhos dessa especialidade
-      const espNode = clinicalHierarchy.find((h) => h.especialidade === espName);
-      if (espNode) {
-        const childTemas = espNode.temas.map((t) => t.tema);
-        nextTemas = nextTemas.filter((t) => !childTemas.includes(t));
-        const childFocos = espNode.temas.flatMap((t) => t.focos.map((f) => f.foco));
-        nextFocos = nextFocos.filter((f) => !childFocos.includes(f));
-        const childSubfocos = espNode.temas.flatMap((t) => t.focos.flatMap((f) => f.subfocos.map(getSubfocoName)));
-        nextSubfocos = nextSubfocos.filter((s) => !childSubfocos.includes(s));
-        const childSubSub = espNode.temas.flatMap((t) => t.focos.flatMap((f) => f.subfocos.flatMap(getSubSubfocos)));
-        nextSubSubfocos = nextSubSubfocos.filter((ss) => !childSubSub.includes(ss));
-      }
-    } else {
-      nextSpecs = [...filters.especialidades, espName];
+    for (const [depth, key] of clinicalFields.entries()) {
+      const retainedLegacy = (filters[key] ?? []).filter((value) =>
+        !currentPaths.some((entry) => entry.length === depth + 1 && entry[depth] === value)
+        && !(removed?.depth === depth && value === removed.label));
+      next[key] = [...new Set([...retainedLegacy, ...paths
+        .filter((entry) => entry.length === depth + 1).map((entry) => entry[depth])])];
     }
-
-    onChange({
-      ...filters,
-      especialidades: nextSpecs,
-      temas: nextTemas,
-      focos: nextFocos,
-      subfocos: nextSubfocos,
-      subSubfocos: nextSubSubfocos
-    });
+    onChange(next);
   };
 
-  const toggleTema = (temaName: string) => {
-    const isSelected = filters.temas.includes(temaName);
-    let nextTemas: string[];
-    let nextFocos = [...filters.focos];
-    let nextSubfocos = [...filters.subfocos];
-    let nextSubSubfocos = filters.subSubfocos ? [...filters.subSubfocos] : [];
-
-    if (isSelected) {
-      nextTemas = filters.temas.filter((t) => t !== temaName);
-      // Remove focos, subfocos e sub-subfocos filhos desse tema
-      clinicalHierarchy.forEach((esp) => {
-        const temaNode = esp.temas.find((t) => t.tema === temaName);
-        if (temaNode) {
-          const childFocos = temaNode.focos.map((f) => f.foco);
-          nextFocos = nextFocos.filter((f) => !childFocos.includes(f));
-          const childSubfocos = temaNode.focos.flatMap((f) => f.subfocos.map(getSubfocoName));
-          const childSubSub = temaNode.focos.flatMap((f) => f.subfocos.flatMap(getSubSubfocos));
-          nextSubfocos = nextSubfocos.filter((s) => !childSubfocos.includes(s));
-          nextSubSubfocos = nextSubSubfocos.filter((ss) => !childSubSub.includes(ss));
-        }
+  const toggleClinicalPath = (path: string[]) => {
+    const currentPaths = filters.clinicalPaths ?? [];
+    if (hasSelectedClinicalPath(filters, path)) {
+      applyClinicalPaths(currentPaths.filter((entry) => !isClinicalPathPrefix(path, entry)), {
+        depth: path.length - 1, label: path[path.length - 1]
       });
     } else {
-      nextTemas = [...filters.temas, temaName];
+      applyClinicalPaths([...currentPaths, path]);
     }
-
-    onChange({
-      ...filters,
-      temas: nextTemas,
-      focos: nextFocos,
-      subfocos: nextSubfocos,
-      subSubfocos: nextSubSubfocos
-    });
   };
 
-  const toggleFoco = (focoName: string) => {
-    const isSelected = filters.focos.includes(focoName);
-    let nextFocos: string[];
-    let nextSubfocos = [...filters.subfocos];
-    let nextSubSubfocos = filters.subSubfocos ? [...filters.subSubfocos] : [];
-
-    if (isSelected) {
-      nextFocos = filters.focos.filter((f) => f !== focoName);
-      // Remove subfocos e sub-subfocos desse foco
-      clinicalHierarchy.forEach((esp) => {
-        esp.temas.forEach((tem) => {
-          const focoNode = tem.focos.find((f) => f.foco === focoName);
-          if (focoNode) {
-            const childSubfocos = focoNode.subfocos.map(getSubfocoName);
-            const childSubSub = focoNode.subfocos.flatMap(getSubSubfocos);
-            nextSubfocos = nextSubfocos.filter((s) => !childSubfocos.includes(s));
-            nextSubSubfocos = nextSubSubfocos.filter((ss) => !childSubSub.includes(ss));
-          }
-        });
-      });
-    } else {
-      nextFocos = [...filters.focos, focoName];
-    }
-
-    onChange({
-      ...filters,
-      focos: nextFocos,
-      subfocos: nextSubfocos,
-      subSubfocos: nextSubSubfocos
-    });
-  };
-
-  const toggleSubfoco = (subfocoName: string) => {
-    const isSelected = filters.subfocos.includes(subfocoName);
-    const nextSubfocos = isSelected
-      ? filters.subfocos.filter((s) => s !== subfocoName)
-      : [...filters.subfocos, subfocoName];
-
-    let nextSubSubfocos = filters.subSubfocos ? [...filters.subSubfocos] : [];
-    if (isSelected && nextSubSubfocos.length > 0) {
-      clinicalHierarchy.forEach((esp) => {
-        esp.temas.forEach((tem) => {
-          tem.focos.forEach((foc) => {
-            foc.subfocos.forEach((subItem) => {
-              if (getSubfocoName(subItem) === subfocoName) {
-                const childSS = getSubSubfocos(subItem);
-                nextSubSubfocos = nextSubSubfocos.filter((ss) => !childSS.includes(ss));
-              }
-            });
-          });
-        });
-      });
-    }
-
-    onChange({
-      ...filters,
-      subfocos: nextSubfocos,
-      subSubfocos: nextSubSubfocos
-    });
-  };
-
-  const toggleSubSubfoco = (ssName: string) => {
-    const current = filters.subSubfocos || [];
-    const isSelected = current.includes(ssName);
-    const next = isSelected
-      ? current.filter((s) => s !== ssName)
-      : [...current, ssName];
-
-    onChange({
-      ...filters,
-      subSubfocos: next
-    });
+  const removeClinicalLabel = (depth: number, label: string) => {
+    applyClinicalPaths((filters.clinicalPaths ?? []).filter((path) => path[depth] !== label), { depth, label });
   };
 
   // Expandir / Recolher tudo
@@ -751,6 +632,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     onChange({
       ...filters,
       especialidades: all,
+      clinicalPaths: all.map((specialty) => [specialty]),
       temas: [],
       focos: [],
       subfocos: [],
@@ -774,26 +656,37 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     });
   };
 
-  const filteredBancasSearch = useMemo(() => {
-    if (!deferredInstSearch.trim()) return [];
-    const q = deferredInstSearch.toLowerCase().trim();
-    return UF_INSTITUTIONS_CATALOG
-      .filter((inst) => inst.sigla.toLowerCase().includes(q) || inst.nome.toLowerCase().includes(q))
-      .slice(0, 10);
-  }, [deferredInstSearch]);
-
-  const catalogFilteredByUf = useMemo(() => {
-    let baseCatalog = UF_INSTITUTIONS_CATALOG;
-    if (isOnlyRevalida) {
-      baseCatalog = UF_INSTITUTIONS_CATALOG.filter(inst =>
-        inst.sigla.toLowerCase().includes('revalida') || inst.key === 'FMRP-USP' || inst.uf === 'Nacional'
-      );
+  const availableInstitutions = useMemo(() => {
+    if (!catalog) return UF_INSTITUTIONS_CATALOG;
+    const representedAliases = new Set<string>();
+    const institutions = new Map<string, UfInstitutionItem>();
+    for (const item of UF_INSTITUTIONS_CATALOG) {
+      const key = getCanonicalBancaKey(item.key);
+      const aliases = resolveBancaList([key]);
+      if (!aliases.some((alias) => catalog.bancas[alias] > 0)) continue;
+      aliases.forEach((alias) => representedAliases.add(alias));
+      if (!institutions.has(key)) institutions.set(key, { ...item, key });
     }
-    if (selectedUfTab === 'Todas') return baseCatalog;
-    return baseCatalog.filter(
-      (inst) => inst.uf.toLowerCase() === selectedUfTab.toLowerCase()
-    );
-  }, [selectedUfTab, isOnlyRevalida]);
+    for (const sigla of Object.keys(catalog.bancas)) {
+      if (!representedAliases.has(sigla)) {
+        institutions.set(sigla, { sigla, key: sigla, nome: sigla, uf: '', count: '' });
+      }
+    }
+    return [...institutions.values()];
+  }, [catalog]);
+
+  const filteredBancasSearch = useMemo(() => {
+    const search = deferredInstSearch.toLowerCase().trim();
+    return search ? availableInstitutions
+      .filter((inst) => inst.sigla.toLowerCase().includes(search) || inst.nome.toLowerCase().includes(search)
+        || resolveBancaList([inst.key]).some((alias) => alias.toLowerCase().includes(search)))
+      .slice(0, 10) : [];
+  }, [deferredInstSearch, availableInstitutions]);
+
+  const catalogFilteredByUf = useMemo(() => selectedUfTab === 'Todas'
+    ? availableInstitutions
+    : availableInstitutions.filter((inst) => inst.uf === selectedUfTab),
+  [selectedUfTab, availableInstitutions]);
 
   // --- ANOS ---
   const toggleYear = (y: number) => {
@@ -807,11 +700,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   };
 
   const handleSelectUltimosAnos = (count: number) => {
-    const selected = YEARS_LIST.slice(0, count);
+    const selected = recentExamYears(count).filter((year) => yearsList.includes(year));
     onChange({
       ...filters,
       anos: selected,
-      ultimos5Anos: count === 5
+      ultimos5Anos: false
     });
   };
 
@@ -823,67 +716,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     });
   };
 
-  // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DO BANCO DE DADOS) ---
-  const displayedQuestionCount = useMemo(() => {
-    const defaultBaseline = currentBaseline.total;
-
-    const hasClinicalFilters = Boolean(
-      (filters.especialidades && filters.especialidades.length > 0) ||
-      (filters.temas && filters.temas.length > 0) ||
-      (filters.focos && filters.focos.length > 0) ||
-      (filters.subfocos && filters.subfocos.length > 0) ||
-      (filters.subSubfocos && filters.subSubfocos.length > 0)
-    );
-
-    const hasRightCardFilters = Boolean(
-      (filters.search && filters.search.trim()) ||
-      (filters.instituicoes && filters.instituicoes.length > 0) ||
-      (filters.anos && filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length) ||
-      (filters.dificuldade && filters.dificuldade !== 'Todas') ||
-      (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
-      (filters.status && filters.status !== 'Todas') ||
-      filters.ocultarAnuladasErro ||
-      filters.ultimos5Anos
-    );
-
-    const hasActiveFilters = hasClinicalFilters || hasRightCardFilters;
-
-    if (hasActiveFilters) {
-      // 1. Resposta real direta da query do banco (prioridade absoluta)
-      if (typeof totalFiltered === 'number') {
-        return totalFiltered;
-      }
-
-      // 2. Facetas atômicas sincronizadas
-      if (facetedCounts && typeof facetedCounts.totalRightCardCount === 'number' && facetedCounts.totalRightCardCount > 0) {
-        return facetedCounts.totalRightCardCount;
-      }
-
-      return defaultBaseline;
-    }
-
-    return totalAvailable || defaultBaseline;
-  }, [
-    totalAvailable,
-    totalFiltered,
-    facetedCounts,
-    currentBaseline.total,
-    facetedCounts,
-    filters.modalidades,
-    filters.search,
-    filters.especialidades,
-    filters.temas,
-    filters.focos,
-    filters.subfocos,
-    filters.subSubfocos,
-    filters.anos,
-    filters.instituicoes,
-    filters.dificuldade,
-    filters.tipoQuestao,
-    filters.status,
-    filters.ocultarAnuladasErro,
-    filters.ultimos5Anos
-  ]);
+  const displayedQuestionCount = totalFiltered;
 
   // --- TRANSIÇÃO FLUIDA E ELEGANTE DO CONTADOR (INTERPOLAÇÃO DINÂMICA) ---
   const [animatedCount, setAnimatedCount] = useState<number>(displayedQuestionCount);
@@ -984,7 +817,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       tags.push({
         id: `esp-${esp}`,
         label,
-        onRemove: () => toggleEspecialidade(esp)
+        onRemove: () => removeClinicalLabel(0, esp)
       });
     });
 
@@ -993,7 +826,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       tags.push({
         id: `tem-${tem}`,
         label: tem,
-        onRemove: () => toggleTema(tem)
+        onRemove: () => removeClinicalLabel(1, tem)
       });
     });
 
@@ -1002,7 +835,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       tags.push({
         id: `foc-${foc}`,
         label: `Foco: ${foc}`,
-        onRemove: () => toggleFoco(foc)
+        onRemove: () => removeClinicalLabel(2, foc)
       });
     });
 
@@ -1011,7 +844,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       tags.push({
         id: `sub-${sub}`,
         label: `Subfoco: ${sub}`,
-        onRemove: () => toggleSubfoco(sub)
+        onRemove: () => removeClinicalLabel(3, sub)
       });
     });
 
@@ -1021,7 +854,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         tags.push({
           id: `ss-${ss}`,
           label: `Subsubfoco: ${formatSubSubfocoDisplay(ss)}`,
-          onRemove: () => toggleSubSubfoco(ss)
+          onRemove: () => removeClinicalLabel(4, ss)
         });
       });
     }
@@ -1240,7 +1073,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
           <div
             className="relative inline-flex items-center py-0.5 px-1 rounded-xl"
-            title={isFilterActive ? "Calculando intersecção dinâmica..." : "Filtro sincronizado"}
+            title={loadError ? "Não foi possível carregar a contagem de questões." : isFilterActive ? "Calculando intersecção dinâmica..." : "Filtro sincronizado"}
           >
             {/* Número Dinâmico com Interpolação Suave */}
             <div className="relative flex flex-col items-end">
@@ -1250,7 +1083,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   : 'text-zinc-900 dark:text-white opacity-100'
                   }`}
               >
-                {animatedCount.toLocaleString('pt-BR')}
+                {loadError ? '—' : animatedCount.toLocaleString('pt-BR')}
               </span>
 
               {/* Shimmer ultra-fino dinâmico na base (zero layout shift) */}
@@ -1390,12 +1223,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           {/* Árvore Clínica com Scroll Dedicado */}
           <div className="flex-1 min-h-0 overflow-y-auto pr-1.5 space-y-1 custom-scrollbar text-xs">
             {clinicalHierarchy.map((esp) => {
-              const isEspSelected = filters.especialidades.includes(esp.especialidade);
+              const espPath = [esp.especialidade];
+              const isEspSelected = hasSelectedClinicalPath(filters, espPath);
               const isEspExpanded = Boolean(expandedEspec[esp.especialidade]);
-              const baselineEspCount = currentBaseline.especialidades[esp.especialidade] || 0;
-              const espCount = facetedCounts
-                ? (hasRightFilters ? (facetedCounts.especialidades?.[esp.especialidade] ?? 0) : (facetedCounts.especialidades?.[esp.especialidade] ?? baselineEspCount))
-                : baselineEspCount;
+              const espCount = countForPath(espPath);
 
               // Filtragem textual se houver busca
               const qTerm = deferredHierarchySearch.toLowerCase().trim();
@@ -1448,7 +1279,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         type="button"
                         onClick={(e) => {
                           e.stopPropagation();
-                          toggleEspecialidade(esp.especialidade);
+                          toggleClinicalPath(espPath);
                         }}
                         className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${isEspSelected
                           ? 'text-white shadow-xs'
@@ -1481,7 +1312,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       </button>
 
                       <span
-                        onClick={() => toggleEspecialidade(esp.especialidade)}
+                        onClick={() => toggleClinicalPath(espPath)}
                         className="font-bold text-sm sm:text-base tracking-tight truncate select-none text-zinc-900 dark:text-zinc-100"
                       >
                         {esp.especialidade}
@@ -1490,7 +1321,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                     {/* Badge de Questões - Fundo igual ao quadro geral, número por extenso */}
                     <span className="px-2.5 py-0.5 rounded-lg bg-transparent border border-zinc-200/60 dark:border-zinc-800/70 text-zinc-500 dark:text-zinc-400 font-mono text-xs shrink-0">
-                      {espCount.toLocaleString('pt-BR')}
+                      {formatCount(espCount)}
                     </span>
                   </div>
 
@@ -1498,13 +1329,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   {isEspExpanded && (
                     <div className="pl-5 space-y-1 border-l border-zinc-200/40 dark:border-zinc-800/50 ml-3.5">
                       {orderedTemas.map((tem) => {
-                        const isTemaSelected =
-                          filters.temas.includes(tem.tema) || isEspSelected;
+                        const temaPath = [...espPath, tem.tema];
+                        const isTemaSelected = hasSelectedClinicalPath(filters, temaPath);
                         const isTemaExpanded = Boolean(expandedTema[tem.tema]) || Boolean(qTerm);
-                        const baselineTemaCount = currentBaseline.temas[tem.tema] || 0;
-                        const temaCount = facetedCounts
-                          ? (hasRightFilters ? (facetedCounts.temas?.[tem.tema] ?? 0) : (facetedCounts.temas?.[tem.tema] ?? baselineTemaCount))
-                          : baselineTemaCount;
+                        const temaCount = countForPath(temaPath);
 
                         if (
                           qTerm &&
@@ -1535,7 +1363,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                   type="button"
                                   onClick={(e) => {
                                     e.stopPropagation();
-                                    toggleTema(tem.tema);
+                                    toggleClinicalPath(temaPath);
                                   }}
                                   className={`w-4 h-4 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${isTemaSelected
                                     ? 'text-white'
@@ -1569,7 +1397,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                 )}
 
                                 <span
-                                  onClick={() => toggleTema(tem.tema)}
+                                  onClick={() => toggleClinicalPath(temaPath)}
                                   className="font-medium text-xs truncate text-zinc-800 dark:text-zinc-200"
                                 >
                                   {tem.tema === 'Endocrinologia' || tem.tema.startsWith('Endocrino') ? 'Endocrinologia e Metabologia' : tem.tema}
@@ -1577,7 +1405,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                               </div>
 
                               <span className="px-2 py-0.5 rounded-md bg-transparent border border-zinc-200/50 dark:border-zinc-800/60 text-[11px] font-mono text-zinc-500 dark:text-zinc-400 shrink-0">
-                                {temaCount.toLocaleString('pt-BR')}
+                                {formatCount(temaCount)}
                               </span>
                             </div>
 
@@ -1585,13 +1413,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             {isTemaExpanded && tem.focos.length > 0 && (
                               <div className="pl-4 space-y-0.5 border-l border-zinc-200/40 dark:border-zinc-800/50 ml-2.5">
                                 {tem.focos.map((foc) => {
-                                  const isFocoSelected =
-                                    filters.focos.includes(foc.foco) || isTemaSelected;
+                                  const focoPath = [...temaPath, foc.foco];
+                                  const isFocoSelected = hasSelectedClinicalPath(filters, focoPath);
                                   const isFocoExpanded = Boolean(expandedFoco[foc.foco]) || Boolean(qTerm);
-                                  const baselineFocoCount = currentBaseline.focos[foc.foco] || 0;
-                                  const focoCount = facetedCounts
-                                    ? (hasRightFilters ? (facetedCounts.focos?.[foc.foco] ?? 0) : (facetedCounts.focos?.[foc.foco] ?? baselineFocoCount))
-                                    : baselineFocoCount;
+                                  const focoCount = countForPath(focoPath);
 
                                   if (
                                     qTerm &&
@@ -1618,7 +1443,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                             type="button"
                                             onClick={(e) => {
                                               e.stopPropagation();
-                                              toggleFoco(foc.foco);
+                                              toggleClinicalPath(focoPath);
                                             }}
                                             className={`w-4 h-4 rounded-md border flex items-center justify-center shrink-0 transition-all ${isFocoSelected
                                               ? 'text-white'
@@ -1652,7 +1477,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                           )}
 
                                           <span
-                                            onClick={() => toggleFoco(foc.foco)}
+                                            onClick={() => toggleClinicalPath(focoPath)}
                                             className="font-medium text-xs truncate text-zinc-800 dark:text-zinc-200"
                                           >
                                             {foc.foco}
@@ -1660,7 +1485,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                         </div>
 
                                         <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-zinc-200/50 dark:border-zinc-800/60 text-[10px] font-mono text-zinc-500 dark:text-zinc-400 ml-2 shrink-0">
-                                          {focoCount.toLocaleString('pt-BR')}
+                                          {formatCount(focoCount)}
                                         </span>
                                       </div>
 
@@ -1670,14 +1495,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                           {foc.subfocos.map((subItem) => {
                                             const sub = getSubfocoName(subItem);
                                             const subSubList = getSubSubfocos(subItem);
-                                            const isSubSelected =
-                                              filters.subfocos.includes(sub) || isFocoSelected;
+                                            const subPath = [...focoPath, sub];
+                                            const isSubSelected = hasSelectedClinicalPath(filters, subPath);
                                             const hasMatchingChild = qTerm ? subSubList.some((ss) => ss.toLowerCase().includes(qTerm)) : false;
                                             const isSubfocoExpanded = Boolean(expandedSubfoco[sub] || hasMatchingChild);
-                                            const baselineSubCount = currentBaseline.subfocos[sub] || 0;
-                                            const subCount = facetedCounts
-                                              ? (hasRightFilters ? (facetedCounts.subfocos?.[sub] ?? 0) : (facetedCounts.subfocos?.[sub] ?? baselineSubCount))
-                                              : baselineSubCount;
+                                            const subCount = countForPath(subPath);
 
                                             if (
                                               qTerm &&
@@ -1699,7 +1521,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                   <div className="flex items-center gap-1.5 truncate min-w-0 flex-1">
                                                     <button
                                                       type="button"
-                                                      onClick={() => toggleSubfoco(sub)}
+                                                      onClick={() => toggleClinicalPath(subPath)}
                                                       className={`w-3.5 h-3.5 rounded-md border flex items-center justify-center shrink-0 cursor-pointer ${isSubSelected
                                                         ? 'text-white'
                                                         : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
@@ -1736,7 +1558,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                     )}
 
                                                     <span
-                                                      onClick={() => toggleSubfoco(sub)}
+                                                      onClick={() => toggleClinicalPath(subPath)}
                                                       className="truncate text-zinc-800 dark:text-zinc-300 cursor-pointer"
                                                       title={sub}
                                                     >
@@ -1744,7 +1566,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                     </span>
                                                   </div>
                                                   <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-zinc-200/50 dark:border-zinc-800/60 text-[10px] font-mono text-zinc-500 dark:text-zinc-400 ml-2 shrink-0">
-                                                    {subCount.toLocaleString('pt-BR')}
+                                                    {formatCount(subCount)}
                                                   </span>
                                                 </div>
 
@@ -1752,12 +1574,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                 {isSubfocoExpanded && subSubList.length > 0 && (
                                                   <div className="pl-5 space-y-0.5 border-l border-zinc-200/40 dark:border-zinc-800/50 ml-3 py-0.5">
                                                     {subSubList.map((ss) => {
-                                                      const isSsSelected =
-                                                        (filters.subSubfocos && filters.subSubfocos.includes(ss)) || isSubSelected;
-                                                      const baselineSsCount = currentBaseline.subSubfocos?.[ss] || 0;
-                                                      const ssCount = facetedCounts?.subSubfocos
-                                                        ? (hasRightFilters ? (facetedCounts.subSubfocos[ss] ?? 0) : (facetedCounts.subSubfocos[ss] ?? baselineSsCount))
-                                                        : baselineSsCount;
+                                                      const ssPath = [...subPath, ss];
+                                                      const isSsSelected = hasSelectedClinicalPath(filters, ssPath);
+                                                      const ssCount = countForPath(ssPath);
 
                                                       if (
                                                         qTerm &&
@@ -1771,7 +1590,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                       return (
                                                         <div
                                                           key={ss}
-                                                          onClick={() => toggleSubSubfoco(ss)}
+                                                          onClick={() => toggleClinicalPath(ssPath)}
                                                           className={`flex items-center justify-between py-1 px-2 rounded-lg text-[11px] cursor-pointer transition-colors ${isSsSelected
                                                             ? 'font-medium text-zinc-900 dark:text-white bg-zinc-100/70 dark:bg-zinc-800/50'
                                                             : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
@@ -1792,9 +1611,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                             </div>
                                                             <span className="truncate leading-tight text-zinc-700 dark:text-zinc-300">{formatSubSubfocoDisplay(ss)}</span>
                                                           </div>
-                                                          {ssCount > 0 && (
+                                                          {(ssCount === null || ssCount > 0) && (
                                                             <span className="px-1.5 py-0.2 rounded bg-transparent border border-zinc-200/40 dark:border-zinc-800/50 text-[9px] font-mono text-zinc-400 dark:text-zinc-500 ml-2 shrink-0">
-                                                              {ssCount.toLocaleString('pt-BR')}
+                                                              {formatCount(ssCount)}
                                                             </span>
                                                           )}
                                                         </div>
@@ -2311,7 +2130,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                 <div className="flex items-center gap-2">
                   {/* Resumo quando colapsado ou selecionado */}
-                  {filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length && (
+                  {filters.anos.length > 0 && filters.anos.length < yearsList.length && (
                     <span
                       className="px-3.5 py-1 rounded-full text-xs font-semibold tracking-wide inline-flex items-center border"
                       style={{
@@ -2343,11 +2162,14 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     <span className="text-[11px] font-medium text-zinc-500 dark:text-zinc-400">Seleção rápida:</span>
                     <div className="flex items-center gap-1">
                       {[3, 5, 10].map((count) => {
-                        const isQuickActive = filters.anos.length === count && filters.anos.includes(2026);
+                        const quickYears = recentExamYears(count).filter((year) => yearsList.includes(year));
+                        const isQuickActive = quickYears.length > 0 && filters.anos.length === quickYears.length
+                          && quickYears.every((year) => filters.anos.includes(year));
                         return (
                           <button
                             key={count}
                             type="button"
+                            disabled={quickYears.length === 0}
                             onClick={() => handleSelectUltimosAnos(count)}
                             className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${isQuickActive
                               ? 'text-white shadow-xs'
@@ -2373,7 +2195,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                   {/* Pílulas de Anos em Linha Única Horizontal com Rolagem Lateral */}
                   <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 custom-scrollbar scroll-smooth">
-                    {(isOnlyRevalida ? YEARS_LIST.filter(y => y <= 2026) : YEARS_LIST).map((y) => {
+                    {yearsList.map((y) => {
                       const isSelected = filters.anos.includes(y);
                       return (
                         <button
@@ -2590,9 +2412,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               {/* Botão Primário Iniciar */}
               <Button
                 type="button"
-                disabled={isStartingQuestions || displayedQuestionCount === 0 || isLoading}
+                disabled={isStartingQuestions || (!loadError && displayedQuestionCount === 0) || isLoading}
                 isLoading={isStartingQuestions}
                 onClick={async () => {
+                  if (loadError) {
+                    onRetry?.();
+                    return;
+                  }
                   if (displayedQuestionCount === 0) return;
                   try {
                     setIsStartingQuestions(true);
@@ -2618,7 +2444,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   ) : undefined
                 }
               >
-                {displayedQuestionCount === 0 ? (
+                {loadError ? (
+                  <span className="truncate">Tentar novamente</span>
+                ) : displayedQuestionCount === 0 ? (
                   <span className="truncate">Sem questões (0)</span>
                 ) : (
                   <span className="truncate">
@@ -2910,7 +2738,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         className="text-xs font-semibold mt-2 font-mono"
                         style={{ color: accentConfig.primaryHex }}
                       >
-                        {getInstitutionSupabaseCount(item.sigla, item.key).toLocaleString('pt-BR')} questões
+                        {formatCount(catalog ? resolveBancaList([getCanonicalBancaKey(item.key)])
+                          .reduce((total, alias) => total + (catalog.bancas[alias] ?? 0), 0) : null)} questões
                       </span>
                     </div>
                   );

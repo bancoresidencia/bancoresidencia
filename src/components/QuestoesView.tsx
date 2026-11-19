@@ -52,10 +52,8 @@ import { useStudyTimer } from '@/context/StudyTimerContext';
 import { deduceStudyTaxonomy } from '@/utils/taxonomyDeduction';
 import {
   fetchQuestionsFromSupabase,
-  fetchTotalQuestionsCount,
   fetchQuestionIdsForListCriteria
 } from '@/services/questionService';
-import { getHomologatedBaseline } from '@/data/homologatedFacetsBaseline';
 import { prefetchQuestionResolutions } from '@/services/resolutionCache';
 
 export const QuestoesView: React.FC = () => {
@@ -138,18 +136,13 @@ export const QuestoesView: React.FC = () => {
   const [questionsPage, setQuestionsPage] = useState<number>(1);
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
   const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(0);
-  const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(() => getHomologatedBaseline(['Acesso Direto']).total);
+  const [questionLoadError, setQuestionLoadError] = useState(false);
+  const [questionReload, setQuestionReload] = useState(0);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(true);
-  // Referência estável para userAnswers: evita que responder uma questão acione refetch fantasma de 50 questões
-  const userAnswersRef = useRef(userAnswers);
   const isFirstLoadRef = useRef(true);
   const lastPrefetchedPageRef = useRef(1);
   const latestSessionTicketRef = useRef<string | undefined>(undefined);
   const isSimulado = searchParams.get('mode') === 'simulado' || searchParams.get('simulado') === 'true' || searchParams.get('tab') === 'simulados';
-  useEffect(() => {
-    userAnswersRef.current = userAnswers;
-  }, [userAnswers]);
-
 
   // Índice da questão atual
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
@@ -212,17 +205,7 @@ export const QuestoesView: React.FC = () => {
     }
   }, [searchParams]);
 
-  // Carrega total global sincronizado com a modalidade
-  useEffect(() => {
-    const baseline = getHomologatedBaseline(advancedFilters.modalidades);
-    setTotalGlobalQuestions(baseline.total);
-    const isRevalida = advancedFilters.modalidades?.length === 1 && advancedFilters.modalidades[0] === 'Revalida';
-    fetchTotalQuestionsCount(false, isRevalida, advancedFilters.modalidades)
-      .then((count) => {
-        if (count > 0) setTotalGlobalQuestions(count);
-      })
-      .catch(() => { });
-  }, [advancedFilters.modalidades]);
+
 
   // Temporizador individual da questão ativa
   const [questionTimer, setQuestionTimer] = useState<number>(0);
@@ -245,6 +228,10 @@ export const QuestoesView: React.FC = () => {
   // Transições seguras de saída de resolução com salvamento automático
   const handleReturnToFilters = useCallback(() => {
     autoFinishQuestionSession();
+    setSessionQuestionIds(null);
+    setSessionQuestionLimit(null);
+    setQuestionsPage(1);
+    setQuestionReload((current) => current + 1);
     setBancoMode('filtros');
   }, [autoFinishQuestionSession]);
 
@@ -400,8 +387,12 @@ export const QuestoesView: React.FC = () => {
   });
   const skipNextQuestionsFetchRef = useRef<boolean>(false);
 
+  const filteredAnswerRevision = bancoMode === 'filtros'
+    && (advancedFilters.status !== 'Todas' || advancedFilters.ocultarRevisadas) ? userAnswers : undefined;
+
   // Busca questões do Supabase com base nos filtros
   useEffect(() => {
+    const controller = new AbortController();
     let isCancelled = false;
 
     const load = async () => {
@@ -410,6 +401,7 @@ export const QuestoesView: React.FC = () => {
         return;
       }
       setIsLoadingSupabase(true);
+      setQuestionLoadError(false);
       try {
         let questionIds: string[] | undefined;
         let effectivePageSize = sessionQuestionLimit ? Math.min(200, sessionQuestionLimit) : 20;
@@ -431,28 +423,12 @@ export const QuestoesView: React.FC = () => {
           effectivePageSize = Math.min(200, sessionQuestionIds.length);
         }
 
-        const currentAnswers = userAnswersRef.current;
-        const answeredIds = Object.keys(currentAnswers);
-        const correctIds = Object.entries(currentAnswers)
-          .filter(([, a]) => a.isCorrect)
-          .map(([id]) => id);
-        const wrongIds = Object.entries(currentAnswers)
-          .filter(([, a]) => !a.isCorrect)
-          .map(([id]) => id);
-
         const res = await fetchQuestionsFromSupabase(
-          activeListId && questionIds
-            ? {}
-            : {
-              ...advancedFilters,
-              ...(activeListFilters || {}),
-              userSolvedIds: answeredIds,
-              userCorrectIds: correctIds,
-              userWrongIds: wrongIds
-            },
+          activeListId && questionIds ? {} : { ...advancedFilters, ...(activeListFilters || {}) },
           activeListId ? 1 : questionsPage,
           effectivePageSize,
-          questionIds
+          questionIds,
+          controller.signal
         );
 
         if (!isCancelled) {
@@ -471,7 +447,14 @@ export const QuestoesView: React.FC = () => {
           setTotalSupabaseCount(res.total);
         }
       } catch (err) {
-        console.error('Erro ao buscar questões:', err);
+        if (!isCancelled) {
+          setQuestionLoadError(true);
+          if (questionsPage === 1) {
+            setSupabaseQuestions([]);
+            setTotalSupabaseCount(0);
+          }
+          console.error('Erro ao buscar questões:', err);
+        }
       } finally {
         if (!isCancelled) setIsLoadingSupabase(false);
       }
@@ -483,6 +466,7 @@ export const QuestoesView: React.FC = () => {
       load();
       return () => {
         isCancelled = true;
+        controller.abort();
       };
     }
 
@@ -490,6 +474,7 @@ export const QuestoesView: React.FC = () => {
     const timer = setTimeout(load, delayMs);
     return () => {
       isCancelled = true;
+      controller.abort();
       clearTimeout(timer);
     };
   }, [
@@ -498,7 +483,9 @@ export const QuestoesView: React.FC = () => {
     lists,
     questionsPage,
     sessionQuestionLimit,
-    sessionQuestionIds
+    sessionQuestionIds,
+    filteredAnswerRevision,
+    questionReload
   ]);
 
   const visibleQuestions = useMemo(() => {
@@ -805,23 +792,7 @@ export const QuestoesView: React.FC = () => {
 
     try {
       setIsLoadingSupabase(true);
-      const answeredIds = Object.keys(userAnswersRef.current);
-      const correctIds = Object.entries(userAnswersRef.current)
-        .filter(([, a]) => a.isCorrect)
-        .map(([id]) => id);
-      const wrongIds = Object.entries(userAnswersRef.current)
-        .filter(([, a]) => !a.isCorrect)
-        .map(([id]) => id);
-
-      // Passo 1: Busca balanceamento pedagógico por cotas ou critérios
-      const balancedIds = await fetchQuestionIdsForListCriteria(
-        quotas || {},
-        activeFilters,
-        finalLimit,
-        answeredIds,
-        correctIds,
-        wrongIds
-      );
+      const balancedIds = await fetchQuestionIdsForListCriteria(quotas || {}, activeFilters, finalLimit);
 
       setSessionTransition((prev) => ({
         ...prev,
@@ -830,7 +801,7 @@ export const QuestoesView: React.FC = () => {
       }));
 
       // Passo 2: Busca lote de questões completas
-      const targetIds = balancedIds && balancedIds.length > 0 ? balancedIds : undefined;
+      const targetIds = balancedIds;
       const fullRes = await fetchQuestionsFromSupabase(
         activeFilters,
         1,
@@ -954,7 +925,8 @@ export const QuestoesView: React.FC = () => {
               setCurrentQuestionIndex(0);
             }}
             onReset={handleResetFilters}
-            totalAvailable={totalGlobalQuestions}
+            loadError={questionLoadError}
+            onRetry={() => setQuestionReload((current) => current + 1)}
             totalFiltered={totalSupabaseCount}
             isLoading={isLoadingSupabase}
             onCreateListFromFilter={() => setIsCreateCadernoModalOpen(true)}
@@ -1609,17 +1581,17 @@ export const QuestoesView: React.FC = () => {
                 <>
                   <AlertCircle className="w-10 h-10 mx-auto text-amber-500" />
                   <h3 className="font-heading font-black text-lg text-slate-900 dark:text-white">
-                    Nenhuma questão encontrada
+                    {questionLoadError ? 'Não foi possível carregar as questões' : 'Nenhuma questão encontrada'}
                   </h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
-                    Não encontramos questões para a combinação de filtros selecionada. Tente ampliar as bancas ou especialidades.
+                    {questionLoadError ? 'Tente novamente para consultar o banco de questões.' : 'Não encontramos questões para a combinação de filtros selecionada. Tente ampliar as bancas ou especialidades.'}
                   </p>
                   <button
                     type="button"
-                    onClick={handleReturnToFilters}
+                    onClick={questionLoadError ? () => setQuestionReload((current) => current + 1) : handleReturnToFilters}
                     className="mt-3 px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-700 transition-colors cursor-pointer"
                   >
-                    Ajustar Filtros
+                    {questionLoadError ? 'Tentar novamente' : 'Ajustar Filtros'}
                   </button>
                 </>
               )}

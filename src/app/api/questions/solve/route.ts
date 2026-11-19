@@ -4,6 +4,7 @@ import { createClient as createSupabaseServerClient } from '@/lib/supabase/serve
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import {
   validateQuestionId,
+  UUID_REGEX,
   isPrivilegedRole,
   deriveDomainSecret,
   extractTrustedClientIpFromHeaders,
@@ -170,6 +171,7 @@ interface CachedQuestionData {
   id: string;
   code: string;
   correct_answer: string;
+  type: string;
   is_anulada: boolean;
   commentary: string;
   options: unknown[];
@@ -204,14 +206,16 @@ export async function POST(req: NextRequest) {
 
     const body = await req.json();
     const {
-      questionId,
-      selectedOption,
-      isPrefetch = false,
-      attempts,
-      studentNotes,
-      errorReason,
-      statusRetrial
+      questionId, selectedOption, isPrefetch = false, studentNotes, errorReason,
+      attemptId, writtenAnswer, readResolution, reviewed
     } = body;
+    const readOnly = readResolution === true;
+    const written = typeof writtenAnswer === 'string' ? writtenAnswer.trim() : null;
+    if ((writtenAnswer !== undefined && (!written || written.length > 12000))
+      || (attemptId !== undefined && (typeof attemptId !== 'string' || !UUID_REGEX.test(attemptId)))
+      || (isPrefetch && (readOnly || written !== null))) {
+      return NextResponse.json({ success: false, error: 'Resposta ou tentativa inválida.' }, { status: 400 });
+    }
 
     // 1. Validação estrita do ID da questão
     if (!questionId || !validateQuestionId(questionId)) {
@@ -223,7 +227,7 @@ export async function POST(req: NextRequest) {
 
     // 2. Validação obrigatória de alternativa A-E em confirmações reais (impede bypass de débito na cota!)
     const studentChoice = typeof selectedOption === 'string' ? selectedOption.trim().toUpperCase() : '';
-    if (!VALID_STUDENT_CHOICES.has(studentChoice)) {
+    if (!readOnly && written === null && !VALID_STUDENT_CHOICES.has(studentChoice)) {
       return NextResponse.json(
         { success: false, error: 'Selecione uma alternativa válida (A a E) para resolver a questão.' },
         { status: 400 }
@@ -313,6 +317,7 @@ export async function POST(req: NextRequest) {
         id: string;
         code?: string;
         correct_answer?: string;
+        type?: string;
         is_anulada?: boolean;
         commentary?: string;
         options?: unknown[];
@@ -326,7 +331,7 @@ export async function POST(req: NextRequest) {
       }>(
         supabaseAdmin,
         questionId,
-        'id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year'
+        'id, code, correct_answer, type, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year'
       );
 
       if (found.row) {
@@ -338,6 +343,7 @@ export async function POST(req: NextRequest) {
           id: found.row.id,
           code: found.row.code || '',
           correct_answer: found.row.correct_answer || '',
+          type: found.row.type || '',
           is_anulada: Boolean(found.row.is_anulada),
           commentary: found.row.commentary || '',
           options: Array.isArray(found.row.options) ? found.row.options : [],
@@ -365,12 +371,33 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const isWrittenQuestion = ['dissertativa', 'discursiva'].includes(row.type.trim().toLowerCase());
+    if (!readOnly && !isPrefetch && isWrittenQuestion !== (written !== null)) {
+      return NextResponse.json({ success: false, error: 'Informe a resposta no formato da questão.' }, { status: 400 });
+    }
+
+    let savedWrittenAnswer: string | null = null;
+    if (readOnly) {
+      const guestCookie = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
+      if (authenticatedUser) {
+        const { data: answer, error } = await supabaseAdmin.from('user_answers')
+          .select('written_answer').eq('user_id', authenticatedUser.id).eq('question_id', row.id).maybeSingle();
+        if (error) return NextResponse.json({ success: false, error: 'Não foi possível carregar a resposta.' }, { status: 503 });
+        if (!answer || (isWrittenQuestion && !answer.written_answer)) {
+          return NextResponse.json({ success: false, error: 'Nenhuma resposta registrada.' }, { status: 404 });
+        }
+        savedWrittenAnswer = answer.written_answer;
+      } else if (!guestCookie.questionIds.has(row.id)) {
+        return NextResponse.json({ success: false, error: 'Nenhuma resposta registrada.' }, { status: 404 });
+      }
+    }
+
     const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
     const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
-    const isCorrect = isAnulada ? true : (goldAnswer ? studentChoice === goldAnswer : false);
+    const isCorrect = written === null && (isAnulada || (Boolean(goldAnswer) && studentChoice === goldAnswer));
 
     // 6. Cota diária estrita de 10 questões/dia para visitantes e plano Gratuito
-    if (!authenticatedUser) {
+    if (!authenticatedUser && !readOnly) {
       const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
       const guestCheck = checkGuestQuota(clientIp, row.id);
       const hasSolvedInCookie = guestQuota.questionIds.has(row.id);
@@ -386,40 +413,6 @@ export async function POST(req: NextRequest) {
           },
           { status: 403 }
         );
-      }
-    } else if (!isUnlimitedPlan) {
-      const startOfDay = new Date();
-      startOfDay.setUTCHours(0, 0, 0, 0);
-      const startIso = startOfDay.toISOString();
-
-      const { count } = await supabaseAdmin
-        .from('user_answers')
-        .select('question_id', { count: 'exact', head: true })
-        .eq('user_id', authenticatedUser.id)
-        .gte('answered_at', startIso);
-
-      const dailyCount = count || 0;
-
-      if (dailyCount >= 10) {
-        const { data: alreadySolvedToday } = await supabaseAdmin
-          .from('user_answers')
-          .select('question_id')
-          .eq('user_id', authenticatedUser.id)
-          .eq('question_id', row.id)
-          .gte('answered_at', startIso)
-          .maybeSingle();
-
-        if (!alreadySolvedToday) {
-          return NextResponse.json(
-            {
-              success: false,
-              limitReached: true,
-              error: 'Limite diário de 10 questões atingido no plano Gratuito. Faça upgrade para o Pro para continuar resolvendo sem limites.',
-              dailyResolvedCount: dailyCount
-            },
-            { status: 403 }
-          );
-        }
       }
     }
 
@@ -457,109 +450,36 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    const serverNow = new Date().toISOString();
-
-    // 8. Persistência obrigatória na confirmação oficial (garante contabilização da cota e métricas TRI)
-    if (authenticatedUser) {
-      const targetUserId = authenticatedUser.id;
-      const targetQuestionId = row.id;
-
-      try {
-        let finalAttempts = Array.isArray(attempts) && attempts.length > 0
-          ? attempts.slice(-20).map((att: unknown) => {
-              const a = (att && typeof att === 'object' ? att : {}) as { letter?: string; timestamp?: number };
-              const l = typeof a.letter === 'string' && VALID_STUDENT_CHOICES.has(a.letter.toUpperCase())
-                ? a.letter.toUpperCase()
-                : studentChoice;
-              return {
-                letter: l,
-                isCorrect: isAnulada ? true : (goldAnswer ? l === goldAnswer : false),
-                timestamp: typeof a.timestamp === 'number' ? a.timestamp : Date.now()
-              };
-            })
-          : [{ letter: studentChoice, isCorrect, timestamp: Date.now() }];
-
-        const { data: existingRow } = await supabaseAdmin
-          .from('user_answers')
-          .select('attempts, is_correct, student_notes, error_reason, status_retrial')
-          .eq('user_id', targetUserId)
-          .eq('question_id', targetQuestionId)
-          .maybeSingle();
-
-        const hadPriorError = Boolean(
-          existingRow &&
-            (existingRow.is_correct === false ||
-              (Array.isArray(existingRow.attempts) &&
-                existingRow.attempts.some(
-                  (att: { isCorrect?: boolean }) => att && att.isCorrect === false
-                )))
-        );
-
-        if (existingRow && Array.isArray(existingRow.attempts) && existingRow.attempts.length > 0) {
-          const combinedMap = new Map<string, { letter: string; isCorrect: boolean; timestamp: number }>();
-          for (const att of existingRow.attempts as Array<{ letter?: string; isCorrect?: boolean; timestamp?: number }>) {
-            if (att && att.timestamp && att.letter) {
-              combinedMap.set(`${att.timestamp}_${att.letter}`, {
-                letter: att.letter,
-                isCorrect: Boolean(att.isCorrect),
-                timestamp: att.timestamp
-              });
-            }
-          }
-          for (const att of finalAttempts) {
-            combinedMap.set(`${att.timestamp}_${att.letter}`, att);
-          }
-          finalAttempts = Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp).slice(-30);
+    let serverNow = new Date().toISOString();
+    if (authenticatedUser && !readOnly) {
+      const { data: persisted, error } = await supabaseAdmin.rpc('persist_study_answer', {
+        p_student_id: authenticatedUser.id,
+        p_question_id: row.id,
+        p_attempt_id: attemptId ?? crypto.randomUUID(),
+        p_daily_limit: isUnlimitedPlan ? null : 10,
+        p_answer: {
+          selected_option: written === null ? studentChoice : null,
+          written_answer: written,
+          is_correct: isCorrect,
+          reviewed: reviewed === true,
+          specialty: row.especialidade, tema: row.tema, foco: row.foco, subfoco: row.subfoco,
+          difficulty: row.difficulty, banca: row.banca, year: row.year,
+          student_notes: typeof studentNotes === 'string' ? studentNotes.slice(0, 4000) : undefined,
+          error_reason: typeof errorReason === 'string' ? errorReason.slice(0, 120) : undefined
         }
-
-        // Preserva notas e classificação de erro anteriores do aluno quando não enviadas explicitamente na requisição
-        const preservedNotes =
-          typeof studentNotes === 'string'
-            ? studentNotes.slice(0, 4000)
-            : (existingRow?.student_notes ?? null);
-
-        const preservedErrorReason =
-          typeof errorReason === 'string'
-            ? errorReason.slice(0, 120)
-            : (existingRow?.error_reason ?? null);
-
-        const hadPreviousError =
-          hadPriorError || finalAttempts.slice(0, -1).some((att) => !att.isCorrect);
-
-        const finalStatusRetrial =
-          typeof statusRetrial === 'string'
-            ? statusRetrial.slice(0, 32)
-            : !isCorrect
-            ? 'pendente'
-            : hadPreviousError
-            ? 'recuperado'
-            : null;
-
-        await supabaseAdmin.from('user_answers').upsert(
-          {
-            user_id: targetUserId,
-            question_id: targetQuestionId,
-            selected_option: studentChoice,
-            is_correct: isCorrect,
-            answered_at: serverNow,
-            specialty: row.especialidade || 'Clínica Médica',
-            tema: row.tema || 'Geral',
-            foco: row.foco || null,
-            subfoco: row.subfoco || null,
-            difficulty: row.difficulty || 'Médio',
-            banca: row.banca || 'Geral',
-            year: row.year ? Number(row.year) : 2024,
-            attempts: finalAttempts,
-            student_notes: preservedNotes,
-            error_reason: preservedErrorReason,
-            status_retrial: finalStatusRetrial
-          },
-          { onConflict: 'user_id,question_id' }
-        );
-      } catch (authSyncErr) {
-        console.warn('[API Solve] Erro ao persistir resposta no banco:', authSyncErr);
+      });
+      if (error || !persisted) {
+        console.error('[API Solve] Falha ao persistir resposta:', error?.code);
+        return NextResponse.json({ success: false, error: 'Não foi possível salvar a resposta. Tente novamente.' }, { status: 503 });
       }
-    } else {
+      if (!persisted.accepted) {
+        return NextResponse.json({
+          success: false, limitReached: true, dailyResolvedCount: 10,
+          error: 'Limite diário de 10 questões atingido no plano Gratuito.'
+        }, { status: 403 });
+      }
+      serverNow = persisted.answered_at;
+    } else if (!readOnly) {
       recordGuestSolve(clientIp, row.id);
     }
 
@@ -586,6 +506,7 @@ export async function POST(req: NextRequest) {
       success: true,
       isPrefetch: false,
       answeredAt: serverNow,
+      writtenAnswer: savedWrittenAnswer ?? written,
       limitReached: false,
       questionId: row.id,
       correctAnswer: goldAnswer,
@@ -595,7 +516,7 @@ export async function POST(req: NextRequest) {
       options: watermarkedOpts
     });
 
-    if (!authenticatedUser && row.id) {
+    if (!authenticatedUser && row.id && !readOnly) {
       const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
       guestQuota.questionIds.add(row.id);
       const signedCookie = createSignedGuestQuotaCookie(guestQuota.questionIds);

@@ -60,7 +60,8 @@ interface CadernoErrosReviewSessionProps {
   onAnswerQuestion: (
     questionId: string,
     selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E',
-    isCorrect: boolean
+    isCorrect: boolean,
+    metadata?: Partial<UserAnswerItem>
   ) => void;
   onUpdateAnswerMeta: (
     questionId: string,
@@ -118,7 +119,9 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
   const [isSessionFinished, setIsSessionFinished] = useState<boolean>(false);
   const [questionTimer, setQuestionTimer] = useState<number>(0);
   const [saveIndicator, setSaveIndicator] = useState<boolean>(false);
-  const [isSubmittingSolve, setIsSubmittingSolve] = useState<boolean>(false);
+  const [isSubmittingSolve, setIsSubmittingSolve] = useState(false);
+  const [solveError, setSolveError] = useState<string | null>(null);
+  const reviewAttemptRef = useRef<{ key: string; id: string } | null>(null);
   const [resolvedOverrides, setResolvedOverrides] = useState<Record<string, Partial<Question>>>({});
 
   const currentQId = questionIds[currentIndex];
@@ -260,74 +263,46 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
       processedOptions?.newToOriginalMapping[selectedOption] || selectedOption
     ) as 'A' | 'B' | 'C' | 'D' | 'E';
 
-    let finalCorrectOriginal = currentQuestion.correctAnswer;
-    let finalIsAnulada = Boolean(
-      currentQuestion.isAnulada || currentQuestion.correctAnswer === 'ANULADA'
-    );
-    let finalIsCorrect = false;
-
-    if (!finalCorrectOriginal) {
-      setIsSubmittingSolve(true);
-      try {
-        const res = await fetch('/api/questions/solve', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            questionId: currentQId,
-            selectedOption: originalLetterToStore,
-            isPrefetch: false
-          })
-        });
-        const data = await res.json();
-        if (data?.success) {
-          finalCorrectOriginal = data.correctAnswer || '';
-          finalIsAnulada = Boolean(data.isAnulada || data.correctAnswer === 'ANULADA');
-          finalIsCorrect = Boolean(data.isCorrect);
-          setResolvedOverrides((prev) => ({
-            ...prev,
-            [currentQId]: {
-              correctAnswer: data.correctAnswer,
-              isAnulada: Boolean(data.isAnulada),
-              commentary: data.commentary || currentQuestion.commentary,
-              options:
-                Array.isArray(data.options) && data.options.length > 0
-                  ? data.options
-                  : currentQuestion.options
-            }
-          }));
-        }
-      } catch (err) {
-        console.warn('[CadernoErrosReviewSession] Erro ao validar no /api/questions/solve:', err);
-      } finally {
-        setIsSubmittingSolve(false);
-      }
-    } else {
-      finalIsCorrect = finalIsAnulada || selectedOption === effectiveCorrectAnswer;
-      fetch('/api/questions/solve', {
+    setIsSubmittingSolve(true);
+    setSolveError(null);
+    const key = `${currentQId}:${originalLetterToStore}`;
+    if (reviewAttemptRef.current?.key !== key) reviewAttemptRef.current = { key, id: crypto.randomUUID() };
+    try {
+      const response = await fetch('/api/questions/solve', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          questionId: currentQId,
-          selectedOption: originalLetterToStore,
-          isPrefetch: false
+          questionId: currentQId, selectedOption: originalLetterToStore, reviewed: true,
+          attemptId: reviewAttemptRef.current.id
         })
-      }).catch(() => {});
-    }
+      });
+      const data = await response.json();
+      if (!data.success) throw new Error(data.error || 'Não foi possível salvar a revisão.');
 
-    setSessionAnswers((prev) => ({
-      ...prev,
-      [currentQId]: {
-        letter: selectedOption,
-        isCorrect: finalIsCorrect,
-        timestamp: Date.now(),
-        timeSpent: questionTimer
-      }
-    }));
-
-    onAnswerQuestion(currentQId, originalLetterToStore, finalIsCorrect);
-
-    if (finalIsCorrect) {
-      onUpdateAnswerMeta(currentQId, { statusRetrial: 'recuperado' });
+      setResolvedOverrides((prev) => ({
+        ...prev,
+        [currentQId]: {
+          correctAnswer: data.correctAnswer,
+          isAnulada: Boolean(data.isAnulada),
+          commentary: data.commentary || currentQuestion.commentary,
+          options: data.options?.length ? data.options : currentQuestion.options
+        }
+      }));
+      setSessionAnswers((prev) => ({
+        ...prev,
+        [currentQId]: {
+          letter: selectedOption, isCorrect: data.isCorrect,
+          timestamp: new Date(data.answeredAt).getTime(), timeSpent: questionTimer
+        }
+      }));
+      onAnswerQuestion(currentQId, originalLetterToStore, data.isCorrect, {
+        syncedRemotely: true, serverAnsweredAt: data.answeredAt
+      });
+      reviewAttemptRef.current = null;
+    } catch (error) {
+      setSolveError(error instanceof Error ? error.message : 'Não foi possível salvar a revisão.');
+    } finally {
+      setIsSubmittingSolve(false);
     }
   };
 
@@ -1005,6 +980,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
         </div>
 
         {/* 4. Botão de Confirmar Resposta (Quando Não Respondida) */}
+        {!isAnswered && solveError && <p role="alert" className="text-xs text-rose-600 dark:text-rose-400">{solveError}</p>}
         {!isAnswered && (
           <div className="flex items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-zinc-800/80">
             <span className="text-[11px] text-slate-400 dark:text-zinc-500 hidden sm:inline">
@@ -1013,7 +989,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
             <button
               type="button"
-              disabled={!selectedOption}
+              disabled={!selectedOption || isSubmittingSolve}
               onClick={handleConfirmAnswer}
               className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs font-bold text-white transition-all cursor-pointer shadow-md disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2 hover:scale-102"
               style={{ backgroundColor: accentConfig.primaryHex }}

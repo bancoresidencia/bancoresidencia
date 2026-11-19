@@ -52,6 +52,7 @@ export interface AdvancedFilterState {
   focos: string[];
   subfocos: string[];
   subSubfocos?: string[];
+  clinicalPaths?: string[][];
   programaRplus?: string[];
   bancaOrganizadora?: string[];
   macrorregioes?: string[];

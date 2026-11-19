@@ -15,7 +15,6 @@ import {
   fetchFacetedHierarchyCounts,
   hasRightCardActiveFilters,
   shuffleArray,
-  getTargetQuestionTable,
   type FacetedHierarchyCountsResult
 } from './stratifiedQuizService';
 import { getQuestionCount } from '@/data/hierarchyCounts';
@@ -27,6 +26,7 @@ import {
   homologatedTituloBaseline
 } from '@/data/homologatedFacetsBaseline';
 import { clinicalHierarchy } from '@/data/mockQuestions';
+import { fetchStudyCatalog, requestStudyQuestions } from './studyQuestionClient';
 
 // Projeção segura de colunas: omite estritamente correct_answer e commentary contra scraping
 export const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, sub_subfoco, difficulty, type, is_anulada, statement, options, images';
@@ -236,7 +236,6 @@ export {
 };
 
 // Cache em memória para contagens com TTL de 90 segundos
-const countCache = new Map<string, { count: number; timestamp: number }>();
 
 interface QuestionDbRow {
   id: string;
@@ -356,10 +355,13 @@ export const BANCA_ALIASES: Record<string, string[]> = {
   'UEPA Revalida': ['UEPA Revalida', 'UEPA'],
   'UNIRG Revalida': ['UNIRG Revalida', 'UNIRG'],
   'USP-SP': ['USP/HCFMUSP', 'USP-SP'],
+  'USP/HCFMUSP': ['USP/HCFMUSP', 'USP-SP'],
   'SUS-SP': ['SUS-SP'],
   'UNICAMP': ['UNICAMP/HC', 'UNICAMP'],
+  'UNICAMP/HC': ['UNICAMP/HC', 'UNICAMP'],
   'UNIFESP': ['UNIFESP/EPM', 'UNIFESP'],
-  'USP-RP': ['USP-RP', 'FMRP-USP', 'USP/RP', 'Santa Casa de Ribeirão Preto (SP)', 'Universidade de Ribeirão Preto'],
+  'UNIFESP/EPM': ['UNIFESP/EPM', 'UNIFESP'],
+  'USP-RP': ['USP-RP', 'FMRP-USP', 'USP/RP'],
   'UNESP': ['UNESP', 'UNESP/HCFMB', 'VUNESP'],
   'IAMSPE': ['IAMSPE', 'IAMSPE/HSPE'],
   'Santa Casa SP': ['Santa Casa de São Paulo', 'ISCMSP'],
@@ -507,19 +509,12 @@ export function resolveBancaList(rawBancas: string[]): string[] {
  * Retorna contagem total de questões homologadas e consolidadas
  */
 export async function fetchTotalQuestionsCount(
-  onlyClassifiedWithAnswer: boolean = true,
+  _onlyClassifiedWithAnswer: boolean = true,
   isRevalida: boolean = false,
   modalidades?: StudyModalidade[]
 ): Promise<number> {
-  const cacheKey = `total_q_count_${onlyClassifiedWithAnswer}_${isRevalida}_${(modalidades || []).join(',')}`;
-  const cached = countCache.get(cacheKey);
-  if (cached && Date.now() - cached.timestamp < 180000) {
-    return cached.count;
-  }
-
-  const count = getHomologatedBaseline(modalidades).total;
-  countCache.set(cacheKey, { count, timestamp: Date.now() });
-  return count;
+  const catalog = await fetchStudyCatalog({ modalidades: modalidades ?? (isRevalida ? ['Revalida'] : undefined) });
+  return catalog.total;
 }
 
 export function calculateHierarchyFallback(filters: ExtendedFilterState): number {
@@ -597,644 +592,22 @@ export async function fetchQuestionsFromSupabase(
   filters: ExtendedFilterState = {},
   page: number = 1,
   pageSize: number = 20,
-  questionIds?: string[]
+  questionIds?: string[],
+  signal?: AbortSignal
 ): Promise<FetchQuestionsResult> {
-  // Chamada via API Route interna (Node.js com Service Role) para garantir 100% de acesso às questões, comentários e gabaritos sem erro de permissão (42501)
-  if (typeof window !== 'undefined') {
-    try {
-      const reqHeaders: Record<string, string> = { 'Content-Type': 'application/json' };
-      try {
-        const { data: authData } = await supabase.auth.getSession();
-        if (authData?.session?.access_token) {
-          reqHeaders['Authorization'] = `Bearer ${authData.session.access_token}`;
-        }
-      } catch {
-        // anônimo
-      }
-      const apiRes = await fetch('/api/questions', {
-        method: 'POST',
-        headers: reqHeaders,
-        body: JSON.stringify({ filters, page, pageSize, questionIds })
-      });
-      if (apiRes.ok) {
-        const json = await apiRes.json();
-        if (json && Array.isArray(json.questions)) {
-          return json;
-        }
-      }
-    } catch (e) {
-      console.warn('[questionService] Falha na rota /api/questions, usando fallback direto:', e);
-    }
-  }
+  const size = Math.min(pageSize, 50);
+  const first = await requestStudyQuestions<FetchQuestionsResult>({ filters, page, pageSize: size, questionIds }, signal);
+  if (pageSize <= size || page !== 1) return first;
 
-  const countKey = JSON.stringify({ filters, questionIds });
-  const cachedCountEntry = countCache.get(countKey);
-  const now = Date.now();
-  const hasFreshCache = cachedCountEntry && (now - cachedCountEntry.timestamp < 90000);
-
-  // Consulta segura e protegida contra raspagem com chaveamento dinâmico entre as 4 modalidades
-  const targetViewTable = getTargetQuestionTable(filters);
-  let query = supabase.from(targetViewTable).select(SAFE_QUESTION_COLUMNS);
-
-  if (targetViewTable === 'view_questions_all' && filters.modalidades && filters.modalidades.length > 0 && filters.modalidades.length < 4) {
-    const canonicalMods = filters.modalidades.map(m => {
-      if (m === 'Residência Médica') return 'Acesso Direto';
-      if (typeof m === 'string' && m.startsWith('R+')) return 'R+';
-      if (typeof m === 'string' && m.startsWith('Título')) return 'Título de Especialista';
-      return m;
-    });
-    query = query.in('modalidade', canonicalMods);
-  }
-
-  // Regra Canônica de Gabarito: Alunos só visualizam questões com gabarito homologado (A-E ou Anuladas)
-  if (filters.gabaritoStatus === 'sem_gabarito') {
-    query = query.eq('has_gabarito', false);
-  } else if (filters.gabaritoStatus === 'todas') {
-    // Curadoria administrativa visualiza todas
-  } else {
-    // Padrão do aluno: oculta discursivas sem alternativa e questões de bancas sem gabarito
-    query = query.eq('has_gabarito', true);
-  }
-
-  if (filters.ocultarAnuladasErro) {
-    query = query.eq('is_anulada', false);
-  }
-
-  const hasOtherFilters = Boolean(
-    (filters.especialidades && filters.especialidades.length > 0) ||
-    (filters.temas && filters.temas.length > 0) ||
-    (filters.focos && filters.focos.length > 0) ||
-    (filters.subfocos && filters.subfocos.length > 0) ||
-    (filters.instituicoes && filters.instituicoes.length > 0) ||
-    (filters.anos && filters.anos.length > 0) ||
-    (filters.dificuldade && filters.dificuldade !== 'Todas') ||
-    (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
-    (filters.search && filters.search.trim()) ||
-    filters.ocultarAnuladasErro ||
-    filters.ultimos5Anos
-  );
-
-  // Filtro de Status do Aluno via paginação direta de IDs (sem limite artificial de 150)
-  if (filters.status === 'Resolvidas') {
-    if (!filters.userSolvedIds || filters.userSolvedIds.length === 0) {
-      return { questions: [], total: 0, page, pageSize, totalPages: 0 };
-    }
-    if (hasOtherFilters) {
-      query = query.in('id', filters.userSolvedIds.slice(0, 500));
-    } else {
-      const from = (page - 1) * pageSize;
-      const pageTargetIds = filters.userSolvedIds.slice(from, from + pageSize);
-      query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
-    }
-  } else if (filters.status === 'Acertadas') {
-    if (!filters.userCorrectIds || filters.userCorrectIds.length === 0) {
-      return { questions: [], total: 0, page, pageSize, totalPages: 0 };
-    }
-    if (hasOtherFilters) {
-      query = query.in('id', filters.userCorrectIds.slice(0, 500));
-    } else {
-      const from = (page - 1) * pageSize;
-      const pageTargetIds = filters.userCorrectIds.slice(from, from + pageSize);
-      query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
-    }
-  } else if (filters.status === 'Erradas') {
-    if (!filters.userWrongIds || filters.userWrongIds.length === 0) {
-      return { questions: [], total: 0, page, pageSize, totalPages: 0 };
-    }
-    if (hasOtherFilters) {
-      query = query.in('id', filters.userWrongIds.slice(0, 500));
-    } else {
-      const from = (page - 1) * pageSize;
-      const pageTargetIds = filters.userWrongIds.slice(from, from + pageSize);
-      query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
-    }
-  } else if (filters.status === 'Não vistas') {
-    if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      const safePrune = filters.userSolvedIds.filter(validateQuestionId).slice(0, 100);
-      if (safePrune.length > 0) {
-        query = query.not('id', 'in', `(${safePrune.join(',')})`);
-      }
-    }
-  }
-
-  // Se IDs específicos foram solicitados (resolvendo uma lista do aluno)
-  if (questionIds && questionIds.length > 0) {
-    query = query.in('id', questionIds);
-  } else {
-    // 1. Busca textual otimizada com sanitização estrita de PostgREST e suporte a acentuação clínica
-    if (filters.search && filters.search.trim()) {
-      const q = sanitizePostgrestTerm(filters.search);
-      if (q.length >= 2) {
-        const variants = getClinicalSearchTerms(q);
-        const searchClauses = variants.flatMap((term) => [
-          `foco.ilike.%${term}%`,
-          `subfoco.ilike.%${term}%`,
-          `tema.ilike.%${term}%`,
-          `code.ilike.%${term}%`
-        ]);
-        query = query.or(searchClauses.join(','));
-      }
-    }
-
-    // 2. Árvore Clínica: SOMA / UNIÃO entre ramos diferentes e normalização ampla
-    const specs = new Set<string>();
-    if (filters.especialidades && filters.especialidades.length > 0) {
-      filters.especialidades.forEach((sp) => {
-        specs.add(sp);
-        if (sp === 'Cirurgia Geral' || sp === 'Cirurgia') {
-          specs.add('Cirurgia');
-          specs.add('Cirurgia Geral');
-        }
-        if (sp === 'Ginecologia e Obstetrícia') {
-          specs.add('Ginecologia');
-          specs.add('Obstetrícia');
-        } else if (sp === 'Ginecologia' || sp === 'Obstetrícia') {
-          specs.add(sp);
-          specs.add('Ginecologia e Obstetrícia');
-        }
-        if (sp === 'Medicina Preventiva' || sp === 'Medicina Preventiva e Social') {
-          specs.add('Medicina Preventiva e Social');
-          specs.add('Medicina Preventiva');
-        }
-      });
-    }
-
-    const contentOrParts: string[] = [];
-    if (specs.size > 0) {
-      const specList = Array.from(specs)
-        .map((s) => sanitizePostgrestQuotedValue(s))
-        .filter(Boolean)
-        .map((s) => `"${s}"`)
-        .join(',');
-      if (specList) contentOrParts.push(`especialidade.in.(${specList})`);
-    }
-    if (filters.temas && filters.temas.length > 0) {
-      const temaList = filters.temas
-        .map((t) => sanitizePostgrestQuotedValue(t))
-        .filter(Boolean)
-        .map((t) => `"${t}"`)
-        .join(',');
-      if (temaList) contentOrParts.push(`tema.in.(${temaList})`);
-    }
-    if (filters.focos && filters.focos.length > 0) {
-      const focoList = filters.focos
-        .map((f) => sanitizePostgrestQuotedValue(f))
-        .filter(Boolean)
-        .map((f) => `"${f}"`)
-        .join(',');
-      if (focoList) contentOrParts.push(`foco.in.(${focoList})`);
-    }
-    const effectiveSubfocos = new Set(filters.subfocos || []);
-    if (filters.subSubfocos && filters.subSubfocos.length > 0) {
-      clinicalHierarchy.forEach((esp) => {
-        esp.temas.forEach((tem) => {
-          tem.focos.forEach((foc) => {
-            foc.subfocos.forEach((subItem) => {
-              if (typeof subItem !== 'string' && subItem.sub_subfocos) {
-                const matches = subItem.sub_subfocos.some((ss) => filters.subSubfocos!.includes(ss));
-                if (matches) {
-                  effectiveSubfocos.add(subItem.subfoco);
-                }
-              }
-            });
-          });
-        });
-      });
-    }
-
-    if (effectiveSubfocos.size > 0) {
-      const allSubs = Array.from(effectiveSubfocos);
-      const subfocoList = allSubs
-        .map((s) => sanitizePostgrestQuotedValue(s))
-        .filter(Boolean)
-        .map((s) => `"${s}"`)
-        .join(',');
-      if (subfocoList) contentOrParts.push(`subfoco.in.(${subfocoList})`);
-    }
-
-    if (contentOrParts.length === 1) {
-      if (specs.size > 0) {
-        query = query.in('especialidade', Array.from(specs));
-      } else if (filters.temas && filters.temas.length > 0) {
-        query = query.in('tema', filters.temas);
-      } else if (filters.focos && filters.focos.length > 0) {
-        query = query.in('foco', filters.focos);
-      } else if (effectiveSubfocos.size > 0) {
-        query = query.in('subfoco', Array.from(effectiveSubfocos));
-      }
-    } else if (contentOrParts.length > 1) {
-      query = query.or(contentOrParts.join(','));
-    }
-
-    // 3. Modalidade (com suporte refinado a Revalida e Residência)
-    if (filters.modalidades && filters.modalidades.length > 0) {
-      const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
-      const otherModalidades = filters.modalidades
-        .filter((m) => !m.toLowerCase().includes('revalida'))
-        .map((m) => sanitizePostgrestQuotedValue(m))
-        .filter(Boolean);
-
-      if (hasRevalida && otherModalidades.length === 0) {
-        query = query.or(REVALIDA_POSTGREST_FILTER);
-      } else if (hasRevalida && otherModalidades.length > 0) {
-        const otherIn = otherModalidades.map((m) => `"${m}"`).join(',');
-        query = query.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
-      } else {
-        const isOnlyDefaultResidencia =
-          filters.modalidades.length === 1 &&
-          filters.modalidades[0] === 'Residência Médica';
-        if (!isOnlyDefaultResidencia) {
-          query = query.in('modalidade', filters.modalidades);
-        }
-      }
-    }
-
-    // 4. Instituições / Bancas (com dicionário completo de aliases)
-    if (filters.instituicoes && filters.instituicoes.length > 0) {
-      const resolved = resolveBancaList(filters.instituicoes);
-      if (resolved.length > 0) {
-        query = query.in('banca', resolved);
-      }
-    }
-
-    // 5. Anos
-    if (filters.anos && filters.anos.length > 0) {
-      query = query.in('year', filters.anos);
-    }
-
-    // 6. Tipo de Prova
-    if (filters.tipoProva && filters.tipoProva.length > 0) {
-      query = query.in('tipo_prova', filters.tipoProva);
-    }
-
-    // 7. Dificuldade
-    if (filters.dificuldade && filters.dificuldade !== 'Todas') {
-      query = query.eq('difficulty', filters.dificuldade);
-    }
-
-    // 8. Tipo de Questão
-    if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-      if (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva') {
-        query = query.in('type', ['Dissertativa', 'Discursiva']);
-      } else if (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso') {
-        query = query.in('type', ['Certo ou errado', 'Verdadeiro ou falso']);
-      } else {
-        query = query.eq('type', filters.tipoQuestao);
-      }
-    }
-
-    // 9. Últimos 5 anos
-    if (filters.ultimos5Anos) {
-      const minYear = new Date().getFullYear() - 4;
-      query = query.gte('year', minYear);
-    }
-  }
-
-  // Paginação otimizada com ordenação dinâmica
-  const from = (page - 1) * pageSize;
-  const to = from + pageSize - 1;
-
-  if (filters.aleatorizar) {
-    if (questionIds && questionIds.length > 0) {
-      query = query.range(from, to);
-    } else {
-      const isAsc = page % 2 === 1;
-      query = query.order('id', { ascending: isAsc }).range(from, to);
-    }
-  } else {
-    // Modo Mais Recentes: estritamente por ano decrescente utilizando o índice B-Tree (elimina timeout de sort em memória)
-    query = query.order('year', { ascending: false }).range(from, to);
-  }
-
-  let { data, error } = await query;
-
-  if (error && (error.code === '42501' || String(error.message).includes('permission denied'))) {
-    // Retry fallback com colunas públicas irrestritas para papel anon preservando os mesmos filtros
-    try {
-      const publicCols = 'id,code,institution,banca,year,tipo_prova,modalidade,especialidade,tema,foco,subfoco,sub_subfoco,difficulty,type,is_anulada,statement,options,images';
-      let retryQuery = supabase.from(targetViewTable).select(publicCols);
-      if (filters.gabaritoStatus === 'sem_gabarito') {
-        retryQuery = retryQuery.eq('has_gabarito', false);
-      } else if (filters.gabaritoStatus !== 'todas') {
-        retryQuery = retryQuery.eq('has_gabarito', true);
-      }
-      if (filters.ocultarAnuladasErro) retryQuery = retryQuery.eq('is_anulada', false);
-      if (questionIds && questionIds.length > 0) {
-        retryQuery = retryQuery.in('id', questionIds);
-      }
-      const retryRes = await retryQuery.order('year', { ascending: false }).order('id', { ascending: true }).range(from, to);
-      if (!retryRes.error && retryRes.data) {
-        data = retryRes.data;
-        error = null;
-      }
-    } catch {
-      // ignore
-    }
-  }
-
-  if (error) {
-    console.warn('Aviso ao buscar questões no Supabase via cliente direto:', error.message || error.code || JSON.stringify(error));
-    const fallbackCount = calculateHierarchyFallback(filters);
-    return {
-      questions: [],
-      total: fallbackCount,
-      page,
-      pageSize,
-      totalPages: Math.max(1, Math.ceil(fallbackCount / pageSize))
-    };
-  }
-
-  let questions = (data || []).map(mapRowToQuestion);
-
-  // Se questionIds específicos foram fornecidos, respeita a lista solicitada
-  if (questionIds && questionIds.length > 0) {
-    const idMap = new Map(questions.map((q) => [q.id, q]));
-    const reordered: Question[] = [];
-    for (const id of questionIds) {
-      const q = idMap.get(id);
-      if (q) reordered.push(q);
-    }
-    questions = reordered;
-  } else {
-    if (filters.aleatorizar) {
-      questions = shuffleArray(questions);
-    } else {
-      questions.sort((a, b) => {
-        const diff = (b.year || 0) - (a.year || 0);
-        return diff !== 0 ? diff : a.id.localeCompare(b.id);
-      });
-    }
-  }
-
-  // Resolução de contagem do universo com base homologada (173.526 para Acesso Direto, 5.499 para Revalida)
-  const isRevalida = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
-  const baseTotal = isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
-  let total: number = baseTotal;
-  const hasActiveFilters = Boolean(
-    isRevalida ||
-    (filters.search && filters.search.trim()) ||
-    (filters.especialidades && filters.especialidades.length > 0) ||
-    (filters.temas && filters.temas.length > 0) ||
-    (filters.focos && filters.focos.length > 0) ||
-    (filters.subfocos && filters.subfocos.length > 0) ||
-    (filters.instituicoes && filters.instituicoes.length > 0) ||
-    (filters.anos && filters.anos.length > 0 && filters.anos.length < 15) ||
-    (filters.dificuldade && filters.dificuldade !== 'Todas') ||
-    (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
-    filters.ocultarAnuladasErro ||
-    filters.ultimos5Anos
-  );
-
-  const hasRightCardFilters = Boolean(
-    (filters.search && filters.search.trim()) ||
-    (filters.instituicoes && filters.instituicoes.length > 0) ||
-    (filters.anos && filters.anos.length > 0 && filters.anos.length < 15) ||
-    (filters.dificuldade && filters.dificuldade !== 'Todas') ||
-    (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
-    (filters.status && filters.status !== 'Todas') ||
-    filters.ocultarAnuladasErro ||
-    filters.ultimos5Anos
-  );
-
-  const hasClinicalFilters = Boolean(
-    (filters.especialidades && filters.especialidades.length > 0) ||
-    (filters.temas && filters.temas.length > 0) ||
-    (filters.focos && filters.focos.length > 0) ||
-    (filters.subfocos && filters.subfocos.length > 0)
-  );
-
-  if (questionIds && questionIds.length > 0) {
-    total = questionIds.length;
-  } else if (!hasActiveFilters) {
-    total = baseTotal;
-    countCache.set(countKey, { count: total, timestamp: now });
-  } else if (hasFreshCache) {
-    total = cachedCountEntry.count;
-  } else if (hasClinicalFilters && !hasRightCardFilters) {
-    // Quando apenas itens da árvore clínica estão ativos, usa contagem precisa e instantânea pré-calculada (0ms)
-    total = calculateHierarchyFallback(filters);
-    countCache.set(countKey, { count: total, timestamp: now });
-  } else {
-    // Para filtros refinados, executa contagem indexada leve e ultrarrápida
-    try {
-      let countQuery = supabase
-        .from(targetViewTable)
-        .select('id', { count: 'exact', head: true });
-
-      if (filters.gabaritoStatus === 'sem_gabarito') {
-        countQuery = countQuery.eq('has_gabarito', false);
-      } else if (filters.gabaritoStatus !== 'todas') {
-        countQuery = countQuery.eq('has_gabarito', true);
-      }
-
-      if (filters.ocultarAnuladasErro) {
-        countQuery = countQuery.eq('is_anulada', false);
-      }
-
-      if (filters.status === 'Resolvidas') {
-        if (!filters.userSolvedIds || filters.userSolvedIds.length === 0) {
-          return { questions: [], total: 0, page, pageSize, totalPages: 0 };
-        }
-        if (hasOtherFilters) {
-          countQuery = countQuery.in('id', filters.userSolvedIds.slice(0, 500));
-        } else {
-          total = filters.userSolvedIds.length;
-        }
-      } else if (filters.status === 'Acertadas') {
-        if (!filters.userCorrectIds || filters.userCorrectIds.length === 0) {
-          return { questions: [], total: 0, page, pageSize, totalPages: 0 };
-        }
-        if (hasOtherFilters) {
-          countQuery = countQuery.in('id', filters.userCorrectIds.slice(0, 500));
-        } else {
-          total = filters.userCorrectIds.length;
-        }
-      } else if (filters.status === 'Erradas') {
-        if (!filters.userWrongIds || filters.userWrongIds.length === 0) {
-          return { questions: [], total: 0, page, pageSize, totalPages: 0 };
-        }
-        if (hasOtherFilters) {
-          countQuery = countQuery.in('id', filters.userWrongIds.slice(0, 500));
-        } else {
-          total = filters.userWrongIds.length;
-        }
-      } else if (filters.status === 'Não vistas') {
-        if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-          const safePrune = filters.userSolvedIds.slice(0, 100);
-          countQuery = countQuery.not('id', 'in', `(${safePrune.join(',')})`);
-        }
-      }
-
-      const countSpecs = new Set<string>();
-      if (filters.especialidades && filters.especialidades.length > 0) {
-        filters.especialidades.forEach((sp) => {
-          countSpecs.add(sp);
-          if (sp === 'Cirurgia Geral' || sp === 'Cirurgia') {
-            countSpecs.add('Cirurgia');
-            countSpecs.add('Cirurgia Geral');
-          }
-          if (sp === 'Ginecologia e Obstetrícia') {
-            countSpecs.add('Ginecologia');
-            countSpecs.add('Obstetrícia');
-          }
-          if (sp === 'Medicina Preventiva' || sp === 'Medicina Preventiva e Social') {
-            countSpecs.add('Medicina Preventiva e Social');
-            countSpecs.add('Medicina Preventiva');
-          }
-        });
-      }
-
-      const countContentOrParts: string[] = [];
-      if (countSpecs.size > 0) {
-        const specList = Array.from(countSpecs)
-          .map((s) => sanitizePostgrestQuotedValue(s))
-          .filter(Boolean)
-          .map((s) => `"${s}"`)
-          .join(',');
-        if (specList) countContentOrParts.push(`especialidade.in.(${specList})`);
-      }
-      if (filters.temas && filters.temas.length > 0) {
-        const temaList = filters.temas
-          .map((t) => sanitizePostgrestQuotedValue(t))
-          .filter(Boolean)
-          .map((t) => `"${t}"`)
-          .join(',');
-        if (temaList) countContentOrParts.push(`tema.in.(${temaList})`);
-      }
-      if (filters.focos && filters.focos.length > 0) {
-        const focoList = filters.focos
-          .map((f) => sanitizePostgrestQuotedValue(f))
-          .filter(Boolean)
-          .map((f) => `"${f}"`)
-          .join(',');
-        if (focoList) countContentOrParts.push(`foco.in.(${focoList})`);
-      }
-      const countParentFocos = (filters.subfocos && filters.subfocos.length > 0)
-        ? getParentFocosForSubfocoList(filters.subfocos)
-        : [];
-
-      if (filters.subfocos && filters.subfocos.length > 0) {
-        const subfocoList = filters.subfocos
-          .map((s) => sanitizePostgrestQuotedValue(s))
-          .filter(Boolean)
-          .map((s) => `"${s}"`)
-          .join(',');
-        if (subfocoList) {
-          if (countParentFocos.length > 0) {
-            const parentFocoList = countParentFocos
-              .map((f: string) => sanitizePostgrestQuotedValue(f))
-              .filter(Boolean)
-              .map((f: string) => `"${f}"`)
-              .join(',');
-            if (parentFocoList) {
-              countContentOrParts.push(`and(foco.in.(${parentFocoList}),subfoco.in.(${subfocoList}))`);
-            } else {
-              countContentOrParts.push(`subfoco.in.(${subfocoList})`);
-            }
-          } else {
-            countContentOrParts.push(`subfoco.in.(${subfocoList})`);
-          }
-        }
-      }
-
-      if (countContentOrParts.length === 1) {
-        if (countSpecs.size > 0) {
-          countQuery = countQuery.in('especialidade', Array.from(countSpecs));
-        } else if (filters.temas && filters.temas.length > 0) {
-          countQuery = countQuery.in('tema', filters.temas);
-        } else if (filters.focos && filters.focos.length > 0) {
-          countQuery = countQuery.in('foco', filters.focos);
-        } else if (filters.subfocos && filters.subfocos.length > 0) {
-          if (countParentFocos.length > 0) {
-            countQuery = countQuery.in('foco', countParentFocos).in('subfoco', filters.subfocos);
-          } else {
-            countQuery = countQuery.in('subfoco', filters.subfocos);
-          }
-        }
-      } else if (countContentOrParts.length > 1) {
-        countQuery = countQuery.or(countContentOrParts.join(','));
-      }
-      if (filters.instituicoes && filters.instituicoes.length > 0) {
-        const resolved = resolveBancaList(filters.instituicoes);
-        if (resolved.length > 0) countQuery = countQuery.in('banca', resolved);
-      }
-      if (filters.anos && filters.anos.length > 0) {
-        countQuery = countQuery.in('year', filters.anos);
-      } else if (filters.ultimos5Anos) {
-        const minYear = new Date().getFullYear() - 4;
-        countQuery = countQuery.gte('year', minYear);
-      }
-      if (filters.dificuldade && filters.dificuldade !== 'Todas') {
-        countQuery = countQuery.eq('difficulty', filters.dificuldade);
-      }
-      if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-        if (filters.tipoQuestao === 'Dissertativa' || filters.tipoQuestao === 'Discursiva') {
-          countQuery = countQuery.in('type', ['Dissertativa', 'Discursiva']);
-        } else if (filters.tipoQuestao === 'Certo ou errado' || filters.tipoQuestao === 'Verdadeiro ou falso') {
-          countQuery = countQuery.in('type', ['Certo ou errado', 'Verdadeiro ou falso']);
-        } else {
-          countQuery = countQuery.eq('type', filters.tipoQuestao);
-        }
-      }
-      if (filters.ocultarAnuladasErro) {
-        countQuery = countQuery.eq('is_anulada', false);
-      }
-      if (filters.modalidades && filters.modalidades.length > 0) {
-        const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
-        const otherModalidades = filters.modalidades
-          .filter((m) => !m.toLowerCase().includes('revalida'))
-          .map((m) => sanitizePostgrestQuotedValue(m))
-          .filter(Boolean);
-        if (hasRevalida && otherModalidades.length === 0) {
-          countQuery = countQuery.or(REVALIDA_POSTGREST_FILTER);
-        } else if (hasRevalida && otherModalidades.length > 0) {
-          const otherIn = otherModalidades.map((m) => `"${m}"`).join(',');
-          countQuery = countQuery.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
-        } else {
-          const isOnlyDefault =
-            filters.modalidades.length === 1 &&
-            filters.modalidades[0] === 'Residência Médica';
-          if (!isOnlyDefault) {
-            countQuery = countQuery.in('modalidade', filters.modalidades);
-          }
-        }
-      }
-
-      // Timeout estendido de segurança (5.000ms)
-      const countPromise = countQuery;
-      const timeoutPromise = new Promise<{ count: null }>((resolve) => setTimeout(() => resolve({ count: null }), 5000));
-      const res = await Promise.race([countPromise, timeoutPromise]);
-
-      if (res && typeof res.count === 'number') {
-        total = res.count;
-        countCache.set(countKey, { count: total, timestamp: now });
-      } else {
-        // Fallback proporcional baseado nos números reais homologados de hierarchyCounts
-        let fallbackSum = 0;
-        if (filters.subfocos && filters.subfocos.length > 0) {
-          fallbackSum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
-        } else if (filters.focos && filters.focos.length > 0) {
-          fallbackSum = filters.focos.reduce((acc, f) => acc + (getQuestionCount('focos', f) || 0), 0);
-        } else if (filters.temas && filters.temas.length > 0) {
-          fallbackSum = filters.temas.reduce((acc, t) => acc + (getQuestionCount('temas', t) || 0), 0);
-        } else if (filters.especialidades && filters.especialidades.length > 0) {
-          fallbackSum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
-        }
-        total = fallbackSum > 0 ? fallbackSum : (isRevalida ? homologatedRevalidaBaseline.total : Math.max(from + questions.length, homologatedDiretoBaseline.total));
-      }
-    } catch {
-      total = isRevalida ? homologatedRevalidaBaseline.total : Math.max(from + questions.length, homologatedDiretoBaseline.total);
-    }
-  }
-
-  const totalPages = Math.max(1, Math.ceil(total / pageSize));
-
+  const remaining = Math.ceil(Math.min(pageSize, first.total) / size) - 1;
+  const pages = await Promise.all(Array.from({ length: Math.max(0, remaining) }, (_, index) =>
+    requestStudyQuestions<FetchQuestionsResult>({ filters, page: index + 2, pageSize: size, questionIds }, signal)
+  ));
   return {
-    questions,
-    total,
-    page,
+    ...first,
+    questions: [...first.questions, ...pages.flatMap((result) => result.questions)],
     pageSize,
-    totalPages
+    totalPages: Math.ceil(first.total / pageSize)
   };
 }
 
@@ -1918,18 +1291,12 @@ export async function syncPendingLocalReportsToSupabase(currentUser?: { id?: str
 export async function fetchQuestionIdsForListCriteria(
   quotasByItem: Record<string, number>,
   filters: ExtendedFilterState,
-  maxTotal: number = 200,
-  answeredQuestionIds?: string[],
-  correctQuestionIds?: string[],
-  wrongQuestionIds?: string[]
+  maxTotal: number = 200
 ): Promise<string[]> {
   return generateStratifiedQuiz(
     quotasByItem,
     filters,
-    maxTotal,
-    answeredQuestionIds,
-    correctQuestionIds,
-    wrongQuestionIds
+    maxTotal
   );
 }
 

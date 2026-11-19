@@ -173,6 +173,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
           };
           const qid = row.question_id;
           if (!qid) continue;
+          if (row.selected_option === '') continue; // A written response has no graded alternative.
 
           const local = merged[qid];
           const remoteTime = row.answered_at ? new Date(row.answered_at).getTime() : Date.now();

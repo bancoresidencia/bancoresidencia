@@ -22,6 +22,7 @@ async function loadAnswers(database: Database): Promise<RankingAnswer[]> {
   while (true) {
     let query = database.from('user_answers')
       .select('id, user_id, question_id, is_correct, banca, answered_at')
+      .is('written_answer', null)
       .order('id')
       .limit(ANSWER_PAGE_SIZE);
     if (afterId) query = query.gt('id', afterId);

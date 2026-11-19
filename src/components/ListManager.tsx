@@ -20,7 +20,6 @@ import { Folder, QuestionList, AdvancedFilterState } from '@/types';
 import { AdvancedQuestionFilters } from './AdvancedQuestionFilters';
 import { useTheme } from '@/context/ThemeContext';
 import { fetchQuestionsFromSupabase } from '@/services/questionService';
-import { getHomologatedBaseline } from '@/data/homologatedFacetsBaseline';
 
 interface ListManagerProps {
   folders: Folder[];
@@ -85,24 +84,33 @@ export const ListManager: React.FC<ListManagerProps> = ({
     aleatorizar: false
   });
   const [filterError, setFilterError] = useState<string | null>(null);
-  const [dynamicFilteredCount, setDynamicFilteredCount] = useState<number>(() => getHomologatedBaseline(listFilters?.modalidades).total);
+  const [dynamicFilteredCount, setDynamicFilteredCount] = useState(0);
+  const [filterCountLoading, setFilterCountLoading] = useState(false);
+  const [filterCountError, setFilterCountError] = useState(false);
 
   useEffect(() => {
     if (!isCreatingList) return;
-    let active = true;
+    const controller = new AbortController();
+    setFilterCountLoading(true);
+    setFilterCountError(false);
     const timeoutId = setTimeout(async () => {
       try {
-        const res = await fetchQuestionsFromSupabase(listFilters, 1, 1);
-        if (active && res && typeof res.total === 'number') {
+        const res = await fetchQuestionsFromSupabase(listFilters, 1, 1, undefined, controller.signal);
+        if (!controller.signal.aborted) {
           setDynamicFilteredCount(res.total);
         }
       } catch {
-        // Fallback mantém contagem anterior
+        if (!controller.signal.aborted) {
+          setDynamicFilteredCount(0);
+          setFilterCountError(true);
+        }
+      } finally {
+        if (!controller.signal.aborted) setFilterCountLoading(false);
       }
     }, 250);
 
     return () => {
-      active = false;
+      controller.abort();
       clearTimeout(timeoutId);
     };
   }, [listFilters, isCreatingList]);
@@ -550,7 +558,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 <span>Selecione os Critérios da Lista (Obrigatório)</span>
               </div>
               <span className="text-xs font-bold text-slate-700 dark:text-slate-300">
-                Questões disponíveis no filtro: <span className="font-mono" style={{ color: accentConfig.primaryHex }}>{dynamicFilteredCount.toLocaleString('pt-BR')}</span>
+                Questões disponíveis no filtro: <span className="font-mono" style={{ color: accentConfig.primaryHex }}>{filterCountLoading || filterCountError ? '—' : dynamicFilteredCount.toLocaleString('pt-BR')}</span>
               </span>
             </div>
 
@@ -576,8 +584,9 @@ export const ListManager: React.FC<ListManagerProps> = ({
                   ultimos5Anos: false
                 })
               }
-              totalAvailable={getHomologatedBaseline(listFilters.modalidades).total}
               totalFiltered={dynamicFilteredCount}
+              isLoading={filterCountLoading}
+              loadError={filterCountError}
               onCreateListFromFilter={() => {}}
               embedded={true}
             />
