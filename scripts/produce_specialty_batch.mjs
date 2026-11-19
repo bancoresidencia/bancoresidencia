@@ -49,7 +49,7 @@ if (![1, 2, 3, 4, 6, 8, 10, 15, 20, 30, 40].includes(CONCURRENCY)) CONCURRENCY =
 const NEXT_SPECIALTY = argNext ? argNext.split('=')[1] : 'obstetricia';
 
 const isPreventiva = SPECIALTY_NAME.toLowerCase().includes('preventiva');
-const MODEL_NAME = argModel ? argModel.split('=')[1] : 'gemini-3.5-flash-lite';
+const MODEL_NAME = argModel ? argModel.split('=')[1] : 'gemini-3.1-flash-lite';
 const USE_PAID = false; // TRAVA DE SEGURANÇA: Chave paga totalmente bloqueada (Custo R$ 0,00)
 
 const STATE_PATH = 'data/pipeline_progress_state.json';
@@ -363,6 +363,7 @@ async function runPipeline() {
 
   // Se houver próxima especialidade encadeada, dispara automaticamente!
   const NEXT_CHAIN = {
+    urologia: { file: 'data/urologia_final_questions.json', name: 'Urologia', next: 'clinica' },
     obstetricia: { file: 'data/obstetricia_direto_questions.json', name: 'Obstetrícia', next: 'pediatria' },
     pediatria: { file: 'data/pediatria_direto_questions.json', name: 'Pediatria', next: 'cirurgia' },
     cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia', next: 'clinica' },

@@ -216,9 +216,9 @@ export function getSpecialtyGuideline(specialty, tema) {
 
 // Modelos prioritários em rotação gratuita com fallback automático
 export const AVAILABLE_MODELS = [
+  'gemini-3.1-flash-lite',
   'gemini-3.5-flash-lite',
-  'gemini-flash-lite-latest',
-  'gemini-3.1-flash-lite'
+  'gemini-flash-lite-latest'
 ];
 
 const exhaustedPairs = new Set();

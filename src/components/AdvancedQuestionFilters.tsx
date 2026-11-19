@@ -86,12 +86,13 @@ import {
 } from 'lucide-react';
 import {
   clinicalHierarchy,
-  medicalInstitutionsDirectory
+  medicalInstitutionsDirectory,
+  mockYears
 } from '@/data/mockQuestions';
 import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
 import { fetchStudyCatalog } from '@/services/studyQuestionClient';
 import type { StudyCatalogCounts } from '@/services/studyQuestionCatalog';
-import { clinicalFields, clinicalPathKey, hasSelectedClinicalPath, isClinicalPathPrefix, recentExamYears } from '@/utils/studyQuestionFilters';
+import { clinicalFields, clinicalPathKey, hasSelectedClinicalPath, isClinicalPathPrefix } from '@/utils/studyQuestionFilters';
 import { resolveBancaList } from '@/services/questionService';
 import {
   fetchFacetedHierarchyCounts,
@@ -117,6 +118,9 @@ interface AdvancedQuestionFiltersProps {
   isSidebarCollapsed?: boolean;
   embedded?: boolean;
 }
+
+const FALLBACK_EXAM_YEARS = mockYears.filter((year) => year !== 'Todos').map(Number);
+const QUICK_YEAR_COUNTS = [3, 5, 10];
 
 // Bancas mais concorridas para acesso rápido em 1 clique (Residência Médica)
 const POPULAR_BANCAS_1CLIQUE = [
@@ -398,7 +402,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     };
   }, [facetKey, answerRevision, facetsRetry]);
 
-  const yearsList = catalog?.years ?? [];
   const countForPath = (path: string[]): number | null => {
     if (!facetedCounts) return null;
     const count = (parts: string[]) => facetedCounts.paths[clinicalPathKey(parts)] ?? 0;
@@ -532,6 +535,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const isOnlyRevalida = useMemo(() => {
     return isModalidadeActive('Revalida') && !isModalidadeActive('Acesso Direto') && !isModalidadeActive('R+') && !isModalidadeActive('Título de Especialista');
   }, [filters.modalidades]);
+  const yearsList = catalog?.years?.length
+    ? catalog.years
+    : isOnlyRevalida ? FALLBACK_EXAM_YEARS.filter((year) => year <= 2026) : FALLBACK_EXAM_YEARS;
+  const activeQuickYearCount = QUICK_YEAR_COUNTS.find((count) =>
+    filters.anos.length === count && yearsList.slice(0, count).every((year) => filters.anos.includes(year))
+  );
 
   const toggleModalidade = (mod: 'Acesso Direto' | 'Revalida' | 'R+' | 'Título de Especialista') => {
     const isActive = isModalidadeActive(mod);
@@ -708,10 +717,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   };
 
   const handleSelectUltimosAnos = (count: number) => {
-    const selected = recentExamYears(count).filter((year) => yearsList.includes(year));
     onChange({
       ...filters,
-      anos: selected,
+      anos: yearsList.slice(0, count),
       ultimos5Anos: false
     });
   };
@@ -2014,113 +2022,50 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     </div>
                   </div>
 
-                  {/* Linha 3: Banca Organizadora Pura & Macrorregião */}
-                  <div className="space-y-2 pt-1">
-                    <div className="space-y-1">
-                      <span className="text-[11px] font-bold text-zinc-700 dark:text-zinc-300 block">Banca Organizadora</span>
+                  {(isModalidadeActive('R+') || isModalidadeActive('Título de Especialista')) && (
+                    <div className="space-y-1 pt-1">
+                      <span className="text-[11px] font-bold text-zinc-700 dark:text-zinc-300 block">Programa R+ e Sociedade</span>
                       <div className="flex flex-wrap gap-1">
-                        {['FGV / AOCP', 'FUVEST', 'VUNESP / FCC', 'Quadrix / IADES', 'FUNDATEC / AMRIGS', 'AREMG', 'COMVEST', 'SURCE', 'IAUPE / UPE'].map((org) => {
-                          const isOrgActive = Boolean(filters.bancaOrganizadora?.includes(org));
+                        {[
+                          'R+ Clínica Médica',
+                          'R+ Cirurgia Geral',
+                          'R+ Pediatria',
+                          'R+ Ginecologia e Obstetrícia',
+                          'R+ Mastologia',
+                          'R+ Medicina Intensiva',
+                          'R+ Geriatria',
+                          'R+ Neonatologia',
+                          'R+ Urologia',
+                          'TEGO',
+                          'TECM',
+                          'SBOT'
+                        ].map((pr) => {
+                          const isPrActive = Boolean(filters.programaRplus?.includes(pr));
                           return (
                             <button
-                              key={org}
+                              key={pr}
                               type="button"
                               onClick={() => {
-                                const cur = filters.bancaOrganizadora || [];
-                                const next = isOrgActive ? cur.filter((x) => x !== org) : [...cur, org];
-                                onChange({ ...filters, bancaOrganizadora: next });
+                                const cur = filters.programaRplus || [];
+                                const next = isPrActive ? cur.filter((x) => x !== pr) : [...cur, pr];
+                                onChange({ ...filters, programaRplus: next });
                               }}
-                              className={`px-2 py-1 rounded-lg text-[10.5px] font-semibold border transition-all cursor-pointer ${isOrgActive
+                              className={`px-2 py-1 rounded-lg text-[10.5px] font-semibold border transition-all cursor-pointer ${isPrActive
                                 ? 'text-white shadow-xs'
                                 : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                                 }`}
                               style={{
-                                backgroundColor: isOrgActive ? accentConfig.primaryHex : undefined,
-                                borderColor: isOrgActive ? accentConfig.primaryHex : undefined
+                                backgroundColor: isPrActive ? accentConfig.primaryHex : undefined,
+                                borderColor: isPrActive ? accentConfig.primaryHex : undefined
                               }}
                             >
-                              {org}
+                              {pr}
                             </button>
                           );
                         })}
                       </div>
                     </div>
-
-                    <div className="space-y-1">
-                      <span className="text-[11px] font-bold text-zinc-700 dark:text-zinc-300 block">Macrorregião</span>
-                      <div className="flex flex-wrap gap-1">
-                        {['Sudeste', 'Sul', 'Nordeste', 'Centro-Oeste', 'Norte', 'Nacional'].map((reg) => {
-                          const isRegActive = Boolean(filters.macrorregioes?.includes(reg));
-                          return (
-                            <button
-                              key={reg}
-                              type="button"
-                              onClick={() => {
-                                const cur = filters.macrorregioes || [];
-                                const next = isRegActive ? cur.filter((x) => x !== reg) : [...cur, reg];
-                                onChange({ ...filters, macrorregioes: next });
-                              }}
-                              className={`px-2.5 py-1 rounded-lg text-[10.5px] font-semibold border transition-all cursor-pointer ${isRegActive
-                                ? 'text-white shadow-xs'
-                                : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                                }`}
-                              style={{
-                                backgroundColor: isRegActive ? accentConfig.primaryHex : undefined,
-                                borderColor: isRegActive ? accentConfig.primaryHex : undefined
-                              }}
-                            >
-                              {reg}
-                            </button>
-                          );
-                        })}
-                      </div>
-                    </div>
-
-                    {(isModalidadeActive('R+') || isModalidadeActive('Título de Especialista')) && (
-                      <div className="space-y-1">
-                        <span className="text-[11px] font-bold text-zinc-700 dark:text-zinc-300 block">Programa R+ e Sociedade</span>
-                        <div className="flex flex-wrap gap-1">
-                          {[
-                            'R+ Clínica Médica',
-                            'R+ Cirurgia Geral',
-                            'R+ Pediatria',
-                            'R+ Ginecologia e Obstetrícia',
-                            'R+ Mastologia',
-                            'R+ Medicina Intensiva',
-                            'R+ Geriatria',
-                            'R+ Neonatologia',
-                            'R+ Urologia',
-                            'TEGO',
-                            'TECM',
-                            'SBOT'
-                          ].map((pr) => {
-                            const isPrActive = Boolean(filters.programaRplus?.includes(pr));
-                            return (
-                              <button
-                                key={pr}
-                                type="button"
-                                onClick={() => {
-                                  const cur = filters.programaRplus || [];
-                                  const next = isPrActive ? cur.filter((x) => x !== pr) : [...cur, pr];
-                                  onChange({ ...filters, programaRplus: next });
-                                }}
-                                className={`px-2 py-1 rounded-lg text-[10.5px] font-semibold border transition-all cursor-pointer ${isPrActive
-                                  ? 'text-white shadow-xs'
-                                  : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                                  }`}
-                                style={{
-                                  backgroundColor: isPrActive ? accentConfig.primaryHex : undefined,
-                                  borderColor: isPrActive ? accentConfig.primaryHex : undefined
-                                }}
-                              >
-                                {pr}
-                              </button>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    )}
-                  </div>
+                  )}
                 </div>
               )}
             </div>
@@ -2128,18 +2073,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             {/* 4. CARD COLAPSÁVEL: Anos da Prova */}
             <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800/80 bg-zinc-50 dark:bg-zinc-900/40 overflow-hidden transition-all">
               {/* Header com Toggle Mostrar/Ocultar */}
-              <div
+              <button
+                type="button"
+                aria-expanded={isYearsOpen}
                 onClick={() => setIsYearsOpen(!isYearsOpen)}
-                className="flex items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-900/70 transition-colors select-none"
+                className="flex w-full items-center justify-between p-3 sm:p-3.5 cursor-pointer hover:bg-zinc-100 dark:hover:bg-zinc-900/70 transition-colors select-none"
               >
-                <div className="flex items-center gap-2">
+                <span className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                   <span className="text-sm font-bold text-zinc-900 dark:text-zinc-100 tracking-tight">
                     Anos da Prova
                   </span>
-                </div>
+                </span>
 
-                <div className="flex items-center gap-2">
+                <span className="flex items-center gap-2">
                   {/* Resumo quando colapsado ou selecionado */}
                   {filters.anos.length > 0 && filters.anos.length < yearsList.length && (
                     <span
@@ -2150,21 +2097,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         color: accentConfig.primaryHex
                       }}
                     >
-                      {filters.anos.length === 3 && filters.anos.includes(2026)
-                        ? 'Últimos 3'
-                        : filters.anos.length === 5 && filters.anos.includes(2026)
-                          ? 'Últimos 5'
-                          : filters.anos.length === 10 && filters.anos.includes(2026)
-                            ? 'Últimos 10'
-                            : `${filters.anos.length} ${filters.anos.length === 1 ? 'ano' : 'anos'}`}
+                      {activeQuickYearCount
+                        ? `Últimos ${activeQuickYearCount}`
+                        : `${filters.anos.length} ${filters.anos.length === 1 ? 'ano' : 'anos'}`}
                     </span>
                   )}
                   <ChevronDown
                     className={`w-4 h-4 text-zinc-400 transition-transform duration-200 ${isYearsOpen ? 'rotate-180' : ''
                       }`}
                   />
-                </div>
-              </div>
+                </span>
+              </button>
 
               {/* Conteúdo Expandido */}
               {isYearsOpen && (
@@ -2172,15 +2115,14 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   <div className="flex items-center justify-between pt-2.5">
                     <span className="text-[11px] font-medium text-zinc-500 dark:text-zinc-400">Seleção rápida:</span>
                     <div className="flex items-center gap-1">
-                      {[3, 5, 10].map((count) => {
-                        const quickYears = recentExamYears(count).filter((year) => yearsList.includes(year));
-                        const isQuickActive = quickYears.length > 0 && filters.anos.length === quickYears.length
-                          && quickYears.every((year) => filters.anos.includes(year));
+                      {QUICK_YEAR_COUNTS.map((count) => {
+                        const isQuickActive = activeQuickYearCount === count;
                         return (
                           <button
                             key={count}
                             type="button"
-                            disabled={quickYears.length === 0}
+                            disabled={yearsList.length < count}
+                            aria-pressed={isQuickActive}
                             onClick={() => handleSelectUltimosAnos(count)}
                             className={`text-[10px] px-2 py-0.5 rounded font-semibold transition-colors cursor-pointer ${isQuickActive
                               ? 'text-white shadow-xs'
@@ -2212,6 +2154,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         <button
                           key={y}
                           type="button"
+                          aria-pressed={isSelected}
                           onClick={() => toggleYear(y)}
                           className={`shrink-0 px-3 py-1.5 text-center rounded-xl text-xs font-mono font-bold transition-all cursor-pointer ${isSelected
                             ? 'text-white shadow-xs'

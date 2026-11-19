@@ -21,6 +21,7 @@ try {
 }
 
 const SPECIALTY_MAP = {
+  urologia: { file: 'data/urologia_final_questions.json', name: 'Urologia', next: 'clinica' },
   preventiva: { file: 'data/medicina_preventiva_all_pending.json', name: 'Medicina Preventiva', next: 'none' },
   cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia', next: 'clinica' },
   clinica: { file: 'data/clinica_direto_questions.json', name: 'Clínica Médica', next: 'none' },
@@ -385,7 +386,7 @@ const server = http.createServer((req, res) => {
         'scripts/produce_specialty_batch.mjs',
         `--file=${spec.file}`,
         `--specialty=${spec.name}`,
-        '--model=gemini-3.5-flash-lite',
+        '--model=gemini-3.1-flash-lite',
         `--workers=${safeWorkers}`,
         `--next=${safeNextSpec}`
       ], {
