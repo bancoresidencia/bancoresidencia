@@ -13,6 +13,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const ALLOWED_REDIRECT_HOSTS = new Set([
+  'hippocampusresidencia.com.br',
   'bancoresidencia.com.br',
   'www.bancoresidencia.com.br',
   'bancoresidencia-kappa.vercel.app',

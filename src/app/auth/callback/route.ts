@@ -4,6 +4,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 export const dynamic = 'force-dynamic';
 
 const ALLOWED_HOSTS = new Set([
+  'hippocampusresidencia.com.br',
   'bancoresidencia.com.br',
   'www.bancoresidencia.com.br',
   'bancoresidencia-kappa.vercel.app'

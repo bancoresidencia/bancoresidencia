@@ -7,6 +7,7 @@ import { NextRequest, NextResponse } from 'next/server';
  * NUNCA expondo access_token em URL hash ou localStorage e bloqueando Host Injection.
  */
 const ALLOWED_PRODUCTION_HOSTS = new Set([
+  'hippocampusresidencia.com.br',
   'bancoresidencia.com.br',
   'www.bancoresidencia.com.br',
   'bancoresidencia-kappa.vercel.app'

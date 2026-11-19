@@ -107,13 +107,16 @@ export const StudentAmbassadorSettings: React.FC = () => {
     }
   };
 
+  const getShareUrl = () => {
+    const url = new URL('/', process.env.NEXT_PUBLIC_APP_URL || window.location.origin);
+    url.searchParams.set('ref', stats.referralCode);
+    return url.href;
+  };
+
   // Copiar Link Direto
   const handleCopyLink = async () => {
     try {
-      const shareUrl = typeof window !== 'undefined'
-        ? `${window.location.origin}?ref=${stats.referralCode}`
-        : `https://bancoresidencia.com.br?ref=${stats.referralCode}`;
-      await navigator.clipboard.writeText(shareUrl);
+      await navigator.clipboard.writeText(getShareUrl());
       setCopiedLink(true);
       setTimeout(() => setCopiedLink(false), 2000);
     } catch {
@@ -123,9 +126,7 @@ export const StudentAmbassadorSettings: React.FC = () => {
 
   // Compartilhar WhatsApp
   const handleShareWhatsApp = () => {
-    const shareUrl = typeof window !== 'undefined'
-      ? `${window.location.origin}?ref=${stats.referralCode}`
-      : `https://bancoresidencia.com.br?ref=${stats.referralCode}`;
+    const shareUrl = getShareUrl();
     const text = encodeURIComponent(
       `Oi! Estou usando o Hippocampus para me preparar com questões comentadas e provas oficiais. Usa meu código ${stats.referralCode} para garantir 10% de desconto imediato em qualquer plano: ${shareUrl}`
     );
