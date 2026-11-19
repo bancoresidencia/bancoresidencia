@@ -1,0 +1,204 @@
+[
+  {
+    "id": "sesgo-2026-suplementar-a",
+    "board": "SES-GO",
+    "institution": "SES-GO",
+    "year": 2026,
+    "modality": "Acesso Direto",
+    "edition": "2026 suplementar",
+    "booklet": "A",
+    "layout": "verbena",
+    "expected": 100,
+    "publication": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/Provas_gabaritos_finais_COREME_SES-SUPLEMENTAR-2026.html",
+    "exam": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/provas/Areas%20Basicas%20e%20Especialidades%20de%20Acesso%20Direto%20(R1)%20-%20Tipo%20A.pdf"
+    },
+    "key": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/gabaritos_finais/acesso%20direto%20tipo%20A.pdf",
+      "status": "definitivo"
+    }
+  },
+  {
+    "id": "sesgo-2026-suplementar-b",
+    "board": "SES-GO",
+    "institution": "SES-GO",
+    "year": 2026,
+    "modality": "Acesso Direto",
+    "edition": "2026 suplementar",
+    "booklet": "B",
+    "layout": "verbena",
+    "expected": 100,
+    "publication": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/Provas_gabaritos_finais_COREME_SES-SUPLEMENTAR-2026.html",
+    "exam": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/provas/Areas%20Basicas%20e%20Especialidades%20de%20Acesso%20Direto%20(R1)%20-%20Tipo%20B.pdf"
+    },
+    "key": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/gabaritos_finais/acesso%20direto%20tipo%20B.pdf",
+      "status": "definitivo"
+    }
+  },
+  {
+    "id": "sesgo-2026-suplementar-c",
+    "board": "SES-GO",
+    "institution": "SES-GO",
+    "year": 2026,
+    "modality": "Acesso Direto",
+    "edition": "2026 suplementar",
+    "booklet": "C",
+    "layout": "verbena",
+    "expected": 100,
+    "publication": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/Provas_gabaritos_finais_COREME_SES-SUPLEMENTAR-2026.html",
+    "exam": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/provas/Areas%20Basicas%20e%20Especialidades%20de%20Acesso%20Direto%20(R1)%20-%20Tipo%20C.pdf"
+    },
+    "key": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses-suplementar/sistema/provas_gabaritos/gabaritos_finais/acesso%20direto%20tipo%20C.pdf",
+      "status": "definitivo"
+    }
+  },
+  {
+    "id": "sesgo-2026-a",
+    "board": "SES-GO",
+    "institution": "SES-GO",
+    "year": 2026,
+    "modality": "Acesso Direto",
+    "edition": "2026",
+    "booklet": "A",
+    "layout": "verbena",
+    "expected": 100,
+    "publication": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/Provas_gabaritos_finais_COREME_SES-2026-%23%24%23%24R.html",
+    "exam": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/provas/%C3%81REAS%20B%C3%81SICAS%20E%20ESPECIALIDADES%20DE%20ACESSO%20DIRETO%20(R1)%20TIPO%20A.pdf"
+    },
+    "key": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/gabaritos_finais/Gabarito%20Final%20-%20Acesso%20direto%20tipo%20A.pdf",
+      "status": "definitivo",
+      "local": "data/official_exams/SES_GO/SES_GO_2026_Gabarito_Final_-_Acesso_direto_tipo_A.pdf"
+    }
+  },
+  {
+    "id": "sesgo-2026-b",
+    "board": "SES-GO",
+    "institution": "SES-GO",
+    "year": 2026,
+    "modality": "Acesso Direto",
+    "edition": "2026",
+    "booklet": "B",
+    "layout": "verbena",
+    "expected": 100,
+    "publication": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/Provas_gabaritos_finais_COREME_SES-2026-%23%24%23%24R.html",
+    "exam": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/provas/%C3%81REAS%20B%C3%81SICAS%20E%20ESPECIALIDADES%20DE%20ACESSO%20DIRETO%20R1%20TIPO%20B.pdf"
+    },
+    "key": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/gabaritos_finais/Gabarito%20Final%20-%20Acesso%20direto%20tipo%20B.pdf",
+      "status": "definitivo",
+      "local": "data/official_exams/SES_GO/SES_GO_2026_Gabarito_Final_-_Acesso_direto_tipo_B.pdf"
+    }
+  },
+  {
+    "id": "sesgo-2026-c",
+    "board": "SES-GO",
+    "institution": "SES-GO",
+    "year": 2026,
+    "modality": "Acesso Direto",
+    "edition": "2026",
+    "booklet": "C",
+    "layout": "verbena",
+    "expected": 100,
+    "publication": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/Provas_gabaritos_finais_COREME_SES-2026-%23%24%23%24R.html",
+    "exam": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/provas/%C3%81reas%20B%C3%A1sicas%20e%20Especialidades%20de%20Acesso%20Direto%20(R1)%20%20Tipo%20C.pdf"
+    },
+    "key": {
+      "url": "https://sistemas.institutoverbena.ufg.br/2026/coreme-ses/sistema/provas_gabaritos/gabaritos_finais/Gabarito%20Final%20-%20Acesso%20direto%20tipo%20C.pdf",
+      "status": "definitivo"
+    }
+  },
+  {
+    "id": "inep-2026-1-cad1",
+    "board": "INEP Revalida",
+    "institution": "INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos",
+    "year": 2026,
+    "modality": "Revalida",
+    "edition": "2026/1",
+    "booklet": "01",
+    "layout": "inep",
+    "expected": 100,
+    "publication": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/revalida/provas-e-gabaritos/2026",
+    "exam": {
+      "url": "https://download.inep.gov.br/revalida/provas_e_gabaritos/2026_1_caderno_1_.pdf",
+      "local": "data/official_exams/INEP_REVALIDA/INEP_2026_1_PV.pdf"
+    },
+    "key": {
+      "url": "https://download.inep.gov.br/revalida/provas_e_gabaritos/2026_1_gabarito_definitivo_caderno1.pdf",
+      "local": "data/official_exams/INEP_REVALIDA/INEP_2026_1_GB.pdf",
+      "reviewed_encoding_sha256": "04f62bb27d5caee9eaa19dbbe8e3fa286e614d70edae650d73291af89e6be7c9",
+      "status": "definitivo"
+    }
+  },
+  {
+    "id": "inep-2026-1-cad2",
+    "board": "INEP Revalida",
+    "institution": "INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos",
+    "year": 2026,
+    "modality": "Revalida",
+    "edition": "2026/1",
+    "booklet": "02",
+    "layout": "inep",
+    "expected": 100,
+    "publication": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/revalida/provas-e-gabaritos/2026",
+    "exam": {
+      "url": "https://download.inep.gov.br/revalida/provas_e_gabaritos/2026_1_caderno_2_.pdf",
+      "local": "data/official_exams/INEP_REVALIDA/INEP_2026_1_PV_2.pdf"
+    },
+    "key": {
+      "url": "https://download.inep.gov.br/revalida/provas_e_gabaritos/2026_1_gabarito_definitivo_caderno2.pdf",
+      "local": "data/official_exams/INEP_REVALIDA/INEP_2026_1_GB_2.pdf",
+      "reviewed_encoding_sha256": "54bbb1a1ba9bde8bf2d2c1eb4bf8b0c023b7779588c545c5ba23b61ea3c2020f",
+      "status": "definitivo"
+    }
+  },
+  {
+    "id": "inep-2026-2-cad1",
+    "board": "INEP Revalida",
+    "institution": "INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos",
+    "year": 2026,
+    "modality": "Revalida",
+    "edition": "2026/2",
+    "booklet": "01",
+    "layout": "inep",
+    "expected": 100,
+    "publication": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/revalida/provas-e-gabaritos/2026",
+    "exam": {
+      "url": "https://download.inep.gov.br/revalida/provas_e_gabaritos/2026_2_caderno_1.pdf",
+      "local": "data/official_exams/INEP_REVALIDA/INEP_2026_2_PV.pdf"
+    },
+    "key": {
+      "url": "https://download.inep.gov.br/revalida/provas_e_gabaritos/2026_2_gabarito_preliminar_caderno1.pdf",
+      "local": "data/official_exams/INEP_REVALIDA/INEP_2026_2_GB.pdf",
+      "status": "preliminar"
+    }
+  },
+  {
+    "id": "inep-2026-2-cad2",
+    "board": "INEP Revalida",
+    "institution": "INEP Revalida - Exame Nacional de Revalidação de Diplomas Médicos",
+    "year": 2026,
+    "modality": "Revalida",
+    "edition": "2026/2",
+    "booklet": "02",
+    "layout": "inep",
+    "expected": 100,
+    "publication": "https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/revalida/provas-e-gabaritos/2026",
+    "exam": {
+      "url": "https://download.inep.gov.br/revalida/provas_e_gabaritos/2026_2_caderno_2.pdf",
+      "local": "data/official_exams/INEP_REVALIDA/INEP_2026_2_PV_2.pdf"
+    },
+    "key": {
+      "url": "https://download.inep.gov.br/revalida/provas_e_gabaritos/2026_2_gabarito_preliminar_caderno2.pdf",
+      "local": "data/official_exams/INEP_REVALIDA/INEP_2026_2_GB_2.pdf",
+      "status": "preliminar"
+    }
+  }
+]

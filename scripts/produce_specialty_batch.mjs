@@ -39,6 +39,8 @@ const argWorkers = process.argv.find(a => a.startsWith('--workers='));
 const argNext = process.argv.find(a => a.startsWith('--next='));
 const argModel = process.argv.find(a => a.startsWith('--model='));
 const argPaid = process.argv.includes('--paid');
+const argLimit = process.argv.find(a => a.startsWith('--limit='));
+const LIMIT = argLimit ? parseInt(argLimit.split('=')[1], 10) : Infinity;
 
 const DB_PATH = argFile ? argFile.split('=')[1] : 'data/ginecologia_direto_questions.json';
 const SPECIALTY_NAME = argSpec ? argSpec.split('=')[1] : 'Ginecologia';
@@ -47,8 +49,8 @@ if (![1, 2, 3, 4, 6, 8, 10, 15, 20, 30, 40].includes(CONCURRENCY)) CONCURRENCY =
 const NEXT_SPECIALTY = argNext ? argNext.split('=')[1] : 'obstetricia';
 
 const isPreventiva = SPECIALTY_NAME.toLowerCase().includes('preventiva');
-const MODEL_NAME = argModel ? argModel.split('=')[1] : 'gemini-3.1-flash-lite';
-const USE_PAID = Boolean(argPaid || process.argv.includes('--paid'));
+const MODEL_NAME = argModel ? argModel.split('=')[1] : 'gemini-3.5-flash-lite';
+const USE_PAID = false; // TRAVA DE SEGURANÇA: Chave paga totalmente bloqueada (Custo R$ 0,00)
 
 const STATE_PATH = 'data/pipeline_progress_state.json';
 const SIGNAL_PATH = 'data/pipeline.signal';
@@ -95,7 +97,7 @@ function checkHasImage(q) {
 
 // Filtra apenas questões de texto puro com gabarito homologado sem comentários padrão-ouro
 const validAnswers = ['A', 'B', 'C', 'D', 'E', 'ANULADA'];
-const pendingQuestions = allQuestions.filter(q => {
+let pendingQuestions = allQuestions.filter(q => {
   const ans = (q.correctAnswer || q.correct_answer || q.gabarito || '').toUpperCase().trim();
   const hasValidAns = validAnswers.includes(ans) || q.is_anulada;
   const comm = q.commentary || '';
@@ -103,6 +105,9 @@ const pendingQuestions = allQuestions.filter(q => {
   const noImg = !checkHasImage(q);
   return hasValidAns && needsComm && noImg;
 });
+if (LIMIT < pendingQuestions.length) {
+  pendingQuestions = pendingQuestions.slice(0, LIMIT);
+}
 
 const totalToProcess = pendingQuestions.length;
 console.log(`================================================================================`);
@@ -176,6 +181,8 @@ function updateStateFile(currentQ = null, overrideStatus = null) {
       } : {
         costUSD: 0,
         costBRL: 0,
+        totalCostUSD: 0,
+        totalCostBRL: 0,
         tier: 'Gratuito'
       }
     },
@@ -231,7 +238,7 @@ async function processQuestion(q) {
   updateStateFile({ code: q.code, id: q.id, tema: q.tema, especialidade: q.especialidade });
 
   try {
-    const res = await solveQuestionDeep(q, SPECIALTY_NAME, MODEL_NAME, USE_PAID);
+    const res = await solveQuestionDeep(q, SPECIALTY_NAME, null, false);
     if (!res || !res.commentary) {
       throw new Error('Retorno nulo ou inválido do motor de IA.');
     }
@@ -359,7 +366,7 @@ async function runPipeline() {
     obstetricia: { file: 'data/obstetricia_direto_questions.json', name: 'Obstetrícia', next: 'pediatria' },
     pediatria: { file: 'data/pediatria_direto_questions.json', name: 'Pediatria', next: 'cirurgia' },
     cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia', next: 'clinica' },
-    clinica: { file: 'data/clinica_medica_final_questions.json', name: 'Clínica Médica', next: 'preventiva' },
+    clinica: { file: 'data/clinica_direto_questions.json', name: 'Clínica Médica', next: 'none' },
     preventiva: { file: 'data/medicina_preventiva_final_questions.json', name: 'Medicina Preventiva', next: 'none' }
   };
 

@@ -10,8 +10,8 @@ if (fs.existsSync('.env.local')) {
   });
 }
 
-// CHAVE PAGA HOMOLOGADA PELO USUÁRIO (Gemini 3.1 Flash Lite)
-export const PAID_KEY = env.GEMINI_API_KEY_PAID || '';
+// CHAVE PAGA TOTALMENTE BLOQUEADA/ISOLADA POR DETERMINAÇÃO DO USUÁRIO (Custo R$ 0,00 Garantido)
+export const PAID_KEY = '';
 
 const paidValues = new Set([
   env.GEMINI_API_KEY_PAID,
@@ -217,10 +217,8 @@ export function getSpecialtyGuideline(specialty, tema) {
 // Modelos prioritários em rotação gratuita com fallback automático
 export const AVAILABLE_MODELS = [
   'gemini-3.5-flash-lite',
-  'gemini-3.1-flash-lite',
   'gemini-flash-lite-latest',
-  'gemini-3.5-flash',
-  'gemini-3.6-flash'
+  'gemini-3.1-flash-lite'
 ];
 
 const exhaustedPairs = new Set();
@@ -264,7 +262,8 @@ export function markPairExhausted(keyIdx, model, reason = '') {
  * com suporte multimodal nativo, teto de 650 caracteres e estruturação de assertivas.
  */
 export async function solveQuestionDeep(question, specialtyOverride = null, modelOverride = null, forcePaid = false) {
-  const shouldUsePaid = Boolean(forcePaid || process.argv.includes('--paid'));
+  // TRAVA DE SEGURANÇA MÁXIMA: Garante isolamento total da chave paga e custo R$ 0,00 estrito
+  const shouldUsePaid = false;
   const formattedOptions = (question.options || [])
     .map(opt => `${opt.letter}) ${opt.text}`)
     .join('\n');

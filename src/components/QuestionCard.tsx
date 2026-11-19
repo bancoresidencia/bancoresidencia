@@ -159,7 +159,7 @@ const isOptionImage = (text?: string): boolean => {
   if (!text) return false;
   const t = text.trim();
   return (
-    (t.startsWith('http://') || t.startsWith('https://') || t.startsWith('/images/')) &&
+    (t.startsWith('http://') || t.startsWith('https://') || t.startsWith('/images/') || t.startsWith('/storage/questoes/')) &&
     (/\.(webp|png|jpe?g|gif|svg)(\?.*)?$/i.test(t) ||
       t.includes('/storage/v1/object/public/') ||
       t.includes('/alternativas/'))
@@ -1158,7 +1158,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
         return;
       }
 
-      // Ignora se o modal de salvar em pasta estiver aberto
+      if (activeZoomImage) {
+        if (e.key === 'Escape') setActiveZoomImage(null);
+        return;
+      }
       if (isFolderModalOpen) return;
 
       // Tecla Backspace ou Delete: Riscar / Cortar a alternativa selecionada pelo teclado (ou sob o mouse)
@@ -1257,7 +1260,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isAnswered, pendingSelected, question, isFolderModalOpen, hoveredOptionLetter]);
+  }, [isAnswered, pendingSelected, question, isFolderModalOpen, hoveredOptionLetter, activeZoomImage]);
 
   // Mapeamento dinâmico de 5 níveis de fontes ergonômicas com alta visibilidade médica
   const statementSizeClass =
@@ -1661,6 +1664,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
         <div className="space-y-3 pt-2">
           {activeQuestion.options.map((option, optIdx) => {
             const optLetter = (option.letter || (['A', 'B', 'C', 'D', 'E'][optIdx] as 'A' | 'B' | 'C' | 'D' | 'E') || 'A') as 'A' | 'B' | 'C' | 'D' | 'E';
+            const optionImageUrl = isOptionImage(option.text) ? option.text.trim() : null;
             const isEliminated = !isAnswered && !!eliminatedOptions[optLetter];
             const isPending = !isEliminated && pendingSelected === optLetter;
             const isCorrect = optLetter === resolvedCorrectAnswer;
@@ -1780,18 +1784,32 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     </span>
 
                     {/* Conteúdo da Alternativa: Imagem ou Texto */}
-                    {isOptionImage(option.text) ? (
+                    {optionImageUrl ? (
                       <div className="flex-1 pt-0.5">
-                        <div className="inline-block rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 shadow-xs max-w-sm sm:max-w-md">
+                        <div className="relative inline-block rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 shadow-xs max-w-sm sm:max-w-md">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
-                            src={option.text.trim()}
+                            src={optionImageUrl}
                             alt={`Alternativa ${optLetter}`}
                             className={`max-h-56 max-w-full object-contain rounded-lg transition-transform ${
                               isEliminated ? 'opacity-40 grayscale' : 'hover:scale-102'
                             }`}
                             loading="lazy"
                           />
+                          <button
+                            type="button"
+                            aria-label={`Ampliar imagem da alternativa ${optLetter}`}
+                            onClick={(event) => {
+                              event.stopPropagation();
+                              setActiveZoomImage(optionImageUrl);
+                            }}
+                            onKeyDown={(event) => {
+                              if (event.key === 'Enter') event.stopPropagation();
+                            }}
+                            className="absolute bottom-2 right-2 grid size-9 cursor-zoom-in place-items-center rounded-full bg-black/80 text-white hover:bg-black focus-visible:outline-2 focus-visible:outline-white"
+                          >
+                            <ZoomIn aria-hidden="true" className="size-4" />
+                          </button>
                         </div>
                       </div>
                     ) : (

@@ -23,12 +23,12 @@
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="max-width:560px; border:1px solid #d9e5f6; border-radius:24px; overflow:hidden;">
           <tr>
             <td class="email-content" align="center" style="padding:48px 48px 50px;">
-              <img src="{{ .SiteURL }}/hippocampus-email.png" width="232" height="63" alt="Hippocampus Residência" style="display:block; width:232px; height:auto; max-width:100%; margin:0 auto; border:0; color:#17243a; font-weight:bold;">
+              <img src="https://bancoresidencia-kappa.vercel.app/hippocampus-email.png" width="232" height="63" alt="Hippocampus Residência" style="display:block; width:232px; height:auto; max-width:100%; margin:0 auto; border:0; color:#17243a; font-weight:bold;">
               <h1 class="email-title" style="margin:30px 0 16px; color:#111e36; font-size:40px; font-weight:700; line-height:1.1; letter-spacing:-0.035em;">Confirme seu e-mail</h1>
               <p style="max-width:360px; margin:0 auto 32px; color:#475569; font-size:17px; line-height:1.65;">Bem-vindo ao <strong>Hippocampus Residência</strong>! Confirme seu endereço de e-mail para acessar sua conta.</p>
               <table role="presentation" cellpadding="0" cellspacing="0" align="center">
                 <tr><td align="center" bgcolor="#1d4ed8" style="border-radius:12px; mso-padding-alt:16px 32px;">
-                  <a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}" style="display:inline-block; padding:16px 32px; color:#ffffff; font-family:'Inter Display',Inter,'Segoe UI',Arial,sans-serif; font-size:16px; line-height:1.25; font-weight:700; text-decoration:none; border-radius:12px;">Confirmar meu e-mail</a>
+                  <a href='{{ if eq .SiteURL "http://127.0.0.1:3000" }}http://127.0.0.1:3000{{ else }}https://bancoresidencia-kappa.vercel.app{{ end }}/auth/confirm?token_hash={{ .TokenHash }}' style="display:inline-block; padding:16px 32px; color:#ffffff; font-family:'Inter Display',Inter,'Segoe UI',Arial,sans-serif; font-size:16px; line-height:1.25; font-weight:700; text-decoration:none; border-radius:12px;">Confirmar meu e-mail</a>
                 </td></tr>
               </table>
             </td>

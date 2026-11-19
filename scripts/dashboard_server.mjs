@@ -23,7 +23,7 @@ try {
 const SPECIALTY_MAP = {
   preventiva: { file: 'data/medicina_preventiva_all_pending.json', name: 'Medicina Preventiva', next: 'none' },
   cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia', next: 'clinica' },
-  clinica: { file: 'data/clinica_medica_final_questions.json', name: 'Clínica Médica', next: 'cirurgia' },
+  clinica: { file: 'data/clinica_direto_questions.json', name: 'Clínica Médica', next: 'none' },
   pediatria: { file: 'data/pediatria_direto_questions.json', name: 'Pediatria', next: 'clinica' },
   ginecologia: { file: 'data/ginecologia_direto_questions.json', name: 'Ginecologia', next: 'obstetricia' },
   obstetricia: { file: 'data/obstetricia_direto_questions.json', name: 'Obstetrícia', next: 'pediatria' }
@@ -68,8 +68,8 @@ function getStatus() {
     } catch { }
   }
 
-  const sessUSD = (state.tokens && state.tokens.pricing && state.tokens.pricing.totalCostUSD) ? state.tokens.pricing.totalCostUSD : 0;
-  const sessBRL = (state.tokens && state.tokens.pricing && state.tokens.pricing.totalCostBRL) ? state.tokens.pricing.totalCostBRL : 0;
+  const sessUSD = (state.tokens && state.tokens.pricing) ? (state.tokens.pricing.totalCostUSD ?? state.tokens.pricing.costUSD ?? 0) : 0;
+  const sessBRL = (state.tokens && state.tokens.pricing) ? (state.tokens.pricing.totalCostBRL ?? state.tokens.pricing.costBRL ?? 0) : 0;
   const sessTokens = (state.tokens && state.tokens.totalTokens) ? state.tokens.totalTokens : 0;
 
   state.cumulativeKeySpend = {
@@ -138,7 +138,7 @@ function getMacroStats() {
   const obs = getSpec('Obstetrícia');
   const ped = getSpec('Pediatria');
   const prev = getSpec('Medicina Preventiva e Social');
-  const cir = getSpec('Cirurgia');
+  const cir = specsMap['Cirurgia Geral'] || specsMap['Cirurgia'] || { done: 0, total: 1 };
   const clm = getSpec('Clínica Médica');
 
   const pct = (d, t) => t > 0 ? parseFloat(((d / t) * 100).toFixed(1)) : 0;
@@ -182,7 +182,7 @@ function getMacroStats() {
       coveragePct: pct(obs.done, obs.total),
     },
     {
-      name: 'Cirurgia',
+      name: 'Cirurgia Geral',
       key: 'cirurgia',
       status: `${pct(cir.done, cir.total).toFixed(1).replace('.', ',')}% OURO`,
       doneCount: cir.done,
@@ -372,8 +372,8 @@ const server = http.createServer((req, res) => {
 
       const specKey = url.searchParams.get('specialty') || 'preventiva';
       const spec = SPECIALTY_MAP[specKey] || SPECIALTY_MAP['preventiva'];
-      const parsedWorkers = parseInt(url.searchParams.get('workers') || '20', 10);
-      const safeWorkers = Number.isFinite(parsedWorkers) ? Math.min(32, Math.max(1, parsedWorkers)) : 20;
+      const parsedWorkers = parseInt(url.searchParams.get('workers') || '4', 10);
+      const safeWorkers = Number.isFinite(parsedWorkers) ? Math.min(10, Math.max(1, parsedWorkers)) : 4;
       const rawNext = url.searchParams.get('next') || spec.next;
       const safeNextSpec = (rawNext === 'none' || Object.prototype.hasOwnProperty.call(SPECIALTY_MAP, rawNext))
         ? rawNext
@@ -385,8 +385,7 @@ const server = http.createServer((req, res) => {
         'scripts/produce_specialty_batch.mjs',
         `--file=${spec.file}`,
         `--specialty=${spec.name}`,
-        '--model=gemini-3.1-flash-lite',
-        '--paid',
+        '--model=gemini-3.5-flash-lite',
         `--workers=${safeWorkers}`,
         `--next=${safeNextSpec}`
       ], {
@@ -396,7 +395,7 @@ const server = http.createServer((req, res) => {
 
       return sendJson(res, {
         ok: true,
-        message: `Esteira iniciada para ${spec.name} com ${safeWorkers} workers em gemini-3.1-flash-lite!`
+        message: `Esteira iniciada para ${spec.name} com ${safeWorkers} workers em gemini-3.5-flash-lite (Modo 100% Gratuito - Custo R$ 0,00)!`
       });
     }
 
@@ -439,8 +438,8 @@ function renderDashboardHtml() {
   const initialProcessed = state.processedCount || 0;
   const initialRemaining = Math.max(0, initialTotal - initialProcessed);
   const initialPct = state.progressPercent || ((initialProcessed / initialTotal) * 100).toFixed(1);
-  const initialCostUSD = state.tokens && state.tokens.pricing ? state.tokens.pricing.totalCostUSD.toFixed(2) : '0.00';
-  const initialCostBRL = state.tokens && state.tokens.pricing ? state.tokens.pricing.totalCostBRL.toFixed(2) : '0.00';
+  const initialCostUSD = (state.tokens?.pricing?.totalCostUSD ?? state.tokens?.pricing?.costUSD ?? 0).toFixed(2);
+  const initialCostBRL = (state.tokens?.pricing?.totalCostBRL ?? state.tokens?.pricing?.costBRL ?? 0).toFixed(2);
   const initialTokens = state.tokens ? state.tokens.totalTokens.toLocaleString('pt-BR') : '0';
   const initialVelocity = state.velocity ? state.velocity.questionsPerMinute.toFixed(1) : '340.0';
   const initialSuccesses = state.successCount || initialProcessed;
@@ -1067,9 +1066,11 @@ function renderDashboardHtml() {
           if (elSess) elSess.textContent = '$' + sUSD + ' (R$ ' + sBRL + ')';
         } else if (d.tokens) {
           document.getElementById('cardTokens').textContent = (d.tokens.totalTokens || 0).toLocaleString('pt-BR');
-          if (d.tokens.pricing && d.tokens.pricing.totalCostUSD !== undefined) {
-            document.getElementById('cardCostVal').textContent = '$' + d.tokens.pricing.totalCostUSD.toFixed(2);
-            document.getElementById('cardCostTier').textContent = 'R$ ' + d.tokens.pricing.totalCostBRL.toFixed(2);
+          if (d.tokens.pricing) {
+            const costU = d.tokens.pricing.totalCostUSD ?? d.tokens.pricing.costUSD ?? 0;
+            const costB = d.tokens.pricing.totalCostBRL ?? d.tokens.pricing.costBRL ?? 0;
+            document.getElementById('cardCostVal').textContent = '$' + costU.toFixed(2);
+            document.getElementById('cardCostTier').textContent = 'R$ ' + costB.toFixed(2);
           }
         }
 
