@@ -450,8 +450,8 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
                 setCouponInput(e.target.value.toUpperCase());
                 setCouponFeedback(null);
               }}
-              placeholder="Digite o cupom (ex: RESIDENCIA10)"
-              className="flex-1 px-3.5 py-2 rounded-xl border border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 text-xs font-mono font-bold uppercase tracking-wider text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Cupom (ex: RESIDENCIA10)"
+              className="flex-1 min-w-0 px-3.5 py-2 rounded-xl border border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 text-base sm:text-xs font-mono font-bold uppercase tracking-wider text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button
               type="submit"
@@ -490,21 +490,21 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
       )}
 
       {/* Seletor de Meio de Pagamento */}
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-2.5 sm:gap-3">
         <button
           type="button"
           onClick={() => {
             setPaymentMethod('pix');
             setErrorMessage(null);
           }}
-          className={`py-3 px-4 rounded-2xl border text-sm font-bold flex items-center justify-center gap-2.5 transition-all cursor-pointer ${
+          className={`py-3 px-2.5 sm:px-4 rounded-2xl border text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 sm:gap-2.5 transition-all touch-manipulation cursor-pointer ${
             paymentMethod === 'pix'
               ? 'border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 shadow-sm'
               : 'border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/40'
           }`}
         >
-          <QrCode className="w-4 h-4" />
-          PIX (Imediato)
+          <QrCode className="w-4 h-4 shrink-0" />
+          <span className="truncate">PIX (Imediato)</span>
         </button>
 
         <button
@@ -513,14 +513,14 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
             setPaymentMethod('card');
             setErrorMessage(null);
           }}
-          className={`py-3 px-4 rounded-2xl border text-sm font-bold flex items-center justify-center gap-2.5 transition-all cursor-pointer ${
+          className={`py-3 px-2.5 sm:px-4 rounded-2xl border text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 sm:gap-2.5 transition-all touch-manipulation cursor-pointer ${
             paymentMethod === 'card'
               ? 'border-indigo-500 bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 shadow-sm'
               : 'border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800/40'
           }`}
         >
-          <CreditCard className="w-4 h-4" />
-          Cartão de Crédito
+          <CreditCard className="w-4 h-4 shrink-0" />
+          <span className="truncate">Cartão<span className="hidden xs:inline"> de Crédito</span></span>
         </button>
       </div>
 
@@ -542,10 +542,11 @@ export const MercadoPagoCheckout: React.FC<MercadoPagoCheckoutProps> = ({
                 </label>
                 <input
                   type="text"
+                  inputMode="numeric"
                   placeholder="000.000.000-00"
                   value={cpf}
                   onChange={handleCpfChange}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-white text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
                 />
               </div>
 

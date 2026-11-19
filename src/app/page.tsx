@@ -140,7 +140,10 @@ function HomeContent() {
 
   // Visitante não autenticado: Landing Page completa
   return (
-    <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-sans">
+    <div
+      className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-inter"
+      style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
+    >
       <LandingPage
         onOpenAuth={(mode = 'login', planTitle) => {
           handleOpenAuth(mode, planTitle);

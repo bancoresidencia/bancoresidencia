@@ -1,0 +1,260 @@
+{
+  "source": "SPL/NAC Multimodal Brain Atlas (Harvard Medical School)",
+  "license": "3D Slicer Open-Source License",
+  "version": 7,
+  "glbBytes": 5130048,
+  "papezCenter": [
+    -0.22545,
+    -0.10995,
+    0.09099
+  ],
+  "groups": {
+    "papez_cingulate": {
+      "vertices": 3341,
+      "triangles": 6839,
+      "centroid": [
+        -0.12597,
+        0.18713,
+        0.10151
+      ],
+      "boundsMin": [
+        -1.1706,
+        -0.406,
+        -0.04148
+      ],
+      "boundsMax": [
+        0.71969,
+        0.58523,
+        0.27509
+      ]
+    },
+    "papez_callosum": {
+      "vertices": 5259,
+      "triangles": 10520,
+      "centroid": [
+        -0.07971,
+        0.04486,
+        0.00338
+      ],
+      "boundsMin": [
+        -0.98955,
+        -0.32526,
+        -0.43792
+      ],
+      "boundsMax": [
+        0.70258,
+        0.36394,
+        0.34478
+      ]
+    },
+    "papez_parahippocampal": {
+      "vertices": 1408,
+      "triangles": 2848,
+      "centroid": [
+        0.00126,
+        -0.61695,
+        0.40405
+      ],
+      "boundsMin": [
+        -0.49223,
+        -0.80514,
+        0.1854
+      ],
+      "boundsMax": [
+        0.44589,
+        -0.32671,
+        0.57822
+      ]
+    },
+    "papez_thalamus": {
+      "vertices": 1921,
+      "triangles": 4919,
+      "centroid": [
+        0.0336,
+        -0.15612,
+        0.20291
+      ],
+      "boundsMin": [
+        -0.29516,
+        -0.40145,
+        0.02221
+      ],
+      "boundsMax": [
+        0.35023,
+        0.10162,
+        0.41663
+      ]
+    },
+    "papez_mammillary": {
+      "vertices": 145,
+      "triangles": 281,
+      "centroid": [
+        -0.21855,
+        -0.40011,
+        0.05502
+      ],
+      "boundsMin": [
+        -0.26551,
+        -0.43932,
+        -0.02316
+      ],
+      "boundsMax": [
+        -0.18134,
+        -0.36029,
+        0.13232
+      ]
+    },
+    "papez_fornix": {
+      "vertices": 1462,
+      "triangles": 3014,
+      "centroid": [
+        -0.04669,
+        -0.1487,
+        0.03041
+      ],
+      "boundsMin": [
+        -0.4866,
+        -0.36467,
+        -0.40531
+      ],
+      "boundsMax": [
+        0.41438,
+        0.1008,
+        0.43864
+      ]
+    },
+    "hippocampus": {
+      "vertices": 1917,
+      "triangles": 3823,
+      "centroid": [
+        0.06822,
+        -0.46522,
+        0.40612
+      ],
+      "boundsMin": [
+        -0.27819,
+        -0.6584,
+        0.18461
+      ],
+      "boundsMax": [
+        0.51409,
+        -0.25528,
+        0.61991
+      ]
+    },
+    "cortex_left_frontal": {
+      "vertices": 17572,
+      "triangles": 37113,
+      "centroid": [
+        -0.54333,
+        0.35392,
+        0.45345
+      ],
+      "boundsMin": [
+        -1.52587,
+        -0.47003,
+        -0.05327
+      ],
+      "boundsMax": [
+        0.90252,
+        1.0198,
+        1.05008
+      ]
+    },
+    "cortex_left_parietal": {
+      "vertices": 18624,
+      "triangles": 40500,
+      "centroid": [
+        0.87181,
+        -0.04161,
+        0.42632
+      ],
+      "boundsMin": [
+        -0.17306,
+        -0.89937,
+        -0.0997
+      ],
+      "boundsMax": [
+        1.56,
+        0.86366,
+        1.07846
+      ]
+    },
+    "cortex_left_temporal": {
+      "vertices": 11417,
+      "triangles": 23744,
+      "centroid": [
+        0.13901,
+        -0.3923,
+        0.7539
+      ],
+      "boundsMin": [
+        -0.78174,
+        -0.92528,
+        0.19994
+      ],
+      "boundsMax": [
+        1.11405,
+        0.25655,
+        1.12732
+      ]
+    },
+    "cortex_right_frontal": {
+      "vertices": 17905,
+      "triangles": 38098,
+      "centroid": [
+        -0.64648,
+        0.29185,
+        -0.39685
+      ],
+      "boundsMin": [
+        -1.56,
+        -0.47443,
+        -1.03334
+      ],
+      "boundsMax": [
+        0.6812,
+        0.96069,
+        0.1039
+      ]
+    },
+    "cortex_right_parietal": {
+      "vertices": 20865,
+      "triangles": 44792,
+      "centroid": [
+        0.64224,
+        -0.01812,
+        -0.47039
+      ],
+      "boundsMin": [
+        -1.11582,
+        -0.84461,
+        -1.09844
+      ],
+      "boundsMax": [
+        1.48927,
+        0.87463,
+        0.09153
+      ]
+    },
+    "cortex_right_temporal": {
+      "vertices": 12621,
+      "triangles": 26199,
+      "centroid": [
+        -0.03915,
+        -0.48566,
+        -0.66979
+      ],
+      "boundsMin": [
+        -0.89998,
+        -1.0198,
+        -1.12732
+      ],
+      "boundsMax": [
+        0.99278,
+        0.19587,
+        -0.12572
+      ]
+    }
+  }
+}

@@ -317,9 +317,9 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                     )}
                   </button>
 
-                  {/* Menu Dropdown Padronizado */}
+                  {/* Menu Dropdown Padronizado (seguro contra overflow em telas estreitas) */}
                   {profileDropdownOpen && (
-                    <div className="absolute right-0 top-full mt-2 w-68 max-w-[calc(100vw-24px)] bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] rounded-2xl border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
+                    <div className="fixed left-3 right-3 top-[calc(4.25rem+env(safe-area-inset-top,0px))] sm:absolute sm:left-auto sm:right-0 sm:top-full sm:mt-2 sm:w-68 bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] rounded-2xl border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] shadow-2xl p-3 z-50 animate-in fade-in zoom-in-95 duration-150">
                       <div className="flex items-center gap-3 p-2 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80">
                         {user.avatarUrl ? (
                           // eslint-disable-next-line @next/next/no-img-element
@@ -469,11 +469,11 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
       {/* Barra de Navegação Inferior Fixa para Dispositivos Móveis */}
       <nav
         aria-label="Navegação inferior mobile"
-        className="fixed bottom-0 left-0 right-0 z-40 bg-[var(--bg-card,#ffffff)]/95 dark:bg-[var(--card,#121215)]/95 backdrop-blur-xl border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 px-1.5 pt-1 pb-[max(env(safe-area-inset-bottom,0px),0.45rem)] flex items-center justify-around md:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_-4px_24px_rgba(0,0,0,0.55)] transition-colors select-none touch-manipulation"
+        className="fixed bottom-0 left-0 right-0 z-40 bg-[var(--bg-card,#ffffff)]/95 dark:bg-[var(--card,#121215)]/95 backdrop-blur-xl border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80 px-1 pt-1 pb-[max(env(safe-area-inset-bottom,0px),0.45rem)] flex items-center justify-around gap-0.5 md:hidden shadow-[0_-4px_20px_rgba(0,0,0,0.08)] dark:shadow-[0_-4px_24px_rgba(0,0,0,0.55)] transition-colors select-none touch-manipulation"
       >
         <Link
           href="/dashboard"
-          className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] active:scale-95 touch-manipulation ${pathname === '/dashboard' || pathname === '/'
+          className={`flex-1 min-w-0 flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-xl transition-all cursor-pointer min-h-[44px] active:scale-95 touch-manipulation ${pathname === '/dashboard' || pathname === '/'
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
             }`}
@@ -482,13 +482,13 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             backgroundColor: pathname === '/dashboard' || pathname === '/' ? accentConfig.bgRgba : undefined
           }}
         >
-          <LayoutDashboard className="w-5 h-5 stroke-[1.9]" />
-          <span className="text-[10px] tracking-tight leading-none">Início</span>
+          <LayoutDashboard className="w-5 h-5 stroke-[1.9] shrink-0" />
+          <span className="text-[10px] tracking-tight leading-none truncate max-w-full">Início</span>
         </Link>
 
         <Link
           href="/questoes"
-          className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] active:scale-95 touch-manipulation ${pathname?.startsWith('/questoes')
+          className={`flex-1 min-w-0 flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-xl transition-all cursor-pointer min-h-[44px] active:scale-95 touch-manipulation ${pathname?.startsWith('/questoes')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
             }`}
@@ -497,14 +497,14 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             backgroundColor: pathname?.startsWith('/questoes') ? accentConfig.bgRgba : undefined
           }}
         >
-          <FileQuestion className="w-5 h-5 stroke-[1.9]" />
-          <span className="text-[10px] tracking-tight leading-none">Questões</span>
+          <FileQuestion className="w-5 h-5 stroke-[1.9] shrink-0" />
+          <span className="text-[10px] tracking-tight leading-none truncate max-w-full">Questões</span>
         </Link>
 
         <Link
           href="/caderno-de-erros"
           prefetch={false}
-          className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] relative active:scale-95 touch-manipulation ${pathname?.startsWith('/caderno-de-erros')
+          className={`flex-1 min-w-0 flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-xl transition-all cursor-pointer min-h-[44px] relative active:scale-95 touch-manipulation ${pathname?.startsWith('/caderno-de-erros')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
             }`}
@@ -514,18 +514,18 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
           }}
         >
           <div className="relative">
-            <AlertOctagon className="w-5 h-5 stroke-[1.9]" />
+            <AlertOctagon className="w-5 h-5 stroke-[1.9] shrink-0" />
             {pendingErrorsCount > 0 && (
               <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-rose-500 ring-2 ring-white dark:ring-[#09090b]" />
             )}
           </div>
-          <span className="text-[10px] tracking-tight leading-none">Erros</span>
+          <span className="text-[10px] tracking-tight leading-none truncate max-w-full">Erros</span>
         </Link>
 
         <Link
           href="/flashcards"
           prefetch={false}
-          className={`flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] active:scale-95 touch-manipulation ${pathname?.startsWith('/flashcards')
+          className={`flex-1 min-w-0 flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-xl transition-all cursor-pointer min-h-[44px] active:scale-95 touch-manipulation ${pathname?.startsWith('/flashcards')
               ? 'font-bold'
               : 'text-zinc-500 dark:text-zinc-400'
             }`}
@@ -534,18 +534,18 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             backgroundColor: pathname?.startsWith('/flashcards') ? accentConfig.bgRgba : undefined
           }}
         >
-          <Brain className="w-5 h-5 stroke-[1.9]" />
-          <span className="text-[10px] tracking-tight leading-none">Flashcards</span>
+          <Brain className="w-5 h-5 stroke-[1.9] shrink-0" />
+          <span className="text-[10px] tracking-tight leading-none truncate max-w-full">Flashcards</span>
         </Link>
 
         <button
           type="button"
           onClick={() => setMobileMenuOpen(true)}
-          className="flex flex-col items-center justify-center gap-0.5 py-1 px-3 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white active:scale-95 touch-manipulation"
+          className="flex-1 min-w-0 flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-xl transition-all cursor-pointer min-h-[44px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white active:scale-95 touch-manipulation"
           aria-label="Abrir menu completo"
         >
-          <Menu className="w-5 h-5 stroke-[1.9]" />
-          <span className="text-[10px] tracking-tight leading-none">Mais</span>
+          <Menu className="w-5 h-5 stroke-[1.9] shrink-0" />
+          <span className="text-[10px] tracking-tight leading-none truncate max-w-full">Mais</span>
         </button>
       </nav>
 

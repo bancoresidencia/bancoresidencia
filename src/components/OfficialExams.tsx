@@ -347,14 +347,14 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
 
               <div className="h-4 w-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
 
-              <div className="flex items-center gap-2 text-xs">
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs min-w-0">
                 <span className="text-slate-400">Modalidade:</span>
                 <span className="font-bold text-slate-700 dark:text-slate-300 capitalize">
                   {selectedModality === 'todas' ? 'Todas as Provas' : selectedModality.replace('_', ' ')}
                 </span>
                 <span className="text-slate-400">›</span>
                 <span
-                  className="font-black"
+                  className="font-black truncate max-w-[160px] sm:max-w-none"
                   style={{ color: accentConfig.primaryHex }}
                 >
                   {selectedInstitution.shortName}
@@ -403,7 +403,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
             </div>
 
             {/* Badges estilizados com alto contraste no modo escuro */}
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
               <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700/80">
                 {selectedInstitution.modalityYearsCount ?? selectedInstitution.years.length} Anos Disponíveis
               </span>
@@ -504,7 +504,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                       </div>
 
                       {/* Botões de Ação Imediata com Estilo Escuro e Alto Contraste */}
-                      <div className="grid grid-cols-2 gap-2.5 pt-3 border-t border-slate-100 dark:border-slate-800/60">
+                      <div className="grid grid-cols-1 xs:grid-cols-2 gap-2.5 pt-3 border-t border-slate-100 dark:border-slate-800/60">
                         <button
                           type="button"
                           onClick={() =>
@@ -519,11 +519,11 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                               'exam'
                             )
                           }
-                          className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-2xl text-xs font-bold text-white transition-all shadow-xs hover:opacity-95 cursor-pointer"
+                          className="min-h-[42px] flex items-center justify-center gap-2 py-2.5 px-3 rounded-2xl text-xs font-bold text-white transition-all shadow-xs hover:opacity-95 cursor-pointer touch-manipulation"
                           style={{ backgroundColor: accentConfig.primaryHex }}
                         >
-                          <Play className="w-3.5 h-3.5 fill-white" />
-                          <span>Modo Prova</span>
+                          <Play className="w-3.5 h-3.5 fill-white shrink-0" />
+                          <span className="whitespace-nowrap">Modo Prova</span>
                         </button>
 
                         <button
@@ -540,10 +540,10 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                               'study'
                             )
                           }
-                          className="flex items-center justify-center gap-2 py-2.5 px-3 rounded-2xl text-xs font-bold bg-slate-100 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+                          className="min-h-[42px] flex items-center justify-center gap-2 py-2.5 px-3 rounded-2xl text-xs font-bold bg-slate-100 dark:bg-slate-800/90 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer touch-manipulation"
                         >
-                          <BookOpen className="w-3.5 h-3.5" />
-                          <span>Estudo Comentado</span>
+                          <BookOpen className="w-3.5 h-3.5 shrink-0" />
+                          <span className="whitespace-nowrap">Estudo Comentado</span>
                         </button>
                       </div>
                     </div>

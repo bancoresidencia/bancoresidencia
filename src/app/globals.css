@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+/* Ocultação universal do botão flutuante de DevTools do Next.js */
+#next-logo,
+[data-nextjs-dev-tools-button],
+[data-next-mark="true"],
+nextjs-portal,
+div:has(> #next-logo) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 .font-bebas {
@@ -97,6 +109,27 @@
 
 .animate-apple-fade-up {
   animation: appleFadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Revelação por rolagem (Scroll Reveal via Intersection Observer) */
+.reveal-up {
+  opacity: 0;
+  transform: translate3d(0, 22px, 0);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
 }
 
 /* Flutuação suave em repouso */

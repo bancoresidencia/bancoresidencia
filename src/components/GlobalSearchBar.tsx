@@ -254,9 +254,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
           onFocus={() => setIsOpen(true)}
           onKeyDown={handleKeyDown}
           placeholder={placeholder}
-          className={`w-full min-w-0 bg-transparent font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none truncate ${
-            isOpen ? 'text-base sm:text-sm' : 'text-xs sm:text-sm'
-          }`}
+          className="w-full min-w-0 bg-transparent text-base sm:text-sm font-medium text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none truncate"
         />
 
         {query ? (

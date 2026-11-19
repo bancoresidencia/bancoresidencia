@@ -57,12 +57,12 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
           />
         </button>
 
-        {/* Dropdown Expandido com as Opções de Modo, Cores e Personalizar Layout */}
+        {/* Dropdown Expandido com as Opções de Modo, Cores e Personalizar Layout (seguro no mobile) */}
         {isOpen && (
-          <div className="absolute right-0 top-full mt-2 w-68 p-3.5 bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl shadow-xl z-50 space-y-3.5 animate-in fade-in zoom-in-95 duration-150">
-            {/* Modo Claro / Escuro (Segmented Control sem ambiguidade) */}
-            <div className="space-y-2 pb-3 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 block">
+          <div className="fixed left-3 right-3 top-[calc(4.25rem+env(safe-area-inset-top,0px))] sm:absolute sm:left-auto sm:right-0 sm:top-full sm:mt-2 sm:w-64 p-3 bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl shadow-xl z-50 space-y-3 animate-in fade-in zoom-in-95 duration-150">
+            {/* Modo Claro / Escuro */}
+            <div className="flex items-center justify-between pb-2.5 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
                 Aparência
               </span>
               <div
@@ -216,7 +216,7 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
       </div>
 
       <div>
-        <div className="grid grid-cols-7 gap-1.5">
+        <div className="grid grid-cols-4 sm:grid-cols-7 gap-1.5">
           {accentList.map((item) => {
             const isSelected = accent === item.id;
             return (

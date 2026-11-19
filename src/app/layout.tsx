@@ -64,6 +64,7 @@ export default function RootLayout({
       className={`${inter.variable} font-sans h-full antialiased dark`}
       suppressHydrationWarning
     >
+      <head />
       <body className="min-h-full flex flex-col font-sans transition-colors duration-200">
         <Script
           id="banco-theme-init"
@@ -72,7 +73,9 @@ export default function RootLayout({
             __html: `
               (function() {
                 try {
-                  document.documentElement.classList.add('hippo-splash-active');
+                  if (typeof window !== 'undefined' && !window.location.pathname.includes('simulado-priapismo')) {
+                    document.documentElement.classList.add('hippo-splash-active');
+                  }
                   var m = localStorage.getItem('banco_theme_mode');
                   if (m === 'light') {
                     document.documentElement.classList.remove('dark');

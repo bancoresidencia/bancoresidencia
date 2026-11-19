@@ -84,10 +84,10 @@ export const MockExams: React.FC<MockExamsProps> = ({ onStartExam }) => {
         {exams.map((exam) => (
           <div
             key={exam.id}
-            className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 rounded-3xl p-6 sm:p-7 shadow-sm transition-all flex flex-col justify-between space-y-5"
+            className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 rounded-2xl sm:rounded-3xl p-4 sm:p-7 shadow-sm transition-all flex flex-col justify-between space-y-4 sm:space-y-5"
           >
             <div className="space-y-3">
-              <div className="flex items-center justify-between gap-2">
+              <div className="flex flex-wrap items-center justify-between gap-2">
                 <span
                   className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-full border"
                   style={{
@@ -107,18 +107,18 @@ export const MockExams: React.FC<MockExamsProps> = ({ onStartExam }) => {
                 {exam.title}
               </h3>
 
-              <div className="grid grid-cols-3 gap-2.5 pt-3 border-t border-slate-100 dark:border-slate-800/80 text-center text-xs">
-                <div className="bg-slate-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-slate-200/80 dark:border-slate-800/60">
-                  <span className="text-[10px] text-slate-400 block uppercase font-bold">Questões</span>
-                  <span className="font-extrabold text-slate-900 dark:text-white font-mono text-sm">{exam.questions}</span>
+              <div className="grid grid-cols-3 gap-2 sm:gap-2.5 pt-3 border-t border-slate-100 dark:border-slate-800/80 text-center text-xs">
+                <div className="bg-slate-50 dark:bg-slate-900/60 p-2 sm:p-2.5 rounded-xl border border-slate-200/80 dark:border-slate-800/60 min-w-0">
+                  <span className="text-[9px] sm:text-[10px] text-slate-400 block uppercase font-bold truncate">Questões</span>
+                  <span className="font-extrabold text-slate-900 dark:text-white font-mono text-xs sm:text-sm">{exam.questions}</span>
                 </div>
-                <div className="bg-slate-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-slate-200/80 dark:border-slate-800/60">
-                  <span className="text-[10px] text-slate-400 block uppercase font-bold">Tempo</span>
-                  <span className="font-extrabold text-slate-900 dark:text-white font-mono text-sm">{exam.duration}</span>
+                <div className="bg-slate-50 dark:bg-slate-900/60 p-2 sm:p-2.5 rounded-xl border border-slate-200/80 dark:border-slate-800/60 min-w-0">
+                  <span className="text-[9px] sm:text-[10px] text-slate-400 block uppercase font-bold truncate">Tempo</span>
+                  <span className="font-extrabold text-slate-900 dark:text-white font-mono text-xs sm:text-sm">{exam.duration}</span>
                 </div>
-                <div className="bg-slate-50 dark:bg-slate-900/60 p-2.5 rounded-xl border border-slate-200/80 dark:border-slate-800/60">
-                  <span className="text-[10px] text-slate-400 block uppercase font-bold">Inscritos</span>
-                  <span className="font-extrabold text-blue-600 dark:text-blue-400 font-mono text-sm">{exam.participants.toLocaleString('pt-BR')}</span>
+                <div className="bg-slate-50 dark:bg-slate-900/60 p-2 sm:p-2.5 rounded-xl border border-slate-200/80 dark:border-slate-800/60 min-w-0">
+                  <span className="text-[9px] sm:text-[10px] text-slate-400 block uppercase font-bold truncate">Inscritos</span>
+                  <span className="font-extrabold text-blue-600 dark:text-blue-400 font-mono text-xs sm:text-sm">{exam.participants.toLocaleString('pt-BR')}</span>
                 </div>
               </div>
             </div>

@@ -331,6 +331,11 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
     const monthName = monthNames[cell.dateObj.getMonth()];
     const formatted = `${dayName} ${monthName} ${cell.dateObj.getDate()}, ${cell.dateObj.getFullYear()}`;
 
+    const clampedX =
+      typeof window !== 'undefined'
+        ? Math.max(96, Math.min(window.innerWidth - 96, rect.left + rect.width / 2))
+        : rect.left + rect.width / 2;
+
     setHoveredDay({
       dateStr: cell.dateStr,
       dayName,
@@ -338,10 +343,20 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
       feitos: cell.feitos,
       revisao: cell.revisao,
       total: cell.reviews,
-      x: rect.left + rect.width / 2,
-      y: rect.top - 8
+      x: clampedX,
+      y: Math.max(72, rect.top - 8)
     });
   };
+
+  useEffect(() => {
+    if (!hoveredDay) return;
+    const dismissOnScroll = () => {
+      setHoveredDay(null);
+      setHoveredColIndex(null);
+    };
+    window.addEventListener('scroll', dismissOnScroll, { capture: true, passive: true });
+    return () => window.removeEventListener('scroll', dismissOnScroll, true);
+  }, [hoveredDay]);
 
   const handleMouseLeaveCell = () => {
     setHoveredDay(null);
@@ -375,11 +390,11 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
       {!isCollapsed && (
         <>
           {/* 2. CONTROLES DE NAVEGAÇÃO CENTRALIZADOS: < T > (Fiel ao Anki) */}
-          <div className="flex items-center justify-center gap-1 py-1 select-none">
+          <div className="flex items-center justify-center gap-1.5 sm:gap-1 py-1 select-none">
             <button
               type="button"
               onClick={() => setSelectedYear((prev) => prev - 1)}
-              className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
+              className="min-w-[36px] min-h-[34px] sm:min-w-0 sm:min-h-0 px-2.5 sm:px-2 py-1 sm:py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer touch-manipulation"
               title="Ano anterior"
             >
               &lt;
@@ -387,7 +402,7 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
             <button
               type="button"
               onClick={() => setSelectedYear(currentRealYear)}
-              className="px-2.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
+              className="min-w-[36px] min-h-[34px] sm:min-w-0 sm:min-h-0 px-3 sm:px-2.5 py-1 sm:py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer touch-manipulation"
               title="Voltar para Hoje"
             >
               T
@@ -395,16 +410,16 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
             <button
               type="button"
               onClick={() => setSelectedYear((prev) => prev + 1)}
-              className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
+              className="min-w-[36px] min-h-[34px] sm:min-w-0 sm:min-h-0 px-2.5 sm:px-2 py-1 sm:py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer touch-manipulation"
               title="Próximo ano"
             >
               &gt;
             </button>
           </div>
 
-          {/* 3. GRID ANUAL DE 365 DIAS (CALENDÁRIO ANKI COMPACTO E CANÔNICO) */}
-          <div className="overflow-x-auto py-1 flex justify-center custom-scrollbar">
-            <div className="p-2 sm:p-2.5 rounded-xl bg-zinc-950/30 dark:bg-black/40 border border-zinc-800/40 inline-flex flex-col select-none">
+          {/* 3. GRID ANUAL DE 365 DIAS (CALENDÁRIO ANKI COMPACTO E CANÔNICO - SEM CORTE DE JAN-ABR NO MOBILE) */}
+          <div className="overflow-x-auto py-1 custom-scrollbar">
+            <div className="w-fit mx-auto p-2 sm:p-2.5 rounded-xl bg-zinc-950/30 dark:bg-black/40 border border-zinc-800/40 flex flex-col select-none">
               {/* 53 Colunas de Semanas: 1 para cada dia do ano, visivelmente separadas */}
               <div className="inline-flex gap-[3px]">
                 {weeksGrid.map((week, wIdx) => {

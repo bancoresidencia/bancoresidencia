@@ -189,6 +189,9 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
 
   // 9. Converter Códigos LaTeX e Delimitadores Matemáticos Comuns
   text = text
+    // Setas e operadores LaTeX
+    .replace(/\$\s*\\rightarrow\s*\$|\\rightarrow\b|\$\s*\\to\s*\$|\\to\b/g, '→')
+    .replace(/\$\s*\\leftarrow\s*\$|\\leftarrow\b/g, '←')
     // Menor ou igual / Maior ou igual
     .replace(/\$\s*\\le\s*\$|\\le\b|\$\s*\\leq\s*\$|\\leq\b/g, '≤')
     .replace(/\$\s*\\ge\s*\$|\\ge\b|\$\s*\\geq\s*\$|\\geq\b/g, '≥')
@@ -211,8 +214,10 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
     .replace(/\$I_f\$|I_f\b/g, 'If')
     .replace(/\^\s*\{\s*\\circ\s*\}|\^\s*\\circ/g, '°')
     .replace(/\\text\{([^}]+)\}/g, '$1')
-    // Cifrões isolados ao redor de valores simples ($20$, $4 mm$, $≥ 38°C$)
-    .replace(/\$([a-zA-ZÀ-ÿ0-9_\-±≤≥×≈%°/,.\s]+)\$/g, '$1');
+    // Descascar cifrões envolvendo qualquer conteúdo de fórmula matemática inline ($...$)
+    .replace(/\$([^\$\n\r]+?)\$/g, '$1')
+    // Limpar cifrão residual colado em letras (ex: $pH -> pH)
+    .replace(/\$([a-zA-ZÀ-ÿ])/g, '$1');
 
   // 6. Converter Operadores de Digitação Informais
   text = text
@@ -227,15 +232,11 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
     .replace(/(\d+)\s*cm3\b|\bcm3\b/g, (_, n) => n ? `${n} cm³` : 'cm³')
     .replace(/(\d+)\s*mm3\b|\bmm3\b/g, (_, n) => n ? `${n} mm³` : 'mm³')
     .replace(/(\d+)\s*m2\b|\bm2\b/g, (_, n) => n ? `${n} m²` : 'm²')
-    .replace(/\bPaO2\b/g, 'PaO₂')
-    .replace(/\bPaCO2\b/g, 'PaCO₂')
-    .replace(/\bFiO2\b/g, 'FiO₂')
-    .replace(/\bSaO2\b/g, 'SaO₂')
-    .replace(/\bSpO2\b/g, 'SpO₂')
-    .replace(/\bSatO2\b/g, 'SatO₂')
+    .replace(/\b([pP][aAvV]?|[Ff][iI])O[_]?2\b/g, '$1O₂')
+    .replace(/\b([pP][aAvV]?|[Ee]t)CO[_]?2\b/g, '$1CO₂')
+    .replace(/\b([Ss][apAP]?)O[_]?2\b/g, '$1O₂')
     .replace(/\bSO2\s*(\d{1,3}%)/gi, 'SO₂ $1')
     .replace(/\bHCO3\b/g, 'HCO₃')
-    .replace(/\bEtCO2\b/g, 'EtCO₂')
     .replace(/\bH2O\b/g, 'H₂O');
 
   // 8. Correção Cirúrgica de Erros de OCR/CMap em Temperaturas e Indicadores Ordinais (° e º)

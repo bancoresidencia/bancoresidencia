@@ -83,7 +83,7 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
       <div
-        className="w-full max-w-lg bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col max-h-[85vh] overflow-hidden"
+        className="w-full max-w-lg bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col max-h-[88dvh] overflow-hidden"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-send-folder-title"
@@ -242,16 +242,17 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
                               e.stopPropagation();
                               toggleFolder(root.id);
                             }}
-                            className="text-slate-400 hover:text-slate-700 dark:hover:text-white"
+                            className="w-8 h-8 -ml-1.5 -my-1 rounded-lg flex items-center justify-center text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 shrink-0 touch-manipulation"
+                            aria-label={isOpen ? 'Recolher subpastas' : 'Expandir subpastas'}
                           >
-                            {isOpen ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
+                            {isOpen ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
                           </button>
                         ) : (
                           <span className="w-3.5" />
                         )}
                         <FolderIcon className="w-4 h-4 text-blue-500 shrink-0" />
                         <span className="truncate">{root.name}</span>
-                        <span className="text-[10px] text-slate-400 font-normal">(Nível 1)</span>
+                        <span className="text-[10px] text-slate-400 font-normal hidden xs:inline">(Nível 1)</span>
                       </div>
                       <div className="shrink-0 flex items-center gap-1.5">
                         {isRootSaved && (
@@ -289,16 +290,17 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
                                         e.stopPropagation();
                                         toggleFolder(sub.id);
                                       }}
-                                      className="text-slate-400 hover:text-slate-700 dark:hover:text-white"
+                                      className="w-8 h-8 -ml-1.5 -my-1 rounded-lg flex items-center justify-center text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-200/60 dark:hover:bg-slate-800 shrink-0 touch-manipulation"
+                                      aria-label={isSubOpen ? 'Recolher subpastas' : 'Expandir subpastas'}
                                     >
-                                      {isSubOpen ? <ChevronDown className="w-3 h-3" /> : <ChevronRight className="w-3 h-3" />}
+                                      {isSubOpen ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
                                     </button>
                                   ) : (
                                     <span className="w-3" />
                                   )}
                                   <FolderIcon className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                                   <span className="truncate">{sub.name}</span>
-                                  <span className="text-[10px] text-slate-400 font-normal">(Nível 2)</span>
+                                  <span className="text-[10px] text-slate-400 font-normal hidden xs:inline">(Nível 2)</span>
                                 </div>
                                 <div className="shrink-0 flex items-center gap-1.5">
                                   {isSubSaved && (

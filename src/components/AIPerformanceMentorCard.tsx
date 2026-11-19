@@ -212,10 +212,11 @@ export const AIPerformanceMentorCard: React.FC<AIPerformanceMentorCardProps> = (
                 e.stopPropagation();
                 fetchDiagnosis(true);
               }}
-              className="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-semibold bg-white dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700 text-slate-700 dark:text-zinc-200 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs disabled:opacity-60"
+              className="inline-flex items-center gap-1.5 px-2 sm:px-2.5 py-1.5 sm:py-1 rounded-lg text-xs font-semibold bg-white dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700 text-slate-700 dark:text-zinc-200 hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs disabled:opacity-60"
+              title="Atualizar diagnóstico do Mentor IA"
             >
-              <RotateCcw className={`w-3 h-3 ${isLoading ? 'animate-spin' : ''}`} style={{ color: accentConfig.primaryHex }} />
-              <span>Atualizar</span>
+              <RotateCcw className={`w-3.5 h-3.5 sm:w-3 sm:h-3 ${isLoading ? 'animate-spin' : ''}`} style={{ color: accentConfig.primaryHex }} />
+              <span className="hidden sm:inline">Atualizar</span>
             </button>
           )}
 

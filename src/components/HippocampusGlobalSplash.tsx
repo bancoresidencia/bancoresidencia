@@ -1,40 +1,50 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 /**
  * Splash Screen Global Oficial do Hippocampus • Questões de Residência
- * 1. Simbologia nasce perfeitamente no centro absoluto da tela e se desenha em crescente da DIREITA para a ESQUERDA (0.0s a 2.8s).
- * 2. Transição física cinematográfica em GPU (2.0s a 3.2s):
+ * Otimizado para execução cinematográfica ágil e ultrarrápida:
+ * 1. Simbologia nasce no centro e se desenha com física ágil (0.0s a 0.85s).
+ * 2. Transição cinematográfica em GPU (0.6s a 1.05s):
  *    - O símbolo desliza suavemente para a esquerda via translate3d.
- *    - O nome sai fisicamente de trás do símbolo da esquerda para a direita através de uma janela de revelação (overflow: hidden).
- *    - Revela sequencialmente as letras ('H' -> 'i' -> 'p'...) com aceleração/desaceleração natural tipo Apple spring (cubic-bezier(0.16, 1, 0.3, 1)).
- *    - Zero reflows, zero repaints, 100% executado na thread de composição da GPU (60–120 FPS cravados em qualquer hardware).
- * 3. Repouso estático encurtado (200ms entre 3.20s e 3.40s).
- * 4. Fade-out suave (350ms) liberando a aplicação aos 3.75s e desmontando aos 3.80s.
+ *    - O nome sai fisicamente de trás do símbolo da esquerda para a direita.
+ * 3. Fade-out rápido (300ms) liberando a aplicação aos 1.05s e desmontando aos 1.35s.
  */
 export const HippocampusGlobalSplash: React.FC = () => {
+  const pathname = usePathname();
+  const isExcluded = typeof window !== 'undefined'
+    ? (pathname?.includes('simulado-priapismo') || window.location.pathname.includes('simulado-priapismo'))
+    : pathname?.includes('simulado-priapismo');
+
   const [isFadingOut, setIsFadingOut] = useState(false);
-  const [isDestroyed, setIsDestroyed] = useState(false);
+  const [isDestroyed, setIsDestroyed] = useState(Boolean(isExcluded));
 
   useEffect(() => {
+    if (isExcluded) {
+      document.documentElement.classList.remove('hippo-splash-active');
+      setIsDestroyed(true);
+      return;
+    }
+
     // Garante isolamento da aplicação de fundo durante o traçado inicial
     document.documentElement.classList.add('hippo-splash-active');
 
-    // Libera a renderização da aplicação aos 3.20s quando a logo e o texto terminam de se montar
+    // Libera a renderização da aplicação aos 950ms quando a logo e o texto terminam de se montar
     const prepareBgTimer = setTimeout(() => {
       document.documentElement.classList.remove('hippo-splash-active');
-    }, 3200);
+    }, 950);
 
-    // Dispara o fade-out rápido aos 3.40s (após repouso estático ágil de 200ms)
+    // Dispara o fade-out rápido aos 1050ms
     const fadeTimer = setTimeout(() => {
       setIsFadingOut(true);
-    }, 3400);
+    }, 1050);
 
-    // Desmonta aos 3.80s
+    // Desmonta aos 1350ms
     const destroyTimer = setTimeout(() => {
       setIsDestroyed(true);
-    }, 3800);
+    }, 1350);
 
     return () => {
       document.documentElement.classList.remove('hippo-splash-active');
@@ -44,13 +54,13 @@ export const HippocampusGlobalSplash: React.FC = () => {
     };
   }, []);
 
-  if (isDestroyed) {
+  if (isDestroyed || isExcluded) {
     return null;
   }
 
   return (
     <div
-      className={`fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#09090b] text-white select-none transition-opacity duration-350 ease-in-out ${
+      className={`fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-[#09090b] text-white select-none transition-opacity duration-300 ease-in-out ${
         isFadingOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
       role="status"
@@ -67,7 +77,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* 1. Traçado da Linha Externa (0.0s a 2.8s) suave e calmo */
+        /* 1. Traçado da Linha Externa (0.0s a 0.85s) ágil e preciso */
         @keyframes splashOuterDraw {
           0% {
             stroke-dashoffset: 4157;
@@ -77,7 +87,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* 2. Traçado da Linha Interna (0.12s a 2.72s) suave e sincronizado */
+        /* 2. Traçado da Linha Interna (0.05s a 0.85s) sincronizado */
         @keyframes splashInnerDraw {
           0% {
             stroke-dashoffset: -2217;
@@ -87,7 +97,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* 3. Deslocamento do bloco do centro da tela para a esquerda (2.0s a 3.2s) na thread GPU */
+        /* 3. Deslocamento do bloco do centro da tela para a esquerda (0.6s a 1.05s) na thread GPU */
         @keyframes splashShiftLeft {
           0% {
             transform: translate3d(var(--hippo-shift), 0, 0);
@@ -97,13 +107,13 @@ export const HippocampusGlobalSplash: React.FC = () => {
           }
         }
 
-        /* 4. O nome desliza fisicamente de trás do símbolo para a direita (2.0s a 3.2s) */
+        /* 4. O nome desliza fisicamente de trás do símbolo para a direita (0.6s a 1.05s) */
         @keyframes splashSlideOutFromBehind {
           0% {
             transform: translate3d(-105%, 0, 0);
             opacity: 0;
           }
-          15% {
+          20% {
             opacity: 1;
           }
           100% {
@@ -117,7 +127,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           stroke-dashoffset: 4157;
           will-change: stroke-dashoffset;
           shape-rendering: geometricPrecision;
-          animation: splashOuterDraw 2.8s cubic-bezier(0.35, 0.0, 0.15, 1.0) forwards;
+          animation: splashOuterDraw 0.85s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
 
         .hippo-splash-path-inner {
@@ -125,7 +135,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           stroke-dashoffset: -2217;
           will-change: stroke-dashoffset;
           shape-rendering: geometricPrecision;
-          animation: splashInnerDraw 2.6s cubic-bezier(0.35, 0.0, 0.15, 1.0) 0.12s forwards;
+          animation: splashInnerDraw 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards;
         }
 
         .hippo-splash-container {
@@ -133,7 +143,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
           align-items: center;
           position: relative;
           will-change: transform;
-          animation: splashShiftLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) 2.0s forwards;
+          animation: splashShiftLeft 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
           transform: translate3d(var(--hippo-shift), 0, 0);
         }
 
@@ -159,7 +169,7 @@ export const HippocampusGlobalSplash: React.FC = () => {
 
         .hippo-splash-text-slide {
           will-change: transform, opacity;
-          animation: splashSlideOutFromBehind 1.2s cubic-bezier(0.16, 1, 0.3, 1) 2.0s forwards;
+          animation: splashSlideOutFromBehind 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.6s forwards;
           transform: translate3d(-105%, 0, 0);
           opacity: 0;
         }

@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco Residência — Laboratório Global do Hero 3D</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    :root {
+      --bg-page: #09090b;
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --card-bg: rgba(24, 24, 27, 0.88);
+      --card-border: rgba(255, 255, 255, 0.12);
+      
+      /* ACENTOS DINÂMICOS DO TEMA */
+      --accent-primary: #0284c7;
+      --accent-hover: #0369a1;
+      --accent-light: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.4);
+      --accent-grad1: #0284c7;
+      --accent-grad2: #38bdf8;
+      --accent-crest: #ccfbf1;
+      --accent-grad3: #0284c7;
+    }
+
+    body.light-theme {
+      --bg-page: #f8fafc;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --card-bg: rgba(255, 255, 255, 0.94);
+      --card-border: rgba(0, 0, 0, 0.12);
+      
+      --accent-primary: #0284c7;
+      --accent-hover: #0369a1;
+      --accent-light: #0284c7;
+      --accent-glow: rgba(2, 132, 199, 0.25);
+      --accent-grad1: #0369a1;
+      --accent-grad2: #0284c7;
+      --accent-crest: #075985;
+      --accent-grad3: #0369a1;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 100vw;
+      min-height: 100vh;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* HEADER SUPERIOR FIXO */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 80;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to bottom, rgba(9, 9, 11, 0.92) 0%, rgba(9, 9, 11, 0) 100%);
+      pointer-events: none;
+      transition: background 0.3s ease;
+    }
+    body.light-theme header {
+      background: linear-gradient(to bottom, rgba(248, 250, 252, 0.95) 0%, rgba(248, 250, 252, 0) 100%);
+    }
+    .header-content {
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .header-actions {
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      background: var(--accent-glow);
+      border: 1px solid var(--accent-light);
+      color: var(--accent-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* PALCO PRINCIPAL DO HERO (STICKY VIEWPORT) */
+    .hero-viewport {
+      position: sticky;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      min-height: 620px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-container {
+      position: relative;
+      width: 100%;
+      max-width: 1320px;
+      height: 100%;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* 1. HEADLINE DA ESQUERDA (IDÊNTICA À PRODUÇÃO) */
+    .hero-headline-block {
+      position: absolute;
+      left: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 520px;
+      max-width: 48%;
+      z-index: 30;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      pointer-events: auto;
+    }
+
+    h1.hero-title {
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+    body.light-theme h1.hero-title {
+      color: #09090b;
+    }
+
+    /* ANIMAÇÃO DE DEGRADÊ DAS LETRAS (HIPPO TEXT SWEEP) - Sincronizada com o fluxo calmo de 12s */
+    @keyframes hippoTextColorSweep {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    .text-gradient-sweep {
+      background-size: 260% 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: hippoTextColorSweep 12s ease-in-out infinite;
+      display: inline-block;
+      will-change: background-position;
+      background-image: linear-gradient(110deg, var(--accent-grad1) 0%, var(--accent-grad2) 26%, var(--accent-crest) 48%, var(--accent-grad3) 68%, var(--accent-grad1) 100%);
+    }
+    body.light-theme .text-gradient-sweep {
+      background-image: linear-gradient(110deg, var(--accent-grad1) 0%, var(--accent-grad2) 26%, var(--accent-crest) 48%, var(--accent-grad3) 68%, var(--accent-grad1) 100%);
+    }
+
+    .hero-subtext {
+      color: rgba(255, 255, 255, 0.55);
+      font-weight: 700;
+    }
+    body.light-theme .hero-subtext {
+      color: rgba(15, 23, 42, 0.55);
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .btn-primary-hero {
+      background: var(--accent-primary);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 13px 26px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 10px 25px -4px var(--accent-glow);
+      transition: all 0.2s ease;
+    }
+    .btn-primary-hero:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+    .btn-secondary-hero {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 13px 22px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    body.light-theme .btn-secondary-hero {
+      background: rgba(0, 0, 0, 0.04);
+      border-color: rgba(0, 0, 0, 0.12);
+      color: #0f172a;
+    }
+
+    .hero-guarantee {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #34d399;
+    }
+    body.light-theme .hero-guarantee {
+      color: #059669;
+    }
+
+    /* 2. PALCO 3D DO CÉREBRO */
+    #canvas-container {
+      position: absolute;
+      top: 50%;
+      right: 40px;
+      width: 580px;
+      height: 580px;
+      transform: translateY(-50%);
+      z-index: 20;
+      transition: transform 0.1s cubic-bezier(0.16, 1, 0.3, 1), right 0.1s cubic-bezier(0.16, 1, 0.3, 1), left 0.1s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: auto;
+    }
+    canvas {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+      position: relative;
+      z-index: 2;
+      transition: filter 0.3s ease;
+    }
+    body.light-theme #canvas-container canvas {
+      filter: drop-shadow(0 34px 50px rgba(15, 23, 42, 0.22))
+              drop-shadow(0 16px 24px rgba(15, 23, 42, 0.14))
+              drop-shadow(0 4px 8px rgba(15, 23, 42, 0.08));
+    }
+    body:not(.light-theme) #canvas-container canvas {
+      filter: drop-shadow(0 26px 36px rgba(0, 0, 0, 0.85))
+              drop-shadow(0 0 25px rgba(56, 189, 248, 0.10));
+    }
+
+    /* SOMBREADO VOLUMÉTRICO DE FUNDO (AMBIENT OCCLUSION PARA DESTACAR DO FUNDO BRANCO) */
+    .brain-backdrop-shadow {
+      position: absolute;
+      left: 50%;
+      top: 54%;
+      width: 490px;
+      height: 380px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 1;
+      transition: opacity 0.4s ease;
+    }
+    body.light-theme .brain-backdrop-shadow {
+      opacity: 1;
+      background: radial-gradient(
+        ellipse at 50% 50%,
+        rgba(15, 23, 42, 0.22) 0%,
+        rgba(30, 41, 59, 0.13) 40%,
+        rgba(51, 65, 85, 0.05) 64%,
+        rgba(0, 0, 0, 0) 80%
+      );
+      filter: blur(32px);
+    }
+    body:not(.light-theme) .brain-backdrop-shadow {
+      opacity: 0.45;
+      background: radial-gradient(
+        ellipse at 50% 50%,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.5) 45%,
+        rgba(0, 0, 0, 0) 75%
+      );
+      filter: blur(40px);
+    }
+
+    /* 3. COLUNA DIREITA DE CARDS DE STORYTELLING */
+    .hero-cards-panel {
+      position: absolute;
+      right: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 440px;
+      max-width: 42%;
+      z-index: 30;
+      pointer-events: none;
+    }
+
+    .story-card {
+      position: absolute;
+      inset: 0;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(16px);
+      opacity: 0;
+      transform: translateY(20px) scale(0.96);
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+    }
+    body.light-theme .story-card {
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    }
+    .story-card.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .card-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.35;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+    .card-desc {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+    .card-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .chip {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text-main);
+    }
+    body.light-theme .chip {
+      background: rgba(0, 0, 0, 0.05);
+      border-color: rgba(0, 0, 0, 0.1);
+      color: #334155;
+    }
+    .card-footnote {
+      font-size: 11px;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 10px;
+    }
+
+    /* PAINEL FLUTUANTE DE CONTROLE MESTRE (DOCK INFERIOR) */
+    .master-dock {
+      position: fixed;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      max-width: 98vw;
+      width: fit-content;
+    }
+
+    /* BARRA 1: CONTROLE DA JORNADA / SCROLL / TEMA */
+    .journey-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(18, 18, 22, 0.94);
+      backdrop-filter: blur(16px);
+      padding: 6px 14px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.6);
+      font-size: 11px;
+    }
+    body.light-theme .journey-bar {
+      background: rgba(255, 255, 255, 0.94);
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      color: #334155;
+    }
+
+    .journey-slider {
+      -webkit-appearance: none;
+      width: 120px;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.2);
+      outline: none;
+      cursor: pointer;
+    }
+    body.light-theme .journey-slider {
+      background: rgba(0, 0, 0, 0.15);
+    }
+    .journey-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      box-shadow: 0 0 8px var(--accent-light);
+      cursor: pointer;
+    }
+
+    .pill-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text-main);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 5px 11px;
+      border-radius: 9999px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .pill-btn:hover {
+      background: rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+    }
+    .pill-btn.active {
+      background: var(--accent-primary);
+      border-color: var(--accent-light);
+      color: #ffffff;
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+    body.light-theme .pill-btn {
+      background: rgba(0, 0, 0, 0.05);
+      border-color: rgba(0, 0, 0, 0.12);
+      color: #334155;
+    }
+    body.light-theme .pill-btn:hover {
+      background: #ffffff;
+      color: #0f172a;
+    }
+    body.light-theme .pill-btn.active {
+      background: var(--accent-primary);
+      border-color: var(--accent-primary);
+      color: #ffffff;
+    }
+
+    /* BARRA 2: PALETA DE CORES DO TEMA */
+    .accent-palette-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(18, 18, 22, 0.92);
+      backdrop-filter: blur(14px);
+      padding: 5px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 11px;
+    }
+    body.light-theme .accent-palette-bar {
+      background: rgba(255, 255, 255, 0.92);
+      border-color: rgba(0, 0, 0, 0.12);
+      color: #334155;
+    }
+    .accent-swatch {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .accent-swatch:hover {
+      transform: scale(1.15);
+    }
+    .accent-swatch.active {
+      border-color: #ffffff;
+      transform: scale(1.2);
+      box-shadow: 0 0 8px currentColor;
+    }
+    body.light-theme .accent-swatch.active {
+      border-color: #09090b;
+    }
+
+    /* BARRA 3: SELETOR DE ESTILOS ANATÔMICOS E CATEGORIAS */
+    .category-row {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      align-items: center;
+      background: rgba(18, 18, 22, 0.88);
+      backdrop-filter: blur(12px);
+      padding: 3px 6px;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 2px;
+    }
+    body.light-theme .category-row {
+      background: rgba(255, 255, 255, 0.88);
+      border-color: rgba(0, 0, 0, 0.08);
+    }
+    .cat-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-transform: uppercase;
+    }
+    .cat-btn:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .cat-btn.active {
+      color: #ffffff;
+      background: #27272a;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+    body.light-theme .cat-btn.active {
+      color: #0f172a;
+      background: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .style-row {
+      display: flex;
+      gap: 4px;
+      background: rgba(18, 18, 22, 0.94);
+      backdrop-filter: blur(16px);
+      padding: 4px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      overflow-x: auto;
+      max-width: 96vw;
+    }
+    body.light-theme .style-row {
+      background: rgba(255, 255, 255, 0.94);
+      border-color: rgba(0, 0, 0, 0.12);
+    }
+    .style-item {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      font-size: 10px;
+      font-weight: 600;
+      padding: 5px 9px;
+      border-radius: 7px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      transition: all 0.15s ease;
+    }
+    .style-item:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .style-item.active {
+      color: #ffffff;
+      background: #27272a;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+    body.light-theme .style-item.active {
+      color: #0f172a;
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.2);
+    }
+    .style-item .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    /* BARRA 4: MODO DE ONDA E BRILHO */
+    .subcontrols-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(18, 18, 22, 0.90);
+      backdrop-filter: blur(14px);
+      padding: 4px 12px;
+      border-radius: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 11px;
+    }
+    body.light-theme .subcontrols-bar {
+      background: rgba(255, 255, 255, 0.9);
+      border-color: rgba(0, 0, 0, 0.1);
+      color: #334155;
+    }
+
+    /* PISTA DE SCROLL FANTASMA */
+    .scroll-track {
+      height: 380vh;
+      width: 100%;
+      pointer-events: none;
+    }
+
+    #loading-overlay {
+      position: fixed;
+      inset: 0;
+      background: #09090b;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+      gap: 16px;
+      transition: opacity 0.4s ease;
+    }
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top-color: #38bdf8;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "/preview-libs/three.module.js",
+      "three/addons/": "/preview-libs/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <div style="font-size: 13px; color: #a1a1aa; font-weight: 500;">Carregando Laboratório Global 3D...</div>
+  </div>
+
+  <header>
+    <div class="header-content">
+      <span style="font-weight: 800; font-size: 15px; letter-spacing: -0.02em;">Hippocampus</span>
+      <span class="badge" id="header-badge">Hero Oficial 3D</span>
+    </div>
+    <div class="header-actions">
+      <button class="pill-btn" onclick="toggleTheme()" id="theme-btn-top">
+        <span id="theme-icon-top">☀️</span>
+        <span id="theme-text-top">Modo Claro</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PALCO STICKY COMPLETO DO HERO (IGUAL À HOME) -->
+  <div class="hero-viewport">
+    <div class="hero-container">
+      
+      <!-- 1. HEADLINE DA ESQUERDA -->
+      <div class="hero-headline-block" id="hero-headline">
+        <h1 class="hero-title">
+          <span class="text-gradient-sweep" id="hl-line1">+200 MIL QUESTÕES</span><br>
+          <span class="hero-subtext">para a sua </span><span class="text-gradient-sweep" id="hl-line2">APROVAÇÃO</span><br>
+          <span class="hero-subtext">na </span><span class="text-gradient-sweep" id="hl-line3">RESIDÊNCIA.</span>
+        </h1>
+
+        <div class="hero-cta-group">
+          <button class="btn-primary-hero" id="btn-cta-main">
+            <span>Testar Grátis Agora</span>
+            <span>→</span>
+          </button>
+          <button class="btn-secondary-hero">
+            <span>Ver Planos</span>
+            <span>›</span>
+          </button>
+        </div>
+
+        <div class="hero-guarantee">
+          <span>🛡️</span>
+          <span>Garantia incondicional de 7 dias</span>
+        </div>
+      </div>
+
+      <!-- 2. PALCO 3D DO CÉREBRO COM SOMBREADO VOLUMÉTRICO -->
+      <div id="canvas-container">
+        <div class="brain-backdrop-shadow" id="brain-shadow" aria-hidden="true"></div>
+      </div>
+
+      <!-- 3. CARDS DE STORYTELLING DA DIREITA -->
+      <div class="hero-cards-panel" id="cards-panel">
+        <article class="story-card" id="card-0">
+          <div class="card-tag"><span>🧠</span><span>01 • CODIFICAÇÃO CORTICAL</span></div>
+          <div class="card-title">O Córtex capta o estudo, mas a memória inicial é <strong id="hl-card0" style="color:var(--accent-light)">volátil.</strong></div>
+          <div class="card-desc">Ao ler um resumo ou assistir a uma aula passivamente, os giros e sulcos do Córtex formam traços sinápticos transitórios. Sem recrutamento ativo, o esquecimento apaga a maior parte dos detalhes clínicos.</div>
+          <div class="card-chips">
+            <span class="chip">Estímulo Visual</span>
+            <span class="chip">Córtex Associativo</span>
+            <span class="chip">Curto Prazo</span>
+          </div>
+          <div class="card-footnote">Role para dissecar o córtex e revelar o circuito profundo.</div>
+        </article>
+
+        <article class="story-card" id="card-1">
+          <div class="card-tag"><span>🧬</span><span>02 • CIRCUITO DE PAPEZ & INTEGRAÇÃO</span></div>
+          <div class="card-title">A reverberação neural que filtra o que é <strong id="hl-card1" style="color:var(--accent-light)">essencial.</strong></div>
+          <div class="card-desc">No centro do encéfalo, o Circuito de Papez integrado ao Tálamo faz o impulso reverberar entre Hipocampo, Fórnix, Corpos Mamilares e Giro do Cíngulo, selecionando padrões decisivos.</div>
+          <div class="card-chips">
+            <span class="chip">Hipocampo</span>
+            <span class="chip">Fórnix</span>
+            <span class="chip">Corpos Mamilares</span>
+            <span class="chip">Tálamo</span>
+          </div>
+          <div class="card-footnote">Integração límbica que sustenta o raciocínio clínico conectado.</div>
+        </article>
+
+        <article class="story-card" id="card-2">
+          <div class="card-tag"><span>✨</span><span>03 • A METÁFORA HIPPOCAMPUS</span></div>
+          <div class="card-title">O seu Hipocampo externo rumo à <strong id="hl-card2" style="color:var(--accent-light)">aprovação.</strong></div>
+          <div class="card-desc">Isolado no centro da consolidação, o Hipocampo converte estudo frágil em memória definitiva de longo prazo. O Banco de Questões cumpre exatamente esse papel com repetição FSRS e TRI.</div>
+          <div class="card-chips">
+            <span class="chip">Resolução Ativa</span>
+            <span class="chip">Repetição FSRS</span>
+            <span class="chip">Calibração TRI</span>
+          </div>
+          <div class="card-footnote">Cada questão resolvida fortalece a trilha que você acionará na prova oficial.</div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="scroll-track"></div>
+
+  <!-- DOCK DE CONTROLE MESTRE -->
+  <div class="master-dock">
+    
+    <!-- 1. BARRA DE CORES DO TEMA -->
+    <div class="accent-palette-bar">
+      <span>🎨 <strong>Cor do Tema:</strong></span>
+      <button class="accent-swatch active" style="background:#0284c7;color:#0284c7;" title="Azul Safira / Ciano" onclick="setThemeAccent('cyan')"></button>
+      <button class="accent-swatch" style="background:#1d4ed8;color:#1d4ed8;" title="Azul Médico" onclick="setThemeAccent('blue')"></button>
+      <button class="accent-swatch" style="background:#047857;color:#047857;" title="Verde Esmeralda" onclick="setThemeAccent('green')"></button>
+      <button class="accent-swatch" style="background:#6d28d9;color:#6d28d9;" title="Violeta / Roxo" onclick="setThemeAccent('purple')"></button>
+      <button class="accent-swatch" style="background:#991b1b;color:#991b1b;" title="Vermelho Carmesim" onclick="setThemeAccent('red')"></button>
+      <button class="accent-swatch" style="background:#ea580c;color:#ea580c;" title="Âmbar / Laranja" onclick="setThemeAccent('orange')"></button>
+      <button class="accent-swatch" style="background:#52525b;color:#52525b;" title="Titânio Neutro" onclick="setThemeAccent('neutral')"></button>
+      
+      <div style="width:1px;height:14px;background:rgba(255,255,255,0.2);"></div>
+      <button class="pill-btn" onclick="toggleTheme()" id="theme-btn-dock">
+        <span id="theme-icon-dock">☀️</span>
+        <span id="theme-text-dock">Modo Claro</span>
+      </button>
+    </div>
+
+    <!-- 2. JORNADA / SCROLL -->
+    <div class="journey-bar">
+      <span>📍 <strong>Jornada:</strong></span>
+      <input type="range" class="journey-slider" id="journey-slider" min="0" max="1" step="0.01" value="0" oninput="setJourneyProgress(parseFloat(this.value))">
+      
+      <button class="pill-btn active" id="btn-hero-step0" onclick="setJourneyProgress(0)">01. Hero Inicial</button>
+      <button class="pill-btn" id="btn-hero-step1" onclick="setJourneyProgress(0.55)">02. Dissecação Papez</button>
+      <button class="pill-btn" id="btn-hero-step2" onclick="setJourneyProgress(0.92)">03. Hipocampo Isolado</button>
+      
+      <div style="width:1px;height:14px;background:rgba(255,255,255,0.2);"></div>
+      
+      <button class="pill-btn" id="btn-rotate-toggle" onclick="toggleAutoRotate()">🔄 Rotação</button>
+      <button class="pill-btn" onclick="resetCamera()">🎯 Reset Câmera</button>
+    </div>
+
+    <!-- 3. SELETOR DE ESTILOS ANATÔMICOS E CATEGORIAS -->
+    <div class="category-row" id="category-bar">
+      <button class="cat-btn active" onclick="filterCategory('all')">TODOS OS ESTILOS</button>
+      <button class="cat-btn" onclick="filterCategory('waves')">ONDAS & DINÂMICA</button>
+      <button class="cat-btn" onclick="filterCategory('grids')">MALHAS & GRIDS</button>
+      <button class="cat-btn" onclick="filterCategory('materials')">MATERIAIS & VIDRO</button>
+    </div>
+
+    <div class="style-row" id="style-buttons">
+      <button class="style-item" data-category="waves" onclick="switchStyle('sweep_slow')">
+        <span class="dot" style="background:#06b6d4;"></span>
+        1. Varredura Calma 8s
+      </button>
+      <button class="style-item" data-category="waves" onclick="switchStyle('sweep_sculpt')">
+        <span class="dot" style="background:#38bdf8;"></span>
+        2. Escultura Polida
+      </button>
+      <button class="style-item" data-category="waves" onclick="switchStyle('sweep_laser')">
+        <span class="dot" style="background:#818cf8;"></span>
+        3. Filete Laser
+      </button>
+      <button class="style-item" data-category="grids" onclick="switchStyle('conformal_gyri')">
+        <span class="dot" style="background:#2dd4bf;"></span>
+        4. Anéis nos Giros
+      </button>
+      <button class="style-item" data-category="grids" onclick="switchStyle('quad_wide')">
+        <span class="dot" style="background:#60a5fa;"></span>
+        5. Malha Quad
+      </button>
+      <button class="style-item" data-category="grids" onclick="switchStyle('triangle')">
+        <span class="dot" style="background:#a78bfa;"></span>
+        6. Triangular
+      </button>
+      <button class="style-item active" data-category="waves" onclick="switchStyle('linework_wave')">
+        <span class="dot" style="background:#38bdf8;"></span>
+        7. Linework & Ondas
+      </button>
+      <button class="style-item" data-category="materials" onclick="switchStyle('synapse')">
+        <span class="dot" style="background:#f472b6;"></span>
+        8. Sinapses
+      </button>
+      <button class="style-item" data-category="materials" onclick="switchStyle('glass')">
+        <span class="dot" style="background:#06b6d4;"></span>
+        9. Vidro Fosco
+      </button>
+      <button class="style-item" data-category="materials" onclick="switchStyle('clay')">
+        <span class="dot" style="background:#cbd5e1;"></span>
+        10. Argila Clay
+      </button>
+    </div>
+
+    <!-- 4. MODO DE ONDA E BRILHO -->
+    <div class="subcontrols-bar">
+      <span>Efeito da Onda:</span>
+      <button class="pill-btn active" id="btn-mode-undulate" onclick="setWaveMode(0)">
+        <span>🌊 Degradê Ondulante Suave (Palavras)</span>
+      </button>
+      <button class="pill-btn" id="btn-mode-beam" onclick="setWaveMode(1)">
+        <span>⚡ Varredura Focal</span>
+      </button>
+      
+      <div style="width:1px;height:12px;background:rgba(255,255,255,0.2);"></div>
+
+      <span>💡 Base:</span>
+      <button class="pill-btn" onclick="setBrightness(0.52)">Sutil</button>
+      <button class="pill-btn active" id="btn-bright-mid" onclick="setBrightness(0.68)">Equilibrado (68%)</button>
+      <button class="pill-btn" onclick="setBrightness(0.85)">Luminoso (85%)</button>
+    </div>
+
+  </div>
+
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+    let scene, camera, renderer, controls, clock;
+    let brainGroup = null, cortexMeshes = [], papezMeshes = [], hippocampusMesh = null;
+    let currentStyle = 'linework_wave';
+    let isLightMode = false;
+    let waveMode = 0; // 0 = Degradê Ondulante Suave (Palavras), 1 = Varredura Focal
+    let brainBrightness = 0.68;
+    let autoRotate = true;
+    let currentAccent = 'cyan';
+    const activeMaterials = [];
+
+    // CONFIGURAÇÕES DE PALETAS DE ACENTO DO TEMA (GRADIENTE HARMÔNICO DE 3 CORES IDÊNTICO ÀS LETRAS)
+    const THEME_ACCENTS = {
+      cyan: {
+        primaryHex: '#0284c7',
+        hoverHex: '#0369a1',
+        lightHex: '#0ea5e9',
+        secHex: '#38bdf8',
+        thirdHex: '#0284c7',
+        crestHex: '#ccfbf1',
+        lightPrimaryHex: '#0369a1',
+        lightHoverHex: '#075985',
+        lightSecHex: '#0284c7',
+        lightThirdHex: '#0c4a6e',
+        lightCrestHex: '#075985',
+        waveColorDark: 0x0284c7,
+        secWaveDark: 0x38bdf8,
+        crestWaveDark: 0xccfbf1,
+        rimDark: 0x38bdf8,
+        waveColorLight: 0x0369a1,
+        secWaveLight: 0x0284c7,
+        crestWaveLight: 0x0c4a6e,
+        rimLight: 0x0369a1
+      },
+      blue: {
+        primaryHex: '#1d4ed8',
+        hoverHex: '#1e40af',
+        lightHex: '#3b82f6',
+        secHex: '#38bdf8',
+        thirdHex: '#1d4ed8',
+        crestHex: '#e0f2fe',
+        lightPrimaryHex: '#1e40af',
+        lightHoverHex: '#1e3a8a',
+        lightSecHex: '#2563eb',
+        lightThirdHex: '#172554',
+        lightCrestHex: '#1e3a8a',
+        waveColorDark: 0x1d4ed8,
+        secWaveDark: 0x38bdf8,
+        crestWaveDark: 0xe0f2fe,
+        rimDark: 0x60a5fa,
+        waveColorLight: 0x1e40af,
+        secWaveLight: 0x2563eb,
+        crestWaveLight: 0x172554,
+        rimLight: 0x1e40af
+      },
+      green: {
+        primaryHex: '#047857',
+        hoverHex: '#065f46',
+        lightHex: '#059669',
+        secHex: '#10b981',
+        thirdHex: '#047857',
+        crestHex: '#d1fae5',
+        lightPrimaryHex: '#065f46',
+        lightHoverHex: '#064e3b',
+        lightSecHex: '#047857',
+        lightThirdHex: '#022c22',
+        lightCrestHex: '#064e3b',
+        waveColorDark: 0x047857,
+        secWaveDark: 0x10b981,
+        crestWaveDark: 0xd1fae5,
+        rimDark: 0x34d399,
+        waveColorLight: 0x065f46,
+        secWaveLight: 0x047857,
+        crestWaveLight: 0x022c22,
+        rimLight: 0x065f46
+      },
+      purple: {
+        primaryHex: '#6d28d9',
+        hoverHex: '#5b21b6',
+        lightHex: '#7c3aed',
+        secHex: '#a855f7',
+        thirdHex: '#6d28d9',
+        crestHex: '#f3e8ff',
+        lightPrimaryHex: '#5b21b6',
+        lightHoverHex: '#4c1d95',
+        lightSecHex: '#6d28d9',
+        lightThirdHex: '#3b0764',
+        lightCrestHex: '#4c1d95',
+        waveColorDark: 0x5b21b6,
+        secWaveDark: 0xa855f7,
+        crestWaveDark: 0xf3e8ff,
+        rimDark: 0xc084fc,
+        waveColorLight: 0x5b21b6,
+        secWaveLight: 0x6d28d9,
+        crestWaveLight: 0x3b0764,
+        rimLight: 0x5b21b6
+      },
+      red: {
+        primaryHex: '#991b1b',
+        hoverHex: '#7f1d1d',
+        lightHex: '#b91c1c',
+        secHex: '#dc2626',
+        thirdHex: '#7f1d1d',
+        crestHex: '#fef3c7',
+        lightPrimaryHex: '#7f1d1d',
+        lightHoverHex: '#450a0a',
+        lightSecHex: '#991b1b',
+        lightThirdHex: '#450a0a',
+        lightCrestHex: '#450a0a',
+        waveColorDark: 0x7f1d1d,
+        secWaveDark: 0xb91c1c,
+        crestWaveDark: 0xfef3c7,
+        rimDark: 0x991b1b,
+        waveColorLight: 0x7f1d1d,
+        secWaveLight: 0x991b1b,
+        crestWaveLight: 0x450a0a,
+        rimLight: 0x7f1d1d
+      },
+      rose: {
+        primaryHex: '#991b1b',
+        hoverHex: '#7f1d1d',
+        lightHex: '#b91c1c',
+        secHex: '#dc2626',
+        thirdHex: '#7f1d1d',
+        crestHex: '#fef3c7',
+        lightPrimaryHex: '#7f1d1d',
+        lightHoverHex: '#450a0a',
+        lightSecHex: '#991b1b',
+        lightThirdHex: '#450a0a',
+        lightCrestHex: '#450a0a',
+        waveColorDark: 0x7f1d1d,
+        secWaveDark: 0xb91c1c,
+        crestWaveDark: 0xfef3c7,
+        rimDark: 0x991b1b,
+        waveColorLight: 0x7f1d1d,
+        secWaveLight: 0x991b1b,
+        crestWaveLight: 0x450a0a,
+        rimLight: 0x7f1d1d
+      },
+      orange: {
+        primaryHex: '#ea580c',
+        hoverHex: '#c2410c',
+        lightHex: '#f97316',
+        secHex: '#facc15',
+        thirdHex: '#ea580c',
+        crestHex: '#fef9c3',
+        lightPrimaryHex: '#c2410c',
+        lightHoverHex: '#9a3412',
+        lightSecHex: '#ea580c',
+        lightThirdHex: '#7c2d12',
+        lightCrestHex: '#9a3412',
+        waveColorDark: 0xea580c,
+        secWaveDark: 0xfacc15,
+        crestWaveDark: 0xfef9c3,
+        rimDark: 0xfdba74,
+        waveColorLight: 0xc2410c,
+        secWaveLight: 0xea580c,
+        crestWaveLight: 0x7c2d12,
+        rimLight: 0xc2410c
+      },
+      neutral: {
+        primaryHex: '#52525b',
+        hoverHex: '#3f3f46',
+        lightHex: '#71717a',
+        secHex: '#a1a1aa',
+        thirdHex: '#52525b',
+        crestHex: '#f8fafc',
+        lightPrimaryHex: '#27272a',
+        lightHoverHex: '#18181b',
+        lightSecHex: '#3f3f46',
+        lightThirdHex: '#09090b',
+        lightCrestHex: '#18181b',
+        waveColorDark: 0x3f3f46,
+        secWaveDark: 0xa1a1aa,
+        crestWaveDark: 0xf8fafc,
+        rimDark: 0xe4e4e7,
+        waveColorLight: 0x27272a,
+        secWaveLight: 0x3f3f46,
+        crestWaveLight: 0x09090b,
+        rimLight: 0x27272a
+      }
+    };
+
+    const commonVertexShader = `
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vNormal = normalize(normalMatrix * normal);
+        vLocalPos = position;
+        vSulcus = uv.x;
+        vec4 mvPos = modelViewMatrix * vec4(position, 1.0);
+        vViewPos = -mvPos.xyz;
+        gl_Position = projectionMatrix * mvPos;
+      }
+    `;
+
+    // SHADER 1: VARREDURA CALMA 12S / ONDULAÇÃO DEGRADÊ HARMÔNICA
+    const sweepSlowFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+        
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 0.85 : uBrightness * 0.9), sulcus * ((uIsLight > 0.5) ? 0.55 : 0.48));
+
+        float rim = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.4);
+        if (uIsLight > 0.5) surface *= (1.0 - rim * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        vec3 waveCol = vec3(0.0);
+        if (uWaveMode < 0.5) {
+          float und1 = sin(axisAP * 3.5 - uTime * 0.52) * 0.5 + 0.5;
+          float und2 = sin(curvedAP * 7.0 - uTime * 0.78) * 0.5 + 0.5;
+          float waveNorm = smoothstep(0.12, 0.88, mix(und1, und2, 0.22));
+
+          vec3 waveHarmonic;
+          if (waveNorm < 0.5) {
+            waveHarmonic = mix(uWaveColor, uSecondaryWave, smoothstep(0.0, 0.5, waveNorm));
+          } else {
+            waveHarmonic = mix(uSecondaryWave, uCrestWave, smoothstep(0.5, 1.0, waveNorm));
+          }
+          float sulcusGleam = sulcus * 0.45 + 0.55;
+          float waveAmp = (uIsLight > 0.5) ? 0.38 : 0.32;
+          waveCol = waveHarmonic * waveNorm * sulcusGleam * waveAmp;
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.16, 1.16, wavePhase);
+          float dist = abs(curvedAP - targetPos);
+
+          float beam = 1.0 - smoothstep(0.0, 0.28, dist);
+          float core = 1.0 - smoothstep(0.0, 0.08, dist);
+
+          vec3 sweepHarmonic = mix(uWaveColor, uSecondaryWave, beam);
+          sweepHarmonic = mix(sweepHarmonic, uCrestWave, core);
+          float sulcalIgnition = beam * (sulcus * 0.8 + 0.4);
+          float sweepAmp = (uIsLight > 0.5) ? 0.42 : 0.35;
+          waveCol = sweepHarmonic * (sulcalIgnition * 0.65 + core * 0.35) * sweepAmp;
+        }
+
+        vec3 finalColor = surface + waveCol;
+        finalColor += uRimColor * rim * ((uIsLight > 0.5) ? 0.35 : 0.55);
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    // SHADER 2: ESCULTURA POLIDA (ULTRA-CLEAN)
+    const sweepSculptFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 1.0 : uBrightness * 0.9), sulcus * 0.45);
+
+        vec3 reflectDir = reflect(-keyDir, norm);
+        float spec = pow(max(dot(reflectDir, viewDir), 0.0), 22.0) * (uIsLight > 0.5 ? 0.24 : 0.42);
+
+        float rim = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.2);
+        if (uIsLight > 0.5) surface *= (1.0 - rim * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        vec3 waveCol = vec3(0.0);
+        if (uWaveMode < 0.5) {
+          float und1 = sin(curvedAP * 3.6 - uTime * 0.52) * 0.5 + 0.5;
+          float und2 = sin(axisAP * 7.2 - uTime * 0.78) * 0.5 + 0.5;
+          float waveNorm = smoothstep(0.12, 0.88, mix(und1, und2, 0.22));
+
+          vec3 waveHarmonic;
+          if (waveNorm < 0.5) {
+            waveHarmonic = mix(uWaveColor, uSecondaryWave, smoothstep(0.0, 0.5, waveNorm));
+          } else {
+            waveHarmonic = mix(uSecondaryWave, uCrestWave, smoothstep(0.5, 1.0, waveNorm));
+          }
+          waveCol = waveHarmonic * waveNorm * ((uIsLight > 0.5) ? 0.36 : 0.30);
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.15, 1.15, wavePhase);
+          float dist = abs(curvedAP - targetPos);
+          float beam = 1.0 - smoothstep(0.0, 0.24, dist);
+          float core = 1.0 - smoothstep(0.0, 0.08, dist);
+
+          vec3 sweepHarmonic = mix(uWaveColor, uSecondaryWave, beam);
+          sweepHarmonic = mix(sweepHarmonic, uCrestWave, core);
+          waveCol = sweepHarmonic * (beam * 0.6 + core * 0.4) * ((uIsLight > 0.5) ? 0.42 : 0.35);
+        }
+
+        vec3 finalColor = surface + vec3(spec) + waveCol;
+        finalColor += uRimColor * rim * ((uIsLight > 0.5) ? 0.38 : 0.58);
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    // SHADER 3: FILETE LASER DE PRECISÃO
+    const sweepLaserFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 1.0 : uBrightness * 0.9), sulcus * 0.48);
+
+        float rim = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.5);
+        if (uIsLight > 0.5) surface *= (1.0 - rim * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        vec3 waveCol = vec3(0.0);
+        if (uWaveMode < 0.5) {
+          float und1 = sin(curvedAP * 7.0 - uTime * 0.52) * 0.5 + 0.5;
+          float und2 = sin(curvedAP * 14.0 - uTime * 0.85) * 0.5 + 0.5;
+          float laserInterf = pow(und1 * und2, 1.8);
+
+          vec3 waveHarmonic = mix(uWaveColor, uSecondaryWave, und1);
+          waveHarmonic = mix(waveHarmonic, uCrestWave, laserInterf);
+          waveCol = waveHarmonic * laserInterf * ((uIsLight > 0.5) ? 0.70 : 0.85);
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.10, 1.10, wavePhase);
+          float dist = abs(curvedAP - targetPos);
+
+          float laserCore = 1.0 - smoothstep(0.0, 0.038, dist);
+          float laserHalo = 1.0 - smoothstep(0.0, 0.15, dist);
+          float trail = clamp((targetPos - curvedAP) / 0.38, 0.0, 1.0) * step(curvedAP, targetPos);
+
+          vec3 sweepHarmonic = mix(uWaveColor, uSecondaryWave, laserHalo);
+          sweepHarmonic = mix(sweepHarmonic, uCrestWave, laserCore);
+          waveCol = sweepHarmonic * (laserCore * 1.5 + laserHalo * 0.55 + trail * 0.25) * ((uIsLight > 0.5) ? 0.75 : 0.88);
+        }
+
+        vec3 finalColor = surface + waveCol;
+        finalColor += uRimColor * rim * ((uIsLight > 0.5) ? 0.35 : 0.55);
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    // SHADER 4: ANÉIS NOS GIROS (CONFORMAL RINGS)
+    const conformalGyriFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 1.0 : uBrightness * 0.9), sulcus * 0.48);
+
+        float rim = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.3);
+        if (uIsLight > 0.5) surface *= (1.0 - rim * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        float rings = abs(sin(vLocalPos.y * 38.0 + vSulcus * 14.0));
+        float ringLine = smoothstep(0.80, 0.96, rings);
+
+        float waveNorm = 0.0;
+        if (uWaveMode < 0.5) {
+          float und = sin(axisAP * 4.2 - uTime * 0.55) * 0.5 + 0.5;
+          waveNorm = smoothstep(0.15, 0.85, und);
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.15, 1.15, wavePhase);
+          float dist = abs(curvedAP - targetPos);
+          waveNorm = 1.0 - smoothstep(0.0, 0.25, dist);
+        }
+
+        vec3 ringCol = mix(uWaveColor, uSecondaryWave, ringLine);
+        ringCol = mix(ringCol, uCrestWave, ringLine * waveNorm);
+        vec3 waveCol = ringCol * (ringLine * waveNorm * 1.3 + waveNorm * 0.25 + ringLine * 0.15) * ((uIsLight > 0.5) ? 0.40 : 0.35);
+
+        vec3 finalColor = surface + waveCol;
+        finalColor += uRimColor * rim * 0.55;
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    // SHADER 5: MALHA QUAD (GRADE NEURAL)
+    const quadWideFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 1.0 : uBrightness * 0.9), sulcus * 0.48);
+
+        float rim = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.3);
+        if (uIsLight > 0.5) surface *= (1.0 - rim * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        vec3 grid3d = abs(fract(vLocalPos * 12.0 - 0.5) - 0.5) / (fwidth(vLocalPos * 12.0) + 0.001);
+        float minGrid = min(min(grid3d.x, grid3d.y), grid3d.z);
+        float gridLine = 1.0 - smoothstep(0.0, 1.1, minGrid);
+
+        float waveNorm = 0.0;
+        if (uWaveMode < 0.5) {
+          float und = sin(axisAP * 4.0 - uTime * 0.55) * 0.5 + 0.5;
+          waveNorm = smoothstep(0.18, 0.82, und);
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.15, 1.15, wavePhase);
+          waveNorm = 1.0 - smoothstep(0.0, 0.25, abs(curvedAP - targetPos));
+        }
+
+        vec3 gridCol = mix(uWaveColor, uSecondaryWave, gridLine);
+        gridCol = mix(gridCol, uCrestWave, gridLine * waveNorm);
+        vec3 waveCol = gridCol * (gridLine * waveNorm * 1.3 + gridLine * 0.18 + waveNorm * 0.28) * ((uIsLight > 0.5) ? 0.40 : 0.35);
+
+        vec3 finalColor = surface + waveCol;
+        finalColor += uRimColor * rim * 0.55;
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    // SHADER 6: TRIANGULAR (WIREFRAME HOLOGRÁFICO)
+    const triangleFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 1.0 : uBrightness * 0.9), sulcus * 0.48);
+
+        float rim = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.4);
+        if (uIsLight > 0.5) surface *= (1.0 - rim * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        vec2 triPos = vLocalPos.xy * 15.0;
+        float line1 = abs(fract(triPos.x) - 0.5);
+        float line2 = abs(fract(triPos.x * 0.5 + triPos.y * 0.866) - 0.5);
+        float line3 = abs(fract(triPos.x * 0.5 - triPos.y * 0.866) - 0.5);
+        float minTri = min(min(line1, line2), line3);
+        float triWire = 1.0 - smoothstep(0.02, 0.09, minTri);
+
+        float waveNorm = 0.0;
+        if (uWaveMode < 0.5) {
+          float und = sin(curvedAP * 4.2 - uTime * 0.55) * 0.5 + 0.5;
+          waveNorm = smoothstep(0.2, 0.8, und);
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.15, 1.15, wavePhase);
+          waveNorm = 1.0 - smoothstep(0.0, 0.24, abs(curvedAP - targetPos));
+        }
+
+        vec3 wireCol = mix(uWaveColor, uSecondaryWave, triWire);
+        wireCol = mix(wireCol, uCrestWave, triWire * waveNorm);
+        vec3 waveCol = wireCol * (triWire * waveNorm * 1.3 + triWire * 0.16 + waveNorm * 0.25) * ((uIsLight > 0.5) ? 0.40 : 0.35);
+
+        vec3 finalColor = surface + waveCol;
+        finalColor += uRimColor * rim * 0.55;
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    // SHADER 7: LINEWORK & ONDAS (DEGRADÊ ONDULANTE vs VARREDURA)
+    const lineworkWaveFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float ambientFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + ambientFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 1.0 : uBrightness * 0.9), sulcus * 0.48);
+
+        float rimFactor = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.4);
+        if (uIsLight > 0.5) surface *= (1.0 - rimFactor * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        vec3 activeWave = vec3(0.0);
+
+        if (uWaveMode < 0.5) {
+          float und1 = sin(curvedAP * 3.6 - uTime * 0.52) * 0.5 + 0.5;
+          float und2 = sin(axisAP * 7.2 - uTime * 0.78) * 0.5 + 0.5;
+          float smoothWave = smoothstep(0.12, 0.88, mix(und1, und2, 0.22));
+
+          vec3 waveHarmonic;
+          if (smoothWave < 0.5) {
+            waveHarmonic = mix(uWaveColor, uSecondaryWave, smoothstep(0.0, 0.5, smoothWave));
+          } else {
+            waveHarmonic = mix(uSecondaryWave, uCrestWave, smoothstep(0.5, 1.0, smoothWave));
+          }
+
+          float sulcalPresence = sulcus * 0.65 + 0.35;
+          activeWave = waveHarmonic * smoothWave * sulcalPresence * (uIsLight > 0.5 ? 0.38 : 0.32);
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.15, 1.15, wavePhase);
+          float dist = abs(curvedAP - targetPos);
+
+          float waveBeam = 1.0 - smoothstep(0.0, 0.25, dist);
+          float waveCore = 1.0 - smoothstep(0.0, 0.06, dist);
+
+          vec3 sweepHarmonic = mix(uWaveColor, uSecondaryWave, waveBeam);
+          sweepHarmonic = mix(sweepHarmonic, uCrestWave, waveCore);
+
+          float sulcalIgnition = waveBeam * (sulcus * 1.2 + 0.3);
+          activeWave = sweepHarmonic * (sulcalIgnition * 0.65 + waveCore * 0.35) * (uIsLight > 0.5 ? 0.42 : 0.35);
+        }
+
+        vec3 finalColor = surface + activeWave;
+        finalColor += uRimColor * rimFactor * ((uIsLight > 0.5) ? 0.35 : 0.55);
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    // SHADER 8: SINAPSES (NÓS E DISPAROS NEURAIS)
+    const synapseFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 1.0 : uBrightness * 0.9), sulcus * 0.48);
+
+        float rim = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.3);
+        if (uIsLight > 0.5) surface *= (1.0 - rim * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        vec3 cell = floor(vLocalPos * 22.0);
+        float hash = fract(sin(dot(cell, vec3(127.1, 311.7, 74.7))) * 43758.5453);
+        vec3 fracPos = fract(vLocalPos * 22.0) - 0.5;
+        float distNode = length(fracPos);
+        float node = 1.0 - smoothstep(0.10, 0.26, distNode);
+
+        float waveNorm = 0.0;
+        if (uWaveMode < 0.5) {
+          float und = sin(axisAP * 4.8 - uTime * 0.55 + hash * 3.14159) * 0.5 + 0.5;
+          waveNorm = pow(und, 2.2);
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.15, 1.15, wavePhase);
+          float dist = abs(curvedAP - targetPos);
+          float beam = 1.0 - smoothstep(0.0, 0.22, dist);
+          waveNorm = beam * (0.4 + 0.6 * hash);
+        }
+
+        vec3 fireCol = mix(uWaveColor, uSecondaryWave, waveNorm);
+        fireCol = mix(fireCol, uCrestWave, node * waveNorm);
+        vec3 waveCol = fireCol * (node * waveNorm * 1.8 + node * 0.18 + waveNorm * 0.24) * ((uIsLight > 0.5) ? 0.40 : 0.34);
+
+        vec3 finalColor = surface + waveCol;
+        finalColor += uRimColor * rim * 0.55;
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    // SHADER 9: VIDRO FOSCO (FROSTED SAPPHIRE GLASS)
+    const glassFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.48);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.45);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.32);
+        vec3 surface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        surface = mix(surface, uSulcusColor * (uIsLight > 0.5 ? 1.0 : uBrightness * 0.9), sulcus * 0.48);
+
+        float fresnel = pow(1.0 - clamp(abs(dot(norm, viewDir)), 0.0, 1.0), 2.0);
+        float internal = pow(clamp(dot(norm, -viewDir) * 0.5 + 0.5, 0.0, 1.0), 1.8);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        float waveNorm = 0.0;
+        if (uWaveMode < 0.5) {
+          waveNorm = sin(curvedAP * 3.8 - uTime * 0.52) * 0.5 + 0.5;
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.15, 1.15, wavePhase);
+          waveNorm = 1.0 - smoothstep(0.0, 0.26, abs(curvedAP - targetPos));
+        }
+
+        vec3 waveHarmonic = mix(uWaveColor, uSecondaryWave, waveNorm);
+        waveHarmonic = mix(waveHarmonic, uCrestWave, fresnel * waveNorm);
+
+        vec3 glassBase = mix(surface * 0.75, uRimColor, fresnel * 0.50 + internal * 0.20);
+        vec3 waveCol = waveHarmonic * (waveNorm * 0.55 + fresnel * waveNorm * 0.65) * ((uIsLight > 0.5) ? 0.45 : 0.38);
+        vec3 finalColor = glassBase + waveCol;
+        finalColor += vec3(pow(max(dot(reflect(-keyDir, norm), viewDir), 0.0), 30.0) * 0.45);
+        gl_FragColor = vec4(finalColor, uOpacity * 0.95);
+      }
+    `;
+
+    // SHADER 10: ARGILA CLAY (STUDIO MATTE)
+    const clayFS = `
+      uniform vec3 uBaseColor;
+      uniform vec3 uSulcusColor;
+      uniform vec3 uWaveColor;
+      uniform vec3 uSecondaryWave;
+      uniform vec3 uCrestWave;
+      uniform vec3 uRimColor;
+      uniform float uTime;
+      uniform float uBrightness;
+      uniform float uWaveMode;
+      uniform float uOpacity;
+      uniform float uIsLight;
+
+      varying vec3 vNormal;
+      varying vec3 vLocalPos;
+      varying vec3 vViewPos;
+      varying float vSulcus;
+
+      void main() {
+        vec3 norm = normalize(vNormal);
+        vec3 viewDir = normalize(vViewPos);
+        vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
+        float key = max(dot(norm, keyDir), 0.0);
+        float fill = max(dot(norm, normalize(vec3(-0.8, -0.2, 0.5))), 0.0) * 0.45;
+        float hemi = norm.y * 0.5 + 0.5;
+
+        float baseFloor = (uIsLight > 0.5) ? 0.44 : (0.58 * uBrightness);
+        float keyTerm = key * ((uIsLight > 0.5) ? 0.38 : 0.45);
+        float fillTerm = fill * ((uIsLight > 0.5) ? 0.32 : 0.40);
+        float hemiTerm = hemi * ((uIsLight > 0.5) ? 0.25 : 0.35);
+
+        float sulcus = smoothstep(0.38, 0.90, vSulcus);
+        float ao = 1.0 - sulcus * 0.42;
+        vec3 claySurface = uBaseColor * (keyTerm + fillTerm + hemiTerm + baseFloor) * ao;
+
+        float rim = pow(1.0 - clamp(dot(viewDir, norm), 0.0, 1.0), 2.8);
+        if (uIsLight > 0.5) claySurface *= (1.0 - rim * 0.18);
+
+        float axisAP = clamp((vLocalPos.x + 1.56) / 3.12, 0.0, 1.0);
+        float curvedAP = clamp(axisAP + vLocalPos.y * 0.08, 0.0, 1.0);
+
+        vec3 waveCol = vec3(0.0);
+        if (uWaveMode < 0.5) {
+          float und1 = sin(axisAP * 3.5 - uTime * 0.50) * 0.5 + 0.5;
+          float und2 = sin(curvedAP * 7.0 - uTime * 0.75) * 0.5 + 0.5;
+          float waveNorm = smoothstep(0.12, 0.88, mix(und1, und2, 0.22));
+
+          vec3 waveHarmonic;
+          if (waveNorm < 0.5) {
+            waveHarmonic = mix(uWaveColor, uSecondaryWave, smoothstep(0.0, 0.5, waveNorm));
+          } else {
+            waveHarmonic = mix(uSecondaryWave, uCrestWave, smoothstep(0.5, 1.0, waveNorm));
+          }
+          waveCol = waveHarmonic * waveNorm * ((uIsLight > 0.5) ? 0.32 : 0.26);
+        } else {
+          float cycleT = mod(uTime, 12.0) / 12.0;
+          float wavePhase = 0.5 - 0.5 * cos(cycleT * 6.2831853);
+          float targetPos = mix(-0.15, 1.15, wavePhase);
+          float dist = abs(curvedAP - targetPos);
+          float beam = 1.0 - smoothstep(0.0, 0.25, dist);
+
+          vec3 sweepHarmonic = mix(uWaveColor, uSecondaryWave, beam);
+          waveCol = sweepHarmonic * beam * ((uIsLight > 0.5) ? 0.38 : 0.30);
+        }
+
+        vec3 finalColor = claySurface + waveCol;
+        finalColor += uRimColor * rim * 0.35;
+        gl_FragColor = vec4(finalColor, uOpacity);
+      }
+    `;
+
+    function init() {
+      const container = document.getElementById('canvas-container');
+      clock = new THREE.Clock();
+
+      scene = new THREE.Scene();
+
+      // CÂMERA CALIBRADA PARA ENQUADRAMENTO COMPLETO (ZERO CLIPPING NAS BORDAS)
+      camera = new THREE.PerspectiveCamera(36, container.clientWidth / container.clientHeight, 0.1, 100);
+      camera.position.set(4.4, 1.1, 4.8);
+      camera.lookAt(0, 0, 0);
+
+      renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.15;
+      container.appendChild(renderer.domElement);
+
+      // CONTROLES DE ROTAÇÃO 3D INTERATIVOS
+      controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.05;
+      controls.target.set(0, 0, 0);
+      controls.autoRotate = autoRotate;
+      controls.autoRotateSpeed = 0.6;
+      controls.update();
+
+      // EXPOR GLOBALMENTE PARA DEBUGGING SEGURO
+      window.__scene = scene;
+      window.__camera = camera;
+      window.__renderer = renderer;
+
+      const loader = new GLTFLoader();
+      loader.load('/models/cerebrum-papez-v7.glb', (gltf) => {
+        brainGroup = gltf.scene;
+        window.__brainGroup = brainGroup;
+
+        brainGroup.traverse((child) => {
+          if (child.isMesh) {
+            const name = child.name.toLowerCase();
+            if (name.includes('cortex') || name.includes('cerebrum') || name.includes('hemisphere') || name.includes('gyri') || name.includes('crest')) {
+              cortexMeshes.push(child);
+            } else {
+              papezMeshes.push(child);
+              if (name.includes('hippocampus') || name.includes('hipocampo')) {
+                hippocampusMesh = child;
+              }
+            }
+          }
+        });
+
+        // Centralizar geometricamente
+        const box = new THREE.Box3().setFromObject(brainGroup);
+        const center = box.getCenter(new THREE.Vector3());
+        brainGroup.position.sub(center);
+        scene.add(brainGroup);
+
+        updateThemeCssVars();
+        applyCurrentStyle();
+        updateScrollyStage(0);
+
+        const overlay = document.getElementById('loading-overlay');
+        if (overlay) {
+          overlay.style.opacity = '0';
+          setTimeout(() => overlay.remove(), 400);
+        }
+      });
+
+      window.addEventListener('scroll', onPageScroll, { passive: true });
+      window.addEventListener('resize', onWindowResize);
+    }
+
+    function createMaterialForMesh(style, isCortex, isHippocampus) {
+      const opacity = 1.0;
+      const isL = isLightMode ? 1.0 : 0.0;
+      const acc = THEME_ACCENTS[currentAccent] || THEME_ACCENTS.cyan;
+
+      // PALETAS CALIBRADAS COM MÁXIMA NITIDEZ EM AMBOS OS MODOS
+      // Modo Escuro: Titânio/Gunmetal acetinado elegante (alta luminância difusa para total visibilidade contra preto)
+      const darkBase = isCortex ? new THREE.Color(0x6b7c93) : new THREE.Color(0x8294ab);
+      const darkSulcus = new THREE.Color(0x1e2633);
+      const darkRim = new THREE.Color(acc.rimDark);
+      const darkWave = new THREE.Color(acc.waveColorDark);
+      const darkWave2 = new THREE.Color(acc.secWaveDark);
+      const darkCrest = new THREE.Color(acc.crestWaveDark);
+
+      // Modo Claro: Cerâmica mineral branca-a-cinza alabastro pura (zero washout, sulcos cinza-escuros profundos)
+      const lightBase = isCortex ? new THREE.Color(0xf1f3f5) : new THREE.Color(0xf8f9fa);
+      const lightSulcus = new THREE.Color(0x27272a);
+      const lightRim = new THREE.Color(acc.rimLight);
+      const lightWave = new THREE.Color(acc.waveColorLight);
+      const lightWave2 = new THREE.Color(acc.secWaveLight);
+      const lightCrest = new THREE.Color(acc.crestWaveLight);
+
+      const uniforms = {
+        uBaseColor: { value: isLightMode ? lightBase : darkBase },
+        uSulcusColor: { value: isLightMode ? lightSulcus : darkSulcus },
+        uWaveColor: { value: isLightMode ? lightWave : darkWave },
+        uSecondaryWave: { value: isLightMode ? lightWave2 : darkWave2 },
+        uCrestWave: { value: isLightMode ? lightCrest : darkCrest },
+        uRimColor: { value: isLightMode ? lightRim : darkRim },
+        uTime: { value: 0.0 },
+        uBrightness: { value: brainBrightness },
+        uWaveMode: { value: waveMode },
+        uOpacity: { value: opacity },
+        uIsLight: { value: isL }
+      };
+
+      let selectedFS;
+      switch (style) {
+        case 'sweep_slow': selectedFS = sweepSlowFS; break;
+        case 'sweep_sculpt': selectedFS = sweepSculptFS; break;
+        case 'sweep_laser': selectedFS = sweepLaserFS; break;
+        case 'conformal_gyri': selectedFS = conformalGyriFS; break;
+        case 'quad_wide': selectedFS = quadWideFS; break;
+        case 'triangle': selectedFS = triangleFS; break;
+        case 'linework_wave': selectedFS = lineworkWaveFS; break;
+        case 'synapse': selectedFS = synapseFS; break;
+        case 'glass': selectedFS = glassFS; break;
+        case 'clay': selectedFS = clayFS; break;
+        default: selectedFS = sweepSlowFS; break;
+      }
+
+      const mat = new THREE.ShaderMaterial({
+        vertexShader: commonVertexShader,
+        fragmentShader: selectedFS,
+        uniforms: uniforms,
+        transparent: (style === 'glass'),
+        depthWrite: true
+      });
+
+      activeMaterials.push(mat);
+      return mat;
+    }
+
+    function applyCurrentStyle() {
+      if (!brainGroup) return;
+      activeMaterials.length = 0;
+
+      cortexMeshes.forEach(mesh => {
+        mesh.material = createMaterialForMesh(currentStyle, true, false);
+      });
+
+      papezMeshes.forEach(mesh => {
+        const isHippo = (mesh === hippocampusMesh);
+        mesh.material = createMaterialForMesh(currentStyle, false, isHippo);
+      });
+    }
+
+    // JORNADA COMPLETA / SCROLLYTELLING
+    function updateScrollyStage(t) {
+      document.getElementById('journey-slider').value = t;
+
+      // 1. Posição do Cérebro em X (da direita do Hero para a esquerda do Scrolly)
+      const container = document.getElementById('canvas-container');
+      const isMobile = window.innerWidth < 1024;
+      
+      if (!isMobile) {
+        // Desktop: direita (right: 40px) desliza até o lado esquerdo (left: 40px)
+        const shiftX = - (window.innerWidth * 0.44) * t;
+        container.style.transform = `translate(${shiftX.toFixed(1)}px, -50%)`;
+      } else {
+        container.style.transform = `translate(-50%, -50%)`;
+      }
+
+      // 2. Opacidade da Headline da Esquerda
+      const headline = document.getElementById('hero-headline');
+      const headlineOpacity = Math.max(0, 1 - t * 3.5);
+      headline.style.opacity = headlineOpacity.toFixed(2);
+      headline.style.pointerEvents = headlineOpacity > 0.3 ? 'auto' : 'none';
+
+      // 3. Dissecação Cirúrgica Sólida (abre lateralmente de 0.30 a 0.70)
+      const dissectT = Math.max(0, Math.min(1, (t - 0.30) / 0.40));
+      const driftDist = dissectT * 2.2;
+      
+      cortexMeshes.forEach(mesh => {
+        const isLeft = mesh.name.toLowerCase().includes('left');
+        mesh.position.set(
+          isLeft ? -driftDist : driftDist,
+          0,
+          isLeft ? (driftDist * 0.7) : (-driftDist * 0.7)
+        );
+        mesh.visible = (dissectT < 0.98);
+      });
+
+      // 4. Ativação dos Cards de Storytelling
+      const card0 = document.getElementById('card-0');
+      const card1 = document.getElementById('card-1');
+      const card2 = document.getElementById('card-2');
+
+      card0.classList.toggle('active', t >= 0.20 && t < 0.50);
+      card1.classList.toggle('active', t >= 0.50 && t < 0.80);
+      card2.classList.toggle('active', t >= 0.80);
+
+      // Botões de passo
+      document.getElementById('btn-hero-step0').classList.toggle('active', t < 0.25);
+      document.getElementById('btn-hero-step1').classList.toggle('active', t >= 0.25 && t < 0.75);
+      document.getElementById('btn-hero-step2').classList.toggle('active', t >= 0.75);
+    }
+
+    function onPageScroll() {
+      const scrollY = window.scrollY;
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      if (maxScroll > 10) {
+        const t = Math.max(0, Math.min(1, scrollY / maxScroll));
+        updateScrollyStage(t);
+      }
+    }
+
+    window.setJourneyProgress = function(t) {
+      updateScrollyStage(t);
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+      window.scrollTo({ top: t * maxScroll, behavior: 'smooth' });
+    };
+
+    window.switchStyle = function(styleKey) {
+      currentStyle = styleKey;
+      document.querySelectorAll('.style-item').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.querySelector(`[onclick*="${styleKey}"]`);
+      if (activeBtn) activeBtn.classList.add('active');
+      applyCurrentStyle();
+    };
+
+    window.filterCategory = function(cat) {
+      document.querySelectorAll('.cat-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.querySelector(`.cat-btn[onclick*="${cat}"]`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const items = document.querySelectorAll('.style-item');
+      items.forEach(item => {
+        if (cat === 'all' || item.dataset.category === cat) {
+          item.style.display = 'inline-flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    };
+
+    window.setWaveMode = function(mode) {
+      waveMode = mode;
+      document.getElementById('btn-mode-undulate').classList.toggle('active', mode === 0);
+      document.getElementById('btn-mode-beam').classList.toggle('active', mode === 1);
+      
+      for (let i = 0; i < activeMaterials.length; i++) {
+        const mat = activeMaterials[i];
+        if (mat.uniforms && mat.uniforms.uWaveMode) {
+          mat.uniforms.uWaveMode.value = mode;
+        }
+      }
+    };
+
+    window.setBrightness = function(val) {
+      brainBrightness = parseFloat(val);
+      document.querySelectorAll('.subcontrols-bar .pill-btn').forEach(btn => btn.classList.remove('active'));
+      if (Math.abs(brainBrightness - 0.68) < 0.05) document.getElementById('btn-bright-mid')?.classList.add('active');
+      
+      for (let i = 0; i < activeMaterials.length; i++) {
+        const mat = activeMaterials[i];
+        if (mat.uniforms && mat.uniforms.uBrightness) {
+          mat.uniforms.uBrightness.value = brainBrightness;
+        }
+      }
+    };
+
+    function updateThemeCssVars() {
+      const acc = THEME_ACCENTS[currentAccent] || THEME_ACCENTS.cyan;
+      const isL = isLightMode;
+
+      document.documentElement.style.setProperty('--accent-primary', isL ? acc.lightPrimaryHex : acc.primaryHex);
+      document.documentElement.style.setProperty('--accent-hover', isL ? acc.lightHoverHex : acc.hoverHex);
+      document.documentElement.style.setProperty('--accent-light', isL ? acc.lightPrimaryHex : acc.lightHex);
+      document.documentElement.style.setProperty('--accent-glow', isL ? 'rgba(0, 0, 0, 0.12)' : 'rgba(56, 189, 248, 0.4)');
+
+      // Degradê harmônico de 3 cores para as letras (idêntico ao cérebro)
+      document.documentElement.style.setProperty('--accent-grad1', isL ? acc.lightPrimaryHex : acc.primaryHex);
+      document.documentElement.style.setProperty('--accent-grad2', isL ? acc.lightSecHex : acc.secHex);
+      document.documentElement.style.setProperty('--accent-crest', isL ? acc.lightCrestHex : acc.crestHex);
+      document.documentElement.style.setProperty('--accent-grad3', isL ? acc.lightThirdHex : acc.thirdHex);
+    }
+
+    // ADAPTAÇÃO DA COR DO CÉREBRO AO TEMA
+    window.setThemeAccent = function(accentKey) {
+      currentAccent = accentKey;
+      const acc = THEME_ACCENTS[accentKey] || THEME_ACCENTS.cyan;
+
+      document.querySelectorAll('.accent-swatch').forEach(s => s.classList.remove('active'));
+      const activeSwatch = document.querySelector(`[onclick*="${accentKey}"]`);
+      if (activeSwatch) activeSwatch.classList.add('active');
+
+      updateThemeCssVars();
+      applyCurrentStyle();
+    };
+
+    window.toggleTheme = function() {
+      isLightMode = !isLightMode;
+      document.body.classList.toggle('light-theme', isLightMode);
+
+      const label = isLightMode ? 'Modo Escuro' : 'Modo Claro';
+      const icon = isLightMode ? '🌙' : '☀️';
+      
+      document.getElementById('theme-icon-top').textContent = icon;
+      document.getElementById('theme-text-top').textContent = label;
+      document.getElementById('theme-icon-dock').textContent = icon;
+      document.getElementById('theme-text-dock').textContent = label;
+
+      updateThemeCssVars();
+      applyCurrentStyle();
+    };
+
+    window.toggleAutoRotate = function() {
+      autoRotate = !autoRotate;
+      if (controls) controls.autoRotate = autoRotate;
+      document.getElementById('btn-rotate-toggle').classList.toggle('active', autoRotate);
+    };
+
+    window.resetCamera = function() {
+      if (camera && controls) {
+        camera.position.set(4.4, 1.1, 4.8);
+        camera.fov = 36;
+        camera.updateProjectionMatrix();
+        controls.target.set(0, 0, 0);
+        controls.update();
+      }
+    };
+
+    function onWindowResize() {
+      const container = document.getElementById('canvas-container');
+      camera.aspect = container.clientWidth / container.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(container.clientWidth, container.clientHeight);
+    }
+
+    function animate() {
+      requestAnimationFrame(animate);
+      const elapsedTime = clock.getElapsedTime();
+
+      if (controls) {
+        controls.update();
+      }
+
+      for (let i = 0; i < activeMaterials.length; i++) {
+        const mat = activeMaterials[i];
+        if (mat.uniforms && mat.uniforms.uTime) {
+          mat.uniforms.uTime.value = elapsedTime;
+        }
+      }
+
+      renderer.render(scene, camera);
+    }
+
+    init();
+    animate();
+  </script>
+</body>
+</html>

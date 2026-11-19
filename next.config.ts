@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
+import { withMotionStudio } from 'motion-studio/next';
 
 const isDev = process.env.NODE_ENV === 'development';
+const motionStudioEnabled = isDev && process.env.HIPPOCAMPUS_MOTION_STUDIO === '1';
+const motionStudioOrigin = 'http://localhost:5200';
 
 const nextConfig: NextConfig = {
+  devIndicators: false,
   poweredByHeader: false,
   images: {
     remotePatterns: [
@@ -43,6 +47,24 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: '/models/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ]
+      },
+      {
+        source: '/simulado-priapismo',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=60, s-maxage=3600, stale-while-revalidate=86400'
+          }
+        ]
+      },
+      {
         source: '/(.*)',
         headers: [
           {
@@ -81,7 +103,7 @@ const nextConfig: NextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "img-src 'self' data: blob: https:",
               "font-src 'self' data: https://fonts.gstatic.com",
-              "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com https://accounts.google.com https://www.googleapis.com",
+              `connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com https://accounts.google.com https://www.googleapis.com wss: ws:${motionStudioEnabled ? ` ${motionStudioOrigin} ws://localhost:5200` : ''}`,
               "frame-src 'self' https://accounts.google.com https://*.mercadopago.com https://www.mercadopago.com.br",
               "frame-ancestors 'none'",
               "object-src 'none'",
@@ -102,4 +124,8 @@ const nextConfig: NextConfig = {
   }
 };
 
-export default nextConfig;
+export default motionStudioEnabled
+  ? withMotionStudio(nextConfig as unknown as Parameters<typeof withMotionStudio>[0], {
+      serverUrl: motionStudioOrigin
+    })
+  : nextConfig;

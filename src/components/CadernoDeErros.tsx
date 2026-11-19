@@ -827,7 +827,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 onClick={() => setSelectedModalGroup(group)}
                 className="w-full bg-white dark:bg-[#131316] border border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-300 dark:hover:border-zinc-700 rounded-2xl px-4 sm:px-5 py-3 sm:py-3.5 flex flex-col md:grid md:grid-cols-[1fr_210px_160px] md:items-center gap-3 shadow-2xs hover:shadow-xs hover:bg-zinc-50/70 dark:hover:bg-[#17171b] hover:scale-[1.004] active:scale-[0.99] transition-all font-inter cursor-pointer group"
               >
-                {/* Lado Esquerdo: Nome do Tópico + Hierarquia sutil no hover */}
+                {/* Lado Esquerdo: Nome do Tópico + Hierarquia sempre visível em telas touch */}
                 <div className="min-w-0 pr-3">
                   <h4
                     className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate group-hover:text-sky-500 dark:group-hover:text-sky-400 transition-colors"
@@ -836,50 +836,52 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                     {group.name}
                   </h4>
                   {parentHierarchy && (
-                    <div className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500 truncate transition-all duration-150 opacity-0 group-hover:opacity-100 h-0 group-hover:h-3.5 mt-0 group-hover:mt-0.5 pointer-events-none">
+                    <div className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500 truncate transition-all duration-150 opacity-100 h-3.5 mt-0.5 md:opacity-0 md:h-0 md:mt-0 md:group-hover:opacity-100 md:group-hover:h-3.5 md:group-hover:mt-0.5 pointer-events-none">
                       {parentHierarchy}
                     </div>
                   )}
                 </div>
 
-                {/* Centro: Mini-Barra Visual de Aproveitamento (Alinhamento Estrito de Colunas) */}
-                <div className="flex items-center gap-3 shrink-0 py-1 md:py-0">
-                  <div className="w-24 sm:w-28 h-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800/80 overflow-hidden shrink-0">
-                    <div
-                      className={`h-full rounded-full transition-all duration-500 ${
-                        isLowAccuracy ? 'bg-rose-500' : 'bg-emerald-500'
+                <div className="flex items-center justify-between gap-2 w-full md:contents">
+                  {/* Centro: Mini-Barra Visual de Aproveitamento (Alinhamento Estrito de Colunas) */}
+                  <div className="flex items-center gap-2.5 sm:gap-3 shrink-0 py-0.5 md:py-0">
+                    <div className="w-20 sm:w-28 h-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800/80 overflow-hidden shrink-0">
+                      <div
+                        className={`h-full rounded-full transition-all duration-500 ${
+                          isLowAccuracy ? 'bg-rose-500' : 'bg-emerald-500'
+                        }`}
+                        style={{ width: `${Math.max(group.accuracyPercent, 3)}%` }}
+                      />
+                    </div>
+                    <span
+                      className={`text-xs font-bold shrink-0 ${
+                        isLowAccuracy ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'
                       }`}
-                      style={{ width: `${Math.max(group.accuracyPercent, 3)}%` }}
-                    />
-                  </div>
-                  <span
-                    className={`text-xs font-bold shrink-0 ${
-                      isLowAccuracy ? 'text-rose-600 dark:text-rose-400' : 'text-emerald-600 dark:text-emerald-400'
-                    }`}
-                  >
-                    {group.accuracyPercent}% acerto
-                  </span>
-                </div>
-
-                {/* Lado Direito: Badge Integrado de Erros/Superadas + Seta de Navegação */}
-                <div className="flex items-center gap-2.5 shrink-0 justify-end">
-                  <div className="px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 text-xs font-semibold text-zinc-700 dark:text-zinc-300 flex items-center gap-2 shrink-0 shadow-2xs">
-                    <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                    <span className="text-rose-600 dark:text-rose-400 font-bold">
-                      {group.pendingErrorsCount} {group.pendingErrorsCount === 1 ? 'erro' : 'erros'}
+                    >
+                      {group.accuracyPercent}% acerto
                     </span>
-                    {group.recoveredErrorsCount > 0 && (
-                      <>
-                        <span className="text-zinc-300 dark:text-zinc-700">•</span>
-                        <span className="text-emerald-600 dark:text-emerald-400 font-medium">
-                          {group.recoveredErrorsCount} superadas
-                        </span>
-                      </>
-                    )}
                   </div>
 
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center text-zinc-400 group-hover:text-zinc-100 group-hover:bg-zinc-800/80 transition-all shrink-0">
-                    <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                  {/* Lado Direito: Badge Integrado de Erros/Superadas + Seta de Navegação */}
+                  <div className="flex items-center gap-2 shrink-0 justify-end">
+                    <div className="px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 text-[11px] sm:text-xs font-semibold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5 sm:gap-2 shrink-0 shadow-2xs">
+                      <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                      <span className="text-rose-600 dark:text-rose-400 font-bold">
+                        {group.pendingErrorsCount} {group.pendingErrorsCount === 1 ? 'erro' : 'erros'}
+                      </span>
+                      {group.recoveredErrorsCount > 0 && (
+                        <>
+                          <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                          <span className="text-emerald-600 dark:text-emerald-400 font-medium">
+                            {group.recoveredErrorsCount} <span className="hidden xs:inline">superadas</span>
+                          </span>
+                        </>
+                      )}
+                    </div>
+
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-zinc-400 group-hover:text-zinc-100 group-hover:bg-zinc-800/80 transition-all shrink-0">
+                      <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -897,7 +899,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
           onClick={() => setSelectedModalGroup(null)}
         >
           <div
-            className="w-full max-w-xl bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800/90 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] animate-in zoom-in-95 duration-150"
+            className="w-full max-w-xl bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800/90 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90dvh] animate-in zoom-in-95 duration-150"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header do Modal */}

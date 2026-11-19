@@ -51,7 +51,7 @@ export const TabsList: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   <div
     role="tablist"
     className={cn(
-      'inline-flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/60 border border-zinc-200/60 dark:border-zinc-700/60 text-zinc-600 dark:text-zinc-400',
+      'inline-flex max-w-full overflow-x-auto scrollbar-none items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-800/60 border border-zinc-200/60 dark:border-zinc-700/60 text-zinc-600 dark:text-zinc-400',
       className
     )}
     {...props}

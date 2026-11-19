@@ -552,7 +552,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
 
           {/* Filtros Clínicos Embutidos */}
           <div className="pt-2">
-            <div className="flex items-center justify-between mb-2.5">
+            <div className="flex flex-wrap items-center justify-between gap-2 mb-2.5">
               <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider" style={{ color: accentConfig.timeAccent.hex }}>
                 <Filter className="w-3.5 h-3.5" />
                 <span>Selecione os Critérios da Lista (Obrigatório)</span>
@@ -794,17 +794,17 @@ export const ListManager: React.FC<ListManagerProps> = ({
                                         <FolderIcon className="w-3 h-3 shrink-0" style={{ color: accentConfig.energyAccent.hex }} />
                                         <span className="truncate">{subSub.name}</span>
                                       </div>
-                                      <div className="flex items-center gap-1 shrink-0">
+                                      <div className="flex items-center gap-0.5 shrink-0">
                                         <button
                                           type="button"
                                           onClick={(e) => {
                                             e.stopPropagation();
                                             setEditingFolder({ id: subSub.id, name: subSub.name });
                                           }}
-                                          className="p-0.5 text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                          className="p-2 sm:p-1 text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors touch-manipulation"
                                           title="Renomear pasta nível 3"
                                         >
-                                          <Pencil className="w-2 h-2" />
+                                          <Pencil className="w-3 h-3 sm:w-2.5 sm:h-2.5" />
                                         </button>
                                         <button
                                           type="button"
@@ -812,12 +812,12 @@ export const ListManager: React.FC<ListManagerProps> = ({
                                             e.stopPropagation();
                                             setDeletingFolderId(subSub.id);
                                           }}
-                                          className="p-0.5 text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                          className="p-2 sm:p-1 text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors touch-manipulation"
                                           title="Excluir pasta nível 3"
                                         >
-                                          <Trash2 className="w-2 h-2" />
+                                          <Trash2 className="w-3 h-3 sm:w-2.5 sm:h-2.5" />
                                         </button>
-                                        <span className="text-[9px] text-slate-400 font-mono ml-0.5">
+                                        <span className="text-[10px] text-slate-400 font-mono ml-0.5">
                                           {lists.filter((l) => l.folderId === subSub.id).length}
                                         </span>
                                       </div>
@@ -851,9 +851,9 @@ export const ListManager: React.FC<ListManagerProps> = ({
               return (
                 <div
                   key={list.id}
-                  className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 rounded-2xl p-5 transition-all shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+                  className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 rounded-2xl p-4 sm:p-5 transition-all shadow-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3.5 sm:gap-4"
                 >
-                  <div className="space-y-2 flex-1 min-w-0">
+                  <div className="space-y-2 flex-1 min-w-0 w-full">
                     <div className="flex items-center gap-2">
                       {folderObj && (
                         <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border" style={{ color: accentConfig.primaryHex, borderColor: `${accentConfig.primaryHex}40`, backgroundColor: accentConfig.bgRgba }}>
@@ -901,11 +901,11 @@ export const ListManager: React.FC<ListManagerProps> = ({
                     </div>
                   </div>
 
-                  <div className="shrink-0 flex items-center gap-2">
+                  <div className="shrink-0 flex items-center justify-end gap-2 w-full sm:w-auto pt-2 sm:pt-0 border-t sm:border-t-0 border-zinc-100 dark:border-zinc-800/60">
                     <button
                       type="button"
                       onClick={() => setEditingList({ id: list.id, title: list.title, folderId: list.folderId || null })}
-                      className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+                      className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer touch-manipulation"
                       title="Editar título ou mover lista"
                     >
                       <Pencil className="w-3.5 h-3.5" />
@@ -917,14 +917,14 @@ export const ListManager: React.FC<ListManagerProps> = ({
                           onDeleteList?.(list.id);
                         }
                       }}
-                      className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+                      className="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer touch-manipulation"
                       title="Excluir lista"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>
                     <button
                       onClick={() => onContinueList(list)}
-                      className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:scale-102"
+                      className="flex-1 sm:flex-initial flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer touch-manipulation shadow-sm hover:scale-102"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
                       <span>

@@ -506,7 +506,7 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
             </div>
 
             {/* Pílulas de Filtros de Período (30D, 3M, 6M, Livre) */}
-            <div className="flex items-center bg-slate-100 dark:bg-zinc-900/90 p-0.5 rounded-xl border border-slate-200/80 dark:border-zinc-800 text-xs">
+            <div className="flex items-center max-w-full overflow-x-auto scrollbar-none bg-slate-100 dark:bg-zinc-900/90 p-0.5 rounded-xl border border-slate-200/80 dark:border-zinc-800 text-xs">
               <button
                 type="button"
                 onClick={() => onFilterChange({ ...filters, period: '30d' })}
@@ -696,9 +696,9 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
                 </PieChart>
               </ResponsiveContainer>
 
-              {/* Centro do Donut */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-                <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-500">
+              {/* Centro do Donut (truncado na medida exata do raio interno para não colidir com o anel) */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none px-2">
+                <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-500 max-w-[96px] truncate text-center">
                   {selectedSpecialty || 'Total'}
                 </span>
                 <span className="text-sm font-black text-slate-900 dark:text-white font-[var(--font-inter)] tabular-nums">
@@ -706,7 +706,7 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
                     ? canonicalSpecialtyData.find((s) => s.name === selectedSpecialty)?.durationFormatted
                     : formatSecondsToDetailed(totalSeconds)}
                 </span>
-                <span className="text-[10px] text-slate-500 dark:text-zinc-400">
+                <span className="text-[10px] text-slate-500 dark:text-zinc-400 max-w-[96px] truncate text-center">
                   {selectedSpecialty
                     ? `${canonicalSpecialtyData.find((s) => s.name === selectedSpecialty)?.percent}% do tempo`
                     : 'Horas líquidas'}

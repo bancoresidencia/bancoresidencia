@@ -6,8 +6,10 @@ import {
   ExternalDemoSelection
 } from '@/components/LandingDemoQuestionsSection';
 import { LandingHeader } from '@/components/landing/LandingHeader';
-import { LandingHeroSection } from '@/components/landing/LandingHeroSection';
+import { LandingIntroSection } from '@/components/landing/LandingIntroSection';
+import { LandingBrainHero } from '@/components/LandingBrainHero';
 import { LandingMetricsAndAuthorityStrip } from '@/components/landing/LandingMetricsAndAuthorityStrip';
+import { LandingInstitutionsStrip } from '@/components/landing/LandingInstitutionsStrip';
 import { LandingEcosystemShowcase } from '@/components/landing/LandingEcosystemShowcase';
 import { LandingFlashcardsAndThemesSection } from '@/components/landing/LandingFlashcardsAndThemesSection';
 import { LandingPricingSection } from '@/components/landing/LandingPricingSection';
@@ -67,29 +69,47 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
   }, []);
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-[var(--primary-contrast)] transition-colors duration-200 overflow-x-clip">
+    <div
+      className="font-inter min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-[var(--primary-contrast)] transition-colors duration-200 overflow-x-clip"
+      style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
+    >
       <LandingHeader onOpenAuth={onOpenAuth} onScrollToSection={scrollToSection} />
 
       <main id="conteudo-principal" className="flex-1 flex flex-col">
-        <LandingHeroSection
+        <LandingIntroSection
           onOpenAuth={onOpenAuth}
           onScrollToSection={scrollToSection}
-          onSelectBancaDemo={handleSelectBancaDemo}
         />
+
+        <div id="neuroanatomia" className="scroll-mt-16">
+          <LandingBrainHero
+            onOpenAuth={onOpenAuth}
+            onScrollToSection={scrollToSection}
+          />
+        </div>
 
         <LandingMetricsAndAuthorityStrip />
 
         <div id="questoes" className="scroll-mt-20">
           <LandingDemoQuestionsSection
+            key={demoSelection ? `${demoSelection.tab}-${demoSelection.nonce}` : 'default'}
             onLoginDemo={onLoginDemo}
             onOpenAuth={onOpenAuth}
-            externalSelection={demoSelection}
+            initialTab={demoSelection?.tab}
+            initialQuestionIndex={demoSelection?.questionIndex}
+            bancaLabel={demoSelection?.bancaLabel}
           />
         </div>
 
         <LandingEcosystemShowcase onOpenAuth={onOpenAuth} />
 
         <LandingFlashcardsAndThemesSection />
+
+        <LandingInstitutionsStrip
+          onSelectBanca={(banca) =>
+            handleSelectBancaDemo(banca.targetTab, banca.targetQuestionIdx, banca.shortLabel)
+          }
+        />
 
         <LandingPricingSection onSelectPlan={handleStartPlanCheckout} />
 

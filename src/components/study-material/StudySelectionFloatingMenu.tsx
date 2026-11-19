@@ -70,20 +70,40 @@ export const StudySelectionFloatingMenu: React.FC<StudySelectionFloatingMenuProp
     onHighlight(selectedHighlightColor, 'highlight', noteText.trim() || undefined);
   };
 
-  // Posicionamento inteligente (acima da seleção ou abaixo se estiver perto do topo)
-  const top = anchorRect.top < 120 ? anchorRect.bottom + 10 : anchorRect.top - 54;
+  // Posicionamento inteligente: evita colisão com menu nativo de cópia no touch (preferindo abaixo da seleção no mobile) e respeita bordas da tela
+  const viewportW = typeof window !== 'undefined' ? window.innerWidth : 390;
+  const viewportH = typeof window !== 'undefined' ? window.innerHeight : 800;
+  const isCoarsePointer =
+    typeof window !== 'undefined' && typeof window.matchMedia === 'function'
+      ? window.matchMedia('(pointer: coarse)').matches
+      : viewportW < 640;
+  const estimatedHeight = isNoteOpen ? 230 : 72;
+  const bottomSafeLimit = viewportH - (viewportW < 768 ? 84 : 24);
+
+  let top: number;
+  if (isCoarsePointer) {
+    top =
+      anchorRect.bottom + 14 + estimatedHeight <= bottomSafeLimit
+        ? anchorRect.bottom + 14
+        : Math.max(72, anchorRect.top - estimatedHeight - 10);
+  } else {
+    top =
+      anchorRect.top < 120
+        ? Math.min(anchorRect.bottom + 10, bottomSafeLimit - estimatedHeight)
+        : anchorRect.top - 54;
+  }
+
+  const halfMenuBound = Math.min(185, Math.floor((viewportW - 16) / 2));
+  const rawCenter = anchorRect.left + anchorRect.width / 2;
   const left = Math.max(
-    190,
-    Math.min(
-      typeof window !== 'undefined' ? window.innerWidth - 190 : 300,
-      anchorRect.left + anchorRect.width / 2
-    )
+    halfMenuBound + 8,
+    Math.min(viewportW - halfMenuBound - 8, rawCenter)
   );
 
   return (
     <div
       ref={menuRef}
-      className="fixed z-50 flex flex-col items-center select-none animate-in fade-in zoom-in-95 duration-100"
+      className="fixed z-50 flex flex-col items-center select-none max-w-[calc(100vw-16px)] animate-in fade-in zoom-in-95 duration-100"
       style={{
         top: `${top}px`,
         left: `${left}px`,
@@ -92,7 +112,7 @@ export const StudySelectionFloatingMenu: React.FC<StudySelectionFloatingMenuProp
       onClick={(e) => e.stopPropagation()}
     >
       {/* Barra Principal de Seleção */}
-      <div className="flex items-center gap-1.5 p-1.5 bg-zinc-950/95 dark:bg-zinc-900/95 backdrop-blur-md rounded-2xl border border-zinc-700/80 shadow-2xl text-white">
+      <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-1.5 p-1.5 max-w-[calc(100vw-16px)] bg-zinc-950/95 dark:bg-zinc-900/95 backdrop-blur-md rounded-2xl border border-zinc-700/80 shadow-2xl text-white">
         
         {/* Seletor Rápido das 6 Cores de Marca-Texto */}
         <div className="flex items-center gap-1 px-1 border-r border-zinc-700/60">
@@ -159,10 +179,10 @@ export const StudySelectionFloatingMenu: React.FC<StudySelectionFloatingMenuProp
             type="button"
             onClick={() => onCreateFlashcardAuto(selectedText, sentenceContext)}
             title="Criar Flashcard Automático (Cloze/Pergunta instantânea)"
-            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-bold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white shadow-xs transition-transform active:scale-95 cursor-pointer"
+            className="inline-flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-1 rounded-xl text-[11px] sm:text-xs font-bold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white shadow-xs transition-transform active:scale-95 cursor-pointer touch-manipulation"
           >
-            <Brain className="w-3.5 h-3.5" />
-            <span>Criar Flashcard</span>
+            <Brain className="w-3.5 h-3.5 shrink-0" />
+            <span><span className="hidden sm:inline">Criar </span>Flashcard</span>
           </button>
 
           {/* Botão de Personalizar no Drawer */}
@@ -189,7 +209,7 @@ export const StudySelectionFloatingMenu: React.FC<StudySelectionFloatingMenuProp
 
       {/* Caixa Expansível de Comentário Clínico */}
       {isNoteOpen && (
-        <div className="mt-2 w-80 p-3 bg-zinc-950/98 dark:bg-zinc-900/98 border border-zinc-700 rounded-2xl shadow-2xl animate-in fade-in slide-in-from-top-1 text-white">
+        <div className="mt-2 w-[min(20rem,calc(100vw-24px))] p-3 bg-zinc-950/98 dark:bg-zinc-900/98 border border-zinc-700 rounded-2xl shadow-2xl animate-in fade-in slide-in-from-top-1 text-white">
           <div className="flex items-center justify-between pb-1.5 mb-1.5 border-b border-zinc-800">
             <span className="text-[11px] font-bold text-zinc-300 flex items-center gap-1.5">
               <StickyNote className="w-3.5 h-3.5 text-amber-400" />

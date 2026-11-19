@@ -358,22 +358,22 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4 overflow-y-auto">
-      <div className="relative w-full max-w-3xl rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-5 sm:p-6 shadow-2xl space-y-4 animate-in fade-in-50 zoom-in-95 duration-200 my-auto max-h-[92vh] overflow-y-auto overflow-x-hidden">
+    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-2 sm:p-4">
+      <div className="relative w-full max-w-3xl rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-2xl flex flex-col max-h-[92dvh] overflow-hidden animate-in fade-in-50 zoom-in-95 duration-200">
         {/* Cabeçalho */}
-        <div className="flex items-center justify-between pb-3.5 border-b border-zinc-100 dark:border-zinc-800">
-          <div className="flex items-center gap-3">
+        <div className="flex items-center justify-between px-4 sm:px-6 pt-4 sm:pt-5 pb-3.5 border-b border-zinc-100 dark:border-zinc-800 shrink-0">
+          <div className="flex items-center gap-3 min-w-0 pr-2">
             <div
               className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shrink-0 shadow-xs"
               style={{ backgroundColor: accentConfig.primaryHex }}
             >
               <Sparkles className="w-5 h-5" />
             </div>
-            <div>
-              <h3 className="font-heading font-black text-base sm:text-lg text-zinc-900 dark:text-zinc-100">
+            <div className="min-w-0">
+              <h3 className="font-heading font-black text-sm sm:text-lg text-zinc-900 dark:text-zinc-100 truncate">
                 {deckToEdit ? 'Editar Baralho Personalizado' : 'Novo Baralho Personalizado & Misto'}
               </h3>
-              <p className="text-xs text-zinc-500">
+              <p className="text-[11px] sm:text-xs text-zinc-500 line-clamp-2">
                 Selecione baralhos completos ou filtre flashcard por flashcard com a gaveta de inspeção.
               </p>
             </div>
@@ -382,13 +382,13 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-xl text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+            className="w-9 h-9 rounded-xl flex items-center justify-center text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        <form onSubmit={handleSave} className="space-y-4 text-xs">
+        <form onSubmit={handleSave} className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-4 sm:px-6 py-4 space-y-4 text-xs">
           {/* 1. Nome e Descrição */}
           <div className="space-y-3 bg-zinc-50/70 dark:bg-zinc-900/40 border border-zinc-200/70 dark:border-zinc-800/70 p-3.5 rounded-2xl">
             <div>
@@ -705,7 +705,7 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                             : 'hover:bg-zinc-50/40 dark:hover:bg-zinc-900/30'
                                           }`}
                                       >
-                                        <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-12">
+                                        <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-8 sm:pl-12">
                                           <button
                                             type="button"
                                             onClick={() => toggleNodeCards(focoCards)}
@@ -809,7 +809,7 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                                     : 'hover:bg-zinc-50/30 dark:hover:bg-zinc-900/20'
                                                   }`}
                                               >
-                                                <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-18">
+                                                <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-10 sm:pl-18">
                                                   <button
                                                     type="button"
                                                     onClick={() => toggleNodeCards(subCards)}
@@ -907,7 +907,7 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                                           : 'hover:bg-zinc-50/30 dark:hover:bg-zinc-900/20'
                                                         }`}
                                                     >
-                                                      <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-24">
+                                                      <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-12 sm:pl-24">
                                                         <button
                                                           type="button"
                                                           onClick={() => toggleNodeCards(ssCards)}
@@ -1127,11 +1127,11 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
           </div>
 
           {/* Ações do Rodapé */}
-          <div className="flex items-center justify-end gap-2 pt-2 border-t border-zinc-100 dark:border-zinc-800">
+          <div className="flex flex-col-reverse xs:flex-row items-stretch xs:items-center justify-end gap-2 pt-2 border-t border-zinc-100 dark:border-zinc-800">
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 rounded-xl text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+              className="px-4 py-2.5 rounded-xl text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer text-center"
             >
               Cancelar
             </button>
@@ -1139,14 +1139,14 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
             <button
               type="submit"
               disabled={previewCounts.total === 0 || !deckName.trim()}
-              className="px-5 py-2 rounded-xl text-xs font-bold text-white shadow-xs hover:opacity-95 active:scale-98 transition-all disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer inline-flex items-center gap-1.5"
+              className="px-4 sm:px-5 py-2.5 rounded-xl text-xs font-bold text-white shadow-xs hover:opacity-95 active:scale-98 transition-all disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer inline-flex items-center justify-center gap-1.5"
               style={{ backgroundColor: accentConfig.primaryHex }}
             >
-              <Check className="w-3.5 h-3.5 stroke-[2.5]" />
+              <Check className="w-3.5 h-3.5 stroke-[2.5] shrink-0" />
               <span>
                 {deckToEdit
                   ? `Salvar Alterações (${previewCounts.total} cards)`
-                  : `Criar Baralho Personalizado (${previewCounts.total} cards)`}
+                  : `Criar Baralho (${previewCounts.total} cards)`}
               </span>
             </button>
           </div>

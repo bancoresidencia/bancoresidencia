@@ -1178,11 +1178,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA ESQUERDA (57%): ESPECIALIDADES, TEMAS E SUBFOCOS
            ----------------------------------------------------------------------- */}
         <div
-          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] overflow-hidden h-[calc(100dvh-275px)] min-h-[440px] lg:h-full lg:min-h-0 ${mobileTab === 'conteudo' ? 'flex' : 'hidden lg:flex'
+          className={`rounded-2xl sm:rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] overflow-hidden h-[58dvh] min-h-[360px] lg:h-full lg:min-h-0 ${mobileTab === 'conteudo' ? 'flex' : 'hidden lg:flex'
             }`}
         >
           {/* Topo do Card de Conteúdo */}
-          <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-zinc-100 dark:border-zinc-800/80 mb-2 shrink-0">
+          <div className="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-zinc-100 dark:border-zinc-800/80 mb-2 shrink-0">
             <div className="flex items-center gap-2">
               <Layers className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
               <h2 className="text-base sm:text-lg font-bold text-zinc-900 dark:text-white tracking-tight">
@@ -1190,13 +1190,14 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               </h2>
             </div>
 
-            <div className="flex items-center gap-1.5">
+            <div className="flex flex-wrap items-center gap-1.5">
               <button
                 type="button"
                 onClick={handleSelectAllSpecialties}
-                className="px-2.5 py-1 rounded-lg text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer"
+                className="px-2 sm:px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer touch-manipulation"
               >
-                Selecionar todas
+                <span className="sm:hidden">Todas</span>
+                <span className="hidden sm:inline">Selecionar todas</span>
               </button>
               <button
                 type="button"
@@ -1665,7 +1666,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA DIREITA (43%): BANCO, STATUS, DIFICULDADE, ANOS (ESTILO IMAGEM 1 & 2)
            ----------------------------------------------------------------------- */}
         <div
-          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] overflow-hidden h-[calc(100dvh-275px)] min-h-[440px] lg:h-full lg:min-h-0 ${mobileTab === 'bancas' ? 'flex' : 'hidden lg:flex'
+          className={`rounded-2xl sm:rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] overflow-hidden h-[58dvh] min-h-[360px] lg:h-full lg:min-h-0 ${mobileTab === 'bancas' ? 'flex' : 'hidden lg:flex'
             }`}
         >
           {/* Topo do Card da Direita */}
@@ -2181,19 +2182,19 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
          ========================================================================= */}
       {!embedded && (
         <div
-          className={`fixed bottom-[calc(3.85rem+env(safe-area-inset-bottom,0px))] md:bottom-0 right-0 z-30 transition-all duration-300 ${isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
-            } bg-[var(--bg-card,#ffffff)]/95 dark:bg-[var(--card,#121215)]/95 backdrop-blur-md border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] px-3 sm:px-6 py-2 sm:py-3 md:pb-[max(0.75rem,env(safe-area-inset-bottom,0.75rem))] shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
+          className={`fixed bottom-[calc(3.0625rem+max(env(safe-area-inset-bottom,0px),0.45rem))] md:bottom-0 right-0 z-30 transition-all duration-300 ${isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
+            } bg-[var(--bg-card,#ffffff)]/96 dark:bg-[var(--card,#121215)]/96 backdrop-blur-md border-t border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] px-2.5 sm:px-6 py-2 sm:py-3 md:pb-[max(0.75rem,env(safe-area-inset-bottom,0.75rem))] shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
         >
           <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-2 sm:gap-3 w-full">
-            {/* Linha 1 no Mobile / Lado Esquerdo no Desktop: Filtros Ativos + Tags em Múltiplas Fileiras + Limpar */}
+            {/* Linha 1 no Mobile / Lado Esquerdo no Desktop: Filtros Ativos + Tags + Limpar */}
             <div className="flex items-center justify-between lg:justify-start gap-2 flex-1 min-w-0">
               <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-700 dark:text-zinc-300 shrink-0">
                 <SlidersHorizontal className="w-3.5 h-3.5 shrink-0" style={{ color: accentConfig.primaryHex }} />
                 <span className="whitespace-nowrap">Filtros ({activeTags.length}):</span>
               </div>
 
-              {/* Tags Ativas Removíveis com quebra inteligente em 2 ou mais fileiras */}
-              <div className="flex flex-wrap items-center gap-1.5 max-h-24 overflow-y-auto custom-scrollbar py-0.5 flex-1 min-w-0">
+              {/* Tags Ativas Removíveis (altura compacta no mobile para não empurrar a barra) */}
+              <div className="flex flex-wrap items-center gap-1.5 max-h-14 sm:max-h-24 overflow-y-auto custom-scrollbar py-0.5 flex-1 min-w-0">
                 {activeTags.map((t) => (
                   <Badge
                     key={t.id}
@@ -2206,11 +2207,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       color: accentConfig.primaryHex
                     }}
                   >
-                    <span className="truncate max-w-[140px]">{t.label}</span>
+                    <span className="truncate max-w-[120px] sm:max-w-[140px]">{t.label}</span>
                     <button
                       type="button"
                       onClick={t.onRemove}
-                      className="hover:opacity-75 cursor-pointer ml-0.5 text-xs font-bold leading-none"
+                      className="hover:opacity-75 cursor-pointer ml-0.5 text-xs font-bold leading-none touch-manipulation"
                       style={{ color: accentConfig.primaryHex }}
                       title={`Remover filtro ${t.label}`}
                     >
@@ -2235,8 +2236,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               )}
             </div>
 
-            {/* Linha 2 no Mobile / Lado Direito no Desktop: Cotas + Qtd + Recentes/Aleatório + Salvar + Iniciar */}
-            <div className="flex items-center justify-between lg:justify-end gap-1.5 sm:gap-2.5 shrink-0 w-full lg:w-auto">
+            {/* Linha 2 no Mobile / Lado Direito no Desktop (flex-wrap para zero overflow em 360px) */}
+            <div className="flex flex-wrap sm:flex-nowrap items-center justify-between lg:justify-end gap-1.5 sm:gap-2.5 shrink-0 w-full lg:w-auto">
               {/* Cotas (se houver) */}
               {itemsToConfigure.length > 1 && (
                 <Button
@@ -2414,13 +2415,18 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       )}
 
       {/* =========================================================================
-          DRAWER / MINI-SELETOR DE COTAS EXPANSÍVEL (QUANDO MULTI-FILTRO ATIVO)
+          DRAWER / MINI-SELETOR DE COTAS EXPANSÍVEL (BOTTOM-SHEET NO MOBILE SEM COLISÃO)
          ========================================================================= */}
       {isCotasDrawerOpen && itemsToConfigure.length > 1 && (
-        <div
-          className="fixed bottom-[calc(8.5rem+env(safe-area-inset-bottom,0px))] md:bottom-16 right-4 sm:right-6 w-[calc(100vw-32px)] sm:w-[480px] max-h-[70vh] sm:max-h-[75vh] z-50 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-4 flex flex-col text-zinc-900 dark:text-zinc-100 animate-in slide-in-from-bottom-3 duration-200"
-          style={{ boxShadow: '0 20px 50px rgba(0,0,0,0.6)' }}
-        >
+        <>
+          <div
+            className="fixed inset-0 z-45 bg-black/50 backdrop-blur-2xs md:hidden"
+            onClick={() => setIsCotasDrawerOpen(false)}
+          />
+          <div
+            className="fixed inset-x-3 bottom-[calc(4.25rem+env(safe-area-inset-bottom,0px))] md:inset-x-auto md:bottom-16 md:right-6 md:w-[480px] max-h-[72dvh] z-50 bg-white dark:bg-[#121215] backdrop-blur-xl border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-4 flex flex-col text-zinc-900 dark:text-zinc-100 animate-in slide-in-from-bottom-3 duration-200"
+            style={{ boxShadow: '0 20px 50px rgba(0,0,0,0.45)' }}
+          >
           {/* Header */}
           <div className="flex items-center justify-between pb-2.5 border-b border-zinc-200 dark:border-zinc-800">
             <div className="flex items-center gap-2">
@@ -2573,7 +2579,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               )}
             </button>
           </div>
-        </div>
+          </div>
+        </>
       )}
 
       {/* =========================================================================

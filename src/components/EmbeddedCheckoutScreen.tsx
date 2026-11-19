@@ -60,16 +60,16 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
   const firstName = user?.name ? user.name.trim().split(' ')[0] : '';
 
   return (
-    <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-sans transition-colors duration-200">
+    <div className="min-h-dvh bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-sans transition-colors duration-200 pb-[env(safe-area-inset-bottom,0px)]">
       {/* =========================================================================
           CABEÇALHO INTEGRADO (EMBEDDED HEADER)
           ========================================================================= */}
-      <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/85 dark:bg-[var(--bg-page)]/85 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-colors">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-4">
+      <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/85 dark:bg-[var(--bg-page)]/85 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-colors pt-[env(safe-area-inset-top,0px)]">
+        <div className="max-w-6xl mx-auto px-3.5 sm:px-6 h-16 sm:h-18 flex items-center justify-between gap-2 sm:gap-4">
           {/* Logo e Nome */}
-          <div className="flex items-center gap-3">
-            <Logo variant="full" className="h-10 sm:h-11 w-auto max-w-[240px] sm:max-w-[270px] shrink-0 transition-transform hover:scale-102 duration-200" glow />
-            <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800 self-center">
+          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+            <Logo variant="full" className="h-8.5 sm:h-11 w-auto max-w-[160px] xs:max-w-[205px] sm:max-w-[270px] shrink-0 transition-transform hover:scale-102 duration-200" glow />
+            <span className="hidden xs:inline-flex text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800 self-center shrink-0">
               2026
             </span>
           </div>

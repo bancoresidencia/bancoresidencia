@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
+import { createClient } from '@/lib/supabase/client';
 import { Logo } from '@/components/Logo';
 import { EmailConfirmationPending } from '@/components/EmailConfirmationPending';
 import { validatePasswordRequirements } from '@/utils/security';
@@ -42,8 +44,8 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
         : selectedPlanTitle === 'biennial' ? 'Plano Bienal'
           : selectedPlanTitle;
 
-  // 'login' | 'register'
-  const [mode, setMode] = useState<'login' | 'register'>(initialMode);
+  // 'login' | 'register' | 'forgot'
+  const [mode, setMode] = useState<'login' | 'register' | 'forgot'>(initialMode);
 
   // Sincroniza dinamicamente se a prop initialMode mudar
   useEffect(() => {
@@ -82,11 +84,39 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
     setConfirmationEmail(address);
   };
 
-  const handleToggleMode = (newMode: 'login' | 'register') => {
+  const handleToggleMode = (newMode: 'login' | 'register' | 'forgot') => {
     setMode(newMode);
     setConfirmPassword('');
     setShowConfirmPassword(false);
     resetMessages();
+  };
+
+  const handleForgotPasswordSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    resetMessages();
+    const cleanEmail = email.trim();
+    if (!cleanEmail || !cleanEmail.includes('@')) {
+      setErrorMsg('Informe o e-mail da sua conta para receber o link de recuperação.');
+      return;
+    }
+    setLoading(true);
+    try {
+      const supabase = createClient();
+      const redirectTo =
+        typeof window !== 'undefined'
+          ? `${window.location.origin}/auth/callback?next=/configuracoes`
+          : undefined;
+      const { error } = await supabase.auth.resetPasswordForEmail(cleanEmail, { redirectTo });
+      if (error) {
+        setErrorMsg('Não foi possível enviar o link agora. Verifique o e-mail informado e tente novamente.');
+      } else {
+        setSuccessMsg('Se o e-mail estiver cadastrado, enviamos o link de redefinição para sua caixa de entrada.');
+      }
+    } catch {
+      setErrorMsg('Falha de conexão ao solicitar redefinição de senha.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   // Avaliação de Força da Senha
@@ -222,24 +252,25 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   return (
     <div className="w-full flex items-center justify-center">
       <div className="w-full bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden transition-all duration-300">
-        {/* Cabeçalho Visual da Marca */}
-        <div className="relative px-5 py-4 sm:px-7 sm:py-5 border-b border-slate-100 dark:border-slate-800/80 bg-gradient-to-b from-slate-50/80 to-transparent dark:from-slate-900/40">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Logo variant="full" className="h-10 sm:h-11 w-auto max-w-[240px] sm:max-w-[270px] shrink-0 transition-transform hover:scale-102 duration-200" glow />
-              <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800 self-center">
+        {/* Cabeçalho Visual da Marca (responsivo sem overflow em 360px) */}
+        <div className="relative px-4 py-3.5 sm:px-7 sm:py-5 border-b border-slate-100 dark:border-slate-800/80 bg-gradient-to-b from-slate-50/80 to-transparent dark:from-slate-900/40">
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+              <Logo variant="full" className="h-8.5 sm:h-11 w-auto max-w-[165px] xs:max-w-[205px] sm:max-w-[260px] shrink-0 transition-transform hover:scale-102 duration-200" glow />
+              <span className="hidden xs:inline-flex text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800 self-center shrink-0">
                 2026
               </span>
             </div>
 
-            {/* Ações da Direita: Fechar */}
-            <div className="flex items-center gap-2">
+            {/* Ações da Direita: Fechar com área de toque >= 40px */}
+            <div className="flex items-center gap-2 shrink-0">
               {onClose && (
                 <button
                   type="button"
                   onClick={onClose}
-                  className="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer"
+                  className="w-10 h-10 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer touch-manipulation"
                   title="Fechar"
+                  aria-label="Fechar"
                 >
                   <X className="w-5 h-5" />
                 </button>
@@ -249,19 +280,19 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
           {/* Destaque do Plano Selecionado (se houver) */}
           {selectedPlanTitle && (
-            <div className="mt-3.5 p-3 rounded-2xl bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-transparent border border-blue-500/25 text-xs animate-fadeIn space-y-1">
-              <div className="flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2 text-blue-700 dark:text-blue-300 font-bold">
+            <div className="mt-3 p-3 rounded-2xl bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-transparent border border-blue-500/25 text-xs animate-fadeIn space-y-1">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="flex items-center gap-2 text-blue-700 dark:text-blue-300 font-bold min-w-0">
                   <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
-                  <span>Plano selecionado: <strong className="font-extrabold text-slate-900 dark:text-white">{planDisplayName}</strong></span>
+                  <span className="truncate">Plano: <strong className="font-extrabold text-slate-900 dark:text-white">{planDisplayName}</strong></span>
                 </div>
-                <span className="text-[10px] font-black uppercase tracking-wider bg-blue-600 text-white px-2 py-0.5 rounded-md">
+                <span className="shrink-0 whitespace-nowrap text-[10px] font-black uppercase tracking-wider bg-blue-600 text-white px-2 py-0.5 rounded-md">
                   100% Liberado
                 </span>
               </div>
               <div className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
                 <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
-                <span>Garantia de 7 dias com <strong>Reembolso Instantâneo em 1 clique</strong>.</span>
+                <span>Garantia de 7 dias com <strong>Reembolso em 1 clique</strong>.</span>
               </div>
             </div>
           )}
@@ -271,24 +302,24 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             <button
               type="button"
               onClick={() => handleToggleMode('login')}
-              className={`flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${mode === 'login'
+              className={`flex-1 min-h-[42px] py-2 sm:py-2.5 px-2 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer touch-manipulation flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap ${mode === 'login' || mode === 'forgot'
                   ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
             >
-              <Lock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              <span>Entrar na Conta</span>
+              <Lock className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <span>Entrar<span className="hidden sm:inline"> na Conta</span></span>
             </button>
             <button
               type="button"
               onClick={() => handleToggleMode('register')}
-              className={`flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${mode === 'register'
+              className={`flex-1 min-h-[42px] py-2 sm:py-2.5 px-2 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer touch-manipulation flex items-center justify-center gap-1.5 sm:gap-2 whitespace-nowrap ${mode === 'register'
                   ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
             >
-              <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              <span>Criar Nova Conta</span>
+              <User className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <span>Criar <span className="hidden sm:inline">Nova </span>Conta</span>
             </button>
           </div>
         </div>
@@ -351,8 +382,54 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             </div>
           </div>
 
-          {/* ================= FORMULÁRIO DE LOGIN ================= */}
-          {mode === 'login' ? (
+          {/* ================= FORMULÁRIO DE RECUPERAÇÃO DE SENHA ================= */}
+          {mode === 'forgot' ? (
+            <form onSubmit={handleForgotPasswordSubmit} className="space-y-3.5">
+              <div>
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+                  E-mail cadastrado
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                    <Mail className="w-4 h-4" />
+                  </div>
+                  <input
+                    type="email"
+                    required
+                    autoComplete="email"
+                    inputMode="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Seu e-mail de acesso"
+                    className="w-full pl-10 pr-4 py-3 text-base sm:text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="w-full min-h-[46px] py-3 px-4 rounded-xl text-sm font-bold text-white shadow-md flex items-center justify-center gap-2 transition-all cursor-pointer touch-manipulation disabled:opacity-50"
+                style={{
+                  backgroundColor: accentConfig.primaryHex,
+                  boxShadow: `0 6px 20px -3px ${accentConfig.bgRgba}`
+                }}
+              >
+                <span>{loading ? 'Enviando link...' : 'Enviar Link de Redefinição'}</span>
+                {!loading && <ArrowRight className="w-4 h-4" />}
+              </button>
+
+              <div className="text-center pt-1">
+                <button
+                  type="button"
+                  onClick={() => handleToggleMode('login')}
+                  className="text-xs font-semibold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors cursor-pointer touch-manipulation py-1"
+                >
+                  Voltar para <strong className="font-bold text-blue-600 dark:text-blue-400">Entrar na Conta</strong>
+                </button>
+              </div>
+            </form>
+          ) : mode === 'login' ? (
             <form onSubmit={handleLoginSubmit} className="space-y-3 sm:space-y-3.5">
               <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
@@ -365,10 +442,12 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <input
                     type="email"
                     required
+                    autoComplete="email"
+                    inputMode="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="E-mail"
-                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-base sm:text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
@@ -378,6 +457,13 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <label className="block text-xs font-bold text-slate-700 dark:text-slate-300">
                     Senha
                   </label>
+                  <button
+                    type="button"
+                    onClick={() => handleToggleMode('forgot')}
+                    className="text-[11px] font-semibold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer touch-manipulation"
+                  >
+                    Esqueci minha senha
+                  </button>
                 </div>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -386,15 +472,17 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <input
                     type={showPassword ? 'text' : 'password'}
                     required
+                    autoComplete="current-password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Senha"
-                    className="w-full pl-10 pr-10 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    className="w-full pl-10 pr-11 py-2.5 sm:py-3 text-base sm:text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
+                    aria-label={showPassword ? 'Ocultar senha' : 'Exibir senha'}
+                    className="absolute inset-y-0 right-0 w-11 flex items-center justify-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer touch-manipulation"
                   >
                     {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                   </button>
@@ -405,7 +493,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 sm:py-3.5 px-4 rounded-xl text-sm font-bold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-[1.01] cursor-pointer disabled:opacity-50 mt-1"
+                className="w-full min-h-[46px] py-3 sm:py-3.5 px-4 rounded-xl text-sm font-bold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-[1.01] cursor-pointer touch-manipulation disabled:opacity-50 mt-1"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
                   boxShadow: `0 6px 20px -3px ${accentConfig.bgRgba}`
@@ -435,10 +523,11 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <input
                     type="text"
                     required
+                    autoComplete="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Nome completo"
-                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-base sm:text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
@@ -454,10 +543,12 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <input
                     type="email"
                     required
+                    autoComplete="email"
+                    inputMode="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="E-mail"
-                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-base sm:text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
@@ -475,16 +566,18 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     <input
                       type={showPassword ? 'text' : 'password'}
                       required
+                      autoComplete="new-password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       placeholder="Senha"
-                      className="w-full pl-10 pr-10 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                      className="w-full pl-10 pr-11 py-2.5 sm:py-3 text-base sm:text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                     />
                     <button
                       type="button"
                       onClick={() => setShowPassword(!showPassword)}
-                      className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
+                      className="absolute inset-y-0 right-0 w-11 flex items-center justify-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer touch-manipulation"
                       title={showPassword ? "Ocultar senha" : "Exibir senha"}
+                      aria-label={showPassword ? "Ocultar senha" : "Exibir senha"}
                     >
                       {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                     </button>
@@ -503,16 +596,18 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     <input
                       type={showConfirmPassword ? 'text' : 'password'}
                       required
+                      autoComplete="new-password"
                       value={confirmPassword}
                       onChange={(e) => setConfirmPassword(e.target.value)}
                       placeholder="Repita a senha"
-                      className="w-full pl-10 pr-10 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                      className="w-full pl-10 pr-11 py-2.5 sm:py-3 text-base sm:text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                     />
                     <button
                       type="button"
                       onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                      className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
+                      className="absolute inset-y-0 right-0 w-11 flex items-center justify-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer touch-manipulation"
                       title={showConfirmPassword ? "Ocultar senha" : "Exibir senha"}
+                      aria-label={showConfirmPassword ? "Ocultar senha" : "Exibir senha"}
                     >
                       {showConfirmPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                     </button>
@@ -549,28 +644,43 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               )}
 
               {/* Checkboxes de Maioridade e Termos de Uso */}
-              <div className="space-y-1.5 pt-1 border-t border-slate-100 dark:border-slate-800/80">
-                <label className="flex items-center gap-2 cursor-pointer text-[11px] sm:text-xs text-slate-600 dark:text-slate-300">
+              <div className="space-y-2 pt-1.5 border-t border-slate-100 dark:border-slate-800/80">
+                <label className="flex items-center gap-2.5 cursor-pointer text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 touch-manipulation py-0.5">
                   <input
                     type="checkbox"
                     checked={isOver18}
                     onChange={(e) => setIsOver18(e.target.checked)}
-                    className="w-3.5 h-3.5 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer"
+                    className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer shrink-0"
                   />
                   <span>Tenho 18 anos ou mais</span>
                 </label>
 
-                <label className="flex items-start gap-2 cursor-pointer text-[11px] sm:text-xs text-slate-600 dark:text-slate-300">
+                <label className="flex items-start gap-2.5 cursor-pointer text-[11px] sm:text-xs text-slate-600 dark:text-slate-300 touch-manipulation py-0.5">
                   <input
                     type="checkbox"
                     checked={acceptedTerms}
                     onChange={(e) => setAcceptedTerms(e.target.checked)}
-                    className="w-3.5 h-3.5 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer mt-0.5"
+                    className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer mt-0.5 shrink-0"
                   />
                   <span>
                     Concordo com os{' '}
-                    <span className="font-bold underline text-blue-600 dark:text-blue-400">Termos de Uso</span>{' '}
-                    e <span className="font-bold underline text-blue-600 dark:text-blue-400">Política de Privacidade</span>
+                    <Link
+                      href="/termos"
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                      className="font-bold underline text-blue-600 dark:text-blue-400"
+                    >
+                      Termos de Uso
+                    </Link>{' '}
+                    e{' '}
+                    <Link
+                      href="/privacidade"
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                      className="font-bold underline text-blue-600 dark:text-blue-400"
+                    >
+                      Política de Privacidade
+                    </Link>
                   </span>
                 </label>
               </div>

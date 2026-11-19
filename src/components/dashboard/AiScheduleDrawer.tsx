@@ -169,7 +169,7 @@ export const AiScheduleDrawer: React.FC<AiScheduleDrawerProps> = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-2xl max-h-[90vh] bg-white dark:bg-[#0e121a] border border-blue-500/30 rounded-3xl shadow-2xl flex flex-col z-10 animate-in zoom-in-95 duration-200 overflow-hidden"
+        className="relative w-full max-w-2xl max-h-[92dvh] bg-white dark:bg-[#121215] border border-blue-500/30 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col z-10 animate-in zoom-in-95 duration-200 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* CABEÇALHO DO DRAWER CENTRAL SECUNDÁRIO */}
@@ -419,31 +419,31 @@ export const AiScheduleDrawer: React.FC<AiScheduleDrawerProps> = ({
           </div>
         </div>
 
-        {/* RODAPÉ DO DRAWER CENTRAL COM AÇÕES OFICIAIS */}
-        <div className="p-4 sm:p-5 border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50/80 dark:bg-zinc-900/60 flex items-center justify-between gap-3 flex-wrap">
+        {/* RODAPÉ DO DRAWER CENTRAL COM AÇÕES OFICIAIS (empilhado limpo no mobile) */}
+        <div className="p-4 sm:p-5 pb-[max(1rem,env(safe-area-inset-bottom,0px))] border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50/80 dark:bg-zinc-900/60 flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3 shrink-0">
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-semibold cursor-pointer transition-colors"
+            className="w-full sm:w-auto px-4 py-2.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-semibold cursor-pointer touch-manipulation transition-colors text-center"
           >
-            Fechar / Manter Cronograma Atual
+            Fechar
           </button>
 
-          <div className="flex items-center gap-2">
+          <div className="flex flex-col xs:flex-row items-stretch xs:items-center gap-2 w-full sm:w-auto">
             <button
               type="button"
               onClick={handleAddSelectedToOfficialSchedule}
               disabled={selectedIds.length === 0}
-              className="px-4 py-2.5 rounded-2xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-2 shadow-xs"
+              className="flex-1 sm:flex-initial justify-center px-4 py-2.5 rounded-2xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer touch-manipulation transition-all flex items-center gap-2 shadow-xs"
             >
-              <Check className="w-4 h-4" />
-              <span>Adicionar Selecionadas ao Cronograma Oficial ({selectedIds.length})</span>
+              <Check className="w-4 h-4 shrink-0" />
+              <span>Adicionar Selecionadas ({selectedIds.length})</span>
             </button>
 
             <button
               type="button"
               onClick={handleAddAllToOfficialSchedule}
-              className="px-3.5 py-2.5 rounded-2xl border border-blue-500/30 bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 text-xs font-bold cursor-pointer transition-colors"
+              className="justify-center px-3.5 py-2.5 rounded-2xl border border-blue-500/30 bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 text-xs font-bold cursor-pointer touch-manipulation transition-colors flex items-center"
             >
               Adicionar Todas
             </button>

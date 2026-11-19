@@ -37,18 +37,21 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(threshol
 }
 
 export function useAnimatedCounter(target: number, isActive: boolean, durationMs = 1300): number {
-  const [value, setValue] = useState<number>(target);
+  const [value, setValue] = useState<number>(0);
   const hasAnimatedRef = useRef(false);
 
   useEffect(() => {
-    if (!isActive || hasAnimatedRef.current) return;
-    hasAnimatedRef.current = true;
-
     const reducedMotion =
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    if (reducedMotion) return;
+    if (reducedMotion) {
+      setValue(target);
+      return;
+    }
+
+    if (!isActive || hasAnimatedRef.current) return;
+    hasAnimatedRef.current = true;
 
     let rafId = 0;
     const startTime = performance.now();

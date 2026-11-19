@@ -422,42 +422,42 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           {/* NÓ DO CANTO SUPERIOR ESQUERDO (NW) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'top')}
-            className="figma-control absolute -top-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
+            className="figma-control absolute -top-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-25 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
             title="Redimensionar (diagonal)"
           />
 
           {/* NÓ DO CANTO INFERIOR ESQUERDO (SW) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'bottom')}
-            className="figma-control absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
+            className="figma-control absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-25 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
             title="Redimensionar (diagonal)"
           />
 
           {/* ALÇA LATERAL ESQUERDA */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'none')}
-            className="figma-control absolute -left-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-50 shadow-xs hover:w-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
+            className="figma-control absolute -left-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-25 shadow-xs hover:w-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
             title="Redimensionar largura"
           />
 
           {/* NÓ DO CANTO SUPERIOR DIREITO (NE) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'top')}
-            className="figma-control absolute -top-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
+            className="figma-control absolute -top-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-25 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
             title="Redimensionar (diagonal)"
           />
 
           {/* NÓ DO CANTO INFERIOR DIREITO (SE) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'bottom')}
-            className="figma-control absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
+            className="figma-control absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-25 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
             title="Redimensionar (diagonal)"
           />
 
           {/* ALÇA LATERAL DIREITA */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'none')}
-            className="figma-control absolute -right-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-50 shadow-xs hover:w-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
+            className="figma-control absolute -right-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-25 shadow-xs hover:w-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
             title="Redimensionar largura"
           />
 
@@ -474,19 +474,19 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
                 }
               }
             }}
-            className="figma-control absolute -bottom-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-50 shadow-xs hover:h-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
+            className="figma-control absolute -bottom-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-25 shadow-xs hover:h-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
             title="Arraste para ajustar altura (duplo clique para auto-conformar à ferramenta)"
           />
 
           {/* ALÇA SUPERIOR CENTRAL */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'none', 'top')}
-            className="figma-control absolute -top-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-50 shadow-xs hover:h-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
+            className="figma-control absolute -top-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-25 shadow-xs hover:h-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
             title="Arraste para ajustar altura superior"
           />
 
           {/* BARRA SUPERIOR DE AÇÕES RESPONSIVA NO TOPO DO CARD SELECIONADO */}
-          <div className="figma-control absolute -top-8 left-0 right-0 z-50 flex items-center justify-between px-1 sm:px-2 text-xs pointer-events-auto max-w-full overflow-visible">
+          <div className="figma-control absolute -top-8 left-0 right-0 z-25 flex items-center justify-between px-1 sm:px-2 text-xs pointer-events-auto max-w-full overflow-visible">
             {/* Tag de Título e Alça de Drag Dedicada */}
             <div className="figma-drag-handle flex items-center gap-1 sm:gap-1.5 bg-blue-600 text-white px-2 sm:px-2.5 py-1 rounded-t-lg font-bold shadow-md min-w-0 shrink cursor-grab active:cursor-grabbing">
               <Move className="w-3 h-3 opacity-90 shrink-0" />

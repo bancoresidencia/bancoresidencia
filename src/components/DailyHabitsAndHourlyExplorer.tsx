@@ -689,7 +689,7 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
               </button>
 
               {isCalendarOpen && (
-                <div className="absolute right-0 sm:right-auto sm:left-0 top-full mt-2 z-50 w-72 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-3.5 space-y-3 animate-in fade-in zoom-in-95 duration-150 select-none">
+                <div className="fixed inset-x-3 top-[calc(4.5rem+env(safe-area-inset-top,0px))] sm:absolute sm:inset-x-auto sm:left-0 sm:top-full sm:mt-2 z-50 sm:w-72 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-3.5 space-y-3 animate-in fade-in zoom-in-95 duration-150 select-none">
                   {/* Cabeçalho do Mês / Ano */}
                   <div className="flex items-center justify-between">
                     <button

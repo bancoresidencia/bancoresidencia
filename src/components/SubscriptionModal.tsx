@@ -128,20 +128,22 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
       onClick={handleClose}
     >
       <div
-        className="relative w-full max-w-5xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl p-5 sm:p-8 max-h-[94vh] overflow-y-auto"
+        className="relative w-full max-w-5xl bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800 rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-8 max-h-[92dvh] overflow-y-auto overscroll-contain"
         onClick={(e) => e.stopPropagation()}
       >
-        <button
-          type="button"
-          onClick={handleClose}
-          className="absolute top-5 right-5 p-2 rounded-2xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors z-10 cursor-pointer"
-          aria-label="Fechar modal"
-        >
-          <X className="w-5 h-5" />
-        </button>
+        <div className="flex justify-end mb-2 sm:mb-0">
+          <button
+            type="button"
+            onClick={handleClose}
+            className="sm:absolute sm:top-5 sm:right-5 w-10 h-10 flex items-center justify-center rounded-2xl bg-slate-100 dark:bg-zinc-800 text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors z-10 cursor-pointer touch-manipulation"
+            aria-label="Fechar modal"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
 
         {limitReached && !selectedPlanForCheckout && (
-          <div className="mb-6 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center gap-3 text-amber-700 dark:text-amber-400 text-xs font-semibold animate-in slide-in-from-top-2">
+          <div className="mb-5 sm:mb-6 sm:pr-12 p-3.5 sm:p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-start sm:items-center gap-3 text-amber-700 dark:text-amber-400 text-xs font-semibold animate-in slide-in-from-top-2">
             <AlertCircle className="w-5 h-5 shrink-0 text-amber-500" />
             <div>
               <strong>Limite Diário Atingido:</strong> Você resolveu suas 10 questões gratuitas de hoje. Escolha um plano abaixo para ter resolução ilimitada, gabaritos comentados padrão-ouro e métricas TRI calibradas!
@@ -219,7 +221,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                       Tem um código de indicação de colega ou embaixador?
                     </span>
                   </div>
-                  <form onSubmit={handleApplyCoupon} className="flex gap-2">
+                  <form onSubmit={handleApplyCoupon} className="flex flex-col xs:flex-row gap-2">
                     <input
                       type="text"
                       value={couponInput}
@@ -227,12 +229,12 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                         setCouponInput(e.target.value.toUpperCase());
                         setCouponFeedback(null);
                       }}
-                      placeholder="Digite o código (ex: MED-LUCAS-10)"
-                      className="flex-1 px-3.5 py-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-xs font-mono font-bold uppercase tracking-wider text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      placeholder="Código (ex: MED-LUCAS-10)"
+                      className="flex-1 min-w-0 px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-base sm:text-xs font-mono font-bold uppercase tracking-wider text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <button
                       type="submit"
-                      className="px-4 py-2 rounded-xl text-xs font-extrabold text-white shadow-sm transition-all hover:opacity-95 flex items-center gap-1.5 cursor-pointer shrink-0"
+                      className="px-4 py-2.5 rounded-xl text-xs font-extrabold text-white shadow-sm transition-all hover:opacity-95 flex items-center justify-center gap-1.5 cursor-pointer touch-manipulation shrink-0"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
                       <span>Aplicar 10% OFF</span>

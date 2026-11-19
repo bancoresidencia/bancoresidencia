@@ -873,7 +873,7 @@ export const QuestoesView: React.FC = () => {
     <div
       className={`max-w-7xl mx-auto animate-in fade-in duration-200 px-2.5 sm:px-6 lg:px-8 ${
         bancoMode === 'filtros'
-          ? 'pt-2.5 sm:pt-3 pb-28 lg:pb-[74px] lg:h-[calc(100dvh-4rem)] lg:overflow-hidden flex flex-col'
+          ? 'pt-2.5 sm:pt-3 pb-44 sm:pb-32 lg:pb-[74px] lg:h-[calc(100dvh-4rem)] lg:overflow-hidden flex flex-col'
           : 'py-3 sm:py-6 lg:py-8 space-y-3.5 sm:space-y-4'
       }`}
     >
@@ -893,10 +893,10 @@ export const QuestoesView: React.FC = () => {
       />
       {/* Caderno Ativo (se houver) */}
       {activeListId && (
-        <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-500/40 p-4 sm:p-5 rounded-3xl flex items-center justify-between gap-3 text-xs text-blue-900 dark:text-blue-300 shadow-sm shrink-0">
-          <div className="flex items-center gap-2.5">
-            <span className="font-bold text-blue-700 dark:text-blue-400">Resolvendo Caderno:</span>
-            <strong className="text-slate-900 dark:text-white font-heading text-sm">
+        <div className="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-500/40 p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl flex flex-wrap sm:flex-nowrap items-center justify-between gap-2.5 sm:gap-3 text-xs text-blue-900 dark:text-blue-300 shadow-sm shrink-0">
+          <div className="flex items-center gap-2 min-w-0 flex-1">
+            <span className="font-bold text-blue-700 dark:text-blue-400 shrink-0">Caderno:</span>
+            <strong className="text-slate-900 dark:text-white font-heading text-xs sm:text-sm truncate">
               {lists.find((l) => l.id === activeListId)?.title || 'Caderno de Questões'}
             </strong>
           </div>
@@ -906,7 +906,7 @@ export const QuestoesView: React.FC = () => {
               setActiveListId(null);
               handleReturnToFilters();
             }}
-            className="px-3 py-1.5 rounded-xl bg-blue-100 dark:bg-blue-900/40 hover:bg-blue-200 dark:hover:bg-blue-800/40 font-bold transition-colors cursor-pointer"
+            className="shrink-0 px-3 py-1.5 rounded-xl bg-blue-100 dark:bg-blue-900/40 hover:bg-blue-200 dark:hover:bg-blue-800/40 font-bold transition-colors cursor-pointer touch-manipulation"
           >
             Sair do Caderno
           </button>
@@ -967,7 +967,7 @@ export const QuestoesView: React.FC = () => {
           {visibleQuestions.length > 0 ? (
             <>
               {/* BARRA SUPERIOR SEQUENCIAL (ERGONÔMICA MOBILE & SEM CLIPPING DE POPOVERS) */}
-              <div className="relative sticky top-[calc(4.1rem+env(safe-area-inset-top,0px))] z-20 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl px-2.5 sm:px-4 py-2 sm:py-2.5 shadow-sm flex flex-col gap-2 transition-colors touch-manipulation">
+              <div className="relative sticky top-[calc(4rem+env(safe-area-inset-top,0px))] z-20 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl px-2.5 sm:px-4 py-2 sm:py-2.5 shadow-sm flex flex-col gap-2 transition-colors touch-manipulation">
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-2 lg:gap-3">
                   {/* Esquerda: Botão Voltar + Progresso Circular Retrátil + Botão Finalizar rápido no Mobile */}
                   <div className="flex items-center justify-between lg:justify-start gap-2 sm:gap-3">

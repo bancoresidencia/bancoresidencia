@@ -245,18 +245,18 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
   red: {
     id: 'red',
     label: 'Vermelho Carmesim',
-    primaryHex: '#dc2626',
-    hoverHex: '#b91c1c',
+    primaryHex: '#b91c1c',
+    hoverHex: '#991b1b',
     primaryContrastHex: '#ffffff',
-    bgRgba: 'rgba(220, 38, 38, 0.15)',
-    borderRgba: 'rgba(220, 38, 38, 0.45)',
-    textClass: 'text-red-600 dark:text-red-400',
-    bgClass: 'bg-red-600 hover:bg-red-500 text-white',
-    ringClass: 'ring-red-500/40 border-red-500/50',
-    badgeBg: 'bg-red-500/10',
-    badgeText: 'text-red-600 dark:text-red-400',
-    badgeBorder: 'border-red-500/20',
-    cssVarValue: '#dc2626',
+    bgRgba: 'rgba(185, 28, 28, 0.15)',
+    borderRgba: 'rgba(185, 28, 28, 0.45)',
+    textClass: 'text-red-700 dark:text-red-400',
+    bgClass: 'bg-red-700 hover:bg-red-800 text-white',
+    ringClass: 'ring-red-600/40 border-red-600/50',
+    badgeBg: 'bg-red-600/10',
+    badgeText: 'text-red-700 dark:text-red-400',
+    badgeBorder: 'border-red-600/20',
+    cssVarValue: '#b91c1c',
     surfaceDark: '#09090b',
     cardDark: '#121215',
     inputDark: '#18181b',
@@ -284,11 +284,11 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
       textClass: 'text-amber-500 dark:text-amber-400'
     },
     selectionAccent: {
-      hex: '#dc2626',
-      borderHex: '#ef4444',
-      bgRgba: 'rgba(220, 38, 38, 0.12)'
+      hex: '#b91c1c',
+      borderHex: '#dc2626',
+      bgRgba: 'rgba(185, 28, 28, 0.12)'
     },
-    chartPalette: ['#dc2626', '#f87171', '#fb923c', '#94a3b8', '#34d399', '#38bdf8']
+    chartPalette: ['#991b1b', '#dc2626', '#f59e0b', '#7f1d1d', '#b91c1c', '#d97706']
   },
   rose: {
     id: 'rose',

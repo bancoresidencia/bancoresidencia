@@ -89,9 +89,9 @@ export const StudyHighlighterBar: React.FC<StudyHighlighterBarProps> = ({
           <ChevronDown className="w-3 h-3 text-zinc-500" />
         </button>
 
-        {/* Pílula das 6 Cores Idêntica à Resolução de Provas */}
+        {/* Pílula das 6 Cores Idêntica à Resolução de Provas (centralizada/segura no mobile) */}
         {isColorMenuOpen && (
-          <div className="absolute top-full left-0 mt-2 p-1.5 bg-white dark:bg-zinc-900 rounded-full border border-zinc-200 dark:border-zinc-800 shadow-2xl flex items-center gap-2 z-50 animate-in fade-in zoom-in-95 duration-100">
+          <div className="fixed left-1/2 -translate-x-1/2 top-[calc(4.5rem+env(safe-area-inset-top,0px))] sm:absolute sm:top-full sm:left-0 sm:translate-x-0 sm:mt-2 p-1.5 max-w-[calc(100vw-24px)] bg-white dark:bg-zinc-900 rounded-full border border-zinc-200 dark:border-zinc-800 shadow-2xl flex items-center gap-2 z-50 animate-in fade-in zoom-in-95 duration-100">
             {colorsList.map((c) => {
               const config = HIGHLIGHTER_COLORS[c];
               const isSelected = activeColor === c;

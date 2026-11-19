@@ -17,15 +17,30 @@ export const MedicalGlossaryTooltip: React.FC<MedicalGlossaryTooltipProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const triggerRef = useRef<HTMLSpanElement>(null);
-  const [coords, setCoords] = useState<{ top: number; left: number }>({ top: 0, left: 0 });
+  const [coords, setCoords] = useState<{ top?: number; bottom?: number; left: number }>({ top: 0, left: 0 });
+  const cardRef = useRef<HTMLSpanElement>(null);
 
   const updatePosition = () => {
-    if (triggerRef.current) {
+    if (triggerRef.current && typeof window !== 'undefined') {
       const rect = triggerRef.current.getBoundingClientRect();
-      setCoords({
-        top: rect.bottom + window.scrollY + 6,
-        left: Math.max(16, Math.min(window.innerWidth - 300, rect.left + window.scrollX - 40))
-      });
+      const viewportW = window.innerWidth;
+      const viewportH = window.innerHeight;
+      const cardW = Math.min(320, viewportW - 24);
+      const clampedLeft = Math.max(12, Math.min(viewportW - cardW - 12, rect.left - 24));
+      const bottomSafeLimit = viewportH - (viewportW < 768 ? 72 : 16);
+      const flipAbove = rect.bottom + 210 > bottomSafeLimit && rect.top > 220;
+
+      if (flipAbove) {
+        setCoords({
+          bottom: viewportH - rect.top + 8,
+          left: clampedLeft
+        });
+      } else {
+        setCoords({
+          top: Math.min(rect.bottom + 6, Math.max(72, bottomSafeLimit - 200)),
+          left: clampedLeft
+        });
+      }
     }
   };
 
@@ -47,11 +62,23 @@ export const MedicalGlossaryTooltip: React.FC<MedicalGlossaryTooltipProps> = ({
   useEffect(() => {
     if (!isOpen) return;
     const handleScrollOrResize = () => setIsOpen(false);
+    const handleOutsidePointer = (e: PointerEvent) => {
+      const target = e.target as Node;
+      if (
+        triggerRef.current &&
+        !triggerRef.current.contains(target) &&
+        (!cardRef.current || !cardRef.current.contains(target))
+      ) {
+        setIsOpen(false);
+      }
+    };
     window.addEventListener('scroll', handleScrollOrResize, true);
     window.addEventListener('resize', handleScrollOrResize);
+    document.addEventListener('pointerdown', handleOutsidePointer);
     return () => {
       window.removeEventListener('scroll', handleScrollOrResize, true);
       window.removeEventListener('resize', handleScrollOrResize);
+      document.removeEventListener('pointerdown', handleOutsidePointer);
     };
   }, [isOpen]);
 
@@ -78,10 +105,12 @@ export const MedicalGlossaryTooltip: React.FC<MedicalGlossaryTooltipProps> = ({
 
       {isOpen && (
         <span
-          className="fixed z-50 w-72 sm:w-80 p-3.5 rounded-2xl bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 shadow-2xl text-left select-text animate-in fade-in zoom-in-95 duration-150"
+          ref={cardRef}
+          className="fixed z-50 w-[min(20rem,calc(100vw-24px))] p-3.5 rounded-2xl bg-white dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 shadow-2xl text-left select-text animate-in fade-in zoom-in-95 duration-150"
           style={{
-            top: `${coords.top - window.scrollY}px`,
-            left: `${coords.left - window.scrollX}px`
+            top: coords.top !== undefined ? `${coords.top}px` : undefined,
+            bottom: coords.bottom !== undefined ? `${coords.bottom}px` : undefined,
+            left: `${coords.left}px`
           }}
           onClick={(e) => e.stopPropagation()}
         >

@@ -71,7 +71,7 @@ export const Dialog: React.FC<DialogProps> = ({
       {/* Dialog Surface */}
       <div
         className={cn(
-          'relative w-full rounded-2xl bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] text-zinc-900 dark:text-zinc-100 border border-zinc-200 dark:border-zinc-800 shadow-xl overflow-hidden z-10 animate-in zoom-in-95 duration-150',
+          'relative w-full max-h-[90dvh] flex flex-col rounded-2xl bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] text-zinc-900 dark:text-zinc-100 border border-zinc-200 dark:border-zinc-800 shadow-xl overflow-hidden z-10 animate-in zoom-in-95 duration-150',
           sizeClasses[size],
           className
         )}
@@ -81,7 +81,7 @@ export const Dialog: React.FC<DialogProps> = ({
             type="button"
             onClick={onClose}
             aria-label="Fechar modal"
-            className="absolute top-4 right-4 p-1.5 rounded-lg text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer z-10"
+            className="absolute top-3.5 right-3.5 w-9 h-9 flex items-center justify-center rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer touch-manipulation z-10"
           >
             <X className="w-4 h-4" />
           </button>
@@ -130,7 +130,7 @@ export const DialogContent: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   children,
   ...props
 }) => (
-  <div className={cn('p-5 sm:p-6 py-2 overflow-y-auto max-h-[75vh]', className)} {...props}>
+  <div className={cn('p-5 sm:p-6 py-2 overflow-y-auto max-h-[75dvh]', className)} {...props}>
     {children}
   </div>
 );

@@ -537,18 +537,18 @@ export function UniversalRecurrenceStatsCard({
               </div>
 
               {/* Texto de Cobrança da Banca */}
-              <div className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed pl-5 font-sans">
+              <div className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed sm:pl-5 font-sans">
                 {renderFormattedMedicalText(currentBancaPattern.howItCharges, {
                   boldColorClass: 'font-bold text-zinc-900 dark:text-zinc-100'
                 })}
               </div>
 
-              {/* Alerta de Pegadinha da Banca */}
+              {/* Alerta de Pegadinha da Banca (fluxo inline para zero esmagamento no mobile) */}
               {currentBancaPattern.trapAlert && (
-                <div className="mt-2.5 ml-5 p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-amber-950 dark:text-amber-200 text-xs leading-relaxed flex items-start gap-2 shadow-2xs">
-                  <span className="shrink-0 font-bold text-amber-600 dark:text-amber-400">
+                <div className="mt-2.5 sm:ml-5 p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/25 text-amber-950 dark:text-amber-200 text-xs leading-relaxed shadow-2xs">
+                  <strong className="font-bold text-amber-600 dark:text-amber-400 mr-1.5">
                     ⚠️ Armadilha clássica desta banca:
-                  </span>
+                  </strong>
                   <span>
                     {renderFormattedMedicalText(currentBancaPattern.trapAlert, {
                       boldColorClass: 'font-bold text-amber-900 dark:text-amber-100'

@@ -279,7 +279,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   return (
     <div className="space-y-6 max-w-4xl mx-auto">
       {/* Título e Header da Seção */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-6 sm:p-7 rounded-3xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 p-4 sm:p-7 rounded-3xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <div className="relative group">
             {avatarPreview ? (
@@ -350,9 +350,9 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                 </span>
               )}
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 flex items-center gap-1.5">
-              <span>{email}</span>
-              <span>•</span>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5">
+              <span className="break-all sm:break-normal">{email}</span>
+              <span className="hidden xs:inline">•</span>
               <span className="font-semibold text-slate-700 dark:text-slate-300">{specialtyTarget}</span>
             </p>
           </div>
@@ -369,7 +369,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       </div>
 
       {/* Navegação entre Abas de Configurações */}
-      <div className="flex bg-slate-100 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-slate-200/80 dark:border-slate-800 gap-1 overflow-x-auto">
+      <div className="flex bg-slate-100 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-slate-200/80 dark:border-slate-800 gap-1 overflow-x-auto scrollbar-none">
         <button
           type="button"
           onClick={() => {

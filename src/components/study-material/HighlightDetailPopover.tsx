@@ -66,14 +66,23 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
     setIsNoteOpen(false);
   };
 
-  // Cálculo de posição centralizada e segura em relação ao elemento clicado
-  const top = anchorRect.top < 110 ? anchorRect.bottom + 8 : anchorRect.top - 52;
-  const left = Math.max(180, Math.min(typeof window !== 'undefined' ? window.innerWidth - 180 : 300, anchorRect.left + anchorRect.width / 2));
+  // Cálculo de posição centralizada e segura em relação ao elemento clicado (respeitando barra mobile e tela de 360px)
+  const viewportW = typeof window !== 'undefined' ? window.innerWidth : 390;
+  const viewportH = typeof window !== 'undefined' ? window.innerHeight : 800;
+  const estimatedHeight = isNoteOpen ? 225 : 62;
+  const bottomLimit = viewportH - (viewportW < 768 ? 84 : 20);
+  const rawTop = anchorRect.top < 110 ? anchorRect.bottom + 8 : anchorRect.top - 52;
+  const top = Math.max(70, Math.min(bottomLimit - estimatedHeight, rawTop));
+  const halfBound = Math.min(175, Math.floor((viewportW - 16) / 2));
+  const left = Math.max(
+    halfBound + 8,
+    Math.min(viewportW - halfBound - 8, anchorRect.left + anchorRect.width / 2)
+  );
 
   return (
     <div
       ref={popoverRef}
-      className="fixed z-50 flex flex-col items-center select-none animate-in fade-in zoom-in-95 duration-100"
+      className="fixed z-50 flex flex-col items-center select-none max-w-[calc(100vw-16px)] animate-in fade-in zoom-in-95 duration-100"
       style={{
         top: `${top}px`,
         left: `${left}px`,
@@ -82,7 +91,7 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
       onClick={(e) => e.stopPropagation()}
     >
       {/* Barra Principal de Edição do Grifo */}
-      <div className="flex items-center gap-1.5 p-1.5 bg-zinc-950/95 dark:bg-zinc-900/95 backdrop-blur-md rounded-2xl border border-zinc-700/80 shadow-2xl text-white">
+      <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-1.5 p-1.5 max-w-[calc(100vw-16px)] bg-zinc-950/95 dark:bg-zinc-900/95 backdrop-blur-md rounded-2xl border border-zinc-700/80 shadow-2xl text-white">
         
         {/* Seletor Rápido de Cor */}
         <div className="flex items-center gap-1 px-1 border-r border-zinc-700/60">
@@ -193,7 +202,7 @@ export const HighlightDetailPopover: React.FC<HighlightDetailPopoverProps> = ({
 
       {/* Caixa de Anotação Clínica */}
       {isNoteOpen && (
-        <div className="mt-2 w-72 p-3 bg-zinc-950/98 dark:bg-zinc-900/98 border border-zinc-700 rounded-2xl shadow-2xl animate-in fade-in slide-in-from-top-1">
+        <div className="mt-2 w-[min(19rem,calc(100vw-24px))] p-3 bg-zinc-950/98 dark:bg-zinc-900/98 border border-zinc-700 rounded-2xl shadow-2xl animate-in fade-in slide-in-from-top-1">
           <div className="flex items-center justify-between pb-1.5 mb-1.5 border-b border-zinc-800">
             <span className="text-[11px] font-bold text-zinc-300 flex items-center gap-1.5">
               <StickyNote className="w-3.5 h-3.5 text-amber-400" />

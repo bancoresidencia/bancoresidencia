@@ -12,6 +12,7 @@ interface LandingHeaderProps {
 }
 
 const NAV_ITEMS: { id: string; label: string }[] = [
+  { id: 'neuroanatomia', label: 'Metodologia' },
   { id: 'questoes', label: 'Banco de Questões' },
   { id: 'material-estudo', label: 'Ecossistema' },
   { id: 'flashcards', label: 'Flashcards FSRS' },
@@ -101,6 +102,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
 
       {/* Menu Mobile com transição fluida */}
       <div
+        aria-hidden={!mobileMenuOpen}
         className={`lg:hidden grid transition-[grid-template-rows,opacity] duration-200 ease-out ${
           mobileMenuOpen ? 'grid-rows-[1fr] opacity-100 border-t border-zinc-200 dark:border-zinc-800' : 'grid-rows-[0fr] opacity-0 pointer-events-none'
         }`}
@@ -111,6 +113,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
               <button
                 key={item.id}
                 type="button"
+                tabIndex={mobileMenuOpen ? 0 : -1}
                 onClick={() => handleNavClick(item.id)}
                 className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
               >
@@ -121,6 +124,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
             <div className="pt-2.5 mt-2 border-t border-zinc-200 dark:border-zinc-800 grid grid-cols-2 gap-2">
               <button
                 type="button"
+                tabIndex={mobileMenuOpen ? 0 : -1}
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenAuth('login');
@@ -131,6 +135,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
               </button>
               <button
                 type="button"
+                tabIndex={mobileMenuOpen ? 0 : -1}
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenAuth('register');

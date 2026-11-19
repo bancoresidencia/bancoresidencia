@@ -2030,7 +2030,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   return (
     <div className="space-y-6 w-full max-w-7xl mx-auto">
       {/* Barra Superior de Ações */}
-      <div className="flex items-center justify-between gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-4">
+      <div className="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-4">
         <Button
           type="button"
           variant="secondary"
@@ -2118,9 +2118,9 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         style={{ width: `${readingProgress}%` }}
       />
 
-      {/* Barra de Navegação Rápida Sticky com Scroll Spy (Desktop) */}
+      {/* Barra de Navegação Rápida Sticky com Scroll Spy (Desktop/Tablet) */}
       {sectionPills.length > 0 && (
-        <div className="hidden md:block sticky top-[4.5rem] z-20 p-2 sm:p-2.5 rounded-none bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs transition-all">
+        <div className="hidden md:block sticky top-[calc(4rem+env(safe-area-inset-top,0px))] z-20 p-2 sm:p-2.5 rounded-none bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs transition-all">
           <div className="flex items-center gap-2 overflow-x-auto pb-0.5 scrollbar-none [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {sectionPills.map((pill) => {
               const isActive = activeSectionSlug === pill.slug;
@@ -2153,13 +2153,13 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         </div>
       )}
 
-      {/* Botão Flutuante do Sumário Clínico para Telas Mobile */}
+      {/* Botão Flutuante do Sumário Clínico para Telas Mobile (acima da barra inferior com safe-area) */}
       {sectionPills.length > 0 && (
-        <div className="fixed bottom-20 right-4 z-40 md:hidden">
+        <div className="fixed bottom-[calc(4.75rem+env(safe-area-inset-bottom,0px))] right-4 z-40 md:hidden">
           <button
             type="button"
             onClick={() => setIsMobileTocOpen(true)}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold text-white shadow-xl active:scale-95 transition-all cursor-pointer border border-white/20"
+            className="min-h-[42px] flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold text-white shadow-xl active:scale-95 transition-all cursor-pointer touch-manipulation border border-white/20"
             style={{
               backgroundColor: accentConfig.primaryHex,
               color: accentConfig.primaryContrastHex
@@ -2178,7 +2178,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
           onClick={() => setIsMobileTocOpen(false)}
         >
           <div
-            className="bg-white dark:bg-[#121215] rounded-t-3xl border-t border-zinc-200 dark:border-zinc-800 p-5 max-h-[70vh] overflow-y-auto space-y-3 shadow-2xl"
+            className="bg-white dark:bg-[#121215] rounded-t-3xl border-t border-zinc-200 dark:border-zinc-800 p-5 pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] max-h-[75dvh] overflow-y-auto overscroll-contain space-y-3 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between pb-2 border-b border-zinc-200 dark:border-zinc-800">
@@ -2230,12 +2230,14 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         </div>
       )}
 
-      {/* Corpo Formatado do Material (Largura total expandida) */}
+      {/* Corpo Formatado do Material (Largura total expandida e confortável no mobile) */}
       <article
         ref={articleRef}
         onMouseUp={handleArticleMouseUp}
-        onTouchEnd={handleArticleMouseUp}
-        className={`p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none relative ${selectionColorClass}`}
+        onTouchEnd={() => {
+          window.setTimeout(() => handleArticleMouseUp(), 60);
+        }}
+        className={`p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none relative ${selectionColorClass}`}
       >
         {renderMarkdownContent(material.markdownContent)}
       </article>
@@ -2308,9 +2310,9 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       {/* Caderno Lateral de Destaques & Anotações */}
       
 
-      {/* Toast Flutuante */}
+      {/* Toast Flutuante (acima da barra inferior mobile) */}
       {(toastMessage || toastAction) && (
-        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-2.5 rounded-2xl bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-2xl text-xs font-bold animate-in fade-in slide-in-from-bottom-2">
+        <div className="fixed bottom-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:bottom-6 inset-x-3 sm:inset-x-auto sm:right-6 z-50 flex flex-wrap items-center justify-between sm:justify-start gap-2.5 sm:gap-3 px-4 py-2.5 rounded-2xl bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-2xl text-xs font-bold animate-in fade-in slide-in-from-bottom-2">
           <Check className="w-4 h-4 text-emerald-400 dark:text-emerald-600 shrink-0" />
           <span>{toastAction ? toastAction.message : toastMessage}</span>
           {toastAction?.actionLabel && toastAction?.onAction && (

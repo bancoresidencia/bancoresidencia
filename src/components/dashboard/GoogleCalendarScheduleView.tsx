@@ -816,9 +816,9 @@ const DayView: React.FC<DayViewProps> = ({
 
               return (
                 <React.Fragment key={slot.id || idx}>
-                  {/* Card do Bloco estilo Google Agenda */}
+                  {/* Card do Bloco estilo Google Agenda (empilhado no mobile para não esmagar o título) */}
                   <div
-                    className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex items-center justify-between gap-3 ${style.cardBg} ${isCurrentActive
+                    className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-3 ${style.cardBg} ${isCurrentActive
                       ? 'ring-2 ring-blue-500/50 shadow-md'
                       : isPast
                         ? 'opacity-70'
@@ -900,7 +900,7 @@ const DayView: React.FC<DayViewProps> = ({
                     </div>
 
                     {/* Ações do Bloco */}
-                    <div className="shrink-0 flex items-center gap-1.5">
+                    <div className="shrink-0 flex items-center justify-end gap-1.5 w-full sm:w-auto pt-2 sm:pt-0 border-t sm:border-t-0 border-zinc-200/60 dark:border-zinc-800/60">
                       {slot.action && onAction && (
                         <button
                           type="button"
@@ -954,7 +954,7 @@ const DayView: React.FC<DayViewProps> = ({
 
           {/* ── LINHA QUE MOSTRA A TRANSIÇÃO DO HORÁRIO (GOOGLE CALENDAR CURRENT TIME INDICATOR) ── */}
           {isSelectedDateToday && isCurrentTimeInDayRange && (
-            <div className="mt-4 pt-3 border-t border-zinc-200 dark:border-zinc-800 flex items-center gap-2 text-xs">
+            <div className="mt-4 pt-3 border-t border-zinc-200 dark:border-zinc-800 flex flex-wrap items-center gap-2 text-xs">
               <div className="flex items-center gap-1 text-red-500 font-mono font-bold">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500 -ml-3.5" />
@@ -1004,7 +1004,8 @@ const WeekView: React.FC<WeekViewProps> = ({
   }, [currentDate]);
 
   return (
-    <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c1017] p-3 sm:p-4 overflow-hidden">
+    <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] p-2.5 sm:p-4 overflow-x-auto custom-scrollbar">
+      <div className="min-w-[640px]">
       {/* Cabeçalho da Semana (7 Colunas com Nome e Dia) */}
       <div className="grid grid-cols-7 gap-1 border-b border-zinc-200 dark:border-zinc-800 pb-2 text-center">
         {weekDays.map((d, i) => {
@@ -1084,6 +1085,7 @@ const WeekView: React.FC<WeekViewProps> = ({
           );
         })}
       </div>
+      </div>
     </div>
   );
 };
@@ -1105,8 +1107,8 @@ const YearView: React.FC<YearViewProps> = ({
   const currentYear = currentDate.getFullYear();
 
   return (
-    <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c1017] p-3 sm:p-5">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] p-3 sm:p-5">
+      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
         {MONTH_NAMES.map((mName, mIdx) => {
           const isCurrentMonth =
             nowDate.getFullYear() === currentYear && nowDate.getMonth() === mIdx;

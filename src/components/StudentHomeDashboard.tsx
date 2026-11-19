@@ -3110,12 +3110,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           <div className="text-sm sm:text-base font-black font-sans tracking-tight leading-none text-zinc-900 dark:text-zinc-100 tabular-nums">
                             {formattedTodayStudy}
                           </div>
-                          <div className="text-[10px] sm:text-[11px] font-medium text-zinc-500 dark:text-zinc-400 flex items-center gap-1 leading-none mt-1">
+                          <div className="text-[10px] sm:text-[11px] font-medium text-zinc-500 dark:text-zinc-400 flex items-center gap-1 leading-none mt-1 truncate">
                             <span
                               className="w-1.5 h-1.5 rounded-full shrink-0"
                               style={{ backgroundColor: accentConfig.primaryHex }}
                             />
-                            <span>Estudado hoje</span>
+                            <span className="truncate">Estudado hoje</span>
                           </div>
                         </div>
                       </div>
@@ -3131,7 +3131,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         >
                           <CalendarDays className="w-4 h-4" />
                         </div>
-                        <div>
+                        <div className="min-w-0">
                           <div
                             className="text-sm sm:text-base font-black font-sans tracking-tight leading-none"
                             style={{ color: accentConfig.timeAccent?.hex || accentConfig.primaryHex }}
@@ -6857,11 +6857,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       {/* 5. MODAL DE CONEXÃO COM GOOGLE AGENDA */}
       {isGoogleModalOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setIsGoogleModalOpen(false)}
         >
           <div
-            className="w-full max-w-md bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-md max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -7119,11 +7119,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       {/* 6. MODAL PERSONALIZADO: REAJUSTE DE ATRASO NO PLANTÃO */}
       {showDelayModal && (
         <div
-          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setShowDelayModal(false)}
         >
           <div
-            className="w-full max-w-md bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-md max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -7225,11 +7225,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       {/* 7. MODAL CENTRAL DEDICADO: ADICIONAR BLOCO DE ESTUDO MANUAL */}
       {showAddManualModal && (
         <div
-          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setShowAddManualModal(false)}
         >
           <div
-            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-lg max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -7364,11 +7364,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       {/* 8. MODAL CENTRAL DEDICADO: PROMPT CUSTOMIZADO DE IA (O QUE FAZER DO HORÁRIO TAL AO TAL) */}
       {showAiCommandModal && (
         <div
-          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setShowAiCommandModal(false)}
         >
           <div
-            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-lg max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">

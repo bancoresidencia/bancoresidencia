@@ -70,6 +70,7 @@ interface QuestionCardProps {
   isStrikethroughActive?: boolean;
   onToggleStrikethrough?: () => void;
   onNextQuestion?: () => void;
+  hidePlanBadge?: boolean;
 }
 
 export type HighlighterColor = 'yellow' | 'green' | 'pink' | 'blue' | 'orange' | 'purple';
@@ -216,10 +217,6 @@ const findBestOccurrenceIndex = (
     pos = lowerHaystack.indexOf(lowerNeedle, pos + 1);
   }
 
-  if ((prefix || suffix) && bestScore < 5) {
-    return -1;
-  }
-
   return bestIdx;
 };
 
@@ -249,6 +246,14 @@ const applyHighlightsToString = (
       if (!overlaps) {
         matches.push({ hl, start: idx, end });
         consumedIds.add(hl.id);
+      }
+    } else if (text.trim().length >= 2 && hl.text.toLowerCase().includes(text.trim().toLowerCase())) {
+      // Destaque que abrange nós adjacentes (ex: texto que cruza tags de negrito/itálico)
+      const start = text.indexOf(text.trim());
+      const end = start + text.trim().length;
+      const overlaps = matches.some((m) => Math.max(start, m.start) < Math.min(end, m.end));
+      if (!overlaps) {
+        matches.push({ hl, start, end });
       }
     }
   }
@@ -372,7 +377,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   onSelectHighlighterColor,
   isStrikethroughActive = false,
   onToggleStrikethrough,
-  onNextQuestion
+  onNextQuestion,
+  hidePlanBadge = false
 }) => {
   const { accentConfig } = useTheme();
   const { plan: userPlan, dailyResolvedCount, openUpgradeModal } = useSubscription();
@@ -427,8 +433,58 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setOpenTopics((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  // Estados de Marcador de Texto (Highlight)
-  const [highlights, setHighlights] = useState<TextHighlight[]>([]);
+  // Estados de Marcador de Texto (Highlight) persistentes por questão
+  const [highlights, setHighlights] = useState<TextHighlight[]>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const stored =
+          sessionStorage.getItem(`hipocampus_hl_${question.id}`) ||
+          localStorage.getItem(`hipocampus_hl_${question.id}`);
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed)) return parsed;
+        }
+      } catch {
+        // fallback seguro
+      }
+    }
+    return [];
+  });
+
+  // Salva automaticamente as marcações para persistir na sessão e entre trocas de questão
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        if (highlights.length > 0) {
+          sessionStorage.setItem(`hipocampus_hl_${question.id}`, JSON.stringify(highlights));
+          localStorage.setItem(`hipocampus_hl_${question.id}`, JSON.stringify(highlights));
+        } else {
+          sessionStorage.removeItem(`hipocampus_hl_${question.id}`);
+          localStorage.removeItem(`hipocampus_hl_${question.id}`);
+        }
+      } catch {
+        // ignore
+      }
+    }
+  }, [highlights, question.id]);
+
+  // Listener para limpar todos os destaques desta questão disparado pelo cabeçalho
+  useEffect(() => {
+    const handleClearAll = () => {
+      setHighlights([]);
+      if (typeof window !== 'undefined') {
+        try {
+          sessionStorage.removeItem(`hipocampus_hl_${question.id}`);
+          localStorage.removeItem(`hipocampus_hl_${question.id}`);
+        } catch {
+          // ignore
+        }
+      }
+    };
+    window.addEventListener('clear-all-highlights', handleClearAll);
+    return () => window.removeEventListener('clear-all-highlights', handleClearAll);
+  }, [question.id]);
+
   const activeHighlighterColor = propHighlighterColor || 'yellow';
   const isTextSelectionRef = useRef(false);
 
@@ -463,7 +519,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       };
       return [...filtered, newHighlight];
     });
-    window.getSelection()?.removeAllRanges();
+    if (typeof window !== 'undefined') {
+      window.getSelection()?.removeAllRanges();
+    }
   }, []);
 
   // Renderizador unificado com suporte a formatação médica (negrito/itálico) e destaques de marca-texto
@@ -550,7 +608,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setEliminatedOptions({});
     setExpandedOptions({});
     setOpenTopics({});
-    setHighlights([]);
+    try {
+      const stored =
+        typeof window !== 'undefined'
+          ? sessionStorage.getItem(`hipocampus_hl_${question.id}`) ||
+            localStorage.getItem(`hipocampus_hl_${question.id}`)
+          : null;
+      setHighlights(stored ? JSON.parse(stored) : []);
+    } catch {
+      setHighlights([]);
+    }
     setHoveredOptionLetter(null);
 
     // Se inscreve caso a resolução do lote termine enquanto este card estiver ativo
@@ -788,39 +855,22 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   // Ajusta a selecao sem jamais invadir palavras adjacentes atraves de espacos em branco
   const cleanAndSnapRange = (range: Range): string => {
     try {
-      if (range.startContainer.nodeType === Node.TEXT_NODE) {
+      if (range.startContainer === range.endContainer && range.startContainer.nodeType === Node.TEXT_NODE) {
         const text = range.startContainer.textContent || '';
         let start = range.startOffset;
+        let end = range.endOffset;
 
         // Se comecar sobre espaco, avanca para a primeira letra
-        while (start < text.length && /\s/.test(text[start]) && start < range.endOffset) {
+        while (start < end && /\s/.test(text[start])) {
           start++;
         }
 
-        // Expande para o inicio da palavra APENAS se o corte estiver genuinamente no meio da palavra
-        if (start > 0 && start < text.length && isWordCharacter(text[start - 1]) && isWordCharacter(text[start])) {
-          while (start > 0 && isWordCharacter(text[start - 1])) {
-            start--;
-          }
-        }
-        range.setStart(range.startContainer, start);
-      }
-
-      if (range.endContainer.nodeType === Node.TEXT_NODE) {
-        const text = range.endContainer.textContent || '';
-        let end = range.endOffset;
-
         // Se terminar sobre espaco, recua para a ultima letra
-        while (end > 0 && /\s/.test(text[end - 1]) && end > range.startOffset) {
+        while (end > start && /\s/.test(text[end - 1])) {
           end--;
         }
 
-        // Expande para o final da palavra APENAS se o corte estiver genuinamente no meio da palavra
-        if (end < text.length && end > 0 && isWordCharacter(text[end - 1]) && isWordCharacter(text[end])) {
-          while (end < text.length && isWordCharacter(text[end])) {
-            end++;
-          }
-        }
+        range.setStart(range.startContainer, start);
         range.setEnd(range.endContainer, end);
       }
     } catch {
@@ -1015,13 +1065,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       });
       const data = await response.json();
       if (!data.success) {
-        if (data.limitReached) {
+        if (!hidePlanBadge && data.limitReached) {
           openUpgradeModal(null, true);
           return;
         }
         throw new Error(data.error || 'Não foi possível salvar a resposta.');
       }
-
       setResolvedOverrides({
         correctAnswer: data.correctAnswer,
         commentary: data.commentary,
@@ -1311,7 +1360,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
             </Badge>
 
             {/* Badge de Cota Diária do Plano Free (10 questões/dia) */}
-            {userPlan === 'free' && (
+            {userPlan === 'free' && !hidePlanBadge && (
               <Button
                 type="button"
                 variant="outline"

@@ -62,7 +62,7 @@ export const TabFeatureGuard: React.FC<TabFeatureGuardProps> = ({ children }) =>
     return (
       <div className="relative">
         {/* Banner Superior de Informação do Administrador */}
-        <div className="bg-amber-500/10 dark:bg-amber-500/15 border-b border-amber-500/30 px-4 py-2.5 text-xs text-amber-800 dark:text-amber-300 flex flex-wrap items-center justify-between gap-3 sticky top-18 z-20 backdrop-blur-md">
+        <div className="bg-amber-500/10 dark:bg-amber-500/15 border-b border-amber-500/30 px-4 py-2.5 text-xs text-amber-800 dark:text-amber-300 flex flex-wrap items-center justify-between gap-3 sticky top-[calc(4rem+env(safe-area-inset-top,0px))] z-20 backdrop-blur-md">
           <div className="flex items-center gap-2">
             <Lock className="w-4 h-4 text-amber-500 shrink-0" />
             <span>
@@ -99,7 +99,7 @@ export const TabFeatureGuard: React.FC<TabFeatureGuardProps> = ({ children }) =>
 
   // Caso 3: Aluno (ou Administrador simulando visão de aluno) em aba desativada
   return (
-    <div className="relative h-[calc(100vh-4.5rem)] max-h-[calc(100vh-4.5rem)] overflow-hidden flex flex-col">
+    <div className="relative h-[calc(100dvh-4rem)] max-h-[calc(100dvh-4rem)] overflow-hidden flex flex-col">
       {/* 1. Conteúdo original no fundo totalmente borrado e opaco, sem interação e sem scroll */}
       <div
         className="filter blur-2xl opacity-15 pointer-events-none select-none max-h-full overflow-hidden transition-all duration-300"
@@ -109,8 +109,8 @@ export const TabFeatureGuard: React.FC<TabFeatureGuardProps> = ({ children }) =>
         {children}
       </div>
 
-      {/* 2. Plano de Fundo Totalmente Borrado e Opaco com Card Perfeitamente Centralizado e Fixo */}
-      <div className="fixed inset-0 z-40 flex items-center justify-center p-4 sm:p-6 backdrop-blur-2xl bg-white/80 dark:bg-[#09090b]/85 select-none transition-all duration-300 animate-in fade-in duration-200">
+      {/* 2. Plano de Fundo Borrado respeitando Header Superior e Barra Mobile Inferior para navegação livre */}
+      <div className="fixed inset-x-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bottom-[calc(3.55rem+env(safe-area-inset-bottom,0px))] md:bottom-0 z-25 flex items-center justify-center p-4 sm:p-6 backdrop-blur-2xl bg-white/80 dark:bg-[#09090b]/85 select-none transition-all duration-300 animate-in fade-in duration-200">
         <div className="max-w-md w-full bg-white dark:bg-zinc-900/95 border border-zinc-200 dark:border-zinc-800/90 rounded-3xl p-6 sm:p-8 shadow-2xl text-center space-y-5 animate-in zoom-in-95 duration-200 relative overflow-hidden">
           {/* Efeito Glow com o acento cromático do estudante */}
           <div

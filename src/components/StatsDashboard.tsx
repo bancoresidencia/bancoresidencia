@@ -1198,51 +1198,51 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       {/* =========================================================================
           BARRA SUPERIOR: NAVEGAÇÃO DE ABAS + PERÍODO + FILTROS DE BANCAS
       ========================================================================== */}
-      <div className="sticky top-[4.5rem] z-20 -mx-4 px-4 sm:-mx-6 sm:px-6 py-3 bg-[var(--bg-page)]/95 dark:bg-[#09090b]/95 backdrop-blur-md border-b border-[var(--card-border)] shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-3 transition-colors">
-        {/* Lado Esquerdo: Abas Principais Segmentadas */}
-        <div className="flex items-center gap-1.5 bg-[var(--bg-card)] p-1.5 rounded-xl border border-[var(--card-border)] w-fit">
+      <div className="md:sticky md:top-[calc(4rem+env(safe-area-inset-top,0px))] z-20 -mx-4 px-4 sm:-mx-6 sm:px-6 py-3 bg-[var(--bg-page)]/95 dark:bg-[#09090b]/95 backdrop-blur-md border-b border-[var(--card-border)] shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-3 transition-colors">
+        {/* Lado Esquerdo: Abas Principais Segmentadas (scroll horizontal limpo sem cortar Tempo de Estudo no mobile) */}
+        <div className="flex items-center gap-1.5 bg-[var(--bg-card)] p-1.5 rounded-xl border border-[var(--card-border)] w-full lg:w-fit max-w-full overflow-x-auto scrollbar-none">
           <button
             type="button"
             onClick={() => setActiveSubTab('overview')}
-            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer touch-manipulation ${
               activeSubTab === 'overview'
                 ? 'text-white shadow-lg'
                 : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
             }`}
             style={activeSubTab === 'overview' ? { backgroundColor: accentConfig.primaryHex } : undefined}
           >
-            <BarChart3 className="w-3.5 h-3.5" />
+            <BarChart3 className="w-3.5 h-3.5 shrink-0" />
             <span>Visão Geral</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveSubTab('specialties')}
-            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer touch-manipulation ${
               activeSubTab === 'specialties'
                 ? 'text-white shadow-lg'
                 : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
             }`}
             style={activeSubTab === 'specialties' ? { backgroundColor: accentConfig.primaryHex } : undefined}
           >
-            <Stethoscope className="w-3.5 h-3.5" />
+            <Stethoscope className="w-3.5 h-3.5 shrink-0" />
             <span>Especialidades</span>
           </button>
 
           <button
             type="button"
             onClick={() => setActiveSubTab('weaknesses')}
-            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer touch-manipulation ${
               activeSubTab === 'weaknesses'
                 ? 'text-white shadow-lg'
                 : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
             }`}
             style={activeSubTab === 'weaknesses' ? { backgroundColor: accentConfig.primaryHex } : undefined}
           >
-            <Target className="w-3.5 h-3.5" />
+            <Target className="w-3.5 h-3.5 shrink-0" />
             <span>Raio-X de Erros</span>
             <span
-              className={`px-1.5 py-0.2 rounded-full text-[10px] font-bold ${
+              className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold ${
                 activeSubTab === 'weaknesses'
                   ? 'bg-white/20 text-white'
                   : 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/20'
@@ -1255,14 +1255,14 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           <button
             type="button"
             onClick={() => setActiveSubTab('time')}
-            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+            className={`shrink-0 whitespace-nowrap flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer touch-manipulation ${
               activeSubTab === 'time'
                 ? 'text-white shadow-lg'
                 : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
             }`}
             style={activeSubTab === 'time' ? { backgroundColor: accentConfig.primaryHex } : undefined}
           >
-            <Clock className="w-3.5 h-3.5" />
+            <Clock className="w-3.5 h-3.5 shrink-0" />
             <span>Tempo de Estudo</span>
           </button>
         </div>
@@ -1298,7 +1298,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             </button>
 
             {isCalendarOpen && (
-              <div className="absolute left-0 sm:right-auto z-40 mt-1.5 w-76 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-4 space-y-3.5 animate-in fade-in zoom-in-95 duration-150">
+              <div className="fixed inset-x-3 top-[calc(4.5rem+env(safe-area-inset-top,0px))] sm:absolute sm:inset-x-auto sm:left-0 sm:top-full z-40 sm:mt-1.5 sm:w-76 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-4 space-y-3.5 animate-in fade-in zoom-in-95 duration-150">
                 <div className="flex items-center justify-between pb-2 border-b border-[var(--card-border)]">
                   <span className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5 font-heading">
                     <Calendar className="w-3.5 h-3.5 text-emerald-500" />
@@ -1354,7 +1354,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
                     Intervalo no Calendário
                   </span>
-                  <div className="grid grid-cols-2 gap-2 text-xs">
+                  <div className="grid grid-cols-1 xs:grid-cols-2 gap-2 text-xs">
                     <div>
                       <label className="text-[10px] text-slate-500 dark:text-zinc-400 block mb-0.5">De:</label>
                       <input
@@ -1433,7 +1433,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             </button>
 
             {isFilterDropdownOpen && (
-              <div className="absolute right-0 z-40 mt-1.5 w-72 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-3.5 space-y-3 animate-in fade-in zoom-in-95 duration-150">
+              <div className="fixed inset-x-3 top-[calc(4.5rem+env(safe-area-inset-top,0px))] sm:absolute sm:inset-x-auto sm:right-0 sm:top-full z-40 sm:mt-1.5 sm:w-72 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-3.5 space-y-3 animate-in fade-in zoom-in-95 duration-150">
                 <div>
                   <label className="text-[10px] font-bold text-slate-500 dark:text-zinc-400 uppercase tracking-wider block mb-1">
                     Banca Examinadora

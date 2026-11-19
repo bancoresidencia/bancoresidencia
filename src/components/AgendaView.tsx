@@ -1659,11 +1659,11 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       {/* Modal 1: Conexão Google Agenda */}
       {isGoogleModalOpen && (
         <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setIsGoogleModalOpen(false)}
         >
           <div
-            className="w-full max-w-md bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-md max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -1826,11 +1826,11 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       {/* Modal 2: Reajuste "Atrasei no Plantão" */}
       {showDelayModal && (
         <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setShowDelayModal(false)}
         >
           <div
-            className="w-full max-w-md bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-md max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -1920,11 +1920,11 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       {/* ── MODAL 1: CRIAR TAREFA DE CALENDÁRIO (OBRIGAÇÃO) ── */}
       {showCreateTaskModal && (
         <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setShowCreateTaskModal(false)}
         >
           <div
-            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-lg max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -2044,11 +2044,11 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       {/* ── MODAL 2: NOVO BLOCO (REGISTRO MANUAL DE SESSÃO DE ESTUDO) ── */}
       {showManualStudyModal && (
         <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setShowManualStudyModal(false)}
         >
           <div
-            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-lg max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
@@ -2253,11 +2253,11 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       {/* Modal 4: Prompt Customizado de IA */}
       {showAiCommandModal && (
         <div
-          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200"
           onClick={() => setShowAiCommandModal(false)}
         >
           <div
-            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            className="w-full max-w-lg max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">

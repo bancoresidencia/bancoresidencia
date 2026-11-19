@@ -287,26 +287,26 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-2xl bg-white dark:bg-[#16171a] border border-slate-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col max-h-[92vh] overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2.5 sm:p-5 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+      <div className="relative w-full max-w-2xl bg-white dark:bg-[#16171a] border border-slate-200 dark:border-zinc-800 rounded-2xl sm:rounded-3xl shadow-2xl flex flex-col max-h-[calc(100dvh-1.25rem)] sm:max-h-[92dvh] overflow-hidden">
 
         {/* Barra Superior com Progresso */}
-        <div className="p-4 sm:p-6 border-b border-slate-100 dark:border-zinc-800/80 bg-slate-50/70 dark:bg-zinc-900/40 shrink-0">
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3.5 min-w-0">
-              <Logo variant="full" className="h-8.5 sm:h-9 w-auto max-w-[180px] shrink-0" />
-              <div className="min-w-0 border-l border-slate-200 dark:border-zinc-800 pl-3">
+        <div className="p-3.5 sm:p-6 border-b border-slate-100 dark:border-zinc-800/80 bg-slate-50/70 dark:bg-zinc-900/40 shrink-0">
+          <div className="flex items-center justify-between gap-2 sm:gap-4">
+            <div className="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
+              <Logo variant="full" className="h-7 sm:h-9 w-auto max-w-[125px] sm:max-w-[180px] shrink-0" />
+              <div className="min-w-0 border-l border-slate-200 dark:border-zinc-800 pl-2.5 sm:pl-3">
                 <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800 inline-block">
                   Onboarding
                 </span>
                 <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5 truncate">
-                  {currentStep <= 7 ? `Passo ${currentStep} de 7 · ${stepTitles[currentStep]}` : 'Tudo pronto · Como você quer começar?'}
+                  {currentStep <= 7 ? `Passo ${currentStep}/7 · ${stepTitles[currentStep]}` : 'Tudo pronto!'}
                 </span>
               </div>
             </div>
 
             {/* Indicador visual de progresso (7 barras) */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 shrink-0">
               <div className="hidden sm:flex items-center gap-1">
                 {[1, 2, 3, 4, 5, 6, 7].map((s) => (
                   <div
@@ -325,17 +325,31 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+                className="w-9 h-9 flex items-center justify-center rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer touch-manipulation"
                 title="Fechar"
+                aria-label="Fechar"
               >
                 <X className="w-4 h-4" />
               </button>
             </div>
           </div>
+
+          {/* Barra de Progresso Mobile Contínua */}
+          {currentStep <= 7 && (
+            <div className="sm:hidden mt-2.5 h-1.5 w-full rounded-full bg-slate-200 dark:bg-zinc-800 overflow-hidden">
+              <div
+                className="h-full rounded-full transition-all duration-300"
+                style={{
+                  width: `${(currentStep / 7) * 100}%`,
+                  backgroundColor: accentConfig.primaryHex
+                }}
+              />
+            </div>
+          )}
         </div>
 
         {/* Corpo do Passo com Scroll */}
-        <div className="p-6 sm:p-8 overflow-y-auto flex-1">
+        <div className="p-4 sm:p-8 overflow-y-auto flex-1 overscroll-contain">
 
           {/* ======================================================== */}
           {/* PASSO 1: Quem te indicou (Código de Indicação)           */}
@@ -1040,16 +1054,16 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       <CreditCard className="w-5 h-5" />
                     </div>
                     <div>
-                      <div className="flex items-center gap-2">
+                      <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                         <span className="font-extrabold text-sm text-slate-900 dark:text-white">
                           Adquirir Plano & Liberar Acesso Total
                         </span>
                         {appliedReferral ? (
-                          <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-md bg-emerald-600 text-white">
+                          <span className="shrink-0 text-[10px] uppercase font-black px-2 py-0.5 rounded-md bg-emerald-600 text-white">
                             -10% OFF
                           </span>
                         ) : (
-                          <span className="text-[10px] uppercase font-black px-2 py-0.5 rounded-md bg-amber-600 text-white">
+                          <span className="shrink-0 text-[10px] uppercase font-black px-2 py-0.5 rounded-md bg-amber-600 text-white">
                             Recomendado
                           </span>
                         )}
@@ -1113,9 +1127,9 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
 
         </div>
 
-        {/* Barra Inferior com Navegação (visível do passo 1 ao 7) */}
+        {/* Barra Inferior com Navegação (visível do passo 1 ao 7, respeitando safe-area) */}
         {currentStep <= 7 && (
-          <div className="p-4 sm:p-5 border-t border-slate-100 dark:border-zinc-800/80 bg-slate-50/70 dark:bg-zinc-900/40 flex items-center justify-between gap-3 shrink-0">
+          <div className="px-4 py-3 pb-[max(0.875rem,env(safe-area-inset-bottom,0px))] sm:p-5 border-t border-slate-100 dark:border-zinc-800/80 bg-slate-50/70 dark:bg-zinc-900/40 flex items-center justify-between gap-3 shrink-0">
             {currentStep > 1 ? (
               <button
                 type="button"

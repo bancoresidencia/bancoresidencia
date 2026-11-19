@@ -82,11 +82,11 @@ export const StudyTimerSaveModal: React.FC = () => {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-150"
+      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-150"
       onClick={closeSaveModal}
     >
       <div
-        className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-150"
+        className="w-full max-w-lg max-h-[90dvh] overflow-y-auto overscroll-contain bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-4 sm:p-6 shadow-2xl space-y-4 sm:space-y-5 animate-in zoom-in-95 duration-150"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Cabeçalho do Modal */}
@@ -147,7 +147,7 @@ export const StudyTimerSaveModal: React.FC = () => {
             <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block">
               Tipo de Estudo
             </label>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-3 gap-1.5 sm:gap-2">
               {STUDY_TYPES.map((t) => {
                 const isSelected = studyType === t.id;
                 return (
@@ -155,14 +155,14 @@ export const StudyTimerSaveModal: React.FC = () => {
                     key={t.id}
                     type="button"
                     onClick={() => setStudyType(t.id)}
-                    className={`py-2 px-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer border ${
+                    className={`py-2 px-1.5 sm:px-2.5 rounded-xl text-[11px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer border min-w-0 ${
                       isSelected
                         ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
                         : 'bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800'
                     }`}
                   >
-                    {t.icon}
-                    <span>{t.label}</span>
+                    <span className="shrink-0">{t.icon}</span>
+                    <span className="truncate">{t.label}</span>
                   </button>
                 );
               })}
@@ -185,6 +185,7 @@ export const StudyTimerSaveModal: React.FC = () => {
               <div>
                 <input
                   type="number"
+                  inputMode="numeric"
                   min="0"
                   placeholder="Total de questões"
                   value={questionsCount}
@@ -195,6 +196,7 @@ export const StudyTimerSaveModal: React.FC = () => {
               <div>
                 <input
                   type="number"
+                  inputMode="numeric"
                   min="0"
                   placeholder="Total de acertos"
                   value={correctCount}
@@ -220,21 +222,21 @@ export const StudyTimerSaveModal: React.FC = () => {
           </div>
 
           {/* Ações Finais */}
-          <div className="pt-2 flex items-center justify-end gap-2.5">
+          <div className="pt-2 flex flex-col-reverse xs:flex-row items-stretch xs:items-center justify-end gap-2 sm:gap-2.5">
             <button
               type="button"
               onClick={closeSaveModal}
               disabled={isSaving}
-              className="px-4 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 transition-colors cursor-pointer"
+              className="px-4 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 transition-colors cursor-pointer text-center"
             >
               Voltar ao Cronômetro
             </button>
             <button
               type="submit"
               disabled={isSaving}
-              className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md cursor-pointer flex items-center gap-1.5 disabled:opacity-50"
+              className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-md cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50"
             >
-              <CalendarDays className="w-4 h-4" />
+              <CalendarDays className="w-4 h-4 shrink-0" />
               <span>{isSaving ? 'Gravando...' : 'Salvar na Agenda'}</span>
             </button>
           </div>

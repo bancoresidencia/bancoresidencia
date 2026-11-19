@@ -177,33 +177,35 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
       {/* ── 1. CABEÇALHO DO MÊS COM NAVEGAÇÃO & METAS DO MÊS (Estilo Aprovado) ── */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-xs">
         {/* Navegação de Mês */}
-        <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={handlePrevMonth}
-            className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors cursor-pointer"
-            title="Mês Anterior"
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </button>
+        <div className="flex flex-wrap items-center justify-between sm:justify-start gap-1.5 sm:gap-2 w-full sm:w-auto">
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            <button
+              type="button"
+              onClick={handlePrevMonth}
+              className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors cursor-pointer touch-manipulation"
+              title="Mês Anterior"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
 
-          <h2 className="text-base sm:text-lg font-black font-[var(--font-inter)] tracking-tight text-zinc-900 dark:text-zinc-100 min-w-[180px] text-center">
-            {MONTH_NAMES[currentDate.getMonth()]} de {currentDate.getFullYear()}
-          </h2>
+            <h2 className="text-sm sm:text-lg font-black font-[var(--font-inter)] tracking-tight text-zinc-900 dark:text-zinc-100 min-w-[130px] sm:min-w-[180px] text-center">
+              {MONTH_NAMES[currentDate.getMonth()]} de {currentDate.getFullYear()}
+            </h2>
 
-          <button
-            type="button"
-            onClick={handleNextMonth}
-            className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors cursor-pointer"
-            title="Próximo Mês"
-          >
-            <ChevronRight className="w-4 h-4" />
-          </button>
+            <button
+              type="button"
+              onClick={handleNextMonth}
+              className="p-2 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-300 transition-colors cursor-pointer touch-manipulation"
+              title="Próximo Mês"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
 
           <button
             type="button"
             onClick={handleJumpToToday}
-            className="ml-2 px-3 py-1.5 rounded-xl border border-blue-500/30 bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-bold transition-colors cursor-pointer"
+            className="px-3 py-1.5 rounded-xl border border-blue-500/30 bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-bold transition-colors cursor-pointer touch-manipulation"
           >
             Hoje
           </button>
@@ -227,14 +229,14 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
         </div>
       </div>
 
-      {/* ── 2. GRADE MENSAL DE QUADRADOS LADO A LADO ── */}
-      <div className="rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] p-3 sm:p-5 shadow-xs overflow-hidden">
+      {/* ── 2. GRADE MENSAL DE QUADRADOS LADO A LADO (OTIMIZADA PARA 360PX SEM CORTE) ── */}
+      <div className="rounded-2xl sm:rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] p-2 sm:p-5 shadow-xs overflow-hidden">
         {/* Cabeçalho dos Dias da Semana (Dom a Sáb) */}
-        <div className="grid grid-cols-7 gap-1.5 border-b border-zinc-200/80 dark:border-zinc-800 pb-3 text-center">
+        <div className="grid grid-cols-7 gap-1 sm:gap-1.5 border-b border-zinc-200/80 dark:border-zinc-800 pb-2 sm:pb-3 text-center">
           {WEEKDAY_NAMES.map((w, i) => (
             <span
               key={i}
-              className={`text-[11px] font-black uppercase tracking-wider ${i === 0 || i === 6 ? 'text-zinc-400' : 'text-slate-600 dark:text-zinc-300'
+              className={`text-[10px] sm:text-[11px] font-black uppercase tracking-wider truncate ${i === 0 || i === 6 ? 'text-zinc-400' : 'text-slate-600 dark:text-zinc-300'
                 }`}
             >
               {w}
@@ -243,7 +245,7 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
         </div>
 
         {/* Matriz com Quadrados Lado a Lado */}
-        <div className="grid grid-cols-7 gap-1.5 sm:gap-2 pt-3">
+        <div className="grid grid-cols-7 gap-1 sm:gap-2 pt-2 sm:pt-3">
           {monthCells.map((cell, idx) => {
             const isToday =
               cell.date.getDate() === nowDate.getDate() &&
@@ -275,7 +277,7 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
               <div
                 key={idx}
                 onClick={() => setSelectedDayDateStr(cell.dateStr)}
-                className={`min-h-[82px] sm:min-h-[105px] p-2 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden ${!cell.isCurrentMonth
+                className={`min-h-[64px] sm:min-h-[105px] p-1 sm:p-2 rounded-xl sm:rounded-2xl border transition-all cursor-pointer touch-manipulation flex flex-col justify-between group relative overflow-hidden ${!cell.isCurrentMonth
                     ? 'border-transparent opacity-30 bg-zinc-50/40 dark:bg-zinc-900/10'
                     : isToday
                       ? 'border-blue-500/60 bg-blue-50/20 dark:bg-blue-950/20 ring-2 ring-blue-500/30'
@@ -286,9 +288,9 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
                 title={`Clique para inspecionar ${cell.dateStr}`}
               >
                 {/* Linha Superior: Número do Dia + Indicador Hoje / Google */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-0.5">
                   <span
-                    className={`text-xs font-black w-6 h-6 rounded-xl flex items-center justify-center transition-transform group-hover:scale-105 ${isToday
+                    className={`text-[10px] sm:text-xs font-black w-5 h-5 sm:w-6 sm:h-6 rounded-lg sm:rounded-xl flex items-center justify-center transition-transform group-hover:scale-105 ${isToday
                         ? 'bg-blue-600 text-white shadow-xs'
                         : hasStudy
                           ? 'text-emerald-700 dark:text-emerald-300 font-extrabold'
@@ -299,7 +301,7 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
                   </span>
 
                   {/* Indicadores de Status */}
-                  <div className="flex items-center gap-1">
+                  <div className="flex items-center gap-0.5 sm:gap-1">
                     {hasGoogle && (
                       <span
                         className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0"
@@ -308,30 +310,28 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
                     )}
                     {hasStudy && (
                       <span
-                        className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 shadow-[0_0_8px_rgba(16,185,129,0.8)]"
+                        className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-emerald-500 shrink-0 shadow-[0_0_8px_rgba(16,185,129,0.8)]"
                         title="Estudo realizado neste dia"
                       />
                     )}
                   </div>
                 </div>
 
-                {/* Conteúdo Central: Estatísticas de Estudo Realizado (Idêntico ao Aprovado) */}
+                {/* Conteúdo Central: Estatísticas de Estudo Realizado */}
                 {hasStudy ? (
-                  <div className="mt-1 space-y-0.5">
-                    {/* Quantidade de Sessões: "X Ativ." */}
-                    <div className="text-[10px] sm:text-[11px] font-extrabold text-emerald-700 dark:text-emerald-400 flex items-center gap-1 truncate">
+                  <div className="mt-0.5 sm:mt-1 space-y-0.5 min-w-0">
+                    <div className="hidden sm:flex text-[11px] font-extrabold text-emerald-700 dark:text-emerald-400 items-center gap-1 truncate">
                       <FileCheck className="w-3 h-3 shrink-0" />
-                      <span>{daySessions.length} {daySessions.length === 1 ? 'Ativ.' : 'Ativ.'}</span>
+                      <span>{daySessions.length} Ativ.</span>
                     </div>
 
-                    {/* Duração Total Acumulada no Dia: "Xh Ym" na fonte Inter */}
-                    <div className="text-xs sm:text-[13px] font-black font-[var(--font-inter)] tabular-nums tracking-tight text-emerald-800 dark:text-emerald-200 truncate flex items-center gap-1">
-                      <Clock className="w-3 h-3 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                      <span>{dayTotalFormatted}</span>
+                    <div className="text-[9px] sm:text-[13px] font-black font-[var(--font-inter)] tabular-nums tracking-tight text-emerald-800 dark:text-emerald-200 truncate flex items-center gap-0.5 sm:gap-1">
+                      <Clock className="hidden sm:inline w-3 h-3 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                      <span className="truncate">{dayTotalFormatted}</span>
                     </div>
 
                     {/* Bolinhas coloridas das matérias */}
-                    <div className="flex items-center gap-1 pt-0.5">
+                    <div className="flex items-center gap-0.5 sm:gap-1 pt-0.5">
                       {specialtyColors.map((color, ci) => (
                         <span
                           key={ci}
@@ -342,14 +342,13 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
                     </div>
                   </div>
                 ) : hasGoogle ? (
-                  /* Mostra plantão/compromisso preservado do Google */
-                  <div className="mt-1">
-                    <span className="text-[10px] font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-1.5 py-0.5 rounded-md truncate block">
-                      {dayGoogleEvents[0]?.title || 'Compromisso'}
+                  <div className="mt-0.5 sm:mt-1">
+                    <span className="text-[9px] sm:text-[10px] font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-1 sm:px-1.5 py-0.5 rounded-md truncate block">
+                      {dayGoogleEvents[0]?.title || 'Evento'}
                     </span>
                   </div>
                 ) : (
-                  <div className="h-4" />
+                  <div className="h-3 sm:h-4" />
                 )}
               </div>
             );
