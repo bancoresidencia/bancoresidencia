@@ -147,6 +147,7 @@ data/cruzamento_blindado_log.json
 
 # Temporary visual QA screenshots & scratch dumps
 *.png
+!/public/hippocampus-email.png
 scripts/*.png
 scripts/resp_*.txt
 scripts/network_trace.json

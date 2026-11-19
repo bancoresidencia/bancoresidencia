@@ -247,7 +247,7 @@ otp_expiry = 3600
 
 # Uncomment to customize email template
 [auth.email.template.confirmation]
-subject = "Confirme seu e-mail | Banco Residência"
+subject = "Confirme seu e-mail | Hippocampus Residência"
 content_path = "./supabase/templates/confirm-signup.html"
 
 # [auth.email.template.invite]
