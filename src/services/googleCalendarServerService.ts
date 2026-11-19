@@ -1,4 +1,5 @@
 import crypto from 'crypto';
+import { DEFAULT_GOOGLE_CALENDAR_CLIENT_ID, PUBLIC_GOOGLE_CALENDAR_CLIENT_ID } from '@/config/googleCalendar';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { deriveDomainSecret } from '@/utils/security';
 import { DailyScheduleSlot } from '@/components/dashboard/scheduleTypes';
@@ -97,9 +98,9 @@ export function decryptSecret(cipherText: string): string {
 // ── 2. Troca de Authorization Code por Tokens (OAuth 2.0 Backend Flow) ──
 export async function exchangeGoogleCode(code: string, redirectUri: string) {
   const clientId =
-    process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
-    process.env.GOOGLE_CLIENT_ID ||
-    '323022146503-csbd1pq8s2g22l3mghaaea4kocl2acfn.apps.googleusercontent.com';
+    PUBLIC_GOOGLE_CALENDAR_CLIENT_ID ||
+    process.env.GOOGLE_CLIENT_ID?.trim() ||
+    DEFAULT_GOOGLE_CALENDAR_CLIENT_ID;
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
 
   if (!clientId || !clientSecret) {
@@ -171,9 +172,9 @@ export async function getValidGoogleAccessToken(userId: string): Promise<string>
   }
 
   const clientId =
-    process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID ||
-    process.env.GOOGLE_CLIENT_ID ||
-    '323022146503-csbd1pq8s2g22l3mghaaea4kocl2acfn.apps.googleusercontent.com';
+    PUBLIC_GOOGLE_CALENDAR_CLIENT_ID ||
+    process.env.GOOGLE_CLIENT_ID?.trim() ||
+    DEFAULT_GOOGLE_CALENDAR_CLIENT_ID;
   const clientSecret = process.env.GOOGLE_CLIENT_SECRET;
 
   if (!clientId || !clientSecret) {

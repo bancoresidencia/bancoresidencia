@@ -75,6 +75,7 @@ import { computeAdaptiveDistribution, getBaselinePlatformScores } from '@/utils/
 import { useTheme } from '@/context/ThemeContext';
 import { Button, Badge, ProgressBar } from '@/components/ui';
 import { useAuth } from '@/context/AuthContext';
+import { DEFAULT_GOOGLE_CALENDAR_CLIENT_ID, PUBLIC_GOOGLE_CALENDAR_CLIENT_ID } from '@/config/googleCalendar';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { getAccountTargetExam } from '@/utils/userTargetExam';
 import { flashcardsService } from '@/services/flashcardsService';
@@ -1398,16 +1399,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return '';
   });
 
-  const DEFAULT_GOOGLE_CLIENT_ID = '323022146503-csbd1pq8s2g22l3mghaaea4kocl2acfn.apps.googleusercontent.com';
-
-  const [googleClientId, setGoogleClientId] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('bancoresidencia_google_client_id') || process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID;
-    }
-    return process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID;
-  });
-
-  const [showAdvancedClientId, setShowAdvancedClientId] = useState(false);
+  const googleClientId = PUBLIC_GOOGLE_CALENDAR_CLIENT_ID || DEFAULT_GOOGLE_CALENDAR_CLIENT_ID;
 
   const [exportingSlotId, setExportingSlotId] = useState<string | null>(null);
   const [exportedSlotIds, setExportedSlotIds] = useState<Record<string, boolean>>(() => {
@@ -1893,7 +1885,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
           if (typeof window !== 'undefined') {
             localStorage.setItem('bancoresidencia_google_access_token', accessToken);
-            localStorage.setItem('bancoresidencia_google_client_id', cId);
             localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
             localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
           }

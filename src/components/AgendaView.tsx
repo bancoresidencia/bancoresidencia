@@ -21,6 +21,7 @@ import {
   LogOut
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
+import { DEFAULT_GOOGLE_CALENDAR_CLIENT_ID, PUBLIC_GOOGLE_CALENDAR_CLIENT_ID } from '@/config/googleCalendar';
 import { useTheme } from '@/context/ThemeContext';
 import { useStudentData } from '@/context/StudentDataContext';
 import { useStudyTimer, formatSecondsToShort, getLocalDateStr } from '@/context/StudyTimerContext';
@@ -63,8 +64,6 @@ const GoogleIcon = ({ className = 'w-4 h-4' }: { className?: string }) => (
     <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
   </svg>
 );
-
-const DEFAULT_GOOGLE_CLIENT_ID = '323022146503-csbd1pq8s2g22l3mghaaea4kocl2acfn.apps.googleusercontent.com';
 
 const CRITICAL_SUBTOPICS_MAP: Record<string, Array<{ name: string; defaultAccuracy: number }>> = {
   cirurgia: [
@@ -153,12 +152,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     return '';
   });
 
-  const [googleClientId] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('bancoresidencia_google_client_id') || process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID;
-    }
-    return process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID;
-  });
+  const googleClientId = PUBLIC_GOOGLE_CALENDAR_CLIENT_ID || DEFAULT_GOOGLE_CALENDAR_CLIENT_ID;
 
   const [lastCalendarSyncTime, setLastCalendarSyncTime] = useState<string>(() => {
     if (typeof window !== 'undefined') {
@@ -771,7 +765,6 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
 
           if (typeof window !== 'undefined') {
             localStorage.setItem('bancoresidencia_google_access_token', accessToken);
-            localStorage.setItem('bancoresidencia_google_client_id', cId);
             localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
             localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
           }
