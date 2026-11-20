@@ -22,8 +22,9 @@ const HippocampusDissectionScene = dynamic(
 const initialProgress = { scrollProgress: 0, entryProgress: 1 };
 
 export const LandingBrainHero: React.FC = () => {
-  const { mode, accentConfig } = useTheme();
+  const { accent, mode, accentConfig } = useTheme();
   const isDark = mode === 'dark';
+  const isMonochrome = accent === 'neutral';
   const trackRef = useRef<HTMLDivElement | null>(null);
   const introRef = useRef<HTMLDivElement | null>(null);
   const brainStageRef = useRef<HTMLDivElement | null>(null);
@@ -106,9 +107,23 @@ export const LandingBrainHero: React.FC = () => {
     };
   }, [updateScroll]);
 
+  const headlineGradient = isMonochrome
+    ? isDark
+      ? 'linear-gradient(110deg, #fff 0%, #a1a1aa 28%, #fff 50%, #71717a 76%, #fff 100%)'
+      : 'linear-gradient(110deg, #09090b 0%, #52525b 28%, #09090b 50%, #71717a 76%, #09090b 100%)'
+    : `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex} 26%, ${isDark ? '#e0f2fe' : '#fff'} 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex} 100%)`;
+
   return (
     <section
       aria-label="Hero Principal e Jornada Neuroanatômica Hippocampus"
+      style={{
+        '--journey-accent': isMonochrome ? (isDark ? '#f4f4f5' : '#18181b') : accentConfig.primaryHex,
+        '--journey-text-gradient': headlineGradient,
+        '--journey-final-line': `${accentConfig.primaryHex}66`,
+        '--journey-final-shadow': isDark
+          ? `0 0 45px -8px ${accentConfig.primaryHex}44, 0 24px 50px rgba(0,0,0,0.85)`
+          : `0 0 38px -10px ${accentConfig.primaryHex}35, 0 20px 45px rgba(15,23,42,0.14)`
+      } as React.CSSProperties}
       className="font-inter relative w-full border-b border-zinc-200/80 dark:border-zinc-800/80 bg-gradient-to-b from-white via-zinc-50/90 to-zinc-100/70 dark:from-[var(--bg-page)] dark:via-[var(--bg-page)] dark:to-[#070709]"
     >
       <div ref={trackRef} className="relative h-[560svh] w-full">
@@ -126,8 +141,11 @@ export const LandingBrainHero: React.FC = () => {
               ref={introRef}
               className="absolute inset-x-4 top-[8%] z-10 text-left sm:inset-x-6 lg:right-auto lg:top-1/2 lg:w-[46%] lg:-translate-y-1/2"
             >
-              <h2 className="max-w-xl text-balance text-[clamp(1.75rem,4.2vw,3.5rem)] font-semibold leading-[1.12] tracking-tight text-zinc-950 dark:text-white">
-                Daqui a um mês, você ainda vai lembrar o que estudou hoje?
+              <h2 className="max-w-xl text-balance text-[28px] leading-[1.1] font-black tracking-[-0.035em] sm:text-[38px] md:text-[42px] xl:text-[48px]">
+                <span className="text-zinc-900/60 dark:text-white/60">Daqui a um mês, você ainda vai lembrar </span>
+                <span className="animate-hippo-text-sweep bg-[image:var(--journey-text-gradient)] bg-clip-text text-transparent">
+                  o que estudou hoje?
+                </span>
               </h2>
             </div>
 
@@ -149,7 +167,7 @@ export const LandingBrainHero: React.FC = () => {
             <div
               ref={cardsPanelRef}
               style={{ opacity: 0, pointerEvents: 'none' }}
-              className="absolute inset-x-4 bottom-3 z-30 mx-auto grid min-w-0 max-w-xl items-center sm:inset-x-6 lg:bottom-auto lg:left-auto lg:right-6 lg:top-1/2 lg:w-[38%] lg:max-w-[465px] lg:-translate-y-1/2"
+              className="absolute inset-x-4 bottom-3 z-30 mx-auto grid min-w-0 max-w-xl items-center sm:inset-x-6 lg:bottom-auto lg:left-auto lg:right-6 lg:top-1/2 lg:w-[435px] lg:-translate-y-1/2 xl:w-[465px]"
             >
               <LandingBrainJourneyCards frame={journeyFrame} />
             </div>
