@@ -1,14 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 import { getPaymentService } from '@/lib/mercadopago';
-import { fulfillApprovedMercadoPagoPayment, MercadoPagoPaymentLike } from '@/services/paymentFulfillmentService';
+import { synchronizePayment } from '@/services/paymentFulfillmentService';
+
+import { checkoutOrderId } from '@/utils/checkoutOrderId';
+import { createClient } from '@/lib/supabase/server';
 
 export async function GET(req: NextRequest) {
   try {
     const url = new URL(req.url);
-    const paymentId = url.searchParams.get('paymentId');
+    let paymentId = url.searchParams.get('paymentId');
 
-    if (!paymentId || !/^[0-9a-zA-Z_-]{1,64}$/.test(paymentId)) {
+    const attempt = url.searchParams.get('attempt');
+    if (!(paymentId && /^\d{1,32}$/.test(paymentId)) && !(attempt && /^[a-f0-9-]{36}$/i.test(attempt))) {
       return NextResponse.json({ error: 'paymentId inválido ou ausente' }, { status: 400 });
     }
 
@@ -21,6 +25,18 @@ export async function GET(req: NextRequest) {
     }
 
     const paymentService = getPaymentService();
+    if (attempt) {
+      const id = checkoutOrderId(user.id, attempt);
+      const { data: order } = await (await createClient()).from('orders').select('mp_payment_id')
+        .eq('user_id', user.id).eq('id', id).maybeSingle().throwOnError();
+      if (!order) return NextResponse.json({ found: false });
+      paymentId = order.mp_payment_id;
+      if (!paymentId) {
+        const found = await paymentService.search({ options: { external_reference: id, limit: 1 } });
+        paymentId = found.results?.[0]?.id || null;
+      }
+    }
+    if (!paymentId) return NextResponse.json({ found: false });
     const payment = await paymentService.get({ id: paymentId });
 
     const status = payment.status || 'pending';
@@ -35,25 +51,18 @@ export async function GET(req: NextRequest) {
       );
     }
 
-    // 2. Sincroniza de forma atômica e idempotente (incluindo comissão de embaixador no PIX!)
-    if (status === 'approved') {
-      const fulfillment = await fulfillApprovedMercadoPagoPayment(payment as unknown as MercadoPagoPaymentLike);
-      if (!fulfillment.ok && fulfillment.reason === 'amount_mismatch') {
-        return NextResponse.json(
-          { error: 'Valor do pagamento divergente do plano selecionado.', status: 'invalid_amount' },
-          { status: 400 }
-        );
-      }
-    }
-
+    const result = await synchronizePayment(payment);
+    const pix = payment.point_of_interaction?.transaction_data;
     return NextResponse.json({
+      found: true, paymentId: String(payment.id),
+      pix: payment.payment_method_id === 'pix' && status === 'pending' ? { qrCode: pix?.qr_code, qrCodeBase64: pix?.qr_code_base64 } : null,
       status,
       statusDetail: payment.status_detail,
-      isApproved: status === 'approved'
+      isApproved: result.active
     });
 
-  } catch (error: unknown) {
-    console.error('Erro ao verificar status do pagamento:', error);
+  } catch {
+    console.error('Erro ao verificar status do pagamento:');
     return NextResponse.json(
       { error: 'Falha ao consultar status', status: 'unknown' },
       { status: 500 }

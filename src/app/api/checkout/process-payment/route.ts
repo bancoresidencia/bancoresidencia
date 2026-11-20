@@ -2,10 +2,12 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
-import { PLANS, PlanId } from '@/config/plans';
+import { PLANS, isPlanId } from '@/config/plans';
 import { normalizeReferralCode } from '@/config/ambassadorConfig';
 import { validateBackendReferralCoupon } from '@/services/ambassadorService';
-import { fulfillApprovedMercadoPagoPayment, MercadoPagoPaymentLike } from '@/services/paymentFulfillmentService';
+import { synchronizePayment } from '@/services/paymentFulfillmentService';
+
+import { checkoutOrderId } from '@/utils/checkoutOrderId';
 
 export async function POST(req: NextRequest) {
   try {
@@ -23,7 +25,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { planId, paymentData, couponCode } = body;
 
-    if (!planId || !PLANS[planId as PlanId]) {
+    if (!isPlanId(planId)) {
       return NextResponse.json(
         { error: 'Plano inválido selecionado.' },
         { status: 400 }
@@ -37,7 +39,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const selectedPlan = PLANS[planId as PlanId];
+    const selectedPlan = PLANS[planId];
     const paymentService = getPaymentService();
     const supabaseAdmin = getSupabaseAdmin();
 
@@ -46,7 +48,7 @@ export async function POST(req: NextRequest) {
     // Validação estrita server-side de Cupom de Desconto / Código de Indicação (bloqueia cupons falsos e auto-indicação)
     let discountPercent = 0;
     let validatedCoupon: string | null = null;
-    let referrerName: string | null = null;
+    let referrerId: string | null = null;
 
     if (couponCode && typeof couponCode === 'string' && couponCode.trim()) {
       const cleanCoupon = normalizeReferralCode(couponCode);
@@ -65,27 +67,44 @@ export async function POST(req: NextRequest) {
 
       discountPercent = validation.discountPercent;
       validatedCoupon = cleanCoupon;
-      referrerName = validation.referrerName || null;
+      referrerId = validation.referrerId || null;
     }
 
     const discountFactor = discountPercent > 0 ? (1 - discountPercent / 100) : 1;
     const amount = parseFloat((selectedPlan.totalPrice * discountFactor).toFixed(2));
 
     // 2. Montar objeto para o Mercado Pago com Idempotência Determinística
-    const idempotencyKey = paymentData.token
-      ? `BR-CARD-${paymentData.token}`
-      : (body.clientRequestId ? `BR-PIX-${body.clientRequestId}` : `BR-${user.id}-${planId}-${Date.now()}`);
-    const payerEmail = paymentData.payer?.email || user.email || 'estudante@bancoresidencia.com.br';
-
+    if (typeof body.clientRequestId !== 'string' || !/^[a-f0-9-]{36}$/i.test(body.clientRequestId)) {
+      return NextResponse.json({ error: 'Atualize a página para iniciar o pagamento.' }, { status: 400 });
+    }
+    const installments = Number(paymentData.installments ?? 1);
+    if (!Number.isInteger(installments) || installments < 1 || installments > selectedPlan.maxInstallments ||
+        (!isPix && typeof paymentData.token !== 'string') || (isPix && !/^\d{11}$/.test(paymentData.payer?.identification?.number || ''))) {
+      return NextResponse.json({ error: 'Confira os dados do pagamento.' }, { status: 400 });
+    }
+    const orderId = checkoutOrderId(user.id, body.clientRequestId);
+    const idempotencyKey = orderId;
+    const payerEmail = paymentData.payer?.email || user.email;
+    const { data: inserted } = await supabaseAdmin.from('orders').upsert({ id: orderId, user_id: user.id, plan_id: planId,
+      plan_name: selectedPlan.name, amount, currency: 'BRL', status: 'pending', installments,
+      payment_method: paymentData.payment_method_id, raw_data: { coupon_code: validatedCoupon, referrer_id: referrerId } },
+      { onConflict: 'id', ignoreDuplicates: true }).select('id').throwOnError();
+    const { data: receipt } = await supabaseAdmin.from('orders').select('created_at,access_until,mp_payment_id,user_id,plan_id,amount,payment_method,raw_data,installments')
+      .eq('id',orderId).eq('user_id',user.id).single().throwOnError();
+    if (receipt.plan_id !== planId || Number(receipt.amount) !== amount || receipt.payment_method !== paymentData.payment_method_id ||
+        receipt.installments !== installments || receipt.raw_data?.coupon_code !== validatedCoupon) {
+      return NextResponse.json({ error: 'Esta tentativa já está vinculada a outra compra.' }, { status: 409 });
+    }
     const paymentPayload: Parameters<typeof paymentService.create>[0] = {
       body: {
+        external_reference: orderId,
         transaction_amount: amount,
         description: validatedCoupon
           ? `Hippocampus — ${selectedPlan.name} (Cupom: ${validatedCoupon})`
           : `Hippocampus — ${selectedPlan.name}`,
         payment_method_id: paymentData.payment_method_id,
         token: paymentData.token,
-        installments: Math.max(1, Math.min(selectedPlan.maxInstallments, Number(paymentData.installments) || 1)),
+        installments,
         issuer_id: paymentData.issuer_id ? Number(paymentData.issuer_id) : undefined,
         payer: {
           email: payerEmail,
@@ -98,15 +117,13 @@ export async function POST(req: NextRequest) {
         },
         metadata: {
           user_id: user.id,
-          user_email: user.email,
           plan_id: selectedPlan.id,
           plan_name: selectedPlan.name,
           duration_days: selectedPlan.durationDays,
           coupon_code: validatedCoupon,
           discount_percent: discountPercent,
           original_amount: selectedPlan.totalPrice,
-          expected_amount: amount,
-          referrer_name: referrerName
+          expected_amount: amount
         }
       },
       requestOptions: {
@@ -115,70 +132,38 @@ export async function POST(req: NextRequest) {
     };
 
     // 3. Executar cobrança na API do Mercado Pago
-    const mpResponse = await paymentService.create(paymentPayload);
-
+    let gatewayId = receipt.mp_payment_id;
+    if (!gatewayId && !inserted?.length) {
+      const prior = await paymentService.search({ options: { external_reference: orderId, limit: 1 } });
+      gatewayId = prior.results?.[0]?.id;
+      if (!gatewayId && Date.now() - Date.parse(receipt.created_at) >= 24 * 3600 * 1000) {
+        return NextResponse.json({ error: 'Tentativa antiga. Consulte o suporte para verificar o pedido antes de pagar novamente.' }, { status: 409 });
+      }
+    }
+    const submit = async () => {
+      try {
+        return await paymentService.create(paymentPayload);
+      } catch (error) {
+        const code = typeof error === 'object' && error && 'status' in error ? Number(error.status) : 0;
+        if (code !== 400 && code !== 422) throw error;
+        return null;
+      }
+    };
+    const mpResponse = gatewayId ? await paymentService.get({ id: gatewayId }) : await submit();
+    if (!mpResponse) {
+      return NextResponse.json({ success: false, resetAttempt: true, error: 'O Mercado Pago recusou os dados. Confira os campos e tente novamente.' }, { status: 422 });
+    }
     const paymentId = String(mpResponse.id || '');
-    const status = mpResponse.status || 'pending';
-    const approvalBase = mpResponse.date_approved ? new Date(mpResponse.date_approved) : new Date();
-    const guaranteeUntil = new Date(approvalBase.getTime() + 7 * 24 * 60 * 60 * 1000);
-    const nowIso = new Date().toISOString();
-
-    // 4. Salvar na tabela de orders como 'pending' para transição atômica
-    let orderRecord: { id?: string } | null = null;
+    if (!paymentId) throw new Error('payment_id_missing');
+    if (String(mpResponse.external_reference) !== orderId || mpResponse.metadata?.user_id !== user.id) throw new Error('payment_reference_mismatch');
+    const status = mpResponse.status;
+    let isApproved = false;
     try {
-      const pixData = mpResponse.point_of_interaction?.transaction_data;
-      const { data: insertedOrder } = await supabaseAdmin
-        .from('orders')
-        .upsert({
-          user_id: user.id,
-          mp_payment_id: paymentId,
-          plan_id: selectedPlan.id,
-          plan_name: selectedPlan.name,
-          amount: amount,
-          installments: Math.max(1, Number(paymentData.installments) || 1),
-          payment_method: paymentData.payment_method_id,
-          status: 'pending',
-          qr_code: pixData?.qr_code || null,
-          qr_code_base64: pixData?.qr_code_base64 || null,
-          ticket_url: pixData?.ticket_url || null,
-          guarantee_expires_at: guaranteeUntil.toISOString(),
-          raw_data: {
-            ...mpResponse,
-            coupon_applied: validatedCoupon ? {
-              code: validatedCoupon,
-              discount_percent: discountPercent,
-              referrer_name: referrerName,
-              original_amount: selectedPlan.totalPrice,
-              final_amount: amount
-            } : null
-          }
-        }, { onConflict: 'mp_payment_id' })
-        .select()
-        .maybeSingle();
-
-      orderRecord = insertedOrder;
-    } catch (orderErr) {
-      console.warn('Aviso ao gravar pedido na tabela public.orders:', orderErr);
+      const result = await synchronizePayment(mpResponse);
+      isApproved = result.active;
+    } catch {
+      console.error('[checkout] Falha de conciliação', { orderId, paymentId });
     }
-
-    // 5. Se o pagamento foi aprovado imediatamente (ex: Cartão de Crédito), ativar atomicamente e idempotente
-    if (status === 'approved') {
-      try {
-        await fulfillApprovedMercadoPagoPayment(mpResponse as unknown as MercadoPagoPaymentLike);
-      } catch (profileErr) {
-        console.error('Erro ao cumprir pagamento aprovado no Mercado Pago:', profileErr);
-      }
-    } else if (status === 'rejected') {
-      try {
-        await supabaseAdmin
-          .from('orders')
-          .update({ status: 'rejected', updated_at: nowIso })
-          .eq('mp_payment_id', paymentId);
-      } catch {
-        // ignore
-      }
-    }
-
     const pointOfInteraction = mpResponse.point_of_interaction;
     const pixData = pointOfInteraction?.transaction_data;
 
@@ -197,14 +182,12 @@ export async function POST(req: NextRequest) {
         qrCodeBase64: pixData?.qr_code_base64,
         ticketUrl: pixData?.ticket_url
       } : null,
-      order: orderRecord
+      isApproved
     });
 
-  } catch (error: unknown) {
-    console.error('Erro no processamento do Mercado Pago:', error);
-    const errMessage = error instanceof Error ? error.message : 'Falha ao processar pagamento.';
+  } catch {
     return NextResponse.json(
-      { error: errMessage, success: false },
+      { error: 'Não foi possível confirmar a operação. Consulte novamente usando a mesma tentativa.', success: false },
       { status: 500 }
     );
   }

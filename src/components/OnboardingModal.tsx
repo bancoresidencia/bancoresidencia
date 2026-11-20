@@ -4,8 +4,7 @@ import React, { useState, useMemo } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import {
-  applyReferralCode,
-  getUserReferralCode,
+  verifyCheckoutCoupon,
   AppliedReferral
 } from '@/config/ambassadorConfig';
 import { getInstitutions } from '@/services/officialExamsService';
@@ -198,14 +197,13 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
   if (!isOpen) return null;
 
   // Validação do Código de Indicação (Passo 1)
-  const handleValidateReferral = () => {
+  const handleValidateReferral = async () => {
     setReferralError(null);
     if (!referralInput.trim()) {
       setReferralError('Digite o código de indicação ou selecione "Não tenho código".');
       return;
     }
-    const currentUserCode = getUserReferralCode(user);
-    const res = applyReferralCode(referralInput, currentUserCode, user?.id, user);
+    const res = await verifyCheckoutCoupon(referralInput);
     if (res.success && res.referral) {
       setAppliedReferral(res.referral);
       setSkippedReferral(false);
@@ -257,9 +255,6 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
         localStorage.setItem('user_target_exam_date', targetDate);
       }
 
-      if (appliedReferral) {
-        applyReferralCode(appliedReferral.code);
-      }
 
       localStorage.setItem('bancoresidencia_user_objective', objective);
       localStorage.setItem('bancoresidencia_user_deadline', deadline);

@@ -296,6 +296,21 @@ export function validateReferralCode(
 /**
  * Salva o cupom de indicação aplicado pelo aluno atual
  */
+export async function verifyCheckoutCoupon(code: string): Promise<{ success: boolean; message: string; referral?: AppliedReferral }> {
+  try {
+    const response = await fetch('/api/checkout/coupon', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ code }) });
+    const result = await response.json();
+    if (!response.ok || !result.valid) return { success: false, message: result.message };
+    const referral: AppliedReferral = { code: normalizeReferralCode(code), discountPercent: result.discountPercent,
+      referrerName: result.referrerName, appliedAt: new Date().toISOString() };
+    localStorage.setItem(APPLIED_REFERRAL_KEY, JSON.stringify(referral));
+    return { success: true, referral, message: result.message };
+  } catch {
+    return { success: false, message: 'Não foi possível verificar o cupom.' };
+  }
+}
+
 export function applyReferralCode(
   code: string,
   currentUserCode?: string,

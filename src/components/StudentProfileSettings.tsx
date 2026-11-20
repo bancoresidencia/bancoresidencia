@@ -237,15 +237,17 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
 
 
   const handleRequestRefund = async () => {
-    if (!window.confirm('Tem certeza de que deseja solicitar o estorno integral da sua assinatura? Seu acesso PRO será revogado imediatamente e o estorno será processado pelo Mercado Pago de forma incontestável.')) {
-      return;
-    }
+
 
     setIsRefunding(true);
     setRefundMessage(null);
 
     try {
-      const res = await fetch('/api/checkout/refund', { method: 'POST' });
+      const preview = await fetch('/api/checkout/refund', { cache: 'no-store' });
+      const order = await preview.json();
+      if (!preview.ok) throw new Error(order.error || 'Nenhum pedido disponível.');
+      if (!window.confirm(`Solicitar estorno integral de ${order.plan_name}?`)) return;
+      const res = await fetch('/api/checkout/refund', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ orderId: order.id }) });
       const data = await res.json();
 
       if (!res.ok || !data.success) {
@@ -254,7 +256,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
 
       setRefundMessage({
         type: 'success',
-        text: 'Reembolso aprovado com sucesso! O valor foi estornado e sua conta retornou ao plano gratuito.'
+        text: data.message
       });
       if (refreshUser) {
         await refreshUser();

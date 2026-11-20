@@ -279,7 +279,7 @@ export async function validateBackendReferralCoupon(
   couponCode: string,
   buyerUserId: string,
   buyerName?: string
-): Promise<{ valid: boolean; discountPercent: number; referrerName?: string; message: string }> {
+): Promise<{ valid: boolean; discountPercent: number; referrerId?: string; referrerName?: string; message: string }> {
   const clean = normalizeReferralCode(couponCode || '');
   if (!clean || clean.length < 3 || clean.length > 20) {
     return { valid: false, discountPercent: 0, message: 'Código de indicação inválido.' };
@@ -326,6 +326,7 @@ export async function validateBackendReferralCoupon(
         return {
           valid: true,
           discountPercent: AMBASSADOR_CONFIG.discountPercent,
+          referrerId: referrerProfile.id,
           referrerName: referrerProfile.name || 'Estudante Embaixador',
           message: `Código ${clean} validado com sucesso!`
         };

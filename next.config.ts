@@ -11,11 +11,11 @@ function contentSecurityPolicy(allowWasm = false) {
     "script-src 'self' 'unsafe-inline'" +
       (isDev ? " 'unsafe-eval'" : '') +
       (allowWasm ? " 'wasm-unsafe-eval'" : '') +
-      ' https://sdk.mercadopago.com https://accounts.google.com',
+      ' https://sdk.mercadopago.com https://http2.mlstatic.com https://accounts.google.com',
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "img-src 'self' data: blob: https:",
     "font-src 'self' data: https://fonts.gstatic.com",
-    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com https://accounts.google.com https://www.googleapis.com wss: ws:" +
+    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com https://http2.mlstatic.com https://secure-fields.mercadopago.com https://api-static.mercadopago.com https://www.mercadolibre.com https://api.mercadolibre.com https://accounts.google.com https://www.googleapis.com wss: ws:" +
       (motionStudioEnabled ? ` ${motionStudioOrigin} ws://localhost:5200` : ''),
     "frame-src 'self' https://accounts.google.com https://*.mercadopago.com https://www.mercadopago.com.br",
     "frame-ancestors 'none'",

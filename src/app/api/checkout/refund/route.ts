@@ -1,128 +1,53 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyStudentSession } from '@/lib/supabase/studentAuth';
-import { getRefundService } from '@/lib/mercadopago';
+import { getRefundService, getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
-import { syncUserSubscriptionAfterRefund } from '@/services/paymentFulfillmentService';
-import { safeErrorMessage } from '@/utils/security';
+import { synchronizePayment } from '@/services/paymentFulfillmentService';
 
-export async function POST(req: NextRequest) {
+export async function GET(req: NextRequest) {
   try {
-    // 1. Validar autenticação do usuário (Bearer ou Cookie SSR)
-    const auth = await verifyStudentSession(req);
-    const user = auth.user;
-
-    if (!auth.authorized || !user) {
-      return NextResponse.json(
-        { error: 'Você precisa estar conectado para solicitar o reembolso.' },
-        { status: 401 }
-      );
-    }
-
-    const supabaseAdmin = getSupabaseAdmin();
-
-    // 2. Buscar a última ordem aprovada do usuário
-    const { data: order, error: orderError } = await supabaseAdmin
-      .from('orders')
-      .select('*')
-      .eq('user_id', user.id)
-      .eq('status', 'approved')
-      .order('created_at', { ascending: false })
-      .limit(1)
-      .maybeSingle();
-
-    if (orderError || !order || !order.mp_payment_id) {
-      return NextResponse.json(
-        { error: 'Nenhuma assinatura ativa encontrada elegível para reembolso automático.' },
-        { status: 404 }
-      );
-    }
-
-    // 3. Validar se está dentro da janela de 7 dias de garantia
-    const createdAt = new Date(order.created_at).getTime();
-    const now = Date.now();
-    const sevenDaysInMs = 7 * 24 * 60 * 60 * 1000;
-
-    if (now - createdAt > sevenDaysInMs) {
-      return NextResponse.json(
-        { error: 'O prazo de 7 dias da garantia incondicional já expirou.' },
-        { status: 400 }
-      );
-    }
-
-    // 4. Trava atômica anti-TOCTOU (marca 'cancelled' enquanto estorno externo está em voo)
-    const lockIso = new Date().toISOString();
-    const { data: lockedOrder } = await supabaseAdmin
-      .from('orders')
-      .update({ status: 'cancelled', updated_at: lockIso })
-      .eq('id', order.id)
-      .eq('status', 'approved')
-      .select('id')
-      .maybeSingle();
-
-    if (!lockedOrder?.id) {
-      return NextResponse.json(
-        { error: 'Uma solicitação de reembolso já está em andamento para este pedido.' },
-        { status: 409 }
-      );
-    }
-
-    // 5. Executar reembolso via SDK do Mercado Pago com chave de idempotência determinística
-    const refundService = getRefundService();
-    let refundResult: { id?: string | number };
-    try {
-      refundResult = await refundService.create({
-        payment_id: Number(order.mp_payment_id),
-        requestOptions: {
-          idempotencyKey: `BR-REFUND-${order.id}`
-        }
-      });
-    } catch (mpErr) {
-      // Desfaz trava para permitir nova tentativa legítima em caso de falha transitória na API externa
-      await supabaseAdmin
-        .from('orders')
-        .update({ status: 'approved', updated_at: new Date().toISOString() })
-        .eq('id', order.id)
-        .eq('status', 'cancelled');
-      throw mpErr;
-    }
-
-    const nowIso = new Date().toISOString();
-
-    // 6. Atualizar a ordem no banco como 'refunded' e cancelar eventual comissão vinculada
-    await supabaseAdmin
-      .from('orders')
-      .update({
-        status: 'refunded',
-        refund_id: String(refundResult.id || ''),
-        refunded_at: nowIso,
-        updated_at: nowIso
-      })
-      .eq('id', order.id);
-
-    try {
-      await supabaseAdmin
-        .from('ambassador_referrals')
-        .update({ status: 'refunded' })
-        .eq('order_id', order.id);
-    } catch {
-      // ignore
-    }
-
-    // 7. Reconciliar assinatura preservando eventual pedido mais novo/ativo
-    await syncUserSubscriptionAfterRefund(user.id);
-
-    return NextResponse.json({
-      success: true,
-      message: 'Reembolso realizado com sucesso! O valor foi estornado.',
-      refundId: refundResult.id
-    });
-
-  } catch (error: unknown) {
-    console.error('Erro ao processar reembolso:', error);
-    return NextResponse.json(
-      { error: safeErrorMessage(error, 'Falha ao processar estorno junto ao gateway de pagamento.'), success: false },
-      { status: 500 }
-    );
+    const { user, authorized } = await verifyStudentSession(req);
+    if (!authorized || !user) return NextResponse.json({ error: 'Faça login novamente.' }, { status: 401 });
+    const { data } = await getSupabaseAdmin().from('orders').select('id,plan_name').eq('user_id', user.id)
+      .eq('status', 'approved').or('refund_requested_at.not.is.null,guarantee_expires_at.gte.' + new Date().toISOString())
+      .order('created_at', { ascending: false }).limit(1).maybeSingle().throwOnError();
+    return data ? NextResponse.json(data) : NextResponse.json({ error: 'Nenhum pedido elegível para estorno.' }, { status: 404 });
+  } catch {
+    return NextResponse.json({ error: 'Não foi possível consultar a garantia.' }, { status: 503 });
   }
 }
 
+export async function POST(req: NextRequest) {
+  try {
+    const { user, authorized } = await verifyStudentSession(req);
+    if (!authorized || !user) return NextResponse.json({ error: 'Faça login novamente.' }, { status: 401 });
+    const { orderId } = await req.json();
+    const db = getSupabaseAdmin();
+    const { data: order } = await db.from('orders').select('id,mp_payment_id,status,guarantee_expires_at,refund_requested_at')
+      .eq('user_id',user.id).eq('id',orderId).maybeSingle().throwOnError();
+    if (!order?.mp_payment_id) return NextResponse.json({ error: 'Pedido indisponível.' }, { status: 404 });
+    if (order.status === 'refunded') return NextResponse.json({ success: true, message: 'O pedido já foi estornado.' });
+    if (order.status !== 'approved' || (!order.refund_requested_at && !(Date.parse(order.guarantee_expires_at) >= Date.now()))) {
+      return NextResponse.json({ error: 'O pedido está fora da garantia.' }, { status: 400 });
+    }
+    if (!order.refund_requested_at) {
+      await db.from('orders').update({ refund_requested_at: new Date().toISOString() }).eq('id',order.id)
+        .eq('status','approved').is('refund_requested_at',null).throwOnError();
+    }
+    const payments = getPaymentService();
+    let payment = await payments.get({ id: order.mp_payment_id });
+    if (payment.status === 'approved') {
+      const refund = await getRefundService().create({ payment_id: Number(order.mp_payment_id),
+        requestOptions: { idempotencyKey: order.id } });
+      if (refund.id) await db.from('orders').update({ refund_id: String(refund.id) }).eq('id',order.id).throwOnError();
+      payment = await payments.get({ id: order.mp_payment_id });
+    }
+    if (payment.status !== 'refunded' && payment.status !== 'charged_back') {
+      return NextResponse.json({ success: true, message: 'Estorno solicitado. Aguardando confirmação do Mercado Pago.' }, { status: 202 });
+    }
+    await synchronizePayment(payment);
+    return NextResponse.json({ success: true, message: 'Estorno confirmado. Seu acesso foi atualizado.' });
+  } catch {
+    return NextResponse.json({ error: 'Ainda não foi possível confirmar o estorno. Consulte novamente.' }, { status: 503 });
+  }
+}

@@ -19,7 +19,7 @@ import { PLANS, PlanDefinition } from '@/config/plans';
 import { MercadoPagoCheckout } from '@/components/MercadoPagoCheckout';
 import {
   getAppliedReferralCode,
-  applyReferralCode,
+  verifyCheckoutCoupon,
   removeAppliedReferralCode,
   getUserReferralCode,
   AppliedReferral
@@ -61,7 +61,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
 
   if (!isOpen) return null;
 
-  const handleApplyCoupon = (e?: React.FormEvent) => {
+  const handleApplyCoupon = async (e?: React.FormEvent) => {
     if (e) e.preventDefault();
     setCouponFeedback(null);
     if (!couponInput.trim()) {
@@ -69,7 +69,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
       return;
     }
 
-    const res = applyReferralCode(couponInput, currentUserCode, user?.id, user);
+    const res = await verifyCheckoutCoupon(couponInput);
     if (res.success && res.referral) {
       setAppliedReferral(res.referral);
       setCouponFeedback({ type: 'success', text: `Cupom ${res.referral.code} aplicado com sucesso! 10% de desconto ativado.` });
