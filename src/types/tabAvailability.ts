@@ -1,5 +1,6 @@
 export type PlatformTabKey =
   | 'home'
+  | 'cronograma'
   | 'agenda'
   | 'banco'
   | 'caderno_erros'
@@ -21,7 +22,8 @@ export interface TabConfig {
 
 export const PLATFORM_TABS: TabConfig[] = [
   { key: 'home', label: 'Início', path: '/dashboard', description: 'Painel principal e metas diárias' },
-  { key: 'agenda', label: 'Agenda', path: '/agenda', description: 'Cronograma inteligente integrado ao Google Agenda e plantões' },
+  { key: 'cronograma', label: 'Cronograma de Estudos', path: '/cronograma', description: 'Calendário de estudos distribuído por Foco e Prova-Alvo' },
+  { key: 'agenda', label: 'Agenda & Plantões', path: '/agenda', description: 'Cronograma inteligente integrado ao Google Agenda e plantões' },
   { key: 'banco', label: 'Banco de Questões', path: '/questoes', description: 'Resolução e filtros de questões' },
   { key: 'caderno_erros', label: 'Caderno de Erros', path: '/caderno-de-erros', description: 'Revisão ativa de questões erradas' },
   { key: 'flashcards', label: 'Flashcards', path: '/flashcards', description: 'Repetição espaçada com algoritmo FSRS' },
@@ -38,6 +40,7 @@ export type TabStatusMap = Record<PlatformTabKey, boolean>;
 
 export const DEFAULT_TAB_STATUS: TabStatusMap = {
   home: true,
+  cronograma: true,
   agenda: true,
   banco: true,
   caderno_erros: true,

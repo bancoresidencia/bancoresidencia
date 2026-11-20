@@ -14,6 +14,21 @@ export type ScheduleItemType =
 
 export type RevisionIntervalPreset = 1 | 7 | 14 | 30 | 60;
 
+export type ScheduleDistributionStrategy =
+  | 'proportional_classic' // Proporcional Clássico (Intercalado por Especialidade)
+  | 'spiral_cycle'         // Ciclos em Espiral / Escadinha por Temas (2 a 3 temas em bloco)
+  | 'sequential_theme'     // Imersão Sequencial por Tema (fecha todo o tema antes do próximo)
+  | 'custom';              // Personalizado / Seleção Manual do Aluno
+
+export interface TargetInstitutionOption {
+  key: string;
+  sigla: string;
+  nome: string;
+  uf?: string;
+  questionCount?: number;
+  popular?: boolean;
+}
+
 export type ExamIncidenceLevel = 'extreme' | 'high' | 'medium' | 'low';
 
 export interface ExamIncidenceInfo {
@@ -81,6 +96,8 @@ export interface UserFocusProgress {
   createdAt?: string;
   updatedAt?: string;
 }
+
+export type FocusProgressMap = Record<string, UserFocusProgress>;
 
 /**
  * Item enriquecido exibido no Checklist e no Calendário,
@@ -162,5 +179,21 @@ export interface CreateSchedulePayload {
   dailyFocusTarget: number;
   autoRevisionIntervals?: number[];
   selectedFocusKeys?: string[];
+  strategy?: ScheduleDistributionStrategy;
   autoDistribute?: boolean;
+}
+
+export interface GenerateScheduleParams {
+  scheduleId: string;
+  userId: string;
+  targetInstitution: string; // Ex: 'USP-SP', 'ENARE', 'UNICAMP', 'SUS-SP'
+  startDate: string; // YYYY-MM-DD
+  targetExamDate: string; // YYYY-MM-DD
+  strategy: ScheduleDistributionStrategy;
+  weeklyStudyDays: number[]; // [0..6] (ex: [1,2,3,4,5])
+  dailyFocusTarget: number; // Ex: 1 ou 2 focos por dia
+  includeRevisions?: boolean;
+  revisionIntervals?: number[]; // [7, 30]
+  selectedFocusKeys?: string[];
+  maxFociLimit?: number;
 }
