@@ -14,9 +14,7 @@ import { usePathname } from 'next/navigation';
  */
 export const HippocampusGlobalSplash: React.FC = () => {
   const pathname = usePathname();
-  const isExcluded = typeof window !== 'undefined'
-    ? (pathname?.includes('simulado-priapismo') || window.location.pathname.includes('simulado-priapismo'))
-    : pathname?.includes('simulado-priapismo');
+  const isExcluded = pathname === '/' || Boolean(pathname?.includes('simulado-priapismo'));
 
   const [isFadingOut, setIsFadingOut] = useState(false);
   const [isDestroyed, setIsDestroyed] = useState(Boolean(isExcluded));

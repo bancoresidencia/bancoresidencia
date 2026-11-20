@@ -1,189 +1,166 @@
 'use client';
 
-import React, { useState, useEffect, useCallback, Suspense } from 'react';
+import { Suspense, useCallback, useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 import { LandingPage } from '@/components/LandingPage';
-import { AuthScreen } from '@/components/AuthScreen';
-import { PLANS, PlanId, PlanDefinition } from '@/config/plans';
+import { isPlanId, PLANS, type PlanId } from '@/config/plans';
 import { useAuth } from '@/context/AuthContext';
 import { useSubscription } from '@/context/SubscriptionContext';
 
-function HomeContent() {
+const AuthScreen = dynamic(
+  () => import('@/components/AuthScreen').then((module) => module.AuthScreen),
+  { loading: () => <HippocampusLoading fullScreen={false} size="md" /> }
+);
+
+type AuthMode = 'login' | 'register';
+type AuthRequest = { mode: AuthMode; planTitle?: string };
+
+const legacyRoutes = new Map([
+  ['home', '/dashboard'],
+  ['agenda', '/agenda'],
+  ['banco', '/questoes'],
+  ['caderno_erros', '/caderno-de-erros'],
+  ['cadernos', '/caderno-de-erros'],
+  ['flashcards', '/flashcards'],
+  ['resumos', '/resumos'],
+  ['listas', '/listas'],
+  ['provas', '/provas'],
+  ['simulados', '/simulados'],
+  ['stats', '/desempenho'],
+  ['desempenho', '/desempenho'],
+  ['ranking', '/ranking'],
+  ['configuracoes', '/configuracoes'],
+  ['curadoria', '/admin/curadoria'],
+  ['reportes', '/admin/reportes'],
+  ['auditoria_medevo', '/admin/medevo'],
+]);
+
+function readStoredPlan(): PlanId | null {
+  try {
+    const storedPlan = sessionStorage.getItem('pending_checkout_plan') ||
+      localStorage.getItem('pending_checkout_plan');
+    return isPlanId(storedPlan) ? storedPlan : null;
+  } catch {
+    return null;
+  }
+}
+
+function HomeNavigation({
+  onAuthRequest,
+  pendingPlan,
+}: {
+  onAuthRequest: (request: AuthRequest) => void;
+  pendingPlan: PlanId | null;
+}) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { user, isAuthenticated, isAdmin, isLoading } = useAuth();
   const { isSubscriptionExpired } = useSubscription();
+  const isSignedIn = Boolean(isAuthenticated && user);
+  const isUserFree = !user?.subscriptionPlan || user.subscriptionPlan === 'free' || isSubscriptionExpired;
 
-  const [authModal, setAuthModal] = useState<{
-    isOpen: boolean;
-    mode: 'login' | 'register';
-    planTitle?: string;
-  }>({
-    isOpen: false,
-    mode: 'login'
-  });
-
-  const [pendingCheckoutPlan, setPendingCheckoutPlan] = useState<PlanDefinition | null>(null);
-
-  // 1. Redirecionamento de compatibilidade para links legados com ?tab=...
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const tabParam = searchParams.get('tab');
-    if (!tabParam) return;
+    const legacyRoute = legacyRoutes.get(searchParams.get('tab') ?? '');
+    if (!legacyRoute) return;
 
-    const routeMap: Record<string, string> = {
-      home: '/dashboard',
-      agenda: '/agenda',
-      banco: '/questoes',
-      caderno_erros: '/caderno-de-erros',
-      cadernos: '/caderno-de-erros',
-      flashcards: '/flashcards',
-      resumos: '/resumos',
-      listas: '/listas',
-      provas: '/provas',
-      simulados: '/simulados',
-      stats: '/desempenho',
-      desempenho: '/desempenho',
-      ranking: '/ranking',
-      configuracoes: '/configuracoes',
-      curadoria: '/admin/curadoria',
-      reportes: '/admin/reportes',
-      auditoria_medevo: '/admin/medevo'
-    };
+    const query = searchParams.get('q') || searchParams.get('search');
+    router.replace(query && legacyRoute === '/questoes'
+      ? '/questoes?search=' + encodeURIComponent(query)
+      : legacyRoute);
+  }, [router, searchParams]);
 
-    const targetRoute = routeMap[tabParam];
-    if (targetRoute) {
-      const qParam = searchParams.get('q') || searchParams.get('search');
-      if (qParam && targetRoute === '/questoes') {
-        router.replace(`/questoes?search=${encodeURIComponent(qParam)}`);
-      } else {
-        router.replace(targetRoute);
-      }
-    }
-  }, [searchParams, router]);
-
-  // 2. Detecta intenção de compra pendente na URL ou Storage
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    try {
-      const authParam = searchParams.get('auth') || searchParams.get('mode');
-      const isLoginParam = searchParams.get('login') === '1' || authParam === 'login';
-      if (isLoginParam && (!isAuthenticated || !user)) {
-        setAuthModal({ isOpen: true, mode: 'login' });
-        return;
-      }
-      if (authParam === 'register' && (!isAuthenticated || !user)) {
-        setAuthModal({ isOpen: true, mode: 'register' });
-        return;
-      }
+    if (isSignedIn || legacyRoutes.has(searchParams.get('tab') ?? '')) return;
 
-      const planParam = searchParams.get('plan') as PlanId | null;
-      const isCheckoutParam = searchParams.get('checkout') === '1';
-      const storedPlan = (sessionStorage.getItem('pending_checkout_plan') ||
-        localStorage.getItem('pending_checkout_plan')) as PlanId | null;
+    const authParam = searchParams.get('auth') || searchParams.get('mode');
+    if (searchParams.get('login') === '1' || authParam === 'login') {
+      onAuthRequest({ mode: 'login' });
+      return;
+    }
+    if (authParam === 'register') {
+      onAuthRequest({ mode: 'register' });
+      return;
+    }
 
-      const targetPlanId =
-        planParam && PLANS[planParam]
-          ? planParam
-          : storedPlan && PLANS[storedPlan]
-            ? storedPlan
-            : null;
+    const planParam = searchParams.get('plan');
+    const plan = isPlanId(planParam) ? planParam : readStoredPlan();
+    if (plan && (searchParams.get('checkout') === '1' || planParam)) {
+      onAuthRequest({ mode: 'register', planTitle: plan });
+    }
+  }, [isSignedIn, onAuthRequest, searchParams]);
 
-      if (targetPlanId && PLANS[targetPlanId]) {
-        const planDef = PLANS[targetPlanId];
-        setPendingCheckoutPlan(planDef);
-
-        if (!isAuthenticated || !user) {
-          if (isCheckoutParam || planParam) {
-            setAuthModal({ isOpen: true, mode: 'register', planTitle: targetPlanId });
-          }
-        }
-      }
-    } catch { }
-  }, [isAuthenticated, user, searchParams]);
-
-  // 3. Encaminha usuários autenticados para o Dashboard ou Checkout
-  const isUserFree = !user?.subscriptionPlan || user?.subscriptionPlan === 'free' || isSubscriptionExpired;
   useEffect(() => {
-    if (!isLoading && isAuthenticated && user) {
-      if (pendingCheckoutPlan && isUserFree && !isAdmin) {
-        router.replace(`/checkout?plan=${encodeURIComponent(pendingCheckoutPlan.id)}`);
-      } else {
-        router.replace('/dashboard');
-      }
-    }
-  }, [isLoading, isAuthenticated, user, pendingCheckoutPlan, isUserFree, isAdmin, router]);
+    if (isLoading || !isSignedIn || legacyRoutes.has(searchParams.get('tab') ?? '')) return;
 
-  const handleOpenAuth = useCallback((mode: 'login' | 'register' = 'login', planIdentifier?: string) => {
-    if (planIdentifier) {
-      const found = Object.values(PLANS).find(
-        (p) => p.id === planIdentifier || p.name.toLowerCase() === planIdentifier.toLowerCase()
-      );
-      if (found) {
-        setPendingCheckoutPlan(found);
-      }
-    } else if (mode === 'login') {
-      setPendingCheckoutPlan(null);
-    }
-    setAuthModal({ isOpen: true, mode, planTitle: planIdentifier });
-  }, []);
+    const planParam = searchParams.get('plan');
+    const plan = isPlanId(planParam) ? planParam : pendingPlan ?? readStoredPlan();
+    router.replace(plan && isUserFree && !isAdmin
+      ? '/checkout?plan=' + encodeURIComponent(plan)
+      : '/dashboard');
+  }, [isAdmin, isLoading, isSignedIn, isUserFree, pendingPlan, router, searchParams]);
 
-  // Enquanto a autenticação estiver checando, o HippocampusGlobalSplash cobre a tela
-  if (isLoading) {
-    return null;
-  }
-
-  // Se já está autenticado, aguarda a conclusão da navegação para o dashboard
-  if (isAuthenticated && user) {
-    return null;
-  }
-
-  // Visitante não autenticado: Landing Page completa
-  return (
-    <div
-      className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-inter"
-      style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
-    >
-      <LandingPage
-        onOpenAuth={(mode = 'login', planTitle) => {
-          handleOpenAuth(mode, planTitle);
-        }}
-        onLoginDemo={() => {
-          handleOpenAuth('login');
-        }}
-      />
-
-      {/* Modal de Autenticação (Login / Cadastro) */}
-      {authModal.isOpen && (
-        <div className="fixed inset-0 z-50 flex justify-center items-start sm:items-center p-3 sm:p-5 bg-slate-950/70 backdrop-blur-xs overflow-y-auto animate-fadeIn">
-          <div className="w-full max-w-xl sm:max-w-[620px] my-auto py-3 sm:py-6">
-            <AuthScreen
-              key={`${authModal.mode}-${authModal.planTitle || 'default'}`}
-              initialMode={authModal.mode}
-              selectedPlanTitle={authModal.planTitle}
-              onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
-              onSuccess={(intendedPlan) => {
-                setAuthModal({ isOpen: false, mode: 'login' });
-                const target = (intendedPlan || authModal.planTitle) as PlanId | undefined;
-                if (target && PLANS[target]) {
-                  setPendingCheckoutPlan(PLANS[target]);
-                  router.push(`/checkout?plan=${encodeURIComponent(target)}`);
-                } else {
-                  router.push('/dashboard');
-                }
-              }}
-            />
-          </div>
-        </div>
-      )}
-    </div>
-  );
+  return null;
 }
 
 export default function RootHomePage() {
+  const router = useRouter();
+  const { user, isAuthenticated } = useAuth();
+  const [authModal, setAuthModal] = useState<AuthRequest | null>(null);
+  const [pendingPlan, setPendingPlan] = useState<PlanId | null>(null);
+
+  const handleOpenAuth = useCallback((mode: AuthMode = 'login', planTitle?: string) => {
+    if (planTitle) {
+      const plan = Object.values(PLANS).find(
+        (definition) => definition.id === planTitle || definition.name.toLowerCase() === planTitle.toLowerCase()
+      );
+      if (plan) setPendingPlan(plan.id);
+    } else if (mode === 'login') {
+      setPendingPlan(null);
+    }
+    setAuthModal({ mode, planTitle });
+  }, []);
+
+  const handleDemoLogin = useCallback(() => handleOpenAuth('login'), [handleOpenAuth]);
+
   return (
-    <Suspense fallback={null}>
-      <HomeContent />
-    </Suspense>
+    <>
+      <Suspense fallback={null}>
+        <HomeNavigation onAuthRequest={setAuthModal} pendingPlan={pendingPlan} />
+      </Suspense>
+
+      {!(isAuthenticated && user) && (
+        <div
+          className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-inter"
+          style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
+        >
+          <LandingPage onOpenAuth={handleOpenAuth} onLoginDemo={handleDemoLogin} />
+
+          {authModal && (
+            <div className="fixed inset-0 z-50 flex justify-center items-start sm:items-center p-3 sm:p-5 bg-slate-950/70 backdrop-blur-xs overflow-y-auto animate-fadeIn">
+              <div className="w-full max-w-xl sm:max-w-[620px] my-auto py-3 sm:py-6">
+                <AuthScreen
+                  key={authModal.mode + '-' + (authModal.planTitle || 'default')}
+                  initialMode={authModal.mode}
+                  selectedPlanTitle={authModal.planTitle}
+                  onClose={() => setAuthModal(null)}
+                  onSuccess={(intendedPlan) => {
+                    setAuthModal(null);
+                    const plan = intendedPlan || authModal.planTitle;
+                    if (isPlanId(plan)) {
+                      setPendingPlan(plan);
+                      router.push('/checkout?plan=' + encodeURIComponent(plan));
+                    } else {
+                      router.push('/dashboard');
+                    }
+                  }}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+    </>
   );
 }

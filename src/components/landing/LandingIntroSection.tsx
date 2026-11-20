@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
   ChevronDown,
@@ -99,6 +99,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
   const { accent, mode } = useTheme();
   const isDark = mode === 'dark';
   const isMonochrome = accent === 'neutral';
+  const sectionRef = useRef<HTMLElement>(null);
 
   const [displayedIndex, setDisplayedIndex] = useState(0);
   const [fadeState, setFadeState] = useState<'visible' | 'fading'>('visible');
@@ -106,27 +107,77 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
 
   // Monitora o scroll para esvanecer suavemente na descida para a 2ª dobra (Cérebro 3D)
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY || 0);
+    let frame = 0;
+    let previousScroll = -1;
+    const updateScroll = () => {
+      frame = 0;
+      const nextScroll = Math.max(0, Math.min(window.scrollY, 320));
+      if (nextScroll === previousScroll) return;
+      previousScroll = nextScroll;
+      setScrollY(nextScroll);
     };
+    const handleScroll = () => {
+      // A introdução já terminou de esvanecer após os primeiros 320px.
+      if (!frame && !(previousScroll === 320 && window.scrollY >= 320)) {
+        frame = requestAnimationFrame(updateScroll);
+      }
+    };
+    handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   // Transição 100% automática com esvaecimento (cross-dissolve suave)
   useEffect(() => {
-    const interval = setInterval(() => {
-      // 1. Inicia o esvaecimento suave (fade-out com leve desfoque óptico)
-      setFadeState('fading');
+    const section = sectionRef.current;
+    if (!section) return;
 
-      // 2. Após a conclusão do fade-out, atualiza o índice e inicia o fade-in suave
-      setTimeout(() => {
-        setDisplayedIndex((prev) => (prev + 1) % PILLARS.length);
-        setFadeState('visible');
-      }, FADE_OUT_DURATION_MS);
-    }, SLIDE_DURATION_MS);
+    let inView = typeof IntersectionObserver === 'undefined';
+    let interval: number | undefined;
+    let fadeTimer: number | undefined;
 
-    return () => clearInterval(interval);
+    const stopCarousel = () => {
+      window.clearInterval(interval);
+      window.clearTimeout(fadeTimer);
+      interval = undefined;
+      fadeTimer = undefined;
+    };
+
+    const syncCarousel = () => {
+      const active = inView && !document.hidden;
+      section.dataset.animationPaused = active ? 'false' : 'true';
+      if (!active) {
+        if (fadeTimer !== undefined) setFadeState('visible');
+        stopCarousel();
+        return;
+      }
+      if (interval !== undefined) return;
+
+      interval = window.setInterval(() => {
+        setFadeState('fading');
+        fadeTimer = window.setTimeout(() => {
+          fadeTimer = undefined;
+          setDisplayedIndex((previous) => (previous + 1) % PILLARS.length);
+          setFadeState('visible');
+        }, FADE_OUT_DURATION_MS);
+      }, SLIDE_DURATION_MS);
+    };
+
+    const observer = inView ? null : new IntersectionObserver(([entry]) => {
+      inView = entry.intersectionRatio >= 0.01;
+      syncCarousel();
+    }, { rootMargin: '-64px 0px 0px', threshold: 0.01 });
+    observer?.observe(section);
+    if (inView) syncCarousel();
+    document.addEventListener('visibilitychange', syncCarousel);
+    return () => {
+      stopCarousel();
+      observer?.disconnect();
+      document.removeEventListener('visibilitychange', syncCarousel);
+    };
   }, []);
 
   const activePillar = PILLARS[displayedIndex];
@@ -451,6 +502,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
 
   return (
     <section
+      ref={sectionRef}
       aria-label="Introdução Hippocampus • Os 4 Pilares da Aprovação"
       className="font-inter relative w-full min-h-[calc(100vh-4rem)] flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 py-10 sm:py-14 bg-gradient-to-b from-white via-zinc-50/70 to-zinc-100/50 dark:from-[var(--bg-page)] dark:via-[var(--bg-page)] dark:to-[#070709] overflow-hidden select-none transition-colors duration-1000"
       style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
@@ -489,6 +541,14 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
         }
         .animate-hippo-card-drift-center {
           animation: hippoCardDriftCenter 5s ease-in-out infinite;
+        }
+        [data-animation-paused="true"] :is(
+          .animate-hippo-card-drift-left,
+          .animate-hippo-card-drift-right,
+          .animate-hippo-card-drift-center,
+          .animate-pulse
+        ) {
+          animation-play-state: paused;
         }
       `}</style>
 

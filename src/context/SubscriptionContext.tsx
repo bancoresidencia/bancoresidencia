@@ -1,10 +1,14 @@
 'use client';
 
 import React, { createContext, useContext, useState, useCallback, useMemo, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import { useAuth } from '@/context/AuthContext';
 import { PlanDefinition } from '@/config/plans';
-import { SubscriptionModal } from '@/components/SubscriptionModal';
 import { createClient } from '@/lib/supabase/client';
+
+const SubscriptionModal = dynamic(() =>
+  import('@/components/SubscriptionModal').then((module) => module.SubscriptionModal)
+);
 
 export type PlanType = 'free' | 'pro' | 'premium';
 
@@ -72,6 +76,7 @@ const SubscriptionContext = createContext<SubscriptionContextType | undefined>(u
 export function SubscriptionProvider({ children }: { children: React.ReactNode }) {
   const { user } = useAuth();
   const [isUpgradeModalOpen, setIsUpgradeModalOpenState] = useState(false);
+  const [hasOpenedUpgradeModal, setHasOpenedUpgradeModal] = useState(false);
   const [selectedPlanForCheckout, setSelectedPlanForCheckout] = useState<PlanDefinition | null>(null);
   const [isLimitReached, setIsLimitReached] = useState(false);
   const getDailyQuotaStorageKey = useCallback((uid?: string | null) => {
@@ -221,6 +226,7 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
       : Math.max(0, planConfig.maxDailyQuestions - dailyResolvedCount);
 
   const openUpgradeModal = useCallback((initialPlan?: PlanDefinition | null, limitReached?: boolean) => {
+    setHasOpenedUpgradeModal(true);
     setSelectedPlanForCheckout(initialPlan || null);
     setIsLimitReached(Boolean(limitReached));
     setIsUpgradeModalOpenState(true);
@@ -279,13 +285,15 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
   return (
     <SubscriptionContext.Provider value={value}>
       {children}
-      <SubscriptionModal
-        isOpen={isUpgradeModalOpen}
-        onClose={closeUpgradeModal}
-        currentPlan={plan}
-        initialPlan={selectedPlanForCheckout}
-        limitReached={isLimitReached}
-      />
+      {hasOpenedUpgradeModal && (
+        <SubscriptionModal
+          isOpen={isUpgradeModalOpen}
+          onClose={closeUpgradeModal}
+          currentPlan={plan}
+          initialPlan={selectedPlanForCheckout}
+          limitReached={isLimitReached}
+        />
+      )}
     </SubscriptionContext.Provider>
   );
 }

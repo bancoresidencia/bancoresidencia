@@ -62,6 +62,7 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       className={`${inter.variable} font-sans h-full antialiased dark`}
+      style={{ fontFamily: 'var(--font-inter, "Inter"), "Inter Fallback", system-ui, sans-serif' }}
       suppressHydrationWarning
     >
       <head />
@@ -73,7 +74,8 @@ export default function RootLayout({
             __html: `
               (function() {
                 try {
-                  if (typeof window !== 'undefined' && !window.location.pathname.includes('simulado-priapismo')) {
+                  var path = window.location.pathname;
+                  if (path !== '/' && !path.includes('simulado-priapismo')) {
                     document.documentElement.classList.add('hippo-splash-active');
                   }
                   var m = localStorage.getItem('banco_theme_mode');

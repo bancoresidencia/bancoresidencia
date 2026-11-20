@@ -6,10 +6,10 @@ import {
   validateQuestionId,
   UUID_REGEX,
   isPrivilegedRole,
-  deriveDomainSecret,
   extractTrustedClientIpFromHeaders,
   safeErrorMessage
 } from '@/utils/security';
+import { deriveDomainSecret } from '@/utils/serverCrypto';
 import { injectZeroWidthWatermark } from '@/utils/watermark';
 import { sanitizeMedicalText, unpackStructuredCommentary } from '@/utils/textSanitizer';
 import { findCanonicalQuestionByIdOrCode } from '@/services/canonicalQuestionStore';

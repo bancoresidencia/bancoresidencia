@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 import { DEFAULT_GOOGLE_CALENDAR_CLIENT_ID, PUBLIC_GOOGLE_CALENDAR_CLIENT_ID } from '@/config/googleCalendar';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
-import { deriveDomainSecret } from '@/utils/security';
+import { deriveDomainSecret } from '@/utils/serverCrypto';
 import { DailyScheduleSlot } from '@/components/dashboard/scheduleTypes';
 
 // ── 1. Criptografia AES-256-GCM para Tokens em Repouso (HKDF-SHA256 com fallback legado) ──

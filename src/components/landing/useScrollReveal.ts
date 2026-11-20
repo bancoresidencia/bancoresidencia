@@ -4,18 +4,17 @@ import { useEffect, useRef, useState } from 'react';
 
 export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(threshold = 0.14) {
   const ref = useRef<T | null>(null);
-  const [isVisible, setIsVisible] = useState<boolean>(() => {
-    if (typeof window === 'undefined') return false;
-    return (
-      typeof IntersectionObserver === 'undefined' ||
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    );
-  });
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     if (isVisible) return;
     const el = ref.current;
-    if (!el || typeof IntersectionObserver === 'undefined') return;
+    if (!el) return;
+    if (typeof IntersectionObserver === 'undefined' ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const frame = requestAnimationFrame(() => setIsVisible(true));
+      return () => cancelAnimationFrame(frame);
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {

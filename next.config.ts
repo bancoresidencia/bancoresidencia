@@ -5,6 +5,26 @@ const isDev = process.env.NODE_ENV === 'development';
 const motionStudioEnabled = isDev && process.env.HIPPOCAMPUS_MOTION_STUDIO === '1';
 const motionStudioOrigin = 'http://localhost:5200';
 
+function contentSecurityPolicy(allowWasm = false) {
+  return [
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-inline'" +
+      (isDev ? " 'unsafe-eval'" : '') +
+      (allowWasm ? " 'wasm-unsafe-eval'" : '') +
+      ' https://sdk.mercadopago.com https://accounts.google.com',
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "img-src 'self' data: blob: https:",
+    "font-src 'self' data: https://fonts.gstatic.com",
+    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com https://accounts.google.com https://www.googleapis.com wss: ws:" +
+      (motionStudioEnabled ? ` ${motionStudioOrigin} ws://localhost:5200` : ''),
+    "frame-src 'self' https://accounts.google.com https://*.mercadopago.com https://www.mercadopago.com.br",
+    "frame-ancestors 'none'",
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self' https://accounts.google.com https://www.mercadopago.com.br"
+  ].join('; ');
+}
+
 const nextConfig: NextConfig = {
   devIndicators: false,
   poweredByHeader: false,
@@ -97,21 +117,13 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: [
-              "default-src 'self'",
-              `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://sdk.mercadopago.com https://accounts.google.com`,
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-              "img-src 'self' data: blob: https:",
-              "font-src 'self' data: https://fonts.gstatic.com",
-              `connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com https://accounts.google.com https://www.googleapis.com wss: ws:${motionStudioEnabled ? ` ${motionStudioOrigin} ws://localhost:5200` : ''}`,
-              "frame-src 'self' https://accounts.google.com https://*.mercadopago.com https://www.mercadopago.com.br",
-              "frame-ancestors 'none'",
-              "object-src 'none'",
-              "base-uri 'self'",
-              "form-action 'self' https://accounts.google.com https://www.mercadopago.com.br"
-            ].join('; ')
+            value: contentSecurityPolicy()
           }
         ]
+      },
+      {
+        source: '/',
+        headers: [{ key: 'Content-Security-Policy', value: contentSecurityPolicy(true) }]
       },
       {
         source: '/auth/confirm',

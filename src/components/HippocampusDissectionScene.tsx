@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { AccentConfig } from '@/context/ThemeContext';
 import {
   AnatomyRole,
@@ -17,9 +16,10 @@ import {
   LAYER_CONFIGS,
   PAPEZ_CALLOUTS,
   PAPEZ_ENSEMBLE_CENTER,
-  smootherstep,
   snapAnchorToMeshSurface
 } from '@/utils/brainDissectionMath';
+import { smootherstep } from '@/utils/smootherstep';
+import { loadLandingBrainModel } from '@/utils/loadLandingBrainModel';
 
 export interface HippocampusDissectionSceneProps {
   scrollProgress: number;
@@ -32,6 +32,8 @@ interface ManagedMaterialEntry {
   material: THREE.ShaderMaterial;
   role: AnatomyRole;
 }
+
+const layerConfigurations = Object.entries(LAYER_CONFIGS);
 
 export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProps> = ({
   scrollProgress,
@@ -51,6 +53,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
 
   const targetScrollRef = useRef<number>(scrollProgress);
   const isDarkRef = useRef<boolean>(isDark);
+  const accentConfigRef = useRef(accentConfig);
   const highlightHexRef = useRef<string>(resolveHighlightHex(accentConfig, isDark));
   const materialsRef = useRef<ManagedMaterialEntry[]>([]);
   const pointerTargetRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
@@ -64,6 +67,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
 
   useEffect(() => {
     isDarkRef.current = isDark;
+    accentConfigRef.current = accentConfig;
     highlightHexRef.current = resolveHighlightHex(accentConfig, isDark);
     for (const entry of materialsRef.current) {
       updateSoftAnatomyMaterialTheme(entry.material, entry.role, isDark, accentConfig);
@@ -110,12 +114,16 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
     const meshMap: Record<string, THREE.Mesh> = {};
     const snappedAnchors: Record<string, THREE.Vector3> = {};
     const createdMaterials: ManagedMaterialEntry[] = [];
-    const createdGeometries: THREE.BufferGeometry[] = [];
+    const modelGeometries = new Set<THREE.BufferGeometry>();
 
+    let canvasWidth = 0;
+    let canvasHeight = 0;
     const handleResize = () => {
-      if (!container) return;
       const w = Math.max(container.clientWidth, 1);
       const h = Math.max(container.clientHeight, 1);
+      if (w === canvasWidth && h === canvasHeight) return;
+      canvasWidth = w;
+      canvasHeight = h;
       renderer.setSize(w, h, true);
       camera.aspect = w / h;
       camera.position.z = w < 520 ? 6.85 : w < 768 ? 6.25 : 5.80;
@@ -141,12 +149,22 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
     container.addEventListener('pointermove', handlePointerMove, { passive: true });
     container.addEventListener('pointerleave', handlePointerLeave, { passive: true });
 
-    let isDisposed = false;
-    const loader = new GLTFLoader();
-    loader.load(
-      '/models/cerebrum-papez-v7.glb?v=72',
-      (gltf) => {
-        if (isDisposed) return;
+    const controller = new AbortController();
+    let readyToRender = false;
+    loadLandingBrainModel(controller.signal)
+      .then((gltf) => {
+        const defaultMaterials = new Set<THREE.Material>();
+        gltf.scene.traverse((object) => {
+          const mesh = object as THREE.Mesh;
+          if (!mesh.isMesh) return;
+          modelGeometries.add(mesh.geometry);
+          for (const material of [mesh.material].flat()) defaultMaterials.add(material);
+        });
+        for (const material of defaultMaterials) material.dispose();
+        if (controller.signal.aborted) {
+          for (const geometry of modelGeometries) geometry.dispose();
+          return;
+        }
 
         gltf.scene.traverse((obj) => {
           if ((obj as THREE.Mesh).isMesh) {
@@ -156,12 +174,10 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
             const cfg = LAYER_CONFIGS[name];
             const role: AnatomyRole = isHippo ? 'hippocampus' : cfg?.role ?? 'shell';
 
-            const mat = createSoftAnatomyMaterial(role, isDarkRef.current, accentConfig);
-            const clonedGeo = mesh.geometry.clone();
-            createdGeometries.push(clonedGeo);
+            const mat = createSoftAnatomyMaterial(role, isDarkRef.current, accentConfigRef.current);
             createdMaterials.push({ material: mat, role });
 
-            const cleanMesh = new THREE.Mesh(clonedGeo, mat);
+            const cleanMesh = new THREE.Mesh(mesh.geometry, mat);
             cleanMesh.name = name;
             cleanMesh.renderOrder = isHippo ? 1 : cfg?.renderOrder ?? 10;
 
@@ -183,14 +199,14 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
         }
 
         materialsRef.current = createdMaterials;
+        readyToRender = true;
+        syncAnimation();
         setModelReady(true);
         onLoaded?.();
-      },
-      undefined,
-      () => {
-        if (!isDisposed) setWebglSupported(false);
-      }
-    );
+      })
+      .catch(() => {
+        if (!controller.signal.aborted) setWebglSupported(false);
+      });
 
     const prefersReducedMotion =
       typeof window !== 'undefined' &&
@@ -203,11 +219,10 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
     const tempFocusCenter = new THREE.Vector3();
     const startTimeMs = performance.now();
     let lastTimeMs = startTimeMs;
-    let rafId = 0;
-    let isVisible = true;
+    let rafId: number | null = null;
+    let isVisible = typeof IntersectionObserver === 'undefined';
 
     const animate = () => {
-      if (!isVisible) return;
       rafId = requestAnimationFrame(animate);
       const nowMs = performance.now();
       const elapsed = (nowMs - startTimeMs) * 0.001;
@@ -262,7 +277,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
       const papezDissolveT = smootherstep(0.68, 0.80, p);
       const papezSupportOpacity = 1.0 - papezDissolveT;
 
-      for (const [layerName, cfg] of Object.entries(LAYER_CONFIGS)) {
+      for (const [layerName, cfg] of layerConfigurations) {
         const mesh = meshMap[layerName];
         if (!mesh) continue;
 
@@ -310,8 +325,8 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
 
       renderer.render(scene, camera);
 
-      const cw = container.clientWidth;
-      const ch = container.clientHeight;
+      const cw = canvasWidth;
+      const ch = canvasHeight;
       if (cw > 0 && ch > 0 && createdMaterials.length > 0) {
         floatGroup.updateMatrixWorld();
         const curHighlightHex = highlightHexRef.current;
@@ -405,33 +420,36 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
       }
     };
 
-    const visibilityObserver = new IntersectionObserver(
-      ([entry]) => {
-        const nowVisible = entry.isIntersecting;
-        if (nowVisible && !isVisible) {
-          isVisible = true;
+    const syncAnimation = () => {
+      if (readyToRender && isVisible && !document.hidden) {
+        if (rafId === null) {
+          lastTimeMs = performance.now();
           rafId = requestAnimationFrame(animate);
-        } else if (!nowVisible && isVisible) {
-          isVisible = false;
-          cancelAnimationFrame(rafId);
         }
-      },
-      { threshold: 0.05 }
-    );
-    visibilityObserver.observe(container);
-
-    animate();
+      } else if (rafId !== null) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+    };
+    const visibilityObserver = isVisible ? null : new IntersectionObserver(([entry]) => {
+      isVisible = entry.isIntersecting;
+      syncAnimation();
+    });
+    visibilityObserver?.observe(container);
+    document.addEventListener('visibilitychange', syncAnimation);
 
     return () => {
-      isDisposed = true;
-      cancelAnimationFrame(rafId);
-      visibilityObserver.disconnect();
+      controller.abort();
+      if (rafId !== null) cancelAnimationFrame(rafId);
+      visibilityObserver?.disconnect();
+      document.removeEventListener('visibilitychange', syncAnimation);
       container.removeEventListener('pointermove', handlePointerMove);
       container.removeEventListener('pointerleave', handlePointerLeave);
       resizeObserver.disconnect();
-      for (const geo of createdGeometries) geo.dispose();
+      for (const geometry of modelGeometries) geometry.dispose();
       for (const entry of createdMaterials) entry.material.dispose();
       renderer.dispose();
+      materialsRef.current = [];
       if (renderer.domElement.parentNode === container) {
         container.removeChild(renderer.domElement);
       }

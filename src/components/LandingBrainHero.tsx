@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { HippocampusLoading } from '@/components/HippocampusLoading';
-import { smootherstep } from '@/utils/brainDissectionMath';
+import { smootherstep } from '@/utils/smootherstep';
 
 const HippocampusDissectionScene = dynamic(
   () => import('@/components/HippocampusDissectionScene'),
@@ -29,6 +29,8 @@ const HippocampusDissectionScene = dynamic(
     )
   }
 );
+
+const initialProgress = { scrollProgress: 0, entryProgress: 1 };
 
 export interface LandingBrainHeroProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;
@@ -114,8 +116,10 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
   const isDark = mode === 'dark';
   const isMonochrome = accent === 'neutral';
   const trackRef = useRef<HTMLDivElement | null>(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [entryProgress, setEntryProgress] = useState(1);
+  const sceneRequested = useRef(false);
+  const [showScene, setShowScene] = useState(false);
+  const progressRef = useRef(initialProgress);
+  const [{ scrollProgress, entryProgress }, setProgress] = useState(initialProgress);
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -130,18 +134,32 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     if (!el || typeof window === 'undefined') return;
     const rect = el.getBoundingClientRect();
     const winH = window.innerHeight || 800;
-    const entry = Math.max(0, Math.min(1, 1 - Math.max(0, rect.top) / winH));
-    setEntryProgress(entry);
+    if (!sceneRequested.current && rect.bottom > 0 &&
+      (rect.top < winH || (window.scrollY > 0 && rect.top < winH * 1.6))) {
+      sceneRequested.current = true;
+      setShowScene(true);
+    }
     const scrollable = Math.max(el.offsetHeight - winH, 1);
-    const progress = Math.max(0, Math.min(1, -rect.top / scrollable));
-    setScrollProgress(progress);
+    const nextProgress = {
+      entryProgress: Math.max(0, Math.min(1, 1 - Math.max(0, rect.top) / winH)),
+      scrollProgress: Math.max(0, Math.min(1, -rect.top / scrollable)),
+    };
+    const previous = progressRef.current;
+    if (previous.scrollProgress !== nextProgress.scrollProgress ||
+      previous.entryProgress !== nextProgress.entryProgress) {
+      progressRef.current = nextProgress;
+      setProgress(nextProgress);
+    }
   }, []);
 
   useEffect(() => {
     let rafId = 0;
     const onScroll = () => {
-      cancelAnimationFrame(rafId);
-      rafId = requestAnimationFrame(updateScroll);
+      if (rafId) return;
+      rafId = requestAnimationFrame(() => {
+        rafId = 0;
+        updateScroll();
+      });
     };
     updateScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -279,11 +297,13 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
               }
               className="relative z-20 w-full max-w-[600px] lg:w-[650px] lg:max-w-[650px] h-[46vh] sm:h-[52vh] lg:h-[74vh] flex items-center justify-center will-change-transform transition-opacity duration-300"
             >
-              <HippocampusDissectionScene
-                scrollProgress={scrollProgress}
-                isDark={isDark}
-                accentConfig={accentConfig}
-              />
+              {showScene && (
+                <HippocampusDissectionScene
+                  scrollProgress={scrollProgress}
+                  isDark={isDark}
+                  accentConfig={accentConfig}
+                />
+              )}
             </div>
 
             {/* 3. COLUNA DIREITA DE CARDS DE STORYTELLING (surgem quando o cérebro chega à esquerda) */}

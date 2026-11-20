@@ -1,8 +1,8 @@
 import { NextResponse, type NextRequest } from 'next/server';
 import { updateSession } from '@/lib/supabase/middleware';
+import { timingSafeEqualStrings } from '@/utils/serverCrypto';
 import {
   isPrivilegedRole,
-  timingSafeEqualStrings,
   extractTrustedClientIpFromHeaders
 } from '@/utils/security';
 

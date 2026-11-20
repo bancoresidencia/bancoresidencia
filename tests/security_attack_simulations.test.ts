@@ -10,10 +10,9 @@ import {
   isPrivilegedRole,
   isStrictAdminRole,
   extractTrustedClientIpFromHeaders,
-  deriveDomainSecret,
-  validatePasswordRequirements,
-  timingSafeEqualStrings
+  validatePasswordRequirements
 } from '../src/utils/security.ts';
+import { deriveDomainSecret, timingSafeEqualStrings } from '../src/utils/serverCrypto.ts';
 import {
   generateSessionTicket,
   verifySessionTicket

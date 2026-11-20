@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import { AnatomyRole } from './softAnatomyShaders';
+import type { AnatomyRole } from './softAnatomyShaders';
+import { smootherstep } from './smootherstep';
 
 export interface DissectionLayerConfig {
   role: AnatomyRole;
@@ -186,11 +187,6 @@ export function snapAnchorToMeshSurface(
     }
   }
   return new THREE.Vector3(pos.getX(bestIdx), pos.getY(bestIdx), pos.getZ(bestIdx));
-}
-
-export function smootherstep(edge0: number, edge1: number, x: number): number {
-  const t = Math.max(0, Math.min(1, (x - edge0) / (edge1 - edge0)));
-  return t * t * t * (t * (t * 6 - 15) + 10);
 }
 
 export interface DissectionPose {

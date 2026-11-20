@@ -51,6 +51,7 @@ export const LandingInstitutionsStrip: React.FC<LandingInstitutionsStripProps> =
                         alt=""
                         width={20}
                         height={20}
+                        loading="lazy"
                         decoding="async"
                         className="w-[20px] h-[20px] object-contain"
                       />

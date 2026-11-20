@@ -2,7 +2,8 @@ import { NextRequest } from 'next/server';
 import { User } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/server';
 
-import { isPrivilegedRole, isStrictAdminRole, timingSafeEqualStrings } from '@/utils/security';
+import { isPrivilegedRole, isStrictAdminRole } from '@/utils/security';
+import { timingSafeEqualStrings } from '@/utils/serverCrypto';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 
 export interface AdminAuthResult {
