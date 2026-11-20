@@ -10,8 +10,8 @@ if (fs.existsSync('.env.local')) {
   });
 }
 
-// CHAVE PAGA TOTALMENTE BLOQUEADA/ISOLADA POR DETERMINAÇÃO DO USUÁRIO (Custo R$ 0,00 Garantido)
-export const PAID_KEY = '';
+// Chave paga carregada sob trava estrita (só é acionada se explicitamente passada a flag --paid)
+export const PAID_KEY = env.GEMINI_API_KEY_PAID || '';
 
 const paidValues = new Set([
   env.GEMINI_API_KEY_PAID,
@@ -216,6 +216,7 @@ export function getSpecialtyGuideline(specialty, tema) {
 
 // Modelos prioritários em rotação gratuita com fallback automático
 export const AVAILABLE_MODELS = [
+  'gemini-3.5-flash',
   'gemini-3.1-flash-lite',
   'gemini-3.5-flash-lite',
   'gemini-flash-lite-latest'
@@ -262,8 +263,8 @@ export function markPairExhausted(keyIdx, model, reason = '') {
  * com suporte multimodal nativo, teto de 650 caracteres e estruturação de assertivas.
  */
 export async function solveQuestionDeep(question, specialtyOverride = null, modelOverride = null, forcePaid = false) {
-  // TRAVA DE SEGURANÇA MÁXIMA: Garante isolamento total da chave paga e custo R$ 0,00 estrito
-  const shouldUsePaid = false;
+  // Trava de segurança: usa chave paga APENAS se explicitamente autorizada via forcePaid ou flag --paid
+  const shouldUsePaid = Boolean(PAID_KEY) && (forcePaid || process.argv.includes('--paid'));
   const formattedOptions = (question.options || [])
     .map(opt => `${opt.letter}) ${opt.text}`)
     .join('\n');
@@ -481,6 +482,7 @@ ${optionsSchemaExample}
       } catch {
         try {
           const sanitized = clean
+            .replace(/:\s*(\*\*[^\n\r"]+?)(\s*,?\s*)$/gm, ': "$1"$2')
             .replace(/,\s*([}\]])/g, '$1')
             .replace(/[\u0000-\u001F\u007F-\u009F]/g, ' ');
           parsed = JSON.parse(sanitized);

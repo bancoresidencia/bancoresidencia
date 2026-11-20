@@ -373,8 +373,8 @@ const server = http.createServer((req, res) => {
 
       const specKey = url.searchParams.get('specialty') || 'preventiva';
       const spec = SPECIALTY_MAP[specKey] || SPECIALTY_MAP['preventiva'];
-      const parsedWorkers = parseInt(url.searchParams.get('workers') || '4', 10);
-      const safeWorkers = Number.isFinite(parsedWorkers) ? Math.min(10, Math.max(1, parsedWorkers)) : 4;
+      const parsedWorkers = parseInt(url.searchParams.get('workers') || '10', 10);
+      const safeWorkers = Number.isFinite(parsedWorkers) ? Math.min(20, Math.max(1, parsedWorkers)) : 10;
       const rawNext = url.searchParams.get('next') || spec.next;
       const safeNextSpec = (rawNext === 'none' || Object.prototype.hasOwnProperty.call(SPECIALTY_MAP, rawNext))
         ? rawNext
@@ -382,21 +382,29 @@ const server = http.createServer((req, res) => {
 
       if (fs.existsSync(SIGNAL_PATH)) fs.unlinkSync(SIGNAL_PATH);
 
-      runnerProcess = spawn('node', [
+      const isPaid = url.searchParams.get('paid') === 'true';
+      const budgetBrl = url.searchParams.get('budget') || '10.00';
+      const spawnArgs = [
         'scripts/produce_specialty_batch.mjs',
         `--file=${spec.file}`,
         `--specialty=${spec.name}`,
         '--model=gemini-3.1-flash-lite',
         `--workers=${safeWorkers}`,
         `--next=${safeNextSpec}`
-      ], {
+      ];
+      if (isPaid) {
+        spawnArgs.push('--paid');
+        spawnArgs.push(`--budget-brl=${budgetBrl}`);
+      }
+
+      runnerProcess = spawn('node', spawnArgs, {
         stdio: 'inherit',
         detached: false
       });
 
       return sendJson(res, {
         ok: true,
-        message: `Esteira iniciada para ${spec.name} com ${safeWorkers} workers em gemini-3.5-flash-lite (Modo 100% Gratuito - Custo R$ 0,00)!`
+        message: `Esteira iniciada para ${spec.name} com ${safeWorkers} workers em gemini-3.1-flash-lite (${isPaid ? 'Chave Paga Dedicada' : 'Modo 100% Gratuito - Custo R$ 0,00'})!`
       });
     }
 

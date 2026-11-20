@@ -50,7 +50,9 @@ const NEXT_SPECIALTY = argNext ? argNext.split('=')[1] : 'obstetricia';
 
 const isPreventiva = SPECIALTY_NAME.toLowerCase().includes('preventiva');
 const MODEL_NAME = argModel ? argModel.split('=')[1] : 'gemini-3.1-flash-lite';
-const USE_PAID = false; // TRAVA DE SEGURANÇA: Chave paga totalmente bloqueada (Custo R$ 0,00)
+const USE_PAID = argPaid;
+const argBudget = process.argv.find(a => a.startsWith('--budget-brl='));
+const MAX_BUDGET_BRL = argBudget ? parseFloat(argBudget.split('=')[1]) : 10.00;
 
 const STATE_PATH = 'data/pipeline_progress_state.json';
 const SIGNAL_PATH = 'data/pipeline.signal';
@@ -172,12 +174,13 @@ function updateStateFile(currentQ = null, overrideStatus = null) {
       avgPromptTokens: processedCount > 0 ? Math.round(totalPromptTokens / processedCount) : 0,
       avgCandidateTokens: processedCount > 0 ? Math.round(totalCandidateTokens / processedCount) : 0,
       pricing: USE_PAID ? {
-        inputPerMillion: 0.25,
-        outputPerMillion: 1.50,
-        costInputUSD: parseFloat(((totalPromptTokens / 1000000) * 0.25).toFixed(4)),
-        costOutputUSD: parseFloat(((totalCandidateTokens / 1000000) * 1.50).toFixed(4)),
-        totalCostUSD: parseFloat((((totalPromptTokens / 1000000) * 0.25) + ((totalCandidateTokens / 1000000) * 1.50)).toFixed(4)),
-        totalCostBRL: parseFloat(((((totalPromptTokens / 1000000) * 0.25) + ((totalCandidateTokens / 1000000) * 1.50)) * 5.78).toFixed(2))
+        inputPerMillion: 0.075,
+        outputPerMillion: 0.30,
+        costInputUSD: parseFloat(((totalPromptTokens / 1000000) * 0.075).toFixed(4)),
+        costOutputUSD: parseFloat(((totalCandidateTokens / 1000000) * 0.30).toFixed(4)),
+        totalCostUSD: parseFloat((((totalPromptTokens / 1000000) * 0.075) + ((totalCandidateTokens / 1000000) * 0.30)).toFixed(4)),
+        totalCostBRL: parseFloat(((((totalPromptTokens / 1000000) * 0.075) + ((totalCandidateTokens / 1000000) * 0.30)) * 5.80).toFixed(2)),
+        maxBudgetBRL: MAX_BUDGET_BRL
       } : {
         costUSD: 0,
         costBRL: 0,
@@ -210,6 +213,17 @@ function flushLocalDB() {
 }
 
 async function checkSignals() {
+  if (USE_PAID) {
+    const currentCostBRL = (((totalPromptTokens / 1000000) * 0.075) + ((totalCandidateTokens / 1000000) * 0.30)) * 5.80;
+    if (currentCostBRL >= MAX_BUDGET_BRL) {
+      console.log(`\n🛑 TETO ORÇAMENTÁRIO DE R$ ${MAX_BUDGET_BRL.toFixed(2)} ATINGIDO COM SUCESSO (Gasto: R$ ${currentCostBRL.toFixed(2)})!`);
+      console.log(`🔒 Travando a esteira imediatamente para garantir o teto de gastos estrito.`);
+      flushLocalDB();
+      updateStateFile(null, 'STOPPED');
+      process.exit(0);
+    }
+  }
+
   if (!fs.existsSync(SIGNAL_PATH)) return;
   const signal = fs.readFileSync(SIGNAL_PATH, 'utf8').trim().toLowerCase();
   if (signal === 'pause') {
@@ -238,7 +252,7 @@ async function processQuestion(q) {
   updateStateFile({ code: q.code, id: q.id, tema: q.tema, especialidade: q.especialidade });
 
   try {
-    const res = await solveQuestionDeep(q, SPECIALTY_NAME, null, false);
+    const res = await solveQuestionDeep(q, SPECIALTY_NAME, null, USE_PAID);
     if (!res || !res.commentary) {
       throw new Error('Retorno nulo ou inválido do motor de IA.');
     }
