@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Search, CheckCircle2, X } from 'lucide-react';
+import { Search, CheckCircle2, X, ChevronsDown, ChevronsUp } from 'lucide-react';
 import { TargetInstitutionOption } from '@/types/studySchedule';
 import { SPECIALTY_COLORS } from '@/services/examIncidenceService';
 
@@ -21,6 +21,9 @@ interface FocusChecklistHeaderProps {
   stats: { total: number; studied: number; percent: number };
   isDrawer?: boolean;
   onCloseDrawer?: () => void;
+  onExpandAll?: () => void;
+  onCollapseAll?: () => void;
+  areAllExpanded?: boolean;
 }
 
 export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
@@ -38,7 +41,10 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
   onIncidenceFilterChange,
   stats,
   isDrawer,
-  onCloseDrawer
+  onCloseDrawer,
+  onExpandAll,
+  onCollapseAll,
+  areAllExpanded
 }) => {
   return (
     <div className="p-3 sm:p-3.5 border-b border-[var(--card-border,#e4e4e7)] dark:border-zinc-800 space-y-2.5 shrink-0 bg-white dark:bg-zinc-900">
@@ -57,6 +63,29 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
         </div>
 
         <div className="flex items-center gap-1.5 shrink-0">
+          {/* Botão de Expandir / Recolher Todos os Ramos */}
+          {(onExpandAll || onCollapseAll) && (
+            <button
+              type="button"
+              onClick={areAllExpanded ? onCollapseAll : onExpandAll}
+              className="p-1 px-1.5 text-[10px] font-semibold flex items-center gap-1 text-zinc-600 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-md transition-colors"
+              title={areAllExpanded ? 'Recolher todos os temas' : 'Expandir todos os temas'}
+              aria-label={areAllExpanded ? 'Recolher todos' : 'Expandir todos'}
+            >
+              {areAllExpanded ? (
+                <>
+                  <ChevronsUp className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">Recolher</span>
+                </>
+              ) : (
+                <>
+                  <ChevronsDown className="w-3.5 h-3.5" />
+                  <span className="hidden sm:inline">Expandir</span>
+                </>
+              )}
+            </button>
+          )}
+
           {/* Seletor de Instituição da Prova */}
           <select
             value={currentInstitution}
@@ -113,11 +142,10 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
             key={st}
             type="button"
             onClick={() => onStatusFilterChange(st)}
-            className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all ${
-              statusFilter === st
+            className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all ${statusFilter === st
                 ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-2xs'
                 : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200/80'
-            }`}
+              }`}
           >
             {st === 'all' && 'Todos'}
             {st === 'pending' && 'Pendentes'}
@@ -130,11 +158,10 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
         <button
           type="button"
           onClick={() => onIncidenceFilterChange(incidenceFilter === 'extreme_only' ? 'all' : 'extreme_only')}
-          className={`px-2 py-0.5 rounded-md text-[10px] font-bold whitespace-nowrap flex items-center gap-1 border transition-all ${
-            incidenceFilter === 'extreme_only'
+          className={`px-2 py-0.5 rounded-md text-[10px] font-bold whitespace-nowrap flex items-center gap-1 border transition-all ${incidenceFilter === 'extreme_only'
               ? 'bg-red-500/15 text-red-600 dark:text-red-400 border-red-500/30'
               : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-500 border-transparent hover:bg-zinc-200/80'
-          }`}
+            }`}
         >
           <span>🔥🔥🔥🔥 Top</span>
         </button>
@@ -145,11 +172,10 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
         <button
           type="button"
           onClick={() => onSpecialtyChange('all')}
-          className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all ${
-            selectedSpecialty === 'all'
+          className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all ${selectedSpecialty === 'all'
               ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-2xs'
               : 'text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100'
-          }`}
+            }`}
         >
           Todas Áreas
         </button>
@@ -161,11 +187,10 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
               key={esp}
               type="button"
               onClick={() => onSpecialtyChange(esp)}
-              className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all border ${
-                isSelected
+              className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all border ${isSelected
                   ? 'border-transparent text-white font-bold'
                   : 'border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-              }`}
+                }`}
               style={{
                 backgroundColor: isSelected ? color : undefined
               }}

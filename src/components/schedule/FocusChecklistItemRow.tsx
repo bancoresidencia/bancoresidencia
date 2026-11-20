@@ -42,11 +42,10 @@ const FocusChecklistItemRowComponent: React.FC<FocusChecklistItemRowProps> = ({
 
   return (
     <div
-      className={`group px-3 py-2 sm:px-3.5 flex items-center justify-between gap-2.5 transition-colors ${
-        isStudied
+      className={`group px-3 py-2 sm:px-3.5 flex items-center justify-between gap-2.5 transition-colors ${isStudied
           ? 'bg-zinc-50/50 dark:bg-zinc-900/30'
           : 'hover:bg-zinc-50 dark:hover:bg-zinc-800/40'
-      }`}
+        }`}
     >
       {/* 1. Esquerda: Checkbox + Ponto Cromático + Foco & Tema */}
       <div className="flex items-center gap-2.5 min-w-0 flex-1">
@@ -75,11 +74,10 @@ const FocusChecklistItemRowComponent: React.FC<FocusChecklistItemRowProps> = ({
         {/* Nome do Foco e Tema em linha contínua */}
         <div className="min-w-0 flex items-baseline gap-1.5 flex-1">
           <span
-            className={`text-xs font-medium truncate transition-colors ${
-              isStudied
+            className={`text-xs font-medium truncate transition-colors ${isStudied
                 ? 'text-zinc-400 dark:text-zinc-500 line-through decoration-zinc-300 dark:decoration-zinc-700'
                 : 'text-zinc-900 dark:text-zinc-100'
-            }`}
+              }`}
             title={node.foco}
           >
             {node.foco}

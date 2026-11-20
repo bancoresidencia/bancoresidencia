@@ -9,12 +9,16 @@ import {
   getAvailableTargetInstitutions,
   EnrichedFocusWithIncidence
 } from '@/services/examIncidenceService';
-import { calculateFociPerformanceMap, getMetricForFocus } from '@/utils/focusPerformanceCalculator';
+import { calculateFociPerformanceMap } from '@/utils/focusPerformanceCalculator';
 import { UserFocusProgress, UserScheduleItem, ScheduleItemType } from '@/types/studySchedule';
 import { upsertFocusProgress, saveScheduleItemsBatch } from '@/services/studyScheduleService';
 import { addDays } from '@/utils/scheduleDistributionEngine';
-import { FocusChecklistItemRow } from './FocusChecklistItemRow';
+import {
+  buildChecklistHierarchy,
+  filterChecklistHierarchy
+} from '@/utils/checklistHierarchyBuilder';
 import { FocusChecklistHeader } from './FocusChecklistHeader';
+import { SpecialtyChecklistSection } from './SpecialtyChecklistSection';
 import { QuickScheduleModal } from './QuickScheduleModal';
 
 interface FocusChecklistDrawerProps {
@@ -47,30 +51,21 @@ export const FocusChecklistDrawer: React.FC<FocusChecklistDrawerProps> = ({
   const [incidenceFilter, setIncidenceFilter] = useState<'all' | 'extreme_only' | 'high_plus'>('all');
   const [quickScheduleFocus, setQuickScheduleFocus] = useState<EnrichedFocusWithIncidence | null>(null);
 
-  // Progressive rendering para performance fluida com 786 itens
-  const [visibleCount, setVisibleCount] = useState<number>(80);
-  const [prevFilterKey, setPrevFilterKey] = useState<string>('');
+  // Estado de expansão sanfonada das Especialidades e Temas
+  const [expandedSpecialties, setExpandedSpecialties] = useState<Set<string>>(
+    () => new Set(['Clínica Médica'])
+  );
+  const [expandedTemas, setExpandedTemas] = useState<Set<string>>(
+    () => new Set(['Clínica Médica::Cardiologia', 'Clínica Médica::Hipertensão Arterial Sistêmica'])
+  );
 
-  const currentFilterKey = `${searchQuery}_${selectedSpecialty}_${statusFilter}_${incidenceFilter}_${currentInstitution}`;
-  if (prevFilterKey !== currentFilterKey) {
-    setPrevFilterKey(currentFilterKey);
-    setVisibleCount(80);
-  }
-
-  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
-    const { scrollTop, scrollHeight, clientHeight } = e.currentTarget;
-    if (scrollTop + clientHeight >= scrollHeight - 200) {
-      setVisibleCount((prev) => Math.min(filteredFoci.length, prev + 60));
-    }
-  };
-
-  // 1. Instituições disponíveis
+  // 1. Catálogo de Instituições disponíveis
   const availableInstitutions = useMemo(() => getAvailableTargetInstitutions(), []);
 
-  // 2. Performance real das questões
+  // 2. Performance real das questões respondidas pelo aluno
   const performanceMap = useMemo(() => calculateFociPerformanceMap(userAnswers), [userAnswers]);
 
-  // 3. Focos enriquecidos com a incidência da instituição
+  // 3. Focos enriquecidos com a incidência estatística da instituição selecionada
   const enrichedFoci = useMemo(
     () => getEnrichedFociForInstitution(currentInstitution),
     [currentInstitution]
@@ -94,36 +89,50 @@ export const FocusChecklistDrawer: React.FC<FocusChecklistDrawerProps> = ({
     return Array.from(set);
   }, [enrichedFoci]);
 
-  // 6. Filtragem
-  const filteredFoci = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
+  // 6. Construção da Árvore Hierárquica Canônica (Especialidade -> Tema -> Foco)
+  const fullHierarchy = useMemo(
+    () => buildChecklistHierarchy(enrichedFoci, focusProgressMap),
+    [enrichedFoci, focusProgressMap]
+  );
 
-    return enrichedFoci.filter((node) => {
-      if (selectedSpecialty !== 'all' && node.especialidade !== selectedSpecialty) return false;
+  // 7. Filtragem da Árvore com detecção de ramos auto-expandidos
+  const { tree: filteredHierarchy, autoExpandedKeys } = useMemo(() => {
+    return filterChecklistHierarchy(
+      fullHierarchy,
+      {
+        searchQuery,
+        selectedSpecialty,
+        statusFilter,
+        incidenceFilter
+      },
+      focusProgressMap
+    );
+  }, [fullHierarchy, searchQuery, selectedSpecialty, statusFilter, incidenceFilter, focusProgressMap]);
 
-      const prog = focusProgressMap[node.focusKey];
-      const isStudied = Boolean(prog?.isStudied);
-      const hasRevision = Boolean(prog?.reviewCount && prog.reviewCount > 0);
+  // 8. Especialidades e Temas efetivamente expandidos (incorpora auto-expansão em filtros/busca)
+  const isFilterActive = Boolean(
+    searchQuery.trim() || incidenceFilter !== 'all' || statusFilter !== 'all'
+  );
 
-      if (statusFilter === 'pending' && isStudied) return false;
-      if (statusFilter === 'studied' && !isStudied) return false;
-      if (statusFilter === 'with_revision' && !hasRevision) return false;
+  const effectiveExpandedSpecialties = useMemo(() => {
+    if (isFilterActive && autoExpandedKeys.specialties.size > 0) {
+      const merged = new Set(expandedSpecialties);
+      autoExpandedKeys.specialties.forEach((k) => merged.add(k));
+      return merged;
+    }
+    return expandedSpecialties;
+  }, [expandedSpecialties, autoExpandedKeys.specialties, isFilterActive]);
 
-      if (incidenceFilter === 'extreme_only' && node.incidence.fireCount !== 4) return false;
-      if (incidenceFilter === 'high_plus' && node.incidence.fireCount < 3) return false;
+  const effectiveExpandedTemas = useMemo(() => {
+    if (isFilterActive && autoExpandedKeys.temas.size > 0) {
+      const merged = new Set(expandedTemas);
+      autoExpandedKeys.temas.forEach((k) => merged.add(k));
+      return merged;
+    }
+    return expandedTemas;
+  }, [expandedTemas, autoExpandedKeys.temas, isFilterActive]);
 
-      if (q) {
-        const inFoco = node.foco.toLowerCase().includes(q);
-        const inTema = node.tema.toLowerCase().includes(q);
-        const inEsp = node.especialidade.toLowerCase().includes(q);
-        if (!inFoco && !inTema && !inEsp) return false;
-      }
-
-      return true;
-    });
-  }, [enrichedFoci, selectedSpecialty, statusFilter, incidenceFilter, searchQuery, focusProgressMap]);
-
-  // 7. Estatísticas gerais do checklist
+  // 9. Estatísticas globais do checklist
   const stats = useMemo(() => {
     const total = enrichedFoci.length;
     let studied = 0;
@@ -134,7 +143,52 @@ export const FocusChecklistDrawer: React.FC<FocusChecklistDrawerProps> = ({
     return { total, studied, percent };
   }, [enrichedFoci, focusProgressMap]);
 
-  // Ações
+  // Controles de Expansão
+  const handleToggleSpecialty = (esp: string) => {
+    setExpandedSpecialties((prev) => {
+      const next = new Set(prev);
+      if (next.has(esp)) next.delete(esp);
+      else next.add(esp);
+      return next;
+    });
+  };
+
+  const handleToggleTema = (temaKey: string) => {
+    setExpandedTemas((prev) => {
+      const next = new Set(prev);
+      if (next.has(temaKey)) next.delete(temaKey);
+      else next.add(temaKey);
+      return next;
+    });
+  };
+
+  const handleExpandAll = () => {
+    const allEsp = new Set<string>();
+    const allTemas = new Set<string>();
+    for (const esp of filteredHierarchy) {
+      allEsp.add(esp.especialidade);
+      for (const t of esp.temas) {
+        allTemas.add(`${esp.especialidade}::${t.tema}`);
+      }
+    }
+    setExpandedSpecialties(allEsp);
+    setExpandedTemas(allTemas);
+  };
+
+  const handleCollapseAll = () => {
+    setExpandedSpecialties(new Set());
+    setExpandedTemas(new Set());
+  };
+
+  const areAllExpanded = useMemo(() => {
+    if (filteredHierarchy.length === 0) return false;
+    for (const esp of filteredHierarchy) {
+      if (!expandedSpecialties.has(esp.especialidade)) return false;
+    }
+    return true;
+  }, [filteredHierarchy, expandedSpecialties]);
+
+  // Ações do Foco
   const handleToggleStudied = async (node: EnrichedFocusWithIncidence, newStudied: boolean) => {
     try {
       await upsertFocusProgress(
@@ -203,7 +257,7 @@ export const FocusChecklistDrawer: React.FC<FocusChecklistDrawerProps> = ({
 
   return (
     <div className="h-full flex flex-col bg-white dark:bg-zinc-900 overflow-hidden">
-      {/* 1. Cabeçalho Compacto do Checklist */}
+      {/* 1. Cabeçalho Compacto do Checklist com Controles de Expansão */}
       <FocusChecklistHeader
         currentInstitution={currentInstitution}
         onInstitutionChange={setCurrentInstitution}
@@ -220,44 +274,54 @@ export const FocusChecklistDrawer: React.FC<FocusChecklistDrawerProps> = ({
         stats={stats}
         isDrawer={isDrawer}
         onCloseDrawer={onCloseDrawer}
+        onExpandAll={handleExpandAll}
+        onCollapseAll={handleCollapseAll}
+        areAllExpanded={areAllExpanded}
       />
 
-      {/* 2. Lista de Focos em Checklist Contínuo (Divided List) */}
-      <div
-        onScroll={handleScroll}
-        className="flex-1 overflow-y-auto divide-y divide-zinc-100 dark:divide-zinc-800/60 bg-white dark:bg-zinc-900"
-      >
-        {filteredFoci.length === 0 ? (
+      {/* 2. Lista Sanfonada Hierárquica (Especialidade -> Tema -> Foco) */}
+      <div className="flex-1 overflow-y-auto p-2.5 sm:p-3.5 space-y-3 bg-zinc-50/50 dark:bg-zinc-950/40">
+        {filteredHierarchy.length === 0 ? (
           <div className="py-12 text-center text-zinc-400 dark:text-zinc-500 space-y-1.5">
-            <p className="text-xs font-semibold">Nenhum foco encontrado com os filtros atuais.</p>
+            <p className="text-xs font-semibold">Nenhum conteúdo encontrado com os filtros atuais.</p>
             <p className="text-[11px]">Tente limpar a pesquisa ou selecionar &quot;Todas as Áreas&quot;.</p>
           </div>
         ) : (
-          filteredFoci.slice(0, visibleCount).map((node) => (
-            <FocusChecklistItemRow
-              key={node.focusKey}
-              node={node}
-              progress={focusProgressMap[node.focusKey]}
-              metric={getMetricForFocus(node.foco, performanceMap)}
-              scheduledItems={scheduledItemsByFocus[node.foco.toLowerCase()]}
-              onToggleStudied={handleToggleStudied}
-              onOpenQuickSchedule={(f) => setQuickScheduleFocus(f)}
-              onNavigateToResumo={(esp, foco) => {
-                router.push(`/resumos?especialidade=${encodeURIComponent(esp)}&foco=${encodeURIComponent(foco)}`);
-              }}
-              onNavigateToQuestoes={(esp, foco) => {
-                const params = new URLSearchParams();
-                params.set('especialidade', esp);
-                params.set('foco', foco);
-                params.set('mode', 'filtros');
-                router.push(`/questoes?${params.toString()}`);
-              }}
-            />
-          ))
+          filteredHierarchy.map((specialtyGroup) => {
+            const isEspExpanded = effectiveExpandedSpecialties.has(
+              specialtyGroup.especialidade
+            );
+
+            return (
+              <SpecialtyChecklistSection
+                key={specialtyGroup.especialidade}
+                specialtyGroup={specialtyGroup}
+                isExpanded={isEspExpanded}
+                onToggleExpand={() => handleToggleSpecialty(specialtyGroup.especialidade)}
+                expandedTemaKeys={effectiveExpandedTemas}
+                onToggleTema={handleToggleTema}
+                focusProgressMap={focusProgressMap}
+                performanceMap={performanceMap}
+                scheduledItemsByFocus={scheduledItemsByFocus}
+                onToggleStudied={handleToggleStudied}
+                onOpenQuickSchedule={(f) => setQuickScheduleFocus(f)}
+                onNavigateToResumo={(esp, foco) => {
+                  router.push(`/resumos?especialidade=${encodeURIComponent(esp)}&foco=${encodeURIComponent(foco)}`);
+                }}
+                onNavigateToQuestoes={(esp, foco) => {
+                  const params = new URLSearchParams();
+                  params.set('especialidade', esp);
+                  params.set('foco', foco);
+                  params.set('mode', 'filtros');
+                  router.push(`/questoes?${params.toString()}`);
+                }}
+              />
+            );
+          })
         )}
       </div>
 
-      {/* 3. Modal de Agendamento Rápido */}
+      {/* 3. Modal de Agendamento Rápido no Calendário */}
       {quickScheduleFocus && (
         <QuickScheduleModal
           isOpen={Boolean(quickScheduleFocus)}

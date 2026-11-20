@@ -197,3 +197,39 @@ export interface GenerateScheduleParams {
   selectedFocusKeys?: string[];
   maxFociLimit?: number;
 }
+
+/**
+ * Estruturas para a Navegação Hierárquica do Checklist
+ * Especialidade -> Tema -> Foco
+ */
+export interface TemaChecklistGroup {
+  tema: string;
+  especialidade: string;
+  foci: Array<{
+    focusKey: string;
+    especialidade: string;
+    tema: string;
+    foco: string;
+    specialtyColor: string;
+    subfocoCount: number;
+    incidence: ExamIncidenceInfo;
+    score: number;
+  }>;
+  totalFoci: number;
+  studiedFoci: number;
+  withRevisionFoci: number;
+  progressPercent: number;
+  hasExtremeIncidence: boolean; // Contém foco 🔥🔥🔥🔥
+  hasHighIncidence: boolean;    // Contém foco 🔥🔥🔥
+}
+
+export interface SpecialtyChecklistGroup {
+  especialidade: string;
+  specialtyColor: string;
+  temas: TemaChecklistGroup[];
+  totalFoci: number;
+  studiedFoci: number;
+  withRevisionFoci: number;
+  progressPercent: number;
+}
+
