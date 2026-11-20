@@ -50,6 +50,7 @@ import { useSubscription } from '@/context/SubscriptionContext';
 import { useStudentData } from '@/context/StudentDataContext';
 import { useStudyTimer } from '@/context/StudyTimerContext';
 import { deduceStudyTaxonomy } from '@/utils/taxonomyDeduction';
+import { getHomologatedBaseline } from '@/data/homologatedFacetsBaseline';
 import {
   fetchQuestionsFromSupabase,
   fetchQuestionIdsForListCriteria
@@ -135,7 +136,7 @@ export const QuestoesView: React.FC = () => {
   const [sessionQuestionLimit, setSessionQuestionLimit] = useState<number | null>(null);
   const [questionsPage, setQuestionsPage] = useState<number>(1);
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
-  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(0);
+  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(() => getHomologatedBaseline(advancedFilters.modalidades).total);
   const [questionLoadError, setQuestionLoadError] = useState(false);
   const [questionReload, setQuestionReload] = useState(0);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(true);
@@ -567,7 +568,7 @@ export const QuestoesView: React.FC = () => {
   const handleResetFilters = () => {
     setAdvancedFilters({
       search: '',
-      modalidades: ['Residência Médica'],
+      modalidades: ['Acesso Direto'],
       especialidades: [],
       temas: [],
       focos: [],
@@ -584,6 +585,7 @@ export const QuestoesView: React.FC = () => {
       ultimos5Anos: false,
       aleatorizar: false
     });
+    setTotalSupabaseCount(getHomologatedBaseline(['Acesso Direto']).total);
     setSessionQuestionIds(null);
     lastPrefetchedPageRef.current = 1;
     setQuestionsPage(1);

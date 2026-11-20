@@ -47,6 +47,23 @@ export const FocusChecklistDrawer: React.FC<FocusChecklistDrawerProps> = ({
   const [incidenceFilter, setIncidenceFilter] = useState<'all' | 'extreme_only' | 'high_plus'>('all');
   const [quickScheduleFocus, setQuickScheduleFocus] = useState<EnrichedFocusWithIncidence | null>(null);
 
+  // Progressive rendering para performance fluida com 786 itens
+  const [visibleCount, setVisibleCount] = useState<number>(80);
+  const [prevFilterKey, setPrevFilterKey] = useState<string>('');
+
+  const currentFilterKey = `${searchQuery}_${selectedSpecialty}_${statusFilter}_${incidenceFilter}_${currentInstitution}`;
+  if (prevFilterKey !== currentFilterKey) {
+    setPrevFilterKey(currentFilterKey);
+    setVisibleCount(80);
+  }
+
+  const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    const { scrollTop, scrollHeight, clientHeight } = e.currentTarget;
+    if (scrollTop + clientHeight >= scrollHeight - 200) {
+      setVisibleCount((prev) => Math.min(filteredFoci.length, prev + 60));
+    }
+  };
+
   // 1. Instituições disponíveis
   const availableInstitutions = useMemo(() => getAvailableTargetInstitutions(), []);
 
@@ -156,36 +173,37 @@ export const FocusChecklistDrawer: React.FC<FocusChecklistDrawerProps> = ({
         itemType: params.itemType,
         isCompleted: false,
         orderIndex: 0,
-        notes: params.notes || null
+        notes: params.notes
       }
     ];
 
     if (params.autoScheduleRevisions && params.intervals.length > 0) {
       params.intervals.forEach((days, idx) => {
         const revDate = addDays(params.date, days);
-        const rType: ScheduleItemType = idx === 0 ? 'review_1' : idx === 1 ? 'review_2' : 'review_3';
+        const revType: ScheduleItemType = idx === 0 ? 'review_1' : idx === 1 ? 'review_2' : 'review_3';
         itemsToAdd.push({
-          id: `item_manual_rev_${Date.now()}_${idx}`,
+          id: `item_rev_${Date.now()}_${days}_${Math.random().toString(36).slice(2, 6)}`,
           scheduleId,
           userId: user?.id || 'guest',
           especialidade: quickScheduleFocus.especialidade,
           tema: quickScheduleFocus.tema,
           foco: quickScheduleFocus.foco,
           scheduledDate: revDate,
-          itemType: rType,
+          itemType: revType,
           isCompleted: false,
-          orderIndex: 10 + idx
+          orderIndex: idx + 1
         });
       });
     }
 
     await saveScheduleItemsBatch(itemsToAdd, user?.id);
+    setQuickScheduleFocus(null);
     onRefreshData?.();
   };
 
   return (
-    <div className="flex flex-col h-full bg-[var(--bg-card,#ffffff)] dark:bg-[#09090b] text-zinc-900 dark:text-zinc-100 select-none">
-      {/* 1. Header do Checklist */}
+    <div className="h-full flex flex-col bg-white dark:bg-zinc-900 overflow-hidden">
+      {/* 1. Cabeçalho Compacto do Checklist */}
       <FocusChecklistHeader
         currentInstitution={currentInstitution}
         onInstitutionChange={setCurrentInstitution}
@@ -204,15 +222,18 @@ export const FocusChecklistDrawer: React.FC<FocusChecklistDrawerProps> = ({
         onCloseDrawer={onCloseDrawer}
       />
 
-      {/* 2. Lista de Focos Rolável */}
-      <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-2.5">
+      {/* 2. Lista de Focos em Checklist Contínuo (Divided List) */}
+      <div
+        onScroll={handleScroll}
+        className="flex-1 overflow-y-auto divide-y divide-zinc-100 dark:divide-zinc-800/60 bg-white dark:bg-zinc-900"
+      >
         {filteredFoci.length === 0 ? (
-          <div className="py-12 text-center text-zinc-400 dark:text-zinc-500 space-y-2">
-            <p className="text-sm font-medium">Nenhum foco encontrado com os filtros atuais.</p>
-            <p className="text-xs">Tente limpar a pesquisa ou selecionar &quot;Todas as Áreas&quot;.</p>
+          <div className="py-12 text-center text-zinc-400 dark:text-zinc-500 space-y-1.5">
+            <p className="text-xs font-semibold">Nenhum foco encontrado com os filtros atuais.</p>
+            <p className="text-[11px]">Tente limpar a pesquisa ou selecionar &quot;Todas as Áreas&quot;.</p>
           </div>
         ) : (
-          filteredFoci.map((node) => (
+          filteredFoci.slice(0, visibleCount).map((node) => (
             <FocusChecklistItemRow
               key={node.focusKey}
               node={node}

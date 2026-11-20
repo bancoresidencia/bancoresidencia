@@ -1,5 +1,8 @@
 // Arquivo canônico gerado automaticamente — Taxonomia Autoral v3 (5 níveis com sub_subfoco)
 import { StudyModalidade } from '@/types';
+import defaultStudyFacetsData from './defaultStudyFacets.json';
+import defaultStudyCatalogData from './defaultStudyCatalog.json';
+import type { StudyCatalogCounts, StudyQuestionFacets } from '@/services/studyQuestionCatalog';
 
 export interface HomologatedBaseline {
   total: number;
@@ -21430,4 +21433,12 @@ function combineBaselines(baselines: HomologatedBaseline[]): HomologatedBaseline
   }
 
   return { total, uncategorized, especialidades, temas, focos, subfocos, subSubfocos, dificuldades, tipos, anos };
+}
+
+export function getHomologatedCatalog(_modalidades?: StudyModalidade[]): StudyCatalogCounts {
+  return defaultStudyCatalogData as StudyCatalogCounts;
+}
+
+export function getHomologatedFacets(_modalidades?: StudyModalidade[]): StudyQuestionFacets {
+  return defaultStudyFacetsData as StudyQuestionFacets;
 }

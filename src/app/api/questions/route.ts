@@ -20,7 +20,9 @@ import {
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
 import {
-  getHomologatedBaseline
+  getHomologatedBaseline,
+  getHomologatedCatalog,
+  getHomologatedFacets
 } from '@/data/homologatedFacetsBaseline';
 import { generateSessionTicket } from '@/utils/securityTickets';
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
@@ -93,6 +95,18 @@ async function queryStudyQuestions(req: NextRequest, body: StudyQuestionRequest)
   }
   const action = body.action;
   const mode = action === 'facets' || action === 'catalog' || action === 'ids' ? action : 'list';
+
+  const isDefaultModality = !filters.modalidades || filters.modalidades.length === 0 || (filters.modalidades.length === 1 && (filters.modalidades[0] === 'Acesso Direto' || filters.modalidades[0] === 'Residência Médica'));
+
+  if (mode === 'catalog' && isDefaultModality) {
+    return NextResponse.json(getHomologatedCatalog(filters.modalidades));
+  }
+
+  const isDefaultRightCard = !filters.instituicoes?.length && !filters.anos?.length && (!filters.dificuldade || filters.dificuldade === 'Todas') && (!filters.tipoQuestao || filters.tipoQuestao === 'Todas') && (!filters.status || filters.status === 'Todas') && !filters.search && !filters.ocultarAnuladasErro && !filters.ocultarRevisadas && !filters.bancaOrganizadora?.length && !filters.macrorregioes?.length && !filters.programaRplus?.length;
+
+  if (mode === 'facets' && isDefaultModality && isDefaultRightCard) {
+    return NextResponse.json({ facets: getHomologatedFacets(filters.modalidades) });
+  }
   const page = Math.max(1, Math.min(100000, Math.trunc(Number(body.page) || 1)));
   const size = Math.max(1, Math.min(mode === 'ids' ? 200 : 50, Math.trunc(Number(body.pageSize) || 20)));
   const authHeader = req.headers.get('authorization');

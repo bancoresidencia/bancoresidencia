@@ -90,6 +90,7 @@ import {
   mockYears
 } from '@/data/mockQuestions';
 import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
+import { getHomologatedCatalog, getHomologatedFacets } from '@/data/homologatedFacetsBaseline';
 import { fetchStudyCatalog } from '@/services/studyQuestionClient';
 import type { StudyCatalogCounts } from '@/services/studyQuestionCatalog';
 import { clinicalFields, clinicalPathKey, hasSelectedClinicalPath, isClinicalPathPrefix } from '@/utils/studyQuestionFilters';
@@ -359,8 +360,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
   const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
 
-  const [catalog, setCatalog] = useState<StudyCatalogCounts | null>(null);
-  const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
+  const [catalog, setCatalog] = useState<StudyCatalogCounts>(() => getHomologatedCatalog(filters.modalidades));
+  const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult>(() => getHomologatedFacets(filters.modalidades));
   const [catalogError, setCatalogError] = useState(false);
   const [facetsError, setFacetsError] = useState(false);
   const [catalogRetry, setCatalogRetry] = useState(0);
@@ -379,7 +380,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   useEffect(() => {
     const controller = new AbortController();
-    setCatalog(null);
     setCatalogError(false);
     fetchStudyCatalog({ modalidades: JSON.parse(modalityKey) }, controller.signal)
       .then((result) => { if (!controller.signal.aborted) setCatalog(result); })
@@ -389,7 +389,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   useEffect(() => {
     const controller = new AbortController();
-    setFacetedCounts(null);
     setFacetsError(false);
     const timer = setTimeout(() => {
       fetchFacetedHierarchyCounts(JSON.parse(facetKey), controller.signal)
