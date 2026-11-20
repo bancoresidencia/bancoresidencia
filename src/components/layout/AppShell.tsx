@@ -601,6 +601,8 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
               router.push('/checkout');
             } else if (action === 'questions') {
               router.push('/questoes');
+            } else {
+              router.push('/dashboard');
             }
           }}
         />

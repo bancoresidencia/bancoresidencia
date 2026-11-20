@@ -128,6 +128,7 @@ export type PeriodFilter = '1d' | '7d' | '30d' | 'mes' | '3m' | '6m' | '2026.1' 
 export type ActiveTab = 'home' | 'agenda' | 'banco' | 'caderno_erros' | 'flashcards' | 'resumos' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes' | 'curadoria' | 'reportes' | 'auditoria_medevo';
 
 export * from './flashcards';
+export * from './studySchedule';
 
 export type ReportReason =
   | 'Gabarito divergente / incorreto'

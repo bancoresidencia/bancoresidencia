@@ -44,11 +44,11 @@ function getCanonicalOrigin(request: NextRequest): string {
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get('code');
-  const rawNext = requestUrl.searchParams.get('next') ?? '/';
+  const rawNext = requestUrl.searchParams.get('next') ?? '/dashboard';
   const canonicalOrigin = getCanonicalOrigin(request);
 
   // Sanitização estrita contra Open Redirect: garante mesma origem exata após normalização WHATWG URL
-  let safeRedirectUrl = new URL('/', canonicalOrigin);
+  let safeRedirectUrl = new URL('/dashboard', canonicalOrigin);
   if (
     rawNext &&
     rawNext.startsWith('/') &&
@@ -59,10 +59,15 @@ export async function GET(request: NextRequest) {
     try {
       const candidate = new URL(rawNext, canonicalOrigin);
       if (candidate.origin === canonicalOrigin) {
-        safeRedirectUrl = candidate;
+        // Redireciona sempre ao dashboard se vier de checkout
+        if (candidate.pathname.startsWith('/checkout')) {
+          safeRedirectUrl = new URL('/dashboard', canonicalOrigin);
+        } else {
+          safeRedirectUrl = candidate;
+        }
       }
     } catch {
-      safeRedirectUrl = new URL('/', canonicalOrigin);
+      safeRedirectUrl = new URL('/dashboard', canonicalOrigin);
     }
   }
 

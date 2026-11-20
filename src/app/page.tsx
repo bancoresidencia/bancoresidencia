@@ -5,9 +5,8 @@ import dynamic from 'next/dynamic';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { HippocampusLoading } from '@/components/HippocampusLoading';
 import { LandingPage } from '@/components/LandingPage';
-import { isPlanId, PLANS, type PlanId } from '@/config/plans';
+import { isPlanId, type PlanId } from '@/config/plans';
 import { useAuth } from '@/context/AuthContext';
-import { useSubscription } from '@/context/SubscriptionContext';
 
 const AuthScreen = dynamic(
   () => import('@/components/AuthScreen').then((module) => module.AuthScreen),
@@ -49,17 +48,13 @@ function readStoredPlan(): PlanId | null {
 
 function HomeNavigation({
   onAuthRequest,
-  pendingPlan,
 }: {
   onAuthRequest: (request: AuthRequest) => void;
-  pendingPlan: PlanId | null;
 }) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const { user, isAuthenticated, isAdmin, isLoading } = useAuth();
-  const { isSubscriptionExpired } = useSubscription();
+  const { user, isAuthenticated, isLoading } = useAuth();
   const isSignedIn = Boolean(isAuthenticated && user);
-  const isUserFree = !user?.subscriptionPlan || user.subscriptionPlan === 'free' || isSubscriptionExpired;
 
   useEffect(() => {
     const legacyRoute = legacyRoutes.get(searchParams.get('tab') ?? '');
@@ -94,12 +89,13 @@ function HomeNavigation({
   useEffect(() => {
     if (isLoading || !isSignedIn || legacyRoutes.has(searchParams.get('tab') ?? '')) return;
 
-    const planParam = searchParams.get('plan');
-    const plan = isPlanId(planParam) ? planParam : pendingPlan ?? readStoredPlan();
-    router.replace(plan && isUserFree && !isAdmin
-      ? '/checkout?plan=' + encodeURIComponent(plan)
-      : '/dashboard');
-  }, [isAdmin, isLoading, isSignedIn, isUserFree, pendingPlan, router, searchParams]);
+    try {
+      sessionStorage.removeItem('pending_checkout_plan');
+      localStorage.removeItem('pending_checkout_plan');
+    } catch { }
+
+    router.replace('/dashboard');
+  }, [isLoading, isSignedIn, router, searchParams]);
 
   return null;
 }
@@ -108,17 +104,8 @@ export default function RootHomePage() {
   const router = useRouter();
   const { user, isAuthenticated } = useAuth();
   const [authModal, setAuthModal] = useState<AuthRequest | null>(null);
-  const [pendingPlan, setPendingPlan] = useState<PlanId | null>(null);
 
   const handleOpenAuth = useCallback((mode: AuthMode = 'login', planTitle?: string) => {
-    if (planTitle) {
-      const plan = Object.values(PLANS).find(
-        (definition) => definition.id === planTitle || definition.name.toLowerCase() === planTitle.toLowerCase()
-      );
-      if (plan) setPendingPlan(plan.id);
-    } else if (mode === 'login') {
-      setPendingPlan(null);
-    }
     setAuthModal({ mode, planTitle });
   }, []);
 
@@ -127,7 +114,7 @@ export default function RootHomePage() {
   return (
     <>
       <Suspense fallback={null}>
-        <HomeNavigation onAuthRequest={setAuthModal} pendingPlan={pendingPlan} />
+        <HomeNavigation onAuthRequest={setAuthModal} />
       </Suspense>
 
       {!(isAuthenticated && user) && (
@@ -145,15 +132,13 @@ export default function RootHomePage() {
                   initialMode={authModal.mode}
                   selectedPlanTitle={authModal.planTitle}
                   onClose={() => setAuthModal(null)}
-                  onSuccess={(intendedPlan) => {
+                  onSuccess={() => {
                     setAuthModal(null);
-                    const plan = intendedPlan || authModal.planTitle;
-                    if (isPlanId(plan)) {
-                      setPendingPlan(plan);
-                      router.push('/checkout?plan=' + encodeURIComponent(plan));
-                    } else {
-                      router.push('/dashboard');
-                    }
+                    try {
+                      sessionStorage.removeItem('pending_checkout_plan');
+                      localStorage.removeItem('pending_checkout_plan');
+                    } catch { }
+                    router.push('/dashboard');
                   }}
                 />
               </div>

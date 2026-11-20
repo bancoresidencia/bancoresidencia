@@ -642,13 +642,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
       }
 
-      // Preserva intenção de plano pendente se houver no storage
-      let callbackNext = '/';
+      // Ao logar com Google, direciona o aluno para o Dashboard
+      const callbackNext = '/dashboard';
       if (typeof window !== 'undefined') {
-        const pendingPlan = localStorage.getItem('pending_checkout_plan') || sessionStorage.getItem('pending_checkout_plan');
-        if (pendingPlan) {
-          callbackNext = `/?plan=${encodeURIComponent(pendingPlan)}&checkout=1`;
-        }
+        try {
+          localStorage.removeItem('pending_checkout_plan');
+          sessionStorage.removeItem('pending_checkout_plan');
+        } catch { }
       }
 
       const finalRedirectTo = `${redirectUrl}/auth/callback?next=${encodeURIComponent(callbackNext)}`;

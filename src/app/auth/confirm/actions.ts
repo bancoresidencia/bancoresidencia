@@ -1,7 +1,6 @@
 'use server';
 
 import { redirect } from 'next/navigation';
-import { isPlanId } from '@/config/plans';
 import { createClient } from '@/lib/supabase/server';
 import { isSignupTokenHash } from '@/utils/emailConfirmation';
 
@@ -21,8 +20,7 @@ export async function confirmSignup(formData: FormData) {
         ? '/auth/confirm?estado=indisponivel'
         : '/auth/confirm?estado=invalido';
     } else {
-      const plan: unknown = data.session.user.user_metadata.signup_checkout_plan;
-      destination = isPlanId(plan) ? `/checkout?plan=${plan}` : '/dashboard';
+      destination = '/dashboard';
     }
   } catch {
     destination = '/auth/confirm?estado=indisponivel';

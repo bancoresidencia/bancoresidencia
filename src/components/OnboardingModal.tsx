@@ -1037,38 +1037,39 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
               </div>
 
               <div className="space-y-3 max-w-lg mx-auto">
-                {/* 1. ADQUIRIR PLANO (Destaque Principal com Desconto) */}
+                {/* 1. IR PARA O DASHBOARD (DESTAQUE MÁXIMO) */}
                 <button
                   type="button"
                   disabled={isSaving}
-                  onClick={() => handleFinishOnboarding('plans')}
-                  className="w-full p-4 rounded-2xl border-2 border-amber-500/80 bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-transparent dark:from-amber-950/40 dark:via-orange-950/20 text-left transition-all hover:scale-[1.01] hover:shadow-lg cursor-pointer flex items-center justify-between group disabled:opacity-50"
+                  onClick={() => handleFinishOnboarding('home')}
+                  className="w-full p-4 rounded-2xl border-2 border-blue-500/80 bg-gradient-to-r from-blue-500/15 via-indigo-500/10 to-transparent dark:from-blue-950/40 dark:via-indigo-950/20 text-left transition-all hover:scale-[1.01] hover:shadow-lg cursor-pointer flex items-center justify-between group disabled:opacity-50"
+                  style={{ borderColor: accentConfig.primaryHex }}
                 >
                   <div className="flex items-center gap-3.5">
-                    <div className="w-11 h-11 rounded-2xl bg-amber-500 text-white flex items-center justify-center shadow-md shrink-0">
-                      <CreditCard className="w-5 h-5" />
+                    <div
+                      className="w-11 h-11 rounded-2xl text-white flex items-center justify-center shadow-md shrink-0"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
+                    >
+                      <LayoutDashboard className="w-5 h-5" />
                     </div>
                     <div>
                       <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                         <span className="font-extrabold text-sm text-slate-900 dark:text-white">
-                          Adquirir Plano & Liberar Acesso Total
+                          Ir para o Meu Dashboard
                         </span>
-                        {appliedReferral ? (
-                          <span className="shrink-0 text-[10px] uppercase font-black px-2 py-0.5 rounded-md bg-emerald-600 text-white">
-                            -10% OFF
-                          </span>
-                        ) : (
-                          <span className="shrink-0 text-[10px] uppercase font-black px-2 py-0.5 rounded-md bg-amber-600 text-white">
-                            Recomendado
-                          </span>
-                        )}
+                        <span
+                          className="shrink-0 text-[10px] uppercase font-black px-2 py-0.5 rounded-md text-white"
+                          style={{ backgroundColor: accentConfig.primaryHex }}
+                        >
+                          Recomendado
+                        </span>
                       </div>
                       <p className="text-xs text-slate-600 dark:text-slate-300 mt-0.5">
-                        Acesso irrestrito a 160 mil questões comentadas, modelo TRI e inteligência de provas.
+                        Acesse seu painel com metas, cronômetro e métricas para {selectedExamInst} e {specialty}.
                       </p>
                     </div>
                   </div>
-                  <ChevronRight className="w-5 h-5 text-amber-500 group-hover:translate-x-1 transition-transform shrink-0 ml-2" />
+                  <ChevronRight className="w-5 h-5 text-blue-500 group-hover:translate-x-1 transition-transform shrink-0 ml-2" />
                 </button>
 
                 {/* 2. FAZER QUESTÕES */}
@@ -1094,27 +1095,34 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   <ChevronRight className="w-5 h-5 text-slate-400 group-hover:translate-x-1 transition-transform shrink-0 ml-2" />
                 </button>
 
-                {/* 3. EXPLORAR A PLATAFORMA */}
+                {/* 3. CONHECER OS PLANOS PRO */}
                 <button
                   type="button"
                   disabled={isSaving}
-                  onClick={() => handleFinishOnboarding('home')}
-                  className="w-full p-4 rounded-2xl border border-slate-200 dark:border-zinc-800 bg-slate-50/50 dark:bg-zinc-900/50 hover:bg-slate-100 dark:hover:bg-zinc-800/80 text-left transition-all hover:scale-[1.01] cursor-pointer flex items-center justify-between group disabled:opacity-50"
+                  onClick={() => handleFinishOnboarding('plans')}
+                  className="w-full p-3.5 rounded-2xl border border-slate-200 dark:border-zinc-800 bg-transparent hover:bg-slate-50 dark:hover:bg-zinc-900/60 text-left transition-all cursor-pointer flex items-center justify-between group disabled:opacity-50"
                 >
-                  <div className="flex items-center gap-3.5">
-                    <div className="w-11 h-11 rounded-2xl bg-slate-700 dark:bg-zinc-700 text-white flex items-center justify-center shadow-md shrink-0">
-                      <LayoutDashboard className="w-5 h-5" />
+                  <div className="flex items-center gap-3">
+                    <div className="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                      <CreditCard className="w-4 h-4" />
                     </div>
                     <div>
-                      <span className="font-extrabold text-sm text-slate-900 dark:text-white block">
-                        Explorar a Plataforma
-                      </span>
-                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                        Acesse seu dashboard inicial, métricas psicométricas e cadernos de erro.
+                      <div className="flex items-center gap-1.5">
+                        <span className="font-bold text-xs text-slate-800 dark:text-slate-200">
+                          Conhecer os Planos PRO
+                        </span>
+                        {appliedReferral && (
+                          <span className="text-[9px] uppercase font-bold px-1.5 py-0.5 rounded bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-400">
+                            -10% Cupom
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-[11px] text-slate-400">
+                        Desbloqueie acesso completo com garantia de 7 dias.
                       </p>
                     </div>
                   </div>
-                  <ChevronRight className="w-5 h-5 text-slate-400 group-hover:translate-x-1 transition-transform shrink-0 ml-2" />
+                  <ChevronRight className="w-4 h-4 text-slate-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
                 </button>
               </div>
             </div>

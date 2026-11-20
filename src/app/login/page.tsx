@@ -11,7 +11,8 @@ function LoginContent() {
   const searchParams = useSearchParams();
   const { user, isAuthenticated, isLoading } = useAuth();
 
-  const nextRoute = searchParams.get('next') || '/dashboard';
+  const rawNext = searchParams.get('next');
+  const nextRoute = (rawNext && !rawNext.startsWith('/checkout')) ? rawNext : '/dashboard';
   const modeParam = searchParams.get('mode') || searchParams.get('auth');
   const initialMode: 'login' | 'register' = modeParam === 'register' ? 'register' : 'login';
 
@@ -36,6 +37,10 @@ function LoginContent() {
           initialMode={initialMode}
           onClose={() => router.push('/')}
           onSuccess={() => {
+            try {
+              sessionStorage.removeItem('pending_checkout_plan');
+              localStorage.removeItem('pending_checkout_plan');
+            } catch { }
             router.push(nextRoute);
           }}
         />
