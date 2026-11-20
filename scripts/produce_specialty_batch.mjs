@@ -377,13 +377,12 @@ async function runPipeline() {
 
   // Se houver próxima especialidade encadeada, dispara automaticamente!
   const NEXT_CHAIN = {
-    ginecologia: { file: 'data/ginecologia_direto_questions.json', name: 'Ginecologia', next: 'obstetricia' },
+    urologia: { file: 'data/urologia_final_questions.json', name: 'Urologia', next: 'clinica' },
     obstetricia: { file: 'data/obstetricia_direto_questions.json', name: 'Obstetrícia', next: 'pediatria' },
     pediatria: { file: 'data/pediatria_direto_questions.json', name: 'Pediatria', next: 'cirurgia' },
-    cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia Geral', next: 'preventiva' },
-    preventiva: { file: 'data/medicina_preventiva_final_questions.json', name: 'Medicina Preventiva', next: 'clinica' },
+    cirurgia: { file: 'data/cirurgia_direto_questions.json', name: 'Cirurgia', next: 'clinica' },
     clinica: { file: 'data/clinica_direto_questions.json', name: 'Clínica Médica', next: 'none' },
-    urologia: { file: 'data/urologia_final_questions.json', name: 'Urologia', next: 'none' }
+    preventiva: { file: 'data/medicina_preventiva_final_questions.json', name: 'Medicina Preventiva', next: 'none' }
   };
 
   if (NEXT_SPECIALTY && NEXT_CHAIN[NEXT_SPECIALTY.toLowerCase()]) {

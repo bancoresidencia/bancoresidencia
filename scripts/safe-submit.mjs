@@ -81,7 +81,7 @@ async function main() {
     if (stagedOnly) {
       const stagedFiles = (runSilent('git diff --cached --name-only --diff-filter=ACM') || '')
         .split(/\r?\n/)
-        .filter((f) => f.startsWith('src/') && !f.endsWith('.map') && !f.includes('homologatedFacetsBaseline'));
+        .filter((f) => f.startsWith('src/') && !f.endsWith('.map'));
       for (const rel of stagedFiles) {
         const sizeBytes = parseInt(runSilent(`git cat-file -s ":${rel}"`) || '0', 10);
         if (sizeBytes > 1.5 * 1024 * 1024) {
@@ -96,7 +96,7 @@ async function main() {
           if (entry.isDirectory()) scanDir(full);
           else if (entry.isFile()) {
             const stats = fs.statSync(full);
-            if (stats.size > 1.5 * 1024 * 1024 && !entry.name.endsWith('.map') && !entry.name.includes('homologatedFacetsBaseline')) {
+            if (stats.size > 1.5 * 1024 * 1024 && !entry.name.endsWith('.map')) {
               largeFiles.push({ file: full, sizeMb: (stats.size / 1024 / 1024).toFixed(2) });
             }
           }

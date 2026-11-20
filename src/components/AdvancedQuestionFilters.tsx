@@ -86,7 +86,8 @@ import {
 } from 'lucide-react';
 import {
   clinicalHierarchy,
-  medicalInstitutionsDirectory
+  medicalInstitutionsDirectory,
+  mockYears
 } from '@/data/mockQuestions';
 import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
 import { fetchStudyCatalog } from '@/services/studyQuestionClient';
@@ -118,6 +119,7 @@ interface AdvancedQuestionFiltersProps {
   embedded?: boolean;
 }
 
+const FALLBACK_EXAM_YEARS = mockYears.filter((year) => year !== 'Todos').map(Number);
 const QUICK_YEAR_COUNTS = [3, 5, 10];
 
 // Bancas mais concorridas para acesso rápido em 1 clique (Residência Médica)
@@ -357,12 +359,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
   const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
 
-  const modalityKey = JSON.stringify(filters.modalidades);
-  const [catalogResponse, setCatalogResponse] = useState<{ key: string; data: StudyCatalogCounts | null }>();
-  const [facetsResponse, setFacetsResponse] = useState<{ key: string; data: FacetedHierarchyCountsResult | null }>();
+  const [catalog, setCatalog] = useState<StudyCatalogCounts | null>(null);
+  const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
+  const [catalogError, setCatalogError] = useState(false);
+  const [facetsError, setFacetsError] = useState(false);
   const [catalogRetry, setCatalogRetry] = useState(0);
   const [facetsRetry, setFacetsRetry] = useState(0);
-
+  const modalityKey = JSON.stringify(filters.modalidades);
   const facetKey = JSON.stringify({
     modalidades: filters.modalidades, instituicoes: filters.instituicoes,
     tipoProva: filters.tipoProva, anos: filters.anos, dificuldade: filters.dificuldade,
@@ -373,33 +376,31 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     programaRplus: filters.programaRplus
   });
   const answerRevision = filters.status !== 'Todas' || filters.ocultarRevisadas ? userAnswers : undefined;
-  const catalogKey = `${catalogRetry}:${modalityKey}`;
-  const facetsKey = `${facetsRetry}:${facetKey}`;
-  const catalog = catalogResponse?.key === catalogKey ? catalogResponse.data : null;
-  const facetedCounts = facetsResponse?.key === facetsKey ? facetsResponse.data : null;
-  const catalogError = catalogResponse?.key === catalogKey && catalogResponse.data === null;
-  const facetsError = facetsResponse?.key === facetsKey && facetsResponse.data === null;
 
   useEffect(() => {
     const controller = new AbortController();
+    setCatalog(null);
+    setCatalogError(false);
     fetchStudyCatalog({ modalidades: JSON.parse(modalityKey) }, controller.signal)
-      .then((data) => { if (!controller.signal.aborted) setCatalogResponse({ key: catalogKey, data }); })
-      .catch(() => { if (!controller.signal.aborted) setCatalogResponse({ key: catalogKey, data: null }); });
+      .then((result) => { if (!controller.signal.aborted) setCatalog(result); })
+      .catch(() => { if (!controller.signal.aborted) setCatalogError(true); });
     return () => controller.abort();
-  }, [modalityKey, catalogKey]);
+  }, [modalityKey, catalogRetry]);
 
   useEffect(() => {
     const controller = new AbortController();
+    setFacetedCounts(null);
+    setFacetsError(false);
     const timer = setTimeout(() => {
       fetchFacetedHierarchyCounts(JSON.parse(facetKey), controller.signal)
-        .then((data) => { if (!controller.signal.aborted) setFacetsResponse({ key: facetsKey, data }); })
-        .catch(() => { if (!controller.signal.aborted) setFacetsResponse({ key: facetsKey, data: null }); });
-    }, 180);
+        .then((result) => { if (!controller.signal.aborted) setFacetedCounts(result); })
+        .catch(() => { if (!controller.signal.aborted) setFacetsError(true); });
+    }, 120);
     return () => {
       clearTimeout(timer);
       controller.abort();
     };
-  }, [facetKey, answerRevision, facetsKey]);
+  }, [facetKey, answerRevision, facetsRetry]);
 
   const countForPath = (path: string[]): number | null => {
     if (!facetedCounts) return null;
@@ -534,7 +535,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const isOnlyRevalida = useMemo(() => {
     return isModalidadeActive('Revalida') && !isModalidadeActive('Acesso Direto') && !isModalidadeActive('R+') && !isModalidadeActive('Título de Especialista');
   }, [filters.modalidades]);
-  const yearsList = catalog?.years ?? [];
+  const yearsList = catalog?.years?.length
+    ? catalog.years
+    : isOnlyRevalida ? FALLBACK_EXAM_YEARS.filter((year) => year <= 2026) : FALLBACK_EXAM_YEARS;
   const activeQuickYearCount = QUICK_YEAR_COUNTS.find((count) =>
     filters.anos.length === count && yearsList.slice(0, count).every((year) => filters.anos.includes(year))
   );
@@ -641,14 +644,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     setExpandedSubfoco({});
   };
 
-  const availableSpecialties = clinicalHierarchy
-    .map((specialty) => specialty.especialidade)
-    .filter((specialty) => (countForPath([specialty]) ?? 0) > 0);
   const handleSelectAllSpecialties = () => {
+    const all = clinicalHierarchy.map((h) => h.especialidade);
     onChange({
       ...filters,
-      especialidades: availableSpecialties,
-      clinicalPaths: availableSpecialties.map((specialty) => [specialty]),
+      especialidades: all,
+      clinicalPaths: all.map((specialty) => [specialty]),
       temas: [],
       focos: [],
       subfocos: [],
@@ -673,7 +674,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   };
 
   const availableInstitutions = useMemo(() => {
-    if (!catalog) return [];
+    if (!catalog) return UF_INSTITUTIONS_CATALOG;
     const representedAliases = new Set<string>();
     const institutions = new Map<string, UfInstitutionItem>();
     for (const item of UF_INSTITUTIONS_CATALOG) {
@@ -791,7 +792,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       tags.push({
         id: 'mod-revalida',
         label: 'Revalida',
-        onRemove: () => onChange({ ...filters, modalidades: ['Acesso Direto'], instituicoes: [] })
+        onRemove: () => onChange({ ...filters, modalidades: ['Residência Médica'], instituicoes: [] })
       });
     }
 
@@ -1193,7 +1194,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               <button
                 type="button"
                 onClick={handleSelectAllSpecialties}
-                disabled={availableSpecialties.length === 0}
                 className="px-2 sm:px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-medium text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer touch-manipulation"
               >
                 <span className="sm:hidden">Todas</span>
@@ -1249,7 +1249,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               const isEspSelected = hasSelectedClinicalPath(filters, espPath);
               const isEspExpanded = Boolean(expandedEspec[esp.especialidade]);
               const espCount = countForPath(espPath);
-              if (espCount === 0 && !isEspSelected) return null;
 
               // Filtragem textual se houver busca
               const qTerm = deferredHierarchySearch.toLowerCase().trim();
@@ -1356,7 +1355,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         const isTemaSelected = hasSelectedClinicalPath(filters, temaPath);
                         const isTemaExpanded = Boolean(expandedTema[tem.tema]) || Boolean(qTerm);
                         const temaCount = countForPath(temaPath);
-                        if (temaCount === 0 && !hasSelectedClinicalPath(filters, temaPath)) return null;
 
                         if (
                           qTerm &&
@@ -1441,7 +1439,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                   const isFocoSelected = hasSelectedClinicalPath(filters, focoPath);
                                   const isFocoExpanded = Boolean(expandedFoco[foc.foco]) || Boolean(qTerm);
                                   const focoCount = countForPath(focoPath);
-                                  if (focoCount === 0 && !hasSelectedClinicalPath(filters, focoPath)) return null;
 
                                   if (
                                     qTerm &&
@@ -1525,7 +1522,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                             const hasMatchingChild = qTerm ? subSubList.some((ss) => ss.toLowerCase().includes(qTerm)) : false;
                                             const isSubfocoExpanded = Boolean(expandedSubfoco[sub] || hasMatchingChild);
                                             const subCount = countForPath(subPath);
-                                            if (subCount === 0 && !hasSelectedClinicalPath(filters, subPath)) return null;
 
                                             if (
                                               qTerm &&
@@ -1603,7 +1599,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                                       const ssPath = [...subPath, ss];
                                                       const isSsSelected = hasSelectedClinicalPath(filters, ssPath);
                                                       const ssCount = countForPath(ssPath);
-                                                      if (ssCount === 0 && !hasSelectedClinicalPath(filters, ssPath)) return null;
 
                                                       if (
                                                         qTerm &&
@@ -1692,11 +1687,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
           {/* Campo de Busca e Acesso Rápido a Bancas (Fixo no Topo do Card) */}
           <div className="space-y-1.5 shrink-0 mb-1 pb-1.5 border-b border-zinc-100/70 dark:border-zinc-800/70">
-            {catalogError && (
-              <button type="button" className="text-xs underline" onClick={() => setCatalogRetry((n) => n + 1)}>
-                Recarregar bancas e anos
-              </button>
-            )}
             <div className="relative">
               <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 dark:text-zinc-500" />
               <input
@@ -1747,8 +1737,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
             {/* Chips das Mais Concorridas com Rolagem Horizontal Suave */}
             <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-              {activeQuickBancas.filter((banca) => resolveBancaList([banca.key])
-                .some((alias) => (catalog?.bancas[alias] ?? 0) > 0)).map((banca) => {
+              {activeQuickBancas.map((banca) => {
                 const canonicalTarget = getCanonicalBancaKey(banca.key);
                 const isSelected = filters.instituicoes.some(
                   (inst) => getCanonicalBancaKey(inst).toLowerCase() === canonicalTarget.toLowerCase()

@@ -135,7 +135,7 @@ export const QuestoesView: React.FC = () => {
   const [sessionQuestionLimit, setSessionQuestionLimit] = useState<number | null>(null);
   const [questionsPage, setQuestionsPage] = useState<number>(1);
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
-  const [totalSupabaseCount, setTotalSupabaseCount] = useState(0);
+  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(0);
   const [questionLoadError, setQuestionLoadError] = useState(false);
   const [questionReload, setQuestionReload] = useState(0);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(true);
@@ -567,7 +567,7 @@ export const QuestoesView: React.FC = () => {
   const handleResetFilters = () => {
     setAdvancedFilters({
       search: '',
-      modalidades: ['Acesso Direto'],
+      modalidades: ['Residência Médica'],
       especialidades: [],
       temas: [],
       focos: [],
@@ -584,7 +584,6 @@ export const QuestoesView: React.FC = () => {
       ultimos5Anos: false,
       aleatorizar: false
     });
-    setTotalSupabaseCount(0);
     setSessionQuestionIds(null);
     lastPrefetchedPageRef.current = 1;
     setQuestionsPage(1);

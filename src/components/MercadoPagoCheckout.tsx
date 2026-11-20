@@ -8,8 +8,7 @@ import {
   Check, 
   Sparkles, 
   AlertCircle, 
-  Lock,
-  ArrowRight
+  Lock
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
@@ -41,55 +40,8 @@ type CardPaymentSubmitData = ICardPaymentFormData<ICardPaymentBrickPayer>;
 
 export function MercadoPagoCheckout(props: MercadoPagoCheckoutProps) {
   const { user, isLoading } = useAuth();
-  const { accentConfig } = useTheme();
-
-  if (isLoading) {
-    return (
-      <div className="flex flex-col items-center justify-center p-8 text-center space-y-3" role="status">
-        <div className="w-8 h-8 border-3 border-emerald-500 border-t-transparent rounded-full animate-spin" />
-        <p className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">Carregando sua conta…</p>
-      </div>
-    );
-  }
-
-  if (!user) {
-    return (
-      <div className="flex flex-col items-center justify-center text-center p-4 sm:p-6 space-y-4">
-        <div
-          className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-md shrink-0"
-          style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
-        >
-          <Lock className="w-6 h-6" />
-        </div>
-        <div className="space-y-1">
-          <h3 className="font-heading font-black text-base sm:text-lg text-slate-900 dark:text-white">
-            Identifique-se para continuar
-          </h3>
-          <p className="text-xs text-slate-600 dark:text-slate-400 max-w-sm">
-            Para ativar sua assinatura do <strong>{props.plan.name}</strong> e vincular ao seu histórico de estudos, entre na sua conta ou cadastre-se.
-          </p>
-        </div>
-
-        <a
-          href={`/login?next=${encodeURIComponent('/checkout?plan=' + props.plan.id)}`}
-          className="w-full sm:w-auto px-6 py-3 rounded-2xl font-bold text-xs shadow-md transition-all hover:scale-102 active:scale-98 flex items-center justify-center gap-2 cursor-pointer"
-          style={{
-            backgroundColor: accentConfig.primaryHex,
-            color: accentConfig.primaryContrastHex
-          }}
-        >
-          <span>Entrar ou Cadastrar-se</span>
-          <ArrowRight className="w-4 h-4" />
-        </a>
-
-        <div className="flex items-center gap-2 text-[11px] font-medium text-slate-500 dark:text-slate-400 pt-2 border-t border-zinc-100 dark:border-zinc-800/80 w-full justify-center">
-          <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
-          <span>Ambiente criptografado e seguro</span>
-        </div>
-      </div>
-    );
-  }
-
+  if (isLoading) return <p role="status">Carregando sua conta…</p>;
+  if (!user) return <a className="underline" href={`/login?next=${encodeURIComponent('/checkout?plan=' + props.plan.id)}`}>Entrar para continuar o pagamento</a>;
   return <PaymentForm key={user.id + props.plan.id} {...props} />;
 }
 

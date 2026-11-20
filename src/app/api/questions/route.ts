@@ -19,7 +19,9 @@ import {
 } from '@/utils/security';
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
-import { getHomologatedBaseline } from '@/data/homologatedFacetsBaseline';
+import {
+  getHomologatedBaseline
+} from '@/data/homologatedFacetsBaseline';
 import { generateSessionTicket } from '@/utils/securityTickets';
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
 import { resolveCanonicalViewsForModalidades } from '@/services/canonicalQuestionStore';
@@ -91,7 +93,6 @@ async function queryStudyQuestions(req: NextRequest, body: StudyQuestionRequest)
   }
   const action = body.action;
   const mode = action === 'facets' || action === 'catalog' || action === 'ids' ? action : 'list';
-
   const page = Math.max(1, Math.min(100000, Math.trunc(Number(body.page) || 1)));
   const size = Math.max(1, Math.min(mode === 'ids' ? 200 : 50, Math.trunc(Number(body.pageSize) || 20)));
   const authHeader = req.headers.get('authorization');
@@ -344,6 +345,11 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
   }
 
   // 2. Árvore Clínica (5 níveis): Refinamento Pai -> Filho e SOMA / UNIÃO entre ramos diferentes
+  const hasOutrasSpec = Boolean(filters.especialidades?.includes('Outras / Em Curadoria'));
+  const filtersWithoutOutras = hasOutrasSpec
+    ? { ...filters, especialidades: filters.especialidades?.filter(s => s !== 'Outras / Em Curadoria') }
+    : filters;
+
   const {
     orParts,
     standaloneSpecs,
@@ -351,9 +357,14 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
     standaloneFocos,
     standaloneSubfocos,
     standaloneSubSubfocos
-  } = buildClinicalFilterClauses(filters);
+  } = buildClinicalFilterClauses(filtersWithoutOutras);
 
-  if (orParts.length === 1) {
+  if (hasOutrasSpec && orParts.length === 0) {
+    query = query.or('especialidade.is.null,especialidade.eq.""');
+  } else if (hasOutrasSpec && orParts.length > 0) {
+    const combinedOr = [...orParts, 'especialidade.is.null', 'especialidade.eq.""'];
+    query = query.or(combinedOr.join(','));
+  } else if (orParts.length === 1) {
     if (standaloneSpecs.length > 0) {
       query = query.in('especialidade', standaloneSpecs);
     } else if (standaloneTemas.length > 0) {

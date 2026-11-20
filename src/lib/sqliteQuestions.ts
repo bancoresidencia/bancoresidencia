@@ -219,8 +219,11 @@ export function buildSqlWhereClauses(filters: ExtendedFilterState = {}, question
 
   // Especialidades standalone
   const standaloneSpecs = new Set<string>();
+  let hasOutras = false;
   selectedSpecs.forEach((sp) => {
-    if (!specsWithChildren.has(sp)) {
+    if (sp === 'Outras / Em Curadoria') {
+      hasOutras = true;
+    } else if (!specsWithChildren.has(sp)) {
       if (sp === 'Cirurgia' || sp === 'Cirurgia Geral') {
         standaloneSpecs.add('Cirurgia');
         standaloneSpecs.add('Cirurgia Geral');
@@ -235,6 +238,10 @@ export function buildSqlWhereClauses(filters: ExtendedFilterState = {}, question
       }
     }
   });
+
+  if (hasOutras) {
+    clinicalOrParts.push(`(especialidade IS NULL OR especialidade = '')`);
+  }
 
   if (standaloneSpecs.size > 0) {
     const list = Array.from(standaloneSpecs);

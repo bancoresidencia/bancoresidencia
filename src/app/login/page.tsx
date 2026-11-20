@@ -13,8 +13,6 @@ function LoginContent() {
 
   const rawNext = searchParams.get('next');
   const nextRoute = (rawNext && !rawNext.startsWith('/checkout')) ? rawNext : '/dashboard';
-  const modeParam = searchParams.get('mode') || searchParams.get('auth');
-  const initialMode: 'login' | 'register' = modeParam === 'register' ? 'register' : 'login';
 
   useEffect(() => {
     if (!isLoading && isAuthenticated && user) {
@@ -34,7 +32,7 @@ function LoginContent() {
     <div className="min-h-dvh bg-[var(--bg-page)] text-[var(--foreground)] flex items-start sm:items-center justify-center px-3 pt-[max(0.875rem,env(safe-area-inset-top,0px))] pb-[max(1.25rem,env(safe-area-inset-bottom,0px))] sm:p-6 overflow-y-auto">
       <div className="w-full max-w-xl sm:max-w-[540px] my-auto">
         <AuthScreen
-          initialMode={initialMode}
+          initialMode="login"
           onClose={() => router.push('/')}
           onSuccess={() => {
             try {

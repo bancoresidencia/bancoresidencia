@@ -6,6 +6,7 @@ export function normalizeStudySpecialty(specialty: string): string {
   switch (specialty) {
     case 'Cirurgia': return 'Cirurgia Geral';
     case 'Medicina Preventiva': return 'Medicina Preventiva e Social';
+    case 'Outras / Em Curadoria': return '';
     default: return specialty;
   }
 }
