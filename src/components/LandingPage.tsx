@@ -82,15 +82,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
         />
 
         <div id="neuroanatomia" className="scroll-mt-16">
-          <LandingBrainHero
-            onOpenAuth={onOpenAuth}
-            onScrollToSection={scrollToSection}
-          />
+          <LandingBrainHero />
         </div>
 
         <LandingMetricsAndAuthorityStrip />
 
-        <div id="questoes" className="scroll-mt-20">
+        <div id="questoes" tabIndex={-1} className="scroll-mt-20">
           <LandingDemoQuestionsSection
             key={demoSelection ? `${demoSelection.tab}-${demoSelection.nonce}` : 'default'}
             onLoginDemo={onLoginDemo}
