@@ -32,6 +32,12 @@ const HippocampusDissectionScene = dynamic(
 
 const initialProgress = { scrollProgress: 0, entryProgress: 1 };
 
+function getActiveCardIndex(progress: number) {
+  if (progress < 0.15) return -1;
+  if (progress < 0.42) return 0;
+  return progress < 0.68 ? 1 : 2;
+}
+
 export interface LandingBrainHeroProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;
   onScrollToSection: (sectionId: string) => void;
@@ -116,22 +122,18 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
   const isDark = mode === 'dark';
   const isMonochrome = accent === 'neutral';
   const trackRef = useRef<HTMLDivElement | null>(null);
+  const introRef = useRef<HTMLDivElement | null>(null);
+  const brainStageRef = useRef<HTMLDivElement | null>(null);
+  const cardsPanelRef = useRef<HTMLDivElement | null>(null);
   const sceneRequested = useRef(false);
   const [showScene, setShowScene] = useState(false);
-  const progressRef = useRef(initialProgress);
-  const [{ scrollProgress, entryProgress }, setProgress] = useState(initialProgress);
-  const [isDesktop, setIsDesktop] = useState(false);
-
-  useEffect(() => {
-    const check = () => setIsDesktop(typeof window !== 'undefined' && window.innerWidth >= 1024);
-    check();
-    window.addEventListener('resize', check, { passive: true });
-    return () => window.removeEventListener('resize', check);
-  }, []);
+  const scrollProgressRef = useRef(initialProgress.scrollProgress);
+  const entryProgressRef = useRef(initialProgress.entryProgress);
+  const [activeCardIdx, setActiveCardIdx] = useState(-1);
 
   const updateScroll = useCallback(() => {
     const el = trackRef.current;
-    if (!el || typeof window === 'undefined') return;
+    if (!el) return;
     const rect = el.getBoundingClientRect();
     const winH = window.innerHeight || 800;
     if (!sceneRequested.current && rect.bottom > 0 &&
@@ -139,16 +141,45 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
       sceneRequested.current = true;
       setShowScene(true);
     }
-    const scrollable = Math.max(el.offsetHeight - winH, 1);
-    const nextProgress = {
-      entryProgress: Math.max(0, Math.min(1, 1 - Math.max(0, rect.top) / winH)),
-      scrollProgress: Math.max(0, Math.min(1, -rect.top / scrollable)),
-    };
-    const previous = progressRef.current;
-    if (previous.scrollProgress !== nextProgress.scrollProgress ||
-      previous.entryProgress !== nextProgress.entryProgress) {
-      progressRef.current = nextProgress;
-      setProgress(nextProgress);
+    const scrollable = Math.max(rect.height - winH, 1);
+    const entry = Math.max(0, Math.min(1, 1 - Math.max(0, rect.top) / winH));
+    const progress = Math.max(0, Math.min(1, -rect.top / scrollable));
+    if (progress !== scrollProgressRef.current || entry !== entryProgressRef.current) {
+      const cardIndex = getActiveCardIndex(progress);
+      if (cardIndex !== getActiveCardIndex(scrollProgressRef.current)) {
+        setActiveCardIdx(cardIndex);
+      }
+      scrollProgressRef.current = progress;
+      entryProgressRef.current = entry;
+
+      const entryFade = smootherstep(0.20, 0.82, entry);
+      const heroFadeOut = smootherstep(0.02, 0.15, progress);
+      const heroOpacity = entryFade * (1 - heroFadeOut);
+      const heroY = (1 - entryFade) * 20 - 14 * heroFadeOut;
+      const brainShift = smootherstep(0.02, 0.19, progress);
+      const brainScale = 0.92 + 0.08 * smootherstep(0.18, 0.95, entry);
+      const cardsOpacity = smootherstep(0.16, 0.24, progress);
+
+      const intro = introRef.current;
+      if (intro) {
+        intro.style.opacity = heroOpacity.toFixed(3);
+        intro.style.transform = `translate3d(0, ${heroY.toFixed(1)}px, 0) scale(${(1 - heroFadeOut * 0.035).toFixed(3)})`;
+        intro.style.pointerEvents = heroOpacity > 0.35 ? 'auto' : 'none';
+        intro.setAttribute('aria-hidden', String(heroOpacity < 0.05));
+      }
+
+      const brainStage = brainStageRef.current;
+      if (brainStage) {
+        brainStage.style.opacity = smootherstep(0.18, 0.88, entry).toFixed(3);
+        brainStage.style.setProperty('--brain-desktop-x', `${(285 - 520 * brainShift).toFixed(1)}px`);
+        brainStage.style.setProperty('--brain-scale', brainScale.toFixed(3));
+      }
+
+      const cardsPanel = cardsPanelRef.current;
+      if (cardsPanel) {
+        cardsPanel.style.opacity = cardsOpacity.toFixed(3);
+        cardsPanel.style.pointerEvents = cardsOpacity > 0.35 ? 'auto' : 'none';
+      }
     }
   }, []);
 
@@ -170,28 +201,6 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
       window.removeEventListener('resize', onScroll);
     };
   }, [updateScroll]);
-
-  // Transição suave de esvaecimento de aparição ao transitar da 1ª dobra para a 2ª dobra
-  const entryFade = smootherstep(0.20, 0.82, entryProgress);
-  const textEntranceTranslateY = (1 - entryFade) * 20;
-  const brainEntranceOpacity = smootherstep(0.18, 0.88, entryProgress);
-  const brainEntranceScale = 0.92 + 0.08 * smootherstep(0.18, 0.95, entryProgress);
-
-  // Coreografia espacial dentro da 2ª dobra:
-  const heroFadeOut = smootherstep(0.02, 0.15, scrollProgress);
-  const heroOpacity = entryFade * (1 - heroFadeOut);
-  const heroTranslateY = textEntranceTranslateY - 14 * heroFadeOut;
-  const brainShiftT = smootherstep(0.02, 0.19, scrollProgress);
-  const cardsPanelOpacity = smootherstep(0.16, 0.24, scrollProgress);
-
-  // De +285px (coluna direita, lugar da Imagem 2) para -235px (coluna esquerda do scrollytelling)
-  const desktopBrainX = 285 * (1 - brainShiftT) - 235 * brainShiftT;
-
-  // Janelas calibradas com zona de retenção estendida no Card 3 (Hipocampo isolado):
-  // Card 1 (Córtex inteiro -> Dissecação na saída): 0.14 -> 0.42
-  // Card 2 (Circuito de Papez): 0.42 -> 0.68
-  // Card 3 (Hipocampo isolado + platô de contemplação sem escape súbito): 0.68 -> 1.00
-  const activeCardIdx = scrollProgress < 0.42 ? 0 : scrollProgress < 0.68 ? 1 : 2;
 
   const highlightTextStyle: React.CSSProperties = isMonochrome
     ? {
@@ -220,8 +229,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
       aria-label="Hero Principal e Jornada Neuroanatômica Hippocampus"
       className="font-inter relative w-full border-b border-zinc-200/80 dark:border-zinc-800/80 bg-gradient-to-b from-white via-zinc-50/90 to-zinc-100/70 dark:from-[var(--bg-page)] dark:via-[var(--bg-page)] dark:to-[#070709]"
     >
-      {/* Trilha longa de Scrollytelling (640vh) com zona de retenção estendida no Card 3 */}
-      <div ref={trackRef} className="relative h-[640vh] w-full select-none">
+      <div ref={trackRef} className="relative h-[420vh] w-full select-none">
         <div className="sticky top-16 h-[calc(100vh-4rem)] min-h-[540px] w-full overflow-hidden flex flex-col justify-between">
           {/* Luz ambiente radial sutil */}
           <div
@@ -234,15 +242,8 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
           <div className="relative flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-center">
             {/* 1. BLOCO INICIAL À ESQUERDA (A Neurociência da Retenção — desaparece ao rolar enquanto o cérebro sobrepõe) */}
             <div
-              aria-hidden={heroOpacity < 0.05}
-              style={{
-                opacity: heroOpacity,
-                transform: `translate3d(0, ${heroTranslateY.toFixed(1)}px, 0) scale(${(
-                  1 -
-                  heroFadeOut * 0.035
-                ).toFixed(3)})`,
-                pointerEvents: heroOpacity > 0.35 ? 'auto' : 'none'
-              }}
+              ref={introRef}
+              style={{ transform: 'translate3d(0, 0, 0)' }}
               className="relative lg:absolute lg:left-6 lg:top-1/2 lg:-translate-y-1/2 z-10 w-full lg:w-[49%] pt-4 lg:pt-0 flex flex-col items-start text-left will-change-transform"
             >
               <div
@@ -287,19 +288,13 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
 
             {/* 2. PALCO 3D DO CÉREBRO (z-20: esvaecimento e escala suave na transição entre dobras) */}
             <div
-              style={
-                {
-                  opacity: brainEntranceOpacity,
-                  transform: isDesktop
-                    ? `translate3d(${desktopBrainX.toFixed(1)}px, 0, 0) scale(${brainEntranceScale.toFixed(3)})`
-                    : `scale(${brainEntranceScale.toFixed(3)})`
-                } as React.CSSProperties
-              }
-              className="relative z-20 w-full max-w-[600px] lg:w-[650px] lg:max-w-[650px] h-[46vh] sm:h-[52vh] lg:h-[74vh] flex items-center justify-center will-change-transform transition-opacity duration-300"
+              ref={brainStageRef}
+              style={{ transform: 'translate3d(var(--brain-x, 0px), 0, 0) scale(var(--brain-scale, 1))' }}
+              className="relative z-20 w-full max-w-[600px] lg:w-[650px] lg:max-w-[650px] h-[46vh] sm:h-[52vh] lg:h-[74vh] lg:[--brain-x:var(--brain-desktop-x,285px)] flex items-center justify-center will-change-transform transition-opacity duration-300"
             >
               {showScene && (
                 <HippocampusDissectionScene
-                  scrollProgress={scrollProgress}
+                  scrollProgressRef={scrollProgressRef}
                   isDark={isDark}
                   accentConfig={accentConfig}
                 />
@@ -308,14 +303,12 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
 
             {/* 3. COLUNA DIREITA DE CARDS DE STORYTELLING (surgem quando o cérebro chega à esquerda) */}
             <div
-              style={{
-                opacity: cardsPanelOpacity,
-                pointerEvents: cardsPanelOpacity > 0.35 ? 'auto' : 'none'
-              }}
+              ref={cardsPanelRef}
+              style={{ opacity: 0, pointerEvents: 'none' }}
               className="relative lg:absolute lg:right-6 lg:top-1/2 lg:-translate-y-1/2 z-30 w-full max-w-xl lg:w-[435px] xl:w-[465px] h-[36vh] sm:h-[34vh] lg:h-[420px] flex items-center justify-center"
             >
               {SCROLLY_CARDS.map((card, idx) => {
-                const isActive = idx === activeCardIdx && scrollProgress >= 0.15;
+                const isActive = idx === activeCardIdx;
                 const isPast = idx < activeCardIdx;
                 const Icon = card.icon;
 

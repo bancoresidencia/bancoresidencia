@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, type RefObject } from 'react';
 import * as THREE from 'three';
 import { AccentConfig } from '@/context/ThemeContext';
 import {
@@ -22,7 +22,7 @@ import { smootherstep } from '@/utils/smootherstep';
 import { loadLandingBrainModel } from '@/utils/loadLandingBrainModel';
 
 export interface HippocampusDissectionSceneProps {
-  scrollProgress: number;
+  scrollProgressRef: RefObject<number>;
   isDark: boolean;
   accentConfig: AccentConfig;
   onLoaded?: () => void;
@@ -34,9 +34,11 @@ interface ManagedMaterialEntry {
 }
 
 const layerConfigurations = Object.entries(LAYER_CONFIGS);
+const scrollFrameIntervalMs = 1000 / 30;
+const scrollActivityMs = 150;
 
 export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProps> = ({
-  scrollProgress,
+  scrollProgressRef,
   isDark,
   accentConfig,
   onLoaded
@@ -51,7 +53,6 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
   const hippoPillDotRef = useRef<HTMLSpanElement | null>(null);
   const pfcPillDotRef = useRef<HTMLSpanElement | null>(null);
 
-  const targetScrollRef = useRef<number>(scrollProgress);
   const isDarkRef = useRef<boolean>(isDark);
   const accentConfigRef = useRef(accentConfig);
   const highlightHexRef = useRef<string>(resolveHighlightHex(accentConfig, isDark));
@@ -60,10 +61,6 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
 
   const [modelReady, setModelReady] = useState(false);
   const [webglSupported, setWebglSupported] = useState(true);
-
-  useEffect(() => {
-    targetScrollRef.current = scrollProgress;
-  }, [scrollProgress]);
 
   useEffect(() => {
     isDarkRef.current = isDark;
@@ -212,7 +209,9 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
       typeof window !== 'undefined' &&
       window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
-    let smoothScroll = targetScrollRef.current;
+    let smoothScroll = scrollProgressRef.current;
+    let lastScrollTarget = smoothScroll;
+    let lastScrollChangeMs = -Infinity;
     const smoothPointer = { x: 0, y: 0 };
     const projectedVec = new THREE.Vector3();
     const worldAnchor = new THREE.Vector3();
@@ -225,6 +224,14 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
     const animate = () => {
       rafId = requestAnimationFrame(animate);
       const nowMs = performance.now();
+      const scrollTarget = scrollProgressRef.current;
+      if (scrollTarget !== lastScrollTarget) {
+        lastScrollTarget = scrollTarget;
+        lastScrollChangeMs = nowMs;
+      }
+      if (nowMs - lastScrollChangeMs < scrollActivityMs &&
+          nowMs - lastTimeMs < scrollFrameIntervalMs - 2) return;
+
       const elapsed = (nowMs - startTimeMs) * 0.001;
       const dt = Math.min((nowMs - lastTimeMs) * 0.001, 0.1);
       lastTimeMs = nowMs;
@@ -232,7 +239,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
       // Interpolação suave e estável independente da taxa de quadros (60Hz / 120Hz / throttled)
       const scrollDecay = 1.0 - Math.exp(-8.5 * dt);
       const pointerDecay = 1.0 - Math.exp(-3.2 * dt);
-      smoothScroll += (targetScrollRef.current - smoothScroll) * scrollDecay;
+      smoothScroll += (scrollTarget - smoothScroll) * scrollDecay;
       smoothPointer.x += (pointerTargetRef.current.x - smoothPointer.x) * pointerDecay;
       smoothPointer.y += (pointerTargetRef.current.y - smoothPointer.y) * pointerDecay;
 
@@ -455,7 +462,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [scrollProgressRef]);
 
   const effectiveHighlight = resolveHighlightHex(accentConfig, isDark);
 
