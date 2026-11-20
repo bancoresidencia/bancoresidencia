@@ -74,10 +74,6 @@ export default function RootLayout({
             __html: `
               (function() {
                 try {
-                  var path = window.location.pathname;
-                  if (path !== '/' && !path.includes('simulado-priapismo')) {
-                    document.documentElement.classList.add('hippo-splash-active');
-                  }
                   var m = localStorage.getItem('banco_theme_mode');
                   if (m === 'light') {
                     document.documentElement.classList.remove('dark');
@@ -151,10 +147,10 @@ export default function RootLayout({
             `
           }}
         />
+        <HippocampusGlobalSplash />
         <ThemeProvider>
           <AuthProvider>
-            <HippocampusGlobalSplash />
-            <div className="hippo-main-app-content flex-1 flex flex-col">
+            <div className="flex-1 flex flex-col">
               <SubscriptionProvider>
                 <ToastProvider>{children}</ToastProvider>
               </SubscriptionProvider>
