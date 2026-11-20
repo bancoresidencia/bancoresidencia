@@ -39,21 +39,6 @@ import { obstetriciaHierarchy } from './obstetriciaData';
 import { ginecologiaHierarchy } from './ginecologiaData';
 import { preventivaHierarchy } from './preventivaData';
 
-export const outrasHierarchy: SpecialtyHierarchy = {
-  especialidade: 'Outras / Em Curadoria',
-  temas: [
-    {
-      tema: 'Aguardando Classificação por Subespecialidade',
-      focos: [
-        {
-          foco: 'Geral / Não categorizada',
-          subfocos: ['Geral']
-        }
-      ]
-    }
-  ]
-};
-
 // Hierarquia completa padronizada com Especialidade, Tema, Foco e Subfoco
 export const clinicalHierarchy: SpecialtyHierarchy[] = [
   clinicaMedicaHierarchy,
@@ -61,8 +46,7 @@ export const clinicalHierarchy: SpecialtyHierarchy[] = [
   pediatriaHierarchy,
   obstetriciaHierarchy,
   ginecologiaHierarchy,
-  preventivaHierarchy,
-  outrasHierarchy
+  preventivaHierarchy
 ];
 
 // As questões são 100% carregadas dinamicamente da API do Supabase (132.965 questões).
@@ -81,8 +65,7 @@ export const mockSpecialties = [
   'Ginecologia',
   'Obstetrícia',
   'Ginecologia e Obstetrícia',
-  'Medicina Preventiva e Social',
-  'Outras / Em Curadoria'
+  'Medicina Preventiva e Social'
 ];
 export const mockYears = ['Todos', '2027', '2026', '2025', '2024', '2023', '2022', '2021', '2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '2009', '2008', '2007', '2006', '2005', '2004'];
 export const mockDifficulties = ['Todas', 'Fácil', 'Médio', 'Difícil', 'Desconhecido'];

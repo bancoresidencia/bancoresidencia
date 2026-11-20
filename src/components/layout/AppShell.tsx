@@ -240,18 +240,17 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
               <ThemeSelector compact={true} />
 
-              {/* Botão PRO: Sóbrio, Elegante e Compacto em telas estreitas */}
+              {/* Botão Ver Planos */}
               {isUserFree && !isAdmin ? (
                 <Link href="/checkout" prefetch={false}>
                   <Button
                     variant="primary"
                     size="sm"
-                    className="gap-1 sm:gap-1.5 px-2.5 sm:px-3 shadow-sm font-bold touch-manipulation"
-                    leftIcon={<Sparkles className="w-3.5 h-3.5 text-amber-300 fill-amber-300/30" />}
+                    className="px-2.5 sm:px-3 shadow-sm font-bold touch-manipulation"
                     title="Conhecer Planos e Desbloquear Acesso Completo"
                   >
                     <span className="tracking-tight whitespace-nowrap">
-                      <span className="hidden sm:inline">Seja </span>PRO
+                      Ver Planos
                     </span>
                   </Button>
                 </Link>

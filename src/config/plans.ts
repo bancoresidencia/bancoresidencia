@@ -14,6 +14,14 @@ export interface PlanDefinition {
   features: string[];
 }
 
+export const STANDARD_PLAN_BENEFITS = [
+  '+200k questões',
+  'Flashcards direcionados',
+  'Materiais de Estudo',
+  'Desempenho e Evolução',
+  'Caderno de Erros e Mais'
+];
+
 export const PLANS: Record<PlanId, PlanDefinition> = {
   monthly: {
     id: 'monthly',
@@ -25,13 +33,7 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
     maxInstallments: 1,
     installmentValue: 49.90,
     savingsPercentage: 0,
-    features: [
-      'Acesso completo a +200 mil questões comentadas',
-      'Filtros avançados (ENARE, USP, AMRIGS, PSU-MG e mais)',
-      'Métricas psicométricas TRI e cálculo de percentil',
-      'Provas oficiais na íntegra com cronômetro real',
-      'Garantia de 7 dias com reembolso incontestável'
-    ]
+    features: STANDARD_PLAN_BENEFITS
   },
   semiannual: {
     id: 'semiannual',
@@ -43,13 +45,7 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
     maxInstallments: 6,
     installmentValue: 29.90,
     savingsPercentage: 40,
-    features: [
-      '6 meses de acesso irrestrito',
-      'Economia de 40% em relação ao plano mensal',
-      'Cadernos e pastas de questões ilimitadas',
-      'Ranking comparativo nacional em tempo real',
-      'Garantia de 7 dias com reembolso incontestável'
-    ]
+    features: STANDARD_PLAN_BENEFITS
   },
   annual: {
     id: 'annual',
@@ -62,13 +58,7 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
     maxInstallments: 12,
     installmentValue: 25.90,
     savingsPercentage: 48,
-    features: [
-      '12 meses de acesso irrestrito (preparação completa)',
-      'Economia de quase 50% em relação ao mensal',
-      'Todas as provas de residência do ciclo 2026/2027',
-      'Mentoria e análises de desempenho por IA',
-      'Garantia de 7 dias com reembolso incontestável'
-    ]
+    features: STANDARD_PLAN_BENEFITS
   },
   biennial: {
     id: 'biennial',
@@ -81,13 +71,7 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
     maxInstallments: 24,
     installmentValue: 19.90,
     savingsPercentage: 60,
-    features: [
-      '24 meses de acesso irrestrito (R1 + R+ garantido)',
-      'Economia máxima de 60% (R$ 19,90/mês)',
-      'Atualização contínua de novas bancas e gabaritos',
-      'Prioridade de suporte e recursos antecipados',
-      'Garantia de 7 dias com reembolso incontestável'
-    ]
+    features: STANDARD_PLAN_BENEFITS
   }
 };
 

@@ -20,6 +20,7 @@ const eslintConfig = defineConfig([
     "scratch/**",
     "coletor_gabaritos/**",
     "scripts/**",
+    "src/data/homologatedFacetsBaseline.ts",
   ]),
   {
     rules: {

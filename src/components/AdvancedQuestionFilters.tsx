@@ -93,11 +93,12 @@ import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
 import { fetchStudyCatalog } from '@/services/studyQuestionClient';
 import type { StudyCatalogCounts } from '@/services/studyQuestionCatalog';
 import { clinicalFields, clinicalPathKey, hasSelectedClinicalPath, isClinicalPathPrefix } from '@/utils/studyQuestionFilters';
-import { resolveBancaList } from '@/services/questionService';
+import { resolveBancaList, hasRightCardActiveFilters } from '@/services/questionService';
 import {
   fetchFacetedHierarchyCounts,
   type FacetedHierarchyCountsResult
 } from '@/services/questionService';
+import { getHomologatedFacets, getHomologatedCatalog } from '@/data/homologatedFacetsBaseline';
 import { useTheme } from '@/context/ThemeContext';
 import { Button, Badge } from '@/components/ui';
 import { SmartAIFilterModal } from './SmartAIFilterModal';
@@ -359,13 +360,19 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
   const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
 
-  const [catalog, setCatalog] = useState<StudyCatalogCounts | null>(null);
-  const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
+  const modalityKey = JSON.stringify(filters.modalidades);
+  const baselineFacets = useMemo(() => getHomologatedFacets(filters.modalidades), [modalityKey]);
+  const baselineCatalog = useMemo(() => getHomologatedCatalog(filters.modalidades), [modalityKey]);
+
+  const [catalog, setCatalog] = useState<StudyCatalogCounts | null>(() => getHomologatedCatalog(filters.modalidades));
+  const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(() => getHomologatedFacets(filters.modalidades));
   const [catalogError, setCatalogError] = useState(false);
   const [facetsError, setFacetsError] = useState(false);
   const [catalogRetry, setCatalogRetry] = useState(0);
   const [facetsRetry, setFacetsRetry] = useState(0);
-  const modalityKey = JSON.stringify(filters.modalidades);
+
+  const hasRightCard = useMemo(() => hasRightCardActiveFilters(filters), [filters]);
+
   const facetKey = JSON.stringify({
     modalidades: filters.modalidades, instituicoes: filters.instituicoes,
     tipoProva: filters.tipoProva, anos: filters.anos, dificuldade: filters.dificuldade,
@@ -378,33 +385,38 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const answerRevision = filters.status !== 'Todas' || filters.ocultarRevisadas ? userAnswers : undefined;
 
   useEffect(() => {
+    if (!filters.instituicoes?.length && !filters.anos?.length) {
+      setCatalog(baselineCatalog);
+      return;
+    }
     const controller = new AbortController();
-    setCatalog(null);
-    setCatalogError(false);
     fetchStudyCatalog({ modalidades: JSON.parse(modalityKey) }, controller.signal)
       .then((result) => { if (!controller.signal.aborted) setCatalog(result); })
       .catch(() => { if (!controller.signal.aborted) setCatalogError(true); });
     return () => controller.abort();
-  }, [modalityKey, catalogRetry]);
+  }, [modalityKey, catalogRetry, baselineCatalog, filters.instituicoes?.length, filters.anos?.length]);
 
   useEffect(() => {
+    if (!hasRightCard) {
+      setFacetedCounts(baselineFacets);
+      setFacetsError(false);
+      return;
+    }
     const controller = new AbortController();
-    setFacetedCounts(null);
-    setFacetsError(false);
     const timer = setTimeout(() => {
       fetchFacetedHierarchyCounts(JSON.parse(facetKey), controller.signal)
         .then((result) => { if (!controller.signal.aborted) setFacetedCounts(result); })
         .catch(() => { if (!controller.signal.aborted) setFacetsError(true); });
-    }, 120);
+    }, 180);
     return () => {
       clearTimeout(timer);
       controller.abort();
     };
-  }, [facetKey, answerRevision, facetsRetry]);
+  }, [facetKey, answerRevision, facetsRetry, hasRightCard, baselineFacets]);
 
   const countForPath = (path: string[]): number | null => {
-    if (!facetedCounts) return null;
-    const count = (parts: string[]) => facetedCounts.paths[clinicalPathKey(parts)] ?? 0;
+    const counts = facetedCounts || baselineFacets;
+    const count = (parts: string[]) => counts.paths[clinicalPathKey(parts)] ?? 0;
     return path[0] === 'Ginecologia e Obstetrícia'
       ? count(path) + count(['Ginecologia', ...path.slice(1)]) + count(['Obstetrícia', ...path.slice(1)])
       : count(path);
@@ -792,7 +804,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       tags.push({
         id: 'mod-revalida',
         label: 'Revalida',
-        onRemove: () => onChange({ ...filters, modalidades: ['Residência Médica'], instituicoes: [] })
+        onRemove: () => onChange({ ...filters, modalidades: ['Acesso Direto'], instituicoes: [] })
       });
     }
 

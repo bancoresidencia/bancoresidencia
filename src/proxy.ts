@@ -150,6 +150,30 @@ export async function proxy(request: NextRequest) {
     }
   }
 
+  // 4. Proteção de páginas da plataforma médica (exige criação de conta / login)
+  const PROTECTED_PLATFORM_ROUTES = [
+    '/dashboard',
+    '/questoes',
+    '/caderno-de-erros',
+    '/flashcards',
+    '/resumos',
+    '/simulados',
+    '/provas',
+    '/desempenho',
+    '/ranking',
+    '/agenda',
+    '/listas',
+    '/configuracoes'
+  ];
+
+  if (!user && PROTECTED_PLATFORM_ROUTES.some((route) => pathname.startsWith(route))) {
+    const url = request.nextUrl.clone();
+    url.pathname = '/login';
+    url.searchParams.set('mode', 'register');
+    url.searchParams.set('next', pathname);
+    return NextResponse.redirect(url);
+  }
+
   return supabaseResponse;
 }
 
