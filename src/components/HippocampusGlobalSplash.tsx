@@ -1,21 +1,69 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+
 export function HippocampusGlobalSplash() {
+  const wordmarkRef = useRef<HTMLDivElement>(null);
+  const [isExiting, setIsExiting] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    const observer = new MutationObserver(exitWhenReady);
+
+    function exitWhenReady() {
+      const pending = document.querySelectorAll('[data-hippo-startup-pending]');
+      if (Array.from(pending).some((element) => element.getClientRects().length > 0)) {
+        return;
+      }
+
+      observer.disconnect();
+      setIsExiting(true);
+    }
+
+    const wordmarkAnimations = wordmarkRef.current?.getAnimations() ?? [];
+    void Promise.allSettled(wordmarkAnimations.map((animation) => animation.finished)).then(() => {
+      if (cancelled) return;
+
+      observer.observe(document.body, {
+        subtree: true,
+        childList: true,
+        attributes: true,
+        attributeFilter: ['data-hippo-startup-pending', 'hidden', 'style'],
+      });
+      exitWhenReady();
+    });
+
+    return () => {
+      cancelled = true;
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div
       className="hippo-opening-splash fixed inset-0 z-[99999] flex select-none items-center justify-center overflow-hidden bg-[#09090b] text-white"
+      data-exiting={isExiting}
       aria-hidden="true"
     >
+      <noscript><style>{'.hippo-opening-splash { display: none; }'}</style></noscript>
       <style>{`
         .hippo-opening-splash {
-          --hippo-opening-hold: 960ms;
           --hippo-opening-fade: 240ms;
-          animation:
-            hippo-opening-exit var(--hippo-opening-fade) ease-in-out var(--hippo-opening-hold) both,
-            hippo-opening-hide 0s linear calc(var(--hippo-opening-hold) + var(--hippo-opening-fade)) forwards;
+          transition:
+            opacity var(--hippo-opening-fade) ease-in-out,
+            visibility 0s linear var(--hippo-opening-fade);
+        }
+
+        .hippo-opening-splash[data-exiting='true'] {
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
         }
 
         .hippo-opening-brand {
           --hippo-opening-symbol-width: 64px;
-          --hippo-opening-slide: 450ms cubic-bezier(0.4, 0, 0.2, 1) 510ms both;
+          --hippo-opening-draw-duration: 1450ms;
+          --hippo-opening-slide: 450ms cubic-bezier(0.4, 0, 0.2, 1) var(--hippo-opening-draw-duration) both;
           animation: hippo-opening-center var(--hippo-opening-slide);
         }
 
@@ -25,12 +73,13 @@ export function HippocampusGlobalSplash() {
 
         .hippo-opening-stroke {
           stroke-dasharray: 1 1;
-          animation: hippo-opening-draw 760ms cubic-bezier(0.34, 0.18, 0.36, 1) both;
+          animation: hippo-opening-draw var(--hippo-opening-draw-duration) cubic-bezier(0.4, 0, 0.6, 1) both;
         }
 
         .hippo-opening-stroke-inner {
-          animation-duration: 710ms;
-          animation-delay: 50ms;
+          --hippo-opening-inner-delay: 100ms;
+          animation-duration: calc(var(--hippo-opening-draw-duration) - var(--hippo-opening-inner-delay));
+          animation-delay: var(--hippo-opening-inner-delay);
         }
 
         .hippo-opening-wordmark {
@@ -56,20 +105,11 @@ export function HippocampusGlobalSplash() {
           to { transform: translate3d(0, 0, 0); }
         }
 
-        @keyframes hippo-opening-exit {
-          from { opacity: 1; }
-          to { opacity: 0; }
-        }
-
-        @keyframes hippo-opening-hide {
-          from, to { visibility: hidden; }
-        }
-
         @media (prefers-reduced-motion: reduce) {
           .hippo-opening-brand,
           .hippo-opening-stroke,
           .hippo-opening-wordmark { animation: none; }
-          .hippo-opening-splash { animation-timing-function: step-end; }
+          .hippo-opening-splash { --hippo-opening-fade: 0ms; }
         }
       `}</style>
       <div className="hippo-opening-brand flex items-center">
@@ -94,7 +134,7 @@ export function HippocampusGlobalSplash() {
           />
         </svg>
         <div className="-ml-0.5 overflow-hidden py-1 pl-2.5 pr-2 sm:pl-3">
-          <div className="hippo-opening-wordmark flex flex-col">
+          <div ref={wordmarkRef} className="hippo-opening-wordmark flex flex-col">
             <span className="text-2xl leading-none font-black tracking-[-0.035em] sm:text-4xl">
               Hippocampus
             </span>

@@ -1,17 +1,25 @@
 'use client';
 
-import { Suspense, useCallback, useEffect, useState } from 'react';
+import { Suspense, useCallback, useEffect, useState, type SyntheticEvent } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { HippocampusStartupStatus } from '@/components/HippocampusStartupStatus';
 import { LandingPage } from '@/components/LandingPage';
 import { isPlanId, type PlanId } from '@/config/plans';
 import { useAuth } from '@/context/AuthContext';
 
-const AuthScreen = dynamic(
-  () => import('@/components/AuthScreen').then((module) => module.AuthScreen),
+const loadAuthScreen = () => import('@/components/AuthScreen').then((module) => module.AuthScreen);
+
+const AuthScreen = dynamic(loadAuthScreen,
   { loading: () => <HippocampusLoading fullScreen={false} size="md" /> }
 );
+
+function warmAuthScreen(event: SyntheticEvent) {
+  if (event.target instanceof Element && event.target.closest('[data-landing-auth]')) {
+    void loadAuthScreen().catch(() => {});
+  }
+}
 
 type AuthMode = 'login' | 'register';
 type AuthRequest = { mode: AuthMode; planTitle?: string };
@@ -102,7 +110,7 @@ function HomeNavigation({
 
 export default function RootHomePage() {
   const router = useRouter();
-  const { user, isAuthenticated } = useAuth();
+  const { user, isAuthenticated, isLoading } = useAuth();
   const [authModal, setAuthModal] = useState<AuthRequest | null>(null);
 
   const handleOpenAuth = useCallback((mode: AuthMode = 'login', planTitle?: string) => {
@@ -117,10 +125,16 @@ export default function RootHomePage() {
         <HomeNavigation onAuthRequest={setAuthModal} />
       </Suspense>
 
-      {!(isAuthenticated && user) && (
+      {isAuthenticated && user ? (
+        <HippocampusStartupStatus message="Preparando seu ambiente..." />
+      ) : (
         <div
           className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col font-inter"
+          data-hippo-startup-pending={isLoading || undefined}
           style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
+          onPointerOver={warmAuthScreen}
+          onPointerDownCapture={warmAuthScreen}
+          onFocusCapture={warmAuthScreen}
         >
           <LandingPage onOpenAuth={handleOpenAuth} onLoginDemo={handleDemoLogin} />
 

@@ -133,6 +133,7 @@ export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
     return (
       <div
         className={`flex flex-col items-center justify-center p-6 select-none ${className}`}
+        data-hippo-startup-pending
         role="status"
         aria-live="polite"
         aria-label={message || 'Carregando Hippocampus'}
@@ -157,6 +158,7 @@ export const HippocampusLoading: React.FC<HippocampusLoadingProps> = ({
         WebkitBackdropFilter: 'blur(18px) saturate(175%)',
         backdropFilter: 'blur(18px) saturate(175%)'
       }}
+      data-hippo-startup-pending
       role="status"
       aria-live="polite"
       aria-label={message || 'Carregando Hippocampus'}

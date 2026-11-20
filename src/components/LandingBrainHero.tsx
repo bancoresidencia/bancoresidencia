@@ -3,23 +3,17 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { useTheme } from '@/context/ThemeContext';
-import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { prepareLandingBrainDownload, type LandingBrainDownload } from '@/utils/landingBrainAssets';
 import { smootherstep } from '@/utils/smootherstep';
 import { getBrainJourneyFrame, LandingBrainJourneyCards } from '@/components/landing/LandingBrainJourneyCards';
 
 const HippocampusDissectionScene = dynamic(
   () => import('@/components/HippocampusDissectionScene'),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="w-full h-full flex items-center justify-center">
-        <HippocampusLoading fullScreen={false} size="md" />
-      </div>
-    )
-  }
+  { ssr: false }
 );
 
 const initialProgress = { scrollProgress: 0, entryProgress: 1 };
+const scrollSettledDelay = 180;
 
 export const LandingBrainHero: React.FC = () => {
   const { accent, mode, accentConfig } = useTheme();
@@ -29,25 +23,32 @@ export const LandingBrainHero: React.FC = () => {
   const introRef = useRef<HTMLDivElement | null>(null);
   const brainStageRef = useRef<HTMLDivElement | null>(null);
   const cardsPanelRef = useRef<HTMLDivElement | null>(null);
-  const sceneRequested = useRef(false);
-  const [showScene, setShowScene] = useState(false);
+
+  const [scenePhase, setScenePhase] = useState<'idle' | 'preparing' | 'mounting' | 'settled'>('idle');
+  const preparedModel = useRef<LandingBrainDownload | null>(null);
+  const getPreparedModel = useCallback(() => preparedModel.current, []);
+  const clearPreparedModel = useCallback(() => {
+    preparedModel.current?.abort();
+    preparedModel.current = null;
+  }, []);
+  const settleScene = useCallback(() => {
+    clearPreparedModel();
+    setScenePhase('settled');
+  }, [clearPreparedModel]);
+
   const scrollProgressRef = useRef(initialProgress.scrollProgress);
   const entryProgressRef = useRef(initialProgress.entryProgress);
   const [journeyFrame, setJourneyFrame] = useState(-1);
 
   const updateScroll = useCallback(() => {
     const el = trackRef.current;
-    if (!el) return;
+    if (!el) return false;
     const rect = el.getBoundingClientRect();
     const winH = window.innerHeight || 800;
-    if (!sceneRequested.current && rect.bottom > 0 &&
-      (rect.top < winH || (window.scrollY > 0 && rect.top < winH * 1.6))) {
-      sceneRequested.current = true;
-      setShowScene(true);
-    }
     const scrollable = Math.max(rect.height - winH, 1);
     const entry = Math.max(0, Math.min(1, 1 - Math.max(0, rect.top) / winH));
     const progress = Math.max(0, Math.min(1, -rect.top / scrollable));
+
     if (progress !== scrollProgressRef.current || entry !== entryProgressRef.current) {
       const frame = getBrainJourneyFrame(progress);
       if (frame !== getBrainJourneyFrame(scrollProgressRef.current)) {
@@ -86,26 +87,53 @@ export const LandingBrainHero: React.FC = () => {
         cardsPanel.style.pointerEvents = cardsOpacity > 0.35 ? 'auto' : 'none';
       }
     }
+    return rect.bottom > 0 && (rect.top < winH || (window.scrollY > 0 && rect.top < winH * 1.6));
   }, []);
 
   useEffect(() => {
     let rafId = 0;
+    let setupTimer = 0;
+    let sceneMounted = false;
+
     const onScroll = () => {
+      window.clearTimeout(setupTimer);
       if (rafId) return;
       rafId = requestAnimationFrame(() => {
         rafId = 0;
-        updateScroll();
+        const approaching = updateScroll();
+        if (sceneMounted || document.hidden) return;
+        if (!approaching) {
+          if (preparedModel.current) {
+            clearPreparedModel();
+            setScenePhase('idle');
+          }
+          return;
+        }
+
+        if (!preparedModel.current) {
+          preparedModel.current = prepareLandingBrainDownload();
+          setScenePhase('preparing');
+        }
+
+        setupTimer = window.setTimeout(() => {
+          sceneMounted = true;
+          setScenePhase('mounting');
+        }, scrollSettledDelay);
       });
     };
-    updateScroll();
+    onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
+    document.addEventListener('visibilitychange', onScroll);
     return () => {
       cancelAnimationFrame(rafId);
+      window.clearTimeout(setupTimer);
+      clearPreparedModel();
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
+      document.removeEventListener('visibilitychange', onScroll);
     };
-  }, [updateScroll]);
+  }, [clearPreparedModel, updateScroll]);
 
   const headlineGradient = isMonochrome
     ? isDark
@@ -155,11 +183,19 @@ export const LandingBrainHero: React.FC = () => {
               style={{ transform: 'translate3d(var(--brain-x, 0px), 0, 0) scale(var(--brain-scale, 1))' }}
               className="absolute top-[var(--brain-mobile-top,33%)] z-20 flex h-[43%] w-full max-w-[600px] items-center justify-center transition-opacity duration-300 motion-reduce:transition-none lg:relative lg:top-auto lg:h-[74svh] lg:w-[650px] lg:max-w-[650px] lg:[--brain-x:var(--brain-desktop-x,285px)]"
             >
-              {showScene && (
+              {(scenePhase === 'preparing' || scenePhase === 'mounting') && (
+                <span role="status" className="absolute text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                  Carregando modelo 3D...
+                </span>
+              )}
+              {(scenePhase === 'mounting' || scenePhase === 'settled') && (
                 <HippocampusDissectionScene
                   scrollProgressRef={scrollProgressRef}
                   isDark={isDark}
                   accentConfig={accentConfig}
+                  getPreparedModel={getPreparedModel}
+                  onLoaded={settleScene}
+                  onUnavailable={settleScene}
                 />
               )}
             </div>

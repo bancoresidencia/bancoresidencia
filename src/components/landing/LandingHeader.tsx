@@ -70,6 +70,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
 
           <button
             type="button"
+            data-landing-auth
             onClick={() => onOpenAuth('login')}
             className="hidden sm:inline-flex items-center justify-center h-9 px-3.5 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-700 dark:text-zinc-200 hover:text-zinc-950 dark:hover:text-white bg-zinc-100/90 dark:bg-zinc-800/80 hover:bg-zinc-200/80 dark:hover:bg-zinc-700/80 border border-zinc-200/70 dark:border-zinc-700/60 transition-all cursor-pointer"
           >
@@ -78,6 +79,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
 
           <button
             type="button"
+            data-landing-auth
             onClick={() => onOpenAuth('register')}
             className="inline-flex items-center justify-center h-9 px-3.5 sm:px-4 rounded-xl text-xs sm:text-[13px] font-bold transition-all shadow-xs hover:opacity-95 active:scale-[0.98] cursor-pointer"
             style={{
@@ -125,6 +127,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
               <button
                 type="button"
                 tabIndex={mobileMenuOpen ? 0 : -1}
+                data-landing-auth
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenAuth('login');
@@ -136,6 +139,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
               <button
                 type="button"
                 tabIndex={mobileMenuOpen ? 0 : -1}
+                data-landing-auth
                 onClick={() => {
                   setMobileMenuOpen(false);
                   onOpenAuth('register');

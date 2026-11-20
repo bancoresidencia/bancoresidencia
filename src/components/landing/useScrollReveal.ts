@@ -1,13 +1,16 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
+
+export const LandingSectionVisibleContext = createContext(true);
 
 export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(threshold = 0.14) {
   const ref = useRef<T | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const isNear = useContext(LandingSectionVisibleContext);
 
   useEffect(() => {
-    if (isVisible) return;
+    if (!isNear || isVisible) return;
     const el = ref.current;
     if (!el) return;
     if (typeof IntersectionObserver === 'undefined' ||
@@ -30,7 +33,7 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(threshol
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [isVisible, threshold]);
+  }, [isNear, isVisible, threshold]);
 
   return { ref, isVisible };
 }
@@ -38,8 +41,10 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(threshol
 export function useAnimatedCounter(target: number, isActive: boolean, durationMs = 1300): number {
   const [value, setValue] = useState<number>(0);
   const hasAnimatedRef = useRef(false);
+  const isNear = useContext(LandingSectionVisibleContext);
 
   useEffect(() => {
+    if (!isNear) return;
     const reducedMotion =
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -69,7 +74,7 @@ export function useAnimatedCounter(target: number, isActive: boolean, durationMs
 
     rafId = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(rafId);
-  }, [target, isActive, durationMs]);
+  }, [target, isActive, durationMs, isNear]);
 
   return value;
 }

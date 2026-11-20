@@ -80,41 +80,8 @@ export function OdometerReel({
     // Reseta estado para garantir novo ciclo de animação a cada spinKey
     setSpinning(false);
 
-    let timer: NodeJS.Timeout;
-    let observer: MutationObserver | null = null;
-
-    const startSpin = () => {
-      timer = setTimeout(() => {
-        setSpinning(true);
-      }, 150);
-    };
-
-    if (typeof document !== 'undefined') {
-      const isSplashActive = document.documentElement.classList.contains('hippo-splash-active');
-
-      if (isSplashActive) {
-        // Se a splash screen estiver cobrindo a tela, aguarda sua remoção
-        observer = new MutationObserver(() => {
-          if (!document.documentElement.classList.contains('hippo-splash-active')) {
-            observer?.disconnect();
-            // Dá um intervalo de 250ms após a splash sumir para o aluno ver a animação acontecer
-            timer = setTimeout(() => {
-              setSpinning(true);
-            }, 250);
-          }
-        });
-        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-      } else {
-        startSpin();
-      }
-    } else {
-      startSpin();
-    }
-
-    return () => {
-      clearTimeout(timer);
-      observer?.disconnect();
-    };
+    const timer = setTimeout(() => setSpinning(true), 150);
+    return () => clearTimeout(timer);
   }, [spinKey]);
 
   const handleReSpin = () => {

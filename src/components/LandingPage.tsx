@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useCallback } from 'react';
+import React, { memo, useState, useCallback } from 'react';
 import {
   LandingDemoQuestionsSection,
   ExternalDemoSelection
@@ -14,6 +14,7 @@ import { LandingEcosystemShowcase } from '@/components/landing/LandingEcosystemS
 import { LandingFlashcardsAndThemesSection } from '@/components/landing/LandingFlashcardsAndThemesSection';
 import { LandingPricingSection } from '@/components/landing/LandingPricingSection';
 import { LandingFaqAndFooter } from '@/components/landing/LandingFaqAndFooter';
+import { LandingSections } from '@/components/landing/LandingSections';
 import { DemoTabKey } from '@/components/landing/landingData';
 
 interface LandingPageProps {
@@ -21,7 +22,7 @@ interface LandingPageProps {
   onLoginDemo?: () => void;
 }
 
-export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDemo }) => {
+export const LandingPage = memo(function LandingPage({ onOpenAuth, onLoginDemo }: LandingPageProps) {
   const [openFaqId, setOpenFaqId] = useState<string | null>('faq-1');
   const [demoSelection, setDemoSelection] = useState<ExternalDemoSelection | null>(null);
 
@@ -85,38 +86,40 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           <LandingBrainHero />
         </div>
 
-        <LandingMetricsAndAuthorityStrip />
+        <LandingSections>
+          <LandingMetricsAndAuthorityStrip />
 
-        <div id="questoes" tabIndex={-1} className="scroll-mt-20">
-          <LandingDemoQuestionsSection
-            key={demoSelection ? `${demoSelection.tab}-${demoSelection.nonce}` : 'default'}
-            onLoginDemo={onLoginDemo}
-            onOpenAuth={onOpenAuth}
-            initialTab={demoSelection?.tab}
-            initialQuestionIndex={demoSelection?.questionIndex}
-            bancaLabel={demoSelection?.bancaLabel}
+          <div id="questoes" tabIndex={-1} className="scroll-mt-20">
+            <LandingDemoQuestionsSection
+              key={demoSelection ? `${demoSelection.tab}-${demoSelection.nonce}` : 'default'}
+              onLoginDemo={onLoginDemo}
+              onOpenAuth={onOpenAuth}
+              initialTab={demoSelection?.tab}
+              initialQuestionIndex={demoSelection?.questionIndex}
+              bancaLabel={demoSelection?.bancaLabel}
+            />
+          </div>
+
+          <LandingEcosystemShowcase onOpenAuth={onOpenAuth} />
+
+          <LandingFlashcardsAndThemesSection />
+
+          <LandingInstitutionsStrip
+            onSelectBanca={(banca) =>
+              handleSelectBancaDemo(banca.targetTab, banca.targetQuestionIdx, banca.shortLabel)
+            }
           />
-        </div>
 
-        <LandingEcosystemShowcase onOpenAuth={onOpenAuth} />
+          <LandingPricingSection onSelectPlan={handleStartPlanCheckout} />
 
-        <LandingFlashcardsAndThemesSection />
-
-        <LandingInstitutionsStrip
-          onSelectBanca={(banca) =>
-            handleSelectBancaDemo(banca.targetTab, banca.targetQuestionIdx, banca.shortLabel)
-          }
-        />
-
-        <LandingPricingSection onSelectPlan={handleStartPlanCheckout} />
-
-        <LandingFaqAndFooter
-          openFaqId={openFaqId}
-          onToggleFaq={handleToggleFaq}
-          onOpenAuth={onOpenAuth}
-          onScrollToSection={scrollToSection}
-        />
+          <LandingFaqAndFooter
+            openFaqId={openFaqId}
+            onToggleFaq={handleToggleFaq}
+            onOpenAuth={onOpenAuth}
+            onScrollToSection={scrollToSection}
+          />
+        </LandingSections>
       </main>
     </div>
   );
-};
+});

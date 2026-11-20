@@ -50,7 +50,7 @@ const PILLARS: PillarItem[] = [
   },
   {
     id: 'flashcards',
-    headline: 'FLASHCARDS FSRS',
+    headline: 'FLASHCARDS',
     subtitle: 'Flashcards que estarão na sua prova.',
     cardText: 'Flashcards que estarão na sua prova',
     icon: Layers,
@@ -608,6 +608,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
           <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto">
             <button
               type="button"
+              data-landing-auth
               onClick={() => onOpenAuth('register')}
               style={primaryBtnStyle}
               className="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-sm sm:text-base font-bold transition-all duration-300 ease-out hover:-translate-y-0.5 hover:brightness-110 active:scale-[0.98] cursor-pointer shadow-lg"

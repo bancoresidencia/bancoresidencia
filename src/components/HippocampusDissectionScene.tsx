@@ -20,12 +20,15 @@ import {
 } from '@/utils/brainDissectionMath';
 import { smootherstep } from '@/utils/smootherstep';
 import { loadLandingBrainModel } from '@/utils/loadLandingBrainModel';
+import type { LandingBrainDownload } from '@/utils/landingBrainAssets';
 
 export interface HippocampusDissectionSceneProps {
   scrollProgressRef: RefObject<number>;
   isDark: boolean;
   accentConfig: AccentConfig;
+  getPreparedModel: () => LandingBrainDownload | null;
   onLoaded?: () => void;
+  onUnavailable?: () => void;
 }
 
 interface ManagedMaterialEntry {
@@ -41,7 +44,9 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
   scrollProgressRef,
   isDark,
   accentConfig,
-  onLoaded
+  getPreparedModel,
+  onLoaded,
+  onUnavailable
 }) => {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const backdropShadowRef = useRef<HTMLDivElement | null>(null);
@@ -83,7 +88,10 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
         powerPreference: 'high-performance'
       });
     } catch {
-      queueMicrotask(() => setWebglSupported(false));
+      queueMicrotask(() => {
+        setWebglSupported(false);
+        onUnavailable?.();
+      });
       return;
     }
 
@@ -148,7 +156,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
 
     const controller = new AbortController();
     let readyToRender = false;
-    loadLandingBrainModel(controller.signal)
+    loadLandingBrainModel(controller.signal, getPreparedModel())
       .then((gltf) => {
         const defaultMaterials = new Set<THREE.Material>();
         gltf.scene.traverse((object) => {
@@ -202,7 +210,10 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
         onLoaded?.();
       })
       .catch(() => {
-        if (!controller.signal.aborted) setWebglSupported(false);
+        if (!controller.signal.aborted) {
+          setWebglSupported(false);
+          onUnavailable?.();
+        }
       });
 
     const prefersReducedMotion =
@@ -462,7 +473,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [scrollProgressRef]);
+  }, [getPreparedModel, onLoaded, onUnavailable, scrollProgressRef]);
 
   const effectiveHighlight = resolveHighlightHex(accentConfig, isDark);
 

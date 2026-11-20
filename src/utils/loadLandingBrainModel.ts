@@ -1,20 +1,25 @@
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import {
+  compressedLandingBrain,
+  fetchLandingBrainAsset,
+  originalLandingBrain,
+  type LandingBrainDownload
+} from '@/utils/landingBrainAssets';
 
-const compressedModel = '/models/cerebrum-papez-v7-meshopt.glb';
-const originalModel = '/models/cerebrum-papez-v7.glb?v=72';
+export async function loadLandingBrainModel(signal: AbortSignal, prepared: LandingBrainDownload | null) {
+  const readModel = async (url: string) => {
+    signal.throwIfAborted();
+    if (prepared?.url !== url) prepared?.abort();
+    const data = await (prepared?.url === url ? prepared.data : fetchLandingBrainAsset(url, signal));
+    signal.throwIfAborted();
+    return data;
+  };
 
-async function readModel(url: string, signal: AbortSignal) {
-  const response = await fetch(url, { signal });
-  if (!response.ok) throw new Error('Não foi possível carregar o modelo anatômico.');
-  return response.arrayBuffer();
-}
-
-export async function loadLandingBrainModel(signal: AbortSignal) {
   try {
     const { MeshoptDecoder } = await import('three/addons/libs/meshopt_decoder.module.js');
     if (MeshoptDecoder.supported) {
       await MeshoptDecoder.ready;
-      const data = await readModel(compressedModel, signal);
+      const data = await readModel(compressedLandingBrain);
       return await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).parseAsync(data, '');
     }
   } catch (error) {
@@ -22,6 +27,6 @@ export async function loadLandingBrainModel(signal: AbortSignal) {
     // Usa o mesmo modelo sem compactação se o navegador não puder usar o decodificador.
   }
 
-  const data = await readModel(originalModel, signal);
+  const data = await readModel(originalLandingBrain);
   return new GLTFLoader().parseAsync(data, '');
 }

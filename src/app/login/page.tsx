@@ -4,7 +4,9 @@ import React, { Suspense, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { AuthScreen } from '@/components/AuthScreen';
 import { useAuth } from '@/context/AuthContext';
-import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { HippocampusStartupStatus } from '@/components/HippocampusStartupStatus';
+
+const checkingAccess = <HippocampusStartupStatus message="Verificando acesso..." />;
 
 function LoginContent() {
   const router = useRouter();
@@ -21,11 +23,7 @@ function LoginContent() {
   }, [isLoading, isAuthenticated, user, nextRoute, router]);
 
   if (isLoading) {
-    return (
-      <div className="min-h-dvh flex items-center justify-center bg-[#09090b]">
-        <HippocampusLoading size="md" message="Verificando acesso..." fullScreen={false} />
-      </div>
-    );
+    return checkingAccess;
   }
 
   return (
@@ -49,13 +47,7 @@ function LoginContent() {
 
 export default function LoginPage() {
   return (
-    <Suspense
-      fallback={
-        <div className="min-h-dvh flex items-center justify-center bg-[#09090b]">
-          <HippocampusLoading size="md" message="Verificando acesso..." fullScreen={false} />
-        </div>
-      }
-    >
+    <Suspense fallback={checkingAccess}>
       <LoginContent />
     </Suspense>
   );
