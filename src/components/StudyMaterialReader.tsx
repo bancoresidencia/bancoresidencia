@@ -2030,7 +2030,6 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 
   return (
     <div className="space-y-6 w-full max-w-7xl mx-auto">
-      <StudyInkLayer content={`material:${material.id}`} />
       {/* Barra Superior de Ações */}
       <div className="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-4">
         <Button
@@ -2239,8 +2238,9 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         onTouchEnd={() => {
           window.setTimeout(() => handleArticleMouseUp(), 60);
         }}
-        className={`p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none relative ${selectionColorClass}`}
+        className={`p-4 sm:p-8 rounded-2xl sm:rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none relative isolate overflow-hidden ${selectionColorClass}`}
       >
+        <StudyInkLayer content={`material:${material.id}`} />
         {renderMarkdownContent(material.markdownContent)}
       </article>
 

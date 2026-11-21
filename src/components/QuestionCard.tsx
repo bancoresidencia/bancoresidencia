@@ -1352,7 +1352,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     <article
       onMouseUp={handleTextSelectionMouseUp}
       onTouchEnd={handleTextSelectionTouchEnd}
-      className={`bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm space-y-5 sm:space-y-6 relative transition-all ${selectionColorClass}`}
+      className={`bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm space-y-5 sm:space-y-6 relative isolate overflow-hidden transition-all ${selectionColorClass}`}
     >
       <StudyInkLayer
         content={`${inkContext}:${question.id}`}

@@ -614,7 +614,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             setIsFlipped((prev) => !prev);
           }
         }}
-        className="w-full min-h-[300px] sm:min-h-[400px] p-5 sm:p-8 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs cursor-pointer flex flex-col justify-between transition-all duration-200 select-none touch-manipulation group relative overflow-hidden"
+        className="w-full min-h-[300px] sm:min-h-[400px] p-5 sm:p-8 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs cursor-pointer flex flex-col justify-between transition-all duration-200 select-none touch-manipulation group relative isolate overflow-hidden"
       >
         <StudyInkLayer content={`flashcard:${currentCard.id}`} flip={() => setIsFlipped(value => !value)} />
         {/* Topo do Card */}

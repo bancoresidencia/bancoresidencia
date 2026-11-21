@@ -72,7 +72,7 @@ function Exam({ exam, institution, year, owner }: { exam: string; institution: s
   function answer(value: string) {
     if (attempt && question && !attempt.closed && Date.now() < attempt.deadline) update({ ...attempt, answers: { ...attempt.answers, [question.id]: value } })
   }
-  return <section className="mx-auto max-w-4xl space-y-5 rounded-2xl border p-5">
+  return <section className="mx-auto max-w-4xl space-y-5 rounded-2xl border p-5 relative isolate overflow-hidden">
     <StudyInkLayer content={`exam:${attempt.id}:${question.id}`} choose={attempt.closed ? undefined : letter => { if (question.options.some(o => o.letter === letter)) answer(letter) }} />
     <header className="flex flex-wrap justify-between gap-2"><strong>{attempt.closed ? 'Revisão da tentativa' : 'Simulado'} · Questão {attempt.index+1} de {attempt.questions.length}</strong><span>{attempt.closed ? 'Encerrado' : remaining + ' min restantes'}</span></header>
     <p data-ink-block="statement" className="whitespace-pre-line">{renderFormattedMedicalText(question.statement)}</p>

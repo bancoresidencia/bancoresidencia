@@ -212,6 +212,7 @@ function Editor({
   const [autoGestureEnabled, setAutoGestureEnabled] = useState(true)
   const [straightMarker, setStraightMarker] = useState(true)
   const [eraserCursor, setEraserCursor] = useState<{ x: number; y: number } | null>(null)
+  const [gestureFeedback, setGestureFeedback] = useState<string>('')
   const lastToolTapRef = useRef<{ tool: Tool; time: number }>({ tool: 'read', time: 0 })
 
   const touchState = useRef<{
@@ -742,11 +743,11 @@ function Editor({
   return (
     <>
       {/* 
-        1. CAMADA DE FUNDO: MARCA-TEXTO ATRÁS DAS FONTES (z-0)
+        1. CAMADA DE FUNDO: MARCA-TEXTO ATRÁS DAS FONTES (z-[1])
         Fica fisicamente atrás do enunciado e alternativas (relative z-[2]),
         preservando a legibilidade perfeita das fontes sem manchá-las.
       */}
-      <div className="absolute inset-0 pointer-events-none overflow-visible w-full h-full z-0">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-[inherit] w-full h-full z-[1]">
         <svg
           aria-hidden="true"
           className="w-full h-full overflow-visible"
@@ -767,10 +768,10 @@ function Editor({
       </div>
 
       {/* 
-        2. CAMADA FRONTAL DE ESCRITA E INTERAÇÃO (z-30)
+        2. CAMADA FRONTAL DE ESCRITA E INTERAÇÃO (z-[3])
         Caneta, laço, retas, borracha, post-its e captura de ponteiro S Pen.
       */}
-      <div ref={anchor} className="absolute inset-0 pointer-events-none overflow-visible w-full h-full z-30">
+      <div ref={anchor} className="absolute inset-0 pointer-events-none overflow-hidden rounded-[inherit] w-full h-full z-[3]">
         <svg
           ref={svgRef}
           aria-hidden="true"
@@ -889,7 +890,7 @@ function Editor({
             <div
               key={p.id}
               style={{ left: `${p.x}px`, top: `${p.y}px` }}
-              className="absolute pointer-events-auto z-40 select-text animate-in fade-in zoom-in-95"
+              className="absolute pointer-events-auto z-[4] select-text animate-in fade-in zoom-in-95"
             >
               {p.minimized ? (
                 <button
