@@ -8,11 +8,10 @@ with open('.env.local', 'r', encoding='utf-8') as f:
             k, v = line.split('=', 1)
             env[k.strip()] = v.strip().strip("'\"")
 
-headers = {
-    'apikey': env['SUPABASE_SERVICE_ROLE_KEY'],
-    'Authorization': f"Bearer {env['SUPABASE_SERVICE_ROLE_KEY']}",
-    'Prefer': 'count=exact'
-}
+service_key = env.get('SUPABASE_SECRET_KEY') or env['SUPABASE_SERVICE_ROLE_KEY']
+headers = {'apikey': service_key, 'Prefer': 'count=exact'}
+if not service_key.startswith('sb_secret_'):
+    headers['Authorization'] = f'Bearer {service_key}'
 
 r1 = requests.get(f"{env['NEXT_PUBLIC_SUPABASE_URL']}/rest/v1/questions?select=id&limit=1", headers=headers)
 tot = int(r1.headers.get('content-range', '0-0/0').split('/')[1])

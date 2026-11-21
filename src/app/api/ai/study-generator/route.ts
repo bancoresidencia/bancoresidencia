@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
   try {
     // Blindagem Crítica: A geração de resumos permanentes via Vertex AI Pro é estritamente restrita a Administradores/Curadores ANTES de disparar a LLM!
     const adminKey = req.headers.get('x-admin-key');
-    const validAdminKey = process.env.ADMIN_API_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
+    const validAdminKey = process.env.ADMIN_API_KEY;
     const isAdminBypass = Boolean(adminKey && validAdminKey && timingSafeEqualStrings(adminKey, validAdminKey));
 
     let actorId = 'm2m_admin';

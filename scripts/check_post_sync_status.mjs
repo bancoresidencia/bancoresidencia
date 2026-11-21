@@ -8,12 +8,15 @@ if (fs.existsSync('.env.local')) {
   });
 }
 
+const serviceKey = env.SUPABASE_SECRET_KEY || env.SUPABASE_SERVICE_ROLE_KEY;
 const headers = {
-  'apikey': env.SUPABASE_SERVICE_ROLE_KEY,
-  'Authorization': 'Bearer ' + env.SUPABASE_SERVICE_ROLE_KEY,
+  'apikey': serviceKey,
   'Prefer': 'count=exact',
   'Range': '0-0'
 };
+if (serviceKey && !serviceKey.startsWith('sb_secret_')) {
+  headers.Authorization = 'Bearer ' + serviceKey;
+}
 
 async function c(name, q) {
   const url = `${env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/questions?${q ? q + '&' : ''}select=id&limit=1`;

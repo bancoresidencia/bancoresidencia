@@ -1,31 +1,36 @@
 import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 
 /**
- * Verifica se o ambiente possui SUPABASE_SERVICE_ROLE_KEY configurada.
+ * Verifica se o servidor tem uma credencial privilegiada configurada.
  */
 export function isSupabaseAdminConfigured(): boolean {
-  return Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
+  return Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && getSupabaseSecretKey());
+}
+
+function getSupabaseSecretKey(): string | undefined {
+  return process.env.SUPABASE_SECRET_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
 }
 
 /**
  * Cliente Supabase privilegiado (Service Role) exclusivo para rotas do servidor.
- * NUNCA faz fallback silencioso para NEXT_PUBLIC_SUPABASE_ANON_KEY em produção,
+ * NUNCA faz fallback para a chave publicável em produção,
  * garantindo falha explícita (fail-closed) caso a credencial administrativa esteja ausente.
  */
 export function getSupabaseAdmin() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const serviceKey = getSupabaseSecretKey();
 
   if (!supabaseUrl || !serviceKey) {
-    if (process.env.NODE_ENV !== 'production' && supabaseUrl && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-      return createSupabaseClient(supabaseUrl, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY, {
+    const publishableKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (process.env.NODE_ENV !== 'production' && supabaseUrl && publishableKey) {
+      return createSupabaseClient(supabaseUrl, publishableKey, {
         auth: {
           persistSession: false,
           autoRefreshToken: false
         }
       });
     }
-    throw new Error('SUPABASE_SERVICE_ROLE_KEY ou NEXT_PUBLIC_SUPABASE_URL não configurados no servidor.');
+    throw new Error('SUPABASE_SECRET_KEY ou NEXT_PUBLIC_SUPABASE_URL não configurados no servidor.');
   }
 
   return createSupabaseClient(supabaseUrl, serviceKey, {

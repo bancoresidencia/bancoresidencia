@@ -40,6 +40,7 @@ jobs:
       - name: 🏗️ Validação de Compilação do Next.js (Build Check)
         env:
           NEXT_PUBLIC_SUPABASE_URL: 'https://ezluharxlmlqhdkqrjbz.supabase.co'
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.dummy_anon_key_for_ci_build'
-          SUPABASE_SERVICE_ROLE_KEY: 'dummy_service_role_key_for_ci_build_only'
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: 'sb_publishable_ci_build_placeholder'
+          SUPABASE_SECRET_KEY: 'sb_secret_ci_build_placeholder'
+          GUEST_QUOTA_SECRET: 'ci-build-only-not-a-real-secret'
         run: npm run build

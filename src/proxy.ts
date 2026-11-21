@@ -72,10 +72,10 @@ export async function proxy(request: NextRequest) {
   // 2. Proteção de rotas de API Administrativa (/api/admin/*)
   if (pathname.startsWith('/api/admin')) {
     const authHeader = request.headers.get('authorization');
-    const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+    const adminToken = process.env.ADMIN_M2M_TOKEN;
     if (authHeader) {
       const token = authHeader.replace(/^Bearer\s+/i, '').trim();
-      if (serviceRoleKey && timingSafeEqualStrings(token, serviceRoleKey)) {
+      if (adminToken && timingSafeEqualStrings(token, adminToken)) {
         return supabaseResponse;
       }
       // Se um Bearer JWT explícito (3 segmentos) foi fornecido sem cookies, delega validação criptográfica ao verifyAdminSession na rota

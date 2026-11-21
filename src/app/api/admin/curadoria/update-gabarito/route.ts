@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
-import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { getSupabaseAdmin, isSupabaseAdminConfigured } from '@/lib/supabase/adminClient';
 import { recordAuditEvent } from '@/lib/audit';
 import {
   findCanonicalQuestionByIdOrCode,
@@ -110,12 +110,12 @@ export async function POST(req: NextRequest) {
     }
 
     if (!data || data.length === 0) {
-      const hasServiceKey = Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY);
+      const hasServiceKey = isSupabaseAdminConfigured();
       if (!hasServiceKey) {
         return NextResponse.json(
           {
             success: false,
-            error: 'Permissão negada (RLS do Supabase): A variável SUPABASE_SERVICE_ROLE_KEY não está configurada no painel da Vercel (Settings -> Environment Variables). Adicione-a para permitir a curadoria salvar gabaritos diretamente no banco.'
+            error: 'Permissão negada (RLS do Supabase): configure SUPABASE_SECRET_KEY no servidor para salvar gabaritos diretamente no banco.'
           },
           { status: 403 }
         );

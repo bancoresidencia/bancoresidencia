@@ -42,7 +42,7 @@ let cachedPublicSupabaseClient: ReturnType<typeof createPublicSupabaseClient> | 
 function getQuestionsReadClient(isPrivileged: boolean, supabaseAdmin: ReturnType<typeof getSupabaseAdmin>) {
   if (isPrivileged) return supabaseAdmin;
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   if (!url || !anonKey) return supabaseAdmin;
   if (!cachedPublicSupabaseClient) {
     cachedPublicSupabaseClient = createPublicSupabaseClient(url, anonKey, {
@@ -112,7 +112,7 @@ async function queryStudyQuestions(req: NextRequest, body: StudyQuestionRequest)
   const authHeader = req.headers.get('authorization');
   const token = authHeader?.startsWith('Bearer ') ? authHeader.slice(7).trim() : undefined;
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const publicKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const publicKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
   const publicCount = mode === 'catalog' || (mode === 'facets' && !filters.ocultarRevisadas
     && (!filters.status || filters.status === 'Todas'));
   const supabase = publicCount && url && publicKey

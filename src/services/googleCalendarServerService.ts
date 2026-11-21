@@ -22,12 +22,7 @@ function getLegacyEncryptionKey(): Buffer {
 }
 
 function getOAuthStateSecret(): Buffer {
-  const raw =
-    process.env.CALENDAR_ENCRYPTION_KEY ||
-    process.env.GOOGLE_CLIENT_SECRET ||
-    process.env.SUPABASE_SERVICE_ROLE_KEY ||
-    'bancoresidencia_dev_oauth_state_secret';
-  return deriveDomainSecret(raw, 'google-calendar-oauth-state-v1');
+  return deriveDomainSecret(getRawCalendarMasterSecret(), 'google-calendar-oauth-state-v1');
 }
 
 export function signCalendarOAuthState(userId: string, stateNonce: string): string {

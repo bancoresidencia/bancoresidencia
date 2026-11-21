@@ -25,7 +25,7 @@ export interface VerifyAdminOptions {
  * para rotas do servidor (Next.js Route Handlers).
  *
  * Regras:
- * 1. Suporta M2M seguro via Authorization: Bearer <SUPABASE_SERVICE_ROLE_KEY>.
+ * 1. Suporta M2M seguro via Authorization: Bearer <ADMIN_M2M_TOKEN>.
  * 2. Suporta token JWT Bearer do usuário autenticado via Authorization: Bearer <access_token>.
  * 3. Valida cookies de sessão assinados via Supabase Auth (SSR).
  * 4. Valida se o usuário possui role privilegiada em app_metadata ou na tabela profiles.
@@ -47,10 +47,10 @@ export async function verifyAdminSession(
       const authHeader = req.headers.get('authorization');
       if (authHeader) {
         const token = authHeader.replace(/^Bearer\s+/i, '').trim();
-        const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+        const adminToken = process.env.ADMIN_M2M_TOKEN;
 
-        // 1.1 Machine-to-Machine com Service Role Key (comparação em tempo constante)
-        if (serviceRoleKey && timingSafeEqualStrings(token, serviceRoleKey)) {
+        // 1.1 Machine-to-Machine com token dedicado (comparação em tempo constante)
+        if (adminToken && timingSafeEqualStrings(token, adminToken)) {
           return {
             authorized: true,
             role: 'service_role',

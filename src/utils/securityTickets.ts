@@ -22,10 +22,10 @@ function deriveTicketDomainSecret(masterSecret: string): Buffer {
 }
 
 function getTicketHmacKey(): Buffer {
-  const secret = process.env.GUEST_QUOTA_SECRET || process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const secret = process.env.GUEST_QUOTA_SECRET;
   if (!secret) {
     if (process.env.NODE_ENV === 'production') {
-      throw new Error('GUEST_QUOTA_SECRET ou SUPABASE_SERVICE_ROLE_KEY obrigatório em produção.');
+      throw new Error('GUEST_QUOTA_SECRET é obrigatório em produção.');
     }
     return deriveTicketDomainSecret('bancoresidencia-session-ticket-secret-key-32b');
   }
