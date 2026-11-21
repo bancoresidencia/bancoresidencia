@@ -410,16 +410,31 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const isWrittenQuestion = question.type === 'Discursiva' || question.type === 'Dissertativa';
 
   // Tentativa atual de resolução da questão (para isolar rascunhos limpos por tentativa)
-  const attemptStorageKey = `question_attempt_${inkOwner?.id || 'guest'}_${question.id}`;
+  const attemptStorageKey = inkOwner?.id ? `question_attempt_${inkOwner.id}_${question.id}` : `question_attempt_${question.id}`;
   const [solveAttempt, setSolveAttempt] = useState<number>(() => {
     if (typeof window === 'undefined') return 1;
     try {
-      const saved = localStorage.getItem(`question_attempt_${inkOwner?.id || 'guest'}_${question.id}`);
+      const userKey = inkOwner?.id ? `question_attempt_${inkOwner.id}_${question.id}` : null;
+      const genericKey = `question_attempt_${question.id}`;
+      const saved = (userKey && localStorage.getItem(userKey)) || localStorage.getItem(genericKey);
       return saved ? Math.max(1, parseInt(saved, 10)) : 1;
     } catch {
       return 1;
     }
   });
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const userKey = inkOwner?.id ? `question_attempt_${inkOwner.id}_${question.id}` : null;
+      const genericKey = `question_attempt_${question.id}`;
+      const saved = (userKey && localStorage.getItem(userKey)) || localStorage.getItem(genericKey);
+      if (saved) {
+        const num = Math.max(1, parseInt(saved, 10));
+        setSolveAttempt(prev => (prev !== num ? num : prev));
+      }
+    } catch {}
+  }, [inkOwner?.id, question.id]);
 
   // Anotações clínicas pessoais da questão (Modo Normal de Estudo)
   const [isNoteOpen, setIsNoteOpen] = useState(false);
@@ -1071,7 +1086,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setSolveAttempt(prev => {
       const next = prev + 1;
       try {
-        localStorage.setItem(attemptStorageKey, String(next));
+        if (inkOwner?.id) {
+          localStorage.setItem(`question_attempt_${inkOwner.id}_${question.id}`, String(next));
+        }
+        localStorage.setItem(`question_attempt_${question.id}`, String(next));
       } catch {}
       return next;
     });
@@ -1441,17 +1459,24 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                 )}
                 <span>{isAnswered ? 'Resolvida nesta sessão' : 'Resolvida anteriormente'}</span>
                 {(isAnswered || hasPreviousAnswer) && (
-                  <Button
-                    type="button"
-                    variant="outline"
-                    size="xs"
-                    onClick={handleStartReSolve}
-                    title="Resolver novamente esta questão (iniciar nova tentativa com rascunho limpo)"
-                    className="ml-1 h-5 px-1.5 py-0 text-[10px] font-extrabold bg-white dark:bg-zinc-900 border-current cursor-pointer"
-                    leftIcon={<RotateCcw className="w-2.5 h-2.5" />}
-                  >
-                    Refazer
-                  </Button>
+                  <div className="inline-flex items-center gap-1">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="xs"
+                      onClick={handleStartReSolve}
+                      title="Resolver novamente esta questão (iniciar nova tentativa com rascunho limpo)"
+                      className="ml-1 h-5 px-1.5 py-0 text-[10px] font-extrabold bg-white dark:bg-zinc-900 border-current cursor-pointer"
+                      leftIcon={<RotateCcw className="w-2.5 h-2.5" />}
+                    >
+                      Refazer
+                    </Button>
+                    {solveAttempt > 1 && (
+                      <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                        Tentativa {solveAttempt}
+                      </span>
+                    )}
+                  </div>
                 )}
               </div>
             )}
