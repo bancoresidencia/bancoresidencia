@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react'
 import { createPortal } from 'react-dom'
+import { Pencil } from 'lucide-react'
 import { useAuth } from '@/context/AuthContext'
 import { applyInk, readInk, saveInk, touchesInk, cutInk, insideLasso, projectInk, type InkBox, type InkChange, type InkPoint, type InkStroke } from '@/services/studyInk'
 
@@ -34,7 +35,7 @@ function flush(key: string) {
 
 type Actions = { flip?: () => void; choose?: (letter: string) => void }
 function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & Actions) {
-  const anchor = useRef<HTMLSpanElement>(null)
+  const anchor = useRef<HTMLDivElement>(null)
   const [mounted, setMounted] = useState(false)
   const [tool, setTool] = useState<Tool>('read')
   const [open, setOpen] = useState(false)
@@ -253,14 +254,25 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   const style = styles[kind]
   const update = (patch: Partial<Style>) => persistStyle({ ...styles, [kind]: { ...style, ...patch } })
   const visible = [...strokes.filter(s => !erasedIds.includes(s.id) && s.id !== preview?.id), ...(preview && tool !== 'erase' ? [preview] : [])]
-  return <><span ref={anchor} hidden />{mounted && createPortal(<>
+  function toggleEditor() {
+    finish()
+    setOpen(!open)
+    setCompact(false)
+    setTool(open ? 'read' : 'pen')
+  }
+  return <><div ref={anchor} className="flex justify-start">
+    <button type="button" aria-expanded={open} onClick={toggleEditor}
+      className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-blue-700 px-4 py-2 font-semibold text-white focus-visible:outline-2">
+      <Pencil size={18} aria-hidden="true" />{open ? 'Fechar modo de escrita' : 'Escrever na tela'}
+    </button>
+  </div>{mounted && createPortal(<>
     <svg aria-hidden="true" className="fixed inset-0 h-dvh w-screen text-zinc-900 dark:text-zinc-100" style={{ zIndex: 48, touchAction: 'none', pointerEvents: tool === 'read' ? 'none' : 'auto', cursor: 'crosshair' }}
       onPointerDown={start} onPointerMove={sample} onPointerUp={e => { if (active.current?.pointer === e.pointerId) { sample(e); finish(true) } }} onLostPointerCapture={e => { if (active.current?.pointer === e.pointerId) finish() }}
       onPointerCancel={e => { if (active.current?.pointer === e.pointerId) finish() }} onClick={e => e.stopPropagation()}>
       <g transform={`translate(${offset.x} ${offset.y})`}>{visible.filter(s => s.kind === 'marker').map(render)}{visible.filter(s => s.kind === 'pen').map(render)}</g>
     </svg>
-    <aside aria-label="Ferramentas de anotação" className="fixed bottom-3 right-3 z-[51] max-w-[calc(100vw-1.5rem)] rounded-xl border bg-white p-2 text-sm text-zinc-900 shadow-lg dark:bg-zinc-900 dark:text-white" onKeyDown={e => e.stopPropagation()}>
-      <button type="button" aria-expanded={open} onClick={() => { finish(); setOpen(!open); setTool(open ? 'read' : 'pen') }}>{open ? 'Recolher caneta' : '✎ Anotar'}</button>
+    <aside aria-label="Ferramentas de anotação" style={{ bottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))', right: 'calc(0.75rem + env(safe-area-inset-right, 0px))' }} className="fixed z-[51] max-w-[calc(100vw-1.5rem)] rounded-xl border bg-white p-2 text-sm text-zinc-900 shadow-lg dark:bg-zinc-900 dark:text-white" onKeyDown={e => e.stopPropagation()}>
+      <button type="button" aria-expanded={open} onClick={toggleEditor}>{open ? 'Recolher caneta' : '✎ Anotar'}</button>
       {open && flip && <button className="ml-3" onClick={() => { finish(); flip() }}>Virar cartão</button>}
       {open && <button className="ml-3" onClick={() => setCompact(!compact)}>{compact ? 'Ferramentas' : 'Minimizar'}</button>}
       {open && !compact && <div className="mt-2 grid max-h-[60dvh] max-w-80 gap-2 overflow-auto">
