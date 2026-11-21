@@ -16,7 +16,7 @@ import { updateSession } from '@/lib/supabase/middleware';
 import { timingSafeEqualStrings } from '@/utils/serverCrypto';
 import {
   isPrivilegedRole,
-  extractTrustedClientIpFromHeaders
+  extractTrustedClientIp
 } from '@/utils/security';
 
 // ---------------------------------------------------------------------------
@@ -40,6 +40,8 @@ function buildCsp(nonce: string): string {
       " 'wasm-unsafe-eval'" +
       ' https://sdk.mercadopago.com https://http2.mlstatic.com https://accounts.google.com',
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "style-src-attr 'unsafe-inline'",
+    "style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "img-src 'self' data: blob: https:",
     "font-src 'self' data: https://fonts.gstatic.com",
     `connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com https://http2.mlstatic.com https://secure-fields.mercadopago.com https://api-static.mercadopago.com https://www.mercadolibre.com https://api.mercadolibre.com https://accounts.google.com https://www.googleapis.com${connectExtra}`,
@@ -48,6 +50,7 @@ function buildCsp(nonce: string): string {
     "object-src 'none'",
     "base-uri 'self'",
     "form-action 'self' https://accounts.google.com https://www.mercadopago.com.br",
+    ...(isDev ? [] : ["upgrade-insecure-requests"])
   ].join('; ');
 }
 
@@ -94,10 +97,6 @@ const apiRateLimitMap = new Map<string, IpRateLimit>();
 const RATE_LIMIT_WINDOW = 60 * 1000;
 const MAX_API_REQ_PER_MIN = 120;
 const MAX_RATE_LIMIT_ENTRIES = 5000;
-
-function extractTrustedClientIp(request: NextRequest): string {
-  return extractTrustedClientIpFromHeaders(request.headers);
-}
 
 function checkGlobalApiRateLimit(ip: string): boolean {
   const now = Date.now();

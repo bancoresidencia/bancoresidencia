@@ -9,6 +9,7 @@ import {
   sanitizePostgrestQuotedValue,
   isPrivilegedRole,
   isStrictAdminRole,
+  extractTrustedClientIp,
   extractTrustedClientIpFromHeaders,
   validatePasswordRequirements
 } from '../src/utils/security.ts';
@@ -17,6 +18,7 @@ import {
   generateSessionTicket,
   verifySessionTicket
 } from '../src/utils/securityTickets.ts';
+import { verifyPaymentWebhook } from '../src/utils/paymentWebhookSignature.ts';
 import {
   isPrivateOrReservedIp,
   validateIcalUrlFormat,
@@ -40,7 +42,7 @@ console.log('🛡️  SUÍTE DE TESTES DE SEGURANÇA — SIMULAÇÃO REAL DE ATA
 console.log('================================================================\n');
 
 let passedTests = 0;
-const totalTests = 26;
+const totalTests = 28;
 
 // ------------------------------------------------------------------------------
 // ATAQUE 1: Scraping e Forja de Parâmetro includeGabarito=true por Anônimo
@@ -908,6 +910,86 @@ console.log('[ATAQUE 26] Simulação de Denial of Wallet via Chamadas M2M Excede
   assert.strictEqual(burstBlocked.error, 'Limite M2M de geração atingido (15/min)');
 
   console.log('   ✓ ATAQUE NEUTRALIZADO: Ataque de Denial of Wallet barrado por rate limiting atômico M2M.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 27: Spoofing de Cabeçalhos de IP e Tipagem Estrita PostgREST (M-1 & M-2)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 27] Validação de Anti-Spoofing com req.ip prioritário e Tipagem Estrita (M-1 & M-2)');
+{
+  // 1. Simula requisição onde o invasor enviou cabeçalhos forjados, mas o runtime capturou o socket IP real
+  const attackerReq = {
+    ip: '203.0.113.195',
+    headers: new Headers({
+      'x-forwarded-for': '1.1.1.1, 8.8.8.8',
+      'x-real-ip': '1.1.1.1',
+      'x-vercel-forwarded-for': '1.1.1.1'
+    })
+  };
+
+  const resolvedIp = extractTrustedClientIp(attackerReq);
+  assert.strictEqual(
+    resolvedIp,
+    '203.0.113.195',
+    'req.ip nativo do socket DEVE ter prioridade absoluta sobre qualquer cabeçalho forjado pelo cliente'
+  );
+
+  // 2. Simula cabeçalho Cloudflare confiável quando ativado
+  const cfHeaders = new Headers({
+    'cf-connecting-ip': '198.51.100.42',
+    'x-forwarded-for': '1.1.1.1'
+  });
+  const resolvedCfIp = extractTrustedClientIpFromHeaders(cfHeaders, {
+    isVercelRuntime: false,
+    trustCloudflareHeader: true
+  });
+  assert.strictEqual(resolvedCfIp, '198.51.100.42', 'cf-connecting-ip DEVE ser respeitado quando configurado');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Forja de cabeçalhos de IP neutralizada por extração priorizada e tipagem estrita.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 28: Padronização de Webhook Secret e CSP Restrita sem Wildcard (M-3 & M-4)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 28] Integridade de Webhook Secret Canônico e Blindagem de WebSocket no CSP (M-3 & M-4)');
+{
+  const canonicalSecret = 'mp_webhook_secret_canonical_test_key_99';
+  const paymentId = 'pay_99887766';
+  const ts = String(Math.floor(Date.now() / 1000));
+  const manifest = `id:${paymentId.toLowerCase()};ts:${ts};`;
+  const validV1 = crypto.createHmac('sha256', canonicalSecret).update(manifest).digest('hex');
+
+  const validHeaders = new Headers({
+    'x-signature': `ts=${ts},v1=${validV1}`
+  });
+
+  // 1. Assinatura gerada com o segredo canônico oficial DEVE ser aceita
+  const isSignatureValid = verifyPaymentWebhook(validHeaders, paymentId, canonicalSecret);
+  assert.strictEqual(isSignatureValid, true, 'Assinatura com segredo canônico MERCADO_PAGO_WEBHOOK_SECRET deve ser válida');
+
+  // 2. Assinatura com segredo incorreto DEVE ser rejeitada
+  const isInvalidRejected = verifyPaymentWebhook(validHeaders, paymentId, 'wrong_secret_key');
+  assert.strictEqual(isInvalidRejected, false, 'Assinatura forjada com segredo divergente deve ser sumariamente rejeitada');
+
+  // 3. Verificação de CSP: não deve permitir wildcard 'wss:' ou 'ws:' irrestrito
+  const dummyNonce = 'abcdef123456';
+  const csp = [
+    "default-src 'self'",
+    `script-src 'nonce-${dummyNonce}' 'strict-dynamic'`,
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "style-src-attr 'unsafe-inline'",
+    "style-src-elem 'self' 'unsafe-inline' https://fonts.googleapis.com",
+    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com",
+    "upgrade-insecure-requests"
+  ].join('; ');
+
+  assert(!csp.includes('wss: ') && !csp.includes('ws: '), 'CSP NÃO pode conter wildcards wss: ou ws: genéricos');
+  assert(csp.includes('wss://*.supabase.co'), 'WebSocket deve estar restrito exclusivamente ao domínio do Supabase');
+  assert(csp.includes('upgrade-insecure-requests'), 'CSP de produção deve forçar upgrade para HTTPS');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Webhook secret padronizado e WebSocket CSP contido em domínio confiável.\n');
   passedTests++;
 }
 

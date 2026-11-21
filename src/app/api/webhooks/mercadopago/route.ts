@@ -23,8 +23,16 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'ID ausente.' }, { status: 400 });
     }
 
+    // Padronização do segredo: MERCADO_PAGO_WEBHOOK_SECRET é a variável oficial canônica
+    const webhookSecret = process.env.MERCADO_PAGO_WEBHOOK_SECRET || process.env.MERCADOPAGO_WEBHOOK_SECRET;
+    if (!process.env.MERCADO_PAGO_WEBHOOK_SECRET && process.env.MERCADOPAGO_WEBHOOK_SECRET) {
+      if (process.env.NODE_ENV !== 'test') {
+        console.warn('[MercadoPago Webhook] Aviso: MERCADOPAGO_WEBHOOK_SECRET está depreciada. Padronize para MERCADO_PAGO_WEBHOOK_SECRET no ambiente.');
+      }
+    }
+
     // Validação criptográfica HMAC-SHA256 com timingSafeEqual e janela anti-replay
-    if (!verifyPaymentWebhook(req.headers, String(rawId), process.env.MERCADO_PAGO_WEBHOOK_SECRET || process.env.MERCADOPAGO_WEBHOOK_SECRET)) {
+    if (!verifyPaymentWebhook(req.headers, String(rawId), webhookSecret)) {
       console.error('[MercadoPago Webhook] Rejeição de notificação com assinatura inválida.');
       return NextResponse.json({ error: 'Assinatura do webhook inválida.' }, { status: 401 });
     }

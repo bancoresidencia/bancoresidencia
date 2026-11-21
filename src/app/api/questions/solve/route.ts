@@ -7,7 +7,7 @@ import {
   validateQuestionId,
   UUID_REGEX,
   isPrivilegedRole,
-  extractTrustedClientIpFromHeaders,
+  extractTrustedClientIp,
   safeErrorMessage
 } from '@/utils/security';
 import { deriveDomainSecret } from '@/utils/serverCrypto';
@@ -27,7 +27,7 @@ const MAX_REQUESTS_PER_WINDOW = 60;
 const MAX_MAP_ENTRIES = 5000;
 
 function extractClientIp(req: NextRequest): string {
-  return extractTrustedClientIpFromHeaders(req.headers);
+  return extractTrustedClientIp(req);
 }
 
 // Cota de Visitante Stateless com Cookie Assinado HMAC-SHA256 (validação constant-time)

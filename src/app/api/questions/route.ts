@@ -287,8 +287,21 @@ interface FacetsCacheEntry {
 const facetsCache = new Map<string, FacetsCacheEntry>();
 const FACETS_CACHE_TTL_MS = 5 * 60 * 1000;
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function applyQuestionFilters(query: any, filters: ExtendedFilterState, questionIds?: string[], isPrivileged = false) {
+export interface PostgrestFilterableQuery {
+  eq(column: string, value: unknown): this;
+  neq(column: string, value: unknown): this;
+  or(filters: string): this;
+  in(column: string, values: readonly unknown[] | unknown[]): this;
+  not(column: string, operator: string, value: unknown): this;
+  gte(column: string, value: unknown): this;
+}
+
+function applyQuestionFilters<T extends PostgrestFilterableQuery>(
+  query: T,
+  filters: ExtendedFilterState,
+  questionIds?: string[],
+  isPrivileged = false
+): T {
   // Regra de Gabarito: views públicas expõem has_gabarito/is_anulada (sem correct_answer bruto)
   if (filters.gabaritoStatus === 'sem_gabarito') {
     if (isPrivileged) {

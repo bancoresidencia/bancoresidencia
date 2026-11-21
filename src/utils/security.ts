@@ -69,10 +69,11 @@ function isValidIpAddress(ip: string): boolean {
  */
 export function extractTrustedClientIpFromHeaders(
   headers: { get(name: string): string | null },
-  options?: { isVercelRuntime?: boolean; trustRealIpHeader?: boolean }
+  options?: { isVercelRuntime?: boolean; trustRealIpHeader?: boolean; trustCloudflareHeader?: boolean }
 ): string {
-  const isVercel = options?.isVercelRuntime ?? process.env.VERCEL === '1';
+  const isVercel = options?.isVercelRuntime ?? (process.env.VERCEL === '1' || Boolean(process.env.VERCEL_ENV));
   const trustRealIp = options?.trustRealIpHeader ?? (isVercel || process.env.TRUST_X_REAL_IP === 'true');
+  const trustCf = options?.trustCloudflareHeader ?? (process.env.TRUST_CF_CONNECTING_IP === 'true');
 
   const sanitizeIpCandidate = (raw?: string | null): string | null => {
     if (!raw) return null;
@@ -89,6 +90,11 @@ export function extractTrustedClientIpFromHeaders(
   if (isVercel) {
     const vercelIp = sanitizeIpCandidate(headers.get('x-vercel-forwarded-for')?.split(',')[0]);
     if (vercelIp) return vercelIp;
+  }
+
+  if (trustCf) {
+    const cfIp = sanitizeIpCandidate(headers.get('cf-connecting-ip') || headers.get('true-client-ip'));
+    if (cfIp) return cfIp;
   }
 
   if (trustRealIp) {
@@ -109,6 +115,22 @@ export function extractTrustedClientIpFromHeaders(
   }
 
   return 'unknown-ip';
+}
+
+/**
+ * Extrai o IP confiável de um NextRequest ou objeto com headers, priorizando req.ip direto do runtime da plataforma
+ */
+export function extractTrustedClientIp(
+  req: { headers: { get(name: string): string | null }; ip?: string },
+  options?: { isVercelRuntime?: boolean; trustRealIpHeader?: boolean; trustCloudflareHeader?: boolean }
+): string {
+  if (req.ip && typeof req.ip === 'string') {
+    const trimmed = req.ip.trim();
+    if (trimmed && isValidIpAddress(trimmed)) {
+      return trimmed;
+    }
+  }
+  return extractTrustedClientIpFromHeaders(req.headers, options);
 }
 
 /**
