@@ -433,6 +433,10 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
           setCloudSyncState('synced');
           return;
         }
+      } else if (res.status === 401) {
+        // Sessão não autorizada ou expirada no servidor: encerra tentativa sem fallback desnecessário
+        setCloudSyncState('error');
+        return;
       }
     } catch {
       // Fallback gracioso para carregamento individual se o bootstrap falhar

@@ -71,19 +71,16 @@ const FocusChecklistItemRowComponent: React.FC<FocusChecklistItemRowProps> = ({
           title={node.especialidade}
         />
 
-        {/* Nome do Foco e Tema em linha contínua */}
-        <div className="min-w-0 flex items-baseline gap-1.5 flex-1">
+        {/* Nome do Foco com suporte a quebra em até 2 linhas e leitura 100% nítida */}
+        <div className="min-w-0 flex-1 pr-1.5">
           <span
-            className={`text-xs font-medium truncate transition-colors ${isStudied
+            className={`text-xs font-semibold line-clamp-2 leading-snug break-words transition-colors ${isStudied
                 ? 'text-zinc-400 dark:text-zinc-500 line-through decoration-zinc-300 dark:decoration-zinc-700'
-                : 'text-zinc-900 dark:text-zinc-100'
+                : 'text-zinc-800 dark:text-zinc-100'
               }`}
-            title={node.foco}
+            title={`${node.especialidade} › ${node.tema}: ${node.foco}`}
           >
             {node.foco}
-          </span>
-          <span className="text-[10px] text-zinc-400 dark:text-zinc-500 truncate hidden sm:inline shrink-0">
-            • {node.tema}
           </span>
         </div>
       </div>

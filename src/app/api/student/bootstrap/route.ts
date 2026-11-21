@@ -55,17 +55,14 @@ export async function GET(req: NextRequest) {
     const auth = await verifyStudentSession(req);
 
     if (!auth.authorized || !auth.user) {
-      return NextResponse.json({
-        success: true,
-        authenticated: false,
-        user: null,
-        profile: null,
-        dailySolvedCount: 0,
-        bookmarks: [],
-        folders: [],
-        lists: [],
-        answers: []
-      });
+      return NextResponse.json(
+        {
+          success: false,
+          authenticated: false,
+          error: auth.error || 'Autenticação necessária para carregar dados do estudante.'
+        },
+        { status: 401 }
+      );
     }
 
     const supabaseAdmin = getSupabaseAdmin();

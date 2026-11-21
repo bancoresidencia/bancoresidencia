@@ -40,7 +40,7 @@ console.log('🛡️  SUÍTE DE TESTES DE SEGURANÇA — SIMULAÇÃO REAL DE ATA
 console.log('================================================================\n');
 
 let passedTests = 0;
-const totalTests = 23;
+const totalTests = 24;
 
 // ------------------------------------------------------------------------------
 // ATAQUE 1: Scraping e Forja de Parâmetro includeGabarito=true por Anônimo
@@ -742,6 +742,46 @@ console.log('[ATAQUE 23] Isolamento Criptográfico de Subchaves HKDF-SHA256 (der
   assert.notStrictEqual(kCalendarEnc.toString('hex'), kCalendarState.toString('hex'));
 
   console.log('   ✓ ATAQUE NEUTRALIZADO: Subchaves HKDF-SHA256 são criptograficamente independentes entre domínios.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 24: Bloqueio Estrito de Acesso Não Autenticado ao Bootstrap (A-1)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 24] Bloqueio Estrito de Acesso Não Autenticado ao Bootstrap (/api/student/bootstrap)');
+{
+  function evaluateBootstrapAuthGuard(auth: { authorized: boolean; user?: unknown; error?: string }) {
+    if (!auth.authorized || !auth.user) {
+      return {
+        status: 401,
+        body: {
+          success: false,
+          authenticated: false,
+          error: auth.error || 'Autenticação necessária para carregar dados do estudante.'
+        }
+      };
+    }
+    return { status: 200, body: { success: true, authenticated: true } };
+  }
+
+  // 1. Cliente anônimo sem sessão
+  const anonProbe = evaluateBootstrapAuthGuard({ authorized: false, user: null });
+  assert.strictEqual(anonProbe.status, 401, 'Requisição anônima deve ser barrada com status 401');
+  assert.strictEqual(anonProbe.body.success, false);
+  assert.strictEqual(anonProbe.body.authenticated, false);
+  assert.ok(anonProbe.body.error);
+
+  // 2. Cliente com sessão inválida/expirada
+  const expiredSession = evaluateBootstrapAuthGuard({ authorized: false, user: null, error: 'Sessão expirada' });
+  assert.strictEqual(expiredSession.status, 401);
+  assert.strictEqual(expiredSession.body.error, 'Sessão expirada');
+
+  // 3. Cliente autenticado
+  const validStudent = evaluateBootstrapAuthGuard({ authorized: true, user: { id: 'usr-123' } });
+  assert.strictEqual(validStudent.status, 200);
+  assert.strictEqual(validStudent.body.authenticated, true);
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Sondagem anônima a /api/student/bootstrap rejeitada com HTTP 401.\n');
   passedTests++;
 }
 

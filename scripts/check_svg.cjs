@@ -1,0 +1,14 @@
+const sharp = require('sharp');
+
+const p1 = 'M718.74 906.921 C882.704 405.986 1702.884 702.375 1543.416 1022.75 C1373.738 1363.638 1050.008 860.221 842.727 1632.282';
+const p2 = 'M854.033 1157.092 C673.215 1042.009 422.801 1191.281 298.333 1070.475 C184.287 959.785 362.047 674.876 362.047 674.876 C675.35 161.911 1357.793 222.808 1670.993 488.16 C2360.998 1072.751 1270.756 1971.842 1270.756 1336.094';
+
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2160 1920"><path d="${p1}" fill="none" stroke="#000000" stroke-width="132" stroke-linecap="butt" stroke-miterlimit="10"/><path d="${p2}" fill="none" stroke="#000000" stroke-width="132" stroke-linecap="butt" stroke-miterlimit="10"/></svg>`;
+
+sharp(Buffer.from(svg))
+  .trim()
+  .toBuffer({ resolveWithObject: true })
+  .then(({ data, info }) => {
+    console.log('Trim info:', JSON.stringify(info, null, 2));
+  })
+  .catch((err) => console.error(err));

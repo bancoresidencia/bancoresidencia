@@ -168,83 +168,83 @@ ${optionsSchemaExample}
             references?: string[];
           }>(rawText);
 
-            if (parsed && parsed.optionExplanations) {
-              const optionExplanations: Record<string, string> = {};
-              for (const [letra, exp] of Object.entries(parsed.optionExplanations)) {
-                optionExplanations[letra.toUpperCase()] = sanitizeText(String(exp));
-              }
-
-              const updatedOptions = options.map((opt) => {
-                const exp = optionExplanations[opt.letter.toUpperCase()] || '';
-                return {
-                  ...opt,
-                  explanation: exp || (opt.letter === goldAnswer ? 'Correta.' : 'Incorreta.')
-                };
-              });
-
-              let finalCommentary = sanitizeText(parsed.finalCommentary || '');
-              if (finalCommentary.length > 650) {
-                const lastP = finalCommentary.slice(0, 650).lastIndexOf('.');
-                if (lastP > 400) finalCommentary = finalCommentary.slice(0, lastP + 1).trim();
-                else finalCommentary = finalCommentary.slice(0, 647).trim() + '...';
-              }
-              const mainErrorReason = sanitizeText(parsed.mainErrorReason || '');
-              const takeHomeMessage = sanitizeText(parsed.takeHomeMessage || '');
-              const guidelineEvolution = sanitizeText(parsed.guidelineEvolution || '');
-              const references = Array.isArray(parsed.references)
-                ? parsed.references.map((r: unknown) => sanitizeText(String(r))).filter(Boolean)
-                : [];
-
-              const fullCommentary = [
-                finalCommentary,
-                mainErrorReason ? `\n\nPrincipal Motivo de Erro:\n${mainErrorReason}` : '',
-                takeHomeMessage ? `\n\nTake-Home Message:\n${takeHomeMessage}` : '',
-                guidelineEvolution ? `\n\nEvolução de Diretrizes:\n${guidelineEvolution}` : '',
-                references.length > 0 ? `\n\nReferências:\n${references.map((r: string) => `• ${r}`).join('\n')}` : ''
-              ]
-                .filter(Boolean)
-                .join('')
-                .trim();
-
-              const clientIp = extractTrustedClientIpFromHeaders(req.headers);
-
-              if (body.questionId) {
-                recordAuditEvent({
-                  userId: auth.user?.id || null,
-                  userEmail: auth.user?.email || (auth.isM2M ? 'm2m-service-role' : null),
-                  userRole: auth.role || 'admin',
-                  action: 'GENERATE_COMMENTARY',
-                  entityType: 'question',
-                  entityId: body.questionId,
-                  newValues: {
-                    isAiGenerated: true,
-                    goldAnswer,
-                    especialidade,
-                    tema
-                  },
-                  reason: 'Geração de comentário com IA médica padrão-ouro',
-                  ipAddress: clientIp,
-                  userAgent: req.headers.get('user-agent')
-                }).catch((e) => console.warn('[GenerateCommentary] Aviso ao auditar:', e));
-              }
-
-              return NextResponse.json({
-                success: true,
-                isAiGenerated: true,
-                correctAnswer: goldAnswer,
-                commentary: fullCommentary,
-                options: updatedOptions,
-                mainErrorReason,
-                takeHomeMessage,
-                guidelineEvolution,
-                references
-              });
+          if (parsed && parsed.optionExplanations) {
+            const optionExplanations: Record<string, string> = {};
+            for (const [letra, exp] of Object.entries(parsed.optionExplanations)) {
+              optionExplanations[letra.toUpperCase()] = sanitizeText(String(exp));
             }
+
+            const updatedOptions = options.map((opt) => {
+              const exp = optionExplanations[opt.letter.toUpperCase()] || '';
+              return {
+                ...opt,
+                explanation: exp || (opt.letter === goldAnswer ? 'Correta.' : 'Incorreta.')
+              };
+            });
+
+            let finalCommentary = sanitizeText(parsed.finalCommentary || '');
+            if (finalCommentary.length > 650) {
+              const lastP = finalCommentary.slice(0, 650).lastIndexOf('.');
+              if (lastP > 400) finalCommentary = finalCommentary.slice(0, lastP + 1).trim();
+              else finalCommentary = finalCommentary.slice(0, 647).trim() + '...';
+            }
+            const mainErrorReason = sanitizeText(parsed.mainErrorReason || '');
+            const takeHomeMessage = sanitizeText(parsed.takeHomeMessage || '');
+            const guidelineEvolution = sanitizeText(parsed.guidelineEvolution || '');
+            const references = Array.isArray(parsed.references)
+              ? parsed.references.map((r: unknown) => sanitizeText(String(r))).filter(Boolean)
+              : [];
+
+            const fullCommentary = [
+              finalCommentary,
+              mainErrorReason ? `\n\nPrincipal Motivo de Erro:\n${mainErrorReason}` : '',
+              takeHomeMessage ? `\n\nTake-Home Message:\n${takeHomeMessage}` : '',
+              guidelineEvolution ? `\n\nEvolução de Diretrizes:\n${guidelineEvolution}` : '',
+              references.length > 0 ? `\n\nReferências:\n${references.map((r: string) => `• ${r}`).join('\n')}` : ''
+            ]
+              .filter(Boolean)
+              .join('')
+              .trim();
+
+            const clientIp = extractTrustedClientIpFromHeaders(req.headers);
+
+            if (body.questionId) {
+              recordAuditEvent({
+                userId: auth.user?.id || null,
+                userEmail: auth.user?.email || (auth.isM2M ? 'm2m-service-role' : null),
+                userRole: auth.role || 'admin',
+                action: 'GENERATE_COMMENTARY',
+                entityType: 'question',
+                entityId: body.questionId,
+                newValues: {
+                  isAiGenerated: true,
+                  goldAnswer,
+                  especialidade,
+                  tema
+                },
+                reason: 'Geração de comentário com IA médica padrão-ouro',
+                ipAddress: clientIp,
+                userAgent: req.headers.get('user-agent')
+              }).catch((e) => console.warn('[GenerateCommentary] Aviso ao auditar:', e));
+            }
+
+            return NextResponse.json({
+              success: true,
+              isAiGenerated: true,
+              correctAnswer: goldAnswer,
+              commentary: fullCommentary,
+              options: updatedOptions,
+              mainErrorReason,
+              takeHomeMessage,
+              guidelineEvolution,
+              references
+            });
           }
-        } catch (geminiErr) {
-          console.warn('[GenerateCommentary API] Falha na chamada Gemini, usando fallback estruturado:', geminiErr);
         }
+      } catch (geminiErr) {
+        console.warn('[GenerateCommentary API] Falha na chamada Gemini, usando fallback estruturado:', geminiErr);
       }
+    }
 
     // Fallback Estruturado Padrão-Ouro (Garante retorno instantâneo e robusto com marcações)
     const updatedOptions = options.map((opt) => {
