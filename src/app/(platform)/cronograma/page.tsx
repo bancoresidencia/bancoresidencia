@@ -58,7 +58,7 @@ export default function CronogramaPage() {
     } finally {
       setIsLoading(false);
     }
-  }, [user?.id]);
+  }, [user]);
 
   useEffect(() => {
     loadData();
@@ -144,6 +144,55 @@ export default function CronogramaPage() {
     await loadData();
   };
 
+  // Adição Manual Rápida no Calendário
+  const handleConfirmQuickAdd = async (params: {
+    focoNode: EnrichedFocusWithIncidence;
+    date: string;
+    itemType: ScheduleItemType;
+    notes?: string;
+    autoScheduleRevisions: boolean;
+    intervals: number[];
+  }) => {
+    const scheduleId = schedule?.id || 'default_schedule';
+    const itemsToAdd: UserScheduleItem[] = [
+      {
+        id: `item_manual_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+        scheduleId,
+        userId: user?.id || 'guest',
+        especialidade: params.focoNode.especialidade,
+        tema: params.focoNode.tema,
+        foco: params.focoNode.foco,
+        scheduledDate: params.date,
+        itemType: params.itemType,
+        isCompleted: false,
+        orderIndex: 0,
+        notes: params.notes
+      }
+    ];
+
+    if (params.autoScheduleRevisions && params.intervals.length > 0) {
+      params.intervals.forEach((days, idx) => {
+        const revDate = addDays(params.date, days);
+        const revType: ScheduleItemType = idx === 0 ? 'review_1' : idx === 1 ? 'review_2' : 'review_3';
+        itemsToAdd.push({
+          id: `item_rev_${Date.now()}_${days}_${Math.random().toString(36).slice(2, 6)}`,
+          scheduleId,
+          userId: user?.id || 'guest',
+          especialidade: params.focoNode.especialidade,
+          tema: params.focoNode.tema,
+          foco: params.focoNode.foco,
+          scheduledDate: revDate,
+          itemType: revType,
+          isCompleted: false,
+          orderIndex: idx + 1
+        });
+      });
+    }
+
+    await saveScheduleItemsBatch(itemsToAdd, user?.id);
+    await loadData();
+  };
+
   if (isLoading) {
     return (
       <div className="min-h-[70vh] flex items-center justify-center p-8">
@@ -208,7 +257,7 @@ export default function CronogramaPage() {
             onNavigateToQuestoes={handleNavigateToQuestoes}
             onOpenChecklist={() => setIsChecklistDrawerOpen((prev) => !prev)}
             onOpenAutoGenerator={() => setIsGeneratorOpen(true)}
-            onQuickAddAtDate={() => setIsChecklistDrawerOpen(true)}
+            onQuickAddAtDate={(dateStr) => setQuickAddDate(dateStr)}
           />
         </div>
 
@@ -243,6 +292,18 @@ export default function CronogramaPage() {
         onClose={() => setIsGeneratorOpen(false)}
         onGenerate={handleAutoGenerate}
       />
+
+      {/* 4. Modal de Adição Manual ao Dia */}
+      {quickAddDate && (
+        <AddDayScheduleContentModal
+          key={quickAddDate}
+          isOpen={true}
+          dateStr={quickAddDate}
+          targetInstitution={schedule?.targetExam || 'ENARE'}
+          onClose={() => setQuickAddDate(null)}
+          onConfirmAdd={handleConfirmQuickAdd}
+        />
+      )}
     </div>
   );
 }

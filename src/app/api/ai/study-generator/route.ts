@@ -5,7 +5,7 @@ import { callGeminiAi } from '@/lib/gemini';
 import { medicalKnowledgeService, KnowledgeChunk } from '@/services/medicalKnowledgeService';
 import { guidelinesKnowledgeService } from '@/services/guidelinesKnowledgeService';
 import { verifyAdminSession } from '@/lib/supabase/adminAuth';
-import { sanitizePostgrestTerm } from '@/utils/security';
+import { sanitizePostgrestTerm, extractTrustedClientIpFromHeaders } from '@/utils/security';
 import { timingSafeEqualStrings } from '@/utils/serverCrypto';
 import { isAiRateLimited } from '@/lib/aiProtection';
 import { FocusExamAnalytics } from '@/types/analytics';
@@ -37,12 +37,15 @@ const PALETTE = ['#3B82F6', '#10B981', '#EC4899', '#8B5CF6', '#F59E0B', '#06B6D4
 export async function POST(req: NextRequest) {
   try {
     // Blindagem Crítica: A geração de resumos permanentes via Vertex AI Pro é estritamente restrita a Administradores/Curadores ANTES de disparar a LLM!
+    const clientIp = extractTrustedClientIpFromHeaders(req.headers);
     const adminKey = req.headers.get('x-admin-key');
-    const validAdminKey = process.env.ADMIN_API_KEY;
-    const isAdminBypass = Boolean(adminKey && validAdminKey && timingSafeEqualStrings(adminKey, validAdminKey));
+    const validAdminKey = process.env.ADMIN_M2M_TOKEN || process.env.ADMIN_API_KEY;
+    const isLegacyHeaderM2M = Boolean(adminKey && validAdminKey && timingSafeEqualStrings(adminKey, validAdminKey));
 
     let actorId = 'm2m_admin';
-    if (!isAdminBypass) {
+    let isM2M = isLegacyHeaderM2M;
+
+    if (!isLegacyHeaderM2M) {
       const auth = await verifyAdminSession(req);
       if (!auth.authorized) {
         return NextResponse.json(
@@ -54,13 +57,23 @@ export async function POST(req: NextRequest) {
         );
       }
       actorId = auth.user?.id || 'admin_session';
+      isM2M = Boolean(auth.isM2M);
+    }
 
-      // Rate limit estrito por administrador/curador autenticado (máx 5/min, imune a X-Forwarded-For)
-      // Backed pelo Supabase — serverless-safe (não usa Map in-memory)
+    // Rate limit serverless-safe persistente no Supabase:
+    // Protege contra Denial of Wallet em chamadas M2M automatizadas e administradores interativos
+    if (isM2M) {
+      if (await isAiRateLimited(`study_gen_m2m_${clientIp}`, 15)) {
+        return NextResponse.json(
+          { success: false, error: 'Limite M2M de geração de resumos atingido (15/min). Aguarde 1 minuto.' },
+          { status: 429, headers: { 'Retry-After': '60' } }
+        );
+      }
+    } else {
       if (await isAiRateLimited(`study_gen_${actorId}`, 5)) {
         return NextResponse.json(
           { success: false, error: 'Limite de geração de resumos atingido. Aguarde 1 minuto antes de solicitar novamente.' },
-          { status: 429 }
+          { status: 429, headers: { 'Retry-After': '60' } }
         );
       }
     }

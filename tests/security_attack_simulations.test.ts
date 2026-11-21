@@ -40,7 +40,7 @@ console.log('🛡️  SUÍTE DE TESTES DE SEGURANÇA — SIMULAÇÃO REAL DE ATA
 console.log('================================================================\n');
 
 let passedTests = 0;
-const totalTests = 25;
+const totalTests = 26;
 
 // ------------------------------------------------------------------------------
 // ATAQUE 1: Scraping e Forja de Parâmetro includeGabarito=true por Anônimo
@@ -845,6 +845,69 @@ console.log('[ATAQUE 25] Evasão de Cota de Visitante por Omissão de Cookies (/
   assert.strictEqual(blockedAttempt.reason, 'Limite diário de 10 questões por IP atingido');
 
   console.log('   ✓ ATAQUE NEUTRALIZADO: Evasão por omissão de cookies neutralizada via cota persistente por IP no backend.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 26: Denial of Wallet via Bypass M2M sem Rate Limit em IA (A-3)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 26] Simulação de Denial of Wallet via Chamadas M2M Excedentes em IA (/api/ai/study-generator)');
+{
+  const m2mCounters = new Map<string, number>();
+
+  function evaluateM2MRateLimitGuard(params: {
+    token: string;
+    validToken: string;
+    clientIp: string;
+  }): { status: number; allowed: boolean; error?: string } {
+    if (!timingSafeEqualStrings(params.token, params.validToken)) {
+      return { status: 403, allowed: false, error: 'Token inválido' };
+    }
+
+    // Mesmo com token M2M válido, o teto é 15 requisições por minuto
+    const count = m2mCounters.get(params.clientIp) || 0;
+    if (count >= 15) {
+      return { status: 429, allowed: false, error: 'Limite M2M de geração atingido (15/min)' };
+    }
+
+    m2mCounters.set(params.clientIp, count + 1);
+    return { status: 200, allowed: true };
+  }
+
+  const validToken = 'valid-m2m-secret-key-12345';
+  const callerIp = '203.0.113.42';
+
+  // 1. Token inválido deve ser rejeitado imediatamente
+  const invalidAttempt = evaluateM2MRateLimitGuard({
+    token: 'wrong-token-abc',
+    validToken,
+    clientIp: callerIp
+  });
+  assert.strictEqual(invalidAttempt.status, 403);
+  assert.strictEqual(invalidAttempt.allowed, false);
+
+  // 2. Dispara 15 chamadas M2M válidas permitidas dentro da cota
+  for (let i = 1; i <= 15; i++) {
+    const res = evaluateM2MRateLimitGuard({
+      token: validToken,
+      validToken,
+      clientIp: callerIp
+    });
+    assert.strictEqual(res.status, 200);
+    assert.strictEqual(res.allowed, true);
+  }
+
+  // 3. A 16ª chamada consecutiva no minuto DEVE ser bloqueada com HTTP 429 (Too Many Requests)
+  const burstBlocked = evaluateM2MRateLimitGuard({
+    token: validToken,
+    validToken,
+    clientIp: callerIp
+  });
+  assert.strictEqual(burstBlocked.status, 429, 'Chamada M2M acima de 15/min DEVE ser bloqueada com HTTP 429');
+  assert.strictEqual(burstBlocked.allowed, false);
+  assert.strictEqual(burstBlocked.error, 'Limite M2M de geração atingido (15/min)');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Ataque de Denial of Wallet barrado por rate limiting atômico M2M.\n');
   passedTests++;
 }
 

@@ -64,7 +64,7 @@ const ALLOWED_ORIGINS: ReadonlySet<string> = new Set([
 ]);
 
 const CORS_ALLOW_METHODS = 'GET, POST, PUT, PATCH, DELETE, OPTIONS';
-const CORS_ALLOW_HEADERS = 'Content-Type, Authorization, X-Requested-With, x-admin-key';
+const CORS_ALLOW_HEADERS = 'Content-Type, Authorization, X-Requested-With';
 const CORS_MAX_AGE = '86400'; // 24h
 
 function getAllowedOrigin(requestOrigin: string | null): string {

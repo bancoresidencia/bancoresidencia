@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { CalendarDays, Plus, X } from 'lucide-react';
 import { ScheduleItemType } from '@/types/studySchedule';
 import {
@@ -67,18 +67,6 @@ export const AddDayScheduleContentModal: React.FC<AddDayScheduleContentModalProp
       return true;
     });
   }, [enrichedFoci, selectedSpecialty, searchQuery]);
-
-  // Reseta seleção ao abrir ou mudar de data
-  useEffect(() => {
-    if (isOpen) {
-      setSelectedFoco(null);
-      setSearchQuery('');
-      setSelectedSpecialty('all');
-      setItemType('theory');
-      setNotes('');
-      setIsSubmitting(false);
-    }
-  }, [isOpen, dateStr]);
 
   if (!isOpen || !dateStr) return null;
 
