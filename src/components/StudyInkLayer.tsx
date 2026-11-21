@@ -87,6 +87,20 @@ function flush(key: string) {
   return work
 }
 
+function scrollAncestor(element: HTMLElement | null, dy: number) {
+  if (typeof window === 'undefined') return
+  let el = element?.parentElement
+  while (el && el !== document.body && el !== document.documentElement) {
+    const overflowY = window.getComputedStyle(el).overflowY
+    if ((overflowY === 'auto' || overflowY === 'scroll') && el.scrollHeight > el.clientHeight) {
+      el.scrollBy({ top: dy, left: 0, behavior: 'instant' })
+      return
+    }
+    el = el.parentElement
+  }
+  window.scrollBy({ top: dy, left: 0, behavior: 'instant' })
+}
+
 type Actions = { flip?: () => void; choose?: (letter: string) => void }
 
 function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & Actions) {
@@ -113,7 +127,15 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   const [gestureFeedback, setGestureFeedback] = useState('')
   const [autoGestureEnabled, setAutoGestureEnabled] = useState(true)
   const [straightMarker, setStraightMarker] = useState(true)
-  const touchStart = useRef<{ x: number; y: number; time: number } | null>(null)
+  const touchState = useRef<{
+    startX: number
+    startY: number
+    lastY: number
+    startTime: number
+    isScrolling: boolean
+    velocity: number
+    rafId: number | null
+  } | null>(null)
   const [spenTelemetry, setSpenTelemetry] = useState<{
     type: string
     barrel: boolean
@@ -302,6 +324,22 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   }
 
   function sample(e: ReactPointerEvent<SVGSVGElement>) {
+    // DUAL-INPUT: ROLAGEM SUAVE COM O DEDO EM MODO CANETA (NÃO AFETA A CANETA)
+    if (e.pointerType === 'touch' && onlyPen && touchState.current) {
+      const ts = touchState.current
+      const dy = e.clientY - ts.lastY
+      const totalY = Math.abs(e.clientY - ts.startY)
+      const totalX = Math.abs(e.clientX - ts.startX)
+
+      if (totalY > 5 || totalX > 5 || ts.isScrolling) {
+        ts.isScrolling = true
+        scrollAncestor(anchor.current, -dy)
+        ts.velocity = -dy
+        ts.lastY = e.clientY
+      }
+      return
+    }
+
     const current = active.current
     if (!current || current.pointer !== e.pointerId) return
     const events = e.nativeEvent.getCoalescedEvents?.()
@@ -452,7 +490,17 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
 
     // REJEIÇÃO DE PALMA E DUAL-INPUT (CANETA DESENHA / DEDO ROLA OU CLICA)
     if (e.pointerType === 'touch' && onlyPen) {
-      touchStart.current = { x: e.clientX, y: e.clientY, time: performance.now() }
+      if (touchState.current?.rafId) cancelAnimationFrame(touchState.current.rafId)
+      touchState.current = {
+        startX: e.clientX,
+        startY: e.clientY,
+        lastY: e.clientY,
+        startTime: performance.now(),
+        isScrolling: false,
+        velocity: 0,
+        rafId: null
+      }
+      e.currentTarget.setPointerCapture(e.pointerId)
       return
     }
     
@@ -564,26 +612,45 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
           onContextMenu={e => e.preventDefault()}
           className="w-full h-full overflow-visible text-zinc-900 dark:text-zinc-100"
           style={{
-            touchAction: onlyPen ? 'pan-y' : 'none',
+            touchAction: tool === 'read' ? 'auto' : 'none',
             pointerEvents: tool === 'read' ? 'none' : 'auto',
             cursor: tool === 'read' ? 'default' : tool === 'erase' ? 'cell' : 'crosshair'
           }}
           onPointerDown={start}
           onPointerMove={sample}
           onPointerUp={e => {
-            if (e.pointerType === 'touch' && touchStart.current) {
-              const dx = Math.abs(e.clientX - touchStart.current.x)
-              const dy = Math.abs(e.clientY - touchStart.current.y)
-              const dt = performance.now() - touchStart.current.time
-              touchStart.current = null
+            if (e.pointerType === 'touch' && touchState.current) {
+              const ts = touchState.current
+              try { e.currentTarget.releasePointerCapture(e.pointerId) } catch {}
 
-              if (dx < 14 && dy < 14 && dt < 450) {
+              if (ts.isScrolling) {
+                let v = ts.velocity
+                if (Math.abs(v) > 1.2) {
+                  const runInertia = () => {
+                    if (Math.abs(v) > 0.4) {
+                      scrollAncestor(anchor.current, v)
+                      v *= 0.88
+                      ts.rafId = requestAnimationFrame(runInertia)
+                    } else {
+                      touchState.current = null
+                    }
+                  }
+                  ts.rafId = requestAnimationFrame(runInertia)
+                } else {
+                  touchState.current = null
+                }
+                return
+              }
+
+              touchState.current = null
+              const dt = performance.now() - ts.startTime
+              if (dt < 450) {
                 const elements = document.elementsFromPoint(e.clientX, e.clientY)
                 const optEl = elements.find(el => el.hasAttribute('data-ink-option') || el.hasAttribute('data-ink-option-row')) as HTMLElement | undefined
                 const optLetter = optEl?.getAttribute('data-ink-option') || optEl?.getAttribute('data-ink-option-row')
                 if (optLetter && choose) {
                   choose(optLetter)
-                  setGestureFeedback(`Alternativa ${optLetter} marcada com o dedo!`)
+                  setGestureFeedback(`Alternativa ${optLetter} marcada com o toque!`)
                   setTimeout(() => setGestureFeedback(''), 2500)
                   return
                 }
@@ -605,8 +672,15 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
               finish()
             }
           }}
-          onLostPointerCapture={e => { if (active.current?.pointer === e.pointerId) finish() }}
-          onPointerCancel={e => { if (active.current?.pointer === e.pointerId) finish() }}
+          onLostPointerCapture={e => {
+            if (touchState.current) touchState.current = null
+            if (active.current?.pointer === e.pointerId) finish()
+          }}
+          onPointerCancel={e => {
+            if (touchState.current?.rafId) cancelAnimationFrame(touchState.current.rafId)
+            touchState.current = null
+            if (active.current?.pointer === e.pointerId) finish()
+          }}
           onClick={e => e.stopPropagation()}
         >
           <g>
@@ -911,8 +985,11 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
                           </label>
                         )}
 
-                        <label className="flex items-center justify-between cursor-pointer group" title="Ignora toque acidental da mão ao apoiar na tela">
-                          <span className="text-zinc-300 group-hover:text-white">Rejeição de palma (só caneta)</span>
+                        <label className="flex items-center justify-between cursor-pointer group" title="A caneta apenas desenha e nunca rola a tela. O dedo rola a página ou clica em alternativas.">
+                          <div className="flex flex-col pr-2">
+                            <span className="text-zinc-300 group-hover:text-white font-medium">Rejeição de palma / Só Caneta</span>
+                            <span className="text-[10px] text-zinc-500">Caneta desenha sem rolar • Dedo rola</span>
+                          </div>
                           <input
                             type="checkbox"
                             checked={onlyPen}
