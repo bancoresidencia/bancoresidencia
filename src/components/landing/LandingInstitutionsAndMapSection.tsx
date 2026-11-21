@@ -58,65 +58,65 @@ const CITY_COORDINATES: Record<string, { x: number; y: number }> = {
 // Coordenadas geográficas calibradas para garantir que 100% dos pins fiquem estritamente DENTRO do território do estado,
 // com espaçamento mínimo garantido de >= 40px (ZERO sobreposição) e sem invasão de oceano em cidades litorâneas.
 const STATE_ANCHOR_COORDINATES: Record<string, { x: number; y: number; stemHeight?: number }> = {
-  // São Paulo (SP) - 8 instituições distribuídas harmoniosamente por todo o território paulista (minD >= 58px)
-  'sus-sp': { x: 275.0, y: 295.0, stemHeight: 12 },        // Ribeirão Preto / Franca (Norte SP)
-  'unicamp': { x: 292.0, y: 308.0, stemHeight: 12 },       // Campinas
-  'santa-casa-sp': { x: 316.0, y: 312.0, stemHeight: 38 }, // Vale do Paraíba / Capital Norte
-  'einstein': { x: 258.0, y: 318.0, stemHeight: 28 },      // Sorocaba / Bauru (Oeste)
-  'usp-sp': { x: 284.0, y: 326.0, stemHeight: 12 },        // Capital Oeste / Pinheiros
-  'iamspe': { x: 268.0, y: 332.0, stemHeight: 40 },        // Sudoeste / Itapeva axis
-  'unifesp': { x: 302.0, y: 324.0, stemHeight: 14 },       // Capital Centro-Sul
-  'fmabc': { x: 318.0, y: 328.0, stemHeight: 36 },          // Grande ABC / Litoral
+  // São Paulo (SP) - 8 instituições perfeitamente espaçadas por todo o território paulista (minD >= 46px)
+  'sus-sp': { x: 275.0, y: 296.0 },        // Ribeirão Preto / Franca (Norte SP)
+  'unicamp': { x: 292.0, y: 308.0 },       // Campinas
+  'santa-casa-sp': { x: 314.0, y: 312.0 }, // Vale do Paraíba / São José dos Campos
+  'einstein': { x: 258.0, y: 316.0 },      // Sorocaba / Bauru (Oeste)
+  'usp-sp': { x: 285.0, y: 324.0 },        // Capital Centro-Oeste / Pinheiros
+  'unifesp': { x: 302.0, y: 322.0 },       // Capital Centro-Sul
+  'iamspe': { x: 268.0, y: 330.0 },        // Sudoeste / Itapeva
+  'fmabc': { x: 312.0, y: 328.0 },         // Santo André / Grande ABC
 
-  // Pernambuco (PE) - Recife é litorânea no extremo Leste; âncoras projetadas para o interior (Oeste)
-  'ses-pe': { x: 428.0, y: 152.0, stemHeight: 12 },
-  'ufpe': { x: 412.0, y: 149.0, stemHeight: 38 },
+  // Pernambuco (PE) - 2 instituições no interior (zero mar)
+  'ses-pe': { x: 426.0, y: 151.0 },        // Recife / Litoral (dentro do território)
+  'ufpe': { x: 398.0, y: 148.0 },          // Agreste / Interior PE
 
-  // Bahia (BA) - Salvador é litorânea; âncoras projetadas para o interior (Recôncavo / Oeste)
-  'sus-ba': { x: 392.0, y: 206.0, stemHeight: 12 },
-  'ufba': { x: 372.0, y: 204.0, stemHeight: 38 },
+  // Bahia (BA) - 2 instituições
+  'sus-ba': { x: 390.0, y: 206.0 },        // Salvador / Recôncavo
+  'ufba': { x: 356.0, y: 204.0 },          // Chapada Diamantina / Centro BA
 
-  // Ceará (CE) - Fortaleza é litorânea no Norte; âncoras projetadas para o Sul (interior)
-  'surce': { x: 392.0, y: 110.0, stemHeight: 12 },
-  'ufc': { x: 386.0, y: 124.0, stemHeight: 44 },
-  'ijf': { x: 400.0, y: 118.0, stemHeight: 12 },
+  // Minas Gerais (MG) - 3 instituições
+  'psu-mg': { x: 298.0, y: 275.0 },        // Triângulo Mineiro / Oeste MG
+  'santa-casa-bh': { x: 338.3, y: 283.1 }, // Belo Horizonte / Centro
+  'ipsemg': { x: 332.0, y: 305.0 },        // Sul de Minas / Zona da Mata
 
-  // Minas Gerais (MG) - 3 instituições em Belo Horizonte (Crown Pattern de alturas escalonadas)
-  'psu-mg': { x: 328.0, y: 283.0, stemHeight: 12 },
-  'santa-casa-bh': { x: 338.3, y: 283.1, stemHeight: 46 },
-  'ipsemg': { x: 348.0, y: 283.0, stemHeight: 12 },
+  // Rio de Janeiro (RJ) - 4 instituições
+  'ufrj': { x: 341.0, y: 311.0 },          // Capital Norte
+  'uerj': { x: 347.0, y: 316.0 },          // Capital Centro
+  'ses-rj': { x: 358.0, y: 305.0 },        // Norte Fluminense / Serrana
+  'unimed-rio': { x: 333.0, y: 318.0 },    // Costa Verde / Sul Fluminense
 
-  // Rio de Janeiro (RJ) - 4 instituições escalonadas
-  'ufrj': { x: 341.0, y: 315.0, stemHeight: 12 },
-  'uerj': { x: 346.6, y: 317.2, stemHeight: 46 },
-  'ses-rj': { x: 354.0, y: 312.0, stemHeight: 22 },
-  'unimed-rio': { x: 335.0, y: 318.0, stemHeight: 48 },
+  // Ceará (CE) - 3 instituições
+  'surce': { x: 392.0, y: 108.0 },         // Fortaleza / Litoral Norte
+  'ufc': { x: 380.0, y: 122.0 },           // Sertão Central / Sobral
+  'ijf': { x: 388.0, y: 138.0 },           // Sul / Cariri
 
-  // Rio Grande do Sul (RS) - 3 instituições em Porto Alegre
-  'amrigs': { x: 252.0, y: 401.0, stemHeight: 12 },
-  'hcpa': { x: 259.1, y: 401.6, stemHeight: 46 },
-  'ufcspa': { x: 266.0, y: 401.0, stemHeight: 12 },
+  // Rio Grande do Sul (RS) - 3 instituições
+  'amrigs': { x: 260.0, y: 400.0 },        // Porto Alegre / Metropolitana
+  'hcpa': { x: 248.0, y: 385.0 },          // Serra Gaúcha / Passo Fundo
+  'ufcspa': { x: 242.0, y: 416.0 },        // Sul / Pelotas
 
-  // Paraná (PR) - Curitiba e Londrina
-  'uel': { x: 259.9, y: 321.8, stemHeight: 12 },
-  'amp': { x: 275.0, y: 346.0, stemHeight: 12 },
-  'puc-pr': { x: 285.0, y: 346.0, stemHeight: 40 },
+  // Paraná (PR) - 3 instituições
+  'uel': { x: 259.9, y: 321.8 },           // Londrina / Norte
+  'amp': { x: 278.0, y: 344.0 },           // Curitiba Centro
+  'puc-pr': { x: 286.0, y: 350.0 },        // Metropolitana / Litoral
 
-  // Santa Catarina (SC) - Florianópolis
-  'acm': { x: 280.0, y: 372.0, stemHeight: 12 },
-  'ufsc': { x: 288.3, y: 372.1, stemHeight: 42 },
+  // Santa Catarina (SC) - 2 instituições
+  'acm': { x: 282.0, y: 372.0 },           // Florianópolis / Continental
+  'ufsc': { x: 262.0, y: 368.0 },          // Vale do Itajaí / Oeste
 
-  // Pará (PA) - Belém
-  'uepa': { x: 282.0, y: 83.0, stemHeight: 12 },
-  'cesupa': { x: 294.0, y: 83.0, stemHeight: 40 },
+  // Pará (PA) - 2 instituições
+  'uepa': { x: 288.0, y: 83.0 },           // Belém / Litoral
+  'cesupa': { x: 250.0, y: 95.0 },         // Santarém / Baixo Amazonas
 
-  // Distrito Federal (DF) - Brasília
-  'ses-df': { x: 293.0, y: 236.0, stemHeight: 12 },
-  'habm': { x: 298.0, y: 239.0, stemHeight: 36 },
+  // Distrito Federal (DF) - 2 instituições
+  'ses-df': { x: 293.0, y: 235.5 },        // Asa Norte
+  'habm': { x: 299.0, y: 239.5 },          // Asa Sul
 
-  // Goiás (GO) - Goiânia
-  'ses-go': { x: 276.0, y: 247.0, stemHeight: 12 },
-  'psu-go': { x: 285.0, y: 247.0, stemHeight: 36 }
+  // Goiás (GO) - 2 instituições
+  'ses-go': { x: 280.5, y: 247.1 },        // Goiânia Centro
+  'psu-go': { x: 275.0, y: 235.0 }         // Anápolis / Norte
 };
 
 interface CanonicalStateItem {
@@ -352,14 +352,10 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
       const scrX = ((cityPoint.x * zoomScale + translateX) / 450) * 100;
       const scrY = ((cityPoint.y * zoomScale + translateY) / 460) * 100;
 
-      // 3. Altura da haste vertical
-      const stemHeight = anchorConfig?.stemHeight || 10;
-
       return {
         inst,
         screenX: scrX,
-        screenY: scrY,
-        stemHeight
+        screenY: scrY
       };
     });
   }, [isZoomed, currentStateData, stateCalloutInstitutions, zoomScale, translateX, translateY]);
@@ -499,9 +495,9 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                   </g>
                 </svg>
 
-                {/* Marcadores de GPS com Logo Redonda e Hastes de Alto Contraste (Branco Puro, Zero Sobreposição) */}
+                {/* Marcadores de GPS com Logo Redonda e Ponteiro no Solo (Zero Sobreposição, Sem Hastes Longas) */}
                 {isZoomed &&
-                  institutionPins.map(({ inst, screenX, screenY, stemHeight }) => {
+                  institutionPins.map(({ inst, screenX, screenY }) => {
                     const isHighlighted = highlightedInstId === inst.id;
                     return (
                       <div
@@ -523,7 +519,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                         onMouseEnter={() => setHighlightedInstId(inst.id)}
                         onMouseLeave={() => setHighlightedInstId(null)}
                       >
-                        {/* Cabeça Circular do Pin de GPS + Haste Vertical de Altura Escalonada */}
+                        {/* Marcador de GPS Teardrop Moderno: Cabeça Circular + Agulha Direta no Solo */}
                         <div className="relative flex flex-col items-center">
                           <div
                             className={`w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-full bg-white dark:bg-[#18181f] p-1 shadow-[0_4px_16px_rgba(0,0,0,0.6)] border-2 transition-all duration-200 flex items-center justify-center overflow-hidden shrink-0 ${
@@ -552,24 +548,11 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                             )}
                           </div>
 
-                          {/* Haste / Agulha de ALTO CONTRASTE (Branco Puro com Drop Shadow escuro) visível em qualquer cor de estado */}
-                          {stemHeight > 10 ? (
-                            <div className="flex flex-col items-center -mt-0.5">
-                              <div
-                                className="w-[2px] rounded-full transition-all duration-200 bg-white shadow-[0_0_3px_rgba(0,0,0,0.9),0_1px_4px_rgba(0,0,0,0.85)]"
-                                style={{ height: `${stemHeight - 6}px` }}
-                              />
-                              <div
-                                className="w-0 h-0 border-l-[3.5px] border-l-transparent border-r-[3.5px] border-r-transparent border-t-[6px] drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]"
-                                style={{ borderTopColor: '#ffffff' }}
-                              />
-                            </div>
-                          ) : (
-                            <div
-                              className="w-0 h-0 border-l-[3.5px] border-l-transparent border-r-[3.5px] border-r-transparent border-t-[6px] -mt-0.5 transition-transform drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]"
-                              style={{ borderTopColor: '#ffffff' }}
-                            />
-                          )}
+                          {/* Ponta da Agulha de GPS no Solo: Compacta e Nítida em Branco Puro */}
+                          <div
+                            className="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[6px] -mt-0.5 transition-transform drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]"
+                            style={{ borderTopColor: '#ffffff' }}
+                          />
                         </div>
 
                         {/* Tooltip elegante suspenso exibido EXCLUSIVAMENTE no hover (zero poluição no mapa) */}
@@ -631,9 +614,6 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                         </div>
                         <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
                           {nac.nome}
-                        </div>
-                        <div className="text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 mt-0.5">
-                          +{nac.questoesCount} q • {nac.provasCount} cadernos
                         </div>
                       </div>
                     </div>
@@ -726,7 +706,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                           <div
                             key={inst.id}
                             id={`inst-card-${inst.id}`}
-                            className={`p-3.5 rounded-2xl border transition-all duration-200 flex flex-col justify-between group shadow-2xs cursor-pointer ${
+                            className={`p-3 rounded-2xl border transition-all duration-200 flex items-center group shadow-2xs cursor-pointer ${
                               isHighlighted
                                 ? 'bg-zinc-100 dark:bg-[#1b1b24] ring-2 scale-[1.01]'
                                 : 'bg-zinc-50/80 dark:bg-[#121216] border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-400 dark:hover:border-zinc-700'
@@ -736,7 +716,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                             onMouseLeave={() => setHighlightedInstId(null)}
                             onClick={() => onSelectInstitution?.(inst as any)}
                           >
-                            <div className="flex items-start gap-2.5">
+                            <div className="flex items-center gap-3 w-full min-w-0">
                               <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 flex items-center justify-center p-1 shrink-0 overflow-hidden shadow-2xs">
                                 {inst.logoSlug ? (
                                   // eslint-disable-next-line @next/next/no-img-element
@@ -762,23 +742,16 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                                   <span className="px-1.5 py-0.2 rounded text-[9px] font-bold bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-300 shrink-0">
                                     {inst.uf}
                                   </span>
+                                  {inst.bancaOrganizadora && (
+                                    <span className="text-[9px] font-medium text-zinc-400 dark:text-zinc-500 truncate max-w-[120px]">
+                                      • {inst.bancaOrganizadora}
+                                    </span>
+                                  )}
                                 </div>
-                                <div className="text-[11px] text-zinc-600 dark:text-zinc-400 leading-snug line-clamp-2 mt-0.5">
+                                <div className="text-[11px] text-zinc-600 dark:text-zinc-400 leading-snug line-clamp-1 mt-0.5">
                                   {inst.nome}
                                 </div>
                               </div>
-                            </div>
-
-                            <div className="mt-3 pt-2.5 border-t border-zinc-200/80 dark:border-zinc-800/80 flex items-center justify-between text-[11px]">
-                              <div className="flex items-center gap-1 text-zinc-500 dark:text-zinc-400">
-                                <FileSpreadsheet className="w-3 h-3" />
-                                <span className="font-semibold text-zinc-700 dark:text-zinc-300">
-                                  +{inst.questoesCount} questões
-                                </span>
-                              </div>
-                              <span className="text-[10px] font-medium text-zinc-500 dark:text-zinc-400 truncate max-w-[120px]">
-                                {inst.bancaOrganizadora ? `Banca: ${inst.bancaOrganizadora}` : `${inst.provasCount} cadernos`}
-                              </span>
                             </div>
                           </div>
                         );

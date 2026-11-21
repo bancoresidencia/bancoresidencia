@@ -611,7 +611,11 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
       <div
         onClick={(e) => {
           const target = e.target as HTMLElement;
-          if (target.closest('button, a, input, textarea, [role="button"], svg, aside')) {
+          const isPenOpen = typeof window !== 'undefined' && localStorage.getItem('study-ink-open') === 'true';
+          if (
+            isPenOpen ||
+            target.closest('button, a, input, textarea, [role="button"], svg, aside, [data-study-ink-active="true"]')
+          ) {
             return;
           }
           if (!isInlineEditing) {

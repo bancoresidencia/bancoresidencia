@@ -21,7 +21,8 @@ import {
   Minimize2,
   Move,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Copy
 } from 'lucide-react'
 import { useAuth } from '@/context/AuthContext'
 import {
@@ -34,6 +35,7 @@ import {
   projectInk,
   detectOptionGesture,
   snapMarkerPoint,
+  getSynchronousLocalInk,
   type OptionTarget,
   type InkBox,
   type InkChange,
@@ -188,8 +190,15 @@ function Editor({
   const anchor = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
   const [mounted, setMounted] = useState(false)
-  const [tool, setTool] = useState<Tool>('read')
-  const [open, setOpen] = useState(false)
+  const [tool, setTool] = useState<Tool>(() => {
+    if (typeof window === 'undefined') return 'read'
+    const saved = localStorage.getItem('study-ink-tool') as Tool
+    return saved && ['pen', 'marker', 'erase', 'lasso', 'line', 'note'].includes(saved) ? saved : 'read'
+  })
+  const [open, setOpen] = useState(() => {
+    if (typeof window === 'undefined') return false
+    return localStorage.getItem('study-ink-open') === 'true'
+  })
   const [dockPosition, setDockPosition] = useState<'right' | 'left' | 'top'>('right')
   const [isDockCollapsed, setIsDockCollapsed] = useState(false)
   const [activeDrawer, setActiveDrawer] = useState<Tool | 'history' | null>(null)
@@ -198,13 +207,22 @@ function Editor({
   const [onlyMarker, setOnlyMarker] = useState(false)
   const [cut, setCut] = useState(false)
   const [selection, setSelection] = useState<string[]>([])
+  const [dragOffset, setDragOffset] = useState<{ dx: number; dy: number } | null>(null)
+  const isDraggingSelection = useRef<{ startX: number; startY: number; initialStrokes: InkStroke[] } | null>(null)
   const [erasedIds, setErasedIds] = useState<string[]>([])
   const [counts, setCounts] = useState([0, 0])
   const [radius, setRadius] = useState(14)
   const [blocks, setBlocks] = useState<Record<string, InkBox>>({})
-  const [storedStrokes, setStrokes] = useState<InkStroke[]>([])
+  const [storedStrokes, setStrokes] = useState<InkStroke[]>(() => {
+    return getSynchronousLocalInk(baseDoc, attemptNumber)
+  })
   const strokes = storedStrokes.map(s => projectInk(s, blocks))
-  const [previousStrokes, setPreviousStrokes] = useState<InkStroke[]>([])
+  const [previousStrokes, setPreviousStrokes] = useState<InkStroke[]>(() => {
+    if (attemptNumber > 1) {
+      return getSynchronousLocalInk(baseDoc, attemptNumber - 1)
+    }
+    return []
+  })
   const [showPreviousAttempt, setShowPreviousAttempt] = useState(false)
   const [postIts, setPostIts] = useState<StickyPostIt[]>([])
   const [ready, setReady] = useState(false)
@@ -562,6 +580,92 @@ function Editor({
     setIsDrawing(false)
   }
 
+  function handleSelectionDragStart(e: ReactPointerEvent<HTMLDivElement>) {
+    if (e.button > 1) return
+    e.stopPropagation()
+    const pt = point(e.nativeEvent)
+    const selectedStrokes = strokes.filter(s => selection.includes(s.id))
+    isDraggingSelection.current = {
+      startX: pt.x,
+      startY: pt.y,
+      initialStrokes: selectedStrokes
+    }
+    setDragOffset({ dx: 0, dy: 0 })
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId)
+    } catch {}
+  }
+
+  function handleSelectionDragMove(e: ReactPointerEvent<HTMLDivElement>) {
+    if (!isDraggingSelection.current) return
+    e.stopPropagation()
+    const pt = point(e.nativeEvent)
+    const dx = pt.x - isDraggingSelection.current.startX
+    const dy = pt.y - isDraggingSelection.current.startY
+    setDragOffset({ dx, dy })
+  }
+
+  function handleSelectionDragEnd(e: ReactPointerEvent<HTMLDivElement>) {
+    if (!isDraggingSelection.current) return
+    e.stopPropagation()
+    const pt = point(e.nativeEvent)
+    const dx = pt.x - isDraggingSelection.current.startX
+    const dy = pt.y - isDraggingSelection.current.startY
+    const initial = isDraggingSelection.current.initialStrokes
+    isDraggingSelection.current = null
+    setDragOffset(null)
+    try {
+      e.currentTarget.releasePointerCapture(e.pointerId)
+    } catch {}
+
+    if (Math.abs(dx) > 2 || Math.abs(dy) > 2) {
+      const after = initial.map(s => ({
+        ...s,
+        points: s.points.map(p => ({
+          ...p,
+          x: p.x + dx,
+          y: p.y + dy
+        }))
+      }))
+      commit({ before: initial, after })
+    }
+  }
+
+  function changeSelectionColor(newColor: string) {
+    if (!selection.length) return
+    const objects = strokes.filter(s => selection.includes(s.id))
+    if (!objects.length) return
+    const after = objects.map(s => ({ ...s, color: newColor }))
+    commit({ before: objects, after })
+  }
+
+  function deleteSelection() {
+    if (!selection.length) return
+    const objects = strokes.filter(s => selection.includes(s.id))
+    if (!objects.length) return
+    commit({ before: objects, after: [] })
+    setSelection([])
+  }
+
+  function duplicateSelection() {
+    if (!selection.length) return
+    const objects = strokes.filter(s => selection.includes(s.id))
+    if (!objects.length) return
+    const offset = 20
+    const after = objects.map(s => ({
+      ...s,
+      id: crypto.randomUUID(),
+      created: Date.now(),
+      points: s.points.map(p => ({ ...p, x: p.x + offset, y: p.y + offset }))
+    }))
+    commit({ before: [], after })
+    setSelection(after.map(s => s.id))
+  }
+
+  function clearSelection() {
+    setSelection([])
+  }
+
   function _transformSelection(scale: number, dx: number, dy: number, copy = false) {
     const objects = strokes.filter(s => selection.includes(s.id))
     const pivot = objects[0]?.points[0]
@@ -690,12 +794,14 @@ function Editor({
 
     const coords = stroke.points.map(p => p.x + ',' + p.y).join(' ')
     const first = stroke.points[0]
+    const isSelected = selection.includes(stroke.id)
 
     return (
       <g
         key={stroke.id}
+        transform={isSelected && dragOffset ? `translate(${dragOffset.dx}, ${dragOffset.dy})` : undefined}
         style={{
-          filter: tool === 'lasso' && selection.includes(stroke.id) ? 'drop-shadow(0 0 4px #3b82f6)' : undefined
+          filter: tool === 'lasso' && isSelected ? 'drop-shadow(0 0 4px #38bdf8)' : undefined
         }}
         opacity={isGhost ? 0.35 : stroke.opacity}
         fill={stroke.color}
@@ -731,6 +837,31 @@ function Editor({
     ...(preview && tool !== 'erase' ? [preview] : [])
   ]
 
+  const selectedStrokes = strokes.filter(s => selection.includes(s.id))
+  let selBox: { minX: number; minY: number; maxX: number; maxY: number; width: number; height: number } | null = null
+  if (selectedStrokes.length > 0) {
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
+    for (const s of selectedStrokes) {
+      for (const p of s.points) {
+        if (p.x < minX) minX = p.x
+        if (p.x > maxX) maxX = p.x
+        if (p.y < minY) minY = p.y
+        if (p.y > maxY) maxY = p.y
+      }
+    }
+    if (minX !== Infinity) {
+      const padding = 12
+      selBox = {
+        minX: Math.max(0, minX - padding),
+        minY: Math.max(0, minY - padding),
+        maxX: maxX + padding,
+        maxY: maxY + padding,
+        width: Math.max(48, (maxX - minX) + padding * 2),
+        height: Math.max(36, (maxY - minY) + padding * 2)
+      }
+    }
+  }
+
   // Acionamento com Detecção de 2º Toque (Double-Tap)
   function handleToolSelect(selectedTool: Tool) {
     const now = performance.now()
@@ -739,11 +870,17 @@ function Editor({
 
     if (!isDoubleTap && tool !== selectedTool) {
       setTool(selectedTool)
+      try {
+        localStorage.setItem('study-ink-tool', selectedTool)
+      } catch {}
       // No primeiro toque em outra ferramenta, apenas seleciona e recolhe o drawer
       setActiveDrawer(null)
     } else {
       // 2º toque (double-tap) ou toque na ferramenta já ativa: abre ou fecha o drawer de opções
       setTool(selectedTool)
+      try {
+        localStorage.setItem('study-ink-tool', selectedTool)
+      } catch {}
       setActiveDrawer(prev => (prev === selectedTool ? null : selectedTool))
     }
   }
@@ -751,12 +888,13 @@ function Editor({
   function toggleCanetaFab() {
     setOpen(prev => {
       const next = !prev
-      if (next) {
-        setTool('pen')
-      } else {
-        setTool('read')
-        setActiveDrawer(null)
-      }
+      const nextTool = next ? 'pen' : 'read'
+      setTool(nextTool)
+      try {
+        localStorage.setItem('study-ink-open', String(next))
+        localStorage.setItem('study-ink-tool', nextTool)
+      } catch {}
+      if (!next) setActiveDrawer(null)
       return next
     })
   }
@@ -997,8 +1135,86 @@ function Editor({
           )
         })}
 
+        {/* CAIXA DELIMITADORA E BARRA DE AÇÕES DO LAÇO (MOVER EM BLOCO E ALTERAR CORES) */}
+        {tool === 'lasso' && selBox && (
+          <div
+            style={{
+              left: `${selBox.minX + (dragOffset?.dx || 0)}px`,
+              top: `${selBox.minY + (dragOffset?.dy || 0)}px`,
+              width: `${selBox.width}px`,
+              height: `${selBox.height}px`
+            }}
+            className="absolute pointer-events-auto border-2 border-dashed border-sky-400 bg-sky-500/10 rounded-xl cursor-move z-[8] select-none touch-none"
+            onPointerDown={handleSelectionDragStart}
+            onPointerMove={handleSelectionDragMove}
+            onPointerUp={handleSelectionDragEnd}
+            onPointerCancel={handleSelectionDragEnd}
+          >
+            {/* Dica de arraste */}
+            <div className="absolute inset-0 flex items-center justify-center opacity-40 hover:opacity-100 transition-opacity pointer-events-none">
+              <span className="bg-sky-950/80 text-sky-200 text-[10px] font-bold px-2 py-0.5 rounded-full border border-sky-400/50 flex items-center gap-1 shadow-md">
+                <Move className="w-3 h-3" /> Arrastar seleção
+              </span>
+            </div>
+
+            {/* Barra de Ações Flutuante do Laço (Cores em Bloco, Duplicar, Excluir, Fechar) */}
+            <div
+              onClick={e => e.stopPropagation()}
+              onPointerDown={e => e.stopPropagation()}
+              style={{
+                bottom: selBox.minY < 50 ? undefined : 'calc(100% + 8px)',
+                top: selBox.minY < 50 ? 'calc(100% + 8px)' : undefined
+              }}
+              className="absolute left-1/2 -translate-x-1/2 bg-zinc-950/95 border border-zinc-700/80 text-zinc-100 rounded-2xl p-1.5 shadow-2xl backdrop-blur-xl flex items-center gap-1.5 text-xs font-medium z-[12] whitespace-nowrap animate-in fade-in zoom-in-95"
+            >
+              {/* Cores em Bloco */}
+              <div className="flex items-center gap-1 pl-1 pr-1.5 border-r border-zinc-800">
+                {COLOR_PRESETS.map(c => (
+                  <button
+                    key={c.value}
+                    type="button"
+                    onClick={() => changeSelectionColor(c.value)}
+                    title={`Mudar cor da seleção para ${c.name}`}
+                    className={`w-5 h-5 rounded-full transition-transform hover:scale-125 cursor-pointer ${c.border ?? ''} ${c.bg ?? 'bg-emerald-500'}`}
+                  />
+                ))}
+              </div>
+
+              {/* Duplicar */}
+              <button
+                type="button"
+                onClick={duplicateSelection}
+                title="Duplicar traços selecionados"
+                className="p-1 hover:bg-zinc-800 text-zinc-300 hover:text-white rounded-lg transition-colors cursor-pointer"
+              >
+                <Copy className="w-3.5 h-3.5" />
+              </button>
+
+              {/* Excluir */}
+              <button
+                type="button"
+                onClick={deleteSelection}
+                title="Excluir traços selecionados"
+                className="p-1 hover:bg-rose-950/40 text-zinc-400 hover:text-rose-400 rounded-lg transition-colors cursor-pointer"
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+              </button>
+
+              {/* Desmarcar */}
+              <button
+                type="button"
+                onClick={clearSelection}
+                title="Fechar seleção"
+                className="p-1 hover:bg-zinc-800 text-zinc-400 hover:text-white rounded-lg transition-colors cursor-pointer"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Botão Flutuante de Rever Rascunho da Tentativa Anterior (quando o aluno clica em Refazer) */}
-        {attemptNumber > 1 && previousStrokes.length > 0 && (
+        {attemptNumber > 1 && (
           <button
             type="button"
             onClick={() => setShowPreviousAttempt(prev => !prev)}
@@ -1011,6 +1227,11 @@ function Editor({
           >
             {showPreviousAttempt ? <EyeOff className="w-3.5 h-3.5 text-amber-400" /> : <Eye className="w-3.5 h-3.5 text-amber-400" />}
             <span>{showPreviousAttempt ? 'Ocultar rascunhos anteriores' : 'Rever rascunhos anteriores'}</span>
+            {previousStrokes.length > 0 && (
+              <span className="ml-0.5 px-1.5 py-0.2 rounded-full bg-amber-500/30 text-amber-300 text-[10px]">
+                {previousStrokes.length}
+              </span>
+            )}
           </button>
         )}
       </div>
@@ -1029,7 +1250,11 @@ function Editor({
           {/* 1. BOTÃO FAB CIRCULAR NO CANTO INFERIOR (LIGA / DESLIGA) */}
           <button
             type="button"
-            onClick={toggleCanetaFab}
+            onClick={(e) => {
+              e.stopPropagation()
+              toggleCanetaFab()
+            }}
+            onPointerDown={(e) => e.stopPropagation()}
             aria-label={open ? 'Desativar Caneta Médica' : 'Ativar Caneta Médica'}
             title={open ? 'Desativar barra da caneta' : 'Ativar barra da caneta médica (S Pen)'}
             className={`fixed bottom-5 right-5 z-[55] w-12 h-12 rounded-full shadow-[0_12px_36px_rgba(0,0,0,0.6)] flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer ${
@@ -1045,7 +1270,11 @@ function Editor({
           {open && isDockCollapsed && (
             <button
               type="button"
-              onClick={() => handleToggleDockCollapsed(false)}
+              onClick={(e) => {
+                e.stopPropagation()
+                handleToggleDockCollapsed(false)
+              }}
+              onPointerDown={(e) => e.stopPropagation()}
               title="Expandir barra de ferramentas da caneta"
               aria-label="Expandir barra de ferramentas"
               style={{
@@ -1075,6 +1304,8 @@ function Editor({
             <aside
               role="toolbar"
               aria-label="Barra de Ferramentas de Escrita"
+              onClick={(e) => e.stopPropagation()}
+              onPointerDown={(e) => e.stopPropagation()}
               style={{
                 top: dockPosition === 'top' ? 'calc(1rem + env(safe-area-inset-top, 0px))' : '50%',
                 transform: dockPosition === 'top' ? 'translateX(-50%)' : 'translateY(-50%)',
@@ -1204,6 +1435,8 @@ function Editor({
           {/* 3. DRAWER / FLYOUT DE PROPRIEDADES NO 2º TOQUE (DOUBLE-TAP) */}
           {open && activeDrawer && (
             <div
+              onClick={(e) => e.stopPropagation()}
+              onPointerDown={(e) => e.stopPropagation()}
               style={{
                 top: dockPosition === 'top' ? 'calc(4.5rem + env(safe-area-inset-top, 0px))' : '50%',
                 transform: dockPosition === 'top' ? 'translateX(-50%)' : 'translateY(-50%)',

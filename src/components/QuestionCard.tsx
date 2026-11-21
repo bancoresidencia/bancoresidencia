@@ -1440,7 +1440,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400 shrink-0" />
                 )}
                 <span>{isAnswered ? 'Resolvida nesta sessão' : 'Resolvida anteriormente'}</span>
-                {(isAnswered || !!question.user_answer) && (
+                {(isAnswered || hasPreviousAnswer) && (
                   <Button
                     type="button"
                     variant="outline"
