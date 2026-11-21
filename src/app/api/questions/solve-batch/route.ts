@@ -68,12 +68,6 @@ function checkUserCadence(userId: string): boolean {
   return entry.batchCount <= 10;
 }
 
-interface CachedPlanCheck {
-  allowed: boolean;
-  expiresAt: number;
-}
-const planEligibilityCache = new Map<string, CachedPlanCheck>();
-const PLAN_CACHE_TTL_MS = 60 * 1000;
 
 export async function POST(req: NextRequest) {
   try {
@@ -109,7 +103,7 @@ export async function POST(req: NextRequest) {
     }
 
     // 1. Identificar usuário autenticado
-    let authenticatedUser: { id: string; appRole?: string } | null = null;
+    let authenticatedUser: { id: string } | null = null;
     const supabaseAdmin = getSupabaseAdmin();
 
     const authHeader = req.headers.get('authorization');
@@ -118,7 +112,7 @@ export async function POST(req: NextRequest) {
       if (token.length > 20) {
         const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
         if (authUser) {
-          authenticatedUser = { id: authUser.id, appRole: authUser.app_metadata?.role as string | undefined };
+          authenticatedUser = { id: authUser.id };
         }
       }
     }
@@ -128,7 +122,7 @@ export async function POST(req: NextRequest) {
         const supabaseServer = await createSupabaseServerClient();
         const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
         if (cookieUser) {
-          authenticatedUser = { id: cookieUser.id, appRole: cookieUser.app_metadata?.role as string | undefined };
+          authenticatedUser = { id: cookieUser.id };
         }
       } catch {
         // visitante não autenticado
@@ -148,37 +142,17 @@ export async function POST(req: NextRequest) {
 
     // 2. Blindagem de Paywall & Anti-Scraping: solve-batch é estritamente exclusivo para assinantes Pro/Premium ativos ou Admins
     const now = Date.now();
-    let isEligibleForBatch = isPrivilegedRole(authenticatedUser.appRole);
+    const { data: profile } = await supabaseAdmin
+      .from('profiles')
+      .select('role, subscription_plan, subscription_status, subscription_expires_at')
+      .eq('id', authenticatedUser.id)
+      .maybeSingle();
 
-    if (!isEligibleForBatch) {
-      const cachedPlan = planEligibilityCache.get(authenticatedUser.id);
-      if (cachedPlan && cachedPlan.expiresAt > now) {
-        isEligibleForBatch = cachedPlan.allowed;
-      } else {
-        const { data: profile } = await supabaseAdmin
-          .from('profiles')
-          .select('role, subscription_plan, subscription_status, subscription_expires_at')
-          .eq('id', authenticatedUser.id)
-          .maybeSingle();
-
-        const isAdminOrCurator = isPrivilegedRole(profile?.role);
-        const plan = (profile?.subscription_plan || 'free').toLowerCase();
-        const status = profile?.subscription_status || 'inactive';
-        const subExp = profile?.subscription_expires_at ? new Date(profile.subscription_expires_at).getTime() : null;
-        const isProActive = Boolean((plan === 'pro' || plan === 'premium') && status === 'active' && subExp !== null && subExp > now);
-
-        isEligibleForBatch = isAdminOrCurator || isProActive;
-
-        if (planEligibilityCache.size >= MAX_MAP_SIZE) {
-          const oldest = planEligibilityCache.keys().next().value;
-          if (oldest) planEligibilityCache.delete(oldest);
-        }
-        planEligibilityCache.set(authenticatedUser.id, {
-          allowed: isEligibleForBatch,
-          expiresAt: now + PLAN_CACHE_TTL_MS
-        });
-      }
-    }
+    const plan = (profile?.subscription_plan || 'free').toLowerCase();
+    const expiresAt = profile?.subscription_expires_at ? Date.parse(profile.subscription_expires_at) : 0;
+    const isProActive = (plan === 'pro' || plan === 'premium')
+      && profile?.subscription_status === 'active' && expiresAt > now;
+    const isEligibleForBatch = isPrivilegedRole(profile?.role) || isProActive;
 
     if (!isEligibleForBatch) {
       return NextResponse.json(

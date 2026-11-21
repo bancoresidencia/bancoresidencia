@@ -143,8 +143,8 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
             type="button"
             onClick={() => onStatusFilterChange(st)}
             className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all ${statusFilter === st
-                ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-2xs'
-                : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200/80'
+              ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-2xs'
+              : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200/80'
               }`}
           >
             {st === 'all' && 'Todos'}
@@ -159,8 +159,8 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
           type="button"
           onClick={() => onIncidenceFilterChange(incidenceFilter === 'extreme_only' ? 'all' : 'extreme_only')}
           className={`px-2 py-0.5 rounded-md text-[10px] font-bold whitespace-nowrap flex items-center gap-1 border transition-all ${incidenceFilter === 'extreme_only'
-              ? 'bg-red-500/15 text-red-600 dark:text-red-400 border-red-500/30'
-              : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-500 border-transparent hover:bg-zinc-200/80'
+            ? 'bg-red-500/15 text-red-600 dark:text-red-400 border-red-500/30'
+            : 'bg-zinc-100 dark:bg-zinc-800/80 text-zinc-500 border-transparent hover:bg-zinc-200/80'
             }`}
         >
           <span>🔥🔥🔥🔥 Top</span>
@@ -173,8 +173,8 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
           type="button"
           onClick={() => onSpecialtyChange('all')}
           className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all ${selectedSpecialty === 'all'
-              ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-2xs'
-              : 'text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100'
+            ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 shadow-2xs'
+            : 'text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100'
             }`}
         >
           Todas Áreas
@@ -188,8 +188,8 @@ export const FocusChecklistHeader: React.FC<FocusChecklistHeaderProps> = ({
               type="button"
               onClick={() => onSpecialtyChange(esp)}
               className={`px-2 py-0.5 rounded-md text-[10px] font-semibold whitespace-nowrap transition-all border ${isSelected
-                  ? 'border-transparent text-white font-bold'
-                  : 'border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                ? 'border-transparent text-white font-bold'
+                : 'border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
                 }`}
               style={{
                 backgroundColor: isSelected ? color : undefined

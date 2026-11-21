@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { computePlatformLeaderboard } from '@/services/rankingService';
 import { verifyStudentSession } from '@/lib/supabase/studentAuth';
-import { isPrivilegedRole } from '@/utils/security';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 import { getRankingModality } from '@/utils/leaderboard';
 import { RANKING_TABS } from '@/types/ranking';
 
@@ -19,7 +19,6 @@ export async function GET(req: NextRequest) {
     }
 
     const authenticatedUserId = auth.user.id;
-    const isAdmin = isPrivilegedRole(auth.user.app_metadata?.role as string | undefined);
 
     const { searchParams } = req.nextUrl;
     const banca = searchParams.get('banca')?.trim().slice(0, 150);
@@ -39,7 +38,8 @@ export async function GET(req: NextRequest) {
     const offset = Number.isSafeInteger(rawOffset) ? Math.max(0, rawOffset) : 0;
 
     // Invalidação forçada de cache restrita a administradores/curadores
-    const forceRefresh = isAdmin && searchParams.get('refresh') === 'true';
+    const admin = searchParams.get('refresh') === 'true' ? await verifyAdminSession(req) : null;
+    const forceRefresh = Boolean(admin?.authorized && admin.user?.id === authenticatedUserId);
 
     const result = await computePlatformLeaderboard(
       {

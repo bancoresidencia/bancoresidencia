@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Inter } from "next/font/google";
+import { headers } from "next/headers";
 import "./globals.css";
 
 const inter = Inter({
@@ -53,11 +54,16 @@ import { SubscriptionProvider } from "@/context/SubscriptionContext";
 import { ToastProvider } from "@/components/Toast";
 import { HippocampusGlobalSplash } from "@/components/HippocampusGlobalSplash";
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Lê o nonce injetado pelo middleware.ts (gerado por requisição).
+  // O nonce é necessário para que o <Script strategy="beforeInteractive"> passe
+  // pela CSP sem 'unsafe-inline' em script-src.
+  const headersList = await headers();
+  const nonce = headersList.get('x-nonce') ?? undefined;
   return (
     <html
       lang="pt-BR"
@@ -70,6 +76,7 @@ export default function RootLayout({
         <Script
           id="banco-theme-init"
           strategy="beforeInteractive"
+          nonce={nonce}
           dangerouslySetInnerHTML={{
             __html: `
               (function() {

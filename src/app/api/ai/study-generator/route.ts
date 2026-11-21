@@ -56,7 +56,8 @@ export async function POST(req: NextRequest) {
       actorId = auth.user?.id || 'admin_session';
 
       // Rate limit estrito por administrador/curador autenticado (máx 5/min, imune a X-Forwarded-For)
-      if (isAiRateLimited(`study_gen_${actorId}`, 5)) {
+      // Backed pelo Supabase — serverless-safe (não usa Map in-memory)
+      if (await isAiRateLimited(`study_gen_${actorId}`, 5)) {
         return NextResponse.json(
           { success: false, error: 'Limite de geração de resumos atingido. Aguarde 1 minuto antes de solicitar novamente.' },
           { status: 429 }

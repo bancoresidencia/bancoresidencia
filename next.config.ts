@@ -5,25 +5,9 @@ const isDev = process.env.NODE_ENV === 'development';
 const motionStudioEnabled = isDev && process.env.HIPPOCAMPUS_MOTION_STUDIO === '1';
 const motionStudioOrigin = 'http://localhost:5200';
 
-function contentSecurityPolicy(allowWasm = false) {
-  return [
-    "default-src 'self'",
-    "script-src 'self' 'unsafe-inline'" +
-      (isDev ? " 'unsafe-eval'" : '') +
-      (allowWasm ? " 'wasm-unsafe-eval'" : '') +
-      ' https://sdk.mercadopago.com https://http2.mlstatic.com https://accounts.google.com',
-    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-    "img-src 'self' data: blob: https:",
-    "font-src 'self' data: https://fonts.gstatic.com",
-    "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://api.mercadopago.com https://http2.mlstatic.com https://secure-fields.mercadopago.com https://api-static.mercadopago.com https://www.mercadolibre.com https://api.mercadolibre.com https://accounts.google.com https://www.googleapis.com wss: ws:" +
-      (motionStudioEnabled ? ` ${motionStudioOrigin} ws://localhost:5200` : ''),
-    "frame-src 'self' https://accounts.google.com https://*.mercadopago.com https://www.mercadopago.com.br",
-    "frame-ancestors 'none'",
-    "object-src 'none'",
-    "base-uri 'self'",
-    "form-action 'self' https://accounts.google.com https://www.mercadopago.com.br"
-  ].join('; ');
-}
+// NOTA: Content-Security-Policy foi migrada para src/middleware.ts com nonces
+// por requisição (elimina 'unsafe-inline' em script-src — C-3).
+// Esta função é mantida apenas como referência histórica e NÃO é usada.
 
 const nextConfig: NextConfig = {
   devIndicators: false,
@@ -65,7 +49,35 @@ const nextConfig: NextConfig = {
     ];
   },
   async headers() {
+    // Em produção, ACAO é restrito ao domínio próprio.
+    // Em dev, localhost também é aceito.
+    // Nota: o CORS dinâmico por Origin é feito no middleware.ts —
+    // estes headers são o fallback estático para rotas sem preflight.
+    const apiCorsHeaders = [
+      {
+        key: 'Access-Control-Allow-Origin',
+        value: isDev ? 'http://localhost:3000' : 'https://hippocampusresidencia.com.br'
+      },
+      {
+        key: 'Access-Control-Allow-Methods',
+        value: 'GET, POST, PUT, PATCH, DELETE, OPTIONS'
+      },
+      {
+        key: 'Access-Control-Allow-Headers',
+        value: 'Content-Type, Authorization, X-Requested-With'
+      },
+      {
+        key: 'Access-Control-Max-Age',
+        value: '86400'
+      }
+    ];
+
     return [
+      {
+        // CORS explícito para todas as rotas de API — sobrescreve o wildcard do Vercel CDN
+        source: '/api/:path*',
+        headers: apiCorsHeaders
+      },
       {
         source: '/models/:path*',
         headers: [
@@ -115,15 +127,10 @@ const nextConfig: NextConfig = {
             key: 'Cross-Origin-Opener-Policy',
             value: 'same-origin-allow-popups'
           },
-          {
-            key: 'Content-Security-Policy',
-            value: contentSecurityPolicy()
-          }
+          // Content-Security-Policy é injetada pelo middleware.ts com nonce por
+          // requisição. NÃO definir aqui para evitar que o CDN da Vercel sobrescreva
+          // o header dinâmico gerado pelo middleware.
         ]
-      },
-      {
-        source: '/',
-        headers: [{ key: 'Content-Security-Policy', value: contentSecurityPolicy(true) }]
       },
       {
         source: '/auth/confirm',

@@ -1,6 +1,6 @@
 import { NextRequest } from 'next/server';
 import { User } from '@supabase/supabase-js';
-import { createClient } from '@/lib/supabase/server';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 import { isPrivilegedRole, isStrictAdminRole } from '@/utils/security';
 import { timingSafeEqualStrings } from '@/utils/serverCrypto';
@@ -16,8 +16,8 @@ export interface AdminAuthResult {
 }
 
 export interface VerifyAdminOptions {
-  /** Quando true, exige estritamente role 'admin' ou 'superadmin' (bloqueia 'curador'). */
   requireStrictAdmin?: boolean;
+  allowM2M?: boolean;
 }
 
 /**
@@ -102,64 +102,29 @@ export async function verifyAdminSession(
       }
     }
 
-    // 2. Validação da sessão de cookies via Supabase Server Client
-    let user: User | null = null;
-    try {
-      const supabase = await createClient();
-      const {
-        data: { user: cookieUser },
-        error: userError
-      } = await supabase.auth.getUser();
-
-      if (!userError && cookieUser) {
-        user = cookieUser;
-      }
-    } catch {
-      // Ignora erro de cookieStore e segue para validação
+    const session = await verifyStudentSession(req);
+    if (!session.authorized || !session.user) {
+      return { authorized: false, status: session.status, error: session.error };
     }
 
-    if (!user) {
-      return {
-        authorized: false,
-        error: 'Acesso não autorizado: faça login como administrador para continuar.',
-        status: 401
-      };
-    }
-
-    // 3. Checagem em app_metadata (imutável pelo usuário comum)
-    const appRole = user.app_metadata?.role as string | undefined;
-    if (checkRole(appRole)) {
-      return {
-        authorized: true,
-        user,
-        role: appRole,
-        status: 200
-      };
-    }
-
-    // 4. Checagem na tabela public.profiles via Service Role (para não ser bloqueado por RLS)
-    const { data: profile, error: profileError } = await supabaseAdmin
+    const { user } = session;
+    const { data: profile, error } = await getSupabaseAdmin()
       .from('profiles')
       .select('role')
       .eq('id', user.id)
       .maybeSingle();
+    if (error) throw error;
 
-    if (!profileError && profile && checkRole(profile.role)) {
-      return {
-        authorized: true,
-        user,
-        role: profile.role,
-        status: 200
-      };
+    if (profile && checkRole(profile.role)) {
+      return { authorized: true, user, role: profile.role, status: 200 };
     }
 
     return {
       authorized: false,
-      error: forbiddenMessage,
-      status: 403
+      status: 403,
+      error: 'Acesso negado: sua conta não possui os privilégios necessários.'
     };
-  } catch (err) {
-    console.error('[AdminAuth] Erro inesperado ao verificar sessão administrativa:', err);
+  } catch {
     return {
       authorized: false,
       error: 'Erro interno ao validar autorização de acesso.',

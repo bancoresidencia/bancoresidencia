@@ -373,8 +373,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         .eq('id', supabaseUser.id)
         .maybeSingle();
 
-      const appRole = supabaseUser.app_metadata?.role as string | undefined;
-      const rawRole = profile?.role || appRole || 'student';
+      const rawRole = profile?.role || 'student';
       const role: 'admin' | 'curator' | 'curador' | 'superadmin' | 'student' =
         rawRole as 'admin' | 'curator' | 'curador' | 'superadmin' | 'student';
 

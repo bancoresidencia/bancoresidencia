@@ -46,7 +46,7 @@ function sanitizeText(txt: string): string {
 export async function POST(req: NextRequest) {
   try {
     // 1. Verificação estrita de autorização de Administrador / Curador
-    const auth = await verifyAdminSession(req);
+    const auth = await verifyAdminSession(req, { allowM2M: true });
     if (!auth.authorized) {
       return NextResponse.json(
         { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },
@@ -57,7 +57,7 @@ export async function POST(req: NextRequest) {
     // 1.1 Rate limiting por curador autenticado contra abuso / Denial of Wallet de Gemini
     if (!auth.isM2M) {
       const rateKey = `curadoria_ai_${auth.user?.id || extractTrustedClientIpFromHeaders(req.headers)}`;
-      if (isAiRateLimited(rateKey, 12)) {
+      if (await isAiRateLimited(rateKey, 12)) {
         return NextResponse.json(
           { success: false, error: 'Limite de gerações de comentário por minuto atingido (12/min). Aguarde um instante.' },
           { status: 429, headers: { 'Retry-After': '30' } }

@@ -18,7 +18,8 @@ export async function POST(req: NextRequest) {
     }
 
     // Rate limiting estrito por usuário autenticado contra DoS síncrono no Event Loop (máx 6 uploads/min)
-    if (isAiRateLimited(`anki_import_${auth.user.id}`, 6)) {
+    // Backed pelo Supabase — serverless-safe (não usa Map in-memory)
+    if (await isAiRateLimited(`anki_import_${auth.user.id}`, 6)) {
       return NextResponse.json(
         { success: false, error: 'Limite de importações atingido temporariamente (máx. 6/min). Aguarde um instante.' },
         { status: 429, headers: { 'Retry-After': '30' } }

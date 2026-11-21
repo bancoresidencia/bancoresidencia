@@ -2,6 +2,7 @@ import crypto from 'crypto';
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { isRateLimited } from '@/lib/rateLimiter';
 import {
   validateQuestionId,
   UUID_REGEX,
@@ -18,45 +19,15 @@ export const dynamic = 'force-dynamic';
 
 const VALID_STUDENT_CHOICES = new Set(['A', 'B', 'C', 'D', 'E']);
 
-// In-Memory Rate Limiter com teto FIFO contra raspagem acelerada e OOM (Max 60 req/min por IP)
-interface RateLimitEntry {
-  count: number;
-  resetAt: number;
-}
-const rateLimitMap = new Map<string, RateLimitEntry>();
-const RATE_LIMIT_WINDOW_MS = 60 * 1000;
+// Rate limiter delegado ao módulo centralizado (Supabase-backed, serverless-safe)
+// Ver src/lib/rateLimiter.ts
+const RATE_LIMIT_WINDOW_S = 60;
 const MAX_REQUESTS_PER_WINDOW = 60;
+// Teto do cache em memória de questões (por instância — aceitável pois é cache, não estado crítico)
 const MAX_MAP_ENTRIES = 5000;
 
 function extractClientIp(req: NextRequest): string {
   return extractTrustedClientIpFromHeaders(req.headers);
-}
-
-function isRateLimited(key: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitMap.get(key);
-
-  if (entry && entry.resetAt >= now) {
-    if (entry.count >= MAX_REQUESTS_PER_WINDOW) return true;
-    entry.count++;
-    return false;
-  }
-
-  if (entry) rateLimitMap.delete(key);
-
-  if (rateLimitMap.size >= MAX_MAP_ENTRIES) {
-    let evicted = 0;
-    for (const [k, val] of rateLimitMap.entries()) {
-      if (val.resetAt < now || evicted < 250) {
-        rateLimitMap.delete(k);
-        evicted++;
-        if (rateLimitMap.size < MAX_MAP_ENTRIES - 250) break;
-      }
-    }
-  }
-
-  rateLimitMap.set(key, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
-  return false;
 }
 
 // Cota de Visitante Stateless com Cookie Assinado HMAC-SHA256 (validação constant-time)
@@ -127,45 +98,9 @@ function createSignedGuestQuotaCookie(questionIds: Set<string>): string {
   return `${payloadB64}.${signature}`;
 }
 
-interface GuestDailyQuota {
-  date: string;
-  questionIds: Set<string>;
-}
-const guestDailyQuotaMap = new Map<string, GuestDailyQuota>();
-
-function checkGuestQuota(clientIp: string, questionId: string): { limitReached: boolean; count: number } {
-  const todayStr = new Date().toISOString().slice(0, 10);
-  let entry = guestDailyQuotaMap.get(clientIp);
-
-  if (!entry || entry.date !== todayStr) {
-    if (guestDailyQuotaMap.size >= MAX_MAP_ENTRIES) {
-      const oldestKey = guestDailyQuotaMap.keys().next().value;
-      if (oldestKey) guestDailyQuotaMap.delete(oldestKey);
-    }
-    entry = { date: todayStr, questionIds: new Set<string>() };
-    guestDailyQuotaMap.set(clientIp, entry);
-  }
-
-  if (entry.questionIds.has(questionId)) {
-    return { limitReached: false, count: entry.questionIds.size };
-  }
-
-  if (entry.questionIds.size >= 10) {
-    return { limitReached: true, count: entry.questionIds.size };
-  }
-
-  return { limitReached: false, count: entry.questionIds.size };
-}
-
-function recordGuestSolve(clientIp: string, questionId: string) {
-  const todayStr = new Date().toISOString().slice(0, 10);
-  let entry = guestDailyQuotaMap.get(clientIp);
-  if (!entry || entry.date !== todayStr) {
-    entry = { date: todayStr, questionIds: new Set<string>() };
-    guestDailyQuotaMap.set(clientIp, entry);
-  }
-  entry.questionIds.add(questionId);
-}
+// Cota de Visitante Stateless com Cookie Assinado HMAC-SHA256 (validação constant-time)
+// O guestDailyQuotaMap in-memory foi removido — a cota primária é agora o cookie HMAC.
+// O rate limiter por IP usa Supabase via isRateLimited() para ser serverless-safe.
 
 interface CachedQuestionData {
   id: string;
@@ -191,7 +126,7 @@ export async function POST(req: NextRequest) {
   try {
     const clientIp = extractClientIp(req);
 
-    if (isRateLimited(`ip_${clientIp}`)) {
+    if (await isRateLimited('solve_ip', clientIp, MAX_REQUESTS_PER_WINDOW, RATE_LIMIT_WINDOW_S)) {
       return NextResponse.json(
         {
           success: false,
@@ -235,7 +170,7 @@ export async function POST(req: NextRequest) {
     }
 
     // 3. Verificação de Identidade (Bearer Token ou Cookies SSR) ANTES de qualquer acesso a gabaritos
-    let authenticatedUser: { id: string; appRole?: string } | null = null;
+    let authenticatedUser: { id: string } | null = null;
     const supabaseAdmin = getSupabaseAdmin();
 
     const authHeader = req.headers.get('authorization');
@@ -244,7 +179,7 @@ export async function POST(req: NextRequest) {
       if (token.length > 20) {
         const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
         if (authUser) {
-          authenticatedUser = { id: authUser.id, appRole: authUser.app_metadata?.role as string | undefined };
+          authenticatedUser = { id: authUser.id };
         }
       }
     }
@@ -254,14 +189,14 @@ export async function POST(req: NextRequest) {
         const supabaseServer = await createSupabaseServerClient();
         const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
         if (cookieUser) {
-          authenticatedUser = { id: cookieUser.id, appRole: cookieUser.app_metadata?.role as string | undefined };
+          authenticatedUser = { id: cookieUser.id };
         }
       } catch {
         // visitante não autenticado
       }
     }
 
-    if (authenticatedUser && isRateLimited(`user_${authenticatedUser.id}`)) {
+    if (authenticatedUser && await isRateLimited('solve_user', authenticatedUser.id, MAX_REQUESTS_PER_WINDOW, RATE_LIMIT_WINDOW_S)) {
       return NextResponse.json(
         { success: false, error: 'Cadência de resolução acima do limite permitido. Aguarde alguns segundos.' },
         { status: 429, headers: { 'Retry-After': '15' } }
@@ -273,25 +208,21 @@ export async function POST(req: NextRequest) {
     // 4. Verificação de Plano e Elegibilidade (CRÍTICO: executado ANTES do fast-path isPrefetch!)
     let isUnlimitedPlan = false;
     if (authenticatedUser) {
-      if (isPrivilegedRole(authenticatedUser.appRole)) {
-        isUnlimitedPlan = true;
-      } else {
-        const { data: profile } = await supabaseAdmin
-          .from('profiles')
-          .select('role, subscription_plan, subscription_status, subscription_expires_at')
-          .eq('id', authenticatedUser.id)
-          .maybeSingle();
+      const { data: profile } = await supabaseAdmin
+        .from('profiles')
+        .select('role, subscription_plan, subscription_status, subscription_expires_at')
+        .eq('id', authenticatedUser.id)
+        .maybeSingle();
 
-        const isAdminOrCurator = isPrivilegedRole(profile?.role);
-        const plan = (profile?.subscription_plan || 'free').toLowerCase();
-        const status = profile?.subscription_status || 'inactive';
-        const expiresAt = profile?.subscription_expires_at ? new Date(profile.subscription_expires_at).getTime() : null;
-        // Exige data de expiração válida no futuro para planos pagos (ou admin/curador isento)
-        const isNotExpired = expiresAt !== null ? expiresAt > now : false;
-        const isProOrPremium = Boolean((plan === 'pro' || plan === 'premium') && status === 'active' && isNotExpired);
+      const isAdminOrCurator = isPrivilegedRole(profile?.role);
+      const plan = (profile?.subscription_plan || 'free').toLowerCase();
+      const status = profile?.subscription_status || 'inactive';
+      const expiresAt = profile?.subscription_expires_at ? new Date(profile.subscription_expires_at).getTime() : null;
+      // Exige data de expiração válida no futuro para planos pagos (ou admin/curador isento)
+      const isNotExpired = expiresAt !== null ? expiresAt > now : false;
+      const isProOrPremium = Boolean((plan === 'pro' || plan === 'premium') && status === 'active' && isNotExpired);
 
-        isUnlimitedPlan = isAdminOrCurator || isProOrPremium;
-      }
+      isUnlimitedPlan = isAdminOrCurator || isProOrPremium;
     }
 
     // 4.1 Blindagem Anti-Scraping & Paywall: isPrefetch é exclusivo para assinantes Pro/Premium ativos!
@@ -396,12 +327,12 @@ export async function POST(req: NextRequest) {
     const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
     const isCorrect = written === null && (isAnulada || (Boolean(goldAnswer) && studentChoice === goldAnswer));
 
-    // 6. Cota diária estrita de 10 questões/dia para visitantes e plano Gratuito
+    // 6. Cota diária estrita de 10 questões/dia para visitantes
+    // Baseada exclusivamente no cookie HMAC assinado (stateless, serverless-safe)
     if (!authenticatedUser && !readOnly) {
       const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
-      const guestCheck = checkGuestQuota(clientIp, row.id);
       const hasSolvedInCookie = guestQuota.questionIds.has(row.id);
-      const isOverLimit = (guestQuota.questionIds.size >= 10 || guestCheck.limitReached) && !hasSolvedInCookie;
+      const isOverLimit = guestQuota.questionIds.size >= 10 && !hasSolvedInCookie;
 
       if (isOverLimit) {
         return NextResponse.json(
@@ -409,7 +340,7 @@ export async function POST(req: NextRequest) {
             success: false,
             limitReached: true,
             error: 'Limite diário de 10 questões para visitantes atingido. Crie sua conta gratuita ou faça login para continuar resolvendo.',
-            dailyResolvedCount: Math.max(guestQuota.questionIds.size, guestCheck.count)
+            dailyResolvedCount: guestQuota.questionIds.size
           },
           { status: 403 }
         );
@@ -480,7 +411,7 @@ export async function POST(req: NextRequest) {
       }
       serverNow = persisted.answered_at;
     } else if (!readOnly) {
-      recordGuestSolve(clientIp, row.id);
+      // Visitante: nada a registrar no servidor (cookie é atualizado na resposta abaixo)
     }
 
     // 9. Resposta com marca d'água esteganográfica forense preservada

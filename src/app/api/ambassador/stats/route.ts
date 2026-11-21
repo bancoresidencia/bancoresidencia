@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 import { getBackendAmbassadorStats } from '@/services/ambassadorService';
-import { isStrictAdminRole, safeErrorMessage } from '@/utils/security';
+import { safeErrorMessage } from '@/utils/security';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 
 export async function GET(req: NextRequest) {
   try {
@@ -18,10 +19,15 @@ export async function GET(req: NextRequest) {
     const url = new URL(req.url);
     const queryUserId = url.searchParams.get('userId');
 
-    // Somente superadministradores podem consultar dados financeiros/chaves PIX de outro usuário (bloqueia curadores)
     let targetUserId = authUser.id;
-    const userRole = (authUser.app_metadata?.role as string) || 'student';
-    if (queryUserId && queryUserId !== authUser.id && isStrictAdminRole(userRole)) {
+    if (queryUserId && queryUserId !== authUser.id) {
+      const admin = await verifyAdminSession(req, { requireStrictAdmin: true });
+      if (!admin.authorized || admin.user?.id !== authUser.id) {
+        return NextResponse.json(
+          { error: 'Acesso negado aos dados de outro usuário.', success: false },
+          { status: admin.authorized ? 403 : admin.status }
+        );
+      }
       targetUserId = queryUserId;
     }
 
