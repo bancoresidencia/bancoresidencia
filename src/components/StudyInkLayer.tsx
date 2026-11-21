@@ -212,7 +212,10 @@ function Editor({
   const [autoGestureEnabled, setAutoGestureEnabled] = useState(true)
   const [straightMarker, setStraightMarker] = useState(true)
   const [eraserCursor, setEraserCursor] = useState<{ x: number; y: number } | null>(null)
-  const [gestureFeedback, setGestureFeedback] = useState<string>('')
+  const [isDrawing, setIsDrawing] = useState(false)
+  const [undoFeedback, setUndoFeedback] = useState(false)
+  const activeTouches = useRef<Map<number, { x: number; y: number; time: number }>>(new Map())
+  const twoFingerUndoCandidate = useRef<boolean>(false)
   const lastToolTapRef = useRef<{ tool: Tool; time: number }>({ tool: 'read', time: 0 })
 
   const touchState = useRef<{
@@ -409,6 +412,13 @@ function Editor({
 
   function sample(e: ReactPointerEvent<SVGSVGElement>) {
     // DUAL-INPUT: ROLAGEM SUAVE COM O DEDO EM MODO CANETA (NÃO AFETA A CANETA)
+    if (e.pointerType === 'touch') {
+      const touchInfo = activeTouches.current.get(e.pointerId)
+      if (touchInfo && Math.hypot(e.clientX - touchInfo.x, e.clientY - touchInfo.y) > 16) {
+        twoFingerUndoCandidate.current = false
+      }
+    }
+
     if (e.pointerType === 'touch' && onlyPen && touchState.current) {
       const ts = touchState.current
       const dy = e.clientY - ts.lastY
@@ -549,6 +559,7 @@ function Editor({
       }
     }
     setPreview(null)
+    setIsDrawing(false)
   }
 
   function _transformSelection(scale: number, dx: number, dy: number, copy = false) {
@@ -586,6 +597,16 @@ function Editor({
 
     // Ao iniciar um traço, recolhe drawers laterais para manter visão limpa
     if (activeDrawer) setActiveDrawer(null)
+
+    // Rastreamento Multi-touch para Desfazer com Dois Dedos (Two-Finger Tap Undo)
+    if (e.pointerType === 'touch') {
+      activeTouches.current.set(e.pointerId, { x: e.clientX, y: e.clientY, time: performance.now() })
+      if (activeTouches.current.size === 2) {
+        twoFingerUndoCandidate.current = true
+      }
+    } else if (e.pointerType === 'pen' && tool !== 'read') {
+      setIsDrawing(true)
+    }
 
     // DUAL-INPUT INTELIGENTE: CANETA DESENHA / DEDO ROLA OU CLICA
     if (e.pointerType === 'touch' && onlyPen) {
@@ -791,6 +812,25 @@ function Editor({
           }}
           onPointerLeave={() => setEraserCursor(null)}
           onPointerUp={e => {
+            if (e.pointerType === 'touch') {
+              const touchInfo = activeTouches.current.get(e.pointerId)
+              const isCandidate = twoFingerUndoCandidate.current
+              const wasTwoFinger = activeTouches.current.size >= 2
+              activeTouches.current.delete(e.pointerId)
+
+              // Detecção de Two-Finger Tap para Desfazer
+              if (isCandidate && wasTwoFinger && touchInfo && (performance.now() - touchInfo.time < 450)) {
+                twoFingerUndoCandidate.current = false
+                handleUndo()
+                setUndoFeedback(true)
+                setTimeout(() => setUndoFeedback(false), 1200)
+                return
+              }
+              if (activeTouches.current.size === 0) {
+                twoFingerUndoCandidate.current = false
+              }
+            }
+
             if (e.pointerType === 'touch' && touchState.current) {
               const ts = touchState.current
               try { e.currentTarget.releasePointerCapture(e.pointerId) } catch {}
@@ -843,12 +883,18 @@ function Editor({
             }
           }}
           onLostPointerCapture={e => {
+            setIsDrawing(false)
             if (touchState.current) touchState.current = null
+            activeTouches.current.clear()
+            twoFingerUndoCandidate.current = false
             if (active.current?.pointer === e.pointerId) finish()
           }}
           onPointerCancel={e => {
+            setIsDrawing(false)
             if (touchState.current?.rafId) cancelAnimationFrame(touchState.current.rafId)
             touchState.current = null
+            activeTouches.current.clear()
+            twoFingerUndoCandidate.current = false
             if (active.current?.pointer === e.pointerId) finish()
           }}
           onClick={e => e.stopPropagation()}
@@ -950,7 +996,32 @@ function Editor({
             </div>
           )
         })}
+
+        {/* Botão Flutuante de Rever Rascunho da Tentativa Anterior (quando o aluno clica em Refazer) */}
+        {attemptNumber > 1 && previousStrokes.length > 0 && (
+          <button
+            type="button"
+            onClick={() => setShowPreviousAttempt(prev => !prev)}
+            className={`absolute top-3 right-3 pointer-events-auto z-[10] px-3 py-1.5 rounded-xl text-[11px] font-bold shadow-md backdrop-blur-md border transition-all flex items-center gap-1.5 cursor-pointer active:scale-95 ${
+              showPreviousAttempt
+                ? 'bg-amber-500/25 text-amber-200 border-amber-500/50 ring-2 ring-amber-500/25'
+                : 'bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border-zinc-700/80'
+            }`}
+            title="Ligar/desligar rascunhos da tentativa anterior"
+          >
+            {showPreviousAttempt ? <EyeOff className="w-3.5 h-3.5 text-amber-400" /> : <Eye className="w-3.5 h-3.5 text-amber-400" />}
+            <span>{showPreviousAttempt ? 'Ocultar rascunhos anteriores' : 'Rever rascunhos anteriores'}</span>
+          </button>
+        )}
       </div>
+
+      {/* Feedback Visual de Toque com 2 Dedos para Desfazer */}
+      {undoFeedback && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-[60] bg-zinc-950/95 border border-zinc-700/80 text-zinc-200 px-3.5 py-1.5 rounded-2xl shadow-2xl backdrop-blur-xl flex items-center gap-1.5 text-xs font-bold animate-in fade-in slide-in-from-top-3 duration-150">
+          <Undo2 className="w-3.5 h-3.5 text-amber-400" />
+          <span>Desfeito (toque de 2 dedos)</span>
+        </div>
+      )}
 
       {/* PORTAL DO BOTÃO FAB (CANTO INFERIOR) E BARRA SLIM LATERAL ESTILO SAMSUNG NOTES */}
       {mounted && createPortal(
@@ -989,7 +1060,7 @@ function Editor({
                   : dockPosition === 'top'
                   ? 'rounded-b-2xl py-1.5 px-4 border-t-0'
                   : 'rounded-l-2xl border-r-0'
-              }`}
+              } ${isDrawing ? 'opacity-25 pointer-events-none' : 'opacity-100 pointer-events-auto'}`}
             >
               <div className="flex flex-col items-center gap-1.5">
                 <Pencil className="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 transition-transform" />
@@ -1010,9 +1081,9 @@ function Editor({
                 left: dockPosition === 'left' ? 'calc(1rem + env(safe-area-inset-left, 0px))' : dockPosition === 'top' ? '50%' : undefined,
                 right: dockPosition === 'right' ? 'calc(1rem + env(safe-area-inset-right, 0px))' : undefined
               }}
-              className={`fixed z-[52] select-none rounded-2xl border border-zinc-800/90 bg-zinc-950/95 dark:bg-zinc-900/95 text-zinc-100 shadow-[0_24px_64px_rgba(0,0,0,0.7)] backdrop-blur-2xl ring-1 ring-white/10 animate-in fade-in duration-150 p-1.5 flex ${
+              className={`fixed z-[52] select-none rounded-2xl border border-zinc-800/90 bg-zinc-950/95 dark:bg-zinc-900/95 text-zinc-100 shadow-[0_24px_64px_rgba(0,0,0,0.7)] backdrop-blur-2xl ring-1 ring-white/10 animate-in fade-in duration-150 p-1.5 flex transition-opacity duration-200 ${
                 dockPosition === 'top' ? 'flex-row items-center gap-1' : 'flex-col items-center gap-1'
-              }`}
+              } ${isDrawing ? 'opacity-20 hover:opacity-100 pointer-events-none' : 'opacity-100 pointer-events-auto'}`}
             >
               {/* Botão de Minimizar para aba discreta na borda */}
               <button
