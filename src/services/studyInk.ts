@@ -147,13 +147,23 @@ export function cutInk(stroke: InkStroke, path: InkPoint[], radius: number): Ink
       const p = { x: start.x + (end.x - start.x) * t, y: start.y + (end.y - start.y) * t, force: start.force + (end.force - start.force) * t }
       if (touchesInk(eraser, p, stroke.width / 2)) {
         changed = true
-        if (fragment.length) fragments.push(fragment)
+        if (fragment.length >= 2) {
+          fragments.push(fragment)
+        } else if (fragment.length === 1) {
+          fragments.push([fragment[0], { ...fragment[0], x: fragment[0].x + 0.2 }])
+        }
         fragment = []
-      } else fragment.push(p)
+      } else {
+        fragment.push(p)
+      }
     }
   }
   if (!changed) return [stroke]
-  if (fragment.length) fragments.push(fragment)
+  if (fragment.length >= 2) {
+    fragments.push(fragment)
+  } else if (fragment.length === 1) {
+    fragments.push([fragment[0], { ...fragment[0], x: fragment[0].x + 0.2 }])
+  }
   return fragments.map(points => ({ ...stroke, id: crypto.randomUUID(), points }))
 }
 

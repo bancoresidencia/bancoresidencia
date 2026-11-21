@@ -15,12 +15,13 @@ import {
   Trash2,
   X,
   CheckCircle2,
-  Sparkles,
   Check,
   Eye,
   EyeOff,
   Minimize2,
-  Move
+  Move,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react'
 import { useAuth } from '@/context/AuthContext'
 import {
@@ -127,6 +128,44 @@ export interface StickyPostIt {
   minimized: boolean
 }
 
+function detectScratchOut(stroke: InkStroke): boolean {
+  const pts = stroke.points
+  if (pts.length < 8 || pts.length > 180) return false
+
+  let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity
+  for (const p of pts) {
+    if (p.x < minX) minX = p.x
+    if (p.x > maxX) maxX = p.x
+    if (p.y < minY) minY = p.y
+    if (p.y > maxY) maxY = p.y
+  }
+  const width = maxX - minX
+  const height = maxY - minY
+  if (width > 280 || height > 200 || (width < 10 && height < 10)) return false
+
+  let reversalsX = 0, lastDirX = 0
+  for (let i = 1; i < pts.length; i++) {
+    const dx = pts[i].x - pts[i - 1].x
+    if (Math.abs(dx) > 3) {
+      const dirX = Math.sign(dx)
+      if (lastDirX !== 0 && dirX !== lastDirX) reversalsX++
+      lastDirX = dirX
+    }
+  }
+
+  let reversalsY = 0, lastDirY = 0
+  for (let i = 1; i < pts.length; i++) {
+    const dy = pts[i].y - pts[i - 1].y
+    if (Math.abs(dy) > 3) {
+      const dirY = Math.sign(dy)
+      if (lastDirY !== 0 && dirY !== lastDirY) reversalsY++
+      lastDirY = dirY
+    }
+  }
+
+  return reversalsX >= 3 || reversalsY >= 3
+}
+
 type Actions = {
   flip?: () => void
   choose?: (letter: string) => void
@@ -152,6 +191,7 @@ function Editor({
   const [tool, setTool] = useState<Tool>('read')
   const [open, setOpen] = useState(false)
   const [dockPosition, setDockPosition] = useState<'right' | 'left' | 'top'>('right')
+  const [isDockCollapsed, setIsDockCollapsed] = useState(false)
   const [activeDrawer, setActiveDrawer] = useState<Tool | 'history' | null>(null)
   const [styles, setStyles] = useState({ pen, marker })
   const [onlyPen, setOnlyPen] = useState(true)
@@ -169,9 +209,9 @@ function Editor({
   const [postIts, setPostIts] = useState<StickyPostIt[]>([])
   const [ready, setReady] = useState(false)
   const [status, setStatus] = useState('')
-  const [gestureFeedback, setGestureFeedback] = useState('')
   const [autoGestureEnabled, setAutoGestureEnabled] = useState(true)
   const [straightMarker, setStraightMarker] = useState(true)
+  const [eraserCursor, setEraserCursor] = useState<{ x: number; y: number } | null>(null)
   const lastToolTapRef = useRef<{ tool: Tool; time: number }>({ tool: 'read', time: 0 })
 
   const touchState = useRef<{
@@ -204,6 +244,8 @@ function Editor({
       const saved = JSON.parse(localStorage.getItem(preference) || 'null')
       if (saved?.styles?.pen && saved?.styles?.marker) setStyles(saved.styles)
       if (saved?.dockPosition) setDockPosition(saved.dockPosition)
+      if (typeof saved?.cut === 'boolean') setCut(saved.cut)
+      if (typeof saved?.isDockCollapsed === 'boolean') setIsDockCollapsed(saved.isDockCollapsed)
     } catch {}
 
     let live = true
@@ -290,8 +332,32 @@ function Editor({
 
   function persistStyle(next = styles) {
     setStyles(next)
-    try { localStorage.setItem(preference, JSON.stringify({ styles: next, dockPosition })) }
-    catch { setStatus('Preferência mantida nesta sessão.') }
+    try {
+      localStorage.setItem(preference, JSON.stringify({
+        styles: next,
+        dockPosition,
+        cut,
+        isDockCollapsed
+      }))
+    } catch {
+      setStatus('Preferência mantida nesta sessão.')
+    }
+  }
+
+  function handleToggleCut(val: boolean) {
+    setCut(val)
+    try {
+      const saved = JSON.parse(localStorage.getItem(preference) || '{}')
+      localStorage.setItem(preference, JSON.stringify({ ...saved, cut: val }))
+    } catch {}
+  }
+
+  function handleToggleDockCollapsed(val: boolean) {
+    setIsDockCollapsed(val)
+    try {
+      const saved = JSON.parse(localStorage.getItem(preference) || '{}')
+      localStorage.setItem(preference, JSON.stringify({ ...saved, isDockCollapsed: val }))
+    } catch {}
   }
 
   function write(change: InkChange) {
@@ -418,10 +484,11 @@ function Editor({
     if (bounds) current.stroke.anchor = { block: bounds[0], box: bounds[1] }
 
     if (current.isEraser || tool === 'erase') {
+      const effectiveRadius = Math.max(radius * 1.6, 28)
       if (cut) {
         const before: InkStroke[] = [], after: InkStroke[] = []
         for (const stroke of strokes.filter(s => !onlyMarker || s.kind === 'marker')) {
-          const pieces = cutInk(stroke, current.stroke.points, radius)
+          const pieces = cutInk(stroke, current.stroke.points, effectiveRadius)
           if (pieces[0] !== stroke) { before.push(stroke); after.push(...pieces) }
         }
         if (before.length) commit({ before, after })
@@ -435,9 +502,30 @@ function Editor({
       const points = current.stroke.points
       commit({ before: [], after: [{ ...current.stroke, points: [points[0], points[points.length - 1]] }] })
     } else if (current.stroke.points.length) {
+      // 1. RECONHECIMENTO DE GESTO DE RABISCO (SCRATCH-OUT) PARA APAGAR AUTOMATICAMENTE
+      if (tool === 'pen' && detectScratchOut(current.stroke)) {
+        const pts = current.stroke.points
+        let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity
+        for (const p of pts) {
+          if (p.x < minX) minX = p.x
+          if (p.x > maxX) maxX = p.x
+          if (p.y < minY) minY = p.y
+          if (p.y > maxY) maxY = p.y
+        }
+        const box = { x: minX - 12, y: minY - 12, width: (maxX - minX) + 24, height: (maxY - minY) + 24 }
+        const scratched = strokes.filter(s =>
+          s.points.some(p => p.x >= box.x && p.x <= box.x + box.width && p.y >= box.y && p.y <= box.y + box.height)
+        )
+        if (scratched.length > 0) {
+          commit({ before: scratched, after: [] })
+          setPreview(null)
+          return
+        }
+      }
+
       commit({ before: [], after: [current.stroke] })
 
-      // RECONHECIMENTO DE GESTO DE RESPOSTA (CIRCULAR OU MARCAR COM X)
+      // RECONHECIMENTO DE GESTO DE RESPOSTA SILENCIOSO (CIRCULAR OU MARCAR COM X)
       if (choose && autoGestureEnabled && (tool === 'pen' || tool === 'gesture')) {
         const container = anchor.current?.parentElement
         const cardRect = svgRef.current?.getBoundingClientRect()
@@ -455,9 +543,6 @@ function Editor({
           const gesture = detectOptionGesture(current.stroke, strokes.slice(-4), targets)
           if (gesture) {
             choose(gesture.option)
-            const symbol = gesture.type === 'circle' ? 'círculo' : 'X'
-            setGestureFeedback(`Alternativa ${gesture.option} selecionada com ${symbol}!`)
-            setTimeout(() => setGestureFeedback(''), 3500)
           }
         }
       }
@@ -465,7 +550,7 @@ function Editor({
     setPreview(null)
   }
 
-  function transformSelection(scale: number, dx: number, dy: number, copy = false) {
+  function _transformSelection(scale: number, dx: number, dy: number, copy = false) {
     const objects = strokes.filter(s => selection.includes(s.id))
     const pivot = objects[0]?.points[0]
     if (!pivot) return
@@ -484,6 +569,19 @@ function Editor({
 
   function start(e: ReactPointerEvent<SVGSVGElement>) {
     if (!ready || tool === 'read' || active.current || e.button > 2) return
+
+    // Evita desenhar se o toque foi sobre botões ou elementos interativos nativos
+    const elements = document.elementsFromPoint(e.clientX, e.clientY)
+    const isInteractive = elements.some(el => {
+      if (el === svgRef.current || el.closest('svg') === svgRef.current) return false
+      const tag = el.tagName
+      return tag === 'BUTTON' || el.closest('button') || el.getAttribute('role') === 'button' ||
+             tag === 'A' || el.closest('a') || tag === 'INPUT' || tag === 'TEXTAREA' ||
+             el.hasAttribute('data-no-ink')
+    })
+    if (isInteractive) {
+      return
+    }
 
     // Ao iniciar um traço, recolhe drawers laterais para manter visão limpa
     if (activeDrawer) setActiveDrawer(null)
@@ -550,6 +648,24 @@ function Editor({
         </text>
       )
     }
+
+    const isLassoStroke = (stroke.kind as string) === 'lasso' || (tool === 'lasso' && stroke.id === preview?.id)
+    if (isLassoStroke) {
+      const coords = stroke.points.map(p => p.x + ',' + p.y).join(' ')
+      return (
+        <polygon
+          key={stroke.id}
+          points={coords}
+          fill="rgba(56, 189, 248, 0.12)"
+          stroke="#38bdf8"
+          strokeWidth={1.75}
+          strokeDasharray="6 4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      )
+    }
+
     const coords = stroke.points.map(p => p.x + ',' + p.y).join(' ')
     const first = stroke.points[0]
 
@@ -557,8 +673,7 @@ function Editor({
       <g
         key={stroke.id}
         style={{
-          filter: tool === 'lasso' && selection.includes(stroke.id) ? 'drop-shadow(0 0 4px #3b82f6)' : undefined,
-          mixBlendMode: stroke.kind === 'marker' ? 'multiply' : 'normal'
+          filter: tool === 'lasso' && selection.includes(stroke.id) ? 'drop-shadow(0 0 4px #3b82f6)' : undefined
         }}
         opacity={isGhost ? 0.35 : stroke.opacity}
         fill={stroke.color}
@@ -627,9 +742,33 @@ function Editor({
   return (
     <>
       {/* 
-        CANVAS DE DESENHO ANCORADO AO CARD:
-        Posicionado em absolute inset-0 diretamente no container do card!
-        GPU frame-locked: zero tremor ao rolar a página.
+        1. CAMADA DE FUNDO: MARCA-TEXTO ATRÁS DAS FONTES (z-0)
+        Fica fisicamente atrás do enunciado e alternativas (relative z-[2]),
+        preservando a legibilidade perfeita das fontes sem manchá-las.
+      */}
+      <div className="absolute inset-0 pointer-events-none overflow-visible w-full h-full z-0">
+        <svg
+          aria-hidden="true"
+          className="w-full h-full overflow-visible"
+          style={{ pointerEvents: 'none' }}
+        >
+          {/* Camada Fantasma de Marca-texto da Tentativa Anterior */}
+          {showPreviousAttempt && previousStrokes.length > 0 && (
+            <g className="ghost-previous-attempt">
+              {previousStrokes.filter(s => s.kind === 'marker').map(s => render(s, true))}
+            </g>
+          )}
+
+          {/* Marca-texto Ativo Concluído */}
+          <g>
+            {visible.filter(s => s.kind === 'marker').map(s => render(s, false))}
+          </g>
+        </svg>
+      </div>
+
+      {/* 
+        2. CAMADA FRONTAL DE ESCRITA E INTERAÇÃO (z-30)
+        Caneta, laço, retas, borracha, post-its e captura de ponteiro S Pen.
       */}
       <div ref={anchor} className="absolute inset-0 pointer-events-none overflow-visible w-full h-full z-30">
         <svg
@@ -643,7 +782,13 @@ function Editor({
             cursor: tool === 'read' ? 'default' : tool === 'erase' ? 'cell' : 'crosshair'
           }}
           onPointerDown={start}
-          onPointerMove={sample}
+          onPointerMove={e => {
+            if (tool === 'erase' || active.current?.isEraser) {
+              setEraserCursor(point(e.nativeEvent))
+            }
+            sample(e)
+          }}
+          onPointerLeave={() => setEraserCursor(null)}
           onPointerUp={e => {
             if (e.pointerType === 'touch' && touchState.current) {
               const ts = touchState.current
@@ -676,8 +821,6 @@ function Editor({
                 const optLetter = optEl?.getAttribute('data-ink-option') || optEl?.getAttribute('data-ink-option-row')
                 if (optLetter && choose) {
                   choose(optLetter)
-                  setGestureFeedback(`Alternativa ${optLetter} marcada com o toque!`)
-                  setTimeout(() => setGestureFeedback(''), 2500)
                   return
                 }
 
@@ -709,19 +852,34 @@ function Editor({
           }}
           onClick={e => e.stopPropagation()}
         >
-          {/* Camada Fantasma da Tentativa Anterior (se acionada pelo aluno para rever rascunhos) */}
+          {/* Camada Fantasma da Tentativa Anterior (Caneta e Traços Frontais) */}
           {showPreviousAttempt && previousStrokes.length > 0 && (
             <g className="ghost-previous-attempt">
-              {previousStrokes.filter(s => s.kind === 'marker').map(s => render(s, true))}
-              {previousStrokes.filter(s => s.kind === 'pen').map(s => render(s, true))}
+              {previousStrokes.filter(s => s.kind !== 'marker').map(s => render(s, true))}
             </g>
           )}
 
-          {/* Camada Ativa da Tentativa Atual */}
+          {/* Camada Ativa Frontal (Caneta, Laço, Reta) */}
           <g>
-            {visible.filter(s => s.kind === 'marker').map(s => render(s, false))}
-            {visible.filter(s => s.kind === 'pen').map(s => render(s, false))}
+            {visible.filter(s => s.kind !== 'marker').map(s => render(s, false))}
           </g>
+
+          {/* Preview instantâneo do marca-texto em tempo real durante o traço */}
+          {preview && preview.kind === 'marker' && render(preview, false)}
+
+          {/* Cursor visual da borracha com área delimitada */}
+          {eraserCursor && (
+            <circle
+              cx={eraserCursor.x}
+              cy={eraserCursor.y}
+              r={Math.max(radius * 1.6, 28) / 2}
+              fill="rgba(244,63,94,0.15)"
+              stroke="#f43f5e"
+              strokeWidth={1.5}
+              strokeDasharray="4 3"
+              pointerEvents="none"
+            />
+          )}
         </svg>
 
         {/* Post-its Médicos Flutuantes Ancorados no Card */}
@@ -793,14 +951,6 @@ function Editor({
         })}
       </div>
 
-      {/* FEEDBACK DE GESTO DETECTADO (CIRCULAR / MARCAR COM X) */}
-      {gestureFeedback && (
-        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-[60] bg-emerald-950/95 border border-emerald-500/50 text-emerald-200 px-4 py-2 rounded-2xl shadow-2xl backdrop-blur-xl flex items-center gap-2 text-xs font-bold animate-in fade-in slide-in-from-top-4 duration-200">
-          <Sparkles className="w-4 h-4 text-emerald-400" />
-          <span>{gestureFeedback}</span>
-        </div>
-      )}
-
       {/* PORTAL DO BOTÃO FAB (CANTO INFERIOR) E BARRA SLIM LATERAL ESTILO SAMSUNG NOTES */}
       {mounted && createPortal(
         <>
@@ -819,8 +969,37 @@ function Editor({
             <Pencil className={`w-5 h-5 transition-transform duration-200 ${open ? 'rotate-12 scale-110 text-white' : 'text-zinc-300'}`} />
           </button>
 
-          {/* 2. BARRA SLIM FLUTUANTE ESTILO SAMSUNG NOTES (IMAGEM 1) */}
-          {open && (
+          {/* 2. MINI-ABA LATERAL QUANDO A BARRA ESTÁ MINIMIZADA (NÃO SOBREPÕE A QUESTÃO) */}
+          {open && isDockCollapsed && (
+            <button
+              type="button"
+              onClick={() => handleToggleDockCollapsed(false)}
+              title="Expandir barra de ferramentas da caneta"
+              aria-label="Expandir barra de ferramentas"
+              style={{
+                top: dockPosition === 'top' ? 'calc(0.75rem + env(safe-area-inset-top, 0px))' : '50%',
+                transform: dockPosition === 'top' ? 'translateX(-50%)' : 'translateY(-50%)',
+                left: dockPosition === 'left' ? '0px' : dockPosition === 'top' ? '50%' : undefined,
+                right: dockPosition === 'right' ? '0px' : undefined
+              }}
+              className={`fixed z-[52] py-3.5 px-1.5 border border-zinc-800/90 bg-zinc-950/95 dark:bg-zinc-900/95 text-zinc-300 hover:text-white shadow-[0_12px_32px_rgba(0,0,0,0.6)] backdrop-blur-2xl ring-1 ring-white/10 hover:bg-zinc-800 transition-all flex items-center justify-center cursor-pointer group ${
+                dockPosition === 'left'
+                  ? 'rounded-r-2xl border-l-0'
+                  : dockPosition === 'top'
+                  ? 'rounded-b-2xl py-1.5 px-4 border-t-0'
+                  : 'rounded-l-2xl border-r-0'
+              }`}
+            >
+              <div className="flex flex-col items-center gap-1.5">
+                <Pencil className="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 transition-transform" />
+                {dockPosition === 'right' && <ChevronLeft className="w-3.5 h-3.5 text-zinc-400" />}
+                {dockPosition === 'left' && <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />}
+              </div>
+            </button>
+          )}
+
+          {/* 3. BARRA SLIM FLUTUANTE ESTILO SAMSUNG NOTES (QUANDO NÃO RECOLHIDA) */}
+          {open && !isDockCollapsed && (
             <aside
               role="toolbar"
               aria-label="Barra de Ferramentas de Escrita"
@@ -834,18 +1013,31 @@ function Editor({
                 dockPosition === 'top' ? 'flex-row items-center gap-1' : 'flex-col items-center gap-1'
               }`}
             >
+              {/* Botão de Minimizar para aba discreta na borda */}
+              <button
+                type="button"
+                onClick={() => handleToggleDockCollapsed(true)}
+                className="p-1 rounded-lg text-zinc-500 hover:text-zinc-200 hover:bg-zinc-800/60 transition-colors"
+                title="Minimizar barra para uma aba fininha na borda"
+              >
+                <Minimize2 className="w-3.5 h-3.5" />
+              </button>
+
               {/* Alça de reposicionamento (Alternar Lado: Direita / Esquerda / Topo) */}
               <button
                 type="button"
                 onClick={() => {
                   setDockPosition(prev => {
                     const next = prev === 'right' ? 'left' : prev === 'left' ? 'top' : 'right'
-                    try { localStorage.setItem(preference, JSON.stringify({ styles, dockPosition: next })) } catch {}
+                    try {
+                      const saved = JSON.parse(localStorage.getItem(preference) || '{}')
+                      localStorage.setItem(preference, JSON.stringify({ ...saved, dockPosition: next }))
+                    } catch {}
                     return next
                   })
                 }}
                 className="p-1 rounded-lg text-zinc-500 hover:text-zinc-200 hover:bg-zinc-800/60 transition-colors"
-                title={`Posição atual: ${dockPosition}. Clique para mudar de lado`}
+                title={`Posição atual: ${dockPosition}. Clique para alternar lado (Direita/Esquerda/Topo)`}
               >
                 <Move className="w-3.5 h-3.5" />
               </button>
@@ -1132,11 +1324,6 @@ function Editor({
               {/* OPÇÕES DA BORRACHA */}
               {activeDrawer === 'erase' && (
                 <div className="space-y-3">
-                  <div className="p-2 rounded-xl bg-zinc-900/80 border border-zinc-800 text-[11px] text-zinc-300 flex items-center gap-2">
-                    <Pencil className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
-                    <span>Dica: Segurar o <b>botão lateral da S Pen</b> aciona a borracha instantaneamente.</span>
-                  </div>
-
                   <div>
                     <div className="flex items-center justify-between text-[11px] text-zinc-400 mb-1">
                       <span>Raio da borracha</span>
@@ -1167,7 +1354,7 @@ function Editor({
                       <input
                         type="checkbox"
                         checked={cut}
-                        onChange={e => setCut(e.target.checked)}
+                        onChange={e => handleToggleCut(e.target.checked)}
                         className="rounded border-zinc-700 bg-zinc-800 text-rose-500 focus:ring-0 cursor-pointer"
                       />
                     </label>

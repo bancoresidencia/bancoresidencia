@@ -1636,7 +1636,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       )}
 
       {/* Enunciado Clínico com Marcador de Texto Ativo - Texto Justificado */}
-      <div className="relative">
+      <div className="relative z-[2]">
         <div
           ref={statementRef} data-ink-block="statement"
           data-highlightable="true"
@@ -1676,7 +1676,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
       {/* Alternativas (Múltipla Escolha / Certo ou Errado) com Riscador e Seleção Prévia */}
       {activeQuestion.options && activeQuestion.options.length > 0 && activeQuestion.type !== 'Dissertativa' && activeQuestion.type !== 'Discursiva' ? (
-        <div className="space-y-3 pt-2">
+        <div className="space-y-3 pt-2 relative z-[2]">
           {activeQuestion.options.map((option, optIdx) => {
             const optLetter = (option.letter || (['A', 'B', 'C', 'D', 'E'][optIdx] as 'A' | 'B' | 'C' | 'D' | 'E') || 'A') as 'A' | 'B' | 'C' | 'D' | 'E';
             const optionImageUrl = isOptionImage(option.text) ? option.text.trim() : null;

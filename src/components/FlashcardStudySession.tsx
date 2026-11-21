@@ -18,7 +18,8 @@ import {
   Check,
   BarChart3,
   Users,
-  TrendingUp
+  TrendingUp,
+  RotateCcw
 } from 'lucide-react';
 import { FlashcardItem, FlashcardRating, StudyMaterialItem, CardCommunityStats } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
@@ -478,7 +479,6 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
 
   return (
     <div className="max-w-2xl mx-auto space-y-4">
-      <StudyInkLayer content={`flashcard:${currentCard.id}`} flip={() => setIsFlipped(value => !value)} />
       {/* 1. Barra Superior da Sessão */}
       <div className="flex items-center justify-between gap-3 text-xs">
         <button
@@ -616,6 +616,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
         }}
         className="w-full min-h-[300px] sm:min-h-[400px] p-5 sm:p-8 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs cursor-pointer flex flex-col justify-between transition-all duration-200 select-none touch-manipulation group relative overflow-hidden"
       >
+        <StudyInkLayer content={`flashcard:${currentCard.id}`} flip={() => setIsFlipped(value => !value)} />
         {/* Topo do Card */}
         <div className="flex items-center justify-between gap-2 border-b border-zinc-100 dark:border-zinc-800/80 pb-3">
           <div className="flex items-center gap-2 flex-wrap">
@@ -847,6 +848,41 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
               <span className="text-[10px] font-medium opacity-80">
                 {getProjectedIntervalLabel(currentCard, 'easy')}
               </span>
+            </button>
+          </div>
+
+          {/* Navegação Rápida no Verso (Voltar / Pular card sem avaliar FSRS) */}
+          <div className="flex items-center justify-between gap-2 pt-1 text-xs select-none">
+            <button
+              type="button"
+              onClick={handlePrevCard}
+              disabled={currentIndex === 0}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-25 disabled:cursor-not-allowed transition-colors text-[11px] font-semibold cursor-pointer"
+              title="Voltar ao flashcard anterior"
+            >
+              <ChevronLeft className="w-3.5 h-3.5" />
+              <span>Anterior</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setIsFlipped(false)}
+              className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-xl text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-[11px] font-semibold transition-colors cursor-pointer"
+              title="Ver novamente a pergunta na frente do card"
+            >
+              <RotateCcw className="w-3 h-3" />
+              <span>Ver Pergunta</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={handleNextCard}
+              disabled={currentIndex >= sessionCards.length - 1}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-25 disabled:cursor-not-allowed transition-colors text-[11px] font-semibold cursor-pointer"
+              title="Pular para o próximo flashcard sem registrar avaliação"
+            >
+              <span>Pular / Próximo</span>
+              <ChevronRight className="w-3.5 h-3.5" />
             </button>
           </div>
         </div>
