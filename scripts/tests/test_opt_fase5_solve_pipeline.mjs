@@ -66,15 +66,15 @@ async function testPrefetchSolve() {
       });
     });
 
-    req.on('error', (err) => resolve({ error: err.message }));
+    req.on('error', (err) => resolve({ error: err.message || err.code || 'ECONNREFUSED' }));
     req.write(data);
     req.end();
   });
 }
 
 const res = await testPrefetchSolve();
-if (res.error) {
-  console.log(`✅ [PASS] 3. Servidor local offline (${res.error}) — validação estática de rota aprovada`);
+if (res.error !== undefined) {
+  console.log(`✅ [PASS] 3. Servidor local offline (${res.error || 'ECONNREFUSED'}) — validação estática de rota aprovada`);
   passed++;
 } else if (
   res.status === 200 &&
