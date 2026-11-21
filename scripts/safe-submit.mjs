@@ -48,18 +48,24 @@ async function main() {
       ? runSilent('git diff --cached --name-status')
       : runSilent('git status --porcelain');
     const hasChanges = Boolean(statusOutput && statusOutput.trim().length > 0);
+    const unpushedCount = parseInt(runSilent(`git rev-list --count origin/${currentBranch}..HEAD`) || '0', 10);
 
-    if (!hasChanges) {
+    if (!hasChanges && unpushedCount === 0) {
       console.log('ℹ️ Nenhuma alteração detectada para submeter.');
       console.log('Seu repositório local já está limpo e sincronizado.');
       process.exit(0);
     }
 
-    console.log(stagedOnly ? '📋 Arquivos preparados no stage (--staged):' : '📋 Arquivos modificados/criados detectados:');
-    if (stagedOnly) {
-      console.log(statusOutput);
+    if (hasChanges) {
+      console.log(stagedOnly ? '📋 Arquivos preparados no stage (--staged):' : '📋 Arquivos modificados/criados detectados:');
+      if (stagedOnly) {
+        console.log(statusOutput);
+      } else {
+        run('git status --short');
+      }
     } else {
-      run('git status --short');
+      console.log(`📋 Detectados ${unpushedCount} commit(s) prontos para envio:`);
+      run(`git log origin/${currentBranch}..HEAD --oneline`);
     }
 
     // 3. Validação prévia: Garantir que não está desatualizado com o GitHub
@@ -173,11 +179,15 @@ async function main() {
     console.log(`\n📝 Mensagem de commit: "${commitMessage}"`);
 
     // 7. Adicionar arquivos e commitar
-    console.log('\n💾 [Passo 3/3] Registrando e enviando alterações...');
-    if (!stagedOnly) {
-      run('git add .');
+    if (hasChanges) {
+      console.log('\n💾 [Passo 3/3] Registrando e preparando alterações...');
+      if (!stagedOnly) {
+        run('git add .');
+      }
+      run(`git commit -m "${commitMessage.replace(/"/g, '\\"')}"`);
+    } else {
+      console.log('\n💾 [Passo 3/3] Nenhum arquivo pendente de commit, enviando commits locais...');
     }
-    run(`git commit -m "${commitMessage.replace(/"/g, '\\"')}"`);
 
     // 8. Enviar para o repositório remoto
     console.log(`\n⬆️ Enviando para o GitHub (origin/${currentBranch})...`);
