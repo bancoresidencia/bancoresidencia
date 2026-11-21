@@ -96,7 +96,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   const [tool, setTool] = useState<Tool>('read')
   const [open, setOpen] = useState(false)
   const [styles, setStyles] = useState({ pen, marker })
-  const [onlyPen, setOnlyPen] = useState(false)
+  const [onlyPen, setOnlyPen] = useState(true)
   const [onlyMarker, setOnlyMarker] = useState(false)
   const [cut, setCut] = useState(false)
   const [selection, setSelection] = useState<string[]>([])
@@ -113,6 +113,13 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   const [gestureFeedback, setGestureFeedback] = useState('')
   const [autoGestureEnabled, setAutoGestureEnabled] = useState(true)
   const [straightMarker, setStraightMarker] = useState(true)
+  const touchStart = useRef<{ x: number; y: number; time: number } | null>(null)
+  const [spenTelemetry, setSpenTelemetry] = useState<{
+    type: string
+    barrel: boolean
+    pressure: number
+    tool: string
+  } | null>(null)
 
   const active = useRef<{
     pointer: number
@@ -234,6 +241,54 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     write(back ? { before: change.after, after: change.before } : change)
   }
 
+  // PONTE DA S PEN: Transforma a seleção de texto nativa acionada pelo botão lateral em BORRACHA inteligente
+  useEffect(() => {
+    if (!open) return
+
+    const handleSelection = () => {
+      const selection = window.getSelection()
+      if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return
+
+      const text = selection.toString().trim()
+      if (!text) return
+
+      const range = selection.getRangeAt(0)
+      const rangeRect = range.getBoundingClientRect()
+      if (rangeRect.width === 0 || rangeRect.height === 0) return
+
+      const cardRect = svgRef.current?.getBoundingClientRect()
+      if (!cardRect) return
+
+      const selBox = {
+        x: rangeRect.left - cardRect.left,
+        y: rangeRect.top - cardRect.top,
+        width: rangeRect.width,
+        height: rangeRect.height
+      }
+
+      const toErase = strokes.filter(s =>
+        s.points.some(p =>
+          p.x >= selBox.x - 24 &&
+          p.x <= selBox.x + selBox.width + 24 &&
+          p.y >= selBox.y - 24 &&
+          p.y <= selBox.y + selBox.height + 24
+        )
+      )
+
+      if (toErase.length > 0) {
+        commit({ before: toErase, after: [] })
+        selection.removeAllRanges()
+        setGestureFeedback(`🧹 ${toErase.length} traço(s) apagado(s) com a S Pen!`)
+        setTimeout(() => setGestureFeedback(''), 2500)
+      }
+    }
+
+    document.addEventListener('selectionchange', handleSelection)
+    return () => {
+      document.removeEventListener('selectionchange', handleSelection)
+    }
+  }, [open, strokes])
+
   // Coordenadas calculadas diretamente em relação ao container do card (Sem lag de scroll!)
   function point(e: PointerEvent): InkPoint {
     const rect = svgRef.current?.getBoundingClientRect()
@@ -256,8 +311,26 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
 
       // SUPORTE AO BOTÃO LATERAL DA S PEN (Barrel button)
       // buttons & 2 indica botão lateral pressionado durante contato na tela
-      const isBarrel = (event.buttons & 2) !== 0 || (event.buttons & 32) !== 0 || event.button === 2
+      const isBarrel = (event.buttons & 2) !== 0 || (event.buttons & 32) !== 0 || event.button === 2 || (event as any).button === 5
+      if (isBarrel && !current.isEraser) {
+        current.isEraser = true
+        console.log(
+          '%c[S-PEN BOTÃO LATERAL]%c Acionado no meio do traço! Alternando dinamicamente para Borracha.',
+          'background:#e11d48;color:white;font-weight:bold;padding:2px 8px;border-radius:4px;',
+          'color:#e11d48;font-weight:bold;'
+        )
+      } else if (isBarrel) {
+        current.isEraser = true
+      }
       const isEraserNow = current.isEraser || isBarrel || tool === 'erase'
+      const effectiveRadius = isEraserNow ? Math.max(radius * 1.6, 28) : radius
+
+      setSpenTelemetry({
+        type: event.pointerType || 'touch',
+        barrel: isBarrel || current.isEraser,
+        pressure: Math.round((event.pressure || 0) * 100),
+        tool: isEraserNow ? (isBarrel ? 'Borracha (Botão S Pen)' : 'Borracha') : (tool === 'marker' ? 'Marca-texto' : 'Caneta')
+      })
 
       // Conforme o marca-texto retilíneo inteligente se alinhando à linha do texto
       if (!isEraserNow && tool === 'marker' && straightMarker) {
@@ -269,7 +342,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       if (isEraserNow) {
         current.stroke.points.push(p)
         for (const stroke of strokes) {
-          if ((!onlyMarker || stroke.kind === 'marker') && touchesInk(stroke, p, radius)) {
+          if ((!onlyMarker || stroke.kind === 'marker') && touchesInk(stroke, p, effectiveRadius)) {
             current.erased.set(stroke.id, stroke)
           }
         }
@@ -314,6 +387,11 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
         if (before.length) commit({ before, after })
       } else if (current.erased.size) {
         commit({ before: [...current.erased.values()], after: [] })
+        console.log(
+          `%c[S-PEN BORRACHA CONCLUÍDA]%c ${current.erased.size} traço(s) apagado(s) com sucesso!`,
+          'background:#059669;color:white;font-weight:bold;padding:2px 8px;border-radius:4px;',
+          'color:#059669;font-weight:bold;'
+        )
       }
       setErasedIds([])
     } else if (tool === 'lasso') {
@@ -370,11 +448,24 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   }
 
   function start(e: ReactPointerEvent<SVGSVGElement>) {
-    if (!ready || tool === 'read' || active.current || e.button > 2 || (onlyPen && e.pointerType === 'touch')) return
+    if (!ready || tool === 'read' || active.current || e.button > 2) return
+
+    // REJEIÇÃO DE PALMA E DUAL-INPUT (CANETA DESENHA / DEDO ROLA OU CLICA)
+    if (e.pointerType === 'touch' && onlyPen) {
+      touchStart.current = { x: e.clientX, y: e.clientY, time: performance.now() }
+      return
+    }
     
     // DETECÇÃO DO BOTÃO LATERAL DA S PEN (Barrel button)
     // Se o botão lateral estiver pressionado na S Pen, aciona a borracha automaticamente
-    const isBarrel = (e.buttons & 2) !== 0 || (e.buttons & 32) !== 0 || e.button === 2
+    const isBarrel = (e.buttons & 2) !== 0 || (e.buttons & 32) !== 0 || e.button === 2 || (e.nativeEvent as any).button === 5
+
+    // LOG DE DIAGNÓSTICO AO VIVO NO DEVTOOLS (USB / WI-FI)
+    console.log(
+      `%c[S-PEN TOQUE]%c tipo: ${e.pointerType} | button: ${e.button} | buttons: ${e.buttons} | pressão: ${Math.round(e.pressure * 100)}% | BOTÃO LATERAL: ${isBarrel ? '🔴 ATIVADO (BORRACHA)' : '⚪ Inativo (Caneta)'}`,
+      isBarrel ? 'background:#e11d48;color:white;font-weight:bold;padding:2px 8px;border-radius:4px;' : 'background:#2563eb;color:white;font-weight:bold;padding:2px 8px;border-radius:4px;',
+      'color:inherit;font-weight:600;'
+    )
 
     if (tool === 'note' && !isBarrel) {
       setNote({ ...styles.pen, kind: 'pen', id: crypto.randomUUID(), created: Date.now(), points: [point(e.nativeEvent)], text: '' })
@@ -473,13 +564,47 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
           onContextMenu={e => e.preventDefault()}
           className="w-full h-full overflow-visible text-zinc-900 dark:text-zinc-100"
           style={{
-            touchAction: 'none',
+            touchAction: onlyPen ? 'pan-y' : 'none',
             pointerEvents: tool === 'read' ? 'none' : 'auto',
             cursor: tool === 'read' ? 'default' : tool === 'erase' ? 'cell' : 'crosshair'
           }}
           onPointerDown={start}
           onPointerMove={sample}
-          onPointerUp={e => { if (active.current?.pointer === e.pointerId) { sample(e); finish() } }}
+          onPointerUp={e => {
+            if (e.pointerType === 'touch' && touchStart.current) {
+              const dx = Math.abs(e.clientX - touchStart.current.x)
+              const dy = Math.abs(e.clientY - touchStart.current.y)
+              const dt = performance.now() - touchStart.current.time
+              touchStart.current = null
+
+              if (dx < 14 && dy < 14 && dt < 450) {
+                const elements = document.elementsFromPoint(e.clientX, e.clientY)
+                const optEl = elements.find(el => el.hasAttribute('data-ink-option') || el.hasAttribute('data-ink-option-row')) as HTMLElement | undefined
+                const optLetter = optEl?.getAttribute('data-ink-option') || optEl?.getAttribute('data-ink-option-row')
+                if (optLetter && choose) {
+                  choose(optLetter)
+                  setGestureFeedback(`Alternativa ${optLetter} marcada com o dedo!`)
+                  setTimeout(() => setGestureFeedback(''), 2500)
+                  return
+                }
+
+                const clickable = elements.find(el => {
+                  if (el === svgRef.current || el.closest('svg') === svgRef.current) return false
+                  return el.tagName === 'BUTTON' || el.closest('button') || el.getAttribute('role') === 'button' || el.tagName === 'A'
+                })
+                const btn = (clickable?.closest('button, [role="button"], a') as HTMLElement) || (clickable as HTMLElement)
+                if (btn && typeof btn.click === 'function') {
+                  btn.click()
+                }
+              }
+              return
+            }
+
+            if (active.current?.pointer === e.pointerId) {
+              sample(e)
+              finish()
+            }
+          }}
           onLostPointerCapture={e => { if (active.current?.pointer === e.pointerId) finish() }}
           onPointerCancel={e => { if (active.current?.pointer === e.pointerId) finish() }}
           onClick={e => e.stopPropagation()}
@@ -512,6 +637,18 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
             <div className="fixed top-5 left-1/2 -translate-x-1/2 z-[60] flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-emerald-600 text-white font-semibold text-xs shadow-2xl shadow-emerald-900/40 border border-emerald-400/40 animate-in fade-in slide-in-from-top-3 duration-200">
               <CheckCircle2 className="w-4 h-4 text-emerald-100" />
               <span>{gestureFeedback}</span>
+            </div>
+          )}
+
+          {/* Badge de Telemetria da S Pen em Tempo Real */}
+          {open && spenTelemetry && (
+            <div className="fixed top-3 right-4 z-[55] flex items-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-950/90 border border-zinc-800 text-zinc-300 font-mono text-[11px] shadow-lg backdrop-blur-md">
+              <span className={`w-2 h-2 rounded-full ${spenTelemetry.barrel ? 'bg-amber-400 animate-ping' : 'bg-emerald-400'}`} />
+              <span>{spenTelemetry.type === 'pen' ? '🖊️ S Pen' : '👆 Toque'}</span>
+              <span className="text-zinc-600">|</span>
+              <span className={spenTelemetry.barrel ? 'text-amber-400 font-bold' : 'text-zinc-200'}>{spenTelemetry.tool}</span>
+              <span className="text-zinc-600">|</span>
+              <span className="text-zinc-400">Pressão: {spenTelemetry.pressure}%</span>
             </div>
           )}
 

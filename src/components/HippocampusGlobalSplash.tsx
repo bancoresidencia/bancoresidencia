@@ -20,6 +20,13 @@ export function HippocampusGlobalSplash() {
       setIsExiting(true);
     }
 
+    const fallbackTimer = setTimeout(() => {
+      if (!cancelled) {
+        observer.disconnect();
+        setIsExiting(true);
+      }
+    }, 2200);
+
     const wordmarkAnimations = wordmarkRef.current?.getAnimations() ?? [];
     void Promise.allSettled(wordmarkAnimations.map((animation) => animation.finished)).then(() => {
       if (cancelled) return;
@@ -35,6 +42,7 @@ export function HippocampusGlobalSplash() {
 
     return () => {
       cancelled = true;
+      clearTimeout(fallbackTimer);
       observer.disconnect();
     };
   }, []);

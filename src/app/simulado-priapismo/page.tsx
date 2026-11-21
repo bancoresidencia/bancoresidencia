@@ -11,8 +11,8 @@ import { SimuladoPriapismoHeader, FontSize } from '@/components/simulado-priapis
 import { SimuladoQrModal } from '@/components/simulado-priapismo/SimuladoQrModal';
 
 export default function SimuladoPriapismoPage() {
-  const { user, isLoading } = useAuth()
-  return isLoading ? null : <DemoSession key={user?.id ?? 'guest'} owner={user?.id ?? 'guest'} />
+  const { user } = useAuth()
+  return <DemoSession key={user?.id ?? 'guest'} owner={user?.id ?? 'guest'} />
 }
 
 function DemoSession({ owner }: { owner: string }) {
