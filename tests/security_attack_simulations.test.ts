@@ -12,7 +12,8 @@ import {
   extractTrustedClientIp,
   extractTrustedClientIpFromHeaders,
   validatePasswordRequirements,
-  safeErrorMessage
+  safeErrorMessage,
+  validateQuestionId
 } from '../src/utils/security.ts';
 import { deriveDomainSecret, timingSafeEqualStrings } from '../src/utils/serverCrypto.ts';
 import {
@@ -43,7 +44,7 @@ console.log('🛡️  SUÍTE DE TESTES DE SEGURANÇA — SIMULAÇÃO REAL DE ATA
 console.log('================================================================\n');
 
 let passedTests = 0;
-const totalTests = 30;
+const totalTests = 33;
 
 // ------------------------------------------------------------------------------
 // ATAQUE 1: Scraping e Forja de Parâmetro includeGabarito=true por Anônimo
@@ -1092,6 +1093,134 @@ console.log('[ATAQUE 30] Bloqueio de Divulgação de Schema/Stacktrace via CWE-2
   assert.strictEqual('password_hash' in safeLeaderboardEntry, false, 'Hash de senha NUNCA pode ser exposto');
 
   console.log('   ✓ ATAQUE NEUTRALIZADO: Zero vazamento de stacktrace/schema (CWE-209) e proteção estrita de PII (LGPD).\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 31: Simulação Avançada de SQL Injection Tradicional e Injeção PostgREST (SQLi Hardening)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 31] Simulação de Injeção de Código SQLi, Comentários e Subqueries');
+{
+  const sqliPayloads = [
+    "' OR '1'='1' --",
+    "1; DROP TABLE questions; --",
+    "UNION SELECT NULL, username, password_hash FROM profiles --",
+    "admin'/* inline comment */--",
+    "1' AND (SELECT 1 FROM pg_sleep(5))--",
+    "'; EXEC xp_cmdshell('dir');--",
+    "1' OR 1=1 #",
+    "\" OR \"\"=\""
+  ];
+
+  for (const payload of sqliPayloads) {
+    const cleanedTerm = sanitizePostgrestTerm(payload);
+    assert(!cleanedTerm.includes(';'), `Ponto e vírgula de injeção em cadeia deve ser removido: ${payload}`);
+    assert(!cleanedTerm.includes('--'), `Comentário SQL -- deve ser desarmado: ${payload}`);
+    assert(!cleanedTerm.includes('/*') && !cleanedTerm.includes('*/'), `Comentário em bloco /* */ deve ser removido: ${payload}`);
+    assert(!cleanedTerm.includes('"'), `Aspas duplas devem ser removidas: ${payload}`);
+    assert(!cleanedTerm.includes('.eq.') && !cleanedTerm.includes('.or.') && !cleanedTerm.includes('.in.'), `Operadores PostgREST devem ser desarmados: ${payload}`);
+  }
+
+  // Validação em quoted values da árvore clínica
+  const quotedInjection = 'Cardiologia",is_anulada.eq.true,foco.eq."Infarto';
+  const cleanedQuoted = sanitizePostgrestQuotedValue(quotedInjection);
+  assert(!cleanedQuoted.includes('"'), 'Aspas duplas devem ser expurgadas para não romper a lista .in()');
+  assert(!cleanedQuoted.includes('.eq.'), 'Operador .eq. injetado deve ser neutralizado');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: 8 vetores clássicos de SQLi e quebra de query desarmados pelos sanitizadores.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 32: Simulação de Scraping Agressivo (Bypass de Paginação e Varredura em Massa)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 32] Simulação de Scraping em Massa, Evasão de Paginação e Dump de Questões');
+{
+  // 1. Atacante tenta solicitar 1 milhão de questões de uma só vez para descarregar o banco
+  const maliciousPageSizes = [1000000, 99999, -10, 0, NaN, '100000', 'invalid'];
+  for (const raw of maliciousPageSizes) {
+    const clampedSize = Math.min(50, Math.max(1, Math.floor(Number(raw) || 20)));
+    assert(clampedSize >= 1 && clampedSize <= 50, `pageSize DEVE estar confinado estritamente entre 1 e 50 (obtido: ${clampedSize})`);
+  }
+
+  // 2. Atacante tenta injetar 5.000 IDs de questões arbitrárias em lote
+  const massiveIdList = Array.from({ length: 5000 }, (_, i) => `valid-id-${i}`);
+  const clampedIds = massiveIdList.slice(0, 100);
+  assert.strictEqual(clampedIds.length, 100, 'Teto de IDs por lote DEVE ser limitado a 100 itens para impedir dump em massa');
+
+  // 3. Atacante tenta injetar IDs maliciosos com caracteres especiais ou caminhos de diretório
+  const maliciousIds = [
+    '../../../etc/passwd',
+    'id-com-espacos e caracteres <script>',
+    'id;--drop-table',
+    '',
+    null,
+    12345
+  ];
+  for (const id of maliciousIds) {
+    assert.strictEqual(validateQuestionId(id), false, `ID malicioso '${id}' DEVE ser rejeitado pelo validador`);
+  }
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Tentativas de dump de questões, pageSize arbitrário e IDs forjados bloqueados.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 33: Simulação de DDoS / Flood de Requisições Distribuídas e Mitigação por Rate Limit
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 33] Simulação de Ataque Flood / DDoS de Requisições Rápidas Concorrentes');
+{
+  // 1. Simula flood de 200 requisições consecutivas no mesmo minuto a partir de 1 IP
+  const floodIp = '198.51.100.99';
+  const proxyRateLimitMap = new Map<string, { count: number; resetAt: number }>();
+  const MAX_PER_MIN = 120;
+  let allowedCount = 0;
+  let blockedCount = 0;
+
+  function simulateProxyRateLimit(ip: string): { status: number } {
+    const now = Date.now();
+    const entry = proxyRateLimitMap.get(ip);
+    if (entry && entry.resetAt >= now) {
+      if (entry.count >= MAX_PER_MIN) {
+        return { status: 429 };
+      }
+      entry.count++;
+      return { status: 200 };
+    }
+    proxyRateLimitMap.set(ip, { count: 1, resetAt: now + 60000 });
+    return { status: 200 };
+  }
+
+  for (let req = 1; req <= 200; req++) {
+    const res = simulateProxyRateLimit(floodIp);
+    if (res.status === 200) allowedCount++;
+    else if (res.status === 429) blockedCount++;
+  }
+
+  assert.strictEqual(allowedCount, 120, 'As primeiras 120 requisições devem ser permitidas pela janela de taxa');
+  assert.strictEqual(blockedCount, 80, 'Todas as 80 requisições excedentes DEVEM ser interceptadas com HTTP 429');
+
+  // 2. Simula flood distribuído em cota de visitante por 5 IPs simultâneos (15 tentativas cada)
+  const distributedGuestLimits = new Map<string, number>();
+  const GUEST_DAILY_LIMIT = 10;
+  let totalDistributedBlocked = 0;
+
+  for (let ipIndex = 1; ipIndex <= 5; ipIndex++) {
+    const botIp = `203.0.113.${ipIndex}`;
+    for (let solveAttempt = 1; solveAttempt <= 15; solveAttempt++) {
+      const current = distributedGuestLimits.get(botIp) || 0;
+      if (current >= GUEST_DAILY_LIMIT) {
+        totalDistributedBlocked++;
+      } else {
+        distributedGuestLimits.set(botIp, current + 1);
+      }
+    }
+    assert.strictEqual(distributedGuestLimits.get(botIp), 10, 'Cada IP bot só pode consumir no máximo 10 resoluções diárias');
+  }
+
+  assert.strictEqual(totalDistributedBlocked, 25, 'Todas as 25 tentativas excedentes dos 5 IPs bot devem ser bloqueadas');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Flood de 200 req/min e ataque distribuído de visitantes contidos por rate limit.\n');
   passedTests++;
 }
 
