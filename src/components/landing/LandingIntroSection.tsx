@@ -18,6 +18,7 @@ import { useTheme } from '@/context/ThemeContext';
 export interface LandingIntroSectionProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;
   onScrollToSection: (sectionId: string) => void;
+  embeddedMode?: boolean;
 }
 
 interface PillarItem {
@@ -94,7 +95,8 @@ const FADE_OUT_DURATION_MS = 460;
 
 export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
   onOpenAuth,
-  onScrollToSection
+  onScrollToSection,
+  embeddedMode = false
 }) => {
   const { accent, mode } = useTheme();
   const isDark = mode === 'dark';
@@ -224,39 +226,48 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       case 0:
         // +200 MIL QUESTÕES: Miniatura autêntica do QuestionCard
         return (
-          <div className="w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-xl border border-zinc-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.6)] text-left select-none hover:border-zinc-700/80 transition-all duration-300">
+          <div className="relative overflow-hidden w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+            {/* Friso luminoso sutil no topo (Laser Rim) */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+              style={{
+                background: 'linear-gradient(90deg, transparent, #6366f1, transparent)',
+                opacity: 0.65
+              }}
+            />
             <div className="flex items-center gap-1.5 flex-wrap">
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-indigo-500/15 border border-indigo-500/30 text-indigo-300">
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-indigo-500/15 border border-indigo-500/30 text-indigo-600 dark:text-indigo-300">
                 ENARE 2025
               </span>
-              <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-zinc-900 border border-zinc-800 text-zinc-300">
+              <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300">
                 Cirurgia Geral
               </span>
-              <span className="ml-auto text-[10px] font-mono text-zinc-500">
+              <span className="ml-auto text-[10px] font-mono text-zinc-400 dark:text-zinc-500">
                 #84.192
               </span>
             </div>
 
-            <p className="mt-3 text-xs text-zinc-300 leading-relaxed font-normal">
+            <p className="mt-3 text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal">
               Homem, 45a, dor súbita em fossa ilíaca direita há 18h, febre e sinal de Blumberg doloroso...
             </p>
 
             <div className="mt-3 space-y-1.5">
-              <div className="p-2 rounded-lg bg-zinc-900/50 border border-zinc-800/80 text-[11px] text-zinc-400 flex items-center gap-2">
-                <span className="w-4 h-4 rounded-full bg-zinc-800 text-[10px] font-bold text-zinc-400 flex items-center justify-center shrink-0">
+              <div className="p-2 rounded-lg bg-zinc-100/90 dark:bg-zinc-900/50 border border-zinc-200/80 dark:border-zinc-800/80 text-[11px] text-zinc-600 dark:text-zinc-400 flex items-center gap-2">
+                <span className="w-4 h-4 rounded-full bg-zinc-200 dark:bg-zinc-800 text-[10px] font-bold text-zinc-600 dark:text-zinc-400 flex items-center justify-center shrink-0">
                   A
                 </span>
                 <span className="truncate">Colonoscopia de urgência</span>
               </div>
 
-              <div className="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/40 text-[11px] text-emerald-300 font-medium flex items-center justify-between">
+              <div className="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/40 text-[11px] text-emerald-700 dark:text-emerald-300 font-medium flex items-center justify-between">
                 <div className="flex items-center gap-2 truncate">
-                  <span className="w-4 h-4 rounded-full bg-emerald-500/20 text-[10px] font-bold text-emerald-300 flex items-center justify-center shrink-0">
+                  <span className="w-4 h-4 rounded-full bg-emerald-500/20 text-[10px] font-bold text-emerald-700 dark:text-emerald-300 flex items-center justify-center shrink-0">
                     B
                   </span>
                   <span className="truncate font-semibold">Tomografia de abdome total</span>
                 </div>
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 ml-1" />
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 ml-1" />
               </div>
             </div>
           </div>
@@ -265,26 +276,35 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       case 1:
         // FLASHCARDS FSRS: Card Cloze com Omissão e Lacuna Revelada
         return (
-          <div className="w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-xl border border-zinc-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.6)] text-left select-none hover:border-zinc-700/80 transition-all duration-300">
+          <div className="relative overflow-hidden w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+            {/* Friso luminoso sutil no topo (Laser Rim) */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+              style={{
+                background: 'linear-gradient(90deg, transparent, #10b981, transparent)',
+                opacity: 0.65
+              }}
+            />
             <div className="flex items-center justify-between">
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 flex items-center gap-1">
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-500/15 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 flex items-center gap-1">
                 <Brain className="w-3 h-3" />
                 FSRS • REPETIÇÃO
               </span>
-              <span className="text-[10px] font-bold text-zinc-400">USP / ENARE</span>
+              <span className="text-[10px] font-bold text-zinc-500 dark:text-zinc-400">USP / ENARE</span>
             </div>
 
-            <div className="mt-3 text-xs text-zinc-200 leading-relaxed font-normal">
+            <div className="mt-3 text-xs text-zinc-700 dark:text-zinc-200 leading-relaxed font-normal">
               Na Cetoacidose Diabética, se o potássio sérico inicial for{' '}
-              <span className="px-1.5 py-0.5 rounded font-extrabold text-emerald-300 bg-emerald-500/20 border border-emerald-500/40 inline-block">
+              <span className="px-1.5 py-0.5 rounded font-extrabold text-emerald-700 dark:text-emerald-300 bg-emerald-500/15 border border-emerald-500/35 inline-block">
                 &lt; 3,3 mEq/L
               </span>
               , deve-se postergar a insulina e repor KCl intravenoso.
             </div>
 
-            <div className="mt-3 pt-2.5 border-t border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500">
+            <div className="mt-3 pt-2.5 border-t border-zinc-200 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500">
               <span>Omissão Cloze cirúrgica</span>
-              <span className="font-mono text-emerald-400 font-semibold">Retenção: 96%</span>
+              <span className="font-mono text-emerald-600 dark:text-emerald-400 font-semibold">Retenção: 96%</span>
             </div>
           </div>
         );
@@ -292,29 +312,38 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       case 2:
         // RESUMOS: Ficha de Diretriz Clínica Oficial
         return (
-          <div className="w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-xl border border-zinc-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.6)] text-left select-none hover:border-zinc-700/80 transition-all duration-300">
+          <div className="relative overflow-hidden w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+            {/* Friso luminoso sutil no topo (Laser Rim) */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+              style={{
+                background: 'linear-gradient(90deg, transparent, #f59e0b, transparent)',
+                opacity: 0.65
+              }}
+            />
             <div className="flex items-center justify-between">
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/15 border border-amber-500/30 text-amber-300">
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-500/15 border border-amber-500/30 text-amber-700 dark:text-amber-300">
                 DIRETRIZ OFICIAL
               </span>
-              <span className="text-[10px] font-bold text-zinc-400">SBC / AHA</span>
+              <span className="text-[10px] font-bold text-zinc-500 dark:text-zinc-400">SBC / AHA</span>
             </div>
 
-            <h4 className="mt-2 text-xs font-bold text-white tracking-tight">
+            <h4 className="mt-2 text-xs font-bold text-zinc-900 dark:text-white tracking-tight">
               IAM com Supra de ST
             </h4>
 
-            <div className="mt-2.5 space-y-1.5 text-[11px] text-zinc-300 leading-snug">
+            <div className="mt-2.5 space-y-1.5 text-[11px] text-zinc-700 dark:text-zinc-300 leading-snug">
               <div className="flex items-start gap-1.5">
-                <span className="text-amber-400 font-bold shrink-0">•</span>
+                <span className="text-amber-600 dark:text-amber-400 font-bold shrink-0">•</span>
                 <span>AAS 200mg mastigável + Ticagrelor 180mg</span>
               </div>
               <div className="flex items-start gap-1.5">
-                <span className="text-amber-400 font-bold shrink-0">•</span>
+                <span className="text-amber-600 dark:text-amber-400 font-bold shrink-0">•</span>
                 <span>Angioplastia 1ª: Tempo porta-balão &lt; 90 min</span>
               </div>
               <div className="flex items-start gap-1.5">
-                <span className="text-amber-400 font-bold shrink-0">•</span>
+                <span className="text-amber-600 dark:text-amber-400 font-bold shrink-0">•</span>
                 <span>Se transferência: tempo limite porta-balão &lt; 120 min</span>
               </div>
             </div>
@@ -325,30 +354,39 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       default:
         // AVALIAÇÃO DE DESEMPENHO: Escore TRI Real
         return (
-          <div className="w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-xl border border-zinc-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.6)] text-left select-none hover:border-zinc-700/80 transition-all duration-300">
+          <div className="relative overflow-hidden w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+            {/* Friso luminoso sutil no topo (Laser Rim) */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+              style={{
+                background: 'linear-gradient(90deg, transparent, #06b6d4, transparent)',
+                opacity: 0.65
+              }}
+            />
             <div className="flex items-center justify-between">
-              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyan-500/15 border border-cyan-500/30 text-cyan-300">
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyan-500/15 border border-cyan-500/30 text-cyan-700 dark:text-cyan-300">
                 CALIBRAÇÃO TRI (IRT)
               </span>
-              <span className="text-[10px] font-bold text-zinc-400">ENARE 2026</span>
+              <span className="text-[10px] font-bold text-zinc-500 dark:text-zinc-400">ENARE 2026</span>
             </div>
 
             <div className="mt-3 flex items-baseline gap-2">
-              <span className="text-3xl font-black text-white tracking-tight">842.5</span>
-              <span className="text-[11px] font-semibold text-zinc-400">Score Psicométrico</span>
+              <span className="text-3xl font-black text-zinc-900 dark:text-white tracking-tight">842.5</span>
+              <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400">Score Psicométrico</span>
             </div>
 
             <div className="mt-2 flex items-center gap-2">
-              <div className="flex-1 h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+              <div className="flex-1 h-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
                 <div
-                  className="h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full"
+                  className="h-full bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full"
                   style={{ width: '88%' }}
                 />
               </div>
-              <span className="text-[10px] font-mono font-bold text-cyan-300">Top 3%</span>
+              <span className="text-[10px] font-mono font-bold text-cyan-700 dark:text-cyan-300">Top 3%</span>
             </div>
 
-            <div className="mt-3 pt-2 border-t border-zinc-800/80 text-[10.5px] text-zinc-400">
+            <div className="mt-3 pt-2 border-t border-zinc-200 dark:border-zinc-800/80 text-[10.5px] text-zinc-500 dark:text-zinc-400">
               Imune a chutes casuais • Coerência pedagógica
             </div>
           </div>
@@ -361,26 +399,35 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       case 0:
         // +200 MIL QUESTÕES: Gabarito & Análise TRI
         return (
-          <div className="w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-xl border border-zinc-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.6)] text-left select-none hover:border-zinc-700/80 transition-all duration-300">
-            <div className="flex items-center justify-between pb-2 border-b border-zinc-800/80">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-100">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+          <div className="relative overflow-hidden w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+            {/* Friso luminoso sutil no topo (Laser Rim) */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+              style={{
+                background: 'linear-gradient(90deg, transparent, #10b981, transparent)',
+                opacity: 0.65
+              }}
+            />
+            <div className="flex items-center justify-between pb-2 border-b border-zinc-200 dark:border-zinc-800/80">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-900 dark:text-zinc-100">
+                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 <span>Gabarito Comentado</span>
               </div>
-              <span className="text-[10px] font-semibold text-zinc-400">Preceptor CBC</span>
+              <span className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400">Preceptor CBC</span>
             </div>
 
-            <div className="p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800/70 mt-3 text-[11.5px] text-zinc-300 leading-relaxed">
-              <strong className="text-white font-semibold">Justificativa: </strong>
+            <div className="p-2.5 rounded-xl bg-zinc-100/90 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800/70 mt-3 text-[11.5px] text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              <strong className="text-zinc-900 dark:text-white font-semibold">Justificativa: </strong>
               Escore de Alvarado ≥ 7 confere alta probabilidade. A TC contrastada é o método de escolha em adultos.
             </div>
 
             <div className="mt-3 flex items-center justify-between text-[10.5px] pt-1">
-              <span className="font-semibold text-emerald-400 flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
+              <span className="font-semibold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse" />
                 78% de acerto
               </span>
-              <span className="font-mono text-zinc-400">TRI: Alta Discriminação</span>
+              <span className="font-mono text-zinc-500 dark:text-zinc-400">TRI: Alta Discriminação</span>
             </div>
           </div>
         );
@@ -388,37 +435,46 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       case 1:
         // FLASHCARDS FSRS: Grade dos 4 Botões FSRS Canônicos
         return (
-          <div className="w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-xl border border-zinc-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.6)] text-left select-none hover:border-zinc-700/80 transition-all duration-300">
-            <div className="flex items-center justify-between pb-2 border-b border-zinc-800/80">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-100">
-                <Layers className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+          <div className="relative overflow-hidden w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+            {/* Friso luminoso sutil no topo (Laser Rim) */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+              style={{
+                background: 'linear-gradient(90deg, transparent, #10b981, transparent)',
+                opacity: 0.65
+              }}
+            />
+            <div className="flex items-center justify-between pb-2 border-b border-zinc-200 dark:border-zinc-800/80">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-900 dark:text-zinc-100">
+                <Layers className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 <span>Agendador FSRS</span>
               </div>
-              <span className="text-[10px] text-emerald-400 font-semibold">Intervalo ótimo</span>
+              <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">Intervalo ótimo</span>
             </div>
 
             <div className="grid grid-cols-4 gap-1.5 mt-3">
-              <div className="py-2 px-1 rounded-lg border border-rose-900/60 bg-rose-950/30 text-center">
-                <div className="text-[10px] font-bold text-rose-300">Errei</div>
-                <div className="text-[9px] text-rose-400/80 font-mono">1d</div>
+              <div className="py-2 px-1 rounded-lg border border-rose-200 dark:border-rose-900/60 bg-rose-50 dark:bg-rose-950/30 text-center">
+                <div className="text-[10px] font-bold text-rose-700 dark:text-rose-300">Errei</div>
+                <div className="text-[9px] text-rose-600 dark:text-rose-400/80 font-mono">1d</div>
               </div>
-              <div className="py-2 px-1 rounded-lg border border-amber-900/60 bg-amber-950/30 text-center">
-                <div className="text-[10px] font-bold text-amber-300">Difícil</div>
-                <div className="text-[9px] text-amber-400/80 font-mono">4d</div>
+              <div className="py-2 px-1 rounded-lg border border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/30 text-center">
+                <div className="text-[10px] font-bold text-amber-700 dark:text-amber-300">Difícil</div>
+                <div className="text-[9px] text-amber-600 dark:text-amber-400/80 font-mono">4d</div>
               </div>
-              <div className="py-2 px-1 rounded-lg border border-sky-900/60 bg-sky-950/30 text-center ring-1 ring-sky-500/50">
-                <div className="text-[10px] font-bold text-sky-300">Bom</div>
-                <div className="text-[9px] text-sky-400 font-mono font-bold">9d</div>
+              <div className="py-2 px-1 rounded-lg border border-sky-300 dark:border-sky-900/60 bg-sky-50 dark:bg-sky-950/30 text-center ring-1 ring-sky-400/50">
+                <div className="text-[10px] font-bold text-sky-700 dark:text-sky-300">Bom</div>
+                <div className="text-[9px] text-sky-600 dark:text-sky-400 font-mono font-bold">9d</div>
               </div>
-              <div className="py-2 px-1 rounded-lg border border-emerald-900/60 bg-emerald-950/30 text-center">
-                <div className="text-[10px] font-bold text-emerald-300">Fácil</div>
-                <div className="text-[9px] text-emerald-400/80 font-mono">21d</div>
+              <div className="py-2 px-1 rounded-lg border border-emerald-200 dark:border-emerald-900/60 bg-emerald-50 dark:bg-emerald-950/30 text-center">
+                <div className="text-[10px] font-bold text-emerald-700 dark:text-emerald-300">Fácil</div>
+                <div className="text-[9px] text-emerald-600 dark:text-emerald-400/80 font-mono">21d</div>
               </div>
             </div>
 
-            <div className="mt-3 text-[10.5px] text-zinc-400 flex items-center justify-between">
-              <span>Próxima revisão: <strong className="text-zinc-200">28 Nov</strong></span>
-              <span className="text-emerald-400 font-semibold">Curva Estável</span>
+            <div className="mt-3 text-[10.5px] text-zinc-500 dark:text-zinc-400 flex items-center justify-between">
+              <span>Próxima revisão: <strong className="text-zinc-800 dark:text-zinc-200">28 Nov</strong></span>
+              <span className="text-emerald-600 dark:text-emerald-400 font-semibold">Curva Estável</span>
             </div>
           </div>
         );
@@ -426,23 +482,32 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       case 2:
         // RESUMOS: Pérola de Prova High-Yield
         return (
-          <div className="w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-xl border border-amber-500/30 shadow-[0_20px_50px_rgba(0,0,0,0.6)] text-left select-none hover:border-amber-500/50 transition-all duration-300">
-            <div className="flex items-center justify-between pb-2 border-b border-zinc-800/80">
-              <div className="flex items-center gap-1 text-xs font-black text-amber-300">
-                <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+          <div className="relative overflow-hidden w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+            {/* Friso luminoso sutil no topo (Laser Rim) */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+              style={{
+                background: 'linear-gradient(90deg, transparent, #f59e0b, transparent)',
+                opacity: 0.65
+              }}
+            />
+            <div className="flex items-center justify-between pb-2 border-b border-zinc-200 dark:border-zinc-800/80">
+              <div className="flex items-center gap-1 text-xs font-black text-amber-600 dark:text-amber-300">
+                <Sparkles className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" />
                 <span>Pérola de Prova</span>
               </div>
-              <span className="text-[10px] text-amber-400/90 font-mono font-bold">94% Recorrência</span>
+              <span className="text-[10px] text-amber-600 dark:text-amber-400/90 font-mono font-bold">94% Recorrência</span>
             </div>
 
-            <div className="p-2.5 rounded-xl bg-amber-950/20 border border-amber-500/20 mt-3 text-[11px] text-zinc-200 leading-relaxed">
-              <strong className="text-amber-300 font-semibold">Pegadinha Clássica: </strong>
+            <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 mt-3 text-[11px] text-zinc-700 dark:text-zinc-200 leading-relaxed">
+              <strong className="text-amber-700 dark:text-amber-300 font-semibold">Pegadinha Clássica: </strong>
               Se hospital sem hemodinâmica e atraso for &gt; 120 min, realizar FIBRINÓLISE imediata em até 30 min (porta-agulha).
             </div>
 
-            <div className="mt-3 text-[10px] text-zinc-400 flex items-center justify-between">
+            <div className="mt-3 text-[10px] text-zinc-500 dark:text-zinc-400 flex items-center justify-between">
               <span>Bancas: ENARE • USP • UNICAMP</span>
-              <span className="text-amber-300 font-semibold">Alta Incidência</span>
+              <span className="text-amber-600 dark:text-amber-300 font-semibold">Alta Incidência</span>
             </div>
           </div>
         );
@@ -451,49 +516,58 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       default:
         // AVALIAÇÃO DE DESEMPENHO: Radar por Especialidade & Mentor IA
         return (
-          <div className="w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-zinc-950/85 backdrop-blur-xl border border-zinc-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.6)] text-left select-none hover:border-zinc-700/80 transition-all duration-300">
-            <div className="flex items-center justify-between pb-2 border-b border-zinc-800/80">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-100">
-                <Activity className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+          <div className="relative overflow-hidden w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+            {/* Friso luminoso sutil no topo (Laser Rim) */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+              style={{
+                background: 'linear-gradient(90deg, transparent, #06b6d4, transparent)',
+                opacity: 0.65
+              }}
+            />
+            <div className="flex items-center justify-between pb-2 border-b border-zinc-200 dark:border-zinc-800/80">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-900 dark:text-zinc-100">
+                <Activity className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0" />
                 <span>Radar por Especialidade</span>
               </div>
-              <span className="text-[10px] text-cyan-400 font-mono font-bold">Média: 85.6%</span>
+              <span className="text-[10px] text-cyan-600 dark:text-cyan-400 font-mono font-bold">Média: 85.6%</span>
             </div>
 
             <div className="mt-3 space-y-2 text-[11px]">
               <div>
-                <div className="flex justify-between text-zinc-300 font-medium mb-0.5">
+                <div className="flex justify-between text-zinc-700 dark:text-zinc-300 font-medium mb-0.5">
                   <span>Cirurgia Geral</span>
-                  <span className="font-mono text-cyan-300 font-bold">89%</span>
+                  <span className="font-mono text-cyan-700 dark:text-cyan-300 font-bold">89%</span>
                 </div>
-                <div className="h-1 bg-zinc-800 rounded-full overflow-hidden">
-                  <div className="h-full bg-cyan-400 rounded-full" style={{ width: '89%' }} />
+                <div className="h-1 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+                  <div className="h-full bg-cyan-500 rounded-full" style={{ width: '89%' }} />
                 </div>
               </div>
 
               <div>
-                <div className="flex justify-between text-zinc-300 font-medium mb-0.5">
+                <div className="flex justify-between text-zinc-700 dark:text-zinc-300 font-medium mb-0.5">
                   <span>Clínica Médica</span>
-                  <span className="font-mono text-indigo-300 font-bold">82%</span>
+                  <span className="font-mono text-indigo-700 dark:text-indigo-300 font-bold">82%</span>
                 </div>
-                <div className="h-1 bg-zinc-800 rounded-full overflow-hidden">
-                  <div className="h-full bg-indigo-400 rounded-full" style={{ width: '82%' }} />
+                <div className="h-1 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+                  <div className="h-full bg-indigo-500 rounded-full" style={{ width: '82%' }} />
                 </div>
               </div>
 
               <div>
-                <div className="flex justify-between text-zinc-300 font-medium mb-0.5">
+                <div className="flex justify-between text-zinc-700 dark:text-zinc-300 font-medium mb-0.5">
                   <span>Ginecologia &amp; Obstetrícia</span>
-                  <span className="font-mono text-purple-300 font-bold">86%</span>
+                  <span className="font-mono text-purple-700 dark:text-purple-300 font-bold">86%</span>
                 </div>
-                <div className="h-1 bg-zinc-800 rounded-full overflow-hidden">
-                  <div className="h-full bg-purple-400 rounded-full" style={{ width: '86%' }} />
+                <div className="h-1 bg-zinc-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+                  <div className="h-full bg-purple-500 rounded-full" style={{ width: '86%' }} />
                 </div>
               </div>
             </div>
 
-            <div className="mt-3 pt-2 border-t border-zinc-800/80 text-[10.5px] text-zinc-300 font-medium truncate">
-              <strong className="text-cyan-300">Mentor: </strong>Revisar Abdome Obstrutivo
+            <div className="mt-3 pt-2 border-t border-zinc-200 dark:border-zinc-800/80 text-[10.5px] text-zinc-700 dark:text-zinc-300 font-medium truncate">
+              <strong className="text-cyan-700 dark:text-cyan-300">Mentor: </strong>Revisar Abdome Obstrutivo
             </div>
           </div>
         );
@@ -504,7 +578,11 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
     <section
       ref={sectionRef}
       aria-label="Introdução Hippocampus • Os 4 Pilares da Aprovação"
-      className="font-inter relative w-full min-h-[calc(100vh-4rem)] flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 py-10 sm:py-14 bg-gradient-to-b from-white via-zinc-50/70 to-zinc-100/50 dark:from-[var(--bg-page)] dark:via-[var(--bg-page)] dark:to-[#070709] overflow-hidden select-none transition-colors duration-1000"
+      className={`font-inter relative w-full ${
+        embeddedMode
+          ? 'h-full flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 py-6 sm:py-8 bg-transparent overflow-hidden select-none pointer-events-none'
+          : 'min-h-[calc(100vh-4rem)] flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 py-10 sm:py-14 bg-zinc-50 dark:bg-[var(--bg-page)] overflow-hidden select-none transition-colors duration-300'
+      }`}
       style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
     >
       <style>{`
@@ -605,7 +683,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
           </div>
 
           {/* Os 2 Botões de Conversão: Sempre Fixos e Estáveis no Centro */}
-          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto pointer-events-auto">
             <button
               type="button"
               data-landing-auth
@@ -660,21 +738,29 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
         </div>
       </div>
 
-      {/* RODAPÉ: Indicador Discreto de Transição para o Cérebro 3D */}
+      {/* RODAPÉ: Indicador Discreto de Transição (Apenas as 2 setinhas para baixo, sem texto) */}
       <div
         style={{ opacity: containerOpacity }}
-        className="relative z-10 flex flex-col items-center mt-auto pb-2 transition-opacity"
+        className="relative z-10 flex flex-col items-center mt-auto pb-1 sm:pb-2 transition-opacity"
       >
         <button
           type="button"
-          onClick={() => onScrollToSection('neuroanatomia')}
-          className="group flex flex-col items-center gap-1.5 text-xs text-zinc-400 dark:text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors cursor-pointer py-2 focus-visible:outline-none"
+          onClick={() => {
+            if (embeddedMode) {
+              const heroEl = document.getElementById('neuroanatomia');
+              if (heroEl) {
+                const targetScroll = heroEl.offsetTop + (window.innerHeight || 800) * 1.5;
+                window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+                return;
+              }
+            }
+            onScrollToSection('neuroanatomia');
+          }}
+          className="pointer-events-auto group flex flex-col items-center cursor-pointer p-2 focus-visible:outline-none transition-transform hover:scale-110"
           aria-label="Rolar para a animação neuroanatômica do cérebro"
         >
-          <div className="flex items-center gap-1.5 text-[11px] font-medium tracking-wide">
-            <span>Role para dissecar o encéfalo</span>
-            <ChevronDown className="w-3.5 h-3.5 transition-transform group-hover:translate-y-1" />
-          </div>
+          <ChevronDown className="w-4 h-4 text-zinc-400 dark:text-zinc-500 animate-bounce" />
+          <ChevronDown className="w-4 h-4 -mt-2.5 text-zinc-400/60 dark:text-zinc-500/60 animate-bounce [animation-delay:150ms]" />
         </button>
       </div>
     </section>

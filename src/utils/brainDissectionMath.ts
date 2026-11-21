@@ -25,49 +25,51 @@ export const PAPEZ_ENSEMBLE_CENTER = new THREE.Vector3(-0.18, -0.11, 0.10);
 export const HIPPOCAMPUS_ISOLATED_CENTER = new THREE.Vector3(0.08, -0.46, 0.40);
 
 export const LAYER_CONFIGS: Record<string, DissectionLayerConfig> = {
-  // 1. No Card 1 (0.16 -> 0.35), o córtex permanece 100% INTEIRO para leitura calma.
-  //    A dissecação sólida ocorre suavemente na transição do Card 1 para o Card 2 (0.35 -> 0.58):
+  // Dissecação Anatômica em Vista Explodida (Exploded View):
+  // No Card 1 (Córtex), o encéfalo permanece íntegro para leitura clara.
+  // Na transição para o Card 2 (Papez, 0.34 -> 0.47), os lobos se fragmentam, se afastam em 3D e dissolvem,
+  // garantindo que no Circuito de Papez APENAS as estruturas centrais fiquem visíveis no palco.
   cortex_left_temporal: {
     role: 'shell',
     renderOrder: 16,
-    fadeRange: [0.35, 0.49],
+    fadeRange: [0.34, 0.45],
     driftVector: [0.25, -0.65, 1.45],
     driftRotation: [0.08, 0.15, -0.05]
   },
   cortex_left_frontal: {
     role: 'shell',
     renderOrder: 15,
-    fadeRange: [0.37, 0.51],
+    fadeRange: [0.35, 0.46],
     driftVector: [-0.95, 0.65, 1.35],
     driftRotation: [-0.10, 0.14, 0.08]
   },
   cortex_left_parietal: {
     role: 'shell',
     renderOrder: 14,
-    fadeRange: [0.40, 0.54],
+    fadeRange: [0.36, 0.47],
     driftVector: [0.95, 0.65, 1.35],
     driftRotation: [-0.08, -0.14, -0.06]
   },
 
-  // 2. Dissecação do outro lado do córtex completando a revelação sólida para o Card 2 (Circuito de Papez)
+  // Hemisfério direito com fragmentação simétrica:
   cortex_right_temporal: {
     role: 'shell',
     renderOrder: 13,
-    fadeRange: [0.42, 0.56],
+    fadeRange: [0.34, 0.45],
     driftVector: [0.25, -0.65, -1.45],
     driftRotation: [-0.08, -0.15, -0.05]
   },
   cortex_right_frontal: {
     role: 'shell',
     renderOrder: 12,
-    fadeRange: [0.44, 0.58],
+    fadeRange: [0.35, 0.46],
     driftVector: [-0.95, 0.65, -1.35],
     driftRotation: [0.10, -0.14, 0.08]
   },
   cortex_right_parietal: {
     role: 'shell',
     renderOrder: 11,
-    fadeRange: [0.46, 0.59],
+    fadeRange: [0.36, 0.47],
     driftVector: [0.95, 0.65, -1.35],
     driftRotation: [0.08, 0.14, -0.06]
   },
@@ -219,14 +221,14 @@ export function computeDissectionPose(
   const pendulumY = Math.sin(elapsed * 0.26) * 0.050 * motionScale;
   const gentleRollZ = Math.cos(elapsed * 0.22) * 0.006 * motionScale;
 
-  // Movimento de apresentação frontal do Córtex Pré-Frontal no Card 1 (0.14 -> 0.38)
+  // Movimento de apresentação frontal do Córtex Pré-Frontal no Card 1
   // Suavemente gira e apresenta o pólo frontal em direção ao estudante e retorna ao alinhamento sagital antes da dissecação de Papez
-  const card1FrontalT = smootherstep(0.12, 0.22, p) * (1.0 - smootherstep(0.38, 0.48, p));
+  const card1FrontalT = smootherstep(0.06, 0.16, p) * (1.0 - smootherstep(0.36, 0.44, p));
 
   // Foco 1: enquadra o Circuito de Papez para o Card 2
-  const papezFocusT = smootherstep(0.38, 0.54, p);
-  // Foco 2: isola e destaca exclusivamente o Hipocampo apenas no último Card (Card 3: 0.68 -> 0.80, retido até 1.00)
-  const isolateHippoT = smootherstep(0.68, 0.80, p);
+  const papezFocusT = smootherstep(0.36, 0.48, p);
+  // Foco 2: isola e destaca exclusivamente o Hipocampo apenas no último Card (Card 3: 0.70 -> 0.80, retido até 1.00)
+  const isolateHippoT = smootherstep(0.70, 0.80, p);
 
   // Rotações orquestradas:
   // No Card 1, frontalYaw (+0.62 rad / ~35°) gira o lobo frontal para a frente da câmera, e frontalPitch (+0.08) expõe a face superior/dorsolateral

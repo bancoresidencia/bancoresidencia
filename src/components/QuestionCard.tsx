@@ -410,7 +410,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const isWrittenQuestion = question.type === 'Discursiva' || question.type === 'Dissertativa';
 
   // Tentativa atual de resolução da questão (para isolar rascunhos limpos por tentativa)
-  const [solveAttempt, setSolveAttempt] = useState<number>(1);
+  const attemptStorageKey = `question_attempt_${inkOwner?.id || 'guest'}_${question.id}`;
+  const [solveAttempt, setSolveAttempt] = useState<number>(() => {
+    if (typeof window === 'undefined') return 1;
+    try {
+      const saved = localStorage.getItem(`question_attempt_${inkOwner?.id || 'guest'}_${question.id}`);
+      return saved ? Math.max(1, parseInt(saved, 10)) : 1;
+    } catch {
+      return 1;
+    }
+  });
 
   // Anotações clínicas pessoais da questão (Modo Normal de Estudo)
   const [isNoteOpen, setIsNoteOpen] = useState(false);
@@ -1059,7 +1068,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setPendingSelected(null);
     setShowCommentary(false);
     attemptRef.current = null;
-    setSolveAttempt(prev => prev + 1);
+    setSolveAttempt(prev => {
+      const next = prev + 1;
+      try {
+        localStorage.setItem(attemptStorageKey, String(next));
+      } catch {}
+      return next;
+    });
   };
 
   const submitAnswer = async (answer: { selectedOption: 'A' | 'B' | 'C' | 'D' | 'E' } | { writtenAnswer: string }) => {
@@ -1425,14 +1440,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400 shrink-0" />
                 )}
                 <span>{isAnswered ? 'Resolvida nesta sessão' : 'Resolvida anteriormente'}</span>
-                {isAnswered && (
+                {(isAnswered || !!question.user_answer) && (
                   <Button
                     type="button"
                     variant="outline"
                     size="xs"
                     onClick={handleStartReSolve}
-                    title="Resolver novamente esta questão"
-                    className="ml-1 h-5 px-1.5 py-0 text-[10px] font-extrabold bg-white dark:bg-zinc-900 border-current"
+                    title="Resolver novamente esta questão (iniciar nova tentativa com rascunho limpo)"
+                    className="ml-1 h-5 px-1.5 py-0 text-[10px] font-extrabold bg-white dark:bg-zinc-900 border-current cursor-pointer"
                     leftIcon={<RotateCcw className="w-2.5 h-2.5" />}
                   >
                     Refazer

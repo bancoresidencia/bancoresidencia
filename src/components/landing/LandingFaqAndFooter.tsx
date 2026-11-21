@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ChevronDown, HelpCircle, ArrowRight, MessageCircle } from 'lucide-react';
+import { ChevronDown, ArrowRight, MessageCircle } from 'lucide-react';
 import { Logo } from '@/components/Logo';
 import { useTheme } from '@/context/ThemeContext';
 import { LANDING_FAQ_ITEMS } from './landingData';
@@ -27,7 +27,26 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
   onOpenAuth,
   onScrollToSection
 }) => {
-  const { accentConfig } = useTheme();
+  const { accent, mode, accentConfig } = useTheme();
+  const isMonochrome = accent === 'neutral';
+
+  const highlightTextStyle: React.CSSProperties = isMonochrome
+    ? {
+        backgroundImage:
+          mode === 'dark'
+            ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
+            : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
+      }
+    : {
+        backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${
+          accentConfig.chartPalette[1] ?? accentConfig.hoverHex
+        } 26%, ${
+          mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
+        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${
+          accentConfig.primaryHex
+        } 100%)`
+      };
+
   const { ref: faqRef, isVisible: faqVisible } = useScrollReveal<HTMLDivElement>(0.08);
   const { ref: supportRef, isVisible: supportVisible } = useScrollReveal<HTMLDivElement>(0.1);
 
@@ -38,21 +57,24 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
           ========================================================================= */}
       <section
         id="faq"
-        className="scroll-mt-20 py-18 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80"
+        className="scroll-mt-20 py-18 sm:py-26 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+        style={{ contentVisibility: 'auto', containIntrinsicSize: '1px 800px' } as React.CSSProperties}
       >
         <div
           ref={faqRef}
           className={`max-w-3xl mx-auto px-4 sm:px-6 reveal-up ${faqVisible ? 'is-visible' : ''}`}
         >
-          <div className="text-center mb-10 sm:mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs font-bold mb-3">
-              <HelpCircle className="w-3.5 h-3.5 shrink-0" />
-              <span>Dúvidas Frequentes</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-black tracking-[-0.035em] text-zinc-950 dark:text-white">
-              Perguntas Frequentes
+          <div className="text-left mb-10 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-[-0.03em] text-zinc-950 dark:text-white leading-[1.15]">
+              Perguntas frequentes e{' '}
+              <span
+                className="bg-clip-text text-transparent animate-hippo-text-sweep opacity-95"
+                style={highlightTextStyle}
+              >
+                suporte direto.
+              </span>
             </h2>
-            <p className="mt-2.5 text-sm text-zinc-600 dark:text-zinc-400">
+            <p className="mt-2.5 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
               Tudo o que você precisa saber sobre metodologia, acervo e planos do Hippocampus.
             </p>
           </div>
@@ -104,7 +126,8 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
           ========================================================================= */}
       <section
         id="suporte"
-        className="scroll-mt-20 py-14 sm:py-20 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/80 dark:bg-[#0b0b0e]"
+        className="scroll-mt-20 py-16 sm:py-22 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+        style={{ contentVisibility: 'auto', containIntrinsicSize: '1px 500px' } as React.CSSProperties}
       >
         <div
           ref={supportRef}
@@ -194,7 +217,7 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
       {/* =========================================================================
           RODAPÉ INSTITUCIONAL COMPLETO (Com Links Legais /privacidade e /termos)
           ========================================================================= */}
-      <footer className="border-t border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-[#09090b] py-10 text-xs text-zinc-600 dark:text-zinc-400 mt-auto">
+      <footer className="border-t border-zinc-200/40 dark:border-zinc-800/40 bg-zinc-50 dark:bg-[var(--bg-page)] py-12 text-xs text-zinc-600 dark:text-zinc-400 mt-auto transition-colors duration-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-5">
             <Logo variant="full" className="h-9 sm:h-10 w-auto max-w-[240px] shrink-0" />

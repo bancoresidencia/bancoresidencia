@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Check, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { Check, ArrowRight, ShieldCheck } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { LANDING_PRICING_PLANS, INCLUDED_PLATFORM_FEATURES } from './landingData';
 import { useScrollReveal } from './useScrollReveal';
@@ -11,24 +11,45 @@ interface LandingPricingSectionProps {
 }
 
 export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ onSelectPlan }) => {
-  const { accentConfig } = useTheme();
+  const { accent, mode, accentConfig } = useTheme();
+  const isMonochrome = accent === 'neutral';
+
+  const highlightTextStyle: React.CSSProperties = isMonochrome
+    ? {
+        backgroundImage:
+          mode === 'dark'
+            ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
+            : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
+      }
+    : {
+        backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${
+          accentConfig.chartPalette[1] ?? accentConfig.hoverHex
+        } 26%, ${
+          mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
+        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${
+          accentConfig.primaryHex
+        } 100%)`
+      };
+
   const { ref, isVisible } = useScrollReveal<HTMLDivElement>(0.08);
 
   return (
     <section
       id="planos"
-      className="scroll-mt-20 py-18 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-100/60 dark:bg-[#0b0b0e]"
+      className="scroll-mt-20 py-18 sm:py-26 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+      style={{ contentVisibility: 'auto', containIntrinsicSize: '1px 800px' } as React.CSSProperties}
     >
       <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 reveal-up ${isVisible ? 'is-visible' : ''}`}>
-        {/* Cabeçalho dos Planos */}
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 text-xs font-bold mb-3 shadow-2xs">
-            <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-            <span>Condições Especiais de Lançamento</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-5xl font-black tracking-[-0.035em] text-zinc-950 dark:text-white leading-tight">
-            Planos transparentes, acesso irrestrito.
+        {/* Cabeçalho dos Planos Padronizado (Alinhado à Esquerda - Estilo Imagem 2) */}
+        <div className="max-w-3xl text-left mb-10 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-[-0.03em] text-zinc-950 dark:text-white leading-[1.15]">
+            Planos transparentes,{' '}
+            <span
+              className="bg-clip-text text-transparent animate-hippo-text-sweep opacity-95"
+              style={highlightTextStyle}
+            >
+              acesso irrestrito.
+            </span>
           </h2>
 
           <p className="mt-3 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
@@ -39,13 +60,13 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
         {/* Barra de Recursos Inclusos em Todos os Planos */}
         <div className="mb-10 max-w-5xl mx-auto p-4 rounded-2xl bg-white/90 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/90">
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs sm:text-[13px]">
-            <span className="font-extrabold text-zinc-950 dark:text-white">
+            <span className="font-extrabold text-zinc-950 dark:text-white shrink-0">
               Incluso em qualquer plano:
             </span>
             {INCLUDED_PLATFORM_FEATURES.map((feature) => (
               <span
                 key={feature}
-                className="inline-flex items-center gap-1.5 text-zinc-700 dark:text-zinc-300 font-medium"
+                className="inline-flex items-center gap-1.5 text-zinc-700 dark:text-zinc-300 font-medium whitespace-nowrap shrink-0"
               >
                 <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 <span>{feature}</span>
@@ -55,7 +76,7 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
         </div>
 
         {/* Grid dos 4 Planos com Contraste WCAG AA e Harmonia Total ao Tema */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch pt-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch pt-4 sm:pt-6">
           {LANDING_PRICING_PLANS.map((plan) => {
             const isPrimary = plan.tier === 'primary_highlight';
             const isSecondary = plan.tier === 'secondary_highlight';
@@ -73,23 +94,32 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
                 )}
 
                 <div
-                  className={`relative rounded-2xl p-6 flex flex-col justify-between flex-1 transition-transform duration-200 hover:-translate-y-1 ${
+                  className={`relative rounded-3xl p-6 sm:p-7 flex flex-col justify-between flex-1 transition-all duration-300 hover:-translate-y-1 bg-white/94 dark:bg-zinc-950/94 backdrop-blur-md shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] ${
                     isPrimary
-                      ? 'bg-white dark:bg-[#141418] border-2 shadow-2xl lg:-translate-y-2 z-10'
+                      ? 'border-2 shadow-2xl lg:-translate-y-2 z-10'
                       : isSecondary
-                        ? 'bg-white dark:bg-[#131317] border-2 border-zinc-400/80 dark:border-zinc-600 shadow-lg z-10'
-                        : 'bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 shadow-xs'
+                        ? 'border-2 border-zinc-400/80 dark:border-zinc-600 shadow-lg z-10'
+                        : 'border border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-400 dark:hover:border-zinc-700'
                   }`}
                   style={isPrimary ? { borderColor: accentConfig.primaryHex } : undefined}
                 >
-                  {/* Selo Superior com Contraste Adaptativo (Corrigindo o bug do Monocromático) */}
+                  {/* Friso luminoso sutil no topo (Laser Rim) */}
+                  <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-x-6 top-0 h-0.5 rounded-full"
+                    style={{
+                      background: `linear-gradient(90deg, transparent, ${isPrimary ? accentConfig.primaryHex : isSecondary ? '#a1a1aa' : 'rgba(161,161,170,0.5)'}, transparent)`,
+                      opacity: isPrimary ? 0.75 : 0.45
+                    }}
+                  />
+                  {/* Selo Superior com Contraste Adaptativo (Sem corte de overflow) */}
                   {plan.badge && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                    <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap z-20 pointer-events-none select-none">
                       <span
-                        className={`text-[11px] font-extrabold uppercase tracking-wide px-3 py-1 rounded-full shadow-sm ${
+                        className={`text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wide px-3.5 py-1 rounded-full shadow-md ${
                           isPrimary
                             ? ''
-                            : 'bg-zinc-900 text-white dark:bg-zinc-200 dark:text-zinc-950'
+                            : 'bg-zinc-900 text-white dark:bg-zinc-200 dark:text-zinc-950 border border-zinc-700/30 dark:border-zinc-300/30'
                         }`}
                         style={
                           isPrimary

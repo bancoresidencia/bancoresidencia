@@ -609,14 +609,18 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
 
       {/* 3. Card 3D Interativo (Flip) */}
       <div
-        onClick={() => {
+        onClick={(e) => {
+          const target = e.target as HTMLElement;
+          if (target.closest('button, a, input, textarea, [role="button"], svg, aside')) {
+            return;
+          }
           if (!isInlineEditing) {
             setIsFlipped((prev) => !prev);
           }
         }}
         className="w-full min-h-[300px] sm:min-h-[400px] p-5 sm:p-8 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs cursor-pointer flex flex-col justify-between transition-all duration-200 select-none touch-manipulation group relative isolate overflow-hidden"
       >
-        <StudyInkLayer content={`flashcard:${currentCard.id}`} flip={() => setIsFlipped(value => !value)} />
+        <StudyInkLayer content={`flashcard:${currentCard.id}`} />
         {/* Topo do Card */}
         <div className="flex items-center justify-between gap-2 border-b border-zinc-100 dark:border-zinc-800/80 pb-3">
           <div className="flex items-center gap-2 flex-wrap">

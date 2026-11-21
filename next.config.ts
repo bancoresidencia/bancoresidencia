@@ -12,6 +12,9 @@ const motionStudioOrigin = 'http://localhost:5200';
 const nextConfig: NextConfig = {
   devIndicators: false,
   poweredByHeader: false,
+  outputFileTracingExcludes: {
+    '*': ['./data/**']
+  },
   images: {
     remotePatterns: [
       {

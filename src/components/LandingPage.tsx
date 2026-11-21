@@ -1,30 +1,22 @@
 'use client';
 
 import React, { memo, useState, useCallback } from 'react';
-import {
-  LandingDemoQuestionsSection,
-  ExternalDemoSelection
-} from '@/components/LandingDemoQuestionsSection';
 import { LandingHeader } from '@/components/landing/LandingHeader';
-import { LandingIntroSection } from '@/components/landing/LandingIntroSection';
 import { LandingBrainHero } from '@/components/LandingBrainHero';
-import { LandingMetricsAndAuthorityStrip } from '@/components/landing/LandingMetricsAndAuthorityStrip';
-import { LandingInstitutionsStrip } from '@/components/landing/LandingInstitutionsStrip';
+import { LandingInstitutionsAndMapSection } from '@/components/landing/LandingInstitutionsAndMapSection';
+import { LandingInsidePlatformSection } from '@/components/landing/LandingInsidePlatformSection';
 import { LandingEcosystemShowcase } from '@/components/landing/LandingEcosystemShowcase';
-import { LandingFlashcardsAndThemesSection } from '@/components/landing/LandingFlashcardsAndThemesSection';
 import { LandingPricingSection } from '@/components/landing/LandingPricingSection';
 import { LandingFaqAndFooter } from '@/components/landing/LandingFaqAndFooter';
 import { LandingSections } from '@/components/landing/LandingSections';
-import { DemoTabKey } from '@/components/landing/landingData';
 
 interface LandingPageProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;
   onLoginDemo?: () => void;
 }
 
-export const LandingPage = memo(function LandingPage({ onOpenAuth, onLoginDemo }: LandingPageProps) {
+export const LandingPage = memo(function LandingPage({ onOpenAuth }: LandingPageProps) {
   const [openFaqId, setOpenFaqId] = useState<string | null>('faq-1');
-  const [demoSelection, setDemoSelection] = useState<ExternalDemoSelection | null>(null);
 
   const scrollToSection = useCallback((id: string) => {
     const el = document.getElementById(id);
@@ -32,19 +24,6 @@ export const LandingPage = memo(function LandingPage({ onOpenAuth, onLoginDemo }
       el.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
-
-  const handleSelectBancaDemo = useCallback(
-    (tab: DemoTabKey, questionIndex: number, bancaLabel: string) => {
-      setDemoSelection({
-        tab,
-        questionIndex,
-        bancaLabel,
-        nonce: Date.now()
-      });
-      scrollToSection('questoes');
-    },
-    [scrollToSection]
-  );
 
   const handleStartPlanCheckout = useCallback(
     (planId: string, mode: 'register' | 'login' = 'register') => {
@@ -74,44 +53,34 @@ export const LandingPage = memo(function LandingPage({ onOpenAuth, onLoginDemo }
       className="font-inter min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-[var(--primary-contrast)] transition-colors duration-200 overflow-x-clip"
       style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
     >
+      {/* 1. Header Fixo com Navegação */}
       <LandingHeader onOpenAuth={onOpenAuth} onScrollToSection={scrollToSection} />
 
       <main id="conteudo-principal" className="flex-1 flex flex-col">
-        <LandingIntroSection
-          onOpenAuth={onOpenAuth}
-          onScrollToSection={scrollToSection}
-        />
-
+        {/* 2. Dobras 1 e 2: Os 4 Pilares da Aprovação + Mensagem + Dissecção Anatômica do Cérebro */}
         <div id="neuroanatomia" className="scroll-mt-16">
-          <LandingBrainHero />
+          <LandingBrainHero
+            onOpenAuth={onOpenAuth}
+            onScrollToSection={scrollToSection}
+          />
         </div>
 
         <LandingSections>
-          <LandingMetricsAndAuthorityStrip />
-
-          <div id="questoes" tabIndex={-1} className="scroll-mt-20">
-            <LandingDemoQuestionsSection
-              key={demoSelection ? `${demoSelection.tab}-${demoSelection.nonce}` : 'default'}
-              onLoginDemo={onLoginDemo}
-              onOpenAuth={onOpenAuth}
-              initialTab={demoSelection?.tab}
-              initialQuestionIndex={demoSelection?.questionIndex}
-              bancaLabel={demoSelection?.bancaLabel}
-            />
-          </div>
-
-          <LandingEcosystemShowcase onOpenAuth={onOpenAuth} />
-
-          <LandingFlashcardsAndThemesSection />
-
-          <LandingInstitutionsStrip
-            onSelectBanca={(banca) =>
-              handleSelectBancaDemo(banca.targetTab, banca.targetQuestionIdx, banca.shortLabel)
-            }
+          {/* 3. Nova Dobra: Estatísticas da Imagem 1 (sem 7 dias) + Mapa do Brasil das 27 UFs + Logos Oficiais */}
+          <LandingInstitutionsAndMapSection
+            onScrollToQuestions={() => scrollToSection('dentro-da-plataforma')}
           />
 
+          {/* 4. Nova Categoria de Dobra: "Dentro da Plataforma" (5 Questões, 5 Flashcards, 3 Resumos, Desempenho) */}
+          <LandingInsidePlatformSection onOpenAuth={onOpenAuth} />
+
+          {/* 5. Recursos Adicionais: Idêntico à Imagem 2 (Provas na Íntegra na 1ª posição, TRI, Caderno de Erros, Google Agenda) */}
+          <LandingEcosystemShowcase onOpenAuth={onOpenAuth} />
+
+          {/* 6. Planos de Preços (Mantido como está) */}
           <LandingPricingSection onSelectPlan={handleStartPlanCheckout} />
 
+          {/* 7. FAQ, Atendimento WhatsApp e Rodapé (Mantido como está) */}
           <LandingFaqAndFooter
             openFaqId={openFaqId}
             onToggleFaq={handleToggleFaq}
@@ -123,3 +92,5 @@ export const LandingPage = memo(function LandingPage({ onOpenAuth, onLoginDemo }
     </div>
   );
 });
+
+export default LandingPage;

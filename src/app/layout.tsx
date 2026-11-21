@@ -92,7 +92,7 @@ export default async function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${inter.variable} font-sans h-full antialiased dark`}
+      className={`${inter.variable} font-sans h-full antialiased`}
       style={{ fontFamily: 'var(--font-inter, "Inter"), "Inter Fallback", system-ui, sans-serif' }}
       suppressHydrationWarning
     >
@@ -110,6 +110,9 @@ export default async function RootLayout({
                   if (m === 'light') {
                     document.documentElement.classList.remove('dark');
                     document.documentElement.classList.add('light');
+                  } else {
+                    document.documentElement.classList.add('dark');
+                    document.documentElement.classList.remove('light');
                   }
                   var a = localStorage.getItem('banco_accent_color');
                   if (a === 'neutral') {

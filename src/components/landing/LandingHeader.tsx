@@ -13,9 +13,9 @@ interface LandingHeaderProps {
 
 const NAV_ITEMS: { id: string; label: string }[] = [
   { id: 'neuroanatomia', label: 'Metodologia' },
-  { id: 'questoes', label: 'Banco de Questões' },
-  { id: 'material-estudo', label: 'Ecossistema' },
-  { id: 'flashcards', label: 'Flashcards FSRS' },
+  { id: 'onde-vem-as-provas', label: 'Provas Oficiais' },
+  { id: 'dentro-da-plataforma', label: 'Dentro da Plataforma' },
+  { id: 'recursos-adicionais', label: 'Recursos' },
   { id: 'planos', label: 'Planos' },
   { id: 'faq', label: 'FAQ' },
   { id: 'suporte', label: 'Atendimento' }
@@ -36,7 +36,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-white/85 dark:bg-[var(--bg-page)]/85 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
-        {/* Marca Oficial Hippocampus (Botão semântico acessível via teclado) */}
+        {/* Marca Oficial Hippocampus */}
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -102,60 +102,54 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
         </div>
       </div>
 
-      {/* Menu Mobile com transição fluida */}
-      <div
-        aria-hidden={!mobileMenuOpen}
-        className={`lg:hidden grid transition-[grid-template-rows,opacity] duration-200 ease-out ${
-          mobileMenuOpen ? 'grid-rows-[1fr] opacity-100 border-t border-zinc-200 dark:border-zinc-800' : 'grid-rows-[0fr] opacity-0 pointer-events-none'
-        }`}
-      >
-        <div className="overflow-hidden bg-white dark:bg-[var(--bg-card)]">
-          <div className="px-4 py-3.5 space-y-1">
+      {/* Menu Gaveta Mobile */}
+      {mobileMenuOpen && (
+        <div className="lg:hidden border-t border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-[var(--bg-page)] px-4 py-4 space-y-2 animate-in fade-in slide-in-from-top-2 duration-150">
+          <nav className="flex flex-col gap-1">
             {NAV_ITEMS.map((item) => (
               <button
                 key={item.id}
                 type="button"
-                tabIndex={mobileMenuOpen ? 0 : -1}
                 onClick={() => handleNavClick(item.id)}
-                className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+                className="w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer"
               >
                 {item.label}
               </button>
             ))}
+          </nav>
 
-            <div className="pt-2.5 mt-2 border-t border-zinc-200 dark:border-zinc-800 grid grid-cols-2 gap-2">
-              <button
-                type="button"
-                tabIndex={mobileMenuOpen ? 0 : -1}
-                data-landing-auth
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenAuth('login');
-                }}
-                className="py-2.5 rounded-xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-center cursor-pointer"
-              >
-                Entrar
-              </button>
-              <button
-                type="button"
-                tabIndex={mobileMenuOpen ? 0 : -1}
-                data-landing-auth
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenAuth('register');
-                }}
-                className="py-2.5 rounded-xl text-sm font-bold text-center shadow-xs cursor-pointer"
-                style={{
-                  backgroundColor: accentConfig.primaryHex,
-                  color: accentConfig.primaryContrastHex
-                }}
-              >
-                Testar Grátis
-              </button>
-            </div>
+          <div className="pt-3 border-t border-zinc-200/80 dark:border-zinc-800 flex flex-col gap-2">
+            <button
+              type="button"
+              data-landing-auth
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenAuth('login');
+              }}
+              className="w-full h-10 rounded-xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center cursor-pointer"
+            >
+              Entrar na Plataforma
+            </button>
+            <button
+              type="button"
+              data-landing-auth
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenAuth('register');
+              }}
+              className="w-full h-10 rounded-xl text-sm font-bold flex items-center justify-center cursor-pointer shadow-sm"
+              style={{
+                backgroundColor: accentConfig.primaryHex,
+                color: accentConfig.primaryContrastHex
+              }}
+            >
+              Criar Conta Gratuita
+            </button>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 };
+
+export default LandingHeader;

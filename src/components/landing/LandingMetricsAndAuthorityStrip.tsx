@@ -61,7 +61,7 @@ export const LandingMetricsAndAuthorityStrip: React.FC = () => {
   const { ref: authRef, isVisible: authVisible } = useScrollReveal<HTMLDivElement>(0.12);
 
   return (
-    <section className="py-14 sm:py-18 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/70 dark:bg-[#0b0b0e]">
+    <section className="py-14 sm:py-18 bg-zinc-50 dark:bg-[var(--bg-page)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-12 sm:space-y-14">
         {/* 1. Contadores Numéricos Vivos no Scroll */}
         <div ref={kpiRef} className="grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-5">

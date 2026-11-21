@@ -604,8 +604,6 @@ function Editor({
       if (activeTouches.current.size === 2) {
         twoFingerUndoCandidate.current = true
       }
-    } else if (e.pointerType === 'pen' && tool !== 'read') {
-      setIsDrawing(true)
     }
 
     // DUAL-INPUT INTELIGENTE: CANETA DESENHA / DEDO ROLA OU CLICA
@@ -623,6 +621,8 @@ function Editor({
       e.currentTarget.setPointerCapture(e.pointerId)
       return
     }
+
+    setIsDrawing(true)
 
     // SUPORTE AO BOTÃO LATERAL DA S PEN (Barrel button)
     const isBarrel = (e.buttons & 2) !== 0 || (e.buttons & 32) !== 0 || e.button === 2 || (e.nativeEvent as any).button === 5

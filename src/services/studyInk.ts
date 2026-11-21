@@ -32,11 +32,37 @@ function database() {
 
 const syncTimers = new Map<string, ReturnType<typeof setTimeout>>()
 
+export function getSynchronousLocalInk(document: string, attemptNumber = 1): InkStroke[] {
+  if (typeof window === 'undefined') return []
+  try {
+    const raw = localStorage.getItem(`study-ink-fast:${document}:att-${attemptNumber}`)
+    if (raw) {
+      const parsed = JSON.parse(raw)
+      if (Array.isArray(parsed)) return parsed
+    }
+  } catch {}
+  return []
+}
+
+export function setSynchronousLocalInk(document: string, attemptNumber = 1, strokes: InkStroke[]) {
+  if (typeof window === 'undefined') return
+  try {
+    localStorage.setItem(`study-ink-fast:${document}:att-${attemptNumber}`, JSON.stringify(strokes))
+  } catch {}
+}
+
 export async function readInk(document: string, attemptNumber = 1): Promise<InkStroke[]> {
   const docKey = `${document}:att-${attemptNumber}`
+
+  // 0. Leitura síncrona ultra-rápida do localStorage (0ms de latência / zero flicker)
+  const cached = getSynchronousLocalInk(document, attemptNumber)
+  if (cached.length > 0) {
+    return cached
+  }
+
   const db = await database()
   
-  // 1. Leitura ultra-rápida do IndexedDB local (0ms de latência)
+  // 1. Leitura do IndexedDB local
   const localStrokes: InkStroke[] = await new Promise((resolve, reject) => {
     const request = db.transaction('strokes').objectStore('strokes').index('document').getAll(docKey)
     request.onsuccess = () => resolve(request.result.sort((a: InkStroke, b: InkStroke) => a.created - b.created))
@@ -44,6 +70,7 @@ export async function readInk(document: string, attemptNumber = 1): Promise<InkS
   })
 
   if (localStrokes.length > 0) {
+    setSynchronousLocalInk(document, attemptNumber, localStrokes)
     return localStrokes
   }
 
@@ -54,6 +81,7 @@ export async function readInk(document: string, attemptNumber = 1): Promise<InkS
       if (res.ok) {
         const data = await res.json()
         if (data.success && Array.isArray(data.strokes) && data.strokes.length > 0) {
+          setSynchronousLocalInk(document, attemptNumber, data.strokes)
           await saveInk(document, { before: [], after: data.strokes }, attemptNumber, false)
           return data.strokes.sort((a: InkStroke, b: InkStroke) => a.created - b.created)
         }
@@ -72,6 +100,11 @@ export async function saveInk(
   attemptNumber = 1,
   shouldSyncToCloud = true
 ) {
+  // 0. Atualização síncrona no localStorage para latência 0ms
+  const currentFast = getSynchronousLocalInk(document, attemptNumber)
+  const updatedFast = applyInk(currentFast, change)
+  setSynchronousLocalInk(document, attemptNumber, updatedFast)
+
   const docKey = `${document}:att-${attemptNumber}`
   const db = await database()
 

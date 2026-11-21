@@ -27,6 +27,7 @@ export interface SoftAnatomyUniforms {
   uHatchStrength: THREE.IUniform<number>;
   uHatchFreq: THREE.IUniform<number>;
   uHighlightMix: THREE.IUniform<number>;
+  uIsFrontalCortex: THREE.IUniform<number>;
   uBrightness: THREE.IUniform<number>;
   uIsLight: THREE.IUniform<number>;
   uWaveMode: THREE.IUniform<number>;
@@ -67,6 +68,7 @@ const FRAGMENT_SHADER = /* glsl */ `
   uniform float uHatchStrength;
   uniform float uHatchFreq;
   uniform float uHighlightMix;
+  uniform float uIsFrontalCortex;
   uniform float uBrightness;
   uniform float uIsLight;
   uniform float uWaveMode;
@@ -82,6 +84,7 @@ const FRAGMENT_SHADER = /* glsl */ `
     if (uOpacity <= 0.004) discard;
 
     vec3 norm = normalize(vNormal);
+    if (!gl_FrontFacing) norm = -norm;
     vec3 viewDir = normalize(vViewPos);
     vec3 keyDir = normalize(vec3(0.5, 0.9, 0.7));
     float key = max(dot(norm, keyDir), 0.0);
@@ -144,13 +147,23 @@ const FRAGMENT_SHADER = /* glsl */ `
     vec3 finalColor = surface + activeWave;
     finalColor += uRimColor * rimFactor * ((uIsLight > 0.5) ? 0.35 : 0.55);
 
-    // Destaque luminoso do Hipocampo no Card 3 quando isolado (uHighlightMix -> 1.0)
+    // Destaque luminoso do Córtex Pré-Frontal (Card 1) ou Hipocampo isolado (Card 3)
     if (uHighlightMix > 0.001) {
-      vec3 hippoLit = mix(uHighlightShadow, uHighlightBase, key * 0.5 + hemi * 0.3 + 0.35);
-      hippoLit += uRimColor * rimFactor * 0.75;
-      finalColor = mix(finalColor, hippoLit, uHighlightMix);
-      float pulse = 0.985 + 0.015 * sin(uTime * 1.4);
-      finalColor *= mix(1.0, pulse * 1.06, uHighlightMix);
+      float effHighlight = uHighlightMix;
+      if (uIsFrontalCortex > 0.5) {
+        // Delimitação anatômica exata do Córtex Pré-Frontal (PFC) conforme literatura médica e Imagem 3:
+        // Polo frontal anterior (X de -1.56 até ~ -0.70). A transição suave até -0.45 respeita a demarcação pré-motora.
+        float pfcZone = 1.0 - smoothstep(-0.80, -0.45, vLocalPos.x);
+        effHighlight *= pfcZone * 1.25;
+      }
+      if (effHighlight > 0.001) {
+        float hFactor = clamp(effHighlight, 0.0, 1.0);
+        vec3 hippoLit = mix(uHighlightShadow, uHighlightBase, key * 0.5 + hemi * 0.3 + 0.35);
+        hippoLit += uRimColor * rimFactor * 0.75;
+        finalColor = mix(finalColor, hippoLit, hFactor);
+        float pulse = 0.985 + 0.015 * sin(uTime * 1.4);
+        finalColor *= mix(1.0, pulse * 1.06, hFactor);
+      }
     }
 
     gl_FragColor = vec4(finalColor, uOpacity);
@@ -360,6 +373,7 @@ export function createSoftAnatomyMaterial(
     uHatchStrength: { value: 0.0 },
     uHatchFreq: { value: c.hatchFreq },
     uHighlightMix: { value: 0.0 },
+    uIsFrontalCortex: { value: 0.0 },
     uBrightness: { value: c.brightness },
     uIsLight: { value: isDark ? 0.0 : 1.0 },
     uWaveMode: { value: 0.0 },
@@ -371,7 +385,7 @@ export function createSoftAnatomyMaterial(
     vertexShader: VERTEX_SHADER,
     fragmentShader: FRAGMENT_SHADER,
     transparent: true,
-    side: THREE.FrontSide,
+    side: THREE.DoubleSide,
     depthWrite: true,
     depthTest: true
   });

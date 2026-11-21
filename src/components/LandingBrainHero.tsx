@@ -2,10 +2,20 @@
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import dynamic from 'next/dynamic';
+import { ChevronDown } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { prepareLandingBrainDownload, type LandingBrainDownload } from '@/utils/landingBrainAssets';
 import { smootherstep } from '@/utils/smootherstep';
 import { getBrainJourneyFrame, LandingBrainJourneyCards } from '@/components/landing/LandingBrainJourneyCards';
+import { LandingUnifiedBrainCard } from '@/components/landing/LandingUnifiedBrainCard';
+import { LandingIntroSection } from '@/components/landing/LandingIntroSection';
+
+/**
+ * Alternador de Modo do Card da 2ª Dobra:
+ * - 'unified': Card Único Progressivo Estável com Trava e Mini-Cards Flutuantes (NOVO PADRÃO RECOMENDADO)
+ * - 'legacy_journey': Modo anterior com múltiplos cards alternando (LandingBrainJourneyCards)
+ */
+export const BRAIN_HERO_CARD_MODE: 'unified' | 'legacy_journey' = 'unified';
 
 const HippocampusDissectionScene = dynamic(
   () => import('@/components/HippocampusDissectionScene'),
@@ -15,16 +25,27 @@ const HippocampusDissectionScene = dynamic(
 const initialProgress = { scrollProgress: 0, entryProgress: 1 };
 const scrollSettledDelay = 180;
 
-export const LandingBrainHero: React.FC = () => {
+export interface LandingBrainHeroProps {
+  onOpenAuth?: (mode?: 'login' | 'register', planTitle?: string) => void;
+  onScrollToSection?: (sectionId: string) => void;
+}
+
+export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
+  onOpenAuth,
+  onScrollToSection
+}) => {
   const { accent, mode, accentConfig } = useTheme();
   const isDark = mode === 'dark';
   const isMonochrome = accent === 'neutral';
   const trackRef = useRef<HTMLDivElement | null>(null);
+  const pillarsStageRef = useRef<HTMLDivElement | null>(null);
   const introRef = useRef<HTMLDivElement | null>(null);
   const brainStageRef = useRef<HTMLDivElement | null>(null);
   const cardsPanelRef = useRef<HTMLDivElement | null>(null);
+  const ambientGlowRef = useRef<HTMLDivElement | null>(null);
+  const scrollIndicatorRef = useRef<HTMLDivElement | null>(null);
 
-  const [scenePhase, setScenePhase] = useState<'idle' | 'preparing' | 'mounting' | 'settled'>('idle');
+  const [scenePhase, setScenePhase] = useState<'idle' | 'preparing' | 'mounting' | 'settled'>('mounting');
   const preparedModel = useRef<LandingBrainDownload | null>(null);
   const getPreparedModel = useCallback(() => preparedModel.current, []);
   const clearPreparedModel = useCallback(() => {
@@ -39,6 +60,10 @@ export const LandingBrainHero: React.FC = () => {
   const scrollProgressRef = useRef(initialProgress.scrollProgress);
   const entryProgressRef = useRef(initialProgress.entryProgress);
   const [journeyFrame, setJourneyFrame] = useState(-1);
+  const journeyFrameRef = useRef(-1);
+  const [activeAct, setActiveAct] = useState(0);
+  const activeActRef = useRef(0);
+  const [cardsVisible, setCardsVisible] = useState(false);
 
   const updateScroll = useCallback(() => {
     const el = trackRef.current;
@@ -46,79 +71,132 @@ export const LandingBrainHero: React.FC = () => {
     const rect = el.getBoundingClientRect();
     const winH = window.innerHeight || 800;
     const scrollable = Math.max(rect.height - winH, 1);
-    const entry = Math.max(0, Math.min(1, 1 - Math.max(0, rect.top) / winH));
-    const progress = Math.max(0, Math.min(1, -rect.top / scrollable));
+    const rawProgress = Math.max(0, Math.min(1, -rect.top / scrollable));
 
-    if (progress !== scrollProgressRef.current || entry !== entryProgressRef.current) {
-      const frame = getBrainJourneyFrame(progress);
-      if (frame !== getBrainJourneyFrame(scrollProgressRef.current)) {
+    // Mapeamento contínuo das dobras:
+    // 0.00 -> 0.16: Dobra 1 (Os 4 Pilares da Aprovação - Carrossel com cérebro centralizado no fundo)
+    // 0.14 -> 0.30: Transição da Dobra 1 para a Dobra 2 (O Salto/Glide: cérebro migra para a DIREITA e solidifica)
+    // 0.28 -> 0.44: Dobra 2 (Mensagem "Daqui a um mês..." à ESQUERDA e cérebro à DIREITA)
+    // 0.44 -> 0.58: Transição da Dobra 2 para a Dobra 3 (Cérebro migra para a ESQUERDA e card entra na DIREITA)
+    // 0.58 -> 1.00: Dobra 3 (Dissecção Clínica dos 3 Atos: Córtex -> Papez -> Hipocampo)
+
+    const pillarsFade = smootherstep(0.08, 0.20, rawProgress);
+    const pillarsOpacity = 1 - pillarsFade;
+    const pillarsY = -28 * pillarsFade;
+
+    const toDobra2 = smootherstep(0.12, 0.28, rawProgress);
+    const toDobra3 = smootherstep(0.42, 0.56, rawProgress);
+
+    // O CÉREBRO:
+    // Dobra 1: 0px (centro exato)
+    // Dobra 2: +285px (DIREITA)
+    // Dobra 3: -235px (ESQUERDA ao lado do card)
+    const brainDesktopX = (285 * toDobra2) - (520 * toDobra3);
+    const brainInitialFade = 0.40 + 0.60 * toDobra2;
+    const brainScale = (1.15 - 0.15 * toDobra2) * (1.0 - 0.04 * toDobra3);
+
+    // O GLOW AMBIENTE:
+    // Dobra 1: 50% (centro)
+    // Dobra 2: 68% (atrás do cérebro à direita)
+    // Dobra 3: 28% (atrás do cérebro à esquerda)
+    const glowLeftDesktop = 50 + 18 * toDobra2 - 40 * toDobra3;
+
+    // A MENSAGEM DA DOBRA 2 ("Daqui a um mês..."):
+    const heroFadeIn = smootherstep(0.20, 0.30, rawProgress);
+    const heroFadeOut = smootherstep(0.40, 0.50, rawProgress);
+    const heroOpacity = heroFadeIn * (1 - heroFadeOut);
+    const heroY = (1 - heroFadeIn) * 20 - 18 * heroFadeOut;
+
+    // OS CARDS DA DOBRA 3:
+    const cardsOpacity = smootherstep(0.50, 0.58, rawProgress);
+    setCardsVisible(cardsOpacity > 0.05);
+
+    // PROGRESSO DA JORNADA ANATÔMICA (mapeado de 0.52 a 1.00):
+    const dissectionProgress = Math.max(0, Math.min(1, (rawProgress - 0.52) / 0.48));
+
+    if (dissectionProgress !== scrollProgressRef.current) {
+      const frame = getBrainJourneyFrame(dissectionProgress, journeyFrameRef.current);
+      if (frame !== journeyFrameRef.current) {
+        journeyFrameRef.current = frame;
         setJourneyFrame(frame);
       }
-      scrollProgressRef.current = progress;
-      entryProgressRef.current = entry;
 
-      const entryFade = smootherstep(0.20, 0.82, entry);
-      const heroFadeOut = smootherstep(0.02, 0.15, progress);
-      const heroOpacity = entryFade * (1 - heroFadeOut);
-      const heroY = (1 - entryFade) * 20 - 14 * heroFadeOut;
-      const brainShift = smootherstep(0.02, 0.19, progress);
-      const brainScale = 0.92 + 0.08 * smootherstep(0.18, 0.95, entry);
-      const cardsOpacity = smootherstep(0.145, 0.19, progress);
-
-      const intro = introRef.current;
-      if (intro) {
-        intro.style.opacity = heroOpacity.toFixed(3);
-        intro.style.transform = `translate3d(0, ${heroY.toFixed(1)}px, 0) scale(${(1 - heroFadeOut * 0.035).toFixed(3)})`;
-        intro.style.pointerEvents = heroOpacity > 0.35 ? 'auto' : 'none';
-        intro.setAttribute('aria-hidden', String(heroOpacity < 0.05));
+      // Histerese de scroll para os 3 atos anatômicos com travamento deliberado:
+      const currentAct = activeActRef.current;
+      let nextAct = currentAct;
+      if (currentAct === 0 && dissectionProgress >= 0.42) {
+        nextAct = 1;
+      } else if (currentAct === 1) {
+        if (dissectionProgress >= 0.76) nextAct = 2;
+        else if (dissectionProgress < 0.36) nextAct = 0;
+      } else if (currentAct === 2) {
+        if (dissectionProgress < 0.70) nextAct = 1;
+      }
+      if (nextAct !== currentAct) {
+        activeActRef.current = nextAct;
+        setActiveAct(nextAct);
       }
 
-      const brainStage = brainStageRef.current;
-      if (brainStage) {
-        brainStage.style.opacity = smootherstep(0.18, 0.88, entry).toFixed(3);
-        brainStage.style.setProperty('--brain-desktop-x', `${(285 - 520 * brainShift).toFixed(1)}px`);
-        brainStage.style.setProperty('--brain-mobile-top', (33 - 28 * brainShift).toFixed(1) + '%');
-        brainStage.style.setProperty('--brain-scale', brainScale.toFixed(3));
-      }
-
-      const cardsPanel = cardsPanelRef.current;
-      if (cardsPanel) {
-        cardsPanel.style.opacity = cardsOpacity.toFixed(3);
-        cardsPanel.style.pointerEvents = cardsOpacity > 0.35 ? 'auto' : 'none';
-      }
+      scrollProgressRef.current = dissectionProgress;
     }
-    return rect.bottom > 0 && (rect.top < winH || (window.scrollY > 0 && rect.top < winH * 1.6));
+
+    const pillarsStage = pillarsStageRef.current;
+    if (pillarsStage) {
+      pillarsStage.style.opacity = pillarsOpacity.toFixed(3);
+      pillarsStage.style.transform = `translate3d(0, ${pillarsY.toFixed(1)}px, 0)`;
+      pillarsStage.style.pointerEvents = pillarsOpacity > 0.35 ? 'auto' : 'none';
+      pillarsStage.setAttribute('aria-hidden', String(pillarsOpacity < 0.05));
+    }
+
+    const intro = introRef.current;
+    if (intro) {
+      intro.style.opacity = heroOpacity.toFixed(3);
+      intro.style.transform = `translate3d(0, ${heroY.toFixed(1)}px, 0)`;
+      intro.style.pointerEvents = heroOpacity > 0.35 ? 'auto' : 'none';
+      intro.setAttribute('aria-hidden', String(heroOpacity < 0.05));
+    }
+
+    const brainStage = brainStageRef.current;
+    if (brainStage) {
+      brainStage.style.opacity = brainInitialFade.toFixed(3);
+      brainStage.style.setProperty('--brain-desktop-x', `${brainDesktopX.toFixed(1)}px`);
+      brainStage.style.setProperty('--brain-mobile-top', (26 - 22 * toDobra3).toFixed(1) + '%');
+      brainStage.style.setProperty('--brain-scale', brainScale.toFixed(3));
+    }
+
+    const cardsPanel = cardsPanelRef.current;
+    if (cardsPanel) {
+      cardsPanel.style.opacity = cardsOpacity.toFixed(3);
+      cardsPanel.style.pointerEvents = cardsOpacity > 0.35 ? 'auto' : 'none';
+    }
+
+    const ambientGlow = ambientGlowRef.current;
+    if (ambientGlow) {
+      ambientGlow.style.setProperty('--glow-desktop-left', `${glowLeftDesktop.toFixed(1)}%`);
+      ambientGlow.style.setProperty('--glow-desktop-top', '48%');
+    }
+
+    const scrollIndicator = scrollIndicatorRef.current;
+    if (scrollIndicator) {
+      // Exibição sutil durante as dobras 2 e 3, esvaecendo antes da transição da próxima seção
+      const show = rawProgress >= 0.20 && rawProgress <= 0.94;
+      const indOpacity = show
+        ? smootherstep(0.20, 0.26, rawProgress) * (1 - smootherstep(0.88, 0.94, rawProgress)) * 0.70
+        : 0;
+      scrollIndicator.style.opacity = indOpacity.toFixed(2);
+      scrollIndicator.style.pointerEvents = indOpacity > 0.2 ? 'auto' : 'none';
+    }
+
+    return true;
   }, []);
 
   useEffect(() => {
     let rafId = 0;
-    let setupTimer = 0;
-    let sceneMounted = false;
-
     const onScroll = () => {
-      window.clearTimeout(setupTimer);
       if (rafId) return;
       rafId = requestAnimationFrame(() => {
         rafId = 0;
-        const approaching = updateScroll();
-        if (sceneMounted || document.hidden) return;
-        if (!approaching) {
-          if (preparedModel.current) {
-            clearPreparedModel();
-            setScenePhase('idle');
-          }
-          return;
-        }
-
-        if (!preparedModel.current) {
-          preparedModel.current = prepareLandingBrainDownload();
-          setScenePhase('preparing');
-        }
-
-        setupTimer = window.setTimeout(() => {
-          sceneMounted = true;
-          setScenePhase('mounting');
-        }, scrollSettledDelay);
+        updateScroll();
       });
     };
     onScroll();
@@ -127,19 +205,25 @@ export const LandingBrainHero: React.FC = () => {
     document.addEventListener('visibilitychange', onScroll);
     return () => {
       cancelAnimationFrame(rafId);
-      window.clearTimeout(setupTimer);
-      clearPreparedModel();
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
       document.removeEventListener('visibilitychange', onScroll);
     };
-  }, [clearPreparedModel, updateScroll]);
+  }, [updateScroll]);
+
+  // Garante que qualquer re-render de estado (cardsVisible, activeAct, journeyFrame)
+  // sincronize instantaneamente os estilos DOM calculados pelo scroll
+  useEffect(() => {
+    updateScroll();
+  }, [updateScroll, journeyFrame, activeAct, cardsVisible]);
 
   const headlineGradient = isMonochrome
     ? isDark
       ? 'linear-gradient(110deg, #fff 0%, #a1a1aa 28%, #fff 50%, #71717a 76%, #fff 100%)'
-      : 'linear-gradient(110deg, #09090b 0%, #52525b 28%, #09090b 50%, #71717a 76%, #09090b 100%)'
-    : `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex} 26%, ${isDark ? '#e0f2fe' : '#fff'} 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex} 100%)`;
+      : 'linear-gradient(110deg, #09090b 0%, #3f3f46 28%, #18181b 50%, #52525b 76%, #09090b 100%)'
+    : `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex} 26%, ${
+        isDark ? '#e0f2fe' : accentConfig.hoverHex
+      } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex} 100%)`;
 
   return (
     <section
@@ -152,61 +236,91 @@ export const LandingBrainHero: React.FC = () => {
           ? `0 0 45px -8px ${accentConfig.primaryHex}44, 0 24px 50px rgba(0,0,0,0.85)`
           : `0 0 38px -10px ${accentConfig.primaryHex}35, 0 20px 45px rgba(15,23,42,0.14)`
       } as React.CSSProperties}
-      className="font-inter relative w-full border-b border-zinc-200/80 dark:border-zinc-800/80 bg-gradient-to-b from-white via-zinc-50/90 to-zinc-100/70 dark:from-[var(--bg-page)] dark:via-[var(--bg-page)] dark:to-[#070709]"
+      className="font-inter relative w-full bg-zinc-50 dark:bg-[var(--bg-page)] transition-colors duration-300"
     >
-      <div ref={trackRef} className="relative h-[560svh] w-full">
+      <div ref={trackRef} className="relative h-[880svh] w-full">
         <div className="sticky top-16 h-[calc(100svh-4rem)] min-h-[420px] w-full overflow-hidden flex flex-col justify-between">
-          {/* Luz ambiente radial sutil */}
+          {/* Luz ambiente radial dinâmica que acompanha suavemente o cérebro (centro -> direita -> esquerda) */}
           <div
+            ref={ambientGlowRef}
             aria-hidden="true"
-            className="pointer-events-none absolute -top-24 left-1/4 -translate-x-1/2 w-[560px] sm:w-[780px] h-[340px] rounded-full blur-[120px] opacity-12 dark:opacity-18 transition-colors duration-500"
-            style={{ backgroundColor: accentConfig.primaryHex }}
+            className="pointer-events-none absolute left-[var(--glow-mobile-left,50%)] top-[var(--glow-mobile-top,28%)] lg:left-[var(--glow-desktop-left,50%)] lg:top-[var(--glow-desktop-top,48%)] -translate-x-1/2 -translate-y-1/2 w-[520px] sm:w-[760px] lg:w-[880px] h-[360px] sm:h-[460px] rounded-full opacity-60 dark:opacity-40 transition-colors duration-500"
+            style={{
+              background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex}44 0%, ${accentConfig.primaryHex}18 42%, transparent 72%)`
+            }}
           />
 
-          {/* Palco Central Unificado */}
+          {/* PALCO CENTRAL UNIFICADO */}
           <div className="relative flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-center">
+            {/* 0. PRIMEIRA DOBRA: Os 4 Pilares da Aprovação (Carrossel com cérebro centralizado ao fundo) */}
+            <div
+              ref={pillarsStageRef}
+              className="absolute inset-0 z-20 flex flex-col justify-between transition-opacity duration-300"
+            >
+              <LandingIntroSection
+                onOpenAuth={onOpenAuth ?? (() => {})}
+                onScrollToSection={onScrollToSection ?? (() => {})}
+                embeddedMode={true}
+              />
+            </div>
+
+            {/* 1. SEGUNDA DOBRA: Mensagem à esquerda (Cérebro à direita) */}
             <div
               ref={introRef}
-              className="absolute inset-x-4 top-[8%] z-10 text-left sm:inset-x-6 lg:right-auto lg:top-1/2 lg:w-[46%] lg:-translate-y-1/2"
+              style={{ opacity: 0, pointerEvents: 'none' }}
+              className="absolute inset-x-4 top-[8%] z-10 text-left sm:inset-x-6 lg:left-6 xl:left-12 lg:right-auto lg:top-1/2 lg:w-[46%] lg:-translate-y-1/2 transition-opacity duration-300"
             >
               <h2 className="max-w-xl text-balance text-[28px] leading-[1.1] font-black tracking-[-0.035em] sm:text-[38px] md:text-[42px] xl:text-[48px]">
-                <span className="text-zinc-900/60 dark:text-white/60">Daqui a um mês, você ainda vai lembrar </span>
+                <span className="text-zinc-950 dark:text-white">Daqui a um mês, você ainda vai lembrar </span>
                 <span className="animate-hippo-text-sweep bg-[image:var(--journey-text-gradient)] bg-clip-text text-transparent">
                   o que estudou hoje?
                 </span>
               </h2>
             </div>
 
-            {/* 2. PALCO 3D DO CÉREBRO (z-20: esvaecimento e escala suave na transição entre dobras) */}
+            {/* 2. PALCO 3D DO CÉREBRO (z-10: centro na 1ª dobra -> direita na 2ª -> esquerda na 3ª) */}
             <div
               ref={brainStageRef}
               style={{ transform: 'translate3d(var(--brain-x, 0px), 0, 0) scale(var(--brain-scale, 1))' }}
-              className="absolute top-[var(--brain-mobile-top,33%)] z-20 flex h-[43%] w-full max-w-[600px] items-center justify-center transition-opacity duration-300 motion-reduce:transition-none lg:relative lg:top-auto lg:h-[74svh] lg:w-[650px] lg:max-w-[650px] lg:[--brain-x:var(--brain-desktop-x,285px)]"
+              className="absolute top-[var(--brain-mobile-top,26%)] z-10 flex h-[46%] w-full max-w-[620px] items-center justify-center transition-opacity duration-300 motion-reduce:transition-none lg:relative lg:top-auto lg:h-[76svh] lg:w-[670px] lg:max-w-[670px] lg:[--brain-x:var(--brain-desktop-x,0px)]"
             >
-              {(scenePhase === 'preparing' || scenePhase === 'mounting') && (
-                <span role="status" className="absolute text-sm font-medium text-zinc-500 dark:text-zinc-400">
-                  Carregando modelo 3D...
-                </span>
-              )}
-              {(scenePhase === 'mounting' || scenePhase === 'settled') && (
-                <HippocampusDissectionScene
-                  scrollProgressRef={scrollProgressRef}
-                  isDark={isDark}
-                  accentConfig={accentConfig}
-                  getPreparedModel={getPreparedModel}
-                  onLoaded={settleScene}
-                  onUnavailable={settleScene}
-                />
-              )}
+              <HippocampusDissectionScene
+                scrollProgressRef={scrollProgressRef}
+                isDark={isDark}
+                accentConfig={accentConfig}
+                getPreparedModel={getPreparedModel}
+                onLoaded={settleScene}
+                onUnavailable={settleScene}
+              />
             </div>
 
+            {/* 3. TERCEIRA DOBRA: Card Unificado da Jornada Clínica à direita */}
             <div
               ref={cardsPanelRef}
               style={{ opacity: 0, pointerEvents: 'none' }}
               className="absolute inset-x-4 bottom-3 z-30 mx-auto grid min-w-0 max-w-xl items-center sm:inset-x-6 lg:bottom-auto lg:left-auto lg:right-6 lg:top-1/2 lg:w-[435px] lg:-translate-y-1/2 xl:w-[465px]"
             >
-              <LandingBrainJourneyCards frame={journeyFrame} />
+              {BRAIN_HERO_CARD_MODE === 'unified' ? (
+                <LandingUnifiedBrainCard
+                  frame={journeyFrame}
+                  onOpenAuth={onOpenAuth}
+                  onScrollToSection={onScrollToSection}
+                />
+              ) : (
+                <LandingBrainJourneyCards frame={journeyFrame} />
+              )}
             </div>
+          </div>
+
+          {/* Indicador de rolagem nas dobras subsequentes (Apenas as 2 setinhas empilhadas, sem texto) */}
+          <div
+            ref={scrollIndicatorRef}
+            aria-hidden="true"
+            style={{ opacity: 0, pointerEvents: 'none' }}
+            className="absolute bottom-2.5 sm:bottom-3.5 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center pointer-events-none transition-opacity duration-300"
+          >
+            <ChevronDown className="w-4 h-4 text-zinc-400 dark:text-zinc-500 animate-bounce" />
+            <ChevronDown className="w-4 h-4 -mt-2.5 text-zinc-400/60 dark:text-zinc-500/60 animate-bounce [animation-delay:150ms]" />
           </div>
         </div>
       </div>

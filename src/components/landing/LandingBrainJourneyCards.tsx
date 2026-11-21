@@ -8,19 +8,22 @@ const journeyCards = [
     frameStyle: 'rounded-2xl rounded-tr-md border-t-2 border-t-zinc-400 shadow-[0_20px_45px_rgba(15,23,42,0.10)] dark:border-t-zinc-500 dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)]',
     phases: [
       {
-        title: 'Relacione o que você estuda.',
-        highlight: 'estuda.',
-        description: 'O córtex pré-frontal ajuda a manter informações na memória de trabalho enquanto você compara ideias, como ao ligar os sintomas de uma doença ao seu mecanismo.'
+        title: 'A memória executiva.',
+        highlight: 'executiva.',
+        description:
+          'O córtex pré-frontal sustenta a memória de trabalho, cruzando hipóteses diagnósticas com seus manejos, condutas e manifestações clínicas.'
       },
       {
-        title: 'Mas o que vale conectar?',
+        title: 'Contudo, o que vale conectar?',
         highlight: 'conectar?',
-        description: 'Se o resumo dá o mesmo peso a tudo, fica difícil perceber quais relações a banca espera que você faça.'
+        description:
+          'Resumos prolixos sobrecarregam essa memória executiva: sem hierarquia clara, você dispersa energia e não enxerga a pista decisiva da questão.'
       },
       {
         title: 'Resumos direcionados à prova.',
         highlight: 'à prova.',
-        description: 'Nossos resumos destacam os pontos-chave e ligam os mecanismos às manifestações clínicas. Assim, você sabe em quais relações concentrar a atenção durante a leitura.'
+        description:
+          'Por isso, nossos resumos organizam a carga cognitiva: destacam conceitos-chave de alta recorrência e ligam a patologia diretamente à conduta cobrada pelas bancas.'
       }
     ]
   },
@@ -31,19 +34,22 @@ const journeyCards = [
     frameStyle: 'rounded-[28px] shadow-[0_22px_55px_rgba(15,23,42,0.08)] sm:rounded-[36px] dark:shadow-[0_26px_55px_rgba(0,0,0,0.70)]',
     phases: [
       {
-        title: 'A memória envolve uma rede.',
-        highlight: 'uma rede.',
-        description: 'Pelo fórnix, o hipocampo se conecta aos corpos mamilares. O circuito segue pelo tálamo anterior e pelo giro do cíngulo, em uma rede que participa da memória.'
+        title: 'A rede de reverberação.',
+        highlight: 'reverberação.',
+        description:
+          'Do hipocampo ao giro do cíngulo, o Circuito de Papez reconsolida memórias por meio de reativação sináptica periódica.'
       },
       {
-        title: 'Mas o que você lembra dias depois?',
-        highlight: 'dias depois?',
-        description: 'Reler pode dar uma sensação de familiaridade. Você ainda consegue lembrar, sem consultar, o ponto que a banca costuma cobrar?'
+        title: 'No entanto, o que você lembra depois?',
+        highlight: 'lembra depois?',
+        description:
+          'Reler grifos passivos gera apenas falsa sensação de domínio: sem resgate ativo, o circuito não reverbera e a memória se dissipa antes da prova.'
       },
       {
-        title: 'Flashcards sobre o que mais cai.',
-        highlight: 'o que mais cai.',
-        description: 'Nossos flashcards retomam os pontos-chave dos temas que você estuda, com foco no que mais cai. Tente lembrar antes de revelar a resposta. O FSRS ajusta a próxima revisão conforme sua avaliação.'
+        title: 'Flashcards guiados pelo FSRS.',
+        highlight: 'pelo FSRS.',
+        description:
+          'Por conta disso, nossos flashcards focam no que mais cai em prova, forçando a recuperação ativa no momento crítico da curva de esquecimento com o FSRS (Free Spaced Repetition Scheduler).'
       }
     ]
   },
@@ -54,31 +60,45 @@ const journeyCards = [
     frameStyle: 'rounded-2xl border-2',
     phases: [
       {
-        title: 'Aqui começa a consolidação.',
-        highlight: 'a consolidação.',
-        description: 'O hipocampo tem papel central na consolidação inicial de novas memórias. Ele ajuda a ligar informações e contexto enquanto a memória começa a se estabilizar em interação com redes do córtex.'
+        title: 'A estrela da consolidação.',
+        highlight: 'da consolidação.',
+        description:
+          'O hipocampo indexa novos contextos e transfere o aprendizado para o neocórtex, permitindo reconhecer padrões em casos inéditos.'
       },
       {
-        title: 'Mas e quando o caso muda?',
+        title: 'Todavia, e quando o caso muda?',
         highlight: 'o caso muda?',
-        description: 'Na prova, você precisa recuperar o conceito em um enunciado novo, identificar a pista decisiva e distinguir alternativas que parecem plausíveis.'
+        description:
+          'Memorizar regras isoladas falha sob pressão: diante de um caso com muitos distratores, a lembrança não se transfere para a resposta certa.'
       },
       {
-        title: 'Mais de 200 mil questões no acervo',
-        highlight: '200 mil questões no acervo',
-        description: 'Aplique o conteúdo em casos variados, com questões de provas oficiais como ENARE, USP-SP e Unicamp. Após responder, veja um comentário objetivo sobre a pista decisiva, por que a correta se sustenta e onde cada distrator falha.'
+        title: '+200 mil questões com gabaritos comentados.',
+        highlight: 'gabaritos comentados.',
+        description:
+          'Logo, resolver questões das mais diversas bancas permite dominar múltiplos padrões de prova. Nossos gabaritos comentados dissecam cada distrator e fundamentam a conduta correta.'
       }
     ]
   }
 ];
 
-// Keep the scene boundaries aligned with the existing 3D choreography.
-// The last scene holds the anatomy in view before revealing the question bank.
-const phaseStarts = [0.15, 0.26, 0.34, 0.42, 0.53, 0.60, 0.68, 0.81, 0.89];
+// Platôs de travamento deliberado (Opção 1):
+// Cada momento (Tese, Antítese, Síntese) possui um platô amplo de leitura sustentada.
+// Entre as cenas (Córtex -> Papez -> Hipocampo), aplicamos zonas de escape com histerese
+// para que o estudante leia com conforto absoluto sem pular texto por aceleração acidental.
+const phaseStarts = [0.06, 0.15, 0.23, 0.42, 0.51, 0.59, 0.76, 0.83, 0.90];
 const phasesPerScene = 3;
 
-export function getBrainJourneyFrame(progress: number): number {
-  return phaseStarts.findLastIndex((start) => progress >= start);
+export function getBrainJourneyFrame(progress: number, prevFrame = 0): number {
+  const HYSTERESIS = 0.015;
+  let calculated = 0;
+  for (let i = phaseStarts.length - 1; i >= 0; i--) {
+    const threshold = i > prevFrame ? phaseStarts[i] + HYSTERESIS : phaseStarts[i] - HYSTERESIS;
+    if (progress >= threshold) {
+      calculated = i;
+      break;
+    }
+  }
+  return calculated;
 }
 
 interface LandingBrainJourneyCardsProps {
