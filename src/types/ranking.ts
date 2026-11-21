@@ -1,4 +1,4 @@
-export const RANKING_TABS = ['all', 'official', 'provisional'] as const;
+export const RANKING_TABS = ['official', 'provisional', 'xp'] as const;
 export type RankingTab = (typeof RANKING_TABS)[number];
 
 export const RANKING_MODALITIES = [
@@ -15,6 +15,8 @@ export interface LeaderboardStudent {
   college: string;
   specialtyTarget: string;
   bancaFoco: string;
+  level: number;
+  xp: number;
   totalAnswered: number;
   totalCorrect: number;
   accuracy: number;
@@ -29,6 +31,16 @@ export interface LeaderboardStudent {
   isCurrentUser: boolean;
 }
 
+export interface StudentWeeklyDataPoint {
+  week: string;
+  dateLabel: string;
+  percentile: number;
+  accuracy: number;
+  totalAnswered: number;
+  rank: number;
+  xp: number;
+}
+
 export interface LeaderboardResponse {
   success: true;
   totalCandidates: number;
@@ -38,7 +50,14 @@ export interface LeaderboardResponse {
   calibrandoCount: number;
   scopeTotal: number;
   currentUser: LeaderboardStudent | null;
-  currentUserProgress: { totalAnswered: number; rankingStatus: RankingStatus };
+  currentUserProgress: {
+    totalAnswered: number;
+    rankingStatus: RankingStatus;
+    missingForNextTier: number;
+    nextTierName: string;
+    totalXP: number;
+    level: number;
+  };
   currentScopeRank: number | null;
   leaders: LeaderboardStudent[];
   candidates: LeaderboardStudent[];
@@ -46,4 +65,6 @@ export interface LeaderboardResponse {
   limit: number;
   platformScores?: number[];
   generatedAt: string;
+  tab: RankingTab;
+  history?: StudentWeeklyDataPoint[];
 }

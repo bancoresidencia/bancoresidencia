@@ -327,10 +327,9 @@ export function calculateAdjustedScore(
 
 /**
  * 8. STATUS DO RANKING
- * - 0–29 questões válidas: Não participa do ranking (unranked)
- * - 30–149 questões válidas: Em calibração inicial (calibrando)
- * - 150–499 questões válidas: Ranking Provisório
- * - >=500 questões válidas: Ranking Oficial
+ * - 0–99 questões válidas: Não participa do ranking (unranked / em calibração)
+ * - 100–499 questões válidas: Ranking Provisório
+ * - >=500 questões válidas: Ranking Oficial (em destaque)
  */
 export type RankingStatusType = 'unranked' | 'calibrando' | 'provisional' | 'official';
 
@@ -345,36 +344,22 @@ export interface RankingStatusInfo {
   isOfficial: boolean;
 }
 
-export const CALIBRATING_THRESHOLD = 30;
-export const UNRANKED_THRESHOLD = 30; // Threshold mínimo para ingressar no ranking da plataforma
-export const PROVISIONAL_THRESHOLD = 150;
+export const CALIBRATING_THRESHOLD = 100;
+export const UNRANKED_THRESHOLD = 100;
+export const PROVISIONAL_THRESHOLD = 100;
 export const OFFICIAL_THRESHOLD = 500;
 
 export function getRankingStatus(validCount: number): RankingStatusInfo {
-  if (validCount < CALIBRATING_THRESHOLD) {
-    const missing = CALIBRATING_THRESHOLD - validCount;
-    return {
-      status: 'unranked',
-      label: 'Sem ranking (<30)',
-      badgeLabel: 'Sem Ranking',
-      missingForNextTier: missing,
-      nextTierName: 'Em Calibração',
-      message: 'Resolva mais questões para liberar seu percentil inicial (mínimo 30 questões).',
-      isEligibleForRanking: false,
-      isOfficial: false
-    };
-  }
-
   if (validCount < PROVISIONAL_THRESHOLD) {
     const missing = PROVISIONAL_THRESHOLD - validCount;
     return {
-      status: 'calibrando',
-      label: 'Em calibração (30–149)',
+      status: 'unranked',
+      label: 'Em calibração (<100)',
       badgeLabel: 'Em Calibração',
       missingForNextTier: missing,
       nextTierName: 'Ranking Provisório',
-      message: `Você já participa do ranking da comunidade! Faltam ${missing} questões para o ranking provisório (≥150).`,
-      isEligibleForRanking: true,
+      message: `Resolva mais ${missing === 1 ? '1 questão' : `${missing} questões`} para ingressar no ranking provisório (mínimo 100 questões).`,
+      isEligibleForRanking: false,
       isOfficial: false
     };
   }
@@ -383,7 +368,7 @@ export function getRankingStatus(validCount: number): RankingStatusInfo {
     const missing = OFFICIAL_THRESHOLD - validCount;
     return {
       status: 'provisional',
-      label: 'Ranking provisório (150–499)',
+      label: 'Ranking provisório (100–499)',
       badgeLabel: 'Provisório',
       missingForNextTier: missing,
       nextTierName: 'Ranking Oficial',

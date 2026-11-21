@@ -3,7 +3,10 @@ import {
   calculateStandardError, getEligibleQuestions, getRankingStatus,
 } from './irtModel';
 import type { ValidatedAttempt } from './irtModel';
-import type { LeaderboardResponse, LeaderboardStudent, RankingModality, RankingStatus, RankingTab } from '../types/ranking';
+import type {
+  LeaderboardResponse, LeaderboardStudent, RankingModality, RankingStatus, RankingTab, StudentWeeklyDataPoint,
+} from '../types/ranking';
+import { calculateQuestionXP, calculateLevel } from './xpModel';
 
 export interface RankingAnswer {
   user_id: string;
@@ -51,7 +54,10 @@ interface ScoredCandidate {
   theta: number;
   standardError: number;
   adjustedScore: number;
+  xp: number;
+  level: number;
   rankingStatus: Exclude<RankingStatus, 'unranked'>;
+  attempts: ValidatedAttempt[];
 }
 
 interface LeaderboardSnapshot {
@@ -83,13 +89,15 @@ function scoreCandidate(
   bancaByQuestion: Map<string, { name: string; timestamp: number }>,
 ): ScoredCandidate | null {
   const totalAnswered = attempts.length;
-  const rankingStatus = getRankingStatus(totalAnswered).status;
-  if (rankingStatus === 'unranked') return null;
+  const statusInfo = getRankingStatus(totalAnswered);
+  if (statusInfo.status === 'unranked') return null;
 
   let totalCorrect = 0;
+  let xp = 0;
   const bancaCounts = new Map<string, number>();
   for (const attempt of attempts) {
     if (attempt.correct) totalCorrect++;
+    xp += calculateQuestionXP(attempt.correct);
     const banca = bancaByQuestion.get(attempt.question_id)?.name;
     if (banca && banca !== 'Geral' && banca !== 'Todas') {
       bancaCounts.set(banca, (bancaCounts.get(banca) ?? 0) + 1);
@@ -98,6 +106,7 @@ function scoreCandidate(
   const topBanca = Array.from(bancaCounts).sort(([a, ca], [b, cb]) => cb - ca || a.localeCompare(b, 'pt-BR'))[0];
   const theta = calculateIRTAbility(attempts);
   const standardError = calculateStandardError(theta, attempts);
+  const level = calculateLevel(xp);
 
   return {
     userId,
@@ -107,12 +116,68 @@ function scoreCandidate(
     bancaFoco: topBanca?.[0] ?? 'Todas',
     totalAnswered,
     totalCorrect,
-    accuracy: totalCorrect / totalAnswered * 100,
+    accuracy: (totalCorrect / totalAnswered) * 100,
     theta,
     standardError,
     adjustedScore: calculateAdjustedScore(theta, standardError, totalAnswered),
-    rankingStatus,
+    xp,
+    level,
+    rankingStatus: statusInfo.status as Exclude<RankingStatus, 'unranked'>,
+    attempts,
   };
+}
+
+export function buildStudentWeeklyHistory(
+  attempts: ValidatedAttempt[],
+  globalScores: number[],
+): StudentWeeklyDataPoint[] {
+  const points: StudentWeeklyDataPoint[] = [];
+  const now = Date.now();
+  const ONE_WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+
+  // Gerar 8 marcos semanais retroativos terminando na semana atual
+  for (let w = 7; w >= 0; w--) {
+    const cutoff = now - w * ONE_WEEK_MS;
+    const weekLabel = `Sem ${8 - w}`;
+    const date = new Date(cutoff);
+    const dateLabel = `${date.getDate().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}`;
+
+    const pastAttempts = attempts.filter((a) => a.timestamp <= cutoff);
+    const count = pastAttempts.length;
+
+    if (count === 0) {
+      points.push({
+        week: weekLabel,
+        dateLabel,
+        percentile: 50.0,
+        accuracy: 0.0,
+        totalAnswered: 0,
+        rank: globalScores.length,
+        xp: 0.0,
+      });
+      continue;
+    }
+
+    const correctCount = pastAttempts.filter((a) => a.correct).length;
+    const accuracy = Math.round((correctCount / count) * 1000) / 10;
+    const theta = calculateIRTAbility(pastAttempts);
+    const se = calculateStandardError(theta, pastAttempts);
+    const score = calculateAdjustedScore(theta, se, count);
+    const perc = calculateEmpiricalPercentile(score, globalScores);
+    const xp = pastAttempts.reduce((acc, a) => acc + calculateQuestionXP(a.correct), 0);
+
+    points.push({
+      week: weekLabel,
+      dateLabel,
+      percentile: perc.continuousPercentile,
+      accuracy,
+      totalAnswered: count,
+      rank: Math.max(1, Math.round(globalScores.length * (1 - perc.continuousPercentile / 100))),
+      xp: Math.round(xp * 10) / 10,
+    });
+  }
+
+  return points;
 }
 
 export function createLeaderboardSnapshot(
@@ -179,11 +244,12 @@ export function createLeaderboardSnapshot(
     }
   }
 
-  const compare = (a: ScoredCandidate, b: ScoredCandidate) =>
+  const compareTRI = (a: ScoredCandidate, b: ScoredCandidate) =>
     b.adjustedScore - a.adjustedScore || b.totalCorrect - a.totalCorrect ||
     b.totalAnswered - a.totalAnswered || a.userId.localeCompare(b.userId);
-  general.sort(compare);
-  for (const cohort of byModality.values()) cohort.sort(compare);
+
+  general.sort(compareTRI);
+  for (const cohort of byModality.values()) cohort.sort(compareTRI);
 
   return {
     general,
@@ -200,7 +266,7 @@ export function buildLeaderboardResponse(
   filters: RankingFilterOptions,
   anonymizeId: (id: string) => string,
 ): LeaderboardResponse {
-  const { tab = 'all', offset, limit, currentUserId } = filters;
+  const { tab = 'official', offset, limit, currentUserId } = filters;
   const pool = filters.modalidade ? snapshot.byModality.get(filters.modalidade) ?? [] : snapshot.general;
   const institutions = filters.institutions?.map((institution) => institution.toLowerCase()) ?? [];
   const banca = filters.banca?.toLowerCase();
@@ -208,12 +274,25 @@ export function buildLeaderboardResponse(
     if (banca && banca !== 'todas' && candidate.bancaFoco.toLowerCase() !== banca) return false;
     return institutions.length === 0 || institutions.some((institution) => candidate.college.toLowerCase().includes(institution));
   });
+
   const officialCount = cohort.filter((candidate) => candidate.rankingStatus === 'official').length;
   const provisionalCount = cohort.filter((candidate) => candidate.rankingStatus === 'provisional').length;
-  const scoped = tab === 'all' ? cohort : cohort.filter((candidate) => candidate.rankingStatus === tab);
+
+  let scoped: ScoredCandidate[];
+  if (tab === 'provisional') {
+    scoped = cohort.filter((candidate) => candidate.rankingStatus === 'provisional');
+  } else if (tab === 'xp') {
+    scoped = [...cohort].sort((a, b) => b.xp - a.xp || b.totalAnswered - a.totalAnswered || a.userId.localeCompare(b.userId));
+  } else {
+    // Oficial por padrão
+    scoped = cohort.filter((candidate) => candidate.rankingStatus === 'official');
+  }
+
   const currentRank = currentUserId ? snapshot.globalRanks.get(currentUserId) : undefined;
   const scopeIndex = currentUserId ? scoped.findIndex((candidate) => candidate.userId === currentUserId) : -1;
   const totalAnswered = currentUserId ? snapshot.progress.get(currentUserId) ?? 0 : 0;
+  const currentUserCandidate = currentUserId ? snapshot.general.find((candidate) => candidate.userId === currentUserId) : undefined;
+  const statusInfo = getRankingStatus(totalAnswered);
 
   const toStudent = (candidate: ScoredCandidate, rank: number): LeaderboardStudent => {
     const isCurrentUser = candidate.userId === currentUserId;
@@ -224,6 +303,8 @@ export function buildLeaderboardResponse(
       rank,
       userId: isCurrentUser ? candidate.userId : anonymizeId(candidate.userId),
       name: isCurrentUser ? candidate.name : maskName(candidate.name),
+      level: candidate.level,
+      xp: Math.round(candidate.xp * 10) / 10,
       accuracy: Math.round(candidate.accuracy * 10) / 10,
       theta: Math.round(candidate.theta * 1000) / 1000,
       standardError: Math.round(candidate.standardError * 1000) / 1000,
@@ -236,6 +317,10 @@ export function buildLeaderboardResponse(
     };
   };
 
+  const currentUserHistory = currentUserCandidate
+    ? buildStudentWeeklyHistory(currentUserCandidate.attempts, snapshot.globalScores)
+    : undefined;
+
   return {
     success: true,
     totalCandidates: cohort.length,
@@ -245,7 +330,14 @@ export function buildLeaderboardResponse(
     calibrandoCount: cohort.length - officialCount - provisionalCount,
     scopeTotal: scoped.length,
     currentUser: currentRank ? toStudent(snapshot.general[currentRank - 1], currentRank) : null,
-    currentUserProgress: { totalAnswered, rankingStatus: getRankingStatus(totalAnswered).status },
+    currentUserProgress: {
+      totalAnswered,
+      rankingStatus: statusInfo.status,
+      missingForNextTier: statusInfo.missingForNextTier,
+      nextTierName: statusInfo.nextTierName,
+      totalXP: currentUserCandidate ? Math.round(currentUserCandidate.xp * 10) / 10 : 0,
+      level: currentUserCandidate ? currentUserCandidate.level : 1,
+    },
     currentScopeRank: scopeIndex < 0 ? null : scopeIndex + 1,
     leaders: scoped.slice(0, 3).map((candidate, index) => toStudent(candidate, index + 1)),
     candidates: scoped.slice(offset, offset + limit).map((candidate, index) => toStudent(candidate, offset + index + 1)),
@@ -253,5 +345,7 @@ export function buildLeaderboardResponse(
     limit,
     platformScores: filters.includePlatformScores === false ? undefined : snapshot.general.map((candidate) => candidate.accuracy),
     generatedAt: snapshot.generatedAt,
+    tab,
+    history: currentUserHistory,
   };
 }

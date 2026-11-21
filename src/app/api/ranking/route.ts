@@ -26,10 +26,10 @@ export async function GET(req: NextRequest) {
       .map((institution) => institution.trim().slice(0, 150)).filter(Boolean);
     const rawModality = searchParams.get('modalidade');
     const modalidade = getRankingModality(rawModality);
-    const rawTab = searchParams.get('tab') ?? 'all';
-    const tab = RANKING_TABS.find((value) => value === rawTab);
-    if (!tab || (rawModality && !modalidade)) {
-      return NextResponse.json({ success: false, error: 'Recorte de ranking inválido.' }, { status: 400 });
+    const rawTab = searchParams.get('tab') ?? 'official';
+    const tab = RANKING_TABS.find((value) => value === rawTab) ?? 'official';
+    if (rawModality && !modalidade) {
+      return NextResponse.json({ success: false, error: 'Recorte de modalidade inválido.' }, { status: 400 });
     }
 
     const rawLimit = Number.parseInt(searchParams.get('limit') ?? '50', 10);

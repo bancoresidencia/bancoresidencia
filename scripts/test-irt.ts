@@ -96,23 +96,17 @@ console.log(`[6] 500 q (70% acerto) -> Theta: ${test6_theta.toFixed(3)}, Score: 
 assert(test4_theta > test6_theta, '80% acerto deve ter theta maior que 70%');
 assert(test4_score > test6_score, '80% acerto deve ter score maior que 70%');
 
-// 7. Teste: Aluno com 29 questões (< 30)
-const status29 = getRankingStatus(29);
-console.log(`[7a] 29 questões -> Status: ${status29.status} ("${status29.label}"), Faltam: ${status29.missingForNextTier}`);
-assert.strictEqual(status29.status, 'unranked', '29 questões deve ser unranked');
-assert.strictEqual(status29.missingForNextTier, 1, 'Deve faltar exatamente 1 questão para calibração inicial');
+// 7. Teste: Aluno com 99 questões (< 100, em calibração)
+const status99 = getRankingStatus(99);
+console.log(`[7] 99 questões -> Status: ${status99.status} ("${status99.label}"), Faltam: ${status99.missingForNextTier}`);
+assert.strictEqual(status99.status, 'unranked', '99 questões deve ser unranked (<100)');
+assert.strictEqual(status99.missingForNextTier, 1, 'Deve faltar exatamente 1 questão para o ranking provisório');
 
-// 7b. Teste: Aluno com 149 questões (30 a 149)
-const status149 = getRankingStatus(149);
-console.log(`[7b] 149 questões -> Status: ${status149.status} ("${status149.label}"), Faltam: ${status149.missingForNextTier}`);
-assert.strictEqual(status149.status, 'calibrando', '149 questões deve ser calibrando');
-assert.strictEqual(status149.missingForNextTier, 1, 'Deve faltar exatamente 1 questão para o ranking provisório');
-
-// 8. Teste: Aluno com 150 questões
-const status150 = getRankingStatus(150);
-console.log(`[8] 150 questões -> Status: ${status150.status} ("${status150.label}"), Faltam: ${status150.missingForNextTier}`);
-assert.strictEqual(status150.status, 'provisional', '150 questões deve ser provisional');
-assert.strictEqual(status150.missingForNextTier, 350, 'Deve faltar 350 questões para o ranking oficial');
+// 8. Teste: Aluno com 100 questões (início do ranking provisório)
+const status100 = getRankingStatus(100);
+console.log(`[8] 100 questões -> Status: ${status100.status} ("${status100.label}"), Faltam: ${status100.missingForNextTier}`);
+assert.strictEqual(status100.status, 'provisional', '100 questões deve ser provisional');
+assert.strictEqual(status100.missingForNextTier, 400, 'Deve faltar 400 questões para o ranking oficial');
 
 // 9. Teste: Aluno com 499 questões
 const status499 = getRankingStatus(499);

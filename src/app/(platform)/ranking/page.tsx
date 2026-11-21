@@ -29,7 +29,7 @@ interface RankingState {
 function StudentRanking({ userId }: { userId: string }) {
   const { performanceFilters } = useStudentData();
   const [selection, setSelection] = useState<Selection>({
-    tab: 'all', modalidade: '', offset: 0, revision: 0, refresh: false,
+    tab: 'official', modalidade: '', offset: 0, revision: 0, refresh: false,
   });
   const [state, setState] = useState<RankingState>(() => ({
     scopes: new Map(), latest: null, completedRequest: null, error: false,
