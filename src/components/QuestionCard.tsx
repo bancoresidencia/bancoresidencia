@@ -1682,6 +1682,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     setHoveredOptionLetter(null);
                   }
                 }}
+                data-ink-option-row={optLetter}
                 className={`w-full text-left ${optionPaddingClass} border transition-all duration-200 flex flex-col group rounded-2xl cursor-pointer touch-manipulation ${optionContainerStyle}`}
                 style={!isAnswered && isPending ? {
                   borderColor: accentConfig.selectionAccent.borderHex,
