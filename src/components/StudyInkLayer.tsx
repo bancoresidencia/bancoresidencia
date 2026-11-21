@@ -47,7 +47,7 @@ const marker: Style = { color: '#facc15', width: 20, opacity: 0.35, pressure: fa
 const TOOL_DEFS: { id: Tool; label: string; icon: typeof Pencil; hint: string }[] = [
   { id: 'pen', label: 'Caneta', icon: Pencil, hint: 'Escrita livre e rascunhos' },
   { id: 'marker', label: 'Marca-texto', icon: Highlighter, hint: 'Grifo reto alinhado ao texto' },
-  { id: 'erase', label: 'Borracha', icon: Eraser, hint: 'Apagar traço ou área' },
+  { id: 'erase', label: 'Borracha', icon: Eraser, hint: 'Apagar traço (ou segurar botão da S Pen)' },
   { id: 'lasso', label: 'Laço', icon: Scissors, hint: 'Selecionar, mover e editar' },
   { id: 'line', label: 'Reta', icon: Minus, hint: 'Traço retilíneo' },
   { id: 'note', label: 'Nota', icon: StickyNote, hint: 'Inserir nota digitada' },
@@ -91,6 +91,7 @@ type Actions = { flip?: () => void; choose?: (letter: string) => void }
 
 function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & Actions) {
   const anchor = useRef<HTMLDivElement>(null)
+  const svgRef = useRef<SVGSVGElement>(null)
   const [mounted, setMounted] = useState(false)
   const [tool, setTool] = useState<Tool>('read')
   const [open, setOpen] = useState(false)
@@ -104,7 +105,6 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   const [note, setNote] = useState<InkStroke | null>(null)
   const [compact, setCompact] = useState(false)
   const [radius, setRadius] = useState(14)
-  const [offset, setOffset] = useState({ x: 0, y: 0 })
   const [blocks, setBlocks] = useState<Record<string, InkBox>>({})
   const [storedStrokes, setStrokes] = useState<InkStroke[]>([])
   const strokes = storedStrokes.map(s => projectInk(s, blocks))
@@ -116,6 +116,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
 
   const active = useRef<{
     pointer: number
+    isEraser: boolean
     stroke: InkStroke
     erased: Map<string, InkStroke>
     markerLineY: number | null
@@ -142,7 +143,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
           setReady(true)
         }
       } catch {
-        if (live) setStatus('Armazenamento indisponível. Reabra para tentar novamente.')
+        if (live) setStatus('Armazenamento indisponível.')
       }
     }
     const previous = histories.get(doc)
@@ -153,7 +154,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     }
     const updates = typeof BroadcastChannel !== 'undefined' ? new BroadcastChannel('private-study-ink') : null
     if (updates) updates.onmessage = event => { if (event.data === doc) void load() }
-    
+
     const keyHandler = (e: KeyboardEvent) => {
       const target = e.target
       if (e.repeat || e.isComposing || e.ctrlKey || e.metaKey || e.altKey || e.key.toLowerCase() !== 'p' || document.querySelector('[aria-modal="true"]') ||
@@ -170,22 +171,27 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     window.addEventListener('beforeunload', leave)
     void load()
 
-    const position = () => {
-      const rect = anchor.current?.parentElement?.getBoundingClientRect()
-      if (!rect) return
-      const x = rect.left + rect.width / 2, y = rect.top
-      setOffset({ x, y })
+    const measureBlocks = () => {
+      const container = anchor.current?.parentElement
+      if (!container) return
+      const cRect = container.getBoundingClientRect()
       const measured: Record<string, InkBox> = {}
-      for (const el of anchor.current?.parentElement?.querySelectorAll<HTMLElement>('[data-ink-block]') ?? []) {
-        const bounds = el.getBoundingClientRect()
-        if (bounds.width && bounds.height) measured[el.dataset.inkBlock!] = { x: bounds.left - x, y: bounds.top - y, width: bounds.width, height: bounds.height }
+      for (const el of container.querySelectorAll<HTMLElement>('[data-ink-block]')) {
+        const b = el.getBoundingClientRect()
+        if (b.width && b.height) {
+          measured[el.dataset.inkBlock!] = {
+            x: b.left - cRect.left,
+            y: b.top - cRect.top,
+            width: b.width,
+            height: b.height
+          }
+        }
       }
       setBlocks(measured)
     }
-    position()
-    window.addEventListener('scroll', position, true)
-    window.addEventListener('resize', position)
-    const observer = new ResizeObserver(position)
+    measureBlocks()
+    window.addEventListener('resize', measureBlocks)
+    const observer = new ResizeObserver(measureBlocks)
     if (anchor.current?.parentElement) observer.observe(anchor.current.parentElement)
 
     return () => {
@@ -194,15 +200,14 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       window.removeEventListener('keydown', keyHandler)
       window.removeEventListener('beforeunload', leave)
       observer.disconnect()
-      window.removeEventListener('scroll', position, true)
-      window.removeEventListener('resize', position)
+      window.removeEventListener('resize', measureBlocks)
     }
   }, [doc, preference])
 
   function persistStyle(next = styles) {
     setStyles(next)
     try { localStorage.setItem(preference, JSON.stringify({ styles: next })) }
-    catch { setStatus('Preferência mantida na sessão atual.') }
+    catch { setStatus('Preferência mantida nesta sessão.') }
   }
 
   function write(change: InkChange) {
@@ -229,10 +234,14 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     write(back ? { before: change.after, after: change.before } : change)
   }
 
+  // Coordenadas calculadas diretamente em relação ao container do card (Sem lag de scroll!)
   function point(e: PointerEvent): InkPoint {
+    const rect = svgRef.current?.getBoundingClientRect()
+    const originX = rect ? rect.left : 0
+    const originY = rect ? rect.top : 0
     return {
-      x: e.clientX - offset.x,
-      y: e.clientY - offset.y,
+      x: e.clientX - originX,
+      y: e.clientY - originY,
       force: e.pointerType === 'pen' && e.pressure > 0 ? 0.35 + 0.65 * e.pressure : 1
     }
   }
@@ -245,14 +254,19 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     for (const event of events?.length ? events : [e.nativeEvent]) {
       let p = point(event)
 
+      // SUPORTE AO BOTÃO LATERAL DA S PEN (Barrel button)
+      // buttons & 2 indica botão lateral pressionado durante contato na tela
+      const isBarrel = (event.buttons & 2) !== 0 || (event.buttons & 32) !== 0 || event.button === 2
+      const isEraserNow = current.isEraser || isBarrel || tool === 'erase'
+
       // Conforme o marca-texto retilíneo inteligente se alinhando à linha do texto
-      if (tool === 'marker' && straightMarker) {
+      if (!isEraserNow && tool === 'marker' && straightMarker) {
         const snapped = snapMarkerPoint(p, current.markerLineY)
         p = snapped.point
         current.markerLineY = snapped.snappedY
       }
 
-      if (tool === 'erase') {
+      if (isEraserNow) {
         current.stroke.points.push(p)
         for (const stroke of strokes) {
           if ((!onlyMarker || stroke.kind === 'marker') && touchesInk(stroke, p, radius)) {
@@ -264,9 +278,11 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       }
     }
 
-    if (tool === 'erase' && !cut) setErasedIds([...current.erased.keys()])
+    if ((current.isEraser || tool === 'erase') && !cut) {
+      setErasedIds([...current.erased.keys()])
+    }
 
-    if ((tool === 'pen' || tool === 'marker') && performance.now() - checkpoint.current > 1000) {
+    if ((tool === 'pen' || tool === 'marker') && !current.isEraser && performance.now() - checkpoint.current > 1000) {
       checkpoint.current = performance.now()
       const partial = { ...current.stroke, points: [...current.stroke.points] }
       const pending = unsaved.get(doc) ?? []
@@ -288,7 +304,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     )
     if (bounds) current.stroke.anchor = { block: bounds[0], box: bounds[1] }
 
-    if (tool === 'erase') {
+    if (current.isEraser || tool === 'erase') {
       if (cut) {
         const before: InkStroke[] = [], after: InkStroke[] = []
         for (const stroke of strokes.filter(s => !onlyMarker || s.kind === 'marker')) {
@@ -310,22 +326,26 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
 
       // RECONHECIMENTO DE GESTO DE RESPOSTA (CIRCULAR OU MARCAR COM X)
       if (choose && autoGestureEnabled && (tool === 'pen' || tool === 'gesture')) {
-        const badges = Array.from(anchor.current?.parentElement?.querySelectorAll<HTMLElement>('[data-ink-option]') ?? [])
-        const targets: OptionTarget[] = badges.map(b => {
-          const r = b.getBoundingClientRect()
-          return {
-            option: b.dataset.inkOption ?? '',
-            center: { x: r.left + r.width / 2 - offset.x, y: r.top + r.height / 2 - offset.y, force: 1 },
-            box: { x: r.left - offset.x, y: r.top - offset.y, width: r.width, height: r.height }
-          }
-        })
+        const container = anchor.current?.parentElement
+        const cardRect = svgRef.current?.getBoundingClientRect()
+        if (container && cardRect) {
+          const badges = Array.from(container.querySelectorAll<HTMLElement>('[data-ink-option]'))
+          const targets: OptionTarget[] = badges.map(b => {
+            const r = b.getBoundingClientRect()
+            return {
+              option: b.dataset.inkOption ?? '',
+              center: { x: r.left + r.width / 2 - cardRect.left, y: r.top + r.height / 2 - cardRect.top, force: 1 },
+              box: { x: r.left - cardRect.left, y: r.top - cardRect.top, width: r.width, height: r.height }
+            }
+          })
 
-        const gesture = detectOptionGesture(current.stroke, strokes.slice(-4), targets)
-        if (gesture) {
-          choose(gesture.option)
-          const symbol = gesture.type === 'circle' ? 'círculo' : 'X'
-          setGestureFeedback(`Alternativa ${gesture.option} marcada com ${symbol}!`)
-          setTimeout(() => setGestureFeedback(''), 3500)
+          const gesture = detectOptionGesture(current.stroke, strokes.slice(-4), targets)
+          if (gesture) {
+            choose(gesture.option)
+            const symbol = gesture.type === 'circle' ? 'círculo' : 'X'
+            setGestureFeedback(`Alternativa ${gesture.option} selecionada com ${symbol}!`)
+            setTimeout(() => setGestureFeedback(''), 3500)
+          }
         }
       }
     }
@@ -350,17 +370,25 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   }
 
   function start(e: ReactPointerEvent<SVGSVGElement>) {
-    if (!ready || tool === 'read' || active.current || e.button !== 0 || (onlyPen && e.pointerType === 'touch')) return
-    if (tool === 'note') {
+    if (!ready || tool === 'read' || active.current || e.button > 2 || (onlyPen && e.pointerType === 'touch')) return
+    
+    // DETECÇÃO DO BOTÃO LATERAL DA S PEN (Barrel button)
+    // Se o botão lateral estiver pressionado na S Pen, aciona a borracha automaticamente
+    const isBarrel = (e.buttons & 2) !== 0 || (e.buttons & 32) !== 0 || e.button === 2
+
+    if (tool === 'note' && !isBarrel) {
       setNote({ ...styles.pen, kind: 'pen', id: crypto.randomUUID(), created: Date.now(), points: [point(e.nativeEvent)], text: '' })
       return
     }
+
     e.currentTarget.setPointerCapture(e.pointerId)
     checkpoint.current = performance.now()
-    const kind = tool === 'marker' ? 'marker' : 'pen'
+    const kind = isBarrel || tool === 'erase' ? 'pen' : (tool === 'marker' ? 'marker' : 'pen')
     const initialPt = point(e.nativeEvent)
+    
     active.current = {
       pointer: e.pointerId,
+      isEraser: isBarrel || tool === 'erase',
       erased: new Map(),
       markerLineY: initialPt.y,
       stroke: { ...styles[kind], kind, id: crypto.randomUUID(), created: Date.now(), points: [] }
@@ -433,8 +461,38 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
 
   return (
     <>
-      {/* Pílula discreta de acionamento embutida no card */}
-      <div ref={anchor} className="flex justify-end my-1">
+      {/* 
+        CANVAS DE DESENHO ANCORADO AO CARD:
+        Posicionado em absolute inset-0 diretamente no container do card!
+        Isso faz o navegador mover o SVG junto com o texto no mesmo frame da GPU (Zero tremor ao rolar).
+      */}
+      <div ref={anchor} className="absolute inset-0 pointer-events-none overflow-visible w-full h-full z-30">
+        <svg
+          ref={svgRef}
+          aria-hidden="true"
+          onContextMenu={e => e.preventDefault()}
+          className="w-full h-full overflow-visible text-zinc-900 dark:text-zinc-100"
+          style={{
+            touchAction: 'none',
+            pointerEvents: tool === 'read' ? 'none' : 'auto',
+            cursor: tool === 'read' ? 'default' : tool === 'erase' ? 'cell' : 'crosshair'
+          }}
+          onPointerDown={start}
+          onPointerMove={sample}
+          onPointerUp={e => { if (active.current?.pointer === e.pointerId) { sample(e); finish() } }}
+          onLostPointerCapture={e => { if (active.current?.pointer === e.pointerId) finish() }}
+          onPointerCancel={e => { if (active.current?.pointer === e.pointerId) finish() }}
+          onClick={e => e.stopPropagation()}
+        >
+          <g>
+            {visible.filter(s => s.kind === 'marker').map(render)}
+            {visible.filter(s => s.kind === 'pen').map(render)}
+          </g>
+        </svg>
+      </div>
+
+      {/* Pílula discreta de acionamento no topo do card */}
+      <div className="flex justify-end my-1 relative z-40">
         <button
           type="button"
           aria-expanded={open}
@@ -449,29 +507,6 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
 
       {mounted && createPortal(
         <>
-          {/* Camada SVG transparente de desenho sobre a tela */}
-          <svg
-            aria-hidden="true"
-            className="fixed inset-0 h-dvh w-screen text-zinc-900 dark:text-zinc-100"
-            style={{
-              zIndex: 48,
-              touchAction: 'none',
-              pointerEvents: tool === 'read' ? 'none' : 'auto',
-              cursor: tool === 'read' ? 'default' : tool === 'erase' ? 'cell' : 'crosshair'
-            }}
-            onPointerDown={start}
-            onPointerMove={sample}
-            onPointerUp={e => { if (active.current?.pointer === e.pointerId) { sample(e); finish() } }}
-            onLostPointerCapture={e => { if (active.current?.pointer === e.pointerId) finish() }}
-            onPointerCancel={e => { if (active.current?.pointer === e.pointerId) finish() }}
-            onClick={e => e.stopPropagation()}
-          >
-            <g transform={`translate(${offset.x} ${offset.y})`}>
-              {visible.filter(s => s.kind === 'marker').map(render)}
-              {visible.filter(s => s.kind === 'pen').map(render)}
-            </g>
-          </svg>
-
           {/* Toast de Feedback de Gesto de Resposta */}
           {gestureFeedback && (
             <div className="fixed top-5 left-1/2 -translate-x-1/2 z-[60] flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-emerald-600 text-white font-semibold text-xs shadow-2xl shadow-emerald-900/40 border border-emerald-400/40 animate-in fade-in slide-in-from-top-3 duration-200">
@@ -513,7 +548,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="font-bold text-zinc-100 tracking-tight text-xs flex items-center gap-1.5">
                     Caneta Médica
-                    {choose && <Sparkles className="w-3 h-3 text-amber-400" title="Reconhecimento de gestos ativo" />}
+                    {choose && <Sparkles className="w-3 h-3 text-amber-400" title="Reconhecimento de gestos (X e círculo) ativo" />}
                   </span>
                   <span className="text-[10px] text-zinc-400 font-medium ml-1">
                     {status || 'Pronta'}
@@ -605,6 +640,15 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
               {/* Painel Contextual Expandido */}
               {!compact && (
                 <div className="space-y-3">
+                  {/* Dica da S Pen */}
+                  <div className="p-2 rounded-lg bg-zinc-900/60 border border-zinc-800/60 text-[10px] text-zinc-400 flex items-center justify-between">
+                    <span className="flex items-center gap-1.5">
+                      <Pencil className="w-3 h-3 text-blue-400" />
+                      Botão lateral da S Pen ativa a borracha ao segurar
+                    </span>
+                    <span className="text-emerald-400 font-semibold text-[9px] bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/20">Auto</span>
+                  </div>
+
                   {/* Controles para Caneta ou Marca-texto */}
                   {(tool === 'pen' || tool === 'marker') && (
                     <>
