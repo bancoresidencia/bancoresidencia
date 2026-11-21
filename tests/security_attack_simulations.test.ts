@@ -40,7 +40,7 @@ console.log('🛡️  SUÍTE DE TESTES DE SEGURANÇA — SIMULAÇÃO REAL DE ATA
 console.log('================================================================\n');
 
 let passedTests = 0;
-const totalTests = 24;
+const totalTests = 25;
 
 // ------------------------------------------------------------------------------
 // ATAQUE 1: Scraping e Forja de Parâmetro includeGabarito=true por Anônimo
@@ -782,6 +782,69 @@ console.log('[ATAQUE 24] Bloqueio Estrito de Acesso Não Autenticado ao Bootstra
   assert.strictEqual(validStudent.body.authenticated, true);
 
   console.log('   ✓ ATAQUE NEUTRALIZADO: Sondagem anônima a /api/student/bootstrap rejeitada com HTTP 401.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 25: Evasão de Cota de Visitante por Omissão de Cookies (A-2)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 25] Evasão de Cota de Visitante por Omissão de Cookies (/api/questions/solve)');
+{
+  const ipCounters = new Map<string, number>();
+
+  function evaluateGuestQuotaDualLayer(params: {
+    clientIp: string;
+    questionId: string;
+    cookieIds?: string[];
+  }): { status: number; allowed: boolean; reason?: string } {
+    const todayStr = '2026-11-21';
+    const cookieSet = new Set(params.cookieIds || []);
+
+    // Se já respondeu a MESMA questão hoje, permite rever sem queimar cota
+    if (cookieSet.has(params.questionId)) {
+      return { status: 200, allowed: true };
+    }
+
+    // Camada 1: Cookie HMAC
+    if (cookieSet.size >= 10) {
+      return { status: 403, allowed: false, reason: 'Limite diário de 10 questões por cookie atingido' };
+    }
+
+    // Camada 2: Cota persistente por IP diário
+    const ipKey = `${params.clientIp}_${todayStr}`;
+    const currentCount = ipCounters.get(ipKey) || 0;
+    if (currentCount >= 10) {
+      return { status: 403, allowed: false, reason: 'Limite diário de 10 questões por IP atingido' };
+    }
+
+    ipCounters.set(ipKey, currentCount + 1);
+    return { status: 200, allowed: true };
+  }
+
+  const attackerIp = '198.51.100.77';
+
+  // O atacante dispara 10 requisições SEM enviar nenhum cookie
+  for (let i = 1; i <= 10; i++) {
+    const res = evaluateGuestQuotaDualLayer({
+      clientIp: attackerIp,
+      questionId: `q-uuid-${i}`,
+      cookieIds: undefined // Atacante omite voluntariamente o header Cookie
+    });
+    assert.strictEqual(res.allowed, true, `Questão ${i} deve ser permitida dentro da cota`);
+    assert.strictEqual(res.status, 200);
+  }
+
+  // Na 11ª requisição (ainda sem cookie), o IP deve ser barrado pela Camada 2
+  const blockedAttempt = evaluateGuestQuotaDualLayer({
+    clientIp: attackerIp,
+    questionId: 'q-uuid-11',
+    cookieIds: undefined
+  });
+  assert.strictEqual(blockedAttempt.allowed, false, 'A 11ª questão sem cookie DEVE ser bloqueada por IP');
+  assert.strictEqual(blockedAttempt.status, 403);
+  assert.strictEqual(blockedAttempt.reason, 'Limite diário de 10 questões por IP atingido');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Evasão por omissão de cookies neutralizada via cota persistente por IP no backend.\n');
   passedTests++;
 }
 

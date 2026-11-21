@@ -328,13 +328,15 @@ export async function POST(req: NextRequest) {
     const isCorrect = written === null && (isAnulada || (Boolean(goldAnswer) && studentChoice === goldAnswer));
 
     // 6. Cota diária estrita de 10 questões/dia para visitantes
-    // Baseada exclusivamente no cookie HMAC assinado (stateless, serverless-safe)
+    // Arquitetura Dual-Layer:
+    // - Camada 1: Cookie HMAC assinado (rápido, rastreia IDs já respondidos hoje)
+    // - Camada 2: Persistência server-side via Supabase RPC por IP (anti-scraping: impede evasão por omissão do cabeçalho Cookie)
     if (!authenticatedUser && !readOnly) {
       const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
       const hasSolvedInCookie = guestQuota.questionIds.has(row.id);
-      const isOverLimit = guestQuota.questionIds.size >= 10 && !hasSolvedInCookie;
 
-      if (isOverLimit) {
+      // Camada 1: Limite por cookie HMAC
+      if (guestQuota.questionIds.size >= 10 && !hasSolvedInCookie) {
         return NextResponse.json(
           {
             success: false,
@@ -344,6 +346,31 @@ export async function POST(req: NextRequest) {
           },
           { status: 403 }
         );
+      }
+
+      // Camada 2: Limite persistente no backend por IP diário (janela de 24h = 86400s)
+      // Se o usuário não tem essa questão no cookie, valida e incrementa a cota do IP no Supabase
+      if (!hasSolvedInCookie) {
+        const todayStr = new Date().toISOString().slice(0, 10);
+        const ipHash = crypto.createHash('sha256').update(clientIp + todayStr).digest('hex').slice(0, 16);
+        const isIpDailyQuotaExceeded = await isRateLimited(
+          'guest_solve_quota',
+          `${ipHash}_${todayStr}`,
+          10,
+          86400
+        );
+
+        if (isIpDailyQuotaExceeded) {
+          return NextResponse.json(
+            {
+              success: false,
+              limitReached: true,
+              error: 'Limite diário de 10 questões para visitantes atingido. Crie sua conta gratuita ou faça login para continuar resolvendo.',
+              dailyResolvedCount: 10
+            },
+            { status: 403 }
+          );
+        }
       }
     }
 

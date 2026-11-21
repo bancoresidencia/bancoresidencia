@@ -149,6 +149,13 @@ data/cruzamento_blindado_log.json
 # Temporary visual QA screenshots & scratch dumps
 *.png
 !/public/hippocampus-email.png
+!/public/favicon*.png
+!/public/icon*.png
+!/public/apple-touch-icon.png
+!/public/logo-banco-residencia*.png
+!/public/google-search-preview*.png
+!/src/app/icon.png
+!/src/app/apple-icon.png
 scripts/*.png
 scripts/resp_*.txt
 scripts/network_trace.json

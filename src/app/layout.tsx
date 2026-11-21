@@ -22,6 +22,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hippocampusresidencia.com.br"),
   title: "Hippocampus | +200 Mil Questões de Residência Médica, Revalida e R+",
   description: "Engenharia de retenção clínica com +200 mil questões comentadas alternativa por alternativa, flashcards FSRS, resumos baseados em diretrizes e psicometria TRI calibrada.",
   verification: {
@@ -29,14 +30,38 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/icon.svg", type: "image/svg+xml" },
       { url: "/favicon.ico", sizes: "any" }
     ],
     apple: [
-      { url: "/logo-banco-residencia.png", sizes: "512x512", type: "image/png" },
-      { url: "/logo-banco-residencia-120x120.png", sizes: "120x120", type: "image/png" }
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
     ]
+  },
+  openGraph: {
+    title: "Hippocampus | +200 Mil Questões de Residência Médica, Revalida e R+",
+    description: "Engenharia de retenção clínica com +200 mil questões comentadas alternativa por alternativa, flashcards FSRS, resumos baseados em diretrizes e psicometria TRI calibrada.",
+    url: "https://hippocampusresidencia.com.br",
+    siteName: "Hippocampus",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/icon-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "Hippocampus — Questões de Residência Médica",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Hippocampus | +200 Mil Questões de Residência Médica, Revalida e R+",
+    description: "Engenharia de retenção clínica com +200 mil questões comentadas alternativa por alternativa, flashcards FSRS e psicometria TRI.",
+    images: ["/icon-512x512.png"],
   },
   appleWebApp: {
     capable: true,

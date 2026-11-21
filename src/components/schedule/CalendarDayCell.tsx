@@ -98,7 +98,7 @@ export const CalendarDayCell: React.FC<CalendarDayCellProps> = ({
             <button
               type="button"
               onClick={() => onQuickAddAtDate(dateStr)}
-              className="p-1 rounded-md text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 opacity-0 group-hover/cell:opacity-100 transition-opacity"
+              className="p-1 rounded-md text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 opacity-70 sm:opacity-0 group-hover/cell:opacity-100 transition-all cursor-pointer"
               title="Adicionar estudo nesta data"
               aria-label="Adicionar estudo nesta data"
             >
@@ -109,7 +109,7 @@ export const CalendarDayCell: React.FC<CalendarDayCellProps> = ({
       </div>
 
       {/* Lista de Focos Agendados */}
-      <div className="flex-1 space-y-1.5 overflow-y-auto max-h-[140px] no-scrollbar">
+      <div className="flex-1 space-y-1.5 overflow-y-auto max-h-[170px] no-scrollbar">
         {items.map((item) => (
           <CalendarItemCard
             key={item.id}

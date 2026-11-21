@@ -85,28 +85,31 @@ export const CalendarItemCard: React.FC<CalendarItemCardProps> = ({
           )}
         </button>
 
-        {/* Título do Foco */}
-        <div className="flex-1 min-w-0">
+        {/* Título do Foco com suporte a 2 linhas e leitura imediata */}
+        <div className="flex-1 min-w-0 pr-0.5">
           <Tooltip content={`${item.especialidade} › ${item.tema}: ${item.foco}`} position="top">
             <span
-              className={`block text-[11px] sm:text-xs font-semibold leading-snug truncate ${
+              className={`block text-[11px] sm:text-xs font-semibold leading-tight line-clamp-2 break-words ${
                 item.isCompleted
                   ? 'text-zinc-400 dark:text-zinc-500 line-through'
-                  : 'text-zinc-800 dark:text-zinc-200'
+                  : 'text-zinc-900 dark:text-zinc-100'
               }`}
             >
               {item.foco}
             </span>
           </Tooltip>
 
-          {/* Badge de Modalidade */}
-          <div className="flex items-center gap-1.5 mt-1">
+          {/* Badge de Modalidade & Categoria */}
+          <div className="flex items-center gap-1.5 mt-1.5">
             <span
-              className={`text-[9px] font-bold px-1.5 py-0.2 rounded border ${typeBadge.badgeClass}`}
+              className={`text-[9px] font-bold px-1.5 py-0.5 rounded border shrink-0 ${typeBadge.badgeClass}`}
             >
               {typeBadge.label}
             </span>
-            <span className="text-[9px] text-zinc-400 dark:text-zinc-500 truncate max-w-[100px]">
+            <span
+              className="text-[9px] text-zinc-400 dark:text-zinc-500 truncate"
+              title={`${item.especialidade} • ${item.tema}`}
+            >
               {item.tema}
             </span>
           </div>

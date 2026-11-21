@@ -8,7 +8,8 @@ import {
   UserStudySchedule,
   UserScheduleItem,
   UserFocusProgress,
-  ScheduleDistributionStrategy
+  ScheduleDistributionStrategy,
+  ScheduleItemType
 } from '@/types/studySchedule';
 import {
   loadUserSchedule,
@@ -18,10 +19,12 @@ import {
   toggleScheduleItemCompletion,
   deleteScheduleItem
 } from '@/services/studyScheduleService';
-import { generateStudyScheduleItems } from '@/utils/scheduleDistributionEngine';
+import { addDays, generateStudyScheduleItems } from '@/utils/scheduleDistributionEngine';
+import { EnrichedFocusWithIncidence } from '@/services/examIncidenceService';
 import { StudyScheduleCalendar } from '@/components/schedule/StudyScheduleCalendar';
 import { FocusChecklistDrawer } from '@/components/schedule/FocusChecklistDrawer';
 import { AutoScheduleGeneratorModal } from '@/components/schedule/AutoScheduleGeneratorModal';
+import { AddDayScheduleContentModal } from '@/components/schedule/AddDayScheduleContentModal';
 import { ScheduleAnalyticsHeader } from '@/components/schedule/ScheduleAnalyticsHeader';
 import { HippocampusLoading } from '@/components/HippocampusLoading';
 
@@ -41,6 +44,7 @@ export default function CronogramaPage() {
 
   // Modais
   const [isGeneratorOpen, setIsGeneratorOpen] = useState(false);
+  const [quickAddDate, setQuickAddDate] = useState<string | null>(null);
 
   // Carregamento de dados
   const loadData = useCallback(async () => {

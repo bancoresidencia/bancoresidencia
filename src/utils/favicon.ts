@@ -9,12 +9,14 @@ const PATH_SYMBOL_1 =
 const PATH_SYMBOL_2 =
   'M854.033 1157.092 C673.215 1042.009 422.801 1191.281 298.333 1070.475 C184.287 959.785 362.047 674.876 362.047 674.876 C675.35 161.911 1357.793 222.808 1670.993 488.16 C2360.998 1072.751 1270.756 1971.842 1270.756 1336.094';
 
-export function generateLogoSvgString(strokeColor: string = '#000000'): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2160 1920"><g id="Layer_1" data-name="Layer 1"><path d="${PATH_SYMBOL_1}" fill="none" stroke="${strokeColor}" stroke-width="132" stroke-miterlimit="10"/><path d="${PATH_SYMBOL_2}" fill="none" stroke="${strokeColor}" stroke-width="132" stroke-miterlimit="10"/></g></svg>`;
+export function generateLogoSvgString(strokeColor: string = '#ffffff', bgColor: string = '#09090b'): string {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="${bgColor}"/><g transform="translate(60.966, 87.060) scale(0.18059)"><path d="${PATH_SYMBOL_1}" fill="none" stroke="${strokeColor}" stroke-width="156" stroke-linecap="butt" stroke-miterlimit="10"/><path d="${PATH_SYMBOL_2}" fill="none" stroke="${strokeColor}" stroke-width="156" stroke-linecap="butt" stroke-miterlimit="10"/></g></svg>`;
 }
 
 /**
- * Atualiza dinamicamente o favicon na tag <link rel="icon">
+ * Atualiza dinamicamente o favicon na tag <link rel="icon" type="image/svg+xml">
+ * Importante: NUNCA sobrescreve os links estáticos PNG ou ICO (/favicon.ico, /favicon-48x48.png),
+ * para garantir que o Googlebot e motores de busca encontrem URLs canônicas estáveis de favicon.
  */
 export function updateFavicon(primaryColor: string, contrastColor?: string): void {
   void contrastColor;
@@ -24,7 +26,7 @@ export function updateFavicon(primaryColor: string, contrastColor?: string): voi
     const svg = generateLogoSvgString(primaryColor);
     const dataUri = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
 
-    // 1. Tag SVG principal
+    // 1. Tag SVG principal da aba do navegador
     let svgLink = document.querySelector<HTMLLinkElement>("link[rel='icon'][type='image/svg+xml']");
     if (!svgLink) {
       svgLink = document.createElement('link');
@@ -33,14 +35,6 @@ export function updateFavicon(primaryColor: string, contrastColor?: string): voi
       document.head.appendChild(svgLink);
     }
     svgLink.href = dataUri;
-
-    // 2. Tag genérica de favicon (se existir)
-    const existingIcons = document.querySelectorAll<HTMLLinkElement>(
-      "link[rel='shortcut icon'], link[rel='icon']:not([type='image/svg+xml'])"
-    );
-    existingIcons.forEach((el) => {
-      el.href = dataUri;
-    });
   } catch (err) {
     console.warn('Erro ao atualizar favicon dinâmico:', err);
   }
