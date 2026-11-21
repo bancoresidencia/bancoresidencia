@@ -1,5 +1,6 @@
 'use client';
 
+import { StudyInkLayer } from '@/components/StudyInkLayer';
 import React, { useEffect, useState, useMemo, useRef } from 'react';
 import {
   Clock,
@@ -1831,7 +1832,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         elements.push(
           <h2
             key={index}
-            id={sectionSlug}
+            data-ink-block={sectionSlug} id={sectionSlug}
             className="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-zinc-100 mt-8 mb-3 flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800/80 pb-2 scroll-mt-28 md:scroll-mt-36"
           >
             <span
@@ -2029,6 +2030,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 
   return (
     <div className="space-y-6 w-full max-w-7xl mx-auto">
+      <StudyInkLayer content={`material:${material.id}`} />
       {/* Barra Superior de Ações */}
       <div className="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-4">
         <Button

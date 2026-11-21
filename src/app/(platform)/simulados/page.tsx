@@ -7,8 +7,8 @@ import { MockExams } from '@/components/MockExams';
 export default function SimuladosPage() {
   const router = useRouter();
 
-  const handleStartExam = (examTitle: string) => {
-    router.push(`/questoes?search=${encodeURIComponent(examTitle)}&mode=resolucao`);
+  const handleStartExam = (examId: string) => {
+    router.push(`/questoes?examId=${encodeURIComponent(examId)}&examMode=exam`);
   };
 
   return (

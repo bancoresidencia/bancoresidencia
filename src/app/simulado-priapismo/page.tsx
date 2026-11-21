@@ -1,5 +1,6 @@
 'use client';
 
+import { useAuth } from '@/context/AuthContext';
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, CheckCircle2, RotateCcw, Share2, Sparkles, Award } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
@@ -10,6 +11,13 @@ import { SimuladoPriapismoHeader, FontSize } from '@/components/simulado-priapis
 import { SimuladoQrModal } from '@/components/simulado-priapismo/SimuladoQrModal';
 
 export default function SimuladoPriapismoPage() {
+  const { user, isLoading } = useAuth()
+  return isLoading ? null : <DemoSession key={user?.id ?? 'guest'} owner={user?.id ?? 'guest'} />
+}
+
+function DemoSession({ owner }: { owner: string }) {
+  const [attempt, setAttempt] = useState('')
+  const key = 'demo-priapismo:' + owner
   const { accentConfig, mode } = useTheme();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fontSize, setFontSize] = useState<FontSize>('base');
@@ -30,6 +38,23 @@ export default function SimuladoPriapismoPage() {
     }
   }, []);
 
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(key) || 'null')
+      if (saved?.attempt && Number.isInteger(saved.index) && SIMULADO_PRIAPISMO_QUESTIONS[saved.index]) {
+        setSessionAnswers(saved.answers ?? {})
+        setCurrentIndex(saved.index)
+        setAttempt(saved.attempt)
+      } else setAttempt(crypto.randomUUID())
+    } catch { setAttempt(crypto.randomUUID()) }
+  }, [key])
+  useEffect(() => {
+    if (attempt) {
+      try { localStorage.setItem(key, JSON.stringify({ attempt, index: currentIndex, answers: sessionAnswers })) }
+      catch { /* As respostas continuam disponíveis enquanto a página estiver aberta. */ }
+    }
+  }, [attempt, currentIndex, sessionAnswers, key])
+
   const total = SIMULADO_PRIAPISMO_QUESTIONS.length;
   const currentQuestion = SIMULADO_PRIAPISMO_QUESTIONS[currentIndex];
 
@@ -45,6 +70,7 @@ export default function SimuladoPriapismoPage() {
   };
 
   const handleResetSession = () => {
+    setAttempt(crypto.randomUUID());
     setSessionAnswers({});
     setCurrentIndex(0);
     setIsCompletedModalOpen(false);
@@ -53,6 +79,7 @@ export default function SimuladoPriapismoPage() {
   const answeredCount = Object.keys(sessionAnswers).length;
   const correctCount = Object.values(sessionAnswers).filter((a) => a.isCorrect).length;
 
+  if (!attempt) return null;
   const isDark = mode === 'dark';
 
   return (
@@ -72,14 +99,7 @@ export default function SimuladoPriapismoPage() {
         onClearHighlights={() => {
           if (typeof window !== 'undefined') {
             window.dispatchEvent(new CustomEvent('clear-all-highlights'));
-            try {
-              SIMULADO_PRIAPISMO_QUESTIONS.forEach((q) => {
-                sessionStorage.removeItem(`hipocampus_hl_${q.id}`);
-                localStorage.removeItem(`hipocampus_hl_${q.id}`);
-              });
-            } catch {
-              // ignore
-            }
+
           }
         }}
         onOpenQrModal={() => setIsQrModalOpen(true)}
@@ -141,7 +161,8 @@ export default function SimuladoPriapismoPage() {
 
           {/* CARD DA QUESTÃO NATIVO DA PLATAFORMA (QuestionCard Canônico) */}
           <QuestionCard
-            key={currentQuestion.id}
+            key={attempt + currentQuestion.id}
+            inkContext={`demo:${attempt}`}
             question={currentQuestion}
             index={currentIndex}
             total={total}

@@ -1,5 +1,6 @@
 'use client';
 
+import { StudyInkLayer } from '@/components/StudyInkLayer';
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   ChevronLeft,
@@ -568,6 +569,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
   return (
     <div className="space-y-4 animate-in fade-in duration-200">
+      <StudyInkLayer content={`review:${sessionId}:${currentQId}`} />
       {/* 1. Header Focado da Sessão de Revisão com Controles de Resiliência */}
       <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-4 rounded-3xl shadow-xs flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">

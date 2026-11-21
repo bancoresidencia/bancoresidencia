@@ -1,5 +1,7 @@
 'use client';
 
+import { useAuth } from '@/context/AuthContext';
+import { StudyInkLayer } from '@/components/StudyInkLayer';
 import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { Question } from '@/types';
 import {
@@ -71,6 +73,7 @@ interface QuestionCardProps {
   onToggleStrikethrough?: () => void;
   onNextQuestion?: () => void;
   hidePlanBadge?: boolean;
+  inkContext?: string;
 }
 
 export type HighlighterColor = 'yellow' | 'green' | 'pink' | 'blue' | 'orange' | 'purple';
@@ -150,6 +153,7 @@ interface TextHighlight {
   text: string;
   color: HighlighterColor;
   style?: TextMarkStyle;
+  block?: string;
   prefix?: string;
   suffix?: string;
 }
@@ -378,9 +382,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   isStrikethroughActive = false,
   onToggleStrikethrough,
   onNextQuestion,
+  inkContext = 'question',
   hidePlanBadge = false
 }) => {
   const { accentConfig } = useTheme();
+  const { user: inkOwner, isLoading: inkOwnerLoading } = useAuth();
+  const highlightKey = JSON.stringify(['question-highlights', inkOwner?.id ?? 'guest', inkContext, question.id]);
   const { plan: userPlan, dailyResolvedCount, openUpgradeModal } = useSubscription();
 
   // Modal para salvar em pastas de 3 níveis
@@ -434,48 +441,35 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   };
 
   // Estados de Marcador de Texto (Highlight) persistentes por questão
-  const [highlights, setHighlights] = useState<TextHighlight[]>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const stored =
-          sessionStorage.getItem(`hipocampus_hl_${question.id}`) ||
-          localStorage.getItem(`hipocampus_hl_${question.id}`);
-        if (stored) {
-          const parsed = JSON.parse(stored);
-          if (Array.isArray(parsed)) return parsed;
-        }
-      } catch {
-        // fallback seguro
-      }
-    }
-    return [];
-  });
-
-  // Salva automaticamente as marcações para persistir na sessão e entre trocas de questão
+  const [highlights, setHighlights] = useState<TextHighlight[]>([]);
+  const [legacyPreview, setLegacyPreview] = useState<TextHighlight[]>([]);
+  const [loadedHighlightsKey, setLoadedHighlightsKey] = useState('');
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        if (highlights.length > 0) {
-          sessionStorage.setItem(`hipocampus_hl_${question.id}`, JSON.stringify(highlights));
-          localStorage.setItem(`hipocampus_hl_${question.id}`, JSON.stringify(highlights));
-        } else {
-          sessionStorage.removeItem(`hipocampus_hl_${question.id}`);
-          localStorage.removeItem(`hipocampus_hl_${question.id}`);
-        }
-      } catch {
-        // ignore
-      }
+    if (inkOwnerLoading) return;
+    try {
+      const raw = localStorage.getItem(highlightKey);
+      const entries = raw ? JSON.parse(raw) : [];
+      const legacy = raw === null ? localStorage.getItem(`hipocampus_hl_${question.id}`) : null;
+      const old = legacy ? JSON.parse(legacy) : [];
+      setLegacyPreview(Array.isArray(old) ? old.filter(h => h && typeof h.text === 'string' && typeof h.id === 'string') : []);
+      setHighlights(Array.isArray(entries) ? entries : []);
+      setLoadedHighlightsKey(highlightKey);
+    } catch { setLoadedHighlightsKey(''); setHighlights([]); }
+  }, [highlightKey, inkOwnerLoading, question.id]);
+  useEffect(() => {
+    if (!inkOwnerLoading && (!legacyPreview.length || highlights.length > 0) && loadedHighlightsKey === highlightKey) {
+      try { localStorage.setItem(highlightKey, JSON.stringify(highlights)); }
+      catch { setSolveError('Não foi possível salvar os grifos neste dispositivo.'); }
     }
-  }, [highlights, question.id]);
-
+  }, [highlights, highlightKey, inkOwnerLoading, loadedHighlightsKey, legacyPreview]);
   // Listener para limpar todos os destaques desta questão disparado pelo cabeçalho
   useEffect(() => {
     const handleClearAll = () => {
       setHighlights([]);
       if (typeof window !== 'undefined') {
         try {
-          sessionStorage.removeItem(`hipocampus_hl_${question.id}`);
-          localStorage.removeItem(`hipocampus_hl_${question.id}`);
+
+          localStorage.removeItem(highlightKey);
         } catch {
           // ignore
         }
@@ -483,7 +477,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     };
     window.addEventListener('clear-all-highlights', handleClearAll);
     return () => window.removeEventListener('clear-all-highlights', handleClearAll);
-  }, [question.id]);
+  }, [highlightKey]);
 
   const activeHighlighterColor = propHighlighterColor || 'yellow';
   const isTextSelectionRef = useRef(false);
@@ -504,16 +498,19 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     suffix?: string
   ) => {
     if (!text.trim()) return;
+    const node = window.getSelection()?.anchorNode;
+    const block = node?.parentElement?.closest<HTMLElement>('[data-ink-block]')?.dataset.inkBlock;
     setHighlights((prev) => {
       // Se ja houver marcacao exatamente no mesmo texto e posicao, substitui
       const filtered = prev.filter((h) =>
-        !(h.text.toLowerCase() === text.toLowerCase() && h.prefix === prefix && h.suffix === suffix)
+        !(h.text.toLowerCase() === text.toLowerCase() && h.prefix === prefix && h.suffix === suffix && h.block === block)
       );
       const newHighlight: TextHighlight = {
         id: "hl-" + Date.now() + "-" + Math.random().toString(36).slice(2, 6),
         text,
         color,
         style,
+        block,
         prefix,
         suffix
       };
@@ -525,13 +522,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   }, []);
 
   // Renderizador unificado com suporte a formatação médica (negrito/itálico) e destaques de marca-texto
-  const renderHighlightedText = useCallback((text: string | null | undefined) => {
+  const renderHighlightedText = useCallback((text: string | null | undefined, block?: string) => {
     if (!text) return null;
     const formatted = renderFormattedMedicalText(text);
     if (highlights.length === 0) {
       return formatted;
     }
-    return applyHighlightsToNode(formatted, highlights, removeHighlight);
+    return applyHighlightsToNode(formatted, highlights.filter(h => !h.block || h.block === block), removeHighlight);
   }, [highlights, removeHighlight]);
 
   // Helper para renderizar texto com marcações em negrito/itálico, destaques e sanitização médica completa
@@ -608,16 +605,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setEliminatedOptions({});
     setExpandedOptions({});
     setOpenTopics({});
-    try {
-      const stored =
-        typeof window !== 'undefined'
-          ? sessionStorage.getItem(`hipocampus_hl_${question.id}`) ||
-            localStorage.getItem(`hipocampus_hl_${question.id}`)
-          : null;
-      setHighlights(stored ? JSON.parse(stored) : []);
-    } catch {
-      setHighlights([]);
-    }
     setHoveredOptionLetter(null);
 
     // Se inscreve caso a resolução do lote termine enquanto este card estiver ativo
@@ -913,7 +900,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     }
 
     const rawText = selection.toString().trim();
-    if (rawText.length < 2 || rawText.length > 500) {
+    if (rawText.length < 1) {
       return;
     }
 
@@ -953,7 +940,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     try {
       const range = selection.getRangeAt(0);
       const snapped = cleanAndSnapRange(range);
-      if (snapped && snapped.length >= 2) {
+      if (snapped && snapped.length >= 1) {
         textToHighlight = snapped;
       }
       const ctx = extractContextAroundRange(range);
@@ -963,7 +950,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       // fallback com rawText
     }
 
-    if (textToHighlight.length >= 2) {
+    if (textToHighlight.length >= 1) {
       if (isStrikethroughActive) {
         addHighlight(textToHighlight, 'yellow', 'strike', prefix, suffix);
       } else {
@@ -1343,6 +1330,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       onTouchEnd={handleTextSelectionTouchEnd}
       className={`bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm space-y-5 sm:space-y-6 relative transition-all ${selectionColorClass}`}
     >
+      <StudyInkLayer content={`${inkContext}:${question.id}`} choose={isAnswered || isWrittenQuestion ? undefined : letter => { const option = activeQuestion.options?.find(item => item.letter === letter); if (option) handleSelectOption(option.letter) }} />
+      {legacyPreview.length > 0 && <details><summary>Recuperar grifos antigos deste navegador ({legacyPreview.length})</summary>
+        <ul>{legacyPreview.map(mark => <li key={mark.id}>{mark.text}</li>)}</ul>
+        <button onClick={() => { setHighlights(h => [...h, ...legacyPreview]); setLegacyPreview([]) }}>Importar para esta questão</button>
+        <button onClick={() => setLegacyPreview([])}>Ignorar</button>
+      </details>}
       {/* Header Reorganizado: Origem da Questão (Esquerda) + Ações e Contador (Direita) */}
       <div
         data-no-highlight="true"
@@ -1571,11 +1564,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       {/* Enunciado Clínico com Marcador de Texto Ativo - Texto Justificado */}
       <div className="relative">
         <div
-          ref={statementRef}
+          ref={statementRef} data-ink-block="statement"
           data-highlightable="true"
           className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-left sm:text-justify hyphens-auto break-words`}
         >
-          {renderHighlightedText(question.statement)}
+          {renderHighlightedText(question.statement, 'statement')}
         </div>
       </div>
 
@@ -1700,6 +1693,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   <div className="flex items-start gap-3 flex-1">
                     {/* Letra da Alternativa */}
                     <span
+                      data-ink-option={optLetter}
                       title={`Alternativa ${optLetter} (tecla ${['A', 'B', 'C', 'D', 'E'].indexOf(optLetter) + 1})`}
                       className={`${badgeSizeClass} rounded-xl flex items-center justify-center font-extrabold shrink-0 mt-0.5 shadow-xs transition-colors ${
                         isAnswered && isResolutionLoading
@@ -1762,14 +1756,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                       </div>
                     ) : (
                       <span
-                        data-highlightable="true"
+                        data-ink-block={optLetter} data-highlightable="true"
                         className={`${optionSizeClass} flex-1 pt-0.5 font-medium transition-all select-text ${
                           isEliminated && !isAnswered
                             ? 'line-through text-slate-400 dark:text-slate-500 opacity-60 italic'
                             : ''
                         }`}
                       >
-                        {renderHighlightedText(option.text)}
+                        {renderHighlightedText(option.text, optLetter)}
                       </span>
                     )}
                   </div>

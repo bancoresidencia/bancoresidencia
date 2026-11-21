@@ -5,7 +5,7 @@ import { FileCheck2, ArrowRight, ShieldCheck } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 
 interface MockExamsProps {
-  onStartExam: (examTitle: string) => void;
+  onStartExam: (examId: string) => void;
 }
 
 export const MockExams: React.FC<MockExamsProps> = ({ onStartExam }) => {
@@ -124,7 +124,7 @@ export const MockExams: React.FC<MockExamsProps> = ({ onStartExam }) => {
             </div>
 
             <button
-              onClick={() => onStartExam(exam.title)}
+              onClick={() => onStartExam(exam.id)}
               className="w-full flex items-center justify-center gap-2.5 py-3 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:scale-101 active:scale-98"
               style={{
                 backgroundColor: accentConfig.primaryHex,

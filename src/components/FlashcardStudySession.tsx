@@ -1,5 +1,6 @@
 'use client';
 
+import { StudyInkLayer } from '@/components/StudyInkLayer';
 import React, { useState, useEffect, useCallback } from 'react';
 import {
   ArrowLeft,
@@ -477,6 +478,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
 
   return (
     <div className="max-w-2xl mx-auto space-y-4">
+      <StudyInkLayer content={`flashcard:${currentCard.id}`} flip={() => setIsFlipped(value => !value)} />
       {/* 1. Barra Superior da Sessão */}
       <div className="flex items-center justify-between gap-3 text-xs">
         <button
