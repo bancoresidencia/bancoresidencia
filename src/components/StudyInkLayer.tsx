@@ -548,7 +548,11 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="font-bold text-zinc-100 tracking-tight text-xs flex items-center gap-1.5">
                     Caneta Médica
-                    {choose && <Sparkles className="w-3 h-3 text-amber-400" title="Reconhecimento de gestos (X e círculo) ativo" />}
+                    {choose && (
+                      <span title="Reconhecimento de gestos (X e círculo) ativo">
+                        <Sparkles className="w-3 h-3 text-amber-400" />
+                      </span>
+                    )}
                   </span>
                   <span className="text-[10px] text-zinc-400 font-medium ml-1">
                     {status || 'Pronta'}
