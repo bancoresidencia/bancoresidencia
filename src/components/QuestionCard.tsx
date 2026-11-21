@@ -415,7 +415,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   // Anotações clínicas pessoais da questão (Modo Normal de Estudo)
   const [isNoteOpen, setIsNoteOpen] = useState(false);
   const [studentNote, setStudentNote] = useState('');
-  const noteStorageKey = `hipocampus_note_${user?.id || 'guest'}_${question.id}`;
+  const noteStorageKey = `hipocampus_note_${inkOwner?.id || 'guest'}_${question.id}`;
 
   useEffect(() => {
     try {
