@@ -460,7 +460,7 @@ function Editor({
       let p = point(event)
 
       // SUPORTE AO BOTÃO LATERAL DA S PEN (Barrel button)
-      const isBarrel = (event.buttons & 2) !== 0 || (event.buttons & 32) !== 0 || event.button === 2 || (event as any).button === 5
+      const isBarrel = (event.buttons & 2) !== 0 || (event.buttons & 32) !== 0 || event.button === 2 || event.button === 5
       if (isBarrel && !current.isEraser) {
         current.isEraser = true
       }
@@ -729,7 +729,7 @@ function Editor({
     setIsDrawing(true)
 
     // SUPORTE AO BOTÃO LATERAL DA S PEN (Barrel button)
-    const isBarrel = (e.buttons & 2) !== 0 || (e.buttons & 32) !== 0 || e.button === 2 || (e.nativeEvent as any).button === 5
+    const isBarrel = (e.buttons & 2) !== 0 || (e.buttons & 32) !== 0 || e.button === 2 || e.nativeEvent.button === 5
 
     // CRIAR POST-IT MÉDICO FLUTUANTE AO TOCAR COM A FERRAMENTA NOTA
     if (tool === 'note' && !isBarrel) {

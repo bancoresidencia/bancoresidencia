@@ -165,7 +165,6 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Universitário Clementino Fraga Filho',
       uf: 'RJ',
       cidade: 'Rio de Janeiro',
-      logoSlug: 'ufrj',
       questoesCount: 1296,
       provasCount: 11
     },

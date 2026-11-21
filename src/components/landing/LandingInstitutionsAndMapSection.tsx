@@ -3,7 +3,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import {
   GraduationCap,
-  FileSpreadsheet,
   Building2,
   Filter,
   RotateCcw,
@@ -58,34 +57,34 @@ const CITY_COORDINATES: Record<string, { x: number; y: number }> = {
 // Coordenadas geográficas calibradas para garantir que 100% dos pins fiquem estritamente DENTRO do território do estado,
 // com espaçamento mínimo garantido de >= 40px (ZERO sobreposição) e sem invasão de oceano em cidades litorâneas.
 const STATE_ANCHOR_COORDINATES: Record<string, { x: number; y: number; stemHeight?: number }> = {
-  // São Paulo (SP) - 8 instituições perfeitamente espaçadas por todo o território paulista (minD >= 46px)
-  'sus-sp': { x: 275.0, y: 296.0 },        // Ribeirão Preto / Franca (Norte SP)
-  'unicamp': { x: 292.0, y: 308.0 },       // Campinas
-  'santa-casa-sp': { x: 314.0, y: 312.0 }, // Vale do Paraíba / São José dos Campos
+  // São Paulo (SP) - 8 instituições perfeitamente espaçadas por todo o território paulista (minD >= 44px)
+  'sus-sp': { x: 275.0, y: 298.0 },        // Ribeirão Preto / Franca (Norte SP)
+  'unicamp': { x: 290.0, y: 308.0 },       // Campinas
+  'santa-casa-sp': { x: 310.0, y: 314.0 }, // Vale do Paraíba / São José dos Campos
   'einstein': { x: 258.0, y: 316.0 },      // Sorocaba / Bauru (Oeste)
-  'usp-sp': { x: 285.0, y: 324.0 },        // Capital Centro-Oeste / Pinheiros
-  'unifesp': { x: 302.0, y: 322.0 },       // Capital Centro-Sul
-  'iamspe': { x: 268.0, y: 330.0 },        // Sudoeste / Itapeva
-  'fmabc': { x: 312.0, y: 328.0 },         // Santo André / Grande ABC
+  'usp-sp': { x: 284.0, y: 324.0 },        // Capital Centro-Oeste / Pinheiros
+  'unifesp': { x: 302.0, y: 322.0 },       // Capital Centro-Leste
+  'iamspe': { x: 268.0, y: 332.0 },        // Sudoeste / Itapeva
+  'fmabc': { x: 298.0, y: 334.0 },         // Santo André / Grande ABC (inland)
 
   // Pernambuco (PE) - 2 instituições no interior (zero mar)
-  'ses-pe': { x: 426.0, y: 151.0 },        // Recife / Litoral (dentro do território)
+  'ses-pe': { x: 420.0, y: 151.0 },        // Recife / Litoral (inland)
   'ufpe': { x: 398.0, y: 148.0 },          // Agreste / Interior PE
 
   // Bahia (BA) - 2 instituições
-  'sus-ba': { x: 390.0, y: 206.0 },        // Salvador / Recôncavo
+  'sus-ba': { x: 388.0, y: 208.0 },        // Salvador / Recôncavo
   'ufba': { x: 356.0, y: 204.0 },          // Chapada Diamantina / Centro BA
 
   // Minas Gerais (MG) - 3 instituições
   'psu-mg': { x: 298.0, y: 275.0 },        // Triângulo Mineiro / Oeste MG
-  'santa-casa-bh': { x: 338.3, y: 283.1 }, // Belo Horizonte / Centro
+  'santa-casa-bh': { x: 338.0, y: 283.0 }, // Belo Horizonte / Centro
   'ipsemg': { x: 332.0, y: 305.0 },        // Sul de Minas / Zona da Mata
 
   // Rio de Janeiro (RJ) - 4 instituições
-  'ufrj': { x: 341.0, y: 311.0 },          // Capital Norte
-  'uerj': { x: 347.0, y: 316.0 },          // Capital Centro
+  'ufrj': { x: 341.0, y: 308.0 },          // Capital Norte / Fundão
+  'uerj': { x: 349.0, y: 316.0 },          // Capital Centro / Maracanã
   'ses-rj': { x: 358.0, y: 305.0 },        // Norte Fluminense / Serrana
-  'unimed-rio': { x: 333.0, y: 318.0 },    // Costa Verde / Sul Fluminense
+  'unimed-rio': { x: 332.0, y: 318.0 },    // Costa Verde / Sul Fluminense
 
   // Ceará (CE) - 3 instituições
   'surce': { x: 392.0, y: 108.0 },         // Fortaleza / Litoral Norte
@@ -94,29 +93,36 @@ const STATE_ANCHOR_COORDINATES: Record<string, { x: number; y: number; stemHeigh
 
   // Rio Grande do Sul (RS) - 3 instituições
   'amrigs': { x: 260.0, y: 400.0 },        // Porto Alegre / Metropolitana
-  'hcpa': { x: 248.0, y: 385.0 },          // Serra Gaúcha / Passo Fundo
-  'ufcspa': { x: 242.0, y: 416.0 },        // Sul / Pelotas
+  'hcpa': { x: 246.0, y: 384.0 },          // Serra Gaúcha / Passo Fundo
+  'ufcspa': { x: 242.0, y: 418.0 },        // Sul / Pelotas
 
-  // Paraná (PR) - 3 instituições
-  'uel': { x: 259.9, y: 321.8 },           // Londrina / Norte
-  'amp': { x: 278.0, y: 344.0 },           // Curitiba Centro
-  'puc-pr': { x: 286.0, y: 350.0 },        // Metropolitana / Litoral
+  // Paraná (PR) - 3 instituições (espaçadas sem sobreposição)
+  'uel': { x: 260.0, y: 322.0 },           // Londrina / Norte
+  'amp': { x: 272.0, y: 340.0 },           // Curitiba Noroeste
+  'puc-pr': { x: 284.0, y: 348.0 },        // Curitiba Sudeste
 
   // Santa Catarina (SC) - 2 instituições
-  'acm': { x: 282.0, y: 372.0 },           // Florianópolis / Continental
-  'ufsc': { x: 262.0, y: 368.0 },          // Vale do Itajaí / Oeste
+  'acm': { x: 278.0, y: 372.0 },           // Florianópolis / Continental
+  'ufsc': { x: 256.0, y: 368.0 },          // Vale do Itajaí / Oeste
 
   // Pará (PA) - 2 instituições
-  'uepa': { x: 288.0, y: 83.0 },           // Belém / Litoral
-  'cesupa': { x: 250.0, y: 95.0 },         // Santarém / Baixo Amazonas
+  'uepa': { x: 282.0, y: 84.0 },           // Belém / Litoral
+  'cesupa': { x: 248.0, y: 96.0 },         // Santarém / Baixo Amazonas
 
   // Distrito Federal (DF) - 2 instituições
-  'ses-df': { x: 293.0, y: 235.5 },        // Asa Norte
-  'habm': { x: 299.0, y: 239.5 },          // Asa Sul
+  'ses-df': { x: 294.5, y: 236.5 },        // Asa Norte
+  'habm': { x: 298.5, y: 237.5 },          // Asa Sul
 
   // Goiás (GO) - 2 instituições
-  'ses-go': { x: 280.5, y: 247.1 },        // Goiânia Centro
-  'psu-go': { x: 275.0, y: 235.0 }         // Anápolis / Norte
+  'ses-go': { x: 280.0, y: 247.0 },        // Goiânia Centro
+  'psu-go': { x: 274.0, y: 234.0 },        // Anápolis / Norte
+
+  // Estados com cidades litorâneas (inland calibration)
+  'emescam': { x: 372.0, y: 280.0 },       // ES: Vitória interior
+  'ufrn': { x: 418.0, y: 130.0 },          // RN: Natal interior
+  'famene': { x: 418.0, y: 144.0 },        // PB: João Pessoa interior
+  'psu-al': { x: 416.0, y: 170.0 },        // AL: Maceió interior
+  'ufs': { x: 410.0, y: 180.0 }            // SE: Aracaju interior
 };
 
 interface CanonicalStateItem {
@@ -134,8 +140,7 @@ export interface LandingInstitutionsAndMapSectionProps {
 }
 
 export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMapSectionProps> = ({
-  onSelectInstitution,
-  onScrollToQuestions
+  onSelectInstitution
 }) => {
   const { accent, mode, accentConfig } = useTheme();
   const isDark = mode === 'dark';
@@ -540,6 +545,16 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                                 width={28}
                                 height={28}
                                 className="w-full h-full object-contain"
+                                onError={(e) => {
+                                  e.currentTarget.style.display = 'none';
+                                  const parent = e.currentTarget.parentElement;
+                                  if (parent && !parent.querySelector('.fallback-sigla')) {
+                                    const span = document.createElement('span');
+                                    span.className = 'fallback-sigla text-[9px] sm:text-[10px] font-black tracking-tight text-zinc-950 dark:text-white uppercase px-0.5 leading-none text-center';
+                                    span.innerText = inst.sigla.split('/')[0].trim().slice(0, 6);
+                                    parent.appendChild(span);
+                                  }
+                                }}
                               />
                             ) : (
                               <span className="text-[9px] sm:text-[10px] font-black tracking-tight text-zinc-950 dark:text-white uppercase px-0.5 leading-none text-center">
@@ -683,7 +698,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                 </div>
 
                 {/* Grid de Cards com Rolagem Interna Calibrada à Altura Exata do Mapa */}
-                <div className="max-h-[265px] lg:max-h-[265px] overflow-y-auto pr-1 sm:pr-1.5 scrollbar-thin scrollbar-thumb-zinc-300 dark:scrollbar-thumb-zinc-700/60 rounded-xl">
+                <div className="max-h-[295px] lg:max-h-[295px] overflow-y-auto pr-1 sm:pr-1.5 scrollbar-thin scrollbar-thumb-zinc-300 dark:scrollbar-thumb-zinc-700/60 rounded-xl">
                   {displayedInstitutions.length === 0 ? (
                     <div className="p-6 text-center rounded-2xl bg-zinc-50/60 dark:bg-[#121216] border border-zinc-200/80 dark:border-zinc-800 text-xs text-zinc-500 space-y-2">
                       <p>Nenhuma banca encontrada para &quot;{searchQuery}&quot; em {currentUfName}.</p>
@@ -714,7 +729,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                             style={isHighlighted ? { borderColor: accentConfig.primaryHex } : undefined}
                             onMouseEnter={() => setHighlightedInstId(inst.id)}
                             onMouseLeave={() => setHighlightedInstId(null)}
-                            onClick={() => onSelectInstitution?.(inst as any)}
+                            onClick={() => onSelectInstitution?.(inst as unknown as InstitutionInfo)}
                           >
                             <div className="flex items-center gap-3 w-full min-w-0">
                               <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 flex items-center justify-center p-1 shrink-0 overflow-hidden shadow-2xs">

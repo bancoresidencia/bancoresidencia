@@ -57,7 +57,7 @@ data/knowledge/*
 
 data/extraction_status.json
 .playwright-mcp/
-.playwright-mcp/
+.playwright_audit/
 
 # python cache
 __pycache__/
