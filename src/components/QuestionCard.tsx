@@ -33,6 +33,7 @@ import {
   Loader2,
   Zap,
   ZoomIn,
+  StickyNote,
   X
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
@@ -407,6 +408,28 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const [writtenAnswer, setWrittenAnswer] = useState('');
   const attemptRef = useRef<{ key: string; id: string } | null>(null);
   const isWrittenQuestion = question.type === 'Discursiva' || question.type === 'Dissertativa';
+
+  // Tentativa atual de resolução da questão (para isolar rascunhos limpos por tentativa)
+  const [solveAttempt, setSolveAttempt] = useState<number>(1);
+
+  // Anotações clínicas pessoais da questão (Modo Normal de Estudo)
+  const [isNoteOpen, setIsNoteOpen] = useState(false);
+  const [studentNote, setStudentNote] = useState('');
+  const noteStorageKey = `hipocampus_note_${user?.id || 'guest'}_${question.id}`;
+
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(noteStorageKey);
+      if (saved) setStudentNote(saved);
+    } catch {}
+  }, [noteStorageKey]);
+
+  const handleSaveNote = useCallback((text: string) => {
+    setStudentNote(text);
+    try {
+      localStorage.setItem(noteStorageKey, text);
+    } catch {}
+  }, [noteStorageKey]);
 
   // Rastreia se a resolução de uma questão previamente respondida ainda está sendo carregada via API
   const [isLoadingResolution, setIsLoadingResolution] = useState<boolean>(
@@ -1036,6 +1059,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setPendingSelected(null);
     setShowCommentary(false);
     attemptRef.current = null;
+    setSolveAttempt(prev => prev + 1);
   };
 
   const submitAnswer = async (answer: { selectedOption: 'A' | 'B' | 'C' | 'D' | 'E' } | { writtenAnswer: string }) => {
@@ -1330,7 +1354,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       onTouchEnd={handleTextSelectionTouchEnd}
       className={`bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 shadow-sm space-y-5 sm:space-y-6 relative transition-all ${selectionColorClass}`}
     >
-      <StudyInkLayer content={`${inkContext}:${question.id}`} choose={isAnswered || isWrittenQuestion ? undefined : letter => { const option = activeQuestion.options?.find(item => item.letter === letter); if (option) handleSelectOption(option.letter) }} />
+      <StudyInkLayer
+        content={`${inkContext}:${question.id}`}
+        attemptNumber={solveAttempt}
+        choose={isAnswered || isWrittenQuestion ? undefined : letter => { const option = activeQuestion.options?.find(item => item.letter === letter); if (option) handleSelectOption(option.letter) }}
+      />
       {legacyPreview.length > 0 && <details><summary>Recuperar grifos antigos deste navegador ({legacyPreview.length})</summary>
         <ul>{legacyPreview.map(mark => <li key={mark.id}>{mark.text}</li>)}</ul>
         <button onClick={() => { setHighlights(h => [...h, ...legacyPreview]); setLegacyPreview([]) }}>Importar para esta questão</button>
@@ -1480,6 +1508,22 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               </Button>
             )}
 
+            {/* Botão de Anotação Clínica Pessoal (Modo Normal de Estudo) */}
+            <Button
+              type="button"
+              variant={studentNote.trim() ? 'secondary' : 'outline'}
+              size="xs"
+              onClick={() => setIsNoteOpen(prev => !prev)}
+              className="text-[11px] font-bold shadow-xs gap-1.5"
+              title="Anotações e lembretes pessoais para esta questão"
+              leftIcon={<StickyNote className="w-3.5 h-3.5 text-amber-500" />}
+            >
+              <span className="hidden sm:inline">Anotação</span>
+              {studentNote.trim() && (
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+              )}
+            </Button>
+
             {/* Contador de Questão (1/50) */}
             <div className="ml-1 pl-2 border-l border-zinc-200 dark:border-zinc-800">
               <span className="text-xs sm:text-sm font-sans font-black text-zinc-700 dark:text-zinc-300 whitespace-nowrap">
@@ -1560,6 +1604,36 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           </div>
         )}
       </div>
+
+      {/* Painel de Anotações Pessoais (Modo Normal de Uso / Teclado) */}
+      {isNoteOpen && (
+        <div className="p-3.5 rounded-2xl bg-amber-500/5 dark:bg-amber-950/20 border border-amber-500/30 text-zinc-900 dark:text-zinc-100 space-y-2 animate-in fade-in duration-200">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
+              <StickyNote className="w-3.5 h-3.5" />
+              Minhas Anotações Clínicas
+            </span>
+            <div className="flex items-center gap-2 text-[10px] text-zinc-500">
+              <span>Salvo automaticamente</span>
+              <button
+                type="button"
+                onClick={() => setIsNoteOpen(false)}
+                className="p-1 rounded hover:bg-zinc-200 dark:hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200"
+                title="Recolher painel de notas"
+              >
+                <X className="w-3 h-3" />
+              </button>
+            </div>
+          </div>
+          <textarea
+            rows={3}
+            value={studentNote}
+            onChange={e => handleSaveNote(e.target.value)}
+            placeholder="Digite aqui mnemônicos, pegadinhas da banca ou dúvidas para revisar depois..."
+            className="w-full bg-white dark:bg-zinc-900/80 rounded-xl p-2.5 text-xs text-zinc-800 dark:text-zinc-200 border border-amber-500/20 focus:outline-none focus:ring-1 focus:ring-amber-500/50 resize-y font-sans placeholder:text-zinc-400 dark:placeholder:text-zinc-600"
+          />
+        </div>
+      )}
 
       {/* Enunciado Clínico com Marcador de Texto Ativo - Texto Justificado */}
       <div className="relative">

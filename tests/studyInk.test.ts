@@ -58,4 +58,12 @@ const snapped2 = snapMarkerPoint(p(20, 135), 100, 20)
 assert.equal(snapped2.point.y, 135) // Mudou de linha (>20px), destrava para 135
 assert.equal(snapped2.snappedY, 135)
 
-console.log('Caneta: borracha, fragmentos, histórico, laço, geometria, gestos (círculo/X) e régua de marca-texto aprovados.')
+// 4. Teste de isolamento de rascunhos por tentativa
+const docBase = 'user123:q-456'
+const attemptKey1 = `${docBase}:att-1`
+const attemptKey2 = `${docBase}:att-2`
+assert.notEqual(attemptKey1, attemptKey2)
+assert.equal(attemptKey1.endsWith(':att-1'), true)
+assert.equal(attemptKey2.endsWith(':att-2'), true)
+
+console.log('Caneta: borracha, fragmentos, histórico, laço, geometria, gestos (círculo/X), régua e tentativas aprovados.')

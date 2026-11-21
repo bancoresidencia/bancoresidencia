@@ -13,13 +13,14 @@ import {
   Undo2,
   Redo2,
   Trash2,
-  ChevronDown,
-  ChevronUp,
   X,
   CheckCircle2,
-  RotateCcw,
   Sparkles,
-  Check
+  Check,
+  Eye,
+  EyeOff,
+  Minimize2,
+  Move
 } from 'lucide-react'
 import { useAuth } from '@/context/AuthContext'
 import {
@@ -39,19 +40,20 @@ import {
   type InkStroke
 } from '@/services/studyInk'
 
-type Tool = 'read' | 'pen' | 'marker' | 'erase' | 'lasso' | 'line' | 'note' | 'gesture'
+export type Tool = 'read' | 'pen' | 'marker' | 'erase' | 'lasso' | 'line' | 'note' | 'gesture'
 type Style = Pick<InkStroke, 'color' | 'width' | 'opacity' | 'pressure'>
+
 const pen: Style = { color: 'currentColor', width: 2, opacity: 1, pressure: false }
 const marker: Style = { color: '#facc15', width: 20, opacity: 0.35, pressure: false }
 
 const TOOL_DEFS: { id: Tool; label: string; icon: typeof Pencil; hint: string }[] = [
+  { id: 'read', label: 'Navegar', icon: MousePointer, hint: 'Rolar página e clicar em alternativas' },
   { id: 'pen', label: 'Caneta', icon: Pencil, hint: 'Escrita livre e rascunhos' },
-  { id: 'marker', label: 'Marca-texto', icon: Highlighter, hint: 'Grifo reto alinhado ao texto' },
-  { id: 'erase', label: 'Borracha', icon: Eraser, hint: 'Apagar traço (ou segurar botão da S Pen)' },
-  { id: 'lasso', label: 'Laço', icon: Scissors, hint: 'Selecionar, mover e editar' },
+  { id: 'marker', label: 'Marca-texto', icon: Highlighter, hint: 'Grifo retilíneo sobre o texto' },
+  { id: 'erase', label: 'Borracha', icon: Eraser, hint: 'Apagar traços (ou segure o botão da S Pen)' },
   { id: 'line', label: 'Reta', icon: Minus, hint: 'Traço retilíneo' },
-  { id: 'note', label: 'Nota', icon: StickyNote, hint: 'Inserir nota digitada' },
-  { id: 'read', label: 'Navegar', icon: MousePointer, hint: 'Rolar e interagir com botões' }
+  { id: 'lasso', label: 'Laço', icon: Scissors, hint: 'Selecionar e mover traços' },
+  { id: 'note', label: 'Nota', icon: StickyNote, hint: 'Inserir post-it médico ancorado' }
 ]
 
 const COLOR_PRESETS = [
@@ -64,17 +66,32 @@ const COLOR_PRESETS = [
   { name: 'Roxo', value: '#a855f7', bg: 'bg-purple-500' }
 ]
 
+const MARKER_COLORS = [
+  { name: 'Amarelo', value: '#facc15' },
+  { name: 'Verde', value: '#34d399' },
+  { name: 'Azul', value: '#60a5fa' },
+  { name: 'Rosa', value: '#fb7185' },
+  { name: 'Laranja', value: '#fb923c' }
+]
+
+const NOTE_COLORS = [
+  { name: 'Âmbar', bg: 'bg-amber-950/80 border-amber-600/60 text-amber-100', badge: 'bg-amber-500 text-black' },
+  { name: 'Esmeralda', bg: 'bg-emerald-950/80 border-emerald-600/60 text-emerald-100', badge: 'bg-emerald-500 text-black' },
+  { name: 'Azul', bg: 'bg-blue-950/80 border-blue-600/60 text-blue-100', badge: 'bg-blue-500 text-white' },
+  { name: 'Neutro', bg: 'bg-zinc-900/90 border-zinc-700/70 text-zinc-100', badge: 'bg-zinc-700 text-white' }
+]
+
 const unsaved = new Map<string, InkChange[]>()
 const histories = new Map<string, { undo: InkChange[]; redo: InkChange[] }>()
 const queues = new Map<string, Promise<void>>()
 
-function flush(key: string) {
+function flush(key: string, attemptNumber = 1) {
   const active = queues.get(key)
   if (active) return active
   const pending = unsaved.get(key) ?? []
   const work = (async () => {
     while (pending.length) {
-      await saveInk(key, pending[0])
+      await saveInk(key, pending[0], attemptNumber, true)
       pending.shift()
       if (typeof BroadcastChannel !== 'undefined') {
         const notify = new BroadcastChannel('private-study-ink')
@@ -101,14 +118,41 @@ function scrollAncestor(element: HTMLElement | null, dy: number) {
   window.scrollBy({ top: dy, left: 0, behavior: 'instant' })
 }
 
-type Actions = { flip?: () => void; choose?: (letter: string) => void }
+export interface StickyPostIt {
+  id: string
+  x: number
+  y: number
+  text: string
+  colorIdx: number
+  minimized: boolean
+}
 
-function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & Actions) {
+type Actions = {
+  flip?: () => void
+  choose?: (letter: string) => void
+  attemptNumber?: number
+}
+
+function Editor({
+  doc,
+  baseDoc,
+  owner,
+  flip,
+  choose,
+  attemptNumber = 1
+}: {
+  doc: string
+  baseDoc: string
+  owner: string
+  attemptNumber?: number
+} & Actions) {
   const anchor = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
   const [mounted, setMounted] = useState(false)
   const [tool, setTool] = useState<Tool>('read')
   const [open, setOpen] = useState(false)
+  const [dockPosition, setDockPosition] = useState<'right' | 'left' | 'top'>('right')
+  const [activeDrawer, setActiveDrawer] = useState<Tool | 'history' | null>(null)
   const [styles, setStyles] = useState({ pen, marker })
   const [onlyPen, setOnlyPen] = useState(true)
   const [onlyMarker, setOnlyMarker] = useState(false)
@@ -116,17 +160,20 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   const [selection, setSelection] = useState<string[]>([])
   const [erasedIds, setErasedIds] = useState<string[]>([])
   const [counts, setCounts] = useState([0, 0])
-  const [note, setNote] = useState<InkStroke | null>(null)
-  const [compact, setCompact] = useState(false)
   const [radius, setRadius] = useState(14)
   const [blocks, setBlocks] = useState<Record<string, InkBox>>({})
   const [storedStrokes, setStrokes] = useState<InkStroke[]>([])
   const strokes = storedStrokes.map(s => projectInk(s, blocks))
+  const [previousStrokes, setPreviousStrokes] = useState<InkStroke[]>([])
+  const [showPreviousAttempt, setShowPreviousAttempt] = useState(false)
+  const [postIts, setPostIts] = useState<StickyPostIt[]>([])
   const [ready, setReady] = useState(false)
   const [status, setStatus] = useState('')
   const [gestureFeedback, setGestureFeedback] = useState('')
   const [autoGestureEnabled, setAutoGestureEnabled] = useState(true)
   const [straightMarker, setStraightMarker] = useState(true)
+  const lastToolTapRef = useRef<{ tool: Tool; time: number }>({ tool: 'read', time: 0 })
+
   const touchState = useRef<{
     startX: number
     startY: number
@@ -135,12 +182,6 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     isScrolling: boolean
     velocity: number
     rafId: number | null
-  } | null>(null)
-  const [spenTelemetry, setSpenTelemetry] = useState<{
-    type: string
-    barrel: boolean
-    pressure: number
-    tool: string
   } | null>(null)
 
   const active = useRef<{
@@ -162,25 +203,34 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     try {
       const saved = JSON.parse(localStorage.getItem(preference) || 'null')
       if (saved?.styles?.pen && saved?.styles?.marker) setStyles(saved.styles)
+      if (saved?.dockPosition) setDockPosition(saved.dockPosition)
     } catch {}
+
     let live = true
     const load = async () => {
       try {
-        const records = await readInk(doc)
+        const records = await readInk(baseDoc, attemptNumber)
         if (live) {
           setStrokes((unsaved.get(doc) ?? []).reduce(applyInk, records))
           setReady(true)
+        }
+        // Se for tentativa 2 ou superior, carrega tentativa anterior para consulta opcional
+        if (attemptNumber > 1) {
+          const prevRecords = await readInk(baseDoc, attemptNumber - 1)
+          if (live) setPreviousStrokes(prevRecords)
         }
       } catch {
         if (live) setStatus('Armazenamento indisponível.')
       }
     }
+
     const previous = histories.get(doc)
     if (previous) {
       undo.current = previous.undo
       redo.current = previous.redo
       setCounts([previous.undo.length, previous.redo.length])
     }
+
     const updates = typeof BroadcastChannel !== 'undefined' ? new BroadcastChannel('private-study-ink') : null
     if (updates) updates.onmessage = event => { if (event.data === doc) void load() }
 
@@ -189,11 +239,15 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       if (e.repeat || e.isComposing || e.ctrlKey || e.metaKey || e.altKey || e.key.toLowerCase() !== 'p' || document.querySelector('[aria-modal="true"]') ||
           (target instanceof HTMLElement && target.closest('input, textarea, select, [contenteditable="true"]'))) return
       e.preventDefault()
-      setOpen(prev => !prev)
-      setCompact(false)
-      setTool(prev => prev === 'read' ? 'pen' : 'read')
+      setOpen(prev => {
+        const next = !prev
+        setTool(next ? 'pen' : 'read')
+        if (!next) setActiveDrawer(null)
+        return next
+      })
     }
     window.addEventListener('keydown', keyHandler)
+
     const leave = (event: BeforeUnloadEvent) => {
       if (active.current || unsaved.get(doc)?.length) event.preventDefault()
     }
@@ -230,12 +284,13 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       window.removeEventListener('beforeunload', leave)
       observer.disconnect()
       window.removeEventListener('resize', measureBlocks)
+      if (touchState.current?.rafId) cancelAnimationFrame(touchState.current.rafId)
     }
-  }, [doc, preference])
+  }, [doc, baseDoc, preference, attemptNumber])
 
   function persistStyle(next = styles) {
     setStyles(next)
-    try { localStorage.setItem(preference, JSON.stringify({ styles: next })) }
+    try { localStorage.setItem(preference, JSON.stringify({ styles: next, dockPosition })) }
     catch { setStatus('Preferência mantida nesta sessão.') }
   }
 
@@ -247,7 +302,10 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     pending.push(change)
     unsaved.set(doc, pending)
     setStatus('Salvando…')
-    void flush(doc).then(() => setStatus('Salvo neste dispositivo'), () => setStatus('Ainda não salvo'))
+    void flush(baseDoc, attemptNumber).then(
+      () => setStatus('Sincronizado na nuvem'),
+      () => setStatus('Salvo localmente')
+    )
   }
 
   function commit(change: InkChange) {
@@ -256,60 +314,19 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     write(change)
   }
 
-  function history(back: boolean) {
-    const change = (back ? undo : redo).current.pop()
+  function handleUndo() {
+    const change = undo.current.pop()
     if (!change) return
-    ;(back ? redo : undo).current.push(change)
-    write(back ? { before: change.after, after: change.before } : change)
+    redo.current.push(change)
+    write({ before: change.after, after: change.before })
   }
 
-  // PONTE DA S PEN: Transforma a seleção de texto nativa acionada pelo botão lateral em BORRACHA inteligente
-  useEffect(() => {
-    if (!open) return
-
-    const handleSelection = () => {
-      const selection = window.getSelection()
-      if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return
-
-      const text = selection.toString().trim()
-      if (!text) return
-
-      const range = selection.getRangeAt(0)
-      const rangeRect = range.getBoundingClientRect()
-      if (rangeRect.width === 0 || rangeRect.height === 0) return
-
-      const cardRect = svgRef.current?.getBoundingClientRect()
-      if (!cardRect) return
-
-      const selBox = {
-        x: rangeRect.left - cardRect.left,
-        y: rangeRect.top - cardRect.top,
-        width: rangeRect.width,
-        height: rangeRect.height
-      }
-
-      const toErase = strokes.filter(s =>
-        s.points.some(p =>
-          p.x >= selBox.x - 24 &&
-          p.x <= selBox.x + selBox.width + 24 &&
-          p.y >= selBox.y - 24 &&
-          p.y <= selBox.y + selBox.height + 24
-        )
-      )
-
-      if (toErase.length > 0) {
-        commit({ before: toErase, after: [] })
-        selection.removeAllRanges()
-        setGestureFeedback(`🧹 ${toErase.length} traço(s) apagado(s) com a S Pen!`)
-        setTimeout(() => setGestureFeedback(''), 2500)
-      }
-    }
-
-    document.addEventListener('selectionchange', handleSelection)
-    return () => {
-      document.removeEventListener('selectionchange', handleSelection)
-    }
-  }, [open, strokes])
+  function handleRedo() {
+    const change = redo.current.pop()
+    if (!change) return
+    undo.current.push(change)
+    write(change)
+  }
 
   // Coordenadas calculadas diretamente em relação ao container do card (Sem lag de scroll!)
   function point(e: PointerEvent): InkPoint {
@@ -348,27 +365,12 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       let p = point(event)
 
       // SUPORTE AO BOTÃO LATERAL DA S PEN (Barrel button)
-      // buttons & 2 indica botão lateral pressionado durante contato na tela
       const isBarrel = (event.buttons & 2) !== 0 || (event.buttons & 32) !== 0 || event.button === 2 || (event as any).button === 5
       if (isBarrel && !current.isEraser) {
-        current.isEraser = true
-        console.log(
-          '%c[S-PEN BOTÃO LATERAL]%c Acionado no meio do traço! Alternando dinamicamente para Borracha.',
-          'background:#e11d48;color:white;font-weight:bold;padding:2px 8px;border-radius:4px;',
-          'color:#e11d48;font-weight:bold;'
-        )
-      } else if (isBarrel) {
         current.isEraser = true
       }
       const isEraserNow = current.isEraser || isBarrel || tool === 'erase'
       const effectiveRadius = isEraserNow ? Math.max(radius * 1.6, 28) : radius
-
-      setSpenTelemetry({
-        type: event.pointerType || 'touch',
-        barrel: isBarrel || current.isEraser,
-        pressure: Math.round((event.pressure || 0) * 100),
-        tool: isEraserNow ? (isBarrel ? 'Borracha (Botão S Pen)' : 'Borracha') : (tool === 'marker' ? 'Marca-texto' : 'Caneta')
-      })
 
       // Conforme o marca-texto retilíneo inteligente se alinhando à linha do texto
       if (!isEraserNow && tool === 'marker' && straightMarker) {
@@ -399,7 +401,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       const pending = unsaved.get(doc) ?? []
       pending.push({ before: [], after: [partial] })
       unsaved.set(doc, pending)
-      void flush(doc).catch(() => setStatus('Ainda não salvo'))
+      void flush(baseDoc, attemptNumber).catch(() => setStatus('Ainda não salvo'))
     }
     setPreview({ ...current.stroke })
   }
@@ -425,11 +427,6 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
         if (before.length) commit({ before, after })
       } else if (current.erased.size) {
         commit({ before: [...current.erased.values()], after: [] })
-        console.log(
-          `%c[S-PEN BORRACHA CONCLUÍDA]%c ${current.erased.size} traço(s) apagado(s) com sucesso!`,
-          'background:#059669;color:white;font-weight:bold;padding:2px 8px;border-radius:4px;',
-          'color:#059669;font-weight:bold;'
-        )
       }
       setErasedIds([])
     } else if (tool === 'lasso') {
@@ -445,11 +442,11 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
         const container = anchor.current?.parentElement
         const cardRect = svgRef.current?.getBoundingClientRect()
         if (container && cardRect) {
-          const badges = Array.from(container.querySelectorAll<HTMLElement>('[data-ink-option]'))
+          const badges = Array.from(container.querySelectorAll<HTMLElement>('[data-ink-option], [data-ink-option-row]'))
           const targets: OptionTarget[] = badges.map(b => {
             const r = b.getBoundingClientRect()
             return {
-              option: b.dataset.inkOption ?? '',
+              option: b.dataset.inkOption ?? b.dataset.inkOptionRow ?? '',
               center: { x: r.left + r.width / 2 - cardRect.left, y: r.top + r.height / 2 - cardRect.top, force: 1 },
               box: { x: r.left - cardRect.left, y: r.top - cardRect.top, width: r.width, height: r.height }
             }
@@ -488,7 +485,10 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   function start(e: ReactPointerEvent<SVGSVGElement>) {
     if (!ready || tool === 'read' || active.current || e.button > 2) return
 
-    // REJEIÇÃO DE PALMA E DUAL-INPUT (CANETA DESENHA / DEDO ROLA OU CLICA)
+    // Ao iniciar um traço, recolhe drawers laterais para manter visão limpa
+    if (activeDrawer) setActiveDrawer(null)
+
+    // DUAL-INPUT INTELIGENTE: CANETA DESENHA / DEDO ROLA OU CLICA
     if (e.pointerType === 'touch' && onlyPen) {
       if (touchState.current?.rafId) cancelAnimationFrame(touchState.current.rafId)
       touchState.current = {
@@ -503,20 +503,23 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       e.currentTarget.setPointerCapture(e.pointerId)
       return
     }
-    
-    // DETECÇÃO DO BOTÃO LATERAL DA S PEN (Barrel button)
-    // Se o botão lateral estiver pressionado na S Pen, aciona a borracha automaticamente
+
+    // SUPORTE AO BOTÃO LATERAL DA S PEN (Barrel button)
     const isBarrel = (e.buttons & 2) !== 0 || (e.buttons & 32) !== 0 || e.button === 2 || (e.nativeEvent as any).button === 5
 
-    // LOG DE DIAGNÓSTICO AO VIVO NO DEVTOOLS (USB / WI-FI)
-    console.log(
-      `%c[S-PEN TOQUE]%c tipo: ${e.pointerType} | button: ${e.button} | buttons: ${e.buttons} | pressão: ${Math.round(e.pressure * 100)}% | BOTÃO LATERAL: ${isBarrel ? '🔴 ATIVADO (BORRACHA)' : '⚪ Inativo (Caneta)'}`,
-      isBarrel ? 'background:#e11d48;color:white;font-weight:bold;padding:2px 8px;border-radius:4px;' : 'background:#2563eb;color:white;font-weight:bold;padding:2px 8px;border-radius:4px;',
-      'color:inherit;font-weight:600;'
-    )
-
+    // CRIAR POST-IT MÉDICO FLUTUANTE AO TOCAR COM A FERRAMENTA NOTA
     if (tool === 'note' && !isBarrel) {
-      setNote({ ...styles.pen, kind: 'pen', id: crypto.randomUUID(), created: Date.now(), points: [point(e.nativeEvent)], text: '' })
+      const pt = point(e.nativeEvent)
+      const newPostIt: StickyPostIt = {
+        id: crypto.randomUUID(),
+        x: Math.max(10, pt.x - 20),
+        y: Math.max(10, pt.y - 15),
+        text: '',
+        colorIdx: 0,
+        minimized: false
+      }
+      setPostIts(prev => [...prev, newPostIt])
+      setTool('read') // Retorna para navegação após criar a nota
       return
     }
 
@@ -524,7 +527,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     checkpoint.current = performance.now()
     const kind = isBarrel || tool === 'erase' ? 'pen' : (tool === 'marker' ? 'marker' : 'pen')
     const initialPt = point(e.nativeEvent)
-    
+
     active.current = {
       pointer: e.pointerId,
       isEraser: isBarrel || tool === 'erase',
@@ -535,12 +538,12 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     sample(e)
   }
 
-  function render(stroke: InkStroke) {
+  function render(stroke: InkStroke, isGhost = false) {
     if (!stroke.points.length) return null
     if (stroke.text !== undefined) {
       const p = stroke.points[0]
       return (
-        <text key={stroke.id} x={p.x} y={p.y} fill={stroke.color} fontSize={Math.max(14, stroke.width * 8)} className="font-sans font-medium">
+        <text key={stroke.id} x={p.x} y={p.y} fill={stroke.color} fontSize={Math.max(14, stroke.width * 8)} className="font-sans font-medium" opacity={isGhost ? 0.35 : 1}>
           {stroke.text.split('\n').map((line, i) => (
             <tspan key={i} x={p.x} dy={i ? '1.25em' : 0}>{line}</tspan>
           ))}
@@ -557,7 +560,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
           filter: tool === 'lasso' && selection.includes(stroke.id) ? 'drop-shadow(0 0 4px #3b82f6)' : undefined,
           mixBlendMode: stroke.kind === 'marker' ? 'multiply' : 'normal'
         }}
-        opacity={stroke.opacity}
+        opacity={isGhost ? 0.35 : stroke.opacity}
         fill={stroke.color}
         stroke={stroke.color}
         strokeLinecap={stroke.kind === 'marker' ? 'square' : 'round'}
@@ -591,11 +594,34 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
     ...(preview && tool !== 'erase' ? [preview] : [])
   ]
 
-  function toggleEditor() {
-    finish()
-    setOpen(prev => !prev)
-    setCompact(false)
-    setTool(open ? 'read' : 'pen')
+  // Acionamento com Detecção de 2º Toque (Double-Tap)
+  function handleToolSelect(selectedTool: Tool) {
+    const now = performance.now()
+    const isDoubleTap = tool === selectedTool || (now - lastToolTapRef.current.time < 500)
+    lastToolTapRef.current = { tool: selectedTool, time: now }
+
+    if (!isDoubleTap && tool !== selectedTool) {
+      setTool(selectedTool)
+      // No primeiro toque em outra ferramenta, apenas seleciona e recolhe o drawer
+      setActiveDrawer(null)
+    } else {
+      // 2º toque (double-tap) ou toque na ferramenta já ativa: abre ou fecha o drawer de opções
+      setTool(selectedTool)
+      setActiveDrawer(prev => (prev === selectedTool ? null : selectedTool))
+    }
+  }
+
+  function toggleCanetaFab() {
+    setOpen(prev => {
+      const next = !prev
+      if (next) {
+        setTool('pen')
+      } else {
+        setTool('read')
+        setActiveDrawer(null)
+      }
+      return next
+    })
   }
 
   return (
@@ -603,7 +629,7 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
       {/* 
         CANVAS DE DESENHO ANCORADO AO CARD:
         Posicionado em absolute inset-0 diretamente no container do card!
-        Isso faz o navegador mover o SVG junto com o texto no mesmo frame da GPU (Zero tremor ao rolar).
+        GPU frame-locked: zero tremor ao rolar a página.
       */}
       <div ref={anchor} className="absolute inset-0 pointer-events-none overflow-visible w-full h-full z-30">
         <svg
@@ -683,448 +709,484 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
           }}
           onClick={e => e.stopPropagation()}
         >
+          {/* Camada Fantasma da Tentativa Anterior (se acionada pelo aluno para rever rascunhos) */}
+          {showPreviousAttempt && previousStrokes.length > 0 && (
+            <g className="ghost-previous-attempt">
+              {previousStrokes.filter(s => s.kind === 'marker').map(s => render(s, true))}
+              {previousStrokes.filter(s => s.kind === 'pen').map(s => render(s, true))}
+            </g>
+          )}
+
+          {/* Camada Ativa da Tentativa Atual */}
           <g>
-            {visible.filter(s => s.kind === 'marker').map(render)}
-            {visible.filter(s => s.kind === 'pen').map(render)}
+            {visible.filter(s => s.kind === 'marker').map(s => render(s, false))}
+            {visible.filter(s => s.kind === 'pen').map(s => render(s, false))}
           </g>
         </svg>
-      </div>
 
-      {/* Pílula discreta de acionamento no topo do card */}
-      <div className="flex justify-end my-1 relative z-40">
-        <button
-          type="button"
-          aria-expanded={open}
-          onClick={toggleEditor}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-semibold text-zinc-700 dark:text-zinc-200 bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700/80 border border-zinc-200 dark:border-zinc-700/60 shadow-xs transition-all active:scale-95 group"
-        >
-          <Pencil className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:rotate-12 transition-transform" />
-          <span>{open ? 'Recolher anotações' : 'Anotar / Caneta'}</span>
-          <span className="text-[10px] text-zinc-400 font-mono px-1 py-0.2 bg-white/70 dark:bg-zinc-900/70 rounded border border-zinc-200 dark:border-zinc-700">P</span>
-        </button>
-      </div>
-
-      {mounted && createPortal(
-        <>
-          {/* Toast de Feedback de Gesto de Resposta */}
-          {gestureFeedback && (
-            <div className="fixed top-5 left-1/2 -translate-x-1/2 z-[60] flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-emerald-600 text-white font-semibold text-xs shadow-2xl shadow-emerald-900/40 border border-emerald-400/40 animate-in fade-in slide-in-from-top-3 duration-200">
-              <CheckCircle2 className="w-4 h-4 text-emerald-100" />
-              <span>{gestureFeedback}</span>
-            </div>
-          )}
-
-          {/* Badge de Telemetria da S Pen em Tempo Real */}
-          {open && spenTelemetry && (
-            <div className="fixed top-3 right-4 z-[55] flex items-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-950/90 border border-zinc-800 text-zinc-300 font-mono text-[11px] shadow-lg backdrop-blur-md">
-              <span className={`w-2 h-2 rounded-full ${spenTelemetry.barrel ? 'bg-amber-400 animate-ping' : 'bg-emerald-400'}`} />
-              <span>{spenTelemetry.type === 'pen' ? '🖊️ S Pen' : '👆 Toque'}</span>
-              <span className="text-zinc-600">|</span>
-              <span className={spenTelemetry.barrel ? 'text-amber-400 font-bold' : 'text-zinc-200'}>{spenTelemetry.tool}</span>
-              <span className="text-zinc-600">|</span>
-              <span className="text-zinc-400">Pressão: {spenTelemetry.pressure}%</span>
-            </div>
-          )}
-
-          {/* Botão flutuante na tela (satisfaz testes de UI e dá acesso rápido) */}
-          {!open && (
-            <button
-              type="button"
-              aria-label="✎ Anotar"
-              onClick={toggleEditor}
-              style={{ bottom: 'calc(1.25rem + env(safe-area-inset-bottom, 0px))', right: 'calc(1.25rem + env(safe-area-inset-right, 0px))' }}
-              className="fixed z-[51] flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-zinc-950/95 dark:bg-zinc-900/95 text-zinc-100 hover:text-white border border-zinc-700/80 shadow-[0_12px_32px_rgba(0,0,0,0.5)] backdrop-blur-xl transition-all hover:scale-105 active:scale-95 text-xs font-semibold group select-none ring-1 ring-white/10"
+        {/* Post-its Médicos Flutuantes Ancorados no Card */}
+        {postIts.map(p => {
+          const colorCfg = NOTE_COLORS[p.colorIdx] || NOTE_COLORS[0]
+          return (
+            <div
+              key={p.id}
+              style={{ left: `${p.x}px`, top: `${p.y}px` }}
+              className="absolute pointer-events-auto z-40 select-text animate-in fade-in zoom-in-95"
             >
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <Pencil className="w-3.5 h-3.5 text-emerald-400 group-hover:rotate-12 transition-transform" />
-              <span>✎ Anotar</span>
-              <kbd className="hidden sm:inline-block ml-1 px-1.5 py-0.5 rounded text-[10px] bg-zinc-800 text-zinc-300 border border-zinc-700 font-mono">P</kbd>
-            </button>
-          )}
-
-          {/* PALETA FLUTUANTE DA CANETA (DESIGN SYSTEM BANCO RESIDÊNCIA) */}
-          {open && (
-            <aside
-              aria-label="Ferramentas de anotação"
-              style={{
-                bottom: 'calc(1rem + env(safe-area-inset-bottom, 0px))',
-                right: 'calc(1rem + env(safe-area-inset-right, 0px))'
-              }}
-              className="fixed z-[51] w-[340px] sm:w-[380px] max-w-[calc(100vw-2rem)] rounded-2xl border border-zinc-800/90 bg-zinc-950/95 dark:bg-zinc-900/95 text-zinc-100 shadow-[0_24px_64px_rgba(0,0,0,0.7)] backdrop-blur-2xl p-3 text-xs select-none ring-1 ring-white/10 animate-in fade-in zoom-in-95 duration-150"
-              onKeyDown={e => e.stopPropagation()}
-            >
-              {/* Cabeçalho da Paleta */}
-              <div className="flex items-center justify-between pb-2.5 mb-2.5 border-b border-zinc-800/80">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="font-bold text-zinc-100 tracking-tight text-xs flex items-center gap-1.5">
-                    Caneta Médica
-                    {choose && (
-                      <span title="Reconhecimento de gestos (X e círculo) ativo">
-                        <Sparkles className="w-3 h-3 text-amber-400" />
-                      </span>
-                    )}
-                  </span>
-                  <span className="text-[10px] text-zinc-400 font-medium ml-1">
-                    {status || 'Pronta'}
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-1">
-                  {flip && (
-                    <button
-                      type="button"
-                      onClick={() => { finish(); flip() }}
-                      className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
-                      title="Virar cartão (Flashcard)"
-                    >
-                      <RotateCcw className="w-3.5 h-3.5" />
-                    </button>
-                  )}
-                  <button
-                    type="button"
-                    onClick={() => history(true)}
-                    disabled={!counts[0]}
-                    className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 disabled:opacity-30 disabled:hover:bg-transparent transition-colors"
-                    title="Desfazer"
-                  >
-                    <Undo2 className="w-3.5 h-3.5" />
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => history(false)}
-                    disabled={!counts[1]}
-                    className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 disabled:opacity-30 disabled:hover:bg-transparent transition-colors"
-                    title="Refazer"
-                  >
-                    <Redo2 className="w-3.5 h-3.5" />
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setCompact(!compact)}
-                    className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors"
-                    title={compact ? 'Expandir ferramentas' : 'Minimizar'}
-                  >
-                    {compact ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
-                  </button>
-                  <button
-                    type="button"
-                    onClick={toggleEditor}
-                    className="p-1.5 rounded-lg text-zinc-400 hover:text-rose-400 hover:bg-zinc-800 transition-colors"
-                    title="Recolher caneta"
-                  >
-                    <X className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-              </div>
-
-              {/* Botão de compatibilidade invisível para testes automatizados */}
-              <button
-                type="button"
-                className="sr-only"
-                onClick={toggleEditor}
-              >
-                Recolher caneta
-              </button>
-
-              {/* Barra de Ferramentas Principal (Bento Pill Grid) */}
-              <div className="grid grid-cols-7 gap-1 p-1 bg-zinc-900/90 dark:bg-zinc-950/70 rounded-xl border border-zinc-800/80 mb-3">
-                {TOOL_DEFS.map(t => {
-                  const Icon = t.icon
-                  const isActive = tool === t.id
-                  return (
-                    <button
-                      type="button"
-                      key={t.id}
-                      aria-pressed={isActive}
-                      onClick={() => { finish(); setTool(t.id) }}
-                      className={`flex flex-col items-center justify-center py-2 px-1 rounded-lg transition-all duration-150 ${
-                        isActive
-                          ? 'bg-zinc-800 text-emerald-400 border border-emerald-500/30 shadow-xs scale-102 font-bold'
-                          : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50 font-medium'
-                      }`}
-                      title={`${t.label}: ${t.hint}`}
-                    >
-                      <Icon className="w-4 h-4 mb-1" />
-                      <span className="text-[9px] leading-none truncate max-w-full">{t.label}</span>
-                    </button>
-                  )
-                })}
-              </div>
-
-              {/* Painel Contextual Expandido */}
-              {!compact && (
-                <div className="space-y-3">
-                  {/* Dica da S Pen */}
-                  <div className="p-2 rounded-lg bg-zinc-900/60 border border-zinc-800/60 text-[10px] text-zinc-400 flex items-center justify-between">
-                    <span className="flex items-center gap-1.5">
-                      <Pencil className="w-3 h-3 text-blue-400" />
-                      Botão lateral da S Pen ativa a borracha ao segurar
+              {p.minimized ? (
+                <button
+                  type="button"
+                  onClick={() => setPostIts(prev => prev.map(item => item.id === p.id ? { ...item, minimized: false } : item))}
+                  className={`px-2 py-1 rounded-lg text-[11px] font-bold shadow-lg flex items-center gap-1.5 border border-white/20 active:scale-95 transition-transform ${colorCfg.badge}`}
+                  title="Expandir nota médica"
+                >
+                  <StickyNote className="w-3 h-3" />
+                  <span>{p.text.slice(0, 16) || 'Nota'}...</span>
+                </button>
+              ) : (
+                <div className={`w-64 sm:w-72 rounded-2xl shadow-2xl p-3 border backdrop-blur-xl ${colorCfg.bg}`}>
+                  <div className="flex items-center justify-between pb-1.5 mb-1.5 border-b border-white/10">
+                    <span className="text-[11px] font-bold flex items-center gap-1">
+                      <StickyNote className="w-3 h-3" /> Nota Médica
                     </span>
-                    <span className="text-emerald-400 font-semibold text-[9px] bg-emerald-500/10 px-1.5 py-0.5 rounded border border-emerald-500/20">Auto</span>
-                  </div>
-
-                  {/* Controles para Caneta ou Marca-texto */}
-                  {(tool === 'pen' || tool === 'marker') && (
-                    <>
-                      {/* Seletor de Cores com Swatches Elegantes */}
-                      <div className="space-y-1.5">
-                        <div className="flex items-center justify-between text-[11px] text-zinc-400">
-                          <span>Cor do traço</span>
-                          <span className="font-mono text-[10px] text-zinc-300">
-                            {style.color === 'currentColor' ? 'Cor do tema' : style.color}
-                          </span>
-                        </div>
-                        <div className="flex items-center gap-1.5 flex-wrap">
-                          {COLOR_PRESETS.map(preset => {
-                            const isSelected = style.color === preset.value
-                            return (
-                              <button
-                                type="button"
-                                key={preset.name}
-                                onClick={() => update({ color: preset.value })}
-                                className={`w-6 h-6 rounded-full flex items-center justify-center transition-all ${
-                                  preset.bg || 'bg-zinc-300 dark:bg-zinc-700'
-                                } ${preset.border || ''} ${
-                                  isSelected ? 'ring-2 ring-emerald-400 ring-offset-2 ring-offset-zinc-900 scale-110' : 'hover:scale-105 opacity-85 hover:opacity-100'
-                                }`}
-                                title={preset.name}
-                              >
-                                {isSelected && <Check className="w-3 h-3 text-white drop-shadow-xs" />}
-                              </button>
-                            )
-                          })}
-
-                          {/* Seletor de Cor Livre Customizado */}
-                          <label className="relative w-6 h-6 rounded-full bg-gradient-to-tr from-rose-500 via-amber-400 to-blue-500 cursor-pointer flex items-center justify-center shadow-xs hover:scale-105 transition-transform" title="Cor personalizada">
-                            <input
-                              type="color"
-                              value={style.color === 'currentColor' ? '#222222' : style.color}
-                              onChange={e => update({ color: e.target.value })}
-                              className="sr-only"
-                            />
-                            <div className="w-2 h-2 rounded-full bg-white/90" />
-                          </label>
-                        </div>
-                      </div>
-
-                      {/* Espessura com Chips Rápidos + Slider Fino */}
-                      <div className="space-y-1.5 pt-1">
-                        <div className="flex items-center justify-between text-[11px] text-zinc-400">
-                          <span>Espessura</span>
-                          <span className="font-mono text-[10px] text-emerald-400">{style.width} px</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          {(kind === 'pen' ? [1, 2, 4, 8] : [12, 18, 24, 32]).map(w => (
-                            <button
-                              type="button"
-                              key={w}
-                              onClick={() => update({ width: w })}
-                              className={`flex-1 py-1 rounded-md text-[10px] font-semibold transition-colors ${
-                                style.width === w
-                                  ? 'bg-zinc-700 text-white border border-zinc-600'
-                                  : 'bg-zinc-900/80 text-zinc-400 hover:text-zinc-200 border border-zinc-800'
-                              }`}
-                            >
-                              {w}px
-                            </button>
-                          ))}
-                        </div>
-                        <input
-                          type="range"
-                          min={kind === 'pen' ? 0.5 : 8}
-                          max={kind === 'pen' ? 10 : 40}
-                          step={kind === 'pen' ? 0.5 : 2}
-                          value={style.width}
-                          onChange={e => update({ width: Number(e.target.value) })}
-                          className="w-full h-1.5 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-emerald-500"
-                        />
-                      </div>
-
-                      {/* Configurações Avançadas e Toggles Médicos */}
-                      <div className="space-y-2 pt-2 border-t border-zinc-800/70 text-[11px]">
-                        {kind === 'marker' && (
-                          <label className="flex items-center justify-between cursor-pointer group">
-                            <span className="text-zinc-300 group-hover:text-white flex items-center gap-1.5">
-                              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                              Alinhar à linha do texto (Régua)
-                            </span>
-                            <input
-                              type="checkbox"
-                              checked={straightMarker}
-                              onChange={e => setStraightMarker(e.target.checked)}
-                              className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-0 focus:ring-offset-0 cursor-pointer"
-                            />
-                          </label>
-                        )}
-
-                        {kind === 'pen' && (
-                          <label className="flex items-center justify-between cursor-pointer group">
-                            <span className="text-zinc-300 group-hover:text-white">Sensível à pressão (Caneta/Stylus)</span>
-                            <input
-                              type="checkbox"
-                              checked={style.pressure}
-                              onChange={e => update({ pressure: e.target.checked })}
-                              className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-0 focus:ring-offset-0 cursor-pointer"
-                            />
-                          </label>
-                        )}
-
-                        {choose && (
-                          <label className="flex items-center justify-between cursor-pointer group" title="Desenhar um X ou circular uma alternativa seleciona ela automaticamente">
-                            <span className="text-zinc-300 group-hover:text-white flex items-center gap-1.5">
-                              <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
-                              Marcar com X ou Círculo
-                            </span>
-                            <input
-                              type="checkbox"
-                              checked={autoGestureEnabled}
-                              onChange={e => setAutoGestureEnabled(e.target.checked)}
-                              className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-0 focus:ring-offset-0 cursor-pointer"
-                            />
-                          </label>
-                        )}
-
-                        <label className="flex items-center justify-between cursor-pointer group" title="A caneta apenas desenha e nunca rola a tela. O dedo rola a página ou clica em alternativas.">
-                          <div className="flex flex-col pr-2">
-                            <span className="text-zinc-300 group-hover:text-white font-medium">Rejeição de palma / Só Caneta</span>
-                            <span className="text-[10px] text-zinc-500">Caneta desenha sem rolar • Dedo rola</span>
-                          </div>
-                          <input
-                            type="checkbox"
-                            checked={onlyPen}
-                            onChange={e => setOnlyPen(e.target.checked)}
-                            className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-0 focus:ring-offset-0 cursor-pointer"
-                          />
-                        </label>
-                      </div>
-                    </>
-                  )}
-
-                  {/* Controles da Borracha */}
-                  {tool === 'erase' && (
-                    <div className="space-y-2.5">
-                      <div className="flex items-center justify-between text-[11px] text-zinc-400">
-                        <span>Raio da borracha</span>
-                        <span className="font-mono text-[10px] text-emerald-400">{radius} px</span>
-                      </div>
-                      <input
-                        type="range"
-                        min={4}
-                        max={36}
-                        value={radius}
-                        onChange={e => setRadius(Number(e.target.value))}
-                        className="w-full h-1.5 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-emerald-500"
-                      />
-                      <div className="space-y-1.5 pt-1 text-[11px]">
-                        <label className="flex items-center justify-between cursor-pointer text-zinc-300">
-                          <span>Apagar por área (fragmentar)</span>
-                          <input
-                            type="checkbox"
-                            checked={cut}
-                            onChange={e => setCut(e.target.checked)}
-                            className="rounded border-zinc-700 bg-zinc-800 text-emerald-500"
-                          />
-                        </label>
-                        <label className="flex items-center justify-between cursor-pointer text-zinc-300">
-                          <span>Apagar apenas marca-texto</span>
-                          <input
-                            type="checkbox"
-                            checked={onlyMarker}
-                            onChange={e => setOnlyMarker(e.target.checked)}
-                            className="rounded border-zinc-700 bg-zinc-800 text-emerald-500"
-                          />
-                        </label>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Controles do Laço */}
-                  {tool === 'lasso' && (
-                    <div className="space-y-2 text-[11px]">
-                      <p className="text-zinc-400 text-[10px]">Circule qualquer desenho ou nota para mover, duplicar ou transformar.</p>
-                      {selection.length > 0 && (
-                        <div className="grid grid-cols-4 gap-1 pt-1">
-                          <button type="button" onClick={() => transformSelection(1, -15, 0)} className="py-1 px-2 rounded bg-zinc-800 hover:bg-zinc-700 font-semibold">←</button>
-                          <button type="button" onClick={() => transformSelection(1, 15, 0)} className="py-1 px-2 rounded bg-zinc-800 hover:bg-zinc-700 font-semibold">→</button>
-                          <button type="button" onClick={() => transformSelection(1, 0, -15)} className="py-1 px-2 rounded bg-zinc-800 hover:bg-zinc-700 font-semibold">↑</button>
-                          <button type="button" onClick={() => transformSelection(1, 0, 15)} className="py-1 px-2 rounded bg-zinc-800 hover:bg-zinc-700 font-semibold">↓</button>
-                          <button type="button" onClick={() => transformSelection(1.2, 0, 0)} className="py-1 px-2 col-span-2 rounded bg-zinc-800 hover:bg-zinc-700 font-semibold">Ampliar</button>
-                          <button type="button" onClick={() => transformSelection(1 / 1.2, 0, 0)} className="py-1 px-2 col-span-2 rounded bg-zinc-800 hover:bg-zinc-700 font-semibold">Reduzir</button>
-                          <button type="button" onClick={() => transformSelection(1, 15, 15, true)} className="py-1 px-2 col-span-2 rounded bg-blue-900/60 hover:bg-blue-800 text-blue-200 font-semibold">Duplicar</button>
-                          <button type="button" onClick={() => commit({ before: strokes.filter(s => selection.includes(s.id)), after: [] })} className="py-1 px-2 col-span-2 rounded bg-rose-950/60 hover:bg-rose-900 text-rose-200 font-semibold">Excluir</button>
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {/* Modal de Nota Digitada */}
-                  {note && (
-                    <div className="space-y-2 pt-2 border-t border-zinc-800">
-                      <label className="block text-[11px] text-zinc-300 font-semibold">
-                        Nota Pessoal Privada
-                        <textarea
-                          autoFocus
-                          value={note.text}
-                          onChange={e => setNote({ ...note, text: e.target.value })}
-                          rows={3}
-                          placeholder="Digite um lembrete ou mnemônico médico..."
-                          className="w-full mt-1 p-2 rounded-lg bg-zinc-900 border border-zinc-700 text-zinc-100 placeholder-zinc-500 text-xs focus:ring-1 focus:ring-emerald-500 focus:outline-none"
-                        />
-                      </label>
-                      <div className="flex gap-2">
-                        <button
-                          type="button"
-                          onClick={() => {
-                            if (note.text?.trim()) {
-                              commit({ before: strokes.filter(s => s.id === note.id), after: [note] })
-                            }
-                            setNote(null)
-                          }}
-                          className="flex-1 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-colors"
-                        >
-                          Salvar nota
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setNote(null)}
-                          className="py-1.5 px-3 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs transition-colors"
-                        >
-                          Cancelar
-                        </button>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Rodapé da Paleta com Limpar Tela */}
-                  <div className="pt-2 border-t border-zinc-800/70 flex items-center justify-between">
-                    <button
-                      type="button"
-                      disabled={!strokes.length}
-                      onClick={() => {
-                        if (window.confirm('Limpar todas as anotações feitas nesta questão/tela?')) {
-                          commit({ before: strokes, after: [] })
-                        }
-                      }}
-                      className="inline-flex items-center gap-1.5 text-zinc-400 hover:text-rose-400 disabled:opacity-30 disabled:hover:text-zinc-400 transition-colors text-[11px] font-medium"
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                      <span>Limpar anotações</span>
-                    </button>
-
-                    {status === 'Ainda não salvo' && (
+                    <div className="flex items-center gap-1">
                       <button
                         type="button"
-                        onClick={() => void flush(doc).then(() => setStatus('Salvo neste dispositivo'), () => setStatus('Ainda não salvo'))}
-                        className="text-[10px] text-amber-400 underline font-semibold"
+                        onClick={() => setPostIts(prev => prev.map(item => item.id === p.id ? { ...item, colorIdx: (item.colorIdx + 1) % NOTE_COLORS.length } : item))}
+                        className="p-1 hover:bg-white/10 rounded text-[10px]"
+                        title="Mudar cor do post-it"
                       >
-                        Tentar salvar
+                        🎨
                       </button>
+                      <button
+                        type="button"
+                        onClick={() => setPostIts(prev => prev.map(item => item.id === p.id ? { ...item, minimized: true } : item))}
+                        className="p-1 hover:bg-white/10 rounded"
+                        title="Minimizar para badge"
+                      >
+                        <Minimize2 className="w-3 h-3" />
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setPostIts(prev => prev.filter(item => item.id !== p.id))}
+                        className="p-1 hover:bg-rose-500/20 text-rose-300 rounded"
+                        title="Excluir nota"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    </div>
+                  </div>
+                  <textarea
+                    rows={3}
+                    value={p.text}
+                    onChange={e => {
+                      const val = e.target.value
+                      setPostIts(prev => prev.map(item => item.id === p.id ? { ...item, text: val } : item))
+                    }}
+                    placeholder="Escreva ou digite observações clínicas..."
+                    className="w-full bg-black/20 rounded-xl p-2 text-xs placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-white/30 resize-none font-sans"
+                  />
+                </div>
+              )}
+            </div>
+          )
+        })}
+      </div>
+
+      {/* FEEDBACK DE GESTO DETECTADO (CIRCULAR / MARCAR COM X) */}
+      {gestureFeedback && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-[60] bg-emerald-950/95 border border-emerald-500/50 text-emerald-200 px-4 py-2 rounded-2xl shadow-2xl backdrop-blur-xl flex items-center gap-2 text-xs font-bold animate-in fade-in slide-in-from-top-4 duration-200">
+          <Sparkles className="w-4 h-4 text-emerald-400" />
+          <span>{gestureFeedback}</span>
+        </div>
+      )}
+
+      {/* PORTAL DO BOTÃO FAB (CANTO INFERIOR) E BARRA SLIM LATERAL ESTILO SAMSUNG NOTES */}
+      {mounted && createPortal(
+        <>
+          {/* 1. BOTÃO FAB CIRCULAR NO CANTO INFERIOR (LIGA / DESLIGA) */}
+          <button
+            type="button"
+            onClick={toggleCanetaFab}
+            aria-label={open ? 'Desativar Caneta Médica' : 'Ativar Caneta Médica'}
+            title={open ? 'Desativar barra da caneta' : 'Ativar barra da caneta médica (S Pen)'}
+            className={`fixed bottom-5 right-5 z-[55] w-12 h-12 rounded-full shadow-[0_12px_36px_rgba(0,0,0,0.6)] flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer ${
+              open
+                ? 'bg-emerald-600 hover:bg-emerald-500 border border-emerald-400 text-white ring-4 ring-emerald-500/25 scale-105'
+                : 'bg-zinc-900/90 hover:bg-zinc-800 border border-zinc-700/80 text-zinc-300 hover:text-white backdrop-blur-md hover:scale-105'
+            }`}
+          >
+            <Pencil className={`w-5 h-5 transition-transform duration-200 ${open ? 'rotate-12 scale-110 text-white' : 'text-zinc-300'}`} />
+          </button>
+
+          {/* 2. BARRA SLIM FLUTUANTE ESTILO SAMSUNG NOTES (IMAGEM 1) */}
+          {open && (
+            <aside
+              role="toolbar"
+              aria-label="Barra de Ferramentas de Escrita"
+              style={{
+                top: dockPosition === 'top' ? 'calc(1rem + env(safe-area-inset-top, 0px))' : '50%',
+                transform: dockPosition === 'top' ? 'translateX(-50%)' : 'translateY(-50%)',
+                left: dockPosition === 'left' ? 'calc(1rem + env(safe-area-inset-left, 0px))' : dockPosition === 'top' ? '50%' : undefined,
+                right: dockPosition === 'right' ? 'calc(1rem + env(safe-area-inset-right, 0px))' : undefined
+              }}
+              className={`fixed z-[52] select-none rounded-2xl border border-zinc-800/90 bg-zinc-950/95 dark:bg-zinc-900/95 text-zinc-100 shadow-[0_24px_64px_rgba(0,0,0,0.7)] backdrop-blur-2xl ring-1 ring-white/10 animate-in fade-in duration-150 p-1.5 flex ${
+                dockPosition === 'top' ? 'flex-row items-center gap-1' : 'flex-col items-center gap-1'
+              }`}
+            >
+              {/* Alça de reposicionamento (Alternar Lado: Direita / Esquerda / Topo) */}
+              <button
+                type="button"
+                onClick={() => {
+                  setDockPosition(prev => {
+                    const next = prev === 'right' ? 'left' : prev === 'left' ? 'top' : 'right'
+                    try { localStorage.setItem(preference, JSON.stringify({ styles, dockPosition: next })) } catch {}
+                    return next
+                  })
+                }}
+                className="p-1 rounded-lg text-zinc-500 hover:text-zinc-200 hover:bg-zinc-800/60 transition-colors"
+                title={`Posição atual: ${dockPosition}. Clique para mudar de lado`}
+              >
+                <Move className="w-3.5 h-3.5" />
+              </button>
+
+              <div className={`border-zinc-800/80 ${dockPosition === 'top' ? 'border-r h-6 mx-0.5' : 'border-b w-6 my-0.5'}`} />
+
+              {/* Botões das Ferramentas Principais */}
+              {TOOL_DEFS.map(def => {
+                const Icon = def.icon
+                const isActive = tool === def.id
+                const isPenOrMarker = def.id === 'pen' || def.id === 'marker'
+                const currentColor = def.id === 'pen' ? styles.pen.color : styles.marker.color
+
+                return (
+                  <button
+                    key={def.id}
+                    type="button"
+                    onClick={() => handleToolSelect(def.id)}
+                    title={`${def.label}: ${def.hint} (Toque 2x para opções)`}
+                    className={`w-9 h-9 rounded-xl flex flex-col items-center justify-center transition-all relative ${
+                      isActive
+                        ? 'bg-zinc-800 text-white ring-1 ring-emerald-500/80 shadow-xs'
+                        : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900/80'
+                    }`}
+                  >
+                    <Icon className="w-4 h-4" />
+                    {isPenOrMarker && (
+                      <span
+                        className="w-1.5 h-1.5 rounded-full absolute bottom-1 border border-black/40"
+                        style={{ backgroundColor: currentColor === 'currentColor' ? '#10b981' : currentColor }}
+                      />
                     )}
+                  </button>
+                )
+              })}
+
+              <div className={`border-zinc-800/80 ${dockPosition === 'top' ? 'border-r h-6 mx-0.5' : 'border-b w-6 my-0.5'}`} />
+
+              {/* Botão de Histórico / Rever Rascunhos da Tentativa Anterior */}
+              {attemptNumber > 1 && (
+                <button
+                  type="button"
+                  onClick={() => setShowPreviousAttempt(prev => !prev)}
+                  title={showPreviousAttempt ? 'Ocultar rascunho anterior' : 'Rever rascunhos da tentativa anterior'}
+                  className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
+                    showPreviousAttempt
+                      ? 'bg-amber-950/60 text-amber-300 ring-1 ring-amber-500/60'
+                      : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'
+                  }`}
+                >
+                  {showPreviousAttempt ? <EyeOff className="w-4 h-4 text-amber-400" /> : <Eye className="w-4 h-4 text-amber-400" />}
+                </button>
+              )}
+
+              {/* Desfazer e Refazer */}
+              <button
+                type="button"
+                disabled={!counts[0]}
+                onClick={handleUndo}
+                className="w-9 h-9 rounded-xl flex items-center justify-center text-zinc-400 hover:text-white hover:bg-zinc-900 disabled:opacity-25 transition-all"
+                title="Desfazer traço (Ctrl+Z)"
+              >
+                <Undo2 className="w-4 h-4" />
+              </button>
+              <button
+                type="button"
+                disabled={!counts[1]}
+                onClick={handleRedo}
+                className="w-9 h-9 rounded-xl flex items-center justify-center text-zinc-400 hover:text-white hover:bg-zinc-900 disabled:opacity-25 transition-all"
+                title="Refazer traço (Ctrl+Y)"
+              >
+                <Redo2 className="w-4 h-4" />
+              </button>
+
+              {/* Botão de Limpar Tudo */}
+              <button
+                type="button"
+                disabled={!strokes.length}
+                onClick={() => {
+                  if (window.confirm('Limpar todas as anotações desta questão?')) {
+                    commit({ before: strokes, after: [] })
+                  }
+                }}
+                className="w-9 h-9 rounded-xl flex items-center justify-center text-zinc-400 hover:text-rose-400 hover:bg-rose-950/30 disabled:opacity-25 transition-all"
+                title="Limpar todos os desenhos"
+              >
+                <Trash2 className="w-4 h-4" />
+              </button>
+            </aside>
+          )}
+
+          {/* 3. DRAWER / FLYOUT DE PROPRIEDADES NO 2º TOQUE (DOUBLE-TAP) */}
+          {open && activeDrawer && (
+            <div
+              style={{
+                top: dockPosition === 'top' ? 'calc(4.5rem + env(safe-area-inset-top, 0px))' : '50%',
+                transform: dockPosition === 'top' ? 'translateX(-50%)' : 'translateY(-50%)',
+                right: dockPosition === 'right' ? 'calc(4.2rem + env(safe-area-inset-right, 0px))' : undefined,
+                left: dockPosition === 'left' ? 'calc(4.2rem + env(safe-area-inset-left, 0px))' : dockPosition === 'top' ? '50%' : undefined
+              }}
+              className="fixed z-[53] w-72 sm:w-80 rounded-2xl border border-zinc-800 bg-zinc-950/95 dark:bg-zinc-900/95 text-zinc-100 shadow-[0_24px_64px_rgba(0,0,0,0.75)] backdrop-blur-2xl p-3.5 text-xs select-none ring-1 ring-white/10 animate-in fade-in zoom-in-95 duration-150"
+            >
+              {/* Cabeçalho do Drawer */}
+              <div className="flex items-center justify-between pb-2 mb-2 border-b border-zinc-800/80">
+                <span className="font-bold text-zinc-100 flex items-center gap-1.5 capitalize">
+                  {activeDrawer === 'pen' && <Pencil className="w-3.5 h-3.5 text-emerald-400" />}
+                  {activeDrawer === 'marker' && <Highlighter className="w-3.5 h-3.5 text-amber-400" />}
+                  {activeDrawer === 'erase' && <Eraser className="w-3.5 h-3.5 text-rose-400" />}
+                  {activeDrawer === 'lasso' && <Scissors className="w-3.5 h-3.5 text-blue-400" />}
+                  {activeDrawer === 'note' && <StickyNote className="w-3.5 h-3.5 text-yellow-400" />}
+                  Opções de {activeDrawer === 'pen' ? 'Caneta' : activeDrawer === 'marker' ? 'Marca-texto' : activeDrawer === 'erase' ? 'Borracha' : activeDrawer}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setActiveDrawer(null)}
+                  className="p-1 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-white"
+                  title="Fechar opções"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+
+              {/* OPÇÕES DA CANETA */}
+              {activeDrawer === 'pen' && (
+                <div className="space-y-3">
+                  {/* Cores */}
+                  <div>
+                    <span className="text-[11px] text-zinc-400 block mb-1.5">Cor do traço</span>
+                    <div className="flex items-center gap-2">
+                      {COLOR_PRESETS.map(preset => {
+                        const isSelected = styles.pen.color === preset.value
+                        return (
+                          <button
+                            key={preset.value}
+                            type="button"
+                            onClick={() => update({ color: preset.value })}
+                            className={`w-6 h-6 rounded-full transition-all flex items-center justify-center ${
+                              preset.border ?? ''
+                            } ${preset.bg ?? 'bg-gradient-to-tr from-emerald-500 to-teal-400'} ${
+                              isSelected ? 'ring-2 ring-white ring-offset-2 ring-offset-zinc-950 scale-110' : 'hover:scale-105 opacity-85 hover:opacity-100'
+                            }`}
+                            title={preset.name}
+                          >
+                            {isSelected && <Check className="w-3 h-3 text-white" />}
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Espessura */}
+                  <div>
+                    <div className="flex items-center justify-between text-[11px] text-zinc-400 mb-1">
+                      <span>Espessura</span>
+                      <span className="font-mono text-emerald-400">{styles.pen.width} px</span>
+                    </div>
+                    <div className="grid grid-cols-4 gap-1 mb-1.5">
+                      {[1, 2, 4, 8].map(size => (
+                        <button
+                          key={size}
+                          type="button"
+                          onClick={() => update({ width: size })}
+                          className={`py-1 rounded-lg font-semibold text-[11px] transition-all ${
+                            styles.pen.width === size
+                              ? 'bg-zinc-800 text-white ring-1 ring-emerald-500'
+                              : 'bg-zinc-900/60 text-zinc-400 hover:text-zinc-200'
+                          }`}
+                        >
+                          {size}px
+                        </button>
+                      ))}
+                    </div>
+                    <input
+                      type="range"
+                      min={1}
+                      max={12}
+                      value={styles.pen.width}
+                      onChange={e => update({ width: Number(e.target.value) })}
+                      className="w-full h-1.5 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-emerald-500"
+                    />
+                  </div>
+
+                  {/* Toggles */}
+                  <div className="space-y-2 pt-1 border-t border-zinc-800/80">
+                    <label className="flex items-center justify-between cursor-pointer">
+                      <span className="text-zinc-300">Sensível à pressão (S Pen)</span>
+                      <input
+                        type="checkbox"
+                        checked={styles.pen.pressure}
+                        onChange={e => update({ pressure: e.target.checked })}
+                        className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-0 cursor-pointer"
+                      />
+                    </label>
+
+                    {choose && (
+                      <label className="flex items-center justify-between cursor-pointer" title="Circular ou fazer um X sobre a alternativa seleciona ela">
+                        <span className="text-zinc-300 flex items-center gap-1.5">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" />
+                          Gabaritar com X ou Círculo
+                        </span>
+                        <input
+                          type="checkbox"
+                          checked={autoGestureEnabled}
+                          onChange={e => setAutoGestureEnabled(e.target.checked)}
+                          className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-0 cursor-pointer"
+                        />
+                      </label>
+                    )}
+
+                    <label className="flex items-center justify-between cursor-pointer" title="Caneta desenha fixo; arrastar o dedo na tela rola a página">
+                      <div className="flex flex-col pr-1">
+                        <span className="text-zinc-300 font-medium">Rejeição de palma / Só Caneta</span>
+                        <span className="text-[10px] text-zinc-500">Caneta desenha sem rolar • Dedo rola</span>
+                      </div>
+                      <input
+                        type="checkbox"
+                        checked={onlyPen}
+                        onChange={e => setOnlyPen(e.target.checked)}
+                        className="rounded border-zinc-700 bg-zinc-800 text-emerald-500 focus:ring-0 cursor-pointer"
+                      />
+                    </label>
                   </div>
                 </div>
               )}
-            </aside>
+
+              {/* OPÇÕES DO MARCA-TEXTO */}
+              {activeDrawer === 'marker' && (
+                <div className="space-y-3">
+                  <div>
+                    <span className="text-[11px] text-zinc-400 block mb-1.5">Cores de grifo médico</span>
+                    <div className="flex items-center gap-2">
+                      {MARKER_COLORS.map(m => {
+                        const isSelected = styles.marker.color === m.value
+                        return (
+                          <button
+                            key={m.value}
+                            type="button"
+                            onClick={() => persistStyle({ ...styles, marker: { ...styles.marker, color: m.value } })}
+                            className={`w-6 h-6 rounded-full transition-all flex items-center justify-center ${
+                              isSelected ? 'ring-2 ring-white ring-offset-2 ring-offset-zinc-950 scale-110' : 'hover:scale-105 opacity-80'
+                            }`}
+                            style={{ backgroundColor: m.value }}
+                            title={m.name}
+                          >
+                            {isSelected && <Check className="w-3 h-3 text-black" />}
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="flex items-center justify-between text-[11px] text-zinc-400 mb-1">
+                      <span>Altura do marca-texto</span>
+                      <span className="font-mono text-amber-400">{styles.marker.width} px</span>
+                    </div>
+                    <input
+                      type="range"
+                      min={12}
+                      max={36}
+                      value={styles.marker.width}
+                      onChange={e => persistStyle({ ...styles, marker: { ...styles.marker, width: Number(e.target.value) } })}
+                      className="w-full h-1.5 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-amber-500"
+                    />
+                  </div>
+
+                  <div className="pt-1 border-t border-zinc-800/80">
+                    <label className="flex items-center justify-between cursor-pointer" title="Alinha o marca-texto perfeitamente na linha horizontal do texto">
+                      <div className="flex flex-col pr-1">
+                        <span className="text-zinc-300 font-medium">Régua inteligente retilínea</span>
+                        <span className="text-[10px] text-zinc-500">Alinha o grifo na linha da leitura</span>
+                      </div>
+                      <input
+                        type="checkbox"
+                        checked={straightMarker}
+                        onChange={e => setStraightMarker(e.target.checked)}
+                        className="rounded border-zinc-700 bg-zinc-800 text-amber-500 focus:ring-0 cursor-pointer"
+                      />
+                    </label>
+                  </div>
+                </div>
+              )}
+
+              {/* OPÇÕES DA BORRACHA */}
+              {activeDrawer === 'erase' && (
+                <div className="space-y-3">
+                  <div className="p-2 rounded-xl bg-zinc-900/80 border border-zinc-800 text-[11px] text-zinc-300 flex items-center gap-2">
+                    <Pencil className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                    <span>Dica: Segurar o <b>botão lateral da S Pen</b> aciona a borracha instantaneamente.</span>
+                  </div>
+
+                  <div>
+                    <div className="flex items-center justify-between text-[11px] text-zinc-400 mb-1">
+                      <span>Raio da borracha</span>
+                      <span className="font-mono text-rose-400">{radius} px</span>
+                    </div>
+                    <input
+                      type="range"
+                      min={6}
+                      max={40}
+                      value={radius}
+                      onChange={e => setRadius(Number(e.target.value))}
+                      className="w-full h-1.5 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-rose-500"
+                    />
+                  </div>
+
+                  <div className="space-y-2 pt-1 border-t border-zinc-800/80">
+                    <label className="flex items-center justify-between cursor-pointer text-zinc-300">
+                      <span>Apagar apenas marca-texto</span>
+                      <input
+                        type="checkbox"
+                        checked={onlyMarker}
+                        onChange={e => setOnlyMarker(e.target.checked)}
+                        className="rounded border-zinc-700 bg-zinc-800 text-rose-500 focus:ring-0 cursor-pointer"
+                      />
+                    </label>
+                    <label className="flex items-center justify-between cursor-pointer text-zinc-300">
+                      <span>Cortar traço (fragmentar)</span>
+                      <input
+                        type="checkbox"
+                        checked={cut}
+                        onChange={e => setCut(e.target.checked)}
+                        className="rounded border-zinc-700 bg-zinc-800 text-rose-500 focus:ring-0 cursor-pointer"
+                      />
+                    </label>
+                  </div>
+                </div>
+              )}
+
+              {/* OPÇÕES DE NOTAS */}
+              {activeDrawer === 'note' && (
+                <div className="space-y-2.5">
+                  <p className="text-zinc-400 text-[11px]">
+                    Toque em qualquer ponto da questão para colar um <b>Post-it Médico</b>.
+                  </p>
+                  <p className="text-zinc-500 text-[10px]">
+                    Você pode digitar pelo teclado ou minimizar para um alfinete ao lado do texto.
+                  </p>
+                </div>
+              )}
+            </div>
           )}
         </>,
         document.body
@@ -1133,9 +1195,29 @@ function Editor({ doc, owner, flip, choose }: { doc: string; owner: string } & A
   )
 }
 
-export function StudyInkLayer({ content, flip, choose }: { content: string } & Actions) {
+export function StudyInkLayer({
+  content,
+  flip,
+  choose,
+  attemptNumber = 1
+}: {
+  content: string
+  attemptNumber?: number
+} & Actions) {
   const { user, isLoading } = useAuth()
   const owner = user?.id ?? 'guest'
-  const doc = JSON.stringify([owner, content])
-  return isLoading ? null : <Editor key={doc} doc={doc} owner={owner} flip={flip} choose={choose} />
+  const baseDoc = JSON.stringify([owner, content])
+  const doc = `${baseDoc}:att-${attemptNumber}`
+
+  return isLoading ? null : (
+    <Editor
+      key={doc}
+      doc={doc}
+      baseDoc={baseDoc}
+      owner={owner}
+      flip={flip}
+      choose={choose}
+      attemptNumber={attemptNumber}
+    />
+  )
 }

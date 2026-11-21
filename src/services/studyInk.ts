@@ -30,25 +30,91 @@ function database() {
   return connection
 }
 
-export async function readInk(document: string): Promise<InkStroke[]> {
+const syncTimers = new Map<string, ReturnType<typeof setTimeout>>()
+
+export async function readInk(document: string, attemptNumber = 1): Promise<InkStroke[]> {
+  const docKey = `${document}:att-${attemptNumber}`
   const db = await database()
-  return new Promise((resolve, reject) => {
-    const request = db.transaction('strokes').objectStore('strokes').index('document').getAll(document)
+  
+  // 1. Leitura ultra-rápida do IndexedDB local (0ms de latência)
+  const localStrokes: InkStroke[] = await new Promise((resolve, reject) => {
+    const request = db.transaction('strokes').objectStore('strokes').index('document').getAll(docKey)
     request.onsuccess = () => resolve(request.result.sort((a: InkStroke, b: InkStroke) => a.created - b.created))
     request.onerror = () => reject(request.error)
   })
+
+  if (localStrokes.length > 0) {
+    return localStrokes
+  }
+
+  // 2. Se local estiver vazio e no browser, busca na nuvem (Supabase) para novos dispositivos
+  if (typeof window !== 'undefined' && typeof fetch === 'function') {
+    try {
+      const res = await fetch(`/api/student/ink?document_id=${encodeURIComponent(document)}&attempt_number=${attemptNumber}`)
+      if (res.ok) {
+        const data = await res.json()
+        if (data.success && Array.isArray(data.strokes) && data.strokes.length > 0) {
+          await saveInk(document, { before: [], after: data.strokes }, attemptNumber, false)
+          return data.strokes.sort((a: InkStroke, b: InkStroke) => a.created - b.created)
+        }
+      }
+    } catch {
+      // Falha de rede ou offline: preserva estado local
+    }
+  }
+
+  return []
 }
 
-export async function saveInk(document: string, change: InkChange) {
+export async function saveInk(
+  document: string,
+  change: InkChange,
+  attemptNumber = 1,
+  shouldSyncToCloud = true
+) {
+  const docKey = `${document}:att-${attemptNumber}`
   const db = await database()
+
+  // 1. Grava no IndexedDB imediatamente com máxima prioridade (para garantir 120 FPS na S Pen)
   await new Promise<void>((resolve, reject) => {
     const tx = db.transaction('strokes', 'readwrite')
     const store = tx.objectStore('strokes')
-    for (const stroke of change.before) store.delete([document, stroke.id])
-    for (const stroke of change.after) store.put({ ...stroke, document })
+    for (const stroke of change.before) store.delete([docKey, stroke.id])
+    for (const stroke of change.after) store.put({ ...stroke, document: docKey })
     tx.oncomplete = () => resolve()
     tx.onabort = () => reject(tx.error)
   })
+
+  // 2. Sincronização em nuvem em segundo plano com debounce
+  if (shouldSyncToCloud && typeof window !== 'undefined' && typeof fetch === 'function') {
+    const existing = syncTimers.get(docKey)
+    if (existing) clearTimeout(existing)
+
+    const timer = setTimeout(async () => {
+      syncTimers.delete(docKey)
+      try {
+        const allStrokes: InkStroke[] = await new Promise((resolve) => {
+          const req = db.transaction('strokes').objectStore('strokes').index('document').getAll(docKey)
+          req.onsuccess = () => resolve(req.result || [])
+          req.onerror = () => resolve([])
+        })
+
+        await fetch('/api/student/ink', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            document_id: document,
+            attempt_number: attemptNumber,
+            strokes: allStrokes
+          })
+        })
+      } catch {
+        // Tolerância a falhas: IndexedDB retém tudo localmente
+      }
+    }, 1200)
+
+    syncTimers.set(docKey, timer)
+  }
 }
 
 export function applyInk(strokes: InkStroke[], change: InkChange) {
