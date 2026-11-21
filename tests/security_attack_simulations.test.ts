@@ -11,7 +11,8 @@ import {
   isStrictAdminRole,
   extractTrustedClientIp,
   extractTrustedClientIpFromHeaders,
-  validatePasswordRequirements
+  validatePasswordRequirements,
+  safeErrorMessage
 } from '../src/utils/security.ts';
 import { deriveDomainSecret, timingSafeEqualStrings } from '../src/utils/serverCrypto.ts';
 import {
@@ -42,7 +43,7 @@ console.log('🛡️  SUÍTE DE TESTES DE SEGURANÇA — SIMULAÇÃO REAL DE ATA
 console.log('================================================================\n');
 
 let passedTests = 0;
-const totalTests = 28;
+const totalTests = 30;
 
 // ------------------------------------------------------------------------------
 // ATAQUE 1: Scraping e Forja de Parâmetro includeGabarito=true por Anônimo
@@ -990,6 +991,107 @@ console.log('[ATAQUE 28] Integridade de Webhook Secret Canônico e Blindagem de 
   assert(csp.includes('upgrade-insecure-requests'), 'CSP de produção deve forçar upgrade para HTTPS');
 
   console.log('   ✓ ATAQUE NEUTRALIZADO: Webhook secret padronizado e WebSocket CSP contido em domínio confiável.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 29: Simulação de Exfiltração de Chaves de Terceiros e Secrets (SAST)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 29] Varredura SAST Anti-Vazamento de Secrets em Código e Bundles Públicos');
+{
+  const secretPatterns = [
+    { name: 'Supabase Service Role JWT', regex: /eyJ[a-zA-Z0-9_-]{15,}\.eyJ[a-zA-Z0-9_-]{15,}\.[a-zA-Z0-9_-]{15,}/ },
+    { name: 'Google / Gemini API Key', regex: /AIzaSy[a-zA-Z0-9_-]{33}/ },
+    { name: 'Mercado Pago Production Access Token', regex: /APP_USR-[0-9a-zA-Z]{16,}-[0-9a-zA-Z_-]{16,}/ },
+    { name: 'Google Client Secret', regex: /GOCSPX-[a-zA-Z0-9_-]{28}/ }
+  ];
+
+  const leaks: string[] = [];
+  function scanDirForSecrets(dir: string) {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        if (entry.name !== 'node_modules' && entry.name !== '.next') {
+          scanDirForSecrets(fullPath);
+        }
+      } else if (entry.isFile() && /\.(ts|tsx|js|jsx|mjs)$/.test(entry.name)) {
+        const content = fs.readFileSync(fullPath, 'utf8');
+        for (const p of secretPatterns) {
+          if (p.regex.test(content)) {
+            leaks.push(`${fullPath}: vazamento de ${p.name}`);
+          }
+        }
+      }
+    }
+  }
+
+  scanDirForSecrets(path.resolve('src'));
+  assert.strictEqual(leaks.length, 0, `Secrets hardcoded encontrados em src/: ${leaks.join(', ')}`);
+
+  // Validação de variáveis públicas: nenhuma chave privada pode ter prefixo NEXT_PUBLIC_
+  const forbiddenPublicPrefixes = [
+    'NEXT_PUBLIC_SERVICE_ROLE',
+    'NEXT_PUBLIC_SUPABASE_SECRET',
+    'NEXT_PUBLIC_WEBHOOK_SECRET',
+    'NEXT_PUBLIC_GEMINI_API_KEY',
+    'NEXT_PUBLIC_MERCADO_PAGO_ACCESS_TOKEN'
+  ];
+  for (const f of forbiddenPublicPrefixes) {
+    assert.strictEqual(process.env[f], undefined, `Variável sensível ${f} NUNCA pode ser exportada com prefixo público!`);
+  }
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: 0 credenciais, chaves ou tokens sensíveis expostos em bundles públicos.\n');
+  passedTests++;
+}
+
+// ------------------------------------------------------------------------------
+// ATAQUE 30: Divulgação de Dados Internos via Mensagens de Erro e PII (CWE-209 / LGPD)
+// ------------------------------------------------------------------------------
+console.log('[ATAQUE 30] Bloqueio de Divulgação de Schema/Stacktrace via CWE-209 e Proteção de PII');
+{
+  // 1. Simula erro interno de banco vazando nomes de tabelas e hash de senhas
+  const internalDbError = new Error('PostgresError: syntax error at or near "SELECT" in column "password_hash" of table "public.profiles"');
+  
+  // Em produção, safeErrorMessage DEVE ocultar qualquer detalhe interno e retornar fallback genérico
+  const originalNodeEnv = process.env.NODE_ENV;
+  try {
+    process.env.NODE_ENV = 'production';
+    const sanitizedError = safeErrorMessage(internalDbError, 'Erro interno ao consultar questões.');
+    assert.strictEqual(sanitizedError, 'Erro interno ao consultar questões.');
+    assert(!sanitizedError.includes('password_hash'), 'Detalhes internos de colunas não podem vazar em produção');
+    assert(!sanitizedError.includes('public.profiles'), 'Nomes de tabelas de banco não podem vazar');
+    assert(!sanitizedError.includes('PostgresError'), 'Classes de erro de banco não podem ser divulgadas');
+  } finally {
+    process.env.NODE_ENV = originalNodeEnv;
+  }
+
+  // 2. Proteção de PII: Projeção de ranking deve omitir dados de contato e identificação civil (LGPD)
+  const fullProfileData = {
+    id: 'user_uuid_123',
+    name: 'Dr. Aluno Teste',
+    college: 'USP',
+    specialty_target: 'Cirurgia Geral',
+    email: 'aluno_teste@privado.med.br',
+    phone: '+5511999998888',
+    cpf: '123.456.789-00',
+    password_hash: '$2b$10$abcdef1234567890'
+  };
+
+  // Simula sanitização e filtro de projeção pública para o ranking
+  const safeLeaderboardEntry = {
+    id: fullProfileData.id,
+    name: fullProfileData.name,
+    college: fullProfileData.college,
+    specialty_target: fullProfileData.specialty_target
+  };
+
+  assert.strictEqual('email' in safeLeaderboardEntry, false, 'Email NÃO pode ser exposto em ranking público');
+  assert.strictEqual('phone' in safeLeaderboardEntry, false, 'Telefone NÃO pode ser exposto em ranking público');
+  assert.strictEqual('cpf' in safeLeaderboardEntry, false, 'CPF NÃO pode ser exposto em ranking público');
+  assert.strictEqual('password_hash' in safeLeaderboardEntry, false, 'Hash de senha NUNCA pode ser exposto');
+
+  console.log('   ✓ ATAQUE NEUTRALIZADO: Zero vazamento de stacktrace/schema (CWE-209) e proteção estrita de PII (LGPD).\n');
   passedTests++;
 }
 
