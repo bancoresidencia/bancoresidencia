@@ -160,7 +160,6 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
   // Padrão: Todas as UFs (ALL)
   const [selectedUf, setSelectedUf] = useState<string>('ALL');
   const [hoveredUf, setHoveredUf] = useState<string | null>(null);
-  const [highlightedCity, setHighlightedCity] = useState<string | null>(null);
 
   // Hook de animação para os contadores numéricos e para a dobra do mapa
   const { ref: statsRef, isVisible: statsVisible } = useScrollReveal<HTMLDivElement>(0.12);
@@ -168,19 +167,6 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
   const count200 = useAnimatedCounter(200, statsVisible, 1200);
   const count100 = useAnimatedCounter(100, statsVisible, 1200);
   const count120 = useAnimatedCounter(120, statsVisible, 1200);
-
-  // Coordenadas das 31 cidades ordenadas de Sul (y alto) para Norte (y baixo) para o efeito de cascata regional em radar
-  const ALL_CITY_PINS = useMemo(() => {
-    return Object.entries(CITY_COORDINATES)
-      .map(([cityName, coord]) => ({
-        cityName,
-        x: coord.x,
-        y: coord.y,
-        screenX: (coord.x / 450) * 100,
-        screenY: (coord.y / 460) * 100
-      }))
-      .sort((a, b) => b.y - a.y);
-  }, []);
 
   // Lista de estados ordenados para o seletor (Apenas nomes dos estados)
   const ufOptions = useMemo(() => {
@@ -382,9 +368,17 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
   return (
     <section
       id="onde-vem-as-provas"
-      className="scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+      className="relative scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden"
     >
-      <div ref={mapSectionRef} className="max-w-7xl mx-auto px-4 sm:px-6 space-y-10 sm:space-y-12">
+      {/* Iluminação Ambiente Suave Atrás da Dobra (Zero Linhas / Divisórias) */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 w-[720px] sm:w-[980px] h-72 opacity-25 dark:opacity-15 blur-3xl rounded-full"
+        style={{
+          background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
+        }}
+      />
+      <div ref={mapSectionRef} className={`max-w-7xl mx-auto px-4 sm:px-6 space-y-10 sm:space-y-12 fold-reveal ${mapVisible ? 'is-visible' : ''}`}>
         {/* =========================================================================
             1. DOBRA DO MAPA DO BRASIL: LIVRE E INTEGRADA AO FUNDO CONTÍNUO
             ========================================================================= */}
@@ -402,7 +396,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
         </div>
 
         {/* Grid Principal: Seletor com Funil na Esquerda + Mapa & Vitrine de Logos */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 items-start fold-reveal fold-delay-1 ${mapVisible ? 'is-visible' : ''}`}>
             {/* Lado Esquerdo: Seletor com Funil no lado esquerdo + Mapa do Brasil */}
             <div className="lg:col-span-6 bg-zinc-50/80 dark:bg-[#121216] p-5 sm:p-6 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 flex flex-col justify-between">
               {/* Seletor: Sem label de cima, ícone de funil na esquerda do select, sem nome em baixo */}
@@ -518,54 +512,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                   </g>
                 </svg>
 
-                {/* 1. Visão Geral do Brasil: Todas as 31 cidades com efeito radar pulsando de Sul para Norte em ondas de 30ms */}
-                {!isZoomed && mapVisible &&
-                  ALL_CITY_PINS.map((city, idx) => {
-                    const isHighlighted = highlightedCity === city.cityName;
-                    return (
-                      <div
-                        key={city.cityName}
-                        className="absolute z-20 pointer-events-auto cursor-pointer animate-pin-radar-pop group"
-                        style={{
-                          left: `${city.screenX}%`,
-                          top: `${city.screenY}%`,
-                          transform: 'translate(-50%, -50%)',
-                          animationDelay: `${idx * 30}ms`,
-                          animationFillMode: 'both'
-                        }}
-                        onClick={() => {
-                          const uf = Object.keys(STATE_INSTITUTIONS).find((k) =>
-                            STATE_INSTITUTIONS[k].some((i) => i.cidade === city.cityName)
-                          );
-                          if (uf) handleSelectState(uf);
-                        }}
-                        onMouseEnter={() => setHighlightedCity(city.cityName)}
-                        onMouseLeave={() => setHighlightedCity(null)}
-                      >
-                        <div className="relative flex items-center justify-center">
-                          {/* Anel de pulso sutil e contínuo (ripple wave) de 2.5s no pin selecionado */}
-                          {isHighlighted && (
-                            <div
-                              aria-hidden="true"
-                              className="absolute -inset-2 rounded-full animate-pin-ripple pointer-events-none"
-                              style={{
-                                border: `2px solid ${accentConfig.primaryHex}`,
-                                boxShadow: `0 0 12px ${accentConfig.primaryHex}`
-                              }}
-                            />
-                          )}
-                          <div
-                            className={`w-2.5 h-2.5 rounded-full border border-white dark:border-zinc-950 shadow-md transition-all duration-200 ${
-                              isHighlighted ? 'scale-150 ring-2 ring-white' : 'group-hover:scale-130'
-                            }`}
-                            style={{ backgroundColor: accentConfig.primaryHex }}
-                          />
-                        </div>
-                      </div>
-                    );
-                  })}
-
-                {/* 2. Marcadores de GPS com Logo Redonda e Ponteiro no Solo (Quando em Zoom no Estado) */}
+                {/* Marcadores de GPS com Logo Redonda e Ponteiro no Solo (Quando em Zoom no Estado) */}
                 {isZoomed &&
                   sortedStatePins.map(({ inst, screenX, screenY }, pinIdx) => {
                     const isHighlighted = highlightedInstId === inst.id;
@@ -853,7 +800,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
         {/* =========================================================================
             2. ESTATÍSTICAS DA IMAGEM 1 ABAIXO DO MAPA (COM ANIMAÇÃO DE CONTAGEM & ESTILO IMAGEM 5)
             ========================================================================= */}
-        <div ref={statsRef}>
+        <div ref={statsRef} className={`fold-reveal fold-delay-1 ${statsVisible ? 'is-visible' : ''}`}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Card 1: +200 mil */}
             <div className="relative rounded-3xl p-6 sm:p-7 bg-white/94 dark:bg-zinc-950/94 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.12)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] flex flex-col justify-between transition-all duration-200 hover:border-zinc-400 dark:hover:border-zinc-700">

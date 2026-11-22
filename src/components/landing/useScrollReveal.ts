@@ -5,8 +5,8 @@ import { createContext, useContext, useEffect, useRef, useState } from 'react';
 export const LandingSectionVisibleContext = createContext(true);
 
 export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
-  thresholdOrOptions: number | { threshold?: number; rootMargin?: string } = 0.08,
-  defaultRootMargin = '0px 0px 140px 0px'
+  thresholdOrOptions: number | { threshold?: number; rootMargin?: string } = 0.05,
+  defaultRootMargin = '0px 0px -60px 0px'
 ) {
   const ref = useRef<T | null>(null);
   const [isVisible, setIsVisible] = useState(false);

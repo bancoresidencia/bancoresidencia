@@ -111,17 +111,77 @@ div:has(> #next-logo) {
   animation: appleFadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Revelação por rolagem (Scroll Reveal via Intersection Observer) */
-.reveal-up {
+/* Revelação por rolagem das dobras (Scroll Reveal via Intersection Observer) */
+.reveal-up,
+.fold-reveal {
   opacity: 0;
-  transform: translate3d(0, 22px, 0);
-  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translate3d(0, 56px, 0) scale(0.96);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
-.reveal-up.is-visible {
+.reveal-up.is-visible,
+.fold-reveal.is-visible {
   opacity: 1;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* Atrasos em cascata para elementos filhos das dobras */
+.fold-delay-1 {
+  transition-delay: 140ms;
+}
+
+.fold-delay-2 {
+  transition-delay: 260ms;
+}
+
+/* Adaptação Completa da Dobra 'Dentro da Plataforma' ao Modo Claro */
+html:not(.dark) #dentro-da-plataforma {
+  background-color: #fafafa !important;
+  color: #18181b !important;
+}
+
+html:not(.dark) #dentro-da-plataforma h2,
+html:not(.dark) #dentro-da-plataforma .text-white:not([style*="background-color"]):not([style*="background:"]) {
+  color: #09090b !important;
+}
+
+html:not(.dark) #dentro-da-plataforma .text-zinc-400,
+html:not(.dark) #dentro-da-plataforma .text-zinc-300 {
+  color: #52525b !important;
+}
+
+html:not(.dark) #dentro-da-plataforma [class*="bg-[#10121a]"],
+html:not(.dark) #dentro-da-plataforma [class*="bg-[#12131a]"],
+html:not(.dark) #dentro-da-plataforma [class*="bg-[#12141c]"] {
+  background-color: #ffffff !important;
+  border-color: #e4e4e7 !important;
+  color: #09090b !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03) !important;
+}
+
+html:not(.dark) #dentro-da-plataforma [class*="bg-[#141620]"],
+html:not(.dark) #dentro-da-plataforma [class*="bg-[#161824]"],
+html:not(.dark) #dentro-da-plataforma [class*="bg-[#181a24]"],
+html:not(.dark) #dentro-da-plataforma [class*="bg-[#161822]"],
+html:not(.dark) #dentro-da-plataforma [class*="bg-[#141622]"] {
+  background-color: #f4f4f5 !important;
+  border-color: #e4e4e7 !important;
+  color: #27272a !important;
+}
+
+html:not(.dark) #dentro-da-plataforma [class*="hover:bg-[#1a1d2c]"]:hover,
+html:not(.dark) #dentro-da-plataforma [class*="hover:bg-[#202332]"]:hover {
+  background-color: #e4e4e7 !important;
+  color: #09090b !important;
+}
+
+html:not(.dark) #dentro-da-plataforma [class*="border-zinc-800"] {
+  border-color: #e4e4e7 !important;
+}
+
+html:not(.dark) #dentro-da-plataforma [class*="border-zinc-700"] {
+  border-color: #d4d4d8 !important;
 }
 
 /* Transições de Entrada, Cascata e Pulsos — Mapa do Brasil e Conectores de Dobras */
@@ -212,7 +272,10 @@ div:has(> #next-logo) {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal-up {
+  .reveal-up,
+  .fold-reveal,
+  .fold-delay-1,
+  .fold-delay-2 {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;

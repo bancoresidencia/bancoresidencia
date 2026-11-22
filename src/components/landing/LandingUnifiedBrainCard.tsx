@@ -13,6 +13,7 @@ export interface LandingUnifiedBrainCardProps {
   frame: number;
   onOpenAuth?: (mode?: 'login' | 'register', planTitle?: string) => void;
   onScrollToSection?: (sectionId: string) => void;
+  onNavigateToTab?: (tab: 'questoes' | 'flashcards' | 'resumos' | 'desempenho') => void;
 }
 
 interface JourneyPhase {
@@ -288,7 +289,8 @@ function LateralWireframeCard({ sceneIndex, isVisible }: { sceneIndex: number; i
 export const LandingUnifiedBrainCard = memo(function LandingUnifiedBrainCard({
   frame,
   onOpenAuth,
-  onScrollToSection
+  onScrollToSection,
+  onNavigateToTab
 }: LandingUnifiedBrainCardProps) {
   // Clamping seguro de 0 a 8
   const clampedFrame = Math.max(0, Math.min(8, frame));
@@ -303,6 +305,26 @@ export const LandingUnifiedBrainCard = memo(function LandingUnifiedBrainCard({
 
   // Fases da cena ativa
   const [phase1, phase2, phase3] = currentScene.phases;
+
+  const handleTabClick = (sceneId: string) => {
+    let targetTab: 'resumos' | 'flashcards' | 'questoes' = 'questoes';
+    if (sceneId === 'cortex-pfc') targetTab = 'resumos';
+    else if (sceneId === 'papez') targetTab = 'flashcards';
+    else if (sceneId === 'hippocampus') targetTab = 'questoes';
+
+    if (onNavigateToTab) {
+      onNavigateToTab(targetTab);
+    } else {
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(
+          new CustomEvent('navigate-platform-tab', { detail: { tab: targetTab } })
+        );
+      }
+      onScrollToSection?.('dentro-da-plataforma');
+      const el = document.getElementById('dentro-da-plataforma');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="relative w-full max-w-xl lg:w-[440px] xl:w-[475px]">
@@ -336,13 +358,16 @@ export const LandingUnifiedBrainCard = memo(function LandingUnifiedBrainCard({
           {ANATOMICAL_SCENES.map((scene, idx) => {
             const isActive = idx === activeSceneIdx;
             return (
-              <div
+              <button
+                type="button"
                 key={scene.id}
-                className={`flex-1 py-1 px-1.5 sm:px-2 rounded-xl transition-all duration-300 flex flex-col justify-between ${
+                onClick={() => handleTabClick(scene.id)}
+                className={`flex-1 py-1 px-1.5 sm:px-2 rounded-xl transition-all duration-300 flex flex-col justify-between cursor-pointer ${
                   isActive
                     ? 'bg-zinc-100/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 shadow-2xs'
-                    : 'opacity-40 hover:opacity-65'
+                    : 'opacity-40 hover:opacity-75'
                 }`}
+                title={`Ir para ${scene.id === 'cortex-pfc' ? 'Resumos' : scene.id === 'papez' ? 'Flashcards' : 'Questões'} na plataforma`}
               >
                 <div className="flex items-center justify-center min-w-0">
                   <span
@@ -361,7 +386,7 @@ export const LandingUnifiedBrainCard = memo(function LandingUnifiedBrainCard({
                     isActive ? 'bg-[color:var(--journey-accent)] opacity-100' : 'bg-transparent opacity-0'
                   }`}
                 />
-              </div>
+              </button>
             );
           })}
         </div>
@@ -427,45 +452,36 @@ export const LandingUnifiedBrainCard = memo(function LandingUnifiedBrainCard({
               {/* BOTÃO CONTEXTUAL DE AÇÃO NO CANTO INFERIOR ESQUERDO */}
               <div className="mt-4 pt-3 border-t border-zinc-200/70 dark:border-zinc-800/70 flex flex-wrap items-center gap-2">
                 {activeSceneIdx === 0 && (
-                  <a
-                    href="#resumos"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onScrollToSection?.('resumos');
-                    }}
+                  <button
+                    type="button"
+                    onClick={() => handleTabClick('cortex-pfc')}
                     className="inline-flex items-center gap-2 rounded-xl bg-[color:var(--journey-accent)] px-3.5 py-2 text-xs sm:text-[12.5px] font-bold text-white shadow-sm hover:opacity-90 transition-opacity cursor-pointer"
                   >
                     Ver Resumo Clínico
                     <ArrowRight className="size-3.5" aria-hidden="true" />
-                  </a>
+                  </button>
                 )}
 
                 {activeSceneIdx === 1 && (
-                  <a
-                    href="#flashcards"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onScrollToSection?.('flashcards');
-                    }}
+                  <button
+                    type="button"
+                    onClick={() => handleTabClick('papez')}
                     className="inline-flex items-center gap-2 rounded-xl bg-[color:var(--journey-accent)] px-3.5 py-2 text-xs sm:text-[12.5px] font-bold text-white shadow-sm hover:opacity-90 transition-opacity cursor-pointer"
                   >
                     Praticar Flashcards FSRS
                     <ArrowRight className="size-3.5" aria-hidden="true" />
-                  </a>
+                  </button>
                 )}
 
                 {activeSceneIdx === 2 && (
-                  <a
-                    href="#questoes"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onScrollToSection?.('questoes');
-                    }}
+                  <button
+                    type="button"
+                    onClick={() => handleTabClick('hippocampus')}
                     className="inline-flex items-center gap-2 rounded-xl bg-[color:var(--journey-accent)] px-3.5 py-2 text-xs sm:text-[12.5px] font-bold text-white shadow-sm hover:opacity-90 transition-opacity cursor-pointer"
                   >
                     Testar uma questão oficial
                     <ArrowRight className="size-3.5" aria-hidden="true" />
-                  </a>
+                  </button>
                 )}
               </div>
             </div>

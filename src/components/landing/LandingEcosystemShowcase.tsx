@@ -189,9 +189,17 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
   return (
     <section
       id="recursos-adicionais"
-      className="relative scroll-mt-20 pt-12 sm:pt-16 pb-8 sm:pb-12 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+      className="relative scroll-mt-20 pt-12 sm:pt-16 pb-8 sm:pb-12 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden"
     >
-      <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 space-y-10 reveal-up ${isVisible ? 'is-visible' : ''}`}>
+      {/* Iluminação Ambiente Atrás da Dobra (Zero Linhas / Divisórias) */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] sm:w-[950px] h-72 opacity-25 dark:opacity-15 blur-3xl rounded-full"
+        style={{
+          background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
+        }}
+      />
+      <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 space-y-10 fold-reveal ${isVisible ? 'is-visible' : ''}`}>
         {/* Cabeçalho da Seção Padronizado */}
         <div className="max-w-3xl">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-zinc-950 dark:text-white leading-[1.1]">
@@ -200,7 +208,7 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
               className="bg-clip-text text-transparent animate-hippo-text-sweep opacity-95"
               style={highlightTextStyle}
             >
-              cada minuto do seu internato.
+              cada minuto do seu estudo.
             </span>
           </h2>
         </div>
@@ -210,7 +218,7 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
             - Menu à Esquerda com os 4 Pilares
             - Palco Interativo à Direita com as 3 Métricas, Descrição e Checkmarks
             ========================================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+        <div className={`grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch fold-reveal fold-delay-1 ${isVisible ? 'is-visible' : ''}`}>
           {/* Coluna Esquerda: 4 Pilares Selecionáveis (Fiel à Imagem 2) */}
           <div className="lg:col-span-5 flex flex-col gap-3">
             {FEATURE_PILLARS.map((pillar) => {
@@ -358,7 +366,7 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
               </div>
 
               {/* Botão de Ação CTA (Fiel à Imagem 2 adaptado ao tema) */}
-              <div className="pt-4 border-t border-zinc-800 flex justify-end">
+              <div className="pt-4 flex justify-end">
                 <button
                   type="button"
                   onClick={() => onOpenAuth('register')}
@@ -376,12 +384,6 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
           </div>
         </div>
       </div>
-
-      {/* Conector de Transição Inferior: Feixe de luz sutil conectando à dobra de planos */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-zinc-200/60 dark:via-zinc-800/60 to-transparent"
-      />
     </section>
   );
 };

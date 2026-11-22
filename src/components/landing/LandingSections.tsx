@@ -5,7 +5,7 @@ import { LandingSectionVisibleContext } from './useScrollReveal';
 
 export function LandingSections({ children }: { children: ReactNode }) {
   const section = useRef<HTMLDivElement>(null);
-  const [isNear, setIsNear] = useState(false);
+  const [isNear, setIsNear] = useState(true);
 
   useEffect(() => {
     const element = section.current;

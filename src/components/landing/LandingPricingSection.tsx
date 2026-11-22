@@ -37,22 +37,17 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
     <section
       id="planos"
       className="relative scroll-mt-20 pt-8 sm:pt-12 pb-14 sm:pb-20 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden"
-      style={{ contentVisibility: 'auto', containIntrinsicSize: '1px 800px' } as React.CSSProperties}
     >
-      {/* Ponte Luminescente de Transição de Entrada (Elimina o vazio escuro entre as dobras) */}
+      {/* Iluminação Ambiente Atrás da Dobra (Zero Linhas / Divisórias) */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] sm:w-[980px] h-48 opacity-35 dark:opacity-20 blur-3xl rounded-full"
+        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] sm:w-[980px] h-56 opacity-35 dark:opacity-20 blur-3xl rounded-full"
         style={{
           background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
         }}
       />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-zinc-200/80 dark:via-zinc-800/80 to-transparent"
-      />
 
-      <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 reveal-up ${isVisible ? 'is-visible' : ''}`}>
+      <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 fold-reveal ${isVisible ? 'is-visible' : ''}`}>
         {/* Cabeçalho dos Planos Padronizado (Alinhado à Esquerda - Estilo Imagem 2) */}
         <div className="max-w-3xl text-left mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-[-0.03em] text-zinc-950 dark:text-white leading-[1.15]">
@@ -71,7 +66,7 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
         </div>
 
         {/* Barra de Recursos Inclusos em Todos os Planos */}
-        <div className="mb-10 max-w-5xl mx-auto p-4 rounded-2xl bg-white/90 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/90">
+        <div className={`mb-10 max-w-5xl mx-auto p-4 rounded-2xl bg-white/90 dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/90 fold-reveal fold-delay-1 ${isVisible ? 'is-visible' : ''}`}>
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs sm:text-[13px]">
             <span className="font-extrabold text-zinc-950 dark:text-white shrink-0">
               Incluso em qualquer plano:
@@ -89,7 +84,7 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
         </div>
 
         {/* Grid dos 4 Planos com Contraste WCAG AA e Harmonia Total ao Tema */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch pt-4 sm:pt-6">
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch pt-4 sm:pt-6 fold-reveal fold-delay-2 ${isVisible ? 'is-visible' : ''}`}>
           {LANDING_PRICING_PLANS.map((plan) => {
             const isPrimary = plan.tier === 'primary_highlight';
             const isSecondary = plan.tier === 'secondary_highlight';

@@ -24,6 +24,7 @@ export interface LandingIntroSectionProps {
 interface PillarItem {
   id: string;
   headline: string;
+  headlineLines: string[];
   subtitle: string;
   cardText: string;
   icon: LucideIcon;
@@ -39,6 +40,7 @@ const PILLARS: PillarItem[] = [
   {
     id: 'questoes',
     headline: '+200 MIL QUESTÕES',
+    headlineLines: ['+200 MIL', 'QUESTÕES'],
     subtitle: 'A estrutura que consolida a sua aprovação.',
     cardText: 'Questões comentadas com base nas bancas de residência',
     icon: BookOpenCheck,
@@ -52,6 +54,7 @@ const PILLARS: PillarItem[] = [
   {
     id: 'flashcards',
     headline: 'FLASHCARDS',
+    headlineLines: ['FLASHCARDS'],
     subtitle: 'Flashcards que estarão na sua prova.',
     cardText: 'Flashcards que estarão na sua prova',
     icon: Layers,
@@ -65,6 +68,7 @@ const PILLARS: PillarItem[] = [
   {
     id: 'resumos',
     headline: 'RESUMOS',
+    headlineLines: ['RESUMOS'],
     subtitle: 'Materiais com base nas diretrizes e nas questões de residência.',
     cardText: 'Materiais com base nas diretrizes e nas questões de residência',
     icon: BookOpenCheck,
@@ -78,6 +82,7 @@ const PILLARS: PillarItem[] = [
   {
     id: 'desempenho',
     headline: 'AVALIAÇÃO DE DESEMPENHO',
+    headlineLines: ['AVALIAÇÃO DE', 'DESEMPENHO'],
     subtitle: 'Métricas reais e calibração TRI da sua evolução até a prova.',
     cardText: 'Evolução completa do seu desempenho com psicometria TRI',
     icon: TrendingUp,
@@ -227,7 +232,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       case 0:
         // +200 MIL QUESTÕES: Miniatura autêntica do QuestionCard
         return (
-          <div className="relative overflow-hidden w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+          <div className="relative overflow-hidden w-[260px] xl:w-[270px] 2xl:w-[325px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
             {/* Friso luminoso sutil no topo (Laser Rim) */}
             <div
               aria-hidden="true"
@@ -277,7 +282,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       case 1:
         // FLASHCARDS FSRS: Card Cloze com Omissão e Lacuna Revelada
         return (
-          <div className="relative overflow-hidden w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+          <div className="relative overflow-hidden w-[260px] xl:w-[270px] 2xl:w-[325px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
             {/* Friso luminoso sutil no topo (Laser Rim) */}
             <div
               aria-hidden="true"
@@ -313,7 +318,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       case 2:
         // RESUMOS: Ficha de Diretriz Clínica Oficial
         return (
-          <div className="relative overflow-hidden w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+          <div className="relative overflow-hidden w-[260px] xl:w-[270px] 2xl:w-[325px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
             {/* Friso luminoso sutil no topo (Laser Rim) */}
             <div
               aria-hidden="true"
@@ -355,7 +360,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       default:
         // AVALIAÇÃO DE DESEMPENHO: Escore TRI Real
         return (
-          <div className="relative overflow-hidden w-[280px] xl:w-[295px] 2xl:w-[335px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+          <div className="relative overflow-hidden w-[260px] xl:w-[270px] 2xl:w-[325px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
             {/* Friso luminoso sutil no topo (Laser Rim) */}
             <div
               aria-hidden="true"
@@ -400,7 +405,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       case 0:
         // +200 MIL QUESTÕES: Gabarito & Análise TRI
         return (
-          <div className="relative overflow-hidden w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+          <div className="relative overflow-hidden w-[255px] xl:w-[265px] 2xl:w-[315px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
             {/* Friso luminoso sutil no topo (Laser Rim) */}
             <div
               aria-hidden="true"
@@ -436,7 +441,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       case 1:
         // FLASHCARDS FSRS: Grade dos 4 Botões FSRS Canônicos
         return (
-          <div className="relative overflow-hidden w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+          <div className="relative overflow-hidden w-[255px] xl:w-[265px] 2xl:w-[315px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
             {/* Friso luminoso sutil no topo (Laser Rim) */}
             <div
               aria-hidden="true"
@@ -483,7 +488,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       case 2:
         // RESUMOS: Pérola de Prova High-Yield
         return (
-          <div className="relative overflow-hidden w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+          <div className="relative overflow-hidden w-[255px] xl:w-[265px] 2xl:w-[315px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
             {/* Friso luminoso sutil no topo (Laser Rim) */}
             <div
               aria-hidden="true"
@@ -517,7 +522,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       default:
         // AVALIAÇÃO DE DESEMPENHO: Radar por Especialidade & Mentor IA
         return (
-          <div className="relative overflow-hidden w-[270px] xl:w-[285px] 2xl:w-[320px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
+          <div className="relative overflow-hidden w-[255px] xl:w-[265px] 2xl:w-[315px] p-4 rounded-2xl bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] text-left select-none hover:border-zinc-400 dark:hover:border-zinc-700 transition-all duration-300">
             {/* Friso luminoso sutil no topo (Laser Rim) */}
             <div
               aria-hidden="true"
@@ -642,11 +647,11 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
       <div className="w-full h-4 sm:h-8" aria-hidden="true" />
 
       {/* PALCO PRINCIPAL DO HERO (CONTAINER COM CARDS LATERAIS FLUTUANTES NAS EXTREMIDADES) */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto flex items-center justify-center my-auto px-2 sm:px-4">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto flex items-center justify-center my-auto px-1 sm:px-4">
         {/* CARD LATERAL ESQUERDO (Apenas telas grandes xl/2xl, ancorado na extremidade externa sem sobrepor o texto) */}
         <div
           style={slideTransitionStyle}
-          className="hidden xl:block absolute left-2 2xl:left-6 top-1/2 -translate-y-1/2 z-10 pointer-events-auto will-change-[opacity,transform,filter]"
+          className="hidden xl:block absolute left-1 2xl:left-4 top-1/2 -translate-y-1/2 z-10 pointer-events-auto will-change-[opacity,transform,filter]"
         >
           <div className="animate-hippo-card-drift-left">
             {renderLateralLeft(displayedIndex)}
@@ -660,31 +665,35 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
             transform: `translate3d(0, ${containerTranslateY}px, 0)`,
             willChange: 'opacity, transform'
           }}
-          className="relative z-20 w-full max-w-3xl xl:max-w-4xl mx-auto flex flex-col items-center text-center py-6"
+          className="relative z-20 w-full max-w-2xl xl:max-w-[580px] 2xl:max-w-2xl mx-auto flex flex-col items-center text-center py-6 px-4"
         >
           {/* Bloco Dinâmico com Transição Suave (Cross-Fade) */}
           <div
             style={slideTransitionStyle}
             className="flex flex-col items-center will-change-[opacity,transform,filter]"
           >
-            {/* Título Monumental Ampliado com Headroom Generoso para não cortar acentos/til */}
-            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[88px] xl:text-[96px] font-black tracking-[-0.035em] leading-[1.18] sm:leading-[1.15] text-zinc-950 dark:text-white overflow-visible">
+            {/* Título Monumental Padronizado (Mesmo tamanho para todas as letras em maiúsculo) */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[62px] xl:text-[68px] font-black tracking-[-0.035em] text-zinc-950 dark:text-white overflow-visible text-center">
               <span
-                className="block pt-3 sm:pt-4 pb-2 px-2 bg-clip-text text-transparent overflow-visible"
+                className="block pt-1 pb-0.5 px-2 bg-clip-text text-transparent overflow-visible"
                 style={highlightTextStyle}
               >
-                {activePillar.headline}
+                {activePillar.headlineLines.map((line, idx) => (
+                  <span key={idx} className="block leading-[1.06] sm:leading-[1.04]">
+                    {line}
+                  </span>
+                ))}
               </span>
             </h1>
 
-            {/* Frase Oficial com Tamanho Refinado para Contraste Hierárquico Perfeito */}
-            <p className="mt-2 sm:mt-3 text-base sm:text-xl md:text-2xl lg:text-[26px] font-medium tracking-[-0.02em] text-zinc-700 dark:text-zinc-300 max-w-2xl sm:max-w-3xl leading-relaxed text-center">
+            {/* Frase Oficial com Distância Curta e Estritamente Padronizada para Todos os Slides */}
+            <p className="mt-2.5 sm:mt-3 text-base sm:text-lg md:text-xl lg:text-[21px] xl:text-[22px] font-medium tracking-[-0.02em] text-zinc-700 dark:text-zinc-300 max-w-md sm:max-w-lg xl:max-w-[480px] 2xl:max-w-xl text-balance leading-snug sm:leading-normal text-center">
               {activePillar.subtitle}
             </p>
           </div>
 
           {/* Os 2 Botões de Conversão: Sempre Fixos e Estáveis no Centro */}
-          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto pointer-events-auto">
+          <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3.5 sm:gap-4 w-full sm:w-auto pointer-events-auto">
             <button
               type="button"
               data-landing-auth
@@ -731,7 +740,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
         {/* CARD LATERAL DIREITO (Apenas telas grandes xl/2xl, ancorado na extremidade externa sem sobrepor o texto) */}
         <div
           style={slideTransitionStyle}
-          className="hidden xl:block absolute right-2 2xl:right-6 top-1/2 -translate-y-1/2 z-10 pointer-events-auto will-change-[opacity,transform,filter]"
+          className="hidden xl:block absolute right-1 2xl:right-4 top-1/2 -translate-y-1/2 z-10 pointer-events-auto will-change-[opacity,transform,filter]"
         >
           <div className="animate-hippo-card-drift-right">
             {renderLateralRight(displayedIndex)}

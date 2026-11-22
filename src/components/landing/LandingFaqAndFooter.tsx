@@ -57,12 +57,19 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
           ========================================================================= */}
       <section
         id="faq"
-        className="scroll-mt-20 py-18 sm:py-26 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
-        style={{ contentVisibility: 'auto', containIntrinsicSize: '1px 800px' } as React.CSSProperties}
+        className="relative scroll-mt-20 pt-10 sm:pt-14 pb-14 sm:pb-20 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden"
       >
+        {/* Iluminação Ambiente Suave Atrás da Dobra (Zero Linhas / Divisórias) */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[650px] sm:w-[900px] h-64 opacity-25 dark:opacity-15 blur-3xl rounded-full"
+          style={{
+            background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
+          }}
+        />
         <div
           ref={faqRef}
-          className={`max-w-3xl mx-auto px-4 sm:px-6 reveal-up ${faqVisible ? 'is-visible' : ''}`}
+          className={`max-w-3xl mx-auto px-4 sm:px-6 fold-reveal ${faqVisible ? 'is-visible' : ''}`}
         >
           <div className="text-left mb-10 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-[-0.03em] text-zinc-950 dark:text-white leading-[1.15]">
@@ -127,11 +134,10 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
       <section
         id="suporte"
         className="scroll-mt-20 py-16 sm:py-22 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
-        style={{ contentVisibility: 'auto', containIntrinsicSize: '1px 500px' } as React.CSSProperties}
       >
         <div
           ref={supportRef}
-          className={`max-w-5xl mx-auto px-4 sm:px-6 space-y-8 reveal-up ${supportVisible ? 'is-visible' : ''}`}
+          className={`max-w-5xl mx-auto px-4 sm:px-6 space-y-8 fold-reveal ${supportVisible ? 'is-visible' : ''}`}
         >
           {/* Card Único e Refinado de Atendimento Humano no WhatsApp (Sem duplicação no rodapé) */}
           <div className="rounded-2xl p-6 sm:p-8 bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">

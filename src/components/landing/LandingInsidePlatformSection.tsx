@@ -46,6 +46,7 @@ import {
   Sunset
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { useScrollReveal } from './useScrollReveal';
 
 type PlatformTabKey = 'questoes' | 'flashcards' | 'resumos' | 'desempenho';
 
@@ -350,13 +351,35 @@ interface Stroke {
 
 export interface LandingInsidePlatformSectionProps {
   onOpenAuth: (mode?: 'login' | 'register') => void;
+  activeTab?: PlatformTabKey;
+  onTabChange?: (tab: PlatformTabKey) => void;
 }
 
 export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSectionProps> = ({
-  onOpenAuth
+  onOpenAuth,
+  activeTab: controlledActiveTab,
+  onTabChange
 }) => {
   const { accent, mode, accentConfig } = useTheme();
   const isMonochrome = accent === 'neutral';
+
+  const [internalTab, setInternalTab] = useState<PlatformTabKey>('questoes');
+  const activeTab = controlledActiveTab ?? internalTab;
+  const setActiveTab = (tab: PlatformTabKey) => {
+    setInternalTab(tab);
+    onTabChange?.(tab);
+  };
+
+  useEffect(() => {
+    const handleCustomNavigate = (e: Event) => {
+      const customEvent = e as CustomEvent<{ tab: PlatformTabKey }>;
+      if (customEvent.detail?.tab) {
+        setActiveTab(customEvent.detail.tab);
+      }
+    };
+    window.addEventListener('navigate-platform-tab', handleCustomNavigate);
+    return () => window.removeEventListener('navigate-platform-tab', handleCustomNavigate);
+  }, []);
 
   const highlightTextStyle: React.CSSProperties = isMonochrome
     ? {
@@ -374,8 +397,6 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
           accentConfig.primaryHex
         } 100%)`
       };
-
-  const [activeTab, setActiveTab] = useState<PlatformTabKey>('questoes');
 
   // Estado da aba Questões
   const [activeQuestionIdx, setActiveQuestionIdx] = useState<number>(0);
@@ -565,41 +586,47 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
+  const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal<HTMLDivElement>(0.05);
+
   return (
     <section
       id="dentro-da-plataforma"
-      className="scroll-mt-16 py-14 sm:py-20 bg-[#090a0f] text-zinc-100 transition-colors duration-200"
+      className="relative scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 space-y-6 sm:space-y-8">
+      {/* Iluminação Ambiente Suave Atrás da Dobra (Zero Linhas / Divisórias) */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] sm:w-[980px] h-96 opacity-25 dark:opacity-15 blur-3xl rounded-full"
+        style={{
+          background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
+        }}
+      />
+      <div ref={sectionRef} className={`max-w-7xl mx-auto px-3 sm:px-6 space-y-6 sm:space-y-8 fold-reveal ${sectionVisible ? 'is-visible' : ''}`}>
         {/* Cabeçalho */}
         <div className="max-w-3xl space-y-2 text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#12131a] border border-zinc-800 text-xs font-bold uppercase tracking-wider text-blue-400">
-            <Sparkles className="w-3.5 h-3.5 text-blue-400" />
-            <span>DENTRO DA PLATAFORMA REAL</span>
-          </div>
-
-          <h2 className="text-2xl sm:text-4xl font-black tracking-tight text-white leading-tight">
+          <h2 className="text-2xl sm:text-4xl font-black tracking-tight text-zinc-950 dark:text-white leading-tight">
             Experimente o{' '}
             <span className="bg-clip-text text-transparent" style={highlightTextStyle}>
               Hippocampus
             </span>
           </h2>
-          <p className="text-xs sm:text-sm text-zinc-400">
+          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
             Navegue pelas 4 ferramentas essenciais exatamente como estão dentro da plataforma real.
           </p>
         </div>
 
         {/* Barra de Navegação Entre as 4 Abas Principais */}
         <div className="flex items-center justify-start overflow-x-auto no-scrollbar">
-          <div className="inline-flex p-1.5 rounded-2xl bg-[#12131a] border border-zinc-800 shadow-lg gap-1.5">
+          <div className="inline-flex p-1.5 rounded-2xl bg-white dark:bg-[#12131a] border border-zinc-200 dark:border-zinc-800 shadow-sm dark:shadow-lg gap-1.5">
             <button
               type="button"
               onClick={() => setActiveTab('questoes')}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
                 activeTab === 'questoes'
-                  ? 'bg-blue-600 text-white shadow-md'
-                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+                  ? 'text-white shadow-md'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
               }`}
+              style={activeTab === 'questoes' ? { backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex } : {}}
             >
               <FileText className="w-4 h-4 shrink-0" />
               <span>Questões na Prática</span>
@@ -610,9 +637,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               onClick={() => setActiveTab('flashcards')}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
                 activeTab === 'flashcards'
-                  ? 'bg-blue-600 text-white shadow-md'
-                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+                  ? 'text-white shadow-md'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
               }`}
+              style={activeTab === 'flashcards' ? { backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex } : {}}
             >
               <Brain className="w-4 h-4 shrink-0" />
               <span>Flashcards FSRS</span>
@@ -623,9 +651,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               onClick={() => setActiveTab('resumos')}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
                 activeTab === 'resumos'
-                  ? 'bg-blue-600 text-white shadow-md'
-                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+                  ? 'text-white shadow-md'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
               }`}
+              style={activeTab === 'resumos' ? { backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex } : {}}
             >
               <BookOpen className="w-4 h-4 shrink-0" />
               <span>Resumos com Raio-X</span>
@@ -636,9 +665,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               onClick={() => setActiveTab('desempenho')}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
                 activeTab === 'desempenho'
-                  ? 'bg-blue-600 text-white shadow-md'
-                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+                  ? 'text-white shadow-md'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
               }`}
+              style={activeTab === 'desempenho' ? { backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex } : {}}
             >
               <BarChart3 className="w-4 h-4 shrink-0" />
               <span>Painel de Desempenho & TRI</span>
@@ -666,7 +696,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             >
               <div className="flex items-center justify-between pb-3 border-b border-zinc-800">
                 <div className="flex items-center gap-2 text-sm font-black text-white">
-                  <Keyboard className="w-4 h-4 text-blue-400" />
+                  <Keyboard className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                   <span>Atalhos Rápidos de Estudo</span>
                 </div>
                 <button
@@ -681,7 +711,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               <div className="space-y-2.5 text-xs text-zinc-300">
                 <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-900/80">
                   <span>Alternar régua de questões</span>
-                  <kbd className="px-2 py-0.5 rounded bg-zinc-800 font-mono font-bold text-blue-400">
+                  <kbd
+                    className="px-2 py-0.5 rounded bg-zinc-800 font-mono font-bold"
+                    style={{ color: accentConfig.primaryHex }}
+                  >
                     Q
                   </kbd>
                 </div>
@@ -747,11 +780,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           strokeLinecap="round"
                           stroke="currentColor"
                           fill="none"
-                          className="text-blue-500"
+                          style={{ color: accentConfig.primaryHex }}
                           d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                         />
                       </svg>
-                      <span className="absolute text-[9px] font-black font-sans text-blue-400">
+                      <span
+                        className="absolute text-[9px] font-black font-sans"
+                        style={{ color: accentConfig.primaryHex }}
+                      >
                         {currentQuestion.progressPct}%
                       </span>
                     </div>
@@ -774,7 +810,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                 <div className="flex items-center flex-wrap gap-1.5 sm:gap-2">
                   {/* Cronômetro Duplo: Questão | Total */}
                   <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-[#141620] border border-zinc-800 text-[11px] font-bold text-zinc-300">
-                    <div className="flex items-center gap-1 text-blue-400" title="Tempo na questão">
+                    <div
+                      className="flex items-center gap-1"
+                      style={{ color: accentConfig.primaryHex }}
+                      title="Tempo na questão"
+                    >
                       <Clock className="w-3.5 h-3.5" />
                       <span className="font-mono">{formatTimer(questionSeconds)}</span>
                       <span className="text-[9px] text-zinc-500 font-sans">Q</span>
@@ -885,7 +925,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     title="Tamanho da fonte"
                   >
                     <Type className="w-3.5 h-3.5" />
-                    <span className="text-blue-400">
+                    <span style={{ color: accentConfig.primaryHex }}>
                       {fontSize === 'sm' ? 'A-' : fontSize === 'base' ? 'A' : 'A+'}
                     </span>
                     <ChevronDown className="w-3 h-3 text-zinc-500" />
@@ -922,7 +962,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     onClick={() => setIsShortcutsOpen(true)}
                     className="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer"
                   >
-                    <Keyboard className="w-3.5 h-3.5 text-blue-400" />
+                    <Keyboard className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                     <span>Atalhos</span>
                   </button>
 
@@ -939,8 +979,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer"
                     title="Filtros da sessão"
                   >
-                    <SlidersHorizontal className="w-3.5 h-3.5 text-blue-400" />
-                    <span className="w-4 h-4 rounded-full bg-blue-600 text-white text-[10px] flex items-center justify-center font-bold">
+                    <SlidersHorizontal
+                      className="w-3.5 h-3.5"
+                      style={{ color: accentConfig.primaryHex }}
+                    />
+                    <span
+                      className="w-4 h-4 rounded-full text-white text-[10px] flex items-center justify-center font-bold"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
+                    >
                       2
                     </span>
                   </button>
@@ -949,11 +995,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => onOpenAuth('register')}
-                    className={`flex items-center gap-1 px-4 py-1.5 rounded-xl text-xs font-black shadow-md cursor-pointer active:scale-95 transition-all ${
+                    className="flex items-center gap-1 px-4 py-1.5 rounded-xl text-xs font-black shadow-md cursor-pointer active:scale-95 transition-all text-white"
+                    style={
                       activeQuestionIdx === 1
-                        ? 'bg-white hover:bg-zinc-200 text-zinc-950 font-black'
-                        : 'bg-blue-600 hover:bg-blue-500 text-white'
-                    }`}
+                        ? { backgroundColor: '#ffffff', color: '#090a0f' }
+                        : { backgroundColor: accentConfig.primaryHex }
+                    }
                     title="Finalizar treino"
                   >
                     <Check className="w-3.5 h-3.5" />
@@ -988,9 +1035,17 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         }}
                         className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all cursor-pointer ${
                           idx === 0
-                            ? 'bg-blue-600 text-white shadow-md ring-2 ring-blue-400/40'
+                            ? 'text-white shadow-md ring-2'
                             : 'bg-[#181a24] text-zinc-400 hover:text-white hover:bg-zinc-800'
                         }`}
+                        style={
+                          idx === 0
+                            ? {
+                                backgroundColor: accentConfig.primaryHex,
+                                borderColor: accentConfig.primaryHex
+                              }
+                            : {}
+                        }
                       >
                         {num}
                       </button>
@@ -1018,22 +1073,32 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <button
                       type="button"
                       onClick={() => switchQuestion(0)}
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                      className="px-2 py-0.5 rounded text-[10px] font-bold cursor-pointer"
+                      style={
                         activeQuestionIdx === 0
-                          ? 'bg-blue-600/30 text-blue-300 border border-blue-500/50'
-                          : 'text-zinc-500 hover:text-zinc-300'
-                      }`}
+                          ? {
+                              backgroundColor: accentConfig.bgRgba,
+                              color: accentConfig.primaryHex,
+                              border: `1px solid ${accentConfig.borderRgba}`
+                            }
+                          : { color: '#71717a' }
+                      }
                     >
                       ENARE 2027
                     </button>
                     <button
                       type="button"
                       onClick={() => switchQuestion(1)}
-                      className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                      className="px-2 py-0.5 rounded text-[10px] font-bold cursor-pointer"
+                      style={
                         activeQuestionIdx === 1
-                          ? 'bg-blue-600/30 text-blue-300 border border-blue-500/50'
-                          : 'text-zinc-500 hover:text-zinc-300'
-                      }`}
+                          ? {
+                              backgroundColor: accentConfig.bgRgba,
+                              color: accentConfig.primaryHex,
+                              border: `1px solid ${accentConfig.borderRgba}`
+                            }
+                          : { color: '#71717a' }
+                      }
                     >
                       HSL/Sírio 2027
                     </button>
@@ -1047,8 +1112,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               {/* Header Interno com Tags Idênticas às Imagens 1 e 2 */}
               <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-zinc-800/80">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="px-3 py-1 rounded-xl text-xs font-black bg-[#161824] text-blue-300 border border-zinc-700 flex items-center gap-1.5">
-                    <BookOpen className="w-3.5 h-3.5 text-blue-400" />
+                  <span
+                    className="px-3 py-1 rounded-xl text-xs font-black bg-[#161824] border border-zinc-700 flex items-center gap-1.5"
+                    style={{ color: accentConfig.primaryHex }}
+                  >
+                    <BookOpen className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                     <span>
                       {currentQuestion.banca} • {currentQuestion.year}
                     </span>
@@ -1220,7 +1288,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                               <button
                                 type="button"
                                 onClick={(e) => toggleJustification(opt.letter, e)}
-                                className="px-3 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all cursor-pointer flex items-center gap-1 shadow-xs"
+                                className="px-3 py-1 rounded-lg text-white text-xs font-bold transition-all cursor-pointer flex items-center gap-1 shadow-xs hover:opacity-90"
+                                style={{ backgroundColor: accentConfig.primaryHex }}
                               >
                                 <span>
                                   {isJustificationOpen
@@ -1251,8 +1320,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
                         {/* Box Interno de Justificativa da Alternativa */}
                         {isAnswered && isJustificationOpen && (
-                          <div className="p-4 rounded-xl bg-[#0b101c] border border-blue-900/40 text-xs sm:text-[13px] leading-relaxed text-zinc-300 space-y-1 animate-in fade-in duration-150">
-                            <div className="font-bold text-blue-300">
+                          <div
+                            className="p-4 rounded-xl border text-xs sm:text-[13px] leading-relaxed text-zinc-300 space-y-1 animate-in fade-in duration-150"
+                            style={{
+                              borderColor: accentConfig.borderRgba,
+                              backgroundColor: accentConfig.bgRgba
+                            }}
+                          >
+                            <div className="font-bold" style={{ color: accentConfig.primaryHex }}>
                               Justificativa da Alternativa {opt.letter}:
                             </div>
                             <p className="opacity-95">{opt.explanation}</p>
@@ -1270,7 +1345,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   {/* Cabeçalho do Bloco */}
                   <div
                     onClick={() => setIsProfessorCommentaryOpen(!isProfessorCommentaryOpen)}
-                    className="flex items-center justify-between text-xs sm:text-sm font-bold text-blue-400 hover:text-blue-300 cursor-pointer"
+                    className="flex items-center justify-between text-xs sm:text-sm font-bold cursor-pointer hover:opacity-85"
+                    style={{ color: accentConfig.primaryHex }}
                   >
                     <div className="flex items-center gap-2">
                       <BookOpen className="w-4 h-4" />
@@ -1321,13 +1397,22 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         )}
                       </div>
 
-                      {/* Box 3: Take-Home Message (Azul Índigo) */}
-                      <div className="p-4 rounded-2xl bg-[#0b1322] border border-blue-600/40 space-y-2">
+                      {/* Box 3: Take-Home Message */}
+                      <div
+                        className="p-4 rounded-2xl border space-y-2"
+                        style={{
+                          borderColor: accentConfig.borderRgba,
+                          backgroundColor: accentConfig.bgRgba
+                        }}
+                      >
                         <div
                           onClick={() => setIsTakeHomeOpen(!isTakeHomeOpen)}
                           className="flex items-center justify-between cursor-pointer"
                         >
-                          <div className="flex items-center gap-2 text-blue-400 font-bold text-xs sm:text-sm">
+                          <div
+                            className="flex items-center gap-2 font-bold text-xs sm:text-sm"
+                            style={{ color: accentConfig.primaryHex }}
+                          >
                             <Lightbulb className="w-4 h-4 shrink-0" />
                             <span>Take-Home Message</span>
                           </div>
@@ -1336,7 +1421,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           </span>
                         </div>
                         {isTakeHomeOpen && (
-                          <p className="text-xs sm:text-[13px] leading-relaxed text-blue-200/90 pt-1 border-t border-blue-900/40">
+                          <p
+                            className="text-xs sm:text-[13px] leading-relaxed text-zinc-200 pt-1 border-t"
+                            style={{ borderTopColor: accentConfig.borderRgba }}
+                          >
                             {currentQuestion.takeHomeMessage}
                           </p>
                         )}
@@ -1411,7 +1499,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         <button
                           type="button"
                           onClick={() => switchQuestion(activeQuestionIdx === 0 ? 1 : 0)}
-                          className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shadow-md cursor-pointer transition-all"
+                          className="px-5 py-2 rounded-xl text-white text-xs font-bold shadow-md cursor-pointer transition-all hover:opacity-90"
+                          style={{ backgroundColor: accentConfig.primaryHex }}
                         >
                           Próxima &gt;
                         </button>
@@ -1442,7 +1531,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-1 font-mono text-zinc-300">
-                  <Clock className="w-3.5 h-3.5 text-blue-400" />
+                  <Clock className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                   <span>00:06</span>
                 </div>
                 <span className="text-zinc-600">|</span>
@@ -1483,11 +1572,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               </div>
             </div>
 
-            {/* Linha de Progresso Superior Azul */}
+            {/* Linha de Progresso Superior */}
             <div className="w-full h-1 rounded-full bg-zinc-800 overflow-hidden">
               <div
-                className="h-full bg-blue-600 rounded-full transition-all duration-300"
-                style={{ width: `${((flashcardIdx + 1) / DEMO_FLASHCARDS.length) * 100}%` }}
+                className="h-full rounded-full transition-all duration-300"
+                style={{
+                  width: `${((flashcardIdx + 1) / DEMO_FLASHCARDS.length) * 100}%`,
+                  backgroundColor: accentConfig.primaryHex
+                }}
               />
             </div>
 
@@ -1507,7 +1599,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               {/* Header do Card */}
               <div className="flex items-center justify-between pb-4 border-b border-zinc-800/60 text-xs text-zinc-400 font-bold">
                 <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 rounded-full bg-blue-500" />
+                  <span
+                    className="w-2.5 h-2.5 rounded-full"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
+                  />
                   <span>{currentFlashcard.topic}</span>
                 </div>
                 <div className="flex items-center gap-2 text-amber-400">
@@ -1529,7 +1624,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               {isCardFlipped && (
                 <div className="py-4 space-y-5 animate-in fade-in duration-150">
                   <div className="text-center">
-                    <h3 className="text-xl sm:text-2xl font-black text-blue-400 tracking-tight">
+                    <h3
+                      className="text-xl sm:text-2xl font-black tracking-tight"
+                      style={{ color: accentConfig.primaryHex }}
+                    >
                       {currentFlashcard.revealedTitle}
                     </h3>
                   </div>
@@ -1580,7 +1678,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <button
                       type="button"
                       onClick={() => setIsCardFlipped(true)}
-                      className="px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs sm:text-sm shadow-md cursor-pointer transition-all active:scale-95"
+                      className="px-6 py-2.5 rounded-xl text-white font-black text-xs sm:text-sm shadow-md cursor-pointer transition-all active:scale-95 hover:opacity-90"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
                     >
                       Mostrar Resposta
                     </button>
@@ -1693,7 +1792,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               <div className="p-4 rounded-2xl bg-[#141622] border border-zinc-800 space-y-3">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-bold text-zinc-300">
                   <div className="flex items-center gap-2">
-                    <GraduationCap className="w-4 h-4 text-blue-400" />
+                    <GraduationCap className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                     <span>Raio-X de Bancas: Como o tema é cobrado nos exames</span>
                   </div>
 
@@ -1705,9 +1804,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         onClick={() => setSelectedBancaIdx(bIdx)}
                         className={`px-3 py-1 rounded-lg text-xs font-bold cursor-pointer transition-all ${
                           selectedBancaIdx === bIdx
-                            ? 'bg-blue-600 text-white shadow-sm'
+                            ? 'text-white shadow-sm'
                             : 'bg-zinc-800 text-zinc-400 hover:text-white'
                         }`}
+                        style={
+                          selectedBancaIdx === bIdx
+                            ? { backgroundColor: accentConfig.primaryHex }
+                            : {}
+                        }
                       >
                         {bancaItem.banca}
                       </button>
@@ -1751,7 +1855,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         {pt.alerta ? (
                           <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
                         ) : (
-                          <Lightbulb className="w-4 h-4 text-blue-400 shrink-0" />
+                          <Lightbulb
+                            className="w-4 h-4 shrink-0"
+                            style={{ color: accentConfig.primaryHex }}
+                          />
                         )}
                         <span>{pt.titulo}</span>
                       </div>
@@ -1808,7 +1915,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       switchQuestion(0);
                       showToast('Navegando para o banco de questões');
                     }}
-                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all shadow-md"
+                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-white text-xs font-bold cursor-pointer transition-all shadow-md hover:opacity-90"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
                   >
                     <FileText className="w-3.5 h-3.5" />
                     <span>Resolver Questões no Banco</span>
@@ -1833,9 +1941,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     onClick={() => setDashboardTab('visao_geral')}
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                       dashboardTab === 'visao_geral'
-                        ? 'bg-blue-600 text-white shadow-sm'
+                        ? 'text-white shadow-sm'
                         : 'text-zinc-400 hover:text-white'
                     }`}
+                    style={
+                      dashboardTab === 'visao_geral'
+                        ? { backgroundColor: accentConfig.primaryHex }
+                        : {}
+                    }
                   >
                     <BarChart3 className="w-3.5 h-3.5" />
                     <span>Visão Geral</span>
@@ -1846,9 +1959,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     onClick={() => setDashboardTab('especialidades')}
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                       dashboardTab === 'especialidades'
-                        ? 'bg-blue-600 text-white shadow-sm'
+                        ? 'text-white shadow-sm'
                         : 'text-zinc-400 hover:text-white'
                     }`}
+                    style={
+                      dashboardTab === 'especialidades'
+                        ? { backgroundColor: accentConfig.primaryHex }
+                        : {}
+                    }
                   >
                     <span>🩺 Especialidades</span>
                   </button>
@@ -1858,9 +1976,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     onClick={() => setDashboardTab('raiox_erros')}
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                       dashboardTab === 'raiox_erros'
-                        ? 'bg-blue-600 text-white shadow-sm'
+                        ? 'text-white shadow-sm'
                         : 'text-zinc-400 hover:text-white'
                     }`}
+                    style={
+                      dashboardTab === 'raiox_erros'
+                        ? { backgroundColor: accentConfig.primaryHex }
+                        : {}
+                    }
                   >
                     <span>🎯 Raio-X de Erros</span>
                     <span className="w-4 h-4 rounded-full bg-rose-600 text-white text-[10px] flex items-center justify-center font-bold">
@@ -1873,9 +1996,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     onClick={() => setDashboardTab('tempo')}
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                       dashboardTab === 'tempo'
-                        ? 'bg-blue-600 text-white shadow-sm'
+                        ? 'text-white shadow-sm'
                         : 'text-zinc-400 hover:text-white'
                     }`}
+                    style={
+                      dashboardTab === 'tempo'
+                        ? { backgroundColor: accentConfig.primaryHex }
+                        : {}
+                    }
                   >
                     <Clock className="w-3.5 h-3.5" />
                     <span>Tempo de Estudo</span>
@@ -1967,14 +2095,19 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <div className="p-5 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
                       <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
                         <span>RITMO MÉDIO</span>
-                        <span className="text-blue-400 text-[10px]">⏱ Ideal &lt; 2m 30s</span>
+                        <span className="text-[10px]" style={{ color: accentConfig.primaryHex }}>
+                          ⏱ Ideal &lt; 2m 30s
+                        </span>
                       </div>
                       <div className="text-3xl sm:text-4xl font-black text-white font-mono">
                         1m 48s
                       </div>
                       <div className="text-xs text-zinc-400">Tempo médio / questão</div>
                       <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
-                        <div className="h-full bg-blue-500 rounded-full" style={{ width: '60%' }} />
+                        <div
+                          className="h-full rounded-full"
+                          style={{ width: '60%', backgroundColor: accentConfig.primaryHex }}
+                        />
                       </div>
                     </div>
                   </div>
@@ -2163,7 +2296,9 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
                         <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400">
                           <span>VOLUME PROJETADO</span>
-                          <span className="text-blue-400 text-[10px]">~ 30 dias</span>
+                          <span className="text-[10px]" style={{ color: accentConfig.primaryHex }}>
+                            ~ 30 dias
+                          </span>
                         </div>
                         <div className="text-2xl font-black text-white font-mono">~30 q/mês</div>
                         <div className="text-[11px] text-zinc-400">
@@ -2289,7 +2424,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         <div className="p-4 rounded-xl bg-[#161824] border border-zinc-800 space-y-2">
                           <div className="flex items-center justify-between">
                             <div className="flex items-center gap-1.5 text-xs font-bold text-white">
-                              <Moon className="w-4 h-4 text-blue-400" />
+                              <Moon className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                               <span>Madrugada</span>
                               <span className="text-[10px] text-zinc-500 font-normal">
                                 23h-06h
@@ -2320,7 +2455,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                 <div className="space-y-4 animate-in fade-in duration-200">
                   <div className="flex items-center justify-between pb-2 border-b border-zinc-800 text-xs font-bold text-zinc-400">
                     <span>Desempenho por Grande Área Médica</span>
-                    <span className="text-blue-400">TRI Calibrada</span>
+                    <span style={{ color: accentConfig.primaryHex }}>TRI Calibrada</span>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -2338,7 +2473,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         acerto: 65,
                         volume: 62,
                         tempo: '2m 10s',
-                        color: '#3b82f6',
+                        color: accentConfig.primaryHex,
                         foco: 'Hepatologia (MASLD) & Cardiologia'
                       },
                       {
@@ -2414,7 +2549,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <button
                       type="button"
                       onClick={() => onOpenAuth('register')}
-                      className="text-xs text-blue-400 hover:text-blue-300 font-bold underline cursor-pointer self-start sm:self-auto"
+                      className="text-xs font-bold underline cursor-pointer self-start sm:self-auto hover:opacity-85"
+                      style={{ color: accentConfig.primaryHex }}
                     >
                       Gerar Caderno Inteligente de Erros &rarr;
                     </button>
@@ -2484,7 +2620,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                             if (erro.tabTarget === 'questoes') switchQuestion(1);
                             showToast(`Navegando para remediação: ${erro.tema}`);
                           }}
-                          className="px-3.5 py-1.5 rounded-xl bg-blue-600/30 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/40 text-xs font-bold cursor-pointer transition-all shrink-0 self-start md:self-auto"
+                          className="px-3.5 py-1.5 rounded-xl border text-xs font-bold cursor-pointer transition-all shrink-0 self-start md:self-auto hover:opacity-90"
+                          style={{
+                            backgroundColor: accentConfig.bgRgba,
+                            color: accentConfig.primaryHex,
+                            borderColor: accentConfig.borderRgba
+                          }}
                         >
                           {erro.acaoTexto}
                         </button>

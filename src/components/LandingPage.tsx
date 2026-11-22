@@ -17,6 +17,7 @@ interface LandingPageProps {
 
 export const LandingPage = memo(function LandingPage({ onOpenAuth }: LandingPageProps) {
   const [openFaqId, setOpenFaqId] = useState<string | null>('faq-1');
+  const [platformTab, setPlatformTab] = useState<'questoes' | 'flashcards' | 'resumos' | 'desempenho'>('questoes');
 
   const scrollToSection = useCallback((id: string) => {
     const el = document.getElementById(id);
@@ -24,6 +25,14 @@ export const LandingPage = memo(function LandingPage({ onOpenAuth }: LandingPage
       el.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
+
+  const handleNavigateToPlatformTab = useCallback(
+    (tab: 'questoes' | 'flashcards' | 'resumos' | 'desempenho') => {
+      setPlatformTab(tab);
+      scrollToSection('dentro-da-plataforma');
+    },
+    [scrollToSection]
+  );
 
   const handleStartPlanCheckout = useCallback(
     (planId: string, mode: 'register' | 'login' = 'register') => {
@@ -62,6 +71,7 @@ export const LandingPage = memo(function LandingPage({ onOpenAuth }: LandingPage
           <LandingBrainHero
             onOpenAuth={onOpenAuth}
             onScrollToSection={scrollToSection}
+            onNavigateToPlatformTab={handleNavigateToPlatformTab}
           />
         </div>
 
@@ -72,7 +82,11 @@ export const LandingPage = memo(function LandingPage({ onOpenAuth }: LandingPage
           />
 
           {/* 4. Nova Categoria de Dobra: "Dentro da Plataforma" (5 Questões, 5 Flashcards, 3 Resumos, Desempenho) */}
-          <LandingInsidePlatformSection onOpenAuth={onOpenAuth} />
+          <LandingInsidePlatformSection
+            onOpenAuth={onOpenAuth}
+            activeTab={platformTab}
+            onTabChange={setPlatformTab}
+          />
 
           {/* 5. Recursos Adicionais: Idêntico à Imagem 2 (Provas na Íntegra na 1ª posição, TRI, Caderno de Erros, Google Agenda) */}
           <LandingEcosystemShowcase onOpenAuth={onOpenAuth} />

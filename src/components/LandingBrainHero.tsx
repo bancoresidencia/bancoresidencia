@@ -28,11 +28,13 @@ const scrollSettledDelay = 180;
 export interface LandingBrainHeroProps {
   onOpenAuth?: (mode?: 'login' | 'register', planTitle?: string) => void;
   onScrollToSection?: (sectionId: string) => void;
+  onNavigateToPlatformTab?: (tab: 'questoes' | 'flashcards' | 'resumos' | 'desempenho') => void;
 }
 
 export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
   onOpenAuth,
-  onScrollToSection
+  onScrollToSection,
+  onNavigateToPlatformTab
 }) => {
   const { accent, mode, accentConfig } = useTheme();
   const isDark = mode === 'dark';
@@ -274,7 +276,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
           />
 
           {/* PALCO CENTRAL UNIFICADO */}
-          <div className="relative flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-center">
+          <div className="relative flex-1 w-full max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-center">
             {/* 0. PRIMEIRA DOBRA: Os 4 Pilares da Aprovação (Carrossel com cérebro centralizado ao fundo) */}
             <div
               ref={pillarsStageRef}
@@ -328,6 +330,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
                   frame={journeyFrame}
                   onOpenAuth={onOpenAuth}
                   onScrollToSection={onScrollToSection}
+                  onNavigateToTab={onNavigateToPlatformTab}
                 />
               ) : (
                 <LandingBrainJourneyCards frame={journeyFrame} />

@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { Sun, Moon, Palette, Check, SlidersHorizontal } from 'lucide-react';
+import { Sun, Moon, Palette, Check, SlidersHorizontal, ChevronDown } from 'lucide-react';
 import { useTheme, AccentColor, ACCENT_CONFIGS } from '@/context/ThemeContext';
 
 export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false }) => {
@@ -41,7 +41,7 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
   if (compact) {
     return (
       <div ref={dropdownRef} className="relative select-none">
-        {/* Botão Único Compacto de Tema (Apenas a bolinha de cor, sem ícone de aquarela) */}
+        {/* Botão Único Compacto de Tema com bolinha de cor e setinha indicadora */}
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
@@ -49,11 +49,16 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
           aria-haspopup="true"
           title={`Personalizar tema e cores (Tema ativo: ${currentAccent.label})`}
           aria-label={`Personalizar tema e cores (Tema ativo: ${currentAccent.label})`}
-          className="w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer shadow-xs hover:scale-105 active:scale-95 shrink-0"
+          className="h-8 sm:h-9 px-2 sm:px-2.5 rounded-full flex items-center justify-center gap-1.5 bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer shadow-xs hover:scale-105 active:scale-95 shrink-0"
         >
           <span
-            className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full shadow-xs border border-black/10 dark:border-white/20 transition-transform"
+            className="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full shadow-xs border border-black/10 dark:border-white/20 transition-transform shrink-0"
             style={{ backgroundColor: currentAccent.hex }}
+          />
+          <ChevronDown
+            className={`w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 shrink-0 transition-transform duration-200 ${
+              isOpen ? 'rotate-180' : ''
+            }`}
           />
         </button>
 
@@ -80,27 +85,29 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
                   type="button"
                   onClick={() => setMode('light')}
                   aria-pressed={mode === 'light'}
-                  className={`relative z-10 flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
+                  title="Modo Claro"
+                  aria-label="Modo Claro"
+                  className={`relative z-10 flex items-center justify-center p-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
                     mode === 'light'
                       ? 'text-zinc-900'
                       : 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200'
                   }`}
                 >
-                  <Sun className="w-3.5 h-3.5 text-amber-500" />
-                  <span>Claro</span>
+                  <Sun className="w-4 h-4 text-amber-500" />
                 </button>
                 <button
                   type="button"
                   onClick={() => setMode('dark')}
                   aria-pressed={mode === 'dark'}
-                  className={`relative z-10 flex items-center justify-center gap-1.5 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
+                  title="Modo Escuro"
+                  aria-label="Modo Escuro"
+                  className={`relative z-10 flex items-center justify-center p-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
                     mode === 'dark'
                       ? 'text-zinc-100'
                       : 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200'
                   }`}
                 >
-                  <Moon className="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400" />
-                  <span>Escuro</span>
+                  <Moon className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
                 </button>
               </div>
             </div>
@@ -190,27 +197,29 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
             type="button"
             onClick={() => setMode('light')}
             aria-pressed={mode === 'light'}
-            className={`flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg transition-all cursor-pointer ${
+            title="Modo Claro"
+            aria-label="Modo Claro"
+            className={`flex items-center justify-center p-1.5 rounded-lg transition-all cursor-pointer ${
               mode === 'light'
                 ? 'bg-white text-slate-900 shadow-2xs'
                 : 'text-slate-500 dark:text-zinc-400 hover:text-slate-800 dark:hover:text-zinc-200'
             }`}
           >
-            <Sun className="w-3.5 h-3.5 text-amber-500" />
-            <span>Claro</span>
+            <Sun className="w-4 h-4 text-amber-500" />
           </button>
           <button
             type="button"
             onClick={() => setMode('dark')}
             aria-pressed={mode === 'dark'}
-            className={`flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg transition-all cursor-pointer ${
+            title="Modo Escuro"
+            aria-label="Modo Escuro"
+            className={`flex items-center justify-center p-1.5 rounded-lg transition-all cursor-pointer ${
               mode === 'dark'
                 ? 'bg-zinc-800 text-zinc-100 shadow-2xs'
                 : 'text-slate-500 dark:text-zinc-400 hover:text-slate-800 dark:hover:text-zinc-200'
             }`}
           >
-            <Moon className="w-3.5 h-3.5 text-indigo-500 dark:text-indigo-400" />
-            <span>Escuro</span>
+            <Moon className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
           </button>
         </div>
       </div>
