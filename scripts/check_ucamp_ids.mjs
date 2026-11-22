@@ -9,7 +9,7 @@ async function checkUcampIds() {
         const titleMatch = html.match(/<h[1-3][^>]*>([\s\S]*?)<\/h[1-3]>/i);
         const title = titleMatch ? titleMatch[1].replace(/<[^>]+>/g, '').trim() : '';
         console.log(`[${id}] Title: ${title}`);
-        
+
         // Find links
         const links = [...html.matchAll(/href=["']([^"']+)["']/g)].map(m => m[1]);
         const pdfs = links.filter(l => l.includes('.pdf') || l.includes('bibliotecaarquivos'));
@@ -19,7 +19,7 @@ async function checkUcampIds() {
           }
         }
       }
-    } catch (e) {}
+    } catch (e) { }
     await new Promise(r => setTimeout(r, 100));
   }
 }

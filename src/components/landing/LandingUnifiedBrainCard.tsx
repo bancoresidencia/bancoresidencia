@@ -129,7 +129,7 @@ function LateralWireframeCard({ sceneIndex, isVisible }: { sceneIndex: number; i
             borderColor: 'color-mix(in srgb, var(--journey-accent) 35%, transparent)',
             boxShadow: '0 20px 45px -8px color-mix(in srgb, var(--journey-accent) 22%, transparent)'
           }}
-          className="relative rounded-2xl p-3.5 bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border rotate-[-3deg] transform-gpu"
+          className="relative rounded-2xl p-3.5 bg-white/96 dark:bg-zinc-950/96 border rotate-[-3deg] transform-gpu"
         >
           {/* Header estrutural */}
           <div className="flex items-center gap-2 mb-2.5">
@@ -195,7 +195,7 @@ function LateralWireframeCard({ sceneIndex, isVisible }: { sceneIndex: number; i
               borderColor: 'color-mix(in srgb, var(--journey-accent) 35%, transparent)',
               boxShadow: '0 20px 45px -8px color-mix(in srgb, var(--journey-accent) 22%, transparent)'
             }}
-            className="relative rounded-2xl p-3.5 bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border rotate-[-2deg]"
+            className="relative rounded-2xl p-3.5 bg-white/96 dark:bg-zinc-950/96 border rotate-[-2deg]"
           >
             <div className="flex items-center justify-between mb-3">
               <div
@@ -233,7 +233,7 @@ function LateralWireframeCard({ sceneIndex, isVisible }: { sceneIndex: number; i
             borderColor: 'color-mix(in srgb, var(--journey-accent) 38%, transparent)',
             boxShadow: '0 20px 45px -8px color-mix(in srgb, var(--journey-accent) 24%, transparent)'
           }}
-          className="relative rounded-2xl p-3.5 bg-white/94 dark:bg-zinc-950/92 backdrop-blur-xl border rotate-[-3deg] transform-gpu"
+          className="relative rounded-2xl p-3.5 bg-white/96 dark:bg-zinc-950/96 border rotate-[-3deg] transform-gpu"
         >
           {/* Header com tag de exame e escore TRI */}
           <div className="flex items-center justify-between mb-2.5">
@@ -318,9 +318,8 @@ export const LandingUnifiedBrainCard = memo(function LandingUnifiedBrainCard({
              MOMENTO 2: Tese e Antítese esvaecem suavemente e dão lugar à Síntese
       ========================================================================= */}
       <article
-        key={currentScene.id}
         aria-label={`Estrutura Neuroanatômica: ${currentScene.structure}`}
-        className="relative overflow-hidden w-full rounded-3xl border p-5 sm:p-6 lg:p-7 text-left select-none transition-all duration-300 transform-gpu will-change-[transform,opacity] contain-paint border-zinc-200/90 dark:border-zinc-800/90 bg-white/94 dark:bg-zinc-950/94 backdrop-blur-md shadow-[0_20px_50px_rgba(15,23,42,0.12)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)]"
+        className="relative overflow-hidden w-full rounded-3xl border p-5 sm:p-6 lg:p-7 text-left select-none transition-colors duration-200 transform-gpu will-change-[transform,opacity] contain-paint border-zinc-200/90 dark:border-zinc-800/90 bg-white/94 dark:bg-zinc-950/94 backdrop-blur-md shadow-[0_20px_50px_rgba(15,23,42,0.12)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)]"
       >
         {/* Friso luminoso sutil no topo (Laser Rim Highlight) */}
         <div

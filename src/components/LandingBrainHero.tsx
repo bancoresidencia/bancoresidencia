@@ -81,7 +81,8 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     const el = trackRef.current;
     if (!el) return false;
     const scrollY = window.scrollY || document.documentElement.scrollTop || 0;
-    let { top: trackTop, height: trackHeight } = trackMetricsRef.current;
+    const trackTop = trackMetricsRef.current.top;
+    let trackHeight = trackMetricsRef.current.height;
     if (!trackHeight) {
       trackHeight = el.offsetHeight || 7920;
       trackMetricsRef.current.height = trackHeight;
@@ -265,9 +266,10 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
           <div
             ref={ambientGlowRef}
             aria-hidden="true"
-            className="pointer-events-none absolute left-[var(--glow-mobile-left,50%)] top-[var(--glow-mobile-top,28%)] lg:left-[var(--glow-desktop-left,50%)] lg:top-[var(--glow-desktop-top,48%)] -translate-x-1/2 -translate-y-1/2 w-[520px] sm:w-[760px] lg:w-[880px] h-[360px] sm:h-[460px] rounded-full opacity-60 dark:opacity-40 transition-colors duration-500"
+            className="pointer-events-none absolute left-1/2 top-[28%] lg:top-[48%] -translate-x-1/2 -translate-y-1/2 w-[520px] sm:w-[760px] lg:w-[880px] h-[360px] sm:h-[460px] rounded-full opacity-60 dark:opacity-40 transition-colors duration-500 will-change-transform"
             style={{
-              background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex}44 0%, ${accentConfig.primaryHex}18 42%, transparent 72%)`
+              background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex}44 0%, ${accentConfig.primaryHex}18 42%, transparent 72%)`,
+              transform: 'translate3d(-50%, -50%, 0)'
             }}
           />
 
@@ -276,7 +278,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
             {/* 0. PRIMEIRA DOBRA: Os 4 Pilares da Aprovação (Carrossel com cérebro centralizado ao fundo) */}
             <div
               ref={pillarsStageRef}
-              className="absolute inset-0 z-20 flex flex-col justify-between transition-opacity duration-300"
+              className="absolute inset-0 z-20 flex flex-col justify-between will-change-[transform,opacity]"
             >
               <LandingIntroSection
                 onOpenAuth={onOpenAuth ?? (() => {})}
@@ -289,7 +291,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
             <div
               ref={introRef}
               style={{ opacity: 0, pointerEvents: 'none' }}
-              className="absolute inset-x-4 top-[8%] z-10 text-left sm:inset-x-6 lg:left-6 xl:left-12 lg:right-auto lg:top-1/2 lg:w-[46%] lg:-translate-y-1/2 transition-opacity duration-300"
+              className="absolute inset-x-4 top-[8%] z-10 text-left sm:inset-x-6 lg:left-6 xl:left-12 lg:right-auto lg:top-1/2 lg:w-[46%] lg:-translate-y-1/2 will-change-[transform,opacity]"
             >
               <h2 className="max-w-xl text-balance text-[28px] leading-[1.1] font-black tracking-[-0.035em] sm:text-[38px] md:text-[42px] xl:text-[48px]">
                 <span className="text-zinc-950 dark:text-white">Daqui a um mês, você ainda vai lembrar </span>
@@ -302,8 +304,8 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
             {/* 2. PALCO 3D DO CÉREBRO (z-10: centro na 1ª dobra -> direita na 2ª -> esquerda na 3ª) */}
             <div
               ref={brainStageRef}
-              style={{ transform: 'translate3d(var(--brain-x, 0px), 0, 0) scale(var(--brain-scale, 1))' }}
-              className="absolute top-[var(--brain-mobile-top,26%)] z-10 flex h-[46%] w-full max-w-[620px] items-center justify-center transition-opacity duration-300 motion-reduce:transition-none lg:relative lg:top-auto lg:h-[76svh] lg:w-[670px] lg:max-w-[670px] lg:[--brain-x:var(--brain-desktop-x,0px)]"
+              style={{ transform: 'translate3d(0, 0, 0) scale(1)' }}
+              className="absolute top-[26%] z-10 flex h-[46%] w-full max-w-[620px] items-center justify-center motion-reduce:transition-none lg:relative lg:top-auto lg:h-[76svh] lg:w-[670px] lg:max-w-[670px] will-change-transform"
             >
               <HippocampusDissectionScene
                 scrollProgressRef={scrollProgressRef}
@@ -338,7 +340,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
             ref={scrollIndicatorRef}
             aria-hidden="true"
             style={{ opacity: 0, pointerEvents: 'none' }}
-            className="absolute bottom-2.5 sm:bottom-3.5 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center pointer-events-none transition-opacity duration-300"
+            className="absolute bottom-2.5 sm:bottom-3.5 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center pointer-events-none will-change-opacity"
           >
             <ChevronDown className="w-4 h-4 text-zinc-400 dark:text-zinc-500 animate-bounce" />
             <ChevronDown className="w-4 h-4 -mt-2.5 text-zinc-400/60 dark:text-zinc-500/60 animate-bounce [animation-delay:150ms]" />

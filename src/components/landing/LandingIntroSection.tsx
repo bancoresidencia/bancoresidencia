@@ -93,44 +93,45 @@ const PILLARS: PillarItem[] = [
 const SLIDE_DURATION_MS = 4500;
 const FADE_OUT_DURATION_MS = 460;
 
-export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
-  onOpenAuth,
-  onScrollToSection,
-  embeddedMode = false
-}) => {
-  const { accent, mode } = useTheme();
-  const isDark = mode === 'dark';
-  const isMonochrome = accent === 'neutral';
-  const sectionRef = useRef<HTMLElement>(null);
+export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.memo(
+  function LandingIntroSection({
+    onOpenAuth,
+    onScrollToSection,
+    embeddedMode = false
+  }) {
+    const { accent, mode } = useTheme();
+    const isDark = mode === 'dark';
+    const isMonochrome = accent === 'neutral';
+    const sectionRef = useRef<HTMLElement>(null);
 
-  const [displayedIndex, setDisplayedIndex] = useState(0);
-  const [fadeState, setFadeState] = useState<'visible' | 'fading'>('visible');
-  const [scrollY, setScrollY] = useState(0);
+    const [displayedIndex, setDisplayedIndex] = useState(0);
+    const [fadeState, setFadeState] = useState<'visible' | 'fading'>('visible');
+    const [scrollY, setScrollY] = useState(0);
 
-  // Monitora o scroll para esvanecer suavemente na descida para a 2ª dobra (Cérebro 3D)
-  useEffect(() => {
-    let frame = 0;
-    let previousScroll = -1;
-    const updateScroll = () => {
-      frame = 0;
-      const nextScroll = Math.max(0, Math.min(window.scrollY, 320));
-      if (nextScroll === previousScroll) return;
-      previousScroll = nextScroll;
-      setScrollY(nextScroll);
-    };
-    const handleScroll = () => {
-      // A introdução já terminou de esvanecer após os primeiros 320px.
-      if (!frame && !(previousScroll === 320 && window.scrollY >= 320)) {
-        frame = requestAnimationFrame(updateScroll);
-      }
-    };
-    handleScroll();
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      cancelAnimationFrame(frame);
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+    // Monitora o scroll para esvanecer suavemente na descida para a 2ª dobra se não estiver no modo embutido
+    useEffect(() => {
+      if (embeddedMode) return;
+      let frame = 0;
+      let previousScroll = -1;
+      const updateScroll = () => {
+        frame = 0;
+        const nextScroll = Math.max(0, Math.min(window.scrollY, 320));
+        if (nextScroll === previousScroll) return;
+        previousScroll = nextScroll;
+        setScrollY(nextScroll);
+      };
+      const handleScroll = () => {
+        if (!frame && !(previousScroll === 320 && window.scrollY >= 320)) {
+          frame = requestAnimationFrame(updateScroll);
+        }
+      };
+      handleScroll();
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      return () => {
+        cancelAnimationFrame(frame);
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [embeddedMode]);
 
   // Transição 100% automática com esvaecimento (cross-dissolve suave)
   useEffect(() => {
@@ -185,8 +186,8 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
   const activePillar = PILLARS[displayedIndex];
   const CardIcon = activePillar.icon;
 
-  // Transição suave no scroll vertical da página
-  const scrollFadeOut = Math.min(1, Math.max(0, scrollY / 320));
+  // Transição suave no scroll vertical da página (se embutido, controlado diretamente pelo pai)
+  const scrollFadeOut = embeddedMode ? 0 : Math.min(1, Math.max(0, scrollY / 320));
   const containerOpacity = 1 - scrollFadeOut;
   const containerTranslateY = -24 * scrollFadeOut;
 
@@ -765,6 +766,6 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = ({
       </div>
     </section>
   );
-};
+});
 
 export default LandingIntroSection;

@@ -40,14 +40,15 @@ const layerConfigurations = Object.entries(LAYER_CONFIGS);
 const scrollFrameIntervalMs = 1000 / 30;
 const scrollActivityMs = 150;
 
-export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProps> = ({
-  scrollProgressRef,
-  isDark,
-  accentConfig,
-  getPreparedModel,
-  onLoaded,
-  onUnavailable
-}) => {
+export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProps> = React.memo(
+  function HippocampusDissectionScene({
+    scrollProgressRef,
+    isDark,
+    accentConfig,
+    getPreparedModel,
+    onLoaded,
+    onUnavailable
+  }) {
   const mountRef = useRef<HTMLDivElement | null>(null);
   const backdropShadowRef = useRef<HTMLDivElement | null>(null);
   const floorShadowRef = useRef<HTMLDivElement | null>(null);
@@ -558,7 +559,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
               calloutBadgeRefs.current[c.id] = el;
             }}
             style={{ opacity: 0 }}
-            className="absolute top-0 left-0 px-2.5 py-1 rounded-full backdrop-blur-md border bg-white/82 dark:bg-zinc-900/82 border-zinc-200/80 dark:border-zinc-800/80 text-zinc-800 dark:text-zinc-200 text-[10px] sm:text-[11px] font-semibold transition-colors duration-300 whitespace-nowrap shadow-sm"
+            className="absolute top-0 left-0 px-2.5 py-1 rounded-full border bg-white/95 dark:bg-zinc-900/95 border-zinc-200/90 dark:border-zinc-800/90 text-zinc-800 dark:text-zinc-200 text-[10px] sm:text-[11px] font-semibold transition-colors duration-200 whitespace-nowrap shadow-sm will-change-transform"
           >
             {c.isPrimary && (
               <span
@@ -580,6 +581,6 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
       </div>
     </div>
   );
-};
+});
 
 export default HippocampusDissectionScene;
