@@ -189,7 +189,7 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
   return (
     <section
       id="recursos-adicionais"
-      className="scroll-mt-20 py-18 sm:py-26 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+      className="relative scroll-mt-20 pt-12 sm:pt-16 pb-8 sm:pb-12 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
     >
       <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 space-y-10 reveal-up ${isVisible ? 'is-visible' : ''}`}>
         {/* Cabeçalho da Seção Padronizado */}
@@ -376,6 +376,12 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
           </div>
         </div>
       </div>
+
+      {/* Conector de Transição Inferior: Feixe de luz sutil conectando à dobra de planos */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-zinc-200/60 dark:via-zinc-800/60 to-transparent"
+      />
     </section>
   );
 };

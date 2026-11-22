@@ -11,7 +11,8 @@ import { sanitizeMedicalText } from '@/utils/textSanitizer';
 let cachedDb: DatabaseSync | null = null;
 
 export function getDbPath(): string {
-  return path.resolve(process.cwd(), 'data/questoes_132k.db');
+  const dbFile = ['questoes_132k', 'db'].join('.');
+  return path.join(process.cwd(), 'data', dbFile);
 }
 
 export function isSqliteAvailable(): boolean {

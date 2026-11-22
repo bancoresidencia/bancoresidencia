@@ -36,9 +36,22 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
   return (
     <section
       id="planos"
-      className="scroll-mt-20 py-18 sm:py-26 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+      className="relative scroll-mt-20 pt-8 sm:pt-12 pb-14 sm:pb-20 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden"
       style={{ contentVisibility: 'auto', containIntrinsicSize: '1px 800px' } as React.CSSProperties}
     >
+      {/* Ponte Luminescente de Transição de Entrada (Elimina o vazio escuro entre as dobras) */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] sm:w-[980px] h-48 opacity-35 dark:opacity-20 blur-3xl rounded-full"
+        style={{
+          background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-zinc-200/80 dark:via-zinc-800/80 to-transparent"
+      />
+
       <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 reveal-up ${isVisible ? 'is-visible' : ''}`}>
         {/* Cabeçalho dos Planos Padronizado (Alinhado à Esquerda - Estilo Imagem 2) */}
         <div className="max-w-3xl text-left mb-10 sm:mb-12">

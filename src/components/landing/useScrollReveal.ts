@@ -4,10 +4,21 @@ import { createContext, useContext, useEffect, useRef, useState } from 'react';
 
 export const LandingSectionVisibleContext = createContext(true);
 
-export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(threshold = 0.14) {
+export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
+  thresholdOrOptions: number | { threshold?: number; rootMargin?: string } = 0.08,
+  defaultRootMargin = '0px 0px 140px 0px'
+) {
   const ref = useRef<T | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const isNear = useContext(LandingSectionVisibleContext);
+
+  const threshold = typeof thresholdOrOptions === 'number'
+    ? thresholdOrOptions
+    : (thresholdOrOptions?.threshold ?? 0.08);
+
+  const rootMargin = typeof thresholdOrOptions === 'number'
+    ? defaultRootMargin
+    : (thresholdOrOptions?.rootMargin ?? defaultRootMargin);
 
   useEffect(() => {
     if (!isNear || isVisible) return;
@@ -28,12 +39,12 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(threshol
           }
         }
       },
-      { threshold, rootMargin: '0px 0px -40px 0px' }
+      { threshold, rootMargin }
     );
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [isNear, isVisible, threshold]);
+  }, [isNear, isVisible, threshold, rootMargin]);
 
   return { ref, isVisible };
 }

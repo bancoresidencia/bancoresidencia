@@ -3,7 +3,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import {
   GraduationCap,
-  FileSpreadsheet,
   Building2,
   Filter,
   RotateCcw,
@@ -161,12 +160,27 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
   // Padrão: Todas as UFs (ALL)
   const [selectedUf, setSelectedUf] = useState<string>('ALL');
   const [hoveredUf, setHoveredUf] = useState<string | null>(null);
+  const [highlightedCity, setHighlightedCity] = useState<string | null>(null);
 
-  // Hook de animação para os contadores numéricos
+  // Hook de animação para os contadores numéricos e para a dobra do mapa
   const { ref: statsRef, isVisible: statsVisible } = useScrollReveal<HTMLDivElement>(0.12);
+  const { ref: mapSectionRef, isVisible: mapVisible } = useScrollReveal<HTMLDivElement>(0.06);
   const count200 = useAnimatedCounter(200, statsVisible, 1200);
   const count100 = useAnimatedCounter(100, statsVisible, 1200);
   const count120 = useAnimatedCounter(120, statsVisible, 1200);
+
+  // Coordenadas das 31 cidades ordenadas de Sul (y alto) para Norte (y baixo) para o efeito de cascata regional em radar
+  const ALL_CITY_PINS = useMemo(() => {
+    return Object.entries(CITY_COORDINATES)
+      .map(([cityName, coord]) => ({
+        cityName,
+        x: coord.x,
+        y: coord.y,
+        screenX: (coord.x / 450) * 100,
+        screenY: (coord.y / 460) * 100
+      }))
+      .sort((a, b) => b.y - a.y);
+  }, []);
 
   // Lista de estados ordenados para o seletor (Apenas nomes dos estados)
   const ufOptions = useMemo(() => {
@@ -360,12 +374,17 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
     });
   }, [isZoomed, currentStateData, stateCalloutInstitutions, zoomScale, translateX, translateY]);
 
+  // Pins do estado ordenados de Sul para Norte para entrada em cascata regional
+  const sortedStatePins = useMemo(() => {
+    return [...institutionPins].sort((a, b) => b.screenY - a.screenY);
+  }, [institutionPins]);
+
   return (
     <section
       id="onde-vem-as-provas"
-      className="scroll-mt-16 py-18 sm:py-24 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+      className="scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-10 sm:space-y-12">
+      <div ref={mapSectionRef} className="max-w-7xl mx-auto px-4 sm:px-6 space-y-10 sm:space-y-12">
         {/* =========================================================================
             1. DOBRA DO MAPA DO BRASIL: LIVRE E INTEGRADA AO FUNDO CONTÍNUO
             ========================================================================= */}
@@ -443,7 +462,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                       transformOrigin: '0 0'
                     }}
                   >
-                    {(canonicalBrazilStatesSvgData as CanonicalStateItem[]).map((state) => {
+                    {(canonicalBrazilStatesSvgData as CanonicalStateItem[]).map((state, stateIdx) => {
                       const isSelected = selectedUf === state.uf;
                       const isHovered = hoveredUf === state.uf;
 
@@ -474,8 +493,12 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                       return (
                         <g
                           key={state.uf}
-                          className="cursor-pointer transition-all duration-150"
-                          style={{ opacity, transition: 'opacity 0.3s ease' }}
+                          className={`cursor-pointer transition-all duration-150 ${mapVisible ? 'animate-state-contour' : 'opacity-0'}`}
+                          style={{
+                            opacity,
+                            animationDelay: `${(stateIdx % 10) * 35}ms`,
+                            transition: 'opacity 0.3s ease'
+                          }}
                           onClick={() => handleSelectState(state.uf)}
                           onMouseEnter={() => setHoveredUf(state.uf)}
                           onMouseLeave={() => setHoveredUf(null)}
@@ -495,18 +518,67 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                   </g>
                 </svg>
 
-                {/* Marcadores de GPS com Logo Redonda e Ponteiro no Solo (Zero Sobreposição, Sem Hastes Longas) */}
+                {/* 1. Visão Geral do Brasil: Todas as 31 cidades com efeito radar pulsando de Sul para Norte em ondas de 30ms */}
+                {!isZoomed && mapVisible &&
+                  ALL_CITY_PINS.map((city, idx) => {
+                    const isHighlighted = highlightedCity === city.cityName;
+                    return (
+                      <div
+                        key={city.cityName}
+                        className="absolute z-20 pointer-events-auto cursor-pointer animate-pin-radar-pop group"
+                        style={{
+                          left: `${city.screenX}%`,
+                          top: `${city.screenY}%`,
+                          transform: 'translate(-50%, -50%)',
+                          animationDelay: `${idx * 30}ms`,
+                          animationFillMode: 'both'
+                        }}
+                        onClick={() => {
+                          const uf = Object.keys(STATE_INSTITUTIONS).find((k) =>
+                            STATE_INSTITUTIONS[k].some((i) => i.cidade === city.cityName)
+                          );
+                          if (uf) handleSelectState(uf);
+                        }}
+                        onMouseEnter={() => setHighlightedCity(city.cityName)}
+                        onMouseLeave={() => setHighlightedCity(null)}
+                      >
+                        <div className="relative flex items-center justify-center">
+                          {/* Anel de pulso sutil e contínuo (ripple wave) de 2.5s no pin selecionado */}
+                          {isHighlighted && (
+                            <div
+                              aria-hidden="true"
+                              className="absolute -inset-2 rounded-full animate-pin-ripple pointer-events-none"
+                              style={{
+                                border: `2px solid ${accentConfig.primaryHex}`,
+                                boxShadow: `0 0 12px ${accentConfig.primaryHex}`
+                              }}
+                            />
+                          )}
+                          <div
+                            className={`w-2.5 h-2.5 rounded-full border border-white dark:border-zinc-950 shadow-md transition-all duration-200 ${
+                              isHighlighted ? 'scale-150 ring-2 ring-white' : 'group-hover:scale-130'
+                            }`}
+                            style={{ backgroundColor: accentConfig.primaryHex }}
+                          />
+                        </div>
+                      </div>
+                    );
+                  })}
+
+                {/* 2. Marcadores de GPS com Logo Redonda e Ponteiro no Solo (Quando em Zoom no Estado) */}
                 {isZoomed &&
-                  institutionPins.map(({ inst, screenX, screenY }) => {
+                  sortedStatePins.map(({ inst, screenX, screenY }, pinIdx) => {
                     const isHighlighted = highlightedInstId === inst.id;
                     return (
                       <div
                         key={inst.id}
-                        className="absolute z-20 flex flex-col items-center pointer-events-auto cursor-pointer group transition-all duration-200"
+                        className="absolute z-20 flex flex-col items-center pointer-events-auto cursor-pointer group transition-all duration-200 animate-pin-teardrop-pop"
                         style={{
                           left: `${screenX}%`,
                           top: `${screenY}%`,
-                          transform: 'translate(-50%, -100%)'
+                          transform: 'translate(-50%, -100%)',
+                          animationDelay: `${pinIdx * 30}ms`,
+                          animationFillMode: 'both'
                         }}
                         onClick={() => {
                           setHighlightedInstId(inst.id);
@@ -521,6 +593,18 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                       >
                         {/* Marcador de GPS Teardrop Moderno: Cabeça Circular + Agulha Direta no Solo */}
                         <div className="relative flex flex-col items-center">
+                          {/* Anel de pulso sutil e contínuo (ripple wave) de 2.5s no pin selecionado */}
+                          {isHighlighted && (
+                            <div
+                              aria-hidden="true"
+                              className="absolute -inset-1 rounded-full animate-pin-ripple pointer-events-none"
+                              style={{
+                                border: `2px solid ${accentConfig.primaryHex}`,
+                                boxShadow: `0 0 14px ${accentConfig.primaryHex}`
+                              }}
+                            />
+                          )}
+
                           <div
                             className={`w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-full bg-white dark:bg-[#18181f] p-1 shadow-[0_4px_16px_rgba(0,0,0,0.6)] border-2 transition-all duration-200 flex items-center justify-center overflow-hidden shrink-0 ${
                               isHighlighted ? 'scale-125 ring-2 ring-white' : 'group-hover:scale-115'
@@ -615,9 +699,6 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                         <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
                           {nac.nome}
                         </div>
-                        <div className="text-[10px] font-semibold text-zinc-600 dark:text-zinc-300 mt-0.5">
-                          +{nac.questoesCount} q • {nac.provasCount} cadernos
-                        </div>
                       </div>
                     </div>
                   ))}
@@ -686,7 +767,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                 </div>
 
                 {/* Grid de Cards com Rolagem Interna Calibrada à Altura Exata do Mapa */}
-                <div className="max-h-[265px] lg:max-h-[265px] overflow-y-auto pr-1 sm:pr-1.5 scrollbar-thin scrollbar-thumb-zinc-300 dark:scrollbar-thumb-zinc-700/60 rounded-xl">
+                <div className="max-h-[295px] lg:max-h-[295px] overflow-y-auto pr-1 sm:pr-1.5 scrollbar-thin scrollbar-thumb-zinc-300 dark:scrollbar-thumb-zinc-700/60 rounded-xl">
                   {displayedInstitutions.length === 0 ? (
                     <div className="p-6 text-center rounded-2xl bg-zinc-50/60 dark:bg-[#121216] border border-zinc-200/80 dark:border-zinc-800 text-xs text-zinc-500 space-y-2">
                       <p>Nenhuma banca encontrada para &quot;{searchQuery}&quot; em {currentUfName}.</p>
@@ -703,23 +784,26 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                     </div>
                   ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {displayedInstitutions.map((inst) => {
+                      {displayedInstitutions.map((inst, idx) => {
                         const isHighlighted = highlightedInstId === inst.id;
                         return (
                           <div
                             key={inst.id}
                             id={`inst-card-${inst.id}`}
-                            className={`p-3.5 rounded-2xl border transition-all duration-200 flex flex-col justify-between group shadow-2xs cursor-pointer ${
+                            className={`animate-banca-stagger p-3 rounded-2xl border transition-all duration-200 flex items-center group shadow-2xs cursor-pointer ${
                               isHighlighted
                                 ? 'bg-zinc-100 dark:bg-[#1b1b24] ring-2 scale-[1.01]'
                                 : 'bg-zinc-50/80 dark:bg-[#121216] border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-400 dark:hover:border-zinc-700'
                             }`}
-                            style={isHighlighted ? { borderColor: accentConfig.primaryHex } : undefined}
+                            style={{
+                              animationDelay: `${Math.min(idx, 15) * 35}ms`,
+                              ...(isHighlighted ? { borderColor: accentConfig.primaryHex } : {})
+                            }}
                             onMouseEnter={() => setHighlightedInstId(inst.id)}
                             onMouseLeave={() => setHighlightedInstId(null)}
                             onClick={() => onSelectInstitution?.(inst as unknown as InstitutionInfo)}
                           >
-                            <div className="flex items-start gap-2.5">
+                            <div className="flex items-center gap-3 w-full min-w-0">
                               <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 flex items-center justify-center p-1 shrink-0 overflow-hidden shadow-2xs">
                                 {inst.logoSlug ? (
                                   // eslint-disable-next-line @next/next/no-img-element
@@ -745,23 +829,16 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                                   <span className="px-1.5 py-0.2 rounded text-[9px] font-bold bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-300 shrink-0">
                                     {inst.uf}
                                   </span>
+                                  {inst.bancaOrganizadora && (
+                                    <span className="text-[9px] font-medium text-zinc-400 dark:text-zinc-500 truncate max-w-[120px]">
+                                      • {inst.bancaOrganizadora}
+                                    </span>
+                                  )}
                                 </div>
-                                <div className="text-[11px] text-zinc-600 dark:text-zinc-400 leading-snug line-clamp-2 mt-0.5">
+                                <div className="text-[11px] text-zinc-600 dark:text-zinc-400 leading-snug line-clamp-1 mt-0.5">
                                   {inst.nome}
                                 </div>
                               </div>
-                            </div>
-
-                            <div className="mt-3 pt-2.5 border-t border-zinc-200/80 dark:border-zinc-800/80 flex items-center justify-between text-[11px]">
-                              <div className="flex items-center gap-1 text-zinc-500 dark:text-zinc-400">
-                                <FileSpreadsheet className="w-3 h-3" />
-                                <span className="font-semibold text-zinc-700 dark:text-zinc-300">
-                                  +{inst.questoesCount} questões
-                                </span>
-                              </div>
-                              <span className="text-[10px] font-medium text-zinc-500 dark:text-zinc-400 truncate max-w-[120px]">
-                                {inst.bancaOrganizadora ? `Banca: ${inst.bancaOrganizadora}` : `${inst.provasCount} cadernos`}
-                              </span>
                             </div>
                           </div>
                         );
