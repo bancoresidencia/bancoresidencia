@@ -436,6 +436,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     } catch {}
   }, [inkOwner?.id, question.id]);
 
+  // Visualização de rascunhos da tentativa anterior (controlado no cabeçalho)
+  const [showPreviousDraft, setShowPreviousDraft] = useState(false);
+  useEffect(() => {
+    setShowPreviousDraft(false);
+  }, [question.id, solveAttempt]);
+
   // Anotações clínicas pessoais da questão (Modo Normal de Estudo)
   const [isNoteOpen, setIsNoteOpen] = useState(false);
   const [studentNote, setStudentNote] = useState('');
@@ -1082,6 +1088,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setIsAnswered(false);
     setPendingSelected(null);
     setShowCommentary(false);
+    setShowPreviousDraft(false);
     attemptRef.current = null;
     setSolveAttempt(prev => {
       const next = prev + 1;
@@ -1390,6 +1397,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       <StudyInkLayer
         content={`${inkContext}:${question.id}`}
         attemptNumber={solveAttempt}
+        showPreviousAttempt={showPreviousDraft}
+        onTogglePreviousAttempt={() => setShowPreviousDraft(prev => !prev)}
         choose={isAnswered || isWrittenQuestion ? undefined : letter => { const option = activeQuestion.options?.find(item => item.letter === letter); if (option) handleSelectOption(option.letter) }}
       />
       {legacyPreview.length > 0 && <details><summary>Recuperar grifos antigos deste navegador ({legacyPreview.length})</summary>
@@ -1429,16 +1438,58 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               </Button>
             )}
 
-            {/* Mini-card de Status de Resolução Anterior ou na Sessão */}
-            {(hasPreviousAnswer || isAnswered) && (
+            {/* Mini-card de Status de Resolução / Tentativas */}
+            {isAnswered ? (
               <div
                 className={`flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold rounded-xl border shadow-xs transition-all ${
                   isAnuladaQuestion
                     ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-800/60 text-amber-800 dark:text-amber-300'
-                    : isAnswered
-                    ? isUserCorrect
-                      ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300'
-                      : 'bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800/60 text-rose-800 dark:text-rose-300'
+                    : isUserCorrect
+                    ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300'
+                    : 'bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800/60 text-rose-800 dark:text-rose-300'
+                }`}
+              >
+                {isAnuladaQuestion ? (
+                  <AlertCircle className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 shrink-0" />
+                ) : isUserCorrect ? (
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                ) : (
+                  <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400 shrink-0" />
+                )}
+                <span>Resolvida nesta sessão</span>
+
+                {/* Botão Refazer (só após já ter feito a questão) + Indicador de ordinal (2ª vez, etc.) */}
+                <div className="inline-flex items-center gap-1">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="xs"
+                    onClick={handleStartReSolve}
+                    title="Resolver novamente esta questão (iniciar nova tentativa com rascunho limpo)"
+                    className="ml-1 h-5 px-1.5 py-0 text-[10px] font-extrabold bg-white dark:bg-zinc-900 border-current cursor-pointer"
+                    leftIcon={<RotateCcw className="w-2.5 h-2.5" />}
+                  >
+                    Refazer
+                  </Button>
+                  {solveAttempt > 1 && (
+                    <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                      {solveAttempt}ª vez
+                    </span>
+                  )}
+                </div>
+              </div>
+            ) : solveAttempt > 1 ? (
+              /* Em andamento na 2ª vez ou superior: badge informativo, sem botão Refazer repetido */
+              <div className="flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold rounded-xl border shadow-xs bg-amber-50/80 dark:bg-amber-950/40 border-amber-200 dark:border-amber-800/60 text-amber-800 dark:text-amber-300">
+                <RotateCcw className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 shrink-0" />
+                <span>{solveAttempt}ª vez</span>
+              </div>
+            ) : hasPreviousAnswer ? (
+              /* Resolvida em sessão anterior histórica */
+              <div
+                className={`flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold rounded-xl border shadow-xs transition-all ${
+                  isAnuladaQuestion
+                    ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-800/60 text-amber-800 dark:text-amber-300'
                     : previousIsCorrect
                     ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300'
                     : 'bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800/60 text-rose-800 dark:text-rose-300'
@@ -1446,40 +1497,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               >
                 {isAnuladaQuestion ? (
                   <AlertCircle className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 shrink-0" />
-                ) : isAnswered ? (
-                  isUserCorrect ? (
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                  ) : (
-                    <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400 shrink-0" />
-                  )
                 ) : previousIsCorrect ? (
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 ) : (
                   <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400 shrink-0" />
                 )}
-                <span>{isAnswered ? 'Resolvida nesta sessão' : 'Resolvida anteriormente'}</span>
-                {(isAnswered || hasPreviousAnswer) && (
-                  <div className="inline-flex items-center gap-1">
-                    <Button
-                      type="button"
-                      variant="outline"
-                      size="xs"
-                      onClick={handleStartReSolve}
-                      title="Resolver novamente esta questão (iniciar nova tentativa com rascunho limpo)"
-                      className="ml-1 h-5 px-1.5 py-0 text-[10px] font-extrabold bg-white dark:bg-zinc-900 border-current cursor-pointer"
-                      leftIcon={<RotateCcw className="w-2.5 h-2.5" />}
-                    >
-                      Refazer
-                    </Button>
-                    {solveAttempt > 1 && (
-                      <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
-                        Tentativa {solveAttempt}
-                      </span>
-                    )}
-                  </div>
-                )}
+                <span>Resolvida anteriormente</span>
               </div>
-            )}
+            ) : null}
 
             {/* Borracha rápida de limpar destaques se houver marcações na questão */}
             {highlights.length > 0 && (
@@ -1497,7 +1522,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
             )}
           </div>
 
-          {/* Canto Superior Direito: Ações (Detalhes, Salvar na Pasta) + Contador da Questão */}
+          {/* Canto Superior Direito: Ações (Detalhes, Rever Rascunho, Salvar na Pasta, Anotação) + Contador da Questão */}
           <div className="flex items-center gap-2">
             {/* Botão para Revelar/Ocultar detalhes da questão (Apenas Ícone) */}
             <Button
@@ -1521,46 +1546,62 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               )}
             </Button>
 
-            {/* Botão de Salvar em Pasta Personalizada */}
+            {/* Botão de Rever Rascunho da Tentativa Anterior (colado ao lado do olho, sem ícone de olho) */}
+            {solveAttempt > 1 && (
+              <Button
+                type="button"
+                variant={showPreviousDraft ? 'secondary' : 'outline'}
+                size="xs"
+                onClick={() => setShowPreviousDraft(prev => !prev)}
+                className={`h-8 px-2.5 text-[11px] font-bold rounded-xl shadow-xs cursor-pointer whitespace-nowrap transition-all ${
+                  showPreviousDraft
+                    ? 'bg-amber-500/20 text-amber-600 dark:text-amber-300 border-amber-500/40 ring-1 ring-amber-500/30'
+                    : 'text-zinc-600 dark:text-zinc-300'
+                }`}
+                title={showPreviousDraft ? 'Ocultar rascunhos da tentativa anterior' : 'Rever rascunhos da tentativa anterior'}
+              >
+                {showPreviousDraft ? 'Ocultar rascunho' : 'Rever rascunho'}
+              </Button>
+            )}
+
+            {/* Botão de Salvar em Pasta Personalizada (Apenas Ícone) */}
             {folders && onSaveToFolder && (
               <Button
                 type="button"
                 variant={savedFolderIds.length > 0 ? 'secondary' : 'outline'}
-                size="xs"
+                size="icon"
                 onClick={() => setIsFolderModalOpen(true)}
-                className="text-[11px] font-bold shadow-xs"
+                className="w-8 h-8 rounded-xl shadow-xs p-0 justify-center shrink-0"
                 style={savedFolderIds.length > 0 ? {
                   backgroundColor: accentConfig.bgRgba,
                   borderColor: accentConfig.borderRgba,
                   color: accentConfig.primaryHex
                 } : undefined}
-                title="Salvar esta questão em uma pasta de estudos"
-                leftIcon={
-                  <FolderPlus
-                    className="w-3.5 h-3.5 transition-transform"
-                    style={{
-                      color: savedFolderIds.length > 0 ? accentConfig.primaryHex : undefined
-                    }}
-                  />
-                }
+                title={savedFolderIds.length > 0 ? `Salva em ${savedFolderIds.length} pasta(s)` : 'Salvar esta questão em uma pasta de estudos'}
+                aria-label={savedFolderIds.length > 0 ? `Salva em ${savedFolderIds.length} pasta(s)` : 'Salvar em pasta'}
               >
-                <span className="hidden sm:inline">{savedFolderIds.length > 0 ? `Na Pasta (${savedFolderIds.length})` : 'Salvar na Pasta'}</span>
+                <FolderPlus
+                  className="w-3.5 h-3.5 transition-transform"
+                  style={{
+                    color: savedFolderIds.length > 0 ? accentConfig.primaryHex : undefined
+                  }}
+                />
               </Button>
             )}
 
-            {/* Botão de Anotação Clínica Pessoal (Modo Normal de Estudo) */}
+            {/* Botão de Anotação Clínica Pessoal (Apenas Ícone) */}
             <Button
               type="button"
               variant={studentNote.trim() ? 'secondary' : 'outline'}
-              size="xs"
+              size="icon"
               onClick={() => setIsNoteOpen(prev => !prev)}
-              className="text-[11px] font-bold shadow-xs gap-1.5"
+              className="w-8 h-8 rounded-xl shadow-xs relative p-0 justify-center shrink-0"
               title="Anotações e lembretes pessoais para esta questão"
-              leftIcon={<StickyNote className="w-3.5 h-3.5 text-amber-500" />}
+              aria-label="Anotações pessoais"
             >
-              <span className="hidden sm:inline">Anotação</span>
+              <StickyNote className="w-3.5 h-3.5 text-amber-500" />
               {studentNote.trim() && (
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 absolute top-1.5 right-1.5 ring-1 ring-white dark:ring-zinc-950" />
               )}
             </Button>
 

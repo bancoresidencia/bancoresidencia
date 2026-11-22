@@ -172,6 +172,8 @@ type Actions = {
   flip?: () => void
   choose?: (letter: string) => void
   attemptNumber?: number
+  showPreviousAttempt?: boolean
+  onTogglePreviousAttempt?: () => void
 }
 
 function Editor({
@@ -180,12 +182,13 @@ function Editor({
   owner,
   flip,
   choose,
-  attemptNumber = 1
+  attemptNumber = 1,
+  showPreviousAttempt: propShowPreviousAttempt,
+  onTogglePreviousAttempt
 }: {
   doc: string
   baseDoc: string
   owner: string
-  attemptNumber?: number
 } & Actions) {
   const anchor = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
@@ -223,7 +226,18 @@ function Editor({
     }
     return []
   })
-  const [showPreviousAttempt, setShowPreviousAttempt] = useState(false)
+  const [internalShowPreviousAttempt, setInternalShowPreviousAttempt] = useState(false)
+  const isPreviousAttemptShown = typeof propShowPreviousAttempt === 'boolean'
+    ? propShowPreviousAttempt
+    : internalShowPreviousAttempt
+
+  const togglePreviousAttempt = () => {
+    if (onTogglePreviousAttempt) {
+      onTogglePreviousAttempt()
+    } else {
+      setInternalShowPreviousAttempt(prev => !prev)
+    }
+  }
   const [postIts, setPostIts] = useState<StickyPostIt[]>([])
   const [ready, setReady] = useState(false)
   const [status, setStatus] = useState('')
@@ -913,7 +927,7 @@ function Editor({
           style={{ pointerEvents: 'none' }}
         >
           {/* Camada Fantasma de Marca-texto da Tentativa Anterior */}
-          {showPreviousAttempt && previousStrokes.length > 0 && (
+          {isPreviousAttemptShown && previousStrokes.length > 0 && (
             <g className="ghost-previous-attempt">
               {previousStrokes.filter(s => s.kind === 'marker').map(s => render(s, true))}
             </g>
@@ -1038,7 +1052,7 @@ function Editor({
           onClick={e => e.stopPropagation()}
         >
           {/* Camada Fantasma da Tentativa Anterior (Caneta e Traços Frontais) */}
-          {showPreviousAttempt && previousStrokes.length > 0 && (
+          {isPreviousAttemptShown && previousStrokes.length > 0 && (
             <g className="ghost-previous-attempt">
               {previousStrokes.filter(s => s.kind !== 'marker').map(s => render(s, true))}
             </g>
@@ -1212,28 +1226,6 @@ function Editor({
             </div>
           </div>
         )}
-
-        {/* Botão Flutuante de Rever Rascunho da Tentativa Anterior (quando o aluno clica em Refazer) */}
-        {attemptNumber > 1 && (
-          <button
-            type="button"
-            onClick={() => setShowPreviousAttempt(prev => !prev)}
-            className={`absolute top-3 right-3 pointer-events-auto z-[10] px-3 py-1.5 rounded-xl text-[11px] font-bold shadow-md backdrop-blur-md border transition-all flex items-center gap-1.5 cursor-pointer active:scale-95 ${
-              showPreviousAttempt
-                ? 'bg-amber-500/25 text-amber-200 border-amber-500/50 ring-2 ring-amber-500/25'
-                : 'bg-zinc-900/90 hover:bg-zinc-800 text-zinc-300 hover:text-white border-zinc-700/80'
-            }`}
-            title="Ligar/desligar rascunhos da tentativa anterior"
-          >
-            {showPreviousAttempt ? <EyeOff className="w-3.5 h-3.5 text-amber-400" /> : <Eye className="w-3.5 h-3.5 text-amber-400" />}
-            <span>{showPreviousAttempt ? 'Ocultar rascunhos anteriores' : 'Rever rascunhos anteriores'}</span>
-            {previousStrokes.length > 0 && (
-              <span className="ml-0.5 px-1.5 py-0.2 rounded-full bg-amber-500/30 text-amber-300 text-[10px]">
-                {previousStrokes.length}
-              </span>
-            )}
-          </button>
-        )}
       </div>
 
       {/* Feedback Visual de Toque com 2 Dedos para Desfazer */}
@@ -1383,15 +1375,15 @@ function Editor({
               {attemptNumber > 1 && (
                 <button
                   type="button"
-                  onClick={() => setShowPreviousAttempt(prev => !prev)}
-                  title={showPreviousAttempt ? 'Ocultar rascunho anterior' : 'Rever rascunhos da tentativa anterior'}
+                  onClick={togglePreviousAttempt}
+                  title={isPreviousAttemptShown ? 'Ocultar rascunho anterior' : 'Rever rascunhos da tentativa anterior'}
                   className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all ${
-                    showPreviousAttempt
+                    isPreviousAttemptShown
                       ? 'bg-amber-950/60 text-amber-300 ring-1 ring-amber-500/60'
                       : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-900'
                   }`}
                 >
-                  {showPreviousAttempt ? <EyeOff className="w-4 h-4 text-amber-400" /> : <Eye className="w-4 h-4 text-amber-400" />}
+                  {isPreviousAttemptShown ? <EyeOff className="w-4 h-4 text-amber-400" /> : <Eye className="w-4 h-4 text-amber-400" />}
                 </button>
               )}
 
@@ -1691,10 +1683,14 @@ export function StudyInkLayer({
   content,
   flip,
   choose,
-  attemptNumber = 1
+  attemptNumber = 1,
+  showPreviousAttempt,
+  onTogglePreviousAttempt
 }: {
   content: string
   attemptNumber?: number
+  showPreviousAttempt?: boolean
+  onTogglePreviousAttempt?: () => void
 } & Actions) {
   const { user, isLoading } = useAuth()
   const owner = user?.id ?? 'guest'
@@ -1710,6 +1706,8 @@ export function StudyInkLayer({
       flip={flip}
       choose={choose}
       attemptNumber={attemptNumber}
+      showPreviousAttempt={showPreviousAttempt}
+      onTogglePreviousAttempt={onTogglePreviousAttempt}
     />
   )
 }

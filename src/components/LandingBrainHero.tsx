@@ -65,13 +65,30 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
   const activeActRef = useRef(0);
   const [cardsVisible, setCardsVisible] = useState(false);
 
+  const trackMetricsRef = useRef({ top: 0, height: 7920 });
+  const measureTrack = useCallback(() => {
+    const el = trackRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+    trackMetricsRef.current = {
+      top: rect.top + scrollTop,
+      height: rect.height || el.offsetHeight || 7920
+    };
+  }, []);
+
   const updateScroll = useCallback(() => {
     const el = trackRef.current;
     if (!el) return false;
-    const rect = el.getBoundingClientRect();
+    const scrollY = window.scrollY || document.documentElement.scrollTop || 0;
+    let { top: trackTop, height: trackHeight } = trackMetricsRef.current;
+    if (!trackHeight) {
+      trackHeight = el.offsetHeight || 7920;
+      trackMetricsRef.current.height = trackHeight;
+    }
     const winH = window.innerHeight || 800;
-    const scrollable = Math.max(rect.height - winH, 1);
-    const rawProgress = Math.max(0, Math.min(1, -rect.top / scrollable));
+    const scrollable = Math.max(trackHeight - winH, 1);
+    const rawProgress = Math.max(0, Math.min(1, (scrollY - trackTop) / scrollable));
 
     // Mapeamento contínuo das dobras:
     // 0.00 -> 0.16: Dobra 1 (Os 4 Pilares da Aprovação - Carrossel com cérebro centralizado no fundo)
@@ -109,7 +126,10 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
 
     // OS CARDS DA DOBRA 3:
     const cardsOpacity = smootherstep(0.50, 0.58, rawProgress);
-    setCardsVisible(cardsOpacity > 0.05);
+    const shouldShowCards = cardsOpacity > 0.05;
+    if (cardsVisible !== shouldShowCards) {
+      setCardsVisible(shouldShowCards);
+    }
 
     // PROGRESSO DA JORNADA ANATÔMICA (mapeado de 0.52 a 1.00):
     const dissectionProgress = Math.max(0, Math.min(1, (rawProgress - 0.52) / 0.48));
@@ -159,9 +179,10 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     const brainStage = brainStageRef.current;
     if (brainStage) {
       brainStage.style.opacity = brainInitialFade.toFixed(3);
-      brainStage.style.setProperty('--brain-desktop-x', `${brainDesktopX.toFixed(1)}px`);
-      brainStage.style.setProperty('--brain-mobile-top', (26 - 22 * toDobra3).toFixed(1) + '%');
-      brainStage.style.setProperty('--brain-scale', brainScale.toFixed(3));
+      const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
+      const x = isDesktop ? brainDesktopX.toFixed(1) : '0';
+      const mobileShiftY = isDesktop ? 0 : -22 * toDobra3;
+      brainStage.style.transform = `translate3d(${x}px, ${mobileShiftY.toFixed(1)}%, 0) scale(${brainScale.toFixed(3)})`;
     }
 
     const cardsPanel = cardsPanelRef.current;
@@ -172,8 +193,9 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
 
     const ambientGlow = ambientGlowRef.current;
     if (ambientGlow) {
-      ambientGlow.style.setProperty('--glow-desktop-left', `${glowLeftDesktop.toFixed(1)}%`);
-      ambientGlow.style.setProperty('--glow-desktop-top', '48%');
+      const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
+      const shiftVw = isDesktop ? (glowLeftDesktop - 50) : 0;
+      ambientGlow.style.transform = `translate3d(calc(-50% + ${shiftVw.toFixed(1)}vw), -50%, 0)`;
     }
 
     const scrollIndicator = scrollIndicatorRef.current;
@@ -188,9 +210,10 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     }
 
     return true;
-  }, []);
+  }, [cardsVisible]);
 
   useEffect(() => {
+    measureTrack();
     let rafId = 0;
     const onScroll = () => {
       if (rafId) return;
@@ -200,22 +223,20 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
       });
     };
     onScroll();
+    const onResize = () => {
+      measureTrack();
+      onScroll();
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll, { passive: true });
+    window.addEventListener('resize', onResize, { passive: true });
     document.addEventListener('visibilitychange', onScroll);
     return () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', onScroll);
+      window.removeEventListener('resize', onResize);
       document.removeEventListener('visibilitychange', onScroll);
     };
-  }, [updateScroll]);
-
-  // Garante que qualquer re-render de estado (cardsVisible, activeAct, journeyFrame)
-  // sincronize instantaneamente os estilos DOM calculados pelo scroll
-  useEffect(() => {
-    updateScroll();
-  }, [updateScroll, journeyFrame, activeAct, cardsVisible]);
+  }, [updateScroll, measureTrack]);
 
   const headlineGradient = isMonochrome
     ? isDark
