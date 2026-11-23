@@ -23,6 +23,7 @@ export default function ProvasPage() {
     if (banca) params.set('banca', banca);
     if (mode) params.set('examMode', mode);
     if (examDetails?.id) params.set('examId', examDetails.id);
+    if (examDetails?.modality) params.set('modalidade', examDetails.modality);
 
     router.push(`/questoes?${params.toString()}`);
   };

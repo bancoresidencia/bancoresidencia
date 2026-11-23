@@ -35,7 +35,8 @@ import {
 import {
   Question,
   AdvancedFilterState,
-  UserAnswerItem
+  UserAnswerItem,
+  StudyModalidade
 } from '@/types';
 import { AdvancedQuestionFilters } from '@/components/AdvancedQuestionFilters';
 import { QuestionSessionTransition } from '@/components/QuestionSessionTransition';
@@ -56,6 +57,7 @@ import {
   fetchQuestionIdsForListCriteria
 } from '@/services/questionService';
 import { prefetchQuestionResolutions } from '@/services/resolutionCache';
+import { getSupabaseInstitutionName } from '@/utils/institutionResolver';
 
 export const QuestoesView: React.FC = () => {
   const router = useRouter();
@@ -110,16 +112,27 @@ export const QuestoesView: React.FC = () => {
     const subSubfocoParam = searchParams.get('subSubfoco') || searchParams.get('sub_subfoco');
     const instParam = searchParams.get('instituicao');
     const anoParam = searchParams.get('ano');
+    const modParam = searchParams.get('modalidade');
+
+    let initialModalidades: StudyModalidade[] = ['Acesso Direto'];
+    if (modParam) {
+      if (modParam === 'r_plus' || modParam === 'R+') initialModalidades = ['R+'];
+      else if (modParam === 'revalida' || modParam === 'Revalida') initialModalidades = ['Revalida'];
+      else if (modParam === 'titulo' || modParam.startsWith('Título')) initialModalidades = ['Título de Especialista'];
+      else if (modParam === 'Acesso Direto' || modParam === 'acesso_direto') initialModalidades = ['Acesso Direto'];
+    }
+
+    const resolvedInst = instParam ? getSupabaseInstitutionName(instParam) : null;
 
     return {
       search,
-      modalidades: ['Acesso Direto'],
+      modalidades: initialModalidades,
       especialidades: espParam ? [espParam] : [],
       temas: temaParam ? [temaParam] : [],
       focos: focoParam ? [focoParam] : [],
       subfocos: subfocoParam ? [subfocoParam] : [],
       subSubfocos: subSubfocoParam ? [subSubfocoParam] : [],
-      instituicoes: instParam ? [instParam] : [],
+      instituicoes: resolvedInst ? [resolvedInst] : (instParam ? [instParam] : []),
       anos: anoParam ? [parseInt(anoParam, 10)] : [],
       tipoProva: [],
       status: 'Todas',
@@ -148,10 +161,11 @@ export const QuestoesView: React.FC = () => {
   // Índice da questão atual
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
 
-  // Lê lista ativa ou IDs explícitos (ex.: Caderno de Erros ?ids=...) dos parâmetros da URL
+  // Lê lista ativa, IDs explícitos ou caderno de prova oficial dos parâmetros da URL
   useEffect(() => {
     const listIdParam = searchParams.get('listId');
     const idsParam = searchParams.get('ids');
+    const examIdParam = searchParams.get('examId');
 
     if (listIdParam) {
       setSessionQuestionIds(null);
@@ -170,6 +184,22 @@ export const QuestoesView: React.FC = () => {
         setCurrentQuestionIndex(0);
         setBancoMode('resolucao');
       }
+    } else if (examIdParam) {
+      // Carregar questões em sequência oficial do caderno certificado
+      const controller = new AbortController();
+      fetch(`/api/exams/${encodeURIComponent(examIdParam)}`, { signal: controller.signal })
+        .then((res) => (res.ok ? res.json() : null))
+        .then((data) => {
+          if (data?.success && data.exam?.question_ids?.length > 0) {
+            setActiveListId(null);
+            setSessionQuestionIds(data.exam.question_ids);
+            setSessionQuestionLimit(data.exam.question_ids.length);
+            setCurrentQuestionIndex(0);
+            setBancoMode('resolucao');
+          }
+        })
+        .catch(() => {});
+      return () => controller.abort();
     }
   }, [searchParams, setActiveListId]);
 
