@@ -73,7 +73,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
           setHasAmbassadorBadge(Boolean(data.stats.hasAmbassadorBadge));
         }
       })
-      .catch(() => {});
+      .catch(() => { });
   }, [user?.id]);
 
   // Abas de Configurações
@@ -392,11 +392,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
             setActiveTab('profile');
             clearStatus();
           }}
-          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-            activeTab === 'profile'
+          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${activeTab === 'profile'
               ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold'
               : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-          }`}
+            }`}
         >
           <User className="w-3.5 h-3.5" />
           <span>Dados Pessoais & Foto</span>
@@ -408,11 +407,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
             setActiveTab('password');
             clearStatus();
           }}
-          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-            activeTab === 'password'
+          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${activeTab === 'password'
               ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold'
               : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-          }`}
+            }`}
         >
           <Lock className="w-3.5 h-3.5" />
           <span>Segurança & Senha</span>
@@ -424,11 +422,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
             setActiveTab('study');
             clearStatus();
           }}
-          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-            activeTab === 'study'
+          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${activeTab === 'study'
               ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold'
               : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-          }`}
+            }`}
         >
           <Target className="w-3.5 h-3.5" />
           <span>Metas & Estudo</span>
@@ -440,28 +437,26 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
             setActiveTab('subscription');
             clearStatus();
           }}
-          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-            activeTab === 'subscription'
+          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${activeTab === 'subscription'
               ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold'
               : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-          }`}
+            }`}
         >
           <Crown className="w-3.5 h-3.5 text-amber-500" />
           <span>Plano & Privilégios</span>
         </button>
 
-      
+
         <button
           type="button"
           onClick={() => {
             setActiveTab('ambassador');
             clearStatus();
           }}
-          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
-            activeTab === 'ambassador'
+          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${activeTab === 'ambassador'
               ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold'
               : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-          }`}
+            }`}
         >
           <Gift className="w-3.5 h-3.5 text-emerald-500" />
           <span>Embaixador</span>
@@ -478,11 +473,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       {/* Alerta de Status */}
       {statusMsg && (
         <div
-          className={`p-4 rounded-2xl text-xs font-semibold flex items-center gap-2.5 transition-all ${
-            statusMsg.type === 'success'
+          className={`p-4 rounded-2xl text-xs font-semibold flex items-center gap-2.5 transition-all ${statusMsg.type === 'success'
               ? 'bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300'
               : 'bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-rose-800 dark:text-rose-300'
-          }`}
+            }`}
         >
           {statusMsg.type === 'success' ? (
             <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-600 dark:text-emerald-400" />
@@ -573,11 +567,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                         key={idx}
                         type="button"
                         onClick={() => handleSelectPresetAvatar(url)}
-                        className={`w-11 h-11 rounded-2xl overflow-hidden border-2 transition-transform hover:scale-110 cursor-pointer ${
-                          avatarPreview === url
+                        className={`w-11 h-11 rounded-2xl overflow-hidden border-2 transition-transform hover:scale-110 cursor-pointer ${avatarPreview === url
                             ? 'ring-2 ring-blue-500 scale-105'
                             : 'border-slate-200 dark:border-slate-700 opacity-80 hover:opacity-100'
-                        }`}
+                          }`}
                       >
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img src={url} alt={`Avatar médico ${idx + 1}`} className="w-full h-full object-cover" />
@@ -800,11 +793,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
               const val = validatePasswordRequirements(newPassword);
               return (
                 <p
-                  className={`text-[11px] leading-relaxed transition-colors ${
-                    newPassword && !val.isValid
+                  className={`text-[11px] leading-relaxed transition-colors ${newPassword && !val.isValid
                       ? 'text-amber-600 dark:text-amber-400 font-medium'
                       : 'text-slate-500 dark:text-slate-400'
-                  }`}
+                    }`}
                 >
                   {newPassword && !val.isValid ? (
                     <span>A senha deve conter letras maiúsculas e minúsculas, um número e um símbolo.</span>
@@ -859,11 +851,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                       updateProfile({ dailyGoal: goal });
                       setStatusMsg({ type: 'success', text: `Meta diária atualizada para ${goal} questões/dia!` });
                     }}
-                    className={`px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
-                      dailyGoal === goal
+                    className={`px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${dailyGoal === goal
                         ? 'bg-amber-500 text-white shadow-sm'
                         : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
-                    }`}
+                      }`}
                   >
                     {goal} questões / dia
                   </button>
@@ -888,11 +879,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                     key={f.id}
                     type="button"
                     onClick={() => onChangeFontSize(f.id)}
-                    className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
-                      fontSize === f.id
+                    className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${fontSize === f.id
                         ? 'text-white shadow-sm'
                         : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
-                    }`}
+                      }`}
                     style={fontSize === f.id ? { backgroundColor: accentConfig.primaryHex } : undefined}
                   >
                     {f.label}
@@ -981,11 +971,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                       key={p.name}
                       type="button"
                       onClick={() => handleSaveExamTarget(p.name, p.date)}
-                      className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                        targetExam === p.name
+                      className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${targetExam === p.name
                           ? 'text-white shadow-xs'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
-                      }`}
+                        }`}
                       style={targetExam === p.name ? { backgroundColor: accentConfig.primaryHex } : undefined}
                     >
                       {p.name}
@@ -1037,13 +1026,13 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                     backgroundColor: isAdmin
                       ? 'rgba(245, 158, 11, 0.15)'
                       : plan === 'free'
-                      ? 'rgba(100, 116, 139, 0.15)'
-                      : accentConfig.bgRgba,
+                        ? 'rgba(100, 116, 139, 0.15)'
+                        : accentConfig.bgRgba,
                     color: isAdmin
                       ? '#f59e0b'
                       : plan === 'free'
-                      ? '#64748b'
-                      : accentConfig.primaryHex
+                        ? '#64748b'
+                        : accentConfig.primaryHex
                   }}
                 >
                   {isAdmin ? (
@@ -1060,8 +1049,8 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                       {isAdmin
                         ? 'Perfil de Administrador'
                         : plan === 'free'
-                        ? 'Plano Gratuito'
-                        : 'Perfil do Assinante Pro'}
+                          ? 'Plano Gratuito'
+                          : 'Perfil do Assinante Pro'}
                     </h2>
                     {isAdmin ? (
                       <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
@@ -1081,8 +1070,8 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                     {isAdmin
                       ? 'Credenciais com privilégios de gestão técnica, curadoria de gabaritos e controle do banco.'
                       : plan === 'free'
-                      ? 'Plano FREE • Limite de 10 resoluções diárias de questões e recursos básicos.'
-                      : `Plano ${user?.subscriptionPlan?.toUpperCase() || 'PRO'} • Acesso completo ao banco de questões classificadas e gabaritos.`}
+                        ? 'Plano FREE • Limite de 10 resoluções diárias de questões e recursos básicos.'
+                        : `Plano ${user?.subscriptionPlan?.toUpperCase() || 'PRO'} • Acesso completo ao banco de questões classificadas e gabaritos.`}
                   </p>
                 </div>
               </div>
@@ -1094,8 +1083,8 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                     {isAdmin
                       ? 'Administrador da Plataforma'
                       : plan === 'free'
-                      ? 'Estudante (Gratuito)'
-                      : 'Assinante Oficial'}
+                        ? 'Estudante (Gratuito)'
+                        : 'Assinante Oficial'}
                   </span>
                 </div>
 
@@ -1120,11 +1109,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
             {/* Mensagem de Feedback de Reembolso */}
             {refundMessage && (
               <div
-                className={`p-4 rounded-2xl text-xs font-semibold flex items-center gap-2.5 ${
-                  refundMessage.type === 'success'
+                className={`p-4 rounded-2xl text-xs font-semibold flex items-center gap-2.5 ${refundMessage.type === 'success'
                     ? 'bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300'
                     : 'bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-rose-800 dark:text-rose-300'
-                }`}
+                  }`}
               >
                 {refundMessage.type === 'success' ? <CheckCircle2 className="w-4 h-4 shrink-0" /> : <AlertCircle className="w-4 h-4 shrink-0" />}
                 <span>{refundMessage.text}</span>
@@ -1258,7 +1246,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                     }}
                   >
                     <Zap className="w-4 h-4 fill-current" />
-                    <span>Conhecer Planos e Assinar (a partir de R$ 19,90/mês)</span>
+                    <span>Conhecer Planos e Assinar</span>
                   </button>
                 </div>
               </div>

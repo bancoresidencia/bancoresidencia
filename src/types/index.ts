@@ -144,7 +144,8 @@ export type ActiveTab =
   | 'auditoria_medevo'
   | 'admin_usuarios'
   | 'admin_pagamentos'
-  | 'admin_embaixadores';
+  | 'admin_embaixadores'
+  | 'admin_planos';
 
 export * from './flashcards';
 export * from './studySchedule';

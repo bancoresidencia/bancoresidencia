@@ -24,7 +24,8 @@ import {
   Clock,
   Users,
   CreditCard,
-  Gift
+  Gift,
+  DollarSign
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
 import { useTabAvailability } from '@/context/TabAvailabilityContext';
@@ -85,7 +86,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     ...(isAdmin
       ? [
         { id: 'admin_usuarios' as ActiveTab, label: 'Usuários & Membros', icon: Users, href: '/admin/usuarios' },
-        { id: 'admin_pagamentos' as ActiveTab, label: 'Pagamentos & Planos', icon: CreditCard, href: '/admin/pagamentos' },
+        { id: 'admin_planos' as ActiveTab, label: 'Preços dos Planos', icon: DollarSign, href: '/admin/planos' },
+        { id: 'admin_pagamentos' as ActiveTab, label: 'Histórico de Pagamentos', icon: CreditCard, href: '/admin/pagamentos' },
         { id: 'admin_embaixadores' as ActiveTab, label: 'Embaixadores & Saques', icon: Gift, href: '/admin/embaixadores' },
         { id: 'curadoria' as ActiveTab, label: 'Curadoria de Gabaritos', icon: ShieldCheck, href: '/admin/curadoria' },
         { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag, href: '/admin/reportes' },

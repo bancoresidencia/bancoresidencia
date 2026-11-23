@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
+import Link from 'next/link';
 import {
   CreditCard,
   Search,
@@ -163,15 +164,27 @@ export const AdminPaymentsManagement: React.FC = () => {
             Histórico completo de transações, integração com Mercado Pago, conciliação e faturamento.
           </p>
         </div>
-        <Button
-          onClick={() => fetchOrders()}
-          variant="outline"
-          size="sm"
-          className="gap-1.5 self-start sm:self-auto"
-        >
-          <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
-          Atualizar Pedidos
-        </Button>
+        <div className="flex items-center gap-2 self-start sm:self-auto">
+          <Link href="/admin/planos">
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-1.5 text-emerald-600 dark:text-emerald-400 border-emerald-500/30 hover:bg-emerald-500/10"
+            >
+              <DollarSign className="w-3.5 h-3.5" />
+              <span>Preços dos Planos</span>
+            </Button>
+          </Link>
+          <Button
+            onClick={() => fetchOrders()}
+            variant="outline"
+            size="sm"
+            className="gap-1.5"
+          >
+            <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
+            Atualizar Pedidos
+          </Button>
+        </div>
       </div>
 
       {/* KPI Cards */}

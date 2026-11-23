@@ -23,7 +23,8 @@ import {
   RefreshCw,
   Users,
   CreditCard,
-  Gift
+  Gift,
+  DollarSign
 } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
 import { Logo } from '@/components/Logo';
@@ -215,6 +216,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                   reportes: '/admin/reportes',
                   auditoria_medevo: '/admin/medevo',
                   admin_usuarios: '/admin/usuarios',
+                  admin_planos: '/admin/planos',
                   admin_pagamentos: '/admin/pagamentos',
                   admin_embaixadores: '/admin/embaixadores'
                 };
@@ -408,13 +410,25 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                             </Link>
 
                             <Link
+                              href="/admin/planos"
+                              onClick={() => setProfileDropdownOpen(false)}
+                              className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-all cursor-pointer"
+                            >
+                              <div className="flex items-center gap-2">
+                                <DollarSign className="w-3.5 h-3.5 text-emerald-500" />
+                                <span>Preços dos Planos</span>
+                              </div>
+                              <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
+                            </Link>
+
+                            <Link
                               href="/admin/pagamentos"
                               onClick={() => setProfileDropdownOpen(false)}
                               className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-all cursor-pointer"
                             >
                               <div className="flex items-center gap-2">
-                                <CreditCard className="w-3.5 h-3.5 text-emerald-500" />
-                                <span>Pagamentos & Planos</span>
+                                <CreditCard className="w-3.5 h-3.5 text-blue-500" />
+                                <span>Histórico de Pagamentos</span>
                               </div>
                               <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
                             </Link>

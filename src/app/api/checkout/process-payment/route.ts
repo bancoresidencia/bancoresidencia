@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
-import { PLANS, isPlanId } from '@/config/plans';
+import { isPlanId } from '@/config/plans';
+import { getEffectivePlan } from '@/services/planPricingService';
 import { normalizeReferralCode } from '@/config/ambassadorConfig';
 import { validateBackendReferralCoupon } from '@/services/ambassadorService';
 import { synchronizePayment } from '@/services/paymentFulfillmentService';
@@ -39,7 +40,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const selectedPlan = PLANS[planId];
+    const selectedPlan = await getEffectivePlan(planId);
     const paymentService = getPaymentService();
     const supabaseAdmin = getSupabaseAdmin();
 

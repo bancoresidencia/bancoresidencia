@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   X,
   Check,
@@ -50,6 +50,20 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
   const [couponInput, setCouponInput] = useState<string>('');
   const [couponFeedback, setCouponFeedback] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
+  const [showPrices, setShowPrices] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      fetch('/api/plans')
+        .then((r) => r.json())
+        .then((data) => {
+          if (data.success && typeof data.showPricesOnSite === 'boolean') {
+            setShowPrices(data.showPricesOnSite);
+          }
+        })
+        .catch(() => {});
+    }
+  }, [isOpen]);
 
   if (isOpen !== prevIsOpen) {
     setPrevIsOpen(isOpen);
@@ -247,8 +261,8 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
               {couponFeedback && (
                 <div
                   className={`mt-2 p-2.5 rounded-xl text-xs flex items-center gap-2 ${couponFeedback.type === 'success'
-                      ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
-                      : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30'
+                    ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
+                    : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30'
                     }`}
                 >
                   {couponFeedback.type === 'success' ? (
@@ -283,8 +297,8 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                   <div
                     key={plan.id}
                     className={`flex flex-col pt-8 sm:pt-9 pb-5 px-5 rounded-3xl border transition-all relative ${isHighlighted
-                        ? 'border-2 shadow-xl bg-slate-900 text-white dark:bg-slate-950 ring-1 ring-white/10'
-                        : 'border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/40 text-slate-900 dark:text-white'
+                      ? 'border-2 shadow-xl bg-slate-900 text-white dark:bg-slate-950 ring-1 ring-white/10'
+                      : 'border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/40 text-slate-900 dark:text-white'
                       }`}
                     style={isHighlighted ? { borderColor: accentConfig.primaryHex } : {}}
                   >
@@ -310,72 +324,75 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                         )}
                       </div>
 
-                      {/* Equivalência Mensal */}
-                      <div className="mt-2.5">
-                        {hasDiscount && (
-                          <div className="text-[11px] line-through text-slate-400 font-medium">
-                            De R$ {origMonthly.toFixed(2).replace('.', ',')}/mês
-                          </div>
-                        )}
-                        <div className="flex items-baseline gap-1">
-                          <span className="text-xs text-slate-400 font-bold">R$ </span>
-                          <span className={`text-3xl font-black tracking-tight ${hasDiscount ? 'text-emerald-400' : ''}`}>
-                            {discMonthly.toFixed(2).replace('.', ',')}
-                          </span>
-                          <span className="text-xs text-slate-400">/mês</span>
-                        </div>
-                      </div>
-
-                      {/* Parcelamento e Preço Total */}
-                      <div className="text-[11px] text-slate-400 mt-1">
-                        {plan.maxInstallments > 1 ? (
-                          <>
-                            {hasDiscount ? (
-                              <div className="font-bold text-emerald-400">
-                                {plan.maxInstallments}x de R$ {discInstallment.toFixed(2).replace('.', ',')}
+                      {/* Bloco de Preço e Equivalência Mensal (Governante: platform_settings no Supabase) */}
+                      {showPrices && (
+                        <>
+                          <div className="mt-2.5">
+                            {hasDiscount && (
+                              <div className="text-[11px] line-through text-slate-400 font-medium">
+                                De R$ {origMonthly.toFixed(2).replace('.', ',')}/mês
                               </div>
+                            )}
+                            <div className="flex items-baseline gap-1">
+                              <span className="text-xs text-slate-400 font-bold">R$ </span>
+                              <span className={`text-3xl font-black tracking-tight ${hasDiscount ? 'text-emerald-400' : ''}`}>
+                                {discMonthly.toFixed(2).replace('.', ',')}
+                              </span>
+                              <span className="text-xs text-slate-400">/mês</span>
+                            </div>
+                          </div>
+
+                          <div className="text-[11px] text-slate-400 mt-1">
+                            {plan.maxInstallments > 1 ? (
+                              <>
+                                {hasDiscount ? (
+                                  <div className="font-bold text-emerald-400">
+                                    {plan.maxInstallments}x de R$ {discInstallment.toFixed(2).replace('.', ',')}
+                                  </div>
+                                ) : (
+                                  <div>
+                                    {plan.maxInstallments}x de R$ {origInstallment.toFixed(2).replace('.', ',')}
+                                  </div>
+                                )}
+                                <div className="text-[10px] mt-0.5">
+                                  {hasDiscount ? (
+                                    <span>
+                                      <span className="line-through text-slate-500 mr-1.5">
+                                        R$ {origTotal.toFixed(2).replace('.', ',')}
+                                      </span>
+                                      <strong className="text-emerald-400 font-bold">
+                                        R$ {discTotal.toFixed(2).replace('.', ',')} à vista
+                                      </strong>
+                                    </span>
+                                  ) : (
+                                    <span>(R$ {origTotal.toFixed(2).replace('.', ',')} à vista)</span>
+                                  )}
+                                </div>
+                              </>
                             ) : (
                               <div>
-                                {plan.maxInstallments}x de R$ {origInstallment.toFixed(2).replace('.', ',')}
+                                {hasDiscount ? (
+                                  <span>
+                                    <span className="line-through text-slate-500 mr-1.5">
+                                      R$ {origTotal.toFixed(2).replace('.', ',')}
+                                    </span>
+                                    <strong className="text-emerald-400 font-bold">
+                                      R$ {discTotal.toFixed(2).replace('.', ',')}
+                                    </strong>
+                                  </span>
+                                ) : (
+                                  'Cobrança mensal avulsa'
+                                )}
                               </div>
                             )}
-                            <div className="text-[10px] mt-0.5">
-                              {hasDiscount ? (
-                                <span>
-                                  <span className="line-through text-slate-500 mr-1.5">
-                                    R$ {origTotal.toFixed(2).replace('.', ',')}
-                                  </span>
-                                  <strong className="text-emerald-400 font-bold">
-                                    R$ {discTotal.toFixed(2).replace('.', ',')} à vista
-                                  </strong>
-                                </span>
-                              ) : (
-                                <span>(R$ {origTotal.toFixed(2).replace('.', ',')} à vista)</span>
-                              )}
-                            </div>
-                          </>
-                        ) : (
-                          <div>
-                            {hasDiscount ? (
-                              <span>
-                                <span className="line-through text-slate-500 mr-1.5">
-                                  R$ {origTotal.toFixed(2).replace('.', ',')}
-                                </span>
-                                <strong className="text-emerald-400 font-bold">
-                                  R$ {discTotal.toFixed(2).replace('.', ',')}
-                                </strong>
-                              </span>
-                            ) : (
-                              'Cobrança mensal avulsa'
-                            )}
                           </div>
-                        )}
-                      </div>
 
-                      {plan.savingsPercentage > 0 && (
-                        <div className="mt-2.5 inline-block px-2.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 text-[10px] font-black uppercase">
-                          Economia de {plan.savingsPercentage}%
-                        </div>
+                          {plan.savingsPercentage > 0 && (
+                            <div className="mt-2.5 inline-block px-2.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 text-[10px] font-black uppercase">
+                              Economia de {plan.savingsPercentage}%
+                            </div>
+                          )}
+                        </>
                       )}
                     </div>
 
@@ -398,8 +415,8 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                         setSelectedPlanOverride(plan);
                       }}
                       className={`w-full py-3 rounded-2xl font-black text-xs transition-transform hover:scale-[1.02] flex items-center justify-center gap-1.5 mt-2 cursor-pointer shadow-md ${isHighlighted
-                          ? 'text-white'
-                          : 'bg-slate-900 text-white dark:bg-white dark:text-slate-900'
+                        ? 'text-white'
+                        : 'bg-slate-900 text-white dark:bg-white dark:text-slate-900'
                         }`}
                       style={isHighlighted ? { backgroundColor: accentConfig.primaryHex } : {}}
                     >

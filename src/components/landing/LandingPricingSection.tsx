@@ -14,22 +14,38 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
   const { accent, mode, accentConfig } = useTheme();
   const isMonochrome = accent === 'neutral';
 
+  const [pricingConfig, setPricingConfig] = React.useState<{
+    showPrices: boolean;
+    plans: Record<string, { totalPrice: number; monthlyEquivalent: number; billingText: string; savingsLabel: string }>;
+  } | null>(null);
+
+  React.useEffect(() => {
+    fetch('/api/plans')
+      .then((r) => r.json())
+      .then((data) => {
+        if (data.success) {
+          setPricingConfig({
+            showPrices: Boolean(data.showPricesOnSite),
+            plans: data.plans || {}
+          });
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   const highlightTextStyle: React.CSSProperties = isMonochrome
     ? {
-        backgroundImage:
-          mode === 'dark'
-            ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
-            : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
-      }
+      backgroundImage:
+        mode === 'dark'
+          ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
+          : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
+    }
     : {
-        backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${
-          accentConfig.chartPalette[1] ?? accentConfig.hoverHex
-        } 26%, ${
-          mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
-        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${
-          accentConfig.primaryHex
+      backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex
+        } 26%, ${mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
+        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex
         } 100%)`
-      };
+    };
 
   const { ref, isVisible, isExiting } = useScrollReveal<HTMLDivElement>(0.08);
 
@@ -88,6 +104,13 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
           {LANDING_PRICING_PLANS.map((plan) => {
             const isPrimary = plan.tier === 'primary_highlight';
             const isSecondary = plan.tier === 'secondary_highlight';
+            const dynamicPlan = pricingConfig?.plans?.[plan.id];
+            const displayPriceMonthly = dynamicPlan
+              ? dynamicPlan.monthlyEquivalent.toFixed(2).replace('.', ',')
+              : plan.pricePerMonth;
+            const displayBillingText = dynamicPlan?.billingText || plan.billingText;
+            const displaySavingsLabel = dynamicPlan?.savingsLabel || plan.savingsLabel;
+            const shouldShowPrices = Boolean(pricingConfig?.showPrices);
 
             return (
               <div key={plan.id} className="relative flex flex-col">
@@ -102,13 +125,12 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
                 )}
 
                 <div
-                  className={`relative rounded-3xl p-6 sm:p-7 flex flex-col justify-between flex-1 transition-all duration-300 hover:-translate-y-1 bg-white/94 dark:bg-zinc-950/94 backdrop-blur-md shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] ${
-                    isPrimary
+                  className={`relative rounded-3xl p-6 sm:p-7 flex flex-col justify-between flex-1 transition-all duration-300 hover:-translate-y-1 bg-white/94 dark:bg-zinc-950/94 backdrop-blur-md shadow-[0_20px_50px_rgba(15,23,42,0.10)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] ${isPrimary
                       ? 'border-2 shadow-2xl lg:-translate-y-2 z-10'
                       : isSecondary
                         ? 'border-2 border-zinc-400/80 dark:border-zinc-600 shadow-lg z-10'
                         : 'border border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-400 dark:hover:border-zinc-700'
-                  }`}
+                    }`}
                   style={isPrimary ? { borderColor: accentConfig.primaryHex } : undefined}
                 >
                   {/* Friso luminoso sutil no topo (Laser Rim) */}
@@ -124,17 +146,16 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
                   {plan.badge && (
                     <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap z-20 pointer-events-none select-none">
                       <span
-                        className={`text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wide px-3.5 py-1 rounded-full shadow-md ${
-                          isPrimary
+                        className={`text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wide px-3.5 py-1 rounded-full shadow-md ${isPrimary
                             ? ''
                             : 'bg-zinc-900 text-white dark:bg-zinc-200 dark:text-zinc-950 border border-zinc-700/30 dark:border-zinc-300/30'
-                        }`}
+                          }`}
                         style={
                           isPrimary
                             ? {
-                                backgroundColor: accentConfig.primaryHex,
-                                color: accentConfig.primaryContrastHex
-                              }
+                              backgroundColor: accentConfig.primaryHex,
+                              color: accentConfig.primaryContrastHex
+                            }
                             : undefined
                         }
                       >
@@ -153,35 +174,36 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
                       </h3>
                     </div>
 
-                    {/* Bloco de Preço em Inter Tabular */}
-                    <div className="mt-4 pb-4 border-b border-zinc-200/80 dark:border-zinc-800">
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-sm font-bold text-zinc-600 dark:text-zinc-400">R$</span>
-                        <span className="text-4xl sm:text-[44px] font-black tracking-[-0.04em] text-zinc-950 dark:text-white tabular-nums leading-none">
-                          {plan.pricePerMonth}
-                        </span>
-                        <span className="text-xs sm:text-sm font-semibold text-zinc-600 dark:text-zinc-300">
-                          {plan.periodLabel}
-                        </span>
-                      </div>
+                    {/* Bloco de Preço Dinâmico (Governante: platform_settings no Supabase) */}
+                    {shouldShowPrices && (
+                      <div className="mt-4 pb-4 border-b border-zinc-200/80 dark:border-zinc-800 animate-in fade-in">
+                        <div className="flex items-baseline gap-1">
+                          <span className="text-sm font-bold text-zinc-600 dark:text-zinc-400">R$</span>
+                          <span className="text-4xl sm:text-[44px] font-black tracking-[-0.04em] text-zinc-950 dark:text-white tabular-nums leading-none">
+                            {displayPriceMonthly}
+                          </span>
+                          <span className="text-xs sm:text-sm font-semibold text-zinc-600 dark:text-zinc-300">
+                            {plan.periodLabel}
+                          </span>
+                        </div>
 
-                      <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-2.5 leading-relaxed min-h-[38px]">
-                        {plan.billingText}
-                      </p>
+                        <p className="text-xs text-zinc-600 dark:text-zinc-400 mt-2.5 leading-relaxed min-h-[38px]">
+                          {displayBillingText}
+                        </p>
 
-                      {/* Pílula de Economia */}
-                      <div className="mt-3">
-                        <div
-                          className={`py-2 px-3 rounded-xl text-xs font-extrabold text-center tracking-tight ${
-                            plan.hasSavings
-                              ? 'bg-emerald-500/12 dark:bg-emerald-500/15 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300'
-                              : 'bg-zinc-100 dark:bg-zinc-800/70 border border-zinc-200 dark:border-zinc-700/70 text-zinc-700 dark:text-zinc-300'
-                          }`}
-                        >
-                          {plan.savingsLabel}
+                        {/* Pílula de Economia */}
+                        <div className="mt-3">
+                          <div
+                            className={`py-2 px-3 rounded-xl text-xs font-extrabold text-center tracking-tight ${plan.hasSavings
+                                ? 'bg-emerald-500/12 dark:bg-emerald-500/15 border border-emerald-500/30 text-emerald-800 dark:text-emerald-300'
+                                : 'bg-zinc-100 dark:bg-zinc-800/70 border border-zinc-200 dark:border-zinc-700/70 text-zinc-700 dark:text-zinc-300'
+                              }`}
+                          >
+                            {displaySavingsLabel}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                   </div>
 
                   {/* Botão de Contratação */}
@@ -189,17 +211,16 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
                     <button
                       type="button"
                       onClick={() => onSelectPlan(plan.id, 'register')}
-                      className={`w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${
-                        isPrimary
+                      className={`w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${isPrimary
                           ? 'shadow-md hover:opacity-95'
                           : 'bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-100 border border-transparent dark:border-zinc-700'
-                      }`}
+                        }`}
                       style={
                         isPrimary
                           ? {
-                              backgroundColor: accentConfig.primaryHex,
-                              color: accentConfig.primaryContrastHex
-                            }
+                            backgroundColor: accentConfig.primaryHex,
+                            color: accentConfig.primaryContrastHex
+                          }
                           : undefined
                       }
                     >

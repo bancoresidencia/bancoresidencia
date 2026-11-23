@@ -83,7 +83,7 @@ export const PLANS: Record<PlanId, PlanDefinition> = {
     savingsPercentage: 60,
     features: [
       '24 meses de acesso irrestrito (R1 + R+ garantido)',
-      'Economia máxima de 60% (R$ 19,90/mês)',
+      'Economia máxima de 60%',
       'Atualização contínua de novas bancas e gabaritos',
       'Prioridade de suporte e recursos antecipados',
       'Garantia de 7 dias com reembolso incontestável'
