@@ -1,0 +1,62 @@
+{
+  "allam-2-7b": {
+    "model": "allam-2-7b",
+    "success": true,
+    "elapsedMs": 1905,
+    "usage": {
+      "queue_time": 0.269692836,
+      "prompt_tokens": 1290,
+      "prompt_time": 0.043492114,
+      "completion_tokens": 1500,
+      "completion_time": 1.072232278,
+      "total_tokens": 2790,
+      "total_time": 1.115724392
+    },
+    "rawOutput": "{\n  \"optionExplanations\": {\n    \"A\": \"A alternativa A (Adenomatoidea) não é um diagnóstico comum em casos de sangramento vaginal, especialmente em mulheres com história de atividades sexuales recentes e não há alguns meses de sangramento vaginal. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é mais comum em mulheres com história de atividades sexuales mais antigas e não é um diagnóstico comum em casos de sangramento vaginal recente. A histopatologia adenomatoidea é"
+  },
+  "meta-llama/llama-prompt-guard-2-86m": {
+    "model": "meta-llama/llama-prompt-guard-2-86m",
+    "success": false,
+    "error": {
+      "error": {
+        "message": "`max_tokens` must be less than or equal to `512`, the maximum value for `max_tokens` is less than the `context_window` for this model",
+        "type": "invalid_request_error",
+        "param": "max_tokens"
+      }
+    },
+    "elapsedMs": 69
+  },
+  "openai/gpt-oss-120b": {
+    "model": "openai/gpt-oss-120b",
+    "success": true,
+    "elapsedMs": 2448,
+    "usage": {
+      "queue_time": 0.306372364,
+      "prompt_tokens": 985,
+      "prompt_time": 0.06383947,
+      "completion_tokens": 953,
+      "completion_time": 1.975570582,
+      "total_tokens": 1938,
+      "total_time": 2.039410052,
+      "completion_tokens_details": {
+        "reasoning_tokens": 429
+      }
+    },
+    "rawOutput": "{\n  \"optionExplanations\": {\n    \"A\": \"**Adenocarcinoma endometrial** não se apresenta como lesão cervical friável; o sangramento pós‑coito e a massa cervical apontam para origem cervical, não endometrial.\",\n    \"B\": \"**Mioma submucoso** pode prolapsar pelo canal cervical, formando nódulo esférico, friável e sangrante após relação sexual; o manejo padrão‑ouro é histeroscopia com miomectomia ou reseção transcervical.\",\n    \"C\": \"**Cervicite aguda** caracteriza-se por inflamação difusa, secreção mucopurulenta e edema, não por nódulo sólido de 3 cm com sangramento ativo.\",\n    \"D\": \"**Inversão uterina crônica** apresenta prolapso do fundo uterino, não uma lesão cervical localizada; o achado físico seria um massivo tecido uterino na vagina.\",\n    \"E\": \"**Pólipo endocervical** é geralmente pedunculado, macio e não friável; raramente causa sangramento intenso pós‑coito como descrito.\"\n  },\n  \"finalCommentary\": \"A paciente apresenta sangramento vaginal pós‑coital associado a uma lesão cervical esférica, friável e de 3 cm, achado clássico de **mioma submucoso** que prolapsou pelo canal cervical, gerando trauma local durante a relação sexual. O diagnóstico diferencial inclui neoplasia cervical, pólipo ou cervicite, mas a consistência e a friabilidade são típicas de tecido fibroso degenerado. O tratamento de escolha é a **histeroscopia** com reseção do mioma, permitindo controle do sangramento e preservação da fertilidade quando desejado. Avaliação histopatológica do fragmento removido confirma a natureza benigna e exclui malignidade.\",\n  \"mainErrorReason\": \"A **pegadinha** reside em confundir a lesão cervical friável com neoplasia ou pólipo, quando a característica de massa sólida, de tamanho considerável e sangramento pós‑coito indica **mioma submucoso** prolapsado.\",\n  \"takeHomeMessage\": \"**Mioma submucoso prolapsado** pode mimetizar lesão cervical neoplásica; a histeroscopia diagnóstica e terapêutica é essencial.\",\n  \"guidelineEvolution\": \"\"\n}"
+  },
+  "qwen/qwen3.8-27b": {
+    "model": "qwen/qwen3.8-27b",
+    "success": true,
+    "elapsedMs": 1803,
+    "usage": {
+      "queue_time": 0.204374971,
+      "prompt_tokens": 991,
+      "prompt_time": 0.088302826,
+      "completion_tokens": 711,
+      "completion_time": 1.444816448,
+      "total_tokens": 1702,
+      "total_time": 1.5331192740000001
+    },
+    "rawOutput": "{\n  \"optionExplanations\": {\n    \"A\": \"O adenocarcinoma de endométrio geralmente se manifesta com sangramento pós-menopausa ou intermenstrual difuso, não como uma lesão cervical esférica e friável isolada; **a localização cervical esférica é atípica para carcinoma endometrial primário**.\",\n    \"B\": \"O **mioma submucoso** é a neoplasia benigna mais comum do útero que, ao se projetar para a cavidade endometrial e cervical, pode se apresentar como uma massa esférica, friável e sangrante na cérvice, especialmente após trauma mecânico (coito), justificando o quadro clínico descrito.\",\n    \"C\": \"O termo 'cérvice aguda' não constitui um diagnóstico patológico válido; **a descrição de uma lesão esférica de 3 cm indica uma massa tumoral ou polipoide, não uma condição inflamatória aguda difusa**.\",\n    \"D\": \"A inversão uterina crônica é uma complicação rara de parto ou manipulação, apresentando-se como uma massa hemisférica que preenche a vagina, **não como uma lesão cervical esférica isolada de 3 cm em mulher sem histórico recente de parto**.\",\n    \"E\": \"Embora o pólipo endocervical cause sangramento pós-coital, ele tipicamente apresenta-se como uma lesão pediculada e menor; **a descrição de uma massa esférica de 3 cm é mais sugestiva de mioma submucoso que se extruda para a cérvice**.\"\n  },\n  \"finalCommentary\": \"O caso descreve uma mulher em idade reprodutiva com sangramento pós-coital e uma lesão cervical esférica, friável e de 3 cm. A chave diagnóstica reside na morfologia da massa: **miomas submucosos** podem crescer para dentro da cavidade uterina e, ao se extrudarem através do colo, assumem aspecto esférico e friável, frequentemente sangrando após trauma mecânico como o coito. Diferencia-se de pólipos endocervicais, que são tipicamente pediculados e menores, e de neoplasias malignas, que raramente se apresentam como massas esféricas bem delimitadas sem outros sinais de invasão. A conduta inicial inclui biópsia para exclusão de malignidade, seguida de miomectomia histeroscópica ou vaginal, preservando a fertilidade quando possível, dado o perfil da paciente.\",\n  \"mainErrorReason\": \"A principal armadilha é confundir a **lesão esférica e friável** com um pólipo endocervical (alternativa E), ignorando que o tamanho (3 cm) e a forma esférica são mais característicos de um mioma submucoso extrudado do que de um pólipo simples.\",\n  \"takeHomeMessage\": \"Uma **massa cervical esférica, friável e sangrante** em mulher em idade reprodutiva deve ser considerada **mioma submucoso extrudado** até prova em contrário, diferenciando-se de pólipos por sua forma globosa e tamanho.\",\n  \"guidelineEvolution\": \"\"\n}"
+  }
+}

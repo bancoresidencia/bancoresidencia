@@ -1,0 +1,50 @@
+{
+  "id": "00364f56-96b5-447c-a17c-afc48b4d6b10",
+  "code": "UEL-2017-GIN-10311",
+  "institution": "UEL - Hospital Universitário de Londrina (PR)",
+  "banca": "UEL",
+  "year": 2017,
+  "tipo_prova": "Prova 1",
+  "modalidade": "Residência Médica",
+  "especialidade": "Ginecologia",
+  "tema": "Afecções Benignas do Trato Genital Feminino",
+  "foco": "Pólipos Endometriais e Cervicais",
+  "subfoco": "Quadro Clínico, Propedêutica por Imagem e Histeroscopia",
+  "difficulty": "Difícil",
+  "type": "Múltipla escolha",
+  "is_anulada": false,
+  "statement": "Mulher, 36 anos de idade, G4P4, casada, comparece ao pronto-socorro com queixa de sangramento vaginal há 15 dias. Refere que o sintoma iniciou-se após atividade sexual, na noite anterior, sem antes nada sentir. Ao exame, notou-se lesão cervical friável com sangramento ativo, esférico e com cerca de 3 cm de diâmetro. Assinale a alternativa que apresenta, corretamente, o diagnóstico mais provável.",
+  "options": [
+    {
+      "text": "Adenocarcinoma de endométrio.",
+      "letter": "A",
+      "explanation": "**Adenocarcinoma de endométrio** manifesta-se por sangramento uterino anormal, não por lesão cervical exofítica."
+    },
+    {
+      "text": "Mioma submucoso.",
+      "letter": "B",
+      "explanation": "O **mioma submucoso parido** (prolapsado) através do colo uterino apresenta-se como massa friável e sangrante."
+    },
+    {
+      "text": "Cérvice aguda.",
+      "letter": "C",
+      "explanation": "**Cérvice aguda** é um processo inflamatório/infeccioso, não uma lesão tumoral esférica de 3 cm."
+    },
+    {
+      "text": "Inversão uterina crônica.",
+      "letter": "D",
+      "explanation": "**Inversão uterina** é uma emergência obstétrica pós-parto, não uma patologia ginecológica crônica isolada."
+    },
+    {
+      "text": "Pólipo endocervical.",
+      "letter": "E",
+      "explanation": "**Pólipo endocervical** é geralmente menor, pediculado e de origem na endocérvice, não uma massa de 3 cm."
+    }
+  ],
+  "correct_answer": "B",
+  "commentary": "O quadro clínico de sangramento vaginal pós-coital associado a uma massa cervical friável em paciente multípara sugere fortemente um **mioma submucoso parido**. O mioma, ao se projetar pelo orifício cervical externo, simula uma lesão tumoral, sendo frequentemente confundido com neoplasias cervicais. A **histeroscopia cirúrgica** é o padrão-ouro para diagnóstico e tratamento, permitindo a ressecção da base do mioma. Diferente de lesões malignas, o mioma parido apresenta-se como uma massa esférica, firme e com pedículo originado no canal endocervical ou cavidade uterina. A avaliação deve incluir **ultrassonografia transvaginal** para confirmar a origem miometrial e excluir malignidade cervical, sendo a conduta definitiva a miomectomia por via histeroscópica, garantindo a resolução do sangramento e a preservação da fertilidade.\n\nPrincipal Motivo de Erro:\nA confusão diagnóstica ocorre pela **semelhança morfológica** entre o mioma parido e lesões neoplásicas do colo uterino.\n\nTake-Home Message:\nToda lesão cervical friável e esférica deve ter a hipótese de **mioma submucoso parido** descartada antes de se cogitar malignidade.\n\nEvolução de Diretrizes:\nNão houveram atualizações recentes nas diretrizes em relação ao tema da questão.\n\nReferências:\n• Em atualização",
+  "images": [],
+  "created_at": "2026-10-06T02:13:51.876693+00:00",
+  "has_gabarito": true,
+  "sub_subfoco": null
+}

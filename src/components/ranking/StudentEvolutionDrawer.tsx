@@ -99,7 +99,7 @@ export function StudentEvolutionDrawer({
     >
       {/* Painel lateral deslizante */}
       <div
-        className="flex h-full w-full max-w-lg flex-col border-l border-zinc-200 bg-white shadow-2xl transition-transform duration-300 dark:border-zinc-800 dark:bg-zinc-950 sm:max-w-xl"
+        className="flex h-full w-full max-w-lg flex-col border-l border-zinc-200 bg-white shadow-2xl transition-transform duration-300 dark:border-zinc-800 dark:bg-[#121215] sm:max-w-xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Cabeçalho da Gaveta */}

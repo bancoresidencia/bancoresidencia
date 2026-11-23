@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { Trophy } from 'lucide-react';
+import { Card } from '@/components/ui/Card';
 import { OfficialRanking } from '@/components/OfficialRanking';
 import { useAuth } from '@/context/AuthContext';
 import { useStudentData } from '@/context/StudentDataContext';
@@ -117,12 +119,26 @@ export default function RankingPage() {
       {user ? (
         <StudentRanking key={user.id} userId={user.id} />
       ) : (
-        <>
-          <h1 className="font-heading text-2xl font-bold tracking-tight">Ranking de candidatos</h1>
-          <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400" role="status">
-            {isLoading ? 'Carregando ranking…' : 'Faça login para consultar o ranking.'}
+        <Card className="rounded-2xl border border-zinc-200/80 bg-white p-6 shadow-xs dark:border-zinc-800 dark:bg-[#121215]">
+          <div className="flex items-center gap-3">
+            <div className="flex size-10 items-center justify-center rounded-2xl border border-zinc-200/80 bg-zinc-50 text-[var(--primary-color)] shadow-2xs dark:border-zinc-800 dark:bg-[#121215]">
+              <Trophy className="size-5" />
+            </div>
+            <div>
+              <h1 className="font-heading text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-2xl">
+                Ranking Nacional de Candidatos
+              </h1>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                Classificação psicométrica oficial por Teoria de Resposta ao Item (TRI 2PL)
+              </p>
+            </div>
+          </div>
+          <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400" role="status">
+            {isLoading
+              ? 'Carregando ranking…'
+              : 'Faça login na plataforma para consultar sua posição consolidada e a classificação nacional.'}
           </p>
-        </>
+        </Card>
       )}
     </div>
   );

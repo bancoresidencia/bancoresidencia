@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from 'react';
 import type { KeyboardEvent } from 'react';
-import { ArrowLeft, ArrowRight, ChevronDown, RefreshCw, Trophy, Sparkles } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ChevronDown, RefreshCw, Trophy, Layers, Target } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { Skeleton } from '@/components/ui/Skeleton';
@@ -87,7 +87,7 @@ function RankingPagination({
         <Button
           variant="outline"
           size="icon"
-          className="min-h-10 min-w-10 motion-reduce:transition-none"
+          className="min-h-9 min-w-9 motion-reduce:transition-none"
           aria-label="Página anterior"
           aria-disabled={loading || data.offset === 0}
           onClick={() => {
@@ -99,7 +99,7 @@ function RankingPagination({
         <Button
           variant="outline"
           size="icon"
-          className="min-h-10 min-w-10 motion-reduce:transition-none"
+          className="min-h-9 min-w-9 motion-reduce:transition-none"
           aria-label="Próxima página"
           aria-disabled={loading || end >= data.scopeTotal}
           onClick={() => {
@@ -146,19 +146,25 @@ export function OfficialRanking({
     <div className="space-y-4 sm:space-y-6">
       {/* Cabeçalho da Página */}
       <header className="flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <h1 className="font-heading text-2xl font-black tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-3xl">
-            Ranking Nacional de Candidatos
-          </h1>
-          <p className="text-xs text-zinc-600 dark:text-zinc-400">
-            Classificação psicométrica oficial por Teoria de Resposta ao Item (TRI 2PL)
-          </p>
+        <div className="flex items-center gap-3">
+          <div className="flex size-10 items-center justify-center rounded-2xl border border-zinc-200/80 bg-zinc-50 text-[var(--primary-color)] shadow-2xs dark:border-zinc-800 dark:bg-[#121215]">
+            <Trophy className="size-5" />
+          </div>
+          <div>
+            <h1 className="font-heading text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-2xl">
+              Ranking Nacional de Candidatos
+            </h1>
+            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+              Classificação psicométrica oficial por Teoria de Resposta ao Item (TRI 2PL)
+            </p>
+          </div>
         </div>
 
         <Button
           ref={refreshButton}
           variant="outline"
-          className="min-h-10 min-w-10 shrink-0 gap-1.5 px-3 motion-reduce:transition-none"
+          size="sm"
+          className="min-h-9 gap-1.5 px-3 motion-reduce:transition-none"
           aria-label="Atualizar ranking"
           aria-disabled={loading}
           onClick={() => {
@@ -170,7 +176,7 @@ export function OfficialRanking({
         </Button>
       </header>
 
-      {/* Hero Card do Estudante (Estilo OP.GG Adaptado para Residência) */}
+      {/* Hero Card do Estudante no Padrão Bento */}
       {summary ? (
         <CandidateIdentityCard
           summary={summary}
@@ -215,10 +221,10 @@ export function OfficialRanking({
           if (next && next !== tab) onTabChange(next);
         }}
       >
-        <div className="flex min-w-0 flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <TabsList
             aria-label="Classificação"
-            className="grid min-w-0 grid-cols-3 sm:inline-flex"
+            className="grid min-w-0 grid-cols-3 rounded-xl bg-zinc-100 p-1 dark:bg-zinc-900 sm:inline-flex"
             onKeyDown={moveTabFocus}
             onBlur={(event) => {
               if (!event.currentTarget.contains(event.relatedTarget)) setFocusedTab(null);
@@ -229,7 +235,7 @@ export function OfficialRanking({
                 key={option}
                 id={`ranking-tab-${option}`}
                 value={option}
-                className="min-h-10 min-w-0 flex-wrap gap-x-1.5 px-2 text-xs font-semibold tabular-nums motion-reduce:transition-none sm:px-3 sm:text-sm"
+                className="min-h-9 min-w-0 flex-wrap gap-x-1.5 px-3 text-xs font-semibold tabular-nums motion-reduce:transition-none sm:text-xs"
                 aria-controls="ranking-results"
                 tabIndex={(focusedTab ?? tab) === option ? 0 : -1}
                 onFocus={() => setFocusedTab(option)}
@@ -244,14 +250,16 @@ export function OfficialRanking({
             ))}
           </TabsList>
 
-          <label className="relative inline-flex min-w-0 items-center sm:max-w-56">
-            <span className="sr-only">Modalidade</span>
+          {/* Seletor de Modalidade Estilizado */}
+          <div className="relative inline-flex min-w-0 items-center sm:max-w-64">
+            <Layers className="pointer-events-none absolute left-3 size-3.5 text-zinc-400" aria-hidden="true" />
             <select
               value={modalidade}
               onChange={(event) =>
                 onModalityChange(RANKING_MODALITIES.find((option) => option === event.target.value) ?? '')
               }
-              className="min-h-10 w-full appearance-none rounded-xl border border-zinc-200 bg-white py-2 pr-9 pl-3 text-xs font-medium text-zinc-900 outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary-color)] dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-100 sm:text-sm"
+              aria-label="Filtrar por modalidade"
+              className="min-h-9.5 w-full appearance-none rounded-xl border border-zinc-200/90 bg-white py-1.5 pr-8 pl-8.5 text-xs font-medium text-zinc-800 shadow-2xs outline-none transition-colors hover:border-zinc-300 focus-visible:ring-2 focus-visible:ring-[var(--primary-color)] dark:border-zinc-800 dark:bg-[#121215] dark:text-zinc-200"
             >
               <option value="">Todas as modalidades</option>
               {RANKING_MODALITIES.map((option) => (
@@ -260,8 +268,8 @@ export function OfficialRanking({
                 </option>
               ))}
             </select>
-            <ChevronDown className="pointer-events-none absolute right-3 size-4 text-zinc-500" aria-hidden="true" />
-          </label>
+            <ChevronDown className="pointer-events-none absolute right-2.5 size-3.5 text-zinc-400" aria-hidden="true" />
+          </div>
         </div>
 
         <p className="sr-only" role="status">
@@ -275,21 +283,29 @@ export function OfficialRanking({
           aria-labelledby={`ranking-tab-${tab}`}
           aria-busy={loading}
           tabIndex={0}
-          className="mt-4 space-y-5 rounded-lg focus-visible:ring-2 focus-visible:ring-[var(--primary-color)] sm:mt-6 sm:space-y-6"
+          className="mt-4 space-y-4 rounded-lg focus-visible:ring-2 focus-visible:ring-[var(--primary-color)] sm:mt-5 sm:space-y-5"
         >
           {/* Legenda do recorte */}
           {(scopeNotes[tab] || banca || institutions.length > 0) && (
-            <div className="rounded-xl border border-zinc-200/60 bg-zinc-50/60 p-3 text-xs text-zinc-600 dark:border-zinc-800/60 dark:bg-zinc-900/40 dark:text-zinc-400">
-              <p className="font-medium text-zinc-800 dark:text-zinc-200">{scopeNotes[tab]}</p>
-              {banca && <p className="mt-0.5">Banca foco: {banca}</p>}
-              {institutions.length > 0 && <p className="mt-0.5">Instituições: {institutions.join(', ')}</p>}
+            <div className="flex items-start gap-2.5 rounded-2xl border border-zinc-200/70 bg-zinc-50/70 p-3.5 text-xs text-zinc-600 dark:border-zinc-800/80 dark:bg-zinc-900/40 dark:text-zinc-400">
+              <Target className="mt-0.5 size-4 shrink-0 text-[var(--primary-color)]" aria-hidden="true" />
+              <div className="min-w-0 flex-1 space-y-0.5">
+                <p className="font-medium text-zinc-800 dark:text-zinc-200">{scopeNotes[tab]}</p>
+                {(banca || institutions.length > 0) && (
+                  <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                    {banca ? `Banca foco: ${banca}` : ''}
+                    {banca && institutions.length > 0 ? ' • ' : ''}
+                    {institutions.length > 0 ? `Instituições: ${institutions.join(', ')}` : ''}
+                  </p>
+                )}
+              </div>
             </div>
           )}
 
           {data ? (
             data.scopeTotal > 0 ? (
               <>
-                {/* Destaque para os 3 Primeiros Colocados (Pódio Olímpico) */}
+                {/* Destaque para os Líderes (Top 3) */}
                 <RankingPodiumOlympian leaders={data.leaders} />
 
                 {/* Demais Posições a partir do 4º Lugar */}
@@ -299,7 +315,7 @@ export function OfficialRanking({
                 <RankingPagination data={data} loading={loading} onPageChange={onPageChange} />
               </>
             ) : (
-              <Card className="flex items-center gap-3 p-6 text-sm text-zinc-700 dark:text-zinc-300">
+              <Card className="flex items-center gap-3 rounded-2xl border border-zinc-200/80 bg-white p-6 text-sm text-zinc-700 shadow-xs dark:border-zinc-800 dark:bg-[#121215] dark:text-zinc-300">
                 <Trophy className="size-5 shrink-0 text-zinc-400" aria-hidden="true" />
                 <span>Nenhum candidato encontrado com os critérios e recorte selecionados.</span>
               </Card>
@@ -310,7 +326,7 @@ export function OfficialRanking({
         </TabsContent>
       </Tabs>
 
-      {/* Gaveta Lateral de Evolução do Estudante (Tier Graph - Opção A) */}
+      {/* Gaveta Lateral de Evolução do Estudante */}
       <StudentEvolutionDrawer
         isOpen={isEvolutionOpen}
         onClose={() => setIsEvolutionOpen(false)}
