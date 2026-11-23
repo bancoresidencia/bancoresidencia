@@ -30,7 +30,9 @@ import {
   Flag,
   Loader2,
   Eye,
-  EyeOff
+  EyeOff,
+  FileText,
+  ListOrdered
 } from 'lucide-react';
 import {
   Question,
@@ -101,6 +103,22 @@ export const QuestoesView: React.FC = () => {
   // Modo do Banco: 'filtros' | 'resolucao' | 'resultado'
   const initialMode = searchParams.get('mode') === 'resolucao' ? 'resolucao' : 'filtros';
   const [bancoMode, setBancoMode] = useState<'resolucao' | 'filtros' | 'resultado'>(initialMode);
+
+  // Modo de Exibição de Resolução: Paginado (1 questão por vez) vs Rolamento Contínuo (scroll de prova)
+  const [viewLayout, setViewLayout] = useState<'paginated' | 'scroll'>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('hippocampus_study_view_layout');
+      if (saved === 'scroll' || saved === 'paginated') return saved;
+    }
+    return 'paginated';
+  });
+
+  const handleToggleViewLayout = useCallback((layout: 'paginated' | 'scroll') => {
+    setViewLayout(layout);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('hippocampus_study_view_layout', layout);
+    }
+  }, []);
 
   // Inicializa filtros a partir de query params (se houver)
   const [advancedFilters, setAdvancedFilters] = useState<AdvancedFilterState>(() => {
@@ -212,18 +230,30 @@ export const QuestoesView: React.FC = () => {
     const subSubfocoParam = searchParams.get('subSubfoco') || searchParams.get('sub_subfoco');
     const instParam = searchParams.get('instituicao');
     const anoParam = searchParams.get('ano');
+    const modParam = searchParams.get('modalidade');
     const searchParam = searchParams.get('search') || searchParams.get('q');
     const modeParam = searchParams.get('mode');
 
-    if (espParam || temaParam || focoParam || subfocoParam || subSubfocoParam || instParam || anoParam || searchParam) {
+    let mappedModalidades: StudyModalidade[] | undefined;
+    if (modParam) {
+      if (modParam === 'r_plus' || modParam === 'R+') mappedModalidades = ['R+'];
+      else if (modParam === 'revalida' || modParam === 'Revalida') mappedModalidades = ['Revalida'];
+      else if (modParam === 'titulo' || modParam.startsWith('Título')) mappedModalidades = ['Título de Especialista'];
+      else if (modParam === 'Acesso Direto' || modParam === 'acesso_direto') mappedModalidades = ['Acesso Direto'];
+    }
+
+    const resolvedInst = instParam ? getSupabaseInstitutionName(instParam) : null;
+
+    if (espParam || temaParam || focoParam || subfocoParam || subSubfocoParam || instParam || anoParam || modParam || searchParam) {
       setAdvancedFilters((prev) => ({
         ...prev,
+        modalidades: mappedModalidades || prev.modalidades,
         especialidades: espParam ? [espParam] : prev.especialidades,
         temas: temaParam ? [temaParam] : prev.temas,
         focos: focoParam ? [focoParam] : prev.focos,
         subfocos: subfocoParam ? [subfocoParam] : prev.subfocos,
         subSubfocos: subSubfocoParam ? [subSubfocoParam] : (prev.subSubfocos || []),
-        instituicoes: instParam ? [instParam] : prev.instituicoes,
+        instituicoes: resolvedInst ? [resolvedInst] : (instParam ? [instParam] : prev.instituicoes),
         anos: anoParam ? [parseInt(anoParam, 10)] : prev.anos,
         search: searchParam !== null && searchParam !== undefined ? searchParam : prev.search
       }));
@@ -454,8 +484,9 @@ export const QuestoesView: React.FC = () => {
           effectivePageSize = Math.min(200, sessionQuestionIds.length);
         }
 
+        const isExplicitQuestionSet = Boolean(activeListId || (sessionQuestionIds && sessionQuestionIds.length > 0));
         const res = await fetchQuestionsFromSupabase(
-          activeListId && questionIds ? {} : { ...advancedFilters, ...(activeListFilters || {}) },
+          isExplicitQuestionSet && questionIds ? {} : { ...advancedFilters, ...(activeListFilters || {}) },
           activeListId ? 1 : questionsPage,
           effectivePageSize,
           questionIds,
@@ -1292,6 +1323,36 @@ export const QuestoesView: React.FC = () => {
                       )}
                     </div>
 
+                    {/* Seletor de Modo de Visualização: Paginado vs Rolamento Contínuo */}
+                    <div className="flex items-center bg-slate-100 dark:bg-zinc-800/80 p-0.5 rounded-xl border border-slate-200 dark:border-zinc-700/60 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => handleToggleViewLayout('paginated')}
+                        title="Modo Paginado (1 questão por vez)"
+                        className={`flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                          viewLayout === 'paginated'
+                            ? 'bg-white dark:bg-zinc-700 text-slate-900 dark:text-white shadow-2xs'
+                            : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                        }`}
+                      >
+                        <FileText className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">Paginado</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => handleToggleViewLayout('scroll')}
+                        title="Modo Rolamento Contínuo (Scroll da lista completa)"
+                        className={`flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                          viewLayout === 'scroll'
+                            ? 'bg-white dark:bg-zinc-700 text-slate-900 dark:text-white shadow-2xs'
+                            : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                        }`}
+                      >
+                        <ListOrdered className="w-3.5 h-3.5" />
+                        <span className="hidden sm:inline">Rolamento</span>
+                      </button>
+                    </div>
+
                     {/* Botão de Atalhos do Teclado (Oculto em smartphones touch) */}
                     <button
                       type="button"
@@ -1444,6 +1505,10 @@ export const QuestoesView: React.FC = () => {
                             onClick={() => {
                               setCurrentQuestionIndex(idx);
                               setQuestionTimer(0);
+                              if (viewLayout === 'scroll') {
+                                const targetEl = document.getElementById(`questao-item-${idx + 1}`);
+                                if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                              }
                             }}
                             className={`relative w-8 h-8 sm:w-9 sm:h-9 rounded-full font-sans font-black text-sm sm:text-[15px] flex items-center justify-center shrink-0 transition-all cursor-pointer ${isCurrent
                                 ? 'text-white shadow-md ring-2 ring-offset-1 ring-blue-500/40'
@@ -1503,53 +1568,92 @@ export const QuestoesView: React.FC = () => {
                 )}
               </div>
 
-              {/* CARD DA QUESTÃO ATUAL */}
-              {currentQuestion && (
-                <QuestionCard
-                  key={currentQuestion.id}
-                  question={currentQuestion}
-                  index={currentQuestionIndex}
-                  total={visibleQuestions.length}
-                  onAnswer={handleAnswer}
-                  userAnswer={sessionAnswers[currentQuestion.id]?.letter}
-                  historicalAnswer={
-                    userAnswers[currentQuestion.id]
-                      ? {
-                        letter: userAnswers[currentQuestion.id].letter,
-                        isCorrect: userAnswers[currentQuestion.id].isCorrect,
-                        timestamp: userAnswers[currentQuestion.id].timestamp
-                      }
-                      : undefined
-                  }
-                  isBookmarked={Boolean(bookmarkedQuestionIds[currentQuestion.id])}
-                  onToggleBookmark={() => toggleBookmark(currentQuestion.id)}
-                  fontSize={fontSize}
-                  onChangeFontSize={setFontSize}
-                  folders={folders}
-                  onCreateFolder={createFolder}
-                  onSaveToFolder={async (qId, fId) => {
-                    const f = folders.find((item) => item.id === fId);
-                    if (f) await addQuestionToFolder(qId, fId, f.name);
-                  }}
-                  activeHighlighterColor={activeHighlighterColor}
-                  onSelectHighlighterColor={setActiveHighlighterColor}
-                  isStrikethroughActive={isStrikethroughActive}
-                  onToggleStrikethrough={() => setIsStrikethroughActive((prev) => !prev)}
-                  onNextQuestion={
-                    currentQuestionIndex < visibleQuestions.length - 1 || visibleQuestions.length < totalSupabaseCount
-                      ? () => {
-                        if (currentQuestionIndex + 1 < visibleQuestions.length) {
-                          setCurrentQuestionIndex((prev) => prev + 1);
-                          setQuestionTimer(0);
-                        } else if (visibleQuestions.length < totalSupabaseCount) {
-                          setQuestionsPage((prev) => prev + 1);
-                          setCurrentQuestionIndex((prev) => prev + 1);
-                          setQuestionTimer(0);
+              {/* EXIBIÇÃO DE QUESTÕES: PAGINADO VS ROLAMENTO CONTÍNUO */}
+              {viewLayout === 'scroll' ? (
+                <div className="space-y-6">
+                  {visibleQuestions.map((q, qIdx) => (
+                    <div key={q.id} id={`questao-item-${qIdx + 1}`} className="scroll-mt-6">
+                      <QuestionCard
+                        question={q}
+                        index={qIdx}
+                        total={visibleQuestions.length}
+                        onAnswer={handleAnswer}
+                        userAnswer={sessionAnswers[q.id]?.letter}
+                        historicalAnswer={
+                          userAnswers[q.id]
+                            ? {
+                              letter: userAnswers[q.id].letter,
+                              isCorrect: userAnswers[q.id].isCorrect,
+                              timestamp: userAnswers[q.id].timestamp
+                            }
+                            : undefined
                         }
-                      }
-                      : undefined
-                  }
-                />
+                        isBookmarked={Boolean(bookmarkedQuestionIds[q.id])}
+                        onToggleBookmark={() => toggleBookmark(q.id)}
+                        fontSize={fontSize}
+                        onChangeFontSize={setFontSize}
+                        folders={folders}
+                        onCreateFolder={createFolder}
+                        onSaveToFolder={async (qId, fId) => {
+                          const f = folders.find((item) => item.id === fId);
+                          if (f) await addQuestionToFolder(qId, fId, f.name);
+                        }}
+                        activeHighlighterColor={activeHighlighterColor}
+                        onSelectHighlighterColor={setActiveHighlighterColor}
+                        isStrikethroughActive={isStrikethroughActive}
+                        onToggleStrikethrough={() => setIsStrikethroughActive((prev) => !prev)}
+                      />
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                currentQuestion && (
+                  <QuestionCard
+                    key={currentQuestion.id}
+                    question={currentQuestion}
+                    index={currentQuestionIndex}
+                    total={visibleQuestions.length}
+                    onAnswer={handleAnswer}
+                    userAnswer={sessionAnswers[currentQuestion.id]?.letter}
+                    historicalAnswer={
+                      userAnswers[currentQuestion.id]
+                        ? {
+                          letter: userAnswers[currentQuestion.id].letter,
+                          isCorrect: userAnswers[currentQuestion.id].isCorrect,
+                          timestamp: userAnswers[currentQuestion.id].timestamp
+                        }
+                        : undefined
+                    }
+                    isBookmarked={Boolean(bookmarkedQuestionIds[currentQuestion.id])}
+                    onToggleBookmark={() => toggleBookmark(currentQuestion.id)}
+                    fontSize={fontSize}
+                    onChangeFontSize={setFontSize}
+                    folders={folders}
+                    onCreateFolder={createFolder}
+                    onSaveToFolder={async (qId, fId) => {
+                      const f = folders.find((item) => item.id === fId);
+                      if (f) await addQuestionToFolder(qId, fId, f.name);
+                    }}
+                    activeHighlighterColor={activeHighlighterColor}
+                    onSelectHighlighterColor={setActiveHighlighterColor}
+                    isStrikethroughActive={isStrikethroughActive}
+                    onToggleStrikethrough={() => setIsStrikethroughActive((prev) => !prev)}
+                    onNextQuestion={
+                      currentQuestionIndex < visibleQuestions.length - 1 || visibleQuestions.length < totalSupabaseCount
+                        ? () => {
+                          if (currentQuestionIndex + 1 < visibleQuestions.length) {
+                            setCurrentQuestionIndex((prev) => prev + 1);
+                            setQuestionTimer(0);
+                          } else if (visibleQuestions.length < totalSupabaseCount) {
+                            setQuestionsPage((prev) => prev + 1);
+                            setCurrentQuestionIndex((prev) => prev + 1);
+                            setQuestionTimer(0);
+                          }
+                        }
+                        : undefined
+                    }
+                  />
+                )
               )}
 
               {/* BARRA INFERIOR DE NAVEGAÇÃO ENTRE QUESTÕES (THUMB-FRIENDLY 44PX NO MOBILE) */}

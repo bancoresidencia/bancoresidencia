@@ -111,7 +111,7 @@ export function normalizeStudyQuery(
     modalities: resolvedModalities.length ? [...new Set(resolvedModalities)] : null,
     ids: Array.isArray(ids) ? textList(ids).filter(validateQuestionId).slice(0, 200) : null,
     excluded_ids: textList(options.excludeIds).filter(validateQuestionId).slice(0, 200),
-    bancas: institutions.length ? resolveBancaList(institutions) : null,
+    bancas: Array.isArray(ids) && ids.length > 0 ? null : (institutions.length ? resolveBancaList(institutions) : null),
     quota_bancas: quota && !hasQuotaPaths ? resolveBancaList([quota]) : null,
     organizers: organizers.length ? organizers : null,
     organizer_bancas: organizers.length ? resolveBancaList(CANONICAL_BANCAS_DIRECTORY
@@ -120,7 +120,7 @@ export function normalizeStudyQuery(
     region_bancas: regions.length ? resolveBancaList(CANONICAL_BANCAS_DIRECTORY
       .filter((item) => item.macrorregiao && regions.includes(item.macrorregiao)).map((item) => item.sigla)) : [],
     programs: programs.length ? programs : null,
-    years: years.length ? years : null,
+    years: Array.isArray(ids) && ids.length > 0 ? null : (years.length ? years : null),
     exam_types: examTypes.length ? examTypes : null,
     difficulty: typeof filters.dificuldade === 'string' && filters.dificuldade !== 'Todas' ? filters.dificuldade : null,
     formats: normalizeStudyFormats(typeof filters.tipoQuestao === 'string' ? filters.tipoQuestao : undefined),
