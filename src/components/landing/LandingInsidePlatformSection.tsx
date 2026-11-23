@@ -586,7 +586,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const { ref: sectionRef, isVisible: sectionVisible } = useScrollReveal<HTMLDivElement>(0.05);
+  const { ref: sectionRef, isVisible: sectionVisible, isExiting: sectionExiting } = useScrollReveal<HTMLDivElement>(0.05);
 
   return (
     <section
@@ -601,7 +601,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
           background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
         }}
       />
-      <div ref={sectionRef} className={`max-w-7xl mx-auto px-3 sm:px-6 space-y-6 sm:space-y-8 fold-reveal ${sectionVisible ? 'is-visible' : ''}`}>
+      <div ref={sectionRef} className={`max-w-7xl mx-auto px-3 sm:px-6 space-y-6 sm:space-y-8 fold-reveal ${sectionVisible ? 'is-visible' : ''} ${sectionExiting ? 'is-exiting' : ''}`}>
         {/* Cabeçalho */}
         <div className="max-w-3xl space-y-2 text-left">
           <h2 className="text-2xl sm:text-4xl font-black tracking-tight text-zinc-950 dark:text-white leading-tight">

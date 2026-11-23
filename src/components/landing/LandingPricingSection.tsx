@@ -31,7 +31,7 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
         } 100%)`
       };
 
-  const { ref, isVisible } = useScrollReveal<HTMLDivElement>(0.08);
+  const { ref, isVisible, isExiting } = useScrollReveal<HTMLDivElement>(0.08);
 
   return (
     <section
@@ -47,7 +47,7 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
         }}
       />
 
-      <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 fold-reveal ${isVisible ? 'is-visible' : ''}`}>
+      <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 fold-reveal ${isVisible ? 'is-visible' : ''} ${isExiting ? 'is-exiting' : ''}`}>
         {/* Cabeçalho dos Planos Padronizado (Alinhado à Esquerda - Estilo Imagem 2) */}
         <div className="max-w-3xl text-left mb-10 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-[-0.03em] text-zinc-950 dark:text-white leading-[1.15]">

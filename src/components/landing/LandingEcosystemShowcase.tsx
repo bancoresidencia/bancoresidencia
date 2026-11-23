@@ -180,7 +180,7 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
         } 100%)`
       };
 
-  const { ref, isVisible } = useScrollReveal<HTMLDivElement>(0.1);
+  const { ref, isVisible, isExiting } = useScrollReveal<HTMLDivElement>(0.1);
   // Default no TRI como na Imagem 2
   const [activeTab, setActiveTab] = useState<AdditionalFeatureId>('tri');
 
@@ -199,7 +199,7 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
           background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
         }}
       />
-      <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 space-y-10 fold-reveal ${isVisible ? 'is-visible' : ''}`}>
+      <div ref={ref} className={`max-w-7xl mx-auto px-4 sm:px-6 space-y-10 fold-reveal ${isVisible ? 'is-visible' : ''} ${isExiting ? 'is-exiting' : ''}`}>
         {/* Cabeçalho da Seção Padronizado */}
         <div className="max-w-3xl">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-zinc-950 dark:text-white leading-[1.1]">

@@ -4,49 +4,98 @@ import { createContext, useContext, useEffect, useRef, useState } from 'react';
 
 export const LandingSectionVisibleContext = createContext(true);
 
+// Despachante global unificado em RAF (Zero duplicação de listeners e 60 FPS garantidos)
+const activeRevealCallbacks = new Set<() => void>();
+let sharedRafId = 0;
+
+function notifyActiveReveals() {
+  if (sharedRafId) return;
+  sharedRafId = requestAnimationFrame(() => {
+    sharedRafId = 0;
+    activeRevealCallbacks.forEach((cb) => cb());
+  });
+}
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('scroll', notifyActiveReveals, { passive: true });
+  window.addEventListener('resize', notifyActiveReveals, { passive: true });
+}
+
 export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
   thresholdOrOptions: number | { threshold?: number; rootMargin?: string } = 0.05,
   defaultRootMargin = '0px 0px -60px 0px'
 ) {
   const ref = useRef<T | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [isExiting, setIsExiting] = useState(false);
   const isNear = useContext(LandingSectionVisibleContext);
-
-  const threshold = typeof thresholdOrOptions === 'number'
-    ? thresholdOrOptions
-    : (thresholdOrOptions?.threshold ?? 0.08);
-
-  const rootMargin = typeof thresholdOrOptions === 'number'
-    ? defaultRootMargin
-    : (thresholdOrOptions?.rootMargin ?? defaultRootMargin);
 
   useEffect(() => {
     if (!isNear) {
       setIsVisible(false);
+      setIsExiting(false);
+      const el = ref.current;
+      if (el) {
+        el.classList.remove('is-visible', 'is-exiting');
+      }
       return;
     }
+
     const el = ref.current;
     if (!el) return;
-    if (typeof IntersectionObserver === 'undefined' ||
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      const frame = requestAnimationFrame(() => setIsVisible(true));
+
+    if (
+      typeof window === 'undefined' ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
+      const frame = requestAnimationFrame(() => {
+        setIsVisible(true);
+        setIsExiting(false);
+        el.classList.add('is-visible');
+        el.classList.remove('is-exiting');
+      });
       return () => cancelAnimationFrame(frame);
     }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          setIsVisible(entry.isIntersecting);
-        }
-      },
-      { threshold, rootMargin }
-    );
+    const checkVisibilityAndExit = () => {
+      const target = ref.current;
+      if (!target) return;
 
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [isNear, threshold, rootMargin]);
+      const rect = target.getBoundingClientRect();
+      const winH = window.innerHeight || document.documentElement.clientHeight || 800;
 
-  return { ref, isVisible };
+      // 1. Visibilidade de Entrada (Bottom boundary):
+      // Entra suavemente quando o topo chega a (winH - 50px)
+      const enteredBottom = rect.top < (winH - 50);
+
+      // 2. Limite Superior de Saída (Top boundary):
+      // Sai quando o fundo do elemento já passou do topo (-40px)
+      const fullyLeftTop = rect.bottom < -40;
+
+      const visible = enteredBottom && !fullyLeftTop;
+
+      // 3. Zona de Esvaecimento de Saída (Cross-Fade Exit Zone):
+      // Quando o fundo do elemento cruza os 38% superiores da tela, a dobra esvaece
+      // enquanto a dobra seguinte sobe pelo rodapé em sentido contrário
+      const exiting = visible && (rect.bottom < winH * 0.38);
+
+      setIsVisible(visible);
+      setIsExiting(exiting);
+
+      target.classList.toggle('is-visible', visible);
+      target.classList.toggle('is-exiting', exiting);
+    };
+
+    activeRevealCallbacks.add(checkVisibilityAndExit);
+    // Verificação inicial
+    checkVisibilityAndExit();
+
+    return () => {
+      activeRevealCallbacks.delete(checkVisibilityAndExit);
+    };
+  }, [isNear]);
+
+  return { ref, isVisible, isExiting };
 }
 
 export function useAnimatedCounter(target: number, isActive: boolean, durationMs = 1300): number {

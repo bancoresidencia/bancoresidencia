@@ -162,8 +162,8 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
   const [hoveredUf, setHoveredUf] = useState<string | null>(null);
 
   // Hook de animação para os contadores numéricos e para a dobra do mapa
-  const { ref: statsRef, isVisible: statsVisible } = useScrollReveal<HTMLDivElement>(0.12);
-  const { ref: mapSectionRef, isVisible: mapVisible } = useScrollReveal<HTMLDivElement>(0.06);
+  const { ref: statsRef, isVisible: statsVisible, isExiting: statsExiting } = useScrollReveal<HTMLDivElement>(0.12);
+  const { ref: mapSectionRef, isVisible: mapVisible, isExiting: mapExiting } = useScrollReveal<HTMLDivElement>(0.06);
   const count200 = useAnimatedCounter(200, statsVisible, 1200);
   const count100 = useAnimatedCounter(100, statsVisible, 1200);
   const count120 = useAnimatedCounter(120, statsVisible, 1200);
@@ -378,7 +378,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
           background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 70%)`
         }}
       />
-      <div ref={mapSectionRef} className={`max-w-7xl mx-auto px-4 sm:px-6 space-y-10 sm:space-y-12 fold-reveal ${mapVisible ? 'is-visible' : ''}`}>
+      <div ref={mapSectionRef} className={`max-w-7xl mx-auto px-4 sm:px-6 space-y-10 sm:space-y-12 fold-reveal ${mapVisible ? 'is-visible' : ''} ${mapExiting ? 'is-exiting' : ''}`}>
         {/* =========================================================================
             1. DOBRA DO MAPA DO BRASIL: LIVRE E INTEGRADA AO FUNDO CONTÍNUO
             ========================================================================= */}
@@ -800,7 +800,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
         {/* =========================================================================
             2. ESTATÍSTICAS DA IMAGEM 1 ABAIXO DO MAPA (COM ANIMAÇÃO DE CONTAGEM & ESTILO IMAGEM 5)
             ========================================================================= */}
-        <div ref={statsRef} className={`fold-reveal fold-delay-1 ${statsVisible ? 'is-visible' : ''}`}>
+        <div ref={statsRef} className={`fold-reveal fold-delay-1 ${statsVisible ? 'is-visible' : ''} ${statsExiting ? 'is-exiting' : ''}`}>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             {/* Card 1: +200 mil */}
             <div className="relative rounded-3xl p-6 sm:p-7 bg-white/94 dark:bg-zinc-950/94 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/90 shadow-[0_20px_50px_rgba(15,23,42,0.12)] dark:shadow-[0_24px_55px_rgba(0,0,0,0.75)] flex flex-col justify-between transition-all duration-200 hover:border-zinc-400 dark:hover:border-zinc-700">

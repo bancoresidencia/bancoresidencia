@@ -111,7 +111,7 @@ div:has(> #next-logo) {
   animation: appleFadeUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Revelação por rolagem das dobras (Scroll Reveal via Intersection Observer) */
+/* Revelação por rolagem das dobras (Scroll Reveal bidirecional com Entrada e Esvaecimento de Saída) */
 .reveal-up,
 .fold-reveal {
   opacity: 0;
@@ -120,13 +120,29 @@ div:has(> #next-logo) {
   will-change: opacity, transform;
 }
 
+/* Estado 1: Em foco / Ativo */
 .reveal-up.is-visible,
 .fold-reveal.is-visible {
   opacity: 1;
   transform: translate3d(0, 0, 0) scale(1);
 }
 
-/* Atrasos em cascata para elementos filhos das dobras */
+/* Estado 2: Esvaecimento de Saída no topo (cross-fade suave enquanto a próxima dobra entra de baixo) */
+.reveal-up.is-visible.is-exiting,
+.fold-reveal.is-visible.is-exiting,
+.fold-reveal.is-exiting .fold-reveal {
+  opacity: 0.08;
+  transform: translate3d(0, -36px, 0) scale(0.98);
+  transition: opacity 0.70s cubic-bezier(0.16, 1, 0.3, 1), transform 0.70s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.fold-reveal.is-exiting .fold-delay-1,
+.fold-reveal.is-exiting .fold-delay-2 {
+  transition-delay: 0ms !important;
+}
+
+/* Atrasos em cascata para elementos filhos das dobras na entrada */
 .fold-delay-1 {
   transition-delay: 140ms;
 }
@@ -275,7 +291,9 @@ html:not(.dark) #dentro-da-plataforma [class*="border-zinc-700"] {
   .reveal-up,
   .fold-reveal,
   .fold-delay-1,
-  .fold-delay-2 {
+  .fold-delay-2,
+  .fold-reveal.is-exiting,
+  .reveal-up.is-exiting {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;

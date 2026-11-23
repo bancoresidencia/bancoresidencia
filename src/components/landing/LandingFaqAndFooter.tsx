@@ -47,8 +47,8 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
         } 100%)`
       };
 
-  const { ref: faqRef, isVisible: faqVisible } = useScrollReveal<HTMLDivElement>(0.08);
-  const { ref: supportRef, isVisible: supportVisible } = useScrollReveal<HTMLDivElement>(0.1);
+  const { ref: faqRef, isVisible: faqVisible, isExiting: faqExiting } = useScrollReveal<HTMLDivElement>(0.08);
+  const { ref: supportRef, isVisible: supportVisible, isExiting: supportExiting } = useScrollReveal<HTMLDivElement>(0.1);
 
   return (
     <>
@@ -69,7 +69,7 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
         />
         <div
           ref={faqRef}
-          className={`max-w-3xl mx-auto px-4 sm:px-6 fold-reveal ${faqVisible ? 'is-visible' : ''}`}
+          className={`max-w-3xl mx-auto px-4 sm:px-6 fold-reveal ${faqVisible ? 'is-visible' : ''} ${faqExiting ? 'is-exiting' : ''}`}
         >
           <div className="text-left mb-10 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-[-0.03em] text-zinc-950 dark:text-white leading-[1.15]">
@@ -137,7 +137,7 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
       >
         <div
           ref={supportRef}
-          className={`max-w-5xl mx-auto px-4 sm:px-6 space-y-8 fold-reveal ${supportVisible ? 'is-visible' : ''}`}
+          className={`max-w-5xl mx-auto px-4 sm:px-6 space-y-8 fold-reveal ${supportVisible ? 'is-visible' : ''} ${supportExiting ? 'is-exiting' : ''}`}
         >
           {/* Card Único e Refinado de Atendimento Humano no WhatsApp (Sem duplicação no rodapé) */}
           <div className="rounded-2xl p-6 sm:p-8 bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">

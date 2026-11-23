@@ -184,9 +184,12 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
       intro.setAttribute('aria-hidden', String(heroOpacity < 0.05));
     }
 
+    const finalExitFade = smootherstep(0.92, 1.00, rawProgress);
+    const heroExitMultiplier = 1 - finalExitFade;
+
     const brainStage = brainStageRef.current;
     if (brainStage) {
-      brainStage.style.opacity = brainInitialFade.toFixed(3);
+      brainStage.style.opacity = (brainInitialFade * heroExitMultiplier).toFixed(3);
       const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
       const x = isDesktop ? brainDesktopX.toFixed(1) : '0';
       const mobileShiftY = isDesktop ? 0 : -22 * toDobra3;
@@ -195,8 +198,9 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
 
     const cardsPanel = cardsPanelRef.current;
     if (cardsPanel) {
-      cardsPanel.style.opacity = cardsOpacity.toFixed(3);
-      cardsPanel.style.pointerEvents = cardsOpacity > 0.35 ? 'auto' : 'none';
+      const currentOpacity = cardsOpacity * heroExitMultiplier;
+      cardsPanel.style.opacity = currentOpacity.toFixed(3);
+      cardsPanel.style.pointerEvents = currentOpacity > 0.35 ? 'auto' : 'none';
     }
 
     const ambientGlow = ambientGlowRef.current;
@@ -204,6 +208,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
       const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
       const shiftVw = isDesktop ? (glowLeftDesktop - 50) : 0;
       ambientGlow.style.transform = `translate3d(calc(-50% + ${shiftVw.toFixed(1)}vw), -50%, 0)`;
+      ambientGlow.style.opacity = ((isDark ? 0.45 : 0.28) * heroExitMultiplier).toFixed(3);
     }
 
     const scrollIndicator = scrollIndicatorRef.current;
@@ -273,10 +278,17 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
           <div
             ref={ambientGlowRef}
             aria-hidden="true"
-            className="pointer-events-none absolute left-1/2 top-[28%] lg:top-[48%] -translate-x-1/2 -translate-y-1/2 w-[520px] sm:w-[760px] lg:w-[880px] h-[360px] sm:h-[460px] rounded-full opacity-60 dark:opacity-40 transition-colors duration-500 will-change-transform"
+            className="pointer-events-none absolute left-1/2 top-[28%] lg:top-[48%] -translate-x-1/2 -translate-y-1/2 w-[520px] sm:w-[760px] lg:w-[880px] h-[360px] sm:h-[460px] rounded-full transition-[background,opacity] duration-300 will-change-transform"
             style={{
-              background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex}44 0%, ${accentConfig.primaryHex}18 42%, transparent 72%)`,
-              transform: 'translate3d(-50%, -50%, 0)'
+              background: isMonochrome
+                ? isDark
+                  ? 'radial-gradient(ellipse at center, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.04) 42%, transparent 72%)'
+                  : 'radial-gradient(ellipse at center, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.02) 42%, transparent 72%)'
+                : isDark
+                  ? `radial-gradient(ellipse at center, ${accentConfig.primaryHex}44 0%, ${accentConfig.primaryHex}18 42%, transparent 72%)`
+                  : `radial-gradient(ellipse at center, ${accentConfig.primaryHex}28 0%, ${accentConfig.primaryHex}10 44%, transparent 72%)`,
+              transform: 'translate3d(-50%, -50%, 0)',
+              opacity: isDark ? 0.45 : 0.28
             }}
           />
 
