@@ -4,6 +4,8 @@ import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 import { StudentDataProvider } from '@/context/StudentDataContext';
+import { TabAvailabilityProvider } from '@/context/TabAvailabilityContext';
+import { StudyTimerProvider } from '@/context/StudyTimerContext';
 import { AppShell } from '@/components/layout/AppShell';
 import { ShieldAlert } from 'lucide-react';
 import { HippocampusLoading } from '@/components/HippocampusLoading';
@@ -40,7 +42,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   return (
     <StudentDataProvider>
-      <AppShell>{children}</AppShell>
+      <TabAvailabilityProvider>
+        <StudyTimerProvider>
+          <AppShell>{children}</AppShell>
+        </StudyTimerProvider>
+      </TabAvailabilityProvider>
     </StudentDataProvider>
   );
 }

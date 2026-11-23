@@ -981,10 +981,53 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   );
 };
 
+const DEFAULT_STUDY_TIMER_FALLBACK: StudyTimerContextType = {
+  status: 'idle',
+  elapsedSeconds: 0,
+  formattedTime: '00:00:00',
+  selectedTaxonomy: {},
+  setSelectedTaxonomy: () => {},
+  startTimer: () => {},
+  pauseTimer: () => {},
+  resumeTimer: () => {},
+  cancelTimer: () => {},
+  openSaveModal: () => {},
+  closeSaveModal: () => {},
+  saveSession: async () => ({
+    id: '',
+    startTime: '',
+    endTime: '',
+    durationSeconds: 0,
+    durationFormatted: '00:00:00',
+    taxonomy: {},
+    studyType: 'outro',
+    createdAt: ''
+  }),
+  sessionQuestionsCount: 0,
+  sessionCorrectCount: 0,
+  sessionIncorrectCount: 0,
+  startQuestionSession: () => {},
+  recordQuestionAnswer: () => {},
+  autoFinishQuestionSession: async () => null,
+  todaySessions: [],
+  todayTotalSeconds: 0,
+  todayTotalFormatted: '00:00:00',
+  allSessions: [],
+  deleteSession: () => {},
+  platformActiveSeconds: 0,
+  addManualSession: async () => ({
+    id: '',
+    startTime: '',
+    endTime: '',
+    durationSeconds: 0,
+    durationFormatted: '00:00:00',
+    taxonomy: {},
+    studyType: 'outro',
+    createdAt: ''
+  })
+};
+
 export const useStudyTimer = (): StudyTimerContextType => {
   const context = useContext(StudyTimerContext);
-  if (!context) {
-    throw new Error('useStudyTimer deve ser utilizado dentro de um StudyTimerProvider');
-  }
-  return context;
+  return context || DEFAULT_STUDY_TIMER_FALLBACK;
 };
