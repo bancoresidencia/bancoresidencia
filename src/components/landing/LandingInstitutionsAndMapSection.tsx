@@ -445,8 +445,9 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                 {/* SVG do Mapa com Efeito de Zoom Dinâmico e Contornos Oficiais do IBGE */}
                 <svg
                   viewBox="0 0 450 460"
-                  className="w-full h-full drop-shadow-sm select-none"
+                  className="w-full h-full select-none"
                   style={{ overflow: 'visible' }}
+                  shapeRendering="geometricPrecision"
                 >
                   {/* Grupo dos Estados com Transição Suave de Posição e Escala Aumentada */}
                   <g
@@ -471,14 +472,16 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                         : isZoomed ? '#f1f1f5' : '#e4e4e7';
 
                       const stroke = isSelected
-                        ? accentConfig.primaryHex
+                        ? isDark
+                          ? accentConfig.id === 'neutral' ? '#ffffff' : (accentConfig.hoverHex || '#93c5fd')
+                          : accentConfig.id === 'neutral' ? '#09090b' : (accentConfig.hoverHex || '#1d4ed8')
                         : isDark
-                        ? isZoomed ? 'rgba(255, 255, 255, 0.22)' : '#2a2a35'
-                        : isZoomed ? 'rgba(0, 0, 0, 0.18)' : '#d1d5db';
+                        ? isZoomed ? 'rgba(255, 255, 255, 0.28)' : '#2a2a35'
+                        : isZoomed ? 'rgba(0, 0, 0, 0.22)' : '#d1d5db';
 
                       const strokeWidth = isSelected
-                        ? 1.4 / zoomScale
-                        : isZoomed ? 0.7 / zoomScale : 0.8 / zoomScale;
+                        ? 1.5
+                        : isZoomed ? 0.85 : 0.8;
 
                       const opacity = isZoomed && !isSelected
                         ? isHovered ? 0.85 : 0.42
@@ -502,6 +505,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                             fill={fill}
                             stroke={stroke}
                             strokeWidth={strokeWidth}
+                            vectorEffect="non-scaling-stroke"
                             strokeLinecap="round"
                             strokeLinejoin="round"
                             className="transition-colors duration-200"
