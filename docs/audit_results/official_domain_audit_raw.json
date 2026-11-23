@@ -1,0 +1,1338 @@
+{
+  "url": "https://hippocampusresidencia.com.br",
+  "timestamp": "2026-11-22T23:20:17.502Z",
+  "consoleLogs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x53406d2f600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "https://hippocampusresidencia.com.br/",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x53406d2f600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "https://hippocampusresidencia.com.br/",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x53406d2f600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "https://hippocampusresidencia.com.br/",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x53406d2f600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "location": {
+        "url": "https://hippocampusresidencia.com.br/",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "pageErrors": [
+    {
+      "message": "Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.",
+      "stack": "Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\n    at r1 (https://hippocampusresidencia.com.br/_next/static/immutable/chunks/3nnt4rn_b9alf.js:1:58033)\n    at ih (https://hippocampusresidencia.com.br/_next/static/immutable/chunks/3nnt4rn_b9alf.js:1:109233)\n    at sw (https://hippocampusresidencia.com.br/_next/static/immutable/chunks/3nnt4rn_b9alf.js:1:151038)\n    at https://hippocampusresidencia.com.br/_next/static/immutable/chunks/3nnt4rn_b9alf.js:1:145953\n    at su (https://hippocampusresidencia.com.br/_next/static/immutable/chunks/3nnt4rn_b9alf.js:1:146054)\n    at sJ (https://hippocampusresidencia.com.br/_next/static/immutable/chunks/3nnt4rn_b9alf.js:1:172601)\n    at MessagePort.z (https://hippocampusresidencia.com.br/_next/static/immutable/chunks/3nnt4rn_b9alf.js:1:225566)"
+    }
+  ],
+  "failedRequests": [],
+  "slowRequests": [
+    {
+      "url": "https://hippocampusresidencia.com.br/models/cerebrum-papez-v7-meshopt.glb",
+      "status": 200,
+      "type": "fetch",
+      "durationMs": 1521.326,
+      "size": 3465108
+    }
+  ],
+  "networkSummary": {
+    "totalBytes": 6186156,
+    "totalRequests": 58,
+    "byType": {
+      "document": {
+        "count": 1,
+        "bytes": 255832
+      },
+      "script": {
+        "count": 18,
+        "bytes": 1830755
+      },
+      "stylesheet": {
+        "count": 2,
+        "bytes": 430214
+      },
+      "font": {
+        "count": 1,
+        "bytes": 48432
+      },
+      "xhr": {
+        "count": 2,
+        "bytes": 0
+      },
+      "fetch": {
+        "count": 5,
+        "bytes": 3474229
+      },
+      "image": {
+        "count": 29,
+        "bytes": 146694
+      }
+    }
+  },
+  "cdpMetricsInitial": {
+    "Timestamp": 635093.666272,
+    "AudioHandlers": 0,
+    "AudioWorkletProcessors": 0,
+    "Documents": 1,
+    "Frames": 1,
+    "JSEventListeners": 779,
+    "LayoutObjects": 1726,
+    "MediaKeySessions": 0,
+    "MediaKeys": 0,
+    "Nodes": 3862,
+    "Resources": 55,
+    "ContextLifecycleStateObservers": 11,
+    "V8PerContextDatas": 2,
+    "WorkerGlobalScopes": 0,
+    "UACSSResources": 0,
+    "RTCPeerConnections": 0,
+    "ResourceFetchers": 1,
+    "AdSubframes": 0,
+    "DetachedScriptStates": 4,
+    "ArrayBufferContents": 56,
+    "LayoutCount": 12,
+    "RecalcStyleCount": 73,
+    "LayoutDuration": 0.386703,
+    "RecalcStyleDuration": 0.818615,
+    "DevToolsCommandDuration": 0.070999,
+    "ScriptDuration": 0.638463,
+    "V8CompileDuration": 0.002064,
+    "TaskDuration": 5.979174,
+    "TaskOtherDuration": 4.06233,
+    "ThreadTime": 1.959188,
+    "ProcessTime": 8.184816,
+    "JSHeapUsedSize": 8620736,
+    "JSHeapTotalSize": 18087936,
+    "FirstMeaningfulPaint": 0,
+    "DomContentLoaded": 635087.766098,
+    "NavigationStart": 635086.201011
+  },
+  "cdpMetricsScrolled": null,
+  "cdpMetricsBottom": {
+    "Timestamp": 635105.031755,
+    "AudioHandlers": 0,
+    "AudioWorkletProcessors": 0,
+    "Documents": 1,
+    "Frames": 1,
+    "JSEventListeners": 3088,
+    "LayoutObjects": 1744,
+    "MediaKeySessions": 0,
+    "MediaKeys": 0,
+    "Nodes": 3879,
+    "Resources": 58,
+    "ContextLifecycleStateObservers": 11,
+    "V8PerContextDatas": 2,
+    "WorkerGlobalScopes": 0,
+    "UACSSResources": 0,
+    "RTCPeerConnections": 0,
+    "ResourceFetchers": 1,
+    "AdSubframes": 0,
+    "DetachedScriptStates": 0,
+    "ArrayBufferContents": 66,
+    "LayoutCount": 95,
+    "RecalcStyleCount": 225,
+    "LayoutDuration": 0.489304,
+    "RecalcStyleDuration": 0.975577,
+    "DevToolsCommandDuration": 0.255606,
+    "ScriptDuration": 0.820922,
+    "V8CompileDuration": 0.002064,
+    "TaskDuration": 15.672634,
+    "TaskOtherDuration": 13.129161,
+    "ThreadTime": 2.802392,
+    "ProcessTime": 11.020598,
+    "JSHeapUsedSize": 10810868,
+    "JSHeapTotalSize": 16175104,
+    "FirstMeaningfulPaint": 635087.980281,
+    "DomContentLoaded": 635087.766098,
+    "NavigationStart": 635086.201011
+  },
+  "fpsProfile": {
+    "totalFramesMeasured": 140,
+    "jankFramesCount": 38,
+    "longFramesOver50ms": 20
+  },
+  "webglState": {
+    "hasCanvas": true,
+    "glType": "webgl2",
+    "canvasWidth": 670,
+    "canvasHeight": 821,
+    "canvasStyle": "display: block; width: 670px; height: 821px;"
+  },
+  "animationAudit": {
+    "totalSectionsDetected": 10,
+    "sections": [
+      {
+        "id": "neuroanatomia",
+        "tagName": "DIV",
+        "classes": "scroll-mt-16",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 65,
+        "height": 9504
+      },
+      {
+        "id": "font-inter relative w-full bg-",
+        "tagName": "SECTION",
+        "classes": "font-inter relative w-full bg-zinc-50 dark:bg-[var(--bg-page)] transition-colors duration-300",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 65,
+        "height": 9504
+      },
+      {
+        "id": "font-inter relative w-full h-f",
+        "tagName": "SECTION",
+        "classes": "font-inter relative w-full h-full flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 py-6 sm:py-8 bg-transparent overflow-hidden select-none pointer-events-none",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 8525,
+        "height": 1016
+      },
+      {
+        "id": "flex flex-col",
+        "tagName": "DIV",
+        "classes": "flex flex-col",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 9569,
+        "height": 6575.390625
+      },
+      {
+        "id": "onde-vem-as-provas",
+        "tagName": "SECTION",
+        "classes": "relative scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 9569,
+        "height": 1033.1875
+      },
+      {
+        "id": "dentro-da-plataforma",
+        "tagName": "SECTION",
+        "classes": "relative scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 10602.1875,
+        "height": 1962.625
+      },
+      {
+        "id": "recursos-adicionais",
+        "tagName": "SECTION",
+        "classes": "relative scroll-mt-20 pt-12 sm:pt-16 pb-8 sm:pb-12 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 12564.8125,
+        "height": 822.8125
+      },
+      {
+        "id": "planos",
+        "tagName": "SECTION",
+        "classes": "relative scroll-mt-20 pt-8 sm:pt-12 pb-14 sm:pb-20 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 13387.625,
+        "height": 888.34375
+      },
+      {
+        "id": "faq",
+        "tagName": "SECTION",
+        "classes": "relative scroll-mt-20 pt-10 sm:pt-14 pb-14 sm:pb-20 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 14275.96875,
+        "height": 928.96875
+      },
+      {
+        "id": "suporte",
+        "tagName": "SECTION",
+        "classes": "scroll-mt-20 py-16 sm:py-22 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200",
+        "opacity": "1",
+        "transform": "none",
+        "willChange": "auto",
+        "hasTransition": true,
+        "top": 15204.9375,
+        "height": 742.796875
+      }
+    ],
+    "afterScrollUp": [
+      {
+        "id": "neuroanatomia",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "font-inter relative w-full bg-",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "font-inter relative w-full h-f",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "flex flex-col",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "onde-vem-as-provas",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "dentro-da-plataforma",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "recursos-adicionais",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "planos",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "faq",
+        "opacity": "1",
+        "transform": "none"
+      },
+      {
+        "id": "suporte",
+        "opacity": "1",
+        "transform": "none"
+      }
+    ]
+  },
+  "buttonsAudit": [
+    {
+      "idx": 0,
+      "tag": "button",
+      "text": "Hippocampus QUESTÕES DE RESIDÊNCIA",
+      "id": null,
+      "classes": "flex items-center cursor-pointer group select-none py-1 rounded-xl focus-visible",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 1,
+      "tag": "button",
+      "text": "Metodologia",
+      "id": null,
+      "classes": "px-3 py-1.5 rounded-lg text-[13px] font-semibold text-zinc-600 dark:text-zinc-30",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 2,
+      "tag": "button",
+      "text": "Provas Oficiais",
+      "id": null,
+      "classes": "px-3 py-1.5 rounded-lg text-[13px] font-semibold text-zinc-600 dark:text-zinc-30",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 3,
+      "tag": "button",
+      "text": "Dentro da Plataforma",
+      "id": null,
+      "classes": "px-3 py-1.5 rounded-lg text-[13px] font-semibold text-zinc-600 dark:text-zinc-30",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 4,
+      "tag": "button",
+      "text": "Recursos",
+      "id": null,
+      "classes": "px-3 py-1.5 rounded-lg text-[13px] font-semibold text-zinc-600 dark:text-zinc-30",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 5,
+      "tag": "button",
+      "text": "Planos",
+      "id": null,
+      "classes": "px-3 py-1.5 rounded-lg text-[13px] font-semibold text-zinc-600 dark:text-zinc-30",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 6,
+      "tag": "button",
+      "text": "FAQ",
+      "id": null,
+      "classes": "px-3 py-1.5 rounded-lg text-[13px] font-semibold text-zinc-600 dark:text-zinc-30",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 7,
+      "tag": "button",
+      "text": "Atendimento",
+      "id": null,
+      "classes": "px-3 py-1.5 rounded-lg text-[13px] font-semibold text-zinc-600 dark:text-zinc-30",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 8,
+      "tag": "button",
+      "text": "Personalizar tema e cores (Tema ativo: Azul)",
+      "id": null,
+      "classes": "h-8 sm:h-9 px-2 sm:px-2.5 rounded-full flex items-center justify-center gap-1.5 ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 9,
+      "tag": "button",
+      "text": "Entrar",
+      "id": null,
+      "classes": "hidden sm:inline-flex items-center justify-center h-9 px-3.5 rounded-xl text-xs ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": "true",
+      "isVisible": true
+    },
+    {
+      "idx": 10,
+      "tag": "button",
+      "text": "Testar Grátis",
+      "id": null,
+      "classes": "inline-flex items-center justify-center h-9 px-3.5 sm:px-4 rounded-xl text-xs sm",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": "true",
+      "isVisible": true
+    },
+    {
+      "idx": 11,
+      "tag": "button",
+      "text": "Abrir menu",
+      "id": null,
+      "classes": "lg:hidden h-9 w-9 inline-flex items-center justify-center rounded-xl text-zinc-6",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": false
+    },
+    {
+      "idx": 12,
+      "tag": "button",
+      "text": "Testar Grátis Agora",
+      "id": null,
+      "classes": "group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": "true",
+      "isVisible": true
+    },
+    {
+      "idx": 13,
+      "tag": "button",
+      "text": "Assinar Agora",
+      "id": null,
+      "classes": "group relative w-full sm:w-auto inline-flex items-center justify-center gap-2 px",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 14,
+      "tag": "button",
+      "text": "Rolar para a animação neuroanatômica do cérebro",
+      "id": null,
+      "classes": "pointer-events-auto group flex flex-col items-center cursor-pointer p-2 focus-vi",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 15,
+      "tag": "button",
+      "text": "Córtex pré-frontal",
+      "id": null,
+      "classes": "flex-1 py-1 px-1.5 sm:px-2 rounded-xl transition-all duration-300 flex flex-col ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 16,
+      "tag": "button",
+      "text": "Circuito de Papez",
+      "id": null,
+      "classes": "flex-1 py-1 px-1.5 sm:px-2 rounded-xl transition-all duration-300 flex flex-col ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 17,
+      "tag": "button",
+      "text": "Hipocampo",
+      "id": null,
+      "classes": "flex-1 py-1 px-1.5 sm:px-2 rounded-xl transition-all duration-300 flex flex-col ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 18,
+      "tag": "button",
+      "text": "Destaques",
+      "id": null,
+      "classes": "px-2 py-0.5 rounded-md transition-all cursor-pointer bg-white dark:bg-zinc-900 t",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 19,
+      "tag": "button",
+      "text": "Todas",
+      "id": null,
+      "classes": "px-2 py-0.5 rounded-md transition-all cursor-pointer text-zinc-600 dark:text-zin",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 20,
+      "tag": "button",
+      "text": "Questões na Prática",
+      "id": null,
+      "classes": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold t",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 21,
+      "tag": "button",
+      "text": "Flashcards FSRS",
+      "id": null,
+      "classes": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold t",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 22,
+      "tag": "button",
+      "text": "Resumos com Raio-X",
+      "id": null,
+      "classes": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold t",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 23,
+      "tag": "button",
+      "text": "Painel de Desempenho & TRI",
+      "id": null,
+      "classes": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold t",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 24,
+      "tag": "button",
+      "text": "Voltar",
+      "id": null,
+      "classes": "w-9 h-9 flex items-center justify-center rounded-xl bg-[#181a24] hover:bg-[#2023",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 25,
+      "tag": "button",
+      "text": "Sem texto",
+      "id": null,
+      "classes": "p-0.5 rounded text-zinc-500 hover:text-white cursor-pointer",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 26,
+      "tag": "button",
+      "text": "Caneta / Marca-texto",
+      "id": null,
+      "classes": "flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px] rounded-xl border transitio",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 27,
+      "tag": "button",
+      "text": "Sem texto",
+      "id": null,
+      "classes": "",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 28,
+      "tag": "button",
+      "text": "Riscar",
+      "id": null,
+      "classes": "flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px] rounded-xl border transitio",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 29,
+      "tag": "button",
+      "text": "A",
+      "id": null,
+      "classes": "flex items-center gap-1 px-2.5 py-1.5 min-h-[32px] bg-[#141620] hover:bg-[#1a1d2",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 30,
+      "tag": "button",
+      "text": "Favoritar questão",
+      "id": null,
+      "classes": "p-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 31,
+      "tag": "button",
+      "text": "Reportar questão",
+      "id": null,
+      "classes": "p-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 32,
+      "tag": "button",
+      "text": "Atalhos",
+      "id": null,
+      "classes": "hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 33,
+      "tag": "button",
+      "text": "2",
+      "id": null,
+      "classes": "flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c]",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 34,
+      "tag": "button",
+      "text": "Finalizar",
+      "id": null,
+      "classes": "flex items-center gap-1 px-4 py-1.5 rounded-xl text-xs font-black shadow-md curs",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 35,
+      "tag": "button",
+      "text": "Refazer",
+      "id": null,
+      "classes": "ml-1 text-[11px] underline text-zinc-400 hover:text-white flex items-center gap-",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 36,
+      "tag": "button",
+      "text": "Ocultar alternativas",
+      "id": null,
+      "classes": "p-1.5 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-white cursor-pointer",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 37,
+      "tag": "button",
+      "text": "Salvar na Pasta",
+      "id": null,
+      "classes": "flex items-center gap-1 px-2.5 py-1 rounded-lg hover:bg-zinc-800 text-zinc-400 h",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 38,
+      "tag": "button",
+      "text": "Ocultar Justificativa",
+      "id": null,
+      "classes": "px-3 py-1 rounded-lg text-white text-xs font-bold transition-all cursor-pointer ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 39,
+      "tag": "button",
+      "text": "Ver Justificativa",
+      "id": null,
+      "classes": "px-3 py-1 rounded-lg text-white text-xs font-bold transition-all cursor-pointer ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 40,
+      "tag": "button",
+      "text": "Ver Justificativa",
+      "id": null,
+      "classes": "px-3 py-1 rounded-lg text-white text-xs font-bold transition-all cursor-pointer ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 41,
+      "tag": "button",
+      "text": "Ver Justificativa",
+      "id": null,
+      "classes": "px-3 py-1 rounded-lg text-white text-xs font-bold transition-all cursor-pointer ",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 42,
+      "tag": "button",
+      "text": "< Anterior",
+      "id": null,
+      "classes": "px-4 py-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 43,
+      "tag": "button",
+      "text": "Próxima >",
+      "id": null,
+      "classes": "px-5 py-2 rounded-xl text-white text-xs font-bold shadow-md cursor-pointer trans",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 44,
+      "tag": "button",
+      "text": "CADERNOS OFICIAIS Provas na Íntegra com Cronômetro Real Trei",
+      "id": null,
+      "classes": "relative overflow-hidden w-full text-left p-4 sm:p-5 rounded-2xl border transiti",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 45,
+      "tag": "button",
+      "text": "PSICOMETRIA CALIBRADA Nota TRI & Percentil em Tempo Real Não",
+      "id": null,
+      "classes": "relative overflow-hidden w-full text-left p-4 sm:p-5 rounded-2xl border transiti",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 46,
+      "tag": "button",
+      "text": "REMEDIAÇÃO SEMÂNTICA Caderno de Erros Automático Cada questã",
+      "id": null,
+      "classes": "relative overflow-hidden w-full text-left p-4 sm:p-5 rounded-2xl border transiti",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 47,
+      "tag": "button",
+      "text": "ROTINA DE INTERNATO Sincronização com Google Agenda Encaixe ",
+      "id": null,
+      "classes": "relative overflow-hidden w-full text-left p-4 sm:p-5 rounded-2xl border transiti",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 48,
+      "tag": "button",
+      "text": "Experimentar na Prática",
+      "id": null,
+      "classes": "px-6 py-3 rounded-xl font-extrabold text-xs sm:text-sm flex items-center gap-2 c",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 49,
+      "tag": "button",
+      "text": "Assinar Plano Mensal",
+      "id": null,
+      "classes": "w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-p",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 50,
+      "tag": "button",
+      "text": "Assinar Plano Semestral",
+      "id": null,
+      "classes": "w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-p",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 51,
+      "tag": "button",
+      "text": "Assinar Plano Anual",
+      "id": null,
+      "classes": "w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-p",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 52,
+      "tag": "button",
+      "text": "Assinar Plano Bienal",
+      "id": null,
+      "classes": "w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-p",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 53,
+      "tag": "button",
+      "text": "Como funcionam as condições especiais de lançamento?",
+      "id": null,
+      "classes": "w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-point",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 54,
+      "tag": "button",
+      "text": "As resoluções comentam todas as alternativas ou apenas o gab",
+      "id": null,
+      "classes": "w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-point",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 55,
+      "tag": "button",
+      "text": "Quais bancas e modalidades estão contempladas nas +200 mil q",
+      "id": null,
+      "classes": "w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-point",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 56,
+      "tag": "button",
+      "text": "Como funcionam os Flashcards FSRS, o Método Cloze e os Resum",
+      "id": null,
+      "classes": "w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-point",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 57,
+      "tag": "button",
+      "text": "Posso estudar pelo celular no plantão, tablet e computador?",
+      "id": null,
+      "classes": "w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-point",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 58,
+      "tag": "button",
+      "text": "Como funciona a Garantia Incondicional de 7 Dias?",
+      "id": null,
+      "classes": "w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-point",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 59,
+      "tag": "button",
+      "text": "Como funciona o Programa de Embaixadores para estudantes?",
+      "id": null,
+      "classes": "w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-point",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 60,
+      "tag": "a",
+      "text": "Consultor de Planos",
+      "id": null,
+      "classes": "inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs sm:te",
+      "href": "https://wa.me/5588999903641?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20planos%20do%20Hippocampus.",
+      "target": "_blank",
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 61,
+      "tag": "a",
+      "text": "Suporte ao Aluno",
+      "id": null,
+      "classes": "inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs sm:te",
+      "href": "https://wa.me/5588999082917?text=Ol%C3%A1%2C%20preciso%20de%20suporte%20na%20plataforma%20Hippocampus.",
+      "target": "_blank",
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 62,
+      "tag": "button",
+      "text": "Testar Grátis Agora",
+      "id": null,
+      "classes": "inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bo",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 63,
+      "tag": "button",
+      "text": "Ver Planos e Descontos",
+      "id": null,
+      "classes": "px-6 py-3.5 rounded-xl text-xs sm:text-sm font-semibold text-zinc-200 bg-white/8",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 64,
+      "tag": "button",
+      "text": "Banco de Questões",
+      "id": null,
+      "classes": "hover:text-zinc-950 dark:hover:text-white transition-colors cursor-pointer",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 65,
+      "tag": "button",
+      "text": "Ecossistema",
+      "id": null,
+      "classes": "hover:text-zinc-950 dark:hover:text-white transition-colors cursor-pointer",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 66,
+      "tag": "button",
+      "text": "Flashcards FSRS",
+      "id": null,
+      "classes": "hover:text-zinc-950 dark:hover:text-white transition-colors cursor-pointer",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 67,
+      "tag": "button",
+      "text": "Planos",
+      "id": null,
+      "classes": "hover:text-zinc-950 dark:hover:text-white transition-colors cursor-pointer",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 68,
+      "tag": "button",
+      "text": "Programa de Embaixadores",
+      "id": null,
+      "classes": "hover:text-zinc-950 dark:hover:text-white transition-colors cursor-pointer",
+      "href": null,
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 69,
+      "tag": "a",
+      "text": "Termos de Uso",
+      "id": null,
+      "classes": "hover:text-zinc-950 dark:hover:text-white transition-colors",
+      "href": "/termos",
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    },
+    {
+      "idx": 70,
+      "tag": "a",
+      "text": "Política de Privacidade (LGPD)",
+      "id": null,
+      "classes": "hover:text-zinc-950 dark:hover:text-white transition-colors",
+      "href": "/privacidade",
+      "target": null,
+      "role": null,
+      "dataAuth": null,
+      "isVisible": true
+    }
+  ],
+  "themesAudit": [
+    {
+      "mode": "dark",
+      "accent": "neutral",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "rgb(255, 255, 255)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "lab(96.1634 0.0993311 -0.364041)"
+    },
+    {
+      "mode": "light",
+      "accent": "neutral",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "lab(2.51107 0.242703 -0.886115)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "oklab(0.966998 0.000272095 -0.000936747)"
+    },
+    {
+      "mode": "dark",
+      "accent": "green",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "rgb(255, 255, 255)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "lab(96.1634 0.0993311 -0.364041)"
+    },
+    {
+      "mode": "light",
+      "accent": "green",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "lab(2.51107 0.242703 -0.886115)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "oklab(0.966998 0.000272095 -0.000936747)"
+    },
+    {
+      "mode": "dark",
+      "accent": "blue",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "rgb(255, 255, 255)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "lab(96.1634 0.0993311 -0.364041)"
+    },
+    {
+      "mode": "light",
+      "accent": "blue",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "lab(2.51107 0.242703 -0.886115)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "oklab(0.966998 0.000272095 -0.000936747)"
+    },
+    {
+      "mode": "dark",
+      "accent": "rose",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "rgb(255, 255, 255)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "lab(96.1634 0.0993311 -0.364041)"
+    },
+    {
+      "mode": "light",
+      "accent": "rose",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "lab(2.51107 0.242703 -0.886115)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "oklab(0.966998 0.000272095 -0.000936747)"
+    },
+    {
+      "mode": "dark",
+      "accent": "purple",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "rgb(255, 255, 255)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "lab(96.1634 0.0993311 -0.364041)"
+    },
+    {
+      "mode": "light",
+      "accent": "purple",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "lab(2.51107 0.242703 -0.886115)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "oklab(0.966998 0.000272095 -0.000936747)"
+    },
+    {
+      "mode": "dark",
+      "accent": "orange",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "rgb(255, 255, 255)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "lab(96.1634 0.0993311 -0.364041)"
+    },
+    {
+      "mode": "light",
+      "accent": "orange",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "lab(2.51107 0.242703 -0.886115)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "oklab(0.966998 0.000272095 -0.000936747)"
+    },
+    {
+      "mode": "dark",
+      "accent": "red",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "rgb(255, 255, 255)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "lab(96.1634 0.0993311 -0.364041)"
+    },
+    {
+      "mode": "light",
+      "accent": "red",
+      "applied": true,
+      "bodyBg": "rgb(9, 9, 11)",
+      "titleColor": "lab(2.51107 0.242703 -0.886115)",
+      "ctaBg": "rgba(0, 0, 0, 0)",
+      "ctaColor": "oklab(0.966998 0.000272095 -0.000936747)"
+    }
+  ]
+}

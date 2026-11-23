@@ -99,8 +99,8 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
     // Otimização de GPU: 1.25x é visualmente idêntico a 1.75x em telas Retina/4K, reduzindo 40% da carga de fragment shader
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.25));
     renderer.setClearColor(0x000000, 0);
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.15;
+    renderer.toneMapping = THREE.LinearToneMapping;
+    renderer.toneMappingExposure = 1.0;
     renderer.domElement.style.width = '100%';
     renderer.domElement.style.height = '100%';
     renderer.domElement.style.display = 'block';
@@ -470,10 +470,12 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
         rafId = null;
       }
     };
-    const visibilityObserver = isVisible ? null : new IntersectionObserver(([entry]) => {
-      isVisible = entry.isIntersecting;
-      syncAnimation();
-    });
+    const visibilityObserver = typeof IntersectionObserver !== 'undefined'
+      ? new IntersectionObserver(([entry]) => {
+          isVisible = entry.isIntersecting;
+          syncAnimation();
+        }, { rootMargin: '120px 0px' })
+      : null;
     visibilityObserver?.observe(container);
     document.addEventListener('visibilitychange', syncAnimation);
     window.addEventListener('scroll', wakeUp, { passive: true });

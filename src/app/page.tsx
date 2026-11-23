@@ -117,7 +117,34 @@ export default function RootHomePage() {
     setAuthModal({ mode, planTitle });
   }, []);
 
+  const handleCloseAuth = useCallback(() => {
+    setAuthModal(null);
+    if (typeof window !== 'undefined') {
+      try {
+        const url = new URL(window.location.href);
+        if (url.searchParams.has('checkout') || url.searchParams.has('login') || url.searchParams.has('auth') || url.searchParams.has('plan')) {
+          url.searchParams.delete('checkout');
+          url.searchParams.delete('login');
+          url.searchParams.delete('auth');
+          url.searchParams.delete('plan');
+          window.history.replaceState({}, '', url.pathname + (url.search ? url.search : ''));
+        }
+      } catch {}
+    }
+  }, []);
+
   const handleDemoLogin = useCallback(() => handleOpenAuth('login'), [handleOpenAuth]);
+
+  useEffect(() => {
+    if (!authModal) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleCloseAuth();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [authModal, handleCloseAuth]);
 
   return (
     <>
@@ -139,15 +166,22 @@ export default function RootHomePage() {
           <LandingPage onOpenAuth={handleOpenAuth} onLoginDemo={handleDemoLogin} />
 
           {authModal && (
-            <div className="fixed inset-0 z-50 flex justify-center items-start sm:items-center p-3 sm:p-5 bg-slate-950/70 backdrop-blur-xs overflow-y-auto animate-fadeIn">
-              <div className="w-full max-w-xl sm:max-w-[620px] my-auto py-3 sm:py-6">
+            <div
+              role="dialog"
+              aria-modal="true"
+              className="fixed inset-0 z-50 flex justify-center items-start sm:items-center p-3 sm:p-5 bg-slate-950/70 backdrop-blur-xs overflow-y-auto animate-fadeIn cursor-pointer"
+              onClick={(e) => {
+                if (e.target === e.currentTarget) handleCloseAuth();
+              }}
+            >
+              <div className="w-full max-w-xl sm:max-w-[620px] my-auto py-3 sm:py-6 cursor-default">
                 <AuthScreen
                   key={authModal.mode + '-' + (authModal.planTitle || 'default')}
                   initialMode={authModal.mode}
                   selectedPlanTitle={authModal.planTitle}
-                  onClose={() => setAuthModal(null)}
+                  onClose={handleCloseAuth}
                   onSuccess={() => {
-                    setAuthModal(null);
+                    handleCloseAuth();
                     try {
                       sessionStorage.removeItem('pending_checkout_plan');
                       localStorage.removeItem('pending_checkout_plan');

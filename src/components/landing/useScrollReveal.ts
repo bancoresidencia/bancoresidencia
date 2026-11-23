@@ -21,7 +21,10 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
     : (thresholdOrOptions?.rootMargin ?? defaultRootMargin);
 
   useEffect(() => {
-    if (!isNear || isVisible) return;
+    if (!isNear) {
+      setIsVisible(false);
+      return;
+    }
     const el = ref.current;
     if (!el) return;
     if (typeof IntersectionObserver === 'undefined' ||
@@ -33,10 +36,7 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target);
-          }
+          setIsVisible(entry.isIntersecting);
         }
       },
       { threshold, rootMargin }
@@ -44,7 +44,7 @@ export function useScrollReveal<T extends HTMLElement = HTMLDivElement>(
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [isNear, isVisible, threshold, rootMargin]);
+  }, [isNear, threshold, rootMargin]);
 
   return { ref, isVisible };
 }

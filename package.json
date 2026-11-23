@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "motion:studio": "motion-studio serve",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint src/",
     "db:backup": "node scripts/backup_supabase_db.mjs",

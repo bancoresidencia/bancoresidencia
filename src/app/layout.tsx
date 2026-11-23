@@ -97,7 +97,7 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <head />
-      <body className="min-h-full flex flex-col font-sans transition-colors duration-200">
+      <body className="min-h-full flex flex-col font-sans transition-colors duration-200" suppressHydrationWarning>
         <Script
           id="banco-theme-init"
           strategy="beforeInteractive"

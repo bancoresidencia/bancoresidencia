@@ -1,14 +1,26 @@
 'use client';
 
 import React, { memo, useState, useCallback } from 'react';
+import dynamic from 'next/dynamic';
 import { LandingHeader } from '@/components/landing/LandingHeader';
 import { LandingBrainHero } from '@/components/LandingBrainHero';
 import { LandingInstitutionsAndMapSection } from '@/components/landing/LandingInstitutionsAndMapSection';
-import { LandingInsidePlatformSection } from '@/components/landing/LandingInsidePlatformSection';
 import { LandingEcosystemShowcase } from '@/components/landing/LandingEcosystemShowcase';
 import { LandingPricingSection } from '@/components/landing/LandingPricingSection';
 import { LandingFaqAndFooter } from '@/components/landing/LandingFaqAndFooter';
 import { LandingSections } from '@/components/landing/LandingSections';
+
+const LandingInsidePlatformSection = dynamic(
+  () => import('@/components/landing/LandingInsidePlatformSection').then((m) => m.LandingInsidePlatformSection),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="min-h-[500px] flex items-center justify-center bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-500">
+        <div className="w-8 h-8 rounded-full border-2 border-zinc-400 border-t-transparent animate-spin" />
+      </div>
+    )
+  }
+);
 
 interface LandingPageProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;

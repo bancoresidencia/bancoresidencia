@@ -93,6 +93,11 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     const scrollable = Math.max(trackHeight - winH, 1);
     const rawProgress = Math.max(0, Math.min(1, (scrollY - trackTop) / scrollable));
 
+    // Otimização de GPU/CPU: se o usuário já ultrapassou toda a extensão da seção 3D (+200px), não reprocessar estilos
+    if (rawProgress >= 1 && scrollY > trackTop + trackHeight + 200 && scrollProgressRef.current >= 1) {
+      return false;
+    }
+
     // Mapeamento contínuo das dobras:
     // 0.00 -> 0.16: Dobra 1 (Os 4 Pilares da Aprovação - Carrossel com cérebro centralizado no fundo)
     // 0.14 -> 0.30: Transição da Dobra 1 para a Dobra 2 (O Salto/Glide: cérebro migra para a DIREITA e solidifica)

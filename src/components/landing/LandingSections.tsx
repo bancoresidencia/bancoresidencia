@@ -15,10 +15,8 @@ export function LandingSections({ children }: { children: ReactNode }) {
     }
 
     const observer = new IntersectionObserver(([entry]) => {
-      if (!entry.isIntersecting) return;
-      observer.disconnect();
-      setIsNear(true);
-    }, { rootMargin: '400px 0px' });
+      setIsNear(entry.isIntersecting);
+    }, { rootMargin: '600px 0px' });
     observer.observe(element);
     return () => observer.disconnect();
   }, []);
