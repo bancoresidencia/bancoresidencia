@@ -9,6 +9,7 @@
  * 4. CSP baseada em nonce por requisição (elimina 'unsafe-inline' em script-src)
  * 5. Atualização de sessão Supabase (cookie refresh) para Server Components
  * 6. Proteção de rotas administrativas (/api/admin/* e /admin/*)
+ * 7. Proteção das páginas da plataforma do estudante (exige autenticação)
  */
 
 import { NextResponse, NextRequest } from 'next/server';
@@ -52,6 +53,34 @@ function buildCsp(nonce: string): string {
     "form-action 'self' https://accounts.google.com https://www.mercadopago.com.br",
     ...(isDev ? [] : ["upgrade-insecure-requests"])
   ].join('; ');
+}
+
+// ---------------------------------------------------------------------------
+// Rotas da Plataforma (Área do Estudante — acesso restrito a usuários autenticados)
+// ---------------------------------------------------------------------------
+const PROTECTED_PLATFORM_ROUTES: readonly string[] = [
+  '/dashboard',
+  '/agenda',
+  '/caderno-de-erros',
+  '/configuracoes',
+  '/cronograma',
+  '/desempenho',
+  '/flashcards',
+  '/listas',
+  '/provas',
+  '/questoes',
+  '/ranking',
+  '/resumos',
+  '/simulados',
+];
+
+function isProtectedPlatformPath(pathname: string): boolean {
+  const normalized = pathname.endsWith('/') && pathname.length > 1
+    ? pathname.slice(0, -1)
+    : pathname;
+  return PROTECTED_PLATFORM_ROUTES.some(
+    (route) => normalized === route || normalized.startsWith(`${route}/`)
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -253,6 +282,20 @@ export async function proxy(request: NextRequest) {
       url.pathname = '/';
       url.searchParams.set('error', 'unauthorized_admin');
       return NextResponse.redirect(url);
+    }
+  }
+
+  // 9. Proteção das páginas da plataforma do estudante (exige estar autenticado)
+  if (isProtectedPlatformPath(pathname)) {
+    if (!user || !supabase) {
+      const url = request.nextUrl.clone();
+      url.pathname = '/';
+      url.search = '';
+      const redirectResponse = NextResponse.redirect(url);
+      supabaseResponse.cookies.getAll().forEach((cookie) => {
+        redirectResponse.cookies.set(cookie);
+      });
+      return redirectResponse;
     }
   }
 

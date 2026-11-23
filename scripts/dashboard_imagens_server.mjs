@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import { DatabaseSync } from 'node:sqlite';
 import { createClient } from '@supabase/supabase-js';
+import sharp from 'sharp';
 
 const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3336;
 const DB_PATH = path.resolve('data/supabase_tables/supabase_tables.db');
@@ -20,8 +21,11 @@ const PDR_DIR = path.resolve('data/imagens_provaderesidencia');
 const BANCO_GERAL_DIR = path.resolve('data/imagens_banco_geral');
 const MEDEVO_DOWNLOAD_DIR = path.resolve('data/imagens_medevo_download');
 const EXTRACTED_DIR = path.resolve('data/extracted_images_webp');
+const GINECO_DIR = path.resolve('public/images/questoes/ginecologia');
+const URO_DIR = path.resolve('public/images/questoes/urologia');
+const PUBLIC_DIR = path.resolve('public');
 
-for (const dir of [HIGIENIZADAS_DIR, ORIGINAIS_MEDQ_DIR, COMPARACOES_MEDQ_DIR, CONVERTED_DIR, RESCUED_DIR, PDR_DIR, BANCO_GERAL_DIR, MEDEVO_DOWNLOAD_DIR, EXTRACTED_DIR]) {
+for (const dir of [HIGIENIZADAS_DIR, ORIGINAIS_MEDQ_DIR, COMPARACOES_MEDQ_DIR, CONVERTED_DIR, RESCUED_DIR, PDR_DIR, BANCO_GERAL_DIR, MEDEVO_DOWNLOAD_DIR, EXTRACTED_DIR, GINECO_DIR, URO_DIR]) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
@@ -97,8 +101,16 @@ function resolveLocalFile(rawUrl) {
   const cleanUrl = rawUrl.split('?')[0];
   const baseName = path.basename(cleanUrl);
 
+  const directPublic = path.resolve(PUBLIC_DIR, cleanUrl.replace(/^\/+/, ''));
+  if (fs.existsSync(directPublic)) {
+    const parent = path.basename(path.dirname(directPublic));
+    return { fullPath: directPublic, baseName, subFolder: parent || 'questoes' };
+  }
+
   const candidates = [
     { dir: HIGIENIZADAS_DIR, sub: 'imagens_higienizadas_medq' },
+    { dir: GINECO_DIR, sub: 'ginecologia' },
+    { dir: URO_DIR, sub: 'urologia' },
     { dir: PDR_DIR, sub: 'provaderesidencia' },
     { dir: BANCO_GERAL_DIR, sub: 'banco_geral' },
     { dir: CONVERTED_DIR, sub: 'imagens_convertidas' },
@@ -440,6 +452,37 @@ const server = http.createServer(async (req, res) => {
     }));
   }
 
+  // ROTA: Recarregar Catálogo e Cache em Memória
+  if (pathname === '/api/reload-catalog') {
+    medqWatermarkSet.clear();
+    if (fs.existsSync(MEDQ_CATALOG_PATH)) {
+      try {
+        const cat = JSON.parse(fs.readFileSync(MEDQ_CATALOG_PATH, 'utf-8')).catalog || [];
+        cat.forEach(item => medqWatermarkSet.add(item.id));
+      } catch (e) {
+        console.error('Erro ao ler medq_watermark_catalog:', e.message);
+      }
+    }
+    syncStatus = loadSyncStatus();
+
+    for (const q of ALL_QUESTIONS_WITH_IMG) {
+      // Re-read images from database if updated
+      const row = db.prepare('SELECT images FROM questions_curated_staging WHERE id = ?').get(q.id);
+      if (row && row.images) {
+        try { q.images = JSON.parse(row.images); } catch { q.images = [row.images]; }
+      }
+      q.has_watermark = medqWatermarkSet.has(q.id) || (q.images.length > 0 && q.images.some(u => typeof u === 'string' && u.includes('imagens_medq_originais')));
+      q.is_synced = Boolean(syncStatus.synced_questions[q.id] || (q.images.length > 0 && q.images.some(u => typeof u === 'string' && u.includes(SUPABASE_URL))));
+    }
+
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    return res.end(JSON.stringify({
+      success: true,
+      watermarkedCount: ALL_QUESTIONS_WITH_IMG.filter(q => q.has_watermark).length,
+      syncedCount: Object.keys(syncStatus.synced_questions || {}).length
+    }));
+  }
+
   // ROTA: Status do Motor em Tempo Real
   if (pathname === '/api/sync-realtime/status') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -470,6 +513,98 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         return res.end(JSON.stringify(result));
       } catch (err) {
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        return res.end(JSON.stringify({ success: false, error: err.message }));
+      }
+    });
+    return;
+  }
+
+  // ROTA: Upload Manual de Imagem com Conversão Automática para WebP
+  if (pathname === '/api/upload-image' && req.method === 'POST') {
+    let body = '';
+    let totalSize = 0;
+    const MAX_SIZE = 50 * 1024 * 1024;
+
+    req.on('data', chunk => {
+      totalSize += chunk.length;
+      if (totalSize > MAX_SIZE) {
+        req.destroy();
+        res.writeHead(413, { 'Content-Type': 'application/json' });
+        return res.end(JSON.stringify({ success: false, error: 'Arquivo excede limite de 50MB' }));
+      }
+      body += chunk;
+    });
+
+    req.on('end', async () => {
+      try {
+        const { question_id, data_url, filename } = JSON.parse(body || '{}');
+        if (!question_id) throw new Error('question_id é obrigatório');
+        if (!data_url) throw new Error('data_url é obrigatório');
+
+        const matches = data_url.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
+        if (!matches || matches.length !== 3) {
+          throw new Error('Formato de dados base64 inválido');
+        }
+
+        const inputBuffer = Buffer.from(matches[2], 'base64');
+        const origSizeKb = Math.round(inputBuffer.length / 1024);
+
+        // Conversão automatizada para WebP de alta qualidade (Padrão Ouro)
+        const webpBuffer = await sharp(inputBuffer)
+          .webp({ quality: 90, effort: 5 })
+          .toBuffer();
+
+        const webpSizeKb = Math.round(webpBuffer.length / 1024);
+        const cleanQId = question_id.replace(/[^a-zA-Z0-9_-]/g, '_');
+        const outFileName = `manual_${cleanQId}_${Date.now()}.webp`;
+        const destPath = path.join(RESCUED_DIR, outFileName);
+
+        fs.writeFileSync(destPath, webpBuffer);
+        const newCanonicalPath = `/storage/questoes/resgatadas/${outFileName}`;
+
+        // 1. Atualiza banco local SSOT (questions_curated_staging)
+        db.prepare('UPDATE questions_curated_staging SET images = ? WHERE id = ?')
+          .run(JSON.stringify([newCanonicalPath]), question_id);
+
+        // 2. Remove de marcas d'água catalogadas
+        medqWatermarkSet.delete(question_id);
+
+        // 3. Atualiza cache em memória
+        if (CACHE_MAP.has(question_id)) {
+          const item = CACHE_MAP.get(question_id);
+          item.images = [newCanonicalPath];
+          item.is_broken = false;
+          item.broken_reason = '';
+          item.has_watermark = false;
+          item.is_synced = false;
+        }
+
+        // 4. Sincroniza imediatamente com o Supabase Storage se conectado
+        let syncedPublicUrl = null;
+        let synced = false;
+        try {
+          const syncRes = await syncQuestionWithSupabase(question_id);
+          if (syncRes.public_urls && syncRes.public_urls.length > 0) {
+            syncedPublicUrl = syncRes.public_urls[0];
+            synced = true;
+          }
+        } catch (syncErr) {
+          console.log(`⚠️ Imagem convertida em WebP localmente, mas sync com Supabase falhou/adiado: ${syncErr.message}`);
+        }
+
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        return res.end(JSON.stringify({
+          success: true,
+          question_id,
+          new_image_url: syncedPublicUrl || newCanonicalPath,
+          is_synced: synced,
+          orig_size_kb: origSizeKb,
+          webp_size_kb: webpSizeKb,
+          filename: outFileName
+        }));
+      } catch (err) {
+        console.error('Erro no upload-image:', err);
         res.writeHead(500, { 'Content-Type': 'application/json' });
         return res.end(JSON.stringify({ success: false, error: err.message }));
       }
@@ -629,8 +764,11 @@ function renderDashboardHtml() {
     .image-preview-container { width: 100%; text-align: center; }
     .image-preview-container img { max-width: 100%; max-height: 420px; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.6); }
 
-    .broken-image-box { padding: 30px; text-align: center; background: rgba(239, 68, 68, 0.06); border: 1px dashed var(--red); border-radius: 8px; width: 90%; }
-    .sync-action-box { margin-top: 16px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+    .broken-image-box { padding: 24px; text-align: center; background: rgba(239, 68, 68, 0.06); border: 1px dashed var(--red); border-radius: 8px; width: 92%; }
+    .upload-dropzone { margin-top: 14px; padding: 16px 12px; background: rgba(37, 99, 235, 0.08); border: 2px dashed rgba(59, 130, 246, 0.45); border-radius: 8px; cursor: pointer; transition: all 0.2s ease; text-align: center; width: 100%; }
+    .upload-dropzone:hover, .upload-dropzone.drag-over { background: rgba(37, 99, 235, 0.2); border-color: #60a5fa; transform: translateY(-1px); }
+    .upload-btn-bar { margin-top: 10px; display: flex; flex-direction: column; gap: 6px; width: 100%; align-items: center; }
+    .sync-action-box { margin-top: 14px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 8px; }
     .pagination { display: flex; justify-content: center; align-items: center; gap: 12px; margin: 32px 0; }
   </style>
 </head>

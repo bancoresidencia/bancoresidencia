@@ -136,20 +136,33 @@ function renderQuestions(questions) {
     var rightContentHtml = '';
     if (isBroken) {
       rightContentHtml = '<div class="broken-image-box">' +
-        '<div style="font-size: 28px; margin-bottom: 8px;">⚠️</div>' +
-        '<div style="font-weight: 700; color: #fca5a5; font-size: 13.5px; margin-bottom: 6px;">Arquivo Não Encontrado em Disco</div>' +
-        '<div style="font-size: 11.5px; color: #94a3b8; word-break: break-all; margin-bottom: 10px;">' + (q.broken_reason || firstImg) + '</div>' +
-        '<div style="font-size: 11px; color: #f87171;">Necessita resgate via PDF oficial da banca</div>' +
+        '<div style="font-size: 26px; margin-bottom: 6px;">🚨</div>' +
+        '<div style="font-weight: 700; color: #fca5a5; font-size: 13.5px; margin-bottom: 4px;">Arquivo Não Encontrado em Disco</div>' +
+        '<div style="font-size: 11.5px; color: #94a3b8; word-break: break-all; margin-bottom: 12px;">' + (q.broken_reason || firstImg) + '</div>' +
+        '<div class="upload-dropzone" data-qid="' + q.id + '">' +
+          '<div style="font-size: 22px; margin-bottom: 4px;">📁</div>' +
+          '<div style="font-weight: 700; color: #93c5fd; font-size: 13px;">Upload Manual da Imagem</div>' +
+          '<div style="font-size: 11px; color: #cbd5e1; margin-top: 2px;">Clique ou solte aqui • Converte para WebP</div>' +
+          '<input type="file" class="file-input-hidden" data-qid="' + q.id + '" accept="image/*" style="display:none;">' +
+        '</div>' +
+        '<div class="upload-status-box" id="upload-status-' + q.id + '" style="margin-top: 8px;"></div>' +
         '</div>';
     } else {
-      rightContentHtml = '<div class="image-preview-container">' +
-        '<img src="/api/proxy-image?url=' + encodeURIComponent(firstImg) + '" alt="Imagem da questão">' +
+      rightContentHtml = '<div class="image-preview-container" id="img-prev-box-' + q.id + '">' +
+        '<img id="img-' + q.id + '" src="/api/proxy-image?url=' + encodeURIComponent(firstImg) + '" alt="Imagem da questão">' +
         '</div>' +
         '<div class="sync-action-box" id="sync-box-' + q.id + '">' +
         (isSynced
           ? '<div style="font-size: 12px; color: #6ee7b7; font-weight: 600; display: flex; align-items: center; gap: 6px;"><span>✅ Sincronizada no Supabase</span><a href="' + firstImg + '" target="_blank" style="color: #93c5fd; text-decoration: underline;">Abrir no Storage</a></div>'
           : '<button class="btn btn-primary btn-sync-single" data-qid="' + q.id + '">⚡ Sincronizar com o Supabase</button>'
         ) +
+        '</div>' +
+        '<div class="upload-btn-bar" id="upload-bar-' + q.id + '">' +
+          '<button class="btn btn-outline btn-upload-trigger" data-qid="' + q.id + '" style="font-size: 11.5px; padding: 5px 12px; width: 100%; justify-content: center;">' +
+            '📁 Substituir por Imagem Limpa (Converte em WebP)' +
+          '</button>' +
+          '<input type="file" class="file-input-hidden" data-qid="' + q.id + '" accept="image/*" style="display:none;">' +
+          '<div class="upload-status-box" id="upload-status-' + q.id + '" style="width: 100%; text-align: center;"></div>' +
         '</div>';
     }
 
@@ -180,8 +193,164 @@ document.getElementById("mainContainer").addEventListener("click", function (e) 
   if (btn) {
     var qid = btn.getAttribute("data-qid");
     if (qid) syncSingleQuestion(qid);
+    return;
+  }
+
+  var uploadBtn = e.target.closest(".btn-upload-trigger");
+  if (uploadBtn) {
+    var qid = uploadBtn.getAttribute("data-qid");
+    var input = document.querySelector('.file-input-hidden[data-qid="' + qid + '"]');
+    if (input) input.click();
+    return;
+  }
+
+  var dropzone = e.target.closest(".upload-dropzone");
+  if (dropzone && !e.target.classList.contains("file-input-hidden")) {
+    var qid = dropzone.getAttribute("data-qid");
+    var input = dropzone.querySelector('.file-input-hidden');
+    if (input) input.click();
+    return;
   }
 });
+
+// Manipulador de seleção de arquivo
+document.getElementById("mainContainer").addEventListener("change", function (e) {
+  if (e.target && e.target.classList.contains("file-input-hidden")) {
+    var file = e.target.files && e.target.files[0];
+    var qid = e.target.getAttribute("data-qid");
+    if (file && qid) {
+      handleImageUpload(qid, file);
+    }
+  }
+});
+
+// Suporte a Arrastar e Soltar (Drag & Drop)
+document.getElementById("mainContainer").addEventListener("dragover", function (e) {
+  var dropzone = e.target.closest(".upload-dropzone");
+  if (dropzone) {
+    e.preventDefault();
+    dropzone.classList.add("drag-over");
+  }
+});
+
+document.getElementById("mainContainer").addEventListener("dragleave", function (e) {
+  var dropzone = e.target.closest(".upload-dropzone");
+  if (dropzone) {
+    dropzone.classList.remove("drag-over");
+  }
+});
+
+document.getElementById("mainContainer").addEventListener("drop", function (e) {
+  var dropzone = e.target.closest(".upload-dropzone");
+  if (dropzone) {
+    e.preventDefault();
+    dropzone.classList.remove("drag-over");
+    var qid = dropzone.getAttribute("data-qid");
+    if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+      var file = e.dataTransfer.files[0];
+      if (qid && file) handleImageUpload(qid, file);
+    }
+  }
+});
+
+async function handleImageUpload(qid, file) {
+  var statusBox = document.getElementById("upload-status-" + qid);
+  if (statusBox) {
+    statusBox.innerHTML = '<span style="font-size: 12px; color: #93c5fd;">⏳ Lendo arquivo e preparando conversão WebP...</span>';
+  }
+
+  var reader = new FileReader();
+  reader.onerror = function () {
+    if (statusBox) statusBox.innerHTML = '<span style="font-size: 12px; color: var(--red);">Erro ao ler arquivo local.</span>';
+  };
+
+  reader.onload = async function (evt) {
+    var dataUrl = evt.target.result;
+    if (statusBox) {
+      statusBox.innerHTML = '<span style="font-size: 12px; color: #93c5fd;">⚙️ Convertendo para WebP (sharp) e atualizando banco...</span>';
+    }
+
+    try {
+      var res = await fetch("/api/upload-image", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          question_id: qid,
+          data_url: dataUrl,
+          filename: file.name
+        })
+      });
+      var data = await res.json();
+      if (data.success) {
+        if (statusBox) {
+          statusBox.innerHTML = '<div style="font-size: 12px; color: #6ee7b7; font-weight: 600; margin-top: 4px;">' +
+            '✨ WebP Padronizado (' + data.webp_size_kb + ' KB) ' +
+            (data.is_synced ? '• ✅ Supabase OK!' : '• Pronto para Sincronizar!') +
+            '</div>';
+        }
+
+        // Atualização reativa imediata do card na tela
+        var card = document.getElementById("card-" + qid);
+        if (card) {
+          // Atualiza badges no cabeçalho do card
+          var meta = card.querySelector(".q-meta");
+          if (meta) {
+            var broken = meta.querySelector(".q-badge-broken");
+            if (broken) broken.remove();
+
+            var watermark = meta.querySelector(".q-badge-watermark");
+            if (watermark) {
+              watermark.className = "q-badge q-badge-clean";
+              watermark.innerText = "🟢 Sem Marca";
+            }
+
+            var syncBadge = meta.querySelector(".q-badge-synced") || meta.querySelector(".q-badge[style*='334155']");
+            if (syncBadge && data.is_synced) {
+              syncBadge.className = "q-badge q-badge-synced";
+              syncBadge.removeAttribute("style");
+              syncBadge.innerText = "✅ Supabase OK";
+            }
+          }
+
+          // Atualiza a coluna da direita com a nova imagem WebP convertida
+          var right = card.querySelector(".card-right");
+          if (right) {
+            right.innerHTML = '<div class="image-preview-container">' +
+              '<img src="/api/proxy-image?url=' + encodeURIComponent(data.new_image_url) + '" alt="Imagem da questão">' +
+              '</div>' +
+              '<div class="sync-action-box" id="sync-box-' + qid + '">' +
+              (data.is_synced
+                ? '<div style="font-size: 12px; color: #6ee7b7; font-weight: 600; display: flex; align-items: center; gap: 6px;"><span>✅ Sincronizada no Supabase</span><a href="' + data.new_image_url + '" target="_blank" style="color: #93c5fd; text-decoration: underline;">Abrir no Storage</a></div>'
+                : '<button class="btn btn-primary btn-sync-single" data-qid="' + qid + '">⚡ Sincronizar com o Supabase</button>'
+              ) +
+              '</div>' +
+              '<div class="upload-btn-bar" id="upload-bar-' + qid + '">' +
+                '<button class="btn btn-outline btn-upload-trigger" data-qid="' + qid + '" style="font-size: 11.5px; padding: 5px 12px; width: 100%; justify-content: center;">' +
+                  '📁 Substituir por Imagem Limpa (Converte em WebP)' +
+                '</button>' +
+                '<input type="file" class="file-input-hidden" data-qid="' + qid + '" accept="image/*" style="display:none;">' +
+                '<div class="upload-status-box" id="upload-status-' + qid + '" style="width: 100%; text-align: center;">' +
+                  '<div style="font-size: 12px; color: #6ee7b7; font-weight: 600; margin-top: 4px;">✨ WebP Padronizado (' + data.webp_size_kb + ' KB)</div>' +
+                '</div>' +
+              '</div>';
+          }
+        }
+
+        fetchStats();
+      } else {
+        if (statusBox) {
+          statusBox.innerHTML = '<span style="font-size: 12px; color: var(--red);">Erro no upload: ' + data.error + '</span>';
+        }
+      }
+    } catch (err) {
+      if (statusBox) {
+        statusBox.innerHTML = '<span style="font-size: 12px; color: var(--red);">Falha de conexão: ' + err.message + '</span>';
+      }
+    }
+  };
+
+  reader.readAsDataURL(file);
+}
 
 async function syncSingleQuestion(qid) {
   var box = document.getElementById("sync-box-" + qid);
