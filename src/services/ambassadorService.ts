@@ -245,6 +245,9 @@ export async function getBackendAmbassadorStats(userId: string, userName?: strin
   const salesNeededForPlanRefund = Math.max(0, AMBASSADOR_CONFIG.minSalesForPlanRefund - validSalesCount);
 
   const pixInfo = memoryFallback.pixKeys[userId];
+  const lastWithdrawal = rawWithdrawals.length > 0 ? rawWithdrawals[0] : null;
+  const effectivePixKey = pixInfo?.key || lastWithdrawal?.pixKey;
+  const effectivePixKeyType = pixInfo?.type || lastWithdrawal?.pixKeyType || 'cpf';
 
   return {
     referralCode,
@@ -265,8 +268,8 @@ export async function getBackendAmbassadorStats(userId: string, userName?: strin
     salesNeededForPlanRefund,
     sales,
     withdrawals: rawWithdrawals,
-    pixKey: pixInfo?.key,
-    pixKeyType: pixInfo?.type,
+    pixKey: effectivePixKey,
+    pixKeyType: effectivePixKeyType,
     planRefundRequested
   };
 }
@@ -330,6 +333,48 @@ export async function validateBackendReferralCoupon(
           referrerName: referrerProfile.name || 'Estudante Embaixador',
           message: `Código ${clean} validado com sucesso!`
         };
+      }
+
+      // 3.1. Fallback resiliente: Aluno recém-criado cujo referral_code ainda não foi populado no banco
+      if (/^(MED|DR|DRA)-[A-Z0-9]{2,}(?:-[A-Z0-9]{1,})?$/.test(clean)) {
+        const parts = clean.split('-');
+        const namePart = parts[1];
+        const idPart = parts[2];
+        if (namePart && idPart && idPart.length >= 2) {
+          const { data: candidates } = await supabase
+            .from('profiles')
+            .select('id, name, referral_code')
+            .ilike('name', `${namePart}%`)
+            .limit(5);
+
+          if (candidates && candidates.length > 0) {
+            const matching = candidates.find((c) => {
+              const cleanId = (c.id || '').replace(/[^a-zA-Z0-9]/g, '').toUpperCase();
+              return cleanId.startsWith(idPart) || cleanId.slice(0, 3) === idPart;
+            });
+            if (matching) {
+              await supabase
+                .from('profiles')
+                .update({ referral_code: clean })
+                .eq('id', matching.id);
+
+              if (matching.id === buyerUserId) {
+                return {
+                  valid: false,
+                  discountPercent: 0,
+                  message: 'Você não pode utilizar seu próprio código de indicação na sua própria conta.'
+                };
+              }
+              return {
+                valid: true,
+                discountPercent: AMBASSADOR_CONFIG.discountPercent,
+                referrerId: matching.id,
+                referrerName: matching.name || 'Estudante Embaixador',
+                message: `Código ${clean} validado com sucesso!`
+              };
+            }
+          }
+        }
       }
     } catch (err) {
       console.warn('[AmbassadorService] Erro ao validar cupom no banco:', err);

@@ -12,7 +12,11 @@ export interface AuditEventParams {
     | 'UPDATE_REPORT_STATUS'
     | 'GENERATE_COMMENTARY'
     | 'MANUAL_OVERRIDE'
-    | 'BULK_IMPORT';
+    | 'BULK_IMPORT'
+    | 'SUBSCRIPTION_UPDATE'
+    | 'ROLE_UPDATE'
+    | 'PAYOUT_PROCESS'
+    | 'REFUND_PROCESS';
   entityType: 'question' | 'question_report' | 'exam' | 'user' | 'system';
   entityId: string;
   oldValues?: Record<string, unknown> | null;

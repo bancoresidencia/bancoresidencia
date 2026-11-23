@@ -20,7 +20,10 @@ import {
   Brain,
   Cloud,
   CloudOff,
-  RefreshCw
+  RefreshCw,
+  Users,
+  CreditCard,
+  Gift
 } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
 import { Logo } from '@/components/Logo';
@@ -210,7 +213,10 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                   configuracoes: '/configuracoes',
                   curadoria: '/admin/curadoria',
                   reportes: '/admin/reportes',
-                  auditoria_medevo: '/admin/medevo'
+                  auditoria_medevo: '/admin/medevo',
+                  admin_usuarios: '/admin/usuarios',
+                  admin_pagamentos: '/admin/pagamentos',
+                  admin_embaixadores: '/admin/embaixadores'
                 };
                 router.push(targetRoutes[tab] || '/dashboard');
                 setMobileMenuOpen(false);
@@ -389,6 +395,42 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                       <div className="pt-2 space-y-1">
                         {isAdmin && (
                           <>
+                            <Link
+                              href="/admin/usuarios"
+                              onClick={() => setProfileDropdownOpen(false)}
+                              className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-all cursor-pointer"
+                            >
+                              <div className="flex items-center gap-2">
+                                <Users className="w-3.5 h-3.5 text-blue-500" />
+                                <span>Usuários & Membros</span>
+                              </div>
+                              <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
+                            </Link>
+
+                            <Link
+                              href="/admin/pagamentos"
+                              onClick={() => setProfileDropdownOpen(false)}
+                              className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-all cursor-pointer"
+                            >
+                              <div className="flex items-center gap-2">
+                                <CreditCard className="w-3.5 h-3.5 text-emerald-500" />
+                                <span>Pagamentos & Planos</span>
+                              </div>
+                              <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
+                            </Link>
+
+                            <Link
+                              href="/admin/embaixadores"
+                              onClick={() => setProfileDropdownOpen(false)}
+                              className="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-semibold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-all cursor-pointer"
+                            >
+                              <div className="flex items-center gap-2">
+                                <Gift className="w-3.5 h-3.5 text-amber-500" />
+                                <span>Embaixadores & Saques</span>
+                              </div>
+                              <ChevronRight className="w-3.5 h-3.5 text-zinc-400" />
+                            </Link>
+
                             <Link
                               href="/admin/curadoria"
                               onClick={() => setProfileDropdownOpen(false)}

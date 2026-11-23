@@ -36,7 +36,6 @@ export async function verifyAdminSession(
   options?: VerifyAdminOptions
 ): Promise<AdminAuthResult> {
   try {
-    const supabaseAdmin = getSupabaseAdmin();
     const checkRole = options?.requireStrictAdmin ? isStrictAdminRole : isPrivilegedRole;
     const forbiddenMessage = options?.requireStrictAdmin
       ? 'Acesso negado: esta operação é restrita exclusivamente a superadministradores.'
@@ -51,8 +50,17 @@ export async function verifyAdminSession(
 
         // 1.1 Machine-to-Machine com token dedicado (comparação em tempo constante)
         if (adminToken && timingSafeEqualStrings(token, adminToken)) {
+          const testUserId = req.headers.get('x-test-user-id') || 'admin_m2m_service';
           return {
             authorized: true,
+            user: {
+              id: testUserId,
+              email: 'admin@bancoresidencia.com.br',
+              app_metadata: { role: 'superadmin' },
+              user_metadata: { name: 'Admin M2M' },
+              aud: 'authenticated',
+              created_at: new Date().toISOString()
+            } as User,
             role: 'service_role',
             status: 200,
             isM2M: true
@@ -62,6 +70,7 @@ export async function verifyAdminSession(
         // 1.2 Usuário autenticado enviando token JWT Bearer (fallback resiliente para falhas de cookies)
         if (token && token.length > 20 && token.split('.').length === 3) {
           try {
+            const supabaseAdmin = getSupabaseAdmin();
             const { data: { user: tokenUser }, error: tokenErr } = await supabaseAdmin.auth.getUser(token);
             if (!tokenErr && tokenUser) {
               const appRole = tokenUser.app_metadata?.role as string | undefined;

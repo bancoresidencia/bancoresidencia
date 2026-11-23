@@ -471,6 +471,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         subscriptionDuration,
         subscriptionExpiresAt,
         guaranteeExpiresAt,
+        referralCode: profile?.referral_code || undefined,
+        referredByCode: profile?.referred_by_code || undefined,
         createdAt: profile?.created_at || supabaseUser.created_at || new Date().toISOString()
       };
     } catch {
@@ -839,6 +841,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (data.targetExamName !== undefined) updatePayload.target_exam_name = data.targetExamName;
       if (data.targetExamDate !== undefined) updatePayload.target_exam_date = data.targetExamDate;
       if (data.preferences !== undefined) updatePayload.preferences = data.preferences;
+      if (data.referralCode !== undefined) updatePayload.referral_code = data.referralCode;
+      if (data.referredByCode !== undefined) updatePayload.referred_by_code = data.referredByCode;
 
       if (Object.keys(updatePayload).length > 0) {
         const { error } = await supabase

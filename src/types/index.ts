@@ -125,7 +125,26 @@ export interface Question {
 
 export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
 export type PeriodFilter = '1d' | '7d' | '30d' | 'mes' | '3m' | '6m' | '2026.1' | '2026.2' | 'all' | 'custom';
-export type ActiveTab = 'home' | 'cronograma' | 'agenda' | 'banco' | 'caderno_erros' | 'flashcards' | 'resumos' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes' | 'curadoria' | 'reportes' | 'auditoria_medevo';
+export type ActiveTab =
+  | 'home'
+  | 'cronograma'
+  | 'agenda'
+  | 'banco'
+  | 'caderno_erros'
+  | 'flashcards'
+  | 'resumos'
+  | 'listas'
+  | 'provas'
+  | 'simulados'
+  | 'stats'
+  | 'ranking'
+  | 'configuracoes'
+  | 'curadoria'
+  | 'reportes'
+  | 'auditoria_medevo'
+  | 'admin_usuarios'
+  | 'admin_pagamentos'
+  | 'admin_embaixadores';
 
 export * from './flashcards';
 export * from './studySchedule';

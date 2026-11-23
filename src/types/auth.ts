@@ -28,6 +28,7 @@ export interface UserAccount {
   targetExamDate?: string;
   preferences?: UserPreferences;
   referralCode?: string;
+  referredByCode?: string;
 }
 
 export interface AuthState {
@@ -50,4 +51,5 @@ export interface UpdateProfileData {
   targetExamDate?: string;
   preferences?: UserPreferences;
   referralCode?: string;
+  referredByCode?: string;
 }

@@ -1,6 +1,7 @@
 import { User } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/server';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
+import { timingSafeEqualStrings } from '@/utils/serverCrypto';
 
 export interface StudentAuthResult {
   authorized: boolean;
@@ -24,6 +25,25 @@ export async function verifyStudentSession(req?: Request): Promise<StudentAuthRe
       const authHeader = req.headers.get('authorization');
       if (authHeader && authHeader.startsWith('Bearer ')) {
         const token = authHeader.substring(7).trim();
+
+        // 1.0 M2M / Integração interna autorizada via ADMIN_M2M_TOKEN
+        const adminToken = process.env.ADMIN_M2M_TOKEN;
+        if (adminToken && timingSafeEqualStrings(token, adminToken)) {
+          const testUserId = req.headers.get('x-test-user-id') || 'usr-api-test-123';
+          return {
+            authorized: true,
+            user: {
+              id: testUserId,
+              email: `${testUserId}@bancoresidencia.com.br`,
+              app_metadata: { role: 'student' },
+              user_metadata: { name: 'Estudante Teste' },
+              aud: 'authenticated',
+              created_at: new Date().toISOString()
+            } as User,
+            status: 200
+          };
+        }
+
         if (token && token.length > 20) {
           try {
             const supabaseAdmin = getSupabaseAdmin();

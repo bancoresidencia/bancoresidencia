@@ -216,10 +216,10 @@ export function getSpecialtyGuideline(specialty, tema) {
 
 // Modelos prioritários em rotação gratuita com fallback automático
 export const AVAILABLE_MODELS = [
-  'gemini-3.5-flash',
-  'gemini-3.1-flash-lite',
   'gemini-3.5-flash-lite',
-  'gemini-flash-lite-latest'
+  'gemini-flash-lite-latest',
+  'gemini-3.5-flash',
+  'gemini-3.1-flash-lite'
 ];
 
 const exhaustedPairs = new Set();
@@ -458,7 +458,8 @@ ${optionsSchemaExample}
           continue;
         }
         if (res.status >= 500) {
-          await new Promise(r => setTimeout(r, 1200));
+          if (!shouldUsePaid) markPairExhausted(keyIdx, activeModel, `HTTP ${res.status} sobrecarga`);
+          await new Promise(r => setTimeout(r, 600));
           continue;
         }
         throw new Error(`HTTP ${res.status}: ${errText.slice(0, 150)}`);

@@ -248,7 +248,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
           college: collegeInput || 'Faculdade de Medicina',
           specialtyTarget: specialty === 'Ainda não sei / vou decidir depois' ? 'Clínica Médica' : specialty,
           targetExamName: selectedExamInst,
-          targetExamDate: targetDate
+          targetExamDate: targetDate,
+          referredByCode: appliedReferral?.code || undefined
         });
         localStorage.setItem(`onboarding_completed_${user.id}`, 'true');
         localStorage.setItem('user_target_exam_name', selectedExamInst);

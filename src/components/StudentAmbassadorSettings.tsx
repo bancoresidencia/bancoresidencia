@@ -37,7 +37,7 @@ import {
 } from 'lucide-react';
 
 export const StudentAmbassadorSettings: React.FC = () => {
-  const { user } = useAuth();
+  const { user, isAdmin } = useAuth();
   const { accentConfig } = useTheme();
 
   const [stats, setStats] = useState<AmbassadorStats>(() =>
@@ -139,24 +139,32 @@ export const StudentAmbassadorSettings: React.FC = () => {
     setCodeFeedback(null);
     if (!user) return;
 
+    // 1. Tenta validar e persistir no backend primeiro
+    try {
+      const res = await fetch('/api/ambassador/code', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: newCodeInput, userId: user.id })
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        setCodeFeedback({ type: 'error', text: data.error || data.message || 'Falha ao atualizar código de indicação.' });
+        return;
+      }
+    } catch {
+      if (process.env.NODE_ENV === 'production') {
+        setCodeFeedback({ type: 'error', text: 'Não foi possível conectar ao servidor. Tente novamente.' });
+        return;
+      }
+    }
+
     const res = setUserReferralCode(user.id, newCodeInput);
     if (!res.success) {
       setCodeFeedback({ type: 'error', text: res.message });
       return;
     }
 
-    // Tenta sincronizar com o backend
-    try {
-      await fetch('/api/ambassador/code', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ code: newCodeInput, userId: user.id })
-      });
-    } catch {
-      // ignore
-    }
-
-    setCodeFeedback({ type: 'success', text: res.message });
+    setCodeFeedback({ type: 'success', text: 'Código de indicação atualizado com sucesso!' });
     setIsEditingCode(false);
     refreshStats();
   };
@@ -189,6 +197,7 @@ export const StudentAmbassadorSettings: React.FC = () => {
     saveAmbassadorPixKey(user.id, pixKeyValue, pixKeyType);
 
     // Tenta enviar para o backend
+    let backendSuccess = false;
     try {
       const res = await fetch('/api/ambassador/withdraw', {
         method: 'POST',
@@ -206,17 +215,24 @@ export const StudentAmbassadorSettings: React.FC = () => {
         setWithdrawFeedback({ type: 'error', text: data.error || data.message || 'Falha ao solicitar saque.' });
         return;
       }
+      backendSuccess = true;
     } catch {
-      // Se a rota falhar por estar offline, executa fallback local
-      const localRes = requestAmbassadorPixWithdrawal(user.id, val, pixKeyValue, pixKeyType);
-      if (!localRes.success) {
-        setWithdrawFeedback({ type: 'error', text: localRes.message });
+      if (process.env.NODE_ENV !== 'production') {
+        const localRes = requestAmbassadorPixWithdrawal(user.id, val, pixKeyValue, pixKeyType);
+        if (!localRes.success) {
+          setWithdrawFeedback({ type: 'error', text: localRes.message });
+          return;
+        }
+      } else {
+        setWithdrawFeedback({ type: 'error', text: 'Erro de conexão ao solicitar saque. Tente novamente.' });
         return;
       }
     }
 
-    // Atualiza localmente também
-    requestAmbassadorPixWithdrawal(user.id, val, pixKeyValue, pixKeyType);
+    // Atualiza localmente apenas após confirmação do backend
+    if (backendSuccess) {
+      requestAmbassadorPixWithdrawal(user.id, val, pixKeyValue, pixKeyType);
+    }
 
     setWithdrawFeedback({
       type: 'success',
@@ -837,40 +853,42 @@ export const StudentAmbassadorSettings: React.FC = () => {
             </p>
           </div>
 
-          {/* CONTROLES DE SIMULAÇÃO (TESTES E DEMONSTRAÇÃO) */}
-          <div className="flex items-center gap-2 flex-wrap">
-            <button
-              type="button"
-              onClick={() => handleSimulateSale(false)}
-              className="px-3 py-1.5 rounded-xl border border-sky-400/40 text-sky-600 dark:text-sky-400 text-[11px] font-bold hover:bg-sky-50 dark:hover:bg-sky-950/30 transition-colors flex items-center gap-1.5 cursor-pointer"
-              title="Adiciona uma venda recente de hoje (aguardando 7 dias de permanência)"
-            >
-              <Clock className="w-3.5 h-3.5" />
-              <span>Simular Venda Recente (7d retenção)</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => handleSimulateSale(true)}
-              className="px-3 py-1.5 rounded-xl border border-emerald-500/50 text-emerald-600 dark:text-emerald-400 text-[11px] font-bold hover:bg-emerald-50 dark:hover:bg-emerald-950/30 transition-colors flex items-center gap-1.5 cursor-pointer"
-              title="Adiciona uma venda válida de 8 dias atrás (contabilizada para saque e metas)"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Simular Venda Válida (&gt;7 dias)</span>
-            </button>
-
-            {stats.sales.length > 0 && (
+          {/* CONTROLES DE SIMULAÇÃO (TESTES E DEMONSTRAÇÃO - EXCLUSIVO DEV/ADMIN) */}
+          {process.env.NODE_ENV !== 'production' && isAdmin && (
+            <div className="flex items-center gap-2 flex-wrap">
               <button
                 type="button"
-                onClick={handleResetSimulation}
-                className="px-2.5 py-1.5 rounded-xl text-zinc-400 hover:text-rose-500 text-[11px] font-semibold transition-colors flex items-center gap-1 cursor-pointer"
-                title="Limpar simulações"
+                onClick={() => handleSimulateSale(false)}
+                className="px-3 py-1.5 rounded-xl border border-sky-400/40 text-sky-600 dark:text-sky-400 text-[11px] font-bold hover:bg-sky-50 dark:hover:bg-sky-950/30 transition-colors flex items-center gap-1.5 cursor-pointer"
+                title="Adiciona uma venda recente de hoje (aguardando 7 dias de permanência)"
               >
-                <RotateCcw className="w-3.5 h-3.5" />
-                <span>Resetar</span>
+                <Clock className="w-3.5 h-3.5" />
+                <span>Simular Venda Recente (7d retenção)</span>
               </button>
-            )}
-          </div>
+
+              <button
+                type="button"
+                onClick={() => handleSimulateSale(true)}
+                className="px-3 py-1.5 rounded-xl border border-emerald-500/50 text-emerald-600 dark:text-emerald-400 text-[11px] font-bold hover:bg-emerald-50 dark:hover:bg-emerald-950/30 transition-colors flex items-center gap-1.5 cursor-pointer"
+                title="Adiciona uma venda válida de 8 dias atrás (contabilizada para saque e metas)"
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Simular Venda Válida (&gt;7 dias)</span>
+              </button>
+
+              {stats.sales.length > 0 && (
+                <button
+                  type="button"
+                  onClick={handleResetSimulation}
+                  className="px-2.5 py-1.5 rounded-xl text-zinc-400 hover:text-rose-500 text-[11px] font-semibold transition-colors flex items-center gap-1 cursor-pointer"
+                  title="Limpar simulações"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  <span>Resetar</span>
+                </button>
+              )}
+            </div>
+          )}
         </div>
 
         {stats.sales.length === 0 ? (

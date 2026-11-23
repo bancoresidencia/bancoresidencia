@@ -8,6 +8,7 @@ import { HippocampusStartupStatus } from '@/components/HippocampusStartupStatus'
 import { LandingPage } from '@/components/LandingPage';
 import { isPlanId, type PlanId } from '@/config/plans';
 import { useAuth } from '@/context/AuthContext';
+import { captureReferralFromUrl } from '@/utils/referralCapture';
 
 const loadAuthScreen = () => import('@/components/AuthScreen').then((module) => module.AuthScreen);
 
@@ -63,6 +64,10 @@ function HomeNavigation({
   const searchParams = useSearchParams();
   const { user, isAuthenticated, isLoading } = useAuth();
   const isSignedIn = Boolean(isAuthenticated && user);
+
+  useEffect(() => {
+    void captureReferralFromUrl(searchParams);
+  }, [searchParams]);
 
   useEffect(() => {
     const legacyRoute = legacyRoutes.get(searchParams.get('tab') ?? '');

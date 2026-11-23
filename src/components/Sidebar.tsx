@@ -21,7 +21,10 @@ import {
   Brain,
   FileText,
   ShieldAlert,
-  Clock
+  Clock,
+  Users,
+  CreditCard,
+  Gift
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
 import { useTabAvailability } from '@/context/TabAvailabilityContext';
@@ -81,6 +84,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Sliders, href: '/configuracoes' },
     ...(isAdmin
       ? [
+        { id: 'admin_usuarios' as ActiveTab, label: 'Usuários & Membros', icon: Users, href: '/admin/usuarios' },
+        { id: 'admin_pagamentos' as ActiveTab, label: 'Pagamentos & Planos', icon: CreditCard, href: '/admin/pagamentos' },
+        { id: 'admin_embaixadores' as ActiveTab, label: 'Embaixadores & Saques', icon: Gift, href: '/admin/embaixadores' },
         { id: 'curadoria' as ActiveTab, label: 'Curadoria de Gabaritos', icon: ShieldCheck, href: '/admin/curadoria' },
         { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag, href: '/admin/reportes' },
         { id: 'auditoria_medevo' as ActiveTab, label: 'Higienização MedEvo', icon: ShieldAlert, href: '/admin/medevo', badge: 410 }

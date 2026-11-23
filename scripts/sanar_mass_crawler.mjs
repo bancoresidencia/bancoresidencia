@@ -454,20 +454,45 @@ export class SanarMassCrawler {
         }
       }
 
+      // 3. Descoberta de paginação da prova (/pagina/2/, /pagina/3/...)
+      const pageRegex = /href="([^"]*\/questoes-de-concursos\/prova\/[^\/]+\/\d{4}\/pagina\/\d+\/?)"/gi;
+      let pm;
+      const paginationUrls = new Set();
+      while ((pm = pageRegex.exec(html)) !== null) {
+        let pu = pm[1];
+        if (!pu.startsWith('http')) pu = new URL(pu, examUrl).href;
+        if (!pu.endsWith('/')) pu += '/';
+        if (pu !== examUrl) paginationUrls.add(pu);
+      }
+
       this.db.exec('BEGIN TRANSACTION;');
       const insertStmt = this.db.prepare(`
         INSERT OR IGNORE INTO crawl_queue (url, stage, parent_url, status)
         VALUES (?, 'question', ?, 'pending')
       `);
+      const updateParentStmt = this.db.prepare(`
+        UPDATE crawl_queue SET parent_url = ?
+        WHERE url = ? AND (parent_url IS NULL OR parent_url = '')
+      `);
 
       const unique = [...new Set(qUrls)];
       for (const qu of unique) {
         insertStmt.run(qu, examUrl);
+        updateParentStmt.run(examUrl, qu);
+      }
+
+      // Enfileirar páginas adicionais da mesma prova (ex: /pagina/2/)
+      const insertPageStmt = this.db.prepare(`
+        INSERT OR IGNORE INTO crawl_queue (url, stage, parent_url, status)
+        VALUES (?, 'exam_year', ?, 'pending')
+      `);
+      for (const pu of paginationUrls) {
+        insertPageStmt.run(pu, examUrl);
       }
 
       this.db.prepare(`UPDATE crawl_queue SET status='completed', updated_at=datetime('now') WHERE url=?`).run(examUrl);
       this.db.exec('COMMIT;');
-      console.log(`[EXPAND] Prova ${examUrl} -> ${unique.length} questões enfileiradas.`);
+      console.log(`[EXPAND] Prova ${examUrl} -> ${unique.length} questões, ${paginationUrls.size} páginas adicionais.`);
     } catch (e) {
       try { this.db.exec('COMMIT;'); } catch (_) { }
       this.db.prepare(`UPDATE crawl_queue SET status='failed', last_error=?, attempts=attempts+1, updated_at=datetime('now') WHERE url=?`).run(e.message, examUrl);
@@ -725,10 +750,23 @@ export class SanarMassCrawler {
         continue;
       }
 
-      // 2. Processar estágios de expansão de provas anuais ('exam_year') concorrentemente
+      // 2. Processar estágios de expansão de provas anuais ('exam_year') concorrentemente, priorizando anos mais recentes
       const examRows = this.db.prepare(`
         SELECT url FROM crawl_queue
         WHERE status = 'pending' AND stage = 'exam_year'
+        ORDER BY 
+          CASE 
+            WHEN url LIKE '%/2027/%' OR url LIKE '%/2027' THEN 100
+            WHEN url LIKE '%/2026/%' OR url LIKE '%/2026' THEN 90
+            WHEN url LIKE '%/2025/%' OR url LIKE '%/2025' THEN 80
+            WHEN url LIKE '%/2024/%' OR url LIKE '%/2024' THEN 70
+            WHEN url LIKE '%/2023/%' OR url LIKE '%/2023' THEN 60
+            WHEN url LIKE '%/2022/%' OR url LIKE '%/2022' THEN 50
+            WHEN url LIKE '%/2021/%' OR url LIKE '%/2021' THEN 40
+            WHEN url LIKE '%/2020/%' OR url LIKE '%/2020' THEN 30
+            ELSE 10
+          END DESC,
+          rowid ASC
         LIMIT 20
       `).all();
 
@@ -740,11 +778,25 @@ export class SanarMassCrawler {
         continue;
       }
 
-      // 3. Processar lote de questões
+      // 3. Processar lote de questões priorizando rigorosamente por ano (2026 -> 2025 -> 2024...)
       const batchSize = this.concurrency * 4;
       const questionRows = this.db.prepare(`
         SELECT url FROM crawl_queue
         WHERE status = 'pending' AND stage = 'question'
+        ORDER BY 
+          CASE 
+            WHEN parent_url LIKE '%/2027/%' OR parent_url LIKE '%/2027' THEN 100
+            WHEN parent_url LIKE '%/2026/%' OR parent_url LIKE '%/2026' THEN 90
+            WHEN parent_url LIKE '%/2025/%' OR parent_url LIKE '%/2025' THEN 80
+            WHEN parent_url LIKE '%/2024/%' OR parent_url LIKE '%/2024' THEN 70
+            WHEN parent_url LIKE '%/2023/%' OR parent_url LIKE '%/2023' THEN 60
+            WHEN parent_url LIKE '%/2022/%' OR parent_url LIKE '%/2022' THEN 50
+            WHEN parent_url LIKE '%/2021/%' OR parent_url LIKE '%/2021' THEN 40
+            WHEN parent_url LIKE '%/2020/%' OR parent_url LIKE '%/2020' THEN 30
+            WHEN parent_url IS NOT NULL THEN 20
+            ELSE 10
+          END DESC,
+          rowid ASC
         LIMIT ?
       `).all(batchSize);
 
@@ -901,6 +953,23 @@ export class SanarMassCrawler {
     console.log(`  • Total de questões extraídas  : ${totalQuestions.toLocaleString('pt-BR')}`);
     console.log(`  • Questões com imagens         : ${questionsWithImages.toLocaleString('pt-BR')}`);
     console.log(`  • Questões anuladas homologadas: ${questionsCancelled.toLocaleString('pt-BR')}`);
+
+    const yearStats = this.db.prepare(`
+      SELECT ano, COUNT(*) as cnt
+      FROM questions
+      WHERE ano IS NOT NULL
+      GROUP BY ano
+      ORDER BY ano DESC
+      LIMIT 8
+    `).all();
+
+    if (yearStats.length > 0) {
+      console.log('-'.repeat(70));
+      console.log('QUESTÕES SALVAS POR ANO (PRIORIDADE ATIVA):');
+      for (const ys of yearStats) {
+        console.log(`  • Ano ${ys.ano}`.padEnd(20) + `: ${ys.cnt.toLocaleString('pt-BR')} questões`);
+      }
+    }
 
     console.log('-'.repeat(70));
     console.log('IMAGENS CONSERVADAS (question_images):');

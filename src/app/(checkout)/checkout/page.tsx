@@ -1,14 +1,19 @@
 'use client';
 
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { EmbeddedCheckoutScreen } from '@/components/EmbeddedCheckoutScreen';
 import { PLANS, PlanId, PlanDefinition } from '@/config/plans';
 import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { captureReferralFromUrl } from '@/utils/referralCapture';
 
 function CheckoutContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+
+  useEffect(() => {
+    void captureReferralFromUrl(searchParams);
+  }, [searchParams]);
 
   const planParam = searchParams.get('plan') as PlanId | null;
   const initialPlan: PlanDefinition =

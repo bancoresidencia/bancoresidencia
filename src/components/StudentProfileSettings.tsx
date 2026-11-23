@@ -60,7 +60,21 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   const [isRefunding, setIsRefunding] = useState(false);
   const [refundMessage, setRefundMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const { accentConfig } = useTheme();
-  const ambassadorStats = getAmbassadorStats(user?.id || 'guest', user?.name);
+  const [hasAmbassadorBadge, setHasAmbassadorBadge] = useState<boolean>(() => {
+    return getAmbassadorStats(user?.id || 'guest', user?.name).hasAmbassadorBadge;
+  });
+
+  React.useEffect(() => {
+    if (!user?.id) return;
+    fetch(`/api/ambassador/stats?userId=${encodeURIComponent(user.id)}`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data?.success && data.stats) {
+          setHasAmbassadorBadge(Boolean(data.stats.hasAmbassadorBadge));
+        }
+      })
+      .catch(() => {});
+  }, [user?.id]);
 
   // Abas de Configurações
   const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study' | 'subscription' | 'ambassador'>('profile');
@@ -325,7 +339,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
               <h1 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white">
                 {name || 'Meu Perfil'}
               </h1>
-              {ambassadorStats.hasAmbassadorBadge && (
+              {hasAmbassadorBadge && (
                 <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500/20 to-yellow-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/40 shadow-xs">
                   <Award className="w-3 h-3 text-amber-500" />
                   Embaixador Oficial (10+ indicações)
