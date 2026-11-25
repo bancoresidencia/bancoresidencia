@@ -43,7 +43,7 @@ export const LandingInstitutionsStrip: React.FC<LandingInstitutionsStripProps> =
                   title={`Testar questão real: ${banca.name}`}
                   className="h-11 pl-2.5 pr-4 rounded-xl bg-white dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100 border border-zinc-200/90 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600 hover:-translate-y-0.5 shadow-2xs transition-all duration-150 cursor-pointer inline-flex items-center gap-3 shrink-0 whitespace-nowrap"
                 >
-                  <span className="w-6 h-6 rounded-lg bg-zinc-50 dark:bg-zinc-800 border border-zinc-200/80 dark:border-zinc-700/80 flex items-center justify-center p-0.5 shrink-0 overflow-hidden">
+                  <span className="w-6 h-6 rounded-lg bg-white border border-zinc-200/80 flex items-center justify-center p-0.5 shrink-0 overflow-hidden">
                     {banca.logoSlug ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
@@ -56,7 +56,7 @@ export const LandingInstitutionsStrip: React.FC<LandingInstitutionsStripProps> =
                         className="w-[20px] h-[20px] object-contain"
                       />
                     ) : (
-                      <GraduationCap className="w-3.5 h-3.5 text-zinc-700 dark:text-zinc-300" />
+                      <GraduationCap className="w-3.5 h-3.5 text-zinc-700" />
                     )}
                   </span>
                   <span className="text-xs font-bold tracking-tight text-zinc-800 dark:text-zinc-200">

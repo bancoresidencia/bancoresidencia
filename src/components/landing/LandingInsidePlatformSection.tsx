@@ -48,6 +48,7 @@ import {
 import { useTheme } from '@/context/ThemeContext';
 import { useScrollReveal } from './useScrollReveal';
 import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { getLandingHighlightTextStyle } from './landingThemeHelpers';
 
 type PlatformTabKey = 'questoes' | 'flashcards' | 'resumos' | 'desempenho';
 
@@ -382,19 +383,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
     return () => window.removeEventListener('navigate-platform-tab', handleCustomNavigate);
   }, []);
 
-  const highlightTextStyle: React.CSSProperties = isMonochrome
-    ? {
-      backgroundImage:
-        mode === 'dark'
-          ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
-          : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
-    }
-    : {
-      backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex
-        } 26%, ${mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
-        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex
-        } 100%)`
-    };
+  const highlightTextStyle = getLandingHighlightTextStyle(accentConfig, mode, isMonochrome);
 
   // Estado da aba Questões
   const [activeQuestionIdx, setActiveQuestionIdx] = useState<number>(0);
@@ -589,7 +578,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
   return (
     <section
       id="dentro-da-plataforma"
-      className="relative scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200 overflow-hidden"
+      className="relative scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-transparent text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200"
     >
       {/* Iluminação Ambiente Suave Atrás da Dobra (Zero Linhas / Divisórias) */}
       <div
@@ -604,7 +593,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
         <div className="max-w-3xl space-y-2 text-left">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-[-0.03em] text-zinc-950 dark:text-white leading-[1.15]">
             Experimente o{' '}
-            <span className="bg-clip-text text-transparent" style={highlightTextStyle}>
+            <span
+              className="bg-clip-text text-transparent animate-hippo-text-sweep opacity-95"
+              style={highlightTextStyle}
+            >
               Hippocampus
             </span>
           </h2>
@@ -682,50 +674,50 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             onClick={() => setIsShortcutsOpen(false)}
           >
             <div
-              className="w-full max-w-md p-6 rounded-3xl bg-[#12131a] border border-zinc-800 shadow-2xl space-y-4"
+              className="w-full max-w-md p-6 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-2xl space-y-4"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="flex items-center justify-between pb-3 border-b border-zinc-800">
-                <div className="flex items-center gap-2 text-sm font-black text-white">
+              <div className="flex items-center justify-between pb-3 border-b border-zinc-200 dark:border-zinc-800">
+                <div className="flex items-center gap-2 text-sm font-black text-zinc-950 dark:text-white">
                   <Keyboard className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                   <span>Atalhos Rápidos de Estudo</span>
                 </div>
                 <button
                   type="button"
                   onClick={() => setIsShortcutsOpen(false)}
-                  className="text-xs text-zinc-400 hover:text-white cursor-pointer"
+                  className="text-xs text-zinc-500 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-white cursor-pointer"
                 >
                   ✕
                 </button>
               </div>
 
-              <div className="space-y-2.5 text-xs text-zinc-300">
-                <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-900/80">
+              <div className="space-y-2.5 text-xs text-zinc-700 dark:text-zinc-300">
+                <div className="flex items-center justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900/80">
                   <span>Alternar régua de questões</span>
                   <kbd
-                    className="px-2 py-0.5 rounded bg-zinc-800 font-mono font-bold"
+                    className="px-2 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono font-bold"
                     style={{ color: accentConfig.primaryHex }}
                   >
                     Q
                   </kbd>
                 </div>
-                <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-900/80">
+                <div className="flex items-center justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900/80">
                   <span>Selecionar alternativas</span>
-                  <kbd className="px-2 py-0.5 rounded bg-zinc-800 font-mono font-bold">
+                  <kbd className="px-2 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono font-bold">
                     1 - 5 / A - E
                   </kbd>
                 </div>
-                <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-900/80">
+                <div className="flex items-center justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900/80">
                   <span>Riscar / Cortar distrator</span>
-                  <kbd className="px-2 py-0.5 rounded bg-zinc-800 font-mono font-bold">S</kbd>
+                  <kbd className="px-2 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono font-bold">S</kbd>
                 </div>
-                <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-900/80">
+                <div className="flex items-center justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900/80">
                   <span>Ativar caneta / marca-texto</span>
-                  <kbd className="px-2 py-0.5 rounded bg-zinc-800 font-mono font-bold">M</kbd>
+                  <kbd className="px-2 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono font-bold">M</kbd>
                 </div>
-                <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-900/80">
+                <div className="flex items-center justify-between p-2 rounded-xl bg-slate-50 dark:bg-zinc-900/80">
                   <span>Virar cartão flashcard</span>
-                  <kbd className="px-2 py-0.5 rounded bg-zinc-800 font-mono font-bold">Espaço</kbd>
+                  <kbd className="px-2 py-0.5 rounded bg-zinc-200 dark:bg-zinc-800 font-mono font-bold">Espaço</kbd>
                 </div>
               </div>
             </div>
@@ -738,14 +730,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
         {activeTab === 'questoes' && (
           <div className="space-y-4">
             {/* 1. BARRA SUPERIOR IDÊNTICA ÀS IMAGENS */}
-            <div className="bg-[#10121a] border border-zinc-800/90 rounded-2xl p-3 shadow-md space-y-3">
+            <div className="bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/90 rounded-2xl p-3 shadow-sm dark:shadow-md space-y-3">
               <div className="flex flex-wrap items-center justify-between gap-3">
                 {/* Lado Esquerdo: Botão Voltar + Círculo de Progresso + Dropdown */}
                 <div className="flex items-center gap-2.5">
                   <button
                     type="button"
                     onClick={() => showToast('Início da sessão de treino')}
-                    className="w-9 h-9 flex items-center justify-center rounded-xl bg-[#181a24] hover:bg-[#202332] border border-zinc-700/60 text-zinc-300 transition-all cursor-pointer shadow-xs active:scale-95"
+                    className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] border border-zinc-200 dark:border-zinc-700/60 text-zinc-700 dark:text-zinc-300 transition-all cursor-pointer shadow-xs active:scale-95"
                     title="Voltar"
                   >
                     <ArrowLeft className="w-4 h-4" />
@@ -753,13 +745,13 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
                   <div
                     onClick={() => setIsQuestionRulerOpen(!isQuestionRulerOpen)}
-                    className="flex items-center gap-2.5 px-2.5 py-1 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800/80 transition-all cursor-pointer"
+                    className="flex items-center gap-2.5 px-2.5 py-1 rounded-xl bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] border border-zinc-200 dark:border-zinc-800/80 transition-all cursor-pointer"
                     title="Ocultar/Exibir régua de questões (Q)"
                   >
                     <div className="relative w-8 h-8 flex items-center justify-center shrink-0">
                       <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
                         <path
-                          className="text-zinc-800"
+                          className="text-zinc-200 dark:text-zinc-800"
                           strokeWidth="3.2"
                           stroke="currentColor"
                           fill="none"
@@ -785,14 +777,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
                     <div className="flex flex-col text-left">
                       <div className="flex items-center gap-1">
-                        <span className="text-xs font-black text-white leading-tight">
+                        <span className="text-xs font-black text-zinc-950 dark:text-white leading-tight">
                           {activeQuestionIdx === 0 ? '1/11' : '0/5'}
                         </span>
                         <ChevronDown
-                          className={`w-3.5 h-3.5 text-zinc-400 transition-transform ${isQuestionRulerOpen ? 'rotate-180' : ''}`}
+                          className={`w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 transition-transform ${isQuestionRulerOpen ? 'rotate-180' : ''}`}
                         />
                       </div>
-                      <span className="text-[10px] font-semibold text-zinc-400">Progresso</span>
+                      <span className="text-[10px] font-semibold text-zinc-500 dark:text-zinc-400">Progresso</span>
                     </div>
                   </div>
                 </div>
@@ -800,7 +792,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                 {/* Lado Direito / Centro: Ferramentas de Estudo com Rolagem Suave no Mobile */}
                 <div className="w-full sm:w-auto flex items-center overflow-x-auto scrollbar-none pb-1 sm:pb-0 gap-1.5 sm:gap-2 flex-nowrap sm:flex-wrap">
                   {/* Cronômetro Duplo: Questão | Total */}
-                  <div className="shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-[#141620] border border-zinc-800 text-[11px] font-bold text-zinc-300">
+                  <div className="shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 text-[11px] font-bold text-zinc-700 dark:text-zinc-300">
                     <div
                       className="flex items-center gap-1"
                       style={{ color: accentConfig.primaryHex }}
@@ -810,9 +802,9 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       <span className="font-mono">{formatTimer(questionSeconds)}</span>
                       <span className="text-[9px] text-zinc-500 font-sans">Q</span>
                     </div>
-                    <span className="text-zinc-700">|</span>
+                    <span className="text-zinc-300 dark:text-zinc-700">|</span>
                     <div
-                      className="flex items-center gap-1 text-emerald-400"
+                      className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400"
                       title="Tempo total acumulado"
                     >
                       <Timer className="w-3.5 h-3.5" />
@@ -821,12 +813,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <button
                       type="button"
                       onClick={() => setIsTimerRunning(!isTimerRunning)}
-                      className="p-0.5 rounded text-zinc-500 hover:text-white cursor-pointer"
+                      className="p-0.5 rounded text-zinc-500 hover:text-zinc-950 dark:hover:text-white cursor-pointer"
                     >
                       {isTimerRunning ? (
                         <Pause className="w-3 h-3" />
                       ) : (
-                        <Play className="w-3 h-3 text-emerald-400" />
+                        <Play className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
                       )}
                     </button>
                   </div>
@@ -835,8 +827,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <div className="shrink-0 relative inline-flex items-center">
                     <div
                       className={`inline-flex items-center rounded-xl border transition-all ${isHighlighterActive
-                          ? 'bg-amber-950/60 border-amber-600 text-amber-300 ring-2 ring-amber-400/30'
-                          : 'bg-[#141620] hover:bg-[#1a1d2c] border-zinc-800 text-zinc-300'
+                          ? 'bg-amber-50 border-amber-400 text-amber-800 dark:bg-amber-950/60 dark:border-amber-600 dark:text-amber-300 ring-2 ring-amber-400/30'
+                          : 'bg-slate-50 hover:bg-zinc-100 border-zinc-200 text-zinc-700 dark:bg-[#18181b] dark:hover:bg-[#27272a] dark:border-zinc-800 dark:text-zinc-300'
                         }`}
                     >
                       <button
@@ -864,16 +856,16 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           e.stopPropagation();
                           setIsHighlighterOpen(!isHighlighterOpen);
                         }}
-                        className="pr-2 pl-1 py-1.5 min-h-[32px] flex items-center justify-center cursor-pointer hover:text-white"
+                        className="pr-2 pl-1 py-1.5 min-h-[32px] flex items-center justify-center cursor-pointer hover:text-zinc-950 dark:hover:text-white"
                         title="Escolher cor da caneta"
                         aria-label="Escolher cor da caneta"
                       >
-                        <ChevronDown className="w-3 h-3 text-zinc-400" />
+                        <ChevronDown className="w-3 h-3 text-zinc-500 dark:text-zinc-400" />
                       </button>
                     </div>
 
                     {isHighlighterOpen && (
-                      <div className="absolute top-full right-0 mt-2 z-50 flex items-center gap-1.5 p-2 bg-[#161822] border border-zinc-700 rounded-2xl shadow-2xl animate-in fade-in duration-150">
+                      <div className="absolute top-full right-0 mt-2 z-50 flex items-center gap-1.5 p-2 bg-white dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-700 rounded-2xl shadow-2xl animate-in fade-in duration-150">
                         {HIGHLIGHTER_COLORS.map((c, idx) => (
                           <button
                             key={c.name}
@@ -884,7 +876,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                               setIsHighlighterActive(true);
                               showToast(`Cor ${c.name} ativada`);
                             }}
-                            className={`w-5 h-5 rounded-full border border-black/20 ${activeHighlighterColor === idx ? 'scale-125 ring-2 ring-white' : ''}`}
+                            className={`w-5 h-5 rounded-full border border-black/20 ${activeHighlighterColor === idx ? 'scale-125 ring-2 ring-zinc-900 dark:ring-white' : ''}`}
                             style={{ backgroundColor: c.hex }}
                           />
                         ))}
@@ -902,8 +894,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       );
                     }}
                     className={`shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px] rounded-xl border transition-all cursor-pointer ${isStrikethroughActive
-                        ? 'bg-rose-950/60 border-rose-600 text-rose-300 ring-2 ring-rose-400/30'
-                        : 'bg-[#141620] hover:bg-[#1a1d2c] border-zinc-800 text-zinc-300'
+                        ? 'bg-rose-50 border-rose-400 text-rose-700 dark:bg-rose-950/60 dark:border-rose-600 dark:text-rose-300 ring-2 ring-rose-400/30'
+                        : 'bg-slate-50 hover:bg-zinc-100 border-zinc-200 text-zinc-700 dark:bg-[#18181b] dark:hover:bg-[#27272a] dark:border-zinc-800 dark:text-zinc-300'
                       }`}
                     title="Modo Riscar distrator [S]"
                   >
@@ -917,7 +909,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     onClick={() =>
                       setFontSize((prev) => (prev === 'sm' ? 'base' : prev === 'base' ? 'lg' : 'sm'))
                     }
-                    className="shrink-0 flex items-center gap-1 px-2.5 py-1.5 min-h-[32px] bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 rounded-xl text-zinc-300 text-[11px] font-bold cursor-pointer"
+                    className="shrink-0 flex items-center gap-1 px-2.5 py-1.5 min-h-[32px] bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] border border-zinc-200 dark:border-zinc-800 rounded-xl text-zinc-700 dark:text-zinc-300 text-[11px] font-bold cursor-pointer"
                     title="Tamanho da fonte"
                   >
                     <Type className="w-3.5 h-3.5" />
@@ -934,7 +926,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       setIsBookmarked(!isBookmarked);
                       showToast(isBookmarked ? 'Removida dos favoritos' : 'Questão favoritada');
                     }}
-                    className="shrink-0 p-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-400 hover:text-amber-400 cursor-pointer min-h-[32px] min-w-[32px] flex items-center justify-center"
+                    className="shrink-0 p-2 rounded-xl bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] border border-zinc-200 dark:border-zinc-800 text-zinc-500 dark:text-zinc-400 hover:text-amber-500 dark:hover:text-amber-400 cursor-pointer min-h-[32px] min-w-[32px] flex items-center justify-center"
                     title="Favoritar questão"
                   >
                     <Bookmark
@@ -946,7 +938,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => showToast('Canal de curadoria médica aberto')}
-                    className="shrink-0 p-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-400 hover:text-amber-400 cursor-pointer min-h-[32px] min-w-[32px] flex items-center justify-center"
+                    className="shrink-0 p-2 rounded-xl bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] border border-zinc-200 dark:border-zinc-800 text-zinc-500 dark:text-zinc-400 hover:text-amber-500 dark:hover:text-amber-400 cursor-pointer min-h-[32px] min-w-[32px] flex items-center justify-center"
                     title="Reportar questão"
                   >
                     <Flag className="w-3.5 h-3.5" />
@@ -956,7 +948,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => setIsShortcutsOpen(true)}
-                    className="shrink-0 hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer min-h-[32px]"
+                    className="shrink-0 hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs font-bold cursor-pointer min-h-[32px]"
                   >
                     <Keyboard className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                     <span>Atalhos</span>
@@ -972,7 +964,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           : 'Filtros ativos: HSL / Sírio 2027 • Clínica Médica'
                       )
                     }
-                    className="shrink-0 flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer min-h-[32px]"
+                    className="shrink-0 flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs font-bold cursor-pointer min-h-[32px]"
                     title="Filtros da sessão"
                   >
                     <SlidersHorizontal
@@ -980,8 +972,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       style={{ color: accentConfig.primaryHex }}
                     />
                     <span
-                      className="w-4 h-4 rounded-full text-white text-[10px] flex items-center justify-center font-bold"
-                      style={{ backgroundColor: accentConfig.primaryHex }}
+                      className="w-4 h-4 rounded-full text-[10px] flex items-center justify-center font-bold"
+                      style={{
+                        backgroundColor: accentConfig.primaryHex,
+                        color: accentConfig.primaryContrastHex
+                      }}
                     >
                       2
                     </span>
@@ -991,11 +986,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => onOpenAuth('register')}
-                    className="shrink-0 flex items-center gap-1 px-4 py-1.5 rounded-xl text-xs font-black shadow-md cursor-pointer active:scale-95 transition-all text-white min-h-[32px]"
+                    className="shrink-0 flex items-center gap-1 px-4 py-1.5 rounded-xl text-xs font-black shadow-md cursor-pointer active:scale-95 transition-all min-h-[32px]"
                     style={
                       activeQuestionIdx === 1
-                        ? { backgroundColor: '#ffffff', color: '#090a0f' }
-                        : { backgroundColor: accentConfig.primaryHex }
+                        ? { backgroundColor: '#ffffff', color: '#090a0f', border: '1px solid #e2e8f0' }
+                        : {
+                            backgroundColor: accentConfig.primaryHex,
+                            color: accentConfig.primaryContrastHex
+                          }
                     }
                     title="Finalizar treino"
                   >
@@ -1007,12 +1005,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
               {/* RÉGUA EXPANSÍVEL DE QUESTÕES (IDÊNTICA À IMAGEM 4) */}
               {isQuestionRulerOpen && (
-                <div className="pt-2 border-t border-zinc-800/80 flex items-center justify-between gap-2 overflow-x-auto no-scrollbar animate-in fade-in duration-150">
+                <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800/80 flex items-center justify-between gap-2 overflow-x-auto no-scrollbar animate-in fade-in duration-150">
                   <div className="flex items-center gap-1.5">
                     <button
                       type="button"
                       onClick={() => switchQuestion(0)}
-                      className="p-1 rounded text-zinc-500 hover:text-white"
+                      className="p-1 rounded text-zinc-500 hover:text-zinc-950 dark:hover:text-white"
                     >
                       <ChevronLeft className="w-4 h-4" />
                     </button>
@@ -1030,13 +1028,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           else showToast(`Navegando para questão simulada ${num}`);
                         }}
                         className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all cursor-pointer ${idx === 0
-                            ? 'text-white shadow-md ring-2'
-                            : 'bg-[#181a24] text-zinc-400 hover:text-white hover:bg-zinc-800'
+                            ? 'shadow-md ring-2'
+                            : 'bg-slate-100 text-zinc-600 hover:text-zinc-950 hover:bg-zinc-200 dark:bg-[#18181b] dark:text-zinc-400 dark:hover:text-white dark:hover:bg-zinc-800'
                           }`}
                         style={
                           idx === 0
                             ? {
                               backgroundColor: accentConfig.primaryHex,
+                              color: accentConfig.primaryContrastHex,
                               borderColor: accentConfig.primaryHex
                             }
                             : {}
@@ -1049,7 +1048,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <button
                       type="button"
                       onClick={() => showToast('Adicionar mais questões ao caderno')}
-                      className="w-7 h-7 rounded-full border border-dashed border-zinc-700 text-zinc-500 hover:text-white flex items-center justify-center text-xs"
+                      className="w-7 h-7 rounded-full border border-dashed border-zinc-300 dark:border-zinc-700 text-zinc-500 hover:text-zinc-950 dark:hover:text-white flex items-center justify-center text-xs"
                       title="Adicionar questão"
                     >
                       +
@@ -1058,7 +1057,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <button
                       type="button"
                       onClick={() => switchQuestion(1)}
-                      className="p-1 rounded text-zinc-500 hover:text-white"
+                      className="p-1 rounded text-zinc-500 hover:text-zinc-950 dark:hover:text-white"
                     >
                       <ChevronRight className="w-4 h-4" />
                     </button>
@@ -1103,12 +1102,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             </div>
 
             {/* 2. CARD PRINCIPAL DA QUESTÃO IDÊNTICO ÀS IMAGENS */}
-            <div className="bg-[#10121a] border border-zinc-800/90 rounded-3xl p-5 sm:p-8 space-y-6 shadow-xl">
+            <div className="bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/90 rounded-3xl p-5 sm:p-8 space-y-6 shadow-sm dark:shadow-xl">
               {/* Header Interno com Tags Idênticas às Imagens 1 e 2 */}
-              <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-zinc-800/80">
+              <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-zinc-200 dark:border-zinc-800/80">
                 <div className="flex flex-wrap items-center gap-2">
                   <span
-                    className="px-3 py-1 rounded-xl text-xs font-black bg-[#161824] border border-zinc-700 flex items-center gap-1.5"
+                    className="px-3 py-1 rounded-xl text-xs font-black bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-700 flex items-center gap-1.5"
                     style={{ color: accentConfig.primaryHex }}
                   >
                     <BookOpen className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
@@ -1118,14 +1117,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   </span>
 
                   {activeQuestionIdx === 0 && (
-                    <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-amber-950/40 text-amber-400 border border-amber-800/60 flex items-center gap-1">
+                    <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 dark:bg-amber-950/40 dark:text-amber-400 dark:border-amber-800/60 flex items-center gap-1">
                       <span>⚡ 1/10 hoje Liberar Ilimitado</span>
                     </span>
                   )}
 
                   {activeQuestionIdx === 0 ? (
-                    <span className="px-2.5 py-1 rounded-xl text-xs font-semibold bg-rose-950/40 text-rose-300 border border-rose-900/60 flex items-center gap-1.5">
-                      <XCircle className="w-3.5 h-3.5 text-rose-500" />
+                    <span className="px-2.5 py-1 rounded-xl text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60 flex items-center gap-1.5">
+                      <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-500" />
                       <span>Resolvida nesta sessão</span>
                       <button
                         type="button"
@@ -1134,7 +1133,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           setIsAnswered(false);
                           showToast('Questão resetada para refazer');
                         }}
-                        className="ml-1 text-[11px] underline text-zinc-400 hover:text-white flex items-center gap-0.5 cursor-pointer"
+                        className="ml-1 text-[11px] underline text-rose-700 hover:text-rose-950 dark:text-zinc-400 dark:hover:text-white flex items-center gap-0.5 cursor-pointer"
                       >
                         <RotateCcw className="w-3 h-3" />
                         <span>Refazer</span>
@@ -1142,11 +1141,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     </span>
                   ) : (
                     <>
-                      <span className="px-2.5 py-1 rounded-xl text-xs font-semibold bg-rose-950/40 text-rose-300 border border-rose-900/60 flex items-center gap-1.5">
-                        <XCircle className="w-3.5 h-3.5 text-rose-500" />
+                      <span className="px-2.5 py-1 rounded-xl text-xs font-semibold bg-rose-50 text-rose-700 border border-rose-200 dark:bg-rose-950/40 dark:text-rose-300 dark:border-rose-900/60 flex items-center gap-1.5">
+                        <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-500" />
                         <span>Resolvida anteriormente</span>
                       </span>
-                      <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-amber-950/40 text-amber-400 border border-amber-800/60">
+                      <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200 dark:bg-amber-950/40 dark:text-amber-400 dark:border-amber-800/60">
                         Dificuldade TRI: Média
                       </span>
                     </>
@@ -1157,7 +1156,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => setAreAlternativesHidden(!areAlternativesHidden)}
-                    className="p-1.5 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-white cursor-pointer"
+                    className="p-1.5 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white cursor-pointer"
                     title="Ocultar alternativas"
                   >
                     {areAlternativesHidden ? (
@@ -1170,14 +1169,14 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => showToast('Adicionada à pasta de revisão')}
-                    className="flex items-center gap-1 px-2.5 py-1 rounded-lg hover:bg-zinc-800 text-zinc-400 hover:text-white cursor-pointer text-xs"
+                    className="flex items-center gap-1 px-2.5 py-1 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white cursor-pointer text-xs"
                     title="Salvar na pasta"
                   >
                     <FolderPlus className="w-4 h-4" />
                     <span className="hidden sm:inline">Salvar na Pasta</span>
                   </button>
 
-                  <span className="text-xs font-black font-sans bg-[#181a24] text-white px-2.5 py-1 rounded-lg border border-zinc-700">
+                  <span className="text-xs font-black font-sans bg-slate-100 dark:bg-[#18181b] text-zinc-900 dark:text-white px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-700">
                     {activeQuestionIdx === 0 ? '1/11' : '1/5'}
                   </span>
                 </div>
@@ -1186,7 +1185,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               {/* Enunciado Oficial com Camada de Desenho SVG */}
               <div className="relative select-text">
                 <div
-                  className={`text-zinc-100 font-medium leading-relaxed whitespace-pre-line ${fontSize === 'sm' ? 'text-sm' : fontSize === 'lg' ? 'text-lg' : 'text-base'
+                  className={`text-zinc-900 dark:text-zinc-100 font-medium leading-relaxed whitespace-pre-line ${fontSize === 'sm' ? 'text-sm' : fontSize === 'lg' ? 'text-lg' : 'text-base'
                     }`}
                 >
                   {currentQuestion.statement}
@@ -1226,17 +1225,18 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     const isJustificationOpen = Boolean(openJustifications[opt.letter]);
 
                     let containerBorder =
-                      'border-zinc-800 bg-[#12141c] hover:border-zinc-700 text-zinc-200';
-                    let letterCircle = 'bg-zinc-800 text-zinc-300 border-zinc-700';
+                      'border-zinc-200 bg-slate-50/70 hover:border-zinc-300 text-zinc-800 dark:border-zinc-800 dark:bg-[#12141c] dark:hover:border-zinc-700 dark:text-zinc-200';
+                    let letterCircle =
+                      'bg-zinc-200 text-zinc-700 border-zinc-300 dark:bg-zinc-800 dark:text-zinc-300 dark:border-zinc-700';
 
                     if (isAnswered) {
                       if (isSelected && !isCorrect) {
                         containerBorder =
-                          'border-rose-600/90 bg-[#1a0f14] shadow-md ring-1 ring-rose-600/30';
+                          'border-rose-500/80 bg-rose-50/90 text-rose-950 dark:border-rose-600/90 dark:bg-[#1a0f14] dark:text-zinc-100 shadow-sm dark:shadow-md ring-1 ring-rose-500/25 dark:ring-rose-600/30';
                         letterCircle = 'bg-rose-600 text-white font-black';
                       } else if (isCorrect) {
                         containerBorder =
-                          'border-emerald-600/90 bg-[#0d1814] shadow-md ring-1 ring-emerald-600/30';
+                          'border-emerald-500/80 bg-emerald-50/90 text-emerald-950 dark:border-emerald-600/90 dark:bg-[#0d1814] dark:text-zinc-100 shadow-sm dark:shadow-md ring-1 ring-emerald-500/25 dark:ring-emerald-600/30';
                         letterCircle = 'bg-emerald-600 text-white font-black';
                       }
                     }
@@ -1263,13 +1263,13 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           <div className="flex items-center gap-2 shrink-0">
                             {/* Tag Incorreta / Correta */}
                             {isAnswered && isSelected && !isCorrect && (
-                              <div className="flex items-center gap-1 text-rose-400 text-xs font-bold">
+                              <div className="flex items-center gap-1 text-rose-600 dark:text-rose-400 text-xs font-bold">
                                 <XCircle className="w-3.5 h-3.5" />
                                 <span className="hidden sm:inline">Incorreta</span>
                               </div>
                             )}
                             {isAnswered && isCorrect && (
-                              <div className="flex items-center gap-1 text-emerald-400 text-xs font-bold">
+                              <div className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
                                 <CheckCircle2 className="w-3.5 h-3.5" />
                                 <span className="hidden sm:inline">Gabarito</span>
                               </div>
@@ -1280,8 +1280,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                               <button
                                 type="button"
                                 onClick={(e) => toggleJustification(opt.letter, e)}
-                                className="px-3 py-1 rounded-lg text-white text-xs font-bold transition-all cursor-pointer flex items-center gap-1 shadow-xs hover:opacity-90"
-                                style={{ backgroundColor: accentConfig.primaryHex }}
+                                className="px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 shadow-xs hover:opacity-90"
+                                style={{
+                                  backgroundColor: accentConfig.primaryHex,
+                                  color: accentConfig.primaryContrastHex
+                                }}
                               >
                                 <span>
                                   {isJustificationOpen
@@ -1301,7 +1304,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                               <button
                                 type="button"
                                 onClick={(e) => toggleStrikeOption(opt.letter, e)}
-                                className="p-1 rounded text-zinc-500 hover:text-white"
+                                className="p-1 rounded text-zinc-500 hover:text-zinc-950 dark:hover:text-white"
                                 title="Riscar alternativa"
                               >
                                 <Strikethrough className="w-3.5 h-3.5" />
@@ -1313,7 +1316,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         {/* Box Interno de Justificativa da Alternativa */}
                         {isAnswered && isJustificationOpen && (
                           <div
-                            className="p-4 rounded-xl border text-xs sm:text-[13px] leading-relaxed text-zinc-300 space-y-1 animate-in fade-in duration-150"
+                            className="p-4 rounded-xl border text-xs sm:text-[13px] leading-relaxed text-zinc-800 dark:text-zinc-200 space-y-1 animate-in fade-in duration-150 bg-white/75 dark:bg-transparent"
                             style={{
                               borderColor: accentConfig.borderRgba,
                               backgroundColor: accentConfig.bgRgba
@@ -1333,7 +1336,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
               {/* 3. COMENTÁRIO COMPLETO DO PROFESSOR (IDÊNTICO ÀS IMAGENS 2 E 3) */}
               {isAnswered && (
-                <div className="space-y-4 pt-4 border-t border-zinc-800">
+                <div className="space-y-4 pt-4 border-t border-zinc-200 dark:border-zinc-800">
                   {/* Cabeçalho do Bloco */}
                   <div
                     onClick={() => setIsProfessorCommentaryOpen(!isProfessorCommentaryOpen)}
@@ -1358,32 +1361,32 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   {isProfessorCommentaryOpen && (
                     <div className="space-y-4 animate-in fade-in duration-200">
                       {/* Box 1: Gabarito Oficial (Verde) */}
-                      <div className="p-4 sm:p-5 rounded-2xl bg-[#0b1510] border border-emerald-600/40 text-zinc-200 space-y-2">
-                        <div className="flex items-center gap-2 text-emerald-400 font-black text-xs sm:text-sm">
+                      <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/80 border border-emerald-200 text-zinc-800 dark:bg-[#0b1510] dark:border-emerald-600/40 dark:text-zinc-200 space-y-2">
+                        <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-400 font-black text-xs sm:text-sm">
                           <CheckCircle2 className="w-4 h-4 shrink-0" />
                           <span>Gabarito Oficial: Alternativa {currentQuestion.correct_answer}</span>
                         </div>
-                        <p className="text-xs sm:text-[13px] leading-relaxed text-zinc-300 opacity-95">
+                        <p className="text-xs sm:text-[13px] leading-relaxed text-zinc-700 dark:text-zinc-300 opacity-95">
                           {currentQuestion.officialCommentary}
                         </p>
                       </div>
 
                       {/* Box 2: Principal Motivo de Erro / Armadilha da Questão (Âmbar) */}
-                      <div className="p-4 rounded-2xl bg-[#161208] border border-amber-600/40 space-y-2">
+                      <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200 dark:bg-[#161208] dark:border-amber-600/40 space-y-2">
                         <div
                           onClick={() => setIsTrapReasonOpen(!isTrapReasonOpen)}
                           className="flex items-center justify-between cursor-pointer"
                         >
-                          <div className="flex items-center gap-2 text-amber-400 font-bold text-xs sm:text-sm">
+                          <div className="flex items-center gap-2 text-amber-700 dark:text-amber-400 font-bold text-xs sm:text-sm">
                             <AlertTriangle className="w-4 h-4 shrink-0" />
                             <span>Principal Motivo de Erro (Armadilha da Questão)</span>
                           </div>
-                          <span className="text-xs text-zinc-500 hover:text-white flex items-center gap-1">
+                          <span className="text-xs text-zinc-500 hover:text-zinc-950 dark:hover:text-white flex items-center gap-1">
                             {isTrapReasonOpen ? 'Ocultar ^' : 'Exibir v'}
                           </span>
                         </div>
                         {isTrapReasonOpen && (
-                          <p className="text-xs sm:text-[13px] leading-relaxed text-amber-200/90 pt-1 border-t border-amber-900/40">
+                          <p className="text-xs sm:text-[13px] leading-relaxed text-amber-950/85 dark:text-amber-200/90 pt-1 border-t border-amber-200 dark:border-amber-900/40">
                             {currentQuestion.trapReason}
                           </p>
                         )}
@@ -1408,13 +1411,13 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                             <Lightbulb className="w-4 h-4 shrink-0" />
                             <span>Take-Home Message</span>
                           </div>
-                          <span className="text-xs text-zinc-500 hover:text-white flex items-center gap-1">
+                          <span className="text-xs text-zinc-500 hover:text-zinc-950 dark:hover:text-white flex items-center gap-1">
                             {isTakeHomeOpen ? 'Ocultar ^' : 'Exibir v'}
                           </span>
                         </div>
                         {isTakeHomeOpen && (
                           <p
-                            className="text-xs sm:text-[13px] leading-relaxed text-zinc-200 pt-1 border-t"
+                            className="text-xs sm:text-[13px] leading-relaxed text-zinc-800 dark:text-zinc-200 pt-1 border-t"
                             style={{ borderTopColor: accentConfig.borderRgba }}
                           >
                             {currentQuestion.takeHomeMessage}
@@ -1423,42 +1426,42 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       </div>
 
                       {/* Box 4: Evolução de Diretrizes (Azul Petróleo) */}
-                      <div className="p-4 rounded-2xl bg-[#0e1628] border border-indigo-600/40 space-y-2">
+                      <div className="p-4 rounded-2xl bg-indigo-50/80 border border-indigo-200 dark:bg-[#0e1628] dark:border-indigo-600/40 space-y-2">
                         <div
                           onClick={() => setIsGuidelinesOpen(!isGuidelinesOpen)}
                           className="flex items-center justify-between cursor-pointer"
                         >
-                          <div className="flex items-center gap-2 text-indigo-300 font-bold text-xs sm:text-sm">
+                          <div className="flex items-center gap-2 text-indigo-700 dark:text-indigo-300 font-bold text-xs sm:text-sm">
                             <History className="w-4 h-4 shrink-0" />
                             <span>Evolução de Diretrizes</span>
                           </div>
-                          <span className="text-xs text-zinc-500 hover:text-white flex items-center gap-1">
+                          <span className="text-xs text-zinc-500 hover:text-zinc-950 dark:hover:text-white flex items-center gap-1">
                             {isGuidelinesOpen ? 'Ocultar ^' : 'Exibir v'}
                           </span>
                         </div>
                         {isGuidelinesOpen && (
-                          <p className="text-xs sm:text-[13px] leading-relaxed text-indigo-200/90 pt-1 border-t border-indigo-900/40">
+                          <p className="text-xs sm:text-[13px] leading-relaxed text-indigo-950/85 dark:text-indigo-200/90 pt-1 border-t border-indigo-200 dark:border-indigo-900/40">
                             {currentQuestion.guidelinesEvolution}
                           </p>
                         )}
                       </div>
 
                       {/* Box 5: Referências Oficiais */}
-                      <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
+                      <div className="p-4 rounded-2xl bg-slate-50 border border-zinc-200 dark:bg-[#18181b] dark:border-zinc-800 space-y-2">
                         <div
                           onClick={() => setIsReferencesOpen(!isReferencesOpen)}
                           className="flex items-center justify-between cursor-pointer"
                         >
-                          <div className="flex items-center gap-2 text-zinc-400 font-bold text-xs">
-                            <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                          <div className="flex items-center gap-2 text-zinc-600 dark:text-zinc-400 font-bold text-xs">
+                            <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                             <span>Referências Oficiais ({currentQuestion.references.length})</span>
                           </div>
-                          <span className="text-xs text-zinc-500 hover:text-white flex items-center gap-1">
+                          <span className="text-xs text-zinc-500 hover:text-zinc-950 dark:hover:text-white flex items-center gap-1">
                             {isReferencesOpen ? 'Ocultar ^' : 'Exibir v'}
                           </span>
                         </div>
                         {isReferencesOpen && (
-                          <ul className="text-xs text-zinc-400 space-y-1 pt-1 border-t border-zinc-800/80 list-disc list-inside">
+                          <ul className="text-xs text-zinc-600 dark:text-zinc-400 space-y-1 pt-1 border-t border-zinc-200 dark:border-zinc-800/80 list-disc list-inside">
                             {currentQuestion.references.map((ref, rIdx) => (
                               <li key={rIdx}>{ref}</li>
                             ))}
@@ -1467,32 +1470,35 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       </div>
 
                       {/* Comentários dos Alunos */}
-                      <div className="p-3 rounded-xl bg-[#12141c] border border-zinc-800 text-xs text-zinc-400 flex items-center gap-2">
+                      <div className="p-3 rounded-xl bg-slate-50 border border-zinc-200 dark:bg-[#18181b] dark:border-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 flex items-center gap-2">
                         <span>💬 Comentários dos Alunos</span>
-                        <span className="w-4 h-4 rounded-full bg-zinc-800 text-zinc-300 text-[10px] flex items-center justify-center font-bold">
+                        <span className="w-4 h-4 rounded-full bg-zinc-200 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 text-[10px] flex items-center justify-center font-bold">
                           0
                         </span>
                       </div>
 
                       {/* Rodapé com Navegação */}
-                      <div className="pt-3 flex items-center justify-between gap-4 border-t border-zinc-800">
+                      <div className="pt-3 flex items-center justify-between gap-4 border-t border-zinc-200 dark:border-zinc-800">
                         <button
                           type="button"
                           onClick={() => switchQuestion(0)}
-                          className="px-4 py-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-xs font-bold text-zinc-400 hover:text-white cursor-pointer"
+                          className="px-4 py-2 rounded-xl bg-slate-50 hover:bg-zinc-100 border border-zinc-200 text-xs font-bold text-zinc-700 hover:text-zinc-950 dark:bg-[#18181b] dark:hover:bg-[#27272a] dark:border-zinc-800 dark:text-zinc-400 dark:hover:text-white cursor-pointer"
                         >
                           &lt; Anterior
                         </button>
 
-                        <span className="text-xs font-black text-white bg-[#141620] px-3 py-1 rounded-lg border border-zinc-800">
+                        <span className="text-xs font-black text-zinc-900 dark:text-white bg-slate-50 dark:bg-[#18181b] px-3 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800">
                           {activeQuestionIdx === 0 ? '1/11' : '1/5'}
                         </span>
 
                         <button
                           type="button"
                           onClick={() => switchQuestion(activeQuestionIdx === 0 ? 1 : 0)}
-                          className="px-5 py-2 rounded-xl text-white text-xs font-bold shadow-md cursor-pointer transition-all hover:opacity-90"
-                          style={{ backgroundColor: accentConfig.primaryHex }}
+                          className="px-5 py-2 rounded-xl text-xs font-bold shadow-md cursor-pointer transition-all hover:opacity-90"
+                          style={{
+                            backgroundColor: accentConfig.primaryHex,
+                            color: accentConfig.primaryContrastHex
+                          }}
                         >
                           Próxima &gt;
                         </button>
@@ -1511,7 +1517,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
         {activeTab === 'flashcards' && (
           <div className="space-y-4">
             {/* Header da Sessão Idêntico à Imagem 8 */}
-            <div className="flex items-center justify-between p-3 rounded-2xl bg-[#10121a] border border-zinc-800 text-xs font-bold text-zinc-300 shadow-md">
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 shadow-sm dark:shadow-md">
               <BackArrowButton
                 onClick={() => setActiveTab('questoes')}
                 variant="ghost"
@@ -1520,12 +1526,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               />
 
               <div className="flex items-center gap-3">
-                <div className="flex items-center gap-1 font-mono text-zinc-300">
+                <div className="flex items-center gap-1 font-mono text-zinc-700 dark:text-zinc-300">
                   <Clock className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                   <span>00:06</span>
                 </div>
-                <span className="text-zinc-600">|</span>
-                <span className="font-mono text-white bg-[#181a24] px-2 py-0.5 rounded border border-zinc-700">
+                <span className="text-zinc-300 dark:text-zinc-600">|</span>
+                <span className="font-mono text-zinc-900 dark:text-white bg-slate-50 dark:bg-[#18181b] px-2 py-0.5 rounded border border-zinc-200 dark:border-zinc-700">
                   {flashcardIdx + 1}/{DEMO_FLASHCARDS.length}
                 </span>
               </div>
@@ -1533,28 +1539,28 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               <div className="flex items-center gap-2">
                 <button
                   type="button"
-                  className="p-1.5 rounded-lg bg-amber-950/40 text-amber-400 border border-amber-800/60"
+                  className="p-1.5 rounded-lg bg-amber-50 text-amber-600 border border-amber-200 dark:bg-amber-950/40 dark:text-amber-400 dark:border-amber-800/60"
                   title="Embaralhar"
                 >
                   <Shuffle className="w-3.5 h-3.5" />
                 </button>
                 <button
                   type="button"
-                  className="p-1.5 rounded-lg bg-[#181a24] text-zinc-400 hover:text-white border border-zinc-700"
+                  className="p-1.5 rounded-lg bg-slate-50 dark:bg-[#18181b] text-zinc-500 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white border border-zinc-200 dark:border-zinc-700"
                   title="Adicionar"
                 >
                   <Plus className="w-3.5 h-3.5" />
                 </button>
                 <button
                   type="button"
-                  className="p-1.5 rounded-lg bg-[#181a24] text-zinc-400 hover:text-white border border-zinc-700"
+                  className="p-1.5 rounded-lg bg-slate-50 dark:bg-[#18181b] text-zinc-500 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white border border-zinc-200 dark:border-zinc-700"
                   title="Estatísticas"
                 >
                   <BarChart3 className="w-3.5 h-3.5" />
                 </button>
                 <button
                   type="button"
-                  className="p-1.5 rounded-lg bg-[#181a24] text-zinc-400 hover:text-white border border-zinc-700"
+                  className="p-1.5 rounded-lg bg-slate-50 dark:bg-[#18181b] text-zinc-500 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white border border-zinc-200 dark:border-zinc-700"
                   title="Atalhos"
                 >
                   <Keyboard className="w-3.5 h-3.5" />
@@ -1563,7 +1569,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             </div>
 
             {/* Linha de Progresso Superior */}
-            <div className="w-full h-1 rounded-full bg-zinc-800 overflow-hidden">
+            <div className="w-full h-1 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
               <div
                 className="h-full rounded-full transition-all duration-300"
                 style={{
@@ -1575,8 +1581,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
             {/* Toast FSRS */}
             {fsrsToast && (
-              <div className="p-3 rounded-xl bg-emerald-950/60 border border-emerald-800 text-emerald-200 text-xs font-bold flex items-center gap-2 animate-in fade-in duration-150">
-                <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-400" />
+              <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 dark:bg-emerald-950/60 dark:border-emerald-800 dark:text-emerald-200 text-xs font-bold flex items-center gap-2 animate-in fade-in duration-150">
+                <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-600 dark:text-emerald-400" />
                 <span>{fsrsToast}</span>
               </div>
             )}
@@ -1584,10 +1590,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             {/* CARD CENTRAL (FRENTE - IMAGEM 10 / VERSO - IMAGEM 9) */}
             <div
               onClick={() => setIsCardFlipped(!isCardFlipped)}
-              className="min-h-[320px] p-6 sm:p-10 rounded-3xl bg-[#10121a] border border-zinc-800 shadow-2xl flex flex-col justify-between cursor-pointer transition-all duration-200 hover:border-zinc-700"
+              className="min-h-[320px] p-6 sm:p-10 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-lg dark:shadow-2xl flex flex-col justify-between cursor-pointer transition-all duration-200 hover:border-zinc-300 dark:hover:border-zinc-700"
             >
               {/* Header do Card */}
-              <div className="flex items-center justify-between pb-4 border-b border-zinc-800/60 text-xs text-zinc-400 font-bold">
+              <div className="flex items-center justify-between pb-4 border-b border-zinc-200 dark:border-zinc-800/60 text-xs text-zinc-600 dark:text-zinc-400 font-bold">
                 <div className="flex items-center gap-2">
                   <span
                     className="w-2.5 h-2.5 rounded-full"
@@ -1595,16 +1601,16 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   />
                   <span>{currentFlashcard.topic}</span>
                 </div>
-                <div className="flex items-center gap-2 text-amber-400">
+                <div className="flex items-center gap-2 text-amber-500 dark:text-amber-400">
                   <Star className="w-4 h-4 fill-amber-400" />
-                  <Pencil className="w-3.5 h-3.5 text-zinc-500" />
+                  <Pencil className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500" />
                 </div>
               </div>
 
               {/* FRENTE DO CARTÃO (IDÊNTICO À IMAGEM 10) */}
               {!isCardFlipped && (
                 <div className="py-8 text-center space-y-6">
-                  <div className="text-base sm:text-xl font-medium text-zinc-100 leading-relaxed max-w-2xl mx-auto">
+                  <div className="text-base sm:text-xl font-medium text-zinc-900 dark:text-zinc-100 leading-relaxed max-w-2xl mx-auto">
                     {currentFlashcard.statementWithCloze}
                   </div>
                 </div>
@@ -1623,13 +1629,13 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   </div>
 
                   {/* Box: Enunciado Completo Preenchido com Badge Verde */}
-                  <div className="p-4 sm:p-5 rounded-2xl bg-[#141622] border border-zinc-800 space-y-2">
+                  <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
                     <span className="text-[10px] font-black uppercase tracking-wider text-zinc-500">
                       ENUNCIADO COMPLETO PREENCHIDO
                     </span>
-                    <p className="text-xs sm:text-sm text-zinc-200 leading-relaxed font-medium">
+                    <p className="text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed font-medium">
                       {currentFlashcard.fullStatementFilled.split(currentFlashcard.clozeBadge)[0]}
-                      <mark className="bg-emerald-900/60 text-emerald-200 font-black px-2 py-0.5 rounded-lg border border-emerald-600/50">
+                      <mark className="bg-emerald-100 text-emerald-900 border border-emerald-300 dark:bg-emerald-900/60 dark:text-emerald-200 dark:border-emerald-600/50 font-black px-2 py-0.5 rounded-lg">
                         {currentFlashcard.clozeBadge}
                       </mark>
                       {currentFlashcard.fullStatementFilled.split(currentFlashcard.clozeBadge)[1]}
@@ -1637,11 +1643,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   </div>
 
                   {/* Box: Explicação Clínica */}
-                  <div className="p-4 rounded-2xl bg-[#12141e] border border-zinc-800 space-y-1.5">
-                    <div className="flex items-center gap-1.5 text-amber-400 text-xs font-bold">
+                  <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-1.5">
+                    <div className="flex items-center gap-1.5 text-amber-600 dark:text-amber-400 text-xs font-bold">
                       <span>✨ Explicação Clínica</span>
                     </div>
-                    <p className="text-xs sm:text-[13px] text-zinc-300 leading-relaxed">
+                    <p className="text-xs sm:text-[13px] text-zinc-700 dark:text-zinc-300 leading-relaxed">
                       {currentFlashcard.clinicalExplanation}
                     </p>
                   </div>
@@ -1649,7 +1655,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               )}
 
               {/* CONTROLES INFERIORES: BOTAO MOSTRAR RESPOSTA OU RÉGUA FSRS */}
-              <div className="pt-4 border-t border-zinc-800/60">
+              <div className="pt-4 border-t border-zinc-200 dark:border-zinc-800/60">
                 {!isCardFlipped ? (
                   <div className="flex items-center justify-between gap-3">
                     <button
@@ -1660,7 +1666,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           (prev) => (prev - 1 + DEMO_FLASHCARDS.length) % DEMO_FLASHCARDS.length
                         );
                       }}
-                      className="p-2.5 rounded-xl bg-[#181a24] text-zinc-400 hover:text-white border border-zinc-700 cursor-pointer"
+                      className="p-2.5 rounded-xl bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white border border-zinc-200 dark:border-zinc-700 cursor-pointer"
                     >
                       <ChevronLeft className="w-4 h-4" />
                     </button>
@@ -1668,8 +1674,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <button
                       type="button"
                       onClick={() => setIsCardFlipped(true)}
-                      className="px-6 py-2.5 rounded-xl text-white font-black text-xs sm:text-sm shadow-md cursor-pointer transition-all active:scale-95 hover:opacity-90"
-                      style={{ backgroundColor: accentConfig.primaryHex }}
+                      className="px-6 py-2.5 rounded-xl font-black text-xs sm:text-sm shadow-md cursor-pointer transition-all active:scale-95 hover:opacity-90"
+                      style={{
+                        backgroundColor: accentConfig.primaryHex,
+                        color: accentConfig.primaryContrastHex
+                      }}
                     >
                       Mostrar Resposta
                     </button>
@@ -1680,7 +1689,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         e.stopPropagation();
                         setFlashcardIdx((prev) => (prev + 1) % DEMO_FLASHCARDS.length);
                       }}
-                      className="p-2.5 rounded-xl bg-[#181a24] text-zinc-400 hover:text-white border border-zinc-700 cursor-pointer"
+                      className="p-2.5 rounded-xl bg-slate-50 hover:bg-zinc-100 dark:bg-[#18181b] dark:hover:bg-[#27272a] text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white border border-zinc-200 dark:border-zinc-700 cursor-pointer"
                     >
                       <ChevronRight className="w-4 h-4" />
                     </button>
@@ -1692,7 +1701,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       <button
                         type="button"
                         onClick={() => handleRateFlashcard('<1 min')}
-                        className="p-3 rounded-xl bg-[#2a0e14] hover:bg-[#38131a] border border-rose-900/80 text-rose-300 text-center cursor-pointer transition-all active:scale-95"
+                        className="p-3 rounded-xl bg-rose-50 hover:bg-rose-100 border border-rose-200 text-rose-700 dark:bg-[#2a0e14] dark:hover:bg-[#38131a] dark:border-rose-900/80 dark:text-rose-300 text-center cursor-pointer transition-all active:scale-95"
                       >
                         <div className="font-black text-xs">De novo (1)</div>
                         <div className="text-[10px] opacity-70">&lt;1 min</div>
@@ -1701,7 +1710,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       <button
                         type="button"
                         onClick={() => handleRateFlashcard('<5 min')}
-                        className="p-3 rounded-xl bg-[#181a24] hover:bg-[#202330] border border-zinc-700 text-zinc-300 text-center cursor-pointer transition-all active:scale-95"
+                        className="p-3 rounded-xl bg-zinc-100 hover:bg-zinc-200 border border-zinc-300 text-zinc-700 dark:bg-[#181a24] dark:hover:bg-[#202330] dark:border-zinc-700 dark:text-zinc-300 text-center cursor-pointer transition-all active:scale-95"
                       >
                         <div className="font-black text-xs">Difícil (2)</div>
                         <div className="text-[10px] opacity-70">&lt;5 min</div>
@@ -1710,7 +1719,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       <button
                         type="button"
                         onClick={() => handleRateFlashcard('<10 min')}
-                        className="p-3 rounded-xl bg-[#0a1f18] hover:bg-[#0e2a20] border border-emerald-900/80 text-emerald-300 text-center cursor-pointer transition-all active:scale-95"
+                        className="p-3 rounded-xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-700 dark:bg-[#0a1f18] dark:hover:bg-[#0e2a20] dark:border-emerald-900/80 dark:text-emerald-300 text-center cursor-pointer transition-all active:scale-95"
                       >
                         <div className="font-black text-xs">Bom (3)</div>
                         <div className="text-[10px] opacity-70">&lt;10 min</div>
@@ -1719,18 +1728,18 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       <button
                         type="button"
                         onClick={() => handleRateFlashcard('<2 dias')}
-                        className="p-3 rounded-xl bg-[#0a1828] hover:bg-[#0e2238] border border-cyan-900/80 text-cyan-300 text-center cursor-pointer transition-all active:scale-95"
+                        className="p-3 rounded-xl bg-cyan-50 hover:bg-cyan-100 border border-cyan-200 text-cyan-700 dark:bg-[#0a1828] dark:hover:bg-[#0e2238] dark:border-cyan-900/80 dark:text-cyan-300 text-center cursor-pointer transition-all active:scale-95"
                       >
                         <div className="font-black text-xs">Fácil (4)</div>
                         <div className="text-[10px] opacity-70">&lt;2 dias</div>
                       </button>
                     </div>
 
-                    <div className="flex items-center justify-between pt-2 text-xs font-bold text-zinc-400">
+                    <div className="flex items-center justify-between pt-2 text-xs font-bold text-zinc-600 dark:text-zinc-400">
                       <button
                         type="button"
                         onClick={() => setIsCardFlipped(false)}
-                        className="hover:text-white cursor-pointer"
+                        className="hover:text-zinc-950 dark:hover:text-white cursor-pointer"
                       >
                         ↶ Ver Pergunta
                       </button>
@@ -1739,7 +1748,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         onClick={() =>
                           setFlashcardIdx((prev) => (prev + 1) % DEMO_FLASHCARDS.length)
                         }
-                        className="hover:text-white cursor-pointer"
+                        className="hover:text-zinc-950 dark:hover:text-white cursor-pointer"
                       >
                         Pular / Próximo &gt;
                       </button>
@@ -1756,7 +1765,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             ========================================================================= */}
         {activeTab === 'resumos' && (
           <div className="space-y-6">
-            <div className="p-6 sm:p-8 rounded-3xl bg-[#10121a] border border-zinc-800 shadow-xl space-y-6">
+            <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-sm dark:shadow-xl space-y-6">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                 <div className="flex items-center gap-3">
                   <div
@@ -1766,21 +1775,21 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <BookOpen className="w-6 h-6" />
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-black text-white">
+                    <h3 className="text-lg sm:text-xl font-black text-zinc-950 dark:text-white">
                       {currentSummary.titulo}
                     </h3>
-                    <div className="text-xs text-zinc-400">{currentSummary.especialidade}</div>
+                    <div className="text-xs text-zinc-600 dark:text-zinc-400">{currentSummary.especialidade}</div>
                   </div>
                 </div>
 
-                <span className="px-3 py-1 rounded-xl text-xs font-black bg-pink-950/40 text-pink-300 border border-pink-900 self-start sm:self-auto">
+                <span className="px-3 py-1 rounded-xl text-xs font-black bg-pink-50 text-pink-700 border border-pink-200 dark:bg-pink-950/40 dark:text-pink-300 dark:border-pink-900 self-start sm:self-auto">
                   {currentSummary.badge}
                 </span>
               </div>
 
               {/* Raio-X de Recorrência por Bancas */}
-              <div className="p-4 rounded-2xl bg-[#141622] border border-zinc-800 space-y-3">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-bold text-zinc-300">
+              <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-3">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs font-bold text-zinc-700 dark:text-zinc-300">
                   <div className="flex items-center gap-2">
                     <GraduationCap className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                     <span>Raio-X de Bancas: Como o tema é cobrado nos exames</span>
@@ -1793,12 +1802,15 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         type="button"
                         onClick={() => setSelectedBancaIdx(bIdx)}
                         className={`px-3 py-1 rounded-lg text-xs font-bold cursor-pointer transition-all ${selectedBancaIdx === bIdx
-                            ? 'text-white shadow-sm'
-                            : 'bg-zinc-800 text-zinc-400 hover:text-white'
+                            ? 'shadow-sm'
+                            : 'bg-zinc-200 text-zinc-700 hover:text-zinc-950 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:text-white'
                           }`}
                         style={
                           selectedBancaIdx === bIdx
-                            ? { backgroundColor: accentConfig.primaryHex }
+                            ? {
+                              backgroundColor: accentConfig.primaryHex,
+                              color: accentConfig.primaryContrastHex
+                            }
                             : {}
                         }
                       >
@@ -1812,12 +1824,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   {currentBancaData.subfocos.map((sf) => (
                     <div
                       key={sf.nome}
-                      className="p-3.5 rounded-xl bg-[#10121a] border border-zinc-800 flex flex-col justify-between"
+                      className="p-3.5 rounded-xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 flex flex-col justify-between"
                     >
-                      <span className="text-xs font-semibold text-zinc-200 leading-snug">
+                      <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200 leading-snug">
                         {sf.nome}
                       </span>
-                      <span className="text-sm font-black text-pink-400 mt-2 font-mono">
+                      <span className="text-sm font-black text-pink-600 dark:text-pink-400 mt-2 font-mono">
                         {sf.pct}% das questões
                       </span>
                     </div>
@@ -1827,7 +1839,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
               {/* Pontos Críticos & Pérolas de Prova */}
               <div className="space-y-3 pt-2">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+                <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
                   Pontos Críticos & Pérolas de Prova
                 </h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -1835,13 +1847,13 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     <div
                       key={pt.titulo}
                       className={`p-4 rounded-2xl border text-xs sm:text-sm leading-relaxed ${pt.alerta
-                          ? 'bg-[#181208] border-amber-700/60 text-amber-200'
-                          : 'bg-[#141622] border-zinc-800 text-zinc-300'
+                          ? 'bg-amber-50/80 border-amber-200 text-amber-950 dark:bg-[#181208] dark:border-amber-700/60 dark:text-amber-200'
+                          : 'bg-slate-50 border-zinc-200 text-zinc-700 dark:bg-[#18181b] dark:border-zinc-800 dark:text-zinc-300'
                         }`}
                     >
                       <div className="font-bold flex items-center gap-1.5 mb-1.5">
                         {pt.alerta ? (
-                          <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0" />
+                          <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
                         ) : (
                           <Lightbulb
                             className="w-4 h-4 shrink-0"
@@ -1857,18 +1869,18 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               </div>
 
               {/* Algoritmo Decisório Passo a Passo */}
-              <div className="p-5 rounded-2xl bg-[#141622] border border-zinc-800 space-y-3">
-                <div className="text-xs sm:text-sm font-bold text-white flex items-center gap-2">
-                  <ShieldCheck className="w-4 h-4 text-emerald-400" />
+              <div className="p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-3">
+                <div className="text-xs sm:text-sm font-bold text-zinc-950 dark:text-white flex items-center gap-2">
+                  <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                   <span>{currentSummary.algoritmoTitulo}</span>
                 </div>
                 <div className="space-y-2">
                   {currentSummary.algoritmoPassos.map((passo, pIdx) => (
                     <div
                       key={passo}
-                      className="p-3 rounded-xl bg-[#10121a] border border-zinc-800 text-xs text-zinc-200 font-medium flex items-start gap-2.5"
+                      className="p-3 rounded-xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 text-xs text-zinc-800 dark:text-zinc-200 font-medium flex items-start gap-2.5"
                     >
-                      <span className="w-5 h-5 rounded-full bg-zinc-800 flex items-center justify-center font-mono font-bold text-[10px] shrink-0 text-zinc-300">
+                      <span className="w-5 h-5 rounded-full bg-zinc-200 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 flex items-center justify-center font-mono font-bold text-[10px] shrink-0">
                         {pIdx + 1}
                       </span>
                       <span className="leading-relaxed">{passo}</span>
@@ -1878,8 +1890,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               </div>
 
               {/* Ações Rápidas Cruzadas */}
-              <div className="pt-2 flex flex-wrap items-center justify-between gap-3 border-t border-zinc-800">
-                <div className="text-xs text-zinc-400">
+              <div className="pt-2 flex flex-wrap items-center justify-between gap-3 border-t border-zinc-200 dark:border-zinc-800">
+                <div className="text-xs text-zinc-600 dark:text-zinc-400">
                   Referência: <strong>{currentSummary.referencia}</strong>
                 </div>
                 <div className="flex items-center gap-2">
@@ -1890,7 +1902,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       setFlashcardIdx(2);
                       showToast('Iniciando flashcard de Infecção Puerperal');
                     }}
-                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-pink-950/60 hover:bg-pink-900/60 text-pink-300 text-xs font-bold cursor-pointer transition-all border border-pink-900"
+                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-pink-50 hover:bg-pink-100 text-pink-700 border border-pink-200 dark:bg-pink-950/60 dark:hover:bg-pink-900/60 dark:text-pink-300 dark:border-pink-900 text-xs font-bold cursor-pointer transition-all"
                   >
                     <Brain className="w-3.5 h-3.5" />
                     <span>Praticar Flashcards deste Tema</span>
@@ -1903,8 +1915,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       switchQuestion(0);
                       showToast('Navegando para o banco de questões');
                     }}
-                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-white text-xs font-bold cursor-pointer transition-all shadow-md hover:opacity-90"
-                    style={{ backgroundColor: accentConfig.primaryHex }}
+                    className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold cursor-pointer transition-all shadow-md hover:opacity-90"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      color: accentConfig.primaryContrastHex
+                    }}
                   >
                     <FileText className="w-3.5 h-3.5" />
                     <span>Resolver Questões no Banco</span>
@@ -1920,20 +1935,23 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             ========================================================================= */}
         {activeTab === 'desempenho' && (
           <div className="space-y-6">
-            <div className="p-6 sm:p-8 rounded-3xl bg-[#10121a] border border-zinc-800 shadow-xl space-y-6">
+            <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-sm dark:shadow-xl space-y-6">
               {/* Abas e Filtros Superiores Idênticos à Imagem 6 */}
-              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-zinc-800">
-                <div className="inline-flex p-1 rounded-xl bg-[#141620] border border-zinc-800 gap-1 overflow-x-auto no-scrollbar">
+              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+                <div className="inline-flex p-1 rounded-xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 gap-1 overflow-x-auto no-scrollbar">
                   <button
                     type="button"
                     onClick={() => setDashboardTab('visao_geral')}
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${dashboardTab === 'visao_geral'
-                        ? 'text-white shadow-sm'
-                        : 'text-zinc-400 hover:text-white'
+                        ? 'shadow-sm'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
                       }`}
                     style={
                       dashboardTab === 'visao_geral'
-                        ? { backgroundColor: accentConfig.primaryHex }
+                        ? {
+                          backgroundColor: accentConfig.primaryHex,
+                          color: accentConfig.primaryContrastHex
+                        }
                         : {}
                     }
                   >
@@ -1945,12 +1963,15 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     type="button"
                     onClick={() => setDashboardTab('especialidades')}
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${dashboardTab === 'especialidades'
-                        ? 'text-white shadow-sm'
-                        : 'text-zinc-400 hover:text-white'
+                        ? 'shadow-sm'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
                       }`}
                     style={
                       dashboardTab === 'especialidades'
-                        ? { backgroundColor: accentConfig.primaryHex }
+                        ? {
+                          backgroundColor: accentConfig.primaryHex,
+                          color: accentConfig.primaryContrastHex
+                        }
                         : {}
                     }
                   >
@@ -1961,12 +1982,15 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     type="button"
                     onClick={() => setDashboardTab('raiox_erros')}
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${dashboardTab === 'raiox_erros'
-                        ? 'text-white shadow-sm'
-                        : 'text-zinc-400 hover:text-white'
+                        ? 'shadow-sm'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
                       }`}
                     style={
                       dashboardTab === 'raiox_erros'
-                        ? { backgroundColor: accentConfig.primaryHex }
+                        ? {
+                          backgroundColor: accentConfig.primaryHex,
+                          color: accentConfig.primaryContrastHex
+                        }
                         : {}
                     }
                   >
@@ -1980,12 +2004,15 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     type="button"
                     onClick={() => setDashboardTab('tempo')}
                     className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${dashboardTab === 'tempo'
-                        ? 'text-white shadow-sm'
-                        : 'text-zinc-400 hover:text-white'
+                        ? 'shadow-sm'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
                       }`}
                     style={
                       dashboardTab === 'tempo'
-                        ? { backgroundColor: accentConfig.primaryHex }
+                        ? {
+                          backgroundColor: accentConfig.primaryHex,
+                          color: accentConfig.primaryContrastHex
+                        }
                         : {}
                     }
                   >
@@ -1999,19 +2026,19 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <select
                     value={dashboardPeriod}
                     onChange={(e) => setDashboardPeriod(e.target.value)}
-                    className="px-3 py-1.5 rounded-xl bg-[#141620] border border-zinc-800 text-xs font-bold text-zinc-300 cursor-pointer"
+                    className="px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 cursor-pointer"
                   >
                     <option value="7d">Últimos 7 dias</option>
                     <option value="30d">Últimos 30 dias</option>
                     <option value="all">Todo o período</option>
                   </select>
 
-                  <select className="px-3 py-1.5 rounded-xl bg-[#141620] border border-zinc-800 text-xs font-bold text-zinc-300 cursor-pointer">
+                  <select className="px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 cursor-pointer">
                     <option>Residência Médica</option>
                     <option>Revalida</option>
                   </select>
 
-                  <select className="px-3 py-1.5 rounded-xl bg-[#141620] border border-zinc-800 text-xs font-bold text-zinc-300 cursor-pointer">
+                  <select className="px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 cursor-pointer">
                     <option>Todas as Bancas</option>
                     <option>ENARE</option>
                     <option>USP-SP</option>
@@ -2020,7 +2047,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => showToast('Métricas recalculadas com sucesso')}
-                    className="p-2 rounded-xl bg-[#141620] border border-zinc-800 text-zinc-400 hover:text-white cursor-pointer"
+                    className="p-2 rounded-xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 text-zinc-500 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white cursor-pointer"
                     title="Recalcular"
                   >
                     <RotateCcw className="w-3.5 h-3.5" />
@@ -2034,40 +2061,40 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   {/* 4 CARDS DE KPI IDÊNTICOS À IMAGEM 6 */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {/* 1. VOLUME RESOLVIDO */}
-                    <div className="p-5 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                      <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
+                    <div className="p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                      <div className="flex items-center justify-between text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
                         <span>VOLUME RESOLVIDO</span>
-                        <span className="text-emerald-400 text-xs flex items-center gap-0.5">
+                        <span className="text-emerald-600 dark:text-emerald-400 text-xs flex items-center gap-0.5">
                           ↗ +18.0%
                         </span>
                       </div>
-                      <div className="text-3xl sm:text-4xl font-black text-white font-mono">1</div>
-                      <div className="text-xs text-zinc-400">1 únicas e 1 inéditas</div>
+                      <div className="text-3xl sm:text-4xl font-black text-zinc-950 dark:text-white font-mono">1</div>
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">1 únicas e 1 inéditas</div>
                     </div>
 
                     {/* 2. ACERTOS LÍQUIDOS */}
-                    <div className="p-5 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                      <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
+                    <div className="p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                      <div className="flex items-center justify-between text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
                         <span>ACERTOS LÍQUIDOS</span>
-                        <span className="px-2 py-0.5 rounded-md bg-emerald-950/60 text-emerald-400 text-[10px] font-bold border border-emerald-800/60">
+                        <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-950/60 dark:text-emerald-400 dark:border-emerald-800/60 text-[10px] font-bold">
                           ✔ Consistente
                         </span>
                       </div>
-                      <div className="text-3xl sm:text-4xl font-black text-white font-mono">0</div>
-                      <div className="text-xs text-rose-400">1 erros mapeados no período</div>
+                      <div className="text-3xl sm:text-4xl font-black text-zinc-950 dark:text-white font-mono">0</div>
+                      <div className="text-xs text-rose-600 dark:text-rose-400">1 erros mapeados no período</div>
                     </div>
 
                     {/* 3. APROVEITAMENTO */}
-                    <div className="p-5 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                      <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
+                    <div className="p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                      <div className="flex items-center justify-between text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
                         <span>APROVEITAMENTO</span>
-                        <span className="text-amber-400 text-xs">↘ -2.1%</span>
+                        <span className="text-amber-600 dark:text-amber-400 text-xs">↘ -2.1%</span>
                       </div>
-                      <div className="text-3xl sm:text-4xl font-black text-white font-mono">
+                      <div className="text-3xl sm:text-4xl font-black text-zinc-950 dark:text-white font-mono">
                         0.0%
                       </div>
-                      <div className="text-xs text-zinc-400">Taxa bruta (meta: ≥ 80% ideal)</div>
-                      <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">Taxa bruta (meta: ≥ 80% ideal)</div>
+                      <div className="w-full h-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
                         <div
                           className="h-full bg-amber-500 rounded-full"
                           style={{ width: '15%' }}
@@ -2076,18 +2103,18 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     </div>
 
                     {/* 4. RITMO MÉDIO */}
-                    <div className="p-5 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                      <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400 uppercase tracking-wider">
+                    <div className="p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                      <div className="flex items-center justify-between text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
                         <span>RITMO MÉDIO</span>
                         <span className="text-[10px]" style={{ color: accentConfig.primaryHex }}>
                           ⏱ Ideal &lt; 2m 30s
                         </span>
                       </div>
-                      <div className="text-3xl sm:text-4xl font-black text-white font-mono">
+                      <div className="text-3xl sm:text-4xl font-black text-zinc-950 dark:text-white font-mono">
                         1m 48s
                       </div>
-                      <div className="text-xs text-zinc-400">Tempo médio / questão</div>
-                      <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                      <div className="text-xs text-zinc-600 dark:text-zinc-400">Tempo médio / questão</div>
+                      <div className="w-full h-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
                         <div
                           className="h-full rounded-full"
                           style={{ width: '60%', backgroundColor: accentConfig.primaryHex }}
@@ -2097,17 +2124,17 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   </div>
 
                   {/* GRÁFICO DE EVOLUÇÃO (IDÊNTICO À IMAGEM 6) */}
-                  <div className="p-5 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-4">
+                  <div className="p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-4">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                       <div className="flex items-center gap-4">
-                        <h4 className="text-sm font-black text-white">Evolução</h4>
-                        <div className="inline-flex p-0.5 rounded-lg bg-[#181a24] text-[11px] font-bold text-zinc-400">
+                        <h4 className="text-sm font-black text-zinc-950 dark:text-white">Evolução</h4>
+                        <div className="inline-flex p-0.5 rounded-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 text-[11px] font-bold text-zinc-600 dark:text-zinc-400">
                           {(['30d', '3m', '6m', 'livre'] as const).map((period) => (
                             <button
                               key={period}
                               type="button"
                               onClick={() => setEvolutionPeriod(period)}
-                              className={`px-2 py-0.5 rounded cursor-pointer ${evolutionPeriod === period ? 'bg-zinc-800 text-white' : ''}`}
+                              className={`px-2 py-0.5 rounded cursor-pointer ${evolutionPeriod === period ? 'bg-zinc-200 text-zinc-950 dark:bg-zinc-800 dark:text-white' : ''}`}
                             >
                               {period === '30d'
                                 ? '30 Dias'
@@ -2121,7 +2148,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         </div>
                       </div>
 
-                      <div className="flex items-center gap-3 text-xs font-bold text-zinc-400">
+                      <div className="flex items-center gap-3 text-xs font-bold text-zinc-600 dark:text-zinc-400">
                         <span className="flex items-center gap-1.5">
                           <span className="w-2.5 h-2.5 rounded-sm bg-emerald-500" />
                           <span>Acertos (Topo)</span>
@@ -2139,7 +2166,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
                     {/* Gráfico SVG Simulado com as Barras e a Linha de Tendência */}
                     <div className="h-44 w-full flex flex-col justify-end pt-4">
-                      <div className="relative w-full h-32 flex items-end justify-between px-2 sm:px-6 border-b border-zinc-800">
+                      <div className="relative w-full h-32 flex items-end justify-between px-2 sm:px-6 border-b border-zinc-200 dark:border-zinc-800">
                         {/* Linha de Tendência Cinza (Curva Suave) */}
                         <svg
                           className="absolute inset-0 w-full h-full pointer-events-none"
@@ -2183,58 +2210,58 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   </div>
 
                   {/* DETALHAMENTO DE QUESTÕES POR HORA DO DIA (IDÊNTICO À IMAGEM 7) */}
-                  <div className="p-5 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-4">
+                  <div className="p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-4">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                       <div>
                         <div className="flex items-center gap-2">
-                          <h4 className="text-sm font-black text-white">
+                          <h4 className="text-sm font-black text-zinc-950 dark:text-white">
                             Detalhamento de Questões por Hora do Dia
                           </h4>
-                          <span className="px-2 py-0.5 rounded-full bg-emerald-950/60 text-emerald-400 text-[10px] font-bold border border-emerald-800/60">
+                          <span className="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 dark:bg-emerald-950/60 dark:text-emerald-400 dark:border-emerald-800/60 text-[10px] font-bold">
                             Sábado, 21 De Novembro
                           </span>
                         </div>
-                        <p className="text-xs text-zinc-400">
+                        <p className="text-xs text-zinc-600 dark:text-zinc-400">
                           Selecione o dia desejado para analisar o volume e a taxa de acerto a cada
                           hora (00h às 23h)
                         </p>
                       </div>
 
-                      <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-300">
-                        <button type="button" className="p-1 rounded bg-[#181a24] border border-zinc-800">
+                      <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-700 dark:text-zinc-300">
+                        <button type="button" className="p-1 rounded bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800">
                           &lt;
                         </button>
-                        <div className="flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[#181a24] border border-zinc-800">
-                          <Calendar className="w-3.5 h-3.5 text-emerald-400" />
+                        <div className="flex items-center gap-1.5 px-3 py-1 rounded-xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800">
+                          <Calendar className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                           <span>21/11/2026</span>
                         </div>
-                        <button type="button" className="p-1 rounded bg-[#181a24] border border-zinc-800">
+                        <button type="button" className="p-1 rounded bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800">
                           &gt;
                         </button>
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-3 rounded-xl bg-[#161824] border border-zinc-800/80 text-xs">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-3 rounded-xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 text-xs">
                       <div>
                         <span className="text-[10px] text-zinc-500">Total no Dia</span>
-                        <div className="font-black text-white text-sm">1 questão</div>
+                        <div className="font-black text-zinc-950 dark:text-white text-sm">1 questão</div>
                       </div>
                       <div>
                         <span className="text-[10px] text-zinc-500">Acertos</span>
-                        <div className="font-black text-emerald-400 text-sm">0 (0%)</div>
+                        <div className="font-black text-emerald-600 dark:text-emerald-400 text-sm">0 (0%)</div>
                       </div>
                       <div>
                         <span className="text-[10px] text-zinc-500">Erros</span>
-                        <div className="font-black text-rose-400 text-sm">1</div>
+                        <div className="font-black text-rose-600 dark:text-rose-400 text-sm">1</div>
                       </div>
                       <div>
                         <span className="text-[10px] text-zinc-500">Horário de Pico</span>
-                        <div className="font-black text-white text-sm">22h:00 (1q)</div>
+                        <div className="font-black text-zinc-950 dark:text-white text-sm">22h:00 (1q)</div>
                       </div>
                     </div>
 
                     {/* Gráfico 24 Horas com a Coluna Vermelha às 22h */}
-                    <div className="h-28 w-full flex items-end justify-between px-1 sm:px-4 border-b border-zinc-800">
+                    <div className="h-28 w-full flex items-end justify-between px-1 sm:px-4 border-b border-zinc-200 dark:border-zinc-800">
                       {[
                         '00h',
                         '02h',
@@ -2268,85 +2295,85 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <div className="space-y-4">
                     {/* 4 Cards de Métricas Biológicas */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                      <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                        <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400">
+                      <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                        <div className="flex items-center justify-between text-[11px] font-bold text-zinc-500 dark:text-zinc-400">
                           <span>MÉDIA DIÁRIA</span>
-                          <span className="text-emerald-400 text-[10px]">Meta: 30/dia</span>
+                          <span className="text-emerald-600 dark:text-emerald-400 text-[10px]">Meta: 30/dia</span>
                         </div>
-                        <div className="text-2xl font-black text-white font-mono">1 q/dia</div>
-                        <div className="text-[11px] text-zinc-400">Abaixo da meta de 30q/dia</div>
+                        <div className="text-2xl font-black text-zinc-950 dark:text-white font-mono">1 q/dia</div>
+                        <div className="text-[11px] text-zinc-600 dark:text-zinc-400">Abaixo da meta de 30q/dia</div>
                       </div>
 
-                      <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                        <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400">
+                      <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                        <div className="flex items-center justify-between text-[11px] font-bold text-zinc-500 dark:text-zinc-400">
                           <span>VOLUME PROJETADO</span>
                           <span className="text-[10px]" style={{ color: accentConfig.primaryHex }}>
                             ~ 30 dias
                           </span>
                         </div>
-                        <div className="text-2xl font-black text-white font-mono">~30 q/mês</div>
-                        <div className="text-[11px] text-zinc-400">
+                        <div className="text-2xl font-black text-zinc-950 dark:text-white font-mono">~30 q/mês</div>
+                        <div className="text-[11px] text-zinc-600 dark:text-zinc-400">
                           Estimativa baseada no seu ritmo recente
                         </div>
                       </div>
 
-                      <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                        <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400">
+                      <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                        <div className="flex items-center justify-between text-[11px] font-bold text-zinc-500 dark:text-zinc-400">
                           <span>ASSIDUIDADE</span>
-                          <span className="text-amber-400 text-[10px]">🔥 Constância</span>
+                          <span className="text-amber-600 dark:text-amber-400 text-[10px]">🔥 Constância</span>
                         </div>
-                        <div className="text-2xl font-black text-white font-mono">
+                        <div className="text-2xl font-black text-zinc-950 dark:text-white font-mono">
                           100% dos dias
                         </div>
-                        <div className="text-[11px] text-zinc-400">
+                        <div className="text-[11px] text-zinc-600 dark:text-zinc-400">
                           26 dias com resoluções no período
                         </div>
                       </div>
 
-                      <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                        <div className="flex items-center justify-between text-[11px] font-bold text-zinc-400">
+                      <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                        <div className="flex items-center justify-between text-[11px] font-bold text-zinc-500 dark:text-zinc-400">
                           <span>PICO COGNITIVO</span>
-                          <span className="text-purple-400 text-[10px]">Melhor turno</span>
+                          <span className="text-purple-600 dark:text-purple-400 text-[10px]">Melhor turno</span>
                         </div>
-                        <div className="text-2xl font-black text-white font-mono">
-                          Manhã <span className="text-emerald-400 text-sm font-bold">66%</span>
+                        <div className="text-2xl font-black text-zinc-950 dark:text-white font-mono">
+                          Manhã <span className="text-emerald-600 dark:text-emerald-400 text-sm font-bold">66%</span>
                         </div>
-                        <div className="text-[11px] text-zinc-400">
+                        <div className="text-[11px] text-zinc-600 dark:text-zinc-400">
                           Horário com maior taxa de acerto (06h – 12h)
                         </div>
                       </div>
                     </div>
 
                     {/* Grid dos 4 Turnos Biológicos */}
-                    <div className="p-5 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-4">
+                    <div className="p-5 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-4">
                       <div>
-                        <h4 className="text-sm font-black text-white">
+                        <h4 className="text-sm font-black text-zinc-950 dark:text-white">
                           Cronobiologia de Estudo & Rendimento por Turno
                         </h4>
-                        <p className="text-xs text-zinc-400">
+                        <p className="text-xs text-zinc-600 dark:text-zinc-400">
                           Distribuição de volume e taxa de acerto conforme o horário biológico
                         </p>
                       </div>
 
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                         {/* Manhã */}
-                        <div className="p-4 rounded-xl bg-[#161824] border border-zinc-800 space-y-2">
+                        <div className="p-4 rounded-xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 space-y-2">
                           <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-1.5 text-xs font-bold text-white">
-                              <Sunrise className="w-4 h-4 text-amber-400" />
+                            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-950 dark:text-white">
+                              <Sunrise className="w-4 h-4 text-amber-500 dark:text-amber-400" />
                               <span>Manhã</span>
                               <span className="text-[10px] text-zinc-500 font-normal">
                                 06h-12h
                               </span>
                             </div>
-                            <span className="px-2 py-0.5 rounded bg-amber-950/60 text-amber-300 text-xs font-black border border-amber-800/40">
+                            <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200 dark:bg-amber-950/60 dark:text-amber-300 dark:border-amber-800/40 text-xs font-black">
                               66% acerto
                             </span>
                           </div>
-                          <div className="text-xs text-zinc-400">
+                          <div className="text-xs text-zinc-600 dark:text-zinc-400">
                             Volume: <strong>44 q (13%)</strong>
                           </div>
-                          <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                          <div className="w-full h-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
                             <div
                               className="h-full bg-amber-500 rounded-full"
                               style={{ width: '66%' }}
@@ -2355,23 +2382,23 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         </div>
 
                         {/* Tarde */}
-                        <div className="p-4 rounded-xl bg-[#161824] border border-zinc-800 space-y-2">
+                        <div className="p-4 rounded-xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 space-y-2">
                           <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-1.5 text-xs font-bold text-white">
-                              <Sun className="w-4 h-4 text-orange-400" />
+                            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-950 dark:text-white">
+                              <Sun className="w-4 h-4 text-orange-500 dark:text-orange-400" />
                               <span>Tarde</span>
                               <span className="text-[10px] text-zinc-500 font-normal">
                                 12h-18h
                               </span>
                             </div>
-                            <span className="px-2 py-0.5 rounded bg-rose-950/60 text-rose-300 text-xs font-black border border-rose-800/40">
+                            <span className="px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 dark:bg-rose-950/60 dark:text-rose-300 dark:border-rose-800/40 text-xs font-black">
                               52% acerto
                             </span>
                           </div>
-                          <div className="text-xs text-zinc-400">
+                          <div className="text-xs text-zinc-600 dark:text-zinc-400">
                             Volume: <strong>84 q (25%)</strong>
                           </div>
-                          <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                          <div className="w-full h-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
                             <div
                               className="h-full bg-rose-500 rounded-full"
                               style={{ width: '52%' }}
@@ -2380,23 +2407,23 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         </div>
 
                         {/* Noite */}
-                        <div className="p-4 rounded-xl bg-[#161824] border border-zinc-800 space-y-2">
+                        <div className="p-4 rounded-xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 space-y-2">
                           <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-1.5 text-xs font-bold text-white">
-                              <Sunset className="w-4 h-4 text-purple-400" />
+                            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-950 dark:text-white">
+                              <Sunset className="w-4 h-4 text-purple-500 dark:text-purple-400" />
                               <span>Noite</span>
                               <span className="text-[10px] text-zinc-500 font-normal">
                                 18h-23h
                               </span>
                             </div>
-                            <span className="px-2 py-0.5 rounded bg-rose-950/60 text-rose-300 text-xs font-black border border-rose-800/40">
+                            <span className="px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 dark:bg-rose-950/60 dark:text-rose-300 dark:border-rose-800/40 text-xs font-black">
                               55% acerto
                             </span>
                           </div>
-                          <div className="text-xs text-zinc-400">
+                          <div className="text-xs text-zinc-600 dark:text-zinc-400">
                             Volume: <strong>137 q (41%)</strong>
                           </div>
-                          <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                          <div className="w-full h-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
                             <div
                               className="h-full bg-rose-500 rounded-full"
                               style={{ width: '55%' }}
@@ -2405,23 +2432,23 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         </div>
 
                         {/* Madrugada */}
-                        <div className="p-4 rounded-xl bg-[#161824] border border-zinc-800 space-y-2">
+                        <div className="p-4 rounded-xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 space-y-2">
                           <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-1.5 text-xs font-bold text-white">
+                            <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-950 dark:text-white">
                               <Moon className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
                               <span>Madrugada</span>
                               <span className="text-[10px] text-zinc-500 font-normal">
                                 23h-06h
                               </span>
                             </div>
-                            <span className="px-2 py-0.5 rounded bg-rose-950/60 text-rose-300 text-xs font-black border border-rose-800/40">
+                            <span className="px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 dark:bg-rose-950/60 dark:text-rose-300 dark:border-rose-800/40 text-xs font-black">
                               56% acerto
                             </span>
                           </div>
-                          <div className="text-xs text-zinc-400">
+                          <div className="text-xs text-zinc-600 dark:text-zinc-400">
                             Volume: <strong>73 q (22%)</strong>
                           </div>
-                          <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                          <div className="w-full h-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
                             <div
                               className="h-full bg-rose-500 rounded-full"
                               style={{ width: '56%' }}
@@ -2437,7 +2464,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               {/* CONTEÚDO DA SUB-ABA 2: ESPECIALIDADES */}
               {dashboardTab === 'especialidades' && (
                 <div className="space-y-4 animate-in fade-in duration-200">
-                  <div className="flex items-center justify-between pb-2 border-b border-zinc-800 text-xs font-bold text-zinc-400">
+                  <div className="flex items-center justify-between pb-2 border-b border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-600 dark:text-zinc-400">
                     <span>Desempenho por Grande Área Médica</span>
                     <span style={{ color: accentConfig.primaryHex }}>TRI Calibrada</span>
                   </div>
@@ -2487,21 +2514,21 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     ].map((area) => (
                       <div
                         key={area.nome}
-                        className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-3"
+                        className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-3"
                       >
                         <div className="flex items-center justify-between">
-                          <span className="text-xs font-bold text-white flex items-center gap-1.5">
+                          <span className="text-xs font-bold text-zinc-950 dark:text-white flex items-center gap-1.5">
                             <span
                               className="w-2.5 h-2.5 rounded-full"
                               style={{ backgroundColor: area.color }}
                             />
                             {area.nome}
                           </span>
-                          <span className="font-mono text-sm font-black text-emerald-400">
+                          <span className="font-mono text-sm font-black text-emerald-600 dark:text-emerald-400">
                             {area.acerto}%
                           </span>
                         </div>
-                        <div className="w-full h-1.5 rounded-full bg-zinc-800 overflow-hidden">
+                        <div className="w-full h-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 overflow-hidden">
                           <div
                             className="h-full rounded-full"
                             style={{
@@ -2510,11 +2537,11 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                             }}
                           />
                         </div>
-                        <div className="flex items-center justify-between text-[11px] text-zinc-400">
+                        <div className="flex items-center justify-between text-[11px] text-zinc-600 dark:text-zinc-400">
                           <span>Volume: {area.volume}q</span>
                           <span>Ritmo: {area.tempo}</span>
                         </div>
-                        <div className="text-[10px] text-zinc-500 truncate pt-1 border-t border-zinc-800/60">
+                        <div className="text-[10px] text-zinc-500 truncate pt-1 border-t border-zinc-200 dark:border-zinc-800/60">
                           Subfoco recente: {area.foco}
                         </div>
                       </div>
@@ -2526,8 +2553,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               {/* CONTEÚDO DA SUB-ABA 3: RAIO-X DE ERROS (75 ERROS) */}
               {dashboardTab === 'raiox_erros' && (
                 <div className="space-y-4 animate-in fade-in duration-200">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-zinc-800 text-xs">
-                    <span className="font-bold text-zinc-300">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-2 border-b border-zinc-200 dark:border-zinc-800 text-xs">
+                    <span className="font-bold text-zinc-700 dark:text-zinc-300">
                       Mapeamento Cirúrgico de Vulnerabilidades Recentes (75 questões erradas)
                     </span>
                     <button
@@ -2581,19 +2608,19 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     ].map((erro, idx) => (
                       <div
                         key={idx}
-                        className="p-4 rounded-2xl bg-[#12141c] border border-rose-900/30 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:border-rose-800/60 transition-all"
+                        className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-rose-200 dark:border-rose-900/30 flex flex-col md:flex-row md:items-center justify-between gap-3 hover:border-rose-300 dark:hover:border-rose-800/60 transition-all"
                       >
                         <div className="space-y-1 min-w-0">
                           <div className="flex items-center gap-2">
                             <span className="w-2 h-2 rounded-full bg-rose-500 shrink-0" />
-                            <span className="text-xs sm:text-sm font-bold text-white truncate">
+                            <span className="text-xs sm:text-sm font-bold text-zinc-950 dark:text-white truncate">
                               {erro.tema}
                             </span>
-                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-[#181a24] text-zinc-400 border border-zinc-700">
+                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-white dark:bg-[#121215] text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">
                               {erro.banca}
                             </span>
                           </div>
-                          <p className="text-xs text-rose-200/80 leading-relaxed">{erro.motivo}</p>
+                          <p className="text-xs text-rose-700 dark:text-rose-200/80 leading-relaxed">{erro.motivo}</p>
                         </div>
 
                         <button
@@ -2623,29 +2650,29 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               {dashboardTab === 'tempo' && (
                 <div className="space-y-4 animate-in fade-in duration-200">
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-1">
-                      <span className="text-[11px] text-zinc-400">Tempo em Questões</span>
-                      <div className="text-2xl font-black text-white font-mono">1h 45min</div>
+                    <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-1">
+                      <span className="text-[11px] text-zinc-600 dark:text-zinc-400">Tempo em Questões</span>
+                      <div className="text-2xl font-black text-zinc-950 dark:text-white font-mono">1h 45min</div>
                       <div className="text-[10px] text-zinc-500">60% da carga horária</div>
                     </div>
-                    <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-1">
-                      <span className="text-[11px] text-zinc-400">Tempo em Flashcards</span>
-                      <div className="text-2xl font-black text-white font-mono">42min</div>
+                    <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-1">
+                      <span className="text-[11px] text-zinc-600 dark:text-zinc-400">Tempo em Flashcards</span>
+                      <div className="text-2xl font-black text-zinc-950 dark:text-white font-mono">42min</div>
                       <div className="text-[10px] text-zinc-500">24% da carga horária</div>
                     </div>
-                    <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-1">
-                      <span className="text-[11px] text-zinc-400">Tempo em Resumos</span>
-                      <div className="text-2xl font-black text-white font-mono">28min</div>
+                    <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-1">
+                      <span className="text-[11px] text-zinc-600 dark:text-zinc-400">Tempo em Resumos</span>
+                      <div className="text-2xl font-black text-zinc-950 dark:text-white font-mono">28min</div>
                       <div className="text-[10px] text-zinc-500">16% da carga horária</div>
                     </div>
                   </div>
 
-                  <div className="p-4 rounded-2xl bg-[#12141c] border border-zinc-800 space-y-2">
-                    <div className="flex items-center justify-between text-xs font-bold text-white">
+                  <div className="p-4 rounded-2xl bg-slate-50 dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-800 space-y-2">
+                    <div className="flex items-center justify-between text-xs font-bold text-zinc-950 dark:text-white">
                       <span>Eficiência Cognitiva por Hora</span>
-                      <span className="text-emerald-400">Turno da Manhã: +28% de retenção</span>
+                      <span className="text-emerald-600 dark:text-emerald-400">Turno da Manhã: +28% de retenção</span>
                     </div>
-                    <p className="text-xs text-zinc-400 leading-relaxed">
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
                       Seu pico de fixação neurológica ocorre entre 08h e 11h, onde sua taxa de acerto
                       atinge 66% com menor tempo médio de resposta por item (1m 35s).
                     </p>

@@ -586,7 +586,7 @@ export const LandingIntroSection: React.FC<LandingIntroSectionProps> = React.mem
         aria-label="Introdução Hippocampus • Os 4 Pilares da Aprovação"
         className={`font-inter relative w-full ${embeddedMode
             ? 'h-full flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 py-6 sm:py-8 bg-transparent overflow-hidden select-none pointer-events-none'
-            : 'min-h-[calc(100vh-4rem)] flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 py-10 sm:py-14 bg-zinc-50 dark:bg-[var(--bg-page)] overflow-hidden select-none transition-colors duration-300'
+            : 'min-h-[calc(100vh-4rem)] flex flex-col justify-between items-center px-4 sm:px-6 lg:px-8 py-10 sm:py-14 bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] overflow-hidden select-none transition-colors duration-300'
           }`}
         style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
       >

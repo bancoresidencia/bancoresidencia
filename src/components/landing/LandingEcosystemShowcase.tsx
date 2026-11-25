@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { useScrollReveal } from './useScrollReveal';
+import { getLandingHighlightTextStyle } from './landingThemeHelpers';
 
 type AdditionalFeatureId = 'provas' | 'tri' | 'caderno_erros' | 'google_agenda';
 
@@ -163,22 +164,7 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
   const { accent, mode, accentConfig } = useTheme();
   const isMonochrome = accent === 'neutral';
 
-  const highlightTextStyle: React.CSSProperties = isMonochrome
-    ? {
-        backgroundImage:
-          mode === 'dark'
-            ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
-            : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
-      }
-    : {
-        backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${
-          accentConfig.chartPalette[1] ?? accentConfig.hoverHex
-        } 26%, ${
-          mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
-        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${
-          accentConfig.primaryHex
-        } 100%)`
-      };
+  const highlightTextStyle = getLandingHighlightTextStyle(accentConfig, mode, isMonochrome);
 
   const { ref, isVisible, isExiting } = useScrollReveal<HTMLDivElement>(0.1);
   // Default no TRI como na Imagem 2
@@ -189,7 +175,7 @@ export const LandingEcosystemShowcase: React.FC<LandingEcosystemShowcaseProps> =
   return (
     <section
       id="recursos-adicionais"
-      className="relative scroll-mt-20 pt-12 sm:pt-16 pb-8 sm:pb-12 bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200 overflow-hidden"
+      className="relative scroll-mt-20 pt-12 sm:pt-16 pb-8 sm:pb-12 bg-transparent text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200"
     >
       {/* Iluminação Ambiente Atrás da Dobra (Zero Linhas / Divisórias) */}
       <div

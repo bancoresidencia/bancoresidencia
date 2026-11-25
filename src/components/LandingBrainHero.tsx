@@ -40,6 +40,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
   const isDark = mode === 'dark';
   const isMonochrome = accent === 'neutral';
   const trackRef = useRef<HTMLDivElement | null>(null);
+  const stageContainerRef = useRef<HTMLDivElement | null>(null);
   const pillarsStageRef = useRef<HTMLDivElement | null>(null);
   const introRef = useRef<HTMLDivElement | null>(null);
   const brainStageRef = useRef<HTMLDivElement | null>(null);
@@ -67,15 +68,28 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
   const activeActRef = useRef(0);
   const [cardsVisible, setCardsVisible] = useState(false);
 
-  const trackMetricsRef = useRef({ top: 0, height: 7920 });
+  const trackMetricsRef = useRef({ top: 0, height: 7920, dobra3BrainX: -320 });
   const measureTrack = useCallback(() => {
     const el = trackRef.current;
     if (!el) return;
     const rect = el.getBoundingClientRect();
     const scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
+    const winW = window.innerWidth || 1280;
+    const winH = window.innerHeight || 800;
+    const stageWidth = stageContainerRef.current?.clientWidth || Math.min(winW, winW >= 1536 ? 1400 : 1280);
+    const cardMargin = winW >= 1280 ? 96 : 64;
+    const cardWidth = winW >= 1280 ? 465 : 435;
+    const cardLeftEdge = stageWidth - cardMargin - cardWidth;
+    const brainVisualHalfWidth = Math.min(285, Math.max(210, Math.round(winH * 0.33)));
+    const desiredCenter = cardMargin + brainVisualHalfWidth;
+    const maxCenterBeforeCard = Math.max(cardMargin + 160, cardLeftEdge - brainVisualHalfWidth * 0.9);
+    const targetCenter = Math.min(desiredCenter, maxCenterBeforeCard);
+    const dobra3BrainX = targetCenter - stageWidth / 2;
+
     trackMetricsRef.current = {
       top: rect.top + scrollTop,
-      height: rect.height || el.offsetHeight || 7920
+      height: rect.height || el.offsetHeight || 7920,
+      dobra3BrainX
     };
   }, []);
 
@@ -115,16 +129,11 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     // O CÉREBRO:
     // Dobra 1: 0px (centro exato)
     // Dobra 2: +285px (DIREITA)
-    // Dobra 3: -120px (ESQUERDA equilibrada próxima ao centro, sem afastar excessivamente do card)
-    const brainDesktopX = (285 * toDobra2) - (405 * toDobra3);
+    // Dobra 3: alinhado à mesma margem lateral esquerda que o card possui à direita (lg:right-16 / xl:right-24)
+    const dobra3BrainX = trackMetricsRef.current.dobra3BrainX;
+    const brainDesktopX = (285 * toDobra2) + ((dobra3BrainX - 285) * toDobra3);
     const brainInitialFade = 0.40 + 0.60 * toDobra2;
     const brainScale = (1.15 - 0.15 * toDobra2) * (1.0 - 0.04 * toDobra3);
-
-    // O GLOW AMBIENTE:
-    // Dobra 1: 50% (centro)
-    // Dobra 2: 68% (atrás do cérebro à direita)
-    // Dobra 3: 36% (atrás do cérebro à esquerda, harmonizado com o cérebro em -120px)
-    const glowLeftDesktop = 50 + 18 * toDobra2 - 32 * toDobra3;
 
     // A MENSAGEM DA DOBRA 2 ("Daqui a um mês..."):
     const heroFadeIn = smootherstep(0.12, 0.22, rawProgress);
@@ -206,8 +215,8 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     const ambientGlow = ambientGlowRef.current;
     if (ambientGlow) {
       const isDesktop = typeof window !== 'undefined' && window.innerWidth >= 1024;
-      const shiftVw = isDesktop ? (glowLeftDesktop - 50) : 0;
-      ambientGlow.style.transform = `translate3d(calc(-50% + ${shiftVw.toFixed(1)}vw), -50%, 0)`;
+      const shiftPx = isDesktop ? brainDesktopX : 0;
+      ambientGlow.style.transform = `translate3d(calc(-50% + ${shiftPx.toFixed(1)}px), -50%, 0)`;
       ambientGlow.style.opacity = ((isDark ? 0.45 : 0.28) * heroExitMultiplier).toFixed(3);
     }
 
@@ -269,7 +278,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
           ? `0 0 45px -8px ${accentConfig.primaryHex}44, 0 24px 50px rgba(0,0,0,0.85)`
           : `0 0 38px -10px ${accentConfig.primaryHex}35, 0 20px 45px rgba(15,23,42,0.14)`
       } as React.CSSProperties}
-      className="font-inter relative w-full bg-zinc-50 dark:bg-[var(--bg-page)] transition-colors duration-300"
+      className="font-inter relative w-full bg-transparent transition-colors duration-300"
     >
       <div ref={trackRef} className="relative h-[290svh] sm:h-[420svh] lg:h-[680svh] w-full">
         <div className="sticky top-16 h-[calc(100svh-4rem)] min-h-[420px] w-full overflow-hidden flex flex-col justify-between">
@@ -292,7 +301,10 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
           />
 
           {/* PALCO CENTRAL UNIFICADO */}
-          <div className="relative flex-1 w-full max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-center">
+          <div
+            ref={stageContainerRef}
+            className="relative flex-1 w-full max-w-7xl 2xl:max-w-[1400px] mx-auto px-4 sm:px-6 flex flex-col lg:flex-row items-center justify-center"
+          >
             {/* 0. PRIMEIRA DOBRA: Os 4 Pilares da Aprovação (Carrossel com cérebro centralizado ao fundo) */}
             <div
               ref={pillarsStageRef}

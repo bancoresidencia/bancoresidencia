@@ -10,6 +10,7 @@ import {
   X
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { getLandingHighlightTextStyle } from './landingThemeHelpers';
 import canonicalBrazilStatesSvgData from '@/data/canonicalBrazilStatesSvgData.json';
 import {
   STATE_INSTITUTIONS,
@@ -140,19 +141,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
   const isDark = mode === 'dark';
   const isMonochrome = accent === 'neutral';
 
-  const highlightTextStyle: React.CSSProperties = isMonochrome
-    ? {
-      backgroundImage:
-        mode === 'dark'
-          ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
-          : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
-    }
-    : {
-      backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex
-        } 26%, ${mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
-        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex
-        } 100%)`
-    };
+  const highlightTextStyle = getLandingHighlightTextStyle(accentConfig, mode, isMonochrome);
 
   // Padrão: Todas as UFs (ALL)
   const [selectedUf, setSelectedUf] = useState<string>('ALL');
@@ -365,7 +354,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
   return (
     <section
       id="onde-vem-as-provas"
-      className="relative scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200 overflow-hidden"
+      className="relative scroll-mt-16 pt-12 sm:pt-16 pb-12 sm:pb-16 bg-transparent text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200"
     >
       {/* Iluminação Ambiente Suave Atrás da Dobra (Zero Linhas / Divisórias) */}
       <div
@@ -554,7 +543,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                         )}
 
                         <div
-                          className={`w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-full bg-white dark:bg-[#18181f] p-1 shadow-[0_4px_16px_rgba(0,0,0,0.6)] border-2 transition-all duration-200 flex items-center justify-center overflow-hidden shrink-0 ${isHighlighted ? 'scale-125 ring-2 ring-white' : 'group-hover:scale-115'
+                          className={`w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-full bg-white p-1 shadow-[0_4px_16px_rgba(0,0,0,0.6)] border-2 transition-all duration-200 flex items-center justify-center overflow-hidden shrink-0 ${isHighlighted ? 'scale-125 ring-2 ring-white' : 'group-hover:scale-115'
                             }`}
                           style={{
                             borderColor: '#ffffff',
@@ -573,7 +562,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                               className="w-full h-full object-contain"
                             />
                           ) : (
-                            <span className="text-[9px] sm:text-[10px] font-black tracking-tight text-zinc-950 dark:text-white uppercase px-0.5 leading-none text-center">
+                            <span className="text-[9px] sm:text-[10px] font-black tracking-tight text-zinc-950 uppercase px-0.5 leading-none text-center">
                               {inst.sigla.split('/')[0].trim().slice(0, 6)}
                             </span>
                           )}
@@ -623,7 +612,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                     key={nac.id}
                     className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white dark:bg-[#18181f] border border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors shadow-2xs"
                   >
-                    <div className="w-10 h-10 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700/60 p-1 flex items-center justify-center shrink-0 overflow-hidden">
+                    <div className="w-10 h-10 rounded-lg bg-white border border-zinc-200/80 p-1 flex items-center justify-center shrink-0 overflow-hidden">
                       {nac.logoSlug ? (
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
@@ -636,7 +625,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                           className="w-full h-full object-contain"
                         />
                       ) : (
-                        <GraduationCap className="w-5 h-5 text-zinc-600 dark:text-zinc-300" />
+                        <GraduationCap className="w-5 h-5 text-zinc-700" />
                       )}
                     </div>
                     <div className="min-w-0 flex-1">
@@ -748,7 +737,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                           onClick={() => onSelectInstitution?.(inst as unknown as InstitutionInfo)}
                         >
                           <div className="flex items-center gap-3 w-full min-w-0">
-                            <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 flex items-center justify-center p-1 shrink-0 overflow-hidden shadow-2xs">
+                            <div className="w-10 h-10 rounded-xl bg-white border border-zinc-200/80 flex items-center justify-center p-1 shrink-0 overflow-hidden shadow-2xs">
                               {inst.logoSlug ? (
                                 // eslint-disable-next-line @next/next/no-img-element
                                 <img
@@ -761,7 +750,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                                   className="w-full h-full object-contain"
                                 />
                               ) : (
-                                <GraduationCap className="w-5 h-5 text-zinc-600 dark:text-zinc-300" />
+                                <GraduationCap className="w-5 h-5 text-zinc-700" />
                               )}
                             </div>
 

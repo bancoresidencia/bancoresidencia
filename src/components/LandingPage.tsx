@@ -15,7 +15,7 @@ const LandingInsidePlatformSection = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="min-h-[500px] flex items-center justify-center bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-500">
+      <div className="min-h-[500px] flex items-center justify-center bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] text-zinc-500">
         <div className="w-8 h-8 rounded-full border-2 border-zinc-400 border-t-transparent animate-spin" />
       </div>
     )
