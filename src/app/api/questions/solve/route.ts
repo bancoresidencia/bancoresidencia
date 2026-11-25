@@ -1,6 +1,5 @@
 import crypto from 'crypto';
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { isRateLimited } from '@/lib/rateLimiter';
 import {
@@ -11,9 +10,11 @@ import {
   safeErrorMessage
 } from '@/utils/security';
 import { deriveDomainSecret } from '@/utils/serverCrypto';
-import { injectZeroWidthWatermark } from '@/utils/watermark';
-import { sanitizeMedicalText, unpackStructuredCommentary } from '@/utils/textSanitizer';
-import { findCanonicalQuestionByIdOrCode } from '@/services/canonicalQuestionStore';
+import {
+  formatWatermarkedResolution,
+  getOrFetchCachedQuestion,
+  resolveAuthenticatedUser
+} from '@/lib/serverQuestionCache';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,8 +24,6 @@ const VALID_STUDENT_CHOICES = new Set(['A', 'B', 'C', 'D', 'E']);
 // Ver src/lib/rateLimiter.ts
 const RATE_LIMIT_WINDOW_S = 60;
 const MAX_REQUESTS_PER_WINDOW = 60;
-// Teto do cache em memória de questões (por instância — aceitável pois é cache, não estado crítico)
-const MAX_MAP_ENTRIES = 5000;
 
 function extractClientIp(req: NextRequest): string {
   return extractTrustedClientIp(req);
@@ -98,35 +97,19 @@ function createSignedGuestQuotaCookie(questionIds: Set<string>): string {
   return `${payloadB64}.${signature}`;
 }
 
-// Cota de Visitante Stateless com Cookie Assinado HMAC-SHA256 (validação constant-time)
-// O guestDailyQuotaMap in-memory foi removido — a cota primária é agora o cookie HMAC.
-// O rate limiter por IP usa Supabase via isRateLimited() para ser serverless-safe.
-
-interface CachedQuestionData {
-  id: string;
-  code: string;
-  correct_answer: string;
-  type: string;
-  is_anulada: boolean;
-  commentary: string;
-  options: unknown[];
-  especialidade?: string | null;
-  tema?: string | null;
-  foco?: string | null;
-  subfoco?: string | null;
-  difficulty?: string | null;
-  banca?: string | null;
-  year?: number | null;
-  cachedAt: number;
-}
-const questionCache = new Map<string, CachedQuestionData>();
-const CACHE_TTL_MS = 30 * 60 * 1000;
-
 export async function POST(req: NextRequest) {
   try {
     const clientIp = extractClientIp(req);
+    const supabaseAdmin = getSupabaseAdmin();
 
-    if (await isRateLimited('solve_ip', clientIp, MAX_REQUESTS_PER_WINDOW, RATE_LIMIT_WINDOW_S)) {
+    // Estágio 1 em paralelo: rate limit por IP, parse do payload e identificação do usuário
+    const [ipLimited, body, authenticatedUser] = await Promise.all([
+      isRateLimited('solve_ip', clientIp, MAX_REQUESTS_PER_WINDOW, RATE_LIMIT_WINDOW_S),
+      req.json().catch(() => null),
+      resolveAuthenticatedUser(req, supabaseAdmin)
+    ]);
+
+    if (ipLimited) {
       return NextResponse.json(
         {
           success: false,
@@ -139,11 +122,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const body = await req.json();
+    if (!body || typeof body !== 'object') {
+      return NextResponse.json({ success: false, error: 'Requisição inválida.' }, { status: 400 });
+    }
+
     const {
       questionId, selectedOption, isPrefetch = false, studentNotes, errorReason,
       attemptId, writtenAnswer, readResolution, reviewed
-    } = body;
+    } = body as Record<string, unknown>;
     const readOnly = readResolution === true;
     const written = typeof writtenAnswer === 'string' ? writtenAnswer.trim() : null;
     if ((writtenAnswer !== undefined && (!written || written.length > 12000))
@@ -153,7 +139,7 @@ export async function POST(req: NextRequest) {
     }
 
     // 1. Validação estrita do ID da questão
-    if (!questionId || !validateQuestionId(questionId)) {
+    if (typeof questionId !== 'string' || !questionId || !validateQuestionId(questionId)) {
       return NextResponse.json(
         { success: false, error: 'ID de questão inválido ou ausente.' },
         { status: 400 }
@@ -169,64 +155,45 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 3. Verificação de Identidade (Bearer Token ou Cookies SSR) ANTES de qualquer acesso a gabaritos
-    let authenticatedUser: { id: string } | null = null;
-    const supabaseAdmin = getSupabaseAdmin();
+    const now = Date.now();
 
-    const authHeader = req.headers.get('authorization');
-    if (authHeader && authHeader.startsWith('Bearer ')) {
-      const token = authHeader.substring(7).trim();
-      if (token.length > 20) {
-        const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
-        if (authUser) {
-          authenticatedUser = { id: authUser.id };
-        }
-      }
-    }
+    // Estágio 2 em paralelo: rate limit do usuário, verificação de plano e busca da questão (cache compartilhado)
+    const [userLimited, profileResult, row] = await Promise.all([
+      authenticatedUser
+        ? isRateLimited('solve_user', authenticatedUser.id, MAX_REQUESTS_PER_WINDOW, RATE_LIMIT_WINDOW_S)
+        : Promise.resolve(false),
+      authenticatedUser
+        ? supabaseAdmin
+            .from('profiles')
+            .select('role, subscription_plan, subscription_status, subscription_expires_at')
+            .eq('id', authenticatedUser.id)
+            .maybeSingle()
+        : Promise.resolve({ data: null }),
+      getOrFetchCachedQuestion(supabaseAdmin, questionId, now)
+    ]);
 
-    if (!authenticatedUser) {
-      try {
-        const supabaseServer = await createSupabaseServerClient();
-        const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
-        if (cookieUser) {
-          authenticatedUser = { id: cookieUser.id };
-        }
-      } catch {
-        // visitante não autenticado
-      }
-    }
-
-    if (authenticatedUser && await isRateLimited('solve_user', authenticatedUser.id, MAX_REQUESTS_PER_WINDOW, RATE_LIMIT_WINDOW_S)) {
+    if (userLimited) {
       return NextResponse.json(
         { success: false, error: 'Cadência de resolução acima do limite permitido. Aguarde alguns segundos.' },
         { status: 429, headers: { 'Retry-After': '15' } }
       );
     }
 
-    const now = Date.now();
-
-    // 4. Verificação de Plano e Elegibilidade (CRÍTICO: executado ANTES do fast-path isPrefetch!)
+    // Verificação de Plano e Elegibilidade (CRÍTICO: executado ANTES de qualquer entrega de gabarito!)
     let isUnlimitedPlan = false;
-    if (authenticatedUser) {
-      const { data: profile } = await supabaseAdmin
-        .from('profiles')
-        .select('role, subscription_plan, subscription_status, subscription_expires_at')
-        .eq('id', authenticatedUser.id)
-        .maybeSingle();
-
+    if (authenticatedUser && profileResult.data) {
+      const profile = profileResult.data;
       const isAdminOrCurator = isPrivilegedRole(profile?.role);
       const plan = (profile?.subscription_plan || 'free').toLowerCase();
       const status = profile?.subscription_status || 'inactive';
       const expiresAt = profile?.subscription_expires_at ? new Date(profile.subscription_expires_at).getTime() : null;
-      // Exige data de expiração válida no futuro para planos pagos (ou admin/curador isento)
       const isNotExpired = expiresAt !== null ? expiresAt > now : false;
       const isProOrPremium = Boolean((plan === 'pro' || plan === 'premium') && status === 'active' && isNotExpired);
 
       isUnlimitedPlan = isAdminOrCurator || isProOrPremium;
     }
 
-    // 4.1 Blindagem Anti-Scraping & Paywall: isPrefetch é exclusivo para assinantes Pro/Premium ativos!
-    // Visitantes e contas Gratuitas resolvem normalmente ao clicar em "Resolver" (com contabilização na cota diária).
+    // Blindagem Anti-Scraping & Paywall: isPrefetch é exclusivo para assinantes Pro/Premium ativos!
     if (isPrefetch && !isUnlimitedPlan) {
       return NextResponse.json(
         {
@@ -236,63 +203,6 @@ export async function POST(req: NextRequest) {
         },
         { status: 200 }
       );
-    }
-
-    // 5. Carrega questão (cache em memória com limite FIFO)
-    let row: CachedQuestionData | null = null;
-    const cached = questionCache.get(questionId);
-    if (cached && now - cached.cachedAt < CACHE_TTL_MS) {
-      row = cached;
-    } else {
-      const found = await findCanonicalQuestionByIdOrCode<{
-        id: string;
-        code?: string;
-        correct_answer?: string;
-        type?: string;
-        is_anulada?: boolean;
-        commentary?: string;
-        options?: unknown[];
-        especialidade?: string | null;
-        tema?: string | null;
-        foco?: string | null;
-        subfoco?: string | null;
-        difficulty?: string | null;
-        banca?: string | null;
-        year?: number | null;
-      }>(
-        supabaseAdmin,
-        questionId,
-        'id, code, correct_answer, type, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year'
-      );
-
-      if (found.row) {
-        if (questionCache.size >= MAX_MAP_ENTRIES) {
-          const oldestKey = questionCache.keys().next().value;
-          if (oldestKey) questionCache.delete(oldestKey);
-        }
-        const cacheEntry: CachedQuestionData = {
-          id: found.row.id,
-          code: found.row.code || '',
-          correct_answer: found.row.correct_answer || '',
-          type: found.row.type || '',
-          is_anulada: Boolean(found.row.is_anulada),
-          commentary: found.row.commentary || '',
-          options: Array.isArray(found.row.options) ? found.row.options : [],
-          especialidade: found.row.especialidade || null,
-          tema: found.row.tema || null,
-          foco: found.row.foco || null,
-          subfoco: found.row.subfoco || null,
-          difficulty: found.row.difficulty || null,
-          banca: found.row.banca || null,
-          year: found.row.year ? Number(found.row.year) : null,
-          cachedAt: now
-        };
-        questionCache.set(found.row.id, cacheEntry);
-        if (found.row.code) {
-          questionCache.set(found.row.code, cacheEntry);
-        }
-        row = cacheEntry;
-      }
     }
 
     if (!row) {
@@ -327,15 +237,11 @@ export async function POST(req: NextRequest) {
     const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
     const isCorrect = written === null && (isAnulada || (Boolean(goldAnswer) && studentChoice === goldAnswer));
 
-    // 6. Cota diária estrita de 10 questões/dia para visitantes
-    // Arquitetura Dual-Layer:
-    // - Camada 1: Cookie HMAC assinado (rápido, rastreia IDs já respondidos hoje)
-    // - Camada 2: Persistência server-side via Supabase RPC por IP (anti-scraping: impede evasão por omissão do cabeçalho Cookie)
+    // Cota diária estrita de 10 questões/dia para visitantes (Dual-Layer: Cookie HMAC + IP no Supabase)
     if (!authenticatedUser && !readOnly) {
       const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
       const hasSolvedInCookie = guestQuota.questionIds.has(row.id);
 
-      // Camada 1: Limite por cookie HMAC
       if (guestQuota.questionIds.size >= 10 && !hasSolvedInCookie) {
         return NextResponse.json(
           {
@@ -348,8 +254,6 @@ export async function POST(req: NextRequest) {
         );
       }
 
-      // Camada 2: Limite persistente no backend por IP diário (janela de 24h = 86400s)
-      // Se o usuário não tem essa questão no cookie, valida e incrementa a cota do IP no Supabase
       if (!hasSolvedInCookie) {
         const todayStr = new Date().toISOString().slice(0, 10);
         const ipHash = crypto.createHash('sha256').update(clientIp + todayStr).digest('hex').slice(0, 16);
@@ -374,28 +278,9 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 7. Fast-Path Instantâneo de Prefetch (exclusivo para assinantes Pro/Premium/Admin já validados acima)
+    // Fast-Path de Prefetch (exclusivo para assinantes Pro/Premium/Admin já validados acima)
     if (isPrefetch && authenticatedUser) {
-      const watermarkId = authenticatedUser.id;
-      const unpacked = unpackStructuredCommentary(row.commentary || '', Array.isArray(row.options) ? row.options : []);
-      const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(unpacked.commentary), watermarkId);
-      const rawOpts = unpacked.options;
-      const watermarkedOpts = rawOpts.map((opt: unknown) => {
-        if (opt && typeof opt === 'object' && ('justification' in opt || 'explanation' in opt)) {
-          const optObj = opt as { justification?: string; explanation?: string; [key: string]: unknown };
-          const wmJust = injectZeroWidthWatermark(
-            sanitizeMedicalText(optObj.justification || optObj.explanation || ''),
-            watermarkId
-          );
-          return {
-            ...optObj,
-            explanation: wmJust,
-            justification: wmJust
-          };
-        }
-        return opt;
-      });
-
+      const formatted = formatWatermarkedResolution(row.commentary || '', row.options, authenticatedUser.id);
       return NextResponse.json({
         success: true,
         isPrefetch: true,
@@ -403,8 +288,8 @@ export async function POST(req: NextRequest) {
         correctAnswer: row.correct_answer || (isAnulada ? 'ANULADA' : ''),
         isAnulada,
         isCorrect,
-        commentary: watermarkedCommentary,
-        options: watermarkedOpts
+        commentary: formatted.commentary,
+        options: formatted.options
       });
     }
 
@@ -413,7 +298,7 @@ export async function POST(req: NextRequest) {
       const { data: persisted, error } = await supabaseAdmin.rpc('persist_study_answer', {
         p_student_id: authenticatedUser.id,
         p_question_id: row.id,
-        p_attempt_id: attemptId ?? crypto.randomUUID(),
+        p_attempt_id: typeof attemptId === 'string' ? attemptId : crypto.randomUUID(),
         p_daily_limit: isUnlimitedPlan ? null : 10,
         p_answer: {
           selected_option: written === null ? studentChoice : null,
@@ -437,28 +322,10 @@ export async function POST(req: NextRequest) {
         }, { status: 403 });
       }
       serverNow = persisted.answered_at;
-    } else if (!readOnly) {
-      // Visitante: nada a registrar no servidor (cookie é atualizado na resposta abaixo)
     }
 
-    // 9. Resposta com marca d'água esteganográfica forense preservada
     const watermarkId = authenticatedUser?.id || clientIp;
-    const unpacked = unpackStructuredCommentary(row.commentary || '', Array.isArray(row.options) ? row.options : []);
-    const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(unpacked.commentary), watermarkId);
-    const rawOpts = unpacked.options;
-    const watermarkedOpts = rawOpts.map((opt: unknown) => {
-      if (opt && typeof opt === 'object' && ('justification' in opt || 'explanation' in opt)) {
-        const optObj = opt as { justification?: string; explanation?: string; [key: string]: unknown };
-        const cleanJustification = sanitizeMedicalText(optObj.justification || optObj.explanation || '');
-        const wmJust = injectZeroWidthWatermark(cleanJustification, watermarkId);
-        return {
-          ...optObj,
-          explanation: wmJust,
-          justification: wmJust
-        };
-      }
-      return opt;
-    });
+    const formatted = formatWatermarkedResolution(row.commentary || '', row.options, watermarkId);
 
     const responseObj = NextResponse.json({
       success: true,
@@ -470,8 +337,8 @@ export async function POST(req: NextRequest) {
       correctAnswer: goldAnswer,
       isAnulada,
       isCorrect,
-      commentary: watermarkedCommentary,
-      options: watermarkedOpts
+      commentary: formatted.commentary,
+      options: formatted.options
     });
 
     if (!authenticatedUser && row.id && !readOnly) {

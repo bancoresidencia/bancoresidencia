@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import {
   validateQuestionId,
@@ -8,9 +7,13 @@ import {
   safeErrorMessage
 } from '@/utils/security';
 import { verifySessionTicket } from '@/utils/securityTickets';
-import { injectZeroWidthWatermark } from '@/utils/watermark';
-import { sanitizeMedicalText, unpackStructuredCommentary } from '@/utils/textSanitizer';
 import { findCanonicalQuestionsByIdsOrCodes } from '@/services/canonicalQuestionStore';
+import {
+  CANONICAL_SOLVE_COLUMNS,
+  formatWatermarkedResolution,
+  resolveAuthenticatedUser,
+  setCachedQuestion
+} from '@/lib/serverQuestionCache';
 
 export const dynamic = 'force-dynamic';
 
@@ -68,7 +71,6 @@ function checkUserCadence(userId: string): boolean {
   return entry.batchCount <= 10;
 }
 
-
 export async function POST(req: NextRequest) {
   try {
     const clientIp = extractTrustedClientIpFromHeaders(req.headers);
@@ -86,9 +88,14 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const body = await req.json().catch(() => ({}));
-    const rawIds = body.questionIds;
-    const sessionTicket = body.sessionTicket;
+    const supabaseAdmin = getSupabaseAdmin();
+    const [body, authenticatedUser] = await Promise.all([
+      req.json().catch(() => ({})),
+      resolveAuthenticatedUser(req, supabaseAdmin)
+    ]);
+
+    const rawIds = (body as { questionIds?: unknown }).questionIds;
+    const sessionTicket = (body as { sessionTicket?: string | null }).sessionTicket;
 
     if (!Array.isArray(rawIds) || rawIds.length === 0) {
       return NextResponse.json({ success: true, resolutions: {}, count: 0 });
@@ -102,33 +109,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: true, resolutions: {}, count: 0 });
     }
 
-    // 1. Identificar usuário autenticado
-    let authenticatedUser: { id: string } | null = null;
-    const supabaseAdmin = getSupabaseAdmin();
-
-    const authHeader = req.headers.get('authorization');
-    if (authHeader && authHeader.startsWith('Bearer ')) {
-      const token = authHeader.substring(7).trim();
-      if (token.length > 20) {
-        const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
-        if (authUser) {
-          authenticatedUser = { id: authUser.id };
-        }
-      }
-    }
-
-    if (!authenticatedUser) {
-      try {
-        const supabaseServer = await createSupabaseServerClient();
-        const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
-        if (cookieUser) {
-          authenticatedUser = { id: cookieUser.id };
-        }
-      } catch {
-        // visitante não autenticado
-      }
-    }
-
     if (!authenticatedUser) {
       return NextResponse.json(
         {
@@ -140,7 +120,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 2. Blindagem de Paywall & Anti-Scraping: solve-batch é estritamente exclusivo para assinantes Pro/Premium ativos ou Admins
+    // Blindagem de Paywall & Anti-Scraping: solve-batch é estritamente exclusivo para assinantes Pro/Premium ativos ou Admins
     const now = Date.now();
     const { data: profile } = await supabaseAdmin
       .from('profiles')
@@ -164,7 +144,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 3. Validação do Ticket de Sessão Criptografado (Session Binding estrito ao userId autenticado)
+    // Validação do Ticket de Sessão Criptografado (Session Binding estrito ao userId autenticado)
     const ticketVerification = verifySessionTicket(sessionTicket, validIds, authenticatedUser.id);
     if (!ticketVerification.isValid) {
       return NextResponse.json(
@@ -176,7 +156,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 4. Telemetria de Cadência Humana
+    // Telemetria de Cadência Humana
     if (!checkUserCadence(authenticatedUser.id) || isBatchRateLimited(`user_${authenticatedUser.id}`)) {
       return NextResponse.json(
         {
@@ -194,15 +174,23 @@ export async function POST(req: NextRequest) {
       id: string;
       code?: string;
       correct_answer?: string;
+      type?: string;
       is_anulada?: boolean;
       commentary?: string;
       options?: unknown[];
+      especialidade?: string | null;
+      tema?: string | null;
+      foco?: string | null;
+      subfoco?: string | null;
+      difficulty?: string | null;
+      banca?: string | null;
+      year?: number | null;
     }
 
     const rows = await findCanonicalQuestionsByIdsOrCodes<QuestionBatchRow>(
       supabaseAdmin,
       validIds,
-      'id, code, correct_answer, is_anulada, commentary, options'
+      CANONICAL_SOLVE_COLUMNS
     );
 
     const resolutions: Record<
@@ -218,54 +206,32 @@ export async function POST(req: NextRequest) {
     > = {};
 
     const userIdForWatermark = authenticatedUser.id;
+    const validLetters = new Set(['A', 'B', 'C', 'D', 'E', 'ANULADA']);
 
     rows.forEach((row) => {
+      // Aquece o cache compartilhado para que /api/questions/solve não releia a questão do banco
+      setCachedQuestion(row, now);
+
       const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
       const rawAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
-      const validLetters = new Set(['A', 'B', 'C', 'D', 'E', 'ANULADA']);
       const correctAnswer = validLetters.has(rawAnswer)
         ? (rawAnswer as 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA')
         : (isAnulada ? 'ANULADA' : '');
 
-      const unpacked = unpackStructuredCommentary(row.commentary || '', Array.isArray(row.options) ? row.options : []);
-      const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(unpacked.commentary), userIdForWatermark);
-      const rawOptions = unpacked.options;
-      const watermarkedOptions = rawOptions.map((opt: unknown) => {
-        if (opt && typeof opt === 'object') {
-          const optObj = opt as {
-            text?: string;
-            explanation?: string;
-            justification?: string;
-            [key: string]: unknown;
-          };
-          const nextOpt: Record<string, unknown> = { ...optObj };
-          if (typeof optObj.text === 'string') {
-            nextOpt.text = sanitizeMedicalText(optObj.text);
-          }
-          if (typeof optObj.explanation === 'string' && optObj.explanation.trim()) {
-            nextOpt.explanation = injectZeroWidthWatermark(
-              sanitizeMedicalText(optObj.explanation),
-              userIdForWatermark
-            );
-          }
-          if (typeof optObj.justification === 'string' && optObj.justification.trim()) {
-            nextOpt.justification = injectZeroWidthWatermark(
-              sanitizeMedicalText(optObj.justification),
-              userIdForWatermark
-            );
-          }
-          return nextOpt;
-        }
-        return opt;
-      });
+      const formatted = formatWatermarkedResolution(
+        row.commentary || '',
+        Array.isArray(row.options) ? row.options : [],
+        userIdForWatermark,
+        true
+      );
 
       resolutions[row.id] = {
         questionId: row.id,
         code: row.code || '',
         correctAnswer,
         isAnulada,
-        commentary: watermarkedCommentary,
-        options: watermarkedOptions
+        commentary: formatted.commentary,
+        options: formatted.options
       };
     });
 
