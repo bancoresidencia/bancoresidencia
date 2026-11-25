@@ -52,7 +52,7 @@ export const LandingPricingSection: React.FC<LandingPricingSectionProps> = ({ on
   return (
     <section
       id="planos"
-      className="relative scroll-mt-20 pt-8 sm:pt-12 pb-14 sm:pb-20 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden"
+      className="relative scroll-mt-20 pt-8 sm:pt-12 pb-14 sm:pb-20 bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200 overflow-hidden"
     >
       {/* Iluminação Ambiente Atrás da Dobra (Zero Linhas / Divisórias) */}
       <div

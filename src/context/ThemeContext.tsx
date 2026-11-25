@@ -52,27 +52,27 @@ export interface AccentConfig {
 export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
   blue: {
     id: 'blue',
-    label: 'Azul Clássico',
-    primaryHex: '#2563eb',
-    hoverHex: '#1d4ed8',
+    label: 'Azul Imperial',
+    primaryHex: '#1d4ed8',
+    hoverHex: '#1e40af',
     primaryContrastHex: '#ffffff',
-    bgRgba: 'rgba(37, 99, 235, 0.15)',
-    borderRgba: 'rgba(37, 99, 235, 0.45)',
-    textClass: 'text-blue-500 dark:text-blue-400',
-    bgClass: 'bg-blue-600 hover:bg-blue-500 text-white',
-    ringClass: 'ring-blue-500/40 border-blue-500/50',
-    badgeBg: 'bg-blue-500/10',
-    badgeText: 'text-blue-600 dark:text-blue-400',
-    badgeBorder: 'border-blue-500/20',
-    cssVarValue: '#2563eb',
+    bgRgba: 'rgba(29, 78, 216, 0.10)',
+    borderRgba: 'rgba(29, 78, 216, 0.35)',
+    textClass: 'text-blue-700 dark:text-blue-400',
+    bgClass: 'bg-blue-700 hover:bg-blue-800 text-white',
+    ringClass: 'ring-blue-600/40 border-blue-600/50',
+    badgeBg: 'bg-blue-600/10',
+    badgeText: 'text-blue-700 dark:text-blue-400',
+    badgeBorder: 'border-blue-600/20',
+    cssVarValue: '#1d4ed8',
     surfaceDark: '#09090b',
     cardDark: '#121215',
     inputDark: '#18181b',
     borderDark: '#27272a',
-    surfaceLight: '#f8faff',
+    surfaceLight: '#f1f5f9',
     cardLight: '#ffffff',
-    inputLight: '#ffffff',
-    borderLight: '#e4e4e7',
+    inputLight: '#f8fafc',
+    borderLight: '#e2e8f0',
     timeAccent: {
       hex: '#0ea5e9',
       bgRgba: 'rgba(14, 165, 233, 0.14)',
@@ -92,35 +92,35 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
       textClass: 'text-amber-500 dark:text-amber-400'
     },
     selectionAccent: {
-      hex: '#2563eb',
-      borderHex: '#3b82f6',
-      bgRgba: 'rgba(37, 99, 235, 0.12)'
+      hex: '#1d4ed8',
+      borderHex: '#2563eb',
+      bgRgba: 'rgba(29, 78, 216, 0.12)'
     },
-    chartPalette: ['#2563eb', '#38bdf8', '#14b8a6', '#6366f1', '#f59e0b', '#ec4899']
+    chartPalette: ['#1d4ed8', '#2563eb', '#38bdf8', '#14b8a6', '#f59e0b', '#ec4899']
   },
   green: {
     id: 'green',
     label: 'Verde Esmeralda',
-    primaryHex: '#059669',
-    hoverHex: '#047857',
+    primaryHex: '#047857',
+    hoverHex: '#065f46',
     primaryContrastHex: '#ffffff',
-    bgRgba: 'rgba(5, 150, 105, 0.15)',
-    borderRgba: 'rgba(5, 150, 105, 0.45)',
-    textClass: 'text-emerald-600 dark:text-emerald-400',
-    bgClass: 'bg-emerald-600 hover:bg-emerald-500 text-white',
+    bgRgba: 'rgba(4, 120, 87, 0.10)',
+    borderRgba: 'rgba(4, 120, 87, 0.35)',
+    textClass: 'text-emerald-700 dark:text-emerald-400',
+    bgClass: 'bg-emerald-700 hover:bg-emerald-800 text-white',
     ringClass: 'ring-emerald-500/40 border-emerald-500/50',
     badgeBg: 'bg-emerald-500/10',
-    badgeText: 'text-emerald-600 dark:text-emerald-400',
+    badgeText: 'text-emerald-700 dark:text-emerald-400',
     badgeBorder: 'border-emerald-500/20',
-    cssVarValue: '#059669',
+    cssVarValue: '#047857',
     surfaceDark: '#09090b',
     cardDark: '#121215',
     inputDark: '#18181b',
     borderDark: '#27272a',
-    surfaceLight: '#f7fbf9',
+    surfaceLight: '#f2f7f4',
     cardLight: '#ffffff',
-    inputLight: '#ffffff',
-    borderLight: '#e4e4e7',
+    inputLight: '#f7fbf9',
+    borderLight: '#dfe8e3',
     timeAccent: {
       hex: '#2dd4bf',
       bgRgba: 'rgba(45, 212, 191, 0.14)',
@@ -140,35 +140,35 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
       textClass: 'text-amber-600 dark:text-amber-400'
     },
     selectionAccent: {
-      hex: '#059669',
-      borderHex: '#10b981',
-      bgRgba: 'rgba(5, 150, 105, 0.12)'
+      hex: '#047857',
+      borderHex: '#059669',
+      bgRgba: 'rgba(4, 120, 87, 0.12)'
     },
-    chartPalette: ['#059669', '#10b981', '#2dd4bf', '#84cc16', '#d97706', '#06b6d4']
+    chartPalette: ['#047857', '#059669', '#10b981', '#2dd4bf', '#84cc16', '#d97706']
   },
   orange: {
     id: 'orange',
-    label: 'Laranja Radiante',
-    primaryHex: '#ea580c',
-    hoverHex: '#c2410c',
+    label: 'Laranja Tangerina',
+    primaryHex: '#c2410c',
+    hoverHex: '#9a3412',
     primaryContrastHex: '#ffffff',
-    bgRgba: 'rgba(234, 88, 12, 0.15)',
-    borderRgba: 'rgba(234, 88, 12, 0.45)',
-    textClass: 'text-orange-600 dark:text-orange-400',
-    bgClass: 'bg-orange-600 hover:bg-orange-500 text-white',
+    bgRgba: 'rgba(194, 65, 12, 0.10)',
+    borderRgba: 'rgba(194, 65, 12, 0.35)',
+    textClass: 'text-orange-700 dark:text-orange-400',
+    bgClass: 'bg-orange-700 hover:bg-orange-800 text-white',
     ringClass: 'ring-orange-500/40 border-orange-500/50',
     badgeBg: 'bg-orange-500/10',
-    badgeText: 'text-orange-600 dark:text-orange-400',
+    badgeText: 'text-orange-700 dark:text-orange-400',
     badgeBorder: 'border-orange-500/20',
-    cssVarValue: '#ea580c',
+    cssVarValue: '#c2410c',
     surfaceDark: '#09090b',
     cardDark: '#121215',
     inputDark: '#18181b',
     borderDark: '#27272a',
-    surfaceLight: '#fffaf7',
+    surfaceLight: '#f9f4f0',
     cardLight: '#ffffff',
-    inputLight: '#ffffff',
-    borderLight: '#e4e4e7',
+    inputLight: '#fdf9f6',
+    borderLight: '#ebe2dc',
     timeAccent: {
       hex: '#fbbf24',
       bgRgba: 'rgba(251, 191, 36, 0.14)',
@@ -188,35 +188,35 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
       textClass: 'text-orange-500 dark:text-orange-400'
     },
     selectionAccent: {
-      hex: '#ea580c',
-      borderHex: '#f97316',
-      bgRgba: 'rgba(234, 88, 12, 0.12)'
+      hex: '#c2410c',
+      borderHex: '#ea580c',
+      bgRgba: 'rgba(194, 65, 12, 0.12)'
     },
-    chartPalette: ['#ea580c', '#f97316', '#fbbf24', '#10b981', '#78716c', '#38bdf8']
+    chartPalette: ['#c2410c', '#ea580c', '#f97316', '#fbbf24', '#10b981', '#78716c']
   },
   purple: {
     id: 'purple',
     label: 'Roxo Nobre',
-    primaryHex: '#7c3aed',
-    hoverHex: '#6d28d9',
+    primaryHex: '#6d28d9',
+    hoverHex: '#5b21b6',
     primaryContrastHex: '#ffffff',
-    bgRgba: 'rgba(124, 58, 237, 0.15)',
-    borderRgba: 'rgba(124, 58, 237, 0.45)',
-    textClass: 'text-purple-600 dark:text-purple-400',
-    bgClass: 'bg-purple-600 hover:bg-purple-500 text-white',
-    ringClass: 'ring-purple-500/40 border-purple-500/50',
-    badgeBg: 'bg-purple-500/10',
-    badgeText: 'text-purple-600 dark:text-purple-400',
-    badgeBorder: 'border-purple-500/20',
-    cssVarValue: '#7c3aed',
+    bgRgba: 'rgba(109, 40, 217, 0.10)',
+    borderRgba: 'rgba(109, 40, 217, 0.35)',
+    textClass: 'text-purple-700 dark:text-purple-400',
+    bgClass: 'bg-purple-700 hover:bg-purple-800 text-white',
+    ringClass: 'ring-purple-600/40 border-purple-600/50',
+    badgeBg: 'bg-purple-600/10',
+    badgeText: 'text-purple-700 dark:text-purple-400',
+    badgeBorder: 'border-purple-600/20',
+    cssVarValue: '#6d28d9',
     surfaceDark: '#09090b',
     cardDark: '#121215',
     inputDark: '#18181b',
     borderDark: '#27272a',
-    surfaceLight: '#fbf9ff',
+    surfaceLight: '#f5f3fa',
     cardLight: '#ffffff',
-    inputLight: '#ffffff',
-    borderLight: '#e4e4e7',
+    inputLight: '#faf8fd',
+    borderLight: '#e6e1f0',
     timeAccent: {
       hex: '#a78bfa',
       bgRgba: 'rgba(167, 139, 250, 0.14)',
@@ -236,11 +236,11 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
       textClass: 'text-orange-400 dark:text-orange-300'
     },
     selectionAccent: {
-      hex: '#7c3aed',
-      borderHex: '#8b5cf6',
-      bgRgba: 'rgba(124, 58, 237, 0.12)'
+      hex: '#6d28d9',
+      borderHex: '#7c3aed',
+      bgRgba: 'rgba(109, 40, 217, 0.12)'
     },
-    chartPalette: ['#7c3aed', '#a78bfa', '#2dd4bf', '#c084fc', '#fb923c', '#06b6d4']
+    chartPalette: ['#6d28d9', '#7c3aed', '#a78bfa', '#2dd4bf', '#c084fc', '#fb923c']
   },
   red: {
     id: 'red',
@@ -248,8 +248,8 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     primaryHex: '#b91c1c',
     hoverHex: '#991b1b',
     primaryContrastHex: '#ffffff',
-    bgRgba: 'rgba(185, 28, 28, 0.15)',
-    borderRgba: 'rgba(185, 28, 28, 0.45)',
+    bgRgba: 'rgba(185, 28, 28, 0.10)',
+    borderRgba: 'rgba(185, 28, 28, 0.35)',
     textClass: 'text-red-700 dark:text-red-400',
     bgClass: 'bg-red-700 hover:bg-red-800 text-white',
     ringClass: 'ring-red-600/40 border-red-600/50',
@@ -261,10 +261,10 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     cardDark: '#121215',
     inputDark: '#18181b',
     borderDark: '#27272a',
-    surfaceLight: '#fff9f9',
+    surfaceLight: '#faf2f2',
     cardLight: '#ffffff',
-    inputLight: '#ffffff',
-    borderLight: '#e4e4e7',
+    inputLight: '#fdf8f8',
+    borderLight: '#ecdede',
     timeAccent: {
       hex: '#94a3b8',
       bgRgba: 'rgba(148, 163, 184, 0.14)',
@@ -288,31 +288,31 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
       borderHex: '#dc2626',
       bgRgba: 'rgba(185, 28, 28, 0.12)'
     },
-    chartPalette: ['#991b1b', '#dc2626', '#f59e0b', '#7f1d1d', '#b91c1c', '#d97706']
+    chartPalette: ['#991b1c', '#b91c1c', '#dc2626', '#f59e0b', '#7f1d1d', '#d97706']
   },
   rose: {
     id: 'rose',
-    label: 'Rosa',
-    primaryHex: '#e11d48',
-    hoverHex: '#be123c',
+    label: 'Rosa Magenta',
+    primaryHex: '#be123c',
+    hoverHex: '#9f1239',
     primaryContrastHex: '#ffffff',
-    bgRgba: 'rgba(225, 29, 72, 0.14)',
-    borderRgba: 'rgba(225, 29, 72, 0.35)',
-    textClass: 'text-rose-500 dark:text-rose-400',
-    bgClass: 'bg-rose-600 hover:bg-rose-700 text-white',
-    ringClass: 'ring-rose-400/40 border-rose-400/50',
+    bgRgba: 'rgba(190, 18, 60, 0.10)',
+    borderRgba: 'rgba(190, 18, 60, 0.35)',
+    textClass: 'text-rose-700 dark:text-rose-400',
+    bgClass: 'bg-rose-700 hover:bg-rose-800 text-white',
+    ringClass: 'ring-rose-500/40 border-rose-500/50',
     badgeBg: 'bg-rose-500/10',
-    badgeText: 'text-rose-600 dark:text-rose-400',
-    badgeBorder: 'border-rose-400/25',
-    cssVarValue: '#e11d48',
+    badgeText: 'text-rose-700 dark:text-rose-400',
+    badgeBorder: 'border-rose-500/25',
+    cssVarValue: '#be123c',
     surfaceDark: '#09090b',
     cardDark: '#121215',
     inputDark: '#18181b',
     borderDark: '#27272a',
-    surfaceLight: '#fff8fa',
+    surfaceLight: '#faf2f5',
     cardLight: '#ffffff',
-    inputLight: '#ffffff',
-    borderLight: '#e4e4e7',
+    inputLight: '#fdf8fa',
+    borderLight: '#ecdfe4',
     timeAccent: {
       hex: '#c084fc',
       bgRgba: 'rgba(192, 132, 252, 0.12)',
@@ -332,11 +332,11 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
       textClass: 'text-orange-400 dark:text-orange-300'
     },
     selectionAccent: {
-      hex: '#e11d48',
-      borderHex: '#f43f5e',
-      bgRgba: 'rgba(225, 29, 72, 0.12)'
+      hex: '#be123c',
+      borderHex: '#e11d48',
+      bgRgba: 'rgba(190, 18, 60, 0.12)'
     },
-    chartPalette: ['#e11d48', '#f43f5e', '#c084fc', '#2dd4bf', '#fb923c', '#38bdf8']
+    chartPalette: ['#be123c', '#e11d48', '#f43f5e', '#c084fc', '#2dd4bf', '#fb923c']
   },
   neutral: {
     id: 'neutral',
@@ -344,10 +344,10 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     primaryHex: '#18181b',
     hoverHex: '#27272a',
     primaryContrastHex: '#ffffff',
-    bgRgba: 'rgba(24, 24, 27, 0.12)',
-    borderRgba: 'rgba(24, 24, 27, 0.35)',
+    bgRgba: 'rgba(24, 24, 27, 0.08)',
+    borderRgba: 'rgba(24, 24, 27, 0.30)',
     textClass: 'text-zinc-800 dark:text-zinc-200',
-    bgClass: 'bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-100 dark:hover:bg-zinc-200 dark:text-zinc-900',
+    bgClass: 'bg-zinc-900 hover:bg-zinc-800 text-white dark:bg-zinc-50 dark:hover:bg-zinc-200 dark:text-zinc-950',
     ringClass: 'ring-zinc-400/40 border-zinc-500/50',
     badgeBg: 'bg-zinc-500/10 dark:bg-zinc-400/15',
     badgeText: 'text-zinc-800 dark:text-zinc-200',
@@ -357,9 +357,9 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     cardDark: '#121215',
     inputDark: '#18181b',
     borderDark: '#27272a',
-    surfaceLight: '#fafafa',
+    surfaceLight: '#f4f4f5',
     cardLight: '#ffffff',
-    inputLight: '#ffffff',
+    inputLight: '#fafafa',
     borderLight: '#e4e4e7',
     timeAccent: {
       hex: '#a1a1aa',
@@ -404,48 +404,110 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+const DARK_ACCENT_OVERRIDES: Partial<
+  Record<AccentColor, Pick<AccentConfig, 'primaryHex' | 'hoverHex' | 'primaryContrastHex' | 'bgRgba' | 'borderRgba' | 'cssVarValue'>>
+> = {
+  blue: {
+    primaryHex: '#2563eb',
+    hoverHex: '#3b82f6',
+    primaryContrastHex: '#ffffff',
+    bgRgba: 'rgba(37, 99, 235, 0.15)',
+    borderRgba: 'rgba(37, 99, 235, 0.45)',
+    cssVarValue: '#2563eb'
+  },
+  green: {
+    primaryHex: '#059669',
+    hoverHex: '#10b981',
+    primaryContrastHex: '#ffffff',
+    bgRgba: 'rgba(5, 150, 105, 0.15)',
+    borderRgba: 'rgba(5, 150, 105, 0.45)',
+    cssVarValue: '#059669'
+  },
+  orange: {
+    primaryHex: '#ea580c',
+    hoverHex: '#f97316',
+    primaryContrastHex: '#ffffff',
+    bgRgba: 'rgba(234, 88, 12, 0.15)',
+    borderRgba: 'rgba(234, 88, 12, 0.45)',
+    cssVarValue: '#ea580c'
+  },
+  purple: {
+    primaryHex: '#7c3aed',
+    hoverHex: '#8b5cf6',
+    primaryContrastHex: '#ffffff',
+    bgRgba: 'rgba(124, 58, 237, 0.15)',
+    borderRgba: 'rgba(124, 58, 237, 0.45)',
+    cssVarValue: '#7c3aed'
+  },
+  red: {
+    primaryHex: '#dc2626',
+    hoverHex: '#ef4444',
+    primaryContrastHex: '#ffffff',
+    bgRgba: 'rgba(220, 38, 38, 0.15)',
+    borderRgba: 'rgba(220, 38, 38, 0.45)',
+    cssVarValue: '#dc2626'
+  },
+  rose: {
+    primaryHex: '#e11d48',
+    hoverHex: '#f43f5e',
+    primaryContrastHex: '#ffffff',
+    bgRgba: 'rgba(225, 29, 72, 0.15)',
+    borderRgba: 'rgba(225, 29, 72, 0.45)',
+    cssVarValue: '#e11d48'
+  }
+};
+
 export function getEffectiveAccentConfig(accent: AccentColor, mode: ThemeMode): AccentConfig {
   const base = ACCENT_CONFIGS[accent] || ACCENT_CONFIGS.blue;
-  if (accent === 'neutral' && mode === 'dark') {
-    return {
-      ...base,
-      primaryHex: '#ffffff',
-      hoverHex: '#f4f4f5',
-      primaryContrastHex: '#09090b',
-      bgRgba: 'rgba(255, 255, 255, 0.14)',
-      borderRgba: 'rgba(255, 255, 255, 0.35)',
-      textClass: 'text-white',
-      bgClass: 'bg-white hover:bg-zinc-100 text-zinc-950',
-      ringClass: 'ring-white/40 border-white/50',
-      badgeBg: 'bg-white/10',
-      badgeText: 'text-white',
-      badgeBorder: 'border-white/20',
-      cssVarValue: '#ffffff',
-      timeAccent: {
-        hex: '#e4e4e7',
-        bgRgba: 'rgba(255, 255, 255, 0.14)',
+  if (mode === 'dark') {
+    if (accent === 'neutral') {
+      return {
+        ...base,
+        primaryHex: '#fafafa',
+        hoverHex: '#e4e4e7',
+        primaryContrastHex: '#09090b',
+        bgRgba: 'rgba(255, 255, 255, 0.12)',
         borderRgba: 'rgba(255, 255, 255, 0.35)',
-        textClass: 'text-white'
-      },
-      accuracyAccent: {
-        hex: '#ffffff',
-        bgRgba: 'rgba(255, 255, 255, 0.14)',
-        borderRgba: 'rgba(255, 255, 255, 0.35)',
-        textClass: 'text-white'
-      },
-      energyAccent: {
-        hex: '#fef08a',
-        bgRgba: 'rgba(255, 255, 255, 0.14)',
-        borderRgba: 'rgba(255, 255, 255, 0.35)',
-        textClass: 'text-white'
-      },
-      selectionAccent: {
-        hex: '#ffffff',
-        borderHex: '#ffffff',
-        bgRgba: 'rgba(255, 255, 255, 0.15)'
-      },
-      chartPalette: ['#ffffff', '#f4f4f5', '#e4e4e7', '#d4d4d8', '#a1a1aa', '#71717a']
-    };
+        textClass: 'text-white',
+        bgClass: 'bg-zinc-50 hover:bg-zinc-200 text-zinc-950',
+        ringClass: 'ring-white/40 border-white/50',
+        badgeBg: 'bg-white/10',
+        badgeText: 'text-white',
+        badgeBorder: 'border-white/20',
+        cssVarValue: '#fafafa',
+        timeAccent: {
+          hex: '#e4e4e7',
+          bgRgba: 'rgba(255, 255, 255, 0.12)',
+          borderRgba: 'rgba(255, 255, 255, 0.35)',
+          textClass: 'text-white'
+        },
+        accuracyAccent: {
+          hex: '#ffffff',
+          bgRgba: 'rgba(255, 255, 255, 0.12)',
+          borderRgba: 'rgba(255, 255, 255, 0.35)',
+          textClass: 'text-white'
+        },
+        energyAccent: {
+          hex: '#fef08a',
+          bgRgba: 'rgba(255, 255, 255, 0.12)',
+          borderRgba: 'rgba(255, 255, 255, 0.35)',
+          textClass: 'text-white'
+        },
+        selectionAccent: {
+          hex: '#fafafa',
+          borderHex: '#ffffff',
+          bgRgba: 'rgba(255, 255, 255, 0.12)'
+        },
+        chartPalette: ['#fafafa', '#e4e4e7', '#d4d4d8', '#a1a1aa', '#71717a', '#52525b']
+      };
+    }
+    const darkOverride = DARK_ACCENT_OVERRIDES[accent];
+    if (darkOverride) {
+      return {
+        ...base,
+        ...darkOverride
+      };
+    }
   }
   return base;
 }
@@ -538,11 +600,16 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       root.style.setProperty('--accent-border', config.borderRgba);
       root.style.setProperty('--bg-page', pageBg);
       root.style.setProperty('--background', pageBg);
+      root.style.setProperty('--foreground', isDark ? '#f4f4f5' : '#09090b');
       root.style.setProperty('--bg-card', cardBg);
       root.style.setProperty('--card', cardBg);
+      root.style.setProperty('--card-foreground', isDark ? '#f4f4f5' : '#09090b');
+      root.style.setProperty('--muted', inputBg);
+      root.style.setProperty('--muted-foreground', isDark ? '#a1a1aa' : '#52525b');
       root.style.setProperty('--bg-input', inputBg);
       root.style.setProperty('--card-border', cardBorder);
       root.style.setProperty('--border-input', cardBorder);
+      root.style.setProperty('--ring', primaryHex);
       root.style.setProperty('--ring-focus', primaryHex);
 
       // Tokens Semânticos Harmônicos

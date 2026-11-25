@@ -71,7 +71,7 @@ export const LandingPage = memo(function LandingPage({ onOpenAuth }: LandingPage
 
   return (
     <div
-      className="font-inter min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-[var(--primary-contrast)] transition-colors duration-200 overflow-x-clip"
+      className="font-inter min-h-screen bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] flex flex-col selection:bg-[var(--primary-color)] selection:text-[var(--primary-contrast)] transition-colors duration-200 overflow-x-clip"
       style={{ fontFamily: 'var(--font-inter), "Inter", sans-serif' }}
     >
       {/* 1. Header Fixo com Navegação */}

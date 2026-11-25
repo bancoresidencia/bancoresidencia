@@ -1086,8 +1086,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   }, [addHighlight, isStrikethroughActive]);
 
   // Alterna o corte/risco de uma alternativa (eliminar distrator)
-  const toggleEliminateOption = (letter: string, e: React.MouseEvent) => {
-    e.stopPropagation();
+  const toggleEliminateByLetter = (letter: string) => {
     if (isAnswered) return;
     const willEliminate = !eliminatedOptions[letter];
     if (willEliminate && pendingSelected === letter) {
@@ -1097,6 +1096,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       ...prev,
       [letter]: willEliminate
     }));
+  };
+
+  const toggleEliminateOption = (letter: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    toggleEliminateByLetter(letter);
   };
 
   // Seleciona a alternativa ou expande justificativa pós-resolução
@@ -1501,6 +1505,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
         showPreviousAttempt={showPreviousDraft}
         onTogglePreviousAttempt={() => setShowPreviousDraft(prev => !prev)}
         choose={isAnswered || isWrittenQuestion ? undefined : letter => { const option = activeQuestion.options?.find(item => item.letter === letter); if (option) handleSelectOption(option.letter) }}
+        eliminate={isAnswered || isWrittenQuestion ? undefined : letter => { const option = activeQuestion.options?.find(item => item.letter === letter); if (option) toggleEliminateByLetter(option.letter) }}
       />
       {legacyPreview.length > 0 && <details><summary>Recuperar grifos antigos deste navegador ({legacyPreview.length})</summary>
         <ul>{legacyPreview.map(mark => <li key={mark.id}>{mark.text}</li>)}</ul>
@@ -1957,14 +1962,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           ? (isPending
                               ? (historicalAnswer && typeof historicalAnswer.isCorrect === 'boolean'
                                   ? (historicalAnswer.isCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white')
-                                  : 'bg-blue-600 text-white animate-pulse')
+                                  : 'bg-[var(--primary-color,#2563eb)] text-[var(--primary-contrast,#ffffff)] animate-pulse')
                               : 'bg-slate-100 dark:bg-slate-800 text-slate-400 border border-slate-200 dark:border-slate-700')
                           : isAnswered && isCorrect
                           ? 'bg-emerald-600 text-white'
                           : isAnswered && isPending && isAnuladaQuestion
                           ? 'bg-amber-600 text-white'
                           : isAnswered && isPending && !resolvedCorrectAnswer
-                          ? 'bg-blue-600 text-white shadow-sm'
+                          ? 'bg-[var(--primary-color,#2563eb)] text-[var(--primary-contrast,#ffffff)] shadow-sm'
                           : isAnswered && isPending && !isCorrect
                           ? 'bg-rose-600 text-white'
                           : isEliminated
@@ -2095,9 +2100,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           }}
                           className={`flex items-center gap-1 text-[11px] font-bold px-2 py-1 rounded-lg transition-colors cursor-pointer border ${
                             isExplanationExpanded
-                              ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
-                              : 'bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800/70 hover:bg-blue-100 dark:hover:bg-blue-900/60'
+                              ? 'text-[var(--primary-contrast,#ffffff)] border-transparent shadow-xs'
+                              : 'border-[var(--accent-border,rgba(37,99,235,0.35))] text-[var(--primary-color,#2563eb)] hover:bg-[var(--accent-subtle,rgba(37,99,235,0.1))]'
                           }`}
+                          style={isExplanationExpanded ? { backgroundColor: accentConfig.primaryHex } : { backgroundColor: accentConfig.bgRgba }}
                           title="Clique para ver ou ocultar a justificativa desta alternativa"
                         >
                           <span className="hidden sm:inline">{isExplanationExpanded ? 'Ocultar Justificativa' : 'Ver Justificativa'}</span>

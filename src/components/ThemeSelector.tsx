@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { Sun, Moon, Palette, Check, SlidersHorizontal, ChevronDown } from 'lucide-react';
-import { useTheme, AccentColor, ACCENT_CONFIGS } from '@/context/ThemeContext';
+import { useTheme, AccentColor, ACCENT_CONFIGS, getEffectiveAccentConfig } from '@/context/ThemeContext';
 
 export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false }) => {
   const { mode, accent, setMode, setAccent, isDashboardCustomizing, toggleDashboardCustomizing, canCustomizeLayout } = useTheme();
@@ -14,13 +14,13 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const accentList: { id: AccentColor; label: string; hex: string }[] = [
-    { id: 'blue', label: 'Azul', hex: ACCENT_CONFIGS.blue.primaryHex },
-    { id: 'green', label: 'Verde', hex: ACCENT_CONFIGS.green.primaryHex },
-    { id: 'orange', label: 'Laranja', hex: ACCENT_CONFIGS.orange.primaryHex },
-    { id: 'purple', label: 'Roxo', hex: ACCENT_CONFIGS.purple.primaryHex },
-    { id: 'red', label: 'Vermelho', hex: ACCENT_CONFIGS.red.primaryHex },
-    { id: 'rose', label: 'Rosa', hex: ACCENT_CONFIGS.rose.primaryHex },
-    { id: 'neutral', label: 'Monocromático', hex: mode === 'dark' ? '#ffffff' : ACCENT_CONFIGS.neutral.primaryHex },
+    { id: 'blue', label: 'Azul Imperial', hex: getEffectiveAccentConfig('blue', mode).primaryHex },
+    { id: 'green', label: 'Verde Esmeralda', hex: getEffectiveAccentConfig('green', mode).primaryHex },
+    { id: 'orange', label: 'Laranja Tangerina', hex: getEffectiveAccentConfig('orange', mode).primaryHex },
+    { id: 'purple', label: 'Roxo Nobre', hex: getEffectiveAccentConfig('purple', mode).primaryHex },
+    { id: 'red', label: 'Vermelho Carmesim', hex: getEffectiveAccentConfig('red', mode).primaryHex },
+    { id: 'rose', label: 'Rosa Magenta', hex: getEffectiveAccentConfig('rose', mode).primaryHex },
+    { id: 'neutral', label: 'Monocromático', hex: getEffectiveAccentConfig('neutral', mode).primaryHex },
   ];
 
   // Fechar dropdown ao clicar fora
@@ -103,7 +103,7 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
                       : 'text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200'
                     }`}
                 >
-                  <Moon className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
+                  <Moon className="w-4 h-4 text-zinc-600 dark:text-zinc-300" />
                 </button>
               </div>
             </div>
@@ -154,10 +154,10 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
                   title="Personalizar layout e posição dos cards estilo Figma"
                 >
                   <div className="flex items-center gap-2">
-                    <SlidersHorizontal className="w-3.5 h-3.5 text-[var(--primary-color,#2563eb)]" />
+                    <SlidersHorizontal className={`w-3.5 h-3.5 ${isDashboardCustomizing ? 'text-[var(--primary-contrast,#ffffff)]' : 'text-[var(--primary-color,#2563eb)]'}`} />
                     <span>Personalizar Layout</span>
                   </div>
-                  <span className={`text-[10px] px-2 py-0.5 rounded-md font-mono ${isDashboardCustomizing ? 'bg-white/20 text-white font-bold' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400'
+                  <span className={`text-[10px] px-2 py-0.5 rounded-md font-mono ${isDashboardCustomizing ? 'bg-black/15 dark:bg-black/20 text-[var(--primary-contrast,#ffffff)] font-bold' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400'
                     }`}>
                     {isDashboardCustomizing ? 'Ativo' : 'Editar'}
                   </span>
@@ -253,15 +253,15 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
             type="button"
             onClick={toggleDashboardCustomizing}
             className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${isDashboardCustomizing
-                ? 'bg-blue-600 text-white shadow-md'
-                : 'bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400'
+                ? 'bg-[var(--primary-color,#2563eb)] text-[var(--primary-contrast,#ffffff)] shadow-md'
+                : 'bg-[var(--bg-input,#f8fafc)] dark:bg-zinc-900 border border-[var(--card-border,#e2e8f0)] dark:border-zinc-800 text-zinc-700 dark:text-zinc-200 hover:text-[var(--primary-color,#2563eb)] hover:border-[var(--primary-color,#2563eb)]/50'
               }`}
           >
             <div className="flex items-center gap-2">
-              <SlidersHorizontal className="w-3.5 h-3.5 text-blue-500" />
+              <SlidersHorizontal className={`w-3.5 h-3.5 ${isDashboardCustomizing ? 'text-[var(--primary-contrast,#ffffff)]' : 'text-[var(--primary-color,#2563eb)]'}`} />
               <span>Personalizar Layout</span>
             </div>
-            <span className={`text-[10px] px-2 py-0.5 rounded-md font-mono ${isDashboardCustomizing ? 'bg-white/20 text-white font-bold' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400'
+            <span className={`text-[10px] px-2 py-0.5 rounded-md font-mono ${isDashboardCustomizing ? 'bg-black/15 dark:bg-black/20 text-[var(--primary-contrast,#ffffff)] font-bold' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400'
               }`}>
               {isDashboardCustomizing ? 'Ativo' : 'Editar'}
             </span>

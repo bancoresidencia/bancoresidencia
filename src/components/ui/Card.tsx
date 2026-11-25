@@ -17,7 +17,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
           variant === 'interactive' &&
             'hover:border-zinc-400 dark:hover:border-zinc-600 hover:shadow-sm cursor-pointer active:scale-[0.995]',
           variant === 'bordered' && 'border-2',
-          variant === 'flat' && 'border-transparent shadow-none bg-zinc-50 dark:bg-zinc-900/50',
+          variant === 'flat' && 'border-transparent shadow-none bg-[var(--muted,#f8fafc)] dark:bg-[var(--muted,#18181b)]',
           className
         )}
         {...props}

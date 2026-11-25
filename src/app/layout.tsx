@@ -118,53 +118,94 @@ export default async function RootLayout({
                   if (a === 'neutral') {
                     document.documentElement.classList.add('theme-monochrome');
                   }
-                  var colors = {
-                    blue: '#2563eb',
-                    green: '#059669',
-                    orange: '#ea580c',
-                    purple: '#7c3aed',
-                    red: '#dc2626',
-                    rose: '#e11d48',
-                    neutral: m === 'light' ? '#18181b' : '#ffffff'
-                  };
-                  var hovers = {
+                  var isDark = m !== 'light';
+                  var lightPrimary = {
                     blue: '#1d4ed8',
                     green: '#047857',
                     orange: '#c2410c',
                     purple: '#6d28d9',
                     red: '#b91c1c',
                     rose: '#be123c',
-                    neutral: m === 'light' ? '#27272a' : '#f4f4f5'
+                    neutral: '#18181b'
                   };
-                  var glows = {
+                  var darkPrimary = {
+                    blue: '#2563eb',
+                    green: '#059669',
+                    orange: '#ea580c',
+                    purple: '#7c3aed',
+                    red: '#dc2626',
+                    rose: '#e11d48',
+                    neutral: '#fafafa'
+                  };
+                  var lightHover = {
+                    blue: '#1e40af',
+                    green: '#065f46',
+                    orange: '#9a3412',
+                    purple: '#5b21b6',
+                    red: '#991b1b',
+                    rose: '#9f1239',
+                    neutral: '#27272a'
+                  };
+                  var darkHover = {
+                    blue: '#3b82f6',
+                    green: '#10b981',
+                    orange: '#f97316',
+                    purple: '#8b5cf6',
+                    red: '#ef4444',
+                    rose: '#f43f5e',
+                    neutral: '#e4e4e7'
+                  };
+                  var lightGlows = {
+                    blue: 'rgba(37, 99, 235, 0.10)',
+                    green: 'rgba(4, 120, 87, 0.10)',
+                    orange: 'rgba(194, 65, 12, 0.10)',
+                    purple: 'rgba(124, 58, 237, 0.10)',
+                    red: 'rgba(185, 28, 28, 0.10)',
+                    rose: 'rgba(225, 29, 72, 0.10)',
+                    neutral: 'rgba(24, 24, 27, 0.08)'
+                  };
+                  var darkGlows = {
                     blue: 'rgba(37, 99, 235, 0.15)',
                     green: 'rgba(5, 150, 105, 0.15)',
                     orange: 'rgba(234, 88, 12, 0.15)',
                     purple: 'rgba(124, 58, 237, 0.15)',
                     red: 'rgba(220, 38, 38, 0.15)',
-                    rose: 'rgba(225, 29, 72, 0.14)',
-                    neutral: m === 'light' ? 'rgba(24, 24, 27, 0.12)' : 'rgba(255, 255, 255, 0.14)'
+                    rose: 'rgba(225, 29, 72, 0.15)',
+                    neutral: 'rgba(255, 255, 255, 0.12)'
                   };
-                  var chosen = (a && colors[a]) ? colors[a] : '#2563eb';
-                  var chosenHover = (a && hovers[a]) ? hovers[a] : '#1d4ed8';
-                  var chosenGlow = (a && glows[a]) ? glows[a] : 'rgba(37, 99, 235, 0.15)';
-                  var contrast = (a === 'neutral' && m !== 'light') ? '#09090b' : '#ffffff';
-                  var isDark = m !== 'light';
-                  var surfaceDarks = { blue: '#090b10', green: '#080c0a', orange: '#0c0a08', purple: '#0b0910', red: '#0c0808', rose: '#0c080a', neutral: '#09090b' };
-                  var surfaceLights = { blue: '#f8faff', green: '#f7fbf9', orange: '#fffaf7', purple: '#fbf9ff', red: '#fff9f9', rose: '#fff8fa', neutral: '#fafafa' };
-                  var cardDarks = { blue: '#11141c', green: '#101512', orange: '#151210', purple: '#131119', red: '#151010', rose: '#151012', neutral: '#121215' };
-                  var pageBg = isDark ? (surfaceDarks[a] || '#090b10') : (surfaceLights[a] || '#f8faff');
-                  var cardBg = isDark ? (cardDarks[a] || '#11141c') : '#ffffff';
+                  var colors = isDark ? darkPrimary : lightPrimary;
+                  var hovers = isDark ? darkHover : lightHover;
+                  var glows = isDark ? darkGlows : lightGlows;
+                  var chosen = (a && colors[a]) ? colors[a] : colors.blue;
+                  var chosenHover = (a && hovers[a]) ? hovers[a] : hovers.blue;
+                  var chosenGlow = (a && glows[a]) ? glows[a] : glows.blue;
+                  var contrast = (a === 'neutral' && isDark) ? '#09090b' : '#ffffff';
+                  var surfaceLights = { blue: '#f1f5f9', green: '#f2f7f4', orange: '#f9f4f0', purple: '#f5f3fa', red: '#faf2f2', rose: '#faf2f5', neutral: '#f4f4f5' };
+                  var inputLights = { blue: '#f8fafc', green: '#f7fbf9', orange: '#fdf9f6', purple: '#faf8fd', red: '#fdf8f8', rose: '#fdf8fa', neutral: '#fafafa' };
+                  var borderLights = { blue: '#e2e8f0', green: '#dfe8e3', orange: '#ebe2dc', purple: '#e6e1f0', red: '#ecdede', rose: '#ecdfe4', neutral: '#e4e4e7' };
+                  var pageBg = isDark ? '#09090b' : (surfaceLights[a] || '#f1f5f9');
+                  var cardBg = isDark ? '#121215' : '#ffffff';
+                  var inputBg = isDark ? '#18181b' : (inputLights[a] || '#f8fafc');
+                  var borderCol = isDark ? '#27272a' : (borderLights[a] || '#e2e8f0');
 
+                  document.documentElement.style.setProperty('--background', pageBg);
                   document.documentElement.style.setProperty('--bg-page', pageBg);
+                  document.documentElement.style.setProperty('--card', cardBg);
                   document.documentElement.style.setProperty('--bg-card', cardBg);
+                  document.documentElement.style.setProperty('--muted', inputBg);
+                  document.documentElement.style.setProperty('--bg-input', inputBg);
+                  document.documentElement.style.setProperty('--card-border', borderCol);
+                  document.documentElement.style.setProperty('--border-input', borderCol);
                   document.documentElement.style.setProperty('--accent-primary', chosen);
                   document.documentElement.style.setProperty('--accent-hover', chosenHover);
                   document.documentElement.style.setProperty('--primary-color', chosen);
                   document.documentElement.style.setProperty('--primary-hover', chosenHover);
                   document.documentElement.style.setProperty('--primary-contrast', contrast);
+                  document.documentElement.style.setProperty('--ring', chosen);
+                  document.documentElement.style.setProperty('--ring-focus', chosen);
                   document.documentElement.style.setProperty('--glow-color', chosenGlow);
                   document.documentElement.style.setProperty('--accent-muted', chosenGlow);
+                  document.documentElement.style.setProperty('--accent-subtle', chosenGlow);
                   document.documentElement.style.setProperty('--logo-primary', chosen);
                   document.documentElement.style.setProperty('--logo-contrast', contrast);
 

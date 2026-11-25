@@ -27,11 +27,11 @@ const variantStyles: Record<ButtonVariant, string> = {
   primary:
     'bg-[var(--primary-color,#2563eb)] hover:bg-[var(--primary-hover,#1d4ed8)] text-[var(--primary-contrast,#ffffff)] shadow-xs active:scale-[0.98]',
   secondary:
-    'bg-zinc-100 dark:bg-zinc-800/80 hover:bg-zinc-200 dark:hover:bg-zinc-700/80 text-zinc-900 dark:text-zinc-100 border border-zinc-200/80 dark:border-zinc-700/60 active:scale-[0.98]',
+    'bg-[var(--muted,#f8fafc)] dark:bg-[var(--muted,#18181b)] hover:bg-zinc-200/80 dark:hover:bg-zinc-800 text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] border border-[var(--card-border,#e2e8f0)] dark:border-[var(--card-border,#27272a)] active:scale-[0.98]',
   outline:
-    'bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-800/60 text-zinc-800 dark:text-zinc-200 border border-zinc-300 dark:border-zinc-700/80 active:scale-[0.98]',
+    'bg-transparent hover:bg-[var(--muted,#f8fafc)] dark:hover:bg-[var(--muted,#18181b)] text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] border border-[var(--card-border,#e2e8f0)] dark:border-[var(--card-border,#27272a)] active:scale-[0.98]',
   ghost:
-    'bg-transparent hover:bg-zinc-100 dark:hover:bg-zinc-800/60 text-zinc-700 dark:text-zinc-300 active:scale-[0.98]',
+    'bg-transparent hover:bg-[var(--muted,#f8fafc)] dark:hover:bg-[var(--muted,#18181b)] text-[var(--muted-foreground,#52525b)] dark:text-[var(--muted-foreground,#a1a1aa)] hover:text-[var(--foreground,#09090b)] dark:hover:text-[var(--foreground,#f4f4f5)] active:scale-[0.98]',
   destructive:
     'bg-red-600 hover:bg-red-700 text-white shadow-xs active:scale-[0.98]',
   link:

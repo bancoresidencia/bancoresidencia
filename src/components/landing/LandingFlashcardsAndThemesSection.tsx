@@ -11,7 +11,7 @@ import {
   Palette,
   Check
 } from 'lucide-react';
-import { useTheme, ACCENT_CONFIGS, AccentColor } from '@/context/ThemeContext';
+import { useTheme, getEffectiveAccentConfig, AccentColor } from '@/context/ThemeContext';
 import { useScrollReveal } from './useScrollReveal';
 
 interface ClozeCardSample {
@@ -49,12 +49,12 @@ const CLOZE_SAMPLES: ClozeCardSample[] = [
 ];
 
 const THEME_SWATCHES: { id: AccentColor; shortName: string }[] = [
-  { id: 'blue', shortName: 'Azul' },
+  { id: 'blue', shortName: 'Azul Imperial' },
   { id: 'green', shortName: 'Esmeralda' },
-  { id: 'orange', shortName: 'Laranja' },
-  { id: 'purple', shortName: 'Roxo' },
+  { id: 'orange', shortName: 'Tangerina' },
+  { id: 'purple', shortName: 'Roxo Nobre' },
   { id: 'red', shortName: 'Carmesim' },
-  { id: 'rose', shortName: 'Rosa' },
+  { id: 'rose', shortName: 'Rosa Magenta' },
   { id: 'neutral', shortName: 'Monocromático' }
 ];
 
@@ -263,12 +263,9 @@ export const LandingFlashcardsAndThemesSection: React.FC = () => {
             <div className="flex flex-wrap items-center gap-2">
               {THEME_SWATCHES.map((item) => {
                 const isSelected = accent === item.id;
-                const swatchHex =
-                  item.id === 'neutral' && mode === 'dark'
-                    ? '#ffffff'
-                    : ACCENT_CONFIGS[item.id].primaryHex;
-                const checkColor =
-                  item.id === 'neutral' && mode === 'dark' ? '#09090b' : '#ffffff';
+                const effectiveItem = getEffectiveAccentConfig(item.id, mode);
+                const swatchHex = effectiveItem.primaryHex;
+                const checkColor = effectiveItem.primaryContrastHex;
 
                 return (
                   <button

@@ -239,8 +239,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
   const currentElims = eliminatedOptions[currentQId] || {};
 
   // Alterna eliminação/risco da alternativa
-  const toggleEliminate = (e: React.MouseEvent, letter: string) => {
-    e.stopPropagation();
+  const toggleEliminateByLetter = (letter: string) => {
     const willEliminate = !currentElims[letter];
     if (willEliminate && selectedOption === letter) {
       setSelectedOption(null);
@@ -255,6 +254,11 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
         }
       };
     });
+  };
+
+  const toggleEliminate = (e: React.MouseEvent, letter: string) => {
+    e.stopPropagation();
+    toggleEliminateByLetter(letter);
   };
 
   // Submissão da resposta da questão atual validada no servidor (/api/questions/solve)
@@ -662,7 +666,16 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
       {/* 2. Card Central da Questão */}
       <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-5 sm:p-7 rounded-3xl shadow-xs space-y-6 relative isolate overflow-hidden">
-        <StudyInkLayer content={`review:${sessionId}:${currentQId}`} />
+        <StudyInkLayer
+          content={`review:${sessionId}:${currentQId}`}
+          choose={isAnswered ? undefined : (letter) => {
+            if (['A', 'B', 'C', 'D', 'E'].includes(letter)) {
+              if (currentElims[letter]) toggleEliminateByLetter(letter);
+              setSelectedOption(letter as 'A' | 'B' | 'C' | 'D' | 'E');
+            }
+          }}
+          eliminate={isAnswered ? undefined : (letter) => toggleEliminateByLetter(letter)}
+        />
         {/* Metadados e Tags Clínicas */}
         <div className="flex flex-wrap items-center justify-between gap-3 text-xs border-b border-slate-100 dark:border-zinc-800/80 pb-4">
           <div className="flex flex-wrap items-center gap-2">
@@ -892,6 +905,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
             return (
               <div
                 key={option.letter}
+                data-ink-option-row={option.letter}
                 onClick={() => {
                   if (!isAnswered) {
                     if (currentElims[option.letter]) {
@@ -913,6 +927,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                 <div className="flex items-start gap-3 flex-1">
                   {/* Badge da Letra */}
                   <span
+                    data-ink-option={option.letter}
                     className={`w-7 h-7 rounded-xl font-mono font-bold flex items-center justify-center shrink-0 text-xs transition-colors ${
                       !isAnswered
                         ? isChosen
@@ -932,7 +947,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
                   {/* Texto da Alternativa */}
                   <div className="space-y-1 flex-1 leading-relaxed pt-0.5">
-                    <span className={isEliminated && !isAnswered ? 'line-through' : ''}>
+                    <span data-ink-block={option.letter} className={isEliminated && !isAnswered ? 'line-through' : ''}>
                       {renderFormattedMedicalText(option.text)}
                     </span>
 

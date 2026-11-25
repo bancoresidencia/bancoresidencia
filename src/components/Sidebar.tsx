@@ -117,7 +117,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             ? 'w-full flex flex-col select-none'
             : `${
                 isCollapsed ? 'w-16' : 'w-60 shadow-2xl'
-              } bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#09090b)] border-r border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] flex flex-col shrink-0 h-screen max-h-screen fixed inset-y-0 left-0 z-40 hidden md:flex transition-[width,box-shadow] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] select-none overflow-hidden`
+              } bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border-r border-[var(--card-border,#e2e8f0)] dark:border-[var(--card-border,#27272a)] flex flex-col shrink-0 h-screen max-h-screen fixed inset-y-0 left-0 z-40 hidden md:flex transition-[width,box-shadow] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] select-none overflow-hidden`
         }
         aria-label="Navegação Principal"
       >

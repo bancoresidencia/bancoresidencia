@@ -57,7 +57,7 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
           ========================================================================= */}
       <section
         id="faq"
-        className="relative scroll-mt-20 pt-10 sm:pt-14 pb-14 sm:pb-20 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200 overflow-hidden"
+        className="relative scroll-mt-20 pt-10 sm:pt-14 pb-14 sm:pb-20 bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200 overflow-hidden"
       >
         {/* Iluminação Ambiente Suave Atrás da Dobra (Zero Linhas / Divisórias) */}
         <div
@@ -133,7 +133,7 @@ export const LandingFaqAndFooter: React.FC<LandingFaqAndFooterProps> = ({
           ========================================================================= */}
       <section
         id="suporte"
-        className="scroll-mt-20 py-16 sm:py-22 bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 transition-colors duration-200"
+        className="scroll-mt-20 py-16 sm:py-22 bg-[var(--bg-page,#f1f5f9)] dark:bg-[var(--bg-page,#09090b)] text-[var(--foreground,#09090b)] dark:text-[var(--foreground,#f4f4f5)] transition-colors duration-200"
       >
         <div
           ref={supportRef}

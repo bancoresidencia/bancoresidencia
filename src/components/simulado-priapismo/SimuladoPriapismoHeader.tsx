@@ -12,7 +12,7 @@ import {
   QrCode,
   Palette
 } from 'lucide-react';
-import { useTheme, AccentColor, ACCENT_CONFIGS } from '@/context/ThemeContext';
+import { useTheme, AccentColor, ACCENT_CONFIGS, getEffectiveAccentConfig } from '@/context/ThemeContext';
 import { Logo } from '@/components/Logo';
 
 export type FontSize = 'xs' | 'sm' | 'base' | 'lg' | 'xl';
@@ -219,7 +219,7 @@ export const SimuladoPriapismoHeader: React.FC<SimuladoPriapismoHeaderProps> = (
             {showAccentPicker && (
               <div className="absolute right-0 top-10 sm:top-11 p-2 rounded-xl bg-white dark:bg-[#111622] border border-slate-200 dark:border-white/15 shadow-2xl flex items-center gap-1.5 z-50 animate-in fade-in zoom-in-95 duration-150">
                 {accents.map((acc) => {
-                  const cfg = ACCENT_CONFIGS[acc];
+                  const cfg = getEffectiveAccentConfig(acc, mode);
                   return (
                     <button
                       key={acc}

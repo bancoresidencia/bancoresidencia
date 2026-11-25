@@ -765,6 +765,7 @@ function QuestionCardItem({
       <StudyInkLayer
         content={`exam:${attemptId}:${question.id}`}
         choose={closed ? undefined : (letter) => onAnswer(letter)}
+        eliminate={closed ? undefined : (letter) => onToggleStrikethrough(letter)}
       />
 
       {/* Topo do Card da Questão */}
@@ -816,7 +817,7 @@ function QuestionCardItem({
             <div key={option.letter} className="relative group">
               <button
                 type="button"
-                data-ink-block={option.letter}
+                data-ink-option-row={option.letter}
                 disabled={closed}
                 onClick={() => {
                   if (isStrikethroughActive) {
@@ -858,7 +859,7 @@ function QuestionCardItem({
                 </span>
 
                 {/* Texto da Alternativa com Formatação Médica */}
-                <span className={`text-slate-700 dark:text-slate-300 pt-0.5 leading-relaxed ${statementFontClass} flex-1`}>
+                <span data-ink-block={option.letter} className={`text-slate-700 dark:text-slate-300 pt-0.5 leading-relaxed ${statementFontClass} flex-1`}>
                   {renderFormattedMedicalText(option.text)}
                 </span>
 

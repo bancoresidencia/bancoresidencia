@@ -45,7 +45,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-white/85 dark:bg-[var(--bg-page)]/85 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-colors duration-200">
+    <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-[var(--bg-card,#ffffff)]/85 dark:bg-[var(--bg-card,#121215)]/85 border-b border-[var(--card-border,#e2e8f0)] dark:border-[var(--card-border,#27272a)]/80 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
         {/* Marca Oficial Hippocampus */}
         <button

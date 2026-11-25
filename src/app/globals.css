@@ -151,10 +151,10 @@ div:has(> #next-logo) {
   transition-delay: 260ms;
 }
 
-/* Adaptação Completa da Dobra 'Dentro da Plataforma' ao Modo Claro */
+/* Adaptação Completa da Dobra 'Dentro da Plataforma' aos Tokens 60-30-10 (Claro & Escuro Neutro) */
 html:not(.dark) #dentro-da-plataforma {
-  background-color: #fafafa !important;
-  color: #18181b !important;
+  background-color: var(--bg-page, #f1f5f9) !important;
+  color: var(--foreground, #09090b) !important;
 }
 
 html:not(.dark) #dentro-da-plataforma h2,
@@ -170,8 +170,8 @@ html:not(.dark) #dentro-da-plataforma .text-zinc-300 {
 html:not(.dark) #dentro-da-plataforma [class*="bg-[#10121a]"],
 html:not(.dark) #dentro-da-plataforma [class*="bg-[#12131a]"],
 html:not(.dark) #dentro-da-plataforma [class*="bg-[#12141c]"] {
-  background-color: #ffffff !important;
-  border-color: #e4e4e7 !important;
+  background-color: var(--bg-card, #ffffff) !important;
+  border-color: var(--card-border, #e2e8f0) !important;
   color: #09090b !important;
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.03) !important;
 }
@@ -181,23 +181,42 @@ html:not(.dark) #dentro-da-plataforma [class*="bg-[#161824]"],
 html:not(.dark) #dentro-da-plataforma [class*="bg-[#181a24]"],
 html:not(.dark) #dentro-da-plataforma [class*="bg-[#161822]"],
 html:not(.dark) #dentro-da-plataforma [class*="bg-[#141622]"] {
-  background-color: #f4f4f5 !important;
-  border-color: #e4e4e7 !important;
+  background-color: var(--muted, #f8fafc) !important;
+  border-color: var(--card-border, #e2e8f0) !important;
   color: #27272a !important;
 }
 
 html:not(.dark) #dentro-da-plataforma [class*="hover:bg-[#1a1d2c]"]:hover,
 html:not(.dark) #dentro-da-plataforma [class*="hover:bg-[#202332]"]:hover {
-  background-color: #e4e4e7 !important;
+  background-color: var(--card-border, #e2e8f0) !important;
   color: #09090b !important;
 }
 
 html:not(.dark) #dentro-da-plataforma [class*="border-zinc-800"] {
-  border-color: #e4e4e7 !important;
+  border-color: var(--card-border, #e2e8f0) !important;
 }
 
 html:not(.dark) #dentro-da-plataforma [class*="border-zinc-700"] {
-  border-color: #d4d4d8 !important;
+  border-color: var(--card-border, #cbd5e1) !important;
+}
+
+html.dark #dentro-da-plataforma [class*="bg-[#10121a]"],
+html.dark #dentro-da-plataforma [class*="bg-[#12131a]"],
+html.dark #dentro-da-plataforma [class*="bg-[#12141c]"] {
+  background-color: var(--bg-card, #121215) !important;
+}
+
+html.dark #dentro-da-plataforma [class*="bg-[#141620]"],
+html.dark #dentro-da-plataforma [class*="bg-[#161824]"],
+html.dark #dentro-da-plataforma [class*="bg-[#181a24]"],
+html.dark #dentro-da-plataforma [class*="bg-[#161822]"],
+html.dark #dentro-da-plataforma [class*="bg-[#141622]"] {
+  background-color: var(--muted, #18181b) !important;
+}
+
+html.dark #dentro-da-plataforma [class*="hover:bg-[#1a1d2c]"]:hover,
+html.dark #dentro-da-plataforma [class*="hover:bg-[#202332]"]:hover {
+  background-color: #27272a !important;
 }
 
 /* Transições de Entrada, Cascata e Pulsos — Mapa do Brasil e Conectores de Dobras */
@@ -421,24 +440,24 @@ html.dark .hippo-glass-subcard {
   --sab: env(safe-area-inset-bottom, 0px);
   --sal: env(safe-area-inset-left, 0px);
   --sar: env(safe-area-inset-right, 0px);
-  --background: #fafafa;
-  --foreground: #18181b;
+  --background: #f1f5f9;
+  --foreground: #09090b;
   --card: #ffffff;
-  --card-foreground: #18181b;
-  --card-border: #e4e4e7;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --accent-muted: rgba(37, 99, 235, 0.08);
-  --accent-subtle: rgba(37, 99, 235, 0.08);
+  --card-foreground: #09090b;
+  --card-border: #e2e8f0;
+  --muted: #f8fafc;
+  --muted-foreground: #52525b;
+  --accent-muted: rgba(37, 99, 235, 0.10);
+  --accent-subtle: rgba(37, 99, 235, 0.10);
   --accent-border: rgba(37, 99, 235, 0.35);
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
   --primary-contrast: #ffffff;
   --ring: #2563eb;
-  --bg-page: #fafafa;
+  --bg-page: #f1f5f9;
   --bg-card: #ffffff;
-  --bg-input: #ffffff;
-  --border-input: #e4e4e7;
+  --bg-input: #f8fafc;
+  --border-input: #e2e8f0;
   --ring-focus: var(--primary-color);
   --time-accent-color: #0ea5e9;
   --time-accent-bg: rgba(14, 165, 233, 0.14);
@@ -512,70 +531,80 @@ html.dark {
 
 /* Modo Monocromático Estrito (Preto e Branco Puro) */
 html.theme-monochrome.dark {
-  --primary-color: #ffffff;
-  --primary-hover: #f4f4f5;
+  --primary-color: #fafafa;
+  --primary-hover: #e4e4e7;
   --primary-contrast: #09090b;
-  --ring: #ffffff;
-  --ring-focus: #ffffff;
-  --glow-color: rgba(255, 255, 255, 0.14);
+  --ring: #fafafa;
+  --ring-focus: #fafafa;
+  --glow-color: rgba(255, 255, 255, 0.12);
   --accent-muted: rgba(255, 255, 255, 0.12);
-  --accent-subtle: rgba(255, 255, 255, 0.10);
+  --accent-subtle: rgba(255, 255, 255, 0.12);
   --accent-border: rgba(255, 255, 255, 0.35);
-  --accent-primary: #ffffff;
-  --accent-hover: #f4f4f5;
+  --accent-primary: #fafafa;
+  --accent-hover: #e4e4e7;
 }
 
 html.theme-monochrome:not(.dark) {
   --primary-color: #18181b;
-  --primary-hover: #09090b;
+  --primary-hover: #27272a;
   --primary-contrast: #ffffff;
   --ring: #18181b;
   --ring-focus: #18181b;
-  --glow-color: rgba(0, 0, 0, 0.08);
-  --accent-muted: rgba(0, 0, 0, 0.04);
-  --accent-subtle: rgba(0, 0, 0, 0.04);
-  --accent-border: rgba(24, 24, 27, 0.25);
+  --glow-color: rgba(24, 24, 27, 0.08);
+  --accent-muted: rgba(24, 24, 27, 0.08);
+  --accent-subtle: rgba(24, 24, 27, 0.08);
+  --accent-border: rgba(24, 24, 27, 0.30);
   --accent-primary: #18181b;
-  --accent-hover: #09090b;
+  --accent-hover: #27272a;
 }
 
-/* No modo monocromático escuro, botões primários com fundo branco garantem alto contraste nos textos e ícones */
+/* No modo monocromático escuro, botões primários com fundo claro garantem alto contraste nos textos e ícones */
 html.theme-monochrome.dark button[style*="background-color: rgb(255, 255, 255)"],
+html.theme-monochrome.dark button[style*="background-color: rgb(250, 250, 250)"],
 html.theme-monochrome.dark button[style*="background-color: #ffffff"],
-html.theme-monochrome.dark button[style*="background-color:#ffffff"],
+html.theme-monochrome.dark button[style*="background-color: #fafafa"],
 html.theme-monochrome.dark button[style*="background: rgb(255, 255, 255)"],
+html.theme-monochrome.dark button[style*="background: rgb(250, 250, 250)"],
 html.theme-monochrome.dark button[style*="background: #ffffff"],
-html.theme-monochrome.dark button[style*="background:#ffffff"],
+html.theme-monochrome.dark button[style*="background: #fafafa"],
 html.theme-monochrome.dark a[style*="background-color: rgb(255, 255, 255)"],
+html.theme-monochrome.dark a[style*="background-color: rgb(250, 250, 250)"],
 html.theme-monochrome.dark a[style*="background-color: #ffffff"],
-html.theme-monochrome.dark a[style*="background-color:#ffffff"],
+html.theme-monochrome.dark a[style*="background-color: #fafafa"],
 html.theme-monochrome.dark a[style*="background: rgb(255, 255, 255)"],
+html.theme-monochrome.dark a[style*="background: rgb(250, 250, 250)"],
 html.theme-monochrome.dark a[style*="background: #ffffff"],
-html.theme-monochrome.dark a[style*="background:#ffffff"] {
+html.theme-monochrome.dark a[style*="background: #fafafa"] {
   color: #09090b !important;
 }
 
 html.theme-monochrome.dark button[style*="background-color: rgb(255, 255, 255)"] *,
+html.theme-monochrome.dark button[style*="background-color: rgb(250, 250, 250)"] *,
 html.theme-monochrome.dark button[style*="background-color: #ffffff"] *,
-html.theme-monochrome.dark button[style*="background-color:#ffffff"] *,
+html.theme-monochrome.dark button[style*="background-color: #fafafa"] *,
 html.theme-monochrome.dark button[style*="background: rgb(255, 255, 255)"] *,
+html.theme-monochrome.dark button[style*="background: rgb(250, 250, 250)"] *,
 html.theme-monochrome.dark button[style*="background: #ffffff"] *,
-html.theme-monochrome.dark button[style*="background:#ffffff"] *,
+html.theme-monochrome.dark button[style*="background: #fafafa"] *,
 html.theme-monochrome.dark a[style*="background-color: rgb(255, 255, 255)"] *,
+html.theme-monochrome.dark a[style*="background-color: rgb(250, 250, 250)"] *,
 html.theme-monochrome.dark a[style*="background-color: #ffffff"] *,
-html.theme-monochrome.dark a[style*="background-color:#ffffff"] *,
+html.theme-monochrome.dark a[style*="background-color: #fafafa"] *,
 html.theme-monochrome.dark a[style*="background: rgb(255, 255, 255)"] *,
+html.theme-monochrome.dark a[style*="background: rgb(250, 250, 250)"] *,
 html.theme-monochrome.dark a[style*="background: #ffffff"] *,
-html.theme-monochrome.dark a[style*="background:#ffffff"] * {
+html.theme-monochrome.dark a[style*="background: #fafafa"] * {
   color: #09090b !important;
 }
 
 html.theme-monochrome.dark button[style*="background-color: rgb(255, 255, 255)"] svg[class*="fill-"],
+html.theme-monochrome.dark button[style*="background-color: rgb(250, 250, 250)"] svg[class*="fill-"],
 html.theme-monochrome.dark button[style*="background-color: #ffffff"] svg[class*="fill-"],
-html.theme-monochrome.dark button[style*="background-color:#ffffff"] svg[class*="fill-"],
+html.theme-monochrome.dark button[style*="background-color: #fafafa"] svg[class*="fill-"],
 html.theme-monochrome.dark a[style*="background-color: rgb(255, 255, 255)"] svg[class*="fill-"],
+html.theme-monochrome.dark a[style*="background-color: rgb(250, 250, 250)"] svg[class*="fill-"],
 html.theme-monochrome.dark a[style*="background-color: #ffffff"] svg[class*="fill-"],
-html.theme-monochrome.dark a[style*="background-color:#ffffff"] svg[class*="fill-"] {
+html.theme-monochrome.dark a[style*="background-color: #fafafa"] svg[class*="fill-"] {
   fill: #09090b !important;
 }
 

@@ -7075,7 +7075,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         handleConnectGoogleCalendar(googleCalendarAccount, googleRoutinePreset);
                       }
                     }}
-                    className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+                    className="flex-1 py-2.5 rounded-xl bg-[var(--primary-color,#2563eb)] hover:bg-[var(--primary-hover,#1d4ed8)] disabled:opacity-50 text-[var(--primary-contrast,#ffffff)] text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
                   >
                     <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
                     <span>{isSyncingCalendar ? 'Sincronizando...' : 'Atualizar Sincronização'}</span>
@@ -7100,7 +7100,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         handleConnectGoogleCalendar(googleCalendarAccount, googleRoutinePreset);
                       }
                     }}
-                    className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+                    className="flex-1 py-2.5 rounded-xl bg-[var(--primary-color,#2563eb)] hover:bg-[var(--primary-hover,#1d4ed8)] disabled:opacity-50 text-[var(--primary-contrast,#ffffff)] text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
                   >
                     {isSyncingCalendar ? (
                       <RefreshCw className="w-3.5 h-3.5 animate-spin" />
@@ -7234,7 +7234,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <div className="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-xs">
+                <div className="w-10 h-10 rounded-2xl bg-[var(--accent-subtle,rgba(37,99,235,0.10))] border border-[var(--accent-border,rgba(37,99,235,0.35))] flex items-center justify-center text-[var(--primary-color,#2563eb)] shadow-xs">
                   <Plus className="w-5 h-5" />
                 </div>
                 <div>
@@ -7265,7 +7265,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   value={manualSlotTitle}
                   onChange={(e) => setManualSlotTitle(e.target.value)}
                   placeholder="Ex: Treino de Pediatria ou Revisão de Trauma"
-                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 font-medium"
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-[var(--bg-input,#f8fafc)] dark:bg-zinc-800 border border-[var(--card-border,#e2e8f0)] dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color,#2563eb)] font-medium"
                 />
               </div>
 
@@ -7288,8 +7288,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         type="button"
                         onClick={() => setManualSlotCategory(cat.id as any)}
                         className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center gap-1 border ${isSelected
-                          ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
-                          : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
+                          ? 'bg-[var(--primary-color,#2563eb)] text-[var(--primary-contrast,#ffffff)] border-[var(--primary-color,#2563eb)] shadow-xs'
+                          : 'bg-[var(--bg-input,#f8fafc)] dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-[var(--card-border,#e2e8f0)] dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
                           }`}
                       >
                         <CatIcon className="w-4 h-4" />
@@ -7334,7 +7334,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   value={manualSlotNotes}
                   onChange={(e) => setManualSlotNotes(e.target.value)}
                   placeholder="Ex: Resolver 25 questões comentadas da banca"
-                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-[var(--bg-input,#f8fafc)] dark:bg-zinc-800 border border-[var(--card-border,#e2e8f0)] dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color,#2563eb)]"
                 />
               </div>
             </div>
@@ -7351,7 +7351,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 type="button"
                 onClick={handleCreateManualSlot}
                 disabled={!manualSlotTitle.trim()}
-                className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+                className="flex-1 py-2.5 rounded-xl bg-[var(--primary-color,#2563eb)] hover:bg-[var(--primary-hover,#1d4ed8)] disabled:opacity-50 text-[var(--primary-contrast,#ffffff)] text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
               >
                 <Plus className="w-3.5 h-3.5" />
                 <span>Salvar Bloco</span>
