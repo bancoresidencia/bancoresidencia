@@ -75,6 +75,7 @@ import { computeAdaptiveDistribution, getBaselinePlatformScores } from '@/utils/
 import { useTheme } from '@/context/ThemeContext';
 import { Button, Badge, ProgressBar } from '@/components/ui';
 import { useAuth } from '@/context/AuthContext';
+import { createClient } from '@/lib/supabase/client';
 import { DEFAULT_GOOGLE_CALENDAR_CLIENT_ID, PUBLIC_GOOGLE_CALENDAR_CLIENT_ID } from '@/config/googleCalendar';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { getAccountTargetExam } from '@/utils/userTargetExam';
@@ -365,20 +366,49 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const todayAnswered = todayHistory?.answered || 0;
   const goalPercentage = Math.min(100, Math.round((todayAnswered / (dailyGoal || 1)) * 100));
 
-  // Meta Diária de Tempo de Estudo personalizada (em minutos) com restauração síncrona
-  const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const savedTime = localStorage.getItem('bancoresidencia_daily_time_goal');
-        if (savedTime) return Number(savedTime);
-      } catch { }
-    }
-    return 120;
-  });
-
   const { user, isAdmin } = useAuth();
   const { plan, openUpgradeModal } = useSubscription();
   const [showDevBar, setShowDevBar] = useState(false);
+
+  const dailyTimeGoalStorageKey = React.useMemo(
+    () => (user?.id ? `bancoresidencia_daily_time_goal_${user.id}` : 'bancoresidencia_daily_time_goal_guest'),
+    [user?.id]
+  );
+
+  // Meta Diária de Tempo de Estudo personalizada (em minutos) isolada por conta + sincronizada com Supabase
+  const [dailyTimeGoal, setDailyTimeGoal] = useState<number>(120);
+  const dailyTimeGoalDebounceRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const scopedVal = localStorage.getItem(dailyTimeGoalStorageKey);
+      if (scopedVal && !Number.isNaN(Number(scopedVal)) && Number(scopedVal) > 0) {
+        setDailyTimeGoal(Number(scopedVal));
+      } else {
+        const legacyVal = localStorage.getItem('bancoresidencia_daily_time_goal');
+        if (legacyVal && !Number.isNaN(Number(legacyVal)) && Number(legacyVal) > 0) {
+          setDailyTimeGoal(Number(legacyVal));
+          localStorage.setItem(dailyTimeGoalStorageKey, legacyVal);
+          localStorage.removeItem('bancoresidencia_daily_time_goal');
+        } else {
+          setDailyTimeGoal(120);
+        }
+      }
+    } catch { }
+
+    const handlePrefsSynced = (e: Event) => {
+      const detail = (e as CustomEvent).detail;
+      if (detail && typeof detail.dailyTimeGoal === 'number' && detail.dailyTimeGoal > 0) {
+        setDailyTimeGoal(detail.dailyTimeGoal);
+        try {
+          localStorage.setItem(dailyTimeGoalStorageKey, String(detail.dailyTimeGoal));
+        } catch { }
+      }
+    };
+    window.addEventListener('bancoresidencia_preferences_synced', handlePrefsSynced);
+    return () => window.removeEventListener('bancoresidencia_preferences_synced', handlePrefsSynced);
+  }, [dailyTimeGoalStorageKey]);
 
   // Prova alvo e contagem regressiva
   const examInfo = React.useMemo(() => getAccountTargetExam(user), [user]);
@@ -482,8 +512,40 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     onUpdateDailyGoal(q);
     setDailyTimeGoal(t);
     if (typeof window !== 'undefined') {
-      localStorage.setItem('bancoresidencia_custom_daily_goal', String(q));
-      localStorage.setItem('bancoresidencia_daily_time_goal', String(t));
+      try {
+        localStorage.setItem(dailyTimeGoalStorageKey, String(t));
+        localStorage.removeItem('bancoresidencia_daily_time_goal');
+        localStorage.removeItem('bancoresidencia_custom_daily_goal');
+      } catch { }
+    }
+    if (user?.id && user.id !== 'demo-student') {
+      if (dailyTimeGoalDebounceRef.current) clearTimeout(dailyTimeGoalDebounceRef.current);
+      dailyTimeGoalDebounceRef.current = setTimeout(async () => {
+        try {
+          const supabase = createClient();
+          const { data: { session } } = await supabase.auth.getSession();
+          if (session?.user?.id === user.id) {
+            const { data: profile } = await supabase
+              .from('profiles')
+              .select('preferences')
+              .eq('id', user.id)
+              .maybeSingle();
+            const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
+            await supabase
+              .from('profiles')
+              .update({
+                preferences: {
+                  ...currentPrefs,
+                  dailyTimeGoal: t,
+                  updatedAt: new Date().toISOString()
+                }
+              })
+              .eq('id', user.id);
+          }
+        } catch (err) {
+          console.warn('[StudentHomeDashboard] Erro ao sincronizar dailyTimeGoal no Supabase:', err);
+        }
+      }, 500);
     }
     setIsEditingGoals(false);
   };
@@ -3146,30 +3208,40 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
                   </div>
 
-                  {/* VISÃO EXPANDIDA ADAPTATIVA: Calendário Oficial de Provas & Ofensiva Semanal */}
-                  {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 140 : false) && (
-                    <div className="pt-2.5 border-t border-zinc-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs animate-in fade-in duration-200">
-                      <div className="flex items-center gap-2">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Prazos Oficiais:</span>
-                        <div className="flex items-center gap-1.5 flex-wrap">
-                          <span className="px-2 py-0.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
-                            <strong>UNICAMP:</strong> 18 dias
-                          </span>
-                          <span className="px-2 py-0.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
-                            <strong>USP-SP:</strong> 32 dias
-                          </span>
-                          <span className="px-2 py-0.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
-                            <strong>ENARE:</strong> 45 dias
+                  {/* VISÃO EXPANDIDA ADAPTATIVA: Prova Foco & Ritmo Semanal Real */}
+                  {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 140 : false) && (() => {
+                    const last7Keys = new Set<string>();
+                    for (let i = 0; i < 7; i++) {
+                      const d = new Date();
+                      d.setDate(d.getDate() - i);
+                      last7Keys.add(getLocalDateStr(d));
+                    }
+                    const weeklyAnswered = (stats.historyByDay || [])
+                      .filter((h) => last7Keys.has(h.date))
+                      .reduce((acc, h) => acc + (h.answered || 0), 0);
+                    const weeklyTarget = Math.max(7, (dailyGoal || 30) * 7);
+                    const weeklyPct = Math.min(100, Math.round((weeklyAnswered / weeklyTarget) * 100));
+
+                    return (
+                      <div className="pt-2.5 border-t border-zinc-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs animate-in fade-in duration-200">
+                        <div className="flex items-center gap-2">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400">Prova Alvo:</span>
+                          <div className="flex items-center gap-1.5 flex-wrap">
+                            <span className="px-2 py-0.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[11px] font-medium text-zinc-700 dark:text-zinc-300">
+                              <strong>{targetExamName}:</strong> {targetDaysLeft === 1 ? '1 dia' : `${targetDaysLeft} dias`}
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="text-[11px] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
+                          <Sparkles className="w-3 h-3 text-amber-500" />
+                          <span>
+                            Ritmo Semanal: <strong>{weeklyAnswered} / {weeklyTarget} Questões</strong> ({weeklyPct}% concluído)
                           </span>
                         </div>
                       </div>
-
-                      <div className="text-[11px] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
-                        <Sparkles className="w-3 h-3 text-amber-500" />
-                        <span>Ritmo Semanal: <strong>180 Questões / sem</strong> (88% concluído)</span>
-                      </div>
-                    </div>
-                  )}
+                    );
+                  })()}
                 </section>
               </FigmaCardWrapper>
             );

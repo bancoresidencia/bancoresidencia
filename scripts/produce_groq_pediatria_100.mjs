@@ -42,7 +42,7 @@ let pediatriaJson = [];
 if (fs.existsSync(JSON_PATH)) {
   try {
     pediatriaJson = JSON.parse(fs.readFileSync(JSON_PATH, 'utf8'));
-  } catch {}
+  } catch { }
 }
 
 // 5. Seleciona exatamente 100 questões pendentes de Pediatria
@@ -98,7 +98,7 @@ function updateState(currentQ = null) {
 
   try {
     fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 2), 'utf8');
-  } catch {}
+  } catch { }
 }
 
 function sanitizePostgres(str) {
@@ -198,9 +198,9 @@ ${q.statement}
 Alternativas:
 ${formattedOptions}
 
-${isAnulada 
-  ? '🔒 ATENÇÃO: QUESTÃO OFICIALMENTE ANULADA PELA BANCA. Justifique tecnicamente o motivo da anulação e as falhas nas assertivas.'
-  : `🔒 GABARITO OFICIAL IMUTÁVEL (ÂNCORA DE OURO): ALTERNATIVA ${goldAnswer}.
+${isAnulada
+      ? '🔒 ATENÇÃO: QUESTÃO OFICIALMENTE ANULADA PELA BANCA. Justifique tecnicamente o motivo da anulação e as falhas nas assertivas.'
+      : `🔒 GABARITO OFICIAL IMUTÁVEL (ÂNCORA DE OURO): ALTERNATIVA ${goldAnswer}.
 Fundamente tecnicamente por que a alternativa ${goldAnswer} é a correta e aponte o erro dos demais distratores. Proibido divergir do gabarito oficial.`}
 
 REGRAS OBRIGATÓRIAS:
@@ -234,7 +234,8 @@ RESPONDA EXCLUSIVAMENTE EM JSON VÁLIDO no seguinte formato:
       explanation: sanitizePostgres(parsed.options?.[opt.letter] || '')
     }));
 
-    const plainId = q.id.replace(/^(questions_|questions_expansion_direto_|expansion_direto_)/, '');
+    const uuidMatch = q.id.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);
+    const plainId = uuidMatch ? uuidMatch[0] : q.id.replace(/^(questions_expansion_direto_|expansion_direto_|questions_)/, '');
 
     // 1. Atualiza Supabase questions_direto
     const { error: errDireto } = await supabase
@@ -253,8 +254,8 @@ RESPONDA EXCLUSIVAMENTE EM JSON VÁLIDO no seguinte formato:
         options: cleanedOptions
       })
       .eq('id', plainId)
-      .then(() => {})
-      .catch(() => {});
+      .then(() => { })
+      .catch(() => { });
 
     // 3. Atualiza SQLite local SSOT
     db.prepare(`
@@ -280,7 +281,7 @@ RESPONDA EXCLUSIVAMENTE EM JSON VÁLIDO no seguinte formato:
     if (processedCount % 20 === 0 && pediatriaJson.length > 0) {
       try {
         fs.writeFileSync(JSON_PATH, JSON.stringify(pediatriaJson, null, 2), 'utf8');
-      } catch {}
+      } catch { }
     }
 
     updateState();
@@ -310,7 +311,7 @@ async function main() {
   if (pediatriaJson.length > 0) {
     try {
       fs.writeFileSync(JSON_PATH, JSON.stringify(pediatriaJson, null, 2), 'utf8');
-    } catch {}
+    } catch { }
   }
 
   updateState();

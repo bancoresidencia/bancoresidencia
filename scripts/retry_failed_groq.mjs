@@ -28,7 +28,7 @@ async function solveOne(code, mIdx = 0) {
   if (!q) return;
 
   let options = [];
-  try { options = JSON.parse(q.options); } catch {}
+  try { options = JSON.parse(q.options); } catch { }
   if (!Array.isArray(options)) options = [];
 
   const goldAnswer = (q.correct_answer || '').toUpperCase().trim();
@@ -107,10 +107,11 @@ RESPONDA EXCLUSIVAMENTE EM JSON VÁLIDO:
     explanation: sanitizePostgres(parsed.options?.[opt.letter] || '')
   }));
 
-  const plainId = q.id.replace(/^(questions_|questions_expansion_direto_|expansion_direto_)/, '');
+  const uuidMatch = q.id.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);
+  const plainId = uuidMatch ? uuidMatch[0] : q.id.replace(/^(questions_expansion_direto_|expansion_direto_|questions_)/, '');
 
   await supabase.from('questions_direto').update({ commentary: fullCommentary, options: cleanedOptions }).eq('id', plainId);
-  await supabase.from('questions').update({ commentary: fullCommentary, options: cleanedOptions }).eq('id', plainId).then(()=>{}).catch(()=>{});
+  await supabase.from('questions').update({ commentary: fullCommentary, options: cleanedOptions }).eq('id', plainId).then(() => { }).catch(() => { });
   db.prepare('UPDATE questions_curated_staging SET commentary = ?, options = ? WHERE id = ?').run(fullCommentary, JSON.stringify(cleanedOptions), q.id);
 
   console.log(`✅ [RETRY OK] ${code} | 🤖 ${model} | Supabase OK`);

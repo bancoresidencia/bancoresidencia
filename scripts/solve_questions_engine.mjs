@@ -414,7 +414,7 @@ ${optionsSchemaExample}
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${activeModel}:generateContent?key=${activeKey}`;
 
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 45000);
+    const timeoutId = setTimeout(() => controller.abort(), 12000);
 
     try {
       const res = await fetch(url, {
@@ -482,7 +482,8 @@ ${optionsSchemaExample}
         parsed = JSON.parse(clean);
       } catch {
         try {
-          const sanitized = clean
+          let sanitized = clean
+            .replace(/:\s*(\*\*[^\n\r,]+?\*\*)(\s*[,}\]])/g, ': "$1"$2')
             .replace(/:\s*(\*\*[^\n\r"]+?)(\s*,?\s*)$/gm, ': "$1"$2')
             .replace(/,\s*([}\]])/g, '$1')
             .replace(/[\u0000-\u001F\u007F-\u009F]/g, ' ');

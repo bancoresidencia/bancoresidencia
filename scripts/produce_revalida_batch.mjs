@@ -29,13 +29,18 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 // 2. Conecta ao SQLite SSOT
 const SQLITE_PATH = 'data/supabase_tables/supabase_tables.db';
 const db = new DatabaseSync(SQLITE_PATH);
+db.exec('PRAGMA journal_mode = WAL;');
+db.exec('PRAGMA busy_timeout = 10000;');
+db.exec('PRAGMA synchronous = NORMAL;');
 
 // 3. Parâmetros de Execução
 const argWorkers = process.argv.find(a => a.startsWith('--workers='));
 const CONCURRENCY = argWorkers ? parseInt(argWorkers.split('=')[1], 10) : 4;
 
 const STATE_PATH = 'data/pipeline_revalida_state.json';
+const STATE_GLOBAL_PATH = 'data/pipeline_progress_state.json';
 const SIGNAL_PATH = 'data/pipeline.signal';
+const recentHistory = [];
 
 // 4. Seleciona todas as questões pendentes do Revalida com gabarito homologado e texto puro
 const pendingQuestions = db.prepare(`
@@ -79,24 +84,39 @@ function updateState(currentQ = null, overrideStatus = null) {
 
   const state = {
     status,
+    specialty: 'Revalida (Todas as Especialidades)',
     modalidade: 'Revalida',
-    target: TARGET_TOTAL,
-    processed: processedCount,
-    success: successCount,
-    errors: errorCount,
+    concurrency: CONCURRENCY,
+    totalToProcess: TARGET_TOTAL,
+    processedCount,
+    successCount,
+    errorCount,
     progressPercent: TARGET_TOTAL > 0 ? parseFloat(((processedCount / TARGET_TOTAL) * 100).toFixed(2)) : 100,
     velocity: {
-      qpm,
-      elapsedSec,
-      etaMinutes: etaMinutes > 60 ? `${Math.floor(etaMinutes / 60)}h ${etaMinutes % 60}m` : `${etaMinutes}m`
+      questionsPerMinute: qpm,
+      elapsedSeconds: elapsedSec,
+      estimatedSecondsRemaining: etaMinutes * 60,
+      etaFormatted: etaMinutes > 60 ? `${Math.floor(etaMinutes / 60)}h ${etaMinutes % 60}m` : `${etaMinutes}m`
+    },
+    tokens: {
+      totalTokens: 0,
+      promptTokens: 0,
+      candidateTokens: 0,
+      pricing: {
+        totalCostUSD: 0,
+        totalCostBRL: 0,
+        tier: 'Gratuito (9 Chaves Google Gemini)'
+      }
     },
     currentQuestion: currentQ,
+    recentHistory: recentHistory.slice(-15).reverse(),
     updatedAt: new Date().toISOString()
   };
 
   try {
     fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 2), 'utf8');
-  } catch {}
+    fs.writeFileSync(STATE_GLOBAL_PATH, JSON.stringify(state, null, 2), 'utf8');
+  } catch { }
 }
 
 function sanitizePostgres(str) {
@@ -165,20 +185,37 @@ async function processQuestion(q) {
       .from('questions_expansion_revalida')
       .update({ commentary: cleanCommentary, options: cleanedOptions })
       .eq('id', plainUuid)
-      .then(() => {})
-      .catch(() => {});
+      .then(() => { })
+      .catch(() => { });
 
-    // 3. Atualiza SQLite local SSOT
-    db.prepare(`
-      UPDATE questions_curated_staging
-      SET commentary = ?, options = ?
-      WHERE id = ?
-    `).run(cleanCommentary, JSON.stringify(cleanedOptions), q.id);
+    // 3. Atualiza SQLite local SSOT com retentativa defensiva
+    let dbUpdated = false;
+    for (let retry = 0; retry < 5 && !dbUpdated; retry++) {
+      try {
+        db.prepare(`
+          UPDATE questions_curated_staging
+          SET commentary = ?, options = ?
+          WHERE id = ?
+        `).run(cleanCommentary, JSON.stringify(cleanedOptions), q.id);
+        dbUpdated = true;
+      } catch (e) {
+        await new Promise(r => setTimeout(r, 200 * (retry + 1)));
+      }
+    }
 
     processedCount++;
     successCount++;
     const duration = ((Date.now() - startQ) / 1000).toFixed(2);
     console.log(`[${processedCount}/${TARGET_TOTAL}] ${q.code || plainUuid} (${q.especialidade}) | ⚡ ${duration}s | ${errRev ? '❌ ' + errRev.message : '✅ Supabase OK'}`);
+
+    recentHistory.push({
+      code: q.code || plainUuid,
+      tema: `${q.especialidade} - ${q.tema || 'Geral'}`,
+      duration,
+      tokens: 1600,
+      status: errRev ? 'ERRO_SUPABASE' : 'OK',
+      timestamp: new Date().toLocaleTimeString('pt-BR')
+    });
 
     updateState();
   } catch (err) {

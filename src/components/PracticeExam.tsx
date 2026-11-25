@@ -9,6 +9,8 @@ import { StudyInkLayer } from './StudyInkLayer'
 import { HippocampusLoading } from '@/components/HippocampusLoading'
 import { useAuth } from '@/context/AuthContext'
 import { useTheme } from '@/context/ThemeContext'
+import { useStudentData } from '@/context/StudentDataContext'
+import { useStudyTimer } from '@/context/StudyTimerContext'
 import type { Question } from '@/types'
 import {
   Clock,
@@ -27,7 +29,10 @@ import {
   Check
 } from 'lucide-react'
 
-type ExamQuestion = Pick<Question, 'id' | 'statement' | 'images' | 'imageUrl' | 'type' | 'correctAnswer'> & {
+type ExamQuestion = Pick<
+  Question,
+  'id' | 'statement' | 'images' | 'imageUrl' | 'type' | 'correctAnswer' | 'especialidade' | 'tema' | 'foco' | 'subfoco' | 'difficulty' | 'banca' | 'year' | 'isAnulada'
+> & {
   options: { letter: string; text: string }[]
 }
 
@@ -58,6 +63,8 @@ export function PracticeExam({
 }) {
   const { user, isLoading: authLoading } = useAuth()
   const { accentConfig } = useTheme()
+  const { recordAnswer } = useStudentData()
+  const { status: timerStatus, recordActivitySession } = useStudyTimer()
 
   const storageKey = useMemo(() => {
     return JSON.stringify(['practice-exam', user?.id ?? 'guest', exam, institution, year])
@@ -160,13 +167,21 @@ export function PracticeExam({
         if (controller.signal.aborted) return
 
         const questions: ExamQuestion[] = resultQuestions.map(
-          ({ id, statement, images, imageUrl, type, options, correctAnswer }) => ({
+          ({ id, statement, images, imageUrl, type, options, correctAnswer, especialidade, tema, foco, subfoco, difficulty, banca, year: qYear, isAnulada }) => ({
             id,
             statement,
             images,
             imageUrl,
             type,
             correctAnswer,
+            especialidade,
+            tema,
+            foco,
+            subfoco,
+            difficulty,
+            banca,
+            year: qYear,
+            isAnulada,
             options: options.map(({ letter, text }) => ({ letter, text }))
           })
         )
@@ -220,6 +235,53 @@ export function PracticeExam({
     [storageKey]
   )
 
+  // Finalizar prova e sincronizar respostas + sessão de estudo com o Supabase
+  const finalizeExamAttempt = useCallback(
+    (currentAttempt: Attempt) => {
+      const submittedAt = Date.now()
+      updateAttempt({ ...currentAttempt, closed: true, submittedAt })
+
+      let answeredTotal = 0
+      let correctTotal = 0
+
+      currentAttempt.questions.forEach((q) => {
+        const chosen = currentAttempt.answers[q.id]
+        if (!chosen) return
+        const letter = chosen.toUpperCase()
+        if (!['A', 'B', 'C', 'D', 'E'].includes(letter)) return
+        answeredTotal++
+        const isAnulada = Boolean(q.isAnulada || q.correctAnswer === 'ANULADA')
+        const isCorrect = isAnulada || Boolean(q.correctAnswer && letter === q.correctAnswer.toUpperCase())
+        if (isCorrect) correctTotal++
+
+        recordAnswer(q.id, letter as 'A' | 'B' | 'C' | 'D' | 'E', isCorrect, {
+          difficulty: q.difficulty || 'Médio',
+          specialty: q.especialidade,
+          tema: q.tema,
+          foco: q.foco,
+          subfoco: q.subfoco,
+          banca: q.banca || institution || undefined,
+          year: q.year || year || undefined,
+          isAnulada
+        })
+      })
+
+      if (timerStatus === 'idle' && answeredTotal > 0) {
+        recordActivitySession({
+          startTime: new Date(currentAttempt.startedAt).toISOString(),
+          endTime: new Date(submittedAt).toISOString(),
+          taxonomy: { rawLabel: currentAttempt.examTitle },
+          studyType: 'simulado',
+          sessionSource: 'simulado',
+          questionsCount: answeredTotal,
+          correctCount: correctTotal,
+          incorrectCount: Math.max(0, answeredTotal - correctTotal)
+        }).catch(() => {})
+      }
+    },
+    [updateAttempt, recordAnswer, institution, year, timerStatus, recordActivitySession]
+  )
+
   // Cronômetro regressivo da prova oficial
   useEffect(() => {
     if (!attempt || attempt.closed) return
@@ -231,13 +293,13 @@ export function PracticeExam({
       setRemainingSeconds(totalSec % 60)
 
       if (diff === 0) {
-        updateAttempt({ ...attempt, closed: true, submittedAt: Date.now() })
+        finalizeExamAttempt(attempt)
       }
     }
     tick()
     const interval = window.setInterval(tick, 1000)
     return () => clearInterval(interval)
-  }, [attempt, updateAttempt])
+  }, [attempt, finalizeExamAttempt])
 
   // Registrar resposta da alternativa
   const answerQuestion = useCallback(
@@ -533,7 +595,7 @@ export function PracticeExam({
                       ? `Você ainda possui ${unanswered} questão(ões) sem resposta. Deseja realmente finalizar o simulado oficial?`
                       : 'Deseja encerrar a prova e calcular o resultado oficial?'
                   if (window.confirm(msg)) {
-                    updateAttempt({ ...attempt, closed: true, submittedAt: Date.now() })
+                    finalizeExamAttempt(attempt)
                   }
                 }}
                 className="flex items-center gap-1.5 px-3.5 py-2 rounded-2xl font-bold text-xs text-white bg-rose-600 hover:bg-rose-700 transition-colors shadow-xs cursor-pointer"

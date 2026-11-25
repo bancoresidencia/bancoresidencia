@@ -1,7 +1,7 @@
 'use client';
 
 import { StudyInkLayer } from '@/components/StudyInkLayer';
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import {
   ArrowLeft,
   Clock,
@@ -46,6 +46,7 @@ import {
 } from '@/utils/ankiSessionQueue';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
+import { useStudyTimer } from '@/context/StudyTimerContext';
 import { flashcardsService, isUserCreatedFlashcardId } from '@/services/flashcardsService';
 
 interface FlashcardStudySessionProps {
@@ -67,6 +68,16 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
+  const { status: timerStatus, recordActivitySession } = useStudyTimer();
+  const sessionStartIsoRef = useRef<string>(new Date().toISOString());
+  const sessionStatsRef = useRef({ again: 0, hard: 0, good: 0, easy: 0 });
+  const hasSavedStudySessionRef = useRef(false);
+  const timerStatusRef = useRef(timerStatus);
+  const recordActivityRef = useRef(recordActivitySession);
+  useEffect(() => {
+    timerStatusRef.current = timerStatus;
+    recordActivityRef.current = recordActivitySession;
+  }, [timerStatus, recordActivitySession]);
 
   const activeSchedulerSettings = useMemo(() => {
     return schedulerSettings || flashcardsService.getSchedulerSettings(user?.id);
@@ -138,6 +149,46 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
   const currentCard = queueState.currentCard;
   const isCompleted = queueState.isCompleted;
   const liveCounts = useMemo(() => getLiveQueueCounts(queueState), [queueState]);
+
+  useEffect(() => {
+    sessionStatsRef.current = sessionStats;
+  }, [sessionStats]);
+
+  const flushFlashcardStudySession = useCallback(() => {
+    if (hasSavedStudySessionRef.current || timerStatusRef.current !== 'idle') return;
+    const s = sessionStatsRef.current;
+    const totalReviewed = s.again + s.hard + s.good + s.easy;
+    if (totalReviewed <= 0) return;
+    hasSavedStudySessionRef.current = true;
+    const firstCard = cards[0];
+    recordActivityRef.current({
+      startTime: sessionStartIsoRef.current,
+      endTime: new Date().toISOString(),
+      taxonomy: {
+        especialidade: firstCard?.specialty,
+        tema: firstCard?.theme,
+        foco: firstCard?.focus,
+        rawLabel: firstCard?.focus || firstCard?.theme || firstCard?.specialty || 'Flashcards'
+      },
+      studyType: 'flashcards',
+      sessionSource: 'flashcards',
+      questionsCount: totalReviewed,
+      correctCount: s.good + s.easy,
+      incorrectCount: s.again + s.hard
+    }).catch(() => {});
+  }, [cards]);
+
+  useEffect(() => {
+    if (isCompleted) {
+      flushFlashcardStudySession();
+    }
+  }, [isCompleted, flushFlashcardStudySession]);
+
+  useEffect(() => {
+    return () => {
+      flushFlashcardStudySession();
+    };
+  }, [flushFlashcardStudySession]);
 
   const handleToggleInlineEdit = (e: React.MouseEvent) => {
     e.stopPropagation();

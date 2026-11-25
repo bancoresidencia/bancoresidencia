@@ -12,6 +12,7 @@ const SYNC_STATUS_PATH = path.resolve('data/supabase_tables/supabase_sync_status
 const CLIENT_JS_PATH = path.resolve('scripts/dashboard_client.js');
 
 // Diretórios locais de imagens
+const SANAR_MEDIA_DIR = path.resolve('data/sanar_media/webp');
 const HIGIENIZADAS_DIR = path.resolve('data/imagens_higienizadas_medq');
 const ORIGINAIS_MEDQ_DIR = path.resolve('data/imagens_medq_originais');
 const COMPARACOES_MEDQ_DIR = path.resolve('data/comparacoes_antes_depois_medq');
@@ -25,7 +26,7 @@ const GINECO_DIR = path.resolve('public/images/questoes/ginecologia');
 const URO_DIR = path.resolve('public/images/questoes/urologia');
 const PUBLIC_DIR = path.resolve('public');
 
-for (const dir of [HIGIENIZADAS_DIR, ORIGINAIS_MEDQ_DIR, COMPARACOES_MEDQ_DIR, CONVERTED_DIR, RESCUED_DIR, PDR_DIR, BANCO_GERAL_DIR, MEDEVO_DOWNLOAD_DIR, EXTRACTED_DIR, GINECO_DIR, URO_DIR]) {
+for (const dir of [SANAR_MEDIA_DIR, ORIGINAIS_MEDQ_DIR, COMPARACOES_MEDQ_DIR, CONVERTED_DIR, RESCUED_DIR, PDR_DIR, BANCO_GERAL_DIR, MEDEVO_DOWNLOAD_DIR, EXTRACTED_DIR, GINECO_DIR, URO_DIR]) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
 }
 
@@ -108,16 +109,16 @@ function resolveLocalFile(rawUrl) {
   }
 
   const candidates = [
-    { dir: HIGIENIZADAS_DIR, sub: 'imagens_higienizadas_medq' },
+    { dir: SANAR_MEDIA_DIR, sub: 'sanar_media' },
+    { dir: RESCUED_DIR, sub: 'resgatadas' },
+    { dir: BANCO_GERAL_DIR, sub: 'banco_geral' },
+    { dir: PDR_DIR, sub: 'provaderesidencia' },
+    { dir: CONVERTED_DIR, sub: 'imagens_convertidas' },
     { dir: GINECO_DIR, sub: 'ginecologia' },
     { dir: URO_DIR, sub: 'urologia' },
-    { dir: PDR_DIR, sub: 'provaderesidencia' },
-    { dir: BANCO_GERAL_DIR, sub: 'banco_geral' },
-    { dir: CONVERTED_DIR, sub: 'imagens_convertidas' },
-    { dir: RESCUED_DIR, sub: 'resgatadas' },
+    { dir: ORIGINAIS_MEDQ_DIR, sub: 'medq_originais' },
     { dir: EXTRACTED_DIR, sub: 'extracted' },
     { dir: MEDEVO_DOWNLOAD_DIR, sub: 'medevo' },
-    { dir: ORIGINAIS_MEDQ_DIR, sub: 'medq_originais' },
     { dir: COMPARACOES_MEDQ_DIR, sub: 'comparacoes_medq' }
   ];
 
@@ -128,11 +129,19 @@ function resolveLocalFile(rawUrl) {
     }
   }
 
-  const cleanBase = baseName.replace(/^clean_[a-f0-9]+_/, '');
-  for (const c of candidates) {
-    const fPath = path.join(c.dir, cleanBase);
-    if (fs.existsSync(fPath)) {
-      return { fullPath: fPath, baseName: cleanBase, subFolder: c.sub };
+  const candidateBases = [
+    baseName.replace(/^clean_/, ''),
+    baseName.replace(/^clean_questions_[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}_/i, ''),
+    baseName.replace(/^clean_questions_[a-zA-Z0-9_-]+?_(?=converted|orig|[0-9a-f]{8}_)/i, ''),
+    baseName.replace(/^clean_[a-zA-Z0-9_-]+_/, '')
+  ];
+
+  for (const b of candidateBases) {
+    for (const c of candidates) {
+      const fPath = path.join(c.dir, b);
+      if (fs.existsSync(fPath)) {
+        return { fullPath: fPath, baseName: b, subFolder: c.sub };
+      }
     }
   }
 
@@ -258,6 +267,29 @@ const rawRows = db.prepare(`
   ORDER BY year DESC, id ASC
 `).all();
 
+function evaluateBrokenStatus(imgs) {
+  if (!imgs || imgs.length === 0) {
+    return { isBroken: true, brokenReason: 'Nenhum caminho de imagem registrado' };
+  }
+  for (const img of imgs) {
+    if (typeof img !== 'string') continue;
+    if (img.includes('supabase.co/storage/v1/object/public/questoes/')) continue;
+    const local = resolveLocalFile(img);
+    if (!local) {
+      return { isBroken: true, brokenReason: `Arquivo físico não encontrado: ${img}` };
+    }
+    try {
+      const stat = fs.statSync(local.fullPath);
+      if (stat.size === 0) {
+        return { isBroken: true, brokenReason: 'Arquivo com tamanho 0 bytes' };
+      }
+    } catch {
+      return { isBroken: true, brokenReason: 'Erro de I/O no arquivo' };
+    }
+  }
+  return { isBroken: false, brokenReason: '' };
+}
+
 let brokenTotal = 0;
 
 const ALL_QUESTIONS_WITH_IMG = rawRows.map(r => {
@@ -270,38 +302,7 @@ const ALL_QUESTIONS_WITH_IMG = rawRows.map(r => {
   const isSynced = Boolean(syncStatus.synced_questions[r.id] || (imgs.length > 0 && imgs.some(u => typeof u === 'string' && u.includes(SUPABASE_URL))));
 
   // Verificação determinística se a imagem está quebrada
-  let isBroken = false;
-  let brokenReason = '';
-  if (!imgs || imgs.length === 0) {
-    isBroken = true;
-    brokenReason = 'Nenhum caminho de imagem registrado';
-  } else {
-    for (const img of imgs) {
-      if (typeof img !== 'string') continue;
-      // Se não for URL do Supabase já online
-      if (!img.includes('supabase.co/storage/v1/object/public/questoes/')) {
-        const local = resolveLocalFile(img);
-        if (!local) {
-          isBroken = true;
-          brokenReason = `Arquivo físico não encontrado: ${img}`;
-          break;
-        } else {
-          try {
-            const stat = fs.statSync(local.fullPath);
-            if (stat.size === 0) {
-              isBroken = true;
-              brokenReason = 'Arquivo com tamanho 0 bytes';
-              break;
-            }
-          } catch {
-            isBroken = true;
-            brokenReason = 'Erro de I/O no arquivo';
-            break;
-          }
-        }
-      }
-    }
-  }
+  const { isBroken, brokenReason } = evaluateBrokenStatus(imgs);
 
   if (isBroken) brokenTotal++;
 
@@ -399,6 +400,39 @@ const server = http.createServer(async (req, res) => {
     return fs.createReadStream(CLIENT_JS_PATH).pipe(res);
   }
 
+  // DISPONIBILIZAÇÃO DIRETA NO LOCALHOST DE TODAS AS IMAGENS DO SUPABASE
+  if (
+    pathname.startsWith('/storage/questoes/') ||
+    pathname.startsWith('/questoes/') ||
+    pathname.startsWith('/images/') ||
+    pathname.endsWith('.webp') ||
+    pathname.endsWith('.png') ||
+    pathname.endsWith('.jpg')
+  ) {
+    const rawUrl = pathname;
+    const localResolved = resolveLocalFile(rawUrl);
+    if (localResolved && fs.existsSync(localResolved.fullPath)) {
+      res.writeHead(200, {
+        'Content-Type': 'image/webp',
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+      });
+      return fs.createReadStream(localResolved.fullPath).pipe(res);
+    }
+
+    // Se não estiver em disco mas for do Supabase, faz streaming do Supabase para o localhost
+    const supabaseFallbackUrl = `${SUPABASE_URL}/storage/v1/object/public/questoes/${path.basename(rawUrl)}`;
+    try {
+      const fetchRes = await fetch(supabaseFallbackUrl, { signal: AbortSignal.timeout(4000) });
+      if (fetchRes.ok) {
+        res.writeHead(200, { 'Content-Type': fetchRes.headers.get('content-type') || 'image/webp' });
+        const buf = await fetchRes.arrayBuffer();
+        return res.end(Buffer.from(buf));
+      }
+    } catch {}
+  }
+
   // PROXY DE IMAGEM LOCAL (Zero Lag)
   if (pathname === '/api/proxy-image') {
     const rawUrl = parsedUrl.searchParams.get('url');
@@ -411,7 +445,9 @@ const server = http.createServer(async (req, res) => {
     if (localResolved && fs.existsSync(localResolved.fullPath)) {
       res.writeHead(200, {
         'Content-Type': 'image/webp',
-        'Cache-Control': 'public, max-age=31536000, immutable'
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
       });
       return fs.createReadStream(localResolved.fullPath).pipe(res);
     }
@@ -465,6 +501,7 @@ const server = http.createServer(async (req, res) => {
     }
     syncStatus = loadSyncStatus();
 
+    brokenTotal = 0;
     for (const q of ALL_QUESTIONS_WITH_IMG) {
       // Re-read images from database if updated
       const row = db.prepare('SELECT images FROM questions_curated_staging WHERE id = ?').get(q.id);
@@ -473,12 +510,17 @@ const server = http.createServer(async (req, res) => {
       }
       q.has_watermark = medqWatermarkSet.has(q.id) || (q.images.length > 0 && q.images.some(u => typeof u === 'string' && u.includes('imagens_medq_originais')));
       q.is_synced = Boolean(syncStatus.synced_questions[q.id] || (q.images.length > 0 && q.images.some(u => typeof u === 'string' && u.includes(SUPABASE_URL))));
+      const { isBroken, brokenReason } = evaluateBrokenStatus(q.images);
+      q.is_broken = isBroken;
+      q.broken_reason = brokenReason;
+      if (isBroken) brokenTotal++;
     }
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
     return res.end(JSON.stringify({
       success: true,
       watermarkedCount: ALL_QUESTIONS_WITH_IMG.filter(q => q.has_watermark).length,
+      brokenCount: brokenTotal,
       syncedCount: Object.keys(syncStatus.synced_questions || {}).length
     }));
   }

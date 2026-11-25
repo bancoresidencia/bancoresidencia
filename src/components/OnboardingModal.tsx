@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
+import { createClient } from '@/lib/supabase/client';
 import {
   verifyCheckoutCoupon,
   AppliedReferral
@@ -252,13 +253,39 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
           referredByCode: appliedReferral?.code || undefined
         });
         localStorage.setItem(`onboarding_completed_${user.id}`, 'true');
-        localStorage.setItem('user_target_exam_name', selectedExamInst);
-        localStorage.setItem('user_target_exam_date', targetDate);
+        localStorage.setItem(`user_target_exam_name_${user.id}`, selectedExamInst);
+        localStorage.setItem(`user_target_exam_date_${user.id}`, targetDate);
+        localStorage.setItem(`bancoresidencia_user_objective_${user.id}`, objective);
+        localStorage.setItem(`bancoresidencia_user_deadline_${user.id}`, deadline);
+
+        if (user.id !== 'demo-student') {
+          try {
+            const supabase = createClient();
+            const { data: profile } = await supabase
+              .from('profiles')
+              .select('preferences')
+              .eq('id', user.id)
+              .maybeSingle();
+            const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
+            await supabase
+              .from('profiles')
+              .update({
+                preferences: {
+                  ...currentPrefs,
+                  objective,
+                  deadline,
+                  updatedAt: new Date().toISOString()
+                }
+              })
+              .eq('id', user.id);
+          } catch (prefErr) {
+            console.warn('[OnboardingModal] Erro ao sincronizar preferências no Supabase:', prefErr);
+          }
+        }
+      } else {
+        localStorage.setItem('bancoresidencia_user_objective', objective);
+        localStorage.setItem('bancoresidencia_user_deadline', deadline);
       }
-
-
-      localStorage.setItem('bancoresidencia_user_objective', objective);
-      localStorage.setItem('bancoresidencia_user_deadline', deadline);
 
       if (onComplete) onComplete(action);
       onClose();
@@ -308,10 +335,10 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   <div
                     key={s}
                     className={`h-1.5 rounded-full transition-all duration-300 ${s === currentStep
-                        ? 'w-6 shadow-xs'
-                        : s < currentStep
-                          ? 'w-2 bg-emerald-500'
-                          : 'w-2 bg-slate-200 dark:bg-zinc-800'
+                      ? 'w-6 shadow-xs'
+                      : s < currentStep
+                        ? 'w-2 bg-emerald-500'
+                        : 'w-2 bg-slate-200 dark:bg-zinc-800'
                       }`}
                     style={s === currentStep ? { backgroundColor: accentConfig.primaryHex } : {}}
                   />
@@ -372,8 +399,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                     type="button"
                     onClick={() => setHasReferralCode(true)}
                     className={`p-4 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${hasReferralCode === true
-                        ? 'border-2 bg-amber-50/50 dark:bg-amber-950/20 shadow-sm'
-                        : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/40 dark:bg-zinc-900/30'
+                      ? 'border-2 bg-amber-50/50 dark:bg-amber-950/20 shadow-sm'
+                      : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/40 dark:bg-zinc-900/30'
                       }`}
                     style={hasReferralCode === true ? { borderColor: accentConfig.primaryHex } : {}}
                   >
@@ -395,8 +422,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       handleSkipReferral();
                     }}
                     className={`p-4 rounded-2xl border text-left transition-all cursor-pointer flex flex-col justify-between ${hasReferralCode === false
-                        ? 'border-2 bg-slate-100 dark:bg-zinc-800 shadow-sm'
-                        : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/40 dark:bg-zinc-900/30'
+                      ? 'border-2 bg-slate-100 dark:bg-zinc-800 shadow-sm'
+                      : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/40 dark:bg-zinc-900/30'
                       }`}
                   >
                     <div className="flex items-center justify-between mb-1">
@@ -516,8 +543,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       type="button"
                       onClick={() => setObjective(item.id as typeof objective)}
                       className={`p-4 rounded-2xl border text-left transition-all relative flex flex-col justify-between cursor-pointer ${isSelected
-                          ? 'border-2 bg-blue-50/50 dark:bg-blue-950/20 shadow-md'
-                          : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/30 dark:bg-zinc-900/30'
+                        ? 'border-2 bg-blue-50/50 dark:bg-blue-950/20 shadow-md'
+                        : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/30 dark:bg-zinc-900/30'
                         }`}
                       style={isSelected ? { borderColor: accentConfig.primaryHex } : {}}
                     >
@@ -589,8 +616,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         type="button"
                         onClick={() => setCollegeInput(c)}
                         className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs transition-colors flex items-center justify-between cursor-pointer ${isSelected
-                            ? 'bg-blue-50 dark:bg-blue-950/30 font-bold text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900'
-                            : 'hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-slate-300'
+                          ? 'bg-blue-50 dark:bg-blue-950/30 font-bold text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-900'
+                          : 'hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-slate-300'
                           }`}
                       >
                         <span className="truncate">{c}</span>
@@ -668,8 +695,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                       type="button"
                       onClick={() => setDeadline(item.id)}
                       className={`p-4 rounded-2xl border text-left transition-all flex flex-col justify-between cursor-pointer ${isSelected
-                          ? 'border-2 bg-amber-50/40 dark:bg-amber-950/20 shadow-md'
-                          : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/30 dark:bg-zinc-900/30'
+                        ? 'border-2 bg-amber-50/40 dark:bg-amber-950/20 shadow-md'
+                        : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-slate-50/30 dark:bg-zinc-900/30'
                         }`}
                       style={isSelected ? { borderColor: accentConfig.primaryHex } : {}}
                     >
@@ -724,8 +751,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         type="button"
                         onClick={() => setSelectedExamInst(inst)}
                         className={`text-xs px-3 py-1.5 rounded-full font-bold transition-all cursor-pointer ${isSelected
-                            ? 'bg-emerald-600 text-white shadow-xs'
-                            : 'bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-zinc-700'
+                          ? 'bg-emerald-600 text-white shadow-xs'
+                          : 'bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-zinc-700'
                           }`}
                       >
                         {inst}
@@ -754,8 +781,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         type="button"
                         onClick={() => setSelectedExamInst(inst.shortName)}
                         className={`w-full text-left p-3 rounded-xl text-xs transition-all flex items-center justify-between cursor-pointer ${isSelected
-                            ? 'bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/80'
-                            : 'hover:bg-slate-100 dark:hover:bg-zinc-800/60'
+                          ? 'bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800/80'
+                          : 'hover:bg-slate-100 dark:hover:bg-zinc-800/60'
                           }`}
                       >
                         <div className="min-w-0 pr-2">
@@ -815,8 +842,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                   type="button"
                   onClick={() => setSpecialty('Ainda não sei / vou decidir depois')}
                   className={`w-full p-3 rounded-xl border text-xs font-bold transition-all cursor-pointer flex items-center justify-between ${specialty === 'Ainda não sei / vou decidir depois'
-                      ? 'border-2 border-rose-500 bg-rose-50/50 dark:bg-rose-950/20 text-rose-700 dark:text-rose-300'
-                      : 'border-slate-200 dark:border-zinc-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-zinc-800'
+                    ? 'border-2 border-rose-500 bg-rose-50/50 dark:bg-rose-950/20 text-rose-700 dark:text-rose-300'
+                    : 'border-slate-200 dark:border-zinc-800 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-zinc-800'
                     }`}
                 >
                   <span>Ainda não sei / vou decidir depois</span>
@@ -843,8 +870,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
                         type="button"
                         onClick={() => setSpecialty(spec)}
                         className={`w-full text-left px-3.5 py-2.5 rounded-xl text-xs transition-colors flex items-center justify-between cursor-pointer ${isSelected
-                            ? 'bg-rose-50 dark:bg-rose-950/30 font-bold text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900'
-                            : 'hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-slate-300'
+                          ? 'bg-rose-50 dark:bg-rose-950/30 font-bold text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900'
+                          : 'hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-slate-300'
                           }`}
                       >
                         <span>{spec}</span>

@@ -54,6 +54,7 @@ import { UserStats, PerformanceFilterState, PeriodFilter, Modalidade, UserAnswer
 import { UserAccount } from '@/types/auth';
 // Authenticated user metrics
 import { useTheme } from '@/context/ThemeContext';
+import { useStudentData } from '@/context/StudentDataContext';
 import { clinicalHierarchy, mockInstitutionsList, mockBancas } from '@/data/mockQuestions';
 import { AIPerformanceMentorCard } from './AIPerformanceMentorCard';
 import { DailyHabitsAndHourlyExplorer } from './DailyHabitsAndHourlyExplorer';
@@ -354,6 +355,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   user
 }) => {
   const { mode, accentConfig, isDashboardCustomizing, setIsDashboardCustomizing, setCanCustomizeLayout } = useTheme();
+  const { dailyGoal } = useStudentData();
 
   // Sub-abas principais: Visão Geral | Especialidades | Raio-X de Erros
   const [activeSubTab, setActiveSubTab] = useState<StatsSubTab>('overview');
@@ -719,7 +721,70 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
     const incorrect = Math.max(0, answered - correct);
     const unique = answered;
-    const ineditas = Math.round(unique * 0.9);
+    const ineditas = hasRealAnswers
+      ? filteredAnswers.filter((a) => !a.attempts || a.attempts.length <= 1).length
+      : 0;
+
+    // Cálculo real de Ritmo Médio (tempo médio por questão baseado nas sessões cronometradas do período)
+    const timedQuestionSessions = activeStudySessions.filter(
+      (s) => (s.questionsCount || 0) > 0 && (s.durationSeconds || 0) > 0
+    );
+    const totalTimedQuestions = timedQuestionSessions.reduce((acc, s) => acc + (s.questionsCount || 0), 0);
+    const totalTimedSeconds = timedQuestionSessions.reduce((acc, s) => acc + (s.durationSeconds || 0), 0);
+    const ritmoMedioSeconds = totalTimedQuestions > 0 ? Math.round(totalTimedSeconds / totalTimedQuestions) : 0;
+    const ritmoProgressPct =
+      ritmoMedioSeconds > 0 ? Math.min(100, Math.max(8, Math.round((ritmoMedioSeconds / 150) * 100))) : 0;
+
+    // Cálculo real de tendências comparando com o período anterior equivalente
+    let trendVolume = '0.0%';
+    let trendAproveitamento = '0.0%';
+    if (allAnswers.length > 0 && filters.period !== 'all') {
+      const refNow = now || Date.now();
+      let windowMs = 0;
+      let curStart = 0;
+      if (filters.period === '1d') { windowMs = 86400000; curStart = refNow - windowMs; }
+      else if (filters.period === '7d') { windowMs = 7 * 86400000; curStart = refNow - windowMs; }
+      else if (filters.period === '30d') { windowMs = 30 * 86400000; curStart = refNow - windowMs; }
+      else if (filters.period === '3m') { windowMs = 90 * 86400000; curStart = refNow - windowMs; }
+      else if (filters.period === '6m') { windowMs = 180 * 86400000; curStart = refNow - windowMs; }
+      else if (filters.period === 'mes') {
+        curStart = new Date(new Date(refNow).getFullYear(), new Date(refNow).getMonth(), 1).getTime();
+        windowMs = Math.max(86400000, refNow - curStart);
+      } else if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
+        curStart = new Date(filters.customStartDate).getTime();
+        const curEnd = new Date(filters.customEndDate + 'T23:59:59').getTime();
+        windowMs = Math.max(86400000, curEnd - curStart);
+      }
+
+      if (windowMs > 0 && curStart > 0) {
+        const prevStart = curStart - windowMs;
+        const prevAnswers = allAnswers.filter((ans) => {
+          const ts = ans.timestamp || 0;
+          if (ts < prevStart || ts >= curStart) return false;
+          if (filters.institutions && filters.institutions.length > 0) {
+            const ansBanca = ans.banca || '';
+            if (!filters.institutions.some((inst) => ansBanca.toLowerCase().includes(inst.toLowerCase()))) return false;
+          }
+          if (filters.banca && filters.banca !== 'Todas' && filters.banca !== 'Todas as Bancas' && ans.banca && ans.banca !== filters.banca) {
+            return false;
+          }
+          return true;
+        });
+
+        const prevCount = prevAnswers.length;
+        if (prevCount > 0) {
+          const volPct = ((answered - prevCount) / prevCount) * 100;
+          trendVolume = `${volPct >= 0 ? '+' : ''}${volPct.toFixed(1)}%`;
+          if (answered > 0) {
+            const prevAcc = (prevAnswers.filter((a) => a.isCorrect).length / prevCount) * 100;
+            const accDiff = accuracy - prevAcc;
+            trendAproveitamento = `${accDiff >= 0 ? '+' : ''}${accDiff.toFixed(1)}%`;
+          }
+        } else if (answered > 0) {
+          trendVolume = '+100%';
+        }
+      }
+    }
 
     // Geração de buckets diários sincronizados com o período selecionado
     const nowObj = new Date();
@@ -858,14 +923,16 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     return {
       factor,
       label: q.label,
-      trendVolume: q.trendVolume,
-      trendAproveitamento: q.trendAproveitamento,
+      trendVolume,
+      trendAproveitamento,
       answered,
       correct,
       incorrect,
       accuracy: Math.round(accuracy),
       unique,
       ineditas,
+      ritmoMedioSeconds,
+      ritmoProgressPct,
       chartData,
       dailyRawItems,
       filteredAnswers
@@ -983,21 +1050,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     });
 
     list.sort((a, b) => b.resolvidas - a.resolvidas);
-    if (list.length >= 3) {
-      return list.slice(0, 6);
-    }
-
-    // Amostra representativa caso não haja temas suficientes no período
-    const baseTotal = activeMetrics.answered || 60;
-    return [
-      { nome: 'Cardiologia & ECG', specialty: 'Clínica Médica', resolvidas: Math.max(8, Math.round(baseTotal * 0.22)), acertos: Math.max(6, Math.round(baseTotal * 0.22 * 0.75)), erros: Math.round(baseTotal * 0.22 * 0.25), taxa: 75.0 },
-      { nome: 'Trauma & ATLS', specialty: 'Cirurgia Geral', resolvidas: Math.max(7, Math.round(baseTotal * 0.18)), acertos: Math.max(5, Math.round(baseTotal * 0.18 * 0.68)), erros: Math.round(baseTotal * 0.18 * 0.32), taxa: 68.0 },
-      { nome: 'Pré-Natal & Obstetrícia', specialty: 'Ginecologia', resolvidas: Math.max(6, Math.round(baseTotal * 0.16)), acertos: Math.max(5, Math.round(baseTotal * 0.16 * 0.82)), erros: Math.round(baseTotal * 0.16 * 0.18), taxa: 82.0 },
-      { nome: 'Neonatologia & Vacinas', specialty: 'Pediatria', resolvidas: Math.max(6, Math.round(baseTotal * 0.15)), acertos: Math.max(4, Math.round(baseTotal * 0.15 * 0.72)), erros: Math.round(baseTotal * 0.15 * 0.28), taxa: 72.0 },
-      { nome: 'Atenção Primária & SUS', specialty: 'Preventiva', resolvidas: Math.max(5, Math.round(baseTotal * 0.14)), acertos: Math.max(4, Math.round(baseTotal * 0.14 * 0.85)), erros: Math.round(baseTotal * 0.14 * 0.15), taxa: 85.0 },
-      { nome: 'Infectologia & Sepse', specialty: 'Clínica Médica', resolvidas: Math.max(5, Math.round(baseTotal * 0.12)), acertos: Math.max(3, Math.round(baseTotal * 0.12 * 0.64)), erros: Math.round(baseTotal * 0.12 * 0.36), taxa: 64.0 }
-    ];
-  }, [specialtiesBreakdown, activeMetrics.answered]);
+    return list.slice(0, 6);
+  }, [specialtiesBreakdown]);
 
   // Volume total somado das 6 especialidades para base do Donut
   const totalSpecialtiesVolume = useMemo(() => {
@@ -1782,14 +1836,21 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   </span>
                 </div>
                 <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-sans tabular-nums">
-                  <AnimatedCounter value={108} formatAsTime />
+                  <AnimatedCounter value={activeMetrics.ritmoMedioSeconds} formatAsTime />
                 </div>
-                <p className="text-xs text-slate-600 dark:text-zinc-400">Tempo médio / questão</p>
+                <p className="text-xs text-slate-600 dark:text-zinc-400">
+                  {activeMetrics.ritmoMedioSeconds > 0
+                    ? 'Tempo médio / questão'
+                    : 'Sem sessões cronometradas no período'}
+                </p>
               </div>
               <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
                 <div
-                  className="h-full rounded-full transition-all duration-700 ease-out w-[65%]"
-                  style={{ backgroundColor: accentConfig.timeAccent.hex }}
+                  className="h-full rounded-full transition-all duration-700 ease-out"
+                  style={{
+                    backgroundColor: accentConfig.timeAccent.hex,
+                    width: `${activeMetrics.ritmoProgressPct}%`
+                  }}
                 />
               </div>
             </div>
@@ -2000,7 +2061,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           <DailyHabitsAndHourlyExplorer
             userAnswers={userAnswers}
             period={filters.period}
-            dailyGoal={30}
+            dailyGoal={dailyGoal}
             totalAnsweredInPeriod={activeMetrics.answered}
           />
                   </FigmaCardWrapper>

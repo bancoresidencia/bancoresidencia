@@ -77,7 +77,8 @@ allQuestions.forEach(q => {
   }
   if (!Array.isArray(q.options)) q.options = [];
   if (q.id && typeof q.id === 'string') {
-    q.id = q.id.replace(/^(questions_|questions_expansion_direto_|expansion_direto_|questions_expansion_r_plus_|expansion_r_plus_|questions_expansion_revalida_|expansion_revalida_|questions_expansion_titulo_especialista_|expansion_titulo_especialista_)/, '');
+    const uuidMatch = q.id.match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i);
+    q.id = uuidMatch ? uuidMatch[0] : q.id.replace(/^(questions_expansion_titulo_especialista_|questions_expansion_revalida_|questions_expansion_direto_|questions_expansion_r_plus_|expansion_direto_|expansion_r_plus_|expansion_revalida_|expansion_titulo_especialista_|questions_)/, '');
   }
 });
 

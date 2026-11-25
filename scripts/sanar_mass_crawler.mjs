@@ -41,14 +41,22 @@ const HEADERS = {
   'Pragma': 'no-cache'
 };
 
+function withTimeout(promise, ms, desc = 'operação') {
+  let timer;
+  const timeoutPromise = new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(`TIMEOUT (${ms}ms) em ${desc}`)), ms);
+  });
+  return Promise.race([promise, timeoutPromise]).finally(() => clearTimeout(timer));
+}
+
 // Helper de concorrência com pool limitado, determinístico e jitter humanizado
-async function mapConcurrent(items, concurrency, fn, delayMs = 0) {
+async function mapConcurrent(items, concurrency, fn, delayMs = 0, timeoutMs = 25000) {
   const results = [];
   let index = 0;
   const workers = Array.from({ length: Math.min(concurrency, items.length) }, async () => {
     while (index < items.length) {
       const i = index++;
-      results[i] = await fn(items[i], i);
+      results[i] = await withTimeout(fn(items[i], i), timeoutMs, `item ${i}`);
       if (delayMs > 0 && index < items.length) {
         const jitter = Math.floor(Math.random() * 250);
         await new Promise(r => setTimeout(r, delayMs + jitter));
@@ -161,7 +169,7 @@ class ImagePipeline {
         fullUrl = 'https://sanarmed.com' + fullUrl;
       }
 
-      const res = await fetch(fullUrl, { headers: HEADERS });
+      const res = await fetch(fullUrl, { headers: HEADERS, signal: AbortSignal.timeout(15000) });
       if (!res.ok) {
         console.warn(`[WARN] Falha ao baixar imagem (${res.status}): ${fullUrl}`);
         return null;
@@ -262,7 +270,7 @@ export class SanarMassCrawler {
     const hubUrl = 'https://sanarmed.com/questoes-de-concursos/provas/';
     console.log(`[SEED] Acessando hub de provas: ${hubUrl}`);
 
-    const res = await fetch(hubUrl, { headers: HEADERS });
+    const res = await fetch(hubUrl, { headers: HEADERS, signal: AbortSignal.timeout(20000) });
     if (!res.ok) {
       console.error(`[ERROR] Falha ao acessar hub de provas: HTTP ${res.status}`);
       return 0;
@@ -300,7 +308,7 @@ export class SanarMassCrawler {
     const rootUrl = 'https://sanarmed.com/sitemap.xml';
     console.log(`[SEED] Lendo sitemap raiz: ${rootUrl}`);
 
-    const res = await fetch(rootUrl, { headers: HEADERS });
+    const res = await fetch(rootUrl, { headers: HEADERS, signal: AbortSignal.timeout(20000) });
     if (!res.ok) {
       console.error(`[ERROR] Erro ao ler sitemap raiz: HTTP ${res.status}`);
       return 0;
@@ -330,7 +338,7 @@ export class SanarMassCrawler {
 
     for (const sUrl of sitemapUrls) {
       try {
-        const sRes = await fetch(sUrl, { headers: HEADERS });
+        const sRes = await fetch(sUrl, { headers: HEADERS, signal: AbortSignal.timeout(20000) });
         if (!sRes.ok) continue;
         const sText = await sRes.text();
         const qRegex = /<loc>(https:\/\/sanarmed\.com\/q\/[^<]+)<\/loc>/g;
@@ -380,7 +388,7 @@ export class SanarMassCrawler {
 
   async processInstitution(instUrl) {
     try {
-      const res = await fetch(instUrl, { headers: HEADERS });
+      const res = await fetch(instUrl, { headers: HEADERS, signal: AbortSignal.timeout(15000) });
       if (!res.ok) {
         if (res.status === 429) await new Promise(r => setTimeout(r, 2000));
         return;
@@ -418,7 +426,7 @@ export class SanarMassCrawler {
 
   async processExamYear(examUrl) {
     try {
-      const res = await fetch(examUrl, { headers: HEADERS });
+      const res = await fetch(examUrl, { headers: HEADERS, signal: AbortSignal.timeout(15000) });
       if (!res.ok) {
         if (res.status === 429) await new Promise(r => setTimeout(r, 2000));
         return;
@@ -506,7 +514,7 @@ export class SanarMassCrawler {
   async parseAndSaveQuestion(url) {
     if (!url.endsWith('/')) url += '/';
 
-    const res = await fetch(url, { headers: HEADERS });
+    const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(15000) });
     if (!res.ok) {
       if (res.status === 429) {
         await new Promise(r => setTimeout(r, 2500));
@@ -735,6 +743,8 @@ export class SanarMassCrawler {
     let processed = 0;
 
     while (true) {
+      // Auto-recuperar eventuais itens órfãos em 'processing' há mais de 45 segundos
+      this.db.prepare(`UPDATE crawl_queue SET status='pending' WHERE status='processing' AND (julianday('now') - julianday(updated_at)) * 86400 > 45`).run();
       // 1. Processar estágios de expansão de bancas ('institution') concorrentemente
       const instRows = this.db.prepare(`
         SELECT url FROM crawl_queue

@@ -881,6 +881,88 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     []
   );
 
+  // Registra automaticamente uma sessão concluída de Flashcards, Simulado ou Resumo sem interferir em cronômetro manual ativo
+  const recordActivitySession = useCallback(
+    async (data: {
+      startTime: string;
+      endTime?: string;
+      taxonomy: SelectedTaxonomy;
+      studyType: StudyType;
+      sessionSource?: 'manual' | 'questoes' | 'simulado' | 'flashcards';
+      questionsCount?: number;
+      correctCount?: number;
+      incorrectCount?: number;
+      notes?: string;
+    }): Promise<StudySession> => {
+      const uid = userRef.current?.id;
+      const endTimeIso = data.endTime || new Date().toISOString();
+      const sMs = new Date(data.startTime).getTime();
+      const eMs = new Date(endTimeIso).getTime();
+      const diffSec = Math.max(1, Math.floor(((Number.isFinite(eMs) ? eMs : Date.now()) - (Number.isFinite(sMs) ? sMs : Date.now())) / 1000));
+      const formattedDuration = formatSecondsToHms(diffSec);
+
+      const totalQ = data.questionsCount || 0;
+      const correctQ = data.correctCount || 0;
+      const incorrectQ = data.incorrectCount !== undefined ? data.incorrectCount : Math.max(0, totalQ - correctQ);
+      const acc = totalQ > 0 ? Math.round((correctQ / totalQ) * 100) : undefined;
+
+      const newSession: StudySession = {
+        id: `sess_${data.studyType}_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+        userId: uid,
+        startTime: data.startTime,
+        endTime: endTimeIso,
+        durationSeconds: diffSec,
+        durationFormatted: formattedDuration,
+        taxonomy: data.taxonomy || {},
+        studyType: data.studyType,
+        questionsCount: totalQ,
+        correctCount: correctQ,
+        incorrectCount: incorrectQ,
+        accuracy: acc,
+        sessionSource: data.sessionSource || 'manual',
+        notes: data.notes || '',
+        createdAt: endTimeIso
+      };
+
+      setSavedSessions((prev) => [newSession, ...prev.filter((s) => s.id !== newSession.id)]);
+      await saveUserStudySession(newSession, uid);
+
+      try {
+        const startDate = new Date(newSession.startTime);
+        const endDate = new Date(newSession.endTime);
+        const startMinutes = startDate.getHours() * 60 + startDate.getMinutes();
+        const endMinutes = Math.max(startMinutes + 1, endDate.getHours() * 60 + endDate.getMinutes());
+        const topicTitle =
+          newSession.taxonomy.rawLabel ||
+          newSession.taxonomy.subfoco ||
+          newSession.taxonomy.foco ||
+          newSession.taxonomy.tema ||
+          newSession.taxonomy.especialidade ||
+          (data.studyType === 'flashcards' ? 'Flashcards' : data.studyType === 'simulado' ? 'Simulado' : 'Resumo Clínico');
+
+        const scheduleSlot: DailyScheduleSlot = {
+          id: `task_${newSession.id}`,
+          title: `Estudo: ${topicTitle}`,
+          category: 'estudo',
+          startTime: `${String(startDate.getHours()).padStart(2, '0')}:${String(startDate.getMinutes()).padStart(2, '0')}`,
+          endTime: `${String(endDate.getHours()).padStart(2, '0')}:${String(endDate.getMinutes()).padStart(2, '0')}`,
+          startMinutes,
+          endMinutes,
+          source: 'plataforma',
+          description: `Tempo líquido: ${formattedDuration}.${totalQ > 0 ? ` ${totalQ} itens (${correctQ} acertos).` : ''}`,
+          action: 'treinar',
+          date: getLocalDateStr(startDate)
+        };
+        await saveUserScheduledTask(scheduleSlot, uid);
+      } catch (agendaErr) {
+        console.warn('Erro ao integrar atividade na Agenda:', agendaErr);
+      }
+
+      return newSession;
+    },
+    []
+  );
+
   // Auto-cura de tarefas automáticas com fuso UTC deslocado
   useEffect(() => {
     try {
@@ -971,7 +1053,8 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     allSessions: savedSessions,
     deleteSession,
     platformActiveSeconds,
-    addManualSession
+    addManualSession,
+    recordActivitySession
   };
 
   return (
@@ -1016,6 +1099,16 @@ const DEFAULT_STUDY_TIMER_FALLBACK: StudyTimerContextType = {
   deleteSession: () => {},
   platformActiveSeconds: 0,
   addManualSession: async () => ({
+    id: '',
+    startTime: '',
+    endTime: '',
+    durationSeconds: 0,
+    durationFormatted: '00:00:00',
+    taxonomy: {},
+    studyType: 'outro',
+    createdAt: ''
+  }),
+  recordActivitySession: async () => ({
     id: '',
     startTime: '',
     endTime: '',

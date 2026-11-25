@@ -108,7 +108,7 @@ function renderQuestions(questions) {
       var isCorrect = opt.letter === q.correct_answer;
       var optImgHtml = "";
       if (opt.text && opt.text.startsWith("http")) {
-        optImgHtml = '<div style="margin-top: 6px;"><img src="/api/proxy-image?url=' + encodeURIComponent(opt.text) + '" style="max-height: 110px; border-radius: 4px;"></div>';
+        optImgHtml = '<div style="margin-top: 6px;"><img src="/api/proxy-image?url=' + encodeURIComponent(opt.text) + '&cb=' + Date.now() + '" style="max-height: 110px; border-radius: 4px;"></div>';
       }
       return '<div class="opt-item ' + (isCorrect ? 'is-correct' : '') + '">' +
         '<span class="opt-letter">' + opt.letter + ')</span>' +
@@ -149,7 +149,7 @@ function renderQuestions(questions) {
         '</div>';
     } else {
       rightContentHtml = '<div class="image-preview-container" id="img-prev-box-' + q.id + '">' +
-        '<img id="img-' + q.id + '" src="/api/proxy-image?url=' + encodeURIComponent(firstImg) + '" alt="Imagem da questão">' +
+        '<img id="img-' + q.id + '" src="/api/proxy-image?url=' + encodeURIComponent(firstImg) + '&cb=' + Date.now() + '" alt="Imagem da questão">' +
         '</div>' +
         '<div class="sync-action-box" id="sync-box-' + q.id + '">' +
         (isSynced

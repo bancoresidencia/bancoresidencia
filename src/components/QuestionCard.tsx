@@ -37,6 +37,8 @@ import {
   X
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { useStudentData } from '@/context/StudentDataContext';
+import { studyAnnotationsService } from '@/services/studyAnnotationsService';
 import { useSubscription } from '@/hooks/useSubscription';
 import { QuestionComments } from './QuestionComments';
 import { SendQuestionToFolderModal } from './SendQuestionToFolderModal';
@@ -389,6 +391,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 }) => {
   const { accentConfig } = useTheme();
   const { user: inkOwner, isLoading: inkOwnerLoading } = useAuth();
+  const { userAnswers, updateAnswerMeta } = useStudentData();
   const highlightKey = JSON.stringify(['question-highlights', inkOwner?.id ?? 'guest', inkContext, question.id]);
   const { plan: userPlan, dailyResolvedCount, openUpgradeModal } = useSubscription();
 
@@ -452,19 +455,28 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const [studentNote, setStudentNote] = useState('');
   const noteStorageKey = `hipocampus_note_${inkOwner?.id || 'guest'}_${question.id}`;
 
+  const remoteNote = userAnswers[question.id]?.studentNotes;
   useEffect(() => {
     try {
       const saved = localStorage.getItem(noteStorageKey);
-      if (saved) setStudentNote(saved);
+      if (saved) {
+        setStudentNote(saved);
+      } else if (remoteNote) {
+        setStudentNote(remoteNote);
+        localStorage.setItem(noteStorageKey, remoteNote);
+      }
     } catch {}
-  }, [noteStorageKey]);
+  }, [noteStorageKey, remoteNote]);
 
   const handleSaveNote = useCallback((text: string) => {
     setStudentNote(text);
     try {
       localStorage.setItem(noteStorageKey, text);
     } catch {}
-  }, [noteStorageKey]);
+    if (userAnswers[question.id]) {
+      updateAnswerMeta(question.id, { studentNotes: text });
+    }
+  }, [noteStorageKey, userAnswers, question.id, updateAnswerMeta]);
 
   // Rastreia se a resolução de uma questão previamente respondida ainda está sendo carregada via API
   const [isLoadingResolution, setIsLoadingResolution] = useState<boolean>(
@@ -504,22 +516,64 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const [loadedHighlightsKey, setLoadedHighlightsKey] = useState('');
   useEffect(() => {
     if (inkOwnerLoading) return;
+    let active = true;
     try {
       const raw = localStorage.getItem(highlightKey);
       const entries = raw ? JSON.parse(raw) : [];
       const legacy = raw === null ? localStorage.getItem(`hipocampus_hl_${question.id}`) : null;
       const old = legacy ? JSON.parse(legacy) : [];
       setLegacyPreview(Array.isArray(old) ? old.filter(h => h && typeof h.text === 'string' && typeof h.id === 'string') : []);
-      setHighlights(Array.isArray(entries) ? entries : []);
+      const localList: TextHighlight[] = Array.isArray(entries) ? entries : [];
+      setHighlights(localList);
       setLoadedHighlightsKey(highlightKey);
+
+      if (inkOwner?.id && inkOwner.id !== 'demo-student') {
+        const materialId = `question_${inkContext}_${question.id}`;
+        const localMapped = localList.map((h) => ({
+          id: h.id,
+          materialId,
+          userId: inkOwner.id,
+          textQuote: h.text,
+          color: h.color,
+          style: 'highlight' as const,
+          createdAt: new Date().toISOString()
+        }));
+        studyAnnotationsService
+          .syncRemoteHighlights(materialId, inkOwner.id, localMapped)
+          .then((merged) => {
+            if (!active || merged.length === 0) return;
+            const mappedBack: TextHighlight[] = merged.map((m) => ({
+              id: m.id,
+              text: m.textQuote,
+              color: m.color
+            }));
+            setHighlights(mappedBack);
+            try { localStorage.setItem(highlightKey, JSON.stringify(mappedBack)); } catch {}
+          })
+          .catch(() => {});
+      }
     } catch { setLoadedHighlightsKey(''); setHighlights([]); }
-  }, [highlightKey, inkOwnerLoading, question.id]);
+    return () => { active = false; };
+  }, [highlightKey, inkOwnerLoading, inkOwner?.id, inkContext, question.id]);
   useEffect(() => {
     if (!inkOwnerLoading && (!legacyPreview.length || highlights.length > 0) && loadedHighlightsKey === highlightKey) {
       try { localStorage.setItem(highlightKey, JSON.stringify(highlights)); }
       catch { setSolveError('Não foi possível salvar os grifos neste dispositivo.'); }
+      if (inkOwner?.id && inkOwner.id !== 'demo-student' && highlights.length > 0) {
+        const materialId = `question_${inkContext}_${question.id}`;
+        const mapped = highlights.map((h) => ({
+          id: h.id,
+          materialId,
+          userId: inkOwner.id,
+          textQuote: h.text,
+          color: h.color,
+          style: 'highlight' as const,
+          createdAt: new Date().toISOString()
+        }));
+        void studyAnnotationsService.saveMaterialHighlights(materialId, mapped, inkOwner.id);
+      }
     }
-  }, [highlights, highlightKey, inkOwnerLoading, loadedHighlightsKey, legacyPreview]);
+  }, [highlights, highlightKey, inkOwnerLoading, inkOwner?.id, inkContext, question.id, loadedHighlightsKey, legacyPreview]);
   // Listener para limpar todos os destaques desta questão disparado pelo cabeçalho
   useEffect(() => {
     const handleClearAll = () => {
@@ -542,7 +596,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
   const removeHighlight = useCallback((id: string) => {
     setHighlights((prev) => prev.filter((h) => h.id !== id));
-  }, []);
+    if (inkOwner?.id && inkOwner.id !== 'demo-student') {
+      studyAnnotationsService.removeHighlight(`question_${inkContext}_${question.id}`, id, inkOwner.id);
+    }
+  }, [inkOwner?.id, inkContext, question.id]);
 
   const clearAllHighlights = useCallback(() => {
     setHighlights([]);

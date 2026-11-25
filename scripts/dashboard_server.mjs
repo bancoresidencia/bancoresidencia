@@ -449,7 +449,7 @@ function renderDashboardHtml() {
   const initialPct = state.progressPercent || ((initialProcessed / initialTotal) * 100).toFixed(1);
   const initialCostUSD = (state.tokens?.pricing?.totalCostUSD ?? state.tokens?.pricing?.costUSD ?? 0).toFixed(2);
   const initialCostBRL = (state.tokens?.pricing?.totalCostBRL ?? state.tokens?.pricing?.costBRL ?? 0).toFixed(2);
-  const initialTokens = state.tokens ? state.tokens.totalTokens.toLocaleString('pt-BR') : '0';
+  const initialTokens = (state.tokens?.totalTokens ?? 0).toLocaleString('pt-BR');
   const initialVelocity = state.velocity ? state.velocity.questionsPerMinute.toFixed(1) : '340.0';
   const initialSuccesses = state.successCount || initialProcessed;
   const initialErrors = state.errorCount || 0;

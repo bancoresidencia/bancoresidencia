@@ -1,28 +1,21 @@
 import { DatabaseSync } from 'node:sqlite';
 
 const db = new DatabaseSync('data/sanar_crawler.db');
+const colsQ = db.prepare('PRAGMA table_info(questions)').all();
+console.log('Columns in questions:', colsQ.map(c => c.name));
 
-const tables = db.prepare("SELECT name FROM sqlite_master WHERE type='table'").all();
-console.log('Tables in sanar_crawler.db:', tables);
+const colsImg = db.prepare('PRAGMA table_info(question_images)').all();
+console.log('Columns in question_images:', colsImg.map(c => c.name));
 
-for (const t of tables) {
-  try {
-    const count = db.prepare(`SELECT count(*) as c FROM "${t.name}"`).get();
-    console.log(`Table ${t.name}: ${count.c} rows`);
-  } catch (e) {
-    console.log(`Table ${t.name}: error (${e.message})`);
-  }
+// Search for derrame pleural or AMRIGS 2026
+const sample = db.prepare(`SELECT * FROM questions WHERE (enunciado_texto LIKE '%volumoso derrame pleural%' OR enunciado_texto LIKE '%septações%') LIMIT 5`).all();
+console.log('Matching questions for derrame pleural:', sample.length);
+for (const s of sample) {
+  console.log('ID:', s.sanar_id, '| Banca:', s.instituicao, '| Year:', s.ano);
+  console.log('Snippet:', (s.enunciado_texto || '').substring(0, 100));
+  const imgs = db.prepare('SELECT * FROM question_images WHERE sanar_id = ?').all(s.sanar_id);
+  console.log('Images:', imgs);
 }
 
-// Sample questions with images in sanar_crawler.db
-try {
-  const sample = db.prepare(`
-    SELECT sanar_id, instituicao, ano, substr(enunciado_texto, 1, 80) as snippet, url
-    FROM questions
-    LIMIT 5
-  `).all();
-  console.log('\nSample questions in sanar_crawler.db:');
-  console.log(JSON.stringify(sample, null, 2));
-} catch (e) {
-  console.log('Error querying questions:', e.message);
-}
+const amrigs2026 = db.prepare(`SELECT count(*) as c FROM questions WHERE (instituicao LIKE '%AMRIGS%' OR instituicao_sigla LIKE '%AMRIGS%') AND ano = 2026`).get();
+console.log('AMRIGS 2026 questions in sanar_crawler.db:', amrigs2026.c);

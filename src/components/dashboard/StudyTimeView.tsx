@@ -322,21 +322,6 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
       });
     });
 
-    // Se não há sessões de tema direto, verifica se há respostas filtradas com tema
-    if (map.size === 0 && filteredAnswers.length > 0) {
-      filteredAnswers.forEach((ans) => {
-        const canonical = mapToCanonicalSpecialty(ans.specialty);
-        if (selectedSpecialty && canonical !== selectedSpecialty) return;
-        const tema = ans.tema?.trim() || 'Tópicos Gerais';
-        const prev = map.get(tema) || { duration: 0, sessionsCount: 0, specialty: canonical };
-        map.set(tema, {
-          duration: prev.duration + 60, // estimativa de tempo
-          sessionsCount: prev.sessionsCount + 1,
-          specialty: canonical
-        });
-      });
-    }
-
     // Base de cálculo para porcentagem do tema:
     // Se selecionou uma especialidade, percentual é relativo à especialidade selecionada!
     // Se nenhuma selecionada, percentual é relativo ao total geral.

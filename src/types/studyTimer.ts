@@ -79,4 +79,15 @@ export interface StudyTimerContextType {
     correctCount?: number;
     notes?: string;
   }) => Promise<StudySession>;
+  recordActivitySession: (data: {
+    startTime: string;
+    endTime?: string;
+    taxonomy: SelectedTaxonomy;
+    studyType: StudyType;
+    sessionSource?: 'manual' | 'questoes' | 'simulado' | 'flashcards';
+    questionsCount?: number;
+    correctCount?: number;
+    incorrectCount?: number;
+    notes?: string;
+  }) => Promise<StudySession>;
 }

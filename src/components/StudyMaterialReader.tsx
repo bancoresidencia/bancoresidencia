@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { StudyMaterialItem, FlashcardItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
+import { useStudyTimer } from '@/context/StudyTimerContext';
 import { Button, Badge } from '@/components/ui';
 import {
   HighlighterColor,
@@ -80,7 +81,37 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
+  const { status: timerStatus, recordActivitySession } = useStudyTimer();
   const articleRef = useRef<HTMLElement | null>(null);
+  const timerStatusRef = useRef(timerStatus);
+  const recordActivityRef = useRef(recordActivitySession);
+  useEffect(() => {
+    timerStatusRef.current = timerStatus;
+    recordActivityRef.current = recordActivitySession;
+  }, [timerStatus, recordActivitySession]);
+
+  useEffect(() => {
+    if (!material?.id) return;
+    const startMs = Date.now();
+    const matSnapshot = material;
+    return () => {
+      const elapsedSecs = Math.floor((Date.now() - startMs) / 1000);
+      if (timerStatusRef.current === 'idle' && elapsedSecs >= 30) {
+        recordActivityRef.current({
+          startTime: new Date(startMs).toISOString(),
+          endTime: new Date().toISOString(),
+          taxonomy: {
+            especialidade: matSnapshot.specialty,
+            tema: matSnapshot.theme,
+            foco: matSnapshot.focus,
+            rawLabel: matSnapshot.title
+          },
+          studyType: 'resumo',
+          sessionSource: 'manual'
+        }).catch(() => {});
+      }
+    };
+  }, [material]);
 
   // Estados de Grifos & Destaques de Texto (Modo Instantâneo Fluido)
   const [highlights, setHighlights] = useState<StudyHighlight[]>([]);
