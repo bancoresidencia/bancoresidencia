@@ -208,6 +208,43 @@ export function touchesInk(stroke: InkStroke, point: InkPoint, radius: number) {
   })
 }
 
+export function touchesInkSegment(stroke: InkStroke, from: InkPoint, to: InkPoint, radius: number): boolean {
+  if (!stroke.points.length) return false
+  const pad = radius + stroke.width / 2
+  const segMinX = Math.min(from.x, to.x) - pad
+  const segMaxX = Math.max(from.x, to.x) + pad
+  const segMinY = Math.min(from.y, to.y) - pad
+  const segMaxY = Math.max(from.y, to.y) + pad
+
+  let minX = Infinity
+  let maxX = -Infinity
+  let minY = Infinity
+  let maxY = -Infinity
+  for (const pt of stroke.points) {
+    if (pt.x < minX) minX = pt.x
+    if (pt.x > maxX) maxX = pt.x
+    if (pt.y < minY) minY = pt.y
+    if (pt.y > maxY) maxY = pt.y
+  }
+  if (maxX < segMinX || minX > segMaxX || maxY < segMinY || minY > segMaxY) {
+    return false
+  }
+
+  const dist = Math.hypot(to.x - from.x, to.y - from.y)
+  if (dist < 1) return touchesInk(stroke, to, radius)
+  const steps = Math.max(1, Math.ceil(dist / Math.max(2, radius * 0.5)))
+  for (let s = 0; s <= steps; s++) {
+    const t = s / steps
+    const p: InkPoint = {
+      x: from.x + (to.x - from.x) * t,
+      y: from.y + (to.y - from.y) * t,
+      force: 1
+    }
+    if (touchesInk(stroke, p, radius)) return true
+  }
+  return false
+}
+
 export function cutInk(stroke: InkStroke, path: InkPoint[], radius: number): InkStroke[] {
   if (!path.length) return [stroke]
   const eraser = { ...stroke, points: path, width: radius * 2 }

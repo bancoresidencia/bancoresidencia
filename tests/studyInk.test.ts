@@ -5,6 +5,7 @@ import {
   insideLasso,
   projectInk,
   touchesInk,
+  touchesInkSegment,
   type InkStroke
 } from '../src/services/studyInk.ts'
 import {
@@ -28,6 +29,8 @@ const line: InkStroke = {
   pressure: false
 }
 assert.equal(touchesInk(line, p(50, 2), 2), true)
+assert.equal(touchesInkSegment(line, p(50, -80), p(50, 80), 4), true)
+assert.equal(touchesInkSegment(line, p(50, 40), p(50, 90), 4), false)
 const fragments = cutInk(line, [p(50, 0)], 5)
 assert.equal(fragments.length, 2)
 assert.ok(fragments.every((s) => s.color === line.color && !touchesInk(s, p(50, 0), 1)))

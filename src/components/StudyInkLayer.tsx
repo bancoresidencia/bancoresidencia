@@ -4,6 +4,7 @@ import {
   useCallback,
   useEffect,
   useId,
+  useMemo,
   useRef,
   useState,
   useSyncExternalStore,
@@ -17,7 +18,7 @@ import {
   saveInk,
   readNotes,
   saveNotes,
-  touchesInk,
+  touchesInkSegment,
   cutInk,
   insideLasso,
   projectInk,
@@ -182,7 +183,7 @@ function Editor({
   const [counts, setCounts] = useState<[number, number]>([0, 0])
   const [blocks, setBlocks] = useState<Record<string, InkBox>>({})
   const [storedStrokes, setStrokes] = useState<InkStroke[]>(() => getSynchronousLocalInk(baseDoc, attemptNumber))
-  const strokes = storedStrokes.map((s) => projectInk(s, blocks))
+  const strokes = useMemo(() => storedStrokes.map((s) => projectInk(s, blocks)), [storedStrokes, blocks])
   const [previousStrokes, setPreviousStrokes] = useState<InkStroke[]>(() =>
     attemptNumber > 1 ? getSynchronousLocalInk(baseDoc, attemptNumber - 1) : []
   )
@@ -200,11 +201,12 @@ function Editor({
 
   const [postIts, setPostIts] = useState<StickyPostIt[]>(() => readNotes(baseDoc, attemptNumber))
   const [ready, setReady] = useState(false)
-  const [eraserCursor, setEraserCursor] = useState<{ x: number; y: number } | null>(null)
+  const eraserCircleRef = useRef<SVGCircleElement>(null)
   const activeTouches = useRef<Map<number, { x: number; y: number; time: number }>>(new Map())
   const twoFingerUndoCandidate = useRef<boolean>(false)
   const blockedInteractiveTarget = useRef<HTMLElement | null>(null)
   const barrelHoverArmedUntil = useRef<number>(0)
+  const enteredEraseViaAirClick = useRef<boolean>(false)
 
   const touchState = useRef<{
     startX: number
@@ -224,6 +226,7 @@ function Editor({
     startedWithZeroPressurePen: boolean
     maxPressure: number
     startTime: number
+    lastEraserPt: InkPoint | null
     stroke: InkStroke
     erased: Map<string, InkStroke>
     markerLineY: number | null
@@ -234,7 +237,20 @@ function Editor({
   const redo = useRef<InkChange[]>([])
   const checkpoint = useRef(0)
 
-  const effectiveRadius = Math.max(radius, 14)
+  const effectiveRadius = Math.max(radius * 1.4, 22)
+
+  function updateEraserCursor(pt: InkPoint | null) {
+    const circle = eraserCircleRef.current
+    if (!circle) return
+    if (!pt) {
+      circle.style.display = 'none'
+      return
+    }
+    circle.setAttribute('cx', String(pt.x))
+    circle.setAttribute('cy', String(pt.y))
+    circle.setAttribute('r', String(effectiveRadius))
+    circle.style.display = ''
+  }
 
   useEffect(() => {
     hydrateStudyInkPreferences(owner)
@@ -488,6 +504,7 @@ function Editor({
     if (!current || current.pointer !== e.pointerId) return
     const coalesced = e.nativeEvent.getCoalescedEvents?.()
     const events = coalesced && coalesced.length > 0 ? coalesced : [e.nativeEvent]
+    const prevErasedSize = current.erased.size
 
     for (const event of events) {
       let p = point(event)
@@ -501,7 +518,8 @@ function Editor({
           current.isAndroidAirMode = true
           current.pendingAirCheck = false
           current.stroke.points = []
-          barrelHoverArmedUntil.current = performance.now() + 1200
+          current.lastEraserPt = null
+          barrelHoverArmedUntil.current = performance.now() + 2000
         } else if (event.pressure > 0) {
           current.pendingAirCheck = false
         }
@@ -511,12 +529,13 @@ function Editor({
       if (isBarrel && !current.isEraser) {
         current.isEraser = true
         current.stroke.points = []
+        current.lastEraserPt = null
       }
       const isEraserNow = current.isEraser || isBarrel || tool === 'erase'
 
-      // In Android air-hover barrel mode (pressure === 0 before touching glass), show cursor only without drawing/erasing yet
+      // In Android air-hover barrel mode (pressure === 0 before touching glass), show cursor via DOM ref without drawing/erasing yet
       if (current.isAndroidAirMode && event.pressure === 0 && !isBarrel && tool !== 'erase') {
-        setEraserCursor(p)
+        updateEraserCursor(p)
         continue
       }
 
@@ -529,15 +548,21 @@ function Editor({
       current.stroke.points.push(p)
 
       if (isEraserNow) {
+        const fromPt = current.lastEraserPt ?? p
         for (const stroke of strokes) {
-          if ((!onlyMarker || stroke.kind === 'marker') && touchesInk(stroke, p, effectiveRadius)) {
+          if (
+            (!onlyMarker || stroke.kind === 'marker') &&
+            !current.erased.has(stroke.id) &&
+            touchesInkSegment(stroke, fromPt, p, effectiveRadius)
+          ) {
             current.erased.set(stroke.id, stroke)
           }
         }
+        current.lastEraserPt = p
       }
     }
 
-    if (current.isEraser || tool === 'erase') {
+    if ((current.isEraser || tool === 'erase') && current.erased.size !== prevErasedSize) {
       setErasedIds([...current.erased.keys()])
     }
 
@@ -556,7 +581,7 @@ function Editor({
     }
 
     if (current.isEraser || current.pendingAirCheck || tool === 'erase') {
-      setPreview(null)
+      if (preview !== null) setPreview(null)
     } else {
       setPreview({ ...current.stroke })
     }
@@ -573,16 +598,28 @@ function Editor({
     barrelHoverArmedUntil.current = 0
 
     // Quick click of the S Pen side button in the air (pressure stayed 0 and nothing touched): toggle Pen <-> Eraser
-    if (
+    const isQuickAirClick =
       (current.isAndroidAirMode || current.pendingAirCheck || current.startedWithZeroPressurePen) &&
       current.maxPressure === 0 &&
       current.erased.size === 0 &&
       performance.now() - current.startTime < 450
-    ) {
-      setInkToolDirect(tool === 'erase' ? 'pen' : 'erase')
+
+    if (isQuickAirClick && tool !== 'erase') {
+      enteredEraseViaAirClick.current = true
+      setInkToolDirect('erase')
       setErasedIds([])
       setPreview(null)
       return
+    }
+    if (isQuickAirClick && tool === 'erase' && enteredEraseViaAirClick.current) {
+      enteredEraseViaAirClick.current = false
+      setInkToolDirect('pen')
+      setErasedIds([])
+      setPreview(null)
+      return
+    }
+    if (current.maxPressure > 0 || current.erased.size > 0) {
+      enteredEraseViaAirClick.current = false
     }
 
     const bounds = Object.entries(blocks).find(
@@ -790,8 +827,23 @@ function Editor({
   }
 
   function start(e: ReactPointerEvent<SVGSVGElement>) {
-    if (!ready || tool === 'read' || active.current) return
+    if (!ready || tool === 'read') return
     if (e.button > 2 && e.button !== 5) return
+
+    // If an air-only Android barrel session is still active when the nib physically touches the glass, promote seamlessly
+    if (active.current) {
+      if (
+        (active.current.isAndroidAirMode || active.current.pendingAirCheck) &&
+        active.current.maxPressure === 0 &&
+        e.pointerType === 'pen' &&
+        e.pressure > 0
+      ) {
+        active.current = null
+        barrelHoverArmedUntil.current = performance.now() + 2000
+      } else {
+        return
+      }
+    }
 
     setActiveInkDoc(doc)
 
@@ -870,6 +922,7 @@ function Editor({
       startedWithZeroPressurePen: !standardBarrel && androidAirDown,
       maxPressure: e.pressure || 0,
       startTime: performance.now(),
+      lastEraserPt: null,
       erased: new Map(),
       markerLineY: initialPt.y,
       stroke: { ...styles[kind], kind, id: crypto.randomUUID(), created: Date.now(), points: [] }
@@ -1028,17 +1081,17 @@ function Editor({
           onPointerMove={(e) => {
             const androidAirHover = isAndroidAirBarrel(e.nativeEvent)
             if (androidAirHover) {
-              barrelHoverArmedUntil.current = performance.now() + 1200
+              barrelHoverArmedUntil.current = performance.now() + 2000
             }
             const barrelHover = isBarrelOrEraser(e.nativeEvent) || androidAirHover
             if (tool === 'erase' || active.current?.isEraser || barrelHover) {
-              setEraserCursor(point(e.nativeEvent))
-            } else if (eraserCursor) {
-              setEraserCursor(null)
+              updateEraserCursor(point(e.nativeEvent))
+            } else {
+              updateEraserCursor(null)
             }
             sample(e)
           }}
-          onPointerLeave={() => setEraserCursor(null)}
+          onPointerLeave={() => updateEraserCursor(null)}
           onPointerUp={(e) => {
             if (e.pointerType === 'touch') {
               const touchInfo = activeTouches.current.get(e.pointerId)
@@ -1151,18 +1204,18 @@ function Editor({
 
           {preview && preview.kind === 'marker' && render(preview, false)}
 
-          {eraserCursor && (
-            <circle
-              cx={eraserCursor.x}
-              cy={eraserCursor.y}
-              r={effectiveRadius}
-              fill="rgba(244,63,94,0.15)"
-              stroke="#f43f5e"
-              strokeWidth={1.5}
-              strokeDasharray="4 3"
-              pointerEvents="none"
-            />
-          )}
+          <circle
+            ref={eraserCircleRef}
+            cx={0}
+            cy={0}
+            r={effectiveRadius}
+            fill="rgba(244,63,94,0.15)"
+            stroke="#f43f5e"
+            strokeWidth={1.5}
+            strokeDasharray="4 3"
+            pointerEvents="none"
+            style={{ display: 'none' }}
+          />
         </svg>
 
         {postIts.map((p) => {
