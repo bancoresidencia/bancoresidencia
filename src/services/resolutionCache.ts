@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { supabase } from '@/lib/supabase';
 
 export interface QuestionResolution {
   questionId: string;
@@ -12,6 +13,9 @@ export interface QuestionResolution {
 
 // Cache em memória de resoluções de questões (gabaritos, comentários e justificativas)
 const resolutionCache = new Map<string, QuestionResolution>();
+
+// Ticket de sessão assinado por ID de questão (para suportar paginação e listas > 50 questões)
+const ticketByQuestionId = new Map<string, string>();
 
 // Mapa de promessas ativas para evitar requisições redundantes de lote simultâneas
 const inFlightBatches = new Map<string, Promise<Record<string, QuestionResolution>>>();
@@ -55,19 +59,59 @@ export function setQuestionResolution(questionId: string, resolution: QuestionRe
 }
 
 /**
+ * Registra os sessionTickets recebidos de /api/questions por questão, preservando
+ * a autorização correta ao combinar múltiplas páginas ou lotes > 50 questões.
+ */
+export function registerSessionTicketsFromResult(result: {
+  questions?: { id: string }[];
+  sessionTicket?: string;
+  sessionTicketsByQuestionId?: Record<string, string>;
+}): void {
+  if (result.sessionTicketsByQuestionId) {
+    Object.entries(result.sessionTicketsByQuestionId).forEach(([qId, ticket]) => {
+      if (qId && ticket) ticketByQuestionId.set(qId, ticket);
+    });
+  }
+  if (result.sessionTicket && Array.isArray(result.questions)) {
+    for (const q of result.questions) {
+      if (q?.id && !result.sessionTicketsByQuestionId?.[q.id]) {
+        ticketByQuestionId.set(q.id, result.sessionTicket);
+      }
+    }
+  }
+}
+
+/**
+ * Obtém headers com Authorization Bearer da sessão local (leitura em memória/storage,
+ * sem round-trip de rede) para acelerar a autenticação nos endpoints /solve e /solve-batch.
+ */
+export async function getClientAuthHeaders(): Promise<Record<string, string>> {
+  const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+  try {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session?.access_token) {
+      headers.Authorization = `Bearer ${session.access_token}`;
+    }
+  } catch {
+    // fallback silencioso para autenticação por cookie SSR
+  }
+  return headers;
+}
+
+/**
  * Dispara o pré-carregamento em lote de gabaritos, justificativas e comentários.
- * Elimina duplicatas, pula questões já cacheadas e roda de forma não bloqueante em background.
+ * Agrupa IDs pelo sessionTicket correspondente, elimina duplicatas e roda em background.
  */
 export async function prefetchQuestionResolutions(
   questionIds: string[],
-  sessionTicket?: string
+  fallbackSessionTicket?: string
 ): Promise<Record<string, QuestionResolution>> {
   if (!Array.isArray(questionIds) || questionIds.length === 0) {
     return {};
   }
 
   // Filtra apenas as que ainda não estão em cache
-  const missingIds = questionIds.filter((id) => Boolean(id && !resolutionCache.has(id)));
+  const missingIds = Array.from(new Set(questionIds.filter((id) => Boolean(id && !resolutionCache.has(id)))));
   if (missingIds.length === 0) {
     const cached: Record<string, QuestionResolution> = {};
     questionIds.forEach((id) => {
@@ -77,31 +121,47 @@ export async function prefetchQuestionResolutions(
     return cached;
   }
 
-  // Cria chave determinística para o lote
+  // Agrupa IDs pelo ticket que os autoriza para evitar 403 em listas paginadas ou > 50 itens
+  const idsByTicket = new Map<string, string[]>();
+  for (const id of missingIds) {
+    const ticket = ticketByQuestionId.get(id) || fallbackSessionTicket || '';
+    if (!ticket) continue;
+    const list = idsByTicket.get(ticket);
+    if (list) list.push(id);
+    else idsByTicket.set(ticket, [id]);
+  }
+
+  if (idsByTicket.size === 0) {
+    return {};
+  }
+
   const batchKey = [...missingIds].sort().join(',');
   const existingBatch = inFlightBatches.get(batchKey);
   if (existingBatch) {
     return existingBatch;
   }
 
-  // Particiona em blocos de até 50 IDs
   const CHUNK_SIZE = 50;
-  const chunks: string[][] = [];
-  for (let i = 0; i < missingIds.length; i += CHUNK_SIZE) {
-    chunks.push(missingIds.slice(i, i + CHUNK_SIZE));
-  }
+  const requests: Array<{ ticket: string; chunk: string[] }> = [];
+  idsByTicket.forEach((ids, ticket) => {
+    for (let i = 0; i < ids.length; i += CHUNK_SIZE) {
+      requests.push({ ticket, chunk: ids.slice(i, i + CHUNK_SIZE) });
+    }
+  });
 
   const batchPromise = (async () => {
     const combinedResults: Record<string, QuestionResolution> = {};
     const updatedIds: string[] = [];
+    const headers = await getClientAuthHeaders();
 
     await Promise.all(
-      chunks.map(async (chunk) => {
+      requests.map(async ({ ticket, chunk }) => {
         try {
           const res = await fetch('/api/questions/solve-batch', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ questionIds: chunk, sessionTicket })
+            headers,
+            credentials: 'same-origin',
+            body: JSON.stringify({ questionIds: chunk, sessionTicket: ticket })
           });
 
           if (!res.ok) {
@@ -147,7 +207,6 @@ export async function waitForQuestionResolution(
   const immediate = resolutionCache.get(questionId);
   if (immediate) return immediate;
 
-  // Busca se há algum lote em voo que contenha este ID
   const pendingPromises = Array.from(inFlightBatches.values());
   if (pendingPromises.length === 0) return null;
 
@@ -174,13 +233,11 @@ export function useQuestionResolution(questionId: string | undefined): QuestionR
       return;
     }
 
-    // Atualiza imediatamente se já estiver em cache
     const current = getQuestionResolution(questionId);
     if (current) {
       setResolution(current);
     }
 
-    // Se inscreve para atualizações (caso o lote termine depois do mount)
     const unsubscribe = subscribeToResolutions((updatedIds) => {
       if (updatedIds.includes(questionId)) {
         setResolution(getQuestionResolution(questionId));
@@ -192,4 +249,3 @@ export function useQuestionResolution(questionId: string | undefined): QuestionR
 
   return resolution;
 }
-

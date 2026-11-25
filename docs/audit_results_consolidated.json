@@ -1,0 +1,1503 @@
+{
+  "metadata": {
+    "url": "http://localhost:3000",
+    "date": "2026-11-23T05:03:34.694Z",
+    "testedDevices": [
+      "iPhone 14 Pro (393x852)",
+      "Pixel 7 (412x915)",
+      "iPhone SE (Compact) (375x667)",
+      "Ultra-Narrow (320px) (320x648)",
+      "iPad Mini (Tablet Portrait) (768x1024)"
+    ]
+  },
+  "consoleLogs": [],
+  "hydrationErrors": [],
+  "webglPerformanceWarnings": [],
+  "overflowsByViewport": {
+    "iPhone 14 Pro": {
+      "scrollW": 393,
+      "docW": 393,
+      "hasOverflow": false,
+      "elements": []
+    },
+    "Pixel 7": {
+      "scrollW": 412,
+      "docW": 412,
+      "hasOverflow": false,
+      "elements": []
+    },
+    "iPhone SE (Compact)": {
+      "scrollW": 375,
+      "docW": 375,
+      "hasOverflow": false,
+      "elements": []
+    },
+    "Ultra-Narrow (320px)": {
+      "scrollW": 320,
+      "docW": 320,
+      "hasOverflow": false,
+      "elements": []
+    },
+    "iPad Mini (Tablet Portrait)": {
+      "scrollW": 768,
+      "docW": 768,
+      "hasOverflow": false,
+      "elements": []
+    }
+  },
+  "overlapsDetected": [],
+  "structureLossDesktopToMobile": [],
+  "buttonsAudit": [
+    {
+      "category": "Header",
+      "element": "Menu Hamburguer Mobile (Abertura)",
+      "status": "Sucesso",
+      "notes": "Menu aberto perfeitamente com 14 itens de navegação."
+    },
+    {
+      "category": "Header",
+      "element": "Menu Hamburguer Mobile (Fechamento)",
+      "status": "Sucesso",
+      "notes": "Menu recolhido com sucesso."
+    },
+    {
+      "category": "Header",
+      "element": "Botão \"Testar Grátis\" (Modal Auth)",
+      "status": "Sucesso",
+      "notes": "Modal de autenticação abriu centrado no mobile com backdrop e formulário legível."
+    },
+    {
+      "category": "Hero (Dobra 1)",
+      "element": "Carrossel / Pilares da Aprovação",
+      "status": "Sucesso",
+      "notes": "6 botões interativos identificados na primeira dobra."
+    },
+    {
+      "category": "Instituições & Mapa",
+      "element": "Seletor Nativo de UF (Mobile)",
+      "status": "Sucesso",
+      "notes": "Filtro de UF (SP) selecionado com sucesso no mobile."
+    },
+    {
+      "category": "Instituições & Mapa",
+      "element": "Aba \"Todas as Instituições\"",
+      "status": "Sucesso",
+      "notes": "Alternância de visualização para lista completa funcional."
+    },
+    {
+      "category": "Dentro da Plataforma (Questões)",
+      "element": "Botão de Estudo: Riscar Distrator",
+      "status": "Sucesso",
+      "notes": "Modo Riscar ativado com toast de confirmação."
+    },
+    {
+      "category": "Dentro da Plataforma (Resumos)",
+      "element": "Aba Resumos com Raio-X",
+      "status": "Sucesso",
+      "notes": "Estrutura do resumo clínico carregada com Raio-X de recorrência."
+    },
+    {
+      "category": "Dentro da Plataforma (Desempenho)",
+      "element": "Aba Desempenho e Gráficos TRI",
+      "status": "Sucesso",
+      "notes": "Métricas analíticas e gráficos renderizados com Recharts responsivo."
+    },
+    {
+      "category": "Planos de Preços",
+      "element": "Botão de Assinatura do Card de Plano",
+      "status": "Sucesso",
+      "notes": "Disparou modal de cadastro com o plano pré-selecionado."
+    },
+    {
+      "category": "FAQ",
+      "element": "Acordeão de Dúvidas Frequentes",
+      "status": "Sucesso",
+      "notes": "4 perguntas expandidas e recolhidas com CSS Grid animation."
+    }
+  ],
+  "animationsAudit": [],
+  "typographyAudit": {
+    "iPhone 14 Pro": {
+      "count": 41,
+      "samples": [
+        {
+          "tag": "SPAN",
+          "fontSize": "7.5px",
+          "lineHeight": "7.5px",
+          "text": "QUESTÕES DE RESIDÊNCIA",
+          "class": "mt-1.5 text-[7.5px] leading-none font-extralight t"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Preceptor CBC",
+          "class": "text-[10px] font-semibold text-zinc-500 dark:text-"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10.5px",
+          "lineHeight": "16.8px",
+          "text": "TRI: Alta Discriminação",
+          "class": "font-mono text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Giro do Cíngulo",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Fórnix",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Tálamo",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Corpos Mamilares",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Giro Parahipocampal",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Córtex pré-frontal",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Circuito de Papez",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Hipocampo",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Cadernos oficiais na íntegra de 2018 a 2",
+          "class": "text-[11px] text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Residência / EBSERH",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Revalidação de Diploma",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Associação Médica Brasileira & Sociedade",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        }
+      ]
+    },
+    "Pixel 7": {
+      "count": 41,
+      "samples": [
+        {
+          "tag": "SPAN",
+          "fontSize": "7.5px",
+          "lineHeight": "7.5px",
+          "text": "QUESTÕES DE RESIDÊNCIA",
+          "class": "mt-1.5 text-[7.5px] leading-none font-extralight t"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Preceptor CBC",
+          "class": "text-[10px] font-semibold text-zinc-500 dark:text-"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10.5px",
+          "lineHeight": "16.8px",
+          "text": "TRI: Alta Discriminação",
+          "class": "font-mono text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Giro do Cíngulo",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Fórnix",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Tálamo",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Corpos Mamilares",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Giro Parahipocampal",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Córtex pré-frontal",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Circuito de Papez",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Hipocampo",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Cadernos oficiais na íntegra de 2018 a 2",
+          "class": "text-[11px] text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Residência / EBSERH",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Revalidação de Diploma",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Associação Médica Brasileira & Sociedade",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        }
+      ]
+    },
+    "iPhone SE (Compact)": {
+      "count": 36,
+      "samples": [
+        {
+          "tag": "SPAN",
+          "fontSize": "7.5px",
+          "lineHeight": "7.5px",
+          "text": "QUESTÕES DE RESIDÊNCIA",
+          "class": "mt-1.5 text-[7.5px] leading-none font-extralight t"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Preceptor CBC",
+          "class": "text-[10px] font-semibold text-zinc-500 dark:text-"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10.5px",
+          "lineHeight": "16.8px",
+          "text": "TRI: Alta Discriminação",
+          "class": "font-mono text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Córtex pré-frontal",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Circuito de Papez",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Hipocampo",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Cadernos oficiais na íntegra de 2018 a 2",
+          "class": "text-[11px] text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Residência / EBSERH",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Revalidação de Diploma",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Associação Médica Brasileira & Sociedade",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Progresso",
+          "class": "text-[10px] font-semibold text-zinc-400"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "00:24",
+          "class": "font-mono"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "00:27",
+          "class": "font-mono"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Riscar",
+          "class": "text-[11px] font-bold"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "14.6667px",
+          "text": "Refazer",
+          "class": ""
+        }
+      ]
+    },
+    "Ultra-Narrow (320px)": {
+      "count": 41,
+      "samples": [
+        {
+          "tag": "SPAN",
+          "fontSize": "7.5px",
+          "lineHeight": "7.5px",
+          "text": "QUESTÕES DE RESIDÊNCIA",
+          "class": "mt-1.5 text-[7.5px] leading-none font-extralight t"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Preceptor CBC",
+          "class": "text-[10px] font-semibold text-zinc-500 dark:text-"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10.5px",
+          "lineHeight": "16.8px",
+          "text": "TRI: Alta Discriminação",
+          "class": "font-mono text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Giro do Cíngulo",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Fórnix",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Tálamo",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Corpos Mamilares",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Giro Parahipocampal",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Córtex pré-frontal",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Circuito de Papez",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Hipocampo",
+          "class": "text-[11px] sm:text-xs font-bold tracking-tight tr"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Cadernos oficiais na íntegra de 2018 a 2",
+          "class": "text-[11px] text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Residência / EBSERH",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Revalidação de Diploma",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Associação Médica Brasileira & Sociedade",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        }
+      ]
+    },
+    "iPad Mini (Tablet Portrait)": {
+      "count": 38,
+      "samples": [
+        {
+          "tag": "SPAN",
+          "fontSize": "10px",
+          "lineHeight": "10px",
+          "text": "QUESTÕES DE RESIDÊNCIA",
+          "class": "mt-1.5 text-[7.5px] leading-none font-extralight t"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Preceptor CBC",
+          "class": "text-[10px] font-semibold text-zinc-500 dark:text-"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10.5px",
+          "lineHeight": "16.8px",
+          "text": "TRI: Alta Discriminação",
+          "class": "font-mono text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Giro do Cíngulo",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Fórnix",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Tálamo",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Corpos Mamilares",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Giro Parahipocampal",
+          "class": "absolute top-0 left-0 px-2.5 py-1 rounded-full bor"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "Cadernos oficiais na íntegra de 2018 a 2",
+          "class": "text-[11px] text-zinc-500 dark:text-zinc-400"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Residência / EBSERH",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Exame Nacional de Revalidação de Diploma",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "DIV",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Associação Médica Brasileira & Sociedade",
+          "class": "text-[10px] text-zinc-500 dark:text-zinc-400 trunc"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "10px",
+          "lineHeight": "16px",
+          "text": "Progresso",
+          "class": "text-[10px] font-semibold text-zinc-400"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "00:24",
+          "class": "font-mono"
+        },
+        {
+          "tag": "SPAN",
+          "fontSize": "11px",
+          "lineHeight": "17.6px",
+          "text": "00:27",
+          "class": "font-mono"
+        }
+      ]
+    }
+  },
+  "touchTargetAudit": {
+    "iPhone 14 Pro": {
+      "total": 64,
+      "violationsCount": 49,
+      "violations": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Personalizar tema e cores (Tema ativo: Azul)",
+          "width": 56,
+          "height": 36,
+          "class": "h-9 min-h-[36px] px-2.5 rounded-full flex items-center justi"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Testar Grátis",
+          "aria": "",
+          "width": 90,
+          "height": 40,
+          "class": "inline-flex items-center justify-center h-10 sm:h-9 min-h-[4"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Abrir menu",
+          "width": 40,
+          "height": 40,
+          "class": "lg:hidden h-10 w-10 sm:h-9 sm:w-9 min-h-[40px] min-w-[40px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Rolar para a animação neuroanatômica do cérebro",
+          "width": 32,
+          "height": 38,
+          "class": "pointer-events-auto group flex flex-col items-center cursor-"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Córtex pré-frontal",
+          "aria": "",
+          "width": 106,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Circuito de Papez",
+          "aria": "",
+          "width": 100,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Hipocampo",
+          "aria": "",
+          "width": 100,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "SELECT",
+          "text": "Todas as UFsAcreAlagoasAmapáAmazona",
+          "aria": "Selecionar estado",
+          "width": 294,
+          "height": 44,
+          "class": "w-full appearance-none pl-10 pr-10 py-3 rounded-xl bg-white "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Destaques",
+          "aria": "",
+          "width": 79,
+          "height": 33,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Todas",
+          "aria": "",
+          "width": 54,
+          "height": 33,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "aria": "",
+          "width": 333,
+          "height": 37,
+          "class": "w-full pl-9 pr-9 py-2 min-h-[40px] rounded-xl bg-white dark:"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Questões na Prática",
+          "aria": "",
+          "width": 165,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Flashcards FSRS",
+          "aria": "",
+          "width": 146,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Resumos com Raio-X",
+          "aria": "",
+          "width": 172,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Painel de Desempenho & TRI",
+          "aria": "",
+          "width": 211,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 35,
+          "height": 35,
+          "class": "w-9 h-9 flex items-center justify-center rounded-xl bg-[#181"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 15,
+          "height": 15,
+          "class": "p-0.5 rounded text-zinc-500 hover:text-white cursor-pointer"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 44,
+          "height": 31,
+          "class": "flex items-center gap-1.5 pl-2.5 pr-1.5 py-1.5 min-h-[32px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Escolher cor da caneta",
+          "width": 23,
+          "height": 31,
+          "class": "pr-2 pl-1 py-1.5 min-h-[32px] flex items-center justify-cent"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Riscar",
+          "aria": "",
+          "width": 72,
+          "height": 31,
+          "class": "shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px"
+        }
+      ]
+    },
+    "Pixel 7": {
+      "total": 64,
+      "violationsCount": 49,
+      "violations": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Personalizar tema e cores (Tema ativo: Azul)",
+          "width": 56,
+          "height": 36,
+          "class": "h-9 min-h-[36px] px-2.5 rounded-full flex items-center justi"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Testar Grátis",
+          "aria": "",
+          "width": 101,
+          "height": 40,
+          "class": "inline-flex items-center justify-center h-10 sm:h-9 min-h-[4"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Abrir menu",
+          "width": 40,
+          "height": 40,
+          "class": "lg:hidden h-10 w-10 sm:h-9 sm:w-9 min-h-[40px] min-w-[40px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Rolar para a animação neuroanatômica do cérebro",
+          "width": 32,
+          "height": 38,
+          "class": "pointer-events-auto group flex flex-col items-center cursor-"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Córtex pré-frontal",
+          "aria": "",
+          "width": 110,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Circuito de Papez",
+          "aria": "",
+          "width": 108,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Hipocampo",
+          "aria": "",
+          "width": 108,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "SELECT",
+          "text": "Todas as UFsAcreAlagoasAmapáAmazona",
+          "aria": "Selecionar estado",
+          "width": 312,
+          "height": 44,
+          "class": "w-full appearance-none pl-10 pr-10 py-3 rounded-xl bg-white "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Destaques",
+          "aria": "",
+          "width": 79,
+          "height": 33,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Todas",
+          "aria": "",
+          "width": 54,
+          "height": 33,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "aria": "",
+          "width": 350,
+          "height": 37,
+          "class": "w-full pl-9 pr-9 py-2 min-h-[40px] rounded-xl bg-white dark:"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Questões na Prática",
+          "aria": "",
+          "width": 165,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Flashcards FSRS",
+          "aria": "",
+          "width": 146,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Resumos com Raio-X",
+          "aria": "",
+          "width": 172,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Painel de Desempenho & TRI",
+          "aria": "",
+          "width": 211,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 35,
+          "height": 35,
+          "class": "w-9 h-9 flex items-center justify-center rounded-xl bg-[#181"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 15,
+          "height": 15,
+          "class": "p-0.5 rounded text-zinc-500 hover:text-white cursor-pointer"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 44,
+          "height": 31,
+          "class": "flex items-center gap-1.5 pl-2.5 pr-1.5 py-1.5 min-h-[32px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Escolher cor da caneta",
+          "width": 23,
+          "height": 31,
+          "class": "pr-2 pl-1 py-1.5 min-h-[32px] flex items-center justify-cent"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Riscar",
+          "aria": "",
+          "width": 72,
+          "height": 31,
+          "class": "shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px"
+        }
+      ]
+    },
+    "iPhone SE (Compact)": {
+      "total": 64,
+      "violationsCount": 49,
+      "violations": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Personalizar tema e cores (Tema ativo: Azul)",
+          "width": 56,
+          "height": 36,
+          "class": "h-9 min-h-[36px] px-2.5 rounded-full flex items-center justi"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Testar Grátis",
+          "aria": "",
+          "width": 72,
+          "height": 40,
+          "class": "inline-flex items-center justify-center h-10 sm:h-9 min-h-[4"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Abrir menu",
+          "width": 40,
+          "height": 40,
+          "class": "lg:hidden h-10 w-10 sm:h-9 sm:w-9 min-h-[40px] min-w-[40px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Rolar para a animação neuroanatômica do cérebro",
+          "width": 32,
+          "height": 38,
+          "class": "pointer-events-auto group flex flex-col items-center cursor-"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Córtex pré-frontal",
+          "aria": "",
+          "width": 106,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Circuito de Papez",
+          "aria": "",
+          "width": 100,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Hipocampo",
+          "aria": "",
+          "width": 83,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "SELECT",
+          "text": "Todas as UFsAcreAlagoasAmapáAmazona",
+          "aria": "Selecionar estado",
+          "width": 277,
+          "height": 44,
+          "class": "w-full appearance-none pl-10 pr-10 py-3 rounded-xl bg-white "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Destaques",
+          "aria": "",
+          "width": 79,
+          "height": 33,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Todas",
+          "aria": "",
+          "width": 54,
+          "height": 33,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "aria": "",
+          "width": 316,
+          "height": 37,
+          "class": "w-full pl-9 pr-9 py-2 min-h-[40px] rounded-xl bg-white dark:"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Questões na Prática",
+          "aria": "",
+          "width": 165,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Flashcards FSRS",
+          "aria": "",
+          "width": 146,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Resumos com Raio-X",
+          "aria": "",
+          "width": 172,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Painel de Desempenho & TRI",
+          "aria": "",
+          "width": 211,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 35,
+          "height": 35,
+          "class": "w-9 h-9 flex items-center justify-center rounded-xl bg-[#181"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 15,
+          "height": 15,
+          "class": "p-0.5 rounded text-zinc-500 hover:text-white cursor-pointer"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 44,
+          "height": 31,
+          "class": "flex items-center gap-1.5 pl-2.5 pr-1.5 py-1.5 min-h-[32px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Escolher cor da caneta",
+          "width": 23,
+          "height": 31,
+          "class": "pr-2 pl-1 py-1.5 min-h-[32px] flex items-center justify-cent"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Riscar",
+          "aria": "",
+          "width": 72,
+          "height": 31,
+          "class": "shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px"
+        }
+      ]
+    },
+    "Ultra-Narrow (320px)": {
+      "total": 64,
+      "violationsCount": 47,
+      "violations": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Personalizar tema e cores (Tema ativo: Azul)",
+          "width": 56,
+          "height": 36,
+          "class": "h-9 min-h-[36px] px-2.5 rounded-full flex items-center justi"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Testar Grátis",
+          "aria": "",
+          "width": 64,
+          "height": 40,
+          "class": "inline-flex items-center justify-center h-10 sm:h-9 min-h-[4"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Abrir menu",
+          "width": 40,
+          "height": 40,
+          "class": "lg:hidden h-10 w-10 sm:h-9 sm:w-9 min-h-[40px] min-w-[40px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Rolar para a animação neuroanatômica do cérebro",
+          "width": 32,
+          "height": 38,
+          "class": "pointer-events-auto group flex flex-col items-center cursor-"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Córtex pré-frontal",
+          "aria": "",
+          "width": 106,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Circuito de Papez",
+          "aria": "",
+          "width": 100,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Hipocampo",
+          "aria": "",
+          "width": 70,
+          "height": 40,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "SELECT",
+          "text": "Todas as UFsAcreAlagoasAmapáAmazona",
+          "aria": "Selecionar estado",
+          "width": 227,
+          "height": 44,
+          "class": "w-full appearance-none pl-10 pr-10 py-3 rounded-xl bg-white "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Destaques",
+          "aria": "",
+          "width": 79,
+          "height": 33,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Todas",
+          "aria": "",
+          "width": 54,
+          "height": 33,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "aria": "",
+          "width": 265,
+          "height": 37,
+          "class": "w-full pl-9 pr-9 py-2 min-h-[40px] rounded-xl bg-white dark:"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Questões na Prática",
+          "aria": "",
+          "width": 165,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Flashcards FSRS",
+          "aria": "",
+          "width": 146,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Resumos com Raio-X",
+          "aria": "",
+          "width": 172,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Painel de Desempenho & TRI",
+          "aria": "",
+          "width": 211,
+          "height": 31,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 35,
+          "height": 35,
+          "class": "w-9 h-9 flex items-center justify-center rounded-xl bg-[#181"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 15,
+          "height": 15,
+          "class": "p-0.5 rounded text-zinc-500 hover:text-white cursor-pointer"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 44,
+          "height": 31,
+          "class": "flex items-center gap-1.5 pl-2.5 pr-1.5 py-1.5 min-h-[32px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Escolher cor da caneta",
+          "width": 23,
+          "height": 31,
+          "class": "pr-2 pl-1 py-1.5 min-h-[32px] flex items-center justify-cent"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Riscar",
+          "aria": "",
+          "width": 72,
+          "height": 31,
+          "class": "shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px"
+        }
+      ]
+    },
+    "iPad Mini (Tablet Portrait)": {
+      "total": 66,
+      "violationsCount": 49,
+      "violations": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Personalizar tema e cores (Tema ativo: Azul)",
+          "width": 58,
+          "height": 36,
+          "class": "h-9 min-h-[36px] px-2.5 rounded-full flex items-center justi"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Entrar",
+          "aria": "",
+          "width": 67,
+          "height": 36,
+          "class": "hidden sm:inline-flex items-center justify-center h-9 px-3.5"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Testar Grátis",
+          "aria": "",
+          "width": 111,
+          "height": 40,
+          "class": "inline-flex items-center justify-center h-10 sm:h-9 min-h-[4"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Abrir menu",
+          "width": 40,
+          "height": 40,
+          "class": "lg:hidden h-10 w-10 sm:h-9 sm:w-9 min-h-[40px] min-w-[40px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Rolar para a animação neuroanatômica do cérebro",
+          "width": 32,
+          "height": 38,
+          "class": "pointer-events-auto group flex flex-col items-center cursor-"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Córtex pré-frontal",
+          "aria": "",
+          "width": 173,
+          "height": 38,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Circuito de Papez",
+          "aria": "",
+          "width": 171,
+          "height": 38,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Hipocampo",
+          "aria": "",
+          "width": 171,
+          "height": 38,
+          "class": "flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] ro"
+        },
+        {
+          "tag": "SELECT",
+          "text": "Todas as UFsAcreAlagoasAmapáAmazona",
+          "aria": "Selecionar estado",
+          "width": 617,
+          "height": 42,
+          "class": "w-full appearance-none pl-10 pr-10 py-3 rounded-xl bg-white "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Destaques",
+          "aria": "",
+          "width": 79,
+          "height": 29,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Todas",
+          "aria": "",
+          "width": 54,
+          "height": 29,
+          "class": "px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transiti"
+        },
+        {
+          "tag": "INPUT",
+          "text": "",
+          "aria": "",
+          "width": 664,
+          "height": 37,
+          "class": "w-full pl-9 pr-9 py-2 min-h-[40px] rounded-xl bg-white dark:"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Questões na Prática",
+          "aria": "",
+          "width": 184,
+          "height": 35,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Flashcards FSRS",
+          "aria": "",
+          "width": 162,
+          "height": 35,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Resumos com Raio-X",
+          "aria": "",
+          "width": 192,
+          "height": 35,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Painel de Desempenho & TRI",
+          "aria": "",
+          "width": 237,
+          "height": 35,
+          "class": "flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 35,
+          "height": 35,
+          "class": "w-9 h-9 flex items-center justify-center rounded-xl bg-[#181"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 15,
+          "height": 15,
+          "class": "p-0.5 rounded text-zinc-500 hover:text-white cursor-pointer"
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "",
+          "width": 44,
+          "height": 31,
+          "class": "flex items-center gap-1.5 pl-2.5 pr-1.5 py-1.5 min-h-[32px] "
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Escolher cor da caneta",
+          "width": 23,
+          "height": 31,
+          "class": "pr-2 pl-1 py-1.5 min-h-[32px] flex items-center justify-cent"
+        }
+      ]
+    }
+  }
+}

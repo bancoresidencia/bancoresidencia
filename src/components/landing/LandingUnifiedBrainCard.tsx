@@ -117,11 +117,10 @@ function LateralWireframeCard({ sceneIndex, isVisible }: { sceneIndex: number; i
   return (
     <aside
       aria-hidden="true"
-      className={`hidden md:block absolute -bottom-5 -right-4 sm:-bottom-7 sm:-right-6 w-[205px] xl:w-[225px] select-none pointer-events-none transition-all duration-500 ease-out z-30 ${
-        isVisible
+      className={`hidden md:block absolute -bottom-5 -right-4 sm:-bottom-7 sm:-right-6 w-[205px] xl:w-[225px] select-none pointer-events-none transition-all duration-500 ease-out z-30 ${isVisible
           ? 'opacity-100 scale-100 translate-y-0'
           : 'opacity-0 scale-95 translate-y-4 pointer-events-none'
-      }`}
+        }`}
     >
       {/* CENÁRIO 0: ESTRUTURA DE RESUMO OFICIAL (CÓRTEX) */}
       {sceneIndex === 0 && (
@@ -362,29 +361,26 @@ export const LandingUnifiedBrainCard = memo(function LandingUnifiedBrainCard({
                 type="button"
                 key={scene.id}
                 onClick={() => handleTabClick(scene.id)}
-                className={`flex-1 py-1 px-1.5 sm:px-2 rounded-xl transition-all duration-300 flex flex-col justify-between cursor-pointer ${
-                  isActive
+                className={`flex-1 py-1.5 px-1.5 sm:px-2 min-h-[38px] sm:min-h-[36px] rounded-xl transition-all duration-300 flex flex-col justify-between cursor-pointer ${isActive
                     ? 'bg-zinc-100/90 dark:bg-zinc-900/90 border border-zinc-200/90 dark:border-zinc-800 shadow-2xs'
                     : 'opacity-40 hover:opacity-75'
-                }`}
+                  }`}
                 title={`Ir para ${scene.id === 'cortex-pfc' ? 'Resumos' : scene.id === 'papez' ? 'Flashcards' : 'Questões'} na plataforma`}
               >
                 <div className="flex items-center justify-center min-w-0">
                   <span
-                    className={`text-[10px] sm:text-[11px] font-bold tracking-tight truncate whitespace-nowrap ${
-                      isActive
+                    className={`text-[11px] sm:text-xs font-bold tracking-tight truncate whitespace-nowrap ${isActive
                         ? 'text-zinc-950 dark:text-zinc-100'
                         : 'text-zinc-500 dark:text-zinc-400 font-medium'
-                    }`}
+                      }`}
                   >
                     {scene.structure}
                   </span>
                 </div>
                 {/* Linha luminosa de acento no rodapé da aba ativa */}
                 <div
-                  className={`mt-1.5 h-0.5 w-full rounded-full transition-all duration-300 ${
-                    isActive ? 'bg-[color:var(--journey-accent)] opacity-100' : 'bg-transparent opacity-0'
-                  }`}
+                  className={`mt-1.5 h-0.5 w-full rounded-full transition-all duration-300 ${isActive ? 'bg-[color:var(--journey-accent)] opacity-100' : 'bg-transparent opacity-0'
+                    }`}
                 />
               </button>
             );
@@ -402,9 +398,8 @@ export const LandingUnifiedBrainCard = memo(function LandingUnifiedBrainCard({
             <div className="space-y-3.5 animate-in fade-in duration-300">
               {/* 1. Tese: base anatômica */}
               <div
-                className={`transition-opacity duration-300 ${
-                  isAntithesisVisible ? 'opacity-80 dark:opacity-85' : 'opacity-100'
-                }`}
+                className={`transition-opacity duration-300 ${isAntithesisVisible ? 'opacity-80 dark:opacity-85' : 'opacity-100'
+                  }`}
               >
                 <h4 className="text-sm sm:text-[15px] font-bold text-zinc-950 dark:text-zinc-100 leading-snug">
                   {phase1.title.slice(0, -phase1.highlight.length)}

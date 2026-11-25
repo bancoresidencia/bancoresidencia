@@ -81,15 +81,15 @@ const journeyCards = [
   }
 ];
 
-// Platôs de travamento deliberado (Opção 1):
-// Cada momento (Tese, Antítese, Síntese) possui um platô amplo de leitura sustentada.
-// Entre as cenas (Córtex -> Papez -> Hipocampo), aplicamos zonas de escape com histerese
+// Platôs de travamento deliberado e equilibrado:
+// Cada momento (Tese, Antítese, Síntese) possui um platô balanceado de leitura sustentada.
+// Entre as cenas (Córtex -> Papez -> Hipocampo), aplicamos zonas de retenção com histerese
 // para que o estudante leia com conforto absoluto sem pular texto por aceleração acidental.
-const phaseStarts = [0.06, 0.15, 0.23, 0.42, 0.51, 0.59, 0.76, 0.83, 0.90];
+const phaseStarts = [0.08, 0.18, 0.26, 0.36, 0.46, 0.55, 0.68, 0.78, 0.88];
 const phasesPerScene = 3;
 
 export function getBrainJourneyFrame(progress: number, prevFrame = 0): number {
-  const HYSTERESIS = 0.015;
+  const HYSTERESIS = 0.02;
   let calculated = 0;
   for (let i = phaseStarts.length - 1; i >= 0; i--) {
     const threshold = i > prevFrame ? phaseStarts[i] + HYSTERESIS : phaseStarts[i] - HYSTERESIS;

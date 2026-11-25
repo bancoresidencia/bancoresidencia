@@ -383,20 +383,17 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
 
   const highlightTextStyle: React.CSSProperties = isMonochrome
     ? {
-        backgroundImage:
-          mode === 'dark'
-            ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
-            : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
-      }
+      backgroundImage:
+        mode === 'dark'
+          ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
+          : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
+    }
     : {
-        backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${
-          accentConfig.chartPalette[1] ?? accentConfig.hoverHex
-        } 26%, ${
-          mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
-        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${
-          accentConfig.primaryHex
+      backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex
+        } 26%, ${mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
+        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex
         } 100%)`
-      };
+    };
 
   // Estado da aba Questões
   const [activeQuestionIdx, setActiveQuestionIdx] = useState<number>(0);
@@ -604,15 +601,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
       <div ref={sectionRef} className={`max-w-7xl mx-auto px-3 sm:px-6 space-y-6 sm:space-y-8 fold-reveal ${sectionVisible ? 'is-visible' : ''} ${sectionExiting ? 'is-exiting' : ''}`}>
         {/* Cabeçalho */}
         <div className="max-w-3xl space-y-2 text-left">
-          <h2 className="text-2xl sm:text-4xl font-black tracking-tight text-zinc-950 dark:text-white leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-[-0.03em] text-zinc-950 dark:text-white leading-[1.15]">
             Experimente o{' '}
             <span className="bg-clip-text text-transparent" style={highlightTextStyle}>
               Hippocampus
             </span>
           </h2>
-          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
-            Navegue pelas 4 ferramentas essenciais exatamente como estão dentro da plataforma real.
-          </p>
         </div>
 
         {/* Barra de Navegação Entre as 4 Abas Principais */}
@@ -621,11 +615,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             <button
               type="button"
               onClick={() => setActiveTab('questoes')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === 'questoes'
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${activeTab === 'questoes'
                   ? 'text-white shadow-md'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-              }`}
+                }`}
               style={activeTab === 'questoes' ? { backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex } : {}}
             >
               <FileText className="w-4 h-4 shrink-0" />
@@ -635,11 +628,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             <button
               type="button"
               onClick={() => setActiveTab('flashcards')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === 'flashcards'
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${activeTab === 'flashcards'
                   ? 'text-white shadow-md'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-              }`}
+                }`}
               style={activeTab === 'flashcards' ? { backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex } : {}}
             >
               <Brain className="w-4 h-4 shrink-0" />
@@ -649,11 +641,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             <button
               type="button"
               onClick={() => setActiveTab('resumos')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === 'resumos'
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${activeTab === 'resumos'
                   ? 'text-white shadow-md'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-              }`}
+                }`}
               style={activeTab === 'resumos' ? { backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex } : {}}
             >
               <BookOpen className="w-4 h-4 shrink-0" />
@@ -663,11 +654,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
             <button
               type="button"
               onClick={() => setActiveTab('desempenho')}
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${
-                activeTab === 'desempenho'
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer whitespace-nowrap ${activeTab === 'desempenho'
                   ? 'text-white shadow-md'
                   : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/60'
-              }`}
+                }`}
               style={activeTab === 'desempenho' ? { backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex } : {}}
             >
               <BarChart3 className="w-4 h-4 shrink-0" />
@@ -806,10 +796,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   </div>
                 </div>
 
-                {/* Lado Direito / Centro: Ferramentas Idênticas às Imagens */}
-                <div className="flex items-center flex-wrap gap-1.5 sm:gap-2">
+                {/* Lado Direito / Centro: Ferramentas de Estudo com Rolagem Suave no Mobile */}
+                <div className="w-full sm:w-auto flex items-center overflow-x-auto scrollbar-none pb-1 sm:pb-0 gap-1.5 sm:gap-2 flex-nowrap sm:flex-wrap">
                   {/* Cronômetro Duplo: Questão | Total */}
-                  <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-[#141620] border border-zinc-800 text-[11px] font-bold text-zinc-300">
+                  <div className="shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-[#141620] border border-zinc-800 text-[11px] font-bold text-zinc-300">
                     <div
                       className="flex items-center gap-1"
                       style={{ color: accentConfig.primaryHex }}
@@ -840,40 +830,46 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     </button>
                   </div>
 
-                  {/* Marca-texto / Caneta */}
-                  <div className="relative inline-flex items-center">
-                    <button
-                      type="button"
-                      onClick={() => {
-                        setIsHighlighterActive(!isHighlighterActive);
-                        showToast(
-                          isHighlighterActive
-                            ? 'Modo Anotar desativado'
-                            : 'Modo Anotar ativado: desenhe sobre o enunciado'
-                        );
-                      }}
-                      className={`flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px] rounded-xl border transition-all cursor-pointer ${
-                        isHighlighterActive
+                  {/* Marca-texto / Caneta (Split Button Sem Aninhamento de Botões) */}
+                  <div className="shrink-0 relative inline-flex items-center">
+                    <div
+                      className={`inline-flex items-center rounded-xl border transition-all ${isHighlighterActive
                           ? 'bg-amber-950/60 border-amber-600 text-amber-300 ring-2 ring-amber-400/30'
                           : 'bg-[#141620] hover:bg-[#1a1d2c] border-zinc-800 text-zinc-300'
-                      }`}
-                      title="Caneta / Marca-texto"
+                        }`}
                     >
-                      <Highlighter className="w-3.5 h-3.5" />
-                      <span
-                        className="w-2.5 h-2.5 rounded-full border border-black/30"
-                        style={{ backgroundColor: HIGHLIGHTER_COLORS[activeHighlighterColor].hex }}
-                      />
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setIsHighlighterActive(!isHighlighterActive);
+                          showToast(
+                            isHighlighterActive
+                              ? 'Modo Anotar desativado'
+                              : 'Modo Anotar ativado: desenhe sobre o enunciado'
+                          );
+                        }}
+                        className="flex items-center gap-1.5 pl-2.5 pr-1.5 py-1.5 min-h-[32px] cursor-pointer"
+                        title="Caneta / Marca-texto"
+                      >
+                        <Highlighter className="w-3.5 h-3.5" />
+                        <span
+                          className="w-2.5 h-2.5 rounded-full border border-black/30"
+                          style={{ backgroundColor: HIGHLIGHTER_COLORS[activeHighlighterColor].hex }}
+                        />
+                      </button>
                       <button
                         type="button"
                         onClick={(e) => {
                           e.stopPropagation();
                           setIsHighlighterOpen(!isHighlighterOpen);
                         }}
+                        className="pr-2 pl-1 py-1.5 min-h-[32px] flex items-center justify-center cursor-pointer hover:text-white"
+                        title="Escolher cor da caneta"
+                        aria-label="Escolher cor da caneta"
                       >
                         <ChevronDown className="w-3 h-3 text-zinc-400" />
                       </button>
-                    </button>
+                    </div>
 
                     {isHighlighterOpen && (
                       <div className="absolute top-full right-0 mt-2 z-50 flex items-center gap-1.5 p-2 bg-[#161822] border border-zinc-700 rounded-2xl shadow-2xl animate-in fade-in duration-150">
@@ -904,11 +900,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         isStrikethroughActive ? 'Modo Riscar desativado' : 'Modo Riscar ativo'
                       );
                     }}
-                    className={`flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px] rounded-xl border transition-all cursor-pointer ${
-                      isStrikethroughActive
+                    className={`shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 min-h-[32px] rounded-xl border transition-all cursor-pointer ${isStrikethroughActive
                         ? 'bg-rose-950/60 border-rose-600 text-rose-300 ring-2 ring-rose-400/30'
                         : 'bg-[#141620] hover:bg-[#1a1d2c] border-zinc-800 text-zinc-300'
-                    }`}
+                      }`}
                     title="Modo Riscar distrator [S]"
                   >
                     <Strikethrough className="w-3.5 h-3.5" />
@@ -921,7 +916,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                     onClick={() =>
                       setFontSize((prev) => (prev === 'sm' ? 'base' : prev === 'base' ? 'lg' : 'sm'))
                     }
-                    className="flex items-center gap-1 px-2.5 py-1.5 min-h-[32px] bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 rounded-xl text-zinc-300 text-[11px] font-bold cursor-pointer"
+                    className="shrink-0 flex items-center gap-1 px-2.5 py-1.5 min-h-[32px] bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 rounded-xl text-zinc-300 text-[11px] font-bold cursor-pointer"
                     title="Tamanho da fonte"
                   >
                     <Type className="w-3.5 h-3.5" />
@@ -938,7 +933,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       setIsBookmarked(!isBookmarked);
                       showToast(isBookmarked ? 'Removida dos favoritos' : 'Questão favoritada');
                     }}
-                    className="p-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-400 hover:text-amber-400 cursor-pointer"
+                    className="shrink-0 p-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-400 hover:text-amber-400 cursor-pointer min-h-[32px] min-w-[32px] flex items-center justify-center"
                     title="Favoritar questão"
                   >
                     <Bookmark
@@ -950,7 +945,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => showToast('Canal de curadoria médica aberto')}
-                    className="p-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-400 hover:text-amber-400 cursor-pointer"
+                    className="shrink-0 p-2 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-400 hover:text-amber-400 cursor-pointer min-h-[32px] min-w-[32px] flex items-center justify-center"
                     title="Reportar questão"
                   >
                     <Flag className="w-3.5 h-3.5" />
@@ -960,7 +955,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => setIsShortcutsOpen(true)}
-                    className="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer"
+                    className="shrink-0 hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer min-h-[32px]"
                   >
                     <Keyboard className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                     <span>Atalhos</span>
@@ -976,7 +971,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           : 'Filtros ativos: HSL / Sírio 2027 • Clínica Médica'
                       )
                     }
-                    className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer"
+                    className="shrink-0 flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-[#141620] hover:bg-[#1a1d2c] border border-zinc-800 text-zinc-300 text-xs font-bold cursor-pointer min-h-[32px]"
                     title="Filtros da sessão"
                   >
                     <SlidersHorizontal
@@ -995,7 +990,7 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => onOpenAuth('register')}
-                    className="flex items-center gap-1 px-4 py-1.5 rounded-xl text-xs font-black shadow-md cursor-pointer active:scale-95 transition-all text-white"
+                    className="shrink-0 flex items-center gap-1 px-4 py-1.5 rounded-xl text-xs font-black shadow-md cursor-pointer active:scale-95 transition-all text-white min-h-[32px]"
                     style={
                       activeQuestionIdx === 1
                         ? { backgroundColor: '#ffffff', color: '#090a0f' }
@@ -1033,17 +1028,16 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                           else if (idx === 1) switchQuestion(1);
                           else showToast(`Navegando para questão simulada ${num}`);
                         }}
-                        className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all cursor-pointer ${
-                          idx === 0
+                        className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold transition-all cursor-pointer ${idx === 0
                             ? 'text-white shadow-md ring-2'
                             : 'bg-[#181a24] text-zinc-400 hover:text-white hover:bg-zinc-800'
-                        }`}
+                          }`}
                         style={
                           idx === 0
                             ? {
-                                backgroundColor: accentConfig.primaryHex,
-                                borderColor: accentConfig.primaryHex
-                              }
+                              backgroundColor: accentConfig.primaryHex,
+                              borderColor: accentConfig.primaryHex
+                            }
                             : {}
                         }
                       >
@@ -1077,10 +1071,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       style={
                         activeQuestionIdx === 0
                           ? {
-                              backgroundColor: accentConfig.bgRgba,
-                              color: accentConfig.primaryHex,
-                              border: `1px solid ${accentConfig.borderRgba}`
-                            }
+                            backgroundColor: accentConfig.bgRgba,
+                            color: accentConfig.primaryHex,
+                            border: `1px solid ${accentConfig.borderRgba}`
+                          }
                           : { color: '#71717a' }
                       }
                     >
@@ -1093,10 +1087,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       style={
                         activeQuestionIdx === 1
                           ? {
-                              backgroundColor: accentConfig.bgRgba,
-                              color: accentConfig.primaryHex,
-                              border: `1px solid ${accentConfig.borderRgba}`
-                            }
+                            backgroundColor: accentConfig.bgRgba,
+                            color: accentConfig.primaryHex,
+                            border: `1px solid ${accentConfig.borderRgba}`
+                          }
                           : { color: '#71717a' }
                       }
                     >
@@ -1191,9 +1185,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
               {/* Enunciado Oficial com Camada de Desenho SVG */}
               <div className="relative select-text">
                 <div
-                  className={`text-zinc-100 font-medium leading-relaxed whitespace-pre-line ${
-                    fontSize === 'sm' ? 'text-sm' : fontSize === 'lg' ? 'text-lg' : 'text-base'
-                  }`}
+                  className={`text-zinc-100 font-medium leading-relaxed whitespace-pre-line ${fontSize === 'sm' ? 'text-sm' : fontSize === 'lg' ? 'text-lg' : 'text-base'
+                    }`}
                 >
                   {currentQuestion.statement}
                 </div>
@@ -1204,9 +1197,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   onPointerDown={handlePointerDown}
                   onPointerMove={handlePointerMove}
                   onPointerUp={handlePointerUp}
-                  className={`absolute inset-0 w-full h-full pointer-events-${isHighlighterActive ? 'auto' : 'none'} ${
-                    isHighlighterActive ? 'cursor-crosshair touch-none' : ''
-                  }`}
+                  className={`absolute inset-0 w-full h-full pointer-events-${isHighlighterActive ? 'auto' : 'none'} ${isHighlighterActive ? 'cursor-crosshair touch-none' : ''
+                    }`}
                   style={{ zIndex: 10 }}
                 >
                   {strokes.map((s, idx) => (
@@ -1252,9 +1244,8 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                       <div
                         key={opt.letter}
                         onClick={() => handleSelectOption(opt.letter)}
-                        className={`p-4 rounded-2xl border transition-all duration-150 cursor-pointer space-y-3 ${containerBorder} ${
-                          isStriked ? 'opacity-30 line-through' : ''
-                        }`}
+                        className={`p-4 rounded-2xl border transition-all duration-150 cursor-pointer space-y-3 ${containerBorder} ${isStriked ? 'opacity-30 line-through' : ''
+                          }`}
                       >
                         <div className="flex items-center justify-between gap-4">
                           <div className="flex items-center gap-3.5 min-w-0">
@@ -1802,11 +1793,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                         key={bancaItem.banca}
                         type="button"
                         onClick={() => setSelectedBancaIdx(bIdx)}
-                        className={`px-3 py-1 rounded-lg text-xs font-bold cursor-pointer transition-all ${
-                          selectedBancaIdx === bIdx
+                        className={`px-3 py-1 rounded-lg text-xs font-bold cursor-pointer transition-all ${selectedBancaIdx === bIdx
                             ? 'text-white shadow-sm'
                             : 'bg-zinc-800 text-zinc-400 hover:text-white'
-                        }`}
+                          }`}
                         style={
                           selectedBancaIdx === bIdx
                             ? { backgroundColor: accentConfig.primaryHex }
@@ -1845,11 +1835,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   {currentSummary.pontosChave.map((pt) => (
                     <div
                       key={pt.titulo}
-                      className={`p-4 rounded-2xl border text-xs sm:text-sm leading-relaxed ${
-                        pt.alerta
+                      className={`p-4 rounded-2xl border text-xs sm:text-sm leading-relaxed ${pt.alerta
                           ? 'bg-[#181208] border-amber-700/60 text-amber-200'
                           : 'bg-[#141622] border-zinc-800 text-zinc-300'
-                      }`}
+                        }`}
                     >
                       <div className="font-bold flex items-center gap-1.5 mb-1.5">
                         {pt.alerta ? (
@@ -1939,11 +1928,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => setDashboardTab('visao_geral')}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                      dashboardTab === 'visao_geral'
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${dashboardTab === 'visao_geral'
                         ? 'text-white shadow-sm'
                         : 'text-zinc-400 hover:text-white'
-                    }`}
+                      }`}
                     style={
                       dashboardTab === 'visao_geral'
                         ? { backgroundColor: accentConfig.primaryHex }
@@ -1957,11 +1945,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => setDashboardTab('especialidades')}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                      dashboardTab === 'especialidades'
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${dashboardTab === 'especialidades'
                         ? 'text-white shadow-sm'
                         : 'text-zinc-400 hover:text-white'
-                    }`}
+                      }`}
                     style={
                       dashboardTab === 'especialidades'
                         ? { backgroundColor: accentConfig.primaryHex }
@@ -1974,11 +1961,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => setDashboardTab('raiox_erros')}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                      dashboardTab === 'raiox_erros'
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${dashboardTab === 'raiox_erros'
                         ? 'text-white shadow-sm'
                         : 'text-zinc-400 hover:text-white'
-                    }`}
+                      }`}
                     style={
                       dashboardTab === 'raiox_erros'
                         ? { backgroundColor: accentConfig.primaryHex }
@@ -1994,11 +1980,10 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
                   <button
                     type="button"
                     onClick={() => setDashboardTab('tempo')}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                      dashboardTab === 'tempo'
+                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${dashboardTab === 'tempo'
                         ? 'text-white shadow-sm'
                         : 'text-zinc-400 hover:text-white'
-                    }`}
+                      }`}
                     style={
                       dashboardTab === 'tempo'
                         ? { backgroundColor: accentConfig.primaryHex }

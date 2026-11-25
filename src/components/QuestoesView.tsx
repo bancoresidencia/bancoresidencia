@@ -58,7 +58,10 @@ import {
   fetchQuestionsFromSupabase,
   fetchQuestionIdsForListCriteria
 } from '@/services/questionService';
-import { prefetchQuestionResolutions } from '@/services/resolutionCache';
+import {
+  prefetchQuestionResolutions,
+  registerSessionTicketsFromResult
+} from '@/services/resolutionCache';
 import { getSupabaseInstitutionName } from '@/utils/institutionResolver';
 
 export const QuestoesView: React.FC = () => {
@@ -67,6 +70,8 @@ export const QuestoesView: React.FC = () => {
   const { user } = useAuth();
   const { accentConfig } = useTheme();
   const {
+    plan,
+    isAdmin,
     canSolveQuestion,
     incrementDailyCount,
     openUpgradeModal
@@ -494,6 +499,7 @@ export const QuestoesView: React.FC = () => {
         );
 
         if (!isCancelled) {
+          registerSessionTicketsFromResult(res);
           if (res.sessionTicket) {
             latestSessionTicketRef.current = res.sessionTicket;
           }
@@ -576,18 +582,19 @@ export const QuestoesView: React.FC = () => {
   // Disparo Imediato em Lote (Abordagem A): pré-carrega gabaritos, justificativas e comentários da lista ativa
   // Blindagem de Segurança (Fase 1 e Fase 2):
   // 1. Desativado em Simulados e Provas Oficiais para impedir consulta de respostas no DevTools antes de responder.
-  // 2. Desativado para visitantes não autenticados (visitantes resolvem questão a questão via /api/questions/solve).
-  // 3. Envia o latestSessionTicketRef.current assinado para autorização estrita.
+  // 2. Desativado para visitantes e contas Free (apenas Pro/Premium/Admin elegíveis ao lote).
+  // 3. Envia o sessionTicket assinado correspondente a cada questão.
+  const isEligibleForBatchPrefetch = Boolean(user && (isAdmin || plan === 'pro' || plan === 'premium'));
   useEffect(() => {
     if (isSimulado) return;
-    if (!user) return;
+    if (!isEligibleForBatchPrefetch) return;
     if (supabaseQuestions.length > 0) {
       const ids = supabaseQuestions.map((q) => q.id).filter(Boolean);
       prefetchQuestionResolutions(ids, latestSessionTicketRef.current).catch((err) => {
         console.warn('[QuestoesView] Falha silenciosa no prefetch de resoluções:', err);
       });
     }
-  }, [supabaseQuestions, isSimulado, user]);
+  }, [supabaseQuestions, isSimulado, isEligibleForBatchPrefetch]);
 
   const currentQuestion = visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)];
 
@@ -883,7 +890,11 @@ export const QuestoesView: React.FC = () => {
         return;
       }
 
-      // Atualiza o estado das questões
+      // Atualiza o estado das questões e registra os tickets desta sessão
+      registerSessionTicketsFromResult(fullRes);
+      if (fullRes.sessionTicket) {
+        latestSessionTicketRef.current = fullRes.sessionTicket;
+      }
       skipNextQuestionsFetchRef.current = true;
       if (balancedIds && balancedIds.length > 0) {
         setSessionQuestionIds(balancedIds);

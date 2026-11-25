@@ -142,20 +142,17 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
 
   const highlightTextStyle: React.CSSProperties = isMonochrome
     ? {
-        backgroundImage:
-          mode === 'dark'
-            ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
-            : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
-      }
+      backgroundImage:
+        mode === 'dark'
+          ? 'linear-gradient(110deg, rgba(255,255,255,0.92) 0%, rgba(161,161,170,0.72) 28%, rgba(255,255,255,1) 50%, rgba(113,113,122,0.76) 76%, rgba(255,255,255,0.92) 100%)'
+          : 'linear-gradient(110deg, rgba(9,9,11,0.92) 0%, rgba(82,82,91,0.74) 28%, rgba(9,9,11,1) 50%, rgba(113,113,122,0.78) 76%, rgba(9,9,11,0.92) 100%)'
+    }
     : {
-        backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${
-          accentConfig.chartPalette[1] ?? accentConfig.hoverHex
-        } 26%, ${
-          mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
-        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${
-          accentConfig.primaryHex
+      backgroundImage: `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex
+        } 26%, ${mode === 'dark' ? 'rgba(224,242,254,0.92)' : 'rgba(255,255,255,0.85)'
+        } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex
         } 100%)`
-      };
+    };
 
   // Padrão: Todas as UFs (ALL)
   const [selectedUf, setSelectedUf] = useState<string>('ALL');
@@ -258,13 +255,13 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
       const list = stateCanonicalBancas.length > 0
         ? stateCanonicalBancas
         : activeInstitutions.map((i) => ({
-            key: i.id,
-            sigla: i.sigla,
-            nome: i.nome,
-            uf: i.uf,
-            count: i.questoesCount,
-            bancaOrganizadora: undefined as string | undefined
-          }));
+          key: i.id,
+          sigla: i.sigla,
+          nome: i.nome,
+          uf: i.uf,
+          count: i.questoesCount,
+          bancaOrganizadora: undefined as string | undefined
+        }));
 
       return list
         .filter((b) => {
@@ -397,409 +394,405 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
 
         {/* Grid Principal: Seletor com Funil na Esquerda + Mapa & Vitrine de Logos */}
         <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 items-start fold-reveal fold-delay-1 ${mapVisible ? 'is-visible' : ''}`}>
-            {/* Lado Esquerdo: Seletor com Funil no lado esquerdo + Mapa do Brasil */}
-            <div className="lg:col-span-6 bg-zinc-50/80 dark:bg-[#121216] p-5 sm:p-6 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 flex flex-col justify-between">
-              {/* Seletor: Sem label de cima, ícone de funil na esquerda do select, sem nome em baixo */}
-              <div className="relative mb-6">
-                <div className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-400 dark:text-zinc-500">
-                  <Filter className="w-4 h-4" />
-                </div>
-
-                <select
-                  id="uf-select"
-                  aria-label="Selecionar estado"
-                  value={selectedUf}
-                  onChange={(e) => handleSelectState(e.target.value)}
-                  className="w-full appearance-none pl-10 pr-10 py-3 rounded-xl bg-white dark:bg-[#18181f] border border-zinc-200 dark:border-zinc-700/80 text-zinc-900 dark:text-white font-bold text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer shadow-xs transition-colors"
-                >
-                  <option value="ALL">Todas as UFs</option>
-                  {ufOptions.map((opt) => (
-                    <option key={opt.uf} value={opt.uf}>
-                      {opt.name}
-                    </option>
-                  ))}
-                </select>
-
-                <div className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-400 dark:text-zinc-500">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </div>
+          {/* Lado Esquerdo: Seletor com Funil no lado esquerdo + Mapa do Brasil */}
+          <div className="lg:col-span-6 bg-zinc-50/80 dark:bg-[#121216] p-5 sm:p-6 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 flex flex-col justify-between">
+            {/* Seletor: Sem label de cima, ícone de funil na esquerda do select, sem nome em baixo */}
+            <div className="relative mb-6">
+              <div className="absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-400 dark:text-zinc-500">
+                <Filter className="w-4 h-4" />
               </div>
 
-              {/* Mapa do Brasil SVG Interativo com Zoom no Estado, Setas e Logos Flutuantes */}
-              <div className="relative w-full aspect-[450/460] max-w-[420px] mx-auto my-auto flex items-center justify-center py-2 overflow-hidden rounded-2xl select-none">
-                {/* Botão Flutuante de Retornar à Visão Geral do Brasil */}
-                {isZoomed && (
-                  <button
-                    type="button"
-                    onClick={() => handleSelectState('ALL')}
-                    className="absolute top-2.5 right-2.5 z-30 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/95 dark:bg-[#18181f]/95 backdrop-blur-md border border-zinc-200 dark:border-zinc-700/80 text-xs font-black text-zinc-800 dark:text-zinc-200 hover:text-zinc-950 dark:hover:text-white shadow-md hover:scale-105 transition-all cursor-pointer animate-in fade-in duration-200"
-                    title="Retornar ao mapa completo do Brasil"
-                  >
-                    <RotateCcw className="w-3.5 h-3.5" />
-                    <span>Ver Brasil</span>
-                  </button>
-                )}
+              <select
+                id="uf-select"
+                aria-label="Selecionar estado"
+                value={selectedUf}
+                onChange={(e) => handleSelectState(e.target.value)}
+                className="w-full appearance-none pl-10 pr-10 py-3 rounded-xl bg-white dark:bg-[#18181f] border border-zinc-200 dark:border-zinc-700/80 text-zinc-900 dark:text-white font-bold text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer shadow-xs transition-colors"
+              >
+                <option value="ALL">Todas as UFs</option>
+                {ufOptions.map((opt) => (
+                  <option key={opt.uf} value={opt.uf}>
+                    {opt.name}
+                  </option>
+                ))}
+              </select>
 
-                {/* SVG do Mapa com Efeito de Zoom Dinâmico e Contornos Oficiais do IBGE */}
-                <svg
-                  viewBox="0 0 450 460"
-                  className="w-full h-full select-none"
-                  style={{ overflow: 'visible' }}
-                  shapeRendering="geometricPrecision"
+              <div className="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-zinc-400 dark:text-zinc-500">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Mapa do Brasil SVG Interativo com Zoom no Estado, Setas e Logos Flutuantes */}
+            <div className="relative w-full aspect-[450/460] max-w-[420px] mx-auto my-auto flex items-center justify-center py-2 overflow-hidden rounded-2xl select-none">
+              {/* Botão Flutuante de Retornar à Visão Geral do Brasil */}
+              {isZoomed && (
+                <button
+                  type="button"
+                  onClick={() => handleSelectState('ALL')}
+                  className="absolute top-2.5 right-2.5 z-30 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/95 dark:bg-[#18181f]/95 backdrop-blur-md border border-zinc-200 dark:border-zinc-700/80 text-xs font-black text-zinc-800 dark:text-zinc-200 hover:text-zinc-950 dark:hover:text-white shadow-md hover:scale-105 transition-all cursor-pointer animate-in fade-in duration-200"
+                  title="Retornar ao mapa completo do Brasil"
                 >
-                  {/* Grupo dos Estados com Transição Suave de Posição e Escala Aumentada */}
-                  <g
-                    style={{
-                      transform: isZoomed ? `translate(${translateX}px, ${translateY}px) scale(${zoomScale})` : 'none',
-                      transition: 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
-                      transformOrigin: '0 0'
-                    }}
-                  >
-                    {(canonicalBrazilStatesSvgData as CanonicalStateItem[]).map((state, stateIdx) => {
-                      const isSelected = selectedUf === state.uf;
-                      const isHovered = hoveredUf === state.uf;
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  <span>Ver Brasil</span>
+                </button>
+              )}
 
-                      // Cores adaptadas ao tema neutro e ao acento do usuário:
-                      // Ao dar zoom, os outros estados continuam visíveis, porém de forma suave e esvaecida
-                      const fill = isSelected
-                        ? accentConfig.primaryHex
-                        : isHovered
+              {/* SVG do Mapa com Efeito de Zoom Dinâmico e Contornos Oficiais do IBGE */}
+              <svg
+                viewBox="0 0 450 460"
+                className="w-full h-full select-none"
+                style={{ overflow: 'visible' }}
+                shapeRendering="geometricPrecision"
+              >
+                {/* Grupo dos Estados com Transição Suave de Posição e Escala Aumentada */}
+                <g
+                  style={{
+                    transform: isZoomed ? `translate(${translateX}px, ${translateY}px) scale(${zoomScale})` : 'none',
+                    transition: 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
+                    transformOrigin: '0 0'
+                  }}
+                >
+                  {(canonicalBrazilStatesSvgData as CanonicalStateItem[]).map((state, stateIdx) => {
+                    const isSelected = selectedUf === state.uf;
+                    const isHovered = hoveredUf === state.uf;
+
+                    // Cores adaptadas ao tema neutro e ao acento do usuário:
+                    // Ao dar zoom, os outros estados continuam visíveis, porém de forma suave e esvaecida
+                    const fill = isSelected
+                      ? accentConfig.primaryHex
+                      : isHovered
                         ? isDark ? '#323242' : '#cbd5e1'
                         : isDark
-                        ? isZoomed ? '#1c1c26' : '#16161d'
-                        : isZoomed ? '#f1f1f5' : '#e4e4e7';
+                          ? isZoomed ? '#1c1c26' : '#16161d'
+                          : isZoomed ? '#f1f1f5' : '#e4e4e7';
 
-                      const stroke = isSelected
-                        ? isDark
-                          ? accentConfig.id === 'neutral' ? '#ffffff' : (accentConfig.hoverHex || '#93c5fd')
-                          : accentConfig.id === 'neutral' ? '#09090b' : (accentConfig.hoverHex || '#1d4ed8')
-                        : isDark
+                    const stroke = isSelected
+                      ? isDark
+                        ? accentConfig.id === 'neutral' ? '#ffffff' : (accentConfig.hoverHex || '#93c5fd')
+                        : accentConfig.id === 'neutral' ? '#09090b' : (accentConfig.hoverHex || '#1d4ed8')
+                      : isDark
                         ? isZoomed ? 'rgba(255, 255, 255, 0.28)' : '#2a2a35'
                         : isZoomed ? 'rgba(0, 0, 0, 0.22)' : '#d1d5db';
 
-                      const strokeWidth = isSelected
-                        ? 1.5
-                        : isZoomed ? 0.85 : 0.8;
+                    const strokeWidth = isSelected
+                      ? 1.5
+                      : isZoomed ? 0.85 : 0.8;
 
-                      const opacity = isZoomed && !isSelected
-                        ? isHovered ? 0.85 : 0.42
-                        : 1;
+                    const opacity = isZoomed && !isSelected
+                      ? isHovered ? 0.85 : 0.42
+                      : 1;
 
-                      return (
-                        <g
-                          key={state.uf}
-                          className={`cursor-pointer transition-all duration-150 ${mapVisible ? 'animate-state-contour' : 'opacity-0'}`}
-                          style={{
-                            opacity,
-                            animationDelay: `${(stateIdx % 10) * 35}ms`,
-                            transition: 'opacity 0.3s ease'
-                          }}
-                          onClick={() => handleSelectState(state.uf)}
-                          onMouseEnter={() => setHoveredUf(state.uf)}
-                          onMouseLeave={() => setHoveredUf(null)}
-                        >
-                          <path
-                            d={state.d}
-                            fill={fill}
-                            stroke={stroke}
-                            strokeWidth={strokeWidth}
-                            vectorEffect="non-scaling-stroke"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="transition-colors duration-200"
-                          />
-                        </g>
-                      );
-                    })}
-                  </g>
-                </svg>
-
-                {/* Marcadores de GPS com Logo Redonda e Ponteiro no Solo (Quando em Zoom no Estado) */}
-                {isZoomed &&
-                  sortedStatePins.map(({ inst, screenX, screenY }, pinIdx) => {
-                    const isHighlighted = highlightedInstId === inst.id;
                     return (
-                      <div
-                        key={inst.id}
-                        className="absolute z-20 flex flex-col items-center pointer-events-auto cursor-pointer group transition-all duration-200 animate-pin-teardrop-pop"
+                      <g
+                        key={state.uf}
+                        className={`cursor-pointer transition-all duration-150 ${mapVisible ? 'animate-state-contour' : 'opacity-0'}`}
                         style={{
-                          left: `${screenX}%`,
-                          top: `${screenY}%`,
-                          transform: 'translate(-50%, -100%)',
-                          animationDelay: `${pinIdx * 30}ms`,
-                          animationFillMode: 'both'
+                          opacity,
+                          animationDelay: `${(stateIdx % 10) * 35}ms`,
+                          transition: 'opacity 0.3s ease'
                         }}
-                        onClick={() => {
-                          setHighlightedInstId(inst.id);
-                          onSelectInstitution?.(inst);
-                          const cardEl = document.getElementById(`inst-card-${inst.id}`);
-                          if (cardEl) {
-                            cardEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                          }
-                        }}
-                        onMouseEnter={() => setHighlightedInstId(inst.id)}
-                        onMouseLeave={() => setHighlightedInstId(null)}
+                        onClick={() => handleSelectState(state.uf)}
+                        onMouseEnter={() => setHoveredUf(state.uf)}
+                        onMouseLeave={() => setHoveredUf(null)}
                       >
-                        {/* Marcador de GPS Teardrop Moderno: Cabeça Circular + Agulha Direta no Solo */}
-                        <div className="relative flex flex-col items-center">
-                          {/* Anel de pulso sutil e contínuo (ripple wave) de 2.5s no pin selecionado */}
-                          {isHighlighted && (
-                            <div
-                              aria-hidden="true"
-                              className="absolute -inset-1 rounded-full animate-pin-ripple pointer-events-none"
-                              style={{
-                                border: `2px solid ${accentConfig.primaryHex}`,
-                                boxShadow: `0 0 14px ${accentConfig.primaryHex}`
-                              }}
-                            />
-                          )}
-
-                          <div
-                            className={`w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-full bg-white dark:bg-[#18181f] p-1 shadow-[0_4px_16px_rgba(0,0,0,0.6)] border-2 transition-all duration-200 flex items-center justify-center overflow-hidden shrink-0 ${
-                              isHighlighted ? 'scale-125 ring-2 ring-white' : 'group-hover:scale-115'
-                            }`}
-                            style={{
-                              borderColor: '#ffffff',
-                              boxShadow: isHighlighted
-                                ? `0 0 16px rgba(255,255,255,0.95), 0 0 24px ${accentConfig.primaryHex}`
-                                : '0 4px 14px rgba(0,0,0,0.65)'
-                            }}
-                          >
-                            {inst.logoSlug ? (
-                              // eslint-disable-next-line @next/next/no-img-element
-                              <img
-                                src={`/images/institutions/${inst.logoSlug}.webp`}
-                                alt={inst.sigla}
-                                width={28}
-                                height={28}
-                                className="w-full h-full object-contain"
-                              />
-                            ) : (
-                              <span className="text-[9px] sm:text-[10px] font-black tracking-tight text-zinc-950 dark:text-white uppercase px-0.5 leading-none text-center">
-                                {inst.sigla.split('/')[0].trim().slice(0, 6)}
-                              </span>
-                            )}
-                          </div>
-
-                          {/* Ponta da Agulha de GPS no Solo: Compacta e Nítida em Branco Puro */}
-                          <div
-                            className="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[6px] -mt-0.5 transition-transform drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]"
-                            style={{ borderTopColor: '#ffffff' }}
-                          />
-                        </div>
-
-                        {/* Tooltip elegante suspenso exibido EXCLUSIVAMENTE no hover (zero poluição no mapa) */}
-                        {isHighlighted && (
-                          <div className="absolute -top-7 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-lg bg-zinc-950 text-white text-[10px] font-black tracking-tight whitespace-nowrap shadow-2xl border border-zinc-700/80 pointer-events-none z-30 animate-in fade-in zoom-in-95 duration-150">
-                            {inst.sigla} • {inst.cidade}
-                          </div>
-                        )}
-                      </div>
+                        <path
+                          d={state.d}
+                          fill={fill}
+                          stroke={stroke}
+                          strokeWidth={strokeWidth}
+                          vectorEffect="non-scaling-stroke"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="transition-colors duration-200"
+                        />
+                      </g>
                     );
                   })}
+                </g>
+              </svg>
+
+              {/* Marcadores de GPS com Logo Redonda e Ponteiro no Solo (Quando em Zoom no Estado) */}
+              {isZoomed &&
+                sortedStatePins.map(({ inst, screenX, screenY }, pinIdx) => {
+                  const isHighlighted = highlightedInstId === inst.id;
+                  return (
+                    <div
+                      key={inst.id}
+                      className="absolute z-20 flex flex-col items-center pointer-events-auto cursor-pointer group transition-all duration-200 animate-pin-teardrop-pop"
+                      style={{
+                        left: `${screenX}%`,
+                        top: `${screenY}%`,
+                        transform: 'translate(-50%, -100%)',
+                        animationDelay: `${pinIdx * 30}ms`,
+                        animationFillMode: 'both'
+                      }}
+                      onClick={() => {
+                        setHighlightedInstId(inst.id);
+                        onSelectInstitution?.(inst);
+                        const cardEl = document.getElementById(`inst-card-${inst.id}`);
+                        if (cardEl) {
+                          cardEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }
+                      }}
+                      onMouseEnter={() => setHighlightedInstId(inst.id)}
+                      onMouseLeave={() => setHighlightedInstId(null)}
+                    >
+                      {/* Marcador de GPS Teardrop Moderno: Cabeça Circular + Agulha Direta no Solo */}
+                      <div className="relative flex flex-col items-center">
+                        {/* Anel de pulso sutil e contínuo (ripple wave) de 2.5s no pin selecionado */}
+                        {isHighlighted && (
+                          <div
+                            aria-hidden="true"
+                            className="absolute -inset-1 rounded-full animate-pin-ripple pointer-events-none"
+                            style={{
+                              border: `2px solid ${accentConfig.primaryHex}`,
+                              boxShadow: `0 0 14px ${accentConfig.primaryHex}`
+                            }}
+                          />
+                        )}
+
+                        <div
+                          className={`w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-full bg-white dark:bg-[#18181f] p-1 shadow-[0_4px_16px_rgba(0,0,0,0.6)] border-2 transition-all duration-200 flex items-center justify-center overflow-hidden shrink-0 ${isHighlighted ? 'scale-125 ring-2 ring-white' : 'group-hover:scale-115'
+                            }`}
+                          style={{
+                            borderColor: '#ffffff',
+                            boxShadow: isHighlighted
+                              ? `0 0 16px rgba(255,255,255,0.95), 0 0 24px ${accentConfig.primaryHex}`
+                              : '0 4px 14px rgba(0,0,0,0.65)'
+                          }}
+                        >
+                          {inst.logoSlug ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img
+                              src={`/images/institutions/${inst.logoSlug}.webp`}
+                              alt={inst.sigla}
+                              width={28}
+                              height={28}
+                              className="w-full h-full object-contain"
+                            />
+                          ) : (
+                            <span className="text-[9px] sm:text-[10px] font-black tracking-tight text-zinc-950 dark:text-white uppercase px-0.5 leading-none text-center">
+                              {inst.sigla.split('/')[0].trim().slice(0, 6)}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Ponta da Agulha de GPS no Solo: Compacta e Nítida em Branco Puro */}
+                        <div
+                          className="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[6px] -mt-0.5 transition-transform drop-shadow-[0_2px_4px_rgba(0,0,0,0.95)]"
+                          style={{ borderTopColor: '#ffffff' }}
+                        />
+                      </div>
+
+                      {/* Tooltip elegante suspenso exibido EXCLUSIVAMENTE no hover (zero poluição no mapa) */}
+                      {isHighlighted && (
+                        <div className="absolute -top-7 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-lg bg-zinc-950 text-white text-[10px] font-black tracking-tight whitespace-nowrap shadow-2xl border border-zinc-700/80 pointer-events-none z-30 animate-in fade-in zoom-in-95 duration-150">
+                          {inst.sigla} • {inst.cidade}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+            </div>
+          </div>
+
+          {/* Lado Direito: Vitrine de Provas Nacionais e Instituições Estaduais */}
+          <div className="lg:col-span-6 space-y-4">
+            {/* 1. Bloco de Provas Nacionais Unificadas (Imagem 2 antes da Imagem 1, com AMB incluída) */}
+            <div className="p-4 sm:p-5 rounded-2xl bg-zinc-50/80 dark:bg-[#121216] border border-zinc-200/90 dark:border-zinc-800/90 space-y-3 shadow-xs">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center shrink-0 shadow-2xs">
+                  <GraduationCap className="w-5 h-5 text-zinc-700 dark:text-zinc-300" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-zinc-950 dark:text-white">
+                    Provas Nacionais Unificadas (Brasil)
+                  </div>
+                  <div className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                    Cadernos oficiais na íntegra de 2018 a 2026 com cronômetro e resolução completa.
+                  </div>
+                </div>
+              </div>
+
+              {/* 3 Provas Nacionais: ENARE, INEP Revalida e AMB / Especialidades */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
+                {NACIONAL_INSTITUTIONS.map((nac) => (
+                  <div
+                    key={nac.id}
+                    className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white dark:bg-[#18181f] border border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors shadow-2xs"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700/60 p-1 flex items-center justify-center shrink-0 overflow-hidden">
+                      {nac.logoSlug ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={`/images/institutions/${nac.logoSlug}.webp`}
+                          alt={nac.sigla}
+                          width={36}
+                          height={36}
+                          loading="lazy"
+                          decoding="async"
+                          className="w-full h-full object-contain"
+                        />
+                      ) : (
+                        <GraduationCap className="w-5 h-5 text-zinc-600 dark:text-zinc-300" />
+                      )}
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <div className="text-xs font-black text-zinc-950 dark:text-white truncate">
+                        {nac.sigla}
+                      </div>
+                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
+                        {nac.nome}
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {/* Lado Direito: Vitrine de Provas Nacionais e Instituições Estaduais */}
-            <div className="lg:col-span-6 space-y-4">
-              {/* 1. Bloco de Provas Nacionais Unificadas (Imagem 2 antes da Imagem 1, com AMB incluída) */}
-              <div className="p-4 sm:p-5 rounded-2xl bg-zinc-50/80 dark:bg-[#121216] border border-zinc-200/90 dark:border-zinc-800/90 space-y-3 shadow-xs">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 flex items-center justify-center shrink-0 shadow-2xs">
-                    <GraduationCap className="w-5 h-5 text-zinc-700 dark:text-zinc-300" />
-                  </div>
-                  <div>
-                    <div className="text-xs font-bold text-zinc-950 dark:text-white">
-                      Provas Nacionais Unificadas (Brasil)
-                    </div>
-                    <div className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                      Cadernos oficiais na íntegra de 2018 a 2026 com cronômetro e resolução completa.
-                    </div>
-                  </div>
+            {/* 2. Instituições & Provas Oficiais Estaduais (Opção A: Destaques vs Catálogo Completo 950+ com Busca) */}
+            <div className="space-y-2.5">
+              {/* Header: Título + Alternador de Modo Destaques / Todas */}
+              <div className="flex flex-wrap items-center justify-between gap-2 pb-0.5">
+                <div className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
+                  <Building2 className="w-3.5 h-3.5 text-zinc-600 dark:text-zinc-300 shrink-0" />
+                  <span>Instituições & Provas ({currentUfName})</span>
                 </div>
 
-                {/* 3 Provas Nacionais: ENARE, INEP Revalida e AMB / Especialidades */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-1">
-                  {NACIONAL_INSTITUTIONS.map((nac) => (
-                    <div
-                      key={nac.id}
-                      className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white dark:bg-[#18181f] border border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors shadow-2xs"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700/60 p-1 flex items-center justify-center shrink-0 overflow-hidden">
-                        {nac.logoSlug ? (
-                          // eslint-disable-next-line @next/next/no-img-element
-                          <img
-                            src={`/images/institutions/${nac.logoSlug}.webp`}
-                            alt={nac.sigla}
-                            width={36}
-                            height={36}
-                            loading="lazy"
-                            decoding="async"
-                            className="w-full h-full object-contain"
-                          />
-                        ) : (
-                          <GraduationCap className="w-5 h-5 text-zinc-600 dark:text-zinc-300" />
-                        )}
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <div className="text-xs font-black text-zinc-950 dark:text-white truncate">
-                          {nac.sigla}
-                        </div>
-                        <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                          {nac.nome}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                {/* Toggle Pills: Principais vs Todas */}
+                <div className="inline-flex p-1 rounded-xl bg-zinc-200/80 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700/60 text-xs font-bold">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setCatalogMode('destaques');
+                      setSearchQuery('');
+                    }}
+                    className={`px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transition-all cursor-pointer ${catalogMode === 'destaques' && !searchQuery
+                        ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-white shadow-2xs'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
+                      }`}
+                  >
+                    Destaques
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setCatalogMode('todas')}
+                    className={`px-3 py-1.5 min-h-[36px] sm:min-h-[32px] rounded-lg transition-all cursor-pointer ${catalogMode === 'todas' || searchQuery
+                        ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-white shadow-2xs'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
+                      }`}
+                  >
+                    Todas
+                  </button>
                 </div>
               </div>
 
-              {/* 2. Instituições & Provas Oficiais Estaduais (Opção A: Destaques vs Catálogo Completo 950+ com Busca) */}
-              <div className="space-y-2.5">
-                {/* Header: Título + Alternador de Modo Destaques / Todas */}
-                <div className="flex flex-wrap items-center justify-between gap-2 pb-0.5">
-                  <div className="text-xs font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-2">
-                    <Building2 className="w-3.5 h-3.5 text-zinc-600 dark:text-zinc-300 shrink-0" />
-                    <span>Instituições & Provas ({currentUfName})</span>
-                  </div>
+              {/* Barra de Pesquisa Rápida */}
+              <div className="relative">
+                <Search className="w-4 h-4 text-zinc-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Buscar instituição ou banca..."
+                  className="w-full pl-9 pr-9 py-2 min-h-[40px] rounded-xl bg-white dark:bg-[#18181f] border border-zinc-200 dark:border-zinc-800 text-xs sm:text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-1.5 focus:ring-[var(--primary-color)] shadow-2xs transition-all"
+                />
+                {searchQuery && (
+                  <button
+                    type="button"
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 p-1.5 min-h-[32px] min-w-[32px] flex items-center justify-center rounded cursor-pointer"
+                    title="Limpar busca"
+                  >
+                    <X className="w-4 h-4" />
+                  </button>
+                )}
+              </div>
 
-                  {/* Toggle Pills: Principais vs Todas */}
-                  <div className="inline-flex p-0.5 rounded-lg bg-zinc-200/80 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700/60 text-[11px] font-bold">
+              {/* Grid de Cards com Rolagem Interna Calibrada à Altura Exata do Mapa */}
+              <div className="max-h-[295px] lg:max-h-[295px] overflow-y-auto pr-1 sm:pr-1.5 scrollbar-thin scrollbar-thumb-zinc-300 dark:scrollbar-thumb-zinc-700/60 rounded-xl">
+                {displayedInstitutions.length === 0 ? (
+                  <div className="p-6 text-center rounded-2xl bg-zinc-50/60 dark:bg-[#121216] border border-zinc-200/80 dark:border-zinc-800 text-xs text-zinc-500 space-y-2">
+                    <p>Nenhuma banca encontrada para &quot;{searchQuery}&quot; em {currentUfName}.</p>
                     <button
                       type="button"
                       onClick={() => {
-                        setCatalogMode('destaques');
                         setSearchQuery('');
+                        setCatalogMode('destaques');
                       }}
-                      className={`px-2 py-0.5 rounded-md transition-all cursor-pointer ${
-                        catalogMode === 'destaques' && !searchQuery
-                          ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-white shadow-2xs'
-                          : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
-                      }`}
+                      className="text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
                     >
-                      Destaques
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setCatalogMode('todas')}
-                      className={`px-2 py-0.5 rounded-md transition-all cursor-pointer ${
-                        catalogMode === 'todas' || searchQuery
-                          ? 'bg-white dark:bg-zinc-900 text-zinc-950 dark:text-white shadow-2xs'
-                          : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white'
-                      }`}
-                    >
-                      Todas
+                      Restaurar visualização padrão
                     </button>
                   </div>
-                </div>
-
-                {/* Barra de Pesquisa Rápida */}
-                <div className="relative">
-                  <Search className="w-3.5 h-3.5 text-zinc-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-                  <input
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Buscar instituição ou banca..."
-                    className="w-full pl-8 pr-8 py-1.5 rounded-xl bg-white dark:bg-[#18181f] border border-zinc-200 dark:border-zinc-800 text-xs text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-1.5 focus:ring-[var(--primary-color)] shadow-2xs transition-all"
-                  />
-                  {searchQuery && (
-                    <button
-                      type="button"
-                      onClick={() => setSearchQuery('')}
-                      className="absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 p-0.5 rounded cursor-pointer"
-                      title="Limpar busca"
-                    >
-                      <X className="w-3.5 h-3.5" />
-                    </button>
-                  )}
-                </div>
-
-                {/* Grid de Cards com Rolagem Interna Calibrada à Altura Exata do Mapa */}
-                <div className="max-h-[295px] lg:max-h-[295px] overflow-y-auto pr-1 sm:pr-1.5 scrollbar-thin scrollbar-thumb-zinc-300 dark:scrollbar-thumb-zinc-700/60 rounded-xl">
-                  {displayedInstitutions.length === 0 ? (
-                    <div className="p-6 text-center rounded-2xl bg-zinc-50/60 dark:bg-[#121216] border border-zinc-200/80 dark:border-zinc-800 text-xs text-zinc-500 space-y-2">
-                      <p>Nenhuma banca encontrada para &quot;{searchQuery}&quot; em {currentUfName}.</p>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          setSearchQuery('');
-                          setCatalogMode('destaques');
-                        }}
-                        className="text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
-                      >
-                        Restaurar visualização padrão
-                      </button>
-                    </div>
-                  ) : (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {displayedInstitutions.map((inst, idx) => {
-                        const isHighlighted = highlightedInstId === inst.id;
-                        return (
-                          <div
-                            key={inst.id}
-                            id={`inst-card-${inst.id}`}
-                            className={`animate-banca-stagger p-3 rounded-2xl border transition-all duration-200 flex items-center group shadow-2xs cursor-pointer ${
-                              isHighlighted
-                                ? 'bg-zinc-100 dark:bg-[#1b1b24] ring-2 scale-[1.01]'
-                                : 'bg-zinc-50/80 dark:bg-[#121216] border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-400 dark:hover:border-zinc-700'
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {displayedInstitutions.map((inst, idx) => {
+                      const isHighlighted = highlightedInstId === inst.id;
+                      return (
+                        <div
+                          key={inst.id}
+                          id={`inst-card-${inst.id}`}
+                          className={`animate-banca-stagger p-3 rounded-2xl border transition-all duration-200 flex items-center group shadow-2xs cursor-pointer ${isHighlighted
+                              ? 'bg-zinc-100 dark:bg-[#1b1b24] ring-2 scale-[1.01]'
+                              : 'bg-zinc-50/80 dark:bg-[#121216] border-zinc-200/90 dark:border-zinc-800/90 hover:border-zinc-400 dark:hover:border-zinc-700'
                             }`}
-                            style={{
-                              animationDelay: `${Math.min(idx, 15) * 35}ms`,
-                              ...(isHighlighted ? { borderColor: accentConfig.primaryHex } : {})
-                            }}
-                            onMouseEnter={() => setHighlightedInstId(inst.id)}
-                            onMouseLeave={() => setHighlightedInstId(null)}
-                            onClick={() => onSelectInstitution?.(inst as unknown as InstitutionInfo)}
-                          >
-                            <div className="flex items-center gap-3 w-full min-w-0">
-                              <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 flex items-center justify-center p-1 shrink-0 overflow-hidden shadow-2xs">
-                                {inst.logoSlug ? (
-                                  // eslint-disable-next-line @next/next/no-img-element
-                                  <img
-                                    src={`/images/institutions/${inst.logoSlug}.webp`}
-                                    alt={inst.sigla}
-                                    width={32}
-                                    height={32}
-                                    loading="lazy"
-                                    decoding="async"
-                                    className="w-full h-full object-contain"
-                                  />
-                                ) : (
-                                  <GraduationCap className="w-5 h-5 text-zinc-600 dark:text-zinc-300" />
+                          style={{
+                            animationDelay: `${Math.min(idx, 15) * 35}ms`,
+                            ...(isHighlighted ? { borderColor: accentConfig.primaryHex } : {})
+                          }}
+                          onMouseEnter={() => setHighlightedInstId(inst.id)}
+                          onMouseLeave={() => setHighlightedInstId(null)}
+                          onClick={() => onSelectInstitution?.(inst as unknown as InstitutionInfo)}
+                        >
+                          <div className="flex items-center gap-3 w-full min-w-0">
+                            <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800 flex items-center justify-center p-1 shrink-0 overflow-hidden shadow-2xs">
+                              {inst.logoSlug ? (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img
+                                  src={`/images/institutions/${inst.logoSlug}.webp`}
+                                  alt={inst.sigla}
+                                  width={32}
+                                  height={32}
+                                  loading="lazy"
+                                  decoding="async"
+                                  className="w-full h-full object-contain"
+                                />
+                              ) : (
+                                <GraduationCap className="w-5 h-5 text-zinc-600 dark:text-zinc-300" />
+                              )}
+                            </div>
+
+                            <div className="min-w-0 flex-1">
+                              <div className="flex items-center gap-1.5 flex-wrap">
+                                <span className="text-xs sm:text-sm font-black text-zinc-950 dark:text-white truncate">
+                                  {inst.sigla}
+                                </span>
+                                <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-300 shrink-0">
+                                  {inst.uf}
+                                </span>
+                                {inst.bancaOrganizadora && (
+                                  <span className="text-[10px] font-medium text-zinc-400 dark:text-zinc-500 truncate max-w-[140px]">
+                                    • {inst.bancaOrganizadora}
+                                  </span>
                                 )}
                               </div>
-
-                              <div className="min-w-0 flex-1">
-                                <div className="flex items-center gap-1.5 flex-wrap">
-                                  <span className="text-xs sm:text-sm font-black text-zinc-950 dark:text-white truncate">
-                                    {inst.sigla}
-                                  </span>
-                                  <span className="px-1.5 py-0.2 rounded text-[9px] font-bold bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-300 shrink-0">
-                                    {inst.uf}
-                                  </span>
-                                  {inst.bancaOrganizadora && (
-                                    <span className="text-[9px] font-medium text-zinc-400 dark:text-zinc-500 truncate max-w-[120px]">
-                                      • {inst.bancaOrganizadora}
-                                    </span>
-                                  )}
-                                </div>
-                                <div className="text-[11px] text-zinc-600 dark:text-zinc-400 leading-snug line-clamp-1 mt-0.5">
-                                  {inst.nome}
-                                </div>
+                              <div className="text-xs text-zinc-600 dark:text-zinc-400 leading-snug line-clamp-1 mt-0.5">
+                                {inst.nome}
                               </div>
                             </div>
                           </div>
-                        );
-                      })}
-                    </div>
-                  )}
-                </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             </div>
           </div>
+        </div>
 
         {/* =========================================================================
             2. ESTATÍSTICAS DA IMAGEM 1 ABAIXO DO MAPA (COM ANIMAÇÃO DE CONTAGEM & ESTILO IMAGEM 5)

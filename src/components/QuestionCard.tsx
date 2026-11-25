@@ -46,7 +46,8 @@ import { Button, Badge } from '@/components/ui';
 import {
   getQuestionResolution,
   subscribeToResolutions,
-  hasQuestionResolution
+  setQuestionResolution,
+  getClientAuthHeaders
 } from '@/services/resolutionCache';
 
 interface QuestionCardProps {
@@ -405,8 +406,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const [resolvedOverrides, setResolvedOverrides] = useState<Partial<Question>>({});
   const [isSubmittingAnswer, setIsSubmittingAnswer] = useState<boolean>(false);
   const [solveError, setSolveError] = useState<string | null>(null);
+  const [pendingRetryAnswer, setPendingRetryAnswer] = useState<{ selectedOption: 'A' | 'B' | 'C' | 'D' | 'E' } | null>(null);
   const [writtenAnswer, setWrittenAnswer] = useState('');
   const attemptRef = useRef<{ key: string; id: string } | null>(null);
+  const activeQuestionIdRef = useRef(question.id);
+  activeQuestionIdRef.current = question.id;
+  const lastResetQuestionIdRef = useRef<string | null>(null);
   const isWrittenQuestion = question.type === 'Discursiva' || question.type === 'Dissertativa';
 
   // Tentativa atual de resolução da questão (para isolar rascunhos limpos por tentativa)
@@ -635,6 +640,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
   // Sincroniza estado de forma limpa quando a questão ou a resposta mudam
   useEffect(() => {
+    const isNewQuestion = lastResetQuestionIdRef.current !== question.id;
+    lastResetQuestionIdRef.current = question.id;
+
     const cachedRes = getQuestionResolution(question.id);
     if (cachedRes) {
       setResolvedOverrides({
@@ -644,21 +652,26 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
         isAnulada: cachedRes.isAnulada
       });
       setIsLoadingResolution(false);
-    } else {
+    } else if (isNewQuestion) {
       setResolvedOverrides({});
     }
-    setIsSubmittingAnswer(false);
-    setSolveError(null);
-    setWrittenAnswer('');
-    attemptRef.current = null;
-    setPendingSelected(userAnswer || null);
-    setIsAnswered(!!userAnswer);
-    setShowCommentary(!!userAnswer);
-    setIsLoadingResolution(Boolean(userAnswer && !(question.correctAnswer || (question as { correct_answer?: string }).correct_answer)));
-    setEliminatedOptions({});
-    setExpandedOptions({});
-    setOpenTopics({});
-    setHoveredOptionLetter(null);
+    if (isNewQuestion) {
+      setIsSubmittingAnswer(false);
+      setSolveError(null);
+      setPendingRetryAnswer(null);
+      setWrittenAnswer('');
+      attemptRef.current = null;
+      setEliminatedOptions({});
+      setExpandedOptions({});
+      setOpenTopics({});
+      setHoveredOptionLetter(null);
+    }
+    if (isNewQuestion || userAnswer) {
+      setPendingSelected(userAnswer || null);
+      setIsAnswered(!!userAnswer);
+      setShowCommentary(!!userAnswer);
+    }
+    setIsLoadingResolution(Boolean(userAnswer && !cachedRes && !(question.correctAnswer || (question as { correct_answer?: string }).correct_answer)));
 
     // Se inscreve caso a resolução do lote termine enquanto este card estiver ativo
     const unsubscribe = subscribeToResolutions((updatedIds) => {
@@ -681,18 +694,34 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
   // Carrega sob demanda gabarito e comentários caso a questão tenha sido respondida previamente
   useEffect(() => {
+    const cachedRes = !isWrittenQuestion ? getQuestionResolution(question.id) : undefined;
+    if (userAnswer && !isWrittenQuestion && cachedRes && (cachedRes.correctAnswer || cachedRes.isAnulada)) {
+      setResolvedOverrides({
+        correctAnswer: cachedRes.correctAnswer,
+        commentary: cachedRes.commentary,
+        options: cachedRes.options && cachedRes.options.length > 0 ? cachedRes.options : question.options,
+        isAnulada: cachedRes.isAnulada
+      });
+      setIsLoadingResolution(false);
+      return;
+    }
+
     const hasCorrectAnswer = Boolean(activeQuestion.correctAnswer || question.correctAnswer);
     if ((userAnswer && !hasCorrectAnswer) || isWrittenQuestion) {
       let isMounted = true;
       setIsLoadingResolution(true);
-      fetch('/api/questions/solve', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          questionId: question.id,
-          readResolution: true
-        })
-      })
+      getClientAuthHeaders()
+        .then((headers) =>
+          fetch('/api/questions/solve', {
+            method: 'POST',
+            headers,
+            credentials: 'same-origin',
+            body: JSON.stringify({
+              questionId: question.id,
+              readResolution: true
+            })
+          })
+        )
         .then((res) => res.json())
         .then((data) => {
           if (isMounted) {
@@ -703,12 +732,23 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                 setIsAnswered(true);
                 setShowCommentary(true);
               }
+              const resolvedOptions = data.options && data.options.length > 0 ? data.options : question.options;
               setResolvedOverrides({
                 correctAnswer: data.correctAnswer,
                 commentary: data.commentary,
-                options: data.options && data.options.length > 0 ? data.options : question.options,
+                options: resolvedOptions,
                 isAnulada: data.isAnulada
               });
+              if (!isWrittenQuestion && (data.correctAnswer || data.isAnulada)) {
+                setQuestionResolution(question.id, {
+                  questionId: question.id,
+                  code: question.code,
+                  correctAnswer: data.correctAnswer || '',
+                  isAnulada: Boolean(data.isAnulada),
+                  commentary: data.commentary || '',
+                  options: resolvedOptions
+                });
+              }
             }
           }
         })
@@ -725,7 +765,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     } else {
       setIsLoadingResolution(false);
     }
-  }, [userAnswer, question.id, isWrittenQuestion, activeQuestion.correctAnswer, question.correctAnswer, question.options]);
+  }, [userAnswer, question.id, question.code, isWrittenQuestion, activeQuestion.correctAnswer, question.correctAnswer, question.options]);
 
   // Alterna expansão da justificativa de uma alternativa específica
   const toggleOptionExplanation = (letter: string) => {
@@ -1102,42 +1142,103 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     });
   };
 
-  const submitAnswer = async (answer: { selectedOption: 'A' | 'B' | 'C' | 'D' | 'E' } | { writtenAnswer: string }) => {
-    if (isAnswered || isSubmittingAnswer) return;
-    setIsSubmittingAnswer(true);
+  const submitAnswer = async (
+    answer: { selectedOption: 'A' | 'B' | 'C' | 'D' | 'E' } | { writtenAnswer: string },
+    isRetry = false
+  ) => {
+    if ((!isRetry && isAnswered) || isSubmittingAnswer) return;
     setSolveError(null);
-    const key = JSON.stringify([question.id, answer]);
+    setPendingRetryAnswer(null);
+    const targetQuestionId = question.id;
+    const key = JSON.stringify([targetQuestionId, answer]);
     if (attemptRef.current?.key !== key) attemptRef.current = { key, id: crypto.randomUUID() };
+
+    // Fast-path otimista visual (0 ms) quando a resolução já está no cache seguro (Pro/Premium)
+    const cachedRes = 'selectedOption' in answer ? getQuestionResolution(targetQuestionId) : undefined;
+    const hasOptimisticResolution = !isRetry && Boolean(
+      cachedRes && (cachedRes.correctAnswer || cachedRes.isAnulada || cachedRes.commentary)
+    );
+
+    if (hasOptimisticResolution && cachedRes) {
+      setResolvedOverrides({
+        correctAnswer: cachedRes.correctAnswer,
+        commentary: cachedRes.commentary,
+        options: cachedRes.options?.length ? cachedRes.options : question.options,
+        isAnulada: cachedRes.isAnulada
+      });
+      setIsAnswered(true);
+      setShowCommentary(true);
+    } else {
+      setIsSubmittingAnswer(true);
+    }
+
     try {
+      const headers = await getClientAuthHeaders();
       const response = await fetch('/api/questions/solve', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ questionId: question.id, ...answer, attemptId: attemptRef.current.id })
+        headers,
+        credentials: 'same-origin',
+        body: JSON.stringify({ questionId: targetQuestionId, ...answer, attemptId: attemptRef.current.id })
       });
       const data = await response.json();
       if (!data.success) {
-        if (!hidePlanBadge && data.limitReached) {
+        if (activeQuestionIdRef.current === targetQuestionId && !hidePlanBadge && data.limitReached) {
+          if (hasOptimisticResolution) {
+            setIsAnswered(false);
+            setShowCommentary(false);
+          }
           openUpgradeModal(null, true);
           return;
         }
         throw new Error(data.error || 'Não foi possível salvar a resposta.');
       }
-      setResolvedOverrides({
-        correctAnswer: data.correctAnswer,
-        commentary: data.commentary,
-        options: data.options?.length ? data.options : question.options,
-        isAnulada: data.isAnulada
-      });
-      setIsAnswered(true);
-      setShowCommentary(true);
+
+      const resolvedOptions = data.options?.length ? data.options : question.options;
+      if ('selectedOption' in answer && (data.correctAnswer || data.isAnulada)) {
+        setQuestionResolution(targetQuestionId, {
+          questionId: targetQuestionId,
+          code: question.code,
+          correctAnswer: data.correctAnswer || '',
+          isAnulada: Boolean(data.isAnulada),
+          commentary: data.commentary || '',
+          options: resolvedOptions
+        });
+      }
+
+      if (activeQuestionIdRef.current === targetQuestionId) {
+        setResolvedOverrides({
+          correctAnswer: data.correctAnswer,
+          commentary: data.commentary,
+          options: resolvedOptions,
+          isAnulada: data.isAnulada
+        });
+        setIsAnswered(true);
+        setShowCommentary(true);
+      }
+
       if ('selectedOption' in answer) {
-        onAnswer(question.id, answer.selectedOption, data.isCorrect, { syncedRemotely: true, serverAnsweredAt: data.answeredAt });
+        onAnswer(targetQuestionId, answer.selectedOption, data.isCorrect, {
+          syncedRemotely: true,
+          serverAnsweredAt: data.answeredAt
+        });
       }
     } catch (error) {
-      setSolveError(error instanceof Error ? error.message : 'Falha na comunicação com o servidor.');
+      if (activeQuestionIdRef.current === targetQuestionId) {
+        if ((hasOptimisticResolution || isRetry) && 'selectedOption' in answer) {
+          setPendingRetryAnswer(answer);
+        }
+        setSolveError(error instanceof Error ? error.message : 'Falha na comunicação com o servidor.');
+      }
     } finally {
-      setIsSubmittingAnswer(false);
+      if (activeQuestionIdRef.current === targetQuestionId) {
+        setIsSubmittingAnswer(false);
+      }
     }
+  };
+
+  const handleRetryPersist = async () => {
+    if (!pendingRetryAnswer || isSubmittingAnswer) return;
+    await submitAnswer(pendingRetryAnswer, true);
   };
 
   const handleConfirmAnswer = () => {
@@ -2080,19 +2181,41 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                 </div>
               )}
             </div>
-          ) : onNextQuestion ? (
-            <div className="pt-2 sm:hidden">
-              <Button
-                type="button"
-                onClick={onNextQuestion}
-                className="w-full text-xs font-black text-white shadow-md min-h-[44px] touch-manipulation"
-                style={{ backgroundColor: accentConfig.primaryHex }}
-                rightIcon={<ChevronRight className="w-4 h-4" />}
-              >
-                Avançar para Próxima Questão
-              </Button>
+          ) : (
+            <div className="pt-2 flex flex-col gap-2">
+              {solveError && (
+                <div className="flex items-center justify-between gap-2 text-xs text-rose-600 dark:text-rose-400 font-semibold p-2.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/60 animate-in fade-in duration-150">
+                  <div className="flex items-center gap-1.5">
+                    <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                    <span>{solveError}</span>
+                  </div>
+                  {pendingRetryAnswer && (
+                    <button
+                      type="button"
+                      onClick={handleRetryPersist}
+                      disabled={isSubmittingAnswer}
+                      className="px-2.5 py-1 rounded-lg bg-rose-600 text-white hover:bg-rose-700 disabled:opacity-50 shrink-0 cursor-pointer"
+                    >
+                      {isSubmittingAnswer ? 'Salvando...' : 'Tentar salvar'}
+                    </button>
+                  )}
+                </div>
+              )}
+              {onNextQuestion && (
+                <div className="sm:hidden">
+                  <Button
+                    type="button"
+                    onClick={onNextQuestion}
+                    className="w-full text-xs font-black text-white shadow-md min-h-[44px] touch-manipulation"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
+                    rightIcon={<ChevronRight className="w-4 h-4" />}
+                  >
+                    Avançar para Próxima Questão
+                  </Button>
+                </div>
+              )}
             </div>
-          ) : null}
+          )}
         </div>
       ) : activeQuestion.type === 'Dissertativa' || activeQuestion.type === 'Discursiva' ? (
         /* Questão Dissertativa / Discursiva */

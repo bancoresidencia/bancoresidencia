@@ -46,6 +46,7 @@ import {
   saveActiveReviewSession,
   clearActiveReviewSession
 } from '@/services/reviewSessionService';
+import { getClientAuthHeaders } from '@/services/resolutionCache';
 
 interface CadernoErrosReviewSessionProps {
   questionIds: string[];
@@ -269,9 +270,11 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
     const key = `${currentQId}:${originalLetterToStore}`;
     if (reviewAttemptRef.current?.key !== key) reviewAttemptRef.current = { key, id: crypto.randomUUID() };
     try {
+      const headers = await getClientAuthHeaders();
       const response = await fetch('/api/questions/solve', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
+        credentials: 'same-origin',
         body: JSON.stringify({
           questionId: currentQId, selectedOption: originalLetterToStore, reviewed: true,
           attemptId: reviewAttemptRef.current.id

@@ -64,6 +64,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
   const highlightHexRef = useRef<string>(resolveHighlightHex(accentConfig, isDark));
   const materialsRef = useRef<ManagedMaterialEntry[]>([]);
   const pointerTargetRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  const wakeUpRef = useRef<(() => void) | null>(null);
 
   const [modelReady, setModelReady] = useState(false);
   const [webglSupported, setWebglSupported] = useState(true);
@@ -75,6 +76,8 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
     for (const entry of materialsRef.current) {
       updateSoftAnatomyMaterialTheme(entry.material, entry.role, isDark, accentConfig);
     }
+    // Desperta imediatamente o render loop para pintar a nova cor no milissegundo zero (latência 0ms)
+    wakeUpRef.current?.();
   }, [isDark, accentConfig]);
 
   useEffect(() => {
@@ -247,6 +250,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
         rafId = requestAnimationFrame(animate);
       }
     };
+    wakeUpRef.current = wakeUp;
 
     const animate = () => {
       const nowMs = performance.now();
@@ -481,6 +485,7 @@ export const HippocampusDissectionScene: React.FC<HippocampusDissectionSceneProp
     window.addEventListener('scroll', wakeUp, { passive: true });
 
     return () => {
+      wakeUpRef.current = null;
       controller.abort();
       if (rafId !== null) cancelAnimationFrame(rafId);
       visibilityObserver?.disconnect();

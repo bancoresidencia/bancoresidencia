@@ -335,6 +335,7 @@ export interface FetchQuestionsResult {
   pageSize: number;
   totalPages: number;
   sessionTicket?: string;
+  sessionTicketsByQuestionId?: Record<string, string>;
 }
 
 export interface ExtendedFilterState extends Partial<AdvancedFilterState> {
@@ -597,7 +598,23 @@ export async function fetchQuestionsFromSupabase(
 ): Promise<FetchQuestionsResult> {
   const size = Math.min(pageSize, 50);
   const first = await requestStudyQuestions<FetchQuestionsResult>({ filters, page, pageSize: size, questionIds }, signal);
-  if (pageSize <= size || page !== 1) return first;
+  const buildTicketMap = (results: FetchQuestionsResult[]): Record<string, string> => {
+    const map: Record<string, string> = {};
+    for (const res of results) {
+      if (!res.sessionTicket) continue;
+      for (const q of res.questions) {
+        if (q.id) map[q.id] = res.sessionTicket;
+      }
+    }
+    return map;
+  };
+
+  if (pageSize <= size || page !== 1) {
+    return {
+      ...first,
+      sessionTicketsByQuestionId: buildTicketMap([first])
+    };
+  }
 
   const remaining = Math.ceil(Math.min(pageSize, first.total) / size) - 1;
   const pages = await Promise.all(Array.from({ length: Math.max(0, remaining) }, (_, index) =>
@@ -607,7 +624,8 @@ export async function fetchQuestionsFromSupabase(
     ...first,
     questions: [...first.questions, ...pages.flatMap((result) => result.questions)],
     pageSize,
-    totalPages: Math.ceil(first.total / pageSize)
+    totalPages: Math.ceil(first.total / pageSize),
+    sessionTicketsByQuestionId: buildTicketMap([first, ...pages])
   };
 }
 

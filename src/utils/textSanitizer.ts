@@ -82,8 +82,14 @@ export function unpackStructuredCommentary(
   return { commentary: rawCommentary, options: safeOptions };
 }
 
+const SANITIZE_CACHE_MAX = 500;
+const sanitizeCache = new Map<string, string>();
+
 export function sanitizeMedicalText(rawText: string | null | undefined): string {
   if (!rawText || typeof rawText !== 'string') return '';
+
+  const cached = sanitizeCache.get(rawText);
+  if (cached !== undefined) return cached;
 
   // Preserva marca d'água forense invisível (\u200D\uFEFF...\uFEFF\u200D) contra remoção acidental no cliente
   const existingWatermark = rawText.match(FORENSIC_WATERMARK_REGEX)?.[0] || '';
@@ -268,11 +274,19 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
     .replace(/\n{3,}/g, '\n\n')
     .trim();
 
-  if (existingWatermark && text.length > 0) {
-    return text.length > 2 ? text.slice(0, 2) + existingWatermark + text.slice(2) : existingWatermark + text;
+  const result = (existingWatermark && text.length > 0)
+    ? (text.length > 2 ? text.slice(0, 2) + existingWatermark + text.slice(2) : existingWatermark + text)
+    : text;
+
+  if (rawText.length <= 16000) {
+    if (sanitizeCache.size >= SANITIZE_CACHE_MAX) {
+      const oldestKey = sanitizeCache.keys().next().value;
+      if (oldestKey !== undefined) sanitizeCache.delete(oldestKey);
+    }
+    sanitizeCache.set(rawText, result);
   }
 
-  return text;
+  return result;
 }
 
 /**

@@ -93,6 +93,7 @@ data/comparacoes_*/
 data/scratch_watermark/
 data/*.webp
 *.webp
+!public/images/institutions/*.webp
 scripts/nexmed_questions_catalog.json
 scripts/all_question_images.json
 coletor_gabaritos/

@@ -28,6 +28,17 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
   const { accentConfig } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Trava de rolagem (body scroll lock) quando o menu mobile está aberto
+  React.useEffect(() => {
+    if (mobileMenuOpen) {
+      const originalOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = originalOverflow;
+      };
+    }
+  }, [mobileMenuOpen]);
+
   const handleNavClick = (id: string) => {
     setMobileMenuOpen(false);
     onScrollToSection(id);
@@ -81,7 +92,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
             type="button"
             data-landing-auth
             onClick={() => onOpenAuth('register')}
-            className="inline-flex items-center justify-center h-9 px-3.5 sm:px-4 rounded-xl text-xs sm:text-[13px] font-bold transition-all shadow-xs hover:opacity-95 active:scale-[0.98] cursor-pointer"
+            className="inline-flex items-center justify-center h-10 sm:h-9 min-h-[40px] px-3.5 sm:px-4 rounded-xl text-xs sm:text-[13px] font-bold transition-all shadow-xs hover:opacity-95 active:scale-[0.98] cursor-pointer"
             style={{
               backgroundColor: accentConfig.primaryHex,
               color: accentConfig.primaryContrastHex
@@ -93,7 +104,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
           <button
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="lg:hidden h-9 w-9 inline-flex items-center justify-center rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+            className="lg:hidden h-10 w-10 sm:h-9 sm:w-9 min-h-[40px] min-w-[40px] inline-flex items-center justify-center rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
             aria-label={mobileMenuOpen ? 'Fechar menu' : 'Abrir menu'}
             aria-expanded={mobileMenuOpen}
           >
@@ -111,7 +122,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
                 key={item.id}
                 type="button"
                 onClick={() => handleNavClick(item.id)}
-                className="w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer"
+                className="w-full text-left px-3.5 py-2.5 min-h-[44px] flex items-center rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer"
               >
                 {item.label}
               </button>
@@ -126,7 +137,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
                 setMobileMenuOpen(false);
                 onOpenAuth('login');
               }}
-              className="w-full h-10 rounded-xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center cursor-pointer"
+              className="w-full h-11 min-h-[44px] rounded-xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center cursor-pointer"
             >
               Entrar na Plataforma
             </button>
@@ -137,7 +148,7 @@ export const LandingHeader: React.FC<LandingHeaderProps> = ({
                 setMobileMenuOpen(false);
                 onOpenAuth('register');
               }}
-              className="w-full h-10 rounded-xl text-sm font-bold flex items-center justify-center cursor-pointer shadow-sm"
+              className="w-full h-11 min-h-[44px] rounded-xl text-sm font-bold flex items-center justify-center cursor-pointer shadow-sm"
               style={{
                 backgroundColor: accentConfig.primaryHex,
                 color: accentConfig.primaryContrastHex

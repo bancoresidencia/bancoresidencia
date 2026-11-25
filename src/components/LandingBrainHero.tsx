@@ -99,48 +99,48 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     }
 
     // Mapeamento contínuo das dobras:
-    // 0.00 -> 0.16: Dobra 1 (Os 4 Pilares da Aprovação - Carrossel com cérebro centralizado no fundo)
-    // 0.14 -> 0.30: Transição da Dobra 1 para a Dobra 2 (O Salto/Glide: cérebro migra para a DIREITA e solidifica)
-    // 0.28 -> 0.44: Dobra 2 (Mensagem "Daqui a um mês..." à ESQUERDA e cérebro à DIREITA)
-    // 0.44 -> 0.58: Transição da Dobra 2 para a Dobra 3 (Cérebro migra para a ESQUERDA e card entra na DIREITA)
-    // 0.58 -> 1.00: Dobra 3 (Dissecção Clínica dos 3 Atos: Córtex -> Papez -> Hipocampo)
+    // 0.00 -> 0.12: Dobra 1 (Os 4 Pilares da Aprovação - Carrossel com cérebro centralizado no fundo)
+    // 0.05 -> 0.18: Transição da Dobra 1 para a Dobra 2 (Cérebro migra suavemente para a DIREITA)
+    // 0.18 -> 0.36: Dobra 2 (Mensagem "Daqui a um mês..." à ESQUERDA e cérebro à DIREITA)
+    // 0.36 -> 0.50: Transição da Dobra 2 para a Dobra 3 (Cérebro migra para a ESQUERDA e card entra na DIREITA)
+    // 0.46 -> 1.00: Dobra 3 (Dissecção Clínica dos 3 Atos com retenção confortável: Córtex -> Papez -> Hipocampo)
 
-    const pillarsFade = smootherstep(0.08, 0.20, rawProgress);
+    const pillarsFade = smootherstep(0.02, 0.12, rawProgress);
     const pillarsOpacity = 1 - pillarsFade;
     const pillarsY = -28 * pillarsFade;
 
-    const toDobra2 = smootherstep(0.12, 0.28, rawProgress);
-    const toDobra3 = smootherstep(0.42, 0.56, rawProgress);
+    const toDobra2 = smootherstep(0.05, 0.18, rawProgress);
+    const toDobra3 = smootherstep(0.36, 0.50, rawProgress);
 
     // O CÉREBRO:
     // Dobra 1: 0px (centro exato)
     // Dobra 2: +285px (DIREITA)
-    // Dobra 3: -235px (ESQUERDA ao lado do card)
-    const brainDesktopX = (285 * toDobra2) - (520 * toDobra3);
+    // Dobra 3: -120px (ESQUERDA equilibrada próxima ao centro, sem afastar excessivamente do card)
+    const brainDesktopX = (285 * toDobra2) - (405 * toDobra3);
     const brainInitialFade = 0.40 + 0.60 * toDobra2;
     const brainScale = (1.15 - 0.15 * toDobra2) * (1.0 - 0.04 * toDobra3);
 
     // O GLOW AMBIENTE:
     // Dobra 1: 50% (centro)
     // Dobra 2: 68% (atrás do cérebro à direita)
-    // Dobra 3: 28% (atrás do cérebro à esquerda)
-    const glowLeftDesktop = 50 + 18 * toDobra2 - 40 * toDobra3;
+    // Dobra 3: 36% (atrás do cérebro à esquerda, harmonizado com o cérebro em -120px)
+    const glowLeftDesktop = 50 + 18 * toDobra2 - 32 * toDobra3;
 
     // A MENSAGEM DA DOBRA 2 ("Daqui a um mês..."):
-    const heroFadeIn = smootherstep(0.20, 0.30, rawProgress);
-    const heroFadeOut = smootherstep(0.40, 0.50, rawProgress);
+    const heroFadeIn = smootherstep(0.12, 0.22, rawProgress);
+    const heroFadeOut = smootherstep(0.32, 0.42, rawProgress);
     const heroOpacity = heroFadeIn * (1 - heroFadeOut);
     const heroY = (1 - heroFadeIn) * 20 - 18 * heroFadeOut;
 
     // OS CARDS DA DOBRA 3:
-    const cardsOpacity = smootherstep(0.50, 0.58, rawProgress);
+    const cardsOpacity = smootherstep(0.44, 0.52, rawProgress);
     const shouldShowCards = cardsOpacity > 0.05;
     if (cardsVisible !== shouldShowCards) {
       setCardsVisible(shouldShowCards);
     }
 
-    // PROGRESSO DA JORNADA ANATÔMICA (mapeado de 0.52 a 1.00):
-    const dissectionProgress = Math.max(0, Math.min(1, (rawProgress - 0.52) / 0.48));
+    // PROGRESSO DA JORNADA ANATÔMICA (mapeado de 0.46 a 1.00):
+    const dissectionProgress = Math.max(0, Math.min(1, (rawProgress - 0.46) / 0.54));
 
     if (dissectionProgress !== scrollProgressRef.current) {
       const frame = getBrainJourneyFrame(dissectionProgress, journeyFrameRef.current);
@@ -149,16 +149,16 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
         setJourneyFrame(frame);
       }
 
-      // Histerese de scroll para os 3 atos anatômicos com travamento deliberado:
+      // Histerese de scroll para os 3 atos anatômicos com travamento e retenção deliberados:
       const currentAct = activeActRef.current;
       let nextAct = currentAct;
-      if (currentAct === 0 && dissectionProgress >= 0.42) {
+      if (currentAct === 0 && dissectionProgress >= 0.36) {
         nextAct = 1;
       } else if (currentAct === 1) {
-        if (dissectionProgress >= 0.76) nextAct = 2;
-        else if (dissectionProgress < 0.36) nextAct = 0;
+        if (dissectionProgress >= 0.68) nextAct = 2;
+        else if (dissectionProgress < 0.32) nextAct = 0;
       } else if (currentAct === 2) {
-        if (dissectionProgress < 0.70) nextAct = 1;
+        if (dissectionProgress < 0.64) nextAct = 1;
       }
       if (nextAct !== currentAct) {
         activeActRef.current = nextAct;
@@ -255,9 +255,8 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
     ? isDark
       ? 'linear-gradient(110deg, #fff 0%, #a1a1aa 28%, #fff 50%, #71717a 76%, #fff 100%)'
       : 'linear-gradient(110deg, #09090b 0%, #3f3f46 28%, #18181b 50%, #52525b 76%, #09090b 100%)'
-    : `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex} 26%, ${
-        isDark ? '#e0f2fe' : accentConfig.hoverHex
-      } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex} 100%)`;
+    : `linear-gradient(110deg, ${accentConfig.primaryHex} 0%, ${accentConfig.chartPalette[1] ?? accentConfig.hoverHex} 26%, ${isDark ? '#e0f2fe' : accentConfig.hoverHex
+    } 48%, ${accentConfig.chartPalette[2] ?? accentConfig.accuracyAccent.hex} 68%, ${accentConfig.primaryHex} 100%)`;
 
   return (
     <section
@@ -272,7 +271,7 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
       } as React.CSSProperties}
       className="font-inter relative w-full bg-zinc-50 dark:bg-[var(--bg-page)] transition-colors duration-300"
     >
-      <div ref={trackRef} className="relative h-[880svh] w-full">
+      <div ref={trackRef} className="relative h-[290svh] sm:h-[420svh] lg:h-[680svh] w-full">
         <div className="sticky top-16 h-[calc(100svh-4rem)] min-h-[420px] w-full overflow-hidden flex flex-col justify-between">
           {/* Luz ambiente radial dinâmica que acompanha suavemente o cérebro (centro -> direita -> esquerda) */}
           <div
@@ -300,8 +299,8 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
               className="absolute inset-0 z-20 flex flex-col justify-between will-change-[transform,opacity]"
             >
               <LandingIntroSection
-                onOpenAuth={onOpenAuth ?? (() => {})}
-                onScrollToSection={onScrollToSection ?? (() => {})}
+                onOpenAuth={onOpenAuth ?? (() => { })}
+                onScrollToSection={onScrollToSection ?? (() => { })}
                 embeddedMode={true}
               />
             </div>
@@ -336,11 +335,11 @@ export const LandingBrainHero: React.FC<LandingBrainHeroProps> = ({
               />
             </div>
 
-            {/* 3. TERCEIRA DOBRA: Card Unificado da Jornada Clínica à direita */}
+            {/* 3. TERCEIRA DOBRA: Card Unificado da Jornada Clínica à direita (com margens laterais harmônicas) */}
             <div
               ref={cardsPanelRef}
               style={{ opacity: 0, pointerEvents: 'none' }}
-              className="absolute inset-x-4 bottom-3 z-30 mx-auto grid min-w-0 max-w-xl items-center sm:inset-x-6 lg:bottom-auto lg:left-auto lg:right-6 lg:top-1/2 lg:w-[435px] lg:-translate-y-1/2 xl:w-[465px]"
+              className="absolute inset-x-4 bottom-3 z-30 mx-auto grid min-w-0 max-w-xl items-center sm:inset-x-6 lg:bottom-auto lg:left-auto lg:right-16 xl:right-24 lg:top-1/2 lg:w-[435px] lg:-translate-y-1/2 xl:w-[465px]"
             >
               {BRAIN_HERO_CARD_MODE === 'unified' ? (
                 <LandingUnifiedBrainCard
