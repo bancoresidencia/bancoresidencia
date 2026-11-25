@@ -57,6 +57,7 @@ export interface AdvancedFilterState {
   bancaOrganizadora?: string[];
   macrorregioes?: string[];
   apenasComImagem?: boolean;
+  apenasComentadas?: boolean;
   eixoClinico?: string[];
   instituicoes: string[];
   anos: number[];

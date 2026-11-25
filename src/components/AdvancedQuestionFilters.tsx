@@ -261,7 +261,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     filters.programaRplus,
     filters.bancaOrganizadora,
     filters.macrorregioes,
-    filters.apenasComImagem,
+    filters.apenasComentadas,
     filters.instituicoes,
     filters.anos,
     filters.dificuldade,
@@ -312,8 +312,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     if (filters.ocultarRevisadas) {
       parts.push('Sem revisadas');
     }
+    if (filters.apenasComentadas) {
+      parts.push('Comentadas');
+    }
     return parts;
-  }, [filters.dificuldade, filters.tipoQuestao, filters.ocultarAnuladasErro, filters.ocultarRevisadas]);
+  }, [filters.dificuldade, filters.tipoQuestao, filters.ocultarAnuladasErro, filters.ocultarRevisadas, filters.apenasComentadas]);
 
   // Contadores de filtros ativos para as abas mobile
   const activeConteudoCount = useMemo(() => {
@@ -383,6 +386,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     tipoQuestao: filters.tipoQuestao, status: filters.status, search: filters.search,
     ocultarAnuladasErro: filters.ocultarAnuladasErro, ocultarRevisadas: filters.ocultarRevisadas,
     ultimos5Anos: filters.ultimos5Anos, apenasComImagem: filters.apenasComImagem,
+    apenasComentadas: filters.apenasComentadas,
     bancaOrganizadora: filters.bancaOrganizadora, macrorregioes: filters.macrorregioes,
     programaRplus: filters.programaRplus
   });
@@ -931,14 +935,6 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               macrorregioes: (filters.macrorregioes || []).filter((x) => x !== mr)
             })
         });
-      });
-    }
-
-    if (filters.apenasComImagem) {
-      tags.push({
-        id: 'apenas-img',
-        label: 'Com Imagem / Exame',
-        onRemove: () => onChange({ ...filters, apenasComImagem: false })
       });
     }
 
@@ -1980,7 +1976,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     </div>
                   </div>
 
-                  {/* Linha 2: Ocultar anuladas / Ocultar revisadas / Com Imagem */}
+                  {/* Linha 2: Ocultar anuladas / Ocultar revisadas / Comentadas */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
                     <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3 flex items-center justify-between shadow-xs">
                       <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">Ocultar anuladas</span>
@@ -2038,29 +2034,33 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       </button>
                     </div>
 
-                    <div className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3 flex items-center justify-between shadow-xs">
-                      <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">Com imagem</span>
+                    <div
+                      className="bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2.5 px-3 flex items-center justify-between shadow-xs"
+                      title="Seleciona apenas questões com comentário padrão ouro"
+                    >
+                      <span className="text-xs font-semibold text-zinc-800 dark:text-zinc-200">Comentadas</span>
                       <button
                         type="button"
                         role="switch"
-                        aria-checked={Boolean(filters.apenasComImagem)}
+                        aria-label="Comentadas"
+                        aria-checked={Boolean(filters.apenasComentadas)}
                         onClick={() =>
                           onChange({
                             ...filters,
-                            apenasComImagem: !filters.apenasComImagem
+                            apenasComentadas: !filters.apenasComentadas
                           })
                         }
-                        className={`w-10 h-5.5 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${filters.apenasComImagem
+                        className={`w-10 h-5.5 rounded-full transition-colors relative inline-flex items-center cursor-pointer p-0.5 shrink-0 border ${filters.apenasComentadas
                           ? ''
                           : 'bg-zinc-300 dark:bg-zinc-700 border-zinc-400/60 dark:border-zinc-600'
                           }`}
                         style={{
-                          backgroundColor: filters.apenasComImagem ? accentConfig.primaryHex : undefined,
-                          borderColor: filters.apenasComImagem ? accentConfig.primaryHex : undefined
+                          backgroundColor: filters.apenasComentadas ? accentConfig.primaryHex : undefined,
+                          borderColor: filters.apenasComentadas ? accentConfig.primaryHex : undefined
                         }}
                       >
                         <span
-                          className={`w-4 h-4 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${filters.apenasComImagem ? 'translate-x-4.5' : 'translate-x-0'
+                          className={`w-4 h-4 bg-white rounded-full shadow-md transition-transform duration-200 inline-block ${filters.apenasComentadas ? 'translate-x-4.5' : 'translate-x-0'
                             }`}
                         />
                       </button>

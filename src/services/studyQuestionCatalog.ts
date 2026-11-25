@@ -128,6 +128,7 @@ export function normalizeStudyQuery(
     hide_annulled: filters.ocultarAnuladasErro === true,
     hide_reviewed: filters.ocultarRevisadas === true,
     with_image: filters.apenasComImagem === true,
+    only_commented: filters.apenasComentadas === true,
     search_terms: search.length > 1 ? getClinicalSearchTerms(search) : null,
     clinical: clinical.length ? clinical : null,
     quota_clinical: hasQuotaPaths ? quotaPaths : null,

@@ -107,6 +107,19 @@ BEGIN
     OR public.query_study_questions('{"ids":["study-qa-1"]}')->>'total' <> '0' THEN
     RAISE EXCEPTION 'Catalog index failed to reflect a publication or classification change';
   END IF;
+  IF public.query_study_questions('{"ids":["study-qa-2","study-qa-3"],"only_commented":true}')->>'total' <> '0' THEN
+    RAISE EXCEPTION 'Legacy/non-gold commentary was incorrectly included by only_commented';
+  END IF;
+  UPDATE public.questions_direto
+  SET commentary = E'Síntese Clínica:\nConduta padrão.\n\nTake-Home Message:\n**Ponto-chave.**'
+  WHERE id = 'study-qa-2';
+  UPDATE public.questions_direto
+  SET commentary = '{"_id":"legacy1","statementComment":"Olá, estudante!"}'
+  WHERE id = 'study-qa-3';
+  IF public.query_study_questions('{"ids":["study-qa-2","study-qa-3"],"only_commented":true}')->>'total' <> '1'
+    OR public.query_study_questions('{"ids":["study-qa-2","study-qa-3"],"only_commented":true}')->'rows'->0->>'id' <> 'study-qa-2' THEN
+    RAISE EXCEPTION 'only_commented failed to select exclusively gold-standard commentary';
+  END IF;
 END;
 $$;
 

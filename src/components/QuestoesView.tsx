@@ -76,6 +76,7 @@ function createEmptyFilters(): AdvancedFilterState {
     tipoQuestao: 'Todas',
     ocultarAnuladasErro: false,
     ocultarRevisadas: false,
+    apenasComentadas: true,
     ultimos5Anos: false,
     aleatorizar: false
   };

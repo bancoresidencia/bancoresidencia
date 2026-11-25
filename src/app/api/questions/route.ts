@@ -551,6 +551,13 @@ function applyQuestionFilters<T extends PostgrestFilterableQuery>(
     query = query.not('images', 'is', null).neq('images', '[]');
   }
 
+  // 4b-2. Apenas Comentadas (Padrão Ouro)
+  if (filters.apenasComentadas && isPrivileged) {
+    query = query.or(
+      'commentary.ilike.%Take-Home%,commentary.ilike.%Take Home%,commentary.ilike.%Síntese Clínica%,commentary.ilike.%Armadilha da Questão%,commentary.ilike.%Pérola Clínica%'
+    );
+  }
+
   // 4c. Programa R+ / Sociedade de Título
   if (filters.programaRplus && filters.programaRplus.length > 0) {
     const pClauses: string[] = [];
@@ -731,6 +738,7 @@ export async function POST(req: NextRequest) {
         (filtersWithoutClinical.macrorregioes && filtersWithoutClinical.macrorregioes.length > 0) ||
         (filtersWithoutClinical.programaRplus && filtersWithoutClinical.programaRplus.length > 0) ||
         filtersWithoutClinical.apenasComImagem ||
+        filtersWithoutClinical.apenasComentadas ||
         (filtersWithoutClinical.search && filtersWithoutClinical.search.trim()) ||
         (filtersWithoutClinical.anos && filtersWithoutClinical.anos.length > 0 && filtersWithoutClinical.anos.length < 18) ||
         (filtersWithoutClinical.dificuldade && filtersWithoutClinical.dificuldade !== 'Todas') ||
@@ -1024,6 +1032,7 @@ export async function POST(req: NextRequest) {
         (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
         (filters.search && filters.search.trim()) ||
         filters.ocultarAnuladasErro ||
+        filters.apenasComentadas ||
         filters.ultimos5Anos
       );
 
@@ -1153,6 +1162,7 @@ export async function POST(req: NextRequest) {
       (filters.macrorregioes && filters.macrorregioes.length > 0) ||
       (filters.programaRplus && filters.programaRplus.length > 0) ||
       filters.apenasComImagem ||
+      filters.apenasComentadas ||
       (filters.anos && filters.anos.length > 0 && filters.anos.length < 18) ||
       (filters.dificuldade && filters.dificuldade !== 'Todas') ||
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
@@ -1168,6 +1178,7 @@ export async function POST(req: NextRequest) {
       (filters.macrorregioes && filters.macrorregioes.length > 0) ||
       (filters.programaRplus && filters.programaRplus.length > 0) ||
       filters.apenasComImagem ||
+      filters.apenasComentadas ||
       (filters.anos && filters.anos.length > 0 && filters.anos.length < 18) ||
       (filters.dificuldade && filters.dificuldade !== 'Todas') ||
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||

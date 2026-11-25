@@ -19,7 +19,8 @@ export function hasRightCardActiveFilters(filters: ExtendedFilterState): boolean
     || (filters.tipoQuestao && filters.tipoQuestao !== 'Todas')
     || (filters.status && filters.status !== 'Todas')
     || filters.search?.trim() || filters.ocultarAnuladasErro || filters.ocultarRevisadas
-    || filters.ultimos5Anos || filters.apenasComImagem || filters.bancaOrganizadora?.length
+    || filters.ultimos5Anos || filters.apenasComImagem || filters.apenasComentadas
+    || filters.bancaOrganizadora?.length
     || filters.macrorregioes?.length || filters.programaRplus?.length);
 }
 
