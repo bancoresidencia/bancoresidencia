@@ -20,7 +20,8 @@ import { SPECIALTY_CONFIGS } from '../FlashcardsView';
 interface AddFlashcardDrawerProps {
   isOpen: boolean;
   onClose: () => void;
-  onCardSaved: () => void;
+  onCardSaved: (savedCard?: FlashcardItem, deckName?: string) => void;
+  editingCardId?: string;
   initialDeckId?: string;
   initialFront?: string;
   initialBack?: string;
@@ -34,6 +35,7 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   isOpen,
   onClose,
   onCardSaved,
+  editingCardId,
   initialDeckId = 'deck-padrao',
   initialFront,
   initialBack,
@@ -60,21 +62,25 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   const [newCardComment, setNewCardComment] = useState(initialComment || '');
   const [newCardPriority, setNewCardPriority] = useState<'essential' | 'standard'>('essential');
   const [newCardTags, setNewCardTags] = useState('');
-  const [addCardSuccessToast, setAddCardSuccessToast] = useState(false);
+  const [savedDeckNotice, setSavedDeckNotice] = useState<string | null>(null);
 
   const frontTextareaRef = useRef<HTMLTextAreaElement>(null);
 
   React.useEffect(() => {
     if (isOpen) {
-      if (initialDeckId) setSelectedDeckId(initialDeckId);
+      const targetDeck = initialDeckId && userDecks.some((d) => d.id === initialDeckId)
+        ? initialDeckId
+        : 'deck-padrao';
+      setSelectedDeckId(targetDeck);
       if (initialSpecialty) setNewCardSpecialty(initialSpecialty);
-      if (initialTema) setNewCardTema(initialTema);
-      if (initialFoco) setNewCardFoco(initialFoco);
+      if (initialTema !== undefined) setNewCardTema(initialTema);
+      if (initialFoco !== undefined) setNewCardFoco(initialFoco);
       if (initialFront !== undefined) setNewCardFront(initialFront);
       if (initialBack !== undefined) setNewCardBack(initialBack);
       if (initialComment !== undefined) setNewCardComment(initialComment);
+      setSavedDeckNotice(null);
     }
-  }, [isOpen, initialDeckId, initialSpecialty, initialTema, initialFoco, initialFront, initialBack, initialComment]);
+  }, [isOpen, initialDeckId, userDecks, initialSpecialty, initialTema, initialFoco, initialFront, initialBack, initialComment]);
 
   // Temas da especialidade selecionada no Drawer
   const drawerTemas = useMemo(() => {
@@ -92,6 +98,26 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
     const temaObj = drawerTemas.find((t) => t.tema === newCardTema);
     return temaObj?.focos.map((f) => f.foco) || [];
   }, [drawerTemas, newCardTema]);
+
+  // Sincroniza Tema e Foco iniciais com o primeiro item válido da especialidade
+  // para evitar gravação silenciosa como "Geral" quando o usuário não altera o select.
+  React.useEffect(() => {
+    if (!isOpen || drawerTemas.length === 0) return;
+    const temaExists = drawerTemas.some((t) => t.tema === newCardTema);
+    if (!newCardTema || !temaExists) {
+      const firstTema = drawerTemas[0];
+      setNewCardTema(firstTema.tema);
+      setNewCardFoco(firstTema.focos[0]?.foco || '');
+      setNewCardSubfoco('');
+      setNewCardSubSubfoco('');
+      return;
+    }
+    if (drawerFocos.length > 0 && (!newCardFoco || !drawerFocos.includes(newCardFoco))) {
+      setNewCardFoco(drawerFocos[0]);
+      setNewCardSubfoco('');
+      setNewCardSubSubfoco('');
+    }
+  }, [isOpen, drawerTemas, drawerFocos, newCardTema, newCardFoco]);
 
   // Subfocos do foco selecionado no Drawer
   const drawerSubfocos = useMemo(() => {
@@ -146,11 +172,14 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       .map((t) => t.trim().toLowerCase())
       .filter(Boolean);
 
-    const finalTema = newCardTema.trim() || 'Geral';
-    const finalFoco = newCardFoco.trim() || finalTema;
+    const finalTema = newCardTema.trim() || drawerTemas[0]?.tema || 'Geral';
+    const finalFoco = newCardFoco.trim() || drawerFocos[0] || finalTema;
+    const targetDeck = userDecks.find((d) => d.id === selectedDeckId);
+    const resolvedDeckId = targetDeck ? targetDeck.id : 'deck-padrao';
+    const resolvedDeckName = targetDeck?.name || 'Baralho Padrão';
 
     const newCard: FlashcardItem = {
-      id: `fc-user-${Date.now()}`,
+      id: editingCardId || '',
       front: newCardFront.trim(),
       back: newCardBack.trim(),
       comment: newCardComment.trim() || undefined,
@@ -160,16 +189,16 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       subfocus: newCardSubfoco.trim() || undefined,
       sub_subfocus: newCardSubSubfoco.trim() || undefined,
       subSubfocus: newCardSubSubfoco.trim() || undefined,
-      deckId: selectedDeckId,
+      deckId: resolvedDeckId,
       priority: newCardPriority,
       tags: tagsArray.length > 0 ? tagsArray : undefined
     };
 
-    flashcardsService.saveNewFlashcard(newCard, user?.id);
-    onCardSaved();
+    const savedCard = flashcardsService.saveNewFlashcard(newCard, user?.id);
+    onCardSaved(savedCard, resolvedDeckName);
 
-    setAddCardSuccessToast(true);
-    setTimeout(() => setAddCardSuccessToast(false), 3000);
+    setSavedDeckNotice(resolvedDeckName);
+    setTimeout(() => setSavedDeckNotice(null), 3500);
 
     if (keepOpen) {
       setNewCardFront('');
@@ -206,10 +235,10 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
             </div>
             <div>
               <h3 className="font-heading font-black text-base sm:text-lg text-zinc-900 dark:text-zinc-100">
-                Adicionar Flashcard
+                {editingCardId ? 'Personalizar Flashcard' : 'Adicionar Flashcard'}
               </h3>
               <p className="text-xs text-zinc-500">
-                Crie um cartão de memorização ativa com suporte a oclusão Cloze.
+                Salvo na sua aba <strong className="text-zinc-700 dark:text-zinc-300">Cartões Originais</strong> com suporte a oclusão Cloze.
               </p>
             </div>
           </div>
@@ -224,10 +253,10 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
         </div>
 
         {/* Toast de Sucesso Interno */}
-        {addCardSuccessToast && (
+        {savedDeckNotice && (
           <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-bold flex items-center gap-2 animate-in fade-in-50 duration-200">
             <CheckCircle2 className="w-4 h-4 shrink-0" />
-            <span>Flashcard adicionado com sucesso! Já está disponível para estudo.</span>
+            <span>Salvo em Cartões Originais → {savedDeckNotice}!</span>
           </div>
         )}
 
@@ -437,18 +466,16 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
                   prev === 'essential' ? 'standard' : 'essential'
                 )
               }
-              className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold border transition-colors cursor-pointer ${
-                newCardPriority === 'essential'
+              className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold border transition-colors cursor-pointer ${newCardPriority === 'essential'
                   ? 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30'
                   : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400'
-              }`}
+                }`}
             >
               <Star
-                className={`w-3.5 h-3.5 ${
-                  newCardPriority === 'essential'
+                className={`w-3.5 h-3.5 ${newCardPriority === 'essential'
                     ? 'fill-amber-500 text-amber-500'
                     : 'text-zinc-400'
-                }`}
+                  }`}
               />
               <span>Cartão Prioritário (Alta Relevância)</span>
             </button>

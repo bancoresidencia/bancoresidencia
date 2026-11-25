@@ -1,7 +1,7 @@
 'use client';
 
 import { StudyInkLayer } from '@/components/StudyInkLayer';
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import {
   ArrowLeft,
   Clock,
@@ -19,43 +19,70 @@ import {
   BarChart3,
   Users,
   TrendingUp,
-  RotateCcw
+  RotateCcw,
+  ShieldCheck
 } from 'lucide-react';
-import { FlashcardItem, FlashcardRating, StudyMaterialItem, CardCommunityStats } from '@/types/flashcards';
+import { AddFlashcardDrawer } from './flashcards/AddFlashcardDrawer';
+import {
+  FlashcardItem,
+  FlashcardRating,
+  FlashcardSchedulerSettings,
+  FlashcardSessionMode,
+  StudyMaterialItem
+} from '@/types/flashcards';
+import { previewRatingOptions } from '@/utils/ankiScheduler';
+import {
+  AnkiSessionQueueState,
+  advanceCustomNoRescheduleQueue,
+  advanceQueueAfterRating,
+  buildAnkiSessionQueue,
+  buildCustomNoRescheduleQueue,
+  forceAdvanceWaitingCard,
+  getLiveQueueCounts,
+  pickNextCardFromQueue,
+  reshufflePendingQueues,
+  skipCurrentCardInQueue,
+  stepBackInQueue
+} from '@/utils/ankiSessionQueue';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
-import { flashcardsService } from '@/services/flashcardsService';
-
-function shuffleArray<T>(array: T[]): T[] {
-  const arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
+import { flashcardsService, isUserCreatedFlashcardId } from '@/services/flashcardsService';
 
 interface FlashcardStudySessionProps {
   cards: FlashcardItem[];
   onExit: () => void;
   onOpenMaterial?: (material: StudyMaterialItem) => void;
   initialShuffled?: boolean;
+  schedulerSettings?: FlashcardSchedulerSettings;
+  sessionMode?: FlashcardSessionMode;
 }
 
 export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
   cards,
   onExit,
   onOpenMaterial,
-  initialShuffled = false
+  initialShuffled = false,
+  schedulerSettings,
+  sessionMode = 'srs'
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const activeSchedulerSettings = useMemo(() => {
+    return schedulerSettings || flashcardsService.getSchedulerSettings(user?.id);
+  }, [schedulerSettings, user?.id]);
+
+  const [activeSessionMode, setActiveSessionMode] = useState<FlashcardSessionMode>(sessionMode);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isShuffled, setIsShuffled] = useState(initialShuffled);
-  const [sessionCards, setSessionCards] = useState<FlashcardItem[]>(() => {
-    return initialShuffled ? shuffleArray(cards) : cards;
+  const [queueState, setQueueState] = useState<AnkiSessionQueueState>(() => {
+    if (sessionMode === 'custom_no_reschedule') {
+      return buildCustomNoRescheduleQueue(cards, new Date(), activeSchedulerSettings, initialShuffled);
+    }
+    return buildAnkiSessionQueue(cards, new Date(), activeSchedulerSettings, {
+      filterDueOnly: false,
+      shuffled: initialShuffled
+    });
   });
   const [sessionStats, setSessionStats] = useState({
     again: 0,
@@ -64,7 +91,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
     easy: 0
   });
   const [secondsElapsed, setSecondsElapsed] = useState(0);
-  const [isCompleted, setIsCompleted] = useState(false);
+  const [waitingNowMs, setWaitingNowMs] = useState<number>(() => Date.now());
   const [showShortcuts, setShowShortcuts] = useState(false);
 
   // Estado para Edição Direta no Card (sem modificar a estrutura visual)
@@ -77,42 +104,40 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
   // Drawer Central de Estatísticas do Flashcard
   const [showStatsModal, setShowStatsModal] = useState(false);
 
-  // Estado para Adicionar Novo Flashcard na Sessão
+  // Estado para Adicionar Novo Flashcard na Sessão (usa o AddFlashcardDrawer unificado -> Cartões Originais)
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
-  const [newFront, setNewFront] = useState('');
-  const [newBack, setNewBack] = useState('');
-  const [newComment, setNewComment] = useState('');
-  const [newPriority, setNewPriority] = useState<'essential' | 'standard'>('standard');
+  const [sessionToast, setSessionToast] = useState<string | null>(null);
 
-  // Alterna o estado de embaralhar (vai SEMPRE para o flashcard 1)
+  // Alterna o estado de embaralhar nas filas pendentes sem perder o progresso em learningQueue
   const toggleShuffle = () => {
-    if (!isShuffled) {
-      setSessionCards(shuffleArray(cards));
-      setCurrentIndex(0);
-      setIsFlipped(false);
-      setIsInlineEditing(false);
-      setShowStatsModal(false);
-      setIsShuffled(true);
-    } else {
-      setSessionCards(cards);
-      setCurrentIndex(0);
-      setIsFlipped(false);
-      setIsInlineEditing(false);
-      setShowStatsModal(false);
-      setIsShuffled(false);
-    }
+    const nextShuffled = !isShuffled;
+    setQueueState((prev) => reshufflePendingQueues(prev, nextShuffled));
+    setIsFlipped(false);
+    setIsInlineEditing(false);
+    setShowStatsModal(false);
+    setIsShuffled(nextShuffled);
   };
 
-  // Timer da sessão
+  // Timer da sessão + auto-despertador quando o próximo card de aprendizagem entra na janela
   useEffect(() => {
-    if (isCompleted) return;
+    if (queueState.isCompleted) return;
     const interval = setInterval(() => {
       setSecondsElapsed((prev) => prev + 1);
+      if (queueState.waitingForDueAtMs !== null) {
+        const now = new Date();
+        setWaitingNowMs(now.getTime());
+        const learnAheadMs = Math.max(0, activeSchedulerSettings.learnAheadMinutes) * 60 * 1000;
+        if (now.getTime() + learnAheadMs >= queueState.waitingForDueAtMs) {
+          setQueueState((prev) => pickNextCardFromQueue(prev, now, activeSchedulerSettings));
+        }
+      }
     }, 1000);
     return () => clearInterval(interval);
-  }, [isCompleted]);
+  }, [queueState.isCompleted, queueState.waitingForDueAtMs, activeSchedulerSettings]);
 
-  const currentCard = sessionCards[currentIndex];
+  const currentCard = queueState.currentCard;
+  const isCompleted = queueState.isCompleted;
+  const liveCounts = useMemo(() => getLiveQueueCounts(queueState), [queueState]);
 
   const handleToggleInlineEdit = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -147,45 +172,16 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
     flashcardsService.saveCardEdit(currentCard.id, updatedFields, user?.id);
 
     // Atualiza imediatamente o card na sessão ativa
-    setSessionCards((prev) =>
-      prev.map((c, idx) => (idx === currentIndex ? { ...c, ...updatedFields } : c))
-    );
+    setQueueState((prev) => ({
+      ...prev,
+      currentCard: prev.currentCard ? { ...prev.currentCard, ...updatedFields } : null
+    }));
 
     setIsInlineEditing(false);
   };
 
   const handleOpenAddModal = () => {
-    setNewFront('');
-    setNewBack('');
-    setNewComment('');
-    setNewPriority('standard');
     setIsAddModalOpen(true);
-  };
-
-  const handleSaveNewCard = () => {
-    if (!newFront.trim() || !newBack.trim()) return;
-
-    const newCard: FlashcardItem = {
-      id: `fc-user-${Date.now()}`,
-      front: newFront.trim(),
-      back: newBack.trim(),
-      comment: newComment.trim() || undefined,
-      specialty: currentCard?.specialty || 'Geral',
-      theme: currentCard?.theme || 'Geral',
-      focus: currentCard?.focus || currentCard?.theme || 'Geral',
-      priority: newPriority
-    };
-
-    flashcardsService.saveNewFlashcard(newCard, user?.id);
-
-    // Adiciona o novo card logo após o card atual na sessão ativa
-    setSessionCards((prev) => {
-      const copy = [...prev];
-      copy.splice(currentIndex + 1, 0, newCard);
-      return copy;
-    });
-
-    setIsAddModalOpen(false);
   };
 
   // Formata tempo (mm:ss)
@@ -233,90 +229,69 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
     });
   };
 
-  // Projeção dinâmica de intervalos FSRS baseada na repetição real do card
+  // Projeção determinística:
+  // - Em modo custom_no_reschedule: mostra comportamento temporário da sessão sem alterar FSRS
+  // - Em modo SRS / custom_reschedule: mostra projeção FSRS-5 idêntica ao cálculo real
   const getProjectedIntervalLabel = (card: FlashcardItem, rating: FlashcardRating): string => {
-    const isEssential = card.priority === 'essential';
-    const reps = card.progress?.repetitions || 0;
-    const currentInterval = card.progress?.intervalDays || (isEssential ? 1 : 2);
-    const ease = card.progress?.easeFactor || 2.5;
-
-    if (rating === 'again') {
-      return isEssential ? '<1 min' : '<10 min';
+    if (activeSessionMode === 'custom_no_reschedule') {
+      const step0 = Math.max(1, activeSchedulerSettings.learningStepsMinutes[0] || 1);
+      const hardMins = Math.max(5, Math.min(15, step0 * 5));
+      if (rating === 'again') return `${step0} min`;
+      if (rating === 'hard') return `${hardMins} min`;
+      return 'Concluir';
     }
-    if (rating === 'hard') {
-      return isEssential ? '<5 min' : '1 dia';
-    }
-    if (rating === 'good') {
-      if (isEssential) {
-        if (reps <= 1) return '<10 min';
-        const d = Math.max(2, Math.round(currentInterval * ease));
-        return `${d}d`;
-      } else {
-        if (reps <= 1) return '2 dias';
-        const d = Math.max(2, Math.round(currentInterval * ease));
-        return `${d}d`;
-      }
-    }
-    if (rating === 'easy') {
-      if (isEssential) {
-        if (reps <= 1) return '<2 dias';
-        const d = Math.max(3, Math.round(Math.max(currentInterval, 1.5) * ease * 1.3));
-        return `${d}d`;
-      } else {
-        if (reps <= 1) return '<4 dias';
-        const d = Math.max(4, Math.round(Math.max(currentInterval, 2) * ease * 1.3));
-        return `${d}d`;
-      }
-    }
-    return '';
+    const previews = previewRatingOptions(card.progress, new Date(), activeSchedulerSettings);
+    return previews[rating].label;
   };
 
-  // Avança para o próximo card limpando estados efêmeros
-  const goToNextCard = useCallback(() => {
-    setIsFlipped(false);
-    setIsInlineEditing(false);
-    setShowStatsModal(false);
-    if (currentIndex + 1 < sessionCards.length) {
-      setCurrentIndex((prev) => prev + 1);
-    } else {
-      setIsCompleted(true);
-    }
-  }, [currentIndex, sessionCards.length]);
-
-  // Navegação direta entre cards
+  // Navegação direta entre cards na fila temporal
   const handlePrevCard = useCallback(() => {
-    if (currentIndex > 0) {
+    if (queueState.backStack.length > 0) {
       setIsFlipped(false);
       setIsInlineEditing(false);
       setShowStatsModal(false);
-      setCurrentIndex((prev) => prev - 1);
+      setQueueState((prev) => stepBackInQueue(prev));
     }
-  }, [currentIndex]);
+  }, [queueState.backStack.length]);
 
   const handleNextCard = useCallback(() => {
-    goToNextCard();
-  }, [goToNextCard]);
+    if (!currentCard) return;
+    setIsFlipped(false);
+    setIsInlineEditing(false);
+    setShowStatsModal(false);
+    setQueueState((prev) => skipCurrentCardInQueue(prev, new Date(), activeSchedulerSettings));
+  }, [currentCard, activeSchedulerSettings]);
 
-  // Avaliação do Card via FSRS
+  // Avaliação do Card:
+  // - Modo custom_no_reschedule: mantém fila temporária da sessão SEM chamar recordReview (preserva FSRS)
+  // - Modo SRS / custom_reschedule: grava FSRS-5 normalmente e avança na fila temporal
   const handleRate = useCallback(
     (rating: FlashcardRating) => {
       if (!currentCard) return;
 
-      flashcardsService.recordReview(currentCard.id, rating, user?.id);
-
+      const now = new Date();
       setSessionStats((prev) => ({
         ...prev,
         [rating]: prev[rating] + 1
       }));
 
-      // Se for "again", adiciona ao final da sessão para consolidação
-      if (rating === 'again') {
-        setSessionCards((prev) => [...prev, currentCard]);
+      setIsFlipped(false);
+      setIsInlineEditing(false);
+      setShowStatsModal(false);
+
+      if (activeSessionMode === 'custom_no_reschedule') {
+        setQueueState((prev) =>
+          advanceCustomNoRescheduleQueue(prev, rating, now, activeSchedulerSettings)
+        );
+        return;
       }
 
-      goToNextCard();
+      const updatedProgress = flashcardsService.recordReview(currentCard.id, rating, user?.id);
+      setQueueState((prev) =>
+        advanceQueueAfterRating(prev, updatedProgress, rating, now, activeSchedulerSettings)
+      );
     },
-    [currentCard, goToNextCard]
+    [currentCard, user?.id, activeSchedulerSettings, activeSessionMode]
   );
 
   // Helper para validar imagens médicas reais (evita badges sintéticos)
@@ -411,7 +386,9 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             Sessão Concluída!
           </h2>
           <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
-            {cards.length} cards revisados com o algoritmo FSRS.
+            {activeSessionMode === 'custom_no_reschedule'
+              ? `${queueState.completedCount} ${queueState.completedCount === 1 ? 'card praticado' : 'cards praticados'} em Estudo Personalizado (agendamento FSRS preservado).`
+              : `${queueState.completedCount} ${queueState.completedCount === 1 ? 'card consolidado' : 'cards consolidados'} com o algoritmo FSRS-5.`}
           </p>
         </div>
 
@@ -450,16 +427,18 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
           <button
             type="button"
             onClick={() => {
-              const base = isShuffled ? shuffleArray(cards) : cards;
-              setSessionCards(base);
-              setCurrentIndex(0);
+              setActiveSessionMode('custom_no_reschedule');
+              setQueueState(
+                buildCustomNoRescheduleQueue(cards, new Date(), activeSchedulerSettings, isShuffled)
+              );
+              setSessionStats({ again: 0, hard: 0, good: 0, easy: 0 });
               setIsFlipped(false);
-              setIsCompleted(false);
               setSecondsElapsed(0);
             }}
-            className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer"
+            className="flex-1 py-2.5 px-3 rounded-xl border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer"
+            title="Repassar os cartões novamente sem alterar as datas já agendadas no FSRS"
           >
-            Revisar Novamente
+            Revisar Novamente (Sem alterar FSRS)
           </button>
 
           <button
@@ -469,6 +448,57 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             style={{ backgroundColor: accentConfig.primaryHex }}
           >
             Concluir & Sair
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (queueState.waitingForDueAtMs !== null && !currentCard) {
+    const remainingSecs = Math.max(0, Math.ceil((queueState.waitingForDueAtMs - waitingNowMs) / 1000));
+    return (
+      <div className="max-w-xl mx-auto p-6 sm:p-8 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 text-center space-y-5 shadow-xs animate-in fade-in-50 duration-200">
+        <div
+          className="w-14 h-14 rounded-2xl mx-auto flex items-center justify-center text-white shadow-xs"
+          style={{ backgroundColor: accentConfig.primaryHex }}
+        >
+          <Clock className="w-7 h-7" />
+        </div>
+
+        <div className="space-y-1.5">
+          <h2 className="text-lg sm:text-xl font-heading font-black text-zinc-900 dark:text-zinc-100">
+            Aguardando Próximo Cartão em Aprendizagem
+          </h2>
+          <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
+            Restam <strong>{queueState.learningQueue.length}</strong>{' '}
+            {queueState.learningQueue.length === 1 ? 'cartão agendado' : 'cartões agendados'} fora da janela de antecipação ({activeSchedulerSettings.learnAheadMinutes} min).
+          </p>
+        </div>
+
+        <div className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 font-mono text-2xl font-black text-zinc-900 dark:text-zinc-100">
+          <Clock className="w-5 h-5 text-rose-500" />
+          <span>{formatTime(remainingSecs)}</span>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-2.5 pt-2">
+          <button
+            type="button"
+            onClick={() => {
+              setIsFlipped(false);
+              setQueueState((prev) => forceAdvanceWaitingCard(prev));
+            }}
+            className="flex-1 py-2.5 px-4 rounded-xl text-xs font-bold text-white shadow-xs cursor-pointer hover:opacity-95 transition-all"
+            style={{ backgroundColor: accentConfig.primaryHex }}
+          >
+            Estudar Próximo Agora Mesmo
+          </button>
+
+          <button
+            type="button"
+            onClick={onExit}
+            className="flex-1 py-2.5 px-4 rounded-xl border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer"
+          >
+            Concluir &amp; Sair
           </button>
         </div>
       </div>
@@ -497,8 +527,30 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <span>{formatTime(secondsElapsed)}</span>
           </div>
 
-          <div className="px-2.5 py-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 font-bold text-xs">
-            {currentIndex + 1} / {sessionCards.length}
+          <div
+            className="flex items-center gap-2 px-2.5 py-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 font-mono font-bold text-xs"
+            title="Contagem ao vivo estilo Anki: Novos • Aprender • Revisar"
+          >
+            <span
+              className={`text-blue-600 dark:text-blue-400 ${queueState.currentBucket === 'new' ? 'underline decoration-2 underline-offset-4' : ''
+                }`}
+            >
+              {liveCounts.novo}
+            </span>
+            <span className="text-zinc-400">+</span>
+            <span
+              className={`text-rose-600 dark:text-rose-400 ${queueState.currentBucket === 'learning' ? 'underline decoration-2 underline-offset-4' : ''
+                }`}
+            >
+              {liveCounts.aprender}
+            </span>
+            <span className="text-zinc-400">+</span>
+            <span
+              className={`text-emerald-600 dark:text-emerald-400 ${queueState.currentBucket === 'review' ? 'underline decoration-2 underline-offset-4' : ''
+                }`}
+            >
+              {liveCounts.revisar}
+            </span>
           </div>
 
           {/* Botão de Embaralhar / Ordem Original (Apenas ícone) */}
@@ -596,12 +648,20 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
         </div>
       )}
 
+      {/* Banner Discreto de Estudo Personalizado Sem Reagendamento */}
+      {activeSessionMode === 'custom_no_reschedule' && (
+        <div className="flex items-center justify-center gap-2 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 text-emerald-700 dark:text-emerald-300 text-[11px] font-bold">
+          <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+          <span>Estudo Personalizado • Agendamento FSRS original preservado (sem reagendamento)</span>
+        </div>
+      )}
+
       {/* 2. Barra de Progresso Fina */}
       <div className="w-full h-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 overflow-hidden">
         <div
           className="h-full transition-all duration-300 rounded-full"
           style={{
-            width: `${((currentIndex + 1) / sessionCards.length) * 100}%`,
+            width: `${Math.min(100, Math.max(4, (queueState.completedCount / Math.max(1, queueState.totalInitialDue)) * 100))}%`,
             backgroundColor: accentConfig.primaryHex
           }}
         />
@@ -635,6 +695,14 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200">
               {currentCard.focus}
             </span>
+            {queueState.isCurrentLearnAhead && (
+              <span
+                title="Cartão de aprendizagem antecipado dentro do Learn-Ahead Limit"
+                className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20"
+              >
+                Antecipado
+              </span>
+            )}
             {isInlineEditing && (
               <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30">
                 Editando {!isFlipped ? 'Frente' : 'Verso'}
@@ -655,11 +723,10 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
                   type="button"
                   onClick={() => setEditPriority((p) => (p === 'essential' ? 'standard' : 'essential'))}
                   title={editPriority === 'essential' ? 'Essencial na Prova (Clique para padrão)' : 'Padrão (Clique para marcar essencial)'}
-                  className={`p-1 rounded-lg border transition-colors cursor-pointer ${
-                    editPriority === 'essential'
+                  className={`p-1 rounded-lg border transition-colors cursor-pointer ${editPriority === 'essential'
                       ? 'border-amber-500/40 bg-amber-500/15 text-amber-500'
                       : 'border-zinc-200 dark:border-zinc-700 text-zinc-400'
-                  }`}
+                    }`}
                 >
                   <Star className={`w-3.5 h-3.5 ${editPriority === 'essential' ? 'fill-amber-500 text-amber-500' : ''}`} />
                 </button>
@@ -864,7 +931,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <button
               type="button"
               onClick={handlePrevCard}
-              disabled={currentIndex === 0}
+              disabled={queueState.backStack.length === 0}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-25 disabled:cursor-not-allowed transition-colors text-[11px] font-semibold cursor-pointer"
               title="Voltar ao flashcard anterior"
             >
@@ -885,7 +952,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             <button
               type="button"
               onClick={handleNextCard}
-              disabled={currentIndex >= sessionCards.length - 1}
+              disabled={liveCounts.totalRemaining <= 1}
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 disabled:opacity-25 disabled:cursor-not-allowed transition-colors text-[11px] font-semibold cursor-pointer"
               title="Pular para o próximo flashcard sem registrar avaliação"
             >
@@ -896,7 +963,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
         </div>
       ) : (
         <div className="flex items-center justify-center gap-2 sm:gap-3">
-          {currentIndex > 0 && (
+          {queueState.backStack.length > 0 && (
             <button
               type="button"
               onClick={handlePrevCard}
@@ -966,8 +1033,8 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
 
             {/* Conteúdo com verificação se o aluno já respondeu */}
             {(() => {
-              const stats = flashcardsService.getCardCommunityStats(currentCard);
-              const userProgress = flashcardsService.loadSavedProgress()[currentCard.id] || currentCard.progress;
+              const stats = flashcardsService.getCardCommunityStats(currentCard, user?.id);
+              const userProgress = flashcardsService.loadSavedProgress(user?.id)[currentCard.id] || currentCard.progress;
               const hasAnswered = (userProgress && userProgress.repetitions > 0) || (userProgress && userProgress.lastRating);
 
               return (
@@ -1105,125 +1172,35 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
         </div>
       )}
 
-      {/* Modal de Adicionar Flashcard diretamente na Sessão */}
-      {isAddModalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in-50 duration-150"
-          onClick={() => setIsAddModalOpen(false)}
-        >
-          <div
-            className="w-full max-w-lg p-5 sm:p-6 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-xl space-y-4 max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-3">
-              <div>
-                <h3 className="text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
-                  <Plus className="w-4 h-4 text-emerald-500" />
-                  <span>Adicionar Flashcard</span>
-                </h3>
-                <p className="text-[11px] text-zinc-500">
-                  O flashcard será salvo no seu acervo pessoal e incluído nesta sessão.
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={() => setIsAddModalOpen(false)}
-                className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer"
-              >
-                <X className="w-4 h-4" />
-              </button>
-            </div>
+      {/* Drawer Unificado de Criação -> Cartões Originais */}
+      <AddFlashcardDrawer
+        isOpen={isAddModalOpen}
+        initialDeckId={
+          currentCard?.deckId && isUserCreatedFlashcardId(currentCard.id)
+            ? currentCard.deckId
+            : 'deck-padrao'
+        }
+        initialSpecialty={currentCard?.specialty || 'Clínica Médica'}
+        initialTema={currentCard?.theme}
+        initialFoco={currentCard?.focus}
+        onClose={() => setIsAddModalOpen(false)}
+        onCardSaved={(savedCard, deckName) => {
+          if (savedCard) {
+            setQueueState((prev) => ({
+              ...prev,
+              newQueue: [savedCard, ...prev.newQueue],
+              totalInitialDue: prev.totalInitialDue + 1
+            }));
+          }
+          setSessionToast(`Salvo em Cartões Originais → ${deckName || 'Baralho Padrão'}`);
+          setTimeout(() => setSessionToast(null), 4000);
+        }}
+      />
 
-            <div className="space-y-3 text-xs">
-              <div className="space-y-1">
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
-                  Frente do Cartão (Pergunta / Enunciado) *
-                </label>
-                <textarea
-                  rows={3}
-                  value={newFront}
-                  onChange={(e) => setNewFront(e.target.value)}
-                  placeholder="Ex: Qual o exame padrão-ouro para confirmação diagnóstica de apendicite aguda na gestante?"
-                  className="w-full p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400 font-mono text-xs"
-                />
-              </div>
-
-              <div className="space-y-1">
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
-                  Verso do Cartão (Resposta) *
-                </label>
-                <textarea
-                  rows={2}
-                  value={newBack}
-                  onChange={(e) => setNewBack(e.target.value)}
-                  placeholder="Ex: Ultrassonografia (1ª linha) ou Ressonância Magnética (quando USG duvidosa)"
-                  className="w-full p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400 text-xs font-semibold"
-                />
-              </div>
-
-              <div className="space-y-1">
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
-                  Explicação Clínica (Comentário opcional)
-                </label>
-                <textarea
-                  rows={2}
-                  value={newComment}
-                  onChange={(e) => setNewComment(e.target.value)}
-                  placeholder="Ex: Evitar TC no primeiro trimestre devido à radiação ionizante..."
-                  className="w-full p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400 text-xs"
-                />
-              </div>
-
-              <div className="space-y-1">
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
-                  Prioridade do Card
-                </label>
-                <div className="flex gap-2">
-                  <button
-                    type="button"
-                    onClick={() => setNewPriority('standard')}
-                    className={`flex-1 py-2 px-3 rounded-xl border text-xs font-bold transition-all cursor-pointer ${newPriority === 'standard'
-                      ? 'border-zinc-400 dark:border-zinc-600 bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100'
-                      : 'border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200'
-                      }`}
-                  >
-                    Padrão
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setNewPriority('essential')}
-                    className={`flex-1 py-2 px-3 rounded-xl border text-xs font-bold transition-all cursor-pointer flex items-center justify-center gap-1.5 ${newPriority === 'essential'
-                      ? 'border-amber-500 bg-amber-500/15 text-amber-700 dark:text-amber-300'
-                      : 'border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-amber-600'
-                      }`}
-                  >
-                    <Star className="w-3.5 h-3.5 fill-amber-500 text-amber-500" />
-                    <span>Essencial na Prova</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex justify-end gap-2 pt-2 border-t border-zinc-100 dark:border-zinc-800">
-              <button
-                type="button"
-                onClick={() => setIsAddModalOpen(false)}
-                className="px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-              >
-                Cancelar
-              </button>
-              <button
-                type="button"
-                disabled={!newFront.trim() || !newBack.trim()}
-                onClick={handleSaveNewCard}
-                className="px-4 py-1.5 rounded-xl text-xs font-bold text-white shadow-xs cursor-pointer hover:opacity-95 transition-all disabled:opacity-50 inline-flex items-center gap-1.5"
-                style={{ backgroundColor: accentConfig.primaryHex }}
-              >
-                <Plus className="w-3.5 h-3.5 stroke-[3]" />
-                <span>Adicionar à Sessão</span>
-              </button>
-            </div>
-          </div>
+      {sessionToast && (
+        <div className="fixed bottom-5 right-5 z-50 flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-2xl text-xs font-bold animate-in fade-in slide-in-from-bottom-2">
+          <Check className="w-4 h-4 text-emerald-400 dark:text-emerald-600 shrink-0" />
+          <span>{sessionToast}</span>
         </div>
       )}
     </div>

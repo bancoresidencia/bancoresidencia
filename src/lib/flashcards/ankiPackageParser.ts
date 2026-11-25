@@ -14,6 +14,7 @@ export interface ParsedImportCard {
   focus?: string;
   subfocus?: string;
   deckId?: string;
+  sourceDeckName?: string;
   priority?: 'essential' | 'standard';
   studyDepth?: 'study' | 'review';
   tags?: string[];
@@ -339,6 +340,7 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
         front,
         back,
         comment: comment || undefined,
+        sourceDeckName: deckName || undefined,
         tags: tags.length > 0 ? tags : undefined,
         specialty,
         theme,
@@ -449,6 +451,7 @@ export function parseAnkiText(
         front,
         back: back || 'Oclusão Cloze',
         comment: comment || undefined,
+        sourceDeckName: detectedDeck || undefined,
         tags: tags.length > 0 ? tags : undefined,
         rawLineIndex: idx + 1
       });

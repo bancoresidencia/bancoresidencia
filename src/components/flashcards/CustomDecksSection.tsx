@@ -7,12 +7,14 @@ import {
   Play,
   Trash2,
   Edit2,
-  Star
+  Star,
+  RotateCw
 } from 'lucide-react';
 import { FlashcardItem, CustomFlashcardDeck } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
-import { flashcardsService } from '@/services/flashcardsService';
+import { flashcardsService, isUserCreatedFlashcardId } from '@/services/flashcardsService';
+import { calculateAnkiDeckCounts } from '@/utils/ankiScheduler';
 import { CreateCustomDeckModal } from './CreateCustomDeckModal';
 
 
@@ -24,6 +26,7 @@ interface CustomDecksSectionProps {
     overridePriorityOnly?: boolean,
     allCardsMode?: boolean
   ) => void;
+  onOpenCustomStudy?: (cards: FlashcardItem[], title: string) => void;
   onDeckCountChange?: (count: number) => void;
   onCardsChange?: () => void;
 }
@@ -31,6 +34,7 @@ interface CustomDecksSectionProps {
 export const CustomDecksSection: React.FC<CustomDecksSectionProps> = ({
   allFlashcards,
   onStartStudy,
+  onOpenCustomStudy,
   onDeckCountChange,
   onCardsChange
 }) => {
@@ -87,34 +91,23 @@ export const CustomDecksSection: React.FC<CustomDecksSectionProps> = ({
 
   // Calcula contagens Anki para um baralho personalizado
   const getDeckStats = (deck: CustomFlashcardDeck) => {
-    const cards = flashcardsService.resolvePersonalizedDeckCards(deck, allFlashcards);
-    const now = new Date();
-    let novo = 0;
-    let aprender = 0;
-    let revisar = 0;
+    const userCustomDecks = flashcardsService.getCustomDecks(user?.id);
+    const cards = flashcardsService.resolvePersonalizedDeckCards(
+      deck,
+      allFlashcards,
+      userCustomDecks
+    );
+    const counts = calculateAnkiDeckCounts(cards);
 
-    cards.forEach((c) => {
-      const p = c.progress;
-      if (!p || p.state === 'new' || p.repetitions === 0) {
-        novo += 1;
-      } else if (p.state === 'learning' || p.state === 'relearning') {
-        aprender += 1;
-      } else if (p.state === 'review') {
-        if (!p.nextReviewDate || new Date(p.nextReviewDate) <= now) {
-          revisar += 1;
-        }
-      }
-    });
-
-    const brCount = cards.filter((c) => !c.id.startsWith('fc-user-')).length;
-    const userCount = cards.filter((c) => c.id.startsWith('fc-user-')).length;
+    const brCount = cards.filter((c) => !isUserCreatedFlashcardId(c.id)).length;
+    const userCount = cards.filter((c) => isUserCreatedFlashcardId(c.id)).length;
 
     return {
       cards,
-      novo,
-      aprender,
-      revisar,
-      total: cards.length,
+      novo: counts.novo,
+      aprender: counts.aprender,
+      revisar: counts.revisar,
+      total: counts.total,
       brCount,
       userCount
     };
@@ -265,8 +258,17 @@ export const CustomDecksSection: React.FC<CustomDecksSectionProps> = ({
                           {deck.name}
                         </span>
 
-                        <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-                          Misto
+                        <span
+                          className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${deck.deckType === 'smart' ||
+                              (deck.dynamicFilters && deck.dynamicFilters.length > 0)
+                              ? 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20'
+                              : 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/20'
+                            }`}
+                        >
+                          {deck.deckType === 'smart' ||
+                            (deck.dynamicFilters && deck.dynamicFilters.length > 0)
+                            ? 'Smart'
+                            : 'Misto'}
                         </span>
 
                         {deck.priorityOnly && (
@@ -321,20 +323,37 @@ export const CustomDecksSection: React.FC<CustomDecksSectionProps> = ({
                   {/* Ações Desktop e Barra Compacta Mobile */}
                   <div className="col-span-12 sm:col-span-1 flex items-center justify-end sm:justify-center gap-1.5 sm:gap-1 pt-2.5 mt-2 sm:pt-0 sm:mt-0 border-t border-zinc-100 dark:border-zinc-800/60 sm:border-0">
                     {stats.cards.length > 0 ? (
-                      <button
-                        type="button"
-                        onClick={() =>
-                          onStartStudy(
-                            stats.cards,
-                            `${deck.name} (${stats.cards.length} cards)`
-                          )
-                        }
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:p-1.5 min-h-[34px] sm:min-h-0 rounded-lg text-[11px] font-bold bg-emerald-600 text-white sm:bg-transparent sm:text-zinc-400 sm:hover:text-white sm:hover:bg-emerald-600 transition-colors cursor-pointer touch-manipulation"
-                        title="Estudar este baralho personalizado"
-                      >
-                        <Play className="w-3.5 h-3.5 fill-current" />
-                        <span className="sm:hidden">Estudar</span>
-                      </button>
+                      <>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            onStartStudy(
+                              stats.cards,
+                              `${deck.name} (${stats.cards.length} cards)`
+                            )
+                          }
+                          className="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:p-1.5 min-h-[34px] sm:min-h-0 rounded-lg text-[11px] font-bold bg-emerald-600 text-white sm:bg-transparent sm:text-zinc-400 sm:hover:text-white sm:hover:bg-emerald-600 transition-colors cursor-pointer touch-manipulation"
+                          title="Estudar este baralho personalizado"
+                        >
+                          <Play className="w-3.5 h-3.5 fill-current" />
+                          <span className="sm:hidden">Estudar</span>
+                        </button>
+                        {onOpenCustomStudy && (
+                          <button
+                            type="button"
+                            onClick={() =>
+                              onOpenCustomStudy(
+                                stats.cards,
+                                `Estudo Personalizado: ${deck.name}`
+                              )
+                            }
+                            className="inline-flex items-center gap-1 px-2 py-1.5 sm:p-1.5 min-h-[34px] sm:min-h-0 rounded-lg text-[11px] font-bold text-zinc-400 hover:text-white hover:bg-blue-600 transition-colors cursor-pointer touch-manipulation"
+                            title="Estudo Personalizado (Sem alterar FSRS)"
+                          >
+                            <RotateCw className="w-3.5 h-3.5" />
+                          </button>
+                        )}
+                      </>
                     ) : (
                       <span className="text-[10px] text-zinc-400 font-mono px-1">0 cards</span>
                     )}

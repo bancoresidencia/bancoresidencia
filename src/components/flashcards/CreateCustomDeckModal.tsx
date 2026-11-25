@@ -23,7 +23,8 @@ import {
 import { FlashcardItem, CustomFlashcardDeck } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
-import { flashcardsService } from '@/services/flashcardsService';
+import { flashcardsService, isUserCreatedFlashcardId } from '@/services/flashcardsService';
+import { calculateAnkiDeckCounts } from '@/utils/ankiScheduler';
 import { CsvFlashcardImportModal } from './CsvFlashcardImportModal';
 import { formatSubSubfocoDisplay } from '@/components/AdvancedQuestionFilters';
 import { clinicalHierarchy } from '@/data/mockQuestions';
@@ -93,6 +94,7 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
   const [priorityOnly, setPriorityOnly] = useState(false);
   const [includeAllUserCards, setIncludeAllUserCards] = useState(false);
   const [selectedUserDeckIds, setSelectedUserDeckIds] = useState<string[]>([]);
+  const [isDynamicSmartDeck, setIsDynamicSmartDeck] = useState(true);
   const [isCsvModalOpen, setIsCsvModalOpen] = useState(false);
 
   // Estado da Gaveta de Inspeção Card a Card (Abordagem A)
@@ -103,16 +105,16 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
   // Baralhos autorais do aluno
   const userDecks = useMemo(() => {
     return flashcardsService.getCustomDecks(user?.id);
-  }, [user?.id, isOpen]);
+  }, [user?.id, isOpen, isCsvModalOpen]);
 
   // Cartões autorais do usuário
   const userCards = useMemo(() => {
-    return allFlashcards.filter((c) => c.id.startsWith('fc-user-'));
+    return allFlashcards.filter((c) => isUserCreatedFlashcardId(c.id));
   }, [allFlashcards]);
 
   // Cartões oficiais da plataforma
   const platformCards = useMemo(() => {
-    return allFlashcards.filter((c) => !c.id.startsWith('fc-user-'));
+    return allFlashcards.filter((c) => !isUserCreatedFlashcardId(c.id));
   }, [allFlashcards]);
 
   // Cache hierárquico dos cards do BR
@@ -131,22 +133,28 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
         setPriorityOnly(Boolean(deckToEdit.priorityOnly));
         setIncludeAllUserCards(Boolean(deckToEdit.includeAllUserCards));
         setSelectedUserDeckIds(deckToEdit.includeUserDeckIds || []);
+        setIsDynamicSmartDeck(
+          deckToEdit.deckType === 'smart' ||
+          Boolean(deckToEdit.selectedNodeKeys && deckToEdit.selectedNodeKeys.length > 0)
+        );
 
-        // Restaura cartões selecionados
-        if (deckToEdit.cardIds && deckToEdit.cardIds.length > 0) {
-          setSelectedCardIds(new Set(deckToEdit.cardIds));
-        } else if (deckToEdit.selectedNodeKeys && deckToEdit.selectedNodeKeys.length > 0) {
+        // Restaura cartões selecionados combinando regras dinâmicas e cardIds avulsos
+        const restoredIds = new Set<string>(deckToEdit.cardIds || []);
+        if (deckToEdit.selectedNodeKeys && deckToEdit.selectedNodeKeys.length > 0) {
           const resolved = resolveCardsFromHierarchyKeys(deckToEdit.selectedNodeKeys, cardsCache);
-          setSelectedCardIds(new Set(resolved.map((c) => c.id)));
-        } else if (deckToEdit.specialties && deckToEdit.specialties.length > 0) {
+          resolved.forEach((c) => restoredIds.add(c.id));
+        } else if (
+          (!deckToEdit.cardIds || deckToEdit.cardIds.length === 0) &&
+          deckToEdit.specialties &&
+          deckToEdit.specialties.length > 0
+        ) {
           const resolved = resolveCardsFromHierarchyKeys(
             deckToEdit.specialties.map((s) => `spec:${s}`),
             cardsCache
           );
-          setSelectedCardIds(new Set(resolved.map((c) => c.id)));
-        } else {
-          setSelectedCardIds(new Set());
+          resolved.forEach((c) => restoredIds.add(c.id));
         }
+        setSelectedCardIds(restoredIds);
       } else {
         setDeckName('');
         setDeckDescription('');
@@ -156,6 +164,7 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
         setPriorityOnly(false);
         setIncludeAllUserCards(false);
         setSelectedUserDeckIds([]);
+        setIsDynamicSmartDeck(true);
       }
       setInspectingTopic(null);
       setInspectingSearch('');
@@ -286,31 +295,14 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
 
   // Contagens Anki
   const previewCounts = useMemo(() => {
-    const now = new Date();
-    let novo = 0;
-    let aprender = 0;
-    let revisar = 0;
-
-    previewCards.forEach((c) => {
-      const p = c.progress;
-      if (!p || p.state === 'new' || p.repetitions === 0) {
-        novo += 1;
-      } else if (p.state === 'learning' || p.state === 'relearning') {
-        aprender += 1;
-      } else if (p.state === 'review') {
-        if (!p.nextReviewDate || new Date(p.nextReviewDate) <= now) {
-          revisar += 1;
-        }
-      }
-    });
-
+    const counts = calculateAnkiDeckCounts(previewCards);
     return {
-      total: previewCards.length,
+      total: counts.total,
       brCount: selectedBrCards.length,
       userCount: selectedAuthorCards.length,
-      novo,
-      aprender,
-      revisar
+      novo: counts.novo,
+      aprender: counts.aprender,
+      revisar: counts.revisar
     };
   }, [previewCards, selectedBrCards, selectedAuthorCards]);
 
@@ -339,16 +331,91 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
       if (c.specialty) specSet.add(c.specialty);
     });
 
+    // Quando Smart Deck Dinâmico está ativo, extrai os nós inteiros selecionados
+    // (spec:, tema:, foco:, subfoco:, subsubfoco:) e guarda em cardIds apenas os avulsos.
+    let dynamicNodeKeys: string[] | undefined = undefined;
+    let finalCardIds: string[] = Array.from(selectedCardIds);
+
+    if (isDynamicSmartDeck && selectedCardIds.size > 0) {
+      const nodeKeys: string[] = [];
+      const coveredCardIds = new Set<string>();
+
+      const isAllSelected = (list: FlashcardItem[]) =>
+        list.length > 0 && list.every((c) => selectedCardIds.has(c.id));
+
+      clinicalHierarchy.forEach((spec) => {
+        const sCards = cardsCache.specMap.get(spec.especialidade) || [];
+        if (isAllSelected(sCards)) {
+          nodeKeys.push(`spec:${spec.especialidade}`);
+          sCards.forEach((c) => coveredCardIds.add(c.id));
+          return;
+        }
+        spec.temas.forEach((tem) => {
+          const rawTemaKey = `${spec.especialidade}:::${tem.tema}`;
+          const tCards = cardsCache.temaMap.get(rawTemaKey) || [];
+          if (isAllSelected(tCards)) {
+            nodeKeys.push(`tema:${rawTemaKey}`);
+            tCards.forEach((c) => coveredCardIds.add(c.id));
+            return;
+          }
+          tem.focos.forEach((foc) => {
+            const rawFocoKey = `${spec.especialidade}:::${tem.tema}:::${foc.foco}`;
+            const fCards = cardsCache.focoMap.get(rawFocoKey) || [];
+            if (isAllSelected(fCards)) {
+              nodeKeys.push(`foco:${rawFocoKey}`);
+              fCards.forEach((c) => coveredCardIds.add(c.id));
+              return;
+            }
+            foc.subfocos?.forEach((sub) => {
+              const subName = typeof sub === 'string' ? sub : sub.subfoco;
+              const rawSubKey = `${rawFocoKey}:::${subName}`;
+              const subCards = cardsCache.subfocoMap.get(rawSubKey) || [];
+              if (isAllSelected(subCards)) {
+                nodeKeys.push(`subfoco:${rawSubKey}`);
+                subCards.forEach((c) => coveredCardIds.add(c.id));
+                return;
+              }
+              if (typeof sub !== 'string' && sub.sub_subfocos) {
+                sub.sub_subfocos.forEach((ss) => {
+                  const rawSsKey = `${rawSubKey}:::${ss}`;
+                  const ssCards = cardsCache.subSubfocoMap.get(rawSsKey) || [];
+                  if (isAllSelected(ssCards)) {
+                    nodeKeys.push(`subsubfoco:${rawSsKey}`);
+                    ssCards.forEach((c) => coveredCardIds.add(c.id));
+                  }
+                });
+              }
+            });
+          });
+        });
+      });
+
+      if (nodeKeys.length > 0) {
+        dynamicNodeKeys = nodeKeys;
+        finalCardIds = Array.from(selectedCardIds).filter((id) => !coveredCardIds.has(id));
+      }
+    }
+
+    const hasSmartRules = Boolean(
+      isDynamicSmartDeck &&
+      ((dynamicNodeKeys && dynamicNodeKeys.length > 0) ||
+        includeAllUserCards ||
+        selectedUserDeckIds.length > 0 ||
+        (deckToEdit?.dynamicFilters && deckToEdit.dynamicFilters.length > 0))
+    );
+
     const deckData: CustomFlashcardDeck = {
       id: deckToEdit ? deckToEdit.id : `custom-deck-${Date.now()}`,
       name: deckName.trim(),
       description: deckDescription.trim() || undefined,
       specialties: Array.from(specSet),
-      cardIds: Array.from(selectedCardIds),
+      selectedNodeKeys: dynamicNodeKeys,
+      dynamicFilters: deckToEdit?.dynamicFilters,
+      cardIds: finalCardIds,
       priorityOnly,
       includeAllUserCards,
       includeUserDeckIds: selectedUserDeckIds,
-      deckType: 'mixed',
+      deckType: hasSmartRules ? 'smart' : 'mixed',
       createdAt: deckToEdit ? deckToEdit.createdAt : new Date().toISOString()
     };
 
@@ -523,8 +590,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                       {/* Nível 1: Especialidade */}
                       <div
                         className={`grid grid-cols-12 items-center px-3 py-1.5 transition-colors select-none ${specStatus !== 'unchecked'
-                            ? 'bg-blue-50/70 dark:bg-blue-950/30'
-                            : 'hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50'
+                          ? 'bg-blue-50/70 dark:bg-blue-950/30'
+                          : 'hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50'
                           }`}
                       >
                         <div className="col-span-8 sm:col-span-9 flex items-center gap-2 min-w-0 pr-2">
@@ -573,8 +640,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                             type="button"
                             onClick={() => handleOpenInspector(spec.especialidade, 'Especialidade Completa', specCards)}
                             className={`h-6 min-w-[24px] px-1.5 py-0.5 rounded-md text-[10px] font-bold border transition-colors inline-flex items-center justify-center gap-1 cursor-pointer ${selectedInSpec > 0 && selectedInSpec < specCards.length
-                                ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
-                                : 'text-zinc-500 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700'
+                              ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
+                              : 'text-zinc-500 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700'
                               }`}
                             title={
                               selectedInSpec > 0 && selectedInSpec < specCards.length
@@ -611,8 +678,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                             <React.Fragment key={tem.tema}>
                               <div
                                 className={`grid grid-cols-12 items-center px-3 py-1.5 transition-colors select-none ${temaStatus !== 'unchecked'
-                                    ? 'bg-blue-50/60 dark:bg-blue-950/20'
-                                    : 'hover:bg-zinc-50/60 dark:hover:bg-zinc-900/40'
+                                  ? 'bg-blue-50/60 dark:bg-blue-950/20'
+                                  : 'hover:bg-zinc-50/60 dark:hover:bg-zinc-900/40'
                                   }`}
                               >
                                 <div className="col-span-8 sm:col-span-9 flex items-center gap-2 min-w-0 pr-2 pl-6">
@@ -662,8 +729,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                       handleOpenInspector(tem.tema, `${spec.especialidade} > ${tem.tema}`, temaCards)
                                     }
                                     className={`h-6 min-w-[24px] px-1.5 py-0.5 rounded-md text-[10px] font-bold border transition-colors inline-flex items-center justify-center gap-1 cursor-pointer ${selectedInTema > 0 && selectedInTema < temaCards.length
-                                        ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
-                                        : 'text-zinc-500 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700'
+                                      ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
+                                      : 'text-zinc-500 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700'
                                       }`}
                                     title={
                                       selectedInTema > 0 && selectedInTema < temaCards.length
@@ -701,8 +768,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                     <React.Fragment key={foc.foco}>
                                       <div
                                         className={`grid grid-cols-12 items-center px-3 py-1 transition-colors select-none ${focoStatus !== 'unchecked'
-                                            ? 'bg-blue-50/50 dark:bg-blue-950/20'
-                                            : 'hover:bg-zinc-50/40 dark:hover:bg-zinc-900/30'
+                                          ? 'bg-blue-50/50 dark:bg-blue-950/20'
+                                          : 'hover:bg-zinc-50/40 dark:hover:bg-zinc-900/30'
                                           }`}
                                       >
                                         <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-8 sm:pl-12">
@@ -762,8 +829,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                               )
                                             }
                                             className={`h-6 min-w-[24px] px-1.5 py-0.5 rounded-md text-[10px] font-bold border transition-colors inline-flex items-center justify-center gap-1 cursor-pointer ${selectedInFoco > 0 && selectedInFoco < focoCards.length
-                                                ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
-                                                : 'text-zinc-500 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700'
+                                              ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
+                                              : 'text-zinc-500 dark:text-zinc-400 hover:text-blue-600 dark:hover:text-blue-400 bg-zinc-100 dark:bg-zinc-800 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700'
                                               }`}
                                             title={
                                               selectedInFoco > 0 && selectedInFoco < focoCards.length
@@ -805,8 +872,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                             <React.Fragment key={subName}>
                                               <div
                                                 className={`grid grid-cols-12 items-center px-3 py-1 transition-colors select-none ${subStatus !== 'unchecked'
-                                                    ? 'bg-blue-50/40 dark:bg-blue-950/20'
-                                                    : 'hover:bg-zinc-50/30 dark:hover:bg-zinc-900/20'
+                                                  ? 'bg-blue-50/40 dark:bg-blue-950/20'
+                                                  : 'hover:bg-zinc-50/30 dark:hover:bg-zinc-900/20'
                                                   }`}
                                               >
                                                 <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-10 sm:pl-18">
@@ -866,8 +933,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                                       )
                                                     }
                                                     className={`h-5 min-w-[20px] px-1 py-0.5 rounded text-[9px] font-bold border transition-colors inline-flex items-center justify-center gap-1 cursor-pointer ${selectedInSub > 0 && selectedInSub < subCards.length
-                                                        ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
-                                                        : 'text-zinc-400 hover:text-blue-500 bg-zinc-100 dark:bg-zinc-800/80 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700/80'
+                                                      ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
+                                                      : 'text-zinc-400 hover:text-blue-500 bg-zinc-100 dark:bg-zinc-800/80 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700/80'
                                                       }`}
                                                     title={
                                                       selectedInSub > 0 && selectedInSub < subCards.length
@@ -903,8 +970,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                                     <div
                                                       key={ss}
                                                       className={`grid grid-cols-12 items-center px-3 py-1 transition-colors select-none ${ssStatus !== 'unchecked'
-                                                          ? 'bg-blue-50/50 dark:bg-blue-950/30'
-                                                          : 'hover:bg-zinc-50/30 dark:hover:bg-zinc-900/20'
+                                                        ? 'bg-blue-50/50 dark:bg-blue-950/30'
+                                                        : 'hover:bg-zinc-50/30 dark:hover:bg-zinc-900/20'
                                                         }`}
                                                     >
                                                       <div className="col-span-8 sm:col-span-9 flex items-center gap-1.5 min-w-0 pr-2 pl-12 sm:pl-24">
@@ -949,8 +1016,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                                             )
                                                           }
                                                           className={`h-5 min-w-[20px] px-1 py-0.5 rounded text-[9px] font-bold border transition-colors inline-flex items-center justify-center gap-1 cursor-pointer ${selectedInSS > 0 && selectedInSS < ssCards.length
-                                                              ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
-                                                              : 'text-zinc-400 hover:text-blue-500 bg-zinc-100 dark:bg-zinc-800/80 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700/80'
+                                                            ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50 border-blue-300 dark:border-blue-800'
+                                                            : 'text-zinc-400 hover:text-blue-500 bg-zinc-100 dark:bg-zinc-800/80 hover:bg-blue-50 dark:hover:bg-blue-950/40 border-zinc-200 dark:border-zinc-700/80'
                                                             }`}
                                                           title={
                                                             selectedInSS > 0 && selectedInSS < ssCards.length
@@ -1063,8 +1130,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                         <label
                           key={deck.id}
                           className={`flex items-center justify-between p-2 rounded-xl border cursor-pointer transition-colors ${isChecked
-                              ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-300 dark:border-blue-800/60'
-                              : 'bg-white dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800'
+                            ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-300 dark:border-blue-800/60'
+                            : 'bg-white dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800'
                             }`}
                         >
                           <div className="flex items-center gap-2 min-w-0">
@@ -1092,6 +1159,24 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
               </div>
             )}
           </div>
+
+          {/* 3. Modo Smart Deck Dinâmico */}
+          <label className="flex items-start gap-2.5 p-3 rounded-2xl bg-blue-50/50 dark:bg-blue-950/20 border border-blue-200/70 dark:border-blue-800/50 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={isDynamicSmartDeck}
+              onChange={(e) => setIsDynamicSmartDeck(e.target.checked)}
+              className="mt-0.5 rounded text-blue-600 focus:ring-blue-500"
+            />
+            <div className="min-w-0">
+              <span className="font-bold text-xs text-zinc-900 dark:text-zinc-100 block">
+                Baralho Inteligente Dinâmico (Smart Deck)
+              </span>
+              <span className="text-[11px] text-zinc-500 block">
+                Mantém vínculo dinâmico com os tópicos e baralhos marcados: novos cartões adicionados no futuro entrarão automaticamente neste baralho.
+              </span>
+            </div>
+          </label>
 
           {/* 4. Prévia em Tempo Real da Composição */}
           <div className="p-3.5 rounded-2xl bg-zinc-900 text-white dark:bg-zinc-800/90 border border-zinc-800 shadow-xs space-y-2">
@@ -1295,8 +1380,8 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                       key={card.id}
                       onClick={() => toggleCard(card.id)}
                       className={`p-3 rounded-2xl border transition-all cursor-pointer space-y-2 select-none ${isChecked
-                          ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-300 dark:border-blue-800/80 shadow-2xs'
-                          : 'bg-white dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
+                        ? 'bg-blue-50/50 dark:bg-blue-950/20 border-blue-300 dark:border-blue-800/80 shadow-2xs'
+                        : 'bg-white dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
                         }`}
                     >
                       {/* Topo do Card com Checkbox, Tags e Badges */}
@@ -1341,10 +1426,10 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
 
                           <span
                             className={`px-1.5 py-0.5 rounded text-[9px] font-bold ${isNew
-                                ? 'bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400'
-                                : isLearning
-                                  ? 'bg-rose-100 dark:bg-rose-950 text-rose-600 dark:text-rose-400'
-                                  : 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400'
+                              ? 'bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400'
+                              : isLearning
+                                ? 'bg-rose-100 dark:bg-rose-950 text-rose-600 dark:text-rose-400'
+                                : 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400'
                               }`}
                           >
                             {isNew ? 'Novo' : isLearning ? 'Aprendendo' : 'Revisar'}

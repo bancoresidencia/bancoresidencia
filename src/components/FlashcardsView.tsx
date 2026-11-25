@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, useRef } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   BookOpen,
   Search,
@@ -8,7 +8,6 @@ import {
   CheckCircle2,
   Clock,
   Play,
-  RotateCw,
   Star,
   Brain,
   Stethoscope,
@@ -23,24 +22,25 @@ import {
   Check,
   History,
   Bookmark,
-  TrendingUp,
-  Tag,
   Shuffle,
-  GraduationCap,
-  FolderKanban,
-  Layers
+  Settings
 } from 'lucide-react';
 import {
   FlashcardItem,
   StudyMaterialItem,
   LastFlashcardSessionInfo,
-  LastReadSummaryInfo
+  LastReadSummaryInfo,
+  FlashcardSchedulerSettings,
+  FlashcardSessionMode,
+  CustomStudyFilterType,
+  CustomStudyLaunchOptions
 } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { useStudentData } from '@/context/StudentDataContext';
 import { Button, Badge } from '@/components/ui';
-import { flashcardsService } from '@/services/flashcardsService';
+import { flashcardsService, isUserCreatedFlashcardId } from '@/services/flashcardsService';
+import { buildAnkiSessionQueue, countTodayStudiedCards } from '@/utils/ankiSessionQueue';
 import { clinicalHierarchy } from '@/data/mockQuestions';
 import { FlashcardStudySession } from './FlashcardStudySession';
 import { StudyMaterialReader } from './StudyMaterialReader';
@@ -50,6 +50,8 @@ import { AnkiReviewHeatmap } from './flashcards/AnkiReviewHeatmap';
 import { OriginalCardsSection } from './flashcards/OriginalCardsSection';
 import { AddFlashcardDrawer } from './flashcards/AddFlashcardDrawer';
 import { CustomDecksSection } from './flashcards/CustomDecksSection';
+import { AnkiSettingsSection } from './flashcards/AnkiSettingsSection';
+import { CustomStudyModal } from './flashcards/CustomStudyModal';
 
 export interface SpecialtyConfig {
   id: string;
@@ -266,7 +268,20 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Sessão Ativa ou Leitor Ativo
   const [activeSessionCards, setActiveSessionCards] = useState<FlashcardItem[] | null>(null);
+  const [activeSessionMode, setActiveSessionMode] = useState<FlashcardSessionMode>('srs');
   const [activeMaterial, setActiveMaterial] = useState<StudyMaterialItem | null>(null);
+  const [customStudyRequest, setCustomStudyRequest] = useState<{
+    title: string;
+    cards: FlashcardItem[];
+    defaultFilterType?: CustomStudyFilterType;
+  } | null>(null);
+  const [emptyDuePrompt, setEmptyDuePrompt] = useState<{
+    title: string;
+    cards: FlashcardItem[];
+    totalCount: number;
+    futureCount: number;
+    limitBlockedCount: number;
+  } | null>(null);
 
   // Histórico de Última Sessão e Resumo Lido
   const [lastFlashcardSession, setLastFlashcardSession] = useState<LastFlashcardSessionInfo | null>(null);
@@ -304,30 +319,38 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Estado do Drawer Central de Adicionar Flashcard
   const [isAddCardDrawerOpen, setIsAddCardDrawerOpen] = useState(false);
-  const [flashcardTab, setFlashcardTab] = useState<'br' | 'originais' | 'personalizados'>('br');
+  const [flashcardTab, setFlashcardTab] = useState<
+    'br' | 'originais' | 'personalizados' | 'configuracoes'
+  >('br');
+  const [schedulerSettings, setSchedulerSettings] = useState<FlashcardSchedulerSettings>(() =>
+    flashcardsService.getSchedulerSettings(user?.id)
+  );
   const [personalizedDecksCount, setPersonalizedDecksCount] = useState<number>(() => {
     return flashcardsService.getPersonalizedDecks(user?.id).length;
   });
   const [activeDeckIdForNewCard, setActiveDeckIdForNewCard] = useState<string>('deck-padrao');
   const [heatmapRefreshKey, setHeatmapRefreshKey] = useState(0);
-  const [newCardSpecialty, setNewCardSpecialty] = useState('Clínica Médica');
-  const [newCardTema, setNewCardTema] = useState('');
-  const [newCardFoco, setNewCardFoco] = useState('');
-  const [newCardFront, setNewCardFront] = useState('');
-  const [newCardBack, setNewCardBack] = useState('');
-  const [newCardComment, setNewCardComment] = useState('');
-  const [newCardPriority, setNewCardPriority] = useState<'essential' | 'standard'>('essential');
-  const [newCardTags, setNewCardTags] = useState('');
-  const [addCardSuccessToast, setAddCardSuccessToast] = useState(false);
+  const [creationToast, setCreationToast] = useState<string | null>(null);
 
-  const frontTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const showCreationToast = (deckName?: string) => {
+    setCreationToast(`Salvo em Cartões Originais → ${deckName || 'Baralho Padrão'}`);
+    setTimeout(() => setCreationToast(null), 4000);
+  };
 
   // Carrega Flashcards e Materiais base
   const [allFlashcards, setAllFlashcards] = useState<FlashcardItem[]>([]);
 
   useEffect(() => {
     setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
-  }, [activeSessionCards]);
+  }, [activeSessionCards, user?.id]);
+
+  const platformFlashcards = useMemo(() => {
+    return allFlashcards.filter((c) => !isUserCreatedFlashcardId(c.id));
+  }, [allFlashcards]);
+
+  const userFlashcardsCount = useMemo(() => {
+    return allFlashcards.filter((c) => isUserCreatedFlashcardId(c.id)).length;
+  }, [allFlashcards]);
 
   // SWR: Sincroniza progresso remoto, baralhos, cards criados pelo usuário e logs do Heatmap (com revalidação multi-dispositivo)
   useEffect(() => {
@@ -353,6 +376,9 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
       });
       flashcardsService.syncRemoteStudyProgress(user.id).then((lastSumm) => {
         if (active && lastSumm) setLastReadSummary(lastSumm);
+      });
+      flashcardsService.syncRemoteSchedulerSettings(user.id).then((remoteSettings) => {
+        if (active) setSchedulerSettings(remoteSettings);
       });
     };
 
@@ -389,8 +415,11 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Estatísticas FSRS
   const stats = useMemo(() => {
+    void activeSessionCards;
+    void allFlashcards;
+    void schedulerSettings;
     return flashcardsService.getStats(user?.id);
-  }, [activeSessionCards, allFlashcards, user?.id]);
+  }, [activeSessionCards, allFlashcards, schedulerSettings, user?.id]);
 
   // Contagem dinâmica para KPIs de Resumos
   const totalTemasCount = useMemo(() => {
@@ -408,6 +437,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     setLastFlashcardSession(flashcardsService.getLastFlashcardSession(user?.id));
     setLastReadSummary(flashcardsService.getLastReadSummary(user?.id));
     setPersonalizedDecksCount(flashcardsService.getPersonalizedDecks(user?.id).length);
+    setSchedulerSettings(flashcardsService.getSchedulerSettings(user?.id));
   }, [user?.id]);
 
   // Quantidade total de flashcards essenciais
@@ -439,12 +469,14 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     return { errorCards: matched, errorCardIds: new Set(matched.map((c) => c.id)) };
   }, [userAnswers, allFlashcards]);
 
-  // Iniciar sessão de estudo de flashcards e registrar como última sessão
+  // Iniciar sessão de estudo de flashcards filtrando devidos + limites diários (modo SRS)
+  // ou em modo Estudo Personalizado (com ou sem reagendamento FSRS)
   const handleStartStudy = (
     cardsToStudy: FlashcardItem[],
     sessionTitle?: string,
     overridePriorityOnly?: boolean,
-    allCardsMode?: boolean
+    allCardsMode?: boolean,
+    requestedMode: FlashcardSessionMode = 'srs'
   ) => {
     if (!cardsToStudy || cardsToStudy.length === 0) return;
 
@@ -454,33 +486,105 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     }
 
     const shouldFilterEssential = overridePriorityOnly ?? filterEssentialOnly;
-    const filtered = (shouldFilterEssential && !allCardsMode)
+    const filtered = (shouldFilterEssential && !allCardsMode && requestedMode === 'srs')
       ? preFiltered.filter((c) => c.priority === 'essential')
       : preFiltered;
 
     if (filtered.length === 0) return;
 
-    const listToLaunch = isShuffleEnabled ? shuffleCards(filtered) : [...filtered];
+    let cardsForSession: FlashcardItem[];
+
+    if (allCardsMode || requestedMode !== 'srs') {
+      cardsForSession = isShuffleEnabled && requestedMode === 'srs' ? shuffleCards(filtered) : [...filtered];
+    } else {
+      const now = new Date();
+      const todayUsed = countTodayStudiedCards(allFlashcards, now);
+      const dueQueue = buildAnkiSessionQueue(filtered, now, schedulerSettings, {
+        filterDueOnly: true,
+        applyDailyLimits: true,
+        shuffled: isShuffleEnabled,
+        dailyNewUsed: todayUsed.newUsedToday,
+        dailyReviewUsed: todayUsed.reviewsUsedToday
+      });
+
+      const dueCards: FlashcardItem[] = [
+        ...(dueQueue.currentCard ? [dueQueue.currentCard] : []),
+        ...dueQueue.learningQueue.map((e) => e.card),
+        ...dueQueue.reviewQueue,
+        ...dueQueue.newQueue
+      ];
+
+      if (dueCards.length === 0) {
+        const withoutLimits = buildAnkiSessionQueue(filtered, now, schedulerSettings, {
+          filterDueOnly: true,
+          applyDailyLimits: false
+        });
+        const dueIgnoringLimitsCount =
+          (withoutLimits.currentCard ? 1 : 0) +
+          withoutLimits.learningQueue.length +
+          withoutLimits.reviewQueue.length +
+          withoutLimits.newQueue.length;
+
+        setEmptyDuePrompt({
+          title: sessionTitle || 'Baralho Selecionado',
+          cards: filtered,
+          totalCount: filtered.length,
+          futureCount: filtered.length - dueIgnoringLimitsCount,
+          limitBlockedCount: dueIgnoringLimitsCount
+        });
+        return;
+      }
+
+      cardsForSession = dueCards;
+    }
 
     const title =
       sessionTitle ||
-      (listToLaunch[0]?.specialty
-        ? `${listToLaunch[0].specialty} (${listToLaunch.length} cards)`
+      (cardsForSession[0]?.specialty
+        ? `${cardsForSession[0].specialty} (${cardsForSession.length} cards)`
         : 'Sessão de Flashcards');
 
     const sessionInfo: LastFlashcardSessionInfo = {
       deckTitle: title,
-      specialty: listToLaunch[0]?.specialty,
-      theme: listToLaunch[0]?.theme,
-      focus: listToLaunch[0]?.focus,
-      cardIds: listToLaunch.map((c) => c.id),
-      cardCount: listToLaunch.length,
+      specialty: cardsForSession[0]?.specialty,
+      theme: cardsForSession[0]?.theme,
+      focus: cardsForSession[0]?.focus,
+      cardIds: cardsForSession.map((c) => c.id),
+      cardCount: cardsForSession.length,
       lastStudiedAt: new Date().toISOString()
     };
 
     flashcardsService.saveLastFlashcardSession(sessionInfo, user?.id);
     setLastFlashcardSession(sessionInfo);
-    setActiveSessionCards(listToLaunch);
+    setEmptyDuePrompt(null);
+    setActiveSessionMode(requestedMode);
+    setActiveSessionCards(cardsForSession);
+  };
+
+  const handleOpenCustomStudy = (
+    cardsToCustomize: FlashcardItem[],
+    title: string,
+    defaultFilterType: CustomStudyFilterType = 'all'
+  ) => {
+    if (!cardsToCustomize || cardsToCustomize.length === 0) return;
+    setCustomStudyRequest({ title, cards: cardsToCustomize, defaultFilterType });
+  };
+
+  const handleLaunchCustomStudy = (
+    filteredCards: FlashcardItem[],
+    title: string,
+    options: CustomStudyLaunchOptions
+  ) => {
+    const modeToLaunch: FlashcardSessionMode = options.reschedule
+      ? 'custom_reschedule'
+      : 'custom_no_reschedule';
+    handleStartStudy(
+      filteredCards,
+      `Personalizado: ${title}`,
+      false,
+      true,
+      modeToLaunch
+    );
   };
 
   // Iniciar sessão exclusiva com os flashcards essenciais (mais cobrados na prova)
@@ -776,95 +880,6 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     }
   };
 
-  // Inserir Oclusão Cloze no Drawer
-  const handleInsertCloze = () => {
-    const textarea = frontTextareaRef.current;
-    if (!textarea) return;
-
-    const start = textarea.selectionStart;
-    const end = textarea.selectionEnd;
-    const text = newCardFront;
-    const selectedText = text.substring(start, end);
-
-    const existingMatches = text.match(/\{\{c(\d+)::/g) || [];
-    const nextNum = existingMatches.length + 1;
-
-    const replacement = selectedText
-      ? `{{c${nextNum}::${selectedText}}}`
-      : `{{c${nextNum}::resposta}}`;
-
-    const updated = text.substring(0, start) + replacement + text.substring(end);
-    setNewCardFront(updated);
-
-    setTimeout(() => {
-      textarea.focus();
-      const newCursor = start + replacement.length;
-      textarea.setSelectionRange(newCursor, newCursor);
-    }, 0);
-  };
-
-  // Salvar Novo Flashcard
-  const handleSaveNewFlashcard = (keepOpen = false) => {
-    if (!newCardFront.trim() || !newCardBack.trim()) return;
-
-    const tagsArray = newCardTags
-      .split(',')
-      .map((t) => t.trim().toLowerCase())
-      .filter(Boolean);
-
-    const finalTema = newCardTema.trim() || 'Geral';
-    const finalFoco = newCardFoco.trim() || finalTema;
-
-    const newCard: FlashcardItem = {
-      id: `fc-user-${Date.now()}`,
-      front: newCardFront.trim(),
-      back: newCardBack.trim(),
-      comment: newCardComment.trim() || undefined,
-      specialty: newCardSpecialty,
-      theme: finalTema,
-      focus: finalFoco,
-      priority: newCardPriority,
-      tags: tagsArray.length > 0 ? tagsArray : undefined
-    };
-
-    flashcardsService.saveNewFlashcard(newCard, user?.id);
-    setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
-
-    setAddCardSuccessToast(true);
-    setTimeout(() => setAddCardSuccessToast(false), 3000);
-
-    if (keepOpen) {
-      setNewCardFront('');
-      setNewCardBack('');
-      setNewCardComment('');
-      setNewCardTags('');
-      if (frontTextareaRef.current) frontTextareaRef.current.focus();
-    } else {
-      setIsAddCardDrawerOpen(false);
-      setNewCardFront('');
-      setNewCardBack('');
-      setNewCardComment('');
-      setNewCardTags('');
-    }
-  };
-
-  // Temas da especialidade selecionada no Drawer
-  const drawerTemas = useMemo(() => {
-    const hNode = clinicalHierarchy.find(
-      (h) =>
-        h.especialidade.toLowerCase() === newCardSpecialty.toLowerCase() ||
-        (newCardSpecialty === 'Cirurgia Geral' && h.especialidade === 'Cirurgia') ||
-        (newCardSpecialty === 'Cirurgia' && h.especialidade === 'Cirurgia')
-    );
-    return hNode?.temas || [];
-  }, [newCardSpecialty]);
-
-  // Focos do tema selecionado no Drawer
-  const drawerFocos = useMemo(() => {
-    const temaObj = drawerTemas.find((t) => t.tema === newCardTema);
-    return temaObj?.focos.map((f) => f.foco) || [];
-  }, [drawerTemas, newCardTema]);
-
   // Abrir ou Gerar Resumo de um Foco
   const handleOpenFocoSummary = (specName: string, temaName: string, focoName: string) => {
     const existingMat =
@@ -926,6 +941,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
         cards={activeSessionCards}
         onExit={() => {
           setActiveSessionCards(null);
+          setActiveSessionMode('srs');
           setHeatmapRefreshKey((k) => k + 1);
           flashcardsService.flushPendingFlashcards();
           if (user?.id) {
@@ -933,7 +949,9 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           }
         }}
         onOpenMaterial={(mat) => handleOpenMaterial(mat)}
-        initialShuffled={isShuffleEnabled}
+        initialShuffled={activeSessionMode === 'srs' ? isShuffleEnabled : false}
+        schedulerSettings={schedulerSettings}
+        sessionMode={activeSessionMode}
       />
     );
   }
@@ -991,12 +1009,6 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           onOpenAddCard={() => {
             setActiveDeckIdForNewCard('deck-padrao');
             setIsAddCardDrawerOpen(true);
-            if (drawerTemas.length > 0 && !newCardTema) {
-              setNewCardTema(drawerTemas[0].tema);
-              if (drawerTemas[0].focos.length > 0) {
-                setNewCardFoco(drawerTemas[0].focos[0].foco);
-              }
-            }
           }}
           lastSessionTitle={lastFlashcardSession?.deckTitle}
           onContinueLastSession={lastFlashcardSession ? handleContinueLastSession : undefined}
@@ -1009,13 +1021,13 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
               type="button"
               onClick={() => setFlashcardTab('br')}
               className={`shrink-0 whitespace-nowrap px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer touch-manipulation inline-flex items-center gap-1.5 sm:gap-2 ${flashcardTab === 'br'
-                  ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
-                  : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
+                ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
+                : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
                 }`}
             >
               <span>Cartões do BR</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
-                {allFlashcards.filter((c) => !c.id.startsWith('fc-user-')).length}
+                {platformFlashcards.length}
               </span>
             </button>
 
@@ -1023,13 +1035,13 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
               type="button"
               onClick={() => setFlashcardTab('originais')}
               className={`shrink-0 whitespace-nowrap px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer touch-manipulation inline-flex items-center gap-1.5 sm:gap-2 ${flashcardTab === 'originais'
-                  ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
-                  : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
+                ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
+                : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
                 }`}
             >
               <span>Cartões Originais</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
-                {allFlashcards.filter((c) => c.id.startsWith('fc-user-')).length}
+                {userFlashcardsCount}
               </span>
             </button>
 
@@ -1037,13 +1049,35 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
               type="button"
               onClick={() => setFlashcardTab('personalizados')}
               className={`shrink-0 whitespace-nowrap px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer touch-manipulation inline-flex items-center gap-1.5 sm:gap-2 ${flashcardTab === 'personalizados'
-                  ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
-                  : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
+                ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
+                : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
                 }`}
             >
               <span>Baralhos Personalizados</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
                 {personalizedDecksCount}
+              </span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setFlashcardTab('configuracoes')}
+              title="Configurações do algoritmo de repetição espaçada (FSRS-5 & Modelo Anki)"
+              className={`shrink-0 whitespace-nowrap px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer touch-manipulation inline-flex items-center gap-1.5 sm:gap-2 ${flashcardTab === 'configuracoes'
+                ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
+                : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
+                }`}
+            >
+              <Settings className="w-3.5 h-3.5" />
+              <span>Configurações</span>
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
+                {schedulerSettings.presetMode === 'more_reps'
+                  ? 'Intensivo'
+                  : schedulerSettings.presetMode === 'moderate'
+                    ? 'Moderado'
+                    : schedulerSettings.presetMode === 'fewer_reps'
+                      ? 'Leve'
+                      : 'Anki'}
               </span>
             </button>
           </div>
@@ -1052,11 +1086,14 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
         {/* Conteúdo da Aba Selecionada (Filtros e Baralhos de Estudo) */}
         {flashcardTab === 'br' && (
           <AnkiDeckTree
-            allFlashcards={allFlashcards}
+            allFlashcards={platformFlashcards}
             hierarchy={clinicalHierarchy}
             filterEssentialOnly={filterEssentialOnly}
             onStartStudy={(cards, title, overridePriorityOnly, allCardsMode) => {
               handleStartStudy(cards, title, overridePriorityOnly, allCardsMode);
+            }}
+            onOpenCustomStudy={(cards, title) => {
+              handleOpenCustomStudy(cards, title);
             }}
           />
         )}
@@ -1065,6 +1102,9 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           <OriginalCardsSection
             onStartStudy={(cards, title, overridePriorityOnly, allCardsMode) => {
               handleStartStudy(cards, title, overridePriorityOnly, allCardsMode);
+            }}
+            onOpenCustomStudy={(cards, title) => {
+              handleOpenCustomStudy(cards, title);
             }}
             onOpenAddCardForDeck={(deckId: string) => {
               setActiveDeckIdForNewCard(deckId);
@@ -1083,10 +1123,21 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
             onStartStudy={(cards, title, overridePriorityOnly, allCardsMode) => {
               handleStartStudy(cards, title, overridePriorityOnly, allCardsMode);
             }}
+            onOpenCustomStudy={(cards, title) => {
+              handleOpenCustomStudy(cards, title);
+            }}
             onDeckCountChange={(count) => setPersonalizedDecksCount(count)}
             onCardsChange={() => {
               setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
               setHeatmapRefreshKey((k) => k + 1);
+            }}
+          />
+        )}
+
+        {flashcardTab === 'configuracoes' && (
+          <AnkiSettingsSection
+            onSettingsChanged={(next) => {
+              setSchedulerSettings(next);
             }}
           />
         )}
@@ -1102,11 +1153,104 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           isOpen={isAddCardDrawerOpen}
           initialDeckId={activeDeckIdForNewCard}
           onClose={() => setIsAddCardDrawerOpen(false)}
-          onCardSaved={() => {
+          onCardSaved={(_saved, deckName) => {
             setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
             setHeatmapRefreshKey((k) => k + 1);
+            showCreationToast(deckName);
           }}
         />
+
+        {/* Modal Estilo Anki quando não há cartões vencidos hoje no baralho clicado */}
+        {emptyDuePrompt && (
+          <div
+            className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-150"
+            onClick={() => setEmptyDuePrompt(null)}
+          >
+            <div
+              className="w-full max-w-md rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-6 shadow-2xl space-y-4 text-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div
+                className="w-12 h-12 rounded-2xl mx-auto flex items-center justify-center text-white shadow-xs"
+                style={{ backgroundColor: accentConfig.primaryHex }}
+              >
+                <CheckCircle2 className="w-6 h-6" />
+              </div>
+
+              <div className="space-y-1.5">
+                <h3 className="font-heading font-black text-base text-zinc-900 dark:text-zinc-100">
+                  Parabéns! Você concluiu este baralho por hoje
+                </h3>
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                  <strong>{emptyDuePrompt.title}</strong> possui {emptyDuePrompt.totalCount}{' '}
+                  {emptyDuePrompt.totalCount === 1 ? 'cartão' : 'cartões'}:{' '}
+                  {emptyDuePrompt.limitBlockedCount > 0
+                    ? `${emptyDuePrompt.limitBlockedCount} aguardando limite diário (${schedulerSettings.newCardsPerDay} novos/dia) e ${emptyDuePrompt.futureCount} agendados para dias futuros.`
+                    : `todos os ${emptyDuePrompt.futureCount} já foram agendados para os próximos dias.`}
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-2 pt-2">
+                <button
+                  type="button"
+                  onClick={() => setEmptyDuePrompt(null)}
+                  className="py-2.5 px-3 rounded-xl border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-900 cursor-pointer transition-colors"
+                >
+                  Fechar
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const promptData = emptyDuePrompt;
+                    setEmptyDuePrompt(null);
+                    handleOpenCustomStudy(promptData.cards, promptData.title, 'all');
+                  }}
+                  className="py-2.5 px-3 rounded-xl border border-zinc-200 dark:border-zinc-800 text-xs font-bold text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-900 cursor-pointer transition-colors"
+                >
+                  Personalizar...
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const promptData = emptyDuePrompt;
+                    setEmptyDuePrompt(null);
+                    handleStartStudy(
+                      promptData.cards,
+                      `Estudo Livre: ${promptData.title}`,
+                      false,
+                      true,
+                      'custom_no_reschedule'
+                    );
+                  }}
+                  className="flex-1 py-2.5 px-4 rounded-xl text-xs font-bold text-white shadow-xs cursor-pointer hover:opacity-95 transition-all"
+                  style={{ backgroundColor: accentConfig.primaryHex }}
+                >
+                  Estudar Sem Alterar FSRS
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Modal Configurador de Estudo Personalizado (Modelo Anki) */}
+        {customStudyRequest && (
+          <CustomStudyModal
+            isOpen={true}
+            title={customStudyRequest.title}
+            cards={customStudyRequest.cards}
+            errorCardIds={errorCardIds}
+            defaultFilterType={customStudyRequest.defaultFilterType}
+            onClose={() => setCustomStudyRequest(null)}
+            onLaunch={handleLaunchCustomStudy}
+          />
+        )}
+
+        {creationToast && (
+          <div className="fixed bottom-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:bottom-6 right-4 sm:right-6 z-50 flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-2xl text-xs font-bold animate-in fade-in slide-in-from-bottom-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-400 dark:text-emerald-600 shrink-0" />
+            <span>{creationToast}</span>
+          </div>
+        )}
       </div>
     );
   }
@@ -1187,15 +1331,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
               <Button
                 type="button"
                 size="sm"
-                onClick={() => {
-                  setIsAddCardDrawerOpen(true);
-                  if (drawerTemas.length > 0 && !newCardTema) {
-                    setNewCardTema(drawerTemas[0].tema);
-                    if (drawerTemas[0].focos.length > 0) {
-                      setNewCardFoco(drawerTemas[0].focos[0].foco);
-                    }
-                  }
-                }}
+                onClick={() => setIsAddCardDrawerOpen(true)}
                 className="text-white text-xs font-bold shadow-md"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
@@ -1876,242 +2012,16 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
         </div>
       )}
 
-      {/* 5. DRAWER CENTRAL TOTALMENTE ADAPTADO PARA ADICIONAR FLASHCARD */}
-      {isAddCardDrawerOpen && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-6 shadow-2xl space-y-5 animate-in fade-in-50 zoom-in-95 duration-200 custom-scrollbar">
-            {/* Topo do Drawer Central */}
-            <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
-              <div className="flex items-center gap-2.5">
-                <div
-                  className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shrink-0 shadow-xs"
-                  style={{ backgroundColor: accentConfig.primaryHex }}
-                >
-                  <Brain className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="font-heading font-black text-base sm:text-lg text-zinc-900 dark:text-zinc-100">
-                    Adicionar Flashcard
-                  </h3>
-                  <p className="text-xs text-zinc-500">
-                    Crie um cartão de memorização ativa com suporte a oclusão Cloze.
-                  </p>
-                </div>
-              </div>
-
-              <button
-                type="button"
-                onClick={() => setIsAddCardDrawerOpen(false)}
-                className="p-1 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 cursor-pointer"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-
-            {/* Toast de Sucesso Interno */}
-            {addCardSuccessToast && (
-              <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-bold flex items-center gap-2 animate-in fade-in-50 duration-200">
-                <CheckCircle2 className="w-4 h-4 shrink-0" />
-                <span>Flashcard adicionado com sucesso! Já está disponível para estudo.</span>
-              </div>
-            )}
-
-            {/* Campos do Formulário do Flashcard */}
-            <div className="space-y-4 text-xs">
-              {/* Especialidade, Tema e Foco */}
-              <div className="grid sm:grid-cols-3 gap-3">
-                <div>
-                  <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                    Especialidade *
-                  </label>
-                  <select
-                    value={newCardSpecialty}
-                    onChange={(e) => {
-                      const spec = e.target.value;
-                      setNewCardSpecialty(spec);
-                      const hNode = clinicalHierarchy.find(
-                        (h) =>
-                          h.especialidade.toLowerCase() === spec.toLowerCase() ||
-                          (spec === 'Cirurgia Geral' && h.especialidade === 'Cirurgia') ||
-                          (spec === 'Cirurgia' && h.especialidade === 'Cirurgia')
-                      );
-                      const firstTema = hNode?.temas[0]?.tema || '';
-                      setNewCardTema(firstTema);
-                      setNewCardFoco(hNode?.temas[0]?.focos[0]?.foco || '');
-                    }}
-                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
-                  >
-                    {SPECIALTY_CONFIGS.map((sp) => (
-                      <option key={sp.id} value={sp.name}>
-                        {sp.name}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                    Tema *
-                  </label>
-                  <select
-                    value={newCardTema}
-                    onChange={(e) => {
-                      const tem = e.target.value;
-                      setNewCardTema(tem);
-                      const temaObj = drawerTemas.find((t) => t.tema === tem);
-                      setNewCardFoco(temaObj?.focos[0]?.foco || '');
-                    }}
-                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
-                  >
-                    {drawerTemas.map((tem) => (
-                      <option key={tem.tema} value={tem.tema}>
-                        {tem.tema}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                    Foco Clínico
-                  </label>
-                  <select
-                    value={newCardFoco}
-                    onChange={(e) => setNewCardFoco(e.target.value)}
-                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
-                  >
-                    {drawerFocos.map((foc) => (
-                      <option key={foc} value={foc}>
-                        {foc}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-              </div>
-
-              {/* Frente do Flashcard com Auxiliar de Cloze */}
-              <div className="space-y-1.5">
-                <div className="flex items-center justify-between">
-                  <label className="font-bold text-zinc-700 dark:text-zinc-300">
-                    Frente do Cartão (Pergunta ou Oclusão Cloze) *
-                  </label>
-                  <button
-                    type="button"
-                    onClick={handleInsertCloze}
-                    className="text-[11px] font-bold px-2 py-0.5 rounded-lg border border-purple-500/30 bg-purple-500/10 text-purple-700 dark:text-purple-300 hover:bg-purple-500/20 transition-colors inline-flex items-center gap-1 cursor-pointer"
-                    title="Selecione um termo no texto e clique para criar uma oclusão cloze"
-                  >
-                    <span>[ Inserir Cloze &#123;&#123;c1::...&#125;&#125; ]</span>
-                  </button>
-                </div>
-
-                <textarea
-                  ref={frontTextareaRef}
-                  rows={3}
-                  value={newCardFront}
-                  onChange={(e) => setNewCardFront(e.target.value)}
-                  placeholder="Ex: A ingestão de {{c1::bateria de disco}} no esôfago exige remoção endoscópica imediata."
-                  className="w-full p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all font-mono text-xs sm:text-sm"
-                />
-              </div>
-
-              {/* Verso do Flashcard (Resposta) */}
-              <div className="space-y-1">
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
-                  Verso do Cartão (Resposta Direta) *
-                </label>
-                <input
-                  type="text"
-                  value={newCardBack}
-                  onChange={(e) => setNewCardBack(e.target.value)}
-                  placeholder="Ex: bateria de disco (ou remoção endoscópica imediata)"
-                  className="w-full px-3.5 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all"
-                />
-              </div>
-
-              {/* Comentário / Justificativa Clínica */}
-              <div className="space-y-1">
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
-                  Justificativa Clínica & Armadilha de Prova (Opcional)
-                </label>
-                <textarea
-                  rows={2}
-                  value={newCardComment}
-                  onChange={(e) => setNewCardComment(e.target.value)}
-                  placeholder="Ex: Necrose por liquefação em até 2 horas. No RX, o duplo contorno diferencia da moeda."
-                  className="w-full p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all text-xs"
-                />
-              </div>
-
-              {/* Prioridade e Tags */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
-                <button
-                  type="button"
-                  onClick={() =>
-                    setNewCardPriority((prev) =>
-                      prev === 'essential' ? 'standard' : 'essential'
-                    )
-                  }
-                  className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold border transition-colors cursor-pointer ${newCardPriority === 'essential'
-                    ? 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30'
-                    : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400'
-                    }`}
-                >
-                  <Star
-                    className={`w-3.5 h-3.5 ${newCardPriority === 'essential'
-                      ? 'fill-amber-500 text-amber-500'
-                      : 'text-zinc-400'
-                      }`}
-                  />
-                  <span>Cartão Prioritário (Alta Relevância)</span>
-                </button>
-
-                <div className="relative flex-1 max-w-xs">
-                  <Tag className="w-3.5 h-3.5 text-zinc-400 absolute left-3 top-1/2 -translate-y-1/2" />
-                  <input
-                    type="text"
-                    value={newCardTags}
-                    onChange={(e) => setNewCardTags(e.target.value)}
-                    placeholder="Tags separadas por vírgula"
-                    className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 text-xs focus:outline-none"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Rodapé do Drawer Central */}
-            <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex flex-wrap items-center justify-end gap-2.5">
-              <button
-                type="button"
-                onClick={() => setIsAddCardDrawerOpen(false)}
-                className="px-4 py-2 rounded-xl text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-              >
-                Fechar
-              </button>
-
-              <button
-                type="button"
-                disabled={!newCardFront.trim() || !newCardBack.trim()}
-                onClick={() => handleSaveNewFlashcard(true)}
-                className="px-4 py-2 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer disabled:opacity-50"
-              >
-                Salvar e Criar Outro
-              </button>
-
-              <button
-                type="button"
-                disabled={!newCardFront.trim() || !newCardBack.trim()}
-                onClick={() => handleSaveNewFlashcard(false)}
-                className="px-4 py-2 rounded-xl text-xs font-bold text-white shadow-xs cursor-pointer hover:opacity-95 transition-all disabled:opacity-50 inline-flex items-center gap-1.5"
-                style={{ backgroundColor: accentConfig.primaryHex }}
-              >
-                <Check className="w-3.5 h-3.5 stroke-[3]" />
-                <span>Salvar Flashcard</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <AddFlashcardDrawer
+        isOpen={isAddCardDrawerOpen}
+        initialDeckId={activeDeckIdForNewCard}
+        onClose={() => setIsAddCardDrawerOpen(false)}
+        onCardSaved={(_saved, deckName) => {
+          setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
+          setHeatmapRefreshKey((k) => k + 1);
+          showCreationToast(deckName);
+        }}
+      />
     </div>
   );
 };

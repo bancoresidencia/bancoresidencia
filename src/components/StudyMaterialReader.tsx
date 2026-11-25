@@ -101,6 +101,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   } | null>(null);
   const [isAddCardDrawerOpen, setIsAddCardDrawerOpen] = useState<boolean>(false);
   const [drawerPrefill, setDrawerPrefill] = useState<{
+    cardId?: string;
     front?: string;
     back?: string;
     specialty?: string;
@@ -310,10 +311,10 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       style === 'underline'
         ? 'Texto sublinhado'
         : style === 'strikethrough'
-        ? 'Texto tachado'
-        : note
-        ? 'Destaque e anotacao salvos'
-        : 'Texto grifado com sucesso'
+          ? 'Texto tachado'
+          : note
+            ? 'Destaque e anotacao salvos'
+            : 'Texto grifado com sucesso'
     );
   };
 
@@ -333,11 +334,11 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     }
 
     const newCard: FlashcardItem = {
-      id: `fc-auto-${Date.now()}-${Math.random().toString(36).substring(2, 6)}`,
+      id: '',
       front,
       back,
       comment: `Fonte: Resumo Oficial - ${material.title} (${material.specialty} • ${material.theme})`,
-      specialty: material.specialty || 'Clinica Medica',
+      specialty: material.specialty || 'Clínica Médica',
       theme: material.theme || 'Geral',
       focus: material.focus || material.theme || 'Geral',
       deckId: 'deck-padrao',
@@ -350,7 +351,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       createdAt: new Date().toISOString()
     };
 
-    flashcardsService.saveNewFlashcard(newCard, user?.id);
+    const savedCard = flashcardsService.saveNewFlashcard(newCard, user?.id);
 
     const newHighlight: StudyHighlight = {
       id: `hl_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
@@ -373,16 +374,17 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     window.getSelection()?.removeAllRanges();
 
     setToastAction({
-      message: 'Flashcard automatico criado com sucesso!',
+      message: 'Salvo em Cartões Originais → Baralho Padrão!',
       actionLabel: 'Personalizar',
       onAction: () => {
         setDrawerPrefill({
-          front: newCard.front,
-          back: newCard.back,
-          specialty: newCard.specialty,
-          tema: newCard.theme,
-          foco: newCard.focus,
-          comment: newCard.comment
+          cardId: savedCard.id,
+          front: savedCard.front,
+          back: savedCard.back,
+          specialty: savedCard.specialty,
+          tema: savedCard.theme,
+          foco: savedCard.focus,
+          comment: savedCard.comment
         });
         setIsAddCardDrawerOpen(true);
       }
@@ -403,9 +405,10 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     }
 
     setDrawerPrefill({
+      cardId: undefined,
       front,
       back: trimmed,
-      specialty: material.specialty || 'Clinica Medica',
+      specialty: material.specialty || 'Clínica Médica',
       tema: material.theme || 'Geral',
       foco: material.focus || material.theme || 'Geral',
       comment: `Fonte: Resumo Oficial - ${material.title}`
@@ -2013,20 +2016,20 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   const selectionColorClass = !isHighlighterActive
     ? 'selection:bg-zinc-200 dark:selection:bg-zinc-800'
     : activeMarkStyle === 'strikethrough'
-    ? 'selection:bg-rose-200 dark:selection:bg-rose-950 selection:text-rose-950 dark:selection:text-rose-100'
-    : activeMarkStyle === 'underline'
-    ? 'selection:bg-sky-200 dark:selection:bg-sky-950 selection:text-sky-950 dark:selection:text-sky-100'
-    : activeHighlighterColor === 'green'
-    ? 'selection:bg-emerald-300 dark:selection:bg-emerald-400 selection:text-black dark:selection:text-black'
-    : activeHighlighterColor === 'pink'
-    ? 'selection:bg-pink-300 dark:selection:bg-pink-400 selection:text-black dark:selection:text-black'
-    : activeHighlighterColor === 'blue'
-    ? 'selection:bg-sky-300 dark:selection:bg-sky-400 selection:text-black dark:selection:text-black'
-    : activeHighlighterColor === 'orange'
-    ? 'selection:bg-orange-300 dark:selection:bg-orange-400 selection:text-black dark:selection:text-black'
-    : activeHighlighterColor === 'purple'
-    ? 'selection:bg-purple-300 dark:selection:bg-purple-400 selection:text-black dark:selection:text-black'
-    : 'selection:bg-amber-300 dark:selection:bg-amber-400 selection:text-black dark:selection:text-black';
+      ? 'selection:bg-rose-200 dark:selection:bg-rose-950 selection:text-rose-950 dark:selection:text-rose-100'
+      : activeMarkStyle === 'underline'
+        ? 'selection:bg-sky-200 dark:selection:bg-sky-950 selection:text-sky-950 dark:selection:text-sky-100'
+        : activeHighlighterColor === 'green'
+          ? 'selection:bg-emerald-300 dark:selection:bg-emerald-400 selection:text-black dark:selection:text-black'
+          : activeHighlighterColor === 'pink'
+            ? 'selection:bg-pink-300 dark:selection:bg-pink-400 selection:text-black dark:selection:text-black'
+            : activeHighlighterColor === 'blue'
+              ? 'selection:bg-sky-300 dark:selection:bg-sky-400 selection:text-black dark:selection:text-black'
+              : activeHighlighterColor === 'orange'
+                ? 'selection:bg-orange-300 dark:selection:bg-orange-400 selection:text-black dark:selection:text-black'
+                : activeHighlighterColor === 'purple'
+                  ? 'selection:bg-purple-300 dark:selection:bg-purple-400 selection:text-black dark:selection:text-black'
+                  : 'selection:bg-amber-300 dark:selection:bg-amber-400 selection:text-black dark:selection:text-black';
 
   return (
     <div className="space-y-6 w-full max-w-7xl mx-auto">
@@ -2134,8 +2137,8 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
                   href={`#${pill.slug}`}
                   onClick={() => setActiveSectionSlug(pill.slug)}
                   className={`px-3 py-1.5 rounded-md text-xs font-bold whitespace-nowrap transition-all duration-200 border shrink-0 ${isActive
-                      ? 'text-white shadow-xs'
-                      : 'bg-zinc-100/80 dark:bg-zinc-900/80 text-zinc-700 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600'
+                    ? 'text-white shadow-xs'
+                    : 'bg-zinc-100/80 dark:bg-zinc-900/80 text-zinc-700 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600'
                     }`}
                   style={
                     isActive
@@ -2207,17 +2210,16 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
                       setActiveSectionSlug(pill.slug);
                       setIsMobileTocOpen(false);
                     }}
-                    className={`flex items-center justify-between px-3.5 py-3 rounded-xl text-xs font-bold transition-all min-h-[44px] ${
-                      isActive
+                    className={`flex items-center justify-between px-3.5 py-3 rounded-xl text-xs font-bold transition-all min-h-[44px] ${isActive
                         ? 'text-white'
                         : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-800'
-                    }`}
+                      }`}
                     style={
                       isActive
                         ? {
-                            backgroundColor: accentConfig.primaryHex,
-                            color: accentConfig.primaryContrastHex
-                          }
+                          backgroundColor: accentConfig.primaryHex,
+                          color: accentConfig.primaryContrastHex
+                        }
                         : {}
                     }
                   >
@@ -2298,9 +2300,10 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       <AddFlashcardDrawer
         isOpen={isAddCardDrawerOpen}
         onClose={() => setIsAddCardDrawerOpen(false)}
-        onCardSaved={() => {
-          showToast('Flashcard salvo com sucesso!');
+        onCardSaved={(_savedCard, deckName) => {
+          showToast(`Salvo em Cartões Originais → ${deckName || 'Baralho Padrão'}!`);
         }}
+        editingCardId={drawerPrefill.cardId}
         initialFront={drawerPrefill.front}
         initialBack={drawerPrefill.back}
         initialSpecialty={drawerPrefill.specialty}
@@ -2310,7 +2313,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       />
 
       {/* Caderno Lateral de Destaques & Anotações */}
-      
+
 
       {/* Toast Flutuante (acima da barra inferior mobile) */}
       {(toastMessage || toastAction) && (

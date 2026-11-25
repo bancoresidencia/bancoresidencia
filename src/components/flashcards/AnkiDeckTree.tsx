@@ -22,6 +22,7 @@ import { FlashcardItem, FlashcardStudyDepth } from '@/types/flashcards';
 import { formatSubSubfocoDisplay } from '@/components/AdvancedQuestionFilters';
 import { buildHierarchyCardsCache } from '@/utils/specialtyMatcher';
 import { getFlashcardDepth } from '@/utils/flashcardDistributionEngine';
+import { calculateAnkiDeckCounts } from '@/utils/ankiScheduler';
 import { SpecialtyHierarchy } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 
@@ -51,13 +52,15 @@ interface AnkiDeckTreeProps {
     overridePriorityOnly?: boolean,
     allCardsMode?: boolean
   ) => void;
+  onOpenCustomStudy?: (cards: FlashcardItem[], title: string) => void;
 }
 
 export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
   allFlashcards,
   hierarchy,
   filterEssentialOnly,
-  onStartStudy
+  onStartStudy,
+  onOpenCustomStudy
 }) => {
   const { accentConfig } = useTheme();
 
@@ -218,25 +221,7 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
 
   // Calcula estatísticas Anki para uma lista de cards
   const calculateAnkiCounts = useCallback((cards: FlashcardItem[]): DeckCounts => {
-    const now = new Date();
-    let novo = 0;
-    let aprender = 0;
-    let revisar = 0;
-
-    cards.forEach((c) => {
-      const p = c.progress;
-      if (!p || p.state === 'new' || p.repetitions === 0) {
-        novo += 1;
-      } else if (p.state === 'learning' || p.state === 'relearning') {
-        aprender += 1;
-      } else if (p.state === 'review') {
-        if (!p.nextReviewDate || new Date(p.nextReviewDate) <= now) {
-          revisar += 1;
-        }
-      }
-    });
-
-    return { novo, aprender, revisar, total: cards.length };
+    return calculateAnkiDeckCounts(cards);
   }, []);
 
   // Mapas de cache para cards por nó para máxima performance (incluindo subfocos e sub-subfocos)
@@ -649,15 +634,22 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                         </button>
                         <button
                           type="button"
-                          onClick={() =>
-                            handleStartNodeStudy(
-                              specCards,
-                              `Revisão Total: ${spec.especialidade}`,
-                              true
-                            )
-                          }
+                          onClick={() => {
+                            const cards = filterEssentialOnly
+                              ? specCards.filter((c) => c.priority === 'essential')
+                              : specCards;
+                            if (onOpenCustomStudy) {
+                              onOpenCustomStudy(cards, `Estudo Personalizado: ${spec.especialidade}`);
+                            } else {
+                              handleStartNodeStudy(
+                                specCards,
+                                `Revisão Total: ${spec.especialidade}`,
+                                true
+                              );
+                            }
+                          }}
                           className="p-1 rounded-lg text-zinc-400 hover:text-white hover:bg-blue-600 transition-colors cursor-pointer shadow-2xs"
-                          title="Revisar Todos os cards (Estudo Personalizado)"
+                          title="Estudo Personalizado (Sem alterar FSRS por padrão)"
                         >
                           <RotateCw className="w-3.5 h-3.5" />
                         </button>
@@ -768,15 +760,22 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                 </button>
                                 <button
                                   type="button"
-                                  onClick={() =>
-                                    handleStartNodeStudy(
-                                      temaCards,
-                                      `Revisão Total: ${tem.tema}`,
-                                      true
-                                    )
-                                  }
+                                  onClick={() => {
+                                    const cards = filterEssentialOnly
+                                      ? temaCards.filter((c) => c.priority === 'essential')
+                                      : temaCards;
+                                    if (onOpenCustomStudy) {
+                                      onOpenCustomStudy(cards, `Estudo Personalizado: ${tem.tema}`);
+                                    } else {
+                                      handleStartNodeStudy(
+                                        temaCards,
+                                        `Revisão Total: ${tem.tema}`,
+                                        true
+                                      );
+                                    }
+                                  }}
                                   className="p-1 rounded-md text-zinc-400 hover:text-white hover:bg-blue-600 transition-colors cursor-pointer"
-                                  title="Revisar Todos os cards (Estudo Personalizado)"
+                                  title="Estudo Personalizado (Sem alterar FSRS por padrão)"
                                 >
                                   <RotateCw className="w-3 h-3" />
                                 </button>
@@ -898,15 +897,22 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                         </button>
                                         <button
                                           type="button"
-                                          onClick={() =>
-                                            handleStartNodeStudy(
-                                              focoCards,
-                                              `Revisão Total: ${foc.foco}`,
-                                              true
-                                            )
-                                          }
+                                          onClick={() => {
+                                            const cards = filterEssentialOnly
+                                              ? focoCards.filter((c) => c.priority === 'essential')
+                                              : focoCards;
+                                            if (onOpenCustomStudy) {
+                                              onOpenCustomStudy(cards, `Estudo Personalizado: ${foc.foco}`);
+                                            } else {
+                                              handleStartNodeStudy(
+                                                focoCards,
+                                                `Revisão Total: ${foc.foco}`,
+                                                true
+                                              );
+                                            }
+                                          }}
                                           className="p-1 rounded-md text-zinc-400 hover:text-white hover:bg-blue-600 transition-colors cursor-pointer"
-                                          title="Revisar Todos os cards (Estudo Personalizado)"
+                                          title="Estudo Personalizado (Sem alterar FSRS por padrão)"
                                         >
                                           <RotateCw className="w-3 h-3" />
                                         </button>
@@ -1166,15 +1172,22 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
               {selectedCardsList.length > 0 ? (
                 <button
                   type="button"
-                  onClick={() =>
-                    handleStartNodeStudy(
-                      selectedCardsList,
-                      `Estudo Personalizado (${selectedCardsList.length} cards)`
-                    )
-                  }
+                  onClick={() => {
+                    if (onOpenCustomStudy) {
+                      onOpenCustomStudy(
+                        selectedCardsList,
+                        `Estudo Personalizado (${selectedCardsList.length} cards)`
+                      );
+                    } else {
+                      handleStartNodeStudy(
+                        selectedCardsList,
+                        `Estudo Personalizado (${selectedCardsList.length} cards)`
+                      );
+                    }
+                  }}
                   className="px-2 py-1 rounded-lg text-xs font-bold text-white shadow-xs hover:opacity-95 active:scale-98 transition-all inline-flex items-center gap-1 cursor-pointer shrink-0"
                   style={{ backgroundColor: accentConfig.primaryHex }}
-                  title="Estudar os cartões selecionados"
+                  title="Configurar estudo personalizado dos cartões selecionados"
                 >
                   <Play className="w-3 h-3 fill-current" />
                   <span className="hidden lg:inline">Estudar</span>
@@ -1198,12 +1211,19 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
 
               <button
                 type="button"
-                onClick={() =>
-                  handleStartNodeStudy(
-                    selectedCardsList,
-                    `Estudo Personalizado (${selectedCardsList.length} cards)`
-                  )
-                }
+                onClick={() => {
+                  if (onOpenCustomStudy) {
+                    onOpenCustomStudy(
+                      selectedCardsList,
+                      `Estudo Personalizado (${selectedCardsList.length} cards)`
+                    );
+                  } else {
+                    handleStartNodeStudy(
+                      selectedCardsList,
+                      `Estudo Personalizado (${selectedCardsList.length} cards)`
+                    );
+                  }
+                }}
                 className="px-3 py-1.5 rounded-xl text-xs font-bold text-white shadow-xs inline-flex items-center gap-1.5 cursor-pointer"
                 style={{ backgroundColor: accentConfig.primaryHex }}
               >

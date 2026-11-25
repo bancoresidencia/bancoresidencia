@@ -11,18 +11,29 @@ interface CreateDeckModalProps {
   isOpen: boolean;
   onClose: () => void;
   onDeckCreated: () => void;
+  initialParentPath?: string | null;
 }
 
 export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
   isOpen,
   onClose,
-  onDeckCreated
+  onDeckCreated,
+  initialParentPath
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
 
-  const [deckName, setDeckName] = useState('');
+  const [deckName, setDeckName] = useState(
+    initialParentPath ? `${initialParentPath}::` : ''
+  );
   const [deckDescription, setDeckDescription] = useState('');
+
+  React.useEffect(() => {
+    if (isOpen) {
+      setDeckName(initialParentPath ? `${initialParentPath}::` : '');
+      setDeckDescription('');
+    }
+  }, [isOpen, initialParentPath]);
 
   if (!isOpen) return null;
 
@@ -86,9 +97,12 @@ export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
               autoFocus
               value={deckName}
               onChange={(e) => setDeckName(e.target.value)}
-              placeholder="Ex: Internato - Casos Clínicos, Erros de Simulado..."
+              placeholder="Ex: Internato::Clínica Médica::Cardiologia"
               className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 text-xs sm:text-sm"
             />
+            <p className="text-[11px] text-zinc-500 mt-1">
+              Use <code className="font-mono bg-zinc-100 dark:bg-zinc-800 px-1 rounded">::</code> para criar sub-baralhos hierárquicos (estilo Anki).
+            </p>
           </div>
 
           <div>

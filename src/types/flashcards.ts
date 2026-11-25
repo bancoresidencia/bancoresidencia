@@ -4,10 +4,55 @@ export type FSRSState = 'new' | 'learning' | 'review' | 'relearning';
 
 export type FlashcardRating = 'again' | 'hard' | 'good' | 'easy';
 
+export type FlashcardPresetMode = 'more_reps' | 'moderate' | 'fewer_reps' | 'custom_anki';
+
+export type FlashcardQueueOrder = 'mix' | 'reviews_first' | 'new_first';
+
+export type FlashcardSessionMode = 'srs' | 'custom_no_reschedule' | 'custom_reschedule';
+
+export type CustomStudyFilterType =
+  | 'all'
+  | 'due'
+  | 'forgotten_today'
+  | 'ahead'
+  | 'new_only'
+  | 'essential_only'
+  | 'errors_only';
+
+export type CustomStudySortOrder = 'default' | 'random' | 'most_overdue' | 'most_lapsed';
+
+export interface CustomStudyLaunchOptions {
+  filterType: CustomStudyFilterType;
+  aheadDays: number;
+  limitCards?: number;
+  sortOrder: CustomStudySortOrder;
+  reschedule: boolean;
+}
+
+export interface FlashcardSchedulerSettings {
+  presetMode: FlashcardPresetMode;
+  learningStepsMinutes: number[];
+  relearningStepsMinutes: number[];
+  graduatingIntervalDays: number;
+  easyIntervalDays: number;
+  desiredRetention: number; // 0.75 a 0.97
+  maximumIntervalDays: number;
+  minimumLapseIntervalDays: number;
+  intervalModifier: number; // 0.5 a 2.0
+  enableFuzz: boolean;
+  newCardsPerDay: number;
+  maxReviewsPerDay: number;
+  learnAheadMinutes: number;
+  queueOrder: FlashcardQueueOrder;
+  updatedAt?: string;
+}
+
 export interface FlashcardProgress {
   state: FSRSState;
   repetitions: number;
   intervalDays: number;
+  stepIndex?: number;
+  scheduledDays?: number;
   easeFactor: number;
   stability: number;
   difficulty: number;
@@ -160,6 +205,7 @@ export interface CustomFlashcardDeck {
   specialties: string[];
   themes?: string[];
   selectedNodeKeys?: string[];
+  dynamicFilters?: DynamicFilterCriterion[];
   priorityOnly?: boolean;
   limitCards?: number;
   cardIds?: string[];

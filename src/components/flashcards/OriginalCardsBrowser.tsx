@@ -12,12 +12,13 @@ import {
   CheckCircle2,
   Calendar,
   Tag,
-  FileSpreadsheet
+  FileSpreadsheet,
+  RotateCcw
 } from 'lucide-react';
 import { FlashcardItem, CustomFlashcardDeck } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
-import { flashcardsService } from '@/services/flashcardsService';
+import { flashcardsService, isUserCreatedFlashcardId } from '@/services/flashcardsService';
 import { CsvFlashcardImportModal } from './CsvFlashcardImportModal';
 
 interface OriginalCardsBrowserProps {
@@ -36,6 +37,8 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
   const { accentConfig } = useTheme();
   const { user } = useAuth();
 
+  const [browserTab, setBrowserTab] = useState<'author' | 'official_edits'>('author');
+  const [editsRefreshKey, setEditsRefreshKey] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDeckFilter, setSelectedDeckFilter] = useState('all');
   const [isCsvModalOpen, setIsCsvModalOpen] = useState(false);
@@ -46,6 +49,23 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
   const [editBack, setEditBack] = useState('');
   const [editComment, setEditComment] = useState('');
   const [editDeckId, setEditDeckId] = useState('deck-padrao');
+
+  const editedOfficialEntries = useMemo(() => {
+    void editsRefreshKey;
+    return flashcardsService.getEditedOfficialCardsWithOriginal(user?.id);
+  }, [user?.id, editsRefreshKey]);
+
+  const filteredEditedOfficialEntries = useMemo(() => {
+    if (!searchQuery.trim()) return editedOfficialEntries;
+    const q = searchQuery.toLowerCase().trim();
+    return editedOfficialEntries.filter(
+      ({ editedCard, originalCard }) =>
+        editedCard.front.toLowerCase().includes(q) ||
+        editedCard.back.toLowerCase().includes(q) ||
+        originalCard.front.toLowerCase().includes(q) ||
+        editedCard.specialty.toLowerCase().includes(q)
+    );
+  }, [editedOfficialEntries, searchQuery]);
 
   const deckMap = useMemo(() => {
     const map = new Map<string, string>();
@@ -90,6 +110,22 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
     e.preventDefault();
     if (!editingCard || !editFront.trim() || !editBack.trim()) return;
 
+    if (!isUserCreatedFlashcardId(editingCard.id)) {
+      flashcardsService.saveCardEdit(
+        editingCard.id,
+        {
+          front: editFront.trim(),
+          back: editBack.trim(),
+          comment: editComment.trim() || undefined
+        },
+        user?.id
+      );
+      setEditsRefreshKey((k) => k + 1);
+      onRefreshCards();
+      setEditingCard(null);
+      return;
+    }
+
     const updatedCard: FlashcardItem = {
       ...editingCard,
       front: editFront.trim(),
@@ -101,6 +137,12 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
     flashcardsService.saveNewFlashcard(updatedCard, user?.id);
     onRefreshCards();
     setEditingCard(null);
+  };
+
+  const handleRevertOfficialEdit = (cardId: string) => {
+    flashcardsService.resetCardEdit(cardId, user?.id);
+    setEditsRefreshKey((k) => k + 1);
+    onRefreshCards();
   };
 
   return (
@@ -121,11 +163,30 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
           <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-800 hidden sm:block" />
 
           <h2 className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
-            Painel de Cartões Autorais
+            Painel de Cartões
           </h2>
-          <span className="font-mono text-xs px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 font-semibold">
-            {filteredCards.length} {filteredCards.length === 1 ? 'card' : 'cards'}
-          </span>
+          <div className="flex items-center gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200/80 dark:border-zinc-800">
+            <button
+              type="button"
+              onClick={() => setBrowserTab('author')}
+              className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-colors cursor-pointer ${browserTab === 'author'
+                  ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
+                  : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
+                }`}
+            >
+              Autorais ({filteredCards.length})
+            </button>
+            <button
+              type="button"
+              onClick={() => setBrowserTab('official_edits')}
+              className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-colors cursor-pointer ${browserTab === 'official_edits'
+                  ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
+                  : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
+                }`}
+            >
+              Edições no BR ({editedOfficialEntries.length})
+            </button>
+          </div>
         </div>
 
         {/* Filtros: Busca e Dropdown de Baralho */}
@@ -178,9 +239,76 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
         </div>
       </div>
 
-      {/* Tabela dos Cartões Criados */}
+      {/* Tabela dos Cartões Criados ou Edições Pessoais em Cartões Oficiais BR */}
       <div className="bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 rounded-2xl shadow-xs overflow-hidden">
-        {filteredCards.length === 0 ? (
+        {browserTab === 'official_edits' ? (
+          filteredEditedOfficialEntries.length === 0 ? (
+            <div className="p-8 text-center text-zinc-500 text-xs space-y-2">
+              <Layers className="w-8 h-8 text-zinc-400 mx-auto" />
+              <p className="font-bold text-zinc-700 dark:text-zinc-300">
+                Nenhuma edição pessoal em cartões oficiais do BR.
+              </p>
+              <p className="text-[11px] text-zinc-400">
+                Sempre que você editar um flashcard oficial durante o estudo, ele aparecerá aqui para revisão ou reversão ao texto original.
+              </p>
+            </div>
+          ) : (
+            <div className="divide-y divide-zinc-100 dark:divide-zinc-800/60">
+              {filteredEditedOfficialEntries.map(({ originalCard, editedCard }) => (
+                <div
+                  key={editedCard.id}
+                  className="p-4 hover:bg-zinc-50/70 dark:hover:bg-zinc-900/40 transition-colors flex flex-col sm:flex-row sm:items-start justify-between gap-3 text-xs"
+                >
+                  <div className="space-y-1.5 min-w-0 flex-1">
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <span className="px-2 py-0.5 rounded-md text-[10px] font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400">
+                        {editedCard.specialty}
+                      </span>
+                      <span className="text-[11px] text-zinc-500 truncate">
+                        {editedCard.theme} • {editedCard.focus}
+                      </span>
+                      <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300">
+                        Editado por você
+                      </span>
+                    </div>
+
+                    <p className="font-semibold text-zinc-900 dark:text-zinc-100">
+                      {editedCard.front}
+                    </p>
+                    <p className="text-zinc-700 dark:text-zinc-300">
+                      <strong>Verso:</strong> {editedCard.back}
+                    </p>
+                    {editedCard.front !== originalCard.front && (
+                      <p className="text-[11px] text-zinc-400 line-through">
+                        Original: {originalCard.front}
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <button
+                      type="button"
+                      onClick={() => handleOpenEdit(editedCard)}
+                      className="px-2.5 py-1.5 rounded-xl text-[11px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer inline-flex items-center gap-1"
+                    >
+                      <Edit2 className="w-3 h-3" />
+                      <span>Editar</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => handleRevertOfficialEdit(editedCard.id)}
+                      className="px-2.5 py-1.5 rounded-xl text-[11px] font-bold bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 hover:bg-rose-100 dark:hover:bg-rose-900/40 border border-rose-200/70 dark:border-rose-900/50 transition-colors cursor-pointer inline-flex items-center gap-1"
+                      title="Desfazer alterações pessoais e restaurar cartão original do BR"
+                    >
+                      <RotateCcw className="w-3 h-3" />
+                      <span>Reverter ao Original</span>
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )
+        ) : filteredCards.length === 0 ? (
           <div className="p-8 text-center text-zinc-500 text-xs space-y-2">
             <Layers className="w-8 h-8 text-zinc-400 mx-auto" />
             <p className="font-bold text-zinc-700 dark:text-zinc-300">
@@ -280,22 +408,24 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
             </div>
 
             <form onSubmit={handleSaveEdit} className="space-y-3 text-xs">
-              <div>
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                  Baralho
-                </label>
-                <select
-                  value={editDeckId}
-                  onChange={(e) => setEditDeckId(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs focus:outline-none"
-                >
-                  {decks.map((d) => (
-                    <option key={d.id} value={d.id}>
-                      {d.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              {isUserCreatedFlashcardId(editingCard.id) && (
+                <div>
+                  <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                    Baralho
+                  </label>
+                  <select
+                    value={editDeckId}
+                    onChange={(e) => setEditDeckId(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs focus:outline-none"
+                  >
+                    {decks.map((d) => (
+                      <option key={d.id} value={d.id}>
+                        {d.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
               <div>
                 <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
@@ -355,7 +485,7 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
           </div>
         </div>
       )}
-    
+
       {/* Modal de Importação CSV */}
       <CsvFlashcardImportModal
         isOpen={isCsvModalOpen}
@@ -364,6 +494,6 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
           onRefreshCards();
         }}
       />
-</div>
+    </div>
   );
 };

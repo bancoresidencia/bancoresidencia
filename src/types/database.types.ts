@@ -329,12 +329,15 @@ export interface Database {
           state: 'new' | 'learning' | 'review' | 'relearning';
           repetitions: number;
           interval_days: number;
+          step_index: number;
+          scheduled_days: number;
           ease_factor: number;
           stability: number;
           difficulty: number;
           retrievability: number;
           next_review_date: string;
           lapses: number;
+          last_rating: 'again' | 'hard' | 'good' | 'easy' | null;
           last_reviewed_at: string | null;
         };
         Insert: {
@@ -343,12 +346,15 @@ export interface Database {
           state?: 'new' | 'learning' | 'review' | 'relearning';
           repetitions?: number;
           interval_days?: number;
+          step_index?: number;
+          scheduled_days?: number;
           ease_factor?: number;
           stability?: number;
           difficulty?: number;
           retrievability?: number;
           next_review_date?: string;
           lapses?: number;
+          last_rating?: 'again' | 'hard' | 'good' | 'easy' | null;
           last_reviewed_at?: string | null;
         };
         Update: {
@@ -357,12 +363,15 @@ export interface Database {
           state?: 'new' | 'learning' | 'review' | 'relearning';
           repetitions?: number;
           interval_days?: number;
+          step_index?: number;
+          scheduled_days?: number;
           ease_factor?: number;
           stability?: number;
           difficulty?: number;
           retrievability?: number;
           next_review_date?: string;
           lapses?: number;
+          last_rating?: 'again' | 'hard' | 'good' | 'easy' | null;
           last_reviewed_at?: string | null;
         };
       };
@@ -416,6 +425,8 @@ export interface Database {
           source_question_id: string | null;
           comment: string | null;
           priority: string;
+          study_depth: 'study' | 'review' | 'both' | null;
+          tags: string[];
           created_at: string;
           updated_at: string;
         };
@@ -433,6 +444,8 @@ export interface Database {
           source_question_id?: string | null;
           comment?: string | null;
           priority?: string;
+          study_depth?: 'study' | 'review' | 'both' | null;
+          tags?: string[];
           created_at?: string;
           updated_at?: string;
         };
@@ -450,6 +463,8 @@ export interface Database {
           source_question_id?: string | null;
           comment?: string | null;
           priority?: string;
+          study_depth?: 'study' | 'review' | 'both' | null;
+          tags?: string[];
           created_at?: string;
           updated_at?: string;
         };

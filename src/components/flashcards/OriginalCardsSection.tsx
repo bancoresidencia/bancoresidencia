@@ -9,7 +9,14 @@ import {
   Table,
   Trash2,
   BookOpen,
-  FileSpreadsheet
+  FileSpreadsheet,
+  RotateCw,
+  ChevronRight,
+  ChevronDown,
+  FolderOpen,
+  Sparkles,
+  CheckCircle2,
+  X
 } from 'lucide-react';
 import {
   FlashcardItem,
@@ -19,8 +26,11 @@ import {
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
-import { normalizeText } from '@/utils/specialtyMatcher';
-import { getFlashcardDepth } from '@/utils/flashcardDistributionEngine';
+import {
+  buildOriginalDeckTree,
+  flattenOriginalDeckTree,
+  matchesDynamicFilterCriteria
+} from '@/utils/ankiDeckTree';
 import { CreateDeckModal } from './CreateDeckModal';
 import { OriginalCardsBrowser } from './OriginalCardsBrowser';
 import { CsvFlashcardImportModal } from './CsvFlashcardImportModal';
@@ -33,12 +43,14 @@ interface OriginalCardsSectionProps {
     overridePriorityOnly?: boolean,
     allCardsMode?: boolean
   ) => void;
+  onOpenCustomStudy?: (cards: FlashcardItem[], title: string) => void;
   onOpenAddCardForDeck: (deckId: string) => void;
   onCardsChange?: () => void;
 }
 
 export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   onStartStudy,
+  onOpenCustomStudy,
   onOpenAddCardForDeck,
   onCardsChange
 }) => {
@@ -46,8 +58,15 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   const { user } = useAuth();
 
   const [isCreateDeckOpen, setIsCreateDeckOpen] = useState(false);
+  const [createSubDeckParentPath, setCreateSubDeckParentPath] = useState<string | null>(null);
+  const [expandedDeckPaths, setExpandedDeckPaths] = useState<Record<string, boolean>>({});
   const [isCsvModalOpen, setIsCsvModalOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'decks' | 'browser'>('decks');
+  const [saveFilterModal, setSaveFilterModal] = useState<{
+    name: string;
+    isDynamic: boolean;
+  } | null>(null);
+  const [sectionToast, setSectionToast] = useState<string | null>(null);
 
   // Estado dos Filtros Dinâmicos
   const [activeFilters, setActiveFilters] = useState<DynamicFilterCriterion[]>([]);
@@ -58,25 +77,28 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   });
 
   const [userCards, setUserCards] = useState<FlashcardItem[]>(() => {
-    return flashcardsService.loadUserCreatedFlashcards(user?.id);
+    return flashcardsService.getUserCreatedFlashcardsWithProgress(user?.id);
   });
 
   useEffect(() => {
     setDecks(flashcardsService.getCustomDecks(user?.id));
-    setUserCards(flashcardsService.loadUserCreatedFlashcards(user?.id));
+    setUserCards(flashcardsService.getUserCreatedFlashcardsWithProgress(user?.id));
     if (user?.id) {
       flashcardsService.syncRemoteDecks(user.id).then((syncedDecks) => {
         setDecks(syncedDecks);
       });
-      flashcardsService.syncRemoteUserCreatedCards(user.id).then((syncedCards) => {
-        setUserCards(syncedCards);
+      flashcardsService.syncRemoteUserCreatedCards(user.id).then(() => {
+        setUserCards(flashcardsService.getUserCreatedFlashcardsWithProgress(user.id));
+      });
+      flashcardsService.syncRemoteProgress(user.id).then(() => {
+        setUserCards(flashcardsService.getUserCreatedFlashcardsWithProgress(user.id));
       });
     }
   }, [user?.id]);
 
   const refreshData = () => {
     setDecks(flashcardsService.getCustomDecks(user?.id));
-    setUserCards(flashcardsService.loadUserCreatedFlashcards(user?.id));
+    setUserCards(flashcardsService.getUserCreatedFlashcardsWithProgress(user?.id));
     onCardsChange?.();
   };
 
@@ -92,66 +114,26 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   // Aplica os filtros dinâmicos aos cartões do usuário
   const filteredCards = useMemo(() => {
     if (activeFilters.length === 0) return userCards;
-
     const now = new Date();
-
-    return userCards.filter((card) => {
-      return activeFilters.every((filter) => {
-        if (filter.type === 'specialty') {
-          return normalizeText(card.specialty).includes(normalizeText(filter.value));
-        }
-        if (filter.type === 'theme') {
-          return normalizeText(card.theme).includes(normalizeText(filter.value));
-        }
-        if (filter.type === 'focus') {
-          return normalizeText(card.focus).includes(normalizeText(filter.value));
-        }
-        if (filter.type === 'subfocus') {
-          return card.subfocus ? normalizeText(card.subfocus).includes(normalizeText(filter.value)) : false;
-        }
-        if (filter.type === 'subSubfocus') {
-          const ss = card.sub_subfocus || card.subSubfocus;
-          return ss ? normalizeText(ss).includes(normalizeText(filter.value)) : false;
-        }
-        if (filter.type === 'deck') {
-          const matchedDeck = decks.find((d) => d.name === filter.value);
-          const targetId = matchedDeck ? matchedDeck.id : filter.value;
-          return (card.deckId || 'deck-padrao') === targetId;
-        }
-        if (filter.type === 'status') {
-          const p = card.progress;
-          if (filter.value === 'Para Revisar') {
-            return (
-              p &&
-              p.state === 'review' &&
-              p.nextReviewDate &&
-              new Date(p.nextReviewDate) <= now
-            );
-          }
-          if (filter.value === 'Novos') {
-            return !p || p.state === 'new' || p.repetitions === 0;
-          }
-          if (filter.value === 'Em Aprendizado') {
-            return p && (p.state === 'learning' || p.state === 'relearning');
-          }
-        }
-        if (filter.type === 'depth') {
-          const depth = getFlashcardDepth(card);
-          if (filter.value === 'Estudo Detalhado') return depth === 'study';
-          if (filter.value === 'Revisão Rápida') return depth === 'review';
-        }
-        if (filter.type === 'priority') {
-          if (filter.value === 'Essenciais') return card.priority === 'essential';
-          return card.priority !== 'essential';
-        }
-        if (filter.type === 'tag') {
-          const cleanTag = filter.value.replace(/^#/, '').toLowerCase();
-          return card.tags && card.tags.some((t) => t.toLowerCase().includes(cleanTag));
-        }
-        return true;
-      });
-    });
+    return userCards.filter((card) =>
+      matchesDynamicFilterCriteria(card, activeFilters, decks, now)
+    );
   }, [userCards, activeFilters, decks]);
+
+  const deckTree = useMemo(() => {
+    return buildOriginalDeckTree(decks, filteredCards);
+  }, [decks, filteredCards]);
+
+  const visibleDeckNodes = useMemo(() => {
+    return flattenOriginalDeckTree(deckTree, expandedDeckPaths);
+  }, [deckTree, expandedDeckPaths]);
+
+  const toggleDeckExpand = (fullPath: string) => {
+    setExpandedDeckPaths((prev) => ({
+      ...prev,
+      [fullPath]: prev[fullPath] !== undefined ? !prev[fullPath] : false
+    }));
+  };
 
   // Manipulação de filtros
   const handleAddFilter = (criterion: DynamicFilterCriterion) => {
@@ -166,52 +148,40 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
     setActiveFilters([]);
   };
 
-  // Salvar a seleção atual como novo baralho personalizado
+  // Salvar a seleção atual como novo baralho personalizado (Smart Deck Dinâmico por padrão)
   const handleSaveAsCustomDeck = () => {
     if (filteredCards.length === 0) {
-      alert('Não há cartões que correspondam aos filtros selecionados.');
+      setSectionToast('Não há cartões que correspondam aos filtros selecionados.');
+      setTimeout(() => setSectionToast(null), 3500);
       return;
     }
 
-    const defaultName = `Filtro: ${activeFilters.map((f) => f.label.split(':')[0]).join(', ')} (${filteredCards.length} cards)`;
-    const deckName = prompt('Nome para o novo Baralho com estes filtros:', defaultName);
-    if (!deckName || !deckName.trim()) return;
+    const defaultName = `Filtro: ${activeFilters.map((f) => f.label.split(':')[0]).join(', ')}`;
+    setSaveFilterModal({ name: defaultName, isDynamic: true });
+  };
+
+  const handleConfirmSaveFilterDeck = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!saveFilterModal || !saveFilterModal.name.trim()) return;
 
     const newDeck: CustomFlashcardDeck = {
       id: `deck-pers-${Date.now()}`,
-      name: deckName.trim(),
-      description: `Gerado a partir dos filtros: ${activeFilters.map((f) => f.label).join(' | ')}`,
+      name: saveFilterModal.name.trim(),
+      description: `Filtros: ${activeFilters.map((f) => f.label).join(' | ')}`,
       specialties: [],
-      cardIds: filteredCards.map((c) => c.id),
-      deckType: 'original',
+      dynamicFilters: saveFilterModal.isDynamic ? activeFilters : undefined,
+      cardIds: saveFilterModal.isDynamic ? undefined : filteredCards.map((c) => c.id),
+      deckType: saveFilterModal.isDynamic ? 'smart' : 'original',
       createdAt: new Date().toISOString()
     };
 
     flashcardsService.savePersonalizedDeck(newDeck, user?.id);
-    alert(`Baralho "${newDeck.name}" criado com sucesso na aba Baralhos Personalizados!`);
-  };
-
-  // Calcula contagens Anki para um conjunto de cards
-  const calculateAnkiCounts = (cards: FlashcardItem[]) => {
-    const now = new Date();
-    let novo = 0;
-    let aprender = 0;
-    let revisar = 0;
-
-    cards.forEach((c) => {
-      const p = c.progress;
-      if (!p || p.state === 'new' || p.repetitions === 0) {
-        novo += 1;
-      } else if (p.state === 'learning' || p.state === 'relearning') {
-        aprender += 1;
-      } else if (p.state === 'review') {
-        if (!p.nextReviewDate || new Date(p.nextReviewDate) <= now) {
-          revisar += 1;
-        }
-      }
-    });
-
-    return { novo, aprender, revisar, total: cards.length };
+    setSaveFilterModal(null);
+    onCardsChange?.();
+    setSectionToast(
+      `${saveFilterModal.isDynamic ? 'Smart Deck' : 'Baralho'} "${newDeck.name}" salvo em Baralhos Personalizados!`
+    );
+    setTimeout(() => setSectionToast(null), 4000);
   };
 
   const handleDeleteDeck = (deckId: string, deckName: string) => {
@@ -224,17 +194,7 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
         `Deseja excluir o baralho "${deckName}"? Os cartões serão movidos para o Baralho Padrão.`
       )
     ) {
-      const updatedCards = userCards.map((c) =>
-        c.deckId === deckId ? { ...c, deckId: 'deck-padrao' } : c
-      );
-      try {
-        localStorage.setItem(
-          user?.id
-            ? `bancoresidencia_user_cards_${user.id}`
-            : 'bancoresidencia_user_created_flashcards',
-          JSON.stringify(updatedCards)
-        );
-      } catch {}
+      flashcardsService.migrateUserCardsDeck(deckId, 'deck-padrao', user?.id);
       flashcardsService.deleteCustomDeck(deckId, user?.id);
       refreshData();
     }
@@ -358,10 +318,17 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
         totalCards={userCards.length}
         filteredCount={filteredCards.length}
         onStudyFilteredCards={() => {
-          onStartStudy(
-            filteredCards,
-            `Cartões Originais Filtrados (${filteredCards.length} cards)`
-          );
+          if (onOpenCustomStudy) {
+            onOpenCustomStudy(
+              filteredCards,
+              `Cartões Originais Filtrados (${filteredCards.length} cards)`
+            );
+          } else {
+            onStartStudy(
+              filteredCards,
+              `Cartões Originais Filtrados (${filteredCards.length} cards)`
+            );
+          }
         }}
         onSaveAsDeck={handleSaveAsCustomDeck}
         availableDecks={decks}
@@ -385,60 +352,101 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
           <div className="hidden sm:block col-span-1 text-center text-zinc-400">Ações</div>
         </div>
 
-        {/* Linhas dos Baralhos */}
+        {/* Linhas Hierárquicas dos Baralhos (Suporte Pai::Filho estilo Anki) */}
         <div className="divide-y divide-zinc-100 dark:divide-zinc-800/60">
-          {decks.map((deck) => {
-            const deckCards = filteredCards.filter(
-              (c) => (c.deckId || 'deck-padrao') === deck.id
-            );
-            const counts = calculateAnkiCounts(deckCards);
-            const isDefault = deck.id === 'deck-padrao';
+          {visibleDeckNodes.map(({ node, hasChildren, isExpanded }) => {
+            const deck = node.deck;
+            const deckCards = node.aggregatedCards;
+            const counts = node.counts;
+            const isDefault = deck?.id === 'deck-padrao';
 
             return (
               <div
-                key={deck.id}
+                key={node.fullPath}
                 className="grid grid-cols-12 items-center px-3.5 sm:px-4 py-3 hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50 transition-colors select-none group"
               >
-                {/* Nome do Baralho (clicável para estudar ou criar card) */}
+                {/* Nome do Baralho com indentação hierárquica Pai::Filho */}
                 <div
-                  onClick={() => {
-                    if (deckCards.length > 0) {
-                      onStartStudy(deckCards, `${deck.name} (${deckCards.length} cards)`);
-                    } else {
-                      onOpenAddCardForDeck(deck.id);
-                    }
-                  }}
-                  className="col-span-6 sm:col-span-8 flex items-center gap-2.5 min-w-0 pr-2 cursor-pointer touch-manipulation"
+                  className="col-span-6 sm:col-span-8 flex items-center gap-1.5 sm:gap-2 min-w-0 pr-2"
+                  style={{ paddingLeft: `${node.depth * 18}px` }}
                 >
-                  <div className="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
-                    <BookOpen className="w-4 h-4" />
-                  </div>
-
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
-                      <span className="font-heading font-black text-xs sm:text-[13px] text-zinc-900 dark:text-zinc-100 truncate">
-                        {deck.name}
-                      </span>
-                      {isDefault && (
-                        <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-500">
-                          Padrão
-                        </span>
+                  {hasChildren ? (
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleDeckExpand(node.fullPath);
+                      }}
+                      className="p-1 rounded-md text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                      title={isExpanded ? 'Recolher sub-baralhos' : 'Expandir sub-baralhos'}
+                    >
+                      {isExpanded ? (
+                        <ChevronDown className="w-3.5 h-3.5" />
+                      ) : (
+                        <ChevronRight className="w-3.5 h-3.5" />
                       )}
-                      {activeFilters.length > 0 && (
-                        <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-blue-100/70 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 font-bold">
-                          {deckCards.length} filtrados
-                        </span>
+                    </button>
+                  ) : (
+                    <span className="w-5 shrink-0" />
+                  )}
+
+                  <div
+                    onClick={() => {
+                      if (deckCards.length > 0) {
+                        onStartStudy(deckCards, `${node.fullPath} (${deckCards.length} cards)`);
+                      } else if (deck) {
+                        onOpenAddCardForDeck(deck.id);
+                      } else {
+                        setCreateSubDeckParentPath(node.fullPath);
+                        setIsCreateDeckOpen(true);
+                      }
+                    }}
+                    className="flex items-center gap-2.5 min-w-0 flex-1 cursor-pointer touch-manipulation"
+                  >
+                    <div
+                      className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${hasChildren || !deck
+                          ? 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400'
+                          : 'bg-blue-500/10 text-blue-600 dark:text-blue-400'
+                        }`}
+                    >
+                      {hasChildren || !deck ? (
+                        <FolderOpen className="w-4 h-4" />
+                      ) : (
+                        <BookOpen className="w-4 h-4" />
                       )}
                     </div>
-                    {deck.description && (
-                      <p className="text-[11px] text-zinc-400 dark:text-zinc-500 truncate">
-                        {deck.description}
-                      </p>
-                    )}
+
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                        <span className="font-heading font-black text-xs sm:text-[13px] text-zinc-900 dark:text-zinc-100 truncate">
+                          {node.label}
+                        </span>
+                        {isDefault && (
+                          <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-500">
+                            Padrão
+                          </span>
+                        )}
+                        {hasChildren && (
+                          <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-indigo-100/70 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300 font-bold">
+                            {node.children.length} sub
+                          </span>
+                        )}
+                        {activeFilters.length > 0 && (
+                          <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-blue-100/70 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 font-bold">
+                            {deckCards.length} filtrados
+                          </span>
+                        )}
+                      </div>
+                      {deck?.description && (
+                        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 truncate">
+                          {deck.description}
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </div>
 
-                {/* Colunas Anki */}
+                {/* Colunas Anki (agregadas quando há sub-baralhos) */}
                 <div className="col-span-2 sm:col-span-1 text-right text-xs">
                   {renderCountNumber(counts.novo, 'novo')}
                 </div>
@@ -450,23 +458,40 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                 </div>
 
                 {/* Ações Desktop e Mobile */}
-                <div className="col-span-12 sm:col-span-1 flex items-center justify-end sm:justify-center gap-1.5 pt-2.5 mt-2 sm:pt-0 sm:mt-0 border-t border-zinc-100 dark:border-zinc-800/60 sm:border-0">
+                <div className="col-span-12 sm:col-span-1 flex items-center justify-end sm:justify-center gap-1 pt-2.5 mt-2 sm:pt-0 sm:mt-0 border-t border-zinc-100 dark:border-zinc-800/60 sm:border-0">
                   {deckCards.length > 0 ? (
-                    <button
-                      type="button"
-                      onClick={() =>
-                        onStartStudy(
-                          deckCards,
-                          `${deck.name} (${deckCards.length} cards)`
-                        )
-                      }
-                      className="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:p-1 min-h-[34px] sm:min-h-0 rounded-lg text-[11px] font-bold bg-emerald-600 text-white sm:bg-transparent sm:text-zinc-400 sm:hover:text-white sm:hover:bg-emerald-600 transition-colors cursor-pointer touch-manipulation"
-                      title="Estudar este baralho"
-                    >
-                      <Play className="w-3.5 h-3.5 fill-current" />
-                      <span className="sm:hidden">Estudar</span>
-                    </button>
-                  ) : (
+                    <>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          onStartStudy(
+                            deckCards,
+                            `${node.fullPath} (${deckCards.length} cards)`
+                          )
+                        }
+                        className="inline-flex items-center gap-1.5 px-2.5 py-1.5 sm:p-1 min-h-[34px] sm:min-h-0 rounded-lg text-[11px] font-bold bg-emerald-600 text-white sm:bg-transparent sm:text-zinc-400 sm:hover:text-white sm:hover:bg-emerald-600 transition-colors cursor-pointer touch-manipulation"
+                        title="Estudar este baralho"
+                      >
+                        <Play className="w-3.5 h-3.5 fill-current" />
+                        <span className="sm:hidden">Estudar</span>
+                      </button>
+                      {onOpenCustomStudy && (
+                        <button
+                          type="button"
+                          onClick={() =>
+                            onOpenCustomStudy(
+                              deckCards,
+                              `Estudo Personalizado: ${node.fullPath}`
+                            )
+                          }
+                          className="inline-flex items-center gap-1 px-2 py-1.5 sm:p-1 min-h-[34px] sm:min-h-0 rounded-lg text-[11px] font-bold text-zinc-400 hover:text-white hover:bg-blue-600 transition-colors cursor-pointer touch-manipulation"
+                          title="Estudo Personalizado (Sem alterar FSRS)"
+                        >
+                          <RotateCw className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </>
+                  ) : deck ? (
                     <button
                       type="button"
                       onClick={() => onOpenAddCardForDeck(deck.id)}
@@ -476,9 +501,23 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                       <Plus className="w-3.5 h-3.5" />
                       <span className="sm:hidden">Adicionar</span>
                     </button>
-                  )}
+                  ) : null}
 
                   {!isDefault && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setCreateSubDeckParentPath(node.fullPath);
+                        setIsCreateDeckOpen(true);
+                      }}
+                      className="inline-flex items-center justify-center p-2 sm:p-1 min-w-[34px] min-h-[34px] sm:min-w-0 sm:min-h-0 rounded-lg text-zinc-400 hover:text-blue-500 transition-colors cursor-pointer touch-manipulation"
+                      title={`Criar sub-baralho dentro de ${node.label}`}
+                    >
+                      <FolderPlus className="w-3.5 h-3.5" />
+                    </button>
+                  )}
+
+                  {deck && !isDefault && (
                     <button
                       type="button"
                       onClick={() => handleDeleteDeck(deck.id, deck.name)}
@@ -495,22 +534,121 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
         </div>
       </div>
 
-      {/* Modal para criar novo baralho */}
+      {/* Modal para criar novo baralho / sub-baralho */}
       <CreateDeckModal
         isOpen={isCreateDeckOpen}
-        onClose={() => setIsCreateDeckOpen(false)}
+        initialParentPath={createSubDeckParentPath}
+        onClose={() => {
+          setIsCreateDeckOpen(false);
+          setCreateSubDeckParentPath(null);
+        }}
         onDeckCreated={refreshData}
       />
 
-      {/* Modal para importar flashcards de arquivo CSV */}
+      {/* Modal para importar flashcards */}
       <CsvFlashcardImportModal
         isOpen={isCsvModalOpen}
         onClose={() => setIsCsvModalOpen(false)}
         onImportSuccess={(count) => {
           refreshData();
-          alert(`${count} flashcards importados com sucesso!`);
+          setSectionToast(`${count} flashcards importados em Cartões Originais!`);
+          setTimeout(() => setSectionToast(null), 4000);
         }}
       />
+
+      {/* Modal para salvar filtros atuais como Smart Deck / Baralho Personalizado */}
+      {saveFilterModal && (
+        <div
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4"
+          onClick={() => setSaveFilterModal(null)}
+        >
+          <div
+            className="w-full max-w-md rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-5 sm:p-6 shadow-2xl space-y-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-2 border-b border-zinc-100 dark:border-zinc-800">
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-blue-500" />
+                <h3 className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
+                  Salvar Filtro como Baralho
+                </h3>
+              </div>
+              <button
+                type="button"
+                onClick={() => setSaveFilterModal(null)}
+                className="p-1 text-zinc-400 hover:text-zinc-600 cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <form onSubmit={handleConfirmSaveFilterDeck} className="space-y-3.5 text-xs">
+              <div>
+                <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Nome do Baralho *
+                </label>
+                <input
+                  type="text"
+                  required
+                  autoFocus
+                  value={saveFilterModal.name}
+                  onChange={(e) =>
+                    setSaveFilterModal((prev) =>
+                      prev ? { ...prev, name: e.target.value } : null
+                    )
+                  }
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                />
+              </div>
+
+              <label className="flex items-start gap-2.5 p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={saveFilterModal.isDynamic}
+                  onChange={(e) =>
+                    setSaveFilterModal((prev) =>
+                      prev ? { ...prev, isDynamic: e.target.checked } : null
+                    )
+                  }
+                  className="mt-0.5 rounded text-blue-600"
+                />
+                <div className="min-w-0">
+                  <span className="font-bold text-zinc-900 dark:text-zinc-100 block">
+                    Baralho Dinâmico (Smart Deck)
+                  </span>
+                  <span className="text-[11px] text-zinc-500 block">
+                    Novos cartões criados futuramente que atendam aos {activeFilters.length} filtro(s) entrarão automaticamente.
+                  </span>
+                </div>
+              </label>
+
+              <div className="flex justify-end gap-2 pt-2 border-t border-zinc-100 dark:border-zinc-800">
+                <button
+                  type="button"
+                  onClick={() => setSaveFilterModal(null)}
+                  className="px-3.5 py-2 rounded-xl font-bold text-zinc-500 hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer"
+                >
+                  Cancelar
+                </button>
+                <button
+                  type="submit"
+                  className="px-4 py-2 rounded-xl font-bold text-white shadow-xs cursor-pointer"
+                  style={{ backgroundColor: accentConfig.primaryHex }}
+                >
+                  Criar Smart Deck
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {sectionToast && (
+        <div className="fixed bottom-[calc(4.75rem+env(safe-area-inset-bottom,0px))] md:bottom-6 right-4 sm:right-6 z-50 flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-2xl text-xs font-bold animate-in fade-in slide-in-from-bottom-2">
+          <CheckCircle2 className="w-4 h-4 text-emerald-400 dark:text-emerald-600 shrink-0" />
+          <span>{sectionToast}</span>
+        </div>
+      )}
     </div>
   );
 };

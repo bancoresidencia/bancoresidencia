@@ -45,6 +45,7 @@ export interface RawParsedCsvRow {
   sub_subfocus?: string;
   subSubfocus?: string;
   deckId?: string;
+  sourceDeckName?: string;
   priority?: 'essential' | 'standard';
   studyDepth?: 'study' | 'review';
   tags?: string[];
@@ -325,6 +326,7 @@ export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
       focus: focus || deckFoco || undefined,
       subfocus: subfocus || undefined,
       deckId: deckId || (defaultDeck ? defaultDeck : undefined),
+      sourceDeckName: deckId || defaultDeck || undefined,
       priority,
       studyDepth,
       tags: tags.length > 0 ? tags : undefined,
@@ -648,7 +650,8 @@ export function buildFlashcardPreviews(
       isValid,
       validationError,
       confidence,
-      distributionMode
+      distributionMode,
+      detectedDeckName: row.sourceDeckName
     };
   });
 }

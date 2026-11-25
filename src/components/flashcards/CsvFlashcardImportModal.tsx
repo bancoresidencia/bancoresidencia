@@ -29,6 +29,7 @@ import {
   buildFlashcardPreviews,
   RawParsedCsvRow
 } from '@/utils/flashcardDistributionEngine';
+import { resolveOrCreateDeckHierarchy } from '@/utils/ankiDeckTree';
 
 interface CsvFlashcardImportModalProps {
   isOpen: boolean;
@@ -137,6 +138,7 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
 
   // Destinos dos cartões (se 'auto', detecta pelo vocabulário clínico / taxonomia)
   const [selectedDeckId, setSelectedDeckId] = useState(initialDeckId);
+  const [preserveDeckHierarchy, setPreserveDeckHierarchy] = useState(true);
   const [targetSpec, setTargetSpec] = useState(defaultSpecialty || 'auto');
   const [targetTema, setTargetTema] = useState(defaultTheme || 'auto');
   const [targetFoco, setTargetFoco] = useState(defaultFocus || 'auto');
@@ -188,6 +190,21 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
   const [showHelpExample, setShowHelpExample] = useState(false);
   const [isDragOver, setIsDragOver] = useState(false);
 
+  const detectedDeckPaths = useMemo(() => {
+    const paths = new Set<string>();
+    cardPreviews.forEach((p) => {
+      if (p.detectedDeckName && p.detectedDeckName.trim()) {
+        paths.add(p.detectedDeckName.trim());
+      }
+    });
+    if (paths.size === 0 && detectedDeckName && detectedDeckName.trim()) {
+      paths.add(detectedDeckName.trim());
+    }
+    return Array.from(paths);
+  }, [cardPreviews, detectedDeckName]);
+
+  const hasDetectedDeckHierarchy = detectedDeckPaths.length > 0;
+
   // Formato ativo atual
   const activeFormatConfig = useMemo(() => {
     return (
@@ -220,12 +237,12 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
       hasSpecificTarget ? 'manual' : 'auto',
       hasSpecificTarget
         ? {
-            specialty: spec !== 'auto' ? spec : undefined,
-            theme: tema !== 'auto' ? tema : undefined,
-            focus: foco !== 'auto' ? foco : undefined,
-            subfocus: sub !== 'auto' ? sub : undefined,
-            subSubfocus: subSub !== 'auto' ? subSub : undefined
-          }
+          specialty: spec !== 'auto' ? spec : undefined,
+          theme: tema !== 'auto' ? tema : undefined,
+          focus: foco !== 'auto' ? foco : undefined,
+          subfocus: sub !== 'auto' ? sub : undefined,
+          subSubfocus: subSub !== 'auto' ? subSub : undefined
+        }
         : undefined,
       selectedDeckId
     );
@@ -276,8 +293,8 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
         ext === '.apkg' || ext === '.colpkg'
           ? 'Descompactando pacote do Anki e extraindo notas...'
           : ext === '.zip'
-          ? 'Descompactando arquivo ZIP e localizando baralhos...'
-          : 'Lendo banco de dados SQLite...'
+            ? 'Descompactando arquivo ZIP e localizando baralhos...'
+            : 'Lendo banco de dados SQLite...'
       );
 
       try {
@@ -308,6 +325,7 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
           focus?: string;
           subfocus?: string;
           deckId?: string;
+          sourceDeckName?: string;
           priority?: 'essential' | 'standard';
           studyDepth?: 'study' | 'review';
           tags?: string[];
@@ -323,6 +341,7 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
             focus: c.focus,
             subfocus: c.subfocus,
             deckId: c.deckId,
+            sourceDeckName: c.sourceDeckName || data.detectedDeckName || undefined,
             priority: c.priority,
             studyDepth: c.studyDepth,
             tags: c.tags,
@@ -420,31 +439,54 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
 
   // Salvar e Importar no banco do aluno
   const handleConfirmImport = async () => {
-    const cardsToSave: FlashcardItem[] = [];
+    const selectedPreviews = cardPreviews.filter(
+      (preview, idx) => selectedRowIndices.has(idx) && preview.isValid
+    );
+    if (selectedPreviews.length === 0) return;
 
-    cardPreviews.forEach((preview, idx) => {
-      if (selectedRowIndices.has(idx) && preview.isValid) {
-        cardsToSave.push({
-          id: `fc-user-${Date.now()}-${idx}`,
-          front: preview.front,
-          back: preview.back,
-          comment: preview.comment,
-          specialty: preview.specialty,
-          theme: preview.theme,
-          focus: preview.focus,
-          subfocus: preview.subfocus,
-          sub_subfocus: preview.subSubfocus || preview.sub_subfocus,
-          subSubfocus: preview.subSubfocus || preview.sub_subfocus,
-          deckId: selectedDeckId,
-          priority: preview.priority,
-          studyDepth: preview.studyDepth,
-          tags: preview.tags,
-          createdAt: new Date().toISOString()
+    let deckIdByPath = new Map<string, string>();
+    if (preserveDeckHierarchy && hasDetectedDeckHierarchy) {
+      const selectedPaths = selectedPreviews
+        .map((p) => p.detectedDeckName || detectedDeckName || '')
+        .map((s) => s.trim())
+        .filter(Boolean);
+
+      if (selectedPaths.length > 0) {
+        const currentDecks = flashcardsService.getCustomDecks(user?.id);
+        const resolved = resolveOrCreateDeckHierarchy(selectedPaths, currentDecks);
+        deckIdByPath = resolved.deckIdByPath;
+        resolved.createdDecks.forEach((newDeck) => {
+          flashcardsService.saveCustomDeck(newDeck, user?.id);
         });
       }
-    });
+    }
 
-    if (cardsToSave.length === 0) return;
+    const nowIso = new Date().toISOString();
+    const cardsToSave: FlashcardItem[] = selectedPreviews.map((preview, idx) => {
+      const rawPath = (preview.detectedDeckName || detectedDeckName || '').trim();
+      const targetDeckId =
+        preserveDeckHierarchy && rawPath && deckIdByPath.has(rawPath)
+          ? deckIdByPath.get(rawPath)!
+          : selectedDeckId;
+
+      return {
+        id: `fc-user-${Date.now()}-${idx}`,
+        front: preview.front,
+        back: preview.back,
+        comment: preview.comment,
+        specialty: preview.specialty,
+        theme: preview.theme,
+        focus: preview.focus,
+        subfocus: preview.subfocus,
+        sub_subfocus: preview.subSubfocus || preview.sub_subfocus,
+        subSubfocus: preview.subSubfocus || preview.sub_subfocus,
+        deckId: targetDeckId,
+        priority: preview.priority,
+        studyDepth: preview.studyDepth,
+        tags: preview.tags,
+        createdAt: nowIso
+      };
+    });
 
     setIsProcessing(true);
     setLoadingMessage('Gravando cartões no seu baralho...');
@@ -588,11 +630,10 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
               <button
                 type="button"
                 onClick={() => setInputTab('file')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${
-                  inputTab === 'file'
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${inputTab === 'file'
                     ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
                     : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
-                }`}
+                  }`}
               >
                 <Upload className="w-3.5 h-3.5" />
                 <span>Carregar Arquivo</span>
@@ -601,11 +642,10 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
               <button
                 type="button"
                 onClick={() => setInputTab('paste')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${
-                  inputTab === 'paste'
+                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 ${inputTab === 'paste'
                     ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
                     : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
-                }`}
+                  }`}
               >
                 <FileText className="w-3.5 h-3.5" />
                 <span>Colar Texto / Anki</span>
@@ -708,11 +748,10 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
               onDragLeave={() => setIsDragOver(false)}
               onDrop={handleDrop}
               onClick={() => fileInputRef.current?.click()}
-              className={`border-2 border-dashed rounded-2xl p-6 sm:p-8 text-center cursor-pointer transition-all ${
-                isDragOver
+              className={`border-2 border-dashed rounded-2xl p-6 sm:p-8 text-center cursor-pointer transition-all ${isDragOver
                   ? 'border-blue-500 bg-blue-50/50 dark:bg-blue-950/30'
                   : 'border-zinc-300 dark:border-zinc-700/80 hover:border-zinc-400 dark:hover:border-zinc-600 bg-zinc-50/60 dark:bg-zinc-900/30 hover:bg-zinc-100/50 dark:hover:bg-zinc-900/60'
-              }`}
+                }`}
             >
               <input
                 ref={fileInputRef}
@@ -734,8 +773,8 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
                 {isProcessing
                   ? loadingMessage || 'Lendo pacote de flashcards...'
                   : fileName
-                  ? fileName
-                  : 'Clique para selecionar seu arquivo ou arraste para cá'}
+                    ? fileName
+                    : 'Clique para selecionar seu arquivo ou arraste para cá'}
               </p>
 
               <p className="text-xs font-mono text-zinc-500 dark:text-zinc-400 mt-1">
@@ -772,6 +811,7 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
                 </label>
                 <select
                   value={selectedDeckId}
+                  disabled={preserveDeckHierarchy && hasDetectedDeckHierarchy}
                   onChange={(e) => {
                     setSelectedDeckId(e.target.value);
                     if (cardPreviews.length > 0) {
@@ -780,7 +820,7 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
                       );
                     }
                   }}
-                  className="w-full px-2.5 py-1.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-900 dark:text-zinc-100"
+                  className="w-full px-2.5 py-1.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-xs font-medium text-zinc-900 dark:text-zinc-100 disabled:opacity-50"
                 >
                   {userDecks.map((d) => (
                     <option key={d.id} value={d.id}>
@@ -879,6 +919,27 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
                 </select>
               </div>
             </div>
+
+            {hasDetectedDeckHierarchy && (
+              <label className="flex items-start gap-2.5 p-2.5 rounded-xl bg-white dark:bg-zinc-900/90 border border-purple-200/80 dark:border-purple-800/60 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={preserveDeckHierarchy}
+                  onChange={(e) => setPreserveDeckHierarchy(e.target.checked)}
+                  className="mt-0.5 rounded text-blue-600 focus:ring-blue-500"
+                />
+                <div className="min-w-0">
+                  <span className="font-bold text-xs text-zinc-900 dark:text-zinc-100 block">
+                    Preservar hierarquia de baralhos do Anki (::) em Cartões Originais
+                  </span>
+                  <span className="text-[11px] text-zinc-500 block">
+                    {preserveDeckHierarchy
+                      ? `Os ${detectedDeckPaths.length} sub-baralho(s) detectado(s) (ex.: "${detectedDeckPaths[0]}") serão criados automaticamente em Cartões Originais.`
+                      : 'Todos os cartões selecionados serão consolidados no Baralho de Destino único acima.'}
+                  </span>
+                </div>
+              </label>
+            )}
 
             {(availableSubfocos.length > 0 || availableSubSubfocos.length > 0) && (
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-zinc-200/60 dark:border-zinc-800/60">
@@ -1001,9 +1062,8 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
                       return (
                         <tr
                           key={idx}
-                          className={`hover:bg-zinc-50/80 dark:hover:bg-zinc-900/40 transition-colors ${
-                            !card.isValid ? 'bg-rose-50/40 dark:bg-rose-950/20' : ''
-                          }`}
+                          className={`hover:bg-zinc-50/80 dark:hover:bg-zinc-900/40 transition-colors ${!card.isValid ? 'bg-rose-50/40 dark:bg-rose-950/20' : ''
+                            }`}
                         >
                           <td className="p-2.5 text-center">
                             <input
