@@ -54,6 +54,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Processo Seletivo Unificado do Ceará (UFC, UECE, ESP-CE)',
       uf: 'CE',
       cidade: 'Fortaleza',
+      logoSlug: 'surce',
       questoesCount: 1450,
       provasCount: 12
     },
@@ -63,6 +64,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Universidade Federal do Ceará - Maternidade Escola & HUWC',
       uf: 'CE',
       cidade: 'Fortaleza',
+      logoSlug: 'ufc',
       questoesCount: 820,
       provasCount: 8
     },
@@ -72,6 +74,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Instituto Doutor José Frota - Trauma e Emergência',
       uf: 'CE',
       cidade: 'Fortaleza',
+      logoSlug: 'ijf',
       questoesCount: 420,
       provasCount: 5
     }
@@ -165,6 +168,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Universitário Clementino Fraga Filho',
       uf: 'RJ',
       cidade: 'Rio de Janeiro',
+      logoSlug: 'ufrj',
       questoesCount: 1296,
       provasCount: 11
     },
@@ -312,6 +316,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital das Clínicas da UFPE',
       uf: 'PE',
       cidade: 'Recife',
+      logoSlug: 'ufpe',
       questoesCount: 580,
       provasCount: 6
     }
@@ -333,6 +338,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Universitário Professor Edgard Santos',
       uf: 'BA',
       cidade: 'Salvador',
+      logoSlug: 'ufba',
       questoesCount: 450,
       provasCount: 5
     }
@@ -388,6 +394,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Associação Catarinense de Medicina',
       uf: 'SC',
       cidade: 'Florianópolis',
+      logoSlug: 'acm',
       questoesCount: 950,
       provasCount: 9
     },
@@ -397,6 +404,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Universitário Polydoro Ernani de São Thiago',
       uf: 'SC',
       cidade: 'Florianópolis',
+      logoSlug: 'ufsc',
       questoesCount: 782,
       provasCount: 7
     }
@@ -466,6 +474,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Universitário Onofre Lopes',
       uf: 'RN',
       cidade: 'Natal',
+      logoSlug: 'ufrn',
       questoesCount: 620,
       provasCount: 6
     }
@@ -489,6 +498,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Universitário da UFMA',
       uf: 'MA',
       cidade: 'São Luís',
+      logoSlug: 'ufma',
       questoesCount: 510,
       provasCount: 5
     }
@@ -512,6 +522,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Universitário de Sergipe',
       uf: 'SE',
       cidade: 'Aracaju',
+      logoSlug: 'ufs',
       questoesCount: 380,
       provasCount: 4
     }
@@ -535,6 +546,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Universitário Maria Aparecida Pedrossian',
       uf: 'MS',
       cidade: 'Campo Grande',
+      logoSlug: 'ufms',
       questoesCount: 530,
       provasCount: 5
     }
@@ -546,6 +558,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Universidade Federal de Rondônia',
       uf: 'RO',
       cidade: 'Porto Velho',
+      logoSlug: 'unir',
       questoesCount: 320,
       provasCount: 3
     }
@@ -581,6 +594,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Universidade Federal do Amapá - HUA',
       uf: 'AP',
       cidade: 'Macapá',
+      logoSlug: 'unifap',
       questoesCount: 240,
       provasCount: 3
     }
@@ -592,6 +606,7 @@ export const STATE_INSTITUTIONS: Record<string, InstitutionInfo[]> = {
       nome: 'Hospital Geral de Roraima',
       uf: 'RR',
       cidade: 'Boa Vista',
+      logoSlug: 'ufrr',
       questoesCount: 220,
       provasCount: 3
     }
