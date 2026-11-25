@@ -10,16 +10,11 @@ import {
   Timer,
   Play,
   Pause,
-  RotateCcw,
-  Sparkles,
   Plus,
   Bookmark,
   CheckCircle2,
   Check,
   AlertCircle,
-  HelpCircle,
-  X,
-  FileCheck2,
   Highlighter,
   Strikethrough,
   Type,
@@ -53,16 +48,38 @@ import { useSubscription } from '@/context/SubscriptionContext';
 import { useStudentData } from '@/context/StudentDataContext';
 import { useStudyTimer } from '@/context/StudyTimerContext';
 import { deduceStudyTaxonomy } from '@/utils/taxonomyDeduction';
-import { getHomologatedBaseline } from '@/data/homologatedFacetsBaseline';
 import {
   fetchQuestionsFromSupabase,
   fetchQuestionIdsForListCriteria
 } from '@/services/questionService';
+import { fetchStudyQuestionsCount } from '@/services/studyQuestionClient';
 import {
   prefetchQuestionResolutions,
   registerSessionTicketsFromResult
 } from '@/services/resolutionCache';
 import { getSupabaseInstitutionName } from '@/utils/institutionResolver';
+
+function createEmptyFilters(): AdvancedFilterState {
+  return {
+    search: '',
+    modalidades: ['Acesso Direto'],
+    especialidades: [],
+    temas: [],
+    focos: [],
+    subfocos: [],
+    subSubfocos: [],
+    instituicoes: [],
+    anos: [],
+    tipoProva: [],
+    status: 'Todas',
+    dificuldade: 'Todas',
+    tipoQuestao: 'Todas',
+    ocultarAnuladasErro: false,
+    ocultarRevisadas: false,
+    ultimos5Anos: false,
+    aleatorizar: false
+  };
+}
 
 export const QuestoesView: React.FC = () => {
   const router = useRouter();
@@ -125,8 +142,13 @@ export const QuestoesView: React.FC = () => {
     }
   }, []);
 
-  // Inicializa filtros a partir de query params (se houver)
+  // Inicializa filtros a partir de query params (se houver), exceto quando aberto por examId
   const [advancedFilters, setAdvancedFilters] = useState<AdvancedFilterState>(() => {
+    const empty = createEmptyFilters();
+    if (searchParams.get('examId')) {
+      return empty;
+    }
+
     const search = searchParams.get('search') || searchParams.get('q') || '';
     const espParam = searchParams.get('especialidade');
     const temaParam = searchParams.get('tema');
@@ -137,7 +159,7 @@ export const QuestoesView: React.FC = () => {
     const anoParam = searchParams.get('ano');
     const modParam = searchParams.get('modalidade');
 
-    let initialModalidades: StudyModalidade[] = ['Acesso Direto'];
+    let initialModalidades: StudyModalidade[] = empty.modalidades;
     if (modParam) {
       if (modParam === 'r_plus' || modParam === 'R+') initialModalidades = ['R+'];
       else if (modParam === 'revalida' || modParam === 'Revalida') initialModalidades = ['Revalida'];
@@ -148,6 +170,7 @@ export const QuestoesView: React.FC = () => {
     const resolvedInst = instParam ? getSupabaseInstitutionName(instParam) : null;
 
     return {
+      ...empty,
       search,
       modalidades: initialModalidades,
       especialidades: espParam ? [espParam] : [],
@@ -156,15 +179,7 @@ export const QuestoesView: React.FC = () => {
       subfocos: subfocoParam ? [subfocoParam] : [],
       subSubfocos: subSubfocoParam ? [subSubfocoParam] : [],
       instituicoes: resolvedInst ? [resolvedInst] : (instParam ? [instParam] : []),
-      anos: anoParam ? [parseInt(anoParam, 10)] : [],
-      tipoProva: [],
-      status: 'Todas',
-      dificuldade: 'Todas',
-      tipoQuestao: 'Todas',
-      ocultarAnuladasErro: false,
-      ocultarRevisadas: false,
-      ultimos5Anos: false,
-      aleatorizar: false
+      anos: anoParam ? [parseInt(anoParam, 10)] : []
     };
   });
 
@@ -172,7 +187,7 @@ export const QuestoesView: React.FC = () => {
   const [sessionQuestionLimit, setSessionQuestionLimit] = useState<number | null>(null);
   const [questionsPage, setQuestionsPage] = useState<number>(1);
   const [supabaseQuestions, setSupabaseQuestions] = useState<Question[]>([]);
-  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(() => getHomologatedBaseline(advancedFilters.modalidades).total);
+  const [totalSupabaseCount, setTotalSupabaseCount] = useState<number | null>(null);
   const [questionLoadError, setQuestionLoadError] = useState(false);
   const [questionReload, setQuestionReload] = useState(0);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(true);
@@ -228,6 +243,7 @@ export const QuestoesView: React.FC = () => {
 
   // Sincroniza filtros caso haja mudança em query params (ex: navegação com subfoco ou sub-subfoco)
   useEffect(() => {
+    const examIdParam = searchParams.get('examId');
     const espParam = searchParams.get('especialidade');
     const temaParam = searchParams.get('tema');
     const focoParam = searchParams.get('foco');
@@ -249,7 +265,7 @@ export const QuestoesView: React.FC = () => {
 
     const resolvedInst = instParam ? getSupabaseInstitutionName(instParam) : null;
 
-    if (espParam || temaParam || focoParam || subfocoParam || subSubfocoParam || instParam || anoParam || modParam || searchParam) {
+    if (!examIdParam && (espParam || temaParam || focoParam || subfocoParam || subSubfocoParam || instParam || anoParam || modParam || searchParam)) {
       setAdvancedFilters((prev) => ({
         ...prev,
         modalidades: mappedModalidades || prev.modalidades,
@@ -291,15 +307,25 @@ export const QuestoesView: React.FC = () => {
     setQuestionTimer(0);
   }, [isSimulado, startQuestionSession]);
 
-  // Transições seguras de saída de resolução com salvamento automático
+  // Transições seguras de saída de resolução com salvamento automático e reset de filtros/URL
   const handleReturnToFilters = useCallback(() => {
     autoFinishQuestionSession();
+    const emptyFilters = createEmptyFilters();
+    setAdvancedFilters(emptyFilters);
+    advancedFiltersRef.current = emptyFilters;
+    setTotalSupabaseCount(null);
+    setSupabaseQuestions([]);
+    setActiveListId(null);
     setSessionQuestionIds(null);
     setSessionQuestionLimit(null);
+    lastPrefetchedPageRef.current = 1;
     setQuestionsPage(1);
-    setQuestionReload((current) => current + 1);
+    setCurrentQuestionIndex(0);
     setBancoMode('filtros');
-  }, [autoFinishQuestionSession]);
+    if (searchParams.toString().length > 0) {
+      router.replace('/questoes', { scroll: false });
+    }
+  }, [autoFinishQuestionSession, router, searchParams, setActiveListId]);
 
   const handleFinishToResults = useCallback(() => {
     autoFinishQuestionSession();
@@ -452,12 +478,18 @@ export const QuestoesView: React.FC = () => {
     error: null
   });
   const skipNextQuestionsFetchRef = useRef<boolean>(false);
+  const listsRef = useRef(lists);
+  useEffect(() => {
+    listsRef.current = lists;
+  }, [lists]);
 
   const filteredAnswerRevision = bancoMode === 'filtros'
     && (advancedFilters.status !== 'Todas' || advancedFilters.ocultarRevisadas) ? userAnswers : undefined;
 
-  // Busca questões do Supabase com base nos filtros
+  // Na tela de filtros busca apenas a contagem leve; busca enunciados completos apenas em resolução
   useEffect(() => {
+    if (bancoMode === 'resultado') return;
+
     const controller = new AbortController();
     let isCancelled = false;
 
@@ -469,12 +501,21 @@ export const QuestoesView: React.FC = () => {
       setIsLoadingSupabase(true);
       setQuestionLoadError(false);
       try {
+        const isExplicitQuestionSet = Boolean(activeListId || (sessionQuestionIds && sessionQuestionIds.length > 0));
+        if (bancoMode === 'filtros' && !isExplicitQuestionSet) {
+          const total = await fetchStudyQuestionsCount(advancedFilters, controller.signal);
+          if (!isCancelled) {
+            setTotalSupabaseCount(total);
+          }
+          return;
+        }
+
         let questionIds: string[] | undefined;
         let effectivePageSize = sessionQuestionLimit ? Math.min(200, sessionQuestionLimit) : 20;
 
         let activeListFilters: Partial<AdvancedFilterState> | undefined;
         if (activeListId) {
-          const currentList = lists.find((l) => l.id === activeListId);
+          const currentList = listsRef.current.find((l) => l.id === activeListId);
           if (currentList) {
             if (currentList.questionIds.length > 0) {
               questionIds = currentList.questionIds;
@@ -489,7 +530,6 @@ export const QuestoesView: React.FC = () => {
           effectivePageSize = Math.min(200, sessionQuestionIds.length);
         }
 
-        const isExplicitQuestionSet = Boolean(activeListId || (sessionQuestionIds && sessionQuestionIds.length > 0));
         const res = await fetchQuestionsFromSupabase(
           isExplicitQuestionSet && questionIds ? {} : { ...advancedFilters, ...(activeListFilters || {}) },
           activeListId ? 1 : questionsPage,
@@ -517,7 +557,7 @@ export const QuestoesView: React.FC = () => {
       } catch (err) {
         if (!isCancelled) {
           setQuestionLoadError(true);
-          if (questionsPage === 1) {
+          if (questionsPage === 1 && bancoMode === 'resolucao') {
             setSupabaseQuestions([]);
             setTotalSupabaseCount(0);
           }
@@ -546,9 +586,9 @@ export const QuestoesView: React.FC = () => {
       clearTimeout(timer);
     };
   }, [
+    bancoMode,
     advancedFilters,
     activeListId,
-    lists,
     questionsPage,
     sessionQuestionLimit,
     sessionQuestionIds,
@@ -567,7 +607,7 @@ export const QuestoesView: React.FC = () => {
     if (
       !isLoadingSupabase &&
       visibleQuestions.length > 0 &&
-      visibleQuestions.length < totalSupabaseCount &&
+      visibleQuestions.length < (totalSupabaseCount ?? 0) &&
       currentQuestionIndex >= visibleQuestions.length - 6 &&
       lastPrefetchedPageRef.current === questionsPage
     ) {
@@ -586,6 +626,7 @@ export const QuestoesView: React.FC = () => {
   // 3. Envia o sessionTicket assinado correspondente a cada questão.
   const isEligibleForBatchPrefetch = Boolean(user && (isAdmin || plan === 'pro' || plan === 'premium'));
   useEffect(() => {
+    if (bancoMode !== 'resolucao') return;
     if (isSimulado) return;
     if (!isEligibleForBatchPrefetch) return;
     if (supabaseQuestions.length > 0) {
@@ -594,7 +635,7 @@ export const QuestoesView: React.FC = () => {
         console.warn('[QuestoesView] Falha silenciosa no prefetch de resoluções:', err);
       });
     }
-  }, [supabaseQuestions, isSimulado, isEligibleForBatchPrefetch]);
+  }, [supabaseQuestions, isSimulado, isEligibleForBatchPrefetch, bancoMode]);
 
   const currentQuestion = visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)];
 
@@ -603,7 +644,7 @@ export const QuestoesView: React.FC = () => {
     questionId: string,
     selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E',
     isCorrect: boolean,
-    extraMetadata?: any
+    extraMetadata?: Partial<UserAnswerItem>
   ) => {
     if (!canSolveQuestion()) {
       openUpgradeModal(null, true);
@@ -634,26 +675,10 @@ export const QuestoesView: React.FC = () => {
   };
 
   const handleResetFilters = () => {
-    setAdvancedFilters({
-      search: '',
-      modalidades: ['Acesso Direto'],
-      especialidades: [],
-      temas: [],
-      focos: [],
-      subfocos: [],
-      subSubfocos: [],
-      instituicoes: [],
-      anos: [],
-      tipoProva: [],
-      status: 'Todas',
-      dificuldade: 'Todas',
-      tipoQuestao: 'Todas',
-      ocultarAnuladasErro: false,
-      ocultarRevisadas: false,
-      ultimos5Anos: false,
-      aleatorizar: false
-    });
-    setTotalSupabaseCount(getHomologatedBaseline(['Acesso Direto']).total);
+    const emptyFilters = createEmptyFilters();
+    setAdvancedFilters(emptyFilters);
+    advancedFiltersRef.current = emptyFilters;
+    setTotalSupabaseCount(null);
     setSessionQuestionIds(null);
     lastPrefetchedPageRef.current = 1;
     setQuestionsPage(1);
@@ -672,7 +697,10 @@ export const QuestoesView: React.FC = () => {
     if (advancedFilters.search.trim()) count++;
     if (
       advancedFilters.modalidades.length > 0 &&
-      !(advancedFilters.modalidades.length === 1 && advancedFilters.modalidades[0] === 'Residência Médica')
+      !(
+        advancedFilters.modalidades.length === 1 &&
+        (advancedFilters.modalidades[0] === 'Acesso Direto' || advancedFilters.modalidades[0] === 'Residência Médica')
+      )
     ) {
       count++;
     }
@@ -795,7 +823,7 @@ export const QuestoesView: React.FC = () => {
           if (prev + 1 < visibleQuestions.length) {
             setQuestionTimer(0);
             return prev + 1;
-          } else if (visibleQuestions.length < totalSupabaseCount) {
+          } else if (visibleQuestions.length < (totalSupabaseCount ?? 0)) {
             setQuestionsPage((p) => p + 1);
             setQuestionTimer(0);
             return prev + 1;
@@ -830,6 +858,7 @@ export const QuestoesView: React.FC = () => {
   ) => {
     const finalLimit = limit ? Math.min(200, Math.max(1, limit)) : 200;
     const activeFilters = explicitFilters || advancedFilters;
+    skipNextQuestionsFetchRef.current = true;
     setAdvancedFilters(activeFilters);
     advancedFiltersRef.current = activeFilters;
     setActiveListId(null);
@@ -880,6 +909,7 @@ export const QuestoesView: React.FC = () => {
       );
 
       if (!fullRes.questions || fullRes.questions.length === 0) {
+        skipNextQuestionsFetchRef.current = false;
         setSessionTransition((prev) => ({
           ...prev,
           stepMessage: 'Nenhuma questão encontrada.',
@@ -931,6 +961,7 @@ export const QuestoesView: React.FC = () => {
         isFadingOut: false
       }));
     } catch (err) {
+      skipNextQuestionsFetchRef.current = false;
       console.error('[QuestoesView] Erro na transição de questões:', err);
       setSessionTransition((prev) => ({
         ...prev,
@@ -992,6 +1023,7 @@ export const QuestoesView: React.FC = () => {
         <div className="flex-1 min-h-0 flex flex-col">
           <AdvancedQuestionFilters
             filters={advancedFilters}
+            userAnswers={userAnswers}
             onChange={(newFilters) => {
               setAdvancedFilters(newFilters);
               setSessionQuestionIds(null);
@@ -1559,12 +1591,12 @@ export const QuestoesView: React.FC = () => {
                     {/* Seta Próxima */}
                     <button
                       type="button"
-                      disabled={currentQuestionIndex >= visibleQuestions.length - 1 && visibleQuestions.length >= totalSupabaseCount}
+                      disabled={currentQuestionIndex >= visibleQuestions.length - 1 && visibleQuestions.length >= (totalSupabaseCount ?? 0)}
                       onClick={() => {
                         if (currentQuestionIndex + 1 < visibleQuestions.length) {
                           setCurrentQuestionIndex((prev) => prev + 1);
                           setQuestionTimer(0);
-                        } else if (visibleQuestions.length < totalSupabaseCount) {
+                        } else if (visibleQuestions.length < (totalSupabaseCount ?? 0)) {
                           setQuestionsPage((prev) => prev + 1);
                           setCurrentQuestionIndex((prev) => prev + 1);
                           setQuestionTimer(0);
@@ -1650,12 +1682,12 @@ export const QuestoesView: React.FC = () => {
                     isStrikethroughActive={isStrikethroughActive}
                     onToggleStrikethrough={() => setIsStrikethroughActive((prev) => !prev)}
                     onNextQuestion={
-                      currentQuestionIndex < visibleQuestions.length - 1 || visibleQuestions.length < totalSupabaseCount
+                      currentQuestionIndex < visibleQuestions.length - 1 || visibleQuestions.length < (totalSupabaseCount ?? 0)
                         ? () => {
                           if (currentQuestionIndex + 1 < visibleQuestions.length) {
                             setCurrentQuestionIndex((prev) => prev + 1);
                             setQuestionTimer(0);
-                          } else if (visibleQuestions.length < totalSupabaseCount) {
+                          } else if (visibleQuestions.length < (totalSupabaseCount ?? 0)) {
                             setQuestionsPage((prev) => prev + 1);
                             setCurrentQuestionIndex((prev) => prev + 1);
                             setQuestionTimer(0);
@@ -1772,7 +1804,7 @@ export const QuestoesView: React.FC = () => {
             setIsCreatingListLoading(false);
           }
         }}
-        availableQuestionsCount={totalSupabaseCount}
+        availableQuestionsCount={totalSupabaseCount ?? 0}
         isGenerating={isCreatingListLoading}
       />
 

@@ -19,7 +19,7 @@ import {
 import { Folder, QuestionList, AdvancedFilterState } from '@/types';
 import { AdvancedQuestionFilters } from './AdvancedQuestionFilters';
 import { useTheme } from '@/context/ThemeContext';
-import { fetchQuestionsFromSupabase } from '@/services/questionService';
+import { fetchStudyQuestionsCount } from '@/services/studyQuestionClient';
 
 interface ListManagerProps {
   folders: Folder[];
@@ -95,9 +95,9 @@ export const ListManager: React.FC<ListManagerProps> = ({
     setFilterCountError(false);
     const timeoutId = setTimeout(async () => {
       try {
-        const res = await fetchQuestionsFromSupabase(listFilters, 1, 1, undefined, controller.signal);
+        const total = await fetchStudyQuestionsCount(listFilters, controller.signal);
         if (!controller.signal.aborted) {
-          setDynamicFilteredCount(res.total);
+          setDynamicFilteredCount(total);
         }
       } catch {
         if (!controller.signal.aborted) {

@@ -2,7 +2,6 @@
 
 import React, { useState, useMemo, useDeferredValue, useEffect, useRef } from 'react';
 import {
-  StudyModalidade,
   AdvancedFilterState,
   QuestionStatus,
   QuestionDifficulty,
@@ -61,7 +60,6 @@ import {
   X,
   ChevronDown,
   ChevronRight,
-  ChevronUp,
   Check,
   RotateCcw,
   Layers,
@@ -74,7 +72,6 @@ import {
   Play,
   Ban,
   SlidersHorizontal,
-  Stethoscope,
   MapPin,
   PieChart,
   Scale,
@@ -86,11 +83,8 @@ import {
 } from 'lucide-react';
 import {
   clinicalHierarchy,
-  medicalInstitutionsDirectory,
   mockYears
 } from '@/data/mockQuestions';
-import { CANONICAL_BANCAS_DIRECTORY } from '@/data/canonicalBancasDirectory';
-import { getHomologatedCatalog, getHomologatedFacets } from '@/data/homologatedFacetsBaseline';
 import { fetchStudyCatalog } from '@/services/studyQuestionClient';
 import type { StudyCatalogCounts } from '@/services/studyQuestionCatalog';
 import { clinicalFields, clinicalPathKey, hasSelectedClinicalPath, isClinicalPathPrefix } from '@/utils/studyQuestionFilters';
@@ -111,7 +105,7 @@ interface AdvancedQuestionFiltersProps {
   onReset: () => void;
   loadError?: boolean;
   onRetry?: () => void;
-  totalFiltered: number;
+  totalFiltered: number | null;
   isLoading?: boolean;
   onCreateListFromFilter: () => void;
   onSelectDirectQuestion?: (questionId: string) => void;
@@ -179,14 +173,8 @@ const REVALIDA_INSTITUTIONS_CATALOG: UfInstitutionItem[] = [
   { sigla: 'FMRP-USP Revalida', uf: 'SP', nome: 'Faculdade de Medicina de Ribeirão Preto (USP) - Revalidação', count: '203 questões', key: 'FMRP-USP' },
 ];
 
-// Catálogo formatado dinâmico com todas as bancas e instituições do Supabase
-const UF_INSTITUTIONS_CATALOG: UfInstitutionItem[] = CANONICAL_BANCAS_DIRECTORY.map((b) => ({
-  sigla: b.sigla,
-  uf: b.uf,
-  nome: b.nome || b.sigla,
-  count: `${b.count.toLocaleString('pt-BR')} questões`,
-  key: b.key || b.sigla
-}));
+// Catálogo carregado sob demanda para manter o bundle inicial de /questoes leve
+let ufInstitutionsCache: UfInstitutionItem[] = [];
 
 const CANONICAL_BANCA_KEY_MAP: Record<string, string> = {
   'usp-sp': 'USP-SP',
@@ -212,7 +200,7 @@ export function getCanonicalBancaKey(raw: string): string {
   const norm = (raw || '').trim().toLowerCase();
   if (CANONICAL_BANCA_KEY_MAP[norm]) return CANONICAL_BANCA_KEY_MAP[norm];
   const item =
-    UF_INSTITUTIONS_CATALOG.find(
+    ufInstitutionsCache.find(
       (c) => c.sigla.toLowerCase() === norm || c.key.toLowerCase() === norm || c.nome.toLowerCase() === norm
     ) ||
     REVALIDA_INSTITUTIONS_CATALOG.find(
@@ -360,12 +348,34 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
   const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
 
-  const [catalog, setCatalog] = useState<StudyCatalogCounts>(() => getHomologatedCatalog(filters.modalidades));
-  const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult>(() => getHomologatedFacets(filters.modalidades));
+  const [catalog, setCatalog] = useState<StudyCatalogCounts | null>(null);
+  const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
+  const [ufInstitutionsCatalog, setUfInstitutionsCatalog] = useState<UfInstitutionItem[]>(() => ufInstitutionsCache);
   const [catalogError, setCatalogError] = useState(false);
   const [facetsError, setFacetsError] = useState(false);
   const [catalogRetry, setCatalogRetry] = useState(0);
   const [facetsRetry, setFacetsRetry] = useState(0);
+
+  useEffect(() => {
+    if (ufInstitutionsCache.length > 0) return;
+    let active = true;
+    import('@/data/canonicalBancasDirectory')
+      .then((mod) => {
+        const mapped: UfInstitutionItem[] = mod.CANONICAL_BANCAS_DIRECTORY.map((b) => ({
+          sigla: b.sigla,
+          uf: b.uf,
+          nome: b.nome || b.sigla,
+          count: `${b.count.toLocaleString('pt-BR')} questões`,
+          key: b.key || b.sigla
+        }));
+        ufInstitutionsCache = mapped;
+        if (active) setUfInstitutionsCatalog(mapped);
+      })
+      .catch(() => {});
+    return () => {
+      active = false;
+    };
+  }, []);
   const modalityKey = JSON.stringify(filters.modalidades);
   const facetKey = JSON.stringify({
     modalidades: filters.modalidades, instituicoes: filters.instituicoes,
@@ -673,10 +683,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   };
 
   const availableInstitutions = useMemo(() => {
-    if (!catalog) return UF_INSTITUTIONS_CATALOG;
+    if (!catalog) return ufInstitutionsCatalog;
     const representedAliases = new Set<string>();
     const institutions = new Map<string, UfInstitutionItem>();
-    for (const item of UF_INSTITUTIONS_CATALOG) {
+    for (const item of ufInstitutionsCatalog) {
       const key = getCanonicalBancaKey(item.key);
       const aliases = resolveBancaList([key]);
       if (!aliases.some((alias) => catalog.bancas[alias] > 0)) continue;
@@ -689,7 +699,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       }
     }
     return [...institutions.values()];
-  }, [catalog]);
+  }, [catalog, ufInstitutionsCatalog]);
 
   const filteredBancasSearch = useMemo(() => {
     const search = deferredInstSearch.toLowerCase().trim();
@@ -734,16 +744,24 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const displayedQuestionCount = totalFiltered;
 
   // --- TRANSIÇÃO FLUIDA E ELEGANTE DO CONTADOR (INTERPOLAÇÃO DINÂMICA) ---
-  const [animatedCount, setAnimatedCount] = useState<number>(displayedQuestionCount);
-  const currentCountRef = useRef<number>(displayedQuestionCount);
+  const [animatedCount, setAnimatedCount] = useState<number | null>(displayedQuestionCount);
+  const currentCountRef = useRef<number | null>(displayedQuestionCount);
   const [isCounting, setIsCounting] = useState<boolean>(false);
 
   useEffect(() => {
     const startVal = currentCountRef.current;
     const targetVal = displayedQuestionCount;
 
-    if (startVal === targetVal) {
+    if (targetVal === null) {
+      setAnimatedCount(null);
+      currentCountRef.current = null;
+      setIsCounting(false);
+      return;
+    }
+
+    if (startVal === null || startVal === targetVal) {
       setAnimatedCount(targetVal);
+      currentCountRef.current = targetVal;
       setIsCounting(false);
       return;
     }
@@ -780,7 +798,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     };
   }, [displayedQuestionCount]);
 
-  const isFilterActive = isCountLoading || isCounting;
+  const isFilterActive = isCountLoading || isCounting || displayedQuestionCount === null;
 
   // Filtros ativos para renderizar tags
   const activeTags = useMemo(() => {
@@ -791,7 +809,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       tags.push({
         id: 'mod-revalida',
         label: 'Revalida',
-        onRemove: () => onChange({ ...filters, modalidades: ['Residência Médica'], instituicoes: [] })
+        onRemove: () => onChange({ ...filters, modalidades: ['Acesso Direto'], instituicoes: [] })
       });
     }
 
@@ -976,6 +994,33 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       });
     }
 
+    // Ocultar revisadas
+    if (filters.ocultarRevisadas) {
+      tags.push({
+        id: 'revisadas',
+        label: 'Sem revisadas',
+        onRemove: () => onChange({ ...filters, ocultarRevisadas: false })
+      });
+    }
+
+    // Últimos 5 anos
+    if (filters.ultimos5Anos) {
+      tags.push({
+        id: 'ultimos5',
+        label: 'Últimos 5 anos',
+        onRemove: () => onChange({ ...filters, ultimos5Anos: false })
+      });
+    }
+
+    // Busca textual
+    if (filters.search?.trim()) {
+      tags.push({
+        id: 'search',
+        label: `Busca: "${filters.search.trim()}"`,
+        onRemove: () => onChange({ ...filters, search: '' })
+      });
+    }
+
     return tags;
   }, [filters]);
 
@@ -1098,7 +1143,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   : 'text-zinc-900 dark:text-white opacity-100'
                   }`}
               >
-                {loadError ? '—' : animatedCount.toLocaleString('pt-BR')}
+                {loadError ? '—' : animatedCount === null ? '…' : animatedCount.toLocaleString('pt-BR')}
               </span>
 
               {/* Shimmer ultra-fino dinâmico na base (zero layout shift) */}
@@ -2366,7 +2411,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               {/* Botão Primário Iniciar */}
               <Button
                 type="button"
-                disabled={isStartingQuestions || (!loadError && displayedQuestionCount === 0) || isLoading}
+                disabled={isStartingQuestions || (!loadError && displayedQuestionCount === 0)}
                 isLoading={isStartingQuestions}
                 onClick={async () => {
                   if (loadError) {
@@ -2404,7 +2449,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   <span className="truncate">Sem questões (0)</span>
                 ) : (
                   <span className="truncate">
-                    Iniciar ({Math.min(resolveCount, displayedQuestionCount)})
+                    Iniciar ({displayedQuestionCount === null ? resolveCount : Math.min(resolveCount, displayedQuestionCount)})
                   </span>
                 )}
               </Button>

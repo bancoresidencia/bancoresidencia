@@ -4,7 +4,7 @@ import type { StudyCatalogCounts } from './studyQuestionCatalog';
 
 interface StudyRequest {
   filters?: ExtendedFilterState;
-  action?: 'catalog' | 'facets' | 'ids';
+  action?: 'catalog' | 'facets' | 'ids' | 'count';
   page?: number;
   pageSize?: number;
   questionIds?: string[];
@@ -13,10 +13,10 @@ interface StudyRequest {
 }
 
 export async function requestStudyQuestions<Result>(request: StudyRequest, signal?: AbortSignal): Promise<Result> {
-  const isCount = request.action === 'catalog' || request.action === 'facets';
   const isPersonalized = Boolean(request.filters?.ocultarRevisadas
     || (request.filters?.status && request.filters.status !== 'Todas'));
-  const isPublicCount = request.action === 'catalog' || (request.action === 'facets' && !isPersonalized);
+  const isPublicCount = request.action === 'catalog'
+    || ((request.action === 'facets' || request.action === 'count') && !isPersonalized);
   const headers: Record<string, string> = { 'Content-Type': 'application/json' };
   if (!isPublicCount) {
     const { data: { session } } = await supabase.auth.getSession();
@@ -35,10 +35,10 @@ export async function requestStudyQuestions<Result>(request: StudyRequest, signa
     credentials: isPublicCount ? 'omit' : 'same-origin'
   });
   const response = await load().catch((error: unknown) => {
-    if (!isCount || signal?.aborted) throw error;
+    if (signal?.aborted) throw error;
     return null;
   });
-  const result = isCount && (!response || response.status >= 500) && !signal?.aborted
+  const result = (!response || response.status >= 500) && !signal?.aborted
     ? await load()
     : response;
   if (!result?.ok) throw new Error('Não foi possível carregar o catálogo de questões.');
@@ -47,4 +47,9 @@ export async function requestStudyQuestions<Result>(request: StudyRequest, signa
 
 export function fetchStudyCatalog(filters: ExtendedFilterState, signal?: AbortSignal) {
   return requestStudyQuestions<StudyCatalogCounts>({ filters: { modalidades: filters.modalidades }, action: 'catalog' }, signal);
+}
+
+export async function fetchStudyQuestionsCount(filters: ExtendedFilterState, signal?: AbortSignal): Promise<number> {
+  const res = await requestStudyQuestions<{ total: number }>({ filters, action: 'count' }, signal);
+  return Number(res.total ?? 0);
 }

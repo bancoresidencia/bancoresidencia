@@ -8,10 +8,10 @@ import {
   buildClinicalFilterClauses,
   sanitizePostgrestTerm,
   shuffleArray,
-  calculateHierarchyFallback,
   getClinicalSearchTerms,
   REVALIDA_POSTGREST_FILTER
 } from '@/services/questionService';
+import { calculateHierarchyFallback } from '@/services/questionFallback';
 import {
   sanitizePostgrestQuotedValue,
   validateQuestionId,
@@ -20,9 +20,7 @@ import {
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
 import {
-  getHomologatedBaseline,
-  getHomologatedCatalog,
-  getHomologatedFacets
+  getHomologatedBaseline
 } from '@/data/homologatedFacetsBaseline';
 import { generateSessionTicket } from '@/utils/securityTickets';
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
@@ -88,33 +86,68 @@ interface StudyQuestionRequest {
   includeGabarito?: boolean;
 }
 
+interface StudyCacheEntry {
+  data: unknown;
+  expiresAt: number;
+}
+
+const studyCatalogCache = new Map<string, StudyCacheEntry>();
+const studyCountCache = new Map<string, StudyCacheEntry>();
+const studyFacetsCache = new Map<string, StudyCacheEntry>();
+const studyInFlightRequests = new Map<string, Promise<unknown>>();
+
+const STUDY_CATALOG_CACHE_TTL_MS = 10 * 60 * 1000;
+const STUDY_FACETS_CACHE_TTL_MS = 5 * 60 * 1000;
+const STUDY_COUNT_CACHE_TTL_MS = 5 * 60 * 1000;
+
+function setBoundedCache(cache: Map<string, StudyCacheEntry>, key: string, data: unknown, ttlMs: number, maxEntries = 200) {
+  cache.set(key, { data, expiresAt: Date.now() + ttlMs });
+  if (cache.size > maxEntries) {
+    const oldestKey = cache.keys().next().value;
+    if (oldestKey) cache.delete(oldestKey);
+  }
+}
+
 async function queryStudyQuestions(req: NextRequest, body: StudyQuestionRequest) {
   const filters = body.filters && typeof body.filters === 'object' ? body.filters : {};
   if (filters.gabaritoStatus === 'sem_gabarito') {
     return NextResponse.json({ error: 'Filtro restrito à curadoria.' }, { status: 403 });
   }
   const action = body.action;
-  const mode = action === 'facets' || action === 'catalog' || action === 'ids' ? action : 'list';
+  const mode = action === 'facets' || action === 'catalog' || action === 'ids' || action === 'count' ? action : 'list';
 
-  const isDefaultModality = !filters.modalidades || filters.modalidades.length === 0 || (filters.modalidades.length === 1 && (filters.modalidades[0] === 'Acesso Direto' || filters.modalidades[0] === 'Residência Médica'));
-
-  if (mode === 'catalog' && isDefaultModality) {
-    return NextResponse.json(getHomologatedCatalog(filters.modalidades));
-  }
-
-  const isDefaultRightCard = !filters.instituicoes?.length && !filters.anos?.length && (!filters.dificuldade || filters.dificuldade === 'Todas') && (!filters.tipoQuestao || filters.tipoQuestao === 'Todas') && (!filters.status || filters.status === 'Todas') && !filters.search && !filters.ocultarAnuladasErro && !filters.ocultarRevisadas && !filters.bancaOrganizadora?.length && !filters.macrorregioes?.length && !filters.programaRplus?.length;
-
-  if (mode === 'facets' && isDefaultModality && isDefaultRightCard) {
-    return NextResponse.json({ facets: getHomologatedFacets(filters.modalidades) });
-  }
   const page = Math.max(1, Math.min(100000, Math.trunc(Number(body.page) || 1)));
   const size = Math.max(1, Math.min(mode === 'ids' ? 200 : 50, Math.trunc(Number(body.pageSize) || 20)));
   const authHeader = req.headers.get('authorization');
   const token = authHeader?.startsWith('Bearer ') ? authHeader.slice(7).trim() : undefined;
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const publicKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  const publicCount = mode === 'catalog' || (mode === 'facets' && !filters.ocultarRevisadas
-    && (!filters.status || filters.status === 'Todas'));
+  const isPersonalized = Boolean(filters.ocultarRevisadas || (filters.status && filters.status !== 'Todas'));
+  const publicCount = mode === 'catalog' || ((mode === 'facets' || mode === 'count') && !isPersonalized);
+
+  const normalized = normalizeStudyQuery(filters, body.questionIds, {
+    quota: body.quota,
+    excludeIds: body.excludeIds,
+    randomize: mode === 'ids' && filters.aleatorizar === true
+  });
+
+  const canUsePublicCache = publicCount && !normalized.ids?.length && !normalized.excluded_ids?.length;
+  const cacheKey = canUsePublicCache ? `${mode}:${JSON.stringify(normalized)}` : null;
+
+  if (cacheKey) {
+    const targetCache = mode === 'catalog' ? studyCatalogCache : mode === 'facets' ? studyFacetsCache : studyCountCache;
+    const cached = targetCache.get(cacheKey);
+    if (cached && cached.expiresAt > Date.now()) {
+      return NextResponse.json(cached.data);
+    }
+
+    const inFlight = studyInFlightRequests.get(cacheKey);
+    if (inFlight) {
+      const sharedPayload = await inFlight;
+      return NextResponse.json(sharedPayload);
+    }
+  }
+
   const supabase = publicCount && url && publicKey
     ? createPublicSupabaseClient(url, publicKey, {
       auth: { persistSession: false, autoRefreshToken: false }
@@ -125,28 +158,86 @@ async function queryStudyQuestions(req: NextRequest, body: StudyQuestionRequest)
       auth: { persistSession: false, autoRefreshToken: false }
     })
     : await createSupabaseServerClient();
-  const normalized = normalizeStudyQuery(filters, body.questionIds, {
-    quota: body.quota,
-    excludeIds: body.excludeIds,
-    randomize: mode === 'ids' && filters.aleatorizar === true
-  });
-  const [{ data, error }, student] = await Promise.all([
-    supabase.rpc('query_study_questions', { p_filters: normalized, p_mode: mode, p_page: page, p_size: size }),
-    mode === 'list' ? supabase.auth.getUser(token) : Promise.resolve(null)
-  ]);
-  if (error || !data) {
-    console.error('[/api/questions] Erro na consulta do catálogo:', error?.code);
+
+  const executeRpc = async (): Promise<{ payload?: unknown; errorCode?: string }> => {
+    const [{ data, error }, student] = await Promise.all([
+      supabase.rpc('query_study_questions', { p_filters: normalized, p_mode: mode, p_page: page, p_size: size }),
+      mode === 'list' ? supabase.auth.getUser(token) : Promise.resolve(null)
+    ]);
+
+    // Compatibilidade regressiva enquanto a migração p_mode = 'count' não estiver aplicada no Postgres remoto
+    if (!error && data === null && mode === 'count') {
+      const { data: fallbackData, error: fallbackError } = await supabase.rpc('query_study_questions', {
+        p_filters: normalized,
+        p_mode: 'list',
+        p_page: 1,
+        p_size: 1
+      });
+      if (fallbackError || !fallbackData) {
+        return { errorCode: fallbackError?.code };
+      }
+      const total = Number((fallbackData as { total?: number }).total ?? 0);
+      return { payload: { total } };
+    }
+
+    if (error || !data) {
+      return { errorCode: error?.code };
+    }
+
+    if (mode === 'facets') {
+      return { payload: { facets: data } };
+    }
+    if (mode === 'count') {
+      const total = Number((data as { total?: number }).total ?? 0);
+      return { payload: { total } };
+    }
+    if (mode !== 'list') {
+      return { payload: data };
+    }
+
+    const { total, rows } = data as { total: number; rows: QuestionDbRow[] };
+    const questions = rows.map((row) => mapRowToQuestion(row));
+    return {
+      payload: {
+        questions, total, page, pageSize: size, totalPages: Math.ceil(total / size),
+        sessionTicket: generateSessionTicket(student?.data.user?.id || 'anonymous', questions.map((question) => question.id))
+      }
+    };
+  };
+
+  if (cacheKey) {
+    const targetCache = mode === 'catalog' ? studyCatalogCache : mode === 'facets' ? studyFacetsCache : studyCountCache;
+    const ttlMs = mode === 'catalog'
+      ? STUDY_CATALOG_CACHE_TTL_MS
+      : mode === 'facets'
+        ? STUDY_FACETS_CACHE_TTL_MS
+        : STUDY_COUNT_CACHE_TTL_MS;
+
+    const pending = executeRpc().then((res) => {
+      if (res.payload === undefined) {
+        throw new Error(res.errorCode || 'RPC_FAILED');
+      }
+      setBoundedCache(targetCache, cacheKey, res.payload, ttlMs, mode === 'catalog' ? 50 : 250);
+      return res.payload;
+    });
+    studyInFlightRequests.set(cacheKey, pending);
+    try {
+      const payload = await pending;
+      return NextResponse.json(payload);
+    } catch (err) {
+      console.error('[/api/questions] Erro na consulta do catálogo:', err instanceof Error ? err.message : undefined);
+      return NextResponse.json({ error: 'Não foi possível carregar o catálogo de questões.' }, { status: 503 });
+    } finally {
+      studyInFlightRequests.delete(cacheKey);
+    }
+  }
+
+  const res = await executeRpc();
+  if (res.payload === undefined) {
+    console.error('[/api/questions] Erro na consulta do catálogo:', res.errorCode);
     return NextResponse.json({ error: 'Não foi possível carregar o catálogo de questões.' }, { status: 503 });
   }
-  if (mode === 'facets') return NextResponse.json({ facets: data });
-  if (mode !== 'list') return NextResponse.json(data);
-
-  const { total, rows } = data as { total: number; rows: QuestionDbRow[] };
-  const questions = rows.map((row) => mapRowToQuestion(row));
-  return NextResponse.json({
-    questions, total, page, pageSize: size, totalPages: Math.ceil(total / size),
-    sessionTicket: generateSessionTicket(student?.data.user?.id || 'anonymous', questions.map((question) => question.id))
-  });
+  return NextResponse.json(res.payload);
 }
 
 function mapRowToQuestion(row: QuestionDbRow, includeExplanations = false): Question {
