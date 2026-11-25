@@ -7,6 +7,7 @@ export * from './ProgressBar';
 export * from './Dialog';
 export * from './Tabs';
 export * from './Skeleton';
+export * from './DeferredSkeleton';
 export * from './Toggle';
 export * from './Tooltip';
 export * from './StreakTracker';

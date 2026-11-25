@@ -3,7 +3,8 @@
 import React, { Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { FlashcardsView } from '@/components/FlashcardsView';
-import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { DeferredSkeleton } from '@/components/ui';
+import { FlashcardsOrResumosSkeleton } from '@/components/layout/PlatformTabSkeletons';
 
 function ResumosContent() {
   const router = useRouter();
@@ -38,8 +39,10 @@ export default function ResumosPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-[50vh] flex items-center justify-center p-8">
-          <HippocampusLoading size="md" message="Carregando acervo de resumos..." fullScreen={false} />
+        <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
+          <DeferredSkeleton delayMs={150}>
+            <FlashcardsOrResumosSkeleton />
+          </DeferredSkeleton>
         </div>
       }
     >

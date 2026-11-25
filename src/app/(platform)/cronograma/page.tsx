@@ -26,7 +26,9 @@ import { FocusChecklistDrawer } from '@/components/schedule/FocusChecklistDrawer
 import { AutoScheduleGeneratorModal } from '@/components/schedule/AutoScheduleGeneratorModal';
 import { AddDayScheduleContentModal } from '@/components/schedule/AddDayScheduleContentModal';
 import { ScheduleAnalyticsHeader } from '@/components/schedule/ScheduleAnalyticsHeader';
-import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { DeferredSkeleton } from '@/components/ui';
+import { CronogramaSkeleton } from '@/components/layout/PlatformTabSkeletons';
+import { readLocalScheduleCache } from '@/utils/studyScheduleStorage';
 
 export default function CronogramaPage() {
   const router = useRouter();
@@ -46,8 +48,17 @@ export default function CronogramaPage() {
   const [isGeneratorOpen, setIsGeneratorOpen] = useState(false);
   const [quickAddDate, setQuickAddDate] = useState<string | null>(null);
 
-  // Carregamento de dados
+  // Carregamento de dados (hidrata cache local imediatamente após o tick inicial para não bloquear com skeleton sem necessidade)
   const loadData = useCallback(async () => {
+    await Promise.resolve();
+    const local = readLocalScheduleCache(user?.id);
+    if (local.schedule || local.items.length > 0) {
+      setSchedule(local.schedule);
+      setItems(local.items);
+      setFocusProgressMap(local.focusProgress);
+      setIsLoading(false);
+    }
+
     try {
       const data = await loadUserSchedule(user?.id);
       setSchedule(data.schedule);
@@ -195,8 +206,10 @@ export default function CronogramaPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-[70vh] flex items-center justify-center p-8">
-        <HippocampusLoading size="md" message="Carregando seu cronograma de estudos..." fullScreen={false} />
+      <div className="p-3 sm:p-5 lg:p-6 max-w-[1700px] mx-auto">
+        <DeferredSkeleton delayMs={150}>
+          <CronogramaSkeleton />
+        </DeferredSkeleton>
       </div>
     );
   }

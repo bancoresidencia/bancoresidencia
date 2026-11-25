@@ -1,16 +1,19 @@
 'use client';
 
 import React from 'react';
-import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { DeferredSkeleton } from '@/components/ui';
+import { GenericTabSkeleton } from '@/components/layout/PlatformTabSkeletons';
 
 /**
- * Transição de Rota Oficial da Plataforma Hippocampus
- * Exclusivo para transições e navegações internas entre abas (Dashboard, Questões, Erros, Flashcards, etc.)
+ * Transição entre abas da plataforma Hippocampus:
+ * exibe skeleton estrutural apenas quando a transição ultrapassa o limiar rápido (150ms).
  */
 export default function PlatformLoading() {
   return (
-    <div className="min-h-[60vh] flex items-center justify-center p-8 animate-in fade-in duration-150">
-      <HippocampusLoading size="md" message="Carregando..." fullScreen={false} />
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto min-w-0">
+      <DeferredSkeleton delayMs={150}>
+        <GenericTabSkeleton />
+      </DeferredSkeleton>
     </div>
   );
 }

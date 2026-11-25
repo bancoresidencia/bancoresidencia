@@ -23,7 +23,6 @@ import {
   ChevronDown,
   Layers,
   Flag,
-  Loader2,
   Eye,
   EyeOff,
   FileText,
@@ -36,6 +35,7 @@ import {
   StudyModalidade
 } from '@/types';
 import { AdvancedQuestionFilters } from '@/components/AdvancedQuestionFilters';
+import { HippocampusLoading } from '@/components/HippocampusLoading';
 import { QuestionSessionTransition } from '@/components/QuestionSessionTransition';
 import { QuestionCard, HighlighterColor, HIGHLIGHTER_COLORS } from '@/components/QuestionCard';
 import { SessionPerformanceView } from '@/components/SessionPerformanceView';
@@ -1498,7 +1498,7 @@ export const QuestoesView: React.FC = () => {
                           }}
                           title={f.title}
                           className={`px-3 py-1.5 rounded-full text-xs font-black transition-all cursor-pointer shrink-0 touch-manipulation ${isSelected
-                              ? 'bg-blue-600 text-white shadow-xs scale-105'
+                              ? 'bg-[var(--primary-color,#2563eb)] text-[var(--primary-contrast,#ffffff)] shadow-xs scale-105'
                               : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800'
                             }`}
                         >
@@ -1749,31 +1749,26 @@ export const QuestoesView: React.FC = () => {
                 )}
               </div>
             </>
+          ) : isLoadingSupabase ? (
+            <div className="min-h-[60vh] flex items-center justify-center p-8">
+              <HippocampusLoading size="md" message="Carregando caderno de questões..." fullScreen={false} />
+            </div>
           ) : (
             <div className="p-12 text-center bg-white dark:bg-zinc-900 rounded-3xl border border-slate-200 dark:border-zinc-800 space-y-3">
-              {isLoadingSupabase ? (
-                <>
-                  <Loader2 className="w-8 h-8 animate-spin mx-auto text-blue-600" />
-                  <p className="text-xs font-bold text-slate-500">Carregando questões do banco...</p>
-                </>
-              ) : (
-                <>
-                  <AlertCircle className="w-10 h-10 mx-auto text-amber-500" />
-                  <h3 className="font-heading font-black text-lg text-slate-900 dark:text-white">
-                    {questionLoadError ? 'Não foi possível carregar as questões' : 'Nenhuma questão encontrada'}
-                  </h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
-                    {questionLoadError ? 'Tente novamente para consultar o banco de questões.' : 'Não encontramos questões para a combinação de filtros selecionada. Tente ampliar as bancas ou especialidades.'}
-                  </p>
-                  <button
-                    type="button"
-                    onClick={questionLoadError ? () => setQuestionReload((current) => current + 1) : handleReturnToFilters}
-                    className="mt-3 px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-700 transition-colors cursor-pointer"
-                  >
-                    {questionLoadError ? 'Tentar novamente' : 'Ajustar Filtros'}
-                  </button>
-                </>
-              )}
+              <AlertCircle className="w-10 h-10 mx-auto text-amber-500" />
+              <h3 className="font-heading font-black text-lg text-slate-900 dark:text-white">
+                {questionLoadError ? 'Não foi possível carregar as questões' : 'Nenhuma questão encontrada'}
+              </h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 max-w-sm mx-auto">
+                {questionLoadError ? 'Tente novamente para consultar o banco de questões.' : 'Não encontramos questões para a combinação de filtros selecionada. Tente ampliar as bancas ou especialidades.'}
+              </p>
+              <button
+                type="button"
+                onClick={questionLoadError ? () => setQuestionReload((current) => current + 1) : handleReturnToFilters}
+                className="mt-3 px-4 py-2 rounded-xl text-xs font-bold bg-[var(--primary-color,#2563eb)] hover:bg-[var(--primary-hover,#1d4ed8)] text-[var(--primary-contrast,#ffffff)] transition-colors cursor-pointer"
+              >
+                {questionLoadError ? 'Tentar novamente' : 'Ajustar Filtros'}
+              </button>
             </div>
           )}
         </div>

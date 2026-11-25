@@ -4,7 +4,8 @@ import { useSearchParams } from 'next/navigation';
 import { PracticeExam } from '@/components/PracticeExam';
 import React, { Suspense } from 'react';
 import { QuestoesView } from '@/components/QuestoesView';
-import { HippocampusLoading } from '@/components/HippocampusLoading';
+import { DeferredSkeleton } from '@/components/ui';
+import { QuestoesFiltersSkeleton } from '@/components/layout/PlatformTabSkeletons';
 
 function QuestionActivity() {
   const params = useSearchParams()
@@ -18,8 +19,10 @@ export default function QuestoesPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-[60vh] flex items-center justify-center p-8">
-          <HippocampusLoading size="md" message="Carregando Banco de Questões..." fullScreen={false} />
+        <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
+          <DeferredSkeleton delayMs={150}>
+            <QuestoesFiltersSkeleton />
+          </DeferredSkeleton>
         </div>
       }
     >
