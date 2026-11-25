@@ -4,7 +4,8 @@ import {
   buildOriginalDeckTree,
   flattenOriginalDeckTree,
   resolveOrCreateDeckHierarchy,
-  matchesDynamicFilterCriteria
+  matchesDynamicFilterCriteria,
+  computeMovedDeckUpdates
 } from '../src/utils/ankiDeckTree';
 import { parseAnkiText } from '../src/lib/flashcards/ankiPackageParser';
 import { parseFlashcardsCsv, buildFlashcardPreviews } from '../src/utils/flashcardDistributionEngine';
@@ -194,6 +195,24 @@ assert.deepStrictEqual(
   resolvedSmartAfterNewCard.map((c) => c.id),
   ['fc-user-cm-1', 'fc-user-cm-99']
 );
+
+// 7. Sub-baralhos recolhidos por padrão quando defaultExpanded = false
+const collapsedByDefault = flattenOriginalDeckTree(tree, {}, false);
+assert.strictEqual(collapsedByDefault.length, 2, 'Collapsed by default shows only root nodes (Padrão + Internato)');
+
+// 8. Drag & Drop: mover baralho para dentro de outro e depois para fora (raiz)
+const movedIntoTrauma = computeMovedDeckUpdates(decks, 'Internato::Clínica::Cardiologia', 'Internato::Cirurgia::Trauma');
+assert.strictEqual(movedIntoTrauma.length, 1);
+assert.strictEqual(movedIntoTrauma[0].name, 'Internato::Cirurgia::Trauma::Cardiologia');
+
+// Mover pasta pai move todos os descendentes
+const movedParentToRoot = computeMovedDeckUpdates(decks, 'Internato::Clínica::Cardiologia', null);
+assert.strictEqual(movedParentToRoot.length, 1);
+assert.strictEqual(movedParentToRoot[0].name, 'Cardiologia');
+
+// Bloqueia ciclo (mover pai para dentro de si mesmo ou filho) e impede mover Baralho Padrão
+assert.deepStrictEqual(computeMovedDeckUpdates(decks, 'Internato', 'Internato::Cirurgia'), []);
+assert.deepStrictEqual(computeMovedDeckUpdates(decks, 'deck-padrao', 'Internato'), []);
 
 console.log('✅ ALL ANKI SUB-DECK TREE & SMART DECK TESTS PASSED!');
 

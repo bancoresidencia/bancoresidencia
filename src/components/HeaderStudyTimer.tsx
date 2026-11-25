@@ -28,7 +28,8 @@ export const HeaderStudyTimer: React.FC = () => {
     pauseTimer,
     resumeTimer,
     cancelTimer,
-    openSaveModal
+    openSaveModal,
+    sessionQuestionsCount
   } = useStudyTimer();
 
   // Estado do dropdown de busca de taxonomia
@@ -97,7 +98,7 @@ export const HeaderStudyTimer: React.FC = () => {
 
   return (
     <>
-      <div ref={containerRef} className="relative flex items-center shrink-0">
+      <div ref={containerRef} className="relative flex items-center shrink-0 min-w-0 max-w-full">
         {/* ── ESTADO 1: INATIVO (SELEÇÃO + BOTÃO INICIAR) ── */}
         {status === 'idle' && (
           <div className="flex items-center gap-1 sm:gap-1.5 bg-slate-100/80 dark:bg-zinc-900/90 border border-slate-200 dark:border-zinc-800 rounded-2xl p-1 shadow-2xs touch-manipulation">
@@ -135,21 +136,31 @@ export const HeaderStudyTimer: React.FC = () => {
 
         {/* ── ESTADO 2: EM EXECUÇÃO (RODANDO AO VIVO) ── */}
         {status === 'running' && (
-          <div className="flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-1 pr-1.5 shadow-2xs animate-in fade-in duration-150">
+          <div className="flex items-center gap-1 sm:gap-2 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-1 pr-1 sm:pr-1.5 shadow-2xs animate-in fade-in duration-150 max-w-full min-w-0">
             {/* Ponto Pulsante & Display hh:mm:ss */}
-            <div className="flex items-center gap-1.5 px-2 py-1">
-              <span className="relative flex h-2 w-2">
+            <div className="flex items-center gap-1 sm:gap-1.5 px-1.5 sm:px-2 py-1 shrink-0">
+              <span className="relative flex h-2 w-2 shrink-0">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              <span className="font-[var(--font-inter)] text-xs sm:text-sm font-black tabular-nums tracking-tight text-emerald-700 dark:text-emerald-300">
+              <span className="font-[var(--font-inter)] text-[11px] sm:text-sm font-black tabular-nums tracking-tight text-emerald-700 dark:text-emerald-300">
                 {formattedTime}
               </span>
             </div>
 
+            {/* Contador de Questões da Sessão (Resolução ao vivo) */}
+            {sessionQuestionsCount > 0 && (
+              <span
+                className="hidden md:inline-flex items-center px-1.5 py-0.5 rounded-md text-[10px] font-bold bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 tabular-nums shrink-0"
+                title={`${sessionQuestionsCount} questão(ões) respondida(s) nesta sessão`}
+              >
+                {sessionQuestionsCount}q
+              </span>
+            )}
+
             {/* Tema Ativo (Abreviado com Tooltip) */}
             <span
-              className="hidden sm:inline-block max-w-[120px] lg:max-w-[160px] truncate text-[11px] font-bold text-slate-700 dark:text-zinc-200 bg-white/70 dark:bg-zinc-800/80 px-2 py-0.5 rounded-lg border border-slate-200/60 dark:border-zinc-700/60"
+              className="hidden sm:inline-block max-w-[110px] lg:max-w-[160px] truncate text-[11px] font-bold text-slate-700 dark:text-zinc-200 bg-white/70 dark:bg-zinc-800/80 px-2 py-0.5 rounded-lg border border-slate-200/60 dark:border-zinc-700/60"
               title={selectedTaxonomy.rawLabel || currentTopicDisplay || 'Estudo em andamento'}
             >
               {currentTopicDisplay || 'Estudo'}
@@ -159,8 +170,9 @@ export const HeaderStudyTimer: React.FC = () => {
             <button
               type="button"
               onClick={pauseTimer}
-              className="px-2.5 py-1 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold flex items-center gap-1 transition-all cursor-pointer shadow-xs active:scale-95"
+              className="min-h-[32px] min-w-[32px] px-2 sm:px-2.5 py-1 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold flex items-center justify-center gap-1 transition-all cursor-pointer shadow-xs active:scale-95 touch-manipulation shrink-0"
               title="Pausar cronômetro"
+              aria-label="Pausar cronômetro"
             >
               <Pause className="w-3.5 h-3.5 fill-current" />
               <span className="hidden sm:inline">Pausar</span>
@@ -170,23 +182,24 @@ export const HeaderStudyTimer: React.FC = () => {
 
         {/* ── ESTADO 3: PAUSADO (TRÍADE: CONTINUAR, SALVAR, CANCELAR) ── */}
         {status === 'paused' && (
-          <div className="flex items-center gap-1.5 bg-amber-500/10 border border-amber-500/30 rounded-2xl p-1 shadow-2xs animate-in fade-in duration-150">
+          <div className="flex items-center gap-1 sm:gap-1.5 bg-amber-500/10 border border-amber-500/30 rounded-2xl p-1 shadow-2xs animate-in fade-in duration-150 max-w-full min-w-0">
             {/* Display Congelado com Ícone Pause */}
-            <div className="flex items-center gap-1 px-2 py-1">
+            <div className="flex items-center gap-1 px-1.5 sm:px-2 py-1 shrink-0">
               <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400">❙❙</span>
-              <span className="font-[var(--font-inter)] text-xs sm:text-sm font-black tabular-nums tracking-tight text-amber-700 dark:text-amber-300">
+              <span className="font-[var(--font-inter)] text-[11px] sm:text-sm font-black tabular-nums tracking-tight text-amber-700 dark:text-amber-300">
                 {formattedTime}
               </span>
             </div>
 
             {/* Tríade de Botões: Continuar, Salvar, Cancelar */}
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 shrink-0">
               {/* Continuar */}
               <button
                 type="button"
                 onClick={resumeTimer}
-                className="p-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all cursor-pointer shadow-xs"
+                className="min-h-[32px] min-w-[32px] p-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold flex items-center justify-center transition-all cursor-pointer shadow-xs touch-manipulation"
                 title="Continuar estudo de onde parou"
+                aria-label="Continuar cronômetro"
               >
                 <Play className="w-3.5 h-3.5 fill-current" />
               </button>
@@ -195,8 +208,9 @@ export const HeaderStudyTimer: React.FC = () => {
               <button
                 type="button"
                 onClick={openSaveModal}
-                className="px-2 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-1 transition-all cursor-pointer shadow-xs"
+                className="min-h-[32px] min-w-[32px] px-1.5 sm:px-2 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center justify-center gap-1 transition-all cursor-pointer shadow-xs touch-manipulation"
                 title="Salvar atividade na Agenda"
+                aria-label="Salvar sessão"
               >
                 <Check className="w-3.5 h-3.5 stroke-[3]" />
                 <span className="hidden sm:inline">Salvar</span>
@@ -206,8 +220,9 @@ export const HeaderStudyTimer: React.FC = () => {
               <button
                 type="button"
                 onClick={cancelTimer}
-                className="p-1.5 rounded-xl bg-slate-200 dark:bg-zinc-800 hover:bg-rose-500/20 hover:text-rose-600 text-slate-600 dark:text-zinc-400 text-xs font-bold transition-all cursor-pointer"
+                className="min-h-[32px] min-w-[32px] p-1.5 rounded-xl bg-slate-200 dark:bg-zinc-800 hover:bg-rose-500/20 hover:text-rose-600 text-slate-600 dark:text-zinc-400 text-xs font-bold flex items-center justify-center transition-all cursor-pointer touch-manipulation"
                 title="Descartar cronometragem e voltar a zero"
+                aria-label="Descartar cronometragem"
               >
                 <X className="w-3.5 h-3.5" />
               </button>

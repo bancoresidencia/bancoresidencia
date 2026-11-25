@@ -461,6 +461,7 @@ export const QuestoesView: React.FC = () => {
   // Modal de Criação de Caderno
   const [isCreateCadernoModalOpen, setIsCreateCadernoModalOpen] = useState(false);
   const [isCreatingListLoading, setIsCreatingListLoading] = useState(false);
+  const [listCreatedToast, setListCreatedToast] = useState<{ title: string; location: string } | null>(null);
 
   // Transição com Tela de Carregamento para Iniciar Sessão de Questões
   const [sessionTransition, setSessionTransition] = useState<{
@@ -1037,6 +1038,18 @@ export const QuestoesView: React.FC = () => {
             totalFiltered={totalSupabaseCount}
             isLoading={isLoadingSupabase}
             onCreateListFromFilter={() => setIsCreateCadernoModalOpen(true)}
+            folders={folders}
+            onCreateFolder={createFolder}
+            onCreateListAtLocation={async ({ title, folderId, totalQuestions, quotas, filters: activeFilters }) => {
+              const finalLimit = Math.min(200, Math.max(1, totalQuestions || 20));
+              const balancedIds = await fetchQuestionIdsForListCriteria(quotas || {}, activeFilters, finalLimit);
+              await createListWithFilters(title, folderId, finalLimit, activeFilters, balancedIds);
+              const folderLabel = folderId
+                ? folders.find((f) => f.id === folderId)?.name || 'Pasta selecionada'
+                : 'Raiz de Listas';
+              setListCreatedToast({ title, location: folderLabel });
+              setTimeout(() => setListCreatedToast(null), 4500);
+            }}
             onSelectDirectQuestion={(questionId) => {
               const idx = visibleQuestions.findIndex((q) => q.id === questionId);
               if (idx !== -1) {
@@ -1803,6 +1816,19 @@ export const QuestoesView: React.FC = () => {
         availableQuestionsCount={totalSupabaseCount ?? 0}
         isGenerating={isCreatingListLoading}
       />
+
+      {/* Toast de Confirmação de Lista Criada */}
+      {listCreatedToast && (
+        <div className="fixed top-20 right-4 z-50 flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-emerald-600 text-white text-xs font-bold shadow-xl animate-in fade-in slide-in-from-top-2 duration-200">
+          <CheckCircle2 className="w-4 h-4 shrink-0" />
+          <div className="min-w-0">
+            <p className="truncate">Lista &ldquo;{listCreatedToast.title}&rdquo; criada!</p>
+            <p className="text-[11px] font-medium text-emerald-100 truncate">
+              Local: {listCreatedToast.location}
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Modal de Atalhos do Teclado */}
       <KeyboardShortcutsModal

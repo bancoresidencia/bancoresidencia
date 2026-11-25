@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Layers, Check } from 'lucide-react';
 import { CustomFlashcardDeck } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
@@ -8,33 +8,44 @@ import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
 import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { parseDeckPathSegments } from '@/utils/ankiDeckTree';
 
 interface CreateDeckModalProps {
   isOpen: boolean;
   onClose: () => void;
   onDeckCreated: () => void;
   initialParentPath?: string | null;
+  existingDecks?: CustomFlashcardDeck[];
 }
 
 export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
   isOpen,
   onClose,
   onDeckCreated,
-  initialParentPath
+  initialParentPath,
+  existingDecks
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
 
   useOverlayDismiss({ isOpen, onClose });
 
-  const [deckName, setDeckName] = useState(
-    initialParentPath ? `${initialParentPath}::` : ''
-  );
+  const [parentPath, setParentPath] = useState(initialParentPath || '');
+  const [deckName, setDeckName] = useState('');
   const [deckDescription, setDeckDescription] = useState('');
+
+  const availableParents = useMemo(() => {
+    if (!isOpen) return [];
+    const list = existingDecks ?? flashcardsService.getCustomDecks(user?.id);
+    return list
+      .filter((d) => d.id !== 'deck-padrao' && d.name.trim().length > 0)
+      .sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'));
+  }, [isOpen, existingDecks, user?.id]);
 
   React.useEffect(() => {
     if (isOpen) {
-      setDeckName(initialParentPath ? `${initialParentPath}::` : '');
+      setParentPath(initialParentPath || '');
+      setDeckName('');
       setDeckDescription('');
     }
   }, [isOpen, initialParentPath]);
@@ -43,11 +54,19 @@ export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
 
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!deckName.trim()) return;
+    const trimmedName = deckName.trim();
+    if (!trimmedName) return;
+
+    const rawFull =
+      parentPath && !trimmedName.toLowerCase().startsWith(`${parentPath.toLowerCase()}::`)
+        ? `${parentPath}::${trimmedName}`
+        : trimmedName;
+    const cleanFullName = parseDeckPathSegments(rawFull).join('::');
+    if (!cleanFullName) return;
 
     const newDeck: CustomFlashcardDeck = {
       id: `deck-${Date.now()}`,
-      name: deckName.trim(),
+      name: cleanFullName,
       description: deckDescription.trim() || undefined,
       specialties: [],
       createdAt: new Date().toISOString()
@@ -55,6 +74,7 @@ export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
 
     flashcardsService.saveCustomDeck(newDeck, user?.id);
     onDeckCreated();
+    setParentPath('');
     setDeckName('');
     setDeckDescription('');
     onClose();
@@ -98,6 +118,24 @@ export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
         <form onSubmit={handleSave} className="space-y-3.5 text-xs">
           <div>
             <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+              Baralho Pai (Opcional — para criar sub-baralho)
+            </label>
+            <select
+              value={parentPath}
+              onChange={(e) => setParentPath(e.target.value)}
+              className="w-full px-3 py-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400 text-xs"
+            >
+              <option value="">Nenhum (Raiz principal)</option>
+              {availableParents.map((d) => (
+                <option key={d.id} value={d.name}>
+                  {d.name.replace(/::/g, ' › ')}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
               Nome do Baralho *
             </label>
             <input
@@ -106,11 +144,11 @@ export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
               autoFocus
               value={deckName}
               onChange={(e) => setDeckName(e.target.value)}
-              placeholder="Ex: Internato::Clínica Médica::Cardiologia"
+              placeholder={parentPath ? 'Ex: AP1' : 'Ex: Prova ou Prova::AP1'}
               className="w-full px-3.5 py-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 text-xs sm:text-sm"
             />
             <p className="text-[11px] text-zinc-500 mt-1">
-              Use <code className="font-mono bg-zinc-100 dark:bg-zinc-800 px-1 rounded">::</code> para criar sub-baralhos hierárquicos (estilo Anki).
+              Escolha um baralho pai acima ou use <code className="font-mono bg-zinc-100 dark:bg-zinc-800 px-1 rounded">::</code> no nome para criar sub-baralhos (estilo Anki).
             </p>
           </div>
 

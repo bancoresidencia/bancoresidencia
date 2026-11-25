@@ -8,15 +8,12 @@ import {
   FolderPlus,
   Table,
   Trash2,
-  BookOpen,
   FileSpreadsheet,
   RotateCw,
-  ChevronRight,
-  ChevronDown,
-  FolderOpen,
   Sparkles,
   CheckCircle2,
-  X
+  X,
+  GripVertical
 } from 'lucide-react';
 import {
   FlashcardItem,
@@ -29,7 +26,8 @@ import { flashcardsService } from '@/services/flashcardsService';
 import {
   buildOriginalDeckTree,
   flattenOriginalDeckTree,
-  matchesDynamicFilterCriteria
+  matchesDynamicFilterCriteria,
+  computeMovedDeckUpdates
 } from '@/utils/ankiDeckTree';
 import { CreateDeckModal } from './CreateDeckModal';
 import { OriginalCardsBrowser } from './OriginalCardsBrowser';
@@ -46,13 +44,15 @@ interface OriginalCardsSectionProps {
   onOpenCustomStudy?: (cards: FlashcardItem[], title: string) => void;
   onOpenAddCardForDeck: (deckId: string) => void;
   onCardsChange?: () => void;
+  openBrowserNonce?: number;
 }
 
 export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   onStartStudy,
   onOpenCustomStudy,
   onOpenAddCardForDeck,
-  onCardsChange
+  onCardsChange,
+  openBrowserNonce = 0
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
@@ -62,6 +62,14 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   const [expandedDeckPaths, setExpandedDeckPaths] = useState<Record<string, boolean>>({});
   const [isCsvModalOpen, setIsCsvModalOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'decks' | 'browser'>('decks');
+  const [draggingPath, setDraggingPath] = useState<string | null>(null);
+  const [dragOverTarget, setDragOverTarget] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (openBrowserNonce > 0) {
+      setViewMode('browser');
+    }
+  }, [openBrowserNonce]);
   const [saveFilterModal, setSaveFilterModal] = useState<{
     name: string;
     isDynamic: boolean;
@@ -125,14 +133,31 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
   }, [decks, filteredCards]);
 
   const visibleDeckNodes = useMemo(() => {
-    return flattenOriginalDeckTree(deckTree, expandedDeckPaths);
+    return flattenOriginalDeckTree(deckTree, expandedDeckPaths, false);
   }, [deckTree, expandedDeckPaths]);
 
   const toggleDeckExpand = (fullPath: string) => {
     setExpandedDeckPaths((prev) => ({
       ...prev,
-      [fullPath]: prev[fullPath] !== undefined ? !prev[fullPath] : false
+      [fullPath]: prev[fullPath] !== undefined ? !prev[fullPath] : true
     }));
+  };
+
+  const handleMoveDeck = (sourcePath: string, targetParentPath: string | null) => {
+    const updatedDecks = computeMovedDeckUpdates(decks, sourcePath, targetParentPath);
+    if (updatedDecks.length === 0) return;
+
+    flashcardsService.saveCustomDecksBatch(updatedDecks, user?.id);
+    if (targetParentPath) {
+      setExpandedDeckPaths((prev) => ({ ...prev, [targetParentPath]: true }));
+    }
+    refreshData();
+    setSectionToast(
+      targetParentPath
+        ? `Baralho movido para dentro de ${targetParentPath.replace(/::/g, ' › ')}.`
+        : 'Baralho movido para a raiz principal.'
+    );
+    setTimeout(() => setSectionToast(null), 3000);
   };
 
   // Manipulação de filtros
@@ -337,6 +362,32 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
 
       {/* Tabela de Baralhos Estilo Anki */}
       <div className="bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 rounded-2xl shadow-xs overflow-hidden">
+        {/* Zona para mover sub-baralho de volta para a raiz principal durante o arraste */}
+        {draggingPath && (
+          <div
+            onDragOver={(e) => {
+              e.preventDefault();
+              setDragOverTarget('__ROOT__');
+            }}
+            onDragLeave={() => {
+              if (dragOverTarget === '__ROOT__') setDragOverTarget(null);
+            }}
+            onDrop={(e) => {
+              e.preventDefault();
+              const source = e.dataTransfer.getData('text/plain') || draggingPath;
+              setDraggingPath(null);
+              setDragOverTarget(null);
+              if (source) handleMoveDeck(source, null);
+            }}
+            className={`px-4 py-2.5 text-center text-xs font-bold border-b transition-colors ${dragOverTarget === '__ROOT__'
+                ? 'bg-blue-500/15 border-blue-500/40 text-blue-700 dark:text-blue-300'
+                : 'bg-zinc-50 dark:bg-zinc-900/70 border-zinc-200 dark:border-zinc-800 text-zinc-500 dark:text-zinc-400'
+              }`}
+          >
+            Soltar aqui para mover para a raiz principal
+          </div>
+        )}
+
         {/* Cabeçalho Anki */}
         <div className="grid grid-cols-12 items-center px-3.5 sm:px-4 py-2.5 bg-zinc-50/90 dark:bg-zinc-900/80 border-b border-zinc-200 dark:border-zinc-800 text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 select-none">
           <div className="col-span-6 sm:col-span-8 truncate">Baralho Autoral</div>
@@ -360,16 +411,62 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
             const counts = node.counts;
             const isDefault = deck?.id === 'deck-padrao';
 
+            const isDraggingThis = draggingPath === node.fullPath;
+            const isDropTarget = dragOverTarget === node.fullPath && !isDefault;
+
             return (
               <div
                 key={node.fullPath}
-                className="grid grid-cols-12 items-center px-3.5 sm:px-4 py-3 hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50 transition-colors select-none group"
+                draggable={!isDefault}
+                onDragStart={(e) => {
+                  if (isDefault) return;
+                  e.dataTransfer.effectAllowed = 'move';
+                  e.dataTransfer.setData('text/plain', node.fullPath);
+                  setDraggingPath(node.fullPath);
+                }}
+                onDragEnd={() => {
+                  setDraggingPath(null);
+                  setDragOverTarget(null);
+                }}
+                onDragOver={(e) => {
+                  if (isDefault || !draggingPath || draggingPath === node.fullPath) return;
+                  if (node.fullPath.startsWith(`${draggingPath}::`)) return;
+                  e.preventDefault();
+                  setDragOverTarget(node.fullPath);
+                }}
+                onDragLeave={() => {
+                  if (dragOverTarget === node.fullPath) setDragOverTarget(null);
+                }}
+                onDrop={(e) => {
+                  e.preventDefault();
+                  const source = e.dataTransfer.getData('text/plain') || draggingPath;
+                  setDraggingPath(null);
+                  setDragOverTarget(null);
+                  if (!isDefault && source && source !== node.fullPath) {
+                    handleMoveDeck(source, node.fullPath);
+                  }
+                }}
+                className={`grid grid-cols-12 items-center px-4 py-2 transition-colors select-none group ${isDropTarget
+                    ? 'bg-blue-50/90 dark:bg-blue-950/40 ring-2 ring-inset ring-blue-500/60'
+                    : 'hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50'
+                  } ${isDraggingThis ? 'opacity-50' : ''}`}
               >
-                {/* Nome do Baralho com indentação hierárquica Pai::Filho */}
+                {/* Nome do Baralho com indentação hierárquica Pai::Filho (estilo básico Cartões do HR) */}
                 <div
-                  className="col-span-6 sm:col-span-8 flex items-center gap-1.5 sm:gap-2 min-w-0 pr-2"
-                  style={{ paddingLeft: `${node.depth * 18}px` }}
+                  className="col-span-6 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2"
+                  style={{ paddingLeft: `${node.depth * 20}px` }}
                 >
+                  {!isDefault ? (
+                    <span
+                      className="hidden sm:inline-flex text-zinc-300 dark:text-zinc-700 group-hover:text-zinc-500 dark:group-hover:text-zinc-400 cursor-grab active:cursor-grabbing shrink-0"
+                      title="Arrastar para mover baralho"
+                    >
+                      <GripVertical className="w-3.5 h-3.5" />
+                    </span>
+                  ) : (
+                    <span className="hidden sm:inline-flex w-3.5 shrink-0" />
+                  )}
+
                   {hasChildren ? (
                     <button
                       type="button"
@@ -377,20 +474,19 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                         e.stopPropagation();
                         toggleDeckExpand(node.fullPath);
                       }}
-                      className="p-1 rounded-md text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                      className="w-5 h-5 rounded flex items-center justify-center font-mono font-bold text-xs text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                       title={isExpanded ? 'Recolher sub-baralhos' : 'Expandir sub-baralhos'}
+                      aria-label={isExpanded ? 'Recolher sub-baralhos' : 'Expandir sub-baralhos'}
                     >
-                      {isExpanded ? (
-                        <ChevronDown className="w-3.5 h-3.5" />
-                      ) : (
-                        <ChevronRight className="w-3.5 h-3.5" />
-                      )}
+                      {isExpanded ? '−' : '+'}
                     </button>
                   ) : (
-                    <span className="w-5 shrink-0" />
+                    <span className="w-5 text-center text-zinc-300 dark:text-zinc-700 font-mono text-[10px] shrink-0">
+                      •
+                    </span>
                   )}
 
-                  <div
+                  <span
                     onClick={() => {
                       if (deckCards.length > 0) {
                         onStartStudy(deckCards, `${node.fullPath} (${deckCards.length} cards)`);
@@ -401,49 +497,22 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                         setIsCreateDeckOpen(true);
                       }
                     }}
-                    className="flex items-center gap-2.5 min-w-0 flex-1 cursor-pointer touch-manipulation"
+                    className={`truncate cursor-pointer hover:underline touch-manipulation ${node.depth === 0
+                        ? 'font-heading font-black text-xs sm:text-[13px] uppercase tracking-wide text-zinc-900 dark:text-zinc-100'
+                        : node.depth === 1
+                          ? 'font-heading font-bold text-xs uppercase tracking-tight text-zinc-800 dark:text-zinc-200'
+                          : 'text-xs text-zinc-700 dark:text-zinc-300'
+                      }`}
+                    title={
+                      deckCards.length > 0
+                        ? `Clique para estudar ${deckCards.length} cards de ${node.label}`
+                        : deck
+                          ? `Clique para adicionar cartão em ${node.label}`
+                          : node.label
+                    }
                   >
-                    <div
-                      className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${hasChildren || !deck
-                          ? 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400'
-                          : 'bg-blue-500/10 text-blue-600 dark:text-blue-400'
-                        }`}
-                    >
-                      {hasChildren || !deck ? (
-                        <FolderOpen className="w-4 h-4" />
-                      ) : (
-                        <BookOpen className="w-4 h-4" />
-                      )}
-                    </div>
-
-                    <div className="min-w-0">
-                      <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
-                        <span className="font-heading font-black text-xs sm:text-[13px] text-zinc-900 dark:text-zinc-100 truncate">
-                          {node.label}
-                        </span>
-                        {isDefault && (
-                          <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-zinc-100 dark:bg-zinc-800 text-zinc-500">
-                            Padrão
-                          </span>
-                        )}
-                        {hasChildren && (
-                          <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-indigo-100/70 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-300 font-bold">
-                            {node.children.length} sub
-                          </span>
-                        )}
-                        {activeFilters.length > 0 && (
-                          <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-blue-100/70 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 font-bold">
-                            {deckCards.length} filtrados
-                          </span>
-                        )}
-                      </div>
-                      {deck?.description && (
-                        <p className="text-[11px] text-zinc-400 dark:text-zinc-500 truncate">
-                          {deck.description}
-                        </p>
-                      )}
-                    </div>
-                  </div>
+                    {node.label}
+                  </span>
                 </div>
 
                 {/* Colunas Anki (agregadas quando há sub-baralhos) */}
@@ -538,6 +607,7 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
       <CreateDeckModal
         isOpen={isCreateDeckOpen}
         initialParentPath={createSubDeckParentPath}
+        existingDecks={decks}
         onClose={() => {
           setIsCreateDeckOpen(false);
           setCreateSubDeckParentPath(null);

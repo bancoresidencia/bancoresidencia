@@ -322,6 +322,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const [flashcardTab, setFlashcardTab] = useState<
     'br' | 'originais' | 'personalizados' | 'configuracoes'
   >('br');
+  const [openOriginalBrowserNonce, setOpenOriginalBrowserNonce] = useState(0);
   const [schedulerSettings, setSchedulerSettings] = useState<FlashcardSchedulerSettings>(() =>
     flashcardsService.getSchedulerSettings(user?.id)
   );
@@ -949,6 +950,12 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           }
         }}
         onOpenMaterial={(mat) => handleOpenMaterial(mat)}
+        onOpenPanel={() => {
+          setActiveSessionCards(null);
+          setActiveSessionMode('srs');
+          setFlashcardTab('originais');
+          setOpenOriginalBrowserNonce((n) => n + 1);
+        }}
         initialShuffled={activeSessionMode === 'srs' ? isShuffleEnabled : false}
         schedulerSettings={schedulerSettings}
         sessionMode={activeSessionMode}
@@ -1014,7 +1021,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           onContinueLastSession={lastFlashcardSession ? handleContinueLastSession : undefined}
         />
 
-        {/* Seletor de Modo: Cartões do BR vs. Cartões Originais vs. Personalizados */}
+        {/* Seletor de Modo: Cartões do HR vs. Cartões Originais vs. Personalizados */}
         <div className="flex items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 pb-2 pt-1 max-w-full overflow-x-auto scrollbar-none">
           <div className="flex items-center gap-1.5 min-w-max">
             <button
@@ -1025,7 +1032,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
                 : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
                 }`}
             >
-              <span>Cartões do BR</span>
+              <span>Cartões do HR</span>
               <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
                 {platformFlashcards.length}
               </span>
@@ -1114,6 +1121,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
               setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
               setHeatmapRefreshKey((k) => k + 1);
             }}
+            openBrowserNonce={openOriginalBrowserNonce}
           />
         )}
 

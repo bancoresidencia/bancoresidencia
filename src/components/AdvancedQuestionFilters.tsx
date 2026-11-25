@@ -7,7 +7,8 @@ import {
   QuestionDifficulty,
   QuestionType,
   UserAnswerItem,
-  SubfocoItem
+  SubfocoItem,
+  Folder
 } from '@/types';
 
 const getSubfocoName = (item: SubfocoItem): string =>
@@ -79,7 +80,8 @@ import {
   Minus,
   Shuffle,
   Clock,
-  Loader2
+  Loader2,
+  Folder as FolderIcon
 } from 'lucide-react';
 import {
   clinicalHierarchy,
@@ -97,6 +99,7 @@ import { useTheme } from '@/context/ThemeContext';
 import { Button, Badge } from '@/components/ui';
 import { SmartAIFilterModal } from './SmartAIFilterModal';
 import { BancaRaioXModal } from './BancaRaioXModal';
+import { FolderBranchSelectorPopover } from './FolderBranchSelectorPopover';
 
 interface AdvancedQuestionFiltersProps {
   filters: AdvancedFilterState;
@@ -108,6 +111,15 @@ interface AdvancedQuestionFiltersProps {
   totalFiltered: number | null;
   isLoading?: boolean;
   onCreateListFromFilter: () => void;
+  folders?: Folder[];
+  onCreateFolder?: (name: string, parentId: string | null) => Promise<void> | void;
+  onCreateListAtLocation?: (params: {
+    title: string;
+    folderId: string | null;
+    totalQuestions: number;
+    quotas: Record<string, number>;
+    filters: AdvancedFilterState;
+  }) => Promise<void>;
   onSelectDirectQuestion?: (questionId: string) => void;
   onStartSequentialSolving?: (limit?: number, quotasByItem?: Record<string, number>, currentFilters?: AdvancedFilterState) => void;
   isSidebarCollapsed?: boolean;
@@ -220,6 +232,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   totalFiltered,
   isLoading = false,
   onCreateListFromFilter,
+  folders = [],
+  onCreateFolder,
+  onCreateListAtLocation,
   onStartSequentialSolving,
   isSidebarCollapsed = true,
   embedded = false
@@ -236,8 +251,26 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [showRaioXModal, setShowRaioXModal] = useState<boolean>(false);
   const [isFilterTransitioning, setIsFilterTransitioning] = useState<boolean>(false);
   const [isStartingQuestions, setIsStartingQuestions] = useState<boolean>(false);
+  const [isCreateListMode, setIsCreateListMode] = useState<boolean>(false);
+  const [isLocationSelectorOpen, setIsLocationSelectorOpen] = useState<boolean>(false);
+  const [selectedListFolderId, setSelectedListFolderId] = useState<string | null>(null);
+  const [isCreatingListAtLocation, setIsCreatingListAtLocation] = useState<boolean>(false);
   const [mobileTab, setMobileTab] = useState<'conteudo' | 'bancas'>('conteudo');
   const isFirstRender = useRef(true);
+
+  const defaultListTitle = useMemo(() => {
+    if (filters.subfocos && filters.subfocos.length > 0) return `Lista: ${filters.subfocos[0]}`;
+    if (filters.focos && filters.focos.length > 0) return `Lista: ${filters.focos[0]}`;
+    if (filters.temas && filters.temas.length > 0) return `Lista: ${filters.temas[0]}`;
+    if (filters.especialidades && filters.especialidades.length > 0) return `Lista: ${filters.especialidades.join(', ')}`;
+    if (filters.instituicoes && filters.instituicoes.length > 0) return `Lista: ${filters.instituicoes.join(', ')}`;
+    return `Lista de Questões - ${new Date().toLocaleDateString('pt-BR')}`;
+  }, [filters]);
+
+  const selectedFolderName = useMemo(() => {
+    if (!selectedListFolderId) return null;
+    return folders.find((f) => f.id === selectedListFolderId)?.name || null;
+  }, [folders, selectedListFolderId]);
 
   useEffect(() => {
     // Ignora na montagem inicial para evitar flash
@@ -2395,18 +2428,45 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 </button>
               </div>
 
-              {/* Botão Salvar Lista */}
+              {/* Botão Criar Lista (toggle) + Selecionar local */}
               <Button
                 type="button"
-                variant="secondary"
+                variant={isCreateListMode ? 'primary' : 'secondary'}
                 size="xs"
-                onClick={onCreateListFromFilter}
+                onClick={() => {
+                  setIsCreateListMode((prev) => {
+                    const next = !prev;
+                    if (!next) setIsLocationSelectorOpen(false);
+                    return next;
+                  });
+                }}
                 className="shrink-0"
-                title="Salvar como Caderno / Lista"
+                style={
+                  isCreateListMode
+                    ? { backgroundColor: accentConfig.primaryHex, borderColor: accentConfig.primaryHex }
+                    : undefined
+                }
+                title="Ativar modo Criar Lista com os filtros atuais"
                 leftIcon={<ListPlus className="w-4 h-4" />}
               >
-                <span className="hidden sm:inline">Salvar</span>
+                <span className="hidden sm:inline">Criar Lista</span>
               </Button>
+
+              {isCreateListMode && (
+                <Button
+                  type="button"
+                  variant="secondary"
+                  size="xs"
+                  onClick={() => setIsLocationSelectorOpen(true)}
+                  className="shrink-0 border-[var(--primary-color)]/40"
+                  title="Selecionar pasta de destino para a lista"
+                  leftIcon={<FolderIcon className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />}
+                >
+                  <span className="max-w-[130px] truncate">
+                    {selectedFolderName || 'Selecionar local'}
+                  </span>
+                </Button>
+              )}
 
               {/* Botão Primário Iniciar */}
               <Button
@@ -2815,6 +2875,37 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         onClose={() => setShowRaioXModal(false)}
         onApplyFilters={handleApplyAIFilters}
         initialBanca={filters.instituicoes[0] || 'ENARE'}
+      />
+
+      {/* Seletor de Ramificação de Pasta para Criar Lista */}
+      <FolderBranchSelectorPopover
+        isOpen={isLocationSelectorOpen}
+        onClose={() => setIsLocationSelectorOpen(false)}
+        folders={folders}
+        selectedFolderId={selectedListFolderId}
+        onSelectFolder={(folderId) => setSelectedListFolderId(folderId)}
+        onCreateFolder={onCreateFolder}
+        defaultListTitle={defaultListTitle}
+        isSaving={isCreatingListAtLocation}
+        disabled={displayedQuestionCount === 0}
+        onConfirmCreateList={async (title, folderId) => {
+          if (!onCreateListAtLocation) return;
+          try {
+            setIsCreatingListAtLocation(true);
+            const effectiveQuotas = getEffectiveQuotas();
+            await onCreateListAtLocation({
+              title,
+              folderId,
+              totalQuestions: resolveCount,
+              quotas: effectiveQuotas,
+              filters
+            });
+            setIsLocationSelectorOpen(false);
+            setIsCreateListMode(false);
+          } finally {
+            setIsCreatingListAtLocation(false);
+          }
+        }}
       />
     </div>
   );

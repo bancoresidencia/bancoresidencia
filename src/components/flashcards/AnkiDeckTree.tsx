@@ -392,8 +392,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
             type="button"
             onClick={() => setStudyDepth('all')}
             className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'all'
-                ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
-                : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
+              ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
+              : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
               }`}
           >
             <Layers className="w-3.5 h-3.5 shrink-0" />
@@ -407,8 +407,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
             type="button"
             onClick={() => setStudyDepth('study')}
             className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'study'
-                ? 'bg-blue-600 text-white shadow-2xs'
-                : 'text-zinc-500 hover:text-blue-600 dark:hover:text-blue-400'
+              ? 'bg-blue-600 text-white shadow-2xs'
+              : 'text-zinc-500 hover:text-blue-600 dark:hover:text-blue-400'
               }`}
             title="Cartões detalhados com raciocínio clínico completo, fisiopatologia e critérios diagnósticos"
           >
@@ -416,8 +416,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
             <span><span className="hidden sm:inline">Cartões para </span>Estudo</span>
             <span
               className={`font-mono text-[10px] px-1 rounded ${studyDepth === 'study'
-                  ? 'bg-blue-700 text-white'
-                  : 'bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300'
+                ? 'bg-blue-700 text-white'
+                : 'bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300'
                 }`}
             >
               {studyCardsCount}
@@ -428,8 +428,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
             type="button"
             onClick={() => setStudyDepth('review')}
             className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'review'
-                ? 'bg-purple-600 text-white shadow-2xs'
-                : 'text-zinc-500 hover:text-purple-600 dark:hover:text-purple-400'
+              ? 'bg-purple-600 text-white shadow-2xs'
+              : 'text-zinc-500 hover:text-purple-600 dark:hover:text-purple-400'
               }`}
             title="Cartões diretos, clozes objetivos, condutas imediatas e pérolas de prova"
           >
@@ -437,8 +437,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
             <span><span className="hidden sm:inline">Cartões para </span>Revisão</span>
             <span
               className={`font-mono text-[10px] px-1 rounded ${studyDepth === 'review'
-                  ? 'bg-purple-700 text-white'
-                  : 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300'
+                ? 'bg-purple-700 text-white'
+                : 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300'
                 }`}
             >
               {reviewCardsCount}
@@ -497,8 +497,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
             type="button"
             onClick={() => setOnlyWithPending((prev) => !prev)}
             className={`px-2.5 py-1.5 rounded-xl text-[11px] font-bold transition-all cursor-pointer border shadow-2xs inline-flex items-center gap-1 ${onlyWithPending
-                ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-700 dark:text-emerald-300'
-                : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+              ? 'bg-emerald-500/15 border-emerald-500/40 text-emerald-700 dark:text-emerald-300'
+              : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
               }`}
             title="Mostrar apenas baralhos com revisões ou novos cards pendentes hoje"
           >
@@ -558,8 +558,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                 {/* LINHA NÍVEL 1: ESPECIALIDADE */}
                 <div
                   className={`grid grid-cols-12 items-center px-4 py-2 transition-colors group select-none ${isSpecSelected
-                      ? 'bg-blue-50/60 dark:bg-blue-950/20'
-                      : 'hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50'
+                    ? 'bg-blue-50/60 dark:bg-blue-950/20'
+                    : 'hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50'
                     }`}
                 >
                   {/* Nome da Especialidade com Toggle e Checkbox */}
@@ -588,17 +588,28 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                     <button
                       type="button"
                       onClick={() => toggleNodeExpand(specKey)}
-                      className="w-5 h-5 rounded flex items-center justify-center font-mono font-bold text-xs text-zinc-500 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                      className="w-5 h-5 rounded flex items-center justify-center font-mono font-bold text-xs text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                       title={isSpecExpanded ? 'Recolher temas' : 'Expandir temas'}
                     >
                       {isSpecExpanded ? '−' : '+'}
                     </button>
 
-                    {/* Título Clicável que Abre/Expande a Seleção Completa */}
+                    {/* Título Clicável que Reproduz os Cartões */}
                     <span
-                      onClick={() => toggleNodeExpand(specKey)}
-                      className="font-heading font-black text-xs sm:text-[13px] uppercase tracking-wide text-zinc-900 dark:text-zinc-100 truncate cursor-pointer hover:underline"
-                      title="Clique para expandir/recolher a especialidade"
+                      onClick={() => {
+                        if (specCards.length > 0) {
+                          handleStartNodeStudy(
+                            specCards,
+                            `${spec.especialidade} (${specCards.length} cards)`
+                          );
+                        }
+                      }}
+                      className={`font-heading font-black text-xs sm:text-[13px] uppercase tracking-wide text-zinc-900 dark:text-zinc-100 truncate ${specCards.length > 0 ? 'cursor-pointer hover:underline' : ''}`}
+                      title={
+                        specCards.length > 0
+                          ? `Clique para estudar ${specCards.length} cards de ${spec.especialidade}`
+                          : spec.especialidade
+                      }
                     >
                       {spec.especialidade}
                     </span>
@@ -689,8 +700,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                       <React.Fragment key={tem.tema}>
                         <div
                           className={`grid grid-cols-12 items-center px-4 py-1.5 transition-colors group select-none pl-7 sm:pl-9 ${isTemaSelected
-                              ? 'bg-blue-50/50 dark:bg-blue-950/15'
-                              : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
+                            ? 'bg-blue-50/50 dark:bg-blue-950/15'
+                            : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
                             }`}
                         >
                           {/* Nome do Tema com Indentação */}
@@ -717,16 +728,27 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                             <button
                               type="button"
                               onClick={() => toggleNodeExpand(temaKey)}
-                              className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[11px] text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                              className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[11px] text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                               title={isTemaExpanded ? 'Recolher focos' : 'Expandir focos'}
                             >
                               {tem.focos.length > 0 ? (isTemaExpanded ? '−' : '+') : '•'}
                             </button>
 
                             <span
-                              onClick={() => toggleNodeExpand(temaKey)}
-                              className="font-heading font-bold text-xs uppercase tracking-tight text-zinc-800 dark:text-zinc-200 truncate cursor-pointer hover:underline"
-                              title="Clique para expandir focos deste tema"
+                              onClick={() => {
+                                if (temaCards.length > 0) {
+                                  handleStartNodeStudy(
+                                    temaCards,
+                                    `${tem.tema} (${temaCards.length} cards)`
+                                  );
+                                }
+                              }}
+                              className={`font-heading font-bold text-xs uppercase tracking-tight text-zinc-800 dark:text-zinc-200 truncate ${temaCards.length > 0 ? 'cursor-pointer hover:underline' : ''}`}
+                              title={
+                                temaCards.length > 0
+                                  ? `Clique para estudar ${temaCards.length} cards de ${tem.tema}`
+                                  : tem.tema
+                              }
                             >
                               {tem.tema}
                             </span>
@@ -817,8 +839,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                               <React.Fragment key={foc.foco}>
                                 <div
                                   className={`grid grid-cols-12 items-center px-4 py-1.5 transition-colors group select-none pl-9 sm:pl-16 ${isFocoSelected
-                                      ? 'bg-blue-50/40 dark:bg-blue-950/10'
-                                      : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/30'
+                                    ? 'bg-blue-50/40 dark:bg-blue-950/10'
+                                    : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/30'
                                     }`}
                                 >
                                   <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
@@ -845,7 +867,7 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                       <button
                                         type="button"
                                         onClick={() => toggleNodeExpand(focoKey)}
-                                        className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[10px] text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                        className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[10px] text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                                         title={
                                           isFocoExpanded
                                             ? 'Recolher subfocos'
@@ -861,9 +883,20 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                     )}
 
                                     <span
-                                      onClick={() => hasSubfocos && toggleNodeExpand(focoKey)}
-                                      className="text-xs text-zinc-700 dark:text-zinc-300 truncate cursor-pointer hover:underline"
-                                      title={foc.foco}
+                                      onClick={() => {
+                                        if (focoCards.length > 0) {
+                                          handleStartNodeStudy(
+                                            focoCards,
+                                            `${foc.foco} (${focoCards.length} cards)`
+                                          );
+                                        }
+                                      }}
+                                      className={`text-xs text-zinc-700 dark:text-zinc-300 truncate ${focoCards.length > 0 ? 'cursor-pointer hover:underline' : ''}`}
+                                      title={
+                                        focoCards.length > 0
+                                          ? `Clique para estudar ${focoCards.length} cards de ${foc.foco}`
+                                          : foc.foco
+                                      }
                                     >
                                       {foc.foco}
                                     </span>
@@ -951,8 +984,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                       <React.Fragment key={subName}>
                                         <div
                                           className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-11 sm:pl-24 ${isSubSelected
-                                              ? 'bg-blue-50/30 dark:bg-blue-950/10'
-                                              : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
+                                            ? 'bg-blue-50/30 dark:bg-blue-950/10'
+                                            : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
                                             }`}
                                         >
                                           <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
@@ -982,7 +1015,7 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                                   e.stopPropagation();
                                                   toggleNodeExpand(subKey);
                                                 }}
-                                                className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[10px] text-zinc-500 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                                className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[10px] text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                                                 title={isSubExpanded ? 'Recolher sub-subfocos' : 'Expandir sub-subfocos'}
                                               >
                                                 {isSubExpanded ? '−' : '+'}
@@ -994,9 +1027,20 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                             )}
 
                                             <span
-                                              onClick={() => hasSubSubfocos && toggleNodeExpand(subKey)}
-                                              className={`text-[11px] text-zinc-600 dark:text-zinc-400 truncate italic ${hasSubSubfocos ? 'cursor-pointer hover:underline' : ''}`}
-                                              title={subName}
+                                              onClick={() => {
+                                                if (subCards.length > 0) {
+                                                  handleStartNodeStudy(
+                                                    subCards,
+                                                    `${subName} (${subCards.length} cards)`
+                                                  );
+                                                }
+                                              }}
+                                              className={`text-[11px] text-zinc-600 dark:text-zinc-400 truncate italic ${subCards.length > 0 ? 'cursor-pointer hover:underline' : ''}`}
+                                              title={
+                                                subCards.length > 0
+                                                  ? `Clique para estudar ${subCards.length} cards de ${subName}`
+                                                  : subName
+                                              }
                                             >
                                               {subName}
                                             </span>
@@ -1054,8 +1098,8 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                               <div
                                                 key={ss}
                                                 className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-13 sm:pl-32 ${isSSSelected
-                                                    ? 'bg-blue-50/40 dark:bg-blue-950/20'
-                                                    : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
+                                                  ? 'bg-blue-50/40 dark:bg-blue-950/20'
+                                                  : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/20'
                                                   }`}
                                               >
                                                 <div className="col-span-7 sm:col-span-8 flex items-center gap-2 min-w-0 pr-2">
@@ -1079,9 +1123,20 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                                   </button>
 
                                                   <span
-                                                    onClick={() => toggleNodeSelection(subSubKey)}
-                                                    className="text-[11px] text-zinc-600 dark:text-zinc-300 truncate cursor-pointer hover:underline"
-                                                    title={ss}
+                                                    onClick={() => {
+                                                      if (ssCards.length > 0) {
+                                                        handleStartNodeStudy(
+                                                          ssCards,
+                                                          `${formatSubSubfocoDisplay(ss)} (${ssCards.length} cards)`
+                                                        );
+                                                      }
+                                                    }}
+                                                    className={`text-[11px] text-zinc-600 dark:text-zinc-300 truncate ${ssCards.length > 0 ? 'cursor-pointer hover:underline' : ''}`}
+                                                    title={
+                                                      ssCards.length > 0
+                                                        ? `Clique para estudar ${ssCards.length} cards de ${formatSubSubfocoDisplay(ss)}`
+                                                        : ss
+                                                    }
                                                   >
                                                     {formatSubSubfocoDisplay(ss)}
                                                   </span>

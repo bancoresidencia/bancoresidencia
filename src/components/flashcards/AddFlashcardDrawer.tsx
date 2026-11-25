@@ -6,9 +6,13 @@ import {
   CheckCircle2,
   Check,
   Star,
-  Tag
+  Tag,
+  ChevronDown,
+  ChevronRight,
+  FolderPlus,
+  Layers
 } from 'lucide-react';
-import { FlashcardItem } from '@/types/flashcards';
+import { CustomFlashcardDeck, FlashcardItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
@@ -22,6 +26,7 @@ import {
   extractClipboardImageFile,
   uploadFlashcardImageFile
 } from './FlashcardImageField';
+import { parseDeckPathSegments, resolveOrCreateDeckHierarchy } from '@/utils/ankiDeckTree';
 
 interface AddFlashcardDrawerProps {
   isOpen: boolean;
@@ -59,12 +64,18 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
 
   useOverlayDismiss({ isOpen, onClose });
 
-  const userDecks = useMemo(() => {
-    return flashcardsService.getCustomDecks(user?.id);
-  }, [user?.id, isOpen]);
+  const [userDecks, setUserDecks] = useState<CustomFlashcardDeck[]>(() =>
+    flashcardsService.getCustomDecks(user?.id)
+  );
 
   const [selectedDeckId, setSelectedDeckId] = useState(initialDeckId);
-  const [newCardSpecialty, setNewCardSpecialty] = useState(initialSpecialty || 'Clínica Médica');
+  const [deckInput, setDeckInput] = useState('');
+  const [isDeckMenuOpen, setIsDeckMenuOpen] = useState(false);
+
+  const [showClassification, setShowClassification] = useState(
+    Boolean(initialSpecialty || initialTema || initialFoco)
+  );
+  const [newCardSpecialty, setNewCardSpecialty] = useState(initialSpecialty || '');
   const [newCardTema, setNewCardTema] = useState(initialTema || '');
   const [newCardFoco, setNewCardFoco] = useState(initialFoco || '');
   const [newCardSubfoco, setNewCardSubfoco] = useState('');
@@ -79,16 +90,25 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   const [savedDeckNotice, setSavedDeckNotice] = useState<string | null>(null);
 
   const frontTextareaRef = useRef<HTMLTextAreaElement>(null);
+  const deckBoxRef = useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     if (isOpen) {
-      const targetDeck = initialDeckId && userDecks.some((d) => d.id === initialDeckId)
-        ? initialDeckId
-        : 'deck-padrao';
-      setSelectedDeckId(targetDeck);
-      if (initialSpecialty) setNewCardSpecialty(initialSpecialty);
-      if (initialTema !== undefined) setNewCardTema(initialTema);
-      if (initialFoco !== undefined) setNewCardFoco(initialFoco);
+      const latestDecks = flashcardsService.getCustomDecks(user?.id);
+      setUserDecks(latestDecks);
+      const matched =
+        initialDeckId && latestDecks.find((d) => d.id === initialDeckId);
+      const targetDeck =
+        matched ||
+        latestDecks.find((d) => d.id === 'deck-padrao') ||
+        latestDecks[0];
+      setSelectedDeckId(targetDeck?.id || 'deck-padrao');
+      setDeckInput(targetDeck?.name || 'Baralho Padrão');
+      setIsDeckMenuOpen(false);
+      setShowClassification(Boolean(initialSpecialty || initialTema || initialFoco));
+      setNewCardSpecialty(initialSpecialty || '');
+      setNewCardTema(initialTema || '');
+      setNewCardFoco(initialFoco || '');
       if (initialFront !== undefined) setNewCardFront(initialFront);
       if (initialBack !== undefined) setNewCardBack(initialBack);
       if (initialComment !== undefined) setNewCardComment(initialComment);
@@ -96,10 +116,64 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       setNewCardBackImageUrl(initialImageUrl || null);
       setSavedDeckNotice(null);
     }
-  }, [isOpen, initialDeckId, userDecks, initialSpecialty, initialTema, initialFoco, initialFront, initialBack, initialComment, initialImageFrontUrl, initialImageUrl]);
+  }, [
+    isOpen,
+    user?.id,
+    initialDeckId,
+    initialSpecialty,
+    initialTema,
+    initialFoco,
+    initialFront,
+    initialBack,
+    initialComment,
+    initialImageFrontUrl,
+    initialImageUrl
+  ]);
 
-  // Temas da especialidade selecionada no Drawer
+  // Fecha dropdown de baralho ao clicar fora
+  React.useEffect(() => {
+    if (!isDeckMenuOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (deckBoxRef.current && !deckBoxRef.current.contains(e.target as Node)) {
+        setIsDeckMenuOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isDeckMenuOpen]);
+
+  const sortedDecks = useMemo(() => {
+    const defaultDeck = userDecks.find((d) => d.id === 'deck-padrao');
+    const others = userDecks
+      .filter((d) => d.id !== 'deck-padrao')
+      .sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'));
+    return defaultDeck ? [defaultDeck, ...others] : others;
+  }, [userDecks]);
+
+  const filteredDecks = useMemo(() => {
+    const q = deckInput.trim().toLowerCase();
+    const selectedDeck = userDecks.find((d) => d.id === selectedDeckId);
+    if (!q || (selectedDeck && selectedDeck.name.toLowerCase() === q)) {
+      return sortedDecks;
+    }
+    return sortedDecks.filter((d) => d.name.toLowerCase().includes(q));
+  }, [sortedDecks, deckInput, userDecks, selectedDeckId]);
+
+  const cleanTypedDeckPath = useMemo(() => {
+    return parseDeckPathSegments(deckInput).join('::');
+  }, [deckInput]);
+
+  const exactDeckMatch = useMemo(() => {
+    if (!cleanTypedDeckPath) return undefined;
+    const targetLower = cleanTypedDeckPath.toLowerCase();
+    return userDecks.find(
+      (d) => parseDeckPathSegments(d.name).join('::').toLowerCase() === targetLower
+    );
+  }, [cleanTypedDeckPath, userDecks]);
+
+  // Temas da especialidade selecionada (opcional)
   const drawerTemas = useMemo(() => {
+    if (!newCardSpecialty) return [];
     const hNode = clinicalHierarchy.find(
       (h) =>
         h.especialidade.toLowerCase() === newCardSpecialty.toLowerCase() ||
@@ -109,40 +183,22 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
     return hNode?.temas || [];
   }, [newCardSpecialty]);
 
-  // Focos do tema selecionado no Drawer
+  // Focos do tema selecionado (opcional)
   const drawerFocos = useMemo(() => {
+    if (!newCardTema) return [];
     const temaObj = drawerTemas.find((t) => t.tema === newCardTema);
     return temaObj?.focos.map((f) => f.foco) || [];
   }, [drawerTemas, newCardTema]);
 
-  // Sincroniza Tema e Foco iniciais com o primeiro item válido da especialidade
-  // para evitar gravação silenciosa como "Geral" quando o usuário não altera o select.
-  React.useEffect(() => {
-    if (!isOpen || drawerTemas.length === 0) return;
-    const temaExists = drawerTemas.some((t) => t.tema === newCardTema);
-    if (!newCardTema || !temaExists) {
-      const firstTema = drawerTemas[0];
-      setNewCardTema(firstTema.tema);
-      setNewCardFoco(firstTema.focos[0]?.foco || '');
-      setNewCardSubfoco('');
-      setNewCardSubSubfoco('');
-      return;
-    }
-    if (drawerFocos.length > 0 && (!newCardFoco || !drawerFocos.includes(newCardFoco))) {
-      setNewCardFoco(drawerFocos[0]);
-      setNewCardSubfoco('');
-      setNewCardSubSubfoco('');
-    }
-  }, [isOpen, drawerTemas, drawerFocos, newCardTema, newCardFoco]);
-
-  // Subfocos do foco selecionado no Drawer
+  // Subfocos do foco selecionado (opcional)
   const drawerSubfocos = useMemo(() => {
+    if (!newCardFoco) return [];
     const temaObj = drawerTemas.find((t) => t.tema === newCardTema);
     const focoObj = temaObj?.focos.find((f) => f.foco === newCardFoco);
     return focoObj?.subfocos || [];
   }, [drawerTemas, newCardTema, newCardFoco]);
 
-  // Sub-subfocos do subfoco selecionado no Drawer
+  // Sub-subfocos do subfoco selecionado (opcional)
   const drawerSubSubfocos = useMemo(() => {
     if (!newCardSubfoco) return [];
     const subObj = drawerSubfocos.find(
@@ -151,6 +207,35 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
     if (!subObj || typeof subObj === 'string') return [];
     return subObj.sub_subfocos || [];
   }, [drawerSubfocos, newCardSubfoco]);
+
+  const ensureDeckFromInput = (): { id: string; name: string } => {
+    if (exactDeckMatch) {
+      setSelectedDeckId(exactDeckMatch.id);
+      setDeckInput(exactDeckMatch.name);
+      return { id: exactDeckMatch.id, name: exactDeckMatch.name };
+    }
+
+    if (cleanTypedDeckPath) {
+      const { deckIdByPath, createdDecks } = resolveOrCreateDeckHierarchy(
+        [cleanTypedDeckPath],
+        userDecks
+      );
+      if (createdDecks.length > 0) {
+        const updatedList = flashcardsService.saveCustomDecksBatch(createdDecks, user?.id);
+        setUserDecks(updatedList);
+      }
+      const resolvedId = deckIdByPath.get(cleanTypedDeckPath) || 'deck-padrao';
+      setSelectedDeckId(resolvedId);
+      setDeckInput(cleanTypedDeckPath);
+      return { id: resolvedId, name: cleanTypedDeckPath };
+    }
+
+    const fallbackDeck = userDecks.find((d) => d.id === selectedDeckId);
+    return {
+      id: fallbackDeck?.id || 'deck-padrao',
+      name: fallbackDeck?.name || 'Baralho Padrão'
+    };
+  };
 
   // Inserir Oclusão Cloze
   const handleInsertCloze = () => {
@@ -192,11 +277,7 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       .map((t) => t.trim().toLowerCase())
       .filter(Boolean);
 
-    const finalTema = newCardTema.trim() || drawerTemas[0]?.tema || 'Geral';
-    const finalFoco = newCardFoco.trim() || drawerFocos[0] || finalTema;
-    const targetDeck = userDecks.find((d) => d.id === selectedDeckId);
-    const resolvedDeckId = targetDeck ? targetDeck.id : 'deck-padrao';
-    const resolvedDeckName = targetDeck?.name || 'Baralho Padrão';
+    const resolvedDeck = ensureDeckFromInput();
 
     const newCard: FlashcardItem = {
       id: editingCardId || '',
@@ -205,21 +286,21 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       comment: newCardComment.trim() || undefined,
       imageFrontUrl: newCardFrontImageUrl || null,
       imageUrl: newCardBackImageUrl || null,
-      specialty: newCardSpecialty,
-      theme: finalTema,
-      focus: finalFoco,
+      specialty: newCardSpecialty.trim() || 'Geral',
+      theme: newCardTema.trim() || '',
+      focus: newCardFoco.trim() || '',
       subfocus: newCardSubfoco.trim() || undefined,
       sub_subfocus: newCardSubSubfoco.trim() || undefined,
       subSubfocus: newCardSubSubfoco.trim() || undefined,
-      deckId: resolvedDeckId,
+      deckId: resolvedDeck.id,
       priority: newCardPriority,
       tags: tagsArray.length > 0 ? tagsArray : undefined
     };
 
     const savedCard = flashcardsService.saveNewFlashcard(newCard, user?.id);
-    onCardSaved(savedCard, resolvedDeckName);
+    onCardSaved(savedCard, resolvedDeck.name);
 
-    setSavedDeckNotice(resolvedDeckName);
+    setSavedDeckNotice(resolvedDeck.name);
     setTimeout(() => setSavedDeckNotice(null), 3500);
 
     if (keepOpen) {
@@ -229,8 +310,6 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       setNewCardFrontImageUrl(null);
       setNewCardBackImageUrl(null);
       setNewCardTags('');
-      setNewCardSubfoco('');
-      setNewCardSubSubfoco('');
       if (frontTextareaRef.current) frontTextareaRef.current.focus();
     } else {
       onClose();
@@ -240,37 +319,35 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       setNewCardFrontImageUrl(null);
       setNewCardBackImageUrl(null);
       setNewCardTags('');
-      setNewCardSubfoco('');
-      setNewCardSubSubfoco('');
     }
   };
 
   if (!isOpen) return null;
 
   return (
-    <div 
-      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4"
+    <div
+      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4"
       onClick={onClose}
     >
-      <div 
-        className="w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-6 shadow-2xl space-y-5 animate-in fade-in-50 zoom-in-95 duration-200 custom-scrollbar"
+      <div
+        className="w-full max-w-xl max-h-[92vh] overflow-y-auto rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-5 sm:p-6 shadow-2xl space-y-4 animate-in fade-in-50 zoom-in-95 duration-200 custom-scrollbar"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Topo do Drawer Central */}
         <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
           <div className="flex items-center gap-2.5">
             <div
-              className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shrink-0 shadow-xs"
+              className="w-9 h-9 rounded-2xl flex items-center justify-center text-white shrink-0 shadow-xs"
               style={{ backgroundColor: accentConfig.primaryHex }}
             >
-              <Brain className="w-5 h-5" />
+              <Brain className="w-4.5 h-4.5" />
             </div>
             <div>
-              <h3 className="font-heading font-black text-base sm:text-lg text-zinc-900 dark:text-zinc-100">
-                {editingCardId ? 'Personalizar Flashcard' : 'Adicionar Flashcard'}
+              <h3 className="font-heading font-black text-base text-zinc-900 dark:text-zinc-100">
+                {editingCardId ? 'Editar Flashcard' : 'Novo Cartão'}
               </h3>
-              <p className="text-xs text-zinc-500">
-                Salvo na sua aba <strong className="text-zinc-700 dark:text-zinc-300">Cartões Originais</strong> com suporte a oclusão Cloze.
+              <p className="text-[11px] text-zinc-500">
+                Escolha ou digite o baralho de destino e crie seu cartão com suporte a Cloze.
               </p>
             </div>
           </div>
@@ -283,170 +360,118 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
           />
         </div>
 
-        {/* Toast de Sucesso Interno */}
+        {/* Toast Interno */}
         {savedDeckNotice && (
-          <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-bold flex items-center gap-2 animate-in fade-in-50 duration-200">
+          <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-bold flex items-center gap-2 animate-in fade-in-50 duration-200">
             <CheckCircle2 className="w-4 h-4 shrink-0" />
-            <span>Salvo em Cartões Originais → {savedDeckNotice}!</span>
+            <span>Cartão salvo em {savedDeckNotice.replace(/::/g, ' › ')}!</span>
           </div>
         )}
 
-        {/* Campos do Formulário do Flashcard */}
         <div className="space-y-4 text-xs">
-          {/* Baralho e Especialidade */}
-          <div className="grid sm:grid-cols-2 gap-3">
-            <div>
-              <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                Baralho de Destino
+          {/* Baralho de Destino (Selecionar ou Criar Baralho / Sub-baralho) */}
+          <div ref={deckBoxRef} className="relative">
+            <div className="flex items-center justify-between mb-1">
+              <label className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
+                <Layers className="w-3.5 h-3.5 text-zinc-400" />
+                <span>Baralho de Destino</span>
               </label>
-              <select
-                value={selectedDeckId}
-                onChange={(e) => setSelectedDeckId(e.target.value)}
-                className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
-              >
-                {userDecks.map((d) => (
-                  <option key={d.id} value={d.id}>
-                    {d.name} {d.isDefault || d.id === 'deck-padrao' ? '(Padrão)' : ''}
-                  </option>
-                ))}
-              </select>
+              <span className="text-[10px] text-zinc-400">
+                Use <code className="font-mono bg-zinc-100 dark:bg-zinc-800 px-1 rounded">::</code> para sub-baralho
+              </span>
             </div>
 
-            <div>
-              <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                Especialidade *
-              </label>
-              <select
-                value={newCardSpecialty}
+            <div className="relative">
+              <input
+                type="text"
+                value={deckInput}
+                onFocus={() => setIsDeckMenuOpen(true)}
                 onChange={(e) => {
-                  const spec = e.target.value;
-                  setNewCardSpecialty(spec);
-                  const hNode = clinicalHierarchy.find(
-                    (h) =>
-                      h.especialidade.toLowerCase() === spec.toLowerCase() ||
-                      (spec === 'Cirurgia Geral' && h.especialidade === 'Cirurgia') ||
-                      (spec === 'Cirurgia' && h.especialidade === 'Cirurgia')
-                  );
-                  const firstTema = hNode?.temas[0]?.tema || '';
-                  setNewCardTema(firstTema);
-                  setNewCardFoco(hNode?.temas[0]?.focos[0]?.foco || '');
+                  setDeckInput(e.target.value);
+                  setIsDeckMenuOpen(true);
                 }}
-                className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                placeholder="Ex: Prova ou Prova::AP1"
+                className="w-full pl-3.5 pr-9 py-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all text-xs sm:text-sm"
+              />
+              <button
+                type="button"
+                onClick={() => setIsDeckMenuOpen((prev) => !prev)}
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 p-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 cursor-pointer"
+                aria-label="Listar baralhos"
               >
-                {SPECIALTY_CONFIGS.map((sp) => (
-                  <option key={sp.id} value={sp.name}>
-                    {sp.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          {/* Tema e Foco */}
-          <div className="grid sm:grid-cols-2 gap-3">
-            <div>
-              <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                Tema *
-              </label>
-              <select
-                value={newCardTema}
-                onChange={(e) => {
-                  const tem = e.target.value;
-                  setNewCardTema(tem);
-                  const temaObj = drawerTemas.find((t) => t.tema === tem);
-                  setNewCardFoco(temaObj?.focos[0]?.foco || '');
-                }}
-                className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
-              >
-                {drawerTemas.map((tem) => (
-                  <option key={tem.tema} value={tem.tema}>
-                    {tem.tema}
-                  </option>
-                ))}
-              </select>
+                <ChevronDown className={`w-4 h-4 transition-transform ${isDeckMenuOpen ? 'rotate-180' : ''}`} />
+              </button>
             </div>
 
-            <div>
-              <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                Foco Clínico
-              </label>
-              <select
-                value={newCardFoco}
-                onChange={(e) => {
-                  setNewCardFoco(e.target.value);
-                  setNewCardSubfoco('');
-                  setNewCardSubSubfoco('');
-                }}
-                className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
-              >
-                {drawerFocos.map((foc) => (
-                  <option key={foc} value={foc}>
-                    {foc}
-                  </option>
-                ))}
-              </select>
-            </div>
+            {isDeckMenuOpen && (
+              <div className="absolute z-20 left-0 right-0 mt-1.5 max-h-52 overflow-y-auto rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shadow-xl py-1.5 custom-scrollbar">
+                {cleanTypedDeckPath && !exactDeckMatch && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      ensureDeckFromInput();
+                      setIsDeckMenuOpen(false);
+                    }}
+                    className="w-full px-3.5 py-2 text-left flex items-center gap-2 text-xs font-bold text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 cursor-pointer border-b border-zinc-100 dark:border-zinc-800"
+                  >
+                    <FolderPlus className="w-4 h-4 shrink-0" />
+                    <span className="truncate">
+                      {cleanTypedDeckPath.includes('::')
+                        ? `Criar sub-baralho "${cleanTypedDeckPath.replace(/::/g, ' › ')}"`
+                        : `Criar baralho "${cleanTypedDeckPath}"`}
+                    </span>
+                  </button>
+                )}
 
-            {drawerSubfocos.length > 0 && (
-              <div>
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                  Subfoco (Opcional)
-                </label>
-                <select
-                  value={newCardSubfoco}
-                  onChange={(e) => {
-                    setNewCardSubfoco(e.target.value);
-                    setNewCardSubSubfoco('');
-                  }}
-                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
-                >
-                  <option value="">Nenhum subfoco específico</option>
-                  {drawerSubfocos.map((s) => {
-                    const sName = typeof s === 'string' ? s : s.subfoco;
+                {filteredDecks.length > 0 ? (
+                  filteredDecks.map((d) => {
+                    const isSelected = d.id === selectedDeckId && exactDeckMatch?.id === d.id;
                     return (
-                      <option key={sName} value={sName}>
-                        {sName}
-                      </option>
+                      <button
+                        key={d.id}
+                        type="button"
+                        onClick={() => {
+                          setSelectedDeckId(d.id);
+                          setDeckInput(d.name);
+                          setIsDeckMenuOpen(false);
+                        }}
+                        className={`w-full px-3.5 py-2 text-left flex items-center justify-between gap-2 text-xs transition-colors cursor-pointer ${
+                          isSelected
+                            ? 'bg-zinc-100 dark:bg-zinc-800 font-bold text-zinc-900 dark:text-zinc-100'
+                            : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800/60'
+                        }`}
+                      >
+                        <span className="truncate">{d.name.replace(/::/g, ' › ')}</span>
+                        {d.id === 'deck-padrao' && (
+                          <span className="text-[10px] px-1.5 py-0.5 rounded bg-zinc-200/70 dark:bg-zinc-700 text-zinc-500 dark:text-zinc-400 shrink-0">
+                            Padrão
+                          </span>
+                        )}
+                      </button>
                     );
-                  })}
-                </select>
-              </div>
-            )}
-
-            {drawerSubSubfocos.length > 0 && (
-              <div>
-                <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                  Sub-subfoco / 4º Nível (Opcional)
-                </label>
-                <select
-                  value={newCardSubSubfoco}
-                  onChange={(e) => setNewCardSubSubfoco(e.target.value)}
-                  className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
-                >
-                  <option value="">Nenhum sub-subfoco específico</option>
-                  {drawerSubSubfocos.map((ss) => (
-                    <option key={ss} value={ss}>
-                      {formatSubSubfocoDisplay(ss)}
-                    </option>
-                  ))}
-                </select>
+                  })
+                ) : (
+                  <div className="px-3.5 py-2 text-[11px] text-zinc-400">
+                    Nenhum baralho encontrado. Clique acima para criar.
+                  </div>
+                )}
               </div>
             )}
           </div>
 
-          {/* Frente do Flashcard com Auxiliar de Cloze */}
+          {/* Frente do Flashcard */}
           <div className="space-y-1.5">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-2">
               <label className="font-bold text-zinc-700 dark:text-zinc-300">
-                Frente do Cartão (Pergunta ou Oclusão Cloze) *
+                Frente (Pergunta ou Cloze) *
               </label>
               <button
                 type="button"
                 onClick={handleInsertCloze}
-                className="text-[11px] font-bold px-2 py-0.5 rounded-lg border border-purple-500/30 bg-purple-500/10 text-purple-700 dark:text-purple-300 hover:bg-purple-500/20 transition-colors inline-flex items-center gap-1 cursor-pointer"
+                className="text-[11px] font-bold px-2.5 py-1 rounded-lg border border-purple-500/30 bg-purple-500/10 text-purple-700 dark:text-purple-300 hover:bg-purple-500/20 transition-colors inline-flex items-center gap-1 cursor-pointer"
                 title="Selecione um termo no texto e clique para criar uma oclusão cloze"
               >
-                <span>[ Inserir Cloze &#123;&#123;c1::...&#125;&#125; ]</span>
+                <span>+ Cloze &#123;&#123;c1::...&#125;&#125;</span>
               </button>
             </div>
 
@@ -479,10 +504,10 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
           {/* Verso do Flashcard (Resposta) */}
           <div className="space-y-1.5">
             <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
-              Verso do Cartão (Resposta Direta) *
+              Verso (Resposta) *
             </label>
-            <input
-              type="text"
+            <textarea
+              rows={2}
               value={newCardBack}
               onChange={(e) => setNewCardBack(e.target.value)}
               onPaste={(e) => {
@@ -495,7 +520,7 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
                 }
               }}
               placeholder="Ex: bateria de disco (ou remoção endoscópica imediata)"
-              className="w-full px-3.5 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all"
+              className="w-full p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all text-xs sm:text-sm"
             />
 
             <FlashcardImageField
@@ -506,22 +531,22 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
             />
           </div>
 
-          {/* Comentário / Justificativa Clínica */}
+          {/* Comentário Opcional */}
           <div className="space-y-1">
             <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
-              Justificativa Clínica & Armadilha de Prova (Opcional)
+              Nota / Justificativa (Opcional)
             </label>
             <textarea
               rows={2}
               value={newCardComment}
               onChange={(e) => setNewCardComment(e.target.value)}
-              placeholder="Ex: Necrose por liquefação em até 2 horas. No RX, o duplo contorno diferencia da moeda."
-              className="w-full p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all text-xs"
+              placeholder="Anotação adicional, mnemônico ou armadilha de prova..."
+              className="w-full p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all text-xs"
             />
           </div>
 
           {/* Prioridade e Tags */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
             <button
               type="button"
               onClick={() =>
@@ -529,35 +554,176 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
                   prev === 'essential' ? 'standard' : 'essential'
                 )
               }
-              className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold border transition-colors cursor-pointer ${newCardPriority === 'essential'
+              className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold border transition-colors cursor-pointer ${
+                newCardPriority === 'essential'
                   ? 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30'
                   : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400'
-                }`}
+              }`}
             >
               <Star
-                className={`w-3.5 h-3.5 ${newCardPriority === 'essential'
+                className={`w-3.5 h-3.5 ${
+                  newCardPriority === 'essential'
                     ? 'fill-amber-500 text-amber-500'
                     : 'text-zinc-400'
-                  }`}
+                }`}
               />
-              <span>Cartão Prioritário (Alta Relevância)</span>
+              <span>Prioritário</span>
             </button>
 
-            <div className="relative flex-1 max-w-xs">
+            <div className="relative flex-1">
               <Tag className="w-3.5 h-3.5 text-zinc-400 absolute left-3 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 value={newCardTags}
                 onChange={(e) => setNewCardTags(e.target.value)}
-                placeholder="Tags separadas por vírgula"
-                className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 text-xs focus:outline-none"
+                placeholder="Tags separadas por vírgula (opcional)"
+                className="w-full pl-8 pr-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 text-xs focus:outline-none focus:ring-2 focus:ring-zinc-400"
               />
             </div>
           </div>
+
+          {/* Classificação Clínica Opcional (Retrátil) */}
+          <div className="rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/60 dark:bg-zinc-900/40 overflow-hidden">
+            <button
+              type="button"
+              onClick={() => setShowClassification((prev) => !prev)}
+              className="w-full px-3.5 py-2.5 flex items-center justify-between text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 cursor-pointer"
+            >
+              <span>Classificação clínica (opcional)</span>
+              {showClassification ? (
+                <ChevronDown className="w-4 h-4" />
+              ) : (
+                <ChevronRight className="w-4 h-4" />
+              )}
+            </button>
+
+            {showClassification && (
+              <div className="px-3.5 pb-3.5 pt-1 grid sm:grid-cols-2 gap-2.5 border-t border-zinc-200/60 dark:border-zinc-800/60">
+                <div>
+                  <label className="font-semibold text-zinc-600 dark:text-zinc-400 block mb-1">
+                    Especialidade
+                  </label>
+                  <select
+                    value={newCardSpecialty}
+                    onChange={(e) => {
+                      setNewCardSpecialty(e.target.value);
+                      setNewCardTema('');
+                      setNewCardFoco('');
+                      setNewCardSubfoco('');
+                      setNewCardSubSubfoco('');
+                    }}
+                    className="w-full px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                  >
+                    <option value="">Sem especialidade</option>
+                    {SPECIALTY_CONFIGS.map((sp) => (
+                      <option key={sp.id} value={sp.name}>
+                        {sp.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {drawerTemas.length > 0 && (
+                  <div>
+                    <label className="font-semibold text-zinc-600 dark:text-zinc-400 block mb-1">
+                      Tema
+                    </label>
+                    <select
+                      value={newCardTema}
+                      onChange={(e) => {
+                        setNewCardTema(e.target.value);
+                        setNewCardFoco('');
+                        setNewCardSubfoco('');
+                        setNewCardSubSubfoco('');
+                      }}
+                      className="w-full px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                    >
+                      <option value="">Sem tema</option>
+                      {drawerTemas.map((tem) => (
+                        <option key={tem.tema} value={tem.tema}>
+                          {tem.tema}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
+                {drawerFocos.length > 0 && (
+                  <div>
+                    <label className="font-semibold text-zinc-600 dark:text-zinc-400 block mb-1">
+                      Foco
+                    </label>
+                    <select
+                      value={newCardFoco}
+                      onChange={(e) => {
+                        setNewCardFoco(e.target.value);
+                        setNewCardSubfoco('');
+                        setNewCardSubSubfoco('');
+                      }}
+                      className="w-full px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                    >
+                      <option value="">Sem foco</option>
+                      {drawerFocos.map((foc) => (
+                        <option key={foc} value={foc}>
+                          {foc}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
+                {drawerSubfocos.length > 0 && (
+                  <div>
+                    <label className="font-semibold text-zinc-600 dark:text-zinc-400 block mb-1">
+                      Subfoco
+                    </label>
+                    <select
+                      value={newCardSubfoco}
+                      onChange={(e) => {
+                        setNewCardSubfoco(e.target.value);
+                        setNewCardSubSubfoco('');
+                      }}
+                      className="w-full px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                    >
+                      <option value="">Nenhum</option>
+                      {drawerSubfocos.map((s) => {
+                        const sName = typeof s === 'string' ? s : s.subfoco;
+                        return (
+                          <option key={sName} value={sName}>
+                            {sName}
+                          </option>
+                        );
+                      })}
+                    </select>
+                  </div>
+                )}
+
+                {drawerSubSubfocos.length > 0 && (
+                  <div>
+                    <label className="font-semibold text-zinc-600 dark:text-zinc-400 block mb-1">
+                      Sub-subfoco
+                    </label>
+                    <select
+                      value={newCardSubSubfoco}
+                      onChange={(e) => setNewCardSubSubfoco(e.target.value)}
+                      className="w-full px-3 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-400"
+                    >
+                      <option value="">Nenhum</option>
+                      {drawerSubSubfocos.map((ss) => (
+                        <option key={ss} value={ss}>
+                          {formatSubSubfocoDisplay(ss)}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
         </div>
 
-        {/* Rodapé do Drawer Central */}
-        <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex flex-wrap items-center justify-end gap-2.5">
+        {/* Rodapé */}
+        <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex flex-wrap items-center justify-end gap-2">
           <button
             type="button"
             onClick={onClose}
@@ -583,7 +749,7 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
             style={{ backgroundColor: accentConfig.primaryHex }}
           >
             <Check className="w-3.5 h-3.5 stroke-[3]" />
-            <span>Salvar Flashcard</span>
+            <span>Salvar Cartão</span>
           </button>
         </div>
       </div>

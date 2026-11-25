@@ -192,17 +192,17 @@ export function buildOriginalDeckTree(
  */
 export function flattenOriginalDeckTree(
   nodes: AnkiOriginalDeckNode[],
-  expandedPaths: Record<string, boolean>
+  expandedPaths: Record<string, boolean>,
+  defaultExpanded: boolean = true
 ): FlattenedDeckTreeNode[] {
   const flat: FlattenedDeckTreeNode[] = [];
 
   const visit = (node: AnkiOriginalDeckNode) => {
     const hasChildren = node.children.length > 0;
-    // Raiz com filhos abre fechada apenas se usuário colapsar explicitamente (true por padrão)
     const isExpanded = hasChildren
       ? expandedPaths[node.fullPath] !== undefined
         ? Boolean(expandedPaths[node.fullPath])
-        : true
+        : defaultExpanded
       : false;
 
     flat.push({ node, hasChildren, isExpanded });
@@ -219,6 +219,56 @@ export function flattenOriginalDeckTree(
   }
 
   return flat;
+}
+
+/**
+ * Calcula os baralhos atualizados ao mover um baralho (ou pasta virtual) para outro baralho pai
+ * ou para a raiz principal (`targetParentPath === null`), preservando sub-baralhos descendentes.
+ */
+export function computeMovedDeckUpdates(
+  decks: CustomFlashcardDeck[],
+  sourcePath: string,
+  targetParentPath: string | null
+): CustomFlashcardDeck[] {
+  const sourceSegments = parseDeckPathSegments(sourcePath);
+  if (sourceSegments.length === 0 || sourcePath === 'deck-padrao') return [];
+
+  if (targetParentPath === 'deck-padrao') return [];
+
+  const normSource = normalizeDeckPathKey(sourceSegments);
+  const targetSegments = targetParentPath ? parseDeckPathSegments(targetParentPath) : [];
+  const normTarget = targetSegments.length > 0 ? normalizeDeckPathKey(targetSegments) : '';
+
+  if (normTarget && (normTarget === normSource || normTarget.startsWith(`${normSource}::`))) {
+    return [];
+  }
+
+  const leafName = sourceSegments[sourceSegments.length - 1];
+  const newBaseSegments = [...targetSegments, leafName];
+  const newBaseNorm = normalizeDeckPathKey(newBaseSegments);
+  if (newBaseNorm === normSource) return [];
+
+  const newBasePath = newBaseSegments.join('::');
+  const updatedDecks: CustomFlashcardDeck[] = [];
+
+  for (const deck of decks) {
+    if (deck.id === 'deck-padrao') continue;
+    const deckSegments = parseDeckPathSegments(deck.name);
+    if (deckSegments.length === 0) continue;
+
+    const normDeck = normalizeDeckPathKey(deckSegments);
+    if (normDeck === normSource) {
+      updatedDecks.push({ ...deck, name: newBasePath });
+    } else if (normDeck.startsWith(`${normSource}::`)) {
+      const restSegments = deckSegments.slice(sourceSegments.length);
+      updatedDecks.push({
+        ...deck,
+        name: [newBasePath, ...restSegments].join('::')
+      });
+    }
+  }
+
+  return updatedDecks;
 }
 
 /**

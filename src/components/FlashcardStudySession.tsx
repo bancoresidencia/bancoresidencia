@@ -20,7 +20,8 @@ import {
   Users,
   TrendingUp,
   RotateCcw,
-  ShieldCheck
+  ShieldCheck,
+  Table
 } from 'lucide-react';
 import { AddFlashcardDrawer } from './flashcards/AddFlashcardDrawer';
 import { FlashcardImageField } from './flashcards/FlashcardImageField';
@@ -54,6 +55,7 @@ interface FlashcardStudySessionProps {
   cards: FlashcardItem[];
   onExit: () => void;
   onOpenMaterial?: (material: StudyMaterialItem) => void;
+  onOpenPanel?: () => void;
   initialShuffled?: boolean;
   schedulerSettings?: FlashcardSchedulerSettings;
   sessionMode?: FlashcardSessionMode;
@@ -63,6 +65,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
   cards,
   onExit,
   onOpenMaterial,
+  onOpenPanel,
   initialShuffled = false,
   schedulerSettings,
   sessionMode = 'srs'
@@ -639,6 +642,20 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
           >
             <Plus className="w-4 h-4" />
           </button>
+
+          {/* Botão Abrir Painel de Cartões */}
+          {onOpenPanel && (
+            <button
+              type="button"
+              onClick={onOpenPanel}
+              title="Abrir painel de cartões"
+              aria-label="Abrir painel de cartões"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-200/60 dark:hover:bg-zinc-800 transition-colors cursor-pointer font-bold text-xs"
+            >
+              <Table className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Painel</span>
+            </button>
+          )}
 
           {/* Botão para abrir Drawer Central de Estatísticas do Card (Apenas ícone) */}
           <button

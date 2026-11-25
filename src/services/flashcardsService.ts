@@ -1719,6 +1719,37 @@ export const flashcardsService = {
   },
 
   /**
+   * Salva ou atualiza múltiplos baralhos autorais em lote (ex: movimentação hierárquica)
+   */
+  saveCustomDecksBatch(decksToSave: CustomFlashcardDeck[], userId?: string | null): CustomFlashcardDeck[] {
+    if (typeof window === 'undefined' || decksToSave.length === 0) {
+      return this.getCustomDecks(userId);
+    }
+    try {
+      const current = this.getCustomDecks(userId);
+      const byId = new Map(decksToSave.map((d) => [d.id, d]));
+      const updated = current.map((d) => byId.get(d.id) || d);
+      for (const d of decksToSave) {
+        if (!current.some((c) => c.id === d.id)) {
+          updated.unshift(d);
+        }
+      }
+      const key = getDecksStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(updated));
+      localStorage.removeItem(CUSTOM_DECKS_KEY);
+
+      if (userId && userId !== 'demo-student') {
+        void upsertDecksResilient(decksToSave, userId, 'custom');
+      }
+
+      return updated;
+    } catch (e) {
+      console.warn('Erro ao salvar baralhos em lote:', e);
+      return [];
+    }
+  },
+
+  /**
    * Remove um baralho autoral
    */
   deleteCustomDeck(id: string, userId?: string | null): CustomFlashcardDeck[] {

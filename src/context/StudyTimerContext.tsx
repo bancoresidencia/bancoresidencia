@@ -41,42 +41,16 @@ import {
   loadUserTimerRuntime,
   syncTimerRuntimeToCloud
 } from '@/services/userTimerRuntimeService';
+import {
+  formatSecondsToHms,
+  formatSecondsToShort,
+  getLocalDateStr,
+  computeSafeElapsedOnRestore,
+  shouldDiscardEmptyQuestionSession,
+  buildSessionAndScheduleSlot
+} from '@/utils/studyTimerHelpers';
 
-export function formatSecondsToHms(totalSec: number): string {
-  if (isNaN(totalSec) || totalSec < 0) return '00:00:00';
-  const h = Math.floor(totalSec / 3600);
-  const m = Math.floor((totalSec % 3600) / 60);
-  const s = totalSec % 60;
-  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-}
-
-export function formatSecondsToShort(totalSec: number): string {
-  if (isNaN(totalSec) || totalSec < 0) return '0s';
-  const h = Math.floor(totalSec / 3600);
-  const m = Math.floor((totalSec % 3600) / 60);
-  const s = totalSec % 60;
-
-  if (h > 0) return `${h}h ${m}m ${s}s`;
-  if (m > 0) return `${m}m ${s}s`;
-  return `${s}s`;
-}
-
-/**
- * Converte qualquer entrada de data (Date, timestamp ms, string ISO ou YYYY-MM-DD)
- * em uma string "YYYY-MM-DD" estritamente alinhada ao FUSO HORÁRIO LOCAL do usuário (ex: América/São Paulo, UTC-3).
- */
-export function getLocalDateStr(dateInput?: string | Date | number | null): string {
-  if (!dateInput) return '';
-  if (typeof dateInput === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(dateInput)) {
-    return dateInput;
-  }
-  const d = typeof dateInput === 'string' || typeof dateInput === 'number' ? new Date(dateInput) : dateInput;
-  if (isNaN(d.getTime())) return '';
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}-${m}-${day}`;
-}
+export { formatSecondsToHms, formatSecondsToShort, getLocalDateStr };
 
 const StudyTimerContext = createContext<StudyTimerContextType | undefined>(undefined);
 
@@ -111,6 +85,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   }, [sessionStartTime]);
 
   const isSavingRef = useRef<boolean>(false);
+  const exitHandledRef = useRef<boolean>(false);
   const lastLocalMutationMsRef = useRef<number>(0);
   const cloudTimerDebounceRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -139,8 +114,58 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     platformActiveRef.current = platformActiveSeconds;
   }, [platformActiveSeconds]);
 
-  // Aplica um estado persistido (local ou nuvem) ao cronômetro em memória
+  // Aplica um estado persistido (local ou nuvem) ao cronômetro em memória, sem nunca somar horas de aba fechada
   const applyRestoredTimerState = useCallback((saved: PersistedTimerState) => {
+    const uid = userRef.current?.id;
+    const nowMs = Date.now();
+    const safeTotal = computeSafeElapsedOnRestore(saved, nowMs);
+
+    // Se havia um cronômetro 'running' órfão (ex.: crash ou encerramento abrupto sem pagehide),
+    // finaliza automaticamente com o tempo seguro até updatedAtMs em vez de retomar com horas fantasmas.
+    const staleMs = nowMs - (saved.updatedAtMs || saved.runningSince || nowMs);
+    if (saved.status === 'running' && staleMs > 20_000) {
+      clearLocalTimerState(uid);
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+      accumulatedSecondsRef.current = 0;
+      runningSinceRef.current = null;
+      setElapsedSeconds(0);
+      setStatus('idle');
+      statusRef.current = 'idle';
+
+      const qCount = saved.questionsCount || 0;
+      if (shouldDiscardEmptyQuestionSession(saved.sessionSource, qCount) || safeTotal <= 0) {
+        syncTimerRuntimeToCloud({ activeTimerState: null }, uid, true).catch(() => {});
+        return;
+      }
+
+      const endIso = new Date(saved.updatedAtMs || nowMs).toISOString();
+      const { session, scheduleSlot } = buildSessionAndScheduleSlot({
+        userId: uid,
+        startTime: saved.sessionStartTime || endIso,
+        endTime: endIso,
+        durationSeconds: safeTotal,
+        taxonomy: saved.selectedTaxonomy || {},
+        studyType: saved.studyType || 'questoes',
+        questionsCount: qCount,
+        correctCount: saved.correctCount || 0,
+        incorrectCount: saved.incorrectCount || 0,
+        sessionSource: saved.sessionSource || 'manual'
+      });
+
+      setSavedSessions((prev) => [session, ...prev.filter((s) => s.id !== session.id)]);
+      saveUserStudySession(session, uid).catch(() => {});
+      saveUserScheduledTask(scheduleSlot, uid).catch(() => {});
+      syncTimerRuntimeToCloud(
+        { activeTimerState: null, finishedSession: session, scheduledTask: scheduleSlot },
+        uid,
+        true
+      ).catch(() => {});
+      return;
+    }
+
     setSelectedTaxonomy(saved.selectedTaxonomy || {});
     selectedTaxonomyRef.current = saved.selectedTaxonomy || {};
 
@@ -162,18 +187,15 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     sessionIncorrectCountRef.current = iCount;
 
     if (saved.status === 'running' && saved.runningSince) {
-      const deltaSec = Math.max(0, Math.floor((Date.now() - saved.runningSince) / 1000));
-      const total = (saved.accumulatedSeconds || 0) + deltaSec;
-      accumulatedSecondsRef.current = total;
-      runningSinceRef.current = Date.now();
-      setElapsedSeconds(total);
+      accumulatedSecondsRef.current = safeTotal;
+      runningSinceRef.current = nowMs;
+      setElapsedSeconds(safeTotal);
       setStatus('running');
       statusRef.current = 'running';
     } else if (saved.status === 'paused') {
-      const pausedTotal = saved.accumulatedSeconds || 0;
-      accumulatedSecondsRef.current = pausedTotal;
+      accumulatedSecondsRef.current = safeTotal;
       runningSinceRef.current = null;
-      setElapsedSeconds(pausedTotal);
+      setElapsedSeconds(safeTotal);
       setStatus('paused');
       statusRef.current = 'paused';
     }
@@ -429,16 +451,24 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     };
   }, []);
 
-  // Tique-taque contínuo do cronômetro
+  // Tique-taque contínuo do cronômetro + checkpoint periódico de updatedAtMs
   useEffect(() => {
     if (status === 'running') {
       if (intervalRef.current) clearInterval(intervalRef.current);
 
+      let checkpointTick = 0;
       intervalRef.current = setInterval(() => {
         if (runningSinceRef.current) {
           const deltaSec = Math.max(0, Math.floor((Date.now() - runningSinceRef.current) / 1000));
           const currentTotal = accumulatedSecondsRef.current + deltaSec;
           setElapsedSeconds(currentTotal);
+
+          checkpointTick += 1;
+          // A cada ~15s (30 ticks de 500ms), atualiza updatedAtMs localmente para blindagem contra crash
+          if (checkpointTick >= 30) {
+            checkpointTick = 0;
+            persistCurrentTimerState('running', 'local_only');
+          }
         }
       }, 500);
     } else {
@@ -454,7 +484,111 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         intervalRef.current = null;
       }
     };
-  }, [status]);
+  }, [status, persistCurrentTimerState]);
+
+  // Encerramento automático e salvamento resiliente ao sair/fechar a página (pagehide / beforeunload)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const handleVisibilityCheckpoint = () => {
+      if (document.hidden && statusRef.current === 'running') {
+        persistCurrentTimerState('running', 'local_only');
+      }
+    };
+
+    const finalizeAndPersistOnExit = () => {
+      const curStatus = statusRef.current;
+      if (curStatus !== 'running' && curStatus !== 'paused') return;
+      if (isSavingRef.current || exitHandledRef.current) return;
+
+      exitHandledRef.current = true;
+      isSavingRef.current = true;
+
+      try {
+        const uid = userRef.current?.id;
+        let finalSecs = accumulatedSecondsRef.current;
+        if (curStatus === 'running' && runningSinceRef.current) {
+          finalSecs += Math.max(0, Math.floor((Date.now() - runningSinceRef.current) / 1000));
+          accumulatedSecondsRef.current = finalSecs;
+        }
+
+        const qTotal = sessionQuestionsCountRef.current;
+        const qCorrect = sessionCorrectCountRef.current;
+        const qIncorrect = sessionIncorrectCountRef.current;
+        const source = sessionSourceRef.current || 'manual';
+        const studyType = activeStudyTypeRef.current || 'questoes';
+        const taxonomy = selectedTaxonomyRef.current;
+        const startTimeIso = sessionStartTimeRef.current || new Date().toISOString();
+
+        if (cloudTimerDebounceRef.current) {
+          clearTimeout(cloudTimerDebounceRef.current);
+          cloudTimerDebounceRef.current = null;
+        }
+
+        clearLocalTimerState(uid);
+        resetInMemoryTimerOnly();
+
+        if (shouldDiscardEmptyQuestionSession(source, qTotal) || finalSecs <= 0) {
+          syncTimerRuntimeToCloud({ activeTimerState: null }, uid, true).catch(() => {});
+          return;
+        }
+
+        const endTimeIso = new Date().toISOString();
+        const { session, scheduleSlot } = buildSessionAndScheduleSlot({
+          userId: uid,
+          startTime: startTimeIso,
+          endTime: endTimeIso,
+          durationSeconds: finalSecs,
+          taxonomy,
+          studyType,
+          questionsCount: qTotal,
+          correctCount: qCorrect,
+          incorrectCount: qIncorrect,
+          sessionSource: source
+        });
+
+        // Gravação síncrona imediata no localStorage antes do descarregamento da aba
+        try {
+          const sessionsKey = getUserStudySessionsStorageKey(uid);
+          const rawSess = localStorage.getItem(sessionsKey);
+          const existingSess: StudySession[] = rawSess ? JSON.parse(rawSess) : [];
+          const nextSess = [session, ...(Array.isArray(existingSess) ? existingSess : []).filter((s) => s.id !== session.id)];
+          localStorage.setItem(sessionsKey, JSON.stringify(nextSess));
+
+          const tasksKey = getUserScheduledTasksStorageKey(uid);
+          const rawTasks = localStorage.getItem(tasksKey);
+          const existingTasks: DailyScheduleSlot[] = rawTasks ? JSON.parse(rawTasks) : [];
+          const nextTasks = [scheduleSlot, ...(Array.isArray(existingTasks) ? existingTasks : []).filter((t) => t.id !== scheduleSlot.id)];
+          localStorage.setItem(tasksKey, JSON.stringify(nextTasks));
+        } catch {}
+
+        setSavedSessions((prev) => [session, ...prev.filter((s) => s.id !== session.id)]);
+
+        // Envio resiliente com keepalive=true para garantir persistência no Supabase após fechar a página
+        syncTimerRuntimeToCloud(
+          {
+            activeTimerState: null,
+            finishedSession: session,
+            scheduledTask: scheduleSlot
+          },
+          uid,
+          true
+        ).catch(() => {});
+      } finally {
+        isSavingRef.current = false;
+      }
+    };
+
+    document.addEventListener('visibilitychange', handleVisibilityCheckpoint);
+    window.addEventListener('pagehide', finalizeAndPersistOnExit);
+    window.addEventListener('beforeunload', finalizeAndPersistOnExit);
+
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityCheckpoint);
+      window.removeEventListener('pagehide', finalizeAndPersistOnExit);
+      window.removeEventListener('beforeunload', finalizeAndPersistOnExit);
+    };
+  }, [persistCurrentTimerState, resetInMemoryTimerOnly]);
 
   // Atualiza taxonomia e sincroniza caso o cronômetro já esteja ativo
   const handleSetSelectedTaxonomy = useCallback(
@@ -494,6 +628,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   // Iniciar Cronômetro (sempre do zero a cada sessão)
   const startTimer = useCallback(
     (taxonomyOverride?: SelectedTaxonomy) => {
+      exitHandledRef.current = false;
       const nowIso = new Date().toISOString();
       accumulatedSecondsRef.current = 0;
       runningSinceRef.current = Date.now();
@@ -539,6 +674,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
   // Continuar / Retomar Cronômetro
   const resumeTimer = useCallback(() => {
+    exitHandledRef.current = false;
     runningSinceRef.current = Date.now();
     setStatus('running');
     statusRef.current = 'running';
@@ -694,6 +830,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   // Iniciar sessão automatizada pelo Banco de Questões (Zero-Touch)
   const startQuestionSession = useCallback(
     (taxonomy: SelectedTaxonomy, studyType: StudyType = 'questoes') => {
+      exitHandledRef.current = false;
       setSelectedTaxonomy(taxonomy);
       selectedTaxonomyRef.current = taxonomy;
       activeStudyTypeRef.current = studyType;

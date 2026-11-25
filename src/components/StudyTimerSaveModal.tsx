@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import {
   Clock,
   CheckCircle2,
@@ -46,7 +47,7 @@ export const StudyTimerSaveModal: React.FC = () => {
     onClose: closeSaveModal
   });
 
-  if (status !== 'modal_saving') return null;
+  if (status !== 'modal_saving' || typeof document === 'undefined') return null;
 
   const topicTitle =
     selectedTaxonomy.subfoco ||
@@ -86,7 +87,7 @@ export const StudyTimerSaveModal: React.FC = () => {
     }
   };
 
-  return (
+  return createPortal(
     <div
       className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-150"
       onClick={closeSaveModal}
@@ -245,6 +246,7 @@ export const StudyTimerSaveModal: React.FC = () => {
           </div>
         </form>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };

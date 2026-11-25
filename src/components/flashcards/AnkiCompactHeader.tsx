@@ -6,7 +6,6 @@ import {
   Play,
   Shuffle,
   Star,
-  Plus,
   AlertOctagon
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
@@ -24,7 +23,7 @@ interface AnkiCompactHeaderProps {
   onToggleFilterErrorsOnly?: () => void;
   isShuffleEnabled: boolean;
   onToggleShuffle: () => void;
-  onOpenAddCard: () => void;
+  onOpenAddCard?: () => void;
   lastSessionTitle?: string | null;
   onContinueLastSession?: () => void;
 }
@@ -197,18 +196,6 @@ export const AnkiCompactHeader: React.FC<AnkiCompactHeaderProps> = ({
           >
             <Shuffle className="w-3.5 h-3.5" />
             <span className="hidden lg:inline">{isShuffleEnabled ? 'Embaralhar: ON' : 'Embaralhar: OFF'}</span>
-          </button>
-
-          {/* Botão + Criar Flashcard */}
-          <button
-            type="button"
-            onClick={onOpenAddCard}
-            title="Criar novo flashcard autoral com suporte a oclusão cloze"
-            className="px-3 py-1.5 rounded-xl text-xs font-bold text-white transition-all cursor-pointer shadow-xs flex items-center gap-1 hover:opacity-95 active:scale-98 shrink-0"
-            style={{ backgroundColor: accentConfig.primaryHex }}
-          >
-            <Plus className="w-3.5 h-3.5 stroke-[2.5]" />
-            <span>Criar</span>
           </button>
         </div>
       </div>
