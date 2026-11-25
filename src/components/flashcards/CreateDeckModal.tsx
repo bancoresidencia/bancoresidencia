@@ -1,11 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Layers, X, Check } from 'lucide-react';
+import { Layers, Check } from 'lucide-react';
 import { CustomFlashcardDeck } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface CreateDeckModalProps {
   isOpen: boolean;
@@ -22,6 +24,8 @@ export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
+
+  useOverlayDismiss({ isOpen, onClose });
 
   const [deckName, setDeckName] = useState(
     initialParentPath ? `${initialParentPath}::` : ''
@@ -57,8 +61,14 @@ export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-      <div className="w-full max-w-md rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-5 sm:p-6 shadow-2xl space-y-4 animate-in fade-in-50 zoom-in-95 duration-200">
+    <div 
+      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4"
+      onClick={onClose}
+    >
+      <div 
+        className="w-full max-w-md rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-5 sm:p-6 shadow-2xl space-y-4 animate-in fade-in-50 zoom-in-95 duration-200"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
           <div className="flex items-center gap-2.5">
             <div
@@ -77,13 +87,12 @@ export const CreateDeckModal: React.FC<CreateDeckModalProps> = ({
             </div>
           </div>
 
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-1 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar modal"
+          />
         </div>
 
         <form onSubmit={handleSave} className="space-y-3.5 text-xs">

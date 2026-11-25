@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
-import { CalendarDays, Plus, X } from 'lucide-react';
+import { CalendarDays, Plus } from 'lucide-react';
 import { ScheduleItemType } from '@/types/studySchedule';
 import {
   getEnrichedFociForInstitution,
   EnrichedFocusWithIncidence
 } from '@/services/examIncidenceService';
 import { DayContentFocoList } from './DayContentFocoList';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 export interface AddDayScheduleContentModalProps {
   isOpen: boolean;
@@ -39,6 +41,11 @@ export const AddDayScheduleContentModal: React.FC<AddDayScheduleContentModalProp
   const [selectedIntervals, setSelectedIntervals] = useState<number[]>([7, 30]);
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useOverlayDismiss({
+    isOpen: isOpen && !!dateStr,
+    onClose
+  });
 
   // 1. Catálogo completo de focos enriquecidos
   const enrichedFoci = useMemo(
@@ -112,12 +119,16 @@ export const AddDayScheduleContentModal: React.FC<AddDayScheduleContentModalProp
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150"
+      onClick={onClose}
+    >
       <div
         className="w-full max-w-xl bg-white dark:bg-[#0e0e11] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-150 flex flex-col max-h-[92vh]"
         role="dialog"
         aria-modal="true"
         aria-labelledby="add-modal-title"
+        onClick={(e) => e.stopPropagation()}
       >
         {/* 1. Cabeçalho do Modal */}
         <div className="px-5 py-4 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between shrink-0 bg-zinc-50/60 dark:bg-zinc-900/40">
@@ -135,14 +146,12 @@ export const AddDayScheduleContentModal: React.FC<AddDayScheduleContentModalProp
             </div>
           </div>
 
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-1.5 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-lg transition-colors"
-            aria-label="Fechar"
-          >
-            <X className="w-4 h-4" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar modal"
+          />
         </div>
 
         {/* 2. Formulário / Conteúdo Rolável */}

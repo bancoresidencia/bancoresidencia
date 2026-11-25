@@ -23,6 +23,7 @@ import {
 } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { clinicalHierarchy } from '@/data/mockQuestions';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface OriginalCardsFilterBarProps {
   activeFilters: DynamicFilterCriterion[];
@@ -270,13 +271,15 @@ export const OriginalCardsFilterBar: React.FC<OriginalCardsFilterBarProps> = ({
                 </>
               ) : (
                 <div className="space-y-1 max-h-60 overflow-y-auto">
-                  <button
-                    type="button"
-                    onClick={() => setActiveCategory(null)}
-                    className="text-[11px] font-bold text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 px-2 py-1 mb-1 block"
-                  >
-                    &larr; Voltar
-                  </button>
+                  <div className="px-2 py-1 mb-1">
+                    <BackArrowButton
+                      onClick={() => setActiveCategory(null)}
+                      size="sm"
+                      variant="ghost"
+                      title="Voltar"
+                      ariaLabel="Voltar ao menu de categorias"
+                    />
+                  </div>
 
                   {/* Submenus específicos */}
                   {activeCategory === 'specialty' &&

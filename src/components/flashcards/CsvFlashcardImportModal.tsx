@@ -30,6 +30,8 @@ import {
   RawParsedCsvRow
 } from '@/utils/flashcardDistributionEngine';
 import { resolveOrCreateDeckHierarchy } from '@/utils/ankiDeckTree';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface CsvFlashcardImportModalProps {
   isOpen: boolean;
@@ -121,6 +123,8 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
   const { user } = useAuth();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  useOverlayDismiss({ isOpen, onClose });
+
   // Formato de importação selecionado
   const [selectedFormat, setSelectedFormat] = useState<FlashcardImportFormat>('auto');
 
@@ -132,6 +136,12 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
   const [loadingMessage, setLoadingMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [detectedDeckName, setDetectedDeckName] = useState<string | null>(null);
+  const [mediaImportStats, setMediaImportStats] = useState<{
+    totalReferenced: number;
+    uploaded: number;
+    failed: number;
+    skippedLimit: number;
+  } | null>(null);
 
   // Linhas brutas em memória
   const [parsedRows, setParsedRows] = useState<RawParsedCsvRow[]>([]);
@@ -281,6 +291,7 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
     setFileName(file.name);
     setErrorMessage(null);
     setDetectedDeckName(null);
+    setMediaImportStats(null);
 
     const ext = file.name.substring(file.name.lastIndexOf('.')).toLowerCase();
     const isBinaryOrArchive =
@@ -291,7 +302,7 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
       setIsProcessing(true);
       setLoadingMessage(
         ext === '.apkg' || ext === '.colpkg'
-          ? 'Descompactando pacote do Anki e extraindo notas...'
+          ? 'Descompactando pacote do Anki, notas e imagens...'
           : ext === '.zip'
             ? 'Descompactando arquivo ZIP e localizando baralhos...'
             : 'Lendo banco de dados SQLite...'
@@ -315,11 +326,16 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
         if (data.detectedDeckName) {
           setDetectedDeckName(data.detectedDeckName);
         }
+        if (data.mediaStats) {
+          setMediaImportStats(data.mediaStats);
+        }
 
         interface ApiReturnedCard {
           front: string;
           back: string;
           comment?: string;
+          imageFrontUrl?: string | null;
+          imageUrl?: string | null;
           specialty?: string;
           theme?: string;
           focus?: string;
@@ -336,6 +352,8 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
             front: c.front,
             back: c.back,
             comment: c.comment,
+            imageFrontUrl: c.imageFrontUrl || null,
+            imageUrl: c.imageUrl || null,
             specialty: c.specialty,
             theme: c.theme,
             focus: c.focus,
@@ -474,6 +492,8 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
         front: preview.front,
         back: preview.back,
         comment: preview.comment,
+        imageFrontUrl: preview.imageFrontUrl || null,
+        imageUrl: preview.imageUrl || null,
         specialty: preview.specialty,
         theme: preview.theme,
         focus: preview.focus,
@@ -541,8 +561,14 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
   const selectedCount = selectedRowIndices.size;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
-      <div className="bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl w-full max-w-4xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
+      onClick={onClose}
+    >
+      <div 
+        className="bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl w-full max-w-4xl max-h-[92vh] flex flex-col shadow-2xl overflow-hidden"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Topo do Modal */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-zinc-200 dark:border-zinc-800 shrink-0">
           <div className="flex items-center gap-3">
@@ -575,13 +601,12 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
             </div>
           </div>
 
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-2 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar modal"
+          />
         </div>
 
         {/* Corpo com Scroll */}
@@ -693,7 +718,7 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
               </div>
               <ul className="list-disc list-inside text-[11px] space-y-1 text-zinc-700 dark:text-zinc-300 leading-relaxed">
                 <li>
-                  <strong>Pacotes Anki (.apkg, .colpkg):</strong> extraídos nativamente com seus campos, tags, baralhos e tags cloze (<code>{"{{c1::...}}"}</code>).
+                  <strong>Pacotes Anki (.apkg, .colpkg):</strong> extraídos nativamente com seus campos, tags, baralhos, imagens (convertidas automaticamente para WebP) e oclusões cloze (<code>{"{{c1::...}}"}</code>). Para pacotes novos do Anki 23.10+, marque <em>Suporte a versões antigas do Anki</em> ao exportar.
                 </li>
                 <li>
                   <strong>Notas em Texto Puro (.txt):</strong> exportações tabuladas do Anki contendo diretivas <code>#separator:tab</code>, <code>#tags column</code> e <code>#deck</code>.
@@ -702,10 +727,10 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
                   <strong>Cartões em Texto Simples (.txt):</strong> formato clássico frente e verso com delimitador tab.
                 </li>
                 <li>
-                  <strong>Planilhas e Tabelas (.csv, .tsv):</strong> delimitados por vírgula, ponto e vírgula ou tabulação (Excel, Google Planilhas).
+                  <strong>Planilhas e Tabelas (.csv, .tsv):</strong> delimitados por vírgula, ponto e vírgula ou tabulação. Aceita colunas opcionais <code>image_front_url</code> e <code>image_url</code>.
                 </li>
                 <li>
-                  <strong>Compactados (.zip) &amp; SQLite (.db):</strong> pacotes compactados contendo baralhos ou bases brutas do Anki (<code>collection.anki2</code>).
+                  <strong>Compactados (.zip) &amp; SQLite (.db):</strong> pacotes compactados contendo baralhos, imagens locais referenciadas em <code>&lt;img src=&quot;...&quot;&gt;</code> ou bases do Anki (<code>collection.anki2</code>).
                 </li>
               </ul>
             </div>
@@ -728,13 +753,23 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
             </div>
           )}
 
-          {/* Badge Informativo do Baralho Detectado no Anki */}
-          {detectedDeckName && (
-            <div className="p-2.5 rounded-xl bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-800/60 text-xs text-purple-800 dark:text-purple-300 flex items-center gap-2">
-              <Package className="w-4 h-4 text-purple-600 shrink-0" />
-              <span>
-                Baralho detectado no pacote Anki: <strong>{detectedDeckName}</strong>
-              </span>
+          {/* Badge Informativo do Baralho e Mídias Detectadas no Anki */}
+          {(detectedDeckName || (mediaImportStats && mediaImportStats.totalReferenced > 0)) && (
+            <div className="p-2.5 rounded-xl bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-800/60 text-xs text-purple-800 dark:text-purple-300 flex flex-wrap items-center justify-between gap-2">
+              {detectedDeckName && (
+                <div className="flex items-center gap-2">
+                  <Package className="w-4 h-4 text-purple-600 shrink-0" />
+                  <span>
+                    Baralho detectado no pacote Anki: <strong>{detectedDeckName}</strong>
+                  </span>
+                </div>
+              )}
+              {mediaImportStats && mediaImportStats.totalReferenced > 0 && (
+                <span className="text-[11px] font-bold px-2 py-0.5 rounded-lg bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30">
+                  {mediaImportStats.uploaded} {mediaImportStats.uploaded === 1 ? 'imagem convertida' : 'imagens convertidas'} para WebP
+                  {mediaImportStats.skippedLimit > 0 ? ` (${mediaImportStats.skippedLimit} acima do limite de 150 por lote)` : ''}
+                </span>
+              )}
             </div>
           )}
 
@@ -1075,20 +1110,44 @@ export const CsvFlashcardImportModal: React.FC<CsvFlashcardImportModalProps> = (
                             />
                           </td>
                           <td className="p-2.5 max-w-xs font-medium text-zinc-900 dark:text-zinc-100">
-                            <div className="line-clamp-2">{card.front}</div>
-                            {isCloze && (
-                              <span className="inline-block mt-1 text-[9px] font-bold px-1.5 py-0.2 rounded bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300">
-                                Cloze
-                              </span>
-                            )}
-                            {card.validationError && (
-                              <p className="text-[10px] text-rose-500 font-bold mt-0.5">
-                                {card.validationError}
-                              </p>
-                            )}
+                            <div className="flex items-start gap-2">
+                              {card.imageFrontUrl && (
+                                <img
+                                  src={card.imageFrontUrl}
+                                  alt="Frente"
+                                  className="w-10 h-10 rounded-lg object-cover border border-zinc-200 dark:border-zinc-700 shrink-0"
+                                />
+                              )}
+                              <div className="min-w-0 flex-1">
+                                <div className="line-clamp-2">
+                                  {card.front || (card.imageFrontUrl ? 'Cartão baseado em imagem' : '')}
+                                </div>
+                                {isCloze && (
+                                  <span className="inline-block mt-1 text-[9px] font-bold px-1.5 py-0.2 rounded bg-purple-100 dark:bg-purple-950 text-purple-700 dark:text-purple-300">
+                                    Cloze
+                                  </span>
+                                )}
+                                {card.validationError && (
+                                  <p className="text-[10px] text-rose-500 font-bold mt-0.5">
+                                    {card.validationError}
+                                  </p>
+                                )}
+                              </div>
+                            </div>
                           </td>
                           <td className="p-2.5 max-w-xs text-zinc-600 dark:text-zinc-400">
-                            <div className="line-clamp-2">{card.back}</div>
+                            <div className="flex items-start gap-2">
+                              {card.imageUrl && (
+                                <img
+                                  src={card.imageUrl}
+                                  alt="Verso"
+                                  className="w-10 h-10 rounded-lg object-cover border border-zinc-200 dark:border-zinc-700 shrink-0"
+                                />
+                              )}
+                              <div className="line-clamp-2 min-w-0">
+                                {card.back || (card.imageUrl ? 'Resposta em imagem' : '')}
+                              </div>
+                            </div>
                           </td>
                           <td className="p-2.5">
                             <div className="flex flex-col gap-0.5">

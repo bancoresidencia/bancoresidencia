@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import {
   Sparkles,
-  X,
   Check,
   Plus,
   Clock,
@@ -18,6 +17,8 @@ import {
   Info
 } from 'lucide-react';
 import { DailyScheduleSlot, AiScheduleAnalysis, AiDecisionBadge } from './scheduleTypes';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 // Ícone Oficial do Google
 const GoogleIcon = ({ className = "w-3.5 h-3.5" }: { className?: string }) => (
@@ -52,6 +53,7 @@ export const AiScheduleDrawer: React.FC<AiScheduleDrawerProps> = ({
   exportingSlotId,
   exportedSlotIds = {}
 }) => {
+  useOverlayDismiss({ isOpen, onClose });
   const suggestions = analysis?.suggestions || [];
 
   // Estado para armazenar quais sugestões estão selecionadas para adição
@@ -192,14 +194,12 @@ export const AiScheduleDrawer: React.FC<AiScheduleDrawerProps> = ({
               </p>
             </div>
           </div>
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-xl transition-colors cursor-pointer"
+            variant="ghost"
             title="Fechar pré-visualização"
-          >
-            <X className="w-4 h-4" />
-          </button>
+            ariaLabel="Fechar pré-visualização"
+          />
         </div>
 
         {/* FEEDBACK DE SUCESSO (SE HOUVER) */}

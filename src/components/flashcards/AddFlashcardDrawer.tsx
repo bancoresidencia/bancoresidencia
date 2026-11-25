@@ -3,7 +3,6 @@
 import React, { useState, useRef, useMemo } from 'react';
 import {
   Brain,
-  X,
   CheckCircle2,
   Check,
   Star,
@@ -16,6 +15,13 @@ import { flashcardsService } from '@/services/flashcardsService';
 import { clinicalHierarchy } from '@/data/mockQuestions';
 import { formatSubSubfocoDisplay } from '@/components/AdvancedQuestionFilters';
 import { SPECIALTY_CONFIGS } from '../FlashcardsView';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import {
+  FlashcardImageField,
+  extractClipboardImageFile,
+  uploadFlashcardImageFile
+} from './FlashcardImageField';
 
 interface AddFlashcardDrawerProps {
   isOpen: boolean;
@@ -29,6 +35,8 @@ interface AddFlashcardDrawerProps {
   initialTema?: string;
   initialFoco?: string;
   initialComment?: string;
+  initialImageFrontUrl?: string | null;
+  initialImageUrl?: string | null;
 }
 
 export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
@@ -42,10 +50,14 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   initialSpecialty,
   initialTema,
   initialFoco,
-  initialComment
+  initialComment,
+  initialImageFrontUrl,
+  initialImageUrl
 }) => {
   const { accentConfig } = useTheme();
   const { user } = useAuth();
+
+  useOverlayDismiss({ isOpen, onClose });
 
   const userDecks = useMemo(() => {
     return flashcardsService.getCustomDecks(user?.id);
@@ -60,6 +72,8 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   const [newCardFront, setNewCardFront] = useState(initialFront || '');
   const [newCardBack, setNewCardBack] = useState(initialBack || '');
   const [newCardComment, setNewCardComment] = useState(initialComment || '');
+  const [newCardFrontImageUrl, setNewCardFrontImageUrl] = useState<string | null>(initialImageFrontUrl || null);
+  const [newCardBackImageUrl, setNewCardBackImageUrl] = useState<string | null>(initialImageUrl || null);
   const [newCardPriority, setNewCardPriority] = useState<'essential' | 'standard'>('essential');
   const [newCardTags, setNewCardTags] = useState('');
   const [savedDeckNotice, setSavedDeckNotice] = useState<string | null>(null);
@@ -78,9 +92,11 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       if (initialFront !== undefined) setNewCardFront(initialFront);
       if (initialBack !== undefined) setNewCardBack(initialBack);
       if (initialComment !== undefined) setNewCardComment(initialComment);
+      setNewCardFrontImageUrl(initialImageFrontUrl || null);
+      setNewCardBackImageUrl(initialImageUrl || null);
       setSavedDeckNotice(null);
     }
-  }, [isOpen, initialDeckId, userDecks, initialSpecialty, initialTema, initialFoco, initialFront, initialBack, initialComment]);
+  }, [isOpen, initialDeckId, userDecks, initialSpecialty, initialTema, initialFoco, initialFront, initialBack, initialComment, initialImageFrontUrl, initialImageUrl]);
 
   // Temas da especialidade selecionada no Drawer
   const drawerTemas = useMemo(() => {
@@ -164,8 +180,12 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   };
 
   // Salvar Novo Flashcard
+  const canSaveCard =
+    (Boolean(newCardFront.trim()) || Boolean(newCardFrontImageUrl)) &&
+    (Boolean(newCardBack.trim()) || Boolean(newCardBackImageUrl));
+
   const handleSaveNewFlashcard = (keepOpen = false) => {
-    if (!newCardFront.trim() || !newCardBack.trim()) return;
+    if (!canSaveCard) return;
 
     const tagsArray = newCardTags
       .split(',')
@@ -183,6 +203,8 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       front: newCardFront.trim(),
       back: newCardBack.trim(),
       comment: newCardComment.trim() || undefined,
+      imageFrontUrl: newCardFrontImageUrl || null,
+      imageUrl: newCardBackImageUrl || null,
       specialty: newCardSpecialty,
       theme: finalTema,
       focus: finalFoco,
@@ -204,6 +226,8 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       setNewCardFront('');
       setNewCardBack('');
       setNewCardComment('');
+      setNewCardFrontImageUrl(null);
+      setNewCardBackImageUrl(null);
       setNewCardTags('');
       setNewCardSubfoco('');
       setNewCardSubSubfoco('');
@@ -213,6 +237,8 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
       setNewCardFront('');
       setNewCardBack('');
       setNewCardComment('');
+      setNewCardFrontImageUrl(null);
+      setNewCardBackImageUrl(null);
       setNewCardTags('');
       setNewCardSubfoco('');
       setNewCardSubSubfoco('');
@@ -222,8 +248,14 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-      <div className="w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-6 shadow-2xl space-y-5 animate-in fade-in-50 zoom-in-95 duration-200 custom-scrollbar">
+    <div 
+      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4"
+      onClick={onClose}
+    >
+      <div 
+        className="w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-6 shadow-2xl space-y-5 animate-in fade-in-50 zoom-in-95 duration-200 custom-scrollbar"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Topo do Drawer Central */}
         <div className="flex items-center justify-between pb-3 border-b border-zinc-100 dark:border-zinc-800">
           <div className="flex items-center gap-2.5">
@@ -243,13 +275,12 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
             </div>
           </div>
 
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-1 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar formulário de flashcard"
+          />
         </div>
 
         {/* Toast de Sucesso Interno */}
@@ -424,13 +455,29 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
               rows={3}
               value={newCardFront}
               onChange={(e) => setNewCardFront(e.target.value)}
+              onPaste={(e) => {
+                const file = extractClipboardImageFile(e);
+                if (file) {
+                  e.preventDefault();
+                  void uploadFlashcardImageFile(file)
+                    .then((url) => setNewCardFrontImageUrl(url))
+                    .catch(() => {});
+                }
+              }}
               placeholder="Ex: A ingestão de {{c1::bateria de disco}} no esôfago exige remoção endoscópica imediata."
               className="w-full p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all font-mono text-xs sm:text-sm"
+            />
+
+            <FlashcardImageField
+              label="Imagem da Frente (Opcional)"
+              imageUrl={newCardFrontImageUrl}
+              onChange={setNewCardFrontImageUrl}
+              compact
             />
           </div>
 
           {/* Verso do Flashcard (Resposta) */}
-          <div className="space-y-1">
+          <div className="space-y-1.5">
             <label className="font-bold text-zinc-700 dark:text-zinc-300 block">
               Verso do Cartão (Resposta Direta) *
             </label>
@@ -438,8 +485,24 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
               type="text"
               value={newCardBack}
               onChange={(e) => setNewCardBack(e.target.value)}
+              onPaste={(e) => {
+                const file = extractClipboardImageFile(e);
+                if (file) {
+                  e.preventDefault();
+                  void uploadFlashcardImageFile(file)
+                    .then((url) => setNewCardBackImageUrl(url))
+                    .catch(() => {});
+                }
+              }}
               placeholder="Ex: bateria de disco (ou remoção endoscópica imediata)"
               className="w-full px-3.5 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-400 transition-all"
+            />
+
+            <FlashcardImageField
+              label="Imagem do Verso / Esquema Diagnóstico (Opcional)"
+              imageUrl={newCardBackImageUrl}
+              onChange={setNewCardBackImageUrl}
+              compact
             />
           </div>
 
@@ -505,7 +568,7 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
 
           <button
             type="button"
-            disabled={!newCardFront.trim() || !newCardBack.trim()}
+            disabled={!canSaveCard}
             onClick={() => handleSaveNewFlashcard(true)}
             className="px-4 py-2 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer disabled:opacity-50"
           >
@@ -514,7 +577,7 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
 
           <button
             type="button"
-            disabled={!newCardFront.trim() || !newCardBack.trim()}
+            disabled={!canSaveCard}
             onClick={() => handleSaveNewFlashcard(false)}
             className="px-4 py-2 rounded-xl text-xs font-bold text-white shadow-xs cursor-pointer hover:opacity-95 transition-all disabled:opacity-50 inline-flex items-center gap-1.5"
             style={{ backgroundColor: accentConfig.primaryHex }}

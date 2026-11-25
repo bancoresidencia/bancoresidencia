@@ -424,6 +424,8 @@ export interface Database {
           deck_id: string | null;
           source_question_id: string | null;
           comment: string | null;
+          image_front_url: string | null;
+          image_url: string | null;
           priority: string;
           study_depth: 'study' | 'review' | 'both' | null;
           tags: string[];
@@ -443,6 +445,8 @@ export interface Database {
           deck_id?: string | null;
           source_question_id?: string | null;
           comment?: string | null;
+          image_front_url?: string | null;
+          image_url?: string | null;
           priority?: string;
           study_depth?: 'study' | 'review' | 'both' | null;
           tags?: string[];
@@ -462,6 +466,8 @@ export interface Database {
           deck_id?: string | null;
           source_question_id?: string | null;
           comment?: string | null;
+          image_front_url?: string | null;
+          image_url?: string | null;
           priority?: string;
           study_depth?: 'study' | 'review' | 'both' | null;
           tags?: string[];

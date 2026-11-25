@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import {
   Clock,
   Play,
@@ -14,6 +15,7 @@ import {
 } from 'lucide-react';
 import { useTheme, AccentColor, ACCENT_CONFIGS, getEffectiveAccentConfig } from '@/context/ThemeContext';
 import { Logo } from '@/components/Logo';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 export type FontSize = 'xs' | 'sm' | 'base' | 'lg' | 'xl';
 export type HighlightColor = 'yellow' | 'green' | 'pink' | 'blue' | 'orange' | 'purple';
@@ -35,6 +37,7 @@ export const SimuladoPriapismoHeader: React.FC<SimuladoPriapismoHeaderProps> = (
   onClearHighlights,
   onOpenQrModal
 }) => {
+  const router = useRouter();
   const { mode, toggleMode, accent, setAccent, accentConfig } = useTheme();
   const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(true);
@@ -77,8 +80,20 @@ export const SimuladoPriapismoHeader: React.FC<SimuladoPriapismoHeaderProps> = (
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-md border-b bg-white/90 dark:bg-[#090D14]/90 border-slate-200 dark:border-white/10 transition-colors">
       <div className="max-w-5xl mx-auto px-2.5 sm:px-6 h-14 sm:h-16 flex items-center justify-between gap-1.5 sm:gap-3">
-        {/* Logo Oficial Hippocampus e Título da Plataforma */}
+        {/* Voltar + Logo Oficial Hippocampus e Título da Plataforma */}
         <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+          <BackArrowButton
+            size="sm"
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.history.length > 1) {
+                router.back();
+              } else {
+                router.push('/');
+              }
+            }}
+            title="Voltar"
+            ariaLabel="Voltar"
+          />
           <div className="flex items-center gap-2 min-w-0">
             {/* Símbolo Canônico Hippocampus */}
             <div

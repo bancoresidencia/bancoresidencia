@@ -7,6 +7,7 @@ import { DatabaseSync } from 'node:sqlite';
 
 import {
   cleanAnkiHtml,
+  extractAnkiImageRefs,
   extractClozeBack,
   parseZipEntries,
   parseAnkiSqliteBuffer,
@@ -180,5 +181,60 @@ const previews = buildFlashcardPreviews(rows, clinicalHierarchy, 'auto');
 assert.strictEqual(previews.length, 1);
 assert.strictEqual(previews[0].isValid, true);
 assert.strictEqual(previews[0].specialty, 'Ginecologia');
+
+// 6. Test Anki image extraction from .apkg (media JSON + binary entries) and CSV image columns
+console.log('6. Testing Anki .apkg image extraction and CSV image columns...');
+const refs = extractAnkiImageRefs(
+  'Analise o ECG:<br><img src="ecg_supra.png"><img src="javascript:alert(1)"><img src="evil.svg" style="display:none">'
+);
+assert.deepStrictEqual(refs, ['ecg_supra.png', 'evil.svg']);
+assert.strictEqual(extractAnkiImageRefs('<img src="data:image/svg+xml;base64,abc">').length, 0);
+
+const tmpImgDbPath = path.join(os.tmpdir(), `test_anki_img_${Date.now()}.db`);
+const imgDb = new DatabaseSync(tmpImgDbPath);
+imgDb.exec('CREATE TABLE col (id INTEGER PRIMARY KEY, decks TEXT)');
+imgDb.exec('CREATE TABLE notes (id INTEGER PRIMARY KEY, mid INTEGER, tags TEXT, flds TEXT)');
+imgDb.exec('CREATE TABLE cards (id INTEGER PRIMARY KEY, nid INTEGER, did INTEGER, ord INTEGER)');
+imgDb.prepare('INSERT INTO col (id, decks) VALUES (?, ?)').run(
+  1,
+  JSON.stringify({ '1': { name: 'Cardiologia::Síndromes Coronarianas::IAMCSST' } })
+);
+const imgFlds = [
+  '<img src="ecg_iam.png">',
+  'IAM com supra de ST anterior',
+  'Conduta: reperfusão imediata <img src="esquema_reperfusao.jpg">'
+].join(String.fromCharCode(31));
+imgDb.prepare('INSERT INTO notes (id, mid, tags, flds) VALUES (?, ?, ?, ?)').run(1, 1, 'ecg iam', imgFlds);
+imgDb.prepare('INSERT INTO cards (id, nid, did, ord) VALUES (?, ?, ?, ?)').run(1, 1, 1, 0);
+imgDb.close();
+const imgSqliteBytes = fs.readFileSync(tmpImgDbPath);
+fs.unlinkSync(tmpImgDbPath);
+
+const fakePng = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
+const fakeJpg = Buffer.from([0xff, 0xd8, 0xff, 0xe0]);
+const apkgImgBytes = createZip({
+  'collection.anki2': imgSqliteBytes,
+  media: Buffer.from(JSON.stringify({ '0': 'ecg_iam.png', '1': 'esquema_reperfusao.jpg', '2': 'unused.png' })),
+  '0': fakePng,
+  '1': fakeJpg,
+  '2': Buffer.from('unused'),
+});
+const apkgImgResult = parseUniversalFlashcardFile(apkgImgBytes, 'ecg_deck.apkg');
+assert.strictEqual(apkgImgResult.cards.length, 1);
+assert.strictEqual(apkgImgResult.cards[0].front, '');
+assert.strictEqual(apkgImgResult.cards[0].frontImageRef, 'ecg_iam.png');
+assert.strictEqual(apkgImgResult.cards[0].backImageRef, 'esquema_reperfusao.jpg');
+assert.ok(apkgImgResult.mediaFiles?.['ecg_iam.png'], 'Deve extrair mídia da frente referenciada');
+assert.ok(apkgImgResult.mediaFiles?.['esquema_reperfusao.jpg'], 'Deve extrair mídia do comentário/verso');
+assert.strictEqual(apkgImgResult.mediaFiles?.['unused.png'], undefined, 'Não deve extrair mídia não referenciada');
+
+const csvWithImg = `Frente;Verso;image_front_url;image_url;Especialidade
+""; "Pneumotórax hipertensivo"; "https://exemplo.com/rx.webp"; ""; Cirurgia Geral`;
+const csvImgRows = parseFlashcardsCsv(csvWithImg);
+assert.strictEqual(csvImgRows.length, 1);
+assert.strictEqual(csvImgRows[0].imageFrontUrl, 'https://exemplo.com/rx.webp');
+const csvImgPreviews = buildFlashcardPreviews(csvImgRows, clinicalHierarchy, 'auto');
+assert.strictEqual(csvImgPreviews[0].isValid, true, 'Cartão com apenas imagem na frente deve ser válido');
+assert.strictEqual(csvImgPreviews[0].imageFrontUrl, 'https://exemplo.com/rx.webp');
 
 console.log('✅ ALL FLASHCARD UNIVERSAL IMPORT TESTS PASSED SUCCESSFULLY!');

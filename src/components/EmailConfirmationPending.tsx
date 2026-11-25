@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { X } from 'lucide-react';
 import { Logo } from '@/components/Logo';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 import { createClient } from '@/lib/supabase/client';
 
 const RESEND_INTERVAL_MS = 60_000;
@@ -60,9 +60,7 @@ export function EmailConfirmationPending({
       <div className="flex items-center justify-between gap-4">
         <Logo variant="full" className="h-10 w-auto max-w-[220px]" />
         {onClose && (
-          <button type="button" onClick={onClose} aria-label="Fechar" className="grid min-h-11 min-w-11 cursor-pointer place-items-center rounded-lg hover:bg-zinc-500/10">
-            <X aria-hidden="true" className="size-5" />
-          </button>
+          <BackArrowButton onClick={onClose} variant="ghost" title="Voltar (Esc)" ariaLabel="Voltar" />
         )}
       </div>
       <div className="space-y-2">

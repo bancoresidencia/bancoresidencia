@@ -1,8 +1,10 @@
 'use client';
 
-import React, { useEffect } from 'react';
-import { X, Keyboard } from 'lucide-react';
+import React from 'react';
+import { Keyboard } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 interface KeyboardShortcutsModalProps {
   isOpen: boolean;
@@ -103,19 +105,7 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
 }) => {
   const { accentConfig } = useTheme();
 
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        e.preventDefault();
-        onClose();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, onClose]);
+  useOverlayDismiss({ isOpen, onClose });
 
   if (!isOpen) return null;
 
@@ -167,14 +157,12 @@ export const KeyboardShortcutsModal: React.FC<KeyboardShortcutsModalProps> = ({
             </div>
           </div>
 
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="w-8 h-8 rounded-xl flex items-center justify-center text-zinc-400 hover:text-zinc-700 dark:hover:text-white bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 border border-zinc-200 dark:border-zinc-700 transition-colors cursor-pointer"
-            title="Fechar (Esc)"
-          >
-            <X className="w-4 h-4" />
-          </button>
+            size="sm"
+            title="Voltar (Esc)"
+            ariaLabel="Voltar"
+          />
         </div>
 
         {/* Content - Totalmente adaptável */}

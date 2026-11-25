@@ -9,6 +9,7 @@ import { LandingPage } from '@/components/LandingPage';
 import { isPlanId, type PlanId } from '@/config/plans';
 import { useAuth } from '@/context/AuthContext';
 import { captureReferralFromUrl } from '@/utils/referralCapture';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 const loadAuthScreen = () => import('@/components/AuthScreen').then((module) => module.AuthScreen);
 
@@ -140,16 +141,7 @@ export default function RootHomePage() {
 
   const handleDemoLogin = useCallback(() => handleOpenAuth('login'), [handleOpenAuth]);
 
-  useEffect(() => {
-    if (!authModal) return;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        handleCloseAuth();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [authModal, handleCloseAuth]);
+  useOverlayDismiss({ isOpen: Boolean(authModal), onClose: handleCloseAuth });
 
   return (
     <>

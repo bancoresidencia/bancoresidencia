@@ -104,6 +104,10 @@ function isBarrelOrEraser(e: { button: number; buttons: number }): boolean {
   return (e.buttons & 2) !== 0 || (e.buttons & 32) !== 0 || e.button === 2 || e.button === 5
 }
 
+function isAndroidAirBarrel(e: { pointerType?: string; buttons: number; pressure: number }): boolean {
+  return e.pointerType === 'pen' && (e.buttons & 1) !== 0 && e.pressure === 0
+}
+
 function findInteractiveUnderPointer(
   clientX: number,
   clientY: number,
@@ -200,6 +204,7 @@ function Editor({
   const activeTouches = useRef<Map<number, { x: number; y: number; time: number }>>(new Map())
   const twoFingerUndoCandidate = useRef<boolean>(false)
   const blockedInteractiveTarget = useRef<HTMLElement | null>(null)
+  const barrelHoverArmedUntil = useRef<number>(0)
 
   const touchState = useRef<{
     startX: number
@@ -214,6 +219,11 @@ function Editor({
   const active = useRef<{
     pointer: number
     isEraser: boolean
+    isAndroidAirMode: boolean
+    pendingAirCheck: boolean
+    startedWithZeroPressurePen: boolean
+    maxPressure: number
+    startTime: number
     stroke: InkStroke
     erased: Map<string, InkStroke>
     markerLineY: number | null
@@ -481,12 +491,34 @@ function Editor({
 
     for (const event of events) {
       let p = point(event)
+      if (event.pressure > current.maxPressure) {
+        current.maxPressure = event.pressure
+      }
+
+      if (current.pendingAirCheck) {
+        if (isAndroidAirBarrel(event)) {
+          current.isEraser = true
+          current.isAndroidAirMode = true
+          current.pendingAirCheck = false
+          current.stroke.points = []
+          barrelHoverArmedUntil.current = performance.now() + 1200
+        } else if (event.pressure > 0) {
+          current.pendingAirCheck = false
+        }
+      }
+
       const isBarrel = isBarrelOrEraser(event)
       if (isBarrel && !current.isEraser) {
         current.isEraser = true
         current.stroke.points = []
       }
       const isEraserNow = current.isEraser || isBarrel || tool === 'erase'
+
+      // In Android air-hover barrel mode (pressure === 0 before touching glass), show cursor only without drawing/erasing yet
+      if (current.isAndroidAirMode && event.pressure === 0 && !isBarrel && tool !== 'erase') {
+        setEraserCursor(p)
+        continue
+      }
 
       if (!isEraserNow && tool === 'marker' && straightMarker) {
         const snapped = snapMarkerPoint(p, current.markerLineY)
@@ -509,7 +541,12 @@ function Editor({
       setErasedIds([...current.erased.keys()])
     }
 
-    if ((tool === 'pen' || tool === 'marker') && !current.isEraser && performance.now() - checkpoint.current > 1000) {
+    if (
+      (tool === 'pen' || tool === 'marker') &&
+      !current.isEraser &&
+      !current.pendingAirCheck &&
+      performance.now() - checkpoint.current > 1000
+    ) {
       checkpoint.current = performance.now()
       const partial = { ...current.stroke, points: [...current.stroke.points] }
       const pending = unsaved.get(doc) ?? []
@@ -518,7 +555,7 @@ function Editor({
       void flush(doc, baseDoc, attemptNumber, canSyncCloud)
     }
 
-    if (current.isEraser || tool === 'erase') {
+    if (current.isEraser || current.pendingAirCheck || tool === 'erase') {
       setPreview(null)
     } else {
       setPreview({ ...current.stroke })
@@ -533,6 +570,20 @@ function Editor({
     }
     active.current = null
     setInkDrawing(false)
+    barrelHoverArmedUntil.current = 0
+
+    // Quick click of the S Pen side button in the air (pressure stayed 0 and nothing touched): toggle Pen <-> Eraser
+    if (
+      (current.isAndroidAirMode || current.pendingAirCheck || current.startedWithZeroPressurePen) &&
+      current.maxPressure === 0 &&
+      current.erased.size === 0 &&
+      performance.now() - current.startTime < 450
+    ) {
+      setInkToolDirect(tool === 'erase' ? 'pen' : 'erase')
+      setErasedIds([])
+      setPreview(null)
+      return
+    }
 
     const bounds = Object.entries(blocks).find(
       ([, box]) =>
@@ -779,8 +830,11 @@ function Editor({
     }
     blockedInteractiveTarget.current = null
 
-    const isBarrel = isBarrelOrEraser(e.nativeEvent)
-    if (isBarrel && e.pointerType === 'pen') {
+    const standardBarrel = isBarrelOrEraser(e.nativeEvent)
+    const recentlyBarrelHover = e.pointerType === 'pen' && performance.now() <= barrelHoverArmedUntil.current
+    const androidAirDown = isAndroidAirBarrel(e.nativeEvent)
+    const isBarrel = standardBarrel || recentlyBarrelHover
+    if ((standardBarrel || androidAirDown) && e.pointerType === 'pen') {
       e.preventDefault()
     }
 
@@ -811,6 +865,11 @@ function Editor({
     active.current = {
       pointer: e.pointerId,
       isEraser: isBarrel || tool === 'erase',
+      isAndroidAirMode: recentlyBarrelHover,
+      pendingAirCheck: tool !== 'erase' && !isBarrel && androidAirDown,
+      startedWithZeroPressurePen: !standardBarrel && androidAirDown,
+      maxPressure: e.pressure || 0,
+      startTime: performance.now(),
       erased: new Map(),
       markerLineY: initialPt.y,
       stroke: { ...styles[kind], kind, id: crypto.randomUUID(), created: Date.now(), points: [] }
@@ -967,7 +1026,11 @@ function Editor({
           }}
           onPointerDown={start}
           onPointerMove={(e) => {
-            const barrelHover = isBarrelOrEraser(e.nativeEvent)
+            const androidAirHover = isAndroidAirBarrel(e.nativeEvent)
+            if (androidAirHover) {
+              barrelHoverArmedUntil.current = performance.now() + 1200
+            }
+            const barrelHover = isBarrelOrEraser(e.nativeEvent) || androidAirHover
             if (tool === 'erase' || active.current?.isEraser || barrelHover) {
               setEraserCursor(point(e.nativeEvent))
             } else if (eraserCursor) {

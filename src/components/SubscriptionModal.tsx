@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import {
-  X,
   Check,
   Sparkles,
   Zap,
@@ -12,6 +11,8 @@ import {
   Tag,
   ArrowRight
 } from 'lucide-react';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 import { useAuth as useUserAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { PlanType } from '@/hooks/useSubscription';
@@ -73,6 +74,13 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
     }
   }
 
+  const handleClose = () => {
+    setSelectedPlanOverride(null);
+    onClose();
+  };
+
+  useOverlayDismiss({ isOpen, onClose: handleClose });
+
   if (!isOpen) return null;
 
   const handleApplyCoupon = async (e?: React.FormEvent) => {
@@ -131,11 +139,6 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
     PLANS.monthly
   ];
 
-  const handleClose = () => {
-    setSelectedPlanOverride(null);
-    onClose();
-  };
-
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/80 backdrop-blur-md animate-in fade-in"
@@ -146,14 +149,12 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex justify-end mb-2 sm:mb-0">
-          <button
-            type="button"
+          <BackArrowButton
             onClick={handleClose}
-            className="sm:absolute sm:top-5 sm:right-5 w-10 h-10 flex items-center justify-center rounded-2xl bg-slate-100 dark:bg-zinc-800 text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors z-10 cursor-pointer touch-manipulation"
-            aria-label="Fechar modal"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            title="Voltar (Esc)"
+            ariaLabel="Voltar"
+            className="sm:absolute sm:top-5 sm:right-5 w-10 h-10 z-10"
+          />
         </div>
 
         {limitReached && !selectedPlanForCheckout && (

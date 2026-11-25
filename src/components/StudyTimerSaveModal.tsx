@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import {
   Clock,
   CheckCircle2,
-  X,
   BookOpen,
   FileQuestion,
   Brain,
@@ -15,6 +14,8 @@ import {
 } from 'lucide-react';
 import { useStudyTimer } from '@/context/StudyTimerContext';
 import { StudyType } from '@/types/studyTimer';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 const STUDY_TYPES: Array<{ id: StudyType; label: string; icon: React.ReactNode }> = [
   { id: 'questoes', label: 'Questões', icon: <FileQuestion className="w-3.5 h-3.5" /> },
@@ -39,6 +40,11 @@ export const StudyTimerSaveModal: React.FC = () => {
   const [correctCount, setCorrectCount] = useState<string>('');
   const [notes, setNotes] = useState<string>('');
   const [isSaving, setIsSaving] = useState(false);
+
+  useOverlayDismiss({
+    isOpen: status === 'modal_saving',
+    onClose: closeSaveModal
+  });
 
   if (status !== 'modal_saving') return null;
 
@@ -104,13 +110,12 @@ export const StudyTimerSaveModal: React.FC = () => {
               </p>
             </div>
           </div>
-          <button
-            type="button"
+          <BackArrowButton
             onClick={closeSaveModal}
-            className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
-          >
-            <X className="w-4 h-4" />
-          </button>
+            variant="ghost"
+            title="Voltar (Esc)"
+            ariaLabel="Voltar"
+          />
         </div>
 
         {/* Card Destaque: Tempo Líquido & Tópico */}
@@ -222,15 +227,13 @@ export const StudyTimerSaveModal: React.FC = () => {
           </div>
 
           {/* Ações Finais */}
-          <div className="pt-2 flex flex-col-reverse xs:flex-row items-stretch xs:items-center justify-end gap-2 sm:gap-2.5">
-            <button
-              type="button"
+          <div className="pt-2 flex flex-col-reverse xs:flex-row items-stretch xs:items-center justify-between gap-2 sm:gap-2.5">
+            <BackArrowButton
               onClick={closeSaveModal}
               disabled={isSaving}
-              className="px-4 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 transition-colors cursor-pointer text-center"
-            >
-              Voltar ao Cronômetro
-            </button>
+              title="Voltar ao cronômetro"
+              ariaLabel="Voltar"
+            />
             <button
               type="submit"
               disabled={isSaving}

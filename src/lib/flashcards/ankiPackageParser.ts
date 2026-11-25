@@ -9,6 +9,10 @@ export interface ParsedImportCard {
   front: string;
   back: string;
   comment?: string;
+  frontImageRef?: string;
+  backImageRef?: string;
+  imageFrontUrl?: string;
+  imageUrl?: string;
   specialty?: string;
   theme?: string;
   focus?: string;
@@ -26,7 +30,59 @@ export interface ParsedImportResult {
   cards: ParsedImportCard[];
   detectedFormat: string;
   detectedDeckName?: string;
+  mediaFiles?: Record<string, Buffer>;
   message?: string;
+}
+
+const IMAGE_FILE_EXT_RE = /\.(png|jpe?g|webp|gif|bmp|tiff?)$/i;
+
+/**
+ * Extrai referências de imagem (<img src="...">) de um trecho HTML do Anki
+ * antes que as tags sejam removidas.
+ */
+export function extractAnkiImageRefs(html: string): string[] {
+  if (!html) return [];
+  const refs: string[] = [];
+  const imgTagRegex = /<img\b[^>]*?\bsrc\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+))[^>]*>/gi;
+  let match: RegExpExecArray | null;
+
+  while ((match = imgTagRegex.exec(html)) !== null) {
+    const rawSrc = (match[1] ?? match[2] ?? match[3] ?? '').trim();
+    if (!rawSrc) continue;
+
+    const decodedEntities = rawSrc
+      .replace(/&amp;/gi, '&')
+      .replace(/&quot;/gi, '"')
+      .replace(/&#39;/gi, "'");
+
+    let cleaned = decodedEntities;
+    try {
+      cleaned = decodeURIComponent(decodedEntities);
+    } catch {
+      cleaned = decodedEntities;
+    }
+
+    cleaned = cleaned.trim().replace(/^\.\//, '');
+    const lower = cleaned.toLowerCase();
+
+    if (
+      !cleaned ||
+      lower.startsWith('data:image/svg+xml') ||
+      lower.startsWith('javascript:') ||
+      lower.startsWith('vbscript:')
+    ) {
+      continue;
+    }
+
+    refs.push(cleaned);
+  }
+
+  return refs;
+}
+
+function isSafeHttpImageUrl(ref?: string): boolean {
+  if (!ref) return false;
+  return /^https?:\/\/.+/i.test(ref.trim());
 }
 
 /**
@@ -67,9 +123,9 @@ export function extractClozeBack(front: string): string {
   return matches.join(', ') || 'Oclusão Cloze';
 }
 
-const MAX_ZIP_ENTRIES = 250;
+const MAX_ZIP_ENTRIES = 2500;
 const MAX_SINGLE_ENTRY_BYTES = 25 * 1024 * 1024; // 25MB
-const MAX_TOTAL_UNCOMPRESSED_BYTES = 32 * 1024 * 1024; // 32MB
+const MAX_TOTAL_UNCOMPRESSED_BYTES = 120 * 1024 * 1024; // 120MB (suporta baralhos médicos com imagens)
 const MAX_SQLITE_CARDS = 25000;
 const MAX_ARCHIVE_DEPTH = 1;
 
@@ -150,7 +206,7 @@ export function parseZipEntries(buffer: Buffer): Record<string, Buffer> {
           totalUncompressedBytes += content.length;
           if (totalUncompressedBytes > MAX_TOTAL_UNCOMPRESSED_BYTES) {
             throw new Error(
-              'Volume total descompactado excede o limite máximo seguro de 32MB (proteção contra ZIP bomb).'
+              'Volume total descompactado excede o limite máximo seguro de 120MB (proteção contra ZIP bomb).'
             );
           }
           files[rawName] = content;
@@ -162,6 +218,95 @@ export function parseZipEntries(buffer: Buffer): Record<string, Buffer> {
   }
 
   return files;
+}
+
+function isZstdBuffer(buf?: Buffer): boolean {
+  return Boolean(
+    buf &&
+    buf.length >= 4 &&
+    buf[0] === 0x28 &&
+    buf[1] === 0xb5 &&
+    buf[2] === 0x2f &&
+    buf[3] === 0xfd
+  );
+}
+
+/**
+ * Lê o manifesto 'media' de pacotes .apkg/.colpkg e mapeia apenas os nomes de arquivos
+ * efetivamente referenciados pelos cartões importados.
+ */
+function extractReferencedAnkiMedia(
+  unzipped: Record<string, Buffer>,
+  cards: ParsedImportCard[]
+): Record<string, Buffer> {
+  const referenced = new Set<string>();
+  for (const c of cards) {
+    if (c.frontImageRef && !isSafeHttpImageUrl(c.frontImageRef)) {
+      referenced.add(c.frontImageRef);
+    }
+    if (c.backImageRef && !isSafeHttpImageUrl(c.backImageRef)) {
+      referenced.add(c.backImageRef);
+    }
+  }
+  if (referenced.size === 0) return {};
+
+  const mediaFiles: Record<string, Buffer> = {};
+  const mediaManifestBuf = unzipped['media'];
+
+  if (mediaManifestBuf && !isZstdBuffer(mediaManifestBuf)) {
+    const manifestText = mediaManifestBuf.toString('utf8').trim();
+    if (manifestText.startsWith('{')) {
+      try {
+        const manifest = JSON.parse(manifestText) as Record<string, string>;
+        const filenameToZipKey = new Map<string, string>();
+        for (const [zipKey, originalName] of Object.entries(manifest)) {
+          if (typeof originalName === 'string' && originalName.trim()) {
+            filenameToZipKey.set(originalName.trim(), zipKey);
+            filenameToZipKey.set(originalName.trim().toLowerCase(), zipKey);
+          }
+        }
+
+        for (const ref of referenced) {
+          const zipKey =
+            filenameToZipKey.get(ref) ??
+            filenameToZipKey.get(ref.toLowerCase()) ??
+            filenameToZipKey.get(path.posix.basename(ref)) ??
+            filenameToZipKey.get(path.posix.basename(ref).toLowerCase());
+          if (zipKey && unzipped[zipKey]) {
+            mediaFiles[ref] = unzipped[zipKey];
+          }
+        }
+      } catch {
+        // segue para fallback por caminho direto no ZIP
+      }
+    }
+  }
+
+  // Fallback para ZIPs genéricos (ex.: CSV + pasta media/ ou arquivos nomeados diretamente)
+  if (Object.keys(mediaFiles).length < referenced.size) {
+    const zipEntriesLower = new Map<string, Buffer>();
+    const zipBasenameLower = new Map<string, Buffer>();
+    for (const [entryName, entryBuf] of Object.entries(unzipped)) {
+      if (!IMAGE_FILE_EXT_RE.test(entryName)) continue;
+      const normalized = entryName.replace(/\\/g, '/').replace(/^\.\//, '').toLowerCase();
+      zipEntriesLower.set(normalized, entryBuf);
+      zipBasenameLower.set(path.posix.basename(normalized), entryBuf);
+    }
+
+    for (const ref of referenced) {
+      if (mediaFiles[ref]) continue;
+      const normRef = ref.replace(/\\/g, '/').replace(/^\.\//, '').toLowerCase();
+      const buf =
+        unzipped[ref] ??
+        zipEntriesLower.get(normRef) ??
+        zipBasenameLower.get(path.posix.basename(normRef));
+      if (buf) {
+        mediaFiles[ref] = buf;
+      }
+    }
+  }
+
+  return mediaFiles;
 }
 
 /**
@@ -285,13 +430,25 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
           tags?: string;
         }>;
         return {
-          cards: generic.map((g, idx) => ({
-            front: cleanAnkiHtml(g.front),
-            back: cleanAnkiHtml(g.back) || (g.front.includes('{{c') ? extractClozeBack(g.front) : 'Oclusão Cloze'),
-            comment: g.comment ? cleanAnkiHtml(g.comment) : undefined,
-            tags: g.tags ? g.tags.split(/[\s,]+/).filter(Boolean) : undefined,
-            rawLineIndex: idx + 1
-          })),
+          cards: generic.map((g, idx) => {
+            const frontRefs = extractAnkiImageRefs(g.front);
+            const backRefs = extractAnkiImageRefs(g.back);
+            const commentRefs = g.comment ? extractAnkiImageRefs(g.comment) : [];
+            const frontImageRef = frontRefs[0];
+            const backImageRef = backRefs[0] || commentRefs[0];
+
+            return {
+              front: cleanAnkiHtml(g.front),
+              back: cleanAnkiHtml(g.back) || (g.front.includes('{{c') ? extractClozeBack(g.front) : ''),
+              comment: g.comment ? cleanAnkiHtml(g.comment) : undefined,
+              frontImageRef,
+              backImageRef,
+              imageFrontUrl: isSafeHttpImageUrl(frontImageRef) ? frontImageRef : undefined,
+              imageUrl: isSafeHttpImageUrl(backImageRef) ? backImageRef : undefined,
+              tags: g.tags ? g.tags.split(/[\s,]+/).filter(Boolean) : undefined,
+              rawLineIndex: idx + 1
+            };
+          }),
           deckMap
         };
       } catch {}
@@ -303,17 +460,28 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
       if (!row.flds) continue;
 
       const fields = row.flds.split(String.fromCharCode(31));
-      const front = cleanAnkiHtml(fields[0] || '');
-      let back = cleanAnkiHtml(fields[1] || '');
-      const extraFields = fields.slice(2).map((f) => cleanAnkiHtml(f)).filter(Boolean);
+      const rawFront = fields[0] || '';
+      const rawBack = fields[1] || '';
+      const rawExtras = fields.slice(2);
+
+      const frontRefs = extractAnkiImageRefs(rawFront);
+      const backRefs = extractAnkiImageRefs(rawBack);
+      const extraRefs = rawExtras.flatMap((f) => extractAnkiImageRefs(f));
+
+      const frontImageRef = frontRefs[0];
+      const backImageRef = backRefs[0] || extraRefs[0];
+
+      const front = cleanAnkiHtml(rawFront);
+      let back = cleanAnkiHtml(rawBack);
+      const extraFields = rawExtras.map((f) => cleanAnkiHtml(f)).filter(Boolean);
       const comment = extraFields.join('\n\n');
 
-      if (!front && !back) continue;
+      if (!front && !back && !frontImageRef && !backImageRef) continue;
 
       // Suporte inteligente a cartões Cloze
       if (front.includes('{{c') && !back) {
         back = extractClozeBack(front);
-      } else if (!back && front) {
+      } else if (!back && !backImageRef && (front || frontImageRef)) {
         back = 'Sem resposta cadastrada';
       }
 
@@ -340,6 +508,10 @@ export function parseAnkiSqliteBuffer(dbBuffer: Buffer): {
         front,
         back,
         comment: comment || undefined,
+        frontImageRef,
+        backImageRef,
+        imageFrontUrl: isSafeHttpImageUrl(frontImageRef) ? frontImageRef : undefined,
+        imageUrl: isSafeHttpImageUrl(backImageRef) ? backImageRef : undefined,
         sourceDeckName: deckName || undefined,
         tags: tags.length > 0 ? tags : undefined,
         specialty,
@@ -416,10 +588,17 @@ export function parseAnkiText(
     const cols = line.split(delimiter);
     if (cols.length === 0) continue;
 
-    const front = cleanAnkiHtml(cols[0] || '');
-    let back = cleanAnkiHtml(cols[1] || '');
+    const rawFront = cols[0] || '';
+    const rawBack = cols[1] || '';
+
+    const frontRefs = extractAnkiImageRefs(rawFront);
+    const backRefs = extractAnkiImageRefs(rawBack);
+
+    const front = cleanAnkiHtml(rawFront);
+    let back = cleanAnkiHtml(rawBack);
     let comment = '';
     let tags: string[] = [];
+    const extraRefs: string[] = [];
 
     if (tagColumnIndex >= 0 && cols[tagColumnIndex]) {
       tags = cols[tagColumnIndex].split(/[\s,]+/).map((t) => t.trim()).filter(Boolean);
@@ -428,13 +607,16 @@ export function parseAnkiText(
     if (format === 'txt_cards') {
       // Cartões em Texto Simples: 2 colunas principais (front / back)
       if (cols.length > 2 && tagColumnIndex !== 2) {
-        comment = cleanAnkiHtml(cols.slice(2).join('\n'));
+        const extraSlice = cols.slice(2).join('\n');
+        extraRefs.push(...extractAnkiImageRefs(extraSlice));
+        comment = cleanAnkiHtml(extraSlice);
       }
     } else {
       // Notas em Texto Puro: coluna 0 = frente, 1 = verso, 2..N = extras
       const extraCols: string[] = [];
       for (let i = 2; i < cols.length; i++) {
         if (i !== tagColumnIndex) {
+          extraRefs.push(...extractAnkiImageRefs(cols[i]));
           const c = cleanAnkiHtml(cols[i]);
           if (c) extraCols.push(c);
         }
@@ -446,11 +628,18 @@ export function parseAnkiText(
       back = extractClozeBack(front);
     }
 
-    if (front || back) {
+    const frontImageRef = frontRefs[0];
+    const backImageRef = backRefs[0] || extraRefs[0];
+
+    if (front || back || frontImageRef || backImageRef) {
       cards.push({
         front,
-        back: back || 'Oclusão Cloze',
+        back: back || (backImageRef ? '' : 'Oclusão Cloze'),
         comment: comment || undefined,
+        frontImageRef,
+        backImageRef,
+        imageFrontUrl: isSafeHttpImageUrl(frontImageRef) ? frontImageRef : undefined,
+        imageUrl: isSafeHttpImageUrl(backImageRef) ? backImageRef : undefined,
         sourceDeckName: detectedDeck || undefined,
         tags: tags.length > 0 ? tags : undefined,
         rawLineIndex: idx + 1
@@ -490,12 +679,21 @@ export function parseUniversalFlashcardFile(
     if (ankiDbName && unzipped[ankiDbName]) {
       const res = parseAnkiSqliteBuffer(unzipped[ankiDbName]);
       const deckName = Object.values(res.deckMap)[0] || filename.replace(/\.[^/.]+$/, '');
+      const mediaFiles = extractReferencedAnkiMedia(unzipped, res.cards);
       return {
         success: true,
         cards: res.cards,
         detectedFormat: ext === '.colpkg' ? 'colpkg' : 'apkg',
-        detectedDeckName: deckName
+        detectedDeckName: deckName,
+        mediaFiles: Object.keys(mediaFiles).length > 0 ? mediaFiles : undefined
       };
+    }
+
+    // Pacote moderno do Anki 23.10+ (zstd / anki21b) sem fallback legado
+    if (unzipped['collection.anki21b'] || isZstdBuffer(unzipped['media'])) {
+      throw new Error(
+        'Este pacote foi exportado no formato moderno comprimido do Anki (anki21b/zstd). No Anki Desktop, clique em Exportar e marque a opção "Suporte a versões antigas do Anki" (Legacy) para importar notas e imagens.'
+      );
     }
 
     // Se houver pacote anki aninhado dentro de um .zip
@@ -512,15 +710,17 @@ export function parseUniversalFlashcardFile(
     );
     if (sqliteEntry && unzipped[sqliteEntry]) {
       const res = parseAnkiSqliteBuffer(unzipped[sqliteEntry]);
+      const mediaFiles = extractReferencedAnkiMedia(unzipped, res.cards);
       return {
         success: true,
         cards: res.cards,
         detectedFormat: 'db',
-        detectedDeckName: Object.values(res.deckMap)[0] || filename.replace(/\.[^/.]+$/, '')
+        detectedDeckName: Object.values(res.deckMap)[0] || filename.replace(/\.[^/.]+$/, ''),
+        mediaFiles: Object.keys(mediaFiles).length > 0 ? mediaFiles : undefined
       };
     }
 
-    // Se houver arquivos de texto dentro do zip (.csv, .tsv, .txt)
+    // Se houver arquivos de texto dentro do zip (.csv, .tsv, .txt) + eventual pasta de imagens
     const textCards: ParsedImportCard[] = [];
     let detectedDeck = '';
     for (const [k, textBuf] of Object.entries(unzipped)) {
@@ -533,11 +733,13 @@ export function parseUniversalFlashcardFile(
     }
 
     if (textCards.length > 0) {
+      const mediaFiles = extractReferencedAnkiMedia(unzipped, textCards);
       return {
         success: true,
         cards: textCards,
         detectedFormat: 'zip',
-        detectedDeckName: detectedDeck || filename.replace(/\.[^/.]+$/, '')
+        detectedDeckName: detectedDeck || filename.replace(/\.[^/.]+$/, ''),
+        mediaFiles: Object.keys(mediaFiles).length > 0 ? mediaFiles : undefined
       };
     }
 

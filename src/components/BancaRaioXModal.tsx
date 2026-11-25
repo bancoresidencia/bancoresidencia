@@ -1,9 +1,11 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { Target, X, Building2, TrendingUp, AlertTriangle, Lightbulb, Loader2, BookOpen } from 'lucide-react';
+import { Target, Building2, TrendingUp, AlertTriangle, Lightbulb, Loader2, BookOpen } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { AdvancedFilterState } from '@/types';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface BancaRaioXModalProps {
   isOpen: boolean;
@@ -46,6 +48,8 @@ export function BancaRaioXModal({ isOpen, onClose, onApplyFilters, initialBanca 
   const [data, setData] = useState<RaioXData | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useOverlayDismiss({ isOpen, onClose });
 
   const loadBancaData = useCallback(async (banca: string) => {
     setIsLoading(true);
@@ -90,7 +94,10 @@ export function BancaRaioXModal({ isOpen, onClose, onApplyFilters, initialBanca 
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div 
         className="w-full max-w-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh]"
         onClick={(e) => e.stopPropagation()}
@@ -117,13 +124,12 @@ export function BancaRaioXModal({ isOpen, onClose, onApplyFilters, initialBanca 
             </div>
           </div>
 
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-          >
-            <X className="w-4 h-4" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar Raio-X"
+          />
         </div>
 
         {/* Seletor de Bancas Populares */}

@@ -25,6 +25,8 @@ import {
   Save,
   CheckCheck
 } from 'lucide-react';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 import {
   UserAnswerItem,
   ErrorReasonType,
@@ -230,6 +232,11 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
       onClose();
     }, 400);
   };
+
+  useOverlayDismiss({
+    isOpen: true,
+    onClose: handleSaveAndExit
+  });
 
   // Helper para renderizar texto com marcações em negrito/itálico e sanitização médica completa
   const renderFormattedText = (text: string | null | undefined) => {
@@ -579,15 +586,13 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
       {/* 1. Header Focado da Sessão de Revisão com Controles de Resiliência */}
       <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-4 rounded-3xl shadow-xs flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
-          <button
-            type="button"
+          <BackArrowButton
             onClick={handleSaveAndExit}
-            className="w-8 h-8 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0 active:scale-95"
-            title="Salvar e Voltar ao Caderno (Esc)"
-            aria-label="Salvar e Voltar ao Caderno"
-          >
-            <ChevronLeft className="w-4 h-4" />
-          </button>
+            title="Salvar e Voltar ao Caderno"
+            ariaLabel="Salvar e Voltar ao Caderno"
+            variant="surface"
+            size="sm"
+          />
 
           <div className="h-4 w-px bg-slate-200 dark:bg-zinc-800" />
 

@@ -31,7 +31,8 @@ import { Logo } from '@/components/Logo';
 import { GlobalSearchBar } from '@/components/GlobalSearchBar';
 import { HeaderStudyTimer } from '@/components/HeaderStudyTimer';
 import { ThemeSelector } from '@/components/ThemeSelector';
-import { Button, Badge } from '@/components/ui';
+import { Button, Badge, BackArrowButton } from '@/components/ui';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 import dynamic from 'next/dynamic';
 
 const KeyboardShortcutsModal = dynamic(
@@ -86,6 +87,11 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   // Barra lateral retrátil (persistida no localStorage)
   const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useOverlayDismiss({
+    isOpen: mobileMenuOpen,
+    onClose: () => setMobileMenuOpen(false)
+  });
 
   // Bloqueia rolagem do body quando drawer mobile estiver aberto
   useEffect(() => {
@@ -616,14 +622,11 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
           >
             <div className="flex items-center justify-between pb-3.5 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]">
               <Logo variant="full" className="h-7 w-auto max-w-[160px] shrink-0" />
-              <button
-                type="button"
+              <BackArrowButton
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-9 h-9 flex items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800/80 text-zinc-500 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white active:scale-95 cursor-pointer touch-manipulation"
-                aria-label="Fechar menu"
-              >
-                <X className="w-4 h-4" />
-              </button>
+                title="Voltar (Esc)"
+                ariaLabel="Voltar"
+              />
             </div>
             <div className="pt-3">
               <Sidebar

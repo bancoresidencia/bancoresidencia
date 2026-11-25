@@ -4,13 +4,14 @@ import React, { useState } from 'react';
 import {
   Sparkles,
   Building2,
-  Sliders,
-  X
+  Sliders
 } from 'lucide-react';
 import {
   ScheduleDistributionStrategy
 } from '@/types/studySchedule';
 import { getAvailableTargetInstitutions } from '@/services/examIncidenceService';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface AutoScheduleGeneratorModalProps {
   isOpen: boolean;
@@ -51,6 +52,8 @@ export const AutoScheduleGeneratorModal: React.FC<AutoScheduleGeneratorModalProp
   const [maxFociLimit, setMaxFociLimit] = useState<number>(180);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
+  useOverlayDismiss({ isOpen, onClose });
+
   if (!isOpen) return null;
 
   const toggleDay = (day: number) => {
@@ -83,12 +86,16 @@ export const AutoScheduleGeneratorModal: React.FC<AutoScheduleGeneratorModalProp
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150"
+      onClick={onClose}
+    >
       <div
         className="w-full max-w-2xl bg-[var(--bg-card,#ffffff)] dark:bg-[#0e0e11] border border-[var(--card-border,#e4e4e7)] dark:border-zinc-800 rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-150 flex flex-col max-h-[92vh]"
         role="dialog"
         aria-modal="true"
         aria-labelledby="generator-title"
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Topo */}
         <div className="px-6 py-4.5 border-b border-[var(--card-border,#e4e4e7)] dark:border-zinc-800 flex items-center justify-between shrink-0">
@@ -105,13 +112,12 @@ export const AutoScheduleGeneratorModal: React.FC<AutoScheduleGeneratorModalProp
               </p>
             </div>
           </div>
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-1.5 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar modal"
+          />
         </div>
 
         {/* Formulário com Scroll */}

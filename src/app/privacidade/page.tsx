@@ -1,23 +1,28 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
-import { Shield, Lock, Eye, Calendar, ArrowLeft, CheckCircle2, Mail, ExternalLink } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { Shield, Lock, Eye, Calendar, CheckCircle2, Mail, ExternalLink } from 'lucide-react';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 export default function PoliticaPrivacidadePage() {
+  const router = useRouter();
+
+  const handleBack = () => {
+    if (typeof window !== 'undefined' && window.history.length > 1) {
+      router.back();
+    } else {
+      router.push('/');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-[#0a0a0c] text-zinc-800 dark:text-zinc-200 py-12 px-4 sm:px-6 lg:px-8 font-sans selection:bg-blue-500/20">
       <div className="max-w-4xl mx-auto space-y-8">
 
         {/* Botão Voltar */}
         <div>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors p-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-900"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Voltar para a Plataforma</span>
-          </Link>
+          <BackArrowButton onClick={handleBack} title="Voltar" ariaLabel="Voltar" />
         </div>
 
         {/* Cabeçalho */}

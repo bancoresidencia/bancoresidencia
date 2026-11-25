@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Flag, X, Send, AlertTriangle, CheckCircle2 } from 'lucide-react';
+import { Flag, Send, AlertTriangle, CheckCircle2 } from 'lucide-react';
 import { Question, ReportReason } from '@/types';
 import { reportQuestionIssue } from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 interface ReportIssueDrawerProps {
   isOpen: boolean;
@@ -61,6 +63,8 @@ export const ReportIssueDrawer: React.FC<ReportIssueDrawerProps> = ({
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+  useOverlayDismiss({ isOpen: Boolean(isOpen && question), onClose });
+
   if (!isOpen || !question) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -108,10 +112,16 @@ export const ReportIssueDrawer: React.FC<ReportIssueDrawerProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
+    <div
+      role="dialog"
+      aria-modal="true"
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div 
         className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] text-zinc-900 dark:text-zinc-100"
         style={{ boxShadow: '0 25px 60px -15px rgba(0, 0, 0, 0.5)' }}
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Header do Drawer */}
         <div className="flex items-center justify-between p-4 sm:p-5 border-b border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30">
@@ -130,13 +140,12 @@ export const ReportIssueDrawer: React.FC<ReportIssueDrawerProps> = ({
             </div>
           </div>
 
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            variant="ghost"
+            title="Voltar (Esc)"
+            ariaLabel="Voltar"
+          />
         </div>
 
         {/* Formulário / Conteúdo */}

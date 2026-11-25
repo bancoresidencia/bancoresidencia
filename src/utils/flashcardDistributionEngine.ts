@@ -38,6 +38,8 @@ export interface RawParsedCsvRow {
   front: string;
   back: string;
   comment?: string;
+  imageFrontUrl?: string | null;
+  imageUrl?: string | null;
   specialty?: string;
   theme?: string;
   focus?: string;
@@ -50,6 +52,23 @@ export interface RawParsedCsvRow {
   studyDepth?: 'study' | 'review';
   tags?: string[];
   rawLineIndex: number;
+}
+
+function extractFirstSafeHttpImageFromHtml(html: string): string | undefined {
+  if (!html) return undefined;
+  const match = html.match(/<img\b[^>]*?\bsrc\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+))[^>]*>/i);
+  const src = (match?.[1] ?? match?.[2] ?? match?.[3] ?? '').trim();
+  if (/^https?:\/\/.+/i.test(src)) return src;
+  return undefined;
+}
+
+function normalizeImageUrlCell(raw?: string): string | undefined {
+  const val = (raw || '').trim();
+  if (!val) return undefined;
+  const fromHtml = extractFirstSafeHttpImageFromHtml(val);
+  if (fromHtml) return fromHtml;
+  if (/^https?:\/\/.+/i.test(val)) return val;
+  return undefined;
 }
 
 /**
@@ -211,6 +230,8 @@ export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
     front: 0,
     back: 1,
     comment: -1,
+    imageFront: -1,
+    imageBack: -1,
     specialty: -1,
     theme: -1,
     focus: -1,
@@ -232,6 +253,10 @@ export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
         headerIndices.back = idx;
       } else if (['comentario', 'comment', 'explicacao', 'justificativa', 'armadilha', 'obs'].includes(col)) {
         headerIndices.comment = idx;
+      } else if (['imagemfrente', 'imagefront', 'imagefronturl', 'frontimage', 'fotofrente'].includes(col)) {
+        headerIndices.imageFront = idx;
+      } else if (['imagemverso', 'imageback', 'imageurl', 'imagem', 'image', 'backimage', 'fotoverso'].includes(col)) {
+        headerIndices.imageBack = idx;
       } else if (['especialidade', 'specialty', 'area', 'materia'].includes(col)) {
         headerIndices.specialty = idx;
       } else if (['tema', 'theme', 'topico', 'assunto'].includes(col)) {
@@ -270,14 +295,22 @@ export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
     const row = rows[r];
     const frontRaw = row[headerIndices.front] || '';
     const backRaw = row[headerIndices.back] || '';
+    const commentRaw = headerIndices.comment >= 0 ? row[headerIndices.comment] || '' : '';
 
     const front = cleanAnkiHtml(frontRaw);
     const back = cleanAnkiHtml(backRaw);
+    const imageFrontUrl =
+      (headerIndices.imageFront >= 0 ? normalizeImageUrlCell(row[headerIndices.imageFront]) : undefined) ||
+      extractFirstSafeHttpImageFromHtml(frontRaw);
+    const imageUrl =
+      (headerIndices.imageBack >= 0 ? normalizeImageUrlCell(row[headerIndices.imageBack]) : undefined) ||
+      extractFirstSafeHttpImageFromHtml(backRaw) ||
+      extractFirstSafeHttpImageFromHtml(commentRaw);
 
-    // Se estiver vazio tanto a frente quanto o verso, ignora linha
-    if (!front && !back) continue;
+    // Se estiver vazio tanto o texto quanto a imagem da frente e do verso, ignora linha
+    if (!front && !back && !imageFrontUrl && !imageUrl) continue;
 
-    const comment = headerIndices.comment >= 0 ? cleanAnkiHtml(row[headerIndices.comment] || '') : undefined;
+    const comment = headerIndices.comment >= 0 ? cleanAnkiHtml(commentRaw) : undefined;
     const specialty = headerIndices.specialty >= 0 ? row[headerIndices.specialty]?.trim() : undefined;
     const theme = headerIndices.theme >= 0 ? row[headerIndices.theme]?.trim() : undefined;
     const focus = headerIndices.focus >= 0 ? row[headerIndices.focus]?.trim() : undefined;
@@ -321,6 +354,8 @@ export function parseFlashcardsCsv(csvContent: string): RawParsedCsvRow[] {
       front,
       back: resolvedBack || (front.includes('{{c') ? 'Oclusão Cloze' : ''),
       comment: comment || undefined,
+      imageFrontUrl: imageFrontUrl || null,
+      imageUrl: imageUrl || null,
       specialty: specialty || deckSpec || undefined,
       theme: theme || deckTema || undefined,
       focus: focus || deckFoco || undefined,
@@ -600,10 +635,10 @@ export function buildFlashcardPreviews(
     let isValid = true;
     let validationError: string | undefined = undefined;
 
-    if (!row.front.trim()) {
+    if (!row.front.trim() && !row.imageFrontUrl) {
       isValid = false;
       validationError = 'Frente do cartão não pode ser vazia.';
-    } else if (!isCloze && !row.back.trim()) {
+    } else if (!isCloze && !row.back.trim() && !row.imageUrl) {
       isValid = false;
       validationError = 'Verso não pode ser vazio para cartões sem oclusão cloze.';
     }
@@ -637,6 +672,8 @@ export function buildFlashcardPreviews(
       front: row.front,
       back: row.back || (isCloze ? 'Cloze' : ''),
       comment: row.comment,
+      imageFrontUrl: row.imageFrontUrl || null,
+      imageUrl: row.imageUrl || null,
       specialty: finalSpec,
       theme: finalTema,
       focus: finalFoco,

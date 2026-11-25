@@ -2,7 +2,6 @@
 
 import React from 'react';
 import {
-  X,
   Clock,
   BookOpen,
   CalendarDays,
@@ -20,6 +19,8 @@ import { StudySession, StudyType } from '@/types/studyTimer';
 import { DailyScheduleSlot } from './scheduleTypes';
 import { CORE_SPECIALTIES } from '@/services/taxonomySearchService';
 import { formatSecondsToShort } from '@/context/StudyTimerContext';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface DayStudyDetailsModalProps {
   isOpen: boolean;
@@ -60,6 +61,8 @@ export const DayStudyDetailsModal: React.FC<DayStudyDetailsModalProps> = ({
   onDeleteSession,
   onNavigateToDayView
 }) => {
+  useOverlayDismiss({ isOpen, onClose });
+
   if (!isOpen) return null;
 
   // Formatação amigável da data (ex: "Sábado, 7 de Novembro de 2026")
@@ -105,13 +108,12 @@ export const DayStudyDetailsModal: React.FC<DayStudyDetailsModalProps> = ({
               </div>
             </div>
           </div>
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar detalhes do dia"
+          />
         </div>
 
         {/* Resumo Rápido do Dia */}

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
-import { ArrowLeft, ShieldCheck, Gift, Tag, Loader2, ArrowRight, Check, AlertCircle } from 'lucide-react';
+import { ShieldCheck, Gift, Tag, Loader2, ArrowRight, Check, AlertCircle } from 'lucide-react';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 import type { PlanDefinition } from '@/config/plans';
 import { verifyCheckoutCoupon, removeAppliedReferralCode, type AppliedReferral } from '@/config/ambassadorConfig';
 import { useTheme } from '@/context/ThemeContext';
@@ -57,14 +58,7 @@ export function CheckoutPlanSummary({ basePlan, effectivePlan, appliedReferral, 
 
   return <>      {/* Botão Voltar e Resumo do Plano */}
       <div className="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
-        <button
-          type="button"
-          onClick={onBack}
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Trocar de Plano
-        </button>
+        <BackArrowButton onClick={onBack} title="Trocar de plano" ariaLabel="Voltar" />
         <div className="text-right">
           <div className="text-xs text-slate-400">Plano Selecionado</div>
           <div className="text-sm font-black text-slate-900 dark:text-white">{basePlan.name}</div>

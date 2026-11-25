@@ -47,6 +47,7 @@ import {
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { useScrollReveal } from './useScrollReveal';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 type PlatformTabKey = 'questoes' | 'flashcards' | 'resumos' | 'desempenho';
 
@@ -1511,14 +1512,12 @@ export const LandingInsidePlatformSection: React.FC<LandingInsidePlatformSection
           <div className="space-y-4">
             {/* Header da Sessão Idêntico à Imagem 8 */}
             <div className="flex items-center justify-between p-3 rounded-2xl bg-[#10121a] border border-zinc-800 text-xs font-bold text-zinc-300 shadow-md">
-              <button
-                type="button"
+              <BackArrowButton
                 onClick={() => setActiveTab('questoes')}
-                className="flex items-center gap-1.5 text-zinc-400 hover:text-white cursor-pointer"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                <span>Sair</span>
-              </button>
+                variant="ghost"
+                title="Sair"
+                ariaLabel="Sair da demonstração"
+              />
 
               <div className="flex items-center gap-3">
                 <div className="flex items-center gap-1 font-mono text-zinc-300">

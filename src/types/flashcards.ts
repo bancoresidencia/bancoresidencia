@@ -117,6 +117,8 @@ export interface CsvFlashcardPreview {
   front: string;
   back: string;
   comment?: string;
+  imageFrontUrl?: string | null;
+  imageUrl?: string | null;
   specialty: string;
   theme: string;
   focus: string;

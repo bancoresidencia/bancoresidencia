@@ -9,6 +9,8 @@ import { SIMULADO_PRIAPISMO_QUESTIONS } from '@/data/simuladoPriapismoData';
 import { QuestionCard, HighlighterColor } from '@/components/QuestionCard';
 import { SimuladoPriapismoHeader, FontSize } from '@/components/simulado-priapismo/SimuladoPriapismoHeader';
 import { SimuladoQrModal } from '@/components/simulado-priapismo/SimuladoQrModal';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 export default function SimuladoPriapismoPage() {
   const { user } = useAuth()
@@ -26,6 +28,11 @@ function DemoSession({ owner }: { owner: string }) {
   const [isQrModalOpen, setIsQrModalOpen] = useState(false);
   const [isCompletedModalOpen, setIsCompletedModalOpen] = useState(false);
   const [shareUrl, setShareUrl] = useState('/simulado-priapismo');
+
+  useOverlayDismiss({
+    isOpen: isCompletedModalOpen,
+    onClose: () => setIsCompletedModalOpen(false)
+  });
 
   // Armazena as respostas do usuário nesta sessão de simulado
   const [sessionAnswers, setSessionAnswers] = useState<
@@ -237,8 +244,23 @@ function DemoSession({ owner }: { owner: string }) {
 
       {/* Modal de Conclusão / Desempenho */}
       {isCompletedModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="bg-white dark:bg-[#111622] rounded-3xl border border-slate-200 dark:border-white/10 max-w-md w-full p-6 sm:p-8 shadow-2xl relative">
+        <div
+          role="dialog"
+          aria-modal="true"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200"
+          onClick={() => setIsCompletedModalOpen(false)}
+        >
+          <div
+            className="bg-white dark:bg-[#111622] rounded-3xl border border-slate-200 dark:border-white/10 max-w-md w-full p-6 sm:p-8 shadow-2xl relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <BackArrowButton
+              onClick={() => setIsCompletedModalOpen(false)}
+              size="sm"
+              title="Voltar (Esc)"
+              ariaLabel="Voltar"
+              className="absolute top-4 left-4"
+            />
             <div className="text-center space-y-3">
               <div
                 className="w-14 h-14 mx-auto rounded-2xl flex items-center justify-center text-white shadow-lg"

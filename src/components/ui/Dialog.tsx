@@ -1,8 +1,9 @@
 'use client';
 
-import React, { useEffect, useRef, useCallback } from 'react';
-import { X } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
 import { cn } from './cn';
+import { BackArrowButton } from './BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 export interface DialogProps {
   isOpen: boolean;
@@ -23,27 +24,18 @@ export const Dialog: React.FC<DialogProps> = ({
 }) => {
   const overlayRef = useRef<HTMLDivElement>(null);
 
-  const handleKeyDown = useCallback(
-    (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    },
-    [onClose]
-  );
+  useOverlayDismiss({ isOpen, onClose });
 
   useEffect(() => {
     if (isOpen) {
       const originalOverflow = document.body.style.overflow;
       document.body.style.overflow = 'hidden';
-      window.addEventListener('keydown', handleKeyDown);
 
       return () => {
         document.body.style.overflow = originalOverflow;
-        window.removeEventListener('keydown', handleKeyDown);
       };
     }
-  }, [isOpen, handleKeyDown]);
+  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -77,14 +69,13 @@ export const Dialog: React.FC<DialogProps> = ({
         )}
       >
         {showCloseButton && (
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            aria-label="Fechar modal"
-            className="absolute top-3.5 right-3.5 w-9 h-9 flex items-center justify-center rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer touch-manipulation z-10"
-          >
-            <X className="w-4 h-4" />
-          </button>
+            variant="ghost"
+            title="Voltar (Esc)"
+            ariaLabel="Voltar"
+            className="absolute top-3.5 right-3.5 z-10"
+          />
         )}
         {children}
       </div>

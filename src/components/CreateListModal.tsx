@@ -2,7 +2,6 @@
 
 import React, { useState, useMemo } from 'react';
 import {
-  X,
   ListPlus,
   FolderPlus,
   Play,
@@ -13,6 +12,8 @@ import {
 } from 'lucide-react';
 import { Folder, AdvancedFilterState } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 export interface CreateListModalProps {
   isOpen: boolean;
@@ -41,6 +42,8 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
   isGenerating = false
 }) => {
   const { accentConfig } = useTheme();
+
+  useOverlayDismiss({ isOpen, onClose });
 
   // 1. Título Padrão Sugerido da Lista
   const defaultTitle = useMemo(() => {
@@ -164,12 +167,16 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div
         className="w-full max-w-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col max-h-[90dvh] overflow-hidden"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-list-title"
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Topo do Modal */}
         <div className="flex items-center justify-between p-5 sm:p-6 border-b border-slate-100 dark:border-slate-800">
@@ -186,13 +193,12 @@ export const CreateListModal: React.FC<CreateListModalProps> = ({
               </p>
             </div>
           </div>
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar modal"
+          />
         </div>
 
         {/* Corpo com Scroll */}

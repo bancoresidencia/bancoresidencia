@@ -40,6 +40,8 @@ import { MedicalGlossaryTooltip } from './study-material/MedicalGlossaryTooltip'
 import { ExamTrapBadge } from './study-material/ExamTrapBadge';
 import { ClozeStudyToggle } from './study-material/ClozeStudyToggle';
 import { useAuth } from '@/context/AuthContext';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 import dynamic from 'next/dynamic';
 
 const MermaidDiagram = dynamic(
@@ -1997,6 +1999,11 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   // Scroll Spy com Observer ajustado para não conflitar com a barra superior
   const [activeSectionSlug, setActiveSectionSlug] = useState<string>('');
   const [isMobileTocOpen, setIsMobileTocOpen] = useState<boolean>(false);
+
+  useOverlayDismiss({
+    isOpen: isMobileTocOpen,
+    onClose: () => setIsMobileTocOpen(false)
+  });
   const [readingProgress, setReadingProgress] = useState<number>(0);
   const pillRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
 
@@ -2066,15 +2073,12 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     <div className="space-y-6 w-full max-w-7xl mx-auto">
       {/* Barra Superior de Ações */}
       <div className="flex flex-wrap items-center justify-between gap-2.5 sm:gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-4">
-        <Button
-          type="button"
-          variant="secondary"
-          size="xs"
+        <BackArrowButton
           onClick={onBack}
-          leftIcon={<ArrowLeft className="w-4 h-4" />}
-        >
-          Voltar para lista
-        </Button>
+          title="Voltar para a lista"
+          ariaLabel="Voltar para lista"
+          variant="surface"
+        />
 
         <div className="flex flex-wrap items-center gap-2">
           {/* Barra de Controle de Marca-Texto Instantâneo (Fluidez Máxima) */}

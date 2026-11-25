@@ -1,5 +1,6 @@
 export * from './cn';
 export * from './Button';
+export * from './BackArrowButton';
 export * from './Card';
 export * from './Badge';
 export * from './Input';

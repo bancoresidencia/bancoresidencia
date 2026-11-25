@@ -15,10 +15,11 @@ export default function TermosDeUsoPage() {
         <div>
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-xs font-semibold text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors p-2 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-900"
+            aria-label="Voltar"
+            title="Voltar"
+            className="w-9 h-9 inline-flex items-center justify-center rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700/80 border border-zinc-200/80 dark:border-zinc-700/60 text-zinc-700 dark:text-zinc-200 shadow-xs transition-all active:scale-95"
           >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Voltar para a Página Inicial</span>
+            <ArrowLeft className="w-4 h-4" aria-hidden="true" />
           </Link>
         </div>
 

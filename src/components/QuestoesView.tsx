@@ -42,6 +42,8 @@ import { SessionPerformanceView } from '@/components/SessionPerformanceView';
 import { CreateCadernoModal } from '@/components/CreateCadernoModal';
 import { ReportIssueDrawer } from '@/components/ReportIssueDrawer';
 import { KeyboardShortcutsModal } from '@/components/KeyboardShortcutsModal';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { useSubscription } from '@/context/SubscriptionContext';
@@ -1006,16 +1008,14 @@ export const QuestoesView: React.FC = () => {
               {lists.find((l) => l.id === activeListId)?.title || 'Caderno de Questões'}
             </strong>
           </div>
-          <button
-            type="button"
+          <BackArrowButton
             onClick={() => {
               setActiveListId(null);
               handleReturnToFilters();
             }}
-            className="shrink-0 px-3 py-1.5 rounded-xl bg-blue-100 dark:bg-blue-900/40 hover:bg-blue-200 dark:hover:bg-blue-800/40 font-bold transition-colors cursor-pointer touch-manipulation"
-          >
-            Sair do Caderno
-          </button>
+            title="Sair do Caderno"
+            ariaLabel="Voltar"
+          />
         </div>
       )}
 

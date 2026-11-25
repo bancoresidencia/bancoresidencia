@@ -40,6 +40,8 @@ import {
   generateDynamicStudyMaterial,
   GranularErrorGroup
 } from '@/services/cadernoErrosService';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface CadernoDeErrosProps {
   userAnswers: Record<string, UserAnswerItem>;
@@ -139,6 +141,11 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
 
   // Modal Central de Remediação
   const [selectedModalGroup, setSelectedModalGroup] = useState<GranularErrorGroup | null>(null);
+
+  useOverlayDismiss({
+    isOpen: !!selectedModalGroup,
+    onClose: () => setSelectedModalGroup(null)
+  });
 
   // Materiais de apoio carregados para o Leitor Oficial
   const [allMaterials, setAllMaterials] = useState<StudyMaterialItem[]>([]);
@@ -423,13 +430,12 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
     return (
       <div className="animate-in fade-in duration-150 font-inter space-y-3">
         <div className="flex items-center justify-between pb-1">
-          <button
-            type="button"
+          <BackArrowButton
             onClick={() => setActiveReaderMaterial(null)}
-            className="px-3.5 py-1.5 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-xs font-bold text-zinc-700 dark:text-zinc-200 inline-flex items-center gap-2 transition-colors cursor-pointer shadow-2xs"
-          >
-            ← Voltar ao Caderno de Erros
-          </button>
+            title="Voltar ao Caderno de Erros"
+            ariaLabel="Voltar ao Caderno de Erros"
+            variant="surface"
+          />
           <span className="text-xs text-zinc-400 font-medium hidden sm:inline-block">
             Material de Remediação Ativa
           </span>
@@ -928,13 +934,12 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 </h2>
               </div>
 
-              <button
-                type="button"
+              <BackArrowButton
                 onClick={() => setSelectedModalGroup(null)}
-                className="w-8 h-8 rounded-xl flex items-center justify-center text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
-              >
-                <X className="w-4 h-4" />
-              </button>
+                variant="ghost"
+                title="Fechar"
+                ariaLabel="Fechar remediação"
+              />
             </div>
 
             {/* Conteúdo com Dados Reais do Aluno */}

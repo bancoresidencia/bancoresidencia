@@ -23,6 +23,7 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { AddFlashcardDrawer } from './flashcards/AddFlashcardDrawer';
+import { FlashcardImageField } from './flashcards/FlashcardImageField';
 import {
   FlashcardItem,
   FlashcardRating,
@@ -110,7 +111,10 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
   const [editFront, setEditFront] = useState('');
   const [editBack, setEditBack] = useState('');
   const [editComment, setEditComment] = useState('');
+  const [editFrontImageUrl, setEditFrontImageUrl] = useState<string | null>(null);
+  const [editBackImageUrl, setEditBackImageUrl] = useState<string | null>(null);
   const [editPriority, setEditPriority] = useState<'essential' | 'standard'>('standard');
+  const [zoomedImageUrl, setZoomedImageUrl] = useState<string | null>(null);
 
   // Drawer Central de Estatísticas do Flashcard
   const [showStatsModal, setShowStatsModal] = useState(false);
@@ -199,6 +203,8 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
       setEditFront(currentCard.front);
       setEditBack(currentCard.back);
       setEditComment(currentCard.comment || '');
+      setEditFrontImageUrl(currentCard.imageFrontUrl || null);
+      setEditBackImageUrl(currentCard.imageUrl || null);
       setEditPriority(currentCard.priority || 'standard');
       setIsInlineEditing(true);
     }
@@ -211,12 +217,17 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
 
   const handleSaveCardEdit = (e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
-    if (!currentCard || !editFront.trim() || !editBack.trim()) return;
+    if (!currentCard) return;
+    const hasFront = Boolean(editFront.trim()) || Boolean(editFrontImageUrl);
+    const hasBack = Boolean(editBack.trim()) || Boolean(editBackImageUrl);
+    if (!hasFront || !hasBack) return;
 
     const updatedFields: Partial<FlashcardItem> = {
       front: editFront.trim(),
       back: editBack.trim(),
       comment: editComment.trim() || undefined,
+      imageFrontUrl: editFrontImageUrl,
+      imageUrl: editBackImageUrl,
       priority: editPriority
     };
 
@@ -819,70 +830,114 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
           {!isFlipped ? (
             <div className="space-y-4 max-w-xl mx-auto">
               {isInlineEditing ? (
-                <textarea
-                  value={editFront}
-                  onChange={(e) => setEditFront(e.target.value)}
-                  onClick={(e) => e.stopPropagation()}
-                  rows={Math.max(2, Math.ceil((editFront || '').length / 45))}
-                  placeholder="Pergunta ou enunciado do flashcard..."
-                  className="w-full text-base sm:text-lg font-medium leading-relaxed text-center text-zinc-900 dark:text-zinc-100 bg-transparent border-b-2 border-dashed border-amber-500/60 hover:border-amber-500 focus:border-amber-500 outline-none resize-none transition-colors p-1"
-                />
-              ) : (
-                <div className="text-base sm:text-lg font-medium leading-relaxed text-zinc-900 dark:text-zinc-100">
-                  {renderFrontContent(currentCard.front)}
-                </div>
-              )}
-              {isRealMedicalImage(currentCard.imageFrontUrl) && (
-                <div className="pt-2">
-                  <img
-                    src={currentCard.imageFrontUrl!}
-                    alt="Achado clínico (Frente)"
-                    className="max-h-48 mx-auto rounded-xl border border-zinc-200 dark:border-zinc-700 object-contain shadow-2xs"
+                <div className="space-y-3 text-left">
+                  <textarea
+                    value={editFront}
+                    onChange={(e) => setEditFront(e.target.value)}
+                    onClick={(e) => e.stopPropagation()}
+                    rows={Math.max(2, Math.ceil((editFront || '').length / 45))}
+                    placeholder="Pergunta ou enunciado do flashcard..."
+                    className="w-full text-base sm:text-lg font-medium leading-relaxed text-center text-zinc-900 dark:text-zinc-100 bg-transparent border-b-2 border-dashed border-amber-500/60 hover:border-amber-500 focus:border-amber-500 outline-none resize-none transition-colors p-1"
+                  />
+                  <FlashcardImageField
+                    label="Imagem da Frente (Opcional)"
+                    imageUrl={editFrontImageUrl}
+                    onChange={setEditFrontImageUrl}
+                    compact
                   />
                 </div>
+              ) : (
+                <>
+                  {currentCard.front && (
+                    <div className="text-base sm:text-lg font-medium leading-relaxed text-zinc-900 dark:text-zinc-100">
+                      {renderFrontContent(currentCard.front)}
+                    </div>
+                  )}
+                  {isRealMedicalImage(currentCard.imageFrontUrl) && (
+                    <div className="pt-2">
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setZoomedImageUrl(currentCard.imageFrontUrl!);
+                        }}
+                        title="Clique para ampliar imagem"
+                        className="inline-block cursor-zoom-in rounded-xl focus:outline-none"
+                      >
+                        <img
+                          src={currentCard.imageFrontUrl!}
+                          alt="Achado clínico (Frente)"
+                          className="max-h-60 mx-auto rounded-xl border border-zinc-200 dark:border-zinc-700 object-contain shadow-2xs hover:opacity-95 transition-opacity"
+                        />
+                      </button>
+                    </div>
+                  )}
+                </>
               )}
             </div>
           ) : (
             <div className="space-y-4 max-w-xl mx-auto animate-in fade-in-50 duration-150">
               {/* Resposta Principal em Destaque */}
               {isInlineEditing ? (
-                <textarea
-                  value={editBack}
-                  onChange={(e) => setEditBack(e.target.value)}
-                  onClick={(e) => e.stopPropagation()}
-                  rows={Math.max(1, Math.ceil((editBack || '').length / 35))}
-                  placeholder="Resposta do flashcard..."
-                  className="w-full text-lg sm:text-2xl font-heading font-black tracking-tight text-center bg-transparent border-b-2 border-dashed border-amber-500/60 hover:border-amber-500 focus:border-amber-500 outline-none resize-none transition-colors p-1"
-                  style={{ color: accentConfig.primaryHex }}
-                />
-              ) : (
-                <div
-                  className="text-lg sm:text-2xl font-heading font-black tracking-tight"
-                  style={{ color: accentConfig.primaryHex }}
-                >
-                  {currentCard.back}
-                </div>
-              )}
-
-              {/* Se for card com Cloze Deletion, renderiza a frase contextualizada preenchida */}
-              {!isInlineEditing && currentCard.front.includes('{{c') && (
-                <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed text-left">
-                  <div className="text-[10px] uppercase font-bold tracking-wider text-zinc-600 dark:text-zinc-300 mb-1">
-                    Enunciado Completo Preenchido
-                  </div>
-                  {renderBackClozeContent(currentCard.front)}
-                </div>
-              )}
-
-              {/* Imagem médica diagnóstica autêntica se houver */}
-              {isRealMedicalImage(currentCard.imageUrl) && (
-                <div className="pt-2">
-                  <img
-                    src={currentCard.imageUrl!}
-                    alt="Achado diagnóstico"
-                    className="max-h-48 mx-auto rounded-xl border border-zinc-200 dark:border-zinc-700 object-contain shadow-2xs"
+                <div className="space-y-3 text-left">
+                  <textarea
+                    value={editBack}
+                    onChange={(e) => setEditBack(e.target.value)}
+                    onClick={(e) => e.stopPropagation()}
+                    rows={Math.max(1, Math.ceil((editBack || '').length / 35))}
+                    placeholder="Resposta do flashcard..."
+                    className="w-full text-lg sm:text-2xl font-heading font-black tracking-tight text-center bg-transparent border-b-2 border-dashed border-amber-500/60 hover:border-amber-500 focus:border-amber-500 outline-none resize-none transition-colors p-1"
+                    style={{ color: accentConfig.primaryHex }}
+                  />
+                  <FlashcardImageField
+                    label="Imagem do Verso (Opcional)"
+                    imageUrl={editBackImageUrl}
+                    onChange={setEditBackImageUrl}
+                    compact
                   />
                 </div>
+              ) : (
+                <>
+                  {currentCard.back && (
+                    <div
+                      className="text-lg sm:text-2xl font-heading font-black tracking-tight"
+                      style={{ color: accentConfig.primaryHex }}
+                    >
+                      {currentCard.back}
+                    </div>
+                  )}
+
+                  {/* Se for card com Cloze Deletion, renderiza a frase contextualizada preenchida */}
+                  {currentCard.front.includes('{{c') && (
+                    <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed text-left">
+                      <div className="text-[10px] uppercase font-bold tracking-wider text-zinc-600 dark:text-zinc-300 mb-1">
+                        Enunciado Completo Preenchido
+                      </div>
+                      {renderBackClozeContent(currentCard.front)}
+                    </div>
+                  )}
+
+                  {/* Imagem médica diagnóstica autêntica se houver */}
+                  {isRealMedicalImage(currentCard.imageUrl) && (
+                    <div className="pt-2">
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setZoomedImageUrl(currentCard.imageUrl!);
+                        }}
+                        title="Clique para ampliar imagem"
+                        className="inline-block cursor-zoom-in rounded-xl focus:outline-none"
+                      >
+                        <img
+                          src={currentCard.imageUrl!}
+                          alt="Achado diagnóstico"
+                          className="max-h-60 mx-auto rounded-xl border border-zinc-200 dark:border-zinc-700 object-contain shadow-2xs hover:opacity-95 transition-opacity"
+                        />
+                      </button>
+                    </div>
+                  )}
+                </>
               )}
 
               {/* Explicação Médica / Comentário */}
@@ -1247,6 +1302,32 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
           setTimeout(() => setSessionToast(null), 4000);
         }}
       />
+
+      {zoomedImageUrl && (
+        <div
+          className="fixed inset-0 z-50 bg-black/80 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-150"
+          onClick={() => setZoomedImageUrl(null)}
+        >
+          <div
+            className="relative max-w-4xl max-h-[90vh] flex flex-col items-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setZoomedImageUrl(null)}
+              aria-label="Fechar ampliação da imagem"
+              className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-zinc-900 text-white border border-zinc-700 flex items-center justify-center shadow-lg hover:bg-zinc-800 cursor-pointer"
+            >
+              <X className="w-4 h-4" />
+            </button>
+            <img
+              src={zoomedImageUrl}
+              alt="Imagem clínica ampliada"
+              className="max-w-full max-h-[85vh] rounded-2xl object-contain bg-white dark:bg-zinc-950 border border-zinc-700 shadow-2xl"
+            />
+          </div>
+        </div>
+      )}
 
       {sessionToast && (
         <div className="fixed bottom-5 right-5 z-50 flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-2xl text-xs font-bold animate-in fade-in slide-in-from-bottom-2">

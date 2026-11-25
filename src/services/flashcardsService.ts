@@ -223,6 +223,8 @@ async function upsertUserCardsResilient(cards: FlashcardItem[], userId: string):
         theme: card.theme,
         focus: card.focus,
         comment: card.comment || null,
+        image_front_url: card.imageFrontUrl || null,
+        image_url: card.imageUrl || null,
         priority: card.priority || 'standard',
         deck_id: card.deckId || 'deck-padrao',
         subfocus: card.subfocus || null,
@@ -2307,6 +2309,14 @@ export const flashcardsService = {
               ? c.source_question_id
               : prev?.sourceQuestionId || undefined,
           comment: typeof c.comment === 'string' ? c.comment : '',
+          imageFrontUrl:
+            typeof c.image_front_url === 'string' && c.image_front_url
+              ? c.image_front_url
+              : prev?.imageFrontUrl || null,
+          imageUrl:
+            typeof c.image_url === 'string' && c.image_url
+              ? c.image_url
+              : prev?.imageUrl || null,
           priority,
           studyDepth,
           tags: Array.isArray(c.tags) ? c.tags.map((t) => String(t)) : prev?.tags,

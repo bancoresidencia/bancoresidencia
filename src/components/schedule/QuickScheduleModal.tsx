@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import {
   CalendarDays,
   CalendarPlus,
-  X,
   BookOpen
 } from 'lucide-react';
 import { ScheduleItemType } from '@/types/studySchedule';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface QuickScheduleModalProps {
   isOpen: boolean;
@@ -47,6 +48,11 @@ export const QuickScheduleModal: React.FC<QuickScheduleModalProps> = ({
   const [notes, setNotes] = useState<string>('');
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
+  useOverlayDismiss({
+    isOpen: isOpen && !!focoNode,
+    onClose
+  });
+
   if (!isOpen || !focoNode) return null;
 
   const toggleInterval = (days: number) => {
@@ -81,12 +87,16 @@ export const QuickScheduleModal: React.FC<QuickScheduleModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150"
+      onClick={onClose}
+    >
       <div
         className="w-full max-w-lg bg-[var(--bg-card,#ffffff)] dark:bg-[#0e0e11] border border-[var(--card-border,#e4e4e7)] dark:border-zinc-800 rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-150"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-title"
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Cabeçalho */}
         <div className="px-6 py-4.5 border-b border-[var(--card-border,#e4e4e7)] dark:border-zinc-800/80 flex items-center justify-between">
@@ -104,15 +114,12 @@ export const QuickScheduleModal: React.FC<QuickScheduleModalProps> = ({
               </h2>
             </div>
           </div>
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-1.5 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            variant="ghost"
             title="Fechar"
-            aria-label="Fechar"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            ariaLabel="Fechar modal"
+          />
         </div>
 
         {/* Formulário */}

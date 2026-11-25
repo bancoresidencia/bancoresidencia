@@ -8,6 +8,7 @@ import { createClient } from '@/lib/supabase/client';
 import { Logo } from '@/components/Logo';
 import { EmailConfirmationPending } from '@/components/EmailConfirmationPending';
 import { validatePasswordRequirements } from '@/utils/security';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 import {
   Mail,
   Lock,
@@ -18,8 +19,7 @@ import {
   AlertCircle,
   Sparkles,
   ArrowRight,
-  ShieldCheck,
-  X
+  ShieldCheck
 } from 'lucide-react';
 
 interface AuthScreenProps {
@@ -262,18 +262,16 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               </span>
             </div>
 
-            {/* Ações da Direita: Fechar com área de toque >= 40px */}
+            {/* Ações da Direita: Voltar com área de toque >= 40px */}
             <div className="flex items-center gap-2 shrink-0">
               {onClose && (
-                <button
-                  type="button"
+                <BackArrowButton
                   onClick={onClose}
-                  className="w-10 h-10 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer touch-manipulation"
-                  title="Fechar"
-                  aria-label="Fechar"
-                >
-                  <X className="w-5 h-5" />
-                </button>
+                  variant="ghost"
+                  title="Voltar (Esc)"
+                  ariaLabel="Voltar"
+                  className="w-10 h-10 sm:w-9 sm:h-9"
+                />
               )}
             </div>
           </div>
@@ -419,14 +417,12 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                 {!loading && <ArrowRight className="w-4 h-4" />}
               </button>
 
-              <div className="text-center pt-1">
-                <button
-                  type="button"
+              <div className="flex justify-center pt-1">
+                <BackArrowButton
                   onClick={() => handleToggleMode('login')}
-                  className="text-xs font-semibold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors cursor-pointer touch-manipulation py-1"
-                >
-                  Voltar para <strong className="font-bold text-blue-600 dark:text-blue-400">Entrar na Conta</strong>
-                </button>
+                  title="Voltar para Entrar na Conta"
+                  ariaLabel="Voltar"
+                />
               </div>
             </form>
           ) : mode === 'login' ? (

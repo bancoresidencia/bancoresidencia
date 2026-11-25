@@ -13,6 +13,7 @@ import {
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { useTabAvailability } from '@/context/TabAvailabilityContext';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface TabFeatureGuardProps {
   children: React.ReactNode;
@@ -112,6 +113,18 @@ export const TabFeatureGuard: React.FC<TabFeatureGuardProps> = ({ children }) =>
       {/* 2. Plano de Fundo Borrado respeitando Header Superior e Barra Mobile Inferior para navegação livre */}
       <div className="fixed inset-x-0 top-[calc(4rem+env(safe-area-inset-top,0px))] bottom-[calc(3.55rem+env(safe-area-inset-bottom,0px))] md:bottom-0 z-25 flex items-center justify-center p-4 sm:p-6 backdrop-blur-2xl bg-white/80 dark:bg-[#09090b]/85 select-none transition-all duration-300 animate-in fade-in duration-200">
         <div className="max-w-md w-full bg-white dark:bg-zinc-900/95 border border-zinc-200 dark:border-zinc-800/90 rounded-3xl p-6 sm:p-8 shadow-2xl text-center space-y-5 animate-in zoom-in-95 duration-200 relative overflow-hidden">
+          <BackArrowButton
+            onClick={() => {
+              if (typeof window !== 'undefined' && window.history.length > 1) {
+                router.back();
+              } else {
+                router.push('/dashboard');
+              }
+            }}
+            title="Voltar"
+            ariaLabel="Voltar"
+            className="absolute top-4 left-4 z-10"
+          />
           {/* Efeito Glow com o acento cromático do estudante */}
           <div
             className="absolute -top-20 -left-20 w-48 h-48 rounded-full blur-3xl opacity-20 pointer-events-none"

@@ -24,6 +24,8 @@ import {
 } from 'lucide-react';
 import { Question, UserAnswerItem } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 export interface SessionPerformanceViewProps {
   questions: Question[];
@@ -324,6 +326,11 @@ export const SessionPerformanceView: React.FC<SessionPerformanceViewProps> = ({
     setIsDrawerOpen(true);
   };
 
+  useOverlayDismiss({
+    isOpen: Boolean(isDrawerOpen && selectedSpecialty),
+    onClose: () => setIsDrawerOpen(false)
+  });
+
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       {/* 1. HEADER GERAL DA SESSÃO */}
@@ -358,15 +365,11 @@ export const SessionPerformanceView: React.FC<SessionPerformanceViewProps> = ({
           </div>
 
           {/* Botão de Retorno Rápido aos Filtros */}
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onReturnToFilters}
-            className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-white shadow-2xs transition-all hover:scale-102 cursor-pointer shrink-0"
-            style={{ backgroundColor: accentConfig.primaryHex }}
-          >
-            <SlidersHorizontal className="w-3.5 h-3.5" />
-            <span>Retornar aos Filtros</span>
-          </button>
+            title="Voltar aos Filtros"
+            ariaLabel="Voltar"
+          />
         </div>
 
         {/* 2. GRID DE 4 MÉTRICAS COMPACTAS (MED-STUDENT-UX) */}
@@ -566,15 +569,11 @@ export const SessionPerformanceView: React.FC<SessionPerformanceViewProps> = ({
           <span>Revisar Resoluções da Sessão</span>
         </button>
 
-        <button
-          type="button"
+        <BackArrowButton
           onClick={onReturnToFilters}
-          className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white shadow-2xs transition-all hover:scale-102 cursor-pointer"
-          style={{ backgroundColor: accentConfig.primaryHex }}
-        >
-          <SlidersHorizontal className="w-3.5 h-3.5" />
-          <span>Concluir e Voltar aos Filtros</span>
-        </button>
+          title="Concluir e Voltar aos Filtros"
+          ariaLabel="Voltar"
+        />
       </div>
 
       {/* =========================================================================
@@ -626,14 +625,12 @@ export const SessionPerformanceView: React.FC<SessionPerformanceViewProps> = ({
                 >
                   {selectedSpecialty.accuracyRate}%
                 </span>
-                <button
-                  type="button"
+                <BackArrowButton
                   onClick={() => setIsDrawerOpen(false)}
-                  className="p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-                  title="Fechar painel (Esc)"
-                >
-                  <X className="w-5 h-5" />
-                </button>
+                  variant="ghost"
+                  title="Voltar (Esc)"
+                  ariaLabel="Voltar"
+                />
               </div>
             </div>
 

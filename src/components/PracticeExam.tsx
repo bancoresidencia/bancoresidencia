@@ -1,8 +1,10 @@
 'use client'
 
 import React, { useEffect, useState, useMemo, useCallback } from 'react'
+import { useRouter } from 'next/navigation'
 import { renderFormattedMedicalText } from '@/utils/textSanitizer'
 import Link from 'next/link'
+import { BackArrowButton } from '@/components/ui/BackArrowButton'
 import { fetchQuestionsFromSupabase, type ExtendedFilterState } from '@/services/questionService'
 import { getSupabaseInstitutionName } from '@/utils/institutionResolver'
 import { StudyInkLayer } from './StudyInkLayer'
@@ -61,10 +63,19 @@ export function PracticeExam({
   institution?: string
   year?: number
 }) {
+  const router = useRouter()
   const { user, isLoading: authLoading } = useAuth()
   const { accentConfig } = useTheme()
   const { recordAnswer } = useStudentData()
   const { status: timerStatus, recordActivitySession } = useStudyTimer()
+
+  const handleExitExam = useCallback(() => {
+    if (typeof window !== 'undefined' && window.history.length > 1) {
+      router.back()
+    } else {
+      router.push('/provas')
+    }
+  }, [router])
 
   const storageKey = useMemo(() => {
     return JSON.stringify(['practice-exam', user?.id ?? 'guest', exam, institution, year])
@@ -458,27 +469,35 @@ export function PracticeExam({
       <header className="bento-card bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-slate-800/80 rounded-3xl p-4 sm:p-5 shadow-xs transition-all">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           {/* Identificação da Prova */}
-          <div className="space-y-1">
-            <div className="flex items-center gap-2 flex-wrap">
-              <span
-                className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider text-white"
-                style={{ backgroundColor: accentConfig.primaryHex }}
-              >
-                {attempt.closed ? 'Revisão Oficial' : 'Modo Prova'}
-              </span>
-              <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
-                {institution} {year > 0 ? `• ${year}` : ''}
-              </span>
-            </div>
-            <h1 className="font-heading font-black text-lg sm:text-xl text-slate-900 dark:text-white">
-              {attempt.examTitle}
-            </h1>
-            <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
-              <span>{attempt.questions.length} questões</span>
-              <span>•</span>
-              <span className="font-bold text-slate-700 dark:text-slate-300">
-                {answeredCount} de {attempt.questions.length} respondidas ({Math.round((answeredCount / attempt.questions.length) * 100)}%)
-              </span>
+          <div className="flex items-start gap-3 min-w-0">
+            <BackArrowButton
+              onClick={handleExitExam}
+              title="Voltar"
+              ariaLabel="Voltar"
+              className="mt-0.5"
+            />
+            <div className="space-y-1 min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span
+                  className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider text-white"
+                  style={{ backgroundColor: accentConfig.primaryHex }}
+                >
+                  {attempt.closed ? 'Revisão Oficial' : 'Modo Prova'}
+                </span>
+                <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
+                  {institution} {year > 0 ? `• ${year}` : ''}
+                </span>
+              </div>
+              <h1 className="font-heading font-black text-lg sm:text-xl text-slate-900 dark:text-white">
+                {attempt.examTitle}
+              </h1>
+              <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
+                <span>{attempt.questions.length} questões</span>
+                <span>•</span>
+                <span className="font-bold text-slate-700 dark:text-slate-300">
+                  {answeredCount} de {attempt.questions.length} respondidas ({Math.round((answeredCount / attempt.questions.length) * 100)}%)
+                </span>
+              </div>
             </div>
           </div>
 

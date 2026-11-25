@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Sparkles, AlertCircle, ArrowLeft, CheckCircle2 } from 'lucide-react';
+import { Sparkles, AlertCircle, CheckCircle2 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 interface QuestionSessionTransitionProps {
   isOpen: boolean;
@@ -35,6 +37,11 @@ export const QuestionSessionTransition: React.FC<QuestionSessionTransitionProps>
   const { accentConfig } = useTheme();
   const [tipIndex, setTipIndex] = useState(0);
   const [showCancelFallback, setShowCancelFallback] = useState(false);
+
+  useOverlayDismiss({
+    isOpen: Boolean(isOpen && onCancel),
+    onClose: () => onCancel?.()
+  });
 
   useEffect(() => {
     if (!isOpen) return;
@@ -238,14 +245,13 @@ export const QuestionSessionTransition: React.FC<QuestionSessionTransitionProps>
               </div>
             </div>
             {onCancel && (
-              <button
-                type="button"
-                onClick={onCancel}
-                className="w-full py-2 px-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors cursor-pointer"
-              >
-                <ArrowLeft className="w-4 h-4" />
-                <span>Voltar aos Filtros</span>
-              </button>
+              <div className="flex justify-center pt-1">
+                <BackArrowButton
+                  onClick={onCancel}
+                  title="Voltar aos filtros"
+                  ariaLabel="Voltar"
+                />
+              </div>
             )}
           </div>
         ) : (
@@ -257,13 +263,11 @@ export const QuestionSessionTransition: React.FC<QuestionSessionTransitionProps>
         )}
 
         {!error && showCancelFallback && onCancel && (
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onCancel}
-            className="text-xs text-zinc-600 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white underline underline-offset-4 transition-colors cursor-pointer pt-1"
-          >
-            Demorando mais que o normal? Voltar aos filtros
-          </button>
+            title="Voltar aos filtros"
+            ariaLabel="Voltar"
+          />
         )}
       </div>
     </div>

@@ -1,9 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Sparkles, X, Loader2, AlertCircle, ArrowRight } from 'lucide-react';
+import { Sparkles, Loader2, AlertCircle, ArrowRight } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { AdvancedFilterState } from '@/types';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface SmartAIFilterModalProps {
   isOpen: boolean;
@@ -31,6 +33,8 @@ export function SmartAIFilterModal({
   const [prompt, setPrompt] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useOverlayDismiss({ isOpen, onClose });
 
   if (!isOpen) return null;
 
@@ -65,7 +69,10 @@ export function SmartAIFilterModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div 
         className="w-full max-w-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]"
         onClick={(e) => e.stopPropagation()}
@@ -92,14 +99,13 @@ export function SmartAIFilterModal({
             </div>
           </div>
 
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
             disabled={isLoading}
-            className="p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors disabled:opacity-50"
-          >
-            <X className="w-4 h-4" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar modal"
+          />
         </div>
 
         {/* Corpo do Modal */}

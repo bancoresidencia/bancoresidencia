@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, Copy, Check, QrCode, ExternalLink } from 'lucide-react';
+import { Copy, Check, QrCode } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 
 interface SimuladoQrModalProps {
   isOpen: boolean;
@@ -13,6 +15,8 @@ interface SimuladoQrModalProps {
 export const SimuladoQrModal: React.FC<SimuladoQrModalProps> = ({ isOpen, onClose, url }) => {
   const { accentConfig, mode } = useTheme();
   const [copied, setCopied] = useState(false);
+
+  useOverlayDismiss({ isOpen, onClose });
 
   if (!isOpen) return null;
 
@@ -29,22 +33,27 @@ export const SimuladoQrModal: React.FC<SimuladoQrModalProps> = ({ isOpen, onClos
   const isDark = mode === 'dark';
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200">
+    <div
+      role="dialog"
+      aria-modal="true"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div
         className="relative w-full max-w-sm rounded-2xl border p-6 shadow-2xl transition-all"
         style={{
           backgroundColor: isDark ? '#111827' : '#ffffff',
           borderColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'
         }}
+        onClick={(e) => e.stopPropagation()}
       >
-        <button
+        <BackArrowButton
           onClick={onClose}
-          className="absolute top-4 right-4 p-1.5 rounded-lg text-slate-400 hover:text-white transition-colors"
-          style={{ backgroundColor: isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)' }}
-          aria-label="Fechar modal"
-        >
-          <X className="w-5 h-5" />
-        </button>
+          size="sm"
+          title="Voltar (Esc)"
+          ariaLabel="Voltar"
+          className="absolute top-4 right-4"
+        />
 
         <div className="flex items-center gap-2.5 mb-4">
           <div

@@ -7,7 +7,6 @@ import {
   Trash2,
   Edit2,
   Layers,
-  ArrowLeft,
   Filter,
   CheckCircle2,
   Calendar,
@@ -20,6 +19,9 @@ import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { flashcardsService, isUserCreatedFlashcardId } from '@/services/flashcardsService';
 import { CsvFlashcardImportModal } from './CsvFlashcardImportModal';
+import { FlashcardImageField } from './FlashcardImageField';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface OriginalCardsBrowserProps {
   cards: FlashcardItem[];
@@ -48,7 +50,14 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
   const [editFront, setEditFront] = useState('');
   const [editBack, setEditBack] = useState('');
   const [editComment, setEditComment] = useState('');
+  const [editFrontImageUrl, setEditFrontImageUrl] = useState<string | null>(null);
+  const [editBackImageUrl, setEditBackImageUrl] = useState<string | null>(null);
   const [editDeckId, setEditDeckId] = useState('deck-padrao');
+
+  useOverlayDismiss({
+    isOpen: !!editingCard,
+    onClose: () => setEditingCard(null)
+  });
 
   const editedOfficialEntries = useMemo(() => {
     void editsRefreshKey;
@@ -103,12 +112,17 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
     setEditFront(card.front);
     setEditBack(card.back);
     setEditComment(card.comment || '');
+    setEditFrontImageUrl(card.imageFrontUrl || null);
+    setEditBackImageUrl(card.imageUrl || null);
     setEditDeckId(card.deckId || 'deck-padrao');
   };
 
   const handleSaveEdit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!editingCard || !editFront.trim() || !editBack.trim()) return;
+    if (!editingCard) return;
+    const hasFront = Boolean(editFront.trim()) || Boolean(editFrontImageUrl);
+    const hasBack = Boolean(editBack.trim()) || Boolean(editBackImageUrl);
+    if (!hasFront || !hasBack) return;
 
     if (!isUserCreatedFlashcardId(editingCard.id)) {
       flashcardsService.saveCardEdit(
@@ -116,7 +130,9 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
         {
           front: editFront.trim(),
           back: editBack.trim(),
-          comment: editComment.trim() || undefined
+          comment: editComment.trim() || undefined,
+          imageFrontUrl: editFrontImageUrl,
+          imageUrl: editBackImageUrl
         },
         user?.id
       );
@@ -131,6 +147,8 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
       front: editFront.trim(),
       back: editBack.trim(),
       comment: editComment.trim() || undefined,
+      imageFrontUrl: editFrontImageUrl,
+      imageUrl: editBackImageUrl,
       deckId: editDeckId
     };
 
@@ -150,15 +168,12 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
       {/* Barra Superior do Navegador de Cartões */}
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 p-3 sm:p-4 rounded-2xl shadow-xs">
         <div className="flex items-center gap-3">
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onBackToDecks}
-            className="p-1.5 rounded-xl text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer inline-flex items-center gap-1.5 text-xs font-bold"
             title="Voltar aos Baralhos"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            <span>Voltar aos Baralhos</span>
-          </button>
+            ariaLabel="Voltar aos Baralhos"
+            variant="ghost"
+          />
 
           <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-800 hidden sm:block" />
 
@@ -341,17 +356,39 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
                       className="hover:bg-zinc-50/80 dark:hover:bg-zinc-900/50 transition-colors"
                     >
                       <td className="py-2.5 px-4 align-top">
-                        <p className="font-medium text-zinc-900 dark:text-zinc-100 line-clamp-2">
-                          {card.front}
-                        </p>
-                        {card.comment && (
-                          <p className="text-[11px] text-zinc-400 dark:text-zinc-500 line-clamp-1 mt-0.5">
-                            {card.comment}
-                          </p>
-                        )}
+                        <div className="flex items-start gap-2.5">
+                          {card.imageFrontUrl && (
+                            <img
+                              src={card.imageFrontUrl}
+                              alt="Frente"
+                              className="w-10 h-10 rounded-lg object-cover border border-zinc-200 dark:border-zinc-700 shrink-0"
+                            />
+                          )}
+                          <div className="min-w-0">
+                            <p className="font-medium text-zinc-900 dark:text-zinc-100 line-clamp-2">
+                              {card.front || (card.imageFrontUrl ? 'Cartão baseado em imagem' : '')}
+                            </p>
+                            {card.comment && (
+                              <p className="text-[11px] text-zinc-400 dark:text-zinc-500 line-clamp-1 mt-0.5">
+                                {card.comment}
+                              </p>
+                            )}
+                          </div>
+                        </div>
                       </td>
                       <td className="py-2.5 px-4 align-top text-zinc-700 dark:text-zinc-300">
-                        <p className="line-clamp-2">{card.back}</p>
+                        <div className="flex items-start gap-2.5">
+                          {card.imageUrl && (
+                            <img
+                              src={card.imageUrl}
+                              alt="Verso"
+                              className="w-10 h-10 rounded-lg object-cover border border-zinc-200 dark:border-zinc-700 shrink-0"
+                            />
+                          )}
+                          <p className="line-clamp-2 min-w-0">
+                            {card.back || (card.imageUrl ? 'Resposta em imagem' : '')}
+                          </p>
+                        </div>
                       </td>
                       <td className="py-2.5 px-3 align-top">
                         <span className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 whitespace-nowrap">
@@ -392,19 +429,24 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
 
       {/* Modal de Edição Rápida */}
       {editingCard && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-          <div className="w-full max-w-lg rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-6 shadow-2xl space-y-4 animate-in fade-in-50 zoom-in-95 duration-200">
+        <div 
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4"
+          onClick={() => setEditingCard(null)}
+        >
+          <div 
+            className="w-full max-w-lg rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-6 shadow-2xl space-y-4 animate-in fade-in-50 zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="flex items-center justify-between pb-2 border-b border-zinc-100 dark:border-zinc-800">
               <h3 className="font-heading font-black text-base text-zinc-900 dark:text-zinc-100">
                 Editar Flashcard
               </h3>
-              <button
-                type="button"
+              <BackArrowButton
                 onClick={() => setEditingCard(null)}
-                className="p-1 text-zinc-400 hover:text-zinc-600"
-              >
-                <X className="w-4 h-4" />
-              </button>
+                variant="ghost"
+                title="Fechar"
+                ariaLabel="Fechar edição"
+              />
             </div>
 
             <form onSubmit={handleSaveEdit} className="space-y-3 text-xs">
@@ -429,29 +471,43 @@ export const OriginalCardsBrowser: React.FC<OriginalCardsBrowserProps> = ({
 
               <div>
                 <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                  Frente do Cartão (Pergunta / Cloze) *
+                  Frente do Cartão (Pergunta / Cloze) {!editFrontImageUrl ? '*' : ''}
                 </label>
                 <textarea
                   rows={3}
-                  required
+                  required={!editFrontImageUrl}
                   value={editFront}
                   onChange={(e) => setEditFront(e.target.value)}
                   className="w-full p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 font-mono text-xs focus:outline-none"
                 />
               </div>
 
+              <FlashcardImageField
+                label="Imagem da Frente (Opcional)"
+                imageUrl={editFrontImageUrl}
+                onChange={setEditFrontImageUrl}
+                compact
+              />
+
               <div>
                 <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                  Verso do Cartão (Resposta) *
+                  Verso do Cartão (Resposta) {!editBackImageUrl ? '*' : ''}
                 </label>
                 <input
                   type="text"
-                  required
+                  required={!editBackImageUrl}
                   value={editBack}
                   onChange={(e) => setEditBack(e.target.value)}
                   className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 text-xs focus:outline-none"
                 />
               </div>
+
+              <FlashcardImageField
+                label="Imagem do Verso (Opcional)"
+                imageUrl={editBackImageUrl}
+                onChange={setEditBackImageUrl}
+                compact
+              />
 
               <div>
                 <label className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">

@@ -29,7 +29,11 @@ function CheckoutContent() {
         router.push('/dashboard');
       }}
       onBackToLanding={() => {
-        router.push('/dashboard');
+        if (typeof window !== 'undefined' && window.history.length > 1) {
+          router.back();
+        } else {
+          router.push('/');
+        }
       }}
     />
   );

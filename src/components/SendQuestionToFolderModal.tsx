@@ -2,7 +2,6 @@
 
 import React, { useState, useMemo } from 'react';
 import {
-  X,
   FolderIcon,
   FolderPlus,
   Check,
@@ -11,6 +10,8 @@ import {
 } from 'lucide-react';
 import { Folder, Question } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
+import { BackArrowButton } from '@/components/ui/BackArrowButton';
 
 interface SendQuestionToFolderModalProps {
   isOpen: boolean;
@@ -32,6 +33,8 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
   savedFolderIds = []
 }) => {
   const { accentConfig } = useTheme();
+
+  useOverlayDismiss({ isOpen, onClose });
 
   // Pastas em 3 níveis
   const rootFolders = useMemo(() => folders.filter((f) => !f.parentId), [folders]);
@@ -81,12 +84,16 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-in fade-in duration-200"
+      onClick={onClose}
+    >
       <div
         className="w-full max-w-lg bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl flex flex-col max-h-[88dvh] overflow-hidden"
         role="dialog"
         aria-modal="true"
         aria-labelledby="modal-send-folder-title"
+        onClick={(e) => e.stopPropagation()}
       >
         {/* Cabeçalho */}
         <div className="flex items-center justify-between p-5 border-b border-slate-100 dark:border-slate-800">
@@ -110,13 +117,12 @@ export const SendQuestionToFolderModal: React.FC<SendQuestionToFolderModalProps>
               </p>
             </div>
           </div>
-          <button
-            type="button"
+          <BackArrowButton
             onClick={onClose}
-            className="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+            variant="ghost"
+            title="Fechar"
+            ariaLabel="Fechar modal"
+          />
         </div>
 
         {/* Card Resumo da Questão */}
