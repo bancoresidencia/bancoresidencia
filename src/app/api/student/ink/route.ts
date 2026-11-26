@@ -16,11 +16,11 @@ export async function GET(req: NextRequest) {
     }
 
     const { searchParams } = new URL(req.url);
-    const documentId = searchParams.get('document_id');
+    const documentId = searchParams.get('document_id')?.trim();
     const attemptParam = searchParams.get('attempt_number');
 
-    if (!documentId) {
-      return NextResponse.json({ success: false, error: 'document_id is required' }, { status: 400 });
+    if (!documentId || documentId.startsWith('[')) {
+      return NextResponse.json({ success: false, error: 'Invalid document_id' }, { status: 400 });
     }
 
     const query = supabase
@@ -81,9 +81,10 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { document_id, attempt_number = 1, strokes } = body;
+    const { document_id: rawDocId, attempt_number = 1, strokes } = body;
+    const document_id = typeof rawDocId === 'string' ? rawDocId.trim() : '';
 
-    if (!document_id || typeof document_id !== 'string') {
+    if (!document_id || document_id.startsWith('[')) {
       return NextResponse.json({ success: false, error: 'Invalid document_id' }, { status: 400 });
     }
 

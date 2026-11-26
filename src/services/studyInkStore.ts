@@ -123,8 +123,7 @@ export function hydrateStudyInkPreferences(owner: string) {
 
   try {
     const open = localStorage.getItem('study-ink-open') === 'true'
-    const rawTool = localStorage.getItem('study-ink-tool') as Tool | null
-    const tool: Tool = rawTool && VALID_TOOLS.includes(rawTool) ? rawTool : open ? 'pen' : 'read'
+    const tool: Tool = 'read'
     const saved = JSON.parse(localStorage.getItem(`study-ink-style:${owner}`) || 'null')
 
     updateState({
@@ -210,7 +209,7 @@ export function getActiveInkHandlers(): InkDocHandlers | null {
 }
 
 export function setInkOpen(open: boolean) {
-  const nextTool: Tool = open ? (state.tool === 'read' ? 'pen' : state.tool) : 'read'
+  const nextTool: Tool = open ? state.tool : 'read'
   const next: StudyInkGlobalState = {
     ...state,
     open,
@@ -225,7 +224,7 @@ export function setInkOpen(open: boolean) {
 
 export function toggleInkOpen() {
   const nextOpen = !state.open
-  const nextTool: Tool = nextOpen ? 'pen' : 'read'
+  const nextTool: Tool = 'read'
   const next: StudyInkGlobalState = {
     ...state,
     open: nextOpen,

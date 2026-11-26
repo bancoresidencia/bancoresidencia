@@ -164,9 +164,9 @@ export function resolveEffectiveSchedulerSettings(
 ): FlashcardSchedulerSettings {
   const mode: FlashcardPresetMode =
     raw?.presetMode === 'more_reps' ||
-    raw?.presetMode === 'moderate' ||
-    raw?.presetMode === 'fewer_reps' ||
-    raw?.presetMode === 'custom_anki'
+      raw?.presetMode === 'moderate' ||
+      raw?.presetMode === 'fewer_reps' ||
+      raw?.presetMode === 'custom_anki'
       ? raw.presetMode
       : 'moderate';
 
@@ -286,14 +286,15 @@ function applyIntervalFuzz(days: number, enabled: boolean, randomSeed?: number):
   return Math.max(2, Math.round(days) + offset);
 }
 
-function computeHardStepMinutes(steps: number[], stepIndex: number, graduatingDays: number): number {
-  if (steps.length === 0) return graduatingDays * 1440;
+function computeHardStepMinutes(steps: number[], stepIndex: number, _graduatingDays: number): number {
+  if (steps.length === 0) return _graduatingDays * 1440;
   if (stepIndex === 0) {
     if (steps.length >= 2) {
+      // Anki hard: média entre passo atual e próximo (mantém o cartão "entre" os dois passos)
       return Math.max(1, Math.round((steps[0] + steps[1]) / 2));
     }
-    // Regra canônica Anki para passo único: média entre passo 0 e graduação
-    return Math.max(steps[0] + 1, Math.round((steps[0] + graduatingDays * 1440) / 2));
+    // Passo único: hard mantém o mesmo passo (sem avanço nem retrocesso)
+    return steps[0];
   }
   const safeIdx = Math.min(stepIndex, steps.length - 1);
   return steps[safeIdx];

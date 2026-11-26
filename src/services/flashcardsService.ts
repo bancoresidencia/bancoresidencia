@@ -110,7 +110,7 @@ function isPersonalizedDeckRow(row: Record<string, unknown>): boolean {
   return id.startsWith('custom-deck-') || id.startsWith('deck-pers-');
 }
 
-function mapDeckRowToModel(row: Record<string, unknown>): CustomFlashcardDeck {
+function mapDeckRowToModel(row: Record<string, unknown>, userId?: string): CustomFlashcardDeck {
   const cfg =
     row.config && typeof row.config === 'object' && !Array.isArray(row.config)
       ? (row.config as Record<string, unknown>)
@@ -136,7 +136,7 @@ function mapDeckRowToModel(row: Record<string, unknown>): CustomFlashcardDeck {
       : undefined;
 
   return {
-    id: String(row.id),
+    id: userId ? fromRemoteDeckId(String(row.id), userId) : String(row.id),
     name: typeof row.title === 'string' && row.title.trim() ? row.title : 'Baralho',
     description: typeof row.description === 'string' ? row.description : '',
     specialties,
@@ -166,7 +166,7 @@ async function upsertDecksResilient(
     if (!sessionData?.session) return;
 
     const extendedPayload = decks.map((deck) => ({
-      id: deck.id,
+      id: toRemoteDeckId(deck.id, userId),
       user_id: userId,
       title: deck.name,
       description: deck.description || null,
@@ -192,7 +192,7 @@ async function upsertDecksResilient(
 
     if (error) {
       const basePayload = decks.map((deck) => ({
-        id: deck.id,
+        id: toRemoteDeckId(deck.id, userId),
         user_id: userId,
         title: deck.name,
         description: deck.description || null,
@@ -1968,7 +1968,7 @@ export const flashcardsService = {
         const remoteDecks: CustomFlashcardDeck[] = (data as Record<string, unknown>[])
           .filter((row) => !isPersonalizedDeckRow(row))
           .map((row) => {
-            const mapped = mapDeckRowToModel(row);
+            const mapped = mapDeckRowToModel(row, userId);
             const prev = localById.get(mapped.id);
             if (!prev) return mapped;
             return {
@@ -2032,7 +2032,7 @@ export const flashcardsService = {
         const remoteDecks: CustomFlashcardDeck[] = (data as Record<string, unknown>[])
           .filter((row) => isPersonalizedDeckRow(row))
           .map((row) => {
-            const mapped = mapDeckRowToModel(row);
+            const mapped = mapDeckRowToModel(row, userId);
             const prev = localById.get(mapped.id);
             if (!prev) return mapped;
             const hasRemoteConfig =

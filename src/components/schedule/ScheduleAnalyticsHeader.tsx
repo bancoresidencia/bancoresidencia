@@ -19,13 +19,15 @@ interface ScheduleAnalyticsHeaderProps {
   focusProgressMap: FocusProgressMap;
   userAnswers: Record<string, UserAnswerItem>;
   totalCatalogFoci?: number;
+  syncStatus?: 'synced' | 'offline' | 'error';
 }
 
 export const ScheduleAnalyticsHeader: React.FC<ScheduleAnalyticsHeaderProps> = ({
   items,
   focusProgressMap,
   userAnswers,
-  totalCatalogFoci = 786
+  totalCatalogFoci = 786,
+  syncStatus = 'synced'
 }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(true);
 
@@ -106,8 +108,20 @@ export const ScheduleAnalyticsHeader: React.FC<ScheduleAnalyticsHeaderProps> = (
           <div>
             <h3 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
               Painel de Acompanhamento do Cronograma
-              <span className="hidden sm:inline-block px-2 py-0.5 text-[10px] font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 rounded-full">
-                Sincronizado
+              <span
+                className={`hidden sm:inline-block px-2 py-0.5 text-[10px] font-semibold rounded-full ${
+                  syncStatus === 'synced'
+                    ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300'
+                    : syncStatus === 'error'
+                      ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/80 dark:text-amber-300'
+                      : 'bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300'
+                }`}
+              >
+                {syncStatus === 'synced'
+                  ? 'Sincronizado'
+                  : syncStatus === 'error'
+                    ? 'Erro de sincronização'
+                    : 'Modo offline'}
               </span>
             </h3>
           </div>

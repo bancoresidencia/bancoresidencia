@@ -47,6 +47,7 @@ export default function CronogramaPage() {
   // Modais
   const [isGeneratorOpen, setIsGeneratorOpen] = useState(false);
   const [quickAddDate, setQuickAddDate] = useState<string | null>(null);
+  const [syncStatus, setSyncStatus] = useState<'synced' | 'offline' | 'error'>('offline');
 
   // Carregamento de dados (hidrata cache local imediatamente após o tick inicial para não bloquear com skeleton sem necessidade)
   const loadData = useCallback(async () => {
@@ -64,8 +65,10 @@ export default function CronogramaPage() {
       setSchedule(data.schedule);
       setItems(data.items);
       setFocusProgressMap(data.focusProgress);
+      setSyncStatus(data.syncStatus);
     } catch (err) {
       console.error('[CronogramaPage] Falha ao carregar:', err);
+      setSyncStatus('error');
     } finally {
       setIsLoading(false);
     }
@@ -221,6 +224,7 @@ export default function CronogramaPage() {
         items={items}
         focusProgressMap={focusProgressMap}
         userAnswers={userAnswers}
+        syncStatus={syncStatus}
       />
 
       {/* 2. Barra de Acesso e Alternância Mobile */}

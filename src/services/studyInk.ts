@@ -86,6 +86,18 @@ export function saveNotes(document: string, attemptNumber = 1, notes: StickyPost
   } catch {}
 }
 
+function extractRemoteDocumentId(doc: string): string {
+  if (doc.startsWith('[')) {
+    try {
+      const parsed = JSON.parse(doc)
+      if (Array.isArray(parsed) && typeof parsed[1] === 'string' && parsed[1].trim()) {
+        return parsed[1].trim()
+      }
+    } catch {}
+  }
+  return doc
+}
+
 export async function readInk(
   document: string,
   attemptNumber = 1,
@@ -115,10 +127,11 @@ export async function readInk(
 
   // 2. Cloud fallback (Supabase) only for authenticated users (prevents 401 console errors for guests)
   const canSyncCloud = options?.syncCloud !== false
+  const remoteDocId = extractRemoteDocumentId(document)
   if (canSyncCloud && typeof window !== 'undefined' && typeof fetch === 'function') {
     try {
       const res = await fetch(
-        `/api/student/ink?document_id=${encodeURIComponent(document)}&attempt_number=${attemptNumber}`
+        `/api/student/ink?document_id=${encodeURIComponent(remoteDocId)}&attempt_number=${attemptNumber}`
       )
       if (res.ok) {
         const data = await res.json()
@@ -178,7 +191,7 @@ export async function saveInk(
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            document_id: document,
+            document_id: extractRemoteDocumentId(document),
             attempt_number: attemptNumber,
             strokes: allStrokes
           })

@@ -25,16 +25,23 @@ export { buildFocusKey } from '@/utils/studyScheduleStorage';
  * Carrega o cronograma ativo, seus itens e o progresso dos focos.
  * Lê do cache local instantaneamente e sincroniza com o Supabase quando autenticado.
  */
+export type ScheduleSyncStatus = 'synced' | 'offline' | 'error';
+
 export async function loadUserSchedule(
   userId?: string | null
-): Promise<{ schedule: UserStudySchedule | null; items: UserScheduleItem[]; focusProgress: Record<string, UserFocusProgress> }> {
+): Promise<{
+  schedule: UserStudySchedule | null;
+  items: UserScheduleItem[];
+  focusProgress: Record<string, UserFocusProgress>;
+  syncStatus: ScheduleSyncStatus;
+}> {
   const local = readLocalScheduleCache(userId);
-  if (!userId || userId === 'demo-student') return local;
+  if (!userId || userId === 'demo-student') return { ...local, syncStatus: 'offline' };
 
   try {
     const supabase = createClient();
     const { data: { session } } = await supabase.auth.getSession();
-    if (!session?.user || session.user.id !== userId) return local;
+    if (!session?.user || session.user.id !== userId) return { ...local, syncStatus: 'offline' };
 
     // 1. Busca cronograma ativo
     const { data: scheduleData, error: schedError } = await supabase
@@ -46,7 +53,7 @@ export async function loadUserSchedule(
 
     if (schedError) {
       console.warn('[studyScheduleService] Erro ao buscar cronograma:', schedError.message);
-      return local;
+      return { ...local, syncStatus: 'error' };
     }
 
     const remoteSchedule = scheduleData ? toUserStudySchedule(scheduleData as unknown as DbScheduleRow) : null;
@@ -86,10 +93,10 @@ export async function loadUserSchedule(
     };
 
     writeLocalScheduleCache(userId, merged);
-    return merged;
+    return { ...merged, syncStatus: 'synced' };
   } catch (err) {
     console.error('[studyScheduleService] Erro ao sincronizar cronograma:', err);
-    return local;
+    return { ...local, syncStatus: 'error' };
   }
 }
 

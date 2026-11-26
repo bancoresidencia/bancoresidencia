@@ -108,6 +108,21 @@ export function readLocalFolders(userId?: string | null): Folder[] {
   const key = getFolderStorageKey(userId);
   try {
     const saved = localStorage.getItem(key);
+    // Migração one-shot: promove chave global legada para chave escopada por usuário
+    if (!saved && userId) {
+      const legacy = localStorage.getItem('bancoresidencia_folders');
+      if (legacy) {
+        try { localStorage.setItem(key, legacy); } catch { /* ignore */ }
+        try { localStorage.removeItem('bancoresidencia_folders'); } catch { /* ignore */ }
+        const parsed = JSON.parse(legacy) as Array<Folder | DbFolderRow>;
+        if (Array.isArray(parsed)) {
+          return parsed
+            .filter((f) => f && f.id && !MOCK_FOLDER_IDS.has(f.id))
+            .map(normalizeFolderObject);
+        }
+      }
+      return [];
+    }
     if (!saved) return [];
     const parsed = JSON.parse(saved) as Array<Folder | DbFolderRow>;
     if (!Array.isArray(parsed)) return [];
@@ -124,6 +139,25 @@ export function readLocalLists(userId?: string | null): QuestionList[] {
   const key = getListStorageKey(userId);
   try {
     const saved = localStorage.getItem(key);
+    // Migração one-shot: promove chave global legada para chave escopada por usuário
+    if (!saved && userId) {
+      const legacy = localStorage.getItem('bancoresidencia_lists');
+      if (legacy) {
+        try { localStorage.setItem(key, legacy); } catch { /* ignore */ }
+        try { localStorage.removeItem('bancoresidencia_lists'); } catch { /* ignore */ }
+        const parsed = JSON.parse(legacy) as Array<QuestionList | DbListRow>;
+        if (Array.isArray(parsed)) {
+          const valid: QuestionList[] = [];
+          for (const item of parsed) {
+            if (!item || !item.id || MOCK_LIST_IDS.has(item.id)) continue;
+            const norm = normalizeListObject(item);
+            if (norm) valid.push(norm);
+          }
+          return valid;
+        }
+      }
+      return [];
+    }
     if (!saved) return [];
     const parsed = JSON.parse(saved) as Array<QuestionList | DbListRow>;
     if (!Array.isArray(parsed)) return [];

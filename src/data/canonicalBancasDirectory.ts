@@ -80,7 +80,7 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
   },
   {
     "sigla": "UNICAMP",
-    "nome": "Hospital Angelina Caron",
+    "nome": "Universidade Estadual de Campinas (UNICAMP)",
     "count": 2698,
     "uf": "SP",
     "key": "UNICAMP",
@@ -106,7 +106,7 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
   },
   {
     "sigla": "UFPR",
-    "nome": "Fundação Escola de Saúde de Teresópolis",
+    "nome": "Universidade Federal do Paraná (UFPR)",
     "count": 2621,
     "uf": "PR",
     "key": "UFPR",
@@ -171,20 +171,20 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
   },
   {
     "sigla": "CERMAM",
-    "nome": "CERMAM",
+    "nome": "Comissão Estadual de Residência Médica do Amazonas (CERMAM)",
     "count": 2228,
-    "uf": "Nacional",
+    "uf": "AM",
     "key": "CERMAM",
     "modalidades": [
       "Acesso Direto",
       "R+"
     ],
-    "macrorregiao": "Nacional",
+    "macrorregiao": "Norte",
     "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "PSU-MG",
-    "nome": "Hospital Universitário Sul Fluminense",
+    "nome": "Processo Seletivo Unificado de Minas Gerais (PSU-MG)",
     "count": 2206,
     "uf": "MG",
     "key": "PSU-MG",
@@ -197,7 +197,7 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
   },
   {
     "sigla": "UNIFESP",
-    "nome": "Centro Médico de Campinas",
+    "nome": "Universidade Federal de São Paulo (UNIFESP)",
     "count": 2184,
     "uf": "SP",
     "key": "UNIFESP",
@@ -287,7 +287,7 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
   },
   {
     "sigla": "ENARE",
-    "nome": "AFAMCI",
+    "nome": "Exame Nacional de Residência (ENARE)",
     "count": 1954,
     "uf": "Nacional",
     "key": "ENARE",
@@ -315,20 +315,20 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
     "sigla": "UEL",
     "nome": "Universidade Estadual de Londrina",
     "count": 1813,
-    "uf": "SP",
+    "uf": "PR",
     "key": "UEL",
     "modalidades": [
       "Acesso Direto",
       "R+"
     ],
-    "macrorregiao": "Sudeste",
+    "macrorregiao": "Sul",
     "bancaOrganizadora": "Comissão Própria"
   },
   {
     "sigla": "FJG",
     "nome": "Fundação João Goulart - SMS Rio de Janeiro",
     "count": 1807,
-    "uf": "SP",
+    "uf": "RJ",
     "key": "FJG",
     "modalidades": [
       "Acesso Direto",
@@ -376,7 +376,7 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
   },
   {
     "sigla": "UERJ",
-    "nome": "Fundação João Goulart",
+    "nome": "Universidade do Estado do Rio de Janeiro (UERJ)",
     "count": 1637,
     "uf": "RJ",
     "key": "UERJ",
@@ -451,7 +451,7 @@ export const CANONICAL_BANCAS_DIRECTORY: CanonicalBancaItem[] = [
   },
   {
     "sigla": "IPSEMG",
-    "nome": "Hospital Santa Isabel",
+    "nome": "Instituto de Previdência dos Servidores do Estado de Minas Gerais (IPSEMG)",
     "count": 1302,
     "uf": "MG",
     "key": "IPSEMG",
