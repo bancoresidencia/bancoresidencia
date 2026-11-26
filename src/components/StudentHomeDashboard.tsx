@@ -3439,7 +3439,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         return (
                           <div key={idx} className="flex-1 flex flex-col items-center h-full justify-end group relative cursor-default">
                             {/* Tooltip com quantidade e data ao passar o mouse */}
-                            <div className="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 text-[10px] font-bold font-sans tabular-nums px-2 py-0.5 rounded-md shadow-md z-20 whitespace-nowrap">
+                            <div className={`absolute bottom-full hidden group-hover:block pointer-events-none bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 text-[10px] font-bold font-sans px-2 py-0.5 rounded-md shadow-md z-20 w-max max-w-[42cqw] whitespace-normal ${idx < 3 ? 'left-0' : idx > 3 ? 'right-0' : 'left-1/2 -translate-x-1/2'}`}>
                               {day.answered} Q • {day.dateFormatted}
                             </div>
 
