@@ -12,7 +12,8 @@ import {
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
-import { PlanDefinition, PlanId, PLANS } from '@/config/plans';
+import { PlanDefinition, PlanId } from '@/config/plans';
+import { useDynamicPlans } from '@/hooks/useDynamicPlans';
 import {
   getAppliedReferralCode,
   getUserReferralCode,
@@ -60,9 +61,10 @@ const PaymentForm: React.FC<MercadoPagoCheckoutProps> = ({
     return propAppliedReferral !== undefined ? propAppliedReferral : getAppliedReferralCode(currentUserCode, user);
   });
 
+  const { plans } = useDynamicPlans();
   const appliedReferral = propAppliedReferral !== undefined ? propAppliedReferral : uncontrolledReferral;
-  // Garante recuperação do plano base un-discounted para nunca aplicar desconto em dobro
-  const basePlan = PLANS[plan.id as PlanId] || plan;
+  // Garante recuperação do plano base un-discounted a partir dos preços dinâmicos vigentes
+  const basePlan = plans[plan.id as PlanId] || plan;
   const discountPercent = appliedReferral?.discountPercent || 0;
   const hasDiscount = discountPercent > 0;
   const effectivePlan = hasDiscount

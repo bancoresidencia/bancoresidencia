@@ -76,7 +76,7 @@ export function getDefaultPricingSettings(): PlatformPricingSettings {
   };
 
   return {
-    showPricesOnSite: false,
+    showPricesOnSite: true,
     plans,
     updatedAt: new Date().toISOString()
   };

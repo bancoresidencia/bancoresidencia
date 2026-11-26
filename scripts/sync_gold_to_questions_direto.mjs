@@ -80,22 +80,27 @@ async function run() {
 
     const updateById = db.prepare(`
       UPDATE questions_curated_staging 
-      SET commentary = ? 
-      WHERE id = ? AND (commentary IS NULL OR commentary NOT LIKE '%Take-Home%')
+      SET commentary = ?,
+          options = CASE WHEN ? != '[]' THEN ? ELSE options END
+      WHERE id = ? AND (
+        commentary IS NULL OR commentary NOT LIKE '%Take-Home%'
+        OR options IS NULL OR options NOT LIKE '%explanation%'
+      )
     `);
 
     let localCount = 0;
     db.exec('BEGIN TRANSACTION');
     for (const [id, item] of goldMap) {
-      const res1 = updateById.run(item.commentary, `questions_${id}`);
+      const serializedOptions = JSON.stringify(item.options || []);
+      const res1 = updateById.run(item.commentary, serializedOptions, serializedOptions, `questions_${id}`);
       if (res1.changes > 0) {
         localCount++;
       } else {
-        const res2 = updateById.run(item.commentary, `questions_expansion_direto_${id}`);
+        const res2 = updateById.run(item.commentary, serializedOptions, serializedOptions, `questions_expansion_direto_${id}`);
         if (res2.changes > 0) {
           localCount++;
         } else {
-          const res3 = updateById.run(item.commentary, id);
+          const res3 = updateById.run(item.commentary, serializedOptions, serializedOptions, id);
           if (res3.changes > 0) localCount++;
         }
       }

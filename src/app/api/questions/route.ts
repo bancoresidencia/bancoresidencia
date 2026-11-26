@@ -551,11 +551,9 @@ function applyQuestionFilters<T extends PostgrestFilterableQuery>(
     query = query.not('images', 'is', null).neq('images', '[]');
   }
 
-  // 4b-2. Apenas Comentadas (Padrão Ouro)
+  // 4b-2. Apenas Comentadas (Selo Absoluto Padrão Ouro)
   if (filters.apenasComentadas && isPrivileged) {
-    query = query.or(
-      'commentary.ilike.%Take-Home%,commentary.ilike.%Take Home%,commentary.ilike.%Síntese Clínica%,commentary.ilike.%Armadilha da Questão%,commentary.ilike.%Pérola Clínica%'
-    );
+    query = query.eq('commentary_tier', 'padrao_ouro');
   }
 
   // 4c. Programa R+ / Sociedade de Título

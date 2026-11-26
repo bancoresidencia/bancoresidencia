@@ -111,7 +111,15 @@ function getMacroStats() {
         SELECT 
           COALESCE(NULLIF(trim(especialidade), ''), 'Sem Especialidade') as esp,
           count(1) as total,
-          count(case when commentary like '%Take-Home%' or commentary like '%Principal Motivo de Erro%' then 1 end) as padrao_ouro
+          count(case when
+            commentary IS NOT NULL
+            AND length(trim(commentary)) >= 120
+            AND (commentary LIKE '%Take-Home%' OR commentary LIKE '%Take Home%' OR commentary LIKE '%Pérola Prática%' OR commentary LIKE '%Pérola Clínica%')
+            AND (commentary LIKE '%Principal Motivo%' OR commentary LIKE '%Principal Erro%' OR commentary LIKE '%Armadilha%')
+            AND commentary NOT LIKE '%<p>%' AND commentary NOT LIKE '%<br%'
+            AND commentary NOT LIKE 'Olá%' AND commentary NOT LIKE 'Ola%'
+            AND (UPPER(TRIM(correct_answer)) IN ('A','B','C','D','E') OR is_anulada = 1 OR type LIKE '%Discurs%' OR type LIKE '%Dissert%')
+          then 1 end) as padrao_ouro
         FROM questions_curated_staging
         GROUP BY esp
       `).all();

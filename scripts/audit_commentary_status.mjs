@@ -1,6 +1,5 @@
-import fs from 'fs';
-import path from 'path';
-import { DatabaseSync } from 'node:sqlite';
+import fs from 'node:fs';
+import path from 'node:path';
 import { createClient } from '@supabase/supabase-js';
 
 const envPath = path.resolve('.env.local');
@@ -9,101 +8,177 @@ if (fs.existsSync(envPath)) {
   fs.readFileSync(envPath, 'utf8').split('\n').forEach(l => {
     const trimmed = l.trim();
     if (!trimmed || trimmed.startsWith('#')) return;
-    const [k, ...v] = trimmed.split('=');
-    if (k && v.length) env[k.trim()] = v.join('=').trim().replace(/^["']|["']$/g, '');
+    const idx = trimmed.indexOf('=');
+    if (idx !== -1) env[trimmed.slice(0, idx).trim()] = trimmed.slice(idx + 1).trim().replace(/^["']|["']$/g, '');
   });
 }
 
-const db = new DatabaseSync('data/supabase_tables/supabase_tables.db');
+const SUPABASE_URL = env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+const SUPABASE_KEY = env.SUPABASE_SECRET_KEY || env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY;
 
-console.log('=== 1. AUDITORIA GERAL DE COMENTARIOS NO SQLITE SSOT (questions_curated_staging) ===');
-const summaryByModality = db.prepare(`
-  SELECT 
-    COALESCE(modalidade, 'NULL') as modalidade,
-    COUNT(*) as total,
-    SUM(CASE WHEN commentary LIKE '%Take-Home%' THEN 1 ELSE 0 END) as padrao_ouro,
-    SUM(CASE WHEN commentary IS NOT NULL AND length(trim(commentary)) > 50 AND commentary NOT LIKE '%Take-Home%' THEN 1 ELSE 0 END) as legado_sem_ouro,
-    SUM(CASE WHEN commentary IS NULL OR length(trim(commentary)) <= 50 THEN 1 ELSE 0 END) as sem_comentario,
-    SUM(CASE WHEN (commentary IS NULL OR commentary NOT LIKE '%Take-Home%') AND ((UPPER(TRIM(correct_answer)) IN ('A','B','C','D','E')) OR is_anulada = 1) THEN 1 ELSE 0 END) as pendente_ouro_com_gabarito,
-    SUM(CASE WHEN (UPPER(TRIM(correct_answer)) NOT IN ('A','B','C','D','E') OR correct_answer IS NULL) AND (is_anulada IS NULL OR is_anulada = 0) THEN 1 ELSE 0 END) as sem_gabarito
-  FROM questions_curated_staging
-  GROUP BY COALESCE(modalidade, 'NULL')
-`).all();
-console.table(summaryByModality);
-
-console.log('\n=== 2. ACESSO DIRETO: OURO vs LEGADO vs VAZIO POR ESPECIALIDADE ===');
-const diretoBySpec = db.prepare(`
-  SELECT 
-    COALESCE(especialidade, 'NULL') as especialidade,
-    COUNT(*) as total,
-    SUM(CASE WHEN commentary LIKE '%Take-Home%' THEN 1 ELSE 0 END) as padrao_ouro,
-    SUM(CASE WHEN commentary IS NOT NULL AND length(trim(commentary)) > 50 AND commentary NOT LIKE '%Take-Home%' THEN 1 ELSE 0 END) as legado,
-    SUM(CASE WHEN commentary IS NULL OR length(trim(commentary)) <= 50 THEN 1 ELSE 0 END) as vazio,
-    SUM(CASE WHEN (commentary IS NULL OR commentary NOT LIKE '%Take-Home%') AND ((UPPER(TRIM(correct_answer)) IN ('A','B','C','D','E')) OR is_anulada = 1) AND (has_images = 0 OR has_images IS NULL) AND (images IS NULL OR images = '[]' OR images = '') THEN 1 ELSE 0 END) as fila_texto_puro_elegivel,
-    SUM(CASE WHEN (commentary IS NULL OR commentary NOT LIKE '%Take-Home%') AND ((UPPER(TRIM(correct_answer)) IN ('A','B','C','D','E')) OR is_anulada = 1) AND ((has_images = 1) OR (images IS NOT NULL AND images != '[]' AND images != '')) THEN 1 ELSE 0 END) as retido_com_imagem,
-    SUM(CASE WHEN (UPPER(TRIM(correct_answer)) NOT IN ('A','B','C','D','E') OR correct_answer IS NULL) AND (is_anulada IS NULL OR is_anulada = 0) THEN 1 ELSE 0 END) as retido_sem_gabarito
-  FROM questions_curated_staging
-  WHERE modalidade = 'Acesso Direto'
-  GROUP BY COALESCE(especialidade, 'NULL')
-  ORDER BY total DESC
-`).all();
-console.table(diretoBySpec);
-
-console.log('\n=== 3. ORIGEM (prefixo do ID) NO ACESSO DIRETO ===');
-const diretoByOrigin = db.prepare(`
-  SELECT 
-    CASE 
-      WHEN id LIKE 'questions_expansion_direto_%' THEN 'questions_expansion_direto'
-      WHEN id LIKE 'questions_direto_%' THEN 'questions_direto'
-      WHEN id LIKE 'questions_%' THEN 'questions'
-      ELSE 'outro'
-    END as origem_id,
-    COUNT(*) as total,
-    SUM(CASE WHEN commentary LIKE '%Take-Home%' THEN 1 ELSE 0 END) as padrao_ouro,
-    SUM(CASE WHEN commentary IS NOT NULL AND length(trim(commentary)) > 50 AND commentary NOT LIKE '%Take-Home%' THEN 1 ELSE 0 END) as legado,
-    SUM(CASE WHEN commentary IS NULL OR length(trim(commentary)) <= 50 THEN 1 ELSE 0 END) as vazio
-  FROM questions_curated_staging
-  WHERE modalidade = 'Acesso Direto'
-  GROUP BY origem_id
-`).all();
-console.table(diretoByOrigin);
-
-console.log('\n=== 4. AMOSTRA DE FILTROS: PERIOPERATORIO E METABOLISMO (CIRURGIA) ===');
-const perioMetab = db.prepare(`
-  SELECT 
-    COALESCE(tema, 'NULL') as tema,
-    COALESCE(foco, 'NULL') as foco,
-    COALESCE(modalidade, 'NULL') as modalidade,
-    COUNT(*) as total,
-    SUM(CASE WHEN commentary LIKE '%Take-Home%' THEN 1 ELSE 0 END) as padrao_ouro,
-    SUM(CASE WHEN commentary IS NOT NULL AND length(trim(commentary)) > 50 AND commentary NOT LIKE '%Take-Home%' THEN 1 ELSE 0 END) as legado,
-    SUM(CASE WHEN commentary IS NULL OR length(trim(commentary)) <= 50 THEN 1 ELSE 0 END) as vazio,
-    SUM(CASE WHEN (UPPER(TRIM(correct_answer)) NOT IN ('A','B','C','D','E') OR correct_answer IS NULL) AND (is_anulada IS NULL OR is_anulada = 0) THEN 1 ELSE 0 END) as sem_gabarito,
-    SUM(CASE WHEN (has_images = 1) OR (images IS NOT NULL AND images != '[]' AND images != '') THEN 1 ELSE 0 END) as com_imagem
-  FROM questions_curated_staging
-  WHERE lower(tema) LIKE '%perioperat%' 
-     OR lower(foco) LIKE '%perioperat%'
-     OR lower(tema) LIKE '%metabol%'
-     OR lower(foco) LIKE '%metabol%'
-     OR lower(tema) LIKE '%resposta end%'
-     OR lower(subfoco) LIKE '%perioperat%'
-  GROUP BY COALESCE(tema, 'NULL'), COALESCE(foco, 'NULL'), COALESCE(modalidade, 'NULL')
-  ORDER BY total DESC
-  LIMIT 30
-`).all();
-console.table(perioMetab);
-
-console.log('\n=== 5. STATUS EXATO EM SUPABASE (AMOSTRAGEM DE TABELAS E CONTAGENS) ===');
-const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SECRET_KEY || env.SUPABASE_SERVICE_ROLE_KEY);
-
-async function checkSupabase() {
-  const tables = ['questions', 'questions_direto', 'questions_expansion_direto', 'questions_revalida', 'questions_expansion_revalida'];
-  for (const t of tables) {
-    const { count: total, error: e1 } = await supabase.from(t).select('*', { count: 'exact', head: true });
-    const { count: ouro, error: e2 } = await supabase.from(t).select('*', { count: 'exact', head: true }).ilike('commentary', '%Take-Home%');
-    const { count: vazio, error: e3 } = await supabase.from(t).select('*', { count: 'exact', head: true }).or('commentary.is.null,commentary.eq.""');
-    console.log(`${t}: total=${total ?? e1?.message} | ouro=${ouro ?? e2?.message} | vazio=${vazio ?? e3?.message}`);
-  }
+if (!SUPABASE_URL || !SUPABASE_KEY) {
+  console.error('❌ Credenciais do Supabase ausentes no .env.local.');
+  process.exit(1);
 }
 
-checkSupabase().catch(console.error);
+const supabase = createClient(SUPABASE_URL, SUPABASE_KEY, { auth: { persistSession: false } });
+
+const PH_RE = /(comentario em elaboracao|comentário em elaboração|em construcao|em construção|aguardando revisao|aguardando revisão|placeholder|lorem ipsum|todo:|fixme|\bnull\b|nao informado|não informado)/i;
+
+function hasImageAsset(r) {
+  if (Array.isArray(r.images) && r.images.length > 0) return true;
+  const st = String(r.statement || '');
+  return /!\[.*?\]\((https?:\/\/[^\s)]+|\/images\/[^\s)]+|[^\s)]+\.(?:png|jpe?g|webp|gif))/i.test(st);
+}
+
+async function fetchShard(tbl, cols, gte, lt) {
+  const rows = [];
+  let last = gte;
+  let first = true;
+  while (true) {
+    let q = supabase.from(tbl).select(cols).order('id', { ascending: true }).limit(1000);
+    if (last !== null) q = (first && gte !== null) ? q.gte('id', last) : q.gt('id', last);
+    if (lt !== null) q = q.lt('id', lt);
+    first = false;
+    let data, error;
+    for (let a = 1; a <= 4; a++) {
+      ({ data, error } = await q);
+      if (!error) break;
+      await new Promise(r => setTimeout(r, 300 * a));
+    }
+    if (error) throw new Error(`${tbl}: ${error.message}`);
+    if (!data || data.length === 0) break;
+    rows.push(...data);
+    last = data[data.length - 1].id;
+    if (data.length < 1000) break;
+  }
+  return rows;
+}
+
+async function fetchAllSharded(tbl, cols, isDireto) {
+  if (!isDireto) return fetchShard(tbl, cols, null, null);
+  const parts = await Promise.all([
+    fetchShard(tbl, cols, '', '55'),
+    fetchShard(tbl, cols, '55', 'aa'),
+    fetchShard(tbl, cols, 'aa', 'ff'),
+    fetchShard(tbl, cols, 'ff', null)
+  ]);
+  return parts.flat();
+}
+
+async function run() {
+  const t0 = Date.now();
+  console.log('='.repeat(92));
+  console.log('🛡️  ANDAMENTO REAL DE COMENTÁRIOS — SELO ABSOLUTO PADRÃO OURO (SUPABASE LIVE)');
+  console.log('='.repeat(92));
+
+  const specs = [
+    { tbl: 'questions_direto', mod: 'Acesso Direto', sharded: true },
+    { tbl: 'questions_rplus', mod: 'R+', sharded: false },
+    { tbl: 'questions_revalida', mod: 'Revalida', sharded: false },
+    { tbl: 'questions_titulo', mod: 'Título de Especialista', sharded: false }
+  ];
+
+  const modRows = [];
+  const diretoBySpec = new Map();
+  let gTotal = 0, gHom = 0, gGold = 0, gGold4 = 0, gGold3 = 0, gParcial = 0, gSemComm = 0, gPendTxt = 0, gPendImg = 0;
+
+  for (const sp of specs) {
+    const rows = await fetchAllSharded(sp.tbl, 'id,especialidade,type,has_gabarito,commentary_tier,options,images', sp.sharded);
+    let total = rows.length, hom = 0, gold = 0, gold4 = 0, gold3 = 0, parcial = 0, semComm = 0, pendTxt = 0, pendImg = 0;
+
+    for (const r of rows) {
+      const opts = Array.isArray(r.options) ? r.options : [];
+      const expls = opts.filter(o => String(o?.explanation || '').trim().length >= 15 && !PH_RE.test(String(o?.explanation || ''))).length;
+      const isDisc = opts.length === 0 || /(discurs|dissert|aberta)/i.test(String(r.type || ''));
+      const tier = r.commentary_tier || 'nao_comentada';
+      const hasGab = r.has_gabarito === true;
+      const img = hasImageAsset(r);
+
+      if (hasGab) hom++;
+      if (tier === 'padrao_ouro') {
+        gold++;
+        if (!isDisc && expls === 0) gold3++; else gold4++;
+      } else if (tier === 'comentada_parcial') {
+        parcial++;
+      } else {
+        semComm++;
+      }
+
+      if (hasGab && tier !== 'padrao_ouro') {
+        if (img) pendImg++; else pendTxt++;
+      }
+
+      if (sp.tbl === 'questions_direto') {
+        const esp = (r.especialidade || 'Sem Especialidade').trim();
+        if (!diretoBySpec.has(esp)) {
+          diretoBySpec.set(esp, { total: 0, hom: 0, ouro: 0, ouro4: 0, ouro3: 0, parcial: 0, pendTxt: 0, pendImg: 0 });
+        }
+        const st = diretoBySpec.get(esp);
+        st.total++;
+        if (hasGab) st.hom++;
+        if (tier === 'padrao_ouro') {
+          st.ouro++;
+          if (!isDisc && expls === 0) st.ouro3++; else st.ouro4++;
+        } else if (tier === 'comentada_parcial') {
+          st.parcial++;
+        }
+        if (hasGab && tier !== 'padrao_ouro') {
+          if (img) st.pendImg++; else st.pendTxt++;
+        }
+      }
+    }
+
+    gTotal += total; gHom += hom; gGold += gold; gGold4 += gold4; gGold3 += gold3;
+    gParcial += parcial; gSemComm += semComm; gPendTxt += pendTxt; gPendImg += pendImg;
+
+    modRows.push({
+      Modalidade: sp.mod,
+      Total: total,
+      Homologadas: hom,
+      'Padrão Ouro': gold,
+      '4/4 ou Disc.': gold4,
+      '3 Pilares (0/N)': gold3,
+      Parciais: parcial,
+      'Não Coment.': semComm,
+      '% Ouro/Hom.': hom > 0 ? ((gold / hom) * 100).toFixed(1) + '%' : '0.0%',
+      'Fila IA Txt': pendTxt,
+      'Fila IA Img': pendImg
+    });
+  }
+
+  console.log('\n=== 1. RESUMO POR MODALIDADE (SUPABASE CANÔNICO) ===');
+  console.table(modRows);
+
+  console.log('\n=== 2. ACESSO DIRETO POR ESPECIALIDADE ===');
+  const specTable = Array.from(diretoBySpec.entries())
+    .map(([esp, st]) => ({
+      Especialidade: esp,
+      Total: st.total,
+      Homologadas: st.hom,
+      'Padrão Ouro': st.ouro,
+      '4/4+Disc': st.ouro4,
+      '3 Pilares': st.ouro3,
+      Parciais: st.parcial,
+      '% Ouro/Hom.': st.hom > 0 ? ((st.ouro / st.hom) * 100).toFixed(1) + '%' : '0.0%',
+      'Fila IA Txt': st.pendTxt,
+      'Fila IA Img': st.pendImg
+    }))
+    .sort((a, b) => b.Total - a.Total);
+  console.table(specTable);
+
+  const { data: rpcCount } = await supabase.rpc('query_study_questions', { p_filters: { only_commented: true }, p_mode: 'count' });
+  console.log('\n=== 3. CONSOLIDADO GLOBAL ===');
+  console.log(`• Total Canônico         : ${gTotal.toLocaleString('pt-BR')} (Homologadas: ${gHom.toLocaleString('pt-BR')})`);
+  console.log(`• Selo Padrão Ouro Total : ${gGold.toLocaleString('pt-BR')} (${((gGold / gHom) * 100).toFixed(2)}% das homologadas | 4/4+Disc: ${gGold4.toLocaleString('pt-BR')} | Lote 1B 3-pilares: ${gGold3.toLocaleString('pt-BR')})`);
+  console.log(`• RPC Índice (Ouro live) : ${(rpcCount?.total ?? '?').toLocaleString('pt-BR')}`);
+  console.log(`• Comentadas Parciais    : ${gParcial.toLocaleString('pt-BR')} (inclui sem gabarito, legadas, só alternativas, falta PE/TH)`);
+  console.log(`• Sem Comentário         : ${gSemComm.toLocaleString('pt-BR')}`);
+  console.log(`• Fila Elegível IA       : ${(gPendTxt + gPendImg).toLocaleString('pt-BR')} (Texto puro: ${gPendTxt.toLocaleString('pt-BR')} | Multimodal img: ${gPendImg.toLocaleString('pt-BR')})`);
+  console.log(`⏱️  Tempo de auditoria: ${((Date.now() - t0) / 1000).toFixed(1)}s\n`);
+}
+
+run().catch(err => {
+  console.error('❌ ERRO:', err.message);
+  process.exit(1);
+});

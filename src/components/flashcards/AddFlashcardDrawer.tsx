@@ -435,11 +435,10 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
                           setDeckInput(d.name);
                           setIsDeckMenuOpen(false);
                         }}
-                        className={`w-full px-3.5 py-2 text-left flex items-center justify-between gap-2 text-xs transition-colors cursor-pointer ${
-                          isSelected
+                        className={`w-full px-3.5 py-2 text-left flex items-center justify-between gap-2 text-xs transition-colors cursor-pointer ${isSelected
                             ? 'bg-zinc-100 dark:bg-zinc-800 font-bold text-zinc-900 dark:text-zinc-100'
                             : 'text-zinc-700 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-800/60'
-                        }`}
+                          }`}
                       >
                         <span className="truncate">{d.name.replace(/::/g, ' › ')}</span>
                         {d.id === 'deck-padrao' && (
@@ -486,7 +485,7 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
                   e.preventDefault();
                   void uploadFlashcardImageFile(file)
                     .then((url) => setNewCardFrontImageUrl(url))
-                    .catch(() => {});
+                    .catch(() => { });
                 }
               }}
               placeholder="Ex: A ingestão de {{c1::bateria de disco}} no esôfago exige remoção endoscópica imediata."
@@ -516,7 +515,7 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
                   e.preventDefault();
                   void uploadFlashcardImageFile(file)
                     .then((url) => setNewCardBackImageUrl(url))
-                    .catch(() => {});
+                    .catch(() => { });
                 }
               }}
               placeholder="Ex: bateria de disco (ou remoção endoscópica imediata)"
@@ -554,18 +553,16 @@ export const AddFlashcardDrawer: React.FC<AddFlashcardDrawerProps> = ({
                   prev === 'essential' ? 'standard' : 'essential'
                 )
               }
-              className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold border transition-colors cursor-pointer ${
-                newCardPriority === 'essential'
+              className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold border transition-colors cursor-pointer ${newCardPriority === 'essential'
                   ? 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30'
                   : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400'
-              }`}
+                }`}
             >
               <Star
-                className={`w-3.5 h-3.5 ${
-                  newCardPriority === 'essential'
+                className={`w-3.5 h-3.5 ${newCardPriority === 'essential'
                     ? 'fill-amber-500 text-amber-500'
                     : 'text-zinc-400'
-                }`}
+                  }`}
               />
               <span>Prioritário</span>
             </button>

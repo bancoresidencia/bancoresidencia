@@ -878,7 +878,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
     // Extração de Take-Home Message / Pérola Prática do comentário
     if (!extractedTakeHome) {
-      const thRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2})?(?:Take-Home Message(?:\s*\([^)]+\))?|Mensagem-Chave|Pérola Prática(?: para Prova)?|Pérola Clínica|Clinical Pearl|Pérola de Prova)\*{0,2}:?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2})?(?:Principal Motivo|Motivo de Erro|Armadilha|Evolução de Diretrizes|Referências|Base Teórica|Fontes|Gabarito)|$))/i;
+      const thRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2}|💡\s*)*(?:Take[- ]?Home Message(?:\s*\([^)]+\))?|Mensagem-Chave|Pérola Prática(?: para Prova)?|Pérola Clínica|Clinical Pearl|Pérola de Prova)\*{0,2}:?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2}|💡\s*)*(?:Principal Motivo|Principal Erro|Motivo (?:de|do) Erro|Armadilha|Evolução de Diretrizes|Referências|Base Teórica|Fontes|Gabarito)|$))/i;
       const thMatch = cleanedFinal.match(thRegex);
       if (thMatch) {
         extractedTakeHome = thMatch[1].trim();
@@ -888,7 +888,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
     // Extração do Principal Motivo de Erro / Armadilha da Questão
     if (!extractedError) {
-      const errRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2})?(?:Principal Motivo (?:de Erro|que Leva ao Erro)(?:\s*\([^)]+\))?|Motivo de Erro|Armadilha da Questão|Pegadinha de Prova|Onde o Aluno Costuma Errar)\*{0,2}:?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2})?(?:Take-Home Message|Pérola Prática|Evolução de Diretrizes|Referências|Base Teórica|Fontes|Gabarito)|$))/i;
+      const errRegex = /(?:^|\n)\s*(?:#{1,4}\s*|\*{1,2}|⚠️\s*)*(?:Principal Motivo (?:de Erro|do Erro|que Leva ao Erro)(?:\s*\([^)]+\))?|Principal Erro|Motivo (?:de|do) Erro|Armadilha da Questão|Pegadinha de Prova|Onde o Aluno Costuma Errar)\*{0,2}:?\s*([\s\S]*?)(?=(?:\n\s*\n\s*(?:#{1,4}\s*|\*{1,2}|💡\s*)*(?:Take[- ]?Home Message|Pérola Prática|Evolução de Diretrizes|Referências|Base Teórica|Fontes|Gabarito)|$))/i;
       const errMatch = cleanedFinal.match(errRegex);
       if (errMatch) {
         extractedError = errMatch[1].trim();

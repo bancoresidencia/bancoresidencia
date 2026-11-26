@@ -98,15 +98,20 @@ function checkHasImage(q) {
   return false;
 }
 
-// Filtra apenas questões de texto puro com gabarito homologado sem comentários padrão-ouro
+// Filtra apenas questões de texto puro com gabarito homologado sem selo Padrão-Ouro completo
 const validAnswers = ['A', 'B', 'C', 'D', 'E', 'ANULADA'];
 let pendingQuestions = allQuestions.filter(q => {
   const ans = (q.correctAnswer || q.correct_answer || q.gabarito || '').toUpperCase().trim();
   const hasValidAns = validAnswers.includes(ans) || q.is_anulada;
-  const comm = q.commentary || '';
-  const needsComm = !comm.includes('Take-Home Message:') && !comm.includes('Take-Home');
+  const comm = String(q.commentary || '').trim();
+  const isAlreadyGold = q.commentary_tier === 'padrao_ouro' || (
+    comm.length >= 120 &&
+    /take[- ]?home/i.test(comm) &&
+    /(principal\s+motivo|principal\s+erro|armadilha)/i.test(comm) &&
+    !/<\/?(?:p|br|div|span)\b/i.test(comm)
+  );
   const noImg = !checkHasImage(q);
-  return hasValidAns && needsComm && noImg;
+  return hasValidAns && !isAlreadyGold && noImg;
 });
 if (LIMIT < pendingQuestions.length) {
   pendingQuestions = pendingQuestions.slice(0, LIMIT);
@@ -294,14 +299,21 @@ async function processQuestion(q) {
       .then(() => { })
       .catch(() => { });
 
-    // 3. Atualiza SQLite local se aberto
+    // 3. Atualiza SQLite local se aberto (preservando commentary e options juntos; nunca por code)
     if (dbLocal) {
       try {
         dbLocal.prepare(`
           UPDATE questions_curated_staging 
-          SET commentary = ?
-          WHERE id = ? OR id = ? OR code = ?
-        `).run(cleanCommentary, `questions_${q.id}`, `questions_expansion_direto_${q.id}`, q.code);
+          SET commentary = ?,
+              options = ?
+          WHERE id = ? OR id = ? OR id = ?
+        `).run(
+          cleanCommentary,
+          JSON.stringify(cleanedOptions),
+          `questions_${q.id}`,
+          `questions_expansion_direto_${q.id}`,
+          q.id
+        );
       } catch { }
     }
 

@@ -16,7 +16,8 @@ import { useOverlayDismiss } from '@/hooks/useOverlayDismiss';
 import { useAuth as useUserAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { PlanType } from '@/hooks/useSubscription';
-import { PLANS, PlanDefinition } from '@/config/plans';
+import { PlanDefinition } from '@/config/plans';
+import { useDynamicPlans } from '@/hooks/useDynamicPlans';
 import { MercadoPagoCheckout } from '@/components/MercadoPagoCheckout';
 import {
   getAppliedReferralCode,
@@ -51,20 +52,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
   const [couponInput, setCouponInput] = useState<string>('');
   const [couponFeedback, setCouponFeedback] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
-  const [showPrices, setShowPrices] = useState(false);
-
-  useEffect(() => {
-    if (isOpen) {
-      fetch('/api/plans')
-        .then((r) => r.json())
-        .then((data) => {
-          if (data.success && typeof data.showPricesOnSite === 'boolean') {
-            setShowPrices(data.showPricesOnSite);
-          }
-        })
-        .catch(() => {});
-    }
-  }, [isOpen]);
+  const { plans, showPricesOnSite: showPrices } = useDynamicPlans(isOpen);
 
   if (isOpen !== prevIsOpen) {
     setPrevIsOpen(isOpen);
@@ -133,10 +121,10 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
   const selectedPlanForCheckout = rawSelectedPlan ? computeDiscountedPlan(rawSelectedPlan) : null;
 
   const planList = [
-    PLANS.biennial,
-    PLANS.annual,
-    PLANS.semiannual,
-    PLANS.monthly
+    plans.biennial,
+    plans.annual,
+    plans.semiannual,
+    plans.monthly
   ];
 
   return (

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
-import path from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
+import { createClient } from '@supabase/supabase-js';
 
 const env = {};
 for (const line of fs.readFileSync('.env.local', 'utf8').split('\n')) {
@@ -12,7 +12,8 @@ for (const line of fs.readFileSync('.env.local', 'utf8').split('\n')) {
 }
 
 const SUPABASE_URL = env.NEXT_PUBLIC_SUPABASE_URL;
-const SERVICE_KEY = env.SUPABASE_SERVICE_ROLE_KEY;
+const SERVICE_KEY = env.SUPABASE_SECRET_KEY || env.SUPABASE_SERVICE_ROLE_KEY;
+const supabase = createClient(SUPABASE_URL, SERVICE_KEY, { auth: { persistSession: false } });
 
 const db = new DatabaseSync('data/supabase_tables/supabase_tables.db');
 
@@ -21,17 +22,18 @@ db.exec(`
   CREATE TABLE supabase_live_commentaries (
     id TEXT PRIMARY KEY,
     supabase_table TEXT,
-    commentary TEXT
+    commentary TEXT,
+    options TEXT
   );
   CREATE INDEX IF NOT EXISTS idx_slc_id ON supabase_live_commentaries(id);
 `);
 
 const insertComm = db.prepare(`
-  INSERT OR REPLACE INTO supabase_live_commentaries (id, supabase_table, commentary)
-  VALUES (?, ?, ?)
+  INSERT OR REPLACE INTO supabase_live_commentaries (id, supabase_table, commentary, options)
+  VALUES (?, ?, ?, ?)
 `);
 
-const tablesWithComm = ['questions_direto', 'questions_revalida', 'questions_rplus'];
+const tablesWithComm = ['questions_direto', 'questions_revalida', 'questions_rplus', 'questions_titulo'];
 
 async function fetchCommentariesForTable(table) {
   console.log(`\n📥 Coletando comentários completos de '${table}'...`);
@@ -41,36 +43,33 @@ async function fetchCommentariesForTable(table) {
   const t0 = Date.now();
 
   while (true) {
-    let url = `${SUPABASE_URL}/rest/v1/${table}?select=id,commentary&commentary=not.is.null&commentary=neq.&limit=${pageSize}&order=id.asc`;
-    if (lastId) {
-      url += `&id=gt.${encodeURIComponent(lastId)}`;
-    }
-
-    let res = null;
+    let rows = null;
     let attempt = 0;
     while (attempt < 5) {
-      try {
-        attempt++;
-        res = await fetch(url, {
-          headers: {
-            'apikey': SERVICE_KEY,
-            'Authorization': `Bearer ${SERVICE_KEY}`
-          }
-        });
-        if (res.ok) break;
-        await new Promise(r => setTimeout(r, 400 * attempt));
-      } catch (e) {
-        if (attempt >= 5) throw e;
-        await new Promise(r => setTimeout(r, 400 * attempt));
+      attempt++;
+      let q = supabase
+        .from(table)
+        .select('id,commentary,options')
+        .not('commentary', 'is', null)
+        .neq('commentary', '')
+        .order('id', { ascending: true })
+        .limit(pageSize);
+      if (lastId) q = q.gt('id', lastId);
+
+      const { data, error } = await q;
+      if (!error) {
+        rows = data;
+        break;
       }
+      if (attempt >= 5) throw new Error(error.message);
+      await new Promise(r => setTimeout(r, 400 * attempt));
     }
 
-    const rows = await res.json();
     if (!rows || rows.length === 0) break;
 
     db.exec('BEGIN TRANSACTION');
     for (const r of rows) {
-      insertComm.run(String(r.id), table, r.commentary || '');
+      insertComm.run(String(r.id), table, r.commentary || '', JSON.stringify(r.options || []));
       lastId = String(r.id);
     }
     db.exec('COMMIT');

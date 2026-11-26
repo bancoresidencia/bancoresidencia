@@ -69,17 +69,22 @@ if (fs.existsSync(CATALOG_PATH)) {
 }
 
 /**
- * Filtra termos ou menções comerciais indevidas
+ * Filtra termos/menções comerciais indevidas e tags HTML incompatíveis com o Selo Absoluto
  */
 export function sanitizeText(text) {
   if (!text) return '';
-  return text
+  return String(text)
+    .replace(/<\s*br\s*\/?\s*>/gi, '\n')
+    .replace(/<\/\s*(?:p|div|li|tr|h[1-6]|blockquote)\s*>/gi, '\n')
+    .replace(/<\/?(?:p|br|div|span|strong|b|i|em|u|ul|ol|li|h[1-6]|table|thead|tbody|tr|td|th|sup|sub|blockquote|hr|a|img)(?:\s[^>]*)?>/gi, '')
     .replace(/estrat[ée]gia\s*med/gi, 'Base Médica Teórica')
     .replace(/estrat[ée]gia\s*vestibulares/gi, 'Base Teórica')
     .replace(/medcurso/gi, 'Diretrizes Oficiais')
     .replace(/\bsanar\s*(med|flix|sa[úu]de|resid[êe]ncia)\b/gi, 'Consenso Clínico')
     .replace(/\bsanarmed\b|\bsanarflix\b/gi, 'Consenso Clínico')
-    .replace(/medevo/gi, 'Banca de Residência');
+    .replace(/medevo/gi, 'Banca de Residência')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
 }
 
 /**
@@ -214,12 +219,12 @@ export function getSpecialtyGuideline(specialty, tema) {
   return 'Você é um Preceptor Médico de elite (Residência Médica / Revalida Brasil). Micro-diretrizes: priorize os achados clínicos do enunciado para definir diagnóstico e conduta segundo diretrizes brasileiras vigentes (MS, SBC, SBP, FEBRASGO, CBC, ATLS) sem depender apenas de etiquetas genéricas.';
 }
 
-// Modelos prioritários em rotação gratuita com fallback automático
+// Modelos prioritários ativos no plano gratuito (testados ao vivo em 200 OK; 3.5-flash* removidos do front-line por 429)
 export const AVAILABLE_MODELS = [
-  'gemini-3.5-flash-lite',
-  'gemini-flash-lite-latest',
-  'gemini-3.5-flash',
-  'gemini-3.1-flash-lite'
+  'gemini-3.1-flash-lite',
+  'gemini-3.1-flash-lite-preview',
+  'gemini-3.8-flash',
+  'gemini-flash-lite-latest'
 ];
 
 const exhaustedPairs = new Set();
@@ -269,8 +274,9 @@ export async function solveQuestionDeep(question, specialtyOverride = null, mode
     .map(opt => `${opt.letter}) ${opt.text}`)
     .join('\n');
 
-  // Trava de Ouro: Identifica o gabarito oficial real pré-existente
-  const goldAnswer = (question.correctAnswer || question.correct_answer || '').toUpperCase().trim();
+  // Trava de Ouro: Identifica o gabarito oficial real pré-existente (inclui questões anuladas homologadas)
+  const isAnuladaInit = Boolean(question.is_anulada || question.isAnulada);
+  const goldAnswer = (question.correctAnswer || question.correct_answer || (isAnuladaInit ? 'ANULADA' : '')).toUpperCase().trim();
   if (!goldAnswer) {
     throw new Error(`Questão ${question.id} não possui gabarito oficial da banca definido. Pelo Princípio da Âncora de Ouro, a IA é proibida de adivinhar gabaritos.`);
   }
@@ -281,12 +287,15 @@ export async function solveQuestionDeep(question, specialtyOverride = null, mode
   const themes = getRelevantBookThemes(question.especialidade, question.tema);
   const themesStr = themes.length > 0 ? themes.join(', ') : question.tema || question.especialidade;
 
-  const optLetters = (question.options || []).map(o => o.letter).join(', ');
-  const optionsSchemaExample = (question.options || [])
-    .map(o => o.letter === goldAnswer
-      ? `    "${o.letter}": "Conceito padrão-ouro em **negrito**"`
-      : `    "${o.letter}": "Erro em **negrito** e correção (máx 120 carac)"`)
-    .join(',\n');
+  const isDiscursiva = (question.options || []).length === 0 || /(discurs|dissert|aberta)/i.test(String(question.type || ''));
+  const optLetters = isDiscursiva ? 'Questão discursiva (sem alternativas)' : (question.options || []).map(o => o.letter).join(', ');
+  const optionsSchemaExample = isDiscursiva
+    ? '    "_discursiva": "Critério de pontuação e resposta esperada padrão-ouro"'
+    : (question.options || [])
+      .map(o => o.letter === goldAnswer
+        ? `    "${o.letter}": "Conceito padrão-ouro em **negrito**"`
+        : `    "${o.letter}": "Erro em **negrito** e correção (máx 120 carac)"`)
+      .join(',\n');
 
   // Extração e montagem de imagens para visão multimodal
   const images = [];
@@ -414,7 +423,7 @@ ${optionsSchemaExample}
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${activeModel}:generateContent?key=${activeKey}`;
 
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 12000);
+    const timeoutId = setTimeout(() => controller.abort(), 20000);
 
     try {
       const res = await fetch(url, {
@@ -529,6 +538,15 @@ ${optionsSchemaExample}
 
       const mainErrorReason = sanitizeText(parsed.mainErrorReason || '');
       const takeHomeMessage = sanitizeText(parsed.takeHomeMessage || '');
+
+      // Quality Gate Selo Absoluto: recusa respostas incompletas para não gerar comentada_parcial
+      if (!finalCommentary || finalCommentary.length < 120 || !mainErrorReason || !takeHomeMessage) {
+        if (attempt < 15) {
+          await new Promise(r => setTimeout(r, 800));
+          continue;
+        }
+        throw new Error('Saída da IA incompleta (faltando corpo >=120 chars, Principal Erro ou Take-Home Message)');
+      }
 
       // Evolução de Diretrizes: se inalterada (vazia), injeta deterministicamente sem gastar tokens do LLM
       let guidelineEvolution = sanitizeText(parsed.guidelineEvolution || '').trim();

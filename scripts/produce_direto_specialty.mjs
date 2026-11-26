@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { DatabaseSync } from 'node:sqlite';
 import { createClient } from '@supabase/supabase-js';
-import { solveQuestionDeep } from './solve_questions_engine.mjs';
+import { API_KEYS, solveQuestionDeep } from './solve_questions_engine.mjs';
 
 // 1. Carrega variáveis de ambiente
 const envPath = path.resolve('.env.local');
@@ -12,7 +12,7 @@ if (fs.existsSync(envPath)) {
     const trimmed = l.trim();
     if (!trimmed || trimmed.startsWith('#')) return;
     const [k, ...v] = trimmed.split('=');
-    if (k && v.length) env[k.trim()] = v.join('=').trim().replace(/^["']|["']$/g, '');
+    if (k && v.length) env[k.trim()] = v.join('=').trim().replace(/^['"]|['"]$/g, '');
   });
 }
 
@@ -39,6 +39,9 @@ const PRIORITY_CHAIN = ['Pediatria', 'Cirurgia Geral', 'Ginecologia', 'Obstetrí
 
 const argSpec = process.argv.find(a => a.startsWith('--specialty='));
 const INITIAL_SPECIALTY = argSpec ? argSpec.split('=')[1] : null;
+const argTable = process.argv.find(a => a.startsWith('--table='));
+const TARGET_TABLE = argTable ? argTable.split('=')[1] : 'questions_direto';
+const ALLOW_IMAGES = process.argv.includes('--with-images');
 
 let activeChain = [...PRIORITY_CHAIN];
 if (INITIAL_SPECIALTY && PRIORITY_CHAIN.includes(INITIAL_SPECIALTY)) {
@@ -60,31 +63,37 @@ let cachedPendingBySpec = null;
 
 async function preloadAllPendingFromSupabase() {
   if (cachedPendingBySpec) return cachedPendingBySpec;
-  console.log('🔍 Mapeando pendências reais diretamente em Supabase questions_direto (varredura PK estável)...');
+  console.log(`🔍 Mapeando pendências reais (Selo Absoluto) em Supabase ${TARGET_TABLE} (UUIDs + pdr_*)...`);
   const map = new Map();
-  const buckets = '0123456789abcdef'.split('');
-  let bIdx = 0;
+  // Shards lexicais cobrem 100% dos UUIDs (0-9, a-f) E todos os prefixos pdr_* / exp_*
+  const shards = [
+    { gte: '', lt: '40' },
+    { gte: '40', lt: '80' },
+    { gte: '80', lt: 'c0' },
+    { gte: 'c0', lt: 'pdr_' },
+    { gte: 'pdr_', lt: null }
+  ];
+  let sIdx = 0;
 
   async function worker() {
-    while (bIdx < buckets.length) {
-      const h = buckets[bIdx++];
-      const lower = `${h}0000000-0000-0000-0000-000000000000`;
-      const upper = `${h}fffffff-ffff-ffff-ffff-ffffffffffff`;
-      let lastId = null;
+    while (sIdx < shards.length) {
+      const sh = shards[sIdx++];
+      let lastId = sh.gte;
+      let first = true;
 
       while (true) {
         let q = supabase
-          .from('questions_direto')
-          .select('id, especialidade, has_gabarito, commentary, images, correct_answer, is_anulada, year')
-          .gte('id', lastId ? lastId : lower)
-          .lte('id', upper)
+          .from(TARGET_TABLE)
+          .select('id, especialidade, has_gabarito, commentary_tier, commentary, images, correct_answer, is_anulada, year')
           .order('id', { ascending: true })
           .limit(1000);
-        if (lastId) q = q.gt('id', lastId);
+        q = (first && sh.gte !== null) ? q.gte('id', lastId) : q.gt('id', lastId);
+        if (sh.lt !== null) q = q.lt('id', sh.lt);
+        first = false;
 
         const { data, error } = await q;
         if (error) {
-          console.warn(`⚠️ Retry bucket ${h}: ${error.message}`);
+          console.warn(`⚠️ Retry shard ${sh.gte}..${sh.lt}: ${error.message}`);
           await new Promise(r => setTimeout(r, 1500));
           continue;
         }
@@ -93,10 +102,10 @@ async function preloadAllPendingFromSupabase() {
 
         for (const r of data) {
           if (!r.has_gabarito) continue;
-          const c = (r.commentary || '').trim();
-          if (c.includes('Take-Home')) continue;
+          // Critério oficial Selo Absoluto: pula apenas questões já seladas como 'padrao_ouro'
+          if (r.commentary_tier === 'padrao_ouro') continue;
           const hasImg = Array.isArray(r.images) && r.images.length > 0;
-          if (hasImg) continue;
+          if (hasImg && !ALLOW_IMAGES) continue;
           const ans = (r.correct_answer || '').toUpperCase().trim();
           const hasValidAns = ['A', 'B', 'C', 'D', 'E'].includes(ans) || Boolean(r.is_anulada);
           if (!hasValidAns) continue;
@@ -111,7 +120,7 @@ async function preloadAllPendingFromSupabase() {
   }
 
   await Promise.all([worker(), worker(), worker()]);
-  for (const [esp, list] of map.entries()) {
+  for (const [, list] of map.entries()) {
     list.sort((a, b) => b.year - a.year);
   }
   cachedPendingBySpec = map;
@@ -128,7 +137,7 @@ async function fetchPendingDirectFromSupabase(specialtyName) {
   for (let i = 0; i < ids.length; i += 150) {
     const chunk = ids.slice(i, i + 150);
     const { data, error } = await supabase
-      .from('questions_direto')
+      .from(TARGET_TABLE)
       .select('id, code, institution, banca, year, especialidade, tema, type, is_anulada, correct_answer, statement, options, commentary, images')
       .in('id', chunk);
     if (error) throw new Error(`Hydrate error (${specialtyName}): ${error.message}`);
@@ -158,14 +167,14 @@ async function checkSignals(updateStateFn) {
 
 async function runSpecialty(specialtyName, chainIndex, totalChain) {
   console.log(`\n================================================================================`);
-  console.log(`🚀 CADEIA PRIORITÁRIA [${chainIndex + 1}/${totalChain}] — ${specialtyName.toUpperCase()} (FONTE DIRETA: SUPABASE questions_direto)`);
+  console.log(`🚀 CADEIA PRIORITÁRIA [${chainIndex + 1}/${totalChain}] — ${specialtyName.toUpperCase()} (FONTE DIRETA: SUPABASE ${TARGET_TABLE})`);
   console.log(`- Prioridade: ${activeChain.join(' ➔ ')}`);
-  console.log(`- Concorrência: ${CONCURRENCY} workers paralelos | Pool: 9 chaves gratuitas Gemini (R$ 0,00)`);
+  console.log(`- Concorrência: ${CONCURRENCY} workers paralelos | Pool: ${API_KEYS.length} chaves gratuitas únicas Gemini (R$ 0,00)`);
   console.log(`================================================================================`);
 
   const pendingQuestions = await fetchPendingDirectFromSupabase(specialtyName);
   const totalToProcess = pendingQuestions.length;
-  console.log(`- Questões elegíveis (texto puro sem Take-Home, incluindo placeholders e legados): ${totalToProcess}\n`);
+  console.log(`- Questões elegíveis (${ALLOW_IMAGES ? 'texto + imagem' : 'texto puro'} sem Selo Padrão Ouro): ${totalToProcess}\n`);
 
   if (totalToProcess === 0) {
     console.log(`🎉 [${specialtyName}] 100% zerada no site! Avançando...`);
@@ -199,7 +208,7 @@ async function runSpecialty(specialtyName, chainIndex, totalChain) {
       nextSpecialty,
       priorityChain: PRIORITY_CHAIN,
       chainStep: `${chainIndex + 1}/${totalChain}`,
-      modalidade: 'Acesso Direto (Supabase Live)',
+      modalidade: `${TARGET_TABLE} (Supabase Live)`,
       concurrency: CONCURRENCY,
       totalToProcess,
       processedCount,
@@ -216,7 +225,7 @@ async function runSpecialty(specialtyName, chainIndex, totalChain) {
         totalTokens,
         promptTokens: Math.round(totalTokens * 0.7),
         candidateTokens: Math.round(totalTokens * 0.3),
-        pricing: { totalCostUSD: 0, totalCostBRL: 0, tier: 'Gratuito (9 Chaves Google Gemini)' }
+        pricing: { totalCostUSD: 0, totalCostBRL: 0, tier: `Gratuito (${API_KEYS.length} Chaves Google Gemini)` }
       },
       currentQuestion: currentQ,
       recentHistory: recentHistory.slice(-15).reverse(),
@@ -234,7 +243,7 @@ async function runSpecialty(specialtyName, chainIndex, totalChain) {
     const qObj = {
       ...q,
       options,
-      correctAnswer: q.correct_answer,
+      correctAnswer: q.correct_answer || (q.is_anulada ? 'ANULADA' : ''),
       specialty: q.especialidade
     };
 
@@ -249,15 +258,15 @@ async function runSpecialty(specialtyName, chainIndex, totalChain) {
         explanation: sanitizePostgres(o.explanation)
       }));
 
-      // 1. Atualiza tabela real do site (questions_direto) verificando .select('id')
+      // 1. Atualiza tabela real do site verificando .select('id') (trigger Postgres sela commentary_tier automaticamente)
       const { data: updRows, error: supError } = await supabase
-        .from('questions_direto')
+        .from(TARGET_TABLE)
         .update({ commentary: cleanCommentary, options: cleanedOptions })
         .eq('id', q.id)
         .select('id');
 
       if (supError || !updRows || updRows.length === 0) {
-        throw new Error(supError?.message || '0 linhas atualizadas em questions_direto');
+        throw new Error(supError?.message || `0 linhas atualizadas em ${TARGET_TABLE}`);
       }
 
       // Espelha em tabelas legadas caso existam

@@ -161,11 +161,10 @@ export const StudyTimerSaveModal: React.FC = () => {
                     key={t.id}
                     type="button"
                     onClick={() => setStudyType(t.id)}
-                    className={`py-2 px-1.5 sm:px-2.5 rounded-xl text-[11px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer border min-w-0 ${
-                      isSelected
+                    className={`py-2 px-1.5 sm:px-2.5 rounded-xl text-[11px] sm:text-xs font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 cursor-pointer border min-w-0 ${isSelected
                         ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
                         : 'bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                    }`}
+                      }`}
                   >
                     <span className="shrink-0">{t.icon}</span>
                     <span className="truncate">{t.label}</span>

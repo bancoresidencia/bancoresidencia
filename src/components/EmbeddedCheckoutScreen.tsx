@@ -5,7 +5,8 @@ import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { Logo } from '@/components/Logo';
 import { ThemeSelector } from '@/components/ThemeSelector';
-import { PLANS, PlanDefinition } from '@/config/plans';
+import { PlanDefinition, PlanId } from '@/config/plans';
+import { useDynamicPlans } from '@/hooks/useDynamicPlans';
 import { MercadoPagoCheckout } from '@/components/MercadoPagoCheckout';
 import {
   getAppliedReferralCode,
@@ -44,17 +45,19 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
   const discountPercent = appliedReferral?.discountPercent || 0;
   const hasDiscount = discountPercent > 0;
 
-  // Permite trocar de plano na própria tela de checkout
-  const [selectedPlan, setSelectedPlan] = useState<PlanDefinition>(initialPlan);
+  const { plans } = useDynamicPlans();
+  // Permite trocar de plano na própria tela de checkout preservando os preços dinâmicos
+  const [selectedPlanId, setSelectedPlanId] = useState<PlanId>(initialPlan.id);
+  const selectedPlan = plans[selectedPlanId] || initialPlan;
   const effectiveSelectedPlan = hasDiscount
     ? computeDiscountedPlan(selectedPlan, discountPercent)
     : selectedPlan;
 
   const planList: PlanDefinition[] = [
-    PLANS.annual,
-    PLANS.biennial,
-    PLANS.semiannual,
-    PLANS.monthly
+    plans.annual,
+    plans.biennial,
+    plans.semiannual,
+    plans.monthly
   ];
 
   const firstName = user?.name ? user.name.trim().split(' ')[0] : '';
@@ -151,7 +154,7 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
                     <button
                       key={p.id}
                       type="button"
-                      onClick={() => setSelectedPlan(p)}
+                      onClick={() => setSelectedPlanId(p.id)}
                       className={`p-3 rounded-2xl border text-left transition-all cursor-pointer relative ${isCurrent
                           ? 'border-2 bg-slate-50 dark:bg-zinc-800/60 shadow-sm'
                           : 'border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 bg-transparent'

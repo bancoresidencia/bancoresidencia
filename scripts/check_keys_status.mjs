@@ -11,18 +11,31 @@ for (const line of lines) {
   const eqIdx = trimmed.indexOf('=');
   const keyName = trimmed.slice(0, eqIdx).trim();
   const val = trimmed.slice(eqIdx + 1).trim().replace(/^['"]|['"]$/g, '');
-  if (keyName.startsWith('GEMINI_API_KEY') && !keyName.includes('PAID') && val && !val.startsWith('SUA_')) {
-    keys.push({ name: keyName, key: val, preview: val.slice(0, 8) + '...' + val.slice(-6) });
+  if (
+    keyName.startsWith('GEMINI_API_KEY') &&
+    !keyName.includes('PAID') &&
+    !keyName.includes('DEMAND') &&
+    !keyName.includes('BILLING') &&
+    val &&
+    !val.startsWith('SUA_')
+  ) {
+    keys.push({ name: keyName, key: val, preview: '...' + val.slice(-6) });
   }
 }
 
-console.log(`=== TESTANDO ${keys.length} CHAVES GEMINI EM TEMPO REAL ===`);
+keys.sort((a, b) => {
+  const numA = parseInt(a.name.replace(/\D/g, '') || '0', 10);
+  const numB = parseInt(b.name.replace(/\D/g, '') || '0', 10);
+  return numA - numB;
+});
+
+console.log(`=== TESTANDO ${keys.length} VARIAVEIS DE CHAVES GRATUITAS GEMINI (SEM PAID / ON_DEMAND) ===`);
 
 const testPrompt = {
   contents: [
     {
       parts: [
-        { text: "Responda apenas: OK" }
+        { text: 'Responda apenas: OK' }
       ]
     }
   ],
@@ -32,14 +45,22 @@ const testPrompt = {
   }
 };
 
-async function testKey(item, model = 'gemini-3.5-flash-lite') {
+const ACTIVE_MODELS = [
+  'gemini-3.1-flash-lite',
+  'gemini-3.1-flash-lite-preview',
+  'gemini-3.8-flash',
+  'gemini-flash-lite-latest'
+];
+
+async function testKey(item, model) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${item.key}`;
   const start = Date.now();
   try {
     const res = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(testPrompt)
+      body: JSON.stringify(testPrompt),
+      signal: AbortSignal.timeout(15000)
     });
     const duration = Date.now() - start;
     if (res.ok) {
@@ -49,7 +70,7 @@ async function testKey(item, model = 'gemini-3.5-flash-lite') {
     } else {
       const errText = await res.text();
       let parsed;
-      try { parsed = JSON.parse(errText); } catch (e) { parsed = { raw: errText }; }
+      try { parsed = JSON.parse(errText); } catch { parsed = { raw: errText }; }
       const message = parsed.error?.message || errText.slice(0, 120);
       const reason = parsed.error?.status || `HTTP_${res.status}`;
       return { ok: false, status: res.status, reason, message, duration, model };
@@ -60,46 +81,71 @@ async function testKey(item, model = 'gemini-3.5-flash-lite') {
 }
 
 async function run() {
+  const seenKeyValues = new Map();
+  const keyMeta = keys.map(item => {
+    const dupOf = seenKeyValues.get(item.key) || null;
+    if (!dupOf) seenKeyValues.set(item.key, item.name);
+    return { item, dupOf };
+  });
+
   const results = [];
-  for (const item of keys) {
-    // Testa primeiro no modelo principal gemini-3.5-flash-lite
-    let res = await testKey(item, 'gemini-3.5-flash-lite');
-    // Se der 429 ou erro, testa também no fallback gemini-3.1-flash-lite
-    let fallbackRes = null;
-    if (!res.ok) {
-      fallbackRes = await testKey(item, 'gemini-3.1-flash-lite');
-    }
-    results.push({ item, res, fallbackRes });
+  for (let i = 0; i < keyMeta.length; i += 4) {
+    const batch = keyMeta.slice(i, i + 4);
+    const batchRes = await Promise.all(
+      batch.map(async ({ item, dupOf }) => {
+        const modelResults = [];
+        for (const model of ACTIVE_MODELS) {
+          const res = await testKey(item, model);
+          modelResults.push(res);
+          if (res.status === 401 || res.status === 403) break;
+        }
+        return { item, dupOf, modelResults };
+      })
+    );
+    results.push(...batchRes);
   }
 
   console.log('\n--- RESULTADOS DO DIAGNÓSTICO ---');
-  let activeCount = 0;
+  let activeUnique = 0;
+  let duplicateActive = 0;
+  let invalidCount = 0;
   let exhaustedCount = 0;
-  let otherErrorCount = 0;
+  let timeoutCount = 0;
 
   for (const r of results) {
     const name = r.item.name.padEnd(18, ' ');
-    const preview = r.item.preview.padEnd(20, ' ');
-    if (r.res.ok) {
-      activeCount++;
-      console.log(`[ATSUB-OK]  ${name} | ${preview} | HTTP ${r.res.status} (${r.res.duration}ms) -> "${r.res.text}" [${r.res.model}]`);
-    } else if (r.res.status === 429) {
-      exhaustedCount++;
-      const fbInfo = r.fallbackRes?.ok
-        ? `Fallback 3.1 OK (${r.fallbackRes.duration}ms)`
-        : `Fallback 3.1 também 429`;
-      console.log(`[ESGOTADA] ${name} | ${preview} | HTTP 429 (${r.res.reason}) -> ${r.res.message} | ${fbInfo}`);
+    const preview = r.item.preview.padEnd(12, ' ');
+    const working = r.modelResults.filter(m => m.ok);
+    const firstErr = r.modelResults[0];
+
+    if (working.length > 0) {
+      const modelsStr = working.map(w => `${w.model}(${w.duration}ms)`).join(', ');
+      if (r.dupOf) {
+        duplicateActive++;
+        console.log(`[DUPLICADA] ${name} | ${preview} | == ${r.dupOf} | ${modelsStr}`);
+      } else {
+        activeUnique++;
+        console.log(`[ATIVA]     ${name} | ${preview} | ${modelsStr}`);
+      }
+    } else if (firstErr?.status === 401 || firstErr?.status === 403) {
+      invalidCount++;
+      console.log(`[INVÁLIDA]  ${name} | ${preview} | HTTP ${firstErr.status} -> ${firstErr.message}`);
+    } else if (r.modelResults.every(m => m.status === 0)) {
+      timeoutCount++;
+      console.log(`[TIMEOUT]   ${name} | ${preview} | Sem resposta em 15s (${firstErr?.message})`);
     } else {
-      otherErrorCount++;
-      console.log(`[ERRO ${r.res.status}] ${name} | ${preview} | ${r.res.reason} -> ${r.res.message}`);
+      exhaustedCount++;
+      console.log(`[ESGOTADA]  ${name} | ${preview} | HTTP ${firstErr?.status} -> ${firstErr?.message}`);
     }
   }
 
-  console.log('\n--- RESUMO GERAL DO POOL ---');
-  console.log(`Total de chaves configuradas: ${keys.length}`);
-  console.log(`Chaves 100% OPERACIONAIS agora: ${activeCount}`);
-  console.log(`Chaves com RATE LIMIT / ESGOTADAS (429): ${exhaustedCount}`);
-  console.log(`Chaves com outros erros: ${otherErrorCount}`);
+  console.log('\n--- RESUMO GERAL DO POOL GRATUITO ---');
+  console.log(`Variáveis GEMINI_API_KEY gratuitas no .env.local : ${keys.length}`);
+  console.log(`Chaves físicas ÚNICAS ATIVAS e prontas agora     : ${activeUnique}`);
+  console.log(`Variáveis duplicadas (mesma chave física)        : ${duplicateActive}`);
+  console.log(`Chaves inválidas/revogadas (HTTP 401/403)        : ${invalidCount}`);
+  console.log(`Chaves esgotadas (HTTP 429 em todos os modelos)  : ${exhaustedCount}`);
+  console.log(`Timeouts de rede                                 : ${timeoutCount}`);
 }
 
 run();
