@@ -58,7 +58,7 @@ export const FigmaCustomizerBar: React.FC<FigmaCustomizerBarProps> = ({
               )}
             </div>
             <p className="text-[11px] text-slate-300 hidden md:block truncate">
-              Clique em qualquer card para selecionar e arraste para reposicionar.
+              Arraste para mover. Use as bordas para ajustar. Shift encaixa a cada 8 px.
             </p>
           </div>
         </div>
@@ -121,7 +121,7 @@ export const FigmaCustomizerBar: React.FC<FigmaCustomizerBarProps> = ({
             type="button"
             onClick={onToggleCustomizing}
             className="flex items-center gap-1 sm:gap-1.5 px-3 sm:px-4 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition-all cursor-pointer shadow-lg hover:scale-105 active:scale-95 shrink-0"
-            title="Salvar layout e conformar posições"
+            title="Concluir edição do layout"
           >
             <Check className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[3] shrink-0" />
             <span>Concluir</span>

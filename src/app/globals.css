@@ -1018,14 +1018,10 @@ html.dark .bento-card:hover {
 
 .figma-card-wrapper {
   container-type: inline-size;
-  align-self: stretch;
+  align-self: start;
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-
-.figma-card-wrapper:not(.has-custom-height) {
-  align-self: stretch;
+  height: auto;
 }
 
 .figma-card-wrapper.has-custom-height {
@@ -1246,9 +1242,8 @@ html.dark .bento-card:hover {
     linear-gradient(to right, rgba(59, 130, 246, 0.22) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(59, 130, 246, 0.22) 1px, transparent 1px);
   border-radius: 1.5rem;
-  padding: 1.25rem !important;
   box-shadow: inset 0 0 0 1px rgba(59, 130, 246, 0.25), 0 10px 30px -10px rgba(59, 130, 246, 0.1);
-  transition: background 0.3s ease, padding 0.2s ease;
+  transition: background 0.3s ease;
 }
 
 html.dark .canvas-grid-quadriculado {
@@ -1309,3 +1304,16 @@ html.dark .canvas-grid-quadriculado {
     animation: none;
   }
 }
+
+/* Keep controls reachable when a customized chart is smaller than its content. */
+.figma-card-wrapper.has-custom-height .card-fluid-container { overflow: auto; min-height: 0; }
+.figma-card-wrapper.has-custom-height .card-fluid-container > :first-child {
+  min-height: min-content;
+  overflow: visible !important;
+}
+@container (max-width: 250px) {
+  .card-fluid-container .bento-card { padding: 0.5rem; gap: 0.25rem; }
+  .card-fluid-container .recharts-responsive-container { min-width: 0; max-width: 100%; }
+}
+
+.figma-card-wrapper[style*='position: absolute'] { grid-column: auto !important; grid-row: auto !important; }

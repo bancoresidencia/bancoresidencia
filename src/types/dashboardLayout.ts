@@ -1,3 +1,4 @@
+import type { SavedRects } from '@/components/dashboard/cardGeometry';
 export type DashboardColSpan = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 export interface CardInternalSettings {
@@ -12,6 +13,8 @@ export interface DashboardCardConfig {
   description?: string;
   colSpan: DashboardColSpan;
   customHeight?: number;
+  frames?: SavedRects;
+  layoutRevision?: number;
   minHeight?: number;
   maxHeight?: number;
   order: number;

@@ -62,8 +62,7 @@ import { useDashboardLayout } from '@/hooks/useDashboardLayout';
 import { DEFAULT_STATS_OVERVIEW_CARDS } from './dashboard/dashboardDefaults';
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
 import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
-import { FigmaSmartGuides } from './dashboard/FigmaSmartGuides';
-import { SmartGuidesState } from './dashboard/smartGuidesEngine';
+import { CardCanvas } from './dashboard/CardCanvas';
 import { useStudyTimer } from '@/context/StudyTimerContext';
 import { StudyTimeView } from './dashboard/StudyTimeView';
 import { StudyTimeAnalyticsCard, formatSecondsToDetailed, matchesSpecialty } from './dashboard/StudyTimeAnalyticsCard';
@@ -375,11 +374,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     setSelectedCardId: setSelectedStatsCardId,
     visibleCards: visibleOverviewCards,
     hiddenCards: hiddenOverviewCards,
-    updateColSpan: updateOverviewColSpan,
-    updateCardHeight: updateOverviewCardHeight,
+    saveFrames,
     updateCardSettings: updateStatsCardSettings,
-    moveCard: moveOverviewCard,
-    reorderCard: reorderOverviewCard,
     toggleVisibility: toggleOverviewVisibility,
     restoreDefaults: restoreOverviewDefaults,
     autoConformLayout: autoConformStatsLayout,
@@ -390,8 +386,6 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   const setIsCustomizingOverview = setIsDashboardCustomizing;
 
   // Estado das Guias Pontilhadas (Smart Guides) e Vãos Livres Estilo Figma
-  const [smartGuidesState, setSmartGuidesState] = useState<SmartGuidesState>({ guides: [] });
-  const gridContainerRef = useRef<HTMLDivElement>(null);
 
   // Controle de expansão da tabela sanfona de especialidades e legenda (Imagem 3)
   const [expandedAreas, setExpandedAreas] = useState<string[]>([]);
@@ -1637,14 +1631,10 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           )}
 
           {/* Grid Principal Reorganizável Estilo Figma */}
-          <div
-            ref={gridContainerRef}
+          <CardCanvas
+            cards={visibleOverviewCards} save={saveFrames}
             className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-auto grid-flow-dense relative items-stretch"
           >
-            {/* Guias Inteligentes de Alinhamento e Zonas de Encaixe Estilo Canva/Figma */}
-            {isCustomizingOverview && (
-              <FigmaSmartGuides guides={smartGuidesState.guides} />
-            )}
             {visibleOverviewCards.map((cardConfig) => {
               if (cardConfig.id === 'stats_kpi_volume') {
                 return (
@@ -1654,14 +1644,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isCustomizing={isCustomizingOverview}
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
-                    onUpdateColSpan={updateOverviewColSpan}
-                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
-                    onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
-                    onReorder={reorderOverviewCard}
-                    onSmartGuidesChange={setSmartGuidesState}
-                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Card 1: Volume Resolvido */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
@@ -1703,14 +1687,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isCustomizing={isCustomizingOverview}
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
-                    onUpdateColSpan={updateOverviewColSpan}
-                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
-                    onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
-                    onReorder={reorderOverviewCard}
-                    onSmartGuidesChange={setSmartGuidesState}
-                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Card 2: Acertos Líquidos */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
@@ -1749,14 +1727,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isCustomizing={isCustomizingOverview}
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
-                    onUpdateColSpan={updateOverviewColSpan}
-                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
-                    onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
-                    onReorder={reorderOverviewCard}
-                    onSmartGuidesChange={setSmartGuidesState}
-                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Card 3: Aproveitamento (com marcador de meta em 80%) */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
@@ -1811,14 +1783,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isCustomizing={isCustomizingOverview}
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
-                    onUpdateColSpan={updateOverviewColSpan}
-                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
-                    onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
-                    onReorder={reorderOverviewCard}
-                    onSmartGuidesChange={setSmartGuidesState}
-                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Card 4: Ritmo Médio */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
@@ -1865,14 +1831,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isCustomizing={isCustomizingOverview}
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
-                    onUpdateColSpan={updateOverviewColSpan}
-                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
-                    onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
-                    onReorder={reorderOverviewCard}
-                    onSmartGuidesChange={setSmartGuidesState}
-                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Gráfico de Evolução Diária (Questões/Acertos) */}
           <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 space-y-4">
@@ -2048,14 +2008,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isCustomizing={isCustomizingOverview}
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
-                    onUpdateColSpan={updateOverviewColSpan}
-                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
-                    onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
-                    onReorder={reorderOverviewCard}
-                    onSmartGuidesChange={setSmartGuidesState}
-                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Análise de Hábitos Diários, Cronobiologia e Gráfico de Horas */}
           <DailyHabitsAndHourlyExplorer
@@ -2069,7 +2023,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               }
               return null;
             })}
-          </div>
+          </CardCanvas>
         </div>
       )}
 

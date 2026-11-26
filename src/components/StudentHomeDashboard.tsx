@@ -99,15 +99,11 @@ import { CLINICAL_TIPS_DATABASE, ClinicalTipItem } from '@/data/clinicalTipsData
 import { CRITICAL_SUBTOPICS_MAP, DETAILED_MNEMONICS_MAP } from '@/data/dashboardMnemonicsData';
 
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
-import { SmartGuidesState } from './dashboard/smartGuidesEngine';
+import { CardCanvas } from './dashboard/CardCanvas';
 import { DailyScheduleSlot, TimelineFilter } from './dashboard/scheduleTypes';
 
 const FigmaCustomizerBar = dynamic(
   () => import('./dashboard/FigmaCustomizerBar').then((mod) => mod.FigmaCustomizerBar),
-  { ssr: false }
-);
-const FigmaSmartGuides = dynamic(
-  () => import('./dashboard/FigmaSmartGuides').then((mod) => mod.FigmaSmartGuides),
   { ssr: false }
 );
 const GoogleCalendarScheduleView = dynamic(
@@ -196,11 +192,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setSelectedCardId,
     visibleCards,
     hiddenCards,
-    updateColSpan,
-    updateCardHeight,
+    saveFrames,
     updateCardSettings,
-    moveCard,
-    reorderCard,
     toggleVisibility,
     restoreDefaults,
     autoConformLayout,
@@ -215,8 +208,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   useEffect(() => {
     setIsMounted(true);
   }, []);
-  const [smartGuidesState, setSmartGuidesState] = useState<SmartGuidesState>({ guides: [] });
-  const gridContainerRef = useRef<HTMLDivElement>(null);
 
 
 
@@ -3018,16 +3009,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       )}
 
       {/* Grid Principal Reorganizável Estilo Figma */}
-      <div
-        ref={gridContainerRef}
+      <CardCanvas
+        cards={visibleCards} save={saveFrames}
         className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-3.5 auto-rows-auto grid-flow-dense relative items-start"
       >
-        {/* Guias Inteligentes de Alinhamento e Zonas de Encaixe Estilo Canva/Figma */}
-        {isCustomizing && (
-          <FigmaSmartGuides
-            guides={smartGuidesState.guides}
-          />
-        )}
         {visibleCards.map((cardConfig, cardIndex) => {
           const staggerStyle = !isCustomizing
             ? ({ '--stagger-idx': Math.min(cardIndex, 7) } as React.CSSProperties)
@@ -3041,14 +3026,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 <section
                   style={staggerStyle}
@@ -3265,14 +3244,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 {/* Card 1: Sequência & Metas Diárias */}
                 <div
@@ -3537,14 +3510,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 {/* Card 2: Aproveitamento com Seletor Deslizante e Estado Zero Fiel */}
                 <div
@@ -3827,14 +3794,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 {/* Card 3: Percentil Oficial */}
                 <div
@@ -4027,14 +3988,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group min-h-0 h-full flex flex-col justify-between space-y-3">
                   <div className="md:col-span-6 space-y-2 relative">
@@ -4152,14 +4107,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 {/* Card: Caderno de Erros & Revisão Ativa (Substitui o card duplicado) */}
                 <div
@@ -4289,14 +4238,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 {/* Card: Agenda de Estudos - Atividade Atual Somente & Gatilho do Drawer Central */}
                 <div
@@ -4528,14 +4471,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 <div
                   onClick={() => {
@@ -4901,14 +4838,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 {/* 4. RAIO-X DAS 6 GRANDES ÁREAS (Lazy-loaded + IntersectionObserver para zero Forced Reflow inicial) */}
                 <section className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4 min-h-0 h-full overflow-hidden flex flex-col justify-between">
@@ -5007,14 +4938,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isCustomizing={isCustomizing}
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
               >
                 {/* 3. RETOMADA DE ESTUDOS INTELIGENTE - SELETOR COM SLIDING PILL & SEM CORTE NO MOBILE */}
                 <section className="w-full min-h-0 h-full flex flex-col justify-between space-y-3">
@@ -5473,7 +5398,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           }
           return null;
         })}
-      </div>
+      </CardCanvas>
 
       {/* =========================================================================
           DRAWER / MODAL CENTRAL DEDICADO COM HISTÓRICO EXCLUSIVO ("UM PARA CADA")

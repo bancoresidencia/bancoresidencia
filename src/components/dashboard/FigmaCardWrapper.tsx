@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState } from 'react';
 import {
   ChevronLeft,
   ChevronRight,
@@ -8,31 +8,19 @@ import {
   Maximize2,
   Minimize2,
   Sliders,
-  Sparkles,
   Move
 } from 'lucide-react';
 import { DashboardCardConfig, DashboardColSpan, CardInternalSettings } from '@/types/dashboardLayout';
 import { CardLayoutProvider } from './CardLayoutContext';
-import {
-  calculateSmartGuides,
-  createGuidesSnapshot,
-  SmartGuidesState,
-  StaticGuidesSnapshot
-} from './smartGuidesEngine';
+import { useCardCanvas } from './CardCanvas';
 
 interface FigmaCardWrapperProps {
   config: DashboardCardConfig;
   isCustomizing: boolean;
   isSelected: boolean;
   onSelect: (id: string) => void;
-  onUpdateColSpan: (id: string, newColSpan: DashboardColSpan) => void;
-  onUpdateHeight?: (id: string, newHeight?: number) => void;
   onUpdateSettings: (id: string, settings: Partial<CardInternalSettings>) => void;
-  onMoveCard: (id: string, direction: 'up' | 'down') => void;
   onToggleVisibility: (id: string) => void;
-  onReorder: (draggedId: string, targetId: string) => void;
-  onSmartGuidesChange?: (state: SmartGuidesState) => void;
-  allCardsConfig?: DashboardCardConfig[];
   children: React.ReactNode;
   className?: string;
 }
@@ -42,30 +30,19 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   isCustomizing,
   isSelected,
   onSelect,
-  onUpdateColSpan,
-  onUpdateHeight,
   onUpdateSettings,
-  onMoveCard,
   onToggleVisibility,
-  onReorder,
-  onSmartGuidesChange,
-  allCardsConfig,
   children,
   className = '',
 }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const guidesSnapshotRef = useRef<StaticGuidesSnapshot | null>(null);
-  const [isResizing, setIsResizing] = useState(false);
-  const [isFreeDragging, setIsFreeDragging] = useState(false);
-  const [dragOffset, setDragOffset] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
-  const [hoverTargetId, setHoverTargetId] = useState<string | null>(null);
-  const hoverTargetRef = useRef<string | null>(null);
-  const [previewColSpan, setPreviewColSpan] = useState<DashboardColSpan | null>(null);
-  const [previewHeight, setPreviewHeight] = useState<number | null>(null);
+  const canvas = useCardCanvas();
+  const frame = canvas.frames[config.id];
+  const isResizing = canvas.active === config.id;
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-
-  const activeSpan = previewColSpan || config.colSpan;
-  const activeHeight = previewHeight !== null ? previewHeight : config.customHeight;
+  const activeSpan = frame ? Math.max(1,Math.min(12,Math.round(frame.width*12))) as DashboardColSpan : config.colSpan;
+  const activeHeight = frame?.height ?? config.customHeight;
+  const onUpdateColSpan = (id: string, span: DashboardColSpan) => canvas.preset(id,span);
+  const onUpdateHeight = (id: string, height?: number) => canvas.preset(id,undefined,height);
   const isCompactHeight = Boolean(activeHeight && activeHeight < 145);
   const isUltraCompactHeight = Boolean(activeHeight && activeHeight < 105);
   const settings = config.settings || { showIcons: true, showDetails: true, compactMode: false };
@@ -102,254 +79,34 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   };
 
   const getDimensionsLabel = (span: DashboardColSpan, height?: number) => {
-    const pct = Math.round((span / 12) * 100);
+    const pct = Math.round((frame?.width ?? span / 12) * 100);
     const heightStr = height ? ` • ${Math.round(height)}px` : '';
-    return `${span} col (${pct}%)${heightStr}`;
+    return `${pct}%${heightStr}`;
   };
 
-  // REDIMENSIONAMENTO MULTI-DIRECIONAL (8 ALÇAS COM SNAP INTELIGENTE)
-  const handleResizeStart = useCallback(
-    (
-      e: React.PointerEvent,
-      originX: 'left' | 'right' | 'none',
-      originY: 'top' | 'bottom' | 'none'
-    ) => {
-      e.preventDefault();
-      e.stopPropagation();
-
-      const container = containerRef.current;
-      if (!container) return;
-
-      const parentGrid = container.parentElement;
-      if (!parentGrid) return;
-
-      setIsResizing(true);
-      guidesSnapshotRef.current = createGuidesSnapshot(parentGrid, config.id);
-
-      const parentWidth = parentGrid.getBoundingClientRect().width;
-      const initialHeight = container.getBoundingClientRect().height;
-      const startX = e.clientX;
-      const startY = e.clientY;
-      const initialSpan = config.colSpan;
-      let lastTargetSpan = initialSpan;
-      let lastTargetHeight = config.customHeight || initialHeight;
-
-      const onPointerMove = (moveEvent: PointerEvent) => {
-        // 1. Cálculo da Largura (Horizontal)
-        if (originX !== 'none') {
-          const deltaX =
-            originX === 'left'
-              ? startX - moveEvent.clientX
-              : moveEvent.clientX - startX;
-
-          const colWidth = parentWidth / 12;
-          const deltaCols = Math.round(deltaX / (colWidth * 0.75));
-          const rawNewSpan = initialSpan + deltaCols;
-          const minSpan = config.minColSpan || 2;
-          const maxSpan = config.maxColSpan || 12;
-          const targetSpan = Math.max(minSpan, Math.min(maxSpan, rawNewSpan)) as DashboardColSpan;
-
-          if (targetSpan !== lastTargetSpan) {
-            lastTargetSpan = targetSpan;
-            setPreviewColSpan(targetSpan);
-          }
-        }
-
-        // 2. Cálculo da Altura (Vertical) com Snap de 24px
-        if (originY !== 'none') {
-          const deltaY =
-            originY === 'top'
-              ? startY - moveEvent.clientY
-              : moveEvent.clientY - startY;
-
-          const rawHeight = initialHeight + deltaY;
-          const minH = 65;
-          const maxH = config.maxHeight || 520;
-          const targetHeight = Math.max(minH, Math.min(maxH, Math.round(rawHeight / 24) * 24));
-
-          if (targetHeight !== lastTargetHeight) {
-            lastTargetHeight = targetHeight;
-            setPreviewHeight(targetHeight);
-            if (container) {
-              container.style.height = `${targetHeight}px`;
-              container.style.minHeight = `${targetHeight}px`;
-              container.style.maxHeight = `${targetHeight}px`;
-            }
-          }
-        }
-
-        // Smart Guides a 120fps via Snapshot Geométrico
-        if (parentGrid && onSmartGuidesChange) {
-          const guidesState = calculateSmartGuides(
-            config.id,
-            parentGrid,
-            allCardsConfig || [],
-            guidesSnapshotRef.current
-          );
-          onSmartGuidesChange(guidesState);
-        }
-      };
-
-      const onPointerUp = () => {
-        setIsResizing(false);
-        guidesSnapshotRef.current = null;
-
-        if (container) {
-          container.style.height = '';
-          container.style.minHeight = '';
-          container.style.maxHeight = '';
-        }
-
-        if (originX !== 'none' && lastTargetSpan !== config.colSpan) {
-          onUpdateColSpan(config.id, lastTargetSpan);
-        }
-        if (originY !== 'none' && onUpdateHeight) {
-          onUpdateHeight(config.id, lastTargetHeight);
-        }
-
-        setTimeout(() => {
-          setPreviewColSpan(null);
-          setPreviewHeight(null);
-        }, 60);
-
-        if (onSmartGuidesChange) {
-          onSmartGuidesChange({ guides: [] });
-        }
-
-        window.removeEventListener('pointermove', onPointerMove);
-        window.removeEventListener('pointerup', onPointerUp);
-        window.removeEventListener('pointercancel', onPointerUp);
-      };
-
-      window.addEventListener('pointermove', onPointerMove);
-      window.addEventListener('pointerup', onPointerUp);
-      window.addEventListener('pointercancel', onPointerUp);
-    },
-    [config.id, config.colSpan, config.customHeight, config.minColSpan, config.maxColSpan, config.maxHeight, onUpdateColSpan, onUpdateHeight, onSmartGuidesChange, allCardsConfig]
-  );
-
-  // ARRASTE LIVRE RESPONSIVO (DESKTOP IMEDIATO + TOUCH AWARE PREVENINDO BLOQUEIO DE SCROLL)
+  const handleResizeStart = (e: React.PointerEvent, x: 'left'|'right'|'none', y: 'top'|'bottom'|'none') => {
+    e.preventDefault();
+    e.stopPropagation();
+    canvas.start(e,config,x,y);
+  };
   const handleCardPointerDown = (e: React.PointerEvent) => {
     if (!isCustomizing) return;
-
     const target = e.target as HTMLElement;
-    if (
-      target.closest('.figma-control') ||
-      target.closest('.figma-popover')
-    ) {
-      return;
-    }
-
+    const handle = target.closest('.figma-drag-handle');
+    if (!handle && target.closest('.figma-control,.figma-popover')) return;
     onSelect(config.id);
-
-    const isTouch = e.pointerType === 'touch';
-    const isDirectHandle = Boolean(target.closest('.figma-drag-handle'));
-
-    const startX = e.clientX;
-    const startY = e.clientY;
-    let hasMoved = false;
-    let touchHoldTimeout: NodeJS.Timeout | null = null;
-    let touchDragReady = !isTouch || isDirectHandle;
-
-    const parentGrid = containerRef.current?.parentElement;
-
-    if (isTouch && !isDirectHandle) {
-      // No touch sobre o corpo do card: exige segurar 200ms antes de liberar o drag, permitindo scroll suave
-      touchHoldTimeout = setTimeout(() => {
-        touchDragReady = true;
-      }, 200);
-    }
-
-    const onPointerMove = (moveEvent: PointerEvent) => {
-      const dx = moveEvent.clientX - startX;
-      const dy = moveEvent.clientY - startY;
-      const dist = Math.hypot(dx, dy);
-
-      if (isTouch && !touchDragReady && Math.abs(dy) > 10) {
-        // Usuário está rolando a página no mobile: cancela intenção de drag
-        if (touchHoldTimeout) {
-          clearTimeout(touchHoldTimeout);
-          touchHoldTimeout = null;
-        }
-        return;
-      }
-
-      if (!hasMoved && touchDragReady && dist > 6) {
-        hasMoved = true;
-        setIsFreeDragging(true);
-        if (parentGrid) {
-          guidesSnapshotRef.current = createGuidesSnapshot(parentGrid, config.id);
-        }
-      }
-
-      if (hasMoved) {
-        setDragOffset({ x: dx, y: dy });
-
-        if (parentGrid && onSmartGuidesChange) {
-          const guidesState = calculateSmartGuides(
-            config.id,
-            parentGrid,
-            allCardsConfig || [],
-            guidesSnapshotRef.current
-          );
-          onSmartGuidesChange(guidesState);
-        }
-
-        const elemUnder = document.elementFromPoint(moveEvent.clientX, moveEvent.clientY);
-        const targetCard = elemUnder?.closest('[data-card-id]') as HTMLElement | null;
-        const targetId = targetCard?.dataset?.cardId;
-
-        if (targetId && targetId !== config.id) {
-          hoverTargetRef.current = targetId;
-          setHoverTargetId(targetId);
-        } else {
-          hoverTargetRef.current = null;
-          setHoverTargetId(null);
-        }
-      }
-    };
-
-    const onPointerUp = () => {
-      if (touchHoldTimeout) {
-        clearTimeout(touchHoldTimeout);
-        touchHoldTimeout = null;
-      }
-      guidesSnapshotRef.current = null;
-
-      window.removeEventListener('pointermove', onPointerMove);
-      window.removeEventListener('pointerup', onPointerUp);
-
-      if (hasMoved) {
-        setIsFreeDragging(false);
-        setDragOffset({ x: 0, y: 0 });
-
-        const targetToDrop = hoverTargetRef.current;
-        if (targetToDrop && targetToDrop !== config.id) {
-          onReorder(config.id, targetToDrop);
-        }
-
-        hoverTargetRef.current = null;
-        setHoverTargetId(null);
-
-        if (onSmartGuidesChange) {
-          onSmartGuidesChange({ guides: [] });
-        }
-      }
-    };
-
-    window.addEventListener('pointermove', onPointerMove);
-    window.addEventListener('pointerup', onPointerUp);
+    if (e.pointerType !== 'touch' || handle) canvas.start(e,config,'none','none');
   };
 
   // CICLO DE TAMANHO ADAPTATIVO: ALTURA NO MOBILE (< 768px) E COLUNAS NO DESKTOP (>= 768px)
   const cycleSize = () => {
     const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
-    if (isMobile && onUpdateHeight) {
+    if (isMobile) {
       // Ciclo de altura no mobile: Compacto (140px) -> Médio (260px) -> Auto (undefined)
-      if (!config.customHeight) {
+      if (!activeHeight) {
         onUpdateHeight(config.id, 140);
-      } else if (config.customHeight <= 160) {
+      } else if (activeHeight <= 160) {
         onUpdateHeight(config.id, 260);
       } else {
         onUpdateHeight(config.id, undefined);
@@ -361,14 +118,13 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
     const rawPresets: DashboardColSpan[] = [3, 4, 6, 8, 12];
     const minSpan = config.minColSpan || 2;
     const presets = rawPresets.filter((p) => p >= minSpan);
-    const currentIndex = presets.indexOf(config.colSpan);
+    const currentIndex = presets.indexOf(activeSpan);
     const nextIndex = currentIndex >= 0 ? (currentIndex + 1) % presets.length : 0;
     onUpdateColSpan(config.id, presets[nextIndex]);
   };
 
   return (
     <div
-      ref={containerRef}
       data-card-id={config.id}
       onPointerDown={handleCardPointerDown}
       onClickCapture={(e) => {
@@ -385,37 +141,21 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           height: activeHeight ? `${activeHeight}px` : undefined,
           minHeight: activeHeight ? `${activeHeight}px` : undefined,
           maxHeight: activeHeight ? `${activeHeight}px` : undefined,
-          alignSelf: activeHeight ? 'start' : 'stretch',
+          alignSelf: 'start',
+          ...(frame ? {position:'absolute', gridArea:'auto', left: (frame.x*100)+'%', top:frame.y, width:(frame.width*100)+'%'} : {}),
           '--figma-col-span': `span ${activeSpan} / span ${activeSpan}`,
           '--figma-tablet-span': activeSpan <= 6 ? 'span 6 / span 6' : 'span 12 / span 12',
-          transform: isFreeDragging
-            ? `translate3d(${dragOffset.x}px, ${dragOffset.y}px, 0)`
-            : undefined,
-          pointerEvents: isFreeDragging ? 'none' : undefined,
-          zIndex: isFreeDragging ? 90 : isSelected ? 40 : 1,
-          transition: isFreeDragging || isResizing
-            ? 'none'
-            : 'transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s',
+          zIndex: isSelected ? 40 : 1,
         } as React.CSSProperties
       }
-      className={`figma-card-wrapper ${activeHeight ? 'has-custom-height' : ''} h-full self-stretch flex flex-col ${isResizing ? 'is-resizing select-none' : ''} ${isCompactHeight ? 'figma-compact-height' : ''} ${isUltraCompactHeight ? 'figma-ultracompact-height' : ''} ${getColSpanClass(activeSpan)} @container relative ${
+      className={`figma-card-wrapper ${activeHeight ? 'has-custom-height' : ''} self-start flex flex-col ${isResizing ? 'is-resizing select-none' : ''} ${isCompactHeight ? 'figma-compact-height' : ''} ${isUltraCompactHeight ? 'figma-ultracompact-height' : ''} ${getColSpanClass(activeSpan)} @container relative ${
         isCustomizing
           ? isSelected
             ? 'ring-2 ring-blue-500 dark:ring-blue-400 rounded-2xl select-none group/figma shadow-xl'
             : 'hover:ring-1 hover:ring-blue-300 dark:hover:ring-blue-600/70 rounded-2xl cursor-pointer'
           : ''
-      } ${isFreeDragging ? 'opacity-85 scale-[1.02] shadow-2xl cursor-grabbing' : 'opacity-100'} ${className}`}
+      } ${className}`}
     >
-      {/* Guia Magnética quando outro card passa por cima deste */}
-      {hoverTargetId === config.id && (
-        <div className="absolute inset-0 z-50 rounded-2xl border-2 border-dashed border-blue-500 bg-blue-500/15 backdrop-blur-2xs flex items-center justify-center pointer-events-none animate-pulse">
-          <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-xl shadow-lg flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5" />
-            Soltar para posicionar aqui
-          </span>
-        </div>
-      )}
-
       {/* CONTROLES ESTILO FIGMA (SOMENTE NO CARD SELECIONADO COM ALÇAS TOUCH-FIRST 44PX) */}
       {isCustomizing && isSelected && (
         <>
@@ -466,13 +206,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
             onPointerDown={(e) => handleResizeStart(e, 'none', 'bottom')}
             onDoubleClick={(e) => {
               e.stopPropagation();
-              if (onUpdateHeight) {
-                if (config.customHeight) {
-                  onUpdateHeight(config.id, undefined as any);
-                } else if (config.maxHeight) {
-                  onUpdateHeight(config.id, config.maxHeight);
-                }
-              }
+              onUpdateHeight(config.id);
             }}
             className="figma-control absolute -bottom-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-25 shadow-xs hover:h-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
             title="Arraste para ajustar altura (duplo clique para auto-conformar à ferramenta)"
@@ -488,7 +222,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           {/* BARRA SUPERIOR DE AÇÕES RESPONSIVA NO TOPO DO CARD SELECIONADO */}
           <div className="figma-control absolute -top-8 left-0 right-0 z-25 flex items-center justify-between px-1 sm:px-2 text-xs pointer-events-auto max-w-full overflow-visible">
             {/* Tag de Título e Alça de Drag Dedicada */}
-            <div className="figma-drag-handle flex items-center gap-1 sm:gap-1.5 bg-blue-600 text-white px-2 sm:px-2.5 py-1 rounded-t-lg font-bold shadow-md min-w-0 shrink cursor-grab active:cursor-grabbing">
+            <div className="figma-drag-handle touch-none flex items-center gap-1 sm:gap-1.5 bg-blue-600 text-white px-2 sm:px-2.5 py-1 rounded-t-lg font-bold shadow-md min-w-0 shrink cursor-grab active:cursor-grabbing">
               <Move className="w-3 h-3 opacity-90 shrink-0" />
               <span className="truncate max-w-[90px] sm:max-w-[150px]">{config.title}</span>
               <span className="bg-black/25 px-1.5 py-0.2 rounded text-[10px] font-mono hidden xs:inline-block shrink-0">
@@ -584,7 +318,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
                               type="button"
                               onClick={() => onUpdateColSpan(config.id, p.span)}
                               className={`py-1 rounded-md font-bold transition-colors cursor-pointer text-center ${
-                                config.colSpan === p.span
+                                activeSpan === p.span
                                   ? 'bg-blue-600 text-white'
                                   : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-200'
                               }`}
@@ -610,9 +344,9 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
                             <button
                               key={idx}
                               type="button"
-                              onClick={() => onUpdateHeight && onUpdateHeight(config.id, p.h as any)}
+                              onClick={() => onUpdateHeight(config.id, p.h)}
                               className={`py-1 rounded-md font-bold transition-colors cursor-pointer text-center ${
-                                (!config.customHeight && p.h === undefined) || config.customHeight === p.h
+                                (!activeHeight && p.h === undefined) || activeHeight === p.h
                                   ? 'bg-blue-600 text-white'
                                   : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-200'
                               }`}
@@ -630,7 +364,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
               {/* Mover Card */}
               <button
                 type="button"
-                onClick={() => onMoveCard(config.id, 'up')}
+                onClick={() => canvas.move(config.id, 'up')}
                 className="p-1 hover:text-blue-500 cursor-pointer"
                 title="Mover para cima"
               >
@@ -638,7 +372,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
               </button>
               <button
                 type="button"
-                onClick={() => onMoveCard(config.id, 'down')}
+                onClick={() => canvas.move(config.id, 'down')}
                 className="p-1 hover:text-blue-500 cursor-pointer"
                 title="Mover para baixo"
               >
@@ -652,7 +386,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
                 className="p-1 hover:text-blue-500 cursor-pointer"
                 title="Alternar tamanho"
               >
-                {config.colSpan === 12 ? (
+                {activeSpan === 12 ? (
                   <Minimize2 className="w-3.5 h-3.5" />
                 ) : (
                   <Maximize2 className="w-3.5 h-3.5" />

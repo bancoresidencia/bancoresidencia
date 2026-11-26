@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import { DashboardCardConfig, DashboardColSpan, CardInternalSettings } from '@/types/dashboardLayout';
+import type { CardRects, ScreenLayout } from '@/components/dashboard/cardGeometry';
 import { createClient } from '@/lib/supabase/client';
 
 function mergeCardsWithDefaults(
@@ -23,6 +24,8 @@ function mergeCardsWithDefaults(
         ...def,
         colSpan: safeColSpan,
         customHeight: safeHeight,
+        frames: found.frames,
+        layoutRevision: found.layoutRevision,
         order: found.order ?? def.order,
         isVisible: found.isVisible ?? def.isVisible,
         settings: {
@@ -71,6 +74,8 @@ export function useDashboardLayout(
       const detail = (e as CustomEvent).detail as { dashboardLayouts?: Record<string, DashboardCardConfig[]> } | undefined;
       const remoteLayout = detail?.dashboardLayouts?.[storageKey + '_v2'];
       if (Array.isArray(remoteLayout) && remoteLayout.length > 0) {
+        const local = JSON.parse(localStorage.getItem(storageKey + '_v2') || '[]') as DashboardCardConfig[];
+        if ((local[0]?.layoutRevision ?? 0) > (remoteLayout[0]?.layoutRevision ?? 0)) return;
         const merged = mergeCardsWithDefaults(remoteLayout, defaultCards);
         setCards(merged);
         try {
@@ -87,7 +92,9 @@ export function useDashboardLayout(
 
   // Salva no LocalStorage e sincroniza com preferences no Supabase (multi-dispositivo)
   const saveToStorage = useCallback(
-    (newCards: DashboardCardConfig[]) => {
+    (cardsToSave: DashboardCardConfig[]) => {
+      const revision = Date.now();
+      const newCards = cardsToSave.map(c => ({ ...c, layoutRevision: revision }));
       try {
         localStorage.setItem(storageKey + '_v2', JSON.stringify(newCards));
       } catch (e) {
@@ -102,18 +109,21 @@ export function useDashboardLayout(
           const supabase = createClient();
           const { data: { session } } = await supabase.auth.getSession();
           if (session?.user?.id) {
-            const { data: profile } = await supabase
+            const { data: profile, error } = await supabase
               .from('profiles')
               .select('preferences')
               .eq('id', session.user.id)
               .maybeSingle();
 
+            if (error || !profile) return;
             const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
             const currentLayouts = (currentPrefs.dashboardLayouts as Record<string, unknown>) || {};
             const compactPayload = newCards.map((c) => ({
               id: c.id,
               colSpan: c.colSpan,
               customHeight: c.customHeight,
+              frames: c.frames,
+              layoutRevision: c.layoutRevision,
               order: c.order,
               isVisible: c.isVisible,
               settings: c.settings
@@ -141,155 +151,16 @@ export function useDashboardLayout(
     [storageKey]
   );
 
-  // Auto-conformação e normalização do layout ao salvar
-  // Elimina gaps residuais agrupando em linhas de 12 colunas e normalizando as ordens
-  const autoConformLayout = useCallback(() => {
-    setCards((prev) => {
-      // 1. Separa visíveis de ocultos e ordena por order
-      const sorted = [...prev].sort((a, b) => a.order - b.order);
-      const visible = sorted.filter((c) => c.isVisible !== false);
-      const hidden = sorted.filter((c) => c.isVisible === false);
+  const autoConformLayout = useCallback(() => setSelectedCardId(null), []);
 
-      // 2. Empacotamento inteligente de linhas para fechar em 12 colunas sem gaps residuais
-      let currentRowSpan = 0;
-      let lastCardInRowIndex = -1;
-
-      for (let i = 0; i < visible.length; i++) {
-        const card = visible[i];
-        const span = Math.max(card.minColSpan || 2, Math.min(12, card.colSpan)) as DashboardColSpan;
-        card.colSpan = span;
-
-        if (currentRowSpan + span <= 12) {
-          currentRowSpan += span;
-          lastCardInRowIndex = i;
-        } else {
-          // Se sobrou um gap de 1 ou 2 colunas na linha anterior, expande o último card dessa linha
-          const residualGap = 12 - currentRowSpan;
-          if (residualGap > 0 && residualGap <= 2 && lastCardInRowIndex >= 0) {
-            const cardToExpand = visible[lastCardInRowIndex];
-            const maxAllowed = cardToExpand.maxColSpan || 12;
-            cardToExpand.colSpan = Math.min(
-              maxAllowed,
-              cardToExpand.colSpan + residualGap
-            ) as DashboardColSpan;
-          }
-          currentRowSpan = span;
-          lastCardInRowIndex = i;
-        }
-      }
-
-      // Se a última linha tiver gap pequeno de 1 a 2 colunas
-      const finalGap = 12 - currentRowSpan;
-      if (finalGap > 0 && finalGap <= 2 && lastCardInRowIndex >= 0) {
-        const cardToExpandFinal = visible[lastCardInRowIndex];
-        const maxAllowedFinal = cardToExpandFinal.maxColSpan || 12;
-        cardToExpandFinal.colSpan = Math.min(
-          maxAllowedFinal,
-          cardToExpandFinal.colSpan + finalGap
-        ) as DashboardColSpan;
-      }
-
-      // 3. Normaliza ordem sequencial contínua (0, 1, 2...) e bounds de altura
-      const allCards = [...visible, ...hidden];
-      const normalized = allCards.map((c, index) => ({
-        ...c,
-        order: index,
-        colSpan: Math.max(c.minColSpan || 2, Math.min(12, c.colSpan)) as DashboardColSpan,
-        customHeight: c.customHeight
-          ? Math.max(c.minHeight || 65, Math.min(c.maxHeight || 800, c.customHeight))
-          : undefined,
-      }));
-
-      saveToStorage(normalized);
-      return normalized;
+  const saveFrames = useCallback((screen: ScreenLayout, frames: CardRects) => {
+    setCards(prev => {
+      const next = prev.map(card => frames[card.id]
+        ? { ...card, frames: { ...card.frames, [screen]: frames[card.id] } } : card);
+      saveToStorage(next);
+      return next;
     });
-    setSelectedCardId(null);
   }, [saveToStorage]);
-
-  // Atualiza tamanho (colSpan) de um card específico com auto-adaptação dos cards adjacentes
-  const updateColSpan = useCallback(
-    (cardId: string, newColSpan: DashboardColSpan) => {
-      setCards((prev) => {
-        const targetIndex = prev.findIndex((c) => c.id === cardId);
-        if (targetIndex === -1) return prev;
-
-        const next = prev.map((c) => ({ ...c }));
-        next[targetIndex].colSpan = newColSpan;
-
-        // Auto-rebalanceamento de linha inteligente:
-        // Identifica os cards visíveis que compõem a mesma linha do card modificado
-        const visibleIndices = next
-          .map((c, i) => (c.isVisible !== false ? i : -1))
-          .filter((i) => i !== -1);
-
-        let rowSum = 0;
-        let currentRow: number[] = [];
-        let targetRow: number[] = [];
-
-        for (const idx of visibleIndices) {
-          const span = next[idx].colSpan;
-          if (rowSum + span <= 12) {
-            currentRow.push(idx);
-            rowSum += span;
-          } else {
-            if (currentRow.includes(targetIndex)) {
-              targetRow = currentRow;
-              break;
-            }
-            currentRow = [idx];
-            rowSum = span;
-          }
-        }
-        if (currentRow.includes(targetIndex) && targetRow.length === 0) {
-          targetRow = currentRow;
-        }
-
-        // Se há outros cards na mesma linha do card alvo, distribui o espaço restante para manter a linha nivelada (12 colunas)
-        if (targetRow.length > 1) {
-          const otherRowIndices = targetRow.filter((i) => i !== targetIndex);
-          const currentTotal = targetRow.reduce((sum, i) => sum + next[i].colSpan, 0);
-          const diff = 12 - currentTotal;
-
-          if (diff !== 0 && otherRowIndices.length > 0) {
-            const deltaEach = Math.trunc(diff / otherRowIndices.length);
-            let remainder = Math.abs(diff) % otherRowIndices.length;
-
-            for (const idx of otherRowIndices) {
-              const currentSpan = next[idx].colSpan;
-              const minSpan = next[idx].minColSpan || 2;
-              const maxSpan = next[idx].maxColSpan || 12;
-              const extra = deltaEach + (remainder > 0 ? (diff > 0 ? 1 : -1) : 0);
-              if (remainder > 0) remainder--;
-
-              const adjustedSpan = Math.max(
-                minSpan,
-                Math.min(maxSpan, currentSpan + extra)
-              ) as DashboardColSpan;
-              next[idx].colSpan = adjustedSpan;
-            }
-          }
-        }
-
-        saveToStorage(next);
-        return next;
-      });
-    },
-    [saveToStorage]
-  );
-
-  // Atualiza altura personalizada (pixels) de um card específico (permite reset para undefined/Auto)
-  const updateCardHeight = useCallback(
-    (cardId: string, newHeight?: number) => {
-      setCards((prev) => {
-        const next = prev.map((c) =>
-          c.id === cardId ? { ...c, customHeight: newHeight } : c
-        );
-        saveToStorage(next);
-        return next;
-      });
-    },
-    [saveToStorage]
-  );
 
   // Atualiza configurações internas do card (ícones, detalhes, modo compacto)
   const updateCardSettings = useCallback(
@@ -308,88 +179,6 @@ export function useDashboardLayout(
         );
         saveToStorage(next);
         return next;
-      });
-    },
-    [saveToStorage]
-  );
-
-  // Reordena arrastando ou movendo com troca inteligente de posição
-  const reorderCard = useCallback(
-    (draggedId: string, targetId: string) => {
-      if (draggedId === targetId) return;
-      setCards((prev) => {
-        const list = [...prev];
-        const draggedIndex = list.findIndex((c) => c.id === draggedId);
-        const targetIndex = list.findIndex((c) => c.id === targetId);
-
-        if (draggedIndex === -1 || targetIndex === -1) return prev;
-
-        const [removed] = list.splice(draggedIndex, 1);
-        list.splice(targetIndex, 0, removed);
-
-        // Reatribui order normalizada
-        const updated = list.map((c, idx) => ({ ...c, order: idx }));
-        saveToStorage(updated);
-        return updated;
-      });
-    },
-    [saveToStorage]
-  );
-
-
-  // Encaixa um card diretamente em um vão livre (slot packing inteligente)
-  const dockIntoSlot = useCallback(
-    (draggedId: string, insertAfterId: string, targetColSpan: DashboardColSpan) => {
-      setCards((prev) => {
-        const list = [...prev];
-        const draggedIndex = list.findIndex((c) => c.id === draggedId);
-        const targetIndex = list.findIndex((c) => c.id === insertAfterId);
-        if (draggedIndex === -1 || targetIndex === -1) return prev;
-
-        const [removed] = list.splice(draggedIndex, 1);
-        const safeColSpan = Math.max(
-          removed.minColSpan || 2,
-          Math.min(removed.maxColSpan || 12, targetColSpan)
-        ) as DashboardColSpan;
-
-        removed.colSpan = safeColSpan;
-
-        const newTargetIndex = list.findIndex((c) => c.id === insertAfterId);
-        list.splice(newTargetIndex + 1, 0, removed);
-
-        const updated = list.map((c, idx) => ({ ...c, order: idx }));
-        saveToStorage(updated);
-        return updated;
-      });
-    },
-    [saveToStorage]
-  );
-
-  // Mover um card para cima ou para baixo
-  const moveCard = useCallback(
-    (cardId: string, direction: 'up' | 'down') => {
-      setCards((prev) => {
-        const sorted = [...prev].sort((a, b) => a.order - b.order);
-        const visible = sorted.filter((c) => c.isVisible !== false);
-        const visIndex = visible.findIndex((c) => c.id === cardId);
-        if (visIndex === -1) return prev;
-
-        const targetVisIndex = direction === 'up' ? visIndex - 1 : visIndex + 1;
-        if (targetVisIndex < 0 || targetVisIndex >= visible.length) return prev;
-
-        const targetCard = visible[targetVisIndex];
-        const cardIndex = sorted.findIndex((c) => c.id === cardId);
-        const targetSortedIndex = sorted.findIndex((c) => c.id === targetCard.id);
-        if (cardIndex === -1 || targetSortedIndex === -1) return prev;
-
-        const tempOrder = sorted[cardIndex].order;
-        sorted[cardIndex].order = sorted[targetSortedIndex].order;
-        sorted[targetSortedIndex].order = tempOrder;
-        sorted.sort((a, b) => a.order - b.order);
-
-        const updated = sorted.map((c, idx) => ({ ...c, order: idx }));
-        saveToStorage(updated);
-        return updated;
       });
     },
     [saveToStorage]
@@ -415,9 +204,10 @@ export function useDashboardLayout(
       localStorage.removeItem(storageKey + '_v2');
       localStorage.removeItem(storageKey);
     } catch {}
+    saveToStorage(defaultCards);
     setCards(defaultCards);
     setSelectedCardId(null);
-  }, [storageKey, defaultCards]);
+  }, [storageKey, defaultCards, saveToStorage]);
 
   // Lista ordenada de cards visíveis
   const visibleCards = useMemo(() => {
@@ -437,12 +227,8 @@ export function useDashboardLayout(
     cards,
     visibleCards,
     hiddenCards,
-    updateColSpan,
-    updateCardHeight,
+    saveFrames,
     updateCardSettings,
-    moveCard,
-    reorderCard,
-    dockIntoSlot,
     toggleVisibility,
     restoreDefaults,
     autoConformLayout,
