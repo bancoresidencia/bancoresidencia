@@ -251,3 +251,7 @@ docs/interno/
 data/temp_*
 data/amp_*
 .cache_spl_vtk/
+
+# Graphify local knowledge graph artifacts
+graphify-out/
+.graphify_detect.json

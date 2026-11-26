@@ -65,3 +65,8 @@ Combina banco de questões com resoluções comentadas, psicometria (TRI/IRT), f
 - **Backend & Dados:** Supabase (PostgreSQL, Auth, Row Level Security, Storage)
 - **Visualização & UI:** Recharts, Mermaid, Lucide React
 - **Pagamentos & Automação:** Mercado Pago SDK, Playwright
+
+## Economia de Tokens e Código Mínimo
+
+- **Código Mínimo (Ponytail):** Aplique YAGNI e produza o menor diff funcional possível. Reutilize helpers/componentes já existentes em `src/` e bibliotecas já instaladas antes de escrever código novo, sem nunca cortar segurança, validação ou tratamento de erros.
+- **Exploração via Grafo (Graphify):** Ao mapear dependências, chamadores ou arquitetura em `src/`, consulte `graphify-out/GRAPH_REPORT.md` ou consulte nós específicos em `graphify-out/graph.json` antes de ler múltiplos arquivos brutos.
