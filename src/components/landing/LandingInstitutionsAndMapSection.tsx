@@ -543,7 +543,7 @@ export const LandingInstitutionsAndMapSection: React.FC<LandingInstitutionsAndMa
                         )}
 
                         <div
-                          className={`w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-full bg-white p-1 shadow-[0_4px_16px_rgba(0,0,0,0.6)] border-2 transition-all duration-200 flex items-center justify-center overflow-hidden shrink-0 ${isHighlighted ? 'scale-125 ring-2 ring-white' : 'group-hover:scale-115'
+                          className={`w-8 h-8 sm:w-8.5 sm:h-8.5 rounded-full bg-white p-0.5 shadow-[0_4px_16px_rgba(0,0,0,0.6)] border-2 transition-all duration-200 flex items-center justify-center overflow-hidden shrink-0 ${isHighlighted ? 'scale-125 ring-2 ring-white' : 'group-hover:scale-115'
                             }`}
                           style={{
                             borderColor: '#ffffff',

@@ -221,6 +221,7 @@ function Editor({
   const active = useRef<{
     pointer: number
     isEraser: boolean
+    barrelLocked: boolean
     isAndroidAirMode: boolean
     pendingAirCheck: boolean
     startedWithZeroPressurePen: boolean
@@ -512,29 +513,33 @@ function Editor({
         current.maxPressure = event.pressure
       }
 
-      if (current.pendingAirCheck) {
-        if (isAndroidAirBarrel(event)) {
+      if (!current.barrelLocked) {
+        if (current.pendingAirCheck) {
+          if (isAndroidAirBarrel(event)) {
+            current.isEraser = true
+            current.barrelLocked = true
+            current.isAndroidAirMode = true
+            current.pendingAirCheck = false
+            current.stroke.points = []
+            current.lastEraserPt = null
+            barrelHoverArmedUntil.current = performance.now() + 2000
+          } else if (event.pressure > 0) {
+            current.pendingAirCheck = false
+          }
+        }
+
+        const isBarrel = isBarrelOrEraser(event)
+        if (isBarrel && !current.isEraser) {
           current.isEraser = true
-          current.isAndroidAirMode = true
-          current.pendingAirCheck = false
+          current.barrelLocked = true
           current.stroke.points = []
           current.lastEraserPt = null
-          barrelHoverArmedUntil.current = performance.now() + 2000
-        } else if (event.pressure > 0) {
-          current.pendingAirCheck = false
         }
       }
-
-      const isBarrel = isBarrelOrEraser(event)
-      if (isBarrel && !current.isEraser) {
-        current.isEraser = true
-        current.stroke.points = []
-        current.lastEraserPt = null
-      }
-      const isEraserNow = current.isEraser || isBarrel || tool === 'erase'
+      const isEraserNow = current.isEraser || tool === 'erase'
 
       // In Android air-hover barrel mode (pressure === 0 before touching glass), show cursor via DOM ref without drawing/erasing yet
-      if (current.isAndroidAirMode && event.pressure === 0 && !isBarrel && tool !== 'erase') {
+      if (current.isAndroidAirMode && event.pressure === 0 && !isBarrelOrEraser(event) && tool !== 'erase') {
         updateEraserCursor(p)
         continue
       }
@@ -917,6 +922,7 @@ function Editor({
     active.current = {
       pointer: e.pointerId,
       isEraser: isBarrel || tool === 'erase',
+      barrelLocked: isBarrel,
       isAndroidAirMode: recentlyBarrelHover,
       pendingAirCheck: tool !== 'erase' && !isBarrel && androidAirDown,
       startedWithZeroPressurePen: !standardBarrel && androidAirDown,
@@ -1157,6 +1163,9 @@ function Editor({
             }
 
             if (active.current?.pointer === e.pointerId) {
+              if (active.current.barrelLocked && e.pointerType === 'pen' && e.pressure > 0) {
+                return
+              }
               sample(e)
               finish()
             }
