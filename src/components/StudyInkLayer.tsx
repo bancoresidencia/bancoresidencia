@@ -593,6 +593,7 @@ function Editor({
   }
 
   function finish() {
+    updateEraserCursor(null)
     const current = active.current
     if (!current) {
       setInkDrawing(false)
@@ -627,14 +628,24 @@ function Editor({
       enteredEraseViaAirClick.current = false
     }
 
-    const bounds = Object.entries(blocks).find(
-      ([, box]) =>
-        current.stroke.points.length &&
-        current.stroke.points.every(
-          (p) => p.x >= box.x && p.y >= box.y && p.x <= box.x + box.width && p.y <= box.y + box.height
-        )
-    )
-    if (bounds) current.stroke.anchor = { block: bounds[0], box: bounds[1] }
+    let bestBlock: [string, InkBox] | undefined
+    if (current.stroke.points.length) {
+      let bestHits = 0
+      let bestArea = Infinity
+      for (const entry of Object.entries(blocks)) {
+        const [, box] = entry
+        const hits = current.stroke.points.filter(
+          (p) => p.x >= box.x - 48 && p.y >= box.y - 16 && p.x <= box.x + box.width + 20 && p.y <= box.y + box.height + 16
+        ).length
+        const area = box.width * box.height
+        if (hits >= current.stroke.points.length * 0.5 && (hits > bestHits || (hits === bestHits && area < bestArea))) {
+          bestHits = hits
+          bestArea = area
+          bestBlock = entry
+        }
+      }
+    }
+    if (bestBlock) current.stroke.anchor = { block: bestBlock[0], box: bestBlock[1] }
 
     if (current.isEraser || tool === 'erase') {
       if (cut) {
@@ -845,6 +856,15 @@ function Editor({
       ) {
         active.current = null
         barrelHoverArmedUntil.current = performance.now() + 2000
+      } else if (e.pointerType === 'pen' && active.current.isEraser && active.current.pointer !== e.pointerId) {
+        active.current.pointer = e.pointerId
+        if (e.pressure > 0) {
+          try {
+            e.currentTarget.setPointerCapture(e.pointerId)
+          } catch {}
+        }
+        sample(e)
+        return
       } else {
         return
       }
@@ -912,9 +932,11 @@ function Editor({
     }
 
     setInkDrawing(true)
-    try {
-      e.currentTarget.setPointerCapture(e.pointerId)
-    } catch {}
+    if (!(e.pointerType === 'pen' && e.pressure === 0)) {
+      try {
+        e.currentTarget.setPointerCapture(e.pointerId)
+      } catch {}
+    }
     checkpoint.current = performance.now()
     const kind = isBarrel || tool === 'erase' ? 'pen' : tool === 'marker' ? 'marker' : 'pen'
     const initialPt = point(e.nativeEvent)
@@ -1171,6 +1193,7 @@ function Editor({
             }
           }}
           onLostPointerCapture={(e) => {
+            updateEraserCursor(null)
             setInkDrawing(false)
             if (touchState.current) touchState.current = null
             activeTouches.current.clear()
@@ -1178,6 +1201,7 @@ function Editor({
             if (active.current?.pointer === e.pointerId) finish()
           }}
           onPointerCancel={(e) => {
+            updateEraserCursor(null)
             setInkDrawing(false)
             if (touchState.current?.rafId) cancelAnimationFrame(touchState.current.rafId)
             touchState.current = null

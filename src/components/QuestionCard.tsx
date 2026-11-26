@@ -2046,7 +2046,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
                     {/* Conteúdo da Alternativa: Imagem ou Texto */}
                     {optionImageUrl ? (
-                      <div className="flex-1 pt-0.5">
+                      <div data-ink-block={optLetter} className="flex-1 pt-0.5">
                         <div className="relative inline-block rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2 shadow-xs max-w-sm sm:max-w-md">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
@@ -2190,7 +2190,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           Justificativa da Alternativa {optLetter}:
                         </span>
                       </div>
-                      <div data-highlightable="true" className={`font-normal whitespace-pre-line ${justificationSizeClass} text-slate-800 dark:text-slate-200 select-text`}>
+                      <div data-ink-block={`explanation-${optLetter}`} data-highlightable="true" className={`font-normal whitespace-pre-line ${justificationSizeClass} text-slate-800 dark:text-slate-200 select-text`}>
                         {renderFormattedText(
                           explanationText ||
                             (isCorrect

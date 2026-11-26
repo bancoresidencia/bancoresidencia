@@ -9,12 +9,9 @@ import {
   ChevronRight,
   ChevronDown,
   Layers,
-  Sparkles,
-
   Filter,
   CheckSquare,
   Square,
-  Brain,
   BookOpen,
   Zap
 } from 'lucide-react';
@@ -310,6 +307,18 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
     return calculateAnkiCounts(selectedCardsList);
   }, [selectedCardsList, calculateAnkiCounts]);
 
+  const totalAnkiCounts = useMemo(() => {
+    return calculateAnkiCounts(effectiveCards);
+  }, [effectiveCards, calculateAnkiCounts]);
+
+  const isCustomSelectionActive = selectedNodeKeys.size > 0;
+  const displayedCardsCount = isCustomSelectionActive
+    ? selectedCardsList.length
+    : effectiveCards.length;
+  const activeBreakdown = isCustomSelectionActive
+    ? selectedAnkiCounts
+    : totalAnkiCounts;
+
   // Helper de renderização de números no estilo Anki (0 fica suave em cinza)
   const renderCountNumber = (val: number, type: 'novo' | 'aprender' | 'revisar') => {
     if (val === 0) {
@@ -358,55 +367,26 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
 
   return (
     <div className="space-y-3">
-      {/* SELETOR DE MODO NO TOPO DA CATEGORIA CARTÕES DO BR: ESTUDO vs REVISÃO */}
+      {/* SELETOR DE MODO (ESQUERDA) & MOSTRADOR REATIVO ESTILO BANCO DE QUESTÕES (DIREITA) */}
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 p-3 sm:p-3.5 rounded-2xl shadow-xs transition-all">
-        <div className="flex items-center gap-2.5">
-          <div
-            className="w-8 h-8 rounded-xl flex items-center justify-center text-white shrink-0 shadow-2xs"
-            style={{ backgroundColor: accentConfig.primaryHex }}
-          >
-            <Brain className="w-4 h-4 stroke-[2.2]" />
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 leading-tight">
-                Modo de Aprendizagem
-              </span>
-              <span className="text-[10px] font-mono font-bold px-1.5 py-0.2 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200/60 dark:border-zinc-700/60">
-                {effectiveCards.length} cards
-              </span>
-            </div>
-            <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">
-              {studyDepth === 'all'
-                ? 'Exibindo todos os cartões disponíveis no acervo oficial'
-                : studyDepth === 'study'
-                  ? 'Cartões detalhados, conceituais e aprofundados para fixação teórica'
-                  : 'Cartões diretos, objetivos e rápidos para revisão ágil pré-prova'}
-            </p>
-          </div>
-        </div>
-
-        {/* Pílulas de Seleção: Todos | Estudo | Revisão */}
+        {/* Lado Esquerdo: Pílulas de Seleção (Todos | Estudo | Revisão - sem números) */}
         <div className="flex items-center gap-1 p-1 bg-zinc-100 dark:bg-zinc-900 rounded-xl border border-zinc-200/80 dark:border-zinc-800 self-stretch sm:self-auto max-w-full overflow-x-auto scrollbar-none">
           <button
             type="button"
             onClick={() => setStudyDepth('all')}
-            className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'all'
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'all'
               ? 'bg-white dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 shadow-2xs'
               : 'text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200'
               }`}
           >
             <Layers className="w-3.5 h-3.5 shrink-0" />
             <span>Todos</span>
-            <span className="font-mono text-[10px] px-1 rounded bg-zinc-200/60 dark:bg-zinc-700/60">
-              {baseCardsForDepth.length}
-            </span>
           </button>
 
           <button
             type="button"
             onClick={() => setStudyDepth('study')}
-            className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'study'
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'study'
               ? 'bg-blue-600 text-white shadow-2xs'
               : 'text-zinc-500 hover:text-blue-600 dark:hover:text-blue-400'
               }`}
@@ -414,20 +394,12 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
           >
             <BookOpen className="w-3.5 h-3.5 shrink-0" />
             <span><span className="hidden sm:inline">Cartões para </span>Estudo</span>
-            <span
-              className={`font-mono text-[10px] px-1 rounded ${studyDepth === 'study'
-                ? 'bg-blue-700 text-white'
-                : 'bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300'
-                }`}
-            >
-              {studyCardsCount}
-            </span>
           </button>
 
           <button
             type="button"
             onClick={() => setStudyDepth('review')}
-            className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'review'
+            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap ${studyDepth === 'review'
               ? 'bg-purple-600 text-white shadow-2xs'
               : 'text-zinc-500 hover:text-purple-600 dark:hover:text-purple-400'
               }`}
@@ -435,15 +407,37 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
           >
             <Zap className="w-3.5 h-3.5 shrink-0" />
             <span><span className="hidden sm:inline">Cartões para </span>Revisão</span>
-            <span
-              className={`font-mono text-[10px] px-1 rounded ${studyDepth === 'review'
-                ? 'bg-purple-700 text-white'
-                : 'bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-300'
-                }`}
-            >
-              {reviewCardsCount}
-            </span>
           </button>
+        </div>
+
+        {/* Lado Direito: Mostrador Reativo Dinâmico (Total ou Seleção + Novos/Aprender/Revisar) */}
+        <div className="flex flex-col items-start sm:items-end shrink-0 select-none">
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight tabular-nums text-zinc-900 dark:text-white">
+              {displayedCardsCount.toLocaleString('pt-BR')}
+            </span>
+            <span className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">
+              {isCustomSelectionActive
+                ? (displayedCardsCount === 1 ? 'card selecionado' : 'cards selecionados')
+                : (displayedCardsCount === 1 ? 'flashcard' : 'flashcards')}
+            </span>
+          </div>
+
+          {/* Breakdown Reativo: Novos, Aprender, Revisar */}
+          <div className="flex items-center gap-2 sm:gap-2.5 mt-0.5 text-[11px] font-medium text-zinc-500 dark:text-zinc-400">
+            <span className="inline-flex items-center gap-1 text-blue-600 dark:text-blue-400 font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+              {activeBreakdown.novo} novos
+            </span>
+            <span className="inline-flex items-center gap-1 text-rose-600 dark:text-rose-400 font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+              {activeBreakdown.aprender} aprender
+            </span>
+            <span className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-semibold">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+              {activeBreakdown.revisar} revisar
+            </span>
+          </div>
         </div>
       </div>
 
@@ -584,18 +578,18 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                       )}
                     </button>
 
-                    {/* Botão Expansor com setinha */}
+                    {/* Botão Expansor com setinha limpa (sem caixa) */}
                     <button
                       type="button"
                       onClick={() => toggleNodeExpand(specKey)}
-                      className="w-5 h-5 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                      className="p-1 rounded text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-200 transition-colors cursor-pointer shrink-0"
                       title={isSpecExpanded ? 'Recolher temas' : 'Expandir temas'}
                       aria-label={isSpecExpanded ? 'Recolher temas' : 'Expandir temas'}
                     >
                       {isSpecExpanded ? (
-                        <ChevronDown className="w-3.5 h-3.5 stroke-[2.5]" />
+                        <ChevronDown className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
                       ) : (
-                        <ChevronRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                        <ChevronRight className="w-4 h-4 text-zinc-400 dark:text-zinc-500" />
                       )}
                     </button>
 
@@ -733,18 +727,18 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                             <button
                               type="button"
                               onClick={() => toggleNodeExpand(temaKey)}
-                              className="w-4 h-4 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                              className="p-1 rounded text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-200 transition-colors cursor-pointer shrink-0"
                               title={isTemaExpanded ? 'Recolher focos' : 'Expandir focos'}
                               aria-label={isTemaExpanded ? 'Recolher focos' : 'Expandir focos'}
                             >
                               {tem.focos.length > 0 ? (
                                 isTemaExpanded ? (
-                                  <ChevronDown className="w-3 h-3 stroke-[2.5]" />
+                                  <ChevronDown className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400" />
                                 ) : (
-                                  <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                                  <ChevronRight className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500" />
                                 )
                               ) : (
-                                <span className="text-[10px] text-zinc-400">•</span>
+                                <span className="w-3.5 text-center text-[10px] text-zinc-400">•</span>
                               )}
                             </button>
 
@@ -881,7 +875,7 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                       <button
                                         type="button"
                                         onClick={() => toggleNodeExpand(focoKey)}
-                                        className="w-4 h-4 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                        className="p-1 rounded text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-200 transition-colors cursor-pointer shrink-0"
                                         title={
                                           isFocoExpanded
                                             ? 'Recolher subfocos'
@@ -894,13 +888,13 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                         }
                                       >
                                         {isFocoExpanded ? (
-                                          <ChevronDown className="w-3 h-3 stroke-[2.5]" />
+                                          <ChevronDown className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400" />
                                         ) : (
-                                          <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                                          <ChevronRight className="w-3.5 h-3.5 text-zinc-400 dark:text-zinc-500" />
                                         )}
                                       </button>
                                     ) : (
-                                      <span className="w-4 text-center text-zinc-300 dark:text-zinc-700 font-mono text-[10px]">
+                                      <span className="w-3.5 text-center text-zinc-300 dark:text-zinc-700 font-mono text-[10px]">
                                         •
                                       </span>
                                     )}
@@ -1038,14 +1032,14 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                                   e.stopPropagation();
                                                   toggleNodeExpand(subKey);
                                                 }}
-                                                className="w-4 h-4 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                                className="p-0.5 rounded text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-200 transition-colors cursor-pointer shrink-0"
                                                 title={isSubExpanded ? 'Recolher sub-subfocos' : 'Expandir sub-subfocos'}
                                                 aria-label={isSubExpanded ? 'Recolher sub-subfocos' : 'Expandir sub-subfocos'}
                                               >
                                                 {isSubExpanded ? (
-                                                  <ChevronDown className="w-3 h-3 stroke-[2.5]" />
+                                                  <ChevronDown className="w-3 h-3 text-zinc-500 dark:text-zinc-400" />
                                                 ) : (
-                                                  <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                                                  <ChevronRight className="w-3 h-3 text-zinc-400 dark:text-zinc-500" />
                                                 )}
                                               </button>
                                             ) : (
@@ -1212,109 +1206,6 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
               </React.Fragment>
             );
           })}
-        </div>
-
-        {/* 3. LINHA FIXA FINAL: SESSÃO DE ESTUDO PERSONALIZADO (COMO NO ANKI) */}
-        <div className="border-t-2 border-zinc-200 dark:border-zinc-800 bg-zinc-50/90 dark:bg-zinc-900/90 px-4 py-3 select-none">
-          <div className="grid grid-cols-12 items-center">
-            {/* Lado Esquerdo: Identificação da Sessão Personalizada */}
-            <div className="col-span-7 sm:col-span-8 flex items-center gap-2.5 min-w-0 pr-2">
-              <div
-                className="w-6 h-6 rounded-lg flex items-center justify-center text-white shrink-0 shadow-2xs"
-                style={{ backgroundColor: accentConfig.primaryHex }}
-              >
-                <Sparkles className="w-3.5 h-3.5" />
-              </div>
-
-              <div className="min-w-0">
-                <span className="font-heading font-black text-xs sm:text-[13px] text-zinc-900 dark:text-zinc-100 block truncate">
-                  Sessão de Estudo Personalizado
-                </span>
-                <span className="text-[10px] text-zinc-500 dark:text-zinc-400 block truncate">
-                  {selectedNodeKeys.size > 0
-                    ? `${selectedNodeKeys.size} ${selectedNodeKeys.size === 1 ? 'item selecionado' : 'itens selecionados'
-                    } • ${selectedCardsList.length} flashcards prontos`
-                    : 'Marque os checkboxes na tabela para compor um estudo personalizado'}
-                </span>
-              </div>
-            </div>
-
-            {/* Contadores da Seleção: Novo, Aprender, Revisar */}
-            <div className="col-span-1 text-right text-xs">
-              {renderCountNumber(selectedAnkiCounts.novo, 'novo')}
-            </div>
-            <div className="col-span-2 sm:col-span-1 text-right text-xs">
-              {renderCountNumber(selectedAnkiCounts.aprender, 'aprender')}
-            </div>
-            <div className="col-span-2 sm:col-span-1 text-right text-xs">
-              {renderCountNumber(selectedAnkiCounts.revisar, 'revisar')}
-            </div>
-
-            {/* Botão de Estudo Personalizado */}
-            <div className="hidden sm:flex col-span-1 items-center justify-center gap-1.5">
-              {selectedCardsList.length > 0 ? (
-                <button
-                  type="button"
-                  onClick={() => {
-                    if (onOpenCustomStudy) {
-                      onOpenCustomStudy(
-                        selectedCardsList,
-                        `Estudo Personalizado (${selectedCardsList.length} cards)`
-                      );
-                    } else {
-                      handleStartNodeStudy(
-                        selectedCardsList,
-                        `Estudo Personalizado (${selectedCardsList.length} cards)`
-                      );
-                    }
-                  }}
-                  className="px-2 py-1 rounded-lg text-xs font-bold text-white shadow-xs hover:opacity-95 active:scale-98 transition-all inline-flex items-center gap-1 cursor-pointer shrink-0"
-                  style={{ backgroundColor: accentConfig.primaryHex }}
-                  title="Configurar estudo personalizado dos cartões selecionados"
-                >
-                  <Play className="w-3 h-3 fill-current" />
-                  <span className="hidden lg:inline">Estudar</span>
-                </button>
-              ) : (
-                <span className="text-[10px] text-zinc-400 font-mono">0</span>
-              )}
-            </div>
-          </div>
-
-          {/* Ações Mobile para Sessão Personalizada */}
-          {selectedCardsList.length > 0 && (
-            <div className="sm:hidden pt-2.5 mt-2 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between gap-2">
-              <button
-                type="button"
-                onClick={handleClearSelections}
-                className="text-xs text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 cursor-pointer"
-              >
-                Limpar seleção
-              </button>
-
-              <button
-                type="button"
-                onClick={() => {
-                  if (onOpenCustomStudy) {
-                    onOpenCustomStudy(
-                      selectedCardsList,
-                      `Estudo Personalizado (${selectedCardsList.length} cards)`
-                    );
-                  } else {
-                    handleStartNodeStudy(
-                      selectedCardsList,
-                      `Estudo Personalizado (${selectedCardsList.length} cards)`
-                    );
-                  }
-                }}
-                className="px-3 py-1.5 rounded-xl text-xs font-bold text-white shadow-xs inline-flex items-center gap-1.5 cursor-pointer"
-                style={{ backgroundColor: accentConfig.primaryHex }}
-              >
-                <Play className="w-3.5 h-3.5 fill-current" />
-                <span>Estudar ({selectedCardsList.length})</span>
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </div>

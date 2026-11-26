@@ -476,14 +476,14 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                         e.stopPropagation();
                         toggleDeckExpand(node.fullPath);
                       }}
-                      className="w-5 h-5 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                      className="p-1 rounded text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-200 transition-colors cursor-pointer shrink-0"
                       title={isExpanded ? 'Recolher sub-baralhos' : 'Expandir sub-baralhos'}
                       aria-label={isExpanded ? 'Recolher sub-baralhos' : 'Expandir sub-baralhos'}
                     >
                       {isExpanded ? (
-                        <ChevronDown className="w-3.5 h-3.5 stroke-[2.5]" />
+                        <ChevronDown className="w-4 h-4 text-zinc-500 dark:text-zinc-400" />
                       ) : (
-                        <ChevronRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                        <ChevronRight className="w-4 h-4 text-zinc-400 dark:text-zinc-500" />
                       )}
                     </button>
                   ) : (

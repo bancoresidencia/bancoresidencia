@@ -302,13 +302,20 @@ export function projectInk(stroke: InkStroke, blocks: Record<string, InkBox>): I
   const now = blocks[stroke.anchor.block]
   if (!now || !prior.width || !prior.height) return stroke
   if (prior.x === now.x && prior.y === now.y && prior.width === now.width && prior.height === now.height) return stroke
+  const minorWidthChange = Math.abs(now.width - prior.width) <= prior.width * 0.15
+  const dx = now.x - prior.x
+  const dy = now.y - prior.y
   return {
     ...stroke,
     anchor: { block: stroke.anchor.block, box: now },
-    points: stroke.points.map(p => ({
-      ...p,
-      x: now.x + ((p.x - prior.x) * now.width) / prior.width,
-      y: now.y + ((p.y - prior.y) * now.height) / prior.height
-    }))
+    points: stroke.points.map((p) =>
+      minorWidthChange
+        ? { ...p, x: p.x + dx, y: p.y + dy }
+        : {
+            ...p,
+            x: now.x + ((p.x - prior.x) * now.width) / prior.width,
+            y: now.y + ((p.y - prior.y) * now.height) / prior.height
+          }
+    )
   }
 }

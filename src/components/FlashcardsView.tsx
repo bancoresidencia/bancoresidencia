@@ -319,6 +319,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Estado do Drawer Central de Adicionar Flashcard
   const [isAddCardDrawerOpen, setIsAddCardDrawerOpen] = useState(false);
+  const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [flashcardTab, setFlashcardTab] = useState<
     'br' | 'originais' | 'personalizados' | 'configuracoes'
   >('br');
@@ -1022,8 +1023,8 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
         />
 
         {/* Seletor de Modo: Cartões do HR vs. Cartões Originais vs. Personalizados */}
-        <div className="flex items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 pb-2 pt-1 max-w-full overflow-x-auto scrollbar-none">
-          <div className="flex items-center gap-1.5 min-w-max">
+        <div className="flex items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 pb-2 pt-1 gap-2">
+          <div className="flex items-center gap-1.5 min-w-max overflow-x-auto scrollbar-none">
             <button
               type="button"
               onClick={() => setFlashcardTab('br')}
@@ -1065,29 +1066,18 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
                 {personalizedDecksCount}
               </span>
             </button>
-
-            <button
-              type="button"
-              onClick={() => setFlashcardTab('configuracoes')}
-              title="Configurações do algoritmo de repetição espaçada (FSRS-5 & Modelo Anki)"
-              className={`shrink-0 whitespace-nowrap px-3 sm:px-3.5 py-2 sm:py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer touch-manipulation inline-flex items-center gap-1.5 sm:gap-2 ${flashcardTab === 'configuracoes'
-                ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
-                : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
-                }`}
-            >
-              <Settings className="w-3.5 h-3.5" />
-              <span>Configurações</span>
-              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
-                {schedulerSettings.presetMode === 'more_reps'
-                  ? 'Intensivo'
-                  : schedulerSettings.presetMode === 'moderate'
-                    ? 'Moderado'
-                    : schedulerSettings.presetMode === 'fewer_reps'
-                      ? 'Leve'
-                      : 'Anki'}
-              </span>
-            </button>
           </div>
+
+          {/* Botão de Configurações à direita: Apenas o ícone de engrenagem */}
+          <button
+            type="button"
+            onClick={() => setIsSettingsModalOpen(true)}
+            title="Configurações do algoritmo de repetição espaçada (FSRS-5 & Modelo Anki)"
+            aria-label="Abrir configurações de repetição espaçada"
+            className="p-2 rounded-xl text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-100 bg-zinc-100/80 dark:bg-zinc-800/60 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all cursor-pointer touch-manipulation shrink-0 border border-zinc-200/60 dark:border-zinc-800"
+          >
+            <Settings className="w-4 h-4" />
+          </button>
         </div>
 
         {/* Conteúdo da Aba Selecionada (Filtros e Baralhos de Estudo) */}
@@ -1142,12 +1132,51 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           />
         )}
 
-        {flashcardTab === 'configuracoes' && (
-          <AnkiSettingsSection
-            onSettingsChanged={(next) => {
-              setSchedulerSettings(next);
-            }}
-          />
+        {/* Modal Central de Configurações FSRS-5 & Modelo Anki */}
+        {isSettingsModalOpen && (
+          <div
+            className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-150"
+            onClick={() => setIsSettingsModalOpen(false)}
+          >
+            <div
+              className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 p-5 sm:p-6 shadow-2xl space-y-4"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex items-center justify-between pb-3 border-b border-zinc-200/80 dark:border-zinc-800/80">
+                <div className="flex items-center gap-2.5">
+                  <div
+                    className="w-8 h-8 rounded-xl flex items-center justify-center text-white shrink-0 shadow-2xs"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
+                  >
+                    <Settings className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
+                      Configurações do Algoritmo
+                    </h3>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                      Motor de repetição espaçada FSRS-5, presets e limites diários
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={() => setIsSettingsModalOpen(false)}
+                  className="p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+                  title="Fechar configurações"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              <AnkiSettingsSection
+                onSettingsChanged={(next) => {
+                  setSchedulerSettings(next);
+                }}
+              />
+            </div>
+          </div>
         )}
 
         {/* Heatmap Anki de Revisões Anuais (Posicionado ABAIXO dos filtros de baralhos) */}
