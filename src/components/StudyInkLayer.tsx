@@ -330,13 +330,24 @@ function Editor({
     measureBlocks()
     window.addEventListener('resize', measureBlocks)
     const observer = new ResizeObserver(measureBlocks)
-    if (anchor.current?.parentElement) observer.observe(anchor.current.parentElement)
+    let measureRaf = 0
+    const scheduleMeasure = () => {
+      if (measureRaf) cancelAnimationFrame(measureRaf)
+      measureRaf = requestAnimationFrame(measureBlocks)
+    }
+    const mutationObserver = new MutationObserver(scheduleMeasure)
+    if (anchor.current?.parentElement) {
+      observer.observe(anchor.current.parentElement)
+      mutationObserver.observe(anchor.current.parentElement, { childList: true, subtree: true })
+    }
 
     return () => {
       live = false
       updates?.close()
       window.removeEventListener('beforeunload', leave)
       observer.disconnect()
+      mutationObserver.disconnect()
+      if (measureRaf) cancelAnimationFrame(measureRaf)
       window.removeEventListener('resize', measureBlocks)
       if (touchState.current?.rafId) cancelAnimationFrame(touchState.current.rafId)
       if (active.current) {
@@ -556,6 +567,7 @@ function Editor({
         const fromPt = current.lastEraserPt ?? p
         for (const stroke of strokes) {
           if (
+            isStrokeVisible(stroke) &&
             (!onlyMarker || stroke.kind === 'marker') &&
             !current.erased.has(stroke.id) &&
             touchesInkSegment(stroke, fromPt, p, effectiveRadius)
@@ -651,7 +663,7 @@ function Editor({
       if (cut) {
         const before: InkStroke[] = []
         const after: InkStroke[] = []
-        for (const stroke of strokes.filter((s) => !onlyMarker || s.kind === 'marker')) {
+        for (const stroke of strokes.filter((s) => isStrokeVisible(s) && (!onlyMarker || s.kind === 'marker'))) {
           const pieces = cutInk(stroke, current.stroke.points, effectiveRadius)
           if (pieces.length !== 1 || pieces[0] !== stroke) {
             before.push(stroke)
@@ -1035,8 +1047,11 @@ function Editor({
     )
   }
 
+  const hasMeasuredBlocks = Object.keys(blocks).length > 0
+  const isStrokeVisible = (s: InkStroke) => !s.anchor || !hasMeasuredBlocks || Boolean(blocks[s.anchor.block])
+
   const visible = [
-    ...strokes.filter((s) => (cut || !erasedIds.includes(s.id)) && s.id !== preview?.id),
+    ...strokes.filter((s) => isStrokeVisible(s) && (cut || !erasedIds.includes(s.id)) && s.id !== preview?.id),
     ...(preview && tool !== 'erase' ? [preview] : [])
   ]
 

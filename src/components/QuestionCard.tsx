@@ -2402,6 +2402,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </div>
                 </div>
                 <div
+                  data-ink-block="commentary-main"
                   data-highlightable="true"
                   className={`${justificationSizeClass} font-normal text-slate-800 dark:text-slate-200 whitespace-pre-line select-text`}
                 >
@@ -2428,7 +2429,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </button>
                   {openTopics['error'] && (
                     <div className="px-4 pb-4 pt-1 border-t border-amber-200/60 dark:border-amber-800/40 animate-in fade-in duration-150">
-                      <div data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-amber-950 dark:text-amber-200/90 whitespace-pre-line select-text">
+                      <div data-ink-block="commentary-error" data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-amber-950 dark:text-amber-200/90 whitespace-pre-line select-text">
                         {renderFormattedText(mainErrorReason)}
                       </div>
                     </div>
@@ -2455,7 +2456,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </button>
                   {openTopics['takeHome'] && (
                     <div className="px-4 pb-4 pt-1 border-t border-blue-200/60 dark:border-blue-800/40 animate-in fade-in duration-150">
-                      <div data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-blue-950 dark:text-blue-200/90 font-medium whitespace-pre-line select-text">
+                      <div data-ink-block="commentary-takehome" data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-blue-950 dark:text-blue-200/90 font-medium whitespace-pre-line select-text">
                         {renderFormattedText(takeHomeMessage)}
                       </div>
                     </div>
@@ -2482,7 +2483,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </button>
                   {openTopics['guidelines'] && (
                     <div className="px-4 pb-4 pt-1 border-t border-indigo-200/60 dark:border-indigo-800/40 animate-in fade-in duration-150">
-                      <div data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-indigo-950 dark:text-indigo-200/90 whitespace-pre-line select-text">
+                      <div data-ink-block="commentary-guidelines" data-highlightable="true" className="text-xs sm:text-[13px] leading-relaxed text-indigo-950 dark:text-indigo-200/90 whitespace-pre-line select-text">
                         {renderFormattedText(guidelineEvolution)}
                       </div>
                     </div>
@@ -2509,7 +2510,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </button>
                   {openTopics['references'] && (
                     <div className="px-3.5 pb-3.5 pt-1 border-t border-zinc-200 dark:border-zinc-800 animate-in fade-in duration-150">
-                      <ul className="list-disc list-inside space-y-1 text-[11.5px] text-slate-600 dark:text-slate-400">
+                      <ul data-ink-block="commentary-references" className="list-disc list-inside space-y-1 text-[11.5px] text-slate-600 dark:text-slate-400">
                         {references.map((ref, idx) => (
                           <li key={idx} data-highlightable="true" className="leading-relaxed select-text">
                             {renderFormattedText(ref)}
