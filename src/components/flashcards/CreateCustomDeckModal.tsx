@@ -630,9 +630,15 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                           <button
                             type="button"
                             onClick={() => toggleNodeExpand(specKey)}
-                            className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-xs text-zinc-500 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                            className="w-4 h-4 rounded flex items-center justify-center text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                            title={isSpecExpanded ? 'Recolher temas' : 'Expandir temas'}
+                            aria-label={isSpecExpanded ? 'Recolher temas' : 'Expandir temas'}
                           >
-                            {isSpecExpanded ? '−' : '+'}
+                            {isSpecExpanded ? (
+                              <ChevronDown className="w-3.5 h-3.5 stroke-[2.5]" />
+                            ) : (
+                              <ChevronRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                            )}
                           </button>
 
                           <span
@@ -718,9 +724,15 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                   <button
                                     type="button"
                                     onClick={() => toggleNodeExpand(temaKey)}
-                                    className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-xs text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                    className="w-4 h-4 rounded flex items-center justify-center text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                    title={isTemaExpanded ? 'Recolher focos' : 'Expandir focos'}
+                                    aria-label={isTemaExpanded ? 'Recolher focos' : 'Expandir focos'}
                                   >
-                                    {isTemaExpanded ? '−' : '+'}
+                                    {isTemaExpanded ? (
+                                      <ChevronDown className="w-3 h-3 stroke-[2.5]" />
+                                    ) : (
+                                      <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                                    )}
                                   </button>
 
                                   <span
@@ -809,9 +821,15 @@ export const CreateCustomDeckModal: React.FC<CreateCustomDeckModalProps> = ({
                                             <button
                                               type="button"
                                               onClick={() => toggleNodeExpand(focoKey)}
-                                              className="w-3.5 h-3.5 rounded flex items-center justify-center font-mono font-bold text-[10px] text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                              className="w-3.5 h-3.5 rounded flex items-center justify-center text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                              title={isFocoExpanded ? 'Recolher subfocos' : 'Expandir subfocos'}
+                                              aria-label={isFocoExpanded ? 'Recolher subfocos' : 'Expandir subfocos'}
                                             >
-                                              {isFocoExpanded ? '−' : '+'}
+                                              {isFocoExpanded ? (
+                                                <ChevronDown className="w-3 h-3 stroke-[2.5]" />
+                                              ) : (
+                                                <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                                              )}
                                             </button>
                                           ) : (
                                             <span className="w-3.5 text-center text-zinc-300 dark:text-zinc-700 text-xs">

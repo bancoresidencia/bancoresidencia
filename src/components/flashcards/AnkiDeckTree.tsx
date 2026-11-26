@@ -584,14 +584,19 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                       )}
                     </button>
 
-                    {/* Botão Expansor (+) ou (-) */}
+                    {/* Botão Expansor com setinha */}
                     <button
                       type="button"
                       onClick={() => toggleNodeExpand(specKey)}
-                      className="w-5 h-5 rounded flex items-center justify-center font-mono font-bold text-xs text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                      className="w-5 h-5 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                       title={isSpecExpanded ? 'Recolher temas' : 'Expandir temas'}
+                      aria-label={isSpecExpanded ? 'Recolher temas' : 'Expandir temas'}
                     >
-                      {isSpecExpanded ? '−' : '+'}
+                      {isSpecExpanded ? (
+                        <ChevronDown className="w-3.5 h-3.5 stroke-[2.5]" />
+                      ) : (
+                        <ChevronRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                      )}
                     </button>
 
                     {/* Título Clicável que Reproduz os Cartões */}
@@ -728,10 +733,19 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                             <button
                               type="button"
                               onClick={() => toggleNodeExpand(temaKey)}
-                              className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[11px] text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                              className="w-4 h-4 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                               title={isTemaExpanded ? 'Recolher focos' : 'Expandir focos'}
+                              aria-label={isTemaExpanded ? 'Recolher focos' : 'Expandir focos'}
                             >
-                              {tem.focos.length > 0 ? (isTemaExpanded ? '−' : '+') : '•'}
+                              {tem.focos.length > 0 ? (
+                                isTemaExpanded ? (
+                                  <ChevronDown className="w-3 h-3 stroke-[2.5]" />
+                                ) : (
+                                  <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                                )
+                              ) : (
+                                <span className="text-[10px] text-zinc-400">•</span>
+                              )}
                             </button>
 
                             <span
@@ -867,14 +881,23 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                       <button
                                         type="button"
                                         onClick={() => toggleNodeExpand(focoKey)}
-                                        className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[10px] text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                        className="w-4 h-4 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                                         title={
                                           isFocoExpanded
                                             ? 'Recolher subfocos'
                                             : 'Expandir subfocos'
                                         }
+                                        aria-label={
+                                          isFocoExpanded
+                                            ? 'Recolher subfocos'
+                                            : 'Expandir subfocos'
+                                        }
                                       >
-                                        {isFocoExpanded ? '−' : '+'}
+                                        {isFocoExpanded ? (
+                                          <ChevronDown className="w-3 h-3 stroke-[2.5]" />
+                                        ) : (
+                                          <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                                        )}
                                       </button>
                                     ) : (
                                       <span className="w-4 text-center text-zinc-300 dark:text-zinc-700 font-mono text-[10px]">
@@ -1015,10 +1038,15 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                                   e.stopPropagation();
                                                   toggleNodeExpand(subKey);
                                                 }}
-                                                className="w-4 h-4 rounded flex items-center justify-center font-mono font-bold text-[10px] text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                                                className="w-4 h-4 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                                                 title={isSubExpanded ? 'Recolher sub-subfocos' : 'Expandir sub-subfocos'}
+                                                aria-label={isSubExpanded ? 'Recolher sub-subfocos' : 'Expandir sub-subfocos'}
                                               >
-                                                {isSubExpanded ? '−' : '+'}
+                                                {isSubExpanded ? (
+                                                  <ChevronDown className="w-3 h-3 stroke-[2.5]" />
+                                                ) : (
+                                                  <ChevronRight className="w-3 h-3 stroke-[2.5]" />
+                                                )}
                                               </button>
                                             ) : (
                                               <span className="w-3 text-center text-zinc-300 dark:text-zinc-700 font-mono text-[9px]">

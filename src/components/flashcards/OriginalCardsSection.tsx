@@ -13,7 +13,9 @@ import {
   Sparkles,
   CheckCircle2,
   X,
-  GripVertical
+  GripVertical,
+  ChevronRight,
+  ChevronDown
 } from 'lucide-react';
 import {
   FlashcardItem,
@@ -474,11 +476,15 @@ export const OriginalCardsSection: React.FC<OriginalCardsSectionProps> = ({
                         e.stopPropagation();
                         toggleDeckExpand(node.fullPath);
                       }}
-                      className="w-5 h-5 rounded flex items-center justify-center font-mono font-bold text-xs text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
+                      className="w-5 h-5 rounded flex items-center justify-center text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white border border-zinc-200 dark:border-zinc-700/80 bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0"
                       title={isExpanded ? 'Recolher sub-baralhos' : 'Expandir sub-baralhos'}
                       aria-label={isExpanded ? 'Recolher sub-baralhos' : 'Expandir sub-baralhos'}
                     >
-                      {isExpanded ? '−' : '+'}
+                      {isExpanded ? (
+                        <ChevronDown className="w-3.5 h-3.5 stroke-[2.5]" />
+                      ) : (
+                        <ChevronRight className="w-3.5 h-3.5 stroke-[2.5]" />
+                      )}
                     </button>
                   ) : (
                     <span className="w-5 text-center text-zinc-300 dark:text-zinc-700 font-mono text-[10px] shrink-0">
