@@ -1639,6 +1639,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_volume') {
                 return (
                   <FigmaCardWrapper
+                    summary={`${activeMetrics.answered} questões`}
                     key={cardConfig.id}
                     config={cardConfig}
                     isCustomizing={isCustomizingOverview}
@@ -1682,6 +1683,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_taxa') {
                 return (
                   <FigmaCardWrapper
+                    summary={`${activeMetrics.correct} acertos`}
                     key={cardConfig.id}
                     config={cardConfig}
                     isCustomizing={isCustomizingOverview}
@@ -1722,6 +1724,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_media') {
                 return (
                   <FigmaCardWrapper
+                    summary={`${activeMetrics.accuracy.toFixed(1)}%`}
                     key={cardConfig.id}
                     config={cardConfig}
                     isCustomizing={isCustomizingOverview}
@@ -1778,6 +1781,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_ritmo') {
                 return (
                   <FigmaCardWrapper
+                    summary={`${Math.floor(activeMetrics.ritmoMedioSeconds / 60)}min ${Math.floor(activeMetrics.ritmoMedioSeconds % 60)}s`}
                     key={cardConfig.id}
                     config={cardConfig}
                     isCustomizing={isCustomizingOverview}
@@ -1826,6 +1830,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_evolucao') {
                 return (
                   <FigmaCardWrapper
+                    summary={`${activeMetrics.answered} questões no período`}
                     key={cardConfig.id}
                     config={cardConfig}
                     isCustomizing={isCustomizingOverview}
@@ -2003,6 +2008,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_habits') {
                 return (
                   <FigmaCardWrapper
+                    summary={`Meta diária · ${dailyGoal} questões`}
                     key={cardConfig.id}
                     config={cardConfig}
                     isCustomizing={isCustomizingOverview}

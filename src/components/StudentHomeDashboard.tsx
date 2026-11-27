@@ -3020,6 +3020,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_hero') {
             return (
               <FigmaCardWrapper
+                summary={`${formattedTodayStudy} de estudo hoje`}
                 key={cardConfig.id}
                 config={cardConfig}
                 className={!isCustomizing ? 'bento-stagger-item' : ''}
@@ -3238,6 +3239,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
             return (
               <FigmaCardWrapper
+                summary={`${stats.streakDays} dias · ${todayAnswered}/${dailyGoal} questões`}
                 key={cardConfig.id}
                 config={cardConfig}
                 className={`self-stretch ${!isCustomizing ? 'bento-stagger-item' : ''}`}
@@ -3340,7 +3342,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       </form>
                     ) : (
-                      <div className="pt-2 pb-1 flex items-center gap-3.5 sm:gap-5">
+                      <div className="sequence-progress pt-2 pb-1 flex items-center gap-3.5 sm:gap-5">
                         {/* Bloco Sequência à Esquerda: Número ao lado de Dia / Consecutivo empilhados */}
                         <div className="flex items-center gap-2.5 shrink-0">
                           <span className="text-3xl sm:text-4xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100 leading-none tabular-nums">
@@ -3504,6 +3506,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 : accentConfig.primaryHex;
             return (
               <FigmaCardWrapper
+                summary={periodStats.answered ? `${periodStats.rate.toFixed(1)}%` : "Sem questões no período"}
                 key={cardConfig.id}
                 config={cardConfig}
                 className={`self-stretch ${!isCustomizing ? 'bento-stagger-item' : ''}`}
@@ -3789,6 +3792,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_percentil') {
             return (
               <FigmaCardWrapper
+                summary={`P${effectivePercentile}`}
                 key={cardConfig.id}
                 config={cardConfig}
                 isCustomizing={isCustomizing}
@@ -3983,6 +3987,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_recomendacao') {
             return (
               <FigmaCardWrapper
+                summary={recommendedArea?.label ?? "Sem recomendação disponível"}
                 key={cardConfig.id}
                 config={cardConfig}
                 isCustomizing={isCustomizing}
@@ -4102,6 +4107,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_caderno_erros' || cardConfig.id === 'home_mnemonico') {
             return (
               <FigmaCardWrapper
+                summary={`${pendingErrorsCount} pendentes`}
                 key={cardConfig.id}
                 config={cardConfig}
                 isCustomizing={isCustomizing}
@@ -4233,6 +4239,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_agenda') {
             return (
               <FigmaCardWrapper
+                summary={`${todayAgendaActivities.length} atividades hoje`}
                 key={cardConfig.id}
                 config={cardConfig}
                 isCustomizing={isCustomizing}
@@ -4466,6 +4473,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               : { ...cardConfig, customHeight: undefined, maxHeight: undefined };
             return (
               <FigmaCardWrapper
+                summary={CLINICAL_TIPS_DATABASE[currentTipIndex]?.title ?? "Dica do dia"}
                 key={cardConfig.id}
                 config={dynamicTipConfig}
                 isCustomizing={isCustomizing}
@@ -4833,6 +4841,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_raiox_areas') {
             return (
               <FigmaCardWrapper
+                summary={`${totalCoreVolume} questões`}
                 key={cardConfig.id}
                 config={cardConfig}
                 isCustomizing={isCustomizing}
@@ -4933,6 +4942,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_retomada') {
             return (
               <FigmaCardWrapper
+                summary={`Continuar · ${studyResumeTab}`}
                 key={cardConfig.id}
                 config={cardConfig}
                 isCustomizing={isCustomizing}

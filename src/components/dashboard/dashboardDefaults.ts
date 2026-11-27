@@ -3,7 +3,7 @@ import { DashboardCardConfig } from '@/types/dashboardLayout';
 export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
   {
     id: 'home_hero',
-    title: 'Status & Alvo (Hero)',
+    title: 'Resumo de estudos',
     colSpan: 12,
     minColSpan: 6,
     minHeight: 65,
@@ -127,7 +127,7 @@ export const DEFAULT_STATS_OVERVIEW_CARDS: DashboardCardConfig[] = [
   },
   {
     id: 'stats_kpi_taxa',
-    title: 'Taxa de Acerto Global',
+    title: 'Acertos líquidos',
     colSpan: 3,
     minColSpan: 2,
     minHeight: 65,
@@ -138,7 +138,7 @@ export const DEFAULT_STATS_OVERVIEW_CARDS: DashboardCardConfig[] = [
   },
   {
     id: 'stats_kpi_media',
-    title: 'Média Diária',
+    title: 'Aproveitamento',
     colSpan: 3,
     minColSpan: 2,
     minHeight: 65,

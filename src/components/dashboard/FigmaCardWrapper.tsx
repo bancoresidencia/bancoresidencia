@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import {
   ChevronLeft,
   ChevronRight,
@@ -15,6 +15,7 @@ import { CardLayoutProvider } from './CardLayoutContext';
 import { useCardCanvas } from './CardCanvas';
 
 interface FigmaCardWrapperProps {
+  summary: string;
   config: DashboardCardConfig;
   isCustomizing: boolean;
   isSelected: boolean;
@@ -27,6 +28,7 @@ interface FigmaCardWrapperProps {
 
 export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   config,
+  summary,
   isCustomizing,
   isSelected,
   onSelect,
@@ -35,6 +37,45 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   children,
   className = '',
 }) => {
+  const wrapper = useRef<HTMLDivElement>(null);
+  const dialog = useRef<HTMLDialogElement>(null);
+  const [details, setDetails] = useState(false);
+  const [compact, setCompact] = useState(false);
+  const isKpi = config.id.startsWith('stats_kpi');
+  const complex = ['home_raiox_areas', 'home_retomada', 'stats_habits', 'stats_evolucao'].includes(config.id);
+  useLayoutEffect(() => {
+    const el = wrapper.current;
+    if (!el) return;
+    const check = () => {
+      const {width, height} = el.getBoundingClientRect();
+      const fixed = Boolean(el.style.height);
+      setCompact(width < (isKpi ? 208 : complex ? 300 : 238) ||
+        (fixed && height < (isKpi ? 132 : complex ? 290 : 190)));
+    };
+    check();
+    const observer = new ResizeObserver(check);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [isKpi, complex]);
+  // Cards with long labels or larger text can outgrow even the regular-size layout.
+  useLayoutEffect(() => {
+    if (compact || !wrapper.current?.style.height) return;
+    const content = wrapper.current.querySelector<HTMLElement>('.card-fluid-container');
+    if (!content) return;
+    const check = () => {
+      if (content.scrollHeight > content.clientHeight + 2 || content.scrollWidth > content.clientWidth + 2) {
+        setCompact(true);
+      }
+    };
+    check();
+    const observer = new ResizeObserver(check);
+    if (content.firstElementChild) observer.observe(content.firstElementChild);
+    return () => observer.disconnect();
+  }, [compact, summary, config.frames, config.customHeight]);
+  useLayoutEffect(() => {
+    if (details && compact) dialog.current?.showModal();
+    else if (details) setDetails(false);
+  }, [details, compact]);
   const canvas = useCardCanvas();
   const frame = canvas.frames[config.id];
   const isResizing = canvas.active === config.id;
@@ -125,6 +166,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
 
   return (
     <div
+      ref={wrapper}
       data-card-id={config.id}
       onPointerDown={handleCardPointerDown}
       onClickCapture={(e) => {
@@ -449,7 +491,22 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
             isCustomizing ? 'select-none pointer-events-none' : 'pointer-events-auto'
           }`}
         >
-          {children}
+          {compact ? (
+            <>
+              <button type="button" className="card-summary" aria-haspopup="dialog"
+                aria-label={config.title + ': ' + summary + '. Ver detalhes'}
+                onClick={() => setDetails(true)}>
+                <span>{config.title}</span>
+                <strong>{summary}</strong>
+                <small>Ver detalhes</small>
+              </button>
+              {details && <dialog ref={dialog} className="card-details" aria-label={config.title}
+                onClose={() => setDetails(false)}>
+                <button type="button" className="card-details-close" onClick={() => dialog.current?.close()}>Fechar</button>
+                {children}
+              </dialog>}
+            </>
+          ) : children}
         </div>
       </CardLayoutProvider>
     </div>
