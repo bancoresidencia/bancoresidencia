@@ -5,6 +5,26 @@ export type SavedRects = Partial<Record<ScreenLayout, CardRect>>;
 export type EdgeX = 'left' | 'right' | 'none';
 export type EdgeY = 'top' | 'bottom' | 'none';
 
+// Minimum usable width and height of the compact content, in CSS pixels.
+export const compactCardSizes: Record<string, readonly [number, number]> = {
+  home_hero: [182, 106],
+  home_meta_diaria: [202, 112],
+  home_aproveitamento: [192, 140],
+  home_percentil: [184, 104],
+  home_recomendacao: [188, 144],
+  home_caderno_erros: [176, 112],
+  home_agenda: [200, 136],
+  home_dicas: [208, 160],
+  home_raiox_areas: [184, 176],
+  home_retomada: [196, 156],
+  stats_kpi_volume: [156, 96],
+  stats_kpi_taxa: [160, 106],
+  stats_kpi_media: [166, 108],
+  stats_kpi_ritmo: [152, 96],
+  stats_evolucao: [202, 134],
+  stats_habits: [210, 134],
+};
+
 export function validRect(rect: CardRect | undefined): rect is CardRect {
   return !!rect && [rect.x, rect.y, rect.width, rect.height].every(Number.isFinite)
     && rect.x >= 0 && rect.y >= 0 && rect.width > 0 && rect.height > 0;

@@ -1385,13 +1385,6 @@ html.dark .canvas-grid-quadriculado {
 .mini-track i { display:block;height:100%;border-radius:inherit;background:var(--primary-color,#3b82f6); }
 .mini-track b {position:absolute;top:-2px;height:9px;width:2px;background:currentColor;}
 .mini-errors {background:#e57373;} .mini-errors i {background:#26a269;}
-.mini-gauge {position:relative;text-align:center;color:var(--primary-color,#3b82f6);}
-.mini-gauge svg {width:100%;height:clamp(32px,14cqw,74px);}
-.mini-gauge strong {position:absolute;bottom:0;left:0;right:0;}
-.mini-gauge .mini-track {display:none;}
-.figma-ultracompact-height .mini-gauge svg {display:none;}
-.figma-ultracompact-height .mini-gauge strong {position:static;}
-.figma-ultracompact-height .mini-gauge .mini-track {display:block;}
 .mini-week,.mini-hours {display:flex;gap:2px;}
 .mini-week span {flex:1;text-align:center;border-bottom:3px solid var(--card-border,#777);}
 .mini-week [data-active=true] {border-color:var(--primary-color,#3b82f6);}
@@ -1400,3 +1393,30 @@ html.dark .canvas-grid-quadriculado {
 .mini-areas {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,108px),1fr));gap:.2rem .6rem;}
 .mini-areas > div {display:grid;grid-template-columns:minmax(0,1fr) 20% auto;align-items:center;gap:3px;}
 .card-summary progress {width:100%;height:6px;accent-color:var(--primary-color,#3b82f6);}
+
+
+.mini-heading { font-family:var(--font-heading); }
+[data-card-id^="stats_kpi"] .mini-heading,
+:is([data-card-id="home_meta_diaria"],[data-card-id="home_aproveitamento"],[data-card-id="home_percentil"],[data-card-id="home_raiox_areas"],[data-card-id="home_caderno_erros"]) .mini-heading {
+  text-transform:uppercase; letter-spacing:.045em; font-size:.7rem;
+}
+.card-summary > strong { font-family:var(--font-heading); font-weight:750; font-variant-numeric:tabular-nums; }
+.mini-two-lines { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; }
+.card-summary .mini-action { min-height:32px; align-self:flex-start; font:inherit; font-weight:600; }
+.card-summary .mini-answer { min-height:36px; max-height:5em; overflow:auto; text-align:start; width:100%; }
+.mini-meter-label,.mini-hour-labels { display:flex; justify-content:space-between; align-items:baseline; gap:.4rem; }
+.mini-meter-label { margin-bottom:.4rem; }
+.mini-track b { transform:translateX(-50%); }
+.mini-areas { grid-template-columns:1fr; }
+@container (min-width:260px) {
+  .mini-areas { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@container (min-width:300px) {
+  :is([data-card-id="home_hero"],[data-card-id="home_agenda"],[data-card-id="home_percentil"],[data-card-id="home_recomendacao"],[data-card-id="stats_kpi_volume"],[data-card-id="stats_kpi_ritmo"]) .card-fluid-container > div.card-summary {
+    display:grid; grid-template-columns:auto minmax(0,1fr); align-items:center; align-content:center; gap:.35rem .75rem;
+  }
+  :is([data-card-id="home_hero"],[data-card-id="home_agenda"],[data-card-id="home_percentil"],[data-card-id="home_recomendacao"],[data-card-id="stats_kpi_volume"],[data-card-id="stats_kpi_ritmo"]) .mini-heading { grid-column:1/-1; }
+}
+@media (pointer:coarse) {
+  .card-summary .mini-action { min-height:44px; }
+}

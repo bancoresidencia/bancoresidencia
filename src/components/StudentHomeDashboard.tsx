@@ -3997,7 +3997,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             return (
               <FigmaCardWrapper
                 compactIcon={<Zap aria-hidden="true" />}
-                compactContent={<><strong>{recommendedArea?.label}</strong><button className="mini-action" onClick={()=>handlePracticeArea(recommendedArea.filterName)}>Praticar</button></>}
+                compactContent={<><strong className="mini-two-lines" title={recommendedArea?.label}>{recommendedArea?.label}</strong><button className="mini-action" onClick={()=>handlePracticeArea(recommendedArea.filterName)}>Praticar</button></>}
                 summary={recommendedArea?.label ?? "Sem recomendação disponível"}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -4257,7 +4257,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             return (
               <FigmaCardWrapper
                 compactIcon={<CalendarDays aria-hidden="true" />}
-                compactContent={<>{agendaSlot ? <><small>{agendaStatus} · {agendaSlot.startTime}</small><strong>{agendaSlot.title}</strong></> : <strong>Sem atividades hoje</strong>}</>}
+                compactContent={<>{agendaSlot ? <><small>{agendaStatus} · {agendaSlot.startTime}</small><strong className="mini-two-lines" title={agendaSlot.title}>{agendaSlot.title}</strong></> : <strong>Sem atividades hoje</strong>}</>}
                 summary={agendaSlot ? agendaStatus + " · " + agendaSlot.startTime + " · " + agendaSlot.title : "Sem atividades hoje"}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -4493,7 +4493,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             return (
               <FigmaCardWrapper
                 compactIcon={<Brain aria-hidden="true" />}
-                compactContent={<><small>{displayedClinicalTip.title}</small>{displayedClinicalTip.chips[0] && <button className="mini-action" onClick={e=>toggleRevealTipItem(0,e)}>{revealedTipItems[0] || revealAllTipItems ? displayedClinicalTip.chips[0].value : displayedClinicalTip.chips[0].label+" · Revelar"}</button>}</>}
+                compactContent={<><small className="mini-two-lines" title={displayedClinicalTip.title}>{displayedClinicalTip.title}</small>{displayedClinicalTip.chips[0] && <button className="mini-action mini-answer" aria-expanded={!!(revealedTipItems[0] || revealAllTipItems)} onClick={e=>toggleRevealTipItem(0,e)}>{revealedTipItems[0] || revealAllTipItems ? displayedClinicalTip.chips[0].value : displayedClinicalTip.chips[0].label+" · Revelar"}</button>}</>}
                 summary={CLINICAL_TIPS_DATABASE[currentTipIndex]?.title ?? "Dica do dia"}
                 key={cardConfig.id}
                 config={dynamicTipConfig}
@@ -4977,7 +4977,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             return (
               <FigmaCardWrapper
                 compactIcon={<FolderOpen aria-hidden="true" />}
-                compactContent={<><strong>{resumeTitle || "Escolher estudo"}</strong>{Boolean(resumeTotal) && <progress value={resumeDone ?? 0} max={resumeTotal}/>}<button className="mini-action" onClick={resumeStudy}>Continuar</button></>}
+                compactContent={<><strong className="mini-two-lines" title={resumeTitle || "Escolher estudo"}>{resumeTitle || "Escolher estudo"}</strong>{Boolean(resumeTotal) && <progress value={resumeDone ?? 0} max={resumeTotal}/>}<button className="mini-action" onClick={resumeStudy}>Continuar</button></>}
                 summary={`Continuar · ${studyResumeTab}`}
                 key={cardConfig.id}
                 config={cardConfig}

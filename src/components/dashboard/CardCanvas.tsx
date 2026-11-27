@@ -3,7 +3,7 @@ import React, { createContext, useContext, useEffect, useRef, useState, useSyncE
 import { cardAlignment } from './cardAlignment';
 import { FigmaSmartGuides, type AlignmentGuide } from './FigmaSmartGuides';
 import type { DashboardCardConfig } from '@/types/dashboardLayout';
-import { placeCard, resizeRect, validRect, type CardRects, type EdgeX, type EdgeY, type ScreenLayout } from './cardGeometry';
+import { compactCardSizes, placeCard, resizeRect, validRect, type CardRects, type EdgeX, type EdgeY, type ScreenLayout } from './cardGeometry';
 
 const screen = (): ScreenLayout => window.innerWidth < 768 ? 'phone' : window.innerWidth < 1024 ? 'tablet' : 'desktop';
 function subscribe(listener: () => void) {
@@ -65,6 +65,7 @@ export function CardCanvas({ cards, save, className, children, editing=false }: 
     const {original,width,gap} = snapshot();
     const base = original[card.id];
     if (!base || !width) return;
+    const [minWidth, minHeight] = compactCardSizes[card.id] ?? [168, 104];
     const origin = grid.getBoundingClientRect();
     const sx = e.clientX-origin.left, sy = e.clientY-origin.top, pointer = e.pointerId;
     let next: CardRects | null = null;
@@ -74,10 +75,6 @@ export function CardCanvas({ cards, save, className, children, editing=false }: 
       let dx = event.clientX-bounds.left-sx, dy = event.clientY-bounds.top-sy;
       if (!next && Math.hypot(dx,dy) < 3) return;
       if (event.shiftKey) { dx = Math.round(dx/8)*8; dy = Math.round(dy/8)*8; }
-      const isGauge = card.id === 'home_aproveitamento';
-      const isKpi = card.id.startsWith('stats_kpi');
-      const minWidth = isGauge ? 192 : isKpi ? 144 : 168;
-      const minHeight = isGauge ? 132 : isKpi ? 84 : 104;
       const project = (dx:number,dy:number) => resizeRect(base,dx,dy,x,y,width,minWidth,Math.max(card.minHeight ?? 65, minHeight),Math.max(base.height,card.maxHeight ?? 1200));
       let rect = project(dx,dy);
       if(alignment!=='free'){
@@ -115,8 +112,9 @@ export function CardCanvas({ cards, save, className, children, editing=false }: 
   function preset(id: string, span?: number, height?: number) {
     const {original,width,gap} = snapshot();
     const r = {...original[id]};
+    const [minWidth, minHeight] = compactCardSizes[id] ?? [168, 104];
     if(span) {
-      r.width = (width+gap)*span/12-gap;
+      r.width = Math.min(width, Math.max(minWidth, (width+gap)*span/12-gap));
       r.x = Math.min(r.x,width-r.width);
     } else {
       const el = Array.from(ref.current!.children).find(node => (node as HTMLElement).dataset.cardId === id) as HTMLElement;
@@ -137,6 +135,7 @@ export function CardCanvas({ cards, save, className, children, editing=false }: 
         }
       }
     }
+    r.height = Math.max(minHeight, r.height);
     save(mode,normalized(placeCard(original,id,r,gap),width));
   }
   function move(id: string, direction: 'up'|'down') {

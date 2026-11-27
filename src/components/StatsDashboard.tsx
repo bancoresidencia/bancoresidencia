@@ -1841,7 +1841,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 return (
                   <FigmaCardWrapper
                     compactIcon={<Activity aria-hidden="true" />}
-                    compactContent={<><CompactTrend values={activeMetrics.chartData.map(d=>d.answered)}/><small>{activeMetrics.answered} questões no período</small></>}
+                    compactContent={<><CompactTrend values={activeMetrics.chartData.map(d=>d.answered)}/><small>{activeMetrics.label} · {activeMetrics.answered} questões</small></>}
                     summary={`${activeMetrics.answered} questões no período`}
                     key={cardConfig.id}
                     config={cardConfig}
