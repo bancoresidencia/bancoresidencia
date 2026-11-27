@@ -1348,3 +1348,12 @@ html.dark .canvas-grid-quadriculado {
   min-height: 0; overflow: auto !important;
 }
 .card-summary:focus-visible { outline: 2px solid currentColor; outline-offset: -3px; }
+
+@container (max-width: 320px) {
+  .card-details .flex.items-center:has(> button),
+  .card-details .flex.items-center.justify-between {
+    flex-wrap: wrap;
+    max-inline-size: 100%;
+    row-gap: .25rem;
+  }
+}
