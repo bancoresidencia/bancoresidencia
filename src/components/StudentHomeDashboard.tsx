@@ -3021,7 +3021,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_hero') {
             return (
               <FigmaCardWrapper
-                compactContent={<><strong>{formattedTodayStudy}</strong><small>{targetDaysLeft} dias para {targetExamName}</small></>}
+                compactContent={<><strong>{formattedTodayStudy}</strong><small>{targetDaysLeft} {targetDaysLeft === 1 ? "dia" : "dias"} para {targetExamName}</small></>}
                 summary={`${formattedTodayStudy} de estudo hoje`}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -3241,7 +3241,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
             return (
               <FigmaCardWrapper
-                compactContent={<><strong>{stats.streakDays} dias consecutivos</strong><div className="mini-week">{weeklyDays.map(d=><span key={d.dateFormatted} title={d.dateFormatted+" · "+d.answered+" questões"} data-active={d.answered>0}>{d.label}</span>)}</div></>}
+                compactContent={<><strong>{stats.streakDays} {stats.streakDays === 1 ? "dia consecutivo" : "dias consecutivos"}</strong><div className="mini-week">{weeklyDays.map(d=><span key={d.dateFormatted} title={d.dateFormatted+" · "+d.answered+" questões"} data-active={d.answered>0}>{d.label}</span>)}</div></>}
                 summary={`${stats.streakDays} dias · ${todayAnswered}/${dailyGoal} questões`}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -4251,7 +4251,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             return (
               <FigmaCardWrapper
                 compactContent={<>{agendaSlot ? <><small>{agendaStatus} · {agendaSlot.startTime}</small><strong>{agendaSlot.title}</strong></> : <strong>Sem atividades hoje</strong>}</>}
-                summary={`${todayAgendaActivities.length} atividades hoje`}
+                summary={agendaSlot ? agendaStatus + " · " + agendaSlot.startTime + " · " + agendaSlot.title : "Sem atividades hoje"}
                 key={cardConfig.id}
                 config={cardConfig}
                 isCustomizing={isCustomizing}
