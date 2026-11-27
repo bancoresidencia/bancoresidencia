@@ -62,6 +62,7 @@ import { useDashboardLayout } from '@/hooks/useDashboardLayout';
 import { DEFAULT_STATS_OVERVIEW_CARDS } from './dashboard/dashboardDefaults';
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
 import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
+import { CompactMeter, CompactTrend, CompactHours } from './dashboard/CompactChart';
 import { CardCanvas } from './dashboard/CardCanvas';
 import { useStudyTimer } from '@/context/StudyTimerContext';
 import { StudyTimeView } from './dashboard/StudyTimeView';
@@ -929,6 +930,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       ritmoProgressPct,
       chartData,
       dailyRawItems,
+      hours: filteredAnswers.reduce<number[]>((bins, answer) => { if(answer.timestamp) bins[new Date(answer.timestamp).getHours()]++; return bins; }, Array(24).fill(0)),
       filteredAnswers
     };
   }, [filters, stats, userAnswers, user, activeStudySessions]);
@@ -1631,7 +1633,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           )}
 
           {/* Grid Principal Reorganizável Estilo Figma */}
-          <CardCanvas
+          <CardCanvas editing={isCustomizingOverview}
             cards={visibleOverviewCards} save={saveFrames}
             className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-auto grid-flow-dense relative items-stretch"
           >
@@ -1639,6 +1641,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_volume') {
                 return (
                   <FigmaCardWrapper
+                    compactContent={<><strong>{activeMetrics.answered} questões</strong><small>{activeMetrics.ineditas} inéditas</small></>}
                     summary={`${activeMetrics.answered} questões`}
                     key={cardConfig.id}
                     config={cardConfig}
@@ -1683,6 +1686,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_taxa') {
                 return (
                   <FigmaCardWrapper
+                    compactContent={<><strong>{activeMetrics.correct} acertos</strong><div className="mini-track mini-errors" title={activeMetrics.incorrect+" erros"}><i style={{width:(100*activeMetrics.correct/Math.max(1,activeMetrics.answered))+"%"}}/></div></>}
                     summary={`${activeMetrics.correct} acertos`}
                     key={cardConfig.id}
                     config={cardConfig}
@@ -1724,6 +1728,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_media') {
                 return (
                   <FigmaCardWrapper
+                    compactContent={<CompactMeter value={activeMetrics.accuracy} goal={80}/>}
                     summary={`${activeMetrics.accuracy.toFixed(1)}%`}
                     key={cardConfig.id}
                     config={cardConfig}
@@ -1781,6 +1786,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_ritmo') {
                 return (
                   <FigmaCardWrapper
+                    compactContent={<><strong>◷ {Math.floor(activeMetrics.ritmoMedioSeconds/60)}min {Math.floor(activeMetrics.ritmoMedioSeconds%60)}s</strong><small>por questão</small></>}
                     summary={`${Math.floor(activeMetrics.ritmoMedioSeconds / 60)}min ${Math.floor(activeMetrics.ritmoMedioSeconds % 60)}s`}
                     key={cardConfig.id}
                     config={cardConfig}
@@ -1830,6 +1836,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_evolucao') {
                 return (
                   <FigmaCardWrapper
+                    compactContent={<><CompactTrend values={activeMetrics.chartData.map(d=>d.answered)}/><small>{activeMetrics.answered} questões no período</small></>}
                     summary={`${activeMetrics.answered} questões no período`}
                     key={cardConfig.id}
                     config={cardConfig}
@@ -2008,6 +2015,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_habits') {
                 return (
                   <FigmaCardWrapper
+                    compactContent={<CompactHours hours={activeMetrics.hours}/>}
                     summary={`Meta diária · ${dailyGoal} questões`}
                     key={cardConfig.id}
                     config={cardConfig}

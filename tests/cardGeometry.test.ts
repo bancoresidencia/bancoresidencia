@@ -21,3 +21,15 @@ assert.deepEqual(docked.b, b);
 assert.deepEqual(docked.c, { ...c, y: 100 });
 assert.deepEqual(placeCard(original, 'a', a, 20), original);
 console.log('Card geometry checks passed');
+
+// The free-moving center should align before release just as in the saved frame.
+const {cardAlignment} = await import('../src/components/dashboard/cardAlignment.ts');
+const center = cardAlignment({}, 'a', {x:149,y:20,width:100,height:80}, 400, 500, 'none', 'none');
+assert.equal(center.delta.x, 1);
+const row = { a, b: {...b, x:500} };
+const gap = cardAlignment(row, 'c', {x:341,y:0,width:100,height:180},800,600,'none','none');
+assert.equal(gap.delta.x,-1);
+assert.ok(gap.guides.some(line=>line.label==='Espaços iguais'));
+const edge = cardAlignment({a,b}, 'a', {...a,width:278},580,500,'right','none');
+assert.equal(edge.delta.x,2);
+assert.equal(edge.delta.y,0);

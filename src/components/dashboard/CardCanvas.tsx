@@ -1,5 +1,7 @@
 'use client';
 import React, { createContext, useContext, useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import { cardAlignment } from './cardAlignment';
+import { FigmaSmartGuides, type AlignmentGuide } from './FigmaSmartGuides';
 import type { DashboardCardConfig } from '@/types/dashboardLayout';
 import { placeCard, resizeRect, validRect, type CardRects, type EdgeX, type EdgeY, type ScreenLayout } from './cardGeometry';
 
@@ -23,7 +25,8 @@ export function useCardCanvas() {
   return canvas;
 }
 
-export function CardCanvas({ cards, save, className, children }: {
+export function CardCanvas({ cards, save, className, children, editing=false }: {
+  editing?: boolean;
   cards: DashboardCardConfig[];
   save: (screen: ScreenLayout, frames: CardRects) => void;
   className: string;
@@ -32,6 +35,8 @@ export function CardCanvas({ cards, save, className, children }: {
   const ref = useRef<HTMLDivElement>(null);
   const release = useRef<(() => void) | null>(null);
   const mode = useSyncExternalStore(subscribe, screen, (): ScreenLayout => 'desktop');
+  const [alignment,setAlignment] = useState("guides");
+  const [lines,setLines] = useState<AlignmentGuide[]>([]);
   const [preview, setPreview] = useState<{id: string; frames: CardRects} | null>(null);
   useEffect(() => () => release.current?.(), [mode]);
   const stored: CardRects = {};
@@ -70,7 +75,13 @@ export function CardCanvas({ cards, save, className, children }: {
       if (!next && Math.hypot(dx,dy) < 3) return;
       if (event.shiftKey) { dx = Math.round(dx/8)*8; dy = Math.round(dy/8)*8; }
       const minWidth = card.id.startsWith('stats_kpi') ? 128 : 168;
-      const rect = resizeRect(base,dx,dy,x,y,width,minWidth,Math.max(card.minHeight ?? 65, card.id.startsWith('stats_kpi') ? 72 : 104),Math.max(base.height,card.maxHeight ?? 1200));
+      const project = (dx:number,dy:number) => resizeRect(base,dx,dy,x,y,width,minWidth,Math.max(card.minHeight ?? 65, card.id.startsWith('stats_kpi') ? 72 : 104),Math.max(base.height,card.maxHeight ?? 1200));
+      let rect = project(dx,dy);
+      if(alignment!=='free'){
+        const {delta,guides}=cardAlignment(original,card.id,rect,width,origin.height,x,y);
+        if(alignment==='snap') rect=project(dx+delta.x,dy+delta.y);
+        setLines(guides);
+      }
       next = normalized(placeCard(original,card.id,rect,gap),width);
       setPreview({id:card.id, frames:next});
     }
@@ -80,6 +91,7 @@ export function CardCanvas({ cards, save, className, children }: {
       window.removeEventListener('pointercancel',cancel);
       window.removeEventListener('blur',cancel);
       window.removeEventListener('keydown',escape);
+      setLines([]);
       setPreview(null);
       release.current = null;
     }
@@ -136,7 +148,11 @@ export function CardCanvas({ cards, save, className, children }: {
   const bottom = Math.max(0,...Object.values(frames).map(r => r.y+r.height));
   const partial = cards.some(c=>!frames[c.id]);
   return <Canvas.Provider value={{frames,active:preview?.id ?? null,start,preset,move}}>
+    {editing && <label className="mini-guide-mode">Alinhamento <select aria-label="Alinhamento" value={alignment} onChange={e=>setAlignment(e.target.value)}>
+      <option value="free">Livre</option><option value="guides">Mostrar guias</option><option value="snap">Mostrar guias e encaixar</option>
+    </select></label>}
     <div ref={ref} className={className} style={{minHeight:bottom || undefined,paddingTop:bottom && partial ? bottom+16 : undefined}}>
+      {lines.length>0 && <FigmaSmartGuides guides={lines}/>}
       {children}
     </div>
   </Canvas.Provider>;

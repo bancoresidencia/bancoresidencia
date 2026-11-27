@@ -1370,3 +1370,28 @@ html.dark .canvas-grid-quadriculado {
     overflow-wrap: anywhere;
   }
 }
+
+.mini-guide-mode { display:flex; align-items:center; gap:.5rem; font-size:.8rem; }
+.mini-guide-mode select,.mini-action { border:1px solid var(--card-border,#777); border-radius:.5rem; padding:.25rem .5rem; }
+.figma-card-wrapper .card-fluid-container > div.card-summary { display:flex; flex-direction:column; align-items:stretch; justify-content:safe center; gap:.2rem; min-height:0; overflow:auto !important; }
+.mini-details { font-size:.7rem; text-decoration:underline; align-self:flex-start; }
+.mini-meter,.mini-areas,.mini-week,.mini-hours,.mini-trend {width:100%;}
+.mini-track { position:relative;height:5px;border-radius:4px;background:var(--card-border,#666); }
+.mini-track i { display:block;height:100%;border-radius:inherit;background:var(--primary-color,#3b82f6); }
+.mini-track b {position:absolute;top:-2px;height:9px;width:2px;background:currentColor;}
+.mini-errors {background:#e57373;} .mini-errors i {background:#26a269;}
+.mini-gauge {position:relative;text-align:center;color:var(--primary-color,#3b82f6);}
+.mini-gauge svg {width:100%;height:clamp(32px,14cqw,74px);}
+.mini-gauge strong {position:absolute;bottom:0;left:0;right:0;}
+.mini-gauge .mini-track {display:none;}
+.figma-ultracompact-height .mini-gauge svg {display:none;}
+.figma-ultracompact-height .mini-gauge strong {position:static;}
+.figma-ultracompact-height .mini-gauge .mini-track {display:block;}
+.mini-week,.mini-hours {display:flex;gap:2px;}
+.mini-week span {flex:1;text-align:center;border-bottom:3px solid var(--card-border,#777);}
+.mini-week [data-active=true] {border-color:var(--primary-color,#3b82f6);}
+.mini-hours i {height:14px;flex:1;background:var(--primary-color,#3b82f6);}
+.mini-trend {height:32px;color:var(--primary-color,#3b82f6);}
+.mini-areas {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,108px),1fr));gap:.2rem .6rem;}
+.mini-areas > div {display:grid;grid-template-columns:minmax(0,1fr) 20% auto;align-items:center;gap:3px;}
+.card-summary progress {width:100%;height:6px;accent-color:var(--primary-color,#3b82f6);}

@@ -99,6 +99,7 @@ import { CLINICAL_TIPS_DATABASE, ClinicalTipItem } from '@/data/clinicalTipsData
 import { CRITICAL_SUBTOPICS_MAP, DETAILED_MNEMONICS_MAP } from '@/data/dashboardMnemonicsData';
 
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
+import { CompactMeter } from './dashboard/CompactChart';
 import { CardCanvas } from './dashboard/CardCanvas';
 import { DailyScheduleSlot, TimelineFilter } from './dashboard/scheduleTypes';
 
@@ -3009,7 +3010,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       )}
 
       {/* Grid Principal Reorganizável Estilo Figma */}
-      <CardCanvas
+      <CardCanvas editing={isCustomizing}
         cards={visibleCards} save={saveFrames}
         className="grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-3.5 auto-rows-auto grid-flow-dense relative items-start"
       >
@@ -3020,6 +3021,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_hero') {
             return (
               <FigmaCardWrapper
+                compactContent={<><strong>{formattedTodayStudy}</strong><small>{targetDaysLeft} dias para {targetExamName}</small></>}
                 summary={`${formattedTodayStudy} de estudo hoje`}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -3239,6 +3241,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
             return (
               <FigmaCardWrapper
+                compactContent={<><strong>{stats.streakDays} dias consecutivos</strong><div className="mini-week">{weeklyDays.map(d=><span key={d.dateFormatted} title={d.dateFormatted+" · "+d.answered+" questões"} data-active={d.answered>0}>{d.label}</span>)}</div></>}
                 summary={`${stats.streakDays} dias · ${todayAnswered}/${dailyGoal} questões`}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -3506,6 +3509,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 : accentConfig.primaryHex;
             return (
               <FigmaCardWrapper
+                compactContent={periodStats.answered ? <CompactMeter gauge value={periodStats.rate}/> : <strong>Sem questões no período</strong>}
                 summary={periodStats.answered ? `${periodStats.rate.toFixed(1)}%` : "Sem questões no período"}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -3792,6 +3796,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_percentil') {
             return (
               <FigmaCardWrapper
+                compactContent={<><strong>P{effectivePercentile}</strong><div className="mini-track" aria-label={"Percentil "+effectivePercentile}><b style={{left:effectivePercentile+"%"}}/></div></>}
                 summary={`P${effectivePercentile}`}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -3987,6 +3992,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_recomendacao') {
             return (
               <FigmaCardWrapper
+                compactContent={<><strong>{recommendedArea?.label}</strong><button className="mini-action" onClick={()=>handlePracticeArea(recommendedArea.filterName)}>Praticar</button></>}
                 summary={recommendedArea?.label ?? "Sem recomendação disponível"}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -4107,6 +4113,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_caderno_erros' || cardConfig.id === 'home_mnemonico') {
             return (
               <FigmaCardWrapper
+                compactContent={<><strong>{pendingErrorsCount ? pendingErrorsCount+" pendentes" : "Em dia"}</strong>{pendingErrorsCount>0 && <small>{mostCriticalArea?.name}</small>}</>}
                 summary={`${pendingErrorsCount} pendentes`}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -4237,8 +4244,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             );
           }
           if (cardConfig.id === 'home_agenda') {
+            const now = new Date();
+            const minute = now.getHours()*60+now.getMinutes();
+            const agendaSlot = todayAgendaActivities.find(a=>a.endMinutes>minute) ?? ((currentPeriodInfo.status === "em_andamento" || currentPeriodInfo.status === "proximo") ? currentPeriodInfo.slot : null) ?? todayAgendaActivities.at(-1);
+            const agendaStatus = agendaSlot && agendaSlot.endMinutes<=minute ? 'Concluída' : agendaSlot && agendaSlot.startMinutes<=minute ? 'Em andamento' : 'Próxima';
             return (
               <FigmaCardWrapper
+                compactContent={<>{agendaSlot ? <><small>{agendaStatus} · {agendaSlot.startTime}</small><strong>{agendaSlot.title}</strong></> : <strong>Sem atividades hoje</strong>}</>}
                 summary={`${todayAgendaActivities.length} atividades hoje`}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -4473,6 +4485,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               : { ...cardConfig, customHeight: undefined, maxHeight: undefined };
             return (
               <FigmaCardWrapper
+                compactContent={<><small>{displayedClinicalTip.title}</small>{displayedClinicalTip.chips[0] && <button className="mini-action" onClick={e=>toggleRevealTipItem(0,e)}>{revealedTipItems[0] || revealAllTipItems ? displayedClinicalTip.chips[0].value : displayedClinicalTip.chips[0].label+" · Revelar"}</button>}</>}
                 summary={CLINICAL_TIPS_DATABASE[currentTipIndex]?.title ?? "Dica do dia"}
                 key={cardConfig.id}
                 config={dynamicTipConfig}
@@ -4841,6 +4854,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_raiox_areas') {
             return (
               <FigmaCardWrapper
+                compactContent={<div className="mini-areas">{donutData.map(a=><div key={a.id} title={a.name}><small>{a.name.split(" ").map(word=>word.slice(0,3)).join(" ")}</small><div className="mini-track"><i style={{width:(100*a.realValue/Math.max(1,...donutData.map(d=>d.realValue)))+"%",background:a.cor}}/></div><small>{a.hasData?a.realValue:"—"}</small></div>)}</div>}
                 summary={`${totalCoreVolume} questões`}
                 key={cardConfig.id}
                 config={cardConfig}
@@ -4940,8 +4954,20 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             );
           }
           if (cardConfig.id === 'home_retomada') {
+            const list = activeCaderno || recentList || allLists[0];
+            const exam = studyResumeTab==='provas' ? currentOfficialExam : currentMockExam;
+            const resumeTitle = studyResumeTab==='cadernos' ? list?.title : studyResumeTab==='provas' ? (currentOfficialExam ? currentOfficialExam.institution+' '+currentOfficialExam.year : 'ENARE 2025') : currentMockExam?.title;
+            const resumeDone = studyResumeTab==='cadernos' ? list?.completedQuestions : exam?.answeredCount;
+            const resumeTotal = studyResumeTab==='cadernos' ? list?.totalQuestions : exam?.totalQuestions;
+            const resumeStudy = () => {
+              if(studyResumeTab==='cadernos') return list ? onContinueList(list) : onNavigate('listas');
+              if(studyResumeTab==='provas') return handleLaunchOfficialExam(currentOfficialExam?.institution || 'ENARE',currentOfficialExam?.year || 2025,currentOfficialExam?.totalQuestions || 100);
+              if(currentMockExam) handleLaunchMockExam(currentMockExam);
+              else onNavigate('simulados');
+            };
             return (
               <FigmaCardWrapper
+                compactContent={<><strong>{resumeTitle || "Escolher estudo"}</strong>{Boolean(resumeTotal) && <progress value={resumeDone ?? 0} max={resumeTotal}/>}<button className="mini-action" onClick={resumeStudy}>Continuar</button></>}
                 summary={`Continuar · ${studyResumeTab}`}
                 key={cardConfig.id}
                 config={cardConfig}

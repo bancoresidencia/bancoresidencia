@@ -16,6 +16,7 @@ import { useCardCanvas } from './CardCanvas';
 
 interface FigmaCardWrapperProps {
   summary: string;
+  compactContent?: React.ReactNode;
   config: DashboardCardConfig;
   isCustomizing: boolean;
   isSelected: boolean;
@@ -29,6 +30,7 @@ interface FigmaCardWrapperProps {
 export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   config,
   summary,
+  compactContent,
   isCustomizing,
   isSelected,
   onSelect,
@@ -493,13 +495,13 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
         >
           {compact ? (
             <>
-              <button type="button" className="card-summary" aria-haspopup="dialog"
-                aria-label={config.title + ': ' + summary + '. Ver detalhes'}
-                onClick={() => setDetails(true)}>
+              <div className="card-summary">
                 <span>{config.title}</span>
-                <strong>{summary}</strong>
-                <small>Ver detalhes</small>
-              </button>
+                {compactContent ?? <strong>{summary}</strong>}
+                <button className="mini-details" type="button" aria-haspopup="dialog"
+                  aria-label={config.title + ': ' + summary + '. Ver detalhes'}
+                  onClick={() => setDetails(true)}>Ver detalhes</button>
+              </div>
               {details && <dialog ref={dialog} className="card-details" aria-label={config.title}
                 onClose={() => setDetails(false)}>
                 <button type="button" className="card-details-close" onClick={() => dialog.current?.close()}>Fechar</button>
