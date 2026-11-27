@@ -1357,3 +1357,16 @@ html.dark .canvas-grid-quadriculado {
     row-gap: .25rem;
   }
 }
+
+@container (max-width: 320px) {
+  .card-details .recharts-tooltip-wrapper {
+    inset-inline: 0 !important;
+    transform: none !important;
+    max-width: 100%;
+  }
+  .card-details .recharts-tooltip-wrapper > div {
+    min-width: 0 !important;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
