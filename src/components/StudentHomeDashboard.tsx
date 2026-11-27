@@ -99,7 +99,6 @@ import { CLINICAL_TIPS_DATABASE, ClinicalTipItem } from '@/data/clinicalTipsData
 import { CRITICAL_SUBTOPICS_MAP, DETAILED_MNEMONICS_MAP } from '@/data/dashboardMnemonicsData';
 
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
-import { CompactMeter } from './dashboard/CompactChart';
 import { CardCanvas } from './dashboard/CardCanvas';
 import { DailyScheduleSlot, TimelineFilter } from './dashboard/scheduleTypes';
 
@@ -3021,6 +3020,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_hero') {
             return (
               <FigmaCardWrapper
+                compactIcon={<GreetingIcon aria-hidden="true" />}
                 compactContent={<><strong>{formattedTodayStudy}</strong><small>{targetDaysLeft} {targetDaysLeft === 1 ? "dia" : "dias"} para {targetExamName}</small></>}
                 summary={`${formattedTodayStudy} de estudo hoje`}
                 key={cardConfig.id}
@@ -3241,6 +3241,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
             return (
               <FigmaCardWrapper
+                compactIcon={<Flame aria-hidden="true" />}
                 compactContent={<><strong>{stats.streakDays} {stats.streakDays === 1 ? "dia consecutivo" : "dias consecutivos"}</strong><div className="mini-week">{weeklyDays.map(d=><span key={d.dateFormatted} title={d.dateFormatted+" · "+d.answered+" questões"} data-active={d.answered>0}>{d.label}</span>)}</div></>}
                 summary={`${stats.streakDays} dias · ${todayAnswered}/${dailyGoal} questões`}
                 key={cardConfig.id}
@@ -3507,78 +3508,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               mode === 'dark'
                 ? 'color-mix(in srgb, var(--primary-color, #2563eb) 65%, #ffffff)'
                 : accentConfig.primaryHex;
-            return (
-              <FigmaCardWrapper
-                compactContent={periodStats.answered ? <CompactMeter gauge value={periodStats.rate}/> : <strong>Sem questões no período</strong>}
-                summary={periodStats.answered ? `${periodStats.rate.toFixed(1)}%` : "Sem questões no período"}
-                key={cardConfig.id}
-                config={cardConfig}
-                className={`self-stretch ${!isCustomizing ? 'bento-stagger-item' : ''}`}
-                isCustomizing={isCustomizing}
-                isSelected={selectedCardId === cardConfig.id}
-                onSelect={(id) => setSelectedCardId(id)}
-                onUpdateSettings={updateCardSettings}
-                onToggleVisibility={toggleVisibility}
-              >
-                {/* Card 2: Aproveitamento com Seletor Deslizante e Estado Zero Fiel */}
-                <div
-                  style={staggerStyle}
-                  className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full"
-                >
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div
-                          className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
-                          style={{
-                            backgroundColor: accentConfig.bgRgba,
-                            color: accentConfig.primaryHex
-                          }}
-                        >
-                          <Award className="w-4 h-4" />
-                        </div>
-                        <h2 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
-                          Aproveitamento
-                        </h2>
-                      </div>
-
-                      {/* Seletor Interativo de Período com Sliding Pill 60fps */}
-                      <div className="relative grid grid-cols-2 bg-zinc-100 dark:bg-zinc-800/90 p-0.5 rounded-lg border border-zinc-200/70 dark:border-zinc-700/60 min-w-[104px]">
-                        <span
-                          aria-hidden="true"
-                          className={`pointer-events-none absolute inset-y-0.5 left-0.5 w-[calc(50%-2px)] rounded-md bg-white dark:bg-zinc-700 shadow-2xs transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                            accuracyPeriod === '7d' ? 'translate-x-full' : 'translate-x-0'
-                          }`}
-                        />
-                        <button
-                          type="button"
-                          onClick={() => setAccuracyPeriod('geral')}
-                          className={`relative z-10 text-[10px] px-2 py-0.5 rounded-md font-bold transition-colors cursor-pointer text-center ${
-                            accuracyPeriod === 'geral'
-                              ? ''
-                              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200'
-                          }`}
-                          style={accuracyPeriod === 'geral' ? { color: activePillColor } : undefined}
-                        >
-                          Geral
-                        </button>
-                        <button
-                          type="button"
-                          onClick={() => setAccuracyPeriod('7d')}
-                          className={`relative z-10 text-[10px] px-2 py-0.5 rounded-md font-bold transition-colors cursor-pointer text-center ${
-                            accuracyPeriod === '7d'
-                              ? ''
-                              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200'
-                          }`}
-                          style={accuracyPeriod === '7d' ? { color: activePillColor } : undefined}
-                        >
-                          7 Dias
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Velocímetro Radial de Precisão (Semicírculo Gauge) */}
-                    {(() => {
+            const accuracyGauge = (() => {
                       const pct = Math.max(0, Math.min(100, periodStats.answered > 0 ? animatedAccuracy : 0));
                       const radius = 62;
                       const cx = 95;
@@ -3710,7 +3640,80 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
                         </div>
                       );
-                    })()}
+                    })();
+            return (
+              <FigmaCardWrapper
+                compactIcon={<Award aria-hidden="true" />}
+                compactContent={periodStats.answered ? <div className="mini-original-gauge">{accuracyGauge}</div> : <strong>Sem questões no período</strong>}
+                summary={periodStats.answered ? `${periodStats.rate.toFixed(1)}%` : "Sem questões no período"}
+                key={cardConfig.id}
+                config={cardConfig}
+                className={`self-stretch ${!isCustomizing ? 'bento-stagger-item' : ''}`}
+                isCustomizing={isCustomizing}
+                isSelected={selectedCardId === cardConfig.id}
+                onSelect={(id) => setSelectedCardId(id)}
+                onUpdateSettings={updateCardSettings}
+                onToggleVisibility={toggleVisibility}
+              >
+                {/* Card 2: Aproveitamento com Seletor Deslizante e Estado Zero Fiel */}
+                <div
+                  style={staggerStyle}
+                  className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-3.5 sm:p-4 shadow-xs flex flex-col justify-between min-h-0 h-full"
+                >
+                  <div className="space-y-2">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div
+                          className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
+                          style={{
+                            backgroundColor: accentConfig.bgRgba,
+                            color: accentConfig.primaryHex
+                          }}
+                        >
+                          <Award className="w-4 h-4" />
+                        </div>
+                        <h2 className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                          Aproveitamento
+                        </h2>
+                      </div>
+
+                      {/* Seletor Interativo de Período com Sliding Pill 60fps */}
+                      <div className="relative grid grid-cols-2 bg-zinc-100 dark:bg-zinc-800/90 p-0.5 rounded-lg border border-zinc-200/70 dark:border-zinc-700/60 min-w-[104px]">
+                        <span
+                          aria-hidden="true"
+                          className={`pointer-events-none absolute inset-y-0.5 left-0.5 w-[calc(50%-2px)] rounded-md bg-white dark:bg-zinc-700 shadow-2xs transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                            accuracyPeriod === '7d' ? 'translate-x-full' : 'translate-x-0'
+                          }`}
+                        />
+                        <button
+                          type="button"
+                          onClick={() => setAccuracyPeriod('geral')}
+                          className={`relative z-10 text-[10px] px-2 py-0.5 rounded-md font-bold transition-colors cursor-pointer text-center ${
+                            accuracyPeriod === 'geral'
+                              ? ''
+                              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200'
+                          }`}
+                          style={accuracyPeriod === 'geral' ? { color: activePillColor } : undefined}
+                        >
+                          Geral
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setAccuracyPeriod('7d')}
+                          className={`relative z-10 text-[10px] px-2 py-0.5 rounded-md font-bold transition-colors cursor-pointer text-center ${
+                            accuracyPeriod === '7d'
+                              ? ''
+                              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200'
+                          }`}
+                          style={accuracyPeriod === '7d' ? { color: activePillColor } : undefined}
+                        >
+                          7 Dias
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* Velocímetro Radial de Precisão (Semicírculo Gauge) */}
+                    {accuracyGauge}
 
                   {/* Desempenho por Dificuldade (Sem números fictícios quando 0 questões) */}
                   <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5">
@@ -3796,6 +3799,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_percentil') {
             return (
               <FigmaCardWrapper
+                compactIcon={<Medal aria-hidden="true" />}
                 compactContent={<><strong>P{effectivePercentile}</strong><div className="mini-track" aria-label={"Percentil "+effectivePercentile}><b style={{left:effectivePercentile+"%"}}/></div></>}
                 summary={`P${effectivePercentile}`}
                 key={cardConfig.id}
@@ -3992,6 +3996,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_recomendacao') {
             return (
               <FigmaCardWrapper
+                compactIcon={<Zap aria-hidden="true" />}
                 compactContent={<><strong>{recommendedArea?.label}</strong><button className="mini-action" onClick={()=>handlePracticeArea(recommendedArea.filterName)}>Praticar</button></>}
                 summary={recommendedArea?.label ?? "Sem recomendação disponível"}
                 key={cardConfig.id}
@@ -4113,6 +4118,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_caderno_erros' || cardConfig.id === 'home_mnemonico') {
             return (
               <FigmaCardWrapper
+                compactIcon={<RotateCcw aria-hidden="true" />}
                 compactContent={<><strong>{pendingErrorsCount ? pendingErrorsCount+" pendentes" : "Em dia"}</strong>{pendingErrorsCount>0 && <small>{mostCriticalArea?.name}</small>}</>}
                 summary={`${pendingErrorsCount} pendentes`}
                 key={cardConfig.id}
@@ -4250,6 +4256,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             const agendaStatus = agendaSlot && agendaSlot.endMinutes<=minute ? 'Concluída' : agendaSlot && agendaSlot.startMinutes<=minute ? 'Em andamento' : 'Próxima';
             return (
               <FigmaCardWrapper
+                compactIcon={<CalendarDays aria-hidden="true" />}
                 compactContent={<>{agendaSlot ? <><small>{agendaStatus} · {agendaSlot.startTime}</small><strong>{agendaSlot.title}</strong></> : <strong>Sem atividades hoje</strong>}</>}
                 summary={agendaSlot ? agendaStatus + " · " + agendaSlot.startTime + " · " + agendaSlot.title : "Sem atividades hoje"}
                 key={cardConfig.id}
@@ -4485,6 +4492,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               : { ...cardConfig, customHeight: undefined, maxHeight: undefined };
             return (
               <FigmaCardWrapper
+                compactIcon={<Brain aria-hidden="true" />}
                 compactContent={<><small>{displayedClinicalTip.title}</small>{displayedClinicalTip.chips[0] && <button className="mini-action" onClick={e=>toggleRevealTipItem(0,e)}>{revealedTipItems[0] || revealAllTipItems ? displayedClinicalTip.chips[0].value : displayedClinicalTip.chips[0].label+" · Revelar"}</button>}</>}
                 summary={CLINICAL_TIPS_DATABASE[currentTipIndex]?.title ?? "Dica do dia"}
                 key={cardConfig.id}
@@ -4854,6 +4862,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (cardConfig.id === 'home_raiox_areas') {
             return (
               <FigmaCardWrapper
+                compactIcon={<BarChart2 aria-hidden="true" />}
                 compactContent={<div className="mini-areas">{donutData.map(a=><div key={a.id} title={a.name}><small>{a.name.split(" ").map(word=>word.slice(0,3)).join(" ")}</small><div className="mini-track"><i style={{width:(100*a.realValue/Math.max(1,...donutData.map(d=>d.realValue)))+"%",background:a.cor}}/></div><small>{a.hasData?a.realValue:"—"}</small></div>)}</div>}
                 summary={`${totalCoreVolume} questões`}
                 key={cardConfig.id}
@@ -4967,6 +4976,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             };
             return (
               <FigmaCardWrapper
+                compactIcon={<FolderOpen aria-hidden="true" />}
                 compactContent={<><strong>{resumeTitle || "Escolher estudo"}</strong>{Boolean(resumeTotal) && <progress value={resumeDone ?? 0} max={resumeTotal}/>}<button className="mini-action" onClick={resumeStudy}>Continuar</button></>}
                 summary={`Continuar · ${studyResumeTab}`}
                 key={cardConfig.id}

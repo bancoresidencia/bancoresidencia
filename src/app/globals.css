@@ -1324,9 +1324,9 @@ html.dark .canvas-grid-quadriculado {
   background: var(--bg-card); color: inherit; border: 1px solid var(--card-border);
   border-radius: .85rem; text-align: start; overflow: auto; overflow-wrap: anywhere;
 }
-.card-summary span, .card-summary small { font-size: .72rem; line-height: 1.2; }
+.mini-week span, .card-summary small { font-size: .72rem; line-height: 1.2; }
 .card-summary strong { font-size: clamp(.85rem, 6cqi, 1.15rem); line-height: 1.15; }
-.card-summary small { text-decoration: underline; }
+
 .card-details {
   margin: auto; width: min(92vw, 60rem); max-height: 86dvh; overflow: auto;
   padding: 1rem; border-radius: 1rem; background: var(--bg-card, Canvas); color: inherit;
@@ -1374,7 +1374,12 @@ html.dark .canvas-grid-quadriculado {
 .mini-guide-mode { display:flex; align-items:center; gap:.5rem; font-size:.8rem; }
 .mini-guide-mode select,.mini-action { border:1px solid var(--card-border,#777); border-radius:.5rem; padding:.25rem .5rem; }
 .figma-card-wrapper .card-fluid-container > div.card-summary { display:flex; flex-direction:column; align-items:stretch; justify-content:safe center; gap:.2rem; min-height:0; overflow:auto !important; }
-.mini-details { font-size:.7rem; text-decoration:underline; align-self:flex-start; }
+.mini-heading { display:flex; align-items:center; gap:.45em; text-align:start; font:inherit; font-size:clamp(.72rem,4cqi,.88rem); font-weight:700; line-height:1.25; }
+.mini-heading svg { width:clamp(13px,5cqi,19px); height:auto; flex:none; color:var(--primary-color); }
+.mini-original-gauge > div > div:first-child { width:min(100%, 175px); height:auto; aspect-ratio:190/90; }
+.mini-original-gauge > div > div:last-child { display:none; }
+.mini-original-gauge .text-3xl { font-size:clamp(17px,8cqi,25px); }
+.mini-heading:focus-visible { outline:2px solid currentColor; outline-offset:2px; }
 .mini-meter,.mini-areas,.mini-week,.mini-hours,.mini-trend {width:100%;}
 .mini-track { position:relative;height:5px;border-radius:4px;background:var(--card-border,#666); }
 .mini-track i { display:block;height:100%;border-radius:inherit;background:var(--primary-color,#3b82f6); }

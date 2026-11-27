@@ -1641,6 +1641,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_volume') {
                 return (
                   <FigmaCardWrapper
+                    compactIcon={<BarChart3 aria-hidden="true" />}
                     compactContent={<><strong>{activeMetrics.answered} questões</strong><small>{activeMetrics.ineditas} inéditas</small></>}
                     summary={`${activeMetrics.answered} questões`}
                     key={cardConfig.id}
@@ -1686,6 +1687,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_taxa') {
                 return (
                   <FigmaCardWrapper
+                    compactIcon={<CircleCheck aria-hidden="true" />}
                     compactContent={<><strong>{activeMetrics.correct} acertos</strong><div className="mini-track mini-errors" title={activeMetrics.incorrect+" erros"}><i style={{width:(100*activeMetrics.correct/Math.max(1,activeMetrics.answered))+"%"}}/></div></>}
                     summary={`${activeMetrics.correct} acertos`}
                     key={cardConfig.id}
@@ -1728,6 +1730,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_media') {
                 return (
                   <FigmaCardWrapper
+                    compactIcon={<Target aria-hidden="true" />}
                     compactContent={<CompactMeter value={activeMetrics.accuracy} goal={80}/>}
                     summary={`${activeMetrics.accuracy.toFixed(1)}%`}
                     key={cardConfig.id}
@@ -1786,7 +1789,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_kpi_ritmo') {
                 return (
                   <FigmaCardWrapper
-                    compactContent={<><strong>◷ {Math.floor(activeMetrics.ritmoMedioSeconds/60)}min {Math.floor(activeMetrics.ritmoMedioSeconds%60)}s</strong><small>por questão</small></>}
+                    compactIcon={<Clock aria-hidden="true" />}
+                    compactContent={<><strong>{Math.floor(activeMetrics.ritmoMedioSeconds/60)}min {Math.floor(activeMetrics.ritmoMedioSeconds%60)}s</strong><small>por questão</small></>}
                     summary={`${Math.floor(activeMetrics.ritmoMedioSeconds / 60)}min ${Math.floor(activeMetrics.ritmoMedioSeconds % 60)}s`}
                     key={cardConfig.id}
                     config={cardConfig}
@@ -1836,6 +1840,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_evolucao') {
                 return (
                   <FigmaCardWrapper
+                    compactIcon={<Activity aria-hidden="true" />}
                     compactContent={<><CompactTrend values={activeMetrics.chartData.map(d=>d.answered)}/><small>{activeMetrics.answered} questões no período</small></>}
                     summary={`${activeMetrics.answered} questões no período`}
                     key={cardConfig.id}
@@ -2015,6 +2020,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (cardConfig.id === 'stats_habits') {
                 return (
                   <FigmaCardWrapper
+                    compactIcon={<Calendar aria-hidden="true" />}
                     compactContent={<CompactHours hours={activeMetrics.hours}/>}
                     summary={`Meta diária · ${dailyGoal} questões`}
                     key={cardConfig.id}

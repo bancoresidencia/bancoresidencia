@@ -74,8 +74,11 @@ export function CardCanvas({ cards, save, className, children, editing=false }: 
       let dx = event.clientX-bounds.left-sx, dy = event.clientY-bounds.top-sy;
       if (!next && Math.hypot(dx,dy) < 3) return;
       if (event.shiftKey) { dx = Math.round(dx/8)*8; dy = Math.round(dy/8)*8; }
-      const minWidth = card.id.startsWith('stats_kpi') ? 128 : 168;
-      const project = (dx:number,dy:number) => resizeRect(base,dx,dy,x,y,width,minWidth,Math.max(card.minHeight ?? 65, card.id.startsWith('stats_kpi') ? 72 : 104),Math.max(base.height,card.maxHeight ?? 1200));
+      const isGauge = card.id === 'home_aproveitamento';
+      const isKpi = card.id.startsWith('stats_kpi');
+      const minWidth = isGauge ? 192 : isKpi ? 144 : 168;
+      const minHeight = isGauge ? 132 : isKpi ? 84 : 104;
+      const project = (dx:number,dy:number) => resizeRect(base,dx,dy,x,y,width,minWidth,Math.max(card.minHeight ?? 65, minHeight),Math.max(base.height,card.maxHeight ?? 1200));
       let rect = project(dx,dy);
       if(alignment!=='free'){
         const {delta,guides}=cardAlignment(original,card.id,rect,width,origin.height,x,y);
